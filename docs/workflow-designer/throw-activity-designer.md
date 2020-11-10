@@ -1,5 +1,7 @@
 ---
 title: 'Diseñador de flujo de trabajo: iniciar el diseñador de actividades'
+description: Obtenga información sobre la actividad Throw y cómo puede utilizar el diseñador de actividades Throw para crear y configurar una actividad Throw.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 650082ab0e4f8576b7028b8011c88bf5d93b2afd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d836a666c0b09366f5c8f3c9245def63faba462
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593101"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94433861"
 ---
 # <a name="throw-activity-designer"></a>Diseñador de actividades Throw
 
@@ -38,7 +40,7 @@ En la tabla siguiente se muestran las propiedades <xref:System.Activities.Statem
 |Nombre de propiedad|Obligatorio|Uso|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|Especifica el nombre opcional descriptivo de la actividad <xref:System.Activities.Statements.Throw>. El valor predeterminado es Throw.|
-|<xref:System.Activities.Statements.Throw.Exception%2A>|Verdadero|Excepción que se va a producir. Esta excepción debe derivar de <xref:System.Exception>. Para especificar la excepción, escriba una expresión de Visual Basic en la cuadrícula de propiedades.|
+|<xref:System.Activities.Statements.Throw.Exception%2A>|True|Excepción que se va a producir. Esta excepción debe derivar de <xref:System.Exception>. Para especificar la excepción, escriba una expresión de Visual Basic en la cuadrícula de propiedades.|
 
 ## <a name="see-also"></a>Consulte también
 

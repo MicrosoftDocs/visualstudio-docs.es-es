@@ -1,5 +1,7 @@
 ---
 title: Pasar datos de un formulario a otro
+description: En este Windows Forms el tutorial de controles, obtenga instrucciones paso a paso para pasar datos de un formulario a otro.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 198eb09cabe16c72415520aa493a3395cdbf6d48
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e740483a855bbfd736810dd4d41e3f4d01b7dd60
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281882"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434680"
 ---
 # <a name="pass-data-between-forms"></a>Pasar datos de un formulario a otro
 
@@ -47,7 +49,7 @@ Las tareas ilustradas en este tutorial incluyen:
 
 - Pasar datos de un formulario a otro.
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
 
 En este tutorial se usa SQL Server Express LocalDB y la base de datos de ejemplo Northwind.
 
@@ -67,13 +69,13 @@ En este tutorial se usa SQL Server Express LocalDB y la base de datos de ejemplo
 
 ## <a name="create-the-windows-forms-app-project"></a>Crear el proyecto de aplicación de Windows Forms
 
-1. En Visual Studio, en el menú **Archivo**, seleccione **Nuevo** > **Proyecto**.
+1. En Visual Studio, en el menú **Archivo** , seleccione **Nuevo** > **Proyecto**.
 
 2. Expanda **Visual C#** o **Visual Basic** en el panel izquierdo y, a continuación, seleccione **escritorio de Windows**.
 
 3. En el panel central, seleccione el tipo de proyecto **Windows Forms aplicación** .
 
-4. Asigne al proyecto el nombre **PassingDataBetweenForms**y, a continuación, elija **Aceptar**.
+4. Asigne al proyecto el nombre **PassingDataBetweenForms** y, a continuación, elija **Aceptar**.
 
      El proyecto **PassingDataBetweenForms** se crea y se agrega al **Explorador de soluciones**.
 
@@ -85,7 +87,7 @@ En este tutorial se usa SQL Server Express LocalDB y la base de datos de ejemplo
 
 3. Seleccione **Base de datos** en la página **Elegir un tipo de datos de origen** y luego haga clic en **Siguiente**.
 
-4. En la página **Elegir un modelo de base de datos**, compruebe que se ha especificado **Conjunto de datos** y haga clic en **Siguiente**.
+4. En la página **Elegir un modelo de base de datos** , compruebe que se ha especificado **Conjunto de datos** y haga clic en **Siguiente**.
 
 5. En la página **elegir la conexión de datos** , realice una de las acciones siguientes:
 
@@ -117,7 +119,7 @@ Puede crear una cuadrícula enlazada a datos (un control <xref:System.Windows.Fo
 
 Cree un segundo formulario al que pasar datos.
 
-1. En el menú **Proyecto**, elija **Agregar Windows Forms**.
+1. En el menú **Proyecto** , elija **Agregar Windows Forms**.
 
 2. Deje el nombre predeterminado **Form2** y haga clic en **Agregar**.
 
@@ -133,7 +135,7 @@ Cree un segundo formulario al que pasar datos.
 
 Agregue una consulta de TableAdapter a Form2 para cargar los pedidos del cliente seleccionado en Form1.
 
-1. Haga doble clic en el archivo **NorthwindDataSet.xsd**, en el **Explorador de soluciones**.
+1. Haga doble clic en el archivo **NorthwindDataSet.xsd** , en el **Explorador de soluciones**.
 
 2. Haga clic con el botón derecho en **OrdersTableAdapter** y seleccione **Agregar consulta**.
 
@@ -152,9 +154,9 @@ Agregue una consulta de TableAdapter a Form2 para cargar los pedidos del cliente
     > [!NOTE]
     > Compruebe que la sintaxis de los parámetros sea correcta para su base de datos. Por ejemplo, en Microsoft Access, la cláusula WHERE tendría el siguiente aspecto: `WHERE CustomerID = ?`.
 
-6. Haga clic en **Next**.
+6. Haga clic en **Siguiente**.
 
-7. En **rellenar un nombre de DataTableMethod**, escriba `FillByCustomerID` .
+7. En **rellenar un nombre de DataTableMethod** , escriba `FillByCustomerID` .
 
 8. Desactive la opción **Devolver un DataTable** y haga clic en **Siguiente**.
 
@@ -171,9 +173,9 @@ Agregue una consulta de TableAdapter a Form2 para cargar los pedidos del cliente
 
 ## <a name="create-a-method-on-form1-to-pass-data-and-display-form2"></a>Crear un método en Form1 para pasar datos y mostrar Form2
 
-1. En **Form1**, haga clic con el botón derecho en la cuadrícula de datos Customer y después haga clic en **Propiedades**.
+1. En **Form1** , haga clic con el botón derecho en la cuadrícula de datos Customer y después haga clic en **Propiedades**.
 
-2. En la ventana **Propiedades**, haga clic en **Eventos**.
+2. En la ventana **Propiedades** , haga clic en **Eventos**.
 
 3. Haga doble clic en el evento **CellDoubleClick**.
 
@@ -184,7 +186,7 @@ Agregue una consulta de TableAdapter a Form2 para cargar los pedidos del cliente
      [!code-csharp[VbRaddataDisplaying#2](../data-tools/codesnippet/CSharp/pass-data-between-forms_2.cs)]
      [!code-vb[VbRaddataDisplaying#2](../data-tools/codesnippet/VisualBasic/pass-data-between-forms_2.vb)]
 
-## <a name="run-the-app"></a>Ejecución de la aplicación
+## <a name="run-the-app"></a>Ejecutar la aplicación
 
 - Presione **F5** para ejecutar la aplicación.
 
@@ -198,6 +200,6 @@ Dependiendo de los requisitos de la aplicación, existen varios pasos que se pue
 
 - Agregar funcionalidad para guardar los datos de nuevo en la base de datos. Para obtener más información, vea [guardar datos en la base de datos](../data-tools/save-data-back-to-the-database.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Enlazar controles de Windows Forms a datos en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

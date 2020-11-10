@@ -1,5 +1,7 @@
 ---
 title: Guardar datos con los métodos DBDirect de un TableAdapter
+description: En este tutorial, ejecute instrucciones SQL directamente en una base de datos mediante los métodos DBDirect de un TableAdapter.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 77d7aa0859ee383258f80dfd74f36d584790e464
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d79b2081e2d30d77ae3507884b44421f0f14bae
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281614"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434576"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Guardar datos con los métodos DBDirect de un TableAdapter
 
@@ -39,11 +41,11 @@ Durante este tutorial aprenderá a:
 
 - Agregue métodos para tener acceso directamente a la base de datos y realizar inserciones, actualizaciones y eliminaciones.
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
 
 En este tutorial se usa SQL Server Express LocalDB y la base de datos de ejemplo Northwind.
 
-1. Si no tiene SQL Server Express LocalDB, instálelo desde la [Página de descarga de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)o a través de la **instalador de Visual Studio**. En el **instalador de Visual Studio**, puede instalar SQL Server Express LocalDB como parte de la carga de trabajo de **procesamiento y almacenamiento de datos** , o como un componente individual.
+1. Si no tiene SQL Server Express LocalDB, instálelo desde la [Página de descarga de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)o a través de la **instalador de Visual Studio**. En el **instalador de Visual Studio** , puede instalar SQL Server Express LocalDB como parte de la carga de trabajo de **procesamiento y almacenamiento de datos** , o como un componente individual.
 
 2. Instale la base de datos de ejemplo Northwind siguiendo estos pasos:
 
@@ -61,13 +63,13 @@ En este tutorial se usa SQL Server Express LocalDB y la base de datos de ejemplo
 
 El primer paso es crear una **aplicación Windows Forms**.
 
-1. En Visual Studio, en el menú **Archivo**, seleccione **Nuevo** > **Proyecto**.
+1. En Visual Studio, en el menú **Archivo** , seleccione **Nuevo** > **Proyecto**.
 
 2. Expanda **Visual C#** o **Visual Basic** en el panel izquierdo y, a continuación, seleccione **escritorio de Windows**.
 
 3. En el panel central, seleccione el tipo de proyecto **Windows Forms aplicación** .
 
-4. Asigne al proyecto el nombre **TableAdapterDbDirectMethodsWalkthrough**y, a continuación, elija **Aceptar**.
+4. Asigne al proyecto el nombre **TableAdapterDbDirectMethodsWalkthrough** y, a continuación, elija **Aceptar**.
 
      Se crea el proyecto **TableAdapterDbDirectMethodsWalkthrough** y se agrega al **Explorador de soluciones**.
 
@@ -77,13 +79,13 @@ En este paso se usa el **Asistente para configuración de orígenes de datos** p
 
 ### <a name="to-create-the-data-source"></a>Para crear el origen de datos
 
-1. En el menú **datos** , seleccione **Mostrar orígenes de datos**.
+1. En el menú **Datos** , seleccione **Mostrar orígenes de datos**.
 
    Se abre la ventana **Orígenes de datos**.
 
-2. En la ventana **Orígenes de datos**, seleccione **Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de orígenes de datos**.
+2. En la ventana **Orígenes de datos** , seleccione **Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de orígenes de datos**.
 
-3. En la pantalla **elegir un tipo de origen de datos** , seleccione **base**de datos y, a continuación, seleccione **siguiente**.
+3. En la pantalla **elegir un tipo de origen de datos** , seleccione **base** de datos y, a continuación, seleccione **siguiente**.
 
 4. En la pantalla **elegir la conexión de datos** , realice una de las acciones siguientes:
 
@@ -113,7 +115,7 @@ En el formulario aparecen un control <xref:System.Windows.Forms.DataGridView> y 
 
 ### <a name="to-add-buttons-that-will-call-the-individual-tableadapter-dbdirect-methods"></a>Para agregar botones que llamarán a los métodos DbDirect de TableAdapter
 
-1. Arrastre tres controles <xref:System.Windows.Forms.Button> desde el **Cuadro de herramientas** hasta **Form1** (debajo de **RegionDataGridView**).
+1. Arrastre tres controles <xref:System.Windows.Forms.Button> desde el **Cuadro de herramientas** hasta **Form1** (debajo de **RegionDataGridView** ).
 
 2. Establezca las propiedades **Nombre** y **Texto** en cada botón.
 
@@ -168,6 +170,6 @@ En función de los requisitos de la aplicación, hay varios pasos que se pueden 
 
 - Agregar otras tablas al conjunto de datos seleccionando **Configurar DataSet con el asistente** en la ventana **Orígenes de datos**. Puede agregar controles que muestren los datos relacionados arrastrando los nodos relacionados al formulario. Para obtener más información, vea [relaciones en conjuntos de](relationships-in-datasets.md)datos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Guardar los datos de nuevo en la base de datos](../data-tools/save-data-back-to-the-database.md)

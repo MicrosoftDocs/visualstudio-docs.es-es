@@ -1,5 +1,7 @@
 ---
 title: Diseñador de flujo de trabajo el diseñador de actividades Persist
+description: Obtenga información sobre la actividad Persist y cómo usar el diseñador de actividades Persist para crear y configurar una actividad Persist.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75236d7955cba6b8c62b9a4504f02c66cebe4062
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3daa7cef76d2448cc7bcda66a967a3406bb2352c
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114771"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435578"
 ---
 # <a name="persist-activity-designer"></a>Diseñador de actividades Persist
 
@@ -27,7 +29,7 @@ La actividad <xref:System.Activities.Statements.Persist> guarda un flujo de trab
 
 ### <a name="using-the-persist-activity-designer"></a>Utilizar el diseñador de actividades Persist
 
-El diseñador de actividades **Persist** se puede encontrar en la categoría **tiempo de ejecución** del **cuadro de herramientas**, al que se tiene acceso al hacer clic en la pestaña cuadro de **herramientas** . (de forma alternativa, seleccione **cuadro de herramientas** en el menú **Ver** o Ctrl + Alt + X).
+El diseñador de actividades **Persist** se puede encontrar en la categoría **tiempo de ejecución** del **cuadro de herramientas** , al que se tiene acceso al hacer clic en la pestaña cuadro de **herramientas** . (de forma alternativa, seleccione **cuadro de herramientas** en el menú **Ver** o Ctrl + Alt + X).
 
 El diseñador de actividades **Persist** se puede arrastrar desde el **cuadro de herramientas** y colocarlo en la superficie diseñador de flujo de trabajo, donde se coloquen normalmente las actividades, como en una <xref:System.Activities.Statements.Sequence> . Esto crea una <xref:System.Activities.Statements.Persist> actividad con un valor **displayName** predeterminado de Persist. <xref:System.Activities.Activity.DisplayName%2A>Se puede editar en el encabezado del diseñador de actividades **Persist** o en el cuadro **displayName** de la cuadrícula de propiedades.
 

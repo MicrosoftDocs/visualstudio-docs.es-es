@@ -1,5 +1,7 @@
 ---
 title: Procedimiento para guardar datos mediante una transacción
+description: Revise cómo guardar los datos mediante una transacción con las herramientas de conjunto de datos en Visual Studio. Los datos se guardan en una transacción mediante el espacio de nombres System. Transactions.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 40894adefb42d6de077a2e2812d26f90bc5f40dd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c1cd112a1960078c72c575542525a5ecf6571b06
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281700"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434595"
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>Procedimiento para guardar datos mediante una transacción
 
@@ -37,9 +39,9 @@ Para revertir la transacción, inicie una excepción antes de llamar al <xref:Sy
 
 ## <a name="to-add-a-reference-to-the-systemtransactionsdll"></a>Para agregar una referencia al System.Transactions.dll
 
-1. En el menú **Proyecto**, seleccione **Agregar referencia**.
+1. En el menú **Proyecto** , seleccione **Agregar referencia**.
 
-2. En la pestaña **.net** (pestaña**SQL Server** para proyectos de SQL Server), seleccione **System. Transactions**y, después, haga clic en **Aceptar**.
+2. En la pestaña **.net** (pestaña **SQL Server** para proyectos de SQL Server), seleccione **System. Transactions** y, después, haga clic en **Aceptar**.
 
      Se agrega al proyecto una referencia a *System.Transactions.dll* .
 

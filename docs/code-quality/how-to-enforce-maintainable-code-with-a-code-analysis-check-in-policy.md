@@ -1,6 +1,8 @@
 ---
 title: Usar una directiva de protección de análisis de código
 ms.date: 11/04/2016
+description: Aprenda a usar una directiva de protección de análisis de código para comprobar que el código cumple con la herencia, el acoplamiento de clases, la facilidad de mantenimiento y los estándares de complejidad.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 helpviewer_keywords:
 - code analysis, check-in policies
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 883b5e231036c446c1cbf1fbc2fc125a01b3de62
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6fa97f52f67e08b2ccf0843e5b5400680ed1c020
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85371864"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434823"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Cómo: exigir código mantenible con una directiva de protección de análisis de código
 
@@ -27,7 +29,7 @@ Los administradores de control de versiones de Team Foundation pueden agregar la
 
 ## <a name="to-open-the-code-analysis-policy-editor"></a>Para abrir el editor de directivas de análisis de código
 
-1. En **Team Explorer**, haga clic con el botón secundario en el proyecto, haga clic en **configuración del proyecto**y, a continuación, haga clic en **control de código fuente**.
+1. En **Team Explorer** , haga clic con el botón secundario en el proyecto, haga clic en **configuración del proyecto** y, a continuación, haga clic en **control de código fuente**.
 
      Aparecerá el cuadro de diálogo **control de código fuente** .
 
@@ -41,7 +43,7 @@ Los administradores de control de versiones de Team Foundation pueden agregar la
 
 ## <a name="to-enable-code-analysis-maintainability-rules"></a>Para habilitar las reglas de mantenimiento del análisis de código
 
-1. En el cuadro de diálogo **Editor de directivas de análisis de código** , en configuración de **reglas**, expanda el nodo **reglas de mantenimiento** .
+1. En el cuadro de diálogo **Editor de directivas de análisis de código** , en configuración de **reglas** , expanda el nodo **reglas de mantenimiento** .
 
 2. Active las casillas de las siguientes reglas:
 
@@ -55,9 +57,9 @@ Los administradores de control de versiones de Team Foundation pueden agregar la
 
      Además, si desea una infracción de regla para evitar una compilación correcta, active la casilla **tratar ADVERTENCIA como error** junto a la descripción de la regla.
 
-3. Haga clic en **Aceptar**. La nueva Directiva de inserción en el repositorio se aplica ahora a las protecciones futuras.
+3. Haga clic en **OK**. La nueva Directiva de inserción en el repositorio se aplica ahora a las protecciones futuras.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Valores de las métricas de código](../code-quality/code-metrics-values.md)
 - [Crear y usar directivas de protección de análisis de código](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)

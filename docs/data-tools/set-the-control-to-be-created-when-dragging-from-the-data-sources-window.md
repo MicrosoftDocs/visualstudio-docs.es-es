@@ -1,5 +1,6 @@
 ---
 title: Establecer el control que se va a crear al arrastrar
+description: Descubra cómo establecer el control que se creará al arrastrar desde la ventana orígenes de datos hasta WPF Designer o el diseñador de Windows Forms en Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -14,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a7588fc23e7d52adb6c7ea780a75e11715688e26
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 8a81ecb35c37dbef6d48227c27ed877c64e6e26f
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036267"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434472"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Establecer el control que se creará al arrastrar desde la ventana Orígenes de datos
 
@@ -27,7 +28,7 @@ Puede crear controles enlazados a datos si arrastra los elementos desde la venta
 
 ## <a name="set-the-controls-to-be-created-for-data-tables-or-objects"></a>Establecimiento de los controles que se van a crear para tablas de datos u objetos
 
-Antes de arrastrar los elementos que representan objetos o tablas de datos a la ventana **Orígenes de datos**, puede decidir mostrar todos los datos en un control o mostrar cada columna o propiedad en un control independiente.
+Antes de arrastrar los elementos que representan objetos o tablas de datos a la ventana **Orígenes de datos** , puede decidir mostrar todos los datos en un control o mostrar cada columna o propiedad en un control independiente.
 
 En este contexto, el término *objeto* hace referencia a un objeto comercial personalizado, una entidad (en un Entity Data Model) o un objeto devuelto por un servicio.
 
@@ -35,10 +36,10 @@ En este contexto, el término *objeto* hace referencia a un objeto comercial per
 
 1. Asegúrese de que **WPF** Designer o el diseñador de **Windows Forms** está abierto.
 
-2. En la ventana **Orígenes de datos**, seleccione el elemento que representa el objeto o la tabla de datos que desea establecer.
+2. En la ventana **Orígenes de datos** , seleccione el elemento que representa el objeto o la tabla de datos que desea establecer.
 
    > [!TIP]
-   > Si la ventana **orígenes de datos** no está abierta, puede abrirla seleccionando **Ver**  >  **otros**  >  **orígenes de datos**de Windows.
+   > Si la ventana **orígenes de datos** no está abierta, puede abrirla seleccionando **Ver**  >  **otros**  >  **orígenes de datos** de Windows.
 
 3. Haga clic en el menú desplegable del elemento y, a continuación, en uno de los siguientes elementos en el menú:
 
@@ -52,13 +53,13 @@ En este contexto, el término *objeto* hace referencia a un objeto comercial per
 
 ## <a name="set-the-controls-to-be-created-for-data-columns-or-properties"></a>Establecer los controles que se van a crear para las columnas de datos o propiedades
 
-Antes de arrastrar al diseñador un elemento que representa una columna o la propiedad de un objeto en la ventana **Orígenes de datos**, puede establecer el control que se va a crear.
+Antes de arrastrar al diseñador un elemento que representa una columna o la propiedad de un objeto en la ventana **Orígenes de datos** , puede establecer el control que se va a crear.
 
 ### <a name="to-set-the-controls-to-be-created-for-columns-or-properties"></a>Para establecer los controles que se van a crear para columnas o propiedades
 
 1. Asegúrese de que **WPF** Designer o el diseñador de **Windows Forms** está abierto.
 
-2. En la ventana **Orígenes de datos**, expanda la tabla o el objeto deseado para mostrar sus columnas o propiedades.
+2. En la ventana **Orígenes de datos** , expanda la tabla o el objeto deseado para mostrar sus columnas o propiedades.
 
 3. Seleccione cada columna o propiedad para la que desea establecer el control que se va a crear.
 

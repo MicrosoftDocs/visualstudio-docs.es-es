@@ -1,5 +1,7 @@
 ---
 title: 'Diseñador de flujo de trabajo: diseñador de actividades TransactionScope'
+description: Obtenga información sobre cómo puede utilizar el diseñador de actividades TransactionScope para crear y configurar una actividad TransactionScope.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8f9ed7822dc231fdd4888d3e44c4e3218357f95
-ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
+ms.openlocfilehash: f1fde6dabb372bfa20f55335008ce91e8de2481a
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90713482"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94433588"
 ---
 # <a name="transactionscope-activity-designer"></a>Diseñador de actividades TransactionScope
 
@@ -36,15 +38,15 @@ En la tabla siguiente se muestran las propiedades <xref:System.Activities.Statem
 |Nombre de propiedad|Obligatorio|Uso|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|El nombre descriptivo opcional de la actividad de la clase <xref:System.Activities.Statements.TransactionScope>. El valor predeterminado es TransactionScope. Pese a que el valor <xref:System.Activities.Activity.DisplayName%2A> no es obligatorio, se recomienda usar uno.|
-|<xref:System.Activities.Statements.TransactionScope.Body%2A>|Verdadero|Especifica la actividad que se va a ejecutar en una transacción única. Para agregar la <xref:System.Activities.Statements.TransactionScope.Body%2A> actividad, coloque una actividad del cuadro de **herramientas** en el cuadro **Body** del diseñador de actividades **TransactionScope** con el texto de la sugerencia "Coloque la actividad aquí".|
-|<xref:System.Activities.Statements.TransactionScope.IsolationLevel%2A>|Verdadero|Especifica la enumeración <xref:System.Transactions.IsolationLevel> de este objeto <xref:System.Activities.Statements.TransactionScope>.|
+|<xref:System.Activities.Statements.TransactionScope.Body%2A>|True|Especifica la actividad que se va a ejecutar en una transacción única. Para agregar la <xref:System.Activities.Statements.TransactionScope.Body%2A> actividad, coloque una actividad del cuadro de **herramientas** en el cuadro **Body** del diseñador de actividades **TransactionScope** con el texto de la sugerencia "Coloque la actividad aquí".|
+|<xref:System.Activities.Statements.TransactionScope.IsolationLevel%2A>|True|Especifica la enumeración <xref:System.Transactions.IsolationLevel> de este objeto <xref:System.Activities.Statements.TransactionScope>.|
 |<xref:System.Activities.Statements.TransactionScope.Timeout%2A>|Falso|Especifica el intervalo de tiempo (con formato 00:00:00, que indica horas:minutos:segundos) del que dispone la transacción para completarse. El valor predeterminado es 1 minuto (00:01:00).|
-|<xref:System.Activities.Statements.TransactionScope.AbortInstanceOnTransactionFailure*>|Verdadero|Especifica el valor que indica si se debe anular el flujo de trabajo si se anula la transacción.|
+|<xref:System.Activities.Statements.TransactionScope.AbortInstanceOnTransactionFailure*>|True|Especifica el valor que indica si se debe anular el flujo de trabajo si se anula la transacción.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Transacción](../workflow-designer/transaction-activity-designers.md)
 - [TerminateWorkflow](../workflow-designer/terminateworkflow-activity-designer.md)
 - [CompensableActivity](../workflow-designer/compensableactivity-activity-designer.md)
 - [Compensate](../workflow-designer/compensate-activity-designer.md)
-- [Confirmar](../workflow-designer/confirm-activity-designer.md)
+- [Confirm](../workflow-designer/confirm-activity-designer.md)

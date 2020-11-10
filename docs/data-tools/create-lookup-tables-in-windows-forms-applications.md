@@ -1,5 +1,7 @@
 ---
 title: Crear tablas de búsqueda en aplicaciones de Windows Forms
+description: Lea cómo crear tablas de búsqueda en Windows Forms aplicaciones. Una tabla de búsqueda describe los controles que están enlazados a dos tablas de datos relacionadas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9a1ae368b7d2bf8548bf78a6a9795e19206bc277
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d6ec8860d2c163d16e29d229203bb77abcdf65f
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282662"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435200"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Crear tablas de búsqueda en aplicaciones de Windows Forms
 
@@ -28,7 +30,7 @@ Por ejemplo, considérese una tabla de `Orders` en una base de datos de ventas. 
 
 ## <a name="to-databind-a-lookup-control"></a>Para enlazar con datos un control de búsqueda
 
-1. Con el proyecto abierto, abra la ventana **orígenes de datos** eligiendo **Ver**  >  **otros**  >  **orígenes de datos**de Windows.
+1. Con el proyecto abierto, abra la ventana **orígenes de datos** eligiendo **Ver**  >  **otros**  >  **orígenes de datos** de Windows.
 
     > [!NOTE]
     > Las tablas de búsqueda requieren que dos tablas u objetos relacionados estén disponibles en la ventana **Orígenes de datos**. Para obtener más información, vea [relaciones en conjuntos de](relationships-in-datasets.md)datos.
@@ -57,6 +59,6 @@ Por ejemplo, considérese una tabla de `Orders` en una base de datos de ventas. 
     |**ValueMember**|Visual Studio establece esta propiedad en la primera columna que participa de la clave principal, o la primera columna de la tabla si no se ha definido ninguna clave.<br /><br /> Si necesita efectuar un ajuste, establézcalo en la clave principal de la tabla con la columna que desea mostrar.|
     |**SelectedValue**|Visual Studio establece esta propiedad en la columna original quitada de la ventana **Orígenes de datos**.<br /><br /> Si necesita efectuar un ajuste, establézcalo en la columna de clave externa de la tabla relacionada.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Enlazar controles de Windows Forms a datos en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

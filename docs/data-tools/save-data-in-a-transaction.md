@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: Guardar datos en una transacción'
+description: En este tutorial, vea cómo guardar datos en una transacción mediante el espacio de nombres System. Transactions en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 09/08/2017
 ms.topic: how-to
 dev_langs:
@@ -17,18 +19,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: caeb06ac3f38293b493463ff456e222f148ef93a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1bb0262139e2096cf55ae7581ef854a57c67d22a
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281635"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434550"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>Tutorial: Guardar datos en una transacción
 
 En este tutorial se muestra cómo guardar los datos en una transacción mediante el <xref:System.Transactions> espacio de nombres. En este tutorial, creará una aplicación Windows Forms. Utilizará el Asistente para la configuración de orígenes de datos para crear un conjunto de datos para dos tablas en la base de datos de ejemplo Northwind. Agregará controles enlazados a datos a un formulario de Windows Forms y modificará el código para que el botón Guardar de BindingNavigator actualice la base de datos dentro de un TransactionScope.
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
 
 En este tutorial se usa SQL Server Express LocalDB y la base de datos de ejemplo Northwind.
 
@@ -50,13 +52,13 @@ En este tutorial se usa SQL Server Express LocalDB y la base de datos de ejemplo
 
 El primer paso es crear una **aplicación Windows Forms**.
 
-1. En Visual Studio, en el menú **Archivo**, seleccione **Nuevo** > **Proyecto**.
+1. En Visual Studio, en el menú **Archivo** , seleccione **Nuevo** > **Proyecto**.
 
 2. Expanda **Visual C#** o **Visual Basic** en el panel izquierdo y, a continuación, seleccione **escritorio de Windows**.
 
 3. En el panel central, seleccione el tipo de proyecto **Windows Forms aplicación** .
 
-4. Asigne al proyecto el nombre **SavingDataInATransactionWalkthrough**y, a continuación, elija **Aceptar**.
+4. Asigne al proyecto el nombre **SavingDataInATransactionWalkthrough** y, a continuación, elija **Aceptar**.
 
      Se crea el proyecto **SavingDataInATransactionWalkthrough** y se agrega al **Explorador de soluciones**.
 
@@ -66,9 +68,9 @@ En este paso se usa el Asistente para la **configuración de orígenes de datos*
 
 1. Para abrir la ventana **orígenes de datos** , en el menú **datos** , seleccione **Mostrar orígenes de datos**.
 
-2. En la ventana **Orígenes de datos**, seleccione **Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de orígenes de datos**.
+2. En la ventana **Orígenes de datos** , seleccione **Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de orígenes de datos**.
 
-3. En la pantalla **elegir un tipo de origen de datos** , seleccione **base**de datos y, a continuación, seleccione **siguiente**.
+3. En la pantalla **elegir un tipo de origen de datos** , seleccione **base** de datos y, a continuación, seleccione **siguiente**.
 
 4. En la pantalla **elegir la conexión de datos** , realice una de las acciones siguientes:
 
@@ -108,7 +110,7 @@ Las transacciones usan el espacio de nombres <xref:System.Transactions>. De form
 
 ### <a name="to-add-a-reference-to-the-systemtransactions-dll-file"></a>Para agregar una referencia al archivo DLL System.Transactions
 
-1. En el menú **Proyecto**, seleccione **Agregar referencia**.
+1. En el menú **Proyecto** , seleccione **Agregar referencia**.
 
 2. Seleccione **System. Transactions** (en la pestaña **.net** ) y, después, haga clic en **Aceptar**.
 
@@ -139,28 +141,28 @@ El orden para conciliar los cambios a los datos relacionados es el siguiente:
 
 ### <a name="to-delete-existing-orders"></a>Para eliminar pedidos existentes
 
-- Agregue el siguiente método `DeleteOrders` a **Form1**:
+- Agregue el siguiente método `DeleteOrders` a **Form1** :
 
      [!code-vb[VbRaddataSaving#5](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_2.vb)]
      [!code-csharp[VbRaddataSaving#5](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_2.cs)]
 
 ### <a name="to-delete-existing-customers"></a>Para eliminar clientes existentes
 
-- Agregue el siguiente método `DeleteCustomers` a **Form1**:
+- Agregue el siguiente método `DeleteCustomers` a **Form1** :
 
      [!code-vb[VbRaddataSaving#6](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_3.vb)]
      [!code-csharp[VbRaddataSaving#6](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_3.cs)]
 
 ### <a name="to-add-new-customers"></a>Para agregar nuevos clientes
 
-- Agregue el siguiente método `AddNewCustomers` a **Form1**:
+- Agregue el siguiente método `AddNewCustomers` a **Form1** :
 
      [!code-vb[VbRaddataSaving#7](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_4.vb)]
      [!code-csharp[VbRaddataSaving#7](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_4.cs)]
 
 ### <a name="to-add-new-orders"></a>Para agregar nuevos pedidos
 
-- Agregue el siguiente método `AddNewOrders` a **Form1**:
+- Agregue el siguiente método `AddNewOrders` a **Form1** :
 
      [!code-vb[VbRaddataSaving#8](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_5.vb)]
      [!code-csharp[VbRaddataSaving#8](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_5.cs)]
@@ -169,7 +171,7 @@ El orden para conciliar los cambios a los datos relacionados es el siguiente:
 
 Presione **F5** para ejecutar la aplicación.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Cómo: guardar datos mediante el uso de una transacción](../data-tools/save-data-by-using-a-transaction.md)
 - [Guardar los datos de nuevo en la base de datos](../data-tools/save-data-back-to-the-database.md)

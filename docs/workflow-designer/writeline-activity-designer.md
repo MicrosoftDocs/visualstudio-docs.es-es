@@ -1,5 +1,7 @@
 ---
 title: Diseñador de actividades Diseñador de flujo de trabajo-WriteLine
+description: Obtenga información sobre la actividad WriteLine y cómo puede utilizar el diseñador de actividades WriteLine para crear y configurar una actividad WriteLine.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e3b4da69a2d9154f36e42d3b20657e204767872
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03aedaf522924266b0951ec189e96fb3f83c142c
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593029"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94433666"
 ---
 # <a name="writeline-activity-designer"></a>Diseñador de actividades WriteLine
 
@@ -41,7 +43,7 @@ En la tabla siguiente se muestran las propiedades <xref:System.Activities.Statem
 
 ## <a name="see-also"></a>Consulte también
 
-- [Primitivos](../workflow-designer/primitives-activity-designers.md)
+- [Elementos primitivos](../workflow-designer/primitives-activity-designers.md)
 - [Assign](../workflow-designer/assign-activity-designer.md)
 - [Delay](../workflow-designer/delay-activity-designer.md)
 - [InvokeMethod](../workflow-designer/invokemethod-activity-designer.md)

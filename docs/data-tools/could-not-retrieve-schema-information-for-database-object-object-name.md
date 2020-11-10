@@ -1,6 +1,6 @@
 ---
 title: No se pudo recuperar la información de esquema
-description: No se pudo recuperar información de esquema del objeto de base de datos
+description: No se pudo recuperar la información de esquema del objeto de base de datos. Vea información sobre este mensaje de Object Relational Designer de Visual Studio (Object Relational Designer).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 68e6e2050f788f30448b7e68d8c057f3bad8e972
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 3d704982810b511356c5800b1b7bccdedb6d9665
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036436"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435305"
 ---
 # <a name="could-not-retrieve-schema-information-for-database-object-object-name"></a>No se pudo recuperar información de esquema del objeto de base de datos \<object name>
 

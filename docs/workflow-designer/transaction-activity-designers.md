@@ -1,5 +1,7 @@
 ---
 title: Diseñadores de actividad de Diseñador de flujo de trabajo-Transaction
+description: Obtenga información sobre cómo puede usar diseñadores de actividad de transacciones para crear y configurar actividades transaccionales como compensar y confirmar.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 8dd0f60f-88ec-4258-bc8d-233689be9997
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d65f68f783e7a1240089b1393089f85369a0ce35
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fe4fc6fa5b564bfd5b7d40e3f4b251183f046efe
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86875506"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94433744"
 ---
 # <a name="transaction-activity-designers"></a>Diseñadores de actividades de transacciones
 

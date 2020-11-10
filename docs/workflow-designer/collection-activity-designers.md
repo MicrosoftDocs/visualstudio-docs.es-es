@@ -1,5 +1,7 @@
 ---
 title: Diseñadores de actividad de la colección Diseñador de flujo de trabajo
+description: Obtenga información sobre cómo puede usar los diseñadores de actividad de colección para crear y configurar las actividades que se usan para administrar recopilaciones.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 6a07ed95-8319-44a2-8a1d-b4a89f16d0d9
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3375faa8e1f09465a879da197713da745f08b2da
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1e7b4daea4b7ce99867df0ae7a013a996dc2d3f
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876169"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434407"
 ---
 # <a name="collection-activity-designers"></a>Diseñadores de actividades de colecciones
 

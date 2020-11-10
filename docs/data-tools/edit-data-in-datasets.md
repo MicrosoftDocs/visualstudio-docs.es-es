@@ -1,5 +1,7 @@
 ---
 title: Editar datos en conjuntos de datos
+description: Aprenda a editar datos en conjuntos de datos. Sepa cómo editar filas de conjuntos de filas, insertar nuevas filas en un conjunto de filas, determinar si hay filas modificadas y buscar filas con errores.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: fe59b30e9af7ee1d98c0aba65339af1d53cba8fb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e547d3a6a07a7881c34462138ffbe708b8d74080
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282467"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435096"
 ---
 # <a name="edit-data-in-datasets"></a>Editar datos en conjuntos de datos
 Los datos de las tablas de datos se modifican de forma muy similar a como se modifican los datos de una tabla en cualquier base de datos. El proceso puede incluir la inserción, actualización y eliminación de registros en la tabla. En un formulario enlazado a datos, puede especificar qué campos son editables por el usuario. En esos casos, la infraestructura de enlace de datos controla todo el seguimiento de cambios para que los cambios se puedan devolver a la base de datos más adelante. Si realiza modificaciones en los datos mediante programación y pretende enviarlos de nuevo a la base de datos, debe utilizar los objetos y métodos que realizan el seguimiento de cambios.
@@ -107,6 +109,6 @@ Al trabajar con columnas y filas de datos individuales, es posible que se produz
 [!code-csharp[VbRaddataEditing#23](../data-tools/codesnippet/CSharp/edit-data-in-datasets_7.cs)]
 [!code-vb[VbRaddataEditing#23](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_7.vb)]
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Herramientas de conjunto de herramientas en Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
+- [Herramientas de conjunto de datos en Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)

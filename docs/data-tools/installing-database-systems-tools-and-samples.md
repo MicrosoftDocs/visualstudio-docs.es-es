@@ -1,5 +1,7 @@
 ---
 title: Compatibilidad con bases de datos
+description: Revise los sistemas de base de datos compatibles para Visual Studio, como Microsoft SQL Server, Oracle, MySQL, PostgreSQL, SQLite y Firebird.
+ms.custom: SEO-VS-2020
 ms.date: 09/06/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: cfc3b6c3adc5c51cbbc4bc7d91338fd3595ec372
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 598d48d560db58a40b04e9d7684e98df22291a6a
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586411"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434862"
 ---
 # <a name="compatible-database-systems-for-visual-studio"></a>Sistemas de bases de datos compatibles para Visual Studio
 
@@ -39,15 +41,15 @@ Puede descargar una edición de pago o gratuita de la base de datos de Oracle de
 
 ## <a name="mysql"></a>MySQL
 
-MySQL es un conocido sistema de base de datos de código abierto que se usa ampliamente en empresas y sitios Web. Las descargas para MySQL, MySQL para Visual Studio y productos relacionados están en [MySQL en Windows](https://www.mysql.com/why-mysql/windows/). Otros fabricantes ofrecen varias extensiones de Visual Studio y aplicaciones de administración independientes para MySQL. Puede examinar las ofertas en el administrador de paquetes Nuget (**herramientas**  >  **Administrador**de paquetes Nuget  >  **administrar paquetes Nuget para la solución**).
+MySQL es un conocido sistema de base de datos de código abierto que se usa ampliamente en empresas y sitios Web. Las descargas para MySQL, MySQL para Visual Studio y productos relacionados están en [MySQL en Windows](https://www.mysql.com/why-mysql/windows/). Otros fabricantes ofrecen varias extensiones de Visual Studio y aplicaciones de administración independientes para MySQL. Puede examinar las ofertas en el administrador de paquetes Nuget ( **herramientas**  >  **Administrador** de paquetes Nuget  >  **administrar paquetes Nuget para la solución** ).
 
 ## <a name="postgresql"></a>PostgreSQL
 
-PostgreSQL es un sistema de base de datos relacional de objetos de código abierto y gratuito. Para instalarlo en Windows, puede descargarlo desde la [Página de descarga de PostgreSQL](https://www.postgresql.org/download/windows/). También puede crear PostgreSQL a partir del código fuente. El sistema principal de PostgreSQL incluye una interfaz de lenguaje C. Muchos terceros proporcionan paquetes NuGet para usar PostgreSQL desde aplicaciones .NET. Puede examinar las ofertas en el administrador de paquetes Nuget (**herramientas**  >  **Administrador**de paquetes Nuget  >  **administrar paquetes Nuget para la solución**). Quizás, el paquete más popular lo proporciona [npgsql.org](http://www.npgsql.org).
+PostgreSQL es un sistema de base de datos relacional de objetos de código abierto y gratuito. Para instalarlo en Windows, puede descargarlo desde la [Página de descarga de PostgreSQL](https://www.postgresql.org/download/windows/). También puede crear PostgreSQL a partir del código fuente. El sistema principal de PostgreSQL incluye una interfaz de lenguaje C. Muchos terceros proporcionan paquetes NuGet para usar PostgreSQL desde aplicaciones .NET. Puede examinar las ofertas en el administrador de paquetes Nuget ( **herramientas**  >  **Administrador** de paquetes Nuget  >  **administrar paquetes Nuget para la solución** ). Quizás, el paquete más popular lo proporciona [npgsql.org](http://www.npgsql.org).
 
 ## <a name="sqlite"></a>SQLite
 
-SQLite es un motor de base de datos de SQL incrustado que se ejecuta en el propio proceso de la aplicación. Puede descargarlo desde la [Página de descarga de SQLite](https://www.sqlite.org/download.html). También están disponibles muchos paquetes NuGet de terceros para SQLite. Puede examinar las ofertas en el administrador de paquetes Nuget (**herramientas**  >  **Administrador**de paquetes Nuget  >  **administrar paquetes Nuget para la solución**).
+SQLite es un motor de base de datos de SQL incrustado que se ejecuta en el propio proceso de la aplicación. Puede descargarlo desde la [Página de descarga de SQLite](https://www.sqlite.org/download.html). También están disponibles muchos paquetes NuGet de terceros para SQLite. Puede examinar las ofertas en el administrador de paquetes Nuget ( **herramientas**  >  **Administrador** de paquetes Nuget  >  **administrar paquetes Nuget para la solución** ).
 
 ## <a name="firebird"></a>Firebird
 
@@ -55,5 +57,5 @@ Firebird es un sistema de base de datos SQL de código abierto. Puede descargarl
 
 ## <a name="see-also"></a>Vea también
 
-- [Obtener acceso a datos en Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
+- [Obtener acceso a los datos en Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
 - [Cómo determinar la versión y la edición de SQL Server y sus componentes](https://support.microsoft.com/help/321185/how-to-determine-the-version-edition-and-update-level-of-sql-server-an)

@@ -1,5 +1,6 @@
 ---
 title: Cambiar el tipo de valor devuelto del método DataContext
+description: Saber cómo cambiar el tipo de valor devuelto de un método DataContext cuando se coloca un procedimiento almacenado o una función en el Object Relational Designer (Object Relational Designer).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -9,18 +10,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: da1dc0437ccd4a7fad2a24b40542a58d8310bf17
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 20ff0e4764acf4f2f0f8dea77ed815a9aa430abe
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036670"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435057"
 ---
 # <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>Procedimiento para cambiar el tipo de valor devuelto de un método DataContext (Object Relational Designer)
-El tipo de valor devuelto de un <xref:System.Data.Linq.DataContext> método (creado basándose en un procedimiento almacenado o una función) difiere en función de dónde se coloque el procedimiento almacenado o la función en Object Relational **Designer**. Si se coloca un elemento directamente en una clase de entidad existente, se crea un método de <xref:System.Data.Linq.DataContext> que tiene el tipo de valor devuelto de la clase de entidad (si el esquema de los datos devueltos por el procedimiento almacenado o la función coincide con la forma de la clase de entidad). Si coloca un elemento en un área vacía de Object Relational **Designer**, <xref:System.Data.Linq.DataContext> se crea un método que devuelve un tipo generado automáticamente. Se puede cambiar el tipo de valor devuelto de un método de <xref:System.Data.Linq.DataContext> después de agregarlo al panel de métodos. Para examinar o cambiar el tipo de valor devuelto de un método <xref:System.Data.Linq.DataContext>, selecciónelo y haga clic en la propiedad **Tipo devuelto** en la ventana **Propiedades**.
+El tipo de valor devuelto de un <xref:System.Data.Linq.DataContext> método (creado basándose en un procedimiento almacenado o una función) difiere en función de dónde se coloque el procedimiento almacenado o la función en Object Relational **Designer**. Si se coloca un elemento directamente en una clase de entidad existente, se crea un método de <xref:System.Data.Linq.DataContext> que tiene el tipo de valor devuelto de la clase de entidad (si el esquema de los datos devueltos por el procedimiento almacenado o la función coincide con la forma de la clase de entidad). Si coloca un elemento en un área vacía de Object Relational **Designer** , <xref:System.Data.Linq.DataContext> se crea un método que devuelve un tipo generado automáticamente. Se puede cambiar el tipo de valor devuelto de un método de <xref:System.Data.Linq.DataContext> después de agregarlo al panel de métodos. Para examinar o cambiar el tipo de valor devuelto de un método <xref:System.Data.Linq.DataContext>, selecciónelo y haga clic en la propiedad **Tipo devuelto** en la ventana **Propiedades**.
 
 > [!NOTE]
-> Mediante la ventana **Propiedades**, no se pueden revertir los métodos de <xref:System.Data.Linq.DataContext> cuyo tipo de valor devuelto está establecido en una clase de entidad para que devuelvan el tipo generado automáticamente. Para revertir un <xref:System.Data.Linq.DataContext> método para que devuelva un tipo generado automáticamente, debe arrastrar de nuevo el objeto original de la base de datos al Object Relational **Designer** .
+> Mediante la ventana **Propiedades** , no se pueden revertir los métodos de <xref:System.Data.Linq.DataContext> cuyo tipo de valor devuelto está establecido en una clase de entidad para que devuelvan el tipo generado automáticamente. Para revertir un <xref:System.Data.Linq.DataContext> método para que devuelva un tipo generado automáticamente, debe arrastrar de nuevo el objeto original de la base de datos al Object Relational **Designer** .
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 

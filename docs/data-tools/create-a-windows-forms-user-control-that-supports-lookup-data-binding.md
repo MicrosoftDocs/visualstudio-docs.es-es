@@ -1,5 +1,6 @@
 ---
 title: Usar tablas de búsqueda en el enlace de datos Windows Forms
+description: Aprenda a crear un control de usuario Windows Forms que admita el enlace de datos de búsqueda, mediante la clase LookupBindingPropertiesAttribute en Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -16,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: fe2289a54dba0c3b3e34de54991e9b7cfbee4c93
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: de89839dd85f0f330356e1ade7d4658428ea3d3e
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037398"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435279"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Crear un control de usuario de Windows Forms que admita el enlace de datos de búsqueda
 
@@ -59,7 +60,7 @@ Durante este tutorial, aprenderá a:
 
 En este tutorial se usa SQL Server Express LocalDB y la base de datos de ejemplo Northwind.
 
-1. Si no tiene SQL Server Express LocalDB, instálelo desde la [Página de descarga de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)o a través de la **instalador de Visual Studio**. En el **instalador de Visual Studio**, puede instalar SQL Server Express LocalDB como parte de la carga de trabajo de **procesamiento y almacenamiento de datos** , o como un componente individual.
+1. Si no tiene SQL Server Express LocalDB, instálelo desde la [Página de descarga de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)o a través de la **instalador de Visual Studio**. En el **instalador de Visual Studio** , puede instalar SQL Server Express LocalDB como parte de la carga de trabajo de **procesamiento y almacenamiento de datos** , o como un componente individual.
 
 2. Instale la base de datos de ejemplo Northwind siguiendo estos pasos:
 
@@ -77,21 +78,21 @@ En este tutorial se usa SQL Server Express LocalDB y la base de datos de ejemplo
 
 El primer paso es crear un proyecto de **aplicación de Windows Forms** .
 
-1. En Visual Studio, en el menú **Archivo**, seleccione **Nuevo** > **Proyecto**.
+1. En Visual Studio, en el menú **Archivo** , seleccione **Nuevo** > **Proyecto**.
 
 2. Expanda **Visual C#** o **Visual Basic** en el panel izquierdo y, a continuación, seleccione **escritorio de Windows**.
 
 3. En el panel central, seleccione el tipo de proyecto **Windows Forms aplicación** .
 
-4. Asigne al proyecto el nombre **LookupControlWalkthrough**y, a continuación, elija **Aceptar**.
+4. Asigne al proyecto el nombre **LookupControlWalkthrough** y, a continuación, elija **Aceptar**.
 
      El proyecto **LookupControlWalkthrough** se crea y se agrega al **Explorador de soluciones**.
 
 ## <a name="add-a-user-control-to-the-project"></a>Agregar un control de usuario al proyecto
 
-Este tutorial crea un control de búsqueda a partir de un **Control de usuario**, por lo que debe agregar un elemento **Control de usuario** al proyecto **LookupControlWalkthrough**.
+Este tutorial crea un control de búsqueda a partir de un **Control de usuario** , por lo que debe agregar un elemento **Control de usuario** al proyecto **LookupControlWalkthrough**.
 
-1. En el menú **Proyecto**, elija **Agregar control de usuario**.
+1. En el menú **Proyecto** , elija **Agregar control de usuario**.
 
 2. Escriba `LookupBox` en el área **nombre** y, a continuación, haga clic en **Agregar**.
 
@@ -105,7 +106,7 @@ Para diseñar el control LookupBox, arrastre un control <xref:System.Windows.For
 
 Para controles de búsqueda que admiten el enlace de datos, puede implementar <xref:System.ComponentModel.LookupBindingPropertiesAttribute>.
 
-1. Cambie el control **LookupBox** a vista de código. (En el menú **Ver**, elija **Código**.)
+1. Cambie el control **LookupBox** a vista de código. (En el menú **Ver** , elija **Código**.)
 
 2. Reemplace el código de `LookupBox` por lo siguiente:
 
@@ -148,11 +149,11 @@ Dentro de la ventana **Orígenes de datos** puede establecer el control que se v
 
 2. Expanda el nodo **Customers** en la ventana **Orígenes de datos**.
 
-3. Expanda el nodo **Orders** (incluido en el nodo **Customers** debajo de la columna **Fax**).
+3. Expanda el nodo **Orders** (incluido en el nodo **Customers** debajo de la columna **Fax** ).
 
 4. Haga clic en la flecha de lista desplegable en el nodo **Orders** y elija **Detalles** de la lista de control.
 
-5. Haga clic en la flecha de lista desplegable en la columna **CustomerID** (del nodo **Orders**) y elija **Personalizar**.
+5. Haga clic en la flecha de lista desplegable en la columna **CustomerID** (del nodo **Orders** ) y elija **Personalizar**.
 
 6. Seleccione **LookupBox** de la lista de **Controles asociados** en el cuadro de diálogo **Opciones de personalización de la interfaz de usuario de datos**.
 

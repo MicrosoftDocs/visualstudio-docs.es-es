@@ -1,5 +1,6 @@
 ---
 title: Asignación de métodos de DataContext a procedimientos almacenados y funciones
+description: Aprenda a crear métodos de DataContext que están asignados a procedimientos almacenados (procedimiento almacenado) y funciones mediante Object Relational Designer (Object Relational Designer).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -9,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e6926631cfd9d04992d92553a346348ea18af847
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 4cb02a7fc7fdcbb4ff3c9c3750e722ff0fe031a5
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038340"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434953"
 ---
 # <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>Procedimiento para crear métodos DataContext asignados a funciones y procedimientos almacenados (Object Relational Designer)
 
@@ -34,7 +35,7 @@ Puede crear <xref:System.Data.Linq.DataContext> métodos arrastrando procedimien
 
 ### <a name="to-create-datacontext-methods-that-return-automatically-generated-types"></a>Para crear métodos de DataContext que devuelvan tipos generados automáticamente
 
-1. En **Explorador de servidores** o **Explorador de bases de datos**, expanda el nodo **procedimientos almacenados** de la base de datos con la que está trabajando.
+1. En **Explorador de servidores** o **Explorador de bases de datos** , expanda el nodo **procedimientos almacenados** de la base de datos con la que está trabajando.
 
 2. Busque el procedimiento almacenado deseado y arrástrelo hasta un área vacía de Object Relational **Designer**.
 
@@ -42,7 +43,7 @@ Puede crear <xref:System.Data.Linq.DataContext> métodos arrastrando procedimien
 
 ### <a name="to-create-datacontext-methods-that-have-the-return-type-of-an-entity-class"></a>Para crear métodos de DataContext con el tipo de valor devuelto de una clase de entidad
 
-1. En **Explorador de servidores** o **Explorador de bases de datos**, expanda el nodo **procedimientos almacenados** de la base de datos con la que está trabajando.
+1. En **Explorador de servidores** o **Explorador de bases de datos** , expanda el nodo **procedimientos almacenados** de la base de datos con la que está trabajando.
 
 2. Busque el procedimiento almacenado deseado y arrástrelo hasta una clase de entidad existente en Object Relational **Designer**.
 

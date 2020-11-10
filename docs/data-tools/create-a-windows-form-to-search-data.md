@@ -1,5 +1,7 @@
 ---
 title: Crear Windows Forms para buscar en datos
+description: Lea un ejemplo de cómo crear un formulario de Windows Forms para buscar datos. Cree la aplicación, el origen de datos y el formulario de Windows Forms. Agregar parametrización. Probar la aplicación.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: df6f2245f06a594e35febe07d5aab2d7e83c48fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 00b492c7aec41d30e972df93206f9e597ea82eb3
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586814"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435292"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Crear Windows Forms para buscar en datos
 
@@ -43,15 +45,15 @@ Las tareas ilustradas en este tutorial incluyen:
 
 - Escribir parámetros en el formulario y ejecutar la consulta con parámetros.
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
 
 En este tutorial se usa SQL Server Express LocalDB y la base de datos de ejemplo Northwind.
 
-1. Si no tiene SQL Server Express LocalDB, instálelo desde la [Página de descarga de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)o a través de la **instalador de Visual Studio**. En el **instalador de Visual Studio**, puede instalar SQL Server Express LocalDB como parte de la carga de trabajo de **procesamiento y almacenamiento de datos** , o como un componente individual.
+1. Si no tiene SQL Server Express LocalDB, instálelo desde la [Página de descarga de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)o a través de la **instalador de Visual Studio**. En el **instalador de Visual Studio** , puede instalar SQL Server Express LocalDB como parte de la carga de trabajo de **procesamiento y almacenamiento de datos** , o como un componente individual.
 
 2. Instale la base de datos de ejemplo Northwind siguiendo estos pasos:
 
-    1. En Visual Studio, abra la ventana **Explorador de objetos de SQL Server** . (Explorador de objetos de SQL Server se instala como parte de la carga de trabajo de **procesamiento y almacenamiento de datos** en el **instalador de Visual Studio**). Expanda el nodo **SQL Server** . Haga clic con el botón secundario en la instancia de LocalDB y seleccione **nueva consulta**.
+    1. En Visual Studio, abra la ventana **Explorador de objetos de SQL Server** . (Explorador de objetos de SQL Server se instala como parte de la carga de trabajo de **procesamiento y almacenamiento de datos** en el **instalador de Visual Studio** ). Expanda el nodo **SQL Server** . Haga clic con el botón secundario en la instancia de LocalDB y seleccione **nueva consulta**.
 
        Se abre una ventana del editor de consultas.
 
@@ -67,7 +69,7 @@ Cree un nuevo proyecto de **aplicación de Windows Forms** para C# o Visual Basi
 
 ## <a name="create-the-data-source"></a>Crear el origen de datos
 
-Este paso crea un origen de datos a partir de una base de datos utilizando el asistente para la **Configuración de origen de datos**:
+Este paso crea un origen de datos a partir de una base de datos utilizando el asistente para la **Configuración de origen de datos** :
 
 1. Para abrir la ventana **orígenes de datos** , en el menú **datos** , haga clic en **Mostrar orígenes de datos**.
 
@@ -145,6 +147,6 @@ Dependiendo de los requisitos de la aplicación, existen varios pasos que se pue
 
 - Modificar el conjunto de datos agregando o quitando objetos de la base de datos. Para obtener más información, vea [Crear y configurar conjuntos de datos](../data-tools/create-and-configure-datasets-in-visual-studio.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Enlazar controles de Windows Forms a datos en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

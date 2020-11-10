@@ -1,5 +1,7 @@
 ---
 title: Diseñador de actividad Diseñador de flujo de trabajo-while
+description: Obtenga información sobre cómo la actividad while ejecuta la actividad contenida en su cuerpo mientras la condición especificada se evalúa como true.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77954925533c51885a056f7156121e68851ad769
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2e78d4f2e6aa332c9dfd5faebf834e4f5015c454
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76115169"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94433705"
 ---
 # <a name="while-activity-designer"></a>Diseñador de actividades While
 
@@ -29,7 +31,7 @@ En la tabla siguiente se muestran las actividades <xref:System.Activities.Statem
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|Especifica el nombre descriptivo del diseñador de actividades <xref:System.Activities.Statements.While> en el encabezado. El valor predeterminado es While. El valor se puede editar en la ventana **propiedades** o directamente en el encabezado del diseñador de actividad.<br /><br /> Aunque el valor de la propiedad <xref:System.Activities.Activity.DisplayName%2A> no sea obligatorio, el procedimiento recomendado es usar uno.|
 |<xref:System.Activities.Statements.While.Body%2A>|Falso|Contiene la actividad que se va a ejecutar mientras que se <xref:System.Activities.Statements.While.Condition%2A> evalúa como **true**.|
-|<xref:System.Activities.Statements.While.Condition%2A>|Verdadero|Contiene la expresión Visual Basic que se evalúa para determinar si se va a ejecutar la actividad en <xref:System.Activities.Statements.While.Body%2A> .|
+|<xref:System.Activities.Statements.While.Condition%2A>|True|Contiene la expresión Visual Basic que se evalúa para determinar si se va a ejecutar la actividad en <xref:System.Activities.Statements.While.Body%2A> .|
 
 ## <a name="see-also"></a>Consulte también
 

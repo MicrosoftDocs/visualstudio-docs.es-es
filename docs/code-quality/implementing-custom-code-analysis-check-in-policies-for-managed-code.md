@@ -1,6 +1,8 @@
 ---
 title: Directivas de protección de análisis de código personalizadas para código administrado
 ms.date: 11/04/2016
+description: Obtenga información sobre cómo crear una directiva de protección de análisis de código personalizada. Vea cómo asegurarse de que el código administrado de Visual Studio se ajusta a una directiva de proyecto de DevOps de Azure.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 f1_keywords:
 - vs.code.analysis.selecttfsrulesets
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1404386445d24284a2231ed557a65568fdb1ba2b
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 567b6d2fe8906fd1a7a07ab73835439f8a9a9955
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928022"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435429"
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementar directivas de inserción en el repositorio de análisis de código personalizadas para el código administrado
 
@@ -42,11 +44,11 @@ Para crear un conjunto de reglas personalizado para un proyecto de DevOps de Azu
 
 2. En el panel **carpetas** , haga clic con el botón secundario en el proyecto y, a continuación, haga clic en **nueva carpeta**.
 
-3. En el panel principal de control de código fuente, haga clic con el botón secundario en **nueva carpeta**, haga clic en **cambiar nombre**y escriba un nombre para la carpeta del conjunto de reglas.
+3. En el panel principal de control de código fuente, haga clic con el botón secundario en **nueva carpeta** , haga clic en **cambiar nombre** y escriba un nombre para la carpeta del conjunto de reglas.
 
 ### <a name="to-create-the-check-in-policy-rule-set"></a>Para crear el conjunto de reglas de la Directiva de inserción en el repositorio
 
-1. En el menú **Archivo** , elija **Nuevo**y haga clic en **Archivo**.
+1. En el menú **Archivo** , elija **Nuevo** y haga clic en **Archivo**.
 
 2. En la lista **categorías** , haga clic en **General**.
 
@@ -56,7 +58,7 @@ Para crear un conjunto de reglas personalizado para un proyecto de DevOps de Azu
 
 ### <a name="to-add-the-rule-set-file-to-version-control"></a>Para agregar el archivo de conjunto de reglas al control de versiones
 
-1. En **Explorador de control de código fuente**, haga clic con el botón secundario en la nueva carpeta y, a continuación, haga clic en **Agregar elementos a la carpeta**.
+1. En **Explorador de control de código fuente** , haga clic con el botón secundario en la nueva carpeta y, a continuación, haga clic en **Agregar elementos a la carpeta**.
 
      Para obtener más información, vea [git y Azure Repos](/azure/devops/repos/git/overview?view=vsts&preserve-view=true).
 
@@ -69,15 +71,15 @@ Para crear un conjunto de reglas personalizado para un proyecto de DevOps de Azu
 4. En el cuadro de diálogo de **inserción en el repositorio** , tiene la opción de agregar un comentario y, a continuación, hacer clic en **proteger**.
 
     > [!NOTE]
-    > Si ya ha configurado una directiva de protección de análisis de código para el proyecto de Azure DevOps y ha seleccionado la **opción exigir protección para que solo contenga los archivos que forman parte de la solución actual**, se desencadenará una advertencia de error de directiva. En el cuadro de diálogo error de Directiva, seleccione **invalidar error de directiva y continuar la protección**. Agregue un comentario obligatorio y, a continuación, haga clic en **Aceptar**.
+    > Si ya ha configurado una directiva de protección de análisis de código para el proyecto de Azure DevOps y ha seleccionado la **opción exigir protección para que solo contenga los archivos que forman parte de la solución actual** , se desencadenará una advertencia de error de directiva. En el cuadro de diálogo error de Directiva, seleccione **invalidar error de directiva y continuar la protección**. Agregue un comentario obligatorio y, a continuación, haga clic en **Aceptar**.
 
 ### <a name="to-specify-the-rule-set-file-as-the-check-in-policy"></a>Para especificar el archivo de conjunto de reglas como la Directiva de inserción en el repositorio
 
-1. En el menú **equipo** , seleccione **configuración del proyecto**y, a continuación, haga clic en control de **código fuente**.
+1. En el menú **equipo** , seleccione **configuración del proyecto** y, a continuación, haga clic en control de **código fuente**.
 
-2. Haga clic en **Directiva de protección**y, a continuación, haga clic en **Agregar**.
+2. Haga clic en **Directiva de protección** y, a continuación, haga clic en **Agregar**.
 
-3. En la lista **Directiva de protección** , haga doble clic en **análisis de código**y asegúrese de que la casilla **aplicar análisis de código para código administrado** está activada.
+3. En la lista **Directiva de protección** , haga doble clic en **análisis de código** y asegúrese de que la casilla **aplicar análisis de código para código administrado** está activada.
 
 4. En la lista **ejecutar este conjunto de reglas** , haga clic en **\<Select Rule Set from Source Control>** .
 
@@ -88,7 +90,7 @@ Para crear un conjunto de reglas personalizado para un proyecto de DevOps de Azu
      **$/** `TeamProjectName` **/** `VersionControlPath`
 
     > [!NOTE]
-    > Puede copiar la ruta de acceso mediante uno de los procedimientos siguientes en **Explorador de control de código fuente**:
+    > Puede copiar la ruta de acceso mediante uno de los procedimientos siguientes en **Explorador de control de código fuente** :
 
     - En el panel **carpetas** , haga clic en la carpeta que contiene el archivo de conjunto de reglas. Copie la ruta de acceso de control de versiones de la carpeta que aparece en el cuadro **origen** y escriba el nombre del archivo de conjunto de reglas manualmente.
 
@@ -104,7 +106,7 @@ Especifique un conjunto de reglas de directiva de protección del proyecto como 
 
    Para realizar este paso en **Explorador de control de código fuente** , haga clic con el botón secundario en la carpeta del conjunto de reglas y, a continuación, haga clic en **obtener la última versión**.
 
-2. En **Explorador de soluciones**, haga clic con el botón secundario en el proyecto de código y, a continuación, haga clic en **propiedades**.
+2. En **Explorador de soluciones** , haga clic con el botón secundario en el proyecto de código y, a continuación, haga clic en **propiedades**.
 
 3. **Haga clic en análisis de código**.
 

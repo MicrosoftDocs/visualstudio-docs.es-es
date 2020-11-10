@@ -1,6 +1,6 @@
 ---
 title: Falta la propiedad de conexión
-description: Falta o no es correcta la propiedad de conexión del archivo de configuración de la aplicación
+description: Falta o no es correcta la propiedad de conexión del archivo de configuración de la aplicación. Vea información sobre este mensaje de Visual Studio O/R Designer.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9bd48b23273fe21031c25d7fea3b4208b29870ab
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 18e29171935719283e6658d24dcf5eeae3780bba
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036254"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434860"
 ---
 # <a name="the-connection-property-in-the-application-settings-file-is-missing-or-incorrect"></a>Falta o no es correcta la propiedad de conexión del archivo de configuración de la aplicación
 

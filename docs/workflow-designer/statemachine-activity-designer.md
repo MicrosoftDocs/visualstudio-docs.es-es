@@ -1,5 +1,7 @@
 ---
 title: Diseñador de actividades Diseñador de flujo de trabajo-StateMachine
+description: Obtenga información sobre cómo la actividad StateMachine contiene una colección de flujos de trabajo de Estados y modelos que usan el paradigma conocido de máquina de Estados.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: e7a270780a953a6104adc7089a02ff6529106fdf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dacb6dfa5c30ce174c64accfedf82f1c288c734d
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593140"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94433952"
 ---
 # <a name="statemachine-activity-designer"></a>Diseñador de actividades StateMachine
 

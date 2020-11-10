@@ -1,6 +1,8 @@
 ---
 title: Sincronizar conjuntos de reglas del proyecto con la Directiva de inserción en el repositorio
 ms.date: 11/04/2016
+description: Obtenga información sobre cómo sincronizar un conjunto de reglas de proyecto de Visual Studio Code con una directiva de protección del proyecto de Azure DevOps.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 f1_keywords:
 - vs.codeanalysis.selecttfsruleset
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e27987f7fa298ddcedf52a9f01a80f57d3d329f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 913860538fe7f9da1514d0e51d23bb3ea48c3b66
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85371786"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434693"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Cómo: sincronizar conjuntos de reglas del proyecto de código con una directiva de inserción en el repositorio del proyecto DevOps de Azure
 
@@ -31,7 +33,7 @@ Puede sincronizar la configuración de análisis de código para los proyectos d
 
 ## <a name="to-specify-a-microsoft-standard-rule-set"></a>Para especificar un conjunto de reglas estándar de Microsoft
 
-1. En **Explorador de soluciones**, haga clic con el botón secundario en el proyecto de código y, a continuación, haga clic en **propiedades**.
+1. En **Explorador de soluciones** , haga clic con el botón secundario en el proyecto de código y, a continuación, haga clic en **propiedades**.
 
 2. Haga clic en **Análisis de código**.
 
@@ -51,7 +53,7 @@ Puede sincronizar la configuración de análisis de código para los proyectos d
 
 1. Si es necesario, realice una operación get en el archivo de conjunto de reglas que especifica la Directiva de inserción en el repositorio.
 
-2. En **Explorador de soluciones**, haga clic con el botón secundario en el proyecto de código y, a continuación, haga clic en **propiedades**.
+2. En **Explorador de soluciones** , haga clic con el botón secundario en el proyecto de código y, a continuación, haga clic en **propiedades**.
 
 3. Haga clic en **Análisis de código**.
 

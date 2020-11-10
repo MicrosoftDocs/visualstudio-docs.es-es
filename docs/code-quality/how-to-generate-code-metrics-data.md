@@ -1,6 +1,8 @@
 ---
 title: Generar métricas de código desde el IDE o desde la línea de comandos
 ms.date: 11/02/2018
+description: Obtenga información sobre cómo generar datos de métricas de código en Visual Studio. Vea cómo usar Explorador de soluciones, un archivo de conjunto de reglas, la línea de comandos o un comando de menú.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 helpviewer_keywords:
 - code metrics data
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25fc255d0e04dd45400fa5da2b81c2e050a2150f
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 9c72e53266eae11fb060ac117c4a6dc0a1c37e2e
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658534"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434797"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Cómo: generar datos de métricas de código
 
@@ -24,7 +26,7 @@ Puede generar datos de métricas de código de tres maneras:
 
 - Habilitación de los [analizadores de calidad de código de .net](#net-code-quality-analyzers-code-metrics-rules) y habilita las cuatro reglas de métricas de código (mantenimiento) que contiene.
 
-- Al elegir el comando de menú [ **analizar**  >  **métricas de código** ](#calculate-code-metrics-menu-command) en Visual Studio.
+- Al elegir el comando de menú [ **analizar**  >  **métricas de código**](#calculate-code-metrics-menu-command) en Visual Studio.
 
 - Desde la [línea de comandos](#command-line-code-metrics) para proyectos de C# y Visual Basic.
 
@@ -80,7 +82,7 @@ Puede generar resultados de métricas de código para una solución completa de 
 
 - En la barra de menús, seleccione **analizar**  >  **calcular métricas**  >  **de código para la solución**.
 
-- En **Explorador de soluciones**, haga clic con el botón secundario en la solución y seleccione **calcular métricas de código**.
+- En **Explorador de soluciones** , haga clic con el botón secundario en la solución y seleccione **calcular métricas de código**.
 
 - En la ventana **resultados de métricas de código** , seleccione el botón **calcular métricas de código para la solución** .
 
@@ -88,7 +90,7 @@ Los resultados se generan y se muestra la ventana **resultados de métricas de c
 
 ### <a name="generate-code-metrics-results-for-one-or-more-projects"></a>Generar resultados de métricas de código para uno o varios proyectos
 
-1. En **Explorador de soluciones**, seleccione uno o varios proyectos.
+1. En **Explorador de soluciones** , seleccione uno o varios proyectos.
 
 1. En la barra de menús, seleccione **analizar**  >  **calcular métricas**  >  **de código para los proyectos seleccionados**.
 
@@ -293,7 +295,7 @@ Si no desea instalar el paquete de NuGet, puede generar y usar el ejecutable de 
 
 #### <a name="metricsexe-usage"></a>Uso de Metrics.exe
 
-Para ejecutar *Metrics.exe*, proporcione un proyecto o una solución y un archivo XML de salida como argumentos. Por ejemplo:
+Para ejecutar *Metrics.exe* , proporcione un proyecto o una solución y un archivo XML de salida como argumentos. Por ejemplo:
 
 ```shell
 C:\>Metrics.exe /project:ConsoleApp20.csproj /out:report.xml
@@ -334,7 +336,7 @@ A partir de Visual Studio 2019, versión 16,4 y Microsoft. CodeAnalysis. métric
 La `LinesOfCode` métrica es más precisa y confiable en la nueva herramienta de métricas de código de línea de comandos. Es independiente de cualquier diferencia de CODEGEN y no cambia cuando el conjunto de herramientas o el Runtime cambian. La nueva herramienta cuenta las líneas de código reales, incluidas las líneas en blanco y los comentarios.
 ::: moniker-end
 
-Otras métricas como `CyclomaticComplexity` y `MaintainabilityIndex` usan las mismas fórmulas que las versiones anteriores de *Metrics.exe*, pero la nueva herramienta cuenta el número de `IOperations` (instrucciones de origen lógico) en lugar de las instrucciones de lenguaje intermedio (IL). Los números serán ligeramente diferentes a los generados por el IDE de Visual Studio y por versiones anteriores de *Metrics.exe*.
+Otras métricas como `CyclomaticComplexity` y `MaintainabilityIndex` usan las mismas fórmulas que las versiones anteriores de *Metrics.exe* , pero la nueva herramienta cuenta el número de `IOperations` (instrucciones de origen lógico) en lugar de las instrucciones de lenguaje intermedio (IL). Los números serán ligeramente diferentes a los generados por el IDE de Visual Studio y por versiones anteriores de *Metrics.exe*.
 
 ## <a name="see-also"></a>Consulte también
 

@@ -1,5 +1,7 @@
 ---
 title: Creación y configuración de conjuntos de datos
+description: Crear y configurar conjuntos de valores en Visual Studio. Un conjunto de datos es un conjunto de objetos que almacenan datos de una base de datos en memoria y admite operaciones CRUD en esos datos.
+ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1065c5efdcf73016e61ee0f016511579d41acd88
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a9a10d68b5b0617b5c4e2152cbbbb920a7c683f
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282753"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435409"
 ---
 # <a name="how-to-create-and-configure-datasets-in-visual-studio"></a>Cómo: crear y configurar conjuntos de objetos en Visual Studio
 
@@ -90,7 +92,7 @@ Las tablas independientes deben implementar la `Fill` lógica en tablas independ
 
 ## <a name="see-also"></a>Consulte también
 
-- [Herramientas de conjunto de herramientas en Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
+- [Herramientas de conjunto de datos en Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
 - [Relaciones en conjuntos de datos](../data-tools/relationships-in-datasets.md)
 - [Actualización jerárquica](../data-tools/hierarchical-update.md)
 - [Rellenar conjuntos de datos mediante TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)
