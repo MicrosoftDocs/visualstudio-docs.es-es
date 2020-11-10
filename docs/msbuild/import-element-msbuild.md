@@ -1,5 +1,7 @@
 ---
 title: Elemento Import (MSBuild) | Microsoft Docs
+description: Obtenga información sobre cómo usa MSBuild el elemento Import para importar el contenido de un archivo del proyecto en otro.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d9e66934015c7c4a57c7d7c6911b9ebe02ac536
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5a5650402655f4a5a2a0388ac0e57a0b903bc2e
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79094490"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903959"
 ---
 # <a name="import-element-msbuild"></a>Elemento Import (MSBuild)
 
@@ -66,7 +68,7 @@ Importa el contenido de un archivo de proyecto en otro archivo de proyecto.
 
  Mediante el elemento `Import` , puede reutilizar código común a muchos archivos de proyecto. Esto facilita el mantenimiento del código, ya que las actualizaciones que realice en el código compartido se propagan a todos los proyectos que lo importen.
 
- Por convención, los archivos de proyecto compartidos e importados se guardan como archivos *.targets*, pero son archivos de proyecto de MSBuild estándar. MSBuild no impide importar un proyecto con una extensión de nombre de archivo diferente, pero se recomienda usar la extensión *.targets* para mantener la coherencia.
+ Por convención, los archivos de proyecto compartidos e importados se guardan como archivos *.targets* , pero son archivos de proyecto de MSBuild estándar. MSBuild no impide importar un proyecto con una extensión de nombre de archivo diferente, pero se recomienda usar la extensión *.targets* para mantener la coherencia.
 
  Las rutas de acceso relativas de los proyectos importados se interpretan en relación con el directorio del proyecto que se importa (con algunas excepciones que se indican más adelante). Por lo tanto, si un archivo de proyecto se importa en varios archivos de proyecto en ubicaciones diferentes, las rutas de acceso relativas del archivo de proyecto importado se interpretarán de manera diferente para cada proyecto importado. Hay dos excepciones. Una excepción es que, en los elementos `Import`, la ruta de acceso siempre se interpreta en relación con el proyecto que contiene el elemento `Import`. Otra excepción es que `UsingTask` siempre interpreta la ruta de acceso relativa del atributo `AssemblyFile` en relación con el archivo que contiene el elemento `UsingTask`.
 

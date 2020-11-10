@@ -1,21 +1,21 @@
 ---
-title: Empleo de la característica Uso máximo en el portal de administración
+title: Empleo de la característica Uso máximo en suscripciones de Visual Studio
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: c473b01f-2dfe-4cc2-ad29-bb5e2a268123
-ms.date: 09/21/2020
+ms.date: 10/28/2020
 ms.topic: conceptual
 description: Más información sobre cómo consultar el número máximo de suscripciones asignadas en el portal de administración
-ms.openlocfilehash: b9ff33623311e4bfeff6b6067d5631d4e65efda9
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: e8ea9aa9001312c792e6f9d356dbc5f7cf58dfb8
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "91022181"
+ms.lasthandoff: 11/01/2020
+ms.locfileid: "92904486"
 ---
 # <a name="use-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>Empleo de la característica Uso máximo para realizar un seguimiento del número de suscripciones asignadas
-Esta nueva característica del portal de administración de suscripciones de Visual Studio permite realizar un seguimiento de cuántas suscripciones ha comprado y asignado, así como identificar el número máximo de suscripciones de cada nivel que haya asignado, tanto durante el último año como a lo largo de la duración de sus contratos. 
+Esta característica nueva del portal de administración de suscripciones de Visual Studio permite realizar un seguimiento de cuántas suscripciones ha comprado y asignado, así como identificar el número máximo de suscripciones de cada nivel que haya asignado, tanto durante el último año como a lo largo de la duración de los contratos. 
 
 ## <a name="maximum-usage-overview"></a>Información general del uso máximo
 Vea el vídeo o siga leyendo para saber cómo usar la característica de uso máximo. 

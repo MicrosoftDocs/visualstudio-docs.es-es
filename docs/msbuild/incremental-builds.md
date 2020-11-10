@@ -1,5 +1,7 @@
 ---
 title: Compilaciones incrementales | Microsoft Docs
+description: Obtenga información sobre las compilaciones incrementales de MSBuild, que están optimizadas para que no se ejecuten los archivos de salida actualizados.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7283d67710a3b5b319b2d25a1c5d6535fed83b9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4beb6c676fbd66d7e0d11e4ca1fe2a3fa8188bfe
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633725"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904589"
 ---
 # <a name="incremental-builds"></a>Compilaciones incrementales
 
@@ -52,7 +54,7 @@ Existen tres casos:
 
 - El destino no tiene salidas sin actualizar y se omite. MSBuild evalúa el destino y realiza cambios en los elementos y las propiedades como si el destino se hubiera ejecutado.
 
-Para admitir la compilación incremental, las tareas deben asegurarse de que el valor de atributo `TaskParameter` de cualquier elemento `Output` sea igual a un parámetro de entrada de tarea. A continuación se muestran algunos ejemplos:
+Para admitir la compilación incremental, las tareas deben asegurarse de que el valor de atributo `TaskParameter` de cualquier elemento `Output` sea igual a un parámetro de entrada de tarea. Estos son algunos ejemplos:
 
 ```xml
 <CreateProperty Value="123">

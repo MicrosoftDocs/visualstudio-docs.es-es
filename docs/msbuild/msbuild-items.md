@@ -1,6 +1,6 @@
 ---
 title: Elementos de MSBuild | Microsoft Docs
-description: Uso del atributo Include de MSBuild de ItemGroup para especificar los archivos que se incluirán en una compilación
+description: Obtenga información sobre cómo usar el atributo Include de MSBuild de ItemGroup para especificar los archivos que se incluirán en una compilación.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 020983182706bd6d9382f4d0bd4885ffa0f86f52
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a28823a1a492cb1e8d5f434f98248fecc5d84e47
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88247593"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904498"
 ---
 # <a name="msbuild-items"></a>Elementos de MSBuild
 
@@ -35,7 +35,7 @@ Los elementos de MSBuild son entradas del sistema de compilación y suelen repre
 </ItemGroup>
 ```
 
- El elemento *file2.cs* no reemplaza al elemento *file1.cs*, sino que se anexa el nombre de archivo a la lista de valores del tipo del elemento `Compile`.
+ El elemento *file2.cs* no reemplaza al elemento *file1.cs* , sino que se anexa el nombre de archivo a la lista de valores del tipo del elemento `Compile`.
 
  El código XML siguiente crea el mismo tipo de elemento declarando ambos archivos en un atributo `Include`. Observe que los nombres de archivo están separados por un punto y coma.
 
@@ -97,7 +97,7 @@ Para obtener más información sobre los caracteres comodín, vea [Cómo: Selecc
 </ItemGroup>
 ```
 
- El atributo `Exclude` solamente afecta a los elementos agregados por el atributo `Include` en el elemento de elemento que contiene ambos. En el ejemplo siguiente no se excluiría el archivo *Form1.cs*, que se ha agregado en el elemento de elemento anterior.
+ El atributo `Exclude` solamente afecta a los elementos agregados por el atributo `Include` en el elemento de elemento que contiene ambos. En el ejemplo siguiente no se excluiría el archivo *Form1.cs* , que se ha agregado en el elemento de elemento anterior.
 
 ```xml
 <Compile Include="*.cs" />

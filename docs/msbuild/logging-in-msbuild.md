@@ -1,5 +1,7 @@
 ---
 title: Registro de MSBuild | Microsoft Docs
+description: Obtenga información sobre cómo el registro de MSBuild proporciona una manera de supervisar el progreso de la compilación mediante la captura de eventos de compilación, mensajes, advertencias y errores en un archivo de registro.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a66164426b760798571fc35e5288158a8dae9943
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9de830003571f1f648cf06be634d9a773b95269f
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633556"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904339"
 ---
 # <a name="logging-in-msbuild"></a>Registro de MSBuild
 
@@ -43,6 +45,6 @@ El registro proporciona una manera de supervisar el progreso de una compilación
 
  Describe cómo crear registradores de reenvío personalizados.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Compilar varios proyectos en paralelo](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) Describe cómo compilar varios proyectos más rápidamente al ejecutarlos en paralelo.

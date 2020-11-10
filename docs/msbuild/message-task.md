@@ -1,5 +1,7 @@
 ---
 title: Message (Tarea) | Microsoft Docs
+description: Obtenga información sobre los parámetros y la configuración de la tarea Message de MSBuild, que registra mensajes durante las compilaciones.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 264ff3a5e64b756020648e888f7817e12702659f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1b7a2854220a7ee85fd680cedd8c8e0c5c3ada89
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78865367"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903833"
 ---
 # <a name="message-task"></a>Message (tarea)
 
@@ -33,7 +35,7 @@ Registra un mensaje durante una compilación.
 
  En la siguiente tabla se describen los parámetros de la tarea `Message` .
 
-|Parámetro|Descripción|
+|Parámetro|Description|
 |---------------|-----------------|
 |`Importance`|Parámetro `String` opcional.<br /><br /> Especifica la importancia del mensaje. Este parámetro puede tener un valor de `high`, `normal` o `low`. El valor predeterminado es `normal`.|
 |`Text`|Parámetro `String` opcional.<br /><br /> El texto del error que se va a registrar.|

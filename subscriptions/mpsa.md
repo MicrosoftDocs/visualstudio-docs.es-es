@@ -7,35 +7,35 @@ ms.assetid: b331c837-3524-42b7-820e-b4fdd5e12793
 ms.date: 09/03/2020
 ms.topic: conceptual
 description: Obtenga información sobre la administración de las suscripciones de Visual Studio en un Contrato de servicios y productos de Microsoft (MPSA)
-ms.openlocfilehash: f0e894272f13b08af20f36579aea807cba7a882a
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 388c847ce19ca7136efb7757fbc87bffdc35a673
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006090"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903804"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Suscripciones de Visual Studio en un Contrato de servicios y productos de Microsoft (MPSA)
-Si ha comprado suscripciones de Visual Studio a través del programa MPSA, debe tener en cuenta algunos aspectos antes de poder convertirse en un administrador de suscripciones de Visual Studio y asignar las suscripciones a los usuarios. Si ya lo han configurado como administrador, puede ir directamente al [Portal de administración de suscripciones de Visual Studio](https://manage.visualstudio.com/).
+Si ha comprado suscripciones de Visual Studio a través del programa MPSA, debe tener en cuenta algunos aspectos antes de poder convertirse en un administrador de suscripciones de Visual Studio y asignarlas a los usuarios. Si ya lo han configurado como administrador, puede ir directamente al [portal de administración de suscripciones de Visual Studio](https://manage.visualstudio.com/).
 
 Los clientes de MPSA administran los recursos comprados a través de MPSA en un portal denominado [Business Center](https://businessaccount.microsoft.com/Customer), que admite funcionalidades similares a las del Centro de servicios de licencias por volumen de Microsoft (VLSC). Estas incluyen ver el resumen de licencias, los pedidos, las descargas, las claves, los usuarios, etcétera. Sin embargo, las suscripciones de Visual Studio en MPSA tienen un comportamiento muy parecido al de Cloud Services. Business Center también usa las cuentas profesionales para iniciar sesión, en lugar de las cuentas Microsoft (MSA). Si en su organización se usan servicios en la nube, como Office 365 o Azure Active Directory, y el correo electrónico forma parte de cualquiera de estos dos servicios, la cuenta ya es una cuenta profesional. Esta cuenta le permite registrarse en Business Center con la contraseña existente. Si en su organización no se usan los servicios en la nube y el correo electrónico no es una cuenta profesional, que puede usarla para registrarse en Business Center.
 
-Además, el [Portal de administración](https://manage.visualstudio.com/) de Suscripciones de Visual Studio es el lugar donde se asignarán las suscripciones cuando se convierta en administrador de Suscripciones de Visual Studio. En MPSA, las suscripciones de Visual Studio deben proporcionarse al portal de administración correspondiente, que es el Portal de administración de suscripciones de Visual Studio. Para ello, debe asociar la cuenta de compra a un inquilino (por ejemplo, contoso.onmicrosoft.com).
+Además, en el [portal de administración](https://manage.visualstudio.com/) de suscripciones de Visual Studio es donde asignará las suscripciones cuando se convierta en administrador de suscripciones de Visual Studio. En MPSA, las suscripciones de Visual Studio deben proporcionarse al portal de administración correspondiente, que es el Portal de administración de suscripciones de Visual Studio. Para ello, debe asociar la cuenta de compra a un inquilino (por ejemplo, contoso.onmicrosoft.com).
 
-Tenga en cuenta que hay dos tipos de inquilinos: administrados y sin administrar. Un inquilino administrado se refiere a un inquilino que ya están administrando los administradores de la organización.
+Tenga en cuenta que hay dos tipos de inquilinos: administrados y sin administrar. Un inquilino administrado se refiere a un inquilino que ya administran los administradores de la organización.
 
-Un inquilino sin administrar es un inquilino que no tiene ningún administrador asignado y no se puede usar para servicios en línea, como Office 365. Los inquilinos sin administrar también se crean al registrarse en Business Center con un correo electrónico que no es una cuenta profesional. Si le solicitan que cree una contraseña al registrarse en Business Center, significa que el correo electrónico no era una cuenta profesional y que se creó un inquilino sin administrar.
+Un inquilino sin administrar es el que no tiene ningún administrador asignado y no se puede usar para los servicios en línea, como Office 365. Los inquilinos sin administrar también se crean al registrarse en Business Center con un correo electrónico que no es una cuenta profesional. Si le solicitan que cree una contraseña al registrarse en Business Center, significa que el correo electrónico no era una cuenta profesional y que se creó un inquilino sin administrar.
 
-Antes de completar la asociación del inquilino, presentamos unos requisitos y pasos para convertirse en administrador de Suscripciones de Visual Studio.
+Estos son algunos requisitos y pasos para convertirse en administrador de suscripciones de Visual Studio antes de completar la asociación del inquilino.
 
 ## <a name="pre-tenant-association-managed-tenant"></a>Asociación previa al inquilino (inquilino administrado)
 - Debe ser un usuario registrado en el Centro de negocios.
-- Debe ser un administrador de usuario (como mínimo) o el administrador global del inquilino del que forma parte. (Esto se aplica si en su compañía ya se usan servicios en la nube). Cualquiera de los roles es necesario para ser administrador de suscripciones de Visual Studio.
+- Debe ser un administrador de usuario (como mínimo) o el administrador global del inquilino del que forma parte. (Esto se aplica si en su compañía ya se usan servicios en la nube). Cualquiera de los roles es necesario para ser administrador de suscripciones de Visual Studio.
 - Debe ser un administrador global del inquilino del que forma parte para poder asociar su cuenta de compras a su inquilino.
 - Debe ser un Administrador de cuentas en el Centro de negocios.
 - El campo "País o región" de su perfil de usuario (y de cualquier otro usuario) en [Azure](https://portal.azure.com/) debe rellenarse de forma adecuada según su país (es decir, Estados Unidos, Canadá, etcétera). 
 
 > [!NOTE]
-> No es necesario que los usuarios que quiera convertir en administradores de suscripciones de Visual Studio sean usuarios de Business Center, ya que solo deben cumplir los criterios 2 y 5.
+> No es necesario que los usuarios que quiera convertir en administradores de suscripciones de Visual Studio sean usuarios de Business Center, ya que solo deben cumplir los criterios 2 y 5.
 
 Una vez que se hayan cumplido los criterios anteriores, puede seguir los pasos que se indican a continuación para asociar su cuenta de compras a su inquilino.
 1. Inicie sesión en el [Centro de negocios](https://businessaccount.microsoft.com/Customer).
@@ -44,7 +44,7 @@ Una vez que se hayan cumplido los criterios anteriores, puede seguir los pasos q
 4. Seleccione el **inquilino** (es decir, contoso.onmicrosoft.com).
 5. Haga clic en **Asociar dominio**.
 
-Tras realizar la asociación, todos los usuarios que cumplan los criterios necesarios normalmente constarán como administradores de suscripciones de Visual Studio al cabo de pocos minutos. Sin embargo, en ocasiones este proceso puede tardar hasta 24 horas. Cuando finalice, podrá tener acceso al Portal de administración de suscripciones de Visual Studio. Si el proceso tarda más de 24 horas, siga estos pasos para ponerse en contacto con el Equipo de Soporte Técnico de MPSA:
+Tras la asociación, todos los usuarios que cumplan los criterios normalmente se aprovisionarán como administradores de suscripciones de Visual Studio transcurridos unos minutos. Sin embargo, en ocasiones este proceso puede tardar hasta 24 horas. Cuando finalice, podrá tener acceso al Portal de administración de suscripciones de Visual Studio. Si el proceso tarda más de 24 horas, siga estos pasos para ponerse en contacto con el Equipo de Soporte Técnico de MPSA:
 1. Conéctese a <https://www.microsoft.com/licensing/mpsa/default>.
 2. Haga clic en el menú **Más** en la parte superior de la página. 
 3. Seleccione **Soporte técnico**.
@@ -52,7 +52,7 @@ Tras realizar la asociación, todos los usuarios que cumplan los criterios neces
 5. Seleccione la opción de soporte técnico que mejor se adapte a sus necesidades. 
 
 > [!NOTE]
-> Si hay usuarios nuevos que cumplan los criterios de los pasos 2 y 5 (después de la asociación), debe ponerse en contacto con el servicio de soporte técnico de MPSA. El Equipo de Soporte Técnico de MPSA proporcionará asistencia para proveer los nuevos administradores de suscripciones de Visual Studio.
+> Si hay usuarios nuevos que cumplan los criterios de los pasos 2 y 5 (después de la asociación), debe ponerse en contacto con el servicio de soporte técnico de MPSA. El servicio de soporte técnico de MPSA proporcionará asistencia para aprovisionar los nuevos administradores de suscripciones de Visual Studio.
 
 ## <a name="tenant-association-unmanaged"></a>Asociación de inquilino (sin administrar)
 Si se ha registrado en Business Centers con un correo electrónico que no es una cuenta profesional (no registrada en Azure Active Directory "Azure AD"), como se explica anteriormente, la asociación del inquilino será ligeramente diferente. Deberá realizar lo que se conoce como "aceptación de dominio". Durante este proceso, se convertirá a sí mismo en el administrador global, con lo que el inquilino pasará de ser sin administrar a administrado.
@@ -60,9 +60,9 @@ Si se ha registrado en Business Centers con un correo electrónico que no es una
 Para obtener una explicación más detallada de este proceso, puede consultar las [Guías de inicio rápido](https://www.microsoft.com/Licensing/existing-customer/business-center-training-and-resources.aspx). Descargue la guía denominada *"Instalación y uso de los servicios en línea"* , en que se detalla el proceso de aceptación de dominio. Una vez que haya finalizado este procedimiento, la cuenta de compras también se asociará a su inquilino.
 
 > [!NOTE]
-> Una vez completado el proceso de aceptación de dominio, debe atenerse a los criterios de los cinco pasos indicados en la sección Asociación previa al inquilino (administrado). Una vez que se cumplen los criterios, solo será necesario ponerse en contacto con el Equipo de Soporte Técnico de MPSA para proveer más administradores de suscripciones de Visual Studio.
+> Una vez completado el proceso de aceptación de dominio, debe atenerse a los criterios de los cinco pasos indicados en la sección Asociación previa al inquilino (administrado). Una vez que se cumplan los criterios, solo será necesario ponerse en contacto con el servicio de soporte técnico de MPSA para aprovisionar más administradores de suscripciones de Visual Studio.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Documentación de Visual Studio](/visualstudio/)
 - [Documentación de Azure DevOps](/azure/devops/)
 - [Documentación de Azure](/azure/)

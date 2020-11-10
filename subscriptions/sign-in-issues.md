@@ -1,18 +1,18 @@
 ---
-title: Problemas al iniciar sesión en las suscripciones de Visual Studio | Microsoft Docs
+title: Problemas al iniciar sesión en suscripciones de Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 176c7f11-b19d-49e9-a6dd-b2e5da5e8480
-ms.date: 03/11/2020
+ms.date: 10/28/2020
 ms.topic: conceptual
 description: Obtenga información sobre los problemas que pueden surgir al iniciar sesión en suscripciones de Visual Studio
-ms.openlocfilehash: 05d610a9dbfb3ac8afe3d49cecde37320c2c250f
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: cf89d2deff2a5e9e81d065fbb7efda8097102d03
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005282"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903453"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>Problemas al iniciar sesión en las suscripciones de Visual Studio
 Para usar su suscripción de Visual Studio, primero debe iniciar sesión.  Según la suscripción, es posible que la configurase con una cuenta Microsoft (MSA) o una identidad de Azure Active Directory (AAD).  En este artículo se describen algunos de los problemas que pueden surgir al iniciar sesión en su suscripción.
@@ -32,12 +32,12 @@ La situación es especialmente confusa para los usuarios que tienen dos cuentas 
 Si intenta registrarse en una aplicación de consumidor de Microsoft con una dirección de correo electrónico profesional o educativa, verá el siguiente mensaje.
 
    > [!div class="mx-imgBorder"]
-   > ![No se puede crear una cuenta con el correo electrónico profesional](_img/sign-in-issues/cannot-use-work-email.png)
+   > ![No se puede crear una cuenta con el correo electrónico profesional](_img/sign-in-issues/cannot-use-work-email.png "Proporcione un nombre de usuario y una contraseña para crear la cuenta.")
 
 Pero si intenta registrarse en una aplicación de Microsoft que admite cuentas personales, profesionales o educativas, debería ver este mensaje:
 
    > [!div class="mx-imgBorder"]
-   > ![Se admiten cuentas profesionales o educativas](_img/sign-in-issues/existing-account.png)
+   > ![Se admiten cuentas profesionales o educativas](_img/sign-in-issues/existing-account.png "Aquí no puede suscribirse con una dirección de correo electrónico profesional o educativa.")
 
 ### <a name="are-existing-accounts-affected"></a>¿Se ven afectadas las cuentas existentes?
 El bloqueo de registro descrito aquí solo impide la creación de nuevas cuentas. No tiene ningún impacto en los usuarios que ya tienen una cuenta Microsoft con una dirección de correo electrónico profesional o educativa. Si ya están en esta situación, hemos facilitado el proceso de cambiar el nombre de una cuenta Microsoft personal. Este [artículo de soporte técnico](https://windows.microsoft.com/en-US/Windows/rename-personal-microsoft-account) proporciona instrucciones paso a paso sencillas. Cambiar el nombre de la cuenta Microsoft personal implica cambiar el nombre de usuario y no afecta a su correo electrónico profesional o a cómo inicia sesión en servicios para la empresa, como Microsoft 365. Tampoco afecta a su información personal, solo cambia la manera de iniciar sesión en ella. Puede usar otra dirección de correo electrónico (personal), obtener una nueva dirección de correo electrónico de @outlook.com de Microsoft, o usar su número de teléfono como un nuevo nombre de usuario.
@@ -61,7 +61,7 @@ El concepto "uso de alias" hace referencia a los usuarios que tienen diferentes 
 Esta situación puede darse cuando una empresa emplea un servicio en línea de Microsoft para el inicio de sesión en su directorio, como JohnD@contoso.com, pero los usuarios acceden a sus cuentas de correo electrónico con alias o nombres descriptivos, como John.Doe@contoso.com. Muchos usuarios que administran sus suscripciones a través de Microsoft Business Center podrían experimentar un inicio de sesión incorrecto dado que la dirección de correo electrónico proporcionada (John.Doe@contoso.com) no coincide con la dirección de directorio (JohnD@contoso.com) requerida para la autenticación correcta mediante la opción "Cuenta profesional o educativa".
 
 ### <a name="what-options-do-i-have"></a>¿De qué opciones dispongo?
-Desde la perspectiva del suscriptor, es importante tratarlo primero con el administrador para conocer la configuración de la identidad de la empresa. Si es necesario, el administrador quizás tenga que actualizar la configuración de su cuenta desde el Portal de administración, o puede que necesite crear una cuenta de Microsoft (MSA) utilizando su dirección de correo electrónico corporativo. Antes de llevar a cabo los pasos para crear una MSA, hable con su administrador con respecto a las directivas o los problemas relacionados con esta acción. 
+Desde la perspectiva del suscriptor, es importante tratarlo primero con el administrador para conocer la configuración de la identidad de la empresa. Si es necesario, es posible que el administrador tenga que actualizar la configuración de la cuenta desde el portal de administración, o bien que necesite crear una cuenta de Microsoft (MSA) con la dirección de correo electrónico corporativa. Antes de llevar a cabo los pasos para crear una MSA, hable con el administrador con respecto a las directivas o los problemas relacionados con esta acción. 
 
 ## <a name="see-also"></a>Consulte también
 - [Documentación de Visual Studio](/visualstudio/)

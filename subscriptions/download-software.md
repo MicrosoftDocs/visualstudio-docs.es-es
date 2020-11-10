@@ -1,25 +1,25 @@
 ---
 title: Descarga de títulos de software en suscripciones de Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: cabuschl
 ms.assetid: e2f2619c-7736-47e5-a066-5940d5994db9
-ms.date: 07/29/2020
+ms.date: 10/26/2020
 ms.topic: conceptual
 description: Aprenda a encontrar y descargar títulos de software de Microsoft en suscripciones de Visual Studio
-ms.openlocfilehash: 4a267db59f1efc4912748846e61774966f0f6abe
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: e6a5b6a1caab199ec2b67108f539c1d68d545551
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "91005605"
+ms.lasthandoff: 11/01/2020
+ms.locfileid: "92903636"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Descarga de títulos de software en suscripciones de Visual Studio
 En función de la suscripción de Visual Studio con la que cuente, puede tener a su disposición una amplia variedad de títulos de software de Microsoft.  En este artículo se explica cómo buscar y descargar el software necesario para sacar el máximo partido de la suscripción. 
 
 En la página [Descargas](https://my.visualstudio.com/downloads/featured) solo verá las descargas que se incluyan con su suscripción.  Si tiene más de una suscripción o inscripción a un programa, las descargas que aparezcan se corresponderán con la **suscripción de más nivel** que posea, incluso si en ese momento está viendo una suscripción diferente.  Por ejemplo, si tiene una suscripción de Visual Studio Enterprise y una de Visual Studio Professional, ambas asociadas al mismo identificador de inicio de sesión, las descargas que se muestran son las incluidas en la suscripción a Enterprise, aun cuando esté viendo las ventajas de su suscripción a Professional.  
 
-Si su suscripción proviene de su empresa o centro educativo, el administrador de la suscripción controla si tiene acceso a las descargas. Al deshabilitar el acceso a las descargas también se deshabilita el acceso a las claves de producto. Si no tiene acceso a las descargas y a las claves de producto y las necesita, [póngase en contacto con el administrador](contact-my-admin.md).
+Si la suscripción proviene de la empresa o el centro educativo, el administrador de las suscripciones controlará si dispone de acceso a las descargas. Al deshabilitar el acceso a las descargas también se deshabilita el acceso a las claves de producto. Si no tiene acceso a las descargas ni a las claves de producto, pero las necesita, [póngase en contacto con el administrador](contact-my-admin.md).
 
 > [!NOTE]
 > Tenemos constancia de un problema relacionado con la disponibilidad de claves de producto de Microsoft 365.  Estamos investigando la causa y, una vez resuelto el problema, se actualizará este artículo. 
@@ -48,7 +48,7 @@ En el panel de detalles, también puede seleccionar la pestaña **Claves** para 
 > ![Claves de producto de Visual Studio 2019](_img/subscriber-downloads/vs2019-keys.png "La pestaña Claves muestra el número de claves que quedan y permite reclamar las claves disponibles.")
 
 ### <a name="obtaining-product-keys"></a>Obtención de las claves de producto
-Para obtener una clave de producto para la descarga, puede seleccionar la llave de color azul con la etiqueta **Obtener clave** o bien, si ya está viendo el panel de detalles, seleccione **Reclamar clave** en la pestaña **Claves** .
+Para obtener una clave de producto para la descarga, puede seleccionar la llave de color azul con la etiqueta **Obtener clave** o bien, si ya está viendo el panel de detalles, seleccione **Reclamar clave** en la pestaña **Claves**.
 > [!div class="mx-imgBorder"]
 > ![Claves de producto reclamadas de Visual Studio 2019](_img/subscriber-downloads/vs2019-claim-keys.png "Seleccione Reclamar clave para reclamar las claves restantes.")
 

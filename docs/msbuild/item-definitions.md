@@ -1,5 +1,7 @@
 ---
 title: Definiciones de elementos | Microsoft Docs
+description: Obtenga información sobre cómo MSBuild usa ItemGroup e ItemDefinitionGroup para declarar metadatos para elementos de archivos de un proyecto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18d6a2a30af4fb29a8d9e924c44c1570ff1efe29
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 75c8947243545b57e0b8c4352784869f54efe565
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633712"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904652"
 ---
 # <a name="item-definitions"></a>Definiciones de elementos
 
@@ -74,7 +76,7 @@ Los valores de los metadatos definidos en ItemDefinitionGroup pueden proceder de
 
 - Variable de entorno
 
-- Propiedad global (de la línea de comandos de *MSBuild.exe*)
+- Propiedad global (de la línea de comandos de *MSBuild.exe* )
 
 - Propiedad reservada
 

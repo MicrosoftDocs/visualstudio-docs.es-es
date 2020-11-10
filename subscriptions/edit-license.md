@@ -1,21 +1,21 @@
 ---
-title: Edición de suscripciones en el Portal de administración | Microsoft Docs
+title: Edición de suscripciones de Visual Studio en el portal de administración | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
 ms.date: 09/21/2020
 ms.topic: how-to
-description: Obtenga más información sobre cómo los administradores pueden editar asignaciones de suscripción.
-ms.openlocfilehash: 060ae7c7679eb1bf9dc4da99ea9a1bf952ebc58b
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+description: Obtenga información sobre cómo los administradores pueden editar asignaciones de suscripciones.
+ms.openlocfilehash: d10e9ee779c6fc37c886bb1b5e00e15913bab7e2
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91022565"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904160"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>Edición de asignaciones de suscripciones de Visual Studio
-Como administrador de suscripciones, puede hacer cambios en las suscripciones asignadas a personas de su organización.  En este artículo se describen los tipos de cambios que puede realizar y se proporcionan los pasos necesarios.
+Como administrador de suscripciones, puede hacer cambios en las suscripciones asignadas a las personas de su organización.  En este artículo se describen los tipos de cambios que puede realizar y se proporcionan los pasos necesarios.
 
    > [!NOTE]
    > Si necesita cambiar los detalles de la suscripción de un suscriptor asignado a través de un grupo de Azure Active Directory, deberá quitarlos del grupo y agregarlos al portal de administración individualmente.  

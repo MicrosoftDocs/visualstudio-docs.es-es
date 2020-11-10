@@ -1,5 +1,7 @@
 ---
 title: Funciones de elementos | Microsoft Docs
+description: Obtenga información sobre cómo el código de MSBuild de tareas y destinos puede llamar a funciones de elementos para obtener información sobre los elementos de un proyecto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3f6299a8be52aef068746ca33e48341da55f778
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: 94b94ef7b17633ab78f7eb91f61dd67ea2c8021d
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586879"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904631"
 ---
 # <a name="item-functions"></a>funciones de elementos
 

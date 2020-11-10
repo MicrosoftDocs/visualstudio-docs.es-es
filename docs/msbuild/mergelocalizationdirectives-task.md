@@ -1,5 +1,7 @@
 ---
 title: MergeLocalizationDirectives (Tarea) | Microsoft Docs
+description: Obtenga información sobre cómo MSBuild usa la tarea MergeLocalizationDirectives para combinar los atributos de localización y los comentarios de los archivos de formato binario XAML en un único archivo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c7699afeb09604a437aad091f9aaf9ce624d33e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 97d04978a2809a4744f62f27c375efdec1e43dcc
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633504"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903880"
 ---
 # <a name="mergelocalizationdirectives-task"></a>MergeLocalizationDirectives (Tarea)
 
@@ -38,7 +40,7 @@ La tarea <xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives> combin
 
 ## <a name="remarks"></a>Comentarios
 
-Puede agregar atributos y comentarios de localización al contenido de XAML. Con la compatibilidad para la localización incluida en Windows Presentation Foundation (WPF), puede quitar los atributos y los comentarios de localización y colocarlos en un archivo *.loc* que sea independiente del ensamblado generado. Puede hacerlo mediante el atributo **LocalizationPropertyStorage**. Para obtener más información sobre atributos y comentarios de localización y **LocalizationPropertyStorage**, vea [Atributos y comentarios sobre localización](/dotnet/framework/wpf/advanced/localization-attributes-and-comments).
+Puede agregar atributos y comentarios de localización al contenido de XAML. Con la compatibilidad para la localización incluida en Windows Presentation Foundation (WPF), puede quitar los atributos y los comentarios de localización y colocarlos en un archivo *.loc* que sea independiente del ensamblado generado. Puede hacerlo mediante el atributo **LocalizationPropertyStorage**. Para obtener más información sobre atributos y comentarios de localización y **LocalizationPropertyStorage** , vea [Atributos y comentarios sobre localización](/dotnet/framework/wpf/advanced/localization-attributes-and-comments).
 
 ## <a name="example"></a>Ejemplo
 

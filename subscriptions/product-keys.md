@@ -1,18 +1,18 @@
 ---
-title: Uso de claves de producto | Microsoft Docs
+title: Uso de claves de producto en suscripciones de Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 89e3fcf9-fe5d-4266-8dd7-5567d05fe869
-ms.date: 09/18/2020
+ms.date: 10/28/2020
 ms.topic: conceptual
 description: Sepa cómo obtener y administrar las claves de producto en las suscripciones de Visual Studio.
-ms.openlocfilehash: 389a57fb2e8fe0ea6ee81ee163fed052c441c209
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: a5da818a059709d311b87572f71b78a51dbb7deb
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "91005851"
+ms.lasthandoff: 11/01/2020
+ms.locfileid: "92903998"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Uso de claves de producto en suscripciones de Visual Studio
 
@@ -23,7 +23,7 @@ Por lo general, las suscripciones de Visual Studio incluyen cinco claves de prod
 La mayoría de las claves de producto permiten también varias activaciones del producto por cada clave.  Muchos productos se pueden instalar y usar sin activación durante 30 días o más.  Para la mayoría de los suscriptores, esto proporciona activaciones suficientes como para satisfacer sus necesidades.  Sin embargo, si ha agotado las activaciones disponibles para un producto, puede solicitar más claves a través del [servicio al cliente de suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
 
 > [!NOTE]
-> Si su suscripción proviene de su empresa o centro educativo, el administrador de la suscripción controla si tiene acceso a las descargas de software.  Si el acceso a las descargas para su suscripción está deshabilitado, también lo estará el acceso a las claves de producto.  Si necesita descargas o claves de producto, [póngase en contacto con el administrador](contact-my-admin.md).
+> Si la suscripción proviene de la empresa o el centro educativo, el administrador de la suscripción controlará si dispone de acceso a las descargas de software.  Si el acceso a las descargas para su suscripción está deshabilitado, también lo estará el acceso a las claves de producto.  Si necesita descargas o claves de producto, [póngase en contacto con el administrador](contact-my-admin.md).
 
 ## <a name="activating-a-product"></a>Activación de un producto
 Se requiere activación para ciertos productos.  En las suscripciones de Visual Studio, esto suele limitarse a aplicaciones cliente Windows, Windows Server, Microsoft Office y Expression Studio. Cuando se requiere activación, muchos productos (incluidos Windows y Office) permiten instalar y usar el producto sin activación durante 30 días o más. Si reemplaza copias de sus equipos con frecuencia (por lo menos, una vez cada 30 días), considere la posibilidad de NO activar el producto. Las claves de producto proporcionadas como parte de su suscripción de Visual Studio no permiten activaciones ilimitadas de un producto.
@@ -33,7 +33,7 @@ Si ya ha reclamado todas las claves de producto adicionales disponibles de acuer
 ## <a name="retail-and-volume-licensing-versions-of-products"></a>Versiones de productos minoristas y de licencias por volumen
 Las suscripciones de Visual Studio ofrecen una selección de versiones minoristas y de licencias por volumen de los productos de Microsoft. Algunos productos están disponibles en Descargas solo en la versión comercial o solo en la versión de licencias por volumen, mientras que otros están disponibles en ambas versiones. Por lo general, los productos que requieren activación, como productos de cliente de Windows, Windows Server y Office, solo se ofrecen en su versión comercial a través de Descargas.
 
-Los clientes de licencias por volumen también pueden descargar software desde el Centro de servicio de licencias por volumen (VLSC) para obtener las versiones de productos de licencias por volumen (y las correspondientes claves de productos).  El acceso al VLSC está a cargo de administradores designados en la organización del cliente.
+Los clientes de licencias por volumen también pueden descargar software desde el Centro de servicio de licencias por volumen (VLSC) para obtener las versiones de productos de licencias por volumen (y las correspondientes claves de productos).  El acceso a VLSC lo controlan los administradores designados en la organización del cliente.
 
 ## <a name="daily-product-key-claim-limits"></a>Límites diarios de reclamación de claves de producto
 Microsoft se compromete a proteger la integridad del programa de suscripciones a Visual Studio y el valor del software y los beneficios que los suscriptores legítimos del programa reciben por su inversión. Para cumplir su compromiso, Microsoft aplica límites diarios de reclamación de claves para las suscripciones a Visual Studio. Los límites diarios de reclamación de claves restringen el número de claves que se pueden solicitar por día, por suscripción.

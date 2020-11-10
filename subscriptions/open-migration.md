@@ -4,23 +4,23 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 6866dfab-c4fa-428e-bb0d-7b202c81f770
-ms.date: 09/03/2020
+ms.date: 10/28/2020
 ms.topic: conceptual
 description: Obtenga información sobre la manera en que los asociados pueden administrar las suscripciones a Visual Studio para los clientes.
-ms.openlocfilehash: 2442f3ac1821c81adcee5d029814ebfb79a6fb17
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: ba62a2b3d9920ca145722c137322e4471d110d9e
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006064"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903765"
 ---
 # <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>Administración por parte de los asociados de suscripciones en nombre de los clientes
 Para administrar suscripciones en el [portal de administración de suscripciones](https://manage.visualstudio.com) de Visual Studio, los partners deben seguir una serie de pasos. 
 
 Este es el proceso:
 - Los socios realizarán un nuevo pedido de parte de un cliente, e indicarán la dirección de correo electrónico de trabajo del cliente.
-- El cliente recibirá una notificación en la que se le invita a asignar administradores y acceder a sus suscripciones en el [Portal de administración de suscripciones de Visual Studio](https://manage.visualstudio.com).
-- Para que los asociados administren suscripciones en nombre de los clientes, tendrán que registrarse en el portal de administración. Aquí se explican las distintas formas de acceder (similar al proceso de agregar-abrir).
+- El cliente recibirá una notificación en la que se le invitará a asignar administradores y acceder a sus suscripciones en el [portal de administración de suscripciones de Visual Studio](https://manage.visualstudio.com).
+- Para que los asociados puedan administrar las suscripciones en nombre de los clientes, tendrán que registrarse en el portal de administración. Aquí se explican las distintas formas de acceder (similar al proceso de agregar-abrir).
 
 ## <a name="new-partners-visiting-the-visual-studio-subscriptions-administration-portal-directly"></a>Nuevos asociados que visitan directamente el Portal de administración de suscripciones de Visual Studio
 Este escenario se aplica a los nuevos asociados que ya han realizado nuevos pedidos de Open License, pero que aún no se han registrado en [Microsoft Business Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx) y van directamente al [Portal de administración de suscripciones de Visual Studio](https://manage.visualstudio.com).  Siga estos pasos:

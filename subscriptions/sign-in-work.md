@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: f39a2672-c283-4755-93d3-31c7c7a032d0
-ms.date: 09/08/2020
+ms.date: 10/28/2020
 ms.topic: how-to
 description: Aprenda a iniciar sesión en las suscripciones de Visual Studio con la cuenta profesional o educativa.
-ms.openlocfilehash: 96b111c47e753b343d59c89e65f71eaa90132f6f
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 3ac4e9fedae66656d4dee2155c8a8dcbe9325970
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005812"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903385"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-work-or-school-account"></a>Inicio de sesión en las suscripciones de Visual Studio con la cuenta profesional o educativa 
 
@@ -54,7 +54,7 @@ También puede ver la suscripción seleccionada actualmente en la esquina superi
         > [!NOTE]
         > Este será el caso de muchos suscriptores de Visual Studio que han utilizado suscripciones de Visual Studio (anteriormente MSDN) en el pasado.
 
-    - Si se produce un error en una ruta, pruebe la otra.  Es posible que los administradores de las suscripciones hayan modificado su suscripción.
+    - Si se produce un error en una ruta, pruebe la otra.  Es posible que los administradores de suscripciones hayan modificado la suscripción.
 
 5. Escriba su contraseña.
 6. Haga clic en **Iniciar sesión**.
