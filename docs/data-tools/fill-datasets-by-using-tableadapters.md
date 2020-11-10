@@ -1,5 +1,7 @@
 ---
 title: Rellenar conjuntos de datos mediante TableAdapters
+description: Rellene los conjuntos de valores mediante TableAdapters. Un componente TableAdapter rellena un conjunto de datos con datos de la base de datos, basándose en una o más consultas o procedimientos almacenados que se especifiquen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 888e2ac47348d7e61d115f51e3ea52d15ea9f447
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6a10eb996acbdbf5411688860ce2ec8b00da1f6
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282441"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436464"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Rellenar conjuntos de datos mediante TableAdapters
 
@@ -39,7 +41,7 @@ Para obtener información detallada acerca de las operaciones de TableAdapter, p
 |-----------|-----------------|
 |[Crear y configurar TableAdapters](../data-tools/create-and-configure-tableadapters.md)|Cómo usar los diseñadores para crear y configurar TableAdapters|
 |[Crear consultas parametrizadas de TableAdapter](../data-tools/create-parameterized-tableadapter-queries.md)|Cómo permitir que los usuarios proporcionen argumentos a procedimientos o consultas de TableAdapter|
-|[Obtener acceso directamente a la base de datos con un TableAdapter](../data-tools/directly-access-the-database-with-a-tableadapter.md)|Cómo usar los métodos DbDirect de TableAdapters|
+|[Acceder directamente a la base de datos con un TableAdapter](../data-tools/directly-access-the-database-with-a-tableadapter.md)|Cómo usar los métodos DbDirect de TableAdapters|
 |[Desactivar restricciones al llenar un conjunto de datos](../data-tools/turn-off-constraints-while-filling-a-dataset.md)|Cómo trabajar con restricciones Foreign Key al actualizar datos|
 |[Cómo extender la funcionalidad de un TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)|Cómo agregar código personalizado a los TableAdapters|
 |[Leer datos XML en un conjunto de datos](../data-tools/read-xml-data-into-a-dataset.md)|Cómo trabajar con XML|
@@ -52,7 +54,7 @@ Los TableAdapters son componentes generados por el diseñador que se conectan a 
 
 ![Flujo de datos de una aplicación cliente](../data-tools/media/clientdatadiagram.gif)
 
-Aunque los TableAdapters están diseñados con el **Diseñador de DataSet**, las clases de TableAdapter no se generan como clases anidadas de  <xref:System.Data.DataSet> . Se encuentran en espacios de nombres independientes que son específicos de cada conjunto de información. Por ejemplo, si tiene un conjunto de `NorthwindDataSet` objetos denominado, los TableAdapters asociados a  <xref:System.Data.DataTable> s en el `NorthwindDataSet` se encontrarían en el espacio de `NorthwindDataSetTableAdapters` nombres. Para tener acceso a un TableAdapter determinado mediante programación, debe declarar una nueva instancia del TableAdapter. Por ejemplo:
+Aunque los TableAdapters están diseñados con el **Diseñador de DataSet** , las clases de TableAdapter no se generan como clases anidadas de  <xref:System.Data.DataSet> . Se encuentran en espacios de nombres independientes que son específicos de cada conjunto de información. Por ejemplo, si tiene un conjunto de `NorthwindDataSet` objetos denominado, los TableAdapters asociados a  <xref:System.Data.DataTable> s en el `NorthwindDataSet` se encontrarían en el espacio de `NorthwindDataSetTableAdapters` nombres. Para tener acceso a un TableAdapter determinado mediante programación, debe declarar una nueva instancia del TableAdapter. Por ejemplo:
 
 [!code-csharp[VbRaddataTableAdapters#7](../data-tools/codesnippet/CSharp/fill-datasets-by-using-tableadapters_1.cs)]
 [!code-vb[VbRaddataTableAdapters#7](../data-tools/codesnippet/VisualBasic/fill-datasets-by-using-tableadapters_1.vb)]
@@ -89,7 +91,7 @@ La clase TableAdapter no es un tipo .NET. Esto significa que no se puede buscar 
 
 A continuación se muestran los métodos y las propiedades de TableAdapters que se usan habitualmente:
 
-|Member|Descripción|
+|Miembro|Descripción|
 |------------|-----------------|
 |`TableAdapter.Fill`|Rellena la tabla de datos asociada del TableAdapter con los resultados del comando del TableAdapter `SELECT` .|
 |`TableAdapter.Update`|Vuelve a enviar los cambios a la base de datos y devuelve un entero que representa el número de filas afectadas por la actualización. Para obtener más información, vea [actualizar datos mediante un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md).|
@@ -126,7 +128,7 @@ La clase TableAdapterManager no es un tipo .NET. Por lo tanto, no se puede busca
 
 A continuación se muestran los métodos y las propiedades de la clase que se usan con frecuencia `TableAdapterManager` :
 
-|Member|Descripción|
+|Miembro|Descripción|
 |------------|-----------------|
 |Método `UpdateAll`|Guarda todos los datos de todas las tablas de datos.|
 |Propiedad`BackUpDataSetBeforeUpdate`|Determina si se va a crear una copia de seguridad del conjunto de archivos antes de ejecutar el `TableAdapterManager.UpdateAll` método. Booleano.|
@@ -137,6 +139,6 @@ A continuación se muestran los métodos y las propiedades de la clase que se us
 
 Al utilizar comandos de datos con una propiedad CommandType establecida en <xref:System.Data.CommandType.Text> , compruebe cuidadosamente la información que se envía desde un cliente antes de pasarla a la base de datos. Usuarios con malas intenciones podrían intentar enviar (inyectar) instrucciones de SQL modificadas o adicionales con el fin de obtener acceso no autorizado o dañar la base de datos. Antes de transferir la entrada del usuario a una base de datos, compruebe siempre que la información es válida. Un procedimiento recomendado es usar siempre consultas con parámetros o procedimientos almacenados cuando sea posible.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Herramientas de conjunto de herramientas](../data-tools/dataset-tools-in-visual-studio.md)

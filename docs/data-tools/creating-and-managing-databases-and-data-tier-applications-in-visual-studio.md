@@ -1,5 +1,7 @@
 ---
 title: Proyectos de base de datos y proyectos DAC
+description: Lea acerca de los proyectos de base de datos y las aplicaciones de capa de datos (DAC). Use proyectos de base de datos para crear nuevas bases de datos, crear nuevos DAC y actualizar las bases de datos y DAC existentes.
+ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: cc8d32ddcc332264278cf76392ac69a6188ca51c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 57b889f025b06e127e8e4bb38be311f6bbe55952
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586736"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436607"
 ---
 # <a name="database-projects-and-data-tier-applications"></a>Proyectos de base de datos y aplicaciones de capa de datos
 
@@ -25,12 +27,12 @@ Para obtener una lista de las características de base de datos admitidas por la
 
 ## <a name="common-high-level-tasks"></a>Tareas comunes de alto nivel
 
-| Tarea de alto nivel | Contenido adicional |
+| High-Level tarea | Contenido adicional |
 | - | - |
 | **Iniciar el desarrollo de una aplicación de capa de datos:** El concepto de una aplicación de capa de datos (DAC) se presentó con SQL Server 2008. Una DAC contiene la definición de una base de datos de SQL Server y los objetos de instancia auxiliares que usa una aplicación cliente-servidor o de tres niveles. Una DAC incluye objetos de base de datos, como tablas y vistas, junto con entidades de instancia como inicios de sesión. Puede usar Visual Studio para crear un proyecto DAC, compilar un archivo de paquete DAC y enviar el archivo de paquete DAC a un administrador de base de datos para su implementación en una instancia del motor de base de datos de SQL Server. | - [Aplicaciones de capa de datos](/sql/relational-databases/data-tier-applications/data-tier-applications)<br />- [SQL Server Management Studio](/sql/ssms/sql-server-management-studio-ssms) |
 | **Desarrollo iterativo de bases de datos:** Los desarrolladores pueden desproteger partes del proyecto y actualizarlas en un entorno de desarrollo aislado. Mediante este tipo de entorno, puede probar los cambios sin que afecte a otros miembros del equipo. Una vez completados los cambios, vuelva a proteger los archivos en el control de versiones, donde otros miembros del equipo pueden obtener los cambios y compilarlos e implementarlos en un servidor de prueba. | - [Desarrollo de bases de datos sin conexión orientado a proyectos (SQL Server Data Tools)](/sql/ssdt/project-oriented-offline-database-development)<br />- [Depurador de Transact-SQL (SQL Server Management Studio)](/sql/ssms/scripting/transact-sql-debugger) |
 | **Prototipos, comprobación de resultados de pruebas y modificación de objetos y scripts de base de datos:** Puede usar el editor de Transact-SQL para realizar cualquiera de estas tareas comunes. | - [Editores de consultas y texto (SQL Server Management Studio)](/sql/ssms/scripting/query-and-text-editors-sql-server-management-studio) |
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Visual Studio Data Tools para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

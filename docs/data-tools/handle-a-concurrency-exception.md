@@ -1,5 +1,7 @@
 ---
 title: Tratar las excepciones de simultaneidad
+description: Controlar una excepción de simultaneidad (System. Data. DBConcurrencyException), que se genera cuando dos usuarios intentan cambiar los mismos datos en una base de datos al mismo tiempo.
+ms.custom: SEO-VS-2020
 ms.date: 09/11/2017
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 57820a7532255c0084bafc5134cf7793b8c88ab6
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: 5fcd8bb06cf9c88466b4dfa3cfaf2dfd8093bd3d
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407671"
+ms.locfileid: "94436451"
 ---
 # <a name="handle-a-concurrency-exception"></a>Tratar las excepciones de simultaneidad
 
@@ -212,6 +214,6 @@ Puede comprobar el formulario para asegurarse de que se comporta de la forma pre
 
    Al seleccionar **no** se cancela la actualización y se actualiza el conjunto de datos con los valores que se encuentran actualmente en la base de datos. Si selecciona **sí** , se escribe el valor propuesto en la base de datos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Guardar los datos de nuevo en la base de datos](../data-tools/save-data-back-to-the-database.md)

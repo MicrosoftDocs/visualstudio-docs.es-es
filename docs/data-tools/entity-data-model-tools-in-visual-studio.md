@@ -1,5 +1,7 @@
 ---
 title: Entity Framework Tools
+description: Comprenda Entity Framework Tools en Visual Studio. Entity Framework Tools están diseñados para ayudarle a crear aplicaciones de Entity Framework (EF).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 1b06b573-84aa-4458-b3f5-e238df47bf45
@@ -8,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 250f1ad55f8d60396b8423098e58801d0ed81e77
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1cc1aa43945ceee19b70a037b1c865c67539fb61
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75916737"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436646"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Entity Framework Tools en Visual Studio
 
@@ -30,9 +32,9 @@ Las herramientas de Entity Framework se instalan como parte de la carga de traba
 
 Estas son las herramientas específicas que componen Entity Framework herramientas en Visual Studio:
 
-- Puede usar el [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] ** [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] Diseñador** (**Entity Designer**) para crear y modificar visualmente entidades, asociaciones, asignaciones y relaciones de herencia. **Entity Designer** también genera [!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)] código de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] nivel de objeto o.
+- Puede usar el [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] Diseñador** ( **Entity Designer** ) para crear y modificar visualmente entidades, asociaciones, asignaciones y relaciones de herencia. **Entity Designer** también genera [!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)] código de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] nivel de objeto o.
 
-- Puede usar el ** [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] Asistente** para generar un modelo conceptual a partir de una base de datos existente y agregar información de conexión de base de datos a la aplicación.
+- Puede usar el **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] Asistente** para generar un modelo conceptual a partir de una base de datos existente y agregar información de conexión de base de datos a la aplicación.
 
 - Puede usar el **Asistente para crear bases de datos** para crear un modelo conceptual primero y, a continuación, crear una base de datos que admita el modelo.
 

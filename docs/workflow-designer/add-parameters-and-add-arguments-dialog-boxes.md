@@ -1,5 +1,7 @@
 ---
 title: 'Diseñador de flujo de trabajo: agregar parámetros & cuadros de diálogo Agregar argumentos'
+description: Obtenga información sobre cómo los elementos de la interfaz de usuario (UI) del cuadro de diálogo Agregar parámetros se usan en el diseñador de InvokeMethod.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,18 +12,18 @@ manager: jillfra
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: c8acef82c2616259793ba63ca51c789cfd1b9ba4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2038e56770a7d671a25b3982f865926c29697b13
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547360"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435695"
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>Cuadros de diálogo Agregar parámetros y Agregar argumentos
 
 En la tabla siguiente se describen los elementos de la interfaz de usuario (UI) del cuadro de diálogo **agregar parámetros** que usa el <xref:System.Activities.Statements.InvokeMethod> Diseñador:
 
-|Nombre|Value|
+|Nombre|Valor|
 |-|-|
 |**Dirección**|Especifica si el parámetro representa el flujo de datos en el método, fuera del método o ambos.|
 |**Tipo**|Nombre del tipo del nuevo parámetro.|
@@ -29,7 +31,7 @@ En la tabla siguiente se describen los elementos de la interfaz de usuario (UI) 
 
 En la tabla siguiente se describen los elementos de la interfaz de usuario (UI) del cuadro de diálogo **Agregar argumentos** que usa el <xref:System.Activities.Statements.InvokeDelegate> Diseñador:
 
-|Nombre|Value|
+|Nombre|Valor|
 |-|-|
 |**Nombre**|El nombre del argumento.|
 |**Dirección**|Especifica si el argumento representa el flujo de datos en el delegado, fuera del delegado o ambos.|

@@ -1,5 +1,7 @@
 ---
 title: Crear un control de usuario Windows Forms con enlace de datos
+description: Aprenda a crear un control de usuario Windows Forms que admita el enlace de datos complejo mediante la implementación de la clase ComplexBindingPropertiesAttribute.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 97d9e64a0fcabb207d4606d4819f6afcb61b1043
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 465636b2b5bbf1a47752b4f0917258e264172abd
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586853"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436789"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Creación de un control de usuario de Windows Forms que admita el enlace de datos complejo
 
@@ -51,11 +53,11 @@ Durante este tutorial, aprenderá a:
 
 - Agregue el nuevo control arrastrándolo desde la ventana **Orígenes de datos** hasta **Form1**.
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
 
 En este tutorial se usa SQL Server Express LocalDB y la base de datos de ejemplo Northwind.
 
-1. Si no tiene SQL Server Express LocalDB, instálelo desde la [Página de descarga de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)o a través de la **instalador de Visual Studio**. En el **instalador de Visual Studio**, puede instalar SQL Server Express LocalDB como parte de la carga de trabajo de **procesamiento y almacenamiento de datos** , o como un componente individual.
+1. Si no tiene SQL Server Express LocalDB, instálelo desde la [Página de descarga de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)o a través de la **instalador de Visual Studio**. En el **instalador de Visual Studio** , puede instalar SQL Server Express LocalDB como parte de la carga de trabajo de **procesamiento y almacenamiento de datos** , o como un componente individual.
 
 1. Instale la base de datos de ejemplo Northwind siguiendo estos pasos:
 
@@ -75,9 +77,9 @@ El primer paso es crear un proyecto de **aplicación de Windows Forms** para C# 
 
 ## <a name="add-a-user-control-to-the-project"></a>Agregar un control de usuario al proyecto
 
-Dado que en este tutorial se crea un control complejo enlazable a datos a partir de un **control de usuario**, agregue un elemento de **control de usuario** al proyecto:
+Dado que en este tutorial se crea un control complejo enlazable a datos a partir de un **control de usuario** , agregue un elemento de **control de usuario** al proyecto:
 
-1. En el menú **Proyecto**, elija **Agregar control de usuario**.
+1. En el menú **Proyecto** , elija **Agregar control de usuario**.
 
 1. Escriba **ComplexDataGridView** en el área **Nombre** y haga clic en **Agregar**.
 
@@ -91,7 +93,7 @@ Para agregar un <xref:System.Windows.Forms.DataGridView> al control de usuario, 
 
 En el caso de los controles complejos que admiten enlaces a datos, puede implementar el <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>:
 
-1. Cambie el control **ComplexDataGridView** a vista de código. En el menú **Ver**, seleccione **Código**.
+1. Cambie el control **ComplexDataGridView** a vista de código. En el menú **Ver** , seleccione **Código**.
 
 1. Reemplace el código de `ComplexDataGridView` por lo siguiente:
 
@@ -156,7 +158,7 @@ Según cuáles sean los requisitos de la aplicación, hay varios pasos que se pu
 
 - Crear controles que admitan escenarios de búsqueda. Para obtener más información, vea [crear un control de usuario Windows Forms que admita el enlace de datos de búsqueda](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Enlazar controles de Windows Forms a datos en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Establecer el control que se creará al arrastrar desde la ventana Orígenes de datos](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)

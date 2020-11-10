@@ -1,5 +1,6 @@
 ---
 title: Configurar la herencia mediante Object Relational Designer
+description: Obtenga información sobre cómo configurar la herencia mediante el Object Relational Designer (Object Relational Designer), que admite la herencia de tabla única. Clases de datos heredadas creadas.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -9,19 +10,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a0f56d7b123571e9a65d5bb2baa99a8d7dac2461
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 4bc36bca3cc5bd13b3dcfad5ebed66eca7eeb019
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037060"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436338"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Procedimiento para configurar la herencia mediante Object Relational Designer
-El **Object Relational Designer** (**Object**Relational Designer) admite el concepto de herencia de tabla única, ya que se suele implementar en sistemas relacionales. En la herencia de tabla única, hay una sola tabla de base de datos que contiene campos tanto para la información de elementos primarios como para la información de elementos secundarios. En el caso de datos relacionales, una columna discriminadora contiene el valor que determina la clase a la que pertenece un registro cualquiera.
+El **Object Relational Designer** ( **Object** Relational Designer) admite el concepto de herencia de tabla única, ya que se suele implementar en sistemas relacionales. En la herencia de tabla única, hay una sola tabla de base de datos que contiene campos tanto para la información de elementos primarios como para la información de elementos secundarios. En el caso de datos relacionales, una columna discriminadora contiene el valor que determina la clase a la que pertenece un registro cualquiera.
 
 Por ejemplo, considere una `Persons` tabla que contiene todos los empleados de una empresa. Algunas personas son los empleados y otras son los directores. La `Persons` tabla contiene una columna denominada `EmployeeType` que tiene un valor de 1 para los administradores y un valor de 2 para los empleados; esta es la columna discriminadora. En este escenario, puede crear una subclase de empleados y rellenar la clase únicamente con los registros cuyo `EmployeeType` tiene el valor 2. Puede eliminar también columnas que no se aplican desde cada una de las clases.
 
-La creación de un modelo de objetos que use la herencia (y que corresponda a datos relacionales) puede resultar un poco confusa. En el procedimiento siguiente se describen los pasos necesarios para configurar la herencia con **Object**Relational Designer. Los siguientes pasos genéricos sin hacer referencia a una tabla y columnas existentes pueden resultar difíciles, por lo que se proporciona un tutorial que usa datos. Para obtener instrucciones paso a paso para configurar la herencia mediante el uso de la **Object Relational Designer**, consulte [Tutorial: creación de LINQ to SQL clases mediante la herencia de tabla única (Object Relational Designer)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md).
+La creación de un modelo de objetos que use la herencia (y que corresponda a datos relacionales) puede resultar un poco confusa. En el procedimiento siguiente se describen los pasos necesarios para configurar la herencia con **Object** Relational Designer. Los siguientes pasos genéricos sin hacer referencia a una tabla y columnas existentes pueden resultar difíciles, por lo que se proporciona un tutorial que usa datos. Para obtener instrucciones paso a paso para configurar la herencia mediante el uso de la **Object Relational Designer** , consulte [Tutorial: creación de LINQ to SQL clases mediante la herencia de tabla única (Object Relational Designer)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md).
 
 ## <a name="to-create-inherited-data-classes"></a>Para crear clases de datos heredadas
 

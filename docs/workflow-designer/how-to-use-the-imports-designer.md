@@ -1,5 +1,7 @@
 ---
 title: 'Diseñador de flujo de trabajo: Cómo usar el diseñador de importaciones'
+description: Obtenga información sobre cómo el diseñador de importaciones le permite especificar espacios de nombres para los tipos que va a usar en las expresiones.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -10,18 +12,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77da016b062d032965fcf7042cedba2004e3fdf5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6bdf33227263e8158f956fa8c6509d93e8116e9b
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817429"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437845"
 ---
 # <a name="how-to-use-the-imports-designer"></a>Utilizar el diseñador de importaciones
 
 El diseñador de importaciones le permite escribir los espacios de nombres para los tipos que utilizará en sus expresiones. Al igual que las **importaciones** o el **uso** de palabras clave en Visual Basic y C#, la especificación de espacios de nombres en el diseñador de importaciones le permite escribir simplemente un nombre de tipo en la expresión en lugar de un nombre de tipo de versión completo.
 
-El diseñador de importaciones reacciona tanto a los cambios en la interfaz de usuario como a los cambios que se efectúan cuando se guarda el flujo de trabajo. Cuando el flujo de trabajo está guardado, los espacios de nombres se pueden agregar automáticamente al diseñador de importaciones. Entre ellas, figuran:
+El diseñador de importaciones reacciona tanto a los cambios en la interfaz de usuario como a los cambios que se efectúan cuando se guarda el flujo de trabajo. Cuando el flujo de trabajo está guardado, los espacios de nombres se pueden agregar automáticamente al diseñador de importaciones. Entre ellas se incluyen las siguientes:
 
 - Espacios de nombres para cualquier tipo utilizado en declaraciones de variables y de argumentos.
 

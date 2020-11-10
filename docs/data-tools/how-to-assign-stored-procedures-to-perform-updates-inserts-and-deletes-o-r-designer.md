@@ -1,5 +1,6 @@
 ---
 title: Usar procedimientos almacenados en LINQ to SQL para actualizar datos
+description: Use procedimientos almacenados en el LINQ to SQL Object Relational Designer (Object Relational Designer) para realizar actualizaciones, inserciones y eliminaciones de datos.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -9,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3f8b2f783d6ae449a6124afe5d8e25dd836f0f8e
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 5915de290a84429878eccb4eae17821f8ac27f70
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036319"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436418"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Procedimiento para asignar procedimientos almacenados para realizar actualizaciones, inserciones y eliminaciones (Object Relational Designer)
 
@@ -34,9 +35,9 @@ De forma predeterminada, la lógica para actualizar una base de datos (insercion
 
 ### <a name="to-assign-stored-procedures-to-override-the-default-behavior-of-an-entity-class"></a>Para asignar procedimientos almacenados con el fin de invalidar el comportamiento predeterminado de una clase de entidad
 
-1. Abra el archivo de **LINQ to SQL** en el diseñador. (Haga doble clic en el archivo **.dbml** en el **Explorador de soluciones**).
+1. Abra el archivo de **LINQ to SQL** en el diseñador. (Haga doble clic en el archivo **.dbml** en el **Explorador de soluciones** ).
 
-2. En el **Explorador de servidores** o **Explorador de bases de datos**, expanda **Procedimientos almacenados** y busque los procedimientos almacenados que desee usar para los comandos Insertar, Actualizar y/o Eliminar de la clase de entidad.
+2. En el **Explorador de servidores** o **Explorador de bases de datos** , expanda **Procedimientos almacenados** y busque los procedimientos almacenados que desee usar para los comandos Insertar, Actualizar y/o Eliminar de la clase de entidad.
 
 3. Arrastre el procedimiento almacenado hasta **Object Relational Designer**.
 
@@ -44,7 +45,7 @@ De forma predeterminada, la lógica para actualizar una base de datos (insercion
 
 4. Seleccione la clase de entidad para la que desee usar el procedimiento almacenado para realizar las actualizaciones.
 
-5. En la ventana **Propiedades**, seleccione el comando que desee invalidar (**Insertar**, **Actualizar** o **Eliminar**).
+5. En la ventana **Propiedades** , seleccione el comando que desee invalidar ( **Insertar** , **Actualizar** o **Eliminar** ).
 
 6. Haga clic en los puntos suspensivos (...) junto a **Usar motor en tiempo de ejecución** para abrir el cuadro de diálogo **Configurar comportamiento**.
 
@@ -60,9 +61,9 @@ De forma predeterminada, la lógica para actualizar una base de datos (insercion
 10. Haga clic en **Aceptar** o en **Aplicar**.
 
     > [!NOTE]
-    > Puede seguir configurando el comportamiento de cada combinación de clase y comportamiento siempre que haga clic en **aplicar** después de hacer cada cambio. Si cambia la clase o el comportamiento antes de hacer clic en **aplicar**, aparece un cuadro de diálogo de advertencia que le ofrece la oportunidad de aplicar los cambios.
+    > Puede seguir configurando el comportamiento de cada combinación de clase y comportamiento siempre que haga clic en **aplicar** después de hacer cada cambio. Si cambia la clase o el comportamiento antes de hacer clic en **aplicar** , aparece un cuadro de diálogo de advertencia que le ofrece la oportunidad de aplicar los cambios.
 
-Para revertir a la lógica predeterminada del motor en tiempo de ejecución para las actualizaciones, haga clic en los puntos suspensivos junto a los comandos **Insertar**, **Actualizar** o **Eliminar** en la ventana **Propiedades** y después seleccione **Usar motor en tiempo de ejecución** en el cuadro de diálogo **Configurar comportamiento**.
+Para revertir a la lógica predeterminada del motor en tiempo de ejecución para las actualizaciones, haga clic en los puntos suspensivos junto a los comandos **Insertar** , **Actualizar** o **Eliminar** en la ventana **Propiedades** y después seleccione **Usar motor en tiempo de ejecución** en el cuadro de diálogo **Configurar comportamiento**.
 
 ## <a name="see-also"></a>Consulte también
 

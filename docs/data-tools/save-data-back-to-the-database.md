@@ -1,5 +1,7 @@
 ---
 title: Guardar los datos de nuevo en la base de datos
+description: Use las herramientas de conjunto de datos para volver a guardar los datos en la base de datos. El conjunto de datos es una copia en memoria de los datos que se debe guardar en la base de datos si se modifica.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -20,12 +22,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 493637f81df15fadf65d6c7d90e980e322919b13
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 77f6a837fcc88c7154978e8031b17febaa0fcd39
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281752"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436060"
 ---
 # <a name="save-data-back-to-the-database"></a>Guardar los datos de nuevo en la base de datos
 
@@ -274,7 +276,7 @@ En una instrucción UPDATE, debe especificar los valores nuevos (los que se escr
 
 ## <a name="see-also"></a>Consulte también
 
-- [Herramientas de conjunto de herramientas en Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
+- [Herramientas de conjunto de datos en Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
 - [Crear y configurar TableAdapters](create-and-configure-tableadapters.md)
 - [Actualizar datos mediante un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)
 - [Enlazar controles a los datos en Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

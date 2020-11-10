@@ -1,5 +1,7 @@
 ---
 title: Diseñador de actividades Diseñador de flujo de trabajo-InvokeMethod
+description: Obtenga información sobre la actividad InvokeMethod y cómo puede utilizar el diseñador de actividades InvokeMethod para crear y configurar una actividad InvokeMethod.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8660cd82f9d671da3b535ac228e8ce62c875dc07
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 55162def18d2295e0767a3999ffde75d71e1233d
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593205"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437741"
 ---
 # <a name="invokemethod-activity-designer"></a>Diseñador de actividades InvokeMethod
 
@@ -36,10 +38,10 @@ En la tabla siguiente se muestran las <xref:System.Activities.Statements.InvokeM
 |Nombre de propiedad|Obligatorio|Uso|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|Nombre descriptivo de la actividad <xref:System.Activities.Statements.InvokeMethod>. El valor predeterminado es InvokeMethod.<br /><br /> Aunque <xref:System.Activities.Activity.DisplayName%2A> no es estrictamente necesario, es mejor usar uno.|
-|<xref:System.Activities.Statements.InvokeMethod.MethodName%2A>|Verdadero|El nombre del método que se va a llamar cuando se ejecute la actividad. El método al que se llama debe declararse como **público**. Esta propiedad se puede editar en la superficie del diseñador y es obligatoria.|
+|<xref:System.Activities.Statements.InvokeMethod.MethodName%2A>|True|El nombre del método que se va a llamar cuando se ejecute la actividad. El método al que se llama debe declararse como **público**. Esta propiedad se puede editar en la superficie del diseñador y es obligatoria.|
 |<xref:System.Activities.Statements.InvokeMethod.Parameters%2A>|Falso|La colección de parámetros del método al que se ha llamado. Los parámetros se deben agregar a la colección en el mismo orden que aparecen en la firma de método. Para mostrar el cuadro de diálogo **parámetros** donde puede establecer esta propiedad, haga clic en el botón de puntos suspensivos del campo **parámetros** de la cuadrícula de propiedades. Haga clic en el botón **crear argumento** para agregar los parámetros.|
 |<xref:System.Activities.Statements.InvokeMethod.Result%2A>|Falso|El valor devuelto de la llamada al método.|
-|<xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A>|Verdadero|Especifica si el método se llama de forma asincrónica. El valor predeterminado es **False**.|
+|<xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A>|True|Especifica si el método se llama de forma asincrónica. El valor predeterminado es **False**.|
 |<xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>|Falso|Objeto que contiene el método al que se va a llamar. Esta propiedad se puede editar en la superficie del diseñador.<br /><br /> <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> o <xref:System.Activities.Statements.InvokeMethod.TargetType%2A> son obligatorias para que se establezcan.|
 |<xref:System.Activities.Statements.InvokeMethod.TargetType%2A>|Falso|Tipo de <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>. Esta propiedad se puede editar en la superficie del diseñador. Esta propiedad solo se debe establecer si el método llamado es estático.|
 
@@ -59,9 +61,9 @@ La excepción resultante es de tipo <xref:System.Activities.InvalidWorkflowExcep
 
 Esta restricción no se aplica a <xref:System.Activities.Statements.InvokeMethod.TargetType%2A> y <xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A> . No son argumentos de flujo de trabajo y, por tanto, no se registran en la <xref:System.Activities.Statements.InvokeMethod.GenericTypeArguments%2A> colección de la <xref:System.Activities.Statements.InvokeMethod> actividad en el <xref:System.Activities.Activity.CacheMetadata%2A> método.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Primitivos](../workflow-designer/primitives-activity-designers.md)
+- [Elementos primitivos](../workflow-designer/primitives-activity-designers.md)
 - [Assign](../workflow-designer/assign-activity-designer.md)
 - [Delay](../workflow-designer/delay-activity-designer.md)
 - [WriteLine](../workflow-designer/writeline-activity-designer.md)

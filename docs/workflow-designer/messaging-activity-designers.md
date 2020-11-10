@@ -1,5 +1,7 @@
 ---
 title: Diseñadores de actividades de mensajería de Diseñador de flujo de trabajo
+description: Obtenga información sobre cómo usar diseñadores de actividad de mensajería para crear y configurar actividades de mensajería que envían y reciben mensajes Windows Communication Foundation (WCF).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 897e63cf-a42f-4edd-876f-c4ccfffaf6d6
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1b821b4e63f82233b3c2e92fa3f5c3481cda982
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e82e4cd9f539dea5d0683999413a8371a442a13
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876195"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435656"
 ---
 # <a name="messaging-activity-designers"></a>Diseñadores de actividades de mensajería
 
@@ -47,7 +49,7 @@ Para otros tipos de diseñadores de actividad, vea los temas siguientes:
 
 - [Tiempo de ejecución](../workflow-designer/runtime-activity-designers.md)
 
-- [Primitivos](../workflow-designer/primitives-activity-designers.md)
+- [Elementos primitivos](../workflow-designer/primitives-activity-designers.md)
 
 - [Transacción](../workflow-designer/transaction-activity-designers.md)
 

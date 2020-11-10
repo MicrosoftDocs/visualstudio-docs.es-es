@@ -1,5 +1,7 @@
 ---
 title: Personalizar títulos para controles enlazados a datos
+description: Personalizar el modo en que Visual Studio crea los títulos para los controles enlazados a datos. Modifique el comportamiento de los subtítulos inteligentes de la ventana orígenes de datos. Desactive los subtítulos (CC).
+ms.custom: SEO-VS-2020
 ms.date: 11/03/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 085542f912cc5747c2012adb05e6097b5891ed60
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 65c0f1146549dfbee6f84fab06be12053b174aeb
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282584"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436633"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personalizar el modo en que Visual Studio crea los títulos de controles enlazados a datos
 
@@ -26,13 +28,13 @@ Cuando se arrastran elementos desde la [ventana orígenes de datos](add-new-data
 
 ::: moniker range="vs-2017"
 
-Puede personalizar la forma en que se crean estas etiquetas estableciendo los valores de **SmartCaptionExpression**, **SmartCaptionReplacement**y **SmartCaptionSuffix** en la clave del registro de **HKEY_CURRENT_USER \software\microsoft\visualstudio\15.0\data Designers** .
+Puede personalizar la forma en que se crean estas etiquetas estableciendo los valores **SmartCaptionExpression** , **SmartCaptionReplacement** y **SmartCaptionSuffix** en la clave del registro **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data Designers** .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Puede personalizar la forma en que se crean estas etiquetas estableciendo los valores de **SmartCaptionExpression**, **SmartCaptionReplacement**y **SmartCaptionSuffix** en la clave del registro de **HKEY_CURRENT_USER \software\microsoft\visualstudio\16.0\data Designers** .
+Puede personalizar la forma en que se crean estas etiquetas estableciendo los valores **SmartCaptionExpression** , **SmartCaptionReplacement** y **SmartCaptionSuffix** en la clave del registro **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Data Designers** .
 
 ::: moniker-end
 
@@ -138,6 +140,6 @@ En la tabla siguiente se muestra la configuración predeterminada interna de est
 
     La próxima vez que arrastre elementos desde la ventana **orígenes de datos** , las etiquetas de título se crearán con títulos sin modificar.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Enlazar controles a los datos en Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

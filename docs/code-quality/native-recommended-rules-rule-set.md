@@ -1,18 +1,20 @@
 ---
 title: Conjunto de reglas Reglas recomendadas nativas
 ms.date: 11/04/2016
+description: Obtenga información sobre el conjunto de reglas reglas recomendadas nativas de Visual Studio. Vea las descripciones de las reglas de seguridad, solidez y otros problemas críticos en el código nativo.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94fd7ba7b742c2615dc8f161c5ea156b4fd0a7f4
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 1c0515a08d987d8892dd5f252d97ece8d138eb0b
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600024"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437037"
 ---
 # <a name="native-recommended-rules-rule-set"></a>Conjunto de reglas Reglas recomendadas nativas
 
@@ -38,20 +40,20 @@ Incluya este conjunto de reglas en cualquier conjunto de reglas personalizado qu
 |[C6201](/cpp/code-quality/c6201)|El índice supera el valor máximo para el búfer de pila|
 |[C6214](/cpp/code-quality/c6214)|VALOR HRESULT de conversión no válido en BOOL|
 |[C6215](/cpp/code-quality/c6215)|Conversión no válida de BOOL a HRESULT|
-|[C6216](/cpp/code-quality/c6216)|VALOR BOOLEANO de conversión insertada en el compilador no válido|
+|[C6216](/cpp/code-quality/c6216)|Conversión de Compiler-Inserted no válida de BOOL a HRESULT|
 |[C6217](/cpp/code-quality/c6217)|Prueba HRESULT no válida con NOT|
 |[C6220](/cpp/code-quality/c6220)|Comparación de HRESULT no válida con-1|
 |[C6226](/cpp/code-quality/c6226)|Asignación de HRESULT no válida a-1|
 |[C6230](/cpp/code-quality/c6230)|Uso de HRESULT no válido como booleano|
-|[C6235](/cpp/code-quality/c6235)|Constante distinta de cero con OR lógico|
-|[C6236](/cpp/code-quality/c6236)|OR lógico con constante distinta de cero|
-|[C6237](/cpp/code-quality/c6237)|Cero con efectos lógicos y pierde efectos secundarios|
+|[C6235](/cpp/code-quality/c6235)|Constante distinta de cero con Logical-Or|
+|[C6236](/cpp/code-quality/c6236)|Logical-Or con una constante distinta de cero|
+|[C6237](/cpp/code-quality/c6237)|Cero con Logical-And pierde efectos secundarios|
 |[C6242](/cpp/code-quality/c6242)|Desenredo local forzado|
 |[C6248](/cpp/code-quality/c6248)|Creando DACL null|
 |[C6250](/cpp/code-quality/c6250)|Descriptores de dirección no liberados|
 |[C6255](/cpp/code-quality/c6255)|Uso no protegido de alloca|
 |[C6258](/cpp/code-quality/c6258)|Usar el subproceso Terminate|
-|[C6259](/cpp/code-quality/c6259)|Código muerto en un conmutador de bits o limitado|
+|[C6259](/cpp/code-quality/c6259)|Código muerto en Bitwise-Or conmutador limitado|
 |[C6260](/cpp/code-quality/c6260)|Uso de aritmética de bytes|
 |[C6262](/cpp/code-quality/c6262)|Uso excesivo de la pila|
 |[C6263](/cpp/code-quality/c6263)|Usar alloca in (bucle)|
@@ -64,18 +66,18 @@ Incluya este conjunto de reglas en cualquier conjunto de reglas personalizado qu
 |[C6274](/cpp/code-quality/c6274)|Argumento sin caracteres para la función de formato|
 |[C6276](/cpp/code-quality/c6276)|Conversión de cadena no válida|
 |[C6277](/cpp/code-quality/c6277)|Llamada no válida a CreateProcess|
-|[C6278](/cpp/code-quality/c6278)|Matriz: nueva no coincidente de eliminación escalar|
-|[C6279](/cpp/code-quality/c6279)|Escalar-nueva matriz: eliminación no coincidente|
-|[C6280](/cpp/code-quality/c6280)|Asignación de memoria: desasignación no coincidente|
+|[C6278](/cpp/code-quality/c6278)|Array-New Scalar-Delete no coinciden|
+|[C6279](/cpp/code-quality/c6279)|Scalar-New Array-Delete no coinciden|
+|[C6280](/cpp/code-quality/c6280)|Allocation-Deallocation de memoria no coincidente|
 |[C6281](/cpp/code-quality/c6281)|Precedencia de relación bit a bit|
 |[C6282](/cpp/code-quality/c6282)|La asignación reemplaza la prueba|
-|[C6283](/cpp/code-quality/c6283)|Matriz primitiva: no coincide el nuevo escalar-eliminación|
+|[C6283](/cpp/code-quality/c6283)|Scalar-Delete de Array-New primitivos no coincidentes|
 |[C6284](/cpp/code-quality/c6284)|Argumento de objeto no válido para la función de formato|
-|[C6285](/cpp/code-quality/c6285)|Logical-or de constantes|
-|[C6286](/cpp/code-quality/c6286)|Efectos secundarios que no son de cero o de pérdida|
+|[C6285](/cpp/code-quality/c6285)|Logical-Or de constantes|
+|[C6286](/cpp/code-quality/c6286)|Logical-Or distinta de cero que pierden efectos secundarios|
 |[C6287](/cpp/code-quality/c6287)|Prueba redundante|
-|[C6288](/cpp/code-quality/c6288)|La inclusión mutua sobre Logical-and es false|
-|[C6289](/cpp/code-quality/c6289)|La exclusión mutua sobre el operador lógico or es true|
+|[C6288](/cpp/code-quality/c6288)|La inclusión mutua en Logical-And es falsa|
+|[C6289](/cpp/code-quality/c6289)|La exclusión mutua en Logical-Or es true|
 |[C6290](/cpp/code-quality/c6290)|Prioridad entre operadores NOT lógico y AND bit a bit|
 |[C6291](/cpp/code-quality/c6291)|Prioridad entre operadores NOT lógico y OR bit a bit|
 |[C6292](/cpp/code-quality/c6292)|Número máximo de bucles|
@@ -92,7 +94,7 @@ Incluya este conjunto de reglas en cualquier conjunto de reglas personalizado qu
 |[C6308](/cpp/code-quality/c6308)|Pérdida de realloc|
 |[C6310](/cpp/code-quality/c6310)|Constante de filtro de excepción no válida|
 |[C6312](/cpp/code-quality/c6312)|Bucle de ejecución de excepción continua|
-|[C6314](/cpp/code-quality/c6314)|Precedencia OR bit a bit|
+|[C6314](/cpp/code-quality/c6314)|Precedencia de Bitwise-Or|
 |[C6317](/cpp/code-quality/c6317)|No complementario|
 |[C6318](/cpp/code-quality/c6318)|Exception continue Search|
 |[C6319](/cpp/code-quality/c6319)|Omitido por coma|
@@ -103,7 +105,7 @@ Incluya este conjunto de reglas en cualquier conjunto de reglas personalizado qu
 |[C6333](/cpp/code-quality/c6333)|VirtualFree tamaño no válido|
 |[C6335](/cpp/code-quality/c6335)|Identificador del proceso de fuga|
 |[C6381](/cpp/code-quality/c6381)|Falta la información de apagado|
-|[C6383](/cpp/code-quality/c6383)|Elemento-Count recuento de bytes: saturación del búfer de recuento|
+|[C6383](/cpp/code-quality/c6383)|Element-Count saturación del búfer de Byte-Count|
 |[C6384](/cpp/code-quality/c6384)|División de tamaño de puntero|
 |[C6385](/cpp/code-quality/c6385)|Saturación de lectura|
 |[C6386](/cpp/code-quality/c6386)|Saturación de escritura|

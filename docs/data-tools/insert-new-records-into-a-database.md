@@ -1,5 +1,7 @@
 ---
 title: Insertar nuevos registros en una base de datos
+description: Inserte nuevos registros en una base de datos mediante el método TableAdapter. Update, uno de los métodos DBDirect de TableAdapter o los objetos de comando.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b703d3ccc6ffbd5e2449a1768071b930f606f37f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3586cf45e152cd8a0149140556916b11544a00bb
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281999"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436281"
 ---
 # <a name="insert-new-records-into-a-database"></a>Insertar nuevos registros en una base de datos
 
@@ -34,7 +36,7 @@ Si la aplicación usa conjuntos de datos para almacenar datos, use el `TableAdap
 
 Si la aplicación utiliza objetos para almacenar datos, o si desea tener un mayor control sobre la creación de nuevos registros en la base de datos, use el `TableAdapter.Insert` método.
 
-Si el TableAdapter no tiene un `Insert` método, significa que el TableAdapter está configurado para usar procedimientos almacenados o su `GenerateDBDirectMethods` propiedad está establecida en `false` . Intente establecer la propiedad del TableAdapter `GenerateDBDirectMethods` en `true` desde el **Diseñador de DataSet**y, a continuación, guarde el conjunto de contenido. Esto volverá a generar el TableAdapter. Si el TableAdapter todavía no tiene un `Insert` método, es probable que la tabla no proporcione suficiente información de esquema para distinguir entre las filas individuales (por ejemplo, puede que no haya ninguna clave principal establecida en la tabla).
+Si el TableAdapter no tiene un `Insert` método, significa que el TableAdapter está configurado para usar procedimientos almacenados o su `GenerateDBDirectMethods` propiedad está establecida en `false` . Intente establecer la propiedad del TableAdapter `GenerateDBDirectMethods` en `true` desde el **Diseñador de DataSet** y, a continuación, guarde el conjunto de contenido. Esto volverá a generar el TableAdapter. Si el TableAdapter todavía no tiene un `Insert` método, es probable que la tabla no proporcione suficiente información de esquema para distinguir entre las filas individuales (por ejemplo, puede que no haya ninguna clave principal establecida en la tabla).
 
 ## <a name="insert-new-records-by-using-tableadapters"></a>Insertar nuevos registros mediante TableAdapters
 
@@ -84,6 +86,6 @@ En el ejemplo siguiente se muestra cómo insertar registros en una base de datos
 
 Debe tener acceso a la base de datos a la que está intentando conectarse, así como permiso para realizar inserciones en la tabla deseada.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Guardar los datos de nuevo en la base de datos](../data-tools/save-data-back-to-the-database.md)

@@ -1,6 +1,8 @@
 ---
 title: Ventana de métricas de código
 ms.date: 12/12/2017
+description: Obtenga información sobre cómo ver, filtrar, reorganizar y exportar datos de análisis de métricas de Visual Studio Code. Vea cómo crear elementos de trabajo en función de los resultados de métricas de código.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 f1_keywords:
 - vs.codemetrics.output
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c01543b290d991a189c0851c64526c9c513068ba
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: d29109811c3dd5f354b510d046b33b0ba31d60e5
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91927983"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436815"
 ---
 # <a name="use-the-code-metrics-results-window"></a>Usar la ventana Resultados de métricas de código
 
@@ -30,9 +32,9 @@ La ventana **resultados de métricas de código** se muestra automáticamente cu
 
 Puede mostrar la ventana Resultados de métricas de código mediante una de las siguientes secuencias de menús:
 
-- En el menú **analizar** , elija **Windows**  >  **resultados de métricas de código**de Windows.
+- En el menú **analizar** , elija **Windows**  >  **resultados de métricas de código** de Windows.
 
-- En el menú **Ver** , elija **otros**  >  **resultados de métricas de código**de Windows.
+- En el menú **Ver** , elija **otros**  >  **resultados de métricas de código** de Windows.
 
 Se abre la ventana **resultados de métricas de código** , aunque no contenga ningún resultado.
 
@@ -50,9 +52,9 @@ El cuadro desplegable **filtro** contiene los nombres de las columnas de resulta
 
 1. En la lista **filtro** , seleccione el nombre de la columna.
 
-2. En **mín**, escriba el valor mínimo que se va a mostrar.
+2. En **mín** , escriba el valor mínimo que se va a mostrar.
 
-3. En **máx**, escriba el valor máximo que se va a mostrar.
+3. En **máx** , escriba el valor máximo que se va a mostrar.
 
 4. Haga clic en el botón **aplicar filtro** .
 
@@ -90,7 +92,7 @@ Para obtener más información sobre los elementos de trabajo de Azure Boards, v
 
 1. Haga clic con el botón secundario en el resultado.
 
-2. Elija **crear elemento de trabajo**y, a continuación, haga clic en el tipo de elemento de trabajo que desea crear (**error**, **tarea**, etc.).
+2. Elija **crear elemento de trabajo** y, a continuación, haga clic en el tipo de elemento de trabajo que desea crear ( **error** , **tarea** , etc.).
 
 3. Rellene todos los campos obligatorios para completar el formulario de elemento de trabajo.
 

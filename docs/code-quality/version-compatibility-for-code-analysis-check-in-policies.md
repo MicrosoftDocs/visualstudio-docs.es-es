@@ -1,6 +1,8 @@
 ---
 title: Compatibilidad de versiones para las directivas de protección de análisis de código
 ms.date: 11/04/2016
+description: Obtenga información sobre cómo Team System 2008 Team Foundation Server y Team Foundation Server 2010 evalúan las directivas de protección de Visual Studio de manera diferente.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
 - version compatibility, code analysis check-in policy
@@ -11,18 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4757b3a105ff02a92944d9b45e645e2c63a8b81c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3a681f510da270bc22ae4bc983103f9a5735a127
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75587165"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436880"
 ---
 # <a name="version-compatibility-for-code-analysis-check-in-policies"></a>Compatibilidad de versiones para las directivas de protección de análisis de código
 
 Si debe evaluar y crear directivas de protección de análisis de código con diferentes versiones de [!INCLUDE[esprtfc](../code-quality/includes/esprtfc_md.md)] , debe conocer las diferencias en cómo [!INCLUDE[vstsTfsOrcasLong](../code-quality/includes/vststfsorcaslong_md.md)] y [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] evaluar las directivas de protección.
 
-## <a name="version-compatibility-for-evaluating-check-in-policies"></a>Compatibilidad de versiones para evaluar directivas de protección
+## <a name="version-compatibility-for-evaluating-check-in-policies"></a>Compatibilidad de versiones para evaluar directivas de Check-In
 
 - Cuando se evalúan las directivas de protección de análisis de código en [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)] , se omiten las reglas que existían en [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] pero que no existen en [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)] .
 
@@ -32,7 +34,7 @@ Si debe evaluar y crear directivas de protección de análisis de código con di
 
 - Si la Directiva de inserción en el repositorio del análisis de código especifica los ensamblados de reglas que [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] no reconoce, se muestra un mensaje.
 
-## <a name="version-compatibility-for-authoring-check-in-policies"></a>Compatibilidad de versiones para la creación de directivas de inserción en el repositorio
+## <a name="version-compatibility-for-authoring-check-in-policies"></a>Compatibilidad de versiones para la creación de directivas de Check-In
 
 - Si ha creado una directiva de protección de análisis de código mediante la [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)] versión de [!INCLUDE[esprtfc](../code-quality/includes/esprtfc_md.md)] , no puede utilizar la [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] versión de [!INCLUDE[esprtfc](../code-quality/includes/esprtfc_md.md)] para modificarla. Además, [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] no puede evaluar la Directiva.
 

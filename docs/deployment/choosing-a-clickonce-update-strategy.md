@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5618a8996b9858f0799f2a359573d5b7b9da1ce9
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 7f231f3426821b7f3148d3e6c268234f125f88f0
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383162"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437609"
 ---
 # <a name="choose-a-clickonce-update-strategy"></a>Selección de una estrategia de actualización de ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] puede proporcionar actualizaciones automáticas de aplicaciones. Una aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] lee periódicamente su archivo de manifiesto de implementación para ver si hay actualizaciones disponibles para la aplicación. En caso afirmativo, la nueva versión de la aplicación se descarga y se ejecuta. Para una mayor eficiencia, se descargan sólo los archivos que han cambiado.
@@ -73,6 +73,8 @@ ms.locfileid: "94383162"
    </update>
 </subscription>
 ```
+> [!NOTE]
+> En el caso de las aplicaciones .NET 3,1 y versiones más recientes, comprobar las actualizaciones antes de que se inicie la aplicación es la única opción de actualización admitida.
 
 ## <a name="make-updates-required"></a>Hacer las actualizaciones necesarias
  Puede haber ocasiones en las que desea obligar a los usuarios a ejecutar una versión actualizada de su aplicación. Por ejemplo, podría realizar un cambio en un recurso externo como un servicio Web que impediría que funcionara correctamente la versión anterior de su aplicación. En este caso, debería marcar su actualización como obligatoria e impedir que los usuarios ejecuten la versión anterior.
@@ -118,8 +120,8 @@ ms.locfileid: "94383162"
 
  Si utiliza la implementación de aplicaciones de confianza, no se realizará ninguna pregunta sobre los niveles de confianza. Para más información, vea [Introducción a la implementación de aplicaciones de confianza](../deployment/trusted-application-deployment-overview.md).
 
-## <a name="see-also"></a>Vea también
- \<xref:System.Deployment.Application>
+## <a name="see-also"></a>Consulte también
+- <xref:System.Deployment.Application>
 - [Seguridad e implementación de ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Selección de una estrategia de implementación de ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)
 - [Protección de las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)

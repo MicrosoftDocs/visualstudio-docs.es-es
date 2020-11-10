@@ -1,5 +1,7 @@
 ---
 title: 'Diseñador de flujo de trabajo: Cómo usar el editor de expresiones'
+description: Obtenga información sobre cómo el editor de expresiones es un control de Diseñador de flujo de trabajo que puede usar en muchas actividades de flujo de trabajo para especificar y evaluar expresiones.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04c0fdaab87c88028b8c14ca59e93fa93e74be74
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 855326085a51ec6590bd1b3f0e1e5565c53396cb
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817442"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437858"
 ---
 # <a name="how-to-use-the-expression-editor"></a>Cómo: Utilizar el Editor de expresiones
 

@@ -1,5 +1,7 @@
 ---
 title: 'Diseñador de flujo de trabajo: agregar CorrelationInitializers (cuadro de diálogo)'
+description: Obtenga información acerca de cómo puede usar el cuadro de diálogo Agregar inicializadores de correlación para configurar las propiedades de CorrelationInitializers de las actividades de envío, recepción y SendReply.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d2a0b0f7c76b392d5d2d0135c3ab6e370f8678e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cab7ded4113528423b2733c9748ce5cbd22327ab
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114294"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435904"
 ---
 # <a name="add-correlationinitializers-dialog-box"></a>Agregar CorrelationInitializers (cuadro de diálogo)
 
@@ -30,18 +32,18 @@ Los inicializadores de correlación de la colección especificada con este cuadr
 
 En la tabla siguiente se describen los elementos de la interfaz de usuario (UI) del cuadro de diálogo **Agregar inicializadores de correlación** :
 
-|Elemento de la interfaz de usuario|Descripción|
+|Elemento de UI|Descripción|
 |-|-----------------|
 |**Agregar inicializador**|Haga clic en el cuadro **Agregar inicializar** para agregar un inicializador adicional a la colección.|
-|**Tipo de correlación**|Especifica el tipo de inicializador de correlación. Hay cuatro tipos a elegir:<br /><br /> 1. un inicializador de correlación de devolución de llamada para especificar un <xref:System.ServiceModel.Activities.CallbackCorrelationInitializer> .<br />2. un inicializador de correlación de contexto para especificar un <xref:System.ServiceModel.Activities.CorrelationInitializer> .<br />3. un inicializador de correlación de solicitud-respuesta para especificar un <xref:System.ServiceModel.Activities.RequestReplyCorrelationInitializer> .<br />4. un inicializador de correlación de consultas para especificar un <xref:System.ServiceModel.Activities.QueryCorrelationInitializer> .<br /><br /> Para editar el **CorrelationType**<br /><br /> 1. Tab para la fila específica de la cuadrícula **Agregar inicializador** .<br />2. para establecer el foco en **CorrelationTypeComboBox**, presione la tecla **Ctrl** + **Tab**.<br />3. Presione Alt + flecha abajo para mostrar el **cuadro combinado** y editarlo.|
+|**Tipo de correlación**|Especifica el tipo de inicializador de correlación. Hay cuatro tipos a elegir:<br /><br /> 1. un inicializador de correlación de devolución de llamada para especificar un <xref:System.ServiceModel.Activities.CallbackCorrelationInitializer> .<br />2. un inicializador de correlación de contexto para especificar un <xref:System.ServiceModel.Activities.CorrelationInitializer> .<br />3. un inicializador de correlación de solicitud-respuesta para especificar un <xref:System.ServiceModel.Activities.RequestReplyCorrelationInitializer> .<br />4. un inicializador de correlación de consultas para especificar un <xref:System.ServiceModel.Activities.QueryCorrelationInitializer> .<br /><br /> Para editar el **CorrelationType**<br /><br /> 1. Tab para la fila específica de la cuadrícula **Agregar inicializador** .<br />2. para establecer el foco en **CorrelationTypeComboBox** , presione la tecla **Ctrl** + **Tab**.<br />3. Presione Alt + flecha abajo para mostrar el **cuadro combinado** y editarlo.|
 |**Consultas XPath**|Par clave-valor que contiene las consultas que se usan para extraer los datos de la correlación de los mensajes entrantes y salientes. Esta lista solo es válida cuando se utilizan tipos <xref:System.ServiceModel.Activities.QueryCorrelationInitializer>.|
 
 ## <a name="to-launch-the-add-correlation-initializers-dialog-box"></a>Para iniciar el cuadro de diálogo Agregar inicializadores de correlación
 
- Los diseñadores **send**, **Receive**, **ReceiveAndSendReply**y **SendAndReceiveReply** utilizan el cuadro de diálogo **Agregar inicializadores de correlación** . El acceso a ellas es similar en cada caso, y en este caso se usa el caso que implica el diseñador de **recepción** para ilustrar el procedimiento.
+ Los diseñadores **send** , **Receive** , **ReceiveAndSendReply** y **SendAndReceiveReply** utilizan el cuadro de diálogo **Agregar inicializadores de correlación** . El acceso a ellas es similar en cada caso, y en este caso se usa el caso que implica el diseñador de **recepción** para ilustrar el procedimiento.
 
  El diseñador de actividades **Receive** se puede arrastrar desde el **cuadro de herramientas** y colocarlo en la superficie diseñador de flujo de trabajo cada vez que se colocan las actividades. Al quitar el diseñador de actividad **Receive** , se crea una <xref:System.ServiceModel.Activities.Receive> actividad con un valor predeterminado <xref:System.Activities.Activity.DisplayName%2A> de Receive. Seleccione el diseñador de actividades **Receive** y haga clic en el botón de puntos suspensivos junto al texto (colección) de la propiedad **CorrelationInitializers** en la cuadrícula de propiedades para que aparezca el cuadro de diálogo **Agregar inicializadores de correlación** .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Cuadro de diálogo Inicializar correlación](../workflow-designer/initialize-correlation-dialog-box.md)

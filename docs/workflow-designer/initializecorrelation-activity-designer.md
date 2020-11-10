@@ -1,5 +1,7 @@
 ---
 title: Diseñador de actividades Diseñador de flujo de trabajo-InitializeCorrelation
+description: Obtenga información sobre cómo puede usar el diseñador de actividades InitializeCorrelation para crear y configurar una actividad InitializeCorrelation.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aadb526e50351c8344c8b265dca3364637d1ff0c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 82b786277c79a355e1859b337a45ab093e6f2a42
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86875571"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437793"
 ---
 # <a name="initializecorrelation-activity-designer"></a>Diseñador de actividades InitializeCorrelation
 
@@ -50,6 +52,6 @@ En la tabla siguiente se muestran las <xref:System.ServiceModel.Activities.Initi
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
 - [Aparecen](../workflow-designer/receive-activity-designer.md)
 - [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)
-- [Enviar](../workflow-designer/send-activity-designer.md)
+- [Envío](../workflow-designer/send-activity-designer.md)
 - [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)
 - [TransactedReceiveScope](../workflow-designer/transactedreceivescope-activity-designer.md)

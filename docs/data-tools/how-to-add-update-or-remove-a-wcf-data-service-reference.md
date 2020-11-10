@@ -1,5 +1,6 @@
 ---
 title: Adición, actualización o eliminación de una referencia de servicio de datos de WCF
+description: Revise cómo agregar, actualizar o quitar una referencia del servicio de datos de Windows Communication Foundation (WCF).
 ms.date: 11/04/2016
 ms.custom: SEO-VS-2020
 ms.topic: how-to
@@ -15,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d9a05924bd7c790d2a1cc9ffd96d66eb905acb39
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 6e6c289038c3f8cb9d1586ae4a1f7a84b563239f
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037320"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436438"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Procedimiento para agregar, actualizar o eliminar una referencia de servicio de datos WCF
 
@@ -28,7 +29,7 @@ ms.locfileid: "90037320"
 Una *referencia de servicio* permite a un proyecto tener acceso a uno o varios [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] . Utilice el cuadro de diálogo **Agregar referencia de servicio** para buscar [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] en la solución actual, localmente, en una red de área local o en Internet.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-Puede usar el nodo **servicios conectados** en **Explorador de soluciones** para tener acceso a la **Microsoft WCF Web Service Reference Provider**, que le permite administrar las referencias del servicio de datos Windows Communication Foundation (WCF).
+Puede usar el nodo **servicios conectados** en **Explorador de soluciones** para tener acceso a la **Microsoft WCF Web Service Reference Provider** , que le permite administrar las referencias del servicio de datos Windows Communication Foundation (WCF).
 ::: moniker-end
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
@@ -39,9 +40,9 @@ Puede usar el nodo **servicios conectados** en **Explorador de soluciones** para
 
 ::: moniker range="vs-2017"
 
-1. En **Explorador de soluciones**, haga clic con el botón secundario en el nombre del proyecto al que desea agregar el servicio y, a continuación, haga clic en **Agregar referencia de servicio**.
+1. En **Explorador de soluciones** , haga clic con el botón secundario en el nombre del proyecto al que desea agregar el servicio y, a continuación, haga clic en **Agregar referencia de servicio**.
 
-   Aparecerá el cuadro de diálogo **Agregar referencia de servicio**.
+   Aparecerá el cuadro de diálogo  **Agregar referencia de servicio**.
 
 1. En el cuadro **Dirección** , escriba la dirección URL del servicio y, a continuación, haga clic en **ir** para buscar el servicio. Si el servicio implementa la seguridad de nombre de usuario y contraseña, es posible que se le pida un nombre de usuario y una contraseña.
 
@@ -54,14 +55,14 @@ Puede usar el nodo **servicios conectados** en **Explorador de soluciones** para
 
 1. En la lista de **servicios** , expanda el nodo del servicio que desea usar y seleccione un conjunto de entidades.
 
-1. En el cuadro **Espacio de nombres**, especifique el espacio de nombres que desea usar para la referencia.
+1. En el cuadro **Espacio de nombres** , especifique el espacio de nombres que desea usar para la referencia.
 
 1. Haga clic en **Aceptar** para agregar la referencia al proyecto.
 
      Se genera un cliente de servicio (proxy) y los metadatos que describen el servicio se agregan al archivo de *app.config* .
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-1. En **Explorador de soluciones**, haga doble clic en el nodo **servicios conectados** o Púlselo.
+1. En **Explorador de soluciones** , haga doble clic en el nodo **servicios conectados** o Púlselo.
 
    Se abre la pestaña **configurar servicios** .
 
@@ -83,7 +84,7 @@ Puede usar el nodo **servicios conectados** en **Explorador de soluciones** para
 
 1. En la lista de **servicios** , expanda el nodo del servicio que desea usar y seleccione un conjunto de entidades.
 
-1. En el cuadro **Espacio de nombres**, especifique el espacio de nombres que desea usar para la referencia.
+1. En el cuadro **Espacio de nombres** , especifique el espacio de nombres que desea usar para la referencia.
 
 1. Haga clic en **Finalizar** para agregar la referencia al proyecto.
 
@@ -95,9 +96,9 @@ Puede usar el nodo **servicios conectados** en **Explorador de soluciones** para
 
 ::: moniker range="vs-2017"
 
-1. En **Explorador de soluciones**, haga clic con el botón secundario en el nombre del proyecto al que desea agregar el servicio y, a continuación, haga clic en **Agregar referencia de servicio**.
+1. En **Explorador de soluciones** , haga clic con el botón secundario en el nombre del proyecto al que desea agregar el servicio y, a continuación, haga clic en **Agregar referencia de servicio**.
 
-    Aparecerá el cuadro de diálogo **Agregar referencia de servicio**.
+    Aparecerá el cuadro de diálogo  **Agregar referencia de servicio**.
 
 1. Haga clic en **detectar**.
 
@@ -105,14 +106,14 @@ Puede usar el nodo **servicios conectados** en **Explorador de soluciones** para
 
 1. En la lista de **servicios** , expanda el nodo del servicio que desea usar y seleccione un conjunto de entidades.
 
-1. En el cuadro **Espacio de nombres**, especifique el espacio de nombres que desea usar para la referencia.
+1. En el cuadro **Espacio de nombres** , especifique el espacio de nombres que desea usar para la referencia.
 
 1. Haga clic en **Aceptar** para agregar la referencia al proyecto.
 
     Un cliente de servicio (proxy) genera, y los metadatos que describen el servicio se agregan al archivo de *app.config* .
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-1. En **Explorador de soluciones**, haga doble clic en el nodo **servicios conectados** o Púlselo. 
+1. En **Explorador de soluciones** , haga doble clic en el nodo **servicios conectados** o Púlselo. 
 
    Se abre la pestaña **configurar servicios** .
 
@@ -126,7 +127,7 @@ Puede usar el nodo **servicios conectados** en **Explorador de soluciones** para
 
 1. En la lista de **servicios** , expanda el nodo del servicio que desea usar y seleccione un conjunto de entidades.
 
-1. En el cuadro **Espacio de nombres**, especifique el espacio de nombres que desea usar para la referencia.
+1. En el cuadro **Espacio de nombres** , especifique el espacio de nombres que desea usar para la referencia.
 
 1. Haga clic en **Finalizar** para agregar la referencia al proyecto.
 
@@ -140,7 +141,7 @@ A veces, el Entity Data Model para un [!INCLUDE[ssAstoria](../data-tools/include
 
 ### <a name="to-update-a-service-reference"></a>Para actualizar una referencia de servicio
 
-- En **Explorador de soluciones**, haga clic con el botón secundario en la referencia de servicio y, a continuación, haga clic en **Actualizar referencia de servicio**.
+- En **Explorador de soluciones** , haga clic con el botón secundario en la referencia de servicio y, a continuación, haga clic en **Actualizar referencia de servicio**.
 
      Se muestra un cuadro de diálogo de progreso mientras la referencia se actualiza desde su ubicación original, y el cliente del servicio se regenera para reflejar los cambios en los metadatos.
 
@@ -150,7 +151,7 @@ Si ya no se usa una referencia de servicio, puede quitarla de la solución.
 
 ### <a name="to-remove-a-service-reference"></a>Para quitar una referencia de servicio
 
-- En **Explorador de soluciones**, haga clic con el botón secundario en la referencia de servicio y, a continuación, haga clic en **eliminar**.
+- En **Explorador de soluciones** , haga clic con el botón secundario en la referencia de servicio y, a continuación, haga clic en **eliminar**.
 
      El cliente del servicio se quitará de la solución y los metadatos que describen el servicio se quitarán del archivo de *app.config* .
 

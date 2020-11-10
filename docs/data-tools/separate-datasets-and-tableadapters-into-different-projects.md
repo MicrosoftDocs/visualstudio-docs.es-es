@@ -1,6 +1,6 @@
 ---
 title: Error de uso de proyectos independientes
-description: Separar conjuntos de datos y TableAdapters en proyectos diferentes
+description: Obtenga información acerca de cómo separar conjuntos de datos y TableAdapters en proyectos diferentes, de modo que pueda separar rápidamente las capas de aplicación y generar aplicaciones de datos de N niveles.
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.custom: SEO-VS-2020
@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4ed815b73cade73c38b52528d918b4af4de2a618
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: f039dc445acd9032a5fe6862e78e5c28ec67bf5d
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036280"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436008"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Separar conjuntos de datos y TableAdapters en proyectos diferentes
 Los conjuntos de valores de tipos se han mejorado para que las clases [TableAdapter](create-and-configure-tableadapters.md) y DataSet se puedan generar en proyectos independientes. Esto permite separar rápidamente los niveles de la aplicación y generar aplicaciones de datos con n niveles.
@@ -32,12 +32,12 @@ Al separar el código del conjunto de objetos del código de TableAdapter, el pr
 
 #### <a name="to-separate-the-dataset-into-a-different-project"></a>Para separar el conjunto de datos en un proyecto diferente
 
-1. Abra una solución que contenga un conjunto de datos (archivo *.xsd*).
+1. Abra una solución que contenga un conjunto de datos (archivo *.xsd* ).
 
     > [!NOTE]
     > Si la solución no contiene el proyecto en el que desea separar el código del conjunto de información, cree el proyecto o agregue un proyecto existente a la solución.
 
-2. Haga doble clic en un archivo de conjunto de datos con tipo (un archivo *.xsd*) en el **Explorador de soluciones** para abrir el conjunto de datos en el **Diseñador de DataSet**.
+2. Haga doble clic en un archivo de conjunto de datos con tipo (un archivo *.xsd* ) en el **Explorador de soluciones** para abrir el conjunto de datos en el **Diseñador de DataSet**.
 
 3. Seleccione un área vacía de la **Diseñador de DataSet**.
 
@@ -54,10 +54,10 @@ Al separar el código del conjunto de objetos del código de TableAdapter, el pr
 
      El código del conjunto de objetos se genera en el proyecto seleccionado en la propiedad **DataSet Project** y el código **TableAdapter** se genera en el proyecto actual.
 
-De forma predeterminada, después de separar el código de conjunto de datos y TableAdapter, el resultado es un archivo de clase discreto en cada proyecto. El proyecto original tiene un archivo denominado *DatasetName. Designer. VB* (o *DatasetName.Designer.CS*) que contiene el código de TableAdapter. El proyecto designado en la propiedad **DataSet Project** tiene un archivo denominado *DatasetName. DataSet. Designer. vb* (o *DatasetName.DataSet.Designer.CS*) que contiene el código del conjunto de archivos.
+De forma predeterminada, después de separar el código de conjunto de datos y TableAdapter, el resultado es un archivo de clase discreto en cada proyecto. El proyecto original tiene un archivo denominado *DatasetName. Designer. VB* (o *DatasetName.Designer.CS* ) que contiene el código de TableAdapter. El proyecto designado en la propiedad **DataSet Project** tiene un archivo denominado *DatasetName. DataSet. Designer. vb* (o *DatasetName.DataSet.Designer.CS* ) que contiene el código del conjunto de archivos.
 
 > [!NOTE]
-> Para ver el archivo de clase generado, seleccione el proyecto de conjunto de archivos o TableAdapter. A continuación, en **Explorador de soluciones**, seleccione **Mostrar todos los archivos**.
+> Para ver el archivo de clase generado, seleccione el proyecto de conjunto de archivos o TableAdapter. A continuación, en **Explorador de soluciones** , seleccione **Mostrar todos los archivos**.
 
 ## <a name="see-also"></a>Consulte también
 

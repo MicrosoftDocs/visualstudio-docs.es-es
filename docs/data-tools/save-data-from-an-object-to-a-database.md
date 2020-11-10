@@ -1,5 +1,7 @@
 ---
 title: Guardar los datos de un objeto en una base de datos
+description: Guardar datos de un objeto en una base de datos mediante las herramientas de conjunto de datos de Visual Studio. Vea cómo guardar nuevos registros, actualizar registros existentes y eliminar registros existentes.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4afa0d376366b154501e1a0e4488af57b4448a32
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ee06ef21be4076a1a0dee6319155144c468bafd
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281661"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436027"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Guardar los datos de un objeto en una base de datos
 

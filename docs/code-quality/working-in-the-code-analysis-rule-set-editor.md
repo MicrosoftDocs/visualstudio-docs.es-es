@@ -1,6 +1,8 @@
 ---
 title: Usar el editor de conjuntos de reglas de análisis de código
 ms.date: 04/04/2018
+description: Obtenga información sobre cómo editar y ver conjuntos de reglas en Visual Studio. Consulte establecimiento de la gravedad de la regla, especificación de reglas en un conjunto personalizado y ajuste de los datos en la cuadrícula del conjunto de reglas.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.ruleseteditor
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffaf964b24fea41d8e364d610806ba92980b1dc7
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 4d2703972658aace438ab235d469eed3e0644c06
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659184"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436828"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>Usar el editor de conjuntos de reglas de análisis de código
 
@@ -29,7 +31,7 @@ En la tabla siguiente se muestran las opciones de gravedad:
 |Error|Genera un error en el **lista de errores** y también en el momento de la compilación.|
 |Información|Genera un mensaje en el **lista de errores**.|
 |Hidden|La infracción no es visible para el usuario. No obstante, el IDE recibe una notificación de la infracción.|
-|None|Se suprime la regla. El comportamiento es el mismo que si se quitara la regla del conjunto de reglas.|
+|Ninguno|Se suprime la regla. El comportamiento es el mismo que si se quitara la regla del conjunto de reglas.|
 
 El editor muestra las reglas en una estructura de árbol que agrupa las reglas por un campo de conjunto de reglas que especifique. Para agregar o quitar reglas de un conjunto de reglas, realice uno o varios de los pasos siguientes:
 
@@ -72,7 +74,7 @@ En la tabla siguiente se describen los campos de un conjunto de reglas:
 |**Id**|El identificador de la regla.|
 |**Categoría**|Además de su pertenencia en conjuntos de reglas, las reglas de análisis de código también se agrupan por categoría. Para obtener más información, vea [advertencias de análisis de código](/dotnet/fundamentals/code-analysis/quality-rules/index).|
 |**Nombre**|Título de la regla.|
-|**Espacio de nombres**|Espacio de nombres de la regla.|
+|**Namespace**|Espacio de nombres de la regla.|
 |**Tipo de destino**|Indica si la regla es para el código nativo, administrado o de base de datos.|
 |**Acción**|Acción que se realiza cuando se infringe la regla en una ejecución de análisis de código. Puede editar el campo de **acción** .|
 |**Conjuntos de reglas de origen**|Conjunto de reglas que contiene la regla.|

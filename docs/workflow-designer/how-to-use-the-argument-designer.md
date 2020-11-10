@@ -1,5 +1,7 @@
 ---
 title: 'Diseñador de flujo de trabajo: Cómo usar el diseñador de argumentos'
+description: Obtenga información sobre el diseñador de argumentos y cómo usar el diseñador de argumentos para permitir que los datos fluyan dentro y fuera de una actividad.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c3c0fe3de3a9ab74ed09c1be45e0d39a71a5b7c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aca39eaf94e5dca3159a9f3740dae0f87257d9c1
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817455"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437871"
 ---
 # <a name="how-to-use-the-argument-designer"></a>Utilizar el diseñador de argumentos
 
@@ -28,7 +30,7 @@ El diseñador de argumentos facilita permitir que los datos fluyan dentro y fuer
 
 2. Abra el diseñador de argumentos haciendo clic en el botón **argumentos** situado en la esquina inferior izquierda del lienzo de diseño. Aparecerá el diseñador de argumentos.
 
-3. Haga clic en la fila vacía con la etiqueta **crear argumento**. Esto agregará una nueva fila con un nuevo argumento usando los siguientes valores predeterminados: argumentx para el **nombre** , donde x es un entero con un valor inicial de 1 que se incrementa automáticamente para crear nombres de argumentos únicos, **en** para la **Dirección**y la **cadena** para el **tipo de argumento**. No se agrega ningún valor para el **valor predeterminado**. Podrá cambiar estos valores en cualquier momento durante el proceso de diseño del flujo de trabajo.
+3. Haga clic en la fila vacía con la etiqueta **crear argumento**. Esto agregará una nueva fila con un nuevo argumento usando los siguientes valores predeterminados: argumentx para el **nombre** , donde x es un entero con un valor inicial de 1 que se incrementa automáticamente para crear nombres de argumentos únicos, **en** para la **Dirección** y la **cadena** para el **tipo de argumento**. No se agrega ningún valor para el **valor predeterminado**. Podrá cambiar estos valores en cualquier momento durante el proceso de diseño del flujo de trabajo.
 
     > [!NOTE]
     > Para eliminar un argumento, seleccione el argumento haciendo clic en él y, a continuación, presione la tecla **Supr** .

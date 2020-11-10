@@ -1,5 +1,6 @@
 ---
 title: Crear controles de usuario que admitan el enlace de datos simple
+description: Aprenda a crear un control de usuario Windows Forms que admita el enlace de datos simple, mediante la clase DefaultBindingPropertyAttribute en Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -15,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f5126c6f4c06bc52e98b952a7809ccae9c20e633
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 4ba2010b33b1defa6ef7dcb601fde9417fa47f70
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037373"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436750"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Crear un control de usuario de Windows Forms que admita el enlace de datos simple
 
@@ -58,11 +59,11 @@ Durante este tutorial aprenderá a:
 
 En este tutorial se usa SQL Server Express LocalDB y la base de datos de ejemplo Northwind.
 
-1. Si no tiene SQL Server Express LocalDB, instálelo desde la [Página de descarga de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)o a través de la **instalador de Visual Studio**. En el **instalador de Visual Studio**, puede instalar SQL Server Express LocalDB como parte de la carga de trabajo de **procesamiento y almacenamiento de datos** , o como un componente individual.
+1. Si no tiene SQL Server Express LocalDB, instálelo desde la [Página de descarga de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)o a través de la **instalador de Visual Studio**. En el **instalador de Visual Studio** , puede instalar SQL Server Express LocalDB como parte de la carga de trabajo de **procesamiento y almacenamiento de datos** , o como un componente individual.
 
 2. Instale la base de datos de ejemplo Northwind siguiendo estos pasos:
 
-    1. En Visual Studio, abra la ventana **Explorador de objetos de SQL Server** . (Explorador de objetos de SQL Server se instala como parte de la carga de trabajo de **procesamiento y almacenamiento de datos** en el **instalador de Visual Studio**). Expanda el nodo **SQL Server** . Haga clic con el botón secundario en la instancia de LocalDB y seleccione **nueva consulta**.
+    1. En Visual Studio, abra la ventana **Explorador de objetos de SQL Server** . (Explorador de objetos de SQL Server se instala como parte de la carga de trabajo de **procesamiento y almacenamiento de datos** en el **instalador de Visual Studio** ). Expanda el nodo **SQL Server** . Haga clic con el botón secundario en la instancia de LocalDB y seleccione **nueva consulta**.
 
        Se abre una ventana del editor de consultas.
 
@@ -74,15 +75,15 @@ En este tutorial se usa SQL Server Express LocalDB y la base de datos de ejemplo
 
 ## <a name="create-a-windows-forms-application"></a>Crear una aplicación de Windows Forms
 
-El primer paso es crear una **aplicación Windows Forms**:
+El primer paso es crear una **aplicación Windows Forms** :
 
-1. En Visual Studio, en el menú **Archivo**, seleccione **Nuevo** > **Proyecto**.
+1. En Visual Studio, en el menú **Archivo** , seleccione **Nuevo** > **Proyecto**.
 
 2. Expanda **Visual C#** o **Visual Basic** en el panel izquierdo y, a continuación, seleccione **escritorio de Windows**.
 
 3. En el panel central, seleccione el tipo de proyecto **Windows Forms aplicación** .
 
-4. Asigne al proyecto el nombre **tutorialdecontrolsimple**y, a continuación, elija **Aceptar**.
+4. Asigne al proyecto el nombre **tutorialdecontrolsimple** y, a continuación, elija **Aceptar**.
 
      El proyecto **TutorialDeControlSimple** se crea y se agrega al **Explorador de soluciones**.
 
@@ -90,7 +91,7 @@ El primer paso es crear una **aplicación Windows Forms**:
 
 En este tutorial se crea un control simple enlazable a datos a partir de un **control de usuario**. Agregue un elemento de **control de usuario** al proyecto **tutorialdecontrolsimple** :
 
-1. En el menú **Proyecto**, elija **Agregar control de usuario**.
+1. En el menú **Proyecto** , elija **Agregar control de usuario**.
 
 2. Escriba **PhoneNumberBox** en el área Nombre y haga clic en **Agregar**.
 
@@ -110,7 +111,7 @@ En este tutorial se amplía el existente <xref:System.Windows.Forms.MaskedTextBo
 
 En el caso de los controles simples que admiten enlaces de datos, implemente el <xref:System.ComponentModel.DefaultBindingPropertyAttribute>:
 
-1. Cambie el control **PhoneNumberBox** a la vista de código. (En el menú **Ver**, elija **Código**.)
+1. Cambie el control **PhoneNumberBox** a la vista de código. (En el menú **Ver** , elija **Código**.)
 
 2. Reemplace el código de **PhoneNumberBox** por lo siguiente:
 
@@ -127,7 +128,7 @@ En este paso se usa el Asistente para la **configuración de orígenes de datos*
 
 2. En la ventana **orígenes de datos** , seleccione **Agregar nuevo origen de datos** para iniciar el Asistente para la configuración de orígenes de **datos** .
 
-3. En la página **Elegir un tipo de origen de datos**, seleccione **Base de datos** y después haga clic en **Siguiente**.
+3. En la página **Elegir un tipo de origen de datos** , seleccione **Base de datos** y después haga clic en **Siguiente**.
 
 4. En la página **elegir la conexión de datos** , realice una de las acciones siguientes:
 

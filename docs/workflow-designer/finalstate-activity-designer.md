@@ -1,5 +1,7 @@
 ---
 title: Diseñador de actividades Diseñador de flujo de trabajo-FinalState
+description: Obtenga información sobre cómo puede usar el diseñador de FinalState para crear un estado que termine una instancia de equipo de estado.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: aa186893-8775-40dd-981f-8593ead831d0
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23e8973de1deba610a90e21edb870000abbb03e3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2af8887a11b04679789f57f15f32ca03b7b4acf3
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86875597"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435826"
 ---
 # <a name="finalstate-activity-designer"></a>Diseñador de actividad FinalState
 
@@ -21,7 +23,7 @@ El diseñador de <xref:System.Activities.Core.Presentation.FinalState> se usa pa
 
 ## <a name="using-the-finalstate-activity-designer"></a>Usar el diseñador de actividad FinalState
 
-El diseñador de **FinalState** se usa para crear un <xref:System.Activities.Statements.State> que está preconfigurado como un estado de terminación en una máquina de Estados. Un <xref:System.Activities.Statements.State> que se crea mediante el <xref:System.Activities.Core.Presentation.FinalState> Diseñador de actividad tiene su <xref:System.Activities.Statements.State.IsFinal%2A> propiedad establecida en **true**, no tiene ninguna <xref:System.Activities.Statements.State.Exit%2A> actividad y ninguna transición procede de ella. Para usar el <xref:System.Activities.Core.Presentation.FinalState> Diseñador de actividad para agregar una <xref:System.Activities.Statements.State> actividad que está preconfigurada como estado de terminación en una máquina de Estados, arrastre el diseñador de actividad **FinalState** desde la sección **máquina de Estados** del cuadro de **herramientas** y colóquelo en el diseñador de flujo de trabajo. El diseñador de actividad <xref:System.Activities.Core.Presentation.FinalState> se puede colocar sobre <xref:System.Activities.Statements.StateMachine> y agregar transiciones más adelante; o se puede crear una transición mientras se coloca el diseñador de actividad <xref:System.Activities.Core.Presentation.FinalState>. Para obtener más información sobre la creación de transiciones, vea [transición](../workflow-designer/transition-activity-designer.md).
+El diseñador de **FinalState** se usa para crear un <xref:System.Activities.Statements.State> que está preconfigurado como un estado de terminación en una máquina de Estados. Un <xref:System.Activities.Statements.State> que se crea mediante el <xref:System.Activities.Core.Presentation.FinalState> Diseñador de actividad tiene su <xref:System.Activities.Statements.State.IsFinal%2A> propiedad establecida en **true** , no tiene ninguna <xref:System.Activities.Statements.State.Exit%2A> actividad y ninguna transición procede de ella. Para usar el <xref:System.Activities.Core.Presentation.FinalState> Diseñador de actividad para agregar una <xref:System.Activities.Statements.State> actividad que está preconfigurada como estado de terminación en una máquina de Estados, arrastre el diseñador de actividad **FinalState** desde la sección **máquina de Estados** del cuadro de **herramientas** y colóquelo en el diseñador de flujo de trabajo. El diseñador de actividad <xref:System.Activities.Core.Presentation.FinalState> se puede colocar sobre <xref:System.Activities.Statements.StateMachine> y agregar transiciones más adelante; o se puede crear una transición mientras se coloca el diseñador de actividad <xref:System.Activities.Core.Presentation.FinalState>. Para obtener más información sobre la creación de transiciones, vea [transición](../workflow-designer/transition-activity-designer.md).
 
 ### <a name="state-activity-properties-in-the-workflow-designer"></a>Propiedades de la actividad State en el Diseñador de flujo de trabajo
 

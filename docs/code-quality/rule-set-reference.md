@@ -1,6 +1,8 @@
 ---
 title: Referencia del conjunto de reglas Análisis de código
 ms.date: 04/04/2018
+description: Obtenga información sobre los conjuntos de reglas integrados en el análisis de código heredado de Visual Studio. Vea recursos en los conjuntos de reglas. Obtenga información sobre cómo usar estos conjuntos en conjuntos de reglas personalizadas.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 helpviewer_keywords:
 - code analysis, rule sets reference
@@ -9,16 +11,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc025a3ff096e560cc2bd5a135f370e89dba2f9e
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: ce5b7f2ecdc854269288c61eaeee6d46b4a74d91
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860473"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436984"
 ---
 # <a name="code-analysis-rule-set-reference"></a>Referencia del conjunto de reglas Análisis de código
 
-Al configurar el análisis heredado para proyectos de código administrado en Visual Studio, puede elegir en una lista de conjuntos de *reglas*integrados. Algunas reglas se incluyen en más de uno de los conjuntos de reglas integrados; por ejemplo, el conjunto de reglas reglas de corrección básicas incluye reglas que se encuentran en el conjunto de reglas reglas recomendadas administradas.
+Al configurar el análisis heredado para proyectos de código administrado en Visual Studio, puede elegir en una lista de conjuntos de *reglas* integrados. Algunas reglas se incluyen en más de uno de los conjuntos de reglas integrados; por ejemplo, el conjunto de reglas reglas de corrección básicas incluye reglas que se encuentran en el conjunto de reglas reglas recomendadas administradas.
 
 > [!NOTE]
 > Los conjuntos de reglas de esta sección pertenecen al análisis heredado. Para obtener información sobre los conjuntos de reglas disponibles para los paquetes del analizador de código, vea [usar conjuntos de reglas con analizadores de código](/dotnet/fundamentals/code-analysis/code-quality-rule-options).

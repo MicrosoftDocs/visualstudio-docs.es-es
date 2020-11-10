@@ -1,5 +1,7 @@
 ---
 title: Diseñador de actividades Diseñador de flujo de trabajo-Interop
+description: Obtenga información sobre el diseñador de actividad Interop y cómo puede utilizar el diseñador de actividades Interop para crear y configurar una actividad de interoperabilidad.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8047df3787c0871e369b6079e4f0cc80f6d93949
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4a45187f01469f568a98098a8470ad62f67307a6
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72650208"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437780"
 ---
 # <a name="interop-activity-designer"></a>Diseñador de actividades Interop
 
@@ -27,7 +29,7 @@ La actividad <xref:System.Activities.Statements.Interop> administra la ejecució
 
 ### <a name="use-the-interop-activity-designer"></a>Usar el diseñador de actividades Interop
 
-El diseñador de actividades **Interop** se puede encontrar en la categoría **migración** del **cuadro de herramientas**, al que se tiene acceso al hacer clic en la pestaña **cuadro de herramientas** . Como alternativa, seleccione **cuadro de herramientas** en el menú **Ver** o presione **Ctrl** + **Alt** + **X**.
+El diseñador de actividades **Interop** se puede encontrar en la categoría **migración** del **cuadro de herramientas** , al que se tiene acceso al hacer clic en la pestaña **cuadro de herramientas** . Como alternativa, seleccione **cuadro de herramientas** en el menú **Ver** o presione **Ctrl** + **Alt** + **X**.
 
 La categoría [migración](../workflow-designer/migration-activity-designers.md) que contiene la <xref:System.Activities.Statements.Interop> actividad solo aparece en el **cuadro de herramientas** si su proyecto tiene como destino .NET Framework 4 (Full) o posterior. Si es necesario, puede cambiar la versión de .NET Framework de destino del proyecto.
 
@@ -42,7 +44,7 @@ En la tabla siguiente se muestran las <xref:System.Activities.Statements.Interop
 |Nombre de propiedad|Obligatorio|Uso|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|Nombre descriptivo de la actividad <xref:System.Activities.Statements.Interop>. El valor predeterminado es **Interop**. Aunque el nombre para mostrar no es necesario, se recomienda proporcionar uno.|
-|<xref:System.Activities.Statements.Interop.ActivityType%2A>|Verdadero|Especifica el tipo de la actividad que contiene la actividad <xref:System.Activities.Statements.Interop>. Este tipo especificado debe derivar de <xref:System.Workflow.ComponentModel.Activity>.|
+|<xref:System.Activities.Statements.Interop.ActivityType%2A>|True|Especifica el tipo de la actividad que contiene la actividad <xref:System.Activities.Statements.Interop>. Este tipo especificado debe derivar de <xref:System.Workflow.ComponentModel.Activity>.|
 
 ## <a name="see-also"></a>Consulte también
 

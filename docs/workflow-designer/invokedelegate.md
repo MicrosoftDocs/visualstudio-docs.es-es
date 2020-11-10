@@ -1,5 +1,7 @@
 ---
 title: Diseñador de flujo de trabajo InvokeDelegate
+description: Obtenga información sobre el diseñador de InvokeDelegate y cómo puede usar el diseñador de InvokeDelegate para crear y configurar una actividad de InvokeDelegate.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ author: TerryGLee
 ms.author: tglee
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e63fb7a766b79467749cc5181a575e0d35a07b8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a482f23b1df1587e9a1c7e3023bfb0d1737f1fae
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876078"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437754"
 ---
 # <a name="invokedelegate"></a>InvokeDelegate
 
@@ -36,7 +38,7 @@ En la tabla siguiente se muestran las propiedades <xref:System.Activities.Statem
 |Nombre de propiedad|Obligatorio|Uso|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|Nombre descriptivo de la actividad <xref:System.Activities.Statements.InvokeDelegate>. El valor predeterminado es InvokeDelegate.<br /><br /> Aunque <xref:System.Activities.Activity.DisplayName%2A> no es estrictamente necesario, es mejor usar uno.|
-|<xref:System.Activities.Statements.InvokeDelegate.Delegate%2A>|Verdadero|El nombre del <xref:System.Activities.ActivityDelegate> que se va a llamar cuando se ejecute la actividad. Esta propiedad se puede editar en la superficie del diseñador y es obligatoria.|
+|<xref:System.Activities.Statements.InvokeDelegate.Delegate%2A>|True|El nombre del <xref:System.Activities.ActivityDelegate> que se va a llamar cuando se ejecute la actividad. Esta propiedad se puede editar en la superficie del diseñador y es obligatoria.|
 |<xref:System.Activities.Statements.InvokeDelegate.DelegateArguments%2A>|Falso|La colección de argumentos del delegado llamado. Las claves son los nombres de los objetos de parámetro en y <xref:System.Activities.ActivityDelegate> los valores son los argumentos cuyas expresiones se evalúan y asignan a los objetos de parámetro correspondientes. Para mostrar el cuadro de diálogo **DelegateArguments** donde puede establecer esta propiedad, haga clic en el botón de puntos suspensivos en el campo **DelegateArguments** de la cuadrícula de propiedades. Haga clic en el campo **crear argumento** para agregar los argumentos.|
 
 ## <a name="see-also"></a>Consulte también

@@ -1,5 +1,7 @@
 ---
 title: Guardar datos en una base de datos (varias tablas)
+description: En este tutorial, guarde los datos de varias tablas en una base de datos mediante las herramientas de conjunto de datos en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b512263cd5d0ca8c83b0ba6848fb16feca1a71f6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2f6401fedc3158e2743f08775da93faf2ddfee73
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281648"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436047"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Guardar datos en una base de datos (varias tablas)
 
@@ -41,11 +43,11 @@ Las tareas ilustradas en este tutorial incluyen:
 
 - Modificar el código para devolver los datos actualizados del conjunto de datos a la base de datos.
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
 
 En este tutorial se usa SQL Server Express LocalDB y la base de datos de ejemplo Northwind.
 
-1. Si no tiene SQL Server Express LocalDB, instálelo desde la [Página de descarga de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)o a través de la **instalador de Visual Studio**. En el **instalador de Visual Studio**, puede instalar SQL Server Express LocalDB como parte de la carga de trabajo de **procesamiento y almacenamiento de datos** , o como un componente individual.
+1. Si no tiene SQL Server Express LocalDB, instálelo desde la [Página de descarga de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)o a través de la **instalador de Visual Studio**. En el **instalador de Visual Studio** , puede instalar SQL Server Express LocalDB como parte de la carga de trabajo de **procesamiento y almacenamiento de datos** , o como un componente individual.
 
 2. Instale la base de datos de ejemplo Northwind siguiendo estos pasos:
 
@@ -67,13 +69,13 @@ Cree un nuevo proyecto de **aplicación de Windows Forms** para C# o Visual Basi
 
 Este paso crea un origen de datos a partir de la base de datos Northwind utilizando el **Asistente para la configuración de orígenes de datos**. Debe tener acceso a la base de datos de ejemplo Northwind para crear la conexión. Para obtener información acerca de cómo configurar la base de datos de ejemplo Northwind, vea [Cómo: instalar bases](../data-tools/installing-database-systems-tools-and-samples.md)de datos de ejemplo.
 
-1. En el menú **datos** , seleccione **Mostrar orígenes de datos**.
+1. En el menú **Datos** , seleccione **Mostrar orígenes de datos**.
 
    Se abre la ventana **Orígenes de datos**.
 
-2. En la ventana **Orígenes de datos**, seleccione **Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de orígenes de datos**.
+2. En la ventana **Orígenes de datos** , seleccione **Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de orígenes de datos**.
 
-3. En la pantalla **elegir un tipo de origen de datos** , seleccione **base**de datos y, a continuación, seleccione **siguiente**.
+3. En la pantalla **elegir un tipo de origen de datos** , seleccione **base** de datos y, a continuación, seleccione **siguiente**.
 
 4. En la pantalla **elegir la conexión de datos** , realice una de las acciones siguientes:
 
@@ -85,11 +87,11 @@ Este paso crea un origen de datos a partir de la base de datos Northwind utiliza
 
 5. Si la base de datos requiere una contraseña, seleccione la opción para incluir la información confidencial y, a continuación, seleccione **siguiente**.
 
-6. En **Guardar cadena de conexión en el archivo de configuración de la aplicación**, seleccione **siguiente**.
+6. En **Guardar cadena de conexión en el archivo de configuración de la aplicación** , seleccione **siguiente**.
 
 7. En la pantalla **elegir los objetos de base de datos** , expanda el nodo **tablas** .
 
-8. Seleccione las tablas **Customers** y **Orders** y, a continuación, seleccione **Finish (finalizar**).
+8. Seleccione las tablas **Customers** y **Orders** y, a continuación, seleccione **Finish (finalizar** ).
 
      Se agrega **NorthwindDataSet** al proyecto y las tablas aparecen en la ventana **Orígenes de datos**.
 
@@ -144,6 +146,6 @@ Puede actualizar la base de datos llamando a los métodos `Update` de los TableA
 
 4. Compruebe los valores de la base de datos para verificar que se guardaron los cambios.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Guardar los datos de nuevo en la base de datos](../data-tools/save-data-back-to-the-database.md)

@@ -1,5 +1,6 @@
 ---
 title: Crear relaciones entre conjuntos de datos
+description: Crear relaciones entre conjuntos de objetos en Visual Studio. Comprender los objetos DataRelation y las restricciones. Crear manualmente una relación de datos en el administrador de DataSet.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,15 +17,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 93575cb299513dbb0616f3c7ed6f1c7db6d65bb5
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 0a07ca2d30e27cdcbc06e8f90a810982d4410931
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037691"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436102"
 ---
 # <a name="create-relationships-between-datasets"></a>Crear relaciones entre conjuntos de datos
-Los conjuntos de datos que contienen tablas de datos relacionadas usan <xref:System.Data.DataRelation> objetos para representar una relación de elementos primarios y secundarios entre las tablas y devolver los registros relacionados entre sí. Agregar tablas relacionadas a conjuntos de datos mediante el **Asistente para la configuración de orígenes de datos**, o la **Diseñador de DataSet**, crea y configura el <xref:System.Data.DataRelation> objeto.
+Los conjuntos de datos que contienen tablas de datos relacionadas usan <xref:System.Data.DataRelation> objetos para representar una relación de elementos primarios y secundarios entre las tablas y devolver los registros relacionados entre sí. Agregar tablas relacionadas a conjuntos de datos mediante el **Asistente para la configuración de orígenes de datos** , o la **Diseñador de DataSet** , crea y configura el <xref:System.Data.DataRelation> objeto.
 
 El <xref:System.Data.DataRelation> objeto realiza dos funciones:
 
@@ -69,9 +70,9 @@ Para obtener más información acerca de las actualizaciones en tablas de conjun
 Al crear un <xref:System.Data.DataRelation> objeto, tiene la opción de especificar que la relación se use solo para aplicar restricciones, es decir, que no se utilizará también para tener acceso a los registros relacionados. Puede usar esta opción para generar un conjunto de registros que sea ligeramente más eficaz y que contenga menos métodos que uno con la funcionalidad de registros relacionados. Sin embargo, no podrá tener acceso a los registros relacionados. Por ejemplo, una relación de solo restricción evita que se elimine un registro primario que todavía tenga registros secundarios, y no se puede tener acceso a los registros secundarios a través del elemento primario.
 
 ## <a name="manually-creating-a-data-relation-in-the-dataset-designer"></a>Crear manualmente una relación de datos en el Diseñador de DataSet
-Al crear tablas de datos mediante las herramientas de diseño de datos de Visual Studio, las relaciones se crean automáticamente si la información se puede recopilar desde el origen de los datos. Si agrega manualmente tablas de datos desde la pestaña **conjunto** de datos del **cuadro de herramientas**, es posible que tenga que crear la relación manualmente. Para obtener información sobre cómo crear <xref:System.Data.DataRelation> objetos mediante programación, vea [Agregar DataRelations](/dotnet/framework/data/adonet/dataset-datatable-dataview/adding-datarelations).
+Al crear tablas de datos mediante las herramientas de diseño de datos de Visual Studio, las relaciones se crean automáticamente si la información se puede recopilar desde el origen de los datos. Si agrega manualmente tablas de datos desde la pestaña **conjunto** de datos del **cuadro de herramientas** , es posible que tenga que crear la relación manualmente. Para obtener información sobre cómo crear <xref:System.Data.DataRelation> objetos mediante programación, vea [Agregar DataRelations](/dotnet/framework/data/adonet/dataset-datatable-dataview/adding-datarelations).
 
-Las relaciones entre las tablas de datos aparecen como líneas en el **Diseñador de DataSet**, con un glifo de clave y infinito que representa el aspecto uno a varios de la relación. De forma predeterminada, el nombre de la relación no aparece en la superficie de diseño.
+Las relaciones entre las tablas de datos aparecen como líneas en el **Diseñador de DataSet** , con un glifo de clave y infinito que representa el aspecto uno a varios de la relación. De forma predeterminada, el nombre de la relación no aparece en la superficie de diseño.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -95,7 +96,7 @@ Las relaciones entre las tablas de datos aparecen como líneas en el **Diseñado
 
 8. Active o desactive el cuadro **relación anidada** . Al seleccionar esta opción, la propiedad se establece <xref:System.Data.DataRelation.Nested%2A> en `true` y se hace que las filas secundarias de la relación se aniden dentro de la columna primaria cuando dichas filas se escriben como datos XML o se sincronizan con <xref:System.Xml.XmlDataDocument> . Para obtener más información, consulte anidamiento de objetos [DataRelation](/dotnet/framework/data/adonet/dataset-datatable-dataview/nesting-datarelations).
 
-9. Establezca las reglas que se aplicarán al realizar cambios en los registros de estas tablas. Para más información, consulte <xref:System.Data.Rule>.
+9. Establezca las reglas que se aplicarán al realizar cambios en los registros de estas tablas. Para obtener más información, vea <xref:System.Data.Rule>.
 
 10. Haga clic en **Aceptar** para crear la relación. Una línea de relación aparece en el diseñador entre las dos tablas.
 
