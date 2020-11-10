@@ -32,11 +32,9 @@
   items:
     - name: Personalización del diseño del IDE
       href: customizing-the-ide.md
-    - name: Extender Visual Studio para Mac
-      href: extending-visual-studio-mac.md
 - name: Proyectos y soluciones
   items:
-    - name: Introducción
+    - name: Información general
       href: projects-and-solutions.md
     - name: Creación de proyectos
       href: create-new-projects.md
