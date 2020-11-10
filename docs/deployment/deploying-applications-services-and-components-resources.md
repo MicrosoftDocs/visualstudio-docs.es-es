@@ -1,8 +1,10 @@
 ---
 title: Implementación de una aplicación de Visual Studio en una carpeta, IIS, Azure u otro destino
 titleSuffix: ''
-description: Más información sobre las opciones de publicación de la aplicación con el Asistente para publicación
-ms.custom: contperfq1
+description: Obtenga más información sobre las opciones de publicación de la aplicación con la herramienta de publicación.
+ms.custom:
+- SEO-VS-2020
+- contperfq1
 ms.date: 08/21/2020
 ms.topic: troubleshooting
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bc551a6e9bf4e05db61ddeb2480e218ebb3c925
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: f8c4a1effcf61348d2f2267fb38164fd166f7d48
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928533"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382977"
 ---
 # <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>Implementación de la aplicación en una carpeta, IIS, Azure u otro destino
 
@@ -169,7 +171,7 @@ Para más ayuda sobre cómo elegir la configuración, consulte los recursos sigu
 
 Un servidor FTP/FTPS permite implementar la aplicación en un servidor que no sea Azure. Puede implementar en un sistema de archivos o en cualquier otro servidor (Internet o intranet) al que tenga acceso, incluidos los que se encuentran en otros servicios en la nube. Puede funcionar con implementación web (archivos o .ZIP) y FTP.
 
-Cuando elige un servidor FTP/FTPS, Visual Studio le pide un nombre de perfil y, después, recopila información de **conexión** adicional, incluido el servidor de destino o la ubicación, un nombre de sitio y las credenciales. Puede controlar los siguientes comportamientos en pestaña **Configuración**:
+Cuando elige un servidor FTP/FTPS, Visual Studio le pide un nombre de perfil y, después, recopila información de **conexión** adicional, incluido el servidor de destino o la ubicación, un nombre de sitio y las credenciales. Puede controlar los siguientes comportamientos en pestaña **Configuración** :
 
 - La configuración que desea implementar.
 - Si desea quitar los archivos existentes del destino.
@@ -188,7 +190,7 @@ Puede crear cualquier número de perfiles de implementación de FTP/FTPS en Visu
 
 Un servidor web IIS permite implementar la aplicación en un servidor que no sea Azure. Puede implementar en un servidor IIS (Internet o intranet) al que tenga acceso, incluidos los que se encuentran en otros servicios en la nube. Puede funcionar con Web Deploy o con un paquete de Web Deploy.
 
-Cuando elige un servidor web IIS, Visual Studio le pide un nombre de perfil y, después, recopila información de **conexión** adicional, incluido el servidor de destino o la ubicación, un nombre de sitio y las credenciales. Puede controlar los siguientes comportamientos en pestaña **Configuración**:
+Cuando elige un servidor web IIS, Visual Studio le pide un nombre de perfil y, después, recopila información de **conexión** adicional, incluido el servidor de destino o la ubicación, un nombre de sitio y las credenciales. Puede controlar los siguientes comportamientos en pestaña **Configuración** :
 
 - La configuración que desea implementar.
 - Si desea quitar los archivos existentes del destino.
@@ -209,7 +211,7 @@ Para ayuda con la solución de problemas de ASP.NET Core en IIS, consulte [Solu
 
 ## <a name="import-profile"></a>Perfil de importación
 
-Puede importar un perfil cuando realice la implementación en IIS o Azure App Service. Puede configurar la implementación con un *archivo de configuración de publicación* ( *\*.publishsettings*). Un archivo de configuración de publicación se crea mediante IIS o Azure App Service, o puede crearse manualmente y después importarse en Visual Studio.
+Puede importar un perfil cuando realice la implementación en IIS o Azure App Service. Puede configurar la implementación con un *archivo de configuración de publicación* ( *\*.publishsettings* ). Un archivo de configuración de publicación se crea mediante IIS o Azure App Service, o puede crearse manualmente y después importarse en Visual Studio.
 
 El uso de un archivo de configuración de publicación puede simplificar la configuración de la implementación y funciona mejor en un entorno de equipo en comparación con la configuración manual de cada perfil de implementación.
 

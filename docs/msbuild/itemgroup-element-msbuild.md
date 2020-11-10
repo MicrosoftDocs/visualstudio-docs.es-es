@@ -1,5 +1,7 @@
 ---
 title: Elemento ItemGroup (MSBuild) | Microsoft Docs
+description: Obtenga información sobre el elemento ItemGroup de MSBuild, que contiene un conjunto de elementos Item definidos por el usuario. Cada elemento debe ser un secundario de un elemento ItemGroup.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a62b4df06d1c180a6a6d62b0231dce1136fb8059
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 3f4397415e684b9603dd662e409590e88e86034b
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85288980"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903623"
 ---
 # <a name="itemgroup-element-msbuild"></a>Elemento ItemGroup (MSBuild)
 
