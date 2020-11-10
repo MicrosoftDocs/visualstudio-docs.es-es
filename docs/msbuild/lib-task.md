@@ -1,5 +1,7 @@
 ---
 title: Tarea LIB | Microsoft Docs
+description: Obtenga información sobre cómo MSBuild usa la tarea LIB para encapsular la herramienta Administrador de bibliotecas de Microsoft de 32 bits, lib.exe, que crea y administra una biblioteca de archivos de objetos COFF.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -25,12 +27,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5794d059a17f39531a7788895b604ae0e9590ce
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3bf1029d42ce40d33e6eea1fcbe5e6434ff85a36
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633595"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904449"
 ---
 # <a name="lib-task"></a>LIB (tarea)
 
@@ -54,7 +56,7 @@ Incluye la herramienta de Microsoft Administrador de bibliotecas de 32 bits, *li
 |**LinkLibraryDependencies**|Parámetro `Boolean` opcional.<br /><br /> Si es `true`, especifica que los resultados de la biblioteca de las dependencias del proyecto se vinculan automáticamente.|
 |**LinkTimeCodeGeneration**|Parámetro `Boolean` opcional.<br /><br /> Si es `true`, especifica la generación de código en tiempo de vínculo.<br /><br /> Este parámetro corresponde a la opción **/LCTG** de *lib.exe*.|
 |**MinimumRequiredVersion**|Parámetro **String** opcional.<br /><br /> Especifica la versión mínima requerida del subsistema. Especifique una lista delimitada por comas de números decimales comprendidos entre 0 y 65535.|
-|**ModuleDefinitionFile**|Parámetro **String** opcional.<br /><br /> Especifica el nombre del archivo de definición de módulos ( *.def*).<br /><br /> Este parámetro corresponde a la opción **/DEF** de *lib.exe* que toma un argumento `filename`.|
+|**ModuleDefinitionFile**|Parámetro **String** opcional.<br /><br /> Especifica el nombre del archivo de definición de módulos ( *.def* ).<br /><br /> Este parámetro corresponde a la opción **/DEF** de *lib.exe* que toma un argumento `filename`.|
 |**Name**|Parámetro **String** opcional.<br /><br /> Cuando se compila una biblioteca de importación, especifica el nombre del archivo DLL para el que se va a compilar dicha biblioteca.<br /><br /> Este parámetro corresponde a la opción **/NAME** de *lib.exe* que toma un argumento `filename`.|
 |**OutputFile**|Parámetro **String** opcional.<br /><br /> Reemplaza el nombre y la ubicación predeterminados del programa que crea *lib.exe*.<br /><br /> Este parámetro corresponde a la opción **/OUT** de *lib.exe* que toma un argumento `filename`.|
 |**RemoveObjects**|Parámetro **String[]** opcional.<br /><br /> Omite el objeto especificado de la biblioteca de salida. *Lib.exe* crea una biblioteca de salida al combinar todos los objetos (independientemente de que estén en archivos objeto o bibliotecas) y luego eliminar los objetos especificados por esta opción.<br /><br /> Este parámetro corresponde a la opción **/REMOVE** de *lib.exe* que toma un argumento `membername`.|

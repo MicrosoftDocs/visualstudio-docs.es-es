@@ -1,19 +1,19 @@
 ---
-title: Uso de las identidades conectadas de la cuenta Microsoft y Azure Active Directory | Microsoft Docs
+title: Uso de identidades conectadas en suscripciones de Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 50ce0445-ef1a-4e92-b9d0-aebb2155a111
-ms.date: 03/11/2020
+ms.date: 10/28/2020
 ms.topic: conceptual
 robots: noindex, nofollow
 description: Aprenda a trabajar con identidades conectadas de la cuenta Microsoft y Azure Active Directory.
-ms.openlocfilehash: 6d67576ab715f3ff8a49287155423a3dd6c20867
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: a4c7b72c91c4c1180a5fd888e3afd0a33fa2d81b
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005243"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904032"
 ---
 # <a name="how-to-use-connected-identities-in-visual-studio-subscriptions"></a>Uso de identidades conectadas en suscripciones de Visual Studio
 Si recibe una suscripción a Visual Studio por medio de su trabajo o escuela, y usa la cuenta Microsoft (MSA) para iniciar sesión, el administrador de suscripciones puede conectar su MSA a su identidad en la instancia de Azure Active Directory de la organización (Azure AD).  Esto cambiará el modo de acceder a algunas de las ventajas que se incluyen en la suscripción. 
@@ -37,7 +37,7 @@ La adición de una cuenta alternativa a la suscripción de Visual Studio permite
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 ### <a name="q-how-can-i-contact-my-admin-about-this"></a>P: ¿Cómo puedo ponerme en contacto con el administrador sobre esta asunto?
-R:  Para información sobre cómo ponerse en contacto con el administrador, consulte el artículo [Cómo ponerse en contacto con el administrador de suscripciones](contact-my-admin.md).  
+R:  Para obtener información sobre cómo ponerse en contacto con el administrador, consulte el artículo [Cómo ponerse en contacto con el administrador de suscripciones](contact-my-admin.md).  
 
 ### <a name="q-im-an-admin--how-do-i-use-this"></a>P: Soy administración.  ¿Cómo se usa esto?
 R:  La implementación de identidades conectadas es sencilla.  Consulta [este artículo](personal-email-sign-ins.md) para obtener más información. 

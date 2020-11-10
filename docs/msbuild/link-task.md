@@ -1,5 +1,7 @@
 ---
 title: Vincular tarea | Microsoft Docs
+description: Obtenga información sobre cómo MSBuild usa Vincular tarea para encapsular la herramienta del vinculador de Microsoft C++, Link.exe, que vincula archivos y bibliotecas de objetos COFF.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -30,16 +32,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01105e3fd4c86d57077df7804e66592e32ebae07
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 160d4fa3a1058e0cb81e5d25720d9194d90fdc39
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "78865354"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904063"
 ---
 # <a name="link-task"></a>Vincular tarea
 
-Incluye la herramienta del enlazador de Microsoft C++, *link.exe*. La herramienta del enlazador vincula bibliotecas y archivos de objeto de formato de archivo de objeto común (COFF) para crear un archivo ejecutable ( *.exe*) o una biblioteca de vínculos dinámicos (DLL). Para obtener más información, consulte los artículos [Opciones del enlazador](/cpp/build/reference/linker-options), [MSBuild en la línea de comandos](/cpp/build/msbuild-visual-cpp) y [Uso del conjunto de herramientas de Microsoft C++ desde la línea de comandos](/cpp/build/building-on-the-command-line).
+Incluye la herramienta del enlazador de Microsoft C++, *link.exe*. La herramienta del enlazador vincula bibliotecas y archivos de objeto de formato de archivo de objeto común (COFF) para crear un archivo ejecutable ( *.exe* ) o una biblioteca de vínculos dinámicos (DLL). Para obtener más información, consulte los artículos [Opciones del enlazador](/cpp/build/reference/linker-options), [MSBuild en la línea de comandos](/cpp/build/msbuild-visual-cpp) y [Uso del conjunto de herramientas de Microsoft C++ desde la línea de comandos](/cpp/build/building-on-the-command-line).
 
 ## <a name="parameters"></a>Parámetros
 
@@ -97,7 +99,7 @@ Incluye la herramienta del enlazador de Microsoft C++, *link.exe*. La herramient
 
   Parámetro **Boolean** opcional.
 
-  Si `true`, emite el atributo **DebuggableAttribute**, junto con el seguimiento de la información de depuración, y desactiva las optimizaciones JIT. Si `false`, emite el atributo **DebuggableAttribute**, pero desactiva el seguimiento de la información de depuración y activa las optimizaciones JIT.
+  Si `true`, emite el atributo **DebuggableAttribute** , junto con el seguimiento de la información de depuración, y desactiva las optimizaciones JIT. Si `false`, emite el atributo **DebuggableAttribute** , pero desactiva el seguimiento de la información de depuración y activa las optimizaciones JIT.
 
   Para obtener más información, consulte [/ASSEMBLYDEBUG (Agregar DebuggableAttribute)](/cpp/build/reference/assemblydebug-add-debuggableattribute).
 

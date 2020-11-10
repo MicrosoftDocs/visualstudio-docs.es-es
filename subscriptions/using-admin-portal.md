@@ -1,18 +1,18 @@
 ---
-title: Introducción al Portal de administradores de suscripciones | Visual Studio Marketplace
+title: Introducción al Portal de administradores de suscripciones de Visual Studio | Visual Studio Marketplace
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
-ms.date: 09/03/2020
+ms.date: 10/28/2020
 ms.topic: overview
 description: Aprenda cómo empezar a administrar las suscripciones de Visual Studio de su organización con el Portal de administradores de suscripciones.
-ms.openlocfilehash: 8ed9a0b2ed7b9230a245493a2998fa1ca42cae53
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: a9e23208bea480167452711442b52fb84b2bd8ee
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353309"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904548"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Introducción al portal del administrador de suscripciones de Visual Studio
 

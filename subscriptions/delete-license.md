@@ -1,18 +1,18 @@
 ---
-title: Eliminación de asignaciones en el Portal de administración de suscripciones | Microsoft Docs
+title: Eliminación de asignaciones de suscripciones de Visual Studio en el Portal de administración de Suscripciones | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: e49242bc-e9f2-49e8-8caa-f574d508aba6
-ms.date: 10/21/2020
+ms.date: 10/26/2020
 ms.topic: how-to
 description: Obtenga información sobre la forma en que los administradores pueden eliminar asignaciones de suscripciones en el Portal de administración de Suscripciones de Visual Studio.
-ms.openlocfilehash: e1c5395bc2cd2002d8eed62d69697ec61d9c0829
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 22a1c55bcaef436d1a29eb84b93a57f407114a1e
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436933"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904479"
 ---
 # <a name="delete-assignments-in-visual-studio-subscriptions"></a>Eliminación de asignaciones de suscripciones de Visual Studio
 Cuando un suscriptor ya no requiera una suscripción de Visual Studio, por ejemplo, cuando deje la empresa, complete un proyecto o cambie a una nueva función, puede quitar su suscripción y asignarla a otra persona. Tenga en cuenta que al reasignar una suscripción, no todas las ventajas del suscriptor se restablecerán.  El nuevo usuario podrá solicitar cualquier clave no solicitada y ver las claves solicitadas previamente, pero los límites de solicitud **no** se restablecen.  Para las organizaciones que tengan Contratos Enterprise (EA), se restablecerá cualquier ventaja que el usuario original haya usado, como el aprendizaje de Pluralsight. 
@@ -23,8 +23,8 @@ Vea este vídeo o siga leyendo para saber cómo eliminar asignaciones.
 
 ## <a name="delete-a-subscription-assignment"></a>Eliminación de una asignación de suscripción
 1. Haga clic en el nombre del suscriptor que desea quitar. Para seleccionar varios suscriptores para su eliminación, puede hacer clic en el círculo situado a la izquierda del nombre del suscriptor para seleccionar cada uno de ellos.  También puede mantener presionada la tecla **CTRL** y hacer clic en cada suscriptor que desee quitar. Para quitar un intervalo de suscriptores, haga clic en el primero, presione la tecla **Mayús** y haga clic en el último.  Presione **CTRL+A** para seleccionar y quitar todos los suscriptores. En este ejemplo, se eliminarán tres suscriptores: Amber, Kai y Madison. 
-2. Para eliminar los suscriptores seleccionados, haga clic en **Eliminar** .
-3. Cuando aparezca el mensaje que le pide que confirme la eliminación, haga clic en **Aceptar** .
+2. Para eliminar los suscriptores seleccionados, haga clic en **Eliminar**.
+3. Cuando aparezca el mensaje que le pide que confirme la eliminación, haga clic en **Aceptar**.
    > [!div class="mx-imgBorder"]
    > ![Eliminar suscriptores](_img/delete-license/delete-subscribers.png "Elija los usuarios que desea eliminar y haga clic en Eliminar. Puede usar las teclas CTRL y Mayús para seleccionar varios suscriptores.")
 
