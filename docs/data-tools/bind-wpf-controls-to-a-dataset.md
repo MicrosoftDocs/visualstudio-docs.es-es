@@ -1,6 +1,7 @@
 ---
 title: Enlazar controles de WPF a un conjunto de datos
 description: Cree una aplicación WPF en Visual Studio que contenga controles enlazados a datos, que se enlazan a registros de productos que se encapsulan en un conjunto de datos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1922df10e331627b0695fb6ea03f4a5101ea0fd1
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: de0a155d675f85e10cdf38969dd6eb59a3762770
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382044"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518533"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Enlazar controles de WPF a un conjunto de datos
 
@@ -259,7 +260,7 @@ Después de completar este tutorial, puede probar las siguientes tareas relacion
 
 - Aprenda cómo usar la ventana **Orígenes de datos** en Visual Studio para mostrar datos relacionados (es decir, datos en una relación primario-secundario) en controles WPF. Para obtener más información, vea [Tutorial: Mostrar datos relacionados en una aplicación de WPF](../data-tools/display-related-data-in-wpf-applications.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Enlace de controles de WPF a datos en Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Herramientas de conjunto de datos en Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)

@@ -1,6 +1,7 @@
 ---
 title: Agregar código a TableAdapters en aplicaciones de n niveles
 description: Agregue código a los adaptadores de tabla en aplicaciones de n niveles. Cree un archivo de clase parcial para TableAdapter y agréguele código (en lugar de a DatasetName. DataSet. Designer).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ed0664b78408e91eeda5b65c26615e870e2171b6
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 85e89e9800f35fc6d27346b4ed3d4757f83a8dfc
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382369"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518705"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>Agregar código a TableAdapters en aplicaciones de n niveles
 Puede extender la funcionalidad de un TableAdapter si crea un archivo de clase parcial para el TableAdapter y le agrega código (en lugar de agregar código al archivo *DatasetName. DataSet. Designer* ). Las clases parciales permiten que el código de una clase específica se divida entre varios archivos físicos. Para obtener más información, vea [partial](/dotnet/visual-basic/language-reference/modifiers/partial) o [partial (Type)](/dotnet/csharp/language-reference/keywords/partial-type).
@@ -66,7 +67,7 @@ De forma predeterminada, después de separar el código de conjunto de datos y T
     }
     ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Información general sobre las aplicaciones de datos con N niveles](../data-tools/n-tier-data-applications-overview.md)
 - [Agregar código a conjuntos de datos en aplicaciones de n niveles](../data-tools/add-code-to-datasets-in-n-tier-applications.md)

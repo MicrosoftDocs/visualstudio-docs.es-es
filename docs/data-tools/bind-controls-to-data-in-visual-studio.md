@@ -1,6 +1,7 @@
 ---
 title: Enlazar controles a datos
 description: Enlazar controles a datos en Visual Studio. Cree controles enlazados a datos arrastrando elementos desde la ventana orígenes de datos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f92382721558d76cf9e84fa587b322d56af72247
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 1b48c2e8b557a47c1ed795b6f9d3c3ced6247a43
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382174"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518627"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Enlazar controles a los datos en Visual Studio
 

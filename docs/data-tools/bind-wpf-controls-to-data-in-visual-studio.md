@@ -1,6 +1,7 @@
 ---
 title: Enlazar controles de WPF a datos (parte 1)
 description: Enlazar controles de WPF a datos. Para crear estos controles enlazados a datos, arrastre los elementos desde la ventana orígenes de datos hasta WPF Designer en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -17,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 697b5efb172a09f2dcd5512a6301febd7429411f
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: e35171a116272700de676cb03d116210753c599f
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94381927"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518614"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Enlace de controles de WPF a datos en Visual Studio
 
@@ -55,7 +56,7 @@ En la tabla siguiente se muestra el [!INCLUDE[TLA#tla_titlexaml](../data-tools/i
 | - | - | - |
 | Dataset | Sí | Sí |
 | [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] | Sí | Sí |
-| web de Office | Sí | No |
+| Servicio | Sí | No |
 | Object | Sí | No |
 
 ### <a name="datasets"></a>Conjuntos de datos
@@ -94,7 +95,7 @@ Visual Studio genera XAML que realiza lo siguiente:
 
 - Crea un enlace de datos para un control. Si se arrastra el elemento hasta un control existente en el diseñador, el [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] enlaza el control al elemento. Si arrastra el elemento hasta un contenedor, [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] crea el control que se seleccionó para el elemento arrastrado y enlaza el control al elemento. El control se crea dentro de una nueva clase <xref:System.Windows.Controls.Grid>.
 
-### <a name="objects"></a>Objetos
+### <a name="objects"></a>de la empresa
 
 Cuando se arrastra un objeto o una propiedad desde la ventana **orígenes de datos** hasta el diseñador, Visual Studio genera [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] que crea un control enlazado a datos (o enlaza un control existente al objeto o la propiedad). Sin embargo, Visual Studio no genera código para rellenar el objeto con datos. Este código se debe escribir expresamente.
 
@@ -107,6 +108,6 @@ Visual Studio genera [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlashar
 
 - Crea un enlace de datos para un control. Si se arrastra el elemento hasta un control existente en el diseñador, el XAML enlaza el control al elemento. Si arrastra el elemento hasta un contenedor, el código XAML crea el control que se seleccionó para el elemento arrastrado y enlaza el control al elemento. El control se crea dentro de una nueva clase <xref:System.Windows.Controls.Grid>.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Enlazar controles a los datos en Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

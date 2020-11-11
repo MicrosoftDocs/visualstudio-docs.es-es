@@ -1,6 +1,7 @@
 ---
 title: Enlazar controles a imágenes desde una base de datos
 description: Use la ventana orígenes de datos para enlazar una imagen de una base de datos a un control de la aplicación de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -18,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6a2033bfe6719ccd325a2409d20fbb0e77d92926
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 10ea349186aa46bfb58f4b9ceeaab2c8ac3edd81
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382304"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518575"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>Enlazar controles a imágenes desde una base de datos
 
@@ -50,6 +51,6 @@ El procedimiento siguiente supone que la ventana **Orígenes de datos** ya inclu
 
     - También puede seleccionar un control diferente que admita el enlace de datos y pueda mostrar imágenes. Si el control que desea utilizar no se encuentra en la lista de controles disponibles, puede agregarlo a la lista y seleccionarlo. Para obtener más información, vea [Agregar controles personalizados a la ventana orígenes de datos](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Enlace de controles de WPF a datos en Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
