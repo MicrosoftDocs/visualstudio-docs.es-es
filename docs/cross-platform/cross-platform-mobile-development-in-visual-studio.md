@@ -12,12 +12,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 09b200538f7d6bee55d12a79334811c8ba57515a
-ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
+ms.openlocfilehash: b50edfe91a9b497760c44d3fd548eb6d2a15a049
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91959840"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399382"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Desarrollo móvil multiplataforma en Visual Studio
 
@@ -48,7 +48,7 @@ Con Visual Studio Tools para Xamarin, puede tener como destino Android, iOS y Wi
 
  Si ya tiene Visual Studio instalado, vuelva a ejecutar el **Instalador de Visual Studio** y seleccione la misma opción **Desarrollo para dispositivos móviles con .NET** para Xamarin (como anteriormente).
 
- Cuando termine, las plantillas de proyecto aparecen en el cuadro de diálogo **Nuevo proyecto** . La manera más fácil de encontrar las plantillas de Xamarin es buscar por "Xamarin".
+ Cuando termine, las plantillas de proyecto aparecen en el cuadro de diálogo **Nuevo proyecto**. La manera más fácil de encontrar las plantillas de Xamarin es buscar por "Xamarin".
 
  Xamarin expone la funcionalidad nativa de Android, iOS y Windows como clases y métodos .NET. Esto significa que las aplicaciones tienen acceso total a las API y a los controles nativos, y la misma capacidad de respuesta que las aplicaciones escritas en los lenguajes nativos de la plataforma.
 
@@ -77,7 +77,7 @@ Con Visual Studio Tools para Xamarin, puede tener como destino Android, iOS y Wi
 
  Si quiere crear una única aplicación que tenga como destino la gran variedad de dispositivos de Windows 10, cree una aplicación de Windows universal. Podrá diseñar la aplicación usando un solo proyecto y las páginas se representarán correctamente en cualquier dispositivo que se use para verlas.
 
- Comience con una plantilla de proyecto de aplicación para Plataforma universal de Windows (UWP). Diseñe visualmente las páginas y, después, ábralas en una ventana de vista previa para ver cómo se ven en diversos tipos de dispositivos. Si no le gusta cómo se muestra una página en un dispositivo, puede optimizar la página para ajustarla mejor al tamaño de pantalla, la resolución o las distintas orientaciones, como el modo vertical o el horizontal. Puede hacer todo eso con opciones de menú de fácil acceso y ventanas de herramientas intuitivas en Visual Studio. Cuando esté listo para ejecutar la aplicación y recorrer el código, encontrará todos los emuladores de dispositivos y los simuladores de diferentes tipos de dispositivos en una lista desplegable que se encuentra en la barra de herramientas **Estándar** .
+ Comience con una plantilla de proyecto de aplicación para Plataforma universal de Windows (UWP). Diseñe visualmente las páginas y, después, ábralas en una ventana de vista previa para ver cómo se ven en diversos tipos de dispositivos. Si no le gusta cómo se muestra una página en un dispositivo, puede optimizar la página para ajustarla mejor al tamaño de pantalla, la resolución o las distintas orientaciones, como el modo vertical o el horizontal. Puede hacer todo eso con opciones de menú de fácil acceso y ventanas de herramientas intuitivas en Visual Studio. Cuando esté listo para ejecutar la aplicación y recorrer el código, encontrará todos los emuladores de dispositivos y los simuladores de diferentes tipos de dispositivos en una lista desplegable que se encuentra en la barra de herramientas **Estándar**.
 
 |**Más información**|
 |--------------------|
@@ -161,8 +161,8 @@ Con Visual Studio Tools para Xamarin, puede tener como destino Android, iOS y Wi
 |**Más información**|
 |--------------------|
 |[Obtener información acerca de la compilación de juegos Unity con Visual Studio](https://visualstudio.microsoft.com/vs/features/game-development/#tab-4b0d0be8de5f65564ad)|
-|[Más información sobre Visual Studio Tools para Unity](../cross-platform/visual-studio-tools-for-unity.md) |
-|[Empezar a usar Visual Studio Tools para Unity](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) |
+|[Más información sobre Visual Studio Tools para Unity](/gamedev/unity/get-started/visual-studio-tools-for-unity.md) |
+|[Empezar a usar Visual Studio Tools para Unity](/gamedev/unity/get-started/getting-started-with-visual-studio-tools-for-unity.md) |
 |[Obtener más información acerca de las mejoras más recientes de Visual Studio Tools para Unity 2.0 Preview](https://devblogs.microsoft.com/visualstudio/visual-studio-tools-for-unity-2-0-preview/) (blog de Visual Studio)|
 |[Ver un vídeo de introducción a Visual Studio Tools para Unity 2.0 Preview](https://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408&preserve-view=true) (vídeo)|
 |[Obtener información acerca de Unity](https://unity.com/) (sitio web de Unity)|

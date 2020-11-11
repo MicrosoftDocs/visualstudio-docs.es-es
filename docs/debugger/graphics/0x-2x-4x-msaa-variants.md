@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 707d63d3ae5fb487f6232321a1d9d3128d379e06
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: e77c0d7b5cbba2faf73fcca85ffcd0db063d618e
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64816537"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407554"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0x/2x/4x MSAA (Variantes)
 Reemplaza el suavizado de contorno de muestras múltiples (MSAA) en todos los objetivos de presentación y cadenas de intercambio.
@@ -54,7 +54,7 @@ Reemplaza el suavizado de contorno de muestras múltiples (MSAA) en todos los ob
 
  Cuando la reproducción detecta este tipo de conflictos, hace todo lo que puede para replicar el comportamiento previsto, pero puede no ser posible que los resultados coincidan exactamente. Aunque no es habitual que esto afecte al rendimiento de estas variantes de tal manera que distorsione su impacto, es posible que suceda, por ejemplo, cuando el control de flujo de un sombreador de píxeles se determine por el contenido concreto de una textura, porque la textura replicada puede que no tenga contenidos idénticos.
 
-## <a name="example"></a>Ejemplo
+## <a name="example-1"></a>Ejemplo 1
  Estas variantes se pueden reproducir para objetivos de presentación creados utilizando `ID3D11Device::CreateTexture2D` y código como el siguiente:
 
 ```cpp
@@ -65,7 +65,7 @@ target_description.SampleDesc.Quality = 0;
 d3d_device->CreateTexture2D(&target_description, nullptr, &render_target);
 ```
 
-## <a name="example"></a>Ejemplo
+## <a name="example-2"></a>Ejemplo 2
  O para cadenas de intercambio creadas utilizando IDXGISwapChain::CreateSwapChain o D3D11CreateDeviceAndSwapChain y código como el siguiente:
 
 ```cpp

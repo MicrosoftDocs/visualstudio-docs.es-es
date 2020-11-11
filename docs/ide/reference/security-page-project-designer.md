@@ -1,5 +1,7 @@
 ---
 title: Página Seguridad, Diseñador de proyectos
+description: La página Seguridad del Diseñador de proyectos se usa para configurar las opciones de seguridad de acceso del código para las aplicaciones que se implementan con la implementación de ClickOnce.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
 ms.topic: reference
@@ -14,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0839adcf0e6c61141d2a14ad8903c532af76804c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7080c1a2ce77d26987f81acaa0a751887f9f574e
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85418904"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350262"
 ---
 # <a name="security-page-project-designer"></a>Página Seguridad, Diseñador de proyectos
 
 La página **Seguridad** del **Diseñador de proyectos** se usa para configurar las opciones de seguridad de acceso del código para las aplicaciones que se implementan con la implementación de ClickOnce. Para más información, vea [Code Access Security for ClickOnce Applications](../../deployment/code-access-security-for-clickonce-applications.md) (Seguridad de acceso del código para aplicaciones ClickOnce).
 
-Para obtener acceso a la página **Seguridad**, haga clic en un nodo de proyecto en el **Explorador de soluciones** y, después, en el menú **Proyecto**, haga clic en **Propiedades**. Cuando se muestre el **Diseñador de proyectos**, haga clic en la pestaña **Seguridad**.
+Para obtener acceso a la página **Seguridad** , haga clic en un nodo de proyecto en el **Explorador de soluciones** y, después, en el menú **Proyecto** , haga clic en **Propiedades**. Cuando se muestre el **Diseñador de proyectos** , haga clic en la pestaña **Seguridad**.
 
 ## <a name="security-settings"></a>Configuración de seguridad
 
@@ -34,7 +36,7 @@ Para obtener acceso a la página **Seguridad**, haga clic en un nodo de proyecto
 Determina si la configuración de seguridad está habilitada en tiempo de diseño. Cuando esta opción está desactivada, todas las demás opciones de la página **Seguridad** no están disponibles.
 
 > [!NOTE]
-> Al publicar una aplicación mediante el uso del asistente para **Publicar**, esta opción se habilita automáticamente.
+> Al publicar una aplicación mediante el uso del asistente para **Publicar** , esta opción se habilita automáticamente.
 
 Cuando se selecciona esta opción, existe la opción de seleccionar uno de los dos botones de radio: **Aplicación de plena confianza** o **Esta es una aplicación de confianza parcial**.
 

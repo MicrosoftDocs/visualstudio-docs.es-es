@@ -7,12 +7,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60f5a5545152b9bf262f652e2fce5ce04e7b71cb
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 04c725e5bcae5d72562e767a06afdee8aa84950b
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099432"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399258"
 ---
 # <a name="features-of-visual-studio"></a>Características de Visual Studio
 
@@ -44,7 +44,7 @@ Visual Studio ofrece un conjunto de herramientas que le permiten crear con faci
 
 ::: moniker range="vs-2017"
 
-Después de instalar la carga de trabajo **Desarrollo de Azure**, en el cuadro de diálogo **Nuevo proyecto** estarán disponibles las siguientes plantillas de la **nube** para C#:
+Después de instalar la carga de trabajo **Desarrollo de Azure** , en el cuadro de diálogo **Nuevo proyecto** estarán disponibles las siguientes plantillas de la **nube** para C#:
 
 ![Plantillas de proyectos en la nube para Visual Studio](media/cloud-project-templates.png)
 
@@ -82,7 +82,7 @@ Puede usar Visual Studio para crear aplicaciones y juegos para MacOS, Linux y Wi
 
 - Utilice tecnologías web estándar &mdash;HTML, CSS y JavaScript&mdash; para crear aplicaciones móviles para iOS, Android y Windows mediante [Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/).
 
-- Cree juegos 2D y 3D en C# mediante [Visual Studio Tools para Unity](../cross-platform/visual-studio-tools-for-unity.md).
+- Cree juegos 2D y 3D en C# mediante [Visual Studio Tools para Unity](/gamedev/unity/get-started/visual-studio-tools-for-unity.md).
 
 - Cree aplicaciones C++ nativas para dispositivos iOS, Android y Windows. Comparta código común en bibliotecas compiladas para iOS, Android y Windows mediante [C++ para desarrollo multiplataforma](/cpp/cross-platform/visual-cpp-for-cross-platform-mobile-development).
 
@@ -90,7 +90,7 @@ Puede usar Visual Studio para crear aplicaciones y juegos para MacOS, Linux y Wi
 
 ## <a name="connect-to-databases"></a>Conectarse a bases de datos
 
-El **Explorador de servidores** sirve para explorar y administrar activos e instancias de SQL Server de forma local y remota, así como en Azure, Salesforce.com, Microsoft 365 y sitios web. Para abrir el **Explorador de servidores**, en el menú principal, elija **Ver** > **Explorador de servidores**. Para obtener más información sobre el uso del Explorador de servidores, vea [Adición de nuevas conexiones](../data-tools/add-new-connections.md).
+El **Explorador de servidores** sirve para explorar y administrar activos e instancias de SQL Server de forma local y remota, así como en Azure, Salesforce.com, Microsoft 365 y sitios web. Para abrir el **Explorador de servidores** , en el menú principal, elija **Ver** > **Explorador de servidores**. Para obtener más información sobre el uso del Explorador de servidores, vea [Adición de nuevas conexiones](../data-tools/add-new-connections.md).
 
 [SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt) es un eficaz entorno de desarrollo para SQL Server, Azure SQL Database y Azure SQL Data Warehouse. Le permite compilar, depurar, mantener y refactorizar bases de datos. Puede trabajar con un proyecto de base de datos o directamente con una instancia de base de datos conectada de manera local o externa.
 

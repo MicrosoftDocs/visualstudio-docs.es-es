@@ -3,14 +3,14 @@ title: Programa para la mejora de la experiencia del usuario de Visual Studio
 description: Obtenga información sobre cómo administrar la configuración de privacidad en Visual Studio para Mac.
 author: therealjohn
 ms.author: johmil
-ms.date: 06/18/2019
+ms.date: 11/05/2020
 ms.assetid: 6F2ECF5A-E195-4890-8399-12A88C7D62FD
-ms.openlocfilehash: 7c2e2dc1cc0171e9e7a8ab81f820ff6be0f389c2
-ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
+ms.openlocfilehash: 5cf5670b18aa6840eb3b36e6148cba4834aa709e
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "89284270"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438209"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Programa para la mejora de la experiencia del usuario de Visual Studio
 
@@ -37,5 +37,5 @@ VSCEIP está activado de forma predeterminada. Puede desactivarlo o volver a act
 * [Programa para la mejora de la experiencia del usuario (Visual Studio en Windows)](/visualstudio/ide/visual-studio-experience-improvement-program)
 * [Registros generados por el sistema recopilados por Visual Studio (en Windows)](/visualstudio/ide/diagnostic-data-collection)
 * [Cómo notificar un problema en Visual Studio para Mac](report-a-problem.md)
-* [Comunidad de desarrolladores de Visual Studio para Mac](https://developercommunity.visualstudio.com/spaces/41/index.html)
+* [Comunidad de desarrolladores de Visual Studio para Mac](https://aka.ms/feedback/vsm-home)
 * [Declaración de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement)

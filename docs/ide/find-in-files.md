@@ -19,12 +19,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e1f067df647f843819e085f283005606699f3bb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a32720475bda124c563d45133028f43b4f1b9cd
+ms.sourcegitcommit: e132a870ec198fdcec289227f1a0c1c48fef070c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595480"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93344512"
 ---
 # <a name="find-in-files"></a>Buscar en archivos
 
@@ -74,7 +74,7 @@ Cuando se selecciona, la búsqueda **Resultados de la búsqueda** distinguirá e
 
 **Solo palabras completas**
 
-Cuando se selecciona, las ventanas**Resultados de la búsqueda** solo devolverán coincidencias de palabras completas.
+Cuando se selecciona, las ventanas **Resultados de la búsqueda** solo devolverán coincidencias de palabras completas.
 
 **Uso de expresiones regulares**
 
