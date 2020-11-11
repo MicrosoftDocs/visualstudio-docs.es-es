@@ -1,5 +1,7 @@
 ---
 title: 'Diseñador de flujo de trabajo: depurar XAML'
+description: Obtenga información sobre cómo se definen los flujos de trabajo en términos de XAML y cómo depurar XAML con el Diseñador de flujo de trabajo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: d9305dbc-af62-4bdd-b03f-c54e3fe9ecc7
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 9be7c8da251a9698e0fceba64e3941ba8fbdf803
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 24540a6e7a2f99f35edf6018355583b5f9230e1a
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817520"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437936"
 ---
 # <a name="how-to-debug-xaml-with-the-workflow-designer"></a>Depurar XAML con el Diseñador de flujo de trabajo
 

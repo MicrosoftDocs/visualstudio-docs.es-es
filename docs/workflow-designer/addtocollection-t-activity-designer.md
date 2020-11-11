@@ -1,5 +1,7 @@
 ---
 title: Diseñador de flujo de trabajo el &lt; Diseñador de &gt; actividades AddToCollection T
+description: Obtenga información sobre cómo <T> se usa el diseñador de actividades AddToCollection para crear y configurar una <T> actividad AddToCollection.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,16 +12,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ffa24dce2691f061c5947e15d7fc7923d632b38
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a325cfa0ba00e798b3c663aac863737ba9aceb1f
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88706547"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438263"
 ---
 # <a name="addtocollectiont-activity-designer"></a>Diseñador de actividad AddToCollection\<T>
 
-El diseñador de actividades ** \<T> AddToCollection** se utiliza para crear y configurar una <xref:System.Activities.Statements.AddToCollection%601> actividad.
+El diseñador de actividades **\<T> AddToCollection** se utiliza para crear y configurar una <xref:System.Activities.Statements.AddToCollection%601> actividad.
 
 ## <a name="the-addtocollectiont-activity"></a>La \<T> actividad AddToCollection
 
@@ -27,9 +29,9 @@ La actividad <xref:System.Activities.Statements.AddToCollection%601> agrega un e
 
 ### <a name="using-the-addtocollectiont-activity-designer"></a>Usar el \<T> Diseñador de actividades AddToCollection
 
-El diseñador de actividades **AddToCollection \<T> ** se puede encontrar en la categoría **colección** del **cuadro de herramientas**, al que se tiene acceso al hacer clic en la pestaña **cuadro de herramientas** del diseñador de flujo de trabajo. Como alternativa, seleccione **cuadro de herramientas** en el menú **Ver** o presione **Ctrl** + **Alt** + **X**.
+El diseñador de actividades **AddToCollection \<T>** se puede encontrar en la categoría **colección** del **cuadro de herramientas** , al que se tiene acceso al hacer clic en la pestaña **cuadro de herramientas** del diseñador de flujo de trabajo. Como alternativa, seleccione **cuadro de herramientas** en el menú **Ver** o presione **Ctrl** + **Alt** + **X**.
 
-El diseñador de actividades **AddToCollection \<T> ** se puede arrastrar desde el **cuadro de herramientas** y colocarlo en la superficie diseñador de flujo de trabajo cada vez que se colocan las actividades, como en una <xref:System.Activities.Statements.Sequence> . Al quitar el diseñador de actividades ** \<T> AddToCollection** , se crea una <xref:System.Activities.Statements.AddToCollection%601> actividad con un valor predeterminado <xref:System.Activities.Activity.DisplayName%2A> de AddToCollection<Int32 \> . (De forma predeterminada, *TypeArgument* es **Int32**. TypeArgument se puede cambiar en la cuadrícula de propiedades). El <xref:System.Activities.Activity.DisplayName%2A> valor se puede editar en el encabezado del diseñador de actividades **AddToCollection \><T** o en el cuadro **displayName** de la cuadrícula de propiedades. Es preciso editar las otras propiedades en la cuadrícula de propiedades.
+El diseñador de actividades **AddToCollection \<T>** se puede arrastrar desde el **cuadro de herramientas** y colocarlo en la superficie diseñador de flujo de trabajo cada vez que se colocan las actividades, como en una <xref:System.Activities.Statements.Sequence> . Al quitar el diseñador de actividades **\<T> AddToCollection** , se crea una <xref:System.Activities.Statements.AddToCollection%601> actividad con un valor predeterminado <xref:System.Activities.Activity.DisplayName%2A> de AddToCollection<Int32 \> . (De forma predeterminada, *TypeArgument* es **Int32**. TypeArgument se puede cambiar en la cuadrícula de propiedades). El <xref:System.Activities.Activity.DisplayName%2A> valor se puede editar en el encabezado del diseñador de actividades **AddToCollection \><T** o en el cuadro **displayName** de la cuadrícula de propiedades. Es preciso editar las otras propiedades en la cuadrícula de propiedades.
 
 ### <a name="the-addtocollectiont-properties"></a>Propiedades de AddToCollection \<T>
 
@@ -38,9 +40,9 @@ En la tabla siguiente se muestran las propiedades <xref:System.Activities.Statem
 |Nombre de propiedad|Obligatorio|Uso|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|Nombre descriptivo de la actividad <xref:System.Activities.Statements.AddToCollection%601>. El valor predeterminado es AddToCollection<Int32 \> . Pese a que el valor <xref:System.Activities.Activity.DisplayName%2A> no es obligatorio, se recomienda usar uno.|
-|<xref:System.Activities.Statements.AddToCollection%601.Item%2A>|Verdadero|Elemento que se va a agregar a la colección \<T> . Este elemento es de tipo *T*, que es de tipo *TypeArgument*. Para especificar el elemento, escriba una expresión de Visual Basic en la cuadrícula de propiedades.|
-|<xref:System.Activities.Statements.AddToCollection%601.Collection%2A>|Verdadero|La colección a la que se debe agregar el elemento. Esta colección es de tipo **ICollection<TypeArgument \> **. Para especificar la colección, escriba una expresión de Visual Basic en la cuadrícula de propiedades.|
-|*TypeArgument*|Verdadero|El tipo T de los elementos que se incluyen en la interfaz <xref:System.Collections.Generic.ICollection%601>. De forma predeterminada, este tipo *TypeArgument* se establece en **Int32**. Para cambiar el tipo, cambie el valor de *TypeArgument* en el cuadro combinado en la cuadrícula de propiedades.|
+|<xref:System.Activities.Statements.AddToCollection%601.Item%2A>|True|Elemento que se va a agregar a la colección \<T> . Este elemento es de tipo *T* , que es de tipo *TypeArgument*. Para especificar el elemento, escriba una expresión de Visual Basic en la cuadrícula de propiedades.|
+|<xref:System.Activities.Statements.AddToCollection%601.Collection%2A>|True|La colección a la que se debe agregar el elemento. Esta colección es de tipo **ICollection<TypeArgument \>**. Para especificar la colección, escriba una expresión de Visual Basic en la cuadrícula de propiedades.|
+|*TypeArgument*|True|El tipo T de los elementos que se incluyen en la interfaz <xref:System.Collections.Generic.ICollection%601>. De forma predeterminada, este tipo *TypeArgument* se establece en **Int32**. Para cambiar el tipo, cambie el valor de *TypeArgument* en el cuadro combinado en la cuadrícula de propiedades.|
 
 ## <a name="see-also"></a>Consulte también
 

@@ -1,5 +1,7 @@
 ---
 title: Crear un proyecto de Workflow Foundation
+description: Obtenga información sobre cómo crear bibliotecas y aplicaciones con las plantillas de proyecto disponibles en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 06/25/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8c3e4930376d2d2f9a6ee3334d8b164279d5ac2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4df3a1b4ead644058147473a4f95cf16fe6fc5cc
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75597079"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438105"
 ---
 # <a name="workflow-project-templates"></a>Plantillas de proyecto de flujo de trabajo
 
@@ -43,7 +45,7 @@ Para tener acceso a estas plantillas, primero Instale el componente **Windows Wo
 1. Continúe con la creación del proyecto.
 
    > [!NOTE]
-   > Si desea agregar un nuevo proyecto a una solución existente, abra la solución en Visual Studio, haga clic con el botón derecho en la solución en **Explorador de soluciones**y seleccione **Agregar**  >  **nuevo proyecto**.
+   > Si desea agregar un nuevo proyecto a una solución existente, abra la solución en Visual Studio, haga clic con el botón derecho en la solución en **Explorador de soluciones** y seleccione **Agregar**  >  **nuevo proyecto**.
 
 ## <a name="workflow-console-app"></a>Aplicación de consola de flujos de trabajo
 
@@ -69,7 +71,7 @@ Para obtener un ejemplo de cómo implementar un diseñador de actividad personal
 > [!NOTE]
 > Los diseñadores de actividad personalizados se pueden usar para las actividades personalizadas y para las actividades .NET predeterminadas.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Usar el Diseñador de flujo de trabajo](developing-applications-with-the-workflow-designer.md)
 - [Diseñar flujos de trabajo (.NET Framework)](/dotnet/framework/windows-workflow-foundation/designing-workflows)

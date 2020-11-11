@@ -1,5 +1,7 @@
 ---
 title: 'Diseñador de flujo de trabajo: examinar y seleccionar un cuadro de diálogo de tipo .NET'
+description: Obtenga información sobre cómo puede usar el cuadro de diálogo examinar y seleccionar un tipo .NET para elegir un tipo de una vista de árbol de ensamblados y proyectos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a526bc9504f4f63a7a135978ade02654bbe63ffd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e887cf339647df9bca7fdc3d07a45dd44901c42
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75597118"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438183"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Examinar y seleccionar un cuadro de diálogo de tipo .NET
 
@@ -39,7 +41,7 @@ Este cuadro de diálogo se emplea en varios escenarios de usuario, lo cual inclu
 
 1. En el cuadro **nombre de tipo** , escriba el nombre del tipo que desea utilizar.
 
-2. Realice una de las siguientes acciones:
+2. Lleve a cabo una de las siguientes acciones:
 
     - Una vez que el nombre del tipo que desea utilizar aparece en el árbol en el cuadro **nombre de tipo** , haga doble clic en el tipo para seleccionarlo.
 
@@ -55,7 +57,7 @@ Este cuadro de diálogo se emplea en varios escenarios de usuario, lo cual inclu
 
 ## <a name="types-displayed-in-the-type-browser"></a>Tipos que se muestran en el explorador de tipo
 
-Los tipos que se muestran en el explorador pueden variar en función de cómo se haya iniciado el explorador de tipo. Si el explorador de tipo se inició desde un proyecto de flujo de trabajo dentro de **VS2010**, de forma predeterminada se muestran todos los tipos de los ensamblados a los que se hace referencia y los proyectos a los que se hace referencia. Si el explorador de tipo se inició desde fuera de un sistema de proyectos de **VS2010** (por ejemplo, en una aplicación de flujo de trabajo hospedada en otro host o en un archivo de flujo de trabajo independiente), de forma predeterminada se muestran los tipos de todos los ensamblados cargados en el AppDomain.
+Los tipos que se muestran en el explorador pueden variar en función de cómo se haya iniciado el explorador de tipo. Si el explorador de tipo se inició desde un proyecto de flujo de trabajo dentro de **VS2010** , de forma predeterminada se muestran todos los tipos de los ensamblados a los que se hace referencia y los proyectos a los que se hace referencia. Si el explorador de tipo se inició desde fuera de un sistema de proyectos de **VS2010** (por ejemplo, en una aplicación de flujo de trabajo hospedada en otro host o en un archivo de flujo de trabajo independiente), de forma predeterminada se muestran los tipos de todos los ensamblados cargados en el AppDomain.
 
 Los tipos en el explorador de tipo se pueden filtrar por desarrolladores de software del diseñador de actividades. Respecto a una actividad en concreto, es posible que vea únicamente un subconjunto de los tipos. Por ejemplo, en la actividad <xref:System.Activities.Statements.TryCatch>, solo se muestran los tipos derivados de <xref:System.Exception> en el explorador de tipo.
 

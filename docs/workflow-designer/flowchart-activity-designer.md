@@ -1,5 +1,7 @@
 ---
 title: Diseñador de actividad Diseñador de flujo de trabajo-Flowchart
+description: Obtenga información sobre cómo puede usar la actividad Flowchart para crear flujos de trabajo que definan y administren controles de flujo complejos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d786e9acfa99d2b106b72822a0106e2161724790
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 08c7957d79d51cab93e45adf8f74899ecc59b76d
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75597040"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438014"
 ---
 # <a name="flowchart-activity-designer"></a>Diseñador de actividades Flowchart
 
@@ -29,7 +31,7 @@ La clase <xref:System.Activities.Statements.Flowchart> especifica una propiedad 
 
 ### <a name="using-the-flowchart-activity-designer"></a>Utilizar el diseñador de actividades Flowchart
 
-El diseñador de actividades **Flowchart** se puede encontrar en la categoría **Diagrama de flujo** del **cuadro de herramientas**, al que se tiene acceso al hacer clic en la pestaña cuadro de **herramientas** en el diseñador de flujo de trabajo. Como alternativa, seleccione **cuadro de herramientas** en el menú **Ver** o presione **Ctrl** + **Alt** + **X**.
+El diseñador de actividades **Flowchart** se puede encontrar en la categoría **Diagrama de flujo** del **cuadro de herramientas** , al que se tiene acceso al hacer clic en la pestaña cuadro de **herramientas** en el diseñador de flujo de trabajo. Como alternativa, seleccione **cuadro de herramientas** en el menú **Ver** o presione **Ctrl** + **Alt** + **X**.
 
 El diseñador de actividades **Flowchart** se puede arrastrar desde el **cuadro de herramientas** y colocarlo en la superficie diseñador de flujo de trabajo, donde se coloquen normalmente los diseñadores de actividad, ya sea como una actividad raíz o como el elemento secundario de otra actividad de flujo de control. Si el diseñador de actividades **Flowchart** se coloca en una superficie diseñador de flujo de trabajo en blanco, crea una <xref:System.Activities.Statements.Flowchart> actividad que, de forma predeterminada, se presenta en una vista expandida en la que el nodo de inicio que inicia la ejecución se representa como una bola verde. Si el diseñador de actividades **Flowchart** se coloca en otra actividad de flujo de control, se presenta en una vista minimizada que se puede expandir haciendo doble clic en el diseñador de actividades **Flowchart** . Cualquier actividad del **cuadro de herramientas** se puede arrastrar directamente al diseñador de actividad **Flowchart** , incluidas otras actividades de flujo de control.
 

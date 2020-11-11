@@ -1,5 +1,7 @@
 ---
 title: 'Diseñador de flujo de trabajo: agregar un nuevo elemento al proyecto de flujo de trabajo'
+description: Obtenga información sobre cómo puede Agregar actividades de flujo de trabajo, diseñadores y otros elementos conocidos de Visual Studio al proyecto después de haber creado un proyecto de flujo de trabajo.
+ms.custom: SEO-VS-2020
 ms.date: 06/25/2018
 ms.topic: how-to
 ms.assetid: 5c6180ca-af10-4513-b0cb-7d478fd84eab
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53737eb421f4194b00354899e373441ff0a97227
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: af6563d21ce41d54e66f474de126c3bd4070ff8a
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85814621"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437975"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>Cómo: agregar un nuevo elemento a un proyecto de flujo de trabajo
 
@@ -30,7 +32,7 @@ En la tabla siguiente se enumeran los elementos de Windows Workflow Foundation (
 
 ## <a name="to-add-a-new-item-to-a-workflow-project"></a>Para agregar un nuevo elemento a un proyecto de flujo de trabajo
 
-1. En el menú **Proyecto**, seleccione **Agregar nuevo elemento**.
+1. En el menú **Proyecto** , seleccione **Agregar nuevo elemento**.
 
    Se abrirá el cuadro de diálogo **Agregar nuevo elemento**.
 

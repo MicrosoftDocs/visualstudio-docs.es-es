@@ -1,5 +1,7 @@
 ---
 title: 'Diseñador de flujo de trabajo: Cómo establecer puntos de interrupción en los flujos de trabajo'
+description: Obtenga información sobre cómo usar el Diseñador de flujo de trabajo para establecer puntos de interrupción en los flujos de trabajo gráficos tal como lo haría en Visual Basic o en el código de C#.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: e41b21c9-c061-4358-8e2f-eb5e412864a8
@@ -8,18 +10,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9530e7ec018a89c3648f61660a5651eddaace805
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a2a8900d9df2679c6eb353336d8e7d96dd5ce365
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817494"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437885"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>Cómo: establecer puntos de interrupción en flujos de trabajo
 
 Al usar Diseñador de flujo de trabajo, puede establecer puntos de interrupción en los flujos de trabajo gráficos como haría en Visual Basic o en el código de C#. Como es de esperar, la ejecución del flujo de trabajo se detiene en cada punto de interrupción que se establece.
 
-Un punto de interrupción tiene tres Estados: *pendiente*, *enlazado*y *error*. Cuando se establece un punto de interrupción, está En espera y se representa mediante un icono rojo. Cuando el tiempo de ejecución haya cargado el tipo de flujo de trabajo, pasa a Enlazado. Si se especifica un formato incorrecto para el punto de interrupción, como con un nombre de actividad que no es válido, aparece una ventana de error. El punto de interrupción, de todas formas, se agrega a la ventana de punto de interrupción, pero se marca con una "x" pequeña.
+Un punto de interrupción tiene tres Estados: *pendiente* , *enlazado* y *error*. Cuando se establece un punto de interrupción, está En espera y se representa mediante un icono rojo. Cuando el tiempo de ejecución haya cargado el tipo de flujo de trabajo, pasa a Enlazado. Si se especifica un formato incorrecto para el punto de interrupción, como con un nombre de actividad que no es válido, aparece una ventana de error. El punto de interrupción, de todas formas, se agrega a la ventana de punto de interrupción, pero se marca con una "x" pequeña.
 
 > [!NOTE]
 > No se pueden establecer puntos de interrupción en los flujos de trabajo invocados.
@@ -36,7 +38,7 @@ Un punto de interrupción tiene tres Estados: *pendiente*, *enlazado*y *error*. 
 
 2. En el menú **depurar** , seleccione **alternar punto de interrupción**. Aparecerá un icono rojo en el borde izquierdo superior de la actividad.
 
-   Como alternativa, puede presionar **F9** después de seleccionar la actividad, o puede hacer clic con el botón secundario en la actividad y seleccionar **punto**  >  de interrupción**Insertar punto de interrupción** en el menú contextual.
+   Como alternativa, puede presionar **F9** después de seleccionar la actividad, o puede hacer clic con el botón secundario en la actividad y seleccionar **punto**  >  de interrupción **Insertar punto de interrupción** en el menú contextual.
 
 ## <a name="see-also"></a>Consulte también
 
