@@ -24,7 +24,9 @@
           href: /dotnet/core/deploying/deploy-with-vs
         - name: Empaquetado de una aplicación de escritorio para Microsoft Store
           href: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
-        - name: Implementación de una aplicación de escritorio con ClickOnce
+        - name: Implementación de una aplicación Windows de .NET con ClickOnce
+          href: quickstart-deploy-using-clickonce-folder.md
+        - name: Implementación de una aplicación de escritorio de .NET Framework con ClickOnce
           href: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
         - name: Compilación de aplicaciones ClickOnce desde la línea de comandos
           href: building-clickonce-applications-from-the-command-line.md
