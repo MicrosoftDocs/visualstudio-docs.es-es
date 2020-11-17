@@ -3,19 +3,19 @@ title: Agregar y quitar elementos del proyecto
 description: En este documento se explica cómo agregar y quitar elementos de proyecto en Visual Studio para Mac
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 05/06/2018
+ms.date: 11/06/2020
 ms.assetid: 4071689D-1C21-42D7-8963-550E7BCB4B67
 ms.topic: how-to
-ms.openlocfilehash: 14f1b08464f1bc0f9e1db8a4e7ddbad23a84573e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6df6fbf9d36f06c4cdeb1908b50173e2ffee136a
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85938498"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94492950"
 ---
 # <a name="adding-and-removing-project-items"></a>Agregar y quitar elementos del proyecto
 
-Puede agregar nuevos elementos de proyecto al proyecto si hace clic con el botón derecho en el nodo Proyecto de **Panel de solución** y va a **Agregar > Nuevo archivo**:
+Puede agregar nuevos elementos de proyecto a este si hace clic con el botón derecho en el nodo Proyecto de la **ventana de la solución** y va a **Agregar > Nuevo archivo**:
 
 ![Adición de nuevo elemento de proyecto](media/add-and-remove-project-items-image1.png)
 

@@ -3,15 +3,15 @@ title: Incluir un paquete NuGet en el proyecto
 description: En este documento se explica cómo incluir un paquete NuGet en un proyecto mediante Visual Studio para Mac. Le guía a lo largo del proceso de búsqueda y descarga de un paquete, además de presentar las características de integración del IDE.
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 11/01/2019
+ms.date: 11/09/2020
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: conceptual
-ms.openlocfilehash: 4200f466c079247d3efa036f4f7cca2fd2d6b5d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 46ceb99617c6a0e9ba457fdb769c1162090d1d31
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74127202"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493496"
 ---
 # <a name="install-and-manage-nuget-packages-in-visual-studio-for-mac"></a>Instalación y administración de paquetes NuGet en Visual Studio para Mac
 
@@ -23,7 +23,7 @@ Para obtener una introducción al uso de NuGet en Visual Studio para Mac, consul
 
 ## <a name="find-and-install-a-package"></a>Búsqueda e instalación de un paquete
 
-1. Con un proyecto abierto en Visual Studio para Mac, haga clic con el botón derecho en la carpeta **Dependencias** (carpeta **Paquetes** si usa un proyecto de Xamarin) del **Panel de solución** y seleccione **Administrar paquetes NuGet…**
+1. Con un proyecto abierto en Visual Studio para Mac, haga clic con el botón derecho en la carpeta **Dependencias** (carpeta **Paquetes** si usa un proyecto de Xamarin) en la **ventana de la solución** y seleccione **Administrar paquetes NuGet...**
 
     ![Acción contextual de adición de nuevo paquete NuGet](media/nuget-walkthrough-packages-menu.png)
 
@@ -63,7 +63,7 @@ Las actualizaciones de paquetes se pueden hacer todas a la vez, al hacer clic co
 
 Haga clic con el botón derecho en **Dependencias** para acceder al menú contextual y elija **Actualizar** para actualizar todos los paquetes:
 
-![Menú Paquetes](media/nuget-walkthrough-packages-menu-update.png)
+![Menú contextual Dependencias con el menú Actualizar resaltado](media/nuget-walkthrough-packages-menu-update.png)
 
 * **Administrar paquetes NuGet**: abre la ventana para agregar más paquetes al proyecto.
 * **Actualizar**: comprueba el servidor de origen de cada paquete y descarga las versiones más recientes.
@@ -71,8 +71,21 @@ Haga clic con el botón derecho en **Dependencias** para acceder al menú contex
 
 Las opciones Actualizar y Restaurar también están disponibles en el nivel de solución y afectan a todos los proyectos de esta.
 
+### <a name="updating-to-pre-release-versions-of-packages"></a>Actualización a versiones preliminares de paquetes
+Para actualizar a una versión preliminar más reciente de un paquete, puede hacer clic con el botón derecho en **Dependencias** para abrir el menú contextual y seleccionar el menú **Administrar paquetes NuGet...**
+
+![Menú contextual Dependencias con el menú Administrar paquetes NuGet... resaltado](media/nuget-walkthrough-packages-menu-manage-nuget-packages.png)
+
+Active la casilla **Mostrar paquetes en versión preliminar** en la parte inferior del cuadro de diálogo.
+
+![Cuadro de diálogo Administrar paquetes NuGet abierto con la opción Mostrar paquetes en versión preliminar activada](media/nuget-walkthrough-show-pre-release-packages.png)
+
+Por último, en la pestaña **Actualizaciones** del cuadro de diálogo, seleccione el paquete que quiere actualizar, la nueva versión preliminar en la lista desplegable **Nueva versión** y haga clic en **Actualizar paquete**.
+
+![Cuadro de diálogo Administrar paquetes NuGet abierto en la pestaña Instalados, con un paquete seleccionado y la lista desplegable Nueva versión abierta.](media/nuget-walkthrough-packages-nuget-dialog-update-installed-package.png)
+
 ### <a name="locating-outdated-packages"></a>Búsqueda de paquetes obsoletos
-En el Panel de solución, puede ver la versión de un paquete que está instalada actualmente y hacer clic con el botón derecho en el paquete que se va a actualizar.
+En la ventana de la solución, puede ver la versión de un paquete que está instalada actualmente y hacer clic con el botón derecho en el paquete que se va a actualizar.
 
 ![Menú Paquetes con las opciones para Actualizar, Quitar y Refrescar.](media/nuget-walkthrough-PackageMenu.png)
 
@@ -121,11 +134,11 @@ En Visual Studio para Mac, vaya a **Visual Studio > Preferencias > NuGet > Oríg
 
 Haga clic en **Agregar** para configurar un nuevo origen. Escriba un nombre descriptivo y la dirección URL (o ruta de acceso de archivo) al origen del paquete. Si el origen es un servidor web seguro, escriba también el nombre de usuario y la contraseña, de lo contrario, deje en blanco estas entradas:
 
-![Adición de orígenes de paquetes](media/nuget-walkthrough-PackageSource2.png)
+![Cuadro de diálogo Agregar origen del paquete con una solicitud de Nombre, URL de ubicación, Nombre de usuario y Contraseña.](media/nuget-walkthrough-PackageSource2.png)
 
 Al buscar paquetes se pueden seleccionar orígenes diferentes:
 
-![Adición de orígenes de paquetes](media/nuget-walkthrough-PackageSource3.png)
+![Cuadro de diálogo Agregar origen del paquete que muestra una lista desplegable de orígenes de paquetes.](media/nuget-walkthrough-PackageSource3.png)
 
 ## <a name="version-control"></a>Control de versiones
 

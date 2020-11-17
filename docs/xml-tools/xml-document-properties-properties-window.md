@@ -1,5 +1,7 @@
 ---
 title: Propiedades de documentos XML, Ventana Propiedades
+description: Obtenga información sobre las propiedades de documentos XML de la ventana Propiedades que proporcionan información básica sobre el documento activo en el editor XML.
+ms.custom: SEO-VS-2020
 ms.date: 03/05/2019
 ms.topic: reference
 ms.assetid: 9dbb34d9-02ea-4201-b445-c98a0eb0d6db
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b21f4435737597136e1ac4a4dd8651decaf4c65
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 31098083383b1669e0fe79423c212f1f38208acc
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592430"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350236"
 ---
 # <a name="xml-document-properties-properties-window"></a>Propiedades de documentos XML, ventana Propiedades
 

@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
 ms.topic: how-to
-ms.openlocfilehash: adeab06341c0691bdb902a3bb8a813ac38d786f6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c7269b4272fb8ed2c73dbe9f57e94da071dc623e
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85938525"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493069"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>Crear y editar un archivo EditorConfig personalizado
 
@@ -51,7 +51,7 @@ El archivo EditorConfig también admite las [convenciones de codificación](/vis
 
     Al agregar el elemento en el nivel de solución se crea automáticamente y se anida en una carpeta **Elementos de la solución**:
 
-    ![Elemento de solución mostrado en el Panel de solución](media/editorconfig-image1a.png)
+    ![Elemento de la solución mostrado en la ventana de la solución](media/editorconfig-image1a.png)
 
 4. Edite el archivo. Por ejemplo:
 

@@ -1,5 +1,7 @@
 ---
 title: 'Archivo XSD de muestra: relaciones'
+description: Vea el archivo XSD de ejemplo de un esquema de pedido de compra con anotaciones y documentación que se usa en varios ejemplos de la documentación del Diseñador de esquemas XSD.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: sample
 ms.assetid: 60126510-b7dd-4cb4-92d3-9883590b92f2
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a52d152a78ee585cc2724d8504feff1e72558cf
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 6dd4e4f3678cd59562f5945ab26f8d828210375c
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75592560"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398753"
 ---
 # <a name="sample-xsd-file-relationships"></a>Archivo XSD de muestra: relaciones
 

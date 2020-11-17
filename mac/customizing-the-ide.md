@@ -3,15 +3,15 @@ title: Personalización del IDE
 description: Visual Studio para Mac puede personalizarse de varias formas, lo que permite a los usuarios desarrollar aplicaciones en un entorno que satisfaga a la vez sus necesidades de eficiencia y estéticas. En este artículo se analizan las diversas formas en que Visual Studio para Mac puede adaptarse para satisfacer las necesidades del usuario.
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 05/06/2018
+ms.date: 11/06/2020
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
 ms.custom: video
-ms.openlocfilehash: 98adf6aa252f4151af8a5504efd3856aef0afc8d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 05fd1091a279a085c2a727eb36cbc56fcb201057
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801781"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493325"
 ---
 # <a name="customizing-the-ide"></a>Personalización del IDE
 
@@ -76,43 +76,41 @@ Estos enlaces también se pueden establecer durante la configuración inicial de
 
 ## <a name="workspace-layout"></a>Diseño del área de trabajo
 
-El área de trabajo de Visual Studio para Mac consta de un área de documento principal (normalmente el editor, la superficie del diseñador o el archivo de opciones), rodeada de *paneles* complementarios que contienen información útil para acceder a los archivos de la aplicación y administrarlos, probar y depurar.
+El área de trabajo de Visual Studio para Mac consta de un área de documento principal (normalmente el editor, la superficie del diseñador o el archivo de opciones), rodeada de *ventanas de herramientas* complementarias que contienen información de utilidad para acceder a los archivos de aplicación y administrarlos, probar y depurar.
 
  ![Diseño del área de trabajo](media/customizing-the-ide-image1a.png)
 
-### <a name="viewing-and-arranging-pads"></a>Visualización y organización de paneles
+### <a name="viewing-and-arranging-tool-windows"></a>Visualización y organización de las ventanas de herramientas
 
-Al abrir cualquier solución o archivo nuevos en Visual Studio para Mac, debería observar algunos *paneles* en el área de trabajo, incluidos el Panel de solución, Esquema del documento y Errores:
+Al abrir una solución o un archivo nuevos en Visual Studio para Mac, debería observar algunas *ventanas de herramientas* en el área de trabajo, como la ventana de la solución, Esquema del documento y Errores:
 
-![Paneles de solución](media/customizing-the-ide-image2a.png)
+![Ventana de herramientas](media/customizing-the-ide-image2a.png)
 
-Visual Studio para Mac proporciona paneles que contienen información adicional, herramientas y ayudas de navegación y a los que se accede al ir al elemento de menú **Vista > Paneles** y seleccionar un panel para agregarlo:
+Visual Studio para Mac proporciona ventanas de herramientas que contienen información adicional, herramientas y ayudas de navegación, y a las que se accede al ir al elemento de menú **Vista** y seleccionar una ventana de herramientas para agregarla:
 
-![Selección de nuevo panel](media/customizing-the-ide-image3a.png)
+![Selección de nueva ventana de herramientas](media/customizing-the-ide-image3a.png)
 
-Los paneles también se pueden abrir automáticamente mediante varios comandos, como **Buscar en archivos** (Mayús + Cmd + F), que abre un panel separado de resultados de búsqueda.
+Las ventanas de herramientas también se pueden abrir automáticamente mediante varios comandos, como **Buscar en archivos** (Mayús + Cmd + F), que abre una ventana desasociada de resultados de búsqueda.
 
-Los paneles se pueden mover y organizar por el flujo de trabajo de la forma que resulte más útil para el usuario. Por ejemplo, se pueden acoplar en cualquier lado del editor de documentos, junto a otro panel, encima o debajo de otro panel o como un conjunto de paneles con pestañas que permitan cambiar de panel rápidamente.
+Las ventanas de herramientas se pueden mover y organizar por el flujo de trabajo de la forma que resulte más útil para el usuario. Por ejemplo, se pueden acoplar en cualquier lado del editor de documentos, junto a otra ventana de herramientas, encima o debajo de otra ventana o como un conjunto de ventanas con pestañas que permiten alternar rápidamente entre ellas.
 
-En el caso de los paneles usados con frecuencia, se pueden separar por completo de la ventana de Visual Studio para Mac y se pueden crear ventanas independientes para ellos.
+Las ventanas de herramientas usadas con frecuencia también se pueden desasociar por completo de la ventana de Visual Studio para Mac y aparecer como una nueva ventana.
 
-Los paneles se pueden ocultar y cerrar con los controles de la esquina superior derecha de cada panel:
+Las ventanas de herramientas se pueden anclar y cerrar mediante los controles de la esquina superior derecha de cada ventana:
 
-![Ocultación y cierre de paneles](media/customizing-the-ide-image5a.png)
+:::image type="content" source="media/customizing-the-ide-image5a.png" alt-text="Uso de controles para anclar o cerrar ventanas de herramientas":::
 
-Los paneles ocultados automáticamente están acoplados a los lados del área de trabajo para que sean fácilmente accesibles cuando se necesiten. Si se mantiene el puntero sobre el panel, este se muestra de nuevo, y se oculta cuando pierde el foco del teclado y el mouse.
+Las ventanas ancladas se acoplan a los lados del área de trabajo y permanecen abiertas para un acceso más rápido cuando se necesitan. Las ventanas desancladas están acopladas, pero no se muestran hasta que se mantiene el mouse sobre la pestaña de la ventana o se enfocan con el teclado; pueden ocultarse cuando el foco del mouse y el teclado las abandona.
 
 ### <a name="organizing-layouts"></a>Organización de diseños
 
-Los paneles que se muestran en todo momento dependen del contexto actual. Por ejemplo, cuando se usa el diseñador visual, los paneles de cuadro de herramientas y de cuadrícula de propiedades son más importantes; al depurar, resulta útil tener los paneles del depurador para ver la pila y las variables locales.
+Las ventanas de herramientas que se muestran en todo momento dependen del contexto actual. Por ejemplo, cuando se usa el diseñador visual, las ventanas de cuadro de herramientas y de cuadrícula de propiedades son las más importantes; al depurar, resulta útil tener las ventanas del depurador para ver la pila y las variables locales.
 
-El estado de los paneles abiertos se representa mediante un *diseño*. Se puede cambiar de diseño manualmente mediante el menú Vista, como se muestra en la imagen siguiente, o de forma automática al realizar una acción, como depurar o abrir un guion gráfico:
+El estado de las ventanas de herramientas abiertas se representa mediante un *diseño*. Se puede cambiar de diseño manualmente mediante el menú Vista, como se muestra en la imagen siguiente, o de forma automática al realizar una acción, como depurar o abrir un guion gráfico:
 
 ![Selección de nuevos diseños](media/customizing-the-ide-image6b.png)
 
-Siempre hay un diseño activo y cualquier cambio realizado en un diseño, como agregar o cambiar la posición de un panel, solo cambia el diseño activo. Una vez que se cierra Visual Studio para Mac, los cambios realizados no se guardan.
-
-Pero es posible crear un nuevo diseño mediante el elemento de menú **Vista > Guardar diseño actual**. Este comando agrega el diseño actual al menú para que se pueda seleccionar en cualquier momento:
+Es posible crear un nuevo diseño mediante el elemento de menú **Vista > Diseño > Guardar diseño actual...** Este comando agrega el diseño actual al menú para que se pueda seleccionar en cualquier momento:
 
 ![Guardado del diseño actual](media/customizing-the-ide-image6a.png)
 
@@ -136,6 +134,6 @@ Para revertir a un único editor abierto, seleccione **Vista > Columnas del edit
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Customize-the-Look-and-Feel/player]
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Personalizar el IDE de Visual Studio (en Windows)](/visualstudio/ide/personalizing-the-visual-studio-ide)

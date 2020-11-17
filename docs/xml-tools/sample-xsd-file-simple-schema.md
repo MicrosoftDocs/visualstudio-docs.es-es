@@ -1,5 +1,7 @@
 ---
 title: 'Ejemplo de archivo XSD: esquema simple'
+description: Vea el archivo XSD de ejemplo de un esquema de pedido de compra simple que se usa en varios ejemplos de la documentación del Diseñador de esquemas XSD.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: sample
 ms.assetid: f7e1dde1-b4f6-4371-add4-935b68ec77d7
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 788de9f31a58561aa743d6ca6286ef650f4297a4
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 974e15c9645a1c1fcb8d17a8e10adc995a8743f4
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75592547"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398727"
 ---
 # <a name="sample-xsd-file-simple-schema"></a>Archivo XSD de muestra: esquema simple
 

@@ -1,5 +1,7 @@
 ---
 title: Administración de la firma de ensamblados y manifiestos
+description: Obtenga información sobre las ventajas de la firma de nombre seguro, que ofrece una identidad única global a un componente de software.
+ms.custom: SEO-VS-2020
 ms.date: 02/17/2017
 ms.technology: vs-ide-deployment
 ms.topic: conceptual
@@ -14,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a17ce633515979ca7a3fd3ac5a7e1d8802996944
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bdd2570f94b0f5577c7c09a696906338245f77a4
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770406"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351393"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>Administración de la firma de ensamblados y manifiestos
 
@@ -38,13 +40,13 @@ Para información sobre cómo firmar ensamblados en proyectos de C++, vea [Ensam
 
 Puede firmar manifiestos de aplicación y ensamblados .NET:
 
-- Archivos ejecutables ( *.exe*).
+- Archivos ejecutables (*.exe*).
 
-- Manifiestos de aplicación ( *.exe.manifest*).
+- Manifiestos de aplicación (*.exe.manifest*).
 
-- Manifiestos de implementación ( *.application*).
+- Manifiestos de implementación (*.application*).
 
-- Ensamblados de componente compartido ( *.dll*).
+- Ensamblados de componente compartido (*.dll*).
 
 Firme los siguientes tipos de recurso:
 
@@ -74,4 +76,4 @@ Para obtener información sobre cómo firmar manifiestos, vea [Cómo: Firmar apl
 ## <a name="see-also"></a>Vea también
 
 - [Ensamblados con nombre seguro](/dotnet/framework/app-domains/strong-named-assemblies)
-- [Ensamblados con nombre seguro [C++/CLI]](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)
+- [Ensamblados con nombre seguro (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)

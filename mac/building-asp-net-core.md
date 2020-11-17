@@ -1,17 +1,17 @@
 ---
 title: Compilación de aplicaciones ASP.NET Core
-description: En este artículo se describe cómo empezar a trabajar con ASP.NET en Visual Studio para Mac, incluida la instalación y la creación de un nuevo proyecto.
+description: En este artículo se explica cómo crear y explorar las aplicaciones ASP.NET Core con Visual Studio para Mac.
 author: sayedihashimi
 ms.author: sayedha
 ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
 ms.topic: how-to
-ms.openlocfilehash: 47ddfa11b4c05896037c1fb18e285d46fc79520b
-ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
+ms.openlocfilehash: 22dfa4a33005afd64be54828f3b49c45244779d2
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88214613"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493509"
 ---
 # <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>Compilación de aplicaciones de ASP.NET Core en Visual Studio para Mac
 
@@ -88,7 +88,7 @@ Este laboratorio está destinado a desarrolladores familiarizados con C#, aunque
 
     ![Captura de pantalla del método Main de C# con una instrucción que inicializa una variable denominada host con el tipo WebHostBuilder.](media/netcore-image11.png)
 
-3. Aunque **WebHostBuilder** es responsable de crear el host que va a arrancar el servidor de la aplicación, exige proporcionar un servidor que implemente **IServer**. De forma predeterminada, este es **[Kestrel](/aspnet/core/fundamentals/servers/kestrel)**, un servidor web multiplataforma para ASP.NET Core basado en **libuv**, que es una biblioteca de E/S asincrónica multiplataforma.
+3. Aunque **WebHostBuilder** es responsable de crear el host que va a arrancar el servidor de la aplicación, exige proporcionar un servidor que implemente **`IServer`** . De forma predeterminada, este es **[Kestrel](/aspnet/core/fundamentals/servers/kestrel)**, un servidor web multiplataforma para ASP.NET Core basado en **libuv**, que es una biblioteca de E/S asincrónica multiplataforma.
 
     ![Captura de pantalla del método Main de C# donde se resalta la variable host que establece el servidor con el método UseKestrel.](media/netcore-image12.png)
 
@@ -120,7 +120,7 @@ Este laboratorio está destinado a desarrolladores familiarizados con C#, aunque
 
 2. El cuadro de diálogo **Opciones del proyecto** incluye todo lo necesario para ajustar cómo se compila y ejecuta la aplicación. Seleccione el nodo **Ejecutar > Configuraciones > Predeterminado** en el panel izquierdo.
 
-3. Active **Ejecutar en la consola externa** y desactive **Pausar salida de la consola**. Normalmente la aplicación autohospedada no tendría su consola visible, sino que registraría sus resultados en el panel **Salida**. Para los fines de este laboratorio, se muestra también en una ventana independiente, aunque no es necesario hacerlo durante el desarrollo normal.
+3. Active **Ejecutar en la consola externa** y desactive **Pausar salida de la consola**. Normalmente, la aplicación autohospedada no tendría su consola visible, sino que registraría los resultados en la ventana **Salida**. Para los fines de este laboratorio, se muestra también en una ventana independiente, aunque no es necesario hacerlo durante el desarrollo normal.
 
 4. Haga clic en **OK**.
 

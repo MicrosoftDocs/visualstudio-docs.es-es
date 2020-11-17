@@ -1,5 +1,7 @@
 ---
 title: Implementar en una carpeta local
+description: Aprenda a usar la herramienta Publicar para publicar aplicaciones ASP.NET, ASP.NET Core, .NET Core y Python en una carpeta desde Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 01/29/2019
 ms.topic: quickstart
 helpviewer_keywords:
@@ -10,21 +12,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 800059dc8d5a3e6ccfb72c588fbb61423a338cba
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: a96ea0fe4b4bbbebfc29cde7258273ea4f4b21e2
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036397"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437694"
 ---
 # <a name="deploy-an-app-to-a-folder-using-visual-studio"></a>Implementación de una aplicación en una carpeta con Visual Studio
 
 Puede usar la herramienta **Publicar** para publicar aplicaciones ASP.NET, ASP.NET Core, .NET Core y Python en una carpeta desde Visual Studio. En Node.js, se admiten los pasos, pero la interfaz de usuario es diferente.
 
 [!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
-
+::: moniker range=">=vs-2017"
 > [!NOTE]
 > Si tiene que publicar una aplicación de escritorio de Windows en una carpeta, consulte [Implementación de una aplicación de escritorio con ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# o Visual Basic). Para C++ y CLR, vea [Implementación de ClickOnce para aplicaciones de Visual C++](/cpp/windows/clickonce-deployment-for-visual-cpp-applications), o bien, para C y C ++, vea [Implementación de una aplicación de Visual C++ mediante un proyecto de instalación](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+> [!NOTE]
+> Si necesita publicar una aplicación de escritorio Windows de .NET Core 3.1 o más reciente en una carpeta, vea [Implementación de una aplicación Windows de .NET con ClickOnce](quickstart-deploy-using-clickonce-folder.md).
+
+::: moniker-end
 
 ## <a name="deploy-to-a-local-folder"></a>Implementar en una carpeta local
 
@@ -38,7 +48,17 @@ Puede usar la herramienta **Publicar** para publicar aplicaciones ASP.NET, ASP.N
 
     ![Selección de una carpeta como destino de publicación](../deployment/media/quickstart-publish-folder-new.png "Elección de carpeta")
 
-1. Especifique una ruta de acceso o seleccione **Examinar** para especificar una carpeta.
+::: moniker range=">=vs-2019"
+
+4. Si va a implementar una aplicación Windows de.NET Core 3.1 o más reciente, es posible que tenga que seleccionar **Carpeta** en la ventana **Destino específico**.
+
+![Selección de una carpeta como destino específico](../deployment/media/quickstart-publish-folder-targets.png "Elección de Destino específico")
+
+5. Si quiere publicar una aplicación Windows de .NET Core 3.1 o más reciente con ClickOnce, vea [Implementación de una aplicación Windows de .NET con ClickOnce](quickstart-deploy-using-clickonce-folder.md).
+
+ ::: moniker-end
+
+4. Especifique una ruta de acceso o seleccione **Examinar** para especificar una carpeta.
 
     ![Especificación de la ruta de acceso a la carpeta](../deployment/media/quickstart-publish-folder-path.png "Elección de carpeta")
 
@@ -71,3 +91,6 @@ Para aplicaciones de .NET:
 - [Implementación de una aplicación .NET Core con la herramienta de publicación](/dotnet/core/deploying/deploy-with-vs)
 - [Publicación de aplicaciones de .NET Core (implementación dependiente del marco frente a la implementación independiente)](/dotnet/core/deploying/)
 - [Implementación de .NET Framework y aplicaciones](/dotnet/framework/deployment/)
+::: moniker range=">=vs-2019"
+- [Implementación de una aplicación Windows de .NET con ClickOnce](quickstart-deploy-using-clickonce-folder.md).
+ ::: moniker-end

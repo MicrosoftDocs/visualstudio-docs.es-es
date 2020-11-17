@@ -3,14 +3,14 @@ title: Introducción a Docker
 description: Aprenda a agregar Docker a los proyectos en Visual Studio para Mac.
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 06/17/2019
+ms.date: 11/09/2020
 ms.topic: how-to
-ms.openlocfilehash: 5f21d55568328a9aeb9b7982e5978500f7ef715b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e2bfb78369ae5da389820a318196dd7e9e13e897
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85939054"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493080"
 ---
 # <a name="get-started-with-docker-in-visual-studio-for-mac"></a>Introducción a Docker en Visual Studio para Mac
 
@@ -31,7 +31,7 @@ Para instalar Docker, revise y siga la información de [Instalación de Docker D
 1. En **.NET Core > App** (.NET Core > Aplicación), elija la plantilla **Web Application** (Aplicación web): ![Creación de una nueva aplicación ASP.NET](media/docker-quickstart-1.png)
 1. Seleccione la plataforma de destino. En este ejemplo, usaremos .NET Core 2.2: ![Establecimiento de una plataforma de destino](media/docker-quickstart-2.png)
 1. Escriba los detalles del proyecto, como el nombre (_DockerDemo_, en este ejemplo). El proyecto creado contiene todos los elementos básicos que necesita para crear y ejecutar un sitio web de ASP.NET Core.
-1. En el Panel de solución, haga clic con el botón derecho en el proyecto DockerDemo y seleccione **Add > Add Docker Support** (Agregar > Agregar compatibilidad de Docker): ![Adición de compatibilidad con Docker](media/docker-quickstart-3.png)
+1. En la ventana de la solución, haga clic con el botón derecho en el proyecto DockerDemo y seleccione **Agregar > Agregar compatibilidad con Docker**: ![Adición de compatibilidad con Docker](media/docker-quickstart-3.png)
 
 Visual Studio para Mac agregará automáticamente un nuevo proyecto a la solución denominado **docker-compose** y agregará un archivo **Dockerfile** al proyecto existente.
 

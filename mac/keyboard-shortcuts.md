@@ -5,12 +5,12 @@ ms.date: 03/14/2019
 author: heiligerdankgesang
 ms.author: dominicn
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: 989c47e3c192c936eec0828b96a800d5ed4feaa4
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 3a4b2a56e5ac6ed29289c3946a65fc57b54eaa21
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88247385"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493210"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Métodos abreviados de teclado predeterminados de Visual Studio para Mac
 
@@ -48,8 +48,8 @@ Se han compilado los métodos abreviados de teclado más usados y prácticos en 
 |Quitar todos los puntos de interrupción|**⇧⌘F9**|
 |Ejecutar hasta el cursor|**⌘F10**|
 |Establecer instrucción siguiente|**⇧⌘F10**|
-|Mostrar la instrucción siguiente|**⌥\***|
-|Paso a paso por instrucciones|**⇧⌘I**, **⌘F11**|
+|Mostrar la instrucción siguiente|**⌥\** _|
+|Paso a paso por instrucciones|_*⇧⌘I**, **⌘F11**|
 |Depurar paso a paso para salir|**⇧⌘U**, **⇧⌘F11**|
 |Paso a paso por procedimientos|**⇧⌘O**, **F10**|
 |Alternar puntos de interrupción|**⌘\\**, **F9**|
@@ -254,9 +254,9 @@ Se han compilado los métodos abreviados de teclado más usados y prácticos en 
 |Documento siguiente|**⌘}** , **⌘F6**|
 |Documento anterior|**⌘{**, **⇧⌘F6**|
 |Cambiar al documento siguiente|**⌃⇥**|
-|Cambiar al relleno siguiente|**⌃⌥⇥**|
+|Cambiar a la ventana de herramientas siguiente|**⌃⌥⇥**|
 |Cambiar al documento anterior|**⌃⇧⇥**|
-|Cambiar al relleno anterior|**⌃⌥⇧⇥**|
+|Cambiar a la ventana de herramientas anterior|**⌃⌥⇧⇥**|
 
 ## <a name="macos-key-symbols-lookup"></a>Búsqueda de los símbolos de teclas de macOS
 

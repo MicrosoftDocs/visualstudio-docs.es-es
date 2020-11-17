@@ -1,5 +1,7 @@
 ---
 title: Procedimiento Seleccionar los esquemas XML que se van a usar
+description: Aprenda a usar el editor XML para seleccionar un esquema XML de la caché de esquemas que incluye esquemas XML conocidos que se usan para la validación de documentos XML e IntelliSense.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: d6fda3ef-d465-4788-8514-2f2d528d658c
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06f9de6927d616d6cf08995c076246c8a45ec014
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9773df597269d5f7044bf168626f530e4a454020
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815973"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400159"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>Procedimiento Selección de los esquemas XML que se van a usar
 

@@ -1,5 +1,7 @@
 ---
 title: Editor XML y diseñador de esquemas
+description: Obtenga información sobre las herramientas de Visual Studio para trabajar con esquemas XML, XSLT y XML, lo que incluye el editor XML, el Diseñador de esquemas XML y el depurador de XSLT.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 f1_keywords:
@@ -32,12 +34,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e763fa3475f26b9742ea5fb7061978e711eb22ea
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.openlocfilehash: dc8cac3e16e06c23d0d51ee4483bcf5fb8abfb05
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85816428"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351289"
 ---
 # <a name="overview-of-xml-tools-in-visual-studio"></a>Información general de las herramientas XML en Visual Studio
 

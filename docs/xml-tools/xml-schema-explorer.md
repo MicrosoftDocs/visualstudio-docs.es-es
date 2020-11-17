@@ -1,5 +1,7 @@
 ---
 title: Explorador de esquemas XML
+description: Obtenga información sobre las características del Explorador de esquemas XML integrado en Visual Studio y el editor XML.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2fc39e98-b194-456b-a452-cfafb0a52d66
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04c6415fed131abc5a102f6ec15c69e33f21fd68
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 31edea44741249c5d75a53e291c766824dc3b8ea
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592352"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351302"
 ---
 # <a name="xml-schema-explorer"></a>Explorador de esquemas XML
 

@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 09/19/2019
 ms.assetid: E4B6CB42-9FE2-43B9-93B7-BD4BD50518B1
 ms.topic: how-to
-ms.openlocfilehash: a33b590290880a7e20e7c0ec44c0b12942b1240e
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.openlocfilehash: de6be4b509eff8a013f7367614e0016f810b3657
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85939110"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94492703"
 ---
 # <a name="building-and-cleaning-projects-and-solutions"></a>Compilar y limpiar proyectos y soluciones
 
@@ -22,7 +22,7 @@ Siga los pasos de este artículo para aprender a compilar, recompilar y limpiar 
 
 ## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>Para compilar, recompilar o limpiar toda la solución
 
-1. Seleccione el nodo de la solución en el **Panel de solución**:
+1. Seleccione el nodo Solución en la **ventana de la solución**:
 
     ![Seleccionar el nodo de solución](media/compiling-and-building-image1.png)
 
@@ -38,7 +38,7 @@ Siga los pasos de este artículo para aprender a compilar, recompilar y limpiar 
 
 ## <a name="to-build-or-rebuild-a-single-project"></a>Para compilar o recompilar un solo proyecto
 
-1. En el **Panel de solución**, seleccione el proyecto.
+1. Seleccione el proyecto en la **ventana de la solución**.
 
 2. Seleccione el menú **Compilar** en la barra de menús.
 

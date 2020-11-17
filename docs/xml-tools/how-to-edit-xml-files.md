@@ -1,6 +1,8 @@
 ---
 title: Procedimiento Editar archivos XML
 ms.date: 11/04/2016
+description: Aprenda a usar el editor XML de Visual Studio para editar archivos con contenido XML o DTD.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 ms.assetid: 07fa3ecf-6345-4d30-9d85-d5ef5b083319
 author: TerryGLee
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02f078d9293fa8b02267c5003a92d1d60134e1a4
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 933ce2912845b69ceb73584c0599566b0a037fef
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88249511"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399987"
 ---
 # <a name="how-to-edit-xml-files"></a>Procedimiento Edición de archivos XML
 

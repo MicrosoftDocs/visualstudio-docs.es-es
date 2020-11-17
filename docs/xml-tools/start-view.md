@@ -1,5 +1,7 @@
 ---
 title: Vista Inicio del Diseñador de esquemas XML
+description: Obtenga información sobre los comandos disponibles en la vista Inicio del Diseñador de esquemas XML (XSD).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: f25e7a2f-7469-4279-b2f4-ee2dfd4d3af1
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f05c3023a246ba193c98cb1b01984a54fdaa0ebb
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: bd2c59d1af2802876305fa218bd169fae805f4f3
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592534"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351367"
 ---
 # <a name="start-view"></a>Vista Inicio
 

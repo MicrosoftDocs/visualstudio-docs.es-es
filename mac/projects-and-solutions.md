@@ -4,14 +4,14 @@ description: Este documento se proporciona información general sobre los proyec
 ms.topic: overview
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 05/23/2019
+ms.date: 11/09/2020
 ms.assetid: 8254505D-D96E-48BD-8A5E-CF6A917897EA
-ms.openlocfilehash: 92e7a47f7ea2b931c0b923d10e115843d315d024
-ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
+ms.openlocfilehash: c52b8513937505b40d17f7cd9fc05d9cf6a47941
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "89284309"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493405"
 ---
 # <a name="projects-and-solutions-in-visual-studio-for-mac"></a>Proyectos y soluciones en Visual Studio para Mac
 
@@ -26,15 +26,15 @@ Al crear una nueva aplicación, un sitio web, etc. en Visual Studio para Mac, se
 
 Un proyecto se define mediante un archivo (por ejemplo, `.csproj` para proyectos de C#) que contiene XML que define la jerarquía de carpetas y archivos, las rutas de acceso a los archivos y las configuraciones específicas del proyecto, como la de compilación.
 
-Cuando Visual Studio para Mac carga un proyecto, el Panel de solución usa el archivo de proyecto para mostrar los archivos y las carpetas del proyecto. Durante la compilación, MSBuild lee la configuración del archivo de proyecto para crear el archivo ejecutable.
+Cuando Visual Studio para Mac carga un proyecto, la ventana de la solución usa el archivo de proyecto para mostrar los archivos y las carpetas del proyecto. Durante la compilación, MSBuild lee la configuración del archivo de proyecto para crear el archivo ejecutable.
 
 ## <a name="solutions"></a>Soluciones
 
 Una *solución* es un contenedor que agrupa uno o más proyectos relacionados. Las soluciones se describen mediante un archivo de texto (extensión `.sln`) con su propio formato único; no están diseñadas para modificarse de forma manual.
 
-## <a name="managing-projects-in-the-solution-pad"></a>Administración de proyectos en el Panel de solución
+## <a name="managing-projects-in-the-solution-window"></a>Administración de proyectos en la ventana de la solución
 
-Una vez que un proyecto se ha creado o se ha cargado, puede usar el Panel de solución para ver y administrar el proyecto o la solución y los archivos que incluye. En la siguiente ilustración se muestra el Panel de solución con una solución de .NET Core que contiene dos proyectos:
+Una vez que un proyecto se ha creado o se ha cargado, puede usar la ventana de la solución para ver y administrar el proyecto o la solución y los archivos que contiene. En la siguiente ilustración se muestra la ventana de la solución con una solución de .NET Core que contiene dos proyectos:
 
 ![Solución de ejemplo con varios proyectos](media/solution-example.png)
 

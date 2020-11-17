@@ -3,16 +3,16 @@ title: Introducción a la creación de juegos con Unity
 description: Introducción a Unity y Visual Studio para Mac
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 05/20/2019
+ms.date: 11/09/2020
 ms.technology: vs-ide-general
 ms.assetid: D07FA43B-9D18-4DFA-8343-CD538FAD84DB
 ms.topic: how-to
-ms.openlocfilehash: da9c8b3470fee406b577b136b6c55d76c9346e44
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cae68b54623564028ea85dd1aa319fad5ceaec48
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950659"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493587"
 ---
 # <a name="getting-started-building-games-with-unity-in-visual-studio-for-mac"></a>Introducción a la creación de juegos con Unity en Visual Studio para Mac
 
@@ -112,7 +112,7 @@ Este laboratorio está destinado a desarrolladores familiarizados con C#, aunque
 
     ![Movimiento de un cubo a lo largo del eje](media/unity-image17.png)
 
-22. Ahora puede agregar algún código para controlar la lógica de Enemigo de modo que persiga a Jugador. Haga clic con el botón derecho en la carpeta **Recursos** del panel **Proyecto** y seleccione **Crear > Script de C#** .
+22. Ahora puede agregar algún código para controlar la lógica de Enemigo de modo que persiga a Jugador. Haga clic con el botón derecho en la carpeta **Recursos** de la ventana **Proyecto** y seleccione **Crear > Script de C#** .
 
     ![Acción contextual Script de C#](media/unity-image18.png)
 
@@ -144,7 +144,7 @@ Este laboratorio está destinado a desarrolladores familiarizados con C#, aunque
 
 5. La solución de Visual Studio es sencilla. Contiene una carpeta **Recursos** (la misma de **Finder**) y el script **EnemyAI.cs** creado anteriormente. En proyectos más sofisticados, probablemente la jerarquía sea diferente a la que se ve en Unity.
 
-    ![Panel Solución de Visual Studio para Mac](media/unity-image24.png)
+    ![Ventana de la solución de Visual Studio para Mac](media/unity-image24.png)
 
 6. **EnemyAI.cs** está abierto en el editor. El script inicial solo contiene códigos auxiliares para los métodos **Start** y **Update**.
 
@@ -194,11 +194,11 @@ Este laboratorio está destinado a desarrolladores familiarizados con C#, aunque
 
 1. Establezca un punto de interrupción en la primera línea de código del método **Start**. Puede hacer clic en el margen del editor en la línea de destino o colocar el cursor en la línea y presionar **F9**.
 
-    ![Establecimiento de punto de interrupción en Visual Studio para Mac](media/unity-image25.png)
+    ![Establecimiento de puntos de interrupción en Visual Studio para Mac](media/unity-image25.png)
 
 2. Haga clic en el botón **Iniciar depuración** o presione **F5**. Con esto se compila el proyecto y se asocia a Unity para su depuración.
 
-    ![Botón de inicio de Visual Studio para Mac](media/unity-image26.png)
+    ![Botón de inicio de Visual Studio para Mac](media/unity-image26.png)
 
 3. Vuelva a **Unity** y haga clic en el botón **Ejecutar** para iniciar el juego.
 
@@ -206,21 +206,21 @@ Este laboratorio está destinado a desarrolladores familiarizados con C#, aunque
 
 4. Se debe alcanzar el punto de interrupción para poder usar las herramientas de depuración de Visual Studio para Mac.
 
-    ![Punto de interrupción alcanzado en Visual Studio para Mac](media/unity-image28.png)
+    ![Punto de interrupción alcanzado en Visual Studio para Mac](media/unity-image28.png)
 
-5. En el panel **Variables locales**, busque **este** puntero, que hace referencia a un objeto **EnemyAI**. Expanda la referencia y vea que puede examinar los miembros asociados, como **Velocidad**.
+5. En la ventana **Variables locales**, busque **este** puntero, que hace referencia a un objeto **EnemyAI**. Expanda la referencia y vea que puede examinar los miembros asociados, como **Velocidad**.
 
-    ![Panel de depuración Variables locales de Visual Studio para Mac](media/unity-image29.png)
+    ![Ventana Variables locales de Visual Studio para Mac](media/unity-image29.png)
 
 6. Quite el punto de interrupción del método **Start** del mismo modo que se agregó: ya sea haciendo clic en el margen o seleccionando la línea y presionando **F9**.
 
-    ![Punto de interrupción alcanzado en Visual Studio para Mac](media/unity-image30.png)
+    ![Eliminación de un punto de interrupción en Visual Studio para Mac con un clic](media/unity-image30.png)
 
 7. Presione **F10** para ir a la primera línea de código donde se encuentre el objeto **Jugador** con una etiqueta como parámetro.
 
 8. Mantenga el cursor del mouse sobre la variable **player** dentro de la ventana del editor de código para ver sus miembros asociados. Incluso puede expandir la superposición para ver las propiedades secundarias.
 
-    ![Ventana de depuración del editor de Visual Studio para Mac](media/unity-image31.png)
+    ![Ventana de depuración del editor de Visual Studio para Mac](media/unity-image31.png)
 
 9. Presione **F5** o el botón **Ejecutar** para continuar con la ejecución. Vuelva a Unity para ver el cubo Enemigo acercarse repetidamente al cubo Jugador. Es posible que necesite ajustar la cámara si no está visible.
 
@@ -228,7 +228,7 @@ Este laboratorio está destinado a desarrolladores familiarizados con C#, aunque
 
 10. Vuelva a **Visual Studio para Mac** y establezca un punto de interrupción en la primera línea del método **Update**. Se debe alcanzar inmediatamente.
 
-    ![Establecimiento de un punto de interrupción en Visual Studio para Mac](media/unity-image33.png)
+    ![Eliminación de un punto de interrupción en Visual Studio para Mac](media/unity-image33.png)
 
 11. Imagine que la velocidad es demasiado rápida y quiere probar el impacto del cambio sin reiniciar la aplicación. Busque la variable **Velocidad** en la ventana **Automático** o **Variables locales**, cámbiela a **"10"** y presione **Entrar**.
 
@@ -264,7 +264,7 @@ Este laboratorio está destinado a desarrolladores familiarizados con C#, aunque
 
 4. La clase recién creada proporciona código auxiliar para los métodos **Start** y **Update**. Después de la llave de cierre del método **Update**, comience a escribir **"onmouseup"** . A medida que escribe, observe que IntelliSense de Visual Studio rápidamente sugiere el método que planea implementar. Selecciónelo en la lista Autocompletar proporcionada. Rellena un código auxiliar del método automáticamente, incluidos los parámetros.
 
-    ![IntelliSense en Visual Studio para Mac](media/unity-image41.png)
+    ![IntelliSense en Visual Studio para Mac](media/unity-image41.png)
 
 5. Dentro del método **OnMouseUp**, escriba **"base."** para ver todos los métodos base disponibles a los que llamar. También puede examinar las diferentes sobrecargas de cada función con la opción de paginación de la esquina superior derecha del control flotante de IntelliSense.
 
@@ -272,7 +272,7 @@ Este laboratorio está destinado a desarrolladores familiarizados con C#, aunque
 
 6. Visual Studio para Mac también permite definir fácilmente nuevos sombreadores. En el **Explorador de soluciones**, haga clic con el botón derecho en **Recursos** y seleccione **Agregar > Nuevo sombreador**.
 
-    ![Acción Nuevo sombreador de Visual Studio para Mac](media/unity-image43.png)
+    ![Acción Nuevo sombreador de Visual Studio para Mac](media/unity-image43.png)
 
 7. El formato de archivo del sombreador obtiene tratamiento completo de color y fuente para facilitar su lectura y comprensión.
 

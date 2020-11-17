@@ -1,5 +1,7 @@
 ---
 title: Procedimiento Crear un documento XML basado en un esquema XSD
+description: Aprenda a usar la característica Generar XML de ejemplo para crear un documento XML basado en un esquema XSD.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 193b195f-e918-4c79-a1a1-8096a1433bde
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 799d27716e7ab2dd621dce04375093f4aff375d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1fdd987a5153a4f421b4bfad83e1ce7979dddb54
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88893364"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398896"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Procedimiento Creación de un documento XML basado en un esquema XSD
 

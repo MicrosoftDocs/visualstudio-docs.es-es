@@ -2,7 +2,7 @@
 title: 'Tutorial: Abrir un proyecto desde un repositorio'
 description: Obtenga información sobre cómo abrir un proyecto en un repositorio GIT o de Azure DevOps mediante Visual Studio.
 ms.custom: get-started
-ms.date: 03/30/2019
+ms.date: 11/10/2020
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: ad609e9cf6a00a1b966e5d63589592239f215b01
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 91fb06a50fe0c992d3018aee31cfc963544f8b97
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743029"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436086"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>Tutorial: Abrir un proyecto desde un repositorio
 
@@ -53,7 +53,7 @@ Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Vi
 
     ![Elección de Clonar en la sección Repositorios GIT locales](./media/open-proj-repo-local-git-repo-clone.png)
 
-1. En el cuadro que indica ***Especifique la dirección URL del repositorio GIT que se va a clonar***, escriba o pegue la dirección URL del repositorio y presione **ENTRAR**. (Es posible que se le solicite iniciar sesión en GitHub. Si es así, hágalo).
+1. En el cuadro que indica **_Especifique la dirección URL del repositorio Git que se va a clonar_ *_, escriba o pegue la dirección URL del repositorio y presione_* Entrar**. (Es posible que se le solicite iniciar sesión en GitHub. Si es así, hágalo).
 
    Una vez que Visual Studio clona el repositorio, Team Explorer se cierra y se abre el Explorador de soluciones. Aparece un mensaje que indica *Haga clic en Soluciones y carpetas arriba para ver una lista de soluciones*. Elija **Soluciones y carpetas**.
 
@@ -74,6 +74,9 @@ Vea la animación siguiente para comprobar el trabajo que ha realizado en la sec
 ::: moniker-end
 
 ::: moniker range="vs-2019"
+
+> [!NOTE]
+> Si quiere probar la nueva experiencia de Git integrada en Visual Studio 2019, asegúrese de actualizar a la [**versión 16.8**](/visualstudio/releases/2019/release-notes/). Para más información, consulte la página [Nueva experiencia de Git en Visual Studio](../ide/git-with-visual-studio.md).
 
 1. Abra Visual Studio 2019.
 
@@ -101,7 +104,7 @@ Vea la animación siguiente para comprobar el trabajo que ha realizado en la sec
 
 1. Abra Visual Studio 2017.
 
-1. En la barra de menús superior, elija **Archivo** >**Abrir** > **Abrir desde el control de código fuente**.
+1. En la barra de menús superior, elija **Archivo** > **Abrir** > **Abrir desde el control de código fuente**.
 
    Se abre el panel **Team Explorer: conectar**.
 
@@ -109,11 +112,11 @@ Vea la animación siguiente para comprobar el trabajo que ha realizado en la sec
 
 1. Existen dos maneras de conectarse al repositorio de Azure DevOps:
 
-      - En la sección **Proveedores de servicio hospedado**, elija **Conectar…** .
+      - En la sección **Proveedores de servicio hospedado**, elija **Conectar…**.
 
         ![La sección Proveedores de servicio hospedado de la ventana Team Explorer dentro del IDE de Visual Studio](./media/open-proj-repo-azure-devops.png)
 
-      - En la lista desplegable **Administrar conexiones**, elija **Conectar a un proyecto…** .
+      - En la lista desplegable **Administrar conexiones**, elija **Conectar a un proyecto…**.
 
         ![La sección Administrar conexiones de la ventana Team Explorer dentro del IDE de Visual Studio](./media/open-proj-repo-azuredevops-manage-connections.png)
 
@@ -179,11 +182,24 @@ Si está listo para codificar con Visual Studio, explore en profundidad cualquie
 
 - [Tutoriales de Visual Studio | **C#** ](./csharp/index.yml)
 - [Tutoriales de Visual Studio | **Visual Basic**](./visual-basic/index.yml)
-- [Tutoriales de Visual Studio | **C++** ](/cpp/get-started/tutorial-console-cpp)
+- [Tutoriales de Visual Studio | **C++**](/cpp/get-started/tutorial-console-cpp)
 - [Tutoriales de Visual Studio | **Python**](../python/index.yml)
 - [Tutoriales de Visual Studio | **JavaScript**, **TypeScript** y **Node.js**](../javascript/index.yml)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
+
+::: moniker range="vs-2017"
 
 - [Azure DevOps Services: Get started with Azure Repos and Visual Studio](/azure/devops/repos/git/gitquickstart/) (Azure DevOps Services: Introducción a Azure Repos y Visual Studio)
 - [Microsoft Learn: Introducción a Azure DevOps](/learn/modules/get-started-with-devops/)
+- [Nueva experiencia de Git en Visual Studio 2019](../ide/git-with-visual-studio.md?view=vs-2019&preserve-view=true)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+- [Nueva experiencia de Git en Visual Studio](../ide/git-with-visual-studio.md)
+- [Azure DevOps Services: Get started with Azure Repos and Visual Studio](/azure/devops/repos/git/gitquickstart/) (Azure DevOps Services: Introducción a Azure Repos y Visual Studio)
+- [Microsoft Learn: Introducción a Azure DevOps](/learn/modules/get-started-with-devops/)
+
+::: moniker-end

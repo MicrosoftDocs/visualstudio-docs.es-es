@@ -1,5 +1,7 @@
 ---
 title: ProjectItem (elemento, plantillas de elementos de Visual Studio) | Microsoft Docs
+description: Obtenga información sobre el elemento ProjectItem para las plantillas de elementos y cómo acepta distintos atributos dependiendo de si la plantilla es para un proyecto o un elemento.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 885d0fbb50204f23a30fa43c1ffad45c9d67f829
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 431f1d5f81827b47b57a53dbe411a2a7e8a57941
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770729"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672338"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem (Elemento, Plantillas de elementos de Visual Studio)
 Especifica un archivo que se incluye en la plantilla de elemento.
@@ -70,7 +72,7 @@ Especifica un archivo que se incluye en la plantilla de elemento.
 
  Un `string` que representa el nombre de un archivo en el archivo *. zip* de la plantilla.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
  `ProjectItem` es un elemento secundario opcional de `TemplateContent` .
 
  El `TargetFileName` atributo se puede usar para cambiar el nombre de los archivos con parámetros. Por ejemplo, si el archivo *. VB* existe en el directorio raíz del archivo *. zip* de plantilla, pero desea que el archivo tenga un nombre basado en el nombre de archivo proporcionado por el usuario en el cuadro de diálogo **Agregar nuevo elemento** , usaría el siguiente código XML:

@@ -1,5 +1,7 @@
 ---
 title: Createnewfolder ((elemento, plantillas de Visual Studio) | Microsoft Docs
+description: Obtenga información sobre el elemento Createnewfolder (y cómo determina si el directorio de destino donde se va a crear el proyecto no existe.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 860f4df3e69a568a3e391da4d7437d9a5fd83f15
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 15633c2f701c813ca24c5484fd4108a86c57b05b
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739669"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671584"
 ---
 # <a name="createnewfolder-element-visual-studio-templates"></a>Createnewfolder ((elemento, plantillas de Visual Studio)
 Determina si hay que comprobar que el directorio de destino donde se va a crear el proyecto no existe. Si el directorio existe, se puede crear un directorio nuevo para el proyecto. Esta configuración se suele sobrescribir por medio de la marca del Registro `NewProjectRequiresNewFolder(VsTemplate)` (`HKEY_LOCAL_MACHINE/SOFTWARE(/Wow6432Node)/Microsoft/VisualStudio/<version number>/Projects/<project GUID>`) que usan todos los tipos de proyecto comunes para determinar si un proyecto nuevo se creará en un directorio nuevo.
@@ -57,7 +59,7 @@ Determina si hay que comprobar que el directorio de destino donde se va a crear 
 
  El texto debe ser `true` o `false`, e indica si se debe crear o no una nueva carpeta contenedora cuando se cree un proyecto a partir de la plantilla.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
  `CreateNewFolder` es un elemento opcional. El valor predeterminado es `true`.
 
  El valor especificado en el elemento `CreateNewFolder` solo se admite en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] si el sistema de proyectos subyacente lo admite.

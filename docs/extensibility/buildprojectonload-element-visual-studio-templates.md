@@ -1,5 +1,7 @@
 ---
 title: BuildProjectOnload (elemento, plantillas de Visual Studio) | Microsoft Docs
+description: Obtenga información sobre el elemento BuildProjectOnload y cómo se compilan solo los proyectos nuevos a medida que se crean y se agregan a una solución.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 72d1981aab67762b3ee4aa8d62e0643f4c2a8963
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bdf4256b2fb376fc063eb330d47c843c1ff8820b
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739942"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671597"
 ---
 # <a name="buildprojectonload-element-visual-studio-templates"></a>BuildProjectOnload (elemento, plantillas de Visual Studio)
 Compila solo los proyectos nuevos a medida que se crean y se agregan a una solución. No se compila toda la solución.
@@ -53,7 +55,7 @@ Jerarquía de elementos:
 
  El texto debe ser `true` o `false` para indicar si se va a compilar solo el nuevo proyecto cuando se crea a partir de la plantilla.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
  `BuildProjectOnLoad` es un elemento opcional. El valor predeterminado es `false`.
 
 ## <a name="example"></a>Ejemplo

@@ -1,16 +1,16 @@
 ---
 title: Comentarios de tareas
 description: Agregar comentarios de tarea en el código
-author: cobey
-ms.author: cobey
-ms.date: 05/06/2018
+author: jmatthiesen
+ms.author: jomatthi
+ms.date: 11/09/2020
 ms.assetid: 562DCB46-D8FA-4DC4-AAEA-F274448C4CD2
-ms.openlocfilehash: d88b74ab953f97e061f4be3befc227646006f38b
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 02eacb312931d941b716ee65f91cd478eac8bb8a
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "67692322"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493535"
 ---
 # <a name="task-comments"></a>Comentarios de tareas
 
@@ -24,9 +24,9 @@ Para agregar un nuevo comentario de tarea, agregue un comentario que incluya la 
 //TODO: Finish this for all properties.
 ```
 
-Visual Studio para Mac dirige la atención a estos marcadores al resaltarlos en el panel **Lista de tareas**, que se muestra al ir a **Vista > Paneles > Tarea**:
+Visual Studio para Mac dirige la atención a estos marcadores al resaltarlos en la ventana **Lista de tareas**, que se puede mostrar mediante el menú **Vista > Tareas**:
 
-![Panel Lista de tareas](media/source-editor-image11.png)
+![Ventana Lista de tareas, que muestra un solo elemento TODO](media/source-editor-image11.png)
 
 ## <a name="see-also"></a>Consulte también
 

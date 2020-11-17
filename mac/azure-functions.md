@@ -1,18 +1,18 @@
 ---
 title: Introducción a Azure Functions
-description: Uso de Azure Functions en Visual Studio para Mac.
+description: Introducción a Azure Functions en Visual Studio para Mac.
 author: jmatthiesen
 ms.author: jomatthi
 ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
 ms.topic: how-to
-ms.openlocfilehash: 586d03e88ba3a2523dde00a6826980830ad54fbc
-ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
+ms.openlocfilehash: 69ecab4f4d3dd7d99821b384dbda0c8986297282
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89402322"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94492846"
 ---
 # <a name="introduction-to-azure-functions"></a>Introducción a Azure Functions
 
@@ -95,10 +95,10 @@ Puede usar el procedimiento anterior para agregar más funciones a su proyecto d
 
 ## <a name="publish-to-azure"></a>Publicar en Azure
 
-1. Haga clic con el botón derecho en el nombre del proyecto y seleccione **Publicar > Publicar en Azure** :  ![Opción de menú Publicar en Azure](media/azure-functions-image5.png)
+1. Haga clic con el botón derecho en el nombre del proyecto y seleccione **Publicar > Publicar en Azure** :  ![Menú contextual con la opción Publicar > Publicar en Azure... resaltada](media/azure-functions-image5.png)
 2. Si ya ha conectado su cuenta de Azure para Visual Studio para Mac, se mostrará una lista de servicios de aplicaciones disponibles. Si aún no ha iniciado sesión, se le pedirá que lo haga.
 3. En el cuadro de diálogo **Publicar en Azure App Service**, puede seleccionar un servicio de aplicación existente o crear uno nuevo haciendo clic en **Nuevo**.
-4. En el cuadro de diálogo **Crear instancia de App Service**, especifique la configuración:  ![Opción de menú Publicar en Azure](media/azure-functions-image7.png)
+4. En el cuadro de diálogo **Crear instancia de App Service**, especifique la configuración:  ![Nuevo cuadro de diálogo de App Service con campos para el nombre de servicio, la suscripción, el grupo de recursos y la configuración del plan de servicio.](media/azure-functions-image7.png)
 
     |Parámetro  |Descripción  |
     |---------|---------|
@@ -109,13 +109,13 @@ Puede usar el procedimiento anterior para agregar más funciones a su proyecto d
 
 5. Haga clic en **Siguiente** para crear una cuenta de almacenamiento. El runtime de Functions necesita una cuenta de almacenamiento de Azure. Haga clic en **Personalizado** para crear una cuenta de almacenamiento de propósito general o usar una existente:
 
-    ![Opción de menú Publicar en Azure](media/azure-functions-image8.png)
+    ![Nuevo cuadro de diálogo de App Service que solicita un nombre para la cuenta de almacenamiento.](media/azure-functions-image8.png)
 
 6. Haga clic en **Crear** para crear una instancia de Function App y los recursos relacionados en Azure con esta configuración e implementar el código del proyecto de función.
 
 7. Puede que se muestre un cuadro de diálogo durante la publicación que indique "Actualizar versión de Functions en Azure". Haga clic en **Sí**:
 
-    ![Opción de menú Publicar en Azure](media/azure-functions-image12.png)
+    ![Solicitud que pregunta por la actualización de la configuración de la aplicación de Azure para que coincida con la versión local de Functions, con las opciones Sí y No.](media/azure-functions-image12.png)
 
 ## <a name="function-app-settings"></a>Configuración de Function App
 

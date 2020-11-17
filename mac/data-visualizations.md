@@ -3,28 +3,28 @@ title: Depuración - Visualizaciones de datos
 description: La depuración es una parte común y necesaria de la programación. Visual Studio para Mac contiene un completo conjunto de características para facilitar la depuración. En este artículo se examinan las distintas visualizaciones de datos que se pueden ver al inspeccionar objetos en el depurador.
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 05/06/2018
+ms.date: 11/09/2020
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.openlocfilehash: 14696040160dfc33f89b7647fb73b116b41afa16
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 838762435268ea06c09392475f294dbb22c3038d
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "67691730"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493249"
 ---
 # <a name="data-visualizations"></a>Visualizaciones de datos
 
 Visual Studio para Mac incluye compatibilidad de la interfaz de usuario con el depurador, lo que permite visualizar los valores de una variable, un campo o una propiedad durante la depuración. Estos visualizadores de datos muestran una versión extendida de los datos y permiten a los desarrolladores inspeccionar estructuras conocidas, por ejemplo para mostrar el color de una estructura de color.
 
-Los visualizadores del panel de depuración **Local** se pueden mostrar al hacer clic en el icono de vista previa que aparece a la derecha del valor cuando el usuario se desplaza sobre la fila:
+Los visualizadores de la ventana de depuración **Variables locales** se pueden mostrar al hacer clic en el icono de vista previa que aparece a la derecha del valor cuando el usuario se desplaza sobre la fila:
 
-![Panel Local](media/data-visualizations-image9.png)
+![Ventana Locales](media/data-visualizations-image9.png)
 
 La siguiente lista contiene muchas de las nuevas visualizaciones disponibles durante la depuración en Visual Studio para Mac.
 
 ## <a name="point"></a>Punto
-Una propiedad Point/PointF o CGPoint en iOS y Mac se presenta como una tupla que muestra los valores X e Y en el panel de depuración:
+Una propiedad Point/PointF o CGPoint en iOS y Mac se presenta como una tupla que muestra los valores X e Y en las ventanas de depuración:
 
 ![Visualización de punto](media/data-visualizations-image10.png)
 

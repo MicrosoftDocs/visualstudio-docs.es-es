@@ -1,5 +1,7 @@
 ---
 title: Información general sobre aplicaciones de datos de n niveles
+description: Lea una introducción sobre las aplicaciones de datos de n niveles. Estas aplicaciones de datos separadas en muchos niveles también se denominan aplicaciones distribuidas o de varios niveles.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 445826a2ada7b22201b7dd82948bc8bd5dd3d296
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: ea1ab222868df6ff1b22eee7827e1edd3978a88e
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426868"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436216"
 ---
 # <a name="n-tier-data-applications-overview"></a>Introducción a las aplicaciones de datos de n niveles
 Las aplicaciones de datos de *n niveles* son aplicaciones de datos que se separan en varios *niveles*. Las aplicaciones con n niveles, también denominadas "aplicaciones distribuidas" o "aplicaciones multinivel", dividen el procesamiento en niveles independientes que se distribuyen entre el cliente y el servidor. Al desarrollar aplicaciones que tienen acceso a datos, se debe realizar una separación clara entre los distintos niveles que constituyen la aplicación.

@@ -1,5 +1,6 @@
 ---
 title: EnableLocationBrowseButton (Elemento, Plantillas de Visual Studio)
+description: Obtenga información sobre el elemento EnableLocationBrowseButton y cómo especifica si el botón examinar está disponible en el cuadro de diálogo nuevo proyecto.
 titleSuffix: ''
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -15,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 952053add77de99baeb1a39ede6315604cf6ee06
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 463219218994c9ec1e0f8a5be6e43a0bfd3f5d49
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036657"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671264"
 ---
 # <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>EnableLocationBrowseButton (elemento, plantillas de Visual Studio)
 Especifica si el botón **examinar** está disponible en el cuadro de diálogo **nuevo proyecto** para que los usuarios puedan modificar fácilmente el directorio predeterminado en el que se guarda un nuevo proyecto.
@@ -54,7 +55,7 @@ Especifica si el botón **examinar** está disponible en el cuadro de diálogo *
 
  El texto debe ser `true` o `false` , lo que indica si se muestra o no el botón **examinar** en el cuadro de diálogo **nuevo proyecto** .
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
  `EnableLocationBrowseButton` es un elemento opcional. El valor predeterminado es `true` , que muestra el botón **examinar** en el cuadro de diálogo **nuevo proyecto** .
 
  En el cuadro de diálogo **nuevo proyecto** , el cuadro de texto **Ubicación** especifica el directorio donde se guarda un nuevo proyecto. El botón **examinar** le ayuda a modificar este directorio mostrando el cuadro de diálogo **Ubicación del proyecto** , que le permite desplazarse fácilmente a un directorio diferente que esté disponible en el equipo y, a continuación, elegirlo como el directorio donde se guarda el nuevo proyecto.

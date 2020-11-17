@@ -1,5 +1,7 @@
 ---
 title: Caché de esquema del Editor XML
+description: Obtenga información sobre la caché de esquema proporcionada por el editor XML, que incluye esquemas XML estándar que se usan en la validación de documentos XML e IntelliSense.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 35a7fcad-f3bf-4a96-9008-4306e7276223
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40781a5249d9b69df5f41f863f3d36ac6a119645
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d3eaab4379d744bae0032e51995e5bc1b8e76423
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592495"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351380"
 ---
 # <a name="schema-cache"></a>Caché de esquema
 

@@ -1,18 +1,18 @@
 ---
 title: 'Tutorial: Comprobación de'
-description: Uso de Azure Functions en Visual Studio para Mac.
-author: sayedihashimi
-ms.author: sayedha
-ms.date: 05/06/2018
+description: Tutorial detallado sobre cómo trabajar con Azure Functions en Visual Studio para Mac.
+author: jmatthiesen
+ms.author: jomatthi
+ms.date: 11/06/2020
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
 ms.topic: tutorial
-ms.openlocfilehash: 99373d7da8c7f83c8703b237ff83c63f9d1b6a53
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3fa653a1acaae0f9b58d17f86d6e2e0feeb027a6
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85939091"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493028"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Tutorial: Introducción a Azure Functions
 
@@ -44,14 +44,14 @@ En esta práctica aprenderá a empezar a compilar Azure Functions mediante Visua
 
     ![nombrar y crear el proyecto de azure function](media/azure-functions-lab-image2.png)
 
-5. Expanda los nodos de **Panel de solución**. La plantilla de proyecto predeterminada incluye referencias de NuGet para una variedad de paquetes de AzureWebJobs, así como el paquete Newtonsoft.Json.
+5. Expanda los nodos de la **ventana de la solución**. La plantilla de proyecto predeterminada incluye referencias de NuGet para una variedad de paquetes de AzureWebJobs, así como el paquete Newtonsoft.Json.
 
      También hay tres archivos: **host.json** para describir las opciones de configuración global para el host; **local.settings.json** para definir la configuración de servicio.
         La plantilla de proyecto también crea un valor HttpTrigger predeterminado. Para los fines de esta práctica, debe eliminar el archivo **HttpTrigger.cs** desde el proyecto.
 
     Abra **local.settings.json**. De forma predeterminada, tiene dos valores de cadena de conexión vacíos.
 
-    ![panel de solución que muestra el archivo local.settings.json](media/azure-functions-lab-image3.png)
+    ![Ventana de la solución que muestra el archivo local.settings.json](media/azure-functions-lab-image3.png)
 
 ## <a name="exercise-2-creating-an-azure-storage-account"></a>Ejercicio 2: Creación de una cuenta de Azure Storage
 
@@ -89,7 +89,7 @@ En esta práctica aprenderá a empezar a compilar Azure Functions mediante Visua
 
 ## <a name="example-3-creating-and-debugging-an-azure-function"></a>Ejemplo 3: Creación y depuración de una función de Azure
 
-1. Ahora está listo para comenzar a agregar el código. Cuando se trabaja con una biblioteca de clases .NET, Azure Functions se agrega como métodos estáticos. En el **Panel de solución**, haga clic con el botón derecho en el nodo de proyecto **AzureFunctions** y seleccione **Agregar > Agregar función**:
+1. Ahora está listo para comenzar a agregar el código. Cuando se trabaja con una biblioteca de clases .NET, Azure Functions se agrega como métodos estáticos. En la **ventana de la solución**, haga clic con el botón derecho en el nodo de proyecto **AzureFunctions** y seleccione **Agregar > Agregar función**:
 
     ![Opción Agregar función](media/azure-functions-lab-image11.png)
 
@@ -193,7 +193,7 @@ En esta práctica aprenderá a empezar a compilar Azure Functions mediante Visua
 
 ## <a name="exercise-4-working-with-functionjson"></a>Ejercicio 4: Trabajo con function.json
 
-1. En el ejercicio anterior, se mencionó que "Visual Studio para Mac" generó una función de trabajo para la función de Azure definida en la biblioteca. Esto es porque Azure Functions realmente no usa los atributos del método en tiempo de ejecución, sino que usa una convención de sistema de archivos de tiempo de compilación para configurar dónde y cómo se ponen a disposición las funciones de Azure. En el **Panel de solución**, haga clic con el botón derecho en el nodo del proyecto y seleccione **Mostrar en Finder**.
+1. En el ejercicio anterior, se mencionó que "Visual Studio para Mac" generó una función de trabajo para la función de Azure definida en la biblioteca. Esto es porque Azure Functions realmente no usa los atributos del método en tiempo de ejecución, sino que usa una convención de sistema de archivos de tiempo de compilación para configurar dónde y cómo se ponen a disposición las funciones de Azure. En la **ventana de la solución**, haga clic con el botón derecho en el nodo del proyecto y seleccione **Mostrar en Finder**.
 
      ![Opción del menú Mostrar en Finder](media/azure-functions-lab-image23.png)
 
@@ -205,7 +205,7 @@ En esta práctica aprenderá a empezar a compilar Azure Functions mediante Visua
 
     ![archivo funtion.json abierto en Visual Studio para Mac](media/azure-functions-lab-image25.png)
 
-1. En **Panel de solución**, haga clic con el botón derecho en el nodo de proyecto **AzureFunctionsLab** y seleccione **Agregar > Nueva carpeta**. Asigne el nombre **Adder** a la nueva carpeta. Por convención predeterminada, el nombre de esta carpeta definirá la ruta de acceso a la API, como **api/Adder**.
+1. En la **ventana de la solución**, haga clic con el botón derecho en el nodo de proyecto **AzureFunctionsLab** y seleccione **Agregar > Nueva carpeta**. Asigne el nombre **Adder** a la nueva carpeta. Por convención predeterminada, el nombre de esta carpeta definirá la ruta de acceso a la API, como **api/Adder**.
 
     ![Opción de nueva carpeta](media/azure-functions-lab-image26.png)
 

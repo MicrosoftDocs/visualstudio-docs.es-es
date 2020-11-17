@@ -1,5 +1,7 @@
 ---
 title: Procedimiento Generar un fragmento de código XML a partir de un esquema XML
+description: Aprenda a usar el editor XML para generar un fragmento de código XML a partir de un esquema de lenguaje de definición de esquema XML (XSD).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 2c128d2a-aaa6-4814-aa95-e07056afe338
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c7dff8e1bb211343ccc44e0d1fd33d96c102283
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ce87f71a465f9c6452fa713fd8a7bdf523e801a3
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817182"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399474"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Procedimiento Generación de un fragmento XML a partir de un esquema XML
 

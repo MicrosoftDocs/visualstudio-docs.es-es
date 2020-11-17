@@ -1,6 +1,8 @@
 ---
 title: Evaluación de una expresión XPath durante la depuración
 ms.date: 03/05/2019
+description: Aprenda a evaluar expresiones XPath mediante la ventana Inspección rápida durante la depuración.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 ms.assetid: 159ba4ef-75e4-4ac8-80dc-e064e0bec345
 author: TerryGLee
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64113461cd081eb97e2eb927119f1cd67f8a8d6e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 068362f88d801d44a1a6b6a85c74f97ba2d3c773
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816259"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399746"
 ---
 # <a name="evaluate-xpath-expressions"></a>Evaluación de expresiones XPath
 

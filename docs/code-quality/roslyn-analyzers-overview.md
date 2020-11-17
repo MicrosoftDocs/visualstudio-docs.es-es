@@ -1,6 +1,8 @@
 ---
 title: Análisis de código mediante analizadores de Roslyn
 ms.date: 09/01/2020
+description: Familiarícese con el análisis de código fuente en Visual Studio. Obtenga información sobre las correcciones de código, y los distintos tipos de analizadores de diagnóstico y niveles de gravedad.
+ms.custom: SEO-VS-2020
 ms.topic: overview
 helpviewer_keywords:
 - code analysis, managed code
@@ -12,12 +14,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 72e6193d850d351dacc5361d5053fe8f06b2d4bf
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 237d1188b1a90c64464a15b2df81d507abacb718
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860489"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349040"
 ---
 # <a name="overview-of-source-code-analysis"></a>Información general sobre el análisis de código fuente
 
@@ -25,7 +27,7 @@ Los analizadores de .NET Compiler Platform (Roslyn) inspeccionan el estilo, la c
 
 Los analizadores se pueden dividir en los grupos siguientes:
 
-- Los analizadores del [estilo del código](/visualstudio/ide/editorconfig-code-style-settings-reference?view=vs-2019&preserve-view=true#convention-categories) están integrados en Visual Studio. El identificador de diagnóstico, o código, de estos analizadores tiene el formato IDExxxx, por ejemplo, IDE0067. Puede configurar las preferencias en la [página de opciones del editor de texto](../ide/code-styles-and-code-cleanup.md) o en un [archivo EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options). A partir de .NET 5.0, los analizadores del estilo de código se incluyen en el SDK de .NET y se pueden aplicar estrictamente como errores o advertencias de compilación. Para más información, consulte [esta página](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis).
+- Los analizadores del [estilo del código](/dotnet/fundamentals/code-analysis/code-style-rule-options?preserve-view=true&view=vs-2019#convention-categories) están integrados en Visual Studio. El identificador de diagnóstico, o código, de estos analizadores tiene el formato IDExxxx, por ejemplo, IDE0067. Puede configurar las preferencias en la [página de opciones del editor de texto](../ide/code-styles-and-code-cleanup.md) o en un [archivo EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options). A partir de .NET 5.0, los analizadores del estilo de código se incluyen en el SDK de .NET y se pueden aplicar estrictamente como errores o advertencias de compilación. Para más información, consulte [esta página](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis).
 
 - Los analizadores de la [calidad del código](/dotnet/fundamentals/code-analysis/quality-rules/index) ahora se incluyen en el SDK de .NET 5 y están habilitadas de manera predeterminada. El identificador de diagnóstico, o código, de estos analizadores tiene el formato CAxxxx, por ejemplo, CA1822. Para más información, consulte la [información general del análisis de la calidad del código .NET](/dotnet/fundamentals/productivity/code-analysis#code-quality-analysis).
 

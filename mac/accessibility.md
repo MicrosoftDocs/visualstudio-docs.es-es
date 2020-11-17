@@ -6,19 +6,19 @@ ms.author: dominicn
 ms.date: 09/23/2019
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
 ms.topic: overview
-ms.openlocfilehash: d082cd5efbb41c6f20bc0abb8e5de9b3a25186ba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1da1fc5145e5fd4a2f271b30ac42204c2aa611e5
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800195"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493353"
 ---
 # <a name="accessibility"></a>Accesibilidad
 
-Hay una serie de características y herramientas de accesibilidad integradas en macOS que le ayudarán a usar Visual Studio para Mac.  Además de estas, Visual Studio para Mac también presenta las siguientes características que lo hacen más accesible para personas de distintas habilidades:
+Hay una serie de características y herramientas de accesibilidad integradas en macOS para ayudar a usar Visual Studio para Mac.  Además de estas, Visual Studio para Mac también presenta las siguientes características que lo hacen más accesible para personas de distintas habilidades:
 
 * Ampliación del texto del editor
-* Ampliación del texto del panel
+* Ampliación del texto de la ventana de herramientas
 * Personalización de los temas de color del editor de código
 * Personalización de métodos abreviados de teclado
 * Navegación mediante teclado

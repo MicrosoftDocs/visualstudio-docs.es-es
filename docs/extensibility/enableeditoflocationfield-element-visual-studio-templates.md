@@ -1,5 +1,6 @@
 ---
 title: EnableEditOfLocationField (Elemento, Plantillas de Visual Studio)
+description: Obtenga información sobre el elemento EnableEditOfLocationField y cómo especifica si el usuario puede editar el campo de ubicación.
 titleSuffix: ''
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -13,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fdc6398a5130c2f537c2f1ad6b12f484add42b3
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 46af48bf8bf9f128103767be1aa5fa64968e68f5
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037411"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671303"
 ---
 # <a name="enableeditoflocationfield-element-visual-studio-templates"></a>EnableEditOfLocationField (elemento, plantillas de Visual Studio)
 Especifica si el usuario puede editar el campo de ubicación.
@@ -36,7 +37,7 @@ Especifica si el usuario puede editar el campo de ubicación.
  En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.
 
 ### <a name="attributes"></a>Atributos
- Ninguno
+ None
 
 ### <a name="child-elements"></a>Elementos secundarios
  Ninguno
@@ -52,7 +53,7 @@ Especifica si el usuario puede editar el campo de ubicación.
 
  El texto debe ser `true` o `false` , lo que indica si el usuario puede o no editar el cuadro de texto de **Ubicación** en el cuadro de diálogo **nuevo proyecto** .
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
  `EnableEditOfLocationField` es un elemento opcional. El valor predeterminado es `true` , que permite al usuario editar el valor en el cuadro de texto **Ubicación** en el cuadro de diálogo **nuevo proyecto** .
 
  En el cuadro de diálogo **nuevo proyecto** , el cuadro de texto **Ubicación** especifica el directorio donde se guarda un nuevo proyecto.

@@ -1,22 +1,22 @@
 ---
 title: Visual Studio para Mac dirigido a usuarios de Windows
-description: Introducción a las características de accesibilidad de Visual Studio para Mac y cómo pueden habilitarse.
+description: Introducción a Visual Studio para Mac dirigida a desarrolladores familiarizados con el uso de Visual Studio en el sistema operativo Windows.
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 09/25/2019
+ms.date: 11/09/2020
 ms.assetid: 61CB6883-08CE-470F-8599-6F7570DB756E
-ms.openlocfilehash: b414026ba7297dd6c93fecdf56d9a9c58c99f294
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 880811c675aac34a18a65c6eccb8ee10f3347d4c
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74984262"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493379"
 ---
 # <a name="visual-studio-for-mac-for-windows-users"></a>Visual Studio para Mac dirigido a usuarios de Windows
 
-La migración de un sistema operativo a otro puede ser desalentadora. Con frecuencia, hay diferencias sutiles en las aplicaciones multiplataforma, desde la interfaz de usuario hasta la categorización de los elementos de menú. Los usuarios también tendrán que aprender a aclimatarse a la interfaz de usuario del nuevo sistema operativo. Aquí conocerá las diferencias más comunes entre Visual Studio para Mac y Visual Studio para Windows. También aprenderá algunas convenciones diferentes entre macOS y Windows.
+La migración de un sistema operativo a otro puede ser desalentadora. Con frecuencia, hay diferencias sutiles en las aplicaciones multiplataforma, desde la interfaz de usuario hasta la categorización de los elementos de menú. Aquí conocerá las diferencias más comunes entre Visual Studio para Mac y Visual Studio para Windows. También aprenderá algunas convenciones diferentes entre macOS y Windows.
 
-## <a name="keyboard-shortcuts"></a>Métodos abreviados de teclado
+## <a name="keyboard-shortcuts"></a>Accesos directos del teclado
 
 Muchos desarrolladores están acostumbrados a usar el teclado para las tareas y la navegación. Algunas teclas del teclado son comunes entre los equipos Mac y Windows. Se podría pensar que las acciones del teclado, como copiar y pegar, usan las mismas combinaciones de teclas. Pero no siempre es así. Por fortuna, puede cambiar los enlaces de teclado en Visual Studio para Mac para que sean muy similares a los de Visual Studio en Windows.
 
@@ -31,10 +31,10 @@ Normalmente, la tecla modificadora Comando de macOS (⌘) puede reemplazar norma
 |Tarea                   |Acceso directo de Windows         |Acceso directo de macOS      |
 |-----------------------|-------------------------|--------------------|
 |Copiar                   |`Ctrl + C`               |`⌘ + C`             |
-|Paste                  |`Ctrl + V`               |`⌘ + V`             |
-|Cut                    |`Ctrl + X`               |`⌘ + X`             |
-|Undo                   |`Ctrl + Z`               |`⌘ + Z`             |
-|Redo                   |`Ctrl + Shift + Z`       |`⌘ + Shift + Z`     |
+|Pegar                  |`Ctrl + V`               |`⌘ + V`             |
+|Cortar                    |`Ctrl + X`               |`⌘ + X`             |
+|Deshacer                   |`Ctrl + Z`               |`⌘ + Z`             |
+|Rehacer                   |`Ctrl + Shift + Z`       |`⌘ + Shift + Z`     |
 |Eliminar a la derecha del cursor |`Delete`                 |`fn + Backspace`    |
 |Eliminar palabra            |`Ctrl + Delete`          |`fn + ⌥ + Backspace`|
 
@@ -49,10 +49,9 @@ Los menús de macOS se organizan de forma diferente a los menús de Windows. Vis
 |-----------------------|---------------------------------------------------------------------|-------------------------------------|
 |Preferencias (opciones)  |Herramientas > Opciones...                                                   |Visual Studio > Preferencias...       |
 |Extensiones             |Extensiones > Administrar extensiones                                       |Visual Studio > Extensiones...        |
-|Diseños                |Ventana > Aplicar diseño de ventana > [seleccionar diseño]                       |Ver > [seleccionar diseño]               |
+|Diseños                |Ventana > Aplicar diseño de ventana > [seleccionar diseño]                       |Ver > Diseño > [Seleccionar diseño]               |
 |Actualizaciones                |Ayuda > Buscar actualizaciones                                             |Visual Studio > Buscar actualizaciones... |
 |Administrador de paquetes de NuGet  |Herramientas > Administrador de paquetes NuGet > Administrar paquetes NuGet para la solución... |Proyecto > Administrar paquetes NuGet...   |
-|Paneles/ventanas         |Ver > [seleccionar panel o ventana]                                         |Ver > Paneles > [seleccionar panel o ventana]  |
 |Buscar herramientas             |Editar > Buscar y reemplazar > [seleccionar herramienta]                              |Buscar > [seleccionar herramienta]               |
 |Acerca de Visual Studio    |Ayuda > Acerca de Microsoft Visual Studio                                 |Visual Studio > Acerca de Visual Studio  
 

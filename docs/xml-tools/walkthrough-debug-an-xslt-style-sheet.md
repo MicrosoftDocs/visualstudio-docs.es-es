@@ -1,5 +1,7 @@
 ---
 title: Depuración de hojas de estilos XSLT
+description: Aprenda a usar el depurador de XSLT de Visual Studio para depurar una hoja de estilos XSLT mediante los pasos de este tutorial.
+ms.custom: SEO-VS-2020
 ms.date: 03/05/2019
 ms.topic: how-to
 ms.assetid: 3db9fa5a-f619-4cb6-86e7-64b364e58e5d
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c75d3cae07101363f6c986a1defb375f602f466
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c69f93aca88cb8e83417a370de7113640d3ae38c
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815128"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351341"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>Tutorial: Depuración de una hoja de estilos XSLT
 

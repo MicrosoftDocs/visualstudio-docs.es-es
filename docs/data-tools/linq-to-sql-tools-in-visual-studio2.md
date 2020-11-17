@@ -1,5 +1,7 @@
 ---
 title: Introducción a Object Relational Designer de LINQ to SQL
+description: Lea una introducción sobre las herramientas de LINQ to SQL en Visual Studio. Obtenga información sobre Object Relational Designer (O/R Designer).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 ms.assetid: 45e477c0-5c6b-41f9-b2d0-2808fb4f6537
@@ -8,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 55f6fa2ad9eda2d701563d1fa99c76f5cd5c7c1d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: af394318d18244fc6e20e517d0ff985ca5e5ad1f
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282012"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436242"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>Herramientas de LINQ to SQL en Visual Studio
 

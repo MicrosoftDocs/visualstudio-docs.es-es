@@ -1,5 +1,7 @@
 ---
 title: CustomParameter ((elemento, plantillas de Visual Studio) | Microsoft Docs
+description: Obtenga información sobre el elemento CustomParameter (y cómo contiene un nombre y valor de parámetro personalizado que se usará cuando se cree un proyecto o elemento a partir de la plantilla.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9063a354f03b896e189566e8d84a18caf7509db8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 61c118bbc85064beb10b99641f0803af7af12d56
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739429"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671954"
 ---
 # <a name="customparameter-element-visual-studio-templates"></a>CustomParameter ((elemento, plantillas de Visual Studio)
 Contiene un nombre y valor de parámetro personalizado que se usará cuando se cree un proyecto o elemento a partir de la plantilla.
@@ -37,7 +39,7 @@ Contiene un nombre y valor de parámetro personalizado que se usará cuando se c
 |Atributo|Descripción|
 |---------------|-----------------|
 |`Name`|Necesario. El nombre del parámetro. El formato de los parámetros es $*Name*$.|
-|`Value`|Necesario. Valor de reemplazo para el parámetro.|
+|`Value`|Obligatorio. Valor de reemplazo para el parámetro.|
 
 ### <a name="child-elements"></a>Elementos secundarios
  Ninguno.
@@ -48,7 +50,7 @@ Contiene un nombre y valor de parámetro personalizado que se usará cuando se c
 |-------------|-----------------|
 |[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|Agrupa los parámetros personalizados que se van a pasar al Asistente para plantillas cuando el asistente realiza reemplazos de parámetros.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
  Cuando una plantilla contiene `CustomParameter` elementos, cada instancia `Name` se reemplaza por el `Value` atributo en los archivos de proyecto o elemento creados.
 
 ## <a name="example"></a>Ejemplo
@@ -61,7 +63,7 @@ Contiene un nombre y valor de parámetro personalizado que se usará cuando se c
 </CustomParameters>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [CustomParameters ((elemento, plantillas de Visual Studio)](../extensibility/customparameters-element-visual-studio-templates.md)
 - [Parámetros de plantilla](../ide/template-parameters.md)
 - [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

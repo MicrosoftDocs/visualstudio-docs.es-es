@@ -2,7 +2,7 @@
 title: Registro de cambios (Visual Studio Tools para Unity, Windows) | Microsoft Docs
 description: Vea el registro de cambios de Visual Studio Tools para Unity, Windows. Vea los cambios de la versión 1.0.0.0 a la 4.7.0.0 y más allá.
 ms.custom: ''
-ms.date: 7/30/2020
+ms.date: 11/13/2020
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
@@ -12,16 +12,65 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: f8a1ed0520bb1a2e5d213cd9a670769f70251ebb
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: e3b4b730608234b8d25b7ff4bf6b6fcfa25bec09
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "94341425"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671251"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Registro de cambios (Visual Studio Tools para Unity, Windows)
 
 Registro de cambios de Visual Studio Tools para Unity.
+
+## <a name="4820"></a>4.8.2.0
+Publicado el 10 de noviembre de 2020
+
+### <a name="new-features"></a>Características nuevas
+
+- **Integración:**
+
+  - [`UNT0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0010.md)Diagnóstico mejorado que se aplica a todo lo que se hereda de `Component` , no solo `MonoBehaviour` .
+
+### <a name="bug-fixes"></a>Correcciones de errores
+
+- **Integración:**
+
+  - Se corrigió la invalidación del mensaje codelens.
+
+## <a name="4810"></a>4.8.1.0
+Publicado el 13 de octubre de 2020
+
+### <a name="new-features"></a>Características nuevas
+
+- **Evaluación:**
+
+  - Compatibilidad agregada para la conversión implícita con las invocaciones. Anteriormente, el evaluador aplicó una comprobación estricta de tipos, lo que generaba `Failed to find a match for method([parameters...])` mensajes de advertencia.
+
+- **Integración:**
+
+  - Se ha agregado el diagnóstico [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md). No debe utilizar `System.Reflection` características en mensajes críticos para el rendimiento como `Update` , `FixedUpdate` , `LateUpdate` o `OnGUI` .
+
+  - Mejoras [`USP0003`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0003.md) y [`USP0005`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0005.md) supresiones, con compatibilidad para todos los `AssetPostprocessor` métodos estáticos.
+
+  - Se ha agregado el supresor [`USP0016`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0016.md) para `CS8618`. `C# 8.0` introduce tipos de referencia que aceptan valores NULL y tipos de referencia que no aceptan valores NULL. No se admite la detección de inicialización de tipos que heredan de `UnityEngine.Object` y se producirán errores.
+
+  - Ahora con el mismo reproductor y el mismo mecanismo de generación de proyectos de asmdef para Unity 2019. x y 2020. x +.
+
+### <a name="bug-fixes"></a>Correcciones de errores
+
+- **Integración:**
+
+  - Se corrigió una finalización inesperada de mensajes en Comentarios.
+
+## <a name="4800"></a>4.8.0.0 
+Publicado el 14 de septiembre de 2020
+
+### <a name="bug-fixes"></a>Correcciones de errores
+
+- **Integración:**
+
+  - Se ha corregido la generación de proyectos de reproductor con Unity 2019. x.
 
 ## <a name="4710"></a>4.7.1.0
 Publicado el 5 de agosto de 2020

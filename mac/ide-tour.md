@@ -3,15 +3,15 @@ title: Paseo por Visual Studio para Mac
 description: Visual Studio para Mac proporciona un entorno de desarrollo integrado para compilar aplicaciones .NET en macOS, incluidos sitios web de ASP.NET Core y proyectos de Xamarin para iOS, Android, Mac y Xamarin.Forms.
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 07/03/2020
+ms.date: 11/09/2020
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: a385e58f73edbcea6eb25b7b2e2728e00f9bcb8d
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: a2caadd454564b389f48987e69e1bc08475affea
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584014"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493275"
 ---
 # <a name="visual-studio-2019-for-mac-tour"></a>Paseo por Visual Studio 2019 para Mac
 
@@ -58,11 +58,11 @@ En la imagen siguiente, se muestra Visual Studio para Mac con una aplicación ca
 
 En las secciones siguientes se proporciona una introducción a las áreas principales de Visual Studio para Mac.
 
-## <a name="solution-pad"></a>Panel de solución
+## <a name="solution-window"></a>Ventana de la solución
 
-El Panel de solución organiza los proyectos de una solución:
+La ventana de la solución organiza los proyectos de una solución:
 
-![Proyectos organizados en el Panel de solución](media/ide-tour-image18.png)
+![Proyectos organizados en la ventana de la solución](media/ide-tour-image18.png)
 
 Aquí es donde se organizan los archivos por el código fuente, los recursos, la interfaz de usuario y las dependencias en proyectos específicos de plataforma.
 
@@ -72,7 +72,7 @@ Para más información sobre el uso de proyectos y soluciones en Visual Studio p
 
 Las referencias de ensamblado de cada proyecto están disponibles en la carpeta Referencias:
 
-![Carpeta Referencias del Panel de solución](media/ide-tour-image19.png)
+![Carpeta Referencias en la ventana de la solución](media/ide-tour-image19.png)
 
 Se pueden agregar otras referencias con el cuadro de diálogo **Editar referencias**. Para mostrarlo, haga doble clic en la carpeta Referencias o seleccione **Editar referencias** en las acciones del menú contextual:
 
@@ -135,9 +135,9 @@ Visual Studio para Mac se integra con los sistemas de control de código fuente 
 
 ![Nombre de rama para indicar que se trata de un proyecto con control de código fuente](media/ide-tour-image22.png)
 
-Los archivos con cambios sin confirmar tienen una anotación en sus iconos en el Panel de solución, como se muestra en la imagen siguiente:
+Los archivos con cambios sin confirmar tienen una anotación en sus iconos en la ventana de la solución, como se muestra en la imagen siguiente:
 
-![Archivos sin confirmar en el Panel de solución](media/ide-tour-image23.png)
+![Archivos sin confirmar en la ventana de la solución](media/ide-tour-image23.png)
 
 Para más información sobre el uso del control de versiones en Visual Studio, consulte el artículo [Control de versiones](./version-control.md).
 

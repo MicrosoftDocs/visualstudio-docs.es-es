@@ -1,5 +1,7 @@
 ---
 title: Diseñador de esquemas XML
+description: Obtenga información sobre el Diseñador de esquemas XML (Diseñador XSD) de Visual Studio, una herramienta gráfica que permite visualizar un conjunto de esquemas con distintos niveles de abstracción.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 ms.assetid: ffdf63ee-faa6-45b7-bbf9-a5644dc8aca2
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 842b2c7a6d5929dcd9ccccff01534506080c283d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d809b9065ec780c8383f2320453c957bc61daa54
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817247"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351432"
 ---
 # <a name="xml-schema-designer-overview"></a>Información general del Diseñador de esquemas XSD
 

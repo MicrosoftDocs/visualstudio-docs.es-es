@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c1e7a90d5d037865d9942ea1b91f33d7724706f
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 7fa104ece39e20fbd00abcc2e1616a3dd52a5d4c
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048821"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437128"
 ---
 # <a name="property-functions"></a>Funciones de propiedad
 
@@ -283,7 +283,7 @@ A continuación se muestra un ejemplo.
 $([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SDKs\Silverlight\v3.0\ReferenceAssemblies', 'SLRuntimeInstallPath', null, RegistryView.Registry64, RegistryView.Registry32))
 ```
 
-obtiene los datos de **SLRuntimeInstallPath** de la clave **ReferenceAssemblies** , y busca primero en la vista del Registro de 64 bits y, después, en la vista del Registro de 32 bits.
+obtiene los datos de **SLRuntimeInstallPath** de la clave **ReferenceAssemblies**, y busca primero en la vista del Registro de 64 bits y, después, en la vista del Registro de 32 bits.
 
 ## <a name="msbuild-makerelative"></a>MakeRelative de MSBuild
 
@@ -340,6 +340,49 @@ Output:
   Value1 = a
   Value2 = b
 -->
+```
+
+## <a name="msbuild-targetframework-and-targetplatform-functions"></a>Funciones TargetFramework y TargetPlatform de MSBuild
+
+MSBuild define varias funciones para controlar las [propiedades TargetFramework y TargetPlatform](msbuild-target-framework-and-target-platform.md).
+
+|Signatura de función|Descripción|
+|------------------------|-----------------|
+|GetTargetFrameworkIdentifier(string targetFramework)|Analice TargetFrameworkIdentifier desde TargetFramework.|
+|GetTargetFrameworkVersion(string targetFramework)|Analice TargetFrameworkVersion desde TargetFramework.|
+|GetTargetPlatformIdentifier(string targetFramework)|Analice TargetPlatformIdentifier desde TargetFramework.|
+|GetTargetPlatformVersion(string targetFramework)|Analice TargetPlatformVersion desde TargetFramework.|
+|IsTargetFrameworkCompatible(string targetFrameworkTarget, string targetFrameworkCandidate)|Devuelve "true" si la plataforma de destino candidata es compatible con esta plataforma de destino y "false" en caso contrario.|
+
+En el ejemplo siguiente se muestra cómo se usan estas funciones. 
+
+```xml
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <PropertyGroup>
+        <Value1>$([MSBuild]::GetTargetFrameworkIdentifier('net5.0-windows7.0'))</Value1>
+        <Value2>$([MSBuild]::GetTargetFrameworkVersion('net5.0-windows7.0'))</Value2>
+        <Value3>$([MSBuild]::GetTargetPlatformIdentifier('net5.0-windows7.0'))</Value3>
+        <Value4>$([MSBuild]::GetTargetPlatformVersion('net5.0-windows7.0'))</Value4>
+        <Value5>$([MSBuild]::IsTargetFrameworkCompatible('net5.0-windows', 'net5.0'))</Value5>
+    </PropertyGroup>
+
+    <Target Name="MyTarget">
+        <Message Text="Value1 = $(Value1)" />
+        <Message Text="Value2 = $(Value2)" />
+        <Message Text="Value3 = $(Value3)" />
+        <Message Text="Value4 = $(Value4)" />
+        <Message Text="Value5 = $(Value5)" />
+    </Target>
+</Project>
+```
+
+```output
+Value1 = .NETCoreApp
+Value2 = 5.0
+Value3 = windows
+Value4 = 7.0
+Value5 = True
 ```
 
 ## <a name="msbuild-condition-functions"></a>Funciones de condiciones de MSBuild

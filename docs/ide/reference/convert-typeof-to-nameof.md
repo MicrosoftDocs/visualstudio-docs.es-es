@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 233393114883c2a9833aa7ec82f0d78f0ef33bae
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 96bd4d67302fb09e5c1cb7837ad73b345ad88c81
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88251353"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400329"
 ---
 # <a name="convert-typeof-to-nameof"></a>Convertir `typeof` en `nameof`
 
@@ -33,15 +33,16 @@ Esta refactorización se aplica a lo siguiente:
 ## <a name="how-to"></a>Instrucciones
 
 1. Coloque el cursor dentro de la instancia de `typeof(<QualifiedType>).Name` para C# o `GetType(<QualifiedType>).Name` en Visual Basic.
+
 2. Presione **Ctrl**+ **.** para activar el menú **Acciones rápidas y refactorizaciones**.
+
 3. Seleccione una de las opciones siguientes:
 
-- C#
-  <br>Seleccione **Convertir 'typeof' en 'nameof'** 
-  ![ Convertir typeof en nameof](media/convert-type-of.PNG)
+    - C#
+      <br>Seleccione **Convertir "typeof" en "nameof"** : ![Conversión de typeof en nameof](media/convert-type-of.PNG)
 
-- Visual Basic
-  <br>Seleccione **Convertir 'GetType' en 'NameOf'** ![ Convertir typeof en nameof](media/convert-get-type.PNG)
+    - Visual Basic
+      <br>Seleccione **Convertir "GetType" en "NameOf"** : ![Conversión de typeof en nameof](media/convert-get-type.PNG)
 
 ## <a name="see-also"></a>Vea también
 

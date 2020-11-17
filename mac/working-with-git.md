@@ -3,15 +3,15 @@ title: Trabajo con Git
 description: Empleo de Git en Visual Studio para Mac.
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 05/06/2018
+ms.date: 11/09/2020
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
 ms.custom: video
-ms.openlocfilehash: 767c08505877391d71ca085097a0464d516f4f24
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 148a72fb13ff34e3fa15f0c56e145a70fa16608d
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "70108026"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493236"
 ---
 # <a name="working-with-git"></a>Trabajo con Git
 
@@ -77,9 +77,9 @@ Para crear una nueva rama, seleccione el botón **Nuevo** en el cuadro de diálo
 
 También puede establecer una rama remota a la rama de _seguimiento_. Vea más información sobre ramas de seguimiento en la [documentación de Git](https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches#Tracking-Branches).
 
-Vea la rama actual en el Panel de solución, junto al nombre del proyecto:
+Vea la rama actual en la ventana de la solución, junto al nombre del proyecto:
 
- ![Rama actual mostrada en el Panel de solución](media/version-control-gitBranchName.png)
+ ![Rama actual mostrada en la ventana de la solución](media/version-control-gitBranchName.png)
 
 ## <a name="reviewing-and-committing"></a>Revisión y confirmación
 

@@ -1,18 +1,19 @@
 ---
 title: Herramientas de prueba de Visual Studio para Mac
-ms.date: 08/03/2020
+description: Creación y ejecución de pruebas con Visual Studio para Mac.
+ms.date: 11/09/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - testing tools [Visual Studio for Mac]
 - unit tests [Visual Studio for Mac]
 ms.author: jomatthi
 author: jmatthiesen
-ms.openlocfilehash: 758bdcb0d854247847e4d0d56152840643402bf4
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 3956c3158fd4ec1ad32b76882ac3f9d4cf1ea9bf
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91580966"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493392"
 ---
 # <a name="testing-tools-in-visual-studio-for-mac"></a>Herramientas de prueba de Visual Studio para Mac
 
@@ -27,7 +28,7 @@ Para empezar a trabajar con las pruebas, puede crear un nuevo proyecto de prueba
 > Para más información sobre las pruebas unitarias de las aplicaciones de .NET Core y cómo seleccionar marcos de pruebas unitarias, vea [Pruebas unitarias en .NET Core y .NET Standard](/dotnet/core/testing/?pivots=xunit).
 
 ## <a name="running-tests"></a>Ejecución de las pruebas
-La ventana **Pruebas unitarias** se usa para ejecutar pruebas unitarias y se abre mediante el menú **Vista > Paneles > Pruebas unitarias**. Las pruebas unitarias de la solución se detectan automáticamente y se muestran en esta ventana, donde puede ejecutar todas las pruebas o un conjunto de las que haya seleccionado.
+La ventana **Pruebas unitarias** se usa para ejecutar pruebas unitarias y se abre mediante el menú **Ver > Pruebas**. Las pruebas unitarias de la solución se detectan automáticamente y se muestran en esta ventana, donde puede ejecutar todas las pruebas o un conjunto de las que haya seleccionado.
 
 ![Ventana de prueba que muestra una lista de pruebas unitarias y una barra de herramientas para ejecutar o detener pruebas.](media/test-window.PNG)
 

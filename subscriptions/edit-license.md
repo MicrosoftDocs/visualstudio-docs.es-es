@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
-ms.date: 09/21/2020
+ms.date: 11/09/2020
 ms.topic: how-to
 description: Obtenga información sobre cómo los administradores pueden editar asignaciones de suscripciones.
-ms.openlocfilehash: d10e9ee779c6fc37c886bb1b5e00e15913bab7e2
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 0f1ec9c9aa63b5bd877e13f112964f7d74a4b5af
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904160"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94433562"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>Edición de asignaciones de suscripciones de Visual Studio
 Como administrador de suscripciones, puede hacer cambios en las suscripciones asignadas a las personas de su organización.  En este artículo se describen los tipos de cambios que puede realizar y se proporcionan los pasos necesarios.
@@ -39,8 +39,8 @@ Vea este vídeo o siga leyendo saber cómo editar varios suscriptores mediante l
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vkAF]
 
-   > [!IMPORTANT]
-   > Los niveles de suscripción, es decir, Enterprise, Professional, etc., y los GUID de suscripción no se pueden modificar con la edición masiva.  Si necesita asignar GUID de suscripción específicos a los usuarios, use el proceso para agregar usuarios eligiendo el identificador de suscripción. Si intenta realizar una carga con estos elementos cambiados en la plantilla de edición masiva, no podrá hacerla.
+> [!NOTE]
+> No cambie los GUID de suscripción de la plantilla. Vea el artículo sobre la [asignación de GUID de suscripción específicos](assign-guid.md).
 
 1. Para editar varios suscriptores a la vez, navegue hasta la pestaña Suscriptores. En la cinta de la parte superior, haga clic en **Edición en masa**.
 
@@ -48,7 +48,7 @@ Vea este vídeo o siga leyendo saber cómo editar varios suscriptores mediante l
    > [!div class="mx-imgBorder"]
    > ![Edición de una licencia: exportación en masa de la lista de ediciones](_img/edit-license/edit-license-bulk-edit-export.png "Haga clic en Exportar este Excel para crear una lista de sus suscripciones actuales.")
 
-3. Después, guarde el archivo localmente de modo que pueda encontrarlo fácilmente y realizar los cambios necesarios antes de cargarlo. Para garantizar una carga correcta, **no edite el nivel de suscripción ni el GUID de suscripción** en el archivo de edición masiva, ya que si lo hace la carga no se podrá efectuar.
+3. Después, guarde el archivo localmente de modo que pueda encontrarlo fácilmente y realizar los cambios necesarios antes de cargarlo. 
 
 4. Vuelva al Portal de administradores de suscripciones de Visual Studio y, en el cuadro de diálogo Edición en masa, haga clic en **Examinar**. Seleccione el archivo de Excel que ha guardado y haga clic en **Aceptar**. Verá el progreso de la carga en la pantalla.
    > [!div class="mx-imgBorder"]

@@ -1,5 +1,7 @@
 ---
 title: Name (elemento, plantillas de Visual Studio) | Microsoft Docs
+description: Obtenga información sobre el elemento Name y cómo especifica el nombre de la plantilla tal y como aparece en el cuadro de diálogo nuevo proyecto o agregar nuevo elemento.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2a02dc377bac5f93f8e0365f6f3d9ccb81737a8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2aa14005a202b7868f61cd41ffb6ac9e2f872b68
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702457"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671186"
 ---
 # <a name="name-element-visual-studio-templates"></a>Name (elemento, plantillas de Visual Studio)
 Especifica el nombre de la plantilla tal y como aparece en el cuadro de diálogo **nuevo proyecto** o **Agregar nuevo elemento** .
@@ -60,7 +62,7 @@ Especifica el nombre de la plantilla tal y como aparece en el cuadro de diálogo
 
  El texto proporciona el nombre de la plantilla.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
  `Name` es un elemento secundario obligatorio de `TemplateData`.
 
 ## <a name="example"></a>Ejemplo

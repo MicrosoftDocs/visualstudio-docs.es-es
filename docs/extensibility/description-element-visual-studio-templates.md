@@ -1,5 +1,7 @@
 ---
 title: Description (elemento, plantillas de Visual Studio) | Microsoft Docs
+description: Obtenga información sobre el elemento Description y cómo especifica la descripción de la plantilla tal y como aparece en el cuadro de diálogo nuevo proyecto o agregar nuevo elemento.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ea10b43662d2818792dbc57aeac09a056cb63ce
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2f244fb6d681c9cc22416422be3ade098c67deea
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712259"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671290"
 ---
 # <a name="description-element-visual-studio-templates"></a>Description (elemento, plantillas de Visual Studio)
 Especifica la descripción de la plantilla tal y como aparece en el cuadro de diálogo **nuevo proyecto** o **Agregar nuevo elemento** .
@@ -60,7 +62,7 @@ Especifica la descripción de la plantilla tal y como aparece en el cuadro de di
 
  En el texto se proporciona una descripción de la plantilla.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
  `Description` es un elemento secundario necesario del `TemplateData` elemento.
 
 ## <a name="example"></a>Ejemplo

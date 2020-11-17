@@ -1,5 +1,7 @@
 ---
 title: CreateInPlace (elemento, plantillas de Visual Studio)
+description: Obtenga información sobre el elemento CreateInPlace y cómo especifica si se debe crear el proyecto y realizar el reemplazo de parámetros en una ubicación específica o temporal.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab2b5d68be069f30c8f71536b6d47cb1ce8823b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 51348e8304b67314ffd19d0aec15d43d904ee651
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739660"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671987"
 ---
 # <a name="createinplace-element-visual-studio-templates"></a>CreateInPlace (elemento, plantillas de Visual Studio)
 Especifica si se debe crear el proyecto y realizar el reemplazo de parámetros en la ubicación especificada, o bien realizar el reemplazo de parámetros en una ubicación temporal y, a continuación, guardar el proyecto en la ubicación especificada.
@@ -53,7 +55,7 @@ Especifica si se debe crear el proyecto y realizar el reemplazo de parámetros e
 
  El texto debe ser `true` o `false`. Si `true` es, se crea el proyecto y el reemplazo de parámetros se realiza en la ubicación especificada en el cuadro de diálogo **nuevo proyecto** . Si `false` es, el reemplazo de parámetros se realiza en una ubicación temporal y el proyecto se copia en la ubicación especificada.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
  `CreateInPlace` es un elemento opcional. El valor predeterminado es `true`.
 
 ## <a name="example"></a>Ejemplo

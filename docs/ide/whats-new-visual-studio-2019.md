@@ -2,7 +2,7 @@
 title: Novedades de Visual Studio 2019
 titleSuffix: ''
 description: Obtenga más información sobre las nuevas características de Visual Studio 2019.
-ms.date: 08/21/2020
+ms.date: 11/10/2020
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,23 +15,19 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: ff0188a93b8c7b6470aeaeced7e3f48dbad0f28b
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: a9bf479796db1b23a204050c941650c3c20dd6aa
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005374"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438276"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Novedades de Visual Studio 2019
 
-**Actualizado para la [versión 16.7](/visualstudio/releases/2019/release-notes/)**
+**Actualizado para la [versión 16.8](/visualstudio/releases/2019/release-notes/)**
 
 >[!div class="button"]
 >[Descargar Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
-
-Visual Studio cambia constantemente para satisfacer las demandas de los desarrolladores. En el siguiente vídeo de la biblioteca de **[Microsoft Build](https://mybuild.microsoft.com/)** , acompáñenos en un recorrido por algunas de las [nuevas características](/visualstudio/releases/2019/release-notes/) y eche un [vistazo](/visualstudio/releases/2019/release-notes-preview/) a lo que vendrá: <br><br>*Duración del vídeo: 44,58 minutos*
-
-> [!VIDEO https://channel9.msdn.com/Events/Build/2020/BOD111/player]
 
 Con Visual Studio 2019, recibirá las mejores herramientas y servicios para cualquier desarrollador, aplicación y plataforma. Independientemente de si usa Visual Studio por primera vez o si ya lo ha usado durante años, nuestra última versión le gustará mucho.
 
@@ -138,6 +134,12 @@ La ventana de inicio también incluye opciones para abrir un proyecto o una solu
 
 Para más información, vea la entrada de blog [Get to code: How we designed the new Visual Studio start window](https://devblogs.microsoft.com/visualstudio/get-to-code-how-we-designed-the-new-visual-studio-start-window/) (Llegar al código: cómo hemos diseñado la nueva ventana de inicio de Visual Studio).
 
+### <a name="git-productivity"></a>Productividad de Git
+
+**Novedad en la versión 16.8** Ahora Git es la experiencia de control de versiones predeterminada en Visual Studio 2019. Hemos creado el conjunto de características y lo hemos iterado según los comentarios recibidos durante las dos últimas versiones. Ahora, la nueva experiencia está activada de forma predeterminada para todos los usuarios. En el nuevo menú de Git puede clonar, crear o abrir repositorios. Use las ventanas de herramientas de Git integradas para confirmar y enviar cambios en el código, administrar ramas, conocer las últimas novedades relativas a los repositorios remotos y resolver conflictos de fusión mediante combinación.
+
+Para obtener más información, consulte la página [Productividad de Git en Visual Studio](git-with-visual-studio.md).
+
 ### <a name="live-share"></a>Live Share
 
 [Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) es un servicio para desarrolladores que permite compartir código base y su contexto con un compañero de equipo, de forma que se establezca una colaboración bidireccional instantánea directamente en Visual Studio. Con Live Share, un compañero de equipo puede leer, navegar, editar y depurar un proyecto que ha compartido con él de forma segura y sin problemas.
@@ -222,11 +224,11 @@ Mientras tanto, estas son algunas de las características nuevas que actualmente
 
 - **Experiencia mejorada de Git en Visual Studio 2019 (versión preliminar)**
 
-   Continuamos recorriendo en iteración una experiencia de Git renovada para mejorar su productividad al trabajar con código en GitHub, Azure Repos y otros servicios de hospedaje remoto. Puede realizar la inicialización y el envío de cambios desde Visual Studio 2019 con una sola acción (o un solo clic). También puede crear ramas nuevas, administrar las ramas actuales y resolver conflictos de combinación.
+   Aunque la nueva experiencia de control de versiones de Git ya está activada de forma predeterminada en la [versión 16.8](/visualstudio/releases/2019/release-notes/) de Visual Studio 2019, seguimos agregando características para mejorar la experiencia en la versión preliminar más reciente.
 
-   Para más información, consulte la página [Nueva experiencia de Git en Visual Studio](git-with-visual-studio.md).
+   Para obtener más información, consulte la página [Productividad de Git en Visual Studio](git-with-visual-studio.md).
 
-Para más información sobre la versión preliminar&mdash;y un vínculo de descarga si quiere probarla&mdash;consulte la página **[Visual Studio Preview](https://visualstudio.microsoft.com/vs/preview/)** .
+Para más información sobre la versión preliminar&mdash;y un vínculo de descarga si quiere probarla&mdash;consulte la página **[Visual Studio Preview](https://aka.ms/vspreview/)** .
 
 ## <a name="give-us-feedback"></a>Envíenos sus comentarios.
 

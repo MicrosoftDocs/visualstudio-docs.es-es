@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: Uso de XSLT IntelliSense'
+description: Aprenda a usar XSLT IntelliSense para completar automáticamente los valores de algunos atributos con los pasos de este tutorial.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 079d95ac-2eaf-4ae1-9cd3-2c81a961a942
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a085627d598bfcc969c2e76d717a2f49a31922b2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7c8bbed6a70316e92e2c79aaa6cabc20930f10e7
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817286"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351471"
 ---
 # <a name="walkthrough-using-xslt-intellisense"></a>Tutorial: Uso de XSLT IntelliSense
 

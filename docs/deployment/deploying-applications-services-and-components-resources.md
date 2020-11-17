@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8c4a1effcf61348d2f2267fb38164fd166f7d48
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 45fc0a58262a533416f630ede795d0060f9fc909
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382977"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434498"
 ---
 # <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>Implementación de la aplicación en una carpeta, IIS, Azure u otro destino
 
@@ -32,7 +32,7 @@ Obtenga ayuda para la tarea de implementación:
 
 - ¿No está seguro de qué opción de implementación elegir? Consulte [¿Qué opciones de publicación son las adecuadas para mí?](#what-publishing-options-are-right-for-me)
 - Para ayuda con los problemas de implementación de Azure App Service o IIS, consulte [Solución de problemas de ASP.NET Core en Azure App Service e IIS](/aspnet/core/test/troubleshoot-azure-iis).
-- Para ayuda con la configuración de la implementación de .NET, consulte [Configuración de la implementación de .NET](#configure-net-deployment-settings).
+- Para obtener ayuda con la configuración de la implementación de .NET, vea [Configuración de la implementación de .NET](#configure-net-deployment-settings).
 - Para implementar un destino nuevo, si creó previamente un perfil de publicación, seleccione **Nuevo** en la ventana **Publicar** de un perfil configurado.
 
    ![Creación de un perfil de publicación nuevo](../deployment/media/create-a-new-publish-profile.png)
@@ -117,16 +117,16 @@ Para obtener más información:
 
 ### <a name="azure-virtual-machine"></a>Máquina virtual de Azure
 
-[Azure Virtual Machines (VM)](https://azure.microsoft.com/documentation/services/virtual-machines/) le permite crear y administrar cualquier cantidad de recursos informáticos en la nube. Al asumir la responsabilidad de todo el software y las actualizaciones de las máquinas virtuales, puede personalizarlas todo lo que quiera según necesite la aplicación. Puede tener acceso a las máquinas virtuales directamente mediante Escritorio remoto, y cada una mantendrá su dirección IP asignada durante el tiempo que se quiera.
+[Azure Virtual Machines (VM)](https://azure.microsoft.com/documentation/services/virtual-machines/) permite crear y administrar cualquier cantidad de recursos informáticos en la nube. Al asumir la responsabilidad de todo el software y las actualizaciones de las máquinas virtuales, puede personalizarlas todo lo que quiera según necesite la aplicación. Puede tener acceso a las máquinas virtuales directamente mediante Escritorio remoto, y cada una mantendrá su dirección IP asignada durante el tiempo que se quiera.
 
 El escalado de una aplicación hospedada en máquinas virtuales implica activar otras máquinas virtuales en función de la demanda y luego implementar el software necesario. Este nivel de control adicional le permite escalar de manera diferente en diferentes regiones del mundo. Por ejemplo, si su aplicación está atendiendo a empleados en una variedad de oficinas regionales, puede escalar sus máquinas virtuales en función del número de empleados de esas regiones, reduciendo potencialmente los costos.
 
-Para obtener información adicional, vea la [comparación detallada](/azure/architecture/guide/technology-choices/compute-decision-tree) entre Azure App Service, Azure Virtual Machines y otros servicios de Azure que puede usar como un destino de implementación mediante la opción Personalizar de Visual Studio.
+Para obtener información adicional, vea la [comparación detallada](/azure/architecture/guide/technology-choices/compute-decision-tree) entre Azure App Service, Azure Virtual Machines y otros servicios de Azure que puede usar como destino de implementación mediante la opción Personalizar de Visual Studio.
 
 #### <a name="when-to-choose-azure-virtual-machines"></a>Cuándo elegir Azure Virtual Machines
 
 - Si quiere implementar una aplicación web que sea accesible desde Internet, con un control completo sobre la duración de las direcciones IP asignadas.
-- Si necesita personalizaciones de nivel de máquina en sus servidores, que incluyen software adicional como un sistema de base de datos especializado, configuraciones de red específicas, particiones de disco, etc.
+- Se necesitan personalizaciones de nivel de máquina en los servidores, lo que incluye software adicional como un sistema de base de datos especializado, configuraciones de red específicas, particiones de disco, etc.
 - Si quiere tener un control exhaustivo sobre la escalación de su aplicación web.
 - Si necesita acceso directo a los servidores que hospedan su aplicación por cualquier otro motivo.
 
@@ -147,19 +147,29 @@ Para obtener más información, vea lo siguiente:
 
 ## <a name="folder"></a>Carpeta
 
-Implementar en el sistema de archivos significa simplemente copiar los archivos de la aplicación en una carpeta determinada del equipo. A menudo esto se usa con fines de prueba, o para implementar la aplicación para que la use un número limitado de usuarios si el equipo también ejecuta un servidor. Si la carpeta de destino se comparte en una red, la implementación en el sistema de archivos puede hacer que los archivos de la aplicación web estén disponibles para otros usuarios que, a su vez, podrán implementarla después en servidores específicos.
+Una implementación en el sistema de archivos conlleva copiar los archivos de la aplicación en una carpeta determinada del equipo propio. A menudo, la implementación en una carpeta se usa con fines de prueba o para implementar la aplicación para que la use un número limitado de usuarios si el equipo también ejecuta un servidor. Si la carpeta de destino se comparte en una red, la implementación en el sistema de archivos puede hacer que los archivos de la aplicación web estén disponibles para otros usuarios que, a su vez, podrán implementarla después en servidores específicos.
+::: moniker range=">=vs-2019"
+A partir de Visual Studio 2019 16.8, el destino de carpeta ofrece la posibilidad de publicar una aplicación Windows de .NET mediante ClickOnce.
 
+Si quiere publicar una aplicación Windows de .NET Core 3.1 o más reciente con ClickOnce, vea [Implementación de una aplicación Windows de .NET con ClickOnce](quickstart-deploy-using-clickonce-folder.md).
+::: moniker-end
 Cualquier máquina local que esté ejecutando un servidor puede hacer que la aplicación esté disponible en Internet o en una intranet, según cómo esté configurada y de las redes a las que esté conectada. (Si conecta un equipo directamente en Internet, preste especial atención a protegerlo de amenazas de seguridad externas). Como administra estas máquinas, tiene el control completo de las configuraciones de software y hardware.
 
-Tenga en cuenta que si por cualquier razón (como el acceso a la máquina) no puede usar servicios en la nube como Azure App Service o Azure Virtual Machines, puede usar [Azure Stack](https://azure.microsoft.com/overview/azure-stack/) en su propio centro de datos. Azure Stack le permite administrar y usar los recursos informáticos mediante Azure App Service y Azure Virtual Machines mientras se sigue conservando todo en el entorno local.
+Si por alguna razón (como el acceso a la máquina) no puede usar servicios en la nube como Azure App Service o Azure Virtual Machines, puede emplear [Azure Stack](https://azure.microsoft.com/overview/azure-stack/) en el centro de datos propio. Azure Stack le permite administrar y usar los recursos informáticos mediante Azure App Service y Azure Virtual Machines mientras se sigue conservando todo en el entorno local.
 
 ### <a name="when-to-choose-file-system-deployment"></a>Cuándo optar por la implementación del sistema de archivos
 
 - Si solo necesita implementar la aplicación en un recurso compartido de archivos desde el que otros usuarios la implementarán en diferentes servidores.
+::: moniker range=">=vs-2019"
+- Si quiere implementar una aplicación Windows de .NET con ClickOnce.
+::: moniker-end
 - Si solo necesita una implementación de pruebas locales.
 - Si quiere examinar y modificar potencialmente los archivos de aplicación independientemente antes de enviarlos a otro destino de implementación.
 
 Para más información, consulte [Inicio rápido: Implementar una aplicación en una carpeta local con Visual Studio](quickstart-deploy-to-local-folder.md).
+::: moniker range=">=vs-2019"
+Para obtener más información sobre la implementación de una aplicación Windows de .NET mediante ClickOnce, vea [Implementación de una aplicación Windows de .NET con ClickOnce](quickstart-deploy-using-clickonce-folder.md).
+::: moniker-end
 
 Para más ayuda sobre cómo elegir la configuración, consulte los recursos siguientes:
 
@@ -171,7 +181,7 @@ Para más ayuda sobre cómo elegir la configuración, consulte los recursos sigu
 
 Un servidor FTP/FTPS permite implementar la aplicación en un servidor que no sea Azure. Puede implementar en un sistema de archivos o en cualquier otro servidor (Internet o intranet) al que tenga acceso, incluidos los que se encuentran en otros servicios en la nube. Puede funcionar con implementación web (archivos o .ZIP) y FTP.
 
-Cuando elige un servidor FTP/FTPS, Visual Studio le pide un nombre de perfil y, después, recopila información de **conexión** adicional, incluido el servidor de destino o la ubicación, un nombre de sitio y las credenciales. Puede controlar los siguientes comportamientos en pestaña **Configuración** :
+Al elegir un servidor FTP/FTPS, Visual Studio le pide un nombre de perfil y luego recopila información de **Conexión** adicional, incluido el servidor de destino o la ubicación, un nombre de sitio y las credenciales. Puede controlar los siguientes comportamientos en pestaña **Configuración**:
 
 - La configuración que desea implementar.
 - Si desea quitar los archivos existentes del destino.
@@ -190,7 +200,7 @@ Puede crear cualquier número de perfiles de implementación de FTP/FTPS en Visu
 
 Un servidor web IIS permite implementar la aplicación en un servidor que no sea Azure. Puede implementar en un servidor IIS (Internet o intranet) al que tenga acceso, incluidos los que se encuentran en otros servicios en la nube. Puede funcionar con Web Deploy o con un paquete de Web Deploy.
 
-Cuando elige un servidor web IIS, Visual Studio le pide un nombre de perfil y, después, recopila información de **conexión** adicional, incluido el servidor de destino o la ubicación, un nombre de sitio y las credenciales. Puede controlar los siguientes comportamientos en pestaña **Configuración** :
+Al elegir un servidor web IIS, Visual Studio le pide un nombre de perfil y luego recopila información de **Conexión** adicional, incluido el servidor de destino o la ubicación, un nombre de sitio y las credenciales. Puede controlar los siguientes comportamientos en pestaña **Configuración**:
 
 - La configuración que desea implementar.
 - Si desea quitar los archivos existentes del destino.
@@ -207,18 +217,18 @@ Puede crear cualquier número de perfiles de implementación de servidor web IIS
 
 Para más información, consulte [Inicio rápido: Publicar una aplicación web en un sitio web mediante Visual Studio](quickstart-deploy-to-a-web-site.md).
 
-Para ayuda con la solución de problemas de ASP.NET Core en IIS, consulte [Solución de problemas de ASP.NET Core en Azure App Service e IIS](/aspnet/core/test/troubleshoot-azure-iis).
+Para obtener ayuda con la solución de problemas de ASP.NET Core en IIS, vea [Solución de problemas de ASP.NET Core en Azure App Service e IIS](/aspnet/core/test/troubleshoot-azure-iis).
 
 ## <a name="import-profile"></a>Perfil de importación
 
-Puede importar un perfil cuando realice la implementación en IIS o Azure App Service. Puede configurar la implementación con un *archivo de configuración de publicación* ( *\*.publishsettings* ). Un archivo de configuración de publicación se crea mediante IIS o Azure App Service, o puede crearse manualmente y después importarse en Visual Studio.
+Puede importar un perfil cuando realice la implementación en IIS o Azure App Service. Puede configurar la implementación con un *archivo de configuración de publicación* ( *\*.publishsettings*). Un archivo de configuración de publicación se crea mediante IIS o Azure App Service, o puede crearse manualmente y después importarse en Visual Studio.
 
 El uso de un archivo de configuración de publicación puede simplificar la configuración de la implementación y funciona mejor en un entorno de equipo en comparación con la configuración manual de cada perfil de implementación.
 
 ### <a name="when-to-choose-import-profile"></a>Cuándo elegir el perfil de importación
 
 - Si publica en IIS y quiere simplificar la configuración de la implementación.
-- Si publica en IIS o Azure App Service y quiere acelerar la configuración de implementación para volver a usarla o para los miembros del equipo que publican en el mismo servicio.
+- Si publica en IIS o Azure App Service y quiere acelerar la configuración de la implementación para volver a usarla o para los miembros del equipo que publican en el mismo servicio.
 
 Para obtener más información, vea lo siguiente:
 

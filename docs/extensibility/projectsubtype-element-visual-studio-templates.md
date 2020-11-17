@@ -1,5 +1,7 @@
 ---
 title: ProjectSubType (elemento, plantillas de Visual Studio) | Microsoft Docs
+description: Obtenga información sobre el elemento ProjectSubType y cómo clasifica la plantilla en una subcategoría del valor especificado en el elemento ProjectType.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 27396ad1bcc4e181b2b8cecd6ca863db2412630d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9ceecbf1bfb750244a13c641906f7a8712d01d69
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701826"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672325"
 ---
 # <a name="projectsubtype-element-visual-studio-templates"></a>ProjectSubType (elemento, plantillas de Visual Studio)
 Clasifica la plantilla en una subcategoría del valor especificado en el `ProjectType` elemento.
@@ -53,7 +55,7 @@ Clasifica la plantilla en una subcategoría del valor especificado en el `Projec
 
  Este valor especifica la subcategoría de la plantilla.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
  `ProjectSubType` es un elemento secundario opcional de `TemplateData`.
 
  El `ProjectSubType` elemento proporciona una subcategoría al elemento [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) . Este valor puede incluir:

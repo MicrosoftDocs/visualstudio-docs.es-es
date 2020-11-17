@@ -1,18 +1,18 @@
 ---
 title: Establecimiento de varios proyectos de inicio
 description: En este artículo se describe cómo configurar varios proyectos para que se inicien al ejecutar o depurar.
-author: sayedihashimi
-ms.author: sayedha
-ms.date: 12/13/2019
+author: jmatthiesen
+ms.author: jomatthi
+ms.date: 11/09/2020
 ms.topic: how-to
 ms.prod: visual-studio-mac
 ms.assetid: fd354fff-ce6b-4505-a815-84a2311e39ba
-ms.openlocfilehash: e0e1af97ec91af4105d1934a431f9aabc6562793
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: df1e088a5e2d0f65d8b72dad0895f1edb1740f1f
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950112"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493574"
 ---
 # <a name="set-multiple-startup-projects"></a>Establecimiento de varios proyectos de inicio
 
@@ -20,7 +20,7 @@ Visual Studio para Mac permite especificar el inicio de más de un proyecto al 
 
 ## <a name="to-set-multiple-startup-projects"></a>Para establecer varios proyectos de inicio
 
-1. En el Panel de solución, seleccione la solución (el nodo superior).
+1. En la ventana de la solución, seleccione una (el nodo superior).
 
 2. Haga clic con el botón derecho en la solución y luego seleccione **Establecer proyectos de inicio**:
 
@@ -42,7 +42,7 @@ Visual Studio para Mac permite especificar el inicio de más de un proyecto al 
 
    ![Solución con varios proyectos configurados para iniciar la depuración o la ejecución](media/startup-project-configured.png)
 
-   Puede ver que los dos proyectos están configurados para iniciarse porque ambos proyectos están en **negrita** en el Panel de solución. En la barra de herramientas, la nueva configuración de ejecución se establece como la configuración de ejecución de la solución actual.
+   Ahora, los dos proyectos están configurados para iniciarse, lo cual queda representado con el uso de la **negrita** para ambos proyectos en la ventana de la solución. En la barra de herramientas, la nueva configuración de ejecución se establece como la configuración de ejecución de la solución actual.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

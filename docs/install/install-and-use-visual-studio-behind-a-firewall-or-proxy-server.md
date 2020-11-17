@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: f8b7dc9a388699cc9e323085769d17a00ba4fa6a
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: 52eee3535590842db53cd80ac761286fb4a23fa9
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467640"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399000"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalación y uso de Visual Studio y de servicios de Azure detrás de un firewall o servidor proxy
 
@@ -81,6 +81,7 @@ Debido a que el Instalador de Visual Studio descarga archivos de varios dominios
 | developer.apple.com | Aprovisionamiento de Xamarin.iOS |
 | appstoreconnect.apple.com | Aprovisionamiento de Xamarin.iOS |
 | idmsa.apple.com | Aprovisionamiento de Xamarin.iOS |
+| akamized.net | Content Delivery Network (Akamai Technologies) |
 | | |
 
 ## <a name="use-visual-studio-and-azure-services"></a>Uso de Visual Studio y de servicios de Azure
@@ -101,14 +102,14 @@ Para asegurarse de que tiene acceso a todo lo que quiere cuando usa Visual Stud
 | "Distintivo" de identidad <br>(nombre de usuario y avatar)<br>y <br>configuración de itinerancia | app.vssps.visualstudio.com <br><br>app.vsspsext.visualstudio.com<br><br>app.vssps.visualstudio.com<br><br> ns-sb2-prod-ch1-002.cloudapp.net <br><br>az700632.vo.msecnd.net<br><br>api.vstsusers.visualstudio.com/profiles/* | 443 | Se utiliza para mostrar el nombre del usuario y el avatar en el IDE. <br><br> Se utiliza para asegurarse de que los cambios de configuración pasan de una máquina a otra. |
 | Configuración remota | az700632.vo.msecnd.net | 443 | Se utiliza para desactivar las extensiones que suelen causar problemas en Visual Studio. |
 | Herramientas de Windows | developer.microsoft.com <br><br>dev.windows.com  <br><br>appdev.microsoft.com | https/443 | Se usa en los escenarios de almacén de aplicaciones de Windows. |
-| Detección <br>de esquema JSON <br><br>Definición <br>de esquema JSON<br><br>Compatibilidad de <br>esquema JSON para <br>recursos de Azure | json.schemastore.org <br>schemastoreorg.azurewebsites.net<br><br>json-schema.org<br><br>schema.management.azure.com | http/80<br>https/443<br><br>http/80<br><br>https/443 | Se utiliza para detectar y descargar esquemas JSON que el usuario puede emplear al editar los documentos JSON. <br><br>Se usa para obtener el esquema de validación de metadatos de JSON.<br><br>Sirve para obtener el esquema actual para las plantillas de implementación de Azure Resource Manager. |
+| Definición <br>de esquema JSON <br><br>Compatibilidad de <br>de esquema JSON<br><br>Compatibilidad de <br>esquema JSON para <br>recursos de Azure | json.schemastore.org <br>schemastoreorg.azurewebsites.net<br><br>json-schema.org<br><br>schema.management.azure.com | http/80<br>https/443<br><br>http/80<br><br>https/443 | Se utiliza para detectar y descargar esquemas JSON que el usuario puede emplear al editar los documentos JSON. <br><br>Se usa para obtener el esquema de validación de metadatos de JSON.<br><br>Sirve para obtener el esquema actual para las plantillas de implementación de Azure Resource Manager. |
 | Detección de <br>paquetes NPM | Skimdb.npmjs.com <br><br>Registry.npmjs.org <br><br>Api.npms.io | https/443<br><br>http/80 &<br> https/443<br>https/443 | Es necesario para la búsqueda de paquetes NPM y se utiliza para la instalación del paquete de scripts de cliente en los proyectos web. |
-| Iconos de<br> paquetes Bower<br><br>Búsqueda de <br>paquetes Bower | Bower.io <br><br>bowercache.azurewebsites.net <br>go.microsoft.com <br>Registry.bower.io | http/80<br><br>https/443<br>http/80<br>https/443 | Proporciona el icono de paquete Bower predeterminado.  <br><br>Permite buscar paquetes Bower. |
+| Búsqueda de<br> paquetes Bower<br><br>Búsqueda de <br>paquetes Bower | Bower.io <br><br>bowercache.azurewebsites.net <br>go.microsoft.com <br>Registry.bower.io | http/80<br><br>https/443<br>http/80<br>https/443 | Proporciona el icono de paquete Bower predeterminado.  <br><br>Permite buscar paquetes Bower. |
 | NuGet<br><br>Detección de<br> paquetes Python | api.nuget.org <br>www.nuget.org <br>nuget.org <br>azuresearch-usnc.nuget.org <br>azuresearch-ussc.nuget.org <br>licenses.nuget.org <br>nuget.cdn.azure.cn <br>azuresearch-ea.nuget.org <br>azuresearch-sea.nuget.org <br><br>crl3.digicert.com <br>crl4.digicert.com <br>ocsp.digicert.com <br>cacerts.digicert.com | https/443<br><br>http/80 &<br>https/443<br> | Se usa para comprobar paquetes NuGet firmados.<br><br>Necesario para la búsqueda de versiones y paquetes NuGet. |
 | Información sobre el repositorio de GitHub | api.github.com | https/443 | Necesario para obtener información adicional acerca de los paquetes Bower. |
 | Linter web | Eslint.org<br><br>www.Bing.com <br><br>www.coffeelint.org | http/80 | |
 | Creación de<br>plantillas del explorador<br>de cookiecutter <br><br>Creación de <br>proyectos del explorador<br> de cookiecutter | api.github.com <br>raw.githubusercontent.com <br>go.microsoft.com<br><br>pypi.org <br> pypi.python.org | https/443<br> | Se usa para detectar plantillas en línea de nuestra fuente recomendada y de repositorios GitHub. <br><br>Se utiliza para crear un proyecto de una plantilla de cookiecutter que requiere una única instalación a petición de un paquete Python cookiecutter desde el índice de paquetes Python (PyPI). |
-| Detección de <br>paquetes Python<br><br>Administración <br>de paquetes Python<br><br>Nuevo <br>Python <br> proyecto <br>Python | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | https/443 | Permite buscar paquetes pip.<br><br>Se utiliza para instalar un paquete pip automáticamente si falta. <br><br>Se utiliza para resolver las siguiente plantillas de proyecto de Python en direcciones URL de la plantilla de Cookiecutter:<br> - Proyecto de clasificador<br>- Proyecto de agrupación en clústeres <br> - Proyecto de regresión <br> - PyGame con PyKinect <br> - Proyecto de Pyvot |
+| Administración <br>paquetes Python<br><br>Administración <br>de paquetes Python<br><br>Nuevo <br>Python <br> proyecto <br>Python | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | https/443 | Permite buscar paquetes pip.<br><br>Se utiliza para instalar un paquete pip automáticamente si falta. <br><br>Se utiliza para resolver las siguiente plantillas de proyecto de Python en direcciones URL de la plantilla de Cookiecutter:<br> - Proyecto de clasificador<br>- Proyecto de agrupación en clústeres <br> - Proyecto de regresión <br> - PyGame con PyKinect <br> - Proyecto de Pyvot |
 | Servicio <br>de comprobación <br> de manifiesto <br>para complementos <br>web de Office | verificationservice.osi.office.net | https/443 | Se utiliza para validar los manifiestos para complementos web de Office |
 | Complementos de Office <br>y SharePoint | sharepoint.com<br> microsoft.com/microsoft-365<br> microsoftonline.com <br> outlook.com | https/443 | Se usa para publicar y probar los complementos de Office y SharePoint en SharePoint Online y Microsoft 365. |
 | Host del servicio <br>de pruebas del<br> administrador de flujos de trabajo | | http/12292 | Una regla de firewall que se crea automáticamente para probar los complementos de SharePoint con los flujos de trabajo |

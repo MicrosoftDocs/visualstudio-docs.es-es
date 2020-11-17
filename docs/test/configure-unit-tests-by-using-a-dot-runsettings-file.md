@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 8998a9e761716b28bd2815120e350b98804a6395
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 6361b6b3d85c970d74a624c82d052054ab66e44a
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928676"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400107"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configuración de pruebas unitarias con un archivo *.runsettings*
 
@@ -172,6 +172,7 @@ Cada elemento de configuración es opcional porque tiene su valor predeterminado
     <TargetFrameworkVersion>Framework40</TargetFrameworkVersion>
     <TestAdaptersPaths>%SystemDrive%\Temp\foo;%SystemDrive%\Temp\bar</TestAdaptersPaths>
     <TestSessionTimeout>10000</TestSessionTimeout>
+    <TreatNoTestsAsError>true</TreatNoTestsAsError>
 </RunConfiguration>
 ```
 
@@ -186,7 +187,8 @@ El elemento **RunConfiguration** puede incluir los siguientes elementos:
 |**TreatTestAdapterErrorsAsWarnings**|False|false, true|
 |**TestAdaptersPaths**||Una o varias rutas de acceso al directorio donde se encuentran los TestAdapters|
 |**TestSessionTimeout**||Permite a los usuarios terminar una sesión de prueba cuando esta supera un tiempo de espera especificado. La configuración de un tiempo de espera garantiza que los recursos se utilicen de manera conveniente y que las sesiones de prueba se limiten a un tiempo establecido. Esta opción está disponible en **Visual Studio 2017, versión 15.5** y posteriores.|
-|**DotnetHostPath**||Especifique una ruta de acceso personalizada al host dotnet que se usa para ejecutar testhost. Esto resulta útil al compilar un dotnet propio, por ejemplo, al compilar el repositorio dotnet/runtime. Si se especifica esta opción, se omitirá la búsqueda de testhost.exe y siempre se usará testhost.dll.
+|**DotnetHostPath**||Especifique una ruta de acceso personalizada al host dotnet que se usa para ejecutar testhost. Esto resulta útil al compilar un dotnet propio, por ejemplo, al compilar el repositorio dotnet/runtime. Si se especifica esta opción, se omitirá la búsqueda de testhost.exe y siempre se usará testhost.dll.|
+|**TreatNoTestsAsError**|false| true o false <br>Especifique un valor booleano, que define el código de salida cuando no se detecta ninguna prueba. Si el valor es `true` y no se detecta ninguna prueba, se devuelve un código de salida distinto de cero. De lo contrario, se devuelve cero.|
 
 ## <a name="datacollectors-element-diagnostic-data-adapters"></a>Elemento DataCollectors (adaptadores de datos de diagnóstico)
 
@@ -345,6 +347,10 @@ Cada elemento del archivo es opcional, porque cada valor tiene un valor predeter
     <!-- TestSessionTimeout was introduced in Visual Studio 2017 version 15.5 -->
     <!-- Specify timeout in milliseconds. A valid value should be greater than 0 -->
     <TestSessionTimeout>10000</TestSessionTimeout>
+
+    <!-- true or false -->
+    <!-- Value that specifies the exit code when no tests are discovered -->
+    <TreatNoTestsAsError>true</TreatNoTestsAsError>
   </RunConfiguration>
 
   <!-- Configurations for data collectors -->

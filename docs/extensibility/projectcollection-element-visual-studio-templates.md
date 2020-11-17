@@ -1,5 +1,7 @@
 ---
 title: ProjectCollection (elemento, plantillas de Visual Studio) | Microsoft Docs
+description: Obtenga información sobre el elemento ProjectCollection y cómo especifica la organización y el contenido de las plantillas de varios proyectos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12a22ca28c90ed1df69529ed3004b417b5e04276
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2d9da3dbe92bdde8b0c19495e73cdbf2660ef3b4
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701971"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671238"
 ---
 # <a name="projectcollection-element-visual-studio-templates"></a>ProjectCollection (elemento, plantillas de Visual Studio)
 Especifica la organización y el contenido de las plantillas de varios proyectos.
@@ -55,7 +57,7 @@ Especifica la organización y el contenido de las plantillas de varios proyectos
 |-------------|-----------------|
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Especifica el contenido de la plantilla.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
  Las plantillas de varios proyectos actúan como contenedores de dos o más proyectos. El `ProjectCollection` elemento se usa para especificar los proyectos que se van a incluir en la plantilla. Para obtener más información sobre las plantillas de varios proyectos, vea [Cómo: crear plantillas de varios proyectos](../ide/how-to-create-multi-project-templates.md).
 
 ## <a name="example"></a>Ejemplo

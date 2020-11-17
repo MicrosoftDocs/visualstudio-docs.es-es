@@ -1,5 +1,7 @@
 ---
 title: Procedimiento Firmar manifiestos de implementación y aplicación
+description: Obtenga información sobre los requisitos de firma para la publicación de manifiestos de aplicación e implementación ClickOnce. La firma es opcional en el caso de las aplicaciones basadas en .exe.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
 ms.topic: conceptual
@@ -18,14 +20,14 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e04827dd8d8d393af8bc3448df75a7503c8eec3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a267a64a6b6d59b64ffb70596154d1e54f368410
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769790"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351276"
 ---
-# <a name="how-to-sign-application-and-deployment-manifests"></a>Procedimiento Firmar manifiestos de implementación y aplicación
+# <a name="how-to-sign-application-and-deployment-manifests"></a>Cómo: Firmar aplicaciones y manifiestos de implementación
 
 Si quiere publicar una aplicación mediante la implementación ClickOnce, los manifiestos de aplicación e implementación deben estar firmados con un par de claves pública y privada mediante la tecnología Authenticode. Puede firmar los manifiestos con un certificado del almacén de certificados de Windows o un archivo de clave.
 
@@ -33,7 +35,7 @@ Para obtener más información sobre la implementación ClickOnce, consulte [Seg
 
 Firmar los manifiestos de ClickOnce es opcional para aplicaciones basadas en *.exe*. Para obtener más información, consulte la sección "Generar manifiestos sin firmar" de este documento.
 
-Para obtener información sobre cómo crear archivos de clave, vea [Cómo: Crear un par de claves privada y pública](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).
+Para obtener información sobre la creación de archivos de claves, consulte [Cómo: Crear un par de claves privada y pública](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).
 
 > [!NOTE]
 > Visual Studio solo admite archivos de claves de intercambio de información personal (PFX) que tienen la extensión *.pfx*. En cambio, puede seleccionar otros tipos de certificados desde el almacén de certificados de Windows del usuario actual si hace clic en **Seleccionar del almacén** en la página **Firma** de las propiedades del proyecto.
@@ -61,7 +63,7 @@ Para obtener información sobre cómo crear archivos de clave, vea [Cómo: Crear
 
      Aparece el cuadro de diálogo **Seleccionar archivo**.
 
-3. En el cuadro de diálogo **Seleccionar archivo**, vaya a la ubicación del archivo de claves ( *.pfx*) que quiere usar y después haga clic en **Abrir**.
+3. En el cuadro de diálogo **Seleccionar archivo**, vaya a la ubicación del archivo de claves (*.pfx*) que quiere usar y después haga clic en **Abrir**.
 
     > [!NOTE]
     > Esta opción solo admite archivos que tengan la extensión *.pfx*. Si tiene un archivo de claves o un certificado en otro formato, almacénelo en el almacén de certificados de Windows y seleccione el certificado como se describe en el procedimiento anterior. El propósito del certificado seleccionado debe incluir firma de código.
@@ -96,7 +98,7 @@ De manera predeterminada, ClickOnce genera de forma automática manifiestos firm
 
 2. En la página **Firma**, desactive la casilla **Firmar los manifiestos de ClickOnce**.
 
-3. Restablezca la versión de publicación para que solo esté disponible una versión de la aplicación. De manera predeterminada, Visual Studio incrementa de forma automática el número de revisión de la versión de publicación cada vez que se publica una aplicación. Para obtener más información, vea [Cómo: Establecimiento de la versión de publicación de ClickOnce](../deployment/how-to-set-the-clickonce-publish-version.md).
+3. Restablezca la versión de publicación para que solo esté disponible una versión de la aplicación. De manera predeterminada, Visual Studio incrementa de forma automática el número de revisión de la versión de publicación cada vez que se publica una aplicación. Para obtener más información, consulte [Cómo: Establecer la versión de publicación de ClickOnce](../deployment/how-to-set-the-clickonce-publish-version.md).
 
 4. Publique la aplicación.
 

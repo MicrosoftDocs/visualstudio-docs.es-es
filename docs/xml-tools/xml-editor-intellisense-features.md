@@ -1,5 +1,7 @@
 ---
 title: Características de IntelliSense del Editor XML
+description: Obtenga información sobre las características de IntelliSense del editor XML de Visual Studio y cómo usarlas con documentos XSLT y de lenguaje de definición de esquema XML (XSD).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2b26f214-cc3a-46bf-b260-14eb8e599182
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 609684452190bf7471f90fee75f66dbb2fcbec8e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: dc79d40c2cb363b79c2064bd71fb23dece04e143
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592391"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350249"
 ---
 # <a name="xml-editor-intellisense-features"></a>Características de IntelliSense del editor XML
 
@@ -91,9 +93,9 @@ El Editor XML proporciona resalte de llaves que le permite obtener información 
 
 El Editor XML realiza esta acción en los siguientes elementos:
 
-- Etiquetas de apertura y cierre coincidentes.
+- Etiquetas de inicio y de cierre coincidentes.
 
-- Un par cualquiera de corchetes angulares "\<" o ">".
+- Cualquier par de corchetes angulares "\<" or ">".
 
 - Inicio y fin de comentarios.
 

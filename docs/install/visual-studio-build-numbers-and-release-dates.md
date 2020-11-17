@@ -5,19 +5,19 @@ description: Una lista de las versiones de lanzamiento y los números de compila
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 10/27/2020
+ms.date: 11/10/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: dae89eeca01d593cbf805b0c32a3fc2b55b10c09
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 7fefe17c56a347521f91a7d636d628248b712f4d
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796412"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94492911"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Números de compilación y fechas de lanzamiento de Visual Studio
 
@@ -29,6 +29,11 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de v
 
 | **Versión**| **Canal** | **Fecha de lanzamiento** | **Versión de compilación** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.9.0 | Versión preliminar 1 | 10 de noviembre de 2020 | 16.9.30709.64 |
+| 16.7.8 | Release | 10 de noviembre de 2020 | 16.7.30704.19 |
+| 16.4.15 | Release | 10 de noviembre de 2020 | 16.4.30703.110 |
+| 16.0.20 | Release | 10 de noviembre de 2020 | 16.0.28803.868 |
+| 16.8.0 | Release | 10 de noviembre de 2020 | 16.8.30709.132 |
 | 16.8.0 | Versión preliminar 6 | 27 de octubre de 2020 | 16.8.30626.31 |
 | 16.7.7 | Release | 27 de octubre de 2020 | 16.7.30621.155 |
 | 16.8.0 | Versión preliminar 5 | 20 de octubre de 2020 | 16.8.30615.102 |
@@ -187,6 +192,7 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de l
 
 | **Versión**| **Canal** | **Fecha de lanzamiento** | **Versión de compilación** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.29 | Release | 10 de noviembre de 2020 | 15.9.28307.1300 |
 | 15.9.28 | Release | 13 de octubre de 2020 | 15.9.28307.1274 |
 | 15.9.27 | Release | 8 de septiembre de 2020 | 15.9.28307.1259 |
 | 15.9.26 | Release | 11 de agosto de 2020 | 15.9.28307.1234 |

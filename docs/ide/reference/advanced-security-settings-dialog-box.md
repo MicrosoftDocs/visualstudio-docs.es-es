@@ -1,5 +1,7 @@
 ---
 title: Cuadro de diálogo Configuración de seguridad avanzada
+description: El cuadro de diálogo Configuración de seguridad avanzada permite especificar la configuración de seguridad relacionada con la depuración en zona.
+ms.custom: SEO-VS-2020
 ms.date: 06/27/2018
 ms.technology: vs-ide-deployment
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d34d1b16f36c90f4200a091050d1646fc563d33
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffbf2bb5a8a73ba577489af825969c3bdc23f15e
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85419086"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351510"
 ---
 # <a name="advanced-security-settings-dialog-box"></a>Cuadro de diálogo Configuración de seguridad avanzada
 
@@ -32,12 +34,12 @@ Para acceder a este cuadro de diálogo, seleccione un nodo de proyecto en el **E
 
 **Conceder a la aplicación acceso al sitio de origen**
 
-Si selecciona esta casilla, la aplicación puede tener acceso al sitio web o recurso compartido de servidor en el que está publicada. Esta opción se encuentra activada de forma predeterminada.
+Si selecciona esta casilla, la aplicación puede tener acceso al sitio web o recurso compartido de servidor en el que está publicada. Esta opción está seleccionada de forma predeterminada.
 
 **Depurar esta aplicación como si se hubiera descargado de la siguiente dirección URL:**
 
 Si necesita que la aplicación tenga acceso al sitio web o recurso compartido de servidor correspondiente a la **Dirección URL de instalación** especificada en la página **Publicar**, introduzca esa dirección URL aquí. Esta opción solo está disponible cuando está seleccionada la opción **Conceder a la aplicación acceso al sitio de origen**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Página Seguridad, Diseñador de proyectos](../../ide/reference/security-page-project-designer.md)

@@ -1,5 +1,7 @@
 ---
 title: Rendimiento del XSLT
+description: Obtenga información sobre el generador de perfiles XSLT de Visual Studio, que crea informes de rendimiento XSLT detallados para ayudar a optimizar el rendimiento del código XSLT.
+ms.custom: SEO-VS-2020
 ms.date: 03/05/2019
 ms.topic: conceptual
 ms.assetid: 87387c9a-2e89-4801-ad51-83740cd6ea25
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79d865a426af2c089bfcc6bd1e733b4ecc185077
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 4f4fd10df6a5cd91866633a46e1a512e91da2040
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592287"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351419"
 ---
 # <a name="the-xslt-profiler"></a>El generador de perfiles XSLT
 

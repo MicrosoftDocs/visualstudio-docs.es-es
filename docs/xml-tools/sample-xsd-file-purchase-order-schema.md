@@ -1,5 +1,7 @@
 ---
 title: 'Archivo XSD de ejemplo: esquema de pedido de compra'
+description: Vea el archivo XSD de ejemplo de un esquema de pedido de compra que se usa en varios ejemplos de la documentación del Diseñador de esquemas XSD.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: sample
 ms.assetid: f92b63b5-ec61-43b5-ae1e-63432a7a7e30
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d841b75b58dc977b5141dce0b8c7275e4a3ced8a
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 3f5a9d8d87af3f7d9e8583a1bc21c008d1a8571f
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75592573"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398792"
 ---
 # <a name="sample-xsd-file-purchase-order-schema"></a>Archivo XSD de muestra: esquema de pedido de compra
 

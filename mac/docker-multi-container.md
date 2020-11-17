@@ -6,12 +6,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 07/03/2020
 ms.topic: tutorial
-ms.openlocfilehash: b883979921b3fa1493188a8d0fe75a1c493d5d97
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: f2c5154e2f35c57b46817c36ea669c6a9d0f5797
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584001"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493548"
 ---
 # <a name="create-a-multi-container-app-with-docker-compose"></a>Creación de una aplicación de varios contenedores con Docker Compose
 
@@ -28,7 +28,7 @@ En este tutorial, aprenderá a administrar más de un contenedor y a comunicarse
 1. En **Web y consola > Aplicación** elija la plantilla **Aplicación web**: ![Creación de una nueva aplicación ASP.NET](media/docker-quickstart-1.png)
 1. Seleccione la plataforma de destino. En este ejemplo, usaremos .NET Core 3.1: ![Establecimiento de una plataforma de destino](media/docker-quickstart-2.png)
 1. Escriba los detalles del proyecto, como el nombre del proyecto (_DockerDemoFrontEnd_ en este ejemplo) y el nombre de la solución (_DockerDemo_). El proyecto creado contiene todos los elementos básicos que necesita para crear y ejecutar un sitio web de ASP.NET Core.
-1. En el Panel de solución, haga clic con el botón derecho en el proyecto DockerDemoFrontEnd y seleccione **Add > Add Docker Support** (Agregar > Agregar compatibilidad con Docker): ![Adición de compatibilidad con Docker](media/docker-quickstart-3.png)
+1. En la ventana de la solución, haga clic con el botón derecho en el proyecto DockerDemoFrontEnd y seleccione **Agregar > Agregar compatibilidad con Docker**: ![Adición de compatibilidad con Docker](media/docker-quickstart-3.png)
 
 Visual Studio para Mac agregará automáticamente un nuevo proyecto a la solución denominado **docker-compose** y agregará un archivo **Dockerfile** al proyecto existente.
 
@@ -40,7 +40,7 @@ A continuación, se creará un segundo proyecto que actuará como nuestra API de
 1. En **Web y consola > Aplicación** elija la plantilla **API**.
 1. Seleccione la plataforma de destino. En este ejemplo, usaremos .NET Core 3.1.
 1. Escriba los detalles del proyecto, como el nombre del proyecto (_MyWebAPI_, en este ejemplo).
-1. Una vez creado, vaya al Panel de solución, haga clic con el botón derecho en el proyecto MyWebAPI y seleccione **Agregar > Agregar compatibilidad con Docker**.
+1. Una vez creado, vaya a la ventana de la solución, haga clic con el botón derecho en el proyecto MyWebAPI y seleccione **Agregar > Agregar compatibilidad con Docker**.
 
 El archivo **docker-compose.yml** del proyecto **docker-compose** se actualizará automáticamente para incluir el proyecto de API junto con el proyecto de aplicación Web existente. Cuando se cree y ejecute el proyecto **docker-compose**, cada uno de estos proyectos se implementará en un contenedor Docker independiente.
 

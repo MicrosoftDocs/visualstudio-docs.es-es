@@ -1,16 +1,18 @@
 ---
 title: 'Tutorial: Uso de la jerarquía XSLT'
+description: Aprenda a depurar en una hoja de estilos a la que se hace referencia mediante la herramienta Jerarquía XSLT de Visual Studio con los pasos de este tutorial.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 940185687544b22325d3f75751eb92e950deb685
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 68018c625c5e406e2ba0d7fbfb138b05c53fff9c
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815037"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351328"
 ---
 # <a name="walkthrough-use-xslt-hierarchy"></a>Tutorial: Uso de la jerarquía XSLT
 

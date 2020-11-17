@@ -1,5 +1,7 @@
 ---
 title: CustomDataSignature (elemento, plantillas de Visual Studio) | Microsoft Docs
+description: Obtenga información sobre el elemento CustomDataSignature y cómo especifica la firma de texto para buscar los datos personalizados.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec8bae34da0f007bac65f26c4e442c1d03e56d08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c0b2442e7b254ccaaf9e890b5370f712b5715f18
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739446"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671524"
 ---
 # <a name="customdatasignature-element-visual-studio-templates"></a>CustomDataSignature (elemento, plantillas de Visual Studio)
 Especifica la firma de texto para buscar los datos personalizados.
@@ -51,9 +53,9 @@ Especifica la firma de texto para buscar los datos personalizados.
 
  El texto es una cadena que tiene la firma de texto necesaria para buscar los datos personalizados.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
  `CustomDataSignature` es un elemento opcional.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Crear plantillas para proyectos y elementos](../ide/creating-project-and-item-templates.md)

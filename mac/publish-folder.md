@@ -1,6 +1,7 @@
 ---
 title: Publicar la aplicación en una carpeta
-ms.date: 04/02/2019
+description: Procedimiento para publicar una aplicación web en una carpeta con Visual Studio para Mac.
+ms.date: 11/09/2020
 helpviewer_keywords:
 - deployment, website, console, publish
 ms.assetid: e963fb4b-6d32-4d45-86bb-ef7e4d3028b0
@@ -9,12 +10,12 @@ ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
 ms.topic: how-to
-ms.openlocfilehash: 42d1d76275afd4944791137b97e04dd499e36083
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 640cdf8b9c31bad42f8c5664f3cef44c558e2a3a
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583949"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493418"
 ---
 # <a name="publish-to-a-folder-using-visual-studio-for-mac"></a>Publicar en una carpeta con Visual Studio para Mac
 
@@ -23,13 +24,13 @@ Puede usar la herramienta Publicar para publicar aplicaciones de consola de .NET
 ## <a name="prerequisites"></a>Requisitos previos
 
 - [Visual Studio 2019 para Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019) instalado con .NET Core habilitado.
-- Un proyecto de consola de .NET Core o ASP.NET Core. Si aún no tiene un proyecto, puede [crear uno nuevo](./create-new-projects.md?view=vsmac-2019).
+- Un proyecto de consola de .NET Core o ASP.NET Core. Si aún no tiene un proyecto, puede [crear uno nuevo](./create-new-projects.md).
 
 ## <a name="publish-to-folder"></a>Publicación en carpeta
 
 Con Visual Studio para Mac, puede publicar proyectos de .NET Core en una carpeta mediante la herramienta Publicar. Después de publicar en una carpeta, puede transferir los archivos a otro entorno. Para publicar en una carpeta, siga estos pasos.
 
- 1. En el Panel de solución, haga clic con el botón derecho en el proyecto y elija **Publicar**.
+ 1. En la ventana de la solución, haga clic con el botón derecho en el proyecto y elija **Publicar**.
 
     ![Menú contextual Publicar](media/publish-context-menu.png)
 

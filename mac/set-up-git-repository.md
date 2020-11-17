@@ -1,17 +1,17 @@
 ---
 title: Configuración de un repositorio Git
-description: Empleo de Git y Subversion en Visual Studio para Mac.
+description: Conexión a un repositorio Git mediante Visual Studio para Mac.
 author: therealjohn
 ms.author: johmil
-ms.date: 05/13/2020
+ms.date: 11/09/2020
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
 ms.topic: how-to
-ms.openlocfilehash: bc981530f5493ce1899de1c888e20129c7ae0f8c
-ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
+ms.openlocfilehash: 862f073d3c6d535d612a67f215aee740cea175bd
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88214689"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493132"
 ---
 # <a name="set-up-a-git-repository"></a>Configurar un repositorio Git
 
@@ -45,7 +45,7 @@ Para configurar un repositorio Git, ejecute los siguientes pasos:
 
 Si dispone de un proyecto que _aún no está_ en control de versiones, siga estos pasos para configurarlo en Git:
 
-1. Seleccione el nombre de la solución en el Panel de solución de Visual Studio para Mac.
+1. Seleccione el nombre de la solución en la ventana de la solución de Visual Studio para Mac.
 
 2. En la barra de menús, seleccione **Control de versiones > Publicar en control de versiones** para mostrar el cuadro de diálogo **Clonar repositorio**:
 
@@ -144,7 +144,7 @@ Es probable que tenga que trabajar con un repositorio de GitHub que solo exista 
 
 4. Reemplace todo el texto del campo de entrada de la dirección **URL** en la pestaña **Connect with Url** (Conectar con la dirección URL). Se rellenarán automáticamente la mayoría de los campos de la pestaña, como se muestra en la imagen del paso 2.
 
-5. Escriba el directorio en el que quiere clonar el repositorio y pulse**Clonar**.
+5. Escriba el directorio en el que quiere clonar el repositorio y pulse **Clonar**.
 
 > [!NOTE]
 > Puede que tenga problemas si el repositorio tiene más de 4 GB.
@@ -159,7 +159,7 @@ Si tiene problemas para inicializar el proyecto con un repositorio remoto vacío
 1. Si hay un archivo **gitignore**, elimínelo.
 1. Presione **Comando + Mayús + .** para ocultar los archivos y las carpetas.
 1. Abra la solución en VS para Mac.
-1. En el panel de la solución, seleccione el nodo de esta.
+1. En la ventana de la solución, seleccione el nodo de la solución.
 1. Vaya al menú Control de versiones y elija **Publicar en Control de versiones**.
 1. Siga los pasos del tutorial anterior a partir del paso 6.
 

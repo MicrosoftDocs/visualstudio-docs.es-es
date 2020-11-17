@@ -1,16 +1,16 @@
 ---
 title: Fragmentos de código
 description: Cómo usar fragmentos de código para programar de forma eficaz en Visual Studio para Mac
-author: cobey
-ms.author: cobey
-ms.date: 02/07/2019
+author: jmatthiesen
+ms.author: jomatthi
+ms.date: 11/09/2020
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
-ms.openlocfilehash: 1dacc935549d738ff1b5e84c3ac4420c343155fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a8fdf70b4d966c644719047eca4249e432561ace
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68787696"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493457"
 ---
 # <a name="code-snippets"></a>Fragmentos de código
 
@@ -26,7 +26,7 @@ Hay varias maneras de agregar fragmentos de código, algunas de las cuales se ex
 
   ![Expansión de tabulación en código](media/source-editor-image13.png)
 
-- **Cuadro de herramientas**: use el panel de cuadro de herramientas para mostrar una lista de todos los fragmentos de código. Arrastre cualquier plantilla desde el cuadro de herramientas a la posición correcta del código fuente:
+- **Cuadro de herramientas**: use la ventana Cuadro de herramientas para mostrar una lista de todos los fragmentos de código. Arrastre cualquier plantilla desde el cuadro de herramientas a la posición correcta del código fuente:
 
   [![Fragmentos de código en el cuadro de herramientas](media/source-editor-image14-sml.png)](media/source-editor-image14.png#lightbox)
 
@@ -86,6 +86,6 @@ Hay dos palabras clave reservadas que se puede usar en un fragmento de código:
 
 El fragmento de código `for` de la sección anterior es un ejemplo de estas dos palabras clave reservadas.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Fragmentos de código (Visual Studio en Windows)](/visualstudio/ide/code-snippets)

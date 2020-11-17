@@ -1,5 +1,7 @@
 ---
 title: CustomParameters ((elemento, plantillas de Visual Studio) | Microsoft Docs
+description: Obtenga información sobre el elemento CustomParameters (y cómo agrupa los parámetros personalizados que se van a pasar al Asistente para plantillas cuando el asistente realiza reemplazos de parámetros.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f524996c226f001c68ddc7ac9aa8cb3b99857fc5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c78c8a038df33d9b548229966402d0058f53144
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739411"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671484"
 ---
 # <a name="customparameters-element-visual-studio-templates"></a>CustomParameters ((elemento, plantillas de Visual Studio)
 Agrupa los parámetros personalizados que se van a pasar al Asistente para plantillas cuando el asistente realiza reemplazos de parámetros.
@@ -50,7 +52,7 @@ Agrupa los parámetros personalizados que se van a pasar al Asistente para plant
 |-------------|-----------------|
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Especifica el contenido de la plantilla.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 ## <a name="example"></a>Ejemplo
  En el ejemplo siguiente se muestra cómo usar varios parámetros personalizados en una plantilla. Cuando se crea un proyecto o un elemento a partir de una plantilla con los siguientes parámetros personalizados, todas las instancias de `$color1$` y `$color2$` de los archivos de plantilla se reemplazarán por `Red` y `Blue` , respectivamente.
@@ -62,7 +64,7 @@ Agrupa los parámetros personalizados que se van a pasar al Asistente para plant
 </CustomParameters>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [CustomParameter ((elemento, plantillas de Visual Studio)](../extensibility/customparameter-element-visual-studio-templates.md)
 - [Parámetros de plantilla](../ide/template-parameters.md)
 - [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

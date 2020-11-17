@@ -3,14 +3,14 @@ title: Creación de nuevos proyectos y soluciones
 description: En este artículo se explica cómo crear proyectos y soluciones en Visual Studio para Mac
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 05/23/2019
+ms.date: 11/06/2020
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
-ms.openlocfilehash: fa77993892c79cf29d268aa942b8c77ccb7a2139
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 7ee9b23f9ede12a353f6c6fdc0f578d7f78a772c
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183967"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493320"
 ---
 # <a name="create-a-new-project"></a>Crear un nuevo proyecto
 
@@ -45,7 +45,7 @@ Opcionalmente, en esta fase también puede configurar opciones de control de có
 
 ## <a name="adding-additional-projects-to-a-solution"></a>Incorporación de proyectos adicionales a una solución
 
-Puede agregar proyectos adicionales a una solución si hace clic con el botón derecho en la solución en el Panel de solución y selecciona **Agregar > Agregar nuevo proyecto** o **Agregar > Agregar proyecto existente**.
+Puede agregar proyectos adicionales a una solución si hace clic con el botón derecho en la solución en la **ventana de la solución** y selecciona **Agregar > Agregar nuevo proyecto** o **Agregar > Agregar proyecto existente**.
 
 La incorporación de un nuevo proyecto lleva a través de la creación del proyecto, como se muestra en [Configuración del nuevo proyecto](#configuring-your-new-project).
 

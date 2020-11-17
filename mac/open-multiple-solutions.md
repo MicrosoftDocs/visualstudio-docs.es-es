@@ -3,16 +3,16 @@ title: Procedimiento Abrir varias soluciones
 description: Obtenga información para abrir más de una solución en Visual Studio para Mac y para abrir más de una instancia de la aplicación.
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 04/02/2019
+ms.date: 11/09/2020
 ms.assetid: 592BA4E3-8DEF-4FCD-8BA0-519A4CEEE03E
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: d90a2a92e2902633e5667e71c5692faa8fa161e1
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.openlocfilehash: e54f002141379d93a40df69ea070d5a64eba2f7d
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85950051"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493444"
 ---
 # <a name="open-multiple-solutions-or-instances-of-visual-studio-for-mac"></a>Apertura de varias soluciones o instancias de Visual Studio para Mac
 
@@ -40,7 +40,7 @@ Para abrir una segunda solución junto con la primera solución, siga estos paso
 
     ![Captura de pantalla del cuadro de diálogo Opciones con el cuadro Cerrar de área de trabajo actual desactivado](media/open-multiple-solutions-image1.png)
 
-5. Seleccione **Abrir** para abrir la segunda solución en el Panel de solución.
+5. Seleccione **Abrir** para abrir la segunda solución en la ventana de la solución.
 
 O bien, si recientemente ha abierto la solución, puede usar los pasos siguientes:
 
@@ -48,7 +48,7 @@ O bien, si recientemente ha abierto la solución, puede usar los pasos siguiente
 
     ![Captura de pantalla del menú Soluciones recientes](media/open-multiple-solutions-image2.png)
 
-1. Mantenga presionada la tecla **Ctrl** y seleccione la solución. Esta combinación abre la segunda solución en el Panel de solución.
+1. Mantenga presionada la tecla **Ctrl** y seleccione la solución. Esta combinación abre la segunda solución en la ventana de la solución.
 
 ## <a name="related-video"></a>Vídeo relacionado
 

@@ -1,5 +1,7 @@
 ---
 title: Procedimiento Crear fragmentos XML
+description: Aprenda a usar el editor XML de Visual Studio para crear fragmentos de código XML que permitan compilar archivos XML más rápidamente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: d8556dd7-1382-4af7-ba80-3e873c9416be
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b86962221dcdeff59b1152baf7b7cddcc55293e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d935f479e3133db8fb5340359d6a354058a3020a
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815401"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400035"
 ---
 # <a name="how-to-create-xml-snippets"></a>Procedimiento Creación de fragmentos XML
 
@@ -37,7 +39,7 @@ Para crear un nuevo fragmento de código XML, cree un nuevo archivo XML y utilic
 
      Aparece el cuadro de diálogo **Guardar archivo como**.
 
-7. Especifique el nombre del nuevo fragmento de código y seleccione **Archivos de fragmento de código**en la ventana desplegable **Guardar como tipo**.
+7. Especifique el nombre del nuevo fragmento de código y seleccione **Archivos de fragmento de código** en la ventana desplegable **Guardar como tipo**.
 
 8. Utilice la lista desplegable **Guardar en** para cambiar la ubicación del archivo a la carpeta *Mis documentos\Visual Studio 2005\Code Snippets\XML\My XML Snippets* y luego presione **Guardar**.
 
@@ -117,6 +119,6 @@ Luego, la variable $prefix$ puede utilizarse en cualquier parte del fragmento XM
 
 ## <a name="see-also"></a>Vea también
 
-- [Fragmentos de contenido XML](../xml-tools/xml-snippets.md)
+- [Fragmentos XML](../xml-tools/xml-snippets.md)
 - [Cómo: Uso de fragmentos de código XML](../xml-tools/how-to-use-xml-snippets.md)
 - [Cómo: Generación de un fragmento de código XML a partir de un esquema XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)

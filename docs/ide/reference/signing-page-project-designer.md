@@ -1,5 +1,7 @@
 ---
 title: Página Firma, Diseñador de proyectos
+description: Use la página Firma del Diseñador de proyectos para firmar los manifiestos de aplicación e implementación y también para firmar el ensamblado.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
 ms.topic: reference
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fee2244792d73924793ae82def1f533b909403c5
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.openlocfilehash: 6e76be0482353ffe4740956ab16f24d6ce82f4da
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85418865"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348520"
 ---
 # <a name="signing-page-project-designer"></a>Página Firma, Diseñador de proyectos
 
@@ -63,7 +65,7 @@ Botón **Crear certificado de prueba**
 
 Permite crear un certificado para pruebas. El certificado de prueba se usa para firmar los manifiestos de aplicación e implementación de ClickOnce.
 
-Haga clic en **Crear certificado de prueba** para abrir el cuadro de diálogo **Crear certificado de prueba**, donde puede escribir una contraseña para el archivo de clave con nombre seguro del certificado de prueba. El archivo se denomina *nombreDeProyecto*_TemporaryKey.pfx. Si hace clic en **Aceptar** sin escribir una contraseña, el archivo .pfx no se cifra con contraseña.
+Haga clic en **Crear certificado de prueba** para abrir el cuadro de diálogo **Crear certificado de prueba**, donde puede escribir una contraseña para el archivo de clave con nombre seguro del certificado de prueba. El archivo se denomina *nombreDeProyecto* _TemporaryKey.pfx. Si hace clic en **Aceptar** sin escribir una contraseña, el archivo .pfx no se cifra con contraseña.
 
 Cuadro **Dirección URL del servidor de marca de tiempo**
 

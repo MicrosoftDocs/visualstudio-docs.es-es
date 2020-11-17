@@ -15,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 9f3fd94f8c294dce81bc69011e7d6f5fdd505325
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 0b51a41a2b2df5ac685caebbf08606ae86b4230a
+ms.sourcegitcommit: e132a870ec198fdcec289227f1a0c1c48fef070c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84182643"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93344532"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Tutorial: Depuración de C# y C++ en la misma sesión de depuración
 
@@ -44,7 +44,7 @@ Debe tener instalado Visual Studio con las cargas de trabajo siguientes:
 - **Desarrollo para el escritorio con C++**
 - **Desarrollo de escritorio de .NET** o **Desarrollo multiplataforma de .NET Core**, en función del tipo de aplicación que quiera crear.
 
-Si no tiene Visual Studio, vaya a la página de  [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/)  para instalarlo de forma gratuita.
+Si no tiene Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/) para instalarlo de forma gratuita.
 
 Si tiene Visual Studio instalado, pero no las cargas de trabajo que necesita, seleccione **Abrir el instalador de Visual Studio** en el panel izquierdo del cuadro de diálogo **Nuevo proyecto** de Visual Studio. En el Instalador de Visual Studio, seleccione las cargas de trabajo necesarias y luego **Modificar**.
 
@@ -177,41 +177,11 @@ Si tiene Visual Studio instalado, pero no las cargas de trabajo que necesita, se
 
 ## <a name="configure-mixed-mode-debugging"></a>Configurar la depuración en modo mixto
 
-### <a name="to-configure-mixed-mode-debugging-for-a-net-framework-app"></a>Para configurar la depuración en modo mixto para una aplicación .NET Framework
-
 1. En el **Explorador de soluciones**, seleccione el nodo del proyecto **Mixed_Mode_Calling_App** y el icono **Propiedades** o haga clic con el botón derecho en el nodo del proyecto y seleccione **Propiedades**.
 
 1. Seleccione **Depurar** en el panel izquierdo, active la casilla **Habilitar depuración de código nativo** y cierre la página de propiedades para guardar los cambios.
 
     ![Habilitación de la depuración en modo mixto](../debugger/media/mixed-mode-enable-native-code-debugging.png)
-
-### <a name="to-configure-mixed-mode-debugging-for-a-net-core-app"></a>Para configurar la depuración en modo mixto para una aplicación .NET Core
-
-En la mayoría de las versiones de Visual Studio a partir de Visual Studio 2017, debe usar el archivo *launchSettings.json* en lugar de las propiedades del proyecto para habilitar la depuración en modo mixto para el código nativo de una aplicación .NET Core. Para realizar un seguimiento de las actualizaciones de la interfaz de usuario de esta característica, vea este [problema de GitHub](https://github.com/dotnet/project-system/issues/1125).
-
-1. En el **Explorador de soluciones**, expanda **Propiedades** y abra el archivo *launchSettings.json*.
-
-   >[!NOTE]
-   >De forma predeterminada, *launchSettings.json* está en *C:\Users\username\source\repos\Mixed_Mode_Calling_App\Properties*. Si *launchSettings.json* no existe, seleccione el proyecto **Mixed_Mode_Calling_App** en el **Explorador de soluciones** y luego seleccione el icono **Propiedades** o haga clic con el botón derecho en el proyecto y seleccione **Propiedades**. Realice un cambio temporal en la pestaña **Depurar** y compile el proyecto. Esto crea un archivo *launchSettings.json*. Revierta el cambio realizado en la pestaña **Depurar**.
-
-1. En el archivo *lauchsettings.json*, agregue la siguiente línea:
-
-    ```csharp
-    "nativeDebugging": true
-    ```
-
-    El código completo tiene un aspecto similar al ejemplo siguiente:
-
-    ```csharp
-    {
-      "profiles": {
-        "Mixed_Mode_Calling_App": {
-          "commandName": "Project",
-          "nativeDebugging": true
-        }
-      }
-    }
-    ```
 
 ## <a name="set-a-breakpoint-and-start-debugging"></a>Establecer un punto de interrupción e iniciar la depuración
 

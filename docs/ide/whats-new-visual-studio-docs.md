@@ -1,8 +1,8 @@
 ---
-title: 'Documentación de Visual Studio: Novedades de septiembre de 2020 '
+title: 'Documentación de Visual Studio: Novedades de octubre de 2020 '
 titleSuffix: ''
-description: Novedades de la documentación de Visual Studio de septiembre de 2020.
-ms.date: 09/30/2020
+description: Novedades de la documentación de Visual Studio de octubre de 2020.
+ms.date: 11/04/2020
 helpviewer_keywords:
 - Visual Studio, what's new, docs
 - what's new [Visual Studio]
@@ -15,90 +15,114 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 62449bd5571ff72cdf5a1c855417611f45f5970f
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: bbc723661b0556acd6c8e020709e0055a398f22d
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659321"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414495"
 ---
-# <a name="visual-studio-docs-whats-new-for-september-2020"></a>Documentación de Visual Studio: Novedades de septiembre de 2020
+# <a name="visual-studio-docs-whats-new-for-october-2020"></a>Documentación de Visual Studio: Novedades de octubre de 2020
 
-Le damos la bienvenida a las novedades de la documentación de Visual Studio de septiembre de 2020. En este artículo se enumeran algunos de los cambios más importantes de documentación que se han producido durante este período. Para obtener información sobre las novedades de los meses anteriores, vea el tema del [historial de novedades](whats-new-visual-studio-docs-history.md).
+Le damos la bienvenida a las novedades de la documentación de Visual Studio de octubre de 2020. En este artículo se enumeran algunos de los cambios más importantes de documentación que se han producido durante este período. Para obtener información sobre las novedades de los meses anteriores, vea el artículo del [historial de novedades](whats-new-visual-studio-docs-history.md).
 
 ## <a name="code-quality"></a>Calidad del código
 
-**Artículos nuevos**
-
-- [CA1416: Validación de la compatibilidad de la plataforma](/dotnet/fundamentals/code-analysis/quality-rules/ca1416) - Documentación de la compatibilidad de la plataforma CA1416
-- [CA1834: Uso de StringBuilder.Append(char) para cadenas de un solo carácter](/dotnet/fundamentals/code-analysis/quality-rules/ca1834) - Documentación para CA1834
-
-**Updated**
-
-- [Información general del análisis de código fuente](../code-quality/roslyn-analyzers-overview.md): actualizaciones de análisis de código para refactorizar .NET
-- [Configuración de la calidad del análisis de código](../code-quality/use-roslyn-analyzers.md): actualizaciones de análisis de código para refactorizar .NET
+**Artículos actualizados**
+- [Analizadores de código](../code-quality/index.yml): refactorización de CA para .NET 5
 
 ## <a name="containers"></a>Contenedores
 
+**Artículos actualizados**
+
+- [Inicio rápido: Uso de Docker con una aplicación de página única de React en Visual Studio](../containers/container-tools-react.md)
+  - Herramientas de contenedores: eliminación de las referencias al repositorio de imágenes anterior
+  - Tutorial de actualización de contenedores de reacción para .NET 3.1 y VS 16.7
+- [Funcionamiento de Bridge to Kubernetes](../containers/overview-bridge-to-kubernetes.md) - Bridge to Kubernetes: adición de limitaciones
+- [Depurar aplicaciones en un contenedor de Docker local](../containers/edit-and-refresh.md): Docker Toolbox
+
+## <a name="debugger"></a>instantáneas
+
 **Artículos nuevos**
 
-- [Uso de Bridge to Kubernetes](../containers/bridge-to-kubernetes.md): proceso local con el cambio de imagen de Kubernetes a Bridge to Kubernetes
-- [Funcionamiento de Bridge to Kubernetes](../containers/overview-bridge-to-kubernetes.md): proceso local con el cambio de imagen de Kubernetes a Bridge to Kubernetes
-
-## <a name="deployment"></a>Implementación
+- [Compatibilidad de DirectX 12 con Visual Studio](../debugger/graphics/visual-studio-graphics-diagnostics-directx-12.md): Vsdg dx12
 
 **Artículos actualizados**
 
-- [Implementación de la aplicación en una carpeta, IIS, Azure u otro destino](../deployment/deploying-applications-services-and-components-resources.md): actualizaciones de implementación
-- [Implementación de una aplicación en una carpeta con Visual Studio](../deployment/quickstart-deploy-to-local-folder.md): actualizaciones de implementación
+- [Depuración de aplicaciones de ASP.NET o ASP.NET Core en Visual Studio](../debugger/how-to-enable-debugging-for-aspnet-applications.md): correcciones de contenido del depurador para problemas de GitHub
+- [Uso de puntos de interrupción en el depurador de Visual Studio](../debugger/using-breakpoints.md): correcciones de contenido del depurador para problemas de GitHub
+- [Depuración de servicios de Azure en Visual Studio](../debugger/debug-azure-apps.md): actualizaciones de SEO y de vínculos para Snapshot Debugger
+- [Depuración de aplicaciones Azure de ASP.NET activas con Snapshot Debugger](../debugger/debug-live-azure-applications.md): actualizaciones de SEO y de vínculos para Snapshot Debugger
+- [Depuración remota](../debugger/remote-debugging.md): actualizaciones de SEO y de vínculos para Snapshot Debugger
+- [Información general de Diagnóstico de gráficos de Visual Studio](../debugger/graphics/overview-of-visual-studio-graphics-diagnostics.md): Vsdg dx12
+- [Diagnóstico de gráficos de Visual Studio](../debugger/graphics/visual-studio-graphics-diagnostics.md): Vsdg dx12
+
+## <a name="get-started"></a>Primeros pasos
+
+**Artículos actualizados**
+
+- [Tutorial: Extensión de una aplicación de consola C# simple](../get-started/csharp/tutorial-console-part-2.md): tutorial de adiciones de depuración para C# extendido
 
 ## <a name="ide"></a>IDE
 
 **Artículos nuevos**
 
-- [Nueva experiencia de Git en Visual Studio (versión preliminar)](./git-with-visual-studio.md): adición de contenido de la nueva experiencia de Git (versión preliminar)
-- [Convenciones de formato de EditorConfig en C++](./cpp-editorconfig-properties.md): nuevo artículo
-- [¿Qué es GitHub Codespaces? (versión preliminar)](./codespaces/codespaces-overview.md): adición de contenido de Codespaces (versión preliminar)
-- [Personalización de una instancia de Codespaces (versión preliminar)](./codespaces/customize-codespaces.md): adición de contenido de Codespaces (versión preliminar)
-- [Características admitidas de Visual Studio (versión preliminar)](./codespaces/supported-features-codespaces.md): adición de contenido Codespaces (versión preliminar)
-- [Personalización de Visual Studio con una instancia de Codespaces (versión preliminar)](./codespaces/use-visual-studio-with-codespaces.md): adición de contenido de Codespaces (versión preliminar)
-
-**Artículos actualizados**
-
-- [Configuración de la convención de codificación de .NET para EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options): EditorConfig actualizado
-- [Convenciones de lenguaje](/dotnet/fundamentals/code-analysis/style-rules/language-rules): ejemplos que faltan
+- [Uso de la búsqueda de Visual Studio](./visual-studio-search.md): documento de Búsqueda de VS
 
 ## <a name="install"></a>Instalar
 
-**Artículos nuevos**
+**Artículos actualizados**
 
-- [Visual Studio en dispositivos con tecnología ARM](../install/visual-studio-on-arm-devices.md): adición de documentos para VS en ARM
+- [Números de compilación y fechas de lanzamiento de Visual Studio](../install/visual-studio-build-numbers-and-release-dates.md)
+  - agregar información de 16.7.7 y 16.8 versión preliminar 6
+  - agregar información de 16.8 versión preliminar 5
+
+## <a name="msbuild"></a>MSBuild
 
 **Artículos actualizados**
 
-- [Solución de problemas de errores relacionados con la red al instalar o usar Visual Studio](../install/troubleshooting-network-related-errors-in-visual-studio.md): adición de una solución alternativa para bloqueos del proxy de autenticación de comentarios
+- [Tutorial: Uso de MSBuild](../msbuild/walkthrough-using-msbuild.md) - Tutorial de MSBuild: agregar pasos de instalación independientes
 
 ## <a name="profiling"></a>Generación de perfiles
 
 **Artículos actualizados**
 
-- [Medición del uso de memoria en Visual Studio](../profiling/memory-usage.md): actualizaciones de la guía de características de generación de perfiles
-- [PerfTips](../profiling/perftips.md): actualizaciones de la guía de características de generación de perfiles
-- [Un primer vistazo a las herramientas de generación de perfiles](../profiling/profiling-feature-tour.md): actualizaciones de la guía de características de generación de perfiles
+- [Analizar el uso de memoria](../profiling/analyze-memory-usage.md)
+  - Actualizaciones de uso de memoria para la generación de perfiles: vínculos y aclaraciones
+  - Actualizaciones de la herramienta de uso de memoria
+- [Análisis del uso de memoria sin depurar en el Generador de perfiles de rendimiento](../profiling/memory-usage-without-debugging2.md)
+  - Actualizaciones de uso de memoria para la generación de perfiles: vínculos y aclaraciones
+  - Actualizaciones de la herramienta de uso de memoria
+- [Primer vistazo a la generación de perfiles](../profiling/profiling-feature-tour.md)
+  - Actualizaciones de uso de memoria para la generación de perfiles: vínculos y aclaraciones
+  - Actualizaciones de la herramienta de uso de memoria
 - [Ejecución de herramientas de generación de perfiles con o sin el depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md)
-  - Actualizaciones de la guía de características de generación de perfiles
-  - Mejoras en el rendimiento del contenido
+  - Actualizaciones de uso de memoria para la generación de perfiles: vínculos y aclaraciones
+  - Actualizaciones de la herramienta de uso de memoria
+- [Análisis del uso de CPU sin depurar en el Generador de perfiles de rendimiento](../profiling/cpu-usage.md): actualizaciones de la herramienta de uso de memoria
+
+## <a name="windows"></a>Windows
+
+**Artículos actualizados**
+
+- [Documentación de Visual Studio | Microsoft Docs](../windows/index.yml): actualizaciones del centro de Windows
+
+## <a name="xaml-tools"></a>Herramientas XAML
+
+**Artículos nuevos**
+
+- [Uso de datos de tiempo de diseño con el Diseñador XAML en Visual Studio](../xaml-tools/xaml-designtime-data.md)
+  - Se ha agregado la sección de extensibilidad a los documentos en tiempo de diseño de XAML
+  - Nuevo artículo de tiempo de diseño de XAML
 
 ## <a name="community-contributors"></a>Colaboradores de la comunidad
 
 Las siguientes personas han contribuido a la documentación de Visual Studio durante este período. Gracias. Para información sobre cómo contribuir a la documentación de Visual Studio, siga las instrucciones que se indican en la [Guía para colaboradores](/contribute/).
 
-- [hyoshioka0128](https://github.com/hyoshioka0128): Hiroshi Yoshioka (3)
-- [gmsantos](https://github.com/gmsantos): Gabriel Machado (1)
-- [ite-klass](https://github.com/ite-klass): Jan Klass (1)
-- [johnallers](https://github.com/johnallers): John Allers (1)
-- [mrlacey](https://github.com/mrlacey): Matt Lacey (1)
-- [remona-minett](https://github.com/remona-minett): Rem (1)
-- [sguitardude](https://github.com/sguitardude) (1)
-- [sjrct](https://github.com/sjrct): Chris Harding (1)
-- [Youssef1313](https://github.com/Youssef1313): Youssef Victor (1)
+- [bmarshalsea](https://github.com/bmarshalsea) (1)
+- [DavidJohnWilliams](https://github.com/DavidJohnWilliams) - David John Williams (1)
+- [JesseTG](https://github.com/JesseTG) - Jesse Talavera-Greenberg (1)
+- [matkoch](https://github.com/matkoch) - Matthias Koch (1)
+- [philipwolfe](https://github.com/philipwolfe) - Philip Wolfe (1)
+- [podsvirov](https://github.com/podsvirov) - Konstantin Podsvirov (1)
+- [drryder](https://github.com/drryder) (1)
