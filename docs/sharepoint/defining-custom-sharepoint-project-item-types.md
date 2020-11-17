@@ -1,5 +1,7 @@
 ---
 title: Definir tipos de elementos de proyecto personalizados de SharePoint | Microsoft Docs
+description: Defina un tipo de elemento de proyecto de SharePoint personalizado cuando desee crear un nuevo tipo de elemento de proyecto de SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e5f32abba4c4cbdeab59ed66e38019d913e704e6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc2e3670dd734b368795f270fa6c1d63c8c079e8
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62580789"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672839"
 ---
 # <a name="define-custom-sharepoint-project-item-types"></a>Definir tipos de elementos de proyecto personalizados de SharePoint
   Defina un nuevo tipo de elemento de proyecto de SharePoint si desea crear un nuevo tipo de elemento de proyecto de SharePoint. Por ejemplo, Visual Studio no incluye elementos de proyecto de SharePoint para agregar campos o acciones personalizadas a un sitio de SharePoint. Puede definir sus propios tipos de elementos de proyecto de SharePoint para crear campos, acciones personalizadas u otros tipos de componentes de SharePoint.
@@ -49,4 +51,4 @@ ms.locfileid: "62580789"
 - [Tutorial: crear un elemento de proyecto de columna de sitio con una plantilla de proyecto, parte 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)
 - [Tutorial: crear un elemento de proyecto de acción personalizado con una plantilla de elemento, parte 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)
 - [Tutorial: crear un elemento de proyecto de columna de sitio con una plantilla de proyecto, parte 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)
-- [Implementar extensiones para las herramientas de SharePoint en Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)
+- [Implementación de extensiones para las herramientas de SharePoint en Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)

@@ -1,5 +1,7 @@
 ---
 title: Elemento Featureproperty (| Microsoft Docs
+description: Vea la información de referencia sobre el elemento Featureproperty (, que es un elemento del esquema del elemento de proyecto de SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 61eeea33c6941624ed18a00db482590590a44a8f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e6010ac45d0b760325c73c4bd754fbb0b422a77
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546528"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672761"
 ---
 # <a name="featureproperty-element"></a>FeatureProperty (elemento)
   Representa una propiedad personalizada que se incluye con una característica cuando se implementa en SharePoint. Una vez implementada una característica, puede tener acceso a la propiedad en el código.
@@ -36,7 +38,7 @@ ms.locfileid: "85546528"
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|**Clave**|Atributo **xs: String** requerido.<br /><br /> La clave que se usa para almacenar y recuperar el valor de propiedad. Cada propiedad debe tener una clave que sea única dentro de la característica.|
+|**Key**|Atributo **xs: String** requerido.<br /><br /> La clave que se usa para almacenar y recuperar el valor de propiedad. Cada propiedad debe tener una clave que sea única dentro de la característica.|
 |**Valor**|Atributo **xs: String** requerido.<br /><br /> Valor de propiedad.|
 
 ### <a name="child-elements"></a>Elementos secundarios
@@ -48,7 +50,7 @@ ms.locfileid: "85546528"
 |-------------|-----------------|
 |[Featureproperties (](../sharepoint/featureproperties-element.md)|Representa una colección de valores de propiedad que se incluyen con una característica cuando se implementa en SharePoint.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
  Para obtener más información sobre las propiedades de las características, vea [proporcionar información de paquete e implementación en los elementos de proyecto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).
 
 ## <a name="element-information"></a>Información de elemento
@@ -62,4 +64,4 @@ ms.locfileid: "85546528"
 
 ## <a name="see-also"></a>Consulte también
 - [Referencia de esquemas de elementos de proyecto de SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)
-- [Proporcionar información de empaquetado e implementación en los elementos de proyecto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
+- [Inclusión de información de empaquetado e implementación en los elementos del proyecto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)

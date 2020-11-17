@@ -1,5 +1,7 @@
 ---
 title: Hidden (elemento, plantillas de Visual Studio) | Microsoft Docs
+description: Obtenga información sobre el elemento Hidden y cómo especifica si la plantilla aparece en los cuadros de diálogo nuevo proyecto o agregar nuevo elemento.
+ms.custom: SEO-VS-2020
 ms.date: 04/17/2019
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9943cefe2b624cede19c05eddd88f155f4aa4c5b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 04cb966f21bbb501545f1a203297d06f8e852793
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711107"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672706"
 ---
 # <a name="hidden-element-visual-studio-templates"></a>Hidden (elemento, plantillas de Visual Studio)
 
@@ -61,7 +63,7 @@ Se requiere un valor de texto.
 
 El texto debe ser `true` o `false` , lo que indica si la plantilla aparecerá o no en los cuadros de diálogo **nuevo proyecto** o **Agregar nuevo elemento** .
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 `Hidden` es un elemento opcional.
 
@@ -96,7 +98,7 @@ En el ejemplo siguiente se muestran los metadatos de una plantilla de C#.
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Referencia de esquema de plantilla](../extensibility/visual-studio-template-schema-reference.md)
+- [Referencia de esquema de plantillas](../extensibility/visual-studio-template-schema-reference.md)
 - [Creación de plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)

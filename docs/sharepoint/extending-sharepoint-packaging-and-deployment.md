@@ -1,5 +1,7 @@
 ---
 title: Extender el empaquetado y la implementación de SharePoint | Microsoft Docs
+description: Extender el empaquetado y la implementación de SharePoint. Cree pasos y configuraciones de implementación. Controlar los conflictos de implementación. Personalizar reglas de validación.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4bb98e2b1c83ff06570a77dc84ce6a7bf690f81d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9f0f9eb6c863a961a527fcb6fb330a2a4f88669e
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62967472"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672592"
 ---
 # <a name="extend-sharepoint-packaging-and-deployment"></a>Extender el empaquetado e implementación de SharePoint
   El proceso de empaquetado e implementación de proyectos de SharePoint se puede ampliar.
@@ -50,10 +52,10 @@ ms.locfileid: "62967472"
  En algunos casos, pueden producirse conflictos de implementación. Hay varias formas de resolver estos conflictos. Para obtener más información, vea [solucionar problemas de empaquetado e implementación de SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).
 
 ## <a name="customize-validation-rules"></a>Personalizar reglas de validación
- Antes de implementar un paquete de solución (.wsp), puede crear reglas personalizadas de validación de características y paquetes para comprobar la validez de la característica o el paquete. Así, por ejemplo, puede mostrar información, advertencias o errores a los desarrolladores para ayudarles a solucionar problemas de validación. Para obtener más información, vea [Cómo: crear reglas personalizadas de validación de características y paquetes para soluciones de SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).
+ Antes de implementar un paquete de solución (.wsp), puede crear reglas personalizadas de validación de características y paquetes para comprobar la validez de la característica o el paquete. Así, por ejemplo, puede mostrar información, advertencias o errores a los desarrolladores para ayudarles a solucionar problemas de validación. Para obtener más información, vea [Cómo: para crear reglas personalizadas de validación de características y paquetes para soluciones de SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).
 
 ## <a name="see-also"></a>Consulte también
 - [Cómo: ejecutar código cuando se ejecutan los pasos de implementación](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)
 - [Tutorial: crear un paso de implementación personalizado para proyectos de SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)
 - [Cómo: crear reglas personalizadas de validación de características y paquetes para soluciones de SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)
-- [Extender el sistema de proyectos de SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)
+- [Extensión del sistema de proyectos de SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)

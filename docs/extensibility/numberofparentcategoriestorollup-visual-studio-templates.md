@@ -1,5 +1,7 @@
 ---
 title: Elemento NumberOfParentCategoriesToRollUp (plantillas)
+description: Obtenga información sobre el elemento NumberOfParentCategoriesToRollUp y cómo especifica el número de categorías primarias que mostrarán la plantilla en el cuadro de diálogo nuevo proyecto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b903b9d0bdab2c17dd2e489de01badad82c15473
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 58c702a70392f4a0330ea51b563570362f51df35
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702370"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672416"
 ---
 # <a name="numberofparentcategoriestorollup-element-visual-studio-templates"></a>NumberOfParentCategoriesToRollUp (elemento, plantillas de Visual Studio)
 Especifica el número de categorías primarias que mostrarán la plantilla en el cuadro de diálogo **nuevo proyecto** .
@@ -55,7 +57,7 @@ Especifica el número de categorías primarias que mostrarán la plantilla en el
 
  Este valor especifica el número de categorías primarias que mostrarán la plantilla en el cuadro de diálogo **nuevo proyecto** .
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
  `NumberOfParentCategoriesToRollUp` es un elemento opcional.
 
 ## <a name="example"></a>Ejemplo

@@ -1,5 +1,7 @@
 ---
 title: Icon (elemento, plantillas de Visual Studio) | Microsoft Docs
+description: Obtenga información sobre el elemento Icon y cómo especifica la ruta de acceso y el nombre del archivo de imagen que sirve como icono.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff725e2db0d74e571b8c41d8a8aa80228938fbff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 059105b9d188c0e7a81252172aa2d1bf7002420c
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710528"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672709"
 ---
 # <a name="icon-element-visual-studio-templates"></a>Icon (elemento, plantillas de Visual Studio)
 Especifica la ruta de acceso y el nombre del archivo de imagen que sirve como icono, que aparece en el cuadro de diálogo **nuevo proyecto** o **Agregar nuevo elemento** de la plantilla.
@@ -62,7 +64,7 @@ Especifica la ruta de acceso y el nombre del archivo de imagen que sirve como ic
 
  El texto proporciona la ruta de acceso y el nombre de archivo del icono de la plantilla que aparecerá en el cuadro de diálogo **nuevo proyecto** .
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
  `Icon` es un elemento secundario obligatorio de `TemplateData`.
 
 ## <a name="example"></a>Ejemplo

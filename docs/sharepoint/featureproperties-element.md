@@ -1,5 +1,7 @@
 ---
 title: Elemento Featureproperties (| Microsoft Docs
+description: Vea la información de referencia sobre el elemento Featureproperties (, que es un elemento del esquema del elemento de proyecto de SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6860a91067daa6da1d4223ae5060385087ad3433
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9ee2bddec02263a889fb1f69088a8a50b3d8b57d
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62967336"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672605"
 ---
 # <a name="featureproperties-element"></a>FeatureProperties (elemento)
   Colección de valores de propiedad que se incluyen con una característica cuando se implementa en SharePoint. Una vez implementada una característica, puede tener acceso a los valores de propiedad en el código.
@@ -55,11 +57,11 @@ ms.locfileid: "62967336"
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|**Espacio de nombres**|http: \/ \/ schemas.Microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**Namespace**|http: \/ \/ schemas.Microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
 |**Nombre del esquema**|Esquema de elemento de proyecto de SharePoint|
 |**Archivo de validación**|ProjectItemModelSchema. xsd|
 |**Puede estar vacío**|No|
 
 ## <a name="see-also"></a>Consulte también
 - [Referencia de esquemas de elementos de proyecto de SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)
-- [Proporcionar información de empaquetado e implementación en los elementos de proyecto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
+- [Inclusión de información de empaquetado e implementación en los elementos del proyecto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)

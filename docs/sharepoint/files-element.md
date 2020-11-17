@@ -1,5 +1,7 @@
 ---
 title: Elemento files | Microsoft Docs
+description: Vea la información de referencia sobre el elemento files, que es un elemento del esquema del elemento de proyecto de SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,17 +14,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 42e919bbe25047da14940203ac86793430aeadde
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03473f40bb78c866f3d93dea11a20b8747afad7b
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546515"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672813"
 ---
 # <a name="files-element"></a>Files (elemento)
   Especifica los archivos que se van a implementar con el elemento de proyecto de SharePoint, como los archivos de elemento de característica y la salida de proyectos dependientes que no son de SharePoint.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```xml
 <Files>

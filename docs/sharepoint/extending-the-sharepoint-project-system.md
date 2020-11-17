@@ -1,5 +1,7 @@
 ---
 title: Extender el sistema de proyectos de SharePoint | Microsoft Docs
+description: Extienda el sistema de proyectos de SharePoint. Obtenga información acerca de cómo extender el sistema de proyectos de SharePoint. Comprender las tareas comunes de desarrollo.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7dce10c2bc44eb4fde6a6e38417d136ea5e9ba41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c017217f66e38eed6248b90efaeabce0efaa9c70
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62557029"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672553"
 ---
-# <a name="extend-the-sharepoint-project-system"></a>Extender el sistema de proyectos de SharePoint
+# <a name="extend-the-sharepoint-project-system"></a>Extensión del sistema de proyectos de SharePoint
   Puede crear soluciones de SharePoint mediante un conjunto de plantillas de proyecto y plantillas de elemento en Visual Studio. Estas plantillas cumplen los requisitos de muchos escenarios de desarrollo, pero es posible que Descubra algunos casos en los que no proporcionan la funcionalidad que necesita. En estos casos, puede extender el sistema de proyectos de SharePoint.
 
 ## <a name="overview-of-the-sharepoint-project-system"></a>Información general sobre el sistema de proyectos de SharePoint
@@ -55,5 +57,5 @@ ms.locfileid: "62557029"
 - [Extender el empaquetado e implementación de SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md)
 - [Guardar datos en extensiones del sistema de proyectos de SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)
 - [Convertir entre tipos de sistema de proyectos de SharePoint y otros tipos de proyectos de Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)
-- [Extender las herramientas de SharePoint en Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
-- [Programar conceptos y características para extensiones de SharePoint](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)
+- [Extensión de las herramientas de SharePoint en Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
+- [Conceptos y características de programación para las extensiones de herramientas de SharePoint](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)

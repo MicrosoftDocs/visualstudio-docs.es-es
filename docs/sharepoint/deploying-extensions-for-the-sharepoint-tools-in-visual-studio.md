@@ -1,5 +1,7 @@
 ---
 title: Implementar extensiones para las herramientas de SharePoint en Visual Studio | Microsoft Docs
+description: Implemente las extensiones para las herramientas de SharePoint en Visual Studio. Use proyectos de extensión de Visual Studio (VSIX) para crear paquetes VSIX.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8178a660f757ae7d7c2758c76d6fd0fc4b22918f
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 9c8b05b5cb74a28157436f95f01992515c716e6a
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584708"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672683"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Implementación de extensiones para las herramientas de SharePoint en Visual Studio
 
@@ -265,7 +267,7 @@ En el ejemplo siguiente se muestra el contenido de un archivo Extension. vsixman
 </PackageManifest>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Extensión del sistema de proyectos de SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)
 - [Extensión del nodo Conexiones de SharePoint en el Explorador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)

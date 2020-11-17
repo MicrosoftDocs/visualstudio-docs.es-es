@@ -1,5 +1,7 @@
 ---
 title: Diferencias entre soluciones en espacio aislado y soluciones de granja | Microsoft Docs
+description: Comprenda las diferencias entre las soluciones en espacio aislado y las soluciones de granja. Sepa cómo Visual Studio se aproxima a la depuración con cualquier tipo de solución.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 073e62b473ebfcec5f71ae1907e8f9e385333411
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25c1c9047ba9e38e3e652abcbe92ce6575d7b750
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62967551"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672787"
 ---
 # <a name="differences-between-sandboxed-and-farm-solutions"></a>Diferencias entre soluciones en espacio aislado y soluciones de granja
   Al compilar una solución de SharePoint, se implementa en el servidor de SharePoint y un depurador se adjunta para depurarla. El proceso usado para depurar la solución depende del valor de la propiedad de la solución en espacio aislado: solución en espacio aislado o solución de granja.
@@ -41,4 +43,4 @@ ms.locfileid: "62967551"
 ## <a name="see-also"></a>Consulte también
 - [Depurar soluciones de SharePoint](../sharepoint/debugging-sharepoint-solutions.md)
 - [Build and debug SharePoint solutions](../sharepoint/building-and-debugging-sharepoint-solutions.md) (Compilar y depurar las soluciones de SharePoint)
-- [Consideraciones sobre las soluciones en espacio aislado](../sharepoint/sandboxed-solution-considerations.md)
+- [Consideraciones sobre las soluciones de espacio aislado](../sharepoint/sandboxed-solution-considerations.md)

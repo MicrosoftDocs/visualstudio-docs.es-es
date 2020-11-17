@@ -1,5 +1,7 @@
 ---
 title: Defaultname ((elemento, plantillas de Visual Studio) | Microsoft Docs
+description: Obtenga información sobre el elemento Defaultname (y cómo especifica el nombre que generará el sistema del proyecto de Visual Studio para el proyecto o elemento cuando se crea.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92bd29824cf1d3b91a7bdaa7220479c583ad0f23
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 23defc424d3e7ed5095f0e29d673c191c755f9ce
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712308"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672735"
 ---
 # <a name="defaultname-element-visual-studio-templates"></a>Defaultname ((elemento, plantillas de Visual Studio)
 Especifica el nombre que generará el sistema del proyecto de Visual Studio para el proyecto o elemento cuando se crea.
@@ -54,7 +56,7 @@ Especifica el nombre que generará el sistema del proyecto de Visual Studio para
 
  Este texto especifica el nombre predeterminado del proyecto o elemento.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
  `DefaultName` es un elemento opcional.
 
  En el caso de los proyectos, este elemento especifica el nombre del directorio que almacena el proyecto en el disco. En el caso de los elementos, especifica el nombre de archivo del archivo de código fuente.

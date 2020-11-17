@@ -1,5 +1,7 @@
 ---
 title: Ampliar proyectos de SharePoint | Microsoft Docs
+description: Obtenga información sobre cómo crear una extensión de proyecto cuando desee personalizar características de nivel de proyecto de proyectos de SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6bc92d65ed179c7f2cb2f569a7d254a025887845
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ae4c3c1e606fd436725ef9f54a4568b754b048af
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62967486"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672644"
 ---
 # <a name="extend-sharepoint-projects"></a>Extender proyectos de SharePoint
   Cree una extensión de proyecto si desea personalizar las características de nivel de proyecto de los proyectos de SharePoint. Por ejemplo, puede Agregar propiedades personalizadas del proyecto o responder a eventos de nivel de proyecto que se producen cuando el usuario desarrolla una solución de SharePoint en Visual Studio.
@@ -48,4 +50,4 @@ ms.locfileid: "62967486"
 - [Definir tipos de elementos de proyecto personalizados de SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [Extender elementos de proyecto de SharePoint](../sharepoint/extending-sharepoint-project-items.md)
 - [Extender el empaquetado e implementación de SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md)
-- [Extender el sistema de proyectos de SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)
+- [Extensión del sistema de proyectos de SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)

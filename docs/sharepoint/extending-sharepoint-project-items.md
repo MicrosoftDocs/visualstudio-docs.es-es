@@ -1,5 +1,7 @@
 ---
 title: Extender elementos de proyecto de SharePoint | Microsoft Docs
+description: Revise las tareas para ampliar los elementos de proyecto de SharePoint. Comprender cómo se relacionan las extensiones de elementos de proyecto y las instancias de elementos de proyecto.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f60c95418379399196c461e055645ae7c85a473e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 22ba5acb995466e695c0e25b5b7540f3677b1264
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62967401"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672579"
 ---
 # <a name="extend-sharepoint-project-items"></a>Extender elementos de proyecto de SharePoint
   Cree una extensión de elemento de proyecto cuando desee agregar funcionalidad a un tipo de elemento de proyecto de SharePoint que ya está instalado en Visual Studio. Por ejemplo, puede crear una extensión para los elementos de proyecto de **definición de lista** o **receptor de eventos** integrados en Visual Studio, o puede crear una extensión para un tipo de elemento de proyecto personalizado. También puede crear una extensión para todos los tipos de elementos de proyecto de SharePoint.
@@ -69,4 +71,4 @@ ms.locfileid: "62967401"
 - [Cómo: agregar un elemento de menú contextual a una extensión de elemento de proyecto de SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)
 - [Cómo: agregar una propiedad a una extensión de elemento de proyecto de SharePoint](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)
 - [Tutorial: extender un tipo de elemento de proyecto de SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)
-- [Extender el sistema de proyectos de SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)
+- [Extensión del sistema de proyectos de SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)
