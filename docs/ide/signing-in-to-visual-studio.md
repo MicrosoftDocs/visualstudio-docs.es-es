@@ -11,12 +11,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 870d5005cb74a3c130af3d720991a6797bb53bc5
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 7873d42e075619e23c14d4e2e1babc6898825a6b
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036176"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672774"
 ---
 # <a name="sign-in-to-visual-studio"></a>Iniciar sesión en Visual Studio
 
@@ -51,7 +51,7 @@ Esta es una lista completa de lo que puede esperar y lo que puede hacer después
 
 ## <a name="how-to-sign-in-to-visual-studio"></a>Cómo iniciar sesión en Visual Studio
 
-La primera vez que abre Visual Studio, se le pide que inicie sesión y que proporcione información de registro básica. 
+La primera vez que abre Visual Studio, se le pide que inicie sesión y que proporcione información de registro básica.
 
 ![Solicitud de inicio de sesión](../ide/media/vs2019_signinpopup.png)
 
@@ -63,7 +63,7 @@ Después de proporcionar la configuración, se inicia Visual Studio, y ya ha ini
 
 ![Usuario actualmente registrado en VS2019](../ide/media/vs2019_username.png)
 
-Si decide no iniciar sesión cuando abra Visual Studio por primera vez, es fácil hacerlo más adelante. Busque el vínculo **Iniciar sesión** situado en la esquina superior derecha del entorno de Visual Studio. 
+Si decide no iniciar sesión cuando abra Visual Studio por primera vez, es fácil hacerlo más adelante. Busque el vínculo **Iniciar sesión** situado en la esquina superior derecha del entorno de Visual Studio.
 
 ![Usuario que no ha iniciado sesión](../ide/media/vs2019_usernotsignedin.png)
 
@@ -84,6 +84,7 @@ Si encuentra algún problema al iniciar sesión, vea la página de [soporte téc
 ## <a name="see-also"></a>Vea también
 
 * [Ampliación de una versión de prueba o actualización de una licencia](../ide/how-to-unlock-visual-studio.md)
+* [Trabajar con cuentas de GitHub en Visual Studio](../ide/work-with-github-accounts.md)
 * [Introducción al IDE de Visual Studio](../get-started/visual-studio-ide.md)
 * [Iniciar sesión (Visual Studio para Mac)](/visualstudio/mac/signing-in)
 * [Activación (Visual Studio para Mac)](/visualstudio/mac/activation)
