@@ -1,6 +1,8 @@
 ---
 title: 'Cómo: agregar un elemento de menú contextual a los proyectos de SharePoint | Microsoft Docs'
 titleSuffix: ''
+description: Agregue un elemento de menú contextual a un proyecto de SharePoint en Visual Studio. El elemento de menú aparece al hacer clic con el botón secundario en un nodo de proyecto en Explorador de soluciones.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ea862eb21aaee75499f3b1bac7007063227150e2
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 074f5b8a3ed31587b86b172ad2da000b7b81e9c3
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585854"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850070"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-sharepoint-projects"></a>Cómo: agregar un elemento de menú contextual a los proyectos de SharePoint
   Puede Agregar un elemento de menú contextual a cualquier proyecto de SharePoint. El elemento de menú aparece cuando un usuario hace clic con el botón secundario en un nodo de proyecto en **Explorador de soluciones**.
@@ -51,7 +53,7 @@ ms.locfileid: "91585854"
 ## <a name="deploy-the-extension"></a>Implementar la extensión
  Para implementar la extensión, cree un [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] paquete de extensión (VSIX) para el ensamblado y cualquier otro archivo que desee distribuir con la extensión. Para obtener más información, vea [deploy Extensions for the SharePoint Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Extender proyectos de SharePoint](../sharepoint/extending-sharepoint-projects.md)
 - [Cómo: crear una extensión de proyecto de SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)
 - [Cómo: agregar una propiedad a proyectos de SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)

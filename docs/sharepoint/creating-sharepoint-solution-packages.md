@@ -1,5 +1,7 @@
 ---
 title: Crear paquetes de soluciones de SharePoint | Microsoft Docs
+description: Crear y personalizar paquetes de implementación para soluciones de SharePoint mediante el diseñador de paquetes. Explore las herramientas de empaquetado, las opciones del diseñador y la estructura de carpetas.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b250be3b61cdfc524f049f952f0cf7e65f1c295a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bbe458f6ab4de01ffb224ae4e493bf23e3fc6ceb
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74876069"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850564"
 ---
 # <a name="create-sharepoint-solution-packages"></a>Crear paquetes de soluciones de SharePoint
   Con el Diseñador de paquetes, puede crear y personalizar paquetes de implementación. Por ejemplo, puede agregar elementos y características de proyecto de SharePoint, restablecer el servidor IIS, establecer los ámbitos de activación de las características e identificar las dependencias de las características. El diseñador también genera un manifiesto, un archivo XML en el que se describe cada paquete.
@@ -69,9 +71,9 @@ ms.locfileid: "74876069"
 6. Los archivos del directorio intermedio se agregan al archivo *. wsp* .
 
 ## <a name="package-folder-structure"></a>Estructura de carpetas de los paquetes
- Al empaquetar el proyecto de SharePoint, se crea un archivo *. wsp* en la carpeta *SolutionFolder\bin \\ \<BuildConfiguration> * Por ejemplo, si la solución está en *C:\Visual Studio 2013 \ Projects\ListDefinition1* y la configuración de compilación se establece en release, el archivo *. wsp* se encuentra en *C:\Visual Studio 2013 \ Projects\ListDefinition1\bin\Release*.
+ Al empaquetar el proyecto de SharePoint, se crea un archivo *. wsp* en la carpeta *SolutionFolder\bin \\ \<BuildConfiguration>* Por ejemplo, si la solución está en *C:\Visual Studio 2013 \ Projects\ListDefinition1* y la configuración de compilación se establece en release, el archivo *. wsp* se encuentra en *C:\Visual Studio 2013 \ Projects\ListDefinition1\bin\Release*.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Cómo: personalizar un paquete de solución de SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)
 - [Cómo: agregar y quitar características y elementos de un paquete mediante el diseñador de paquetes](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)
 - [Cómo: crear un paquete de solución de SharePoint mediante tareas de MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)

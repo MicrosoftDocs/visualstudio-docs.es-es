@@ -1,5 +1,7 @@
 ---
 title: Información general sobre herramientas de diseño del modelo BDC | Microsoft Docs
+description: Lea información general sobre las herramientas de diseño que se deben usar con un modelo de conectividad a datos profesionales (BDC). Obtenga información sobre el diseñador de BDC, la ventana detalles del método de BDC y el explorador de BDC.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7a2531f1cc6352a03acf0b3d6af82c35e47c2743
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6e78b6809d3136c0db1f558d175706dc0ecd75b
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64827949"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850318"
 ---
 # <a name="bdc-model-design-tools-overview"></a>Introducción a las herramientas de diseño del modelo BDC
   Puede diseñar un modelo de conectividad a datos profesionales (BDC) mediante el diseñador de BDC, la ventana **detalles del método de BDC** y el explorador de **BDC**.
@@ -51,14 +53,14 @@ ms.locfileid: "64827949"
 
  Puede generar rápidamente el buscador, el buscador específico, el creador, el actualizador y los métodos de eliminación en la ventana **detalles del método de BDC** . Cuando se generan estos métodos, Visual Studio agrega metadatos, como los parámetros, las instancias y los descriptores de tipos, al método. Puede modificar estos metadatos para satisfacer su escenario específico.
 
- Para abrir la ventana **detalles del método de BDC** , en la barra de menús, elija **Ver**  >  **otros**  >  **detalles del método BDC**de Windows.
+ Para abrir la ventana **detalles del método de BDC** , en la barra de menús, elija **Ver**  >  **otros**  >  **detalles del método BDC** de Windows.
 
  Para ver los métodos en la ventana **detalles del método de BDC** , elija la entidad en el diseñador de BDC. Los métodos de la entidad seleccionada aparecen en la ventana **detalles del método de BDC** . Si no elige una entidad en el diseñador de BDC, la ventana **detalles del método de BDC** no muestra ninguna información.
 
  Expanda o contraiga los nodos en la ventana **detalles del método de BDC** para definir los parámetros, las instancias y los descriptores de filtro. Use el **Explorador de BDC** para definir los descriptores de tipo.
 
 ## <a name="bdc-explorer"></a>Explorador de BDC
- El **Explorador de BDC** muestra los elementos que componen el modelo. Para abrir el **Explorador de BDC**, en la barra de menús, elija **Ver**  >  **otro**  >  **Explorador de BDC**de Windows. Para examinar el modelo, expanda los nodos en el **Explorador de BDC**. Cada nodo representa un elemento en el XML del archivo de modelo.
+ El **Explorador de BDC** muestra los elementos que componen el modelo. Para abrir el **Explorador de BDC**, en la barra de menús, elija **Ver**  >  **otro**  >  **Explorador de BDC** de Windows. Para examinar el modelo, expanda los nodos en el **Explorador de BDC**. Cada nodo representa un elemento en el XML del archivo de modelo.
 
  A medida que selecciona nodos en el **Explorador de BDC**, las propiedades de cada nodo que elija aparecen en la ventana **propiedades** . Muchas de estas propiedades corresponden a los atributos del archivo de modelo. Puede buscar en el modelo mediante el cuadro de búsqueda situado en la parte superior del **Explorador de BDC**.
 
@@ -73,8 +75,8 @@ ms.locfileid: "64827949"
 
  Para obtener más información, vea [Cómo: definir el descriptor de tipo de un parámetro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 
-## <a name="see-also"></a>Vea también
-- [Cómo: crear un modelo BDC](../sharepoint/how-to-create-a-bdc-model.md)
+## <a name="see-also"></a>Consulte también
+- [Cómo: para crear un modelo BDC](../sharepoint/how-to-create-a-bdc-model.md)
 - [Cómo: agregar una entidad a un modelo](../sharepoint/how-to-add-an-entity-to-a-model.md)
 - [Cómo: agregar un método Finder](../sharepoint/how-to-add-a-finder-method.md)
 - [Cómo: agregar un método Finder específico](../sharepoint/how-to-add-a-specific-finder-method.md)
@@ -83,6 +85,6 @@ ms.locfileid: "64827949"
 - [Cómo: agregar un método Updater](../sharepoint/how-to-add-an-updater-method.md)
 - [Crear una asociación entre entidades](../sharepoint/creating-an-association-between-entities.md)
 - [Tutorial: crear una lista externa en SharePoint con datos económicos](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)
-- [Integrar datos profesionales en SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)
+- [Integración de datos profesionales en SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)
 - [Crear un modelo de conectividad a datos profesionales](../sharepoint/creating-a-business-data-connectivity-model.md)
 - [Diseñar un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md)

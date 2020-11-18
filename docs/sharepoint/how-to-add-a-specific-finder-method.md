@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: agregar un método Finder específico | Microsoft Docs'
+description: Obtenga una instancia de entidad agregando un método de buscador. El servicio BDC llama al método cuando un usuario elige una entidad en un elemento Web de datos profesionales o en una lista externa.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,15 +19,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 403213b6dcd87251df0b24333c759c8de8720afd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a02e88b0168a6aa4b1a69af3ee14150a71e76037
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014822"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94849733"
 ---
 # <a name="how-to-add-a-specific-finder-method"></a>Cómo: agregar un método Finder específico
-  Puede devolver una única instancia de entidad creando un método de *buscador específico* . El servicio de conectividad a datos profesionales (BDC) ejecuta el método de buscador específico cuando un usuario elige una entidad en un elemento Web de datos profesionales o en una lista externa. Para obtener más información, vea [diseñar un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md).
+  Puede devolver una única instancia de entidad creando un método de *buscador específico* . El servicio de conectividad a datos profesionales (BDC) ejecuta el método de buscador específico cuando un usuario elige una entidad en un elemento Web de datos profesionales o en una lista externa. Para obtener más información, vea [Diseño de un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md).
 
 ### <a name="to-create-a-specific-finder-method"></a>Para crear un método Finder específico
 
@@ -51,7 +53,7 @@ ms.locfileid: "86014822"
 
    - Instancia de método para el método.
 
-     Para obtener más información, vea [diseñar un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md).
+     Para obtener más información, vea [Diseño de un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md).
 
 4. Abra la ventana **propiedades** de Visual Studio.
 
@@ -86,7 +88,7 @@ ms.locfileid: "86014822"
      [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]
 
 ## <a name="see-also"></a>Consulte también
-- [Diseñar un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md)
+- [Diseño de un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [Cómo: agregar un método Finder](../sharepoint/how-to-add-a-finder-method.md)
 - [Cómo: agregar un método Creator](../sharepoint/how-to-add-a-creator-method.md)
 - [Cómo: agregar un método de eliminación](../sharepoint/how-to-add-a-deleter-method.md)

@@ -1,5 +1,7 @@
 ---
 title: Llamar a los modelos de objetos de SharePoint | Microsoft Docs
+description: Aprenda a llamar a los dos modelos de objetos diferentes que puede usar en las extensiones de herramientas de SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 24634143a40f7b163c0b658bddb5596041868033
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 40cd7132888d8b19d8e2a2818ec9a299b465e786
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62988408"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850057"
 ---
 # <a name="call-into-the-sharepoint-object-models"></a>Llamar a los modelos de objetos de SharePoint
   Al crear extensiones para las herramientas de SharePoint en Visual Studio, es posible que tenga que llamar a las API de SharePoint para realizar determinadas tareas. Por ejemplo, si crea un paso de implementación personalizado para proyectos de SharePoint, es posible que tenga que llamar a las API de SharePoint para realizar algunas de las tareas de implementación de soluciones.
@@ -57,4 +59,4 @@ ms.locfileid: "62988408"
 ## <a name="see-also"></a>Consulte también
 - [Cómo: crear un comando de SharePoint](../sharepoint/how-to-create-a-sharepoint-command.md)
 - [Cómo: ejecutar un comando de SharePoint](../sharepoint/how-to-execute-a-sharepoint-command.md)
-- [Información general sobre el modelo de programación de extensiones de herramientas de SharePoint](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)
+- [Información general del modelo de programación de extensiones de SharePoint](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)

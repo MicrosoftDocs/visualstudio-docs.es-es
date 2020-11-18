@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: agregar un archivo de recursos | Microsoft Docs'
+description: Agregue un archivo de recursos en Visual Studio mediante los comandos del menú contextual del nodo de solución y los nodos de características en Explorador de soluciones.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 657eb473adcff40a62d2fc9b09518ebe8135eeb4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 440777aaaf239dcdd3c276786a82e3d8aef55070
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015175"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850136"
 ---
-# <a name="how-to-add-a-resource-file"></a>Cómo: agregar un archivo de recursos
+# <a name="how-to-add-a-resource-file"></a>Cómo: para agregar un archivo de recursos
   Los comandos para agregar archivos de recursos se encuentra en el menú contextual del nodo de solución y los nodos de características de Explorador de soluciones. Para obtener más información, vea [localizar soluciones de SharePoint](../sharepoint/localizing-sharepoint-solutions.md).
 
 ### <a name="to-add-a-global-resource-file-to-a-sharepoint-solution"></a>Para agregar un archivo de recursos global a una solución de SharePoint
@@ -36,7 +38,7 @@ ms.locfileid: "86015175"
 
 4. En el cuadro de diálogo **Agregar recurso** , elija una referencia cultural para el archivo de recursos, como inglés (Estados Unidos).
 
-    En este paso se agrega un archivo de recursos global a la solución con el formato Resource_x_**.** <em>referencia cultural</em><strong>.</strong> resx, como, *Resource1. en-US. resx*.
+    En este paso se agrega un archivo de recursos global a la solución con el formato Resource_x_ **.** <em>referencia cultural</em><strong>.</strong> resx, como, *Resource1. en-US. resx*.
 
 5. Cuando se abra el **Editor de recursos** en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , agregue recursos al archivo de recursos.
 

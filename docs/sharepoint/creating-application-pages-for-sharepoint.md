@@ -1,5 +1,7 @@
 ---
 title: Crear páginas de aplicación para SharePoint | Microsoft Docs
+description: Cree páginas de aplicación para SharePoint. Una página de aplicación es una página web de ASP.NET diseñada para su uso en un sitio web de SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +18,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 47f403f4eec6ec66563ae88bec226e073f625716
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1228ef551235fd616803d6e05057ee50f0ea7ec4
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72981096"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850447"
 ---
-# <a name="create-application-pages-for-sharepoint"></a>Crear páginas de aplicación para SharePoint
+# <a name="create-application-pages-for-sharepoint"></a>Creación de páginas de aplicación para SharePoint
   Una *Página de aplicación* es una página web de ASP.net diseñada para su uso en un sitio web de SharePoint. Las páginas de aplicación son un tipo especializado de página de ASP.NET. La principal diferencia entre una página de aplicación y una página de ASP.NET estándar es que una página de aplicación contiene contenido que se combina con una página maestra de SharePoint. Una página maestra permite que las páginas de aplicación compartan la misma apariencia y comportamiento que las demás páginas de un sitio.
 
  Visual Studio le permite diseñar páginas de aplicación mediante un diseñador. El diseñador muestra un área de contenido para cada marcador de posición de contenido que se define en una página maestra. Puede diseñar la página de la aplicación arrastrando los controles a estas áreas de contenido.
@@ -64,7 +66,7 @@ ms.locfileid: "72981096"
 
  Para ver la página de la aplicación, debe navegar manualmente hasta la ubicación de la página de la aplicación (por ejemplo: http://<em>Server_Name</em>/_layouts/*Project_Name*/ApplicationPage1.aspx).
 
- Para obtener más información sobre cómo depurar proyectos de SharePoint, vea [solucionar problemas de soluciones de SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md).
+ Para obtener más información sobre cómo depurar proyectos de SharePoint, vea [Solución de problemas de soluciones de SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md).
 
 ## <a name="choose-a-master-page"></a>Elegir una página maestra
  De forma predeterminada, un elemento de **Página de aplicación** hace referencia a la página maestra del sitio que está usando para depurar el proyecto. Esa página se denomina V4. Master y puede encontrarla en la **Galería de páginas maestras** del sitio de SharePoint.

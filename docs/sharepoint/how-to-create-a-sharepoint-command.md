@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: crear un comando de SharePoint | Microsoft Docs'
+description: Aprenda a crear un comando de SharePoint personalizado para llamar a la API del modelo de objetos de servidor en una extensión de herramientas de SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 15ea7ff86e90bf7a474f9d64c30a9803e3e20bf5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41e4ab0fd70f4993d148cd5c67cb816bdc92e77a
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016222"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850707"
 ---
 # <a name="how-to-create-a-sharepoint-command"></a>Cómo: crear un comando de SharePoint
   Si desea usar el modelo de objetos de servidor en una extensión de herramientas de SharePoint, debe crear un *comando de SharePoint* personalizado para llamar a la API. El comando de SharePoint se define en un ensamblado que puede llamar directamente al modelo de objetos de servidor.
@@ -53,7 +55,7 @@ ms.locfileid: "86016222"
 
     - El segundo parámetro y el valor devuelto deben ser un tipo que se pueda serializar mediante el Windows Communication Foundation (WCF). Para obtener más información, vea [tipos admitidos por el serializador de contrato de datos](/dotnet/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer) y [usar la clase XmlSerializer](/dotnet/framework/wcf/feature-details/using-the-xmlserializer-class).
 
-    - El método puede tener cualquier visibilidad (**pública**, **interna**o **privada**) y puede ser estática o no estática.
+    - El método puede tener cualquier visibilidad (**pública**, **interna** o **privada**) y puede ser estática o no estática.
 
 4. Aplique <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute> al método. Este atributo especifica un identificador único para el comando; Este identificador no tiene que coincidir con el nombre del método.
 

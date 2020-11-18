@@ -1,6 +1,8 @@
 ---
 title: Crear columnas de sitio, tipos de contenido y listas para SharePoint | Microsoft Docs
 titleSuffix: ''
+description: Crear columnas de sitio, tipos de contenido y listas para SharePoint. Visual Studio proporciona plantillas de elementos de proyecto para estos tipos de elementos de SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 269be4aaf34e9b6c611a5d79ba38cddba04276bf
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 29d0ebc33bf3df198f3ee9b3f9d80a747087341c
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585111"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850525"
 ---
 # <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>Creación de listas, tipos de contenido y columnas de sitio para SharePoint
   Visual Studio proporciona plantillas de elementos de proyecto para muchos elementos fundamentales de SharePoint diferentes, como *listas* y *tipos de contenido*, que pueden incorporar columnas de sitio (o *campos*). Los nuevos diseñadores de tipos de contenido y listas hacen que la creación de estos elementos sea más fácil que nunca.
@@ -49,5 +51,5 @@ ms.locfileid: "91585111"
 |-----------|-----------------|
 |[Tutorial: Creación de una columna, un tipo de contenido y una lista de sitios para SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|Muestra cómo crear columnas de sitio que se usan en un tipo de contenido personalizado. A continuación, se usa el tipo de contenido en una lista personalizada.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Introducción al desarrollo en SharePoint 2010](/sharepoint/dev/)

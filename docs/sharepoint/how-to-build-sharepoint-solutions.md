@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: compilar soluciones de SharePoint | Microsoft Docs'
+description: Compilar una solución de SharePoint. En Visual Studio, la creación de una solución de SharePoint no es diferente de la compilación de otras aplicaciones.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d3beb1602a6572ed578208d6dd85951f1ea1c30b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4e878221f3b6989a87fa3c9e36be1018d34d4af
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014517"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850694"
 ---
 # <a name="how-to-build-sharepoint-solutions"></a>Cómo: compilar soluciones de SharePoint
 

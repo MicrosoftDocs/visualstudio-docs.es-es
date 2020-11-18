@@ -1,5 +1,7 @@
 ---
 title: Crear una asociación entre entidades | Microsoft Docs
+description: Cree una asociación entre las entidades del modelo de conectividad a datos profesionales (BDC). Obtenga información sobre los métodos de asociación y los tipos de asociaciones.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -21,18 +23,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ee767ded0687baa09653bd82785b68bee7fa0ebd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6a5decf8ad803bea8b1d64c79410c319dbef0be9
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72981091"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850551"
 ---
 # <a name="create-an-association-between-entities"></a>Crear una asociación entre entidades
   Puede definir las relaciones entre las entidades del modelo de conectividad a datos profesionales (BDC) mediante la creación de asociaciones. Visual Studio genera métodos que proporcionan a los consumidores del modelo información sobre cada asociación. Estos métodos pueden ser consumidos por elementos Web, listas o aplicaciones personalizadas de SharePoint para mostrar las relaciones de datos en una interfaz de usuario (UI).
 
-## <a name="create-an-association"></a>Crear una asociación
- Para crear una asociación, elija el control de **Asociación** en el **cuadro de herramientas**de Visual Studio, elija la primera entidad (denominada entidad de origen) y, a continuación, elija la segunda entidad (denominada entidad de destino). Puede definir los detalles de la asociación en el **Editor de asociaciones**. Para obtener más información, vea [Cómo: crear una asociación entre entidades](../sharepoint/how-to-create-an-association-between-entities.md).
+## <a name="create-an-association"></a>Creación de una asociación
+ Para crear una asociación, elija el control de **Asociación** en el **cuadro de herramientas** de Visual Studio, elija la primera entidad (denominada entidad de origen) y, a continuación, elija la segunda entidad (denominada entidad de destino). Puede definir los detalles de la asociación en el **Editor de asociaciones**. Para obtener más información, vea [Cómo: crear una asociación entre entidades](../sharepoint/how-to-create-an-association-between-entities.md).
 
 ## <a name="association-methods"></a>Métodos de asociación
  Las aplicaciones como los elementos Web de datos empresariales de SharePoint consumen asociaciones llamando a métodos en la clase de servicio de una entidad. Puede Agregar métodos a la clase de servicio de una entidad seleccionándolos en el editor de **asociaciones**.
@@ -77,5 +79,5 @@ ms.locfileid: "72981091"
  [!code-vb[SP_BDC#10](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb#10)]
 
 ## <a name="see-also"></a>Consulte también
-- [Diseñar un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md)
+- [Diseño de un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [Cómo: crear una asociación entre entidades](../sharepoint/how-to-create-an-association-between-entities.md)

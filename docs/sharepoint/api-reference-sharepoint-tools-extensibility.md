@@ -1,5 +1,7 @@
 ---
 title: Referencia de API (extensibilidad de herramientas de SharePoint) | Microsoft Docs
+description: Revise la documentación de referencia de la API para ampliar las herramientas de SharePoint en Visual Studio. Vea una lista de espacios de nombres relacionados, como Microsoft. VisualStudio. SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 37639068b74b5d99864871355a8b9ef36906f6cd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4599a2c305558f2ef551d19abac210bdf05269f3
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62987981"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850395"
 ---
 # <a name="api-reference-sharepoint-tools-extensibility"></a>Referencia de API (extensibilidad de herramientas de SharePoint)
   Esta sección contiene la documentación de referencia de la API para extender las herramientas de SharePoint en Visual Studio.
@@ -29,7 +31,7 @@ ms.locfileid: "62987981"
 
  <xref:Microsoft.VisualStudio.SharePoint.Commands>
 
- Contiene tipos que se pueden usar para crear *comandos de SharePoint*personalizados. Un comando de SharePoint es un método que llama al modelo de objetos de servidor de SharePoint desde una extensión de herramientas de SharePoint.
+ Contiene tipos que se pueden usar para crear *comandos de SharePoint* personalizados. Un comando de SharePoint es un método que llama al modelo de objetos de servidor de SharePoint desde una extensión de herramientas de SharePoint.
 
  <xref:Microsoft.VisualStudio.SharePoint.Deployment>
 
@@ -69,8 +71,8 @@ ms.locfileid: "62987981"
 
 ## <a name="see-also"></a>Consulte también
 - [Referencia &#40;extensibilidad de herramientas de SharePoint&#41;](../sharepoint/reference-sharepoint-tools-extensibility.md)
-- [Información general sobre el modelo de programación de extensiones de herramientas de SharePoint](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)
-- [Extender el sistema de proyectos de SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)
-- [Extender el nodo conexiones de SharePoint en Explorador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
+- [Información general del modelo de programación de extensiones de SharePoint](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)
+- [Extensión del sistema de proyectos de SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)
+- [Extensión del nodo Conexiones de SharePoint en el Explorador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
 - [Extender el empaquetado e implementación de SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md)
 - [Llamar a los modelos de objetos de SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)

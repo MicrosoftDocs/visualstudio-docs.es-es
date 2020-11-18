@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: crear un receptor de eventos | Microsoft Docs'
+description: Cree un receptor de eventos para que pueda responder cuando un usuario interactúe con elementos de SharePoint como listas o elementos de lista.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 26d8c9f433fad051716b6ebd37e3d1f3b3f9f4eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2e94bd1594f94f43c82eed5033d6ec2660905c18
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016924"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94849888"
 ---
 # <a name="how-to-create-an-event-receiver"></a>Cómo: crear un receptor de eventos
   Al crear *receptores de eventos*, puede responder cuando un usuario interactúa con elementos de SharePoint como listas o elementos de lista. Por ejemplo, el código de un receptor de eventos se puede desencadenar cuando un usuario cambia el calendario o elimina un nombre de una lista de contactos. Siguiendo este tema, puede obtener información sobre cómo agregar un receptor de eventos a una instancia de lista.
@@ -42,7 +44,7 @@ ms.locfileid: "86016924"
 
 4. En **Visual C#** o **Visual Basic**, expanda el nodo **SharePoint** y, a continuación, elija el elemento **2010** .
 
-5. En el panel **plantillas** , elija **receptor de eventos**, asígnele el nombre **TestEventReceiver1**y, a continuación, elija el botón **Aceptar** .
+5. En el panel **plantillas** , elija **receptor de eventos**, asígnele el nombre **TestEventReceiver1** y, a continuación, elija el botón **Aceptar** .
 
      Aparece el **Asistente para la personalización de SharePoint** .
 
@@ -50,7 +52,7 @@ ms.locfileid: "86016924"
 
 7. En la lista **¿qué elemento debe ser el origen del evento?** , elija **pacientes (Clinic\Patients)**.
 
-8. En la lista **controlar los siguientes eventos** , active la casilla situada junto a **un elemento que se ha agregado**y, a continuación, elija el botón **Finalizar** .
+8. En la lista **controlar los siguientes eventos** , active la casilla situada junto a **un elemento que se ha agregado** y, a continuación, elija el botón **Finalizar** .
 
      El archivo de código para el nuevo receptor de eventos contiene un solo método denominado `ItemAdded` . En el paso siguiente, agregará código a este método para que todos los contactos se llamen de forma predeterminada a Scott Brown.
 

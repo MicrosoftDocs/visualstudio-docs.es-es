@@ -1,5 +1,7 @@
 ---
 title: Información adicional sobre los errores de SharePoint | Microsoft Docs
+description: Obtenga información adicional sobre la solución de problemas de errores y advertencias que se producen en las herramientas de Visual Studio SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,14 +18,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2c22f6570d741bce7f72ffd2c07f75cc8c6dc18b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 240913e93dc1945846613ac1ecc8d0141368f7b3
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985075"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850434"
 ---
-# <a name="additional-information-for-sharepoint-errors"></a>Información adicional para errores de SharePoint
+# <a name="additional-information-for-sharepoint-errors"></a>Información adicional de los errores de SharePoint
   Puede encontrar ayuda para solucionar problemas de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] errores y advertencias de las herramientas de SharePoint en los temas de solución de problemas y los foros públicos.
 
 ## <a name="troubleshoot-errors-and-issues"></a>Solución de problemas de errores y problemas
@@ -46,5 +48,5 @@ ms.locfileid: "72985075"
 
  Si sigue sin poder encontrar las respuestas que necesita, puede tener acceso a las opciones de soporte técnico en línea, como ponerse en contacto con los servicios de soporte técnico de Microsoft o buscar artículos de Knowledge base. Para obtener más información, vea la página de [ayuda y soporte técnico de Microsoft](https://support.microsoft.com/) .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Build and debug SharePoint solutions](../sharepoint/building-and-debugging-sharepoint-solutions.md) (Compilar y depurar las soluciones de SharePoint)

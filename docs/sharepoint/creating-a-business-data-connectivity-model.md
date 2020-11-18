@@ -1,5 +1,7 @@
 ---
 title: Crear un modelo de conectividad a datos profesionales | Microsoft Docs
+description: Cree un modelo de conectividad a datos profesionales (BDC) o personalice un modelo BDC existente mediante Visual Studio. Cada proyecto de SharePoint solo puede contener un modelo.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9f3da13858507a3ff176aaa0a44051674fd5285f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0486ce6ac53850b1b607f9e7f859806cdc3ef8fe
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90842483"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850473"
 ---
 # <a name="create-a-business-data-connectivity-model"></a>Creación de un modelo de conectividad a datos profesionales
   Puede crear un modelo de conectividad a datos profesionales (BDC) o personalizar un modelo BDC existente mediante Visual Studio. Cada proyecto de SharePoint solo puede contener un modelo. Para obtener más información, vea [integrar datos profesionales en SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).
@@ -37,7 +39,7 @@ ms.locfileid: "90842483"
 
 |Archivo|Descripción|
 |----------|-----------------|
-|Archivo de definición de modelo|Contiene XML que define las entidades, los métodos, los objetos del sistema de línea de negocio (LOB) y otros metadatos que describen el modelo.<br /><br /> Modifique los metadatos de este archivo mediante el diseñador de BDC, el **Explorador**de BDC, la ventana **detalles del método de BDC** y la ventana **propiedades** .|
+|Archivo de definición de modelo|Contiene XML que define las entidades, los métodos, los objetos del sistema de línea de negocio (LOB) y otros metadatos que describen el modelo.<br /><br /> Modifique los metadatos de este archivo mediante el diseñador de BDC, el **Explorador** de BDC, la ventana **detalles del método de BDC** y la ventana **propiedades** .|
 |Archivo de código de Entity Service|Contiene métodos que recuperan, actualizan y eliminan instancias de la entidad predeterminada.|
 
  Para definir las propiedades de una entidad, edite el archivo de código de entidad. Para obtener más información, vea [Cómo: agregar una entidad a un modelo](../sharepoint/how-to-add-an-entity-to-a-model.md).

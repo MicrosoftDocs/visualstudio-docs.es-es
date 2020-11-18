@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: agregar una referencia de salida del proyecto | Microsoft Docs'
+description: Aprenda a agregar una referencia de salida del proyecto para que pueda implementar ensamblados de proyecto que no sean de SharePoint (o archivos. xap en proyectos de Silverlight) en SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bea0f39ae161d8b695f872cb634c35d0cb205c91
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03980eea9d16cde2b6f079e0b33973958fed7a7f
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016754"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94849875"
 ---
 # <a name="how-to-add-a-project-output-reference"></a>Cómo: agregar una referencia de salida del proyecto
   Para implementar ensamblados de proyecto que no sean de SharePoint (o archivos. xap en proyectos de Silverlight) en SharePoint, agréguelos como una referencia de salida del proyecto.
@@ -41,6 +43,6 @@ ms.locfileid: "86016754"
 6. Elija la flecha situada junto a **nombre del proyecto**, elija el nombre del elemento de proyecto que no es de SharePoint y, a continuación, elija el botón **Aceptar** .
 
 ## <a name="see-also"></a>Consulte también
-- [Proporcionar información de empaquetado e implementación en los elementos de proyecto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
+- [Inclusión de información de empaquetado e implementación en los elementos del proyecto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
 - [Cómo: marcar controles como controles seguros](../sharepoint/how-to-mark-controls-as-safe-controls.md)
-- [Empaquetar e implementar soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
+- [Empaquetado e implementación de soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

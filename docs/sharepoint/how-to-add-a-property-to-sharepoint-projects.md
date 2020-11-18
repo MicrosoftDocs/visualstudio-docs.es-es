@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: agregar una propiedad a proyectos de SharePoint | Microsoft Docs'
+description: Use una extensión de proyecto para agregar una propiedad a un proyecto de SharePoint. Una propiedad aparece en el ventana Propiedades al seleccionar el proyecto en Explorador de soluciones.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eb72b0546b504e2df1a7e93ea9d4def350143d1d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 62766b704d140805a3b76dbc3c00acaf6257f5e5
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015920"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850161"
 ---
 # <a name="how-to-add-a-property-to-sharepoint-projects"></a>Cómo: agregar una propiedad a proyectos de SharePoint
   Puede usar una extensión de proyecto para agregar una propiedad a cualquier proyecto de SharePoint. La propiedad aparece en la ventana **propiedades** cuando se selecciona el proyecto en **Explorador de soluciones**.
@@ -84,4 +86,4 @@ ms.locfileid: "86015920"
 - [Extender proyectos de SharePoint](../sharepoint/extending-sharepoint-projects.md)
 - [Cómo: crear una extensión de proyecto de SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)
 - [Cómo: agregar un elemento de menú contextual a los proyectos de SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)
-- [Extender el sistema de proyectos de SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)
+- [Extensión del sistema de proyectos de SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)
