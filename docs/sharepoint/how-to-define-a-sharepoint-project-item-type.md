@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: definir un tipo de elemento de proyecto de SharePoint | Microsoft Docs'
+description: Aprenda a definir un tipo de elemento de proyecto cuando desee crear un elemento de proyecto de SharePoint personalizado.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ae709bf2d81e2b8b00dc984602c0426fdf272ebd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 78b10e6878301a878de14306f92f425402e1cc17
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016857"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903616"
 ---
 # <a name="how-to-define-a-sharepoint-project-item-type"></a>Cómo: definir un tipo de elemento de proyecto de SharePoint
   Defina un tipo de elemento de proyecto cuando desee crear un elemento de proyecto de SharePoint personalizado. Para obtener más información, vea [definir tipos de elementos de proyecto personalizados de SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md).

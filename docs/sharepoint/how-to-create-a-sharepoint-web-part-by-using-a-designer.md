@@ -1,6 +1,8 @@
 ---
 title: 'Cómo: crear un elemento Web de SharePoint mediante un diseñador | Microsoft Docs'
 titleSuffix: ''
+description: Cree un elemento Web agregando un elemento de elemento Web visual a un proyecto de SharePoint, que abre el diseñador de Visual Web Developer en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d19822237f61d5404f42e30078541a735eb206bc
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 09b237704a5b42f75c2239bd6d159e3d58e3025e
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584118"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903720"
 ---
 # <a name="how-to-create-a-sharepoint-web-part-by-using-a-designer"></a>Cómo: crear un elemento Web de SharePoint mediante un diseñador
   Puede crear un elemento Web agregando un elemento de **elemento Web visual** a cualquier proyecto de SharePoint. Se abre el diseñador de Visual Web Developer en Visual Studio donde puede agregar controles y código al elemento web. Los elementos web visuales funcionan de la misma manera que lo hacen los elementos web. La única diferencia es que el usuario diseña los elementos web visuales en el diseñador de Visual Web Developer.
@@ -33,7 +35,7 @@ ms.locfileid: "91584118"
 
 2. En el cuadro de diálogo **nuevo proyecto** , en **Visual C#** o **Visual Basic**, expanda el nodo **Office/SharePoint** y, a continuación, elija la categoría **soluciones de SharePoint** .
 
-3. En la lista de plantillas de proyecto, elija **SharePoint 2013-elemento Web visual**y, a continuación, elija el botón **Aceptar** .
+3. En la lista de plantillas de proyecto, elija **SharePoint 2013-elemento Web visual** y, a continuación, elija el botón **Aceptar** .
 
      Aparece el **Asistente para la personalización de SharePoint** .
 
@@ -51,7 +53,7 @@ ms.locfileid: "91584118"
 
      En **Explorador de soluciones**, aparece el elemento Web. Después de diseñar el elemento Web en el diseñador de Visual Web Developer, lo probará en el sitio que especifique.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Creación de elementos web para SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)
 - [Cómo: para crear un elemento web de SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)
 - [Tutorial: Creación de un elemento web para SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)

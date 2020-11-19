@@ -1,5 +1,7 @@
 ---
 title: ProjectType (elemento, plantillas de Visual Studio) | Microsoft Docs
+description: Obtenga información sobre el elemento ProjectType y cómo clasifica la plantilla de proyecto para que aparezca en el cuadro de diálogo nuevo proyecto o agregar nuevo elemento.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d794bd5e81e77a892b5a3be38ff73ab805582dd7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2bd457bfb639ff0def2662476e60c8736e14b3ce
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701810"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903824"
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>ProjectType (elemento, plantillas de Visual Studio)
 Clasifica la plantilla de proyecto para que aparezca bajo el grupo especificado en el cuadro de diálogo **nuevo proyecto** o **Agregar nuevo elemento** .

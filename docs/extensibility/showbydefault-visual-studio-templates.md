@@ -1,5 +1,7 @@
 ---
 title: ShowByDefault (elemento, plantillas de Visual Studio)
+description: Obtenga información sobre el elemento ShowByDefault y cómo, cuando se establece en false, especifica que la plantilla solo se mostrará en el TemplateGroupID especificado.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 711cff06637957b796525543a02bfdd376e04284
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7b17a9a29b55721695509deed6b3d33cc7554aa9
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700108"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903980"
 ---
 # <a name="showbydefault-element-visual-studio-templates"></a>ShowByDefault (elemento, plantillas de Visual Studio)
 Si `false` es, especifica que la plantilla solo se mostrará en el [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)especificado.
@@ -84,7 +86,7 @@ Si `false` es, especifica que la plantilla solo se mostrará en el [TemplateGrou
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Crear plantillas de proyecto y de elemento](../ide/creating-project-and-item-templates.md)
 - [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [TemplateGroupID (Elemento, Plantillas de Visual Studio)](../extensibility/templategroupid-element-visual-studio-templates.md)

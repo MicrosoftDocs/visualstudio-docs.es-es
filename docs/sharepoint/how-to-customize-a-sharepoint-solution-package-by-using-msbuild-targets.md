@@ -1,6 +1,8 @@
 ---
 title: Personalizar el paquete de soluciones de SharePoint mediante destinos de MSBuild
 titleSuffix: ''
+description: Personalizar el modo en que Visual Studio crea los archivos de paquete de solución de SharePoint (. wsp) mediante destinos de MSBuild en un símbolo del sistema.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9845f755d184c18b6b5ade4c5504e393edae7b00
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 5aa0afbe685c85d9a005dc621f58f17d396c0236
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585815"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903655"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>Cómo: personalizar un paquete de solución de SharePoint mediante destinos de MSBuild
   Mediante el uso de destinos de MSBuild en un símbolo del sistema, puede personalizar el modo en que Visual Studio crea los archivos de paquete de SharePoint (*. wsp*). Por ejemplo, puede personalizar las propiedades de MSBuild para cambiar el directorio intermedio de empaquetado y los grupos de elementos de MSBuild que especifican los archivos enumerados.
@@ -40,11 +42,11 @@ ms.locfileid: "91585815"
 
     Este ejemplo muestra un mensaje antes del empaquetado de este destino.
 
-2. Asigne al archivo el nombre **CustomLayout. SharePoint. targets**y guárdelo en la carpeta del proyecto de SharePoint.
+2. Asigne al archivo el nombre **CustomLayout. SharePoint. targets** y guárdelo en la carpeta del proyecto de SharePoint.
 
 3. Abra el proyecto, abra el menú contextual y, a continuación, elija **descargar el proyecto**.
 
-4. En **Explorador de soluciones**, abra el menú contextual del proyecto y, a continuación, elija **Editar** * \<ProjectName> . vbproj* o **Editar** * \<ProjectName> . csproj*.
+4. En **Explorador de soluciones**, abra el menú contextual del proyecto y, a continuación, elija **Editar** *\<ProjectName> . vbproj* o **Editar** *\<ProjectName> . csproj*.
 
 5. Después `Import` de la línea situada cerca del final del archivo de proyecto, agregue la línea siguiente.
 
@@ -80,5 +82,5 @@ ms.locfileid: "91585815"
 
    Al publicar el proyecto, el mensaje BeforeLayout aparece antes de que se inicie el empaquetado y el mensaje AfterLayout aparece después de que finalice el empaquetado.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Empaquetado e implementación de soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

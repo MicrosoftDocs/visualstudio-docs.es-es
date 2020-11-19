@@ -1,5 +1,7 @@
 ---
 title: Reference (elemento, plantillas de Visual Studio) | Microsoft Docs
+description: Obtenga información sobre el elemento Reference y cómo especifica la referencia de ensamblado que se va a agregar cuando el elemento se agregue a un proyecto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11d893f6268a69172d27a0f7caee707767abfe89
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dcb713a62ebc9a0c3e4daf5aa16f36779b1a1fdc
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701623"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903772"
 ---
 # <a name="reference-element-visual-studio-templates"></a>Reference (elemento, plantillas de Visual Studio)
 Especifica la referencia de ensamblado para agregar cuando el elemento se agrega a un proyecto.
@@ -46,7 +48,7 @@ Especifica la referencia de ensamblado para agregar cuando el elemento se agrega
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|[Assembl](../extensibility/assembly-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Especifica información sobre un ensamblado, que la plantilla utiliza para agregar una referencia de ese ensamblado a los proyectos. Debe haber un `Assembly` elemento en cada `Reference` elemento.|
+|[Ensamblaje](../extensibility/assembly-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Especifica información sobre un ensamblado, que la plantilla utiliza para agregar una referencia de ese ensamblado a los proyectos. Debe haber un `Assembly` elemento en cada `Reference` elemento.|
 
 ### <a name="parent-elements"></a>Elementos primarios
 

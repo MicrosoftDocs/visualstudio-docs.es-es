@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: personalizar un paquete de solución de SharePoint | Microsoft Docs'
+description: Use el diseñador de paquetes para crear y personalizar un paquete de solución de SharePoint (. wsp). Permite ver o sobrescribir el archivo de manifiesto empaquetado. Cambie la plantilla de manifiesto.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 77b66160d489f711b5588fdcdd024d13769d734f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7055be0b089a0b7c582ef0b66d84951d01685870
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016866"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903642"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package"></a>Cómo: personalizar un paquete de solución de SharePoint
   Puede usar el diseñador de paquetes para crear y personalizar un paquete (*. wsp*). Por ejemplo, puede agregar características y elementos de proyecto de SharePoint, especificar si el servidor Web se restablece cuando se implementa la solución y establecer el tipo de servidor de implementación.
@@ -31,7 +33,7 @@ ms.locfileid: "86016866"
 
 #### <a name="to-open-the-package-designer"></a>Para abrir el diseñador de paquetes
 
-- En **Explorador de soluciones**, haga doble clic en **Paquete**o elija **Ver diseñador** en el menú contextual del **paquete**.
+- En **Explorador de soluciones**, haga doble clic en **Paquete** o elija **Ver diseñador** en el menú contextual del **paquete**.
 
 ## <a name="view-the-packaged-manifestffile"></a>Ver el manifestfFile empaquetado
  Puede usar el diseñador de paquetes para modificar y generar el archivo de manifiesto empaquetado. Después, puede ver el código XML de este archivo en Visual Studio.
@@ -88,4 +90,4 @@ ms.locfileid: "86016866"
      La plantilla se actualiza con el texto original y se pierden los cambios en el XML.
 
 ## <a name="see-also"></a>Consulte también
-- [Empaquetar e implementar soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
+- [Empaquetado e implementación de soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

@@ -1,5 +1,7 @@
 ---
 title: SortOrder (elemento, plantillas de Visual Studio) | Microsoft Docs
+description: Obtenga información sobre el elemento SortOrder y cómo especifica un valor que se usa para organizar la plantilla tal y como aparece en el cuadro de diálogo nuevo proyecto o agregar nuevo elemento.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 935d00335a21d3e129e79ce351e554ea93787447
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f07c3b62d1412564fd74c420b31b2a9fed41d1fa
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699955"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903759"
 ---
 # <a name="sortorder-element-visual-studio-templates"></a>SortOrder (Elemento, Plantillas de Visual Studio)
 Especifica un valor que se usa para organizar la plantilla, entre otras plantillas de la misma categoría, tal y como aparece en el cuadro de diálogo **nuevo proyecto** o **Agregar nuevo elemento** .
@@ -82,6 +84,6 @@ Especifica un valor que se usa para organizar la plantilla, entre otras plantill
 
  En este ejemplo, el `SortOrder` elemento es relativamente alto. Es probable que otras [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] plantillas de elementos tengan un `SortOrder` valor inferior a `290` y aparecerán delante de esta plantilla en el cuadro de diálogo **nuevo elemento** .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Crear plantillas de proyecto y de elemento](../ide/creating-project-and-item-templates.md)

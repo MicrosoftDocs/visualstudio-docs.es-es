@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: personalizar una característica de SharePoint | Microsoft Docs'
+description: Personalización de las características de SharePoint en Visual Studio. El diseñador de características se abre cuando se agrega una nueva característica en Explorador de soluciones o en el explorador de paquetes de SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a330f3c4cbe1e410ddc6a1612796c92eeda281b8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b4846d79af7a031970e8870626f88450e8a3e647
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016902"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903668"
 ---
 # <a name="how-to-customize-a-sharepoint-feature"></a>Cómo: personalizar una característica de SharePoint
   Puede crear y personalizar las características de SharePoint mediante el diseñador de características de Visual Studio. Por ejemplo, puede establecer el ámbito de la característica y agregar otras características como dependencias. De forma predeterminada, el diseñador de características se abre cuando se agrega una nueva característica en Explorador de soluciones o en el explorador de paquetes de SharePoint.
@@ -46,7 +48,7 @@ ms.locfileid: "86016902"
 
 1. En **Explorador de soluciones**, elija el icono **Mostrar todos los archivos** .
 
-2. Expanda características, expanda FeatureName, expanda FeatureName. característica y, a continuación, abra el archivo de * \<FeatureName>.Template.xml* .
+2. Expanda características, expanda FeatureName, expanda FeatureName. característica y, a continuación, abra el archivo de *\<FeatureName>.Template.xml* .
 
     > [!NOTE]
     > Al abrir el archivo XML de manifiesto de la plantilla de características, los archivos se validan automáticamente y se pueden omitir las advertencias que aparecen en la ventana de Lista de errores.
@@ -90,4 +92,4 @@ ms.locfileid: "86016902"
 2. La plantilla se actualiza con el texto original y se pierden los cambios en el XML.
 
 ## <a name="see-also"></a>Consulte también
-- [Empaquetar e implementar soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
+- [Empaquetado e implementación de soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
