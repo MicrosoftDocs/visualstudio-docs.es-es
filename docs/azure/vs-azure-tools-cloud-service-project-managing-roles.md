@@ -3,17 +3,16 @@ title: Administración de roles en los servicios en la nube de Azure
 description: Obtenga información sobre cómo agregar y quitar roles en los servicios en la nube de Azure con Visual Studio.
 author: ghogen
 manager: jillfra
-assetId: 5ec9ae2e-8579-4e5d-999e-8ae05b629bd1
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 897cb36ee2afa650e042b92243c6044684468a6e
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 8e932084f9bf3d4631b2fae027224f8973602f13
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398844"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902589"
 ---
 # <a name="managing-roles-in-azure-cloud-services-with-visual-studio"></a>Administración de roles en servicios en la nube de Azure con Visual Studio
 Una vez creado el servicio en la nube de Azure, puede agregarle nuevos roles o quitarle roles existentes. También puede importar un proyecto existente y convertirlo en un rol. Por ejemplo, puede importar una aplicación web ASP.NET y designarla como rol web.
@@ -23,7 +22,7 @@ Los pasos siguientes le explican cómo agregar un rol web o un rol de trabajo a 
 
 1. Cree o abra un proyecto de servicio en la nube de Azure en Visual Studio.
 
-1. En el **Explorador de soluciones** , expanda el nodo del proyecto
+1. En el **Explorador de soluciones**, expanda el nodo del proyecto
 
 1. Haga clic con el botón derecho en el nodo **Roles** para ver el menú contextual. En el menú contextual, seleccione **Agregar** y, luego, seleccione un rol web o un rol de trabajo existente en la solución actual o cree un proyecto de rol web o de trabajo. También puede seleccionar un proyecto adecuado, por ejemplo, un proyecto de aplicación web ASP.NET, y asociarlo a un proyecto de rol.
 
@@ -34,7 +33,7 @@ Los pasos siguientes le explican cómo quitar un rol web o un rol de trabajo de 
 
 1. Cree o abra un proyecto de servicio en la nube de Azure en Visual Studio.
 
-1. En el **Explorador de soluciones** , expanda el nodo del proyecto
+1. En el **Explorador de soluciones**, expanda el nodo del proyecto
 
 1. Expanda el nodo **Roles**.
 

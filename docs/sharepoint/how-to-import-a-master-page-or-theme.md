@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: importar una página maestra o un tema | Microsoft Docs'
+description: Cree plantillas para páginas maestras y temas en SharePoint Designer y, a continuación, importe en Visual Studio para dar a las páginas del sitio de SharePoint una apariencia coherente.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7abca9e9141fdc8d4540e8a38e9579862fc540f1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c17f4e7477a20ea245eaa359a6f9611a8dc4ece6
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015300"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903499"
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>Cómo importar un tema o página maestra
   Puede dar una apariencia coherente a las páginas del sitio de SharePoint creando y usando páginas maestras y temas. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] no proporciona plantillas para estos elementos, pero puede crearlos en SharePoint Designer y, a continuación, importarlos en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Para obtener más información, vea [bloque de creación: páginas e interfaz de usuario](/previous-versions/office/developer/sharepoint-2010/ee539040(v=office.14)) en el sitio web de Microsoft.
@@ -41,7 +43,7 @@ ms.locfileid: "86015300"
 
 6. Elija el nodo del módulo.
 
-7. En la barra de menús, elija **proyecto**  >  **Agregar elemento existente**y, a continuación, elija el archivo de tema o la página maestra.
+7. En la barra de menús, elija **proyecto**  >  **Agregar elemento existente** y, a continuación, elija el archivo de tema o la página maestra.
 
      Los archivos de la página maestra tienen la extensión. Master y los archivos de tema tienen la extensión. thmx.
 
@@ -92,5 +94,5 @@ ms.locfileid: "86015300"
 ## <a name="see-also"></a>Consulte también
 - [Páginas maestras](/previous-versions/office/developer/sharepoint-2010/ms443795(v=office.14))
 - [Importar elementos de un sitio de SharePoint existente](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
-- [Crear páginas para SharePoint](../sharepoint/creating-pages-for-sharepoint.md)
-- [Usar módulos para incluir archivos en la solución](../sharepoint/using-modules-to-include-files-in-the-solution.md)
+- [Creación de páginas para SharePoint](../sharepoint/creating-pages-for-sharepoint.md)
+- [Uso de módulos para incluir archivos en la solución](../sharepoint/using-modules-to-include-files-in-the-solution.md)

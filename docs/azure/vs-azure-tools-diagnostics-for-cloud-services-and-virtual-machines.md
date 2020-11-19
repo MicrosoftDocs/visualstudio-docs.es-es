@@ -4,17 +4,16 @@ ms.custom: SEO-VS-2020
 description: Aprenda a configurar el diagnóstico para depurar los servicios en la nube y las máquinas virtuales (VM) de Azure en Visual Studio.
 author: ghogen
 manager: jillfra
-ms.assetid: e70cd7b4-6298-43aa-adea-6fd618414c26
 ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.openlocfilehash: 55a0f96959d0e3e8bbc70c458ab99bbc06b06a62
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: ababbbfcfa71f3083a292103f4fa4f1ba481faae
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809851"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902628"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Configuración de diagnósticos para Azure Cloud Services y máquinas virtuales
 Cuando tenga que solucionar problemas de un servicio en la nube o una máquina virtual de Azure, puede usar Visual Studio para configurar más fácilmente Azure Diagnostics. Diagnostics captura los datos del sistema y los datos de registro en las máquinas virtuales y las instancias de máquina virtual que ejecutan el servicio en la nube. Los datos de Diagnostics se transfieren a la cuenta de almacenamiento que elija. Para más información sobre el registro de diagnósticos en Azure, consulte [Habilitación del registro de diagnóstico para Web Apps en Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).
@@ -204,7 +203,7 @@ Cuando haya recopilado los datos de diagnóstico para un servicio en la nube o u
 1. Implemente su servicio en la nube como de costumbre y luego ejecútelo.
 2. Puede ver los datos de diagnóstico en un informe que Visual Studio genera o en tablas de su cuenta de almacenamiento. Para ver los datos en un informe, abra Cloud Explorer o el Explorador de servidores, abra el menú contextual del nodo para el rol que le interesa y luego seleccione **Ver datos de diagnóstico**.
 
-    ![Ver datos de diagnóstico](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC748912.png)
+    ![Visualización de datos de diagnóstico](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC748912.png)
 
     Aparece un informe que muestra los datos disponibles.
 

@@ -3,17 +3,16 @@ title: Publicar un servicio en la nube mediante Azure Tools | Microsoft Docs
 description: Obtenga información sobre cómo publicar proyectos de servicios en la nube de Azure mediante Visual Studio.
 author: ghogen
 manager: jillfra
-assetId: 1a07b6e4-3678-4cbf-b37e-4520b402a3d9
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 4e8aa31189a04dace088f1bcf8cc7ad88e0b20ac
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: f4aebb023aa764b0f2d7cc1c5426a63e7df81200
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399323"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902134"
 ---
 # <a name="publishing-a-cloud-service-using-visual-studio"></a>Publicación de un servicio en la nube mediante Azure Tools
 
@@ -42,7 +41,7 @@ Cuando publica su aplicación de Azure, puede realizar una de las siguientes tar
 
    a. En el menú contextual del proyecto de Azure, elija **Empaquetar**.
 
-   b. En el cuadro de diálogo **Empaquetar aplicación de Azure** , elija la configuración del servicio para el que desea crear un paquete y, a continuación, elija la configuración de compilación.
+   b. En el cuadro de diálogo **Empaquetar aplicación de Azure**, elija la configuración del servicio para el que desea crear un paquete y, a continuación, elija la configuración de compilación.
 
    c. (opcional) Para activar el Escritorio remoto para el servicio en la nube después de haberlo publicado, seleccione **Habilitar Escritorio remoto para todos los roles** y luego seleccione **Configuración** para configurar las credenciales del Escritorio remoto. Para más información, vea [Habilitación de la conexión a Escritorio remoto para un rol de Azure Cloud Services mediante Visual Studio](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio).
 
@@ -66,19 +65,19 @@ Si la infraestructura back-end de su aplicación es estable, pero los roles web 
 
 ### <a name="requirements-for-using-web-deploy"></a>Requisitos para utilizar Web Deploy
 
-- **Solo con fines de desarrollo y prueba** : los cambios se realizan directamente en la máquina virtual en la que se está ejecutando el rol Web. Si esta máquina virtual tiene que ser reciclada, se pierden los cambios porque el paquete original que publicó se usa para volver a crear la máquina virtual del rol. Vuelva a publicar la aplicación para obtener los últimos cambios del rol web.
+- **Solo con fines de desarrollo y prueba**: los cambios se realizan directamente en la máquina virtual en la que se está ejecutando el rol Web. Si esta máquina virtual tiene que ser reciclada, se pierden los cambios porque el paquete original que publicó se usa para volver a crear la máquina virtual del rol. Vuelva a publicar la aplicación para obtener los últimos cambios del rol web.
 
-- **Solo se pueden actualizar los roles web** : los roles de trabajo no se pueden actualizar. Además, no puede actualizar `RoleEntryPoint` en `web role.cs`.
+- **Solo se pueden actualizar los roles web**: los roles de trabajo no se pueden actualizar. Además, no puede actualizar `RoleEntryPoint` en `web role.cs`.
 
-- **Solo puede admitir una única instancia de un rol Web** : no puede tener varias instancias de ningún rol Web en su entorno de implementación. Sin embargo, se admiten varios roles web cada uno con solo una instancia.
+- **Solo puede admitir una única instancia de un rol Web**: no puede tener varias instancias de ningún rol Web en su entorno de implementación. Sin embargo, se admiten varios roles web cada uno con solo una instancia.
 
-- **Habilite las conexiones de Escritorio remoto** : este requisito permite que Web Deploy utilice el usuario y la contraseña para conectar con la máquina virtual e implementar los cambios en el servidor que ejecuta Internet Information Services (IIS). Además, podría necesitar conectar a la máquina virtual para agregar un certificado de confianza a IIS en esta máquina virtual. (Este certificado asegura que la conexión remota de IIS que usa Web Deploy sea segura).
+- **Habilite las conexiones de Escritorio remoto**: este requisito permite que Web Deploy utilice el usuario y la contraseña para conectar con la máquina virtual e implementar los cambios en el servidor que ejecuta Internet Information Services (IIS). Además, podría necesitar conectar a la máquina virtual para agregar un certificado de confianza a IIS en esta máquina virtual. (Este certificado asegura que la conexión remota de IIS que usa Web Deploy sea segura).
 
 En el siguiente procedimiento se supone que utiliza el asistente **Publicar aplicación de Azure**.
 
 ### <a name="enable-web-deploy-when-you-publish-your-application"></a>Habilitación de Web Deploy al publicar la aplicación
 
-1. Para habilitar la opción **Habilitar Web Deploy para todos los roles web** , primero debe configurar las conexiones de Escritorio remoto. Seleccione **Habilitar Escritorio remoto** para todos los roles y luego escriba en el cuadro **Configuración del Escritorio remoto** que aparece las credenciales que se usarán para conectarse de forma remota. Vea [Habilitación de la conexión a Escritorio remoto para un rol de Azure Cloud Services mediante Visual Studio](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio).
+1. Para habilitar la opción **Habilitar Web Deploy para todos los roles web**, primero debe configurar las conexiones de Escritorio remoto. Seleccione **Habilitar Escritorio remoto** para todos los roles y luego escriba en el cuadro **Configuración del Escritorio remoto** que aparece las credenciales que se usarán para conectarse de forma remota. Vea [Habilitación de la conexión a Escritorio remoto para un rol de Azure Cloud Services mediante Visual Studio](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio).
 
 1. Para habilitar Web Deploy para todos los roles web de su aplicación, seleccione **Habilitar Web Deploy para todos los roles web**.
 
@@ -119,7 +118,7 @@ En el siguiente procedimiento se supone que utiliza el asistente **Publicar apli
 
    a. Para conectarse a la máquina virtual que está ejecutando el rol web, seleccione la instancia del rol web en **Cloud Explorer** o en el **Explorador de servidores** y después elija **Conectar utilizando Escritorio remoto**. Para obtener pasos detallados sobre cómo conectarse a la máquina virtual, consulte [Habilitación de la conexión a Escritorio remoto para un rol de Azure Cloud Services mediante Visual Studio](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio). El explorador le pedirá que descargue un archivo `.rdp`.
 
-   b. Para agregar un certificado SSL, abra el servicio de administración en el Administrador de IIS. En el Administrador de IIS, habilite SSL abriendo el vínculo **Enlaces** en el panel **Acción**. Aparecerá el cuadro de diálogo **Agregar enlace de sitio** . Elija **Agregar** y, después, seleccione HTTPS en la lista desplegable **Tipo**. En la lista de **certificados SSL** , elija el certificado SSL que obtuvo, firmado por una entidad de certificación y que cargó en Azure Portal. Para obtener más información, consulte [Configurar los valores de conexión para el servicio de administración](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770458(v=ws.10)).
+   b. Para agregar un certificado SSL, abra el servicio de administración en el Administrador de IIS. En el Administrador de IIS, habilite SSL abriendo el vínculo **Enlaces** en el panel **Acción**. Aparecerá el cuadro de diálogo **Agregar enlace de sitio** . Elija **Agregar** y, después, seleccione HTTPS en la lista desplegable **Tipo**. En la lista de **certificados SSL**, elija el certificado SSL que obtuvo, firmado por una entidad de certificación y que cargó en Azure Portal. Para obtener más información, consulte [Configurar los valores de conexión para el servicio de administración](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770458(v=ws.10)).
 
       > [!NOTE]
       > Si agrega un certificado SSL de confianza, el triángulo de advertencia amarillo ya no aparece en el **Asistente para publicación**.
@@ -146,11 +145,11 @@ Puede que deba incluir archivos específicos en su paquete de servicio para que 
 
 1. Abra al menú contextual del ensamblado que agregó y elija **Propiedades**. Se muestra la ventana Propiedades.
 
-1. Para incluir este ensamblado en el paquete del servicio en la lista **Copia local** , elija **True**.
+1. Para incluir este ensamblado en el paquete del servicio en la lista **Copia local**, elija **True**.
 
-1. Para incluir archivos en el paquete del servicio que se han agregado al proyecto de rol web, abra el menú contextual del archivo y elija **Propiedades**. De la ventana **Propiedades** , elija **Contenido** de la lista **Acción de generación**.
+1. Para incluir archivos en el paquete del servicio que se han agregado al proyecto de rol web, abra el menú contextual del archivo y elija **Propiedades**. De la ventana **Propiedades**, elija **Contenido** de la lista **Acción de generación**.
 
-1. Para incluir archivos en el paquete del servicio que se han agregado al proyecto de rol de trabajo, abra el menú contextual del archivo y elija **Propiedades**. De la ventana **Propiedades** , elija **Copiar si es posterior** de la lista **Copiar en el directorio de resultados**.
+1. Para incluir archivos en el paquete del servicio que se han agregado al proyecto de rol de trabajo, abra el menú contextual del archivo y elija **Propiedades**. De la ventana **Propiedades**, elija **Copiar si es posterior** de la lista **Copiar en el directorio de resultados**.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

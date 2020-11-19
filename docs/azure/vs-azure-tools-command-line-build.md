@@ -3,17 +3,16 @@ title: Compilación de línea de comandos de Azure | Microsoft Docs
 description: Compilación de línea de comandos de Azure
 author: ghogen
 manager: jillfra
-assetId: 94b35d0d-0d35-48b6-b48b-3641377867fd
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/05/2017
 ms.author: ghogen
-ms.openlocfilehash: 940636c6df2f16445b5510543b5f2a39d7076f7e
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 64c18ea8b572d8481b2b2d04f8a8e16f21afc44a
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398948"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902505"
 ---
 # <a name="building-azure-projects-from-the-command-line"></a>Compilación de proyectos de Azure desde la línea de comandos
 Con Microsoft Build Engine (MSBuild) puede compilar productos en entornos de laboratorio de compilación en los que Visual Studio no está instalado. MSBuild utiliza un formato XML para archivos de proyecto que es ampliable y totalmente compatible con Microsoft. En este formato de archivo, puede describir los elementos que deben crearse en una o más plataformas y configuraciones.

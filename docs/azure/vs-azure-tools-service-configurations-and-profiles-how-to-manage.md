@@ -3,17 +3,16 @@ title: Administración de configuraciones de servicio y perfiles | Microsoft Doc
 description: Aprenda a trabajar con las configuraciones de servicio y los archivos de configuración de perfiles que almacenan la configuración de los entornos de implementación y la configuración de publicación para los servicios en la nube.
 author: ghogen
 manager: jillfra
-assetId: 7da8c551-fb06-4057-b5c7-c77f4b39d803
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 42c4668b2bf9925fe92db51b6a4275c535960a61
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 751214a99c7724c83f01226164202f90425ebf65
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398883"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902086"
 ---
 # <a name="how-to-manage-service-configurations-and-profiles"></a>Administración de configuraciones de servicio y perfiles
 ## <a name="overview"></a>Información general
@@ -26,14 +25,14 @@ Puede agregar, eliminar, cambiar el nombre y modificar las configuraciones de se
 
 ![Administrar configuraciones de servicio](./media/vs-azure-tools-service-configurations-and-profiles-how-to-manage/manage-service-config.png)
 
-También puede abrir el cuadro de diálogo **Administrar configuraciones** de las páginas de propiedades de rol. Para abrir las propiedades de un rol en el proyecto de Azure, abra el menú contextual para ese rol y, a continuación, elija **Propiedades**. En la pestaña **Configuración** , expanda la lista **Configuración de servicios** y, después, haga clic en **Administrar** para abrir el cuadro de diálogo **Administrar configuraciones**.
+También puede abrir el cuadro de diálogo **Administrar configuraciones** de las páginas de propiedades de rol. Para abrir las propiedades de un rol en el proyecto de Azure, abra el menú contextual para ese rol y, a continuación, elija **Propiedades**. En la pestaña **Configuración**, expanda la lista **Configuración de servicios** y, después, haga clic en **Administrar** para abrir el cuadro de diálogo **Administrar configuraciones**.
 
 ### <a name="to-add-a-service-configuration"></a>Para agregar una configuración de servicio
 1. En el Explorador de soluciones, abra el menú contextual del proyecto de Azure y luego seleccione **Administrar configuraciones**.
 
     Aparece el cuadro de diálogo **Administrar configuraciones de servicio**.
 2. Para agregar una configuración de servicio, tiene que crear una copia de una configuración existente. Para ello, elija la configuración que quiere copiar en la lista Nombre y luego seleccione **Crear copia**.
-3. (Opcional) Para dar un nombre diferente a la configuración del servicio, elija la nueva configuración de servicio en la lista Nombre y luego seleccione **Cambiar nombre**. En el cuadro de texto **Nombre** , escriba el nombre que quiere usar para esta configuración de servicio y luego seleccione **Aceptar**.
+3. (Opcional) Para dar un nombre diferente a la configuración del servicio, elija la nueva configuración de servicio en la lista Nombre y luego seleccione **Cambiar nombre**. En el cuadro de texto **Nombre**, escriba el nombre que quiere usar para esta configuración de servicio y luego seleccione **Aceptar**.
 
     Se agrega un nuevo archivo de configuración de servicio denominado ServiceConfiguration.[Nuevo nombre].cscfg al proyecto de Azure en el Explorador de soluciones.
 
@@ -64,15 +63,15 @@ Al ejecutar el asistente por primera vez, se crea un perfil predeterminado. Visu
 
 ### <a name="to-add-a-profile"></a>Para agregar un perfil
 1. Abra el menú contextual del proyecto de Azure y seleccione **Publicar**.
-2. Junto a la lista **Perfil de destino** , seleccione **Guardar perfil** , como se muestra en la ilustración siguiente. Con esto se crea un perfil.
+2. Junto a la lista **Perfil de destino**, seleccione **Guardar perfil**, como se muestra en la ilustración siguiente. Con esto se crea un perfil.
 
     ![Crear un nuevo perfil](./media/vs-azure-tools-service-configurations-and-profiles-how-to-manage/create-new-profile.png)
 3. Después de crea el perfil, haga clic en **<Administrar...>** en la lista **Perfil de destino**.
 
-    Aparece el cuadro de diálogo **Administrar perfiles** , como se muestra en la siguiente ilustración.
+    Aparece el cuadro de diálogo **Administrar perfiles**, como se muestra en la siguiente ilustración.
 
     ![Administrar diálogo de perfiles](./media/vs-azure-tools-service-configurations-and-profiles-how-to-manage/manage-profiles.png)
-4. En la lista **Nombre** , elija un perfil y luego seleccione **Crear copia**.
+4. En la lista **Nombre**, elija un perfil y luego seleccione **Crear copia**.
 5. Elija el botón **Cerrar**.
 
     El nuevo perfil aparece en la lista de perfiles de destino.
@@ -82,10 +81,10 @@ Al ejecutar el asistente por primera vez, se crea un perfil predeterminado. Visu
 
 ### <a name="to-rename-or-delete-a-profile"></a>Para cambiar el nombre de un perfil o eliminarlo 
 1. Abra el menú contextual del proyecto de Azure y seleccione **Publicar**.
-2. En la lista **Perfil de destino** , seleccione **Administrar**.
-3. En el cuadro de diálogo **Administrar perfiles** , seleccione el perfil que quiere eliminar y luego seleccione **Quitar**.
+2. En la lista **Perfil de destino**, seleccione **Administrar**.
+3. En el cuadro de diálogo **Administrar perfiles**, seleccione el perfil que quiere eliminar y luego seleccione **Quitar**.
 4. En el cuadro de diálogo de confirmación que aparece, seleccione **Aceptar**.
-5. Seleccione **Close** (Cerrar).
+5. Seleccione **Cerrar**.
 
 ### <a name="to-change-a-profile"></a>Para cambiar un perfil
 1. Abra el menú contextual del proyecto de Azure y seleccione **Publicar**.

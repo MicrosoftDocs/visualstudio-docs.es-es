@@ -1,5 +1,7 @@
 ---
 title: WizardData (elemento, plantillas de Visual Studio) | Microsoft Docs
+description: Obtenga información sobre el elemento WizardData y cómo especifica un XML personalizado.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa3f9d2e971d944b964f4b194d1324ff960fbd24
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0472bfeb3a988bcb39b4daf80cea92398130f59f
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740391"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903408"
 ---
 # <a name="wizarddata-element-visual-studio-templates"></a>WizardData (Elemento, Plantillas de Visual Studio)
 
@@ -104,7 +106,7 @@ En el ejemplo siguiente se muestran los metadatos de la plantilla de proyecto es
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Crear plantillas de proyecto y de elemento](../ide/creating-project-and-item-templates.md)

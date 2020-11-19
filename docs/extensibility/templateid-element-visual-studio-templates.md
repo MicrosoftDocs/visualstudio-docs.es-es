@@ -1,5 +1,7 @@
 ---
 title: TemplateID (elemento, plantillas de Visual Studio) | Microsoft Docs
+description: Obtenga información sobre el elemento TemplateID y cómo especifica un identificador para una plantilla de elemento clasificada por el elemento TemplateGroupID en un grupo de plantillas de elementos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8eb5abac9c837b3022354d6da743ac8f21d5e41d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 734af9de80da5f095f9ad7f0e52023659fea6b67
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699067"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903187"
 ---
 # <a name="templateid-element-visual-studio-templates"></a>TemplateID (Elemento, Plantillas de Visual Studio)
 Especifica un identificador para una plantilla de elemento que se clasifica en un grupo de plantillas de elementos mediante el elemento [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md) .
@@ -56,8 +58,8 @@ Especifica un identificador para una plantilla de elemento que se clasifica en u
 
  Si un archivo. vstemplate omite el `TemplateID` elemento, se usa el elemento [Name](../extensibility/name-element-visual-studio-templates.md) como identificador de la plantilla.
 
- El valor del `TemplateID` elemento se utiliza junto con el registro del sistema del proyecto (HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\11.0\Projects \\ ) para filtrar las plantillas que aparecen en el cuadro de diálogo **Agregar nuevo elemento** .
+ El valor del `TemplateID` elemento se utiliza junto con el registro del sistema del proyecto (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Projects\\ ) para filtrar plantillas que aparecen en el cuadro de diálogo **Agregar nuevo elemento** .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Crear plantillas de proyecto y de elemento](../ide/creating-project-and-item-templates.md)

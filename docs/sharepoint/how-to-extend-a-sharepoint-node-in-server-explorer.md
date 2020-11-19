@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: extender un nodo de SharePoint en Explorador de servidores | Microsoft Docs'
+description: Aprenda a extender un nodo de SharePoint en Explorador de servidores mediante el nodo conexiones de SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,15 +15,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ea556d18641b96ea6a38ef5abf6efe4c93a44cdf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bad90701d19f97036ecba55bb2901739ad30b200
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015028"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903551"
 ---
 # <a name="how-to-extend-a-sharepoint-node-in-server-explorer"></a>Cómo: extender un nodo de SharePoint en Explorador de servidores
-  Puede extender los nodos en el nodo **conexiones de SharePoint** en **Explorador de servidores**. Esto resulta útil si desea agregar nuevos nodos secundarios, elementos de menú contextual o propiedades a un nodo existente. Para obtener más información, vea [extender el nodo conexiones de SharePoint en explorador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
+  Puede extender los nodos en el nodo **conexiones de SharePoint** en **Explorador de servidores**. Esto resulta útil si desea agregar nuevos nodos secundarios, elementos de menú contextual o propiedades a un nodo existente. Para obtener más información, vea [Extensión del nodo Conexiones de SharePoint en el Explorador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
 
 ### <a name="to-extend-a-sharepoint-node-in-server-explorer"></a>Para extender un nodo de SharePoint en Explorador de servidores
 
@@ -83,6 +85,6 @@ ms.locfileid: "86015028"
 
 ## <a name="see-also"></a>Consulte también
 - [Cómo: agregar un nodo de SharePoint personalizado a Explorador de servidores](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md)
-- [Extender el nodo conexiones de SharePoint en Explorador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
+- [Extensión del nodo Conexiones de SharePoint en el Explorador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
 - [Tutorial: extender Explorador de servidores para mostrar elementos Web](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
 - [Asociar datos personalizados con las extensiones de herramientas de SharePoint](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)

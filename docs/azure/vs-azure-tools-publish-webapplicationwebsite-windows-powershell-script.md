@@ -4,20 +4,19 @@ description: Aprenda a publicar un proyecto web en un sitio web de Azure. Este s
 ms.custom: SEO-VS-2020
 author: ghogen
 manager: jillfra
-assetId: 63cfaa2d-f04d-40dc-8677-345385c278d5
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: c487084a276be31730f1e268527f4c10a2f7b747
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 0a6657f8a6da751614d7d7da3f526aeebd817d5c
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398831"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902173"
 ---
 # <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publicación de WebApplicationWebSite (script de Windows PowerShell)
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 Publica un proyecto web en un sitio web de Azure. El script crea los recursos necesarios en su suscripción de Azure si no existen.
 
 ```

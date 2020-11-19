@@ -1,5 +1,7 @@
 ---
 title: TemplateGroupID (elemento, plantillas de Visual Studio) | Microsoft Docs
+description: Obtenga información sobre el elemento TemplateGroupID y cómo especifica el tipo de proyecto en el que se mostrarán las plantillas de elementos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: affc324418e3745f85fb0b91a0ef7abda0ab28b0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e5f7d30036f0f25d1f81b690168675d74fc36bbd
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699074"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903226"
 ---
 # <a name="templategroupid-element-visual-studio-templates"></a>TemplateGroupID (Elemento, Plantillas de Visual Studio)
 Especifica en qué tipo de proyecto se mostrará una plantilla de elemento. Este elemento es importante cuando [ShowByDefault (plantillas de Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) está establecido en `false` . Cuando [ShowByDefault (plantillas de Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) está establecido en `true` , una plantilla de elemento está disponible en todos los tipos de proyecto.
@@ -56,7 +58,7 @@ Especifica en qué tipo de proyecto se mostrará una plantilla de elemento. Este
 ## <a name="remarks"></a>Observaciones
  `TemplateGroupID` es un elemento.
 
- El valor del `TemplateGroupID` elemento se utiliza junto con el registro del sistema del proyecto (HKEY_LOCAL_MACHINE \Software\microsoft\visualstudio \\ *\<version number>* \projects \\ ) para filtrar plantillas que aparecen en el cuadro de diálogo **Agregar nuevo elemento** .
+ El valor del `TemplateGroupID` elemento se utiliza junto con el registro del sistema del proyecto (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<version number>* \projects \\ ) para filtrar las plantillas que aparecen en el cuadro de diálogo **Agregar nuevo elemento** .
 
 |Valor de Visual C++|Significado|
 |------------------------|-------------|
@@ -70,6 +72,6 @@ Especifica en qué tipo de proyecto se mostrará una plantilla de elemento. Este
 |WinRT-Native|Utilizado para proyectos de la Tienda Windows 8.0|
 |VC-Android|Utilizado para proyectos Android|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Crear plantillas de proyecto y de elemento](../ide/creating-project-and-item-templates.md)

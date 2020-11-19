@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 7c61d91ed3824d3ed9c33f579c321e471edb5a4e
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 4576c2eb15097860870b78fbca0faf727c3eae74
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398987"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902888"
 ---
 # <a name="add-azure-signalr-by-using-visual-studio-connected-services"></a>Agregar Azure Signalr mediante Visual Studio Servicios conectados
 
@@ -42,7 +42,7 @@ La funcionalidad del servicio conectado agrega todo el código de conexión y la
 
 1. Abra el proyecto en Visual Studio.
 
-1. En **Explorador de soluciones** , haga clic con el botón secundario en el nodo **servicios conectados** y, en el menú contextual, seleccione **Agregar servicio conectado**.
+1. En **Explorador de soluciones**, haga clic con el botón secundario en el nodo **servicios conectados** y, en el menú contextual, seleccione **Agregar servicio conectado**.
 
 1. En la pestaña **servicios conectados** , seleccione el icono + para las **dependencias de servicio**.
 
@@ -68,7 +68,7 @@ La funcionalidad del servicio conectado agrega todo el código de conexión y la
 
        ![Nueva instancia de servicio de Azure Signalr](./media/azure-signalr-add-connected-service/create-new-signalr.png)
 
-   1. Cuando se muestra la pantalla **configurar el servicio Azure signalr** , la nueva instancia aparece en la lista. Seleccione la nueva instancia en la lista y, a **continuación** , seleccione siguiente.
+   1. Cuando se muestra la pantalla **configurar el servicio Azure signalr** , la nueva instancia aparece en la lista. Seleccione la nueva instancia en la lista y, a **continuación**, seleccione siguiente.
 
 1. Escriba un nombre de cadena de conexión o elija el valor predeterminado, y elija si desea que la cadena de conexión se almacene en un archivo de secretos locales o en [Azure Key Vault](/azure/key-vault).
 

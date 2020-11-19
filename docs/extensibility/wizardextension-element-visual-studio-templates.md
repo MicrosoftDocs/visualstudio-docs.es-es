@@ -1,5 +1,7 @@
 ---
 title: WizardExtension (elemento, plantillas de Visual Studio) | Microsoft Docs
+description: Obtenga información sobre el elemento WizardExtension y cómo contiene los elementos de registro para personalizar el Asistente para plantillas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd81b32861114d654aa794b992826589406b1df9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07d1c52e2b1dd8fe452d4c24f8dc6db6b32334a5
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740377"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903395"
 ---
 # <a name="wizardextension-element-visual-studio-templates"></a>WizardExtension (Elemento, Plantillas de Visual Studio)
 Contiene los elementos de registro para personalizar el Asistente para plantillas.
@@ -45,7 +47,7 @@ Contiene los elementos de registro para personalizar el Asistente para plantilla
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|[Assembl](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|Elemento necesario.<br /><br /> Especifica el nombre o el nombre seguro de un ensamblado que aparece en la caché global de ensamblados. Debe haber al menos un `Assembly` elemento en un `WizardExtension` elemento.|
+|[Ensamblaje](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|Elemento necesario.<br /><br /> Especifica el nombre o el nombre seguro de un ensamblado que aparece en la caché global de ensamblados. Debe haber al menos un `Assembly` elemento en un `WizardExtension` elemento.|
 |[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|Elemento necesario.<br /><br /> Nombre completo de la clase que implementa la `IWizard` interfaz. Debe haber al menos un `FullClassName` elemento en un `WizardExtension` elemento.|
 
 ### <a name="parent-elements"></a>Elementos primarios
@@ -88,7 +90,7 @@ Contiene los elementos de registro para personalizar el Asistente para plantilla
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Crear plantillas de proyecto y de elemento](../ide/creating-project-and-item-templates.md)
 - [Cómo: Utilizar los asistentes con las plantillas de proyectos](../extensibility/how-to-use-wizards-with-project-templates.md)

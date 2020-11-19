@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: controlar conflictos de implementación | Microsoft Docs'
+description: Vea un ejemplo de cómo implementar su propio código para controlar los conflictos de implementación de un elemento de proyecto de SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5df9677fd349825983cc33c5a8ed2648f34b8c9e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 975fa69a503f5e2acd3e90defd9fa9895c70db00
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015305"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903512"
 ---
 # <a name="how-to-handle-deployment-conflicts"></a>Cómo: controlar conflictos de implementación
   Puede proporcionar su propio código para controlar los conflictos de implementación de un elemento de proyecto de SharePoint. Por ejemplo, puede determinar si algún archivo del elemento de proyecto actual ya existe en la ubicación de implementación y, a continuación, eliminar los archivos implementados antes de que se implemente el elemento de proyecto actual. Para obtener más información acerca de los conflictos de implementación, vea [extender el empaquetado e implementación de SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md).

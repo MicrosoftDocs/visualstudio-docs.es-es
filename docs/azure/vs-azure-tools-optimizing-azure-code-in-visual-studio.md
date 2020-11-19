@@ -3,17 +3,16 @@ title: Optimización del código de Azure
 description: Obtenga información sobre cómo las herramientas de optimización del código de Azure en Visual Studio ayudan a que el código sea más sólido y tenga un mejor rendimiento.
 author: ghogen
 manager: jillfra
-ms.assetid: ed48ee06-e2d2-4322-af22-07200fb16987
 ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 853b51fb5990d74a79f76cc55743ff9ba50f282e
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 5ae141c4ecdf5cfe1819ba2f47aac45f1763fa34
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399784"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902303"
 ---
 # <a name="optimizing-your-azure-code"></a>Optimización del código de Azure
 Al programar aplicaciones que usan Microsoft Azure, debe seguir algunas prácticas de codificación para evitar problemas en la escalabilidad, el comportamiento y el rendimiento de la aplicación en un entorno en la nube. Microsoft proporciona una herramienta de análisis de código de Azure que reconoce e identifica varios de los problemas que se suelen encontrar y ayuda a resolverlos. Puede descargar la herramienta en Visual Studio a través de NuGet.
@@ -119,7 +118,7 @@ Para evitar entrar en un "bucle de recepción", la mejor solución para recibir 
 Comparta sus ideas y comentarios en [Comentarios de análisis de código de Azure](https://social.msdn.microsoft.com/Forums/en-US/home).
 
 ### <a name="reason"></a>Motivo
-Al llamar a **OnMessage** , el cliente inicia un suministro de mensajes interno que sondea constantemente la cola o la suscripción. Este suministro de mensajes contiene un bucle infinito que emite una llamada para recibir mensajes. Si la llamada agota el tiempo de espera, emite una llamada nueva. El intervalo de tiempo de espera está determinado por el valor de la propiedad [OperationTimeout](/dotnet/api/microsoft.servicebus.messaging.messagingfactorysettings) de [MessagingFactory](/dotnet/api/microsoft.servicebus.messaging.messagingfactory) que se usa.
+Al llamar a **OnMessage**, el cliente inicia un suministro de mensajes interno que sondea constantemente la cola o la suscripción. Este suministro de mensajes contiene un bucle infinito que emite una llamada para recibir mensajes. Si la llamada agota el tiempo de espera, emite una llamada nueva. El intervalo de tiempo de espera está determinado por el valor de la propiedad [OperationTimeout](/dotnet/api/microsoft.servicebus.messaging.messagingfactorysettings) de [MessagingFactory](/dotnet/api/microsoft.servicebus.messaging.messagingfactory) que se usa.
 
 La ventaja de usar **OnMessage** en comparación con **Receive** es que los usuarios no tienen que sondear en busca de mensajes, controlar excepciones, procesar varios mensajes en paralelo ni completar los mensajes manualmente.
 
@@ -413,7 +412,7 @@ A partir de WAD 1.3 (incluido con Azure SDK 2.5), ya no es posible usar código 
 Use el diseñador de configuración de diagnósticos para mover la configuración de diagnóstico al archivo de configuración de diagnósticos (diagnostics.wadcfg o diagnostics.wadcfgx para SDK 2.5 y versiones posteriores). También se recomienda que instale [Azure SDK 2.5](https://social.msdn.microsoft.com/Forums/en-US/home) y use la característica de diagnóstico más reciente.
 
 1. En el menú contextual del rol que quiere configurar, elija Propiedades, y luego elija la pestaña Configuración.
-2. En la sección **Diagnósticos** , asegúrese de que la casilla **Habilitar diagnósticos** está seleccionada.
+2. En la sección **Diagnósticos**, asegúrese de que la casilla **Habilitar diagnósticos** está seleccionada.
 3. Elija el botón **Configurar**.
 
    ![Acceso a la opción de habilitar diagnósticos](./media/vs-azure-tools-optimizing-azure-code-in-visual-studio/IC796660.png)

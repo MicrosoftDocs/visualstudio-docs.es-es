@@ -3,18 +3,17 @@ title: Opciones de depuración de servicios en la nube de Azure | Microsoft Docs
 description: Depuración de servicios en la nube de Azure
 author: mikejo5000
 manager: jillfra
-ms.assetid: 80755da7-8350-4f5c-97ce-2962beabb36d
 ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 03/18/2017
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 94e7d48c767ef9705c20b049b57f459290679217
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c32ab209f612c9e818f5e4ef1ab85a341e2027eb
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911849"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902496"
 ---
 # <a name="learn-the-various-ways-to-debug-an-azure-cloud-service"></a>Aprendizaje de las diversas maneras de depurar un servicio en la nube de Azure
 Este artículo contiene vínculos a las diversas maneras de depurar un servicio en la nube de Azure.

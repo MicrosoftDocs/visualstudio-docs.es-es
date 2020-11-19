@@ -3,17 +3,16 @@ title: Administración de recursos de Azure con Cloud Explorer | Microsoft Docs
 description: Obtenga más información sobre cómo usar Cloud Explorer para examinar y administrar recursos de Azure en Visual Studio.
 author: ghogen
 manager: jillfra
-assetId: 6347dc53-f497-49d5-b29b-e8b9f0e939d7
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: 12c82cca6c8873facc1a16a926d90fd0f3918c07
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: c9c2ce60b2096b6c3a4f06fad7360b1d5ea0c753
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399395"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902285"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Administración de los recursos asociados con las cuentas de Azure en Visual Studio Cloud Explorer
 
@@ -33,7 +32,7 @@ Del mismo modo que [Azure Portal](https://portal.azure.com), Cloud Explorer se b
 
 Para ver los recursos asociados a una cuenta de Azure, primero debe agregar la cuenta a **Cloud Explorer**.
 
-1. En **Cloud Explorer** , seleccione el botón **Administración de cuentas** .
+1. En **Cloud Explorer**, seleccione el botón **Administración de cuentas** .
 
    ![Icono de configuración de la cuenta de Azure en Cloud Explorer](./media/vs-azure-tools-resources-managing-with-cloud-explorer/azure-account-settings.png)
 
@@ -53,7 +52,7 @@ Para ver los recursos asociados a una cuenta de Azure, primero debe agregar la c
 
 ## <a name="remove-an-azure-account-from-cloud-explorer"></a>Eliminación de una cuenta de Azure de Cloud Explorer
 
-1. En **Cloud Explorer** , seleccione **Administración de cuentas**.
+1. En **Cloud Explorer**, seleccione **Administración de cuentas**.
 
    ![Configuración de la cuenta de Azure](./media/vs-azure-tools-resources-managing-with-cloud-explorer/azure-account-settings.png)
 
@@ -69,14 +68,14 @@ Para ver los recursos asociados a una cuenta de Azure, primero debe agregar la c
 
 Para ver los recursos de Azure, puede elegir la vista **Tipos de recursos** o **Grupos de recursos**.
 
-1. En **Cloud Explorer** , seleccione la lista desplegable de vistas de recursos.
+1. En **Cloud Explorer**, seleccione la lista desplegable de vistas de recursos.
 
    ![Lista desplegable de Cloud Explorer para seleccionar la vista de recursos deseada](./media/vs-azure-tools-resources-managing-with-cloud-explorer/resources-view-dropdown.png)
 
 1. En el menú contextual, seleccione la vista deseada:
 
-   * Vista **Tipos de recursos** : la vista común que se usa en [Azure Portal](https://portal.azure.com). Muestra los recursos de Azure clasificados según su tipo, como aplicaciones web, cuentas de almacenamiento y máquinas virtuales.
-   * Vista **Grupos de recursos** : clasifica los recursos de Azure según el grupo de recursos de Azure al que están asociados. Un grupo de recursos es una agrupación de recursos de Azure, normalmente usados por una aplicación específica. Para más información sobre los grupos de recursos de Azure, consulte [Información general de Azure Resource Manager](/azure/azure-resource-manager/resource-group-overview).
+   * Vista **Tipos de recursos**: la vista común que se usa en [Azure Portal](https://portal.azure.com). Muestra los recursos de Azure clasificados según su tipo, como aplicaciones web, cuentas de almacenamiento y máquinas virtuales.
+   * Vista **Grupos de recursos**: clasifica los recursos de Azure según el grupo de recursos de Azure al que están asociados. Un grupo de recursos es una agrupación de recursos de Azure, normalmente usados por una aplicación específica. Para más información sobre los grupos de recursos de Azure, consulte [Información general de Azure Resource Manager](/azure/azure-resource-manager/resource-group-overview).
 
    La imagen siguiente muestra una comparación de ambas vistas de recursos:
 
@@ -84,11 +83,11 @@ Para ver los recursos de Azure, puede elegir la vista **Tipos de recursos** o **
 
 ## <a name="view-and-navigate-resources-in-cloud-explorer"></a>Visualización y navegación por los recursos en Cloud Explorer
 
-Para navegar a un recurso de Azure y consultar su información en Cloud Explorer, expanda el tipo del elemento o el grupo de recursos asociado y, luego, seleccione el recurso. Cuando selecciona un recurso, aparece información en las dos pestañas, **Acciones** y **Propiedades** , que se encuentran en la parte inferior de Cloud Explorer.
+Para navegar a un recurso de Azure y consultar su información en Cloud Explorer, expanda el tipo del elemento o el grupo de recursos asociado y, luego, seleccione el recurso. Cuando selecciona un recurso, aparece información en las dos pestañas, **Acciones** y **Propiedades**, que se encuentran en la parte inferior de Cloud Explorer.
 
-* Pestaña **Acciones** : muestra las acciones que puede realizar en Cloud Explorer con el recurso seleccionado. También puede ver estas opciones si hace clic con el botón derecho en el recurso para ver el menú contextual.
+* Pestaña **Acciones**: muestra las acciones que puede realizar en Cloud Explorer con el recurso seleccionado. También puede ver estas opciones si hace clic con el botón derecho en el recurso para ver el menú contextual.
 
-* Pestaña **Propiedades** : muestra las propiedades del recurso, como su tipo, configuración local y grupo de recursos al que está asociado.
+* Pestaña **Propiedades**: muestra las propiedades del recurso, como su tipo, configuración local y grupo de recursos al que está asociado.
 
 La imagen siguiente muestra un ejemplo de comparación de lo que ve en cada pestaña para una instancia de App Service:
 
@@ -96,7 +95,7 @@ La imagen siguiente muestra un ejemplo de comparación de lo que ve en cada pest
 
 Cada recurso tiene la acción **Abrir en el portal**. Cuando se selecciona esta acción, Cloud Explorer muestra el recurso seleccionado en el [Portal de Azure](https://portal.azure.com). La característica **Abrir en el portal** es especialmente útil para navegar a los recursos profundamente anidados.
 
-También pueden aparecer acciones adicionales y valores de propiedad basados en el recurso de Azure. Por ejemplo, las aplicaciones web y lógicas también tienen las acciones **Abrir en el explorador** y **Adjuntar depurador** , además de **Abrir en el portal**. Cuando se elige un blob, una cola o una tabla de cuenta de almacenamiento, aparecen acciones para abrir editores. Las aplicaciones de Azure tienen las propiedades **URL** y **Status** , mientras que los recursos de almacenamiento tienen propiedades de cadena de conexión y de clave.
+También pueden aparecer acciones adicionales y valores de propiedad basados en el recurso de Azure. Por ejemplo, las aplicaciones web y lógicas también tienen las acciones **Abrir en el explorador** y **Adjuntar depurador**, además de **Abrir en el portal**. Cuando se elige un blob, una cola o una tabla de cuenta de almacenamiento, aparecen acciones para abrir editores. Las aplicaciones de Azure tienen las propiedades **URL** y **Status**, mientras que los recursos de almacenamiento tienen propiedades de cadena de conexión y de clave.
 
 ## <a name="find-resources-in-cloud-explorer"></a>Búsqueda de recursos en Cloud Explorer
 
@@ -104,4 +103,4 @@ Para buscar recursos con un nombre específico en las suscripciones de la cuenta
 
   ![Buscar recursos en Cloud Explorer](./media/vs-azure-tools-resources-managing-with-cloud-explorer/search-for-resources.png)
 
-A medida que escribe caracteres en el cuadro de **búsqueda** , solo los recursos que coinciden con los caracteres aparecen en el árbol de recursos.
+A medida que escribe caracteres en el cuadro de **búsqueda**, solo los recursos que coinciden con los caracteres aparecen en el árbol de recursos.

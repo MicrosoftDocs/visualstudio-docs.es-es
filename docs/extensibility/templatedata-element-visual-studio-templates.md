@@ -1,5 +1,7 @@
 ---
 title: TemplateData ((elemento, plantillas de Visual Studio) | Microsoft Docs
+description: Obtenga información sobre el elemento TemplateData (y cómo clasifica la plantilla y define cómo se muestra en el cuadro de diálogo nuevo proyecto o agregar nuevo elemento.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3ce0226286e8cc4623b66c043eb7bd376597118
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc0edf82421ba41198480e6c105dd56c02bd0f7e
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699193"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903265"
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>TemplateData (Elemento, Plantillas de Visual Studio)
 Clasifica la plantilla y define cómo se muestra en el cuadro de diálogo **Nuevo proyecto** o **Agregar nuevo elemento** .
@@ -47,7 +49,7 @@ Clasifica la plantilla y define cómo se muestra en el cuadro de diálogo **Nuev
 
 | Elemento | Descripción |
 | - | - |
-| [Name](../extensibility/name-element-visual-studio-templates.md) | Elemento necesario.<br /><br /> Especifica el nombre de la plantilla tal y como aparece en el cuadro de diálogo **nuevo proyecto** o **Agregar nuevo elemento** . |
+| [Nombre](../extensibility/name-element-visual-studio-templates.md) | Elemento necesario.<br /><br /> Especifica el nombre de la plantilla tal y como aparece en el cuadro de diálogo **nuevo proyecto** o **Agregar nuevo elemento** . |
 | [Descripción](../extensibility/description-element-visual-studio-templates.md) | Elemento necesario.<br /><br /> Especifica la descripción de la plantilla tal como aparece en el cuadro de diálogo **nuevo proyecto** o **Agregar nuevo elemento** . |
 | [Icono](../extensibility/icon-element-visual-studio-templates.md) | Elemento necesario.<br /><br /> Especifica la ruta de acceso y el nombre del archivo de imagen que sirve como icono, que aparece en el cuadro de diálogo **nuevo proyecto** o **Agregar nuevo elemento** de la plantilla. |
 | [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) | Elemento necesario.<br /><br /> Clasifica la plantilla de proyecto para que aparezca bajo el grupo especificado en el cuadro de diálogo **nuevo proyecto** . |

@@ -1,5 +1,7 @@
 ---
 title: VSTemplate (elemento, plantillas de Visual Studio) | Microsoft Docs
+description: Obtenga información sobre el elemento VSTemplate y cómo contiene todos los metadatos sobre la plantilla de proyecto, la plantilla de elemento o el Starter Kit.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 651e8b6dbbe11c450b105f3185e7e987bb30da9b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 973e2ede7e97d1e7710e6571d520be3d8919b9d9
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697862"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903486"
 ---
 # <a name="vstemplate-element-visual-studio-templates"></a>VSTemplate (elemento, plantillas de Visual Studio)
 Contiene todos los metadatos sobre la plantilla de proyecto, la plantilla de elemento o el Starter Kit.

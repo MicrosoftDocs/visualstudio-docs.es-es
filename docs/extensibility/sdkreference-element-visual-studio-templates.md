@@ -1,5 +1,7 @@
 ---
 title: SDKReference (elemento, plantillas de Visual Studio) | Microsoft Docs
+description: Obtenga información sobre el elemento SDKReference y cómo especifica que la plantilla de elemento usa una referencia de SDK.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f43c813e688c1e175f1d36e6f06125f92404c48
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a1272a4765559fcfcde1aa60c57099b5d707f46
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700165"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901692"
 ---
 # <a name="sdkreference-element-visual-studio-templates"></a>SDKReference (Elemento, Plantillas de Visual Studio)
 Especifica que la plantilla del elemento usa una referencia de SDK.
@@ -60,7 +62,7 @@ Especifica que la plantilla del elemento usa una referencia de SDK.
 ...
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [References (Elemento, Plantillas de Visual Studio)](../extensibility/references-element-visual-studio-templates.md)
 - [Reference (Elemento, Plantillas de Visual Studio)](../extensibility/reference-element-visual-studio-templates.md)
 - [Crear plantillas de proyecto y de elemento](../ide/creating-project-and-item-templates.md)

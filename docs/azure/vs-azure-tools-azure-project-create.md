@@ -3,17 +3,16 @@ title: Creación de un proyecto de servicio en la nube de Azure
 description: Obtenga información sobre cómo crear un proyecto de servicio en la nube de Azure con Visual Studio
 author: ghogen
 manager: jillfra
-assetId: ec580df7-3dcc-45a9-a1d9-8c110678dfb5
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/19/2019
 ms.author: ghogen
-ms.openlocfilehash: 1fd554a397c6db3bb1f1d5beb2fc12c0423aed22
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 667d3a0a4e4642c348f6a0dd6663a30fcf704d14
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399759"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902797"
 ---
 # <a name="create-an-azure-cloud-service-project-with-visual-studio"></a>Creación de un proyecto de servicio en la nube de Azure con Visual Studio
 
@@ -49,18 +48,18 @@ En esta sección se le enseñará cómo crear un proyecto de servicio en la nube
    ![Asignación de un nombre al proyecto](./media/vs-azure-tools-azure-project-create/vs-2019/new-project-cloud-service-2.png)
 ::: moniker-end
 
-1. En el cuadro de diálogo **Nuevo servicio en la nube de Microsoft Azure** , seleccione los roles que desea agregar y elija el botón de flecha a la derecha para agregarlos a la solución.
+1. En el cuadro de diálogo **Nuevo servicio en la nube de Microsoft Azure**, seleccione los roles que desea agregar y elija el botón de flecha a la derecha para agregarlos a la solución.
 
     ![Selección de nuevos roles de servicio en la nube de Azure](./media/vs-azure-tools-azure-project-create/new-cloud-service.png)
 
-1. Para cambiar el nombre de un rol que haya agregado, mantenga el puntero sobre el rol en el cuadro de diálogo **Nuevo servicio en la nube de Microsoft Azure** y, en el menú contextual, seleccione **Cambiar nombre**. También puede cambiar el nombre de un rol dentro de la solución (en el **Explorador de soluciones** ) una vez que lo haya agregado.
+1. Para cambiar el nombre de un rol que haya agregado, mantenga el puntero sobre el rol en el cuadro de diálogo **Nuevo servicio en la nube de Microsoft Azure** y, en el menú contextual, seleccione **Cambiar nombre**. También puede cambiar el nombre de un rol dentro de la solución (en el **Explorador de soluciones**) una vez que lo haya agregado.
 
     ![Cambio de nombre de rol de servicio en la nube de Azure](./media/vs-azure-tools-azure-project-create/new-cloud-service-rename.png)
 
-El proyecto de Azure de Visual Studio tiene asociaciones a los proyectos de rol de la solución. El proyecto incluye también el *archivo de definición de servicio* y el *archivo de configuración de servicio* :
+El proyecto de Azure de Visual Studio tiene asociaciones a los proyectos de rol de la solución. El proyecto incluye también el *archivo de definición de servicio* y el *archivo de configuración de servicio*:
 
 - **Archivo de definición de servicio** : define la configuración en tiempo de ejecución de la aplicación, incluidos los roles necesarios, los puntos de conexión y el tamaño de la máquina virtual.
-- **Archivo de configuración de servicio** : configura el número de instancias de un rol que se ejecutan y los valores de la configuración definida para un rol.
+- **Archivo de configuración de servicio**: configura el número de instancias de un rol que se ejecutan y los valores de la configuración definida para un rol.
 
 Para más información sobre estos archivos, consulte [Configuración de los roles para un servicio en la nube de Azure con Visual Studio](vs-azure-tools-configure-roles-for-cloud-service.md).
 

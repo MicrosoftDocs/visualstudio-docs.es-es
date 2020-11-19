@@ -1,6 +1,8 @@
 ---
 title: Obtener datos para un nodo integrado de SharePoint en Explorador de servidores
 titleSuffix: ''
+description: Obtener datos para el componente de SharePoint subyacente de un nodo de SharePoint integrado en la ventana de Explorador de servidores de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7649092cc21fcc7b861f4ddf630007bde896e852
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 3a975374b82b10c0e29d74bcf68d7bce3225a967
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585776"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903525"
 ---
 # <a name="how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer"></a>Cómo: obtener datos para un nodo integrado de SharePoint en Explorador de servidores
   Para cada nodo integrado de SharePoint en **Explorador de servidores**, puede obtener datos del componente de SharePoint subyacente que el nodo representa. Para obtener más información, vea [Extensión del nodo Conexiones de SharePoint en el Explorador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
@@ -48,7 +50,7 @@ ms.locfileid: "91585776"
 ## <a name="deploy-the-extension"></a>Implementar la extensión
  Para implementar la extensión de **Explorador de servidores** , cree un [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] paquete de extensión (VSIX) para el ensamblado y cualquier otro archivo que desee distribuir con la extensión. Para obtener más información, vea [deploy Extensions for the SharePoint Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Extensión del nodo Conexiones de SharePoint en el Explorador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
 - [Cómo: extender un nodo de SharePoint en Explorador de servidores](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)
 - [Usar el servicio de proyecto de SharePoint](../sharepoint/using-the-sharepoint-project-service.md)

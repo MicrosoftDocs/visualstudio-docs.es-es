@@ -1,6 +1,7 @@
 ---
 title: SupportsLanguageDropDown (Elemento, Plantillas de Visual Studio)
 titleSuffix: ''
+description: Obtenga información sobre el elemento SupportsLanguageDropDown (y cómo especifica si la plantilla de elemento Web es idéntica para varios idiomas y si la opción Language está habilitada.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
@@ -16,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ef6cb4f96bf1b31566fef8b714ed30c270ad754
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: b02e4b88b22257e7187e334f8c1064b68c6ef49d
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036852"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901731"
 ---
 # <a name="supportslanguagedropdown-element-visual-studio-templates"></a>SupportsLanguageDropDown (Elemento, Plantillas de Visual Studio)
 

@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: ejecutar un comando de SharePoint | Microsoft Docs'
+description: Lea cómo crear un comando de SharePoint personalizado para llamar a la API del modelo de objetos de servidor desde una extensión de herramientas de SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 789b77f3161b5fe566ea033060e8cab16cbaecc7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2746704e30a61b0971db50a5083855b4a93560d4
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016992"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903540"
 ---
 # <a name="how-to-execute-a-sharepoint-command"></a>Cómo: ejecutar un comando de SharePoint
   Si desea usar el modelo de objetos de servidor en una extensión de herramientas de SharePoint, debe crear un *comando de SharePoint* personalizado para llamar a la API. Después de definir el comando e implementarlo con la extensión de herramientas de SharePoint, la extensión puede ejecutar el comando para llamar al modelo de objetos de servidor de SharePoint. Para ejecutar el comando, use uno de los métodos ExecuteCommand de un <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> objeto.
