@@ -34,10 +34,10 @@ Para agregar administradores:
 
 1. Conéctese a Azure Portal en [portal.azure.com](https://portal.azure.com).
 2. Inicie sesión con la cuenta que utilizó para comprar las suscripciones mensuales de Visual Studio.
-3. En **Servicios de Azure** , seleccione **Administración de costos + facturación**.
+3. En **Servicios de Azure**, seleccione **Administración de costos + facturación**.
    > [!div class="mx-imgBorder"]
    > ![Seleccionar Administración de costos + facturación en Servicios de Azure](_img/cloud-admin/azure-cost-billing.png "Elija Cost Management en el grupo de servicios de Azure.")
-4. En la lista **Mis suscripciones** , elija la suscripción de Azure que utilizó para realizar la compra.
+4. En la lista **Mis suscripciones**, elija la suscripción de Azure que utilizó para realizar la compra.
    > [!div class="mx-imgBorder"]
    > ![Elección de la suscripción](_img/cloud-admin/subscription-list.png "Elija la suscripción de Azure que desea usar para realizar la compra.")
 5. Haga clic en **Control de acceso (IAM)** , que se encuentra cerca de la parte superior de la lista en el panel de navegación izquierdo.

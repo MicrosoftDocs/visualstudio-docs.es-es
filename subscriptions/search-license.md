@@ -24,7 +24,7 @@ El Portal de administradores de suscripciones de Visual Studio permite encontrar
 
 2. Indique los criterios que quiera usar como base de la búsqueda y, luego, vuelva a seleccionar **Filtrar**.
    > [!div class="mx-imgBorder"]
-   > ![Use los campos disponibles para filtrar los datos de los suscriptores.](media/filter-subscribers.png "Escriba valores en los distintos campos para limitar los resultados de la búsqueda. Por ejemplo, puede buscar "@contoso.com" para devolver una lista de todos los suscriptores con direcciones de correo electrónico de @contoso.com.")
+   > ![Use los campos disponibles para filtrar los datos de los suscriptores.](media/filter-subscribers.png "Escriba valores en los distintos campos para limitar los resultados de la búsqueda. Por ejemplo, puede buscar '@contoso.com' para devolver una lista de todos los suscriptores con direcciones de correo electrónico de @contoso.com.")
 
    La lista de suscriptores coincidirá con los criterios que haya elegido.  Puede hacer clic en los encabezados de los resultados filtrados para cambiar el criterio de ordenación de cada campo.  
    > [!NOTE]

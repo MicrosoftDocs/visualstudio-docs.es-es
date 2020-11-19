@@ -67,7 +67,7 @@ Para agregar grandes grupos de usuarios, puede usar la característica Agregar e
    0. Vuelva al portal de administración y descarte el mensaje de error.
    0. Haga clic en **Agregar**.
    0. Seleccione **Agregar en masa**.
-   0. Como ya se ha guardado el archivo de Excel, no es necesario descargar la plantilla.  Seleccione **Examinar** , busque el archivo que acaba de guardar y seleccione **Abrir**.
+   0. Como ya se ha guardado el archivo de Excel, no es necesario descargar la plantilla.  Seleccione **Examinar**, busque el archivo que acaba de guardar y seleccione **Abrir**.
    0. Seleccione **Aceptar**.
 
 

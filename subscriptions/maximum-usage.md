@@ -24,7 +24,7 @@ Vea el vídeo o siga leyendo para saber cómo usar la característica de uso má
 ## <a name="view-your-maximum-usage"></a>Ver el uso máximo
 Para consultar el número máximo de suscripciones asignadas a cualquier contrato y nivel de suscripción:
 1. Seleccione el contrato que quiera consultar en la lista desplegable de la parte superior izquierda del portal. (Si solo tiene un contrato, ya estará seleccionado).
-2. Haga clic en el icono de **máximo uso** , que es el tercer icono de la parte superior del lado izquierdo de la cuadrícula de suscriptores.  
+2. Haga clic en el icono de **máximo uso**, que es el tercer icono de la parte superior del lado izquierdo de la cuadrícula de suscriptores.  
 
     > [!div class="mx-imgBorder"]
     > ![Ventana flotante Uso máximo](_img/maximum-usage/maximum-usage-menu.png "Haga clic en el botón Uso máximo para ver el número máximo de cada tipo de suscripción que ha asignado.")

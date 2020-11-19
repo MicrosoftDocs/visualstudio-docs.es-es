@@ -45,7 +45,7 @@ En la tabla siguiente se detallan los beneficios de la suscripción de Pluralsig
 
 1. Haga clic en **ESTABLECER CONTRASEÑA**.
 
-1. Escriba la contraseña deseada en el campo **Nueva contraseña** , vuelva a escribirla en el campo **Confirmar contraseña** y haga clic en **Guardar**.
+1. Escriba la contraseña deseada en el campo **Nueva contraseña**, vuelva a escribirla en el campo **Confirmar contraseña** y haga clic en **Guardar**.
 
 1. Ya está.  Ya está listo para comenzar el aprendizaje con miles de cursos de Pluralsight.
 

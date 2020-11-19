@@ -53,7 +53,7 @@ Para establecer puntos de seguimiento, especifique una cadena de salida en la ca
 
    ![Casilla Condiciones activada](../debugger/media/checkedconditionsbox.png "Casilla Condiciones activada")
 
-   Tiene tres opciones para las condiciones: **Expresión condicional** , **Filtro** y **Número de llamadas**.
+   Tiene tres opciones para las condiciones: **Expresión condicional**, **Filtro** y **Número de llamadas**.
 
 ## <a name="actions-menu"></a>Menú Acciones
 
@@ -63,7 +63,7 @@ Por ejemplo, si quiere mostrar el valor de la variable `counter` en la consola d
 
 ![Mensaje de salida Counter](../debugger/media/counteroutputmessage.png "Mensaje de salida Counter")
 
-Si hace clic en **Cerrar** y luego depura el programa ( **F5** ), verá la salida siguiente en la ventana de salida.
+Si hace clic en **Cerrar** y luego depura el programa (**F5**), verá la salida siguiente en la ventana de salida.
 
 ![Mensaje de acciones en la ventana de salida](../debugger/media/actionsmessageinoutputwindow.png "Mensaje de acciones en la ventana de salida")
 

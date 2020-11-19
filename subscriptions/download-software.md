@@ -39,7 +39,7 @@ Con los menús desplegables disponibles, selecciona fácilmente su arquitectura,
 > No todos los títulos están disponibles en todas las arquitecturas, lenguajes o formatos de archivo.  
 
 ### <a name="displaying-download-details"></a>Visualización de los detalles de la descarga
-Si selecciona el nombre del producto o el vínculo **Información** , aparecerán los detalles de esa descarga y se proporcionará acceso a las notas de la versión del producto.
+Si selecciona el nombre del producto o el vínculo **Información**, aparecerán los detalles de esa descarga y se proporcionará acceso a las notas de la versión del producto.
 > [!div class="mx-imgBorder"]
 > ![Detalles de la descarga de Visual Studio 2019](_img/subscriber-downloads/vs2019-info.png "La pestaña Información muestra información sobre la descarga y proporciona acceso a las notas de la versión.")
 
