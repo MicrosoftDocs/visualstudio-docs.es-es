@@ -1,5 +1,7 @@
 ---
 title: Creación de elementos web para SharePoint | Microsoft Docs
+description: Cree elementos web para SharePoint. Usando elementos web, puede modificar el contenido, el aspecto y el comportamiento de las páginas de un sitio de SharePoint a través de un explorador.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4824c358f81f2cf757f037611ed70ba9b8935130
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: bc9427d561817cb115473bddc71f2ba63475427e
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740162"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672800"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>Creación de elementos web para SharePoint
   Usando elementos web, puede modificar el contenido, el aspecto y el comportamiento de las páginas de un sitio de SharePoint a través de un explorador. Los elementos web son controles de servidor que se ejecutan dentro de una página de elementos web: son los bloques de creación de las páginas que aparecen en un sitio de SharePoint. Vea [Bloque de creación: elementos web](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14)).
