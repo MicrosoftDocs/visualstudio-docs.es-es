@@ -53,9 +53,9 @@ Obtenga ayuda directamente del equipo de Azure en los foros de soporte seleccion
 Empezar a usar la Comunidad Azure es un proceso sencillo.
 1. Inicie sesión en [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2. Busque el icono de la Comunidad Azure en la sección Soporte técnico y haga clic en el vínculo **Obtener ayuda** .
+2. Busque el icono de la Comunidad Azure en la sección Soporte técnico y haga clic en el vínculo **Obtener ayuda**.
     > [!div class="mx-imgBorder"]
-    >![Icono de Comunidad Azure](_img/vs-azure-community/vs-azure-community-tile.png "Haga clic en el botón "Obtener ayuda" en el icono de Comunidad Azure para comenzar.")
+    >![Icono de Comunidad Azure](_img/vs-azure-community/vs-azure-community-tile.png "Haga clic en el botón 'Obtener ayuda' en el icono de Comunidad Azure para comenzar.")
 
 3. Verá una lista de los foros disponibles.  Simplemente haga clic en el foro que quiera consultar.
     > [!div class="mx-imgBorder"]
