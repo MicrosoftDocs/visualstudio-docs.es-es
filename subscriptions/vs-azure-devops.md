@@ -20,7 +20,7 @@ Como suscriptor activo de Visual Studio, puede usar una serie de característica
 ## <a name="sign-in"></a>Inicio de sesión
 
    > [!div class="mx-imgBorder"]
-   > ![Icono Azure DevOps](_img/vs-azure-devops/vs-azure-devops-tile.png "Haga clic en "Comenzar" para iniciar sesión en Azure DevOps.")
+   > ![Icono Azure DevOps](_img/vs-azure-devops/vs-azure-devops-tile.png "Haga clic en 'Comenzar' para iniciar sesión en Azure DevOps.")
 
    
 Cuando inicie sesión en Azure DevOps (ya sea con la identidad que ha usado para activar la suscripción de Visual Studio o con su [identidad alternativa](vs-alternate-identity.md)), se reconocerá automáticamente.  De este modo, puede agregar también una cuenta profesional o educativa (que use para iniciar sesión en Visual Studio, en Microsoft 365 o en la red de la empresa o del centro educativo), lo que le permitirá tener acceso a Azure DevOps tanto a través de su cuenta personal como de su cuenta profesional o educativa.

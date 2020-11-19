@@ -26,9 +26,9 @@ App Center es fundamental para el control de las aplicaciones.
 Es sencillo empezar a utilizar Visual Studio App Center.
 1. Inicie sesión en [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2. Busque el icono de Visual Studio App Center y haga clic en **Comience ahora** .
+2. Busque el icono de Visual Studio App Center y haga clic en **Comience ahora**.
     > [!div class="mx-imgBorder"]
-    > ![Icono de Visual Studio App Center](_img/vs-app-center/vs-app-center-tile.png "Haga clic en "Comenzar" en el icono de Visual Studio App Center.")
+    > ![Icono de Visual Studio App Center](_img/vs-app-center/vs-app-center-tile.png "Haga clic en 'Comenzar' en el icono de Visual Studio App Center.")
 
 3. A continuación, cree una cuenta.  Puede utilizar las cuentas existentes de Microsoft, Google, GitHub o Facebook para iniciar sesión, o bien crear una cuenta nueva proporcionando su nombre de usuario, correo electrónico y contraseña.  Haga clic en **Crear cuenta** para continuar.
     > [!div class="mx-imgBorder"]
@@ -36,7 +36,7 @@ Es sencillo empezar a utilizar Visual Studio App Center.
 
 4. Así de simple.  Simplemente haga clic en **Agregar nueva organización** o **Agregar nueva aplicación** para empezar a trabajar.
     > [!div class="mx-imgBorder"]
-    > ![Portal de Visual Studio App Center](_img/vs-app-center/vs-app-center-portal.png "Ya está listo.  Haga clic en "Agregar nueva organización" o "Agregar nueva aplicación" para comenzar.")
+    > ![Portal de Visual Studio App Center](_img/vs-app-center/vs-app-center-portal.png "Ya está listo.  Haga clic en 'Agregar nueva organización' o 'Agregar nueva aplicación' para comenzar.")
 
 ## <a name="eligibility"></a>Elegibilidad
 

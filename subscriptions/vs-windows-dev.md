@@ -23,21 +23,21 @@ Para usar la cuenta de desarrollador de Windows, será necesario configurar una 
 Se recomienda crear una ventana "privada" del explorador para este proceso.  Por ejemplo, en Google Chrome, cree una ventana "de incógnito".  En Internet Explorer, cree una ventana "InPrivate".
 
 1. Inicie sesión en [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
-2. Busque el icono de la cuenta de desarrollador de Windows en la sección Herramientas y haga clic en el vínculo **Obtener código** en la parte inferior del icono del beneficio.  Copie el código en el Portapapeles y haga clic en **Activar** .
+2. Busque el icono de la cuenta de desarrollador de Windows en la sección Herramientas y haga clic en el vínculo **Obtener código** en la parte inferior del icono del beneficio.  Copie el código en el Portapapeles y haga clic en **Activar**.
    > [!div class="mx-imgBorder"]
-   > ![Icono de la ventaja de Windows Developer](_img/vs-windows-dev/vs-windows-dev-tile.png "Haga clic en "Obtener código" en el icono de la cuenta de desarrollador de Windows y, luego, haga clic en "Activar".")
+   > ![Icono de la ventaja de Windows Developer](_img/vs-windows-dev/vs-windows-dev-tile.png "Haga clic en 'Obtener código' en el icono de la cuenta de desarrollador de Windows y, luego, haga clic en 'Activar'.")
 3. En el sitio [https://developer.microsoft.com/store/register/](https://developer.microsoft.com/store/register/) puede comenzar el proceso de registro.  Haga clic en **Registrarse** para continuar.
    > [!div class="mx-imgBorder"]
-   > ![Registro de la ventaja de Windows Developer](_img/vs-windows-dev/vs-windows-dev-register1-cropped.png "Haga clic en "Suscribirse" para crear la cuenta.")
+   > ![Registro de la ventaja de Windows Developer](_img/vs-windows-dev/vs-windows-dev-register1-cropped.png "Haga clic en 'Suscribirse' para crear la cuenta.")
 4. Inicie sesión en su suscripción.  Si tiene varias cuentas, elija la que esté asociada a su suscripción Enterprise Subscription.
-0. Escriba su dirección de correo electrónico, seleccione el idioma que prefiera y haga clic en **Guardar** .
-5. En la siguiente página, seleccione el país o región donde vive o donde se encuentra su empresa y, después, haga clic en **Siguiente** .
-6. Seleccione el tipo de cuenta **Individual** .
+0. Escriba su dirección de correo electrónico, seleccione el idioma que prefiera y haga clic en **Guardar**.
+5. En la siguiente página, seleccione el país o región donde vive o donde se encuentra su empresa y, después, haga clic en **Siguiente**.
+6. Seleccione el tipo de cuenta **Individual**.
 7. Indique un nombre para mostrar del anunciante.  Este será el nombre único que los clientes verán asociado a sus servicios, aplicaciones y complementos.
-8. Especifique su información de contacto y el idioma de correo electrónico preferido y haga clic en **Continuar** .
-9. Se le pedirá que confirme la contraseña.  Escríbala y haga clic en **Iniciar sesión** .
-10. En la página Registro - Pago, pegue el código que copió anteriormente del campo Código de promoción.  La página se actualizará para mostrar que *no se requiere ningún pago* .  Haga clic en **Siguiente** .
-11. Revise la información de la cuenta y el Acuerdo para desarrolladores de aplicaciones y haga clic en la casilla para indicar que acepta los términos y condiciones.  Tras ello, haga clic en **Finalizar** .
+8. Especifique su información de contacto y el idioma de correo electrónico preferido y haga clic en **Continuar**.
+9. Se le pedirá que confirme la contraseña.  Escríbala y haga clic en **Iniciar sesión**.
+10. En la página Registro - Pago, pegue el código que copió anteriormente del campo Código de promoción.  La página se actualizará para mostrar que *no se requiere ningún pago*.  Haga clic en **Siguiente**.
+11. Revise la información de la cuenta y el Acuerdo para desarrolladores de aplicaciones y haga clic en la casilla para indicar que acepta los términos y condiciones.  Tras ello, haga clic en **Finalizar**.
 12. Haga clic en **Ir al panel** para empezar a usar la cuenta de desarrollador de Windows.
 
 ## <a name="eligibility"></a>Elegibilidad

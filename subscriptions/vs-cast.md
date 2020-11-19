@@ -23,14 +23,14 @@ Los desarrolladores necesitan información clave sobre su software al realizar l
 ## <a name="activation-steps"></a>Pasos para la activación
 1. Inicie sesión en [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2. Busque el icono de la ventaja de CAST Highlight en la categoría "Herramientas" y haga clic en **Obtener código** .
+2. Busque el icono de la ventaja de CAST Highlight en la categoría "Herramientas" y haga clic en **Obtener código**.
 
    > [!div class="mx-imgBorder"]
-   > ![Icono de la ventaja de CAST Highlight](_img/vs-cast-highlight/vs-cast-highlight-tile.png "Haga clic en "Obtener código" en el icono de la ventaja de CAST Highlight para comenzar.")
+   > ![Icono de la ventaja de CAST Highlight](_img/vs-cast-highlight/vs-cast-highlight-tile.png "Haga clic en 'Obtener código' en el icono de la ventaja de CAST Highlight para comenzar.")
 
-0. Verá un mensaje que le informará de que el código se ha recuperado correctamente.  Haga clic en **Activar** . (Si decide no efectuar la activación en este momento, siempre puede volver al icono de CAST Highlight en el portal de suscripción.  El vínculo "Obtener código" cambiará a "Activar" y, si hace clic en él, se reanudará el proceso de activación).
+0. Verá un mensaje que le informará de que el código se ha recuperado correctamente.  Haga clic en **Activar**. (Si decide no efectuar la activación en este momento, siempre puede volver al icono de CAST Highlight en el portal de suscripción.  El vínculo "Obtener código" cambiará a "Activar" y, si hace clic en él, se reanudará el proceso de activación).
 
-0. Se le redirigirá a la página de CAST Highlight, donde podrá explorar las características de su suscripción.  Cuando esté a punto para crear la cuenta, solo tendrá que proporcionar su información de contacto en el formulario web y hacer clic en **Enviar** .
+0. Se le redirigirá a la página de CAST Highlight, donde podrá explorar las características de su suscripción.  Cuando esté a punto para crear la cuenta, solo tendrá que proporcionar su información de contacto en el formulario web y hacer clic en **Enviar**.
 
     > [!div class="mx-imgBorder"]
     > ![Página de aterrizaje de CAST Highlight](_img/vs-cast-highlight/vs-cast-highlight-landing.png "Proporcione su información personal para activar la suscripción de CAST.")

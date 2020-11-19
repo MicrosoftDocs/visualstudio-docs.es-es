@@ -22,7 +22,7 @@ Como suscriptor de Visual Studio, puede usar Microsoft Azure sin cargo adicional
 
 2. Busque el icono de Azure en la sección Herramientas de la página Beneficios y seleccione el vínculo **Activar** en la parte inferior del icono del beneficio.
    > [!div class="mx-imgBorder"]
-   > ![Icono de Azure](_img/vs-azure/vs-azure-tile.png "Haga clic en el botón "Activar" en el icono de Azure para empezar.")
+   > ![Icono de Azure](_img/vs-azure/vs-azure-tile.png "Haga clic en el botón 'Activar' en el icono de Azure para empezar.")
 
 3. Si no tiene una suscripción de Azure, se le pedirá rellenar la información necesaria para crear una.  El primer paso es proporcionar la información personal y, después, seleccionar **Siguiente**.
    > [!div class="mx-imgBorder"]
@@ -34,7 +34,7 @@ Como suscriptor de Visual Studio, puede usar Microsoft Azure sin cargo adicional
 
 5. En el último paso, seleccione la casilla para aceptar los términos y, después, **Registrarse**.  Así de simple.
    > [!div class="mx-imgBorder"]
-   > ![Suscripción a Azure](_img/vs-azure/vs-azure-agreement.png "Haga clic en el botón "Suscribirse" para completar la creación de la suscripción de Azure.")
+   > ![Suscripción a Azure](_img/vs-azure/vs-azure-agreement.png "Haga clic en el botón 'Suscribirse' para completar la creación de la suscripción de Azure.")
 
 0. Se cargará el Centro de inicio rápido del panel de Azure.  
    > [!div class="mx-imgBorder"]
@@ -50,11 +50,11 @@ Si su suscripción de Visual Studio expira o se elimina, todos los beneficios d
 
 Hay varias maneras de seguir usando un crédito mensual de Azure.  Para guardar los recursos de Azure, tendrá que [transferirlos](/azure/azure-resource-manager/management/move-resource-group-and-subscription) a otra suscripción de Azure, independientemente de la acción que elija a continuación. 
 
-- **Si compra una suscripción de Visual Studio directamente** , compre una nueva o renueve la actual a través de Microsoft Store.  
+- **Si compra una suscripción de Visual Studio directamente**, compre una nueva o renueve la actual a través de Microsoft Store.  
     - [Visual Studio Enterprise](https://www.microsoft.com/p/visual-studio-enterprise-subscription/dg7gmgf0dst4?activetab=pivot%3aoverviewtab)
     - [Visual Studio Professional](https://www.microsoft.com/p/visual-studio-professional-subscription/dg7gmgf0dst3?activetab=pivot%3aoverviewtab)
     - [Visual Studio Test Professional](https://www.microsoft.com/p/visual-studio-test-professional-subscription/dg7gmgf0dst6?activetab=pivot%3aoverviewtab)
-- **Si alguien de la organización se encarga de comprar las suscripciones** , [póngase en contacto con el administrador de suscripciones de Visual Studio](./contact-my-admin.md) y solicite una que proporcione el crédito mensual que necesita.  
+- **Si alguien de la organización se encarga de comprar las suscripciones**, [póngase en contacto con el administrador de suscripciones de Visual Studio](./contact-my-admin.md) y solicite una que proporcione el crédito mensual que necesita.  
 - **Si tiene otra suscripción activa de Visual Studio** en el mismo nivel de suscripción que esté asociada a otra cuenta de Microsoft, puede transferirle la ventaja de Azure si [agrega una cuenta alternativa](./manage-vs-subscriptions.md#managing-my-profile) en el [portal de suscripciones](https://my.visualstudio.com/subscriptions) de Visual Studio.  
 
 En la tabla siguiente encontrará los criterios de idoneidad para determinar los créditos incluidos en cada tipo de suscripción.  

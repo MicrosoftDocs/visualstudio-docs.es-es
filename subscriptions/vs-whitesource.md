@@ -24,17 +24,17 @@ Descubra y corrija vulnerabilidades del código abierto y genere informes comple
 
 2. Busque el icono de WhiteSource Bolt en la sección Herramientas y haga clic en el vínculo **Obtener código** en la parte inferior del icono del beneficio.
    > [!div class="mx-imgBorder"]
-   > ![Icono de la ventaja WhiteSource Bolt](_img/vs-whitesource/vs-whitesource-tile.png "Haga clic en "Obtener código" en el icono de WhiteSource Bolt para comenzar.")
+   > ![Icono de la ventaja WhiteSource Bolt](_img/vs-whitesource/vs-whitesource-tile.png "Haga clic en 'Obtener código' en el icono de WhiteSource Bolt para comenzar.")
 
-3. Recibirá una notificación con el código de activación.  **Copie el código en el Portapapeles** y haga clic en **Activar** .
+3. Recibirá una notificación con el código de activación.  **Copie el código en el Portapapeles** y haga clic en **Activar**.
    > [!div class="mx-imgBorder"]
-   > ![Código de la ventaja WhiteSource Bolt](_img/vs-whitesource/vs-whitesource-code.png "Copie el código en el Portapapeles y, luego, haga clic en "Activar".")
+   > ![Código de la ventaja WhiteSource Bolt](_img/vs-whitesource/vs-whitesource-code.png "Copie el código en el Portapapeles y, luego, haga clic en 'Activar'.")
 
 4. En la página **Activate your account** (Activar su cuenta), haga clic en el vínculo de **instalación** que aparece en el paso 1.
 5. Haga clic en **Consígalo gratis** en Visual Studio Marketplace.
-6. Luego, seleccione la organización de Azure DevOps que desea usar y haga clic en **Instalar** .  (Si todavía no configuró Azure DevOps Services, visite la página [Ventajas](https://my.visualstudio.com/benefits) y active su ventaja de Azure DevOps Services).
+6. Luego, seleccione la organización de Azure DevOps que desea usar y haga clic en **Instalar**.  (Si todavía no configuró Azure DevOps Services, visite la página [Ventajas](https://my.visualstudio.com/benefits) y active su ventaja de Azure DevOps Services).
 
-7. Haga clic en **Continuar con la organización** .
+7. Haga clic en **Continuar con la organización**.
 8. Una vez que haya instalado correctamente WhiteSource Bolt, vuelva a la [página de activación](https://bolt.whitesourcesoftware.com/whitesource-bolt-azure-devops#activate) y vea el vídeo para saber cómo configurarlo. 
 9. Para más información, visite la [página de preguntas más frecuentes](https://bolt.whitesourcesoftware.com/azure/faq/) sobre WhiteSource Bolt. 
 

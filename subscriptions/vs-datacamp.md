@@ -20,9 +20,9 @@ Entre las suscripciones de Visual Studio válidas se incluyen las suscripciones 
 ## <a name="activation-steps"></a>Pasos para la activación
 1. Inicie sesión en [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2. Busque el icono de la prestación DataCamp en la categoría "Desarrollo profesional" y haga clic en **Activar** .
+2. Busque el icono de la prestación DataCamp en la categoría "Desarrollo profesional" y haga clic en **Activar**.
    > [!div class="mx-imgBorder"]
-   > ![Icono de la prestación DataCamp](_img/vs-datacamp/vs-datacamp-tile-2.png "Haga clic en "Activar" para comenzar.")
+   > ![Icono de la prestación DataCamp](_img/vs-datacamp/vs-datacamp-tile-2.png "Haga clic en Activar para comenzar.")
 
 3. En la página de DataCamp, puede crear una cuenta.  Puede especificar una dirección de correo electrónico y una contraseña o iniciar sesión con cuentas de Facebook, LinkedIn o Google existentes.  Una vez que haya proporcionado su información de inicio de sesión, haga clic en **Get Started** (Comenzar).
 

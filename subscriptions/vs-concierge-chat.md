@@ -23,11 +23,11 @@ El servicio está disponible 24 horas al día los 7 días de la semana, y actual
 Obtener ayuda a través del servicio de chat de soporte técnico es un proceso muy sencillo.
 1. Inicie sesión en [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2. Busque el icono de chat de soporte técnico en la sección Soporte técnico de la página Beneficios y haga clic en **Chatear ahora** .
+2. Busque el icono de chat de soporte técnico en la sección Soporte técnico de la página Beneficios y haga clic en **Chatear ahora**.
     > [!div class="mx-imgBorder"]
-    > ![Icono de chat de soporte](_img/vs-concierge-chat/vs-concierge-chat-tile.png "Haga clic en "Chatear ahora" para iniciar una sesión de chat nueva.")
+    > ![Icono de chat de soporte](_img/vs-concierge-chat/vs-concierge-chat-tile.png "Haga clic en Chatear ahora para iniciar una sesión de chat nueva.")
 
-3. Haga clic en **Continuar** .
+3. Haga clic en **Continuar**.
 
 4. Se abrirá una ventana de chat y verá un contador que muestra la posición que ocupa en la cola.
 

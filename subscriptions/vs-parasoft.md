@@ -22,13 +22,13 @@ Realice pruebas antes y más a menudo.  Simule y pruebe el comportamiento de apl
 
 1. Para usar la ventaja de Parasoft Virtualize/SOAtest Professional Desktop, inicie sesión en [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2. Busque el icono de Parasoft en la sección Herramientas y haga clic en el vínculo **Obtener código** en la parte inferior del icono del beneficio.   Recibirá una notificación en la que se le indicará que el código se ha recuperado correctamente.  Haga clic en **Activar** .
+2. Busque el icono de Parasoft en la sección Herramientas y haga clic en el vínculo **Obtener código** en la parte inferior del icono del beneficio.   Recibirá una notificación en la que se le indicará que el código se ha recuperado correctamente.  Haga clic en **Activar**.
    > [!div class="mx-imgBorder"]
-   > ![Icono de la ventaja Parasoft](_img/vs-parasoft/vs-parasoft-tile.png "Haga clic en "Obtener código" en el icono de Parasoft y, luego, en "Activar" para comenzar.")
+   > ![Icono de la ventaja Parasoft](_img/vs-parasoft/vs-parasoft-tile.png "Haga clic en 'Obtener código' en el icono de Parasoft y, luego, en 'Activar' para comenzar.")
 
-3. Se le redirigirá al sitio web de Parasoft, donde podrá crear una cuenta.  Simplemente especifique su información de contacto y haga clic en **Enviar** .
+3. Se le redirigirá al sitio web de Parasoft, donde podrá crear una cuenta.  Simplemente especifique su información de contacto y haga clic en **Enviar**.
    > [!div class="mx-imgBorder"]
-   > ![Creación de cuenta de la ventaja Parasoft](_img/vs-parasoft/vs-parasoft-new-account.png "Proporcione su información de contacto y haga clic en "Enviar" para crear la cuenta.")
+   > ![Creación de cuenta de la ventaja Parasoft](_img/vs-parasoft/vs-parasoft-new-account.png "Proporcione su información de contacto y haga clic en 'Enviar' para crear la cuenta.")
 
    > [!Note]
    > En la tabla de la página se muestra el precio de un año completo, más un descuento de Visual Studio. Este precio se aplicará DESPUÉS de haber usado la suscripción por seis meses.  
@@ -43,31 +43,31 @@ Realice pruebas antes y más a menudo.  Simule y pruebe el comportamiento de apl
 
 7. En función del explorador que use, puede que vea distintos cuadros de diálogo que le ofrecen la posibilidad de ejecutar el instalador.  Por ejemplo, en Internet Explorer, verá una lista de descargas recientes en la que parasoft_soavirt_9.10.2_win32_x86_64.exe aparece al principio. Haga clic en **Ejecutar** para iniciar el instalador.
 
-8. Cuando el cuadro de diálogo Control de cuentas de usuario se abra, haga clic en **Sí** .
+8. Cuando el cuadro de diálogo Control de cuentas de usuario se abra, haga clic en **Sí**.
 
-9. Elija el idioma que quiera y haga clic en **Aceptar** .
+9. Elija el idioma que quiera y haga clic en **Aceptar**.
 
-10. Se iniciará el Asistente para proyectos de instalación de Parasoft SOAtest & Virtualize.  Haga clic en **Siguiente** .
+10. Se iniciará el Asistente para proyectos de instalación de Parasoft SOAtest & Virtualize.  Haga clic en **Siguiente**.
     > [!div class="mx-imgBorder"]
-    > ![Inicio de la instalación de la ventaja Parasoft](_img/vs-parasoft/vs-parasoft-start-install.png "Haga clic en "Siguiente" para empezar la instalación de Parasoft SOAtest & Virtualize.")
+    > ![Inicio de la instalación de la ventaja Parasoft](_img/vs-parasoft/vs-parasoft-start-install.png "Haga clic en 'Siguiente' para empezar la instalación de Parasoft SOAtest & Virtualize.")
 
-11. Haga clic en **Acepto el contrato** y en **Siguiente** .
+11. Haga clic en **Acepto el contrato** y en **Siguiente**.
 
-12. Elija dónde quiere instalar los archivos y haga clic en **Siguiente** .
+12. Elija dónde quiere instalar los archivos y haga clic en **Siguiente**.
 
-13. Después, puede elegir los componentes que quiere instalar o instalarlos todos (opción predeterminada).  Elija las opciones que prefiera y haga clic en **Siguiente** .
+13. Después, puede elegir los componentes que quiere instalar o instalarlos todos (opción predeterminada).  Elija las opciones que prefiera y haga clic en **Siguiente**.
 
-14. Especifique dónde quiere que se instale el acceso directo para la aplicación y haga clic en **Siguiente** .
+14. Especifique dónde quiere que se instale el acceso directo para la aplicación y haga clic en **Siguiente**.
 
-15. El certificado de la entidad de certificación raíz web de SOAtest se requiere para determinadas pruebas funcionales en sitios HTTPS.  Elija el certificado de CA raíz y haga clic en **Siguiente** .
+15. El certificado de la entidad de certificación raíz web de SOAtest se requiere para determinadas pruebas funcionales en sitios HTTPS.  Elija el certificado de CA raíz y haga clic en **Siguiente**.
     > [!NOTE]
     > Parasoft recomienda que elija instalar el certificado.
 
-16. Elija si quiere que se creen los iconos de escritorio e inicio rápido durante la instalación y haga clic en **Siguiente** .
+16. Elija si quiere que se creen los iconos de escritorio e inicio rápido durante la instalación y haga clic en **Siguiente**.
 
 17. Confirme las opciones que ha seleccionado y haga clic en **Instalar** para empezar a instalar el software.
 
-18. Cuando se haya completado la instalación, haga clic en **Finalizar** . Ya está listo para empezar a usar la ventaja Parasoft Virtualize/SOAtest Professional Desktop.
+18. Cuando se haya completado la instalación, haga clic en **Finalizar**. Ya está listo para empezar a usar la ventaja Parasoft Virtualize/SOAtest Professional Desktop.
 
 ## <a name="eligibility"></a>Elegibilidad
 
