@@ -1,5 +1,7 @@
 ---
 title: Crear una página de opciones | Microsoft Docs
+description: Obtenga información sobre cómo crear una página de herramientas/opciones simple que use una cuadrícula de propiedades para examinar y establecer propiedades.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be826b73e28a73216ea88ceba8e23eb1e9ea457b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41102dfbbf1e49dadb1360ab0182810a47651dca
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903814"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973715"
 ---
 # <a name="create-an-options-page"></a>Crear una página de opciones
 
@@ -27,7 +29,7 @@ En este tutorial se crea una página de herramientas/opciones simple que utiliza
 
 ## <a name="prerequisites"></a>Requisitos previos
 
- A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS después. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-tools-options-grid-page"></a>Crear una página de cuadrícula de opciones de herramientas
 
@@ -99,7 +101,7 @@ En este tutorial se crea una página de herramientas/opciones simple que utiliza
 
 7. En la instancia experimental de Visual Studio, en el menú **herramientas** , haga clic en **Opciones**.
 
-     En el panel izquierdo, debería ver **mi categoría**. (Las categorías de opciones se muestran en orden alfabético, por lo que debe aparecer cerca de la mitad de la lista). Abra **mi categoría** y, a continuación, haga clic en **mi página de cuadrícula**. La cuadrícula de opciones aparece en el panel derecho. La categoría de la propiedad es **My Options**y el nombre de la propiedad es **My Integer Option**. La descripción de la propiedad, **mi opción de entero**, aparece en la parte inferior del panel. Cambie el valor de su valor inicial de 256 a otra cosa. Haga clic en **Aceptar**y, a continuación, vuelva a abrir **la página de cuadrícula**. Puede ver que el nuevo valor persiste.
+     En el panel izquierdo, debería ver **mi categoría**. (Las categorías de opciones se muestran en orden alfabético, por lo que debe aparecer cerca de la mitad de la lista). Abra **mi categoría** y, a continuación, haga clic en **mi página de cuadrícula**. La cuadrícula de opciones aparece en el panel derecho. La categoría de la propiedad es **My Options** y el nombre de la propiedad es **My Integer Option**. La descripción de la propiedad, **mi opción de entero**, aparece en la parte inferior del panel. Cambie el valor de su valor inicial de 256 a otra cosa. Haga clic en **Aceptar** y, a continuación, vuelva a abrir **la página de cuadrícula**. Puede ver que el nuevo valor persiste.
 
      La página Opciones también está disponible a través del cuadro de búsqueda de Visual Studio. En el cuadro de búsqueda situado cerca de la parte superior del IDE, escriba **mi categoría** y verá la **categoría-> la página** de la cuadrícula que aparece en los resultados.
 
@@ -225,7 +227,7 @@ En este tutorial se crea una página de herramientas/opciones simple que utiliza
 
 12. Busque **mi categoría** y, a continuación, **mi página personalizada**.
 
-13. Cambie el valor de **OptionString**. Haga clic en **Aceptar**y, a continuación, vuelva a abrir **mi página personalizada**. Puede ver que el nuevo valor ha persistido.
+13. Cambie el valor de **OptionString**. Haga clic en **Aceptar** y, a continuación, vuelva a abrir **mi página personalizada**. Puede ver que el nuevo valor ha persistido.
 
 ## <a name="access-options"></a>Opciones de acceso
 
@@ -266,6 +268,6 @@ En este tutorial se crea una página de herramientas/opciones simple que utiliza
 
      Un cuadro de mensaje muestra el valor actual de `OptionInteger` .
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Opciones y páginas de opciones](../extensibility/internals/options-and-options-pages.md)

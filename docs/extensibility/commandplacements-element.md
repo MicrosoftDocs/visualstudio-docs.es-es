@@ -1,5 +1,7 @@
 ---
 title: Elemento CommandPlacements | Microsoft Docs
+description: El elemento CommandPlacements agrupa los elementos CommandPlacement y otras agrupaciones CommandPlacements. El elemento CommandPlacements es opcional.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a72b087652a654b563fd4e00bacc52290a29fe1c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 301fe17f3ad12bfd1e150d9bf48180be6cb62adc
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739700"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974017"
 ---
 # <a name="commandplacements-element"></a>Elemento CommandPlacements
 El elemento CommandPlacements agrupa los elementos CommandPlacement y otras agrupaciones CommandPlacements.

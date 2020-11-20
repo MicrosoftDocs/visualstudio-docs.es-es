@@ -1,5 +1,6 @@
 ---
 title: 'Implementar un complemento de control de código fuente: procedimientos recomendados'
+description: Revise estos detalles técnicos para ayudarle a implementar un complemento de control de código fuente en Visual Studio de forma confiable.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 399afaff75b2456e668aaa9862fb7aa5439cc39f
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: d04b8329d425df53c5414f593393e86a3be73c47
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038457"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974633"
 ---
 # <a name="best-practices-for-implementing-a-source-control-plug-in"></a>Prácticas recomendadas para implementar un complemento de control de código fuente
 Los detalles técnicos siguientes pueden ayudarle a implementar de forma confiable un complemento de control de código fuente en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
@@ -58,6 +59,6 @@ Los detalles técnicos siguientes pueden ayudarle a implementar de forma confiab
 
  La mayoría de las opciones de configuración configurables por el usuario no se definen de esta manera, porque varían considerablemente entre los complementos de control de código fuente. Por lo tanto, el mecanismo recomendado es un botón **avanzado** . Por ejemplo, en el cuadro de diálogo **obtener** , el IDE muestra solo la información que entiende, pero también muestra un botón **avanzado** si el complemento tiene opciones para este comando. Cuando el usuario hace clic en el botón **avanzadas** , el IDE llama a [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) para habilitar el complemento de control de código fuente para solicitar información al usuario, como marcadores o una fecha y hora. El complemento devuelve esta información en una estructura que se pasa en el `SccGet` comando.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Complementos de control de código fuente](../extensibility/source-control-plug-ins.md)
 - [Crear un complemento de control de código fuente](../extensibility/internals/creating-a-source-control-plug-in.md)

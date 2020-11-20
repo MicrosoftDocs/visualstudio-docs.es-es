@@ -1,5 +1,7 @@
 ---
 title: Buttons (elemento) | Microsoft Docs
+description: El elemento botones agrupa los elementos de botón, que representan comandos individuales. Este artículo contiene un ejemplo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64ac5621093f30af28ade0817906b767231e4ee1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f46942936f9d4f6b69225953d4f9aa8a974a8723
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739920"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974480"
 ---
 # <a name="buttons-element"></a>Buttons, elemento
 Agrupa los elementos de [botón](../extensibility/button-element.md) , que representan comandos individuales.
@@ -56,7 +58,7 @@ Agrupa los elementos de [botón](../extensibility/button-element.md) , que repre
 
 ```
 <Buttons>
-  <Button guid="guidMenuAndCommandsCmdSet" id="cmdidMyCommand"     priority="0x100" type="Button">
+  <Button guid="guidMenuAndCommandsCmdSet" id="cmdidMyCommand"     priority="0x100" type="Button">
     <Parent guid="guidMenuAndCommandsCmdSet" id="MyMenuGroup"/>
     <Icon guid="guidGenericCmdBmp" id="bmpArrow"/>
     <Strings>

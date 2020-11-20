@@ -1,5 +1,7 @@
 ---
 title: Elemento combinado | Microsoft Docs
+description: 'El elemento combinado define los comandos que aparecen en un cuadro combinado. Hay cuatro tipos: DropDownCombo, DynamicCombo, IndexCombo y MRUCombo.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18ff9d9e20ec221a86f1cce5f9c43a4e47ed6dc2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e5c16db298edb0e1fe526190531df4cb638f8e3d
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739822"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974314"
 ---
 # <a name="combo-element"></a>Elemento combinado
 Define comandos que aparecen en un cuadro combinado. Hay cuatro tipos de cuadros combinados, como se indica a continuación: DropDownCombo, DynamicCombo, IndexCombo y MRUCombo.
@@ -50,7 +52,7 @@ Define comandos que aparecen en un cuadro combinado. Hay cuatro tipos de cuadros
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|Parent|Opcional. Elemento primario del botón.|
+|Primario|Opcional. Elemento primario del botón.|
 |CommandFlag|Necesario. Vea [elemento de marca de comando](../extensibility/command-flag-element.md). Los valores válidos de CommandFlag para un botón son los siguientes.<br /><br /> -CaseSensitive<br /><br /> - CommandWellOnly<br /><br /> - DefaultDisabled<br /><br /> - DefaultInvisible<br /><br /> - DynamicVisibility<br /><br /> -FilterKeys<br /><br /> - IconAndText<br /><br /> - NoAutoComplete<br /><br /> - NoButtonCustomize<br /><br /> -Nocustomizate<br /><br /> - NoKeyCustomize<br /><br /> - StretchHorizontally|
 |Cadenas|Necesario. Vea el [elemento Strings](../extensibility/strings-element.md). Se debe definir el elemento ButtonText secundario.|
 |Anotación|Comentario opcional.|

@@ -1,5 +1,7 @@
 ---
 title: Crear una extensión con una ventana de herramientas | Microsoft Docs
+description: Aprenda a usar la plantilla de proyecto de VSIX y la plantilla de elementos de la ventana de herramientas personalizada para crear una extensión con una ventana de herramientas.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 ms.assetid: 585b0a3a-f85b-4f92-81bb-9ca499bb8a89
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 597b84854dd398abee9dc21090e085273bc94c75
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bf2bcbce3c97830663b43a94191d84d81418b423
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903898"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973931"
 ---
 # <a name="create-an-extension-with-a-tool-window"></a>Crear una extensión con una ventana de herramientas
 
@@ -21,7 +23,7 @@ En este procedimiento, aprenderá a usar la plantilla de proyecto de VSIX y la p
 
 ## <a name="prerequisites"></a>Requisitos previos
 
- A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS después. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ### <a name="create-a-tool-window"></a>Crear una ventana de herramientas
 

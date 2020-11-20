@@ -1,5 +1,7 @@
 ---
 title: Marcas de capacidad | Microsoft Docs
+description: Obtenga información sobre las marcas de SCC_CAP_xxx que indican las capacidades de un complemento de control de código fuente y las marcas de SCC_EXCAP_xxx que indican funcionalidades extendidas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9660cbe5a18e82974858fa4d923a38fc73e773f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b80672b00bec95c740824ef7e29f1faba0e63cf4
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739872"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974448"
 ---
 # <a name="capability-flags"></a>Marcas de capacidad
-Las marcas SCC_CAP_*XXX* son marcas de bits utilizadas para indicar las capacidades de un complemento de control de código fuente. Las marcas SCC_EXCAP_*XXX* son marcas incrementales que indican funcionalidades extendidas y se resuelven en valores enteros.
+Las marcas SCC_CAP_ *XXX* son marcas de bits utilizadas para indicar las capacidades de un complemento de control de código fuente. Las marcas SCC_EXCAP_ *XXX* son marcas incrementales que indican funcionalidades extendidas y se resuelven en valores enteros.
 
 |Código de funcionalidad|Value|Descripción|
 |---------------------|-----------|-----------------|
@@ -77,5 +79,5 @@ Las marcas SCC_CAP_*XXX* son marcas de bits utilizadas para indicar las capacida
 |`SCC_EXCAP_DELETE_CHECKEDOUT`|10|Puede eliminar archivos desprotegidos.|
 |`SCC_EXCAP_RENAME_CHECKEDOUT`|11|Puede cambiar el nombre de los archivos desprotegidos.|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Complementos de control de código fuente](../extensibility/source-control-plug-ins.md)

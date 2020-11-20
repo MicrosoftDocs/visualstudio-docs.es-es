@@ -1,5 +1,7 @@
 ---
 title: Creación de un sistema de proyectos básico, parte 1 | Microsoft Docs
+description: Obtenga información sobre cómo crear un tipo de proyecto denominado Extension. MyProj. En Visual Studio, los proyectos son contenedores que se usan para organizar los archivos de código fuente y otros recursos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e95f760712f46632120540091b9f8f408aad9da4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c202aa9e76f568db9394625485282345ea3222c1
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903426"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974529"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>Crear un sistema de proyectos básico, parte 1
 En Visual Studio, los proyectos son los contenedores que los desarrolladores usan para organizar los archivos de código fuente y otros recursos. Los proyectos aparecen como elementos secundarios de soluciones en el **Explorador de soluciones**. Los proyectos permiten organizar, compilar, depurar e implementar código fuente y crear referencias a servicios Web, bases de datos y otros recursos.
@@ -55,20 +57,20 @@ En Visual Studio, los proyectos son los contenedores que los desarrolladores usa
 
 - Implementar la sustitución de parámetros de plantilla básica.
 
-## <a name="prerequisites"></a>Prerrequisitos
- A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+## <a name="prerequisites"></a>Requisitos previos
+ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS después. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
  También debe descargar el código fuente de [Managed Package Framework para los proyectos de](https://github.com/tunnelvisionlabs/MPFProj10). Extraiga el archivo en una ubicación que sea accesible para la solución que va a crear.
 
 ## <a name="create-a-basic-project-type"></a>Crear un tipo de proyecto básico
- Cree un proyecto VSIX de C# denominado **SimpleProject**. (**Archivo**  >  **Nueva**  >  **Proyecto** y, a continuación, extensibilidad de **Visual C#**  >  **Extensibility**  >  **Proyecto VSIX** Agregue una plantilla de elemento de proyecto de paquete de Visual Studio (en el **Explorador de soluciones**, haga clic con el botón secundario en el nodo del proyecto y seleccione **Agregar**  >  **nuevo elemento**y, a continuación, vaya a **extensibilidad**  >  **Visual Studio Package**). Asigne al archivo el nombre *SimpleProjectPackage*.
+ Cree un proyecto VSIX de C# denominado **SimpleProject**. (**Archivo**  >  **Nueva**  >  **Proyecto** y, a continuación, extensibilidad de **Visual C#**  >  **Extensibility**  >  **Proyecto VSIX** Agregue una plantilla de elemento de proyecto de paquete de Visual Studio (en el **Explorador de soluciones**, haga clic con el botón secundario en el nodo del proyecto y seleccione **Agregar**  >  **nuevo elemento** y, a continuación, vaya a **extensibilidad**  >  **Visual Studio Package**). Asigne al archivo el nombre *SimpleProjectPackage*.
 
 ## <a name="creating-a-basic-project-template"></a>Crear una plantilla de proyecto básica
  Ahora, puede modificar este VSPackage básico para implementar el nuevo tipo de proyecto *. MyProj* . Para crear un proyecto basado en el tipo de proyecto *. MyProj* , Visual Studio tiene que saber qué archivos, recursos y referencias se van a agregar al nuevo proyecto. Para proporcionar esta información, coloque los archivos de proyecto en una carpeta de plantillas de proyecto. Cuando un usuario usa el proyecto *. MyProj* para crear un proyecto, los archivos se copian en el nuevo proyecto.
 
 ### <a name="to-create-a-basic-project-template"></a>Para crear una plantilla de proyecto básica
 
-1. Agregue tres carpetas al proyecto, una debajo de la otra: *Templates\Projects\SimpleProject*. (En **Explorador de soluciones**, haga clic con el botón secundario en el nodo del proyecto **SimpleProject** , seleccione **Agregar**y, a continuación, haga clic en **nueva carpeta**. Asigne a la carpeta el nombre *plantillas*. En la carpeta *plantillas* , agregue una carpeta denominada *Projects*. En la carpeta *proyectos* , agregue una carpeta denominada *SimpleProject*).
+1. Agregue tres carpetas al proyecto, una debajo de la otra: *Templates\Projects\SimpleProject*. (En **Explorador de soluciones**, haga clic con el botón secundario en el nodo del proyecto **SimpleProject** , seleccione **Agregar** y, a continuación, haga clic en **nueva carpeta**. Asigne a la carpeta el nombre *plantillas*. En la carpeta *plantillas* , agregue una carpeta denominada *Projects*. En la carpeta *proyectos* , agregue una carpeta denominada *SimpleProject*).
 
 2. En la carpeta *Templates\Projects\SimpleProject* , agregue un archivo de imagen de mapa de bits para usarlo como el icono denominado *SimpleProject. ico*. Al hacer clic en **Agregar**, se abre el editor de iconos.
 
@@ -101,7 +103,7 @@ En Visual Studio, los proyectos son los contenedores que los desarrolladores usa
    ```
 
    > [!IMPORTANT]
-   > Esta no es la forma final del código *Program.CS* ; los parámetros de reemplazo se tratarán en un paso posterior. Es posible que vea errores de compilación, pero siempre que el **contenido**de la **BuildAction** del archivo sea, debería poder compilar y ejecutar el proyecto como de costumbre.
+   > Esta no es la forma final del código *Program.CS* ; los parámetros de reemplazo se tratarán en un paso posterior. Es posible que vea errores de compilación, pero siempre que el **contenido** de la **BuildAction** del archivo sea, debería poder compilar y ejecutar el proyecto como de costumbre.
 
 7. Guarde el archivo.
 
@@ -154,7 +156,7 @@ En Visual Studio, los proyectos son los contenedores que los desarrolladores usa
 
 11. Guarde el archivo.
 
-12. En la ventana **propiedades** , establezca la **acción de compilación** de *AssemblyInfo.CS*, *Program.CS*, *SimpleProject. ico*y *SimpleProject. MYPROJ* en **Content**, y establezca su **include en** las propiedades VSIX en **true**.
+12. En la ventana **propiedades** , establezca la **acción de compilación** de *AssemblyInfo.CS*, *Program.CS*, *SimpleProject. ico* y *SimpleProject. MYPROJ* en **Content**, y establezca su **include en** las propiedades VSIX en **true**.
 
     Esta plantilla de proyecto describe un proyecto básico de Visual C# que tiene una configuración de depuración y una configuración de versión. El proyecto incluye dos archivos de código fuente, *AssemblyInfo.CS* y *Program.CS*, y varias referencias de ensamblado. Cuando se crea un proyecto a partir de la plantilla, el valor de ProjectGuid se reemplaza automáticamente por un nuevo GUID.
 
@@ -261,7 +263,7 @@ Templates
 
     4. Agregue referencias a los siguientes ensamblados:
 
-        - `Microsoft.VisualStudio.Designer.Interfaces`(en * \<VSSDK install> \VisualStudioIntegration\Common\Assemblies\v2.0*)
+        - `Microsoft.VisualStudio.Designer.Interfaces`(en *\<VSSDK install> \VisualStudioIntegration\Common\Assemblies\v2.0*)
 
         - `WindowsBase`
 
@@ -441,7 +443,7 @@ Templates
 
 ### <a name="to-test-the-projectnode-class"></a>Para probar la clase ProjectNode
 
-1. Pulse **F5** para iniciar la depuración. En la instancia experimental, cree un nuevo SimpleProject.
+1. Presiona **F5** para iniciar la depuración. En la instancia experimental, cree un nuevo SimpleProject.
 
 2. Visual Studio debe llamar al generador de proyectos para crear un proyecto.
 
@@ -636,4 +638,4 @@ Templates
 
     ![Comando de proyecto simple](../extensibility/media/simpleprojcommand.png "SimpleProjCommand")
 
-   Felicidades. Ha implementado un sistema de proyectos administrado básico.
+   ¡Enhorabuena! Ha implementado un sistema de proyectos administrado básico.

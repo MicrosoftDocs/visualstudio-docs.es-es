@@ -1,5 +1,7 @@
 ---
 title: Creación de un sistema de proyectos básico, parte 2 | Microsoft Docs
+description: Obtenga información sobre cómo agregar una plantilla de Visual Studio, una página de propiedades y otras características a un proyecto creado en un artículo anterior.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b9d5ce673e0ee44e888905239c12251241015ab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 564d975a60c54a074d830742eb0ab6133fdbfe4e
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903823"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974605"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>Creación de un sistema de proyectos básico, parte 2
 En el primer tutorial de esta serie, [crear un sistema de proyectos básico, parte 1](../extensibility/creating-a-basic-project-system-part-1.md), se muestra cómo crear un sistema de proyectos básico. Este tutorial se basa en el sistema de proyectos básico agregando una plantilla de Visual Studio, una página de propiedades y otras características. Debe completar el primer tutorial antes de iniciar este.
@@ -40,7 +42,7 @@ En este tutorial se enseña cómo realizar estas tareas:
 > Los pasos de este tutorial se basan en un proyecto de C#. Sin embargo, a excepción de las características específicas, como las extensiones de nombre de archivo y el código, puede usar los mismos pasos para un proyecto de Visual Basic.
 
 ## <a name="create-a-visual-studio-template"></a>Crear una plantilla de Visual Studio
-- [Crear un sistema de proyectos básico, parte 1](../extensibility/creating-a-basic-project-system-part-1.md) muestra cómo crear una plantilla de proyecto básica y agregarla al sistema del proyecto. También se muestra cómo registrar esta plantilla con Visual Studio mediante el <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> atributo, que escribe la ruta de acceso completa de la carpeta * \\ \\ Templates\Projects\SimpleProject* en el registro del sistema.
+- [Crear un sistema de proyectos básico, parte 1](../extensibility/creating-a-basic-project-system-part-1.md) muestra cómo crear una plantilla de proyecto básica y agregarla al sistema del proyecto. También se muestra cómo registrar esta plantilla con Visual Studio mediante el <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> atributo, que escribe la ruta de acceso completa de la carpeta *\\ \\ Templates\Projects\SimpleProject* en el registro del sistema.
 
 Mediante el uso de una plantilla de Visual Studio (archivo *. vstemplate* ) en lugar de una plantilla de proyecto básica, puede controlar cómo se muestra la plantilla en el cuadro de diálogo **nuevo proyecto** y cómo se sustituyen los parámetros de la plantilla. Un archivo *. vstemplate* es un archivo XML que describe cómo se van a incluir los archivos de código fuente cuando se crea un proyecto mediante la plantilla de sistema del proyecto. El propio sistema del proyecto se compila recopilando el archivo *. vstemplate* y los archivos de código fuente en un archivo *. zip* , e implementado mediante la copia del archivo *. zip* en una ubicación conocida por Visual Studio. Este proceso se explica con más detalle más adelante en este tutorial.
 
@@ -55,7 +57,7 @@ Mediante el uso de una plantilla de Visual Studio (archivo *. vstemplate* ) en l
     LanguageVsTemplate = "SimpleProject")]
     ```
 
-3. Agregue un archivo XML denominado *SimpleProject. vstemplate* a la carpeta * \\ \\ Templates\Projects\SimpleProject* .
+3. Agregue un archivo XML denominado *SimpleProject. vstemplate* a la carpeta *\\ \\ Templates\Projects\SimpleProject* .
 
 4. Reemplace el contenido de *SimpleProject. vstemplate* por el código siguiente.
 
@@ -83,7 +85,7 @@ Mediante el uso de una plantilla de Visual Studio (archivo *. vstemplate* ) en l
     </VSTemplate>
     ```
 
-5. En la ventana **propiedades** , seleccione los cinco archivos en la carpeta * \\ Templates\Projects\SimpleProject \\ * y establezca la **acción de compilación** en **ZipProject**.
+5. En la ventana **propiedades** , seleccione los cinco archivos en la carpeta *\\ Templates\Projects\SimpleProject \\* y establezca la **acción de compilación** en **ZipProject**.
 
     ![Carpeta de proyecto simple](../extensibility/media/simpproj2.png "SimpProj2")
 
@@ -207,9 +209,9 @@ Los nodos secundarios se crean modificando el archivo de proyecto y agregando \<
 
 En esta sección se muestra cómo crear un nodo secundario de la consola para el tipo de proyecto SimpleProject.
 
-1. Cambie el nombre de la carpeta * \\ Templates\Projects\SimpleProject \\ * a * \\ Templates\Projects\ConsoleApp \\ *.
+1. Cambie el nombre de la carpeta *\\ Templates\Projects\SimpleProject \\* a *\\ Templates\Projects\ConsoleApp \\*.
 
-2. En la ventana **propiedades** , seleccione los cinco archivos en la carpeta * \\ Templates\Projects\ConsoleApp \\ * y asegúrese de que la **acción de compilación** está establecida en **ZipProject**.
+2. En la ventana **propiedades** , seleccione los cinco archivos en la carpeta *\\ Templates\Projects\ConsoleApp \\* y asegúrese de que la **acción de compilación** está establecida en **ZipProject**.
 
 3. En el archivo SimpleProject. vstemplate, agregue la siguiente línea al final de la \<TemplateData> sección, justo antes de la etiqueta de cierre.
 
@@ -285,13 +287,13 @@ Cuando se crea un proyecto mediante una plantilla de Visual Studio en el cuadro 
 
 1. En el archivo *SimpleProjectNode.CS* , quite el `AddFileFromTemplate` método.
 
-2. En el archivo * \\ Templates\Projects\ConsoleApp\SimpleProject.MyProj* , busque la \<RootNamespace> propiedad y cambie su valor a $safeprojectname $.
+2. En el archivo *\\ Templates\Projects\ConsoleApp\SimpleProject.MyProj* , busque la \<RootNamespace> propiedad y cambie su valor a $safeprojectname $.
 
     ```
     <RootNamespace>$safeprojectname$</RootNamespace>
     ```
 
-3. En el archivo * \\ Templates\Projects\SimpleProject\Program.CS* , reemplace el contenido del archivo por el código siguiente:
+3. En el archivo *\\ Templates\Projects\SimpleProject\Program.CS* , reemplace el contenido del archivo por el código siguiente:
 
     ```
     using System;
@@ -462,7 +464,7 @@ La página de propiedades que se crea en esta sección le permite modificar y gu
 
 7. Visual Studio llama al generador de proyectos para crear un proyecto mediante la plantilla de Visual Studio. El nuevo archivo *Program.CS* se abre en el editor de código.
 
-8. Haga clic con el botón secundario en el nodo del proyecto en **Explorador de soluciones**y, a continuación, haga clic en **propiedades**. Aparece el cuadro de diálogo **Páginas de propiedades**.
+8. Haga clic con el botón secundario en el nodo del proyecto en **Explorador de soluciones** y, a continuación, haga clic en **propiedades**. Aparece el cuadro de diálogo **Páginas de propiedades**.
 
     ![Página de propiedades de proyecto simple](../extensibility/media/simpproj2_proppage.png "SimpProj2_PropPage")
 

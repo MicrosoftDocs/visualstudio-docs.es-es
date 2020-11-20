@@ -1,5 +1,7 @@
 ---
 title: Commands (elemento) | Microsoft Docs
+description: 'El elemento Commands representa la colección de comandos de la barra de herramientas de VSPackage y puede tener estas secciones: menús, grupos, botones, cuadros combinados y mapas de bits.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ea2400cca19a02475caecec3d022e0b78794ae4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 59afdda5a9af3a779b65063c3c764ef4f284a265
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739693"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974508"
 ---
 # <a name="commands-element"></a>Elemento Commands
 Representa la colección de comandos de la barra de herramientas de VSPackage. La colección puede tener hasta cinco subsecciones, como se indica a continuación: menús, grupos, botones, cuadros combinados y mapas de bits.

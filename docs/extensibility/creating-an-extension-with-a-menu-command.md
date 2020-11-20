@@ -1,5 +1,7 @@
 ---
 title: Crear una extensión con un comando de menú | Microsoft Docs
+description: Obtenga información sobre cómo crear una extensión con un comando de menú que inicie el Bloc de notas. Cree un comando de menú y, a continuación, cambie el controlador de comandos de menú.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c8639ede4a01157718f0ab1a1514927e620fa8d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 00afdc31e72e4b0336db19939955a0b2360a00a1
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86972340"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974269"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>Crear una extensión con un comando de menú
 
@@ -26,7 +28,7 @@ En este tutorial se muestra cómo crear una extensión con un comando de menú q
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS después. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-menu-command"></a>Crear un comando de menú
 
@@ -106,7 +108,7 @@ Ahora vamos a actualizar el controlador de comandos para iniciar el Bloc de nota
 
 ## <a name="clean-up-the-experimental-environment"></a>Limpieza del entorno experimental
 
-Si está desarrollando varias extensiones o solo está explorando los resultados con versiones diferentes del código de extensión, el entorno experimental puede dejar de funcionar de la manera que debería. En este caso, debe ejecutar el script de restablecimiento. Se denomina **restablecer la instancia experimental de Visual Studio**y se incluye como parte del SDK de Visual Studio. Este script quita todas las referencias a las extensiones del entorno experimental, por lo que puede empezar desde cero.
+Si está desarrollando varias extensiones o solo está explorando los resultados con versiones diferentes del código de extensión, el entorno experimental puede dejar de funcionar de la manera que debería. En este caso, debe ejecutar el script de restablecimiento. Se denomina **restablecer la instancia experimental de Visual Studio** y se incluye como parte del SDK de Visual Studio. Este script quita todas las referencias a las extensiones del entorno experimental, por lo que puede empezar desde cero.
 
 Puede obtener acceso a este script de una de estas dos maneras:
 

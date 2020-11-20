@@ -1,5 +1,7 @@
 ---
 title: Crear una extensión con un VSPackage | Microsoft Docs
+description: Obtenga información sobre cómo crear un proyecto de VSIX y agregar un elemento de proyecto de VSPackage mediante el VSPackage para obtener el servicio de Shell de interfaz de usuario con el fin de mostrar un cuadro de mensaje.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 ms.assetid: c0cc5e08-4897-44f2-8309-e3478f1f999e
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 68ade2f8d334c1f93349e396d910fa300f6b5417
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 431de32838ad236229db5e41330aba372e30ea75
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903860"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973780"
 ---
 # <a name="create-an-extension-with-a-vspackage"></a>Creación de una extensión con un VSPackage
 
@@ -21,7 +23,7 @@ En este tutorial se muestra cómo crear un proyecto de VSIX y agregar un element
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS después. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-vspackage"></a>Crear un VSPackage
 

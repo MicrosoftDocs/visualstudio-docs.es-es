@@ -1,5 +1,7 @@
 ---
 title: CommandName (elemento) | Microsoft Docs
+description: El elemento CommandName especifica el texto que aparece en la categoría teclado del cuadro de diálogo Opciones y en la lista comandos del cuadro de diálogo Personalizar.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8152942d015e21b1b80f735fd921a5ddde3674d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8447213b14a3632197ea7ce27677423460315f71
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739748"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974120"
 ---
 # <a name="commandname-element"></a>CommandName (elemento)
 El `CommandName` elemento especifica el texto que aparece en la categoría teclado del cuadro de diálogo **Opciones** y en la lista **comandos** del cuadro de diálogo **personalizar** .

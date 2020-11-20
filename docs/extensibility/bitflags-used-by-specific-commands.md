@@ -1,5 +1,7 @@
 ---
 title: Marcadores usado por comandos específicos | Microsoft Docs
+description: Obtenga información sobre los marcadores utilizados por la API del complemento de control de código fuente, organizados por la función que los utiliza.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ffa1fd8bf025d665977e87dc8b88da724ade5a8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7c6c48dbad986d8bc4be58f1ebd9c5bd1fffbd57
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740012"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974604"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Marcadores usado por comandos específicos
 El comportamiento de una serie de funciones de la API del complemento de control de código fuente se puede modificar estableciendo uno o varios bits en un solo valor. Estos valores se conocen como marcadores. Los distintos marcadores que usa la API del complemento de control de código fuente se detallan aquí, agrupados por la función que los utiliza.

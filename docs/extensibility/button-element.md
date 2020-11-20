@@ -1,5 +1,7 @@
 ---
 title: Elemento Button | Microsoft Docs
+description: 'El elemento de botón define un elemento con el que el usuario puede interactuar. Los botones pueden ser tipos diferentes: Button, MenuButton y SplitDropDown.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05bd73764e96a27a92d741f144c222acc48fa518
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8da92f721f0f4333ffb32ac5cb080d87e4fc0543
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739931"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974493"
 ---
 # <a name="button-element"></a>Elemento Button
 Define un elemento con el que el usuario puede interactuar. Los botones pueden ser de diferentes tipos: Button, MenuButton y SplitDropDown.
@@ -76,5 +78,5 @@ Define un elemento con el que el usuario puede interactuar. Los botones pueden s
 </Button>
  ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Archivos de tabla de comandos de Visual Studio (. Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

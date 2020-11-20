@@ -1,5 +1,7 @@
 ---
 title: Enlazar métodos abreviados de teclado a elementos de menú | Microsoft Docs
+description: Obtenga información sobre cómo asignar un método abreviado de teclado en Visual Studio a un botón personalizado, un elemento de menú o un comando de barra de herramientas para el editor predeterminado o un editor personalizado.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8df973ef6a75a9134b4ee6e945a5702708ece712
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: 112089581965b96133f2160341a13efe23329934
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407723"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974628"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>Enlazar métodos abreviados de teclado a elementos de menú
 Para enlazar un método abreviado de teclado a un comando de menú personalizado, solo tiene que agregar una entrada al archivo *. Vsct* para el paquete. En este tema se explica cómo asignar un método abreviado de teclado a un botón personalizado, un elemento de menú o un comando de barra de herramientas, y cómo aplicar la asignación de teclado en el editor predeterminado o limitarlo a un editor personalizado.
@@ -59,7 +61,7 @@ Para enlazar un método abreviado de teclado a un comando de menú personalizado
 
     Establezca los `guid`  `id` atributos y en los del comando que desea invocar.
 
-    Establezca el `mod1` atributo en **control** , **Alt** o **Shift**.
+    Establezca el `mod1` atributo en **control**, **Alt** o **Shift**.
 
     La sección KeyBindings debe tener un aspecto similar al siguiente:
 

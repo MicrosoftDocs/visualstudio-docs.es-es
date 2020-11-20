@@ -1,5 +1,7 @@
 ---
 title: Cambios importantes en la extensibilidad de Visual Studio 2017
+description: Obtenga información sobre los detalles técnicos de los cambios importantes realizados en el modelo de extensibilidad en Visual Studio 2017 y lo que puede hacer para solucionarlos.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 11/09/2016
 ms.topic: conceptual
@@ -9,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d872003b319773401ef4da72c1fac8dc177ecbdb
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 3121189b1d73543d2a01bbf0b149c6a98eab6909
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011793"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973755"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Cambios en la extensibilidad de Visual Studio 2017
 
@@ -98,7 +100,7 @@ La mayoría de los ensamblados principales de Visual Studio ya no se instalan en
 ### <a name="global-com-registration"></a>Registro COM global
 
 * Anteriormente, Visual Studio instalaba muchas claves del registro en el HKEY_CLASSES_ROOT y HKEY_LOCAL_MACHINE subárboles para admitir el registro COM nativo. Para eliminar este impacto, Visual Studio ahora usa [la activación sin registro para los componentes com](/previous-versions/dotnet/articles/ms973913(v=msdn.10)).
-* Como resultado, Visual Studio ya no instala de forma predeterminada la mayoría de los archivos TLB/OLB/DLL de% ProgramFiles (x86)% \ Common Files\Microsoft Shared\MSEnv. Estos archivos se instalan ahora en [INSTALLDIR] con los manifiestos COM sin registro correspondientes que usa el proceso de host de Visual Studio.
+* Como resultado, Visual Studio ya no instala de forma predeterminada la mayoría de los archivos TLB/OLB/DLL de% ProgramFiles (x86)% \ Common Files\Microsoft Shared\MSEnv. Estos archivos se instalan ahora en [INSTALLDIR] con los manifiestos COM correspondientes Registration-Free utilizados por el proceso de host de Visual Studio.
 * Como resultado, el código externo que se basa en el registro COM global para las interfaces COM de Visual Studio ya no encontrará estos registros. El código que se ejecuta dentro del proceso de Visual Studio no verá ninguna diferencia.
 
 ### <a name="visual-studio-registry"></a>Registro de Visual Studio
@@ -115,7 +117,7 @@ La mayoría de los ensamblados principales de Visual Studio ya no se instalan en
 
 ### <a name="react-to-this-breaking-change"></a>Reaccionar ante este cambio importante
 
-* El código externo se debe convertir para utilizar también la activación sin registro para los componentes COM.
+* El código externo debe convertirse para usar la activación de Registration-Free también para los componentes COM.
 * Los componentes externos pueden encontrar la ubicación de Visual Studio siguiendo [las instrucciones aquí](https://devblogs.microsoft.com/setup/changes-to-visual-studio-15-setup).
 * Se recomienda que los componentes externos usen el [Administrador de configuración externa](/dotnet/api/microsoft.visualstudio.settings.externalsettingsmanager) en lugar de leer y escribir directamente en las claves del registro de Visual Studio.
 * Compruebe si los componentes que usa la extensión pueden haber implementado otra técnica para el registro. Por ejemplo, las extensiones del depurador pueden aprovechar el nuevo [registro com de archivo JSON de msvsmon](migrate-debugger-COM-registration.md).

@@ -1,5 +1,7 @@
 ---
 title: Crear una extensión con una plantilla de elemento de editor | Microsoft Docs
+description: Aprenda a usar plantillas de elementos en el SDK de Visual Studio para crear extensiones de editor básicas que agreguen clasificadores, elementos gráficos y márgenes al editor.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,18 +12,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91daa7e195435f33b93e6286cb19d820b4418d48
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6264cb35e404d69900094513875fc7b79310a4d
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903844"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973736"
 ---
 # <a name="create-an-extension-with-an-editor-item-template"></a>Crear una extensión con una plantilla de elemento de editor
 Puede usar plantillas de elementos que se incluyen en el SDK de Visual Studio para crear extensiones de editor básicas que agreguen clasificadores, elementos gráficos y márgenes al editor. Las plantillas de elementos del editor están disponibles para proyectos de Visual C# o Visual Basic VSIX.
 
 ## <a name="prerequisites"></a>Requisitos previos
- A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS después. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-classifier-extension"></a>Crear una extensión de clasificador
  La plantilla de elemento clasificador de editor crea un clasificador de editor que colorea el texto correspondiente (en este caso, todo) en cualquier archivo de texto.
@@ -69,7 +71,7 @@ Puede usar plantillas de elementos que se incluyen en el SDK de Visual Studio pa
 
 1. En el cuadro de diálogo **nuevo proyecto** , expanda **Visual C#** o **Visual Basic** y, a continuación, haga clic en **extensibilidad**. En el panel **plantillas** , seleccione **Proyecto VSIX**. En el cuadro **Nombre** , escriba `ViewportAdornment`. Haga clic en **OK**.
 
-2. En el **Explorador de soluciones**, haga clic con el botón secundario en el nodo del proyecto y seleccione **Agregar**  >  **nuevo elemento**. Vaya al nodo **extensibilidad** de Visual C# y seleccione **elemento gráfico**de la ventanilla del editor. Deje el nombre de archivo predeterminado (*ViewportAdornment1.CS/VB*).
+2. En el **Explorador de soluciones**, haga clic con el botón secundario en el nodo del proyecto y seleccione **Agregar**  >  **nuevo elemento**. Vaya al nodo **extensibilidad** de Visual C# y seleccione **elemento gráfico** de la ventanilla del editor. Deje el nombre de archivo predeterminado (*ViewportAdornment1.CS/VB*).
 
 3. Hay dos archivos de código, como se indica a continuación:
 
@@ -96,5 +98,5 @@ Puede usar plantillas de elementos que se incluyen en el SDK de Visual Studio pa
 
 4. Compile este proyecto e inicie la depuración. Aparece la instancia experimental. Si abre un archivo de texto, se muestra un margen verde con las palabras **Hello EditorMargin1** debajo de la barra de desplazamiento horizontal.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Puntos de extensión de editor y servicio de lenguaje](../extensibility/language-service-and-editor-extension-points.md)

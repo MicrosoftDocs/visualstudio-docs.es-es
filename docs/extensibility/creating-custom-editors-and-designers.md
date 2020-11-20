@@ -1,5 +1,7 @@
 ---
 title: Crear editores y diseñadores personalizados | Microsoft Docs
+description: 'Obtenga información sobre los diferentes tipos de editores que puede hospedar el IDE de Visual Studio: el editor básico, los editores personalizados, los editores externos y los diseñadores.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9177e6f431eb24a337822dd7de0a0b9586e1de0e
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 9dd2d3923776cc0666a3efd12a32fc9e4e8735a0
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414261"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973615"
 ---
 # <a name="create-custom-editors-and-designers"></a>Crear editores y diseñadores personalizados
 
@@ -102,6 +104,6 @@ Explica cómo implementar un servicio de lenguaje.
 [Extender otras partes de Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)\
 Explica cómo crear elementos de interfaz de usuario que coincidan con el resto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>

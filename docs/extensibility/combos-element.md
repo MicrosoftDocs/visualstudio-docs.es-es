@@ -1,5 +1,7 @@
 ---
 title: Comboboxs (elemento) | Microsoft Docs
+description: El elemento combinados agrupa los elementos combinados, que definen los comandos que aparecen en un cuadro combinado. Este artículo contiene un ejemplo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d005ea69aea7f0331877326abe4087fcff403553
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eba7b40a6e770c5076a4d1aa89bf6196f7ef8684
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739799"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974252"
 ---
 # <a name="combos-element"></a>Comboboxs (elemento)
 Agrupa los elementos de [elemento combinado](../extensibility/combo-element.md) .

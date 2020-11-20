@@ -1,5 +1,7 @@
 ---
 title: ButtonText, elemento | Microsoft Docs
+description: El elemento ButtonText le permite especificar el texto que aparece en varios menús. El elemento ButtonText no puede estar en blanco aunque se hayan especificado otros campos de texto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59308feea2002a18662a7c04b95a92a920f934c4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2db20bb3298a7b849e8bc4a261987c5314a29841
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739909"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974470"
 ---
 # <a name="buttontext-element"></a>Elemento ButtonText
 Este campo le permite especificar el texto que aparece en varios menús. De forma predeterminada, el `ButtonText` elemento aparece en los controladores de menús. El `ButtonText` elemento también se convierte en el valor predeterminado si los demás campos de texto están en blanco. El `ButtonText` elemento no puede estar en blanco ni siquiera si se especifican los demás campos de texto.
@@ -45,5 +47,5 @@ Este campo le permite especificar el texto que aparece en varios menús. De form
 ## <a name="text-value"></a>Valor de texto
  El valor de texto del `ButtonText` elemento proporciona el texto que se muestra para los elementos de menú, los cuadros combinados y otros elementos de la interfaz de usuario que tienen texto visible.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Archivos de tabla de comandos de Visual Studio (. Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
