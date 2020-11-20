@@ -1,5 +1,7 @@
 ---
 title: Compilación y depuración de soluciones de SharePoint | Microsoft Docs
+description: Obtenga información sobre cómo compilar y depurar soluciones de SharePoint, y descubra la diferencia que hay con la compilación y la depuración de otros tipos de proyectos de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e4b34df23c8cb612d72fed108a6c0aecbf57875c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f6801f6b60d2ef522385ecdf290d0a1913bd6df2
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016359"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850239"
 ---
 # <a name="build-and-debug-sharepoint-solutions"></a>Build and debug SharePoint solutions (Compilar y depurar las soluciones de SharePoint)
   En general, la compilación y depuración de soluciones de SharePoint es la misma que la de otros tipos de proyectos en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Los temas de esta sección explican las diferencias que existen entre ellos.

@@ -1,5 +1,7 @@
 ---
 title: Creación de soluciones de flujo de trabajo de SharePoint | Microsoft Docs
+description: Cree soluciones de flujo de trabajo de SharePoint usando herramientas para generar flujos de trabajo personalizados que permitan administrar el ciclo de vida de los documentos y enumerar los elementos que hay en un sitio web de SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2c787009577735213437140513ec095f81c3f43b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dd3f88df661537434c79a8b0049f90ddbce14c70
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015280"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850616"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>Creación de soluciones de flujo de trabajo de SharePoint
 
