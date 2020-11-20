@@ -40,11 +40,11 @@ Entre las suscripciones de Visual Studio válidas se incluyen las suscripciones 
 
 5. Después de haber seleccionado la ruta de aprendizaje, puede delimitarla aún más seleccionando un objetivo.  Por ejemplo, si optó por desarrollar sus aptitudes de ciencia de datos, verá las siguientes opciones. Elija una opción o haga clic en **I am not sure.  Show me all career paths** (No estoy seguro. Mostrar todas las rutas profesionales) para confeccionar una ruta más amplia.
    > [!div class="mx-imgBorder"]
-   > ![Conjunto de aptitudes de ciencia de datos de DataCamp](_img/vs-datacamp/vs-datacamp-datascience.png "Haga clic en "No estoy seguro.  Mostrar todas las rutas profesionales" para mostrar la lista completa.")
+   > ![Conjunto de aptitudes de ciencia de datos de DataCamp](_img/vs-datacamp/vs-datacamp-datascience.png "Haga clic en 'No estoy seguro.  Mostrar todas las rutas profesionales' para mostrar la lista completa.")
 
 6. En función de la ruta y las opciones escogidas, verá una selección de pistas profesionales.  Haga clic en el botón **Enroll** (Inscribirse) de la pista que quiera.
    > [!div class="mx-imgBorder"]
-   > ![Pista profesional de DataCamp](_img/vs-datacamp/vs-datacamp-all-tracks.png "Haga clic en el botón "Inscribir" en la ruta seleccionada para empezar.")
+   > ![Pista profesional de DataCamp](_img/vs-datacamp/vs-datacamp-all-tracks.png "Haga clic en el botón 'Inscribir' en la ruta seleccionada para empezar.")
 
 7. Una vez que se haya inscrito en la pista, se abrirá el primer curso de esa pista.  Podrá ver un tutorial en el que se explica cómo interactuar con el curso, cómo navegar por él y cómo completar los ejercicios que contiene.
 
@@ -54,7 +54,7 @@ Entre las suscripciones de Visual Studio válidas se incluyen las suscripciones 
 Puede parar en cualquier momento y reanudar el curso en la siguiente sesión.  Solo tiene que ir a [https://www.datacamp.com](https://www.datacamp.com) e iniciar sesión.  Aparecerá su panel y podrá reanudar el curso justo donde lo dejó. Bastará con que haga clic en **Continue Track** (Continuar pista).
 
 > [!div class="mx-imgBorder"]
-> ![Continuar con la formación de DataCamp](_img/vs-datacamp/vs-datacamp-continue-training.png "Haga clic en "Continue Track" (Continuar pista) para reanudar el aprendizaje en cualquier momento.")
+> ![Continuar con la formación de DataCamp](_img/vs-datacamp/vs-datacamp-continue-training.png "Haga clic en 'Continue Track' (Continuar pista) para reanudar el aprendizaje en cualquier momento.")
 
 ## <a name="eligibility"></a>Elegibilidad
 | Nivel de suscripción                                                 |     Canales                                            | Prestación                                                          | ¿Renovable?    |
