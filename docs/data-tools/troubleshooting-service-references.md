@@ -1,5 +1,7 @@
 ---
 title: Solucionar problemas de referencias de servicio
+description: Revise los problemas comunes que pueden producirse al trabajar con referencias de Windows Communication Foundation (WCF) o WCF Data Services en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d52562382f10615c7da1dfab22d4c18323b725b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7d1a1f0efc21f1f612d85725358555fcb0cb8245
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586125"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998075"
 ---
 # <a name="troubleshoot-service-references"></a>Solucionar problemas de referencias de servicio
 
@@ -76,7 +78,7 @@ Para corregir este error, tiene que volver a generar manualmente el proyecto de 
 
 1. En el menú **Herramientas** , haga clic en **Opciones**.
 
-2. En el cuadro de diálogo **Opciones** , expanda **proyectos y soluciones**y, a continuación, seleccione **General**.
+2. En el cuadro de diálogo **Opciones** , expanda **proyectos y soluciones** y, a continuación, seleccione **General**.
 
 3. Asegúrese de que la casilla **Mostrar configuraciones de compilación avanzadas** está activada y, a continuación, haga clic en **Aceptar**.
 
@@ -102,6 +104,6 @@ Para corregir este error, deshabilite las fuentes RSS:
 
 4. Haga clic en **Aceptar** para cerrar el cuadro de diálogo **Opciones de Internet** .
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Windows Communication Foundation servicios y WCF Data Services en Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

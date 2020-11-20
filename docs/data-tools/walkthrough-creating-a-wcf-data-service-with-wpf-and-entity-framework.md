@@ -1,5 +1,7 @@
 ---
 title: Crear un servicio de datos de WCF con WPF & Entity Framework
+description: Cree un servicio de datos de WCF con WPF y Entity Framework hospedado en una aplicación Web de ASP.NET y, a continuación, acceda a él desde una aplicación Windows Forms.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9abdeee9a785a8bccf6cbb580c87bae4fa313036
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c8c9ced0b589b28f1cd21de4a862c6f11dc6e03e
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585995"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998270"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Tutorial: Crear un servicio de datos de WCF con WPF y Entity Framework
 En este tutorial se muestra cómo crear un sencillo [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] que se hospeda en una aplicación web de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] y al que se accede desde una aplicación de Windows Forms.
@@ -40,7 +42,7 @@ En este tutorial:
 
 - Opcionalmente agregará funciones de filtrado a la aplicación.
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
 En este tutorial se usa SQL Server Express LocalDB y la base de datos de ejemplo Northwind.
 
 1. Si no tiene SQL Server Express LocalDB, instálelo desde la [Página de descarga de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)o a través de la **instalador de Visual Studio**. En el **instalador de Visual Studio**, puede instalar SQL Server Express LocalDB como parte de la carga de trabajo de **procesamiento y almacenamiento de datos** , o como un componente individual.
@@ -134,7 +136,7 @@ En el paso siguiente, creará y probará el servicio de datos.
 
 6. En la barra de menús, elija **depurar**  >  **iniciar sin depurar** para ejecutar el servicio. Se abre una ventana del explorador y se muestra el esquema XML para el servicio.
 
-7. En la barra de **direcciones** , escriba `Customers` al final de la dirección URL de **NorthwindCustomers. SVC**y, a continuación, elija la tecla **entrar** .
+7. En la barra de **direcciones** , escriba `Customers` al final de la dirección URL de **NorthwindCustomers. SVC** y, a continuación, elija la tecla **entrar** .
 
      Aparece una representación XML de los datos de la `Customers` tabla.
 
@@ -178,7 +180,7 @@ En el paso siguiente, configurará un origen de datos para habilitar el enlace d
 
 ### <a name="to-enable-data-binding-to-the-service"></a>Para habilitar el enlace de datos al servicio
 
-1. En la barra de menús, elija **Ver**  >  **otros**  >  **orígenes de datos**de Windows.
+1. En la barra de menús, elija **Ver**  >  **otros**  >  **orígenes de datos** de Windows.
 
    Se abre la ventana **Orígenes de datos**.
 
@@ -251,7 +253,7 @@ En este paso, se personaliza la aplicación para filtrar los datos por la ciudad
 
 2. Agregue un control <xref:System.Windows.Forms.TextBox> y un control <xref:System.Windows.Forms.Button> desde el **Cuadro de herramientas** al formulario.
 
-3. Abra el menú contextual del <xref:System.Windows.Forms.Button> control, elija **Ver código**y, a continuación, agregue el código siguiente en el `Button1_Click` controlador de eventos:
+3. Abra el menú contextual del <xref:System.Windows.Forms.Button> control, elija **Ver código** y, a continuación, agregue el código siguiente en el `Button1_Click` controlador de eventos:
 
     ```vb
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -289,4 +291,4 @@ En este paso, se personaliza la aplicación para filtrar los datos por la ciudad
 ## <a name="see-also"></a>Vea también
 
 - [Windows Communication Foundation servicios y WCF Data Services en Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
-- [Cómo: agregar, actualizar o quitar una referencia de servicio de datos de WCF](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)
+- [Cómo: Adición, actualización o eliminación de una referencia de servicio de datos de WCF](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)

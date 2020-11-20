@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: crear una aplicación de datos de N niveles'
+description: En este tutorial, creará una aplicación de datos de N niveles. Las aplicaciones de datos con N niveles son aplicaciones que acceden a los datos y se separan en muchas capas lógicas o niveles.
+ms.custom: SEO-VS-2020
 ms.date: 09/08/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a09ef4cec4b7c2921322b934eef39ba660d02587
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: 76bf07e99f9965e88804c51663bcc37053bf74d6
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426660"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998088"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>Tutorial: crear una aplicación de datos de n niveles
 Las aplicaciones de datos con *n niveles* son aplicaciones que acceden a datos y que están separadas en varias capas lógicas o *niveles*. Al separar los componentes de la aplicación en estos niveles individuales, se aumenta la facilidad de mantenimiento y la escalabilidad de la aplicación. Esto se consigue mediante una integración más sencilla de nuevas tecnologías, que se pueden aplicar a un solo nivel sin necesidad de volver a diseñar la solución completa. Una arquitectura típica con n niveles incluye un nivel de presentación, un nivel intermedio y una capa de datos. El nivel intermedio incluye normalmente una capa de acceso a datos, una capa de la lógica empresarial y componentes compartidos, tales como autenticación y validación. La capa de datos incluye una base de datos relacional. Las aplicaciones con n niveles normalmente almacenan la información confidencial en la capa de acceso a datos del nivel intermedio para aislar esa información de los usuarios finales que obtienen acceso al nivel de presentación. Para obtener más información, vea [información general sobre aplicaciones de datos con N niveles](../data-tools/n-tier-data-applications-overview.md).
@@ -83,7 +85,7 @@ El primer paso de este tutorial consiste en crear una solución y dos proyectos 
 
 4. Asigne al proyecto el nombre **DataEntityTier**.
 
-5. Asigne a la solución el nombre **NTierWalkthrough**y, a continuación, elija **Aceptar**.
+5. Asigne a la solución el nombre **NTierWalkthrough** y, a continuación, elija **Aceptar**.
 
      Se crea una solución NTierWalkthrough que contiene el proyecto DataEntityTier y se agrega al **Explorador de soluciones**.
 
@@ -110,7 +112,7 @@ El paso siguiente consiste en crear un conjunto de datos con tipo. Los conjuntos
 
 1. Seleccione **DataAccessTier** en **Explorador de soluciones**.
 
-2. En el menú **datos** , seleccione **Mostrar orígenes de datos**.
+2. En el menú **Datos**, seleccione **Mostrar orígenes de datos**.
 
    Se abre la ventana **Orígenes de datos**.
 
@@ -205,7 +207,7 @@ El servicio de datos tiene que llamar a dos métodos en el nivel de acceso a dat
 
 6. Haga clic en **Finalizar**
 
-7. En el menú **Compilar**, haga clic en **Compilar solución**.
+7. En el menú **Compilar** , haga clic en **Compilar solución**.
 
 ## <a name="add-a-reference-to-the-data-entity-and-data-access-tiers-to-the-data-service"></a>Agregar una referencia a los niveles de entidad de datos y de acceso a datos al servicio de datos
 Dado que el servicio de datos requiere información del conjunto de datos y los TableAdapters, agregue referencias a los proyectos **DataEntityTier** y **DataAccessTier**.
@@ -218,7 +220,7 @@ Dado que el servicio de datos requiere información del conjunto de datos y los 
 
 3. Seleccione los proyectos **DataAccessTier** y **DataEntityTier**.
 
-4. Haga clic en **Aceptar**.
+4. Haga clic en **OK**.
 
 ## <a name="add-functions-to-the-service-to-call-the-getcustomers-and-getorders-methods-in-the-data-access-tier"></a>Agregar funciones al servicio para llamar a los métodos GetCustomers y GetOrders en el nivel de acceso a datos
 Ahora que el nivel de acceso a datos contiene los métodos para devolver los datos, cree los métodos correspondientes en el servicio de datos para llamar a esos métodos del nivel de acceso a datos.
@@ -281,7 +283,7 @@ Ahora que el nivel de acceso a datos contiene los métodos para devolver los dat
     }
     ```
 
-5. En el menú **Compilar**, haga clic en **Compilar solución**.
+5. En el menú **Compilar** , haga clic en **Compilar solución**.
 
 ## <a name="create-a-presentation-tier-to-display-data-from-the-data-service"></a>Crear un nivel de presentación para Mostrar datos del servicio de datos
 Ahora que la solución contiene el servicio de datos que tiene métodos, que llaman al nivel de acceso a datos, cree otro proyecto que llame al servicio de datos y presente los datos a los usuarios. Para este tutorial, cree una aplicación de formularios Windows Forms; éste es el nivel de presentación de la aplicación con n niveles.
@@ -369,7 +371,7 @@ El valor predeterminado de `maxReceivedMessageSize` no es lo suficientemente gra
 
 2. Busque el atributo de tamaño **maxReceivedMessage** y cambie su valor a `6553600`.
 
-## <a name="test-the-application"></a>Prueba de la aplicación
+## <a name="test-the-application"></a>Probar la aplicación
 Ejecute la aplicación presionando **F5**. Los datos de las `Customers` `Orders` tablas y se recuperan del servicio de datos y se muestran en el formulario.
 
 ## <a name="next-steps"></a>Pasos siguientes
@@ -383,4 +385,4 @@ En función de los requisitos de la aplicación, hay varios pasos que es posible
 
 - [Trabajar con conjuntos de datos en aplicaciones de n capas](../data-tools/work-with-datasets-in-n-tier-applications.md)
 - [Actualización jerárquica](../data-tools/hierarchical-update.md)
-- [Obtener acceso a datos en Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
+- [Obtener acceso a los datos en Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

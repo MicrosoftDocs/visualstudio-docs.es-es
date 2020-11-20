@@ -1,5 +1,6 @@
 ---
 title: Crear un DataTable en el Diseñador de DataSet
+description: En este tutorial, cree un objeto DataTable (sin TableAdapter) mediante el Diseñador de DataSet. Cree una nueva aplicación de Windows Forms y agréguele un nuevo conjunto de nuevos.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
@@ -13,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7dd762c6df5eebc9ebbf142a3ad7dfe430800802
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: a0dad1e6878adc73a08753dca21500499e652602
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036774"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998257"
 ---
 # <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>Tutorial: crear un DataTable en el Diseñador de DataSet
 
@@ -32,7 +33,7 @@ En este tutorial se explica cómo crear un <xref:System.Data.DataTable> (sin un 
 
 3. En el panel central, seleccione el tipo de proyecto **Windows Forms aplicación** .
 
-4. Asigne al proyecto el nombre **DataTableWalkthrough**y, a continuación, elija **Aceptar**.
+4. Asigne al proyecto el nombre **DataTableWalkthrough** y, a continuación, elija **Aceptar**.
 
      El proyecto **DataTableWalkthrough** se crea y se agrega a **Explorador de soluciones**.
 
@@ -42,7 +43,7 @@ En este tutorial se explica cómo crear un <xref:System.Data.DataTable> (sin un 
 
      Aparecerá el cuadro de diálogo **Agregar nuevo elemento** .
 
-2. En el panel izquierdo, seleccione datos y, a continuación, seleccione **conjunto** de **datos**en el panel central.
+2. En el panel izquierdo, seleccione datos y, a continuación, seleccione **conjunto** de **datos** en el panel central.
 
 3. Haga clic en **Agregar**.
 
@@ -82,7 +83,7 @@ Para establecer la clave principal, haga clic con el botón secundario en la col
 
 Para guardar el proyecto **DataTableWalkthrough** , en el menú **archivo** , seleccione **guardar todo**.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Crear y configurar conjuntos de datos en Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)
 - [Enlazar controles a los datos en Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

@@ -1,5 +1,7 @@
 ---
 title: Trabajar con conjuntos de datos en aplicaciones de n niveles
+description: Aprenda a trabajar con conjuntos de información en aplicaciones de n niveles. Las aplicaciones de datos con N niveles son aplicaciones centradas en datos que están separadas en varias capas lógicas (o niveles).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -19,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c7532bed6a7d43c24d698870723d2265fc2b176f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d450bb60bdb604f658f73d0b5df4b9bd739cf923
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585930"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998192"
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>Trabajar con conjuntos de datos en aplicaciones de n niveles
 
@@ -43,12 +45,12 @@ La compatibilidad con n niveles en conjuntos de datasets con tipo permite el des
 
 - [Información general sobre las aplicaciones de datos con N niveles](../data-tools/n-tier-data-applications-overview.md)
 - [Tutorial: crear una aplicación de datos de n niveles](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
-- [Agregar código a TableAdapters en aplicaciones con n niveles](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)
-- [Agregar código a conjuntos de datos en aplicaciones con n niveles](../data-tools/add-code-to-datasets-in-n-tier-applications.md)
-- [Agregar validación a un conjunto de información de n niveles](../data-tools/add-validation-to-an-n-tier-dataset.md)
+- [Agregar código a TableAdapters en aplicaciones de n niveles](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)
+- [Agregar código a conjuntos de datos en aplicaciones de n niveles](../data-tools/add-code-to-datasets-in-n-tier-applications.md)
+- [Agregar validación a un conjunto de datos de n niveles](../data-tools/add-validation-to-an-n-tier-dataset.md)
 - [Separar conjuntos de datos y TableAdapters en proyectos diferentes](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)
 - [Actualización jerárquica](../data-tools/hierarchical-update.md)
-- [Herramientas de conjunto de herramientas en Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
-- [Obtener acceso a datos en Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
+- [Herramientas de conjunto de datos en Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
+- [Obtener acceso a los datos en Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
 - [Crear y configurar TableAdapters](../data-tools/create-and-configure-tableadapters.md)
 - [Aplicaciones de N niveles y remotas con LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)

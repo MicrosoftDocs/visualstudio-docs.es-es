@@ -1,6 +1,6 @@
 ---
 title: Proveedor de base de datos no admitido
-description: La conexión seleccionada usa un proveedor de base de datos que no se admite
+description: La conexión seleccionada usa un proveedor de bases de datos no admitido. Vea información sobre este mensaje de Object Relational Designer de Visual Studio (Object Relational Designer).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c8fa073b47927f673914156c586bf27a121e53ea
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 06e08f9a9c28698ae2ee2fecfbcec64c39666c8a
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037574"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998352"
 ---
 # <a name="the-selected-connection-uses-an-unsupported-database-provider"></a>La conexión seleccionada usa un proveedor de base de datos que no se admite
 
@@ -25,7 +25,7 @@ Object Relational **Designer** solo admite las conexiones de datos que usan el p
 
 Para corregir este error, agregue solo los elementos de las conexiones de datos que usan el proveedor de datos de .NET Framework para SQL Server a Object Relational **Designer**.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - <xref:System.Data.SqlClient>
 - [Herramientas de LINQ to SQL en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

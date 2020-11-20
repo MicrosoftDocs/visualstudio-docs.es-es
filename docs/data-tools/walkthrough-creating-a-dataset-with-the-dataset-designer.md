@@ -1,5 +1,6 @@
 ---
 title: Cree un conjunto de DataSet con el Diseñador de DataSet
+description: En este tutorial, creará un conjunto de DataSet mediante el Diseñador de DataSet. Entender el proceso de creación de un nuevo proyecto y de agregarle un nuevo elemento de conjunto de elementos.
 ms.custom: SEO-VS-2020
 ms.date: 09/11/2017
 ms.topic: conceptual
@@ -14,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 20cd8bdc4f7d72cd0ed3920f75a4955ee57d2a68
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 1f124a459d55b945cd8dbb480d7e7c22b5de4f3e
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036787"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998036"
 ---
 # <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>Tutorial: crear un conjunto de DataSet con el Diseñador de DataSet
 
@@ -51,7 +52,7 @@ En este tutorial se usa SQL Server Express LocalDB y la base de datos de ejemplo
 
 3. En el panel central, seleccione el tipo de proyecto **Windows Forms aplicación** .
 
-4. Asigne al proyecto el nombre **DatasetDesignerWalkthrough**y, a continuación, elija **Aceptar**.
+4. Asigne al proyecto el nombre **DatasetDesignerWalkthrough** y, a continuación, elija **Aceptar**.
 
      Visual Studio agrega el proyecto a **Explorador de soluciones** y muestra un nuevo formulario en el diseñador.
 
@@ -61,9 +62,9 @@ En este tutorial se usa SQL Server Express LocalDB y la base de datos de ejemplo
 
      Aparecerá el cuadro de diálogo **Agregar nuevo elemento** .
 
-2. En el panel izquierdo, seleccione datos y, a continuación, seleccione **conjunto** de **datos**en el panel central.
+2. En el panel izquierdo, seleccione datos y, a continuación, seleccione **conjunto** de **datos** en el panel central.
 
-3. Asigne al conjunto de los nombres **NorthwindDataSet**y, a continuación, elija **Agregar**.
+3. Asigne al conjunto de los nombres **NorthwindDataSet** y, a continuación, elija **Agregar**.
 
      Visual Studio agrega un archivo denominado **NorthwindDataSet. xsd** al proyecto y lo abre en el **Diseñador de DataSet**.
 
@@ -109,7 +110,7 @@ En esta sección se explica cómo agregar tablas al conjunto de DataSet.
 
 - Agregar lógica de la validación a los eventos <xref:System.Data.DataTable.ColumnChanging> o <xref:System.Data.DataTable.RowChanging> de las tablas de datos en el conjunto de datos. Para obtener más información, vea [Validate Data in datasets](../data-tools/validate-data-in-datasets.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Crear y configurar conjuntos de datos en Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)
 - [Enlazar controles de Windows Forms a datos en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

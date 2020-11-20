@@ -1,6 +1,6 @@
 ---
 title: Cambios sin aplicar
-description: 'Advertencia: Se han realizado cambios en el cuadro de diálogo Configurar comportamiento que no se pueden aplicar'
+description: 'ADVERTENCIA: se han realizado cambios en el cuadro de diálogo Configurar comportamiento que no se han aplicado. Vea información sobre este mensaje de Visual Studio O/R Designer.'
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 02a94c7038e0825a9793521ed57eefd3a61d9e39
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 7f93c4277f1922ae2d78e32d3ed940f9d7215c96
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036735"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998218"
 ---
 # <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>Advertencia: Se han realizado cambios en el cuadro de diálogo Configurar comportamiento que no se pueden aplicar.
 
@@ -25,10 +25,10 @@ El cuadro de diálogo **configurar comportamiento** permite configurar `Insert` 
 
 ## <a name="change-options"></a>Cambiar opciones
 
-- Para aplicar el cambio y continuar, haga clic en **sí**. El cambio se aplica a la **clase** y al **comportamiento**seleccionados.
+- Para aplicar el cambio y continuar, haga clic en **sí**. El cambio se aplica a la **clase** y al **comportamiento** seleccionados.
 
 - Para cancelar el cambio anterior y continuar, haga clic en **no**.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Herramientas de LINQ to SQL en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

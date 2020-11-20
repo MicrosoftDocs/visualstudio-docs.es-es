@@ -1,5 +1,7 @@
 ---
 title: Validar datos en conjuntos de datos
+description: Aprenda a validar datos en conjuntos de datos. La validación de datos implica la confirmación de que los valores especificados en los objetos de datos se ajustan a las restricciones del esquema de un conjunto de datos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 379c5ec40a59ba044c8cce1ef7926294b763d05d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cde45c4086b93713fe6e5223c1725538c0880491
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281089"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998309"
 ---
 # <a name="validate-data-in-datasets"></a>Validar datos en conjuntos de datos
 La validación de datos es el proceso de confirmar que los valores que se especifican en los objetos de datos cumplen las restricciones del esquema de un conjunto de datos. El proceso de validación también confirma que estos valores siguen las reglas establecidas para la aplicación. Se recomienda validar los datos antes de enviar las actualizaciones a la base de datos subyacente. Esto reduce los errores, así como el número potencial de recorridos de ida y vuelta entre una aplicación y la base de datos.
@@ -64,7 +66,7 @@ Si la aplicación utiliza un conjunto de un DataSet con tipo, puede crear contro
 
 ## <a name="data-update-events"></a>Eventos de actualización de datos
 
-|Evento|Descripción|
+|evento|Descripción|
 |-----------|-----------------|
 |<xref:System.Data.DataTable.ColumnChanging>|Se está cambiando el valor de una columna. El evento le pasa la fila y la columna, junto con el nuevo valor propuesto.|
 |<xref:System.Data.DataTable.ColumnChanged>|Se ha cambiado el valor de una columna. El evento le pasa la fila y la columna, junto con el valor propuesto.|
@@ -209,6 +211,6 @@ Si se pasa el valor <xref:System.Data.DataRowVersion> junto con el índice de la
 
 ## <a name="see-also"></a>Vea también
 
-- [Herramientas de conjunto de herramientas en Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
+- [Herramientas de conjunto de datos en Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
 - [Cómo: validar datos en el control DataGridView Windows Forms](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)
 - [Cómo: Mostrar iconos de error para la validación de formularios con el componente ErrorProvider Windows Forms](/dotnet/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider)

@@ -1,5 +1,7 @@
 ---
 title: Trabajar con un modelo conceptual (Servicios de datos de WCF)
+description: Trabajar con un modelo conceptual en WCF Data Services. Consultar los datos a través de objetos en lugar de trasladarlos entre los esquemas de base de datos y los modelos de objetos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 272f2f5e04ad8d87da45c98ed38c30751658d5c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2aa79ca10729b9c36437fe30072328838de5dda4
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585917"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997880"
 ---
 # <a name="work-with-a-conceptual-model-wcf-data-services"></a>Trabajar con un modelo conceptual (WCF Data Services)
 
@@ -45,7 +47,7 @@ En los temas siguientes se muestra cómo agregar validación a las aplicaciones 
 |[Cómo: agregar, modificar y eliminar entidades](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)|Muestra cómo crear, actualizar y eliminar los datos de entidad en un servicio de datos.|
 |[Cómo: definir relaciones de entidades](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|Muestra cómo crear o cambiar las relaciones en un servicio de datos.|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Windows Communication Foundation servicios y WCF Data Services en Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
 - [Consultar el servicio de datos](/dotnet/framework/data/wcf/querying-the-data-service-wcf-data-services)

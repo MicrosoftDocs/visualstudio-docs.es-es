@@ -1,5 +1,6 @@
 ---
 title: LINQ to SQL clases con herencia de tabla única
+description: En este tutorial, creará LINQ to SQL clases mediante la herencia de tabla única en el Object Relational Designer de Visual Studio (O/R Designer).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b0b5319cb36179e51b34eacce56282b97ad4a4bb
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: b83fd664cb2969c12d69e1e818f61190deed3804
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036761"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998244"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Tutorial: crear clases LINQ to SQL con la herencia de tabla única (Object Relational Designer)
 Las [herramientas de LINQ to SQL de Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) admiten la herencia de tabla única, ya que normalmente se implementa en sistemas relacionales. En este tutorial se amplían los pasos genéricos que se proporcionan en el tema [How to: configure inheritance by Using the o/R Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) y se proporcionan algunos datos reales para mostrar el uso de la herencia en el [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] .
@@ -52,7 +53,7 @@ Para ver cómo funciona la herencia, cree una `Person` tabla pequeña, úsela co
 
     |Nombre de columna|Tipo de datos|Permitir valores NULL|
     |-----------------|---------------|-----------------|
-    |**Id**|**int**|**False**|
+    |**ID**|**int**|**False**|
     |**Tipo**|**int**|**True**|
     |**Nombre**|**nvarchar(200)**|**False**|
     |**Apellidos**|**nvarchar(200)**|**False**|
@@ -71,7 +72,7 @@ Para poder comprobar que la herencia está correctamente configurada, la tabla n
 
 2. Copie los datos siguientes en la tabla. (Puede copiarlo y, a continuación, pegarlo en la tabla seleccionando toda la fila en el panel de **resultados** ).
 
-    |**Id**|**Tipo**|**Nombre**|**Apellidos**|**Administrador**|
+    |**ID**|**Tipo**|**Nombre**|**Apellidos**|**Administrador**|
     |-|-|-|-|-|
     |**1**|**1**|**Anne**|**Wallace**|**NULL**|
     |**2**|**1**|**Carlos**|**Grilo**|**NULL**|
@@ -86,7 +87,7 @@ Para poder comprobar que la herencia está correctamente configurada, la tabla n
     |**11**|**2**|**Mindy**|**Martin**|**3**|
     |**12**|**2**|**Ken**|**Kwok**|**3**|
 
-## <a name="create-a-new-project"></a>Crear un proyecto nuevo
+## <a name="create-a-new-project"></a>Creación de un nuevo proyecto
 Ahora que ha creado la tabla, cree un nuevo proyecto para mostrar la configuración de la herencia.
 
 ### <a name="to-create-the-new-windows-forms-application"></a>Para crear la nueva aplicación Windows Forms
@@ -97,7 +98,7 @@ Ahora que ha creado la tabla, cree un nuevo proyecto para mostrar la configuraci
 
 3. En el panel central, seleccione el tipo de proyecto **Windows Forms aplicación** .
 
-4. Asigne al proyecto el nombre **InheritanceWalkthrough**y, a continuación, elija **Aceptar**.
+4. Asigne al proyecto el nombre **InheritanceWalkthrough** y, a continuación, elija **Aceptar**.
 
      Se crea el proyecto **InheritanceWalkthrough** y se agrega al **Explorador de soluciones**.
 
@@ -185,7 +186,7 @@ Ejecute la aplicación y compruebe que los registros mostrados en el cuadro de l
 
 3. Cierre el formulario. (En el menú **depurar** , haga clic en **detener depuración**).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Herramientas de LINQ to SQL en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Walkthrough: Creating LINQ to SQL classes (O-R Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md) (Tutorial: Crear clases de LINQ to SQL [Object Relational Designer])

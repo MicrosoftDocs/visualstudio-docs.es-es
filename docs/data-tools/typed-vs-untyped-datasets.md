@@ -1,5 +1,7 @@
 ---
 title: Conjuntos de datos con tipo frente a conjuntos de datos sin tipo
+description: Comprenda la diferencia entre los conjuntos de valores con tipo y sin tipo. Compare el acceso a los datos en conjuntos de datos con tipo y sin tipo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 430e57713f1bfb01219ea1ac8123f321ba0f5680
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b2dc8d78f42d210741c904e3e475be33f2443e74
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586112"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998062"
 ---
 # <a name="typed-vs-untyped-datasets"></a>Conjuntos de datos con tipo frente a conjuntos de datos sin tipo
 Un conjunto de datos con tipo es un conjunto de datos que se deriva primero de la <xref:System.Data.DataSet> clase base y, a continuación, usa información de la **Diseñador de DataSet**, que se almacena en un archivo. xsd, para generar una nueva clase de conjunto de datos fuertemente tipados. La información del esquema (tablas, columnas, etc.) se genera y compila en esta nueva clase de conjunto de datos como un conjunto de propiedades y objetos de primera clase. Dado que un conjunto de datos con tipo hereda de la <xref:System.Data.DataSet> clase base, la clase con tipo asume toda la funcionalidad de la <xref:System.Data.DataSet> clase y se puede usar con métodos que toman una instancia de una <xref:System.Data.DataSet> clase como parámetro.
@@ -34,12 +36,12 @@ Por el contrario, si está trabajando con un conjunto de información sin tipo, 
 [!code-csharp[VbRaddataDatasets#5](../data-tools/codesnippet/CSharp/typed-vs-untyped-datasets_2.cs)]
 [!code-vb[VbRaddataDatasets#5](../data-tools/codesnippet/VisualBasic/typed-vs-untyped-datasets_2.vb)]
 
-El acceso con tipo no solo es más fácil de leer, sino que también es totalmente compatible con IntelliSense en el **Editor de código**de Visual Studio. Además de ser más fácil de trabajar con, la sintaxis del conjunto de los tipos proporciona comprobación de tipos en tiempo de compilación, lo que reduce en gran medida la posibilidad de que se produzcan errores al asignar valores a los miembros del conjunto de elementos. Si cambia el nombre de una columna en la <xref:System.Data.DataSet> clase y, a continuación, compila la aplicación, recibirá un error de compilación. Al hacer doble clic en el error de compilación en el **lista de tareas**, puede ir directamente a la línea o líneas de código que hacen referencia al nombre de columna anterior. El acceso a tablas y columnas en un conjunto de DataSet con tipo también es ligeramente más rápido en tiempo de ejecución porque el acceso se determina en tiempo de compilación, no a través de colecciones en tiempo de ejecución.
+El acceso con tipo no solo es más fácil de leer, sino que también es totalmente compatible con IntelliSense en el **Editor de código** de Visual Studio. Además de ser más fácil de trabajar con, la sintaxis del conjunto de los tipos proporciona comprobación de tipos en tiempo de compilación, lo que reduce en gran medida la posibilidad de que se produzcan errores al asignar valores a los miembros del conjunto de elementos. Si cambia el nombre de una columna en la <xref:System.Data.DataSet> clase y, a continuación, compila la aplicación, recibirá un error de compilación. Al hacer doble clic en el error de compilación en el **lista de tareas**, puede ir directamente a la línea o líneas de código que hacen referencia al nombre de columna anterior. El acceso a tablas y columnas en un conjunto de DataSet con tipo también es ligeramente más rápido en tiempo de ejecución porque el acceso se determina en tiempo de compilación, no a través de colecciones en tiempo de ejecución.
 
 Aunque los conjuntos de información con tipo tienen muchas ventajas, un conjunto de información sin tipo resulta útil en diversas circunstancias. El escenario más obvio es cuando no hay ningún esquema disponible para el conjunto de DataSet. Esto puede ocurrir, por ejemplo, si la aplicación interactúa con un componente que devuelve un conjunto de elementos, pero no se sabe de antemano cuál es su estructura. Del mismo modo, hay ocasiones en las que se trabaja con datos que no tienen una estructura estática y predecible. En ese caso, no es práctico usar un conjunto de datos con tipo, porque tendría que volver a generar la clase de conjunto de datos con tipo con cada cambio en la estructura de datos.
 
 En general, hay muchas ocasiones en las que se puede crear un conjunto de DataSet dinámicamente sin tener un esquema disponible. En ese caso, el conjunto de datos es simplemente una estructura cómoda en la que se puede mantener la información, siempre y cuando los datos puedan representarse de forma relacional. Al mismo tiempo, puede aprovechar las capacidades del conjunto de datos, como la capacidad de serializar la información que se pasa a otro proceso o escribir un archivo XML.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Herramientas de conjunto de herramientas](../data-tools/dataset-tools-in-visual-studio.md)

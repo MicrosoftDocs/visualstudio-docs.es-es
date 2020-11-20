@@ -1,5 +1,7 @@
 ---
 title: Actualizar archivos .mdf
+description: Revise las opciones para actualizar un archivo de base de datos (. MDF) después de instalar una versión más reciente de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d35611dcc7b6067cf6d6166aff521ef291b8dfcd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: babc82469d32540f1a003b629c9d83887ca91595
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281128"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998049"
 ---
 # <a name="upgrade-mdf-files"></a>Actualizar archivos .mdf
 
@@ -97,13 +99,13 @@ También puede modificar una conexión SQL Server Express para usar LocalDB; par
 
   - Para ejecutar el proyecto, seleccione la tecla **F5** .
 
-  - Para editar la base de datos, abra el archivo *. MDF* en **Explorador de soluciones**y expanda el nodo en **Explorador de servidores** para trabajar con la base de datos.
+  - Para editar la base de datos, abra el archivo *. MDF* en **Explorador de soluciones** y expanda el nodo en **Explorador de servidores** para trabajar con la base de datos.
 
 ### <a name="to-make-sql-server-express-the-default-database-engine"></a>Para que SQL Server Express el motor de base de datos predeterminado
 
 1. En la barra de menús, seleccione **Herramientas** > **Opciones**.
 
-2. En el cuadro de diálogo **Opciones** , expanda las opciones **herramientas de base** de **datos**y, a continuación, seleccione conexiones de datos.
+2. En el cuadro de diálogo **Opciones** , expanda las opciones **herramientas de base** de **datos** y, a continuación, seleccione conexiones de datos.
 
 3. En el cuadro de texto **nombre de instancia de SQL Server** , especifique el nombre de la instancia de SQL Server Express o LocalDB que desee usar. Si la instancia de no se denomina, especifique `.\SQLEXPRESS or (LocalDB)\MSSQLLocalDB` .
 
@@ -113,4 +115,4 @@ También puede modificar una conexión SQL Server Express para usar LocalDB; par
 
 ## <a name="see-also"></a>Vea también
 
-- [Obtener acceso a datos en Visual Studio](accessing-data-in-visual-studio.md)
+- [Obtener acceso a los datos en Visual Studio](accessing-data-in-visual-studio.md)
