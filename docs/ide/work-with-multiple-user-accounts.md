@@ -1,18 +1,18 @@
 ---
 title: Trabajar con varias cuentas de usuario
-ms.date: 07/23/2019
+ms.date: 11/16/2020
 ms.topic: conceptual
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abca888cda2d309951d6b8921cfd2078972ce195
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: fe124fc35eabec4b3c48cdf8dfa53ef8f17b0003
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88800234"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671342"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Trabajar con varias cuentas de usuario
 
@@ -124,6 +124,15 @@ Para iniciar sesión mediante el flujo de código del dispositivo:
    ![Proceso de inicio de sesión de Visual Studio a través de un explorador completado](media/work-with-multiple-user-accounts/sign-in-browser-complete.png)
 
 1. Vuelva a la página de administración de cuentas de Visual Studio y verá que la cuenta recién agregada figura en **Todas las cuentas**. Elija **Cerrar**.
+
+::: moniker range=">=vs-2019"
+
+### <a name="add-a-github-account-to-visual-studio"></a>Adición de una cuenta de GitHub a Visual Studio
+
+A partir de la versión 16.8, podrá agregar cuentas de GitHub y GitHub Enterprise a la cadena de claves. Estas cuentas las podrá agregar y aprovechar igual que hace con las cuentas de Microsoft, lo que significa que tendrá una mayor facilidad para acceder a los recursos de GitHub en Visual Studio.
+
+Para instrucciones detalladas, consulte [Trabajar con cuentas de GitHub en Visual Studio](work-with-github-accounts.md).
+::: moniker-end
 
 ## <a name="see-also"></a>Vea también
 

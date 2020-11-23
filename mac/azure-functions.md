@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
 ms.topic: how-to
-ms.openlocfilehash: 69ecab4f4d3dd7d99821b384dbda0c8986297282
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: f3c1c528e9201c66bc566f9867f8325c653700b9
+ms.sourcegitcommit: f915322d60182143da7036893d2941bc200cf439
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94492846"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "94575546"
 ---
 # <a name="introduction-to-azure-functions"></a>Introducción a Azure Functions
 
@@ -29,7 +29,7 @@ Para crear e implementar funciones también necesita una suscripción de Azure. 
 1. En Visual Studio para Mac, seleccione **Archivo > Nueva solución**.
 2. En el cuadro de diálogo Nuevo proyecto, seleccione la plantilla de Azure Functions en **Nube > General** y haga clic en **Siguiente**:
 
-    ![Cuadro de diálogo de Nuevo proyecto con la opción de Azure Functions](media/azure-functions-image1.png)
+    ![Cuadro de diálogo Nuevo proyecto con la opción Azure Functions](media/azure-functions-image1.png)
 
 3. Seleccione la plantilla inicial de Azure Functions que quiera usar, escriba el nombre de función y haga clic en **Siguiente**.
 
@@ -37,7 +37,7 @@ Para crear e implementar funciones también necesita una suscripción de Azure. 
 
     > [!TIP]
     > Aunque el tiempo de ejecución y las plantillas (CLI) de Azure Functions se mantienen lo más actualizados posible, inevitablemente se quedan obsoletos. Al crear un proyecto de Functions, Visual Studio para Mac comprobará las actualizaciones de la CLI y le notificará tal y como se muestra en la imagen siguiente. Basta con hacer clic en el botón para descargar las plantillas actualizadas.
-    > ![Cuadro de diálogo Nuevo proyecto con las actualizaciones de Azure Functions disponibles](media/azure-functions-update.png)
+    > ![Cuadro de diálogo Nuevo proyecto con las actualizaciones de Azure Functions disponibles](media/azure-functions-update.png)
 
     Según el tipo de función que seleccione, la siguiente página le solicitará que especifique los detalles, como los derechos de acceso, como se muestra en la siguiente imagen:
 
@@ -147,15 +147,15 @@ Hay un valor importante que es posible que tenga que configurar: `FUNCTIONS_EXTE
   - Http POST CRUD
   - Desencadenador HTTP con parámetros
 
-- **Temporizador**: ejecutar una limpieza u otras tareas de lote en una programación predefinida. Esta plantilla tiene dos campos: un nombre y una programación, que es una expresión de CRON de seis campos. Para obtener más información, vea la página [Cree una función en Azure que se desencadena mediante un temporizador](/azure/azure-functions/functions-create-scheduled-function)
+- **Temporizador**: ejecutar una limpieza u otras tareas de lote en una programación predefinida. Esta plantilla tiene dos campos: un nombre y una programación, que es una expresión de CRON de seis campos. Para más información, consulte el [artículo de Azure Functions sobre los temporizadores](/azure/azure-functions/functions-create-scheduled-function).
 
-- **Desencadenador de cola**: se trata de una función que responderá a los mensajes a medida que llegan a la cola de Azure Storage. Además del nombre de la función, esta plantilla toma una **ruta de acceso** (el nombre de la cola desde la que se leerá el mensaje) y una cuenta de almacenamiento **Conexión** (el nombre de la configuración de la aplicación que contiene la cadena de conexión de la cuenta de almacenamiento). Para obtener más información, vea la página [Crear una función desencadenada por Azure Queue Storage](/azure/azure-functions/functions-create-storage-queue-triggered-function).
+- **Desencadenador de cola**: se trata de una función que responderá a los mensajes a medida que llegan a la cola de Azure Storage. Además del nombre de la función, esta plantilla toma una **ruta de acceso** (el nombre de la cola desde la que se leerá el mensaje) y una cuenta de almacenamiento **Conexión** (el nombre de la configuración de la aplicación que contiene la cadena de conexión de la cuenta de almacenamiento). Para más información, consulte el [artículo de Azure Functions sobre Queue Storage](/azure/azure-functions/functions-create-storage-queue-triggered-function).
 
-- **Desencadenador de blob**: procesa blobs de Azure Storage cuando se agregan a un contenedor. Además del nombre de función, esta plantilla también tiene una propiedad de ruta de acceso y de conexión. La propiedad de ruta de acceso es la ruta de acceso dentro de la cuenta de almacenamiento que el desencadenador supervisará. La cuenta de conexión es el nombre de la configuración de aplicación que contiene la cadena de conexión de la cuenta de almacenamiento. Para obtener más información, vea la página [Crear una función desencadenada por Azure Blob Storage](/azure/azure-functions/functions-create-storage-blob-triggered-function).
+- **Desencadenador de blob**: procesa blobs de Azure Storage cuando se agregan a un contenedor. Además del nombre de función, esta plantilla también tiene una propiedad de ruta de acceso y de conexión. La propiedad de ruta de acceso es la ruta de acceso dentro de la cuenta de almacenamiento que el desencadenador supervisará. La cuenta de conexión es el nombre de la configuración de aplicación que contiene la cadena de conexión de la cuenta de almacenamiento. Para más información, consulte el [artículo de Azure Functions sobre Blob Storage](/azure/azure-functions/functions-create-storage-blob-triggered-function).
 
-- **WebHook genérico**: se trata de una función sencilla que se ejecutará cada vez que recibe una solicitud de servicio que admita webhooks. Para más información, vea [Creación de una función desencadenada mediante un webhook genérico](/azure/azure-functions/functions-create-generic-webhook-triggered-function).
+- **WebHook genérico**: se trata de una función sencilla que se ejecutará cada vez que recibe una solicitud de servicio que admita webhooks. Para más información, consulte el [artículo de Azure Functions sobre los webhooks genéricos](/azure/azure-functions/functions-create-generic-webhook-triggered-function).
 
-- **Orquestación Durable Functions**: Durable Functions le permite escribir funciones con estado en un entorno sin servidor. La extensión administra el estado, los puntos de control y los reinicios en su nombre. Para más información, vea las guías de Azure Functions en [Durable Functions](/azure/azure-functions/durable-functions-overview).
+- **Orquestación Durable Functions**: Durable Functions le permite escribir funciones con estado en un entorno sin servidor. La extensión administra el estado, los puntos de control y los reinicios en su nombre. Para más información, consulte las guías de Azure Functions sobre [Durable Functions](/azure/azure-functions/durable-functions-overview).
 
 - **Redimensionador de imagen**: esta función crea imágenes redimensionadas cada vez que un blob se agrega a un contenedor. La plantilla toma la cadena de conexión y la ruta de acceso para el desencadenador, una salida de imagen pequeña y una salida de imagen media.
 

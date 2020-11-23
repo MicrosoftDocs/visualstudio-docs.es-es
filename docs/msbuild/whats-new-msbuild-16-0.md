@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: a4e0079fa301d751962a945a0bf8348ffd3c359d
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: b5d2f8205c72f2fd661a76296392bb94d1d24469
+ms.sourcegitcommit: 83a39d48b00c6c351e5c1707942633b7f73aaad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047790"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94531867"
 ---
 # <a name="whats-new-in-msbuild-160"></a>Novedades de MSBuild 16.0
 
@@ -32,6 +32,10 @@ En este artículo se describen las características y propiedades actualizadas d
 - `MSBuildToolsVersion` para esta versión de las herramientas es "Current". La versión del ensamblado es la misma que en Visual Studio 2017, que es 15.1.0.0.
 
 - `VisualStudioVersion` para esta versión de las herramientas es "16.0"
+
+## <a name="change-waves"></a>Cambio de oleadas
+
+A partir de MSBuild 16.8, puede elegir de forma selectiva si quiere optar por no recibir algunos cambios potencialmente perjudiciales en MSBuild. Consulte [Oleadas de cambios](change-waves.md).
 
 ## <a name="updates"></a>Actualizaciones
 

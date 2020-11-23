@@ -2,20 +2,20 @@
 title: La experiencia Git en Visual Studio
 titleSuffix: ''
 description: Obtenga información sobre cómo la nueva experiencia integrada de Git en Visual Studio 2019 puede ayudarle a ser más productivo.
-ms.date: 11/10/2020
+ms.date: 11/16/2020
 ms.topic: conceptual
 ms.author: tglee
-author: prnadago
+author: TerryGLee
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 33606a2b4290735d5c15788a1e6961191d6d92f9
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: 30ae69f07c89efb6d01228088596fc1bc05fac87
+ms.sourcegitcommit: e8a13978131f257d91ce37c5a2e0d153a4c400ef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493561"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94704071"
 ---
-# <a name="git-productivity-in-visual-studio"></a>Productividad de Git en Visual Studio
+# <a name="git-experience-in-visual-studio"></a>Experiencia de Git en Visual Studio
 
 Ahora Git es la experiencia de control de versiones predeterminada en Visual Studio 2019. Desde la [versión 16.6](/visualstudio/releases/2019/release-notes-v16.6), hemos trabajado en la creación del conjunto de características y la iteración en él en función de vuestros comentarios. La nueva experiencia de Git está activada de forma predeterminada para todos los usuarios con el lanzamiento de la versión [16.8](/visualstudio/releases/2019/release-notes/).
 
@@ -24,11 +24,18 @@ Ahora Git es la experiencia de control de versiones predeterminada en Visual St
 
 ## <a name="how-to-use-git-in-visual-studio"></a>Cómo usar Git en Visual Studio
 
-Hay tres formas de empezar a usar Git con Visual Studio 2019 para ser más productivo:
+Le guiaremos por el uso de la nueva experiencia de Git en Visual Studio 2019, pero si quiere realizar un recorrido rápido primero, eche un vistazo al vídeo siguiente: <br><br>*Duración del vídeo: 5,27 minutos*
+
+> [!VIDEO https://www.youtube.com/embed/UHrAg3iKoe0]
+
+Hay tres formas de empezar a usar Git con Visual Studio para ser más productivo:
 
 - [Apertura de un repositorio de Git existente](#open-an-existing-local-repository). Si el código ya está en la máquina, puede abrirlo mediante **Archivo** > **Abrir** > **Proyecto o solución** (o **Carpeta**) y Visual Studio detectará automáticamente si tiene un repositorio de Git inicializado.
 - [Creación de un repositorio Git](#create-a-new-git-repository). Si el código no está asociado a Git, puede crear un repositorio de Git.
 - [Clonación de un repositorio de Git existente](#clone-an-existing-git-repository). Si el código en el que quiere trabajar no está en la máquina, puede clonar repositorios remotos existentes.
+
+> [!NOTE]
+> También a partir de la [versión 16.8](/visualstudio/releases/2019/release-notes/), Visual Studio 2019 incluye una experiencia de cuenta de GitHub totalmente integrada. Ahora, puede agregar cuentas de GitHub y GitHub Enterprise a la cadena de claves. Estas cuentas las podrá agregar y aprovechar igual que hace con las cuentas de Microsoft, lo que significa que tendrá una mayor facilidad para acceder a los recursos de GitHub en Visual Studio. Para más información, consulte la página [Trabajar con cuentas de GitHub en Visual Studio](work-with-github-accounts.md).
 
 ## <a name="create-a-new-git-repository"></a>Creación de un repositorio Git
 
@@ -195,8 +202,10 @@ Aunque la nueva experiencia de Git ya está activada de forma predeterminada en 
 
 ## <a name="see-also"></a>Consulte también
 
+- Entrada de blog [Anuncio de la publicación de la experiencia de Git en Visual Studio](https://devblogs.microsoft.com/visualstudio/announcing-the-release-of-the-git-experience-in-visual-studio/)
 - [El lanzamiento de la nueva experiencia de Git](https://www.youtube.com/watch?v=UHrAg3iKoe0&t) en YouTube
 - [La serie Visual Studio Toolbox presenta: El vídeo The new Git experience (La nueva experiencia de Git)](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/The-New-Git-Experience) en Channel 9 y en [YouTube](https://www.youtube.com/watch?v=ZiQ2LXtAJ6I&feature=youtu.be)
 - Entrada de blog [Nuevas y emocionantes actualizaciones relativas a la experiencia de Git en Visual Studio](https://devblogs.microsoft.com/visualstudio/exciting-new-updates-to-the-git-experience-in-visual-studio/)
 - Entrada de blog [Experiencia mejorada de Git en Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/improved-git-experience-in-visual-studio-2019/)
+- [Trabajar con cuentas de GitHub en Visual Studio](work-with-github-accounts.md)
 - [Notas de la versión de Visual Studio 2019](/visualstudio/releases/2019/release-notes)

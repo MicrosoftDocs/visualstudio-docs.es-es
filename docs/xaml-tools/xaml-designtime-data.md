@@ -7,12 +7,12 @@ author: alihamie
 ms.author: tglee
 manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 1dd0b4df440f6addd474ef08e7bf0b2958a58076
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: bda4af3a3985ec6fc3aae1e991b7f5f622d67965
+ms.sourcegitcommit: e8a13978131f257d91ce37c5a2e0d153a4c400ef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94492903"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94704006"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>Uso de datos de tiempo de diseño con el Diseñador XAML en Visual Studio
 
@@ -181,7 +181,7 @@ Si experimenta un problema que no aparece en esta sección, háganoslo saber med
 
 - Los datos en tiempo de diseño requieren la versión [16.7](/visualstudio/releases/2019/release-notes) de Visual Studio 2019 o posterior.
 
-- Admite proyectos de escritorio de Windows que tienen como destino Windows Presentation Foundation (WPF) para .NET Core y UWP. Esta característica también está disponible para .NET Framework si tiene habilitada la característica en vista previa "Nuevo diseñador XAML de WPF para .NET Framework".
+- Admite proyectos de escritorio de Windows dirigidos a Windows Presentation Foundation (WPF) para .NET Core y UWP. Esta característica también está disponible en el [canal de versión preliminar](/visualstudio/releases/2019/release-notes-preview) para .NET Framework. Para habilitarla, vaya a **Herramientas** > **Opciones** > **Entorno** > **Características en versión preliminar**, seleccione **Nuevo Diseñador XAML de WPF para .NET Framework** y, luego, reinicie Visual Studio.
 
 - A partir de la versión 16.7 de Visual Studio 2019, esta característica funciona con todos los controles integrados de los marcos de trabajo de WPF y UWP. La compatibilidad con controles de terceros ahora está disponible en la versión preliminar 16.8.
 

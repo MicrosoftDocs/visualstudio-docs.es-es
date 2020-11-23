@@ -1,5 +1,5 @@
 ---
-title: Asociación a los procesos en ejecución con el depurador | Microsoft Docs
+title: Adjuntar a los procesos en ejecución con el depurador
 ms.custom: seodec18
 ms.date: 06/12/2020
 ms.topic: conceptual
@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7decb23bb6d307732c1f675fb14a96c1fc0dcda1
-ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
+ms.openlocfilehash: a33af839406497a2a30fba2f5103a64a1da36ed7
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91959866"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671471"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Asociar con procesos en ejecución con el depurador de Visual Studio
 
@@ -159,85 +159,15 @@ En algunos casos, al depurar en una sesión de Escritorio remoto (Terminal Servi
 
 Si ninguna de estas dos soluciones es posible, existe una tercera opción que consiste en asociar al proceso mediante la ejecución de `vsjitdebugger.exe -p <ProcessId>` en la línea de comandos de Windows. Puede determinar el identificador de proceso mediante *tlist.exe*. Para obtener el archivo *tlist.exe*, descargue e instale las Herramientas de depuración para Windows, disponibles en  [Descargas de WDK y WinDbg](/windows-hardware/drivers/download-the-wdk).
 
-::: moniker range=">= vs-2019"
-
 ## <a name="attach-to-a-net-core-process-running-on-linux-using-ssh"></a>Asociación a un proceso de .NET Core que se ejecuta en Linux mediante SSH
 
 Para obtener más información, vea [Depuración remota de .NET Core en Linux con SSH](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md).
 
-## <a name="attach-to-a-process-running-on-a-linux-docker-container"></a><a name="BKMK_Linux_Docker_Attach"></a> Asociación a un proceso que se ejecuta en un contenedor de Docker de Linux
+::: moniker range=">= vs-2019"
 
-Puede asociar el depurador de Visual Studio a un proceso que se ejecuta en un contenedor de Docker de .NET Core de Linux en el equipo local o remoto mediante el cuadro de diálogo **Asociar al proceso**.
+## <a name="attach-to-a-process-running-on-a-docker-container"></a><a name="BKMK_Linux_Docker_Attach"></a> Asociación a procesos que se ejecutan en contenedores de Docker
 
-> [!IMPORTANT]
-> Para usar esta característica, debe instalar la carga de trabajo de desarrollo multiplataforma de .NET Core y tener acceso local al código fuente.
-
-**Para asociar a un proceso en ejecución en un contenedor de Docker de Linux:**
-
-1. En Visual Studio, seleccione **Depurar > Asociar al proceso (CTRL + ALT + P)** para abrir el cuadro de diálogo **Asociar al proceso**.
-
-![Menú Asociar al proceso](../debugger/media/attach-process-menu.png "Attach_To_Process_Menu")
-
-2. Establezca **Tipo de conexión** en **Docker (contenedor de Linux)** .
-3. Seleccione **Buscar...** para establecer el **Destino de conexión** mediante el cuadro de diálogo **Seleccionar contenedor de Docker**.
-
-    Puede depurar un proceso de contenedor de Docker de forma local o remota.
-
-    **Para depurar un proceso de contenedor de Docker localmente:**
-    1. Establezca **Docker CLI host** (Host de CLI de Docker) en **Máquina local**.
-    1. Seleccione un contenedor en ejecución con el que establecer la conexión de la lista y presione **Aceptar**.
-
-    ![Menú para seleccionar contenedor de Docker](../debugger/media/select-docker-container.png "Select_Docker_Container_Menu")
-
-    **B. Para depurar un proceso de contenedor de Docker de forma remota:**
-
-    > [!NOTE]
-    > Hay dos opciones para establecer una conexión remota con un proceso en ejecución en un contenedor de Docker. La primera opción, usar SSH, es idónea si no tiene herramientas de Docker instaladas en la máquina local.  Si tiene herramientas de Docker instaladas localmente y tiene un demonio de Docker que está configurado para aceptar solicitudes remotas, pruebe la segunda opción: usar un demonio de Docker.
-
-    1. ***Para conectarse a un equipo remoto a través de SSH:***
-        1. Seleccione **Agregar...** para conectarse a un sistema remoto.<br/>
-        ![Conectar con el sistema remoto](../debugger/media/connect-remote-system.png "Conexión con el sistema remoto")
-        1. Seleccione un contenedor en ejecución al que asociarse después de conectarse correctamente al SSH o el demonio y haga clic en **Aceptar**.
-
-    1. ***Para establecer el destino en un contenedor remoto que ejecuta un proceso a través de un [demonio de Docker](https://docs.docker.com/engine/reference/commandline/dockerd/)***
-        1. Especifique la dirección del demonio (es decir, a través de TCP, IP, etc.) en **Docker host (Optional)** (Host de Docker [opcional]) y haga clic en el vínculo para actualizar.
-        1. Seleccione un contenedor en ejecución al que asociarse después de conectarse al demonio correctamente y haga clic en **Aceptar**.
-
-4. Elija el proceso de contenedor correspondiente en la lista **Procesos disponibles** y seleccione **Asociar** para empezar a depurar el proceso de contenedor de C# en Visual Studio.
-
-    ![Menú para asociar Docker completado](../debugger/media/docker-attach-complete.png "Menú de conexión de Docker de Linux completado")
-
-## <a name="attach-to-a-process-running-on-a-windows-docker-container"></a><a name="BKMK_Windows_Docker_Attach"></a> Asociación a un proceso que se ejecuta en un contenedor de Docker de Windows
-
-Puede asociar el depurador de Visual Studio a un proceso que se ejecuta en un contenedor de Docker de Windows en el equipo local mediante el cuadro de diálogo **Asociar al proceso**.
-
-> [!IMPORTANT]
-> Para usar esta característica con un proceso de .NET Core, debe instalar la carga de trabajo de desarrollo multiplataforma de .NET Core y tener acceso local al código fuente.
-
-**Para asociar a un proceso en ejecución en un contenedor de Docker de Windows:**
-
-1. En Visual Studio, seleccione **Depurar > Asociar al proceso** (o **CTRL + ALT + P**) para abrir el cuadro de diálogo **Asociar al proceso**.
-
-   ![Menú Asociar al proceso](../debugger/media/attach-process-menu-docker-windows.png "Attach_To_Process_Menu")
-
-2. Establezca **Tipo de conexión** en **Docker (contenedor de Windows)** .
-3. Seleccione **Buscar...** para establecer el **Destino de conexión** mediante el cuadro de diálogo **Seleccionar contenedor de Docker**.
-
-    > [!IMPORTANT]
-    > El proceso de destino debe tener la misma arquitectura de procesador que el contenedor de Windows de Docker en el que se está ejecutando.
-
-   El establecimiento del destino en un contenedor remoto a través de SSH no está disponible actualmente y solo puede realizarse mediante un demonio de Docker.
-
-    ***Para establecer el destino en un contenedor remoto que ejecuta un proceso a través de un [demonio de Docker](https://docs.docker.com/engine/reference/commandline/dockerd/)***
-    1. Especifique la dirección del demonio (es decir, a través de TCP, IP, etc.) en **Docker host (Optional)** (Host de Docker [opcional]) y haga clic en el vínculo para actualizar.
-
-    1. Seleccione un contenedor en ejecución al que asociarse después de conectarse al demonio correctamente y seleccione Aceptar.
-
-4. Elija el proceso de contenedor correspondiente en la lista **Procesos disponibles** y seleccione **Asociar** para empezar a depurar el proceso de contenedor de C#.
-
-    ![Menú para asociar Docker completado](../debugger/media/docker-attach-complete-windows.png "Menú de conexión de Docker de Windows completado")
-
-5.  Elija el proceso de contenedor correspondiente en la lista de procesos disponibles y seleccione **Asociar** para empezar a depurar el proceso de contenedor de C#.
+A partir de Visual Studio 2019, puede asociar el depurador de Visual Studio a un proceso que se ejecuta en un contenedor de Docker. Para contenedores de Docker de .NET Core de Linux, consulte [Asociación a procesos que se ejecutan en contenedores de Docker de Linux](../debugger/attach-to-process-running-in-docker-container.md#attach-to-a-process-running-on-a-linux-docker-container). Para contenedores de Docker de Windows, consulte [Asociación a procesos que se ejecutan en contenedores de Docker de Windows](../debugger/attach-to-process-running-in-docker-container.md#attach-to-a-process-running-on-a-windows-docker-container).
 
 ::: moniker-end
 
@@ -258,7 +188,7 @@ Para que el depurador se asocie al código escrito en C++, el código debe emiti
 
 Para la depuración de scripts del lado cliente, la depuración de scripts debe estar habilitada en el explorador. Para depurar el script de cliente en Chrome, elija **JavaScript (Chrome)** o **JavaScript (Microsoft Edge - Chromium)** como tipo de código y, en función del tipo de aplicación, es posible que necesite cerrar todas las instancias de Chrome e iniciar el explorador en modo de depuración (escriba `chrome.exe --remote-debugging-port=9222` desde una línea de comandos). En versiones anteriores de Visual Studio, el depurador de scripts para Chrome era **Web kit**.
 
-Para seleccionar rápidamente un proceso en ejecución al que asociarse, en Visual Studio, escriba **Ctrl**+**Alt**+**P**y, a continuación, escriba la primera letra del nombre del proceso.
+Para seleccionar rápidamente un proceso en ejecución al que asociarse, en Visual Studio, escriba **Ctrl**+**Alt**+**P** y, a continuación, escriba la primera letra del nombre del proceso.
 
 |Escenario|Método de depuración|Nombre del proceso|Notas y vínculos|
 |-|-|-|-|
@@ -267,7 +197,8 @@ Para seleccionar rápidamente un proceso en ejecución al que asociarse, en Visu
 |Depuración del script del lado cliente en un servidor IIS local, para los tipos de aplicaciones compatibles |Uso de **Asociar al proceso**|*chrome.exe*, *MicrosoftEdgeCP.exe* o *iexplore.exe*|La depuración de scripts debe estar habilitada. Para Chrome, también debe ejecutar Chrome en modo de depuración (escriba `chrome.exe --remote-debugging-port=9222` desde una línea de comandos) y seleccionar **JavaScript (Chrome)** en el campo **Asociar a**.|
 |Depuración de una aplicación de C#, Visual Basic o C++ en la máquina local|Uso de la depuración estándar (**F5**) o **Asociar al proceso**|*\<appname>.exe*|En la mayoría de los escenarios, use la depuración estándar y no **Asociar al proceso**.|
 |Depuración remota de una aplicación de escritorio de Windows|Herramientas remotas|N/D| Consulte [Depuración de una aplicación de C# o Visual Basic](../debugger/remote-debugging-csharp.md) o [Depuración remota de un proyecto C++](../debugger/remote-debugging-cpp.md).|
-|Depuración de .NET Core en Linux|Uso de **Asociar al proceso**|*dotnet.exe*|Para usar SSH, consulte [Depuración remota de .NET Core en Linux con SSH](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md). En el caso de las aplicaciones en contenedores, consulte las secciones anteriores de este artículo.|
+|Depuración de .NET Core en Linux|Uso de **Asociar al proceso**|*dotnet.exe* o un nombre de proceso único|Para usar SSH, consulte [Depuración remota de .NET Core en Linux con SSH](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md). Con aplicaciones en contenedor, consulte [Asociación a procesos que se ejecutan en contenedores de Docker](../debugger/attach-to-process-running-in-docker-container.md#attach-to-a-process-running-on-a-linux-docker-container).|
+|Depuración de aplicaciones en contenedor|*dotnet.exe* o un nombre de proceso único|Consulte [Asociación a procesos que se ejecutan en contenedores de Docker](../debugger/attach-to-process-running-in-docker-container.md)|
 |Depuración remota de Python en Linux|Uso de **Asociar al proceso**|*debugpy*|Consulte [Asociar desde Herramientas de Python de forma remota](../python/debugging-python-code-on-remote-linux-machines.md#attach-remotely-from-python-tools)|
 |Depuración de una aplicación de ASP.NET en el equipo local después de iniciar la aplicación sin el depurador|Uso de **Asociar al proceso**|*iiexpress.exe*|Puede resultar útil para agilizar la carga de la aplicación, como (por ejemplo,) al generar perfiles. |
 |Depuración de otros tipos de aplicaciones compatibles en un proceso de servidor|Si el servidor es remoto, use herramientas remotas y **Asociar al proceso**.|*chrome.exe*, *iexplore.exe* u otros procesos|Si es necesario, utilice Monitor de recursos para identificar mejor el proceso. Vea [Depuración remota](../debugger/remote-debugging.md).|

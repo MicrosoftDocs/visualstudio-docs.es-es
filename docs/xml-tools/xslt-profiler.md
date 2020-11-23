@@ -2,7 +2,7 @@
 title: Rendimiento del XSLT
 description: Obtenga información sobre el generador de perfiles XSLT de Visual Studio, que crea informes de rendimiento XSLT detallados para ayudar a optimizar el rendimiento del código XSLT.
 ms.custom: SEO-VS-2020
-ms.date: 03/05/2019
+ms.date: 11/11/2020
 ms.topic: conceptual
 ms.assetid: 87387c9a-2e89-4801-ad51-83740cd6ea25
 author: TerryGLee
@@ -10,12 +10,13 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f4fd10df6a5cd91866633a46e1a512e91da2040
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+monikerRange: vs-2017
+ms.openlocfilehash: f2214ab4d66dcad1ee92eda7d7acbb94b89e8eb6
+ms.sourcegitcommit: 83a39d48b00c6c351e5c1707942633b7f73aaad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351419"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94531893"
 ---
 # <a name="the-xslt-profiler"></a>El generador de perfiles XSLT
 
@@ -23,14 +24,14 @@ El generador de perfiles XSLT crea informes de rendimiento de XSLT detallados qu
 
 El generador de perfiles XSLT es parte de Visual Studio y está disponible en el menú **XML**.
 
-![Generador de perfiles XSLT](../xml-tools/media/profile-xslt-menu.png)
+![Generador de perfiles XSLT](../xml-tools/media/profile-xslt-menu.png "Captura de pantalla de los elementos de menú XML en Visual Studio 2017")
 
 > [!NOTE]
-> El generador de perfiles XSLT solo está disponible en la edición Enterprise de Visual Studio.
+> El generador de perfiles XSLT solo está disponible en la edición Enterprise de Visual Studio 2017.
 
 ## <a name="create-a-performance-report"></a>Creación de un informe de rendimiento
 
-1. Abra un documento XSLT en Visual Studio.
+1. Abra un documento XSLT en Visual Studio 2017.
 
 2. En la barra de menús, elija **XML** > **Generar perfiles XSLT**.
 

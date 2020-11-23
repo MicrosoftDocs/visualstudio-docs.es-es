@@ -1,6 +1,6 @@
 ---
 title: Introducción a proyectos y soluciones
-ms.date: 02/24/2020
+ms.date: 11/17/2020
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: tutorial
@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da2fc196f687e2335933794a578f507dafbc6de3
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: cf99c191ef6cfe32ec8ccc9b2cfd57f761941be7
+ms.sourcegitcommit: e8a13978131f257d91ce37c5a2e0d153a4c400ef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579978"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94704058"
 ---
 # <a name="learn-about-projects-and-solutions"></a>Información sobre proyectos y soluciones
 
@@ -49,7 +49,7 @@ Comenzaremos nuestro periplo creando una solución vacía. Cuando se familiarice
 
 1. Abra Visual Studio.
 
-1. En la barra de menús superior, elija **Archivo** > **Nuevo**  > **Proyecto**.
+1. En la barra de menús superior, elija **Archivo** > **Nuevo** > **Proyecto**.
 
    Aparece el cuadro de diálogo **Nuevo proyecto** .
 
@@ -70,6 +70,9 @@ Comenzaremos nuestro periplo creando una solución vacía. Cuando se familiarice
 3. En la página **Crear un proyecto nuevo**, escriba **solución en blanco** en el cuadro de búsqueda, seleccione la plantilla **Solución en blanco** y elija **Siguiente**.
 
    ![Plantilla Solución en blanco de Visual Studio 2019](media/vs-2019/tutorial-projects-blank-solution-template.png)
+
+    > [!TIP]
+    > Si tiene instaladas varias cargas de trabajo, es posible que la plantilla **Solución en blanco** no aparezca en la parte superior de la lista de resultados de la búsqueda. Pruebe a desplazarse hasta la sección **Otros resultados basados en su búsqueda** de la lista. Debería aparecer ahí.
 
 4. Asígnele a la solución el nombre **QuickSolution** y elija **Crear**.
 
@@ -167,7 +170,7 @@ Vamos a agregar un proyecto de prueba unitaria a la solución. Esta vez se empie
 
 ::: moniker range="vs-2017"
 
-2. En el panel izquierdo, expanda **Visual C#** y elija la categoría **Prueba**. En el panel central, seleccione la plantilla de proyecto **Proyecto de prueba de MSTest (.NET Core)** . Asigne el nombre **QuickTest** al proyecto y luego seleccione **Aceptar**.
+2. En el panel izquierdo, expanda **Visual C#** y elija la categoría **Prueba**. En el panel central, seleccione la plantilla de proyecto **Proyecto de prueba de MSTest (.NET Core)**. Asigne el nombre **QuickTest** al proyecto y luego seleccione **Aceptar**.
 
    Se agregará un segundo proyecto al **Explorador de soluciones**, mientras que un archivo denominado *UnitTest1.cs* se abre en el editor.
 
@@ -239,7 +242,7 @@ Usaremos el nuevo proyecto de prueba unitaria para probar nuestro método en el 
 
    ![Código de CSharp](media/tutorial-projects-cs-code.png)
 
-## <a name="project-properties"></a>Propiedades del proyecto
+## <a name="project-properties"></a>Propiedades de proyecto
 
 La línea del archivo *Calendar.cs* que contiene el atributo <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> hace referencia al nombre de ensamblado (nombre de archivo) del proyecto **QuickTest**. El nombre del ensamblado no siempre es el mismo que el nombre del proyecto. Para averiguar el nombre del ensamblado de un proyecto, abra las propiedades del proyecto.
 
@@ -247,7 +250,7 @@ La línea del archivo *Calendar.cs* que contiene el atributo <xref:System.Runtim
 
    Las *páginas de propiedades* del proyecto se abren en la pestaña **Aplicación**. Las páginas de propiedades contienen varios valores para el proyecto. Fíjese en que el nombre de ensamblado del proyecto **QuickTest** es, efectivamente, "QuickTest". Si quisiera cambiarlo, aquí es donde lo haría. Así, al compilar el proyecto de prueba, el nombre del archivo binario resultante cambiaría de *QuickTest.dll* a lo que hubiera elegido.
 
-   ![Propiedades del proyecto](media/tutorial-projects-netcore-properties.png)
+   ![Propiedades de proyecto](media/tutorial-projects-netcore-properties.png)
 
 1. Examine algunas de las demás pestañas de las páginas de propiedades del proyecto, como **Compilar** y **Depurar**. Estas pestañas son diferentes para los distintos tipos de proyectos.
 
@@ -271,10 +274,10 @@ Si quiere comprobar que la prueba unitaria funciona, seleccione **Probar** > **e
 
 ::: moniker-end
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Crear proyectos y soluciones](../ide/creating-solutions-and-projects.md)
 - [Administración de propiedades de soluciones y proyectos](../ide/managing-project-and-solution-properties.md)
 - [Administración de referencias en un proyecto](../ide/managing-references-in-a-project.md)
-- [Desarrollar código en Visual Studio sin proyectos o soluciones](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
+- [Desarrollo de código en Visual Studio sin proyectos o soluciones](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
 - [Introducción al IDE de Visual Studio](../get-started/visual-studio-ide.md)
