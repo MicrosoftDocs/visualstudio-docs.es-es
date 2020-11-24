@@ -1,5 +1,7 @@
 ---
 title: Agregar un submenú a un menú | Microsoft Docs
+description: Obtenga información sobre cómo crear un submenú, agregarlo a la barra de menús de Visual Studio y agregar un nuevo comando al submenú.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5887dba1ed1c583653b93792174524f8dfb84609
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16b58a6ab6a01ff635b3afd58b06133abacf970e
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86972327"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598021"
 ---
 # <a name="add-a-submenu-to-a-menu"></a>Agregar un submenú a un menú
 Este tutorial se basa en la demostración de [Agregar un menú a la barra de menús de Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) mostrando cómo agregar un submenú al menú **TestMenu** .
@@ -28,7 +30,7 @@ Este tutorial se basa en la demostración de [Agregar un menú a la barra de men
  En este tutorial se crea un submenú en un menú de la barra de menús de Visual Studio y se coloca un nuevo comando en el submenú. En el tutorial también se implementa el nuevo comando.
 
 ## <a name="prerequisites"></a>Requisitos previos
- A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS después. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="add-a-submenu-to-a-menu"></a>Agregar un submenú a un menú
 

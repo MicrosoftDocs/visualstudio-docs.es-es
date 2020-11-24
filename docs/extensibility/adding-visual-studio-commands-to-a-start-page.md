@@ -1,5 +1,7 @@
 ---
 title: Agregar comandos de Visual Studio a una página de inicio | Microsoft Docs
+description: Obtenga información sobre las distintas formas de enlazar comandos de Visual Studio a objetos XAML en una página de inicio personalizada de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 13dd40006039209b06cc6a71760fdbaa240db4fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7784b077093660eb5f9c9a0bf471a8965811ba72
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740118"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597527"
 ---
 # <a name="add-visual-studio-commands-to-a-start-page"></a>Agregar comandos de Visual Studio a una página de inicio
 
@@ -110,6 +112,6 @@ Puede usar el `vscom:` alias para enlazar comandos de Visual Studio a controles 
 
  Para obtener un ejemplo, vea [Tutorial: guardar la configuración de usuario en una página de inicio](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Agregar el control de usuario a la página de inicio](../extensibility/adding-user-control-to-the-start-page.md)

@@ -1,5 +1,7 @@
 ---
 title: Agregar un menú a la barra de menús de Visual Studio | Microsoft Docs
+description: Obtenga información sobre cómo agregar un menú a la barra de menús del entorno de desarrollo integrado (IDE) de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,16 +13,16 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3eb5afbbe688c15f429054d50210a68769173e73
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc84eb8854c0a6ff738a51c2ca883ad0527ec919
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801859"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597865"
 ---
 # <a name="add-a-menu-to-the-visual-studio-menu-bar"></a>Agregar un menú a la barra de menús de Visual Studio
 
-En este tutorial se muestra cómo agregar un menú a la barra de menús del entorno de desarrollo integrado (IDE) de Visual Studio. La barra de menús del IDE contiene categorías de menús como **archivo**, **edición**, **Ver**, **ventana**y **ayuda**.
+En este tutorial se muestra cómo agregar un menú a la barra de menús del entorno de desarrollo integrado (IDE) de Visual Studio. La barra de menús del IDE contiene categorías de menús como **archivo**, **edición**, **Ver**, **ventana** y **ayuda**.
 
 Antes de agregar un nuevo menú a la barra de menús de Visual Studio, tenga en cuenta si los comandos deben colocarse en un menú existente. Para obtener más información sobre la selección de ubicación de comandos, vea [menús y comandos para Visual Studio](../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md).
 
@@ -35,7 +37,7 @@ Al completar este tutorial, puede crear un menú denominado **menú prueba** que
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS después. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-vsix-project-that-has-a-custom-command-item-template"></a>Crear un proyecto VSIX que tenga una plantilla de elemento de comando personalizada
 

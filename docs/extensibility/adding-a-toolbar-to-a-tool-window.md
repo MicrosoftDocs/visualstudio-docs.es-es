@@ -1,5 +1,7 @@
 ---
 title: Agregar una barra de herramientas a una ventana de herramientas | Microsoft Docs
+description: Obtenga información sobre cómo agregar una barra de herramientas que contenga botones que estén enlazados a comandos a una ventana de herramientas en el entorno de desarrollo integrado (IDE) de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5351fe6a713c217f8fca20d6740b542dc75f053
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6a093dd65ce4de187cadf7e277c695bac99b5ca6
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904127"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597982"
 ---
 # <a name="add-a-toolbar-to-a-tool-window"></a>Agregar una barra de herramientas a una ventana de herramientas
 En este tutorial se muestra cómo agregar una barra de herramientas a una ventana de herramientas.
@@ -28,7 +30,7 @@ En este tutorial se muestra cómo agregar una barra de herramientas a una ventan
  Para obtener más información sobre cómo agregar una barra de herramientas, vea [Agregar una barra de herramientas](../extensibility/adding-a-toolbar.md).
 
 ## <a name="prerequisites"></a>Requisitos previos
- A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS después. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-toolbar-for-a-tool-window"></a>Crear una barra de herramientas para una ventana de herramientas
 

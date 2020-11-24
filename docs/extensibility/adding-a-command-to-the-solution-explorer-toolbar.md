@@ -1,5 +1,7 @@
 ---
 title: Agregar un comando a la barra de herramientas Explorador de soluciones | Microsoft Docs
+description: Obtenga información sobre cómo agregar un botón que ejecute un comando a la barra de herramientas Explorador de soluciones en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cc2eee209129867696955eb22c9e851c17973c1
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: d080791c94c77577f80a4b55db67febd3d48b56a
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414106"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597514"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>Agregar un comando a la barra de herramientas Explorador de soluciones
 En este tutorial se muestra cómo agregar un botón a la barra de herramientas **Explorador de soluciones** .
@@ -27,7 +29,7 @@ En este tutorial se muestra cómo agregar un botón a la barra de herramientas *
  Para obtener más información sobre los menús, los comandos de la barra de herramientas y los archivos *. Vsct* , vea [comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md).
 
 > [!NOTE]
-> Use archivos de tabla de comandos XML ( *. Vsct* ) en lugar de archivos de configuración de tabla de comandos ( *. CTC* ) para definir el modo en que los menús y comandos aparecen en los VSPackages. Para obtener más información, vea [tabla de comandos de Visual Studio (. Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
+> Use archivos de tabla de comandos XML (*. Vsct*) en lugar de archivos de configuración de tabla de comandos (*. CTC*) para definir el modo en que los menús y comandos aparecen en los VSPackages. Para obtener más información, vea [tabla de comandos de Visual Studio (. Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
 ## <a name="prerequisites"></a>Requisitos previos
  A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS después. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
@@ -80,7 +82,7 @@ En este tutorial se muestra cómo agregar un botón a la barra de herramientas *
 
 ### <a name="to-display-a-button-when-one-or-more-projects-are-open"></a>Para mostrar un botón cuando uno o varios proyectos están abiertos
 
-1. En la `<Buttons>` sección de *ToolbarButtonPackage. Vsct* , agregue dos marcadores de comando al `<Button>` elemento existente, entre las `<Strings>` `<Icons>` etiquetas y.
+1. En la `<Buttons>` sección de *ToolbarButtonPackage. Vsct*, agregue dos marcadores de comando al `<Button>` elemento existente, entre las `<Strings>` `<Icons>` etiquetas y.
 
    ```xml
    <CommandFlag>DefaultInvisible</CommandFlag>

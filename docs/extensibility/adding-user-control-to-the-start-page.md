@@ -1,5 +1,7 @@
 ---
 title: Agregar el control de usuario a la página de inicio | Microsoft Docs
+description: Obtenga información sobre cómo agregar un control de usuario de Windows Presentation Foundation (WPF) a la página de inicio de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 1d093ecc8afd9fe822c19c2c1f2ceb5765208865
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: fa812b477f88b03b8f0d4bdcba6c69f009ec2894
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012001"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597553"
 ---
 # <a name="add-user-control-to-the-start-page"></a>Agregar control de usuario a la página de inicio
 
@@ -32,7 +34,7 @@ En primer lugar, agregue un control de usuario de Windows Presentation Foundatio
 
 1. Cree una página de inicio mediante creado en [crear una página de inicio personalizada](../extensibility/creating-a-custom-start-page.md).
 
-2. En **Explorador de soluciones**, haga clic con el botón secundario en la solución, haga clic en **Agregar**y, a continuación, haga clic en **nuevo proyecto**.
+2. En **Explorador de soluciones**, haga clic con el botón secundario en la solución, haga clic en **Agregar** y, a continuación, haga clic en **nuevo proyecto**.
 
 3. En el panel izquierdo del cuadro de diálogo **nuevo proyecto** , expanda el nodo **Visual Basic** o **Visual C#** y haga clic en **Windows**. En el panel central, seleccione **biblioteca de controles de usuario de WPF**.
 
@@ -111,7 +113,7 @@ Para implementar un control de usuario de WPF, compile la interfaz de usuario (U
 2. Rellene el controlador de eventos SetButton_Click como se indica a continuación.
 
     ```csharp
-    private void SetButton_Click(object sender, RoutedEventArgs e)
+    private void SetButton_Click(object sender, RoutedEventArgs e)
     {
         try
         {
@@ -143,7 +145,7 @@ Para que este control esté disponible para el proyecto de la página de inicio,
 
 2. En la pestaña **proyectos** , seleccione **WebUserControl** y, a continuación, haga clic en **Aceptar**.
 
-3. En el menú **Compilar**, haga clic en **Compilar solución**.
+3. En el menú **Compilar** , haga clic en **Compilar solución**.
 
     Al compilar la solución, el control de usuario estará disponible para IntelliSense para otros archivos de la solución.
 
@@ -179,17 +181,17 @@ Para que este control esté disponible para el proyecto de la página de inicio,
 
 1. Copie el archivo XAML, y los archivos de texto o de marcado auxiliares, en la carpeta *%userprofile%\My Documentos\visual Studio 2015 \\ \ StartPages* .
 
-2. Si la página de inicio hace referencia a los controles o tipos de los ensamblados que no se instalan con Visual Studio, copie los ensamblados y péguelos en la _carpeta de instalación de Visual Studio_** \\ \Common7\IDE\PrivateAssemblies**.
+2. Si la página de inicio hace referencia a los controles o tipos de los ensamblados que no se instalan con Visual Studio, copie los ensamblados y péguelos en la _carpeta de instalación de Visual Studio_**\\ \Common7\IDE\PrivateAssemblies**.
 
 3. En un símbolo del sistema de Visual Studio, escriba **devenv/Rootsuffix exp** para abrir una instancia experimental de Visual Studio.
 
-4. En la instancia experimental, vaya a la **Tools**  >  Página de inicio del entorno**Opciones**de herramientas  >  **Environment**  >  **Startup** y seleccione el archivo XAML en el menú desplegable **Personalizar Página principal** .
+4. En la instancia experimental, vaya a la **Tools**  >  Página de inicio del entorno **Opciones** de herramientas  >  **Environment**  >  **Startup** y seleccione el archivo XAML en el menú desplegable **Personalizar Página principal** .
 
 5. En el menú **Vista** , haga clic en **Página de inicio**.
 
     Se debe mostrar la página de inicio personalizada. Si desea cambiar cualquier archivo, debe cerrar la instancia experimental, realizar los cambios, copiar y pegar los archivos modificados y, a continuación, volver a abrir la instancia experimental para ver los cambios.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Controles de contenedor de WPF](/previous-versions/bb675291(v=vs.110))
 - [Tutorial: agregar XAML personalizado a la página de inicio](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

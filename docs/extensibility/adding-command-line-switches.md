@@ -1,5 +1,7 @@
 ---
-title: Agregando modificadores de la línea de comandos | Microsoft Docs
+title: Agregando modificadores de Command-Line | Microsoft Docs
+description: Obtenga información sobre cómo agregar modificadores de línea de comandos que se aplican a un VSPackage cuando se ejecuta el comando devenv.exe.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb4abf5352ac6ad78852bd3224df0b22784470db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0eefb532380badcf917f6d512bc5b41ebb96b1d1
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903475"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597735"
 ---
 # <a name="add-command-line-switches"></a>Agregar modificadores de la línea de comandos
 Puede agregar modificadores de la línea de comandos que se aplican a su VSPackage cuando se ejecuta *devenv.exe* . Use <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> para declarar el nombre del modificador y sus propiedades. En este ejemplo, se agrega el modificador mySwitch para una subclase de VSPackage denominada **AddCommandSwitchPackage** sin argumentos y el VSPackage se carga automáticamente.
@@ -34,7 +36,7 @@ Puede agregar modificadores de la línea de comandos que se aplican a su VSPacka
 | Argumentos | El número de argumentos para el modificador. Puede ser "*", o una lista de argumentos. |
 | DemandLoad | Cargue el VSPackage automáticamente si se establece en 1; de lo contrario, establézcalo en 0. |
 | HelpString | Cadena de ayuda o identificador de recurso de la cadena que se va a mostrar con **devenv/?**. |
-| Nombre | Modificador. |
+| Name | Modificador. |
 | PackageGuid | Identificador único global (GUID) del paquete. |
 
  El primer valor de arguments es normalmente 0 o 1. Se puede usar un valor especial de ' * ' para indicar que todo el resto de la línea de comandos es el argumento. Esto puede ser útil para depurar escenarios en los que un usuario debe pasar una cadena de comandos del depurador.
@@ -67,9 +69,9 @@ cmdline.GetOption("MySwitch", out isPresent, out optionValue);
 
  Es su responsabilidad comprobar los modificadores de la línea de comandos cada vez que se carga el paquete.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>
 - [Modificadores de línea de comandos para Devenv](../ide/reference/devenv-command-line-switches.md)
 - [Utilidad CreatePkgDef](../extensibility/internals/createpkgdef-utility.md)
-- [. Archivos Pkgdef](https://devblogs.microsoft.com/visualstudio/whats-a-pkgdef-and-why/)
+- [. Pkgdef (archivos)](https://devblogs.microsoft.com/visualstudio/whats-a-pkgdef-and-why/)

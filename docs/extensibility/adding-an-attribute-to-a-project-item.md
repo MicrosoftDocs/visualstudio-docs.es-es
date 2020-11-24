@@ -1,5 +1,7 @@
 ---
 title: Agregar un atributo a un elemento de proyecto | Microsoft Docs
+description: Obtenga información sobre cómo agregar un atributo a un elemento de proyecto en Visual Studio mediante los métodos de interoperabilidad GetItemAttribute y SetItemAttribute de Shell.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 059eef0b6a215f1f02c77df63f777fbfda5dff19
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 79f96be0d9b2ba661c29cdc1a25d7348bcff6eb1
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740193"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597917"
 ---
 # <a name="add-an-attribute-to-a-project-item"></a>Agregar un atributo a un elemento de proyecto
 Los métodos <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetItemAttribute%2A> y <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> obtienen y establecen el valor de los atributos de un elemento de proyecto. SetItemAttribute crea el atributo si aún no existe y lo agrega a los metadatos del elemento de proyecto.
@@ -43,5 +45,5 @@ Los métodos <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.
 
     ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Conservar los datos en el archivo de proyecto de MSBuild](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)

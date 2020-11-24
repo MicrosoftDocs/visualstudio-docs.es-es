@@ -1,5 +1,7 @@
 ---
 title: Agregando una extensión de protocolo del servidor de idioma | Microsoft Docs
+description: Obtenga información sobre cómo crear una extensión de Visual Studio que integre un servidor de idioma basado en el protocolo de servidor de lenguaje (LSP).
+ms.custom: SEO-VS-2020
 ms.date: 11/14/2017
 ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0c43d5a50b7a2acb536dee5fe9c6ed9ec3d36d7
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 26f78be8708e61370be3256c8cde481d5c61c89d
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860458"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598151"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Adición de una extensión del protocolo de servidor de lenguaje
 
@@ -86,7 +88,7 @@ textDocument/documentLink |
 documentLink/resolver |
 textDocument/Rename | sí
 
-## <a name="get-started"></a>Primeros pasos
+## <a name="get-started"></a>Introducción
 
 > [!NOTE]
 > A partir de la versión 15,8 de Visual Studio 2017, la compatibilidad con el protocolo de Common Language Server está integrada en Visual Studio. Si ha creado extensiones de LSP mediante la versión de [VSIX del cliente del servidor de idioma](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview) de vista previa, dejarán de funcionar una vez que actualice a la versión 15,8 o superior. Tendrá que hacer lo siguiente para que las extensiones de LSP funcionen de nuevo:
@@ -125,7 +127,7 @@ El LSP no incluye especificación sobre cómo proporcionar coloración de texto 
 
 1. Cree una carpeta denominada "Grammes" dentro de la extensión (o puede ser cualquier nombre que elija).
 
-2. Dentro de la carpeta de *gramáticas* , incluya los archivos * \* . tmLanguage*, * \* . plist*, * \* . tmTheme*o * \* . JSON* que desee que proporcionen coloración personalizada.
+2. Dentro de la carpeta de *gramáticas* , incluya los archivos *\* . tmLanguage*, *\* . plist*, *\* . tmTheme* o *\* . JSON* que desee que proporcionen coloración personalizada.
 
    > [!TIP]
    > Un archivo *. tmTheme* define cómo se asignan los ámbitos a las clasificaciones de Visual Studio (claves de color denominadas). Para obtener instrucciones, puede hacer referencia al archivo global *. tmTheme* en el directorio *% ProgramFiles (x86)% \ Microsoft Visual Studio \\ \<version> \\ \<SKU> \Common7\IDE\CommonExtensions\Microsoft\TextMate\Starterkit\Themesg*
@@ -354,7 +356,7 @@ Siga estos pasos para agregar compatibilidad con la configuración de la extensi
 
 El seguimiento de diagnósticos se puede habilitar para mostrar todos los mensajes entre el cliente y el servidor, lo que puede resultar útil al depurar problemas. Para habilitar el seguimiento de diagnóstico, haga lo siguiente:
 
-1. Abra o cree el archivo de configuración del área * de trabajoVSWorkspaceSettings.jsen* (vea "edición del usuario de la configuración de un área de trabajo").
+1. Abra o cree el archivo de configuración del área *de trabajoVSWorkspaceSettings.jsen* (vea "edición del usuario de la configuración de un área de trabajo").
 2. Agregue la siguiente línea en el archivo de configuración JSON:
 
 ```json
@@ -498,6 +500,6 @@ Sí, pero no todas las características funcionarán correctamente. El objetivo 
 
 Vea las instrucciones de Marketplace [aquí](walkthrough-publishing-a-visual-studio-extension.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Agregar compatibilidad con otros lenguajes en el editor de Visual Studio](../ide/adding-visual-studio-editor-support-for-other-languages.md)

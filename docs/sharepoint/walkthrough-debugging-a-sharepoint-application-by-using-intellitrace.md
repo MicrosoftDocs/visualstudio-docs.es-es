@@ -1,5 +1,7 @@
 ---
 title: Depurar aplicaciones de SharePoint con IntelliTrace
+description: Use IntelliTrace para depurar y corregir más fácilmente las aplicaciones de SharePoint. Crear y agregar código a un receptor de características. Pruebe el proyecto. Recopilar datos de IntelliTrace.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 041a110ee39ae7711756b8d689bdf68ae2368caf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4c7ab11dbe213208a2e8f5e39c3af2d20b79f5cb
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015746"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598489"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>Tutorial: depurar una aplicación de SharePoint mediante IntelliTrace
 

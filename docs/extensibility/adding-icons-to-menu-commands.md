@@ -1,5 +1,7 @@
 ---
 title: Agregar iconos a comandos de menú | Microsoft Docs
+description: Obtenga información sobre cómo agregar iconos a los comandos que pueden aparecer en los menús y las barras de herramientas en el entorno de desarrollo integrado (IDE) de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c9f038dc43c1705a7cef47eb09a17607c535e307
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eaf0a089c10c850c14b9ba2f807a69eada5d04b9
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903437"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597657"
 ---
 # <a name="add-icons-to-menu-commands"></a>Agregar iconos a comandos de menú
 Los comandos pueden aparecer en los menús y las barras de herramientas. En las barras de herramientas, es habitual que se muestre un comando con solo un icono (para ahorrar espacio) mientras que en los menús aparece normalmente un comando con un icono y texto.
@@ -33,7 +35,7 @@ Los comandos pueden aparecer en los menús y las barras de herramientas. En las 
 
      Si usa una profundidad de color de 8 bits, use magenta, `RGB(255,0,255)` , como transparencia. Sin embargo, se prefieren los iconos de color de 32 bits.
 
-2. Copie el archivo de icono en el directorio de *recursos* del proyecto de VSPackage. En el **Explorador de soluciones**, agregue el icono al proyecto. (Seleccione **recursos**y, en el menú contextual, haga clic en **Agregar**, en **elemento existente**y seleccione el archivo de icono).
+2. Copie el archivo de icono en el directorio de *recursos* del proyecto de VSPackage. En el **Explorador de soluciones**, agregue el icono al proyecto. (Seleccione **recursos** y, en el menú contextual, haga clic en **Agregar**, en **elemento existente** y seleccione el archivo de icono).
 
 3. Abra el archivo *. Vsct* en el editor.
 

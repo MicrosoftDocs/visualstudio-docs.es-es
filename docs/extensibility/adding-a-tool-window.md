@@ -1,5 +1,7 @@
 ---
 title: Agregar una ventana de herramientas | Microsoft Docs
+description: Obtenga información sobre cómo crear una ventana de herramientas e integrarla en Visual Studio agregando un control y una barra de herramientas que contiene un comando a la ventana de herramientas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 169f386128ccdd79aef6b90a6703f50323b9b6f3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 184e04e74e2065ea2a9e1bcd41b2e878981dd218
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904135"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597995"
 ---
 # <a name="add-a-tool-window"></a>Agregar una ventana de herramientas
 
@@ -47,7 +49,7 @@ El SDK de Visual Studio se incluye como una característica opcional en el progr
 
 1. Quite el control predeterminado. Abra *FirstToolWindowControl. Xaml* y elimine el **click me** . .
 
-2. En el **cuadro de herramientas**, expanda la sección **todos los controles WPF** y arrastre el control **elemento multimedia** hasta el formulario **FirstToolWindowControl** . Seleccione el control y, en la ventana **propiedades** , asigne el nombre **mediaElement1**a este elemento.
+2. En el **cuadro de herramientas**, expanda la sección **todos los controles WPF** y arrastre el control **elemento multimedia** hasta el formulario **FirstToolWindowControl** . Seleccione el control y, en la ventana **propiedades** , asigne el nombre **mediaElement1** a este elemento.
 
 ## <a name="add-a-toolbar-to-the-tool-window"></a>Agregar una barra de herramientas a la ventana de herramientas
 Al agregar una barra de herramientas de la siguiente manera, garantiza que sus degradados y colores son coherentes con el resto del IDE.
@@ -129,7 +131,7 @@ Agregue un comando a la barra de herramientas, que se muestra como un botón.
 ## <a name="add-a-mediaplayer-property-to-firsttoolwindowcontrol"></a>Agregar una propiedad MediaPlayer a FirstToolWindowControl
 Desde los controladores de eventos para los controles de barra de herramientas, el código debe poder tener acceso al control Media Player, que es un elemento secundario de la clase FirstToolWindowControl.
 
-En **Explorador de soluciones**, haga clic con el botón secundario en *FirstToolWindowControl. Xaml*, haga clic en **Ver código**y agregue el código siguiente a la clase FirstToolWindowControl.
+En **Explorador de soluciones**, haga clic con el botón secundario en *FirstToolWindowControl. Xaml*, haga clic en **Ver código** y agregue el código siguiente a la clase FirstToolWindowControl.
 
 ```csharp
 public System.Windows.Controls.MediaElement MediaPlayer
@@ -276,7 +278,7 @@ A continuación, especifique una ubicación predeterminada en el IDE para la ven
 
     La ventana de herramientas del reproductor de media debe abrirse en la misma posición que **Explorador de soluciones**. Si todavía aparece en la misma posición que antes, restablezca el diseño de ventana (**ventana/restablecer diseño de ventana**).
 
-3. Haga clic en el botón (tiene el icono de **búsqueda** ) en la ventana de herramientas. Seleccione un archivo de sonido o de vídeo compatible, por ejemplo, *C:\windows\media\chimes.wav*y, a continuación, presione **abrir**.
+3. Haga clic en el botón (tiene el icono de **búsqueda** ) en la ventana de herramientas. Seleccione un archivo de sonido o de vídeo compatible, por ejemplo, *C:\windows\media\chimes.wav* y, a continuación, presione **abrir**.
 
     Debería oír el sonido del avisador.
 

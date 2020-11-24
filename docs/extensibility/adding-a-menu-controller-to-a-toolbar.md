@@ -1,5 +1,7 @@
 ---
 title: Agregar un controlador de menú a una barra de herramientas | Microsoft Docs
+description: Obtenga información sobre cómo crear un controlador de menú y agregarlo a una barra de herramientas de la ventana de herramientas en Visual Studio. a continuación, implemente los comandos del controlador de menú y pruébelo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 32cbbbc7784c112b33b5f720b306b8c93269bb82
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3ce14999913a3928cbe25d9f034c8288651629a3
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903524"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597826"
 ---
 # <a name="add-a-menu-controller-to-a-toolbar"></a>Agregar un controlador de menú a una barra de herramientas
 Este tutorial se basa en el tutorial [Agregar una barra de herramientas a una ventana de herramientas](../extensibility/adding-a-toolbar-to-a-tool-window.md) y muestra cómo agregar un controlador de menú a la barra de herramientas de la ventana de herramientas. Los pasos que se muestran aquí también se pueden aplicar a la barra de herramientas que se crea en el tutorial [Agregar una barra de herramientas](../extensibility/adding-a-toolbar.md) .
@@ -27,7 +29,7 @@ Un controlador de menú es un control dividido. En el lado izquierdo del control
 Los controladores de menú pueden aparecer en los menús, pero se utilizan con más frecuencia en las barras de herramientas.
 
 ## <a name="prerequisites"></a>Requisitos previos
-A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS después. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-menu-controller"></a>Crear un controlador de menú
 
@@ -113,15 +115,15 @@ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el c
 1. En *TWTestCommandPackageGuids.CS*, agregue los identificadores de comando para los tres elementos de menú después de los identificadores de comando existentes.
 
     ```csharp
-    public const int cmdidMCItem1 = 0x130;
-    public const int cmdidMCItem2 = 0x131;
-    public const int cmdidMCItem3 = 0x132;
+    public const int cmdidMCItem1 = 0x130;
+    public const int cmdidMCItem2 = 0x131;
+    public const int cmdidMCItem3 = 0x132;
     ```
 
 2. En *TWTestCommand.CS*, agregue el código siguiente en la parte superior de la `TWTestCommand` clase.
 
     ```csharp
-    private int currentMCCommand; // The currently selected menu controller command
+    private int currentMCCommand; // The currently selected menu controller command
     ```
 
 3. En el constructor TWTestCommand, después de la última llamada al `AddCommand` método, agregue código para enrutar los eventos de cada comando a través de los mismos controladores.
@@ -136,7 +138,7 @@ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el c
           EventHandler(OnMCItemClicked), cmdID);
         mc.BeforeQueryStatus += new EventHandler(OnMCItemQueryStatus);
         commandService.AddCommand(mc);
-        // The first item is, by default, checked. 
+        // The first item is, by default, checked. 
         if (TWTestCommandPackageGuids.cmdidMCItem1 == i)
         {
             mc.Checked = true;
@@ -148,7 +150,7 @@ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el c
 4. Agregue un controlador de eventos a la clase **TWTestCommand** para marcar el comando seleccionado como activado.
 
     ```csharp
-    private void OnMCItemQueryStatus(object sender, EventArgs e)
+    private void OnMCItemQueryStatus(object sender, EventArgs e)
     {
         OleMenuCommand mc = sender as OleMenuCommand;
         if (null != mc)
@@ -161,7 +163,7 @@ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el c
 5. Agregue un controlador de eventos que muestre un cuadro de mensajes cuando el usuario seleccione un comando en el controlador de menú:
 
     ```csharp
-    private void OnMCItemClicked(object sender, EventArgs e)
+    private void OnMCItemClicked(object sender, EventArgs e)
     {
         OleMenuCommand mc = sender as OleMenuCommand;
         if (null != mc)

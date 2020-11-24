@@ -1,5 +1,7 @@
 ---
 title: Agregar una barra de herramientas | Microsoft Docs
+description: Obtenga información sobre cómo agregar una barra de herramientas que contenga botones que estén enlazados a comandos al entorno de desarrollo integrado (IDE) de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: beb97356daf3c932470bf2598e58e1f5b40ea233
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 434f7470fe5fca13f217c981cc99d6a884117a86
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904072"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597956"
 ---
 # <a name="add-a-toolbar"></a>Agregar una barra de herramientas
 En este tutorial se muestra cómo agregar una barra de herramientas al IDE de Visual Studio.
@@ -28,7 +30,7 @@ En este tutorial se muestra cómo agregar una barra de herramientas al IDE de Vi
  Para obtener más información sobre los menús, vea [comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md).
 
 ## <a name="prerequisites"></a>Requisitos previos
- A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS después. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-an-extension-with-a-toolbar"></a>Crear una extensión con una barra de herramientas
  Cree un proyecto VSIX denominado `IDEToolbar` . Agregue una plantilla de elemento de comando de menú denominada **ToolbarTestCommand**. Para obtener información sobre cómo hacerlo, vea [crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md).

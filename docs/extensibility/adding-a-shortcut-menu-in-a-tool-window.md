@@ -1,5 +1,7 @@
 ---
 title: Agregar un menú contextual en una ventana de herramientas | Microsoft Docs
+description: Obtenga información sobre cómo agregar un menú contextual a una ventana de herramientas en Visual Studio que aparece cuando se hace clic con el botón derecho en un botón, un cuadro de texto o un fondo de ventana.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa8d6f5c47289e66a51653e39d31890f09e8ceb2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2e14d948bf5d4b637002ca1f2ec8be37b64dc22b
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904190"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597878"
 ---
 # <a name="add-a-shortcut-menu-in-a-tool-window"></a>Agregar un menú contextual en una ventana de herramientas
 En este tutorial se coloca un menú contextual en una ventana de herramientas. Un menú contextual es un menú que aparece cuando un usuario hace clic con el botón secundario en un botón, un cuadro de texto o un fondo de la ventana. Los comandos de un menú contextual se comportan igual que los comandos de otros menús o barras de herramientas. Para admitir un menú contextual, especifíquelo en el archivo *. Vsct* y mostrarlo como respuesta al clic con el botón secundario del mouse.
@@ -30,7 +32,7 @@ En este tutorial se muestra cómo crear un menú contextual como un menú de Vis
 Como alternativa, si el menú contextual no va a tener acceso a la funcionalidad de Visual Studio, puede usar la <xref:System.Windows.FrameworkElement.ContextMenu%2A> propiedad de un elemento XAML en el control de usuario. Para obtener más información, vea [ContextMenu](/dotnet/framework/wpf/controls/contextmenu).
 
 ## <a name="prerequisites"></a>Requisitos previos
-A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS después. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-the-tool-window-shortcut-menu-package"></a>Crear el paquete del menú contextual de la ventana de herramientas
 
@@ -116,10 +118,10 @@ Un menú contextual como el que se muestra en este tutorial permite al usuario s
 
     ```csharp
     public const string guidShortcutMenuPackageCmdSet = "00000000-0000-0000-0000-00000000"; // your GUID will differ
-    public const int ColorMenu = 0x1000;
-    public const int cmdidRed = 0x102;
-    public const int cmdidYellow = 0x103;
-    public const int cmdidBlue = 0x104;
+    public const int ColorMenu = 0x1000;
+    public const int cmdidRed = 0x102;
+    public const int cmdidYellow = 0x103;
+    public const int cmdidBlue = 0x104;
     ```
 
     Estos son los mismos identificadores de comando que se definen en la sección Symbols del archivo *ShortcutMenuPackage. Vsct* . El grupo de contexto no se incluye aquí porque solo es necesario en el archivo *. Vsct* .
@@ -208,7 +210,7 @@ Un menú contextual como el que se muestra en este tutorial permite al usuario s
 7. En *ShortcutMenuControl.Xaml.CS*, agregue un código auxiliar para el controlador de eventos.
 
     ```csharp
-    private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
+    private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
     {
     . . .
     }
@@ -270,7 +272,7 @@ Un menú contextual como el que se muestra en este tutorial permite al usuario s
 
 1. Compile la solución y comience la depuración. Aparece la instancia experimental.
 
-2. En la instancia experimental, haga clic en **Ver/otras ventanas**y, a continuación, haga clic en **MenúDeMétodoAbreviado**. Esto debería mostrar la ventana de herramientas.
+2. En la instancia experimental, haga clic en **Ver/otras ventanas** y, a continuación, haga clic en **MenúDeMétodoAbreviado**. Esto debería mostrar la ventana de herramientas.
 
 3. Haga clic con el botón secundario en el cuerpo de la ventana de herramientas. Se debe mostrar un menú contextual con una lista de colores.
 
