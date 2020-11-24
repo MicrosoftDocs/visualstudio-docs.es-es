@@ -1,5 +1,7 @@
 ---
 title: Ejemplos y tutoriales de desarrollo de SharePoint | Microsoft Docs
+description: Introducción a las aplicaciones de ejemplo, el código de ejemplo y los tutoriales paso a paso que muestran el desarrollo de SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39f4d52b8a94409abeffb7cc9ce2329e463cf8bd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0a5703958db5d981391c11ae0baceaf83231d3c7
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015809"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440641"
 ---
 # <a name="sharepoint-development-samples-and-walkthroughs"></a>Ejemplos y tutoriales de desarrollo de SharePoint
   Esta sección contiene aplicaciones y código de ejemplo, y tutoriales paso a paso en los que se muestran la sintaxis, estructura y técnicas que se usan para compilar soluciones de SharePoint.
