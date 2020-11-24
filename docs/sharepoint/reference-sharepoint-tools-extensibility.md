@@ -1,5 +1,7 @@
 ---
 title: Referencia (extensibilidad de herramientas de SharePoint) | Microsoft Docs
+description: Obtenga vínculos a documentación de referencia para extender las herramientas de SharePoint en Visual Studio, que abarcan la referencia de esquemas de elementos de proyecto de SharePoint y la referencia de API.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4ab3b60e727f7f4ce113b86fc3491bf244115551
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5fcc1117c88f19eaae7633698dee1698a8108fdb
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62827108"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440719"
 ---
 # <a name="reference-sharepoint-tools-extensibility"></a>Referencia (extensibilidad de herramientas de SharePoint)
 
@@ -33,6 +35,6 @@ Contiene documentación de referencia para el esquema del archivo *. spdata* .
 
 Contiene documentación de referencia de API para extender las herramientas de SharePoint en Visual Studio.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
-- [Extender las herramientas de SharePoint en Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
+- [Extensión de las herramientas de SharePoint en Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)

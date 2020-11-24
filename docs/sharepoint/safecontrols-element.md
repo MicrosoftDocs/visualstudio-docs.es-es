@@ -1,5 +1,7 @@
 ---
 title: SafeControls (elemento) | Microsoft Docs
+description: Obtenga información sobre el elemento SafeControls, que contiene una colección de controles ASPX o elementos Web marcados como seguros para el acceso en la página ASPX de un sitio de SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e840f0040cf94fea408615525358580d207f07c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c3423d1b6efd106ef7f947bd8573dcd1aa548a66
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547906"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440680"
 ---
 # <a name="safecontrols-element"></a>SafeControls (elemento)
   Colección de controles ASPX y elementos web que se designan como seguros para que cualquier usuario tenga acceso a cualquier página ASPX del sitio de SharePoint.
@@ -62,4 +64,4 @@ ms.locfileid: "85547906"
 
 ## <a name="see-also"></a>Consulte también
 - [Referencia de esquemas de elementos de proyecto de SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)
-- [Proporcionar información de empaquetado e implementación en los elementos de proyecto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
+- [Inclusión de información de empaquetado e implementación en los elementos del proyecto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)

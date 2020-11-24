@@ -1,5 +1,7 @@
 ---
 title: Referencia de esquemas de elementos de proyecto de SharePoint | Microsoft Docs
+description: Vea una introducción a la referencia de esquemas XML del elemento de proyecto de SharePoint (ProjectItemModelSchema. xsd), que se usa para validar el contenido de los archivos. spdata.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bc15ff5c384ec63f99ed50a5f3c700efd7ba3c18
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd425111e7e3d69e381e69e60daf914f74cd2d11
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "63007724"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442552"
 ---
 # <a name="sharepoint-project-item-schema-reference"></a>Referencia de esquemas de elementos de proyecto de SharePoint
   Visual Studio usa el esquema de elementos de proyecto de SharePoint para validar el contenido de los archivos *. spdata* . Un archivo *. spdata* especifica el contenido y el comportamiento de un elemento de proyecto de SharePoint. Para obtener más información sobre el contenido de los elementos de proyecto de SharePoint, vea [crear plantillas de elemento y plantillas de proyecto para los elementos de proyecto de SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).
@@ -51,5 +53,5 @@ ms.locfileid: "63007724"
 |[SafeControl](../sharepoint/safecontrol-element.md)|Representa un control ASPX o un elemento Web que se designa como seguro para que cualquier usuario tenga acceso a cualquier página ASPX del sitio de SharePoint.|
 |[SafeControls](../sharepoint/safecontrols-element.md)|Representa una colección de controles ASPX y elementos web que se designan como seguros para que cualquier usuario tenga acceso a cualquier página ASPX en el sitio de SharePoint.|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Crear plantillas de elemento y plantillas de proyecto para los elementos de proyecto de SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)

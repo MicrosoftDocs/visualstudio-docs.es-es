@@ -1,5 +1,7 @@
 ---
 title: Elemento Projectitemfile (| Microsoft Docs
+description: Obtiene información de referencia sobre el elemento Projectitemfile (, que representa un archivo de elemento de proyecto en la referencia de esquemas XML del elemento de proyecto de SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d1c9814498d74a5d1a6533576f1071b4bf7deb57
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 099f20926487b09240219f04d9bce4a79709f6e6
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85539859"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440810"
 ---
 # <a name="projectitemfile-element"></a>ProjectItemFile (elemento)
   Representa un archivo de SharePoint, como el archivo de elemento de característica, que se va a incluir con el elemento de proyecto cuando se implemente en SharePoint.
@@ -41,7 +43,7 @@ ms.locfileid: "85539859"
 |Atributo|Descripción|
 |---------------|-----------------|
 |**Origen**|Atributo **xs: String** requerido.<br /><br /> Nombre del archivo que se va a implementar con el elemento de proyecto.|
-|**Destino**|Atributo **xs: String** opcional.<br /><br /> La ruta de acceso donde se implementará el archivo en SharePoint, con respecto a la carpeta raíz de implementación. La carpeta raíz de implementación viene determinada por el tipo de implementación especificado por el atributo **Type** . Si no se especifica el atributo de **destino** , el archivo se implementará en una carpeta con el nombre especificado en el atributo de **origen** .<br /><br /> Para obtener más información, vea las descripciones de las propiedades **ruta de implementación** y **raíz de implementación** de los elementos de proyecto de SharePoint en [desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md).|
+|**Target**|Atributo **xs: String** opcional.<br /><br /> La ruta de acceso donde se implementará el archivo en SharePoint, con respecto a la carpeta raíz de implementación. La carpeta raíz de implementación viene determinada por el tipo de implementación especificado por el atributo **Type** . Si no se especifica el atributo de **destino** , el archivo se implementará en una carpeta con el nombre especificado en el atributo de **origen** .<br /><br /> Para obtener más información, vea las descripciones de las propiedades **ruta de implementación** y **raíz de implementación** de los elementos de proyecto de SharePoint en [desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md).|
 |**Tipo**|Atributo **xs: String** requerido.<br /><br /> El tipo de implementación para el archivo. Para obtener más información sobre los valores posibles, vea la descripción de la propiedad **tipo de implementación** de los elementos de proyecto de SharePoint en [desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md).|
 
 ### <a name="child-elements"></a>Elementos secundarios

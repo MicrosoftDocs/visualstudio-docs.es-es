@@ -1,5 +1,7 @@
 ---
 title: Elemento ProjectOutputFile (| Microsoft Docs
+description: Obtiene información de referencia sobre el elemento ProjectOutputFile (, que representa la salida de un proyecto independiente en la referencia de esquema XML del elemento de proyecto de SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 12f399b7a09c18c77482475575ca387a11955762
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffe6f95bdfd7795c837aaaa25ec7ef2a35a7ae76
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542394"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442033"
 ---
 # <a name="projectoutputfile-element"></a>ProjectOutputFile (elemento)
   Representa la salida de un proyecto independiente que se incluirá con el elemento de proyecto cuando se implemente en SharePoint.
@@ -43,7 +45,7 @@ ms.locfileid: "85542394"
 |---------------|-----------------|
 |**ProjectId**|Atributo **xs: String** requerido.<br /><br /> GUID del proyecto dependiente que tiene el resultado que desea incluir. Esto corresponde al elemento **ProjectGuid** del archivo de proyecto dependiente.|
 |**ProjectPath**|Atributo **xs: String** requerido.<br /><br /> La ruta de acceso relativa, incluido el nombre de archivo del proyecto dependiente, que tiene el resultado que desea incluir. Esta ruta de acceso es relativa a la carpeta raíz del proyecto de SharePoint que contiene el elemento de proyecto de SharePoint.|
-|**Destino**|Atributo **xs: String** opcional.<br /><br /> La ruta de acceso donde se implementará el resultado del proyecto dependiente en el servidor de SharePoint, con respecto a la carpeta raíz de implementación. La carpeta raíz de implementación viene determinada por el tipo de implementación especificado por el atributo **Type** .<br /><br /> Para obtener más información, vea las descripciones de las propiedades **ruta de implementación** y **raíz de implementación** de los elementos de proyecto de SharePoint en [desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md).|
+|**Target**|Atributo **xs: String** opcional.<br /><br /> La ruta de acceso donde se implementará el resultado del proyecto dependiente en el servidor de SharePoint, con respecto a la carpeta raíz de implementación. La carpeta raíz de implementación viene determinada por el tipo de implementación especificado por el atributo **Type** .<br /><br /> Para obtener más información, vea las descripciones de las propiedades **ruta de implementación** y **raíz de implementación** de los elementos de proyecto de SharePoint en [desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md).|
 |**Tipo**|Atributo **xs: String** requerido.<br /><br /> Tipo de implementación que se va a usar para la salida del proyecto dependiente. Para obtener más información sobre los valores posibles, vea la descripción de la propiedad **tipo de implementación** de los elementos de proyecto de SharePoint en [desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md).|
 
 ### <a name="child-elements"></a>Elementos secundarios
@@ -69,5 +71,5 @@ ms.locfileid: "85542394"
 
 ## <a name="see-also"></a>Consulte también
 - [Referencia de esquemas de elementos de proyecto de SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)
-- [Proporcionar información de empaquetado e implementación en los elementos de proyecto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
+- [Inclusión de información de empaquetado e implementación en los elementos del proyecto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
 - [Desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md)

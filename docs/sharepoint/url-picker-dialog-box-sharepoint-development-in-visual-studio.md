@@ -1,5 +1,7 @@
 ---
 title: Selector de URL (cuadro de diálogo) (desarrollo de SharePoint)
+description: Obtenga información sobre el cuadro de diálogo Selector de URL, que permite al usuario elegir archivos ubicados en su proyecto o en el servidor local que ejecuta SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 991693c3379e008a2a907efd3127290c7e804c22
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 584b77ab714cb692069fadd6c6fad50e20d46f80
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66261940"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442539"
 ---
 # <a name="url-picker-dialog-box-sharepoint-development-in-visual-studio"></a>Selector de URL (cuadro de diálogo) (desarrollo de SharePoint en Visual Studio)
   En el cuadro de diálogo Selector de URL, puede elegir archivos como archivos de la página maestra o archivos de imagen que se encuentran en el proyecto o en el servidor local que ejecuta SharePoint.
@@ -42,7 +44,7 @@ ms.locfileid: "66261940"
 
   Expanda el nodo del **servidor** para elegir los archivos que se encuentran en el servidor local que ejecuta SharePoint. Para que aparezca como seleccionable en el cuadro de diálogo, estos archivos deben cumplir los siguientes criterios:
 
-- El archivo debe estar ubicado en una de las siguientes carpetas asignadas: **images**, **layouts**o **ControlTemplates**.
+- El archivo debe estar ubicado en una de las siguientes carpetas asignadas: **images**, **layouts** o **ControlTemplates**.
 
 - No se puede encontrar el archivo en la base de datos de contenido de SharePoint.
 
@@ -52,7 +54,7 @@ ms.locfileid: "66261940"
 
   **Archivos de tipo** Permite elegir entre una lista de archivos adecuados para la tarea que se está llevando a cabo.
 
-## <a name="see-also"></a>Consulte también
-- [Crear páginas de aplicación para SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)
-- [Crear elementos Web para SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)
-- [Crear controles reutilizables para elementos Web o páginas de aplicación](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)
+## <a name="see-also"></a>Vea también
+- [Creación de páginas de aplicación para SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)
+- [Creación de elementos web para SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)
+- [Creación de controles reutilizables para elementos web o páginas de aplicación](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)
