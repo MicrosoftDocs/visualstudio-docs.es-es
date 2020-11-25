@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 8b30eb5a58536b87311c4e5094cc700b5f3bdd53
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89326116"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970118"
 ---
 Visual Studio 2012

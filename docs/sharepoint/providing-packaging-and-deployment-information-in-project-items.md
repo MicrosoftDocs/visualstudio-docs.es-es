@@ -1,5 +1,7 @@
 ---
 title: Empaquetar & la información de implementación en elementos de proyecto
+description: Agregar datos de empaquetado e implementación en los elementos de proyecto de SharePoint mediante propiedades de características, receptores de características, referencias de salida del proyecto y entidades de control seguro.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -24,14 +26,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: db805c308fd245554824997b24236eb2e2d80e62
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f73d8727fb960cf519d368d928aa20cae38ae1a9
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72984213"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95970476"
 ---
-# <a name="provide-packaging-and-deployment-information-in-project-items"></a>Proporcionar información de empaquetado e implementación en los elementos de proyecto
+# <a name="provide-packaging-and-deployment-information-in-project-items"></a>Inclusión de información de empaquetado e implementación en los elementos del proyecto
   Todos los elementos de proyecto de SharePoint en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] tienen propiedades que se pueden usar para proporcionar datos adicionales cuando el proyecto se implementa en SharePoint. Estas propiedades son las siguientes:
 
 - Propiedades de características
@@ -107,5 +109,5 @@ ms.locfileid: "72984213"
 
 ## <a name="see-also"></a>Vea también
 - [Empaquetar e implementar soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
-- [Usar módulos para incluir archivos en la solución](../sharepoint/using-modules-to-include-files-in-the-solution.md)
+- [Uso de módulos para incluir archivos en la solución](../sharepoint/using-modules-to-include-files-in-the-solution.md)
 - [Extender el empaquetado e implementación de SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md)

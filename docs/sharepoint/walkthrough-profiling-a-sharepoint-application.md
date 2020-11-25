@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: generar perfiles de una aplicación de SharePoint | Microsoft Docs'
+description: En este tutorial, use las herramientas de generación de perfiles de Visual Studio para optimizar el rendimiento de una aplicación de SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9a2e4ca528c7f534cc3a7f04d7e1e2832ee9b412
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: 66e19f7744a56d147fb0760c6f20254ea4308603
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "92298630"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95970098"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Tutorial: generar perfiles de una aplicación de SharePoint
   En este tutorial se muestra cómo usar las herramientas de generación de perfiles de Visual Studio para optimizar el rendimiento de una aplicación de SharePoint. La aplicación de ejemplo es un receptor de eventos de características de SharePoint que contiene un bucle inactivo que merma el rendimiento del receptor de eventos de características. El generador de perfiles de Visual Studio le permite localizar y eliminar la parte más costosa (rendimiento más lento) del proyecto, también conocida como la *ruta de acceso activa*.
@@ -51,11 +53,11 @@ ms.locfileid: "92298630"
 
 1. En la barra de menús, elija **archivo**  >  **nuevo**  >  **proyecto** para mostrar el cuadro de diálogo **nuevo proyecto** .
 
-2. Expanda el nodo **SharePoint** en **Visual C#** o **Visual Basic**y, a continuación, elija el nodo **2010** .
+2. Expanda el nodo **SharePoint** en **Visual C#** o **Visual Basic** y, a continuación, elija el nodo **2010** .
 
 3. En el panel plantillas, elija la plantilla de **proyecto de SharePoint 2010** .
 
-4. En el cuadro **nombre** , escriba **profilete**y, a continuación, elija el botón **Aceptar** .
+4. En el cuadro **nombre** , escriba **profilete** y, a continuación, elija el botón **Aceptar** .
 
     Aparece el **Asistente para la personalización de SharePoint** .
 
@@ -72,9 +74,9 @@ ms.locfileid: "92298630"
 
 ### <a name="to-add-a-feature-and-feature-event-receiver"></a>Para agregar una característica y un receptor de eventos de características
 
-1. En **Explorador de soluciones**, abra el menú contextual del nodo **características** , elija **Agregar característica**y deje el nombre en el valor predeterminado, **Feature1**.
+1. En **Explorador de soluciones**, abra el menú contextual del nodo **características** , elija **Agregar característica** y deje el nombre en el valor predeterminado, **Feature1**.
 
-2. En **Explorador de soluciones**, abra el menú contextual de **Feature1**y, a continuación, elija **Agregar receptor de eventos**.
+2. En **Explorador de soluciones**, abra el menú contextual de **Feature1** y, a continuación, elija **Agregar receptor de eventos**.
 
      Esto agrega un archivo de código a la característica con varios controladores de eventos con comentarios y abre el archivo para edición.
 
@@ -272,7 +274,7 @@ ms.locfileid: "92298630"
 
      La característica se debería activar mucho más rápido ahora que se ha eliminado la llamada al bucle inactivo. El informe de generación de perfiles de muestreo debería reflejarlo.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Introducción a la sesión de rendimiento](../profiling/performance-session-overview.md)
 - [Guía básica para la generación de perfiles de rendimiento](../profiling/beginners-guide-to-performance-profiling.md)
 - [Find Application Bottlenecks with Visual Studio Profiler (Detección de cuellos de botella de las aplicaciones con el generador de perfiles de Visual Studio)](/archive/msdn-magazine/2008/march/find-application-bottlenecks-with-visual-studio-profiler)

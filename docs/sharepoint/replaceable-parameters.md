@@ -1,5 +1,7 @@
 ---
 title: Parámetros reemplazables | Microsoft Docs
+description: Revise los parámetros reemplazables (tokens), que especifican valores dentro de los archivos de proyecto para los elementos de la solución de SharePoint cuyos valores reales no se conocen en tiempo de diseño.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,17 +16,17 @@ author: John-Hart
 ms.author: johnhart
 manager: jillfra
 ms.workload: office
-ms.openlocfilehash: 165ef1256a0150e0942d85c4f876c8b3f5e15c72
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1cd44b3edfaeae376e5a4a9698d138bd75c03bf8
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90843131"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95970253"
 ---
 # <a name="replaceable-parameters"></a>Parámetros reemplazables
   Los parámetros reemplazables, o *tokens*, se pueden usar dentro de los archivos de proyecto para proporcionar valores para los elementos de la solución de SharePoint cuyos valores reales no se conocen en tiempo de diseño. Son similares en función de los [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] tokens de plantilla estándar. Para obtener más información, vea [parámetros de plantilla](../ide/template-parameters.md).
 
-## <a name="token-format"></a>Formato de token
+## <a name="token-format"></a>Formato de tokens
  Los tokens comienzan y terminan con un carácter de signo de dólar ($). En la implementación, los tokens utilizados se reemplazan por valores reales cuando un proyecto se empaqueta en un paquete de solución de SharePoint (archivo *. wsp* ). Por ejemplo, el token **$SharePoint. Package.Name $** podría resolverse como la cadena "paquete de SharePoint de prueba".
 
 ## <a name="token-rules"></a>Reglas de token
@@ -75,7 +77,7 @@ ms.locfileid: "90843131"
 
 - ASCX
 
-- ASCX
+- ASPX
 
 - WebPart
 

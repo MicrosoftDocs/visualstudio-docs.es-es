@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: extender un tipo de elemento de proyecto de SharePoint | Microsoft Docs'
+description: En este tutorial, cree una extensión para un tipo de elemento de proyecto de SharePoint, como el elemento de proyecto de modelo de conectividad a datos profesionales (BDC).
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e8186b1a1388745527fbb9f4dd37478942c36e62
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: 3a360b6a336f64920c0144f742e98a64282eeeec
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740011"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95970409"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Tutorial: extender un tipo de elemento de proyecto de SharePoint
   Puede utilizar el elemento de proyecto **modelo de conectividad a datos profesionales** para crear un modelo para el servicio de conectividad a datos profesionales (BDC) en SharePoint. De forma predeterminada, al crear un modelo utilizando este elemento de proyecto, los datos del modelo no se muestran a los usuarios. Por esta razón debe crear una lista externa en SharePoint que permita a los usuarios ver los datos.
@@ -36,7 +38,7 @@ ms.locfileid: "90740011"
 
 - Probar la extensión.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
  Necesitará los componentes siguientes en el equipo de desarrollo para completar este tutorial:
 
 - Ediciones compatibles de Microsoft Windows, SharePoint y Visual Studio.
@@ -75,7 +77,7 @@ ms.locfileid: "90740011"
 
 5. Elija la plantilla de **Proyecto VSIX** .
 
-6. En el cuadro **nombre** , escriba **GenerateExternalDataLists**y elija el botón **Aceptar** .
+6. En el cuadro **nombre** , escriba **GenerateExternalDataLists** y elija el botón **Aceptar** .
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] agrega el proyecto **GenerateExternalDataLists** a **Explorador de soluciones**.
 
@@ -85,7 +87,7 @@ ms.locfileid: "90740011"
 
 #### <a name="to-create-the-extension-project"></a>Para crear la extensión de proyecto
 
-1. En **Explorador de soluciones**, abra el menú contextual del nodo de la solución **GenerateExternalDataLists** , elija **Agregar**y, a continuación, elija **nuevo proyecto**.
+1. En **Explorador de soluciones**, abra el menú contextual del nodo de la solución **GenerateExternalDataLists** , elija **Agregar** y, a continuación, elija **nuevo proyecto**.
 
 2. En el cuadro de diálogo **Agregar nuevo proyecto** , expanda los nodos **Visual C#** o **Visual Basic** y, a continuación, elija el nodo **Windows** .
 
@@ -93,7 +95,7 @@ ms.locfileid: "90740011"
 
 4. En la lista de plantillas de proyecto, elija **biblioteca de clases**.
 
-5. En el cuadro **nombre** , escriba **BdcProjectItemExtension**y elija el botón **Aceptar** .
+5. En el cuadro **nombre** , escriba **BdcProjectItemExtension** y elija el botón **Aceptar** .
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] agrega el proyecto **BdcProjectItemExtension** a la solución y abre el archivo de código predeterminado Class1.
 
@@ -180,7 +182,7 @@ ms.locfileid: "90740011"
 
 7. En la lista **origen** , elija **un proyecto en la solución actual**.
 
-8. En la lista **proyecto** , elija **BdcProjectItemExtension**y, a continuación, elija el botón **Aceptar** .
+8. En la lista **proyecto** , elija **BdcProjectItemExtension** y, a continuación, elija el botón **Aceptar** .
 
 9. En la barra de menús, elija **Compilar** > **Compilar solución**.
 
@@ -215,17 +217,17 @@ ms.locfileid: "90740011"
 
 4. En la lista de plantillas de proyecto, elija **proyecto de SharePoint 2010**.
 
-5. En el cuadro **nombre** , escriba **SharePointProjectTestBDC**y elija el botón **Aceptar** .
+5. En el cuadro **nombre** , escriba **SharePointProjectTestBDC** y elija el botón **Aceptar** .
 
-6. En el Asistente para la personalización de SharePoint, escriba la dirección URL del sitio que desea usar para la depuración, elija **implementar como solución de granja de servidores**y elija el botón **Finalizar** .
+6. En el Asistente para la personalización de SharePoint, escriba la dirección URL del sitio que desea usar para la depuración, elija **implementar como solución de granja de servidores** y elija el botón **Finalizar** .
 
-7. Abra el menú contextual del proyecto SharePointProjectTestBDC, elija **Agregar**y, a continuación, elija **nuevo elemento**.
+7. Abra el menú contextual del proyecto SharePointProjectTestBDC, elija **Agregar** y, a continuación, elija **nuevo elemento**.
 
 8. En el cuadro de diálogo **Agregar newitem-SharePointProjectTestBDC** , expanda el nodo de idioma instalado, expanda el nodo **SharePoint** .
 
 9. Elija el nodo **2010** y, a continuación, elija la plantilla **modelo de conectividad a datos profesionales (solo solución de granja)** .
 
-10. En el cuadro **nombre** , escriba **TestBDCModel**y, a continuación, elija el botón **Agregar** .
+10. En el cuadro **nombre** , escriba **TestBDCModel** y, a continuación, elija el botón **Agregar** .
 
 11. Compruebe que el código de la otra instancia de Visual Studio se detiene en el punto de interrupción que estableció anteriormente en el método `Initialize` del archivo de código ProjectItemExtension.
 
@@ -239,7 +241,7 @@ ms.locfileid: "90740011"
 
 15. Cierre el explorador web.
 
-16. En la instancia de Visual Studio que tiene abierto el proyecto TestBDCModel, abra el menú contextual del nodo **TestBDCModel** en **Explorador de soluciones**y, a continuación, elija **generar lista de datos externos**.
+16. En la instancia de Visual Studio que tiene abierto el proyecto TestBDCModel, abra el menú contextual del nodo **TestBDCModel** en **Explorador de soluciones** y, a continuación, elija **generar lista de datos externos**.
 
 17. Compruebe que el código de la otra instancia de Visual Studio se detiene en el punto de interrupción que estableció en el método `GenerateExternalDataLists_Execute`. Elija la tecla **F5** o, en la barra de menús, elija **depurar**  >  **continuar** para continuar depurando el proyecto.
 
@@ -266,9 +268,9 @@ ms.locfileid: "90740011"
 
 2. En la cinta de opciones del sitio de SharePoint, elija la pestaña **lista** .
 
-3. En la pestaña **lista** , en el grupo **configuración** , elija **configuración**de la lista.
+3. En la pestaña **lista** , en el grupo **configuración** , elija **configuración** de la lista.
 
-4. En **permisos y administración**, elija **eliminar esta lista**y, a continuación, haga clic en **Aceptar** para confirmar que desea enviar la lista a la papelera de reciclaje.
+4. En **permisos y administración**, elija **eliminar esta lista** y, a continuación, haga clic en **Aceptar** para confirmar que desea enviar la lista a la papelera de reciclaje.
 
 5. Cierre el explorador web.
 
@@ -284,7 +286,7 @@ ms.locfileid: "90740011"
 
      Se abre el cuadro de diálogo **Extensiones y actualizaciones**.
 
-2. En la lista de extensiones, elija **generador de lista de datos externos**y, a continuación, elija el botón **desinstalar** .
+2. En la lista de extensiones, elija **generador de lista de datos externos** y, a continuación, elija el botón **desinstalar** .
 
 3. En el cuadro de diálogo que aparece, elija **sí** para confirmar que desea desinstalar la extensión.
 

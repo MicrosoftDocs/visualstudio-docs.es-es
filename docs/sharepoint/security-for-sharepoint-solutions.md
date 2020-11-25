@@ -1,5 +1,7 @@
 ---
 title: Seguridad para las soluciones de SharePoint | Microsoft Docs
+description: Descubra qué características incorpora Visual Studio para ayudar a mejorar la seguridad de las aplicaciones de SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6dc1449a40528670274ea5b275cca3f0a8d2f277
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3290d603de124288a5b176dfe0d2e39f5c1377f
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73983775"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95970445"
 ---
 # <a name="security-for-sharepoint-solutions"></a>Seguridad para las soluciones de SharePoint
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] incorpora las características siguientes para ayudar a mejorar la seguridad de las aplicaciones de SharePoint.
@@ -83,6 +85,6 @@ ms.locfileid: "73983775"
 
 - [Creación de aplicaciones de ASP.NET seguras: autenticación, autorización y comunicación segura](/previous-versions/msp-n-p/ff649100(v=pandp.10))
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md)

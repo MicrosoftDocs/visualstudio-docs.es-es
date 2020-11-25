@@ -1,5 +1,7 @@
 ---
 title: Plantillas de proyecto y de elemento de proyecto de SharePoint | Microsoft Docs
+description: Revise las descripciones del proyecto de SharePoint y las plantillas de elementos de proyecto disponibles y cómo se usan.
+ms.custom: SEO-VS-2020
 ms.date: 02/22/2017
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2878bd2092e000cf63c2b4fcb531a502a470203e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6cbcc4d0bc99ce7ab495e0a24591b145c58f377
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649222"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95970369"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>Plantillas de proyecto y de elemento de proyecto de SharePoint
   En las secciones siguientes se describen el proyecto de SharePoint y las plantillas de elemento de proyectos disponibles y cómo se utilizan.
@@ -33,10 +35,10 @@ ms.locfileid: "81649222"
 ## <a name="project-and-project-item-templates-overview"></a>Introducción a las plantillas de proyecto y elemento de proyecto
  Cuando se crea un nuevo proyecto de SharePoint en Visual Studio, se agrega un proyecto de SharePoint a la solución junto con todos los elementos del proyecto que requiere ese tipo de proyecto. Por ejemplo, si crea un proyecto del elemento web de Silverlight, Visual Studio crea una solución que contiene un elemento de proyecto del elemento web visual y un elemento de proyecto de la aplicación de Silverlight, junto con todos los archivos necesarios para esos elementos de proyecto. Las plantillas de elementos de proyecto se utilizan para agregar elementos a un proyecto de SharePoint existente, por ejemplo, para agregar un receptor de eventos, una columna de sito o una lista.
 
- Para obtener información sobre los aspectos básicos de SharePoint, vea [bloques de creación de SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ee534971(v=office.14)). Los usuarios avanzados pueden crear plantillas de proyecto y de elementos personalizadas de proyecto. Para obtener más información, vea [extender el sistema de proyectos de SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).
+ Para obtener información sobre los aspectos básicos de SharePoint, vea [bloques de creación de SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ee534971(v=office.14)). Los usuarios avanzados pueden crear plantillas de proyecto y de elementos personalizadas de proyecto. Para obtener más información, vea [Extensión del sistema de proyectos de SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).
 
 ## <a name="project-templates"></a>Plantillas de proyecto
- A continuación se ofrece una lista de las plantillas de proyecto de SharePoint. Para ver las plantillas de proyecto de SharePoint en Visual Studio, en el cuadro de diálogo **nuevo proyecto** , expanda el nodo **SharePoint** en **Visual C#** o en **Visual Basic**y, a continuación, elija **2010**.
+ A continuación se ofrece una lista de las plantillas de proyecto de SharePoint. Para ver las plantillas de proyecto de SharePoint en Visual Studio, en el cuadro de diálogo **nuevo proyecto** , expanda el nodo **SharePoint** en **Visual C#** o en **Visual Basic** y, a continuación, elija **2010**.
 
 ### <a name="sharepoint-2010-project"></a>Proyecto de SharePoint 2010
  El contenido de un *proyecto de sharepoint 2010* se incluye en todas las plantillas de proyecto de SharePoint. Un Proyecto de SharePoint 2010 contiene:
@@ -68,7 +70,7 @@ ms.locfileid: "81649222"
 ## <a name="project-item-templates"></a>Plantillas de elementos de proyecto
  A continuación se ofrece una lista de plantillas de elementos de proyecto de SharePoint. Las plantillas de elemento de proyecto agregan archivos a la solución de SharePoint para admitir la funcionalidad de SharePoint como columnas, listas y tipos de contenido de sitio. Por ejemplo, al agregar una columna de sitio a la solución, se agrega un proyecto de columna de sitio que contiene un archivo de definición de *Elements.xml* . Al agregar un elemento Web visual, se agrega un proyecto de elemento Web visual a la solución que contiene un archivo de *Elements.xml* , un elemento de control de usuario y un elemento de elemento Web visual.
 
- Para ver las plantillas de elementos de proyecto de SharePoint, en **Explorador de soluciones**, abra el menú contextual de un proyecto de SharePoint y, a continuación, elija **Agregar**, **nuevo elemento**. Expanda el nodo **SharePoint** en **Visual C#** o **Visual Basic**y, a continuación, elija **2010**.
+ Para ver las plantillas de elementos de proyecto de SharePoint, en **Explorador de soluciones**, abra el menú contextual de un proyecto de SharePoint y, a continuación, elija **Agregar**, **nuevo elemento**. Expanda el nodo **SharePoint** en **Visual C#** o **Visual Basic** y, a continuación, elija **2010**.
 
 ### <a name="application-page-farm-solution-only"></a>Página de aplicación (solución de granja de servidores únicamente)
  Un elemento **Página de aplicación (solo solución de granja de servidores)** permite diseñar una [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] Página Web para un sitio de SharePoint. Las páginas de aplicaciones solo se pueden utilizar en soluciones de granja de servidores. Puede agregar este elemento de proyecto únicamente a las soluciones de granja de servidores. Para obtener más información, consulte [Cómo: crear una página de aplicación y un](../sharepoint/how-to-create-an-application-page.md) tipo de [Página _layouts de aplicación](/previous-versions/office/aa979604(v=office.14)).
@@ -102,7 +104,7 @@ ms.locfileid: "81649222"
 
   El elemento de proyecto del receptor de eventos crea una carpeta de **receptor de eventos** con un solo archivo de clase que contiene controladores de eventos para todos los eventos que se especificaron al crear el proyecto en el **Asistente para la personalización de SharePoint**. La clase de receptor de eventos puede controlar los eventos que se producen en el sitio de SharePoint cuando se agregan, actualizan, eliminan o quitan elementos como archivos, campos, elementos, listas, datos adjuntos, elementos Web y flujos de trabajo. Para obtener más información, vea [Cómo: crear un receptor de eventos y un](../sharepoint/how-to-create-an-event-receiver.md) bloque de [creación: control de eventos](/previous-versions/office/developer/sharepoint-2010/ee535057(v=office.14)).
 
-### <a name="list"></a>Lista
+### <a name="list"></a>List
  Una lista es una instancia de una definición de lista de base reutilizable de SharePoint, como un calendario o una lista de tareas. Después de agregar una lista a la solución, el Diseñador de listas permite agregar columnas de sitio a la lista y crear columnas de lista personalizada. Esto incluye columnas de sitio de tipos de contenido. Puede especificar la *vista* de la lista, que determina las columnas que aparecerán en la lista. Para obtener más información, consulte [Tutorial: crear una columna de sitio, tipo de contenido y lista para SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) y [bloque de creación: listas y bibliotecas de documentos](/previous-versions/office/developer/sharepoint-2010/ee534985(v=office.14)).
 
 ### <a name="module"></a>Módulo
@@ -140,6 +142,6 @@ ms.locfileid: "81649222"
 ### <a name="web-part"></a>Elemento web
  Un *elemento Web* es un control del lado servidor que se ejecuta dentro de un tipo especial de página denominada página de elementos Web. Hay bloques de compilación de las páginas que aparecen en un sitio de SharePoint. El elemento de elemento web proporciona archivos que permiten diseñar un elemento web para un sitio de SharePoint. Para obtener más información, vea [Cómo: crear un elemento Web de SharePoint y un](../sharepoint/how-to-create-a-sharepoint-web-part.md) bloque de [creación: elementos Web](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14)).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md)
 - [Productos y Tecnologías de SharePoint](/previous-versions/office/developer/sharepoint-2010/dd776256(v=office.12))

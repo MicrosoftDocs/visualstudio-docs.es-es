@@ -1,6 +1,8 @@
 ---
 title: 'Tutorial: importar un flujo de trabajo reutilizable de SharePoint Designer | Microsoft Docs'
 titleSuffix: ''
+description: En este tutorial, importe un flujo de trabajo reutilizable creado en SharePoint Designer en un proyecto de flujo de trabajo de Visual Studio SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8e6680c6ff95808db56e5bb32e02e0775c935011
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 1421b061c50277177b5a30f0357725e9a042f3bd
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298031"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95970185"
 ---
 # <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow"></a>Tutorial: importar un flujo de trabajo reutilizable de SharePoint Designer
 
@@ -71,7 +73,7 @@ ms.locfileid: "92298031"
 
 4. En el cuadro de diálogo **nuevo** , seleccione **plantillas de SharePoint** en la lista del panel izquierdo y elija **sitio de grupo** en la lista del panel derecho.
 
-5. En el cuadro **especifique la ubicación del sitio web** , reemplace el **subsitio** de Word de la dirección URL por **SPD1**y, a continuación, elija el botón **Aceptar** .
+5. En el cuadro **especifique la ubicación del sitio web** , reemplace el **subsitio** de Word de la dirección URL por **SPD1** y, a continuación, elija el botón **Aceptar** .
 
     Se abrirá el nuevo subsitio en SharePoint Designer. Cierre esta instancia de SharePoint Designer y vuelva a la primera instancia (el sitio de nivel superior).
 
@@ -90,7 +92,7 @@ ms.locfileid: "92298031"
 
 3. En el cuadro **nombre** , escriba **flujo de trabajo de tarea SPD**.
 
-4. En la lista **tipo de contenido** , elija **tarea**y, a continuación, elija el botón **Aceptar** .
+4. En la lista **tipo de contenido** , elija **tarea** y, a continuación, elija el botón **Aceptar** .
 
      El flujo de trabajo se abre en el diseñador de flujo de trabajo de SharePoint Designer.
 
@@ -157,9 +159,9 @@ ms.locfileid: "92298031"
 
 1. En [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , en la barra de menús, elija **archivo**  >  **nuevo**  >  **proyecto**.
 
-2. En el cuadro de diálogo **nuevo proyecto** , expanda el nodo **SharePoint** en **Visual C#** o en **Visual Basic**y, a continuación, elija el nodo **2010** .
+2. En el cuadro de diálogo **nuevo proyecto** , expanda el nodo **SharePoint** en **Visual C#** o en **Visual Basic** y, a continuación, elija el nodo **2010** .
 
-3. En el panel **plantillas** , elija la plantilla de **flujo de trabajo importar reutilizable de SharePoint 2010** , deje el nombre del proyecto como **WorkflowImportProject1**y, a continuación, elija el botón **Aceptar** .
+3. En el panel **plantillas** , elija la plantilla de **flujo de trabajo importar reutilizable de SharePoint 2010** , deje el nombre del proyecto como **WorkflowImportProject1** y, a continuación, elija el botón **Aceptar** .
 
     Aparece el Asistente para personalización de SharePoint.
 
@@ -184,11 +186,11 @@ ms.locfileid: "92298031"
 
 9. En el archivo de *Elements.xml* , elimine `InstantiationURL="_layouts/IniErkflIP.sspx"` .
 
-10. En **Explorador de soluciones**, elija **WorkflowImportProject1**y, a continuación, en la barra de menús, elija **proyecto**  >  **establecer como proyecto de inicio** para establecer **WorkflowImportProject1** como elemento de inicio.
+10. En **Explorador de soluciones**, elija **WorkflowImportProject1** y, a continuación, en la barra de menús, elija **proyecto**  >  **establecer como proyecto de inicio** para establecer **WorkflowImportProject1** como elemento de inicio.
 
      Esto muestra la lista inmediatamente al depurar el proyecto.
 
-11. Dado que la plantilla de **flujo de trabajo importar reutilizable de SharePoint 2010** no importa los valores de propiedad de Asociación para el flujo de trabajo importado, debe escribirlos. Para ello, siga estos pasos:
+11. Dado que la plantilla de **flujo de trabajo importar reutilizable de SharePoint 2010** no importa los valores de propiedad de Asociación para el flujo de trabajo importado, debe escribirlos. Para hacerlo:
 
     1. En **Explorador de soluciones**, elija el nodo **SPD_Workflow_TestFT** .
 
@@ -235,7 +237,7 @@ ms.locfileid: "92298031"
 
      Se abrirá el cuadro **de diálogo tareas-nuevo elemento** .
 
-4. En el cuadro **título** , escriba **nueva tarea**y elija el botón **Guardar** .
+4. En el cuadro **título** , escriba **nueva tarea** y elija el botón **Guardar** .
 
 5. En la pestaña **herramientas de lista** , elija el botón **lista** y, a continuación, elija el botón **Mostrar configuración** .
 
@@ -249,20 +251,20 @@ ms.locfileid: "92298031"
 
 8. En la lista **flujo de trabajo** , elija **WorkflowImportProject1-SPD Workflow test**.
 
-9. En el cuadro **nombre** , escriba **prueba de flujo de trabajo SPD**y elija el botón **Aceptar** .
+9. En el cuadro **nombre** , escriba **prueba de flujo de trabajo SPD** y elija el botón **Aceptar** .
 
 10. En la barra de inicio rápido, elija la lista de **tareas** .
 
-11. Elija la flecha situada junto a **nueva tarea**y, a continuación, en la lista, elija **flujos de trabajo**.
+11. Elija la flecha situada junto a **nueva tarea** y, a continuación, en la lista, elija **flujos de trabajo**.
 
-12. En la sección **iniciar un nuevo flujo de trabajo** , elija el vínculo de **prueba de flujo de trabajo SPD**y, a continuación, elija el botón **iniciar** para iniciar el flujo de trabajo.
+12. En la sección **iniciar un nuevo flujo de trabajo** , elija el vínculo de **prueba de flujo de trabajo SPD** y, a continuación, elija el botón **iniciar** para iniciar el flujo de trabajo.
 
     > [!NOTE]
     > Como alternativa, puede asociar automáticamente un flujo de trabajo a una lista ejecutando el Asistente para configuración de flujo de trabajo y estableciendo el flujo de trabajo en asociación automática.
 
      Observe que el flujo de trabajo realiza dos acciones: su nombre aparece en la columna **asignado a** de la tarea y aparece un anuncio en la lista **anuncios** .
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Importación de elementos desde un sitio de SharePoint existente](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
 - [Desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md)
 - [Creación de controles reutilizables para elementos web o páginas de aplicación](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)

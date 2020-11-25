@@ -1,5 +1,7 @@
 ---
 title: Consideraciones sobre las soluciones en espacio aislado | Microsoft Docs
+description: Explore soluciones en espacio aislado, que son una característica de Microsoft SharePoint que permite a los usuarios de la colección de sitios cargar sus propias soluciones de código personalizado.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3f6345e7627549c672aa28fac8cba5f6d9658a23
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17b310a3f992f80b04ad14bb6e038e05b009a4af
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90842566"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95970468"
 ---
 # <a name="sandboxed-solution-considerations"></a>Consideraciones sobre las soluciones de espacio aislado
   Las *soluciones en espacio aislado* son una característica de Microsoft SharePoint 2010 que permite a los usuarios de la colección de sitios cargar sus propias soluciones de código personalizado. Una solución en espacio aislado común es que los usuarios carguen sus propios elementos web.
@@ -69,7 +71,7 @@ ms.locfileid: "90842566"
  En WSS 3,0, las soluciones solo se pueden implementar en el nivel de granja. Esto significaba que podrían implementarse soluciones potencialmente dañinas o desestabilizadores que afectaran a toda la granja de servidores web y a todas las demás colecciones de sitios y aplicaciones que se ejecutan en él. Sin embargo, mediante el uso de soluciones en espacio aislado, puede implementar sus soluciones en una subárea de la granja, una colección de sitios específica. Para proporcionar protección adicional, el ensamblado de la solución no se carga en el [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] proceso principal (*w3wp.exe*). En su lugar, se carga en un proceso independiente (*SPUCWorkerProcess.exe*). Este proceso se supervisa e implementa cuotas y limitaciones para proteger la granja de soluciones en espacio aislado que realizan actividades dañinas, como la ejecución de bucles estrechos que consumen ciclos de CPU.
 
 ## <a name="site-collection-solution-gallery"></a>Galería de soluciones de colección de sitios
- [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] 2010 tiene una característica que se conoce como "Galería de soluciones de colección de sitios". Puede tener acceso a esta característica desde la página Administración central de SharePoint 2010 o abriendo el menú **acciones del sitio** , eligiendo **configuración del sitio**y, a continuación, eligiendo el vínculo **soluciones** en  **galerías** en el sitio de SharePoint. Las galerías de soluciones son repositorios de soluciones que permiten a los administradores de la colección de sitios administrar soluciones en sus colecciones de sitios.
+ [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] 2010 tiene una característica que se conoce como "Galería de soluciones de colección de sitios". Puede tener acceso a esta característica desde la página Administración central de SharePoint 2010 o abriendo el menú **acciones del sitio** , eligiendo **configuración del sitio** y, a continuación, eligiendo el vínculo **soluciones** en  **galerías** en el sitio de SharePoint. Las galerías de soluciones son repositorios de soluciones que permiten a los administradores de la colección de sitios administrar soluciones en sus colecciones de sitios.
 
  La galería de soluciones es una biblioteca de documentos almacenada en el Web raíz del sitio de SharePoint. La galería de soluciones reemplaza a las plantillas de sitio y admite paquetes de soluciones. Cuando se carga un archivo de paquete de solución de SharePoint (*. wsp*), se procesa como una solución en espacio aislado.
 

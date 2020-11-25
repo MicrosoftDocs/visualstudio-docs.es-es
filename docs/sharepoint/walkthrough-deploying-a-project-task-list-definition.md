@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: implementar una definición de Lista de tareas de proyecto | Microsoft Docs'
+description: En este tutorial, se usa Visual Studio para crear, personalizar, depurar e implementar una lista de SharePoint para realizar el seguimiento de las tareas del proyecto.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b5639fe7a1b35dea41b14be3730986ad7c7309b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0be8eed2dc41ad433c0e0514dfd34e3c6e3d7193
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015761"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95970423"
 ---
 # <a name="walkthrough-deploy-a-project-task-list-definition"></a>Tutorial: implementar una definición de lista de tareas de proyecto
 
@@ -25,7 +27,7 @@ En este tutorial se muestra cómo usar [!INCLUDE[vs_dev11_long](../sharepoint/in
 
 [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
 
 - Ediciones compatibles de Microsoft Windows y SharePoint.
 
@@ -37,7 +39,7 @@ Cree un proyecto de lista de SharePoint y asocie la definición de lista con las
 
 1. Abra el cuadro de diálogo **nuevo proyecto** , expanda el nodo **SharePoint** y, a continuación, elija el nodo **2010** .
 
-2. En el panel **plantillas** , elija la plantilla de **proyecto de SharePoint 2010** , asigne al proyecto el nombre **ProjectTaskList**y, a continuación, elija el botón **Aceptar** .
+2. En el panel **plantillas** , elija la plantilla de **proyecto de SharePoint 2010** , asigne al proyecto el nombre **ProjectTaskList** y, a continuación, elija el botón **Aceptar** .
 
      Aparece el **Asistente para la personalización de SharePoint** .
 
@@ -51,7 +53,7 @@ Cree un proyecto de lista de SharePoint y asocie la definición de lista con las
 
 6. En el cuadro **¿Qué nombre desea mostrar en la lista?** , escriba **proyecto lista de tareas**.
 
-7. Elija el botón **de opción crear una lista que no se puede personalizar según un tipo de lista de** opciones y, a continuación, en la lista, elija **tareas**y, después, elija el botón **Finalizar** .
+7. Elija el botón **de opción crear una lista que no se puede personalizar según un tipo de lista de** opciones y, a continuación, en la lista, elija **tareas** y, después, elija el botón **Finalizar** .
 
      La lista, la característica y el paquete aparecen en **Explorador de soluciones**.
 
@@ -59,7 +61,7 @@ Cree un proyecto de lista de SharePoint y asocie la definición de lista con las
 
 En la lista de tareas, puede Agregar un receptor de eventos que establezca automáticamente la fecha de vencimiento y la descripción de la tarea. El procedimiento siguiente agrega un controlador de eventos simple a la instancia de lista como un receptor de eventos.
 
-1. Abra el menú contextual del nodo del proyecto, elija **Agregar**y, a continuación, elija **nuevo elemento**.
+1. Abra el menú contextual del nodo del proyecto, elija **Agregar** y, a continuación, elija **nuevo elemento**.
 
 2. En la lista de plantillas de SharePoint, elija la plantilla de **receptor de eventos** y asígnele el nombre **ProjectTaskListEventReceiver**.
 
@@ -69,7 +71,7 @@ En la lista de tareas, puede Agregar un receptor de eventos que establezca autom
 
 4. En la lista **qué elemento debe ser el origen del evento** , elija **tareas**.
 
-5. En la lista de eventos que se van a controlar, active la casilla situada junto a **un elemento que se ha agregado**y, a continuación, elija el botón **Finalizar** .
+5. En la lista de eventos que se van a controlar, active la casilla situada junto a **un elemento que se ha agregado** y, a continuación, elija el botón **Finalizar** .
 
      Se agrega un nuevo nodo de receptor de eventos al proyecto con un archivo de código denominado **ProjectTaskListEventReceiver**.
 
@@ -84,7 +86,7 @@ Al crear una solución de SharePoint, Visual Studio crea automáticamente caract
 
 1. En **Explorador de soluciones**, expanda **características**.
 
-2. Abra el menú contextual de **Feature1**y, a continuación, elija **Diseñador de vistas**.
+2. Abra el menú contextual de **Feature1** y, a continuación, elija **Diseñador de vistas**.
 
 3. En el cuadro **título** , escriba **proyecto lista de tareas característica**.
 
@@ -96,7 +98,7 @@ Al crear una solución de SharePoint, Visual Studio crea automáticamente caract
 
 Al crear un proyecto de SharePoint, Visual Studio agrega automáticamente las características que contienen los elementos de proyecto predeterminados al paquete. Puede personalizar la configuración de la lista de tareas del proyecto para el sitio de SharePoint mediante el diseñador de paquetes.
 
-1. En **SolutionExplorer**, abra el menú contextual del **paquete**y, a continuación, elija **Diseñador de vistas**.
+1. En **SolutionExplorer**, abra el menú contextual del **paquete** y, a continuación, elija **Diseñador de vistas**.
 
 2. En el cuadro **nombre** , escriba **ProjectTaskListPackage**.
 
@@ -168,11 +170,11 @@ Visual Studio recicla el grupo de aplicaciones de IIS, retira cualquier versión
 
 Puede obtener más información sobre cómo personalizar e implementar soluciones de SharePoint en los temas siguientes:
 
-- [Tutorial: crear una columna de sitio, un tipo de contenido y una lista para SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)
+- [Tutorial: Creación de una columna, un tipo de contenido y una lista de sitios para SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)
 
-- [Cómo: crear un receptor de eventos](../sharepoint/how-to-create-an-event-receiver.md)
+- [Cómo: para crear un receptor de eventos](../sharepoint/how-to-create-an-event-receiver.md)
 
 - [Windows PowerShell para SharePoint Server 2010](/powershell/module/sharepoint-server)
 
-## <a name="see-also"></a>Consulte también
-[Empaquetar e implementar soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
+## <a name="see-also"></a>Vea también
+[Empaquetado e implementación de soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

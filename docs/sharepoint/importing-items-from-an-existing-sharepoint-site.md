@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9c2703bfdd4f47281a1fc19060cb69f8b312e7d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017028"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970515"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>Importación de elementos desde un sitio de SharePoint existente
   La plantilla de proyecto Importar paquete de solución de SharePoint permite reutilizar elementos, como tipos de contenido y campos de sitios de SharePoint existentes en una nueva [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] solución de SharePoint. Aunque puede ejecutar la mayoría de las soluciones importadas sin modificaciones, hay algunas restricciones y aspectos a tener en cuenta, sobre todo si se modifican los elementos después de importarlos.

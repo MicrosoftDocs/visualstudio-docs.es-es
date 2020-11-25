@@ -1,6 +1,8 @@
 ---
 title: 'Tutorial: importar elementos de un sitio de SharePoint existente | Microsoft Docs'
 titleSuffix: ''
+description: En este tutorial, importar elementos de un sitio de SharePoint existente en un proyecto de Visual Studio SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c5f9fd5e3cc9b0df5feb60149e58e895996bb1f0
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 7eeff880538d98f997f48f82c49d01045e834031
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298640"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95970138"
 ---
 # <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>Tutorial: Importación de elementos desde un sitio de SharePoint existente
   En este tutorial se muestra cómo importar elementos de un sitio de SharePoint existente en un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] proyecto de SharePoint.
@@ -56,7 +58,7 @@ ms.locfileid: "92298640"
 
 5. Una vez creado el sitio, navegue en el explorador de nuevo al sitio principal, http://<em>nombre del sistema</em>/SitePages/Home.aspx.
 
-6. De nuevo, cree un subsitio en blanco fuera del sitio principal de SharePoint; para ello, abra el menú **acciones del sitio** , elija **nuevo sitio**y, a continuación, elija el tipo de **sitio en blanco** .
+6. De nuevo, cree un subsitio en blanco fuera del sitio principal de SharePoint; para ello, abra el menú **acciones del sitio** , elija **nuevo sitio** y, a continuación, elija el tipo de **sitio en blanco** .
 
 7. En el cuadro **título** , escriba **site Column Test 2**; en el cuadro **nombre de dirección URL** , escriba **columntest2**; Deje las demás opciones con sus valores predeterminados. y, a continuación, elija el botón **crear** .
 
@@ -84,7 +86,7 @@ ms.locfileid: "92298640"
 
 2. En la sección **acciones del sitio** de la página Configuración del sitio, elija el vínculo **Guardar sitio como plantilla** .
 
-3. En el **cuadro Nombre de archivo** , escriba **ExampleSite**y, en el cuadro Nombre de **plantilla** , escriba sitio de **ejemplo**.
+3. En el **cuadro Nombre de archivo** , escriba **ExampleSite** y, en el cuadro Nombre de **plantilla** , escriba sitio de **ejemplo**.
 
 4. En este ejemplo, deje desactivada la casilla **incluir contenido** .
 
@@ -105,7 +107,7 @@ ms.locfileid: "92298640"
 
 1. En [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , en la barra de menús, elija **archivo**  >  **nuevo**  >  **proyecto** para mostrar el cuadro de diálogo **nuevo proyecto** . Si el IDE está establecido para usar la configuración de desarrollo de Visual Basic, en la barra de menús, elija **archivo**  >  **nuevo proyecto**.
 
-2. Expanda el nodo **SharePoint** en **Visual C#** o **Visual Basic**y, a continuación, elija el nodo **2010** .
+2. Expanda el nodo **SharePoint** en **Visual C#** o **Visual Basic** y, a continuación, elija el nodo **2010** .
 
 3. Elija la plantilla **importar paquete de solución de SharePoint 2010** en el panel **plantillas** , deje el nombre del proyecto como WspImportProject1 y, a continuación, elija el botón **Aceptar** .
 
@@ -120,7 +122,7 @@ ms.locfileid: "92298640"
    > [!NOTE]
    > Si elige el botón **Finalizar** en esta página, se importarán todos los elementos disponibles en el archivo *. wsp* .
 
-7. En el cuadro **seleccionar elementos para importar** , desactive todas las casillas de la lista excepto **columna de prueba**y, a continuación, elija el botón **Finalizar** .
+7. En el cuadro **seleccionar elementos para importar** , desactive todas las casillas de la lista excepto **columna de prueba** y, a continuación, elija el botón **Finalizar** .
 
     Dado que la lista contiene muchos elementos, puede elegir la tecla **Ctrl** + **a** teclas para elegir todos los elementos de la lista, elegir la tecla barra espaciadora para desactivar todas las casillas y, a continuación, activar solo la casilla situada junto al elemento de la **columna de prueba** .
 
@@ -141,7 +143,7 @@ ms.locfileid: "92298640"
 
      Observe que en la lista aparece la columna de sitio personalizado que importó desde el primer sitio de SharePoint.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Importación de elementos desde un sitio de SharePoint existente](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
 - [Desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md)
 - [Creación de controles reutilizables para elementos web o páginas de aplicación](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)

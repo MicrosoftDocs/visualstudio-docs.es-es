@@ -1,6 +1,8 @@
 ---
 title: 'Tutorial: extender Explorador de servidores para mostrar elementos web | Microsoft Docs'
 titleSuffix: ''
+description: En este tutorial, extienda Explorador de servidores para que muestre la galería de elementos Web en cada sitio de SharePoint conectado.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52dc3f418c3e86e126cbcf196fca2cf73fad35b2
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 55950d8498b436d38d2145c2692556330718883e
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583858"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95970212"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Tutorial: extender Explorador de servidores para mostrar elementos Web
   En Visual Studio, puede usar el nodo **conexiones de SharePoint** de **Explorador de servidores** para ver los componentes de los sitios de SharePoint. Sin embargo, **Explorador de servidores** no muestra algunos componentes de forma predeterminada. En este tutorial, extenderá **Explorador de servidores** para que muestre la galería de elementos Web en cada sitio de SharePoint conectado.
@@ -43,7 +45,7 @@ ms.locfileid: "91583858"
 > [!NOTE]
 > Para obtener una versión alternativa de este tutorial que usa el modelo de objetos de cliente para SharePoint en lugar de su modelo de objetos de servidor, vea [Tutorial: llamar al modelo de objetos de cliente de SharePoint en una extensión de explorador de servidores](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
  Necesitará los componentes siguientes en el equipo de desarrollo para completar este tutorial:
 
 - Ediciones compatibles de Windows, SharePoint y Visual Studio.
@@ -52,7 +54,7 @@ ms.locfileid: "91583858"
 
   El conocimiento de los siguientes conceptos es útil, aunque no necesario, para completar el tutorial.
 
-- Usar el modelo de objetos de servidor para SharePoint. Para obtener más información, vea [usar el modelo de objetos del lado servidor de SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ee538251(v=office.14)).
+- Usar el modelo de objetos de servidor para SharePoint. Para obtener más información, vea [usar el modelo de objetos de SharePoint Foundation Server-Side](/previous-versions/office/developer/sharepoint-2010/ee538251(v=office.14)).
 
 - Elementos web en las soluciones de SharePoint. Para obtener más información, vea [información general sobre elementos Web](/previous-versions/office/ms432401(v=office.14)).
 
@@ -80,19 +82,19 @@ ms.locfileid: "91583858"
 
 4. En la parte superior del cuadro de diálogo, elija **.NET Framework 4,5** en la lista de versiones de la .NET Framework.
 
-5. Elija la plantilla de **Proyecto VSIX** , asigne al proyecto el nombre **WebPartNode**y, a continuación, elija el botón **Aceptar** .
+5. Elija la plantilla de **Proyecto VSIX** , asigne al proyecto el nombre **WebPartNode** y, a continuación, elija el botón **Aceptar** .
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] agrega el proyecto **WebPartNode** a **Explorador de soluciones**.
 
 #### <a name="to-create-the-extension-project"></a>Para crear la extensión de proyecto
 
-1. En **Explorador de soluciones**, abra el menú contextual del nodo de la solución, elija **Agregar**y, a continuación, elija **nuevo proyecto**.
+1. En **Explorador de soluciones**, abra el menú contextual del nodo de la solución, elija **Agregar** y, a continuación, elija **nuevo proyecto**.
 
 2. En el cuadro de diálogo **nuevo proyecto** , expanda el nodo **Visual C#** o **Visual Basic** nodo y, a continuación, elija el nodo **Windows** .
 
 3. En la parte superior del cuadro de diálogo, elija **.NET Framework 4,5** en la lista de versiones de la .NET Framework.
 
-4. En la lista de plantillas de proyecto, elija **biblioteca de clases**, asigne al proyecto el nombre **ExtensiónNodoElementoWeb**y elija el botón **Aceptar** .
+4. En la lista de plantillas de proyecto, elija **biblioteca de clases**, asigne al proyecto el nombre **ExtensiónNodoElementoWeb** y elija el botón **Aceptar** .
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] agrega el proyecto **ExtensiónNodoElementoWeb** a la solución y abre el archivo de código predeterminado Class1.
 
@@ -100,13 +102,13 @@ ms.locfileid: "91583858"
 
 #### <a name="to-create-the-sharepoint-commands-project"></a>Para crear el proyecto Comandos de SharePoint
 
-1. En **Explorador de soluciones**, abra el menú contextual del nodo de la solución, elija **Agregar**y, a continuación, elija **nuevo proyecto**.
+1. En **Explorador de soluciones**, abra el menú contextual del nodo de la solución, elija **Agregar** y, a continuación, elija **nuevo proyecto**.
 
 2. En el cuadro de diálogo  **nuevo proyecto** , expanda el nodo **Visual C#** o **Visual Basic** nodo y, a continuación, elija el nodo **Windows** .
 
 3. En la parte superior del cuadro de diálogo, elija **.NET Framework 3,5** en la lista de versiones de la .NET Framework.
 
-4. En la lista de plantillas de proyecto, elija **biblioteca de clases**, asigne al proyecto el nombre **WebPartCommands**y elija el botón **Aceptar** .
+4. En la lista de plantillas de proyecto, elija **biblioteca de clases**, asigne al proyecto el nombre **WebPartCommands** y elija el botón **Aceptar** .
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] agrega el proyecto **WebPartCommands** a la solución y abre el archivo de código predeterminado Class1.
 
@@ -149,7 +151,7 @@ ms.locfileid: "91583858"
 
 1. En el proyecto WebPartCommands, agregue un archivo de código denominado WebPartCommands.
 
-2. En **Explorador de soluciones**, abra el menú contextual del nodo de proyecto **WebPartCommands** , elija **Agregar**y, a continuación, seleccione **elemento existente**.
+2. En **Explorador de soluciones**, abra el menú contextual del nodo de proyecto **WebPartCommands** , elija **Agregar** y, a continuación, seleccione **elemento existente**.
 
 3. En el cuadro de diálogo **Agregar elemento existente** , vaya a la carpeta que contiene los archivos de código del proyecto ExtensiónNodoElementoWeb y, a continuación, elija los archivos de código WebPartNodeInfo y WebPartCommandIds.
 
@@ -188,7 +190,7 @@ ms.locfileid: "91583858"
 
 4. En la parte superior del diseñador, elija la flecha situada junto al comando de menú **Agregar recurso** y, a continuación, elija **Agregar nuevo icono** en el menú que aparece.
 
-5. En el cuadro de diálogo **Agregar nuevo recurso** , asigne al nuevo icono el nombre **WebPartsNode**y, a continuación, elija el botón **Agregar** .
+5. En el cuadro de diálogo **Agregar nuevo recurso** , asigne al nuevo icono el nombre **WebPartsNode** y, a continuación, elija el botón **Agregar** .
 
      El icono nuevo se abre en el **Editor de imágenes**.
 
@@ -196,11 +198,11 @@ ms.locfileid: "91583858"
 
 7. Abra el menú contextual de la versión 32x32 del icono y, a continuación, elija **eliminar tipo de imagen**.
 
-8. Repita los pasos del 5 al 8 para agregar un segundo icono a los recursos del proyecto y asignar un nombre al **elemento Web**de este icono.
+8. Repita los pasos del 5 al 8 para agregar un segundo icono a los recursos del proyecto y asignar un nombre al **elemento Web** de este icono.
 
 9. En **Explorador de soluciones**, en la carpeta **recursos** del proyecto **ExtensiónNodoElementoWeb** , abra el menú contextual de **WebPartsNode. ico**.
 
-10. En la ventana **propiedades** , elija la flecha situada junto a **acción de compilación**y, a continuación, elija **recurso incrustado** en el menú que aparece.
+10. En la ventana **propiedades** , elija la flecha situada junto a **acción de compilación** y, a continuación, elija **recurso incrustado** en el menú que aparece.
 
 11. Repita los dos últimos pasos para **WebPart. ico**.
 
@@ -308,9 +310,9 @@ ms.locfileid: "91583858"
 
 11. En la lista **origen** , elija el elemento de la lista **un proyecto en la solución actual** .
 
-12. En la lista **proyecto** , elija **WebPartCommands**y elija el botón **Aceptar** .
+12. En la lista **proyecto** , elija **WebPartCommands** y elija el botón **Aceptar** .
 
-13. En la barra de menús, **Elija compilar compilar**  >  **solución**y, a continuación, asegúrese de que la solución se compila sin errores.
+13. En la barra de menús, **Elija compilar compilar**  >  **solución** y, a continuación, asegúrese de que la solución se compila sin errores.
 
 14. Asegúrese de que la carpeta de salida de compilación del proyecto WebPartNode contiene ahora el archivo WebPartNode. vsix.
 
@@ -335,7 +337,7 @@ ms.locfileid: "91583858"
 
 2. Siga estos pasos si el sitio de SharePoint que desea usar para las pruebas no aparece en el nodo **conexiones de SharePoint** en **Explorador de servidores**:
 
-    1. En **Explorador de servidores**, abra el menú contextual para **las conexiones de SharePoint**y, a continuación, elija **Agregar conexión**.
+    1. En **Explorador de servidores**, abra el menú contextual para **las conexiones de SharePoint** y, a continuación, elija **Agregar conexión**.
 
     2. En el cuadro de diálogo **Agregar conexión de SharePoint** , escriba la dirección URL del sitio de SharePoint al que desea conectarse y, a continuación, elija el botón **Aceptar** .
 
@@ -364,7 +366,7 @@ ms.locfileid: "91583858"
 
      Se abre el cuadro de diálogo **Extensiones y actualizaciones**.
 
-2. En la lista de extensiones, elija **extensión de nodo de la galería de elementos Web para explorador de servidores**y, a continuación, elija el botón **desinstalar** .
+2. En la lista de extensiones, elija **extensión de nodo de la galería de elementos Web para explorador de servidores** y, a continuación, elija el botón **desinstalar** .
 
 3. En el cuadro de diálogo que aparece, elija el botón **sí** para confirmar que desea desinstalar la extensión y, a continuación, elija el botón **reiniciar ahora** para completar la desinstalación.
 

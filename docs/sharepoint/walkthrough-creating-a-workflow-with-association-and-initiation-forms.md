@@ -1,5 +1,7 @@
 ---
 title: Crear flujo de trabajo con formularios de asociación e iniciación
+description: En este tutorial de SharePoint, cree un flujo de trabajo secuencial básico que incorpore el uso de los formularios de asociación e iniciación.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,14 +19,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6f257dfed2fe439c5ab22ab9951b6258116c6567
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 62501a23695b81ee0437d3210dced7c81f9b054e
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017132"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95970437"
 ---
-# <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Tutorial: creación de un flujo de trabajo con formularios de asociación e iniciación
+# <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Tutorial: Creación de un flujo de trabajo con formularios de asociación e iniciación
   En este tutorial se muestra cómo crear un flujo de trabajo secuencial básico que incorpora el uso de los formularios de asociación e iniciación. Se trata de formularios ASPX que permiten agregar parámetros a un flujo de trabajo cuando el administrador de SharePoint lo asocia primero (el formulario de asociación) y cuando el usuario inicia el flujo de trabajo (el formulario de inicio).
 
  En este tutorial se describe un escenario en el que un usuario desea crear un flujo de trabajo de aprobación para los informes de gastos que tiene los siguientes requisitos:
@@ -68,7 +70,7 @@ ms.locfileid: "86017132"
 
 1. En la barra de menús, elija **archivo**  >  **nuevo**  >  **proyecto** para mostrar el cuadro de diálogo **nuevo proyecto** .
 
-2. Expanda el nodo **SharePoint** en **Visual C#** o **Visual Basic**y, a continuación, elija el nodo **2010** .
+2. Expanda el nodo **SharePoint** en **Visual C#** o **Visual Basic** y, a continuación, elija el nodo **2010** .
 
 3. En el panel **plantillas** , elija la plantilla de proyecto de **proyecto de SharePoint 2010** .
 
@@ -259,7 +261,7 @@ ms.locfileid: "86017132"
 
     - Abra el menú contextual de la actividad **ifelse** , elija **copiar**, abra el menú contextual de la línea bajo la actividad **onWorkflowActivated1** en el diseñador de flujo de trabajo y, a continuación, elija **pegar**.
 
-    - Arrastre la actividad **ifelse** desde el **cuadro de herramientas**y conéctela a la línea bajo la actividad **onWorkflowActiviated1** en el diseñador de flujo de trabajo.
+    - Arrastre la actividad **ifelse** desde el **cuadro de herramientas** y conéctela a la línea bajo la actividad **onWorkflowActiviated1** en el diseñador de flujo de trabajo.
 
 4. En el cuadro de herramientas, expanda el nodo **flujo de trabajo de SharePoint** y busque la actividad **CreateTask** .
 
@@ -289,7 +291,7 @@ ms.locfileid: "86017132"
 
     - Abra el menú contextual de la actividad **LogToHistoryListActivity** , elija **copiar**, abra el menú contextual del área otras **actividades de colocación aquí** en **IfElseActivity1** en el diseñador de flujo de trabajo y, a continuación, elija **pegar**.
 
-    - Arrastre la actividad **LogToHistoryListActivity** desde el **cuadro de herramientas**y colóquela en el área otras **actividades de colocación aquí** dentro de **IfElseActivity1**.
+    - Arrastre la actividad **LogToHistoryListActivity** desde el **cuadro de herramientas** y colóquela en el área otras **actividades de colocación aquí** dentro de **IfElseActivity1**.
 
 ## <a name="add-code-to-the-workflow"></a>Agregar código al flujo de trabajo
  A continuación, agregue código al flujo de trabajo para proporcionarle la funcionalidad.
@@ -426,7 +428,7 @@ ms.locfileid: "86017132"
 
      Esto muestra el formulario de inicio del flujo de trabajo. (Tenga en cuenta que el valor mostrado en el cuadro **límite de aprobación automática** es de solo lectura porque se escribió en el formulario de asociación).
 
-7. En el cuadro de texto **total de gastos** , escriba **1600**y, a continuación, elija el botón **Iniciar flujo de trabajo** .
+7. En el cuadro de texto **total de gastos** , escriba **1600** y, a continuación, elija el botón **Iniciar flujo de trabajo** .
 
      Se volverá a mostrar la lista de **documentos compartidos** . Una nueva columna denominada **ExpenseReportWorkflow** con el valor **completado** se agrega al elemento que acaba de iniciar el flujo de trabajo.
 
@@ -445,6 +447,6 @@ ms.locfileid: "86017132"
 
 - Para obtener más información acerca de los flujos de trabajo de SharePoint, vea [flujos de trabajo en Windows SharePoint Services](/previous-versions/office/developer/sharepoint-2010/ms416312(v=office.14)).
 
-## <a name="see-also"></a>Consulte también
-- [Crear soluciones de flujo de trabajo de SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)
-- [Tutorial: agregar una página de aplicación a un flujo de trabajo](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)
+## <a name="see-also"></a>Vea también
+- [Creación de soluciones de flujo de trabajo de SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)
+- [Tutorial: Adición de una página de aplicación a un flujo de trabajo](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)

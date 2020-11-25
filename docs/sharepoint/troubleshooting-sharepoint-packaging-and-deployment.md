@@ -1,5 +1,7 @@
 ---
 title: Solución de problemas de empaquetado e implementación de SharePoint | Microsoft Docs
+description: Comprenda y solucione diversos problemas que pueden surgir al empaquetar e implementar soluciones de SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/22/2017
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7eafac8015b7a2c51279b7a2d664f0e094d2397b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07ce649a22573041768bfc316f65bfcdf7577b98
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72981934"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95969928"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>Solucionar problemas de empaquetado e implementación de SharePoint
   En este tema se tratan diversos problemas que pueden producirse al empaquetar e implementar soluciones de SharePoint.
@@ -40,7 +42,7 @@ ms.locfileid: "72981934"
  Puede agregar la salida del proyecto a un paquete a través del Diseñador de paquetes. Sin embargo, cuando agregue la salida del proyecto, asegúrese de que la plataforma del proyecto coincide con la plataforma de la solución de SharePoint. Se recomienda usar el destino de la plataforma **any CPU** para los ensamblados que desee implementar en un servidor de SharePoint. Para obtener más información, vea la [Página compilar, el diseñador de proyectos &#40;Visual Basic&#41;](../ide/reference/compile-page-project-designer-visual-basic.md) y el [cuadro de diálogo Configuración avanzada del compilador &#40;Visual Basic ](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)&#41;.
 
 ## <a name="validation-warnings-and-errors"></a>Advertencias y errores de validación
- Las herramientas de desarrollo de SharePoint de Visual Studio realizan pasos de validación para comprobar que el paquete de solución se crea de forma correcta. También puede crear pasos de validación personalizados para sus características y paquetes. Para obtener más información, vea [Cómo: crear reglas personalizadas de validación de características y paquetes para soluciones de SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).
+ Las herramientas de desarrollo de SharePoint de Visual Studio realizan pasos de validación para comprobar que el paquete de solución se crea de forma correcta. También puede crear pasos de validación personalizados para sus características y paquetes. Para obtener más información, vea [Cómo: para crear reglas personalizadas de validación de características y paquetes para soluciones de SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).
 
 ## <a name="deployment-conflict-resolution"></a>Resolución de conflictos de implementación
  Al implementar una solución de SharePoint, pueden producirse colisiones cuando un elemento del servidor tiene el mismo nombre, dirección URL o identificador que un elemento del paquete de solución. Puede cambiar la propiedad **resolución de conflictos de implementación** para resolver, notificar u omitir las colisiones de los módulos, elementos Web, instancias de lista y tipos de contenido.
@@ -51,7 +53,7 @@ ms.locfileid: "72981934"
 |-----------|-----------------|
 |Automático|Detecta las colisiones y resuelve los conflictos automáticamente.|
 |Prompt|Detecta las colisiones y las notifica al desarrollador de software antes de resolver los conflictos.|
-|Ninguno|No detecta las colisiones.|
+|None|No detecta las colisiones.|
 
 ## <a name="differences-between-f5-deployment"></a>Diferencias entre la implementación F5
  Cuando se usa [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] para implementar un proyecto de SharePoint en el servidor de SharePoint local para su comprobación y depuración, hay algunos pasos adicionales que [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] realiza.
@@ -112,4 +114,4 @@ ms.locfileid: "72981934"
 
 ## <a name="see-also"></a>Vea también
 
-- [Empaquetar e implementar soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
+- [Empaquetado e implementación de soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

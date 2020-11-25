@@ -1,5 +1,7 @@
 ---
 title: Importar página maestra personalizada & página de sitio con imagen
+description: En este tutorial, importe una página maestra personalizada de SharePoint y una página de sitio con una imagen en un proyecto de Visual Studio SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 311124b2e0b81e70c4c2a7b40754207e6c66b749
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ceb69608a2d1770f082991f3d927d4e4639ae56
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015687"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95970147"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>Tutorial: importar una página maestra personalizada y una página de sitio con una imagen
   En este tutorial se muestra cómo importar una página maestra personalizada de SharePoint y una página de sitio que tiene una imagen en un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] proyecto de SharePoint.
@@ -33,7 +35,7 @@ ms.locfileid: "86015687"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
  Para completar este tutorial, debe disponer de los siguientes componentes:
 
 - Ediciones compatibles de [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] y SharePoint.
@@ -176,7 +178,7 @@ ms.locfileid: "86015687"
 
    Una manera alternativa de importar archivos [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e implementarlos en SharePoint es agregar los archivos a los módulos de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Cómo: importar una página maestra o un tema](../sharepoint/how-to-import-a-master-page-or-theme.md) y [usar módulos para incluir archivos en la solución](../sharepoint/using-modules-to-include-files-in-the-solution.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Importar elementos de un sitio de SharePoint existente](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
 - [Desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md)
-- [Crear controles reutilizables para elementos Web o páginas de aplicación](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)
+- [Creación de controles reutilizables para elementos web o páginas de aplicación](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)
