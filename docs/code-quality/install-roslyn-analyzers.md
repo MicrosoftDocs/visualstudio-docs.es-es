@@ -13,16 +13,16 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3c6978c19f01b278886f72ff21d62ebf6c5cf57f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 93cd01c0a90f2864843549c3ce11e066a16a8843
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348689"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040386"
 ---
 # <a name="install-third-party-analyzers"></a>Instalación de analizadores de terceros
 
-Visual Studio incluye un conjunto básico de analizadores de .NET Compiler Platform ( *Roslyn* ). Estos analizadores siempre están activados. Puede instalar analizadores adicionales como paquetes NuGet o como extensiones de Visual Studio en archivos *VSIX* .
+Visual Studio incluye un conjunto básico de analizadores de .NET Compiler Platform (*Roslyn*). Estos analizadores siempre están activados. Puede instalar analizadores adicionales como paquetes NuGet o como extensiones de Visual Studio en archivos *VSIX* .
 
 ## <a name="to-install-nuget-analyzer-packages"></a>Para instalar paquetes del analizador de NuGet
 
@@ -63,7 +63,7 @@ Visual Studio incluye un conjunto básico de analizadores de .NET Compiler Platf
 
 2. Expanda en **línea** en el panel izquierdo y, a continuación, seleccione **Visual Studio Marketplace**.
 
-3. En el cuadro de búsqueda, escriba el nombre de la extensión del analizador que desea instalar. Por ejemplo, puede que desee [instalar los analizadores de Microsoft FxCop](install-fxcop-analyzers.md#vsix) para comprobar el código en busca de problemas de seguridad y rendimiento, entre otros.
+3. En el cuadro de búsqueda, escriba el nombre de la extensión del analizador que desea instalar.
 
 4. Seleccione **Descargar**.
 
@@ -77,7 +77,7 @@ Visual Studio incluye un conjunto básico de analizadores de .NET Compiler Platf
 
 6. Seleccione **modificar** para iniciar la instalación.
 
-7. Después de un minuto o dos, se completa la instalación. Seleccione **Close** (Cerrar).
+7. Después de un minuto o dos, se completa la instalación. Seleccione **Cerrar**.
 
 8. Abra Visual Studio de nuevo.
 
@@ -101,4 +101,4 @@ Si desea comprobar si la extensión está instalada, seleccione **extensiones** 
 ## <a name="see-also"></a>Vea también
 
 - [Información general de los analizadores de código en Visual Studio](../code-quality/roslyn-analyzers-overview.md)
-- [Instalar analizadores de FxCop](../code-quality/install-fxcop-analyzers.md)
+- [Instalar analizadores de .NET](../code-quality/install-net-analyzers.md)

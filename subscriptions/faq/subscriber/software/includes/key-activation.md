@@ -7,11 +7,11 @@ author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 4/3/2020
 ms.faqid: q2_2
-ms.openlocfilehash: e18550018a593c0a3eae0d521148cd240b40f5df
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: d214130bfdc2832ad540fa6fac274e4f52cced5f
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2020
+ms.lasthandoff: 11/25/2020
 ms.locfileid: "91838417"
 ---
 ## <a name="how-do-i-activate-the-software-i-just-downloaded-using-product-keys"></a>¿Cómo se activa el software que acabo de descargar mediante las claves de producto?
@@ -25,5 +25,5 @@ Puede obtener las claves de producto en dos lugares:
 
 Para más información sobre cómo obtener y usar claves de producto, vea estos artículos:
 
-- [Introducción a las claves de producto](../../../../product-keys.md)
-- [Búsqueda y reclamación de claves](../../../../find-keys.md)
+- [Introducción a las claves de producto](https://docs.microsoft.com/visualstudio/subscriptions/product-keys)
+- [Búsqueda y reclamación de claves](https://docs.microsoft.com/visualstudio/subscriptions/find-keys)

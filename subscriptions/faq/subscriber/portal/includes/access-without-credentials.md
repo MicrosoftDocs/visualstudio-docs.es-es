@@ -8,10 +8,10 @@ ms.author: cabuschl
 ms.date: 4/3/2020
 ms.faqid: q1_2
 ms.openlocfilehash: a6cebe5f056383c221e494a5c10838cc68f2b166
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2020
+ms.lasthandoff: 11/25/2020
 ms.locfileid: "81385954"
 ---
 ## <a name="how-do-i-access-the-my-visual-studio-subscribers-portal-without-knowing-my-login-credentials-associated-with-my-work-email"></a>¿Cómo accedo al portal de mis suscriptores de Visual Studio sin conocer las credenciales de inicio de sesión asociadas a mi correo electrónico del trabajo?
