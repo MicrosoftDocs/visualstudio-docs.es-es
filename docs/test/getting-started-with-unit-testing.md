@@ -1,5 +1,7 @@
 ---
 title: Introducción a las pruebas unitarias
+description: Use Visual Studio para definir y ejecutar pruebas unitarias para conservar el estado del código, garantizar la cobertura del código y detectar errores y fallos antes de que lo hagan los clientes.
+ms.custom: SEO-VS-2020
 ms.date: 04/07/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c167e98f9419842876aed713e008b8746064669a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3daff1a7b7c2e62b4ca4a508c5c8dd31261a40dd
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82153036"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441786"
 ---
 # <a name="get-started-with-unit-testing"></a>Introducción a las pruebas unitarias
 
@@ -243,10 +245,10 @@ Para crear pruebas unitarias que usen [NUnit](https://nunit.org/):
 
 6. Ejecute la prueba desde el **Explorador de pruebas** o haciendo clic con el botón derecho en el código de prueba y eligiendo **Run Test(s)** (Ejecutar pruebas).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 * [Tutorial: Crear y ejecutar pruebas unitarias en código administrado](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 * [Crear un comando de pruebas unitarias](create-unit-tests-menu.md)
-* [Generate tests with IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md) (Generar pruebas con IntelliTest)
-* [Ejecutar pruebas con el Explorador de pruebas](run-unit-tests-with-test-explorer.md)
+* [Generate tests with IntelliTest (Generación de pruebas con IntelliTest)](generate-unit-tests-for-your-code-with-intellitest.md)
+* [Run tests with Test Explorer (Ejecución de pruebas con el Explorador de pruebas)](run-unit-tests-with-test-explorer.md)
 * [Análisis de la cobertura de código](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
