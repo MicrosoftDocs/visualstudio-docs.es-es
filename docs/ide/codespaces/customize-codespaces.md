@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 2223aecd66da721ff1afe9877853c8a00c837611
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 9072676dfc96ffc6286f81785048eca8ec46b0b8
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862225"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850512"
 ---
 # <a name="how-to-customize-a-codespace-preview"></a>Personalización de un codespace (versión preliminar)
 
@@ -84,7 +84,7 @@ GitHub Codespaces admite las siguientes propiedades de *devcontainer.json*. La c
 
 ## <a name="customize-with-devinit"></a>Personalización con devinit
 
-[devinit](../../devinit/getting-started-with-devinit.md) es una herramienta de la línea de comandos incluida en los codespaces de Windows que permite instalar marcos y herramientas en el entorno. Se puede ejecutar manualmente desde un símbolo del sistema (`devinit -t require-dotnetcoresdk`), pero su eficacia real procede de la creación de un archivo [ *.devinit.json*](../../devinit/devinit-json.md) personalizado para configurar de forma uniforme un codespace cada vez que cree uno.
+[devinit](../../devinit/getting-started-with-devinit.md) es una herramienta de la línea de comandos incluida en los codespaces de Windows que permite instalar marcos y herramientas en el entorno. Se puede ejecutar manualmente desde un símbolo del sistema (`devinit run -t require-dotnetcoresdk`), pero su eficacia real procede de la creación de un archivo [ *.devinit.json*](../../devinit/devinit-json.md) personalizado para configurar de forma uniforme un codespace cada vez que cree uno.
 
 `devinit` incluye un conjunto de herramientas para instalar elementos concretos como, por ejemplo, SQL Server y la CLI de Azure, y también ejecutar administradores de paquetes generales tales como Chocolatey, npm y vcpkg. Puede encontrar la lista completa de herramientas de `devinit` en la documentación de [Herramientas disponibles](../../devinit/devinit-tool-list.md).
 

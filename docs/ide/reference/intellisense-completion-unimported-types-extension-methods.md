@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3eb912ebb4d8d7d4596a6aae6499ac054d4514ca
-ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
+ms.openlocfilehash: d2ac806b4a83b23a783c59eeee5df801c9237685
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93102511"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94900925"
 ---
 # <a name="intellisense-completion-for-unimported-types-and-extension-methods"></a>Finalización de IntelliSense para tipos y métodos de extensión no importados
 
