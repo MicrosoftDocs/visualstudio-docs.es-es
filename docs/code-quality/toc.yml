@@ -13,21 +13,25 @@
           items:
             - name: Información general
               href: use-roslyn-analyzers.md
-            - name: Calidad del código
+            - name: Analizadores de .NET
               items:
-                - name: Opciones de calidad del código
-                  href: /dotnet/fundamentals/code-analysis/code-quality-rule-options?toc=%2fvisualstudio%2fcode-quality%2ftoc.json
-                - name: Uso de archivos EditorConfig para la calidad del código
-                  href: /dotnet/fundamentals/code-analysis/configuration-files?toc=%2fvisualstudio%2fcode-quality%2ftoc.json
-            - name: Estilo del código
-              items:
-                - name: Preferencias de estilo del código
-                  href: ../ide/code-styles-and-code-cleanup.md?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
-                - name: Usar archivos EditorConfig para el estilo de código
-                  displayName: Configure code style analyzers
-                  href: ../ide/create-portable-custom-editor-options.md?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
-                - name: Opciones de la regla
-                  href: /dotnet/fundamentals/code-analysis/code-style-rule-options?toc=%2fvisualstudio%2fcode-quality%2ftoc.json
+                - name: Instalación de los analizadores de .NET
+                  href: install-net-analyzers.md
+                - name: Calidad del código
+                  items:
+                    - name: Opciones de calidad del código
+                      href: /dotnet/fundamentals/code-analysis/code-quality-rule-options?toc=%2fvisualstudio%2fcode-quality%2ftoc.json
+                    - name: Uso de archivos EditorConfig para la calidad del código
+                      href: /dotnet/fundamentals/code-analysis/configuration-files?toc=%2fvisualstudio%2fcode-quality%2ftoc.json
+                - name: Estilo del código
+                  items:
+                    - name: Preferencias de estilo del código
+                      href: ../ide/code-styles-and-code-cleanup.md?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
+                    - name: Usar archivos EditorConfig para el estilo de código
+                      displayName: Configure code style analyzers
+                      href: ../ide/create-portable-custom-editor-options.md?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
+                    - name: Opciones de la regla
+                      href: /dotnet/fundamentals/code-analysis/code-style-rule-options?toc=%2fvisualstudio%2fcode-quality%2ftoc.json
             - name: Configuración del análisis de código dinámico
               href: configure-live-code-analysis-scope-managed-code.md
             - name: Ejecutar análisis de código manualmente
@@ -49,8 +53,8 @@
           href: static-code-analysis-for-managed-code-overview.md
         - name: Tutorial de análisis heredado
           href: walkthrough-analyzing-managed-code-for-code-defects.md
-        - name: Migración a los analizadores de FxCop
-          href: migrate-from-legacy-analysis-to-fxcop-analyzers.md
+        - name: Migración a los analizadores de .NET
+          href: migrate-from-legacy-analysis-to-net-analyzers.md
         - name: Ejecución manual del análisis heredado
           href: how-to-run-legacy-code-analysis-manually-for-managed-code.md
         - name: Configuración
@@ -77,16 +81,14 @@
               href: how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy.md
             - name: Compatibilidad de versiones
               href: version-compatibility-for-code-analysis-check-in-policies.md
-        - name: Analizadores de FxCop
+        - name: Migración a los analizadores de .NET
           items:
-            - name: Instalar analizadores de FxCop
-              href: install-fxcop-analyzers.md
-            - name: Migración a los analizadores de FxCop
-              items:
-                - name: Migración del análisis heredado a los analizadores FxCop
-                  href: migrate-from-legacy-analysis-to-fxcop-analyzers.md
-                - name: Preguntas más frecuentes
-                  href: fxcop-analyzers-faq.md
+            - name: Migración del análisis heredado a los analizadores de .NET
+              href: migrate-from-legacy-analysis-to-net-analyzers.md
+            - name: Migración de los analizadores de FxCop a los de .NET
+              href: migrate-from-fxcop-analyzers-to-net-analyzers.md
+            - name: Preguntas más frecuentes
+              href: net-analyzers-faq.md
         - name: Conjuntos de reglas
           items:
             - name: Información general
