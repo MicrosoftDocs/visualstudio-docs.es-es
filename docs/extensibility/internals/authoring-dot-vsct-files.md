@@ -1,5 +1,7 @@
 ---
 title: Creación. Archivos Vsct | Microsoft Docs
+description: Obtenga información sobre cómo crear archivos. Vsct que agreguen elementos de menú, barras de herramientas y otros elementos de la interfaz de usuario al entorno de desarrollo integrado (IDE) de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54e67a28d59cb739abbeab188ff1f100751f2aa8
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: e0aeb601449ffcc47b7f7786825ee222b8b6ac5b
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93413921"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190088"
 ---
 # <a name="author-vsct-files"></a>Archivos Author. Vsct
 En este documento se muestra cómo crear un archivo *. Vsct* para agregar elementos de menú, barras de herramientas y otros elementos de la interfaz de usuario (IU) al entorno de desarrollo integrado (IDE) de Visual Studio. Siga estos pasos al agregar elementos de interfaz de usuario a un paquete de Visual Studio (VSPackage) que todavía no tiene un archivo *. Vsct* .
@@ -51,9 +53,9 @@ En este documento se muestra cómo crear un archivo *. Vsct* para agregar elemen
 
 1. En la parte superior del `CommandTable` elemento, agregue un `Extern` elemento para cada archivo externo al que se va a hacer referencia y establezca el `href` atributo en el nombre del archivo. Puede hacer referencia a los siguientes archivos de encabezado para tener acceso a los recursos de Visual Studio:
 
-   - *Stdidcmd. h* : define los identificadores de todos los comandos expuestos por Visual Studio.
+   - *Stdidcmd. h*: define los identificadores de todos los comandos expuestos por Visual Studio.
 
-   - *Vsshlids. h* : contiene los identificadores de comando de los menús de Visual Studio.
+   - *Vsshlids. h*: contiene los identificadores de comando de los menús de Visual Studio.
 
 2. Si el paquete llama a cualquier comando definido por Visual Studio u otros paquetes, agregue un `UsedCommands` elemento después del `Commands` elemento. Rellene este elemento con un elemento [UsedCommand](../../extensibility/usedcommand-element.md) para cada comando al que llame y que no forme parte del paquete. Establezca los `guid` `id` atributos y de los `UsedCommand` elementos en los valores GUID y ID de los comandos a los que se va a llamar.
 
@@ -64,7 +66,7 @@ En este documento se muestra cómo crear un archivo *. Vsct* para agregar elemen
 
 #### <a name="to-declare-ui-elements"></a>Para declarar elementos de la interfaz de usuario
 
-1. En el `Symbols` elemento, agregue tres elementos [GuidSymbol](../../extensibility/guidsymbol-element.md) . Cada `GuidSymbol` elemento tiene un `name` atributo y un `value` atributo. Establezca el `name` atributo para que refleje el propósito del elemento. El `value` atributo toma un GUID. (Para generar un GUID, en el menú **herramientas** , seleccione **crear GUID** y, a continuación, seleccione **formato del registro** ).
+1. En el `Symbols` elemento, agregue tres elementos [GuidSymbol](../../extensibility/guidsymbol-element.md) . Cada `GuidSymbol` elemento tiene un `name` atributo y un `value` atributo. Establezca el `name` atributo para que refleje el propósito del elemento. El `value` atributo toma un GUID. (Para generar un GUID, en el menú **herramientas** , seleccione **crear GUID** y, a continuación, seleccione **formato del registro**).
 
      El primer `GuidSymbol` elemento representa el paquete y normalmente no tiene elementos secundarios. El segundo `GuidSymbol` elemento representa el conjunto de comandos y contendrá todos los símbolos que definen los menús, los grupos y los comandos. El tercer `GuidSymbol` elemento representa el almacén de imágenes y contiene símbolos para todos los iconos de los comandos. Si no tiene comandos que usen iconos, puede omitir el tercer `GuidSymbol` elemento.
 

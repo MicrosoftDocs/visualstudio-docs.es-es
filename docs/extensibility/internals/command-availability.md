@@ -1,5 +1,7 @@
 ---
 title: Disponibilidad de comandos | Microsoft Docs
+description: Obtenga información sobre cómo el contexto de comandos, que cambia según el proyecto actual, el editor actual y otros factores, determina qué comandos están disponibles en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dca47d9ed9968c101e3b6b859b51c1cd8d7404db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1da4d48b41b4b42a3c3f049f64ca76e1d9eba6eb
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709695"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189945"
 ---
 # <a name="command-availability"></a>Disponibilidad de comandos
 
@@ -53,7 +55,7 @@ Si aún no se ha definido un GUID de contexto de comando adecuado, puede definir
 > [!CAUTION]
 > Asegúrese de que el VSPackage no afecte a ningún GUID de contexto existente, ya que otros VSPackages pueden depender de ellos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Objetos de contexto de selección](../../extensibility/internals/selection-context-objects.md)
 - [Cómo agrega VSPackages los elementos de la interfaz de usuario](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

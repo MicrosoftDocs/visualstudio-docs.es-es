@@ -1,5 +1,7 @@
 ---
 title: Agregar elementos a los cuadros de diálogo Agregar nuevo elemento | Microsoft Docs
+description: Obtenga información sobre cómo agregar elementos al cuadro de diálogo Agregar nuevo elemento de Visual Studio, de modo que pueda mostrar plantillas y elementos de proyecto para usarlos en sus proyectos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af7f9e5c792785a23ad1674a50abeb4eb6d3cba9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 99377db0e835de8d84485d0254d84892a360f5f0
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710213"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190166"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>Agregar elementos al cuadro de diálogo Agregar nuevo elemento
 El proceso para agregar elementos al cuadro de diálogo **Agregar nuevo elemento** comienza con las claves del registro. Como se muestra en las siguientes entradas del registro, la sección **AddItemTemplates** contiene la ruta de acceso y el nombre del directorio en el que se colocan los elementos disponibles en el cuadro de diálogo **Agregar nuevo elemento** .
@@ -23,7 +25,7 @@ El proceso para agregar elementos al cuadro de diálogo **Agregar nuevo elemento
 > [!NOTE]
 > La tabla que sigue inmediatamente al segmento de código contiene información adicional sobre la entrada del registro.
 
- Esta sección se encuentra en **HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\14.0exp\projects**.
+ Esta sección se encuentra en **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0Exp\Projects**.
 
  El primer GUID es el CLSID para los proyectos de este tipo; el segundo GUID indica el tipo de proyecto registrado para las plantillas para agregar elementos:
 
@@ -46,7 +48,7 @@ El proceso para agregar elementos al cuadro de diálogo **Agregar nuevo elemento
 > - [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}
 > - [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}
 
- El directorio que se muestra para **TemplatesDir**, que es *% TEMPLATE_PATH% \\ &lt; SomeProjectItems &gt; *, es el nodo en el lado izquierdo del árbol del cuadro de diálogo **Agregar nuevo elemento** . Los elementos adicionales del árbol se basan en el subdirectorio del directorio raíz. Los archivos disponibles para agregarse al proyecto son los elementos del panel derecho del cuadro de diálogo **Agregar nuevo elemento** .
+ El directorio que se muestra para **TemplatesDir**, que es *% TEMPLATE_PATH% \\ &lt; SomeProjectItems &gt;*, es el nodo en el lado izquierdo del árbol del cuadro de diálogo **Agregar nuevo elemento** . Los elementos adicionales del árbol se basan en el subdirectorio del directorio raíz. Los archivos disponibles para agregarse al proyecto son los elementos del panel derecho del cuadro de diálogo **Agregar nuevo elemento** .
 
  Normalmente, esta carpeta contendrá los archivos de plantilla del proyecto, como un archivo HTML o *. cpp* de plantilla, y los archivos *. vsz* para iniciar asistentes. Para controlar cómo se muestran los elementos, también puede incluir archivos *. vsdir* para localizar los nombres de directorio y los iconos. La cadena traducida es el título que aparece en el cuadro de diálogo que representa este nodo en el árbol del cuadro de diálogo **Agregar nuevo elemento** .
 

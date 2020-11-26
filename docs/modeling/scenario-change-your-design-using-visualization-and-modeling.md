@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a6ad330c083a97e8a098f05a9e0398a806a9153b
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "92298586"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189137"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Escenario: Cambiar el diseño usando modelado y visualización
 
@@ -363,9 +363,9 @@ Un diagrama de clases tiene las siguientes características principales:
 
   - Una *enumeración* es un clasificador que contiene una lista de valores literales.
 
-- Los*atributos* son valores de un tipo determinado que describen cada instancia de un *clasificador*. Un clasificador es un nombre general para tipos, componentes, casos de uso e incluso actores.
+- Los *atributos* son valores de un tipo determinado que describen cada instancia de un *clasificador*. Un clasificador es un nombre general para tipos, componentes, casos de uso e incluso actores.
 
-- Las*operaciones* son métodos o funciones que las instancias de un clasificador pueden realizar.
+- Las *operaciones* son métodos o funciones que las instancias de un clasificador pueden realizar.
 
 - Una *asociación* indica algún tipo de relación entre dos clasificadores.
 
@@ -381,7 +381,7 @@ Un diagrama de clases tiene las siguientes características principales:
 
      Para crear estas relaciones, use la herramienta **Herencia** . Una realización también puede representarse como un *círculo*.
 
-- Los*paquetes* son grupos de clasificadores, asociaciones, líneas de vida, componentes y otros paquetes. Las relaciones de*importación* indican que un paquete incluye todas las definiciones de otro paquete.
+- Los *paquetes* son grupos de clasificadores, asociaciones, líneas de vida, componentes y otros paquetes. Las relaciones de *importación* indican que un paquete incluye todas las definiciones de otro paquete.
 
 Como punto de partida para explorar y analizar las clases existentes, puede usar el Diseñador de clases para crear diagramas de clases desde el código.
 

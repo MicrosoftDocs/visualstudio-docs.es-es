@@ -1,5 +1,7 @@
 ---
 title: Coincidencia de llaves en un servicio de lenguaje heredado | Microsoft Docs
+description: Obtenga información sobre la coincidencia de llaves en un servicio de lenguaje heredado, que le ayuda a realizar un seguimiento de los elementos del lenguaje que deben aparecer juntos, como paréntesis y llaves.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0081be3e3ab5a53f7d85f77475d4288aa5c87092
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7d9f93f0081d45e986ab6845cdaee53209b84e13
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709818"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190010"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>Coincidencia de llaves en un servicio de lenguaje heredado
 La coincidencia de llaves ayuda al desarrollador a realizar un seguimiento de los elementos del lenguaje que deben aparecer juntos, como paréntesis y llaves. Cuando un desarrollador escribe una llave de cierre, se resalta la llave de apertura.
@@ -38,7 +40,7 @@ La coincidencia de llaves ayuda al desarrollador a realizar un seguimiento de lo
  Para obtener una descripción completa de cómo al escribir una llave se activa el resaltado de llaves, consulte la sección ejemplo de la *operación de análisis* en el artículo analizador y analizador del [servicio de lenguaje heredado](../../extensibility/internals/legacy-language-service-parser-and-scanner.md).
 
 ## <a name="enable-support-for-brace-matching"></a>Habilitar la compatibilidad con la coincidencia de llaves
- El <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> atributo puede establecer las entradas del registro **MatchBraces**, **MatchBracesAtCaret**y **ShowMatchingBrace** que establecen las propiedades correspondientes de la <xref:Microsoft.VisualStudio.Package.LanguagePreferences> clase. El usuario también puede establecer las propiedades de preferencias de idioma.
+ El <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> atributo puede establecer las entradas del registro **MatchBraces**, **MatchBracesAtCaret** y **ShowMatchingBrace** que establecen las propiedades correspondientes de la <xref:Microsoft.VisualStudio.Package.LanguagePreferences> clase. El usuario también puede establecer las propiedades de preferencias de idioma.
 
 |Entrada del Registro|Propiedad|Descripción|
 |--------------------|--------------|-----------------|
@@ -135,6 +137,6 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Características del servicio de lenguaje heredado](../../extensibility/internals/legacy-language-service-features1.md)
 - [Analizador y analizador del servicio de lenguaje heredado](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)

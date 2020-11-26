@@ -1,5 +1,7 @@
 ---
 title: 'Lista de comprobación: creación de un servicio de lenguaje heredado | Microsoft Docs'
+description: Conozca los pasos básicos que debe seguir para crear un servicio de lenguaje heredado para el editor principal de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11785dab63cbb6a95ab2d34c5edbfb4525ebf34c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 905d81d49706c3ae5348d71c03189d6e036dd3e5
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709790"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189997"
 ---
 # <a name="checklist-create-a-legacy-language-service"></a>Lista de comprobación: creación de un servicio de lenguaje heredado
 La siguiente lista de comprobación resume los pasos básicos que debe seguir para crear un servicio de lenguaje para el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Editor básico. Para integrar el servicio de lenguaje en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , debe crear un evaluador de expresiones de depuración. Para obtener más información, vea [escribir un evaluador de expresiones CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) en la [extensibilidad del depurador de Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md).
@@ -123,6 +125,6 @@ La siguiente lista de comprobación resume los pasos básicos que debe seguir pa
 
   - Proporcione el contexto de todos los usuarios implementando la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider> interfaz.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Desarrollo de un servicio de lenguaje heredado](../../extensibility/internals/developing-a-legacy-language-service.md)
 - [Escribir un evaluador de expresiones CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

@@ -1,5 +1,6 @@
 ---
 title: Aplicar la configuración en varias conexiones de proyecto
+description: Obtenga información sobre cómo aplicar la configuración en varias conexiones de proyecto mediante un complemento de control de código fuente para ejecutar una operación por lotes.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81448760f0417528fd630c4919ce516b32e518c8
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: cd5b7af98470c1d9a82eb0504c333e74de8c004f
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90034928"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190114"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>Aplicación de la configuración en varias conexiones de proyecto
 Un complemento de control de código fuente creado mediante la API de complemento de control de código fuente versión 1,2, puede usar una operación por lotes para ejecutar la misma operación de control de código fuente en varios proyectos o contextos de conexión múltiples. Los lotes se pueden usar para eliminar los cuadros de diálogo redundantes por proyecto de la experiencia del usuario.

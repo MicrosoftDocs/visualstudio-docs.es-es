@@ -1,5 +1,7 @@
 ---
 title: Agregar plantillas de proyecto y de elemento de proyecto | Microsoft Docs
+description: Obtenga información sobre cómo agregar plantillas de proyecto y de elemento de proyecto a los cuadros de diálogo del entorno de desarrollo integrado (IDE) de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14eb1a9e2e63fa6e63d3ba2efa4426421e6b5593
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e97b04294f0545c378210d39f343f3b009b6d15
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710205"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190179"
 ---
 # <a name="add-project-and-project-item-templates"></a>Agregar plantillas de proyecto y de elemento de proyecto
 Cuando cree sus propios tipos de proyecto, debe proporcionar compatibilidad para agregar nuevos proyectos y elementos de proyecto mediante los cuadros de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diálogo del entorno de desarrollo integrado (IDE) estándar. En los temas siguientes se describen las distintas técnicas para agregar proyectos y elementos de proyecto.

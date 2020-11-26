@@ -1,5 +1,7 @@
 ---
 title: Agregar directorios al cuadro de diálogo nuevo proyecto | Microsoft Docs
+description: Obtenga información sobre cómo agregar directorios al cuadro de diálogo nuevo proyecto en Visual Studio, para que pueda crear nuevos tipos de proyecto y mostrarlos como plantillas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 827e383bba13c9742deb654bf3d680adeb3c109b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 87e4c0bcb44690a36579fe77564962515534338d
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710242"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190153"
 ---
 # <a name="add-directories-to-the-new-project-dialog-box"></a>Agregar directorios al cuadro de diálogo nuevo proyecto
 Al crear nuevos tipos de proyecto, también puede registrar un nuevo directorio en el cuadro de diálogo **nuevo proyecto** para mostrarlos para su uso como plantillas. En el ejemplo de código siguiente se explica cómo registrar un nuevo directorio, también conocido como nodo. En el ejemplo, se registran las plantillas expuestas por el VSPackage *CLSID_Package*. Como resultado, el lado izquierdo del cuadro de diálogo **nuevo proyecto** ofrece el nodo agregado, con un nombre determinado por el recurso de *Folder_Label_ResID* . Este recurso se carga desde el archivo DLL satélite de VSPackage.
@@ -45,7 +47,7 @@ NoRemove NewProjectTemplates
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Registrar plantillas de proyecto y elemento](../../extensibility/internals/registering-project-and-item-templates.md)
 - [Agregar elementos al cuadro de diálogo Agregar nuevo elemento](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
 - [Agregar directorios al cuadro de diálogo Agregar nuevo elemento](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)

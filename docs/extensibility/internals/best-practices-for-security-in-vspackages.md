@@ -1,5 +1,7 @@
 ---
 title: Prácticas recomendadas de seguridad en VSPackages | Microsoft Docs
+description: Obtenga información sobre los procedimientos recomendados para la seguridad en un VSPackage, la unidad básica de seguridad y la implementación de una aplicación de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e73be2af3d24a6a719f353fbd0ab25dbdf86fe09
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: f81f682271a949954d113ffd2f6228db0de814e8
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012144"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190049"
 ---
 # <a name="best-practices-for-security-in-vspackages"></a>Prácticas recomendadas de seguridad en VSPackages
 Para instalar [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] en el equipo, debe ejecutar en un contexto con credenciales administrativas. La unidad básica de seguridad y la implementación de una [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] aplicación es el [VSPackage](../../extensibility/internals/vspackages.md). Un VSPackage debe registrarse mediante [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , que también requiere credenciales administrativas.
@@ -30,6 +32,6 @@ Para instalar [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] en
 
  Para obtener más información, vea [instrucciones de codificación segura para el .NET Framework](/previous-versions/visualstudio/visual-studio-2008/d55zzx87(v=vs.90)).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Seguridad de complementos](/previous-versions/1326zbk3(v=vs.140))
 - [Seguridad de DDEX](/previous-versions/bb163703(v=vs.140))
