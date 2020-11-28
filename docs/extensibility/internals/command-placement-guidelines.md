@@ -1,5 +1,7 @@
 ---
 title: Instrucciones de selección de ubicación de comandos | Microsoft Docs
+description: Obtenga información sobre las instrucciones y procedimientos recomendados para colocar comandos en el entorno de desarrollo integrado (IDE) de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 021a5fd9f9931e3041a431d211c8ab49978bbbab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 11a1619eaa625e086ac93bfa0f9e208239f8c844
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709568"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305243"
 ---
 # <a name="command-placement-guidelines"></a>Instrucciones de selección de ubicación de comandos
 Los procedimientos recomendados para colocar comandos en el entorno de desarrollo integrado (IDE) de Visual Studio varían según el tamaño del conjunto de comandos. Los comandos se definen y se colocan según la información de los archivos *. Vsct* .

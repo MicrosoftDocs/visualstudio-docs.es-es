@@ -1,5 +1,7 @@
 ---
 title: Crear un VSPackage de control de código fuente | Microsoft Docs
+description: Obtenga información sobre cómo crear un VSPackage de control de código fuente que cree una ruta de acceso de integración profunda para que el control de código fuente se integre con Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8608aae718ff9f8bdf2e40c0ab648c1d22c38257
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 69e526cea292544c725abc7ffb54d0b29ad88403
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709192"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305587"
 ---
 # <a name="create-a-source-control-vspackage"></a>Crear un VSPackage de control de código fuente
 En esta documentación se incluyen vínculos a información general sobre la arquitectura de un paquete de control de código fuente integrado con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , la API que se define en las interfaces que se van a implementar y los servicios que se van a consumir, y un ejemplo que muestra una implementación simple de un paquete de control de código fuente.

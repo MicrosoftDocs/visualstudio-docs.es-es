@@ -1,5 +1,7 @@
 ---
 title: Generar perfiles del rendimiento de las aplicaciones de SharePoint | Microsoft Docs
+description: Generar perfiles del rendimiento de las aplicaciones de SharePoint si se ejecutan lentamente o ineficientemente. Use las características de generación de perfiles de Visual Studio para encontrar código problemático.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 13f2e3f5df236157550aa79af40f0cbc575eb8bf
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: ecdacce58e17c616b22c9a6a8ba6fce9d5cf272c
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414417"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305099"
 ---
 # <a name="profile-the-performance-of-sharepoint-applications"></a>Generar perfiles del rendimiento de las aplicaciones de SharePoint
 
@@ -39,7 +41,7 @@ Después de crear y ejecutar un análisis de perfil en la aplicación, un inform
 
 ## <a name="performance-session-process"></a>Proceso de sesión de rendimiento
 
-Para generar perfiles de una aplicación, empiece usando el Asistente de Herramientas de generación de perfiles rendimiento para crear una sesión de rendimiento. En la barra de menús, elija **analizar** , **iniciar Asistente de rendimiento**. Cuando complete el asistente, escriba la información necesaria para la sesión de rendimiento, como el método de perfil que desee y la aplicación de la que desea generar perfiles. Para obtener más información, consulte [Cómo: generar perfiles de un sitio web o una aplicación Web mediante el Asistente de rendimiento](../profiling/how-to-collect-performance-data-for-a-web-site.md). Como alternativa, puede usar las opciones de línea de comandos para configurar y ejecutar una sesión de rendimiento. Para obtener más información, vea [usar el herramientas de generación de perfiles desde la línea de comandos](../profiling/using-the-profiling-tools-from-the-command-line.md). Si desea configurar manualmente cada aspecto de una sesión de rendimiento, consulte [Cómo: crear manualmente sesiones de rendimiento con el herramientas de generación de perfiles](../profiling/how-to-manually-create-performance-sessions.md). También puede crear una sesión de rendimiento a partir de una prueba unitaria de; en la ventana de **resultados de pruebas** , abra el menú contextual de la prueba unitaria y, a continuación, elija **crear sesión de rendimiento**.
+Para generar perfiles de una aplicación, empiece usando el Asistente de Herramientas de generación de perfiles rendimiento para crear una sesión de rendimiento. En la barra de menús, elija **analizar**, **iniciar Asistente de rendimiento**. Cuando complete el asistente, escriba la información necesaria para la sesión de rendimiento, como el método de perfil que desee y la aplicación de la que desea generar perfiles. Para obtener más información, consulte [Cómo: generar perfiles de un sitio web o una aplicación Web mediante el Asistente de rendimiento](../profiling/how-to-collect-performance-data-for-a-web-site.md). Como alternativa, puede usar las opciones de línea de comandos para configurar y ejecutar una sesión de rendimiento. Para obtener más información, vea [usar el herramientas de generación de perfiles desde la línea de comandos](../profiling/using-the-profiling-tools-from-the-command-line.md). Si desea configurar manualmente cada aspecto de una sesión de rendimiento, consulte [Cómo: crear manualmente sesiones de rendimiento con el herramientas de generación de perfiles](../profiling/how-to-manually-create-performance-sessions.md). También puede crear una sesión de rendimiento a partir de una prueba unitaria de; en la ventana de **resultados de pruebas** , abra el menú contextual de la prueba unitaria y, a continuación, elija **crear sesión de rendimiento**.
 
 Después de configurar una sesión de rendimiento, se guarda la configuración de sesión, el servidor se configura para proporcionar datos de generación de perfiles y la aplicación se ejecuta. A medida que se utiliza la aplicación, los datos de rendimiento se escriben en un archivo de registro. Las sesiones de rendimiento se muestran en **Explorador de rendimiento** en la carpeta **destinos** . Una vez finalizada la sesión de rendimiento, el informe aparece en la carpeta **informes** de **Explorador de rendimiento**. Para mostrar el informe, ábralo en **Explorador de rendimiento**. Para ver o configurar las propiedades de una sesión de rendimiento, abra el menú contextual en **Explorador de rendimiento** y, a continuación, elija **propiedades**. Para obtener más información acerca de las propiedades específicas de una sesión de rendimiento, consulte [configuración de sesiones de rendimiento para herramientas de generación de perfiles](../profiling/configuring-performance-sessions.md). Para obtener información sobre cómo interpretar los resultados de una sesión de rendimiento, consulte [analizar datos de herramientas de generación de perfiles](../profiling/analyzing-performance-tools-data.md).
 

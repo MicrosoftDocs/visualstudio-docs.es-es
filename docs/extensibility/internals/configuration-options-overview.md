@@ -1,5 +1,7 @@
 ---
 title: Información general de las opciones de configuración | Microsoft Docs
+description: Obtenga información sobre las opciones de las configuraciones de proyecto en Visual Studio. Una configuración es un tipo de compilación que se describe con un conjunto de propiedades y ubicaciones de archivos con nombre.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d5ac25fcef7b942b791402baf17982c9810e92a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: df8931066aef5f7163018fba540dd46dcfe5dcc0
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709407"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304738"
 ---
 # <a name="configuration-options-overview"></a>Información general de las opciones de configuración
 Los proyectos de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pueden admitir varias configuraciones que se pueden compilar, depurar, ejecutar o implementar. Una configuración es un tipo de compilación que se describe con un conjunto de propiedades con nombre, normalmente modificadores de compilador y ubicaciones de archivos. De forma predeterminada, las nuevas soluciones contienen dos configuraciones, *Debug* y *Release*. Estas configuraciones se pueden aplicar con su configuración predeterminada o modificarse para satisfacer los requisitos específicos de la solución o el proyecto. Algunos paquetes se pueden crear de dos maneras: como un editor ActiveX o como un componente en contexto. No obstante, no es necesario que los proyectos admitan varias configuraciones. Si solo hay una configuración disponible, esa configuración se asigna a todas las configuraciones de soluciones.
@@ -68,7 +70,7 @@ Los proyectos de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pu
 
   Para obtener más información sobre las interfaces del objeto de configuración y las interfaces de objeto del proveedor de configuración del diagrama anterior, vea [objeto de configuración del proyecto](../../extensibility/internals/project-configuration-object.md). Además, la [configuración del proyecto para la compilación](../../extensibility/internals/project-configuration-for-building.md) proporciona más información sobre el generador de configuración y las interfaces del objeto de dependencia de compilación, y la [configuración de proyecto para administrar la implementación](../../extensibility/internals/project-configuration-for-managing-deployment.md) describe aún más las interfaces conectadas al implementador de configuración y los objetos de dependencia de implementación. Por último, la [configuración del proyecto para la salida](../../extensibility/internals/project-configuration-for-output.md) describe las interfaces del grupo de salida y del objeto de salida, y el uso de páginas de propiedades para ver y establecer las propiedades dependientes de la configuración.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>
 - [Configuración del proyecto para la compilación](../../extensibility/internals/project-configuration-for-building.md)
 - [Configuración de la solución](../../extensibility/internals/solution-configuration.md)

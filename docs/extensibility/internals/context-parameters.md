@@ -1,5 +1,7 @@
 ---
 title: Parámetros de contexto | Microsoft Docs
+description: Obtenga información sobre los parámetros de contexto en el entorno de desarrollo integrado (IDE) de Visual Studio que definen el estado de un proyecto al agregar o implementar un asistente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +13,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d1a8c83ef9794479c35cd36609d77ef94621732
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 654ebf68efebaa44766079c172e87396134805e3
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012456"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304716"
 ---
 # <a name="context-parameters"></a>Parámetros de contexto
-En el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] entorno de desarrollo integrado (IDE), puede agregar asistentes a los cuadros de diálogo **nuevo proyecto**, **Agregar nuevo elemento**o **Agregar subproyecto** . Los asistentes agregados están disponibles en el menú **archivo** o haciendo clic con el botón secundario en un proyecto de **Explorador de soluciones**. El IDE pasa los parámetros de contexto a la implementación del asistente. Los parámetros de contexto definen el estado del proyecto cuando el IDE llama al asistente.
+En el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] entorno de desarrollo integrado (IDE), puede agregar asistentes a los cuadros de diálogo **nuevo proyecto**, **Agregar nuevo elemento** o **Agregar subproyecto** . Los asistentes agregados están disponibles en el menú **archivo** o haciendo clic con el botón secundario en un proyecto de **Explorador de soluciones**. El IDE pasa los parámetros de contexto a la implementación del asistente. Los parámetros de contexto definen el estado del proyecto cuando el IDE llama al asistente.
 
  El IDE inicia los asistentes estableciendo la <xref:Microsoft.VisualStudio.Shell.Interop.VSADDITEMOPERATION> marca en la llamada del IDE al <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.AddItem%2A> método para el proyecto. Cuando se establece, el proyecto debe hacer que el `IVsExtensibility::RunWizardFile` método se ejecute utilizando el nombre del asistente registrado o el GUID y otros parámetros de contexto que el IDE le pase.
 
@@ -58,7 +60,7 @@ En el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] entorno de de
 | `InstallationDirectory` | Ruta de acceso del directorio de la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] instalación. |
 | `Silent` | Valor booleano que indica si el asistente se debe ejecutar en modo silencioso como si se hubiera hecho clic en **Finalizar** ( `TRUE` ). |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject2>
 - [Parámetros personalizados](../../extensibility/internals/custom-parameters.md)

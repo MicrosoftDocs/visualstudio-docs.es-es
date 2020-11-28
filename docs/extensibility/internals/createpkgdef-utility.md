@@ -1,5 +1,7 @@
 ---
 title: Utilidad CreatePkgDef | Microsoft Docs
+description: Obtenga información sobre la utilidad CreatePkgDef que toma un archivo. dll para una extensión de Visual Studio como parámetro y crea un archivo. pkgdef para acompañar el archivo. dll.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f437eb3586dc16bb0b4b9eb60cd303eb90db6c3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aa0b0e3e8ea59ce1d41f9d8a6c056239f2bc0e9a
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709166"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305552"
 ---
 # <a name="createpkgdef-utility"></a>Utilidad CreatePkgDef
 Toma un archivo. dll para una extensión de Visual Studio como parámetro y crea un archivo *. pkgdef* para acompañar el archivo *. dll* . El archivo *. pkgdef* contiene toda la información que, de lo contrario, se escribiría en el registro del sistema cuando se instala la extensión.
@@ -45,7 +47,7 @@ Fuerza el registro con la utilidad de **ensamblado** .
 **&lt;AssemblyPath&gt;**\
 La ruta de acceso del archivo *. dll* desde el que desea generar el archivo *. pkgdef*.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 La implementación de extensiones mediante archivos *. pkgdef* reemplaza los requisitos del registro de versiones anteriores de Visual Studio.
 
 ::: moniker range=">=vs-2019"
@@ -82,5 +84,5 @@ Si la carpeta de instalación *es \\ %VSInstallDir%\Common7\IDE\Extensions*, la 
 
 ::: moniker-end
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Utilidad CreateExpInstance](../../extensibility/internals/createexpinstance-utility.md)

@@ -1,5 +1,7 @@
 ---
 title: Algoritmo de enrutamiento de comandos | Microsoft Docs
+description: Obtenga información sobre el orden de resolución de comandos en Visual Studio, ya que los comandos se controlan mediante distintos componentes y se enrutan desde el interior al contexto más externo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af8d3e53e09214ce36a80ca18856085dfb2bb746
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1694e0835add6eac75986538a8abae99adf717b1
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709534"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305235"
 ---
 # <a name="command-routing-algorithm"></a>Algoritmo de enrutamiento de comandos
 En Visual Studio, los comandos se controlan mediante una serie de componentes diferentes. Los comandos se enrutan desde el contexto más interno, que se basa en la selección actual, al contexto externo (también conocido como global). Para obtener más información, vea [disponibilidad de comandos](../../extensibility/internals/command-availability.md).
@@ -38,9 +40,9 @@ En Visual Studio, los comandos se controlan mediante una serie de componentes di
 
 7. Jerarquía actual: la jerarquía actual puede ser el proyecto propietario de la ventana de documento activa o la jerarquía seleccionada en **Explorador de soluciones**. Visual Studio busca la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaz implementada en la jerarquía actual, o activa. La jerarquía debe admitir comandos que son válidos cada vez que la jerarquía está activa, incluso si una ventana de documento de un elemento de proyecto tiene el foco. Sin embargo, los comandos que se aplican solo cuando **Explorador de soluciones** tiene el foco deben admitirse mediante la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> interfaz y sus <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A> métodos y.
 
-     Los comandos **cortar**, **copiar**, **pegar**, **eliminar**, **cambiar nombre**, **entrar**y **DoubleClick** requieren un tratamiento especial. Para obtener información sobre cómo controlar los comandos **Delete** y **Remove** en las jerarquías, vea la <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyDeleteHandler> interfaz.
+     Los comandos **cortar**, **copiar**, **pegar**, **eliminar**, **cambiar nombre**, **entrar** y **DoubleClick** requieren un tratamiento especial. Para obtener información sobre cómo controlar los comandos **Delete** y **Remove** en las jerarquías, vea la <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyDeleteHandler> interfaz.
 
 8. Global: si los contextos mencionados anteriormente no han controlado un comando, Visual Studio intenta enrutarlo al VSPackage que posee un comando que implementa la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaz. Si el VSPackage no se ha cargado ya, no se carga cuando Visual Studio llama al <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> método. El VSPackage solo se carga cuando <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> se llama al método.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Diseño de comandos](../../extensibility/internals/command-design.md)

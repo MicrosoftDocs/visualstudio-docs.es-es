@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: marcar controles como controles seguros | Microsoft Docs'
+description: Marque los controles como controles seguros en la propiedad Safe control entries de un elemento de proyecto de SharePoint o en el diseñador de paquetes al agregar un ensamblado.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cd7ed13504d3d91f4239a8ea070454e1c31b1114
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 024cd50fc36b84addca11dc3c0f23cdc64fa507d
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016264"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304507"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>Cómo: marcar controles como controles seguros
   Por seguridad, SharePoint diferencia entre los controles Web que están protegidos contra la inyección de scripts y los controles Web que no lo son. Los usuarios que no son de confianza pueden tener acceso a los controles protegidos o a *controles seguros*. Puede marcar los controles como seguros en la propiedad entradas de control seguras de un elemento de proyecto de SharePoint o en el **Diseñador de paquetes** al agregar un ensamblado al paquete. Para obtener más información, vea
@@ -43,7 +45,7 @@ ms.locfileid: "86016264"
 
 4. En el cuadro de diálogo **entradas de control seguras** , elija el botón **Agregar** dos veces para agregar dos entradas de control seguras al panel **miembros** : una para el botón y otra para el cuadro de texto.
 
-5. Elija la primera entrada de control segura y, a continuación, cambie el valor de su propiedad **Safe** a **false**, su propiedad **nombre de tipo** a **button1**y su propiedad **Safe Against script** a **false**.
+5. Elija la primera entrada de control segura y, a continuación, cambie el valor de su propiedad **Safe** a **false**, su propiedad **nombre de tipo** a **button1** y su propiedad **Safe Against script** a **false**.
 
      Este paso identifica el control de botón como control no seguro.
 
@@ -90,7 +92,7 @@ ms.locfileid: "86016264"
     |Espacio de nombres|Espacio de nombres completo para el control, como **BdcModelProject1. VisualWebPart1**.|
     |Nombre del tipo|Button1|
     |Nombre del ensamblado|Un nombre de ensamblado seguro, como: Microsoft. Office. SharePoint. ClientExtensions, Version = 14.0.0.0, Culture = neutral, PublicKeyToken = 71e9bce111e9429c.|
-    |Seguro|Desactive la casilla **seguro** .|
+    |Caja fuerte|Desactive la casilla **seguro** .|
     |Safe con script|Deje desactivada la casilla **seguro contra scripts** .|
 
     > [!NOTE]
@@ -107,11 +109,11 @@ ms.locfileid: "86016264"
     |Espacio de nombres|Espacio de nombres completo para el control, como **BdcModelProject1. VisualWebPart1**.|
     |Nombre del tipo|TextBox1|
     |Nombre del ensamblado|Un nombre de ensamblado seguro, como: Microsoft. Office. SharePoint. ClientExtensions, Version = 14.0.0.0, Culture = neutral, PublicKeyToken = 71e9bce111e9429c.|
-    |Seguro|Active la casilla **seguro** .|
+    |Caja fuerte|Active la casilla **seguro** .|
     |Safe con script|Active la casilla **seguro contra scripts** .|
 
 16. Elija la tecla **Tab** y, a continuación, elija el botón **Aceptar** para cerrar el cuadro de diálogo.
 
 ## <a name="see-also"></a>Consulte también
-- [Proporcionar información de empaquetado e implementación en los elementos de proyecto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
+- [Inclusión de información de empaquetado e implementación en los elementos del proyecto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
 - [Empaquetar e implementar soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

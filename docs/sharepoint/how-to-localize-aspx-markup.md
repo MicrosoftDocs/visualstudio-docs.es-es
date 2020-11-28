@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: localizar el marcado ASPX | Microsoft Docs'
+description: Aprenda a localizar el marcado ASPX en SharePoint reemplazando los valores de cadena codificados de forma rígida por expresiones que hacen referencia a recursos localizados.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 63bd8ee614a78752069002820689a2cc6c0be783
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0a4fcf724a8ae1586354f620a68b32e9f281b545
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016291"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304657"
 ---
-# <a name="how-to-localize-aspx-markup"></a>Cómo: localizar el marcado ASPX
+# <a name="how-to-localize-aspx-markup"></a>Cómo: para localizar el marcado ASPX
   [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] las páginas de (. aspx) suelen usar valores de cadena codificados de forma rígida. Para localizar estas cadenas, reemplácelas por expresiones que hagan referencia a recursos localizados.
 
 ## <a name="localize-aspx-markup"></a>Localizar el marcado ASPX
@@ -60,7 +62,7 @@ ms.locfileid: "86016291"
     </asp:Content>
     ```
 
-     por
+     to
 
     ```aspx-csharp
     <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">
@@ -75,7 +77,7 @@ ms.locfileid: "86016291"
      Las cadenas localizadas aparecen en la aplicación. Para mostrar los recursos localizados, el servidor de SharePoint debe tener instalado el paquete de idioma que coincide con la referencia cultural del archivo de recursos.
 
 ## <a name="see-also"></a>Consulte también
-- [Localizar soluciones de SharePoint](../sharepoint/localizing-sharepoint-solutions.md)
-- [Cómo: localizar una característica](../sharepoint/how-to-localize-a-feature.md)
-- [Cómo: agregar un archivo de recursos](../sharepoint/how-to-add-a-resource-file.md)
-- [Cómo: localizar código](../sharepoint/how-to-localize-code.md)
+- [Localización de soluciones de SharePoint](../sharepoint/localizing-sharepoint-solutions.md)
+- [Cómo: para localizar una característica](../sharepoint/how-to-localize-a-feature.md)
+- [Cómo: para agregar un archivo de recursos](../sharepoint/how-to-add-a-resource-file.md)
+- [Cómo: para localizar código](../sharepoint/how-to-localize-code.md)

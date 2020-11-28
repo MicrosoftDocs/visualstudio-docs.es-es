@@ -1,5 +1,7 @@
 ---
 title: Comentario de código en un servicio de lenguaje heredado | Microsoft Docs
+description: Obtenga información sobre las clases de Managed Package Framework (MPF) que proporcionan compatibilidad con los comentarios de código en un servicio de lenguaje heredado en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5450199fde29f581dafdf9b2884c88ef26ea4ce7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07205a8e15cd338fa1acf0d3b081301a083bba5d
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709435"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304997"
 ---
 # <a name="comment-code-in-a-legacy-language-service"></a>Código de comentario en un servicio de lenguaje heredado
 Los lenguajes de programación proporcionan normalmente un medio para anotar o comentar el código. Un comentario es una sección de texto que proporciona información adicional sobre el código, pero que se omite durante la compilación o la interpretación.
@@ -61,6 +63,6 @@ namespace MyLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Características del servicio de lenguaje heredado](../../extensibility/internals/legacy-language-service-features1.md)
 - [Registro de un servicio de lenguaje heredado](../../extensibility/internals/registering-a-legacy-language-service1.md)

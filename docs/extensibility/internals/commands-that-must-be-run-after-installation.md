@@ -1,5 +1,7 @@
 ---
 title: Comandos que se deben ejecutar después de la instalación | Microsoft Docs
+description: Obtenga información sobre los comandos que deben ejecutarse como parte de la instalación de una extensión implementada a través de un archivo. msi en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77add5afd5d44358f0077a11bb70559a796e74c6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64eda9c95b9c469d8defc8ab0318031e9e43172a
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709469"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305044"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>Comandos que se deben ejecutar después de la instalación
 Si implementa la extensión a través de un archivo *. msi* , debe ejecutar **devenv/Setup** como parte de la instalación para que Visual Studio detecte las extensiones.
@@ -44,7 +46,7 @@ Si implementa la extensión a través de un archivo *. msi* , debe ejecutar **de
 |DEVENV_EXE_2005|RL_DevenvExe_2005|
 |DEVENV_EXE_2008|RL_DevenvExe_2008|
 
- Por ejemplo, el instalador de Visual Studio escribe el valor del registro de **HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\9.0\setup\vs\environmentpath** como *C:\VS2008\Common7\IDE\devenv.exe*, una ruta de acceso completa al archivo ejecutable que debe ejecutar el instalador.
+ Por ejemplo, el instalador de Visual Studio escribe el valor del registro de **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\Setup\VS\EnvironmentPath** como *C:\VS2008\Common7\IDE\devenv.exe*, una ruta de acceso completa al archivo ejecutable que debe ejecutar el instalador.
 
 > [!NOTE]
 > Dado que la columna de tipo de la tabla RegLocator es 2, no es necesario especificar información de versión adicional en la tabla de firma.
@@ -81,5 +83,5 @@ Si implementa la extensión a través de un archivo *. msi* , debe ejecutar **de
 |CA_RunDevenv2005|DEVENV_EXE_2005|6605|
 |CA_RunDevenv2008|DEVENV_EXE_2008|6608|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Instale VSPackages con Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

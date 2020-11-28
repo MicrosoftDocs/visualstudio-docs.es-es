@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: localizar código | Microsoft Docs'
+description: Aprenda a localizar el código en SharePoint reemplazando las cadenas codificadas de forma rígida por llamadas a GetGlobalResourceObject, un método que hace referencia a recursos localizados.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,17 +15,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6c1963ff0b6ef317dfa1a2c8154a1628710dc562
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2cbe38c55b92514954cc3487544fed89d68cc4dc
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016694"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304578"
 ---
-# <a name="how-to-localize-code"></a>Cómo: localizar código
+# <a name="how-to-localize-code"></a>Cómo: para localizar código
   El código sin localizar usa valores de cadena codificados de forma rígida. Para localizar cadenas de código, sustitúyalas por llamadas a <xref:System.Web.HttpContext.GetGlobalResourceObject%2A>, que es un método que hace referencia a los recursos localizados.
 
-## <a name="localize-code"></a>Localizar código
+## <a name="localize-code"></a>Localización de código
 
 #### <a name="to-localize-code"></a>Para localizar el código
 
@@ -69,7 +71,7 @@ ms.locfileid: "86016694"
      Las cadenas localizadas aparecen en la aplicación. Para mostrar los recursos localizados, el servidor de SharePoint debe tener instalado el paquete de idioma que coincide con la referencia cultural del archivo de recursos.
 
 ## <a name="see-also"></a>Consulte también
-- [Localizar soluciones de SharePoint](../sharepoint/localizing-sharepoint-solutions.md)
-- [Cómo: localizar una característica](../sharepoint/how-to-localize-a-feature.md)
-- [Cómo: localizar el marcado ASPX](../sharepoint/how-to-localize-aspx-markup.md)
-- [Cómo: agregar un archivo de recursos](../sharepoint/how-to-add-a-resource-file.md)
+- [Localización de soluciones de SharePoint](../sharepoint/localizing-sharepoint-solutions.md)
+- [Cómo: para localizar una característica](../sharepoint/how-to-localize-a-feature.md)
+- [Cómo: para localizar el marcado ASPX](../sharepoint/how-to-localize-aspx-markup.md)
+- [Cómo: para agregar un archivo de recursos](../sharepoint/how-to-add-a-resource-file.md)

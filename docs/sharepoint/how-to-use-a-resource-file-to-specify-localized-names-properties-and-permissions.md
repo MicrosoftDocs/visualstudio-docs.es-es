@@ -1,6 +1,8 @@
 ---
 title: Cómo usar un archivo de recursos en un proyecto de SharePoint | Microsoft Docs
 titleSuffix: ''
+description: Use un archivo de recursos en un proyecto de SharePoint para poder proporcionar nombres localizados, definir propiedades y aplicar permisos para los objetos definidos en un modelo BDC.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1693308c591e60a2df0e4d8e18ece8cc9b598fd2
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: ecc2bfab37e534e4edc005273ab5fc826b771228
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585750"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304369"
 ---
 # <a name="how-to-use-a-resource-file-in-a-sharepoint-project"></a>Cómo usar un archivo de recursos en un proyecto de SharePoint
 
@@ -49,7 +51,7 @@ ms.locfileid: "91585750"
 
      Para obtener información sobre cómo definir estos elementos, vea [archivos de modelo y de recursos](/previous-versions/office/developer/sharepoint-2010/aa674515(v=office.14)).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Cómo: para agregar un archivo de modelo BDC existente a un proyecto de SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)
 - [Creación de un modelo de conectividad a datos profesionales](../sharepoint/creating-a-business-data-connectivity-model.md)
 - [Cómo: para crear un modelo BDC](../sharepoint/how-to-create-a-bdc-model.md)

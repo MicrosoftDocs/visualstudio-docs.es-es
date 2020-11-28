@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: incluir archivos mediante un módulo | Microsoft Docs'
+description: Sepa cómo incluir archivos mediante un módulo, que es un contenedor que permite implementar archivos como páginas maestras ASPX, archivos de texto o imágenes en SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1ada86be30e207e36c7e0d84d3fd5dd877605e4d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 381cb529db3f4116a9c42041c26e0e1e242073df
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016303"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305411"
 ---
-# <a name="how-to-include-files-by-using-a-module"></a>Cómo: incluir archivos mediante un módulo
+# <a name="how-to-include-files-by-using-a-module"></a>Cómo: para incluir archivos mediante un módulo
   Los *módulos* (que no se deben confundir con [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] los módulos) son contenedores que permiten implementar archivos como páginas maestras aspx, archivos de texto o imágenes en SharePoint.
 
  Puede optar por implementar un archivo en una biblioteca de documentos o como un archivo normal (por ejemplo, default. aspx) fuera de una biblioteca de documentos. Para agregar un archivo a una biblioteca de documentos, especifique `Type="GhostableInLibrary"` como atributo en el elemento **File** . Esta configuración indica a SharePoint que cree un elemento de lista para ir al archivo cuando se agrega a la biblioteca. Para implementar un archivo fuera de una biblioteca de documentos, especifique `Type="Ghostable"` o simplemente omita el atributo **Type** .
@@ -64,5 +66,5 @@ ms.locfileid: "86016303"
      Los archivos se copian en las ubicaciones especificadas en SharePoint.
 
 ## <a name="see-also"></a>Consulte también
-- [Empaquetar e implementar soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
+- [Empaquetado e implementación de soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
 - [Desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md)

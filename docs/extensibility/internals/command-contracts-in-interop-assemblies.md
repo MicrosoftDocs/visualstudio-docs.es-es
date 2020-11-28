@@ -1,5 +1,7 @@
 ---
 title: Contratos de comandos en ensamblados de interoperabilidad | Microsoft Docs
+description: Obtenga información sobre el contrato básico para controlar los comandos a través de la interfaz Microsoft. VisualStudio. OLE. Interop. IOleCommandTarget.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f20a4f479d62cd1b64c3b13ff6e1a949656a668
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d655bfb3e6f2206156cd3a6d091ea04f18afe91a
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709689"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304905"
 ---
 # <a name="command-contracts-in-interop-assemblies"></a>Contratos de comandos en ensamblados de interoperabilidad
 El contrato básico para controlar los comandos a través de la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaz es que el entorno llama al <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> método para determinar si se admite el comando y, si se admite, para determinar su estado y el texto. A continuación, el entorno llama al <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> método para ejecutar el comando.
@@ -27,7 +29,7 @@ El contrato básico para controlar los comandos a través de la <xref:Microsoft.
 
  En los casos en los que los comandos deben funcionar en una ventana de jerarquía, <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> se debe usar la interfaz. La <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> interfaz tiene un contrato similar con métodos similares: <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> y <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A> .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Cómo agrega VSPackages los elementos de la interfaz de usuario](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Enrutamiento de comandos en VSPackages](../../extensibility/internals/command-routing-in-vspackages.md)
 - [Implementación de comandos](../../extensibility/internals/command-implementation.md)

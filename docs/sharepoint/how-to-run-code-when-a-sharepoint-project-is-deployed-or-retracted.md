@@ -1,6 +1,8 @@
 ---
 title: Ejecutar código cuando se implementa o se retira un proyecto de SharePoint
 titleSuffix: ''
+description: Obtenga información sobre cómo ejecutar código cuando se implementa o retracta un proyecto de SharePoint para que pueda controlar los eventos generados por Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bb83696febe9eca700ae9651492dbd188e38f856
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 24e6536dc5fdc62bb3b1c32bbd7c379fcef1f8cd
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585763"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304476"
 ---
 # <a name="how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>Cómo: ejecutar código cuando se implementa o retracta un proyecto de SharePoint
   Si desea realizar tareas adicionales cuando se implementa o retracta un proyecto de SharePoint, puede controlar los eventos generados por Visual Studio. Para obtener más información, vea [extender el empaquetado e implementación de SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md).
@@ -54,6 +56,6 @@ ms.locfileid: "91585763"
 ## <a name="deploy-the-extension"></a>Implementar la extensión
  Para implementar la extensión, cree un [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] paquete de extensión (VSIX) para el ensamblado y cualquier otro archivo que desee distribuir con la extensión. Para obtener más información, vea [deploy Extensions for the SharePoint Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Extender el empaquetado e implementación de SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md)
 - [Cómo: ejecutar código cuando se ejecutan los pasos de implementación](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)

@@ -1,5 +1,7 @@
 ---
 title: Combinar XML en manifiestos de características y paquetes | Microsoft Docs
+description: Código XML generado por el diseñador de mezcla y agregado por el usuario en los manifiestos de características y paquetes de SharePoint. Obtenga información sobre los elementos de manifiesto de paquetes y características, y las excepciones de combinación.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1378cddbc9770af923a98f1b7083a8792874b5b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16305ed63f48d9f14e35aeb8d37e35f23f40be25
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90842795"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304238"
 ---
 # <a name="merge-xml-in-feature-and-package-manifests"></a>Combinar XML en manifiestos de características y paquetes
   Las características y los paquetes se definen mediante [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] archivos de manifiesto. Estos manifiestos empaquetados son una combinación de datos generada a partir de diseñadores y [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] que los usuarios han escrito en la plantilla de manifiesto. En el tiempo de empaquetado, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] combina las [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] instrucciones personalizadas con el diseñador proporcionado [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] para formar el archivo de [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] manifiesto empaquetado. Los elementos similares, con las excepciones que se indican más adelante en las excepciones de combinación, se combinan para evitar [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] errores de validación después de implementar los archivos en SharePoint y para que los archivos de manifiesto sean más pequeños y eficientes.
@@ -78,6 +80,6 @@ ms.locfileid: "90842795"
 ## <a name="manually-add-deployed-files"></a>Agregar manualmente los archivos implementados
  Algunos elementos del manifiesto, como ApplicationResourceFile y DwpFiles, especifican una ubicación que incluye un nombre de archivo. Sin embargo, si se agrega una entrada de nombre de archivo a la plantilla de manifiesto, no se agrega el archivo subyacente al paquete. Debe agregar el archivo al proyecto para incluirlo en el paquete y establecer su propiedad tipo de implementación en consecuencia.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Empaquetado e implementación de soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
 - [Build and debug SharePoint solutions](../sharepoint/building-and-debugging-sharepoint-solutions.md) (Compilar y depurar las soluciones de SharePoint)
