@@ -1,5 +1,7 @@
 ---
 title: Uso de Ver la definición
+description: Aprenda a usar el comando Ver la definición para ver y editar el código sin tener que cambiar el contexto del código que está escribiendo actualmente.
+ms.custom: SEO-VS-2020
 ms.date: 01/10/2018
 ms.topic: how-to
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 753d26e2c48f6263ccbc9c403f255948b5077924
-ms.sourcegitcommit: a466720759426265b18b0f8d74a970e72493d700
+ms.openlocfilehash: 0b706e730767c7c79fbeebc11291ecd11f4635b6
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86092315"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95596929"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Procedimiento para ver y editar código mediante Ver la definición (Alt+F12)
 

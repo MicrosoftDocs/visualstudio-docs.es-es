@@ -1,5 +1,7 @@
 ---
 title: Métodos abreviados de teclado y de mouse para el Diseñador de clases
+description: Aprenda a usar el teclado junto con el mouse para llevar a cabo acciones de navegación en el Diseñador de clases y en la ventana Detalles de clase.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30932a6c94bc6104aeea0244f06f471d0a639b21
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: c184a12474e2d7ff0b626547acaaf2a37d460c8e
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85533671"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901107"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>Métodos abreviados de teclado y de mouse en el Diagrama de clases y la ventana Detalles de clase
 

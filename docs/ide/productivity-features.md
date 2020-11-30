@@ -1,5 +1,7 @@
 ---
 title: Guía de productividad
+description: Conozca los métodos abreviados de teclado y las características de productividad de Visual Studio que pueden ayudarle a escribir y depurar código y controlar los errores de forma eficaz.
+ms.custom: SEO-VS-2020
 ms.date: 4/29/2020
 ms.topic: conceptual
 author: ornellaalt
@@ -7,12 +9,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a10b1f9b3dd6dda643a2775cf7b89221fba71d8
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: bee392ddc4e7a0d185bdcc2d0e31dbd17832c733
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808147"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95870877"
 ---
 # <a name="productivity-guide-for-visual-studio"></a>Guía de productividad para Visual Studio
 
@@ -50,7 +52,7 @@ Escriba código más rápidamente con las características siguientes.
 
 - **Usar fragmentos de código**. Puede usar fragmentos de código integrados o crear sus propios fragmentos de código.
 
-     Para insertar un fragmento de código, en la barra de menús, elija**Editar** > **IntelliSense** > **Insertar fragmento de código** o **Delimitar con**, o abra el menú contextual en un archivo y seleccione **Fragmento de código** > **Insertar fragmento de código** o **Delimitar con**. Para obtener más información, vea [Fragmentos de código](../ide/code-snippets.md).
+     Para insertar un fragmento de código, en la barra de menús, elija **Editar** > **IntelliSense** > **Insertar fragmento de código** o **Delimitar con**, o abra el menú contextual en un archivo y seleccione **Fragmento de código** > **Insertar fragmento de código** o **Delimitar con**. Para obtener más información, vea [Fragmentos de código](../ide/code-snippets.md).
 
 - **Corregir errores de código alineados**. Las acciones rápidas le permiten refactorizar, generar o modificar el código de otra manera fácilmente con una sola acción. Estas acciones se pueden aplicar con los iconos de destornillador ![icono de destornillador](media/screwdriver-icon.png) o de bombilla ![icono de bombilla](media/light-bulb-icon.png) o presionando **Alt**+**Entrar** o **Ctrl**+ **.** cuando el cursor esté en la línea de código adecuada. Para obtener más información, vea [Acciones rápidas](quick-actions.md).
 

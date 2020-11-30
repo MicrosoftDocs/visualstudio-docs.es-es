@@ -1,5 +1,7 @@
 ---
 title: Adición de compatibilidad del editor con otros lenguajes
+description: Vea cómo el editor de Visual Studio admite la lectura y el desplazamiento por los distintos lenguajes de computación y cómo puede agregar compatibilidad con otros lenguajes.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c6761e74e68bad1ef800246d400c79b9689a18c
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 7bf84f4e48b9f070b3cebed4c2e17e5fc07992e3
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809077"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903902"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Agregar compatibilidad con otros lenguajes en el editor de Visual Studio
 

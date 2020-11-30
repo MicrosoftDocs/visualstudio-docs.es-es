@@ -1,5 +1,7 @@
 ---
 title: Funciones de los fragmentos de código
+description: Aprenda sobre las funciones GenerateSwitchCases(EnumerationLiteral), ClassName() y SimpleTypeName(TypeName) que están disponibles para usar con fragmentos de código de C#.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,22 +14,22 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7df85c429794d61028d5304108d289dfe9bf496
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e6529f4f82f7a8a6862ae85adbf170d2fb6f8706
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594245"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006515"
 ---
 # <a name="code-snippet-functions"></a>Funciones de los fragmentos de código
 
 Hay tres funciones disponibles para utilizar con fragmentos de código de C#. Las funciones se especifican en el elemento [Function](../ide/code-snippets-schema-reference.md#function-element) del fragmento de código. Para obtener información sobre cómo crear fragmentos de código, vea [Fragmentos de código](../ide/code-snippets.md).
 
-## <a name="functions"></a>Funciones
+## <a name="functions"></a>Functions
 
 En la tabla siguiente se describen las funciones que puede utilizar con el elemento `Function` en fragmentos de código.
 
-|Función|Description|Lenguaje|
+|Función|Descripción|Idioma|
 |--------------|-----------------|--------------|
 |`GenerateSwitchCases(EnumerationLiteral)`|Genera una instrucción switch y un conjunto de instrucciones case para los miembros de la enumeración especificada por el parámetro `EnumerationLiteral`. El parámetro `EnumerationLiteral` debe ser una referencia a un literal de enumeración o un tipo de enumeración.|C#|
 |`ClassName()`|Devuelve el nombre de la clase que contiene el fragmento de código insertado.|C#|
@@ -35,7 +37,7 @@ En la tabla siguiente se describen las funciones que puede utilizar con el eleme
 
 ## <a name="generateswitchcases-example"></a>Ejemplo de GenerateSwitchCases
 
-En el siguiente ejemplo se muestra cómo usar la función `GenerateSwitchCases`. Cuando se inserta este fragmento de código y se especifica una enumeración en el literal `$switch_on$`, el literal `$cases$` genera una instrucción `case` para cada valor de la enumeración.
+En el ejemplo siguiente se muestra cómo usar la función `GenerateSwitchCases`. Cuando se inserta este fragmento de código y se especifica una enumeración en el literal `$switch_on$`, el literal `$cases$` genera una instrucción `case` para cada valor de la enumeración.
 
 ```xml
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
@@ -77,7 +79,7 @@ En el siguiente ejemplo se muestra cómo usar la función `GenerateSwitchCases`.
 
 ## <a name="classname-example"></a>Ejemplo de ClassName
 
-En el siguiente ejemplo se muestra cómo usar la función `ClassName`. Cuando se inserta este fragmento de código, el literal `$classname$` se reemplaza con el nombre de la clase envolvente en esa ubicación del archivo de código.
+En el ejemplo siguiente se muestra cómo usar la función `ClassName`. Cuando se inserta este fragmento de código, el literal `$classname$` se reemplaza con el nombre de la clase envolvente en esa ubicación del archivo de código.
 
 ```xml
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
@@ -155,7 +157,7 @@ En este ejemplo se muestra cómo utilizar la función `SimpleTypeName`. Al inser
 </CodeSnippets>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Elemento Function](../ide/code-snippets-schema-reference.md#function-element)
 - [Referencia de esquemas de fragmentos de código](../ide/code-snippets-schema-reference.md)

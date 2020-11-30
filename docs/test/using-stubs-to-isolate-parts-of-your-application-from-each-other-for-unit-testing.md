@@ -1,5 +1,7 @@
 ---
 title: Uso de código auxiliar para aislar partes de la aplicación para pruebas
+description: Aprenda sobre el código auxiliar, que es un fragmento de código que ocupa el lugar de otro componente durante las pruebas. El uso de código auxiliar devuelve resultados coherentes.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
@@ -10,12 +12,12 @@ author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 268cfaa0a5df458ae529f5f2d369dc157ef64548
-ms.sourcegitcommit: f2bb3286028546cbd7f54863b3156bd3d65c55c4
+ms.openlocfilehash: eeb7b981dcaec97d52c24ea40476f0bec84e608e
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93325971"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598567"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Usar código auxiliar para aislar partes de la aplicación entre sí para las pruebas unitarias
 
@@ -29,7 +31,7 @@ En el diagrama, el componente StockAnalyzer es el que deseamos probar. Utiliza n
 
 ![Clases Real y Stub según una interfaz.](../test/media/fakesinterfaces.png)
 
-Dado que el código auxiliar depende de la capacidad de estructurar el código de esta manera, normalmente se utiliza código auxiliar para aislar una parte de la aplicación de otra. Para aislarla de otros ensamblados que no están bajo su control, como *System.dll* , utilizaría normalmente correcciones de compatibilidad (shims). Vea [Usar correcciones de compatibilidad (shim) para aislar la aplicación de otros ensamblados para pruebas unitarias](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).
+Dado que el código auxiliar depende de la capacidad de estructurar el código de esta manera, normalmente se utiliza código auxiliar para aislar una parte de la aplicación de otra. Para aislarla de otros ensamblados que no están bajo su control, como *System.dll*, utilizaría normalmente correcciones de compatibilidad (shims). Vea [Usar correcciones de compatibilidad (shim) para aislar la aplicación de otros ensamblados para pruebas unitarias](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).
 
 ## <a name="how-to-use-stubs"></a>Usar códigos auxiliares
 
@@ -147,14 +149,14 @@ Para utilizar código auxiliar, primero debe generar tipos de código auxiliar a
 
 #### <a name="add-a-fakes-assembly"></a>Incorporación de un ensamblado de Fakes
 
-1. En el **Explorador de soluciones** : 
+1. En el **Explorador de soluciones**: 
     - Para un proyecto de .NET Framework anterior (que no sea de estilo SDK), expanda el nodo **Referencias** del proyecto de pruebas unitarias.
     ::: moniker range=">=vs-2019"
-    - Para un proyecto de estilo SDK que tenga como destino .NET Framework o .NET Core, expanda el nodo **Dependencias** para buscar el ensamblado que desea imitar en **Ensamblados** , **Proyectos** o **Paquetes**.
+    - Para un proyecto de estilo SDK que tenga como destino .NET Framework o .NET Core, expanda el nodo **Dependencias** para buscar el ensamblado que desea imitar en **Ensamblados**, **Proyectos** o **Paquetes**.
     ::: moniker-end
     - Si está trabajando en Visual Basic, seleccione **Mostrar todos los archivos** en la barra de herramientas del **Explorador de soluciones** para ver el nodo **Referencias**.
 
-2. Seleccione el ensamblado que contiene las definiciones de clases para las que desea crear las correcciones de compatibilidad (shim). Por ejemplo, si quiere realizar una corrección de compatibilidad para **DateTime** , seleccione **System.dll**.
+2. Seleccione el ensamblado que contiene las definiciones de clases para las que desea crear las correcciones de compatibilidad (shim). Por ejemplo, si quiere realizar una corrección de compatibilidad para **DateTime**, seleccione **System.dll**.
 
 3. En el menú contextual, seleccione **Agregar ensamblado de Fakes**.
 

@@ -1,5 +1,7 @@
 ---
 title: Creación y ejecución de pruebas unitarias en aplicaciones para UWP
+description: Aprenda sobre la compatibilidad de Visual Studio con las pruebas unitarias de aplicaciones de la Plataforma universal de Windows (UWP). Visual Studio proporciona plantillas de prueba unitaria para C#, Visual Basic y C++.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 ms.workload:
 - uwp
 author: mikejo5000
-ms.openlocfilehash: 4109f743caf7c62450591f78e90b92113fc4107e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fcf93dff859e2332c79b50086d0dc50d6bd304c8
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568885"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598346"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>Tutorial: Crear y ejecutar pruebas unitarias para aplicaciones UWP
 
@@ -97,7 +99,7 @@ En el Editor de código, edite la prueba unitaria y agregue las aserciones y la 
 
 Para compilar la solución y ejecutar la prueba unitaria mediante el Explorador de pruebas, siga estos pasos:
 
-1. En el menú **Prueba** , seleccione **Windows**y, a continuación, elija **Explorador de pruebas**.
+1. En el menú **Prueba** , seleccione **Windows** y, a continuación, elija **Explorador de pruebas**.
 
 2. En el menú **Compilar** , elija **Compilar solución**.
 
@@ -115,7 +117,7 @@ Para compilar la solución y ejecutar la prueba unitaria mediante el Explorador 
    > [!TIP]
    > Puede seleccionar una o varias pruebas unitarias enumeradas en el Explorador de pruebas; a continuación, haga clic con el botón derecho y elija **Ejecutar pruebas seleccionadas**.
    >
-   > Además, puede elegir **Depurar pruebas seleccionadas**, **Abrir prueba**y usar la opción **Propiedades** .
+   > Además, puede elegir **Depurar pruebas seleccionadas**, **Abrir prueba** y usar la opción **Propiedades** .
    >
    > ![Menú contextual de prueba unitaria del Explorador de pruebas unitarias](../test/media/unit_test_win8_unittestexplorer_contextmenu.png)
 
@@ -123,7 +125,7 @@ Para compilar la solución y ejecutar la prueba unitaria mediante el Explorador 
 
    ![Explorador de pruebas unitarias: prueba completada](../test/media/unit_test_win8_unittestexplorer_done.png)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Prueba de aplicaciones para UWP con Visual Studio](../test/unit-test-your-code.md)
 - [Compilar y probar una aplicación de UWP](/azure/devops/pipelines/apps/windows/universal?tabs=vsts)

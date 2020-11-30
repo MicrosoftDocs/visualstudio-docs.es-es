@@ -1,5 +1,7 @@
 ---
 title: Modificar pruebas de carga
+description: Conozca las diferencias entre escenarios, conjuntos de contadores y parámetros de ejecución, que definen las pruebas de carga.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: ba16ed02-137e-40bf-a4cb-45d87d922d37
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b95689871a987c018720c529743b8447f39b2bf6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 81825b2a9060d75a792e73519486275fd34569a4
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288707"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441474"
 ---
 # <a name="edit-load-tests"></a>Editar pruebas de carga
 
@@ -50,5 +52,5 @@ Para más información, consulte [Configurar los parámetros de ejecución de pr
 
 ## <a name="see-also"></a>Vea también
 
-- [Analizar los resultados de pruebas de carga con el analizador de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analizar los resultados de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [Analizar las infracciones de las reglas de umbral](../test/analyze-threshold-rule-violations-in-load-tests.md)

@@ -1,5 +1,7 @@
 ---
 title: Conjuntos de contadores de la prueba de carga
+description: Aprenda a usar la administración del Editor de pruebas de carga para administrar conjuntos de contadores mediante la selección de los equipos y la asignación de los conjuntos de contadores que se recopilarán de cada equipo.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 f1_keywords:
@@ -13,12 +15,12 @@ ms.assetid: 64315c2f-a0b2-4378-be16-0774b99beef5
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1eeb99d58a9fc0547d118c529878d8b02cc83dda
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 15d04d105264d07a1f883c5b67ce57c8590375a8
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287693"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440018"
 ---
 # <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>Cómo: Administrar conjuntos de contadores mediante el Editor de pruebas de carga
 
@@ -50,17 +52,17 @@ La administración de conjuntos de contadores implica la elección del conjunto 
     > [!NOTE]
     > Esto último sólo se aplica si se tiene más de un parámetro de ejecución en la prueba de carga.
 
-4. (Opcional) Elija **Agregar equipo** para agregar un nuevo equipo con el fin de supervisarlo. Se le solicitará un nombre. Escriba el nombre de un equipo y verá los nodos que puede seleccionar bajo la nueva entrada. Por ejemplo, **ASP.NET**, **IIS**, **SQL** y otros. Active las casillas situadas delante de los nodos que desee seleccionar. Los nuevos contadores aparecen en el panel **Vista previa de las selecciones**.
+4. (Opcional) Elija **Agregar equipo** para agregar un nuevo equipo con el fin de supervisarlo. Se le pedirá que proporcione un nombre. Escriba el nombre de un equipo y verá los nodos que puede seleccionar bajo la nueva entrada. Por ejemplo, **ASP.NET**, **IIS**, **SQL** y otros. Active las casillas situadas delante de los nodos que desee seleccionar. Los nuevos contadores aparecen en el panel **Vista previa de las selecciones**.
 
 5. (Opcional) En el cuadro de texto **Etiquetas de equipo**, escriba una etiqueta para asociarla al equipo. Por ejemplo, "MáquinaPruebas12 en lab3."
 
      Las etiquetas de equipo permiten identificar un equipo con un nombre fácil de reconocer.
 
-     Las etiquetas se muestran en el nodo **Asignaciones de conjuntos de contadores** del árbol en el Editor de pruebas de carga. Lo que es más importante, las etiquetas se muestran en los informes de Excel, que sirve de ayuda a las partes interesadas para identificar el rol que desempeña el equipo en la prueba de carga. Por ejemplo, "Servidor1 web en lab2" o "SQL Server2 en oficina Phoenix". Para más información, consulte [Informar de los resultados de las pruebas de carga para las comparaciones de pruebas o los análisis de tendencias](../test/compare-load-test-results.md).
+     Las etiquetas se muestran en el nodo **Asignaciones de conjuntos de contadores** del árbol en el Editor de pruebas de carga. Lo que es más importante, las etiquetas se muestran en los informes de Excel, que sirve de ayuda a las partes interesadas para identificar el rol que desempeña el equipo en la prueba de carga. Por ejemplo, "Servidor1 web en lab2" o "SQL Server2 en oficina Phoenix". Para obtener más información, vea [Informar de los resultados de las pruebas de carga para las comparaciones de pruebas o los análisis de tendencias](../test/compare-load-test-results.md).
 
 6. Elija **Aceptar**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Controladores y agentes de prueba](configure-test-agents-and-controllers-for-load-tests.md)
 - [Especificar los conjuntos de contadores y las reglas de umbral para equipos en una prueba de carga](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)

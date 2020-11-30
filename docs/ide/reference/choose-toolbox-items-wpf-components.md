@@ -1,5 +1,7 @@
 ---
 title: Elegir elementos del cuadro de herramientas, Componentes de WPF
+description: Aprenda a usar la pestaña Componentes de WPF para mostrar los controles de Windows Presentation Foundation que puede seleccionar en el equipo local.
+ms.custom: SEO-VS-2020
 ms.date: 06/21/2017
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28576fab1ed4b39810b6f4cc32fb2955a7a44039
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 7b9727d335607f15101222e40be193de2315b7dc
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099354"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871332"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Elegir elementos del Cuadro de herramientas, componentes de WPF
 
@@ -35,11 +37,11 @@ En esta pestaña del cuadro de diálogo **Elegir elementos del cuadro de herrami
 
 Las columnas de la pestaña **Componentes WPF** contienen la siguiente información:
 
-**Name**
+**Nombre**
 
 Enumera los nombres de los controles de WPF para los que existen entradas en el Registro del equipo.
 
-**Espacio de nombres**
+**Namespace**
 
 Muestra la jerarquía del espacio de nombres de la [API de .NET](/dotnet/api/?view=netframework-4.7&preserve-view=true) que define la estructura del componente. Ordene esta columna para mostrar los componentes disponibles en cada espacio de nombres de .NET instalado en el equipo.
 
@@ -53,7 +55,7 @@ Muestra la ubicación del ensamblado de .NET. La ubicación predeterminada de to
 
 ## <a name="uielement-list"></a>Lista de UIElement
 
-### <a name="filter"></a>Filtro
+### <a name="filter"></a>Filter
 
 Filtra la lista de controles de WPF según la cadena proporcionada en el cuadro de texto. Se muestran todas las coincidencias encontradas en cualquiera de las cuatro columnas.
 
@@ -61,11 +63,11 @@ Filtra la lista de controles de WPF según la cadena proporcionada en el cuadro 
 
 Borra la cadena de filtro.
 
-**Examinar**
+**Browse**
 
 Abre el cuadro de diálogo **Abrir**, que le permite ir a ensamblados que contienen controles de WPF. Úselo para cargar ensamblados que no se encuentran en la caché global de ensamblados.
 
-**Idioma**
+**Lenguaje**
 
 Muestra el lenguaje localizado del ensamblado que contiene el control de WPF seleccionado.
 
@@ -81,7 +83,7 @@ Además, si se aplican metadatos en tiempo de diseño al control personalizado y
 
 Puede hacer referencia a los controles directamente en la vista XAML mediante la asignación del espacio de nombres y el ensamblado para el control.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Cuadro de herramientas](../../ide/reference/toolbox.md)
 - [Introducción a WPF](../../designers/getting-started-with-wpf.md)

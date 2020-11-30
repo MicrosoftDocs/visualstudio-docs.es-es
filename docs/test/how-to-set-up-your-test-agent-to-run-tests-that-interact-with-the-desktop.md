@@ -1,5 +1,7 @@
 ---
 title: Configuración de un agente de pruebas
+description: Aprenda a ejecutar pruebas automatizadas que interactúen con el escritorio mediante la configuración del agente para que se ejecute como un proceso y no como un servicio.
+ms.custom: SEO-VS-2020
 ms.date: 09/18/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +10,12 @@ ms.assetid: 3a94dd07-6d17-402c-ae8f-7947143755c9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 994d5da8af7b00ab8af55681d4a67e9681ebbde6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13949465677301a336f0a4738e903657dbfe2b7f
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287537"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441018"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Procedimiento Configurar el agente de pruebas para ejecutar pruebas que interactúen con el escritorio
 

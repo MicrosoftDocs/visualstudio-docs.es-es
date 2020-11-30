@@ -1,5 +1,7 @@
 ---
 title: Generar pruebas unitarias para el código con IntelliTest
+description: IntelliTest explora el código .NET para generar datos de prueba y un conjunto de pruebas unitarias. Aprenda a ejecutar IntelliTest para ver las pruebas que no se superan y corregirlas.
+ms.custom: SEO-VS-2020
 ms.date: 10/05/2015
 ms.topic: conceptual
 f1_keywords:
@@ -9,14 +11,14 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 65b1de58f195b957d080bd21144c22479b1aafed
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5d503d37cfcacace8250da4d3e91221364c66b5c
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589596"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442474"
 ---
-# <a name="how-to-generate-unit-tests-by-using-intellitest"></a>Procedimiento Generación de pruebas unitarias con IntelliTest
+# <a name="how-to-generate-unit-tests-by-using-intellitest"></a>Procedimiento: Generación de pruebas unitarias con IntelliTest
 
 IntelliTest explora el código .NET para generar datos de prueba y un conjunto de pruebas unitarias. Para cada instrucción en el código, se genera una entrada de prueba que ejecutará esa instrucción. Se lleva a cabo un análisis de caso para cada bifurcación condicional en el código. Por ejemplo, se analizan las instrucciones `if`, las aserciones y todas las operaciones que pueden producir excepciones. Con este análisis puede generar los datos de pruebas que deben usarse en una prueba unitaria parametrizada para cada método. También crea pruebas unitarias con una cobertura de código elevada.
 
@@ -68,7 +70,7 @@ En cuanto a las pruebas superadas, compruebe que los resultados de los cuales se
 
      Si el código del método cambia, vuelva a ejecutar IntelliTest para mantener sincronizadas las pruebas unitarias con los cambios.
 
-## <a name="assist-use-intellitest-to-focus-code-exploration"></a>Asistir: use IntelliTest para centrarse en la exploración del código
+## <a name="assist-use-intellitest-to-focus-code-exploration"></a>Ayudar: use IntelliTest para centrarse en la exploración del código
 
 1. Si el código es más complejo, IntelliTest le facilitará la exploración. Por ejemplo, si un método tiene una interfaz como parámetro y varias clases implementan dicha interfaz, IntelliTest descubre esas clases y notifica una advertencia.
 
@@ -100,7 +102,7 @@ Especifique la relación general entre entradas y salidas que deben validar las 
 
 ### <a name="q-when-does-a-generated-test-pass-or-fail"></a>P: ¿Cuándo se supera o falla una prueba generada?
 
-**R:** Se supera al igual que otras pruebas unitarias, es decir, si no se inicia ninguna excepción. Falla si se produce un error de aserción o si el código que se prueba detecta una excepción no controlada.
+**R:** Se supera al igual que otras pruebas unitarias, es decir, si no ocurre ninguna excepción. Falla si se produce un error de aserción o si el código que se prueba detecta una excepción no controlada.
 
 Si tiene una prueba que puede superarse si se detectan determinadas excepciones, puede establecer uno de los siguientes atributos según sus requisitos en el método de prueba, clase de prueba o nivel de ensamblado:
 
@@ -114,7 +116,7 @@ Si tiene una prueba que puede superarse si se detectan determinadas excepciones,
 
 ### <a name="q-can-i-add-assumptions-to-the-parameterized-unit-test"></a>P: ¿Puedo agregar suposiciones a la prueba unitaria parametrizada?
 
-**R:** Sí. Use suposiciones para especificar los datos de prueba que no se necesitan para la prueba unitaria para un método específico. Use la clase <xref:Microsoft.Pex.Framework.PexAssume> para agregar hipótesis. Por ejemplo, puede agregar una suposición en que la variable `lengths` no sea nula como esta:
+**R:** Sí. Use suposiciones para especificar los datos de pruebas que no se necesitan para la prueba unitaria para un método específico. Use la clase <xref:Microsoft.Pex.Framework.PexAssume> para agregar hipótesis. Por ejemplo, puede agregar una suposición en que la variable `lengths` no sea nula como esta:
 
 `PexAssume.IsNotNull(lengths);`
 
@@ -122,15 +124,15 @@ Si agrega una suposición y vuelve a ejecutar IntelliTest, pueden eliminarse los
 
 ### <a name="q-can-i-add-assertions-to-the-parameterized-unit-test"></a>P: ¿Puedo agregar aserciones a la prueba unitaria parametrizada?
 
-**R:** Sí. IntelliTest comprobará que las aserciones de la instrucción sean realmente correctas cuando ejecute las pruebas unitarias. Use la clase <xref:Microsoft.Pex.Framework.PexAssert> o la API de aserción que se incluye en el marco de pruebas para agregar aserciones. Por ejemplo, puede agregar una aserción de que dos variables son iguales.
+**R:** Sí. IntelliTest comprobará que las aserciones de su instrucción sean realmente correctas cuando ejecute las pruebas unitarias. Use la clase <xref:Microsoft.Pex.Framework.PexAssert> o la API de aserción que se incluye en el marco de pruebas para agregar aserciones. Por ejemplo, puede agregar una aserción de que dos variables son iguales.
 
 `PexAssert.AreEqual(a, b);`
 
 Si agrega una aserción y vuelve a ejecutar IntelliTest, este comprobará que su aserción sea válida o, en caso contrario, la prueba fallará.
 
-### <a name="q-can-i-generate-parameterized-unit-tests-without-running-intellitest-first"></a><a name="NoRun"></a> P: ¿Puedo generar pruebas unitarias con parámetros sin ejecutar primero IntelliTest?
+### <a name="q-can-i-generate-parameterized-unit-tests-without-running-intellitest-first"></a><a name="NoRun"></a> P: ¿puedo generar pruebas unitarias con parámetros sin ejecutar primero IntelliTest?
 
-**R:** Sí, haga clic con el botón derecho en la clase o método, y elija **Crear IntelliTest**.
+**A:** Sí, haga clic con el botón secundario en la clase o método y elija **crear IntelliTest**.
 
 ![Haga clic con el botón derecho en el editor y elija Crear IntelliTest](../test/media/pexcreateintellitest.png)
 
@@ -141,7 +143,7 @@ Acepte el formato predeterminado para generar las pruebas o cambie la denominaci
 <a name="extend-framework"></a>
 ### <a name="q-can-i-use-other-unit-test-frameworks-with-intellitest"></a>P: ¿Puedo usar otros marcos de pruebas unitarias con IntelliTest?
 
-**R:** Sí, siga estos pasos para [buscar e instalar otros marcos](../test/install-third-party-unit-test-frameworks.md).
+**A:** Sí, siga estos pasos para [buscar e instalar otros marcos](../test/install-third-party-unit-test-frameworks.md).
 Las extensiones de marcos de pruebas también están disponibles en Visual Studio Marketplace, por ejemplo, [Generador de prueba de NUnit](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371).
 
 Después de reiniciar Visual Studio y volver a abrir la solución, haga clic con el botón secundario en la clase o método y elija **Crear IntelliTest**. Seleccione su marco instalado aquí:
@@ -150,6 +152,6 @@ Después de reiniciar Visual Studio y volver a abrir la solución, haga clic con
 
 A continuación, ejecute IntelliTest para generar pruebas unitarias individuales en sus correspondientes archivos *.g.cs*.
 
-### <a name="q-can-i-learn-more-about-how-the-tests-are-generated"></a>P: ¿Puedo obtener más información sobre cómo se generan las pruebas?
+### <a name="q-can-i-learn-more-about-how-the-tests-are-generated"></a>P: ¿Puedo obtener más información acerca de cómo se generan las pruebas?
 
-**R:** Sí, para obtener una visión general, lea esta [entrada de blog](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/).
+**A:** Sí, para obtener una visión general, lea esta [publicación de blog](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/).

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2d7dc38f1a25826ba275738cd8e758a2ad5d90e
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 95e35037ba07dcba1f51da7b47b7fca40a447dfb
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86386646"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850031"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Ejecutar pruebas unitarias con el Explorador de pruebas
 
@@ -34,7 +34,7 @@ Visual Studio incluye los marcos de pruebas unitarias de Microsoft para código 
 
 ## <a name="run-tests-in-test-explorer"></a>Ejecutar pruebas en Explorador de pruebas
 
-Al compilar el proyecto de prueba, las pruebas aparecen en el Explorador de pruebas. Si el Explorador de pruebas no está visible, elija **Prueba** en el menú de Visual Studio, elija **Ventanas**y, después, **Explorador de pruebas**.
+Al compilar el proyecto de prueba, las pruebas aparecen en el Explorador de pruebas. Si el Explorador de pruebas no está visible, elija **Prueba** en el menú de Visual Studio, elija **Ventanas** y, después, **Explorador de pruebas**.
 
 ::: moniker range="vs-2017"
 ![Explorador de pruebas unitarias](../test/media/ute_failedpassednotrunsummary.png)
@@ -158,15 +158,15 @@ Puede definir sus propios niveles de la jerarquía y del grupo por **Estado** y,
 ::: moniker range="vs-2017"
 |Agrupar|Descripción|
 |-|-----------------|
-|**Duración**|Agrupa las pruebas por tiempo de ejecución: **Rápido**, **Medio**y **Lento**.|
-|**Resultado**|Agrupa las pruebas por resultados de ejecución: **Pruebas no superadas**, **Pruebas omitidas**y **Pruebas superadas**.|
+|**Duración**|Agrupa las pruebas por tiempo de ejecución: **Rápido**, **Medio** y **Lento**.|
+|**Resultado**|Agrupa las pruebas por resultados de ejecución: **Pruebas no superadas**, **Pruebas omitidas** y **Pruebas superadas**.|
 |**Rasgos**|Agrupa las pruebas por los pares categoría-valor definidos. La sintaxis para especificar los valores y las categorías de rasgo se define desde el marco de pruebas unitarias.|
 |**Proyecto**|Agrupa las pruebas por el nombre de los proyectos.|
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 |Agrupar|Descripción|
 |-|-----------------|
-|**Duración**|Agrupa las pruebas por tiempo de ejecución: **Rápido**, **Medio**y **Lento**.|
+|**Duración**|Agrupa las pruebas por tiempo de ejecución: **Rápido**, **Medio** y **Lento**.|
 |**Estado**|Agrupa las pruebas por resultados de ejecución: **Pruebas no superadas**, **Pruebas omitidas**, **Pruebas superadas**, **No ejecutadas**.|
 |**Marco de destino** | Agrupa las pruebas por marco de destino de sus proyectos. |
 |**Espacio de nombres**|Agrupa las pruebas por espacio de nombres contenedor.|
@@ -233,6 +233,21 @@ A partir de la versión 16.7 de Visual Studio 2019, puede elegir el botón **
 También puede activar o desactivar las casillas de los grupos primarios de la jerarquía. Esta acción crea una lista de reproducción dinámica que siempre actualiza la lista de reproducción en función de las pruebas que haya en ese grupo. Por ejemplo, si coloca una marca de verificación junto a una clase, cualquier prueba que se agregue desde esa clase pasará a formar parte de esta lista de reproducción. Si elimina una prueba de esa clase, se quitará de la lista de reproducción. Para obtener más información sobre las reglas, guarde la lista de reproducción con el botón Guardar de la barra de herramientas y abra el archivo *.playlist* que se ha creado en el disco. En este archivo se enumeran todas las reglas y pruebas individuales que componen una lista de reproducción.
 
 ![Archivo XML de lista de reproducción](../test/media/vs-2019/test-explorer-playlist-xml-file.png)
+
+Si quiere crear una lista de reproducción para los rasgos, use el formato siguiente. Asegúrese de que haya un espacio entre el nombre de `TestCategory` y `[Value]`.
+```xml
+<Playlist Version="2.0">
+  <Rule Name="Includes" Match="Any">
+    <Rule Match="All">
+      <Property Name="Solution" />
+        <Rule Match="Any">
+            <Property Name="Trait" Value="TestCategory [Value]" />
+        </Rule>
+    </Rule>
+  </Rule>
+</Playlist>
+```
+
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
@@ -289,16 +304,16 @@ Para filtrar por otros criterios:
 |**Ruta de acceso del archivo**|Busca coincidencias en el nombre de archivo completo de los archivos de origen de prueba.|
 |**Nombre completo**|Busca coincidencias en el nombre completo de los métodos, las clases y los espacios de nombres de prueba.|
 |**Salida**|Busca en los mensajes de error definidos por el usuario que se escriben en los resultados estándar (stdout) o en los errores estándar (stderr). La sintaxis para especificar los mensajes de salida se define en el marco de pruebas unitarias.|
-|**Resultado**|Busca coincidencias en los nombres de categoría del Explorador de pruebas: **Pruebas no superadas**, **Pruebas omitidas**y **Pruebas superadas**.|
+|**Resultado**|Busca coincidencias en los nombres de categoría del Explorador de pruebas: **Pruebas no superadas**, **Pruebas omitidas** y **Pruebas superadas**.|
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 |Calificador:|Descripción|
 |-|-----------------|
-|**Estado**|Busca coincidencias en los nombres de categoría del Explorador de pruebas: **Pruebas no superadas**, **Pruebas omitidas**y **Pruebas superadas**.|
+|**Estado**|Busca coincidencias en los nombres de categoría del Explorador de pruebas: **Pruebas no superadas**, **Pruebas omitidas** y **Pruebas superadas**.|
 |**Rasgos**|Busca coincidencias en el valor y en la categoría de rasgo. La sintaxis para especificar los valores y las categorías de rasgo se define en el marco de pruebas unitarias.|
 |**Nombre completo**|Busca coincidencias en el nombre completo de los métodos, las clases y los espacios de nombres de prueba.|
 |**Proyecto**|Busca coincidencias en los nombres de proyecto de prueba.|
-|**Marco de destino**|Busca coincidencias en los nombres de categoría del Explorador de pruebas: **Pruebas no superadas**, **Pruebas omitidas**y **Pruebas superadas**.|
+|**Marco de destino**|Busca coincidencias en los nombres de categoría del Explorador de pruebas: **Pruebas no superadas**, **Pruebas omitidas** y **Pruebas superadas**.|
 |**Espacio de nombres**|Busca coincidencias en los espacios de nombres de prueba.|
 |**Clase**|Busca coincidencias en los nombres de clase de prueba.|
 ::: moniker-end

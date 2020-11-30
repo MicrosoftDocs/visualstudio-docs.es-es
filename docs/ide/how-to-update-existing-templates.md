@@ -1,5 +1,7 @@
 ---
 title: Actualización de las plantillas de elemento de proyecto existentes
+description: Aprenda a usar el Asistente para exportar plantillas y otros procesos manuales para actualizar las plantillas de elemento de proyecto que ya haya creado.
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: d5d9726ecbf3cb7c403f682aadb197a26b0dc26b
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: e3a709070d777ebaf600fc05abf0e651eaef5b1a
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283923"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95596890"
 ---
 # <a name="how-to-update-existing-templates"></a>Procedimiento Actualizar plantillas existentes
 

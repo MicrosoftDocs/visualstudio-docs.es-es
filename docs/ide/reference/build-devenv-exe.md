@@ -1,5 +1,7 @@
 ---
 title: -Build (devenv.exe)
+description: Conozca el modificador de la línea de comandos Build (devenv) y cómo usarlo para compilar una solución o un proyecto con un archivo de configuración de solución especificado.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1766fe22573554b41ebfaa38fbd9e8d6c90c5790
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4b23a15984c4ded6ca77b1660e14c53be9fd42e3
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595766"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871436"
 ---
 # <a name="build-devenvexe"></a>/Build (devenv.exe)
 
@@ -35,7 +37,7 @@ devenv SolutionName /Build [SolnConfigName [/Project ProjName [/ProjectConfig Pr
 
 - *SolutionName*
 
-  Obligatorio. Ruta de acceso completa y nombre del archivo de solución.
+  Necesario. Ruta de acceso completa y nombre del archivo de solución.
 
 - *SolnConfigName*
 
@@ -53,7 +55,7 @@ devenv SolutionName /Build [SolnConfigName [/Project ProjName [/ProjectConfig Pr
 
   Opcional. Nombre de un archivo que quiera enviar al resultado de la herramienta. Si el archivo ya existe, la herramienta anexa el resultado al final del archivo.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 - El modificador `/Build` realiza la misma función que el comando de menú **Compilar solución** en el entorno de desarrollo integrado (IDE).
 
@@ -73,9 +75,9 @@ El comando siguiente compila el proyecto `CSharpWinApp` con la configuración de
 devenv "%USERPROFILE%\source\repos\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Compilación y limpieza de proyectos y soluciones](../../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
+- [Compilar y limpiar proyectos y soluciones](../../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [Modificadores de línea de comandos para Devenv](../../ide/reference/devenv-command-line-switches.md)
 - [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
 - [/Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md)

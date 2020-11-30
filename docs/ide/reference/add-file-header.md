@@ -1,5 +1,7 @@
 ---
 title: Agregar encabezado de archivo
+description: Aprenda a usar un archivo EditorConfig para agregar encabezados de archivo a archivos, proyectos y soluciones existentes.
+ms.custom: SEO-VS-2020
 ms.date: 07/10/2020
 ms.topic: reference
 author: mikadumont
@@ -7,12 +9,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 44c3b64d9fb8944a578d054b7d98d4bf39bde3bc
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 5f2e4715c0333b02f120ec5f92d9f742196c04f3
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810381"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95870864"
 ---
 # <a name="add-file-header"></a>Agregar encabezado de archivo
 
@@ -36,7 +38,7 @@ Esta generación de código se aplica a:
 
 3. Establezca el valor de la regla para que sea igual al texto de encabezado que quiere aplicar. Puede usar `{fileName}` como un marcador de posición para el nombre de archivo.
 
-    ![Regla de encabezado de archivo de EditorConfig](media/add-file-header-rule.png)
+    ![Captura de pantalla del archivo EditorConfig que muestra el valor file_header_template.](media/add-file-header-rule.png)
 
     > [!NOTE]
     > No puede tener multilíneas explícitas en un archivo EditorConfig, y deberá usar el carácter de nueva línea de Unix para insertar nuevas líneas.
@@ -47,7 +49,7 @@ Esta generación de código se aplica a:
 
 6. Seleccione **Agregar encabezado de archivo**. 
 
-    ![Regla de encabezado de archivo de EditorConfig](media/add-file-header.png)
+    ![Captura de pantalla de la opción Agregar encabezado de archivo.](media/add-file-header.png)
 
 7. Para aplicar el encabezado de archivo a un proyecto o a una solución completos, seleccione **Proyecto** o **Solución** en la opción **Corregir todas las repeticiones de:** .
 

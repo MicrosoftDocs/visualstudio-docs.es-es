@@ -1,5 +1,7 @@
 ---
 title: Características de generación de código
+description: Conozca cómo Visual Studio puede ayudarle a generar, corregir y refactorizar el código.
+ms.custom: SEO-VS-2020
 ms.date: 01/11/2018
 ms.topic: conceptual
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a043c2e1e79d629b32d46f0f54d233cd0ea9cb54
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 14cc2965589ec46565740bf17037013f10640aea
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594258"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903876"
 ---
 # <a name="code-generation-features-in-visual-studio"></a>Características de generación de código en Visual Studio
 

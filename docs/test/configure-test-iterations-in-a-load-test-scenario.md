@@ -1,5 +1,7 @@
 ---
 title: Configuración de iteraciones de prueba para pruebas de carga
+description: Aprenda a configurar los valores de iteración de prueba, a fin de configurar el número máximo de iteraciones del escenario y cuánto tiempo de pausa debe haber entre ellas.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.assetid: ac480fb7-f4f7-47dc-9ae5-98be3aca4fba
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6adbdedf8a71319877c5527e00e0e7c5e73fa6b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b5316b03220a094d3280aba3eb8c46f190a2874f
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288785"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442565"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>Configurar iteraciones de prueba en un escenario de prueba de carga
 
@@ -89,9 +91,9 @@ La propiedad **Tiempo de reflexión entre iteraciones de la prueba** se emplea p
 
 5. Cuando haya terminado de cambiar la propiedad, elija **Guardar** en el menú **Archivo**. A continuación, puede ejecutar la prueba de carga con el nuevo valor de **Tiempo de reflexión entre iteraciones de la prueba**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Edición de escenarios de prueba de carga](../test/edit-load-test-scenarios.md)
-- [Configurar agentes y controladores de pruebas para pruebas de carga](../test/configure-test-agents-and-controllers-for-load-tests.md)
+- [Editar escenarios de prueba de carga](../test/edit-load-test-scenarios.md)
+- [Configuración de agentes y controladores de pruebas para pruebas de carga](../test/configure-test-agents-and-controllers-for-load-tests.md)
 - [Propiedades de los escenarios de prueba de carga](../test/load-test-scenario-properties.md)
-- [Modificar los tiempos de reflexión para simular los retrasos de la interacción humana en un sitio web](../test/edit-think-times-in-load-test-scenarios.md)
+- [Modificar los tiempos de reflexión de usuario para simular los retrasos de la interacción humana en un sitio web](../test/edit-think-times-in-load-test-scenarios.md)

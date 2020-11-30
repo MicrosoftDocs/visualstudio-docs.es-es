@@ -1,5 +1,7 @@
 ---
 title: Uso del diagrama de actividad del usuario virtual de las pruebas de carga
+description: Aprenda a usar el Diagrama de actividad del usuario virtual para aislar errores que experimentaron usuarios virtuales individuales que ejecutaron la prueba de carga.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: d1c10fb9-cfeb-4e7f-9991-2d1e1103699e
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c58dd4f6e6a0c8fe1bd468053bf18c3635b1ee9d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7f87542e528b743fa59dfe82aa52a57f1a9cfa2c
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78169383"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598242"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Tutorial: Usar el Diagrama de actividad del usuario virtual para aislar problemas de rendimiento
 
@@ -24,7 +26,7 @@ El Diagrama de actividad del usuario virtual permite visualizar la actividad del
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
 
 - Visual Studio Enterprise
 
@@ -69,7 +71,7 @@ Después de haber ejecutado la prueba de carga y recopilado los datos de activid
 
 3. En la herramienta **Ampliar período de tiempo** que hay bajo el **Diagrama de detalles del usuario virtual**, ajuste los controles deslizantes izquierdo y derecho hasta que ambos estén cerca del icono de infracción del umbral. Esto cambiará la escala de tiempo en el **Diagrama de actividad del usuario virtual**.
 
-4. En **Leyenda de detalles**, active la casilla correspondiente a **(Resaltar errores)** . Observe que el usuario virtual que produjo la infracción del umbral aparece resaltado.
+4. En **Leyenda de detalles**, active la casilla correspondiente a **(Resaltar errores)**. Observe que el usuario virtual que produjo la infracción del umbral aparece resaltado.
 
 5. En el panel **Resultados del filtro**, desactive las casillas **Mostrar resultados correctos** y **HttpError**, pero deje activada la casilla **ValidationRuleError**.
 
@@ -91,7 +93,7 @@ Después de haber ejecutado la prueba de carga y recopilado los datos de activid
 
     - **Start Time**
 
-    - **Duración**
+    - **Duration**
 
     - **Agent**
 

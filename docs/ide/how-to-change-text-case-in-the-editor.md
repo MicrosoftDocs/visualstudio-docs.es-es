@@ -1,5 +1,7 @@
 ---
 title: Conversión de texto en mayúsculas o minúsculas
+description: Aprenda a usar comandos de menú o métodos abreviados de teclado para convertir las mayúsculas y minúsculas del texto seleccionado a todo en mayúsculas o todo en minúsculas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28ed534a72c542f978fc8d4121f471cad79ea64d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4574874e14ee66bbfb0f11d7767d59516b6666f3
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284638"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597293"
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>Cómo: Cambiar las mayúsculas y minúsculas en el editor
 
@@ -27,7 +29,7 @@ Puede usar comandos de menú o métodos abreviados de teclado para convertir las
 
 ## <a name="to-change-text-case"></a>Para cambiar mayúsculas y minúsculas del texto
 
-1. Seleccione el texto que quiere convertir.
+1. Seleccione el texto que desea convertir.
 
 2. Para convertir todo el texto en mayúsculas, seleccione **Editar** > **Avanzadas** > **Poner en mayúsculas** o presione **Ctrl**+**Mayús**+**U**.
 

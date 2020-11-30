@@ -1,5 +1,7 @@
 ---
 title: 'Inicio rápido: Un paseo por el IDE de Visual Studio'
+description: Conozca algunas de las ventanas, menús y otras características de la interfaz de usuario del entorno de desarrollo integrado (IDE) de Visual Studio.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/21/2019
 ms.topic: quickstart
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08ec25312068d5c69cdb0df9b7c293ae0575f608
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.openlocfilehash: 4511658a454c1431967905e88428842c3ba00c64
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88238860"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95870896"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Guía de inicio rápido: primer vistazo al IDE de Visual Studio
 
@@ -127,7 +129,7 @@ En la **Lista de errores** se muestran los errores, las advertencias y los mensa
 
 ![Lista de errores en Visual Studio](media/quickstart-IDE-error-list.png)
 
-## <a name="output-window"></a>Ventana de salida
+## <a name="output-window"></a>Resultados (ventana)
 
 En la ventana **Resultados** se muestran los mensajes de resultados de la compilación del proyecto y del proveedor de control de código fuente.
 

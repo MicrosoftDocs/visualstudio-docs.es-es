@@ -1,5 +1,7 @@
 ---
 title: Agregar un origen de datos a una prueba de rendimiento web
+description: Aprenda a enlazar datos para proporcionar valores diferentes a la misma prueba, por ejemplo, a los parámetros de envío de formulario.
+ms.custom: SEO-VS-2020
 ms.date: 10/03/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: 2ada376d-f168-455d-9643-6acb535360c1
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 94ad53e4ac3d65bfe6cf08bf03f1f79c2075e03d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c43545af9063ad83c61631b59032751fd9526a12
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289071"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442206"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Agregar un origen de datos a una prueba de rendimiento web
 
@@ -32,13 +34,13 @@ La solución también debe incluir una prueba de rendimiento web que examine las
 
 ![Solución con prueba de rendimiento web](../test/media/web_test_databinding_solution.png)
 
-## <a name="create-a-sql-database"></a>Crear una base de datos SQL
+## <a name="create-a-sql-database"></a>Creación de una base de datos SQL
 
 ::: moniker range="vs-2017"
 
 1. Si no tiene Visual Studio Enterprise, puede descargarlo desde la página [Descargas de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download).
 
-2. Cree una base de datos SQL.
+2. Crea una base de datos SQL.
 
      ![Agregar una nueva base de datos SQL](../test/media/web_test_databinding_sql_addnewdb.png)
 
@@ -68,7 +70,7 @@ La solución también debe incluir una prueba de rendimiento web que examine las
 
 1. Si no tiene Visual Studio Enterprise, puede descargarlo desde la página [Descargas de Visual Studio](https://visualstudio.microsoft.com/downloads).
 
-2. Cree una base de datos SQL.
+2. Crea una base de datos SQL.
 
      ![Agregar una nueva base de datos SQL](../test/media/web_test_databinding_sql_addnewdb.png)
 

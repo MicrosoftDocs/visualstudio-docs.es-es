@@ -1,5 +1,7 @@
 ---
 title: Personalización de menús y barras de herramientas
+description: Aprenda a personalizar los menús y las barras de herramientas de Visual Studio, así como los comandos incluidos en ellos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -27,12 +29,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed85d3a3406cf7abf4bc08e728cc647d605e16ae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e9111631014275da92da73966ba0310971dbf27f
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284404"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597241"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Personalización de menús y barras de herramientas en Visual Studio
 
@@ -79,7 +81,7 @@ Puede personalizar Visual Studio no solo mediante la adición y la eliminación 
         También puede arrastrar una barra de herramientas por el borde izquierdo para moverla a cualquier parte del área de acoplamiento principal.
 
         > [!NOTE]
-        > Para obtener más información sobre cómo mejorar el uso y la accesibilidad de las barras de herramientas, vea [Cómo: Establecer opciones de accesibilidad de IDE](../ide/reference/how-to-set-ide-accessibility-options.md).
+        > Para obtener más información sobre cómo mejorar el uso y la accesibilidad de las barras de herramientas, vea [Cómo: Establecer opciones de accesibilidad del IDE](../ide/reference/how-to-set-ide-accessibility-options.md).
 
 ## <a name=""></a><a name="customizing_menu">Personalizar un menú o una barra de herramientas</a>
 

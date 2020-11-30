@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b1fe36a4ee74ca1b41c1db1d79a6e4683c1f2b1f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e53ef96ad8fab8b26f04ccd5f7f0488d1f0d6985
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542433"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974081"
 ---
 # <a name="use-ipython-in-the-interactive-window"></a>Uso de IPython en la ventana interactiva
 
@@ -82,6 +82,4 @@ IPython tiene muchas otras características útiles, como el escape al shell del
 
 ## <a name="see-also"></a>Vea también
 
-- Para usar Jupyter fácilmente y sin instalación, pruebe el [servicio hospedado en Azure Notebooks](https://notebooks.azure.com/) gratuito que le permite conservar y compartir sus blocs de notas con otras personas.
-
-- [Data Science Virtual Machine de Azure](/azure/machine-learning/data-science-virtual-machine/overview) también está configurado para ejecutar blocs de notas de Jupyter, junto con una amplia gama de otras herramientas de ciencia de datos.
+- [Azure Data Science Virtual Machine](/azure/machine-learning/data-science-virtual-machine/overview) está preconfigurado para ejecutar cuadernos de Jupyter, junto con una amplia variedad de otras herramientas de ciencia de datos.

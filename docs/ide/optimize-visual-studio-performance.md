@@ -1,6 +1,8 @@
 ---
 title: Mejorar el rendimiento si Visual Studio es lento
 titleSuffix: ''
+description: Aprenda a mejorar el rendimiento de Visual Studio si detecta que se ejecuta lentamente.
+ms.custom: SEO-VS-2020
 ms.date: 04/11/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: 6495e8506e12c0c5e5f878a23c609fe53a401bde
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6e6f93b7709144e6682bc54d5686fde5ff650f56
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75597001"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871475"
 ---
 # <a name="optimize-visual-studio-performance"></a>Optimización del rendimiento de Visual Studio
 
@@ -51,7 +53,7 @@ Además, no ejecute la solución desde una unidad USB. Cópiela en la unidad de 
 
 Sus comentarios nos ayudan a mejorar. Use la característica **Notificar un problema** para "registrar" un seguimiento y enviárnoslo. Seleccione el icono de comentarios situado junto a **Inicio rápido** o seleccione **Ayuda** > **Enviar comentarios** > **Notificar un problema** en la barra de menús. Para más información, vea [Cómo notificar un problema con Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Sugerencias y trucos de rendimiento](../ide/visual-studio-performance-tips-and-tricks.md)
 - [Visual Studio blog - Load solutions faster with Visual Studio 2017 version 15.6](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/) (Blog de Visual Studio: Cargar soluciones más rápido con Visual Studio 2017 versión 15.6)

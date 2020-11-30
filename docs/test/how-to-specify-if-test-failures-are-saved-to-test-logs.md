@@ -1,5 +1,7 @@
 ---
 title: Almacenamiento del registro de errores de prueba de carga
+description: Aprenda cómo especificar que quiere guardar el registro de pruebas si se produce un error en una prueba de carga cambiando la propiedad Guardar registro si la prueba no es correcta.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: 08a7fe98-a7f7-4b8d-94a3-ec82b65a2aaf
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eaef2888cecc7622a3dc589a6bab816b0c134668
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a6dbde0f1a1f854bfd7dc6c2f74e3081a33b4796
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287511"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95439910"
 ---
 # <a name="how-to-specify-if-test-failures-are-saved-to-test-logs-using-the-load-test-editor"></a>Cómo: Especificar si los errores de las pruebas se guardan en los registros de pruebas mediante el Editor de pruebas de carga
 

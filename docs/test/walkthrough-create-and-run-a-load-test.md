@@ -1,5 +1,7 @@
 ---
 title: Crear y ejecutar una prueba de carga
+description: Aprenda a crear una prueba de carga que contenga pruebas unitarias. Puede crear y ejecutar pruebas de carga mediante Visual Studio Enterprise.
+ms.custom: SEO-VS-2020
 ms.date: 10/01/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +12,14 @@ ms.assetid: bbf075a5-96d5-48ed-a03c-330f0fc04748
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 780485a4d42cad574cddaaa5a9ae51a65a1a9b7d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: bdcd96e8fc87a7627689af1c67a81b69b2ecee72
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79093636"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598268"
 ---
-# <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Tutorial: Creación y ejecución de una prueba de carga que contiene pruebas unitarias
+# <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Tutorial: Crear y ejecutar una prueba de carga que contiene pruebas unitarias
 
 En este tutorial se crea una prueba de carga que contiene pruebas unitarias.
 
@@ -59,7 +61,7 @@ En este tutorial, se realizarán las siguientes tareas:
 
 1. La primera página es la **Pantalla de bienvenida** del **Asistente para prueba de carga nueva**.
 
-1. Seleccione **Siguiente**.
+1. Elija **Siguiente**.
 
 ### <a name="to-edit-settings-for-load-test-scenario"></a>Para editar la configuración del escenario de prueba de carga
 
@@ -86,13 +88,13 @@ En este tutorial, se realizarán las siguientes tareas:
 
 5. Establezca **Recuento máximo de usuarios** en 100 usuarios.
 
-6. Seleccione **Siguiente**.
+6. Elija **Siguiente**.
 
 ### <a name="to-select-test-mix-model-for-the-scenario"></a>Para seleccionar el modelo de combinación de pruebas para el escenario
 
 1. En **¿Cómo debe modelarse la combinación de pruebas?** , seleccione **A partir del número total de pruebas**.
 
-2. Seleccione **Siguiente**.
+2. Elija **Siguiente**.
 
 ### <a name="to-add-unit-tests-to-the-scenario"></a>Para agregar pruebas unitarias al escenario
 
@@ -112,7 +114,7 @@ En este tutorial, se realizarán las siguientes tareas:
 
 7. Mueva el control deslizante de **Distribución** de **CreditTest** ligeramente hacia la derecha para ajustar la distribución de las pruebas. Observe que los otros controles deslizantes se mueven automáticamente a la izquierda para que la distribución permanezca al 100%.
 
-8. Seleccione **Siguiente**.
+8. Elija **Siguiente**.
 
 ### <a name="to-select-network-mix-for-test-scenario"></a>Para seleccionar la combinación de redes para el escenario de prueba
 
@@ -124,7 +126,7 @@ En este tutorial, se realizarán las siguientes tareas:
 
 ### <a name="to-specify-computers-to-monitor-with-counter-sets-during-load-test-run"></a>Para especificar los equipos que se van a supervisar con conjuntos de contadores durante la ejecución de pruebas de carga
 
-1. Seleccione **Siguiente**.
+1. Elija **Siguiente**.
 
      Para obtener más información sobre los conjuntos de contadores, vea [Especificar los conjuntos de contadores y las reglas de umbral para equipos en una prueba de carga](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
 
@@ -145,10 +147,10 @@ En este tutorial, se realizarán las siguientes tareas:
 
 2. Si su simulación de prueba supera cualquier umbral, aparecerán iconos en los nodos de control de árbol para indicar una infracción del umbral. Los errores tienen un círculo rojo superpuesto; las advertencias tienen superpuesto un triángulo amarillo. Busque un contador que superara el umbral y, para representarlo gráficamente, arrastre su icono al gráfico. Puede hacerlo mientras se ejecuta la prueba.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Editar la combinación de pruebas para especificar qué pruebas incluir en un escenario de prueba de carga](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)
-- [Especificar tipos de redes virtuales en un escenario de prueba de carga](../test/specify-virtual-network-types-in-a-load-test-scenario.md)
+- [Especificar los tipos de redes virtuales](../test/specify-virtual-network-types-in-a-load-test-scenario.md)
 - [Modificar escenarios de prueba de carga](../test/edit-load-test-scenarios.md)
 - [Modificar modelos de carga para modelar las actividades de usuarios virtuales](../test/edit-load-patterns-to-model-virtual-user-activities.md)
 - [Editar modelos de combinación de pruebas para especificar la probabilidad de que un usuario virtual ejecute una prueba](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)

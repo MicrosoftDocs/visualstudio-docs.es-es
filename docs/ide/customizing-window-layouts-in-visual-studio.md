@@ -1,5 +1,7 @@
 ---
 title: Personalizar los diseños de ventana
+description: Aprenda a personalizar las características que Windows exhibe para crear diseños que funcionen mejor con varios flujos de trabajo de desarrollo.
+ms.custom: SEO-VS-2020
 ms.date: 07/31/2020
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2135183a474e29229d941bbd47af8d6abc263e49
-ms.sourcegitcommit: 30a810f39c06958c79505773f052e96b982e5d5b
+ms.openlocfilehash: c433a6faf3eab9dd959cc25f26033c74852c0899
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "87546082"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006671"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Personalizar los diseños de ventana de Visual Studio
 

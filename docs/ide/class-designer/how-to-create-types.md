@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: Crear tipos con el Diseñador de clases'
+description: Aprenda a diseñar nuevos tipos para proyectos de C# y Visual Basic creándolos en un diagrama de clases.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98e489a37e5d75cbc17d17c32a1fa3b53f9993f8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ac6e59f4dc6fa68962ac061132e3fab90ec8e955
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770213"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901445"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Cómo: Crear tipos con el Diseñador de clases
 
@@ -36,11 +38,11 @@ Para diseñar nuevos tipos para proyectos de C# y Visual Basic, créelos en un d
 
     - **Enum**
 
-    - **Interface**
+    - **Interfaz**
 
     - **Estructura** (VB) o **Struct** (C#)
 
-    - **Delegate**
+    - **Delegado**
 
     - **Módulo** (solo en VB)
 
@@ -56,12 +58,12 @@ Para diseñar nuevos tipos para proyectos de C# y Visual Basic, créelos en un d
 
 4. Ahora agregue otros elementos para definir el tipo:
 
-    |**For**|**Add**|
+    |**For**|**Add (Agregar)**|
     |-|-|
     |Clases, clases abstractas, estructuras o structs|Métodos, propiedades, campos, eventos, constructores (método), destructores (método) y constantes que definen el tipo|
     |Enumeraciones|Valores de campo que constituyen la enumeración|
     |Interfaces|Métodos, propiedades y eventos que constituyen la interfaz|
-    |delegado|Parámetros que definen el delegado|
+    |Delegado|Parámetros que definen el delegado|
     |Módulo|Métodos, propiedades, campos, eventos, constructores (método) y constantes que definen el módulo|
 
      Vea [Crear miembros](creating-and-configuring-type-members.md#create-members).
@@ -86,7 +88,7 @@ Para diseñar nuevos tipos para proyectos de C# y Visual Basic, créelos en un d
 
    Los atributos personalizados se aplican al tipo.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Cómo: Crear la herencia entre tipos](how-to-create-inheritance-between-types.md)
 - [Cómo: Crear asociaciones entre tipos](how-to-create-associations-between-types.md)

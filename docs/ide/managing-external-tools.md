@@ -1,5 +1,7 @@
 ---
 title: Administrar herramientas externas
+description: Aprenda a agregar y administrar nuevas herramientas externas a las que se puede acceder mediante el menú Herramientas.
+ms.custom: SEO-VS-2020
 ms.date: 11/20/2017
 ms.topic: conceptual
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f22c687f88c7736d5c088ebc28ff490c4c16b8f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c77ab079a2950d4417c2d00ef74cf86d5c206de7
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591299"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95596695"
 ---
 # <a name="manage-external-tools"></a>Administrar herramientas externas
 
@@ -57,11 +59,11 @@ Puede agregar una herramienta externa para que aparezca en el menú **Herramient
 
    * Argumentos: `/root, "$(ItemDir)"`
 
-   ![Cuadro de diálogo Herramientas externas](media/external-tools-dialog.png)
+   ![Herramientas externas, cuadro de diálogo](media/external-tools-dialog.png)
 
 Lo siguiente es una lista completa de los argumentos que se pueden utilizar al definir una herramienta externa:
 
-|Name|Argumento|Description|
+|NOMBRE|Argumento|Descripción|
 |----------|--------------|-----------------|
 |Ruta de acceso del elemento|$(ItemPath)|Nombre de archivo completo del archivo actual (unidad + ruta de acceso + nombre de archivo).|
 |Directorio del elemento|$(ItemDir)|Directorio del archivo actual (unidad + ruta de acceso).|
@@ -83,6 +85,6 @@ Lo siguiente es una lista completa de los argumentos que se pueden utilizar al d
 > [!NOTE]
 > La barra de estado del IDE muestra las variables **Línea actual** y **Columna actual** para indicar dónde se encuentra el punto de inserción en el **Editor de código** activo. La variable **Texto actual** devuelve el texto o el código seleccionado en esa ubicación.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Herramientas de compilación de C/C++](/cpp/build/reference/c-cpp-build-tools)

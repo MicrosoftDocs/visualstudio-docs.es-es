@@ -1,5 +1,7 @@
 ---
 title: Alias (Comando)
+description: Aprenda a usar el comando Alias para crear un alias para un comando completo, comandos y argumentos completos u otro alias.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 031f1a4bab1acee3f3d0999b17c0b607f7808df9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8a9521809baf338c542b0c1cba288f643b985f02
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596910"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871514"
 ---
 # <a name="alias-command"></a>Alias (Comando)
 Crea un nuevo alias para un comando completo, un comando completo con argumentos u otro alias.
@@ -42,14 +44,14 @@ Opcional. Nombre del nuevo alias. Si no se proporciona ningún valor para `alias
 `aliasstring`\
 Opcional. Nombre de comando completo o alias existente y cualquier parámetro que desee crear como alias. Si no se proporciona ningún valor para `aliasstring`, se muestran el nombre y la cadena de alias del alias especificado.
 
-## <a name="switches"></a>Modificadores
+## <a name="switches"></a>Conmutadores
 /delete o /del o /d\
 Opcional. Elimina el alias especificado, quitándolo de la finalización automática.
 
 /reset\
 Opcional. Restablece la lista de alias predefinidos a su configuración original. Es decir, restaura todos los alias predefinidos y quita todos los alias definidos por el usuario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 Puesto que los alias representan comandos, tienen que estar situados al principio de la línea de comandos.
 
 Cuando se emite este comando, se deben incluir los modificadores inmediatamente detrás del comando, no detrás de los alias, pues de lo contrario el propio modificador se incluye como parte de la cadena de alias.
@@ -75,9 +77,9 @@ Este ejemplo muestra una lista de todos los alias actuales y sus definiciones.
 >Tools.Alias
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Ventana Comandos](../../ide/reference/command-window.md)
 - [Cuadro Buscar/Comando](../../ide/find-command-box.md)
-- [Alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

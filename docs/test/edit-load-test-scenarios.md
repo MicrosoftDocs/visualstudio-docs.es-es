@@ -1,5 +1,7 @@
 ---
 title: Escenarios de prueba de carga
+description: Aprenda a editar escenarios de prueba de carga, que le permiten configurar pruebas para simular cargas de trabajo realistas y complejas.
+ms.custom: SEO-VS-2020
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.assetid: fec04f2e-bf38-4d44-b2ec-fa50f58fd0d9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8fa323d275628fe580763709884552754acfba81
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 95e7c612e7379c44c95f17e7b12c36f7a6f07d8c
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593244"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442656"
 ---
 # <a name="edit-load-test-scenarios"></a>Edición de escenarios de prueba de carga
 
@@ -33,7 +35,7 @@ Las opciones y los valores de configuración iniciales que se especifican al cre
 
 Los escenarios contienen los componentes siguientes:
 
-|Término|de esquema JSON|
+|Término|Definición|
 |-|-|
 |Combinación de exploradores|Simula que los usuarios virtuales acceden a un sitio web a través de diversos exploradores web.|
 |Modelo de carga|Especifica el número de usuarios virtuales que están activos durante una prueba de carga y la tasa con que se inician nuevos usuarios. Por ejemplo: de pasos, constante y basada en objetivos.|
@@ -57,7 +59,7 @@ Un escenario tiene algunas otras propiedades que se pueden modificar mediante el
 |**Configurar los valores de retraso del escenario:** con el **Editor de pruebas de carga** y la ventana **Propiedades**, puede especificar un retraso antes de iniciar un escenario en una prueba de carga. Un ejemplo en el que puede que desee utilizar la propiedad **Retrasar hora de inicio** es si necesita que un escenario empiece a generar elementos que utiliza otro escenario. Puede retrasar el escenario consumidor para permitir que el escenario productor rellene algunos datos.|-   [Configurar los retrasos de inicio del escenario](../test/configure-scenario-start-delays.md)|
 |**Especificar las máquinas remotas que se utilizarán en un escenario de prueba de carga:** una vez creada una prueba de carga, puede modificar las propiedades del escenario de prueba de carga para indicar los agentes de prueba que desea incluir. Para obtener más información, vea [Controladores y agentes de prueba](configure-test-agents-and-controllers-for-load-tests.md).|-   [Cómo: Especificar los agentes de prueba que se van a usar](../test/how-to-specify-test-agents-to-use-in-load-test-scenarios.md)|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Editar pruebas de carga](../test/edit-load-tests.md)
 - [Propiedades de los escenarios de prueba de carga](../test/load-test-scenario-properties.md)

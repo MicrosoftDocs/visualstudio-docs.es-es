@@ -1,5 +1,7 @@
 ---
 title: Agregar nuevo elemento (Comando)
+description: Aprenda a usar el comando Agregar nuevo elemento para agregar un nuevo elemento de solución o un nuevo conjunto de marcos a la solución actual.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38be691ae7c49ffbd6c98c9e4beb25b6ebb021b6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ac07b374ef08a963426b9bfd44f101a8863f04c8
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585696"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871293"
 ---
 # <a name="add-new-item-command"></a>Agregar nuevo elemento (Comando)
 Agrega un nuevo elemento de solución (como un archivo .htm, .css o .txt o un conjunto de marcos) a la solución actual y lo abre.
@@ -33,7 +35,7 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
 `filename`\
 Opcional. La ruta de acceso y el nombre de archivo del elemento que se va a agregar a la solución.
 
-## <a name="switches"></a>Modificadores
+## <a name="switches"></a>Conmutadores
 /t: `templatename`\
 Opcional. Especifica el tipo de archivo que se va a crear. Si no se proporciona ningún nombre de plantilla, se crea un archivo de texto de manera predeterminada.
 
@@ -63,9 +65,9 @@ En este ejemplo se agrega un elemento de solución nuevo, MyHTMLpg, a la soluci�
 >File.AddNewItem MyHTMLpg /t:"General\HTML Page"
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Ventana Comandos](../../ide/reference/command-window.md)
 - [Cuadro Buscar/Comando](../../ide/find-command-box.md)
-- [Alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

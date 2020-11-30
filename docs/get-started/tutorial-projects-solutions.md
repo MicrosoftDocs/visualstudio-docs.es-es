@@ -1,20 +1,23 @@
 ---
 title: Introducción a proyectos y soluciones
+description: Conozca la diferencia entre proyectos y soluciones y cómo usarlos en Visual Studio.
 ms.date: 11/17/2020
 ms.technology: vs-ide-general
-ms.custom: get-started
+ms.custom:
+- get-started
+- SEO-VS-2020
 ms.topic: tutorial
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf99c191ef6cfe32ec8ccc9b2cfd57f761941be7
-ms.sourcegitcommit: e8a13978131f257d91ce37c5a2e0d153a4c400ef
+ms.openlocfilehash: 8b22695dac3f75b9e90950ee5428bb906436d661
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94704058"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903941"
 ---
 # <a name="learn-about-projects-and-solutions"></a>Información sobre proyectos y soluciones
 
@@ -55,7 +58,7 @@ Comenzaremos nuestro periplo creando una solución vacía. Cuando se familiarice
 
 1. En el panel izquierdo, expanda **Otros tipos de proyectos** y seleccione **Soluciones de Visual Studio**. En el panel central, elija la plantilla **Solución en blanco**. Ponga el nombre **QuickSolution** a la solución y luego haga clic en el botón **Aceptar**.
 
-   ![Plantilla Solución en blanco de Visual Studio 2017](media/tutorial-projects-new-solution.png)
+   ![Plantilla de solución en blanco de Visual Studio 2017](media/tutorial-projects-new-solution.png "Plantilla de solución en blanco de Visual Studio 2017.")
 
    La **página de inicio** se cierra y aparece una solución en el **Explorador de soluciones**, en el lado derecho de la ventana de Visual Studio. Seguramente use el **Explorador de soluciones** a menudo para examinar el contenido de los proyectos.
 
@@ -69,7 +72,7 @@ Comenzaremos nuestro periplo creando una solución vacía. Cuando se familiarice
 
 3. En la página **Crear un proyecto nuevo**, escriba **solución en blanco** en el cuadro de búsqueda, seleccione la plantilla **Solución en blanco** y elija **Siguiente**.
 
-   ![Plantilla Solución en blanco de Visual Studio 2019](media/vs-2019/tutorial-projects-blank-solution-template.png)
+   ![Plantilla Solución en blanco de Visual Studio 2019](media/vs-2019/tutorial-projects-blank-solution-template.png "Plantilla de solución en blanco de Visual Studio 2019.")
 
     > [!TIP]
     > Si tiene instaladas varias cargas de trabajo, es posible que la plantilla **Solución en blanco** no aparezca en la parte superior de la lista de resultados de la búsqueda. Pruebe a desplazarse hasta la sección **Otros resultados basados en su búsqueda** de la lista. Debería aparecer ahí.
@@ -97,7 +100,7 @@ Ahora, agreguemos nuestro primer proyecto a la solución. Comenzaremos con un pr
    > [!NOTE]
    > Si no ve **Visual C#** en el panel izquierdo del cuadro de diálogo, debe instalar la carga de trabajo **Desarrollo de escritorio de .NET** de Visual Studio. Visual Studio usa la instalación basada en la carga de trabajo para instalar únicamente los componentes necesarios para el tipo de desarrollo que se lleva a cabo. Una manera sencilla de instalar una nueva carga de trabajo es hacer clic en el vínculo **Abrir el instalador de Visual Studio** en la esquina inferior izquierda del cuadro de diálogo **Agregar nuevo proyecto**. Una vez que se abra el Instalador de Visual Studio, elija la carga de trabajo de **desarrollo de escritorio de .NET** y luego haga clic en el botón **Modificar**.
    >
-   > ![Vínculo Abrir el instalador de Visual Studio](media/tutorial-projects-open-installer.png)
+   > ![Vínculo Abrir el instalador de Visual Studio](media/tutorial-projects-open-installer.png "Vínculo Abrir el instalador de Visual Studio del cuadro de diálogo Agregar nuevo proyecto de Visual Studio 2017.")
 
 ::: moniker-end
 
@@ -116,9 +119,11 @@ Ahora, agreguemos nuestro primer proyecto a la solución. Comenzaremos con un pr
    Un proyecto denominado QuickDate aparece debajo de la solución en el **Explorador de soluciones**. Actualmente solo contiene un archivo denominado *App.config*.
 
    > [!NOTE]
-   > Si no ve la plantilla **Proyecto vacío (.NET Framework)** , debe instalar la carga de trabajo **Desarrollo de escritorio de .NET** de Visual Studio. Visual Studio usa la instalación basada en la carga de trabajo para instalar únicamente los componentes necesarios para el tipo de desarrollo que se lleva a cabo. Una manera fácil de instalar una nueva carga de trabajo al crear un nuevo proyecto es seleccionar el vínculo **Instalar más herramientas y características** debajo del texto que indica **¿No encuentra lo que busca?** . Una vez que se abra el Instalador de Visual Studio, elija la carga de trabajo de **desarrollo de escritorio de .NET** y luego haga clic en el botón **Modificar**.
+   > Si no ve la plantilla **Proyecto vacío (.NET Framework)** , debe instalar la carga de trabajo **Desarrollo de escritorio de .NET** de Visual Studio. Visual Studio usa la instalación basada en la carga de trabajo para instalar únicamente los componentes necesarios para el tipo de desarrollo que se lleva a cabo.
    >
-   > ![Vínculo Abrir el instalador de Visual Studio](media/vs-2019/tutorial-projects-open-installer.png)
+   >Una manera fácil de instalar una nueva carga de trabajo al crear un nuevo proyecto es seleccionar el vínculo **Instalar más herramientas y características** debajo del texto que indica **¿No encuentra lo que busca?** . Una vez que se abra el Instalador de Visual Studio, elija la carga de trabajo de **desarrollo de escritorio de .NET** y luego haga clic en el botón **Modificar**.
+   >
+   > ![Vínculo Abrir el instalador de Visual Studio](media/vs-2019/tutorial-projects-open-installer.png "Vínculo Abrir el instalador de Visual Studio del cuadro de diálogo Crear un proyecto de Visual Studio.")
 
 ::: moniker-end
 
@@ -174,7 +179,7 @@ Vamos a agregar un proyecto de prueba unitaria a la solución. Esta vez se empie
 
    Se agregará un segundo proyecto al **Explorador de soluciones**, mientras que un archivo denominado *UnitTest1.cs* se abre en el editor.
 
-   ![Explorador de soluciones de Visual Studio con dos proyectos](media/tutorial-projects-solution-explorer.png)
+   ![Explorador de soluciones de Visual Studio con dos proyectos](media/tutorial-projects-solution-explorer.png "Explorador de soluciones con dos proyectos en Visual Studio 2017.")
 
 ::: moniker-end
 
@@ -188,7 +193,7 @@ Vamos a agregar un proyecto de prueba unitaria a la solución. Esta vez se empie
 
    Se agregará un segundo proyecto al **Explorador de soluciones**, mientras que un archivo denominado *UnitTest1.cs* se abre en el editor.
 
-   ![Explorador de soluciones de Visual Studio con dos proyectos](media/vs-2019/tutorial-projects-solution-explorer.png)
+   ![Explorador de soluciones de Visual Studio con dos proyectos](media/vs-2019/tutorial-projects-solution-explorer.png "Explorador de soluciones con dos proyectos en Visual Studio.")
 
 ::: moniker-end
 
@@ -204,7 +209,7 @@ Usaremos el nuevo proyecto de prueba unitaria para probar nuestro método en el 
 
    Se agrega una referencia al proyecto **QuickDate**.
 
-   ![Explorador de soluciones de Visual Studio 2019 que muestra la referencia del proyecto](media/vs-2019/tutorial-projects-solution-explorer-reference.png)
+   ![Explorador de soluciones de Visual Studio 2019 que muestra la referencia del proyecto](media/vs-2019/tutorial-projects-solution-explorer-reference.png "Explorador de soluciones que muestra la referencia del proyecto en Visual Studio.")
 
 ## <a name="add-test-code"></a>Agregar código de prueba
 
@@ -240,7 +245,7 @@ Usaremos el nuevo proyecto de prueba unitaria para probar nuestro método en el 
 
    El archivo de código debe tener este aspecto:
 
-   ![Código de CSharp](media/tutorial-projects-cs-code.png)
+   ![Código de CSharp](media/tutorial-projects-cs-code.png "El fragmento de código de la sección Agregar código de prueba de este artículo.")
 
 ## <a name="project-properties"></a>Propiedades de proyecto
 
@@ -250,7 +255,7 @@ La línea del archivo *Calendar.cs* que contiene el atributo <xref:System.Runtim
 
    Las *páginas de propiedades* del proyecto se abren en la pestaña **Aplicación**. Las páginas de propiedades contienen varios valores para el proyecto. Fíjese en que el nombre de ensamblado del proyecto **QuickTest** es, efectivamente, "QuickTest". Si quisiera cambiarlo, aquí es donde lo haría. Así, al compilar el proyecto de prueba, el nombre del archivo binario resultante cambiaría de *QuickTest.dll* a lo que hubiera elegido.
 
-   ![Propiedades de proyecto](media/tutorial-projects-netcore-properties.png)
+   ![Propiedades de proyecto](media/tutorial-projects-netcore-properties.png "Cuadro de diálogo Propiedades del proyecto en Visual Studio.")
 
 1. Examine algunas de las demás pestañas de las páginas de propiedades del proyecto, como **Compilar** y **Depurar**. Estas pestañas son diferentes para los distintos tipos de proyectos.
 
@@ -258,7 +263,7 @@ La línea del archivo *Calendar.cs* que contiene el atributo <xref:System.Runtim
 
 Si quiere comprobar que la prueba unitaria funciona, seleccione **Probar** > **ejecutar** > **Todas las pruebas** desde la barra de menús. Se abre una ventana denominada **Explorador de pruebas**, donde debería ver que la prueba **TestGetCurrentDate** se supera.
 
-![Explorador de pruebas de Visual Studio que muestra una prueba correcta](media/tutorial-projects-test-explorer.png)
+![Explorador de pruebas de Visual Studio que muestra una prueba correcta](media/tutorial-projects-test-explorer.png "Explorador de pruebas en Visual Studio que muestra una prueba superada.")
 
 ::: moniker range="vs-2017"
 

@@ -1,5 +1,7 @@
 ---
 title: Búsqueda e instalación de extensiones
+description: Aprenda sobre las extensiones de Visual Studio y cómo administrarlas para tener los controles, los ejemplos, las plantillas, las herramientas y otros componentes que necesite.
+ms.custom: SEO-VS-2020
 ms.date: 09/18/2019
 ms.topic: conceptual
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f016af58b5799ca37b1a8f0cc54366d639c57c03
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c5d4cf36d722c260f52584b16557bcb8d7cda83c
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594414"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006541"
 ---
 # <a name="manage-extensions-for-visual-studio"></a>Administración de extensiones para Visual Studio
 

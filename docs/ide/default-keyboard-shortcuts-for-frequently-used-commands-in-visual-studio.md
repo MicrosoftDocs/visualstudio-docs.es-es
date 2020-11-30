@@ -1,5 +1,6 @@
 ---
 title: Accesos directos de teclado para comandos de uso frecuente
+description: Conozca los métodos abreviados de teclado que evocan los comandos de Visual Studio que se usan con más frecuencia.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -8,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64c3a163f706898dfb358b15279e62729f40cf84
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: c60da36ac6a8e5002e65e0973af0f3e0cb13eef7
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93045658"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006489"
 ---
 # <a name="popular-keyboard-shortcuts-for-visual-studio"></a>Métodos abreviados de teclado de uso frecuente para Visual Studio
 
@@ -22,7 +23,7 @@ Puede acceder a comandos de uso frecuente en Visual Studio con estos métodos ab
 El contexto *Global* significa que el método abreviado puede aplicarse en cualquier ventana de herramientas de Visual Studio.
 
 > [!NOTE]
-> Puede [buscar el método abreviado](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) de un comando abriendo el cuadro de diálogo **Opciones** , expandiendo el nodo **Entorno** y eligiendo **Teclado**.
+> Puede [buscar el método abreviado](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) de un comando abriendo el cuadro de diálogo **Opciones**, expandiendo el nodo **Entorno** y eligiendo **Teclado**.
 
 ## <a name="build"></a>Compilar
 
@@ -33,7 +34,7 @@ El contexto *Global* significa que el método abreviado puede aplicarse en cualq
 |Build.Compile|**Ctrl+F7** [Global]|
 |Build.RunCodeAnalysisonSolution|**Alt+F11** [Global]|
 
-## <a name="debug"></a>Depuración
+## <a name="debug"></a>Depurar
 
 |Comandos|Métodos abreviados de teclado [Contextos]|
 |--------------| - |
@@ -58,9 +59,9 @@ El contexto *Global* significa que el método abreviado puede aplicarse en cualq
 |Comandos|Métodos abreviados de teclado [Contextos]|
 |--------------| - |
 |Edit.BreakLine|**Entrar** [Editor de texto, Diseñador de informes, Diseñador de Windows Forms]<br /><br />o **Mayús+Entrar** [Editor de texto]|
-|Edit.CollapseToDefinitions|**Ctrl+M** , **Ctrl+O** [Editor de texto]|
-|Edit.CommentSelection|**Ctrl+K** , **Ctrl+C** [Editor de texto]|
-|Edit.CompleteWord|**Alt+Flecha derecha** [Editor de texto, Diseñador de flujo de trabajo]<br /><br />o **Ctrl+Barra espaciadora** [Editor de texto, Diseñador de flujo de trabajo]<br /><br />o **Ctrl+K** , **W** [Diseñador de flujo de trabajo]<br /><br />o **Ctrl+K, Ctrl+W** [Diseñador de flujo de trabajo]|
+|Edit.CollapseToDefinitions|**Ctrl+M**, **Ctrl+O** [Editor de texto]|
+|Edit.CommentSelection|**Ctrl+K**, **Ctrl+C** [Editor de texto]|
+|Edit.CompleteWord|**Alt+Flecha derecha** [Editor de texto, Diseñador de flujo de trabajo]<br /><br />o **Ctrl+Barra espaciadora** [Editor de texto, Diseñador de flujo de trabajo]<br /><br />o **Ctrl+K**, **W** [Diseñador de flujo de trabajo]<br /><br />o **Ctrl+K, Ctrl+W** [Diseñador de flujo de trabajo]|
 |Edit.Copy|**Ctrl+C** [Global]<br /><br />o **Ctrl+Insert** [Global]|
 |Edit.Cut|**Ctrl+X** [Global]<br /><br />o **Mayús+Supr** [Global]|
 |Edit.Delete|**Supr** [Global, Team Explorer]<br /><br />o **Mayús+Supr** [Diagrama de secuencia, Diagrama de actividades de UML, Diagramas de capas]<br /><br />o **Ctrl+Supr** [Diagrama de clases]|
@@ -76,7 +77,7 @@ El contexto *Global* significa que el método abreviado puede aplicarse en cualq
 |Edit.GoToDefinition|**F12**|
 |Edit.GoToFindCombo|**Ctrl+D** [Global]|
 |Edit.GoToNextLocation|**F8** [Global]|
-|Edit.InsertSnippet|**Ctrl+K** , **Ctrl+X** [Global]|
+|Edit.InsertSnippet|**Ctrl+K**, **Ctrl+X** [Global]|
 |Edit.InsertTab|**Tabulación** [Diseñador de informes, Diseñador de Windows Forms, Editor de texto]|
 |Edit.LineCut|**Ctrl+L** [Editor de texto]|
 |Edit.LineDownExtendColumn|**Mayús+Alt+Flecha abajo** [Editor de texto]|
@@ -120,22 +121,22 @@ El contexto *Global* significa que el método abreviado puede aplicarse en cualq
 |File.SaveSelectedItems|**Ctrl+S** [Global]|
 |File.ViewinBrowser|**Ctrl+Mayús+W** [Global]|
 
-## <a name="project"></a>Proyecto
+## <a name="project"></a>Project
 
 |Comandos|Métodos abreviados de teclado [Contextos]|
 |--------------| - |
 |Project.AddExistingItem|**Mayús+Alt+A** [Global]|
 |Project.AddNewItem|**Ctrl+Mayús+A** [Global]|
 
-## <a name="refactor"></a>Refactorizar
+## <a name="refactor"></a>Refactorización
 
-|Comando|Métodos abreviados de teclado [Contexto]|
+|Get-Help|Métodos abreviados de teclado [Contexto]|
 |-------------| - |
 |Refactor.ExtractMethod|**Ctrl+R, Ctrl+M** [Global]|
 
 ## <a name="tools"></a>Herramientas
 
-|Comando|Métodos abreviados de teclado [Contexto]|
+|Get-Help|Métodos abreviados de teclado [Contexto]|
 |-------------| - |
 |Tools.AttachtoProcess|**Ctrl+Alt+P** [Global]|
 
@@ -160,7 +161,7 @@ El contexto *Global* significa que el método abreviado puede aplicarse en cualq
 |View.ViewCode|**Entrar** [Diagrama de clases]<br /><br />o **F7** [Diseñador de configuración]|
 |View.ViewDesigner|**Mayús+F7** [Vista de código fuente del editor de HTML]|
 
-## <a name="window"></a>Ventana
+## <a name="window"></a>Periodo
 
 |Comandos|Métodos abreviados de teclado [Contextos]|
 |--------------| - |
@@ -170,7 +171,7 @@ El contexto *Global* significa que el método abreviado puede aplicarse en cualq
 |Window.NextDocumentWindowNav|**Ctrl+Tab** [Global]|
 |Window.NextSplitPane|**F6** [Global]|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Identificar y personalizar métodos abreviados de teclado en Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
 - [Todos los métodos abreviados de teclado de Visual Studio](default-keyboard-shortcuts-in-visual-studio.md)

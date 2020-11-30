@@ -1,5 +1,7 @@
 ---
 title: Combinación de pruebas para un escenario de pruebas de carga
+description: Aprenda a editar la combinación de pruebas de un escenario, que es una mezcla de la selección de pruebas unitarias y de rendimiento web y la distribución de esas pruebas.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.assetid: 303e1d70-5d98-424a-b51e-e0898e16d3f8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4a52d660140416ce829493a733171cfcf64ebbe4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d6681b8aead05a180df04b1c3953002aa832a281
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595935"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441383"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Edición de la combinación de pruebas para especificar qué pruebas de rendimiento web, unitarias y automatizadas de IU incluir en un escenario de prueba de carga
 
@@ -88,6 +90,6 @@ También es posible escribir directamente los valores de porcentaje en la column
 
 Si escribe los valores de porcentajes manualmente, debe asegurarse de que la suma de todos los elementos sea 100 %. Al guardar una combinación, si la suma no es igual al 100 %, se le solicitará que acepte los valores de porcentajes tal y como están o que vuelva a ajustarlos. Si decide aceptarlos tal y como están, se prorratearán al 100%.  Por ejemplo, si tiene dos elementos y los establece manualmente en un 80% y un 40%, el primer elemento se establecerá en un 66,67% (80 dividido entre 120) y el segundo elemento se establecerá en un 33,33% (40 dividido entre 120).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Edición de escenarios de prueba de carga](../test/edit-load-test-scenarios.md)
+- [Editar escenarios de prueba de carga](../test/edit-load-test-scenarios.md)

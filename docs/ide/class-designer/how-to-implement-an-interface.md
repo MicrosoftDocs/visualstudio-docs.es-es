@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: Implementar una interfaz (Diseñador de clases)'
+description: Aprenda a implementar una interfaz en el diagrama de clases conectándola a una clase que proporcione código para los métodos de interfaz.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81b6815dd96894acd574de59c5616371220d2999
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ad038774b4acfb7256edbaa35ae4c67cfe835891
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770101"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901380"
 ---
 # <a name="how-to-implement-an-interface-in-class-designer"></a>Cómo: Implementar una interfaz en el Diseñador de clases
 
@@ -48,9 +50,9 @@ Para obtener más información, vea [Cómo: Crear la herencia entre tipos](how-t
 
      Aparece un círculo conectado a la clase y una etiqueta con el nombre de interfaz identifica la relación de herencia. Visual Studio genera código auxiliar para todos los miembros de interfaz; en este momento, se implementa la interfaz.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Cómo: Crear tipos con el Diseñador de clases](how-to-create-types.md)
-- [Cómo: Ver los tipos existentes](how-to-view-existing-types.md)
+- [Cómo: Ver tipos existentes](how-to-view-existing-types.md)
 - [Cómo: Crear la herencia entre tipos](how-to-create-inheritance-between-types.md)
 - [Refactorización de clases y tipos](refactoring-classes-and-types.md)

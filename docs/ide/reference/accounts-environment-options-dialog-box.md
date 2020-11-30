@@ -1,5 +1,7 @@
 ---
 title: Referencia de las opciones de Cuentas
+description: Aprenda a establecer algunas opciones relacionadas con las cuentas que usa al iniciar sesión en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ff457523024db49502ae982a390d9a7be6ba9dd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2cd9f08cb1358d788db661871f6d229d0579ddbd
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595909"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871150"
 ---
 # <a name="accounts-environment-options-dialog-box"></a>Cuentas, Entorno, Opciones (Cuadro de diálogo)
 
@@ -41,7 +43,7 @@ Registre una nube de Azure adicional seleccionando el botón **Agregar**. El cua
 
 Tras registrar una nube de Azure adicional, puede elegir en qué nube de Azure quiere iniciar sesión cuando inicie sesión en Visual Studio.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Sincronizar la configuración de Visual Studio en varios equipos](../synchronized-settings-in-visual-studio.md)
 - [Inicio de sesión en Visual Studio](../signing-in-to-visual-studio.md)

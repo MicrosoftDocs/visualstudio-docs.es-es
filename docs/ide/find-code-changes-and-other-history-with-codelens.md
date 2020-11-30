@@ -1,5 +1,7 @@
 ---
 title: Buscar cambios en el código y otro historial con CodeLens
+description: Aprenda sobre CodeLens y cómo usarlo para explorar el historial del código sin tener que salir del editor.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98bdbecb12897602a70c590b9cee64b992193b7d
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 485287239a13f61d10ee39bad854a0f3bdae4f55
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928507"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006710"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Buscar cambios en el código y otro historial con CodeLens
 
@@ -71,7 +73,7 @@ Para ver las relaciones entre este código y sus referencias, [cree un mapa de c
 
 Inspeccione el historial del código para averiguar qué ocurrió. O bien, revise esos cambios antes de combinarlos con su código para saber cómo los cambios de otras bifurcaciones podrían afectarlo.
 
-Es necesario:
+Necesita:
 
 - Edición Visual Studio Enterprise o Professional
 
@@ -79,7 +81,7 @@ Es necesario:
 
 - [Skype Empresarial](/skypeforbusiness/) para ponerse en contacto con su equipo desde el editor de código.
 
-Para el código de C# o Visual Basic que está almacenado con control de versiones de Team Foundation (TFVC) o Git, los detalles de CodeLens se obtienen en los niveles de clase y método (indicadores*code-element-level*). Si el repositorio Git está hospedado en TfGit, también obtendrá vínculos a elementos de trabajo TFS.
+Para el código de C# o Visual Basic que está almacenado con control de versiones de Team Foundation (TFVC) o Git, los detalles de CodeLens se obtienen en los niveles de clase y método (indicadores *code-element-level*). Si el repositorio Git está hospedado en TfGit, también obtendrá vínculos a elementos de trabajo TFS.
 
 ![Indicadores de nivel de elemento del código](../ide/media/codelens-element-level-indicators.png)
 
@@ -128,35 +130,35 @@ También puede ver quién cambió el código a lo largo del tiempo. Esto puede a
 
 Su equipo puede tener varias ramas, por ejemplo, una rama Main y una rama Development secundaria, para reducir el riesgo de que el código estable se interrumpa.
 
-![CodeLens: Buscar cuándo se bifurcó el código](../ide/media/codelensfirstbranchconceptual.png)
+![CodeLens: Buscar cambios en la bifurcación actual](../ide/media/codelensfirstbranchconceptual.png)
 
 Puede saber cuántas personas realizaron cambios en el código y cuántos cambios se realizaron en la rama Main presionando **Alt**+**6**:
 
-![CodeLens: Buscar número de cambios en su bifurcación](../ide/media/codelens-branch-changes.png)
+![CodeLens: Buscar el número de cambios de la bifurcación](../ide/media/codelens-branch-changes.png)
 
 ### <a name="find-when-your-code-was-branched"></a>Buscar cuándo se bifurcó el código
 
 Para buscar cuándo se bifurcó el código, navegue hasta el código de la rama secundaria. Después, seleccione el indicador **cambios** o presione **Alt**+**6**:
 
-![CodeLens: Buscar cuándo se bifurcó el código](../ide/media/codelens-first-branch.png)
+![CodeLens: Buscar cuándo se creó una bifurcación en el código](../ide/media/codelens-first-branch.png)
 
 ### <a name="find-incoming-changes-from-other-branches"></a>Buscar cambios entrantes de otras bifurcaciones
 
-![CodeLens: Buscar cambios en el código en otras bifurcaciones](../ide/media/codelensbranchchangecheckinconceptual.png)
+![CodeLens: Buscar cambios del código en otras bifurcaciones](../ide/media/codelensbranchchangecheckinconceptual.png)
 
 Puede ver los cambios entrantes. En la siguiente captura de pantalla, se realizó una corrección de errores en la rama "Dev":
 
-![CodeLens: Cambiar comprobado en otra bifurcación](../ide/media/codelens-branch-changes-dev.png)
+![CodeLens: Cambiar los elementos verificados a otra bifurcación](../ide/media/codelens-branch-changes-dev.png)
 
 Puede revisar el cambio sin salir de la rama actual ("Main"):
 
-![CodeLens: Ver cambio entrante desde otra bifurcación](../ide/media/codelens-branch-changes-main.png)
+![CodeLens: Ver cambios entrantes desde otra bifurcación](../ide/media/codelens-branch-changes-main.png)
 
 ### <a name="find-when-changes-got-merged"></a>Buscar cuándo se combinan los cambios
 
 Puede ver cuándo se combinaron los cambios, para que pueda determinar qué cambios se incluyen en la rama:
 
-![CodeLens - Cambios combinados entre bifurcaciones](../ide/media/codelensbranchmergedconceptual.png)
+![CodeLens: búsqueda de cuándo se combinaron los cambios](../ide/media/codelensbranchmergedconceptual.png)
 
 Por ejemplo, el código de la bifurcación Main ahora incluye la corrección de errores de la bifurcación "Dev":
 
@@ -166,21 +168,21 @@ Por ejemplo, el código de la bifurcación Main ahora incluye la corrección de 
 
 Compare un cambio entrante con la versión local presionando **MAYÚS**+**F10**, o haciendo doble clic en el conjunto de cambios.
 
-![CodeLens: Comparar cambio entrante con local](../ide/media/codelens-branch-incoming-change-menu.png)
+![CodeLens: Comparar cambios entrantes con locales](../ide/media/codelens-branch-incoming-change-menu.png)
 
 ### <a name="branch-icons"></a>Iconos de rama
 
 El icono de la columna **Rama** indica cómo se relaciona la rama en la que está trabajando con la rama.
 
-|**Iconos**|**El cambio provino de:**|
+|**Icono**|**El cambio provino de:**|
 |--------------| - |
 |![CodeLens: Cambiar desde icono de bifurcación actual](../ide/media/codelensbranchcurrenticon.png)|La bifurcación actual|
 |![CodeLens: Cambiar desde icono de bifurcación primaria](../ide/media/codelensbranchparenticon.png)|La bifurcación primaria|
 |![CodeLens: Cambiar desde icono de bifurcación secundaria](../ide/media/codelensbranchchildicon.png)|Una bifurcación secundaria|
 |![CodeLens: Cambiar desde icono de bifurcación del mismo nivel](../ide/media/codelensbranchpeericon.png)|Una bifurcación del mismo nivel|
 |![CodeLens: Cambiar desde icono de bifurcación alejada](../ide/media/codelensbranchfurtherawayicon.png)|Una bifurcación más alejada que una primaria, secundaria o del mismo nivel|
-|![CodeLens: Combinar desde icono primario](../ide/media/codelensbranchmergefromparenticon.png)|Una combinación de la bifurcación primaria y una bifurcación secundaria|
-|![CodeLens: Combinar desde icono de bifurcación secundaria](../ide/media/codelensbranchmergefromchildicon.png)|Una combinación de una bifurcación secundaria con la bifurcación secundaria|
+|![CodeLens: Fusionar mediante combinación desde icono primario](../ide/media/codelensbranchmergefromparenticon.png)|Una combinación de la bifurcación primaria y una bifurcación secundaria|
+|![CodeLens: Fusionar mediante combinación desde icono de ramificación secundaria](../ide/media/codelensbranchmergefromchildicon.png)|Una combinación de una bifurcación secundaria con la bifurcación secundaria|
 |![CodeLens: Combinar desde icono de bifurcación no relacionada](../ide/media/codelensbranchmergefromunrelatedicon.png)|Una combinación de una bifurcación no relacionada (combinación sin base)|
 
 ## <a name="linked-work-items"></a>Elementos de trabajo vinculados.
@@ -237,7 +239,7 @@ Puede buscar qué pruebas unitarias existen para el código de C# o Visual Basic
 
 7. Para ver cuántas personas cambiaron esta prueba, quién la cambió o cuántos cambios se realizaron, [busque el historial del código](#find-changes-in-your-code) y los elementos vinculados.
 
-## <a name="keyboard-shortcuts"></a>Métodos abreviados de teclado
+## <a name="keyboard-shortcuts"></a>Accesos directos del teclado
 
 Para usar el teclado para seleccionar los indicadores, mantenga presionada la tecla **Alt** para mostrar las teclas numéricas relacionadas, luego presione el número que se corresponda con el indicador que quiere seleccionar.
 
@@ -250,7 +252,7 @@ Para usar el teclado para seleccionar los indicadores, mantenga presionada la te
 
 ### <a name="q-how-do-i-turn-codelens-off-or-on-or-choose-which-indicators-to-see"></a>P: ¿Cómo activo o desactivo CodeLens o elijo qué indicadores ver?
 
-**R:**  Puede activar o desactivar los indicadores, excepto el de referencias. Vaya a **Herramientas** > **Opciones** > **Editor de texto** > **Todos los lenguajes** > **CodeLens**.
+**R:**  Puede activar o desactivar todos los indicadores, excepto el indicador de referencias. Vaya a **Herramientas** > **Opciones** > **Editor de texto** > **Todos los lenguajes** > **CodeLens**.
 
 Cuando se activen los indicadores, también podrá abrir las opciones de CodeLens desde estos.
 
@@ -262,7 +264,7 @@ Active o desactive los indicadores de nivel de archivo de CodeLens con los icono
 
 ### <a name="q-where-is-codelens"></a>P: ¿Dónde está CodeLens?
 
-**R:** CodeLens aparece en el código de C# y Visual Basic, en el nivel de método, de clase, de indizador y de propiedad. CodeLens aparece en el nivel de archivo para todos los demás tipos de archivos.
+**R:** CodeLens aparece en el código de C# y Visual Basic, en el nivel de método, de clase, de indexador y de propiedad. CodeLens aparece en el nivel de archivo para todos los demás tipos de archivos.
 
 - Asegúrese de que CodeLens esté activado. Vaya a **Herramientas** > **Opciones** > **Editor de texto** > **Todos los lenguajes** > **CodeLens**.
 
@@ -290,9 +292,9 @@ Active o desactive los indicadores de nivel de archivo de CodeLens con los icono
 
 **R:** Esto podría deberse a que CodeLens no puede encontrar los elementos de trabajo en Azure Boards o TFS. Compruebe que está conectado al proyecto que tenga esos elementos de trabajo y que tiene permisos para verlos. Los detalles de elementos de trabajo también podrían no mostrarse si la descripción de confirmación tiene información incorrecta sobre los identificadores de elementos de trabajo en Azure Boards o TFS.
 
-### <a name="q-why-dont-i-see-the-skype-indicators"></a>P: ¿Por qué no veo los indicadores de Skype?
+### <a name="q-why-dont-i-see-the-skype-indicators"></a>P: ¿Por qué no veo los indicadores?
 
-**R:** Los indicadores de Skype no aparecen si no ha iniciado sesión en Skype Empresarial, si no lo tiene instalado o si su configuración no es compatible. Pero podrá seguir enviando un correo electrónico:
+**R:** Los indicadores de Skype no aparecen si no inició sesión en Skype Empresarial, si no lo tiene instalado o si su configuración no es compatible. Pero podrá seguir enviando un correo electrónico:
 
 ![CodeLens - Ponerse en contacto con el propietario del conjunto de cambios por correo](../ide/media/codelenscodesendmailchangesetnolync1.png)
 
@@ -306,7 +308,7 @@ CodeLens no admite tener instaladas distintas versiones de Lync o Skype. Puede q
 
 ### <a name="q-how-do-i-change-the-font-and-color-for-codelens"></a>P: ¿Cómo se cambian la fuente y el color de CodeLens?
 
-**R:** Vaya a **Herramientas** > **Opciones** > **Entorno** > **Fuentes y colores**.
+**R:** Vaya **Herramientas** > **Opciones** > **Entorno** > **Fuentes y colores**.
 
 ![CodeLens - Cambiar la configuración de fuente y color](../ide/media/codelensoptionsfontscolorssettings.png)
 
@@ -322,7 +324,7 @@ Para usar el teclado:
 
 ### <a name="q-can-i-move-the-codelens-heads-up-display"></a>P: ¿Se puede mover la pantalla de aviso de CodeLens?
 
-**R:** Sí, elija ![Icono del Dock](../ide/media/codelensdockwindow.png) para acoplar CodeLens como ventana.
+**R**: Sí, elija ![Icono del Dock](../ide/media/codelensdockwindow.png) para acoplar CodeLens como ventana.
 
 ![Acoplar el botón en la ventana del indicador de CodeLens](../ide/media/codelensselectdockwindow.png)
 
@@ -330,13 +332,13 @@ Para usar el teclado:
 
 ### <a name="q-how-do-i-refresh-the-indicators"></a>P: ¿Cómo se actualizan los indicadores?
 
-**R:** Eso depende del indicador:
+**R:** Esto depende del indicador:
 
-- **Referencias**: Este indicador se actualiza automáticamente cuando cambia el código. Si el indicador **Referencias** está acoplado como una ventana independiente, actualice el indicador seleccionando **Actualizar**:
+- **Referencias**: este indicador se actualiza automáticamente cuando cambia el código. Si el indicador **Referencias** está acoplado como una ventana independiente, actualice el indicador seleccionando **Actualizar**:
 
    ![Botón de actualización de referencias de CodeLens](../ide/media/codelensviewreferencesdocked.png)
 
-- **Equipo**: Actualice estos indicadores al seleccionar **Actualizar indicadores de equipo CodeLens** desde el menú contextual:
+- **Equipo**: actualice estos indicadores seleccionando **Actualizar indicadores de equipo CodeLens** desde el menú contextual:
 
    ![Elemento de menú Actualizar indicadores de equipo CodeLens](../ide/media/codelensrefreshindicatorsfromcode.png)
 
@@ -346,7 +348,7 @@ Para usar el teclado:
 
 **R:** La flecha **Versión local** apunta al conjunto de cambios más reciente de la versión local de un archivo. Cuando el servidor tiene conjuntos de cambios más recientes, estos aparecen encima o debajo de la flecha **Versión local** , según el orden usado para ordenar los conjuntos de cambios.
 
-### <a name="q-can-i-manage-how-codelens-processes-code-to-show-history-and-linked-items"></a>P: ¿Puedo administrar la forma en que CodeLens procesa código para mostrar el historial y los elementos vinculados?
+### <a name="q-can-i-manage-how-codelens-processes-code-to-show-history-and-linked-items"></a>P: ¿Puedo administrar cómo CodeLens procesa código para mostrar el historial y los elementos vinculados?
 
 **R:** Sí. Si el código está en TFS, use el [comando CodeIndex](../ide/codeindex-command.md) con el comando [TSF Config](/azure/devops/server/command-line/tfsconfig-cmd).
 

@@ -1,5 +1,7 @@
 ---
 title: Cambiar el nombre y mover clases y tipos en el Diseñador de clases
+description: Aprenda a cambiar el nombre de las clases y los tipos, y a moverlos, mediante el Diseñador de clases y la ventana Detalles de clase.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: baf0e9d9d0f4bb45ef965f64c256bd9360af112b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d51a541edb30e24405faccfec6e05264303d049
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85768612"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901094"
 ---
 # <a name="refactor-classes-and-types-in-class-designer"></a>Refactorizar clases y tipos en el Diseñador de clases
 
@@ -86,6 +88,6 @@ Con el **Diseñador de clases**, puede mover un miembro de tipo de un tipo a otr
 
      La propiedad se quitará del tipo de origen y aparecerá en el tipo de destino.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Diseño de clases y tipos](designing-and-viewing-classes-and-types.md)

@@ -1,5 +1,7 @@
 ---
 title: Herramientas de localización
+description: Conozca las herramientas de localización que se incluyen en Visual Studio y cómo usarlas para crear aplicaciones localizadas en varios idiomas.
+ms.custom: SEO-VS-2020
 ms.date: 02/15/2019
 ms.topic: reference
 helpviewer_keywords:
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eebdccf44580442b87e3d31e33ddcd7052838306
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 65c7a82488fea8fc12e6d5db838818269add0181
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810906"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597449"
 ---
 # <a name="develop-globalized-and-localized-apps"></a>Desarrollo de aplicaciones localizadas y globalizadas
 
@@ -48,7 +50,7 @@ Puede usar Visual Studio para crear aplicaciones que muestren correctamente el t
 > [!NOTE]
 > Las aplicaciones de consola no incluyen compatibilidad con texto de idiomas bidireccionales. Esta es una consecuencia de cómo funciona Windows con las aplicaciones de consola.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Compatibilidad con idiomas bidireccionales en Visual Studio](use-bidirectional-languages.md)
 - [Globalización y localización de aplicaciones .NET](/dotnet/standard/globalization-localization/)

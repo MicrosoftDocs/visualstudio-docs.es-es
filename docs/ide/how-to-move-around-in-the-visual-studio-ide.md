@@ -1,5 +1,7 @@
 ---
 title: Cómo moverse por el IDE
+description: Aprenda a moverse por el IDE de Visual Studio de ventana en ventana y de archivo en archivo de varias maneras diferentes.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -17,21 +19,21 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1052deb04a93d11349ef9beb2ff667893095902f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b8f2e796ed122bc4dba0c1fb4cfca85c74065fb8
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769844"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597046"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Cómo: moverse por el IDE de Visual Studio
 
 El entorno de desarrollo integrado (IDE) se ha diseñado para permitir el movimiento entre ventanas y archivos de varias maneras, dependiendo de los requisitos del proyecto o de sus preferencias. Puede desplazarse por los archivos abiertos en el editor o desplazarse por todas las ventanas de las herramientas activas en el IDE. También puede cambiar directamente a cualquier archivo abierto en el editor, sin tener en cuenta el orden en el que se accedió por última vez. Estas características pueden ayudar a aumentar la productividad al trabajar en el IDE.
 
 > [!NOTE]
-> Las opciones disponibles en los cuadros de diálogo, así como los nombres y las ubicaciones de los comandos de menú que se ven, podrían diferir de lo que se describe en este artículo, en función de los valores de configuración o de edición activos. Este artículo se ha redactado teniendo en cuenta la configuración **General**. Para cambiar la configuración, por ejemplo, **General** o **Visual C++** , elija **Herramientas** > **Importar y exportar configuraciones** y, después, **Restablecer todas las configuraciones**.
+> Las opciones disponibles en los cuadros de diálogo, así como los nombres y las ubicaciones de los comandos de menú que se ven, podrían diferir de lo que se describe en este artículo, en función de los valores de configuración o de edición activos. Este artículo se ha redactado teniendo en cuenta la configuración **General**. Para cambiar la configuración, por ejemplo, **General** o **Visual C++**, elija **Herramientas** > **Importar y exportar configuraciones** y, después, **Restablecer todas las configuraciones**.
 
-## <a name="keyboard-shortcuts"></a>Métodos abreviados de teclado
+## <a name="keyboard-shortcuts"></a>Accesos directos del teclado
 
 Prácticamente cualquier comando de menú en Visual Studio tiene un método abreviado de teclado. También puede crear sus propias combinaciones de teclas personalizadas. Para obtener más información, vea [Identificar y personalizar métodos abreviados de teclado](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
 
@@ -68,11 +70,11 @@ El **Navegador del IDE** funciona como el conmutador de aplicaciones de Windows.
     > [!TIP]
     > Para invertir el orden por el que se desplaza por la lista **Archivos activos**, mantenga presionadas las teclas **Ctrl**+**Mayús** y presione la tecla **Tab**.
 
-    \- O bien
+    \- o -
 
 - En la esquina superior derecha del editor, pulse el botón **Archivos activos** y, después, seleccione en la lista un archivo al que cambiar.
 
-    \- O bien
+    \- o -
 
 - En la barra de menús, elija **Ventana** > **Ventanas**.
 
@@ -92,7 +94,7 @@ El **Navegador del IDE** también permite recorrer las ventanas de herramientas 
     > [!TIP]
     > Para invertir el orden por el que se desplaza por la lista de **Ventanas de herramientas activas**, mantenga presionadas las teclas **Mayús**+**Alt** y presione la tecla **F7**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Personalizar los diseños de ventana](../ide/customizing-window-layouts-in-visual-studio.md)
 - [Métodos abreviados de teclado predeterminados](../ide/default-keyboard-shortcuts-in-visual-studio.md)

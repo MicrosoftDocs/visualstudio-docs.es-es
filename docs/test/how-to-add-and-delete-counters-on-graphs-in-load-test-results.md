@@ -1,5 +1,7 @@
 ---
 title: para agregar y eliminar contadores de los gráficos de resultados de pruebas de carga
+description: Aprenda a usar el panel Contadores para agregar contadores de rendimiento a un grafo y conozca la propiedad Frecuencia de muestreo.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.assetid: 81536233-1962-40d9-9511-0b4633814d90
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2b2cefc56d299c9ec917aea555aec1cd9ca53887
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 82794efc8d3065c9b428602e50455cccd162bbd4
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288473"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442591"
 ---
 # <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Cómo: Agregar y eliminar contadores de los gráficos de resultados de pruebas de carga
 
@@ -28,7 +30,7 @@ Puede usar el panel **Contadores** para agregar contadores de rendimiento a un g
 
 **Consideraciones sobre el intervalo de muestreo de los contadores de rendimiento**
 
-Elija un valor para la propiedad **Frecuencia de muestreo** en los parámetros de ejecución de pruebas de carga según la duración de la prueba de carga. Una velocidad de muestra menor, como el valor predeterminado de cinco segundos, necesita más espacio en la base de datos de resultados de pruebas de carga. En el caso de pruebas de carga más largas, el incremento de la velocidad de muestra reduce la cantidad de datos recopilados. Para más información, vea [Cómo: Especificar la velocidad de muestra de los parámetros de ejecución de pruebas de carga](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
+Elija un valor para la propiedad **Frecuencia de muestreo** en los parámetros de ejecución de pruebas de carga según la duración de la prueba de carga. Una velocidad de muestra menor, como el valor predeterminado de cinco segundos, necesita más espacio en la base de datos de resultados de pruebas de carga. En el caso de pruebas de carga más largas, el incremento de la velocidad de muestra reduce la cantidad de datos recopilados. Para obtener más información, vea [Cómo: Especificar la frecuencia de muestreo](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
 
 He aquí algunas instrucciones sobre las velocidades de muestra:
 
@@ -47,7 +49,7 @@ Hay dos opciones para habilitar la propiedad **Almacenamiento de detalles de tie
 
 La cantidad de espacio necesario en el repositorio de resultados de pruebas de carga para almacenar los detalles de tiempo podría ser muy grande, sobre todo si se trata de pruebas de carga de ejecución prolongada. Además, se tarda más tiempo en almacenar estos datos en dicho repositorio al final de la prueba de carga, puesto que los datos se almacenan en los agentes de prueba de carga hasta que finaliza la ejecución. Cuando la prueba de carga termina, los datos se almacenan en el repositorio. De forma predeterminada, la propiedad **Almacenamiento de detalles de tiempo** está habilitada. Si esto supone algún problema para el entorno de pruebas, puede establecer **Almacenamiento de detalles de tiempo** en **Ninguno**.
 
-Para más información, vea [Cómo: Especificar la propiedad Almacenamiento de detalles de tiempo para el parámetro de ejecución de una prueba de carga](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
+Para obtener más información, vea [Cómo: Especificar la propiedad Almacenamiento de detalles de tiempo](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
 
 ## <a name="to-display-a-particular-performance-counter-on-a-load-test-graph"></a>Para mostrar un contador determinado en un gráfico de prueba de carga
 
@@ -71,18 +73,18 @@ Para más información, vea [Cómo: Especificar la propiedad Almacenamiento de d
 
 5. Para quitar los datos del contador de rendimiento del gráfico, haga clic con el botón derecho en el contador de rendimiento en la columna **Contador** de la leyenda y seleccione **Eliminar**.
 
-     \- O bien
+     \- o -
 
      Haga clic con el botón derecho en la línea de datos del gráfico y seleccione **Eliminar**.
 
-     \- O bien
+     \- o -
 
      Elija el contador de rendimiento en la columna **Contador** de la leyenda o en la línea de datos del gráfico y, luego, presione la tecla **Supr**.
 
     > [!NOTE]
     > También puede colocar un contador de rendimiento en la leyenda, pero no en el gráfico con el comando **Agregar contador en la leyenda**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Analizar los resultados de pruebas de carga en la vista Gráficos](../test/analyze-load-test-results-in-the-graphs-view.md)
 - [Cómo: Crear gráficos personalizados](../test/how-to-create-custom-graphs-in-load-test-results.md)

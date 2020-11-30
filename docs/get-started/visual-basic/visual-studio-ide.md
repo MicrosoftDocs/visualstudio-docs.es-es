@@ -1,8 +1,11 @@
 ---
 title: Información general para desarrolladores de Visual Basic
+description: Aprenda a usar Visual Studio para editar, depurar y compilar código y, luego, publicar una aplicación como desarrollador de Visual Basic.
 ms.date: 11/15/2018
 ms.technology: vs-ide-general
-ms.custom: get-started
+ms.custom:
+- get-started
+- SEO-VS-2020
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
@@ -11,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9938d017d683fd27a3f303824f9568a3876c2c4d
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 990bff2832f290987ed29fd48b69f4d7a1a05bba
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928048"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901575"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Le damos la bienvenida al IDE de Visual Studio | Visual Basic
 
@@ -36,11 +39,11 @@ El *entorno de desarrollo integrado* de Visual Studio es un panel de inicio crea
 
 En esta imagen se muestra Visual Studio con un proyecto abierto y varias ventanas de herramientas clave que probablemente usará:
 
-- El [Explorador de soluciones](../../ide/solutions-and-projects-in-visual-studio.md) (parte superior derecha) permite ver y administrar los archivos de código y desplazarse por ellos. El **Explorador de soluciones** puede ayudar a organizar el código al agrupar los archivos en [soluciones y proyectos](tutorial-projects-solutions.md).
+- El [Explorador de soluciones](../../ide/solutions-and-projects-in-visual-studio.md) (parte superior derecha) permite ver, navegar y administrar los archivos de código. El **Explorador de soluciones** puede ayudar a organizar el código al agrupar los archivos en [soluciones y proyectos](tutorial-projects-solutions.md).
 
 - La [ventana del editor](../../ide/writing-code-in-the-code-and-text-editor.md) (centro), donde es probable que pase la mayor parte del tiempo, muestra el contenido del archivo. Es donde puede editar código o diseñar una interfaz de usuario, como una ventana con botones y cuadros de texto.
 
-- La ventana [Resultados](../../ide/reference/output-window.md) (parte inferior central) es donde Visual Studio envía notificaciones, como mensajes de error y de depuración, advertencias del compilador, mensajes de estado de publicación, etc. Cada fuente del mensaje tiene su propia pestaña.
+- La ventana [Resultados](../../ide/reference/output-window.md) (parte inferior central) es donde Visual Studio envía notificaciones, como mensajes de error y de depuración, advertencias del compilador, mensajes de estado de publicación, etc. Cada código fuente de mensaje tiene su propia pestaña.
 
 - [Team Explorer](/azure/devops/user-guide/work-team-explorer?view=vsts&preserve-view=true) (parte inferior derecha) permite realizar el seguimiento de los elementos de trabajo y compartir código con otros usuarios mediante tecnologías de control de versiones como [Git](https://git-scm.com/) y [Control de versiones de Team Foundation (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts&preserve-view=true).
 
@@ -375,7 +378,7 @@ Vamos a profundizar y crear un programa sencillo.
 
    Visual Studio compila la aplicación y se abre una ventana de consola con el mensaje **¡Hola mundo!** ¡Ya tiene una aplicación en ejecución!
 
-   ![Ventana de consola](../media/vs-2019/overview-console-window.png)
+   ![Captura de pantalla de la ventana de consola que muestra el mensaje Hola mundo.](../media/vs-2019/overview-console-window.png)
 
 1. Para cerrar la ventana de consola, presione cualquier tecla del teclado.
 
@@ -400,7 +403,7 @@ Vamos a profundizar y crear un programa sencillo.
 
 1. Escriba su nombre en la ventana de consola y presione **Entrar**.
 
-   ![Ventana de consola](../media/vs-2019/overview-console-input.png)
+   ![Captura de pantalla de la ventana de consola que muestra la pregunta What is your name y la respuesta de la aplicación.](../media/vs-2019/overview-console-input.png)
 
 1. Presione cualquier tecla para cerrar la ventana de consola y detener la ejecución del programa.
 

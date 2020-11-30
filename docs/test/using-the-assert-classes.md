@@ -1,5 +1,7 @@
 ---
 title: Clases y métodos de prueba MSTest Assert
+description: Aprenda a usar instrucciones Assert para probar la corrección del comportamiento del código durante una prueba unitaria del código de la aplicación.
+ms.custom: SEO-VS-2020
 ms.date: 06/07/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: c36916c79bd783ed2c6ce960b068e85478b9971d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c5401fb15a19d069c0bf454661d6d9283abb2585
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75592053"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598203"
 ---
 # <a name="use-assert-classes-for-unit-testing"></a>Utilice las clases Assert para realizar pruebas unitarias
 

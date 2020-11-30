@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: Ver los tipos existentes (Diseñador de clases)'
+description: Aprenda a ver un tipo existente y sus miembros agregando su forma a un diagrama de clases.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa27489844bc59bc0d4da32440cc1caa74ecbea6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6b4660c4efc7c22431b7c9f0d9180576d524a372
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770010"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901172"
 ---
 # <a name="how-to-view-existing-types-in-class-designer"></a>Cómo: Ver los tipos existentes en el Diseñador de clases
 
@@ -61,8 +63,8 @@ Cuando se muestra por primera vez un tipo en el diagrama, su forma aparece contr
 
 En el **Explorador de soluciones** o en la **Vista de clases**, haga clic con el botón derecho en el proyecto y elija **Ver**; después, elija **Ver diagrama de clases**. Se crea un diagrama de clases que se rellena automáticamente.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Cómo: Ver la herencia entre tipos](how-to-view-inheritance-between-types.md)
-- [Cómo: Personalizar los diagramas de clases](how-to-customize-class-diagrams.md)
+- [Cómo: Personalizar diagramas de clases](how-to-customize-class-diagrams.md)
 - [Visualización de tipos y relaciones](designing-and-viewing-classes-and-types.md)

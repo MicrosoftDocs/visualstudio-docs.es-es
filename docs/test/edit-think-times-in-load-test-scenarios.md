@@ -1,5 +1,7 @@
 ---
 title: Tiempos de reflexión para pruebas de carga
+description: Aprenda a editar los tiempos de reflexión, que simulan el comportamiento humano que hace que las personas esperen entre interacciones con un sitio web.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.assetid: 8e03bee5-ab7b-4b40-9497-9dbe91ccb90e
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 887d2af9e60be914bd74141041ecc375cfea4f00
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a1c0c1ef98a77b83c49ca69fd70e38238ed4ded0
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590038"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441305"
 ---
 # <a name="edit-think-times-to-simulate-website-human-interaction-delays-in-load-tests-scenarios"></a>Modificación de los tiempos de reflexión de usuario para simular los retrasos de la interacción humana en un sitio web en escenarios de pruebas de carga
 
@@ -29,11 +31,11 @@ Las opciones de **Perfil de reflexión de usuario** se describen en la lista sig
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-**Off**
+**Desactivado**
 
 Los tiempos de reflexión se omiten. Utilice esta configuración cuando desee generar carga máxima para cargar su servidor web de forma considerable. No la utilice cuando trate de crear interacciones de usuario con un servidor web más realistas.
 
-**On**
+**Activado**
 
 Los tiempos de reflexión de usuario se utilizan exactamente como se grabaron en la prueba de rendimiento web. Simula que varios usuarios ejecutan las pruebas de rendimiento web exactamente como se han grabado. Dado que una prueba de carga simula varios usuarios, el uso del mismo tiempo de reflexión podría crear un modelo de carga de usuarios virtuales sincronizados que resultaría poco natural.
 

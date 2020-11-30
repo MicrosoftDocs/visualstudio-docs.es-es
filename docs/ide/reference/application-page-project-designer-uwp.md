@@ -1,5 +1,7 @@
 ---
 title: Página de propiedades Aplicación para aplicaciones UWP
+description: Aprenda a usar la página Aplicación para especificar la información del paquete y el ensamblado del proyecto de la Plataforma universal de Windows (UWP), y definir como destino la versión de Windows 10.
+ms.custom: SEO-VS-2020
 ms.date: 01/23/2018
 ms.topic: reference
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 3c8f72d4e1d1caeacd5dfefef5310dc2cef83b92
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 826d408d8e1a6a2cb8bcad956ce930781a9155db
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77173087"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871371"
 ---
 # <a name="application-property-page-uwp-projects"></a>Página de propiedades de Aplicación (proyectos UWP)
 
@@ -46,7 +48,7 @@ Puede establecer la versión de destino y la versión mínima de Windows 10 para
 
 Para obtener información sobre la selección de destinos de plataforma en Visual Studio, vea [Compatibilidad y destinatarios de la plataforma](/visualstudio/productinfo/vs2017-compatibility-vs#platform-targeting).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Crear su primera aplicación](/windows/uwp/get-started/your-first-app)
 - [Elegir una versión de UWP](/windows/uwp/updates-and-versions/choose-a-uwp-version)

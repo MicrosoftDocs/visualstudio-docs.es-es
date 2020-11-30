@@ -1,5 +1,7 @@
 ---
 title: Plantillas para proyectos y archivos
+description: Vea cómo las plantillas de proyecto y elemento ofrecen códigos auxiliares reutilizables que proporcionan a los usuarios código y estructura básicos.
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 2cc932a2407aeb4951bab970a0edc6e2b2a5fcc9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f7ce85818e0cce4a6e78f5e2ec5901452ebd83f9
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89313801"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006307"
 ---
 # <a name="project-and-item-templates"></a>Plantillas de proyecto y elemento
 
@@ -67,10 +69,10 @@ Cuando estos archivos se comprimen en un archivo *.zip* y se colocan en la carpe
 
 Para obtener más información sobre las carpetas de plantillas, vea [Cómo: Buscar y organizar plantillas](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Cómo: Crear plantillas de proyecto](../ide/how-to-create-project-templates.md)
-- [Cómo: Crear plantillas de elementos](../ide/how-to-create-item-templates.md)
+- [Cómo: Crear plantillas de elemento](../ide/how-to-create-item-templates.md)
 - [Template tags](template-tags.md) (Etiquetas de plantilla)
 - [Parámetros de plantilla](../ide/template-parameters.md)
 - [Personalizar plantillas](../ide/customizing-project-and-item-templates.md)

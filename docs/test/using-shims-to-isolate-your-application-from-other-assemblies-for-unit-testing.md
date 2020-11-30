@@ -1,5 +1,6 @@
 ---
 title: Aislamiento de la aplicación con correcciones de compatibilidad (shim) (pruebas unitarias)
+description: Aprenda a usar tipos de correcciones de compatibilidad (shim) para desviar las llamadas a métodos específicos hacia el código que se escribe como parte de la prueba. Una corrección de compatibilidad (shim) puede devolver resultados coherentes en cada llamada.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -9,12 +10,12 @@ author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 13a5c8c4058fc051cf7ec0093632220c757604f0
-ms.sourcegitcommit: f2bb3286028546cbd7f54863b3156bd3d65c55c4
+ms.openlocfilehash: 0ce89246d227d747fee2d3a02484855257f016f8
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93325927"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598216"
 ---
 # <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>Uso de correcciones de compatibilidad (shim) para aislar la aplicación para pruebas unitarias
 
@@ -67,14 +68,14 @@ using (ShimsContext.Create()) {
 
 Primero, agregue un ensamblado de Fakes:
 
-1. En el **Explorador de soluciones** : 
+1. En el **Explorador de soluciones**: 
     - Para un proyecto de .NET Framework anterior (que no sea de estilo SDK), expanda el nodo **Referencias** del proyecto de pruebas unitarias.
     ::: moniker range=">=vs-2019"
-    - Para un proyecto de estilo SDK que tenga como destino .NET Framework o .NET Core, expanda el nodo **Dependencias** para buscar el ensamblado que desea imitar en **Ensamblados** , **Proyectos** o **Paquetes**.
+    - Para un proyecto de estilo SDK que tenga como destino .NET Framework o .NET Core, expanda el nodo **Dependencias** para buscar el ensamblado que desea imitar en **Ensamblados**, **Proyectos** o **Paquetes**.
     ::: moniker-end
     - Si está trabajando en Visual Basic, seleccione **Mostrar todos los archivos** en la barra de herramientas del **Explorador de soluciones** para ver el nodo **Referencias**.
 
-2. Seleccione el ensamblado que contiene las definiciones de clases para las que desea crear las correcciones de compatibilidad (shim). Por ejemplo, si quiere realizar una corrección de compatibilidad para **DateTime** , seleccione **System.dll**.
+2. Seleccione el ensamblado que contiene las definiciones de clases para las que desea crear las correcciones de compatibilidad (shim). Por ejemplo, si quiere realizar una corrección de compatibilidad para **DateTime**, seleccione **System.dll**.
 
 3. En el menú contextual, seleccione **Agregar ensamblado de Fakes**.
 
@@ -507,7 +508,7 @@ ShimFile.WriteAllTextStringString = shim;
 
 ## <a name="systemenvironment"></a>System.Environment
 
-Para procesar <xref:System.Environment?displayProperty=fullName> con shim, agregue el siguiente contenido al archivo mscorlib.fakes después del elemento **Assembly** :
+Para procesar <xref:System.Environment?displayProperty=fullName> con shim, agregue el siguiente contenido al archivo mscorlib.fakes después del elemento **Assembly**:
 
 ```xml
 <ShimGeneration>
@@ -523,7 +524,7 @@ System.Fakes.ShimEnvironment.GetCommandLineArgsGet = ...
 
 ## <a name="limitations"></a>Limitaciones
 
-Las correcciones de compatibilidad (shim) no se pueden usar en todos los tipos de las bibliotecas de clases base de .NET **mscorlib** y **System** en .NET Framework, y en **System.Runtime** , en .NET Core.
+Las correcciones de compatibilidad (shim) no se pueden usar en todos los tipos de las bibliotecas de clases base de .NET **mscorlib** y **System** en .NET Framework, y en **System.Runtime**, en .NET Core.
 
 ## <a name="see-also"></a>Vea también
 

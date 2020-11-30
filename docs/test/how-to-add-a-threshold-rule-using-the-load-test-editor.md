@@ -1,5 +1,7 @@
 ---
 title: Adición de una regla de umbral para pruebas de carga
+description: Conozca las reglas de umbral de las pruebas de carga, que comparan un valor de contador de rendimiento con un valor constante o con otro valor de contador de rendimiento.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.assetid: 3d8fac8f-426f-4155-9ced-f7cd4c79792c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c6855088c05e03311b5724ba3a0ccf438a43b6a8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: efd601862de60c38991de5eb901de5b55605540a
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288486"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440225"
 ---
 # <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>Cómo: Agregar una regla de umbral mediante el Editor de pruebas de carga
 

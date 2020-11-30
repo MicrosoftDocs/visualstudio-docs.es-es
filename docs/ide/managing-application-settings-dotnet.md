@@ -1,5 +1,7 @@
 ---
 title: Administración de la configuración de la aplicación (.NET)
+description: Aprenda a administrar la configuración de la aplicación (anteriormente denominada propiedades dinámicas) que no se incluye en el código de la aplicación, pero que es necesaria en tiempo de ejecución.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d792a6147795f81211203fc442539371f3caa91
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f62e03210e83f434bd32d08c3fe0f7b2b539155e
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593712"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95596903"
 ---
 # <a name="manage-application-settings-net"></a>Administración de la configuración de la aplicación (.NET)
 
@@ -50,7 +52,7 @@ Observe que los cambios en la configuración de usuario no se escriben en el dis
 
 ## <a name="create-application-settings-at-design-time"></a>Creación de la configuración de la aplicación en tiempo de diseño
 
-En tiempo de diseño, hay dos maneras de crear la configuración de la aplicación: mediante la página **Configuración** del **Diseñador de proyectos**o desde la ventana **Propiedades** de un formulario o un control, lo que le permite enlazar una configuración a una propiedad.
+En tiempo de diseño, hay dos maneras de crear la configuración de la aplicación: mediante la página **Configuración** del **Diseñador de proyectos** o desde la ventana **Propiedades** de un formulario o un control, lo que le permite enlazar una configuración a una propiedad.
 
 Cuando se crea una configuración con ámbito de aplicación (por ejemplo, una cadena de conexión de base de datos o una referencia a recursos del servidor), [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] la guarda en un archivo *app.config* con la etiqueta `<applicationSettings>`. (Las cadenas de conexión se guardan en la etiqueta `<connectionStrings>` .)
 
@@ -102,6 +104,6 @@ Properties.Settings.Default.Save();
 
 Para obtener información general sobre cómo acceder a la configuración de la aplicación mediante la clase `Settings`, vea [Introducción a la configuración de la aplicación (.NET Framework)](/dotnet/framework/winforms/advanced/application-settings-overview). Para obtener información sobre cómo recorrer en iteración la configuración, vea este [artículo del foro](https://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Acceso a la configuración de la aplicación (.NET Framework)](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings)

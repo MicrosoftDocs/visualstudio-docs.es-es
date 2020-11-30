@@ -1,5 +1,7 @@
 ---
 title: Adición de parámetros de contexto a los parámetros de ejecución de una prueba de carga
+description: Aprenda a crear parámetros de contexto para usarlos en una configuración de ejecución de pruebas de carga mediante el Editor de pruebas de carga. Estos parámetros le permiten parametrizar una cadena.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: a8a0b97e-8040-4711-85ab-36548b130ed2
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 10a410b18391b3fbaee98f10be56cdc70c0f3562
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 22b3a6a1f40a317284380bf72aadec4d53b6ce13
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288421"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440192"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Cómo: Agregar parámetros de contexto a parámetros de ejecución de pruebas de carga
 
@@ -46,7 +48,7 @@ Además, si asigna valores diferentes a un parámetro de contexto usando el mism
 
   **Set Test.UseRunSetting= CorporateStagingWebServer**
 
-  \- y -
+  - y -
 
   **mstest /testcontainer:loadtest1.loadtest**
 
@@ -60,7 +62,7 @@ Además, si asigna valores diferentes a un parámetro de contexto usando el mism
 
      Se agregará un nuevo parámetro de contexto a la carpeta **Parámetros de contexto** de la carpeta **Parámetros de ejecución** del árbol de pruebas de carga.
 
-     o bien
+     O bien
 
      Si el parámetro de ejecución ya contiene una carpeta **Parámetros de contexto**, puede hacer clic en ella con el botón derecho y, a continuación, elegir **Agregar parámetro de contexto**.
 

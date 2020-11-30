@@ -1,5 +1,7 @@
 ---
 title: Iconos de la Vista de clases y del Examinador de objetos
+description: Aprenda sobre los iconos que se muestran en la Vista de clases y el Examinador de objetos que representan las entidades de código, por ejemplo, los espacios de nombres, las clases, las funciones y las variables.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -16,18 +18,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87bce70f83be2af80f93cf9888432257f6139732
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f8c0cf21d6d9055f183d15728fb63118ffb87e9c
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285156"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94904006"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Iconos de la Vista de clases y del Examinador de objetos
 
 En **Vista de clases** y **Examinador de objetos** se muestran iconos que representan las entidades de código, por ejemplo, los espacios de nombres, las clases, las funciones y las variables. En la tabla siguiente se muestran y describen los iconos.
 
-|Iconos|Descripción|Iconos|Descripción|
+|Iconos|Descripción|Icono|Descripción|
 |----------|-----------------|----------|-----------------|
 |![Símbolo de espacio de nombres](../ide/media/vxnamespace_icon.gif)|Espacio de nombres|![Símbolo de declaración](../ide/media/vxmethod_icon.gif)|Método o función|
 |![Icon Clase](../ide/media/vxclass_icon.gif)|Clase|![Símbolo de operador](../ide/media/vxoperator_icon.gif)|Operador|

@@ -1,5 +1,7 @@
 ---
 title: Agregar comprobaciones de todos los parámetros nulos
+description: Aprenda a crear y agregar instrucciones if al código que comprueben la nulidad de todos los parámetros no comprobados que admiten valores NULL.
+ms.custom: SEO-VS-2020
 ms.date: 09/17/2019
 ms.topic: reference
 author: mikadumont
@@ -9,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 573a9e56d3aedd55bc571eaaa363b42a53019566
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5828a2bb28f7b3085cd5d43c452c520a730b8175
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74782346"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95870968"
 ---
 # <a name="add-null-checks-for-all-parameters"></a>Agregar comprobaciones de todos parámetros nulos 
 

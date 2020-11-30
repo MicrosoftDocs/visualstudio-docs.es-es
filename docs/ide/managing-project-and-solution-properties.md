@@ -1,5 +1,7 @@
 ---
 title: Administrar propiedades de soluciones y proyectos
+description: Aprenda a administrar las propiedades del proyecto y las propiedades de la solución en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01fcdc09c9d3ee4f5a38a95ef4304bfdf537d527
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7b7b89588e778a142e7dd49e1a3051a9aa188ff1
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591312"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871397"
 ---
 # <a name="manage-project-and-solution-properties"></a>Administrar propiedades de soluciones y proyectos
 
@@ -27,7 +29,7 @@ Los proyectos de .NET también pueden tener un nodo de propiedades en el propio 
 > [!NOTE]
 > Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Administrar propiedades de soluciones y proyectos (Visual Studio para Mac)](/visualstudio/mac/managing-solutions-and-project-properties).
 
-## <a name="project-properties"></a>Propiedades del proyecto
+## <a name="project-properties"></a>Propiedades de proyecto
 
 Las propiedades del proyecto se organizan en grupos y cada grupo tiene su propia página de propiedades. Es posible que las páginas varíen para lenguajes y tipos de proyecto diferentes.
 
@@ -54,7 +56,7 @@ Para obtener información sobre las propiedades de proyectos de C++, vea [Trabaj
 
 Para obtener acceso a las propiedades de la solución, haga clic con el botón derecho en el nodo de la solución en el **Explorador de soluciones** y seleccione **Propiedades**. En el cuadro de diálogo puede establecer configuraciones de proyecto para las compilaciones de **depuración** o **versión**, elegir los proyectos que van a conformar el proyecto de inicio al presionar **F5** y establecer opciones de análisis de código.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Soluciones y proyectos en Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)
 - [Administrar propiedades de soluciones y proyectos (Visual Studio para Mac)](/visualstudio/mac/managing-solutions-and-project-properties)

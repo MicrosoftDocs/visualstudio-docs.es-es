@@ -1,5 +1,7 @@
 ---
 title: Creación de códigos auxiliares de método de pruebas unitarias
+description: Aprenda a usar el comando Crear pruebas unitarias, que permite configurar fácilmente un proyecto de prueba, la clase de prueba y el código auxiliar del método de prueba que contiene.
+ms.custom: SEO-VS-2020
 ms.date: 04/24/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b2712210d4761edb90414e2a27beba74a3bacbf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8afbc73e8c778829a9a1ce5a59d30df6de2f0daa
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288668"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441864"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Crear códigos auxiliares de método de pruebas unitarias con el comando Crear pruebas unitarias
 

@@ -1,5 +1,7 @@
 ---
 title: Tutorial de prueba de IU codificada controlada por datos
+description: Aprenda a usar pruebas automatizadas de IU para probar diferentes condiciones ejecutando las pruebas varias veces con distintos valores de parámetros.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ada1f297bbb30fbe636042c87aae42849c1b6b7d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d9c4deb02bea8bf6e3dc3615ba9c5f0eddc6c877
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595363"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442682"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Crear una prueba de IU codificada controlada por datos
 
@@ -33,7 +35,7 @@ En este ejemplo se crea una prueba de IU codificada que se ejecuta en la aplicac
 
 ### <a name="step-1---create-a-coded-ui-test"></a>Paso 1: crear una prueba de IU codificada
 
-1. Cree un proyecto.
+1. Crear un proyecto.
 
     ![Crear un proyecto de prueba de IU codificada](../test/media/cuit_datadriven_.png)
 
@@ -74,7 +76,7 @@ En este ejemplo se crea una prueba de IU codificada que se ejecuta en la aplicac
 
     ![Asignar el control de texto de la IU](../test/media/cuit_datadriven_addassertion.png)
 
-7. Agregue una aserción que valide que el valor de la suma es correcto. Elija la propiedad **DisplayText** que tiene el valor**3** y después seleccione **Agregar aserción**. Use el comparador **AreEqual** y compruebe que el valor de comparación es **3**.
+7. Agregue una aserción que valide que el valor de la suma es correcto. Elija la propiedad **DisplayText** que tiene el valor **3** y después seleccione **Agregar aserción**. Use el comparador **AreEqual** y compruebe que el valor de comparación es **3**.
 
     ![Configurar la aserción](../test/media/cuit_datadriven_builderaddassertion2.png)
 
@@ -229,15 +231,15 @@ Debería ver como la prueba se ejecuta en las tres iteraciones usando los valore
 
 ### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>P: ¿Por qué no puedo modificar el código en el archivo UIMap.Designer?
 
-**R:** Cualquier cambio que se realice en el código del archivo *UIMapDesigner.cs* se sobrescribirá cada vez que se genere código mediante UIMap - Generador de pruebas automatizadas de IU. En este ejemplo, y en la mayoría de los casos, los cambios de código necesarios para habilitar una prueba para utilizar un origen de datos pueden introducirse en el archivo de código fuente de la prueba (es decir, *CodedUITest1.cs*).
+**R:** Cualquier cambio que se efectúe en el código del archivo *UIMapDesigner.cs* se sobrescribirá cada vez que se genere código mediante UIMap - Generador de pruebas de IU codificadas. En este ejemplo, y en la mayoría de los casos, los cambios de código necesarios para habilitar una prueba para utilizar un origen de datos pueden introducirse en el archivo de código fuente de la prueba (es decir, *CodedUITest1.cs*).
 
-Si tiene que modificar un método grabado, debe copiarlo en el archivo *UIMap.cs* y cambiar el nombre. El archivo *UIMap.cs* se puede usar para invalidar métodos y propiedades en el archivo *UIMapDesigner.cs*. Debe quitar la referencia al método original en el archivo *UITest.cs* codificado y reemplazarlo con el nombre del método cuyo nombre ha cambiado.
+Si tiene que modificar un método grabado, debe copiarlo en el archivo *UIMap.cs* y cambiar el nombre. El archivo *UIMap.cs* se puede utilizar para invalidar métodos y propiedades en el archivo *UIMapDesigner.cs*. Debe quitar la referencia al método original en el archivo *UITest.cs* codificado y reemplazarlo con el nombre del método cuyo nombre ha cambiado.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 - [Usar la automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)
 - [Crear pruebas automatizadas de IU](../test/use-ui-automation-to-test-your-code.md)
-- [Procedimientos recomendados para las pruebas de IU codificadas](../test/best-practices-for-coded-ui-tests.md)
+- [Procedimientos recomendados para las pruebas automatizadas de IU](../test/best-practices-for-coded-ui-tests.md)
 - [Configuraciones y plataformas compatibles con las pruebas automatizadas de IU y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

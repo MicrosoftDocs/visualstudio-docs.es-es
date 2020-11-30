@@ -1,5 +1,7 @@
 ---
 title: Procedimientos recomendados para usar fragmentos de código
+description: Aprenda sobre los fragmentos de código, la intención de un fragmento de código y el mejor modo de usarlos para que se adapten a su aplicación.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08add20b59e3e14897d1870aa45fd6cce8698d96
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f54a451bea8345d06073e6f3a8ab944b3c7ea820
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591715"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903148"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Procedimientos recomendados para usar fragmentos de código
 
@@ -25,7 +27,7 @@ El código de un fragmento de código muestra solo la forma más sencilla de hac
 
 Normalmente, el fragmento de código Try...Catch bloquea catch y vuelve a iniciar todas las excepciones. Es posible que esta no sea la elección correcta para su proyecto. Para cada excepción, hay varias formas de responder. Para obtener ejemplos, vea [Cómo: Controlar una excepción mediante Try y Catch (Guía de programación de C#)](/dotnet/csharp/programming-guide/exceptions/how-to-handle-an-exception-using-try-catch) e [Instrucción Try...Catch...Finally (Visual Basic)](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement).
 
-## <a name="file-locations"></a>Ubicaciones de archivos
+## <a name="file-locations"></a>Ubicaciones de archivo
 
 Al adaptar las ubicaciones de archivo a la aplicación, debe tener en cuenta lo siguiente:
 
@@ -67,7 +69,7 @@ Los fragmentos de código de IntelliSense instalados por Visual Studio no consti
 
   - El fragmento de código puede contener referencias que se agregan automáticamente al proyecto y es posible que se carguen desde cualquier lugar del sistema. Es posible que estas referencias se hayan descargado en el equipo desde el mismo sitio del que ha descargado el fragmento de código. El fragmento de código puede realizar una llamada a un método en la referencia que ejecuta código malintencionado. Para protegerse contra este tipo de ataque, revise los bloques Importaciones y Referencias del archivo de fragmentos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Fragmentos de código de IntelliSense de Visual Basic](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)
 - [Protección de aplicaciones](../ide/securing-applications.md)

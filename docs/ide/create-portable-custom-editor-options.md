@@ -1,5 +1,7 @@
 ---
 title: Configuración de EditorConfig
+description: Aprenda a agregar un archivo EditorConfig al proyecto o código base para aplicar estilos de codificación coherentes para todos los usuarios que trabajan en el código base.
+ms.custom: SEO-VS-2020
 ms.date: 09/02/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -7,12 +9,12 @@ helpviewer_keywords:
 author: mikadumont
 ms.author: midumont
 manager: jillfra
-ms.openlocfilehash: 277e5cd03d4006ced0791356be73ca1fcbe5c217
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: a1f66368972614347df9eebe33af435987ea9cc8
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659256"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006502"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Crear opciones de configuración del editor personalizadas y portátiles con EditorConfig
 

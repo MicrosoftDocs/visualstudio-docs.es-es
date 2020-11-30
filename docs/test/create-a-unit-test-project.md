@@ -1,5 +1,7 @@
 ---
 title: Crear un proyecto de prueba unitaria
+description: Aprenda a crear un proyecto de prueba unitaria. El proyecto de prueba puede estar en la misma solución que el código de producción, o puede estar en una solución independiente.
+ms.custom: SEO-VS-2020
 ms.date: 01/29/2019
 ms.topic: how-to
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: ffa19fb9dc49d6286ef3f54c51d89043445f18ba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f0d438c05d3c9608c11903c02119d7c3e267a48b
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288720"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441851"
 ---
 # <a name="create-a-unit-test-project"></a>Crear un proyecto de prueba unitaria
 

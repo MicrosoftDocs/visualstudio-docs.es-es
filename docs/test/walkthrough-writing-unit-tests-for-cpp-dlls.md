@@ -1,5 +1,7 @@
 ---
 title: Procedimiento Escribir pruebas unitarias para archivos DLL de C++
+description: Aprenda a desarrollar un archivo DLL de C++ nativo mediante la metodología de prueba previa. Empiece por crear un proyecto de prueba nativo.
+ms.custom: SEO-VS-2020
 ms.date: 06/13/2019
 ms.topic: how-to
 ms.author: corob
@@ -7,16 +9,16 @@ manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 16020c0928229c80a9eb33b3bc4804b004d9f432
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 178fef548bc52346a78c7f9e4607aad7b1c56f65
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816012"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598411"
 ---
-# <a name="how-to-write-unit-tests-for-c-dlls"></a>Procedimiento Escribir pruebas unitarias para archivos DLL de C++
+# <a name="how-to-write-unit-tests-for-c-dlls"></a>Cómo escribir pruebas unitarias de DLL de C++
 
-En este tutorial se describe cómo desarrollar una DLL de C++ nativa creando antes una prueba. Estos son los pasos básicos:
+En este tutorial se describe cómo desarrollar una DLL de C++ nativa creando antes una prueba. Los pasos básicos son los siguientes:
 
 1. [Crear un proyecto de prueba nativo](#create_test_project). El proyecto de prueba está en la misma solución que el proyecto de DLL.
 
@@ -49,7 +51,7 @@ En este tutorial se describe cómo desarrollar una DLL de C++ nativa creando ant
 
      ![Proyecto de prueba con TEST&#95;CLASS y TEST&#95;METHOD](../test/media/utecpp2.png)
 
-     Tenga en cuenta que:
+     Tenga en lo siguiente:
 
     - Cada prueba se define mediante `TEST_METHOD(YourTestName){...}`.
 
@@ -92,7 +94,7 @@ En los pasos que hay a continuación se muestra cómo crear un proyecto de DLL e
 
      En este tutorial, el proyecto se llama `RootFinder`.
 
-2. Presione **Crear**. En el cuadro de diálogo siguiente, en **Tipo de aplicación**, elija **biblioteca de vínculos dinámicos (DLL)** y marque también **Exportar símbolos**.
+2. Pulse **Crear**. En el cuadro de diálogo siguiente, en **Tipo de aplicación**, elija **biblioteca de vínculos dinámicos (DLL)** y marque también **Exportar símbolos**.
 
      La opción **Exportar símbolos** genera una cómoda macro que puede utilizar para declarar métodos exportados.
 
@@ -349,7 +351,7 @@ En los pasos que hay a continuación se muestra cómo crear un proyecto de DLL e
 
     ```
 
-2. Compile la solución y elija **Ejecutar todo**para asegurarse de que no se ha introducido un error.
+2. Compile la solución y elija **Ejecutar todo** para asegurarse de que no se ha introducido un error.
 
     > [!TIP]
     > Un buen conjunto de pruebas unitarias le da la seguridad de que no ha introducido errores al cambiar el código.
@@ -366,10 +368,10 @@ En los pasos que hay a continuación se muestra cómo crear un proyecto de DLL e
 
    También puede asignar un nivel mínimo de cobertura de código.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Agregar pruebas unitarias a aplicaciones C++ existentes](../test/how-to-use-microsoft-test-framework-for-cpp.md)
 - [Usar Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md)
 - [Depuración del código nativo](../debugger/debugging-native-code.md)
 - [Tutorial: Creación y uso de una biblioteca de vínculos dinámicos (C++)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
-- [Importar y exportar](/cpp/build/importing-and-exporting)
+- [Importación y exportación](/cpp/build/importing-and-exporting)

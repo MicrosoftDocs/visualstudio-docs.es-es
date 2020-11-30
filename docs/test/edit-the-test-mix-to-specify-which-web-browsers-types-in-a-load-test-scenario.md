@@ -1,5 +1,7 @@
 ---
 title: Combinación de pruebas de exploradores para pruebas de carga
+description: Aprenda a editar la combinación de exploradores, que ofrece una forma más realista de simular la carga en un escenario de prueba de carga.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.assetid: 47f981d9-3038-45cc-a486-82b9daf9a9a1
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 394331ae06760e0547cfc2b5a37a6dcd357e3614
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4dae1a89eb40e71a07540eef7512327282ef0b9b
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114536"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441319"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario"></a>Edición de la combinación de pruebas para especificar tipos de exploradores web en un escenario de prueba de carga
 

@@ -1,5 +1,6 @@
 ---
 title: Agregar diagramas de clases a proyectos (Diseñador de clases)
+description: Aprenda a diseñar, editar y refactorizar las clases y otros tipos, y a agregar un diagrama de clases al proyecto de C#, Visual Basic o C++.
 ms.custom: SEO-VS-2020
 ms.date: 05/08/2018
 ms.topic: how-to
@@ -12,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4aa336672dce538c5bfe07cd8ae7b1a4c5771cbd
-ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
+ms.openlocfilehash: 2fbde07ec9825f094777f7e9b962e8394595e180
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93102560"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903005"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>Cómo: Agregar diagramas de clases a proyectos
 
@@ -27,7 +28,7 @@ No se pueden crear diagramas de clases de proyectos que compartan código en var
 
 ## <a name="install-the-class-designer-component"></a>Instalar el componente del Diseñador de clases
 
-Si no ha instalado el componente del **Diseñador de clases** , siga estos pasos para hacerlo.
+Si no ha instalado el componente del **Diseñador de clases**, siga estos pasos para hacerlo.
 
 1. Abra el **Instalador de Visual Studio** desde el menú Inicio de Windows o seleccionando **Herramientas** > **Obtener herramientas y características** en la barra de menús de Visual Studio.
 
@@ -43,14 +44,14 @@ Si no ha instalado el componente del **Diseñador de clases** , siga estos pasos
 
 ## <a name="add-a-blank-class-diagram-to-a-project"></a>Agregar un diagrama de clases en blanco a un proyecto
 
-1. En el **Explorador de soluciones** , haga clic con el botón derecho en el nodo del proyecto y, después, elija **Agregar** > **Nuevo elemento**. También puede presionar **Ctrl**+**Mayús**+**A**.
+1. En el **Explorador de soluciones**, haga clic con el botón derecho en el nodo del proyecto y, después, elija **Agregar** > **Nuevo elemento**. También puede presionar **Ctrl**+**Mayús**+**A**.
 
    Se abrirá el cuadro de diálogo **Agregar nuevo elemento**.
 
 2. Expanda **Elementos comunes** > **General** y, después, seleccione **Diagrama de clases** en la lista de plantillas. Para los proyectos de Visual C++, busque en la categoría **Utilidad** la plantilla **Diagrama de clases**.
 
    > [!NOTE]
-   > Si no ve la plantilla **Diagrama de clases** , [siga los pasos](#install-the-class-designer-component) para instalar el componente del **Diseñador de clases** de Visual Studio.
+   > Si no ve la plantilla **Diagrama de clases**, [siga los pasos](#install-the-class-designer-component) para instalar el componente del **Diseñador de clases** de Visual Studio.
 
    El diagrama de clases se abre en el Diseñador de clases y aparece como un archivo que tiene la extensión *.cd* en el **Explorador de soluciones**. Puede arrastrar formas y líneas al diagrama desde el **cuadro de herramientas**.
 
@@ -58,18 +59,18 @@ Para agregar varios diagramas de clases, repita los pasos de este procedimiento.
 
 ## <a name="add-a-class-diagram-based-on-existing-types"></a>Agregar un diagrama de clases basado en tipos existentes
 
-En el **Explorador de soluciones** , abra el menú contextual (botón derecho) del archivo de clases y elija **Ver diagrama de clases**.
+En el **Explorador de soluciones**, abra el menú contextual (botón derecho) del archivo de clases y elija **Ver diagrama de clases**.
 
 o bien
 
-En **Vista de clases** , abra el menú contextual del espacio de nombres o del tipo y, después, elija **Ver diagrama de clases**.
+En **Vista de clases**, abra el menú contextual del espacio de nombres o del tipo y, después, elija **Ver diagrama de clases**.
 
 > [!TIP]
 > Si la **Vista de clases** no está abierta, abra la **Vista de clases** desde el menú **Ver**.
 
 ## <a name="to-display-the-contents-of-a-complete-project-in-a-class-diagram"></a>Para mostrar los contenidos de un proyecto completo en un diagrama de clases
 
-En el **Explorador de soluciones** o en la Vista de clases, haga clic con el botón derecho en el proyecto y elija **Ver** ; después, elija **Ver diagrama de clases**.
+En el **Explorador de soluciones** o en la Vista de clases, haga clic con el botón derecho en el proyecto y elija **Ver**; después, elija **Ver diagrama de clases**.
 
 Se crea un diagrama de clases que se rellena automáticamente.
 

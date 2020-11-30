@@ -1,5 +1,7 @@
 ---
 title: Reglas de anidamiento de archivos para el Explorador de soluciones
+description: Aprenda sobre las reglas de anidamiento de archivos, los valores preestablecidos y la personalización del Explorador de soluciones.
+ms.custom: SEO-VS-2020
 ms.date: 05/25/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,12 +10,12 @@ helpviewer_keywords:
 author: angelosp
 ms.author: angelpe
 manager: jillfra
-ms.openlocfilehash: a36ca2535785f72756ad66a69c2ebe4d7d5a373b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5425c255e85a2785383f1e8e718340fc2049e0c4
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "67587027"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006697"
 ---
 # <a name="file-nesting-in-solution-explorer"></a>Anidamiento de archivos en el Explorador de soluciones
 
@@ -56,7 +58,7 @@ Centrémonos en el nodo **dependentFileProviders** y en sus nodos secundarios. C
 
 * **pathSegment**: use este tipo de regla para anidar *jquery.min.js* en *jquery.js*.
 
-* **allExtensions**: use este tipo de regla para anidar *file.* * en *file.js*.
+* **allExtensions**: use este tipo de regla para anidar *file.** en *file.js*.
 
 * **fileToFile**: use este tipo de regla para anidar *bower.json* en *.bowerrc*.
 

@@ -1,5 +1,7 @@
 ---
 title: Comandos de navegación por el código
+description: Conozca las diferentes opciones que tiene para desplazarse por el código en el editor.
+ms.custom: SEO-VS-2020
 ms.date: 11/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,12 +20,12 @@ ms.author: tglee
 manager: tglee
 ms.workload:
 - multiple
-ms.openlocfilehash: 0216a71b675473d54aec9738ea7bdc85b7643841
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 77b0f8782f9ffaf37701f13b30be6e068ce05f8d
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585826"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871527"
 ---
 # <a name="navigate-code"></a>Navegación en el código
 
@@ -76,7 +78,7 @@ Al hacer clic en un símbolo en el código fuente, se resaltan todas las instanc
 
 Ir a tiene los comandos siguientes, que están disponibles en el menú **Editar** en **Ir a**:
 
-- **Ir a la línea** (**Ctrl**+**G**): Moverse al número de línea especificado en el documento activo.
+- **Ir a la línea** (**Ctrl**+**G**): moverse al número de línea especificado en el documento activo.
 
 - **Ir a todo** (**Ctrl**+**T** o **Ctrl**+ **,** ): Moverse a la línea, tipo, archivo, miembro o símbolo especificados.
 

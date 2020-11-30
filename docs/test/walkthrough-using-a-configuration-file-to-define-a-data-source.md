@@ -1,5 +1,7 @@
 ---
 title: Uso del archivo de configuración para definir el origen de datos
+description: Aprenda a usar un origen de datos definido en un archivo app.config con pruebas unitarias, empezando por la creación de un archivo app.config que defina un origen de datos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +13,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a4f5731a828eb04e57f56a46fe399125b5ded2f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 06e33721fa4ac1cc657c79c8aa68b35e5ceec00b
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75776155"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598502"
 ---
-# <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Tutorial: Uso de un archivo de configuración para definir un origen de datos
+# <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Tutorial: Utilizar un archivo de configuración para definir un origen de datos
 
 Este tutorial muestra cómo usar un origen de datos definido en un archivo *app.config* para pruebas unitarias. Aprenderá a crear un archivo *app.config* que define un origen de datos que se puede usar en la clase <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>. En este tutorial se presentan las tareas siguientes:
 
@@ -32,7 +34,7 @@ Este tutorial muestra cómo usar un origen de datos definido en un archivo *app.
 
 - Acceso a los orígenes de datos mediante la clase <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
 
 Para completar este tutorial, necesita lo siguiente:
 
@@ -182,7 +184,7 @@ El archivo *app.config* final debe ser similar a este:
 
 ## <a name="create-a-unit-test-that-uses-data-sources-defined-in-appconfig"></a>Crear una prueba unitaria que use los orígenes de datos definidos en app.config
 
-Una vez definido el archivo *app.config*, deberá crear una prueba unitaria que use los datos ubicados en los orígenes de datos definidos en dicho archivo. En esta sección:
+Una vez definido el archivo app.config, deberá crear una prueba unitaria que use los datos ubicados en los orígenes de datos definidos en dicho archivo. En esta sección, haremos lo siguiente:
 
 - Creará los orígenes de datos que se encuentran en el archivo *app.config*.
 
@@ -196,7 +198,7 @@ Una vez definido el archivo *app.config*, deberá crear una prueba unitaria que 
 
 3. Cree dos campos en `MyDataTable` denominados `Arg1` y `Arg2` con el tipo de datos `Number`.
 
-4. Agregue cinco entidades a `MyDataTable` con los valores siguientes para `Arg1` y `Arg2`, respectivamente: (10,50), (3,2), (6,0), (0,8) y (12312,1000).
+4. Agregue cinco entidades a `MyDataTable` con los valores siguientes para `Arg1` y `Arg2` respectivamente: (10,50), (3,2), (6,0), (0,8) y (12312,1000).
 
 5. Guarde y cierre la base de datos.
 
@@ -210,7 +212,7 @@ Una vez definido el archivo *app.config*, deberá crear una prueba unitaria que 
 
 3. Cree dos encabezados de columna y asígneles los nombres de `Val1` y `Val2` en `Sheet1`.
 
-4. Agregue cinco entidades a `Sheet1` con los valores siguientes para `Val1` y `Val2`, respectivamente: (1,1), (2,2), (3,3), (4,4) y (5,0).
+4. Agregue cinco entidades a `Sheet1` con los valores siguientes para `Val1` y `Val2` respectivamente: (1,1), (2,2), (3,3), (4,4) y (5,0).
 
 5. Guarde y cierre la hoja de cálculo.
 

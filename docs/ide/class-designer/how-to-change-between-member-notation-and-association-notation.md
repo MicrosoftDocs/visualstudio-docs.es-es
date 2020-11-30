@@ -1,5 +1,7 @@
 ---
 title: Cambio entre notación de miembro y notación de asociación (Diseñador de clases)
+description: Aprenda a cambiar el modo en que el diagrama de clases representa una relación de asociación entre dos tipos de notación de miembro con la notación de asociación y viceversa.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d453dd2cd19f8a6c9c76ebcc48a762ba3142ea74
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64d26b6ca1c71fe3484544f02006a27866ff4843
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85771005"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901666"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>Cómo: Cambiar entre notación de miembro y notación de asociación en el Diseñador de clases
 
@@ -42,7 +44,7 @@ En el **Diseñador de clases**, puede cambiar el modo en que el diagrama de clas
 
 En el diagrama de clases, haga clic con el botón derecho en la línea de asociación y elija **Mostrar como propiedad** o **Mostrar como campo** según corresponda. La línea de asociación desaparece y la propiedad se muestra en el compartimiento correspondiente dentro de su forma de tipo en el diagrama.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Cómo: Crear la herencia entre tipos](how-to-create-inheritance-between-types.md)
 - [Cómo: Ver la herencia entre tipos](how-to-view-inheritance-between-types.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: Visualizar una asociación de colecciones (Diseñador de clases)'
+description: Aprenda a visualizar una asociación de colecciones en el Diseñador de clases.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3636b6548725ddc9af0a2e28acfdda06a8821f9a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4b1e5be53f829949cfffbdc7db727b1117aa9de8
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769897"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901081"
 ---
 # <a name="how-to-visualize-a-collection-association-in-class-designer"></a>Cómo: Visualizar una asociación de colecciones en el Diseñador de clases
 
@@ -36,7 +38,7 @@ Las propiedades y campos que son colecciones de otros tipos se pueden mostrar en
 
 La propiedad o el campo se muestra como una línea de asociación que se vincula al tipo recopilado.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Cómo: Crear asociaciones entre tipos](how-to-create-associations-between-types.md)
 - [Diseño de clases y tipos](designing-and-viewing-classes-and-types.md)

@@ -1,5 +1,7 @@
 ---
 title: Edición de modelos de combinación de texto
+description: Aprenda cómo el modelo de combinación de pruebas le permite tener varios flujos de trabajo. Este modelo se aproxima más a cómo interactúan los usuarios finales con las aplicaciones.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: e3b7d952-9012-400a-8131-3444390a6066
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8ce54af89164b1a71c7328d04635c8735eec1b28
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0d95eee8dd4e49e74b9bafd048e3f672fe560c68
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288655"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441370"
 ---
 # <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>Edición de modelos de combinación de pruebas para especificar la probabilidad de que un usuario virtual ejecute una prueba
 
@@ -39,7 +41,7 @@ Puede especificar una de las siguientes opciones de modelo de combinación de pr
 |Tareas|Temas relacionados|
 |-|-----------------------|
 |**Especificar la combinación de pruebas para la prueba de carga:** cuando cree una prueba de carga, especifique los parámetros en el **Asistente para prueba de carga nueva**. En el **Asistente para prueba de carga nueva**, elija las pruebas web y unitarias existentes que desee agregar al escenario inicial. Después de haber agregado las pruebas al escenario, especifique la combinación de pruebas para el escenario.<br /><br /> Puede usar opciones de modelos de carga para predecir de forma más precisa el uso real esperado del sitio web o la aplicación cuyas pruebas de carga está realizando. Esto es importante porque una prueba de carga que no se basa en un modelo de carga preciso puede generar resultados engañosos.|-   [Emular el uso real esperado de una aplicación o un sitio web](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md)|
-|**Editar el modelo de combinación de pruebas:** puede cambiar un escenario de prueba de carga para usar uno de los modelos de combinación de pruebas con el **Editor de pruebas de carga**.||
+|**Editar el modelo de combinación de pruebas:** puede cambiar un escenario de prueba de carga para usar uno de los modelos de combinación de pruebas mediante el **Editor de pruebas de carga**.||
 |**Configurar el intervalo de velocidad para un modelo de combinación de pruebas a partir de la velocidad del usuario:** si el escenario de prueba de carga está configurado para usar el modelo de combinación de pruebas **A partir de la velocidad del usuario**, puede especificar cómo quiere configurar el intervalo de velocidad de la distribución.|-   [Cómo: Aplicar la distribución al retraso del ritmo cuando se usa un modelo de combinación de pruebas basado en el ritmo del usuario](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)|
 
 ## <a name="change-the-test-mix-model-in-a-scenario"></a>Cambiar el modelo de combinación de pruebas en un escenario
@@ -63,7 +65,7 @@ Con el **Editor de pruebas de carga**, puede cambiar el modelo de combinación d
 
      Se muestran las categorías y propiedades del escenario.
 
-4. En la propiedad **Tipo de combinación de pruebas**, elija el botón de puntos suspensivos ( **…** ).
+4. En la propiedad **Tipo de combinación de pruebas**, elija el botón de puntos suspensivos (**…**).
 
      Aparecerá el cuadro de diálogo **Editar combinación de pruebas**.
 

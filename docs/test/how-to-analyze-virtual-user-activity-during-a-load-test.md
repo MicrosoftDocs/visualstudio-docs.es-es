@@ -1,5 +1,7 @@
 ---
 title: Análisis de la actividad de los usuarios virtuales durante las pruebas de carga
+description: Aprenda a usar el Diagrama de actividad del usuario virtual para comprobar lo que estaba haciendo cada usuario virtual durante la prueba a fin de conocer sus patrones de actividad y otra información.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +10,12 @@ ms.assetid: 8bda19b3-91c1-4daf-b6c7-09108bddadff
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 64b69ba926e3c978efa60bd9946da94d846c383f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 353a38c17cdcd3358376547155750914e406f4be
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288408"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442396"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Cómo: Analizar lo que hacen los usuarios virtuales durante una prueba de carga mediante el diagrama de actividad del usuario virtual
 
@@ -29,7 +31,7 @@ Los siguientes procedimientos muestran cómo ver el **Diagrama de actividad del 
 
 2. Una vez que se ejecuta la prueba de carga, se muestra la página de resumen de los resultados de pruebas. Elija el botón **Detalles de usuario** de la barra de herramientas.
 
-     o bien
+     O bien
 
      Abra la vista Gráficos al elegir el botón **Gráficos** de la barra de herramientas. Haga clic con el botón derecho en un gráfico y, luego, seleccione **Ir a detalles de usuario**.
 
@@ -59,7 +61,7 @@ Los siguientes procedimientos muestran cómo ver el **Diagrama de actividad del 
 
    - **Start Time**
 
-   - **Duración**
+   - **Duration**
 
    - **Agent**
 
@@ -84,7 +86,7 @@ Los siguientes procedimientos muestran cómo ver el **Diagrama de actividad del 
 
     El **Diagrama de actividad del usuario virtual** permite filtrar pruebas, páginas y transacciones según diversos criterios. Puede quitar ciertas pruebas de la vista, quitar todas las pruebas superadas o bien quitar las pruebas no superadas en las que se produjeron determinados errores. También puede quitar todas las pruebas que no tienen registros.
 
-    Por ejemplo, puede seleccionar la opción **(Resaltar errores)** , que muestra todos los errores en el gráfico coloreados en rojo. También puede seleccionar la opción **(Resaltar resultados con registros)** , que muestra todos los resultados de pruebas que tienen registros coloreados en verde en el gráfico.
+    Por ejemplo, puede seleccionar la opción **(Resaltar errores)**, que muestra todos los errores en el gráfico coloreados en rojo. También puede seleccionar la opción **(Resaltar resultados con registros)**, que muestra todos los resultados de pruebas que tienen registros coloreados en verde en el gráfico.
 
     **Panel Resultados del filtro**
 
@@ -106,4 +108,4 @@ Los siguientes procedimientos muestran cómo ver el **Diagrama de actividad del 
 ## <a name="see-also"></a>Vea también
 
 - [Analizar la actividad de usuario virtual de prueba de carga en la vista Detalles del Analizador de prueba de carga](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
-- [Tutorial: Usar el Diagrama de actividad del usuario virtual para aislar problemas de rendimiento](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)
+- [Tutorial: Uso del diagrama de actividad del usuario virtual para aislar problemas](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)

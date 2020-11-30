@@ -1,5 +1,7 @@
 ---
 title: Analizar la actividad de usuario virtual de prueba de carga
+description: Aprenda sobre la vista Detalles, que muestra el Diagrama de actividad del usuario virtual. Analice lo que hicieron los usuarios virtuales individuales durante la prueba de carga.
+ms.custom: SEO-VS-2020
 ms.date: 10/03/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,12 +13,12 @@ ms.assetid: 63f4bd42-3cfb-4eee-af68-e8334976539e
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0289ff0d4a20eacc4f6801d9300d39df594bc79e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5c05a907bf75ffcdff5bb579ec2624e0dc8a7df9
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591240"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441903"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>Análisis de la actividad de usuario virtual de prueba de carga en la vista Detalles del Analizador de pruebas de carga
 
@@ -55,11 +57,11 @@ El panel Resultados del filtro está visible en el **Diagrama de actividad del u
 
 |Tareas|Temas relacionados|
 |-|-|
-|**Ejecutar una prueba de carga:** una vez creada y configurada una prueba de carga para habilitar la recopilación de datos de actividad del usuario virtual, debe ejecutar la prueba hasta el final para ver el **Diagrama de actividad del usuario virtual**.||
-|**Ver los resultados de pruebas de carga que contienen los datos de actividad del usuario virtual:** una vez creada, configurada y completada una prueba de carga, puede ver los datos de actividad del usuario virtual en el **Diagrama de actividad del usuario virtual**.|-   [Analizar los resultados de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)<br />-   [Cómo: Analizar lo que hacen los usuarios virtuales durante una prueba de carga](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)|
-|**Aislar los problemas de rendimiento en las pruebas de carga:** puede usar el **Diagrama de actividad del usuario virtual** como ayuda para aislar los problemas de rendimiento en la prueba de carga.|-   [Tutorial: Usar el Diagrama de actividad del usuario virtual para aislar problemas de rendimiento](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)|
+|**Ejecución de la prueba de carga:** una vez creada y configurada una prueba de carga para habilitar la recopilación de datos de actividad del usuario virtual, debe ejecutar la prueba hasta el final para ver el **Diagrama de actividad del usuario virtual**.||
+|**Ver los resultados de pruebas de carga que contienen los datos de actividad del usuario virtual:** una vez creada, configurada y completada una prueba de carga, puede ver los datos de actividad del usuario virtual con el **Diagrama de actividad del usuario virtual**.|-   [Analizar los resultados de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)<br />-   [Cómo: Analizar lo que hacen los usuarios virtuales durante una prueba de carga](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)|
+|**Aislamiento de problemas de rendimiento en las pruebas de carga:** Puede usar el **Diagrama de actividad del usuario virtual** como ayuda para aislar problemas de rendimiento en la prueba de carga.|-   [Tutorial: Uso del diagrama de actividad del usuario virtual para aislar problemas](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)|
 
 ## <a name="see-also"></a>Vea también
 
-- [Analizar los resultados de pruebas de carga con el analizador de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analizar los resultados de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [Analizar los errores y resultados de pruebas de carga en la vista Tablas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)

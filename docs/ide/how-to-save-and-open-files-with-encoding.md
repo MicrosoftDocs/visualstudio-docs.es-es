@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: Guardar y abrir archivos con codificación'
+description: Aprenda a guardar y abrir archivos con una codificación específica, de forma que, cuando abra un archivo, Visual Studio lo muestre correctamente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72496e842841b2c55833075e890da4b7088cb489
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cfec7d31e6fc2c120ef42dc9de2a5a7eea4132e0
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284170"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597098"
 ---
 # <a name="how-to-save-and-open-files-with-encoding"></a>Cómo: Guardar y abrir archivos con codificación
 
@@ -28,7 +30,7 @@ Puede guardar archivos con codificación de caracteres específicos para admitir
 
 1. En el menú **Archivo**, elija **Guardar archivo como** y luego haga clic en el botón desplegable situado junto al botón **Guardar**.
 
-     Se mostrará el cuadro de diálogo **Opciones avanzadas para guardar**.
+     Se muestra el cuadro de diálogo **Opciones avanzadas para guardar**.
 
 2. En **Codificación**, seleccione la codificación que quiere usar para el archivo.
 
@@ -56,7 +58,7 @@ Puede guardar archivos con codificación de caracteres específicos para admitir
 
 3. Siga los pasos 2 y 3 del procedimiento anterior.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Codificación y saltos de línea](encodings-and-line-breaks.md)
 - [Codificación y globalización de Windows Forms](/dotnet/framework/winforms/advanced/encoding-and-windows-forms-globalization)

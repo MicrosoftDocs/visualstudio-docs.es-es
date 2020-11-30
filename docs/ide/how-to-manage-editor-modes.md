@@ -1,5 +1,7 @@
 ---
 title: Pantalla completa y modo de espacio virtual
+description: Aprenda a administrar los modos del editor de Visual Studio para mostrar todas las herramientas y ventanas de la forma que más le convenga.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -24,19 +26,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f8f86d635e1e57d82dd2d18084c91a9267f9a0b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2b86859f5f5718871499bb1f3e2014da59f956db
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284209"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597150"
 ---
 # <a name="how-to-manage-editor-modes"></a>Procedimiento para administrar los modos del editor
 
 Puede mostrar el editor de código de Visual Studio en varios modos de visualización.
 
 > [!NOTE]
-> Los cuadros de diálogo y los comandos de menú que se ven pueden diferir de los descritos en este artículo, en función de los valores de configuración o de edición activos. Para cambiar la configuración, por ejemplo, **General** o **Visual C++** , elija **Herramientas** > **Importar y exportar configuraciones** y, después, **Restablecer todas las configuraciones**.
+> Los cuadros de diálogo y los comandos de menú que se ven pueden diferir de los descritos en este artículo, en función de los valores de configuración o de edición activos. Para cambiar la configuración, por ejemplo, **General** o **Visual C++**, elija **Herramientas** > **Importar y exportar configuraciones** y, después, **Restablecer todas las configuraciones**.
 
 ## <a name="enable-full-screen-mode"></a>Habilitar el modo de pantalla completa
 
@@ -44,7 +46,7 @@ Puede decidir ocultar todas las ventanas de herramientas y ver solo las ventanas
 
 - Presione **Alt**+**Mayús**+**Entrar** para entrar o salir del modo **Pantalla completa**.
 
-     O bien
+     -- o --
 
 - Ejecute el comando `View.Fullscreen` en la ventana **Comandos**.
 
@@ -61,7 +63,7 @@ En el modo de **espacio virtual**, los espacios se insertan al final de cada lí
     > [!NOTE]
     > **Espacio virtual** está habilitado en el modo **Selección de columnas**. Cuando el modo **Espacio virtual** no está habilitado, el punto de inserción se mueve desde el final de una línea directamente al primer carácter de la siguiente.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Personalizar los diseños de ventana de Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md)
 - [Fuentes y colores, Entorno, Opciones (Cuadro de diálogo)](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)

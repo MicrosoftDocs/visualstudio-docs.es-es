@@ -1,5 +1,7 @@
 ---
 title: Análisis de las infracciones de las reglas de umbral en las pruebas de carga
+description: Aprenda a ver las infracciones de las reglas de umbral que configure, a fin de poder analizarlas.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.assetid: 969ed346-cf2e-4d48-82b3-edb3e075e1c0
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0a20c5e3f30a6d006175e78fc70dab79d0b9bf8a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 49fe5893254083dd83551ef5f43fffcc295a992a
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591286"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442708"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analizar las infracciones de las reglas de umbral en las pruebas de carga mediante el Analizador de pruebas de carga
 
@@ -34,14 +36,14 @@ Si se ha producido alguna infracción, aparece un hipervínculo de **infraccione
 
 La tabla de infracciones de umbral muestra las primeras 1.000 infracciones. La tabla siguiente contiene estas columnas:
 
-|Columna|Description|Visible de forma predeterminada|
+|Columna|Descripción|Visible de forma predeterminada|
 |-|-|-|
-|Tiempo|La hora de la prueba de carga a la que se produjo la infracción.|Sí|
+|Hora|La hora de la prueba de carga a la que se produjo la infracción.|Sí|
 |Computer|El nombre del equipo bajo comprobación en el que se produjo la infracción. **Nota:** Esto es importante cuando se ejecutan pruebas de carga en plataformas de pruebas.|Sí|
-|Categoría|La categoría del contador de rendimiento en el que se produjo la infracción.|Sí|
+|Category|La categoría del contador de rendimiento en el que se produjo la infracción.|Sí|
 |Contador|El nombre del contador de rendimiento en el que se produjo la infracción.|Sí|
 |Instancia|La instancia del contador de rendimiento en la que se produjo la infracción.|Sí|
-|Mensaje|Mensaje que describe la infracción de umbral. Por ejemplo, **El valor 5 supera el valor de umbral crítico de 0**.|Sí|
+|Message|Mensaje que describe la infracción de umbral. Por ejemplo, **El valor 5 supera el valor de umbral crítico de 0**.|Sí|
 
 > [!NOTE]
 > Puede ordenar la tabla eligiendo los encabezados de columna.
@@ -74,7 +76,7 @@ Puede ver las infracciones de umbral en el gráfico. Al igual que en el panel **
 
 Para obtener más información, vea [Analizar los resultados de pruebas de carga en la vista Gráficos](../test/analyze-load-test-results-in-the-graphs-view.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Especificar los conjuntos de contadores y las reglas de umbral para equipos en una prueba de carga](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
 - [Analizar los resultados de pruebas de carga con el analizador de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

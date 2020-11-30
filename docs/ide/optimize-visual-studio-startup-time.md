@@ -1,5 +1,7 @@
 ---
 title: Mejora del tiempo de inicio
+description: Aprenda a controlar la configuración de las extensiones y las ventanas de herramientas en el cuadro de diálogo Administrar el rendimiento de Visual Studio para mejorar el tiempo de inicio de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/15/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +16,12 @@ f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: 399bab1b95a7f17166f205902d04a1abec10e6dd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a9cc3309e75e23ff325dd08ef9d2cceacb5f5db5
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770974"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871501"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Optimizar el tiempo de inicio de Visual Studio
 
@@ -68,7 +70,7 @@ Siempre puede volver a habilitar la extensión en futuras sesiones con el cuadro
 > [!NOTE]
 > Algunas versiones anteriores de Visual Studio 2017 tenían una característica llamada **carga de solución ligera**. En las versiones actuales, las soluciones de gran tamaño que contienen código administrado se cargan mucho más rápido que antes, incluso sin la carga de solución ligera.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Optimización del rendimiento de Visual Studio](../ide/optimize-visual-studio-performance.md)
 - [Sugerencias y trucos de rendimiento de Visual Studio](../ide/visual-studio-performance-tips-and-tricks.md)

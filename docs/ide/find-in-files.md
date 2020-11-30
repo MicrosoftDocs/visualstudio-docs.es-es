@@ -1,5 +1,7 @@
 ---
 title: Buscar en archivos
+description: Aprenda sobre la característica Buscar en archivos y cómo usarla para buscar en un conjunto específico de archivos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a32720475bda124c563d45133028f43b4f1b9cd
-ms.sourcegitcommit: e132a870ec198fdcec289227f1a0c1c48fef070c
+ms.openlocfilehash: c9aa0d1523c8ef8be73a3c5e73255ce1eeb32d57
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93344512"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006580"
 ---
 # <a name="find-in-files"></a>Buscar en archivos
 

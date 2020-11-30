@@ -1,5 +1,7 @@
 ---
 title: CodeIndex (Comando)
+description: Aprenda a usar el comando CodeIndex para administrar la indexación de código en Azure DevOps Server (anteriormente conocido como Team Foundation Server).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07338e83f0c58331345cd3f4c6eb61855a16fd4f
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: ece3916f0af442b67bb5cdd0999ad37159e53448
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928494"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901185"
 ---
 # <a name="codeindex-command"></a>CodeIndex (Comando)
 
@@ -38,7 +40,7 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 
 ### <a name="parameters"></a>Parámetros
 
-|**Argumento**|**Descripción**|
+|**Argument**|**Descripción**|
 |------------------| - |
 |`CollectionName`|Especifica el nombre de la colección de proyectos. Si el nombre contiene espacios, inclúyalo entre comillas, por ejemplo, “Sitio web de Fabrikam”.|
 |`CollectionId`|Especifica el número de identificación de la colección de proyectos.|
@@ -47,8 +49,8 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 |**Opción**|**Descripción**|
 |----------------| - |
 |**/indexingStatus**|Muestra el estado y la configuración del servicio de indización de código.|
-|**/setIndexing:** [ on &#124; off &#124; keepupOnly ]|-   **on**: inicia la indexación de todos los conjuntos de cambios.<br />-   **off**: detiene la indexación de todos los conjuntos de cambios.<br />-   **keepupOnly**: detiene la indexación de los conjuntos de cambios creados previamente e inicia solo la indexación de los nuevos conjuntos de cambios.|
-|**/ignoreList:** [ add &#124; remove &#124; removeAll &#124; view ] `ServerPath`<br /><br /> Puede usar el carácter comodín (*) al principio, al final o en ambos extremos de la ruta de acceso del servidor.|Especifica una lista de archivos de código, con sus rutas de acceso, que no desea que estén indizados.<br /><br /> -   **add**: agrega el archivo que no quiere indexar a la lista de archivos omitidos.<br />-   **remove**: quita el archivo que quiere indexar de la lista de archivos omitidos.<br />-   **removeAll**: borra la lista de archivos omitidos e inicia la indexación de todos los archivos.<br />-   **view**: permite ver todos los archivos que no se están indexando.|
+|**/setIndexing:**[ on &#124; off &#124; keepupOnly ]|-   **on**: inicia la indexación de todos los conjuntos de cambios.<br />-   **off**: detiene la indexación de todos los conjuntos de cambios.<br />-   **keepupOnly**: detiene la indexación de los conjuntos de cambios creados previamente e inicia solo la indexación de los nuevos conjuntos de cambios.|
+|**/ignoreList:**[ add &#124; remove &#124; removeAll &#124; view ] `ServerPath`<br /><br /> Puede usar el carácter comodín (*) al principio, al final o en ambos extremos de la ruta de acceso del servidor.|Especifica una lista de archivos de código, con sus rutas de acceso, que no desea que estén indizados.<br /><br /> -   **add**: agrega el archivo que no quiere indexar a la lista de archivos omitidos.<br />-   **remove**: quita el archivo que quiere indexar de la lista de archivos omitidos.<br />-   **removeAll**: borra la lista de archivos omitidos e inicia la indexación de todos los archivos.<br />-   **view**: permite ver todos los archivos que no se están indexando.|
 |**/listLargeFiles [/fileCount:** `FileCount` **/minSize:** `MinSize`]|Muestra el número especificado de archivos que supera el tamaño especificado en KB. Posteriormente, puede usar la opción **/ignoreList** para excluir estos archivos de la indexación.|
 |**/reindexAll**|Borra datos anteriormente indizados y reinicia la indización.|
 |**/destroyCodeIndex [/noPrompt]**|Elimina el índice de código y quita todos los datos indizados. No requiere confirmación si usa la opción **/noPrompt**.|
@@ -122,7 +124,7 @@ Para eliminar el índice de código con confirmación:
 TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Website"
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Buscar cambios en el código y otro historial con CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)
-- [Managing server configuration with TFSConfig](/azure/devops/server/command-line/tfsconfig-cmd) (Administración de la configuración del servidor con TFSConfig)
+- [Administración de la configuración del servidor con TFSConfig](/azure/devops/server/command-line/tfsconfig-cmd)

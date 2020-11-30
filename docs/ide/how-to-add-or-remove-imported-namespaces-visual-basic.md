@@ -1,5 +1,6 @@
 ---
 title: Agregar o quitar espacios de nombres importados (Visual Basic)
+description: Aprenda a agregar o quitar espacios de nombres importados y agregar o quitar importaciones de usuarios.
 ms.custom: SEO-VS-2020
 ms.date: 06/21/2017
 ms.topic: how-to
@@ -15,37 +16,37 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff6b63db07d515e85c4c756f8d302d292c62dd50
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: c175f838389067ef7e40b07d2f3f9d15aa5df03e
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047107"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597371"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Cómo: Agregar o quitar espacios de nombres importados (Visual Basic)
 
 Importar un espacio de nombres le permite usar elementos de ese espacio de nombres en su código sin calificar completamente el elemento. Por ejemplo, si quiere tener acceso al método `Create` en la clase `System.Messaging.MessageQueue`, puede importar el espacio de nombres `System.Messaging` y simplemente hacer referencia al elemento que necesita en el código como `MessageQueue.Create`.
 
-Los espacios de nombres importados se administran en la página **Referencias** del **Diseñador de proyectos**. Las importaciones que especifique en este cuadro de diálogo se pasan directamente al compilador ( */imports* ) y se aplican a todos los archivos de su proyecto. Use la instrucción `Imports` para usar un espacio de nombres en un archivo de código fuente único.
+Los espacios de nombres importados se administran en la página **Referencias** del **Diseñador de proyectos**. Las importaciones que especifique en este cuadro de diálogo se pasan directamente al compilador (*/imports*) y se aplican a todos los archivos de su proyecto. Use la instrucción `Imports` para usar un espacio de nombres en un archivo de código fuente único.
 
 ### <a name="to-add-an-imported-namespace"></a>Para agregar un espacio de nombres importado
 
-1. En el **Explorador de soluciones** , haga doble clic en el nodo **Mi proyecto** del proyecto.
+1. En el **Explorador de soluciones**, haga doble clic en el nodo **Mi proyecto** del proyecto.
 
-2. En el **Diseñador de proyectos** , haga clic en la pestaña **Referencias**.
+2. En el **Diseñador de proyectos**, haga clic en la pestaña **Referencias**.
 
-3. En la lista **Espacios de nombres importados** , seleccione la casilla del espacio de nombres que quiere agregar.
+3. En la lista **Espacios de nombres importados**, seleccione la casilla del espacio de nombres que quiere agregar.
 
     > [!NOTE]
     > Para importarse, el espacio de nombres debe estar en un componente al que se hace referencia. Si el espacio de nombres no aparece en la lista, necesitará agregar una referencia al componente que lo contiene. Para más información, vea [Administrar referencias en un proyecto](managing-references-in-a-project.md).
 
 ### <a name="to-remove-an-imported-namespace"></a>Para quitar un espacio de nombres importado
 
-1. En el **Explorador de soluciones** , haga doble clic en el nodo **Mi proyecto** del proyecto.
+1. En el **Explorador de soluciones**, haga doble clic en el nodo **Mi proyecto** del proyecto.
 
-2. En el **Diseñador de proyectos** , haga clic en la pestaña **Referencias**.
+2. En el **Diseñador de proyectos**, haga clic en la pestaña **Referencias**.
 
-3. En la lista **Espacios de nombres importados** , desactive la casilla del espacio de nombres que quiere quitar.
+3. En la lista **Espacios de nombres importados**, desactive la casilla del espacio de nombres que quiere quitar.
 
 ## <a name="user-imports"></a>Importaciones de usuarios
 Las importaciones de usuarios le permiten importar una clase específica dentro de un espacio de nombres en lugar del espacio de nombres completo. Por ejemplo, su aplicación puede tener una importación para el espacio de nombres <xref:System.Diagnostics>, pero la única clase dentro de ese espacio de nombres en la que está interesado es la clase `Debug`. Puede definir <xref:System.Diagnostics.Debug> como una importación de usuarios y, después, quitar la importación para <xref:System.Diagnostics>.
@@ -54,11 +55,11 @@ Si posteriormente cambia de idea y decide que realmente necesitaba la clase `Eve
 
 ### <a name="to-add-a-user-import"></a>Para agregar una importación de usuarios
 
-1. En el **Explorador de soluciones** , haga doble clic en el nodo **Mi proyecto** del proyecto.
+1. En el **Explorador de soluciones**, haga doble clic en el nodo **Mi proyecto** del proyecto.
 
-2. En el **Diseñador de proyectos** , haga clic en la pestaña **Referencias**.
+2. En el **Diseñador de proyectos**, haga clic en la pestaña **Referencias**.
 
-3. En el cuadro de texto debajo de la lista **Espacios de nombres importados** , escriba el nombre completo del espacio de nombres que quiere importar, incluido el espacio de nombres raíz.
+3. En el cuadro de texto debajo de la lista **Espacios de nombres importados**, escriba el nombre completo del espacio de nombres que quiere importar, incluido el espacio de nombres raíz.
 
 4. Haga clic en el botón **Agregar importación del usuario** para agregar el espacio de nombres a la lista **Espacios de nombres importados**.
 
@@ -67,13 +68,13 @@ Si posteriormente cambia de idea y decide que realmente necesitaba la clase `Eve
 
 ### <a name="to-update-a-user-import"></a>Para actualizar una importación de usuarios
 
-1. En el **Explorador de soluciones** , haga doble clic en el nodo **Mi proyecto** del proyecto.
+1. En el **Explorador de soluciones**, haga doble clic en el nodo **Mi proyecto** del proyecto.
 
-2. En el **Diseñador de proyectos** , haga clic en la pestaña **Referencias**.
+2. En el **Diseñador de proyectos**, haga clic en la pestaña **Referencias**.
 
-3. En la lista **Espacios de nombres importados** , seleccione el espacio de nombres que quiere cambiar.
+3. En la lista **Espacios de nombres importados**, seleccione el espacio de nombres que quiere cambiar.
 
-4. En el cuadro de texto debajo de la lista **Espacios de nombres importados** , escriba el nombre del nuevo espacio de nombres.
+4. En el cuadro de texto debajo de la lista **Espacios de nombres importados**, escriba el nombre del nuevo espacio de nombres.
 
 5. Haga clic en el botón **Actualizar importación del usuario** para actualizar el espacio de nombres en la lista **Espacios de nombres importados**.
 

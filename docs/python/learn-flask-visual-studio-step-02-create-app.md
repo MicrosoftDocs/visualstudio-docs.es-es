@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 03a0eb6808b2298e0727492978d9beb7cfaf2216
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a06c6dbacf21cb2ce00539af901c24c77aaf9ef5
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89313749"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974092"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Paso 2: Creación de una aplicación de Flask con vistas y plantillas de página
 
@@ -84,7 +84,7 @@ En el código creado por la plantilla "Proyecto web de Flask en blanco" tiene un
 
 7. Seleccione **Depurar** > **Iniciar depuración** (**F5**) o use el botón **Servidor web** de la barra de herramientas (el explorador puede variar) para que se inicie la aplicación y se abra un explorador. Pruebe las rutas de dirección URL / y /home.
 
-8. También puede establecer puntos de interrupción en distintas partes del código y reiniciar la aplicación para seguir la secuencia de inicio. Por ejemplo, establezca un punto de interrupción en las primeras líneas de *runserver.py* y *HelloFlask\_* init *_.py* y en la línea `return "Hello Flask!"` de *views.py*. Luego, reinicie la aplicación (**Depurar** > **Reiniciar**, **Ctrl**+**F5**, o el botón de la barra de herramientas que se muestra a continuación) y recorra (**F10**) el código o ejecútelo desde cada punto de interrupción mediante **F5**.
+8. También puede establecer puntos de interrupción en distintas partes del código y reiniciar la aplicación para seguir la secuencia de inicio. Por ejemplo, establezca un punto de interrupción en las primeras líneas de *runserver.py* y *HelloFlask\_* init *_.py* y en la línea `return "Hello Flask!"` de *views.py*. Luego, reinicie la aplicación (**Depurar** > **Reiniciar**, **Ctrl**+**Mayús**+**F5**, o el botón de la barra de herramientas que se muestra a continuación) y recorra el código (**F10**) o ejecútelo desde cada punto de interrupción mediante **F5**.
 
     ![Botón Reiniciar en la barra de herramientas de depuración en Visual Studio](media/debugging-restart-toolbar-button.png)
 

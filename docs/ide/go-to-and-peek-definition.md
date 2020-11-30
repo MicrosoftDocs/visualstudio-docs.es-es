@@ -1,5 +1,7 @@
 ---
 title: Visualización de definiciones de tipo
+description: Aprenda sobre las características Ir a la definición y Ver la definición que le permiten ver fácilmente la definición de un tipo o miembro.
+ms.custom: SEO-VS-2020
 ms.date: 01/10/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ef13b959d4e106b451ea0cfb336835059667ce4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8fab4bae999825d7d2fb11dd232d1e271b4f62d5
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75592079"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597501"
 ---
 # <a name="view-type-and-member-definitions"></a>Vista de definiciones de tipo y miembro
 
@@ -52,13 +54,13 @@ Después, presione **Ctrl** (o la tecla modificadora que esté activada en **Opc
 
 Si ve otra definición en la ventana emergente, inicia una ruta de navegación en la que puede desplazarse con los círculos y las flechas que aparecen encima de la ventana emergente.
 
-Para obtener más información, vea [Cómo: Ver y editar código mediante Ver la definición (Alt+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).
+Para obtener más información, vea [Cómo: Ver y editar código mediante Definición de Peek (Alt+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).
 
 ## <a name="view-metadata-as-source-code-c"></a>Visualización de metadatos como código fuente (C#)
 
 Al ver la definición de tipos o miembros de C# cuyo código fuente no está disponible, en su lugar se muestran los metadatos. Puede ver las declaraciones de los tipos y miembros, pero no sus implementaciones.
 
-Al ejecutar el comando **Ir a definición** o **Ver la definición** para un elemento cuyo código fuente no está disponible, un documento con pestañas que contiene una vista de los metadatos de ese elemento, que se muestra como código fuente, aparece en el editor de código. El nombre del tipo, seguido de **[desde metadatos]** , aparece en la pestaña del documento.
+Al ejecutar el comando **Ir a definición** o **Ver la definición** para un elemento cuyo código fuente no está disponible, un documento con pestañas que contiene una vista de los metadatos de ese elemento, que se muestra como código fuente, aparece en el editor de código. El nombre del tipo, seguido de **[desde metadatos]**, aparece en la pestaña del documento.
 
 Por ejemplo, si ejecuta el comando **Ir a definición** para <xref:System.Console>, los metadatos de <xref:System.Console> aparecen en el editor de código como código fuente de C#. El código es similar a su declaración, pero no muestra una implementación.
 
@@ -79,4 +81,4 @@ Puede configurar una opción para ver código fuente descompilado al ver la defi
 ## <a name="see-also"></a>Vea también
 
 - [Navegación en el código](../ide/navigating-code.md)
-- [Cómo: Ver y editar código mediante Ver la definición (Alt+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
+- [Procedimiento para ver y editar código mediante Ver la definición (Alt+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)

@@ -1,5 +1,7 @@
 ---
 title: Acciones rápidas, bombillas y destornilladores
+description: Aprenda a usar una única acción rápida para refactorizar, generar o modificar el código de algún modo.
+ms.custom: SEO-VS-2020
 ms.date: 03/28/2018
 ms.topic: conceptual
 author: TerryGLee
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bfafcca1cddcaa216b8a9e12dd7d961949afa2bb
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 967e73748b364e7e41b1773a7fab33831152ab18
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036527"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95870786"
 ---
 # <a name="quick-actions"></a>Acciones rápidas
 
@@ -68,7 +70,7 @@ Para ver posibles correcciones, seleccione la flecha abajo que aparece junto a l
 
 ![Bombilla expandida](../ide/media/vs2015_lightbulb_hover_expanded.png)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Generación de código en Visual Studio](../ide/code-generation-in-visual-studio.md)
 - [Acciones rápidas comunes](../ide/common-quick-actions.md)

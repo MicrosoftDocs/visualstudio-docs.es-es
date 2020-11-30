@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: Crear la herencia entre tipos (Diseñador de clases)'
+description: Aprenda a crear una relación de herencia entre dos tipos en un diagrama de clases mediante el Diseñador de clases.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1ffae72a3fe171b6bd16cfbc623a777f4d4d2e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 199f220529b28d4ca0c668d30564da65f6553e0e
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770202"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901471"
 ---
 # <a name="how-to-create-inheritance-between-types-in-class-designer"></a>Cómo: Crear la herencia entre tipos en el Diseñador de clases
 
@@ -47,9 +49,9 @@ Para crear una relación de herencia entre dos tipos de un diagrama de clases me
     >
     >  Aunque puede visualizar los tipos genéricos existentes, no puede crear tipos genéricos nuevos. Tampoco puede cambiar los parámetros de tipo de los tipos genéricos existentes.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Herencia](/dotnet/csharp/programming-guide/classes-and-structs/inheritance)
 - [Fundamentos de la herencia](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)
 - [Cómo: Ver la herencia entre tipos](how-to-view-inheritance-between-types.md)
-- [Clase de Visual C++ en el Diseñador de clases](visual-cpp-classes.md)
+- [Clases de Visual C++ en el Diseñador de clases](visual-cpp-classes.md)

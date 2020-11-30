@@ -1,5 +1,7 @@
 ---
 title: Configurar advertencias en Visual Basic
+description: Aprenda a configurar advertencias en Visual Basic que, a su vez, le ayudarán a escribir código más limpio, rápido y mejor con menos errores.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33302a4a686d80621cc64ee018371a2d03ea30ee
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: cd5239c4fd01aefa247fc63a66af3e872dbecbb6
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114732"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006411"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Configuración de advertencias in Visual Basic
 
@@ -36,7 +38,7 @@ Si **Option Strict** está establecido en **Desactivado**, las advertencias rela
 
 La opción de línea de comandos **/warnaserror** del compilador también se puede usar para especificar si las advertencias se tratan como errores. Puede agregar una lista delimitada por comas a esta opción para especificar qué advertencias se deben tratar como errores o advertencias usando + o -. En la siguiente tabla, se detallan las posibles opciones.
 
-|Opción de la línea de comandos|Especifica|
+|Opción de línea de comandos|Especifica|
 | - |---------------|
 |`/warnaserror+`|Se tratan todas las advertencias como errores.|
 |`/warnsaserror`-|No se tratan las advertencias como errores. Este es el valor predeterminado.|
@@ -50,7 +52,7 @@ La lista de advertencias contiene los números de identificación de error de la
 ## <a name="examples"></a>Ejemplos
 En esta tabla de ejemplos de argumentos de línea de comandos se describe qué hace cada argumento.
 
-|Argumento|Description|
+|Argumento|Descripción|
 |--------------|-----------------|
 |`vbc /warnaserror`|Especifica que todas las advertencias se deben tratar como errores.|
 |`vbc /warnaserror:42024`|Especifica que la advertencia 42024 se debe tratar como un error.|
@@ -88,7 +90,7 @@ Se generan cuando se usa una variable antes de que se le asigne un valor. De man
 Id.: 42104, 42030
 
 ### <a name="unused-local-variable-warning"></a>Advertencia de variable local sin usar
-Se genera cuando se declara una variable local pero nunca se hace referencia a ella. De manera predeterminada, está activada.
+Se genera cuando se declara una variable local pero nunca se hace referencia a ella. La opción predeterminada es activado.
 
 Id.: 42024
 
@@ -117,7 +119,7 @@ Se genera cuando un bloque `Catch` nunca se alcanza debido a su relación con ot
 
 Id.: 42029, 42031
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Tipos de error](/dotnet/visual-basic/programming-guide/language-features/error-types)
 - [Try...Catch...Finally (instrucción)](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)

@@ -1,5 +1,7 @@
 ---
 title: Agregar atributo DebuggerDisplay
+description: Aprenda a agregar el atributo DebuggerDisplay para controlar cómo la ventana de variables del depurador muestra un objeto, una propiedad o un campo.
+ms.custom: SEO-VS-2020
 ms.date: 05/12/2020
 ms.topic: reference
 author: mikadumont
@@ -7,14 +9,14 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: db49bfd1672866a755cce6780527520da2cad420
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: fa6baa6e104fca2d3a3b45cac343fd1ceb086271
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810394"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871124"
 ---
-# <a name="add-debuggerdisplay-attribute"></a>Agregar atributo DebuggerDisplay
+# <a name="add-debuggerdisplay-attribute"></a>Adición del atributo DebuggerDisplay
 
 Esta generación de código se aplica a:
 

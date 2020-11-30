@@ -1,5 +1,7 @@
 ---
 title: Autorrecuperación, Entorno, Opciones (Cuadro de diálogo)
+description: Aprenda sobre el cuadro de diálogo Autorrecuperación, Entorno, Opciones y cómo se usa para especificar si se realizará una copia de seguridad de los archivos automáticamente.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2020
 ms.topic: reference
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f35424089b293b858c609d19f59459693373eb4d
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: b578e914c6fa099528008090646372c7d9ef26b1
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88250287"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871358"
 ---
 # <a name="autorecover-environment-options-dialog-box"></a>Autorrecuperación, Entorno, Opciones (Cuadro de diálogo)
 
@@ -36,10 +38,10 @@ Para acceder a este cuadro de diálogo, vaya a **Herramientas** > **Opciones** >
 
 ::: moniker range="vs-2019"
 
-Use esta opción para personalizar la frecuencia con la que un archivo se guarda automáticamente en el editor. En el caso de los archivos guardados anteriormente, la versión 16.2 y posteriores de Visual Studio 2019 guarda una copia del archivo en ***%LocalAppData%\Microsoft\Visual Studio\BackupFiles\\[nombreDeProyecto]***. Si el archivo es nuevo y aún no lo ha guardado, Visual Studio lo guarda automáticamente con un nombre de archivo generado aleatoriamente.
+Use esta opción para personalizar la frecuencia con la que un archivo se guarda automáticamente en el editor. En el caso de los archivos guardados anteriormente, la versión 16.2 y posteriores de Visual Studio 2019 guarda una copia del archivo en *_%LocalAppData%\Microsoft\Visual Studio\BackupFiles\\[projectname]_*. Si el archivo es nuevo y aún no lo ha guardado, Visual Studio lo guarda automáticamente con un nombre de archivo generado aleatoriamente.
 
 > [!NOTE]
-> Si usa Visual Studio 2019 versión 16.1 o una anterior, la ubicación del archivo es *%USERPROFILE%\Documents\Visual Studio [versión]\Backup Files\\[nombreDeProyecto]* . Para más información, vea la página [Historial de notas de la versión de Visual Studio 2019](/visualstudio/releases/2019/release-notes-history/).
+> Si usa la versión 16.1 de Visual Studio 2019 o una anterior, la ubicación del archivo es %USERPROFILE%\Documents\Visual Studio [versión]\Backup Files\\[nombreDeProyecto]. Para más información, vea la página [Historial de notas de la versión de Visual Studio 2019](/visualstudio/releases/2019/release-notes-history/).
 
 ::: moniker-end
 

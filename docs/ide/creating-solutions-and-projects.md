@@ -1,5 +1,7 @@
 ---
 title: Crear soluciones y proyectos
+description: Conozca la diferencia entre soluciones y proyectos y cómo usarlos en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/06/2018
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19a836847aa01038bdbb015612c4fb4a3964d9a9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7bd893c06da9bc2c2c8d95fc4c085affa815edd2
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770544"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006450"
 ---
 # <a name="create-solutions-and-projects"></a>Crear soluciones y proyectos
 
@@ -38,7 +40,7 @@ Aunque puede construir un proyecto por su cuenta si le agrega los archivos neces
 
 Aun así, no hacen falta soluciones ni proyectos para desarrollar aplicaciones en Visual Studio. También puede abrir el código que haya clonado de Git o descargado de otro lugar. Para obtener más información, vea [Desarrollo de código en Visual Studio sin proyectos o soluciones](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
 
-## <a name="create-a-project-from-a-project-template"></a>Creación de un proyecto a partir de una plantilla de proyecto
+## <a name="create-a-project-from-a-project-template"></a>Crear un proyecto a partir de una plantilla de proyecto
 
 Para obtener información sobre cómo crear un proyecto a partir de una plantilla, vea [Creación de un proyecto nuevo en Visual Studio](create-new-project.md).
 
@@ -48,7 +50,7 @@ Si tiene una colección de archivos de código fuente, puede agregarlos fácilme
 
 1. En el menú, elija **Archivo** > **Nuevo** > **Proyecto a partir de código existente**.
 
-1. En el **Asistente para crear proyectos a partir de archivos de código existentes**, seleccione el tipo de proyecto que quiera en el cuadro de lista desplegable **¿Qué tipo de proyecto desea crear?** y, después, elija el botón **Siguiente** .
+1. En el **Asistente para crear proyectos a partir de archivos de código existentes**, seleccione el tipo de proyecto que quiera en el cuadro de lista desplegable **¿Qué tipo de proyecto desea crear?** y, después, elija el botón **Siguiente**.
 
 1. En el asistente, vaya a la ubicación de los archivos y escriba un nombre para el nuevo proyecto en el cuadro **Nombre**. Cuando haya terminado, elija el botón **Finalizar**.
 
@@ -116,7 +118,7 @@ Como ya se ha indicado, también puede abrir archivos de código sin un proyecto
 
 ::: moniker range="vs-2017"
 
-## <a name="create-a-temporary-project"></a>Crear un proyecto temporal
+## <a name="create-a-temporary-project"></a>Creación de un proyecto temporal
 
 (Solo C# y Visual Basic)
 
@@ -141,7 +143,7 @@ Puede eliminar las soluciones y su contenido de forma permanente, pero no median
 
 1. Elija la carpeta que contiene la solución y presione la tecla **Suprimir**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Soluciones y proyectos](../ide/solutions-and-projects-in-visual-studio.md)
 - [Repositorios de código abierto de Microsoft en GitHub](https://github.com/Microsoft)

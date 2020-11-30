@@ -1,5 +1,7 @@
 ---
 title: Limpieza de código y opciones de estilo de código
+description: Aprenda a configurar Visual Studio para aplicar preferencias de estilo de código usando los comandos Limpieza de código (Visual Studio 2019) y Dar formato al documento (Visual Studio 2017).
+ms.custom: SEO-VS-2020
 ms.date: 04/25/2019
 ms.topic: conceptual
 author: mikejo5000
@@ -10,12 +12,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 82eec2a911ec113c42423fe14b06539e465e8bb3
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 9172fff2dde1528c5ea382aea996d316e0738ea0
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658391"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006684"
 ---
 # <a name="code-style-preferences"></a>Preferencias de estilo del código
 
@@ -58,7 +60,7 @@ Las opciones que se establecen en esta ventana se aplican a la cuenta de persona
 
 ### <a name="preference-and-severity"></a>Preferencia y gravedad
 
-Para cada configuración de estilo de código de esta página, puede establecer los valores de **Preferencia** y **Gravedad** con las listas desplegables de cada línea. La gravedad se puede establecer en **Solo refactorización**, **Sugerencia**, **Advertencia** o **Error**. Si desea habilitar las [Acciones rápidas](../ide/quick-actions.md) para un estilo de código, asegúrese de que el valor **Gravedad** se establece en un valor distinto de **Solo refactorización**. El icono de bombilla ![Bombilla](media/light-bulb-dropdown.png), de bombilla de error ![Bombilla de error](media/error-bulb.png) o de destornillador ![Destornillador](media/screwdriver.png) de **Acciones rápidas** aparece cuando se usa un estilo no preferido, y puede elegir una opción en la lista **Acciones rápidas** para volver a escribir código de forma automática para el estilo preferido.
+Para cada configuración de estilo de código de esta página, puede establecer los valores de **Preferencia** y **Gravedad** con las listas desplegables de cada línea. La gravedad se puede establecer en **Solo refactorización**, **Sugerencia**, **Advertencia** o **Error**. Si desea habilitar las [Acciones rápidas](../ide/quick-actions.md) para un estilo de código, asegúrese de que el valor **Gravedad** se establece en un valor distinto de **Solo refactorización**. El icono de bombilla **Acciones rápidas** :::image type="icon" source="media/light-bulb-dropdown.png":::, el icono de bombilla de error :::image type="icon" source="media/error-bulb.png"::: o el icono de destornillador :::image type="icon" source="media/screwdriver.png"::: aparecen cuando se usa un estilo no preferido, pero puede elegir una opción en la lista **Acciones rápidas** para volver a escribir el código automáticamente en el estilo preferido.
 
 ::: moniker range=">=vs-2019"
 

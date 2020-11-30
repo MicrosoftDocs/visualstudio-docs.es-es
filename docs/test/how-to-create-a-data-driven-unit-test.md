@@ -1,5 +1,7 @@
 ---
 title: Creación de una prueba unitaria controlada por datos
+description: Aprenda usar el marco de pruebas unitarias de Microsoft con código administrado para configurar un método de prueba unitaria a fin de recuperar valores de un origen de datos.
+ms.custom: SEO-VS-2020
 ms.date: 05/08/2019
 ms.topic: how-to
 f1_keywords:
@@ -14,14 +16,14 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 936c6b2ee9e05d059c09c2aa074829b35b6ca5fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31e1fb08d77992e6fb592e286553196928b13ad4
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287992"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441201"
 ---
-# <a name="how-to-create-a-data-driven-unit-test"></a>Procedimiento Creación de una prueba unitaria controlada por datos
+# <a name="how-to-create-a-data-driven-unit-test"></a>Procedimiento: Creación de una prueba unitaria controlada por datos
 
 Puede usar el marco de pruebas unitarias de Microsoft para código administrado para configurar un método de prueba unitaria a fin de recuperar valores de un origen de datos. El método se ejecuta correctamente para cada fila del origen de datos, lo que facilita probar una variedad de entrada mediante el uso de un único método.
 
@@ -63,7 +65,7 @@ public int AddIntegers(int first, int second)
 }
 ```
 
-## <a name="create-a-data-source"></a>Crear un origen de datos
+## <a name="create-a-data-source"></a>Creación de un origen de datos
 
 Para probar el método `AddIntegers`, cree un origen de datos que especifica un intervalo de valores para los parámetros y la suma que se espera que se devuelva. En este ejemplo, crearemos una base de datos de SQL Compact denominada `MathsData` y una tabla denominada `AddIntegersData` que contiene los siguientes nombres de columna y valores:
 
@@ -131,7 +133,7 @@ El atributo de origen de datos tiene tres constructores.
 
 Un constructor con un parámetro usa la información de conexión que se almacena en el archivo *app.config* para la solución. El *dataSourceSettingsName* es el nombre del elemento Xml en el archivo de configuración que especifica la información de conexión.
 
-Un archivo *app.config* permite cambiar la ubicación del origen de datos sin realizar cambios en la propia prueba unitaria. Para obtener información sobre cómo crear y usar un archivo *app.config*, vea [Tutorial: Uso de un archivo de configuración para definir un origen de datos](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)
+Un archivo *app.config* permite cambiar la ubicación del origen de datos sin realizar cambios en la propia prueba unitaria. Para obtener información sobre cómo crear y utilizar un archivo *app.config*, vea [Tutorial: Usar un archivo de configuración para definir un origen de datos](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md).
 
 ```csharp
 [DataSource(connectionString, tableName)]

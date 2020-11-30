@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: a9bf479796db1b23a204050c941650c3c20dd6aa
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: de5027024956c03341ac3e2d851bf85430f48f18
+ms.sourcegitcommit: f78960320798e2c6b33145cee77a2221f031603c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438276"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94878301"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Novedades de Visual Studio 2019
 
@@ -49,7 +49,7 @@ Vea el vídeo siguiente para obtener más información sobre cómo puede ahorrar
 
 La nueva experiencia de búsqueda, anteriormente conocida como Inicio rápido, es más rápida y eficaz. Ahora los resultados de la búsqueda se mostrarán dinámicamente al escribir. Además, los resultados de la búsqueda a menudo pueden incluir métodos abreviados de teclado de comandos para que pueda memorizarlos fácilmente y usarlos en el futuro.
 
-   ![Animación de la experiencia de búsqueda nueva en Visual Studio 2019](media/vs-2019/new-search-feature.gif)
+   ![Animación de la experiencia de búsqueda nueva en Visual Studio 2019](media/vs-2019/new-search-feature.gif "Nueva experiencia de búsqueda de Visual Studio 2019.")
 
 La nueva lógica de búsqueda aproximada encontrará todo lo que necesite, independientemente de los errores tipográficos que pueda haber. Por lo tanto, independientemente de si busca comandos, opciones, documentación u otro material útil, la nueva característica de búsqueda le ayuda a encontrar lo que busca.
 
@@ -57,7 +57,7 @@ La nueva lógica de búsqueda aproximada encontrará todo lo que necesite, indep
 
 Hay una gran cantidad de refactorizaciones nuevas y muy útiles en C# que facilitan la organización de su código. Estas se muestran como sugerencias en la bombilla e incluyen acciones tales como mover miembros a la interfaz o a la clase base, ajustar los espacios de nombres para que coincidan con la estructura de carpetas, convertir los bucles foreach en consultas de Linq y muchas más.
 
-   ![Animación de la experiencia de refactorización en Visual Studio 2019](media/vs-2019/refactorings.gif)
+   ![Animación de la experiencia de refactorización en Visual Studio 2019](media/vs-2019/refactorings.gif "Experiencia de refactorizaciones de Visual Studio 2019.")
 
 Para invocar las refactorizaciones, basta con presionar **Ctrl+.** y seleccionar la acción que quiere usar.
 
@@ -65,7 +65,7 @@ Para invocar las refactorizaciones, basta con presionar **Ctrl+.** y seleccionar
 
 [Visual Studio IntelliCode](/visualstudio/intellicode/) mejora los esfuerzos de desarrollo de software mediante inteligencia artificial (IA). IntelliCode se entrena en 2000 proyectos de código abierto de GitHub, cada uno con más de 100 estrellas, para generar sus recomendaciones.
 
-![Animación de IntelliCode en Visual Studio 2019](media/vs-2019/IntelliCode.gif)
+![Animación de IntelliCode en Visual Studio 2019](media/vs-2019/IntelliCode.gif "IntelliCode en Visual Studio 2019.")
 
 Estas son algunas formas en las que Visual Studio IntelliCode le puede ayudar a aumentar su productividad:
 
@@ -86,11 +86,11 @@ Junto al nuevo indicador de estado del documento encontrará un nuevo comando de
 
 La limpieza dará formato al código y aplicará todas las correcciones de código de acuerdo con las sugerencias de la [configuración actual](code-styles-and-code-cleanup.md) y los [archivos .editorconfig](create-portable-custom-editor-options.md).
 
-   ![Captura de pantalla del nuevo control de limpieza de código en Visual Studio 2019](media/vs-2019/code-cleanup-profile.png)
+   ![Captura de pantalla del nuevo control de limpieza de código en Visual Studio 2019](media/vs-2019/code-cleanup-profile.png "Nuevo control de limpieza de código de Visual Studio 2019.")
 
 También puede guardar las colecciones de reparadores como un perfil. Por ejemplo, si tiene un conjunto pequeño de reparadores dirigidas que aplica con frecuencia mientras codifica y después tiene otro conjunto integral de reparadores para aplicar antes de una revisión del código, puede configurar perfiles para abordar estas distintas tareas.
 
-   ![Captura de pantalla de la configuración del control de limpieza de código en Visual Studio 2019](media/vs-2019/code-cleanup-profile-configure.png)
+   ![Captura de pantalla de la configuración del control de limpieza de código en Visual Studio 2019](media/vs-2019/code-cleanup-profile-configure.png "Control de limpieza de código de configuración de Visual Studio 2019.")
 
 ### <a name="per-monitor-aware-pma-rendering"></a>Representación con reconocimiento del monitor (PMA)
 
@@ -98,7 +98,7 @@ Si usa monitores configurados con diferentes factores de escala o se conecta de 
 
 Con el lanzamiento de Visual Studio 2019, se está convirtiendo a Visual Studio en una aplicación con reconocimiento del monitor (PMA). Ahora, Visual Studio representa correctamente independientemente de los factores de escala de visualización que se usen.
 
-   ![Representación con reconocimiento del monitor (PMA) en Visual Studio 2019](media/vs-2019/pma-dpi-scaling.png)
+   ![Representación con reconocimiento del monitor (PMA) en Visual Studio 2019](media/vs-2019/pma-dpi-scaling.png "Representación con reconocimiento del monitor (PMA) en Visual Studio 2019.")
 
 Para obtener más información, consulte la entrada de blog [Better multi-monitor experience with Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/a-better-multi-monitor-experience-with-visual-studio-2019/) (Una mejor experiencia de varios monitores con Visual Studio 2019).
 
@@ -106,7 +106,7 @@ Para obtener más información, consulte la entrada de blog [Better multi-monito
 
 **Novedades de la versión 16.2** Se ha actualizado el Explorador de pruebas para mejorar el control de conjuntos de pruebas de gran tamaño y ofrecer un filtrado más sencillo, comandos más reconocibles, vistas de listas de reproducción por pestañas y columnas personalizables que permiten ajustar de forma precisa qué información de prueba se muestra.
 
-   ![Captura de pantalla que muestra las mejoras de la interfaz de usuario en el Explorador de pruebas](media/vs-2019/test-explorer-ui.png)
+   ![Captura de pantalla que muestra las mejoras de la interfaz de usuario en el Explorador de pruebas](media/vs-2019/test-explorer-ui.png "Mejoras en la interfaz de usuario del Explorador de pruebas.")
 
 ### <a name="net-core"></a>.NET Core
 
@@ -124,11 +124,11 @@ Vea el vídeo siguiente para obtener más información sobre cómo puede recurri
 
 Algo que verá al abrir Visual Studio 2019 es la nueva ventana de inicio.
 
-   ![Captura de pantalla de la nueva ventana de inicio de Visual Studio 2019](media/vs-2019/start-window-dark.png)
+   ![Captura de pantalla de la nueva ventana de inicio de Visual Studio 2019](media/vs-2019/start-window-dark.png "Nueva ventana de inicio de Visual Studio 2019.")
 
 La ventana de inicio presenta varias opciones para ponerse a codificar rápidamente. En primer lugar, pusimos la opción para clonar o extraer el código de un repositorio.
 
-   ![Animación de la experiencia con "prioridad de Git" en Visual Studio 2019](media/vs-2019/git-first.gif)
+   ![Animación de la experiencia con "prioridad de Git" en Visual Studio 2019](media/vs-2019/git-first.gif "Primera experiencia con Git en Visual Studio 2019.")
 
 La ventana de inicio también incluye opciones para abrir un proyecto o una solución, abrir una carpeta local o crear un proyecto.
 
@@ -146,7 +146,7 @@ Para obtener más información, consulte la página [Productividad de Git en Vis
 
 Además, con Visual Studio 2019, este servicio está instalado de forma predeterminada.
 
-![Animación que muestra la característica de colaboración Live Share en Visual Studio 2019](media/vs-2019/live-share.gif)
+![Animación que muestra la característica de colaboración Live Share en Visual Studio 2019](media/vs-2019/live-share.gif "Característica de colaboración de Live Share de Visual Studio 2019.")
 
 Para más información, consulte las entradas de blog [Visual Studio Live Share for real-time code reviews and interactive education](https://devblogs.microsoft.com/visualstudio/visual-studio-live-share-for-real-time-code-reviews-and-interactive-education/) (Visual Studio Live Share para revisiones de código en tiempo real y educación interactiva) y [Live Share now included with Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/live-share-now-included-with-visual-studio-2019/) (Live Share ahora está incluido en Visual Studio 2019).
 
@@ -154,7 +154,7 @@ Para más información, consulte las entradas de blog [Visual Studio Live Share 
 
 Se ha incluido una nueva extensión que puede descargar para su uso con Visual Studio 2019. Con esta extensión nueva podrá revisar, ejecutar e incluso depurar solicitudes de incorporación de cambios del equipo sin salir de Visual Studio. Se admite el código tanto en repositorios de GitHub como de Azure DevOps.
 
-   ![Captura de pantalla de la nueva extensión Solicitudes de incorporación de cambios de Visual Studio 2019](media/vs-2019/pr-experience.png)
+   ![Captura de pantalla de la nueva extensión Solicitudes de incorporación de cambios de Visual Studio 2019](media/vs-2019/pr-experience.png "Nueva extensión Solicitud de incorporación de cambios de Visual Studio 2019.")
 
 Para obtener más información, vea la entrada de blog [Code reviews using the Visual Studio Pull Requests extension](https://devblogs.microsoft.com/visualstudio/code-reviews-using-the-visual-studio-pull-requests-extension/) (Revisiones de código mediante la extensión Solicitudes de incorporación de cambios de Visual Studio).
 
@@ -168,7 +168,7 @@ Vea el vídeo siguiente para obtener más información sobre cómo centrarse en 
 
 Tomamos los puntos de interrupción de datos que antes eran exclusivos de C++ y los adaptamos a aplicaciones .NET Core.
 
-   ![Animación que muestra los puntos de interrupción de datos de depuración en Visual Studio 2019](media/vs-2019/debug-data-breakpoints.gif)
+   ![Animación que muestra los puntos de interrupción de datos de depuración en Visual Studio 2019](media/vs-2019/debug-data-breakpoints.gif "Puntos de interrupción de datos de depuración de Visual Studio 2019.")
 
 Por lo tanto, ya sea que esté codificando en C++ o en .NET Core, los puntos de interrupción de datos pueden ser una buena alternativa a poner simplemente puntos de interrupción normales. Los puntos de interrupción de datos también son ideales para escenarios como buscar dónde se modifica un objeto global o se agrega o quita de una lista.
 
@@ -178,11 +178,11 @@ Y si es desarrollador de C++ que desarrolla aplicaciones de gran tamaño, Visual
 
 A veces, entre varios valores, resulta difícil encontrar una cadena en la ventana Inspección. Es más, seguramente ya le habrá pasado. En Visual Studio 2019, se ha agregado la búsqueda en las ventanas Inspección, Variables locales y Automático para ayudarle a encontrar los objetos y valores que busca.
 
-   ![Animación que muestra la ventana de búsqueda de depuración en Visual Studio 2019](media/vs-2019/debug-window-search.gif)
+   ![Animación que muestra la ventana de búsqueda de depuración en Visual Studio 2019](media/vs-2019/debug-window-search.gif "Ventana de búsqueda de depuración de Visual Studio 2019.")
 
 También puede dar formato a la visualización de un valor en las ventanas Inspección, Variables locales y Automático. Haga doble clic para seleccionar uno de los elementos de cualquiera de las ventanas y agregue una coma (",") para acceder a la lista desplegable de posibles especificadores de formato. Cada uno de ellos incluye una descripción del efecto previsto.
 
-   ![Nueva ventana Inspección y uso del formato para los valores en Visual Studio 2019](media/search-watch-window.png)
+   ![Nueva ventana Inspección y uso del formato para los valores en Visual Studio 2019](media/search-watch-window.png "Nueva característica de ventana de inspección y valores de formato de Visual Studio 2019.")
 
 Para más información, vea la entrada de blog [Enhanced in Visual Studio 2019: Search for Objects and Properties in the Watch, Autos, and Locals Windows](https://devblogs.microsoft.com/visualstudio/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/) (Mejoras en Visual Studio 2019: búsqueda de objetos y propiedades en las ventanas Inspección, Automático y Variables locales)
 
@@ -190,7 +190,7 @@ Para más información, vea la entrada de blog [Enhanced in Visual Studio 2019: 
 
 Obtenga una instantánea de la ejecución de la aplicación en la nube para ver exactamente qué es lo que sucede. (Esta característica solo está disponible en Visual Studio Enterprise).
 
-   ![Animación que muestra Snapshot Debugger en Visual Studio 2019 Enterprise](media/vs-2019/snapshot-debugger.gif)
+   ![Animación que muestra Snapshot Debugger en Visual Studio 2019 Enterprise](media/vs-2019/snapshot-debugger.gif "Snapshot Debugger de Visual Studio 2019 Enterprise.")
 
 Agregamos compatibilidad con las aplicaciones de ASP.NET (escritorio y core) que se ejecutan en máquinas virtuales (VM) de Azure. Además, agregamos compatibilidad con las aplicaciones que se ejecutan en Azure Kubernetes Service. El Depurador de instantáneas puede permitirle disminuir considerablemente el tiempo que tarda en resolver los problemas que se producen en los entornos de producción.
 
@@ -200,13 +200,13 @@ Para más información, vea la página [Depuración de aplicaciones de Azure de 
 
 **Novedades de la versión 16.2**: Puede establecer un punto de interrupción en una aplicación de JavaScript e iniciar una sesión de depuración mediante el explorador [Microsoft Edge Insider](https://www.microsoftedgeinsider.com/). Al hacerlo, Visual Studio abre una nueva ventana del explorador con la depuración habilitada, que puede usar para recorrer el código JavaScript de la aplicación en Visual Studio.
 
-   ![Captura de pantalla que muestra la representación de código JavaScript en un explorador](media/vs-2019/edge-chromium-breakpoint.png)
+   ![Captura de pantalla que muestra la representación de código JavaScript en un explorador](media/vs-2019/edge-chromium-breakpoint.png "Representación de código JavaScript en un explorador.")
 
 ### <a name="pinnable-properties-tool"></a>Herramienta para anclar propiedades
 
 **Novedades en 16.4**: Ahora, es más fácil identificar objetos por sus propiedades durante la depuración con la nueva herramienta para anclar propiedades. Simplemente mantenga el cursor sobre la propiedad que quiere mostrar en la ventana del depurador de las ventanas Inspección, Automático y Variables locales, seleccione el icono de anclaje y verá inmediatamente la información que busca en la parte superior de la ventana.
 
-   ![Animación que muestra cómo anclar propiedades en el depurador de Visual Studio mediante la herramienta para anclar propiedades](media/vs-2019/debugger-pinnable-properties.gif)
+   ![Animación que muestra cómo anclar propiedades en el depurador de Visual Studio mediante la herramienta para anclar propiedades](media/vs-2019/debugger-pinnable-properties.gif "Ancle propiedades en el depurador de Visual Studio mediante la herramienta para anclar propiedades.")
 
 Para más información, consulte la entrada de blob [Propiedades que se pueden anclar: Depuración y visualización los objetos administrados a SU manera](https://devblogs.microsoft.com/visualstudio/pinnable-properties-debug-display-managed-objects-your-way/).
 

@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: Copiar elementos del diagrama de clases en un documento de Microsoft Office (Diseñador de clases)'
+description: Aprenda a copiar formas de un diagrama de clases de .NET en otros documentos. Obtendrá una copia de la forma o su código subyacente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fa6d97b5087659b9fc8120d9480a241517ca8ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fe473dfdfdf78934ad018a507c6386a1da9babb6
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770998"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901627"
 ---
 # <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document"></a>Cómo: Copiar elementos del diagrama de clases en un documento de Microsoft Office
 
@@ -40,7 +42,7 @@ Haga clic con el botón secundario en la forma y elija **Copiar imagen**.
 
 También puede elegir **Copiar** en lugar de **Copiar imagen**. **Copiar** copia la imagen como un mapa de bits normal. **Copiar imagen** copia la imagen como una imagen basada en vectores, que es mejor para la mayoría de las aplicaciones de Office.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Cómo: Imprimir diagramas de clases](how-to-print-class-diagrams.md)
-- [Cómo: Exportar los diagramas de clases como imágenes](how-to-export-class-diagrams-as-images.md)
+- [Cómo: Exportar diagramas de clases como imágenes](how-to-export-class-diagrams-as-images.md)

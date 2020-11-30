@@ -1,5 +1,7 @@
 ---
 title: Distribución de fragmentos de código como extensión
+description: Aprenda a usar el Administrador de fragmentos de código para distribuir fragmentos de código a otros desarrolladores.
+ms.custom: SEO-VS-2020
 ms.date: 03/21/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,18 +14,18 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c283d5ca29b67e772df2a0bb2e25dee70cd63fd3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17f477fe2d02a43cef77358e862cfdf80a079ba5
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284378"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597176"
 ---
-# <a name="how-to-distribute-code-snippets"></a>Procedimiento Distribuir fragmentos de código
+# <a name="how-to-distribute-code-snippets"></a>Cómo: Distribuir fragmentos de código
 
 Los fragmentos de código se pueden entregar a los compañeros para que los instalen en sus equipos mediante el **Administrador de fragmentos de código**. Aunque si tiene que distribuir varios fragmentos de código o quiere distribuirlos más ampliamente, puede incluir los archivos de fragmento de código en una extensión de Visual Studio. Los usuarios de Visual Studio pueden después instalar la extensión para obtener los fragmentos de código.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
 
 Instalar la carga de trabajo **Desarrollo de extensiones de Visual Studio** para obtener acceso a las plantillas de proyecto **Proyecto VSIX**.
 
@@ -115,7 +117,7 @@ En este procedimiento se usa el mismo fragmento de código de Hola mundo creado 
 
 4. Pruebe el fragmento de código. En la instancia experimental, abra un proyecto de Visual Basic y luego abra uno de los archivos de código. Coloque el cursor en algún lugar del código, haga clic con el botón derecho y, en el menú contextual, seleccione **Insertar fragmento de código**.
 
-5. Verá que una de las carpetas es *HelloWorldVB*. Haga doble clic en ella. Se debería ver un elemento emergente **Insertar fragmento de código: HelloWorldVB >** con una lista desplegable **HelloWorldVB**. Haga clic en la lista desplegable de **HelloWorldVB**.
+5. Verá que una de las carpetas es *HelloWorldVB*. Haga doble clic en ella. Debería ver un elemento emergente **Insertar fragmento de código: HellowWorldVB >** con una lista desplegable **HelloWorldVB**. Haga clic en la lista desplegable de **HelloWorldVB**.
 
    Se agrega la siguiente línea al archivo de código:
 

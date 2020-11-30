@@ -1,5 +1,7 @@
 ---
 title: Búsqueda de referencias en el código
+description: Aprenda sobre el comando Buscar todas las referencias para buscar referencias a elementos concretos del código.
+ms.custom: SEO-VS-2020
 ms.date: 09/26/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e4ef16ef88e871778fd4e0c755ffb156c374109
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5ee6a0792c5dbfa1661018e75806499d1aa1028
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592040"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006554"
 ---
 # <a name="find-references-in-your-code"></a>Búsqueda de referencias en el código
 

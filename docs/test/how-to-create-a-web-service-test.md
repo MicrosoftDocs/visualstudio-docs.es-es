@@ -1,5 +1,7 @@
 ---
 title: Creación de una prueba de servicios web
+description: Aprenda a usar una prueba de rendimiento con los servicios web y las solicitudes de personalización en el Editor de pruebas de rendimiento web para buscar páginas de servicio web.
+ms.custom: SEO-VS-2020
 ms.date: 06/30/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.assetid: fbcd57ee-06ad-4260-8694-09f8e0f93e39
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9934f48e6d5900a418995eb96d357b4ea1ea532f
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.openlocfilehash: 32b5a6a91221e8942faeefcb89cfc52dd0cc5895
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85814764"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95439932"
 ---
 # <a name="how-to-create-a-web-service-test"></a>Procedimiento Crear una prueba de servicios web
 

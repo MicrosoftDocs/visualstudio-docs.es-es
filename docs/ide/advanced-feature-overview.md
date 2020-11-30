@@ -1,5 +1,7 @@
 ---
 title: Características avanzadas
+description: Aprenda sobre las características avanzadas que podrían ser más adecuadas para desarrolladores experimentados o para aquellos desarrolladores que ya están familiarizados con Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 06/01/2018
 ms.topic: conceptual
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04c725e5bcae5d72562e767a06afdee8aa84950b
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 61109a315a7f331821527ee882dd7c019411fca3
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399258"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903304"
 ---
 # <a name="features-of-visual-studio"></a>Características de Visual Studio
 
@@ -44,7 +46,7 @@ Visual Studio ofrece un conjunto de herramientas que le permiten crear con faci
 
 ::: moniker range="vs-2017"
 
-Después de instalar la carga de trabajo **Desarrollo de Azure** , en el cuadro de diálogo **Nuevo proyecto** estarán disponibles las siguientes plantillas de la **nube** para C#:
+Después de instalar la carga de trabajo **Desarrollo de Azure**, en el cuadro de diálogo **Nuevo proyecto** estarán disponibles las siguientes plantillas de la **nube** para C#:
 
 ![Plantillas de proyectos en la nube para Visual Studio](media/cloud-project-templates.png)
 
@@ -90,7 +92,7 @@ Puede usar Visual Studio para crear aplicaciones y juegos para MacOS, Linux y Wi
 
 ## <a name="connect-to-databases"></a>Conectarse a bases de datos
 
-El **Explorador de servidores** sirve para explorar y administrar activos e instancias de SQL Server de forma local y remota, así como en Azure, Salesforce.com, Microsoft 365 y sitios web. Para abrir el **Explorador de servidores** , en el menú principal, elija **Ver** > **Explorador de servidores**. Para obtener más información sobre el uso del Explorador de servidores, vea [Adición de nuevas conexiones](../data-tools/add-new-connections.md).
+El **Explorador de servidores** sirve para explorar y administrar activos e instancias de SQL Server de forma local y remota, así como en Azure, Salesforce.com, Microsoft 365 y sitios web. Para abrir el **Explorador de servidores**, en el menú principal, elija **Ver** > **Explorador de servidores**. Para obtener más información sobre el uso del Explorador de servidores, vea [Adición de nuevas conexiones](../data-tools/add-new-connections.md).
 
 [SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt) es un eficaz entorno de desarrollo para SQL Server, Azure SQL Database y Azure SQL Data Warehouse. Le permite compilar, depurar, mantener y refactorizar bases de datos. Puede trabajar con un proyecto de base de datos o directamente con una instancia de base de datos conectada de manera local o externa.
 

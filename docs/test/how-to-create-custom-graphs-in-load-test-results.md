@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: Crear gráficos personalizados en los resultados de pruebas de carga'
+description: Aprenda a diseñar grafos que muestren información específica sobre los resultados de las pruebas de carga mientras se ejecutan estas o después de que hayan terminado de ejecutarse.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: 17fcafce-76f9-4411-9389-6e5376eab236
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1cc9c5bab7601a62bacfbbb155227bd5b632f93a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c003fc5d6573dfdd88ec85ea37fbb10f80c94484
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287810"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441044"
 ---
 # <a name="how-to-create-custom-graphs-in-load-test-results"></a>Cómo: Crear gráficos personalizados en los resultados de pruebas de carga
 
@@ -28,7 +30,7 @@ Puede realizar el procedimiento siguiente mientras se ejecuta una prueba de carg
 
 1. En la barra de herramientas **Prueba de carga**, elija **Agregar nuevo gráfico**.
 
-     \- O bien
+     \- o -
 
      En el **Analizador de pruebas de carga**, haga clic con el botón derecho en el panel **Contadores** o en un gráfico y luego seleccione **Agregar gráfico**.
 
@@ -38,9 +40,9 @@ Puede realizar el procedimiento siguiente mientras se ejecuta una prueba de carg
 
      El nuevo gráfico aparece en el **Analizador de pruebas de carga**. Aparece en el panel de gráfico actualmente seleccionado y reemplaza al gráfico que se mostraba en ese panel.
 
-3. Personalice el nuevo gráfico agregando contadores. Para obtener más información, vea [Cómo: Agregar y eliminar contadores de los gráficos de resultados de pruebas de carga](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md).
+3. Personalice el nuevo gráfico agregando contadores. Para obtener más información, vea [Cómo: Agregar y eliminar contadores de los gráficos](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Analizar los resultados de pruebas de carga en la vista Gráficos](../test/analyze-load-test-results-in-the-graphs-view.md)
 - [Cómo: Agregar y eliminar contadores de los gráficos de resultados de pruebas de carga](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)

@@ -1,5 +1,7 @@
 ---
 title: Adición de conjuntos de contadores personalizados para pruebas de carga
+description: Cuando se crea una prueba de carga con el Asistente para prueba de carga, se agrega un conjunto inicial de contadores. Aprenda a agregar conjuntos de contadores personalizados mediante el Editor de pruebas de carga.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.assetid: 499aca80-1069-408d-ac68-326da6a50645
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e2b78cb68f1e7a7e1f47c6cc3e771353d7e46ca9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c65226a8694cbccf7c5b94f7688d1828a2526cf6
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288434"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440238"
 ---
 # <a name="how-to-add-custom-counter-sets-using-the-load-test-editor"></a>Cómo: Agregar conjuntos de contadores personalizados mediante el Editor de pruebas de carga
 
@@ -46,7 +48,7 @@ Los contadores se administran en el **Editor de pruebas de carga**. Los conjunto
     > [!NOTE]
     > Otra forma de agregar un conjunto de contadores personalizados es hacer clic con el botón secundario en un conjunto de contadores existente, elegir copiar y, a continuación, pegarlo en el nodo de conjuntos de contadores. Si se copian contadores adicionales que no son necesarios, pueden eliminarse. Puede cambiar el nombre del nuevo conjunto de contadores en la ventana **Propiedades**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Especificar los conjuntos de contadores y las reglas de umbral para equipos en una prueba de carga](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
 - [Configurar los parámetros de ejecución de pruebas de carga](../test/configure-load-test-run-settings.md)

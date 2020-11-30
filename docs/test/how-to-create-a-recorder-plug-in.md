@@ -1,5 +1,7 @@
 ---
 title: Creación de un complemento de grabación para pruebas de rendimiento web
+description: Conozca cómo WebTestRecorderPlugin le permite modificar una prueba de rendimiento web registrada después de elegir Detener en la barra de herramientas de la grabadora de pruebas de rendimiento web.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +10,12 @@ ms.assetid: 6fe13be1-aeb5-4927-9bff-35950e194da9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3f75114683a4f456d0514af20c1c201c373bd4b0
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: ce4be33e2e29ee0089184a034e56cf3a0539dc76
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85288017"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440065"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Procedimiento Crear un complemento de grabadora
 

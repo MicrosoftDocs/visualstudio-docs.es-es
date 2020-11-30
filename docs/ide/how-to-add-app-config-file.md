@@ -1,5 +1,7 @@
 ---
 title: Adición de un archivo app.config a un proyecto
+description: Aprenda a agregar un archivo app.config a un proyecto de C#, de forma que pueda personalizar el modo en que Common Language Runtime busca y carga archivos de ensamblado.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: fe659979cadf4d9e5752f7bbe85150aae848de08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 282c66acd71d0c68ff5bc3c74db2e8a2517a00d1
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770824"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597358"
 ---
 # <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>Adición de un archivo de configuración de la aplicación a un proyecto de C#
 
@@ -39,7 +41,7 @@ Cuando se compila el proyecto, el entorno de desarrollo copia automáticamente e
 
      Se agrega al proyecto un archivo denominado *app.config*.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Administración de la configuración de la aplicación (.NET)](../ide/managing-application-settings-dotnet.md)
 - [Esquema de los archivos de configuración (.NET Framework)](/dotnet/framework/configure-apps/file-schema/index)

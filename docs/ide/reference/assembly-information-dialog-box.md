@@ -1,5 +1,7 @@
 ---
 title: Información de ensamblado (Cuadro de diálogo)
+description: Aprenda sobre el cuadro de diálogo Información de ensamblado y cómo se utiliza para especificar los valores de los atributos de ensamblado globales de .NET Framework.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1813c4e399a125aca0185436b4a7216b72b5842
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: ee8738d06c0f02adb6f5e6352d2006e0133c66ef
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809012"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871345"
 ---
 # <a name="assembly-information-dialog-box"></a>Cuadro de diálogo Información de ensamblado
 
@@ -65,7 +67,7 @@ Especifica si los tipos del ensamblado estarán disponibles para COM. Se corresp
 > [!NOTE]
 > Para más información sobre cómo establecer estas propiedades al generar un paquete NuGet en una biblioteca de clases de .NET Framework, consulte [Configurar las propiedades del proyecto para el paquete](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework#configure-project-properties-for-the-package).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Página Aplicación, Diseñador de proyectos (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md)
+- [Página de aplicación, Diseñador de proyectos (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md)
 - [Atributos](/previous-versions/z0w1kczw(v=vs.140))

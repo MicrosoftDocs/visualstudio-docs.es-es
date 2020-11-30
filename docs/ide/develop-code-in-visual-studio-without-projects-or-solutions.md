@@ -1,5 +1,7 @@
 ---
 title: Desarrollo de código sin proyectos o soluciones
+description: Aprenda a desarrollar código directamente en Visual Studio sin necesidad de proyectos o soluciones.
+ms.custom: SEO-VS-2020
 ms.date: 06/22/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68665acfcc3ea00f118dc19cf155cb3e6f5d1b36
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d706ccdc07abcc91e956878e1bc180be9c542223
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769656"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006008"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Desarrollo de código en Visual Studio sin proyectos o soluciones
 

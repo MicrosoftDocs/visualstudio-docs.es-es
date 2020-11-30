@@ -1,5 +1,7 @@
 ---
 title: Administrar los recursos de la aplicación (.NET)
+description: Aprenda a administrar archivos de recursos de aplicación que no forman parte del proceso de compilación.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1815b0efeebf98587fe07384ea0b2c8d1f5e1d90
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4707a3e33279ead458566bc01ed2eed8c67355cf
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88992373"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95596747"
 ---
 # <a name="manage-application-resources-net"></a>Administrar los recursos de la aplicación (.NET)
 

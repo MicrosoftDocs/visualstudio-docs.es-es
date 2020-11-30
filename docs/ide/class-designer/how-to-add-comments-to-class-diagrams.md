@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: Agregar comentarios a diagramas de clases (Diseñador de clases)'
+description: Aprenda a usar formas de comentario para anotar diagramas de clases.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8e7514e8ab55697bdfc01f58c5ceffe4228721c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b146efb27bb76d91b7453d574bda6d79d53a68a
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85771029"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901679"
 ---
 # <a name="how-to-add-comments-to-class-diagrams"></a>Cómo: Agregar comentarios a diagramas de clases
 
@@ -35,7 +37,7 @@ Puede cambiar el tamaño de una forma de comentario, pero no puede cambiar otros
 
 2. Haga clic en la nueva forma de comentario en el diagrama y escriba el texto que quiera.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Trabajar con diagramas de clases](designing-and-viewing-classes-and-types.md)
-- [Cómo: Personalizar los diagramas de clases](how-to-customize-class-diagrams.md)
+- [Cómo: Personalizar diagramas de clases](how-to-customize-class-diagrams.md)

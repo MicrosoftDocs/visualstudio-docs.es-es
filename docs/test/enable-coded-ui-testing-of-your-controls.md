@@ -1,5 +1,7 @@
 ---
 title: Habilitar pruebas de IU codificadas en los controles
+description: Aprenda a implementar compatibilidad con el marco de pruebas automatizadas de IU para un control más estable.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: d94c68a660201b0a8767b1405fcd4399cdf6d660
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7b36b7e2469aa5d4ef6e11cff2580e0fb0c8ff03
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288694"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441409"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Habilitación de pruebas automatizadas de IU en los controles
 

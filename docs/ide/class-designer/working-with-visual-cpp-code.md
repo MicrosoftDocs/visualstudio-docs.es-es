@@ -1,5 +1,7 @@
 ---
 title: Trabajar con código de C++ (Diseñador de clases)
+description: Aprenda a usar diagramas de clases para diseñar y visualizar elementos de código de C++, clases y otros tipos en un proyecto.
+ms.custom: SEO-VS-2020
 ms.date: 06/21/2017
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 54087a719b0079ba32ff08ff1e08ad01f5e64ed0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c3509f625686f97156efe79f5e1b72aa991ce5ca
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596754"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903889"
 ---
 # <a name="work-with-c-code-in-class-designer"></a>Trabajar con código de C++ en el Diseñador de clases
 

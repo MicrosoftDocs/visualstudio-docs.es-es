@@ -1,5 +1,7 @@
 ---
 title: Icono Grabar pantalla y voz durante las pruebas
+description: Aprenda a configurar el adaptador de datos de diagnóstico que registra la pantalla y la voz del usuario que ejecuta la prueba en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 10/03/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +10,12 @@ ms.assetid: 2cefe8c2-430a-4cb4-bbe0-f3edb2e5bc03
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2366e77b0b66e2a31ce17e1aefb9240e4f45df2d
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 08ae6d19327a956b5dab71fa30b0b33742390d2b
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928650"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440992"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Procedimiento Incluir grabaciones de la pantalla y de voz durante las pruebas mediante la configuración de pruebas
 

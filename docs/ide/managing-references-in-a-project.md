@@ -1,5 +1,7 @@
 ---
 title: Administrar referencias en un proyecto
+description: Aprenda a administrar referencias a componentes externos y servicios conectados en un proyecto.
+ms.custom: SEO-VS-2020
 ms.date: 08/02/2019
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c55b0d3487eb18db33805b418882f157d55b1253
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: fdf737d26ec14c2a108125425a3b66cdf4a0e519
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183540"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95870955"
 ---
 # <a name="manage-references-in-a-project"></a>Administrar referencias en un proyecto
 

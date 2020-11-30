@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: Personalizar los diagramas de clases (Diseñador de clases)'
+description: Aprenda a cambiar la forma en que los diagramas de clases muestran información y cómo personalizar el diagrama entero o los tipos individuales en la superficie de diseño.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e8e4665790aa228bb30aac05ea4782cfe4a62f1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 05f0b20307ac0802c4c4350588f5dc0c47cb3b6b
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770177"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901432"
 ---
 # <a name="how-to-customize-class-diagrams"></a>Cómo: Personalizar los diagramas de clases
 
@@ -37,7 +39,7 @@ Las secciones que contienen miembros de tipo, como la sección **Propiedades** d
 
 2. En la barra de herramientas **Diseñador de clases**, haga clic en el botón **Acercar** o **Alejar** para cambiar el nivel de zoom de la superficie del diseñador.
 
-     o
+     or
 
      Especifique un valor de zoom determinado. Puede usar la lista desplegable **Zoom** o escribir un nivel de zoom válido (el intervalo válido está comprendido entre el 10 % y el 400 %).
 
@@ -125,8 +127,8 @@ Se puede quitar una forma de tipo del diagrama de clase sin que ello afecte al c
 
      La forma se quita del diagrama y su código subyacente se elimina del proyecto.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Cómo: Cambiar entre notación de miembro y notación de asociación](how-to-change-between-member-notation-and-association-notation.md)
-- [Cómo: Ver los tipos existentes](how-to-view-existing-types.md)
+- [Cómo: Ver tipos existentes](how-to-view-existing-types.md)
 - [Visualización de tipos y relaciones](designing-and-viewing-classes-and-types.md)

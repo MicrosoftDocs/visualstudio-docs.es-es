@@ -1,5 +1,7 @@
 ---
 title: Búsqueda de llamadas a un método
+description: Aprenda a usar la ventana Jerarquía de llamadas para desplazarse por todas las llamadas que se dirigen a un método, una propiedad o un constructor seleccionados y, en ocasiones, que parten de allí.
+ms.custom: SEO-VS-2020
 ms.date: 05/18/2018
 ms.topic: reference
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dcedc6a49c0df84b4482f8030524d59d4336bcc8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 75c330855d3fca1187f88171adb893c3f77c4ccd
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595805"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871410"
 ---
 # <a name="view-call-hierarchy"></a>Visualización de la jerarquía de llamadas
 
@@ -46,7 +48,7 @@ Luego puede expandir cada miembro que realiza llamadas para ver sus nodos **Llam
 
 ![Ventana Jerarquía de llamadas con varios niveles expandidos](media/call-hierarchy-csharp-expanded.png)
 
-Para los miembros que están definidos como virtuales o abstractos, se muestra un nodo **Invalida “nombre de método”** . Para los miembros de interfaz, se muestra un nodo **Implementa nombre de método**. Estos nodos expansibles aparecen en el mismo nivel que los nodos **Llamadas a** y **Llamadas desde**.
+Para los miembros que están definidos como virtuales o abstractos, se muestra un nodo **Invalida “nombre de método”**. Para los miembros de interfaz, se muestra un nodo **Implementa nombre de método**. Estos nodos expansibles aparecen en el mismo nivel que los nodos **Llamadas a** y **Llamadas desde**.
 
 El cuadro **Ámbito de búsqueda** en la barra de herramientas contiene opciones para **Mi solución**, **Proyecto actual** y **Documento actual**.
 
@@ -63,11 +65,11 @@ Al seleccionar un miembro secundario en el panel de vista de árbol **Jerarquía
 
 En la tabla siguiente, se describen varias opciones del menú contextual que están disponibles cuando hace clic con el botón derecho en un nodo en el panel de vista de árbol.
 
-|Elemento del menú contextual|Description|
+|Elemento del menú contextual|Descripción|
 | - |-----------------|
 |**Agregar como nueva raíz**|Agrega el nodo seleccionado al panel de vista de árbol como un nuevo nodo raíz. Esto le permite centrar la atención en un subárbol específico.|
 |**Quitar raíz**|Quita el nodo raíz seleccionado del panel de vista de árbol. Esta opción solo está disponible desde un nodo raíz.<br /><br /> También puede usar el botón de la barra de herramientas **Quitar raíz** para quitar el nodo raíz seleccionado.|
 |**Ir a definición**|Ejecuta el comando Ir a definición en el nodo seleccionado. De esta forma, se desplaza a la definición original de una llamada de miembro o definición de variable.<br /><br /> Para ejecutar el comando Ir a definición, también puede hacer doble clic en el nodo seleccionado o presionar F12 en el nodo seleccionado.|
 |**Buscar todas las referencias**|Ejecuta el comando Buscar todas las referencias en el nodo seleccionado. De esta forma, busca todas las líneas de código en el proyecto que hacen referencia a una clase o un miembro.<br /><br /> También puede usar MAYÚS+F12 para ejecutar el comando Buscar todas las referencias en el nodo seleccionado.|
-|**Copiar**|Copia el contenido del nodo seleccionado (pero no sus subnodos).|
+|**Copy**|Copia el contenido del nodo seleccionado (pero no sus subnodos).|
 |**Actualizar**|Contrae el nodo seleccionado para que, al volver a expandirlo, se muestre la información actual.|

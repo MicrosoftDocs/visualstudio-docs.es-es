@@ -1,5 +1,7 @@
 ---
 title: Cambiar la experiencia de inicio
+description: Aprenda a personalizar la experiencia de inicio para que Visual Studio se abra con las herramientas que le resulten más útiles.
+ms.custom: SEO-VS-2020
 ms.date: 02/01/2017
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 281a0c43c0163d158151683e9fdc483dfc1709f5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3928ab1cad67cac26865229cbe6d317083a0a4f1
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75567221"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598112"
 ---
 # <a name="customize-startup"></a>Personalizar el inicio
 
@@ -32,7 +34,7 @@ También puede mostrar una página principal personalizada, que es una página X
 
 ## <a name="to-change-the-startup-item"></a>Para cambiar la pantalla de inicio
 
-1. En la barra de menús, elija **Herramientas** > **Opciones**.
+1. En la barra de menús, seleccione **Herramientas** > **Opciones**.
 
 2. Expanda **Entorno** y después elija **Inicio**.
 
@@ -67,7 +69,7 @@ Para instalar una página de inicio personalizada, abra el archivo *.vsix* o cop
 > [!TIP]
 > Si un error de una página principal personalizada hace que Visual Studio se bloquee, abra Visual Studio en modo seguro y después establezca que se use la página principal predeterminada. Consulte [/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md)
 

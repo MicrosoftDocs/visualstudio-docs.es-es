@@ -1,5 +1,7 @@
 ---
 title: 'Microsoft Fakes: generación y compilación de código; convenciones de nomenclatura'
+description: Conozca las opciones y los problemas de generación y compilación de código en Fakes, como las convenciones de nomenclatura de los tipos, miembros y parámetros generados por Fakes.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 9a1ba469f460e966be581b87226f2a89faac8186
-ms.sourcegitcommit: f2bb3286028546cbd7f54863b3156bd3d65c55c4
+ms.openlocfilehash: e3ebb1439c7b8eb958d8e7126ca0197462e89a09
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93325945"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441638"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Generación de código, compilación y convenciones de nomenclatura en Microsoft Fakes
 
@@ -32,7 +34,7 @@ En este artículo se explican las opciones y los problemas de generación y comp
 
 La generación de tipos de stub se configura en un archivo XML que tiene la extensión de archivo *.fakes*. El marco de trabajo de Fakes se integra en el proceso de compilación mediante tareas de MSBuild personalizadas y detecta los archivos en tiempo de compilación. El generador de código de Fakes compila los tipos de stub en un ensamblado y agrega la referencia al proyecto.
 
-En el ejemplo siguiente se muestran los tipos de stub definidos en *FileSystem.dll* :
+En el ejemplo siguiente se muestran los tipos de stub definidos en *FileSystem.dll*:
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">
@@ -84,7 +86,7 @@ Las cadenas de filtro usan una gramática simple para definir cómo deben identi
 
 ### <a name="stub-concrete-classes-and-virtual-methods"></a>Procesamiento con stubs de clases concretas y métodos virtuales
 
-De forma predeterminada, se generan tipos de stub para todas las clases no selladas. Es posible restringir los tipos de stub a clases abstractas a través del archivo de configuración *.fakes* :
+De forma predeterminada, se generan tipos de stub para todas las clases no selladas. Es posible restringir los tipos de stub a clases abstractas a través del archivo de configuración *.fakes*:
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">
@@ -183,7 +185,7 @@ Para evitar este problema, Fakes debe crear automáticamente nombres de ensambla
 
 Dado un ensamblado MyAssembly y una versión 1.2.3.4, el nombre del ensamblado de Fakes es MyAssembly.1.2.3.4.Fakes.
 
-Puede cambiar o quitar esta versión modificando el atributo Version del elemento Assembly en el archivo *.fakes* :
+Puede cambiar o quitar esta versión modificando el atributo Version del elemento Assembly en el archivo *.fakes*:
 
 ```xml
 attribute of the Assembly element in the .fakes:
@@ -229,22 +231,22 @@ attribute of the Assembly element in the .fakes:
 
 - Si el nombre del método es una implementación de interfaz explícita, se quitan los puntos.
 
-- Si el método es genérico, se anexa `Of`*n* , donde *n* es el número de argumentos de método genérico.
+- Si el método es genérico, se anexa `Of`*n*, donde *n* es el número de argumentos de método genérico.
 
-  Los **nombres de métodos especiales** , como los captadores o establecedores de propiedad, se tratan tal como se describe en la tabla siguiente:
+  Los **nombres de métodos especiales**, como los captadores o establecedores de propiedad, se tratan tal como se describe en la tabla siguiente:
 
 |Si el método es...|Ejemplo|Nombre de método anexado|
 |-|-|-|
 |Un **constructor**|`.ctor`|`Constructor`|
 |Un **constructor** estático|`.cctor`|`StaticConstructor`|
-|Un **descriptor de acceso** con el nombre de método compuesto por dos partes separadas por "_" (por ejemplo, captadores de propiedades)|*kind_name* (caso común, pero no impuesto por ECMA)|*NameKind* , donde ambas partes se pusieron en mayúscula y se intercambiaron|
+|Un **descriptor de acceso** con el nombre de método compuesto por dos partes separadas por "_" (por ejemplo, captadores de propiedades)|*kind_name* (caso común, pero no impuesto por ECMA)|*NameKind*, donde ambas partes se pusieron en mayúscula y se intercambiaron|
 ||Captador de propiedad `Prop`|`PropGet`|
 ||Establecedor de propiedad `Prop`|`PropSet`|
 ||Agregador de evento|`Add`|
 ||Eliminador de evento|`Remove`|
 |Un **operador** compuesto por dos partes|`op_name`|`NameOp`|
 |Por ejemplo: operador +|`op_Add`|`AddOp`|
-|Para un **operador de conversión** , se anexa el tipo de valor devuelto.|`T op_Implicit`|`ImplicitOpT`|
+|Para un **operador de conversión**, se anexa el tipo de valor devuelto.|`T op_Implicit`|`ImplicitOpT`|
 
 > [!NOTE]
 > - Los **captadores y establecedores de indizadores** se tratan de forma similar a la propiedad. El nombre predeterminado de un indizador es `Item`.

@@ -1,5 +1,7 @@
 ---
 title: Exención de Windows Information Protection
+description: Aprenda a eximir a Visual Studio de Windows Information Protection y, al mismo tiempo, permitir que use datos empresariales.
+ms.custom: SEO-VS-2020
 ms.date: 06/01/2018
 ms.topic: conceptual
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b4eb454f641b5bef7273464d605fb194f650790
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 34765cc7ac303bd44c3c4ccca87ea7c00a36ccda
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588569"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598398"
 ---
 # <a name="configure-visual-studio-as-a-wip-exempt-app"></a>Configurar Visual Studio como una aplicación exenta de WIP
 
@@ -34,6 +36,6 @@ Dado que Visual Studio incluye varios archivos binarios, [cree un archivo de dir
 
 Para especificar dónde puede acceder Visual Studio a datos empresariales en la red, siga estos [pasos para definir las ubicaciones donde las aplicaciones protegidas pueden buscar y enviar datos empresariales](/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure#choose-where-apps-can-access-enterprise-data). Para impedir que Windows bloquee las conexiones a recursos en la nube a través de una dirección IP, asegúrese de agregar la cadena /\*AppCompat\* a la configuración.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Comportamiento de aplicaciones con WIP](/windows/security/information-protection/windows-information-protection/app-behavior-with-wip)

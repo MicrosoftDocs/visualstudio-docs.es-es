@@ -1,5 +1,7 @@
 ---
 title: Configurar los puertos para los controladores de pruebas y los agentes de pruebas
+description: Aprenda a cambiar los puertos de entrada predeterminados que el controlador de pruebas, el agente de prueba y el cliente usan para evitar conflictos con otro software.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.assetid: 211edbd7-9fe4-4251-ba85-8bec4363261b
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7889feffc41d6bb64b85b4ea95a17a4a986d22df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2726d489c0c67bffb11bc59357f6ad107a6c94ba
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288824"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441573"
 ---
 # <a name="configure-ports-for-test-controllers-and-test-agents"></a>Configuración de los puertos para los controladores de pruebas y los agentes de pruebas
 

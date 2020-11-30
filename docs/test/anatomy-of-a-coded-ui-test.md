@@ -1,5 +1,7 @@
 ---
 title: Anatomía de una prueba de IU codificada
+description: Aprenda sobre los archivos que se agregan a la solución de prueba automatizada de IU cuando se crea una de estas pruebas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7100c6bb5c1dfb4c7d336ec110cf532f1f998d4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: aeaa2231c62487ec366aa561ea199cf63f3c6792
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591208"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441799"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Anatomía de una prueba automatizada de IU
 
@@ -266,7 +268,7 @@ Se trata de un archivo XML que representa la estructura de la grabación de la p
 
 El archivo *UIMap.uitest* no se puede editar directamente. Pero puede modificar la prueba con el generador de pruebas automatizadas de IU, lo que modifica automáticamente los archivos *UIMap.uitest* y [*UIMap.Designer.cs*](#UIMapDesignerFile).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls>
@@ -280,6 +282,6 @@ El archivo *UIMap.uitest* no se puede editar directamente. Pero puede modificar 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute>
 - [Usar la automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)
 - [Crear pruebas automatizadas de IU](../test/use-ui-automation-to-test-your-code.md)
-- [Procedimientos recomendados para las pruebas de IU codificadas](../test/best-practices-for-coded-ui-tests.md)
+- [Procedimientos recomendados para las pruebas automatizadas de IU](../test/best-practices-for-coded-ui-tests.md)
 - [Probar una aplicación grande con varios mapas de IU](../test/testing-a-large-application-with-multiple-ui-maps.md)
-- [Configuraciones y plataformas compatibles con las pruebas de IU codificadas y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [Configuraciones y plataformas compatibles con las pruebas automatizadas de IU y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

@@ -1,5 +1,7 @@
 ---
 title: Carga de un subconjunto de proyectos
+description: Aprenda sobre el filtrado de soluciones y cómo le permite cargar rápidamente un subconjunto de proyectos de una solución.
+ms.custom: SEO-VS-2020
 ms.date: 04/22/2019
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
@@ -10,18 +12,18 @@ author: jillre
 ms.author: stsu
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 4c44d267ef5686d04e9549601e05866aabbfb62d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 73cb7afe913f7656ac6124d1f54fbc1cb7b611cb
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72650836"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006619"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Soluciones filtradas en Visual Studio
 
 Los equipos grandes de desarrollo suelen colaborar mediante una sola solución de gran tamaño con muchos proyectos. Sin embargo, los desarrolladores individuales normalmente trabajan en un pequeño subconjunto de estos proyectos. Para mejorar el rendimiento al abrir soluciones de gran tamaño, Visual Studio 2019 presentó el *filtrado de soluciones*. El filtrado de soluciones permite abrir una solución únicamente con proyectos selectivos cargados. El hecho de cargar un subconjunto de proyectos en una solución reduce el tiempo de carga, compilación y pruebas de la solución, y permite una revisión más específica.
 
-A continuación se enumeran las características disponibles:
+Las siguientes características están disponibles:
 
 - Puede obtener en código con mayor rapidez abriendo una solución sin tener que cargar ninguno de sus proyectos. Una vez abierta la solución, podrá elegir los proyectos que quiera cargar.
 
@@ -102,7 +104,7 @@ Después de crear un archivo de filtro de soluciones, se agregará a la lista **
 
 ![Apertura de elementos en Visual Studio](media/filtered-solutions/open-recent.png)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Personalización del anidamiento de archivos en el Explorador de soluciones](file-nesting-solution-explorer.md)
 - [Optimización del rendimiento de Visual Studio](optimize-visual-studio-performance.md)

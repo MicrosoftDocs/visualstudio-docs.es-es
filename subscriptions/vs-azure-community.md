@@ -2,17 +2,17 @@
 title: Ventaja Soporte técnico de la Comunidad de Azure en Visual Studio Subscription | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: c15f7e18-b280-4902-a60d-2c2598653207
-ms.date: 07/29/2019
+ms.date: 11/17/2020
 ms.topic: conceptual
 description: Obtenga información sobre la ventaja Soporte técnico de la Comunidad de Azure incluida en las suscripciones de Visual Studio.
-ms.openlocfilehash: 000732d2c46d777c68451153dc5965d45087abce
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: 21f984d3c41ae4f654fea638792b5db4f3c8acb2
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353218"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903928"
 ---
 # <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Foro de soporte técnico de la Comunidad de Azure en las suscripciones de Visual Studio
 Obtenga ayuda directamente del equipo de Azure en los foros de soporte seleccionados a través de la Comunidad Azure.  El beneficio de la Comunidad Azure proporciona acceso a una colección de foros que se centran en los temas relacionados con Azure.
@@ -70,13 +70,13 @@ La disponibilidad de la ventaja Comunidad Azure depende del nivel de suscripció
 
 |                                          Nivel de suscripción                                           |     Canales      |    Prestación    | ¿Renovable? |
 |-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
-|                           Visual Studio Enterprise (estándar)                           | Licencia por volumen, Azure, venta directa |   Un año    |    Sí     |
-|                           Visual Studio Enterprise con GitHub Enterprise                           | Licencia por volumen, Azure, venta directa |   Un año    |    Sí     |
-|                          Visual Studio Professional (estándar)                          | Licencia por volumen, Azure, venta directa |   Un año    |    Sí     |
-|                          Visual Studio Professional con GitHub Enterprise                          | Licencia por volumen, Azure, venta directa |   Un año    |    Sí     |
-|                              Visual Studio Test Professional (estándar)                               |    Licencia por volumen, venta directa     |   Un año    |    Sí     |
-|                                       Plataformas MSDN (estándar)                                       |    Licencia por volumen, venta directa     |   Un año    |    Sí     |
-| Visual Studio Enterprise (de nube mensual) Visual Studio Professional (de nube mensual), NFR<sup>1</sup> |        Todas        | No disponible |     No     |
+|                           Visual Studio Enterprise (estándar), NFR<sup>1</sup>                            | Licencia por volumen, Azure, venta directa |   Disponible    |    Sí     |
+|                           Visual Studio Enterprise con GitHub Enterprise                           | Licencia por volumen, Azure, venta directa |   Disponible    |    Sí     |
+|                          Visual Studio Professional (estándar)                          | Licencia por volumen, Azure, venta directa |   Disponible    |    Sí     |
+|                          Visual Studio Professional con GitHub Enterprise                          | Licencia por volumen, Azure, venta directa |   Disponible    |    Sí     |
+|                              Visual Studio Test Professional (estándar)                               |    Licencia por volumen, venta directa     |   Disponible    |    Sí     |
+|                                       Plataformas MSDN (estándar)                                       |    Licencia por volumen, venta directa     |   Disponible    |    Sí     |
+| Visual Studio Enterprise (nube mensual) Visual Studio Professional (nube mensual)|        Todas        | No disponible |     No     |
 
 <sup>1</sup>  *Incluye:  No para reventa (NFR), Microsoft FTE, Most Valuable Professional (MVP), Regional Director (RD), Visual Studio Industry Partner (VSIP), BizSpark, Imagine, Microsoft Certified Trainer (MCT)*
 
