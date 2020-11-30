@@ -1,5 +1,7 @@
 ---
 title: Herramientas personalizadas | Microsoft Docs
+description: Obtenga información sobre cómo crear herramientas personalizadas en Visual Studio que asocien una herramienta a un elemento en un proyecto y ejecuten esa herramienta cada vez que se guarde el archivo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e60f1d8cb8b25ed50b0b20c5ebb538286687ad72
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2ba8760ce53f222ebbe4626bde0d897d4d12c8a6
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708959"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329970"
 ---
 # <a name="custom-tools"></a>Herramientas personalizadas
 *Las herramientas personalizadas* permiten asociar una herramienta a un elemento de un proyecto y ejecutar esa herramienta cada vez que se guarda el archivo. Ciertas herramientas personalizadas, que a veces se denominan *generadores de un solo archivo*, se usan con frecuencia para implementar traductores que generan código a partir de datos y viceversa. Por ejemplo, los generadores de un solo archivo crean [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] y [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] código fuente de los archivos *. Settings* y *. resx* . El código fuente generado proporciona acceso fuertemente tipado a los datos de los archivos *. Settings* y *. resx* . Los [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] tipos de proyecto y admiten herramientas personalizadas; los [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] tipos de proyecto no. Sus propios tipos de proyecto también pueden admitir herramientas personalizadas.

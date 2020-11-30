@@ -1,5 +1,6 @@
 ---
 title: Propiedades de documento personalizadas en servicios de lenguaje heredados
+description: Obtenga información sobre cómo crear propiedades de documento personalizadas que se muestran en la ventana Propiedades de Visual Studio, como parte de un servicio de lenguaje heredado.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,17 +14,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c38ad28456ab8b9bccf29d2249307b718a5767b
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: d5fa24f3d052ab9122776967607b2c197fb102bf
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036839"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329918"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>Propiedades de documento personalizadas en un servicio de lenguaje heredado
 Las propiedades del documento se pueden mostrar en la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ventana **propiedades** . Normalmente, los lenguajes de programación no tienen propiedades asociadas a archivos de código fuente individuales. Sin embargo, XML admite propiedades de documento que afectan a la codificación, el esquema y la hoja de estilos.
 
-## <a name="discussion"></a>Debate
+## <a name="discussion"></a>Discusión
  Si su lenguaje necesita propiedades de documento personalizadas, debe derivar una clase de la <xref:Microsoft.VisualStudio.Package.DocumentProperties> clase e implementar las propiedades necesarias en la clase derivada.
 
  Además, las propiedades de documento normalmente se almacenan en el propio archivo de código fuente. Esto requiere que el servicio de lenguaje analice la información de la propiedad del archivo de código fuente para que se muestre en la ventana **propiedades** y para actualizar el archivo de código fuente cuando se realice un cambio en las propiedades del documento en la ventana **propiedades** .

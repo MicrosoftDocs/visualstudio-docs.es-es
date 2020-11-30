@@ -1,5 +1,7 @@
 ---
 title: Crear instancias de proyecto mediante generadores de proyecto | Microsoft Docs
+description: Obtenga información sobre cómo crear instancias de clase de proyecto mediante los generadores de proyectos en el entorno de desarrollo integrado (IDE) de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31ba5dd11af18f8a723b2271544eff2bd292e2e8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 59ad41bda80337fd0adc65d4792adbbbb1cf38f1
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709060"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328605"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>Creación de instancias de proyecto mediante el uso de generadores de proyecto
 Los tipos de proyecto de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usan un *generador de proyectos* para crear instancias de objetos de proyecto. Un generador de proyectos es similar a un generador de clases estándar para objetos COM cocreatbles. Sin embargo, los objetos de proyecto no son cocreatable; solo se pueden crear mediante un generador de proyectos.
@@ -38,13 +40,13 @@ Los tipos de proyecto de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md
 
    Los tipos de proyecto están asociados a una extensión de nombre de archivo determinada. Cuando un usuario intenta abrir un archivo de proyecto existente o intenta crear un nuevo proyecto mediante la clonación de una plantilla, el IDE usa la extensión en el archivo para determinar el GUID del proyecto correspondiente.
 
-   En cuanto el IDE determina si debe crear un nuevo proyecto o abrir un proyecto existente de un tipo determinado, el IDE usa la información del registro del sistema en **[HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\8.0\Projects]** para encontrar qué VSPackage implementa el generador de proyectos necesario. El IDE carga este VSPackage. En el <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> método, el VSPackage debe registrar su generador de proyectos con el IDE llamando al <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes.RegisterProjectType%2A> método.
+   En cuanto el IDE determina si debe crear un nuevo proyecto o abrir un proyecto existente de un tipo determinado, el IDE usa la información del registro del sistema en **[HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\8.0\Projects]** para averiguar qué VSPackage implementa el generador de proyectos necesario. El IDE carga este VSPackage. En el <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> método, el VSPackage debe registrar su generador de proyectos con el IDE llamando al <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes.RegisterProjectType%2A> método.
 
    El método principal de la `IVsProjectFactory` interfaz es <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> , que debe administrar dos escenarios: abrir un proyecto existente y crear un nuevo proyecto. La mayoría de los proyectos almacenan el estado del proyecto en un archivo de proyecto. Normalmente, los proyectos nuevos se crean realizando una copia del archivo de plantilla que se pasa al `CreateProject` método y, a continuación, abriendo la copia. Los proyectos existentes se crean mediante la apertura directa del archivo de proyecto que se pasa al `CreateProject` método. El `CreateProject` método puede mostrar características adicionales de la interfaz de usuario para el usuario según sea necesario.
 
    Un proyecto tampoco puede usar archivos y, en su lugar, almacena su estado del proyecto en un mecanismo de almacenamiento distinto del sistema de archivos, como una base de datos o un servidor Web. En este caso, el parámetro de nombre de archivo pasado al `CreateProject` método no es realmente una ruta de acceso del sistema de archivos, sino una cadena única (una dirección URL) para identificar los datos del proyecto. No es necesario copiar los archivos de plantilla que se pasan a `CreateProject` para desencadenar la secuencia de construcción adecuada que se va a ejecutar.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes>

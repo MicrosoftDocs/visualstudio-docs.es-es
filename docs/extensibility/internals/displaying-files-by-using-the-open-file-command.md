@@ -1,5 +1,7 @@
 ---
 title: Mostrar archivos mediante el comando Abrir archivo | Microsoft Docs
+description: Obtenga información sobre cómo el entorno de desarrollo integrado (IDE) de Visual Studio controla el comando Abrir archivo en el menú Archivo para mostrar los archivos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc18442c55b6989c4d8668e1425fdd62a2d4b1b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a932a9b56a63069e010cb2b945de25564c2d135
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708593"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328345"
 ---
 # <a name="display-files-by-using-the-open-file-command"></a>Mostrar archivos mediante el comando Abrir archivo
 En los pasos siguientes se describe cómo el IDE controla el comando **Abrir archivo** , que está disponible en el menú **archivo** de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . En los pasos también se describe cómo los proyectos deben responder a las llamadas que se originan desde este comando.

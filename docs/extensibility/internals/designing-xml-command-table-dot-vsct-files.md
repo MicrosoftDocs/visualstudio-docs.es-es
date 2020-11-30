@@ -1,5 +1,7 @@
 ---
 title: Diseñar la tabla de comandos XML (. Archivos de Vsct) | Microsoft Docs
+description: Obtenga información sobre cómo diseñar un archivo de tabla de comandos XML (. Vsct) que describa el diseño y la apariencia de los elementos de comando, como botones, cuadros combinados, menús y barras de herramientas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fcd29aee98139bb151c87590b256df6b8370abff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a1ccab1eddf38e2f93cb00f1f5fdea6ce09f2f05
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708750"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328436"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>Diseñar archivos de tabla de comandos XML (. Vsct)
 Un archivo de tabla de comandos XML (*. Vsct*) describe el diseño y la apariencia de los elementos de comando de un VSPackage. Los elementos de comando incluyen botones, cuadros combinados, menús, barras de herramientas y grupos de elementos de comandos. En este artículo se describen los archivos de tabla de comandos XML, cómo afectan a los elementos de comando y menús, y cómo se crean.
@@ -25,7 +27,7 @@ Un archivo de tabla de comandos XML (*. Vsct*) describe el diseño y la aparienc
 
  Cuando se crea un VSPackage nuevo mediante la ejecución de la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] plantilla de paquete, la plantilla genera un archivo *. Vsct* con los elementos necesarios para un comando de menú, una ventana de herramientas o un editor personalizado, en función de las selecciones. A continuación, este archivo *. Vsct* se puede modificar para cumplir los requisitos de un VSPackage específico. Para ver ejemplos de cómo modificar un archivo *. Vsct* , consulte [extensión de menús y comandos](../../extensibility/extending-menus-and-commands.md).
 
- Para crear un nuevo archivo *. Vsct* en blanco, consulte [Cómo: crear un archivo. *Vsct* ](../../extensibility/internals/how-to-create-a-dot-vsct-file.md). Una vez creado, se agregan elementos, atributos y valores XML al archivo para describir el diseño del elemento de comando. Para obtener un esquema XML detallado, vea la [Referencia del esquema XML de VSCT](../../extensibility/vsct-xml-schema-reference.md).
+ Para crear un nuevo archivo *. Vsct* en blanco, consulte [Cómo: crear un archivo. *Vsct*](../../extensibility/internals/how-to-create-a-dot-vsct-file.md). Una vez creado, se agregan elementos, atributos y valores XML al archivo para describir el diseño del elemento de comando. Para obtener un esquema XML detallado, vea la [Referencia del esquema XML de VSCT](../../extensibility/vsct-xml-schema-reference.md).
 
 ## <a name="differences-between-ctc-and-vsct-files"></a>Diferencias entre los archivos. CTC y. Vsct
  Aunque el significado de las etiquetas XML en un archivo *. Vsct* es el mismo que el de las etiquetas en el formato de archivo *. CTC* en desuso, su implementación es un poco diferente:
@@ -121,5 +123,5 @@ Puede usar el compilador *vsct.exe* para convertir un archivo *. CTO* existente 
 
  Ejecute la herramienta con el comando **CreateExpInstance/RESET**. Recuerde que esta herramienta quita del Hive experimental todos los VSPackages registrados que no se instalan normalmente con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Extender menús y comandos](../../extensibility/extending-menus-and-commands.md)

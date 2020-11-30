@@ -1,5 +1,7 @@
 ---
 title: Crear páginas de opciones | Microsoft Docs
+description: Obtenga información sobre cómo crear una página de opciones en el menú herramientas de Visual Studio implementando una clase DialogPage desde el marco de trabajo de paquetes administrados.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 368efaa78a56723d4a72c482bea9ee739385127e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4759b3590fcde116e6f106ac326ff875e9566c43
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709144"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328644"
 ---
 # <a name="create-options-pages"></a>Crear páginas de opciones
 En [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Managed Package Framework, las clases derivadas de <xref:Microsoft.VisualStudio.Shell.DialogPage> extienden el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE agregando páginas de **Opciones** en el menú **herramientas** .

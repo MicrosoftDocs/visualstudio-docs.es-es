@@ -1,5 +1,7 @@
 ---
 title: Crear carpetas de contenedores principales para soluciones | Microsoft Docs
+description: Aprenda a usar la API del complemento de control de código fuente versión 1,2 para especificar un único destino de control de código fuente raíz para todos los proyectos Web de una solución.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e5481e20a12fc05ccba97eef55173e5ce9b30d6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e65da2b50984b0259079a1693dd31d400e1e12e3
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709094"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329944"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>Crear carpetas de contenedores principales para las soluciones
 En la API del complemento de control de código fuente versión 1,2, un usuario puede especificar un único destino de control de código fuente raíz para todos los proyectos Web de la solución. Esta única raíz se denomina raíz superunificada (SUR).
@@ -62,7 +64,7 @@ En [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , se recomienda 
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el valor predeterminado es el comportamiento de la versión 1,1 si el complemento de control de código fuente no devuelve `SCC_CAP_CREATESUBPROJECT` ni `SCC_CAP_GETPARENTPROJECT` marcas de funcionalidad. Además, los usuarios de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pueden optar por revertir al comportamiento de la versión 1,1 estableciendo el valor de la clave siguiente en *DWORD: 00000001*:
 
- **[HKEY_CURRENT_USER \software\microsoft\visualstudio\8.0\sourcecontrol] DoNotCreateSolutionRootFolderInSourceControl**  =  *DWORD: 00000001*
+ **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] DoNotCreateSolutionRootFolderInSourceControl**  =  *DWORD: 00000001*
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Novedades de la API del complemento de control de código fuente versión 1,2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

@@ -1,5 +1,7 @@
 ---
 title: Elementos coloreables personalizados | Microsoft Docs
+description: Obtenga información sobre cómo crear elementos coloreables personalizados como parte de un servicio de lenguaje invalidando elementos en el cuadro de diálogo fuentes y colores, como palabras clave y comentarios.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: feecd9e8f8178045f66999b775e2d0792f50b288
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 648a8e45b5b472ccc1a37cd69e2043f0bb5b9aa3
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708994"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328540"
 ---
 # <a name="custom-colorable-items"></a>Elementos coloreables personalizados
 Puede invalidar la lista de tipos de coloración, como palabras clave y comentarios, mediante la implementación de elementos coloreables personalizados como parte del servicio de lenguaje.
@@ -50,7 +52,7 @@ Puede invalidar la lista de tipos de coloración, como palabras clave y comentar
 
 5. En la misma clase que implementa la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> interfaz, implemente la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> interfaz y sus dos métodos, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> y <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> .
 
-6. Implemente la interfaz <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem>.
+6. Implementar la interfaz <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem>.
 
 7. Si desea admitir valores de color de 24 bits o alto, implemente también la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> interfaz.
 
@@ -64,7 +66,7 @@ Puede invalidar la lista de tipos de coloración, como palabras clave y comentar
 
     Para obtener un ejemplo de cómo implementar las <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> interfaces y, vea <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Modelo de un servicio de lenguaje heredado](../../extensibility/internals/model-of-a-legacy-language-service.md)
 - [Colores de la sintaxis en editores personalizados](../../extensibility/syntax-coloring-in-custom-editors.md)
 - [Color de la sintaxis en un servicio de lenguaje heredado](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)

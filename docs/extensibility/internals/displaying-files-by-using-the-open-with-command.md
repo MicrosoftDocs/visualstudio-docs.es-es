@@ -1,5 +1,7 @@
 ---
 title: Mostrar archivos mediante el comando abrir con | Microsoft Docs
+description: Obtenga información sobre cómo un proyecto puede llamar al comando abrir con del entorno de desarrollo integrado (IDE) de Visual Studio para mostrar archivos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4051793077e613981e1dd5b44f1736878f5853e9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f2cb6bd44148d470cac68addc09db9e9207e9d70
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708576"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329697"
 ---
 # <a name="display-files-by-using-the-open-with-command"></a>Mostrar archivos mediante el comando abrir con
 Un proyecto puede pedir al IDE que muestre el cuadro de diálogo **abrir con** . Esta solicitud solicita al usuario que abra un archivo que tenga una selección de editores estándar. En los pasos siguientes se describe este proceso:

@@ -1,5 +1,7 @@
 ---
 title: Crear tipos de proyecto | Microsoft Docs
+description: Obtenga información sobre cómo ampliar Visual Studio diseñando, creando y registrando un nuevo tipo de proyecto que admita tareas de programación.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2398b63b8cd52784252cfc764bb6c6a30e1accc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4038a122c6d2ec5f6ed29df6e529b2bff2e2bb71
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709066"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329931"
 ---
 # <a name="create-project-types"></a>Crear tipos de proyecto
 Puede extender [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] mediante la creación de un nuevo tipo de proyecto. Para crear un nuevo tipo de proyecto, debe comprender varios conceptos y completar una serie de pasos. En los temas siguientes se proporciona información general sobre cómo crear tipos de proyecto.
