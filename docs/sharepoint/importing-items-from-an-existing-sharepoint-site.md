@@ -1,5 +1,7 @@
 ---
 title: Importación de elementos desde un sitio de SharePoint existente | Microsoft Docs
+description: Importe elementos desde un sitio de SharePoint existente con la plantilla de proyecto Importar paquete de solución de SharePoint, de manera que pueda reutilizar elementos en una nueva solución de SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9c2703bfdd4f47281a1fc19060cb69f8b312e7d2
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: ef77fb280021fcfb701a677bc9ce17ec26e39516
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95970515"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304515"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>Importación de elementos desde un sitio de SharePoint existente
   La plantilla de proyecto Importar paquete de solución de SharePoint permite reutilizar elementos, como tipos de contenido y campos de sitios de SharePoint existentes en una nueva [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] solución de SharePoint. Aunque puede ejecutar la mayoría de las soluciones importadas sin modificaciones, hay algunas restricciones y aspectos a tener en cuenta, sobre todo si se modifican los elementos después de importarlos.

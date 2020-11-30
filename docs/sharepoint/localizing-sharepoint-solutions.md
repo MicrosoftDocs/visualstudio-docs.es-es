@@ -1,5 +1,7 @@
 ---
 title: Localización de soluciones de SharePoint | Microsoft Docs
+description: Localice soluciones de SharePoint quitando las cadenas codificadas de forma rígida del código y abstrayéndolas en archivos de recursos basados en XML (.resx) que contienen cadenas traducidas.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0a7b04ab1f77eba15f2bc617f89514a8d0952674
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16cb372e5acf719d3edc79f081cff6f4b0396b6a
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017148"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304270"
 ---
 # <a name="localize-sharepoint-solutions"></a>Localización de soluciones de SharePoint
 

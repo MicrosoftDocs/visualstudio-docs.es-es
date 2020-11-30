@@ -1,5 +1,7 @@
 ---
 title: Empaquetado e implementación de soluciones de SharePoint | Microsoft Docs
+description: Empaquete e implemente soluciones de SharePoint, que se implementan en un servidor de SharePoint mediante un archivo de paquete de solución (.wsp).
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9a4bf3394cf47b4f355fbe6a330ff5374e2da1c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd06a5be3c9e7ceea38bdb4560f8b6262175bd45
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015602"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305081"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>Empaquetado e implementación de soluciones de SharePoint
   Normalmente, una solución de SharePoint se implementa en un servidor de SharePoint mediante un archivo de paquete de solución (.wsp). Puede usar Visual Studio para organizar los elementos de proyecto de SharePoint en características y crear un paquete para implementar las características de SharePoint.
