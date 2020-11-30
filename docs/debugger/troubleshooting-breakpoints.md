@@ -25,7 +25,7 @@ En las dos secciones siguientes se describen las advertencias destacadas y cómo
 
 ### <a name="no-symbols-have-been-loaded-for-this-document"></a>"No se ha cargado ningún símbolo para este documento"
 
-Vaya a la ventana **Módulos** (**Depurar** > **Windows** > **Módulos**) y compruebe si el módulo está cargado.
+Vaya a la ventana **Módulos** (**Depurar** > **Ventanas** > **Módulos**) y compruebe si el módulo está cargado.
 * Si el módulo está cargado, compruebe la columna **Estado de símbolos** para ver si se han cargado los símbolos.
   * Si no se cargan los símbolos, compruebe el estado del símbolo para diagnosticar el problema. En el menú contextual de un módulo de la ventana **Módulos**, haga clic en **Información de carga de símbolos...** para ver dónde el depurador ha intentado probar y cargar símbolos. Para más información sobre la carga de símbolos, vea [Especificación de archivos de código fuente y símbolos (.pdb)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
   * Si se cargan los símbolos, el archivo PDB no contiene información sobre los archivos de código fuente. Estas causas principales pueden ser varias:
@@ -35,7 +35,7 @@ Vaya a la ventana **Módulos** (**Depurar** > **Windows** > **Módulos**) y comp
 
 * Si el módulo no está cargado, compruebe lo siguiente para encontrar la causa:
   * Confirme que está depurando el proceso correcto.
-  * Compruebe que está depurando el tipo de código correcto. Puede averiguar el tipo de código en el que está configurado el depurador para depurar en la ventana **Procesos** (**Depurar** > **Windows** > **Procesos**). Por ejemplo, si intenta depurar código de C#, confirme que el depurador está configurado para el tipo y la versión adecuados de .NET; por ejemplo, Administrado (v4\*) frente a Administrado (v2\*/v3\*) en lugar de Administrado (CoreCLR).
+  * Compruebe que está depurando el tipo de código correcto. Puede averiguar el tipo de código en el que está configurado el depurador para depurar en la ventana **Procesos** (**Depurar** > **Ventanas** > **Procesos**). Por ejemplo, si intenta depurar código de C#, confirme que el depurador está configurado para el tipo y la versión adecuados de .NET; por ejemplo, Administrado (v4\*) frente a Administrado (v2\*/v3\*) en lugar de Administrado (CoreCLR).
 
 ### <a name="-the-current-source-code-is-different-from-the-version-built-into"></a>"… el código fuente actual es distinto al de la versión compilada en..."
 
