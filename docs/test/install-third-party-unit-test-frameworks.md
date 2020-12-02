@@ -1,5 +1,7 @@
 ---
 title: Instalar marcos de prueba unitaria de terceros
+description: El Explorador de pruebas de Visual Studio puede ejecutar pruebas de cualquier marco de pruebas unitarias que haya desarrollado una interfaz de adaptador para él.
+ms.custom: SEO-VS-2020
 ms.date: 07/09/2020
 ms.topic: how-to
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: c274f203b9bf2746716c0625c61141aaa332977a
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: e6433d665157c186a390e2963ef7ad1447b2f982
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86387192"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329983"
 ---
 # <a name="install-unit-test-frameworks"></a>Instalación de marcos de pruebas unitarias
 

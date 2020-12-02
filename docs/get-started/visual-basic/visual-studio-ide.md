@@ -15,11 +15,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 990bff2832f290987ed29fd48b69f4d7a1a05bba
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901575"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189893"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Le damos la bienvenida al IDE de Visual Studio | Visual Basic
 

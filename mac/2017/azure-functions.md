@@ -8,11 +8,11 @@ ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
 ms.topic: how-to
 ms.openlocfilehash: 009df6525696405914aeeb224e3817bbfbe27155
-ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89402631"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189802"
 ---
 # <a name="introduction-to-azure-functions"></a>Introducción a Azure Functions
 
@@ -87,7 +87,7 @@ Las plantillas de función permiten crear rápidamente nuevas funciones mediante
 
     En la sección [Plantillas de función disponibles](#available-function-templates) se proporciona una lista de las plantillas Azure Function.
 
-Puede usar el procedimiento anterior para agregar más funciones a su proyecto de Function App. Cada función del proyecto puede tener un desencadenador diferente, pero una función debe tener exactamente un desencadenador. Para más información, vea [Conceptos básicos sobre los enlaces y desencadenadores de Azure Functions](/azure/azure-functions/functions-triggers-bindings).
+Puede usar el procedimiento anterior para agregar más funciones a su proyecto de Function App. Cada función del proyecto puede tener un desencadenador diferente, pero una función no puede tener más de un desencadenador. Para más información, vea [Conceptos básicos sobre los enlaces y desencadenadores de Azure Functions](/azure/azure-functions/functions-triggers-bindings).
 
 ## <a name="publish-to-azure"></a>Publicar en Azure
 

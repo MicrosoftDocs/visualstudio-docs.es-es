@@ -16,17 +16,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 07f0312892d9f4f4073cf6fb2c9537ffa52a6267
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436352"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970075"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Procedimiento para ampliar el proceso de compilación de Visual Studio
 
-El proceso de compilación de Visual Studio se define mediante una serie de archivos *.targets* de MSBuild que se importan en el archivo de proyecto. Uno de estos archivos importados, *Microsoft.Common.targets* , se puede extender para que pueda ejecutar tareas personalizadas en varios puntos del proceso de compilación. En este artículo se explican dos métodos que puede usar para extender el proceso de compilación de Visual Studio:
+El proceso de compilación de Visual Studio se define mediante una serie de archivos *.targets* de MSBuild que se importan en el archivo de proyecto. Uno de estos archivos importados, *Microsoft.Common.targets*, se puede extender para que pueda ejecutar tareas personalizadas en varios puntos del proceso de compilación. En este artículo se explican dos métodos que puede usar para extender el proceso de compilación de Visual Studio:
 
-- Reemplazar destinos predefinidos específicos definidos en los destinos comunes ( *Microsoft.Common.targets* o los archivos que importa).
+- Reemplazar destinos predefinidos específicos definidos en los destinos comunes (*Microsoft.Common.targets* o los archivos que importa).
 
 - Reemplazar las propiedades "DependsOn" definidas en los destinos comunes.
 
@@ -35,7 +35,7 @@ El proceso de compilación de Visual Studio se define mediante una serie de arc
 Los destinos comunes contienen un conjunto de destinos vacíos predefinidos al que se llama antes y después de algunos de los destinos principales del proceso de compilación. Por ejemplo, MSBuild llama al destino `BeforeBuild` antes del destino `CoreBuild` principal y al destino `AfterBuild` después del destino `CoreBuild`. De forma predeterminada, los destinos vacíos de los destinos comunes no hacen nada, pero puede reemplazar su comportamiento predeterminado si define los destinos que quiere en un archivo de proyecto que importa los destinos comunes. Al reemplazar los destinos predefinidos, puede usar tareas de MSBuild para tener más control sobre el proceso de compilación.
 
 > [!NOTE]
-> Los proyectos de estilo de SDK tienen una importación implícita de destinos *después de la última línea del archivo del proyecto* . Esto significa que no se pueden reemplazar los destinos predeterminados a menos que se especifiquen las importaciones manualmente, tal como se describe en [Cómo: usar SDK de proyecto de MSBuild](how-to-use-project-sdk.md).
+> Los proyectos de estilo de SDK tienen una importación implícita de destinos *después de la última línea del archivo del proyecto*. Esto significa que no se pueden reemplazar los destinos predeterminados a menos que se especifiquen las importaciones manualmente, tal como se describe en [Cómo: usar SDK de proyecto de MSBuild](how-to-use-project-sdk.md).
 
 #### <a name="to-override-a-predefined-target"></a>Para reemplazar un destino predefinido
 
@@ -71,7 +71,7 @@ En la tabla siguiente se muestran todos los destinos incluidos en los destinos c
 
 ## <a name="example-aftertargets-and-beforetargets"></a>Ejemplo: BeforeTargets y AfterTargets
 
-En el ejemplo siguiente se muestra cómo usar el atributo `AfterTargets` para agregar un destino personalizado que realice una acción en los archivos de salida. En este caso, copia los archivos de salida en una nueva carpeta *CustomOutput* .  En el ejemplo también se muestra cómo limpiar los archivos creados por la operación de compilación personalizada con un destino `CustomClean` mediante un atributo `BeforeTargets` y especificando que la operación de limpieza personalizada se ejecuta antes que el destino de `CoreClean`.
+En el ejemplo siguiente se muestra cómo usar el atributo `AfterTargets` para agregar un destino personalizado que realice una acción en los archivos de salida. En este caso, copia los archivos de salida en una nueva carpeta *CustomOutput*.  En el ejemplo también se muestra cómo limpiar los archivos creados por la operación de compilación personalizada con un destino `CustomClean` mediante un atributo `BeforeTargets` y especificando que la operación de limpieza personalizada se ejecuta antes que el destino de `CoreClean`.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

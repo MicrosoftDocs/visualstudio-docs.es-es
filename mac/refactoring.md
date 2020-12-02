@@ -7,11 +7,11 @@ ms.date: 07/03/2020
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.custom: video
 ms.openlocfilehash: 3892117e5c84a71f258d4e019105fca0a8cf9c5b
-ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89402601"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189243"
 ---
 # <a name="refactoring"></a>Refactoring
 

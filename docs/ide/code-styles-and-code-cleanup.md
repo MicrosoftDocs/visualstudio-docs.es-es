@@ -13,11 +13,11 @@ f1_keywords:
 ms.workload:
 - multiple
 ms.openlocfilehash: 9172fff2dde1528c5ea382aea996d316e0738ea0
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006684"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189750"
 ---
 # <a name="code-style-preferences"></a>Preferencias de estilo del código
 

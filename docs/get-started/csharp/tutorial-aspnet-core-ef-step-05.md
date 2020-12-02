@@ -17,11 +17,11 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: fc0729eccc6f1392561959dcdac0cf13dfc8e04a
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91780956"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189763"
 ---
 # <a name="step-5-deploy-your-aspnet-core-app-to-azure"></a>Paso 5: Implementación de la aplicación de ASP.NET Core en Azure
 

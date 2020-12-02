@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0bd8f90c586366a298ba96009dfe5d87a042141b
-ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92918115"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970300"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Ejecutar herramientas de generación de perfiles con o sin el depurador
 
@@ -39,11 +39,11 @@ Para ayudarlo a decidir qué herramientas y resultados debe utilizar, tenga en c
 
 ## <a name="collect-profiling-data-while-debugging"></a><a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Recopilar datos de generación de perfiles durante la depuración
 
-Al comenzar la depuración en Visual Studio seleccionando **Depurar** > **Iniciar depuración** o presionando **F5** , la ventana **Herramientas de diagnóstico** aparece de forma predeterminada. Para abrirla manualmente, seleccione **Depurar** > **Ventanas** > **Mostrar herramientas de diagnóstico**. En la ventana **Herramientas de diagnóstico** se muestra información sobre el uso de CPU, la memoria de proceso y los eventos.
+Al comenzar la depuración en Visual Studio seleccionando **Depurar** > **Iniciar depuración** o presionando **F5**, la ventana **Herramientas de diagnóstico** aparece de forma predeterminada. Para abrirla manualmente, seleccione **Depurar** > **Ventanas** > **Mostrar herramientas de diagnóstico**. En la ventana **Herramientas de diagnóstico** se muestra información sobre el uso de CPU, la memoria de proceso y los eventos.
 
 ![Instantánea de la ventana Herramientas de diagnóstico](../profiling/media/diagnostictoolswindow.png "Ventana Herramientas de diagnóstico")
 
-- Use el icono **Configuración** en la barra de herramientas para seleccionar si quiere ver el **Uso de memoria** , el **Análisis de UI** , y el **Uso de CPU**.
+- Use el icono **Configuración** en la barra de herramientas para seleccionar si quiere ver el **Uso de memoria**, el **Análisis de UI**, y el **Uso de CPU**.
 
 - Seleccione **Configuración** en la lista desplegable **Configuración** para abrir las **páginas de propiedades de las Herramientas de diagnóstico** con más opciones.
 
@@ -58,7 +58,7 @@ Para obtener más información, consulte:
 
 ### <a name="the-events-tab"></a>La pestaña Eventos
 
-Durante una sesión de depuración, en la pestaña Eventos de la ventana Herramientas de diagnóstico se enumeran los eventos de diagnóstico que se producen. Los prefijos de categoría: *Punto de interrupción* , *Archivo* y otros, le permiten examinar rápidamente la lista en busca de una categoría u omitir las categorías que no le interesan.
+Durante una sesión de depuración, en la pestaña Eventos de la ventana Herramientas de diagnóstico se enumeran los eventos de diagnóstico que se producen. Los prefijos de categoría: *Punto de interrupción*, *Archivo* y otros, le permiten examinar rápidamente la lista en busca de una categoría u omitir las categorías que no le interesan.
 
 Use la lista desplegable **Filtro** para filtrar los eventos dentro y fuera de la vista activando o desactivando categorías de eventos concretas.
 
@@ -74,9 +74,9 @@ Para más información, consulte [Búsqueda y filtrado de la pestaña Eventos de
 
 Para recopilar datos de rendimiento sin depuración, puede ejecutar las herramientas del Generador de perfiles de rendimiento.
 
-1. Con un proyecto abierto en Visual Studio, establezca la configuración de la solución en **Versión** y seleccione **Depurador local de Windows** (o **Equipo local** ) como el destino de implementación.
+1. Con un proyecto abierto en Visual Studio, establezca la configuración de la solución en **Versión** y seleccione **Depurador local de Windows** (o **Equipo local**) como el destino de implementación.
 
-1. Seleccione **Depurar** > **Generador de perfiles de rendimiento** , o bien presione **Alt**+**F2**.
+1. Seleccione **Depurar** > **Generador de perfiles de rendimiento**, o bien presione **Alt**+**F2**.
 
 1. En la página de inicio de las herramientas de diagnóstico, elija una o varias herramientas para ejecutar. Solo se muestran las herramientas que se pueden aplicar para el tipo de proyecto, el sistema operativo y el lenguaje de programación. Haga clic en **Mostrar todas las herramientas** para ver también herramientas que están deshabilitadas para esta sesión de diagnóstico.
 
