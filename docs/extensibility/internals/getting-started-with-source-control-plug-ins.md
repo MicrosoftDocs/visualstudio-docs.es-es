@@ -1,5 +1,7 @@
 ---
 title: Introducción con complementos de control de código fuente | Microsoft Docs
+description: Obtenga información sobre cómo crear un complemento de control de código fuente que implemente las funciones definidas en la API del complemento de control de código fuente para su uso en el control de versiones de código fuente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: efc21e07830614d9d3041b2d2d231fd82c652114
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1524e4c4f08b272fd17973597d558efdabec41af
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708343"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480504"
 ---
 # <a name="get-started-with-source-control-plug-ins"></a>Introducción a los complementos de control de código fuente
 Para crear un complemento de control de código fuente, debe crear un archivo DLL que implemente las funciones definidas en la API del complemento de control de código fuente y, a continuación, registrar el archivo DLL con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para que esté disponible para su uso en el control de versiones de código fuente.

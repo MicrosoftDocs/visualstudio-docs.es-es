@@ -1,5 +1,7 @@
 ---
 title: Comentarios al usuario | Microsoft Docs
+description: Obtenga información sobre cómo proporcionar comentarios visuales al usuario sobre la funcionalidad disponible en el entorno de desarrollo integrado (IDE) de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46b9190b16b9aa444384847bf209ccca50c7f768
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d8f3f79a61729a641ee7c046ddd196a648469fb3
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708412"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480530"
 ---
 # <a name="feedback-to-the-user"></a>Comentarios al usuario
 En el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] entorno de desarrollo integrado (IDE), los comentarios visuales sobre la funcionalidad disponible se basan en la selección actual del usuario y en el contexto de selección global. En la tabla siguiente se enumeran las funciones que están disponibles en diferentes contextos de selección.

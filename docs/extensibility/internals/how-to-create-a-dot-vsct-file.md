@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: crear un. Archivo Vsct | Microsoft Docs'
+description: Obtenga información sobre cómo crear manualmente un archivo. Vsct, un archivo de configuración de tabla de comandos de Visual Studio basado en XML.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a571098deeeca0e8262d855c24d0bf1ce66be08e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 47d38e68494f29947131bcc8ce3a2a59b2e8d48b
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905526"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480374"
 ---
 # <a name="how-to-create-a-vsct-file"></a>Cómo: crear un archivo. Vsct
 
@@ -35,7 +37,7 @@ Hay varias maneras de crear un archivo de configuración de tabla de comandos de
 
 1. Inicie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
-2. En el menú **Archivo** , elija **Nuevo**y haga clic en **Archivo**.
+2. En el menú **Archivo** , elija **Nuevo** y haga clic en **Archivo**.
 
 3. En el panel **plantillas** , haga clic en **archivo XML** y, a continuación, haga clic en **abrir**.
 
@@ -61,7 +63,7 @@ Puede crear un archivo *. Vsct* basado en XML a partir de un archivo de origen d
 
 1. Obtenga una copia del lenguaje Perl.
 
-2. Obtenga una copia del script Perl *ConvertCTCToVSCT.pl*, que normalmente se encuentra en la carpeta * \<Visual Studio SDK installation path> \VisualStudioIntegration\Tools\bin* .
+2. Obtenga una copia del script Perl *ConvertCTCToVSCT.pl*, que normalmente se encuentra en la carpeta *\<Visual Studio SDK installation path> \VisualStudioIntegration\Tools\bin* .
 
 3. Obtenga una copia del archivo de origen *. CTC* que desea convertir.
 
@@ -138,7 +140,7 @@ Puede crear un archivo *. Vsct* basado en XML a partir de un archivo *. CTO* bin
 
      Este marcado debe ir dentro del `ItemGroup` elemento que contiene recursos incrustados.
 
-4. Abra el archivo de paquete, normalmente denominado * \<ProjectName\> Package.CS* o * \<ProjectName\> Package. VB*, en el editor.
+4. Abra el archivo de paquete, normalmente denominado *\<ProjectName\> Package.CS* o *\<ProjectName\> Package. VB*, en el editor.
 
 5. Agregue un `ProvideMenuResource` atributo a la clase de paquete, como se muestra en el ejemplo siguiente.
 

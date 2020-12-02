@@ -1,5 +1,7 @@
 ---
 title: Administrar la implementación especializada | Microsoft Docs
+description: Obtenga información sobre cómo administrar la implementación especializada de un proyecto de aplicación en Visual Studio. Por ejemplo, una implementación en un servidor web o un dispositivo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 972965c3565088af8205d6f7903d7098e568c057
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 664625cd8737fb9a9a3e398716d750d6d9665529
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708219"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480439"
 ---
 # <a name="handle-specialized-deployment"></a>Administrar la implementación especializada
 Una implementación es una operación opcional para los proyectos de. Un proyecto Web, por ejemplo, admite una implementación para permitir que un proyecto actualice un servidor Web. Del mismo modo, un proyecto de **Smart Device** admite una implementación para copiar una aplicación compilada en el dispositivo de destino. Los subtipos de proyecto pueden proporcionar un comportamiento de implementación especializado implementando la <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> interfaz. Esta interfaz define un conjunto completo de las operaciones de implementación:
@@ -289,5 +291,5 @@ Una implementación es una operación opcional para los proyectos de. Un proyect
 > [!NOTE]
 > Todos los ejemplos de código que se proporcionan en este tema son partes de un ejemplo más extenso en [ejemplos de VSSDK](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Subtipos de proyecto](../../extensibility/internals/project-subtypes.md)

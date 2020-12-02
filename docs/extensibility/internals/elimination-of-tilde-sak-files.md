@@ -1,5 +1,7 @@
 ---
 title: Eliminación de archivos ~ SAK | Microsoft Docs
+description: Obtenga información sobre la eliminación de archivos ~ SAK de la API de control de código fuente 1,2 y cómo se han reemplazado por marcas de funcionalidad y nuevas funciones.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0294198bb1560f8df6f17170013f88d4fe11e5cf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e846354b2d48b2f7866daa14987e757f41779c8
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708498"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480517"
 ---
 # <a name="elimination-of-sak-files"></a>Eliminación de archivos ~ SAK
 En la API 1,2 del complemento de control de código fuente, los archivos *~ Sak* se han reemplazado por marcas de funcionalidad y nuevas funciones que detectan si un complemento de control de código fuente admite el archivo *MSSCCPRJ* y las desprotecciones compartidas.
@@ -45,7 +47,7 @@ En el caso de los complementos que admiten funciones avanzadas proporcionadas en
 
  Si un complemento de control de código fuente admite la creación y el uso de un archivo *MSSCCPRJ. SCC* , declara la `SCC_CAP_SCCFILE` funcionalidad e implementa [SccWillCreateSccFile](../../extensibility/sccwillcreatesccfile-function.md). Se llama a esta función con una lista de archivos. La función devuelve `TRUE' or 'FALSE` para cada archivo para indicar si Visual Studio debe utilizar un archivo *MSSCCPRJ. SCC* para él. Si el complemento de control de código fuente opta por no admitir estas nuevas funciones y funciones, puede usar la siguiente clave del registro para deshabilitar la creación de estos archivos:
 
- **[HKEY_CURRENT_USER \software\microsoft\visualstudio\8.0\sourcecontrol] DoNotCreateTemporaryFilesInSourceControl**  =  *DWORD: 00000001*
+ **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl]DoNotCreateTemporaryFilesInSourceControl**  =  *DWORD: 00000001*
 
 > [!NOTE]
 > Si esta clave del registro se establece en *DWORD: 00000000*, es equivalente a la clave que no existe y Visual Studio sigue intentando crear los archivos temporales. Sin embargo, si la clave del registro se establece en *DWORD: 00000001*, Visual Studio no intenta crear los archivos temporales. En su lugar, supone que el complemento de control de código fuente no admite el archivo *MSSCCPRJ. SCC* y no admite desprotecciones compartidas.

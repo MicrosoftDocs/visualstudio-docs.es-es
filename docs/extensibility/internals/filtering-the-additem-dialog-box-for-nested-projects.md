@@ -1,5 +1,7 @@
 ---
 title: Filtrar el cuadro de diálogo AddItem para proyectos anidados | Microsoft Docs
+description: Obtenga información sobre cómo filtrar el cuadro de diálogo AddItem para un proyecto anidado en Visual Studio implementando la interfaz IVsFilterAddProjectItemDlg del proyecto primario.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2bc97b6041f4844ff71fe1d38a7103e1219888be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 02d574007250960e3cb0b39bf50696f03af98e27
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708377"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480466"
 ---
 # <a name="filter-the-additem-dialog-box-for-nested-projects"></a>Filtrar el cuadro de diálogo AddItem para proyectos anidados
 Cuando se muestra un cuadro de diálogo **AddItem** para un proyecto anidado, el proyecto primario puede controlar qué elementos se muestran en el cuadro de diálogo.
