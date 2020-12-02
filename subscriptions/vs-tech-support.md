@@ -44,7 +44,7 @@ Descripciones de nivel de producto: Expanda **Planes de soporte técnico no disp
 ## <a name="how-to-activate-the-benefit"></a>Cómo activar la ventaja
 1. Vaya a <https://my.visualstudio.com/Benefits>, baje hasta la sección de soporte técnico y haga clic en **Chat para activar** en el icono de soporte técnico.
     > [!div class="mx-imgBorder"]
-    > ![Icono de la ventaja de soporte técnico](_img/vs-tech-support/vs-tech-support-tile.png "Haga clic en "Chat to activate" (Chat para activar) en el icono Soporte técnico.")
+    > ![Icono de la ventaja de soporte técnico](_img/vs-tech-support/vs-tech-support-tile.png "Haga clic en Chat to activate (Chat para activar) en el icono Soporte técnico.")
 2. De esta manera se inicia una sesión de chat con un representante que puede crear el **identificador de contrato** y el **identificador de acceso** y proporcionárselos a través del correo electrónico para que los tenga en sus registros.
 
 3. Para completar el proceso, deberá proporcionar al representante la siguiente información:

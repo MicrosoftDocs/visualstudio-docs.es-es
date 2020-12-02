@@ -20,7 +20,7 @@ Colabore con su equipo en la nube.  Cree varias suscripciones Desarrollo/pruebas
 ## <a name="set-up-a-subscription"></a>Configuración de una suscripción
 1. Para usar la ventaja para suscripción Pago por uso de Azure, inicie sesión en [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) y haga clic en el vínculo **Activar** situado en la parte inferior del icono de la ventaja.
    > [!div class="mx-imgBorder"]
-   > ![Icono de Azure PAYG](_img/vs-azure-payg/vs-azure-payg-tile.png "Haga clic en "Activar" en el icono de la suscripción de Pago por uso de DevTest para comenzar.")
+   > ![Icono de Azure PAYG](_img/vs-azure-payg/vs-azure-payg-tile.png "Haga clic en Activar en el icono de la suscripción de Pago por uso de DevTest para comenzar.")
 
 2. Si ya ha activado una cuenta de Azure como parte de las ventajas de la suscripción (por ejemplo, si tiene una suscripción Enterprise y ha activado el crédito individual mensual de Azure DevTest de 150 dólares de Azure), vaya al paso 5.
 
@@ -32,7 +32,7 @@ Colabore con su equipo en la nube.  Cree varias suscripciones Desarrollo/pruebas
 
 6. En la sección Contrato, haga clic en la casilla de verificación para aceptar el contrato de suscripción, los detalles de la oferta y la declaración de privacidad, y luego en **Adquirir**.
 
-7. En la página **Bienvenido a Microsoft Azure** , tendrá la opción de adquirir un plan de soporte técnico o empezar a usar su suscripción.
+7. En la página **Bienvenido a Microsoft Azure**, tendrá la opción de adquirir un plan de soporte técnico o empezar a usar su suscripción.
 
 8. Si elige empezar a usar su suscripción, verá [Microsoft Azure Portal](https://portal.azure.com) y, si es la primera vez que lo visita, se le ofrecerá un paseo introductorio por algunas de las características.  Una vez finalizado el paseo, o si ha decidido no realizarlo, verá el panel.  Ya puede comenzar a utilizar Azure.
 
