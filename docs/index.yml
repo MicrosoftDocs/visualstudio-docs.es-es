@@ -4,7 +4,7 @@ summary: Explore la documentación de la familia de productos de Visual Studio.
 brand: visual-studio
 metadata:
   title: Documentación de la familia de productos de Visual Studio
-  description: Explore la documentación de la familia de productos de Visual Studio.
+  description: Explore la documentación de la familia de productos de Visual Studio, incluidos los IDE de Visual Studio para Windows y Mac, Visual Studio Code, Visual Studio App Center, Codespaces de GitHub y Suscripciones de Visual Studio.
   ms.topic: hub-page
   ms.custom: contperfq1
   ms.date: 10/22/2020
@@ -15,12 +15,12 @@ metadata:
   ms.manager: jillfra
   monikerRange: '>=vs-2017'
   hide_bc: true
-  ms.openlocfilehash: ddddea310637a4afd96210441e0c842aaed18c00
-  ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+  ms.openlocfilehash: 2396ca63847bfcd9f6a3fea995abb7a40bcf98b6
+  ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/06/2020
-  ms.locfileid: "93414534"
+  ms.lasthandoff: 12/03/2020
+  ms.locfileid: "96560842"
 productDirectory:
   items:
   - title: Programa para la mejora

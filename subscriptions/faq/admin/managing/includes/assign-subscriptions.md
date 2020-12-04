@@ -6,13 +6,13 @@ ms.topic: include
 ms.assetid: 59eb35fd-ec94-41ce-b24c-a8a120976bac
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 09/30/2020
-ms.openlocfilehash: add0bac2a9e7eb053c183d66fcee17c8133bb921
-ms.sourcegitcommit: 593bdd2da62633f8d1f1eef70d0238e2682f3e02
+ms.date: 12/03/2020
+ms.openlocfilehash: 5a12d59f90ee2a09002efcb99c78cfd563060006
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "91838398"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96584566"
 ---
 ## <a name="how-do-i-assign-visual-studio-subscriptions"></a>¿Cómo se asignan las suscripciones de Visual Studio?
 
@@ -39,11 +39,11 @@ Para asignar suscripciones en masa:
 4. Vuelva a [manage.visualstudio.com](https://manage.visualstudio.com), seleccione Agregar en masa y cargue la copia guardada de la plantilla de Excel.
 5. Cuando la carga se realice correctamente, verá una página de confirmación y la lista de suscriptores se rellenará con los nuevos suscriptores. Los suscriptores recibirán un correo electrónico y podrán empezar a usar inmediatamente su suscripción de Visual Studio (no tienen que realizar ninguna activación).
 
-[Obtenga más información](https://docs.microsoft.com/visualstudio/subscriptions/assign-license#add-a-single-subscriber) sobre la asignación de suscripciones en el portal de administrador de suscripciones de Visual Studio para saber más sobre cómo asignar suscripciones de forma rápida y sencilla.  [Obtenga más información](https://docs.microsoft.com/visualstudio/subscriptions/assign-github) sobre cómo administrar suscripciones de Visual Studio con GitHub Enterprise. 
+[Obtenga más información](https://docs.microsoft.com/visualstudio/subscriptions/assign-license#add-a-single-subscriber) sobre la asignación de suscripciones en el portal de administrador de suscripciones de Visual Studio para saber más sobre cómo asignar suscripciones de forma rápida y sencilla.  Obtenga [más información](https://docs.microsoft.com/visualstudio/subscriptions/assign-github) sobre la administración de suscripciones de Visual Studio con GitHub Enterprise. 
 
 ## <a name="what-is-the-github-enterprise-setup-process"></a>¿Qué es el proceso de configuración de GitHub Enterprise? 
 
-GitHub Enterprise se configura y se administra de forma independiente de las suscripciones de Visual Studio. Después de comprar Visual Studio con GitHub Enterprise, se inicia un proceso de configuración de cuenta de GitHub Enterprise en paralelo con el establecimiento de un contrato en manage.visualstudio.com, pero de forma independiente de este. El establecimiento de esta cuenta de GitHub Enterprise puede tardar un tiempo.  
+GitHub Enterprise se configura y se administra de forma independiente de las suscripciones de Visual Studio. Tras una compra de una suscripción a Visual Studio con GitHub Enterprise, se inicia un proceso de configuración de cuenta de GitHub Enterprise en paralelo al establecimiento de un contrato en manage.visualstudio.com, pero de forma independiente a este. El establecimiento de esta cuenta de GitHub Enterprise puede tardar un tiempo.  
 
 Una vez que la empresa ha configurado una cuenta de GitHub Enterprise, los suscriptores a los que se les hayan asignado suscripciones de Visual Studio con GitHub Enterprise recibirán un correo electrónico de GitHub en el que se les notificará que sus suscripciones de Visual Studio se han vinculado. Después de que los suscriptores reciban este correo electrónico, podrán ponerse en contacto con el administrador de la organización de GitHub para recibir una invitación a la organización adecuada. 
 
