@@ -1,5 +1,7 @@
 ---
 title: Modos operativos | Microsoft Docs
+description: Obtenga información sobre los tres modos en los que el IDE puede operar, que son el modo de diseño, el modo de ejecución y el modo de interrupción.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 027152b2b2fc18b509a687220e5d963ea1b7e721
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cabf32dcbe8b4d2e925bcfd48635063ecd0a5b74
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738284"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606611"
 ---
 # <a name="operational-modes"></a>Modos operativos
 Hay tres modos en los que el IDE puede funcionar, como se indica a continuación:
@@ -54,5 +56,5 @@ Hay tres modos en los que el IDE puede funcionar, como se indica a continuación
 
  Cuando el programa se recorre correctamente en la siguiente línea de código o en una función, o se ejecuta hasta el cursor o hasta un punto de interrupción establecido, el DE realiza la transición automáticamente al modo DE interrupción.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Control de la ejecución](../../extensibility/debugger/control-of-execution.md)

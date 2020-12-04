@@ -1,5 +1,7 @@
 ---
 title: Datos adjuntos basados en el inicio | Microsoft Docs
+description: Obtenga información sobre los datos adjuntos basados en el inicio de un programa, que es automático y sigue una ruta de acceso como la de los datos adjuntos manuales.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4910a97350366500b56593ec0076fdf0990b6d8f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e041c692a833b7d0a1891c078388a3f5b2d11e4
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738461"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606676"
 ---
 # <a name="launch-based-attachment"></a>Datos adjuntos basados en el inicio
 Los datos adjuntos basados en el inicio de un programa son automáticos. Cuando el SDM inicia el proceso que hospeda el programa, los datos adjuntos basados en el inicio siguen una ruta de acceso similar a la del método de datos adjuntos manuales. Para obtener más información, vea [adjuntar al programa](../../extensibility/debugger/attaching-to-the-program.md).
@@ -32,6 +34,6 @@ Los datos adjuntos basados en el inicio de un programa son automáticos. Cuando 
 
 4. Envíe un objeto de evento [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) para notificar al SDM que se crea un nuevo subproceso para el proceso que inició.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Enviar los eventos necesarios](../../extensibility/debugger/sending-the-required-events.md)
 - [Habilitar la depuración de un programa](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

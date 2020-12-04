@@ -1,5 +1,7 @@
 ---
 title: Interfaces (depuración de Visual Studio) | Microsoft Docs
+description: Use estos recursos para obtener información sobre las interfaces principales, las interfaces de evaluación de expresiones y las interfaces del proveedor de símbolos en la depuración de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d31eb6900841dee9d2675e87bac573b432ff2acb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 508cf5d324a62b0ada056fe0c2495ff97334b8cf
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80715080"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606572"
 ---
 # <a name="interfaces-visual-studio-debugging"></a>Interfaces (depuración de Visual Studio)
 Los métodos se muestran en orden alfabético en cada interfaz de la tabla de contenido y en la página de la interfaz en orden vtable.
@@ -38,5 +40,5 @@ Los métodos se muestran en orden alfabético en cada interfaz de la tabla de co
 
  Contiene documentación sobre las interfaces, los enumeradores y las estructuras del [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] SDK de depuración.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Referencia de API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

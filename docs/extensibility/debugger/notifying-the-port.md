@@ -1,5 +1,7 @@
 ---
 title: Notificar el puerto | Microsoft Docs
+description: Obtenga información acerca de cómo se notifica el puerto después de iniciar un programa. Este artículo contiene una descripción detallada.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff94c20969e77bcc70af2f5a16137e09366a0d7d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e9a838879e7c1eb590bb16cd12a6bf345de8031a
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738316"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606624"
 ---
 # <a name="notify-the-port"></a>Notificar el puerto
 Después de iniciar un programa, el puerto debe recibir una notificación, como se indica a continuación:
@@ -44,7 +46,7 @@ Después de iniciar un programa, el puerto debe recibir una notificación, como 
 
  Una vez que se conoce la identidad de de, el SDM está listo para adjuntarlo al programa.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Iniciar un programa](../../extensibility/debugger/launching-a-program.md)
 - [Adjuntar después de un inicio](../../extensibility/debugger/attaching-after-a-launch.md)
 - [Tareas de depuración](../../extensibility/debugger/debugging-tasks.md)

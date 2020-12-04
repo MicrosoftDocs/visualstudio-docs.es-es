@@ -1,5 +1,7 @@
 ---
 title: INTERCEPT_EXCEPTION_ACTION | Microsoft Docs
+description: La enumeración INTERCEPT_EXCEPTION_ACTION especifica qué acción se debe realizar al interceptar excepciones en la depuración de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cc44a4fc5264566468777749d5732662ba81ed6d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e80ed1b17f98326701b0ca0aacb8e114c9b49db4
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80715066"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606448"
 ---
 # <a name="intercept_exception_action"></a>INTERCEPT_EXCEPTION_ACTION
 Especifica las acciones que se deben realizar al interceptar excepciones.
@@ -47,7 +49,7 @@ public enum enum_INTERCEPT_EXCEPTION_ACTION
 `IEA_INTERCEPT`\
 Habilita la interceptación de la excepción actual. Este es el único valor que se admite en la actualidad y debe especificarse.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 Estos valores se pasan al método [interceptcurrentexception (](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) .
 
 ## <a name="requirements"></a>Requisitos

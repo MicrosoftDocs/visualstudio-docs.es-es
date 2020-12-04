@@ -1,5 +1,7 @@
 ---
 title: Puertos | Microsoft Docs
+description: En este artículo se describe la definición y el rol de un puerto en la arquitectura del depurador de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b42e7fa97c12afa07923e99d8b084840ee7ccad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f13ca62f841525ef91ac7d66b67c09da54cabeb3
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738308"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606569"
 ---
 # <a name="ports"></a>Puertos
 En la arquitectura del depurador, un *Puerto*:
@@ -31,7 +33,7 @@ En la arquitectura del depurador, un *Puerto*:
 
   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] proporciona un puerto predeterminado que controla todos los procesos basados en Windows, tanto nativos como administrados. Se debe configurar un puerto personalizado para las conexiones con dispositivos externos que no estén basados en Windows. Para proporcionar estos puertos personalizados, también debe configurar un proveedor de Puerto personalizado.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Servidores](../../extensibility/debugger/servers-visual-studio-sdk.md)
 - [Procesos](../../extensibility/debugger/processes.md)
 - [Conceptos del depurador](../../extensibility/debugger/debugger-concepts.md)

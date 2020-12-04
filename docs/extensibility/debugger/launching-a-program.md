@@ -1,5 +1,7 @@
 ---
 title: Iniciar un programa | Microsoft Docs
+description: Obtenga información sobre la serie de eventos que tienen lugar al depurar un programa con F5 para ejecutar el depurador desde el IDE.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf638e0c96c7df1de2650260427a972a07efce23
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0dce13e49eeadf4dc02fec07707bebcfe164ed9c
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738479"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606702"
 ---
 # <a name="launch-a-program"></a>Iniciar un programa
 Los usuarios que deseen depurar un programa pueden presionar **F5** para ejecutar el depurador desde el IDE. Esto inicia una serie de eventos que, en última instancia, el IDE se conecta a un motor de depuración (DE) que, a su vez, se conecta o adjunta al programa de la siguiente manera:

@@ -1,5 +1,7 @@
 ---
 title: Módulos | Microsoft Docs
+description: En este artículo se describe la definición y el rol de un módulo en la arquitectura del depurador de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: abdf76c7f5f031d2ef7f3bcac2bae8a2c508b783
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 57202231c1bbfc7712d322b8cc7a30e3f64c87af
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738346"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606650"
 ---
 # <a name="modules"></a>Módulos
 En cuanto a la arquitectura del depurador, un *módulo*:
@@ -27,6 +29,6 @@ En cuanto a la arquitectura del depurador, un *módulo*:
 
 - Se representa mediante una interfaz [IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md) , creada por un motor de depuración para describir el módulo.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Conceptos del depurador](../../extensibility/debugger/debugger-concepts.md)
 - [IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md)

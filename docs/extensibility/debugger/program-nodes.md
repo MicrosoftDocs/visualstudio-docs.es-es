@@ -1,5 +1,7 @@
 ---
 title: Nodos de programa | Microsoft Docs
+description: En este artículo se describe la definición y el rol de un nodo de programa en la arquitectura del depurador de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2943f74c7316495be93c2f5c20998ffa685f5d01
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d2f3694eff6cd48cc01c0e244d3a068f3bb13fda
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738221"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606494"
 ---
 # <a name="program-nodes"></a>Nodos de programa
 En la arquitectura del depurador, un *nodo de programa*:
@@ -33,7 +35,7 @@ En la arquitectura del depurador, un *nodo de programa*:
 
   Antes de asociar un programa a, el IDE solo necesita una descripción ligera del programa. Esta información se puede obtener del nodo del programa. Una vez que el programa está asociado, el IDE muestra información más detallada, como una lista de todos los subprocesos que se ejecutan en el programa. Esta información se obtiene del propio programa.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Programs](../../extensibility/debugger/programs.md)
 - [Procesos](../../extensibility/debugger/processes.md)
 - [Motor de depuración](../../extensibility/debugger/debug-engine.md)

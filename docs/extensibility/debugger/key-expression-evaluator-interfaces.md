@@ -1,5 +1,7 @@
 ---
 title: Interfaces del evaluador de expresiones clave | Microsoft Docs
+description: Obtenga información sobre las interfaces que debe conocer al escribir un evaluador de expresiones, junto con el contexto de evaluación.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01527edac4000f0b2f7b89fdd507fc093f0d7734
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5693ebee96428b343da2bb14202ffef06fd6dd81
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738493"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606689"
 ---
 # <a name="key-expression-evaluator-interfaces"></a>Interfaces del evaluador de expresiones clave
 > [!IMPORTANT]
@@ -56,5 +58,5 @@ ms.locfileid: "80738493"
 
      Esta interfaz representa un valor y su tipo y es el resultado de una evaluación de expresión.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Contexto de evaluación](../../extensibility/debugger/evaluation-context.md)

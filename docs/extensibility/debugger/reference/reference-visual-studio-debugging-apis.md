@@ -1,5 +1,7 @@
 ---
 title: Referencia (API de depuración de Visual Studio) | Microsoft Docs
+description: El SDK de depuración de Visual Studio hace referencia al modelo básico de la arquitectura y la funcionalidad en tiempo de ejecución del depurador y sus componentes.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a85979c53d61d4b8d5a4f4b26d3ed3a1e19e952
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d281ad2f7df73a42835d0f0670a96af07e036d72
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713636"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606468"
 ---
 # <a name="reference-visual-studio-debugging-apis"></a>Referencia (API de depuración de Visual Studio)
 
@@ -35,6 +37,6 @@ Contiene documentación sobre las interfaces, los enumeradores y las estructuras
 
 Proporciona una lista de términos relacionados con la depuración y sus definiciones.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Extensibilidad del depurador de Visual Studio](../../../extensibility/debugger/visual-studio-debugger-extensibility.md)

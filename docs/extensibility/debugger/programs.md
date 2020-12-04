@@ -1,5 +1,7 @@
 ---
 title: Programas | Microsoft Docs
+description: En este artículo se describe la definición y el rol de un programa en la arquitectura del depurador de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3fd1db5add74d2d94467e1f369916feb5f30d4a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cf0d3adb174e9b13cb09f9506927217326890c32
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738209"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606520"
 ---
 # <a name="programs"></a>Programas
 En la arquitectura del depurador, un *programa*:
@@ -31,7 +33,7 @@ En la arquitectura del depurador, un *programa*:
 
 - Se representa mediante una interfaz [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) , creada antes de que se adjunte el programa o como parte del proceso de asociación, dependiendo de la implementación. Cuando un puerto enumera los programas de un proceso, cada programa se crea de acuerdo con la interfaz [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) correspondiente que se pasa como argumento a [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md). Aunque los motores de depuración también crean `IDebugProgram2` interfaces para representar programas, estos programas no se crean de acuerdo con un nodo de programa. Las `IDebugProgramNode2` interfaces creadas por un de se utilizan para la depuración real, mientras que las creadas por un puerto se utilizan únicamente para detectar los programas que se ejecutan en un proceso.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Procesos](../../extensibility/debugger/processes.md)
 - [Nodos de programa](../../extensibility/debugger/program-nodes.md)
 - [Módulos](../../extensibility/debugger/modules.md)

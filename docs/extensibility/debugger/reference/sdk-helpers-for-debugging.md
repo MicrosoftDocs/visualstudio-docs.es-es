@@ -1,5 +1,7 @@
 ---
 title: Aplicaciones auxiliares de SDK para la depuración | Microsoft Docs
+description: Obtenga información sobre las funciones y declaraciones que son funciones auxiliares globales para implementar motores de depuración, evaluadores de expresiones y proveedores de símbolos en C++.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9edb7c508fdea6736a71c0f70c0d2ff305d4a399
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 32d0dd7dbeee70b8c4eb566a07cf9a44d40d4f49
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713649"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606546"
 ---
 # <a name="sdk-helpers-for-debugging"></a>Asistentes de SDK para la depuración
 Estas funciones y declaraciones son funciones auxiliares globales para implementar motores de depuración, evaluadores de expresiones y proveedores de símbolos en C++.
@@ -414,7 +416,7 @@ HRESULT EnumMetricSections(
 |Marcador de posición|Descripción|
 |-----------------|-----------------|
 |*[GUID del motor de depuración]*|GUID de un motor de depuración que admite excepciones.|
-|*[tipos de excepción]*|Título general de la subclave que identifica la clase de excepciones que se puede controlar. Los nombres típicos son las **excepciones de C++**, las **excepciones de Win32**, las excepciones de **Common Language Runtime**y las **comprobaciones nativas en tiempo de ejecución**. Estos nombres también se usan para identificar una clase de excepción determinada para el usuario.|
+|*[tipos de excepción]*|Título general de la subclave que identifica la clase de excepciones que se puede controlar. Los nombres típicos son las **excepciones de C++**, las **excepciones de Win32**, las excepciones de **Common Language Runtime** y las **comprobaciones de Run-Time nativas**. Estos nombres también se usan para identificar una clase de excepción determinada para el usuario.|
 |*excepcional*|Un nombre para una excepción: por ejemplo, **_com_error** o **el salto de control**. Estos nombres también se usan para identificar una excepción determinada para el usuario.|
 
 ## <a name="requirements"></a>Requisitos
@@ -424,5 +426,5 @@ HRESULT EnumMetricSections(
 
  Biblioteca: libs\ad2de.lib, libs\dbgmetric.lib
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Referencia de API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)
