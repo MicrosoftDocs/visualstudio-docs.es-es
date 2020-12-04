@@ -1,5 +1,7 @@
 ---
 title: Implementar visualizadores de tipos y visores personalizados | Microsoft Docs
+description: Obtenga información sobre cómo implementar visualizadores de tipos y visores personalizados, que permiten a los usuarios ver los datos de una manera más significativa que un volcado de números.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2ebbb5c8e27df4ae4baf2d9a9f1c3314188e2b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc3b1f2510742e2d0656727826e5b4aeae935b6f
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738508"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559906"
 ---
 # <a name="implement-type-visualizers-and-custom-viewers"></a>Implementar visualizadores de tipos y visores personalizados
 > [!IMPORTANT]
@@ -24,7 +26,7 @@ ms.locfileid: "80738508"
 
  Los visualizadores de tipos y los visores personalizados permiten a un usuario ver los datos de un tipo determinado de una manera más significativa que un volcado hexadecimal sencillo de números. Un evaluador de expresiones (EE) puede asociar visores personalizados a tipos específicos de datos o variables. Estos visores personalizados se implementan en EE. EE también admite visualizadores de tipos externos, que pueden provienen de otro proveedor de terceros o incluso del usuario final.
 
-## <a name="discussion"></a>Debate
+## <a name="discussion"></a>Discusión
 
 ### <a name="type-visualizers"></a>Visualizadores de tipos
  Visual Studio solicita una lista de visualizadores de tipo y visores personalizados para cada objeto que se va a mostrar en una ventana Inspección. Un evaluador de expresiones (EE) proporciona una lista de este tipo para todos los tipos para los que desea admitir visualizadores de tipos y visores personalizados. Las llamadas a [GetCustomViewerCount](../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) y [GetCustomViewerList](../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) inician todo el proceso de acceso a los visualizadores de tipo y a los visores personalizados (vea [visualizar y ver datos](../../extensibility/debugger/visualizing-and-viewing-data.md) para obtener detalles sobre la secuencia de llamada).

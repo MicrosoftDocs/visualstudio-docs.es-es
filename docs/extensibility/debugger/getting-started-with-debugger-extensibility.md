@@ -1,5 +1,7 @@
 ---
 title: Introducción con extensibilidad del depurador | Microsoft Docs
+description: Empiece a crear y personalizar los componentes del depurador que se usan para depurar programas desde el entorno de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 153db8889c78890a31a2e8003e6aa95ed24a02eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6949b9b8a9168915c64bc6183f6b1391a1c79220
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738594"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560040"
 ---
 # <a name="get-started-with-debugger-extensibility"></a>Introducción a la extensibilidad del depurador
 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]Proporciona la información necesaria para crear y personalizar los componentes del depurador usados para depurar programas desde dentro del [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] entorno de.
@@ -39,8 +41,8 @@ ms.locfileid: "80738594"
 
  [Componentes del depurador](../../extensibility/debugger/debugger-components.md) Proporciona información general sobre los [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] componentes de depuración, que incluyen el motor de depuración (de), el evaluador de expresiones (EE) y el controlador de símbolos (SH).
 
- [Conceptos del depurador](../../extensibility/debugger/debugger-concepts.md) Describe los conceptos principales de la arquitectura de depuración.
+ [Conceptos del depurador](../../extensibility/debugger/debugger-concepts.md) Se describen los principales conceptos de la arquitectura de depuración.
 
- [Contextos del depurador](../../extensibility/debugger/debugger-contexts.md) Explica cómo el motor DE depuración (DE) funciona simultáneamente dentro del código, la documentación y los contextos de evaluación de expresiones. Describe, para cada uno de los tres contextos, la ubicación, la posición o la evaluación relevantes para él.
+ [Contextos del depurador](../../extensibility/debugger/debugger-contexts.md) Explica cómo el motor DE depuración (DE) funciona simultáneamente dentro del código, la documentación y los contextos de evaluación de expresiones. Para cada uno de los tres contextos, se describen la ubicación, la posición o la evaluación correspondientes.
 
  [Tareas de depuración](../../extensibility/debugger/debugging-tasks.md) Contiene vínculos a diversas tareas de depuración, como el inicio de un programa y la evaluación de expresiones.

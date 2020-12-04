@@ -1,5 +1,7 @@
 ---
 title: Evaluación de expresiones en modo de interrupción | Microsoft Docs
+description: Obtenga información sobre el proceso que se produce cuando el depurador está en modo de interrupción y debe realizar la evaluación de expresiones.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc09fc43bd9f0edea4f6dc32e5f37c387c045796
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e73d98e9fff713258f4797577fd8402932fe266
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738721"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559641"
 ---
 # <a name="expression-evaluation-in-break-mode"></a>Evaluación de expresiones en modo de interrupción
 En la siguiente sección se describe el proceso que se produce cuando el depurador está en modo de interrupción y debe realizar la evaluación de expresiones.

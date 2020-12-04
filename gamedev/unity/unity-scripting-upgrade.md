@@ -10,12 +10,12 @@ ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.workload:
 - unity
-ms.openlocfilehash: 5b7e36d0f0c29e997b4b39506fb27d73ceb45146
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: c1b745e4a1da85324b2dc73e30bebb873e2d0720
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "94341373"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559815"
 ---
 # <a name="using-net-4x-in-unity"></a>Uso de .NET 4.x en Unity
 
@@ -34,13 +34,13 @@ Para habilitar el runtime de scripting de .NET 4.x, siga estos pasos:
 
 1. Abra Configuración del reproductor en el Inspector de Unity. Para ello, seleccione **Editar > Configuración del proyecto > Reproductor**.
 
-1. En el encabezado **Configuración** , haga clic en el menú desplegable **Scripting Runtime Version** (Versión de runtime de scripting) y seleccione **.NET 4 Equivalent** (Equivalente a .NET 4.x). Se le solicitará que reinicie Unity.
+1. En el encabezado **Configuración**, haga clic en el menú desplegable **Scripting Runtime Version** (Versión de runtime de scripting) y seleccione **.NET 4 Equivalent** (Equivalente a .NET 4.x). Se le solicitará que reinicie Unity.
 
 ![Seleccionar el equivalente de .NET 4.x](media/vs/vstu-scripting-runtime-version.png)
 
 ## <a name="choosing-between-net-4x-and-net-standard-20-profiles"></a>Elegir entre los perfiles .NET 4.x y .NET Standard 2.0
 
-Una vez que haya cambiado al runtime de scripting equivalente a .NET 4.x, puede especificar **Api Compatibility Level** (Nivel de compatibilidad de API) mediante el menú desplegable en Configuración del reproductor ( **Editar > Configuración del proyecto > Reproductor** ). Hay dos opciones:
+Una vez que haya cambiado al runtime de scripting equivalente a .NET 4.x, puede especificar **Api Compatibility Level** (Nivel de compatibilidad de API) mediante el menú desplegable en Configuración del reproductor (**Editar > Configuración del proyecto > Reproductor**). Hay dos opciones:
 
 * **.NET Standard 2.0**. Este perfil coincide con el [perfil de .NET Standard 2.0](https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.0.md) publicado por .NET Foundation. Unity recomienda .NET Standard 2.0 para los nuevos proyectos. Es menor que .NET 4.x, lo que supone una ventaja para plataformas de tamaño limitado. Además, Unity se ha comprometido a admitir este perfil en todas las plataformas compatibles con Unity.
 
@@ -58,9 +58,9 @@ Por ejemplo, si está usando el perfil de .NET 4.x y quiere usar `HttpClient`, d
 
 ![falta referencia de ensamblado](media/vs/vstu-missing-reference.png)
 
-Visual Studio vuelve a generar los archivos .csproj y .sln para proyectos de Unity cada vez que se abren. Como resultado, no se pueden agregar referencias de ensamblado directamente en Visual Studio porque se perderán al volver a abrir el proyecto. En su lugar, debe usarse un archivo de texto especial denominado **mcs.rsp** :
+Visual Studio vuelve a generar los archivos .csproj y .sln para proyectos de Unity cada vez que se abren. Como resultado, no se pueden agregar referencias de ensamblado directamente en Visual Studio porque se perderán al volver a abrir el proyecto. En su lugar, se debe usar un archivo de texto especial denominado **CSC. rsp** :
 
-1. Cree un nuevo archivo de texto denominado **mcs.rsp** en el directorio raíz **Assets** del proyecto de Unity.
+1. Cree un nuevo archivo de texto denominado **CSC. rsp** en el directorio de **recursos** raíz del proyecto de Unity.
 
 1. En la primera línea del archivo de texto vacío, escriba `-r:System.Net.Http.dll` y guarde el archivo. Puede reemplazar "System.Net.Http.dll" con cualquier ensamblado incluido al que pueda faltarle una referencia.
 
@@ -76,7 +76,7 @@ Además de la nueva sintaxis de C# y las características de idioma, el runtime 
 
 1. Examine NuGet para encontrar un paquete compatible que quiera agregar (.NET Standard 2.0 o .NET 4.x). En este ejemplo se muestra la adición de [Json.NET](https://www.nuget.org/packages/Newtonsoft.Json/), un conocido paquete para trabajar con JSON, a un proyecto de .NET Standard 2.0.
 
-1. Haga clic en el botón **Descargar** :
+1. Haga clic en el botón **Descargar**:
 
     ![botón descargar](media/vs/vstu-nuget-download.png)
 

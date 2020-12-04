@@ -1,5 +1,7 @@
 ---
 title: Arquitectura del evaluador de expresiones | Microsoft Docs
+description: Obtenga información sobre cómo integrar un lenguaje patentado en el paquete de depuración de Visual Studio, incluidas las interfaces del evaluador de expresiones y del proveedor de símbolos y del enlazador.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aac782c653f230d5598a49d43eb70f548de6dc41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 216bf2f19d528084685a2361a158e105e2284010
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738699"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560166"
 ---
 # <a name="expression-evaluator-architecture"></a>Arquitectura del evaluador de expresiones
 > [!IMPORTANT]
@@ -25,7 +27,7 @@ ms.locfileid: "80738699"
 
  La integración de un lenguaje patentado en el paquete de depuración de Visual Studio significa que debe configurar las interfaces del evaluador de expresiones necesarias (EE) y llamar a las interfaces del proveedor de símbolos en tiempo de ejecución (SP) de Common Language Runtime y del enlazador. Los objetos SP y Binder, junto con la dirección de ejecución actual, son el contexto en el que se evalúan las expresiones. La información que estas interfaces generan y consumen representa los conceptos clave de la arquitectura de EE.
 
-## <a name="overview"></a>Información general
+## <a name="overview"></a>Introducción
 
 ### <a name="parse-the-expression"></a>Analizar la expresión
  Al depurar un programa, las expresiones se evalúan por varios motivos, pero siempre cuando el programa que se está depurando se ha detenido en un punto de interrupción (un punto de interrupción colocado por el usuario o uno provocado por una excepción). En este momento, Visual Studio obtiene un marco de pila, tal como se representa en la interfaz [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md) , del motor de depuración (de). A continuación, Visual Studio llama a [GetExpressionContext](../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) para obtener la interfaz [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) . Esta interfaz representa un contexto en el que se pueden evaluar las expresiones; [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) es el punto de entrada al proceso de evaluación. Hasta este momento, se implementan todas las interfaces mediante el DE.

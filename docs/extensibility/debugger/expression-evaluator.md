@@ -1,5 +1,7 @@
 ---
 title: Evaluador de expresiones | Microsoft Docs
+description: Obtenga información sobre los evaluadores de expresiones, que examinan la sintaxis de un lenguaje para analizar y evaluar variables y expresiones en tiempo de ejecución en modo de interrupción.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a477aaceb57e6ccd2eb5125fcf9d8af9be59472b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a8223e39eb804684fede50ceb2f7c859e198a272
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738689"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560140"
 ---
 # <a name="expression-evaluator"></a>Evaluador de expresiones
 Los evaluadores de expresiones (EE) examinan la sintaxis de un lenguaje para analizar y evaluar variables y expresiones en tiempo de ejecución, lo que permite que el usuario la vea cuando el IDE está en modo de interrupción.

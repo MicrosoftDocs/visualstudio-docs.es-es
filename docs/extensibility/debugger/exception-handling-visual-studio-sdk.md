@@ -1,5 +1,7 @@
 ---
 title: Control de excepciones (SDK de Visual Studio) | Microsoft Docs
+description: Obtenga información sobre el proceso que se produce cuando se producen excepciones. En este artículo se describen todos los pasos implicados.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34b83c7181a7ba405e642d9911e2c53df3f4401d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: af5dc1007a4624a24bef59dd822f6e9fe3861551
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738766"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559659"
 ---
 # <a name="exception-handling-visual-studio-sdk"></a>Control de excepciones (SDK de Visual Studio)
 A continuación se describe el proceso que se produce cuando se producen excepciones.

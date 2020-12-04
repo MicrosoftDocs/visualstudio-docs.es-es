@@ -1,5 +1,7 @@
 ---
 title: Estrategia de implementación del evaluador de expresiones | Microsoft Docs
+description: Obtenga información sobre una estrategia para crear un evaluador de expresiones implementando primero el código para mostrar las variables locales en la ventana variables locales.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3922689c20c839b3c0c2b2440bc9fefd5d25c80a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b936b465c3a7becbdcb3ea4f36a16b839260ad74
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738673"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560153"
 ---
 # <a name="expression-evaluator-implementation-strategy"></a>Estrategia de implementación del evaluador de expresiones
 > [!IMPORTANT]
@@ -24,7 +26,7 @@ ms.locfileid: "80738673"
 
  Un enfoque para crear rápidamente un evaluador de expresiones (EE) es primero implementar el código mínimo necesario para mostrar las variables locales en la ventana **variables** locales. Resulta útil saber que cada línea de la ventana **variables locales** muestra el nombre, el tipo y el valor de una variable local, y que los tres se representan mediante un objeto [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) . El nombre, el tipo y el valor de una variable local se obtienen de un `IDebugProperty2` objeto llamando a su método [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) . Para obtener más información sobre cómo mostrar las variables locales en la ventana **variables** locales, vea [Mostrar variables locales](../../extensibility/debugger/displaying-locals.md).
 
-## <a name="discussion"></a>Debate
+## <a name="discussion"></a>Discusión
  Una posible secuencia de implementación comienza con la implementación de [IDebugExpressionEvaluator](../../extensibility/debugger/reference/idebugexpressionevaluator.md). Los métodos [Parse](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) y [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) se deben implementar para mostrar variables locales. La llamada a `IDebugExpressionEvaluator::GetMethodProperty` devuelve un `IDebugProperty2` objeto que representa un método: es decir, un objeto [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) . Los propios métodos no se muestran en la ventana **variables locales** .
 
  El método [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) debe implementarse a continuación. El motor de depuración (DE) llama a este método para obtener una lista de variables locales y argumentos pasando `IDebugProperty2::EnumChildren` un `guidFilter` argumento de `guidFilterLocalsPlusArgs` . `IDebugProperty2::EnumChildren` llama a [EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md) y [EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md), combinando los resultados en una sola enumeración. Consulte [Mostrar variables locales](../../extensibility/debugger/displaying-locals.md) para obtener más detalles.
