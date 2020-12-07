@@ -1,5 +1,7 @@
 ---
 title: Novedades de Live Unit Testing en Visual Studio 2017
+description: En este artículo se describen las nuevas características agregadas a Live Unit Testing en cada una de las versiones de Visual Studio a partir de la versión 15.3 de Visual Studio 2017.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 10/11/2017
 ms.topic: conceptual
@@ -11,12 +13,12 @@ ms.author: mikejo
 ms.workload:
 - dotnet
 monikerRange: vs-2017
-ms.openlocfilehash: cc6a7a25ebd2f7d07dcb887952b82bda34aaad35
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: ae1caef04c1ccd1c51c38ddef5dc8c783bdbfaa9
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851468"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328839"
 ---
 # <a name="whats-new-in-live-unit-testing-for-visual-studio-2017"></a>Novedades de Live Unit Testing para Visual Studio 2017
 
@@ -56,7 +58,7 @@ Además de estas incorporaciones principales, Live Unit Testing incluye las sigu
 
 - Se han agregado varias opciones configurables a Herramientas/Opciones/Live Unit Testing/General. Puede limitar la memoria que se usa para Live Unit Testing. También puede especificar la ruta de acceso de archivo para los datos persistentes de Live Unit Testing para su solución abierta.
 
-- Se han agregado varios elementos de menú adicionales a la barra de menús de Prueba/Live Unit Testing. **Reset Clean**  (Restablecer limpieza) elimina los datos persistentes y los genera de nuevo. **Opción** salta a Herramientas/Opciones/Live Unit Testing/General.
+- Se han agregado varios elementos de menú adicionales a la barra de menús de Prueba/Live Unit Testing. **Reset Clean** (Restablecer limpieza) elimina los datos persistentes y los genera de nuevo. **Opción** salta a Herramientas/Opciones/Live Unit Testing/General.
 
 - Ahora puede usar los siguientes atributos para especificar en el código fuente que desea excluir métodos de prueba de destino de Live Unit Testing:
 

@@ -1,5 +1,6 @@
 ---
 title: Propiedad Almacenamiento de detalles de tiempo (parámetro de ejecución de una prueba de carga)
+description: Obtenga información sobre cómo editar la propiedad Almacenamiento de detalles de tiempo para un parámetro de ejecución. Los valores válidos son Todos los detalles individuales, Ninguno y Solo estadísticas.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ ms.assetid: 867a9c21-0909-4963-bc02-d41e9393008c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 132c55b4cd6f716d8983358064f749eabeb9ba88
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 94603c2da0eb339df52aa58e3b2bb5666b75ead7
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810567"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330022"
 ---
 # <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>Cómo: Especificar la propiedad Almacenamiento de detalles de tiempo de un parámetro de ejecución de una prueba de carga
 

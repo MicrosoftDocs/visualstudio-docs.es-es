@@ -1,5 +1,7 @@
 ---
 title: Selector de fragmentos de código
+description: Aprenda a usar el Selector de fragmentos de código para insertar bloques de código predefinidos en el documento activo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb03da430f43bbfd5c7398c147560a9c823f8811
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: bf0b1c264911c92389c6c3afe722b5061455c3da
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75570497"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96041023"
 ---
 # <a name="code-snippet-picker"></a>Selector de fragmentos de código
 
@@ -54,7 +56,7 @@ Lista de elementos
 
 Una lista de fragmentos de código disponibles para insertarlos o una lista de carpetas que contienen fragmentos de código. Para insertar un fragmento de código o expandir una carpeta, seleccione el elemento que quiera y presione Entrar.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Procedimientos recomendados para usar fragmentos de código](../../ide/best-practices-for-using-code-snippets.md)
 - [Fragmentos de código de IntelliSense de Visual Basic](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)

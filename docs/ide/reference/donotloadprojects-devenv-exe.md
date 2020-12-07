@@ -1,5 +1,7 @@
 ---
 title: -DoNotLoadProjects (devenv.exe)
+description: Obtenga información sobre cómo usar el modificador de la línea de comandos DoNotLoadProjects para abrir la solución especificada sin cargar ningún proyecto.
+ms.custom: SEO-VS-2020
 ms.date: 04/30/2019
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51e3341082ff354fc8bc87a89b3d7bc56e4e7887
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ef3502a2180f7ae7ed5963deb14844b46f3dbff9
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75569860"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040633"
 ---
 # <a name="donotloadprojects-devenvexe"></a>/DoNotLoadProjects (devenv.exe)
 
@@ -34,7 +36,7 @@ devenv /DoNotLoadProjects SolutionName
 
 *SolutionName*
 
-Obligatorio. Ruta de acceso completa y nombre de la solución que se va a abrir.
+Necesario. Ruta de acceso completa y nombre de la solución que se va a abrir.
 
 ## <a name="example"></a>Ejemplo
 
@@ -44,7 +46,7 @@ En el ejemplo se abre la solución MySln.sln sin cargar ningún proyecto.
 devenv /donotloadprojects MySln.sln
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Soluciones filtradas en Visual Studio](../filtered-solutions.md)
 - [Modificadores de línea de comandos para Devenv](../../ide/reference/devenv-command-line-switches.md)

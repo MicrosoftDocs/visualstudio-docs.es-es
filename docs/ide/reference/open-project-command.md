@@ -1,5 +1,7 @@
 ---
 title: Abrir proyecto (comando)
+description: Obtenga información sobre el comando Abrir proyecto y cómo abre un proyecto o una solución existentes.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97c1034fbbafa04af2d62526fdbb48812d64e050
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ce00713cbfe862c5788a0131c99ba4c5750bb600
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75565817"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304141"
 ---
 # <a name="open-project-command"></a>Comando Abrir proyecto
 
@@ -41,7 +43,7 @@ Obligatorio. La ruta de acceso completa y el nombre de archivo del proyecto o de
 > [!NOTE]
 > La sintaxis del argumento `filename` requiere que las rutas de acceso que contienen espacios se incluyan entre comillas.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 La finalización automática intenta localizar la ruta de acceso y el nombre de archivo correctos a medida que los va escribiendo.
 

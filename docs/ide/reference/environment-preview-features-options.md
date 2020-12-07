@@ -1,5 +1,7 @@
 ---
 title: Características en vista previa, entorno, cuadro de diálogo Opciones
+description: Aprenda a usar la página Características en vista previa de la sección Entorno para habilitar o deshabilitar las características en vista previa de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 07/26/2019
 ms.topic: reference
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5fc392e6d3d862ae81f0844d2cd28e8da44a805
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5a0eb0627c073c09f23d8690dba2fd4f9af8b482
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595688"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305452"
 ---
 # <a name="options-dialog-box-environment--preview-features"></a>Cuadro de diálogo Opciones: Entorno \> Características en vista previa
 

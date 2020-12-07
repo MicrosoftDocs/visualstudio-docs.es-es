@@ -1,5 +1,7 @@
 ---
 title: Usar diferentes exploradores web con las pruebas de IU codificadas
+description: Obtenga información sobre cómo personalizar la prueba y reproducirla de nuevo en distintos exploradores para las aplicaciones web.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 507da254d108ddc31f2b1c9fdf7f393d42934f2a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6baddaeac3fdea3d27f60722e728df209bfd768d
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289331"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330035"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Usar diferentes exploradores web con las pruebas automatizadas de IU
 
@@ -74,7 +76,7 @@ Para reproducir pruebas en exploradores web que no son IE, debe instalar los **c
 
 Para obtener más información sobre cómo crear y usar pruebas automatizadas de IU, vea la sección relativa a la [creación de pruebas automatizadas de IU](../test/use-ui-automation-to-test-your-code.md).
 
-### <a name="enable-debugging"></a>Habilitar depuración
+### <a name="enable-debugging"></a>Habilitar la depuración
 
 Para habilitar la depuración de la aplicación web, debe completar las opciones de configuración siguientes:
 
@@ -108,7 +110,7 @@ Puede configurar la salida para incluir capturas de pantalla en los registros de
 
 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*
 
-Establezca los siguientes valores:
+Establezca los valores siguientes:
 
 - `EqtTraceLevel` en la sección `system.diagnostics`.
 

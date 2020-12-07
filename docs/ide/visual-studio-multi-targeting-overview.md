@@ -1,5 +1,6 @@
 ---
 title: Marcos .NET Framework de destino
+description: Aprenda a especificar la versión de .NET Framework a la que quiere que vaya destinado el proyecto para que la aplicación solo puede usar las funcionalidades disponibles en la versión especificada.
 ms.date: 03/31/2020
 ms.topic: overview
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b7c3c2b6b81f8f7793bda35c6b220e43caee9b5f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9bc20c2ee08a2b838e0fd1ab14ee9a8388912542
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770452"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479737"
 ---
 # <a name="framework-targeting-overview"></a>Información general sobre destinos de Framework
 

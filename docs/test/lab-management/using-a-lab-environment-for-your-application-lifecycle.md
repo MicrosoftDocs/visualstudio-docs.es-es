@@ -1,5 +1,7 @@
 ---
 title: Uso de un entorno de laboratorio para DevOps
+description: Obtenga información sobre los entornos de laboratorio y cómo usar la nube con Azure Pipelines o con Compilación y versión de Team Foundation Server.
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 1a5958b03b9797882b3df37f4ba99c75ff832d22
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: cb25561f70882336a1143918d3cf78849b394065
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928113"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328930"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Usar un entorno de laboratorio para DevOps
 
@@ -28,7 +30,7 @@ Un entorno de laboratorio es una colección de máquinas virtuales y físicas qu
 
 Estos son algunos ejemplos de topologías comunes de entornos de laboratorio:
 
-| Topología | Description |
+| Topología | Descripción |
 |---|---|
 |![Topología de servidor único](../media/topology_backend.png)| Este entorno de laboratorio tiene una *topología de servidores*, que suele usarse para ejecutar pruebas manuales en aplicaciones de servidor y que permite a los evaluadores usar sus propios equipos cliente para comprobar errores en el entorno. En una topología de backend, el entorno de laboratorio solo contiene servidores. Al usar este tipo de topología, normalmente se conecta a los servidores del entorno de laboratorio mediante un equipo cliente que no forma parte del entorno.|
 |![Entorno de laboratorio en la nube](../media/topology_cloud.png)| Este entorno de laboratorio proporciona funciones y características similares como la _topología de servidores_, pero elimina la necesidad de que las máquinas virtuales o físicas se ejecuten en un entorno local; lo que puede reducir el tiempo de preparación, simplificar el mantenimiento y minimizar costos. Configurar varios sitios web y máquinas vituales, junto con redes personalizadas, es rápido y sencillo en un entorno de nube como Microsoft Azure.|
@@ -98,29 +100,29 @@ Para obtener información sobre SCVMM, vea [Virtual Machine Manager](/azure/devo
 
 Los entornos estándar y los entornos de SCVMM admiten un gran número de características similares. Pero es importante conocer algunas diferencias importantes. En la tabla siguiente se comparan las características que están disponibles para entornos estándar y para entornos de SCVMM.
 
-|Función|Entornos de SCVMM|Entornos estándar|
+|Capacidad|Entornos de SCVMM|Entornos estándar|
 |-|------------------------|-|
-|**Pruebas**|||
+|**Pruebas**:|||
 |Ejecutar pruebas manuales|Compatible|Compatible|
 |Ejecutar IU codificada y otras pruebas automatizadas|Compatible|Compatible|
 |Notificar sobre errores detallados mediante adaptadores de diagnóstico|Compatible|Compatible|
 |**Implementación de compilaciones**|||
 |Flujos de trabajo de compilación-implementación-prueba automáticos|Compatible|Compatible|
 |**Creación y administración de entornos**|||
-|Uso de máquinas físicas además de máquinas virtuales|No compatibles|Compatible|
-|Uso de máquinas virtuales de terceros|No compatibles|Compatible|
+|Uso de máquinas físicas además de máquinas virtuales|No compatible|Compatible|
+|Uso de máquinas virtuales de terceros|No compatible|Compatible|
 |Instalación automática de agentes de prueba en equipos del entorno de laboratorio|Compatible|Compatible|
-|Guardar e implementar el estado de un entorno de laboratorio mediante instantáneas de entorno|Compatible|No compatibles|
-|Creación de entornos de laboratorio a partir de plantillas de VM|Compatible|No compatibles|
-|Iniciar, detener y crear instantáneas de entornos|Compatible|No compatibles|
+|Guardar e implementar el estado de un entorno de laboratorio mediante instantáneas de entorno|Compatible|No compatible|
+|Creación de entornos de laboratorio a partir de plantillas de VM|Compatible|No compatible|
+|Iniciar, detener y crear instantáneas de entornos|Compatible|No compatible|
 |Conectar al entorno mediante el Visor de entorno|Compatible|Compatible|
-|Ejecutar varias copias de un entorno de forma simultánea mediante el aislamiento de red|Compatible|No compatibles|
+|Ejecutar varias copias de un entorno de forma simultánea mediante el aislamiento de red|Compatible|No compatible|
 
 ### <a name="lab-management-concepts"></a>Conceptos de Lab Management
 
 Estos son algunos conceptos adicionales que es importante que conozca antes de continuar:
 
-|Término|Description|
+|Término|Descripción|
 |-|-----------------|
 |Centro de laboratorio|El área de Microsoft Test Manager donde se crean y administran los entornos de laboratorio.|
 |Laboratorio de proyecto de Azure DevOps|La colección de entornos de laboratorio que se han configurado para que pueda conectarse a estos y ejecutar sus máquinas virtuales.|
@@ -132,7 +134,7 @@ Para obtener más información acerca de Lab Management, vea:
 * [Planear el laboratorio](/previous-versions/ff756575(v=vs.140))
 * [Administrar su laboratorio](/previous-versions/dd936084(v=vs.140))
 * [Configurar los entornos de SCVMM](/previous-versions/dd380687(v=vs.140))
-* [Administrar permisos](/previous-versions/dd380760(v=vs.140))
+* [Administración de permisos](/previous-versions/dd380760(v=vs.140))
 * [Cambiar la configuración](/previous-versions/ee704508(v=vs.140))
 * [Solución de problemas](/previous-versions/ee853230(v=vs.140))
 
@@ -148,4 +150,4 @@ Para obtener información sobre la configuración de entornos, vea:
 
 * [Instalar y configurar agentes de prueba](../../test/lab-management/install-configure-test-agents.md)
 * [Guía de Visual Studio Lab Management](/archive/blogs/visualstudioalmrangers/library-of-tooling-and-guidance-solutions-aka-msvsarsolutions)
-* [Blog DevOps de Microsoft](https://devblogs.microsoft.com/devops/)
+* [Blog de Microsoft DevOps](https://devblogs.microsoft.com/devops/)

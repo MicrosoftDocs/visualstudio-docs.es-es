@@ -1,5 +1,7 @@
 ---
 title: Advertencias y errores | Herramientas de prueba para desarrolladores de Microsoft IntelliTest
+description: En este artículo se incluyen advertencias y errores de IntelliTest divididos en categorías, así como una descripción de cada advertencia o error.
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: c3f5fe55a4e1afb1a9551d43d0d61ae9f76b81e4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 639b68c4d999a5e491f6e52a2cf3a7960563ed17
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77275435"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329437"
 ---
 # <a name="warnings-and-errors"></a>Advertencias y errores
 

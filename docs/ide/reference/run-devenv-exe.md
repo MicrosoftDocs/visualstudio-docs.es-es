@@ -1,5 +1,7 @@
 ---
 title: -Run (devenv.exe)
+description: Obtenga información sobre cómo usar el modificador Run de la línea de comandos de devenv para compilar y ejecutar la solución o el proyecto especificados.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7468fbd6422248f2f15bf74e70cdf9c5bee849c3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e523220ca3269b6af5404ce2d6ab653f29698599
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593634"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039910"
 ---
 # <a name="run-devenvexe"></a>/Run (devenv.exe)
 
@@ -46,7 +48,7 @@ devenv {/Run|/R} {SolutionName|ProjectName} [/Out OutputFilename]
 
   Opcional. Nombre de un archivo que quiera enviar al resultado de la herramienta. Si el archivo ya existe, la herramienta anexa el resultado al final del archivo.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Compila y ejecuta el proyecto o solución especificados según los ajustes indicados para la configuración de soluciones activas. Este modificador inicia el IDE y lo deja activo después de finalizarse la ejecución del proyecto o solución.
 

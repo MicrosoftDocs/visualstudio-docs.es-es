@@ -1,5 +1,7 @@
 ---
 title: Acercamiento de gráficos de resultados de pruebas de carga
+description: Obtenga información sobre cómo examinar con más detalle los datos generados durante una ejecución de pruebas de carga usando barras de zoom para acercar una región del gráfico y desplazarse por ella.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 f1_keywords:
@@ -11,12 +13,12 @@ ms.assetid: 729b4c30-4bc3-4698-91b3-17a676897443
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 836e4f30e2c84bf0093366f4cc38a2cb7f58b545
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 172b777111027b4492420185b53086f55ee4084b
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287030"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328670"
 ---
 # <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Cómo: Acercar una región del gráfico en los resultados de pruebas de carga
 
@@ -55,7 +57,7 @@ Para mostrar los gráficos:
 
 2. Cuando termine la ejecución de la prueba de carga, elija **Sí** en el cuadro de diálogo en el que se le pregunta si quiere ver los resultados del almacén de resultados de pruebas de carga.
 
-     \- O bien
+     \- o -
 
      Vea los detalles de una prueba de carga ejecutada anteriormente. Para más información, consulte [Acceso a los resultados de pruebas de carga para su análisis](../test/how-to-access-load-test-results-for-analysis.md).
 
@@ -99,7 +101,7 @@ Cuando se muestran varios gráficos, puede mantenerlos sincronizados para que mu
 
 2. Arrastre el puntero del mouse hacia el otro extremo del área de zoom.
 
-3. Suelte el botón del mouse.
+3. Suelte el botón del mouse (ratón).
 
     Esto ampliará el área que definió mediante la elección y el arrastre.
 
@@ -113,8 +115,8 @@ Cuando se muestran varios gráficos, puede mantenerlos sincronizados para que mu
 
      Se aplicará el zoom para alejar y mostrar la duración completa de la ejecución de la prueba de carga.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Analizar los resultados de pruebas de carga en la vista Gráficos](../test/analyze-load-test-results-in-the-graphs-view.md)
-- [Analizar los resultados de pruebas de carga con el analizador de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analizar los resultados de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [Cómo: Agregar y eliminar contadores de los gráficos de resultados de pruebas de carga](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)

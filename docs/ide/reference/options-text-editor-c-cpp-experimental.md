@@ -1,5 +1,7 @@
 ---
 title: Opciones, editor de texto, C/C++, experimental
+description: Obtenga información sobre cómo usar la página Experimental de la sección C/C++ para cambiar los comportamientos experimentales relacionados con IntelliSense y la base de datos de exploración.
+ms.custom: SEO-VS-2020
 ms.date: 08/02/2017
 ms.topic: reference
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e239ad3d2091f334f18ec00a367fc47d5c21db3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e35bdb8c6a56ef3174277836769201cd00e47dad
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77278707"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040308"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Opciones, editor de texto, C/C++, experimental
 
@@ -33,7 +35,7 @@ Para acceder a esta página de propiedades, presione **Ctrl**+**Q** para activar
 Estas características están disponibles en una instalación de Visual Studio.
 
 > [!NOTE]
-> Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Vea [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+> Es posible que tu equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Vea [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="enable-predictive-intellisense"></a>Habilitar IntelliSense predictivo
 
@@ -61,10 +63,10 @@ Puede examinar las características adicionales del editor de texto en [Visual S
 
 - **Ayuda en pantalla**: buscar ayuda en línea para los mensajes de error
 
-- Y mucho más...
+- Y mucho más.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Configurar las opciones del editor específicas del lenguaje](../../ide/reference/setting-language-specific-editor-options.md)
+- [Opciones del editor específicas del lenguaje](../../ide/reference/setting-language-specific-editor-options.md)
 - [Refactorización en C++ (Blog de VC)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/
 )

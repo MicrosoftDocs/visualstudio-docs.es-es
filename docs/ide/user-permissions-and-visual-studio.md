@@ -1,5 +1,6 @@
 ---
 title: Ejecutar como administrador
+description: Obtenga información sobre cómo ejecutar Visual Studio como administrador.
 ms.date: 01/06/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 927031b4755644aeac553367a4f8a08faa0c0992
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9d69d916b8b99d6f5b5b3421ae4aea073e24fa67
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75718641"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96478957"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Permisos de usuario y Visual Studio
 
@@ -73,7 +74,7 @@ Si tiene que ejecutar Visual Studio como administrador, siga estos pasos para ab
 
 También puede modificar el acceso directo a la aplicación para ejecutarla siempre con permisos administrativos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Portar, migrar y actualizar proyectos de Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
 - [Instalación de Visual Studio](../install/install-visual-studio.md)

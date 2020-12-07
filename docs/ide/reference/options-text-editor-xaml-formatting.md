@@ -1,5 +1,7 @@
 ---
 title: Opciones, editor de texto, XAML, formato
+description: Obtenga información sobre cómo usar la página de opciones Formato y sus subpáginas para establecer las opciones de formato del código en el editor de código cuando programa en XAML.
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.topic: reference
 f1_keywords:
@@ -29,12 +31,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: d340a3b9468ea23c4cab23aabe19a7c1390955a3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ddeb503153eacdcff993405e29bb8b3bdbe0c722
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568248"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040529"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>Opciones, editor de texto, XAML, formato
 
@@ -90,7 +92,7 @@ Puede especificar una longitud de línea para el ajuste de etiquetas. Cuando el 
 
 Especifica si las líneas se ajustan a la longitud de línea especificada por **Longitud**.
 
-**Longitud**
+**Duración**
 
 Número de caracteres que puede contener una línea. Si es necesario, algunas líneas XAML podrían superar la longitud de línea especificada.
 

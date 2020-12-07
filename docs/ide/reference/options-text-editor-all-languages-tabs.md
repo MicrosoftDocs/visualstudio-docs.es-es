@@ -1,5 +1,7 @@
 ---
 title: Opciones, editor de texto, todos los lenguajes, pestañas
+description: Obtenga información sobre cómo usar la página Pestañas de la sección Todos los lenguajes para cambiar el comportamiento predeterminado de las pestañas del editor de código en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -41,12 +43,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fc169960cf757e4e334d5f77b06ff70b0d6da7c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e66654c8ceefa2cb7983c29f441cbb0f9cf97aff
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594752"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96043977"
 ---
 # <a name="options-text-editor-all-languages-tabs"></a>Opciones, editor de texto, todos los lenguajes, pestañas
 
@@ -57,17 +59,17 @@ Este cuadro de diálogo le permite cambiar el comportamiento predeterminado del 
 
 Si están seleccionadas diferentes opciones en las páginas de opciones de pestañas para lenguajes de programación determinados, entonces el mensaje "Los valores de la sangría para formatos de texto individuales están en conflicto entre sí" se muestra para las distintas opciones de **sangría**; y se muestra el mensaje "Los valores del tabulador para formatos de texto individuales están en conflicto entre sí" para las distintas opciones del **tabulador**. Por ejemplo, este recordatorio se muestra si la opción **Sangría inteligente** está seleccionada para Visual Basic, pero **Sangría de bloques** está seleccionada para Visual C++.
 
-## <a name="indenting"></a>Aplicar sangría
+## <a name="indenting"></a>Sangrías
 
-Ninguna
+None
 
 Si está seleccionada esta opción, no se aplicará ninguna sangría a las líneas nuevas. El punto de inserción se coloca en la primera columna de una nueva línea.
 
-Bloque
+Block
 
 Si está seleccionada esta opción, se aplicará una sangría automáticamente a las líneas nuevas. El punto de inserción se coloca en el mismo punto inicial que la línea anterior.
 
-Inteligente
+Automática
 
 Cuando está seleccionada, se colocan nuevas líneas para ajustarse al contexto de código, por otras opciones de formato de código y convenciones de IntelliSense para el lenguaje de desarrollo. Esta opción no está disponible para todos los lenguajes de desarrollo.
 
@@ -77,11 +79,11 @@ Por ejemplo, a las líneas que aparecen entre una llave inicial ( { ) y una llav
 
 Tamaño de tabulación
 
-Establece la distancia en espacios entre las tabulaciones. El valor predeterminado es de cuatro espacios.
+Establece la distancia en espacios entre las tabulaciones. El valor predeterminado es cuatro espacios.
 
 Tamaño de sangría
 
-Define el tamaño, en espacios, para aplicar una sangría automática. El valor predeterminado es de cuatro espacios. Se insertan caracteres de tabulación, caracteres de espacio o ambos, para llenar el tamaño especificado.
+Establece el tamaño en espacios de una sangría automática. El valor predeterminado es cuatro espacios. Se insertarán caracteres de tabulación, de espacio o ambos para rellenar el tamaño especificado.
 
 Insertar espacios
 

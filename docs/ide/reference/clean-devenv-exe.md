@@ -1,5 +1,7 @@
 ---
 title: -Clean (devenv.exe)
+description: Obtenga información sobre cómo usar el modificador Clean de la línea de comandos de devenv para limpiar todos los archivos intermedios y los directorios de salida.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac184f25d79a47814fee52b99bce1cddce247fc5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6023df4e0f8721f18a82950c0ea507406fd48e02
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75570471"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96041054"
 ---
 # <a name="clean-devenvexe"></a>/Clean (devenv.exe)
 
@@ -34,9 +36,9 @@ devenv SolutionName /Clean [Config [/Project ProjName [/ProjectConfig ProjConfig
 
 - *SolutionName*
 
-  Obligatorio. Ruta de acceso completa y nombre del archivo de solución.
+  Necesario. Ruta de acceso completa y nombre del archivo de solución.
 
-- *Config*
+- *Config* (Configuración).
 
   Opcional. Configuración (por ejemplo, `Debug` o `Release`) para borrar los archivos intermediarios de la solución indicada en *SolutionName*. Si hay más de una plataforma de solución disponible, también tendrá que especificar la plataforma (por ejemplo, `Debug|Win32`). Si no se especifica este argumento o se usa una cadena vacía (`""`), la herramienta usará la configuración activa de la solución.
 
@@ -52,7 +54,7 @@ devenv SolutionName /Clean [Config [/Project ProjName [/ProjectConfig ProjConfig
 
   Opcional. Nombre de un archivo que quiera enviar al resultado de la herramienta. Si el archivo ya existe, la herramienta anexa el resultado al final del archivo.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este modificador tiene la misma función que el comando de menú **Limpiar solución** en el IDE.
 

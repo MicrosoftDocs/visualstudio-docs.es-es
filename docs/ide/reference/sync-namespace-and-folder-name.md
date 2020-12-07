@@ -1,5 +1,7 @@
 ---
 title: Sincronización de espacio de nombres y nombre de carpeta
+description: Obtenga información sobre cómo usar el menú Acciones rápidas y refactorizaciones para sincronizar el espacio de nombres y el nombre de la carpeta.
+ms.custom: SEO-VS-2020
 ms.date: 06/12/2019
 ms.topic: reference
 author: mikadumont
@@ -9,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: d7073edaf6ecc261c58bf1e5607323b9214c5ed0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 10dff5d9129d1a91f01ef7541397d86f5a71468c
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67160761"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479815"
 ---
 # <a name="sync-namespace-and-folder-name"></a>Sincronización de espacio de nombres y nombre de carpeta
 

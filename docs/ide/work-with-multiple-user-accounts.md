@@ -1,5 +1,7 @@
 ---
 title: Trabajar con varias cuentas de usuario
+description: Obtenga información sobre cómo agregar todas las cuentas de Microsoft a Visual Studio para poder acceder a los recursos desde cualquier cuenta sin tener que iniciar sesión por separado.
+ms.custom: SEO-VS-2020
 ms.date: 11/16/2020
 ms.topic: conceptual
 author: ornellaalt
@@ -7,12 +9,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe124fc35eabec4b3c48cdf8dfa53ef8f17b0003
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 071c6061417e26b45e5f9e67bc6ac1001bf08530
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671342"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480348"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Trabajar con varias cuentas de usuario
 
@@ -115,7 +117,7 @@ Para iniciar sesión mediante el flujo de código del dispositivo:
 
 1. En **Visual Studio**, elija **Continuar**.
 
-   ![device-login-page.png](media/work-with-multiple-user-accounts/device-login-page.png)
+   ![Captura de pantalla de la página Inicio de sesión del dispositivo en la que se muestra la opción Continuar.](media/work-with-multiple-user-accounts/device-login-page.png)
 
 1. Siga las instrucciones para escribir las credenciales de su cuenta.
 

@@ -1,5 +1,7 @@
 ---
 title: 'Paso 6: Agregar un problema de resta'
+description: Aprenda a agregar un problema de resta y a realizar varias tareas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b6dd2b572074265cca62a45b962c604abf5c849
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 8157335e47ec13c66da471f77ddbd2877bcac12d
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579818"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480673"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>Paso 6: Agregar un problema de resta
 En la sexta parte de este tutorial, agregará un problema de resta y aprenderá a realizar las tareas siguientes:
@@ -60,12 +62,12 @@ En la sexta parte de este tutorial, agregará un problema de resta y aprenderá 
      Puede llamar de varias maneras al método `Next()` de la clase Random, que denominamos "randomizer" anteriormente en este tutorial. Los métodos a los que se pueden llamar de varias maneras se denominan métodos sobrecargados. Puede utilizar IntelliSense para explorarlos. Fijémonos de nuevo en la información sobre herramientas de la ventana IntelliSense del método `Next()`.
 
      ![Información sobre herramientas de la ventana IntelliSense](../ide/media/express_overloads.png)<br/>
-***Información sobre herramientas de la ventana*** *IntelliSense*
+*Información sobre herramientas de la ventana *_IntelliSense_* __*
 
-     En la información sobre herramientas se muestra **(+ 2 sobrecargas)** , lo que significa que se puede llamar al método `Next()` de dos formas. Las sobrecargas contienen diferentes números o tipos de argumentos, por lo que funcionan de forma ligeramente distinta una de otra. Por ejemplo, es posible que un método tome solamente un argumento entero y que una de sus sobrecargas tome un entero y una cadena. Elija la sobrecarga adecuada en función de lo que desee hacer. Al agregar código al método `StartTheQuiz()`, aparecerá más información en la ventana de IntelliSense en cuanto se escriba `randomizer.Next(`. Para recorrer cíclicamente las sobrecargas, presione las teclas **Flecha arriba** y **Flecha abajo**, como se muestra en la ilustración siguiente:
+     En la información sobre herramientas se muestra **(+ 2 sobrecargas)**, lo que significa que se puede llamar al método `Next()` de dos formas. Las sobrecargas contienen diferentes números o tipos de argumentos, por lo que funcionan de forma ligeramente distinta una de otra. Por ejemplo, es posible que un método tome solamente un argumento entero y que una de sus sobrecargas tome un entero y una cadena. Elija la sobrecarga adecuada en función de lo que desee hacer. Al agregar código al método `StartTheQuiz()`, aparecerá más información en la ventana de IntelliSense en cuanto se escriba `randomizer.Next(`. Para recorrer cíclicamente las sobrecargas, presione las teclas **Flecha arriba** y **Flecha abajo**, como se muestra en la ilustración siguiente:
 
      ![Sobrecarga del método Next&#40;&#41; en IntelliSense](../ide/media/express_nextoverload.png)<br/>
-*Sobrecarga del*  ***método Next()*** *en* ***IntelliSense***
+*Sobrecarga del método*  ***Next()** _ _en* ***IntelliSense**_
 
      En este caso, desea elegir la última sobrecarga, ya que puede especificar los valores mínimo y máximo.
 
@@ -86,7 +88,7 @@ En la sexta parte de este tutorial, agregará un problema de resta y aprenderá 
      El programa incluye un problema de resta, como se muestra en la ilustración siguiente:
 
      ![Prueba matemática con un problema de resta](../ide/media/express_addsubtract.png)<br/>
-***Prueba matemática*** *con un problema de resta*
+_*_Prueba matemática_*_ _con un problema de resta*
 
 ## <a name="to-continue-or-review"></a>Para continuar o revisar
 

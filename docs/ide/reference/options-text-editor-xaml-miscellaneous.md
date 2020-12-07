@@ -1,5 +1,7 @@
 ---
 title: Opciones, editor de texto, XAML y varios
+description: Obtenga información sobre cómo usar la página Varios en la sección XML para especificar cómo se aplica formato a los elementos y atributos en los documentos XAML.
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.topic: reference
 f1_keywords:
@@ -28,12 +30,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: f646d52e3aae3d52f6cd24d75421fbdc71d30d66
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: c5662381d025fa2c74ac82ac217122ea9097ab14
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85544097"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040971"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>Opciones, editor de texto, XAML y varios
 

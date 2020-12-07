@@ -1,5 +1,7 @@
 ---
 title: Opciones, Diseñador de Windows Forms, Personalización de UI de datos
+description: Obtenga información sobre cómo usar la página Personalización de IU de datos para definir qué controles aparecerán en la lista de controles disponibles para los elementos de la ventana Orígenes de datos.
+ms.custom: SEO-VS-2020
 ms.date: 08/09/2019
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: e48777a50ddf66a8e5493698fb401ff7201de03e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2b43776d2218f6f2a6a120e139dcae9d540f6f10
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114694"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040100"
 ---
 # <a name="options-dialog-box-windows-forms-designer--data-ui-customization"></a>Cuadro de diálogo Opciones: Diseñador de Windows Forms > Personalización de UI de datos
 

@@ -1,5 +1,6 @@
 ---
 title: Proyectos web del cuadro de diálogo Opciones
+description: Obtenga información sobre cómo usar las opciones de la sección Proyectos web para especificar el servidor web que usarán los proyectos web para el desarrollo en Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 07/14/2017
 ms.topic: reference
@@ -11,16 +12,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: efff521076b2d4a4b091ebf30b42f0d3ea4daa1f
-ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
+ms.openlocfilehash: 60aadb43c40e109fef9c4b9e2aa046c3f0d51edd
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93102641"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96044016"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>Cuadro de diálogo Opciones, Proyectos y soluciones, Proyectos web
 
-Establece el servidor web que se va a usar para el desarrollo en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Para acceder a estas opciones, seleccione **Herramientas > Opciones** , expanda **Proyectos y soluciones** y elija **Proyectos web**.
+Establece el servidor web que se va a usar para el desarrollo en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Para acceder a estas opciones, seleccione **Herramientas > Opciones**, expanda **Proyectos y soluciones** y elija **Proyectos web**.
 
 De forma predeterminada, cuando se ejecuta un proyecto web en Visual Studio, se usa el Servidor de desarrollo de Visual Studio. Para obtener más información, vea [Servidores web en Visual Studio para proyectos web ASP.NET](/previous-versions/aspnet/58wxa9w5\(v\=vs.120\)).
 

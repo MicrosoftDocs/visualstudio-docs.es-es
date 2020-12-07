@@ -1,5 +1,7 @@
 ---
 title: Solución de problemas de controladores de pruebas y agentes de pruebas
+description: Obtenga información sobre algunos problemas comunes que pueden aparecer cuando se trabaja con controladores y agentes de pruebas en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 10/20/2016
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.assetid: 77329348-3a5d-43de-b6cb-90f93296a081
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 51d7e15ec71eec7134dfc49b3515385970e593a0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e86811739df2d59e3de7980cfa346da68cc0eb43
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75565960"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330152"
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>Estrategias para solucionar problemas de controladores de pruebas y agentes de pruebas en pruebas de carga
 
@@ -139,6 +141,6 @@ Para corregir este error, debe enlazar el controlador de pruebas a uno de los ad
 
 Este proceso se aplica al controlador de pruebas, y al servicio y al proceso del agente de prueba. El valor de la propiedad `BindTo` se debe establecer para cada proceso que se ejecute en un equipo que tenga más de un adaptador de red. El procedimiento para establecer la propiedad `BindTo` es el mismo para los tres procesos, tal y como se especificó anteriormente para el controlador de pruebas. Para establecer los niveles de registro del servicio del agente de pruebas y el proceso del agente de pruebas, use los archivos de configuración que se especifican en [Establecer el nivel del registro en un equipo de controlador de pruebas](#set-the-logging-level-on-a-test-controller-computer).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Controladores y agentes de prueba](../test/configure-test-agents-and-controllers-for-load-tests.md)

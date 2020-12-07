@@ -1,5 +1,7 @@
 ---
 title: -ResetSettings (devenv.exe)
+description: Obtenga información sobre cómo usar el modificador ResetSettings de la línea de comandos de devenv para restaurar la configuración predeterminada de Visual Studio e iniciar automáticamente el IDE de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eebcf2c6796723e51c3aefdb12575aa89779429f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 22b3308b3bd1fed6ff1bc3d1f3a5622eb6f8284f
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593868"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040035"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings (devenv.exe)
 
@@ -55,7 +57,7 @@ devenv /ResetSettings [SettingsFile|DefaultCollectionSpecifier]
   | **Desarrollo web** | `Web` |
   | **Desarrollo web (solo código)** | `WebCode` |
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Si no se especifica ningún elemento *SettingsFile*, el IDE se abre con la configuración existente.
 
@@ -71,7 +73,7 @@ devenv /resetsettings "%USERPROFILE%\MySettings.vssettings"
 devenv /resetsettings CSharp
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Configuración del entorno](../environment-settings.md)
 - [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md)

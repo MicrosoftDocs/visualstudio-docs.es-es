@@ -1,5 +1,7 @@
 ---
 title: 'Paso 6: Asignar un nombre a los controles de botón'
+description: Obtenga información sobre cómo asignar un nombre a los controles de botón.
+ms.custom: SEO-VS-2020
 ms.date: 08/30/2016
 ms.assetid: 56b3baa3-651e-4ad4-8942-e334c5c57158
 ms.topic: tutorial
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5c23f48e803665e00155d1b546ace4e4ec7bc54
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: bfa5b69cc106aeae18012a7116fd511263423b2c
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579797"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480322"
 ---
 # <a name="step-6-name-your-button-controls"></a>Paso 6: Asignar un nombre a los controles de botón
 
@@ -27,18 +29,18 @@ Hay solo un <xref:System.Windows.Forms.PictureBox> en el formulario. Al agregarl
 > [!TIP]
 > En Visual Basic, la primera letra del nombre de un control se pone en mayúscula de forma predeterminada, de modo que los nombres son **PictureBox1**, **CheckBox1**, etc.
 
-Hay cuatro botones en el formulario, que el IDE ha denominado **button1**, **button2**, **button3**y **button4**. Solo con mirar los nombres actuales no sabemos cuál es el botón **Cerrar** ni cuál es el botón **Mostrar una imagen** . Por eso resulta útil asignar a los controles de botón nombres más descriptivos.
+Hay cuatro botones en el formulario, que el IDE ha denominado **button1**, **button2**, **button3** y **button4**. Solo con mirar los nombres actuales no sabemos cuál es el botón **Cerrar** ni cuál es el botón **Mostrar una imagen** . Por eso resulta útil asignar a los controles de botón nombres más descriptivos.
 
 ## <a name="to-name-your-button-controls"></a>Para dar un nombre a los controles de botón
 
 1. En el formulario, elija el botón **Cerrar** . (Si todavía están seleccionados todos los botones, elija la tecla **Esc** para cancelar la selección). Desplácese en la ventana **Propiedades** hasta que vea la propiedad **(Name)** . (La propiedad **(Name)** se encuentra cerca de la parte superior cuando las propiedades están por orden alfabético). Cambie el nombre a **closeButton**, como se muestra en la captura de pantalla siguiente.
 
-    ![Ventana Propiedades mostrando el nombre closeButton](../ide/media/express_setnameproperty.png)<br>Ventana ***Propiedades*** *mostrando el* *nombre* ***closeButton***
+    ![Ventana Propiedades mostrando el nombre closeButton](../ide/media/express_setnameproperty.png)<br>*Ventana *_Propiedades_* _ _mostrando el nombre* ***closeButton**_ _*
 
     > [!NOTE]
     > Intente cambiar el nombre del botón por **close Button**, con un espacio entre las palabras "close" (cerrar) y "Button" (botón). Al hacerlo, el IDE muestra un mensaje de error: "El valor de la propiedad no es válido". En los nombres de los controles no se permiten espacios (ni algunos otros caracteres).
 
-1. Cambie el nombre de los otros tres botones a **backgroundButton**, **clearButton**y **showButton**.
+1. Cambie el nombre de los otros tres botones a **backgroundButton**, **clearButton** y **showButton**.
 Puede comprobar los nombres eligiendo la lista desplegable de selección de controles de la ventana **Propiedades** . Aparecerán los nuevos nombres de los botones.
 
 1. Haga doble clic en el botón **Mostrar una imagen** del formulario. Como alternativa, elija el botón **Mostrar una imagen** del formulario y, después, presione la tecla **Entrar**. Al hacerlo, el IDE abre una pestaña adicional en la ventana principal denominada **Form1.cs**. (Si usa Visual Basic, la pestaña se denomina **Form1.vb**).
@@ -46,7 +48,7 @@ Puede comprobar los nombres eligiendo la lista desplegable de selección de cont
    En esta pestaña se muestra el archivo de código subyacente del formulario, como se muestra en la captura de pantalla siguiente.
 
     ![Pestaña Form1.cs con código de Visual C&#35;](../ide/media/express_showbuttoncode.png)<br>
-***Pestaña***  *Form1.cs con código de C#*
+*Pestaña *_Form1.cs_* _ _con código de C#*
 
     > [!NOTE]
     > En su lugar, es posible que la pestaña Form1.cs o Form1.vb muestre **showButton** como **ShowButton**.
@@ -69,7 +71,7 @@ Puede comprobar los nombres eligiendo la lista desplegable de selección de cont
 
    Lo que ve es el código llamado `showButton_Click()` (o `ShowButton_Click()`). El IDE lo agregó al código del formulario cuando abrió el archivo de código del botón **showButton** . En tiempo de diseño, cuando abra el archivo de código de un control de un formulario, se generará el código del control si este aún no existe. Este código, conocido como *método*, se ejecuta cuando ejecuta la aplicación y elige el control: en este caso, el botón **Mostrar una imagen**.
 
-1. Vuelva a elegir la pestaña del **Diseñador de Windows Forms** (**Form1.cs [Diseño]** ) y luego abra el archivo de código para que el botón **Borrar la imagen** cree un método para él en el código del formulario. Repita el procedimiento con los dos botones restantes. El IDE agrega cada vez un nuevo método al archivo de código del formulario.
+1. Vuelva a elegir la pestaña del **Diseñador de Windows Forms** (**Form1.cs [Diseño]**) y luego abra el archivo de código para que el botón **Borrar la imagen** cree un método para él en el código del formulario. Repita el procedimiento con los dos botones restantes. El IDE agrega cada vez un nuevo método al archivo de código del formulario.
 
 1. Si desea agregar varios métodos, abra el archivo de código del control **CheckBox** en el **Diseñador de Windows Forms** para hacer que el IDE agregue un método `checkBox1_CheckedChanged()`. Cada vez que el usuario activa o desactiva la casilla, se llama a este método.
 

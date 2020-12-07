@@ -1,5 +1,7 @@
 ---
 title: Opciones, editor de texto, extensión de archivo
+description: Obtenga información sobre cómo usar la página Extensión de archivo para especificar cómo se administrarán todos los archivos con determinadas extensiones de archivo mediante el IDE de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3711a87d84e25fd6f790cee62ecb71b2b046d0be
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1d0e782b0d141666ca7d1f79464d60afd89ef871
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596208"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039736"
 ---
 # <a name="options-text-editor-file-extension"></a>Opciones, editor de texto, extensión de archivo
 
@@ -38,11 +40,11 @@ Escriba la extensión de archivo cuyo editor asociado en el IDE quiere definir.
 
 Seleccione el diseñador o el editor del IDE en el que se abrirán los documentos con esta extensión de archivo. Cuando selecciona una opción "con codificación", se muestra un cuadro de diálogo, siempre que abra un documento que le permita seleccionar un esquema de codificación.
 
-**Add**
+**Add (Agregar)**
 
 Agrega una entrada que incluye la **extensión** y el **editor asociado** especificados a la lista de extensiones.
 
-**Remove**
+**Quitar**
 
 Elimina la entrada seleccionada de la lista de extensiones.
 
@@ -58,6 +60,6 @@ Seleccione esta opción si quiere especificar cómo se controlarán los archivos
 
 Proporciona la misma lista que el **Editor**. Seleccione el diseñador o el editor del IDE en el que se abrirán los documentos sin extensiones de archivo.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Cómo: Administrar los modos del editor](../../ide/how-to-manage-editor-modes.md)

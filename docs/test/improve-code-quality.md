@@ -1,5 +1,7 @@
 ---
 title: Herramientas de prueba
+description: Descubra cómo las herramientas de prueba de Visual Studio pueden ayudarle a usted y a su equipo a desarrollar y mantener altos estándares de excelencia de código.
+ms.custom: SEO-VS-2020
 ms.date: 03/16/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 5d61ab4ec7647921a928841d2a9c89fb84becdf9
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: f5eff2257988a4210e7f4cd8a8a37c66c57c185d
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928074"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328696"
 ---
 # <a name="first-look-at-testing-tools-in-visual-studio"></a>Primer vistazo a las herramientas de prueba de Visual Studio
 

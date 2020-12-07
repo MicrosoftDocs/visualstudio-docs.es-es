@@ -1,5 +1,7 @@
 ---
 title: -Project (devenv.exe)
+description: Obtenga información sobre cómo usar el modificador Project de la línea de comandos de devenv para identificar un único proyecto dentro de la configuración de la solución especificada para compilar, limpiar, recompilar o implementar el proyecto.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4b57a5bd51ff20de8da87798aa398db04bc1c7d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 90c1cdf37ddda7209b4f951e42ad07720e5cc40b
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75567780"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040115"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
 
@@ -37,11 +39,11 @@ devenv SolutionName {/Build|/Clean|/Deploy|/Rebuild} [SolnConfigName [/Project P
 
 - *SolutionName*
 
-  Obligatorio. Ruta de acceso completa y nombre del archivo de solución.
+  Necesario. Ruta de acceso completa y nombre del archivo de solución.
 
 - {`/Build`|`/Clean`|`/Deploy`|`/Rebuild`}
 
-  Obligatorio. [Compila](build-devenv-exe.md), [limpia](clean-devenv-exe.md), [implementa](deploy-devenv-exe.md) o [recompila](rebuild-devenv-exe.md) el proyecto.
+  Necesario. [Compila](build-devenv-exe.md), [limpia](clean-devenv-exe.md), [implementa](deploy-devenv-exe.md) o [recompila](rebuild-devenv-exe.md) el proyecto.
 
 - *SolnConfigName*
 
@@ -59,7 +61,7 @@ devenv SolutionName {/Build|/Clean|/Deploy|/Rebuild} [SolnConfigName [/Project P
 
   Opcional. Nombre de un archivo que quiera enviar al resultado de la herramienta. Si el archivo ya existe, la herramienta anexa el resultado al final del archivo.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 - Se tiene que usar como parte de un comando `devenv`, `/Build`, `/Clean`, `/Rebuild` o `/Deploy`.
 

@@ -1,5 +1,7 @@
 ---
 title: Usar la leyenda de la vista Diagramas para analizar pruebas de carga
+description: Obtenga información sobre la vista Gráficos del Analizador de pruebas de carga, la cual incluye un panel de leyenda en el que se muestra información de los contadores de rendimiento para un gráfico seleccionado.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: 0f6ba8e4-1343-419c-8a9f-240cf50efed7
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1455c67c3cb6d8dc99aeab91a7bfa63cce009c51
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 25200b691e0bebf2e3bd1c6252efb371ed9caeb2
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590805"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330074"
 ---
 # <a name="use-the-graphs-view-legend-to-analyze-load-tests"></a>Usar la leyenda de la vista Gráficos para analizar pruebas de carga
 
@@ -57,7 +59,7 @@ La selección de un elemento de la leyenda hace lo siguiente:
 > [!TIP]
 > Puede usar el botón desplegable **Opciones del gráfico** de la barra de herramientas del **Analizador de pruebas de carga** y seleccionar **Mostrar leyenda** para mostrar u ocultar el panel **Leyenda** asociado a la vista de gráfico.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Cómo: Acercar una región del gráfico](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)
 - [Analizar los resultados de pruebas de carga en la vista Gráficos](../test/analyze-load-test-results-in-the-graphs-view.md)

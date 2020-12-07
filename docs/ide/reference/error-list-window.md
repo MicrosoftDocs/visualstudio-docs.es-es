@@ -1,5 +1,7 @@
 ---
 title: Lista de errores (ventana)
+description: Obtenga información sobre la ventana Lista de errores y cómo usarla para realizar tareas relacionadas con la resolución de los errores que se muestran en ella.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,14 +17,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c6d925f61714c524f97a57690870229b2340d21
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: bf008bd7c1355f5991890ca5ab8bd999f2a8dd32
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75569668"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305444"
 ---
-# <a name="error-list-window"></a>Lista de errores (ventana)
+# <a name="error-list-window"></a>Ventana de lista de errores
 
 > [!NOTE]
 > La **Lista de errores** muestra información sobre un mensaje de error determinado. Puede copiar el número o el texto de la cadena del error de la ventana **Salida**. Para mostrar la ventana **Salida**, presione **Ctrl**+**Alt**+**O**. Vea [Resultados (ventana)](../../ide/reference/output-window.md).
@@ -45,7 +47,7 @@ Para mostrar la **Lista de errores**, elija **Ver** > **Lista de errores** o bie
 
 Puede seleccionar las pestañas **Errores**, **Advertencias** y **Mensajes** para ver diferentes niveles de información.
 
-Para ordenar la lista, haga clic en cualquier encabezado de columna. Para ordenar de nuevo por otra columna, mantenga presionada la tecla **Mayús** y haga clic en otro encabezado de columna. Para seleccionar las columnas que se muestran y las que están ocultas, seleccione **Mostrar columnas** en el menú contextual. Si desea cambiar el orden en el que se muestran las columnas, arrastre cualquier encabezado de columna hacia la izquierda o la derecha.
+Para ordenar la lista, haga clic en cualquier encabezado de columna. Para ordenar de nuevo por otra columna, mantenga presionada la tecla **Mayús** y haga clic en otro encabezado de columna. Para seleccionar las columnas que se muestran y las que están ocultas, seleccione **Mostrar columnas** en el menú contextual. Para cambiar el orden en que se muestran las columnas, arrastre cualquier encabezado de columna hacia la izquierda o la derecha.
 
 ## <a name="error-list-filters"></a>Filtros de la lista de errores
 
@@ -66,7 +68,7 @@ Si se aplica un filtro actualmente al resultado de la búsqueda, el nombre del f
 
 La lista que se muestra en el lado derecho de la barra de herramientas especifica si se muestran los errores desde la compilación (los errores resultantes de una operación de compilación), desde IntelliSense (los errores detectados antes de ejecutar una compilación) o desde ambos.
 
-## <a name="search"></a>Search
+## <a name="search"></a>Buscar
 
 Use el cuadro de texto **Lista de errores de búsqueda** en el lado derecho de la barra de herramientas **Lista de errores** para buscar errores específicos en la lista de errores. Puede buscar en cualquier columna visible de la lista de errores. Los resultados de la búsqueda siempre se ordenan en función de la columna que tenga prioridad de ordenación en lugar de la consulta o el filtro aplicado. Si presiona la tecla **Esc** mientras el foco está en la **Lista de errores**, se borra el término de búsqueda y los resultados filtrados de la búsqueda. También puede hacer clic en la **X** que se muestra en el lado derecho del cuadro de texto para borrarlos.
 
@@ -78,13 +80,13 @@ Puede copiar la lista de errores y guardarla en un archivo. Seleccione los error
 
 severity
 
-Muestra los diferentes tipos de entrada de la **Lista de errores** (**Error**, **Mensaje**, **Advertencia**, **Advertencia (activa)** y **Advertencia (inactiva)** .
+Muestra los diferentes tipos de entrada de la **Lista de errores** (**Error**, **Mensaje**, **Advertencia**, **Advertencia (activa)** y **Advertencia (inactiva)**.
 
 Código
 
 Muestra el código del error.
 
-Description
+Descripción
 
 Muestra el texto de la entrada.
 

@@ -1,5 +1,7 @@
 ---
 title: Compatibilidad con árabe y hebreo
+description: Descubra cómo mostrar textos en árabe y hebreo y cómo escribir texto bidireccional para los valores y los nombres de objetos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57bccfccb77c5a80fd2630680564f88f08d7ca5b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: aa2520527259c476f84d83cdff81d9f96bc2bbd7
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75592001"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96478970"
 ---
 # <a name="support-for-bidirectional-languages-in-visual-studio"></a>Compatibilidad con idiomas bidireccionales en Visual Studio
 
@@ -56,7 +58,7 @@ A los siguientes elementos se les puede asignar nombre en árabe o hebreo y Visu
 
 - Atributos y metadatos.
 
-- Valores de propiedades.
+- Valores de propiedad
 
    Puede usar texto en árabe o hebreo en la ventana **Propiedades**. La ventana le permite cambiar entre la lectura de derecha a izquierda y de izquierda a derecha mediante las pulsaciones de tecla estándar de Windows (**Ctrl**+**Mayús Der** para el sentido de derecha a izquierda y **Ctrl**+**Mayús Izq** para el sentido de izquierda a derecha).
 
@@ -74,7 +76,7 @@ A los siguientes elementos se les puede asignar nombre en árabe o hebreo y Visu
 
 ### <a name="file-encoding"></a>Codificación de archivos
 
-Puede guardar y abrir archivos con una codificación Unicode o específica del idioma. Para más información, consulte [Cómo: Guardar y abrir archivos con codificación](../ide/how-to-save-and-open-files-with-encoding.md).
+Puede guardar y abrir archivos con una codificación Unicode o específica del idioma. Para obtener más información, vea [Cómo: Guardar y abrir archivos con codificación](../ide/how-to-save-and-open-files-with-encoding.md).
 
 ## <a name="right-to-left-reading-order"></a>Lectura de derecha a izquierda
 
@@ -86,6 +88,6 @@ El orden de lectura de derecha a izquierda no se admite en las siguientes ubicac
 
 - El editor de código y el editor de texto no admiten la lectura de derecha a izquierda. Puede escribir texto en un idioma bidireccional, pero el sentido de la lectura siempre es de izquierda a derecha.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Desarrollo de aplicaciones localizadas y globalizadas](globalizing-and-localizing-applications.md)

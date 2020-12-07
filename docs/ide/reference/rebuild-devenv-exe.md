@@ -1,5 +1,7 @@
 ---
 title: -Rebuild (devenv.exe)
+description: Obtenga información sobre cómo usar el modificador Rebuild de la línea de comandos de devenv para limpiar y, después, compilar la configuración de solución especificada.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76fe4bcf3441163604d93e9264ed6f78fcf0224b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8086e5ffb2ebdd154e95eda18e04ed5b64cd3dd2
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75565622"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040048"
 ---
 # <a name="rebuild-devenvexe"></a>/Rebuild (devenv.exe)
 
@@ -35,7 +37,7 @@ devenv SolutionName /Rebuild [SolnConfigName [/Project ProjName [/ProjectConfig 
 
 - *SolutionName*
 
-  Obligatorio. Ruta de acceso completa y nombre del archivo de solución.
+  Necesario. Ruta de acceso completa y nombre del archivo de solución.
 
 - *SolnConfigName*
 
@@ -53,7 +55,7 @@ devenv SolutionName /Rebuild [SolnConfigName [/Project ProjName [/ProjectConfig 
 
   Opcional. Nombre de un archivo que quiera enviar al resultado de la herramienta. Si el archivo ya existe, la herramienta anexa el resultado al final del archivo.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 - Este modificador realiza la misma acción que el comando de menú **Recompilar solución** en el IDE.
 

@@ -1,5 +1,7 @@
 ---
 title: Generación de pruebas | Herramientas de prueba para desarrolladores de Microsoft IntelliTest
+description: Obtenga información sobre cómo IntelliTest genera casos de prueba a partir de los métodos de la implementación y, después, genera entradas para los métodos y comprueba las aserciones en los datos.
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: c251a1539b42da2b4e92c2996457075f3c3be135
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 790146e3014765224f22bd247732c7ac3f062269
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315179"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329450"
 ---
 # <a name="test-generation"></a>Generación de pruebas
 
@@ -116,7 +118,7 @@ public partial class ListTest {
 
 IntelliTest proporciona numerosos atributos de validación para ayudar a las excepciones de evaluación de prioridades en excepciones esperadas y excepciones inesperadas.
 
-Las excepciones esperadas generan casos de prueba negativos con la anotación adecuada como **ExpectedException(typeof(*xxx*))** , mientras que las excepciones inesperadas generan casos de prueba con errores.
+Las excepciones esperadas generan casos de prueba negativos con la anotación adecuada como **ExpectedException(typeof(*xxx*))**, mientras que las excepciones inesperadas generan casos de prueba con errores.
 
 ```csharp
 [PexMethod, PexAllowedException(typeof(ArgumentNullException))]
@@ -235,7 +237,7 @@ namespace MyTests
 ```
 
 <a name="further-reading"></a>
-## <a name="further-reading"></a>Información adicional
+## <a name="further-reading"></a>Lecturas adicionales
 
 * [Prueba para los enlaces de código](https://devblogs.microsoft.com/devops/smart-unit-tests-test-to-code-binding-test-case-management/)
 * [Una prueba para controlarlo todo](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/)

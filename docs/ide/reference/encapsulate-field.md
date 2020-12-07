@@ -1,5 +1,7 @@
 ---
 title: Refactorización de un campo a una propiedad
+description: Obtenga información sobre cómo usar el menú Acciones rápidas y refactorizaciones para convertir un campo en una propiedad.
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -12,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: db0bd17cd0bead3807f857b2198b8d4ea4c72ffb
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e4ac28646af9d68accd18c0d40480dd22e47b023
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75569717"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305473"
 ---
 # <a name="encapsulate-a-field-refactoring"></a>Refactorización de encapsulamiento de un campo
 
@@ -33,7 +35,7 @@ Esta refactorización se aplica a lo siguiente:
 
 **Por qué:** Desea proporcionar acceso de otras clases a un campo, pero no desea que esas clases tengan acceso directo.  Al encapsular el campo en una propiedad, puede escribir código para comprobar el valor que se está asignando, por ejemplo.
 
-## <a name="how-to"></a>Procedimiento
+## <a name="how-to"></a>Instrucciones
 
 1. Resalte o coloque el cursor de texto en el nombre del campo que se va a encapsular:
 
@@ -54,7 +56,7 @@ Esta refactorización se aplica a lo siguiente:
       - Seleccione **Editar > Refactorizar > encapsular campo**.
       - Haga clic con el botón derecho en el código, seleccione el menú **Acciones rápidas y refactorizaciones** y elija la entrada **Encapsular campo** en el menú emergente de la ventana Vista previa.
 
-   Selección | Description
+   Número de selección | Descripción
    --------- | -----------
    **Encapsular campo (y usar propiedad)** | Encapsula el campo con una propiedad y actualiza todos los usos del campo para utilizar la propiedad generada
    **Encapsular campo (pero seguir usando el campo)** | Encapsula el campo con una propiedad, pero deja intactos todos los usos del campo

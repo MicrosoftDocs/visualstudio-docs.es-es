@@ -1,5 +1,7 @@
 ---
 title: Mostrar pila de llamadas (Comando)
+description: Obtenga información sobre el comando Mostrar pila de llamadas y cómo muestra la pila de llamadas actual.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34de768f41079311505ae7948502bb4356814ec7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 845d48f6a0fcc2b844777870bd7c9551f4a4d471
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770687"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305349"
 ---
 # <a name="list-call-stack-command"></a>Mostrar pila de llamadas (Comando)
 Muestra la pila de llamadas actual.
@@ -38,7 +40,7 @@ Debug.ListCallStack [/Count:number] [/ShowTypes:yes|no]
 `index`\
 Opcional. Establece el marco de pila actual y no muestra ninguna salida.
 
-## <a name="switches"></a>Modificadores
+## <a name="switches"></a>Conmutadores
 Cada modificador se puede invocar mediante su forma completa o una forma abreviada.
 
 /Count:`number` [o] /C:`number`
@@ -85,7 +87,7 @@ Thread:`n`
 
 Opcional. Muestra la pila de llamadas del subproceso `n`. Si no se especifica ningún subproceso, muestra la pila de llamadas del subproceso actual.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 Los cambios realizados en los argumentos o los modificadores se aplican a las invocaciones posteriores de este comando. Si emite el propio Debug.ListCallStackby, se muestra la pila de llamadas completa. Si, por ejemplo, especifica un índice,
 
 ```cmd
@@ -108,11 +110,11 @@ para establecer el marco de pila en el segundo marco.
 >Debug.CallStack /Count:4 /ShowTypes:yes
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Comando Mostrar desensamblador](../../ide/reference/list-disassembly-command.md)
-- [Comando Mostrar subprocesos](../../ide/reference/list-threads-command.md)
+- [Mostrar desensamblador (comando)](../../ide/reference/list-disassembly-command.md)
+- [Mostrar subprocesos (Comando)](../../ide/reference/list-threads-command.md)
 - [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Ventana Comandos](../../ide/reference/command-window.md)
 - [Cuadro Buscar/Comando](../../ide/find-command-box.md)
-- [Alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

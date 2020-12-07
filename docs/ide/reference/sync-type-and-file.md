@@ -1,5 +1,7 @@
 ---
 title: Cambio de un nombre de archivo para que coincida con un tipo
+description: Obtenga información sobre cómo usar el menú Acciones rápidas y refactorizaciones para cambiar el nombre de un tipo para que coincida con el nombre de archivo, o bien para cambiar el nombre de un archivo para que coincida con el tipo que contiene.
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5b7a42a174fecd078e804f2ab3c35fbe442364a6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 020dcedd6b0cb2117984d45548b5c1e099c67aee
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594401"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479828"
 ---
 # <a name="sync-a-type-to-a-filename-or-a-filename-to-a-type-refactoring"></a>Refactorización de sincronización de un tipo con un nombre de archivo o de un nombre de archivo con un tipo
 
@@ -34,7 +36,7 @@ Esta refactorización se aplica a lo siguiente:
 > [!NOTE]
 > Esta refactorización aún no está disponible para proyectos de .NET Standard y .NET Core.
 
-## <a name="how-to"></a>Procedimiento
+## <a name="how-to"></a>Instrucciones
 
 1. Resalte o coloque el cursor de texto en el nombre del tipo que se va a sincronizar:
 

@@ -1,5 +1,7 @@
 ---
 title: Pruebas de cobertura de código
+description: Obtenga información sobre cómo usar la característica de cobertura de código de Visual Studio para determinar qué proporción del código del proyecto se está probando mediante pruebas codificadas.
+ms.custom: SEO-VS-2020
 ms.date: 07/23/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2d1b51661d9fc9a5492d123bdacd6c49d241ed87
-ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
+ms.openlocfilehash: c2c7bcb270184bcc140dbadef63af1315df765dc
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91959780"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330061"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Usar cobertura de código para determinar la cantidad de código que se está probando
 
@@ -292,7 +294,7 @@ Para ejecutar pruebas desde la línea de comandos, utilice *vstest.console.exe*.
 
    ::: moniker-end
 
-2. En el símbolo del sistema, ejecute el siguiente comando:
+2. Escriba el siguiente comando en el símbolo del sistema:
 
    ```shell
    vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage
@@ -300,11 +302,11 @@ Para ejecutar pruebas desde la línea de comandos, utilice *vstest.console.exe*.
 
 Para obtener más información, vea [Opciones de la línea de comandos para VSTest.Console.exe](vstest-console-options.md).
 
-## <a name="troubleshoot"></a>Solucionar problemas
+## <a name="troubleshoot"></a>Solución de problemas
 
 Si no ve los resultados de la cobertura de código, puede encontrar ayuda en el artículo [Solución de problemas de cobertura de código](../test/troubleshooting-code-coverage.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Personalizar el análisis de cobertura de código](../test/customizing-code-coverage-analysis.md)
 - [Solucionar problemas de cobertura de código](../test/troubleshooting-code-coverage.md)

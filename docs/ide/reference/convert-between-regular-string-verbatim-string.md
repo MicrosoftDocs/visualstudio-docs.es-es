@@ -1,5 +1,6 @@
 ---
 title: Conversión entre literales de cadenas regulares y textuales
+description: Obtenga información sobre cómo usar el menú Acciones rápidas y refactorizaciones para realizar conversiones entre literales de cadenas regulares y literales de cadenas textuales.
 ms.custom: SEO-VS-2020
 ms.date: 06/08/2020
 ms.topic: reference
@@ -10,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: f411c0ac56adeb30370cbfc6f0f908ffd25bed05
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: d50b979902e6eb5a606305b262f5009caef87467
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93045901"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040464"
 ---
 # <a name="convert-between-regular-string-and-verbatim-string-literals-refactoring"></a>Conversión entre literales de cadenas regulares y literales de cadenas textuales: refactorización
 

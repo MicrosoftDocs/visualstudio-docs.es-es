@@ -1,5 +1,7 @@
 ---
 title: -NoSplash (devenv.exe)
+description: Obtenga información sobre cómo usar el modificador NoSplash de la línea de comandos de devenv para impedir que se muestre la pantalla de presentación.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -12,12 +14,12 @@ ms.author: v-dele
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a1e8118faa743398271fb282a2603aab5fcd76b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e86398663ea7b6c8209d4123ab3cb12651d4491e
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62950660"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96044003"
 ---
 # <a name="nosplash-devenvexe"></a>/NoSplash (devenv.exe)
 
@@ -39,7 +41,7 @@ devenv /NoSplash [File1[ FileN]...]
 
   Opcional. Uno o más archivos adicionales que se abrirán en la instancia existente de Visual Studio.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este modificador oculta la pantalla de presentación. Al omitir el modificador, se mostrará la pantalla de presentación. Para examinar con más detalle la pantalla de presentación (por ejemplo, para comprobar el icono del producto de VSPackage), use el modificador [/Splash](../../extensibility/devenv-command-line-switches-for-vspackage-development.md).
 

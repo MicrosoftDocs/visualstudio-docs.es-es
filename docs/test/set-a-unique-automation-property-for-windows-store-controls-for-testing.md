@@ -1,5 +1,6 @@
 ---
 title: 'Establecimiento de una propiedad única de automatización: prueba de controles de UWP'
+description: Obtenga información sobre cómo asignar una propiedad única de automatización según el tipo de control XAML de la aplicación para UWP basada en XAML para ejecutar una prueba automatizada de IU.
 ms.custom: SEO-VS-2020
 ms.date: 05/31/2018
 ms.topic: how-to
@@ -8,12 +9,12 @@ manager: jillfra
 ms.workload:
 - uwp
 author: mikejo5000
-ms.openlocfilehash: 1790ac51f513ddcb42500eb271212b68a4aefe63
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 5af4f9c70696144e0efb420ab27860a1969bddc6
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810225"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328334"
 ---
 # <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>Establecer una propiedad única de automatización para controles UWP para pruebas
 
@@ -44,7 +45,7 @@ Establezca **AutomationProperties.Name** en **ButtonY** mediante la propiedad **
 Establezca **AutomationProperties.AutomationId** en **ButtonX** de forma explícita en el código XAML del control.
 
 ```xaml
-<Button AutomationProperties.AutomationId="ButtonX" Height="31" HorizontalAlignment="Left" Margin="23,26,0,0"  VerticalAlignment="Top" Width="140" Click="ButtonX_Click" />
+<Button AutomationProperties.AutomationId="ButtonX" Height="31" HorizontalAlignment="Left" Margin="23,26,0,0"  VerticalAlignment="Top" Width="140" Click="ButtonX_Click" />
 ```
 
 Establezca **AutomationProperties.Name** en **ButtonY** de forma explícita en el código XAML del control.

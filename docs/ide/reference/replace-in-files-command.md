@@ -1,5 +1,7 @@
 ---
 title: Reemplazar en archivos (Comando)
+description: Obtenga información sobre el comando Reemplazar en archivos y cómo reemplaza el texto de los archivos mediante algunas de las opciones disponibles en la pestaña Reemplazar en archivos de la ventana Buscar y reemplazar.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96f7d7ae0ea5eaf0de1a6fa4357e2750cdd8c22e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: da2bfe820f70925a979548abeab955865f2bbc2c
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75565479"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304150"
 ---
 # <a name="replace-in-files-command"></a>Reemplazar en archivos (Comando)
 Reemplaza texto de los archivos mediante el uso de un subconjunto de las opciones disponibles en la pestaña **Reemplazar en archivos** de la ventana **Buscar y reemplazar**.
@@ -39,9 +41,9 @@ Obligatorio. Texto que debe coincidir.
 
 `replacewith`
 
-Obligatorio. Texto que va a sustituir el texto coincidente.
+Necesario. Texto que va a sustituir el texto coincidente.
 
-## <a name="switches"></a>Modificadores
+## <a name="switches"></a>Conmutadores
 /all o /a
 
 Opcional. Reemplaza todas las apariciones del texto de la búsqueda por el texto de reemplazo.
@@ -105,11 +107,11 @@ En este ejemplo se busca `btnCancel` y se reemplaza por `btnReset` en todos los 
 >Edit.ReplaceinFiles btnCancel btnReset /lookin:"c:/my visual studio projects" /ext:.cls /text2
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Buscar y reemplazar texto](../../ide/finding-and-replacing-text.md)
 - [Reemplazar en archivos](../../ide/replace-in-files.md)
 - [Ventana Comandos](../../ide/reference/command-window.md)
 - [Cuadro Buscar/Comando](../../ide/find-command-box.md)
 - [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

@@ -1,5 +1,7 @@
 ---
 title: -LCID (devenv.exe)
+description: Obtenga información sobre cómo usar el modificador LCID de la línea de comandos de devenv para establecer el idioma predeterminado que se usa para el texto, la moneda y otros valores del IDE.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -18,12 +20,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cabbf36adb5019543b3cfb72b0b0e56976517d2d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: eda3a4d9242655af1b018664273ceb693c7e775c
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77557934"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96043990"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
 
@@ -39,9 +41,9 @@ devenv {/LCID|/L} LocaleID
 
 - *LocaleID*
 
-  Obligatorio. Identificador de configuración regional (LCID) del idioma que especifique.
+  Necesario. Identificador de configuración regional (LCID) del idioma que especifique.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Carga el IDE y establece el idioma natural predeterminado para el entorno. Este cambio persiste entre sesiones y, en el IDE, se muestra en **Herramientas** > **Opciones** > **Entorno** > **Configuración internacional** > **cuadro Idioma**.
 
@@ -77,5 +79,5 @@ devenv /LCID 1033
 ## <a name="see-also"></a>Vea también
 
 - [Modificadores de línea de comandos para Devenv](../../ide/reference/devenv-command-line-switches.md)
-- [Configuración internacional, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/international-settings-environment-options-dialog-box.md)
+- [Configuración internacional, Entorno, Cuadro de diálogo Opciones](../../ide/reference/international-settings-environment-options-dialog-box.md)
 - [Personalizar los diseños de ventana](../../ide/customizing-window-layouts-in-visual-studio.md)

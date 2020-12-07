@@ -1,5 +1,7 @@
 ---
 title: API Microsoft.VisualStudio.TestTools.CppUnitTestFramework
+description: En este artículo se describen los miembros de CppUnitTestFramework, los cuales puede usar para escribir pruebas unitarias de C++ basadas en el marco de pruebas unitarias nativo de Microsoft.
+ms.custom: SEO-VS-2020
 ms.date: 09/27/2019
 ms.topic: reference
 ms.author: corob
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: corob-msft
-ms.openlocfilehash: 16ea629312237dd859e9eb1aad21b9b219de7229
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b552ff667d4b7aef5f982d4fb0cda78d65c98ed6
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82109434"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329190"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Referencia de API Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 

@@ -1,5 +1,7 @@
 ---
 title: Características del editor de código
+description: Obtenga información sobre las características que proporciona el editor de código de Visual Studio para facilitarle la escritura y la administración del código y del texto.
+ms.custom: SEO-VS-2020
 ms.date: 02/23/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cf1cdbebab5d59091454e340b567eef7430efd3
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: a2363d350c91ac72b21784f490778010eba12007
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85532631"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480192"
 ---
 # <a name="features-of-the-code-editor"></a>Características del editor de código
 
@@ -35,7 +37,7 @@ Los diferentes lenguajes de Visual Studio ofrecen distintos conjuntos de caracte
 |Característica|Descripción|
 |-|-|
 |Colores de la sintaxis|Algunos elementos de la sintaxis de los archivos de código y marcado están coloreados de forma distinta para distinguirlos. Por ejemplo, las palabras clave (como `using` en C# y `Imports` en Visual Basic) son de un color, pero los tipos (como `Console` y `Uri`) son de otro. También se colorean otros elementos de la sintaxis, como los comentarios y los literales de cadena. C++ utiliza el color para diferenciar entre tipos, enumeraciones y macros, entre otros tokens.<br /><br /> Puede ver el color predeterminado para cada tipo y puede cambiar el color de cualquier elemento específico de la sintaxis en [Fonts and Colors, Environment, Options Dialog Box](../ide/reference/fonts-and-colors-environment-options-dialog-box.md), que puede abrir desde el menú **Herramientas**.|
-|Marcas de errores y advertencias|Al agregar código y compilar su solución, puede que vea (a) que aparecen subrayados ondulados de diferentes colores o (b) bombillas en el código. Los subrayados ondulados rojos indican errores de sintaxis, los subrayados ondulados azules indican errores del compilador, los subrayados ondulados verdes indican advertencias y los subrayados ondulados púrpura, otros tipos de errores. Las [acciones rápidas](../ide/quick-actions.md) sugieren correcciones para problemas y facilitan la aplicación de la corrección.<br /><br /> Puede ver el color predeterminado de cada subrayado ondulado de error y advertencia en el cuadro de diálogo **Herramientas** > **Opciones** > **Entorno** > **Fuentes y colores**. Busque **Error de sintaxis**, **Error del compilador**, **Advertencia**y **Otro Error**.|
+|Marcas de errores y advertencias|Al agregar código y compilar su solución, puede que vea (a) que aparecen subrayados ondulados de diferentes colores o (b) bombillas en el código. Los subrayados ondulados rojos indican errores de sintaxis, los subrayados ondulados azules indican errores del compilador, los subrayados ondulados verdes indican advertencias y los subrayados ondulados púrpura, otros tipos de errores. Las [acciones rápidas](../ide/quick-actions.md) sugieren correcciones para problemas y facilitan la aplicación de la corrección.<br /><br /> Puede ver el color predeterminado de cada subrayado ondulado de error y advertencia en el cuadro de diálogo **Herramientas** > **Opciones** > **Entorno** > **Fuentes y colores**. Busque **Error de sintaxis**, **Error del compilador**, **Advertencia** y **Otro Error**.|
 |Coincidencia de llaves|Cuando el punto de inserción se coloca en una llave de apertura en un archivo de código, tanto esta como la llave de cierre se resaltan. Esta característica le permite saber inmediatamente si faltan llaves o si estas están mal colocadas. Puede activar o desactivar la coincidencia de llaves mediante la configuración **Resaltar con el delimitador automático** (**Herramientas** > **Opciones** > **Editor de texto**). Puede cambiar el color de resaltado en la configuración **Fuentes y colores** (**Herramientas** > **Opciones** > **Entorno**). Busque **Coincidencia de llaves (resaltar)** o **Coincidencia de llaves (rectángulo)** .|
 |Visualizador de estructura|Las líneas de puntos conectan las llaves que coinciden en los archivos de código, lo que hace que sea más fácil ver los pares de llaves de apertura y cierre. Esto puede ayudarle a encontrar código en el código base más rápidamente. Puede activar o desactivar estas líneas con **Mostrar líneas guía de estructura** en la sección **Mostrar** de la página **Herramientas** > **Opciones** > **Editor de texto** > **General**.|
 |Números de línea|Se pueden mostrar números de línea en el margen izquierdo de la ventana de código. No se muestran de forma predeterminada. Puede activar esta opción en la configuración de **Editor de texto Todos los lenguajes** (**Herramientas** > **Opciones** > **Editor de texto** > **Todos los lenguajes**). Puede mostrar números de línea para lenguajes de programación individuales si cambia la configuración de esos lenguajes (**Herramientas** > **Opciones** > **Editor de texto** >  **\<language>** ). Si quiere que se impriman los números de línea, seleccione **Incluir números de línea** en el cuadro de diálogo **Imprimir**.|

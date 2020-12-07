@@ -1,5 +1,7 @@
 ---
 title: Datos fundamentales de las pruebas unitarias
+description: Descubra cómo el Explorador de pruebas de Visual Studio proporciona una forma flexible y eficaz de ejecutar las pruebas unitarias y ver los resultados.
+ms.custom: SEO-VS-2020
 ms.date: 08/07/2019
 ms.topic: conceptual
 f1_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77ac5ffd14f97fd6fdd753327fe193ceb80ea57e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f563d37e6456ec775b2e70d59e07b0627c82994b
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75846930"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330204"
 ---
 # <a name="unit-test-basics"></a>Conceptos básicos de las pruebas unitarias
 
@@ -26,7 +28,7 @@ Puede generar rápidamente proyectos y métodos de prueba a partir del código o
 
 El Explorador de pruebas también puede ejecutar marcos de pruebas unitarias de terceros y de código abierto que hayan implementado interfaces complementarias del Explorador de pruebas. Muchos de estos marcos se pueden agregar a través del Administrador de extensiones de Visual Studio y la galería de Visual Studio. Para más información, vea [Instalar marcos de prueba unitaria de terceros](../test/install-third-party-unit-test-frameworks.md).
 
-## <a name="get-started"></a>Primeros pasos
+## <a name="get-started"></a>Introducción
 
 Para obtener una introducción a las pruebas unitarias que le guíe directamente en la codificación, vea uno de estos temas:
 
@@ -34,7 +36,7 @@ Para obtener una introducción a las pruebas unitarias que le guíe directamente
 
 - [Inicio rápido: Desarrollo controlado por pruebas con el Explorador de pruebas](../test/quick-start-test-driven-development-with-test-explorer.md)
 
-- [Escribir pruebas unitarias para C/C++ en Visual Studio](../test/writing-unit-tests-for-c-cpp.md)
+- [Escritura de pruebas unitarias para C/C++ en Visual Studio](../test/writing-unit-tests-for-c-cpp.md)
 
 ## <a name="the-mybank-solution-example"></a>Ejemplo de la solución MyBank
 
@@ -312,7 +314,7 @@ Para obtener más información, consulte [Ejecutar pruebas unitarias con el Expl
 
 **P: ¿Cómo puedo depurar las pruebas unitarias?**
 
-**R:** Use el **Explorador de pruebas** para iniciar una sesión de depuración de las pruebas. La ejecución paso a paso del código con el depurador de Visual Studio permite avanzar y retroceder sin problemas entre las pruebas unitarias y el proyecto objeto de prueba. Para iniciar la depuración:
+**R:** Use el **Explorador de pruebas** para iniciar una sesión de depuración de pruebas. La ejecución paso a paso del código con el depurador de Visual Studio permite avanzar y retroceder sin problemas entre las pruebas unitarias y el proyecto objeto de prueba. Para iniciar la depuración:
 
 1. En el editor de Visual Studio, establezca un punto de interrupción en uno o varios métodos de prueba que desee depurar.
 
@@ -321,7 +323,7 @@ Para obtener más información, consulte [Ejecutar pruebas unitarias con el Expl
 
 2. En el **Explorador de pruebas**, seleccione los métodos de prueba y después elija **Depurar pruebas seleccionadas** en el menú contextual.
 
-Más información sobre la [depuración de pruebas unitarias](../debugger/debugger-feature-tour.md).
+Obtenga más información sobre la [depuración de pruebas unitarias](../debugger/debugger-feature-tour.md).
 
 **P: Si uso TDD, ¿cómo puedo generar el código a partir de las pruebas?**
 
@@ -334,9 +336,9 @@ Más información sobre la [depuración de pruebas unitarias](../debugger/debugg
 ![Menú de acción rápida Generar código auxiliar del método](../test/media/vs-2019/basics-generate-method-tdd.png)
 ::: moniker-end
 
-**P: ¿Puedo crear pruebas unitarias que acepten varios conjuntos de datos como entrada para ejecutar la prueba?**
+**P: ¿Puedo crear pruebas unitarias que usan varios conjuntos de datos como entrada para ejecutar la prueba?**
 
-**R:** Sí. Los*métodos de prueba controlados por datos* permiten probar un intervalo de valores con un solo método de prueba unitaria. En el método de prueba, use un atributo `DataSource` que especifique el origen de datos y la tabla que contienen los valores de las variables que desea probar.  En el cuerpo del método, se pueden asignar los valores de fila a las variables mediante el indizador `TestContext.DataRow[`*ColumnName*`]` .
+**R:** Sí. Los *métodos de prueba controlados por datos* permiten probar un intervalo de valores con un solo método de prueba unitaria. En el método de prueba, use un atributo `DataSource` que especifique el origen de datos y la tabla que contienen los valores de las variables que desea probar.  En el cuerpo del método, se pueden asignar los valores de fila a las variables mediante el indizador `TestContext.DataRow[`*ColumnName*`]` .
 
 > [!NOTE]
 > Estos procedimientos se aplican solamente a los métodos de prueba que se escriben usando el marco de pruebas unitarias de Microsoft para código administrado. Si usa otro marco, consulte una función equivalente en la documentación correspondiente.
@@ -366,7 +368,7 @@ El método con el atributo se ejecuta una vez para cada fila de la tabla. El **E
 
 Más información sobre [pruebas unitarias controladas por datos](../test/how-to-create-a-data-driven-unit-test.md).
 
-**P: ¿Puedo ver la cantidad de código que se prueba en las pruebas unitarias?**
+**P: ¿Puedo ver la cantidad de código probado en las pruebas unitarias?**
 
 **R:** Sí. Con la herramienta de cobertura de código de Visual Studio se puede determinar la cantidad del código que las pruebas unitarias están probando realmente en Visual Studio Enterprise. Se admiten los lenguajes nativos y administrados, así como todos los marcos de pruebas unitarias que pueda ejecutar el Marco de pruebas unitarias.
 
@@ -386,9 +388,9 @@ Más información sobre [cobertura de código](../test/using-code-coverage-to-de
 
 Microsoft Fakes usa dos enfoques para crear las clases de sustitución de dependencias externas:
 
-1. Los*códigos auxiliares* generan clases de sustitución derivadas de la interfaz primaria de la clase de dependencia de destino. Los métodos de código auxiliar se pueden sustituir por métodos virtuales públicos de la clase de destino.
+1. Los *códigos auxiliares* generan clases de sustitución derivadas de la interfaz primaria de la clase de dependencia de destino. Los métodos de código auxiliar se pueden sustituir por métodos virtuales públicos de la clase de destino.
 
-2. Las*correcciones de compatibilidad (shim)* usan la instrumentación del runtime para desviar las llamadas a un método de destino a un método shim de sustitución para métodos no virtuales.
+2. Las *correcciones de compatibilidad (shim)* usan la instrumentación del runtime para desviar las llamadas a un método de destino a un método shim de sustitución para métodos no virtuales.
 
 En ambos enfoques, use los delegados generados de las llamadas al método de dependencia para especificar el comportamiento deseado en el método de prueba.
 
@@ -396,7 +398,7 @@ Más información sobre cómo [aislar métodos de prueba unitaria con Microsoft 
 
 **P: ¿Puedo usar otros marcos de pruebas unitarias para crear pruebas unitarias?**
 
-**R:** Sí, siga estos pasos para [buscar e instalar otros marcos](../test/install-third-party-unit-test-frameworks.md). Después de reiniciar Visual Studio, vuelva a abrir la solución para crear las pruebas unitarias y seleccione los marcos instalados aquí:
+**A:** Sí, siga estos pasos para [buscar e instalar otros marcos](../test/install-third-party-unit-test-frameworks.md). Después de reiniciar Visual Studio, vuelva a abrir la solución para crear las pruebas unitarias y seleccione los marcos instalados aquí:
 
 ![Seleccione otro marco de prueba unitaria instalado](../test/media/createunittestsdialogextensions.png)
 

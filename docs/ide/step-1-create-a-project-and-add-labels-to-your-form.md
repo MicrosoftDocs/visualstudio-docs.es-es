@@ -1,5 +1,7 @@
 ---
 title: 'Paso 1: Crear un proyecto y agregar etiquetas al formulario'
+description: Obtenga información sobre cómo crear el proyecto, cómo agregar etiquetas, un botón y otros controles a un formulario, y cómo establecer las propiedades de cada control que agregue.
+ms.custom: SEO-VS-2020
 ms.date: 10/15/2019
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bf904fca84fba88e81306ff91add6c2156b4544
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: cd84b7b11f58b8deb62f6138255b4c8d942b5a00
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579445"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480114"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Paso 1: Crear un proyecto y agregar etiquetas al formulario
 
@@ -28,16 +30,16 @@ Como primeros pasos para desarrollar esta prueba, creará el proyecto y agregar�
 
 ::: moniker range="vs-2017"
 
-1. En la barra de menús, seleccione **Archivo** > **Nuevo** > **Proyecto**.
+1. En la barra de menús, elija **Archivo** > **Nuevo** > **Proyecto**.
 
 1. Elija **Visual C#** o **Visual Basic** en la parte izquierda del cuadro de diálogo **Nuevo proyecto** y, a continuación, elija **Escritorio de Windows**.
 
-1. En la lista de plantillas, elija la plantilla **Aplicación de Windows Forms (.NET Framework)** , denomínela *MathQuiz* y, después, haga clic en el botón **Aceptar**.
+1. En la lista de plantillas, elija la plantilla **Aplicación de Windows Forms (.NET Framework)**, denomínela *MathQuiz* y, después, haga clic en el botón **Aceptar**.
 
     Aparecerá un formulario denominado *Form1.cs* o *Form1.vb*, según el lenguaje de programación elegido.
 
    > [!NOTE]
-   > Si no ve la plantilla **Aplicación de Windows Forms (.NET Framework)** , use el instalador de Visual Studio para instalar la carga de trabajo **Desarrollo de escritorio de .NET**.<br/><br/>![Carga de trabajo de desarrollo de escritorio de .NET en el instalador de Visual Studio](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Para obtener más información, vea la página [Instalación de Visual Studio](../install/install-visual-studio.md).
+   > Si no ve la plantilla **Aplicación de Windows Forms (.NET Framework)**, use el instalador de Visual Studio para instalar la carga de trabajo **Desarrollo de escritorio de .NET**.<br/><br/>![Carga de trabajo de desarrollo de escritorio de .NET en el instalador de Visual Studio](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Para obtener más información, vea la página [Instalación de Visual Studio](../install/install-visual-studio.md).
 
 ::: moniker-end
 
@@ -148,7 +150,7 @@ Como primeros pasos para desarrollar esta prueba, creará el proyecto y agregar�
 
 15. Alinee el control NumericUpDown con los controles de etiqueta para el problema de suma.
 
-16. Cambie el valor de la propiedad **(Name**) del control NumericUpDown a **suma**.
+16. Cambie el valor de la propiedad **(Name)** del control NumericUpDown a **suma**.
 
      Se ha creado la primera fila, tal como se muestra en la ilustración siguiente.
 

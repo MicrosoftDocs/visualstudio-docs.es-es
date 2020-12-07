@@ -1,5 +1,7 @@
 ---
 title: 'Paso 1: Crear un proyecto y agregar una tabla a un formulario'
+description: Aprenda a crear el proyecto del juego de formar parejas y a agregar una tabla al formulario.
+ms.custom: SEO-VS-2020
 ms.date: 10/15/2019
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1134fb5bb02bd8c78f347ef582f12da35074c36
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 1a8ae9b17df85431945b19d65f5435ac081b4a1c
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579923"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480725"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Paso 1: Crear un proyecto y agregar una tabla a un formulario
 
@@ -27,14 +29,14 @@ El primer paso para crear un juego de formar parejas es crear el proyecto y agre
 
 1. En la barra de menús, elija **Archivo** > **Nuevo** > **Proyecto**.
 
-1. Elija **Visual C#** o **Visual Basic** en la parte izquierda del cuadro de diálogo **Nuevo proyecto** y, a continuación, elija **Escritorio de Windows**.
+1. Elija **Visual C#** o **Visual Basic** en la parte izquierda del cuadro de diálogo **Nuevo proyecto** y, a continuación, elija **Escritorio de Windows**.
 
-1. En la lista de plantillas, elija la plantilla **Aplicación de Windows Forms (.NET Framework)** , denomínela *MatchingGame* y, después, haga clic en el botón **Aceptar**.
+1. En la lista de plantillas, elija la plantilla **Aplicación de Windows Forms (.NET Framework)**, denomínela *MatchingGame* y, después, haga clic en el botón **Aceptar**.
 
     Aparecerá un formulario denominado *Form1.cs* o *Form1.vb*, según el lenguaje de programación elegido.
 
    > [!NOTE]
-   > Si no ve la plantilla **Aplicación de Windows Forms (.NET Framework)** , use el instalador de Visual Studio para instalar la carga de trabajo **Desarrollo de escritorio de .NET**.<br/><br/>![Carga de trabajo de desarrollo de escritorio de .NET en el instalador de Visual Studio](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Para obtener más información, vea la página [Instalación de Visual Studio](../install/install-visual-studio.md).
+   > Si no ve la plantilla **Aplicación de Windows Forms (.NET Framework)**, use el instalador de Visual Studio para instalar la carga de trabajo **Desarrollo de escritorio de .NET**.<br/><br/>![Carga de trabajo de desarrollo de escritorio de .NET en el instalador de Visual Studio](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Para obtener más información, vea la página [Instalación de Visual Studio](../install/install-visual-studio.md).
 
 ::: moniker-end
 
@@ -90,7 +92,7 @@ El primer paso para crear un juego de formar parejas es crear el proyecto y agre
 
    5. En el menú de tareas, pulse **Agregar fila** para agregar dos filas más y, después, pulse dos veces **Agregar columna** para agregar dos columnas más.
 
-   6. En el menú de tareas, pulse **Editar filas y columnas** para abrir la ventana **Estilos de columna y fila**. Pulse cada una de las columnas, pulse el botón de opción **Porcentaje** y establezca el ancho de cada columna en el 25 por ciento del ancho total. Después, seleccione **Filas** en la lista desplegable de la parte superior de la ventana y establezca el alto de cada fila en el 25 por ciento. Cuando haya terminado, pulse el botón **Aceptar**.
+   6. En el menú de tareas, pulse **Editar filas y columnas** para abrir la ventana **Estilos de columna y fila**. Pulse cada una de las columnas, pulse el botón de opción **Porcentaje** y establezca el ancho de cada columna en el 25 por ciento del ancho total. Después, seleccione **Filas** en la lista desplegable de la parte superior de la ventana y establezca el alto de cada fila en el 25 por ciento. Cuando termine, elija el botón **Aceptar**.
 
       Su TableLayoutPanel debería ser ahora una cuadrícula de 4x4, con dieciséis celdas cuadradas del mismo tamaño. Estas filas y columnas son donde más adelante aparecerán las imágenes de icono.
 
@@ -106,7 +108,7 @@ El primer paso para crear un juego de formar parejas es crear el proyecto y agre
 
    4. Establezca la propiedad **TextAlign** en **MiddleCenter** pulsando el botón de lista desplegable que se encuentra al lado de la propiedad y pulsando el botón central. De esta forma, se asegurará de que el icono aparezca en el centro de la celda.
 
-   5. Pulse la propiedad **Font**. Debe aparecer un botón de puntos suspensivos ( **…** ).
+   5. Pulse la propiedad **Font**. Debe aparecer un botón de puntos suspensivos (**…**).
 
    6. Pulse el botón de puntos suspensivos y establezca el valor de **Fuente** en **Webdings**, **Estilo de fuente** en **Negrita** y **Tamaño** en **48**.
 
@@ -128,6 +130,6 @@ El primer paso para crear un juego de formar parejas es crear el proyecto y agre
 
 ## <a name="to-continue-or-review"></a>Para continuar o revisar
 
-- Para ir al siguiente paso del tutorial, vea [Paso 2: Agregar un objeto aleatorio y una lista de iconos](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
+- Para ir al paso siguiente del tutorial, vea [Paso 2: Agregar un objeto aleatorio y una lista de iconos](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
 
 - Para volver al tema de información general, vea [Tutorial 3: Crear un juego de formar parejas](../ide/tutorial-3-create-a-matching-game.md).

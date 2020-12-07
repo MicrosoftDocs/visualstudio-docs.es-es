@@ -1,5 +1,7 @@
 ---
 title: Mostrar desensamblador (Comando)
+description: Obtenga información sobre el comando Mostrar desensamblado y cómo inicia el proceso de depuración y le permite especificar cómo se administran los errores.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91319a8d25aaec6bdd676ed6d709dffc47100195
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 15e9016551b178b0a29656e615d029ddaf0ca279
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770640"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305340"
 ---
 # <a name="list-disassembly-command"></a>Mostrar desensamblador (Comando)
 Inicia el proceso de depuración y le permite especificar cómo se deben tratar los errores.
@@ -31,7 +33,7 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
 [/linenumbers:yes|no]
 ```
 
-## <a name="switches"></a>Modificadores
+## <a name="switches"></a>Conmutadores
 Cada modificador se puede invocar mediante su forma completa o una forma abreviada.
 
 /count: `number` [o] /c: `number` [o] /length: `number` [o] /l: `number`
@@ -64,11 +66,11 @@ Opcional. Permite la visualización de los números de línea asociados con el c
 >Debug.ListDisassembly
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Mostrar pila de llamadas (Comando)](../../ide/reference/list-call-stack-command.md)
-- [Comando Mostrar subprocesos](../../ide/reference/list-threads-command.md)
+- [Mostrar subprocesos (Comando)](../../ide/reference/list-threads-command.md)
 - [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Ventana Comandos](../../ide/reference/command-window.md)
 - [Cuadro Buscar/Comando](../../ide/find-command-box.md)
-- [Alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

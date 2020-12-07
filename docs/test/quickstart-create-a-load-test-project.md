@@ -1,5 +1,7 @@
 ---
 title: Crear un proyecto de rendimiento web y prueba de carga
+description: Aprenda a crear y ejecutar un proyecto de prueba de carga y rendimiento web en Visual Studio con este inicio rápido.
+ms.custom: SEO-VS-2020
 ms.date: 03/14/2018
 ms.topic: quickstart
 helpviewer_keywords:
@@ -7,14 +9,14 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d883d531737caf32ec202955ff951382b5ff9009
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 3833542dc00f347014dabf96f836fbd4fa810862
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928585"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329138"
 ---
-# <a name="quickstart-create-a-load-test-project"></a>Inicio rápido: Crear un proyecto de prueba de carga
+# <a name="quickstart-create-a-load-test-project"></a>Inicio rápido: Crear un proyecto de pruebas de carga
 
 En este inicio rápido de 10 minutos, aprenderá a crear y ejecutar un proyecto de prueba de carga y rendimiento web en Visual Studio. Las pruebas de carga ejecutan pruebas unitarias o de rendimiento web para simular que muchos usuarios tienen acceso a un servidor al mismo tiempo.
 
@@ -48,7 +50,7 @@ En esta sección, vamos a crear un proyecto de prueba de carga de C#. También p
 
 2. En la barra de menús, seleccione **Archivo** > **Nuevo** > **Proyecto**.
 
-   Se abrirá el cuadro de diálogo **Nuevo proyecto** .
+   Aparece el cuadro de diálogo **Nuevo proyecto** .
 
 3. En el cuadro de diálogo **Nuevo proyecto**, expanda **Instalado** y **Visual C#** y, después, elija la categoría **Prueba**. Elija la plantilla **Proyecto de prueba de carga y rendimiento web**.
 
@@ -64,7 +66,7 @@ En esta sección, vamos a crear un proyecto de prueba de carga de C#. También p
 
 2. En la ventana de inicio, elija **Crear un proyecto nuevo**.
 
-3. En el cuadro de búsqueda de la página **Crear un proyecto**, escriba **prueba web** y seleccione la plantilla **Proyecto de prueba de carga y rendimiento web\[En desuso]** para C#. Elija **Siguiente**.
+3. En el cuadro de búsqueda de la página **Crear un proyecto**, escriba **prueba web** y seleccione la plantilla **Proyecto de prueba de carga y rendimiento web\[En desuso]** para C#. Seleccione **Siguiente**.
 
 4. Escriba un nombre para el proyecto si no quiere usar el predeterminado y elija **Crear**.
 
@@ -82,7 +84,7 @@ En esta sección, vamos a crear un proyecto de prueba de carga de C#. También p
 
    ![Asistente para prueba de carga nueva: primera página](media/load-test-wizard-page-1.png)
 
-1. Elija **Siguiente** para ir avanzando por el asistente hasta llegar a la página **Agregar pruebas a un escenario de prueba de carga y editar la combinación de pruebas**. Elija el botón de **Agregar** .
+1. Elija **Siguiente** para ir avanzando por el asistente hasta llegar a la página **Agregar pruebas a un escenario de prueba de carga y editar la combinación de pruebas**. Elija el botón **Agregar**.
 
    Se abre el cuadro de diálogo **Agregar pruebas**.
 

@@ -1,5 +1,7 @@
 ---
 title: Mostrar código fuente (Comando)
+description: Obtenga información sobre el comando Mostrar código fuente y cómo muestra las líneas de código fuente especificadas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 286cfa87de96b75e8b79d9ee3bc31e84d7761670
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ae2463a3d8dd295fcba9bf264e1ad3fa250169d4
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770625"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305290"
 ---
 # <a name="list-source-command"></a>Mostrar código fuente (Comando)
 Muestra las líneas de código fuente especificadas.
@@ -31,7 +33,7 @@ Debug.ListSource [/Count:number] [/Current] [/File:filename]
 [/Line:number] [/ShowLineNumbers:yes|no]
 ```
 
-## <a name="switches"></a>Modificadores
+## <a name="switches"></a>Conmutadores
 /Count:`number`
 
 Opcional. Especifica el número de líneas que se van a mostrar.
@@ -59,7 +61,7 @@ En este ejemplo se muestra el código fuente desde la línea 4 del archivo Form1
 Debug.ListSource /File:"C:\Visual Studio Projects\Form1.vb" /Line:4 /ShowLineNumbers:yes
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Ventana Comandos](../../ide/reference/command-window.md)

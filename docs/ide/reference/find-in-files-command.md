@@ -1,5 +1,7 @@
 ---
 title: Buscar en archivos (Comando)
+description: Obtenga información sobre el comando Buscar y cómo busca en los archivos mediante algunas de las opciones disponibles en la pestaña Buscar en archivos de la ventana Buscar y reemplazar.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87d313c29be1d5fb4f1be1febe9b5b7cd32e7e11
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: aa0a907332b3ce0164573b809ee9c4b2ac2addda
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75569587"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305396"
 ---
 # <a name="find-in-files-command"></a>Buscar en archivos (Comando)
 Busca en los archivos mediante el uso de un subconjunto de las opciones disponibles en la pestaña **Buscar en archivos** de la ventana **Buscar y reemplazar**.
@@ -36,7 +38,7 @@ Edit.FindinFiles findwhat [/case] [/ext:extensions]
 `findwhat`\
 Obligatorio. Texto que debe coincidir.
 
-## <a name="switches"></a>Modificadores
+## <a name="switches"></a>Conmutadores
 /case o /c\
 Opcional. Se encuentran coincidencias solo si los caracteres en mayúsculas y minúsculas coinciden exactamente con los especificados en el argumento `findwhat`.
 
@@ -84,10 +86,10 @@ En este ejemplo se busca btnCancel en todos los archivos .cls ubicados en la car
 >Edit.FindinFiles btnCancel /lookin:"c:/My Visual Studio Projects" /ext:*.cls /text2
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Buscar en archivos](../../ide/find-in-files.md)
 - [Ventana Comandos](../../ide/reference/command-window.md)
 - [Cuadro Buscar/Comando](../../ide/find-command-box.md)
 - [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

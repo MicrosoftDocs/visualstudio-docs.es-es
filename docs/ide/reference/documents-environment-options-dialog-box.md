@@ -1,5 +1,7 @@
 ---
 title: Documentos, Entorno, Opciones (Cuadro de diálogo)
+description: Obtenga información sobre cómo usar la página Entornos de la sección Documentos para controlar cómo se muestran los documentos en el IDE y administrar los cambios externos en los documentos y archivos.
+ms.custom: SEO-VS-2020
 ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
@@ -31,12 +33,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7813a2e7686bef5a146e7472bce7f2c24baf9cd2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 28b0e7920aca2ae8b789a37fad25509dbb8b4d7a
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75570068"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305484"
 ---
 # <a name="options-dialog-box-environment--documents"></a>Cuadro de diálogo Opciones: Entorno \> Documentos
 
@@ -83,7 +85,7 @@ Por ejemplo, si establece esta opción en 5 y tiene 10 archivos varios abiertos,
 
 Seleccione esta opción para provocar que los archivos que contienen información no compatible con la página de códigos seleccionada se guarden como Unicode de manera predeterminada.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Archivos varios](../../ide/reference/miscellaneous-files.md)
 - [Buscar y reemplazar texto](../../ide/finding-and-replacing-text.md)

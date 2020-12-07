@@ -1,5 +1,7 @@
 ---
 title: Tutorial de desarrollo controlado por pruebas
+description: Obtenga información sobre cómo desarrollar un método de prueba en C# con el marco de pruebas de Microsoft, el cual se puede adaptar fácilmente a otros lenguajes o marcos de pruebas, como NUnit.
+ms.custom: SEO-VS-2020
 ms.date: 07/24/2019
 ms.topic: conceptual
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: a264975014fea88126bbca0589fe037e629dae10
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 82cccbc47d26dd9ef74ee02931d6efb4bbfa0054
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75566285"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329164"
 ---
 # <a name="walkthrough-test-driven-development-using-test-explorer"></a>Tutorial: Desarrollo controlado por pruebas con el Explorador de pruebas
 
@@ -22,13 +24,13 @@ En este tutorial se muestra cómo desarrollar un método probado en C# con el ma
 
 ## <a name="create-a-test-and-generate-code"></a>Creación de una prueba y generación del código
 
-1. Cree un proyecto de **biblioteca de clases .NET Standard**  en C#. Este proyecto contendrá el código que quiere probar. Asigne al proyecto el nombre **MyMath**.
+1. Cree un proyecto de **biblioteca de clases .NET Standard** en C#. Este proyecto contendrá el código que quiere probar. Asigne al proyecto el nombre **MyMath**.
 
-2. En la misma solución, agregue un nuevo **proyecto de prueba de MSTest (.NET Core)** . Asigne al proyecto de prueba el nombre **MathTests**.
+2. En la misma solución, agregue un nuevo **proyecto de prueba de MSTest (.NET Core)**. Asigne al proyecto de prueba el nombre **MathTests**.
 
    ![Nuevo código y proyectos de prueba](../test/media/test-driven-development-ide.png)
 
-3. Escriba un método de prueba simple que compruebe el resultado obtenido para una entrada específica. Agregue el código siguiente a la clase `UnitTest1`:
+3. Escriba un método de prueba simple que compruebe el resultado obtenido para una entrada específica. Agregue el siguiente código a la clase `UnitTest1`:
 
    ```csharp
    [TestMethod]
@@ -56,7 +58,7 @@ En este tutorial se muestra cómo desarrollar un método probado en C# con el ma
 
       ![Cuadro de diálogo Generar tipo en Visual Studio 2019](media/test-driven-development-generate-type-dialog.png)
 
-5. Genere un método a partir del código de prueba. Coloque el cursor en `SquareRoot` y, luego, en el menú de bombilla, elija **Generar método "Rooter.SquareRoot"** .
+5. Genere un método a partir del código de prueba. Coloque el cursor en `SquareRoot` y, luego, en el menú de bombilla, elija **Generar método "Rooter.SquareRoot"**.
 
 6. Ejecute la prueba unitaria.
 

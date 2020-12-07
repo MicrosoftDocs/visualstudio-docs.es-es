@@ -1,5 +1,7 @@
 ---
 title: Instrucciones de división o combinación "if".
+description: Obtenga información sobre cómo usar el menú Acciones rápidas y refactorizaciones para dividir o combinar instrucciones if.
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: a3b42f83faacda6be34b282150cf4fb4c0f379f1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f72c6c2ed1cfdd1c8ea4471976d6a4980dfe422f
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79093659"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479932"
 ---
 # <a name="split-or-merge-if-statements"></a>Instrucciones de división o combinación "if".
 
@@ -31,7 +33,7 @@ Esta refactorización se aplica a lo siguiente:
 
 **Por qué:** es una cuestión de preferencia de estilo.  
 
-## <a name="how-to"></a>Procedimiento
+## <a name="how-to"></a>Instrucciones
 
 Si desea dividir la instrucción `if`:
 

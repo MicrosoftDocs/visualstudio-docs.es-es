@@ -1,5 +1,7 @@
 ---
 title: Opciones, editor de texto, C/C++, avanzado
+description: Obtenga información sobre cómo usar la página Avanzadas de la sección C/C++ para cambiar el comportamiento relacionado con IntelliSense y la base de datos de exploración.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2e7e031836c9762d9666a5624e78ecc7c8cc7dd9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fe69471d231599c6e3eece0b56ff70fca5b6afab
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77275203"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040347"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Opciones, editor de texto, C/C++, avanzado
 
@@ -28,7 +30,7 @@ Al cambiar estas opciones, puede modificar el comportamiento relacionado con Int
 Para tener acceso a esta página, en el cuadro de diálogo **Opciones**, en el panel izquierdo, expanda **Editor de texto**, expanda **C/C++** y, después, pulse **Opciones avanzadas**.
 
 > [!NOTE]
-> Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Vea [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+> Es posible que tu equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Vea [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="browsingnavigation"></a>Exploración o navegación
 
@@ -64,7 +66,7 @@ Vuelva a crear la base de datos de exploración de código desde cero la próxim
 
 **Intervalo para volver a examinar la solución**
 
-Un trabajo "Volver a examinar la solución ahora" está programado para el intervalo que especifique. Debe especificar un valor entre 0 y 5000 minutos. El valor predeterminado es de 60 minutos. Mientras la solución se vuelve a examinar, las marcas de tiempo de archivo se comprueban para determinar si un archivo se ha cambiado fuera del IDE. (Los cambios que se realizan en el IDE se detectan automáticamente y los archivos se actualizan). Los archivos incluidos implícitamente se comprueban para determinar si todavía se hace referencia a todos ellos.
+Un trabajo "Volver a examinar la solución ahora" está programado para el intervalo que especifique. Debe especificar un valor entre 0 y 5000 minutos. El valor predeterminado es 60 minutos. Mientras la solución se vuelve a examinar, las marcas de tiempo de archivo se comprueban para determinar si un archivo se ha cambiado fuera del IDE. (Los cambios que se realizan en el IDE se detectan automáticamente y los archivos se actualizan). Los archivos incluidos implícitamente se comprueban para determinar si todavía se hace referencia a todos ellos.
 
 ## <a name="diagnostic-logging"></a>Registro de diagnóstico
 
@@ -206,6 +208,6 @@ Si esta opción está habilitada, se puede encerrar el texto seleccionado entre 
 
 Si esta opción está habilitada, se puede encerrar el texto seleccionado entre paréntesis al escribir "(" en el editor de texto.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Opciones del editor específicas del lenguaje](../../ide/reference/setting-language-specific-editor-options.md)

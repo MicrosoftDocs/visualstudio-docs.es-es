@@ -1,5 +1,7 @@
 ---
 title: 'Paso 7: Mantener visibles los pares'
+description: Obtenga información sobre cómo agregar una instrucción if para que, cuando un jugador seleccione un par de iconos que forman una pareja, los iconos permanezcan visibles.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e854425bab10174220188b23fb7e292371e9cb48
-ms.sourcegitcommit: 2c26d6e6f2a5c56ae5102cdded7b02f2d0fd686c
+ms.openlocfilehash: 9fc61a59d1e04d96fb36e7a7e4cd1304e2057adb
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88168728"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479451"
 ---
 # <a name="step-7-keep-pairs-visible"></a>Paso 7: Mantener visibles los pares
 El juego funciona bien siempre y cuando el jugador elija únicamente parejas de iconos que no coinciden. Sin embargo, piense qué sucedería si el jugador elige una pareja coincidente. En lugar de hacer que los iconos desaparezcan activando el temporizador (con el método <xref:System.Windows.Forms.Timer.Start>), el juego se debería restablecer automáticamente para dejar de realizar el seguimiento de las etiquetas mediante las variables de referencia `firstClicked` y `secondClicked`, sin restablecer los colores de las dos etiquetas elegidas.
@@ -62,7 +64,7 @@ El juego funciona bien siempre y cuando el jugador elija únicamente parejas de 
 2. Guarde y ejecute el programa, y después empiece a elegir iconos del formulario. Si elige una pareja que no coincide, se desencadena el evento Tick del temporizador, y ambos iconos desaparecen. Si elige una pareja coincidente, se ejecuta la nueva instrucción `if` y la instrucción return hace que el método omita el código que inicia el temporizador, de modo que los iconos se mantengan visibles, como se muestra en la siguiente imagen.
 
      ![Juego que creará en este tutorial](../ide/media/express_finishedgame.png)<br/>
-***Juego de formar parejas*** *con pares de iconos visibles*
+***Juego de formar parejas** _ _con pares de iconos visibles*
 
 ## <a name="to-continue-or-review"></a>Para continuar o revisar
 

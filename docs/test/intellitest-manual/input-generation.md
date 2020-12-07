@@ -1,5 +1,7 @@
 ---
 title: Ejecución simbólica dinámica | Herramientas de prueba para desarrolladores de Microsoft IntelliTest
+description: Descubra cómo IntelliTest genera entradas para las pruebas unitarias parametrizadas analizando las condiciones de rama en el programa.
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e5a3248d3f081bcab08c08110d305f0aa6235817
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 771fd167a2dc9fce8278ca53f730872a9f170eb7
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315205"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329915"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Generación de entradas con la ejecución simbólica dinámica
 
@@ -36,7 +38,7 @@ El [solucionador de restricciones](#constraint-solver) de IntelliTest puede trat
 
 * Números [enteros](#integers-and-floats) y [flotantes](#integers-and-floats)
 * [Objects](#objects)
-* [Estructuras](#structs)
+* [Structs](#structs)
 * [Matrices](#arrays-and-strings) y [cadenas](#arrays-and-strings)
 
 IntelliTest filtra las entradas que infringen las hipótesis indicadas.
@@ -61,7 +63,7 @@ Posteriormente en el análisis, como se detectan más métodos accesibles, tanto
 
 El [solucionador de restricciones](#constraint-solver) de IntelliTest determina los valores de entrada de prueba de tipos primitivos como **byte**, **int** y **float**, entre otros, para desencadenar diferentes rutas de ejecución para la prueba y el programa sometido a prueba.
 
-## <a name="objects"></a>de la empresa
+## <a name="objects"></a>Objetos
 
 IntelliTest puede [crear instancias de clases .NET existentes](#existing-classes) o puede usar IntelliTest para [crear objetos ficticios](#parameterized-mocks) automáticamente que implementen una interfaz específica y se comporten de diferentes maneras dependiendo del uso.
 
@@ -77,13 +79,13 @@ Si todos los campos de la clase son [visibles](#visibility), IntelliTest puede e
 
 Si el tipo no es visible o los campos no son [visibles](#visibility), IntelliTest necesita ayuda para crear objetos y proporcionarles estados interesantes para obtener la máxima cobertura de código. IntelliTest podría usar la reflexión para crear e inicializar instancias de forma arbitraria, pero esto no suele ser lo ideal porque podría llevar al objeto a un estado que nunca ocurriría durante la ejecución normal del programa. En su lugar, IntelliTest se basa en las sugerencias del usuario.
 
-## <a name="visibility"></a>Visibility
+## <a name="visibility"></a>Visibilidad
 
 .NET tiene un modelo de visibilidad elaborado: tipos, métodos, campos y otros miembros pueden ser **privados**, **públicos**, **internos**, etc.
 
 Cuando IntelliTest genera pruebas, intentará realizar solo acciones (como llamar a los constructores, métodos y campos de configuración) que sean legales respecto a las reglas de visibilidad de .NET desde el contexto de las pruebas generadas.
 
-Las reglas son las siguientes:
+Estas son las reglas:
 
 * **Visibilidad de miembros internos**
   * IntelliTest presupone que las pruebas generadas tendrán acceso a los miembros internos que eran visibles para el atributo [PexClass](attribute-glossary.md#pexclass) envolvente.
@@ -113,7 +115,7 @@ Los objetos ficticios parametrizados tienen dos modos de ejecución diferentes:
 
 Use [PexChoose](static-helper-classes.md#pexchoose) para obtener valores para los objetos ficticios parametrizados.
 
-## <a name="structs"></a>Structs
+## <a name="structs"></a>Estructuras
 
 El razonamiento de IntelliTest sobre los valores **struct** es similar a la manera en que trata a los [objetos](#objects).
 
@@ -133,6 +135,6 @@ La clase estática [PexChoose](static-helper-classes.md#pexchoose) puede usarse 
 
 Publique sus ideas y solicitudes de características en [Comunidad de desarrolladores](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
 
-## <a name="further-reading"></a>Información adicional
+## <a name="further-reading"></a>Lecturas adicionales
 
 * [¿Cómo funciona?](https://devblogs.microsoft.com/devops/smart-unit-tests-a-mental-model/)

@@ -1,5 +1,7 @@
 ---
 title: IntelliSense para C#
+description: Obtenga información sobre algunas características de IntelliSense que puede usar al codificar un proyecto de C#.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2ed5d86599fa99b9c1360b414b37ef95ab59082d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e725a06a2bc90c91cff11b05ad32b20a0db8e4fc
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89313437"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479789"
 ---
 # <a name="c-intellisense"></a>IntelliSense para C#
 
@@ -158,9 +160,9 @@ Si presiona **TAB**, IntelliSense completa la instrucción automáticamente y mu
 Si presiona **TAB**, IntelliSense crea el código auxiliar de un método con la firma correcta y coloca el cursor en el cuerpo del controlador de eventos.
 
 > [!NOTE]
-> Use el comando **Navegar hacia atrás** del menú **Vista** (**CTRL**+ **-** ) para volver a la instrucción de enlace de eventos.
+> Use el comando **Navegar hacia atrás** del menú **Vista** (**CTRL**+**-**) para volver a la instrucción de enlace de eventos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Uso de IntelliSense](../ide/using-intellisense.md)
 - [IDE de Visual Studio](../get-started/visual-studio-ide.md)

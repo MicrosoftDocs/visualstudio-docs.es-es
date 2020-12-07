@@ -1,5 +1,7 @@
 ---
 title: 'Paso 2: Agregar un objeto aleatorio y una lista de iconos'
+description: Aprenda a crear un conjunto de símbolos para formar parejas en el juego.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f4731778ebb3acbdc3bb7d9b5827c1015541d98
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 1018b390f6ebbf67fab88554aa85fe6a8ecec88d
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579425"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480699"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>Paso 2: Agregar un objeto aleatorio y una lista de iconos
 
@@ -42,7 +44,7 @@ En este paso, creará un conjunto de símbolos para formar parejas en el juego. 
 
 3. Al agregar el objeto de lista, observe que se abre la ventana **IntelliSense**. El ejemplo siguiente corresponde a C#, pero aparece un texto similar cuando se agrega una lista en Visual Basic.
 
-     ![Ventana Propiedades en la que se muestra el evento Click](../ide/media/express_listintellisense.png)<br/>*Ventana de **IntelliSense***
+     ![Ventana Propiedades en la que se muestra el evento Click](../ide/media/express_listintellisense.png)<br/>*Ventana de *_IntelliSense_**
 
     > [!NOTE]
     > La ventana de IntelliSense solo aparece cuando se escribe código manualmente. Si copia y pega el código, no aparece.

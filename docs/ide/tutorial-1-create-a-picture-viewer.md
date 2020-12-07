@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial 1: Crear un visor de imágenes'
+description: Aprenda a compilar una aplicación que carga una imagen de un archivo y la muestra en una ventana.
+ms.custom: SEO-VS-2020
 ms.date: 10/16/2019
 ms.assetid: 3071d6df-2b2f-4e95-ab68-bef727323136
 ms.topic: tutorial
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44fe22aa1d4549d1daba4324349160afcd3133ba
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 1c0eea844b04cbe8ba261fd4d65a6d21fb99aa4b
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811219"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479139"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Tutorial 1: Crear un visor de imágenes
 
@@ -46,7 +48,7 @@ Cuando termine, la aplicación debe ser similar a la de la imagen siguiente:
 
 ## <a name="tutorial-links"></a>Vínculos del tutorial
 
-|Title|Descripción|
+|Título|Descripción|
 |-----------|-----------------|
 |[Paso 1: Crear un proyecto de aplicación de Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md)|Para empezar, cree un proyecto de aplicación de Windows Forms.|
 |[Paso 2: Ejecución de la aplicación de visor de imágenes](../ide/step-2-run-your-program.md)|Ejecute el proyecto de aplicación de Windows Forms que ha creado en el paso anterior.|
@@ -58,9 +60,9 @@ Cuando termine, la aplicación debe ser similar a la de la imagen siguiente:
 |[Paso 8: Escribir código para el controlador de eventos del botón Mostrar una imagen](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)|Escribir código mediante la herramienta IntelliSense.|
 |[Paso 9: Revisar, comentar y probar el código](../ide/step-9-review-comment-and-test-your-code.md)|Revisar y probar el código. Agregar comentarios según sea necesario.|
 |[Paso 10: Escribir código para botones adicionales y una casilla](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)|Escribir código para hacer que funcionen otros botones y una casilla mediante IntelliSense.|
-|[Paso 11: Ejecución de la aplicación y prueba de otras características](../ide/step-11-run-your-program-and-try-other-features.md)|Ejecutar la aplicación y establecer el color de fondo. Probar con otras características, como cambiar colores, fuentes y bordes.|
+|[Paso 11: Ejecutar la aplicación y probar otras características](../ide/step-11-run-your-program-and-try-other-features.md)|Ejecutar la aplicación y establecer el color de fondo. Probar con otras características, como cambiar colores, fuentes y bordes.|
 
-También dispone de excelentes recursos de aprendizaje en vídeo gratuitos. Para obtener más información sobre la programación en C#, vea [C# fundamentals: Development for absolute beginners](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners) (Fundamentos de C#: desarrollo para principiantes absolutos). Para obtener más información sobre la programación en Visual Basic, vea [Visual Basic Fundamentals: Development for absolute beginners](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners) (Fundamentos de C#: desarrollo para principiantes absolutos).
+También dispone de excelentes recursos de aprendizaje en vídeo gratuitos. Para obtener más información sobre la programación en C#, vea [C# fundamentals: Development for absolute beginners](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners) (Fundamentos de C#: desarrollo para principiantes absolutos). Para obtener más información sobre la programación en Visual Basic, consulte [Visual Basic Fundamentals: Development for Absolute Beginners](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners) (Fundamentos de Visual Basic: desarrollo para principiantes).
 
 ## <a name="next-steps"></a>Pasos siguientes
 

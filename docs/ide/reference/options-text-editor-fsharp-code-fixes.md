@@ -1,5 +1,7 @@
 ---
 title: Opciones, Editor de texto, F#, correcciones de código
+description: Obtenga información sobre cómo usar la página Correcciones de código de la sección F# para especificar la configuración que puede ayudar a identificar errores de código y a ofrecer soluciones.
+ms.custom: SEO-VS-2020
 ms.date: 01/16/2019
 ms.topic: reference
 f1_keywords:
@@ -9,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c20646c8da4101ac674a64c5ca1ed23a3b1fd7b5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 73d66e4f8611a08d6dee3733c30b075d71f6712c
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770931"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039606"
 ---
 # <a name="options-text-editor--f--code-fixes"></a>Opciones: Editor de texto > F# > Correcciones de código
 

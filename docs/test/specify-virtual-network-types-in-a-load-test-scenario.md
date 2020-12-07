@@ -1,5 +1,6 @@
 ---
 title: Especificación de tipos de redes virtuales (prueba de carga)
+description: Aprenda a usar una combinación de redes para crear crea una aproximación más real a la forma en que los usuarios finales interactúan con las aplicaciones.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -13,12 +14,12 @@ ms.assetid: 3c4f7874-081a-4ec4-9510-4d6d7d863a11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b505ae281042264d909b72ff0f7911381a2d8ad8
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 94973f8f791158f408b841442478dcfa6aeeff58
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809877"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330217"
 ---
 # <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>Especificar tipos de redes virtuales en un escenario de prueba de carga
 

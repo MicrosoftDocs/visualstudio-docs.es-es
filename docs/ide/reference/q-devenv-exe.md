@@ -1,5 +1,7 @@
 ---
 title: -? (devenv.exe)
+description: Obtenga información sobre cómo usar el modificador /? de la línea de comandos de devenv para mostrar un cuadro de mensaje con una lista de todos los modificadores de devenv y una descripción breve de cada uno.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f23765ac4ee58b20af26bd100a0d167b2873582
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5b0b3784b832c56aba97f68e57be872820991c74
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75565739"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040022"
 ---
 # <a name="-devenvexe"></a>/? (devenv.exe)
 

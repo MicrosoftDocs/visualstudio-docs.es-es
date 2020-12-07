@@ -1,5 +1,7 @@
 ---
 title: Mostrar memoria (Comando)
+description: Obtenga información sobre el comando Mostrar memoria y cómo muestra el contenido del intervalo de memoria especificado.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c500b1b516c2b1ab1bc66b7970fccc4ec7a85baa
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 696cb36f932a1a79388d94d749b4b5d4bff7d0c2
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568716"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305325"
 ---
 # <a name="list-memory-command"></a>Mostrar memoria (Comando)
 Muestra el contenido del intervalo de memoria especificado.
@@ -36,7 +38,7 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 
 Opcional. Dirección de memoria desde la que se va a empezar a mostrar la memoria.
 
-## <a name="switches"></a>Modificadores
+## <a name="switches"></a>Conmutadores
 /ANSI&#124;Unicode
 
 Opcional. Muestra la memoria como caracteres correspondientes a los bytes de memoria, ya sean ANSI o Unicode.
@@ -53,7 +55,7 @@ Opcional. Tipo de formato para ver la información de memoria en la ventana **Me
 
 Opcional. Especifica el formato de visualización de números: con signo, sin signo o hexadecimal.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 En lugar de escribir un comando **Debug.ListMemory** completo con todos los modificadores, puede invocar el comando mediante los alias predefinidos con ciertos modificadores preestablecidos en los valores especificados. Por ejemplo, en lugar de especificar:
 
 ```cmd
@@ -85,11 +87,11 @@ A continuación se muestra una lista de los alias disponibles para el comando **
 >Debug.ListMemory /Format:float /Count:30 /Unicode
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Mostrar pila de llamadas (Comando)](../../ide/reference/list-call-stack-command.md)
-- [Comando Mostrar subprocesos](../../ide/reference/list-threads-command.md)
+- [Mostrar subprocesos (Comando)](../../ide/reference/list-threads-command.md)
 - [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Ventana Comandos](../../ide/reference/command-window.md)
 - [Cuadro Buscar/Comando](../../ide/find-command-box.md)
-- [Alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

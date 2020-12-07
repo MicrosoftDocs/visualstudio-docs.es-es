@@ -1,5 +1,7 @@
 ---
 title: Solución de problemas con fragmentos de código
+description: Aprenda a solucionar problemas con fragmentos de código de IntelliSense que normalmente se deben a la presencia de contenido incorrecto en el archivo de fragmento de código o a un archivo de fragmento de código dañado.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a699c6a158b5a0751824c7634ddd637467da50d2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4012298bdc4edf0c174576c739e67781bfffdade
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588699"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479217"
 ---
 # <a name="troubleshoot-snippets"></a>Solución de problemas con fragmentos de código
 

@@ -1,5 +1,7 @@
 ---
 title: Abrir archivo (Comando)
+description: Obtenga información sobre el comando Abrir archivo y cómo abre un archivo existente y le permite especificar un editor.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50e29e3182a19c9f3a667d41725327110b415fd0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 792fe50aea43bc9711a58a895be09f85c041345b
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591520"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304111"
 ---
 # <a name="open-file-command"></a>Abrir archivo (Comando)
 
@@ -37,7 +39,7 @@ File.OpenFile filename [/e:editorname]
 
 Obligatorio. Ruta de acceso completa o parcial y nombre del archivo que se va a abrir. Las rutas de acceso que contienen espacios deben ir entre comillas.
 
-## <a name="switches"></a>Modificadores
+## <a name="switches"></a>Conmutadores
 
 /e:`editorname`
 
@@ -51,7 +53,7 @@ Por ejemplo, para abrir un archivo en el editor de código fuente, tiene que esc
 /e:"Source Code (text) Editor"
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 A medida que va escribiendo una ruta de acceso, la finalización automática intenta localizar la ruta de acceso y el nombre de archivo correctos.
 

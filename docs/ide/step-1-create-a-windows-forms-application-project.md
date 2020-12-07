@@ -1,5 +1,7 @@
 ---
 title: 'Paso 1: Creación de un proyecto de aplicación de Windows Forms'
+description: Aprenda a crear un proyecto de aplicación de Windows Forms para el visor de imágenes.
+ms.custom: SEO-VS-2020
 ms.date: 08/30/2019
 ms.assetid: 16ac2422-e720-4e3a-b511-bc2a54201a86
 ms.topic: tutorial
@@ -10,14 +12,14 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d5e34d825d2a4d296a8a394105b412195b4e3fb
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 76225685a9f68ca6f6cb05f902922f8fa208015d
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579916"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480400"
 ---
-# <a name="step-1-create-a-windows-forms-app-project"></a>Paso 1: Creación de un proyecto de aplicación de Windows Forms
+# <a name="step-1-create-a-windows-forms-app-project"></a>Paso 1: Crear un proyecto de aplicación de Windows Forms
 
 Al crear un visor de imagen, el primer paso consiste en crear un proyecto de aplicación de Windows Forms.
 
@@ -27,14 +29,14 @@ Al crear un visor de imagen, el primer paso consiste en crear un proyecto de apl
 
 1. En la barra de menús, elija **Archivo** > **Nuevo** > **Proyecto**. El cuadro de diálogo debe ser similar a la de la siguiente captura de pantalla:
 
-     ![Cuadro de diálogo Nuevo proyecto](../ide/media/newprojectdialogcallouts.png)<br/>***Cuadro de diálogo***  *Nuevo proyecto*
+     ![Cuadro de diálogo Nuevo proyecto](../ide/media/newprojectdialogcallouts.png)<br/>*Cuadro de diálogo *_Nuevo proyecto_* __*
 
 2. En la parte izquierda del cuadro de diálogo **Nuevo proyecto** elija **Visual C#** o **Visual Basic**, y después **Escritorio de Windows**.
 
-3. En la lista de plantillas de proyecto, elija **Aplicación de Windows Forms (.NET Framework)** . Asigne un nombre al nuevo formulario *PictureViewer* y, después, pulse el botón **Aceptar**.
+3. En la lista de plantillas de proyecto, elija **Aplicación de Windows Forms (.NET Framework)**. Asigne un nombre al nuevo formulario *PictureViewer* y, después, pulse el botón **Aceptar**.
 
     >[!NOTE]
-    >Si no ve la plantilla **Aplicación de Windows Forms (.NET Framework)** , use el instalador de Visual Studio para instalar la carga de trabajo **Desarrollo de escritorio de .NET**.<br/><br/>![Carga de trabajo de desarrollo de escritorio de .NET en el instalador de Visual Studio](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Para obtener más información, vea la página [Instalación de Visual Studio](../install/install-visual-studio.md).
+    >Si no ve la plantilla **Aplicación de Windows Forms (.NET Framework)**, use el instalador de Visual Studio para instalar la carga de trabajo **Desarrollo de escritorio de .NET**.<br/><br/>![Carga de trabajo de desarrollo de escritorio de .NET en el instalador de Visual Studio](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Para obtener más información, vea la página [Instalación de Visual Studio](../install/install-visual-studio.md).
 
 ::: moniker-end
 
@@ -53,7 +55,7 @@ Al crear un visor de imagen, el primer paso consiste en crear un proyecto de apl
    ![Elección de la plantilla de C# o Visual Basic para la Aplicación de Windows Forms (.NET Framework)](./media/create-new-project-search-winforms-filtered.png)
 
    > [!NOTE]
-   > Si no ve la plantilla **Aplicación de Windows Forms (.NET Framework)** , puede instalarla desde la ventana **Crear un proyecto nuevo**. En el mensaje **¿No encuentra lo que busca?** , elija el vínculo **Instalar más herramientas y características**.
+   > Si no ve la plantilla **Aplicación de Windows Forms (.NET Framework)**, puede instalarla desde la ventana **Crear un proyecto nuevo**. En el mensaje **¿No encuentra lo que busca?** , elija el vínculo **Instalar más herramientas y características**.
    >
    > ![Vínculo "Instalar más herramientas y características" del mensaje "¿No encuentra lo que busca?" que aparece en la ventana "Crear proyecto"](../get-started/media/vs-2019/not-finding-what-looking-for.png)
    >
@@ -81,7 +83,7 @@ Visual Studio crea una solución para la aplicación. Una solución actúa como 
 
     ::: moniker range="vs-2017"
 
-    * **Ventana principal** En esta ventana, realizará la mayor parte del trabajo, como ejecutar formularios y editar código. La ventana muestra un formulario en el **Editor de formularios**. En la parte superior de la ventana, aparecerán las pestañas **Página principal** y **Form1.cs [Diseño]** . (En Visual Basic, el nombre de la pestaña termina con *.vb* en lugar de *.cs*).
+    * **Ventana principal** En esta ventana, realizará la mayor parte del trabajo, como ejecutar formularios y editar código. La ventana muestra un formulario en el **Editor de formularios**. En la parte superior de la ventana, aparecerán las pestañas **Página principal** y **Form1.cs [Diseño]**. (En Visual Basic, el nombre de la pestaña termina con *.vb* en lugar de *.cs*).
 
     ::: moniker-end
 
@@ -98,14 +100,14 @@ Visual Studio crea una solución para la aplicación. Una solución actúa como 
     * **Ventana Propiedades** En esta ventana, puede cambiar las propiedades de los elementos elegidos en las otras ventanas. Por ejemplo, si elige Form1, puede cambiar el título mediante la propiedad **Text** y el color de fondo mediante la propiedad **Backcolor**.
 
       > [!NOTE]
-      > En la línea superior del **Explorador de soluciones** se muestra **Solución "PictureViewer" (1 proyecto)** , lo que significa que Visual Studio ha creado una solución. Una solución puede contener varios proyectos, pero, por ahora, trabajará con soluciones que contengan un solo proyecto.
+      > En la línea superior del **Explorador de soluciones** se muestra **Solución "PictureViewer" (1 proyecto)**, lo que significa que Visual Studio ha creado una solución. Una solución puede contener varios proyectos, pero, por ahora, trabajará con soluciones que contengan un solo proyecto.
 
 1. En la barra de menús, pulse **Archivo** > **Guardar todo**.
 
      Como alternativa, seleccione el botón **Guardar todo** de la barra de herramientas que se muestra en la imagen siguiente.
 
      ![Botón de la barra de herramientas Guardar todo](../ide/media/express_iconsaveall.png)<br/>
-     ***Botón de la barra de herramientas*** *Guardar todo*
+     *Botón de la barra de herramientas *_Guardar todo_* __*
 
      Visual Studio rellena automáticamente el nombre de la carpeta y el nombre del proyecto, y después guarda el proyecto en la carpeta de proyectos.
 

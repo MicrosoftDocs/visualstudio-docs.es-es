@@ -1,5 +1,7 @@
 ---
 title: 'Paso 7: Agregar componentes de diálogo al formulario'
+description: Aprenda a agregar un componente de diálogo <xref:System.Windows.Forms.OpenFileDialog> y un componente de diálogo <xref:System.Windows.Forms.ColorDialog> al formulario.
+ms.custom: SEO-VS-2020
 ms.date: 08/30/2019
 ms.assetid: ea98c55e-6213-4893-ba7b-f19d7f119527
 ms.topic: tutorial
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9697bf6cf84c2a74daac2017b4f63d52a7019b6
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 37cbd2ca1f0207eaf2a41f6a08248bcedcfbe5bb
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579277"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479477"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>Paso 7: Agregar componentes de diálogo al formulario
 
@@ -25,14 +27,14 @@ En algunos sentidos, un componente es como un control. El **cuadro de herramient
 
 ## <a name="to-add-dialog-components-to-your-form"></a>Para agregar componentes de cuadro de diálogo al formulario
 
-1. Elija el **Diseñador de Windows Forms** (**Form1.cs [Diseño]** ) y después abra el grupo **Cuadros de diálogo** del **Cuadro de herramientas**.
+1. Elija el **Diseñador de Windows Forms** (**Form1.cs [Diseño]**) y después abra el grupo **Cuadros de diálogo** del **Cuadro de herramientas**.
 
     > [!NOTE]
-    > El grupo **Cuadros de diálogo** del **cuadro de herramientas** tiene componentes que abren automáticamente muchos cuadros de diálogo de gran utilidad y que se pueden usar para abrir y guardar archivos, examinar carpetas y elegir fuentes o colores. Use dos componentes de cuadro de diálogo en este proyecto: OpenFileDialog y ColorDialog.
+    > El grupo **Cuadros de diálogo** del **cuadro de herramientas** tiene componentes que abren automáticamente muchos cuadros de diálogo de gran utilidad y que se pueden usar para abrir y guardar archivos, examinar carpetas y elegir fuentes o colores. En este proyecto se usan dos componentes de cuadro de diálogo: OpenFileDialog y ColorDialog.
 
 1. Para agregar un componente denominado **openFileDialog1** al formulario, haga doble clic en **OpenFileDialog**. Para agregar un componente denominado **colorDialog1** al formulario, haga doble clic en **ColorDialog** en el **cuadro de herramientas**. (Este se utiliza en el siguiente paso del tutorial.) Debería aparecer un área en la parte inferior del **Diseñador de Windows Forms** (bajo el formulario del **Visor de imágenes**), con un icono para cada uno de los dos componentes de cuadro de diálogo agregados, como se muestra en la imagen siguiente.
 
-     ![Componentes de cuadro de diálogo](../ide/media/express_dialogsadded.png)<br>***Componentes*** de *cuadro de diálogo*
+     ![Componentes de cuadro de diálogo](../ide/media/express_dialogsadded.png)<br>*Componentes de *_cuadro de diálogo_* __*
 
 1. Elija el icono **openFileDialog1** del área de la parte inferior del **Diseñador de Windows Forms**. Establezca dos propiedades:
 
@@ -42,7 +44,7 @@ En algunos sentidos, un componente es como un control. El **cuadro de herramient
         JPEG Files (*.jpg)|*.jpg|PNG Files (*.png)|*.png|BMP Files (*.bmp)|*.bmp|All files (*.*)|*.*
         ```
 
-    - Establezca la propiedad **Título** en lo siguiente: **Seleccione un archivo de imagen**
+    - Establezca la propiedad **Title** en lo siguiente: **Select a picture file** (Seleccionar un archivo de imagen).
 
          Los valores de la propiedad **Filter** especifican las clases de tipos de archivo que se mostrarán en el cuadro de diálogo **Select a picture file** (Seleccionar un archivo de imagen).
 

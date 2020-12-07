@@ -1,5 +1,7 @@
 ---
 title: Probar una aplicación de UWP con una prueba automatizada de IU
+description: Obtenga información sobre cómo crear una prueba automatizada de IU para una aplicación de la Plataforma universal de Windows mediante la creación de una aplicación para UWP en la que probará y creará una prueba automatizada de IU.
+ms.custom: SEO-VS-2020
 ms.date: 05/31/2018
 ms.topic: how-to
 author: mikejo5000
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: aad17d244d70051a363a4cde294c592968093ba0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a6ec6750a48b8902ec77e8982beb774e306c8d1d
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286757"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330243"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>Crear una prueba automatizada de IU para probar una aplicación de UWP
 
@@ -57,7 +59,7 @@ El primer paso es crear una aplicación sencilla de UWP para ejecutar la prueba.
    Me.textBox.Text = Me.button.Name
    ```
 
-1. Presione **Ctrl**+**F5** para ejecutar la aplicación. Debería ver algo parecido a lo siguiente:
+1. Presione **Ctrl**+**F5** para ejecutar la aplicación. Debe ver algo parecido a lo siguiente:
 
    ![Aplicación de UWP con botón y cuadro de texto](media/uwp-app.png)
 
@@ -74,7 +76,7 @@ El primer paso es crear una aplicación sencilla de UWP para ejecutar la prueba.
    ::: moniker-end
 
    > [!NOTE]
-   > Si no ve la plantilla **Proyecto de prueba automatizada de IU (Windows universal)** , necesitará [instalar el componente de prueba automatizada de IU](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
+   > Si no ve la plantilla **Proyecto de prueba automatizada de IU (Windows universal)**, necesitará [instalar el componente de prueba automatizada de IU](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
 
 1. En el cuadro de diálogo **Generar código para prueba automatizada de IU**, seleccione **Editar la prueba manualmente**.
 
@@ -158,7 +160,7 @@ El primer paso es crear una aplicación sencilla de UWP para ejecutar la prueba.
    Reemplace el identificador de automatización en el código de ejemplo por el valor que copió en el portapapeles en el paso anterior.
 
    > [!IMPORTANT]
-   > Recorte el principio del identificador de automatización para quitar caracteres como **P ~** . Si no recorta estos caracteres, la prueba produce una `Microsoft.VisualStudio.TestTools.UITest.Extension.PlaybackFailureException` al intentar iniciar la aplicación.
+   > Recorte el principio del identificador de automatización para quitar caracteres como **P ~**. Si no recorta estos caracteres, la prueba produce una `Microsoft.VisualStudio.TestTools.UITest.Extension.PlaybackFailureException` al intentar iniciar la aplicación.
 
 1. A continuación, agregue código al método de prueba para hacer clic en el botón. En la línea siguiente a `XamlWindow.Launch`, agregue un gesto para pulsar el control de botón:
 
@@ -214,7 +216,7 @@ El primer paso es crear una aplicación sencilla de UWP para ejecutar la prueba.
 
 ## <a name="q--a"></a>Preguntas y respuestas
 
-### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>P: ¿Por qué no veo la opción para registrar la prueba automatizada de IU en la opción Generar código de un cuadro de diálogo Prueba automatizada de IU?
+### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>P: ¿Por qué no veo la opción para registrar la prueba de IU codificada en la opción Generar código de un cuadro de diálogo Prueba de IU codificada?
 
 **R**: La opción para registrar no se admite en las aplicaciones para UWP.
 
@@ -224,7 +226,7 @@ El primer paso es crear una aplicación sencilla de UWP para ejecutar la prueba.
 
 ### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>P: ¿Por qué no puedo modificar el código en el archivo UIMap.Designer?
 
-**R**: Cualquier cambio que se efectúe en el código del archivo *UIMapDesigner.cs* se sobrescribe cada vez que se genera código mediante el **Generador de pruebas automatizadas de IU**. Si tiene que modificar un método grabado, cópielo en el archivo *UIMap.cs* y cámbiele el nombre. El archivo *UIMap.cs* se puede utilizar para invalidar métodos y propiedades en el archivo *UIMapDesigner.cs*. Quite la referencia al método original en el archivo *CodedUITest.cs* y reemplácelo por el nombre del método cuyo nombre ha cambiado.
+**R**: Cualquier cambio que se efectúe en el código del archivo *UIMapDesigner.cs* se sobrescribirá cada vez que se genere código mediante el **Generador de pruebas automatizadas de IU**. Si tiene que modificar un método grabado, cópielo en el archivo *UIMap.cs* y cámbiele el nombre. El archivo *UIMap.cs* se puede utilizar para invalidar métodos y propiedades en el archivo *UIMapDesigner.cs*. Quite la referencia al método original en el archivo *CodedUITest.cs* y reemplácelo por el nombre del método cuyo nombre ha cambiado.
 
 ## <a name="see-also"></a>Vea también
 

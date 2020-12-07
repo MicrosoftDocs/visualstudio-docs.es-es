@@ -1,5 +1,7 @@
 ---
 title: Opciones de formato del editor de C#
+description: Obtenga información sobre cómo usar la página de opciones Formato y sus subpáginas para establecer las opciones de formato del código en el editor de código cuando programa en C#.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2018
 ms.topic: reference
 f1_keywords:
@@ -18,18 +20,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 57d95cd3f3dcf68e7af143bdde3a16474beda20c
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: a29f298579d571595cbf537f99ed67b333fbbb9c
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659282"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039776"
 ---
 # <a name="options-dialog-box-text-editor--c--code-style--formatting"></a>Cuadro de diálogo Opciones: Editor de texto\> C# \> Estilo de código \> Formato
 
 Use la página de opciones **Formato** y sus subpáginas ([**Sangría**](#indentation-page), **Nuevas líneas**, **Espaciado** y **Ajuste**) para establecer las opciones de formato del código del editor de código.
 
-Para acceder a esta página de opciones, seleccione **Herramientas** > **Opciones** en la barra de menús. En el cuadro de diálogo **Opciones**, elija **Editor de texto** > **C#**  > **Estilo de código** > **Formato**.
+Para acceder a esta página de opciones, seleccione **Herramientas** > **Opciones** en la barra de menús. En el cuadro de diálogo **Opciones**, elija **Editor de texto** > **C#** > **Estilo de código** > **Formato**.
 
 > [!TIP]
 > Las subpáginas **Sangría**, **Nuevas líneas**, **Espaciado** y **Ajuste** muestran cada una una ventana de vista previa en la parte inferior que muestra el efecto de cada opción. Para usar la ventana de vista previa, seleccione una opción de formato. La ventana de vista previa muestra un ejemplo de la opción seleccionada. Cuando cambia la configuración (activando o desactivando una casilla o un botón de radio), la ventana de vista previa se actualiza para mostrar el efecto de la nueva configuración.
@@ -94,6 +96,6 @@ Las opciones de sangría de esta página se aplican cuando se da formato automá
 >
 > ![Opciones de las pestañas del editor de texto de C# en Visual Studio](media/csharp-tabs-options.png)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [General, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/general-environment-options-dialog-box.md)

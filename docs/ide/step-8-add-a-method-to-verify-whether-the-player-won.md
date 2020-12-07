@@ -1,5 +1,7 @@
 ---
 title: 'Paso 8: Agregar un método para comprobar si el jugador ganó'
+description: Aprenda a agregar un método para determinar si el jugador ganó.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 881fa0d90390a059bea28cb19584381f814396d3
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: c53afebfd8c39e9c43f82916095d8eeef2ec8b11
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579762"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479295"
 ---
 # <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>Paso 8: Agregar un método para comprobar si el jugador ganó
 Ha creado un juego divertido, pero necesita un elemento adicional para terminarlo. El juego debe finalizar cuando el jugador gana, de modo que necesita agregar un método `CheckForWinner()` para comprobar si el jugador ha ganado.
@@ -43,10 +45,10 @@ Ha creado un juego divertido, pero necesita un elemento adicional para terminarl
 3. Guarde y ejecute el programa. Reproduzca el juego y halle las coincidencias de todos los iconos. Al ganar, el programa muestra un elemento **MessageBox** de felicitación (tal como se muestra en la siguiente imagen) y, a continuación, cierra el cuadro.
 
      ![Juego de formar parejas con MessageBox](../ide/media/express_tut4step8.png)<br/>
-***Juego de formar parejas*** *con* ***MessageBox***
+**_Juego de formar parejas_* _ _con* ***MessageBox**_
 
 ## <a name="to-continue-or-review"></a>Para continuar o revisar
 
-- Para ir al siguiente paso del tutorial, vea **[Paso 9: Probar otras características](../ide/step-9-try-other-features.md)** .
+- Para ir al siguiente paso del tutorial, vea _*[Paso 9: Probar otras características](../ide/step-9-try-other-features.md)**.
 
 - Para volver al paso anterior del tutorial, vea [Paso 7: Mantener visibles los pares](../ide/step-7-keep-pairs-visible.md).

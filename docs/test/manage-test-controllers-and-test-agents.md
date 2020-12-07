@@ -1,5 +1,7 @@
 ---
 title: Administrar controladores de pruebas y agentes de pruebas
+description: Obtenga información sobre cómo administrar controladores de pruebas y agentes de prueba después de instalarlos y configurarlos por primera vez.
+ms.custom: SEO-VS-2020
 ms.date: 09/18/2018
 ms.topic: how-to
 author: mikejo5000
@@ -7,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78bd0143ee2584bcabb5e8ed4946818ee2590789
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8d9a416dc64a9d49d14e367a04023f067c7b595c
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286705"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329645"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Administrar controladores de pruebas y agentes de pruebas
 
@@ -114,7 +116,7 @@ Si el controlador de pruebas no está registrado con un proyecto, siga estos pas
 
 2. En la lista desplegable **Controlador**, escriba el nombre del equipo donde haya instalado el controlador de pruebas. Si ya ha administrado previamente un controlador concreto, podrá seleccionar su nombre en la lista.
 
-3. En el panel **Agentes**, seleccione el nombre del agente de prueba. Si el agente todavía está en línea, elija **Sin conexión**. Para quitarlo, elija**Quitar**.
+3. En el panel **Agentes**, seleccione el nombre del agente de prueba. Si el agente todavía está en línea, elija **Sin conexión**. Para quitarlo, elija **Quitar**.
 
    > [!NOTE]
    > Al quitar un agente de prueba, solo queda desasociado del controlador de pruebas. Para desinstalar completamente el agente de prueba, use **Programas y características** en el Panel de control del equipo donde esté instalado el agente de prueba.

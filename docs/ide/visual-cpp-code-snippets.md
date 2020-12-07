@@ -1,5 +1,7 @@
 ---
 title: Fragmentos de código de Visual C++
+description: Aprenda a usar fragmentos de código para agregar código de uso común a los archivos de código de C++.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: corob-msft
@@ -9,12 +11,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: db6ea1e233d32872322926a4d75b847ee6a49ba3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e5cde2be817c49344e02ff06030022f99790a7a2
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77277833"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96478814"
 ---
 # <a name="visual-c-code-snippets"></a>Fragmentos de código de Visual C++
 
@@ -50,9 +52,9 @@ Para rodear el código seleccionado con un fragmento de código, seleccione una 
 
 - En el menú **Edición** > **IntelliSense**, seleccione **Envolver con**.
 
-- En un teclado, presione: **CTRL**+**K**+**S**
+- En un teclado, presione: **Ctrl**+**K**+**S**
 
-Seleccione **#if**. Verá algo parecido a esto:
+Seleccione **#if**. Deberíamos ver algo parecido a lo siguiente:
 
 ```cpp
 #if 0
@@ -64,7 +66,7 @@ A continuación, puede reemplazar el 0 por la condición correcta.
 
 ## <a name="where-can-i-find-a-complete-list-of-the-c-code-snippets"></a>¿Dónde puedo encontrar una lista completa de los fragmentos de código de C++?
 
-Para ver la lista completa de los fragmentos de código de C++, vaya a **Administrador de fragmentos de código** (en el menú **Herramientas**) y establezca el **Lenguaje** en **Visual C++** . En la ventana inferior, expanda **Visual C++** . Verá los nombres de todos los fragmentos de código de C++ en orden alfabético.
+Para ver la lista completa de los fragmentos de código de C++, vaya a **Administrador de fragmentos de código** (en el menú **Herramientas**) y establezca el **Lenguaje** en **Visual C++**. En la ventana inferior, expanda **Visual C++**. Verá los nombres de todos los fragmentos de código de C++ en orden alfabético.
 
 La mayoría de los nombres de los fragmentos de código se explican por sí mismos, pero algunos pueden ser confusos.
 

@@ -1,5 +1,7 @@
 ---
 title: 'Paso 5: Agregar controles al formulario'
+description: Aprenda a agregar controles, como un control <xref:System.Windows.Forms.PictureBox> y un control <xref:System.Windows.Forms.CheckBox>, al formulario.
+ms.custom: SEO-VS-2020
 ms.date: 08/30/2019
 ms.assetid: dc2746f4-0b5c-4674-9ef7-f40f94150f52
 ms.topic: tutorial
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 631def96fc7e4b5d7858ea3474492b41c526da65
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 4ff3e132087b97339bc710555428ba7488fa2e06
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579353"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480582"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>Paso 5: Agregar controles al formulario
 
@@ -29,7 +31,7 @@ En este paso, se agregan controles, como un control <xref:System.Windows.Forms.P
 
 1. Elija el nuevo control **PictureBox** para seleccionarlo y, después, elija el triángulo negro de este control para mostrar la lista de tareas, como se muestra en la captura de pantalla siguiente.
 
-    ![Tareas de PictureBox](../ide/media/express_pictureboxtasks.png)<br/>*Tareas de* ****PictureBox****
+    ![Tareas de PictureBox](../ide/media/express_pictureboxtasks.png)<br/>**Tareas de **PictureBox **__**
 
     > [!NOTE]
     > Si agrega accidentalmente un tipo equivocado de control a TableLayoutPanel, puede eliminarlo. Haga clic con el botón derecho en el control y, después, pulse **Eliminar** en el menú contextual. También puede quitar controles del formulario mediante la barra de menús. En la barra de menús, pulse **Editar** > **Deshacer** o **Editar** > **Eliminar**.
@@ -43,7 +45,7 @@ En este paso, se agregan controles, como un control <xref:System.Windows.Forms.P
 
 1. Seleccione el control **TableLayoutPanel** del formulario y, después, agregue un control CheckBox al formulario. Haga doble clic en el elemento **CheckBox** del **cuadro de herramientas** para agregar un nuevo control CheckBox a la siguiente celda libre de la tabla. Como el control PictureBox ocupa las dos primeras celdas del control TableLayoutPanel, el control CheckBox se agrega en la celda inferior izquierda. Seleccione la propiedad **Text** y escriba la palabra **Stretch**, como se muestra en la imagen siguiente.
 
-    ![Control TextBox con la propiedad Stretch](../ide/media/express_pictureviewercheckbox.png)<br/>***Control*** TextBox*con la* ***propiedad*** *Stretch*
+    ![Control TextBox con la propiedad Stretch](../ide/media/express_pictureviewercheckbox.png)<br/>*Control *_TextBox_* _ _con la propiedad* ***Stretch**_ _*
 
 1. Seleccione el control **TableLayoutPanel** del formulario, vaya al grupo **Contenedores** del **Cuadro de herramientas** (donde ha obtenido el control TableLayoutPanel) y haga doble clic en el elemento **FlowLayoutPanel** para agregar un nuevo control a la última celda (en la parte inferior derecha). Después, acople el control FlowLayoutPanel en TableLayoutPanel. Para ello, seleccione **Acoplar en contenedor primario** en la lista de tareas del triángulo negro de FlowLayoutPanel, o bien establezca la propiedad **Dock** de FlowLayoutPanel en **Relleno**.
 
@@ -74,7 +76,7 @@ En este paso, se agregan controles, como un control <xref:System.Windows.Forms.P
 
    Ahora, los botones deberían tener el tamaño y orden correctos. (Si los cuatro botones están seleccionados, puede cambiar las cuatro propiedades **AutoSize** al mismo tiempo). En la imagen siguiente se muestran los cuatro botones.
 
-    ![Visor de imágenes con cuatro botones](../ide/media/express_autosize.png)<br/>***Visor de imágenes*** *con cuatro botones*
+    ![Visor de imágenes con cuatro botones](../ide/media/express_autosize.png)<br/>**_Visor de imágenes_* _ _con cuatro botones*
 
 1. Ahora vuelva a ejecutar el programa para ver los cambios.
 

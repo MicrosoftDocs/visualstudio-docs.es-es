@@ -1,5 +1,7 @@
 ---
 title: -ProjectConfig (devenv.exe)
+description: Obtenga información sobre cómo usar el modificador ProjectConfig de la línea de comandos de devenv para especificar una configuración de compilación de proyecto que se aplicará al compilar, limpiar, recompilar o implementar el proyecto.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -20,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8bb4b2860d40828a96e25ec6e6c73d947dd60c0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 06c6f98e9d022a7b253fdd0ea25a60ff01a4d756
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75567663"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040074"
 ---
 # <a name="projectconfig-devenvexe"></a>/ProjectConfig (devenv.exe)
 
@@ -41,11 +43,11 @@ devenv SolutionName {/Build|/Clean|/Deploy|/Rebuild} [SolnConfigName [/Project P
 
 - *SolutionName*
 
-  Obligatorio. Ruta de acceso completa y nombre del archivo de solución.
+  Necesario. Ruta de acceso completa y nombre del archivo de solución.
 
 - {`/Build`|`/Clean`|`/Deploy`|`/Rebuild`}
 
-  Obligatorio. [Compila](build-devenv-exe.md), [limpia](clean-devenv-exe.md), [implementa](deploy-devenv-exe.md) o [recompila](rebuild-devenv-exe.md) el proyecto.
+  Necesario. [Compila](build-devenv-exe.md), [limpia](clean-devenv-exe.md), [implementa](deploy-devenv-exe.md) o [recompila](rebuild-devenv-exe.md) el proyecto.
 
 - *SolnConfigName*
 
@@ -63,7 +65,7 @@ devenv SolutionName {/Build|/Clean|/Deploy|/Rebuild} [SolnConfigName [/Project P
 
   Opcional. Nombre de un archivo que quiera enviar al resultado de la herramienta. Si el archivo ya existe, la herramienta anexa el resultado al final del archivo.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El modificador `/ProjectConfig` tiene que usarse con el modificador `/Project` como parte de un comando `/Build`, /`Clean`, `/Deploy` o `/Rebuild`.
 

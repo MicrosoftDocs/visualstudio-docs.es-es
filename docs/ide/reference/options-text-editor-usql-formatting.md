@@ -1,5 +1,7 @@
 ---
 title: Opciones de formato del editor de U-SQL
+description: Obtenga información sobre cómo usar la página de opciones Formato y sus subpáginas para establecer las opciones de formato del código en el editor de código cuando programa en U-SQL.
+ms.custom: SEO-VS-2020
 ms.date: 01/17/2019
 ms.topic: reference
 f1_keywords:
@@ -13,18 +15,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 200ec41a1295178f1127d10053985384a7813158
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5bf65c6c80bbcf24d48f5da584349cc4d6b26049
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568274"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040295"
 ---
 # <a name="options-text-editor-u-sql-formatting"></a>Opciones, Editor de texto, U-SQL, formato
 
 Use la página de opciones **Formato** para establecer las opciones de formato de código en el editor de código. Para acceder a esta página de opciones, elija **Herramientas** > **Opciones**. En el cuadro de diálogo **Opciones**, elija **Editor de texto** > **U-SQL** > **Formato**.
 
-## <a name="general-page"></a>Página general
+## <a name="general-page"></a>Página General
 
 ### <a name="general-settings"></a>Configuración general
 
@@ -49,6 +51,6 @@ Las opciones de sangría en las páginas **Pestañas** de cada idioma solo deter
 - Cuando pega el código en el archivo mientras está seleccionada la opción **Dar formato automáticamente al pegar**
 - Cuando el bloque al que se está dando formato se escribe manualmente
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [General, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/general-environment-options-dialog-box.md)

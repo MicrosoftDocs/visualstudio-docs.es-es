@@ -1,5 +1,7 @@
 ---
 title: Opciones, Editor, HTML (formularios Web Forms), validación
+description: Obtenga información sobre cómo usar la página Validación de la sección HTML para establecer preferencias de cómo debe comprobar el editor HTML la sintaxis del marcado HTML en el documento.
+ms.custom: SEO-VS-2020
 ms.date: 1/15/2019
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ede4600cb1fa1df118b4635a193d8bff348d5119
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b65edc2b6c48bc76075e909d0f9bd1341a1b6dd8
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568287"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040568"
 ---
 # <a name="options-text-editor-html-web-forms-validation"></a>Opciones, Editor, HTML (formularios Web Forms), validación
 

@@ -1,5 +1,7 @@
 ---
 title: Opciones, editor de texto, C/C++ y visualización
+description: Obtenga información sobre cómo usar la página Vista de la sección C/C++ para cambiar el comportamiento predeterminado de las propiedades Subrayados ondulados de código, Código inactivo, Esquematización, etc., en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.topic: reference
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 95963245b15828f374e9812a9bb09d015b21a94b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 68d08953ca3c493f3b3e42dd4ddd84bc19bdfd6e
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77278696"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96041079"
 ---
 # <a name="options-text-editor-cc-view"></a>Opciones, editor de texto, C/C++ y visualización
 
@@ -46,7 +48,7 @@ Puede habilitar o deshabilitar las siguientes opciones para administrar la maner
 
 - **Resaltar tokens de emparejamiento**: resalta la sintaxis o las llaves delimitadoras que coinciden con la posición del cursor.
 
-## <a name="outlining"></a>Esquematización
+## <a name="outlining"></a>esquematizar
 
 - **Habilitar esquematización**: entra en el modo de esquematización cuando se abre un archivo.
 
@@ -54,7 +56,7 @@ Puede habilitar o deshabilitar las siguientes opciones para administrar la maner
 
 - **Esquematizar bloques de instrucciones**: esquematiza automáticamente bloques de instrucciones.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Configurar las opciones del editor específicas del lenguaje](../../ide/reference/setting-language-specific-editor-options.md)
+- [Opciones del editor específicas del lenguaje](../../ide/reference/setting-language-specific-editor-options.md)
 - [Refactorización en C++ (Blog de VC)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/)

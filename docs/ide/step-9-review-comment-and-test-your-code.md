@@ -1,5 +1,7 @@
 ---
 title: 'Paso 9: Revisar, comentar y probar el código'
+description: Aprenda a agregar comentarios al código y a probar la aplicación.
+ms.custom: SEO-VS-2020
 ms.date: 08/30/2019
 ms.assetid: f26f79ba-c91b-4164-b87f-679a1b231c09
 ms.topic: tutorial
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b31532bf6c26512e471ee787dc7219620e6db62
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 8f5be5d8c59d9ef402bd929bd386a7bdaaa9912e
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579747"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479308"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Paso 9: Revisar, comentar y probar el código
 
@@ -30,7 +32,7 @@ Acaba de compilar algo que funciona y, aunque todavía no está terminado, ya es
 
 - Al hacer doble clic en el botón **Show a picture** (Mostrar una imagen) en el **Diseñador de Windows Forms**, el IDE agregó automáticamente un *método* al código del programa.
 
-- Los métodos sirven para organizar el código: Son la forma de agrupar el código.
+- Los métodos permiten organizar el código: son la manera de agrupar las partes del código.
 
 - En la mayoría de los casos, un método realiza una cantidad reducida de acciones en un orden concreto; por ejemplo, el método `showButton_Click()` (o `ShowButton_Click()`) muestra un cuadro de diálogo y después carga una imagen.
 
@@ -65,31 +67,31 @@ Acaba de compilar algo que funciona y, aunque todavía no está terminado, ya es
     > [!TIP]
     > El IDE se ha creado para facilitar la tarea de escribir código. Los *fragmentos de código* constituyen una manera de conseguirlo. Un fragmento de código es un acceso directo que se expande para crear un bloque pequeño de código.
     >
-    >  Puede ver todos los fragmentos de código disponibles. En la barra de menús, elija **Herramientas** > **Administrador de fragmentos de código**. En C#, el fragmento de código `if` está en **Visual C#** . En Visual Basic, los fragmentos de código `if` están en **Code Patterns (Patrones de código)**  > **Condicionales y bucles**. Este administrador se puede utilizar para examinar los fragmentos de código existentes o agregar los suyos propios.
+    >  Puede ver todos los fragmentos de código disponibles. En la barra de menús, elija **Herramientas** > **Administrador de fragmentos de código**. En C#, el fragmento de código `if` está en **Visual C#**. En Visual Basic, los fragmentos de código `if` están en **Code Patterns (Patrones de código)**  > **Condicionales y bucles**. Este administrador se puede utilizar para examinar los fragmentos de código existentes o agregar los suyos propios.
     >
     >  Para activar un fragmento de código mientras está especificando el código, escríbalo y elija la tecla **Tab**. Muchos fragmentos de código aparecen en la ventana **IntelliSense**, motivo por el cual la tecla **Tab** se elige dos veces: la primera para seleccionar el fragmento de código en la ventana **IntelliSense** y la segunda para indicarle al IDE que lo use. (IntelliSense admite el fragmento de código `if`, pero no el fragmento de código `ifelse`.)
 
 1. Antes de ejecutar la aplicación, seleccione el botón **Guardar todo** de la barra de herramientas para guardarla, que debe ser similar a la captura de pantalla siguiente.
 
      ![Botón de la barra de herramientas Guardar todo](../ide/media/express_iconsaveall.png)<br>
-*Botón* ***Guardar todo***
+*Botón *_Guardar todo_* __*
 
      O bien, para guardar la aplicación, elija **Archivo** > **Guardar todo** en la barra de menús (o presione **Ctrl**+**Mayús**+**S**). El procedimiento recomendado consiste en guardar desde el principio y a menudo.
 
      Mientras se ejecuta, el programa debería parecerse a la imagen siguiente.
 
-     ![Visor de imágenes](../ide/media/express_pictureviewerdonerun.png)<br>***Visor de imágenes***
+     ![Visor de imágenes](../ide/media/express_pictureviewerdonerun.png)<br>**_Visor de imágenes_* _
 
 ## <a name="to-test-your-app"></a>Para probar la aplicación
 
-1. Elija la tecla **F5** o el botón de la barra de herramientas **Iniciar depuración**.
+1. Presione la tecla _ *F5** o el botón de la barra de herramientas **Iniciar depuración**.
 
 1. Elija el botón **Show a picture** (Mostrar una imagen) para ejecutar el código que acaba de escribir. Primero, la aplicación abre un cuadro de diálogo **Abrir archivo**. Compruebe que los filtros aparecen en la lista desplegable **Tipo de archivo** en la parte inferior del cuadro de diálogo. A continuación, navegue hasta una imagen y ábrala. Normalmente, encontrará imágenes de ejemplo que se distribuyen con el sistema operativo Windows en la carpeta *Mis documentos*, dentro de la carpeta *Mis imágenes\Imágenes de muestra*.
 
     > [!TIP]
     > Si no ve ninguna imagen en el cuadro de diálogo **Select a picture file** (Seleccionar un archivo de imagen), asegúrese de que el filtro **Todos los archivos (*.\*)** esté seleccionado en la lista desplegable situada en la parte inferior derecha del cuadro de diálogo.
 
-1. Cargue una imagen y esta aparecerá en el control PictureBox. A continuación intente cambiar el tamaño del formulario arrastrando los bordes. Como el control PictureBox está acoplado dentro de un control TableLayoutPanel, que a su vez está acoplado en el formulario, el ancho del área de imagen se ajustará al ancho del formulario y el alto ocupará el 90 por ciento superior del formulario. Por eso se han usado los contenedores <xref:System.Windows.Forms.TableLayoutPanel> y <xref:System.Windows.Forms.FlowLayoutPanel>: Mantienen el tamaño del formulario correcto cuando el usuario lo modifica.
+1. Cargue una imagen y esta aparecerá en el control PictureBox. A continuación intente cambiar el tamaño del formulario arrastrando los bordes. Como el control PictureBox está acoplado dentro de un control TableLayoutPanel, que a su vez está acoplado en el formulario, el ancho del área de imagen se ajustará al ancho del formulario y el alto ocupará el 90 por ciento superior del formulario. Por este motivo hemos utilizado los contenedores <xref:System.Windows.Forms.TableLayoutPanel> y <xref:System.Windows.Forms.FlowLayoutPanel>: mantienen el tamaño del formulario correcto cuando el usuario lo modifica.
 
      En este momento, las imágenes más grandes sobrepasan los bordes del visor de imágenes. En el paso siguiente, agregará código para que las imágenes se ajusten a la ventana.
 

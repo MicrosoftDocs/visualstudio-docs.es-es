@@ -1,5 +1,7 @@
 ---
 title: Ventana Comandos
+description: Obtenga información sobre cómo puede usar la ventana Comandos para ejecutar comandos o alias directamente en el IDE de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +18,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb855cbed67bffc5ff2fb63b1785c577dd9fea25
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8e133f20464fb19752c7616d2fab1a631fa802c9
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75570354"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040916"
 ---
-# <a name="command-window"></a>Ventana Comandos
+# <a name="command-window"></a>Ventana de comandos
 La ventana **Comandos** se usa para ejecutar comandos o alias directamente en el entorno de desarrollo integrado (IDE) de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Puede ejecutar comandos de menú y comandos que no aparecen en ningún menú. Para mostrar la ventana **Comandos**, pulse **Otras ventanas** desde el menú **Ver** y seleccione **Ventana Comandos**.
 
 ## <a name="displaying-the-values-of-variables"></a>Mostrar los valores de las variables
@@ -44,7 +46,7 @@ Ambas versiones de este comando devolverán el valor de la variable `varA`.
 ## <a name="entering-commands"></a>Escribir comandos
 El signo de mayor que (`>`) aparece en el borde izquierdo de la ventana Comandos como un aviso para las líneas nuevas. Use las teclas FLECHA ARRIBA y FLECHA ABAJO para desplazarse por los comandos ejecutados anteriormente.
 
-|Tarea|Soluciones|Ejemplo|
+|Tarea|Solución|Ejemplo|
 |----------|--------------|-------------|
 |Evaluar una expresión.|Comenzar la expresión con un signo de interrogación (`?`).|`? myvar`|
 |Cambiar a una ventana Inmediato.|Escribir `immed` en la ventana sin el signo de mayor que (>)|`immed`|
@@ -107,9 +109,9 @@ Un carácter de intercalación (^) en una línea de comandos significa que el ca
 El símbolo de intercalación funciona igual tanto si está dentro como fuera de unas comillas. Si el símbolo de intercalación es el último carácter de la línea, se ignora. En el ejemplo que se muestra aquí se muestra cómo buscar el patrón "^t".
 
 ## <a name="use-quotes-for-path-names-with-spaces"></a>Usar comillas para los nombres de ruta con espacios
-Si, por ejemplo, quiere abrir un archivo que tiene una ruta que contiene espacios, debe colocar comillas alrededor de la ruta o del segmento de ruta que contiene espacios: **C:\\"Archivos de programa"** o **"C:\Archivos de programa"** .
+Si, por ejemplo, quiere abrir un archivo que tiene una ruta que contiene espacios, debe colocar comillas alrededor de la ruta o del segmento de ruta que contiene espacios: **C:\\"Archivos de programa"** o **"C:\Archivos de programa"**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 - [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)

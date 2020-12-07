@@ -1,5 +1,7 @@
 ---
 title: Ir a la línea
+description: Obtenga información sobre el cuadro de diálogo Ir a la línea y cómo le permite desplazarse a una línea específica del documento activo.
+ms.custom: SEO-VS-2020
 ms.date: 05/18/2018
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 643da538626395434c1269e2294d90b332c564e2
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 7241a574dc8ac8531c2eb4d88eddb1cf047a80d6
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88249877"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304202"
 ---
 # <a name="go-to-line-dialog-box"></a>Ir a la línea (cuadro de diálogo)
 

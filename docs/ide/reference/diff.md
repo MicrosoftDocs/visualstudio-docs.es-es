@@ -1,5 +1,7 @@
 ---
 title: -Diff (devenv.exe)
+description: Obtenga información sobre cómo usar el modificador Diff de la línea de comandos de devenv para comparar dos archivos.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bb74501c15e961d8da8e1e29dd0d9979c79a305
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5a2ae3da5036134260f48dce8838571312d87bf2
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75570094"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305500"
 ---
 # <a name="diff-devenvexe"></a>/Diff (devenv.exe)
 
@@ -33,11 +35,11 @@ devenv /Diff SourceFile TargetFile [SourceDisplayName [TargetDisplayName]]
 
 - *SourceFile*
 
-  Obligatorio. Ruta de acceso completa y nombre del primer archivo que se va a comparar.
+  Necesario. Ruta de acceso completa y nombre del primer archivo que se va a comparar.
 
 - *TargetFile*
 
-  Obligatorio. Ruta de acceso completa y nombre del segundo archivo que se va a comparar.
+  Necesario. Ruta de acceso completa y nombre del segundo archivo que se va a comparar.
 
 - *SourceDisplayName*
 
@@ -47,7 +49,7 @@ devenv /Diff SourceFile TargetFile [SourceDisplayName [TargetDisplayName]]
 
   Opcional. Nombre para mostrar del segundo archivo.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Si ya hay abierta una instancia de IDE, la comparación de archivos se mostrará en una pestaña de IDE actual.
 

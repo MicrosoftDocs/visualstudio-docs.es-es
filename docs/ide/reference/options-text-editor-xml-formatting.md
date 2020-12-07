@@ -1,5 +1,7 @@
 ---
 title: Opciones, editor de texto, XML y formato
+description: Obtenga información sobre cómo usar la página Formato de la sección XML para especificar cómo se aplica formato a los elementos y atributos en los documentos XML.
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.topic: reference
 f1_keywords:
@@ -8,12 +10,12 @@ ms.assetid: 203e60b2-7b80-4ff4-9fa1-aa9f4374377b
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: b5dabfbc4f705d7de9fa881f373994714e43d26a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9aac9420d084c64a4bd5d9199f6a7ca96b8c4281
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568144"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040516"
 ---
 # <a name="options-text-editor-xml-formatting"></a>Opciones, editor de texto, XML y formato
 
@@ -23,14 +25,14 @@ Use la página de opciones **Formato** para especificar cómo se aplica formato 
 
 **Preservar el formato manual de atributos**
 
-No vuelve a dar formato a los atributos. Esta opción es el valor predeterminado.
+No vuelve a dar formato a los atributos. Esta es la configuración predeterminada.
 
 > [!NOTE]
 > Si los atributos se encuentran en varias líneas, el editor sangra cada línea de atributos para que coincida con el sangrado del elemento primario.
 
 **Alinear los atributos en líneas separadas**
 
-Alinea el segundo atributo y los posteriores en vertical para que coincidan con la sangría del primer atributo. La siguiente prueba XML es un ejemplo de cómo se alinearían los atributos:
+Los atributos segundo y siguientes se alinean verticalmente para coincidir con el sangrado del primer atributo. La siguiente prueba XML es un ejemplo de cómo se alinearían los atributos:
 
 ```xml
 <item id = "123-A"
@@ -43,19 +45,19 @@ Alinea el segundo atributo y los posteriores en vertical para que coincidan con 
 
 **Al pegar del Portapapeles**
 
-Cambia el formato del texto XML pegado desde el Portapapeles.
+Vuelve a dar formato al texto XML pegado desde el portapapeles.
 
 **Al terminar la etiqueta final**
 
-Cambia el formato del elemento cuando se completa la etiqueta de cierre.
+Vuelve a dar formato al elemento cuando se completa la etiqueta final.
 
 ## <a name="mixed-content"></a>Contenido mixto
 
-**Aplicar formato al contenido mixto de forma predeterminada**
+**Formatear contenido mixto de forma predeterminada**
 
-Intenta cambiar el formato del contenido mixto, excepto cuando este se halla en un ámbito `xml:space="preserve"`. Esta opción es el valor predeterminado.
+Intenta volver a dar formato al contenido mixto, excepto si se encuentra en un ámbito `xml:space="preserve"`. Esta es la configuración predeterminada.
 
-Si un elemento contiene una mezcla de texto y marcado, se considera que el contenido es mixto. A continuación se muestra un ejemplo de un elemento con contenido mixto.
+Si un elemento contiene una mezcla de texto y marcado, el contenido se considera mixto. A continuación se incluye un ejemplo de un elemento con contenido mixto.
 
 ```xml
 <dir>c:\data\AlphaProject\
@@ -64,7 +66,7 @@ Si un elemento contiene una mezcla de texto y marcado, se considera que el conte
 </dir>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Opciones XML: otras opciones](options-text-editor-xml-miscellaneous.md)
 - [Herramientas XML en Visual Studio](../../xml-tools/xml-tools-in-visual-studio.md)

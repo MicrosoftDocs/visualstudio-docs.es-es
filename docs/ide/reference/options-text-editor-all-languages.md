@@ -1,5 +1,7 @@
 ---
 title: Opciones, Editor de texto, Todos los lenguajes
+description: Obtenga información sobre cómo usar la página General de la sección Todos los lenguajes para cambiar el comportamiento predeterminado del editor de código en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -42,12 +44,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9815bdec94ce32a3bfcc170dd95d834bc43ea58f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 682097ca08bd570ac025e7b6a1861e45a8f761e4
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75566883"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96041010"
 ---
 # <a name="options-dialog-box-text-editor--all-languages"></a>Cuadro de diálogo Opciones: Editor de texto \> Todos los lenguajes
 
@@ -62,15 +64,15 @@ Se muestra una marca atenuada cuando se ha seleccionado una opción en las pági
 
 **Lista de miembros automática**
 
-Cuando está seleccionada, IntelliSense muestra las listas emergentes de miembros disponibles, propiedades, valores o métodos a medida que escribe en el editor. Pulse cualquier elemento de la lista emergente para insertarlo en el código. Al seleccionar esta opción se habilita la opción **Ocultar miembros avanzados**.
+Cuando está seleccionada, IntelliSense muestra las listas emergentes de miembros disponibles, propiedades, valores o métodos a medida que escribe en el editor. Elija cualquier elemento de la lista emergente para insertarlo en el código. Al seleccionar esta opción se habilita la opción **Ocultar miembros avanzados**.
 
 **Ocultar miembros avanzados**
 
-Cuando está seleccionada, se acortan las listas emergentes de finalización de instrucciones mostrando solo los elementos que más se usan. Los demás elementos se filtran en la lista.
+Cuando está seleccionada, se acortan las listas emergentes de finalización de instrucciones mostrando solo los elementos que más se usan. Los demás elementos se extraen de la lista.
 
-**Información de parámetros**
+**Información del parámetro**
 
-Cuando está seleccionada esta casilla, la sintaxis completa del procedimiento o la declaración actual se muestra en el punto de inserción del editor, con todos los parámetros disponibles. El siguiente parámetro que se puede asignar aparecerá en negrita.
+Cuando está seleccionada esta casilla, la sintaxis completa del procedimiento o la declaración actual se muestra en el punto de inserción del editor, con todos los parámetros disponibles. El siguiente parámetro que puede asignar aparece en negrita.
 
 ## <a name="settings"></a>Configuración
 
@@ -78,7 +80,7 @@ Cuando está seleccionada esta casilla, la sintaxis completa del procedimiento o
 
 Cuando esta opción está seleccionada y la casilla **Ajuste de línea** se desactiva, puede hacer clic en cualquier parte más allá del final de una línea en el Editor de código y escribir. Esta característica puede usarse para colocar los comentarios en un lugar coherente junto al código.
 
-**Ajuste automático de línea**
+**Ajuste de línea**
 
 Cuando está seleccionada, cualquier parte de una línea que se extienda horizontalmente más allá del área visible del editor aparecerá automáticamente en la siguiente línea. Al activar esta opción se habilita la opción **Mostrar glifos visuales para ajuste de línea**.
 
@@ -94,16 +96,16 @@ Cuando está seleccionada, se muestra un indicador de flecha de retorno en el qu
 Desactive esta casilla si prefiere no mostrar estos indicadores.
 
 > [!NOTE]
-> Estas flechas de aviso no se agregan al código ni se imprimen. Sólo sirven como referencia.
+> Estas flechas de aviso no se agregan al código ni se imprimen. Solo sirven como referencia.
 
 **Números de línea**
 
 Cuando está seleccionada, aparece un número de línea junto a cada línea de código.
 
 > [!NOTE]
-> Estos números de línea no se agregan al código ni se imprimen. Sólo sirven como referencia.
+> Estos números de línea no se agregan al código ni se imprimen. Solo sirven como referencia.
 
-**Habilitar navegación a direcciones URL con un solo clic**
+**Habilitar acceso a direcciones URL con un solo clic**
 
 Si está seleccionada, el cursor del mouse pasa a ser una mano cuando se sitúe sobre una dirección URL en el editor. Puede hacer clic en la dirección URL para mostrar la página indicada en el explorador web.
 
@@ -117,14 +119,14 @@ Esta opción establece el comportamiento del editor cuando se coloca el punto de
 
 - Cuando se selecciona esta opción, se copia o se corta la línea en blanco. Si después ejecuta Pegar, se inserta una línea en blanco nueva.
 
-- Cuando esta opción está desactivada, el comando Cortar quita las líneas en blanco. En cambio, los datos del Portapapeles se conservan. Por lo tanto, si después usa el comando Pegar, se pega el contenido copiado en último lugar en el Portapapeles. Si no se ha copiado nada antes, no se pega nada.
+- Cuando esta opción está desactivada, el comando Cortar quita las líneas en blanco. En cambio, los datos del Portapapeles se conservan. Por lo tanto, si después usa el comando Pegar, se pega el contenido copiado en último lugar en el Portapapeles. Si previamente no se ha copiado nada, no se pegará nada.
 
-Esta opción no tiene ningún efecto en el comando Copiar o Cortar cuando la línea no está en blanco. Si no se selecciona nada, se copia o se corta la línea completa. Si se pega después, se pega el texto de toda la línea y el carácter de fin de línea.
+Esta opción no tiene ningún efecto en el comando Copiar o Cortar cuando la línea no está en blanco. Si no se selecciona nada, se copia o se corta la línea entera. Si se pega después, se pega el texto de toda la línea y el carácter de fin de línea.
 
 > [!TIP]
 > Con el fin de poder mostrar indicadores para los espacios, tabuladores y fines de la línea, y distinguir así las líneas con sangría de las que están completamente en blanco, en el menú **Edición** seleccione **Opciones avanzadas** y pulse **Ver espacios en blanco**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Opciones, editor de texto, todos los lenguajes, pestañas](../../ide/reference/options-text-editor-all-languages-tabs.md)
 - [General, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/general-environment-options-dialog-box.md)

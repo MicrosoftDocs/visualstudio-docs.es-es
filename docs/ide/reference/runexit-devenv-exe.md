@@ -1,5 +1,7 @@
 ---
 title: -RunExit (devenv.exe)
+description: Obtenga información sobre cómo usar el modificador RunExit de la línea de comandos de devenv para compilar y ejecutar el proyecto o la solución especificados y, después, cerrar el IDE.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18ca581c5a8a7f631138e8b3eacff02a031e0931
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2a1e0af28e8a96860039381b958d63e161a24936
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593608"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039855"
 ---
 # <a name="runexit-devenvexe"></a>/RunExit (devenv.exe)
 
@@ -43,7 +45,7 @@ devenv /RunExit {SolutionName|ProjectName} [/Out OutputFilename]
 
   Opcional. Nombre de un archivo que quiera enviar al resultado de la herramienta. Si el archivo ya existe, la herramienta anexa el resultado al final del archivo.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Compila y ejecuta el proyecto o solución especificados según los ajustes indicados para la configuración de soluciones activas. Este modificador minimiza el IDE mientras se ejecuta el proyecto o la solución. Asimismo, cierra el IDE al terminar de ejecutarse el proyecto o la solución.
 

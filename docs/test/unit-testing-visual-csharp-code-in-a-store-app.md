@@ -1,5 +1,7 @@
 ---
 title: Pruebas unitarias de código de Visual C#
+description: Aprenda a crear pruebas unitarias para una clase de C# en una aplicación para UWP. En este artículo se muestra el desarrollo basado en pruebas.
+ms.custom: SEO-VS-2020
 ms.date: 09/27/2019
 ms.topic: conceptual
 ms.author: mikejo
@@ -7,12 +9,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 31fbbfaa5d16dd51776f592b89a7846936b3013f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 410d5dfefa5980bceabff99d66067987b390a615
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590870"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330087"
 ---
 # <a name="unit-test-c-code"></a>Código de C# de pruebas unitarias
 
@@ -268,6 +270,6 @@ El método **RangeTest** codifica de forma rígida el denominador de la variable
 > [!TIP]
 > Si agrega un método auxiliar a una clase de prueba que no desea que aparezca en el **Explorador de pruebas**, no agregue el atributo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> al método.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Tutorial: Desarrollo controlado por pruebas con el Explorador de pruebas](quick-start-test-driven-development-with-test-explorer.md)

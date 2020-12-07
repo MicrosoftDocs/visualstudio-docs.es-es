@@ -1,5 +1,7 @@
 ---
 title: Buscar (Comando)
+description: Obtenga información sobre el comando Buscar y cómo busca en los archivos mediante un subconjunto de las opciones disponibles en la pestaña Buscar en archivos de la ventana Buscar y reemplazar.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 288fb294ab712713d6be116f46ca159ea40a6e67
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 886695cea38909a8efa74797391adb1b6dd97d19
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595649"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305408"
 ---
 # <a name="find-command"></a>Buscar (Comando)
 Busca en los archivos mediante el uso de un subconjunto de las opciones disponibles en la pestaña **Buscar en archivos** de la ventana **Buscar y reemplazar**.
@@ -33,7 +35,7 @@ Edit.Find findwhat [/case] [/doc | /proc | /open | /sel]
 ## <a name="arguments"></a>Argumentos
 `findwhat` Obligatorio. Texto que debe coincidir.
 
-## <a name="switches"></a>Modificadores
+## <a name="switches"></a>Conmutadores
 /case o /c\
 Opcional. Se encuentran coincidencias solo si los caracteres en mayúsculas y minúsculas coinciden exactamente con los especificados en el argumento `findwhat`.
 
@@ -77,9 +79,9 @@ En este ejemplo se realiza una búsqueda que distingue entre mayúsculas y minú
 >Edit.Find somestring /sel /case
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Ventana Comandos](../../ide/reference/command-window.md)
 - [Cuadro Buscar/Comando](../../ide/find-command-box.md)
 - [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

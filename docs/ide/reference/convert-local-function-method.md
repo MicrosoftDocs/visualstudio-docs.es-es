@@ -1,5 +1,7 @@
 ---
 title: Convertir una función local en un método
+description: Obtenga información sobre cómo usar el menú Acciones rápidas y refactorizaciones para convertir una función local en un método.
+ms.custom: SEO-VS-2020
 ms.date: 02/19/2019
 ms.topic: reference
 author: kendrahavens
@@ -7,12 +9,12 @@ ms.author: kehavens
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3572682fe68d9b0b1bc4adee537de5cd056a8906
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 64a46fc6221f00e6bb130be8010cb2544a00dcc8
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "71301691"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305574"
 ---
 # <a name="convert-a-local-function-to-a-method"></a>Convertir una función local en un método
 

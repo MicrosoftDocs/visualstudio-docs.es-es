@@ -1,5 +1,7 @@
 ---
 title: Compatibilidad de 64 bits
+description: Aprenda a configurar las aplicaciones para distintas plataformas de destino, incluidas las de 64 bits.
+ms.custom: SEO-VS-2020
 ms.date: 02/21/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3cd670eed61f510998599276e3a44fc7647777b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 11cd4979172f80b44ad5fb5ed335b00737e7579d
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594141"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479724"
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Compatibilidad de 64 bits del IDE de Visual Studio
 
@@ -28,9 +30,9 @@ En [Implementar los requisitos previos para las aplicaciones de 64 bits](../depl
 
 ## <a name="configure-projects-as-64-bit-applications"></a>Configurar los proyectos como aplicaciones de 64 bits
 
-En [Cómo: Configurar proyectos para plataformas de destino](../ide/how-to-configure-projects-to-target-platforms.md) se describe la configuración de proyectos para compilarlos como aplicaciones de 64 bits.
+[Cómo: Configurar proyectos para plataformas de destino](../ide/how-to-configure-projects-to-target-platforms.md) se describe la configuración de proyectos para compilarlos como aplicaciones de 64 bits.
 
 ## <a name="debug-a-64-bit-application"></a>Depurar una aplicación de 64 bits
 
 - [Depuración de aplicaciones de 64 bits](../debugger/debug-64-bit-applications.md)
-- [Uso de archivos de volcado de memoria](../debugger/using-dump-files.md)
+- [Usar archivos de volcado de memoria](../debugger/using-dump-files.md)

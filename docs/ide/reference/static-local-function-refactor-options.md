@@ -1,5 +1,7 @@
 ---
 title: Opciones de refactorización de funciones locales estáticas
+description: Obtenga información sobre cómo usar el menú Acciones rápidas y refactorizaciones para convertir una función local en estática y pasar las variables definidas fuera de la función a la declaración y las llamadas de la función.
+ms.custom: SEO-VS-2020
 ms.date: 02/10/2020
 ms.topic: reference
 author: governesss
@@ -11,12 +13,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: c297457c910c484c05c974c581e89c75e0ad44e5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8e85fcc96542b4f3538729aeb50a4e080c902657
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77144833"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479893"
 ---
 # <a name="static-local-function-refactorings-and-quick-actions"></a>Refactorizaciones de la función local estática y acciones rápidas
 
@@ -34,7 +36,7 @@ Esta refactorización se aplica a lo siguiente:
 
 **Por qué:** Las funciones locales estáticas mejoran la legibilidad: saber que el código específico está aislado facilita su comprensión, relectura y reutilización. Las funciones locales estáticas también proporcionan el ámbito para evitar contaminar una clase con una función estática que solo se llama en un método único.
 
-### <a name="how-to"></a>Procedimiento
+### <a name="how-to"></a>Instrucciones
 
 1. Coloque el símbolo de intercalación en el nombre de la función local.
 
@@ -42,7 +44,7 @@ Esta refactorización se aplica a lo siguiente:
 
    ![Conversión de la función local en estática](media/make-local-function-static.png)
 
-3. Seleccione **Convertir la función local "static"** .
+3. Seleccione **Convertir la función local "static"**.
 
 ## <a name="pass-variable-explicitly-in-a-static-local-function"></a>Paso de una variable explícitamente a una función local estática
 
@@ -56,7 +58,7 @@ Esta acción rápida se aplica a:
 
 **Por qué:** El uso de funciones locales estáticas proporciona aclaración a los lectores porque saben que solo se pueden declarar y llamar en un contexto específico del programa. Proporciona la flexibilidad para definir variables fuera de este contexto, pero aún puede pasarlas como argumentos a la función local estática.
 
-### <a name="how-to"></a>Procedimiento
+### <a name="how-to"></a>Instrucciones
 
 1. Coloque el símbolo de intercalación en la variable donde se usa la función local estática.
 

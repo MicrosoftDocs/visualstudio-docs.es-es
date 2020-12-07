@@ -1,5 +1,7 @@
 ---
 title: 'Paso 2: Ejecución de la aplicación de visor de imágenes'
+description: Obtenga información sobre cómo ejecutar la aplicación de visor de imágenes.
+ms.custom: SEO-VS-2020
 ms.date: 09/06/2019
 ms.assetid: 9a8fe90e-c97b-4e98-b6c8-0c6b3962c49d
 ms.topic: tutorial
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8204f2a32a1bb29203c75af55aa383141f17853f
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: ddc016df63a7bb6ffbe3923de72c4f23cb32739c
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579403"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480660"
 ---
 # <a name="step-2-run-your-picture-viewer-app"></a>Paso 2: Ejecución de la aplicación de visor de imágenes
 
@@ -32,17 +34,17 @@ Aquí se muestra cómo ejecutar la aplicación.
     - En la barra de herramientas, elija el botón **Iniciar depuración**, que aparece de esta forma:
 
       ![Botón de la barra de herramientas Iniciar depuración](../ide/media/express_icondebug.png)<br>
-      ***Botón de la barra de herramientas*** *Iniciar depuración*
+      *Botón de la barra de herramientas *_Iniciar depuración_* __*
 
 1. Visual Studio ejecuta la aplicación y aparece una ventana denominada **Form1**. En la captura de pantalla siguiente se muestra la aplicación que acaba de crear. La aplicación está en ejecución y pronto la ampliará.
 
      ![Aplicación de Windows Forms en ejecución](../ide/media/express_firstrun.png)<br>
-***Aplicación de Windows Forms***, *en ejecución*
+**_Aplicación de Windows Forms_* _, _en ejecución*
 
 1. Vuelva al entorno de desarrollo integrado (IDE) de Visual Studio y examine la nueva barra de herramientas. Al ejecutar una aplicación, aparecen botones adicionales en la barra de herramientas. Estos botones permiten hacer cosas como detener e iniciar la aplicación, y ayudan a realizar el seguimiento de los errores que pueda haber. En este ejemplo, se usa para iniciar y detener la aplicación.
 
      ![Barra de herramientas Depuración](../ide/media/express_debugtoolbar.png)<br>
-***Barra de herramientas*** *Depuración*
+*Barra de herramientas **Depuración** __*
 
 1. Use uno de los métodos siguientes para detener la aplicación:
 

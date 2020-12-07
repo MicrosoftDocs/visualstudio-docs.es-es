@@ -1,5 +1,7 @@
 ---
 title: Administración de los resultados de pruebas de carga
+description: Obtenga información sobre cómo administrar los datos recopilados durante una prueba de carga, los cuales se almacenan en la base de datos SQL del repositorio de resultados de pruebas de carga.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.assetid: 1cd63c4b-4f74-4133-b675-5e8fbeab25f3
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9945551469541cdcffe520844da600d758dc43b5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ea27d94f4fbe4c0ebe81cf0153ce2e98a0789dd6
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286770"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328748"
 ---
 # <a name="manage-load-test-results-in-the-load-test-results-repository"></a>Administrar resultados de pruebas de carga en el repositorio de resultados de pruebas de carga
 
@@ -31,7 +33,7 @@ Visual Studio Enterprise proporciona conjuntos de contadores con nombre que reco
 > [!IMPORTANT]
 > Existe una diferencia entre un conjunto de contadores y los datos de contadores de rendimiento. Un conjunto de contadores consiste en metadatos. Define un grupo de contadores de rendimiento que deben recolectarse de un equipo que desempeña un rol particular, como un servidor IIS o SQL Server. El conjunto de contadores forma parte de la definición de la prueba de carga. Los datos de contadores de rendimiento se recogen basándose en los conjuntos de contadores, la asignación del conjunto de contadores a un equipo concreto y la velocidad de muestreo.
 
-## <a name="sql-server-versions"></a>Versiones de SQL Server
+## <a name="sql-server-versions"></a>Versiones de SQL Server
 
 Para usar pruebas de carga, puede emplear LocalDB de SQL Server Express, que se instala con Visual Studio. Es el servidor de base de datos predeterminado para las pruebas de carga (incluida la integración de Microsoft Excel). SQL Server Express LocalDB es un modo de ejecución de SQL Server Express destinado a desarrolladores de programas. La instalación de SQL Server Express LocalDB copia un conjunto mínimo de archivos necesario para iniciar el motor de base de datos de SQL Server.
 
@@ -46,17 +48,17 @@ Cuando se instala Visual Studio Enterprise, el almacén de resultados de pruebas
 |Tareas|Temas relacionados|
 |-|-----------------------|
 |**Configurar un repositorio de resultados de pruebas de carga:** puede configurar un repositorio de resultados de pruebas de carga en una base de datos SQL. **Nota:** También se puede crear un repositorio de pruebas de carga al instalar un controlador de pruebas. Para obtener más información, vea [Instalar y configurar agentes de prueba](../test/lab-management/install-configure-test-agents.md).||
-|**Seleccionar y ver un repositorio de resultados:** puede seleccionar un repositorio de resultados concreto. el usuario no está limitado a un almacén de resultados local. Con frecuencia, las pruebas de carga se ejecutan en un conjunto remoto de equipos agente. Los resultados de prueba de los agentes o un equipo local se pueden guardar en cualquier servidor SQL en el que se haya creado un almacén de resultados de pruebas de carga. En cualquier caso, debe identificar dónde almacenar los resultados de pruebas de carga mediante la ventana **Administrar controladores de pruebas**.|-   [Cómo: Seleccionar un repositorio de resultados de pruebas de carga](../test/how-to-select-a-load-test-results-repository.md)<br />-   [Cómo: Tener acceso a los resultados de pruebas de carga para su análisis](../test/how-to-access-load-test-results-for-analysis.md)|
+|**Seleccionar y ver un repositorio de resultados:** puede seleccionar un repositorio de resultados concreto. el usuario no está limitado a un almacén de resultados local. Con frecuencia, las pruebas de carga se ejecutan en un conjunto remoto de equipos agente. Los resultados de prueba de los agentes o un equipo local se pueden guardar en cualquier servidor SQL en el que se haya creado un almacén de resultados de pruebas de carga. En cualquier caso, debe identificar dónde almacenar los resultados de pruebas de carga mediante la ventana **Administrar controladores de pruebas**.|-   [Cómo: Seleccionar un repositorio de resultados de pruebas de carga](../test/how-to-select-a-load-test-results-repository.md)<br />-   [Cómo: Acceder a los resultados de pruebas de carga para el análisis](../test/how-to-access-load-test-results-for-analysis.md)|
 |**Eliminar el resultado de una prueba de carga del repositorio:** puede quitar el resultado de una prueba de carga del **Editor de pruebas de carga** mediante el cuadro de diálogo **Abrir y administrar resultados de pruebas de carga**.|-   [Cómo: Eliminar resultados de pruebas de carga de un repositorio](../test/how-to-delete-load-test-results-from-a-repository.md)|
-|**Importar y exportar los resultados en un repositorio:** puede importar y exportar resultados de pruebas de carga en el **Editor de pruebas de carga**.|-   [Cómo: Importar resultados de pruebas de carga en un repositorio](../test/how-to-import-load-test-results-into-a-repository.md)<br />-   [Cómo: Exportar resultados de pruebas de carga de un repositorio](../test/how-to-export-load-test-results-from-a-repository.md)|
+|**Importar y exportar los resultados en un repositorio:** puede importar y exportar resultados de pruebas de carga en el **Editor de pruebas de carga**.|-   [Cómo: Importar los resultados de pruebas de carga en un repositorio](../test/how-to-import-load-test-results-into-a-repository.md)<br />-   [Cómo: Exportar los resultados de pruebas de carga desde un repositorio](../test/how-to-export-load-test-results-from-a-repository.md)|
 
 ## <a name="related-tasks"></a>Tareas relacionadas
 
-[Analizar los resultados de pruebas de carga con el analizador de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+[Analizar los resultados de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 
 Puede ver los resultados de una prueba de carga en ejecución y una completada con el **Analizador de pruebas de carga**.
 
 ## <a name="see-also"></a>Vea también
 
-- [Analizar los resultados de pruebas de carga con el analizador de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analizar los resultados de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [Cómo: Obtener acceso a los resultados de pruebas de carga para su análisis](../test/how-to-access-load-test-results-for-analysis.md)

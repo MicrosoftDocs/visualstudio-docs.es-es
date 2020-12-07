@@ -1,5 +1,7 @@
 ---
 title: Opciones, Editor de texto, HTML (formularios Web Forms), varios
+description: Obtenga información sobre cómo usar la página Varios de la sección HTML para establecer las preferencias en cuanto a cómo el editor HTML controla los elementos que se pegan en la página.
+ms.custom: SEO-VS-2020
 ms.date: 1/15/2019
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8aa26144a7c0a2f7edad58ecfb26e3a7d402a994
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: bf5495f60e92a38c0c43a0751054d41dc4de6970
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85770900"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040776"
 ---
 # <a name="options-text-editor-html-web-forms-miscellaneous"></a>Opciones, Editor de texto, HTML (formularios Web Forms), varios
 

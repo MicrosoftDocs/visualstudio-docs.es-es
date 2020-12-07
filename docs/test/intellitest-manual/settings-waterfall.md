@@ -1,5 +1,7 @@
 ---
 title: Cascada de configuración | Herramientas de prueba para desarrolladores de Microsoft IntelliTest
+description: Obtenga información sobre la cascada de configuración, la cual organiza la configuración en los niveles de ensamblado, corrección y exploración.
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 95a2029cee1fd13241aba727f671a164d7272543
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: bdb053218b65924abfa64053a8a3c7e9e0543d49
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591585"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329515"
 ---
 # <a name="settings-waterfall"></a>Cascada de configuración
 

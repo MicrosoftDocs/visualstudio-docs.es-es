@@ -10,11 +10,11 @@ manager: AndSter
 ms.workload:
 - multiple
 ms.openlocfilehash: 563531b6dfbf59e33b63dcb4561612d86cd39acc
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90075423"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970234"
 ---
 # <a name="analyze-memory-usage-by-using-the-net-object-allocation-tool"></a>Análisis del uso de memoria mediante la herramienta de asignación de objetos de .NET
 
@@ -68,17 +68,17 @@ Puede filtrar los datos tabulares para mostrar la actividad durante solo un inte
 
 La vista **Asignación** muestra la ubicación de los objetos que asignan memoria y la cantidad de memoria que asignan dichos objetos.
 
-- La columna  **Tipo**  es una lista de clases y estructuras que consumen memoria. Haga doble clic en un tipo para ver su seguimiento regresivo como un árbol de llamadas invertido. Solo en la vista **Asignación**, puede ver los elementos de la categoría seleccionada que consumen memoria.
+- La columna **Tipo** es una lista de clases y estructuras que consumen memoria. Haga doble clic en un tipo para ver su seguimiento regresivo como un árbol de llamadas invertido. Solo en la vista **Asignación**, puede ver los elementos de la categoría seleccionada que consumen memoria.
 
-- La columna  **Asignaciones**  muestra el número de objetos que consumen memoria dentro de una función o un tipo de asignación determinados. Esta columna solo aparece en las vistas **Asignación**,  **Árbol de llamadas** y  **Funciones** .
+- La columna **Asignaciones** muestra el número de objetos que consumen memoria dentro de una función o un tipo de asignación determinados. Esta columna solo aparece en las vistas **Asignación**, **Árbol de llamadas** y **Funciones**.
 
-- Las columnas  **Bytes**  y  **Tamaño medio (bytes)**   no aparecen de forma predeterminada. Para mostrarlas, haga clic con el botón derecho en la columna  **Tipo**  o  **Asignaciones**  y, a continuación, seleccione las opciones **Bytes**  y  **Tamaño medio (bytes)**   para agregarlas al gráfico. 
+- Las columnas **Bytes** y **Tamaño medio (bytes)** no aparecen de forma predeterminada. Para mostrarlas, haga clic con el botón derecho en la columna **Tipo** o **Asignaciones** y, después, seleccione las opciones **Bytes** y **Tamaño medio (bytes)** para agregarlas al gráfico. 
 
-   Las dos columnas son similares a  **Total (asignaciones)** y  **Propio (asignaciones)** , excepto en que muestran la cantidad de memoria consumida en lugar del número de objetos que consumen memoria. Estas columnas solo aparecen en la vista **Asignación**.
+   Las dos columnas son similares a **Total (asignaciones)** y **Propio (asignaciones)** , excepto en que muestran la cantidad de memoria consumida en lugar del número de objetos que consumen memoria. Estas columnas solo aparecen en la vista **Asignación**.
 
-- En la columna  **Nombre del módulo**  se muestra el módulo que contiene la función o el proceso que llama.
+- En la columna **Nombre del módulo**, se muestra el módulo que contiene la función o el proceso que se llama.
 
-Todas estas columnas se pueden ordenar. En el caso de las columnas  **Tipo** y **Nombre del módulo**, puede ordenar los elementos alfabéticamente en orden ascendente o descendente. En el caso de  **Asignaciones**, **Bytes**  y  **Tamaño medio (bytes)** , puede ordenar los elementos aumentando o reduciendo el valor numérico.
+Todas estas columnas se pueden ordenar. En el caso de las columnas **Tipo** y **Nombre del módulo**, puede ordenar los elementos alfabéticamente en orden ascendente o descendente. En el caso de **Asignaciones**, **Bytes** y **Tamaño medio (bytes)** , puede ordenar los elementos aumentando o reduciendo el valor numérico.
 
 #### <a name="symbols"></a>Símbolos
 
@@ -96,13 +96,13 @@ Los siguientes símbolos aparecen en las pestañas **Asignación**, **Árbol de 
 
 ![La vista Árbol de llamadas](../profiling/media/calltreelight.png "La vista Árbol de llamadas")
 
-La vista  **Árbol de llamadas**  muestra las rutas de acceso de ejecución de función que contienen objetos que asignan mucha memoria.
+La vista **Árbol de llamadas** muestra las rutas de acceso de ejecución de función que contienen objetos que asignan mucha memoria.
 
-- La columna  **Nombre de la función**  muestra el proceso o nombre de la función que contiene objetos que asignan memoria. La presentación se basa en el nivel del nodo que inspecciona.
-- Las columnas  **Total (asignaciones)** y  **Tamaño total (bytes)**   muestran el número de objetos asignados y la cantidad de memoria que usa una función y todas las demás funciones a las que llama.
+- La columna **Nombre de la función** muestra el proceso o nombre de la función que contiene objetos que asignan memoria. La presentación se basa en el nivel del nodo que inspecciona.
+- Las columnas **Total (asignaciones)** y **Tamaño total (bytes)** muestran el número de objetos asignados y la cantidad de memoria que usa una función y todas las demás funciones a las que llama.
 - Las columnas **Propio (asignaciones)** y **Tamaño automático (bytes)** muestran el número de objetos asignados y la cantidad de memoria que usa una sola función o un solo tipo de asignación seleccionados.
 - La columna **Tamaño medio (bytes)** muestra la misma información que en la vista **Asignaciones**.
-- En la columna  **Nombre del módulo**  se muestra el módulo que contiene la función o el proceso que llama.
+- En la columna **Nombre del módulo**, se muestra el módulo que contiene la función o el proceso que se llama.
 
    ![Una ruta de acceso activa expandida](../profiling/media/hotpathlight.png "Una ruta de acceso activa expandida")
 

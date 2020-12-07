@@ -1,5 +1,7 @@
 ---
 title: Opciones, Editor de texto, F#, CodeLens
+description: Obtenga información sobre cómo usar la página CodeLens de la sección F# para modificar la configuración de CodeLens del editor de texto para F#.
+ms.custom: SEO-VS-2020
 ms.date: 01/16/2019
 ms.topic: reference
 f1_keywords:
@@ -9,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ad891030cb9cf54855e6bef69a8b6926d6ae17aa
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6bdccdc45664bd620018fa094d35add545b302d4
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568482"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039658"
 ---
 # <a name="options-text-editor-f-codelens"></a>Opciones, Editor de texto, F#, CodeLens
 

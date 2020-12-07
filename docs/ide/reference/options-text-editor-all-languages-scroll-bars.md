@@ -1,5 +1,7 @@
 ---
 title: Opciones, Editor de texto, Todos los idiomas, Barras de desplazamiento
+description: Obtenga información sobre cómo usar la página Barras de desplazamiento de la sección Todos los lenguajes para cambiar el comportamiento predeterminado de las barras de desplazamiento del editor de código en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 10/25/2018
 ms.topic: reference
 f1_keywords:
@@ -32,12 +34,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c89be8a79aad9a2e3e0cdbc8601a08a99c1ad1aa
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: f75ba02b65b7025f9cf1e4f2eb9b5b6e3de96be0
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808095"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039801"
 ---
 # <a name="options-text-editor-all-languages-scroll-bars"></a>Opciones, Editor de texto, Todos los idiomas, Barras de desplazamiento
 Este cuadro de diálogo le permite cambiar el comportamiento predeterminado de la barra de desplazamiento del Editor de código. Para mostrar estas opciones, seleccione **Opciones** desde el menú **Herramientas**. En la carpeta **Editor de texto**, expanda la subcarpeta **Todos los idiomas** y después seleccione **Barras de desplazamiento**.
@@ -86,6 +88,6 @@ En el *modo Mapa*, cuando hace clic en una ubicación de la barra de desplazamie
 > [!TIP]
 > Para desactivar la vista de código en miniatura en el mapa, establezca **Información general del código fuente** en **Off**. Si se selecciona **Mostrar información sobre herramientas de la vista previa**, seguirá viendo una vista previa del código en esa ubicación cuando mantenga el puntero del mouse sobre la barra de desplazamiento y el cursos seguirá saltando a esa ubicación en el archivo cuando se haga clic.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Personalización de la barra de desplazamiento](../how-to-track-your-code-by-customizing-the-scrollbar.md)
+- [Procedimiento Personalizar la barra de desplazamiento](../how-to-track-your-code-by-customizing-the-scrollbar.md)

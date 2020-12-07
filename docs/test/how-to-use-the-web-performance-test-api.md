@@ -1,5 +1,7 @@
 ---
 title: API de prueba de rendimiento web
+description: Obtenga información sobre la API de prueba de rendimiento web, que admite pruebas de rendimiento web codificadas, complementos de prueba, complementos de solicitud, solicitudes y reglas de extracción y de validación.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: 93a6a1dd-663b-4ab5-8760-7d6b081561d3
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 14b7320a38d474748713d687f4ee00b5b91f0208
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d4802d95c46d1187911f4bbc134cc0c50ce08b18
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287082"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329723"
 ---
 # <a name="how-to-use-the-web-performance-test-api"></a>Cómo: Usar la API de pruebas de rendimiento web
 
@@ -69,4 +71,4 @@ También se pueden crear complementos para pruebas de carga. Para obtener más i
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting>
 - [Crear código y complementos personalizados para las pruebas de carga](../test/create-custom-code-and-plug-ins-for-load-tests.md)
 - [Cómo: Usar la API de pruebas de carga](../test/how-to-use-the-load-test-api.md)
-- [Cómo: Crear un complemento de pruebas de rendimiento web](../test/how-to-create-a-web-performance-test-plug-in.md)
+- [Cómo: Crear un complemento de prueba de rendimiento web](../test/how-to-create-a-web-performance-test-plug-in.md)

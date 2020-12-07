@@ -1,5 +1,7 @@
 ---
 title: clases del asistente estáticas | Herramientas de prueba para desarrolladores de Microsoft IntelliTest
+description: Obtenga información sobre el conjunto de clases del asistente estáticas que proporciona IntelliTest para crear pruebas unitarias parametrizadas.
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 5010761213cf79756cf8da3d2fffe60dd0b61efd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f11b4f7d456e588e6a2920580766ce06530227e0
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315192"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329476"
 ---
 # <a name="static-helper-classes"></a>clases del asistente estáticas
 
@@ -48,7 +50,7 @@ public void TestSomething(int i, int j) {
 }
 ```
 
-**Comentarios**
+**Comentarios:**
 
 El código anterior es casi equivalente a:
 
@@ -87,7 +89,7 @@ Una clase estática que proporciona valores de entrada auxiliares para una prueb
 
 La clase **PexChoose** no ayuda a determinar si una prueba se supera o produce un error con unos valores de entrada concretos. **PexChoose** simplemente proporciona valores de entrada, a los que también se hace referencia como *opciones*. El usuario sigue siendo el que decide si quiere restringir los valores de entrada y escribir aserciones que definan si una prueba finaliza con éxito o produce error.
 
-**Modos de funcionamiento**
+**Modos de operación**
 
 La clase **PexChoose** puede funcionar de dos modos:
 
