@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: agregar controles XmlMappedRange (a hojas de cálculo'
+description: Sepa que al asignar un elemento XML a una celda en Microsoft Office Excel, Visual Studio agrega automáticamente un control XmlMappedRange (a la hoja de cálculo.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1d69e705e8f537ba3636422ad6883a7633e03322
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e807a5673f27da6a852fd2c83347d1348f1f6fd
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544890"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844418"
 ---
 # <a name="how-to-add-xmlmappedrange-controls-to-worksheets"></a>Cómo: agregar controles XmlMappedRange (a hojas de cálculo
   Al asignar un elemento XML a una celda en Microsoft Office Excel, Visual Studio agrega automáticamente un <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> control a la hoja de cálculo.
@@ -60,7 +62,7 @@ ms.locfileid: "85544890"
     > [!NOTE]
     > Si arrastra un elemento primario desde el panel de tareas **origen XML** , <xref:Microsoft.Office.Tools.Excel.ListObject> se crea un control.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Control XmlMappedRange (](../vsto/xmlmappedrange-control.md)
 - [Automatizar Excel usando objetos extendidos](../vsto/automating-excel-by-using-extended-objects.md)
 - [Información general sobre elementos y controles host](../vsto/host-items-and-host-controls-overview.md)

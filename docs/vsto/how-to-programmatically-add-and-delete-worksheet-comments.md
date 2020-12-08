@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: agregar y eliminar comentarios de hojas de cálculo mediante programación'
+description: Obtenga información sobre cómo puede Agregar y eliminar comentarios mediante programación en hojas de cálculo de Excel Microsoft Office. Solo puede agregar comentarios a celdas individuales, no a rangos de varias celdas.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c87851afb70e9207f9a24fc18826a4c2b218ec08
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: f845197de6664728a812e2795e51605ed962c575
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583806"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844613"
 ---
 # <a name="how-to-programmatically-add-and-delete-worksheet-comments"></a>Cómo: agregar y eliminar comentarios de hojas de cálculo mediante programación
   Puede agregar y eliminar comentarios en las hojas de cálculo de Microsoft Office Excel mediante programación. Los comentarios solo se pueden agregar a celdas individuales y no a intervalos de varias celdas.

@@ -1,5 +1,7 @@
 ---
 title: Arquitectura de las personalizaciones de nivel de documento
+description: Obtenga información sobre aspectos de las personalizaciones de nivel de documento, incluidos los componentes de personalización y cómo funcionan las personalizaciones con Microsoft Office aplicaciones.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f5028f5a9b16ecfc2461c0d29cbedb44be70a64c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a522446f9109d996088dff9389f267ef5ff39447
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68926556"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845978"
 ---
 # <a name="architecture-of-document-level-customizations"></a>Arquitectura de las personalizaciones de nivel de documento
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] incluye proyectos para la creación de personalizaciones de nivel de documento de Microsoft Office Word y Microsoft Office Excel. En este tema se describen los siguientes aspectos de las personalizaciones de nivel de documento:
@@ -91,11 +93,11 @@ ms.locfileid: "68926556"
 ### <a name="support-for-word-documents-that-have-xml-file-name-extensions"></a>Compatibilidad con documentos de Word que tienen extensiones de nombre de archivo. XML
  Las plantillas de proyecto de nivel de documento no permiten crear proyectos basados en los siguientes formatos de archivo:
 
-- Documento XML de Word (* \* XML*).
+- Documento XML de Word (*\* XML*).
 
-- Documento XML de Word 2003 (* \* XML*).
+- Documento XML de Word 2003 (*\* XML*).
 
-  Si desea que los usuarios finales utilicen las personalizaciones en estos formatos de archivo, compile e implemente una personalización que use uno de los formatos de archivo compatibles que se especifican en la tabla anterior. Después de instalar la personalización, los usuarios finales pueden guardar el documento en el formato de documento XML de Word (* \* XML*) o en el formato de documento XML (* \* XML*) de Word 2003 y la personalización continuará funcionando según lo previsto.
+  Si desea que los usuarios finales utilicen las personalizaciones en estos formatos de archivo, compile e implemente una personalización que use uno de los formatos de archivo compatibles que se especifican en la tabla anterior. Después de instalar la personalización, los usuarios finales pueden guardar el documento en el formato de documento XML de Word (*\* XML*) o en el formato de documento XML (*\* XML*) de Word 2003 y la personalización continuará funcionando según lo previsto.
 
 ## <a name="components-of-customizations"></a><a name="Components"></a> Componentes de las personalizaciones
  Los componentes principales de una personalización son el documento y el ensamblado. Además de estos componentes, existen otras partes que desempeñan un papel importante en la forma en que las aplicaciones de Microsoft Office detectan y cargan personalizaciones.

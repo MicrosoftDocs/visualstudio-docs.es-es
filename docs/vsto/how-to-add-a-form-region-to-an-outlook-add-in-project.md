@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: agregar un área de formulario a un proyecto de complemento de Outlook'
+description: Aprenda a crear un área de formulario para extender un formulario estándar o personalizado Microsoft Office Outlook mediante el asistente nueva área de formulario de Outlook.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a03ba05226720913d48dc1828dcb849bee72d17e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f137dbe88b8b3ecf51f17e0f19f61368359087fa
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538403"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845068"
 ---
 # <a name="how-to-add-a-form-region-to-an-outlook-add-in-project"></a>Cómo: agregar un área de formulario a un proyecto de complemento de Outlook
   Crear un área de formulario para extender un formulario de Microsoft Office Outlook estándar o personalizado, mediante el asistente **Nueva área de formulario de Outlook** . Puede crear una nueva área de formulario y diseñar la interfaz de usuario en Visual Studio, o puede importar un área de formulario diseñada en Outlook y agregar el código de Visual Basic o C#.
@@ -60,11 +62,11 @@ ms.locfileid: "85538403"
 
      Todos los tipos de área de formulario pueden aparecer en los inspectores, en el modo de creación (para crear elementos) y en el modo de lectura (para ver elementos). Asimismo, en el panel de lectura también pueden aparecer los tipos de áreas de formulario Adyacente, Reemplazo y Reemplazo total.
 
-10. Haga clic en **Next**.
+10. Haga clic en **Siguiente**.
 
 11. En la página **Identifique las clases de mensaje que mostrarán esta área de formulario** , seleccione las clases de mensaje estándar de Outlook que desee o escriba los nombres de una o más clases de mensaje personalizadas; a continuación, haga clic en **Finalizar**. Para obtener más información, vea [asociar un área de formulario a una clase de mensaje de Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Obtener acceso a un área de formulario en tiempo de ejecución](../vsto/accessing-a-form-region-at-run-time.md)
 - [Soluciones de Outlook](../vsto/outlook-solutions.md)
 - [Crear áreas de formulario de Outlook](../vsto/creating-outlook-form-regions.md)

@@ -1,5 +1,7 @@
 ---
 title: Depurar proyectos de Office
+description: Obtenga información sobre cómo puede depurar proyectos de Office con las mismas herramientas Microsoft Visual Studio que usa para otros proyectos de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 92cc0922a36d8c57b54b69ad984d18cf4742b823
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ea4874effcba4ee948f921ae9bf91f145b661f4f
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73189701"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845640"
 ---
 # <a name="debug-office-projects"></a>Depurar proyectos de Office
   Puede depurar proyectos de Office con las mismas herramientas de Microsoft [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] que usa para otros proyectos de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Las características del depurador[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , como la capacidad para insertar puntos de interrupción y ver variables en la ventana **Variables locales** , también están disponibles cuando se depuran proyectos de Office. Para obtener más información sobre [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] las herramientas de depuración, vea [depurar en Visual Studio](../debugger/debugger-feature-tour.md).
@@ -48,7 +50,7 @@ ms.locfileid: "73189701"
 ### <a name="debug-office-2013-vsto-add-ins-by-using-either-office-2013-or-office-2016"></a>Depurar complementos de VSTO de Office 2013 con Office 2013 u Office 2016
  Si usa Visual Studio 2015 y tiene ambas versiones de Office instaladas en paralelo, Visual Studio inicia Office 2016. Si usa Visual Studio 2013, Visual Studio inicia Office 2013.
 
- Si desea depurar el complemento de VSTO empleando una versión diferente de Office (2013 o 2016), abra el **Diseñador de proyectos**y, en la ficha **Depurar** , elija el botón de opción **Iniciar programa externo** . A continuación, busque la ubicación del ejecutable de la aplicación de Office apropiada.
+ Si desea depurar el complemento de VSTO empleando una versión diferente de Office (2013 o 2016), abra el **Diseñador de proyectos** y, en la ficha **Depurar** , elija el botón de opción **Iniciar programa externo** . A continuación, busque la ubicación del ejecutable de la aplicación de Office apropiada.
 
 ## <a name="f10-and-f11-behavior"></a>Comportamiento de F10 y F11
  Al iniciar la depuración de un proyecto de Office, **F10** y **F11** no tienen el mismo comportamiento que cuando se inicia la depuración de otros proyectos de Visual Basic o C#. En los proyectos de Visual Basic o C#, el depurador se detiene en la función principal; en los proyectos de Office, Visual Studio no tiene control sobre la función principal de la aplicación de Office. Sin embargo, durante la depuración, **F10** y **F11** tienen las mismas funciones que en los proyectos de Visual Basic y C#.

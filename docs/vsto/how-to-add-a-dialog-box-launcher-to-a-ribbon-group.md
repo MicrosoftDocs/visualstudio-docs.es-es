@@ -1,5 +1,7 @@
 ---
 title: Cómo agregar un selector de cuadro de diálogo a un grupo de la cinta de opciones
+description: Puede Agregar un selector de cuadro de diálogo a cualquier grupo de una cinta que pueda abrir cuadros de diálogo o paneles de tareas relacionados que proporcionen más opciones relacionadas con el grupo.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 29b260929d0478749296496db5b454326497d3ad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 85b5d6f127c6f8b2b8140e778792aa1088efe05c
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541625"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844938"
 ---
 # <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Cómo agregar un selector de cuadro de diálogo a un grupo de la cinta de opciones
   Puede Agregar un selector de cuadro de diálogo a cualquier grupo en una cinta de opciones. Un selector de cuadro de diálogo es un icono pequeño que aparece en un grupo. Los usuarios hacen clic en este icono para abrir cuadros de diálogo o paneles de tareas relacionados que proporcionan más opciones relacionadas con el grupo.
@@ -35,7 +37,7 @@ ms.locfileid: "85541625"
 
      Agregue código al <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup.DialogLauncherClick> evento del grupo para abrir un cuadro de diálogo personalizado o integrado.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Información general sobre la cinta](../vsto/ribbon-overview.md)
 - [Obtener acceso a la cinta de opciones en tiempo de ejecución](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Ejemplos y tutoriales de desarrollo de Office](../vsto/office-development-samples-and-walkthroughs.md)

@@ -1,7 +1,8 @@
 ---
 title: '&lt;elemento Customizations &gt; (desarrollo de Office en Visual Studio)'
+description: Obtenga información sobre cómo el elemento Customizations del espacio de nombres vstov4 contiene toda la información sobre la instalación y carga de cada solución de Office.
 titleSuffix: ''
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 58d88f865e5f220000bf021b548e4b9c4b8745f6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cc1f33101346d334d08d2bd2d7795961ea33011e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64789999"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844041"
 ---
 # <a name="ltcustomizationsgt-element-office-development-in-visual-studio"></a>&lt;elemento Customizations &gt; (desarrollo de Office en Visual Studio)
   El elemento `customizations` del espacio de nombres `vstov4` contiene toda la información sobre la instalación y carga de cada solución de Office.
@@ -64,7 +65,7 @@ ms.locfileid: "64789999"
  El elemento `customizations` tiene el siguiente elemento secundario:
 
 ### <a name="customization"></a>Personalización
- Necesario. El `customization` elemento del `vstov4` espacio de nombres se define en el [ elemento&#62; de personalización de&#60;&#40;el desarrollo de Office en Visual Studio&#41;](../vsto/customization-element-office-development-in-visual-studio.md).
+ Obligatorio. El `customization` elemento del `vstov4` espacio de nombres se define en el [ elemento&#62; de personalización de&#60;&#40;el desarrollo de Office en Visual Studio&#41;](../vsto/customization-element-office-development-in-visual-studio.md).
 
 ## <a name="example-of-a-document-level-customization"></a>Ejemplo de una personalización de nivel de documento
 

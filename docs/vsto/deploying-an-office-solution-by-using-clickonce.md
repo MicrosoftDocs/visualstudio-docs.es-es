@@ -1,5 +1,7 @@
 ---
 title: Implementar una solución de Office mediante ClickOnce
+description: Obtenga información sobre cómo implementar la solución de Office en menos pasos si usa ClickOnce. Si publica actualizaciones, la solución las detectará e instalará automáticamente.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bb495b30950105d1ff19a1f4fb13da1ee624b228
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: d808348528a64cc184c7a6c50359c057b2325a75
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809354"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845653"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>Implementar una solución de Office mediante ClickOnce
   Puede implementar su solución de Office en menos pasos si usa ClickOnce. Si publica actualizaciones, la solución las detectará e instalará automáticamente. Sin embargo, ClickOnce requiere que instale la solución por separado para cada usuario de un equipo. Por lo tanto, debería considerar la posibilidad de usar Windows Installer (*. msi*) si más de un usuario ejecuta la solución en el mismo equipo.
@@ -64,9 +66,9 @@ ms.locfileid: "90809354"
 
    - Una ruta de acceso local (por ejemplo, *C:\FolderName\FolderName*).
 
-   - Una ruta de acceso UNC (Convención de nomenclatura universal) a una carpeta en la red (por ejemplo, * \\ \ServerName\FolderName*).
+   - Una ruta de acceso UNC (Convención de nomenclatura universal) a una carpeta en la red (por ejemplo, *\\ \ServerName\FolderName*).
 
-   - Una ruta de acceso relativa (por ejemplo, *carpetadepublicación \\ *, que es la carpeta en la que se publica el proyecto de forma predeterminada).
+   - Una ruta de acceso relativa (por ejemplo, *carpetadepublicación \\*, que es la carpeta en la que se publica el proyecto de forma predeterminada).
 
 5. En el cuadro **dirección URL** de la carpeta de instalación, escriba la ruta de acceso completa de la ubicación donde los usuarios finales encontrarán la solución.
 
@@ -170,7 +172,7 @@ ms.locfileid: "90809354"
 
 1. En el servidor que ejecuta IIS 7,0, seleccione **iniciar**  >  **todos los programas**  >  **accesorios**.
 
-2. Abra el menú contextual del **símbolo del sistema**y, a continuación, elija  **Ejecutar como administrador.**
+2. Abra el menú contextual del **símbolo del sistema** y, a continuación, elija  **Ejecutar como administrador.**
 
 3. En el cuadro **abrir** , escriba la siguiente ruta de acceso y elija el botón **Aceptar** .
 
@@ -200,7 +202,7 @@ ms.locfileid: "90809354"
 
 3. En el panel **plantillas** , elija la plantilla **biblioteca de clases** .
 
-4. En el campo **nombre** , escriba **FileCopyPDA**y elija el botón **Aceptar** .
+4. En el campo **nombre** , escriba **FileCopyPDA** y elija el botón **Aceptar** .
 
 5. En **Explorador de soluciones**, elija el proyecto **FileCopyPDA** .
 
@@ -227,13 +229,13 @@ ms.locfileid: "90809354"
 
 3. Abra el menú contextual del proyecto **ExcelWorkbook** y, a continuación, elija **Agregar referencia**.
 
-4. En el cuadro de diálogo **Agregar referencia** , elija la pestaña **proyectos** , elija **FileCopyPDA**y, a continuación, elija el botón **Aceptar** .
+4. En el cuadro de diálogo **Agregar referencia** , elija la pestaña **proyectos** , elija **FileCopyPDA** y, a continuación, elija el botón **Aceptar** .
 
 5. En **Explorador de soluciones**, elija el proyecto **ExcelWorkbook** .
 
 6. En la barra de menús, elija **proyecto**  >  **nueva carpeta**.
 
-7. Escriba los **datos**y, a continuación, elija la tecla **entrar** .
+7. Escriba los **datos** y, a continuación, elija la tecla **entrar** .
 
 8. En **Explorador de soluciones**, elija la carpeta de **datos** .
 
@@ -342,14 +344,14 @@ ms.locfileid: "90809354"
 
  *%commonprogramfiles%\microsoft shared\VSTO\10.0\VSTOInstaller.exe*
 
- Si la herramienta no está en esa ubicación, puede usar la clave del registro **HKEY_LOCAL_MACHINE \Software\microsoft\vsto Runtime Setup\v4\InstallerPath** o **HKEY_LOCAL_MACHINE \software\wow6432node\microsoft\vsto Runtime Setup\v4\InstallerPath** para encontrar la ruta de acceso a esa herramienta.
+ Si la herramienta no está en esa ubicación, puede usar la clave del registro **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSTO Runtime Setup\v4\InstallerPath** o **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSTO Runtime Setup\v4\InstallerPath** para encontrar la ruta de acceso a esa herramienta.
 
  Puede usar los siguientes parámetros con *VSTOinstaller.exe*.
 
 | Parámetro | Definición |
 |------------------| - |
-| /Install o /I | Instala la solución. Esta opción debe ir seguida de la ruta de acceso de un manifiesto de implementación. Puede especificar una ruta de acceso en el equipo local —un recurso compartido de archivos de convención de nomenclatura universal (UNC)—. Puede especificar una ruta de acceso local (*C:\FolderName\PublishFolder*), una ruta de acceso relativa (* \\ publicar*) o una ubicación completa (* \\ \ServerName\FolderName* o http://<em>ServerName/nombreDeCarpeta</em>). |
-| /Uninstall o /U | Desinstala la solución. Esta opción debe ir seguida de la ruta de acceso de un manifiesto de implementación. Puede especificar que una ruta de acceso puede estar en el equipo local, en un recurso compartido de archivos UNC. Puede especificar una ruta de acceso local (*c:\FolderName\PublishFolder*), una ruta de acceso relativa (* \\ publicar*) o una ubicación completa (* \\ \ServerName\FolderName* o http://<em>ServerName/nombreDeCarpeta</em>). |
+| /Install o /I | Instala la solución. Esta opción debe ir seguida de la ruta de acceso de un manifiesto de implementación. Puede especificar una ruta de acceso en el equipo local —un recurso compartido de archivos de convención de nomenclatura universal (UNC)—. Puede especificar una ruta de acceso local (*C:\FolderName\PublishFolder*), una ruta de acceso relativa (*\\ publicar*) o una ubicación completa (*\\ \ServerName\FolderName* o http://<em>ServerName/nombreDeCarpeta</em>). |
+| /Uninstall o /U | Desinstala la solución. Esta opción debe ir seguida de la ruta de acceso de un manifiesto de implementación. Puede especificar que una ruta de acceso puede estar en el equipo local, en un recurso compartido de archivos UNC. Puede especificar una ruta de acceso local (*c:\FolderName\PublishFolder*), una ruta de acceso relativa (*\\ publicar*) o una ubicación completa (*\\ \ServerName\FolderName* o http://<em>ServerName/nombreDeCarpeta</em>). |
 | /Silent o /S | Instala o desinstala sin solicitar la entrada de datos del usuario ni mostrar ningún mensaje. Si se requiere un mensaje de confianza, la personalización no se instala ni se actualiza. |
 | /Help or /? | Muestra la información de Ayuda. |
 
@@ -370,7 +372,7 @@ ms.locfileid: "90809354"
 |-500|Se ha cancelado la operación porque no se pudo instalar o desinstalar la solución o porque no se pudo descargar el manifiesto de implementación.|
 
 ## <a name="publish-an-update"></a><a name="Update"></a> Publicar una actualización
- Para actualizar una solución, vuelva a publicarla mediante el **Diseñador de proyectos** o el **Asistente para publicación**y, a continuación, copie la solución actualizada en la ubicación de instalación. Cuando copie los archivos en la ubicación de instalación, asegúrese de sobrescribir los archivos anteriores.
+ Para actualizar una solución, vuelva a publicarla mediante el **Diseñador de proyectos** o el **Asistente para publicación** y, a continuación, copie la solución actualizada en la ubicación de instalación. Cuando copie los archivos en la ubicación de instalación, asegúrese de sobrescribir los archivos anteriores.
 
  La próxima vez que la solución Compruebe si hay una actualización, buscará y cargará la nueva versión automáticamente.
 
@@ -456,7 +458,7 @@ ms.locfileid: "90809354"
 > [!NOTE]
 > Los datos locales se guardan para una sola versión anterior de una solución. Si revierte dos versiones, no se conservan los datos locales. Para obtener más información sobre los datos locales, vea [acceso a datos locales y remotos en aplicaciones ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Implementar una solución de Office](../vsto/deploying-an-office-solution.md)
 - [Publicar soluciones de Office](../vsto/deploying-an-office-solution-by-using-clickonce.md)

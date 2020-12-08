@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: agregar comandos a menús contextuales'
+description: Obtenga información sobre cómo puede Agregar comandos a un menú contextual en una aplicación de Office mediante un complemento de VSTO.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1ad27481799718d9d2b0872d7a43837fc822ca40
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 95cc6a9dc773c9a0cb07eff518566af9dcc49e96
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546203"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845497"
 ---
 # <a name="how-to-add-commands-to-shortcut-menus"></a>Cómo: agregar comandos a menús contextuales
   En este tema se muestra cómo agregar comandos a un menú contextual en una aplicación de Office mediante un complemento de VSTO.
@@ -29,9 +31,9 @@ ms.locfileid: "85546203"
 
 1. Agregue un elemento **XML de cinta** a un proyecto de nivel de documento o de complemento de VSTO. Para obtener más información, vea [Cómo: Introducción a la personalización de la cinta de opciones](../vsto/how-to-get-started-customizing-the-ribbon.md). En
 
-2. el**Exploado de soluciones**, seleccione **ThisAddIn.cs** o **ThisAddIn.vb**.
+2. el **Exploado de soluciones**, seleccione **ThisAddIn.cs** o **ThisAddIn.vb**.
 
-3. En la barra de menús, elija **Ver**  >  **código**.
+3. En la barra de menús, elija **Ver** > **Código**.
 
      El archivo de clase **ThisAddin** se abrirá en el Editor de código.
 
@@ -42,7 +44,7 @@ ms.locfileid: "85546203"
 
 5. En el **Explorador de soluciones**, seleccione el archivo XML de cinta. De forma predeterminada, el archivo XML de la cinta de opciones se denomina *Ribbon1.xml*.
 
-6. En la barra de menús, elija **Ver**  >  **código**.
+6. En la barra de menús, elija **Ver** > **Código**.
 
      Se abrirá el archivo de código XML de cinta de opciones en el Editor de código.
 
@@ -79,7 +81,7 @@ ms.locfileid: "85546203"
      [!code-vb[Trin_WordAddIn_Menus#2](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/ribbon1.vb#2)]
      [!code-csharp[Trin_WordAddIn_Menus#2](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/ribbon1.cs#2)]
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Personalización de la interfaz de usuario de Office](../vsto/office-ui-customization.md)
 - [Tutorial: crear menús contextuales para marcadores](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)
 - [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)

@@ -1,5 +1,7 @@
 ---
 title: Información general sobre elementos y controles host
+description: Aprenda que los elementos host y los controles host son tipos que ayudan a proporcionar el modelo de programación para las soluciones de Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -36,12 +38,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c349756eb12fe66800e209bd6a1aad5b8d2337ab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: edc8939f2a9e5f41f81c8176d5268528c273a7ce
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255926"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845575"
 ---
 # <a name="host-items-and-host-controls-overview"></a>Información general sobre elementos y controles host
   Elementos host y los controles host son tipos que ayudan a proporcionar el modelo de programación para las soluciones de Office que se crean con las herramientas de desarrollo de Office en Visual Studio. Tales elementos y controles hacen que la interacción con los modelos de objetos de Microsoft Office Word y Microsoft Office Excel, que se basan en COM, sea más similar a la interacción con objetos administrados como, por ejemplo, los controles de Windows Forms.

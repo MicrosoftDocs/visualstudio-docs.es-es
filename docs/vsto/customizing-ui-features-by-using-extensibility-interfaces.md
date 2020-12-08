@@ -1,5 +1,7 @@
 ---
 title: Personalización de las características de la interfaz de usuario mediante interfaces de extensibilidad
+description: Obtenga información sobre cómo las herramientas de desarrollo de Office en Visual Studio proporcionan interfaces de extensibilidad que le ayudarán a personalizar las características de la interfaz de usuario.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -21,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 07b62903388012dac3459c86011e349f8053762c
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 436f426eee6c90476997f416bab907c8e17f94cc
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583845"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845627"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>Personalización de las características de la interfaz de usuario mediante interfaces de extensibilidad
   Las herramientas de desarrollo de Office en Visual Studio proporcionan clases y diseñadores que administran numerosos detalles de la implementación cuando se usan para crear paneles de tareas personalizados, personalizaciones de la cinta y regiones de formularios de Outlook en un complemento VSTO. Sin embargo, también puede implementar la *interfaz de extensibilidad* para cada característica si tiene necesidades especiales.
@@ -43,7 +45,7 @@ ms.locfileid: "91583845"
 ## <a name="extensibility-interfaces-you-can-implement-in-a-vsto-add-in"></a>Interfaces de extensibilidad que puede implementar en un complemento de VSTO
  La tabla siguiente enumera las interfaces de extensibilidad que puede implementar, y las aplicaciones que las admiten.
 
-|Interfaz|Descripción|APLICACIONES|
+|Interfaz|Descripción|Aplicaciones|
 |---------------|-----------------|------------------|
 |<xref:Microsoft.Office.Core.IRibbonExtensibility>|Implemente esta interfaz para personalizar la interfaz de usuario de la cinta. **Nota:**  Puede Agregar un elemento **cinta (XML)** a un proyecto para generar una implementación predeterminada <xref:Microsoft.Office.Core.IRibbonExtensibility> en el complemento de VSTO. Para obtener más información, consulta [Ribbon XML](../vsto/ribbon-xml.md).|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> InfoPath 2010<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Project<br /><br /> Visio<br /><br /> Word|
 |<xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>|Implemente esta interfaz para crear un panel de tareas personalizado.|Excel<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Word|

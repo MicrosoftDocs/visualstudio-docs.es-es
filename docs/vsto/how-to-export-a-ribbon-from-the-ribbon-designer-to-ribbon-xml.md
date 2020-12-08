@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: exportar una cinta de opciones del diseñador de la cinta de opciones a XML de la cinta'
+description: Obtenga información sobre cómo personalizar la cinta de opciones, puede exportar la cinta de opciones del diseñador al XML de la cinta de opciones y editar el XML directamente.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cf3101a062fa8b30ae821bf6a157319b6f37862a
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: f39131eb7e3469d389ad2d50aaeb1ee97e3865b9
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298435"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844145"
 ---
 # <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Cómo: exportar una cinta de opciones del diseñador de la cinta de opciones a XML de la cinta
   El elemento **cinta (diseñador visual)** no admite todos los tipos posibles de personalización de la cinta de opciones. Para personalizar la cinta de modo avanzado, puede exportar la cinta de opciones del diseñador al XML de la cinta y editar directamente el XML.
@@ -36,7 +38,7 @@ ms.locfileid: "92298435"
 
 ### <a name="to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Para exportar una cinta de opciones del diseñador de la cinta de opciones a XML de la cinta
 
-1. Haga clic con el botón secundario en el archivo de código de la cinta de **Explorador de soluciones**y, a continuación, haga clic en **Ver diseñador**.
+1. Haga clic con el botón secundario en el archivo de código de la cinta de **Explorador de soluciones** y, a continuación, haga clic en **Ver diseñador**.
 
 2. Haga clic con el botón secundario en el diseñador de la cinta y, a continuación, haga clic en **exportar cinta a XML**.
 
@@ -44,11 +46,11 @@ ms.locfileid: "92298435"
 
 3. En la clase de código de la cinta de opciones, busque los comentarios que comienzan por `TODO:` .
 
-4. Copie el bloque de código de estos comentarios a la clase **ThisAddIn**, **ThisWorkbook**o **ThisDocument** , en función del tipo de solución que esté desarrollando.
+4. Copie el bloque de código de estos comentarios a la clase **ThisAddIn**, **ThisWorkbook** o **ThisDocument** , en función del tipo de solución que esté desarrollando.
 
      Este código permite a la aplicación Microsoft Office detectar y cargar la cinta de opciones personalizada. Para obtener más información, consulta [Ribbon XML](../vsto/ribbon-xml.md).
 
-5. En la clase **ThisAddIn**, **ThisWorkbook**o **ThisDocument** , quite el comentario del bloque de código.
+5. En la clase **ThisAddIn**, **ThisWorkbook** o **ThisDocument** , quite el comentario del bloque de código.
 
      Después de quitar el comentario del código, debería ser similar al ejemplo siguiente. En este ejemplo, se llama a la clase Ribbon `MyRibbon` .
 
@@ -65,7 +67,7 @@ ms.locfileid: "92298435"
 
      Para obtener información sobre cómo escribir métodos de devolución de llamada y cómo usar el modelo de programación RibbonX, vea [XML de la cinta](../vsto/ribbon-xml.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Información general sobre la cinta](../vsto/ribbon-overview.md)
 - [Diseñador de la cinta de opciones](../vsto/ribbon-designer.md)
 - [Ribbon XML](../vsto/ribbon-xml.md)

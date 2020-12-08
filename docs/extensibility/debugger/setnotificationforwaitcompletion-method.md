@@ -1,5 +1,7 @@
 ---
 title: Método SetNotificationForWaitCompletion | Microsoft Docs
+description: Obtenga información sobre cómo el depurador utiliza un bit de estado para ayudar a salir de un cuerpo de método asincrónico para las tareas de tipo Promise.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 226ac41c8e3b7427ac3b9aba7bea08dbb7329d16
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 80904e95c1561dd20ed2a6cc9ad561e6c18ee93a
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712872"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845224"
 ---
 # <a name="setnotificationforwaitcompletion-method"></a>SetNotificationForWaitCompletion (Método)
 Establece o borra el bit de estado de TASK_STATE_WAIT_COMPLETION_NOTIFICATION.
@@ -37,7 +39,7 @@ internal void SetNotificationForWaitCompletion(bool enabled)
 
 ## <a name="exceptions"></a>Excepciones
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  El depurador establece este bit para ayudar a salir de un cuerpo de método asincrónico. Si `enabled` es `true` , solo se debe llamar a este método en una tarea que aún no se ha completado. Cuando `enabled` es `false` , se puede llamar a este método en las tareas completadas. En cualquiera de los dos eventos, solo se debe usar para las tareas de tipo Promise.
 
 ## <a name="requirements"></a>Requisitos

@@ -1,5 +1,7 @@
 ---
 title: Datos en los tutoriales de soluciones de Office
+description: Aprenda a trabajar con datos en personalizaciones de nivel de documento y en complementos de VSTO para Microsoft Word y Microsoft Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52b2efa5e5def8214736d648e2b90906fe720dbe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25bf42015dcc60014012faf0254d4b6d02c30d56
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62956035"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845588"
 ---
 # <a name="data-in-office-solutions-walkthroughs"></a>Datos en los tutoriales de soluciones de Office
   En los siguientes tutoriales se muestra cómo trabajar con los datos de las personalizaciones de nivel de documento y de los complementos VSTO de Microsoft Office Word y Microsoft Office Excel.
@@ -47,7 +49,7 @@ ms.locfileid: "62956035"
 
 - [Tutorial: cambiar los datos almacenados en caché de un libro en un servidor](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md) Muestra cómo modificar un conjunto de DataSet almacenado en memoria caché en un libro de Microsoft Office Excel sin iniciar Excel.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Tutoriales de uso de Word](../vsto/walkthroughs-using-word.md)
 - [Tutoriales de uso de Excel](../vsto/walkthroughs-using-excel.md)
 - [Tutoriales de personalización de la interfaz de usuario de Office](../vsto/office-ui-customization-walkthroughs.md)

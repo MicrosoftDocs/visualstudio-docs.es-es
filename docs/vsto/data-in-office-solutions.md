@@ -1,5 +1,7 @@
 ---
 title: Datos en soluciones de Office
+description: Obtenga información sobre las distintas formas de trabajar con datos cuando cree soluciones de Microsoft Office mediante Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a5f0b85acfd45996dd00208aae820b24265be9f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4ce6d73a7c70101c0fe364ac5dafba8cbe47f5c8
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73189683"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845553"
 ---
 # <a name="data-in-office-solutions"></a>Datos en soluciones de Office
   Muchas soluciones de Office permiten a los usuarios recuperar o modificar datos. Al crear soluciones de Office con Visual Studio, hay varias maneras de trabajar con los datos.

@@ -1,5 +1,7 @@
 ---
 title: Compatibilidad adicional para errores en las soluciones de Office
+description: Obtenga información sobre cómo puede usar los recursos de soporte técnico para encontrar respuestas a los problemas que encuentre al crear soluciones de Office en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -56,12 +58,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 01b225b27dfe9c5e1f006105b8e2676a509234b9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e307c839dfb0aa764ccd0aa5727f009635ecabce
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72984636"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844782"
 ---
 # <a name="additional-support-for-errors-in-office-solutions"></a>Compatibilidad adicional para errores en las soluciones de Office
 

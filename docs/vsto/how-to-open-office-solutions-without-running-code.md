@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: abrir soluciones de Office sin ejecutar código'
+description: Obtenga información sobre cómo puede abrir un documento o un libro que contenga extensiones de código administrado sin ejecutar el código de ensamblado.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d84515c2c3159b61b96f77555b23eef0df0ae961
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8339f21fbf7add4335941360b73d42700ef6e635
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543486"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844925"
 ---
 # <a name="how-to-open-office-solutions-without-running-code"></a>Cómo: abrir soluciones de Office sin ejecutar código
   Una solución Microsoft Office creada con extensiones de código administrado se ejecuta incluso si la configuración de seguridad de la aplicación de Office del usuario final está establecida en alta. Esto se debe a que la seguridad del código de ensamblado .NET se administra mediante el marco de Microsoft .NET, no Microsoft Office.

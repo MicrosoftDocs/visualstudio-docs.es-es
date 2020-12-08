@@ -1,5 +1,7 @@
 ---
 title: Enlazar datos a controles en soluciones de Office
+description: Obtenga información sobre cómo puede enlazar controles de Windows Forms y controles host en un documento de Microsoft Office Word o en una hoja de cálculo de Excel a un origen de datos.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 93e2d5abb9c8fda9d4a1300a9bb0958ac9266499
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9be201899f0e2ff4f685343d58a859d8a9157068
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986170"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844431"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>Enlazar datos a controles en soluciones de Office
   Puede enlazar controles de Windows Forms y *controles host* en un documento de Microsoft Office Word o una hoja de cálculo de Microsoft Office Excel a un origen de datos, de forma que los controles de muestren automáticamente los datos. Puede enlazar datos a controles en proyectos de nivel de aplicación y de nivel de documento.
@@ -97,7 +99,7 @@ ms.locfileid: "72986170"
 
  Para obtener más información, vea [Cómo: actualizar un origen de datos con datos de un control host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Enlace de datos y Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms)
 - [Cómo: crear un control con enlace simple en Windows Forms](/dotnet/framework/winforms/how-to-create-a-simple-bound-control-on-a-windows-form)
 - [Enlazar controles de Windows Forms a datos en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: agregar controles XMLNodes a documentos de Word'
+description: Obtenga información sobre que al asignar un elemento de esquema XML repetitivo a un Microsoft Office documento de Word, Visual Studio agrega automáticamente un control XMLNodes al documento.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 95fc165c1a3123d68529f6ccaea99fea963c2a67
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 256c62fc69be2c057d3ffc2588577fa87910c161
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543499"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844444"
 ---
 # <a name="how-to-add-xmlnodes-controls-to-word-documents"></a>Cómo: agregar controles XMLNodes a documentos de Word
   **Importante** La información configurada en este tema con respecto a Microsoft Word se presenta exclusivamente para la ventaja y el uso de las personas y organizaciones que se encuentran fuera del Estados Unidos y de sus territorios, o bien el desarrollo de programas que se ejecutan en, productos de Microsoft Word con licencia de Microsoft antes de la 2010 de enero, cuando Microsoft quitó una implementación de funcionalidad específica relacionada con XML personalizado de Es posible que la información relativa a Microsoft Word no sea leída ni utilizada por personas u organizaciones en el Estados Unidos ni en sus territorios que utilicen o desarrollen programas que se ejecutan en, productos de Microsoft Word con licencia de Microsoft a partir del 10 de enero de 2010; Estos productos no se comportarán igual que los productos con licencia antes de esa fecha o adquiridos y con licencia para usarlos fuera del Estados Unidos.

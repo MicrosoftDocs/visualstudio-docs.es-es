@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: agregar encabezados y pies de página a documentos mediante programación'
+description: Obtenga información sobre cómo puede Agregar texto a los encabezados y pies de página del documento mediante la propiedad headers y Footers de la sección.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c6a60f58a116cd01c59145de0fcd29a2f55a787e
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 1abf9c0726a6b4afd1764aec095f129a4fcaf510
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585423"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844523"
 ---
 # <a name="how-to-programmatically-add-headers-and-footers-to-documents"></a>Cómo: agregar encabezados y pies de página a documentos mediante programación
   Puede agregar texto a los encabezados y pies de página del documento mediante las propiedades <xref:Microsoft.Office.Interop.Word.Section.Headers%2A> y <xref:Microsoft.Office.Interop.Word.Section.Footers%2A> de la <xref:Microsoft.Office.Interop.Word.Section>. Cada sección de un documento contiene tres encabezados y pies de página:

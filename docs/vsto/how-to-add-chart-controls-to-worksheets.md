@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: agregar controles Chart a hojas de cálculo'
+description: Obtenga información sobre cómo puede Agregar controles Chart a un Microsoft Office hoja de cálculo de Excel en tiempo de diseño y en tiempo de ejecución en personalizaciones de nivel de documento.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fdb1f738fe6e68f7470ae65e6ce08b2f3be0ef6d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e48b8cfbcf4ee1c7340aef4cd59e09698f89412
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546242"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845471"
 ---
 # <a name="how-to-add-chart-controls-to-worksheets"></a>Cómo: agregar controles Chart a hojas de cálculo
   Puede agregar <xref:Microsoft.Office.Tools.Excel.Chart> controles a una hoja de cálculo de Excel Microsoft Office en tiempo de diseño y en tiempo de ejecución en personalizaciones de nivel de documento. También puede agregar <xref:Microsoft.Office.Tools.Excel.Chart> controles en tiempo de ejecución en complementos de VSTO.
@@ -82,7 +84,7 @@ ms.locfileid: "85546242"
 
 - Datos que se deben representar gráficamente, almacenados en el rango de celdas A5 a D8 en la hoja de cálculo.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Ampliar documentos de Word y libros de Excel en complementos de VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Controles en documentos de Office](../vsto/controls-on-office-documents.md)
 - [Chart (control)](../vsto/chart-control.md)

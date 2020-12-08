@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: Introducción a la personalización de la cinta de opciones'
+description: Obtenga información sobre cómo personalizar la cinta de opciones de una aplicación Microsoft Office, agregar un elemento cinta (diseñador visual) o cinta (XML) a un proyecto de Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: be311f87862f4447d903294508927735d3507b08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3974fe85a97226a920959b41256fa7e29923c9d1
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520073"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845952"
 ---
 # <a name="how-to-get-started-customizing-the-ribbon"></a>Cómo: Introducción a la personalización de la cinta de opciones
   Para personalizar la cinta de opciones de una aplicación Microsoft Office, agregue un elemento **cinta (diseñador visual)** o **cinta (XML)** a un proyecto de Office.
@@ -65,13 +67,13 @@ ms.locfileid: "85520073"
 
    - Nombres reservados para Windows o DOS como ("NUL", "AUX", "con", "COM1", "LPT1", etc.)
 
-4. Haga clic en **OK**.
+4. Haga clic en **Aceptar**.
 
    El elemento de la cinta de opciones aparece en **Explorador de soluciones**. Para obtener información sobre los pasos siguientes, consulte [información general](../vsto/ribbon-overview.md)de la cinta de opciones.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Obtener acceso a la cinta de opciones en tiempo de ejecución](../vsto/accessing-the-ribbon-at-run-time.md)
-- [Diseñador de la cinta](../vsto/ribbon-designer.md)
+- [Diseñador de la cinta de opciones](../vsto/ribbon-designer.md)
 - [Ribbon XML](../vsto/ribbon-xml.md)
 - [Tutorial: crear una pestaña personalizada mediante el diseñador de la cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
 - [Tutorial: crear una pestaña personalizada usando XML de la cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)

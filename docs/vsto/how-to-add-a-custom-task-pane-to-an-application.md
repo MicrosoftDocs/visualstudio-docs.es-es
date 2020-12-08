@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: agregar un panel de tareas personalizado a una aplicación'
+description: Obtenga información sobre cómo puede Agregar un panel de tareas personalizado a las aplicaciones mediante el complemento Visual Studio Tools para Office (VSTO).
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0df4d51795f01c98790f1d5b0525c45cc71899ab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e8056eddef6329aeb10ed5545c4146f0af0f167
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546216"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845055"
 ---
 # <a name="how-to-add-a-custom-task-pane-to-an-application"></a>Cómo: agregar un panel de tareas personalizado a una aplicación
   Puede agregar un panel de tareas personalizado a las aplicaciones enumeradas anteriormente mediante el complemento de VSTO. Para obtener más información, consulte [paneles de tareas personalizados](../vsto/custom-task-panes.md).
@@ -36,7 +38,7 @@ ms.locfileid: "85546216"
 
 2. En el menú **Proyecto** , haga clic en **Agregar control de usuario**.
 
-3. En el cuadro de diálogo **Agregar nuevo elemento** , cambie el nombre del nuevo control de usuario a **MyUserControl**y, a continuación, haga clic en **Agregar**.
+3. En el cuadro de diálogo **Agregar nuevo elemento** , cambie el nombre del nuevo control de usuario a **MyUserControl** y, a continuación, haga clic en **Agregar**.
 
      Se abre el control de usuario en el diseñador.
 
@@ -57,7 +59,7 @@ ms.locfileid: "85546216"
     > [!NOTE]
     > Este código asocia el panel de tareas personalizado a la ventana activa de la aplicación. En algunas aplicaciones, tal vez desee modificar este código para asegurarse de que el panel de tareas aparece con otros documentos o elementos de la aplicación. Para obtener más información, consulte [paneles de tareas personalizados](../vsto/custom-task-panes.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Personalización de la interfaz de usuario de Office](../vsto/office-ui-customization.md)
 - [Paneles de tareas personalizados](../vsto/custom-task-panes.md)
 - [Tutorial: automatizar una aplicación desde un panel de tareas personalizado](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)

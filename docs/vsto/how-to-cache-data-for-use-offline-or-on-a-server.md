@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: almacenar datos en caché para su uso sin conexión o en un servidor'
+description: Marque un elemento de datos que se almacenará en caché en el documento para que esté disponible sin conexión. Esto permite a los datos del documento manipularse con otro código.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ce295e299e4accb2d79655675f6264a1497b8d69
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cefd4cd132e75f8ff622c8e0d809d317242c10f5
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546190"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844327"
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>Cómo: almacenar datos en caché para su uso sin conexión o en un servidor
   Puede marcar un elemento de datos para almacenarlo en la caché del documento, de modo que esté disponible sin conexión. Esto también permite que otros códigos manipulen los datos del documento cuando el documento se almacena en un servidor.
@@ -59,7 +61,7 @@ ms.locfileid: "85546190"
 
 4. En la ventana **propiedades** , establezca la propiedad **Modifiers** en **Public** (de forma predeterminada, es **Internal**).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Datos de caché](../vsto/caching-data.md)
 - [Cómo: almacenar en caché un origen de datos en un documento de Office mediante programación](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)
 - [Cómo: almacenar datos en caché en un documento protegido mediante contraseña](../vsto/how-to-cache-data-in-a-password-protected-document.md)

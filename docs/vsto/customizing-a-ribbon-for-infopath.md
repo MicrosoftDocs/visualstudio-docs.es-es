@@ -1,5 +1,7 @@
 ---
 title: Personalizar una cinta para InfoPath
+description: Sepa que al personalizar la cinta de opciones en Microsoft Office InfoPath, debe tener en cuenta dónde aparecerá la cinta personalizada en la aplicación.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76ec069ef71890a69fdbd41f40bd91cf75d93cd4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: baf5a7edbdd9452c4b7ce55e109eee9c79798b5e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255505"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844172"
 ---
 # <a name="customize-a-ribbon-for-infopath"></a>Personalizar una cinta para InfoPath
   Al personalizar la Cinta en Microsoft Office InfoPath, debe tener en cuenta dónde aparecerá la Cinta personalizada en la aplicación. [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] puede mostrar la Cinta en los tres tipos de ventanas de la aplicación InfoPath indicados a continuación:
@@ -61,7 +63,7 @@ ms.locfileid: "71255505"
  [!code-csharp[Trin_RibbonInfoPathBasic#1](../vsto/codesnippet/CSharp/myinfopathproject/ribbon.cs#1)]
  [!code-vb[Trin_RibbonInfoPathBasic#1](../vsto/codesnippet/VisualBasic/myinfopathproject/ribbon.vb#1)]
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Obtener acceso a la cinta de opciones en tiempo de ejecución](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Información general sobre la cinta](../vsto/ribbon-overview.md)
 - [Diseñador de la cinta](../vsto/ribbon-designer.md)

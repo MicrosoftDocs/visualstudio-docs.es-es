@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: agregar controles de contenido a documentos de Word'
+description: Aprenda que en proyectos de Word de nivel de documento, puede Agregar controles de contenido al documento en el proyecto en tiempo de diseño o en tiempo de ejecución.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -26,12 +28,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2f15adeb801e33a134c681c206e3a5b38ccce70f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aa1528371a1466ec2886bf652ed33561b66b7028
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538390"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845562"
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>Cómo: agregar controles de contenido a documentos de Word
   En proyectos de Word de nivel de documento, puede agregar controles de contenido al documento en el proyecto en tiempo de diseño o en tiempo de ejecución. En proyectos de complemento de VSTO de Word, puede agregar controles de contenido a cualquier documento abierto en tiempo de ejecución.
@@ -182,7 +184,7 @@ ms.locfileid: "85538390"
 
      [!code-csharp[Trin_WordAddInDynamicControls#6](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#6)]
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Automatizar Word con objetos extendidos](../vsto/automating-word-by-using-extended-objects.md)
 - [Información general sobre elementos y controles host](../vsto/host-items-and-host-controls-overview.md)
 - [Agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md)

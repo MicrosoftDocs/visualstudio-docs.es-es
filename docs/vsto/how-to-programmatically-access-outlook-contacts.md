@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: obtener acceso a los contactos de Outlook mediante programación'
+description: Obtenga información sobre cómo puede obtener acceso a los contactos de Outlook mediante programación. Este ejemplo busca todos los contactos cuyos nombres contienen una cadena de búsqueda especificada.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2f6d64512af660392c10082e3bcd3c26b6bc6885
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 68fe58f2f70a68c37d9171eb01f9294bb5e4d4af
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520101"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844692"
 ---
 # <a name="how-to-programmatically-access-outlook-contacts"></a>Cómo: obtener acceso a los contactos de Outlook mediante programación
   Este ejemplo busca todos los contactos cuyos nombres contienen una cadena de búsqueda especificada.
@@ -34,7 +36,7 @@ ms.locfileid: "85520101"
 
 - Contactos cuyos apellidos contienen la cadena "**na"** (por ejemplo, Tzipi Butnaru) en la carpeta **contactos** .
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Trabajar con elementos de contacto](../vsto/working-with-contact-items.md)
 - [Cómo: agregar una entrada a contactos de Outlook mediante programación](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)
 - [Cómo: buscar un contacto específico mediante programación](../vsto/how-to-programmatically-search-for-a-specific-contact.md)

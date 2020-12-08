@@ -1,5 +1,7 @@
 ---
 title: Permitir que el código se ejecute detrás de docs con permisos restringidos
+description: Obtenga información sobre cómo permitir que el código se ejecute detrás de documentos con permisos restringidos mediante las herramientas de desarrollo de Office en Visual Studio.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 14c468a806160fd31c84b164a4b995f904e71fc6
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: ac15302e81a68d8866c69a30a8368d36648ef1d9
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298491"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844899"
 ---
 # <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Cómo: permitir que el código se ejecute en documentos con permisos restringidos
   Puede usar la característica de información Rights Management (IRM) de Microsoft Office para restringir los permisos a un documento o libro. De forma predeterminada, no se permite la ejecución del código que se encuentra detrás de un documento Microsoft Office Word restringido o Microsoft Office libro de Excel. Puede cambiar el valor predeterminado para que las extensiones de código administrado puedan tener acceso al modelo de objetos y la solución funcione.
@@ -36,18 +38,18 @@ ms.locfileid: "92298491"
 
 1. Abra el documento o el libro en Word o Excel.
 
-2. Haga clic en la pestaña **archivo** , seleccione **preparar**, elija **restringir permisos**y, a continuación, haga clic en **acceso restringido**.
+2. Haga clic en la pestaña **archivo** , seleccione **preparar**, elija **restringir permisos** y, a continuación, haga clic en **acceso restringido**.
 
    > [!NOTE]
    > Al usarse por primera vez, se le pedirá que instale el cliente de Windows Rights Management. Después de instalar el cliente de, es posible que tenga que repetir los pasos.
 
-3. En el cuadro de diálogo **permiso** , seleccione **restringir el permiso a este documento**y, a continuación, haga clic en **más opciones**.
+3. En el cuadro de diálogo **permiso** , seleccione **restringir el permiso a este documento** y, a continuación, haga clic en **más opciones**.
 
 4. En **permisos adicionales para los usuarios**, seleccione **acceso a contenido mediante programación**.
 
    Word o Excel permitirán el acceso mediante programación al modelo de objetos.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Información general sobre Information Rights Management y extensiones de código administrado](../vsto/information-rights-management-and-managed-code-extensions-overview.md)
 - [Protección de documentos en soluciones de nivel de documento](../vsto/document-protection-in-document-level-solutions.md)
 - [Protección mediante contraseña en documentos de Office](../vsto/password-protection-on-office-documents.md)

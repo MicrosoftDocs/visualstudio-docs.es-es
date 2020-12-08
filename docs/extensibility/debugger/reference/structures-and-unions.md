@@ -1,5 +1,7 @@
 ---
 title: Estructuras y uniones | Microsoft Docs
+description: En este artículo se incluyen vínculos a descripciones de referencia de estructuras y uniones en el SDK de depuración de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 19d8f547d98488edffc6049be7619e5b5e921d93
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c1f477b46083b5abd5b8e93593cc728b660b58d9
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713491"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845770"
 ---
 # <a name="structures-and-unions"></a>Estructuras y uniones
 A continuación se muestran estructuras y uniones en el SDK de depuración de Visual Studio.
@@ -139,5 +141,5 @@ A continuación se muestran estructuras y uniones en el SDK de depuración de Vi
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Referencia de API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

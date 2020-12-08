@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: crear y modificar propiedades de documento personalizadas'
+description: Obtenga información acerca de cómo puede crear y modificar propiedades de documento personalizadas si hay información adicional que desea almacenar con el documento.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6dd4f4ada36be4ef7b70f4f32d659abb10c8a62a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4897008f102600bd222a21761237acc4bcb62a30
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547217"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844301"
 ---
 # <a name="how-to-create-and-modify-custom-document-properties"></a>Cómo: crear y modificar propiedades de documento personalizadas
   Las aplicaciones de Microsoft Office enumeradas anteriormente proporcionan propiedades integradas que se almacenan con los documentos. Además, puede crear y modificar propiedades de documento personalizadas si hay información adicional que desea almacenar con el documento.
@@ -37,7 +39,7 @@ ms.locfileid: "85547217"
 ## <a name="robust-programming"></a>Programación sólida
  Si se intenta acceder a la propiedad `Value` para propiedades sin definir, se produce una excepción.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Complementos de VSTO de programa](../vsto/programming-vsto-add-ins.md)
 - [Personalizaciones de nivel de documento de programa](../vsto/programming-document-level-customizations.md)
 - [Cómo: leer y escribir en propiedades de documento](../vsto/how-to-read-from-and-write-to-document-properties.md)

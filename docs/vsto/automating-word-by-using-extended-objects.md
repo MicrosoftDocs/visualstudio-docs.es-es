@@ -1,5 +1,7 @@
 ---
 title: Automatizar Word con objetos extendidos
+description: Obtenga información sobre cómo puede usar elementos host y controles host en sus soluciones al desarrollar soluciones de Word en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -20,15 +22,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 083fe8cdd3bf9d0e4de4809aacfb78b537e4ed8e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 39ac9d50d0f75f595568c66b02bda1c5ed46a3d6
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255533"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844457"
 ---
 # <a name="automate-word-by-using-extended-objects"></a>Automatizar Word con objetos extendidos
-  Cuando desarrolla soluciones de Word en Visual Studio, puede usar la opción *elementos host* y *controles host*en sus soluciones. Se trata de objetos que extienden algunos objetos de uso común en el modelo de objetos de Word (es decir, el modelo de objetos expuesto por el ensamblado de interoperabilidad primario de Word), como los objetos <xref:Microsoft.Office.Interop.Word.Document> y <xref:Microsoft.Office.Interop.Word.ContentControl> . Los objetos extendidos se comportan como los objetos de Word en los que se basan, pero agregan eventos adicionales y capacidades de enlace de datos a los objetos.
+  Cuando desarrolla soluciones de Word en Visual Studio, puede usar la opción *elementos host* y *controles host* en sus soluciones. Se trata de objetos que extienden algunos objetos de uso común en el modelo de objetos de Word (es decir, el modelo de objetos expuesto por el ensamblado de interoperabilidad primario de Word), como los objetos <xref:Microsoft.Office.Interop.Word.Document> y <xref:Microsoft.Office.Interop.Word.ContentControl> . Los objetos extendidos se comportan como los objetos de Word en los que se basan, pero agregan eventos adicionales y capacidades de enlace de datos a los objetos.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
@@ -54,7 +56,7 @@ ms.locfileid: "71255533"
 
 - [XMLNodes (control)](../vsto/xmlnodes-control.md)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Cómo: agregar controles de contenido a documentos de Word](../vsto/how-to-add-content-controls-to-word-documents.md)
 - [Cómo: agregar controles Bookmark a documentos de Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
 - [Cómo: agregar controles XMLNode a documentos de Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)
@@ -63,7 +65,7 @@ ms.locfileid: "71255533"
 - [Tutorial: crear una plantilla mediante controles de contenido](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)
 - [Tutorial: enlazar controles de contenido a elementos XML personalizados](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)
 - [Tutorial: crear menús contextuales para marcadores](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)
-- [soluciones para Word](../vsto/word-solutions.md)
+- [Soluciones de Word](../vsto/word-solutions.md)
 - [Información general sobre elementos y controles host](../vsto/host-items-and-host-controls-overview.md)
 - [Limitaciones de programación de elementos y controles host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Ampliar documentos de Word y libros de Excel en complementos de VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)

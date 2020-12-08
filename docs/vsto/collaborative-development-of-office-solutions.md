@@ -1,5 +1,7 @@
 ---
 title: Desarrollo en colaboración de las soluciones de Office
+description: Obtenga información sobre cómo varios desarrolladores pueden trabajar en un proyecto de Office de la misma manera que colaboran en otros proyectos de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76c26a110d88d3dee8bf7540647ea0bfde4e7c4f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d30f28b3e97469bc9e0bf921438960206b4f89c0
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62949492"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845809"
 ---
 # <a name="collaborative-development-of-office-solutions"></a>Desarrollo en colaboración de las soluciones de Office
   Varios desarrolladores pueden trabajar en un proyecto de Office de la misma manera que colaboran en otros proyectos de Visual Studio. Visual Studio busca correctamente la instalación de Microsoft Office en cada equipo, incluso si Office se instala en ubicaciones diferentes. Sin embargo, hay algunas consideraciones importantes que debe tener en cuenta.
@@ -33,7 +35,7 @@ ms.locfileid: "62949492"
  Si el proyecto está hospedado en un recurso compartido de red en lugar de en el control de código fuente, se deben realizar algunos pasos adicionales para permitir que los desarrolladores de colaboración abran la solución y prueben el ensamblado.
 
 ## <a name="source-control-requires-checking-out-all-files"></a>El control de código fuente requiere la desprotección de todos los archivos
- Si utiliza el control de código fuente para los proyectos, debe comprobar todos los archivos de un archivo de código en **Explorador de soluciones** (como los archivos de código *ThisDocument*, *ThisWorkbook*o *ThisAddIn* ) cada vez que cambie el archivo de código, incluso los archivos que están ocultos de forma predeterminada. Si desprotege solo el archivo de código de nivel superior, es posible que se pierdan los cambios.
+ Si utiliza el control de código fuente para los proyectos, debe comprobar todos los archivos de un archivo de código en **Explorador de soluciones** (como los archivos de código *ThisDocument*, *ThisWorkbook* o *ThisAddIn* ) cada vez que cambie el archivo de código, incluso los archivos que están ocultos de forma predeterminada. Si desprotege solo el archivo de código de nivel superior, es posible que se pierdan los cambios.
 
  Después de realizar los cambios, vuelva a proteger todos los archivos. Para obtener más información sobre los archivos de código ocultos en los proyectos, vea [proyectos de Office en el entorno de Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md).
 
@@ -42,7 +44,7 @@ ms.locfileid: "62949492"
 
  Los certificados temporales que se generan automáticamente en tiempo de compilación no están protegidos por contraseñas. Los certificados contienen el nombre de inicio de sesión del desarrollador y otra información personal. Si implementa personalizaciones que están firmadas por certificados temporales, es posible que otras personas puedan tener acceso a esta información.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Proteger soluciones de Office](../vsto/securing-office-solutions.md)
 - [Diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md)
 - [Compilar soluciones de Office](../vsto/building-office-solutions.md)

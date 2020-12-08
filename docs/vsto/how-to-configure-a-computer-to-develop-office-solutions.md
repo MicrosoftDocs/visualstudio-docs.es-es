@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: configurar un equipo para desarrollar soluciones de Office'
+description: Aprenda a configurar un equipo de desarrollo para que pueda usar las herramientas de desarrollo de Microsoft Office en Visual Studio.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 93c8287b0b2234c45056829ba78d993658b0428d
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: d6504ac9682c4cd4e7691c651f1ee5c2b3818bf2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585502"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844314"
 ---
 # <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>Cómo: configurar un equipo para desarrollar soluciones de Office
   Para configurar un equipo de desarrollo de modo que puede usar las herramientas de desarrollo de Microsoft Office en Visual Studio, siga las instrucciones de este tema. Debe tener privilegios administrativos en el equipo de desarrollo para seguir estos pasos.

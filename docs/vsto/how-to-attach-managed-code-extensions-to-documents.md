@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: adjuntar extensiones de código administrado a documentos'
+description: Obtenga información acerca de cómo puede adjuntar un ensamblado de personalización a un documento de Microsoft Office Word existente o Microsoft Office libro de Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f44b153ac7d55704ba649a7dc09860518a5e76b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1929daaa82dbfec6f58513bf94eefe01f9520601
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547529"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844393"
 ---
 # <a name="how-to-attach-managed-code-extensions-to-documents"></a>Cómo: adjuntar extensiones de código administrado a documentos
   Puede adjuntar un ensamblado de personalización a un documento de Microsoft Office Word existente o Microsoft Office libro de Excel. El documento o el libro puede tener cualquier formato de archivo compatible con los proyectos de Microsoft Office y las herramientas de desarrollo de Visual Studio. Para obtener más información, vea [arquitectura de las personalizaciones de nivel de documento](../vsto/architecture-of-document-level-customizations.md).
@@ -48,7 +50,7 @@ ms.locfileid: "85547529"
 
 4. Compile el proyecto y ejecute la aplicación en el equipo en el que desea adjuntar la personalización. El equipo debe tener instalado Visual Studio 2010 Tools para Office Runtime.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Administrar documentos en un servidor mediante la clase ServerDocument](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)
 - [Cómo: quitar extensiones de código administrado de documentos](../vsto/how-to-remove-managed-code-extensions-from-documents.md)
 - [Manifiestos de implementación y aplicación en soluciones de Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)

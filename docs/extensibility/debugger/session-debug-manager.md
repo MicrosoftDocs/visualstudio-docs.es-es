@@ -1,5 +1,7 @@
 ---
 title: Administrador de depuración de sesión | Microsoft Docs
+description: Obtenga información sobre el administrador de depuración de la sesión, que administra varios programas de depuración de motores de depuración en varios procesos en cualquier número de equipos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 953b4e948ef5e21531a3e73bceed3a363ed3cec5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d2c51b1fd345789cabbb9735621626ab7c2db993
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712883"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845289"
 ---
 # <a name="session-debug-manager"></a>Administrador de depuración de sesión
 El administrador de depuración de sesión (SDM) administra cualquier número de motores de depuración (DE) que depuren cualquier número de programas en varios procesos en cualquier número de equipos. Además de ser un multiplexor del motor de depuración, el SDM proporciona una vista unificada de la sesión de depuración al IDE.

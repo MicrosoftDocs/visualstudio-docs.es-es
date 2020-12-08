@@ -1,5 +1,7 @@
 ---
 title: Interfaces de proveedor de símbolos | Microsoft Docs
+description: En este artículo se incluyen vínculos a descripciones de las interfaces de control de símbolos para el SDK de Visual Studio, que evalúan las variables en una pila de llamadas durante el modo de interrupción.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,17 +14,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7929ba36c76f0db1cabab087afe3590de509efff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a24baec6738382f93dee5d8b7843d624eea80890
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80715851"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845796"
 ---
 # <a name="symbol-provider-interfaces"></a>Interfaces de proveedor de símbolos
 A continuación se muestran las interfaces de control de símbolos para [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)] .
 
-## <a name="discussion"></a>Debate
+## <a name="discussion"></a>Discusión
  Estas interfaces se utilizan para evaluar las variables en una pila de llamadas durante el modo de interrupción. Solo se implementan para los proveedores de símbolos de Common Language Runtime (SP).
 
 |Interfaz|Implementado por|Descripción|
@@ -58,5 +60,5 @@ A continuación se muestran las interfaces de control de símbolos para [!INCLUD
 |[IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)|SP|Representa una colección de objetos [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md) .|
 |[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)|SP|Representa una colección de objetos [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) .|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Referencia de API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

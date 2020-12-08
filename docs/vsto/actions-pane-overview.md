@@ -1,5 +1,7 @@
 ---
 title: Información general del panel de acciones
+description: Obtenga información sobre cómo un panel de acciones es un panel de tareas acciones de documentos personalizables que se adjunta a un determinado Microsoft Office documento de Word o libro de Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 82bf3ac9515effaa1053a011085849f0afea67f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d03ba8968b08fb07eb2cc9c17839af57cf06eca
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986312"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844834"
 ---
 # <a name="actions-pane-overview"></a>Información general del panel de acciones
   Un panel de acciones es un panel de tareas **acciones de documentos** personalizables que se adjunta a un determinado documento de Microsoft Office Word o Microsoft Office libro de Excel. El panel acciones se hospeda dentro del panel de tareas de Office junto con otros paneles de tareas integrados, como el panel de tareas **origen XML** en Excel o el panel de tareas **estilos y formato** de Word. Puede utilizar controles de Windows Forms o WPF para diseñar la interfaz de usuario del panel de acciones.
@@ -148,7 +150,7 @@ ms.locfileid: "72986312"
  [!code-csharp[Trin_VstcoreActionsPaneWord#101](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#101)]
  [!code-vb[Trin_VstcoreActionsPaneWord#101](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#101)]
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Usar controles de WPF en soluciones de Office](../vsto/using-wpf-controls-in-office-solutions.md)
 - [Personalización de la interfaz de usuario de Office](../vsto/office-ui-customization.md)
 - [Acceso global a objetos en proyectos de Office](../vsto/global-access-to-objects-in-office-projects.md)

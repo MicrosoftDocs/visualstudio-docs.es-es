@@ -1,5 +1,7 @@
 ---
 title: Recursos adicionales para desarrollar soluciones de Office
+description: Obtenga información sobre recursos adicionales que puede usar para desarrollar extensiones para Microsoft Office aplicaciones.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8bea9faa315fbd6ec41c667836dac7216f1f8f81
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 828cd2c451e531eeecda7574b5750bc3bb7023b2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986273"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844821"
 ---
 # <a name="additional-resources-to-develop-office-solutions"></a>Recursos adicionales para desarrollar soluciones de Office
   Las herramientas de desarrollo de Microsoft Office en Visual Studio representan solamente uno de los numerosos mecanismos para extender las aplicaciones de Office. Las aplicaciones de Office también tienen algunas características integradas como, por ejemplo, los formatos XML abiertos, que no se incluyen en las herramientas de desarrollo de Office de Visual Studio ni en esta documentación.
@@ -32,5 +34,5 @@ El portal central a los últimos recursos para los desarrolladores de Office (no
 
 Área de MSDN Library donde podrá encontrar artículos y documentación de referencia sobre el desarrollo de soluciones para varias versiones de Office (no específicos del desarrollo de Office mediante Visual Studio).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Compatibilidad adicional para errores en las soluciones de Office](../vsto/additional-support-for-errors-in-office-solutions.md)

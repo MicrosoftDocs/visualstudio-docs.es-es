@@ -1,5 +1,7 @@
 ---
 title: Manifiestos de implementación para soluciones de Office
+description: Obtenga información sobre que un manifiesto de implementación es un archivo XML que describe la configuración de implementación de una solución de Office e identifica la versión de la aplicación actual.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -15,19 +17,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3540420d07bd158b19f0b078f01cfdb37ce18beb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31909d2a6765c357635cd0a8c039132f14b5967d
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547555"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845510"
 ---
 # <a name="deployment-manifests-for-office-solutions"></a>Manifiestos de implementación para soluciones de Office
   Un manifiesto de implementación es un archivo XML que describe la configuración de implementación de una solución de Office e identifica la versión de la aplicación actual.
 
  El desarrollo de Office en Visual Studio usa el [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] esquema de manifiesto de implementación definido en la referencia de [manifiesto de implementación de ClickOnce](../deployment/clickonce-deployment-manifest.md) .
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
  El archivo de manifiesto de implementación para las soluciones de Office identifica la versión actual y otras opciones de implementación. Hace referencia al manifiesto de aplicación y describe la versión actual de la solución y todos los archivos de en la solución.
 
 ## <a name="file-name-syntax"></a>Sintaxis de los nombres de archivo
@@ -183,6 +185,6 @@ ms.locfileid: "85547555"
 </asmv1:assembly>
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Manifiestos de aplicación para soluciones de Office](../vsto/application-manifests-for-office-solutions.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: Instalar ensamblados de interoperabilidad primarios de Office'
+description: Obtenga información sobre cómo instalar los ensamblados de interoperabilidad primarios (PIA) de Microsoft Office al instalar Office.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b6f90b568f98abe5026525a60723efb59f737235
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 15a55650f2e4a434343c9128cc8f28117b54288e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544786"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845887"
 ---
 # <a name="how-to-install-office-primary-interop-assemblies"></a>Cómo: Instalar ensamblados de interoperabilidad primarios de Office
   Instale los ensamblados de interoperabilidad primarios (PIA) de Microsoft Office al instalar Office.
@@ -34,8 +36,8 @@ ms.locfileid: "85544786"
     > [!WARNING]
     > De forma predeterminada, los PIA se incrustan en la solución al compilarla, por lo que no tiene que distribuir los PIA a los usuarios como requisito previo para usar el complemento o la personalización de VSTO.
 
-## <a name="see-also"></a>Consulte también
-- [ensamblados de interoperabilidad primarios de Office](../vsto/office-primary-interop-assemblies.md)
+## <a name="see-also"></a>Vea también
+- [Ensamblados de interoperabilidad primarios de Office](../vsto/office-primary-interop-assemblies.md)
 - [Cómo: dirigirse a aplicaciones de Office a través de ensamblados de interoperabilidad primarios](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
 - [Cómo: configurar un equipo para desarrollar soluciones de Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)
 - [Cómo: instalar el Visual Studio Tools para Office Runtime Redistributable](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)

@@ -1,5 +1,7 @@
 ---
 title: Paneles de tareas personalizados
+description: Obtenga información sobre cómo los paneles de tareas personalizados proporcionan una manera de crear su propio panel de tareas y proporcionar a los usuarios una interfaz conocida para tener acceso a las características de la solución.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -25,12 +27,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 361b04edf2b677c2842376bd9d8fee0d6f3bda12
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: b08e0e3bbc9f45b33ecd0248179011113db7a779
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862363"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844185"
 ---
 # <a name="custom-task-panes"></a>Paneles de tareas personalizados
   Los paneles de tareas son paneles de interfaz de usuario que normalmente están acoplados a un lado de una ventana en una aplicación de Microsoft Office. Los paneles de tareas personalizados proporcionan una manera de crear su propio panel de tareas y ofrecer a los usuarios una interfaz conocida para acceder a las características de la solución. Por ejemplo, la interfaz puede contener controles que ejecutan código para modificar documentos o mostrar datos de un origen de datos.
@@ -58,7 +60,7 @@ ms.locfileid: "91862363"
 
    Para obtener más información, consulte [Cómo: agregar un panel de tareas personalizado a una aplicación](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).
 
-### <a name="create-the-user-interface"></a>Creación de la interfaz de usuario
+### <a name="create-the-user-interface"></a>Creación de la interfaz del usuario
  Todos los paneles de tareas personalizados que se crean con las herramientas de desarrollo de Office en Visual Studio contienen un objeto <xref:System.Windows.Forms.UserControl>. Este control de usuario proporciona la interfaz de usuario de su panel de tareas personalizado. Puede crear el control de usuario en tiempo de diseño o en tiempo de ejecución. Si crea el control de usuario en tiempo de diseño, puede usar el Diseñador de Windows Forms para construir la interfaz de usuario de su panel de tareas.
 
 ### <a name="instantiate-the-custom-task-pane"></a>Crear una instancia del panel de tareas personalizado

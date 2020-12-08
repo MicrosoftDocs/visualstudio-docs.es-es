@@ -1,5 +1,7 @@
 ---
 title: Agregar imágenes y dibujos de Word a documentos mediante programación
+description: Obtenga información sobre cómo puede Agregar imágenes y objetos de dibujo a los documentos en tiempo de diseño o en tiempo de ejecución.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e73473229a35bebb99eac03963fb43f880a39903
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 0662c9324aaab8f5a368bc4db300ccff1a0ece33
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585397"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844054"
 ---
 # <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>Cómo: agregar imágenes y dibujos de Word a documentos mediante programación
   Puede agregar imágenes y objetos de dibujo a los documentos en tiempo de diseño o en tiempo de ejecución. WordArt permite agregar texto decorativo a documentos de Microsoft Office Word. Estos efectos de texto especiales son objetos de dibujo que se pueden personalizar e insertar en el documento.
@@ -63,7 +65,7 @@ ms.locfileid: "91585397"
 
 2. Haga clic en la pestaña **Insertar** de la cinta de opciones.
 
-3. En el grupo **texto** , haga clic en **WordArt**y, a continuación, seleccione un estilo de WordArt.
+3. En el grupo **texto** , haga clic en **WordArt** y, a continuación, seleccione un estilo de WordArt.
 
 4. Agregue el texto que desea que aparezca en el documento al cuadro de diálogo **editar texto de WordArt** y haga clic en **Aceptar**.
 

@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: almacenar datos en caché en un documento protegido mediante contraseña'
+description: Sepa que si agrega datos a la memoria caché de datos en un documento o libro protegido con una contraseña, puede guardar los cambios en los datos almacenados en caché invalidando dos métodos en el proyecto.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 12b04b985d54161343d26cdd32178b67bd6e6b91
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2a11b70da4bdd2500f70d2b45f025340af21ea94
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547243"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846004"
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>Cómo: almacenar datos en caché en un documento protegido mediante contraseña
   Si agrega datos a la memoria caché de datos en un documento o libro protegido con una contraseña, los cambios en los datos almacenados en caché no se guardan automáticamente. Puede guardar los cambios en los datos almacenados en caché invalidando dos métodos en el proyecto.
@@ -73,7 +75,7 @@ ms.locfileid: "85547243"
 ### <a name="compile-the-code"></a>Compilar el código
  Agregue este código a la `ThisWorkbook` clase en el proyecto. En este código se supone que la contraseña se almacena en un campo denominado `securelyStoredPassword` .
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Datos de caché](../vsto/caching-data.md)
 - [Cómo: almacenar datos en caché para su uso sin conexión o en un servidor](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)
 - [Cómo: almacenar en caché un origen de datos en un documento de Office mediante programación](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)

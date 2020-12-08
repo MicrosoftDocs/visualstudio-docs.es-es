@@ -1,7 +1,8 @@
 ---
 title: 'Cómo: crear proyectos de Office en Visual Studio'
+description: Obtenga información sobre cómo puede usar Visual Studio para crear complementos de VSTO y personalizaciones de nivel de documento para aplicaciones Microsoft Office.
 titleSuffix: ''
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -23,12 +24,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c70668f2d4cb9597e00a7e3848b78b9f2ed49db7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 652b7676ddf5d7e095010e711ab0dabc5b5f2ab7
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547568"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844379"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>Cómo: crear proyectos de Office en Visual Studio
   Puede usar [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] para crear complementos de VSTO y personalizaciones de nivel de documento para aplicaciones Microsoft Office. Para obtener más información acerca de estos tipos de proyectos, vea [información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -159,7 +160,7 @@ ms.locfileid: "85547568"
 
      Para obtener más información sobre cómo agregar un documento a las ubicaciones de confianza, vea el sitio web en línea de Microsoft Office [crear, quitar o cambiar una ubicación de confianza para los archivos](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Información general de plantillas de proyecto de Office](../vsto/office-project-templates-overview.md)
 - [Desarrollo en colaboración de las soluciones de Office](../vsto/collaborative-development-of-office-solutions.md)
 - [Diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md)

@@ -1,5 +1,7 @@
 ---
 title: Almacenar en caché el origen de datos en el documento de Office mediante programación
+description: Obtenga información sobre cómo puede Agregar un objeto de datos a la memoria caché de datos en un documento mediante programación llamando al método StartCaching de un elemento host.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8ec3a38d109de561e3cba77951764dd8dd9479df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c0b739a7671f19b126b0566dfc8f4775a2c91063
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544773"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845018"
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>Cómo: almacenar en caché un origen de datos en un documento de Office mediante programación
   Puede agregar mediante programación un objeto de datos a la memoria caché de datos en un documento llamando al `StartCaching` método de un elemento host, como <xref:Microsoft.Office.Tools.Word.Document> , <xref:Microsoft.Office.Tools.Excel.Workbook> o <xref:Microsoft.Office.Tools.Excel.Worksheet> . Quite un objeto de datos de la memoria caché de datos llamando al `StopCaching` método de un elemento host.
