@@ -1,5 +1,7 @@
 ---
 title: Combinar personalizaciones de VBA y de nivel de documento
+description: Obtenga información sobre cómo puede usar el código de Visual Basic para Aplicaciones (VBA) en un documento que forma parte de una personalización de nivel de documento para Microsoft Office Word o Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -24,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b3bab9c132439c6efa53842f1e13c6c5be31db00
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 59d0e9122bf35ac6f40799d91d3b52614d027f50
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "70977597"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846407"
 ---
 # <a name="combine-vba-and-document-level-customizations"></a>Combinar personalizaciones de VBA y de nivel de documento
   Puede utilizar código de Visual Basic para Aplicaciones (VBA) en un documento que forme parte de una personalización de nivel de documento de Microsoft Office Word o Microsoft Office Excel. Puede llamar a código VBA del documento desde el ensamblado de personalización o puede configurar el proyecto de modo que permita que el código VBA del documento llame a código del ensamblado de personalización.
@@ -42,7 +44,7 @@ ms.locfileid: "70977597"
  Al ejecutar la solución, los controladores de eventos de VBA y el ensamblado de personalización recopilan los eventos que se producen en el documento y ambos conjuntos de código se ejecutan. No se puede determinar de antemano qué código se ejecutará antes que el otro; se debe determinar mediante pruebas en cada caso individual. Puede obtener resultados inesperados si los dos conjuntos de código no se han coordinado y probado cuidadosamente.
 
 ## <a name="call-vba-code-from-the-customization-assembly"></a>Llamar a código VBA desde el ensamblado de personalización
- Puede llamar a macros en documentos de Word y a funciones y macros en libros de Excel. Para ello, use uno de los siguientes métodos:
+ Puede llamar a macros en documentos de Word y a funciones y macros en libros de Excel. Para ello, use uno de estos métodos:
 
 - En Word, llame al <xref:Microsoft.Office.Interop.Word._Application.Run%2A> método de la <xref:Microsoft.Office.Interop.Word.Application> clase.
 
@@ -90,7 +92,7 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 
   - En Word: *. docm* o *. doc*
 
-  - Para Excel: *. xlsm*, *. xltm*, *. xls*o *. xlt*
+  - Para Excel: *. xlsm*, *. xltm*, *. xls* o *. xlt*
 
 - El documento ya debe contener un proyecto de VBA con código VBA.
 
@@ -247,9 +249,9 @@ GetManagedClass(pdispInteropObject Object) As Object
 |Después de establecer la propiedad **EnableVbaCallers** o **ReferenceAssemblyFromVbaProject** , un mensaje de error indica que el documento no contiene un proyecto de VBA o que no tiene permiso de acceso al proyecto de VBA en el documento.|Asegúrese de que el documento del proyecto contenga al menos una macro VBA, de que el proyecto de VBA tenga la confianza suficiente para ejecutarse y de que el proyecto de VBA no esté protegido mediante contraseña.|
 |Después de establecer la propiedad **EnableVbaCallers** o **ReferenceAssemblyFromVbaProject** , un mensaje de error indica que falta la declaración <xref:System.Runtime.InteropServices.GuidAttribute> o está dañada.|Asegúrese de que la <xref:System.Runtime.InteropServices.GuidAttribute> declaración se encuentre en el archivo *AssemblyInfo.CS* o *AssemblyInfo. VB* del proyecto y que este atributo esté establecido en un GUID válido.|
 |Después de establecer la propiedad **EnableVbaCallers** o **ReferenceAssemblyFromVbaProject** , un mensaje de error indica que el número de versión especificado por el <xref:System.Reflection.AssemblyVersionAttribute> no es válido.|Asegúrese de que la <xref:System.Reflection.AssemblyVersionAttribute> declaración del archivo *AssemblyInfo.CS* o *AssemblyInfo. VB* del proyecto esté establecida en un número de versión de ensamblado válido. Para obtener información sobre los números de versión de ensamblado válidos, vea la clase <xref:System.Reflection.AssemblyVersionAttribute> .|
-|Después de cambiar el nombre del ensamblado de personalización, el código VBA que llama al ensamblado de personalización deja de funcionar.|Si cambia el nombre del ensamblado de personalización después exponerlo a código VBA, se rompe el vínculo entre el proyecto de VBA del documento y el ensamblado de personalización. Para corregir este problema, cambie la propiedad **ReferenceFromVbaAssembly** del proyecto a **False** y luego de nuevo a **True**y, a continuación, reemplace cualquier referencia al antiguo nombre del ensamblado del código VBA por el nuevo nombre del ensamblado.|
+|Después de cambiar el nombre del ensamblado de personalización, el código VBA que llama al ensamblado de personalización deja de funcionar.|Si cambia el nombre del ensamblado de personalización después exponerlo a código VBA, se rompe el vínculo entre el proyecto de VBA del documento y el ensamblado de personalización. Para corregir este problema, cambie la propiedad **ReferenceFromVbaAssembly** del proyecto a **False** y luego de nuevo a **True** y, a continuación, reemplace cualquier referencia al antiguo nombre del ensamblado del código VBA por el nuevo nombre del ensamblado.|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Cómo: exponer código a VBA en un proyecto de Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)
 - [Cómo: exponer código a VBA en un proyecto de&#35; de Visual C](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)
 - [Tutorial: llamar a código desde VBA en un proyecto de Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)

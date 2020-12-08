@@ -1,5 +1,7 @@
 ---
 title: Compilar soluciones de Office
+description: Obtenga información sobre las diferencias entre compilar y depurar proyectos de Office y compilar y depurar otros tipos de proyectos en Visual Studio, como Windows Forms.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -26,12 +28,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3f89e20b710584c678c035f4d85034e90bb11323
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d942a7818c3c71e0859c9271b329688734682f2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "69551849"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847941"
 ---
 # <a name="build-office-solutions"></a>Compilar soluciones de Office
   En general, compilar y depurar proyectos de Office se hace de la misma manera que al compilar y depurar otros tipos de proyectos en Visual Studio, como Windows Forms. Los temas de esta sección explican las diferencias que existen entre ellos. Para obtener información general sobre cómo compilar aplicaciones, consulte [compilar y compilar en Visual Studio](../ide/compiling-and-building-in-visual-studio.md).
@@ -79,7 +81,7 @@ ms.locfileid: "69551849"
   Outlook necesita esta información para cargar las áreas de formulario.
 
 ## <a name="referenced-assemblies"></a>Ensamblados a los que se hace referencia
- Puede hacer referencia a los ensamblados (incluidos los proyectos de biblioteca de clases), desde el proyecto Compilar soluciones de Office. Todos los ensamblados a los que se hace referencia incluyen una propiedad llamada **Copia local**. La propiedad**Copia local** indica si el ensamblado se debe copiar en el directorio de resultados. De forma predeterminada, se establece en **true**. Todos los ensamblados a los que se haga referencia y que tengan la propiedad **Copia local** establecida en **true** se copiarán en el directorio de resultados.
+ Puede hacer referencia a los ensamblados (incluidos los proyectos de biblioteca de clases), desde el proyecto Compilar soluciones de Office. Todos los ensamblados a los que se hace referencia incluyen una propiedad llamada **Copia local**. La propiedad **Copia local** indica si el ensamblado se debe copiar en el directorio de resultados. De forma predeterminada, se establece en **true**. Todos los ensamblados a los que se haga referencia y que tengan la propiedad **Copia local** establecida en **true** se copiarán en el directorio de resultados.
 
 ## <a name="security-during-the-build-process"></a>Seguridad durante el proceso de compilación
  Visual Studio establece automáticamente la configuración de seguridad del equipo de desarrollo para hacer que la solución sea fiable durante el proceso de compilación. Esto permite ejecutar la solución mientras se depura.

@@ -1,5 +1,7 @@
 ---
 title: Registro de eventos para soluciones de Office
+description: Obtenga información sobre cómo puede usar el visor de eventos de Windows para ver los mensajes de excepción capturados por la Visual Studio Tools para Office Runtime.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 480a355ee2af321341c54b90edcc582d49102186
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 74aaf7c1c07c349fa3669332a41e4e7d06ba86f1
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62951949"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847772"
 ---
 # <a name="event-logging-for-office-solutions"></a>Registro de eventos para soluciones de Office
   Puede usar el visor de eventos en Windows para ver todos los mensajes de excepción capturados por [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , cuando instale o desinstale soluciones de Office. Puede usar estos mensajes desde el registrador de eventos para resolver los problemas de instalación e implementación.

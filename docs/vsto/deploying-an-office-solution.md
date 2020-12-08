@@ -1,5 +1,7 @@
 ---
 title: Implementar una solución de Office
+description: Puede implementar soluciones de Office mediante ClickOnce o Windows Installer. Con ClickOnce, se reduce el número de pasos que requiere la implementación de la solución.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 24ec10c42935ac961218f910fbef98d51f5f5569
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e10e922e346dc2ff1d289de94b398b7afd8f3f18
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79416515"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846316"
 ---
 # <a name="deploy-an-office-solution"></a>Implementar una solución de Office
   Puede implementar soluciones de Office mediante ClickOnce o Windows Installer. Si usa ClickOnce, se reducirá el número de pasos que requiere la implementación y actualización de la solución. Si utiliza Windows Installer, obtendrá control sobre cómo se instala la solución y qué páginas muestra el programa de instalación cuando los usuarios instalan la solución.

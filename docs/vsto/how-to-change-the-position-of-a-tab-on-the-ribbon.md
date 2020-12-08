@@ -1,5 +1,7 @@
 ---
 title: Cómo cambiar la posición de una pestaña en la cinta de opciones
+description: Puede cambiar el orden de las pestañas personalizadas en una cinta de opciones y colocar las pestañas personalizadas antes o después de una pestaña integrada en la cinta de opciones mediante el editor de la colección de pestañas.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8f821ea2a469fc06f80a7aaea96d07274d02a81d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 21fd7f17f7a990f95ce5c8b781e85807a10608c4
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544864"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846771"
 ---
 # <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>Cómo cambiar la posición de una pestaña en la cinta de opciones
   Puede cambiar el orden de las pestañas personalizadas en una cinta de opciones mediante el editor de la **colección de pestañas**. Puede colocar las pestañas personalizadas antes o después de una pestaña integrada en la cinta de opciones. Una pestaña integrada es una pestaña que ya está en la cinta de opciones de una aplicación Microsoft Office. Por ejemplo, la pestaña **datos** es una pestaña integrada en Excel.
@@ -56,9 +58,9 @@ ms.locfileid: "85544864"
 
      Para obtener una lista de identificadores de control, consulte [archivos de ayuda de office 2010: identificadores de control de la interfaz de usuario de Office Fluent](https://www.microsoft.com/download/details.aspx?id=6627).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Información general sobre la cinta](../vsto/ribbon-overview.md)
-- [Diseñador de la cinta](../vsto/ribbon-designer.md)
+- [Diseñador de la cinta de opciones](../vsto/ribbon-designer.md)
 - [Ribbon XML](../vsto/ribbon-xml.md)
 - [Tutorial: crear una pestaña personalizada mediante el diseñador de la cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
 - [Tutorial: crear una pestaña personalizada usando XML de la cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)

@@ -1,5 +1,7 @@
 ---
 title: Extender documentos de Word & libros de Excel en complementos de VSTO en tiempo de ejecución
+description: Obtenga información acerca de cómo puede usar un complemento de VSTO para personalizar documentos de Word y libros de Excel de diversas maneras.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e2227aa2db4943ab132a8b2e2f9fc3a6f0ec4096
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 4686b2cd3a3ca5d4be7eefee9881039b9914a9b8
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585450"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847836"
 ---
 # <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time"></a>Ampliar documentos de Word y libros de Excel en complementos de VSTO en tiempo de ejecución
   Puede utilizar un complemento de VSTO para personalizar documentos de Word y libros de Excel de las maneras siguientes:
@@ -40,7 +42,7 @@ ms.locfileid: "91585450"
   **Se aplica a:** La información de este artículo se aplica a los proyectos de complemento de VSTO para las siguientes aplicaciones: Excel y Word. Para obtener más información, consulte [características disponibles por aplicación y tipo de proyecto de Office](../vsto/features-available-by-office-application-and-project-type.md).
 
 ## <a name="generate-extended-objects-in-vsto-add-ins"></a>Generar objetos extendidos en complementos de VSTO
- Los*objetos extendidos* son instancias de tipos proporcionados por el runtime de Visual Studio Tools para Office que agregan funcionalidad a los objetos ya existentes de forma nativa en los modelos de objetos de Word o Excel (denominados *objetos nativos de Office*). Para generar un objeto extendido para un objeto de Word o Excel, use el método `GetVstoObject`. La primera vez que se llama al `GetVstoObject` método para un objeto de Word o Excel especificado, devuelve un nuevo objeto que extiende el objeto especificado. Cada vez que llame al método y especifique el mismo objeto de Word o Excel, devuelve el mismo objeto extendido.
+ Los *objetos extendidos* son instancias de tipos proporcionados por el runtime de Visual Studio Tools para Office que agregan funcionalidad a los objetos ya existentes de forma nativa en los modelos de objetos de Word o Excel (denominados *objetos nativos de Office*). Para generar un objeto extendido para un objeto de Word o Excel, use el método `GetVstoObject`. La primera vez que se llama al `GetVstoObject` método para un objeto de Word o Excel especificado, devuelve un nuevo objeto que extiende el objeto especificado. Cada vez que llame al método y especifique el mismo objeto de Word o Excel, devuelve el mismo objeto extendido.
 
  El tipo del objeto extendido tiene el mismo nombre que el tipo del objeto nativo de Office, pero este tipo está definido en el espacio de nombres <xref:Microsoft.Office.Tools.Excel> o <xref:Microsoft.Office.Tools.Word> . Por ejemplo, si se llama a la `GetVstoObject` método para extender un objeto <xref:Microsoft.Office.Interop.Word.Document>, el método devuelve un objeto <xref:Microsoft.Office.Tools.Word.Document>.
 

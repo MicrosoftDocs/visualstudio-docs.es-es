@@ -1,5 +1,7 @@
 ---
 title: Implementar una solución de VSTO con Windows Installer
+description: Aprenda a implementar un complemento de Microsoft Visual Studio Tools para Office (VSTO) o una solución de nivel de documento mediante un proyecto de Instalador de Visual Studio.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 08/18/2010
 ms.topic: conceptual
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a6fd2824ae10ad36a7ed50250620e98575e9ea60
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: e49705c99801cd6e09f4bf6d9be3c411cc2c53e3
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585698"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846550"
 ---
 # <a name="deploying-a-vsto-solution-using-windows-installer"></a>Implementar una solución de VSTO con Windows Installer
 
@@ -156,8 +158,8 @@ El proyecto de instalación debe implementar el manifiesto de implementación y 
 
 ### <a name="to-add-the-deployment-and-application-manifests"></a>Para agregar los manifiestos de implementación y de aplicación
 
-1. En el **Explorador de soluciones**, haga clic con el botón secundario en **OfficeAddInSetup**, haga clic en **Agregar**y, a continuación, en **archivo**.
-2. En el cuadro de diálogo **Agregar archivos** , navegue hasta el directorio de salida de **ExcelAddIn** . Normalmente, el directorio de salida es la subcarpeta de ** \\ versión bin** del directorio raíz del proyecto, según la configuración de compilación seleccionada.
+1. En el **Explorador de soluciones**, haga clic con el botón secundario en **OfficeAddInSetup**, haga clic en **Agregar** y, a continuación, en **archivo**.
+2. En el cuadro de diálogo **Agregar archivos** , navegue hasta el directorio de salida de **ExcelAddIn** . Normalmente, el directorio de salida es la subcarpeta de **\\ versión bin** del directorio raíz del proyecto, según la configuración de compilación seleccionada.
 3. Seleccione los archivos **ExcelAddIn. VSTO** y **ExcelAddIn.dll. manifest** y haga clic en **abrir** para agregar estos dos archivos al proyecto de instalación.
 
     ![Captura de pantalla de los manifiestos de aplicación e implementación en Explorador de soluciones](media/setup-project-figure-3.jpg)
@@ -168,7 +170,7 @@ La referencia a ExcelAddIn incluye todos los componentes que requiere ExcelAddIn
 
 ### <a name="to-exclude-the-exceladdin-project-dependencies"></a>Para excluir las dependencias del proyecto ExcelAddIn
 
-1. En el **Explorador de soluciones**, en el **nodo OfficeAddInSetup** , seleccione todos los elementos de dependencia debajo del elemento **dependencias detectadas** , excepto **Microsoft .NET Framework** o cualquier ensamblado que termine con ** \*.Utilities.dll**. Los ensamblados de utilidades están diseñados para implementarse junto con la aplicación.
+1. En el **Explorador de soluciones**, en el **nodo OfficeAddInSetup** , seleccione todos los elementos de dependencia debajo del elemento **dependencias detectadas** , excepto **Microsoft .NET Framework** o cualquier ensamblado que termine con **\*.Utilities.dll**. Los ensamblados de utilidades están diseñados para implementarse junto con la aplicación.
 2. Haga clic con el botón secundario en el grupo y seleccione **propiedades**.
 3. En la ventana **propiedades** , cambie la propiedad **Exclude** a **true** para excluir los ensamblados dependientes del proyecto de instalación. Asegúrese de no excluir los ensamblados de utilidades.
 
@@ -205,9 +207,9 @@ Microsoft Office busca complementos mediante claves del registro. Las claves del
 2. Expanda **vista**.
 3. Haga clic en **registro** para abrir la ventana del editor del registro.
 4. En el editor **del registro (OfficeAddInSetup)** , expanda **HKEY \_ local \_ Machine** y **software**.
-5. Elimine la clave ** \[ manufacturer \] **? que se encuentra en **HKEY \_ local \_ Machine \\ software**.
+5. Elimine la clave **\[ manufacturer \]**? que se encuentra en **HKEY \_ local \_ Machine \\ software**.
 6. Expanda **HKEY \_ Current \_ User** y, a continuación, **software**.
-7. Elimine la clave ** \[ del fabricante \] ** que se encuentra en **HKEY \_ Current \_ User \\ software**.
+7. Elimine la clave **\[ del fabricante \]** que se encuentra en **HKEY \_ Current \_ User \\ software**.
 8. Para agregar las claves del registro para la instalación del complemento, haga clic con el botón secundario en la clave de **Hive usuario/equipo** , seleccione **nueva clave**. Use el **software** de texto como nombre de la nueva clave. Haga clic con el botón secundario en la clave de **software** recién creada y cree una nueva clave con el texto **Microsoft**.
 9. Use un proceso similar para crear la jerarquía de claves completa necesaria para el registro del complemento:
 
@@ -215,7 +217,7 @@ Microsoft Office busca complementos mediante claves del registro. Las claves del
 
     El nombre de la compañía se usa a menudo como prefijo del nombre del complemento para proporcionar exclusividad.
 
-10. Haga clic con el botón secundario en la clave **clave samplecompany. ExcelAddIn** , seleccione **nuevo**y haga clic en **valor de cadena**. Use la **Descripción** de texto para el nombre.
+10. Haga clic con el botón secundario en la clave **clave samplecompany. ExcelAddIn** , seleccione **nuevo** y haga clic en **valor de cadena**. Use la **Descripción** de texto para el nombre.
 11. Use este paso para agregar tres valores más:
     - **FriendlyName** de tipo **cadena**
     - **LoadBehavior** de tipo **DWORD**
@@ -255,7 +257,7 @@ Si el paquete MSI se usa para instalar el complemento o la solución, puede inst
 1. En el **Explorador de soluciones**, haga clic con el botón secundario en **OfficeAddInSetup**.
 2. Expanda **vista**.
 3. Haga clic en **condiciones de inicio**.
-4. En el editor de **condiciones de inicio (OfficeAddInSetup)** , haga clic con el botón secundario en **requisitos en el equipo de destino**y, a continuación, haga clic en **Agregar condición de inicio del registro**. Esta condición de búsqueda puede buscar en el registro una clave que instale el tiempo de ejecución de VSTO. A continuación, el valor de la clave está disponible para las distintas partes del instalador a través de una propiedad con nombre. La condición de inicio utiliza la propiedad definida por la condición de búsqueda para comprobar un determinado valor.
+4. En el editor de **condiciones de inicio (OfficeAddInSetup)** , haga clic con el botón secundario en **requisitos en el equipo de destino** y, a continuación, haga clic en **Agregar condición de inicio del registro**. Esta condición de búsqueda puede buscar en el registro una clave que instale el tiempo de ejecución de VSTO. A continuación, el valor de la clave está disponible para las distintas partes del instalador a través de una propiedad con nombre. La condición de inicio utiliza la propiedad definida por la condición de búsqueda para comprobar un determinado valor.
 5. En el editor de **condiciones de inicio (OfficeAddInSetup)** , seleccione la condición **de búsqueda Buscar RegistryEntry1** , haga clic con el botón derecho en la condición y seleccione **ventana Propiedades**.
 
 6. En la ventana **Propiedades** , establezca estas propiedades:
@@ -280,7 +282,7 @@ Si el paquete MSI se usa para instalar el complemento o la solución, puede inst
 
 ### <a name="configure-a-launch-condition-to-detect-the-vsto-runtime-installed-by-office"></a>Configurar una condición de inicio para detectar el tiempo de ejecución de VSTO instalado por Office
 
-1. En el editor de **condiciones de inicio (OfficeAddInSetup)** , haga clic con el botón secundario en **equipo de destino de búsqueda**y, a continuación, haga clic en **Agregar búsqueda de registro**.
+1. En el editor de **condiciones de inicio (OfficeAddInSetup)** , haga clic con el botón secundario en **equipo de destino de búsqueda** y, a continuación, haga clic en **Agregar búsqueda de registro**.
 2. Seleccione la condición **de búsqueda Buscar RegistryEntry1** , haga clic con el botón derecho en la condición y seleccione **ventana Propiedades**.
 3. En la ventana **Propiedades** , establezca estas propiedades:
     1. Establezca el valor de **(nombre)** para **Buscar el tiempo de ejecución de VSTO de Office**.
@@ -312,7 +314,7 @@ Para obtener más información, vea [equivalencia de tipos y tipos de interopera
 
 ### <a name="to-configure-launch-conditions-to-detect-that-for-office-pias"></a>Para configurar condiciones de inicio para detectar que para los PIA de Office
 
-1. En el editor de **condiciones de inicio (OfficeAddInSetup)** , haga clic con el botón secundario en **requisitos en el equipo de destino**y, a continuación, **haga clic en agregar Windows Installer condición de inicio**. Esta condición de inicio busca un PIA de Office buscando el identificador de componente específico.
+1. En el editor de **condiciones de inicio (OfficeAddInSetup)** , haga clic con el botón secundario en **requisitos en el equipo de destino** y, a continuación, **haga clic en agregar Windows Installer condición de inicio**. Esta condición de inicio busca un PIA de Office buscando el identificador de componente específico.
 2. Haga clic con el botón derecho en **Buscar Component1** y haga clic en **ventana Propiedades** para mostrar las propiedades de la condición de inicio.
 3. En la **ventana Propiedades**, establezca estas propiedades:
 
@@ -347,7 +349,7 @@ Para obtener más información, vea [equivalencia de tipos y tipos de interopera
 |Microsoft Graph|{011B9112-EBB1-4A6C-86CB-C2FDC9EA7B0E}|{52DA4B37-B8EB-4B7F-89C1-824654CE4C70}|{24706F33-F0CE-4EB4-BC91-9E935394F510}|-|-|
 |Etiqueta inteligente|{7102C98C-EF47-4F04-A227-FE33650BF954}|{487A7921-EB3A-4262-BB5B-A5736B732486}|{74EFC1F9-747D-4867-B951-EFCF29F51AF7}|-|-|
 |Office compartido|{64E2917E-AA13-4CA4-BFFE-EA6EDA3AFCB4}|{6A174BDB-0049-4D1C-86EF-3114CB0C4C4E}|{76601EBB-44A7-49EE-8DE3-7B7B9D7EBB05}|{625F5772-C1B3-497E-8ABE-7254EDB00506}|{625F5772-C1B3-497E-8ABE-7254EDB00506}|
-|Project|{957A4EC0-E67B-4E86-A383-6AF7270B216A}|{1C50E422-24FA-44A9-A120-E88280C8C341}|{706D7F44-8231-489D-9B25-3025ADE9F114}|{107BCD9A-F1DC-4004-A444-33706FC10058}|{107BCD9A-F1DC-4004-A444-33706FC10058}|
+|Proyecto|{957A4EC0-E67B-4E86-A383-6AF7270B216A}|{1C50E422-24FA-44A9-A120-E88280C8C341}|{706D7F44-8231-489D-9B25-3025ADE9F114}|{107BCD9A-F1DC-4004-A444-33706FC10058}|{107BCD9A-F1DC-4004-A444-33706FC10058}|
 
   ![Captura de pantalla de las condiciones de inicio finales](media/setup-project-figure-11.jpg)
 

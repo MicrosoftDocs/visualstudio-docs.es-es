@@ -1,5 +1,7 @@
 ---
 title: Implementación de ejemplo de evaluación de expresiones | Microsoft Docs
+description: Obtenga información sobre cómo Visual Studio llama a ParseText para generar un objeto IDebugExpression2 para una expresión de inspección de ventanas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf994a61ed9283463cd01aa468018f6acce5e209
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba5baf52f18f638730ecc5f3b7c016889503cbbb
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713096"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847707"
 ---
 # <a name="sample-implementation-of-expression-evaluation"></a>Implementación de ejemplo de evaluación de expresiones
 > [!IMPORTANT]
@@ -107,6 +109,6 @@ STDMETHODIMP CExpressionEvaluator::Parse(
 }
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Evaluar una expresión de ventana Inspección](../../extensibility/debugger/evaluating-a-watch-window-expression.md)
 - [Evaluación de una expresión de inspección](../../extensibility/debugger/evaluating-a-watch-expression.md)

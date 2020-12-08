@@ -1,5 +1,7 @@
 ---
 title: Implementación de ejemplo de cambios de valores | Microsoft Docs
+description: Cada local que se muestra en la ventana variables locales tiene asociado un objeto IDebugProperty2. Obtenga información sobre cómo Visual Studio actualiza el valor de la memoria local.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d7b712d2a97b02bed215c4996d3309341fb8ff9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5193fd07c1a891f052814446815bfbc836c6a9a7
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713114"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847733"
 ---
 # <a name="sample-implementation-of-changing-values"></a>Implementación de ejemplo de cambios de valores
 > [!IMPORTANT]

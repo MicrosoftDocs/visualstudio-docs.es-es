@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: agregar controles de Windows Forms a documentos de Office'
+description: Obtenga información sobre cómo puede Agregar controles de Windows Forms para Microsoft Office Excel y Microsoft Office documentos de Word en tiempo de diseño en proyectos de nivel de documento.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b12d51ffe3a2e647a067b95d320e8beb70cac384
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a8f073a72db1a18574dff6ab060b1ea069475fbb
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547542"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846784"
 ---
 # <a name="how-to-add-windows-forms-controls-to-office-documents"></a>Cómo: agregar controles Windows Forms a documentos de Office
   Puede agregar controles de Windows Forms a documentos de Microsoft Office Excel y Microsoft Office Word en tiempo de diseño en proyectos de nivel de documento. En tiempo de ejecución, puede Agregar controles en las personalizaciones de nivel de documento y en los complementos de VSTO. Por ejemplo, puede Agregar un <xref:Microsoft.Office.Tools.Excel.Controls.ComboBox> control a la hoja de cálculo para que los usuarios puedan seleccionarlo en una lista de opciones.
@@ -130,7 +132,7 @@ ms.locfileid: "85547542"
      [!code-vb[Trin_WordAddInDynamicControls#7](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#7)]
      [!code-csharp[Trin_WordAddInDynamicControls#7](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#7)]
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Información general sobre los controles de Windows Forms en documentos de Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
 - [Agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [Cómo: cambiar el tamaño de los controles dentro de las celdas de la hoja de cálculo](../vsto/how-to-resize-controls-within-worksheet-cells.md)

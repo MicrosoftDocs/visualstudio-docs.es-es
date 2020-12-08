@@ -1,5 +1,7 @@
 ---
 title: Crear áreas de formulario de Outlook
+description: Obtenga información sobre cómo puede usar las áreas de formulario para personalizar los formularios de Microsoft Outlook para facilitar el diseño, el desarrollo y la depuración de áreas de formulario.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8a999ca11427533690628fb92f28e93d22cf0971
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f3273c02416cac54dfd244ba4f163fb5d726413c
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255915"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847967"
 ---
 # <a name="create-outlook-form-regions"></a>Crear áreas de formulario de Outlook
   Puede usar las áreas de formulario para personalizar los formularios de Microsoft Office Outlook. Visual Studio proporciona herramientas avanzadas que facilitan el diseño, el desarrollo y la depuración de las áreas de formulario.
@@ -73,7 +75,7 @@ ms.locfileid: "71255915"
 |-----------------|-----------------|
 |Independiente|Agrega el área de formulario como una página nueva en un formulario de Outlook.|
 |Adyacente|Anexa el área de formulario a la parte inferior de la página predeterminada de un formulario de Outlook.|
-|Sustituta|Agrega el área de formulario como una página nueva que reemplaza la página predeterminada de un formulario de Outlook.|
+|Replacement|Agrega el área de formulario como una página nueva que reemplaza la página predeterminada de un formulario de Outlook.|
 |Reemplazar todo|Reemplaza todo el formulario de Outlook por el área de formulario.|
 
  También puede usar el asistente para especificar las condiciones de presentación y seleccionar el tipo de formulario que se va a extender. Para obtener más información, vea [Cómo: agregar un área de formulario a un proyecto de complemento de Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).

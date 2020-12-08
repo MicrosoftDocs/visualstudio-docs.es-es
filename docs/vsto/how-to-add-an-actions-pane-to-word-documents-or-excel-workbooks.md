@@ -1,5 +1,7 @@
 ---
 title: Agregar el panel de acciones a documentos de Word o libros de Excel
+description: Obtenga información acerca de cómo agregar un panel de acciones a un documento de Microsoft Office Word o a un libro de Microsoft Excel, primero debe crear un control de usuario Windows Forms.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2d24ec3a17c9e0824c6b7aaffeaaac02c1c4f76e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 69d675209f2a3ac47e8681da8fca73c5cd86e95d
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546229"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848071"
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>Cómo: Agregar un panel de acciones a documentos de Word o libros de Excel
   Para agregar un panel de acciones a un documento de Microsoft Office Word o a un libro de Microsoft Excel, primero debe crear un control de usuario Windows Forms. A continuación, agregue el control de usuario a la <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> propiedad del `ThisDocument.ActionsPane` campo (Word) o el `ThisWorkbook.ActionsPane` campo (Excel) del proyecto.
@@ -39,7 +41,7 @@ ms.locfileid: "85546229"
 
 2. En el menú **Proyecto** , haga clic en **Agregar nuevo elemento**.
 
-3. En el cuadro de diálogo **Agregar nuevo elemento** , seleccione **control del panel de acciones**, asígnele el nombre **HelloControl**y haga clic en **Agregar**.
+3. En el cuadro de diálogo **Agregar nuevo elemento** , seleccione **control del panel de acciones**, asígnele el nombre **HelloControl** y haga clic en **Agregar**.
 
     > [!NOTE]
     > También puede Agregar un elemento de **control de usuario** a su proyecto. Las clases generadas por el **control del panel de acciones** y los elementos de control de **usuario** son funcionalmente equivalentes.

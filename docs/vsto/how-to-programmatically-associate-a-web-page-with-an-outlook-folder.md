@@ -1,5 +1,7 @@
 ---
 title: Asociar una página web a una carpeta de Outlook
+description: Obtenga información sobre cómo puede asociar una página web con Microsoft Office carpeta de Outlook. En este ejemplo se comprueba si hay una carpeta denominada HtmlView en Outlook.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 35eb2dc3b1b595a4bf960af67ac5006cd9839c6e
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: e4c2ee5e6494023ee3d5bca97f96ad3c8fe35517
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585345"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847512"
 ---
 # <a name="associate-a-web-page-with-an-outlook-folder"></a>Asociar una página web a una carpeta de Outlook
 

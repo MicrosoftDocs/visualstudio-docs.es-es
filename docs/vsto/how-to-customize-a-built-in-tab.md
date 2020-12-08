@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: personalizar una pestaña integrada'
+description: Obtenga información sobre cómo puede agregar grupos y controles a una pestaña integrada. Una pestaña integrada es una pestaña que ya está en la cinta de opciones de una aplicación Microsoft Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5f73ec7a8555a5e5d569d4316ca619747550bf11
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ac002b4c9ebacaf9cb522b583d6c4c9580b7bf2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547191"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846641"
 ---
 # <a name="how-to-customize-a-built-in-tab"></a>Cómo: personalizar una pestaña integrada
   Puede agregar grupos y controles a una pestaña integrada. Una pestaña integrada es una pestaña que ya está en la cinta de opciones de una aplicación Microsoft Office. Por ejemplo, la pestaña **datos** es una pestaña integrada en Excel. Al crear un grupo personalizado, este aparece al final de la pestaña, pero puede colocarlo en la parte que quiera de la pestaña.
@@ -30,7 +32,7 @@ ms.locfileid: "85547191"
 
 ### <a name="to-add-groups-to-a-built-in-tab"></a>Para agregar grupos a una pestaña integrada
 
-1. Haga clic con el botón secundario en el archivo de código de la cinta de **Explorador de soluciones**y, a continuación, haga clic en **Ver diseñador**.
+1. Haga clic con el botón secundario en el archivo de código de la cinta de **Explorador de soluciones** y, a continuación, haga clic en **Ver diseñador**.
 
     > [!NOTE]
     > Si el archivo de código de la cinta de opciones no aparece en **Explorador de soluciones**, debe agregar un elemento de la **cinta** de opciones al proyecto. Vea [Cómo: Introducción a la personalización de la cinta de opciones](../vsto/how-to-get-started-customizing-the-ribbon.md).
@@ -66,9 +68,9 @@ ms.locfileid: "85547191"
 
      Para obtener una lista de identificadores de control, consulte [archivos de ayuda de office 2010: identificadores de control de la interfaz de usuario de Office Fluent](https://www.microsoft.com/download/details.aspx?id=6627).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Información general sobre la cinta](../vsto/ribbon-overview.md)
-- [Diseñador de la cinta](../vsto/ribbon-designer.md)
+- [Diseñador de la cinta de opciones](../vsto/ribbon-designer.md)
 - [Ribbon XML](../vsto/ribbon-xml.md)
 - [Tutorial: crear una pestaña personalizada mediante el diseñador de la cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
 - [Tutorial: crear una pestaña personalizada usando XML de la cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)

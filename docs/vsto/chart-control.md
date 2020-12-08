@@ -1,5 +1,7 @@
 ---
 title: Chart (control)
+description: Obtenga información sobre que al agregar un gráfico a una hoja de cálculo, Visual Studio crea un objeto de gráfico que puede programar directamente.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 864422aac695fbf474e6ed6b8cf6d765247eabf9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 45de5170ca8a8b7e8a71521e18523e73ebc24046
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255301"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847835"
 ---
 # <a name="chart-control"></a>Chart (control)
   El control <xref:Microsoft.Office.Tools.Excel.Chart> es un objeto de gráfico que expone eventos. Al agregar un gráfico a una hoja de cálculo, Visual Studio crea un objeto <xref:Microsoft.Office.Tools.Excel.Chart> que se puede programar directamente sin tener que recorrer el modelo de objetos de Microsoft Office Excel.
@@ -36,7 +38,7 @@ ms.locfileid: "71255301"
 > [!NOTE]
 > Los objetos de gráfico creados de forma dinámica no se conservan en la hoja de cálculo como controles host cuando se cierra la hoja de cálculo. Para obtener más información, vea [Agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
-## <a name="formatting"></a>Formato
+## <a name="formatting"></a>Aplicación de formato
  Todo el formato que se puede aplicar a un control <xref:Microsoft.Office.Interop.Excel.Chart> también puede aplicarse a un control <xref:Microsoft.Office.Tools.Excel.Chart>. Esto incluye bordes, fuentes, tipo de gráfico, líneas de cuadrícula, leyenda y etiquetas de datos.
 
 ## <a name="events"></a>Eventos

@@ -1,5 +1,7 @@
 ---
 title: Controles de contenido
+description: Obtenga información sobre los controles de contenido y cómo los controles de contenido proporcionan una manera de diseñar documentos y plantillas.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -38,12 +40,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8683f5379aaa33446b150adf34f8a5aa57a83ff3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a34211c7fb1fa001719219b7d08baab65340bde5
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986185"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848045"
 ---
 # <a name="content-controls"></a>Controles de contenido
   Los controles de contenido proporcionan un mecanismo para diseñar documentos y plantillas con las siguientes características:
@@ -94,10 +96,10 @@ ms.locfileid: "72986185"
 ### <a name="drop-down-list"></a>Lista desplegable
  En las listas desplegables se muestra una lista de elementos que los usuarios pueden seleccionar. A diferencia de los cuadros combinados, las listas desplegables no permiten que los usuarios agreguen o modifiquen elementos. Para obtener más información, consulte el tipo <xref:Microsoft.Office.Tools.Word.DropDownListContentControl>.
 
-### <a name="group"></a>Agrupar
+### <a name="group"></a>Grupo
  Un control de grupo define una región protegida de un documento que los usuarios no pueden editar ni eliminar. Un control de grupo puede contener cualquier elemento del documento, como texto, tablas, gráficos y otros controles de contenido. Para obtener más información, consulte el tipo <xref:Microsoft.Office.Tools.Word.GroupContentControl>.
 
-### <a name="picture"></a>Picture
+### <a name="picture"></a>Imagen
  Un control de imagen muestra una imagen. Puede especificar la imagen en tiempo de diseño o tiempo de ejecución; asimismo, los usuarios pueden hacer clic en este control para seleccionar la imagen que se va a insertar en el documento. Para obtener más información, consulte el tipo <xref:Microsoft.Office.Tools.Word.PictureContentControl>.
 
 ### <a name="rich-text"></a>Texto enriquecido

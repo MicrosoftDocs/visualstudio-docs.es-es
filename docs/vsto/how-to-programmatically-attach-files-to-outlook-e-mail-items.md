@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: adjuntar archivos a elementos de correo electrónico de Outlook mediante programación'
+description: Obtenga información sobre cómo puede adjuntar archivos a Microsoft Office elementos de Outlook. En este ejemplo se adjunta un archivo a un nuevo elemento de correo y se envía a Armando Pinto.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2427ffc634976462e27eb788259184ce69347769
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 54617bd61a6b45e3b105bce71342ea1a97f63050
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585332"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847395"
 ---
 # <a name="how-to-programmatically-attach-files-to-outlook-email-items"></a>Cómo: adjuntar archivos a elementos de correo electrónico de Outlook mediante programación
   En este ejemplo se adjunta un archivo a un nuevo elemento de correo y se envía a Armando Pinto. En el ejemplo se supone que existe una persona denominada Armando Pinto como destinatario.

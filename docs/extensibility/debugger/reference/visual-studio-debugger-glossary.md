@@ -1,5 +1,7 @@
 ---
 title: Glosario del depurador de Visual Studio | Microsoft Docs
+description: En este artículo se explican varios términos que se usan en el SDK de depuración de Visual Studio, como un punto de interrupción enlazado, la causalidad y el contexto del código.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 954532311fe6b63fc288877a6d41722e6ea47581
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a01a6ad0e23af04001e9b0990be57d78e84c7241
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713348"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847070"
 ---
 # <a name="visual-studio-debugger-glossary"></a>Glosario del depurador de Visual Studio
 A continuación se muestran los términos que se usan en el [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] SDK de depuración.

@@ -1,5 +1,7 @@
 ---
 title: Arquitectura de las soluciones de Office en Visual Studio
+description: Obtenga información sobre las soluciones creadas con las herramientas de desarrollo de Microsoft Office en Visual Studio y cómo funcionan.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 08/14/2019
 ms.topic: conceptual
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0842cab03ba92568b0b672e2b8d257af4b6aa490
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0ca40ed18639caae3250ddc1dc2a664b11780f7a
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "69551877"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847590"
 ---
 # <a name="architecture-of-office-solutions-in-visual-studio"></a>Arquitectura de las soluciones de Office en Visual Studio
   Los temas de esta sección proporcionan información sobre cómo funcionan las soluciones creadas con Office Developer Tools en Visual Studio.

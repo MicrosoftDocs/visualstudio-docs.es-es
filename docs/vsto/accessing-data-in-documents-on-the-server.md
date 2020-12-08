@@ -1,5 +1,7 @@
 ---
 title: Acceder a los datos de documentos en el servidor
+description: Obtenga información sobre cómo programar con los datos en una personalización de nivel de documento sin tener que usar el modelo de objetos de Microsoft Office Word o Microsoft Office Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ab033120c0913bbae33458c5a2d0b53972364581
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e436c7a30708fac0cf59c2e79100cc89dade84b2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255766"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847629"
 ---
 # <a name="access-data-in-documents-on-the-server"></a>Acceder a los datos de documentos en el servidor
   Puede programar con los datos de una personalización de nivel de documento sin tener que usar el modelo de objetos de Microsoft Office Word o Microsoft Office Excel. Esto significa que puede tener acceso a los datos contenidos en un documento en un servidor que no tiene instalado Word o Excel. Por ejemplo, el código de un servidor (por ejemplo, en una [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] página) puede personalizar los datos de un documento y enviar el documento personalizado a un usuario final. Cuando el usuario final abre el documento, el código de enlace de datos en el ensamblado de la solución enlaza los datos personalizados al documento. Esto es posible porque los datos del documento se separan de la interfaz de usuario. Para obtener más información, vea [datos almacenados en caché en personalizaciones de nivel de documento](../vsto/cached-data-in-document-level-customizations.md).

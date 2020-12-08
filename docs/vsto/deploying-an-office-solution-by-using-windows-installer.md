@@ -1,5 +1,7 @@
 ---
 title: Implementar una solución de Office mediante Windows Installer
+description: Obtenga información sobre cómo usar Visual Studio para crear un Windows Installer, puede implementar una solución de Office que requiera acceso administrativo en el equipo del usuario final.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1336af7469b030492b486004940b730d372760bb
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: c001b3ce308c9e991cee747bdcab3ad646b226ab
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90807968"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847122"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Implementar una solución de Office mediante Windows Installer
 
@@ -89,9 +91,9 @@ Puede crear un archivo de Windows Installer mediante InstallShield Limited Editi
 
    Aparece el cuadro de diálogo **Nuevo proyecto** .
 
-2. En el panel de plantillas, expanda **Otros tipos de proyectos**y después elija la plantilla **Instalación e implementación** .
+2. En el panel de plantillas, expanda **Otros tipos de proyectos** y después elija la plantilla **Instalación e implementación** .
 
-3. En la lista de tipos de proyecto de **Instalación e implementación**, seleccione **Habilitar InstallShield Limited Edition**y elija el botón **Aceptar** .
+3. En la lista de tipos de proyecto de **Instalación e implementación**, seleccione **Habilitar InstallShield Limited Edition** y elija el botón **Aceptar** .
 
    Aparece una página que proporciona información sobre cómo obtener InstallShield Limited Edition.
 
@@ -111,7 +113,7 @@ Puede crear un archivo de Windows Installer mediante InstallShield Limited Editi
 
    Se abre el cuadro de diálogo **Agregar nuevo proyecto** .
 
-3. En el panel de plantillas, expanda **Otros tipos de proyectos**y después elija la plantilla **Instalación e implementación** .
+3. En el panel de plantillas, expanda **Otros tipos de proyectos** y después elija la plantilla **Instalación e implementación** .
 
 4. En la lista de tipos de proyecto para **Instalación e implementación**, elija **Proyecto de InstallShield Limited Edition**, asigne un nombre al proyecto y elija el botón **Aceptar** .
 
@@ -209,7 +211,7 @@ La página **Redistributables** contiene un elemento denominado **Microsoft VSTO
 
 4. En el Bloc de notas, reemplace el texto **Your GUID goes here** por el GUID.
 
-   El elemento ** &lt; Properties &gt; ** del archivo es similar al siguiente.
+   El elemento **&lt; Properties &gt;** del archivo es similar al siguiente.
 
    ```xml
    <properties Id="{87989B73-21DC-4403-8FD1-0C68A41A6D8C}" Description="This prerequisite installs the most recent version of the Microsoft Visual Studio 2010 Tools for Office Runtime." >
@@ -222,7 +224,7 @@ La página **Redistributables** contiene un elemento denominado **Microsoft VSTO
 
 7. En la lista **Guardar como tipo** , elija **todos los archivos (&#42;. &#42;)**.
 
-8. En el cuadro **Nombre de archivo** , escriba **Runtime de Visual Studio 2010 Tools para Office.prq**y elija el botón **Guardar** .
+8. En el cuadro **Nombre de archivo** , escriba **Runtime de Visual Studio 2010 Tools para Office.prq** y elija el botón **Guardar** .
 
    > [!NOTE]
    > Asegúrese de agregar **.prq** al final del nombre de archivo para identificarlo como un archivo necesario.
@@ -231,9 +233,9 @@ La página **Redistributables** contiene un elemento denominado **Microsoft VSTO
 
 10. En la carpeta **escritorio** , copie el archivo *Visual Studio 2010 Tools para Office Runtime. PRQ* en uno de los siguientes directorios del equipo.
 
-   Para sistemas operativos de 32 bits: *%ProgramFiles%\InstallShield\2013LE\SetupPrerequisites \\ *
+   Para sistemas operativos de 32 bits: *%ProgramFiles%\InstallShield\2013LE\SetupPrerequisites \\*
 
-   Para sistemas operativos de 64 bits: *% ProgramFiles (x86)% \ 2013LE \ SetupPrerequisites \\ *
+   Para sistemas operativos de 64 bits: *% ProgramFiles (x86)% \ 2013LE \ SetupPrerequisites \\*
 
 11. En la página **Redistributable** del proyecto de InstallShield, elija el botón de **actualizar** para actualizar la lista de componentes redistribuibles, como se muestra en la siguiente ilustración.
 
@@ -303,21 +305,21 @@ Las instalaciones por usuario solo requieren un instalador, independientemente d
 
    **Instalador por usuario**
 
-   **HKEY_CURRENT_USER \Software\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**
+   **HKEY_CURRENT_USER\Software\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**
 
    **Instaladores por equipo según la versión de Office**
 
 | Versión de Office<br /><br /> | Ruta de acceso de configuración de InstallShield<br /><br /> |
 |----------------------------| - |
-| 32 bits<br /><br /> | **HKEY_LOCAL_MACHINE \SOFTWARE (32 bits) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
-| 64 bits<br /><br /> | **HKEY_LOCAL_MACHINE \SOFTWARE (64 bits) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 32 bits<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 64 bits<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(64-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
 
    **Instaladores por equipo según la versión de Windows**
 
 | Versión de Windows<br /><br /> | Ruta de acceso de configuración de InstallShield<br /><br /> |
 |-----------------------------| - |
-| 32 bits<br /><br /> | **HKEY_LOCAL_MACHINE \SOFTWARE (32 bits) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
-| 64 bits<br /><br /> | **HKEY_LOCAL_MACHINE \SOFTWARE (32 bits) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />**HKEY_LOCAL_MACHINE \SOFTWARE (64 bits) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 32 bits<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 64 bits<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />**HKEY_LOCAL_MACHINE\SOFTWARE(64-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
 
    > [!NOTE]
    > Un instalador para Windows de 64 bits requiere dos rutas de acceso del registro, ya que es posible que los usuarios ejecuten las versiones de Office de 32 bits y de 64 bits en un equipo que ejecute Windows de 64 bits.
@@ -325,7 +327,7 @@ Las instalaciones por usuario solo requieren un instalador, independientemente d
    > [!NOTE]
    > Como procedimiento recomendado, escriba el nombre de la compañía al principio del nombre del complemento VSTO. Esta Convención aumenta la posibilidad de que la clave sea única y reduce la posibilidad de que se produzcan conflictos con un complemento de VSTO de otro proveedor. Los complementos que tienen el mismo nombre pueden, por ejemplo, sobrescribir las claves del Registro entre ellos. Este método no garantiza que la clave sea única, pero ayuda a reducir posibles conflictos con los nombres.
 
-5. Después de crear la jerarquía de claves, abra el menú contextual de la clave **clave samplecompany. ExcelAddIn** , elija **nuevo**y, a continuación, elija **valor de cadena**.
+5. Después de crear la jerarquía de claves, abra el menú contextual de la clave **clave samplecompany. ExcelAddIn** , elija **nuevo** y, a continuación, elija **valor de cadena**.
 
    El nuevo valor de cadena aparece en la lista de **datos del registro del equipo de destino** . El nombre del valor de cadena se resalta de modo que se pueda cambiar.
 
@@ -337,13 +339,13 @@ Las instalaciones por usuario solo requieren un instalador, independientemente d
 |--------------|--------|
 |Valor de cadena<br /><br />|**FriendlyName**<br /><br />|
 |Valor DWORD<br /><br />|**LoadBehavior**<br /><br />|
-|Valor de cadena<br /><br />|**Manifiesto**<br /><br />|
+|Valor de cadena<br /><br />|**de manifiesto**<br /><br />|
 
 8. Abra el menú contextual del valor **Description** y, a continuación, elija **Modificar**.
 
    Aparece el cuadro de diálogo **Editar datos** .
 
-9. En el cuadro de texto **Datos del valor** , escriba **Excel Demo Add-In**y elija el botón **Aceptar** .
+9. En el cuadro de texto **Datos del valor** , escriba **Excel Demo Add-In** y elija el botón **Aceptar** .
 
    Esta descripción aparece cuando el usuario abre la aplicación de Office, abre el cuadro de diálogo **Opciones** y, a continuación, en el panel **Complementos** , elige el complemento VSTO.
 
@@ -351,7 +353,7 @@ Las instalaciones por usuario solo requieren un instalador, independientemente d
 
    Aparece el cuadro de diálogo **Editar datos** .
 
-11. En el cuadro de texto **Datos del valor** , escriba **Excel Demo Add-In**y elija el botón **Aceptar** .
+11. En el cuadro de texto **Datos del valor** , escriba **Excel Demo Add-In** y elija el botón **Aceptar** .
 
    Esta cadena aparece en el cuadro de diálogo **Complementos COM** en la aplicación de Office. De forma predeterminada, el valor de la cadena es el identificador del complemento VSTO.
 
@@ -359,7 +361,7 @@ Las instalaciones por usuario solo requieren un instalador, independientemente d
 
    Aparece el cuadro de diálogo **Editar datos** .
 
-13. En el cuadro de texto **Datos del valor** , escriba **3**y, a continuación, elija el botón **Aceptar** .
+13. En el cuadro de texto **Datos del valor** , escriba **3** y, a continuación, elija el botón **Aceptar** .
 
    El valor 3 carga el complemento VSTO cuando se inicia la aplicación. Para obtener más información acerca de los valores LoadBehavior, consulte [entradas del registro para complementos de VSTO](../vsto/registry-entries-for-vsto-add-ins.md).
 
@@ -367,7 +369,7 @@ Las instalaciones por usuario solo requieren un instalador, independientemente d
 
    Aparece el cuadro de diálogo **Editar datos** .
 
-15. En el cuadro de texto **Datos del valor** , escriba **file:///[INSTALLDIR]ExcelAddIn.vsto|vstolocal**y, a continuación, elija el botón **Aceptar** .
+15. En el cuadro de texto **Datos del valor** , escriba **file:///[INSTALLDIR]ExcelAddIn.vsto|vstolocal** y, a continuación, elija el botón **Aceptar** .
 
    Runtime de Visual Studio 2010 Tools para Office utiliza esta ruta para buscar el manifiesto de implementación. La parte **[INSTALLDIR]** de esta ruta de acceso es una macro que se asigna a la propiedad **INSTALLDIR** en la página de propiedades **General Information** del programa de instalación de InstallShield. Esta propiedad especifica la ubicación de instalación del complemento VSTO en el equipo de destino. El sufijo **|vstolocal** garantiza que la solución se cargue desde la carpeta de instalación, no desde la memoria caché de ClickOnce.
 
@@ -392,7 +394,7 @@ Para modificar las propiedades personalizadas, se crea un programa que quita la 
 
 3. En la lista de tipos de proyecto para **Windows**, elija la plantilla **Aplicación de consola** .
 
-4. Asigne el nombre **SetExcelDocumentProperties**al proyecto y, a continuación, elija el botón **Aceptar** .
+4. Asigne el nombre **SetExcelDocumentProperties** al proyecto y, a continuación, elija el botón **Aceptar** .
 
 5. En el **Explorador de soluciones**, elija el botón **Mostrar todos los archivos** , abra el menú contextual del nodo de proyecto **SetExcelDocumentProperties** y elija **Agregar referencia**.
 
@@ -463,7 +465,7 @@ Para modificar las propiedades personalizadas, se crea un programa que quita la 
 
 13. Abra el archivo de proyecto de la solución en el Bloc de notas. En el caso de los proyectos de Visual Basic, el nombre del archivo es *ExcelWorkbook. vbproj*. En el caso de los proyectos de C#, el nombre del archivo es *ExcelWorkbook. csproj*.
 
-14. En el archivo del proyecto, busque el elemento ** &lt; SolutionID &gt; ** , copie su valor en el portapapeles y, a continuación, cierre el Bloc de notas.
+14. En el archivo del proyecto, busque el elemento **&lt; SolutionID &gt;** , copie su valor en el portapapeles y, a continuación, cierre el Bloc de notas.
 
     Este valor se transfiere a la aplicación de consola como un parámetro.
 
@@ -496,13 +498,13 @@ Para modificar las propiedades personalizadas, se crea un programa que quita la 
 
 7. En la lista **Configuración de soluciones activas** , elija **SingleImage**.
 
-8. En la tabla **Contextos del proyecto** , en la columna **Configuración** del proyecto **OfficeAddInSetup** , elija **SingleImage**y, después, elija el botón **Cerrar** .
+8. En la tabla **Contextos del proyecto** , en la columna **Configuración** del proyecto **OfficeAddInSetup** , elija **SingleImage** y, después, elija el botón **Cerrar** .
 
 9. En la barra de menús, **Elija compilar**  >  **compilación OfficeAddInSetup**.
 
-   Una vez finalizada la compilación, puede buscar el archivo de *setup.exe* del proyecto **OfficeAddInSetup** en la siguiente ubicación: <em>OfficeAddInSetupProjectRoot</em>**\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1 \\ **
+   Una vez finalizada la compilación, puede buscar el archivo de *setup.exe* del proyecto **OfficeAddInSetup** en la siguiente ubicación: <em>OfficeAddInSetupProjectRoot</em>**\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1 \\**
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Requisitos previos de la solución de Office para la implementación](/previous-versions/bb608617(v=vs.110))
 - [Implementar una solución de Office](../vsto/deploying-an-office-solution.md)

@@ -1,6 +1,7 @@
 ---
 title: 'Cómo: exponer código a VBA en un proyecto de C#'
-ms.custom: seodec18
+description: Obtenga información sobre cómo puede exponer código en un proyecto de Visual C# a código de Visual Basic para Aplicaciones (VBA) Si desea que los dos tipos de código interactúen entre sí.
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 21d7672d3c08012e75d73ee8bf4d9816b850eb2c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a830ec75e3997bee8d4bed9e275fc6229fec3405
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544838"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846602"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>Cómo: exponer código a VBA en un proyecto de Visual C#
   Puede exponer el código de un proyecto de Visual C# a código de Visual Basic para Aplicaciones (VBA) Si desea que los dos tipos de código interactúen entre sí.
@@ -101,7 +102,7 @@ ms.locfileid: "85544838"
 
 12. Compile el proyecto.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Cómo: crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md)
 - [Combinar personalizaciones de VBA y de nivel de documento](../vsto/combining-vba-and-document-level-customizations.md)

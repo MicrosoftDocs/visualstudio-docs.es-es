@@ -1,5 +1,6 @@
 ---
 title: 'Cómo: agregar controles Bookmark a documentos de Word'
+description: Aprenda que en los proyectos de nivel de documento, puede Agregar controles de marcador al documento en el proyecto en tiempo de diseño o en tiempo de ejecución.
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: de5868674790239b8374ef9796308280588ae96e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a6ccf3f5a355cdad682026453691a4203c95a814
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547256"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847473"
 ---
 # <a name="how-to-add-bookmark-controls-to-word-documents"></a>Cómo: agregar controles Bookmark a documentos de Word
   En proyectos de nivel de documento, puede agregar controles <xref:Microsoft.Office.Tools.Word.Bookmark> al documento en el proyecto en tiempo de diseño o en tiempo de ejecución. En proyectos de complemento VSTO, puede agregar controles <xref:Microsoft.Office.Tools.Word.Bookmark> a cualquier documento abierto en tiempo de ejecución.
@@ -41,7 +42,7 @@ ms.locfileid: "85547256"
 ## <a name="add-bookmark-controls-at-design-time"></a><a name="designtime"></a> Agregar controles Bookmark en tiempo de diseño
  Hay varias maneras de agregar controles <xref:Microsoft.Office.Tools.Word.Bookmark> al documento en un proyecto de nivel de documento en tiempo de diseño:
 
-- Desde el **Cuadro de herramientas**de Visual Studio.
+- Desde el **Cuadro de herramientas** de Visual Studio.
 
    Puede arrastrar el control <xref:Microsoft.Office.Tools.Word.Bookmark> desde el **Cuadro de herramientas** hasta su documento. Este método es recomendable si ya está usando el **Cuadro de herramientas** para agregar controles de Windows Forms al documento.
 
@@ -65,7 +66,7 @@ ms.locfileid: "85547256"
 
 3. Seleccione el texto u otros elementos que desee incluir en el marcador.
 
-4. Haga clic en **OK**.
+4. Haga clic en **Aceptar**.
 
      Si no desea conservar el nombre de marcador predeterminado, puede cambiar el nombre en la ventana **Propiedades** .
 

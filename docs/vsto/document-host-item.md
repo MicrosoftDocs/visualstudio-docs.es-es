@@ -1,5 +1,7 @@
 ---
 title: Elemento host de documento
+description: Obtenga información sobre que el elemento host del documento es un tipo que extiende el tipo de documento desde el ensamblado de interoperabilidad primario para Word.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ebea0c3a09d08741523deddce94def170d844202
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 35455ac7751a34632362cfa3f2c9b8f2f827fc6d
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71253705"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846914"
 ---
 # <a name="document-host-item"></a>Elemento host de documento
   El elemento host <xref:Microsoft.Office.Tools.Word.Document> es un tipo que extiende el tipo <xref:Microsoft.Office.Interop.Word.Document> del ensamblado de interoperabilidad primario de Word. Asimismo, el elemento host <xref:Microsoft.Office.Tools.Word.Document> proporciona las mismas propiedades, métodos y eventos que un objeto <xref:Microsoft.Office.Interop.Word.Document> y, además, también expone eventos adicionales y sirve de contenedor para los controles host y para los controles de Windows Forms.
@@ -47,7 +49,7 @@ ms.locfileid: "71253705"
 
  Para generar un elemento host <xref:Microsoft.Office.Tools.Word.Document>, use el método `GetVstoObject`. Para obtener más información, vea [ampliar documentos de Word y libros de Excel en complementos de VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Información general sobre elementos y controles host](../vsto/host-items-and-host-controls-overview.md)
 - [Automatizar Word con objetos extendidos](../vsto/automating-word-by-using-extended-objects.md)
 - [Información general sobre el modelo de objetos de Word](../vsto/word-object-model-overview.md)

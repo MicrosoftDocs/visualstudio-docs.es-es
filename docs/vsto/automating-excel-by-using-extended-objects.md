@@ -1,5 +1,7 @@
 ---
 title: Automatizar Excel usando objetos extendidos
+description: Sepa que al desarrollar soluciones de Excel en Visual Studio, puede usar elementos host y controles host en sus soluciones.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -20,15 +22,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 65734f5397bae8c35fb8e312041d0600b8fa84e9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 912385950721de1d1e0b98c1b6582552210aa04a
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254345"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846966"
 ---
 # <a name="automate-excel-by-using-extended-objects"></a>Automatizar Excel usando objetos extendidos
-  Al desarrollar soluciones de Excel en Visual Studio, puede usar *elementos host* y *controles host*en sus soluciones. Estos son objetos que extienden algunos objetos muy usados en el modelo de objetos de Excel (es decir, el modelo de objetos expuesto por el ensamblado de interoperabilidad primario para Excel), como son los objetos <xref:Microsoft.Office.Interop.Excel.Worksheet> y <xref:Microsoft.Office.Interop.Excel.Range> . Los objetos extendidos se comportan como los objetos de Excel en los que se basan, pero agregan características adicionales, como nuevas capacidades de enlace de eventos y datos a los objetos.
+  Al desarrollar soluciones de Excel en Visual Studio, puede usar *elementos host* y *controles host* en sus soluciones. Estos son objetos que extienden algunos objetos muy usados en el modelo de objetos de Excel (es decir, el modelo de objetos expuesto por el ensamblado de interoperabilidad primario para Excel), como son los objetos <xref:Microsoft.Office.Interop.Excel.Worksheet> y <xref:Microsoft.Office.Interop.Excel.Range> . Los objetos extendidos se comportan como los objetos de Excel en los que se basan, pero agregan características adicionales, como nuevas capacidades de enlace de eventos y datos a los objetos.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
@@ -60,7 +62,7 @@ ms.locfileid: "71254345"
 
 - [Control XmlMappedRange (](../vsto/xmlmappedrange-control.md)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Cómo: rellenar los controles ListObject con datos](../vsto/how-to-fill-listobject-controls-with-data.md)
 - [Cómo: agregar controles Chart a hojas de cálculo](../vsto/how-to-add-chart-controls-to-worksheets.md)
 - [Cómo: agregar controles ListObject a hojas de cálculo](../vsto/how-to-add-listobject-controls-to-worksheets.md)

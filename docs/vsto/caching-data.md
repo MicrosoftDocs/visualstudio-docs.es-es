@@ -1,5 +1,7 @@
 ---
 title: Datos de caché
+description: Obtenga información sobre cómo puede almacenar en caché objetos de datos en una personalización de nivel de documento para que se pueda tener acceso a los datos sin conexión o sin abrir Microsoft Office Word o Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c6e0f6d7fcf9920ddb8861712b7c5f8bf04506fc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: db22378477daffd4562a9d60c6b30bc7b96e58e2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62939420"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847876"
 ---
 # <a name="cache-data"></a>Datos de caché
   Puede almacenar en caché objetos de datos en una personalización de nivel de documento para que se pueda tener acceso a los datos sin conexión o sin abrir Microsoft Office Word o Microsoft Office Excel. Para almacenar en caché un objeto, el objeto debe tener un tipo de datos que cumpla determinados requisitos. Muchos tipos de datos comunes en el .NET Framework cumplen estos requisitos, incluidos <xref:System.String> , <xref:System.Data.DataSet> y <xref:System.Data.DataTable> .
@@ -79,11 +81,11 @@ ms.locfileid: "62939420"
  Para obtener más información, consulte [Cómo: almacenar datos en caché en un documento protegido mediante contraseña](../vsto/how-to-cache-data-in-a-password-protected-document.md).
 
 ## <a name="prevent-data-loss-when-adding-null-values-to-the-data-cache"></a>Evitar la pérdida de datos al agregar valores NULL a la memoria caché de datos
- Al agregar objetos a la memoria caché de datos, todos los objetos almacenados en caché se deben inicializar en un valor distinto de**null** antes de guardar y cerrar el documento. Si algún objeto almacenado en memoria caché tiene un valor **null** cuando el documento se guarda y se cierra, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] quitará automáticamente todos los objetos almacenados en caché de la memoria caché de datos.
+ Al agregar objetos a la memoria caché de datos, todos los objetos almacenados en caché se deben inicializar en un valor distinto de **null** antes de guardar y cerrar el documento. Si algún objeto almacenado en memoria caché tiene un valor **null** cuando el documento se guarda y se cierra, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] quitará automáticamente todos los objetos almacenados en caché de la memoria caché de datos.
 
  Si agrega un objeto con un valor **null** a la memoria caché de datos utilizando el <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> atributo en tiempo de diseño, puede usar la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> clase para inicializar los objetos de datos almacenados en memoria caché antes de que se abra el documento. Esto resulta útil si desea inicializar los datos almacenados en caché en un servidor sin Word o Excel instalado, antes de que un usuario final Abra el documento. Para obtener más información, vea [obtener acceso a los datos de documentos en el servidor](../vsto/accessing-data-in-documents-on-the-server.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Cómo: almacenar datos en caché para su uso sin conexión o en un servidor](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)
 - [Cómo: almacenar en caché un origen de datos en un documento de Office mediante programación](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)
 - [Cómo: almacenar datos en caché en un documento protegido mediante contraseña](../vsto/how-to-cache-data-in-a-password-protected-document.md)

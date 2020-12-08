@@ -1,5 +1,7 @@
 ---
 title: Diseñar y crear soluciones de Office
+description: Obtenga información sobre cómo Visual Studio proporciona plantillas de proyecto que puede usar para crear varios tipos diferentes de soluciones de Office.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cd51c377ed20807c5e5e2b26f842c6152bf7c222
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 191de013c94bfede7d1ddac5f3dd0392143e08dc
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808225"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847538"
 ---
 # <a name="design-and-create-office-solutions"></a>Diseñar y crear soluciones de Office
 
@@ -91,7 +93,7 @@ Visual Studio proporciona plantillas de proyecto que puede usar para crear vario
 ## <a name="referenced-assemblies"></a>Ensamblados a los que se hace referencia
  El ensamblado puede hacer referencia a otros ensamblados, que se enumeran en las referencias del proyecto. Sin embargo, un ensamblado de proyecto de nivel de documento no puede hacer referencia a otro ensamblado de proyecto de nivel de documento.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Información general de plantillas de proyecto de Office](../vsto/office-project-templates-overview.md)
 - [Cómo: crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Proyectos de Office en el entorno de Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md)

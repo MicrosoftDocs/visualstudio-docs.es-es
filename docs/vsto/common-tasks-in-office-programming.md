@@ -1,5 +1,7 @@
 ---
 title: Tareas comunes en la programación de Office
+description: Obtenga información sobre cómo puede programar con los datos en una personalización de nivel de documento sin tener que usar el modelo de objetos de Microsoft Office Word u Office Excel.
+ms.custom: SEO-VS-2020SS
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c82b4dec0c92f19933b045040ed0f1fcecb5b10b
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 4f6fae2b7d446035a08e3fcb77bcffaaed6de3a9
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809864"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846303"
 ---
 # <a name="common-tasks-in-office-programming"></a>Tareas comunes en la programación de Office
   Este tema está diseñado para ayudarle a encontrar las respuestas a las siguientes categorías de preguntas comunes sobre la programación de soluciones de Office mediante Visual Studio.
@@ -230,7 +232,7 @@ ms.locfileid: "90809864"
 
 - [Cómo: cambiar la ruta de instalación de una solución de Office](/previous-versions/bb608626(v=vs.110)).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Introducción &#40;desarrollo de Office en Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Características disponibles por aplicación y tipo de proyecto de Office](../vsto/features-available-by-office-application-and-project-type.md)
 - [Ejemplos y tutoriales de desarrollo de Office](../vsto/office-development-samples-and-walkthroughs.md)

@@ -1,5 +1,7 @@
 ---
 title: Acceso global a objetos en proyectos de Office
+description: Obtenga información sobre cómo puede usar la clase Globals para tener acceso a varios elementos de proyecto en tiempo de ejecución desde cualquier código del proyecto.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -30,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f76a2e74315980764a2cdffe67af4403552de7fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e2653f314edf07c4dcca6d3afc74af64c548af35
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88041056"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846394"
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>Acceso global a objetos en proyectos de Office
   Cuando se crea un proyecto de Office, Visual Studio genera automáticamente una clase denominada `Globals` en el proyecto. Puede utilizar la clase `Globals` para tener acceso en tiempo de ejecución a diversos elementos del proyecto desde cualquier código del proyecto.
@@ -75,7 +77,7 @@ ms.locfileid: "88041056"
 > [!NOTE]
 > La clase `Globals` nunca se inicializa en tiempo de diseño, sino que el diseñador crea instancias de controles. Esto significa que si crea un control de usuario que utiliza una propiedad de la `Globals` clase desde dentro de una clase de control de usuario, debe comprobar si la propiedad devuelve **null** antes de intentar utilizar el objeto devuelto.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Obtener acceso a la cinta de opciones en tiempo de ejecución](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Obtener acceso a un área de formulario en tiempo de ejecución](../vsto/accessing-a-form-region-at-run-time.md)
 - [Información general sobre elementos y controles host](../vsto/host-items-and-host-controls-overview.md)

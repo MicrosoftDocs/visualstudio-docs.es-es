@@ -1,7 +1,8 @@
 ---
 title: Referencia general (desarrollo de Office en Visual Studio)
+description: Obtenga información de referencia general sobre proyectos de desarrollo de Microsoft Office en Visual Studio.
 titleSuffix: ''
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8e8b8dee20b67338bbe1c8c78ebe1d8bcc730175
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c47f4360f63640f869231bc21929c43543d5c72e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "69551507"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847785"
 ---
 # <a name="general-reference-office-development-in-visual-studio"></a>Referencia general (desarrollo de Office en Visual Studio)
   Esta sección contiene detalles técnicos sobre proyectos de Microsoft Office en Visual Studio.
@@ -27,7 +28,7 @@ ms.locfileid: "69551507"
 [!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="in-this-section"></a>En esta sección
-- [ensamblados de interoperabilidad primarios de Office](../vsto/office-primary-interop-assemblies.md)
+- [Ensamblados de interoperabilidad primarios de Office](../vsto/office-primary-interop-assemblies.md)
 
  Enumera los ensamblados de interoperabilidad primarios que están disponibles para su instalación con Office y proporciona una breve descripción de cada uno.
 

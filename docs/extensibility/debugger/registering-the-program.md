@@ -1,5 +1,7 @@
 ---
 title: Registrando el programa | Microsoft Docs
+description: Obtenga información sobre cómo un programa que se va a depurar se registra con un puerto después de que el motor de depuración adquiera un puerto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b68fa67f784d155288482ad724b632ed5ba5fa41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 80c3d13cc7319e43390a7e9e6f4eb42a5a87c780
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713173"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847101"
 ---
 # <a name="register-the-program"></a>Registrar el programa
 Una vez que el motor de depuración ha adquirido un puerto, representado por una interfaz [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) , el siguiente paso para habilitar el programa que se va a depurar es registrarlo con el puerto. Una vez registrado, el programa está disponible para la depuración en uno de los siguientes medios:

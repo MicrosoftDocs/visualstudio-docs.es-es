@@ -1,5 +1,7 @@
 ---
 title: Registrando un motor de depuración personalizado | Microsoft Docs
+description: Obtenga información sobre cómo el motor de depuración se registra como un generador de clases, siguiendo las convenciones de COM, así como el registro con Visual Studio a través del registro.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a664385594f139e2c3c5a18a0d8a59e23c13df0a
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 01d7190bbf087bb60ac670341d82078e94c81c52
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011845"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847187"
 ---
 # <a name="register-a-custom-debug-engine"></a>Registrar un motor de depuración personalizado
 El motor de depuración debe registrarse como un generador de clases, siguiendo las convenciones de COM y registrarse con Visual Studio a través de la subclave del registro de Visual Studio.

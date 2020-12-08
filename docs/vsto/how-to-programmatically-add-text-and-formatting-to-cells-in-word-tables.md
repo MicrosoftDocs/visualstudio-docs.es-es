@@ -1,5 +1,7 @@
 ---
 title: Agregar texto & formato a las celdas de la tabla de Word mediante programación
+description: Obtenga información sobre cómo agregar texto y formato a las celdas de Microsoft Office tablas de Word mediante programación.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c0dc63c96669848703f3c18554100841a9f6c9cb
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: f10684fa3e9309611ebf3b04d3cea77ee822f49e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585371"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848019"
 ---
 # <a name="how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables"></a>Cómo: agregar texto y formato a celdas de tablas de Word mediante programación
   Cada tabla consta de una colección de celdas. Cada objeto <xref:Microsoft.Office.Interop.Word.Cell> individual representa una celda de la tabla. Se hace referencia a cada celda mediante su ubicación en la tabla. Este ejemplo hace referencia a la celda ubicada en la primera fila y la primera columna de la tabla, le añade texto y le aplica formato.

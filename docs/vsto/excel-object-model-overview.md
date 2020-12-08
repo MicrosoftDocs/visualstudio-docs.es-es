@@ -1,5 +1,7 @@
 ---
 title: Información general del modelo de objetos de Excel
+description: Aprenda a interactuar con los objetos proporcionados por el modelo de objetos de Excel para desarrollar soluciones que usen Microsoft Office Excel.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a823692a5cc0f154c514edff4fe9398de0efd212
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fb3134b7656fc5156554e60fc88d16e6c2b58120
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649422"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847694"
 ---
 # <a name="excel-object-model-overview"></a>Información general del modelo de objetos de Excel
   Para desarrollar soluciones que usen Microsoft Office Excel, puede interactuar con los objetos proporcionados por el modelo de objetos de Excel. Este tema presenta los objetos más importantes:
@@ -66,7 +68,7 @@ ms.locfileid: "81649422"
 
  Puesto que los datos de un documento de Excel están muy estructurados, el modelo de objetos es jerárquico y sencillo. Excel proporciona centenares de objetos con los que es posible que desee interactuar, pero puede empezar a trabajar en el modelo de objetos centrándose en un pequeño subconjunto de los objetos disponibles. Entre estos objetos están los cuatro siguientes:
 
-- Application
+- Aplicación
 
 - Libro
 

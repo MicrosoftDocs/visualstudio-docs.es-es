@@ -1,5 +1,7 @@
 ---
 title: Características disponibles por aplicación y tipo de proyecto de Office
+description: Obtenga información sobre cómo Visual Studio tiene varios tipos de plantillas de proyecto que admiten diferentes escenarios empresariales para Microsoft Office aplicaciones.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ba24bdeac9ad51d0173e765c8cb793be2473baf6
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 24db499602642f6ec980628d290ec8b5dd07fed3
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585437"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847811"
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>Características disponibles por aplicación y tipo de proyecto de Office
   Visual Studio tiene varios tipos de plantillas de proyecto que admiten diferentes escenarios empresariales para las aplicaciones de Microsoft Office, incluyendo los siguientes tipos:
@@ -50,7 +52,7 @@ ms.locfileid: "91585437"
 ## <a name="features-available-in-different-project-types"></a>Características disponibles en diferentes tipos de proyecto
  En la siguiente tabla se muestra qué tipos de proyecto proporcionan cada característica.
 
-|Característica|Tipos de proyecto que proporcionan la característica|Información adicional|
+|Característica|Tipos de proyecto que proporcionan la característica|Lecturas adicionales|
 |-------------|--------------------------------------------|---------------------|
 |Panel de acciones.|Proyectos de nivel del documento.|[Información general del panel de acciones](../vsto/actions-pane-overview.md)|
 |Implementación ClickOnce.|VS y los proyectos de nivel del documento.|[Implementar una solución de Office](../vsto/deploying-an-office-solution.md)|

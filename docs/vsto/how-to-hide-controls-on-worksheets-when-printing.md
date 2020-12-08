@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: ocultar controles en hojas de cálculo al imprimir'
+description: Obtenga información sobre cómo ocultar los controles al imprimir un Microsoft Office hoja de cálculo de Excel que contiene controles de Windows Forms.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 336723f60a2cd90dc63db24e981dd06e0388cb9c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: acc90986dd394e69de12893aac01e0a4f662b1a3
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544812"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846498"
 ---
 # <a name="how-to-hide-controls-on-worksheets-when-printing"></a>Cómo: ocultar controles en hojas de cálculo al imprimir
   Al imprimir un Microsoft Office documento de Excel que contiene Windows Forms controles, los controles están visibles en la hoja de cálculo impresa. Puede ocultar los controles al imprimir una hoja de cálculo.
@@ -41,7 +43,7 @@ ms.locfileid: "85544812"
 
 3. En la ventana **propiedades** , establezca la <xref:Microsoft.Office.Tools.Excel.Controls.Button.PrintObject%2A> propiedad en **false**.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Controles en documentos de Office](../vsto/controls-on-office-documents.md)
 - [Información general sobre los controles de Windows Forms en documentos de Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
 - [Cómo: agregar controles Windows Forms a documentos de Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)

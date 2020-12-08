@@ -1,5 +1,7 @@
 ---
 title: Accesibilidad en proyectos de Office
+description: Aprenda cómo Microsoft Office proyectos incluyen muchas características de accesibilidad que le permiten crear soluciones personalizadas que cumplan los requisitos de accesibilidad estándar.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8bd74f4d61c74a4dc348f7a615e103b283a15fc0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: de877ccc2d2a036bf03b0888a7edf455b17788a4
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73189623"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847369"
 ---
 # <a name="accessibility-in-office-projects"></a>Accesibilidad en proyectos de Office
 
@@ -74,7 +76,7 @@ En la mayoría de los casos, los proyectos de Office en Visual Studio cumplen co
 
  Para obtener más información sobre los paneles de acciones y los paneles de tareas personalizados, vea [información general del panel de acciones](../vsto/actions-pane-overview.md) y [paneles de tareas personalizados](../vsto/custom-task-panes.md).
 
-### <a name="display-modes"></a>Modos de pantalla
+### <a name="display-modes"></a>Modos de presentación
 
 Visual Studio tiene las siguientes limitaciones relacionadas con los modos de presentación:
 
@@ -84,7 +86,7 @@ Visual Studio tiene las siguientes limitaciones relacionadas con los modos de pr
 
 Puede usar el ampliador para superar estas limitaciones. La lupa es una utilidad de visualización de Windows que crea una ventana independiente que muestra una parte ampliada de la pantalla.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Desarrollo de soluciones de Office](../vsto/developing-office-solutions.md)
 - [Controles en documentos de Office](../vsto/controls-on-office-documents.md)

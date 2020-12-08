@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: rellenar hojas de cálculo con datos de una base de datos'
+description: Obtenga información sobre cómo puede usar los datos de un objeto en la solución y cómo puede usar los controles Windows Forms para mostrar los datos en una hoja de cálculo.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1b594014b2564b5730c1895a007294ee66e07637
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4252eac32540ac2d0b6e763b5b6e9cf0e2ac7055
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520125"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846446"
 ---
 # <a name="how-to-populate-worksheets-with-data-from-a-database"></a>Cómo: rellenar hojas de cálculo con datos de una base de datos
 
@@ -67,7 +69,7 @@ Al ejecutar el proyecto, el control muestra el primer registro del origen de dat
 
 Para obtener información acerca de cómo enviar actualizaciones al conjunto de datos con tipo y a la base de datos, consulte [Cómo: actualizar un origen de datos con datos de un control host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Agregar nuevos orígenes de datos](../data-tools/add-new-data-sources.md)

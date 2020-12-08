@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: rellenar los controles ListObject con datos'
+description: Use el enlace de datos para agregar datos rápidamente al documento. También puede desconectar el objeto de lista para que muestre los datos pero ya no esté enlazado al origen de datos.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2941022cb434198298e9d098ef562efeaba4893f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8ce2ef20b56a1803af5356137b798d83a5f1457f
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544825"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846524"
 ---
 # <a name="how-to-fill-listobject-controls-with-data"></a>Cómo: rellenar los controles ListObject con datos
   Puede utilizar el enlace de datos como una manera de agregar datos rápidamente al documento. Después de enlazar datos a un objeto de lista, puede desconectar el objeto de lista para que muestre los datos, pero ya no esté enlazado al origen de datos.
@@ -56,7 +58,7 @@ ms.locfileid: "85544825"
 ## <a name="compile-the-code"></a>Compilar el código
  En este ejemplo de código se supone que dispone de un elemento <xref:Microsoft.Office.Tools.Excel.ListObject> existente denominado `list1` en la hoja de cálculo en la que aparece este código.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Ampliar documentos de Word y libros de Excel en complementos de VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Controles en documentos de Office](../vsto/controls-on-office-documents.md)
 - [Agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md)

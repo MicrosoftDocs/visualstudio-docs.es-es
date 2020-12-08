@@ -1,5 +1,7 @@
 ---
 title: Implementación de ejemplo de variables locales | Microsoft Docs
+description: Obtenga información sobre cómo Visual Studio obtiene las variables locales para un método del evaluador de expresiones en este artículo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 86aacb096001bdf634fe019ae9a28f01745c3ce0
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: aad77c9b9481ed6ae32c66260b1e3ef2a662c836
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011897"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847642"
 ---
 # <a name="sample-implementation-of-locals"></a>Implementación de ejemplo de variables locales
 > [!IMPORTANT]

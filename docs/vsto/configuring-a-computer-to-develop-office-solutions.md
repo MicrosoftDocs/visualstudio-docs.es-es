@@ -1,5 +1,7 @@
 ---
 title: Configurar un equipo para desarrollar soluciones de Office
+description: Obtenga información sobre cómo puede instalar una versión compatible de Visual Studio, la .NET Framework y Microsoft Office para poder crear complementos y personalizaciones de VSTO para Microsoft Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7a0304c217599e790b8cfa9e738245927336470e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3658f655c50c9d1a0775a8cc69dd65baf32d1408
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801846"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847266"
 ---
 # <a name="configure-a-computer-to-develop-office-solutions"></a>Configurar un equipo para desarrollar soluciones de Office
 
@@ -47,7 +49,7 @@ Si instala una versión compatible de Visual Studio, el .NET Framework, y Micros
 
 Si sigue teniendo problemas, consulte [Compatibilidad adicional con errores en las soluciones de Office](../vsto/additional-support-for-errors-in-office-solutions.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Introducción &#40;desarrollo de Office en Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Cómo: configurar un equipo para desarrollar soluciones de Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)
 - [Cómo: instalar el Visual Studio Tools para Office Runtime Redistributable](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)

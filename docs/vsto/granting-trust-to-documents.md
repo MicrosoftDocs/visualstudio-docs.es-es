@@ -1,5 +1,7 @@
 ---
 title: Conceder confianza a los documentos
+description: Obtenga información sobre cómo un proyecto de nivel de documento tiene los mismos requisitos de seguridad que los proyectos de nivel de aplicación, como firmar los manifiestos con un certificado o hacer clic en el mensaje de confianza.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a631e8d8cffe6bfde925dfbae4a7350e6a0ef95a
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 9d91a86f8596e0ed7a04ae68099c7c9ab6099a40
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "92298617"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847746"
 ---
 # <a name="grant-trust-to-documents"></a>Conceder confianza a los documentos
   Un proyecto de nivel de documento tiene los mismos requisitos de seguridad que los proyectos de nivel de aplicación, esto es, firmar los manifiestos con un certificado o hacer clic en el aviso de confianza. Además, el documento o libro debe encontrarse en un directorio designado como ubicación de confianza.
@@ -43,7 +45,7 @@ ms.locfileid: "92298617"
 
 - Puede almacenar el documento o libro de una solución de nivel de documento en el mismo directorio que el ensamblado o en otro directorio. Por ejemplo, el documento podría estar ubicado en un servidor de SharePoint y el ensamblado en un recurso compartido de red. Para obtener más información, vea [Cómo: publicar una solución de Office de nivel de documento en un servidor de SharePoint mediante ClickOnce](/previous-versions/bb608595(v=vs.110)).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Conceder confianza a las soluciones de Office](../vsto/granting-trust-to-office-solutions.md)
 - [Solucionar problemas de seguridad de soluciones de Office](../vsto/troubleshooting-office-solution-security.md)
 - [Proteger soluciones de Office](../vsto/securing-office-solutions.md)

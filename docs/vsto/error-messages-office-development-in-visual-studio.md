@@ -1,7 +1,8 @@
 ---
 title: Mensajes de error (desarrollo de Office en Visual Studio)
+description: Vea cómo cada tema de mensaje de error proporciona información sobre las posibles causas de un error y las posibles soluciones o soluciones alternativas para resolver el problema.
 titleSuffix: ''
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: error-reference
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7eb12578f10847c9afc6cbcef67e9b3d3b678db5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d5844c2422c9591e447e0511890d6a4941ebf73
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543551"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846095"
 ---
 # <a name="error-messages-office-development-in-visual-studio"></a>Mensajes de error (desarrollo de Office en Visual Studio)
   Cada tema de mensaje de error proporciona información sobre las posibles causas de un error y las posibles soluciones o alternativas para resolver el problema.

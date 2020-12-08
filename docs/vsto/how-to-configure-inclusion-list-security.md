@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: configurar la seguridad de la lista de inclusión'
+description: Configure el aviso de confianza de ClickOnce para controlar si los usuarios finales tienen la opción de instalar soluciones de Office guardando una decisión de confianza en la lista de inclusión.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 459cf3f33197939a916a5f11a94bbaf09e8142e3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1f9eca5150e019906805adf40e5c9b6af8a3c14e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541640"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846732"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>Cómo: configurar la seguridad de la lista de inclusión
   Si tiene permisos de administrador, puede configurar el [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] aviso de confianza para controlar si los usuarios finales tienen la opción de instalar soluciones de Office guardando una decisión de confianza en la lista de inclusión. Para obtener información sobre las listas de inclusión, consulte [confiar en las soluciones de Office mediante listas de inclusión](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).
@@ -40,9 +42,9 @@ ms.locfileid: "85541640"
 
 1. Abra el Editor del Registro:
 
-    1. Haga clic en **Inicio**y, a continuación, haga clic en **Ejecutar**.
+    1. Haga clic en **Inicio** y, a continuación, haga clic en **Ejecutar**.
 
-    2. En el cuadro **abrir** , escriba **regedt32.exe**y, a continuación, haga clic en **Aceptar**.
+    2. En el cuadro **abrir** , escriba **regedt32.exe** y, a continuación, haga clic en **Aceptar**.
 
 2. Busque la siguiente clave del registro:
 
@@ -52,7 +54,7 @@ ms.locfileid: "85541640"
 
 3. Agregue las siguientes subclaves como **valor de cadena**, si aún no existen, con los valores asociados.
 
-    |Subclave de valor de cadena|Value|
+    |Subclave de valor de cadena|Valor|
     |-------------------------|-----------|
     |**Internet**|**AuthenticodeRequired**|
     |**UntrustedSites**|**Deshabilitado**|
@@ -99,9 +101,9 @@ ms.locfileid: "85541640"
 
 1. Abra el Editor del Registro:
 
-    1. Haga clic en **Inicio**y, a continuación, haga clic en **Ejecutar**.
+    1. Haga clic en **Inicio** y, a continuación, haga clic en **Ejecutar**.
 
-    2. En el cuadro **abrir** , escriba **regedt32.exe**y, a continuación, haga clic en **Aceptar**.
+    2. En el cuadro **abrir** , escriba **regedt32.exe** y, a continuación, haga clic en **Aceptar**.
 
 2. Busque la siguiente clave del registro:
 
@@ -111,7 +113,7 @@ ms.locfileid: "85541640"
 
 3. Agregue las siguientes subclaves como **valor de cadena**, si aún no existen, con los valores asociados.
 
-    |Subclave de valor de cadena|Value|
+    |Subclave de valor de cadena|Valor|
     |-------------------------|-----------|
     |**UntrustedSites**|**Deshabilitado**|
     |**Internet**|**AuthenticodeRequired**|
@@ -158,9 +160,9 @@ ms.locfileid: "85541640"
 
 1. Abra el Editor del Registro:
 
-    1. Haga clic en **Inicio**y, a continuación, haga clic en **Ejecutar**.
+    1. Haga clic en **Inicio** y, a continuación, haga clic en **Ejecutar**.
 
-    2. En el cuadro **abrir** , escriba **regedt32.exe**y, a continuación, haga clic en **Aceptar**.
+    2. En el cuadro **abrir** , escriba **regedt32.exe** y, a continuación, haga clic en **Aceptar**.
 
 2. Cree la siguiente clave del registro si aún no existe:
 
@@ -168,7 +170,7 @@ ms.locfileid: "85541640"
 
 3. Agregue las siguientes subclaves como **valor de cadena**, si aún no existen, con los valores asociados.
 
-    |Subclave de valor de cadena|Value|
+    |Subclave de valor de cadena|Valor|
     |-------------------------|-----------|
     |**UntrustedSites**|**Deshabilitado**|
     |**Internet**|**Deshabilitado**|
@@ -207,6 +209,6 @@ ms.locfileid: "85541640"
 
 3. Compile y ejecute la aplicación.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Confiar en soluciones de Office mediante listas de inclusión](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)
 - [Proteger soluciones de Office](../vsto/securing-office-solutions.md)

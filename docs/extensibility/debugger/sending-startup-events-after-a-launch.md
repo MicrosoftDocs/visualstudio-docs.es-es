@@ -1,5 +1,7 @@
 ---
 title: Envío de eventos de inicio después de un inicio | Microsoft Docs
+description: Obtenga información sobre la serie de eventos de inicio que el motor de depuración envía a la sesión de depuración después de que el motor de depuración se adjunte a un programa.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c71db002420a2b822bffd34f2ae05e712f6a4bb9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 99b094fd1019e0d7dea09e2953cb4f31e03b80dc
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713011"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847889"
 ---
 # <a name="send-startup-events-after-a-launch"></a>Enviar eventos de inicio después de un inicio
 Una vez que el motor DE depuración (DE) se adjunta al programa, envía una serie de eventos de inicio de nuevo a la sesión de depuración.

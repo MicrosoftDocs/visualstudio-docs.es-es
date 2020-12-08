@@ -1,8 +1,8 @@
 ---
 title: Acceso VBA para crear o abrir un proyecto de sistema de VSTO
 titleSuffix: ''
-decsprition: You must explicitly enable access to the Office VBA project system before you can create or open a Visual Studio Tools for Office system project
-ms.custom: seodec18
+description: Obtenga información sobre cómo habilitar explícitamente el acceso al sistema de proyectos de VBA de Office para poder crear o abrir un proyecto de Visual Studio Tools para Office System.
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 71e30a89bdf8547eab9ed9c51b07c49e014b7302
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 62477f7cd37a7d5a416e8f42fb7eb2d2a8e43828
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584864"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846134"
 ---
 # <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>Habilitar el acceso a VBA para crear o abrir un Visual Studio Tools para el proyecto de sistema de Microsoft Office
 
@@ -53,23 +53,23 @@ Debe habilitar explícitamente el acceso al sistema de proyectos de Visual Basic
 
 2. Haga clic en **Opciones**.
 
-3. Haga clic en **centro de confianza**y, a continuación, en configuración del **centro de confianza**.
+3. Haga clic en **centro de confianza** y, a continuación, en configuración del **centro de confianza**.
 
 4. En el **centro de confianza**, haga clic en **configuración de macro**.
 
 5. Active o desactive **el acceso de confianza al modelo de objetos de proyecto de VBA** para habilitar o deshabilitar el acceso a proyectos de Visual Basic.
 
-6. Haga clic en **OK**.
+6. Haga clic en **Aceptar**.
 
 ### <a name="to-enable-or-disable-access-to-visual-basic-projects-with-the-2007-microsoft-office-system"></a>Para habilitar o deshabilitar el acceso a Visual Basic proyectos con el sistema Microsoft Office 2007
 
-1. En el menú **herramientas** de Word o Excel, elija **macro**y, a continuación, haga clic en **seguridad**.
+1. En el menú **herramientas** de Word o Excel, elija **macro** y, a continuación, haga clic en **seguridad**.
 
 2. En el cuadro de diálogo **seguridad** , haga clic en la pestaña **editores de confianza** .
 
 3. Seleccione esta casilla para habilitar o deshabilitar el **acceso de confianza a Visual Basic proyecto**.
 
-4. Haga clic en **OK**.
+4. Haga clic en **Aceptar**.
 
 ## <a name="to-set-your-office-macro-security-level"></a>Para establecer el nivel de seguridad de las macros de Office
 
@@ -77,17 +77,17 @@ Debe habilitar explícitamente el acceso al sistema de proyectos de Visual Basic
 
 2. Haga clic en **Opciones**.
 
-3. Haga clic en **centro de confianza**y, a continuación, en configuración del **centro de confianza**.
+3. Haga clic en **centro de confianza** y, a continuación, en configuración del **centro de confianza**.
 
 4. En el **centro de confianza**, haga clic en **configuración de macro**.
 
 5. En la sección **configuración de macro** , seleccione el valor deseado.
 
-6. Haga clic en **OK**.
+6. Haga clic en **Aceptar**.
 
 ### <a name="to-set-your-office-macro-security-level-with-the-2007-microsoft-office-system"></a>Para establecer el nivel de seguridad de macros de Office con el sistema Microsoft Office 2007
 
-1. En el menú **herramientas** de Word o Excel, elija **macro**y, a continuación, haga clic en **seguridad**.
+1. En el menú **herramientas** de Word o Excel, elija **macro** y, a continuación, haga clic en **seguridad**.
 
 2. En la pestaña **nivel de seguridad** , seleccione el valor que desee.
 
@@ -101,13 +101,13 @@ Debe habilitar explícitamente el acceso al sistema de proyectos de Visual Basic
 
 3. Haga clic en **Cambiar**.
 
-4. Seleccione **Agregar o quitar características**y, a continuación, haga clic en **continuar**.
+4. Seleccione **Agregar o quitar características** y, a continuación, haga clic en **continuar**.
 
-5. Seleccione **elegir personalización avanzada de aplicaciones**y, a continuación, haga clic en **siguiente**.
+5. Seleccione **elegir personalización avanzada de aplicaciones** y, a continuación, haga clic en **siguiente**.
 
 6. Expanda **características compartidas de Office** en la lista **Elija las opciones de actualización para aplicaciones y herramientas** .
 
-7. Abra el menú desplegable situado junto a **Visual Basic para aplicaciones**y, a continuación, haga clic en **Ejecutar desde mi PC**.
+7. Abra el menú desplegable situado junto a **Visual Basic para aplicaciones** y, a continuación, haga clic en **Ejecutar desde mi PC**.
 
 8. Haga clic en **Continuar**.
 
@@ -121,9 +121,9 @@ Debe habilitar explícitamente el acceso al sistema de proyectos de Visual Basic
 
 3. Haga clic en **Cambiar**.
 
-4. Seleccione **reinstalar o reparar**y, a continuación, haga clic en **siguiente**.
+4. Seleccione **reinstalar o reparar** y, a continuación, haga clic en **siguiente**.
 
-5. Seleccione **detectar y reparar errores en la instalación de Office**y, a continuación, haga clic en **instalar**.
+5. Seleccione **detectar y reparar errores en la instalación de Office** y, a continuación, haga clic en **instalar**.
 
 ## <a name="see-also"></a>Vea también
 - [Proteger soluciones de Office](../vsto/securing-office-solutions.md)

@@ -1,5 +1,7 @@
 ---
 title: Cómo afecta autosave a las soluciones de Office
+description: Obtenga información acerca de cómo autosave es una característica de Excel, PowerPoint y Word que guarda automáticamente y continuamente las ediciones.
+ms.custom: SEO-VS-2020
 ms.date: 10/26/2018
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ceaf13e24d56060e3d962e108d43c4d87d69fb8c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6108ee35c79ec475de70e874ce0dc6d872cc62c6
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62826688"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846797"
 ---
 # <a name="how-autosave-impacts-office-solutions"></a>Cómo afecta autosave a las soluciones de Office
 
@@ -26,5 +28,5 @@ Autosave es una característica de Excel, PowerPoint y Word que guarda automáti
 > [!NOTE]
 > Autosave para escritorio de Windows Word, Excel y PowerPoint se presentó en 2017 y está disponible actualmente para los suscriptores de Office365. Si compró una licencia perpetua a Office 2016 o una versión anterior, actualmente no tiene acceso a la característica de coautoría. (Sin embargo, Excel online, Excel para Android, Excel para iOS y Excel Mobile en la tienda Windows admiten esta característica).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Desarrollo de soluciones de Office](./developing-office-solutions.md)

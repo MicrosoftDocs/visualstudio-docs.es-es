@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: agregar elementos XML personalizados a personalizaciones de nivel de documento'
+description: Obtenga información sobre cómo almacenar datos XML en un libro de Microsoft Office Excel o Microsoft Office documento de Word creando un elemento XML personalizado en una personalización de nivel de documento.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 74bceeeabdaa46e6c1a35b5ab76de6a180d16d53
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 9b2f3b4e72f9255099ed7190867faba5585ced4c
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298449"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847435"
 ---
 # <a name="how-to-add-custom-xml-parts-to-document-level-customizations"></a>Cómo: agregar elementos XML personalizados a personalizaciones de nivel de documento
   Puede almacenar datos XML en un libro de Microsoft Office Excel o un documento de Microsoft Office Word creando un elemento XML personalizado en una personalización de nivel de documento. Para obtener más información, vea [información general sobre los elementos XML personalizados](../vsto/custom-xml-parts-overview.md).
@@ -58,6 +60,6 @@ ms.locfileid: "92298449"
 ## <a name="robust-programming"></a>Programación sólida
  Para simplificar, este ejemplo usa una cadena XML que se define como una variable local en el método. Normalmente, debe obtener el XML desde un origen externo, como un archivo o una base de datos.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Información general sobre los elementos XML personalizados](../vsto/custom-xml-parts-overview.md)
 - [Cómo: agregar elementos XML personalizados a documentos mediante complementos de VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)

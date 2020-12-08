@@ -1,5 +1,7 @@
 ---
 title: Contraer intervalos o selecciones en documentos mediante programación
+description: Sepa que si está trabajando con un objeto de intervalo o selección, es posible que desee cambiar la selección a un punto de inserción antes de insertar texto.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4bb22f97b6a876029ff5d984abf9bda32cfd3fbc
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: cba19d8cb6c26defcbb7cf39f461a45bf217b5a5
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585293"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847655"
 ---
 # <a name="how-to-programmatically-collapse-ranges-or-selections-in-documents"></a>Cómo: contraer intervalos o selecciones en documentos mediante programación
   Si está trabajando con un objeto <xref:Microsoft.Office.Interop.Word.Range> o <xref:Microsoft.Office.Interop.Word.Selection> , puede que desee cambiar la selección a un punto de inserción antes de insertar el texto, para no sobrescribir el texto existente. Los <xref:Microsoft.Office.Interop.Word.Range> objetos y <xref:Microsoft.Office.Interop.Word.Selection> tienen un método de contracción, que hace uso de los <xref:Microsoft.Office.Interop.Word.WdCollapseDirection> valores de enumeración:
