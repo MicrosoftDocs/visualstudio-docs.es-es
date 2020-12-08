@@ -1,5 +1,7 @@
 ---
 title: Instrucciones para crear áreas de formulario de Outlook
+description: Obtenga información sobre las directrices para crear áreas de formulario de Outlook que pueden ayudarle a optimizar las áreas del formulario y a evitar posibles problemas.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a962b1ae2bff7b9a954204485a6ee73a3b63eb7b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aaf6b96548a9856833fcd1768764ed914da30a07
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255954"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848097"
 ---
 # <a name="guidelines-to-create-outlook-form-regions"></a>Instrucciones para crear áreas de formulario de Outlook
   La siguiente información puede ayudarle a optimizar las áreas del formulario y a evitar posibles problemas:
@@ -78,7 +80,7 @@ ms.locfileid: "71255954"
 
 - Para el icono **Página** , use un archivo de formato PNG (Portable Network Graphics).
 
-- Los iconos**Ventana** deben tener 32 por 32 píxeles.
+- Los iconos **Ventana** deben tener 32 por 32 píxeles.
 
 - Todos los demás iconos deben ser de 16 por 16 píxeles.
 
@@ -86,7 +88,7 @@ ms.locfileid: "71255954"
 
   El icono de **ventana** aparece en el área de notificación y en el cuadro de diálogo de la **Alt** + **pestaña** Alt para los elementos abiertos que muestran las áreas de formulario de reemplazo o de reemplazo completo.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Obtener acceso a un área de formulario en tiempo de ejecución](../vsto/accessing-a-form-region-at-run-time.md)
 - [Crear áreas de formulario de Outlook](../vsto/creating-outlook-form-regions.md)
 - [Tutorial: diseñar un área de formulario de Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)

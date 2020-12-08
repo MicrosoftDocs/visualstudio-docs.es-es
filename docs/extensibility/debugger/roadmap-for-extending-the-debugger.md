@@ -1,5 +1,7 @@
 ---
 title: Guía básica para extender el depurador | Microsoft Docs
+description: La documentación de depuración de Visual Studio incluye ejemplos, una referencia y varios escenarios que muestran las maneras típicas de personalizar el depurador.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d97a7edd62540d12a0a60d15b3179ca0a623c26
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 2574fe76faadf4284088c0d47592d0c5ba0d38f9
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011832"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848344"
 ---
 # <a name="roadmap-for-extending-the-debugger"></a>Guía básica para extender el depurador
 En esta documentación se proporciona información de referencia y guía para extender el [!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)] depurador con [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] .
@@ -47,7 +49,7 @@ En esta documentación se proporciona información de referencia y guía para ex
 
    [Implementación de un proveedor de Puerto](../../extensibility/debugger/implementing-a-port-supplier.md)
 
-   [Ejemplos](../../extensibility/debugger/visual-studio-debugging-samples.md)
+   [Muestras](../../extensibility/debugger/visual-studio-debugging-samples.md)
 
 ## <a name="see-also"></a>Consulte también
 - [Introducción](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: agregar controles a la vista backstage '
+description: Obtenga información acerca de cómo puede usar el diseñador de la cinta de opciones para agregar controles al menú que se abre al hacer clic en la pestaña archivo.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5b4ea5cdcd869f16f987e9431359511831af9573
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9f0fa33318e2407b01178971c6965b8ea035dd42
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538351"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848175"
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>Cómo: agregar controles a la vista backstage
   Puede usar el diseñador de la cinta de opciones para agregar controles al menú que se abre al hacer clic en la pestaña **archivo** . Al ejecutar la aplicación, los controles que se agregan a la pestaña **archivo** muestran un grupo denominado **Complementos**.
@@ -62,9 +64,9 @@ ms.locfileid: "85538351"
 
 4. Arrastre controles para moverlos a nuevas posiciones en el menú.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Información general sobre la cinta](../vsto/ribbon-overview.md)
-- [Diseñador de la cinta](../vsto/ribbon-designer.md)
+- [Diseñador de la cinta de opciones](../vsto/ribbon-designer.md)
 - [Ribbon XML](../vsto/ribbon-xml.md)
 - [Cómo: empezar a personalizar la cinta de opciones](../vsto/how-to-get-started-customizing-the-ribbon.md)
 - [Tutorial: crear una pestaña personalizada mediante el diseñador de la cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)

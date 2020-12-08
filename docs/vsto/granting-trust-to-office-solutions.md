@@ -1,5 +1,7 @@
 ---
 title: Conceder confianza a las soluciones de Office
+description: Para conceder confianza a las soluciones de Office, debe modificar la Directiva de seguridad de cada equipo de destino para que confíe en el ensamblado de la solución, el manifiesto de implementación y el documento.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cf7a68d5d3567305e4f70049d76a1c260ddecf25
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f0b81c034ed0f8934da378dc214191d3be1f4506
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315244"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848331"
 ---
 # <a name="grant-trust-to-office-solutions"></a>Conceder confianza a las soluciones de Office
   Conceder confianza a las soluciones de Office significa modificar la Directiva de seguridad de cada equipo de destino para que confíe en el ensamblado de la solución, el manifiesto de la aplicación, el manifiesto de implementación y el documento. Tanto usted como el usuario final pueden conceder confianza a la solución de Office.

@@ -1,5 +1,7 @@
 ---
 title: Bookmark (control)
+description: Obtenga información sobre cómo el control Bookmark es un marcador que tiene un nombre único, expone eventos y se puede enlazar a datos.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2b8557581e93c8d2ba5a54a13c04d5de74b24f71
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 53f68bfd9abd26d9dfcb9e253c412a1ddf3c0e28
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255144"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848370"
 ---
 # <a name="bookmark-control"></a>Bookmark (control)
   El control <xref:Microsoft.Office.Tools.Word.Bookmark> es un marcador que tiene un nombre único, expone eventos y se puede enlazar a datos. El marcador se puede usar como marcador de posición para marcar un elemento o una ubicación en un documento de Microsoft Office Word. El control <xref:Microsoft.Office.Tools.Word.Bookmark> s una combinación de un objeto <xref:Microsoft.Office.Interop.Word.Bookmark> y un objeto <xref:Microsoft.Office.Interop.Word.Range> .
@@ -38,7 +40,7 @@ ms.locfileid: "71255144"
 
  En los proyectos de nivel de documento, puede enlazar datos a marcadores mediante la ventana **Orígenes de datos** . Para obtener más información, consulte [Cómo: rellenar documentos con datos de objetos](../vsto/how-to-populate-documents-with-data-from-objects.md).
 
-## <a name="formatting"></a>Formato
+## <a name="formatting"></a>Aplicación de formato
  El formato que se puede aplicar a un control <xref:Microsoft.Office.Interop.Word.Bookmark> también puede aplicarse a un control <xref:Microsoft.Office.Tools.Word.Bookmark> . Este formato incluye fuentes, sangrías, espaciado, numeración y estilos.
 
 ## <a name="assign-text-to-the-bookmark"></a>Asignar texto al marcador
@@ -109,7 +111,7 @@ Los eventos siguientes están disponibles para el control <xref:Microsoft.Office
 
 - <xref:Microsoft.Office.Tools.Word.Bookmark.SelectionChange>
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Automatizar Word con objetos extendidos](../vsto/automating-word-by-using-extended-objects.md)
 - [Cómo: agregar controles Bookmark a documentos de Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)

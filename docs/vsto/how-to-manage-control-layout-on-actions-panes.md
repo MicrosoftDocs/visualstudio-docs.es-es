@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: administrar el diseño de controles en paneles de acciones'
+description: Obtenga información sobre cómo puede administrar el diseño de controles en los paneles de acciones escribiendo código para apilar correctamente los controles de usuario.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b6df90847000560299b8b1a6f259ffa6e7df0729
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dbee49a97ab6cb3e6084950e53f30b3cb6ce1b7c
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520152"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848253"
 ---
 # <a name="how-to-manage-control-layout-on-actions-panes"></a>Cómo: administrar el diseño de controles en paneles de acciones
   De forma predeterminada, un panel de acciones se acopla a la derecha de un documento o una hoja de cálculo. sin embargo, se puede acoplar a la izquierda, la parte superior o la parte inferior. Si usa varios controles de usuario, puede escribir código para apilar correctamente los controles de usuario en el panel de acciones. Para obtener más información, vea [información general del panel de acciones](../vsto/actions-pane-overview.md).
@@ -65,7 +67,7 @@ ms.locfileid: "85520152"
 
 - Proyecto de nivel de documento de Word con un panel de acciones que contiene varios controles de usuario o controles de panel de acciones anidados.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Información general del panel de acciones](../vsto/actions-pane-overview.md)
 - [Cómo: agregar un panel de acciones a documentos de Word o libros de Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
 - [Cómo: agregar un panel de acciones a documentos de Word o libros de Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)

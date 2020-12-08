@@ -1,5 +1,7 @@
 ---
 title: Acciones personalizadas en áreas de formulario de Outlook
+description: Obtenga información sobre cómo los botones para mostrar acciones, como responder y responder a todos, permiten a los usuarios responder a un Microsoft Office elemento de Outlook.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,15 +15,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 817cf9fe8698c2908e873246a8971f90fe72b460
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4fe77cddcfe810e73d13de81cc7280969c1d1b1c
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254438"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848201"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Acciones personalizadas en áreas de formulario de Outlook
-  Acciones que muestran botones que permiten a los usuarios responder a un Microsoft Office elemento de Outlook. Por ejemplo, para responder a un elemento de correo, los usuarios pueden hacer clic en los botones **responder**, **responder a todos**o **reenviar** acción. Cada una de estas acciones crea un nuevo elemento de correo y rellena los campos del elemento usando información del elemento original.
+  Acciones que muestran botones que permiten a los usuarios responder a un Microsoft Office elemento de Outlook. Por ejemplo, para responder a un elemento de correo, los usuarios pueden hacer clic en los botones **responder**, **responder a todos** o **reenviar** acción. Cada una de estas acciones crea un nuevo elemento de correo y rellena los campos del elemento usando información del elemento original.
 
  Puede crear una acción personalizada que abra cualquier tipo de elemento de Outlook. Por ejemplo, puede Agregar una acción personalizada que abra una nueva cita o elemento de tarea. Establezca las propiedades de una acción personalizada o use código personalizado para rellenar los campos del nuevo elemento. Las acciones personalizadas aparecen en la lista desplegable **acciones personalizadas** de un elemento que está abierto en una ventana del inspector de Outlook.
 
@@ -51,7 +53,7 @@ ms.locfileid: "71254438"
 ## <a name="customize-a-custom-action-at-run-time"></a>Personalizar una acción personalizada en tiempo de ejecución
  También puede Agregar el comportamiento a la acción personalizada mediante código. Por ejemplo, puede agregar código que tome los nombres de los destinatarios de correo electrónico y agregue esos nombres como asistentes en un nuevo elemento de cita. Para ello, controle el evento [CustomAction](/office/vba/api/Outlook.MailItem.CustomAction) del [objeto MailItem](/office/vba/api/Outlook.MailItem).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Crear áreas de formulario de Outlook](../vsto/creating-outlook-form-regions.md)
 - [Tutorial: diseñar un área de formulario de Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
 - [Asociar un área de formulario a una clase de mensaje de Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)

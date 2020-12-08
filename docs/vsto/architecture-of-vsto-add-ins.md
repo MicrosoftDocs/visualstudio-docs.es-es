@@ -1,5 +1,7 @@
 ---
 title: Architecture of VSTO Add-ins
+description: Los complementos de VSTO creados en Visual Studio tienen características arquitectónicas que resaltan la estabilidad y la seguridad, y les permiten trabajar en estrecha colaboración con Microsoft Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 401ce9b8421cd636fc72c59dcd6641ff4e05d968
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 451ae0bd466403819a5b4e53d76070876d762c38
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90842922"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848357"
 ---
 # <a name="architecture-of-vsto-add-ins"></a>Architecture of VSTO Add-ins
   Los complementos de VSTO creados con Office Developer Tools en Visual Studio tienen unas características arquitectónicas que resaltan la estabilidad y seguridad, y que pueden trabajar en estrecha colaboración con Microsoft Office. En este tema, se describen los siguientes aspectos de los complementos de VSTO:

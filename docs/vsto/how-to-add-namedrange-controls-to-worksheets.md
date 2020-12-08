@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: agregar controles NamedRange a hojas de cálculo'
+description: Obtenga información sobre cómo puede Agregar controles NamedRange a una hoja de cálculo de Excel Microsoft Office en tiempo de diseño y en tiempo de ejecución en proyectos de nivel de documento.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 448a44c8f4bc9380a4ef1ebfec33b264e797cac8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 54487ed7f7cdcb7e7da024e4b96fcbb6d5c2cfe4
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543526"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848149"
 ---
 # <a name="how-to-add-namedrange-controls-to-worksheets"></a>Cómo: agregar controles NamedRange a hojas de cálculo
   Puede agregar controles <xref:Microsoft.Office.Tools.Excel.NamedRange> a una hoja de cálculo de Microsoft Office Excel en tiempo de diseño y en tiempo de ejecución, en los proyectos de nivel de documento.
@@ -39,7 +41,7 @@ ms.locfileid: "85543526"
   Para obtener más información sobre <xref:Microsoft.Office.Tools.Excel.NamedRange> los controles, vea [NamedRange (control](../vsto/namedrange-control.md)).
 
 ## <a name="add-namedrange-controls-at-design-time"></a><a name="designtime"></a> Agregar controles NamedRange en tiempo de diseño
- Existen varias maneras de agregar controles <xref:Microsoft.Office.Tools.Excel.NamedRange> a una hoja de cálculo en un proyecto de nivel de documento en tiempo de diseño: desde Excel, desde el **Cuadro de Herramientas**de Visual Studio y desde la ventana **Orígenes de datos** .
+ Existen varias maneras de agregar controles <xref:Microsoft.Office.Tools.Excel.NamedRange> a una hoja de cálculo en un proyecto de nivel de documento en tiempo de diseño: desde Excel, desde el **Cuadro de Herramientas** de Visual Studio y desde la ventana **Orígenes de datos** .
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 

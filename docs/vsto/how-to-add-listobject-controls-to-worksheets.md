@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: agregar controles ListObject a hojas de cálculo'
+description: Obtenga información sobre cómo puede Agregar controles ListObject a una hoja de cálculo de Excel Microsoft Office en tiempo de diseño y en tiempo de ejecución en proyectos de nivel de documento.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4c53d820170c359e568b0a7b0ab5711a632d9eba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5dd72db2678f448158f268b790d39d4f6e44a737
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538325"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848162"
 ---
 # <a name="how-to-add-listobject-controls-to-worksheets"></a>Cómo: agregar controles ListObject a hojas de cálculo
   Puede agregar controles <xref:Microsoft.Office.Tools.Excel.ListObject> a una hoja de cálculo de Microsoft Office Excel en tiempo de diseño y en tiempo de ejecución, en los proyectos de nivel de documento.
@@ -38,7 +40,7 @@ ms.locfileid: "85538325"
   Para obtener más información sobre <xref:Microsoft.Office.Tools.Excel.ListObject> los controles, vea [ListObject (control](../vsto/listobject-control.md)).
 
 ## <a name="add-listobject-controls-at-design-time"></a><a name="designtime"></a> Agregar controles ListObject en tiempo de diseño
- Hay varias maneras de agregar <xref:Microsoft.Office.Tools.Excel.ListObject> controles a una hoja de cálculo en un proyecto de nivel de documento en tiempo de diseño: desde Excel, desde el **cuadro de herramientas**de Visual Studio y desde la ventana **orígenes de datos** .
+ Hay varias maneras de agregar <xref:Microsoft.Office.Tools.Excel.ListObject> controles a una hoja de cálculo en un proyecto de nivel de documento en tiempo de diseño: desde Excel, desde el **cuadro de herramientas** de Visual Studio y desde la ventana **orígenes de datos** .
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -86,7 +88,7 @@ ms.locfileid: "85538325"
      [!code-csharp[Trin_Excel_Dynamic_Controls#8](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#8)]
      [!code-vb[Trin_Excel_Dynamic_Controls#8](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#8)]
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Ampliar documentos de Word y libros de Excel en complementos de VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Controles en documentos de Office](../vsto/controls-on-office-documents.md)
 - [ListObject (control)](../vsto/listobject-control.md)
