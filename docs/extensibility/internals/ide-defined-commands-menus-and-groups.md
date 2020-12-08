@@ -1,5 +1,7 @@
 ---
-title: Comandos, menús y grupos definidos por el IDE | Microsoft Docs
+title: IDE-Defined comandos, menús y grupos | Microsoft Docs
+description: Obtenga información sobre los menús, comandos y grupos de comandos que se definen en el entorno de desarrollo integrado (IDE) de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,17 +14,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6557f49b019a6793698dabe852919ec2e9f28cfd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6314199fdf850c377825ee31e58cd9f315c5f672
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707714"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761028"
 ---
 # <a name="ide-defined-commands-menus-and-groups"></a>Grupos, menús y comandos definidos por el IDE
 Muchos menús, comandos y grupos de comandos ya están definidos para su uso en el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE. Estos comandos también están disponibles para su uso al extender [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
-## <a name="finding-environment-defined-commands"></a>Buscar comandos definidos por el entorno
+## <a name="finding-environment-defined-commands"></a>Buscar comandos Environment-Defined
  Los comandos de entorno se definen en un conjunto de cuatro archivos. Vsct:
 
 - SharedCmdDef. Vsct

@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: generar información del registro para un instalador | Microsoft Docs'
+description: Aprenda a usar la utilidad de RegPkg.exe en Visual Studio para generar información del registro de VSPackage para la incorporación en un paquete de instalación de Windows Installer.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,19 +14,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0140ea2e1b894754b0cf35bc75676f277b12a0a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 082833c97706868261e39b50377c158f90b46a4a
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905467"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761230"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>Cómo: generar información del registro para un instalador
 
 La utilidad *RegPkg.exe* se puede usar para generar un manifiesto de registro para un VSPackage administrado. El manifiesto se puede incorporar a un paquete de instalación de Windows Installer. RegPkg también puede generar un archivo que se puede incluir en un archivo de origen de instalación basado en el [conjunto de herramientas de Windows Installer XML](https://wixtoolset.org/).
 
 > [!IMPORTANT]
-> RegPkg genera nombres de ruta de acceso específicos del sistema de desarrollo, por lo que cada vez que use RegPkg, debe editar la salida para usar las propiedades con formato Windows Installer apropiadas. Por ejemplo, el `InprocServer32` valor debe ser * \<SystemFolder\>mscoree.dll* y las rutas de acceso deben usar *\<#filekey\>* y *\<$componentkey\>* . Ajustar la salida de este modo es compatible con los equipos con Windows instalado en una unidad diferente o en un directorio diferente, los nombres de directorio localizados y las rutas de acceso que los usuarios pueden elegir. Para obtener más información, consulte [formato](https://msdn.microsoft.com/library?url=/library/msi/setup/formatted.asp) en el SDK de Windows Installer. Si sigue las convenciones de RegPkg para las rutas de acceso del sistema de desarrollo (por ejemplo, los identificadores de archivo del formulario *File_ \<filename\> *), deberá realizar menos cambios.
+> RegPkg genera nombres de ruta de acceso específicos del sistema de desarrollo, por lo que cada vez que use RegPkg, debe editar la salida para usar las propiedades con formato Windows Installer apropiadas. Por ejemplo, el `InprocServer32` valor debe ser *\<SystemFolder\>mscoree.dll* y las rutas de acceso deben usar *\<#filekey\>* y *\<$componentkey\>* . Ajustar la salida de este modo es compatible con los equipos con Windows instalado en una unidad diferente o en un directorio diferente, los nombres de directorio localizados y las rutas de acceso que los usuarios pueden elegir. Para obtener más información, consulte [formato](https://msdn.microsoft.com/library?url=/library/msi/setup/formatted.asp) en el SDK de Windows Installer. Si sigue las convenciones de RegPkg para las rutas de acceso del sistema de desarrollo (por ejemplo, los identificadores de archivo del formulario *File_ \<filename\>*), deberá realizar menos cambios.
 
 ## <a name="to-create-a-registration-manifest"></a>Para crear un manifiesto de registro
 
@@ -181,7 +183,7 @@ La utilidad *RegPkg.exe* se puede usar para generar un manifiesto de registro pa
     </Include>
     ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Registrar VSPackages](../../extensibility/registering-and-unregistering-vspackages.md)
 - [VSPackages](../../extensibility/internals/vspackages.md)

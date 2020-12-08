@@ -1,5 +1,7 @@
 ---
 title: Proporcionar compatibilidad con la esquematización en un servicio de lenguaje | Microsoft Docs
+description: Obtenga información sobre cómo proporcionar compatibilidad de esquematización ampliada en un servicio de lenguaje heredado mediante la adición de regiones de esquema controladas por el editor y regiones de esquema controladas por el cliente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 450ef1430e86467d116cc635a27600756bc36075
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9397ff17ba80368a86ba03260b3c5af3759bfe8d
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905288"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761366"
 ---
 # <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>Cómo: proporcionar compatibilidad de esquematización ampliada en un servicio de lenguaje heredado
 Hay dos opciones para ampliar la compatibilidad con la esquematización del lenguaje más allá del comando **contraer a definiciones** . Puede Agregar regiones de esquema controladas por el editor y agregar regiones de esquema controladas por el cliente.

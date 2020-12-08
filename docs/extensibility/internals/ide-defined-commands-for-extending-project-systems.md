@@ -1,5 +1,7 @@
 ---
-title: Comandos definidos por el IDE para ampliar sistemas de proyectos | Microsoft Docs
+title: IDE-Defined comandos para ampliar sistemas de proyectos | Microsoft Docs
+description: Obtenga información sobre los comandos y los grupos de comandos definidos en el entorno de desarrollo integrado (IDE) de Visual Studio que se usan para extender los sistemas de proyecto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61c0b2924548f50ad650389e3ad81759be1986a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d5147f4e03b019b083613a77afe95b95e9e033a
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707732"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761171"
 ---
 # <a name="ide-defined-commands-for-extending-project-systems"></a>Comandos definidos por el IDE para ampliar sistemas del proyecto
 Si desea ampliar los sistemas del proyecto, puede usar comandos y grupos de comandos proporcionados por el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.

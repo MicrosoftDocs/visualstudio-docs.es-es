@@ -1,5 +1,7 @@
 ---
 title: Visor de la biblioteca de imágenes | Microsoft Docs
+description: Obtenga información sobre la herramienta Visor de la biblioteca de imágenes de Visual Studio que carga y busca manifiestos de imagen, lo que le permite ver y manipular atributos de imagen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9714879f93af052e244134ce225b07317455921
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ae9090604a16196c43b80140395eb3401215d665
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536349"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761276"
 ---
 # <a name="image-library-viewer"></a>Visor de la biblioteca de imágenes
 La herramienta Visor de la biblioteca de imágenes de Visual Studio puede cargar y buscar manifiestos de imagen, lo que permite al usuario manipularlos de la misma forma que lo haría Visual Studio. El usuario puede modificar el fondo, los tamaños, los PPP, el contraste alto y otros valores de configuración. La herramienta también muestra la información de carga de cada manifiesto de imagen y muestra información de origen de cada imagen en el manifiesto de imagen. Esta herramienta es útil para:
@@ -68,9 +70,9 @@ La herramienta Visor de la biblioteca de imágenes de Visual Studio puede cargar
 </Symbols>
 ```
 
-|**Subelemento**|**Definition**|
+|**Subelemento**|**Definición**|
 |-|-|
-|Importación|Importa los símbolos del archivo de manifiesto especificado para su uso en el manifiesto actual.|
+|Importar|Importa los símbolos del archivo de manifiesto especificado para su uso en el manifiesto actual.|
 |Guid|El símbolo representa un GUID y debe coincidir con el formato de GUID.|
 |Id.|El símbolo representa un identificador y debe ser un entero no negativo.|
 |String|El símbolo representa un valor de cadena arbitrario.|
@@ -108,7 +110,7 @@ La herramienta Visor de la biblioteca de imágenes de Visual Studio puede cargar
 </Image>
 ```
 
-|**Atributo**|**Definition**|
+|**Atributo**|**Definición**|
 |-|-|
 |Guid|Desee Parte del GUID del moniker de la imagen|
 |Id.|Desee La parte de identificador del moniker de imagen|
@@ -124,16 +126,16 @@ La herramienta Visor de la biblioteca de imágenes de Visual Studio puede cargar
  </Source>
 ```
 
-|**Atributo**|**Definition**|
+|**Atributo**|**Definición**|
 |-|-|
 |Identificador URI|Desee URI que define dónde se puede cargar la imagen. Puede tener uno de los valores siguientes:<br /><br /> -Un [pack uri](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) mediante la autoridad Application:///<br /><br /> -Una referencia de recurso de componente absoluta<br /><br /> -Una ruta de acceso a un archivo que contiene un recurso nativo|
-|Información previa|Opta Indica qué tipo de fondo está previsto usar el origen.<br /><br /> Puede tener uno de los valores siguientes:<br /><br /> - *Light*: el origen se puede usar en un fondo claro.<br /><br /> - *Dark*: el origen se puede usar en un fondo oscuro.<br /><br /> - *HighContrast*: el origen puede usarse en cualquier fondo del modo contraste alto.<br /><br /> - *HighContrastLight*: el origen se puede usar en un fondo claro en modo de contraste alto.<br /><br /> -*HighContrastDark*: el origen se puede usar en un fondo oscuro en modo de contraste alto.<br /><br /> Si se omite el atributo **background** , el origen puede usarse en cualquier fondo.<br /><br /> Si **background** es *Light*, *Dark*, *HighContrastLight*o *HighContrastDark*, los colores del origen nunca se invierten. Si se omite **background** o se establece en *HighContrast*, el atributo **AllowColorInversion** de la imagen controla la inversión de los colores del origen.|
+|Información previa|Opta Indica qué tipo de fondo está previsto usar el origen.<br /><br /> Puede tener uno de los valores siguientes:<br /><br /> - *Light*: el origen se puede usar en un fondo claro.<br /><br /> - *Dark*: el origen se puede usar en un fondo oscuro.<br /><br /> - *HighContrast*: el origen puede usarse en cualquier fondo del modo contraste alto.<br /><br /> - *HighContrastLight*: el origen se puede usar en un fondo claro en modo de contraste alto.<br /><br /> -*HighContrastDark*: el origen se puede usar en un fondo oscuro en modo de contraste alto.<br /><br /> Si se omite el atributo **background** , el origen puede usarse en cualquier fondo.<br /><br /> Si **background** es *Light*, *Dark*, *HighContrastLight* o *HighContrastDark*, los colores del origen nunca se invierten. Si se omite **background** o se establece en *HighContrast*, el atributo **AllowColorInversion** de la imagen controla la inversión de los colores del origen.|
 
  Un \<Source> elemento puede tener exactamente uno de los siguientes subelementos opcionales:
 
-|**Element**|**Atributos (todos obligatorios)**|**Definition**|
+|**Element**|**Atributos (todos obligatorios)**|**Definición**|
 |-|-|-|
-|\<Size>|Value|El origen se usará para las imágenes del tamaño especificado (en unidades de dispositivo). La imagen será cuadrada.|
+|\<Size>|Valor|El origen se usará para las imágenes del tamaño especificado (en unidades de dispositivo). La imagen será cuadrada.|
 |\<SizeRange>|MinSize, MaxSize|El origen se usará para las imágenes de MinSize a MaxSize (en unidades de dispositivo) de un solo uso. La imagen será cuadrada.|
 |\<Dimensions>|Ancho, alto|El origen se usará para las imágenes con el ancho y alto especificados (en unidades de dispositivo).|
 |\<DimensionRange>|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|El origen se usará para las imágenes desde el ancho o el alto mínimo hasta el ancho/alto máximo (en unidades de dispositivo), ambos inclusive.|
@@ -144,7 +146,7 @@ La herramienta Visor de la biblioteca de imágenes de Visual Studio puede cargar
 <NativeResource Type="type" ID="int" />
 ```
 
-|**Atributo**|**Definition**|
+|**Atributo**|**Definición**|
 |-|-|
 |Tipo|Desee El tipo del recurso nativo, ya sea XAML o PNG|
 |Id.|Desee La parte del identificador entero del recurso nativo|
@@ -160,7 +162,7 @@ La herramienta Visor de la biblioteca de imágenes de Visual Studio puede cargar
  </ImageList>
 ```
 
-|**Atributo**|**Definition**|
+|**Atributo**|**Definición**|
 |-|-|
 |Guid|Desee Parte del GUID del moniker de la imagen|
 |Id.|Desee La parte de identificador del moniker de imagen|
@@ -179,7 +181,7 @@ La herramienta Visor de la biblioteca de imágenes de Visual Studio puede cargar
 
  De forma predeterminada, la herramienta intentará buscar el directorio de instalación de Visual Studio y agregar esos directorios a la lista de directorios de búsqueda. Puede Agregar manualmente los directorios que la herramienta no encuentra.
 
- Una vez que se cargan todos los manifiestos, la herramienta se puede usar para alternar los colores de **fondo** , el valor de **PPP**, el **contraste alto**o **grayscaling** para las imágenes, de modo que un usuario pueda inspeccionar visualmente los recursos de imagen para comprobar que se representan correctamente para varias configuraciones.
+ Una vez que se cargan todos los manifiestos, la herramienta se puede usar para alternar los colores de **fondo** , el valor de **PPP**, el **contraste alto** o **grayscaling** para las imágenes, de modo que un usuario pueda inspeccionar visualmente los recursos de imagen para comprobar que se representan correctamente para varias configuraciones.
 
  ![Fondo del visor de la biblioteca de imágenes](../../extensibility/internals/media/image-library-viewer-background.png "Fondo del visor de la biblioteca de imágenes")
 

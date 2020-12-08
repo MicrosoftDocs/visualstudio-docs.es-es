@@ -1,5 +1,7 @@
 ---
-title: 'Cómo: usar elementos coloreables integrados | Microsoft Docs'
+title: 'Cómo: usar Built-In elementos coloreables | Microsoft Docs'
+description: Obtenga información sobre cómo usar los elementos coloreables integrados en el entorno de desarrollo integrado (IDE) de Visual Studio para su servicio de lenguaje.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,19 +13,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 762d1e53f7aafa11ed345859e68fc98766eec77d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 926cb77fe9477b7dc78c35c2ab58f9b73530e4fa
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905213"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761015"
 ---
 # <a name="how-to-use-built-in-colorable-items"></a>Cómo: usar elementos coloreables integrados
 Antes de usar los elementos coloreables integrados, primero debe indicar al entorno de desarrollo integrado (IDE) que no está proporcionando sus propios elementos coloreables personalizados, que en este caso serían <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> objetos. Para ello, establezca una entrada del registro para el servicio de lenguaje.
 
 ## <a name="to-use-built-in-colorable-items"></a>Para usar elementos coloreables integrados
 
-1. En **HKEY_LOCAL_MACHINE \visualstudio \\<X. Y> \languages\language Services \\<\> nombre de idioma**, donde \<X.Y> es una versión de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] y \<Language Name> es el nombre del idioma, cree un valor de entrada del registro DWORD denominado **RequestStockColors**.
+1. En **HKEY_LOCAL_MACHINE\VisualStudio\\<X. Y> \languages\language Services \\<nombre \> de idioma**, donde \<X.Y> es una versión de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] y \<Language Name> es el nombre del lenguaje, cree un valor de entrada del registro DWORD denominado **RequestStockColors**.
 
 2. Establezca el valor de la entrada del registro **RequestStockColors** en *1*.
 
@@ -32,7 +34,7 @@ Antes de usar los elementos coloreables integrados, primero debe indicar al ento
    > [!NOTE]
    > No establezca esta entrada del registro si va a proporcionar elementos coloreables personalizados. Para obtener más información, vea [elementos coloreables personalizados](../../extensibility/internals/custom-colorable-items.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Colores de la sintaxis en editores personalizados](../../extensibility/syntax-coloring-in-custom-editors.md)
 - [Color de la sintaxis en un servicio de lenguaje heredado](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
 - [Implementar el color de la sintaxis](../../extensibility/internals/implementing-syntax-coloring.md)

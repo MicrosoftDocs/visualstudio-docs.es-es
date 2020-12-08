@@ -1,5 +1,7 @@
 ---
-title: Implementación de generadores de un solo archivo | Microsoft Docs
+title: Implementación de Single-File generadores | Microsoft Docs
+description: Aprenda a usar una herramienta personalizada que implementa la interfaz IVsSingleFileGenerator para extender Visual Basic y los sistemas de proyectos de Visual C# en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e700d09277edbb04b30676d3965b6c996d0a11f3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 373536844e3572e2e61b56c1b86f3e00ed47845d
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707655"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761249"
 ---
 # <a name="implementing-single-file-generators"></a>Implementación de generadores de un solo archivo
 Una herramienta personalizada, que a veces se denomina generador de un solo archivo, se puede usar para extender los [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] sistemas de proyectos de y en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Una herramienta personalizada es un componente COM que implementa la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> interfaz. Mediante esta interfaz, una herramienta personalizada transforma un único archivo de entrada en un único archivo de salida. El resultado de la transformación puede ser código fuente o cualquier otro resultado que sea útil. Dos ejemplos de archivos de código generados por la herramienta personalizados son el código generado en respuesta a los cambios en un diseñador visual y los archivos generados con el lenguaje de descripción de servicios web (WSDL).

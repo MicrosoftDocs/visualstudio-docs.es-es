@@ -1,5 +1,7 @@
 ---
 title: Proporcionar compatibilidad con texto oculto en el servicio de lenguaje heredado
+description: Obtenga información sobre cómo proporcionar compatibilidad de texto oculto en un servicio de lenguaje heredado mediante la adición de regiones de texto oculto controladas por el editor o por el cliente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a9d5fe85932f87eb68b6b5a0f5868ebbf8f2b5f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1f51f8e0c5ca268c1171804f663e5d01bd7c2530
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707925"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761314"
 ---
 # <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>Cómo: proporcionar compatibilidad de texto oculto en un servicio de lenguaje heredado
 Puede crear regiones de texto oculto además de regiones de esquema. Las regiones de texto oculto pueden ser controladas por el cliente o por el editor, y se usan para ocultar una región de texto por completo. El editor muestra una región oculta como líneas horizontales. Un ejemplo de esto es la vista **solo script** en el editor HTML.
