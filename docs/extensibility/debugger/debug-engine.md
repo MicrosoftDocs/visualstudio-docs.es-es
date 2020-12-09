@@ -1,5 +1,7 @@
 ---
 title: Motor de depuración | Microsoft Docs
+description: Obtenga información sobre cómo funciona un motor de depuración con el intérprete o el sistema operativo para proporcionar servicios como el control de ejecución, los puntos de interrupción y la evaluación de expresiones.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a4cb00796f8db23a43cd81a06d80d0fac40f075e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c31d095a3e340bf7e8f7a61a8db5bcbed53f0d5f
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739065"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914236"
 ---
 # <a name="debug-engine"></a>Motor de depuración
 Un motor DE depuración (DE) funciona con el intérprete o el sistema operativo para proporcionar servicios de depuración, como el control de ejecución, los puntos de interrupción y la evaluación de expresiones. El DE es responsable de supervisar el estado de un programa que se está depurando. Para ello, el método DE usa los métodos que están disponibles en el tiempo de ejecución admitido, ya sea de la CPU o de las API proporcionadas por el tiempo de ejecución.
@@ -37,7 +39,7 @@ Un motor DE depuración (DE) funciona con el intérprete o el sistema operativo 
 
  DE funciona con un componente del evaluador de expresiones para permitir que el de ese tiempo de ejecución concreto comprenda la sintaxis de las expresiones. El DE también trabaja con un componente de controlador de símbolos para tener acceso a la información de depuración simbólica generada por el compilador del lenguaje. Para obtener más información, consulte [evaluador de expresiones](../../extensibility/debugger/expression-evaluator.md) y [proveedor de símbolos](../../extensibility/debugger/symbol-provider.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Componentes del depurador](../../extensibility/debugger/debugger-components.md)
 - [Evaluador de expresiones](../../extensibility/debugger/expression-evaluator.md)
 - [Proveedor de símbolos](../../extensibility/debugger/symbol-provider.md)

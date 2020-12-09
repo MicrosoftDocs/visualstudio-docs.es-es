@@ -1,5 +1,7 @@
 ---
 title: Contextos del depurador | Microsoft Docs
+description: 'Obtenga información sobre cómo funciona el motor de depuración de Visual Studio en contextos distintos: contexto de código, contexto de documentación o posición y contexto de evaluación de expresiones.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56825fe299147e60c5ed9dfcefa491a427ab59e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 355ca667f0f909ebedc6f404ded545b3f862a444
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738974"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914691"
 ---
 # <a name="debugger-contexts"></a>Contextos del depurador
 En [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] la depuración, el motor de depuración (de) funciona simultáneamente en varios contextos distintos, como se indica a continuación:

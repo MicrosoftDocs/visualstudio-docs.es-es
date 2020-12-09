@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: agregar y quitar carpetas asignadas | Microsoft Docs'
+description: Agregar y quitar carpetas asignadas a un proyecto de SharePoint.  Cambiar la ubicación de implementación de una carpeta asignada. Cambiar el nombre o quitar carpetas asignadas.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 80fbd3e18b8d440eae2873c73013ad7468073640
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4d29be9b008bfaa9ad6694725b03e25bf6847df
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014653"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914814"
 ---
 # <a name="how-to-add-and-remove-mapped-folders"></a>Cómo: agregar y quitar carpetas asignadas
   Algunas carpetas de uso común en SharePoint, como imágenes y diseños, se incrustan profundamente en la jerarquía de archivos. Puede asignar estas carpetas a un proyecto de SharePoint para tener acceso a ellas más fácilmente. Las carpetas asignadas son carpetas del proyecto de SharePoint que corresponden a la ubicación física de los archivos en la instalación de SharePoint Server.
@@ -39,7 +41,7 @@ Puede Agregar carpetas asignadas a un proyecto mediante los comandos de la barra
 
 3. En la lista de plantillas de proyecto, elija la plantilla de **elemento Web Visual 2013 de SharePoint** .
 
-4. En el cuadro **nombre** , escriba **TestProject1**y elija el botón **Aceptar** .
+4. En el cuadro **nombre** , escriba **TestProject1** y elija el botón **Aceptar** .
 
 5. En el **Asistente para la personalización de SharePoint**, elija el botón **Finalizar** para conservar la configuración predeterminada.
 
@@ -76,7 +78,7 @@ Puede Agregar carpetas asignadas a un proyecto mediante los comandos de la barra
 
      Como alternativa, puede elegir la carpeta asignada cuyo nombre desea cambiar, abrir la ventana **propiedades** y, a continuación, establecer el valor de la propiedad **nombre** de la carpeta en el nuevo nombre.
 
-3. Para quitar una carpeta asignada del proyecto, abra el menú contextual, elija **eliminar**y, a continuación, elija el botón **Aceptar** en el cuadro de diálogo para confirmar la eliminación.
+3. Para quitar una carpeta asignada del proyecto, abra el menú contextual, elija **eliminar** y, a continuación, elija el botón **Aceptar** en el cuadro de diálogo para confirmar la eliminación.
 
 ## <a name="see-also"></a>Consulte también
 - [Desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: crear un elemento Web para SharePoint | Microsoft Docs'
+description: Cree un elemento Web para SharePoint. Los elementos web permiten a los usuarios cambiar directamente el contenido, la apariencia y el comportamiento de las páginas del sitio de SharePoint mediante un explorador.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,14 +16,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7fe560ae0c639ec8c400719738ea1f52b5315a9a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98e0c21fa4e3f119b32e19dd1be6e7d9148a17f4
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88247650"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914665"
 ---
-# <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Tutorial: crear un elemento Web para SharePoint
+# <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Tutorial: Creación de un elemento web para SharePoint
 
 Los elementos web permiten a los usuarios modificar directamente el contenido, el aspecto y el comportamiento de las páginas de sitios de SharePoint mediante un explorador. En este tutorial se muestra cómo crear un elemento Web utilizando la plantilla elemento **Web** en Visual Studio 2010.
 
@@ -58,7 +60,7 @@ Primero, cree un proyecto de SharePoint vacío. Más adelante, agregará un elem
 
 3. En el cuadro de diálogo **nuevo proyecto** , expanda el nodo **SharePoint** bajo el lenguaje que desea usar y, a continuación, elija el nodo **2010** .
 
-4. En el panel **plantillas** , elija **proyecto de SharePoint 2010**y, a continuación, elija el botón **Aceptar** .
+4. En el panel **plantillas** , elija **proyecto de SharePoint 2010** y, a continuación, elija el botón **Aceptar** .
 
      Aparece el **Asistente para la personalización de SharePoint** . Este asistente permite seleccionar el sitio que se va a usar para depurar el proyecto, así como el nivel de confianza de la solución.
 
@@ -68,7 +70,7 @@ Primero, cree un proyecto de SharePoint vacío. Más adelante, agregará un elem
 
 Agregue un elemento de elemento **Web** al proyecto. El elemento **Web** agrega el archivo de código del elemento Web. Después, agregará código al archivo de código para presentar el contenido del elemento web.
 
-1. En la barra de menús, elija **proyecto**  >  **Agregar nuevo elemento**.
+1. En la barra de menús, elija **Proyecto** >  **Agregar nuevo elemento**.
 
 2. En el cuadro de diálogo **Agregar nuevo elemento** , en el panel **plantillas instaladas** , expanda el nodo **SharePoint** y, a continuación, elija el nodo **2010** .
 
@@ -116,7 +118,7 @@ Puede especificar los controles que desea que aparezcan en el elemento web agreg
      [!code-csharp[SP_WebPart#4](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#4)]
      [!code-vb[SP_WebPart#4](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#4)]
 
-6. Agregue el siguiente método a la clase `WebPart1`. Este código realiza las tareas siguientes:
+6. Agrega el método siguiente a la clase `WebPart1`: Este código realiza las tareas siguientes:
 
    - Crea un verbo que aparece en el menú de verbos de elemento web del elemento web presentado.
 
@@ -178,7 +180,7 @@ Cuando se ejecuta el proyecto, se abre el sitio de SharePoint. El elemento web s
 
 8. En la página **crear** , elija el tipo de **Página elemento Web** y, a continuación, elija el botón **crear** .
 
-9. En la página **nueva página de elementos Web** , asigne un nombre a la página **nombre samplewebpartpage. aspx**y, a continuación, elija el botón **crear** .
+9. En la página **nueva página de elementos Web** , asigne un nombre a la página **nombre samplewebpartpage. aspx** y, a continuación, elija el botón **crear** .
 
      Aparece la página de elementos web .
 

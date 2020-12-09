@@ -1,5 +1,7 @@
 ---
 title: Asociar al programa | Microsoft Docs
+description: Obtenga información acerca de cómo Visual Studio implementa el depurador adjuntar a un programa una vez que el programa se ha registrado con el puerto adecuado.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00b9780d0d302b9e067feed057d1a8d49c5f9fc0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 030ee19e7e9e9e52140fb41da78f766978e18d3f
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903223"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913768"
 ---
 # <a name="attach-to-the-program"></a>Adjuntar al programa
 Una vez que haya registrado los programas con el puerto adecuado, debe adjuntar el depurador al programa que desea depurar.
@@ -57,7 +59,7 @@ Una vez que haya registrado los programas con el puerto adecuado, debe adjuntar 
     > [!NOTE]
     > No es el mismo `IDebugProgram2` objeto que se pasó al `IDebugEngine2::Attach` método. El objeto que se ha pasado previamente `IDebugProgram2` solo es reconocido por el puerto y es un objeto independiente.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Datos adjuntos basados en el inicio](../../extensibility/debugger/launch-based-attachment.md)
 - [Envío de eventos](../../extensibility/debugger/sending-events.md)
 - [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)

@@ -1,5 +1,7 @@
 ---
 title: Cambiar el valor de una variable local | Microsoft Docs
+description: Obtenga información sobre el proceso de cambiar el valor de una variable local cuando se escriba un nuevo valor en el campo de valor de la ventana variables locales.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 565ae9f27b9f5a113e51520724f525599ad5eda7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 08f366162f4031b9cc7aa651bf9eca7aab55a15a
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904276"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914340"
 ---
 # <a name="change-the-value-of-a-local"></a>Cambiar el valor de una variable local
 > [!IMPORTANT]
@@ -28,7 +30,7 @@ ms.locfileid: "85904276"
 
 1. Después de que el usuario especifique el nuevo valor, Visual Studio llama a [SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) en el objeto [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) asociado a la clase local.
 
-2. `IDebugProperty2::SetValueAsString` realiza las tareas siguientes:
+2. `IDebugProperty2::SetValueAsString` realiza las siguientes tareas:
 
    1. Evalúa la cadena para generar un valor.
 

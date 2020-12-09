@@ -1,6 +1,8 @@
 ---
 title: 'Explorador de servidores: extender el nodo conexiones de SharePoint'
 titleSuffix: ''
+description: En este tutorial, vea cómo llamar al modelo de objetos de cliente de SharePoint desde una extensión para el nodo conexiones de SharePoint en Explorador de servidores.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d7f1ac5b0fb1f25d04139d76efa816ebd059d7da
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: c323f05d341af810eecafae43e8d04d3cba29054
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585581"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913963"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Tutorial: llamar al modelo de objetos de cliente de SharePoint en una extensión de Explorador de servidores
   En este tutorial se muestra cómo llamar al modelo de objetos de cliente de SharePoint desde una extensión para el nodo **conexiones de SharePoint** en **Explorador de servidores**. Para obtener más información sobre cómo usar el modelo de objetos de cliente de SharePoint, vea [llamar a los modelos de objetos de SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
@@ -78,13 +80,13 @@ El conocimiento de los siguientes conceptos es útil, aunque no necesario, para 
 
 5. Elija la plantilla de **Proyecto VSIX** .
 
-6. En el cuadro **nombre** , escriba **WebPartNode**y elija el botón **Aceptar** .
+6. En el cuadro **nombre** , escriba **WebPartNode** y elija el botón **Aceptar** .
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] agrega el proyecto **WebPartNode** a **Explorador de soluciones**.
 
 #### <a name="to-create-the-extension-project"></a>Para crear la extensión de proyecto
 
-1. En **Explorador de soluciones**, abra el menú contextual del nodo de la solución, elija **Agregar**y, a continuación, elija **nuevo proyecto**.
+1. En **Explorador de soluciones**, abra el menú contextual del nodo de la solución, elija **Agregar** y, a continuación, elija **nuevo proyecto**.
 
 2. En el cuadro de diálogo  **nuevo proyecto** , expanda los nodos **Visual C#** o **Visual Basic** y, a continuación, elija **Windows**.
 
@@ -92,7 +94,7 @@ El conocimiento de los siguientes conceptos es útil, aunque no necesario, para 
 
 4. En la lista de plantillas de proyecto, elija **biblioteca de clases**.
 
-5. En el cuadro **nombre** , escriba **ExtensiónNodoElementoWeb**y elija el botón **Aceptar** .
+5. En el cuadro **nombre** , escriba **ExtensiónNodoElementoWeb** y elija el botón **Aceptar** .
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] agrega el proyecto **ExtensiónNodoElementoWeb** a la solución y abre el archivo de código predeterminado Class1.
 
@@ -210,9 +212,9 @@ El conocimiento de los siguientes conceptos es útil, aunque no necesario, para 
 
 7. En la lista **origen** , elija **un proyecto en la solución actual**.
 
-8. En la lista **proyecto** , elija **ExtensiónNodoElementoWeb**y elija el botón **Aceptar** .
+8. En la lista **proyecto** , elija **ExtensiónNodoElementoWeb** y elija el botón **Aceptar** .
 
-9. En la barra de menús, **Elija compilar compilar**  >  **solución**y, a continuación, asegúrese de que la solución se compila sin errores.
+9. En la barra de menús, **Elija compilar compilar**  >  **solución** y, a continuación, asegúrese de que la solución se compila sin errores.
 
 10. Asegúrese de que la carpeta de salida de compilación del proyecto WebPartNode contiene ahora el archivo WebPartNode. vsix.
 
@@ -237,7 +239,7 @@ El conocimiento de los siguientes conceptos es útil, aunque no necesario, para 
 
 2. Compruebe que el sitio de SharePoint que desea usar para las pruebas aparece en el nodo **conexiones de SharePoint** en **Explorador de servidores**. Si no aparece, siga estos pasos:
 
-    1. Abra el menú contextual para **las conexiones de SharePoint**y, a continuación, elija **Agregar conexión**.
+    1. Abra el menú contextual para **las conexiones de SharePoint** y, a continuación, elija **Agregar conexión**.
 
     2. En el cuadro de diálogo **Agregar conexión de SharePoint** , escriba la dirección URL del sitio de SharePoint al que desea conectarse y, a continuación, elija el botón **Aceptar** .
 
@@ -270,7 +272,7 @@ El conocimiento de los siguientes conceptos es útil, aunque no necesario, para 
 
      Se abre el cuadro de diálogo **Extensiones y actualizaciones**.
 
-2. En la lista de extensiones, elija **nodo de la galería de elementos Web para explorador de servidores**y, a continuación, elija el botón **desinstalar** .
+2. En la lista de extensiones, elija **nodo de la galería de elementos Web para explorador de servidores** y, a continuación, elija el botón **desinstalar** .
 
 3. En el cuadro de diálogo que aparece, elija el botón **sí** .
 
@@ -280,7 +282,7 @@ El conocimiento de los siguientes conceptos es útil, aunque no necesario, para 
 
 5. Cierre ambas instancias de Visual Studio (la instancia experimental y la instancia de Visual Studio en la que está abierta la solución WebPartNode).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Llamar a los modelos de objetos de SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)
 - [Extensión del nodo Conexiones de SharePoint en el Explorador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
 - [Tutorial: extender Explorador de servidores para mostrar elementos Web](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)

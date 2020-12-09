@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: crear una actividad de flujo de trabajo de sitio personalizada | Microsoft Docs'
+description: En este tutorial, vea cómo crear una actividad personalizada para un flujo de trabajo de SharePoint de nivel de sitio mediante Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,14 +18,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dc7eef8b0924be745de436e06acc36785b1cb99b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 86302a0b8eef4344a909ae3b8fb2c513c86c4ad6
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016534"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913961"
 ---
-# <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Tutorial: crear una actividad de flujo de trabajo de sitio personalizada
+# <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Tutorial: Creación de una actividad de flujo de trabajo de sitio personalizada
   En este tutorial se muestra cómo crear una actividad personalizada para un flujo de trabajo de nivel de sitio mediante [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . (Los flujos de trabajo de nivel de sitio se aplican a todo el sitio, no solo a una lista en el sitio). La actividad personalizada crea una lista de anuncios de copia de seguridad y, a continuación, copia en ella el contenido de la lista de anuncios.
 
  En este tutorial se muestran las siguientes tareas:
@@ -54,11 +56,11 @@ ms.locfileid: "86016534"
 
 1. En la barra de menús, elija **archivo**  >  **nuevo**  >  **proyecto** para mostrar el cuadro de diálogo **nuevo proyecto** .
 
-2. Expanda el nodo **SharePoint** en **Visual C#** o **Visual Basic**y, a continuación, elija el nodo **2010** .
+2. Expanda el nodo **SharePoint** en **Visual C#** o **Visual Basic** y, a continuación, elija el nodo **2010** .
 
 3. En el panel **plantillas** , elija la plantilla de **proyecto de SharePoint 2010** .
 
-4. En el cuadro **nombre** , escriba **AnnouncementBackup**y elija el botón **Aceptar** .
+4. En el cuadro **nombre** , escriba **AnnouncementBackup** y elija el botón **Aceptar** .
 
      Aparece el **Asistente para la personalización de SharePoint** .
 
@@ -74,7 +76,7 @@ ms.locfileid: "86016534"
 
      Aparece el **Asistente para la personalización de SharePoint** .
 
-9. En la página **especificar el nombre del flujo de trabajo para la depuración** , acepte el nombre predeterminado (AnnouncementBackup-Workflow1). Cambie el tipo de plantilla de flujo de trabajo a **flujo de trabajo de sitio**y elija el botón **siguiente** .
+9. En la página **especificar el nombre del flujo de trabajo para la depuración** , acepte el nombre predeterminado (AnnouncementBackup-Workflow1). Cambie el tipo de plantilla de flujo de trabajo a **flujo de trabajo de sitio** y elija el botón **siguiente** .
 
 10. Elija el botón **Finalizar** para aceptar la configuración predeterminada restante.
 
@@ -92,7 +94,7 @@ ms.locfileid: "86016534"
      [!code-csharp[SP_AnnBackup#1](../sharepoint/codesnippet/CSharp/announcementbackup/class1.cs#1)]
      [!code-vb[SP_AnnBackup#1](../sharepoint/codesnippet/VisualBasic/announcementbackupvb/class1.vb#1)]
 
-4. Guarde el proyecto y, a continuación, en la barra de menús, elija **compilar**compilar  >  **solución**.
+4. Guarde el proyecto y, a continuación, en la barra de menús, elija **compilar** compilar  >  **solución**.
 
      Class1 aparece como una acción personalizada en el **cuadro de herramientas** de la pestaña **componentes de AnnouncementBackup** .
 
@@ -123,5 +125,5 @@ ms.locfileid: "86016534"
 5. En la barra de inicio rápido, elija el vínculo de **copia de seguridad de anuncios** . Observe que todos los anuncios contenidos en la lista de **anuncios** se han copiado en esta nueva lista.
 
 ## <a name="see-also"></a>Consulte también
-- [Cómo: crear un receptor de eventos](../sharepoint/how-to-create-an-event-receiver.md)
+- [Cómo: para crear un receptor de eventos](../sharepoint/how-to-create-an-event-receiver.md)
 - [Desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md)

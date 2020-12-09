@@ -1,5 +1,7 @@
 ---
 title: Adjuntar después de un inicio | Microsoft Docs
+description: Cuando se inicia un programa, la sesión de depuración está lista para adjuntar el motor de depuración al programa. Elija un enfoque de diseño para la comunicación con el motor de depuración.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3a4ce0a7465891035b43bbb8f6f22f0c064d104c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e19d9090126a13b657f53c20d7ec44a793d5376
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739285"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913898"
 ---
 # <a name="attach-after-a-launch"></a>Adjuntar después de un inicio
 Una vez que se inicia un programa, la sesión de depuración está lista para adjuntar el motor DE depuración (DE) a dicho programa.
@@ -43,7 +45,7 @@ Una vez que se inicia un programa, la sesión de depuración está lista para ad
 
  El DE ahora se adjunta al programa y está listo para enviar los eventos DE Inicio.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Adjuntar directamente a un programa](../../extensibility/debugger/attaching-directly-to-a-program.md)
 - [Notificación del puerto](../../extensibility/debugger/notifying-the-port.md)
 - [Tareas de depuración](../../extensibility/debugger/debugging-tasks.md)

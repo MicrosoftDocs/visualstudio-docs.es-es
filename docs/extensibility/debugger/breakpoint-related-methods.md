@@ -1,5 +1,7 @@
 ---
-title: Métodos relacionados con los puntos de interrupción | Microsoft Docs
+title: Métodos de Breakpoint-Related | Microsoft Docs
+description: La depuración de Visual Studio admite puntos de interrupción enlazados, que se enlazan correctamente a una ubicación en el código, y los puntos de interrupción pendientes, que aún no están enlazados.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c72ec63e500ac86a4a5bd66a2956fe0fb06c8834
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9472f1ff4105790951ddd687d7e71c3e57fa39da
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739210"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914470"
 ---
 # <a name="breakpoint-related-methods"></a>Métodos relacionados con los puntos de interrupción
 Un motor de depuración (DE) debe admitir la configuración de puntos de interrupción. La depuración de Visual Studio admite los siguientes tipos de puntos de interrupción:
@@ -25,11 +27,11 @@ Un motor de depuración (DE) debe admitir la configuración de puntos de interru
 
      Solicitada a través de la interfaz de usuario y enlazada correctamente a una ubicación de código especificada
 
-- Pendiente
+- Pending
 
      Solicitado a través de la interfaz de usuario, pero que aún no se ha enlazado a instrucciones reales
 
-## <a name="discussion"></a>Debate
+## <a name="discussion"></a>Discusión
  Por ejemplo, se produce un punto de interrupción pendiente cuando las instrucciones aún no se han cargado. Cuando se carga el código, los puntos de interrupción pendientes intentan enlazarse con el código en la ubicación indicada, es decir, para insertar instrucciones de salto en el código. Los eventos se envían al administrador de depuración de la sesión (SDM) para indicar que el enlace se ha realizado correctamente o para notificar que hubo errores de enlace.
 
  Un punto de interrupción pendiente también administra su propia lista interna de puntos de interrupción enlazados correspondientes. Un punto de interrupción pendiente puede producir la inserción de muchos puntos de interrupción en el código. La interfaz de usuario de depuración de Visual Studio muestra una vista de árbol de los puntos de interrupción pendientes y sus puntos de interrupción enlazados correspondientes.
@@ -82,5 +84,5 @@ Un motor de depuración (DE) debe admitir la configuración de puntos de interru
 
  La visualización del código fuente en un punto de interrupción requiere la implementación de los métodos de [IDebugStackFrame2:: GetDocumentContext](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md) y/o los métodos de [IDebugStackFrame2:: GetCodeContext](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Control de ejecución y evaluación del estado](../../extensibility/debugger/execution-control-and-state-evaluation.md)

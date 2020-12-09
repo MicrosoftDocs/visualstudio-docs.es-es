@@ -1,6 +1,8 @@
 ---
 title: Crear columna de sitio, tipo de contenido y lista para SharePoint
 titleSuffix: ''
+description: En este tutorial, cree una columna de sitio personalizada (campo), un tipo de contenido personalizado que use la columna sitio y una lista que use el tipo de contenido de SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 041c0ba5174450fca7acf7247b1cf40a98ac147d
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: b1670dfa3c7202e8ebbdb28396f161daeffac491
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298375"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914015"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Tutorial: Creación de una columna, un tipo de contenido y una lista de sitios para SharePoint
   Los procedimientos siguientes muestran cómo crear columnas de sitio de SharePoint personalizadas, o *campos*, así como un tipo de contenido que usa las columnas de sitio. También se muestra cómo crear una lista que usa el nuevo tipo de contenido.
@@ -60,7 +62,7 @@ ms.locfileid: "92298375"
 
 3. En el panel **plantillas** , elija el **proyecto vacío de SharePoint** para la versión concreta de SharePoint que ha instalado. Por ejemplo, si tiene instalado SharePoint 2016, seleccione la plantilla **de proyecto sharepoint 2016-Empty** .  
 
-4. Cambie el nombre del proyecto a **Clinic**y, a continuación, elija el botón **Aceptar** .
+4. Cambie el nombre del proyecto a **Clinic** y, a continuación, elija el botón **Aceptar** .
 
 5. En el cuadro de diálogo **especificar el sitio y el nivel de seguridad para la depuración** , escriba la dirección URL del sitio de SharePoint local al que desea agregar el nuevo elemento de campo personalizado o use la ubicación predeterminada ( `http://<` *SystemName* `>/)` .
 
@@ -74,7 +76,7 @@ ms.locfileid: "92298375"
 2.  En el cuadro de diálogo **crear un nuevo proyecto** , seleccione el **proyecto vacío de SharePoint** para la versión concreta de SharePoint que ha instalado. Por ejemplo, si tiene instalado SharePoint 2016, seleccione la plantilla **de proyecto sharepoint 2016-Empty** .
     [!INCLUDE[new-project-dialog-search](../sharepoint/includes/new-project-dialog-search-md.md)]
 
-3. Cambie el nombre del proyecto a **Clinic**y, a continuación, elija el botón **crear** .
+3. Cambie el nombre del proyecto a **Clinic** y, a continuación, elija el botón **crear** .
 
 4. En el cuadro de diálogo **especificar el sitio y el nivel de seguridad para la depuración** , escriba la dirección URL del sitio de SharePoint local al que desea agregar el nuevo elemento de campo personalizado o use la ubicación predeterminada ( `http://<` *SystemName* `>/)` .
 
@@ -89,7 +91,7 @@ ms.locfileid: "92298375"
 
 1. Agregue una nueva columna de sitio. Para ello, en **Explorador de soluciones**, haga clic con el botón derecho en el proyecto **Clinic** y, a continuación, elija **Agregar**  >  **nuevo elemento**.
 
-2. En el cuadro de diálogo **Agregar nuevo elemento** , elija **columna de sitio**, cambie el nombre a **PatientName**y, a continuación, elija el botón **Agregar** .
+2. En el cuadro de diálogo **Agregar nuevo elemento** , elija **columna de sitio**, cambie el nombre a **PatientName** y, a continuación, elija el botón **Agregar** .
 
 3. En el archivo de *Elements.xml* de la columna de sitio, deje la configuración de **tipo** como **texto**, cambie la configuración de **Grupo** a columnas de sitio de la **sesión**. Cuando haya finalizado, el archivo de *Elements.xml* de la columna de sitio debería ser similar al ejemplo siguiente.
 
@@ -108,7 +110,7 @@ ms.locfileid: "92298375"
     > Si usa la grafía Camel en el nombre de la columna de sitio, Visual Studio agregará automáticamente un espacio en la DisplayName.
     > Se recomienda no usar espacios en el nombre de la columna del sitio, ya que puede causar problemas al intentar implementar la solución en SharePoint.
 
-4. Con el mismo procedimiento, agregue dos columnas de sitio más al proyecto: **PatientID** (Type = "integer") y **DoctorName** (Type = "Text"). Establezca su valor de grupo en **columnas de sitio**de la sesión.
+4. Con el mismo procedimiento, agregue dos columnas de sitio más al proyecto: **PatientID** (Type = "integer") y **DoctorName** (Type = "Text"). Establezca su valor de grupo en **columnas de sitio** de la sesión.
 
 ## <a name="create-a-custom-content-type"></a>Crear un tipo de contenido personalizado
  A continuación, cree un tipo de contenido, basado en el tipo de contenido contactos, que incluya las columnas del sitio que creó en el procedimiento anterior. Al basar un tipo de contenido en un tipo de contenido existente, puede ahorrar tiempo porque el tipo de contenido base proporciona varias columnas de sitio para su uso en el nuevo tipo de contenido.
@@ -117,11 +119,11 @@ ms.locfileid: "92298375"
 
 1. Agregue un tipo de contenido al proyecto. Para ello, en **Explorador de soluciones**, elija el nodo del proyecto.
 
-2. En la barra de menús, elija **proyecto**  >  **Agregar nuevo elemento**.
+2. En la barra de menús, elija **Proyecto** >  **Agregar nuevo elemento**.
 
 3. En **Visual C#** o **Visual Basic**, expanda el nodo **SharePoint** y, a continuación, elija el nodo **2010** .
 
-4. En el panel **plantillas** , elija la plantilla **tipo de contenido** , cambie el nombre a información de **paciente**y, a continuación, elija el botón **Agregar** .
+4. En el panel **plantillas** , elija la plantilla **tipo de contenido** , cambie el nombre a información de **paciente** y, a continuación, elija el botón **Agregar** .
 
      Se abre el **Asistente para la personalización de SharePoint** .
 
@@ -129,7 +131,7 @@ ms.locfileid: "92298375"
 
      Esto le proporciona acceso a otras columnas de sitio potencialmente útiles en el tipo de contenido de contacto, además de las columnas de sitio que definió anteriormente.
 
-6. Cuando aparezca el diseñador de tipos de contenido, en la pestaña **columnas** , agregue las tres columnas de sitio que definió anteriormente: **patient Name**, **patient ID**y **doctor Name**. Para agregar estas columnas, elija el primer cuadro de lista de la lista columnas de sitio en **nombre para mostrar**y, a continuación, elija cada columna de sitio de la lista de una en una.
+6. Cuando aparezca el diseñador de tipos de contenido, en la pestaña **columnas** , agregue las tres columnas de sitio que definió anteriormente: **patient Name**, **patient ID** y **doctor Name**. Para agregar estas columnas, elija el primer cuadro de lista de la lista columnas de sitio en **nombre para mostrar** y, a continuación, elija cada columna de sitio de la lista de una en una.
 
     > [!TIP]
     > Para elegir las columnas de sitio más rápidamente, filtre la lista escribiendo las primeras letras del nombre de la columna.
@@ -138,11 +140,11 @@ ms.locfileid: "92298375"
 
 8. Active la casilla **requerido** para las columnas de sitio **nombre de paciente** e ID. de **paciente** para convertirlos en campos obligatorios.
 
-9. En la pestaña **tipo de contenido** , asegúrese de que el nombre del tipo de contenido es información del **paciente**y, a continuación, cambie la descripción a tarjeta de **información de pacientes**.
+9. En la pestaña **tipo de contenido** , asegúrese de que el nombre del tipo de contenido es información del **paciente** y, a continuación, cambie la descripción a tarjeta de **información de pacientes**.
 
-10. Cambie el **nombre del grupo** a los tipos de contenido de la **sesión**y deje los valores predeterminados de los demás valores.
+10. Cambie el **nombre del grupo** a los tipos de contenido de la **sesión** y deje los valores predeterminados de los demás valores.
 
-11. En la barra de menús, elija **archivo**  >  **guardar todo**y, a continuación, cierre el diseñador de tipos de contenido.
+11. En la barra de menús, elija **archivo**  >  **guardar todo** y, a continuación, cierre el diseñador de tipos de contenido.
 
 ## <a name="create-a-list"></a>Crear una lista
  Ahora, cree una lista que use el nuevo tipo de contenido y las columnas de sitio.
@@ -151,11 +153,11 @@ ms.locfileid: "92298375"
 
 1. Agregue una lista al proyecto. Para ello, en **Explorador de soluciones**, elija el nodo del proyecto.
 
-2. En la barra de menús, elija **proyecto**  >  **Agregar nuevo elemento**.
+2. En la barra de menús, elija **Proyecto** >  **Agregar nuevo elemento**.
 
 3. En **Visual C#** o **Visual Basic**, expanda el nodo **SharePoint** .
 
-4. En el panel **plantillas** , elija la plantilla **lista** , cambie el nombre a **pacientes**y, a continuación, elija el botón **Agregar** .
+4. En el panel **plantillas** , elija la plantilla **lista** , cambie el nombre a **pacientes** y, a continuación, elija el botón **Agregar** .
 
 5. Deje la opción **personalizar la lista según** la configuración **predeterminada (lista personalizada)** y, a continuación, elija el botón **Finalizar** .
 
@@ -216,14 +218,14 @@ ms.locfileid: "92298375"
 
 14. En la lista **propiedades** , elija la propiedad **ordenar y agrupar** y, a continuación, elija el ![icono de puntos suspensivos](../sharepoint/media/ellipsisicon.gif "Icono Puntos suspensivos") del botón de puntos suspensivos para mostrar el cuadro de diálogo **ordenar y agrupar** .
 
-15. En la **lista nombre de columna** , elija **patient Name**, asegúrese de que la columna de **ordenación** esté establecida en **ascendente**y elija el botón **Aceptar** .
+15. En la **lista nombre de columna** , elija **patient Name**, asegúrese de que la columna de **ordenación** esté establecida en **ascendente** y elija el botón **Aceptar** .
 
 ## <a name="test-the-application"></a>Prueba de la aplicación
  Ahora que las columnas del sitio personalizado, el tipo de contenido y la lista están listos, impleméntela en SharePoint y ejecute la aplicación para probarlo.
 
 #### <a name="to-test-the-application"></a>Para probar la aplicación
 
-1. En la barra de menús, elija **archivo**  >  **guardar todo**.
+1. En la barra de menús, pulse **Archivo** > **Guardar todo**.
 
 2. Elija la tecla **F5** para ejecutar la aplicación.
 

@@ -1,5 +1,7 @@
 ---
 title: Control de la ejecución | Microsoft Docs
+description: Obtenga información sobre cómo detener eventos, lo que significa que el DE espera una respuesta del usuario por medio del IDE.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c59831efb2fc97ad1bb2891fd93a67fe79f8eff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 88adaad3092e084841c40b5e04d45f94985a2ee8
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86387010"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913885"
 ---
 # <a name="control-of-execution"></a>Control de la ejecución
 El motor DE depuración (DE) envía normalmente uno de los siguientes eventos como el último evento de Inicio:
@@ -57,7 +59,7 @@ El motor DE depuración (DE) envía normalmente uno de los siguientes eventos co
 
    Si el paquete de depuración va a omitir un evento de detención determinado, el paquete de depuración llama al SDM, que llama a [IDebugProgram2:: Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md). Si el programa se detuvo paso a paso, sobre o fuera de una función cuando se produjo la condición de detención, continúa con el paso. Esto implica que el programa mantiene un estado de ejecución paso a paso para que sepa cómo continuar.
 
-   Las llamadas que el SDM realiza a `Step` , **ejecutan**y **continúan** son asincrónicas, lo que significa que el SDM espera que la llamada se devuelva rápidamente. Si el DE envía a un evento de detención de SDM en el mismo subproceso antes `Step` de, **Execute**o **continue** devuelve, el SDM deja de responder.
+   Las llamadas que el SDM realiza a `Step` , **ejecutan** y **continúan** son asincrónicas, lo que significa que el SDM espera que la llamada se devuelva rápidamente. Si el DE envía a un evento de detención de SDM en el mismo subproceso antes `Step` de, **Execute** o **continue** devuelve, el SDM deja de responder.
 
 ## <a name="see-also"></a>Consulte también
 - [Tareas de depuración](../../extensibility/debugger/debugging-tasks.md)

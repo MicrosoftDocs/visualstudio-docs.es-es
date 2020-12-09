@@ -1,5 +1,7 @@
 ---
 title: Eventos de control | Microsoft Docs
+description: Obtenga información sobre el envío de eventos durante la ejecución controlada de su programa mediante la interfaz IDebugEvent2.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc2c3ad9c9b63923bdf2f107e7bc582f3c76cd62
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bf7f59384d9317e4be173c93b6165d754a35ad8f
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739086"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914249"
 ---
 # <a name="control-events"></a>Eventos de control
 Debe enviar eventos durante la ejecución controlada del programa. Todos los eventos se envían mediante la interfaz [IDebugEvent2](../../extensibility/debugger/reference/idebugevent2.md) y tienen atributos que requieren que se implemente el método [IDebugEvent2:: GetAttributes](../../extensibility/debugger/reference/idebugevent2-getattributes.md) .
@@ -37,5 +39,5 @@ Debe enviar eventos durante la ejecución controlada del programa. Todos los eve
 
   Para que el motor escriba una salida de estilo cadena, debe implementar el método [IDebugOutputStringEvent2:: GetString](../../extensibility/debugger/reference/idebugoutputstringevent2-getstring.md) .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Control de ejecución y evaluación del estado](../../extensibility/debugger/execution-control-and-state-evaluation.md)

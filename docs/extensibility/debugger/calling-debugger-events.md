@@ -1,5 +1,7 @@
 ---
 title: Llamar a eventos del depurador | Microsoft Docs
+description: Los eventos de las sesiones de depuración se producen en un orden específico. En este artículo se muestra el orden de llamada de los eventos que se producen en una sesión de depuración típica.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,17 +12,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3deef418620ab17297b4ef7e824a0d95c25e439e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 832b42e62731a087048b4aa50e19b74c408343c5
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904326"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914393"
 ---
 # <a name="call-debugger-events"></a>Llamar a eventos del depurador
 Los eventos de las sesiones de depuración se producen en un orden específico.
 
-## <a name="discussion"></a>Debate
+## <a name="discussion"></a>Discusión
  Para entender el patrón de llamadas entre el motor de depuración (DE) y el administrador de depuración de sesión (SDM), lo siguiente representa el orden de llamada de los eventos que se producen en una sesión de depuración típica:
 
 1. [Adjuntar y desasociar a un programa](../../extensibility/debugger/attaching-and-detaching-to-a-program.md)

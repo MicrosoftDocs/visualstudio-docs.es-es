@@ -1,5 +1,7 @@
 ---
 title: Componentes del depurador | Microsoft Docs
+description: Obtenga información sobre los elementos que componen una sesión de depuración, que se administra mediante el depurador de Visual Studio, que se implementa como un VSPackage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03c400fd03c5ee0f2629e9f436b65f53f8f2ac8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2fa0a7feb85437cc8173d52695ddb1ba0d2c06b7
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739012"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914119"
 ---
 # <a name="debugger-components"></a>Componentes del depurador
 El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depurador se implementa como un VSPackage y administra la sesión de depuración completa. La sesión de depuración consta de los siguientes elementos:
@@ -56,11 +58,11 @@ El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depurador se imp
  [Visualizador de tipos y visor personalizado](../../extensibility/debugger/type-visualizer-and-custom-viewer.md) Describe lo que son un visualizador de tipos y un visor personalizado y el rol que desempeña el evaluador de expresiones para admitir ambos.
 
 ## <a name="related-sections"></a>Secciones relacionadas
- [Conceptos del depurador](../../extensibility/debugger/debugger-concepts.md) Describe los conceptos principales de la arquitectura de depuración.
+ [Conceptos del depurador](../../extensibility/debugger/debugger-concepts.md) Se describen los principales conceptos de la arquitectura de depuración.
 
- [Contextos del depurador](../../extensibility/debugger/debugger-contexts.md) Explica cómo funciona simultáneamente dentro de los contextos de código, documentación y evaluación de expresiones. Describe, para cada uno de los tres contextos, la ubicación, la posición o la evaluación relevantes para él.
+ [Contextos del depurador](../../extensibility/debugger/debugger-contexts.md) Se explica cómo funciona el motor de depuración simultáneamente dentro de los contextos de código, documentación y evaluación de expresiones. Para cada uno de los tres contextos, se describen la ubicación, la posición o la evaluación correspondientes.
 
  [Tareas de depuración](../../extensibility/debugger/debugging-tasks.md) Contiene vínculos a diversas tareas de depuración, como el inicio de un programa y la evaluación de expresiones.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Introducción](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)

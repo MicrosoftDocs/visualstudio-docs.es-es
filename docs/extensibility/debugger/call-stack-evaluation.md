@@ -1,5 +1,7 @@
 ---
 title: Evaluación de la pila de llamadas | Microsoft Docs
+description: Obtenga información sobre el método EnumFrameInfo y cómo implementarlo para ver los marcos de pila de la pila de llamadas durante el modo de interrupción.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5557d7eae0ffe54b0f01f1f9e95935d71455229
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc637ff3ce2fe596eed48684523da7114fe0a03a
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739177"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914678"
 ---
 # <a name="call-stack-evaluation"></a>Evaluación de la pila de llamadas
 Para ver los marcos de pila de la pila de llamadas durante el modo de interrupción, debe implementar el método [EnumFrameInfo](../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) .
@@ -37,5 +39,5 @@ Para ver los marcos de pila de la pila de llamadas durante el modo de interrupci
 
  Para enumerar los contextos de código, debe implementar todos los métodos de [IEnumDebugCodeContexts2](../../extensibility/debugger/reference/ienumdebugcodecontexts2.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Control de ejecución y evaluación del estado](../../extensibility/debugger/execution-control-and-state-evaluation.md)

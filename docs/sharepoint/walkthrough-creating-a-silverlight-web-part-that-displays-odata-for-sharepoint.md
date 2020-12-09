@@ -1,6 +1,8 @@
 ---
 title: Crear un elemento Web de Silverlight que muestre OData para SharePoint
 titleSuffix: ''
+description: Cree un elemento Web de Silverlight que muestre OData para SharePoint. Personalice la aplicación de Silverlight y modifique y pruebe el elemento Web de Silverlight.
+ms.custom: SEO-VS-2020
 ms.date: 02/22/2017
 ms.topic: how-to
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 652f34e6a062d2c8129266a10c859c8d24abd83e
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: fdfd510aaea8d09ac20546344f4bbba18bd5f99b
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298503"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914795"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Tutorial: crear un elemento Web de Silverlight que muestre OData para SharePoint
   SharePoint 2010 expone sus datos de lista por medio de OData. En SharePoint, el servicio de OData se implementa mediante el servicio RESTful ListData. SVC. En este tutorial se muestra cómo crear un elemento Web de SharePoint que hospeda una aplicación de Silverlight. La aplicación de Silverlight muestra información de la lista de anuncios de SharePoint mediante ListData. SVC. Para obtener más información, vea [interfaz de REST de SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ff521587(v=office.14)) y [Open Data Protocol](https://www.odata.org/).
@@ -42,7 +44,7 @@ ms.locfileid: "92298503"
 
 1. En la barra de menús, elija **archivo**  >  **nuevo**  >  **proyecto** para mostrar el cuadro de diálogo **nuevo proyecto** .
 
-2. Expanda el nodo **SharePoint** en **Visual C#** o **Visual Basic**y, a continuación, elija el nodo **2010** .
+2. Expanda el nodo **SharePoint** en **Visual C#** o **Visual Basic** y, a continuación, elija el nodo **2010** .
 
 3. En el panel plantillas, elija la plantilla de **elemento Web Silverlight 2010 de SharePoint** .
 
@@ -71,7 +73,7 @@ ms.locfileid: "92298503"
 
 1. Agregue una referencia de ensamblado a System. Windows. Data en la aplicación de Silverlight. Para obtener más información, vea [Cómo: agregar o quitar referencias mediante el cuadro de diálogo Agregar referencia](/previous-versions/wkze6zky(v=vs.140)).
 
-2. En **Explorador de soluciones**, abra el menú contextual para **referencias**y, a continuación, elija **Agregar referencia de servicio**.
+2. En **Explorador de soluciones**, abra el menú contextual para **referencias** y, a continuación, elija **Agregar referencia de servicio**.
 
     > [!NOTE]
     > Si está utilizando Visual Basic, debe elegir el icono **Mostrar todos los archivos** situado en la parte superior de **Explorador de soluciones** para mostrar el nodo **referencias** .
@@ -84,7 +86,7 @@ ms.locfileid: "92298503"
 
 5. En la barra de menús, elija **Compilar** > **Compilar solución**.
 
-6. Agregue un nuevo origen de datos al proyecto basado en el servicio de SharePoint. Para ello, en la barra de menús, elija **Ver**  >  **otros**  >  **orígenes de datos**de Windows.
+6. Agregue un nuevo origen de datos al proyecto basado en el servicio de SharePoint. Para ello, en la barra de menús, elija **Ver**  >  **otros**  >  **orígenes de datos** de Windows.
 
      La ventana **orígenes de datos** muestra todos los datos de lista de SharePoint disponibles, como tareas, anuncios y calendario.
 
@@ -214,7 +216,7 @@ ms.locfileid: "92298503"
 
 2. En SharePoint, en el menú **acciones del sitio** , elija **nueva página**.
 
-3. En el cuadro de diálogo **nueva página** , escriba un título, como la **prueba de elemento Web SL**y, a continuación, elija el botón **crear** .
+3. En el cuadro de diálogo **nueva página** , escriba un título, como la **prueba de elemento Web SL** y, a continuación, elija el botón **crear** .
 
 4. En el diseñador de páginas, en la pestaña **herramientas de edición** , elija **Insertar**.
 

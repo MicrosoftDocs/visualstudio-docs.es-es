@@ -1,5 +1,7 @@
 ---
 title: Enlazar puntos de interrupción | Microsoft Docs
+description: Obtenga información sobre cómo el IDE formula la solicitud de un punto de interrupción y solicita a la sesión de depuración que cree el punto de interrupción cuando un usuario establece un punto de interrupción.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e839b6e0e7967c4802bee5617da3334c5d4033c5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 606c1f4cb5559722028b78ef4ef21c41c0ba5556
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903235"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914717"
 ---
 # <a name="bind-breakpoints"></a>Enlazar puntos de interrupción
 Si el usuario establece un punto de interrupción, quizás presionando **F9**, el IDE formula la solicitud y solicita la sesión de depuración para crear el punto de interrupción.
@@ -53,5 +55,5 @@ Si el usuario establece un punto de interrupción, quizás presionando **F9**, e
 
  Si un control DE controla un punto de interrupción, no puede enlazarlo, pero otro DE puede enlazarlo, devuelve una advertencia. El IDE responde colocando un glifo de pregunta dentro del glifo de punto de interrupción a la izquierda de la línea de código fuente.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Tareas de depuración](../../extensibility/debugger/debugging-tasks.md)

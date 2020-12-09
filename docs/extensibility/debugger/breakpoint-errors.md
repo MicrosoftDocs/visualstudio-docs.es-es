@@ -1,5 +1,7 @@
 ---
 title: Errores de puntos de interrupción | Microsoft Docs
+description: Obtenga información sobre el proceso en el que un punto de interrupción intenta enlazarse al código, pero produce un error y cómo solucionar los errores de los puntos de interrupción.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0766792f19faf7c1933c6576ab41f65ec1b31ae9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 88a5003ce8abe79fcba9f9604047d2265810fda2
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739220"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914496"
 ---
 # <a name="breakpoint-errors"></a>Errores de punto de interrupción
 A continuación se describe el proceso cuando un punto de interrupción intenta enlazarse al código pero se produce un error.
@@ -32,5 +34,5 @@ A continuación se describe el proceso cuando un punto de interrupción intenta 
 
 4. El SDM llama a [IDebugErrorBreakpoint2:: GetBreakpointResolution](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md) para obtener el motivo por el que no se pudo enlazar el punto de interrupción de error.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Llamar a eventos del depurador](../../extensibility/debugger/calling-debugger-events.md)

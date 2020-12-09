@@ -1,5 +1,7 @@
 ---
 title: Conceptos del depurador | Microsoft Docs
+description: Obtenga información sobre los conceptos de arquitectura utilizados en el diseño del paquete de depuración de Visual Studio para ayudarle a crear en ese paquete.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ad8a450f9e79c1d44b8e098c8a00bb4b816e1af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7caecc9c3434afd90462757c9cb544f387df88d3
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738986"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914041"
 ---
 # <a name="debugger-concepts"></a>Conceptos del depurador
 Para compilar en el paquete de depuración de Visual Studio, debe estar familiarizado con los conceptos de arquitectura utilizados en el diseño del paquete.
@@ -44,7 +46,7 @@ Para compilar en el paquete de depuración de Visual Studio, debe estar familiar
  [Puntos de interrupción](../../extensibility/debugger/breakpoints-visual-studio-sdk.md) Define los tres tipos de puntos de interrupción (pendientes, enlazados y de error) en cuanto a la arquitectura de depuración.
 
 ## <a name="related-sections"></a>Secciones relacionadas
- [Contextos del depurador](../../extensibility/debugger/debugger-contexts.md) Explica cómo el motor DE depuración (DE) funciona simultáneamente dentro del código, la documentación y los contextos de evaluación de expresiones. Describe, para cada uno de los tres contextos, la ubicación, la posición o la evaluación relevantes para él.
+ [Contextos del depurador](../../extensibility/debugger/debugger-contexts.md) Explica cómo el motor DE depuración (DE) funciona simultáneamente dentro del código, la documentación y los contextos de evaluación de expresiones. Para cada uno de los tres contextos, se describen la ubicación, la posición o la evaluación correspondientes.
 
  [Componentes del depurador](../../extensibility/debugger/debugger-components.md) Proporciona información general sobre los componentes de depuración de Visual Studio, entre los que se incluyen el motor DE depuración (DE), el evaluador DE expresiones (EE) y el controlador de símbolos (SH).
 

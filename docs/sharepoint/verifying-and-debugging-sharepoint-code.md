@@ -1,5 +1,7 @@
 ---
 title: Comprobar y depurar código de SharePoint | Microsoft Docs
+description: Comprobar y depurar código de SharePoint. Use IntelliTrace para examinar los eventos pasados y el estado actual de la solución. Use pruebas unitarias para asegurarse de que los métodos funcionan correctamente.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7b57e07245631d37594d66ea7907b16efd817b2b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ce891e40552c0f8927bfd4ce006b750b6e5f8a54
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "63008262"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914509"
 ---
 # <a name="verify-and-debug-sharepoint-code"></a>Comprobar y depurar código de SharePoint
 Con IntelliTrace y las pruebas unitarias, puede depurar las soluciones de SharePoint más fácilmente y asegurarse de que cada método en ellas funciona correctamente. Puede usar estas características para los proyectos de SharePoint en Visual Studio siguiendo los mismos procedimientos que para otros tipos de proyectos.

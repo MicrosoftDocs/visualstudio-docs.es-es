@@ -1,5 +1,7 @@
 ---
 title: Contexto de código | Microsoft Docs
+description: Obtenga información sobre el contexto de código en la depuración de Visual Studio, que describe una posición en el código que existe cuando un programa se detiene en un punto de interrupción.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6424c1182f30b1bbfe6c166209b94afb7ec45549
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 60eabaca8d39d40649e20e022b25ce1b02bd8faf
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739156"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914314"
 ---
 # <a name="code-context"></a>Contexto de código
 En [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] la depuración, un **contexto de código**:
@@ -30,6 +32,6 @@ En [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] la depuración, 
 
 - Se implementa mediante una interfaz [IDebugCodeContext2](../../extensibility/debugger/reference/idebugcodecontext2.md) .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Contexto del documento](../../extensibility/debugger/document-context.md)
 - [Contextos del depurador](../../extensibility/debugger/debugger-contexts.md)

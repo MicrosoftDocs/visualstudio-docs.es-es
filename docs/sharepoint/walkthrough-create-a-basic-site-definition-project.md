@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: crear un proyecto de definición de sitio básico | Microsoft Docs'
+description: En este tutorial de SharePoint, vea cómo crear una definición de sitio básica que contenga un elemento Web visual con algunos controles.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d1c06f4df5d1efe06ad2537bd2e65f2c239f3be2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0411f027b105622d806e123bd80f38c4b05281ca
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016771"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913859"
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>Tutorial: crear un proyecto de definición de sitio básico
   En este tutorial se muestra cómo crear una definición de sitio básica que contiene un elemento Web visual con algunos controles. Por motivos de claridad, el elemento Web visual que cree tiene solo unos pocos controles. Sin embargo, puede crear definiciones de sitios de SharePoint más sofisticadas que incluyan más funcionalidad.
@@ -55,7 +57,7 @@ ms.locfileid: "86016771"
 
 3. En la lista de **plantillas** , elija la plantilla de **proyecto de SharePoint 2010** .
 
-4. En el cuadro **nombre** , escriba **TestSiteDef**y elija el botón **Aceptar** .
+4. En el cuadro **nombre** , escriba **TestSiteDef** y elija el botón **Aceptar** .
 
     Aparece el **Asistente para la personalización de SharePoint** .
 
@@ -73,7 +75,7 @@ ms.locfileid: "86016771"
 
 9. En **Visual C#** o **Visual Basic**, expanda el nodo **SharePoint** y, a continuación, elija el nodo **2010** .
 
-10. En el panel **plantillas** , elija la plantilla de **definición del sitio** , deje el **nombre** como **SiteDefinition1**y, a continuación, elija el botón **Agregar** .
+10. En el panel **plantillas** , elija la plantilla de **definición del sitio** , deje el **nombre** como **SiteDefinition1** y, a continuación, elija el botón **Agregar** .
 
 ## <a name="create-a-visual-web-part"></a>Crear un elemento Web Visual
  A continuación, cree un elemento Web visual para que aparezca en la Página principal de la definición del sitio.
@@ -84,7 +86,7 @@ ms.locfileid: "86016771"
 
 2. Elija el nodo del proyecto **SiteDefinition1** y, a continuación, en la barra de menús, elija **proyecto**  >  **Agregar nuevo elemento**.
 
-     Aparecerá el cuadro de diálogo **Agregar nuevo elemento** .
+     Aparecerá el cuadro de diálogo **Agregar nuevo elemento**.
 
 3. Expanda el nodo **Visual C#** o el **Visual Basic** , expanda el nodo **SharePoint** y, a continuación, elija el nodo **2010** .
 
@@ -181,6 +183,6 @@ ms.locfileid: "86016771"
 
      El texto aparece en la etiqueta del lado derecho del botón.
 
-## <a name="see-also"></a>Vea también
-- [Cómo: crear un receptor de eventos](../sharepoint/how-to-create-an-event-receiver.md)
+## <a name="see-also"></a>Consulte también
+- [Cómo: para crear un receptor de eventos](../sharepoint/how-to-create-an-event-receiver.md)
 - [Desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md)
