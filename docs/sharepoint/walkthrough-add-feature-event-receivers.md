@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: agregar receptores de eventos de características | Microsoft Docs'
+description: En este tutorial, agregue receptores de eventos de características, que son métodos que se ejecutan cuando una característica de SharePoint se instala, se activa, se desactiva o se quita.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,15 +18,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f40358c157ec24557947f36b0c6eadb6d8a2622d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98b85222fca4da6dfca653ad74e1315801798d83
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015366"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915601"
 ---
 # <a name="walkthrough-add-feature-event-receivers"></a>Tutorial: agregar receptores de eventos de características
-  Los receptores de eventos de características son métodos que se ejecutan cuando se produce uno de los siguientes eventos relacionados con características en SharePoint:
+Los receptores de eventos de características son métodos que se ejecutan cuando se produce uno de los siguientes eventos relacionados con características en SharePoint:
 
 - Se instala una característica.
 
@@ -34,7 +36,7 @@ ms.locfileid: "86015366"
 
 - Se quita una característica.
 
-  En este tutorial se muestra cómo agregar un receptor de eventos a una característica en un proyecto de SharePoint. Muestra las tareas siguientes:
+En este tutorial se muestra cómo agregar un receptor de eventos a una característica en un proyecto de SharePoint. Muestra las tareas siguientes:
 
 - Crear un proyecto vacío con un receptor de eventos de características.
 
@@ -58,13 +60,13 @@ ms.locfileid: "86015366"
 
 1. En la barra de menús, elija **archivo**  >  **nuevo**  >  **proyecto** para mostrar el cuadro de diálogo **nuevo proyecto** .
 
-2. Expanda el nodo **SharePoint** en **Visual C#** o **Visual Basic**y, a continuación, elija el nodo **2010** .
+2. Expanda el nodo **SharePoint** en **Visual C#** o **Visual Basic** y, a continuación, elija el nodo **2010** .
 
 3. En el panel **plantillas** , elija la plantilla de **proyecto de SharePoint 2010** .
 
      Este tipo de proyecto se usa para los receptores de eventos de características porque no tienen ninguna plantilla de proyecto.
 
-4. En el cuadro **nombre** , escriba **FeatureEvtTest**y, a continuación, elija el botón **Aceptar** para mostrar el Asistente para la **Personalización de SharePoint**.
+4. En el cuadro **nombre** , escriba **FeatureEvtTest** y, a continuación, elija el botón **Aceptar** para mostrar el Asistente para la **Personalización de SharePoint**.
 
 5. En la página **especifique el sitio y el nivel de seguridad de la depuración** , escriba la dirección URL del sitio del servidor de SharePoint al que desea agregar el nuevo elemento de campo personalizado o use la ubicación predeterminada (http:// \<*system name*> /).
 
@@ -81,7 +83,7 @@ ms.locfileid: "86015366"
 
 1. Abra el menú contextual del nodo características y, a continuación, elija **Agregar característica** para crear una característica.
 
-2. En el nodo **características** , abra el menú contextual de **Feature1**y, a continuación, elija **Agregar receptor de eventos** para agregar un receptor de eventos a la característica.
+2. En el nodo **características** , abra el menú contextual de **Feature1** y, a continuación, elija **Agregar receptor de eventos** para agregar un receptor de eventos a la característica.
 
      Esto agrega un archivo de código en Feature1. En este caso, se denomina *Feature1.EventReceiver.CS* o *Feature1. EventReceiver. VB*, dependiendo del lenguaje de desarrollo del proyecto.
 
@@ -119,5 +121,5 @@ ms.locfileid: "86015366"
 
 ## <a name="see-also"></a>Consulte también
 
-- [Cómo: crear un receptor de eventos](../sharepoint/how-to-create-an-event-receiver.md)
+- [Cómo: para crear un receptor de eventos](../sharepoint/how-to-create-an-event-receiver.md)
 - [Desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md)

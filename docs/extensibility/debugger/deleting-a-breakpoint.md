@@ -1,5 +1,7 @@
 ---
 title: Eliminar un punto de interrupción | Microsoft Docs
+description: Obtenga información sobre cómo el administrador de depuración de sesión quita un punto de interrupción pendiente y todos los puntos de interrupción enlazados que se enlazan a él cuando se elimina un punto de interrupción pendiente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a77be200a11eb7b3985a4c1a47e4cddaa543f900
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 061175326a19af1866262421b381eb14267c7efd
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738941"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915562"
 ---
 # <a name="deleting-a-breakpoint"></a>Eliminar un punto de interrupción
 A continuación se describe el proceso al eliminar un punto de interrupción pendiente:

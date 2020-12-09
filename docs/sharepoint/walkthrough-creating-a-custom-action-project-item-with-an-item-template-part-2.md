@@ -1,6 +1,8 @@
 ---
 title: Crear un elemento de proyecto de acción personalizada con la plantilla de elemento, parte 2
 titleSuffix: ''
+description: En este tutorial, agregue un asistente para recopilar información de los usuarios cuando usen una plantilla de elemento para agregar un elemento de proyecto de acción personalizado en un sitio de SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 957af3fdb4a86f4973ff8ac24251bae923ec299c
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: fe283da2c2a81827ca70414315278cebd775873a
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585476"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915217"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Tutorial: crear un elemento de proyecto de acción personalizado con una plantilla de elemento, parte 2
   Después de definir un tipo personalizado de elemento de proyecto de SharePoint y asociarlo a una plantilla de elemento en Visual Studio, es posible que también desee proporcionar un asistente para la plantilla. Puede usar el Asistente para recopilar información de los usuarios cuando usen la plantilla para agregar una nueva instancia del elemento de proyecto a un proyecto. La información que recopile puede usarse para inicializar el elemento de proyecto.
@@ -59,13 +61,13 @@ ms.locfileid: "91585476"
 
 1. En Visual Studio, abra la solución CustomActionProjectItem
 
-2. En **Explorador de soluciones**, abra el menú contextual del nodo de la solución, elija **Agregar**y, a continuación, elija **nuevo proyecto**.
+2. En **Explorador de soluciones**, abra el menú contextual del nodo de la solución, elija **Agregar** y, a continuación, elija **nuevo proyecto**.
 
 3. En el cuadro de diálogo **nuevo proyecto** , expanda los nodos **Visual C#** o **Visual Basic** y, a continuación, elija el nodo **Windows** .
 
 4. En la parte superior del cuadro de diálogo **nuevo proyecto** , asegúrese de que se elige **.NET Framework 4,5** en la lista de versiones de la .NET Framework.
 
-5. Elija la plantilla de proyecto **biblioteca de controles de usuario de WPF** , asigne al proyecto el nombre **ItemTemplateWizard**y, a continuación, elija el botón **Aceptar** .
+5. Elija la plantilla de proyecto **biblioteca de controles de usuario de WPF** , asigne al proyecto el nombre **ItemTemplateWizard** y, a continuación, elija el botón **Aceptar** .
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] agrega el proyecto **ItemTemplateWizard** a la solución.
 
@@ -253,9 +255,9 @@ ms.locfileid: "91585476"
 
 4. En la lista **origen** , elija **un proyecto en la solución actual**.
 
-5. En la lista **proyecto** , elija **ItemTemplateWizard**y elija el botón **Aceptar** .
+5. En la lista **proyecto** , elija **ItemTemplateWizard** y elija el botón **Aceptar** .
 
-6. En la barra de menús, **Elija compilar compilar**  >  **solución**y, a continuación, asegúrese de que la solución se compila sin errores.
+6. En la barra de menús, **Elija compilar compilar**  >  **solución** y, a continuación, asegúrese de que la solución se compila sin errores.
 
 ## <a name="test-the-wizard"></a>Probar el asistente
  Ahora está preparado para probar el asistente. En primer lugar, empiece a depurar la solución CustomActionProjectItem en la instancia experimental de Visual Studio. A continuación, pruebe el Asistente para el elemento de proyecto acción personalizada en un proyecto de SharePoint en la instancia experimental de Visual Studio. Por último, compile y ejecute el proyecto SharePoint para comprobar que la acción personalizada funciona del modo esperado.
@@ -280,11 +282,11 @@ ms.locfileid: "91585476"
 
 2. Expanda el nodo **Visual C#** o **Visual Basic** (en función del lenguaje que admita la plantilla de elemento), expanda el nodo **SharePoint** y, a continuación, elija el nodo **2010** .
 
-3. En la lista de plantillas de proyecto, elija **proyecto de SharePoint 2010**, asigne al proyecto el nombre **CustomActionWizardTest**y, a continuación, elija el botón **Aceptar** .
+3. En la lista de plantillas de proyecto, elija **proyecto de SharePoint 2010**, asigne al proyecto el nombre **CustomActionWizardTest** y, a continuación, elija el botón **Aceptar** .
 
 4. En el **Asistente para la personalización de SharePoint**, escriba la dirección URL del sitio que desea usar para la depuración y, a continuación, elija el botón **Finalizar** .
 
-5. En **Explorador de soluciones**, abra el menú contextual del nodo del proyecto, elija **Agregar**y, a continuación, elija **nuevo elemento**.
+5. En **Explorador de soluciones**, abra el menú contextual del nodo del proyecto, elija **Agregar** y, a continuación, elija **nuevo elemento**.
 
 6. En el cuadro de diálogo **Agregar nuevo elemento-CustomItemWizardTest** , expanda el nodo **SharePoint** y, a continuación, expanda el nodo **2010** .
 
@@ -342,7 +344,7 @@ ms.locfileid: "91585476"
 
 4. Cierre ambas instancias de Visual Studio (la instancia experimental y la instancia de Visual Studio en la que está abierta la solución CustomActionProjectItem).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Tutorial: crear un elemento de proyecto de acción personalizado con una plantilla de elemento, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
 - [Definir tipos de elementos de proyecto personalizados de SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [Crear plantillas de elemento y plantillas de proyecto para los elementos de proyecto de SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)

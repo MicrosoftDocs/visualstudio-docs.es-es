@@ -1,6 +1,8 @@
 ---
 title: 'Explorador de empaquetado: agregar & quitar características & elementos para empaquetar'
 titleSuffix: ''
+description: Agregar y quitar características y elementos de un paquete de SharePoint mediante el explorador de empaquetado de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9bc4546d598a2fcca822f1921f778034fb768c2b
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: ee9b2a12c9eaa168f0223dff29a3379a12b3d691
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585594"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915354"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>Cómo: agregar y quitar características y elementos de un paquete mediante el explorador de empaquetado
   Para configurar un paquete para implementar elementos y características de SharePoint, puede usar el explorador de empaquetado. Puede ajustar los elementos y las características del proyecto de SharePoint dentro del archivo. wsp.
@@ -32,7 +34,7 @@ ms.locfileid: "91585594"
 
 #### <a name="to-open-the-packaging-explorer"></a>Para abrir el explorador de empaquetado
 
-1. En la barra de menús, elija **Ver**  >  **otro**  >  **Explorador de empaquetado**de Windows.
+1. En la barra de menús, elija **Ver**  >  **otro**  >  **Explorador de empaquetado** de Windows.
 
      El **Explorador de empaquetado** aparece en el **cuadro de herramientas**.
 
@@ -45,7 +47,7 @@ ms.locfileid: "91585594"
 
 #### <a name="to-move-an-existing-sharepoint-feature"></a>Para trasladar una característica existente de SharePoint
 
-1. Abra el **Explorador de empaquetado**y, a continuación, realice uno de los pasos siguientes:
+1. Abra el **Explorador de empaquetado** y, a continuación, realice uno de los pasos siguientes:
 
     - Arrastre una **característica** de un proyecto a otro proyecto.
 
@@ -63,5 +65,5 @@ ms.locfileid: "91585594"
 
 2. Abra un menú contextual de una característica o un paquete y, a continuación, elija **validar**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Empaquetado e implementación de soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

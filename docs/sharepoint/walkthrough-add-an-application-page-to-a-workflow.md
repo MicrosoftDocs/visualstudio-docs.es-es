@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: agregar una página de aplicación a un flujo de trabajo | Microsoft Docs'
+description: En este tutorial, agregue una página de aplicación a una solución de flujo de trabajo de SharePoint. Modifique el código de flujo de trabajo. Cree, codifique y pruebe la página de la aplicación.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,14 +17,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f54914e6676e0cc2400fa04ebb089fac08f58c3c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c862c1de3b0630b3a5144f821e6266c34a88a5db
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015488"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915666"
 ---
-# <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Tutorial: agregar una página de aplicación a un flujo de trabajo
+# <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Tutorial: Adición de una página de aplicación a un flujo de trabajo
   En este tutorial se muestra cómo agregar una página de aplicación que muestra los datos derivados de un flujo de trabajo a un proyecto de flujo de trabajo. Se basa en el proyecto descrito en el tema [Tutorial: creación de un flujo de trabajo con formularios de asociación e iniciación](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
 
  En este tutorial se muestran las siguientes tareas:
@@ -44,7 +46,7 @@ ms.locfileid: "86015488"
 
 - También tiene que completar el proyecto en el tema [Tutorial: creación de un flujo de trabajo con formularios de asociación e iniciación](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
 
-## <a name="ammend-the-workflow-code"></a>Ammend el código de flujo de trabajo
+## <a name="amend-the-workflow-code"></a>Corregir el código del flujo de trabajo
  En primer lugar, agregue una línea de código al flujo de trabajo para establecer el valor de la columna resultado en la cantidad del informe de gastos. Este valor se usa más adelante en el cálculo de resumen del informe de gastos.
 
 #### <a name="to-set-the-value-of-the-outcome-column-in-the-workflow"></a>Para establecer el valor de la columna de resultados en el flujo de trabajo
@@ -349,7 +351,7 @@ ms.locfileid: "86015488"
 
 ## <a name="see-also"></a>Consulte también
 
-- [Tutorial: creación de un flujo de trabajo con formularios de asociación e iniciación](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)
-- [Cómo: crear una página de aplicación](../sharepoint/how-to-create-an-application-page.md)
-- [Crear páginas de aplicación para SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)
+- [Tutorial: Creación de un flujo de trabajo con formularios de asociación e iniciación](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)
+- [Cómo: para crear una página de aplicación](../sharepoint/how-to-create-an-application-page.md)
+- [Creación de páginas de aplicación para SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)
 - [Desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md)

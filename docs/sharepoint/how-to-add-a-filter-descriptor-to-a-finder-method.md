@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: agregar un descriptor de filtro a un método Finder | Microsoft Docs'
+description: Sepa cómo agregar un descriptor de filtro a un método Finder mediante la ventana detalles del método de BDC en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,15 +17,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 228afb2f49f4d528fa9b806e9bf8d2531f7de901
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ff312753be07867d8978dc4d5f60d5dfc0eee557
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016742"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915432"
 ---
 # <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>Cómo: agregar un descriptor de filtro a un método Finder
-  Los descriptores de filtro permiten a los consumidores del modelo pasar valores a los métodos antes de que se ejecuten. Para obtener más información, vea [diseñar un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md).
+  Los descriptores de filtro permiten a los consumidores del modelo pasar valores a los métodos antes de que se ejecuten. Para obtener más información, vea [Diseño de un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md).
 
  Un escenario común es que los usuarios de SharePoint quieran recuperar instancias de un tipo de contenido externo que coincidan con algunos criterios. Puede admitir este escenario si agrega un descriptor de filtro a un método Finder.
 
@@ -72,5 +74,5 @@ ms.locfileid: "86016742"
 - [Cómo: agregar un método Finder específico](../sharepoint/how-to-add-a-specific-finder-method.md)
 - [Cómo: agregar un parámetro a un método](../sharepoint/how-to-add-a-parameter-to-a-method.md)
 - [Cómo: definir el descriptor de tipo de un parámetro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)
-- [Diseñar un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md)
+- [Diseño de un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [Integrar datos profesionales en SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)

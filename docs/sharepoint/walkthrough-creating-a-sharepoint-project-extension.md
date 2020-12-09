@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: crear una extensión de proyecto de SharePoint | Microsoft Docs'
+description: Cree una extensión de proyecto de SharePoint, que puede usar para responder a eventos de nivel de proyecto, como cuando se agrega, elimina o cambia el nombre de un proyecto.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9d79bf66f88a7cbaa5321887b676cc9eca798a92
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: b815f8ea4656cc5a144f8cf12396391e55123ece
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739933"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914873"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>Tutorial: crear una extensión de proyecto de SharePoint
   En este tutorial se muestra cómo crear una extensión para los proyectos de SharePoint. Puede usar una extensión de proyecto para responder a eventos de nivel de proyecto, como cuando se agrega, se elimina o se cambia el nombre de un proyecto. También puede Agregar propiedades personalizadas o responder cuando cambia el valor de una propiedad. A diferencia de las extensiones de elemento de proyecto, las extensiones de proyecto no se pueden asociar a un tipo de proyecto de SharePoint concreto. Cuando se crea una extensión de proyecto, la extensión se carga cuando se abre cualquier tipo de proyecto de SharePoint en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
@@ -69,19 +71,19 @@ ms.locfileid: "90739933"
 
 4. En la parte superior del cuadro de diálogo, elija **.NET Framework 4,5** en la lista de versiones del .NET Framework y, a continuación, elija la plantilla de **Proyecto VSIX** .
 
-5. En el cuadro **nombre** , escriba **ProjectExtensionPackage**y elija el botón **Aceptar** .
+5. En el cuadro **nombre** , escriba **ProjectExtensionPackage** y elija el botón **Aceptar** .
 
      El proyecto **ProjectExtensionPackage** aparece en **Explorador de soluciones**.
 
 #### <a name="to-create-the-extension-project"></a>Para crear la extensión de proyecto
 
-1. En **Explorador de soluciones**, abra el menú contextual del nodo de la solución, elija **Agregar**y, a continuación, elija **nuevo proyecto**.
+1. En **Explorador de soluciones**, abra el menú contextual del nodo de la solución, elija **Agregar** y, a continuación, elija **nuevo proyecto**.
 
 2. En el cuadro de diálogo **nuevo proyecto** , expanda los nodos **Visual C#** o **Visual Basic** y, a continuación, elija **Windows**.
 
 3. En la parte superior del cuadro de diálogo, elija **.NET Framework 4,5** en la lista de versiones del .NET Framework y, después, elija la plantilla de proyecto **biblioteca de clases** .
 
-4. En el cuadro **nombre** , escriba **ProjectExtension**y elija el botón **Aceptar** .
+4. En el cuadro **nombre** , escriba **ProjectExtension** y elija el botón **Aceptar** .
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] agrega el proyecto **ProjectExtension** a la solución y abre el archivo de código predeterminado Class1.
 
@@ -155,7 +157,7 @@ ms.locfileid: "90739933"
 
 10. En la barra de menús, elija **archivo**  >  **guardar todo** al finalizar y, a continuación, cierre el diseñador de manifiestos.
 
-11. En la barra de menús, **Elija compilar compilar**  >  **solución**y, a continuación, asegúrese de que el proyecto se compila sin errores.
+11. En la barra de menús, **Elija compilar compilar**  >  **solución** y, a continuación, asegúrese de que el proyecto se compila sin errores.
 
 12. En **Explorador de soluciones**, abra el menú contextual del proyecto **ProjectExtensionPackage** y elija el botón **Abrir carpeta en el explorador de archivos** .
 
@@ -200,7 +202,7 @@ ms.locfileid: "90739933"
 
 7. Cierre la instancia experimental de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Extender proyectos de SharePoint](../sharepoint/extending-sharepoint-projects.md)
 - [Cómo: agregar una propiedad a proyectos de SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)
 - [Convertir entre tipos de sistema de proyectos de SharePoint y otros tipos de proyectos de Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)

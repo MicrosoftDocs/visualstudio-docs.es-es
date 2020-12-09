@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: agregar y quitar elementos de las características de SharePoint | Microsoft Docs'
+description: Agregar y quitar manualmente elementos de proyecto de SharePoint a características de SharePoint mediante el diseñador de características de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 27c6ebfb0b0cdbff0a184859ffa2a73acab809c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dacfbf715ff37238af5332976313c3b592d21be6
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014529"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914925"
 ---
 # <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Cómo: agregar y quitar elementos de las características de SharePoint
   Al crear una solución de SharePoint, Visual Studio agrega los elementos de proyecto de SharePoint predeterminados a la característica. Antes de la implementación, puede Agregar y quitar elementos de proyecto de SharePoint para modificar la característica de SharePoint.
@@ -30,7 +32,7 @@ ms.locfileid: "86014529"
 
 1. Abra el diseñador de características.
 
-    Para obtener más información, consulte [Cómo: personalizar una característica de SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).
+    Para obtener más información, vea [Cómo: para personalizar una característica de SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).
 
 2. Agregue uno o varios elementos de los **elementos de la** lista de soluciones a los **elementos de la** lista de características mediante uno o varios de los pasos siguientes:
 
@@ -54,4 +56,4 @@ ms.locfileid: "86014529"
 
 ## <a name="see-also"></a>Consulte también
 - [Crear características de SharePoint](../sharepoint/creating-sharepoint-features.md)
-- [Empaquetar e implementar soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
+- [Empaquetado e implementación de soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

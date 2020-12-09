@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: agregar un método de eliminación | Microsoft Docs'
+description: Obtenga información sobre cómo agregar un método de eliminación en el diseñador de BDC de Visual Studio, de modo que un usuario final pueda eliminar un registro de datos de una lista externa en un sitio de SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -19,21 +21,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dd97d28936e9f0cc50e9064fdc1a6a64bb20fc77
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a5e41fbb4f70bd3f5ae2db72b630ae6e524d3def
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017040"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915445"
 ---
 # <a name="how-to-add-a-deleter-method"></a>Cómo: agregar un método de eliminación
-  Puede permitir que un usuario final elimine un registro de datos de una lista externa en un sitio de SharePoint agregando un método de eliminación al modelo. Para obtener más información, vea [diseñar un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md).
+  Puede permitir que un usuario final elimine un registro de datos de una lista externa en un sitio de SharePoint agregando un método de eliminación al modelo. Para obtener más información, vea [Diseño de un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md).
 
 ### <a name="to-create-a-deleter-method"></a>Para crear un método de eliminación
 
 1. En el **Diseñador de BDC**, elija una entidad.
 
-2. En la barra de menús, elija **Ver**  >  **otros**  >  **detalles del método BDC**de Windows.
+2. En la barra de menús, elija **Ver**  >  **otros**  >  **detalles del método BDC** de Windows.
 
     Se abre la ventana **detalles del método de BDC** . Para obtener más información acerca de esta ventana, consulte [información general sobre las herramientas de diseño del modelo BDC](../sharepoint/bdc-model-design-tools-overview.md).
 
@@ -49,7 +51,7 @@ ms.locfileid: "86017040"
 
    - Instancia de método para el método.
 
-     Para obtener más información, vea [diseñar un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md).
+     Para obtener más información, vea [Diseño de un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md).
 
 4. En **Explorador de soluciones**, abra el menú contextual del archivo de código de servicio que se generó para la entidad y, a continuación, elija **Ver código**.
 
@@ -67,7 +69,7 @@ ms.locfileid: "86017040"
     [!code-vb[SP_BDC#6](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb#6)]
 
 ## <a name="see-also"></a>Consulte también
-- [Diseñar un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md)
+- [Diseño de un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [Cómo: agregar un método Finder](../sharepoint/how-to-add-a-finder-method.md)
 - [Cómo: agregar un método Finder específico](../sharepoint/how-to-add-a-specific-finder-method.md)
 - [Cómo: agregar un método Creator](../sharepoint/how-to-add-a-creator-method.md)

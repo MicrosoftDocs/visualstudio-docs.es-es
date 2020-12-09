@@ -1,5 +1,7 @@
 ---
 title: Crear una lista externa en SharePoint con datos económicos
+description: Cree un modelo para el servicio BDC que devuelva información sobre los contactos en una base de datos empresarial y, después, cree una lista externa en SharePoint con este modelo.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9f4fe79c3a6f158eb61d624ce6c5e1566925e3fd
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: a791f94e46e16369392465e075ade92a833e2868
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740063"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915341"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Tutorial: crear una lista externa en SharePoint con datos económicos
 
@@ -56,7 +58,7 @@ Necesitará los componentes siguientes para completar este tutorial:
 
 2. En **Visual C#** o **Visual Basic**, expanda el nodo **SharePoint** y, a continuación, elija el elemento **2010** .
 
-3. En el panel **plantillas** , elija **proyecto de SharePoint 2010**, asigne al proyecto el nombre **AdventureWorksTest**y, a continuación, elija el botón **Aceptar** .
+3. En el panel **plantillas** , elija **proyecto de SharePoint 2010**, asigne al proyecto el nombre **AdventureWorksTest** y, a continuación, elija el botón **Aceptar** .
 
      Aparece el **Asistente para la personalización de SharePoint** . En este asistente, puede especificar el sitio que va a usar para depurar el proyecto y establecer el nivel de confianza de la solución.
 
@@ -66,11 +68,11 @@ Necesitará los componentes siguientes para completar este tutorial:
 
 6. En **Explorador de soluciones**, elija el nodo de proyecto de SharePoint.
 
-7. En la barra de menús, elija **proyecto**  >  **Agregar nuevo elemento**.
+7. En la barra de menús, elija **Proyecto** >  **Agregar nuevo elemento**.
 
      Se abrirá el cuadro de diálogo **Agregar nuevo elemento**.
 
-8. En el panel **plantillas** , elija **modelo de conectividad a datos profesionales (solo solución de granja de servidores)**, asigne al proyecto el nombre **AdventureWorksContacts**y, a continuación, elija el botón **Agregar** .
+8. En el panel **plantillas** , elija **modelo de conectividad a datos profesionales (solo solución de granja de servidores)**, asigne al proyecto el nombre **AdventureWorksContacts** y, a continuación, elija el botón **Agregar** .
 
 ## <a name="add-data-access-classes-to-the-project"></a>Agregar clases de acceso a datos al proyecto
 
@@ -84,13 +86,13 @@ Necesitará los componentes siguientes para completar este tutorial:
 
 3. En el **Explorador de soluciones**, elija el nodo de proyecto.
 
-4. En la barra de menús, elija **proyecto**  >  **Agregar nuevo elemento**.
+4. En la barra de menús, elija **Proyecto** >  **Agregar nuevo elemento**.
 
 5. En el panel **plantillas instaladas** , elija el nodo de **datos** .
 
 6. En el panel **plantillas** , elija **LINQ to SQL clases**.
 
-7. En el cuadro **nombre** , especifique **AdventureWorks**y, a continuación, elija el botón **Agregar** .
+7. En el cuadro **nombre** , especifique **AdventureWorks** y, a continuación, elija el botón **Agregar** .
 
      Se agrega un archivo. dbml al proyecto y se abre el Object Relational Designer (Object Relational Designer).
 
@@ -110,7 +112,7 @@ El proyecto **modelo de conectividad a datos profesionales** agrega una entidad 
 
 2. El archivo de modelo de conectividad a datos profesionales se abre en el diseñador de BDC.
 
-3. En el diseñador, abra el menú contextual de **Entity1**y, a continuación, elija **eliminar**.
+3. En el diseñador, abra el menú contextual de **Entity1** y, a continuación, elija **eliminar**.
 
 4. En **Explorador de soluciones**, abra el menú contextual de *Entity1. vb* (en Visual Basic) o *Entity1.CS* (en C#) y, a continuación, elija **eliminar**.
 
@@ -126,11 +128,11 @@ Agregue una entidad al modelo. Puede Agregar entidades desde el **cuadro de herr
 
      La nueva entidad aparece en el diseñador. Visual Studio agrega un archivo denominado *EntityService. VB* (en Visual Basic) o *EntityService.CS* (en C#) al proyecto.
 
-3. En la barra de menús, elija **Ver**  >  **Properties**  >  **ventana**propiedades.
+3. En la barra de menús, elija **Ver**  >  **Properties**  >  **ventana** propiedades.
 
 4. En la ventana **propiedades** , establezca el valor de la propiedad **Name** en **Contact**.
 
-5. En el diseñador, abra el menú contextual de la entidad, elija **Agregar**y, a continuación, elija **identificador**.
+5. En el diseñador, abra el menú contextual de la entidad, elija **Agregar** y, a continuación, elija **identificador**.
 
      Aparece un nuevo identificador en la entidad.
 
@@ -146,7 +148,7 @@ Agregue un método Finder específico a la entidad Contact mediante la ventana *
 
 1. En el diseñador de BDC, elija la entidad **contacto** .
 
-2. En la barra de menús, elija **Ver**  >  **otros**  >  **detalles del método BDC**de Windows.
+2. En la barra de menús, elija **Ver**  >  **otros**  >  **detalles del método BDC** de Windows.
 
      Se abre la ventana detalles del método de BDC.
 
@@ -170,7 +172,7 @@ Agregue un método Finder específico a la entidad Contact mediante la ventana *
 
 5. En la ventana **propiedades** , abra la lista situada junto a la propiedad **TypeName** , elija la pestaña **proyecto actual** y, a continuación, elija la propiedad **contacto** .
 
-6. En el **Explorador de BDC**, abra el menú contextual del **contacto**y, a continuación, elija **Agregar descriptor de tipos**.
+6. En el **Explorador de BDC**, abra el menú contextual del **contacto** y, a continuación, elija **Agregar descriptor de tipos**.
 
      Aparece un nuevo descriptor de tipo denominado **TypeDescriptor1** en el **Explorador de BDC**.
 
@@ -184,8 +186,8 @@ Agregue un método Finder específico a la entidad Contact mediante la ventana *
 
     |Nombre|Nombre del tipo|
     |----------|---------------|
-    |FirstName|System.String|
-    |LastName|System.String|
+    |Nombre|System.String|
+    |Apellidos|System.String|
     |Teléfono|System.String|
     |EmailAddress|System.String|
     |EmailPromotion|System.Int32|
@@ -274,7 +276,7 @@ Puede obtener más información sobre cómo diseñar modelos para el servicio BD
 - [Cómo: agregar un método Updater](../sharepoint/how-to-add-an-updater-method.md).
 - [Cómo: agregar un método de eliminación](../sharepoint/how-to-add-a-deleter-method.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Diseñar un modelo](../sharepoint/designing-a-business-data-connectivity-model.md) 
  de conectividad a datos profesionales [Crear un modelo](../sharepoint/creating-a-business-data-connectivity-model.md) 

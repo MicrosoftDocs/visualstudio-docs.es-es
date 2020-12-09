@@ -1,6 +1,8 @@
 ---
 title: Crear un elemento de proyecto de acción personalizada con la plantilla de elemento, parte 1
 titleSuffix: ''
+description: Mediante una plantilla de elemento, cree un elemento de proyecto que se puede Agregar a un proyecto de SharePoint para crear una acción personalizada en un sitio de SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5cdf574d17e63e1ef4906c629d43f5f928784d01
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 5d9d1d2cca8f8ffaec67c92b44e7a621d08ad673
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585568"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915276"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>Tutorial: crear un elemento de proyecto de acción personalizado con una plantilla de elemento, parte 1
   Puede extender el sistema de proyectos de SharePoint en Visual Studio creando sus propios tipos de elemento de proyecto. En este tutorial, creará un elemento de proyecto que se puede agregar a un proyecto de SharePoint para crear una acción personalizada en un sitio de SharePoint. La acción personalizada agrega un elemento de menú al menú **acciones del sitio** del sitio de SharePoint.
@@ -86,13 +88,13 @@ ms.locfileid: "91585568"
 
 5. Elija la plantilla de **Proyecto VSIX** .
 
-6. En el cuadro **nombre** , escriba **CustomActionProjectItem**y elija el botón **Aceptar** .
+6. En el cuadro **nombre** , escriba **CustomActionProjectItem** y elija el botón **Aceptar** .
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] agrega el proyecto **CustomActionProjectItem** a **Explorador de soluciones**.
 
 #### <a name="to-create-the-item-template-project"></a>Para crear el proyecto de plantilla de elemento
 
-1. En **Explorador de soluciones**, abra el menú contextual del nodo de la solución, elija **Agregar**y, a continuación, elija **nuevo proyecto**.
+1. En **Explorador de soluciones**, abra el menú contextual del nodo de la solución, elija **Agregar** y, a continuación, elija **nuevo proyecto**.
 
 2. En la lista de la parte superior del cuadro de diálogo **nuevo proyecto** , asegúrese de que está seleccionado **.NET Framework 4,5** .
 
@@ -100,19 +102,19 @@ ms.locfileid: "91585568"
 
 4. En la lista de plantillas de proyecto, elija la plantilla de **elemento de C#** o la plantilla de plantilla de elemento de **Visual Basic** .
 
-5. En el cuadro **nombre** , escriba **ItemTemplate**y, a continuación, elija el botón **Aceptar** .
+5. En el cuadro **nombre** , escriba **ItemTemplate** y, a continuación, elija el botón **Aceptar** .
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] agrega el proyecto **ItemTemplate** a la solución.
 
 #### <a name="to-create-the-extension-project"></a>Para crear la extensión de proyecto
 
-1. En **Explorador de soluciones**, abra el menú contextual del nodo de la solución, elija **Agregar**y, a continuación, elija **nuevo proyecto**.
+1. En **Explorador de soluciones**, abra el menú contextual del nodo de la solución, elija **Agregar** y, a continuación, elija **nuevo proyecto**.
 
 2. En la lista de la parte superior del cuadro de diálogo **nuevo proyecto** , asegúrese de que está seleccionado **.NET Framework 4,5** .
 
 3. En el cuadro de diálogo **nuevo proyecto** , expanda los nodos **Visual C#** o **Visual Basic** , elija el nodo **Windows** y, a continuación, elija la plantilla de proyecto **biblioteca de clases** .
 
-4. En el cuadro **nombre** , escriba **ProjectItemDefinition**y elija el botón **Aceptar** .
+4. En el cuadro **nombre** , escriba **ProjectItemDefinition** y elija el botón **Aceptar** .
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] agrega el proyecto **ProjectItemDefinition** a la solución y abre el archivo de código predeterminado Class1.
 
@@ -123,7 +125,7 @@ ms.locfileid: "91585568"
 
 #### <a name="to-configure-the-project"></a>Para configurar el proyecto
 
-1. En **Explorador de soluciones**, abra el menú contextual del proyecto **ProjectItemDefinition** , elija **Agregar**y, a continuación, elija **nuevo elemento**.
+1. En **Explorador de soluciones**, abra el menú contextual del proyecto **ProjectItemDefinition** , elija **Agregar** y, a continuación, elija **nuevo elemento**.
 
 2. En la lista de elementos de proyecto, elija **archivo de código**.
 
@@ -160,14 +162,14 @@ ms.locfileid: "91585568"
 
 #### <a name="to-create-a-custom-icon-for-the-project-item"></a>Para crear un icono personalizado para el elemento de proyecto
 
-1. En **Explorador de soluciones**, abra el menú contextual del proyecto **ProjectItemDefinition** , elija **Agregar**y, a continuación, elija **nuevo elemento..**..
+1. En **Explorador de soluciones**, abra el menú contextual del proyecto **ProjectItemDefinition** , elija **Agregar** y, a continuación, elija **nuevo elemento..**..
 
 2. En la lista de elementos de proyecto, elija el elemento de **archivo de icono** .
 
     > [!NOTE]
     > En proyectos de Visual Basic, debe elegir el nodo **General** para mostrar el elemento de **archivo de icono** .
 
-3. En el cuadro **nombre** , escriba **CustomAction_SolutionExplorer. ico**y, a continuación, elija el botón **Agregar** .
+3. En el cuadro **nombre** , escriba **CustomAction_SolutionExplorer. ico** y, a continuación, elija el botón **Agregar** .
 
      El icono nuevo se abre en el **Editor de imágenes**.
 
@@ -221,11 +223,11 @@ ms.locfileid: "91585568"
 
      Este archivo define el contenido y comportamiento de la plantilla de elementos. Para obtener más información sobre el contenido de este archivo, vea [referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md).
 
-4. En **Explorador de soluciones**, abra el menú contextual del proyecto **ItemTemplate** , elija **Agregar**y, a continuación, elija **nuevo elemento**.
+4. En **Explorador de soluciones**, abra el menú contextual del proyecto **ItemTemplate** , elija **Agregar** y, a continuación, elija **nuevo elemento**.
 
 5. En el cuadro de diálogo **Agregar nuevo elemento** , elija la plantilla **archivo de texto** .
 
-6. En el cuadro **nombre** , escriba **CustomAction. spdata**y, a continuación, elija el botón **Agregar** .
+6. En el cuadro **nombre** , escriba **CustomAction. spdata** y, a continuación, elija el botón **Agregar** .
 
 7. Agregue el siguiente código XML al archivo *CustomAction. spdata* y, a continuación, guarde y cierre el archivo.
 
@@ -241,11 +243,11 @@ ms.locfileid: "91585568"
 
      Este archivo contiene información sobre los archivos que están contenidos en el elemento de proyecto. El atributo `Type` del elemento `ProjectItem` debe estar establecido en la misma cadena que se pasa a <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute> en la definición del elemento de proyecto (la clase `CustomActionProjectItemTypeProvider` que creó anteriormente en este tutorial). Para obtener más información sobre el contenido de los archivos *. spdata* , vea [referencia de esquema de elementos de proyecto de SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md).
 
-8. En **Explorador de soluciones**, abra el menú contextual del proyecto **ItemTemplate** , elija **Agregar**y, a continuación, elija **nuevo elemento**.
+8. En **Explorador de soluciones**, abra el menú contextual del proyecto **ItemTemplate** , elija **Agregar** y, a continuación, elija **nuevo elemento**.
 
 9. En el cuadro de diálogo **Agregar nuevo elemento** , elija la plantilla de **archivo XML** .
 
-10. En el cuadro **nombre** , escriba **Elements.xml**y, a continuación, elija el botón **Agregar** .
+10. En el cuadro **nombre** , escriba **Elements.xml** y, a continuación, elija el botón **Agregar** .
 
 11. Reemplace el contenido del archivo de *Elements.xml* por el siguiente código XML y, a continuación, guarde y cierre el archivo.
 
@@ -315,7 +317,7 @@ ms.locfileid: "91585568"
 
 7. En la lista **origen** , elija **un proyecto en la solución actual**.
 
-8. En la lista **proyecto** , elija **ItemTemplate**y, a continuación, elija el botón **Aceptar** .
+8. En la lista **proyecto** , elija **ItemTemplate** y, a continuación, elija el botón **Aceptar** .
 
 9. En la pestaña **activos** , vuelva a elegir el botón **nuevo** .
 
@@ -332,7 +334,7 @@ ms.locfileid: "91585568"
 
 13. Elija el botón **Aceptar** .
 
-14. En la barra de menús, **Elija compilar compilar**  >  **solución**y, a continuación, asegúrese de que el proyecto se compila sin errores.
+14. En la barra de menús, **Elija compilar compilar**  >  **solución** y, a continuación, asegúrese de que el proyecto se compila sin errores.
 
 15. Asegúrese de que la carpeta de salida de la compilación del proyecto CustomActionProjectItem contiene el archivo CustomActionProjectItem.vsix.
 
@@ -355,15 +357,15 @@ ms.locfileid: "91585568"
 
 1. En la instancia experimental de Visual Studio, en la barra de menús, elija **archivo**  >  **nuevo**  >  **proyecto**.
 
-2. Expanda **Visual C#** o **Visual Basic** (en función del lenguaje que admita la plantilla de elemento), expanda **SharePoint**y, a continuación, elija el nodo **2010** .
+2. Expanda **Visual C#** o **Visual Basic** (en función del lenguaje que admita la plantilla de elemento), expanda **SharePoint** y, a continuación, elija el nodo **2010** .
 
 3. En la lista de plantillas de proyecto, elija **proyecto de SharePoint 2010**.
 
-4. En el cuadro **nombre** , escriba **CustomActionTest**y elija el botón **Aceptar** .
+4. En el cuadro **nombre** , escriba **CustomActionTest** y elija el botón **Aceptar** .
 
 5. En el **Asistente para la personalización de SharePoint**, escriba la dirección URL del sitio que desea usar para la depuración y, a continuación, elija el botón **Finalizar** .
 
-6. En **Explorador de soluciones**, abra el menú contextual del nodo del proyecto, elija **Agregar**y, a continuación, elija **nuevo elemento**.
+6. En **Explorador de soluciones**, abra el menú contextual del nodo del proyecto, elija **Agregar** y, a continuación, elija **nuevo elemento**.
 
 7. En el cuadro de diálogo **Agregar nuevo elemento** , elija el nodo **2010** debajo del nodo **SharePoint** .
 
@@ -439,7 +441,7 @@ ms.locfileid: "91585568"
 
      Se abre el cuadro de diálogo **Extensiones y actualizaciones**.
 
-2. En la lista de extensiones, elija **elemento de proyecto acción personalizada**y, a continuación, elija el botón **desinstalar** .
+2. En la lista de extensiones, elija **elemento de proyecto acción personalizada** y, a continuación, elija el botón **desinstalar** .
 
 3. En el cuadro de diálogo que aparece, elija el botón **sí** para confirmar que desea desinstalar la extensión.
 
@@ -450,7 +452,7 @@ ms.locfileid: "91585568"
 ## <a name="next-steps"></a>Pasos siguientes
  Después de completar este tutorial, puede agregar un asistente a la plantilla de elemento. Cuando un usuario agrega un elemento de proyecto de acción personalizado a un proyecto de SharePoint, el asistente recopila información sobre la acción (como su ubicación y la dirección URL a la que navegar cuando se elige la acción) y agrega esta información al archivo *Elements.xml* del nuevo elemento de proyecto. Para obtener más información, vea [Tutorial: crear un elemento de proyecto de acción personalizado con una plantilla de elemento, parte 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Tutorial: crear un elemento de proyecto de acción personalizado con una plantilla de elemento, parte 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)
 - [Definir tipos de elementos de proyecto personalizados de SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)

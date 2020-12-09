@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: agregar un método Creator | Microsoft Docs'
+description: Sepa cómo agregar un método Creator, que agrega nuevos datos al origen de datos de una entidad en el servicio de conectividad a datos profesionales (BDC) de SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,21 +19,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 962e353b5ae82f6dd3eccc2898385fd4b9ee30ee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 790b4265b232c71ff3e0613cffcb45e710081fa3
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017066"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915458"
 ---
 # <a name="how-to-add-a-creator-method"></a>Cómo: agregar un método Creator
-  Un método Creator agrega nuevos datos al origen de datos de una entidad. El servicio de conectividad a datos profesionales (BDC) llama a este método cuando los usuarios eligen el botón **nuevo elemento** de la **cinta** de opciones de una lista basada en el modelo. Para obtener más información, vea [diseñar un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md).
+  Un método Creator agrega nuevos datos al origen de datos de una entidad. El servicio de conectividad a datos profesionales (BDC) llama a este método cuando los usuarios eligen el botón **nuevo elemento** de la **cinta** de opciones de una lista basada en el modelo. Para obtener más información, vea [Diseño de un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md).
 
 ### <a name="to-add-a-creator-method"></a>Para agregar un método Creator
 
 1. En el **Diseñador de BDC**, elija una entidad.
 
-2. En la barra de menús, elija **Ver**  >  **otros**  > **detalles del método BDC**de Windows.
+2. En la barra de menús, elija **Ver**  >  **otros**  > **detalles del método BDC** de Windows.
 
     Se abre la ventana **detalles del método de BDC** . Para obtener más información acerca de esa ventana, consulte [información general sobre las herramientas de diseño del modelo BDC](../sharepoint/bdc-model-design-tools-overview.md).
 
@@ -49,7 +51,7 @@ ms.locfileid: "86017066"
 
    - Instancia de método para el método.
 
-     Para obtener más información, vea [diseñar un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md).
+     Para obtener más información, vea [Diseño de un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md).
 
 4. En **Explorador de soluciones**, abra el menú contextual del archivo de código de servicio que se generó para la entidad y, a continuación, elija **Ver código**.
 
@@ -64,7 +66,7 @@ ms.locfileid: "86017066"
     [!code-vb[SP_BDC#4](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#4)]
 
 ## <a name="see-also"></a>Consulte también
-- [Diseñar un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md)
+- [Diseño de un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [Cómo: agregar un método Finder](../sharepoint/how-to-add-a-finder-method.md)
 - [Cómo: agregar un método Finder específico](../sharepoint/how-to-add-a-specific-finder-method.md)
 - [Cómo: agregar un método de eliminación](../sharepoint/how-to-add-a-deleter-method.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: agregar una propiedad personalizada | Microsoft Docs'
+description: Obtenga información sobre cómo agregar una propiedad personalizada al modelo de conectividad a datos profesionales (BDC) en SharePoint mediante el editor de propiedades del explorador de BDC de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e79b18b4d2b388d2ff0387fed24778f8db03fd54
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b12124d874c58ce17f1fa24d2bd9283af64f1c92
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017079"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915484"
 ---
 # <a name="how-to-add-a-custom-property"></a>Cómo: agregar una propiedad personalizada
   Puede Agregar propiedades personalizadas al modelo mediante el **Editor de propiedades**. Puede tener acceso a estas propiedades en el código para recuperar información como cadenas de conexión y otros datos en tiempo de ejecución.
@@ -44,7 +46,7 @@ ms.locfileid: "86017079"
 6. En el campo **valor** de la propiedad personalizada, especifique un valor y, a continuación, elija el botón **Aceptar** .
 
 ## <a name="see-also"></a>Consulte también
-- [Diseñar un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md)
-- [Diseñar un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md)
-- [Crear un modelo de conectividad a datos profesionales](../sharepoint/creating-a-business-data-connectivity-model.md)
-- [Integrar datos profesionales en SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)
+- [Diseño de un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md)
+- [Diseño de un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md)
+- [Creación de un modelo de conectividad a datos profesionales](../sharepoint/creating-a-business-data-connectivity-model.md)
+- [Integración de datos profesionales en SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)

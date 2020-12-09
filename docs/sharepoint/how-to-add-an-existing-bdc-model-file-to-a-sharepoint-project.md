@@ -1,6 +1,8 @@
 ---
 title: 'Cómo: agregar un archivo de modelo BDC existente a un proyecto de SharePoint | Microsoft Docs'
 titleSuffix: ''
+description: Agregue un archivo de modelo de conectividad a datos profesionales (BDC) existente a un proyecto de SharePoint en Visual Studio, para que pueda personalizar, empaquetar y volver a implementar un modelo BDC.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fbfbd4e485a359b7e760188217326d23d3b0aa47
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: ce65f286c3de760ff74e5ef7239aac54d760f003
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584625"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914964"
 ---
 # <a name="how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project"></a>Cómo: para agregar un archivo de modelo BDC existente a un proyecto de SharePoint
   Puede personalizar, empaquetar y volver a implementar un modelo de conectividad a datos profesionales (BDC) mediante Visual Studio para agregar el archivo de modelo (*. bdcm*) a cualquier proyecto de granja de SharePoint. Para obtener más información, vea [Creación de un modelo de conectividad a datos profesionales](../sharepoint/creating-a-business-data-connectivity-model.md).
@@ -46,7 +48,7 @@ ms.locfileid: "91584625"
 
      El elemento de **modelo de conectividad a datos profesionales** se agrega al proyecto.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Creación de un modelo de conectividad a datos profesionales](../sharepoint/creating-a-business-data-connectivity-model.md)
 - [Cómo: para crear un modelo BDC](../sharepoint/how-to-create-a-bdc-model.md)
 - [Cómo: para usar un archivo de recursos para especificar nombres, propiedades y permisos localizados](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)

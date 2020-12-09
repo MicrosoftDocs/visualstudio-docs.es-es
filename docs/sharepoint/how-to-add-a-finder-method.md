@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: agregar un método Finder | Microsoft Docs'
+description: Agregue un método Finder en Visual Studio, que habilita el servicio de conectividad a datos profesionales (BDC) para mostrar una lista de entidades en un elemento Web o lista de SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1fa8f8eb34943cc17bc6cabca8e93ea7569a7ba6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b7e2bb74278194878ed4496c12c918707cdc1e6e
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016731"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915094"
 ---
 # <a name="how-to-add-a-finder-method"></a>Cómo: agregar un método Finder
   Para habilitar el servicio de conectividad a datos profesionales (BDC) para mostrar una lista de entidades en un elemento Web o lista, debe crear un método de *buscador* . Un método Finder es un método especial que devuelve una colección de instancias de entidad. Para obtener más información, vea [diseñar un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -33,7 +35,7 @@ ms.locfileid: "86016731"
 
     Para obtener más información, vea [Cómo: agregar una entidad a un modelo](../sharepoint/how-to-add-an-entity-to-a-model.md).
 
-2. En la barra de menús, elija **Ver**  >  **otros**  >  **detalles del método BDC**de Windows.
+2. En la barra de menús, elija **Ver**  >  **otros**  >  **detalles del método BDC** de Windows.
 
     Se abre la ventana **detalles del método de BDC** . Para obtener más información acerca de la ventana **detalles del método de BDC** , consulte información general sobre las herramientas de diseño del [modelo BDC](../sharepoint/bdc-model-design-tools-overview.md).
 
@@ -64,7 +66,7 @@ ms.locfileid: "86016731"
 
 ## <a name="see-also"></a>Consulte también
 - [Introducción a las herramientas de diseño del modelo BDC](../sharepoint/bdc-model-design-tools-overview.md)
-- [Diseñar un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md)
+- [Diseño de un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [Cómo: agregar un método Finder específico](../sharepoint/how-to-add-a-specific-finder-method.md)
 - [Cómo: agregar un método Creator](../sharepoint/how-to-add-a-creator-method.md)
 - [Cómo: agregar un método de eliminación](../sharepoint/how-to-add-a-deleter-method.md)

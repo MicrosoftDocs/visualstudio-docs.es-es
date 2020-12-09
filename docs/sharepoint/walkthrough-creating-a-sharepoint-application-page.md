@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: crear una página de aplicación de SharePoint | Microsoft Docs'
+description: En este tutorial, cree una página de aplicación (una forma especializada de una página de ASP.NET) y, a continuación, depure mediante un sitio de SharePoint local.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76375c15077bf672eaba01c840ba406228046435
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 95addb145312de85a3525c228297e7ff9636ea0d
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016498"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914886"
 ---
-# <a name="walkthrough-create-a-sharepoint-application-page"></a>Tutorial: crear una página de aplicación de SharePoint
+# <a name="walkthrough-create-a-sharepoint-application-page"></a>Tutorial: Creación de una página de aplicación de SharePoint
 
 Una página de aplicación es una forma especializada de una página ASP.NET. Las páginas de aplicación contienen contenido que se combina con una página maestra de SharePoint. Para obtener más información, vea [crear páginas de aplicación para SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).
 
@@ -49,7 +51,7 @@ En primer lugar, cree un **proyecto de SharePoint vacío**. Más adelante, agreg
 
 2. Abra el cuadro de diálogo **nuevo proyecto** , expanda el nodo **Office/SharePoint** bajo el lenguaje que desea usar y, a continuación, elija el nodo **soluciones de SharePoint** .
 
-3. En el panel **plantillas instaladas de Visual Studio** , elija la plantilla **de proyecto SharePoint 2010-Empty** . Asigne al proyecto el nombre **MySharePointProject**y, a continuación, elija el botón **Aceptar** .
+3. En el panel **plantillas instaladas de Visual Studio** , elija la plantilla **de proyecto SharePoint 2010-Empty** . Asigne al proyecto el nombre **MySharePointProject** y, a continuación, elija el botón **Aceptar** .
 
      Aparece el **Asistente para la personalización de SharePoint** . Este asistente permite seleccionar el sitio que se va a usar para depurar el proyecto, así como el nivel de confianza de la solución.
 
@@ -61,11 +63,11 @@ Para crear una página de aplicación, agregue un elemento de **Página de aplic
 
 1. En **Explorador de soluciones**, elija el proyecto **MySharePointProject** .
 
-2. En la barra de menús, elija **proyecto**  >  **Agregar nuevo elemento**.
+2. En la barra de menús, elija **Proyecto** >  **Agregar nuevo elemento**.
 
 3. En el cuadro de diálogo **Agregar nuevo elemento** , elija la plantilla **Página de aplicación (solo solución de granja de servidores** ).
 
-4. Asigne a la página el nombre **SearchItems**y, a continuación, elija el botón **Agregar** .
+4. Asigne a la página el nombre **SearchItems** y, a continuación, elija el botón **Agregar** .
 
      El diseñador de Visual Web Developer muestra la página de aplicación en la vista **código fuente** , donde puede ver los elementos HTML de la página. El diseñador muestra el marcado de varios <xref:System.Web.UI.WebControls.Content> controles. Cada control se asigna a un <xref:System.Web.UI.WebControls.ContentPlaceHolder> control que se define en la página maestra de aplicación predeterminada.
 
@@ -103,7 +105,7 @@ Controle los controles en una página de aplicación de la misma forma que lo ha
 
      El archivo de código de la página de la aplicación se abre en el editor de código.
 
-2. Agregue el siguiente método a la clase `SearchItems`. Este código controla el <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> evento de <xref:System.Web.UI.WebControls.DropDownList> llamando a un método que se creará más adelante en este tutorial.
+2. Agrega el método siguiente a la clase `SearchItems`: Este código controla el <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> evento de <xref:System.Web.UI.WebControls.DropDownList> llamando a un método que se creará más adelante en este tutorial.
 
      [!code-vb[SP_ApplicationPage#5](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#5)]
      [!code-csharp[SP_ApplicationPage#5](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#5)]
@@ -113,12 +115,12 @@ Controle los controles en una página de aplicación de la misma forma que lo ha
      [!code-vb[SP_ApplicationPage#1](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#1)]
      [!code-csharp[SP_ApplicationPage#1](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#1)]
 
-4. Agregue el siguiente método a la clase `SearchItems`. Este método recorre en iteración todos los sitios de la granja de servidores y busca los elementos creados o modificados por el usuario actual.
+4. Agrega el método siguiente a la clase `SearchItems`: Este método recorre en iteración todos los sitios de la granja de servidores y busca los elementos creados o modificados por el usuario actual.
 
      [!code-vb[SP_ApplicationPage#2](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#2)]
      [!code-csharp[SP_ApplicationPage#2](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#2)]
 
-5. Agregue el siguiente método a la clase `SearchItems`. Este método muestra los elementos creados o modificados por el usuario actual en la tabla.
+5. Agrega el método siguiente a la clase `SearchItems`: Este método muestra los elementos creados o modificados por el usuario actual en la tabla.
 
      [!code-vb[SP_ApplicationPage#3](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#3)]
      [!code-csharp[SP_ApplicationPage#3](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#3)]

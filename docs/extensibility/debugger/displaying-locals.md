@@ -1,5 +1,7 @@
 ---
 title: Mostrar variables locales | Microsoft Docs
+description: Obtenga información sobre la lista de variables locales y argumentos, denominados colectivamente las variables locales del método, que se muestran cuando se detiene la ejecución.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4d44b276aeb9c6acb0ef34cc186662d49246de7d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ddc7bc564e4e294144eeb3fa34db8bdf73971053
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738930"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915549"
 ---
 # <a name="display-locals"></a>Mostrar variables locales
 > [!IMPORTANT]

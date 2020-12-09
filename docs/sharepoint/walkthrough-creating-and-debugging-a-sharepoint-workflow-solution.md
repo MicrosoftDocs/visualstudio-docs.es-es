@@ -1,5 +1,7 @@
 ---
 title: Crear & solución depurar flujo de trabajo de SharePoint
+description: En este tutorial, cree y depure una solución de flujo de trabajo de SharePoint. Cree una plantilla de flujo de trabajo secuencial básica. Crear actividades de flujo de trabajo y controlar eventos.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -16,14 +18,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 65af3cbfc799a90d640579f8eed0e051fd5888f0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c8d5ca5b941a7ae6e6ebada21f1eafaef2b6f43
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014617"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915315"
 ---
-# <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>Tutorial: crear y depurar una solución de flujo de trabajo de SharePoint
+# <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>Tutorial: Creación y depuración de una solución de flujo de trabajo de SharePoint
   En este tutorial se muestra cómo crear una plantilla de flujo de trabajo secuencial básica. El flujo de trabajo comprueba una propiedad de una biblioteca de documentos compartidos para determinar si se ha revisado un documento. Si el documento se ha revisado, el flujo de trabajo finaliza.
 
  En este tutorial se muestran las tareas siguientes:
@@ -57,7 +59,7 @@ ms.locfileid: "86014617"
 
 3. Elija **biblioteca** en la cinta **herramientas de bibliotecas** y, a continuación, elija el botón **crear columna** en la cinta de opciones para crear una nueva columna.
 
-4. Asigne un nombre al **Estado del documento**de la columna, establezca su tipo en **Choice (menú para elegir)**, especifique las tres opciones siguientes y, a continuación, elija el botón **Aceptar** :
+4. Asigne un nombre al **Estado del documento** de la columna, establezca su tipo en **Choice (menú para elegir)**, especifique las tres opciones siguientes y, a continuación, elija el botón **Aceptar** :
 
     - **Revisión necesaria**
 
@@ -91,7 +93,7 @@ ms.locfileid: "86014617"
 
 2. En la barra de menús, elija **archivo**  >  **nuevo**  >  **proyecto** para mostrar el cuadro de diálogo **nuevo proyecto** .
 
-3. Expanda el nodo **SharePoint** en **Visual C#** o **Visual Basic**y, a continuación, elija el nodo **2010** .
+3. Expanda el nodo **SharePoint** en **Visual C#** o **Visual Basic** y, a continuación, elija el nodo **2010** .
 
 4. En el panel **plantillas** , elija la plantilla de **proyecto de SharePoint 2010** .
 
@@ -111,7 +113,7 @@ ms.locfileid: "86014617"
 
      Aparece el **Asistente para la personalización de SharePoint** .
 
-10. En la página **especificar el nombre del flujo de trabajo para la depuración** , acepte el nombre predeterminado (**MySharePointWorkflow-Workflow1**). Mantenga el valor predeterminado de tipo de plantilla de flujo de trabajo, **lista flujo de trabajo**y, a continuación, elija el botón **siguiente** .
+10. En la página **especificar el nombre del flujo de trabajo para la depuración** , acepte el nombre predeterminado (**MySharePointWorkflow-Workflow1**). Mantenga el valor predeterminado de tipo de plantilla de flujo de trabajo, **lista flujo de trabajo** y, a continuación, elija el botón **siguiente** .
 
 11. En la página ¿desea que **Visual Studio asocie automáticamente el flujo de trabajo en una sesión de depuración?** , elija el botón **siguiente** para aceptar todos los valores predeterminados.
 
@@ -182,7 +184,7 @@ ms.locfileid: "86014617"
     Boolean workflowPending = true;
     ```
 
-2. Agregue el siguiente método a la clase `Workflow1`. Este método comprueba el valor de la `Document Status` propiedad de la lista documentos para determinar si se ha revisado el documento. Si la `Document Status` propiedad está establecida en `Review Complete` , el `checkStatus` método establece el `workflowPending` campo en **false** para indicar que el flujo de trabajo está listo para finalizar.
+2. Agrega el método siguiente a la clase `Workflow1`: Este método comprueba el valor de la `Document Status` propiedad de la lista documentos para determinar si se ha revisado el documento. Si la `Document Status` propiedad está establecida en `Review Complete` , el `checkStatus` método establece el `workflowPending` campo en **false** para indicar que el flujo de trabajo está listo para finalizar.
 
     ```vb
     Private Sub checkStatus()
@@ -274,7 +276,7 @@ ms.locfileid: "86014617"
 
 10. En la página **documentos compartidos** , elija el documento, elija la flecha que aparece y, a continuación, elija el elemento de menú **Editar propiedades** .
 
-11. Establezca el **Estado del documento** en **revisión completada**y, a continuación, elija el botón **Guardar** .
+11. Establezca el **Estado del documento** en **revisión completada** y, a continuación, elija el botón **Guardar** .
 
      Esto le devolverá a la página **documentos compartidos** del sitio web predeterminado de SharePoint.
 
@@ -288,6 +290,6 @@ ms.locfileid: "86014617"
 - Para obtener más información sobre las actividades de Windows Workflow Foundation, vea [espacio de nombres System. Workflow. Activities](/dotnet/api/system.windows.media.color).
 
 ## <a name="see-also"></a>Consulte también
-- [Crear soluciones de flujo de trabajo de SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)
+- [Creación de soluciones de flujo de trabajo de SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)
 - [Plantillas de proyecto y de elemento de proyecto de SharePoint](../sharepoint/sharepoint-project-and-project-item-templates.md)
 - [Build and debug SharePoint solutions](../sharepoint/building-and-debugging-sharepoint-solutions.md) (Compilar y depurar las soluciones de SharePoint)

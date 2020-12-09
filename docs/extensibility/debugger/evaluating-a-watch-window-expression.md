@@ -1,5 +1,7 @@
 ---
 title: Evaluar una expresión de ventana de inspección | Microsoft Docs
+description: Obtenga información sobre cómo Visual Studio llama al motor de depuración para determinar el valor actual de cada expresión en su lista de inspección cuando se detiene la ejecución.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9cef2f27eec095ee7b136153ecb764feba9effbb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 97fb2c11b94a97a5c7a00083aa61877bb68d377b
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738837"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915653"
 ---
 # <a name="evaluate-a-watch-window-expression"></a>Evaluar una expresión de la ventana Inspección
 > [!IMPORTANT]

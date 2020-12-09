@@ -1,5 +1,7 @@
 ---
 title: Entrando en modo de interrupción | Microsoft Docs
+description: Obtenga información sobre el proceso que se produce para un punto de interrupción encontrado en una función, que se ejecuta en la línea de código fuente en el cursor o que se ejecuta hasta un punto de interrupción.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4bbcec8adf6468f70d95df5f291ce1e5540406cf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e73c64d17aee48cdb67a110e93aa556f112a1014
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738883"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915237"
 ---
 # <a name="enter-break-mode"></a>Entrar en modo de interrupción
 La siguiente información describe el proceso que se produce cuando se encuentra un punto de interrupción después de ejecutar paso a paso una función, ejecutar hasta la línea de código fuente que tiene el cursor o ejecutar hasta un punto de interrupción.

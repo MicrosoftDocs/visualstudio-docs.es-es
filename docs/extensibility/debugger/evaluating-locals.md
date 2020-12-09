@@ -1,5 +1,7 @@
 ---
 title: Evaluación de variables locales | Microsoft Docs
+description: Obtenga información sobre cómo Visual Studio tiene acceso a la ubicación en memoria que contiene un valor local, que depende del estado actual del programa.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aaf140a9ddbc7733da4d05450a024c0f0a713712
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a5d9c25c9b7b32b69983aeec4a1e533cbb927a11
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738816"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915640"
 ---
 # <a name="evaluate-locals"></a>Evaluar variables locales
 > [!IMPORTANT]
