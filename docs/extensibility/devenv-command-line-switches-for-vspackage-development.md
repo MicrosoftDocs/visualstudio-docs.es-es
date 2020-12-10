@@ -1,5 +1,7 @@
 ---
-title: Modificadores de la línea de comandos de devenv para el desarrollo de VSPackage | Microsoft Docs
+title: Modificadores de Command-Line devenv para el desarrollo de VSPackage | Microsoft Docs
+description: Obtenga información sobre cómo los desarrolladores pueden automatizar las tareas desde la línea de comandos al ejecutar devenv.exe, el archivo que inicia el IDE de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,12 +20,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad3a5125a730b9230959bbf9342b4c0a4823c4d3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6e2784066c98f8fac696306e455e7cf26b65907
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712192"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996154"
 ---
 # <a name="devenv-command-line-switches-for-vspackage-development"></a>Modificadores de línea de comandos Devenv para el desarrollo de VSPackage
 
@@ -49,7 +51,7 @@ La documentación de Visual Studio describe los modificadores de línea de coman
 | `/Setup` | Fuerza a Visual Studio a combinar los metadatos de recursos que describen los menús, las barras de herramientas y los grupos de comandos de todos los VSPackages disponibles. Este comando solo se puede ejecutar como administrador. <br /><br /> Este modificador no toma ningún argumento. El comando `devenv /Setup` suele ser el último paso del proceso de instalación. El uso del `/Setup` modificador no inicia el IDE.|
 | `/Splash` | Muestra la pantalla de presentación de Visual Studio, como de costumbre, y muestra un cuadro de mensaje antes de mostrar el IDE principal. El cuadro de mensaje le permite estudiar la pantalla de presentación (por ejemplo, para comprobar si hay un icono de producto de VSPackage).<br /><br /> Este modificador no toma ningún argumento. |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Agregar modificadores de la línea de comandos](../extensibility/adding-command-line-switches.md)
 - [Modificadores de línea de comandos para Devenv](../ide/reference/devenv-command-line-switches.md)

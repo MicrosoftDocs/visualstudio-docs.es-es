@@ -1,5 +1,7 @@
 ---
 title: Elemento include | Microsoft Docs
+description: El elemento include especifica un archivo que se puede encontrar en la ruta de inclusión proporcionada para la inserción en el archivo actual.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ea89185d28be2816a690d867dbb3eccbb739e04
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 71da1241863e41529af33bdd5e45dcf0a8bfbdb1
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710360"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996349"
 ---
 # <a name="include-element"></a>Elemento include
 El elemento include especifica un archivo que se puede encontrar en la ruta de inclusión proporcionada para la inserción en el archivo actual.  Todos los símbolos y tipos definidos se convertirán en parte del resultado compilado.
@@ -36,7 +38,7 @@ El elemento include especifica un archivo que se puede encontrar en la ruta de i
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|href|Necesario. La ruta de acceso al archivo de encabezado:<br /><br /> href = "stdidcmd. h"|
+|href|Obligatorio. La ruta de acceso al archivo de encabezado:<br /><br /> href = "stdidcmd. h"|
 |Condición|Opcional. Vea [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementos secundarios
@@ -57,5 +59,5 @@ El elemento include especifica un archivo que se puede encontrar en la ruta de i
 <Include href="PackagePlacements.vsct"/>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Archivos de tabla de comandos de Visual Studio (. Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

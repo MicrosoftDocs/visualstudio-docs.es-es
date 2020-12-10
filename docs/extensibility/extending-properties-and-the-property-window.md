@@ -1,5 +1,7 @@
 ---
 title: Extender propiedades y la ventana de propiedades | Microsoft Docs
+description: Obtenga información sobre cómo extender propiedades en el ventana Propiedades, que se usa para ver y editar las propiedades y los eventos de tiempo de diseño de los objetos seleccionados.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14cc7bba8f5255d612c0f429aab5acf36729b506
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 75c0deb1b4d1e0fecceefb2e91265c9e6160df8a
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711741"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995790"
 ---
 # <a name="extend-properties-and-the-property-window"></a>Extender propiedades y la ventana de propiedades
 La ventana **propiedades** se utiliza para ver y editar las propiedades de tiempo de diseño y los eventos de los objetos seleccionados.

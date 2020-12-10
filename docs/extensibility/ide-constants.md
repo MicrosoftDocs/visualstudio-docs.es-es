@@ -1,5 +1,7 @@
 ---
 title: Constantes de IDE | Microsoft Docs
+description: La clase VSConstants proporciona constantes específicas del IDE y que se definieron previamente solo en los archivos de encabezado.
+ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc2eddac1cc7d7e616deb197752adf41a4d68d15
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28b419981e8fe1224cef5c25e112d58924a8301b
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710501"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995569"
 ---
 # <a name="ide-constants"></a>Constantes de IDE
 
@@ -29,7 +31,7 @@ La <xref:Microsoft.VisualStudio.VSConstants> clase proporciona constantes que so
 
 ## <a name="logical-and-physical-views"></a>Vistas lógicas y físicas
 
-|Value|Descripción|
+|Valor|Descripción|
 |-----------|-----------------|
 |<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>los `cmdidOpenWith` controladores deben pasar este valor al <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> método para obtener el cuadro de diálogo **abrir con** , en este caso en posibles vistas de código.|
 |<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Debugging_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>los `cmdidOpenWith` Controladores pasan este valor al <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> método para obtener el cuadro de diálogo **abrir con** , en este caso rellenado con posibles <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Debugging_guid> vistas de depuración que se asignan a la misma vista que <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid> .|
@@ -40,7 +42,7 @@ La <xref:Microsoft.VisualStudio.VSConstants> clase proporciona constantes que so
 
 ## <a name="editor-factory-flags"></a>Marcas de generador de editores
 
-|Value|Descripción|
+|Valor|Descripción|
 |-----------|-----------------|
 |[CEF. CloneFile](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_CloneFile>)|Marca obsoleta combinada como el primer parámetro del <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> método.|
 |[CEF. OpenAsNew](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_OpenAsNew>)|Bit a bit combinado como primer parámetro del <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> método, esto indica que el generador de editores debe realizar las correcciones necesarias.|
@@ -49,7 +51,7 @@ La <xref:Microsoft.VisualStudio.VSConstants> clase proporciona constantes que so
 
 ## <a name="visual-studio-errors"></a>Errores de Visual Studio
 
-|Value|Descripción|
+|Valor|Descripción|
 |-----------|-----------------|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_BUSY>|Constante devuelta por las interfaces a un comportamiento asincrónico cuando el objeto en cuestión está en estado ocupado.|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>|Un valor HRESULT de error específico de Visual Studio para "datos de documento incompatibles".|
@@ -65,7 +67,7 @@ La <xref:Microsoft.VisualStudio.VSConstants> clase proporciona constantes que so
 
 ## <a name="visual-studio-constants"></a>Constantes de Visual Studio
 
-|Value|Descripción|
+|Valor|Descripción|
 |-----------|-----------------|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_S_PROJECTFORWARDED>|Un valor HRESULT de error específico de Visual Studio que indica "proyecto reenviado".|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_S_TBXMARKER>|Una constante específica de Visual Studio para un "marcador del cuadro de herramientas".|
@@ -80,7 +82,7 @@ La <xref:Microsoft.VisualStudio.VSConstants> clase proporciona constantes que so
 ## <a name="ivsselectionevents"></a>IVsSelectionEvents
  Describe el componente del IDE que se acaba de seleccionar, por ejemplo, en una <xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents.OnElementValueChanged%2A> llamada.
 
-|Constante|Value|
+|Constante|Valor|
 |--------------|-----------|
 |[SelectionElement.DocumentFrame](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_DocumentFrame>)|0x2|
 |[SelectionElement.PropertyBrowserSID](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_PropertyBrowserSID>)|0x4|
@@ -92,7 +94,7 @@ La <xref:Microsoft.VisualStudio.VSConstants> clase proporciona constantes que so
 ## <a name="vsselelemid"></a>VSSELELEMID
  Constantes que se usan para indicar un nuevo estado de selección.
 
-|Constante|Value|
+|Constante|Valor|
 |--------------|-----------|
 |<xref:Microsoft.VisualStudio.VSConstants.VSSELELEMID>|2|
 |<xref:Microsoft.VisualStudio.VSConstants.VSSELELEMID>|7|
@@ -105,7 +107,7 @@ La <xref:Microsoft.VisualStudio.VSConstants> clase proporciona constantes que so
 
 ## <a name="component-selector-dialog-constants"></a>Constantes de cuadro de diálogo de selector de componentes
 
-|Constante|Value|
+|Constante|Valor|
 |--------------|-----------|
 |<xref:Microsoft.VisualStudio.VSConstants.CPDN_SELCHANGED>|WM_USER + 1280|
 |<xref:Microsoft.VisualStudio.VSConstants.CPDN_SELDBLCLICK>|WM_USER + 1281|
@@ -116,6 +118,6 @@ La <xref:Microsoft.VisualStudio.VSConstants> clase proporciona constantes que so
 |<xref:Microsoft.VisualStudio.VSConstants.CPPM_QUERYCANSELECT>|WM_USER + 1286|
 |<xref:Microsoft.VisualStudio.VSConstants.CPPM_SETMULTISELECT>|WM_USER + 1289|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Comandos definidos por el IDE para la extensión de sistemas de proyecto](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)

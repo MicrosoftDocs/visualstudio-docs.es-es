@@ -1,5 +1,6 @@
 ---
 title: Propiedades de extensión, Lista de tareas, salida, opciones (ventanas)
+description: Obtenga información sobre cómo integrar la información sobre la ventana de herramientas en Visual Studio en una nueva página de opciones y un nuevo valor en la página de propiedades.
 ms.date: 11/04/2016
 ms.custom: SEO-VS-2020
 ms.topic: conceptual
@@ -16,17 +17,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c968544c6bf52a901052fc7aedbbee66dcc10e62
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 54b78197be71dca9fbabbfded90c4e07660a74db
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038483"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995803"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>Extender las propiedades, los Lista de tareas, la salida y las ventanas de opciones
 Puede tener acceso a cualquier ventana de herramientas en Visual Studio. En este tutorial se muestra cómo integrar la información sobre la ventana de herramientas en una nueva página de **Opciones** y un nuevo valor en la página de **propiedades** , además de cómo escribir en las ventanas de **lista de tareas** y de **salida** .
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
  A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS después. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-an-extension-with-a-tool-window"></a>Crear una extensión con una ventana de herramientas
@@ -46,7 +47,7 @@ Puede tener acceso a cualquier ventana de herramientas en Visual Studio. En este
 
 2. En la sección **todos los controles de WPF** del cuadro de **herramientas**, arrastre un control **Canvas** hasta la cuadrícula.
 
-3. Arrastre un **cuadro de texto**, un **botón**y un **cuadro de lista** al lienzo. Organice los elementos de modo que el cuadro de texto y el botón estén en el mismo nivel, y el control ListBox rellene el resto de la ventana debajo de ellos, como se muestra en la figura siguiente.
+3. Arrastre un **cuadro de texto**, un **botón** y un **cuadro de lista** al lienzo. Organice los elementos de modo que el cuadro de texto y el botón estén en el mismo nivel, y el control ListBox rellene el resto de la ventana debajo de ellos, como se muestra en la figura siguiente.
 
      ![Ventana de herramientas terminada](../extensibility/media/t5-toolwindow.png "T5-ToolWindow")
 
@@ -366,7 +367,7 @@ Puede tener acceso a cualquier ventana de herramientas en Visual Studio. En este
 
 8. Pruebe el código. Compile la solución y comience la depuración. Debería aparecer la instancia experimental.
 
-9. Abra la **Tools**  >  página**Opciones** de herramientas. Debería ver la categoría ToDo en el panel izquierdo. Las categorías se muestran en orden alfabético, así que mire en TS.
+9. Abra la   >  página **Opciones** de herramientas. Debería ver la categoría ToDo en el panel izquierdo. Las categorías se muestran en orden alfabético, así que mire en TS.
 
 10. En la página Opciones de **tareas pendientes** , debería ver la `DaysAhead` propiedad establecida en **0**. Cámbielo a **2**.
 
@@ -479,7 +480,7 @@ Puede tener acceso a cualquier ventana de herramientas en Visual Studio. En este
     }
     ```
 
-## <a name="try-it-out"></a>Haga la prueba
+## <a name="try-it-out"></a>Prueba
 
 1. Compile la solución y comience la depuración. Aparece la instancia experimental.
 
@@ -489,7 +490,7 @@ Puede tener acceso a cualquier ventana de herramientas en Visual Studio. En este
 
      Una fecha de vencimiento 2 días después de hoy se agrega al cuadro de lista. No se generan errores y el **lista de tareas** (**Ver**  >  **lista de tareas**) no debe tener ninguna entrada.
 
-4. Ahora, cambie la configuración de **Tools**la  >  **Options**  >  Página de opciones de herramientas**todo** de **2** a **0**.
+4. Ahora, cambie la configuración de la  >    >  Página de opciones de herramientas **todo** de **2** a **0**.
 
 5. Escriba otra cosa en el **TodoWindow** y, a continuación, haga clic en **Agregar** de nuevo. Esto desencadena un error y también una entrada en el **lista de tareas**.
 

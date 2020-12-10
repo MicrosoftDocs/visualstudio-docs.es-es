@@ -1,5 +1,7 @@
 ---
 title: Proveedor de símbolos | Microsoft Docs
+description: Obtenga información sobre los proveedores de símbolos que Visual Studio proporciona para permitir que un evaluador de expresiones evalúe variables y expresiones.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31b90846d9494ee046cf9dc4a3e5de9ff033ea3f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 043014ebababd990c9cae03f28cb1b642d576071
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712822"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996050"
 ---
 # <a name="symbol-provider"></a>Proveedor de símbolos
 Una implementación del evaluador de expresiones debe tener acceso a la información de depuración simbólica generada por el compilador del lenguaje para evaluar variables y expresiones. Para ello, consume las interfaces de un proveedor de símbolos (SP), también denominado controlador de símbolos.
@@ -28,5 +30,5 @@ Una implementación del evaluador de expresiones debe tener acceso a la informac
 
  Si el SP va a trabajar solo con el motor de depuración personalizado, puede implementar el SP como considere adecuado en función de las necesidades del motor de depuración.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Componentes del depurador](../../extensibility/debugger/debugger-components.md)

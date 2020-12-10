@@ -1,5 +1,7 @@
 ---
 title: Tipos de eventos admitidos | Microsoft Docs
+description: Obtenga información sobre los tipos de eventos que admite la depuración de Visual Studio, incluidos eventos asincrónicos, eventos sincrónicos y detención de eventos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94e26897c50fd7e10a8b831655610848cb93043f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 215256cbbcff45dfa0b85a480f0900e6f8ddfa71
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712800"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996037"
 ---
 # <a name="supported-event-types"></a>Tipos de eventos admitidos
 La depuración de Visual Studio admite actualmente los siguientes tipos de eventos:
@@ -45,7 +47,7 @@ La depuración de Visual Studio admite actualmente los siguientes tipos de event
   > [!NOTE]
   > No se admiten eventos de detención asincrónica. Es un error enviar un evento de detención asincrónica.
 
-## <a name="discussion"></a>Debate
+## <a name="discussion"></a>Discusión
  La implementación real de eventos depende del diseño de de. El tipo de cada evento enviado viene determinado por sus atributos, que se establecen al diseñar la DE. Por ejemplo, uno DE ellos puede enviar un [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) como un evento asincrónico, mientras que otro puede enviarlo como un evento de detención.
 
  En la tabla siguiente se especifica qué parámetros de programa y de subproceso son necesarios para los eventos, así como los tipos de evento. Los eventos pueden ser sincrónicos. No es necesario que los eventos sean sincrónicos.

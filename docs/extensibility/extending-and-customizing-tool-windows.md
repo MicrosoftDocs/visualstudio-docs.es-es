@@ -1,5 +1,7 @@
 ---
 title: Extender y personalizar ventanas de herramientas | Microsoft Docs
+description: Obtenga información sobre cómo extender y personalizar las ventanas de herramientas que proporciona Visual Studio, incluidos los ventana Propiedades, la ventana de salida y la ventana de Lista de tareas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76c094ec73a69baa46a5e8313dd26febd57e5887
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ca7f6aa0c029cd3d85ba569aa93d6ae2087afd52
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711814"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995868"
 ---
 # <a name="extend-and-customize-tool-windows"></a>Extender y personalizar ventanas de herramientas
 Visual Studio proporciona varios tipos diferentes de ventanas, por ejemplo, ventanas de herramientas, ventanas de documentos y ventanas de cuadro de diálogo. Otras ventanas, como la ventana **propiedades** , la ventana **resultados** y la ventana **lista de tareas** , son tipos de ventanas de herramientas.
@@ -46,7 +48,7 @@ Visual Studio proporciona varios tipos diferentes de ventanas, por ejemplo, vent
 ## <a name="modal-dialog-boxes"></a>Cuadros de diálogo modales
  En una extensión de Visual Studio, debe crear cuadros de diálogo modales derivándolo de <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow?displayProperty=fullName> , lo que le permite controlarlos y el resto de la interfaz de usuario. Para obtener más información, vea [crear y administrar cuadros de diálogo modales](../extensibility/creating-and-managing-modal-dialog-boxes.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Crear una extensión con una ventana de herramientas](../extensibility/creating-an-extension-with-a-tool-window.md)
 - [Ampliar proyectos](../extensibility/extending-projects.md)
 - [Extender soluciones](../extensibility/extending-solutions.md)

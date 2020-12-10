@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: Utilizar los asistentes con las plantillas de proyectos'
+description: Obtenga información sobre cómo usar la interfaz IWizard en el SDK de Visual Studio, que le permite ejecutar código personalizado cuando un usuario crea un proyecto a partir de una plantilla.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9d36ae9b3a4a4fbbb3c54cc3f3320e9878b6745
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 21e0e35b43fc3b94a8d029c97f56bd573ebac95f
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905513"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996375"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Cómo: usar asistentes con plantillas de proyecto
 
@@ -58,7 +60,7 @@ En este procedimiento se muestra cómo crear un asistente personalizado que abra
 
 1. Configure el Proyecto VSIX para permitirle crear un ensamblado.
 
-2. En **Explorador de soluciones**, seleccione el nodo de Proyecto VSIX. A continuación **Explorador de soluciones**, debería ver la ventana **propiedades** . Si no lo hace, seleccione la ventana **Ver**  >  **propiedades**o presione **F4**. En la ventana **propiedades** , seleccione los campos siguientes para `true` :
+2. En **Explorador de soluciones**, seleccione el nodo de Proyecto VSIX. A continuación **Explorador de soluciones**, debería ver la ventana **propiedades** . Si no lo hace, seleccione la ventana **Ver**  >  **propiedades** o presione **F4**. En la ventana **propiedades** , seleccione los campos siguientes para `true` :
 
    - **Incluir ensamblado en el contenedor VSIX**
 
@@ -66,11 +68,11 @@ En este procedimiento se muestra cómo crear un asistente personalizado que abra
 
    - **Incluir símbolos de depuración en la implementación de VSIX local**
 
-3. Agregue el ensamblado como un recurso al Proyecto VSIX. Abra el archivo *source. Extension. vsixmanifest* y seleccione la pestaña **activos** . En la ventana **Agregar nuevo recurso** , en **tipo** , seleccione **Microsoft. VisualStudio. Assembly**, en **origen** , seleccione **un proyecto en la solución actual**y, en **proyecto** , seleccione **MyProjectWizard**.
+3. Agregue el ensamblado como un recurso al Proyecto VSIX. Abra el archivo *source. Extension. vsixmanifest* y seleccione la pestaña **activos** . En la ventana **Agregar nuevo recurso** , en **tipo** , seleccione **Microsoft. VisualStudio. Assembly**, en **origen** , seleccione **un proyecto en la solución actual** y, en **proyecto** , seleccione **MyProjectWizard**.
 
 4. Agregue las siguientes referencias al Proyecto VSIX. (En **Explorador de soluciones**, en el nodo del Proyecto VSIX, seleccione **referencias**, haga clic con el botón derecho y seleccione **Agregar referencia**). En el cuadro de diálogo **Agregar referencia** , en la pestaña **Framework** , busque el ensamblado **System. Windows Forms** y selecciónelo. Busque y seleccione los ensamblados **System** y **System. Drawing** . Ahora, seleccione la pestaña **extensiones** . Busque el ensamblado **EnvDTE** y selecciónelo. Busque también el ensamblado **Microsoft. VisualStudio. TemplateWizardInterface** y selecciónelo. Haga clic en **OK**.
 
-5. Agregue una clase para la implementación del asistente al Proyecto VSIX. (En **Explorador de soluciones**, haga clic con el botón secundario en el nodo del Proyecto VSIX y seleccione **Agregar**, **nuevo elemento**y, a continuación, **clase**). Asigne a la clase el nombre **WizardImplementation**.
+5. Agregue una clase para la implementación del asistente al Proyecto VSIX. (En **Explorador de soluciones**, haga clic con el botón secundario en el nodo del Proyecto VSIX y seleccione **Agregar**, **nuevo elemento** y, a continuación, **clase**). Asigne a la clase el nombre **WizardImplementation**.
 
 6. Reemplace el código del archivo *WizardImplementationClass.CS* por el código siguiente:
 
@@ -218,9 +220,9 @@ Para que la plantilla de proyecto personalizada use el Asistente personalizado, 
 
 5. Recompilar la solución.
 
-6. Ahora puede encontrar el archivo Key. snk en el directorio del proyecto de MyProjectWizard (* \<your disk location> \MyProjectTemplate\MyProjectWizard\key.snk*). Copie el archivo *key. snk* .
+6. Ahora puede encontrar el archivo Key. snk en el directorio del proyecto de MyProjectWizard (*\<your disk location> \MyProjectTemplate\MyProjectWizard\key.snk*). Copie el archivo *key. snk* .
 
-7. Vaya al directorio de salida y busque el ensamblado (* \<your disk location> \ MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll*). Pegue el archivo *key. snk* aquí. (Esto no es absolutamente necesario, pero facilitará los siguientes pasos).
+7. Vaya al directorio de salida y busque el ensamblado (*\<your disk location> \ MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll*). Pegue el archivo *key. snk* aquí. (Esto no es absolutamente necesario, pero facilitará los siguientes pasos).
 
 8. Abra una ventana de comandos y cambie al directorio en el que se ha creado el ensamblado.
 
@@ -246,7 +248,7 @@ Para que la plantilla de proyecto personalizada use el Asistente personalizado, 
 
      Anote este valor.
 
-12. Agregue la referencia al Asistente personalizado para el archivo *. vstemplate* de la plantilla de proyecto. En el **Explorador de soluciones**, busque el archivo denominado *MyProjectTemplate. vstemplate*y ábralo. Después del final de la \<TemplateContent> sección, agregue la siguiente sección:
+12. Agregue la referencia al Asistente personalizado para el archivo *. vstemplate* de la plantilla de proyecto. En el **Explorador de soluciones**, busque el archivo denominado *MyProjectTemplate. vstemplate* y ábralo. Después del final de la \<TemplateContent> sección, agregue la siguiente sección:
 
     ```xml
     <WizardExtension>

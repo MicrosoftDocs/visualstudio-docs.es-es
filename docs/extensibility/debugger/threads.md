@@ -1,5 +1,7 @@
 ---
 title: Subprocesos | Microsoft Docs
+description: En este artículo se describe la definición y el rol de un subproceso en la arquitectura del depurador de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ed5c06e0c42dac1f0539cc2c7c5886d95b23ae1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b259ffd7814b42145489ee5990cee6da891a9d10
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712481"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995959"
 ---
 # <a name="threads"></a>Subprocesos
 En la arquitectura del depurador, un *subproceso*:
@@ -27,7 +29,7 @@ En la arquitectura del depurador, un *subproceso*:
 
 - Se representa mediante una interfaz [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) , creada normalmente por un motor de depuración (de) o una máquina virtual como consecuencia de la ejecución de un programa.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Programs](../../extensibility/debugger/programs.md)
 - [Marcos de pila](../../extensibility/debugger/stack-frames.md)
 - [Motor de depuración](../../extensibility/debugger/debug-engine.md)

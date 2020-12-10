@@ -1,5 +1,7 @@
 ---
 title: Visualizador de tipos y visor personalizado | Microsoft Docs
+description: Obtenga información sobre los componentes del visualizador de tipos y los visores personalizados, que muestran los datos en un formato específico y las diferencias entre ellos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b8def9d28279f601ff488fca457982806629c0b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ac759dd245da8d803cb943dd6398d9ae642aaf23
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712463"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995946"
 ---
 # <a name="type-visualizer-and-custom-viewer"></a>Visualizador de tipos y visor personalizado
 Un visualizador de tipos es un componente que muestra un fragmento de datos en un formato específico. El formato es completamente el que implementa el visualizador, ya sea el usuario final o un proveedor de visualizadores de terceros.
@@ -29,7 +31,7 @@ Un visualizador de tipos es un componente que muestra un fragmento de datos en u
 ## <a name="support-for-custom-viewers-in-an-expression-evaluator"></a>Compatibilidad con visores personalizados en un evaluador de expresiones
  EE también puede admitir visores personalizados en los que el propio EE proporciona el código para ver el tipo de datos. Un visor personalizado implementa la interfaz [IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md) , que controla todas las tareas de mostrar los datos en el formato que se desee; el visor tiene control total sobre la pantalla e incluso puede permitir que se modifiquen los datos. Los visores personalizados proporcionados por EE vienen a la hora de enviar el producto.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Componentes del depurador](../../extensibility/debugger/debugger-components.md)
 - [Evaluador de expresiones](../../extensibility/debugger/expression-evaluator.md)
 - [Motor de depuración](../../extensibility/debugger/debug-engine.md)

@@ -1,5 +1,7 @@
 ---
 title: Control de errores y valores devueltos | Microsoft Docs
+description: Obtenga información sobre cómo el SDK de Visual Studio proporciona ensamblados de interoperabilidad para registrar información de error enriquecida cuando se recibe una notificación de error.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30b6b9bff9056360f9ea840f47b1488f05bee872
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b8e8385e0b270cd6e359ef03a3060d5eefb97479
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711933"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995855"
 ---
 # <a name="error-handling-and-return-values"></a>Control de errores y valores devueltos
 Los VSPackages y COM usan la misma arquitectura para los errores. Las `SetErrorInfo` `GetErrorInfo` funciones y forman parte de la interfaz de programación de aplicaciones (API) de Win32. Cualquier VSPackage en el entorno de desarrollo integrado (IDE) puede llamar a estas API de Win32 globales para registrar información de error enriquecida cuando se recibe una notificación de error. [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]Proporciona ensamblados de interoperabilidad para administrar la información de error.
@@ -53,7 +55,7 @@ Los VSPackages y COM usan la misma arquitectura para los errores. Las `SetErrorI
 
 - Todas las funciones que devuelven un error originado por otra llamada deben pasar la información recibida de la llamada con error en el `HRESULT` sin modificar el `ErrorInfo` objeto.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - [SetErrorInfo (automatización de componentes)](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-seterrorinfo)
 - [GetErrorInfo](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-geterrorinfo)

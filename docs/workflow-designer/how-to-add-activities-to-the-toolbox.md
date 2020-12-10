@@ -1,6 +1,6 @@
 ---
-title: 'Diseñador de flujo de trabajo: Cómo agregar actividades al cuadro de herramientas'
-description: Agregue actividades al cuadro de herramientas en la solución agregándolas desde dentro del proyecto actual o haciendo referencia a ellas desde un proyecto diferente.
+title: Agregar actividades al cuadro de herramientas
+description: En Diseñador de flujo de trabajo, obtenga información sobre cómo agregar actividades al cuadro de herramientas en la solución agregándolas desde dentro del proyecto actual o haciendo referencia a ellas desde un proyecto diferente.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2330392ace27a913870e7c7448976d1cae46958
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 0f2ffdb25bfdb359352d62913c984cad07c18aed
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437949"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996310"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>Cómo agregar actividades al cuadro de herramientas
 

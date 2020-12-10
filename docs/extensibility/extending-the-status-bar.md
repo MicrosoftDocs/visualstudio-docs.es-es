@@ -1,5 +1,7 @@
 ---
 title: Extender la barra de estado | Microsoft Docs
+description: Obtenga información sobre cómo extender la barra de estado de Visual Studio en la parte inferior del IDE, que muestra información.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa62326d82d81f7ee4d10a838209364355cc488e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ddce0cdf62d803dac1a5981442424a45d6550193
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711536"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995699"
 ---
 # <a name="extend-the-status-bar"></a>Extender la barra de estado
 Puede usar la barra de estado de Visual Studio en la parte inferior del IDE para mostrar información.
@@ -110,9 +112,9 @@ Puede usar la barra de estado de Visual Studio en la parte inferior del IDE para
 
 ### <a name="display-an-animation"></a>Mostrar una animación
 
-1. La barra de estado muestra una animación en bucle que indica una operación de ejecución prolongada (por ejemplo, compilar varios proyectos en una solución). Si no ve esta animación, asegúrese de que tiene la configuración de opciones de **herramientas**correcta  >  **Options** :
+1. La barra de estado muestra una animación en bucle que indica una operación de ejecución prolongada (por ejemplo, compilar varios proyectos en una solución). Si no ve esta animación, asegúrese de que tiene la configuración de opciones de **herramientas** correcta  >   :
 
-     Vaya a la pestaña Opciones de **herramientas**  >  **Options**  >  **General** y desactive **ajustar automáticamente la experiencia visual según el rendimiento del cliente**. A continuación, active la subopción **Habilitar experiencia visual de cliente enriquecida**. Ahora debería poder ver la animación al compilar el proyecto en la instancia experimental de Visual Studio.
+     Vaya a la pestaña Opciones de **herramientas**  >    >  **General** y desactive **ajustar automáticamente la experiencia visual según el rendimiento del cliente**. A continuación, active la subopción **Habilitar experiencia visual de cliente enriquecida**. Ahora debería poder ver la animación al compilar el proyecto en la instancia experimental de Visual Studio.
 
      En este procedimiento se muestra la animación de Visual Studio estándar que representa la creación de un proyecto o una solución.
 

@@ -1,5 +1,7 @@
 ---
 title: 'Clase de tarea: miembros internos | Microsoft Docs'
+description: Obtenga información sobre los miembros internos de la clase System. Threading. Tasks. Task que le ayudarán a implementar un depurador personalizado.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dcf278c0248b344cea4be7cf161ecc91581f5f2e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f18de66a524fbc652b8153c5b34b4464cda60f5
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712734"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996024"
 ---
 # <a name="task-class---internal-members"></a>Clase de tarea: miembros internos
 En este artículo se describen los miembros internos de la <xref:System.Threading.Tasks.Task?displayProperty=fullName> clase que le ayudan a implementar un depurador personalizado. Para obtener información general sobre esta clase, vea el <xref:System.Threading.Tasks.Task> artículo de referencia.
@@ -49,7 +51,7 @@ En este artículo se describen los miembros internos de la <xref:System.Threadin
 
 ### <a name="fields"></a>Campos
 
-|Nombre|Descripción|
+|NOMBRE|Descripción|
 |----------|-----------------|
 |[m_action](../../extensibility/debugger/m-action-field.md)|Delegado que representa el código que se va a ejecutar en el <xref:System.Threading.Tasks.Task> objeto.|
 |[m_contingentProperties](../../extensibility/debugger/m-contingentproperties-field.md)|Almacena propiedades adicionales del <xref:System.Threading.Tasks.Task> objeto.|
@@ -64,7 +66,7 @@ En este artículo se describen los miembros internos de la <xref:System.Threadin
 |[TASK_STATE_RAN_TO_COMPLETION](../../extensibility/debugger/task-state-ran-to-completion-field.md)|Indica que la tarea completó la ejecución correctamente.|
 |[TASK_STATE_WAITING_ON_CHILDREN](../../extensibility/debugger/task-state-waiting-on-children-field.md)|Indica que la tarea ha terminado de ejecutar su delegado y está esperando implícitamente que finalicen las tareas secundarias asociadas.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Los métodos internos siguientes son útiles para un motor de depuración porque marcan la entrada para la <xref:System.Threading.Tasks.Task> ejecución del código:
 
 - `Execute`

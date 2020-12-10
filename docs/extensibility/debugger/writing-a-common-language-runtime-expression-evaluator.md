@@ -1,5 +1,7 @@
 ---
 title: Escribir un evaluador de expresiones de Common Language Runtime | Microsoft Docs
+description: Obtenga información sobre cómo escribir un evaluador de expresiones para el Common Language Runtime, que evalúa las expresiones en el lenguaje de código que se está depurando.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e46eaef395a7c66792662b3c5d4b9fbad419dfb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1674ae8345873ede5d1b4afb04774d6ed0469b4c
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712323"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996323"
 ---
 # <a name="writing-a-common-language-runtime-expression-evaluator"></a>Escribir un evaluador de expresiones de Common Language Runtime
 > [!IMPORTANT]
@@ -44,5 +46,5 @@ ms.locfileid: "80712323"
 
  [Implementar visualizadores de tipos y visores personalizados](../../extensibility/debugger/implementing-type-visualizers-and-custom-viewers.md) Explica qué interfaz debe implementar cada componente para admitir visualizadores de tipo y visores personalizados.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Extensibilidad del depurador de Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

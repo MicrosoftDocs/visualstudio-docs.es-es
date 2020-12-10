@@ -1,6 +1,6 @@
 ---
-title: 'Diseñador de flujo de trabajo: System. Activities, elegir elementos del cuadro de herramientas'
-description: Obtenga información sobre cómo la pestaña System. Activities muestra una lista de actividades Windows Workflow Foundation (WF), plantillas y elementos disponibles.
+title: System. Activities, elegir elementos del cuadro de herramientas
+description: En Diseñador de flujo de trabajo, obtenga información sobre cómo la pestaña System. Activities muestra una lista de actividades de Windows Workflow Foundation (WF), plantillas y elementos disponibles.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d13aadb135f6dcf72d146f74ea2804ef34228641
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 280dcf7c9fe07c7b3266822f0d8b92b1c399075e
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433900"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996206"
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>System. Activities (pestaña), elegir elementos del cuadro de herramientas (cuadro de diálogo)
 
@@ -35,7 +35,7 @@ Puede desproteger los elementos que no desee ver en el **cuadro de herramientas*
 
 Al crear instancias de la actividad, para lo cual se debe arrastrar y colocar en el diseñador, se agrega automáticamente el ensamblado que contiene el elemento a la lista de ensamblados a la que se hace referencia. También si la actividad hace referencia a un ensamblado C, no agrega C a la lista de ensamblados a la que se hace referencia. El ensamblado C tiene que estar en la GAC o en el mismo directorio que la actividad B. En el caso independiente, el ensamblado tiene que estar en la GAC o en las rutas de acceso de sondeo de VS. A continuación solo puede arrastrar y colocar la actividad en la superficie del diseñador de flujo de trabajo.
 
-La configuración del **cuadro de herramientas** se guarda de forma predeterminada como opciones de usuario, por lo que la próxima vez que abra el **cuadro de herramientas** , se mostrará la lista personalizada de actividades de flujo de trabajo. Un efecto secundario de esto es que si ha agregado los elementos de dominio específicos al cuadro de **herramientas** a través del cuadro de diálogo **elegir elementos del cuadro de herramientas** , sigue viendo esos elementos al trabajar en una aplicación de consola de flujos de trabajo. Si no desea verlos, elimínelos mediante el menú contextual o desactive las opciones en el cuadro de diálogo **elegir elementos del cuadro de herramientas** como se indicó anteriormente.
+La configuración del **cuadro de herramientas** se guarda de forma predeterminada como opciones de usuario, por lo que la próxima vez que abra el **cuadro de herramientas**, se mostrará la lista personalizada de actividades de flujo de trabajo. Un efecto secundario de esto es que si ha agregado los elementos de dominio específicos al cuadro de **herramientas** a través del cuadro de diálogo **elegir elementos del cuadro de herramientas** , sigue viendo esos elementos al trabajar en una aplicación de consola de flujos de trabajo. Si no desea verlos, elimínelos mediante el menú contextual o desactive las opciones en el cuadro de diálogo **elegir elementos del cuadro de herramientas** como se indicó anteriormente.
 
 Las columnas en este cuadro de diálogo contienen la siguiente información:
 
