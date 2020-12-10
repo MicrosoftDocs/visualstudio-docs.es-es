@@ -1,5 +1,7 @@
 ---
 title: Enumerador de código de estado de archivo | Microsoft Docs
+description: El enumerador SccStatus contiene valores constantes que especifican el estado de un archivo en el sistema de control de código fuente y se usa en SccQueryInfo y POPLISTFUNC.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 184c8686ea184aea2cbd0a64873718cbe72f7615
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0093e3a79a5a9caf9846c4b418226568e37828f0
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711453"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994490"
 ---
 # <a name="file-status-code-enumerator"></a>Enumerador de código de estado de archivo
 El `SccStatus` enumerador contiene valores constantes con nombre que especifican el estado de un archivo en el sistema de control de código fuente. Esta enumeración la usan [SccQueryInfo](../extensibility/sccqueryinfo-function.md) y la `POPLISTFUNC` función de devolución de llamada (vea [POPLISTFUNC](../extensibility/poplistfunc.md) para obtener más información).
@@ -27,24 +29,24 @@ El `SccStatus` enumerador contiene valores constantes con nombre que especifican
 
 ```
 enum SccStatus {
-   SCC_STATUS_INVALID          = -1L,
-   SCC_STATUS_NOTCONTROLLED    = 0x0000L,
-   SCC_STATUS_CONTROLLED       = 0x0001L,
-   SCC_STATUS_CHECKEDOUT       = 0x0002L,
-   SCC_STATUS_OUTOTHER         = 0x0004L,
-   SCC_STATUS_OUTEXCLUSIVE     = 0x0008L,
-   SCC_STATUS_OUTMULTIPLE      = 0x0010L,
-   SCC_STATUS_OUTOFDATE        = 0x0020L,
-   SCC_STATUS_DELETED          = 0x0040L,
-   SCC_STATUS_LOCKED           = 0x0080L,
-   SCC_STATUS_MERGED           = 0x0100L,
-   SCC_STATUS_SHARED           = 0x0200L,
-   SCC_STATUS_PINNED           = 0x0400L,
-   SCC_STATUS_MODIFIED         = 0x0800L,
-   SCC_STATUS_OUTBYUSER        = 0x1000L
-   SCC_STATUS_NOMERGE          = 0x2000L
-   SCC_STATUS_RESERVED_1       = 0x4000L
-   SCC_STATUS_RESERVED_2       = 0x8000L
+   SCC_STATUS_INVALID          = -1L,
+   SCC_STATUS_NOTCONTROLLED    = 0x0000L,
+   SCC_STATUS_CONTROLLED       = 0x0001L,
+   SCC_STATUS_CHECKEDOUT       = 0x0002L,
+   SCC_STATUS_OUTOTHER         = 0x0004L,
+   SCC_STATUS_OUTEXCLUSIVE     = 0x0008L,
+   SCC_STATUS_OUTMULTIPLE      = 0x0010L,
+   SCC_STATUS_OUTOFDATE        = 0x0020L,
+   SCC_STATUS_DELETED          = 0x0040L,
+   SCC_STATUS_LOCKED           = 0x0080L,
+   SCC_STATUS_MERGED           = 0x0100L,
+   SCC_STATUS_SHARED           = 0x0200L,
+   SCC_STATUS_PINNED           = 0x0400L,
+   SCC_STATUS_MODIFIED         = 0x0800L,
+   SCC_STATUS_OUTBYUSER        = 0x1000L
+   SCC_STATUS_NOMERGE          = 0x2000L
+   SCC_STATUS_RESERVED_1       = 0x4000L
+   SCC_STATUS_RESERVED_2       = 0x8000L
 };
 ```
 
@@ -85,7 +87,7 @@ enum SccStatus {
 
  SCC_STATUS_RESERVED_2 reservado para uso interno.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Complementos de control de código fuente](../extensibility/source-control-plug-ins.md)
 - [SccQueryInfo](../extensibility/sccqueryinfo-function.md)
 - [POPLISTFUNC](../extensibility/poplistfunc.md)

@@ -1,5 +1,7 @@
 ---
 title: Cómo hacer las extensiones de ida y vuelta
+description: Obtenga información sobre cómo hacer que los proyectos de extensibilidad de Visual Studio realicen un recorrido de ida y vuelta entre Visual Studio 2015 y Visual Studio 2019 o Visual Studio 2017.
+ms.custom: SEO-VS-2020
 ms.date: 06/25/2017
 ms.topic: how-to
 ms.assetid: 2d6cf53c-011e-4c9e-9935-417edca8c486
@@ -8,12 +10,12 @@ ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: ca1f367510aa9730c1b3b212438579a8eaeb0e8f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3db3264bf5226b5679452659928e451e7975b001
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86387283"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993619"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-20192017-and-visual-studio-2015"></a>Cómo: hacer que las extensiones sean compatibles con Visual Studio 2019/2017 y Visual Studio 2015
 
@@ -29,7 +31,7 @@ A continuación se muestra un resumen de los pasos que debe completar en este do
 1. Importe los paquetes de NuGet correctos.
 2. Actualizar manifiesto de extensión:
     * Destino de la instalación
-    * Requisitos previos
+    * Prerrequisitos
 3. Actualizar CSProj:
     * Actualice `<MinimumVisualStudioVersion>`.
     * Agregue la propiedad `<VsixType>`.

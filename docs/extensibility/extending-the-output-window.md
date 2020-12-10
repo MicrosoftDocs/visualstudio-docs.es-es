@@ -1,5 +1,7 @@
 ---
 title: Extender el Ventana de salida | Microsoft Docs
+description: Obtenga información sobre cómo extender la ventana de salida en el SDK de Visual Studio y para crear y administrar sus propios paneles personalizados.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 800b443b079111d1d09fffdd900b246a020578f4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 39ee69f934a9962d2beefb83b1ada08b920ce53d
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711644"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994672"
 ---
 # <a name="extend-the-output-window"></a>Extender la ventana de salida
 La ventana de **salida** es un conjunto de paneles de texto de lectura y escritura. Visual Studio tiene estos paneles integrados: **compilar**, en el que los proyectos comunican mensajes sobre compilaciones y **General**, en el que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] comunica mensajes sobre el IDE. Los proyectos obtienen una referencia al panel **compilar** automáticamente a través de los <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> métodos de interfaz y Visual Studio ofrece acceso directo al panel **General** a través del <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> servicio. Además de los paneles integrados, puede crear y administrar sus propios paneles personalizados.

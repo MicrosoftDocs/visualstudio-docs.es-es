@@ -1,5 +1,7 @@
 ---
 title: Visualizar y ver datos | Microsoft Docs
+description: Obtenga información sobre cómo los visualizadores de tipos y los visores personalizados presentan datos a un desarrollador. El evaluador de expresiones admite visualizadores de tipo de terceros.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b5f984e6c6a3c1c8f3835dfa93a8679ae16680a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 856788546e10e69a8bb7e2787558505937f9effd
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712376"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995465"
 ---
 # <a name="visualizing-and-viewing-data"></a>Visualizar y ver datos
 Los visualizadores de tipos y los visores personalizados presentan datos de una manera que es rápidamente significativa para un desarrollador. El evaluador de expresiones (EE) puede admitir visualizadores de tipo de terceros, así como proporcionar sus propios visores personalizados.
@@ -46,6 +48,6 @@ Los visualizadores de tipos y los visores personalizados presentan datos de una 
 ## <a name="supporting-both-type-visualizers-and-custom-viewers"></a>Compatibilidad con visualizadores de tipos y visores personalizados
  Un EE puede admitir tanto visualizadores de tipos como visores personalizados en los métodos [GetCustomViewerCount](../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) y [GetCustomViewerList](../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) . En primer lugar, el EE agrega el número de visores personalizados que se suministran al valor devuelto por el método [GetCustomViewerCount](../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md) . En segundo lugar, el EE anexa el `CLSID` s de sus propios visores personalizados a la lista devuelta por el método [GetCustomViewerList](../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Tareas de depuración](../../extensibility/debugger/debugging-tasks.md)
 - [Visualizador de tipos y visor personalizado](../../extensibility/debugger/type-visualizer-and-custom-viewer.md)

@@ -1,5 +1,7 @@
 ---
 title: Importaciones del editor | Microsoft Docs
+description: Obtenga información acerca de cómo importar servicios, generadores y agentes de editor que proporcionan la extensión con distintos tipos de acceso al editor principal.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6af95b452166aa71950ac1e869d333d12d857b9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d4e3a128f0f2873ad1946788b34761aadd1e7021
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712011"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994776"
 ---
 # <a name="editor-imports"></a>Importaciones del editor
 Puede importar un número de servicios, generadores y agentes de editor que proporcionen a la extensión distintos tipos de acceso al editor básico. Por ejemplo, puede importar <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> para proporcionar un <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> para un tipo de contenido determinado. (Este navegador permite realizar diferentes tipos de búsquedas en un búfer de texto).
@@ -69,7 +71,7 @@ internal SVsServiceProvider ServiceProvider = null;
 ## <a name="services"></a>Servicios
  Los servicios de editor son generalmente entidades únicas que proporcionan un servicio y se comparten entre varios componentes.
 
-|Importación|Muestra|
+|Importar|Muestra|
 |------------|--------------|
 |<xref:Microsoft.VisualStudio.Utilities.IFileExtensionRegistryService>|La relación entre las extensiones de archivo y los <xref:Microsoft.VisualStudio.Utilities.IContentType> objetos.|
 |<xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>|La colección de objetos <xref:Microsoft.VisualStudio.Utilities.IContentType>.|
@@ -111,7 +113,7 @@ internal SVsServiceProvider ServiceProvider = null;
 ## <a name="other-imports"></a>Otras importaciones
  Los generadores de proveedores y los agentes son generalmente entidades que pueden tener varias instancias en varios componentes.
 
-|Importación|Muestra|
+|Importar|Muestra|
 |------------|--------------|
 |<xref:Microsoft.VisualStudio.Text.Adornments.IErrorProviderFactory>|<xref:Microsoft.VisualStudio.Text.Tagging.SimpleTagger%601>De tipo <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag> ) para el búfer especificado.|
 |<xref:Microsoft.VisualStudio.Text.Adornments.ITextMarkerProviderFactory>|Un etiquetador de marcador de texto (una <xref:Microsoft.VisualStudio.Text.Tagging.SimpleTagger%601> de tipo <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag> ).|

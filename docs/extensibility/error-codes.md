@@ -1,5 +1,7 @@
 ---
 title: Códigos de error | Microsoft Docs
+description: Este artículo contiene una lista de códigos de error, valores y descripciones para las funciones de la API del complemento de control de código fuente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,17 +14,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34072f6ddbd632f83dd308c6cb63427e02bb110b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a77f869936531dbc41cc3bd1d9b510bf44c35cec
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711840"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994724"
 ---
 # <a name="error-codes"></a>Códigos de error
 Cuando una función de la API del complemento de control de código fuente devuelve un error, se espera que sea uno de los siguientes códigos de error. Todos los errores son negativos, las advertencias o los códigos de error informativos son positivos y el éxito es 0.
 
-|Código de error|Value|Descripción|
+|Código de error|Valor|Descripción|
 |----------------|-----------|-----------------|
 |`SCC_I_SHARESUBPROJOK`|7|El complemento admite la adición de archivos del control de código fuente en dos pasos. Para obtener más información, vea [SccSetOption](../extensibility/sccsetoption-function.md).|
 |`SCC_I_FILEDIFFERS`|6|El archivo local es diferente del archivo de la base de datos de control de código fuente (por ejemplo, [SccDiff](../extensibility/sccdiff-function.md) puede devolver este valor).|
@@ -72,12 +74,12 @@ IS_SCC_SUCCESS(rtn) (((rtn) == SCC_OK) ? TRUE : FALSE)
 IS_SCC_WARNING(rtn) (((rtn) > 0) ? TRUE : FALSE)
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Se espera que todas las funciones de la API del complemento de control de código fuente (excepto [SccAdd](../extensibility/sccadd-function.md), [SccCheckin](../extensibility/scccheckin-function.md)y [SccDiff](../extensibility/sccdiff-function.md)) se realicen correctamente cuando los archivos locales que se pasan como argumentos no existen en la carpeta de trabajo. Por ejemplo, el IDE puede emitir una llamada a [SccCheckout](../extensibility/scccheckout-function.md) o [SccUncheckout](../extensibility/sccuncheckout-function.md) en un archivo que no existe en la carpeta de trabajo, pero existe en el sistema de control de código fuente. Esta llamada se realizará correctamente. Solo cuando no hay ningún archivo en la carpeta de trabajo o en el sistema de control de código fuente, la función espera que se produzca un error.
 
  Ciertas funciones, como `SccAdd` y `SccCheckin` , deben devolver específicamente `SCC_E_FILENOTEXIST` cuando el archivo de la carpeta de trabajo no existe. Se espera que otras funciones se realicen correctamente cuando no existe el archivo de trabajo, si las funciones operan en un nombre de archivo válido en el sistema de control de código fuente.
 
  El complemento de control de código fuente no debe hacer ninguna suposición con respecto a los privilegios en un archivo de la carpeta de trabajo, aunque el complemento hubiera marcado el archivo como de solo lectura durante alguna operación. Un archivo de la carpeta de trabajo puede moverse, eliminarse y cambiarse fuera del control del complemento.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Complementos de control de código fuente](../extensibility/source-control-plug-ins.md)

@@ -1,6 +1,6 @@
 ---
-title: 'Diseñador de flujo de trabajo: agregar parámetros & cuadros de diálogo Agregar argumentos'
-description: Obtenga información sobre cómo los elementos de la interfaz de usuario (UI) del cuadro de diálogo Agregar parámetros se usan en el diseñador de InvokeMethod.
+title: Cuadros de diálogo Agregar parámetros & agregar argumentos
+description: Obtenga información sobre cómo los elementos de la interfaz de usuario (UI) del cuadro de diálogo Agregar parámetros se usan en el diseñador de InvokeMethod en Diseñador de flujo de trabajo.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: 2038e56770a7d671a25b3982f865926c29697b13
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: f29ee2aeedc971fc25654b6681c87b5dab71e386
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435695"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995517"
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>Cuadros de diálogo Agregar parámetros y Agregar argumentos
 

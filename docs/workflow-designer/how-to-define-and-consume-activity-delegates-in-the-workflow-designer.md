@@ -1,6 +1,6 @@
 ---
-title: 'Diseñador de flujo de trabajo: definir y consumir delegados de actividad'
-description: Obtenga información sobre cómo .NET Framework 4,5 incluye un diseñador integrado para la actividad InvokeDelegate que puede usar para definir y consumir delegados de actividad.
+title: Definir y consumir delegados de actividad
+description: En Diseñador de flujo de trabajo, obtenga información sobre cómo .NET Framework 4,5 incluye un diseñador integrado para la actividad InvokeDelegate que puede usar para definir y consumir delegados de actividad.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: c59c828f380e47a06f8feb7b72788e76ad7ee08f
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 48cab69de11ce006792e0fda72245048c6897acf
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437923"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993281"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Definir y consumir delegados de actividad en el Diseñador de flujo de trabajo
 
@@ -62,7 +62,7 @@ ms.locfileid: "94437923"
 
 18. En la cuadrícula de **propiedades** de la <xref:System.Activities.Statements.InvokeDelegate> actividad, haga clic en el botón **...** de la propiedad **argumentos delegados** .
 
-19. En la columna **valor** del argumento denominado **argument** , escriba **Items [index]**. Haga clic en **Aceptar** para cerrar el cuadro de diálogo **DelegateArguments** .
+19. En la columna **valor** del argumento denominado **argument**, escriba **Items [index]**. Haga clic en **Aceptar** para cerrar el cuadro de diálogo **DelegateArguments** .
 
 20. Arrastre una actividad <xref:System.Activities.Statements.Assign> sobre la línea horizontal bajo la actividad <xref:System.Activities.Statements.InvokeDelegate>. <xref:System.Activities.Statements.Assign>Se crea la actividad y <xref:System.Activities.Statements.Sequence> se crea automáticamente una actividad para que contenga las dos actividades en la sección de **cuerpo** de la actividad de la **instrucción sinforeach** . La secuencia es necesaria, ya que la sección de **cuerpo** solo puede contener una única actividad. La creación automática de una nueva <xref:System.Activities.Statements.Sequence> actividad es una característica nueva de .NET Framework 4,5.
 
@@ -74,7 +74,7 @@ ms.locfileid: "94437923"
 
 1. Compile el proyecto presionando **Ctrl** + **MAYÚS** + **B**.
 
-2. En **Explorador de soluciones** , Abra **Workflow1. Xaml** en el diseñador.
+2. En **Explorador de soluciones**, Abra **Workflow1. Xaml** en el diseñador.
 
 3. Arrastre una actividad @ **foreach** desde el cuadro de herramientas a la superficie del diseñador. La actividad está en una sección del cuadro de herramientas con el mismo nombre que el proyecto.
 

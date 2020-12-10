@@ -1,5 +1,7 @@
 ---
 title: Servicio de imágenes y catálogo | Microsoft Docs
+description: Este artículo contiene instrucciones y procedimientos recomendados para adoptar el servicio de imágenes de Visual Studio y el catálogo de imágenes.
+ms.custom: SEO-VS-2020
 ms.date: 04/01/2019
 ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a098e78e8895aea72d830a88e436a06f15de6133
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 41adcbe97f9d0779fbad465bac673a3f7cf086c7
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584547"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993541"
 ---
 # <a name="image-service-and-catalog"></a>Catálogo y servicio de imágenes
 Este manual contiene instrucciones y procedimientos recomendados para adoptar el servicio de imágenes de Visual Studio y el catálogo de imágenes introducidos en Visual Studio 2015.
@@ -42,7 +44,7 @@ Este manual contiene instrucciones y procedimientos recomendados para adoptar el
 
   ![Antes y después del servicio de imágenes](../extensibility/media/image-service-before-and-after.png "Antes y después del servicio de imágenes")
 
-## <a name="how-it-works"></a>Cómo funciona
+## <a name="how-it-works"></a>Funcionamiento
  El servicio de imágenes puede proporcionar una imagen de mapa de imágenes adecuada para cualquier marco de interfaz de usuario compatible:
 
 - WPF: BitmapSource
@@ -105,7 +107,7 @@ Este manual contiene instrucciones y procedimientos recomendados para adoptar el
 |-|-|
 |Importar|Importa los símbolos del archivo de manifiesto especificado para su uso en el manifiesto actual.|
 |Guid|El símbolo representa un GUID y debe coincidir con el formato de GUID|
-|ID|El símbolo representa un identificador y debe ser un entero no negativo|
+|Id.|El símbolo representa un identificador y debe ser un entero no negativo|
 |String|El símbolo representa un valor de cadena arbitrario|
 
  Los símbolos distinguen mayúsculas de minúsculas y se hace referencia a ellos mediante la sintaxis $ (nombre de símbolo):
@@ -144,7 +146,7 @@ Este manual contiene instrucciones y procedimientos recomendados para adoptar el
 |**Atributo**|**Definición**|
 |-|-|
 |Guid|Desee Parte del GUID del moniker de la imagen|
-|ID|Desee La parte de identificador del moniker de imagen|
+|Id.|Desee La parte de identificador del moniker de imagen|
 |AllowColorInversion|[Opcional, valor predeterminado True] Indica si la imagen puede tener sus colores inversos mediante programación cuando se usa en un fondo oscuro.|
 
  **Origen**
@@ -160,13 +162,13 @@ Este manual contiene instrucciones y procedimientos recomendados para adoptar el
 |**Atributo**|**Definición**|
 |-|-|
 |Identificador URI|Desee URI que define dónde se puede cargar la imagen. Puede tener uno de los valores siguientes:<br /><br /> -Un [pack uri](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) mediante la autoridad Application:///<br />-Una referencia de recurso de componente absoluta<br />-Una ruta de acceso a un archivo que contiene un recurso nativo|
-|Segundo plano|Opta Indica qué tipo de fondo está previsto usar el origen.<br /><br /> Puede tener uno de los valores siguientes:<br /><br /> *Claro:* El origen se puede usar en un fondo claro.<br /><br /> *Oscuro:* El origen se puede usar en un fondo oscuro.<br /><br /> *HighContrast:* El origen se puede usar en cualquier fondo del modo contraste alto.<br /><br /> *HighContrastLight:* El origen se puede usar en un fondo claro en modo de contraste alto.<br /><br /> *HighContrastDark:* El origen se puede usar en un fondo oscuro en modo de contraste alto.<br /><br /> Si se omite el atributo Background, el origen puede usarse en cualquier fondo.<br /><br /> Si background es *Light*, *Dark*, *HighContrastLight*o *HighContrastDark*, los colores del origen nunca se invierten. Si se omite Background o se establece en *HighContrast*, el atributo **AllowColorInversion** de la imagen controla la inversión de los colores del origen.|
+|Información previa|Opta Indica qué tipo de fondo está previsto usar el origen.<br /><br /> Puede tener uno de los valores siguientes:<br /><br /> *Claro:* El origen se puede usar en un fondo claro.<br /><br /> *Oscuro:* El origen se puede usar en un fondo oscuro.<br /><br /> *HighContrast:* El origen se puede usar en cualquier fondo del modo contraste alto.<br /><br /> *HighContrastLight:* El origen se puede usar en un fondo claro en modo de contraste alto.<br /><br /> *HighContrastDark:* El origen se puede usar en un fondo oscuro en modo de contraste alto.<br /><br /> Si se omite el atributo Background, el origen puede usarse en cualquier fondo.<br /><br /> Si background es *Light*, *Dark*, *HighContrastLight* o *HighContrastDark*, los colores del origen nunca se invierten. Si se omite Background o se establece en *HighContrast*, el atributo **AllowColorInversion** de la imagen controla la inversión de los colores del origen.|
 
 Un \<Source> elemento puede tener exactamente uno de los siguientes subelementos opcionales:
 
 |**Element**|**Atributos (todos obligatorios)**|**Definición**|
 |-|-|-|
-|\<Size>|Value|El origen se usará para las imágenes del tamaño especificado (en unidades de dispositivo). La imagen será cuadrada.|
+|\<Size>|Valor|El origen se usará para las imágenes del tamaño especificado (en unidades de dispositivo). La imagen será cuadrada.|
 |\<SizeRange>|MinSize, MaxSize|El origen se usará para las imágenes de MinSize a MaxSize (en unidades de dispositivo) de un solo uso. La imagen será cuadrada.|
 |\<Dimensions>|Ancho, alto|El origen se usará para las imágenes con el ancho y alto especificados (en unidades de dispositivo).|
 |\<DimensionRange>|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|El origen se usará para las imágenes desde el ancho o el alto mínimo hasta el ancho/alto máximo (en unidades de dispositivo), ambos inclusive.|
@@ -180,7 +182,7 @@ Un \<Source> elemento puede tener exactamente uno de los siguientes subelementos
 |**Atributo**|**Definición**|
 |-|-|
 |Tipo|Desee El tipo del recurso nativo, ya sea XAML o PNG|
-|ID|Desee La parte del identificador entero del recurso nativo|
+|Id.|Desee La parte del identificador entero del recurso nativo|
 
  **ImageList**
 
@@ -196,7 +198,7 @@ Un \<Source> elemento puede tener exactamente uno de los siguientes subelementos
 |**Atributo**|**Definición**|
 |-|-|
 |Guid|Desee Parte del GUID del moniker de la imagen|
-|ID|Desee La parte de identificador del moniker de imagen|
+|Id.|Desee La parte de identificador del moniker de imagen|
 |Externo|[Opcional, valor predeterminado False] Indica si el moniker de imagen hace referencia a una imagen del manifiesto actual.|
 
  No es necesario que el moniker de la imagen contenida haga referencia a una imagen definida en el manifiesto actual. Si no se encuentra la imagen contenida en la biblioteca de imágenes, se usará una imagen de marcador de posición en blanco en su lugar.
@@ -465,7 +467,7 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
 
  Estos son los lugares principales para usar monikers en una ventana de herramientas. Siga las instrucciones para cada una:
 
-1. La pestaña de la ventana de herramientas cuando las pestañas se obtienen lo suficientemente **Ctrl**pequeñas (también se usan en el modificador de la ventana de + **pestañas** Ctrl).
+1. La pestaña de la ventana de herramientas cuando las pestañas se obtienen lo suficientemente pequeñas (también se usan en el modificador de la ventana de + **pestañas** Ctrl).
 
     Agregue esta línea al constructor de la clase que se deriva del tipo **ToolWindowPane** :
 
@@ -497,7 +499,7 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
 
    Estos son los lugares principales para usar monikers en una ventana de herramientas. Siga las instrucciones para cada una:
 
-3. La pestaña de la ventana de herramientas cuando las pestañas se obtienen lo suficientemente **Ctrl**pequeñas (también se usan en el modificador de la ventana de + **pestañas** Ctrl).
+3. La pestaña de la ventana de herramientas cuando las pestañas se obtienen lo suficientemente pequeñas (también se usan en el modificador de la ventana de + **pestañas** Ctrl).
 
    1. Quite estas líneas (si existen) en el constructor de la clase que deriva del tipo **ToolWindowPane** :
 
@@ -576,7 +578,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 ## <a name="how-do-i-port-a-project-system"></a>¿Cómo puerto un sistema de proyectos?
  **Cómo proporcionar ImageMonikers para un proyecto**
 
-1. Implemente **VSHPROPID_SupportsIconMonikers** en el **IVsHierarchy**del proyecto y devuelva true.
+1. Implemente **VSHPROPID_SupportsIconMonikers** en el **IVsHierarchy** del proyecto y devuelva true.
 
 2. Implemente **VSHPROPID_IconMonikerImageList** (si el proyecto original usaba **VSHPROPID_IconImgList**) o **VSHPROPID_IconMonikerGuid**, **VSHPROPID_IconMonikerId** **VSHPROPID_OpenFolderIconMonikerGuid** **, VSHPROPID_OpenFolderIconMonikerId (si** el proyecto original usaba **VSHPROPID_IconHandle** y **VSHPROPID_OpenFolderIconHandle**).
 
@@ -638,7 +640,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
    - Recomendado: cambie el nombre del símbolo AssetsGuid y el símbolo de la franja de imagen para que se ajuste a su uso.
 
-   - Reemplace el GUID de cada **ContainedImage**por $ (ImageCatalogGuid), reemplace el identificador de cada **ContainedImage**por $ ( \<moniker> ) y agregue el atributo external = "true" a cada **ContainedImage**
+   - Reemplace el GUID de cada **ContainedImage** por $ (ImageCatalogGuid), reemplace el identificador de cada **ContainedImage** por $ ( \<moniker> ) y agregue el atributo external = "true" a cada **ContainedImage**
 
        - \<moniker> debe reemplazarse por el **KnownMoniker** que coincide con la imagen, pero con el "KnownMonikers". se ha quitado del nombre.
 

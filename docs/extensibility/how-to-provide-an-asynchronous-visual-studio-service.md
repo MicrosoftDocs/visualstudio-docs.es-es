@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: proporcionar un servicio de Visual Studio asincrónico | Microsoft Docs'
+description: Obtenga información sobre cómo proporcionar un servicio de Visual Studio asincrónico. Este enfoque permite obtener un servicio sin bloquear el subproceso de la interfaz de usuario.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 0448274c-d3d2-4e12-9d11-8aca78a1f3f5
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad178bf93e49c3d695c1ebd0a5d4f6b151175953
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 11639e178f93a1ebfe2fc5231ee2b35df1b63196
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905743"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993645"
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Cómo: proporcionar un servicio de Visual Studio asincrónico
 Si desea obtener un servicio sin bloquear el subproceso de la interfaz de usuario, debe crear un servicio asincrónico y cargar el paquete en un subproceso en segundo plano. Para este propósito, puede usar un <xref:Microsoft.VisualStudio.Shell.AsyncPackage> en lugar de un <xref:Microsoft.VisualStudio.Shell.Package> y agregar el servicio con los métodos asincrónicos especiales del paquete asincrónico.
@@ -24,7 +26,7 @@ Si desea obtener un servicio sin bloquear el subproceso de la interfaz de usuari
 
 1. Cree un proyecto VSIX (**archivo**  >  **nuevo**  >  **proyecto**  >  **Visual C#**  >  **usaría**  >  **VSIX Project**). Asigne al proyecto el nombre **TestAsync**.
 
-2. Agregue un VSPackage al proyecto. Seleccione el nodo del proyecto en el **Explorador de soluciones** y haga clic en **Agregar**  >  **nuevo elemento**  >  **Visual C# elementos**de  >  **extensibilidad**  >  **Visual Studio Package**. Asigne a este archivo el nombre *TestAsyncPackage.CS*.
+2. Agregue un VSPackage al proyecto. Seleccione el nodo del proyecto en el **Explorador de soluciones** y haga clic en **Agregar**  >  **nuevo elemento**  >  **Visual C# elementos** de  >  **extensibilidad**  >  **Visual Studio Package**. Asigne a este archivo el nombre *TestAsyncPackage.CS*.
 
 3. En *TestAsyncPackage.CS*, cambie el paquete para que herede de en `AsyncPackage` lugar de `Package` :
 
@@ -173,7 +175,7 @@ public sealed class TestAsyncPackage : AsyncPackage
 
 1. Agregue un comando de menú al proyecto. (En el **Explorador de soluciones**, seleccione el nodo del proyecto, haga clic con el botón derecho y seleccione **Agregar**  >  . **Nuevo elemento**  >  **Extensibilidad**  >  **Comando personalizado**). Asigne al archivo de comandos el nombre *TestAsyncCommand.CS*.
 
-2. La plantilla de comandos personalizada vuelve a agregar el `Initialize()` método al archivo *TestAsyncPackage.CS* para inicializar el comando. En el `Initialize()` método, copie la línea que inicializa el comando. Debería tener este aspecto:
+2. La plantilla de comandos personalizada vuelve a agregar el `Initialize()` método al archivo *TestAsyncPackage.CS* para inicializar el comando. En el `Initialize()` método, copie la línea que inicializa el comando. Debería ser parecido a este:
 
     ```csharp
     TestAsyncCommand.Initialize(this);

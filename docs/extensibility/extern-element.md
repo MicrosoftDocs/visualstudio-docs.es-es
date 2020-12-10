@@ -1,5 +1,7 @@
 ---
 title: Extern (elemento) | Microsoft Docs
+description: El elemento extern hace referencia a los archivos de encabezado (. h) externos que se van a combinar con el archivo. Vsct en tiempo de compilación.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2cf6f9db77abaa7034af8d074b9833a4c1560f07
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e975c3f721d65b64fc7994824406b0c9af13022
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711486"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994529"
 ---
 # <a name="extern-element"></a>Extern (elemento)
 El elemento extern hace referencia a los archivos de encabezado (*. h*) externos que se van a combinar con el archivo *. Vsct* en tiempo de compilación. Los archivos que se van a combinar deben estar en la ruta de acceso de inclusión que se proporciona al compilador VSCT o a los que hace referencia un [elemento include](../extensibility/include-element.md). Los archivos pueden ser otros archivos *. Vsct* o archivos de encabezado de C++.
@@ -40,7 +42,7 @@ El elemento extern hace referencia a los archivos de encabezado (*. h*) externos
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|href|Necesario. La ruta de acceso al archivo de encabezado:<br /><br /> href = "stdidcmd. h"|
+|href|Obligatorio. La ruta de acceso al archivo de encabezado:<br /><br /> href = "stdidcmd. h"|
 |Condición|Opcional. Vea [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 |language|Opcional. El idioma predeterminado de todos los [\<Strings>](../extensibility/strings-element.md) elementos de la tabla de comandos:<br /><br /> Language = "en-US"|
 
@@ -68,7 +70,7 @@ El elemento extern hace referencia a los archivos de encabezado (*. h*) externos
 </CommandTable>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Archivos de tabla de comandos de Visual Studio (. Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Cómo agrega VSPackages los elementos de la interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md)

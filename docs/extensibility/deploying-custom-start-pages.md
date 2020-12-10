@@ -1,5 +1,7 @@
 ---
 title: Implementación de páginas de inicio personalizadas | Microsoft Docs
+description: Obtenga información acerca de cómo implementar páginas de inicio personalizadas mediante la implementación de VSIX o copiando los archivos en las ubicaciones correctas en el equipo de destino.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 210b4589c0e2165af537c3fa9129affb06197e9b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76c2fc23a2b76b48152a4d3d44d687f165abf106
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712227"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993892"
 ---
 # <a name="deploy-custom-start-pages"></a>Implementar páginas de inicio personalizadas
 
@@ -46,9 +48,9 @@ Puede obtener la plantilla de proyecto de la página de inicio con el **Administ
 
    1. Cree el archivo *Extension. vsixmanifest* y el archivo *[Content_Types]. XML* en una nueva carpeta. Para obtener más información, vea [anatomía de un paquete VSIX](../extensibility/anatomy-of-a-vsix-package.md).
 
-   2. En el explorador de Windows, haga clic con el botón secundario en la carpeta que contiene los dos archivos XML, haga clic en **Enviar a**y, a continuación, haga clic en carpeta comprimida (en zip). Cambie el nombre del archivo *. zip* resultante a *nombreDeArchivo. vsix*, donde nombrearchivo es el nombre del archivo redistribuible que instala el paquete.
+   2. En el explorador de Windows, haga clic con el botón secundario en la carpeta que contiene los dos archivos XML, haga clic en **Enviar a** y, a continuación, haga clic en carpeta comprimida (en zip). Cambie el nombre del archivo *. zip* resultante a *nombreDeArchivo. vsix*, donde nombrearchivo es el nombre del archivo redistribuible que instala el paquete.
 
-Para que Visual Studio reconozca una página de inicio, el `Content Element` del manifiesto VSIX debe contener un `CustomExtension Element` que tenga el `Type` atributo establecido en `"StartPage"` . Una extensión de página de inicio que se ha instalado mediante la implementación de VSIX aparece en la lista **Personalizar Página de inicio** de la página Opciones de **Inicio** como *el nombre*de la extensión **[installed Extension]** .
+Para que Visual Studio reconozca una página de inicio, el `Content Element` del manifiesto VSIX debe contener un `CustomExtension Element` que tenga el `Type` atributo establecido en `"StartPage"` . Una extensión de página de inicio que se ha instalado mediante la implementación de VSIX aparece en la lista **Personalizar Página de inicio** de la página Opciones de **Inicio** como *el nombre* de la extensión **[installed Extension]** .
 
 Si el paquete de la página de inicio incluye ensamblados, debe agregar el registro de la ruta de acceso de enlace para que estén disponibles cuando se inicie Visual Studio. Para ello, asegúrese de que el paquete incluye un archivo *. pkgdef* con la siguiente información.
 
@@ -58,9 +60,9 @@ Si el paquete de la página de inicio incluye ensamblados, debe agregar el regis
 ```
 
 ### <a name="vsix-deployment-for-all-users"></a>Implementación de VSIX para todos los usuarios
- De forma predeterminada, las extensiones implementadas en los paquetes VSIX solo se instalan para el usuario actual. Puede crear una página de inicio para todos los usuarios del equipo de destino mediante la creación de una implementación para todos los usuarios.
+ De forma predeterminada, las extensiones implementadas en los paquetes VSIX solo se instalan para el usuario actual. Puede crear una página de inicio para todos los usuarios del equipo de destino mediante la creación de una implementación de All-Users.
 
-### <a name="to-create-an-all-users-deployment"></a>Para crear una implementación para todos los usuarios
+### <a name="to-create-an-all-users-deployment"></a>Para crear una implementación de All-Users
 
 1. Abra el archivo *Extension. vsixmanifest* en la vista de código.
 
@@ -83,7 +85,7 @@ Si el paquete de la página de inicio incluye ensamblados, debe agregar el regis
      Esto indica a Visual Studio que mire la nueva ubicación de la página de inicio.
 
 ## <a name="file-copy-deployment"></a>Implementación de copia de archivos
- No es necesario crear un archivo *. vsix* para implementar una página de inicio personalizada. En su lugar, puede copiar el marcado y los archivos auxiliares directamente en la <em>carpeta \StartPages del usuario \* . La lista de*páginas de inicio de personalización</em> * de la página Opciones de **Inicio** muestra todos los archivos *. Xaml* de esa carpeta, junto con la ruta de acceso (por ejemplo, *%userprofile%\My Documentos\visual Studio {version} \StartPages \\ {File Name}. Xaml*). Si la página de inicio incluye referencias a ensamblados privados, debe copiarlos y pegarlos en la carpeta * \PrivateAssemblies \*
+ No es necesario crear un archivo *. vsix* para implementar una página de inicio personalizada. En su lugar, puede copiar el marcado y los archivos auxiliares directamente en la <em>carpeta \StartPages del usuario \* . La lista de *páginas de inicio de personalización</em>* de la página Opciones de **Inicio** muestra todos los archivos *. Xaml* de esa carpeta, junto con la ruta de acceso (por ejemplo, *%userprofile%\My Documentos\visual Studio {version} \StartPages \\ {File Name}. Xaml*). Si la página de inicio incluye referencias a ensamblados privados, debe copiarlos y pegarlos en la carpeta * \PrivateAssemblies \*
 
  Para distribuir una página de inicio creada sin empaquetarla en un archivo *. vsix* , se recomienda usar una estrategia de copia de archivos básica, por ejemplo, un script de batch o cualquier otra tecnología de implementación que le permita colocar los archivos en los directorios necesarios.
 
@@ -95,7 +97,7 @@ Si el paquete de la página de inicio incluye ensamblados, debe agregar el regis
 
 3. En la lista **Personalizar Página de inicio** de la página Opciones de **Inicio** , seleccione la nueva página de inicio. Para obtener más información, consulte [personalizar la página de inicio](../ide/customizing-the-start-page-for-visual-studio.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Personalizar la página de inicio](../ide/customizing-the-start-page-for-visual-studio.md)
 - [Agregar control de usuario a la página de inicio](../extensibility/adding-user-control-to-the-start-page.md)

@@ -1,5 +1,7 @@
 ---
 title: Introducción con analizadores de Roslyn | Microsoft Docs
+description: Use estos recursos para empezar a trabajar con los analizadores de Roslyn en Visual Studio; incluye un tutorial y varios ejemplos.
+ms.custom: SEO-VS-2020
 ms.date: 04/02/2018
 ms.topic: conceptual
 ms.assetid: 367c2ec8-3059-46a5-9d1c-57bead0419e7
@@ -8,18 +10,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4d572c49f7d528b9dbb624bf31ad5e28dc3799aa
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: c63510083f227f617b2a11ddec07510ffd792433
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012248"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994360"
 ---
 # <a name="get-started-with-roslyn-analyzers"></a>Introducción a los analizadores de Roslyn
 
 Con los analizadores de código basados en proyectos activos en Visual Studio, los autores de la API pueden enviar análisis de código específico del dominio como parte de sus paquetes de NuGet. Dado que estos analizadores se basan en el .NET Compiler Platform (con el nombre de código "Roslyn"), pueden generar advertencias en el código a medida que se escriben incluso antes de que se haya terminado la línea (no hay más que esperar a compilar el código para detectar problemas). Los analizadores también pueden mostrar una corrección de código automática a través del aviso de bombilla de Visual Studio para que pueda limpiar el código inmediatamente.
 
-## <a name="get-started"></a>Introducción
+## <a name="get-started"></a>Primeros pasos
 
 [Información general de los analizadores de Roslyn](../code-quality/roslyn-analyzers-overview.md)
 
@@ -31,7 +33,7 @@ Con los analizadores de código basados en proyectos activos en Visual Studio, l
 
 [Varios ejemplos de GitHub, agrupados en tres tipos de analizadores](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Referencia de versión del paquete de .NET Compiler Platform](roslyn-version-support.md)
 - [Más documentos en el sitio OSS de GitHub](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)

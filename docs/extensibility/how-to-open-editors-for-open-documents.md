@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: abrir editores para documentos abiertos | Microsoft Docs'
+description: Obtenga información acerca de cómo abrir un archivo en un editor estándar o específico del proyecto. Cuando un proyecto abre una ventana de documento, debe determinar si el archivo ya está abierto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f67a7fad5944e82087f520508ef9f4a66b7109d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6d329ce7b4f4b74b8ff77357393ffe9383a3977e
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905813"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993866"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>Cómo: abrir editores para documentos abiertos
 Antes de que un proyecto abra una ventana de documento, el proyecto debe determinar primero si el archivo ya está abierto en la ventana de documento de otro editor. El archivo puede estar abierto en un editor específico del proyecto o en uno de los editores estándar registrados con [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
@@ -25,7 +27,7 @@ Antes de que un proyecto abra una ventana de documento, el proyecto debe determi
 
 ### <a name="to-open-a-project-specific-editor-for-an-open-file"></a>Para abrir un editor específico del proyecto para un archivo abierto
 
-1. Llame al método <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A> .
+1. Llame al método <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>.
 
     Esta llamada devuelve punteros a la jerarquía del documento, al elemento de la jerarquía y al marco de la ventana, si procede.
 

@@ -1,6 +1,7 @@
 ---
 title: Migrar proyectos de extensibilidad a Visual Studio 2017
 titleSuffix: ''
+description: Obtenga información sobre cómo actualizar proyectos de extensibilidad a Visual Studio 2017 y cómo actualizar desde la versión 2 del manifiesto de la extensión al manifiesto de la versión 3 de VSIX.
 ms.custom: SEO-VS-2020
 ms.date: 11/09/2016
 ms.topic: how-to
@@ -11,12 +12,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 9212add38f877e76aa3eaaa98c3d0d863c97d62e
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.openlocfilehash: 58d802ad97018a3d84e2b6a9f5e759db3a7cb2e3
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352288"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993970"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Cómo: migrar proyectos de extensibilidad a Visual Studio 2017
 
@@ -109,14 +110,14 @@ En lugar de editar directamente el manifiesto XML, puede usar la nueva pestaña 
 
 ## <a name="update-debug-settings-for-the-project"></a>Actualizar la configuración de depuración del proyecto
 
-Si desea depurar la extensión en una instancia experimental de Visual Studio, asegúrese de que la acción de inicio de la configuración del proyecto para **depurar**  >  **Start action** tiene el **programa externo de Inicio:** valor establecido en el archivo de *devenv.exe* de la instalación de Visual Studio 2017.
+Si desea depurar la extensión en una instancia experimental de Visual Studio, asegúrese de que la acción de inicio de la configuración del proyecto para **depurar**  >   tiene el **programa externo de Inicio:** valor establecido en el archivo de *devenv.exe* de la instalación de Visual Studio 2017.
 
 Podría ser similar a la siguiente: *c:\Archivos de programa (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\devenv.exe*
 
 ![iniciar programa externo](media/start-external-program.png)
 
 > [!Note]
-> La acción de inicio de depuración normalmente se almacena en el archivo *. csproj. User* . Este archivo normalmente se incluye en el archivo *. gitignore* y, por lo tanto, no se guarda normalmente con otros archivos de proyecto cuando se confirma en el control de código fuente. Como tal, si ha extraído la solución desde el control de código fuente, es probable que el proyecto no tenga valores establecidos para la acción de inicio. Los nuevos proyectos VSIX creados con Visual Studio 2017 tendrán un archivo *. csproj. User* creado con los valores predeterminados que apuntan al directorio de instalación actual de Visual Studio. Sin embargo, si va a migrar una extensión VSIX V2, es probable que el archivo *. csproj. User* contenga referencias al directorio de instalación de la versión anterior de Visual Studio. Establecer el valor de la acción de inicio de **depuración**  >  **Start action** permitirá que se inicie la instancia experimental de Visual Studio correcta al intentar depurar la extensión.
+> La acción de inicio de depuración normalmente se almacena en el archivo *. csproj. User* . Este archivo normalmente se incluye en el archivo *. gitignore* y, por lo tanto, no se guarda normalmente con otros archivos de proyecto cuando se confirma en el control de código fuente. Como tal, si ha extraído la solución desde el control de código fuente, es probable que el proyecto no tenga valores establecidos para la acción de inicio. Los nuevos proyectos VSIX creados con Visual Studio 2017 tendrán un archivo *. csproj. User* creado con los valores predeterminados que apuntan al directorio de instalación actual de Visual Studio. Sin embargo, si va a migrar una extensión VSIX V2, es probable que el archivo *. csproj. User* contenga referencias al directorio de instalación de la versión anterior de Visual Studio. Establecer el valor de la acción de inicio de **depuración**  >   permitirá que se inicie la instancia experimental de Visual Studio correcta al intentar depurar la extensión.
 
 ## <a name="check-that-the-extension-builds-correctly-as-a-vsix-v3"></a>Comprobar que la extensión se compila correctamente (como VSIX V3)
 
@@ -172,7 +173,7 @@ Al buscar las dependencias, verá que una dependencia podría asignarse a varios
 
 Para proporcionar más instrucciones, hemos identificado algunos tipos de extensión comunes y sus requisitos previos sugeridos:
 
-Tipo de extensión | Display Name (Nombre para mostrar) | Id.
+Tipo de extensión | Nombre para mostrar | Id.
 --- | --- | ---
 Editor | Editor de núcleo de Visual Studio | Microsoft.VisualStudio.Component.CoreEditor
 Roslyn | C# y Visual Basic | Microsoft.VisualStudio.Component.Roslyn.LanguageServices
@@ -187,7 +188,7 @@ Si no está seguro de qué componente contiene un archivo binario específico, d
 
 ### <a name="vs2017-componentbinarymappingxlsx"></a>vs2017-ComponentBinaryMapping.xlsx
 
-Hay cuatro columnas en la hoja de Excel: **nombre de componente**, **ComponentID**, **versión**y **nombres de archivo/binarios**.  Puede usar los filtros para buscar y buscar componentes y binarios específicos.
+Hay cuatro columnas en la hoja de Excel: **nombre de componente**, **ComponentID**, **versión** y **nombres de archivo/binarios**.  Puede usar los filtros para buscar y buscar componentes y binarios específicos.
 
 En el caso de todas las referencias, determine cuáles están en el componente editor básico (Microsoft. VisualStudio. Component. CoreEditor).  Como mínimo, se requiere que el componente editor de núcleos se especifique como requisito previo para todas las extensiones. De las referencias que se dejan en el editor principal, agregue filtros en la sección **nombres de archivos binarios o archivos** para buscar componentes que tienen cualquiera de los subconjuntos de esas referencias.
 
@@ -198,7 +199,7 @@ Ejemplos:
 
 ## <a name="specify-a-visual-studio-2017-release"></a>Especificar una versión de Visual Studio 2017
 
-Si la extensión requiere una versión específica de Visual Studio 2017, por ejemplo, depende de una característica publicada en 15,3, debe especificar el número de compilación en el **admitir**de VSIX. Por ejemplo, la versión 15,3 tiene un número de compilación de "15.0.26730.3". [Aquí](../install/visual-studio-build-numbers-and-release-dates.md)puede ver la asignación de versiones a los números de compilación. El uso del número de versión ' 15,3 ' no funcionará correctamente.
+Si la extensión requiere una versión específica de Visual Studio 2017, por ejemplo, depende de una característica publicada en 15,3, debe especificar el número de compilación en el **admitir** de VSIX. Por ejemplo, la versión 15,3 tiene un número de compilación de "15.0.26730.3". [Aquí](../install/visual-studio-build-numbers-and-release-dates.md)puede ver la asignación de versiones a los números de compilación. El uso del número de versión ' 15,3 ' no funcionará correctamente.
 
 Si la extensión requiere 15,3 o superior, declararía la **versión de admitir** como [15.0.26730.3, 16,0):
 

@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: proporcionar un servicio | Microsoft Docs'
+description: Un VSPackage puede proporcionar servicios que otros VSPackages pueden utilizar. Obtenga información sobre cómo un VSPackage registra un servicio con Visual Studio y agrega el servicio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30bfdd49d871919503be767ea930b3d5f2f0fd95
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ac89984539b0870d3921918a5a96b821297c009f
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905760"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993736"
 ---
 # <a name="how-to-provide-a-service"></a>Cómo: proporcionar un servicio
 Un VSPackage puede proporcionar servicios que otros VSPackages pueden utilizar. Para proporcionar un servicio, un VSPackage debe registrar el servicio con Visual Studio y agregar el servicio.
@@ -31,7 +33,7 @@ Un VSPackage puede proporcionar servicios que otros VSPackages pueden utilizar. 
 
 1. Cree un proyecto de VSIX (**archivo**  >  **nuevo**  >  **proyecto**  >  **Visual C#**  >  **extensibilidad**  >  **VSIX Project**).
 
-2. Agregue un VSPackage al proyecto. Seleccione el nodo del proyecto en el **Explorador de soluciones** y haga clic en **Agregar**  >  **nuevo elemento**  >  **Visual C# elementos**de  >  **extensibilidad**  >  **Visual Studio Package**.
+2. Agregue un VSPackage al proyecto. Seleccione el nodo del proyecto en el **Explorador de soluciones** y haga clic en **Agregar**  >  **nuevo elemento**  >  **Visual C# elementos** de  >  **extensibilidad**  >  **Visual Studio Package**.
 
 3. Para implementar un servicio, debe crear tres tipos:
 

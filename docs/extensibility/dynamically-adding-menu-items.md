@@ -1,5 +1,7 @@
 ---
 title: Agregar elementos de menú de forma dinámica | Microsoft Docs
+description: Obtenga información sobre cómo usar la marca de comandos DynamicItemStart para agregar elementos de menú en tiempo de ejecución. En este artículo se muestra cómo establecer el proyecto de inicio en una solución de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4387c1930e09e49c0ec5c36ccedc1bb83dc273f3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 81fd495c51eff456f66275f33876038d14e43203
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712064"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994815"
 ---
 # <a name="dynamically-add-menu-items"></a>Agregar elementos de menú de forma dinámica
 Puede agregar elementos de menú en tiempo de ejecución si especifica la `DynamicItemStart` marca de comando en una definición de botón de marcador de posición en el archivo de tabla de comandos de Visual Studio (*. Vsct*) y, a continuación, define (en el código) el número de elementos de menú que se van a mostrar y controla los comandos. Cuando se carga el VSPackage, el marcador de posición se reemplaza por los elementos de menú dinámicos.
@@ -142,7 +144,7 @@ Puede agregar elementos de menú en tiempo de ejecución si especifica la `Dynam
 ## <a name="implement-the-dynamic-menu-command"></a>Implementar el comando de menú dinámico
  Cree una clase de comando de menú dinámico que herede de <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> . En esta implementación, el constructor especifica un predicado que se va a usar para los comandos coincidentes. Debe invalidar el <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.DynamicItemMatch%2A> método para utilizar este predicado con el fin de establecer la <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.MatchedCommandId%2A> propiedad, que identifica el comando que se va a invocar.
 
-1. Cree un nuevo archivo de clase de C# denominado *DynamicItemMenuCommand.CS*y agregue una clase denominada **DynamicItemMenuCommand** que herede de <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> :
+1. Cree un nuevo archivo de clase de C# denominado *DynamicItemMenuCommand.CS* y agregue una clase denominada **DynamicItemMenuCommand** que herede de <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> :
 
     ```csharp
     class DynamicItemMenuCommand : OleMenuCommand
@@ -356,6 +358,6 @@ public sealed class DynamicMenuItemsPackage : Package
 
 4. Cuando se cierra la solución o se abre una solución que solo tiene un proyecto, el icono de la barra de herramientas debe desaparecer.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md)
 - [Cómo agrega VSPackages los elementos de la interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)

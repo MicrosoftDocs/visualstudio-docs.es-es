@@ -1,6 +1,6 @@
 ---
-title: Diseñador de actividades Diseñador de flujo de trabajo-TerminateWorkflow
-description: Obtenga información sobre cómo puede usar el diseñador de actividades TerminateWorkflow para crear y configurar una actividad TerminateWorkflow.
+title: Diseñador de actividades TerminateWorkflow
+description: En Diseñador de flujo de trabajo, obtenga información sobre cómo puede utilizar el diseñador de actividades TerminateWorkflow para crear y configurar una actividad TerminateWorkflow.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5af1f8656e796d9551e1d140b07868551d563a90
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 6fc52153ca71320ebe2ebc1e1a12780e37cac08e
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433874"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995456"
 ---
 # <a name="terminateworkflow-activity-designer"></a>Diseñador actividades TerminateWorkflow
 
@@ -29,7 +29,7 @@ La actividad <xref:System.Activities.Statements.TerminateWorkflow> finaliza la e
 
 ### <a name="using-the-terminateworkflow-activity-designer"></a>Utilizar el diseñador de actividades TerminateWorkflow
 
-El diseñador de actividades **TerminateWorkflow** se puede encontrar en la categoría **tiempo de ejecución** del **cuadro de herramientas** , al que se tiene acceso al hacer clic en la pestaña cuadro de **herramientas** . (de forma alternativa, seleccione **cuadro de herramientas** en el menú **Ver** o Ctrl + Alt + X).
+El diseñador de actividades **TerminateWorkflow** se puede encontrar en la categoría **tiempo de ejecución** del **cuadro de herramientas**, al que se tiene acceso al hacer clic en la pestaña cuadro de **herramientas** . (de forma alternativa, seleccione **cuadro de herramientas** en el menú **Ver** o Ctrl + Alt + X).
 
 El diseñador de actividades **TerminateWorkflow** se puede arrastrar desde el **cuadro de herramientas** y colocarlo en la superficie diseñador de flujo de trabajo, donde se coloquen normalmente las actividades, como en una <xref:System.Activities.Statements.Sequence> . Esto crea una <xref:System.Activities.Statements.TerminateWorkflow> actividad con un valor **displayName** predeterminado de TerminateWorkflow. <xref:System.Activities.Activity.DisplayName%2A>Se puede editar en el encabezado del diseñador de actividades **TerminateWorkflow** o en el cuadro **displayName** de la cuadrícula de propiedades.
 

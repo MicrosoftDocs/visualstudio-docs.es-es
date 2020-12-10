@@ -1,6 +1,7 @@
 ---
 title: Usar el contexto de la interfaz de usuario basada en reglas para las extensiones de Visual Studio
 titleSuffix: ''
+description: Aprenda a usar contextos de interfaz de usuario basados en reglas, que permite a los autores de extensiones definir condiciones cuando se activa un contexto de la interfaz de usuario y se cargan VSPackages.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -9,12 +10,12 @@ author: acangialosi
 ms.author: anthc
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc24fe3f5b27b3c92f0629ed378c1a97c820cd0a
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 41b804d3f7697890773b4b6888bcffa108b7a11b
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037112"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993463"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Cómo: usar el contexto de la interfaz de usuario basada en reglas para las extensiones de Visual Studio
 
@@ -82,7 +83,7 @@ El contexto de la interfaz de usuario basada en reglas se puede usar de varias m
    <GuidSymbol name="UIContextGuid" value="{8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B}" />
    ```
 
-    Ahora, los comandos del menú contextual para los archivos * \* . config* solo estarán visibles cuando el elemento seleccionado en el explorador de soluciones sea un archivo *. config* y el paquete no se cargará hasta que se seleccione uno de estos comandos.
+    Ahora, los comandos del menú contextual para los archivos *\* . config* solo estarán visibles cuando el elemento seleccionado en el explorador de soluciones sea un archivo *. config* y el paquete no se cargará hasta que se seleccione uno de estos comandos.
 
    A continuación, use un depurador para confirmar que el paquete solo se carga cuando lo espera. Para depurar TestPackage:
 

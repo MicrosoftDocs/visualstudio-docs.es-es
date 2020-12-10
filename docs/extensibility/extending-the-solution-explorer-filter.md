@@ -1,5 +1,7 @@
 ---
 title: Extender el filtro de Explorador de soluciones | Microsoft Docs
+description: Obtenga información acerca de cómo extender la funcionalidad de filtro de Explorador de soluciones para mostrar u ocultar distintos archivos en el SDK de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +13,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af0824edd4188481bec8c0703d71043354f5dbcc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cde3377582c3bac0c27371e25f28e5151d641db1
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711571"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994568"
 ---
 # <a name="extend-the-solution-explorer-filter"></a>Extender el filtro de Explorador de soluciones
 Puede extender **Explorador de soluciones** funcionalidad de filtro para mostrar u ocultar distintos archivos. Por ejemplo, puede crear un filtro que muestre solo los archivos de generador de clases de C# en el **Explorador de soluciones**, como se muestra en este tutorial.
 
 ## <a name="prerequisites"></a>Prerrequisitos
- A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS después. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ### <a name="create-a-visual-studio-package-project"></a>Crear un proyecto de paquete de Visual Studio
 
@@ -54,7 +56,7 @@ Puede extender **Explorador de soluciones** funcionalidad de filtro para mostrar
 
 4. En el campo **origen** , elija **un proyecto en la solución actual**.
 
-5. En el campo **proyecto** , elija **FileFilter**y elija el botón **Aceptar** .
+5. En el campo **proyecto** , elija **FileFilter** y elija el botón **Aceptar** .
 
 ### <a name="add-the-filter-code"></a>Agregar el código de filtro
 

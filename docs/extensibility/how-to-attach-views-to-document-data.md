@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: adjuntar vistas a datos de documento | Microsoft Docs'
+description: Es posible que pueda adjuntar una nueva vista de documento a un objeto de datos de documento existente. Utilice este procedimiento para determinar si puede adjuntar la vista.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d5437e3a5d4fb0d6d33d570eb4d8923245cb287b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e044ecbf2309d4d858c16afbdddc130b4661005
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905894"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994191"
 ---
 # <a name="how-to-attach-views-to-document-data"></a>Cómo: adjuntar vistas a datos de documento
 Si tiene una nueva vista de documento, es posible que pueda adjuntarla a un objeto de datos de documento existente.

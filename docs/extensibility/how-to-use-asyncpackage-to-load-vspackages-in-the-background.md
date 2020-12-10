@@ -1,5 +1,6 @@
 ---
 title: Usar AsyncPackage para cargar VSPackages en segundo plano
+description: Obtenga información sobre cómo usar la clase AsyncPackage que habilita la carga de paquetes en un subproceso en segundo plano, lo que puede impedir problemas de capacidad de respuesta de e/s de disco.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -8,18 +9,18 @@ author: acangialosi
 ms.author: anthc
 ms.workload:
 - vssdk
-ms.openlocfilehash: fef717ba7ec135038dcb35348eff870d9eeb3e33
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: e8b5917a42e7083f7357ce76762bf8b51a1b60f9
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037294"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993489"
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Cómo: usar AsyncPackage para cargar VSPackages en segundo plano
 La carga e inicialización de un paquete de VS puede dar lugar a e/s de disco. Si dicha e/s se produce en el subproceso de la interfaz de usuario, puede provocar problemas de capacidad de respuesta. Para solucionar este tema, Visual Studio 2015 presentó la  <xref:Microsoft.VisualStudio.Shell.AsyncPackage> clase que habilita la carga de paquetes en un subproceso en segundo plano.
 
 ## <a name="create-an-asyncpackage"></a>Creación de un AsyncPackage
- Puede empezar por crear un proyecto VSIX (**archivo**  >  **nuevo**  >  **proyecto**de  >  **Visual C#**  >  **extensibilidad**  >  **VSIX Project**) y agregando un VSPackage al proyecto (haga clic con el botón derecho en el proyecto y **agregue**  >  **nuevo elemento**  >  **C#**  >  **extensibilidad**  >  **Visual Studio Package**). Después, puede crear los servicios y agregarlos al paquete.
+ Puede empezar por crear un proyecto VSIX (**archivo**  >  **nuevo**  >  **proyecto** de  >  **Visual C#**  >  **extensibilidad**  >  **VSIX Project**) y agregando un VSPackage al proyecto (haga clic con el botón derecho en el proyecto y **agregue**  >  **nuevo elemento**  >  **C#**  >  **extensibilidad**  >  **Visual Studio Package**). Después, puede crear los servicios y agregarlos al paquete.
 
 1. Derive el paquete de <xref:Microsoft.VisualStudio.Shell.AsyncPackage> .
 
@@ -54,7 +55,7 @@ La carga e inicialización de un paquete de VS puede dar lugar a e/s de disco. S
    await base.InitializeAsync(cancellationToken, progress);
    ```
 
-5. Debe tener cuidado de no realizar RPC (llamada a procedimiento remoto) desde el código de inicialización asincrónico (en **InitializeAsync**). Esto puede ocurrir cuando se llama a <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> directa o indirectamente.  Cuando se requieren cargas de sincronización, el subproceso de la interfaz de usuario se bloqueará mediante <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> . El modelo de bloqueo predeterminado deshabilita las RPC. Esto significa que, si intenta usar una RPC de las tareas asincrónicas, se interbloqueará si el subproceso de la interfaz de usuario está esperando a que se cargue el paquete. La alternativa general es serializar el código en el subproceso de la interfaz de usuario, si es necesario, mediante algo como el **generador de tareas**que se puede unir <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A> o algún otro mecanismo que no usa una RPC.  No use **ThreadHelper. Generic. Invoke** o bloquee normalmente el subproceso de llamada en espera para llegar al subproceso de la interfaz de usuario.
+5. Debe tener cuidado de no realizar RPC (llamada a procedimiento remoto) desde el código de inicialización asincrónico (en **InitializeAsync**). Esto puede ocurrir cuando se llama a <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> directa o indirectamente.  Cuando se requieren cargas de sincronización, el subproceso de la interfaz de usuario se bloqueará mediante <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> . El modelo de bloqueo predeterminado deshabilita las RPC. Esto significa que, si intenta usar una RPC de las tareas asincrónicas, se interbloqueará si el subproceso de la interfaz de usuario está esperando a que se cargue el paquete. La alternativa general es serializar el código en el subproceso de la interfaz de usuario, si es necesario, mediante algo como el **generador de tareas** que se puede unir <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A> o algún otro mecanismo que no usa una RPC.  No use **ThreadHelper. Generic. Invoke** o bloquee normalmente el subproceso de llamada en espera para llegar al subproceso de la interfaz de usuario.
 
     Nota: debe evitar el uso de **GetService** o **QueryService** en el `InitializeAsync` método. Si tiene que usarlos, deberá cambiar primero al subproceso de la interfaz de usuario. La alternativa es usar <xref:Microsoft.VisualStudio.Shell.AsyncServiceProvider.GetServiceAsync%2A> desde **AsyncPackage** (convirtiéndolo en <xref:Microsoft.VisualStudio.Shell.Interop.IAsyncServiceProvider> ).
 

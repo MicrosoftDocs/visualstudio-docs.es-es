@@ -1,5 +1,7 @@
 ---
 title: Elemento Icon | Microsoft Docs
+description: Obtenga información sobre el elemento Icon, que representa los iconos que se usan en las extensiones del IDE de Visual Studio, que incluye los atributos para el mapa de bits usado y la ranura en la franja de mapa de bits.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf4f8a69e565620007fba4b9970ce96bb1513995
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ed5a4f64a2c80cfdc61b37a6a8bac72adc97a33
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710517"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993606"
 ---
 # <a name="icon-element"></a>Elemento Icon
 El atributo GUID de la etiqueta de icono es el GUID de un mapa de bits definido. El `id` atributo selecciona la ranura en la franja de mapa de bits. Este elemento es opcional. Si este elemento no se incluye el valor de **guidOfficeIcon: msotcidNoIcon** será implícito.
@@ -34,8 +36,8 @@ El atributo GUID de la etiqueta de icono es el GUID de un mapa de bits definido.
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|guid|Necesario. GUID de un mapa de bits definido.|
-|id|Necesario. Selecciona la ranura en la franja de mapa de bits.|
+|guid|Obligatorio. GUID de un mapa de bits definido.|
+|id|Obligatorio. Selecciona la ranura en la franja de mapa de bits.|
 
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -49,5 +51,5 @@ El atributo GUID de la etiqueta de icono es el GUID de un mapa de bits definido.
 |-------------|-----------------|
 |[Buttons, elemento](../extensibility/buttons-element.md)||
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Archivos de tabla de comandos de Visual Studio (. Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

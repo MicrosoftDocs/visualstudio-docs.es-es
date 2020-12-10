@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: diagnosticar el rendimiento de una extensión | Microsoft Docs'
+description: Visual Studio notifica a los usuarios de extensiones lentas. Obtenga información sobre cómo se calcula el impacto de la extensión y cómo se puede analizar el impacto de la extensión localmente.
+ms.custom: SEO-VS-2020
 ms.date: 11/08/2016
 ms.topic: how-to
 ms.assetid: 46b0a1e3-7e69-47c9-9d8d-a1815d6c3896
@@ -8,12 +10,12 @@ ms.author: bertaygu
 manager: jillfra
 ms.workload:
 - bertaygu
-ms.openlocfilehash: 542d8a6d6d90091aa7a800ef18f847fea6b1a81c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03721f2aedd231dd9d4c4edaadf5eeb3a89389c2
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905904"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994204"
 ---
 # <a name="measuring-extension-impact-in-startup"></a>Medir el impacto de la extensión en el inicio
 
@@ -172,7 +174,7 @@ En el ejemplo anterior, algunas pilas de llamadas interesantes serían:
 
    ![bloquear marcos de llamadas](media/perfview-blocking-call-frames.png)
 
-Una de las otras vistas del seguimiento que serán útiles para determinar el impacto serán las pilas de **carga**de la imagen. Puede aplicar los mismos filtros que se aplican a la vista **pilas de tiempo de subprocesos** y buscar todos los ensamblados cargados debido al código ejecutado por el paquete cargado automáticamente.
+Una de las otras vistas del seguimiento que serán útiles para determinar el impacto serán las pilas de **carga** de la imagen. Puede aplicar los mismos filtros que se aplican a la vista **pilas de tiempo de subprocesos** y buscar todos los ensamblados cargados debido al código ejecutado por el paquete cargado automáticamente.
 
 Es importante minimizar el número de ensamblados cargados en una rutina de inicialización de paquetes, ya que cada ensamblado adicional implicará una e/s de disco adicional, lo que puede ralentizar el inicio considerablemente en máquinas más lentas.
 

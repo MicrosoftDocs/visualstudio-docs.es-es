@@ -1,5 +1,7 @@
 ---
 title: Introducción con la plantilla de Proyecto VSIX | Microsoft Docs
+description: Obtenga información sobre cómo usar la plantilla de Proyecto VSIX para crear una extensión o empaquetar una extensión existente para la implementación.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18ca9672b22120718f63638d8668812d0e42e41f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c6c7c2e12f01b008be6937a8c974f2eea183d594
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905877"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994347"
 ---
 # <a name="get-started-with-the-vsix-project-template"></a>Introducción a la plantilla de proyecto de VSIX
 
@@ -35,15 +37,15 @@ Puede usar la plantilla de Proyecto VSIX para crear una extensión o empaquetar 
 
     2. En el menú **Proyecto**, haga clic en **Exportar plantilla**. Complete los pasos del asistente.
 
-         Se crea un archivo *. zip* en *%userprofile%\My documentos\Visual Studio {version} \My Exported templates \\ *.
+         Se crea un archivo *. zip* en *%userprofile%\My documentos\Visual Studio {version} \My Exported templates \\*.
 
 2. Cree un proyecto VSIX vacío.
 
-     Seleccione **Archivo** > **Nuevo** > **Proyecto**. En el cuadro de búsqueda, escriba "VSIX" y seleccione la versión de **C#** o **Visual Basic** del **Proyecto VSIX**.
+     Seleccione **File (Archivo)**  > **New (Nuevo)**  > **Project (Proyecto)** . En el cuadro de búsqueda, escriba "VSIX" y seleccione la versión de **C#** o **Visual Basic** del **Proyecto VSIX**.
 
 3. Agregue el archivo *. zip* al proyecto. Establezca su propiedad **Copiar en el directorio de salida** en `Copy Always` .
 
-4. En **Explorador de soluciones**, haga doble clic en el archivo *source. Extension. vsixmanifest* para abrirlo en el **Diseñador de manifiestos VSIX**y, a continuación, realice los cambios siguientes:
+4. En **Explorador de soluciones**, haga doble clic en el archivo *source. Extension. vsixmanifest* para abrirlo en el **Diseñador de manifiestos VSIX** y, a continuación, realice los cambios siguientes:
 
     - Establezca el campo **nombre de producto** en **mi plantilla de proyecto**.
 
@@ -83,7 +85,7 @@ Puede usar la plantilla de Proyecto VSIX para crear una extensión o empaquetar 
 
 1. Las carpetas de plantillas se encuentran en los directorios *{ruta de instalación de Visual Studio} \Common7\IDE\ProjectTemplates* y *{ruta de instalación de Visual Studio} \Common7\IDE\ItemTemplates* . Los nombres de las secciones de nivel superior del cuadro de diálogo **nuevo proyecto** no coinciden exactamente con los nombres de las carpetas de plantilla. En qué difieren, use el nombre de la carpeta de plantillas.
 
-    Cambie la extensión de archivo *. vsix* a *. zip*y, a continuación, abra el archivo.
+    Cambie la extensión de archivo *. vsix* a *. zip* y, a continuación, abra el archivo.
 
 2. Cree una nueva carpeta con el mismo nombre que la sección del cuadro de diálogo **nuevo proyecto** en el que debe aparecer la plantilla.
 

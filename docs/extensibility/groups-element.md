@@ -1,5 +1,7 @@
 ---
 title: Elemento Groups | Microsoft Docs
+description: El elemento Groups contiene entradas que definen los grupos de comandos de un VSPackage. En este artículo se incluye un ejemplo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6383c3c7a28f9aa7778fddcbfe36b237d21323f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31b5885ad6e08bd9e22049033d6191c97fdc857b
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711176"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994295"
 ---
 # <a name="groups-element"></a>Elemento Groups
 Contiene entradas que definen los grupos de comandos de un VSPackage.
@@ -62,6 +64,6 @@ Contiene entradas que definen los grupos de comandos de un VSPackage.
 </Groups>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Cómo agrega VSPackages los elementos de la interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md)

@@ -1,5 +1,7 @@
 ---
 title: Exponer propiedades en la ventana Propiedades | Microsoft Docs
+description: Obtenga información sobre las propiedades públicas de un objeto. Los cambios que realice en estas propiedades se reflejarán en el ventana Propiedades.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f84962628ae550676e2c2eeb10c0f3baeca1bb58
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6f2668f8410b6e5f18b23c82202c1d33f8c67b4d
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711827"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994698"
 ---
 # <a name="expose-properties-to-the-properties-window"></a>Exponga propiedades a la ventana Propiedades
 
@@ -25,7 +27,7 @@ En este tutorial se exponen las propiedades públicas de un objeto en la ventana
 
 ## <a name="prerequisites"></a>Prerrequisitos
 
-A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS después. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="expose-properties-to-the-properties-window"></a>Exponga propiedades a la ventana Propiedades
 
@@ -35,7 +37,7 @@ En esta sección, creará una ventana de herramientas personalizada y mostrará 
 
 1. Cada extensión de Visual Studio comienza con un proyecto de implementación de VSIX, que contendrá los recursos de la extensión. Cree un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Proyecto VSIX denominado `MyObjectPropertiesExtension` . Para buscar la plantilla de Proyecto VSIX en el cuadro de diálogo **nuevo proyecto** , busque "VSIX".
 
-2. Agregue una ventana de herramientas agregando una plantilla de elemento de ventana de herramientas personalizada denominada `MyToolWindow` . En el **Explorador de soluciones**, haga clic con el botón secundario en el nodo del proyecto y seleccione **Agregar**  >  **nuevo elemento**. En el **cuadro de diálogo Agregar nuevo elemento**, vaya a la extensibilidad de **elementos de Visual C#**  >  **Extensibility** y seleccione **ventana de herramientas personalizada**. En el campo **nombre** situado en la parte inferior del cuadro de diálogo, cambie el nombre del archivo a *MyToolWindow.CS*. Para obtener más información sobre cómo crear una ventana de herramientas personalizada, vea [crear una extensión con una ventana de herramientas](../extensibility/creating-an-extension-with-a-tool-window.md).
+2. Agregue una ventana de herramientas agregando una plantilla de elemento de ventana de herramientas personalizada denominada `MyToolWindow` . En el **Explorador de soluciones**, haga clic con el botón secundario en el nodo del proyecto y seleccione **Agregar**  >  **nuevo elemento**. En el **cuadro de diálogo Agregar nuevo elemento**, vaya a la extensibilidad de **elementos de Visual C#**  >   y seleccione **ventana de herramientas personalizada**. En el campo **nombre** situado en la parte inferior del cuadro de diálogo, cambie el nombre del archivo a *MyToolWindow.CS*. Para obtener más información sobre cómo crear una ventana de herramientas personalizada, vea [crear una extensión con una ventana de herramientas](../extensibility/creating-an-extension-with-a-tool-window.md).
 
 3. Abra *MyToolWindow.CS* y agregue la siguiente instrucción using:
 
@@ -110,15 +112,15 @@ En esta sección, agregará una ventana de herramientas y expondrá sus propieda
 
 ### <a name="to-expose-tool-window-properties"></a>Para exponer las propiedades de la ventana de herramientas
 
-1. Abra *MyToolWindow.CS*y agregue la propiedad booleana pública isChecked a la `MyToolWindow` clase.
+1. Abra *MyToolWindow.CS* y agregue la propiedad booleana pública isChecked a la `MyToolWindow` clase.
 
     ```csharp
     [Category("My Properties")]
     [Description("MyToolWindowControl properties")]
-    public bool IsChecked
+    public bool IsChecked
     {
         get {
-            if (base.Content == null)  return false;
+            if (base.Content == null)  return false;
             return (bool)(( MyToolWindowControl) base.Content).checkBox.IsChecked;
         }
         set {
@@ -190,14 +192,14 @@ En esta sección, agregará una ventana de herramientas y expondrá sus propieda
 1. Abra *MyToolWindow.CS* y agregue una clase pública denominada `Simple` .
 
     ```csharp
-    public class Simple
+    public class Simple
     {
-        private string someText = "";
+        private string someText = "";
 
         [Category("My Properties")]
         [Description("Simple Properties")]
         [DisplayName("My Text")]
-        public string SomeText
+        public string SomeText
         {
             get { return someText; }
             set { someText = value; }
@@ -272,6 +274,6 @@ En este tutorial, <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer
 
 Las ventanas de herramientas de Visual Studio se conservan entre las sesiones de Visual Studio. Para obtener más información sobre cómo conservar el estado de la ventana de herramientas, vea <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Extender propiedades y la ventana de propiedades](../extensibility/extending-properties-and-the-property-window.md)
