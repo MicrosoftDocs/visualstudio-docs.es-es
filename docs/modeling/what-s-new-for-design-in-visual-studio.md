@@ -1,5 +1,7 @@
 ---
 title: Novedades de diseño en Visual Studio 2017
+description: Obtenga información sobre las nuevas características del diseño de código, como la validación de dependencias dinámicas, que están disponibles en Visual Studio 2017.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +15,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 6f81cc32604abe6d90ac0d263574e97df35c63bd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bf622d9762e86bcb75a08c60085a15abb6fdca91
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "92299510"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360980"
 ---
 # <a name="whats-new-for-design-in-visual-studio-2017"></a>Novedades de diseño en Visual Studio 2017
 

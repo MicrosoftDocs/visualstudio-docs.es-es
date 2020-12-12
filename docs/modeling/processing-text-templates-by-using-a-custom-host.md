@@ -1,5 +1,7 @@
 ---
 title: Procesar las plantillas de texto mediante un host personalizado
+description: Obtenga información sobre que el proceso de transformación de plantillas de texto toma un archivo de plantilla de texto como entrada y genera un archivo de texto como salida.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f7ecd6508df780f570d10b3d615094fae15209d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3dbaa7cf80ba281f085590802127e3ab96776aa6
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591689"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360590"
 ---
 # <a name="process-text-templates-by-using-a-custom-host"></a>Procesar plantillas de texto mediante un host personalizado
 
@@ -29,7 +31,7 @@ El proceso de *transformación de plantillas de texto* toma un archivo de planti
 >
 > En el caso de las aplicaciones en tiempo de ejecución, considere la posibilidad de usar plantillas de texto preprocesadas: vea [generación de texto en tiempo de ejecución con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
-Si la aplicación utiliza un conjunto de plantillas que se corrigen en tiempo de compilación, resulta más sencillo usar plantillas de texto preprocesadas. También puede usar este enfoque si la aplicación se ejecutará en una máquina en la que Visual Studio no esté instalado. Para obtener más información, vea [generación de texto en tiempo de ejecución con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+Si la aplicación utiliza un conjunto de plantillas que se corrigen en tiempo de compilación, resulta más sencillo usar plantillas de texto preprocesadas. También puede usar este enfoque si la aplicación se ejecutará en una máquina en la que Visual Studio no esté instalado. Para obtener más información, vea [Generación de texto en tiempo de ejecución con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
 ## <a name="execute-a-text-template-in-your-application"></a>Ejecución de una plantilla de texto en la aplicación
 
@@ -48,7 +50,7 @@ string output = engine.ProcessTemplate(templateString, host);
 
  El host debe poder registrar errores, resolver referencias a archivos de ensamblado e inclusión, proporciona un dominio de aplicación en el que se pueda ejecutar la plantilla, y llamar el procesador adecuado para cada directiva.
 
- <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> se define en **Microsoft. VisualStudio. TextTemplating. \*.0.dll**y [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) se define en **Microsoft. visualstudio. TextTemplating. interfaces. \*.0.dll**.
+ <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> se define en **Microsoft. VisualStudio. TextTemplating. \*.0.dll** y [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) se define en **Microsoft. visualstudio. TextTemplating. interfaces. \*.0.dll**.
 
 ## <a name="in-this-section"></a>En esta sección
  [Tutorial: crear un host de plantilla de texto personalizado](../modeling/walkthrough-creating-a-custom-text-template-host.md) Muestra cómo crear un host de plantilla de texto personalizado que hace que la funcionalidad de la plantilla de texto esté disponible fuera de Visual Studio.

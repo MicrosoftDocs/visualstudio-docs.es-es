@@ -1,5 +1,7 @@
 ---
 title: Acerca de los lenguajes específicos de dominio
+description: Obtenga información sobre cómo un lenguaje específico de dominio (DSL) está diseñado para expresar instrucciones en un determinado espacio de problemas o dominio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bfd073b07902e3c0a9e33dfe9ae50d4947a50ef2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7a1e9b1f853ad540f65101bffabea922f8fdcef1
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75597274"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360897"
 ---
 # <a name="about-domain-specific-languages"></a>Acerca de los lenguajes específicos de dominio
 
@@ -54,11 +56,11 @@ Normalmente, se crea un lenguaje específico del dominio cuando un equipo de des
 
 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] permite crear un lenguaje específico de dominio que tenga su propio diseñador gráfico y su propia notación de diagrama y, a continuación, utilizar el lenguaje para generar el código fuente adecuado para cada proyecto.
 
-## <a name="domain-specific-development"></a>Desarrollo específico del dominio
+## <a name="domain-specific-development"></a>Desarrollo de Domain-Specific
 
 El desarrollo específico del dominio es el proceso de identificar las partes de las aplicaciones que se pueden modelar con un lenguaje específico del dominio y, a continuación, construir el lenguaje e implementarlo en los desarrolladores de aplicaciones. Los desarrolladores usan el lenguaje específico de dominio para construir modelos que son específicos de sus aplicaciones, usar los modelos para generar código fuente y, a continuación, usar el código fuente para desarrollar las aplicaciones.
 
-## <a name="aspects-of-graphical-domain-specific-development"></a>Aspectos del desarrollo gráfico específico del dominio
+## <a name="aspects-of-graphical-domain-specific-development"></a>Aspectos del desarrollo de Domain-Specific gráfico
 
 Un lenguaje gráfico específico del dominio debe incluir las siguientes características:
 
@@ -94,7 +96,7 @@ Dado [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] que se hospeda en Visual St
 
 También puede crear un adaptador de bus de modelo para su lenguaje específico de dominio. Este adaptador le permite hacer referencia a un modelo y a los elementos de un modelo, y le permite escribir código que puede tener acceso a una instancia de DSL y actualizarla. Mediante el potente mecanismo de bus de modelo, puede escribir extensiones de Visual Studio que funcionen con varios modelos. También puede escribir aplicaciones independientes que funcionen con modelos. Para obtener más información, vea [integrar modelos mediante Modelbus de Visual Studio](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
 
-## <a name="benefits-of-domain-specific-development"></a>Ventajas del desarrollo específico del dominio
+## <a name="benefits-of-domain-specific-development"></a>Ventajas del desarrollo de Domain-Specific
 
 Un lenguaje específico de dominio puede proporcionar las siguientes ventajas:
 
@@ -110,7 +112,7 @@ Un lenguaje específico de dominio puede proporcionar las siguientes ventajas:
 
      Los desarrolladores pueden usar el código que su modelo genera para crear una aplicación prototipo que se puede mostrar a los clientes.
 
-## <a name="the-process-of-domain-specific-development"></a>El proceso de desarrollo específico del dominio
+## <a name="the-process-of-domain-specific-development"></a>Proceso de desarrollo de Domain-Specific
 
 La mayoría de los equipos de desarrollo de software que usan lenguajes específicos de dominio siguen estos pasos para crear y usar sus modelos:
 

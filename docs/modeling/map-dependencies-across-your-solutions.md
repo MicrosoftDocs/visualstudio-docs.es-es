@@ -1,5 +1,7 @@
 ---
 title: Mapas de código
+description: Obtenga información sobre cómo los mapas de código le ayudan a ver cómo encaja el código sin necesidad de leer archivos y líneas de código.
+ms.custom: SEO-VS-2020
 ms.date: 05/16/2018
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 771a6ccf4749a3464204d3da75f4d403d1ab2dd5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 39b34bb124d663d81769c6d3086d6b36803d60eb
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532722"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362241"
 ---
 # <a name="map-dependencies-with-code-maps"></a>Asignación de dependencias con mapas de código
 
@@ -43,7 +45,7 @@ Las dependencias de código se pueden asignar en los siguientes lenguajes:
 - Proyectos y ensamblados de X++ creados desde módulos de .NET para Microsoft Dynamics AX
 
 > [!NOTE]
-> En el caso de los proyectos que no sean de C# o Visual Basic, hay menos opciones para iniciar un mapa de código o agregar elementos a un mapa de código existente. Por ejemplo, no podrá hacer clic con el botón secundario en un objeto en el editor de texto de un proyecto de C++ y agregarlo a un mapa de código. Sin embargo, puede arrastrar y colocar elementos de código individuales o archivos de **Explorador de soluciones**, **vista de clases**y **Examinador de objetos**.
+> En el caso de los proyectos que no sean de C# o Visual Basic, hay menos opciones para iniciar un mapa de código o agregar elementos a un mapa de código existente. Por ejemplo, no podrá hacer clic con el botón secundario en un objeto en el editor de texto de un proyecto de C++ y agregarlo a un mapa de código. Sin embargo, puede arrastrar y colocar elementos de código individuales o archivos de **Explorador de soluciones**, **vista de clases** y **Examinador de objetos**.
 
 ## <a name="install-code-map-and-live-dependency-validation"></a>Instalación del mapa de código y la validación de dependencias dinámicas
 
@@ -94,7 +96,7 @@ Para ver todas las dependencias de la solución:
 
    ![Gráfico de dependencias de ensamblados de nivel superior](../modeling/media/dependencygraph_toplevelassemblies.png)
 
-   Esta solución de ejemplo contiene carpetas de solución (**Pruebas** y **Componentes**), proyectos de prueba, proyectos web y ensamblados. De forma predeterminada, todas las relaciones de contención aparecen como *grupos*que se pueden expandir y contraer. El grupo **Externos** contiene cualquier elemento que esté fuera de la solución, incluidas las dependencias de plataforma. En los ensamblados externos solo se muestran los elementos que están en uso. De forma predeterminada, los tipos base del sistema están ocultos en el mapa para reducir la acumulación de elementos.
+   Esta solución de ejemplo contiene carpetas de solución (**Pruebas** y **Componentes**), proyectos de prueba, proyectos web y ensamblados. De forma predeterminada, todas las relaciones de contención aparecen como *grupos* que se pueden expandir y contraer. El grupo **Externos** contiene cualquier elemento que esté fuera de la solución, incluidas las dependencias de plataforma. En los ensamblados externos solo se muestran los elementos que están en uso. De forma predeterminada, los tipos base del sistema están ocultos en el mapa para reducir la acumulación de elementos.
 
 3. Para profundizar en el mapa, expanda los grupos que representan proyectos y ensamblados. Puede expandir todo si presiona **CTRL+A** para seleccionar todos los nodos y, después, elige **Grupo**, **Expandir** en el menú contextual.
 
@@ -164,7 +166,7 @@ Supongamos que tiene una revisión de código para realizar en algunos archivos 
 
 1. En la barra de herramientas **Explorador de soluciones** , elija **Mostrar en mapa de código** ![ crear nuevo gráfico a partir de los nodos seleccionados ](../modeling/media/createnewgraphfromselectedbutton.gif) . O bien, abra el menú contextual de uno o un grupo de elementos y elija **Mostrar en mapa de código**.
 
-   También puede arrastrar elementos de **Explorador de soluciones**, **vista de clases**o **Examinador de objetos**a un mapa de código [nuevo](#add-a-code-map) o existente. Para incluir la jerarquía primaria de los elementos, mantenga presionada la tecla **Ctrl** mientras arrastra los elementos, o bien use el botón **incluir elementos primarios** de la barra de herramientas del mapa de código para especificar la acción predeterminada. También puede arrastrar archivos de ensamblado desde fuera de Visual Studio, como desde el **Explorador de Windows**.
+   También puede arrastrar elementos de **Explorador de soluciones**, **vista de clases** o **Examinador de objetos** a un mapa de código [nuevo](#add-a-code-map) o existente. Para incluir la jerarquía primaria de los elementos, mantenga presionada la tecla **Ctrl** mientras arrastra los elementos, o bien use el botón **incluir elementos primarios** de la barra de herramientas del mapa de código para especificar la acción predeterminada. También puede arrastrar archivos de ensamblado desde fuera de Visual Studio, como desde el **Explorador de Windows**.
 
    > [!NOTE]
    > Cuando se agregan elementos de un proyecto que se comparte entre varias aplicaciones, como Windows Phone o Microsoft Store, esos elementos aparecen en el mapa con el proyecto de aplicación activo actualmente. Si cambia el contexto a otro proyecto de aplicación y agrega más elementos del proyecto compartido, dichos elementos aparecerán ahora con el nuevo proyecto de aplicación activo. Las operaciones que se realizan con un elemento en el mapa solo se aplican a los elementos que comparten el mismo contexto.
@@ -177,7 +179,7 @@ Supongamos que tiene una revisión de código para realizar en algunos archivos 
 
    ![Expandir un nodo en un mapa de código](../modeling/media/dependencygraph_containment.png)
 
-   Para expandir todos los elementos, selecciónelos mediante **Ctrl** + **a**, abra el menú contextual del mapa y elija **Group**  >  **expandir**grupo. Sin embargo, esta opción no está disponible si el hecho de expandir todos los grupos genera un mapa que no se puede usar o problemas de memoria.
+   Para expandir todos los elementos, selecciónelos mediante **Ctrl** + **a**, abra el menú contextual del mapa y elija   >  **expandir** grupo. Sin embargo, esta opción no está disponible si el hecho de expandir todos los grupos genera un mapa que no se puede usar o problemas de memoria.
 
 5. Continúe expandiendo los elementos que le interesen hasta el nivel de clase y miembro, si es necesario.
 
@@ -236,9 +238,9 @@ Supongamos que tiene una revisión de código para realizar en algunos archivos 
 
    ![Utilice el panel Filtro para simplificar la presentación](../modeling/media/almcodemapfilterpane.png)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 
-- [Vídeo: Descripción del diseño desde el código con mapas de código de Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)
+- [Vídeo: Descripción del diseño de código con mapas de código de Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)
 - [Usar mapas de código para depurar aplicaciones](../modeling/use-code-maps-to-debug-your-applications.md)
 - [Asignar métodos en la pila de llamadas durante la depuración](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
 - [Buscar posibles problemas mediante analizadores de mapas de código](../modeling/find-potential-problems-using-code-map-analyzers.md)

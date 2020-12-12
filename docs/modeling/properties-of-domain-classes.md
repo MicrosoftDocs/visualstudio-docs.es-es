@@ -1,5 +1,7 @@
 ---
 title: Propiedades de las clases de dominio
+description: Obtenga información sobre las distintas propiedades de las clases de dominio, como el modificador de acceso, los atributos personalizados y la generación de Double derived.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,15 +11,15 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b3ff1ece9e57239b49c5dcbef5091a14d8b0fa5
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: fd36973a9c355dcaec32b6da4149e6efd88282da
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810033"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360798"
 ---
 # <a name="properties-of-domain-classes"></a>Propiedades de las clases de dominio
-Las clases de dominio tienen las propiedades de la tabla siguiente. Para obtener información sobre las clases de dominio, vea Descripción de los [modelos, las clases y las relaciones](../modeling/understanding-models-classes-and-relationships.md). Para obtener más información sobre cómo usar estas propiedades, vea [personalizar y extender un lenguaje específico de dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).
+Las clases de dominio tienen las propiedades de la tabla siguiente. Para obtener información sobre las clases de dominio, vea Descripción de los [modelos, las clases y las relaciones](../modeling/understanding-models-classes-and-relationships.md). Para obtener más información sobre cómo usar estas propiedades, vea [personalizar y extender un lenguaje Domain-Specific](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
 |Propiedad.|Descripción|Default|
 |-|-|-|
@@ -27,13 +29,13 @@ Las clases de dominio tienen las propiedades de la tabla siguiente. Para obtener
 |Tiene un constructor personalizado|Si `True` es, se proporcionará un constructor personalizado en el código fuente. Para obtener más información, vea [invalidación y extensión de las clases generadas](../modeling/overriding-and-extending-the-generated-classes.md).|`False`|
 |Inheritance (modificador)|Describe el tipo de herencia de la clase de código fuente que se genera a partir de la clase de dominio ( `none` , `abstract` o `sealed` ).|`none`|
 |Clase base|Si se deriva esta clase de dominio, el nombre de la clase base.|\<none>|
-|NOMBRE|Nombre de esta clase de dominio.|Nombre actual|
+|Nombre|Nombre de esta clase de dominio.|Nombre actual|
 |Espacio de nombres|Espacio de nombres de esta clase de dominio.|Espacio de nombres actual|
 |Notas|Notas informales asociadas a esta clase de dominio.|\<none>|
 |Descripción|La descripción que se usa para documentar la interfaz de usuario del diseñador generado.|\<none>|
-|Display Name (Nombre para mostrar)|Nombre que se mostrará en el diseñador generado para esta clase de dominio.|\<none>|
+|Nombre para mostrar|Nombre que se mostrará en el diseñador generado para esta clase de dominio.|\<none>|
 |Help Keyword|Palabra clave opcional que se usa para indizar la ayuda de F1 para esta clase de dominio.|\<none>|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 
 - [Glosario de las Herramientas del lenguaje específico de dominio](/previous-versions/bb126564(v=vs.100))

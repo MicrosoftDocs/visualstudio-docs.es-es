@@ -1,5 +1,7 @@
 ---
 title: Invocar la transformación de texto en una extensión de VS
+description: Obtenga información acerca de cómo puede usar el servicio de plantillas de texto para transformar las plantillas de texto. Obtenga también información sobre cómo obtener el servicio STextTemplating y convertirlo en ITextTemplating.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ab846d1d7121d0c36c4187d937330d2ade52eb1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 40e781e08bba5e01b5e453e4545b5dd19e5a4d16
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594596"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360876"
 ---
 # <a name="invoke-text-transformation-in-a-visual-studio-extension"></a>Invocar la transformación de texto en una extensión de Visual Studio
 
@@ -138,7 +140,7 @@ Puede pasar valores de una plantilla de texto mediante una clase de parámetro q
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-Para generar texto desde una plantilla de texto preprocesada: llame al `TransformText()` método de la clase generada. Para obtener más información, vea [generación de texto en tiempo de ejecución con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+Para generar texto desde una plantilla de texto preprocesada: llame al `TransformText()` método de la clase generada. Para obtener más información, vea [Generación de texto en tiempo de ejecución con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
 Para generar texto fuera de una extensión de Visual Studio: defina un host personalizado. Para obtener más información, consulte [procesar plantillas de texto mediante un host personalizado](../modeling/processing-text-templates-by-using-a-custom-host.md).
 

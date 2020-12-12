@@ -1,5 +1,7 @@
 ---
 title: Usar mapas de código para depurar aplicaciones
+description: Aprenda a usar mapas de código para ayudarle a evitar la pérdida de grandes bases de código, código desconocido o código heredado.
+ms.custom: SEO-VS-2020
 ms.date: 09/28/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e01857878f927c619529d3bbfc63728f84f0b81d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7af24dbbb510fb1d5c9c62b40d5986ea5c74d35b
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594115"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361656"
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>Usar mapas de código para depurar aplicaciones
 
@@ -36,7 +38,7 @@ Para obtener detalles de los comandos y las acciones que se pueden usar al traba
 > [!NOTE]
 > Para crear y editar mapas de código, necesita Visual Studio Enterprise Edition. En las ediciones Community y Professional de Visual Studio, puede abrir los diagramas que se generaron en Enterprise Edition, pero no puede editarlos.
 
-## <a name="understand-the-problem"></a>Entender el problema
+## <a name="understand-the-problem"></a>Comprender el problema
  Supongamos que hay un error en un programa de dibujo en el que está trabajando. Para reproducir el error, abra la solución en Visual Studio y presione **F5** para iniciar la depuración.
 
  Cuando dibuje una línea y elija **Deshacer mi último trazo**, no ocurrirá nada hasta que dibuje la línea siguiente.
@@ -140,7 +142,7 @@ Para obtener detalles de los comandos y las acciones que se pueden usar al traba
 
  Ahora ya ha terminado con la investigación. Encontró y corrigió correctamente el problema asignando el código. También tiene un mapa que le ayuda a navegar por el código y a recordar lo que ha aprendido, y le muestra los pasos llevados a cabo para corregir el problema.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 
 - [Asignar métodos en la pila de llamadas durante la depuración](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
 - [Visualizar el código](../modeling/visualize-code.md)

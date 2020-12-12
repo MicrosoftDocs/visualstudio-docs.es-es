@@ -1,5 +1,7 @@
 ---
 title: Referencia de diagramas de dependencia
+description: Aprenda que en Visual Studio puede usar un diagrama de dependencia para visualizar la arquitectura lógica de alto nivel del sistema.
+ms.custom: SEO-VS-2020
 ms.date: 09/28/2018
 ms.topic: reference
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 774716dff6562b7792c6fa885c40db2a0a133136
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 265bb31dd95aa3a84bdb497a3306278acfd8838e
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594570"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360577"
 ---
 # <a name="dependency-diagrams-reference"></a>Diagramas de dependencia: referencia
 
@@ -96,6 +98,6 @@ El **Explorador de capas** se abre y muestra los artefactos que están vinculado
 |**Admite validación**|Si **es true**, el proceso de validación de capas puede comprobar que el proyecto se ajusta a las dependencias de este elemento o de este.<br /><br /> Si **es false**, el vínculo no participa en el proceso de validación de capas.<br /><br /> Para obtener más información, vea [diagramas de dependencia: instrucciones](../modeling/layer-diagrams-guidelines.md).|
 |**Identificador**|Referencia al artefacto vinculado|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 
 - [Crear modelos para la aplicación](../modeling/create-models-for-your-app.md)

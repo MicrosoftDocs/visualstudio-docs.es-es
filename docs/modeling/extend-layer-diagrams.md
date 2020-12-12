@@ -1,5 +1,7 @@
 ---
 title: Ampliar diagramas de dependencia
+description: Obtenga información sobre cómo escribir código para crear y actualizar diagramas de dependencia, y cómo validar la estructura del código del programa con diagramas de dependencia en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 305c562c7600dc6955ce0307db92f4e257fc1c21
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d78b7005875f0544354c845cd27d187bdbf40d6d
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "92298422"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361630"
 ---
 # <a name="extend-dependency-diagrams"></a>Ampliar diagramas de dependencia
 
@@ -25,7 +27,7 @@ Puede escribir código para crear y actualizar diagramas de dependencia y para v
 
 Necesita tener instalado lo siguiente en el equipo donde desea desarrollar las extensiones de capa:
 
-- Programa para la mejora
+- Visual Studio
 
 - [Visual Studio SDK](../extensibility/visual-studio-sdk.md)
 
@@ -35,7 +37,7 @@ Necesita tener instalado lo siguiente en el equipo donde desea desarrollar las e
 
 Debe tener una edición adecuada de Visual Studio instalada en el equipo en el que desea ejecutar las extensiones de capa. Para ver qué ediciones de Visual Studio admiten diagramas de dependencia, vea [compatibilidad de la edición con las herramientas de arquitectura y modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 
 - [Diagramas de dependencia: referencia](../modeling/layer-diagrams-reference.md)
 - [Diagramas de dependencia: instrucciones](../modeling/layer-diagrams-guidelines.md)

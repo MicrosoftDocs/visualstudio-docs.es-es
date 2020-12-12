@@ -1,5 +1,7 @@
 ---
 title: Los controladores de eventos propagan cambios fuera del modelo
+description: Aprenda que en el SDK de visualización y modelado, puede definir controladores de eventos de almacén para propagar los cambios a los recursos fuera del almacén.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76234eea6c689459728e0da876b6a9cce7c290a5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b0780007361115aa485b91db70cc413029a6f8f
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114592"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361682"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Los controladores de eventos propagan cambios fuera del modelo
 
@@ -184,7 +186,7 @@ Cada tipo de evento corresponde a una colección en Store. EventManagerDirectory
 |TransactionCommitted||
 |TransactionRolledBack||
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 
 - [Responder a los cambios y propagarlos](../modeling/responding-to-and-propagating-changes.md)
 - [Código de ejemplo: diagramas de circuitos](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

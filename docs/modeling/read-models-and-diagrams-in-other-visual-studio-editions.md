@@ -1,5 +1,7 @@
 ---
 title: Leer modelos y diagramas en otras ediciones de Visual Studio
+description: Obtenga información sobre cómo leer modelos y diagramas en Visual Studio, así como el comportamiento de solo lectura cuando se usa una versión de Visual Studio que no admite la creación de modelos.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebe4cdcefb7b823090cca8976055de5a3ebb9b1a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffbf39421f507338d14a6b05a667ec4301375067
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595415"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360694"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Leer modelos y diagramas en otras ediciones de Visual Studio
 
@@ -55,7 +57,7 @@ Si abre un modelo y sus diagramas en una versión de Visual Studio que no es com
 
 Puede guardar estos cambios. Si desea que los cambios sean visibles para otros usuarios, debe enviar al menos los archivos **. layout** actualizados.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 - [Diagramas de dependencia: referencia](../modeling/layer-diagrams-reference.md)
 - [Crear modelos para la aplicación](../modeling/create-models-for-your-app.md)

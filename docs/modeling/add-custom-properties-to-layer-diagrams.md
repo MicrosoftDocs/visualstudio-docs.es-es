@@ -1,5 +1,7 @@
 ---
 title: Agregar propiedades personalizadas a diagramas de dependencia
+description: Obtenga información sobre cómo puede almacenar valores con cualquier elemento de un diagrama de dependencia al escribir código de extensión para diagramas de dependencia.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c68d8a75ca8203a790684506ffd44b3d890648a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d3073a42faf0dcc6fbf586847382ba3a83d88ed4
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546924"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360772"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Agregar propiedades personalizadas a diagramas de dependencia
 
@@ -43,7 +45,7 @@ Si solo desea que el código adjunte valores a cualquier elemento de un diagrama
 >      `devenv /rootSuffix /updateConfiguration`
 >
 >      `devenv /rootSuffix Exp /updateConfiguration`
-> 4. Reinicie Visual Studio.
+> 4. Reinicie Visual Studio.
 
 **Asegurarse de que el código está en un proyecto VSIX**
 
@@ -160,6 +162,6 @@ namespace MyNamespace
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 - [Ampliación de diagramas de dependencia](../modeling/extend-layer-diagrams.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: Generar código mediante plantillas de texto'
+description: Obtenga información sobre la generación de código que le permite generar código de programa fuertemente tipado, pero que se puede cambiar fácilmente cuando cambia el modelo de origen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 181c1ccbeaff0aadee1b3d5ebd255b854b915277
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a39630f8a12ad2c1d7d2bc89f6830fc694e89087
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532065"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360993"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>Tutorial: Generar código mediante plantillas de texto
 
@@ -131,7 +133,7 @@ Una prueba más completa podría comprobar la salida de esta función de prueba 
 
 Agregue un archivo de plantilla de texto y establezca la extensión de salida en *. CS*.
 
-1. En el **Explorador de soluciones**, haga clic con el botón derecho en el proyecto, haga clic en **Agregar**y después en **Nuevo elemento**.
+1. En el **Explorador de soluciones**, haga clic con el botón derecho en el proyecto, haga clic en **Agregar** y después en **Nuevo elemento**.
 
 2. En el cuadro de diálogo **Agregar nuevo elemento** , seleccione **Plantilla de texto** en el panel **Plantillas** .
 
@@ -412,7 +414,7 @@ Para volver a generar las clases cuando se cambie el archivo XML de ejemplo, hag
 
 En este tutorial se muestran varias técnicas y ventajas de la generación de código:
 
-- La*generación de código* es la creación de parte del código fuente de la aplicación a partir de un *modelo*. El modelo contiene información en un formato adecuado para el dominio de aplicación y puede cambiar durante la vigencia de la aplicación.
+- La *generación de código* es la creación de parte del código fuente de la aplicación a partir de un *modelo*. El modelo contiene información en un formato adecuado para el dominio de aplicación y puede cambiar durante la vigencia de la aplicación.
 
 - El tipado fuerte es una de las ventajas de la generación de código. Aunque el modelo representa la información en un formato más adecuado para el usuario, el código generado permite que otras partes de la aplicación traten la información con un conjunto de tipos.
 
@@ -428,7 +430,7 @@ En este tutorial, el código de programa se genera realmente desde una instancia
 
 Si ve errores de compilación o de transformación de la plantilla en la **Lista de errores**, o si el archivo de salida no se genera correctamente, puede solucionar los problemas de la plantilla de texto con las técnicas descritas en [Generar archivos con la utilidad TextTransform](../modeling/generating-files-with-the-texttransform-utility.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 - [Generación de código en tiempo de diseño usando las plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 - [Escribir una plantilla de texto T4](../modeling/writing-a-t4-text-template.md)

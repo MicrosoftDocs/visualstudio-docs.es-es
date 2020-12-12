@@ -1,5 +1,7 @@
 ---
 title: Referencia de API para plantillas de texto T4
+description: Obtenga información sobre cómo la API de plantillas de texto permite invocar y personalizar la transformación de plantillas de texto.
+ms.custom: SEO-VS-20200
 ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56b857770ac793e7df7f75ecee03cb089df1eeb2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 85e2a21002919fcccca40bf481200e368bd16ed5
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75597220"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361045"
 ---
 # <a name="api-reference-for-t4-text-templates"></a>Referencia de API para plantillas de texto T4
 

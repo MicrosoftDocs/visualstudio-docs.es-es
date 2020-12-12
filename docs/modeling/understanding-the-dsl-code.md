@@ -1,5 +1,7 @@
 ---
 title: Introducción al código DSL
+description: Obtenga información acerca de cómo la solución de lenguaje de Domain-Specific (DSL) genera una API que puede usar para leer y actualizar instancias de DSL en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,16 +11,16 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1196faa5831ae44a93f21ab1808915357690a0ac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd739a7780a2a2c858efc14aa72205e9be161900
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565947"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361461"
 ---
 # <a name="understanding-the-dsl-code"></a>Introducción al código DSL
 
-Una solución de lenguaje específico del dominio (DSL) genera una API que se puede usar para leer y actualizar instancias del DSL en Visual Studio. Esta API se define en el código que se genera a partir de la definición de DSL. Este tema describe la API que se genera.
+Una solución de lenguaje Domain-Specific (DSL) genera una API que se puede usar para leer y actualizar instancias del DSL en Visual Studio. Esta API se define en el código que se genera a partir de la definición de DSL. Este tema describe la API que se genera.
 
 ## <a name="the-example-solution-component-diagrams"></a>La solución de ejemplo: diagramas de componentes
 
@@ -66,7 +68,7 @@ Presione **F5** y experimente si no está familiarizado con esta plantilla de so
 
  `ConnectionBuilders.cs`
 
- Un generador de conexiones es una clase que crea relaciones. Es el código que hay detrás de una herramienta de conexión. Este archivo contiene un par de clases para cada herramienta de conexión. Sus nombres se derivan de los nombres de la relación de dominio y la herramienta de conexión: compilador de *relaciones*y *herramientadeconector*ConnectAction.
+ Un generador de conexiones es una clase que crea relaciones. Es el código que hay detrás de una herramienta de conexión. Este archivo contiene un par de clases para cada herramienta de conexión. Sus nombres se derivan de los nombres de la relación de dominio y la herramienta de conexión: compilador de *relaciones* y *herramientadeconector* ConnectAction.
 
  (En la solución de componentes de ejemplo, uno de los generadores de conexiones se llama ConnectionBuilder. Esto es una coincidencia porque la relación de dominio se llama Connection).
 
@@ -102,7 +104,7 @@ Presione **F5** y experimente si no está familiarizado con esta plantilla de so
 
  Este procesador de directivas ayuda a los usuarios a escribir plantillas de texto que leen una instancia de su DSL. El procesador de directivas carga los ensamblados (DLL) de su DSL e inserta instrucciones `using` para su espacio de nombres. Esto permite al código de las plantillas de texto usar las clases y relaciones que ha definido en su DSL.
 
- Para obtener más información, vea [generar código a partir de un lenguaje específico de dominio](../modeling/generating-code-from-a-domain-specific-language.md) y [crear procesadores de directivas de plantilla de texto T4 personalizados](../modeling/creating-custom-t4-text-template-directive-processors.md).
+ Para obtener más información, vea [generar código a partir de un lenguaje Domain-Specific](../modeling/generating-code-from-a-domain-specific-language.md) y [crear procesadores de directivas de plantillas de texto T4 personalizadas](../modeling/creating-custom-t4-text-template-directive-processors.md).
 
  `DomainClasses.cs`
 
@@ -122,7 +124,7 @@ Presione **F5** y experimente si no está familiarizado con esta plantilla de so
 
 - Métodos de controlador de Prototipo de grupo de elementos (EGP). Son necesarios si el usuario puede *combinar* (agregar) otro elemento en las instancias de esta clase. Para hacerlo, normalmente el usuario arrastra desde una herramienta de elemento u otra forma, o realiza una operación de pegar.
 
-   En el DSL de ejemplo, se puede combinar un puerto de entrada o de salida con un componente. Además, se pueden combinar componentes y comentarios en el modelo. Tenga en cuenta que
+   En el DSL de ejemplo, se puede combinar un puerto de entrada o de salida con un componente. Además, se pueden combinar componentes y comentarios en el modelo. A la clase
 
    Los métodos del controlador de EGP en la clase Component permiten a un componente aceptar puertos pero no comentarios. El controlador de EGP en la clase raíz del modelo acepta comentarios y componentes, pero no puertos.
 
@@ -153,7 +155,7 @@ Presione **F5** y experimente si no está familiarizado con esta plantilla de so
 
  En roles de relación en los que se especifica una multiplicidad de 1..1 o 1..*, se debe advertir al usuario de que se necesita al menos una instancia de la relación. Este archivo proporciona restricciones de validación que implementan esas advertencias. El vínculo 1..1 a un primario de incrustación no se comprueba.
 
- Para que se ejecuten estas restricciones, debe haber establecido una de las opciones de **use...** en el nodo **Editor\Validation** del explorador de DSL. Para obtener más información, vea [validación en un lenguaje específico de dominio](../modeling/validation-in-a-domain-specific-language.md).
+ Para que se ejecuten estas restricciones, debe haber establecido una de las opciones de **use...** en el nodo **Editor\Validation** del explorador de DSL. Para obtener más información, vea [validación en un lenguaje Domain-Specific](../modeling/validation-in-a-domain-specific-language.md).
 
  `PropertiesGrid.cs`
 
@@ -344,9 +346,9 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
 
  Este archivo controla cómo se empaqueta el DSL en una extensión de integración de Visual Studio (VSIX). Para obtener más información, vea [Implementación de soluciones de lenguaje específico de dominio](msi-and-vsix-deployment-of-a-dsl.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Cómo definir lenguajes específicos de dominio](../modeling/how-to-define-a-domain-specific-language.md)
 - [Introducción a los modelos, las clases y las relaciones](../modeling/understanding-models-classes-and-relationships.md)
 - [Personalizar y ampliar lenguajes específicos de dominio](../modeling/customizing-and-extending-a-domain-specific-language.md)
-- [Escribir código para personalizar lenguajes específicos de dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+- [Escribir código para personalizar un lenguaje Domain-Specific](../modeling/writing-code-to-customise-a-domain-specific-language.md)

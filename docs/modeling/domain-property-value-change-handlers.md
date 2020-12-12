@@ -1,5 +1,7 @@
 ---
 title: Controladores de los cambios de valor de propiedad de dominio
+description: Obtenga información sobre los controladores de cambio de valor de propiedad de dominio que se pueden usar en un lenguaje específico de dominio de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f23984d6c4723b020b361e1da30363442966ea7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 34f7dcf97498895f841f2a68fd3bc1abac224824
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594713"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361734"
 ---
 # <a name="domain-property-value-change-handlers"></a>Controladores de cambios de valor de propiedad de dominio
 
@@ -22,7 +24,7 @@ En un lenguaje específico de dominio de Visual Studio, cuando cambia el valor d
 
 ## <a name="override-the-property-handler-methods"></a>Invalidar los métodos de control de propiedad
 
-Cada propiedad de dominio de su lenguaje específico de dominio es administrada por una clase que está anidada dentro de su clase de dominio primaria. Su nombre sigue el formato *PropertyName*PropertyHandler. Puede inspeccionar esta clase de controlador de propiedades en el archivo **Dsl\Generated Code\DomainClasses.CS**. En la clase, se llama a `OnValueChanging()` inmediatamente antes de que cambie el valor, y se llama a `OnValueChanged()` inmediatamente después de que cambie el valor.
+Cada propiedad de dominio de su lenguaje específico de dominio es administrada por una clase que está anidada dentro de su clase de dominio primaria. Su nombre sigue el formato *PropertyName* PropertyHandler. Puede inspeccionar esta clase de controlador de propiedades en el archivo **Dsl\Generated Code\DomainClasses.CS**. En la clase, se llama a `OnValueChanging()` inmediatamente antes de que cambie el valor, y se llama a `OnValueChanged()` inmediatamente después de que cambie el valor.
 
 Por ejemplo, supongamos que tiene una clase de dominio denominada `Comment` que tiene una propiedad de dominio de cadena denominada `Text` y una propiedad de entero denominada `TextLengthCount` . Para que `TextLengthCount` siempre contenga la longitud de la `Text` cadena, puede escribir el código siguiente en un archivo independiente en el proyecto DSL:
 

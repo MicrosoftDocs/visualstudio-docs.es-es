@@ -1,5 +1,7 @@
 ---
 title: Acceso a modelos a partir de plantillas de texto
+description: Obtenga información sobre cómo puede usar plantillas de texto para crear archivos de informe, archivos de código fuente y otros archivos de texto basados en modelos de lenguajes específicos de dominio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,19 +11,19 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a66f160d25ccacbdaaaf2238dfc738ade4a4200f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64d937f9a63207e16664bbd9254ae60470caeb41
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85531474"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362293"
 ---
 # <a name="access-models-from-text-templates"></a>Acceder a los modelos desde plantillas de texto
 
 Mediante el uso de plantillas de texto, puede crear archivos de informe, archivos de código fuente y otros archivos de texto basados en modelos de lenguajes específicos de dominio. Para obtener información básica sobre las plantillas de texto, vea [generación de código y plantillas de texto T4](../modeling/code-generation-and-t4-text-templates.md). Las plantillas de texto funcionarán en el modo experimental cuando se depura el DSL y también funcionarán en un equipo en el que se haya implementado el DSL.
 
 > [!NOTE]
-> Cuando se crea una solución DSL, se generan archivos de plantilla de texto de ejemplo ** \* . TT** en el proyecto de depuración. Al cambiar los nombres de las clases de dominio, estas plantillas dejarán de funcionar. No obstante, incluyen las directivas básicas que necesita y proporcionan ejemplos que puede actualizar para que coincidan con el DSL.
+> Cuando se crea una solución DSL, se generan archivos de plantilla de texto de ejemplo **\* . TT** en el proyecto de depuración. Al cambiar los nombres de las clases de dominio, estas plantillas dejarán de funcionar. No obstante, incluyen las directivas básicas que necesita y proporcionan ejemplos que puede actualizar para que coincidan con el DSL.
 
  Para tener acceso a un modelo desde una plantilla de texto:
 

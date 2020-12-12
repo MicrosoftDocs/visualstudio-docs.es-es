@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: Ampliar el diseñador de lenguajes específicos de dominio'
+description: Obtenga información sobre cómo puede crear extensiones para el diseñador que se usa para editar definiciones de lenguajes específicos de dominio (DSL).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa5b3166606312bb74560f207e6e1d0e6065bb2c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a7a48c5a314dd52893bc7f0675915f0d68297ab
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532591"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361513"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Cómo: Ampliar el diseñador de lenguajes específicos de dominio
 
@@ -36,7 +38,7 @@ Configure un proyecto que contenga el código de la extensión y un proyecto VSI
 
 3. Encima del campo de contenido, haga clic en **agregar contenido**.
 
-4. En el cuadro de diálogo **agregar contenido** , establezca **seleccionar un tipo de contenido** en **componente MEF**y establezca **proyecto** en el proyecto de biblioteca de clases.
+4. En el cuadro de diálogo **agregar contenido** , establezca **seleccionar un tipo de contenido** en **componente MEF** y establezca **proyecto** en el proyecto de biblioteca de clases.
 
 5. Haga clic en **seleccionar ediciones** y asegúrese de que **Visual Studio Enterprise** está activada.
 

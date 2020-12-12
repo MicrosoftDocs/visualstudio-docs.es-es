@@ -1,5 +1,7 @@
 ---
 title: Usar secuencias de escape en las plantillas de texto
+description: Obtenga información sobre cómo puede usar secuencias de escape en las plantillas de texto para generar etiquetas de plantilla de texto y caracteres de control de escape y Comillas solo en el código de C#.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83e6e5cf163037077d0517e5f7ea460f9124f27c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b007a9b5ccf41a27cda7d9833064eb60394c4dc
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594050"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361331"
 ---
 # <a name="use-escape-sequences-in-text-templates"></a>Usar secuencias de escape en las plantillas de texto
 
@@ -36,6 +38,6 @@ Si un bloque de texto incluye cadenas usadas para escapar etiquetas de plantilla
 
 - Si \\ aparece un carácter de escape () en cualquier otra secuencia distinta de la que escapa a un carácter de control o a una comilla (solo en C#), el carácter se generará directamente.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 
 - [Cómo: Generar plantillas desde otras plantillas mediante secuencias de escape](../modeling/how-to-generate-templates-from-templates-by-using-escape-sequences.md)

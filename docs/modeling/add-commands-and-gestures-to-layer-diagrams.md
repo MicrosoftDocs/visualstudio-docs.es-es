@@ -1,5 +1,7 @@
 ---
 title: Agregar comandos y gestos a diagramas de dependencia
+description: Obtenga información sobre cómo puede definir los comandos del menú contextual y los controladores de gestos en diagramas de dependencia en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ff23e07bd6e81b11d94a8256c33b57b4b0c558c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc91e2c160d2081db868daf8d8dbaeb041172297
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85531396"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362228"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Agregar comandos y gestos a diagramas de dependencia
 
@@ -28,7 +30,7 @@ Si lo desea, puede definir varios controladores de comandos y gestos en el mismo
 
 ## <a name="requirements"></a>Requisitos
 
-Vea [Requisitos](../modeling/extend-layer-diagrams.md#requirements).
+Vea [requisitos](../modeling/extend-layer-diagrams.md#requirements).
 
 ## <a name="define-a-command-or-gesture-in-a-new-vsix"></a>Definir un comando o gesto en un nuevo VSIX
 
@@ -81,7 +83,7 @@ Si desea crear un VSIX que contenga comandos, validadores de capas y otras exten
 
     2. En **Tipo**, seleccione **Microsoft.VisualStudio.MefComponent**.
 
-    3. En **Origen**seleccione el **proyecto de la solución actual** y seleccione el nombre del proyecto de controlador de comandos o de gestos.
+    3. En **Origen** seleccione el **proyecto de la solución actual** y seleccione el nombre del proyecto de controlador de comandos o de gestos.
 
     4. Guarde el archivo.
 
@@ -261,6 +263,6 @@ Observe los siguientes aspectos sobre los controladores de gestos:
 
 - Ya se han definido los controladores para algunos tipos de elemento arrastrado. Por ejemplo, el usuario puede arrastrar elementos desde Explorador de soluciones hasta un diagrama de dependencia. No puede definir un controlador de arrastre para estos tipos de elemento. En estos casos, no se invocarán los métodos `DragDrop` .
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 
 - [Adición de validación de arquitectura personalizada a diagramas de dependencia](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)

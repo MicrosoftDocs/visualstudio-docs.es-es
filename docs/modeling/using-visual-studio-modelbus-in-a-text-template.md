@@ -1,5 +1,6 @@
 ---
 title: Usar ModelBus en una plantilla de texto
+description: Obtenga información sobre cómo resolver referencias para obtener acceso a los modelos de destino si escribe plantillas de texto que lean un modelo que contenga referencias Visual Studio ModelBus.
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +8,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22a6c9cb035637347ffd501b5cf3b1038cd09369
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1025e7d35c20dc18c87942e23cf71b598d85637a
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535946"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361370"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Usar ModelBus de Visual Studio en plantillas de texto
 
@@ -41,7 +42,7 @@ Para resolver una referencia de ModelBus en una plantilla de texto, el DSL de de
 
     3. En el cuadro de diálogo, seleccione **deseo exponer este DSL a ModelBus**. Puede seleccionar ambas opciones si quiere que este DSL exponga sus modelos y consuma referencias a otros DSL.
 
-    4. Haga clic en **OK**. Se agrega un nuevo proyecto "ModelBusAdapter" a la solución de DSL.
+    4. Haga clic en **Aceptar**. Se agrega un nuevo proyecto "ModelBusAdapter" a la solución de DSL.
 
     5. Haga clic en **transformar todas las plantillas**.
 
@@ -53,7 +54,7 @@ Para resolver una referencia de ModelBus en una plantilla de texto, el DSL de de
 
     2. Cambie el nombre del archivo de proyecto (por ejemplo, a **T4ModelBusAdapter. csproj**).
 
-    3. En **Explorador de soluciones**, haga clic con el botón secundario en el nodo de la solución, seleccione **Agregar**y, a continuación, haga clic en **proyecto existente**. Busque el nuevo proyecto de adaptador, **T4ModelBusAdapter. csproj**.
+    3. En **Explorador de soluciones**, haga clic con el botón secundario en el nodo de la solución, seleccione **Agregar** y, a continuación, haga clic en **proyecto existente**. Busque el nuevo proyecto de adaptador, **T4ModelBusAdapter. csproj**.
 
     4. En cada `*.tt` archivo del nuevo proyecto, cambie el espacio de nombres.
 
@@ -181,7 +182,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
    Si no ve **Habilitar Modelbus**, descargue e instale la extensión de VMSDK Modelbus.
 
-3. En el cuadro de diálogo **Habilitar Modelbus** , seleccione **exponer este DSL a Modelbus**y, a continuación, haga clic en **Aceptar**.
+3. En el cuadro de diálogo **Habilitar Modelbus** , seleccione **exponer este DSL a Modelbus** y, a continuación, haga clic en **Aceptar**.
 
     Un nuevo proyecto, `ModelBusAdapter` , se agrega a la solución.
 
@@ -195,7 +196,7 @@ Ahora tiene un DSL al que se puede tener acceso a través de plantillas de texto
 
     Cambie el nombre del archivo de proyecto *T4ModelBusAdapter. csproj*.
 
-2. En Explorador de soluciones, agregue T4ModelBusAdapter a la solución MBProvider. Haga clic con el botón secundario en el nodo de la solución, seleccione **Agregar**y, a continuación, haga clic en **proyecto existente**.
+2. En Explorador de soluciones, agregue T4ModelBusAdapter a la solución MBProvider. Haga clic con el botón secundario en el nodo de la solución, seleccione **Agregar** y, a continuación, haga clic en **proyecto existente**.
 
 3. Haga clic con el botón secundario en el nodo del proyecto T4ModelBusAdapter y, a continuación, haga clic en propiedades. En la ventana Propiedades del proyecto, cambie el **nombre de ensamblado** y el **espacio de nombres predeterminado** a `Company.MBProvider.T4ModelBusAdapters` .
 
@@ -285,7 +286,7 @@ Ahora tiene un DSL al que se puede tener acceso a través de plantillas de texto
 
 2. Agregue una copia del ejemplo. proporcione al proyecto **MBConsumer\Debugging** . Esto es necesario porque una referencia de ModelBus debe hacer referencia a un archivo en la misma solución.
 
-   1. Haga clic con el botón secundario en el proyecto de depuración, elija **Agregar**y, a continuación, haga clic en **elemento existente**.
+   1. Haga clic con el botón secundario en el proyecto de depuración, elija **Agregar** y, a continuación, haga clic en **elemento existente**.
 
    2. En el cuadro de diálogo **Agregar elemento** , establezca el filtro en **todos los archivos ( \* . \* )**.
 
@@ -396,7 +397,7 @@ Ahora tiene un DSL al que se puede tener acceso a través de plantillas de texto
 
     Si ha establecido el MBR en ese elemento, se abre el modelo al que se hace referencia y se selecciona el elemento al que se hace referencia.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 
 - [Integrar modelos mediante Modelbus de Visual Studio](../modeling/integrating-models-by-using-visual-studio-modelbus.md)
 - [Generación de código y plantillas de texto T4](../modeling/code-generation-and-t4-text-templates.md)

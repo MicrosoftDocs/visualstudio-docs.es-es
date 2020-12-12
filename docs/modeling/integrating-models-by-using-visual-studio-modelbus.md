@@ -1,5 +1,7 @@
 ---
 title: Integración de modelos mediante Modelbus
+description: Aprenda que Visual Studio ModelBus proporciona un método para crear vínculos entre modelos y otras herramientas en modelos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a222d5f69d19d2891b4aa20239c1874f55a056e0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 46705c7a614cd67d81c9e55c03e937f72c29a2fe
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536947"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360733"
 ---
 # <a name="integrate-models-by-using-visual-studio-modelbus"></a>Integrar modelos mediante Modelbus de Visual Studio
 
@@ -40,7 +42,7 @@ Para obtener información y ejemplos de código, vea:
 
 2. En el cuadro de diálogo, elija **deseo exponer este DSL a ModelBus**. Puede elegir ambas opciones si quiere que este DSL exponga sus modelos y use referencias a otros DSL.
 
-3. Haga clic en **OK**. Se agrega un nuevo proyecto "ModelBusAdapter" a la solución de DSL.
+3. Haga clic en **Aceptar**. Se agrega un nuevo proyecto "ModelBusAdapter" a la solución de DSL.
 
 4. Si quiere acceder al DSL desde una plantilla de texto, debe modificar AdapterManager.tt en el nuevo proyecto. Omita este paso si quiere acceder al DSL desde otro código, como comandos y controladores de eventos. Para obtener más información, vea [usar Visual Studio ModelBus en una plantilla de texto](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
 
@@ -70,7 +72,7 @@ Para asegurarse de que se conservan los identificadores de elemento:
 
 1. Abra DslDefinition.dsl.
 
-2. En el explorador de DSL, expanda **comportamiento de serialización XML**y, a continuación, **datos de clase**.
+2. En el explorador de DSL, expanda **comportamiento de serialización XML** y, a continuación, **datos de clase**.
 
 3. Para cada clase para la que quiera crear referencias de ModelBus:
 
@@ -126,7 +128,7 @@ Para que un DSL pueda usar referencias a otro DSL, primero debe convertirlo en u
 
 4. Si eligió hacer referencia a un elemento en un modelo, puede agregar una lista de tipos que el usuario puede seleccionar, por ejemplo, Company.FamilyTree.Person.
 
-5. Haga clic en **Aceptar**y, a continuación, haga clic en **transformar todas las plantillas** en la barra de herramientas **Explorador de soluciones** .
+5. Haga clic en **Aceptar** y, a continuación, haga clic en **transformar todas las plantillas** en la barra de herramientas **Explorador de soluciones** .
 
     > [!WARNING]
     > Si no ha seleccionado un modelo o entidad válidos, el botón Aceptar no tendrá efecto aunque aparezca habilitado.
@@ -199,7 +201,7 @@ Para crear una referencia de modelo, acceda al AdapterManager del DSL expuesto y
 Desde el AdapterManager, puede obtener un Adapter, que proporciona acceso a los elementos individuales del modelo.
 
 > [!NOTE]
-> Cuando haya terminado con un Adapter, deséchelo. La manera más conveniente de hacerlo es con una instrucción `using`. Esto se ilustra en el siguiente ejemplo.
+> Cuando haya terminado con un Adapter, deséchelo. La manera más conveniente de hacerlo es con una instrucción `using`. Esto se ilustra en el siguiente ejemplo:
 
 ```csharp
 // The file path of a model instance of the FamilyTree DSL:
@@ -303,7 +305,7 @@ using (FamilyTreeAdapter adapter =
 
 1. El DSL al que quiere acceder debe tener un adaptador de ModelBus que se haya configurado para que las plantillas de texto puedan acceder. Para obtener más información, consulte [proporcionar acceso a un DSL](#provide).
 
-2. Normalmente, se accederá a un DSL de destino usando una MBR almacenada en un DSL de origen. Por lo tanto, la plantilla incluye la directiva del DSL de origen, además del código para resolver la MBR. Para obtener más información acerca de las plantillas de texto, vea [generar código a partir de un lenguaje específico de dominio](../modeling/generating-code-from-a-domain-specific-language.md).
+2. Normalmente, se accederá a un DSL de destino usando una MBR almacenada en un DSL de origen. Por lo tanto, la plantilla incluye la directiva del DSL de origen, además del código para resolver la MBR. Para obtener más información acerca de las plantillas de texto, vea [generar código a partir de un lenguaje Domain-Specific](../modeling/generating-code-from-a-domain-specific-language.md).
 
    ```
    <#@ template debug="true" hostspecific="true"
@@ -480,7 +482,7 @@ La siguiente información no es esencial, pero podría resultar útil si hace un
 
 La extensión ModelBus realiza los siguientes cambios en su solución de DSL.
 
-Al hacer clic con el botón derecho en el diagrama de definición de DSL, haga clic en **Habilitar Modelbus**y seleccione **habilitar este DSL para usar Modelbus**:
+Al hacer clic con el botón derecho en el diagrama de definición de DSL, haga clic en **Habilitar Modelbus** y seleccione **habilitar este DSL para usar Modelbus**:
 
 - En el proyecto DSL, se agrega una referencia a **Microsoft.VisualStudio.Modeling.Sdk.Integration.11.0.dll**
 
@@ -506,7 +508,7 @@ Cuando establezca el tipo de una propiedad de dominio en ModelBusReference y, a 
     ("Choose a model file", "Target model|*.target")]
   ```
 
-Al hacer clic con el botón derecho en el diagrama de definición de DSL, haga clic en **Habilitar ModelBus**y seleccione **exponer este DSL a ModelBus**:
+Al hacer clic con el botón derecho en el diagrama de definición de DSL, haga clic en **Habilitar ModelBus** y seleccione **exponer este DSL a ModelBus**:
 
 - Se agrega un proyecto `ModelBusAdapter` a la solución.
 
@@ -514,7 +516,7 @@ Al hacer clic con el botón derecho en el diagrama de definición de DSL, haga c
 
 - En **DslPackage\source.extention.TT**, `|ModelBusAdapter|` se agrega como componente MEF.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 
 - [Cómo: Abrir un modelo desde un archivo en el código del programa](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 - [Cómo: Agregar un controlador para arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md)

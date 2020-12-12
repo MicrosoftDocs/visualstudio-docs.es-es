@@ -1,5 +1,7 @@
 ---
 title: Trabajar con el Explorador de lenguajes específicos de dominio
+description: Obtenga información sobre el explorador de DSL, una herramienta que muestra varios tipos de información en una vista de árbol e incluye varios nodos para definir un lenguaje específico de dominio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,15 +11,15 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 971114a95fa43dbbcda985587d08f03ac3c7fd72
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 0bb08f7d6dc6ea41c64cfc9aeb6898eac4df0ae5
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810788"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360928"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>Trabajar con el Explorador de lenguajes específicos de dominio
-El **Explorador de DSL** muestra varios tipos de información en una vista de árbol. Para obtener más información sobre la mayoría de los elementos del explorador de DSL, consulte [cómo definir un lenguaje específico de dominio](../modeling/how-to-define-a-domain-specific-language.md).
+El **Explorador de DSL** muestra varios tipos de información en una vista de árbol. Para obtener más información sobre la mayoría de los elementos del explorador de DSL, consulte [definición de un lenguaje Domain-Specific](../modeling/how-to-define-a-domain-specific-language.md).
 
  Tiene los siguientes nodos:
 
@@ -33,7 +35,7 @@ El **Explorador de DSL** muestra varios tipos de información en una vista de á
 
 - **Tipos de dominio**. Una lista de los tipos integrados y externos que se usan en el modelo.
 
-- **Editor**. Una lista de pestañas del **cuadro de herramientas** y los elementos que contienen, así como la configuración de validación para el modelo. Para obtener más información sobre la validación, vea [validación en un lenguaje específico de dominio](../modeling/validation-in-a-domain-specific-language.md).
+- **Editor**. Una lista de pestañas del **cuadro de herramientas** y los elementos que contienen, así como la configuración de validación para el modelo. Para obtener más información sobre la validación, consulte [validación en un lenguaje Domain-Specific](../modeling/validation-in-a-domain-specific-language.md).
 
 - **Comportamiento del explorador**. Opciones de configuración que especifican el comportamiento del explorador en el diseñador generado. Para obtener más información sobre cómo personalizar el explorador, vea [personalizar el explorador de modelos](../modeling/customizing-the-model-explorer.md).
 
@@ -41,6 +43,6 @@ El **Explorador de DSL** muestra varios tipos de información en una vista de á
 
 - **Comportamiento de serialización XML**. Configuración de la serialización del modelo. Para obtener más información sobre la serialización, vea [personalizar File Storage y serialización XML](../modeling/customizing-file-storage-and-xml-serialization.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 
 - [Glosario de las Herramientas del lenguaje específico de dominio](/previous-versions/bb126564(v=vs.100))

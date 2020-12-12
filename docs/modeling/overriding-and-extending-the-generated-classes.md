@@ -1,5 +1,7 @@
 ---
 title: Invalidar y ampliar clases generadas
+description: Obtenga información acerca de cómo su definición de DSL es una plataforma en la que puede crear un eficaz conjunto de herramientas basadas en un lenguaje específico de dominio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3374f67f4fba11543e3dbbca47fef621dd2e714
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c1b36a7524530df7f9a18ce9abe1de2d430156d6
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595896"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362098"
 ---
 # <a name="override-and-extend-the-generated-classes"></a>Invalidar y extender las clases generadas
 
@@ -46,7 +48,7 @@ public partial class Book
 
 Para detectar qué métodos puede invalidar, escriba **override** en la clase, seguido de un espacio. La información sobre herramientas de IntelliSense le indicará qué métodos se pueden invalidar.
 
-### <a name="double-derived-classes"></a>Clases derivadas de Double
+### <a name="double-derived-classes"></a>Clases de Double-Derived
 
 La mayoría de los métodos de las clases generadas se heredan de un conjunto fijo de clases en los espacios de nombres de modelado. Sin embargo, algunos métodos se definen en el código generado. Normalmente, esto significa que no se pueden invalidar. no se puede invalidar en una clase parcial los métodos que se definen en otra definición parcial de la misma clase.
 

@@ -1,5 +1,7 @@
 ---
 title: Buscar posibles problemas mediante analizadores de mapas de código
+description: Obtenga información sobre cómo puede ejecutar analizadores en mapas de código para ayudarle a identificar código que podría ser demasiado complejo o que pudiera necesitar mejorar.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd20d3c40a4fbe80ac1578275ccd8614eb018d7a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0f31aeb933150f31f4ef9d6a3fbe695dcb5ef174
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596598"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362191"
 ---
 # <a name="find-potential-problems-using-code-map-analyzers"></a>Buscar posibles problemas mediante analizadores de mapas de código
 
@@ -32,7 +34,7 @@ Ejecute analizadores en mapas de código para identificar código demasiado comp
 
 ## <a name="analyze-code-maps"></a>Analizar mapas de código
 
-En la barra de herramientas del **Layout**mapa, elija  >  **analizadores**de diseño y, a continuación, el analizador que desea ejecutar:
+En la barra de herramientas del mapa, elija  >  **analizadores** de diseño y, a continuación, el analizador que desea ejecutar:
 
 |**Analyzer**|**Para identificar nodos que**|
 |-|-|
@@ -40,7 +42,7 @@ En la barra de herramientas del **Layout**mapa, elija  >  **analizadores**de dis
 |**Buscar analizador de concentradores**|Se encuentran entre el 25 % de los nodos con mayor número de conexiones.<br /><br /> **Para ocultar el resto de nodos del mapa**<br /><br /> -Abra el menú contextual del mapa, elija **Opciones avanzadas**, **Seleccione**, **ocultar no seleccionada**.<br />     El mapa oculta los nodos no seleccionados y el analizador identifica los nuevos nodos como concentradores.|
 |**Analizador de nodos a los que no se hace referencia**|No tienen referencias de otros nodos. **PRECAUCIÓN:**  Compruebe cada uno de estos casos antes de asumir que no se usa el código. Ciertas dependencias, como las dependencias XAML y las dependencias de tiempo de ejecución, no se encuentran de forma estática en el código.|
 
-Los analizadores de mapa de código continuarán ejecutándose después de aplicarlos. Si cambia el mapa, los analizadores aplicados volverán a procesar automáticamente el mapa actualizado. Para detener la ejecución de un analizador, en la barra de **Layout**herramientas del mapa, elija  >  **analizadores**de diseño. Desactive el analizador seleccionado.
+Los analizadores de mapa de código continuarán ejecutándose después de aplicarlos. Si cambia el mapa, los analizadores aplicados volverán a procesar automáticamente el mapa actualizado. Para detener la ejecución de un analizador, en la barra de herramientas del mapa, elija  >  **analizadores** de diseño. Desactive el analizador seleccionado.
 
 > [!TIP]
 > Si tiene un mapa muy grade y ejecuta el analizador, podría producirse una excepción de memoria. Si esto ocurre, edite el mapa para reducir su ámbito o genere uno más pequeño y, después, ejecute el analizador.

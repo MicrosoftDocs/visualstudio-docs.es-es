@@ -1,5 +1,7 @@
 ---
 title: Requisitos del usuario de modelos
+description: Obtenga información sobre cómo Visual Studio le ayuda a entender, analizar y comunicar las necesidades de los usuarios mediante el dibujo de diagramas sobre sus actividades.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c09e45250ad95d50d5d2cd0ca2753a70bb95748
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 40418b2d188ac5482a12dd4ffdddd221bf5d2f97
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590246"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361969"
 ---
 # <a name="model-user-requirements"></a>Requisitos del usuario de modelos
 
@@ -64,7 +66,7 @@ Muchas reglas de negocio son restricciones en las relaciones entre las clases co
 
 ![Regla en comentario adjunto a una clase de pedido.](../modeling/media/uml_reqmcd2.png)
 
-Las*reglas de negocio dinámicas* restringen las secuencias de eventos permitidas. Por ejemplo, puede usar un diagrama de secuencia o actividades para mostrar que un usuario debe iniciar sesión antes de realizar otras operaciones en el sistema.
+Las *reglas de negocio dinámicas* restringen las secuencias de eventos permitidas. Por ejemplo, puede usar un diagrama de secuencia o actividades para mostrar que un usuario debe iniciar sesión antes de realizar otras operaciones en el sistema.
 
 Pero muchas reglas dinámicas se pueden aplicar de una forma más eficaz y genérica al reemplazarlas por reglas estáticas. Por ejemplo, puede agregar un atributo booleano "Logged In" a una clase en el modelo de clases conceptuales. Agregaría "Logged In" como condición posterior del caso de uso de inicio de sesión y lo agregaría como condición previa de la mayoría de los demás casos de uso. Este enfoque le permite evitar definir todas las combinaciones de secuencias de eventos posibles. También es más flexible cuando necesita agregar nuevos casos de uso al modelo.
 
@@ -96,7 +98,7 @@ Si un restaurante elimina un elemento del menú mientras un cliente pide un men�
 
 Vea [modelar la arquitectura de la aplicación](../modeling/model-your-app-s-architecture.md) para obtener información sobre cómo desarrollar código que cumpla los requisitos de calidad de servicio.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 
 - [Usar modelos en el proceso de desarrollo](../modeling/use-models-in-your-development-process.md)
 - [Modelar la arquitectura de la aplicación](../modeling/model-your-app-s-architecture.md)

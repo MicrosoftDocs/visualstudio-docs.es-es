@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: Crear un procesador de directivas personalizadas'
+description: Obtenga información sobre cómo puede usar Visual Studio para escribir procesadores de directivas personalizados para personalizar las plantillas de texto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 4efe12b9871dc07bd7427e1567973701d3c6c527
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: efe32db6f8d5aadb815d845bdc9f06be36ec06c9
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532241"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361890"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>Tutorial: Crear un procesador de directivas personalizadas
 
@@ -607,7 +609,7 @@ End Property
 
 ### <a name="build-the-project"></a>Compilar el proyecto
 
-Compile el proyecto. En el menú **Compilar**, haga clic en **Compilar solución**.
+Compile el proyecto. En el menú **Compilar** , haga clic en **Compilar solución**.
 
 ## <a name="register-the-directive-processor"></a>Registrar el procesador de directivas
 
@@ -637,9 +639,9 @@ En esta sección, agregará una clave para el procesador de directivas personali
 
 1. Ejecute el `regedit` comando mediante el menú Inicio o la línea de comandos.
 
-2. Vaya a la ubicación **HKEY_LOCAL_MACHINE \software\microsoft\visualstudio. \\ \* 0 \ TextTemplating\DirectiveProcessors**y haga clic en el nodo.
+2. Vaya a la ubicación **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio. \\ \* 0 \ TextTemplating\DirectiveProcessors** y haga clic en el nodo.
 
-   En los sistemas de 64 bits, use **HKEY_LOCAL_MACHINE \software\wow6432node\microsoft\visualstudio \\ \* . 0 \ TextTemplating\DirectiveProcessors**
+   En los sistemas de 64 bits, use **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\\ \* . 0 \ TextTemplating\DirectiveProcessors**
 
 3. Agregue una nueva clave con el nombre CustomDirectiveProcessor.
 
@@ -668,7 +670,7 @@ En esta sección, agregará una clave para el procesador de directivas personali
    | Clase | REG_SZ | CustomDP.CustomDirectiveProcessor |
    | Ensamblado | REG_SZ | CustomDP.dll |
 
-6. Reinicie Visual Studio.
+6. Reinicie Visual Studio.
 
 ## <a name="test-the-directive-processor"></a>Probar el procesador de directivas
 

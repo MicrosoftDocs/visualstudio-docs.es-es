@@ -1,5 +1,7 @@
 ---
 title: Propiedades de las propiedades de dominio
+description: Obtenga información sobre cómo una propiedad de dominio es una característica de un elemento de modelo que puede contener un valor y cómo se enumeran las propiedades de dominio en el cuadro clase de dominio del diagrama.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,15 +11,15 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d5ecb87fa23dbf2705eb1df39e3e19e1b2bf578
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 97bfbcf73a950692d5736b7a6e0b529cfe658caa
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810020"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361526"
 ---
 # <a name="properties-of-domain-properties"></a>Propiedades de las propiedades de dominio
-Una *propiedad de dominio* es una característica de un elemento de modelo que puede contener un valor. Por ejemplo, la clase de dominio `Person` podría tener las propiedades `Name` y `BirthDate`. En la definición de DSL, las propiedades de dominio se enumeran en el cuadro de clases de dominio en el diagrama, y en la clase de dominio en DSL Explorer (Explorador de DSL). Para obtener más información, consulte [cómo definir un lenguaje específico de dominio](../modeling/how-to-define-a-domain-specific-language.md).
+Una *propiedad de dominio* es una característica de un elemento de modelo que puede contener un valor. Por ejemplo, la clase de dominio `Person` podría tener las propiedades `Name` y `BirthDate`. En la definición de DSL, las propiedades de dominio se enumeran en el cuadro de clases de dominio en el diagrama, y en la clase de dominio en DSL Explorer (Explorador de DSL). Para obtener más información, consulte [definición de un lenguaje Domain-Specific](../modeling/how-to-define-a-domain-specific-language.md).
 
 > [!NOTE]
 > La palabra "propiedad" tiene dos usos. Una *propiedad de dominio* es una característica que se define en una clase de dominio. Por el contrario, muchos elementos de un DSL tienen *propiedades*, que se muestran en la ventana **propiedades** de la definición de DSL. Por ejemplo, todas las propiedades de dominio tienen un conjunto de características, que se describen en este tema.
@@ -30,7 +32,7 @@ Una *propiedad de dominio* es una característica de un elemento de modelo que p
 
 - Las transacciones ayudan a evitar estados incoherentes. Para obtener más información, vea [navegar y actualizar un modelo en el código del programa](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
-  Cuando selecciona una propiedad de dominio en un diagrama o en DSL Explorer (Explorador de DSL), puede ver los siguientes elementos en la ventana Properties (Propiedades). Para obtener más información sobre cómo usar estos elementos, vea [personalizar y extender un lenguaje específico de dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).
+  Cuando selecciona una propiedad de dominio en un diagrama o en DSL Explorer (Explorador de DSL), puede ver los siguientes elementos en la ventana Properties (Propiedades). Para obtener más información sobre cómo usar estos elementos, vea [personalizar y extender un lenguaje Domain-Specific](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
 |Propiedad.|Descripción|Valor predeterminado|
 |-|-|-|
@@ -48,6 +50,6 @@ Una *propiedad de dominio* es una característica de un elemento de modelo que p
 |**Setter Access Modifier**|Modificador de acceso del establecedor. Controla el ámbito en el cual el código de programa puede establecer la propiedad.|`public`|
 |**Tipo**|El tipo de propiedad. Para agregar a la lista de tipos disponibles, haga clic con el botón secundario en la raíz del DSL en el explorador de DSL y haga clic en **Agregar tipo externo**.|`String`|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 
 - [Glosario de las Herramientas del lenguaje específico de dominio](/previous-versions/bb126564(v=vs.100))
