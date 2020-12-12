@@ -1,5 +1,7 @@
 ---
 title: Controlar la visibilidad de un icono o un objeto Decorator
+description: Obtenga información sobre cómo puede controlar la visibilidad de un icono o un elemento Decorator en función del estado de las propiedades del modelo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,24 +9,24 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d2082f7e26d3e335ed88bbced0f59d6d6c4780c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bdf97cc10543f066665506d3e238386dc39f0d4f
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546654"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363502"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Controlar la visibilidad de un icono o un objeto Decorator
 Un elemento *Decorator* es un icono o una línea de texto que aparece en una forma en un lenguaje específico de dominio (DSL). Puede hacer que el elemento Decorator aparezca y desaparezca en función del estado de las propiedades del modelo. Por ejemplo, en una forma que representa a una persona, puede tener iconos diferentes que aparecen según el sexo de la persona, el número de hijos, etc.
 
 ## <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Controlar la visibilidad de un icono o un elemento Decorator
- En el procedimiento siguiente se supone que ya ha definido una forma y su asignación a una clase de dominio. Para obtener más información, consulte [cómo definir un lenguaje específico de dominio](../modeling/how-to-define-a-domain-specific-language.md).
+ En el procedimiento siguiente se supone que ya ha definido una forma y su asignación a una clase de dominio. Para obtener más información, consulte [definición de un lenguaje Domain-Specific](../modeling/how-to-define-a-domain-specific-language.md).
 
 #### <a name="to-control-the-visibility-of-an-icon-or-text-decorator"></a>Para controlar la visibilidad de un icono o un decorador de texto
 
 1. En el diagrama de definición de DSL, agregue a la clase de forma los iconos o los decoradores de texto que desea que aparezcan.
 
-   1. Haga clic con el botón secundario en la clase de forma, seleccione **Agregar**y, a continuación, haga clic en el tipo de elemento Decorator requerido.
+   1. Haga clic con el botón secundario en la clase de forma, seleccione **Agregar** y, a continuación, haga clic en el tipo de elemento Decorator requerido.
 
    2. Establezca la propiedad **Position** del decorador. Más de un elemento Decorator puede tener la misma posición. Por ejemplo, podría tener iconos para el uso compartido de machos y hembras en la misma posición.
 
@@ -103,7 +105,7 @@ Un elemento *Decorator* es un icono o una línea de texto que aparece en una for
 
 8. Vuelva a generar y ejecutar la solución.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 - [Definir formas y conectores](../modeling/defining-shapes-and-connectors.md)
 - [Establecer una imagen de fondo en un diagrama](../modeling/setting-a-background-image-on-a-diagram.md)

@@ -1,5 +1,7 @@
 ---
 title: Definir una directiva de bloqueo para crear segmentos de solo lectura
+description: Obtenga información acerca de cómo puede definir una directiva para que un programa bloquee parte de un modelo de lenguaje específico del dominio (DSL), o todo, para que se pueda leer pero no cambiar.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0778df98ff5f9665da7220fe40972c9a8f8d8e1d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a76ae38b686e1c77acd9561e9c48fd3444565b0a
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536089"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363203"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definir una directiva de bloqueo para crear segmentos de solo lectura
 La API de inmutabilidad del SDK de visualización y modelado de Visual Studio permite a un programa bloquear parte o todo un modelo de lenguaje específico de dominio (DSL) para que se pueda leer pero no cambiar. Esta opción de solo lectura se puede usar, por ejemplo, para que un usuario pueda pedir a los compañeros que anoten y revisen un modelo DSL, pero que no puedan cambiar el original.
@@ -78,7 +80,7 @@ partition.SetLocks(Locks.Delete);
 |Value|Significado si `IsLocked(Value)` es true|
 |-|-|
 |Ninguno|Sin restricción.|
-|Propiedad|No se pueden cambiar las propiedades de dominio de los elementos. Esto no se aplica a las propiedades generadas por el rol de una clase de dominio en una relación.|
+|Propiedad.|No se pueden cambiar las propiedades de dominio de los elementos. Esto no se aplica a las propiedades generadas por el rol de una clase de dominio en una relación.|
 |Sumar|No se pueden crear nuevos elementos y vínculos en una partición o almacén.<br /><br /> No es aplicable a `ModelElement` .|
 |Mover|No se puede desplazar el elemento entre particiones si `element.IsLocked(Move)` es true o si `targetPartition.IsLocked(Move)` es true.|
 |Eliminar|No se puede eliminar un elemento si este bloqueo se establece en el propio elemento o en cualquiera de los elementos en los que se propagará la eliminación, como elementos y formas incrustados.<br /><br /> Puede utilizar `element.CanDelete()` para detectar si un elemento se puede eliminar.|

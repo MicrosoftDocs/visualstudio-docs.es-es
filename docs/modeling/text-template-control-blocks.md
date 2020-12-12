@@ -1,5 +1,7 @@
 ---
 title: Bloques de control de las plantillas de texto
+description: Obtenga información sobre los bloques de control de plantillas de texto y cómo los bloques de control permiten escribir código en la plantilla de texto para modificar la salida.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef39e82ea1abe95b3bea799545ed7fbf5b766fd3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 11cc289f668a674707c584396998ea7abb9e7ea9
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591793"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363593"
 ---
 # <a name="text-template-control-blocks"></a>Bloques de control de las plantillas de texto
 Bloques de control le permite escribir código en su plantilla de texto para variar el resultado. Hay tres tipos de bloques de control, que se distinguen por los corchetes de apertura:

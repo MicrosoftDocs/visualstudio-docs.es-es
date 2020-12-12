@@ -1,5 +1,7 @@
 ---
 title: Establecer una imagen de fondo en un diagrama
+description: Aprenda que en el SDK de visualización y modelado de Visual Studio, puede establecer la imagen de fondo para un diseñador generado mediante el uso de código personalizado.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7701bf0ba1467b481f6da64d3c2e229be77a7fe7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8f99ce329d4b88037901db2336076bb1d12d411f
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542589"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363788"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Establecer una imagen de fondo en un diagrama
 En el SDK de visualización y modelado de Visual Studio, puede establecer la imagen de fondo para un diseñador generado mediante código personalizado.
@@ -23,7 +25,7 @@ En el SDK de visualización y modelado de Visual Studio, puede establecer la ima
 
 1. Copie el archivo de imagen que quiere usar como fondo del diagrama en el directorio Dsl\Resources para el proyecto actual.
 
-2. En **Explorador de soluciones**, haga clic con el botón secundario en la carpeta Dsl\Resources, seleccione **Agregar**y, a continuación, haga clic en **elemento existente**.
+2. En **Explorador de soluciones**, haga clic con el botón secundario en la carpeta Dsl\Resources, seleccione **Agregar** y, a continuación, haga clic en **elemento existente**.
 
 3. En el cuadro de diálogo **Agregar elemento existente** , vaya a la carpeta Dsl\Resources.
 
@@ -45,11 +47,11 @@ En el SDK de visualización y modelado de Visual Studio, puede establecer la ima
 
 12. En la ventana **Propiedades** , establezca la propiedad `Custom Tool` en `ResXFileCodeGenerator`.
 
-13. En **Explorador de soluciones**, haga clic con el botón secundario en el proyecto DSL, elija **Agregar**y haga clic en **nueva carpeta**.
+13. En **Explorador de soluciones**, haga clic con el botón secundario en el proyecto DSL, elija **Agregar** y haga clic en **nueva carpeta**.
 
 14. Asigne a la carpeta el nombre **Custom**.
 
-15. Haga clic con el botón secundario en la carpeta personalizada, seleccione **Agregar**y haga clic en **nuevo elemento**.
+15. Haga clic con el botón secundario en la carpeta personalizada, seleccione **Agregar** y haga clic en **nuevo elemento**.
 
 16. En el cuadro de diálogo **Agregar nuevo elemento** , en la lista **plantillas** , haga clic en **archivo de código**.
 
@@ -100,7 +102,7 @@ En el SDK de visualización y modelado de Visual Studio, puede establecer la ima
 
      Para obtener más información sobre cómo personalizar el modelo con código de programa, vea [navegar y actualizar un modelo en el código del programa](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 - [Definir formas y conectores](../modeling/defining-shapes-and-connectors.md)
 - [Personalizar campos de texto y de imagen](../modeling/customizing-text-and-image-fields.md)

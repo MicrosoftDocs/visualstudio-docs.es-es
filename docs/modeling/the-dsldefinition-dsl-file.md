@@ -1,5 +1,7 @@
 ---
 title: El archivo DslDefinition.dsl
+description: Obtenga información sobre la estructura del archivo DslDefinition. DSL en el proyecto DSL de una solución DSL tools, que define un lenguaje específico de dominio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 893f39149a9000f3672c5b3043551bcbd53e6b87
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: c5db379447f39ed3d0c2b82aee23c1ac94aad34d
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808960"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362787"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>El archivo DslDefinition.dsl
 
@@ -22,7 +24,7 @@ En este tema se describe la estructura del archivo DslDefinition. DSL en el proy
 
 Por lo general, se usa el *Diseñador de lenguaje específico de dominio* para editar el archivo DslDefinition. DSL. Sin embargo, el formato sin procesar es XML por lo que puede abrir un archivo DslDefinition.dsl en un editor XML. Para fines de depuración y extensión, quizás le resulte útil comprender qué información contiene el archivo y cómo está organizada.
 
-Los ejemplos de este tema se toman de la plantilla de solución Diagrama de componentes. Para ver un ejemplo, cree una solución de lenguaje específico de dominio basada en la plantilla de solución Component Models (Modelos de componentes). Después de crear la solución, el archivo DslDefinition.dsl aparece en el diseñador de lenguaje específico de dominio. Cierre el archivo, haga clic con el botón secundario en **Explorador de soluciones**, seleccione **abrir con**, haga clic en **Editor XML**y, a continuación, haga clic en **Aceptar**.
+Los ejemplos de este tema se toman de la plantilla de solución Diagrama de componentes. Para ver un ejemplo, cree una solución de lenguaje específico de dominio basada en la plantilla de solución Component Models (Modelos de componentes). Después de crear la solución, el archivo DslDefinition.dsl aparece en el diseñador de lenguaje específico de dominio. Cierre el archivo, haga clic con el botón secundario en **Explorador de soluciones**, seleccione **abrir con**, haga clic en **Editor XML** y, a continuación, haga clic en **Aceptar**.
 
 ## <a name="sections-of-the-dsldefinitiondsl-file"></a>Secciones del archivo DslDefinition.dsl
 
@@ -62,7 +64,7 @@ En esta sección se define el modo en que aparece la ventana **Explorador de DSL
 
 En esta sección se define un generador de conexiones para cada herramienta de conector (la herramienta que se usa para crear vínculos entre dos clases cualquiera que se puedan conectar). En esta sección se determina si se puede conectar una clase de origen y una de destino.
 
-### <a name="diagram"></a>Diagram
+### <a name="diagram"></a>Diagrama
 
 En esta sección se define un diagrama y se usa para especificar propiedades, como el color de fondo, y la clase raíz. (La clase raíz es la clase de dominio representada por el diagrama en conjunto). La sección Diagram también contiene elementos ShapeMap y ConnectorMap, que especifican la forma o el conector que representa cada clase o relación de dominio.
 
@@ -267,7 +269,7 @@ Además de los atributos y nodos secundarios de que disponen todas las clases, c
 
 ## <a name="designer-and-toolbox-tabs"></a>Pestañas del diseñador y del cuadro de herramientas
 
-La parte principal de la sección del **Diseñador** del archivo DslDefinition. DSL son los elementos **ToolboxTab** . Un diseñador puede tener varios de estos elementos, cada uno de los cuales representa una sección con una punta en el **cuadro de herramientas**del diseñador generado. Cada elemento **ToolboxTab** puede contener uno o más elementos **ElementTool** , elementos **ConnectionTool** o ambos.
+La parte principal de la sección del **Diseñador** del archivo DslDefinition. DSL son los elementos **ToolboxTab** . Un diseñador puede tener varios de estos elementos, cada uno de los cuales representa una sección con una punta en el **cuadro de herramientas** del diseñador generado. Cada elemento **ToolboxTab** puede contener uno o más elementos **ElementTool** , elementos **ConnectionTool** o ambos.
 
 Las herramientas de elemento pueden crear instancias de una clase de dominio específica. Cuando el usuario arrastra una herramienta de elemento al diagrama, el resultado está determinado por las directivas de combinación de elementos, tal y como se describe en la sección sobre las directivas de combinación de elementos más adelante en este tema.
 
@@ -296,7 +298,7 @@ En este ejemplo, InPort es una subclase de ComponentPort y tiene una relación C
 Cuando se escribe C# para este modelo, puede saltar por un vínculo en un paso usando la propiedad que la relación genera en cada una de las clases con las que se relaciona:
 
 ```
-     InPort port; ...  Component c = port.Component;
+     InPort port; ...  Component c = port.Component;
 ```
 
 Sin embargo, debe hacer ambos saltos explícitamente en la sintaxis de la ruta. Este requisito permite acceder al vínculo intermedio más fácilmente. El código siguiente completa el salto desde el vínculo al Component:
@@ -480,7 +482,7 @@ El archivo DslDefinition.dsl es un archivo serializado conforme a la definición
 
 - **DSL** es el nodo RootClass y la clase del diagrama. DomainClass, DomainRelationship y otros elementos están incrustados en `Dsl`.
 
-- **Classes** es el **RoleElementName** de la relación entre el lenguaje específico del dominio y DomainClass.
+- **Classes** es el **RoleElementName** de la relación entre Domain-Specific Language y DomainClass.
 
 ```xml
 <Dsl Name="CmptDsl5" ...>
@@ -577,7 +579,7 @@ La asignación de conector mínima hace referencia a un conector y a una relaci�
 
 Las asignaciones de conectores también pueden contener asignaciones de elementos Decorator.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 
 - [Glosario de las Herramientas del lenguaje específico de dominio](/previous-versions/bb126564(v=vs.100))
 - [Cómo definir lenguajes específicos de dominio](../modeling/how-to-define-a-domain-specific-language.md)

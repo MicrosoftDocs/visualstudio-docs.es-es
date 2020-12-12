@@ -1,5 +1,7 @@
 ---
 title: Exportar y guardar mapas de código
+description: Obtenga información sobre cómo puede guardar mapas de código como parte de un proyecto de Visual Studio, como una imagen o como un archivo XPS.
+ms.custom: SEO-VS-2020
 ms.date: 05/16/2018
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef7f72010623d20e79a327877a512f0b7352bac5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9898b720e51c2750b67054d1f095200372f426da
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542576"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363775"
 ---
 # <a name="share-code-maps"></a>Compartir mapas de código
 
@@ -22,9 +24,9 @@ Puede guardar los mapas de código como parte de un proyecto de Visual Studio, c
 
 Guarde el mapa desde el menú **Archivo** .
 
-o bien
+O bien
 
-Para guardar el mapa como parte de un proyecto específico, en la barra de herramientas del mapa, elija **compartir**  >  **movimiento \<CodeMapName> . DGML en**y, después, elija el proyecto en el que desea guardar el mapa.
+Para guardar el mapa como parte de un proyecto específico, en la barra de herramientas del mapa, elija **compartir**  >  **movimiento \<CodeMapName> . DGML en** y, después, elija el proyecto en el que desea guardar el mapa.
 
 ![Mover un mapa a otro proyecto](../modeling/media/codemapsmovemapmenu.png)
 
@@ -57,6 +59,6 @@ Al exportar un mapa de código como un archivo XPS, puede verlo en visores XML o
 
 3. Póngale un nombre al mapa de código. Asegúrese de que la casilla **Guardar como tipo** está establecida en **archivos XPS ( \* . XPS)**. Elija **Guardar**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 - [Asignación de dependencias con mapas de código](../modeling/map-dependencies-across-your-solutions.md)

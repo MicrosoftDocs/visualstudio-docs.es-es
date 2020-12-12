@@ -1,5 +1,7 @@
 ---
 title: Comando de menú modificar estándar en DSL
+description: Obtenga información acerca de cómo modificar el comportamiento de algunos de los comandos estándar que se definen automáticamente en DSL.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7236c074bda17023c989c744042db2de4046558
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e04d3d2c5572c0d0b3dbaa25912b7ec59a3bc0fa
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532501"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363892"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Cómo: Modificar comandos de menú estándar en lenguajes específicos de dominio
 
@@ -143,7 +145,7 @@ Los siguientes fragmentos suelen resultar útiles dentro de estos métodos:
 
 Para obtener más información sobre cómo navegar de un elemento a otro y sobre cómo crear objetos y vínculos, vea [navegar y actualizar un modelo en el código del programa](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 - <xref:System.ComponentModel.Design.MenuCommand>
 - [Escribir código para personalizar lenguajes específicos de dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)

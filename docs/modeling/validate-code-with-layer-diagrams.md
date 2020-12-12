@@ -1,5 +1,7 @@
 ---
 title: Validación código con diagramas de dependencia
+description: Sepa que para asegurarse de que el código no entre en conflicto con su diseño, debe validar el código con diagramas de dependencia en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 09/28/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -19,12 +21,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 975fe8eac5657e245027a4811e50bbc93528cfe5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc8b36768cbac4249b964b167988119b5700d5c7
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80759700"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362553"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Validación código con diagramas de dependencia
 
@@ -157,16 +159,16 @@ Durante el proceso de desarrollo, puede que desee suprimir algunos de los confli
 
 #### <a name="create-a-work-item-for-a-validation-error"></a>Crear un elemento de trabajo para un error de validación
 
-- En la ventana de **lista de errores** , haga clic con el botón secundario en el error, seleccione **crear elemento de trabajo**y, a continuación, haga clic en el tipo de elemento de trabajo que desea crear.
+- En la ventana de **lista de errores** , haga clic con el botón secundario en el error, seleccione **crear elemento de trabajo** y, a continuación, haga clic en el tipo de elemento de trabajo que desea crear.
 
 Use estas tareas para administrar los errores de validación en la ventana de **lista de errores** :
 
-|**To**|**Siga estos pasos**|
+|**To**|**Siga estos pasos**:|
 |-|-|
-|Suprimir los errores seleccionados durante la validación|Haga clic con el botón secundario en uno o varios errores seleccionados, seleccione **administrar errores de validación**y, a continuación, haga clic en **suprimir errores**.<br /><br /> Los errores suprimidos aparecen tachados. La próxima vez que ejecute la validación, estos errores no aparecerán.<br /><br /> Se realiza un seguimiento de los errores suprimidos en un archivo. resuppresss para el archivo de diagrama de dependencia correspondiente.|
-|Detener la supresión de los errores seleccionados|Haga clic con el botón secundario en el error o errores suprimidos seleccionados, elija **administrar errores de validación**y, a continuación, haga clic en **detener la supresión de errores**.<br /><br /> La próxima vez que ejecute la validación, los errores suprimidos aparecerán.|
-|Restaurar todos los errores suprimidos en la ventana de **lista de errores**|Haga clic con el botón secundario en cualquier lugar de la ventana de **lista de errores** , seleccione **administrar errores de validación**y, a continuación, haga clic en **Mostrar todos los errores suprimidos**.|
-|Ocultar todos los errores suprimidos en la ventana de **lista de errores**|Haga clic con el botón secundario en cualquier lugar de la ventana de **lista de errores** , seleccione **administrar errores de validación**y, a continuación, haga clic en **ocultar todos los errores suprimidos**.|
+|Suprimir los errores seleccionados durante la validación|Haga clic con el botón secundario en uno o varios errores seleccionados, seleccione **administrar errores de validación** y, a continuación, haga clic en **suprimir errores**.<br /><br /> Los errores suprimidos aparecen tachados. La próxima vez que ejecute la validación, estos errores no aparecerán.<br /><br /> Se realiza un seguimiento de los errores suprimidos en un archivo. resuppresss para el archivo de diagrama de dependencia correspondiente.|
+|Detener la supresión de los errores seleccionados|Haga clic con el botón secundario en el error o errores suprimidos seleccionados, elija **administrar errores de validación** y, a continuación, haga clic en **detener la supresión de errores**.<br /><br /> La próxima vez que ejecute la validación, los errores suprimidos aparecerán.|
+|Restaurar todos los errores suprimidos en la ventana de **lista de errores**|Haga clic con el botón secundario en cualquier lugar de la ventana de **lista de errores** , seleccione **administrar errores de validación** y, a continuación, haga clic en **Mostrar todos los errores suprimidos**.|
+|Ocultar todos los errores suprimidos en la ventana de **lista de errores**|Haga clic con el botón secundario en cualquier lugar de la ventana de **lista de errores** , seleccione **administrar errores de validación** y, a continuación, haga clic en **ocultar todos los errores suprimidos**.|
 
 ## <a name="validate-code-automatically"></a>Validar código automáticamente
 
@@ -200,7 +202,7 @@ Para administrar los errores en la ventana de Lista de errores, vea [resolver er
 
 En la siguiente tabla se describen problemas de validación de capas y su resolución. Estos problemas difieren de los errores que son resultado de conflictos entre el código y el diseño. Para obtener más información sobre estos errores, vea [solucionar problemas de validación de capas](#troubleshoot-layer-validation-issues).
 
-|**Problema**|**Causa posible**|**Resolución**|
+|**Problema**|**Causa posible**|**Solución**|
 |-|-|-|
 |Los errores de validación no se producen como se espera.|La validación no funciona en diagramas de dependencia que se copian desde otros diagramas de dependencia en Explorador de soluciones y que se encuentran en el mismo proyecto de modelado. los diagramas de dependencia que se copian de esta manera contienen las mismas referencias que el diagrama de dependencias original.|Agregue un nuevo diagrama de dependencia al proyecto de modelado.<br /><br /> Copie los elementos del diagrama de dependencias de origen en el nuevo diagrama.|
 
@@ -234,8 +236,8 @@ En la sección siguiente se describe la sintaxis que se usa en estos errores, se
 | DV3001: **falta un vínculo** | La capa '*LayerName*' está vinculada a '*artefacto*' que no se encuentra. ¿Falta una referencia de ensamblado? |
 | DV9001: el **análisis arquitectónico encontró errores internos** | Puede que los resultados no estén completos. Vea el registro detallado de eventos de compilación o la ventana de salida para obtener más información. |
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 
 - [Validación de dependencias dinámicas en Visual Studio](https://devblogs.microsoft.com/devops/live-dependency-validation-in-visual-studio-2017/)
 - [Validar el sistema durante el desarrollo](../modeling/validate-your-system-during-development.md)
-- [Vídeo: validar las dependencias de la arquitectura en tiempo real](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
+- [Vídeo: Validación de las dependencias de la arquitectura en tiempo real](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)

@@ -1,5 +1,7 @@
 ---
 title: Crear procesadores de directivas personalizadas para las plantillas de texto T4
+description: Obtenga información sobre el proceso de transformación de plantillas de texto y cómo crear un procesador de directivas de plantillas de texto T4 personalizado.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c70aa1853701ef671b7057ad698a0fb63334a1ca
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 283f2122c05a91a5e677293f59e3f6e02d43f63a
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75597183"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363436"
 ---
 # <a name="create-custom-t4-text-template-directive-processors"></a>Crear procesadores de directivas personalizadas para las plantillas de texto T4
 
@@ -64,7 +66,7 @@ Después de todas las llamadas a ProcessDirective (), el motor de plantillas lla
 
 - Para obtener más información, vea [Tutorial: crear un procesador de directivas personalizado](../modeling/walkthrough-creating-a-custom-directive-processor.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 - [Implementar un procesador de directivas personalizado](../modeling/deploying-a-custom-directive-processor.md) explica cómo registrar un procesador de directivas personalizado.
 - [Tutorial: crear un procesador de directivas personalizado](../modeling/walkthrough-creating-a-custom-directive-processor.md) describe cómo crear un procesador de directivas personalizado, cómo registrar y probar el procesador de directivas y cómo dar formato al archivo de salida como HTML.

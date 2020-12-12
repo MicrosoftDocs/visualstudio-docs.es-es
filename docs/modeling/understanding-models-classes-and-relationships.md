@@ -1,5 +1,7 @@
 ---
 title: Introducción a los modelos, las clases y las relaciones
+description: Obtenga información acerca de cómo se define un lenguaje específico de dominio (DSL) mediante su archivo de definición de DSL y que la mayor parte del código de programa de la solución DSL se genera a partir de este archivo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08981e4f63c84d19d4086c75fe33a8b19a515ccf
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: d912e98d01448a378acbed79e2278f70f62436e7
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809981"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362696"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Introducción a los modelos, las clases y las relaciones
 Un lenguaje específico de dominio (DSL) se define mediante su archivo de definición de DSL, junto con cualquier código de programa personalizado que pueda escribir. La mayor parte del código de programa de la solución DSL se genera a partir de este archivo.
@@ -77,7 +79,7 @@ Un lenguaje específico de dominio (DSL) se define mediante su archivo de defini
 ## <a name="domain-relationships"></a>Relaciones de dominio
  Los elementos de modelo se pueden vincular mediante relaciones. Los vínculos siempre son binarios; vinculan exactamente dos elementos. Sin embargo, cualquier elemento puede tener muchos vínculos a otros objetos y incluso puede haber más de un vínculo entre el mismo par de elementos.
 
- Del mismo modo que puede definir diferentes clases de elementos, puede definir diferentes clases de vínculos. La clase de un vínculo se denomina *relación de dominio*. Una relación de dominio especifica las clases de elemento a las que se pueden conectar sus instancias. Cada extremo de una relación se denomina *rol*y la relación de dominio define los nombres de los dos roles, así como la propia relación.
+ Del mismo modo que puede definir diferentes clases de elementos, puede definir diferentes clases de vínculos. La clase de un vínculo se denomina *relación de dominio*. Una relación de dominio especifica las clases de elemento a las que se pueden conectar sus instancias. Cada extremo de una relación se denomina *rol* y la relación de dominio define los nombres de los dos roles, así como la propia relación.
 
  Hay dos tipos de relaciones de dominio: incrustar relaciones y relaciones de referencia. En el diagrama de definición de DSL, las relaciones de incrustación tienen líneas sólidas en cada rol y las relaciones de referencia tienen líneas discontinuas.
 
@@ -148,6 +150,6 @@ Un lenguaje específico de dominio (DSL) se define mediante su archivo de defini
 
  Una relación derivada especializa su relación base. Las clases de dominio a las que se vincula deben derivarse o ser iguales que las clases vinculadas por la relación base. Cuando se crea un vínculo de la relación derivada en un modelo, se trata de una instancia de las relaciones derivadas y base. En el código del programa, puede navegar hasta el final opuesto del vínculo mediante las propiedades generadas por la base o por la clase derivada.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 
 - [Glosario de las Herramientas del lenguaje específico de dominio](/previous-versions/bb126564(v=vs.100))

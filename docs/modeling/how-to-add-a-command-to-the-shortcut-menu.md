@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: agregar un comando al menú contextual'
+description: Obtenga información acerca de cómo puede Agregar comandos de menú a un lenguaje específico de dominio (DSL) para que los usuarios puedan realizar tareas específicas de su DSL.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6aac779a3c165d10262c078ff431731d9d248f3a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7dc51de28162471262d8c4bd35ddd09bc156896e
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545722"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363346"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Cómo: agregar un comando al menú contextual
 
@@ -357,7 +359,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 - Asegúrese de que ha desinstalado las versiones anteriores del paquete.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 - [Escribir código para personalizar lenguajes específicos de dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [Cómo: modificar un comando de menú estándar](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)

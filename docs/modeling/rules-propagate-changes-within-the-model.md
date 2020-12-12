@@ -1,5 +1,7 @@
 ---
 title: Las reglas propagan los cambios dentro del modelo
+description: Obtenga información sobre cómo crear una regla de almacén para propagar un cambio de un elemento a otro en el SDK de visualización y modelado (VMSDK).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2050fe0ea2d1a9bb0bf278c13c2beb587412c643
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4ff2273c8c71582c3ef634eeb398b12e29401d0
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542563"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363957"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Las reglas propagan los cambios dentro del modelo
 Puede crear una regla de almacén para propagar un cambio de un elemento a otro en el SDK de visualización y modelado (VMSDK). Cuando se produce un cambio en cualquier elemento del almacén, se programan las reglas para que se ejecuten, normalmente cuando se confirma la transacción más externa. Hay diferentes tipos de reglas para diferentes tipos de eventos, como agregar un elemento o eliminarlo. Puede adjuntar reglas a tipos específicos de elementos, formas o diagramas. Muchas características integradas se definen mediante reglas: por ejemplo, las reglas garantizan que un diagrama se actualice cuando cambie el modelo. Puede personalizar el lenguaje específico de dominio agregando sus propias reglas.
@@ -207,6 +209,6 @@ namespace Company.TaskRuleExample
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 - [Los controladores de eventos propagan cambios fuera del modelo](../modeling/event-handlers-propagate-changes-outside-the-model.md)

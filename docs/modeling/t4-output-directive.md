@@ -1,5 +1,7 @@
 ---
 title: Directiva de salida T4
+description: Aprenda que en las plantillas de texto de Visual Studio, la Directiva de salida se usa para definir la extensión de nombre de archivo y la codificación del archivo transformado.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb1634da6374ad49f1386be4403e72e8edeff2ca
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b9849a326549aa534d9cd558337b825b7e0b8d1f
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591819"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363645"
 ---
 # <a name="t4-output-directive"></a>Directiva de salida T4
 
@@ -24,7 +26,7 @@ En las plantillas de texto de Visual Studio, la `output` Directiva se usa para d
 
  después, Visual Studio generará un archivo denominado **MyTemplate.CS**
 
- La directiva de `output` no es necesaria en una plantilla de texto en tiempo de ejecución (preprocesada), ya que, en su lugar, la aplicación obtiene la cadena generada llamando a `TextTransform()`. Para obtener más información, vea [generación de texto en tiempo de ejecución con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ La directiva de `output` no es necesaria en una plantilla de texto en tiempo de ejecución (preprocesada), ya que, en su lugar, la aplicación obtiene la cadena generada llamando a `TextTransform()`. Para obtener más información, vea [Generación de texto en tiempo de ejecución con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
 ## <a name="using-the-output-directive"></a>Uso de la directiva de salida
 

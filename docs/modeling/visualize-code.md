@@ -1,5 +1,7 @@
 ---
 title: Visualizar el código
+description: Obtenga información sobre cómo puede usar las herramientas de visualización y modelado de Visual Studio para comprender el código existente y describir la aplicación.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9886ea905a4997d5735e4dd2cabbfc4798a5c4c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b522ae21de3d0ea115bc83446f0585e1dc9ab1e7
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535881"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362514"
 ---
 # <a name="visualize-code"></a>Visualizar el código
 
@@ -30,7 +32,7 @@ Puede usar las herramientas de visualización y modelado de Visual Studio para a
 
 Estas herramientas también le ayudan a comunicarse con más facilidad con las personas implicadas en el proyecto.
 
-Para ver qué ediciones de Visual Studio son compatibles con cada característica, vea [compatibilidad de la edición con las herramientas de arquitectura y modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport) .
+Para saber qué ediciones de Visual Studio admiten cada característica, vea [Compatibilidad de ediciones con las herramientas de arquitectura y modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="what-do-you-want-to-do"></a>¿Qué desea hacer?
 
@@ -40,7 +42,7 @@ Para ver qué ediciones de Visual Studio son compatibles con cada característic
 |**Entender las estructuras de clases:**<br /><br /> Visualice la estructura de las clases de un proyecto mediante la creación de diagramas de clases desde el código.|[Cómo: Agregar diagramas de clases a proyectos (Diseñador de clases)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)|
 |**Describir el diseño de alto nivel del sistema y validar el código con este diseño:**<br /><br /> Describa el diseño del sistema de alto nivel y sus dependencias preparadas mediante la creación de diagramas de dependencia. Valide el código con este diseño para asegurarse de que las dependencias del código siguen siendo coherentes con el diseño.|- [Creación de diagramas de dependencia a partir del código](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramas de dependencia: referencia](../modeling/layer-diagrams-reference.md)<br />- [Diagramas de dependencia: directrices](../modeling/layer-diagrams-guidelines.md)<br />- [Validación de código con diagramas de dependencia](../modeling/validate-code-with-layer-diagrams.md)|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 
 - [Escenario: Cambiar el diseño usando modelado y visualización](../modeling/scenario-change-your-design-using-visualization-and-modeling.md)
 - [Analizar y modelar la arquitectura](../modeling/analyze-and-model-your-architecture.md)

@@ -1,5 +1,7 @@
 ---
 title: La validación en los lenguajes específicos de dominio
+description: Obtenga información sobre cómo puede definir restricciones de validación para comprobar que el modelo creado por el usuario es significativo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a37dbb4d9754641b4bcca826ff0ec77c7298d9b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cb9baced0a4cc38ae175146d3f3779c5b9c28dd2
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594011"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362540"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>La validación en los lenguajes específicos de dominio
 Como autor de un lenguaje específico de dominio (DSL), puede definir restricciones de validación para comprobar que el modelo creado por el usuario tiene significado. Por ejemplo, si su DSL permite a los usuarios dibujar un árbol genealógico de personas y antepasados, podría escribir una restricción que garantice que la fecha de nacimiento de los hijos sea posterior a la de los padres.
@@ -144,7 +146,7 @@ public partial class ParentsHaveChildren
 ## <a name="validation-categories"></a>Categorías de validación
  En el atributo <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> se especifica cuándo se debe ejecutar el método de validación.
 
-|Category|Ejecución|
+|Categoría|Ejecución|
 |-|-|
 |<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|Cuando el usuario invoca el comando de menú Validate (Validar).|
 |<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|Cuando se abre el archivo del modelo.|
@@ -193,7 +195,7 @@ if (erroneousLinks.Count < 5) { context.LogError( ... ); }
 
  Si establece que la multiplicidad de un rol de una relación de dominio es 1..* o 1..1, pero el usuario no crea un vínculo de esta relación, aparecerá un mensaje de error de validación.
 
- Por ejemplo, si el DSL tiene clases person y ciudad, y una relación PersonLivesInTown con una relación **1. \\ ** * en el rol de la ciudad, para cada persona que no tenga ninguna ciudad, aparecerá un mensaje de error.
+ Por ejemplo, si el DSL tiene clases person y ciudad, y una relación PersonLivesInTown con una relación **1. \\** _ en el rol de la ciudad, para cada persona que no tenga ninguna ciudad, aparecerá un mensaje de error.
 
 ## <a name="running-validation-from-program-code"></a>Ejecutar la validación desde el código de programa
  Para ejecutar la validación, puede acceder a un controlador de validación o crear uno. Si desea que se muestren los errores al usuario en la ventana de error, use el ValidationController que se adjunta al subcdata del diagrama. Por ejemplo, si está escribiendo un comando de menú, `CurrentDocData.ValidationController` está disponible en la clase de conjunto de comandos:
@@ -233,7 +235,7 @@ if (!validator.Validate(store, ValidationCategories.Save))
 ## <a name="running-validation-when-a-change-occurs"></a>Ejecutar la validación cuando se produce un cambio
  Si quiere asegurarse de que el usuario reciba una advertencia inmediata si el modelo queda invalidado, puede definir un evento de almacén que ejecute la validación. Para obtener más información sobre los eventos de almacenamiento, vea [los controladores de eventos propagan los cambios fuera del modelo](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
- Además del código de validación, agregue un archivo de código personalizado al proyecto de **DslPackage** , con un contenido similar al del ejemplo siguiente. Este código usa el `ValidationController` que está asociado al documento. Este controlador muestra los errores de validación en la lista de errores de Visual Studio.
+ Además del código de validación, agregue un archivo de código personalizado al proyecto _ *DslPackage**, con un contenido similar al siguiente ejemplo. Este código usa el `ValidationController` que está asociado al documento. Este controlador muestra los errores de validación en la lista de errores de Visual Studio.
 
 ```csharp
 using System;
@@ -334,7 +336,7 @@ validationController.ValidateCustom
 > [!WARNING]
 > Asegúrese de que el usuario sabe que el cambio se ha ajustado o revertido. Por ejemplo, use `System.Windows.Forms.MessageBox.Show("message").`.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 
 - [Navegar y actualizar un modelo en el código del programa](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Los controladores de eventos propagan cambios fuera del modelo](../modeling/event-handlers-propagate-changes-outside-the-model.md)

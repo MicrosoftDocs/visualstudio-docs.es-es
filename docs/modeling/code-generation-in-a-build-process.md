@@ -1,5 +1,7 @@
 ---
 title: Generación de código en un proceso de compilación
+description: Obtenga información sobre cómo se puede invocar la transformación de texto como parte del proceso de compilación de una solución de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: af0039fb8c945062bc19fa647b477c40c44d5346
-ms.sourcegitcommit: a876fcc75321f9c30729121cae83f400973f9d9d
+ms.openlocfilehash: 3000a02621f7e2c274522a199cfe499e2335c4c2
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92298203"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363567"
 ---
 # <a name="invoke-text-transformation-in-the-build-process"></a>Invocar la transformación de texto en el proceso de compilación
 
@@ -283,7 +285,7 @@ Ahora puede usar la propiedad del proyecto en directivas de ensamblado e inclusi
 
 Estas directivas obtienen valores de T4parameterValues tanto en hosts de MSBuild y como en hosts de Visual Studio.
 
-## <a name="q--a"></a>Q & A
+## <a name="q--a"></a>Preguntas y respuestas
 
 **¿Por qué sería conveniente transformar las plantillas en el servidor de compilación? Ya he transformado plantillas en Visual Studio antes de proteger el código.**
 
@@ -299,7 +301,7 @@ Si actualiza un archivo incluido u otro archivo leído por la plantilla, Visual 
 
 - [Las plantillas de texto en tiempo de ejecución](../modeling/run-time-text-generation-with-t4-text-templates.md) se transforman en tiempo de ejecución en la aplicación.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 
 ::: moniker range="vs-2017"
 

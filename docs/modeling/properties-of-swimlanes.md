@@ -1,5 +1,7 @@
 ---
 title: Propiedades de las calles
+description: Obtenga información sobre cómo las calles dividen un diagrama en áreas verticales u horizontales, y cómo puede definir otras formas para que se muestren en calles.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,15 +13,15 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ec27b9b4f90b1f3ec75edef6dca01b1ed7b8adf
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: fef3b2115be499197030a4ce7fd49b1dd849de12
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90807851"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363073"
 ---
 # <a name="properties-of-swimlanes"></a>Propiedades de las calles
-Puede Agregar calles a un diagrama. Las calles dividen un diagrama en áreas verticales u horizontales. Puede definir otras formas para que se muestren en calles. Para obtener más información, consulte [cómo definir un lenguaje específico de dominio](../modeling/how-to-define-a-domain-specific-language.md). Para obtener más información sobre cómo usar estas propiedades, vea [personalizar y extender un lenguaje específico de dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).
+Puede Agregar calles a un diagrama. Las calles dividen un diagrama en áreas verticales u horizontales. Puede definir otras formas para que se muestren en calles. Para obtener más información, consulte [definición de un lenguaje Domain-Specific](../modeling/how-to-define-a-domain-specific-language.md). Para obtener más información sobre cómo usar estas propiedades, vea [personalizar y extender un lenguaje Domain-Specific](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
  Las calles tienen las propiedades que se enumeran en la tabla siguiente.
 
@@ -37,7 +39,7 @@ Puede Agregar calles a un diagrama. Las calles dividen un diagrama en áreas ver
 |Tiene un constructor personalizado|Si `True` es, se proporcionará un constructor personalizado en el código fuente. Para obtener más información, vea [invalidación y extensión de las clases generadas](../modeling/overriding-and-extending-the-generated-classes.md).|Falso|
 |Inheritance (modificador)|Describe el tipo de herencia de la clase de código fuente que se genera a partir de la calle ( `none` , `abstract` o `sealed` ).|ninguno|
 |Calle base|La clase base de esta calle.|(ninguno)|
-|NOMBRE|El nombre de esta calle.|Nombre actual|
+|Nombre|El nombre de esta calle.|Nombre actual|
 |Espacio de nombres|El espacio de nombres que está afiliado a esta calle.|Espacio de nombres actual|
 |Tipo de información sobre herramientas|Cómo se define la información sobre herramientas ( `fixed` , `variable` o `none` ). Si `fixed` es, se usa el valor de la `Fixed Tooltip Text` propiedad; si es `variable` , la información sobre herramientas se define en código personalizado.|\<none>|
 |Notas|Notas informales asociadas a esta calle.|\<none>|
@@ -46,10 +48,10 @@ Puede Agregar calles a un diagrama. Las calles dividen un diagrama en áreas ver
 |Ancho inicial|Ancho inicial de esta calle, en pulgadas. Solo se aplica a las calles verticales.|0|
 |Expone el color del texto|Si es `True` , el usuario puede establecer el color de una calle en el diseñador generado. Para establecer esto, haga clic con el botón secundario en la forma calle y haga clic en **Agregar expuesto**.|Falso|
 |Descripción|Se usa para documentar el diseñador generado.|\<none>|
-|Display Name (Nombre para mostrar)|Nombre que se mostrará en el diseñador generado para hacer referencia a esta clase calle.|\<none>|
+|Nombre para mostrar|Nombre que se mostrará en el diseñador generado para hacer referencia a esta clase calle.|\<none>|
 |Texto de información sobre herramientas corregido|Texto que se usa para una información sobre herramientas fija.|\<none>|
 |Help Keyword|Palabra clave que se usa para indizar la ayuda de F1 para esta calle.|\<none>|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 
 - [Glosario de las Herramientas del lenguaje específico de dominio](/previous-versions/bb126564(v=vs.100))

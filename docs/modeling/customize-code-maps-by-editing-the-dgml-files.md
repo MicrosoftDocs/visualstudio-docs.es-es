@@ -1,5 +1,7 @@
 ---
 title: Personalizar mapas de código mediante la edición de los archivos DGML
+description: Obtenga información sobre cómo personalizar un mapa de código editando su archivo de lenguaje de marcado de grafos (. DGML) dirigido.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -20,12 +22,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24afbfcfe31de52ac51329bb67df41cc59dd6f1e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2e9b1126b258e36c0aeffd18b9319b15da2b4639
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547282"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363435"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Personalizar mapas de código mediante la edición de los archivos DGML
 

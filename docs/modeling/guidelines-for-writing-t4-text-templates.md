@@ -1,5 +1,7 @@
 ---
 title: Instrucciones para escribir plantillas de texto T4
+description: Obtenga información sobre las directrices generales que resultan útiles si va a generar código de programa u otros recursos de aplicación en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,20 +9,20 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24c8afd5e34d4957dac3d9f4d5b0e4409ad20895
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f5f7be4ce9b8beb7699844397de3e1fc206d017c
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596546"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363411"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Instrucciones para escribir plantillas de texto T4
 
 Estas directrices generales pueden resultar útiles si va a generar código de programa u otros recursos de aplicación en Visual Studio. No son reglas fijas.
 
-## <a name="guidelines-for-design-time-t4-templates"></a>Instrucciones para plantillas T4 en tiempo de diseño
+## <a name="guidelines-for-design-time-t4-templates"></a>Directrices para Design-Time plantillas T4
 
-Las plantillas T4 en tiempo de diseño son plantillas que generan código en el proyecto de Visual Studio en tiempo de diseño. Para obtener más información, vea [generación de código en tiempo de diseño mediante plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
+Las plantillas T4 en tiempo de diseño son plantillas que generan código en el proyecto de Visual Studio en tiempo de diseño. Para obtener más información, vea [Generación de código en tiempo de diseño mediante plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
 
 Generar aspectos variables de la aplicación.
 
@@ -91,7 +93,7 @@ MyProject
    AnotherClass.cs
 ```
 
-## <a name="guidelines-for-run-time-preprocessed-t4-templates"></a>Instrucciones para plantillas T4 en tiempo de ejecución (preprocesadas)
+## <a name="guidelines-for-run-time-preprocessed-t4-templates"></a>Instrucciones para las plantillas T4 de Run-Time (preprocesadas)
 
 Mueva el material común a las plantillas heredadas.
 
@@ -169,7 +171,7 @@ Sin embargo, para algunos tipos de requisitos empresariales, es importante aclar
 
 También puede diseñar su propio tipo de diagrama como lenguaje específico de dominio (DSL). El código se puede generar a partir de UML y DSL. Para obtener más información, vea [analizar y modelar la arquitectura](../modeling/analyze-and-model-your-architecture.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 
 - [Generación de código en tiempo de diseño usando las plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 - [Generación de texto en tiempo de ejecución con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md)

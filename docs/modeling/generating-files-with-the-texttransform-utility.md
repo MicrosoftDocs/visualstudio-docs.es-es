@@ -1,5 +1,7 @@
 ---
 title: Generar archivos con la utilidad TextTransform
+description: Obtenga información sobre cómo la utilidad TextTransform es una herramienta de línea de comandos que puede usar para transformar una plantilla de texto.
+ms.custom: SEO-VS-2020
 ms.date: 07/26/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ec659bfee9253dfb198c2747e1b5d7fb6b78f2b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d849439f3c7b8af310f1f82fc0af8f086139d12b
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596559"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363918"
 ---
 # <a name="generate-files-with-the-texttransform-utility"></a>Generar archivos con la utilidad TextTransform
 
@@ -70,7 +72,7 @@ TextTransform [<options>] <templateName>
 
 |**Opción**|**Descripción**|
 |-|-|
-|**-out** \<filename>|Archivo en el que se escribe la salida de la transformación.|
+|**-out**\<filename>|Archivo en el que se escribe la salida de la transformación.|
 |**-r**\<assembly>|Ensamblado que se usa para compilar y ejecutar la plantilla de texto.|
 |**-u**\<namespace>|Espacio de nombres que se utiliza para compilar la plantilla.|
 |**-I**\<includedirectory>|Directorio que contiene las plantillas de texto incluidas en la plantilla de texto especificada.|

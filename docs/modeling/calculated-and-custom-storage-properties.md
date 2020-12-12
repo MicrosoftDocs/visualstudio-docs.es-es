@@ -1,5 +1,7 @@
 ---
 title: Propiedades calculadas y de almacenamiento personalizado
+description: Obtenga información acerca de cómo se pueden mostrar al usuario las propiedades de dominio en un lenguaje específico del dominio (DSL) en el diagrama y en el explorador de lenguajes.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52915f0bac2bd172daf909541ecfa86396d90a5d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c50d205745917b3af7de638a17921f4bcdca509
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76115200"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363554"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Propiedades calculadas y de almacenamiento personalizado
 Todas las propiedades de dominio en un lenguaje específico de dominio (DSL) se pueden mostrar al usuario en el diagrama y en el explorador de lenguajes, y se puede tener acceso a ellas mediante el código del programa. Sin embargo, las propiedades se diferencian en la forma en que se almacenan sus valores.
@@ -41,13 +43,13 @@ Todas las propiedades de dominio en un lenguaje específico de dominio (DSL) se 
 
 3. Haga clic en **transformar todas las plantillas** en la barra de herramientas de **Explorador de soluciones**.
 
-4. En el menú **Compilar**, haga clic en **Compilar solución**.
+4. En el menú **Compilar** , haga clic en **Compilar solución**.
 
-     Recibe el mensaje de error siguiente: "*YourClass* no contiene una definición para Get*supropiedad*".
+     Recibe el mensaje de error siguiente: "*YourClass* no contiene una definición para Get *supropiedad*".
 
 5. Haga doble clic en el mensaje de error.
 
-     Se abre Dsl\GeneratedCode\DomainClasses.cs o DomainRelationships.cs. Encima de la llamada al método resaltado, un comentario le pide que proporcione una implementación para Get*supropiedad*().
+     Se abre Dsl\GeneratedCode\DomainClasses.cs o DomainRelationships.cs. Encima de la llamada al método resaltado, un comentario le pide que proporcione una implementación para Get *supropiedad*().
 
     > [!NOTE]
     > Este archivo se genera a partir de DslDefinition. DSL. Si edita este archivo, los cambios se perderán la próxima vez que haga clic en **transformar todas las plantillas**. En su lugar, agregue el método requerido en un archivo independiente.
@@ -107,7 +109,7 @@ void SetAgeValue(int value)
 
  Para obtener más información acerca de las transacciones, vea [navegar y actualizar un modelo en el código del programa](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 
 - [Navegar y actualizar un modelo en el código del programa](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Propiedades de las propiedades de dominio](../modeling/properties-of-domain-properties.md)

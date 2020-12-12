@@ -1,5 +1,7 @@
 ---
 title: Personalizar la creación y el movimiento de los elementos
+description: Obtenga información sobre cómo permitir que un elemento se arrastre en otro, ya sea desde el cuadro de herramientas o en una operación de pegar o mover.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a94f1e3321d846578ea42c69e50d48713ff618fb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 96ef956980b08e688970ad0a00d7d1a0804da7c3
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547269"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363125"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personalizar la creación y el movimiento de los elementos
 
@@ -109,7 +111,7 @@ Los usuarios también pueden pegar elementos en otros elementos.
 
       Puede usar la herramienta de navegación ruta de acceso para crear cada ruta de acceso:
 
-      1. En **procesar combinación creando vínculos en rutas**de acceso, haga clic en **\<add path>** .
+      1. En **procesar combinación creando vínculos en rutas** de acceso, haga clic en **\<add path>** .
 
       2. Haga clic en la flecha desplegable situada a la derecha del elemento de lista. Aparece una vista de árbol.
 
@@ -300,7 +302,7 @@ Puede crear una directiva de combinación hacia delante en la solución modelo d
 
 7. Seleccione **reenviar fusión mediante combinación a otra clase de dominio**.
 
-8. En la lista selección de rutas de acceso, expanda **ComponentPort**, **ComponentHasPorts**y, a continuación, seleccione **componente**.
+8. En la lista selección de rutas de acceso, expanda **ComponentPort**, **ComponentHasPorts** y, a continuación, seleccione **componente**.
 
     La nueva ruta de acceso debe ser similar a esta:
 
@@ -316,7 +318,7 @@ Puede crear una directiva de combinación hacia delante en la solución modelo d
 
      No debe ver el puntero no disponible y debe poder quitar el nuevo **Puerto de entrada** en el existente. Seleccione el nuevo **Puerto de entrada** y arrástrelo hasta otro punto del **componente**.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 
 - [Navegar y actualizar un modelo en el código del programa](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Personalizar las herramientas y el cuadro de herramientas](../modeling/customizing-tools-and-the-toolbox.md)

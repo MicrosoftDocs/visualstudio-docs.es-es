@@ -1,5 +1,7 @@
 ---
 title: Generación de código en tiempo de diseño usando las plantillas de texto T4
+description: Obtenga información sobre cómo las plantillas de texto T4 en tiempo de diseño permiten generar código de programa y otros archivos en el proyecto de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -15,12 +17,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c392862f884fd8082b30cbb673aab116756fdfe
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: 698dde24cb66d27a12a0f8785c8ac97e4cfb0eb0
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426777"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363814"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generación de código en tiempo de diseño usando las plantillas de texto T4
 
@@ -35,7 +37,7 @@ Probablemente ya está familiarizado con la generación de código. Al definir r
 
 Una plantilla de texto contiene una mezcla del texto que se desea generar y el código de programa que genera partes variables del texto. El código de programa permite repetir u omitir condicionalmente partes del texto generado. El texto generado por sí mismo puede ser código de programa que formará parte de la aplicación.
 
-## <a name="create-a-design-time-t4-text-template"></a>Crear una plantilla de texto T4 en tiempo de diseño
+## <a name="create-a-design-time-t4-text-template"></a>Crear una plantilla de texto de Design-Time T4
 
 1. Cree un nuevo proyecto de Visual Studio o abra uno existente.
 
@@ -388,6 +390,6 @@ Consulte [las instrucciones para escribir plantillas de texto T4](../modeling/gu
 |Transforme los datos al formato de un lenguaje específico de dominio.|[Generar código a partir de lenguajes específicos de dominio](../modeling/generating-code-from-a-domain-specific-language.md)|
 |Escriba procesadores de directivas para transformar sus propios orígenes de datos.|[Personalizar la transformación de texto T4](../modeling/customizing-t4-text-transformation.md)|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 - [Instrucciones para escribir plantillas de texto T4](../modeling/guidelines-for-writing-t4-text-templates.md)

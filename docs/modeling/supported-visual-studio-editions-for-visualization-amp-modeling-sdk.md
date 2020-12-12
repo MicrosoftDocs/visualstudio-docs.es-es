@@ -1,5 +1,7 @@
 ---
 title: Ediciones de Visual Studio compatibles con el SDK de visualización y modelado
+description: Obtenga información sobre las ediciones de Visual Studio compatibles con las herramientas de DSL en los entornos de creación e implementación.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 908a224feb9f6ad463ae14812b3a8550bf932e35
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: 714b3d018e2522c9f6acf3b15ffec82a0b5d49ec
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "92298550"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363723"
 ---
 # <a name="supported-visual-studio-editions-for-visualization--modeling-sdk"></a>Ediciones de Visual Studio compatibles con el SDK de visualización y modelado
 
@@ -27,7 +29,7 @@ Para definir un DSL, debe tener instalados los siguientes componentes:
 
 |Producto|Vínculo de descarga|
 |-|-|
-|Programa para la mejora|[http://go.microsoft.com/fwlink/?LinkId=185579](https://visualstudio.microsoft.com/)|
+|Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185579](https://visualstudio.microsoft.com/)|
 |Visual Studio SDK|[http://go.microsoft.com/fwlink/?LinkId=185580](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts&preserve-view=true)|
 |SDK de Visual Studio de visualización y modelado|[http://go.microsoft.com/fwlink/?LinkID=186128](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)|
 

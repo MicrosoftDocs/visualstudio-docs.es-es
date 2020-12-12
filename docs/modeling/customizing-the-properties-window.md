@@ -1,5 +1,7 @@
 ---
 title: Personalizar la ventana Propiedades
+description: Obtenga información sobre cómo personalizar la apariencia y el comportamiento de la ventana Propiedades en el lenguaje específico del dominio (DSL) en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4dac40177c3df2a346039a08cf557b6083ed9fc2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f7d4ac76b8b10fde0c193e3eda73cec611c1441
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85548283"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362881"
 ---
 # <a name="customize-the-properties-window"></a>Personalizar el ventana Propiedades
 
@@ -38,15 +40,15 @@ Cuando se establece el nombre de una propiedad en la definición de DSL, su nomb
 
 Algunas de las características dinámicas de los elementos gráficos se pueden representar o *exponer* como propiedades de dominio. Una característica que se ha expuesto de esta manera la puede actualizar el usuario y se puede actualizar más fácilmente mediante el código del programa.
 
-Haga clic con el botón secundario en una clase de forma en definición de DSL, elija **Agregar exposición**y, a continuación, elija una característica.
+Haga clic con el botón secundario en una clase de forma en definición de DSL, elija **Agregar exposición** y, a continuación, elija una característica.
 
-En las formas puede exponer las propiedades **fillColor**, **OutlineColor**, **textColor**, **OutlineDashStyle**, **OutlineThickness** y **FillGradientMode** . En los conectores, puede exponer las propiedades **color** `,` **textColor**, **DashStyle**y **thickness** . En los diagramas puede exponer las propiedades **fillColor** y **textColor** .
+En las formas puede exponer las propiedades **fillColor**, **OutlineColor**, **textColor**, **OutlineDashStyle**, **OutlineThickness** y **FillGradientMode** . En los conectores, puede exponer las propiedades **color** `,` **textColor**, **DashStyle** y **thickness** . En los diagramas puede exponer las propiedades **fillColor** y **textColor** .
 
 ## <a name="forwarding-display-properties-of-related-elements"></a>Reenvío: mostrar las propiedades de los elementos relacionados
 
 Cuando el usuario del DSL selecciona un elemento de un modelo, las propiedades de ese elemento se muestran en la ventana Propiedades. Sin embargo, también puede mostrar las propiedades de los elementos relacionados especificados. Esto resulta útil si ha definido un grupo de elementos que funcionan conjuntamente. Por ejemplo, podría definir un elemento principal y un elemento de complemento opcional. Si el elemento principal se asigna a una forma y el otro no lo es, resulta útil ver todas sus propiedades como si estuvieran en un elemento.
 
-Este efecto se denomina *reenvío de propiedades*y se produce automáticamente en varios casos. En otros casos, puede lograr el reenvío de propiedades mediante la definición de un descriptor de tipo de dominio.
+Este efecto se denomina *reenvío de propiedades* y se produce automáticamente en varios casos. En otros casos, puede lograr el reenvío de propiedades mediante la definición de un descriptor de tipo de dominio.
 
 ### <a name="default-property-forwarding-cases"></a>Casos de reenvío de propiedades predeterminados
 

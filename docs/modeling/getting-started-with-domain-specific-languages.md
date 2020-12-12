@@ -1,5 +1,7 @@
 ---
 title: Introducción a los lenguajes específicos de dominio
+description: Conozca los conceptos básicos de la definición y el uso de un lenguaje específico de dominio (DSL) creado con el SDK de modelado para Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a4761703610a87818cd1512f96530a0f865faf0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eaab198edae66fc334e854ae1f47dae313dce76b
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238548"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363489"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Introducción a los lenguajes específicos de dominio
 
@@ -23,7 +25,7 @@ En este tema se explican los conceptos básicos de la definición y el uso de un
 
 Si no está familiarizado con los DSL, se recomienda que trabaje en el **laboratorio de herramientas de DSL**, que puede encontrar en este sitio: SDK de [visualización y modelado](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)
 
-## <a name="what-can-you-do-with-a-domain-specific-language"></a>¿Qué puede hacer con un lenguaje específico de dominio?
+## <a name="what-can-you-do-with-a-domain-specific-language"></a>¿Qué puede hacer con un lenguaje Domain-Specific?
 
 Un lenguaje específico de dominio es una notación, normalmente gráfica, que está diseñada para usarse con un fin determinado. Por el contrario, los lenguajes como UML son de uso general. En un DSL, puede definir los tipos de elemento de modelo y sus relaciones, y cómo se presentan en la pantalla.
 
@@ -51,9 +53,9 @@ Para definir un DSL, debe tener instalados los siguientes componentes:
 
 ## <a name="create-a-dsl-solution"></a>Crear una solución DSL
 
-Para crear un nuevo lenguaje específico de dominio, cree una nueva solución de Visual Studio mediante la plantilla de proyecto de lenguaje específico del dominio.
+Para crear un nuevo lenguaje específico de dominio, cree una nueva solución de Visual Studio mediante la plantilla de proyecto de lenguaje de Domain-Specific.
 
-1. En el menú **Archivo** , seleccione **Nuevo**y haga clic en **Proyecto**.
+1. En el menú **Archivo** , seleccione **Nuevo** y haga clic en **Proyecto**.
 
 2. En **tipos de proyecto**, expanda el nodo **otros tipos de proyectos** y haga clic en **extensibilidad**.
 
@@ -61,7 +63,7 @@ Para crear un nuevo lenguaje específico de dominio, cree una nueva solución de
 
      ![Cuadro de diálogo para crear solución DSL](../modeling/media/create_dsldialog.png)
 
-4. En el cuadro **nombre** , escriba **familytree**. Haga clic en **OK**.
+4. En el cuadro **nombre** , escriba **familytree**. Haga clic en **Aceptar**.
 
      Se abre el **Asistente para lenguaje específico de dominio** y muestra una lista de las soluciones DSL de plantilla.
 
@@ -75,7 +77,7 @@ Para crear un nuevo lenguaje específico de dominio, cree una nueva solución de
 
     - Elija una extensión que no esté asociada a ninguna aplicación del equipo o en cualquier equipo en el que desee instalar el DSL. Por ejemplo, **docx** y **htm** serían extensiones de nombre de archivo no aceptables.
 
-    - El asistente le advertirá en caso de que la extensión que haya especificado se esté usando como un DSL. Piense en usar una extensión de nombre de archivo diferente. También puede restablecer la instancia de Visual Studio SDK Experimental para borrar antiguos diseñadores experimentales. Haga clic en **Inicio**, **todos los programas**, **Microsoft Visual Studio SDK de 2010**, **herramientas**y, a continuación, **restablezca la instancia experimental de Microsoft Visual Studio 2010**.
+    - El asistente le advertirá en caso de que la extensión que haya especificado se esté usando como un DSL. Piense en usar una extensión de nombre de archivo diferente. También puede restablecer la instancia de Visual Studio SDK Experimental para borrar antiguos diseñadores experimentales. Haga clic en **Inicio**, **todos los programas**, **Microsoft Visual Studio SDK de 2010**, **herramientas** y, a continuación, **restablezca la instancia experimental de Microsoft Visual Studio 2010**.
 
 7. Inspeccione las demás páginas y, a continuación, haga clic en **Finalizar**.
 
@@ -88,7 +90,7 @@ Ahora, la interfaz de usuario es similar a la imagen siguiente.
 
 ![diseñador dsl](../modeling/media/dsl_designer.png)
 
-Esta solución define un lenguaje específico de dominio. Para obtener más información, vea [información general sobre la interfaz de usuario de herramientas del lenguaje específico de dominio](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).
+Esta solución define un lenguaje específico de dominio. Para obtener más información, vea [información general sobre la interfaz de usuario de herramientas de lenguaje Domain-Specific](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).
 
 ## <a name="the-important-parts-of-the-dsl-solution"></a>Partes importantes de la solución DSL
 
@@ -111,7 +113,7 @@ Puede ejecutar la solución DSL en cuanto la cree. Posteriormente, puede modific
     > [!NOTE]
     > Siempre que cambie *DslDefinition. DSL*, debe hacer clic en **transformar todas las plantillas** antes de recompilar la solución. Este paso se puede automatizar. Para obtener más información, consulte [cómo automatizar la transformación de todas las plantillas](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\)).
 
-2. Presione **F5**o bien, en el menú **Depurar** , haga clic en **Iniciar depuración**.
+2. Presione **F5** o bien, en el menú **Depurar** , haga clic en **Iniciar depuración**.
 
      El DSL se compila y se instala en la instancia experimental de Visual Studio.
 
@@ -121,7 +123,7 @@ Puede ejecutar la solución DSL en cuanto la cree. Posteriormente, puede modific
 
      \- o -
 
-     Haga clic con el botón secundario en el proyecto de depuración, elija **Agregar**y, a continuación, haga clic en **elemento**. En el cuadro de diálogo **Agregar elemento** , seleccione el tipo de archivo de su DSL.
+     Haga clic con el botón secundario en el proyecto de depuración, elija **Agregar** y, a continuación, haga clic en **elemento**. En el cuadro de diálogo **Agregar elemento** , seleccione el tipo de archivo de su DSL.
 
      El archivo de modelo se abre como un diagrama en blanco.
 
@@ -147,11 +149,11 @@ La definición de DSL puede especificar cómo aparece el modelo en un diagrama. 
 
 Puede ver un modelo como un árbol en la vista del **Explorador** mientras edita un modelo. A medida que se agregan formas al diagrama, los elementos del modelo también aparecen en el explorador. Se puede usar el explorador aunque no haya ningún diagrama.
 
-Si no puede ver el explorador en la instancia de depuración de Visual Studio, en el menú **Ver** , seleccione **otras ventanas**y, a continuación, haga clic en *\<Your Language>* **Explorador**.
+Si no puede ver el explorador en la instancia de depuración de Visual Studio, en el menú **Ver** , seleccione **otras ventanas** y, a continuación, haga clic en *\<Your Language>* **Explorador**.
 
 ### <a name="the-api-of-your-dsl"></a>La API de su DSL
 
-El DSL genera una API que le permite leer y actualizar modelos que son instancias de DSL. Una aplicación de la API es generar archivos de texto a partir de un modelo. Para obtener más información, vea [generación de código en tiempo de diseño mediante plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
+El DSL genera una API que le permite leer y actualizar modelos que son instancias de DSL. Una aplicación de la API es generar archivos de texto a partir de un modelo. Para obtener más información, vea [Generación de código en tiempo de diseño mediante plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
 
 En la solución de depuración, abra los archivos de plantilla con la extensión ". TT". En estos ejemplos se muestra cómo puede generar texto a partir de modelos y le permite probar la API de su DSL. Uno de los ejemplos está escrito en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] , el otro en [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] .
 
@@ -180,7 +182,7 @@ Puede agregar cualquier número de archivos de plantilla de texto a un proyecto.
 > [!NOTE]
 > Cuando cambie la definición de DSL, el código de la plantilla de texto de ejemplo no funcionará, a menos que lo actualice.
 
-Para obtener más información, vea [generar código a partir de un lenguaje específico de dominio](../modeling/generating-code-from-a-domain-specific-language.md) y [escribir código para personalizar un lenguaje específico de dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md).
+Para obtener más información, vea [generar código a partir de un lenguaje Domain-Specific](../modeling/generating-code-from-a-domain-specific-language.md) y [escribir código para personalizar un lenguaje Domain-Specific](../modeling/writing-code-to-customise-a-domain-specific-language.md).
 
 ## <a name="customizing-the-dsl"></a>Personalizar el DSL
 
@@ -191,7 +193,7 @@ Si desea modificar la definición de DSL, cierre la instancia experimental y act
 
 Puede crear una amplia variedad de extensiones para el DSL. Los ejemplos siguientes le darán una impresión de las posibilidades.
 
-Después de cada cambio, guarde la definición de DSL, haga clic en **transformar todas las plantillas** en **Explorador de soluciones**y, a continuación, presione **F5** para experimentar con el DSL cambiado.
+Después de cada cambio, guarde la definición de DSL, haga clic en **transformar todas las plantillas** en **Explorador de soluciones** y, a continuación, presione **F5** para experimentar con el DSL cambiado.
 
 ### <a name="rename-the-types-and-tools"></a>Cambiar el nombre de los tipos y las herramientas
 
@@ -199,7 +201,7 @@ Cambiar el nombre de las clases de dominio y las relaciones existentes. Por ejem
 
 #### <a name="to-rename-domain-classes-relationships-and-tools"></a>Para cambiar el nombre de las clases de dominio, las relaciones y las herramientas
 
-1. En el diagrama DslDefinition, cambie el nombre de **ExampleModel** a **FamilyTreeModel**, **ExampleElement** a **Person**, **destinos** a **elementos primarios**y **orígenes** a **elementos secundarios**. Puede hacer clic en cada etiqueta para cambiarla.
+1. En el diagrama DslDefinition, cambie el nombre de **ExampleModel** a **FamilyTreeModel**, **ExampleElement** a **Person**, **destinos** a **elementos primarios** y **orígenes** a **elementos secundarios**. Puede hacer clic en cada etiqueta para cambiarla.
 
      ![Diagrama de definición de DSL &#45; modelo de árbol de familia](../modeling/media/familyt_person.png)
 
@@ -246,7 +248,7 @@ Cambiar el nombre de las clases de dominio y las relaciones existentes. Por ejem
 
 1. Agregue las propiedades.
 
-   1. En el diagrama de definición de DSL, haga clic con el botón secundario en la clase de dominio **Person** , seleccione **Agregar**y, a continuación, haga clic en **propiedad de dominio**.
+   1. En el diagrama de definición de DSL, haga clic con el botón secundario en la clase de dominio **Person** , seleccione **Agregar** y, a continuación, haga clic en **propiedad de dominio**.
 
    2. Escriba una lista de nuevos nombres de propiedad, como **nacimiento** y **muerte**. Presione **entrar** después de cada uno de ellos.
 
@@ -254,7 +256,7 @@ Cambiar el nombre de las clases de dominio y las relaciones existentes. Por ejem
 
    1. Siga la línea gris que se extiende desde la clase de dominio person al otro lado del diagrama. Se trata de una asignación de elemento de diagrama. Vincula la clase de dominio a una clase de forma.
 
-   2. Haga clic con el botón secundario en esta clase de forma, seleccione **Agregar**y, a continuación, haga clic en **Decorator de texto**.
+   2. Haga clic con el botón secundario en esta clase de forma, seleccione **Agregar** y, a continuación, haga clic en **Decorator de texto**.
 
    3. Agregue dos elementos Decorator con nombres como **BirthDecorator** y **DeathDecorator**.
 
@@ -264,7 +266,7 @@ Cambiar el nombre de las clases de dominio y las relaciones existentes. Por ejem
 
 3. Asigne los elementos Decorator a las propiedades.
 
-   1. Abra la ventana DSL Details (Detalles de DSL). Normalmente, se encuentra en una pestaña junto a la ventana de salida. Si no lo ve, en el menú **Ver** , seleccione **otras ventanas**y, a continuación, haga clic en **detalles de DSL**.
+   1. Abra la ventana DSL Details (Detalles de DSL). Normalmente, se encuentra en una pestaña junto a la ventana de salida. Si no lo ve, en el menú **Ver** , seleccione **otras ventanas** y, a continuación, haga clic en **detalles de DSL**.
 
    2. En el diagrama de definición de DSL, haga clic en la línea que conecta la clase de dominio **Person** con la clase Shape.
 
@@ -287,7 +289,7 @@ Cambiar el nombre de las clases de dominio y las relaciones existentes. Por ejem
 
 1. Agregue una clase de dominio y conviértalo en un elemento secundario de la raíz del modelo.
 
-    1. En el diagrama de definición de DSL, haga clic en la herramienta **incrustar relación** , haga clic en la clase raíz **FamilyTreeModel**y, a continuación, haga clic en una parte vacía del diagrama.
+    1. En el diagrama de definición de DSL, haga clic en la herramienta **incrustar relación** , haga clic en la clase raíz **FamilyTreeModel** y, a continuación, haga clic en una parte vacía del diagrama.
 
          Aparece una nueva clase de dominio que está conectada a FamilyTreeModel con una relación de incrustación.
 
@@ -345,11 +347,11 @@ Cambiar el nombre de las clases de dominio y las relaciones existentes. Por ejem
 
     2. Establezca la propiedad nombre de la nueva herramienta.
 
-    3. En la propiedad **ConnectionBuilder** , seleccione el generador que contiene el nombre de la relación persona-ciudad.
+    3. En la propiedad **ConnectionBuilder** , seleccione el generador que contiene el nombre de la relación de Person-Town.
 
     4. Establezca el **icono del cuadro de herramientas**.
 
-8. Guarde la definición de DSL, haga clic en **transformar todas las plantillas**y, a continuación, presione **F5**.
+8. Guarde la definición de DSL, haga clic en **transformar todas las plantillas** y, a continuación, presione **F5**.
 
 9. En la instancia experimental de Visual Studio, abra un archivo de modelo de prueba. Use las nuevas herramientas para crear ciudades y vínculos entre ciudades y persons. Tenga en cuenta que solo puede crear vínculos entre los tipos de elemento correctos.
 
@@ -378,10 +380,10 @@ Cambiar el nombre de las clases de dominio y las relaciones existentes. Por ejem
 
     ```
 
-     Al guardar el archivo *. TT, se creará un archivo subsidiario que contiene la lista de personas y sus residencias. Para obtener más información, vea [generar código a partir de un lenguaje específico de dominio](../modeling/generating-code-from-a-domain-specific-language.md).
+     Al guardar el archivo *. TT, se creará un archivo subsidiario que contiene la lista de personas y sus residencias. Para obtener más información, vea [generar código a partir de un lenguaje Domain-Specific](../modeling/generating-code-from-a-domain-specific-language.md).
 
 ## <a name="validation-and-commands"></a>Validación y comandos
- También podría desarrollar este DSL agregando restricciones de validación. Estas restricciones son métodos que se pueden definir, que se aseguran de que el modelo se encuentre en un estado correcto. Por ejemplo, puede definir una restricción para asegurarse de que la fecha de nacimiento de un elemento secundario es posterior a la de sus elementos primarios. La característica de validación muestra una advertencia si el usuario de DSL intenta guardar un modelo que interrumpe cualquiera de las restricciones. Para obtener más información, vea [validación en un lenguaje específico de dominio](../modeling/validation-in-a-domain-specific-language.md).
+ También podría desarrollar este DSL agregando restricciones de validación. Estas restricciones son métodos que se pueden definir, que se aseguran de que el modelo se encuentre en un estado correcto. Por ejemplo, puede definir una restricción para asegurarse de que la fecha de nacimiento de un elemento secundario es posterior a la de sus elementos primarios. La característica de validación muestra una advertencia si el usuario de DSL intenta guardar un modelo que interrumpe cualquiera de las restricciones. Para obtener más información, vea [validación en un lenguaje Domain-Specific](../modeling/validation-in-a-domain-specific-language.md).
 
  También puede definir comandos de menú que el usuario puede invocar. Los comandos pueden modificar el modelo. También pueden interactuar con otros modelos en Visual Studio y con recursos externos. Para obtener más información, vea [Cómo: modificar un comando de menú estándar](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
@@ -403,11 +405,11 @@ Cambiar el nombre de las clases de dominio y las relaciones existentes. Por ejem
 
 #### <a name="to-reset-the-visual-studio-experimental-instance"></a>Para restablecer la instancia experimental de Visual Studio
 
-1. Haga clic en **Inicio**, **todos los programas**, **Microsoft Visual Studio SDK de 2010**, **herramientas**y, a continuación, **restablezca la instancia experimental de Microsoft Visual Studio 2010**.
+1. Haga clic en **Inicio**, **todos los programas**, **Microsoft Visual Studio SDK de 2010**, **herramientas** y, a continuación, **restablezca la instancia experimental de Microsoft Visual Studio 2010**.
 
 2. Vuelva a compilar cualquier DSL experimental u otras extensiones experimentales de Visual Studio que desee usar.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 
 - [Introducción a los modelos, las clases y las relaciones](../modeling/understanding-models-classes-and-relationships.md)
 - [Cómo definir lenguajes específicos de dominio](../modeling/how-to-define-a-domain-specific-language.md)

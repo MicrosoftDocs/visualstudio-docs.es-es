@@ -1,5 +1,7 @@
 ---
 title: Directiva de importación T4
+description: Aprenda que en una plantilla de texto T4 de Visual Studio, la Directiva Import le permite hacer referencia a los elementos de otro espacio de nombres sin proporcionar un nombre completo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a28bedd01e3a4f6a7a87b025ac9a9a6184da9b2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2dbd42f42213e475452185475a69b1dd9fe5f8e0
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591871"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363697"
 ---
 # <a name="t4-import-directive"></a>Directiva de importación T4
 
@@ -49,6 +51,6 @@ The file contains: <#=  fileContent #>
 
 - El espacio de nombres de DSL
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 
 - [Directiva de ensamblado T4](../modeling/t4-assembly-directive.md)

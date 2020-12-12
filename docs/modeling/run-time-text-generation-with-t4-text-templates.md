@@ -1,5 +1,7 @@
 ---
 title: Generación de texto en tiempo de ejecución con plantillas de texto T4
+description: Obtenga información acerca de cómo puede generar cadenas de texto en la aplicación en tiempo de ejecución mediante plantillas de texto en tiempo de ejecución de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 344e15b69bf3e8308c62c6fa1074720b0cd7618d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fcb7048b4319d1edb46911a74e96f440540e4299
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520840"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363944"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Generación de texto en tiempo de ejecución con plantillas de texto T4
 
@@ -49,7 +51,7 @@ Observe que la plantilla es una página HTML en la que las partes variables se h
 
 El uso de una plantilla en la aplicación facilita la visualización de la forma final de la salida, por ejemplo, una larga serie de instrucciones Write. Realizar cambios en el formato de la salida es más fácil y confiable.
 
-## <a name="creating-a-run-time-text-template-in-any-application"></a>Crear una plantilla de texto en tiempo de ejecución en cualquier aplicación
+## <a name="creating-a-run-time-text-template-in-any-application"></a>Crear una plantilla de texto de Run-Time en cualquier aplicación
 
 ### <a name="to-create-a-run-time-text-template"></a>Para crear una plantilla de texto en tiempo de ejecución
 
@@ -62,7 +64,7 @@ El uso de una plantilla en la aplicación facilita la visualización de la forma
     > [!NOTE]
     > El nombre del archivo de plantilla se usará como nombre de clase en el código generado. Por lo tanto, no debe contener espacios ni signos de puntuación.
 
-4. Haga clic en **Agregar**.
+4. Seleccione **Agregar**.
 
     Se crea un nuevo archivo que tiene la extensión **. TT**. Su propiedad de **herramienta personalizada** está establecida en **TextTemplatingFilePreprocessor**. Contiene las siguientes líneas:
 
@@ -74,7 +76,7 @@ El uso de una plantilla en la aplicación facilita la visualización de la forma
     <#@ import namespace="System.Collections.Generic" #>
     ```
 
-## <a name="converting-an-existing-file-to-a-run-time-template"></a>Convertir un archivo existente en una plantilla en tiempo de ejecución
+## <a name="converting-an-existing-file-to-a-run-time-template"></a>Convertir un archivo existente en una plantilla de Run-Time
 
 Una buena manera de crear una plantilla es convertir un ejemplo existente de la salida. Por ejemplo, si la aplicación va a generar archivos HTML, puede empezar por crear un archivo HTML sin formato. Asegúrese de que funciona correctamente y de que su apariencia es correcta. Después, inclúyalo en el proyecto de Visual Studio y conviértalo en una plantilla.
 
@@ -95,7 +97,7 @@ Una buena manera de crear una plantilla es convertir un ejemplo existente de la 
 
     `<#@ template language="C#" #>`
 
-## <a name="the-content-of-the-run-time-template"></a>El contenido de la plantilla en tiempo de ejecución
+## <a name="the-content-of-the-run-time-template"></a>Contenido de la plantilla de Run-Time
 
 ### <a name="template-directive"></a>Directiva de plantilla
 
@@ -182,7 +184,7 @@ Puede establecer un punto de interrupción en una plantilla de texto. Si inicia 
 
 Normalmente, una plantilla debe importar algunos datos de otras partes de la aplicación. Para facilitar esta tarea, el código generado por la plantilla es una clase parcial. Puede crear otra parte de la misma clase en otro archivo del proyecto. Ese archivo puede incluir un constructor con parámetros, propiedades y funciones a las que puede tener acceso el código que está incrustado en la plantilla y el resto de la aplicación.
 
-Por ejemplo, puede crear un archivo **MyWebPageCode.CS**independiente:
+Por ejemplo, puede crear un archivo **MyWebPageCode.CS** independiente:
 
 ```csharp
 partial class MyWebPage
@@ -294,7 +296,7 @@ El contenido incluido puede contener cualquier combinación de código de progra
 
 La directiva Include se puede usar en cualquier parte del texto de un archivo de plantilla o un archivo incluido.
 
-### <a name="inheritance-between-run-time-text-templates"></a>Herencia entre plantillas de texto en tiempo de ejecución
+### <a name="inheritance-between-run-time-text-templates"></a>Herencia entre Run-Time plantillas de texto
 
 Puede compartir contenido entre plantillas en tiempo de ejecución escribiendo una plantilla de clase base, que puede ser abstracta. Use el `inherits` parámetro de la `<@#template#>` Directiva para hacer referencia a otra clase de plantilla en tiempo de ejecución.
 
@@ -433,7 +435,7 @@ Plantillas en tiempo de diseño: Si desea usar una plantilla para generar códig
 
 Las plantillas en tiempo de ejecución se pueden usar en cualquier aplicación donde las plantillas y su contenido se determinan en tiempo de compilación. Pero si desea escribir una extensión de Visual Studio que genere texto a partir de plantillas que cambian en tiempo de ejecución, consulte [invocar la transformación de texto en una extensión de vs](../modeling/invoking-text-transformation-in-a-vs-extension.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 - [Generación de código y plantillas de texto T4](../modeling/code-generation-and-t4-text-templates.md)
 - [Escribir una plantilla de texto T4](../modeling/writing-a-t4-text-template.md)

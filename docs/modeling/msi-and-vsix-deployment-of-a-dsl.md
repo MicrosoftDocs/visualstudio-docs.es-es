@@ -1,5 +1,7 @@
 ---
 title: Implementación mediante MSI y VSIX de un DSL
+description: Obtenga información acerca de cómo instalar un lenguaje específico de dominio (DSL) en su propio equipo o en otros equipos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d4de8d7560cb43115a30e29516e0e88b4d02d21
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 623cbdcfaae6acd1889e265fecafec805e5a9440
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542621"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363138"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Implementación mediante MSI y VSIX de un DSL
 Puede instalar un lenguaje específico de dominio en su propio equipo o en otros equipos. Visual Studio ya debe estar instalado en el equipo de destino.
@@ -35,7 +37,7 @@ Cuando este método instala DSL, el usuario puede abrir un archivo DSL desde Vis
 
    1. En **Explorador de soluciones**, haga clic con el botón derecho en el proyecto **DslPackage** y, a continuación, haga clic en **Abrir carpeta en el explorador de archivos**.
 
-   2. Busque el archivo **bin \\ \* \\ **_YourProject_**. DslPackage. vsix**
+   2. Busque el archivo **bin \\ \* \\**_YourProject_**. DslPackage. vsix**
 
 2. Copie el archivo **. vsix** en el equipo de destino en el que desea instalar el DSL. Puede tratarse de su propio equipo o de otro.
 
@@ -45,7 +47,7 @@ Cuando este método instala DSL, el usuario puede abrir un archivo DSL desde Vis
 
 3. En el equipo de destino, haga doble clic en el archivo **. vsix** .
 
-    El**Instalador de extensiones de Visual Studio** se abre e instala la extensión.
+    El **Instalador de extensiones de Visual Studio** se abre e instala la extensión.
 
 4. Inicie o reinicie [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)].
 
@@ -94,7 +96,7 @@ Cuando este método instala DSL, el usuario puede abrir un archivo DSL desde Vis
 
    - Haga clic en el nodo **Editor** y, en el ventana Propiedades, haga clic en **icono**. Establezca el valor para que haga referencia a un archivo de icono en **DslPackage\Resources**, como **archivo. ico.**
 
-   - En el menú **compilar** , Abra **Configuration Manager**y seleccione la configuración que desea compilar, como **liberar** o **depurar**.
+   - En el menú **compilar** , Abra **Configuration Manager** y seleccione la configuración que desea compilar, como **liberar** o **depurar**.
 
 4. Vaya a la [Página principal del SDK de visualización y modelado](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)y, en la pestaña **descargas** , descargue **CreateMsiSetupProject.TT**.
 
@@ -134,4 +136,4 @@ Cuando este método instala DSL, el usuario puede abrir un archivo DSL desde Vis
 
 2. Desinstale el DSL.
 
-3. Reinicie Visual Studio.
+3. Reinicie Visual Studio.

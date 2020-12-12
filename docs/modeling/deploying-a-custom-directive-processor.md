@@ -1,5 +1,7 @@
 ---
 title: Implementar un procesador de directivas personalizadas
+description: Obtenga información sobre los métodos disponibles para implementar un procesador de directivas personalizado en Visual Studio o en cualquier equipo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4762ad21f117bebe22ecfce1c846f15d154b1bf5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 638367f2c3a1238edc257a255280c5197e11d3f0
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536024"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363931"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Implementar un procesador de directivas personalizadas
 
@@ -107,7 +109,7 @@ Hay varias maneras de crear un archivo .vsix. El siguiente procedimiento describ
 
 3. Haga doble clic en el archivo .vsix. Aparece el instalador de extensiones de Visual Studio.
 
-4. Reinicie Visual Studio. Ahora podrá ejecutar plantillas de texto que contienen directivas que hacen referencia al procesador de directivas personalizado. Cada directiva tiene el formato:
+4. Reinicie Visual Studio. Ahora podrá ejecutar plantillas de texto que contienen directivas que hacen referencia al procesador de directivas personalizado. Cada directiva tiene el formato:
 
      `<#@ CustomDirective Processor="CustomDirectiveProcessorName" parameter1="value1" ... #>`
 
@@ -164,17 +166,17 @@ Hay varias maneras de crear un archivo .vsix. El siguiente procedimiento describ
 
 2. En regedit, navegue a
 
-    **HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio \\ \* . 0 \ TextTemplating\DirectiveProcessors**
+    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ \* . 0 \ TextTemplating\DirectiveProcessors**
 
     Si desea instalar el procesador de directivas en la versión experimental de Visual Studio, inserte "exp" después de "11,0".
 
 3. Agregue una clave del Registro con el mismo nombre que la clase de procesador de directivas.
 
-   - En el árbol del registro, haga clic con el botón secundario en el nodo **DirectiveProcessors** , elija **nuevo**y, a continuación, haga clic en **clave**.
+   - En el árbol del registro, haga clic con el botón secundario en el nodo **DirectiveProcessors** , elija **nuevo** y, a continuación, haga clic en **clave**.
 
 4. En el nuevo nodo, agregue valores de cadena para Class y CodeBase o Assembly, según las siguientes tablas.
 
-   1. Haga clic con el botón secundario en el nodo que ha creado, seleccione **nuevo**y, a continuación, haga clic en **valor de cadena**.
+   1. Haga clic con el botón secundario en el nodo que ha creado, seleccione **nuevo** y, a continuación, haga clic en **valor de cadena**.
 
    2. Edite el nombre del valor.
 
@@ -196,6 +198,6 @@ Hay varias maneras de crear un archivo .vsix. El siguiente procedimiento describ
 |Clase|REG_SZ|\<**Your Fully Qualified Class Name**>|
 |Ensamblado|REG_SZ|\<**Your Assembly Name in the GAC**>|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 
 - [Crear procesadores de directivas personalizadas para las plantillas de texto T4](../modeling/creating-custom-t4-text-template-directive-processors.md)

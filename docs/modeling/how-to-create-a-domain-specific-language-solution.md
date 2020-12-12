@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: Crear soluciones de lenguajes específicos de dominio'
+description: Aprenda a crear un lenguaje específico de dominio (DSL) mediante una solución de Visual Studio especializada.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c47b16bbb9fe5eb352171e6e1cf4c13890890265
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: c913f3015c56f7872dfe5ef3471578de7075b7d0
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "92298652"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363281"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Cómo: Crear soluciones de lenguajes específicos de dominio
 Un lenguaje específico de dominio (DSL) se crea mediante una solución de Visual Studio especializada.
@@ -27,7 +29,7 @@ Un lenguaje específico de dominio (DSL) se crea mediante una solución de Visua
 
 Antes de poder iniciar este procedimiento, Instale estos componentes:
 
-- Programa para la mejora
+- Visual Studio
 - SDK de Visual Studio (instalado como parte de la carga de trabajo **desarrollo de extensiones de Visual Studio** )
 - SDK de modelado (instalado como componente de Visual Studio)
 
@@ -89,7 +91,7 @@ Escriba una nueva extensión de archivo.
 
      \- o -
 
-- Restablezca la instancia experimental de Visual Studio. Esto anulará el registro de todos los DSL que ha creado previamente. En el menú **Inicio** , haga clic en **todos los programas**, **Microsoft Visual Studio SDK de 2010**, **herramientas**y, a continuación, **restablezca la instancia experimental de Microsoft Visual Studio 2010**. Puede volver a generar cualquier otro DSL que desee utilizar de nuevo.
+- Restablezca la instancia experimental de Visual Studio. Esto anulará el registro de todos los DSL que ha creado previamente. En el menú **Inicio** , haga clic en **todos los programas**, **Microsoft Visual Studio SDK de 2010**, **herramientas** y, a continuación, **restablezca la instancia experimental de Microsoft Visual Studio 2010**. Puede volver a generar cualquier otro DSL que desee utilizar de nuevo.
 
      \- o -
 
@@ -116,7 +118,7 @@ De forma predeterminada, se crea un nombre formado por los nombres de empresa y 
 
  Para obtener más información sobre los nombres seguros, vea [crear y usar ensamblados de Strong-Named](/dotnet/standard/assembly/create-use-strong-named).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 
 - [Cómo definir lenguajes específicos de dominio](../modeling/how-to-define-a-domain-specific-language.md)
 - [Glosario de las Herramientas del lenguaje específico de dominio](/previous-versions/bb126564(v=vs.100))

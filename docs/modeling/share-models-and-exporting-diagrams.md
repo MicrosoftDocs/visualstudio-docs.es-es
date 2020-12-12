@@ -1,5 +1,7 @@
 ---
 title: Compartir modelos y exportar diagramas
+description: Obtenga información sobre cómo puede usar Visual Studio para crear y editar modelos, diagramas de dependencia y gráficos dirigidos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2347ad9f01634fe7fee243a7d5e1a24a6d9ba3b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ecf972974ff2c84cb47cd93d944aced4758d1cb7
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591923"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363749"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>Compartir modelos y exportar diagramas
 En Visual Studio, puede compartir modelos y diagramas con sus compañeros de diversas formas.
@@ -49,6 +51,6 @@ En Visual Studio, puede compartir modelos y diagramas con sus compañeros de div
 |[Exportar diagramas como imágenes](../modeling/export-diagrams-as-images.md)|Puede copiar partes de diagramas en aplicaciones como PowerPoint o Word, o bien imprimir un diagrama como un archivo XPS.|
 |[Analizar y modelar la arquitectura](../modeling/analyze-and-model-your-architecture.md)|Información general de modelos y diagramas.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 - [Usar modelos en el proceso de desarrollo](../modeling/use-models-in-your-development-process.md)

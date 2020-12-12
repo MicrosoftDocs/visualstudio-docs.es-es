@@ -1,5 +1,7 @@
 ---
 title: Directiva de ensamblado T4
+description: Aprenda que en una plantilla de texto en tiempo de diseño de Visual Studio, la Directiva de ensamblado carga un ensamblado para que el código de plantilla pueda usar sus tipos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d441d74d1ddea5a7b5dd063d302ec93e75fc1c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41abd2b5a48f6e5e126747326e9815f3c2f46787
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591897"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363710"
 ---
 # <a name="t4-assembly-directive"></a>Directiva de ensamblado T4
 
@@ -42,7 +44,7 @@ En una plantilla de texto en tiempo de diseño de Visual Studio, la `assembly` D
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>
 ```
 
- La directiva de ensamblado no tiene ningún efecto en una plantilla de texto preprocesada. En su lugar, incluya las referencias necesarias en la sección **referencias** del proyecto de Visual Studio. Para obtener más información, vea [generación de texto en tiempo de ejecución con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ La directiva de ensamblado no tiene ningún efecto en una plantilla de texto preprocesada. En su lugar, incluya las referencias necesarias en la sección **referencias** del proyecto de Visual Studio. Para obtener más información, vea [Generación de texto en tiempo de ejecución con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
 ## <a name="standard-assemblies"></a>Ensamblados estándar
  Loa siguientes ensamblados se cargan automáticamente, por lo que no es necesario escribir las directivas de ensamblado para ellos:
@@ -88,6 +90,6 @@ En una plantilla de texto en tiempo de diseño de Visual Studio, la `assembly` D
 <#@ assembly name="$(myLibFolder)\MyLib.dll" #>
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 
 - [Directiva Include T4](../modeling/t4-include-directive.md)

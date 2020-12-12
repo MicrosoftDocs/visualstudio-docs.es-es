@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: ... con plantillas de texto'
+description: Obtenga información acerca de las respuestas a preguntas comunes que se encuentran al usar plantillas de texto para generar texto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7ecabc00f37cb199f203bcd71a1b72bdbfbe1a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 50844ce8c6943fcf6b2a0b91c7fd2cfcb6184094
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594661"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363190"
 ---
 # <a name="how-to--with-text-templates"></a>Cómo: ... con plantillas de texto
 Las plantillas de texto de Visual Studio proporcionan una manera útil de generar texto de cualquier tipo. Puede usar plantillas de texto para generar texto en tiempo de ejecución como parte de la aplicación y en tiempo de diseño para generar parte del código del proyecto. En este tema se resume el "Cómo...?" más frecuente. las.
@@ -31,7 +33,7 @@ Las plantillas de texto de Visual Studio proporcionan una manera útil de genera
 ### <a name="generate-files-at-run-time-passing-data-into-the-template"></a>Generar archivos en tiempo de ejecución, pasar datos a la plantilla
  En tiempo de ejecución, mi aplicación genera archivos de texto, como informes, que contienen una mezcla de texto y datos estándar. Deseo evitar escribir cientos de `write` instrucciones.
 
-- Agregue una plantilla de texto en tiempo de ejecución al proyecto. Esta plantilla crea una clase en el código, en la que se pueden crear instancias y usar para generar texto. Puede pasar datos a él en los parámetros del constructor. Para obtener más información, vea [generación de texto en tiempo de ejecución con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+- Agregue una plantilla de texto en tiempo de ejecución al proyecto. Esta plantilla crea una clase en el código, en la que se pueden crear instancias y usar para generar texto. Puede pasar datos a él en los parámetros del constructor. Para obtener más información, vea [Generación de texto en tiempo de ejecución con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
 - Si desea generar a partir de plantillas que solo están disponibles en tiempo de ejecución, puede usar plantillas de texto estándar. Si está escribiendo una extensión de Visual Studio, puede invocar el servicio de plantillas de texto. Para obtener más información, consulte [invocar la transformación de texto en una extensión de vs](../modeling/invoking-text-transformation-in-a-vs-extension.md). En otros contextos, puede usar el motor de plantillas de texto. Para obtener más información, vea <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>.
 
@@ -75,7 +77,7 @@ Si va a escribir los métodos usted mismo:
 
      `foreach (Book book in this.Library) { ... }`
 
-     Para obtener más información, vea [Introducción con lenguajes específicos de dominio](../modeling/getting-started-with-domain-specific-languages.md) y [generar código a partir de un lenguaje específico de dominio](../modeling/generating-code-from-a-domain-specific-language.md).
+     Para obtener más información, vea [Introducción con lenguajes de Domain-Specific](../modeling/getting-started-with-domain-specific-languages.md) y [generar código a partir de un lenguaje de Domain-Specific](../modeling/generating-code-from-a-domain-specific-language.md).
 
 ### <a name="get-data-from-visual-studio"></a>Obtención de datos de Visual Studio
  Para usar los servicios proporcionados en Visual Studio, establezca el `hostSpecific` atributo y cargue el `EnvDTE` ensamblado. Por ejemplo:

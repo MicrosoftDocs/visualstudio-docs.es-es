@@ -1,5 +1,7 @@
 ---
 title: Asignar métodos en la pila de llamadas durante la depuración
+description: Obtenga información sobre cómo crear un mapa de código para realizar un seguimiento visual de la pila de llamadas durante la depuración. Además, obtenga información sobre cómo realizar notas en el mapa para realizar un seguimiento de lo que hace el código.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -28,12 +30,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1638b16eea9bfa20962359f0b63a7415915d0fc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b3d5c531400ddd88cea17b9172f19bf9711105d
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532709"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362436"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Asignar métodos en la pila de llamadas durante la depuración en Visual Studio
 
