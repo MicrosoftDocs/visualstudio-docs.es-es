@@ -1,5 +1,7 @@
 ---
 title: Generación de código y plantillas de texto T4
+description: Aprenda cómo una plantilla de texto T4 es una mezcla de bloques de texto y lógica de control que puede generar un archivo de texto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fbcd41461ab57e3bbb5fb48849ddde8593c587fb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 871aa20fe4fc95ea1641b7f478cb9b01d71284aa
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85548244"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363580"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Generación de código y plantillas de texto T4
 

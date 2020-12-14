@@ -1,5 +1,7 @@
 ---
 title: Información general sobre las herramientas de los lenguajes específicos de dominio
+description: Aprenda cómo las herramientas DSL le permiten diseñar un lenguaje específico de dominio y, después, generar todo lo que los usuarios deben tener para crear modelos basados en el lenguaje.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d9f2446aa793fcd80c3c6786bf1b2002a7ccbc0
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: e88a6157e5c9db7914ac6f7470d793be11dfdfc8
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808082"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362033"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Información general sobre las herramientas de los lenguajes específicos de dominio
 Las Herramientas del lenguaje específico de dominio (Herramientas DSL), que se hospedan en Visual Studio, permiten diseñar un lenguaje específico de dominio y, después, generar todo lo que los usuarios necesitan para crear modelos basados en el lenguaje.

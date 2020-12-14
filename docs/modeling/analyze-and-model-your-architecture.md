@@ -1,5 +1,7 @@
 ---
 title: Analizar y modelar la arquitectura
+description: Aprenda a usar las herramientas de modelado y arquitectura de Visual Studio para diseñar y modelar la aplicación para asegurarse de que la aplicación cumple los requisitos arquitectónicos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 helpviewer_keywords:
@@ -17,12 +19,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1db28867ea47752aa74b7898c44e797c0704594
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 71296b9ccb2e442d1bd9bc13865e0086821bf030
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544227"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361162"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Analizar y modelar la arquitectura
 
