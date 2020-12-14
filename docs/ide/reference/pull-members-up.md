@@ -1,5 +1,7 @@
 ---
 title: Extracción de miembros
+description: Obtenga información sobre cómo usar el menú Acciones rápidas y refactorizaciones para extraer miembros hasta un tipo base.
+ms.custom: SEO-VS-2020
 ms.date: 02/13/2019
 ms.topic: reference
 author: kendrahavens
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2d1f7deb7aca1fed7b75b66b17ce2e4d63768a0d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 159608644cb641aa2c84e4d55e92156215069030
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62969191"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616881"
 ---
 # <a name="pull-members-up"></a>Extracción de miembros
 
@@ -31,7 +33,7 @@ Esta refactorización se aplica a lo siguiente:
 
 **Por qué:** extraer miembros permite que otras implementaciones de la interfaz también hereden esos miembros.
 
-## <a name="how-to"></a>Procedimiento
+## <a name="how-to"></a>Instrucciones
 
 1. Coloque el cursor en cualquier miembro de una interfaz implementada.
 2. Presione **Ctrl**+ **.** para activar el menú **Acciones rápidas y refactorizaciones**.

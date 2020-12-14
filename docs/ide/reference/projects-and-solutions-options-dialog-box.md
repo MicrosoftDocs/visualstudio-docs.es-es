@@ -1,5 +1,7 @@
 ---
 title: Proyectos y soluciones, cuadro de diálogo Opciones
+description: Obtenga información sobre cómo usar la página General de la sección Proyectos y soluciones para definir el comportamiento de Visual Studio relacionado con proyectos y soluciones.
+ms.custom: SEO-VS-2020
 ms.date: 07/26/2019
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ed60e07c625665f92838cfbc671b03c605fda0d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 01ee7e0da5fab8ceba2e5dc0642148033e2415da
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75567650"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616907"
 ---
 # <a name="options-dialog-box-projects-and-solutions--general"></a>Cuadro de diálogo Opciones: Proyectos y soluciones \> General
 
@@ -28,11 +30,11 @@ Las siguientes opciones están disponibles en la páginas **General**.
 
 ## <a name="always-show-error-list-if-build-finishes-with-errors"></a>Mostrar siempre lista de errores si la compilación termina con errores
 
-Abre la ventana **Lista de errores** al terminar la compilación solo si no se ha podido compilar un proyecto. Se muestran los errores que se producen durante el proceso de compilación. Cuando esta opción está desactivada, se siguen produciendo errores, pero no se abre la ventana una vez finalizada la compilación. Esta opción está habilitada de forma predeterminada.
+Abre la ventana **Lista de errores** al terminar la compilación solo si no se ha podido compilar un proyecto. Se muestran los errores que se producen durante el proceso de compilación. Cuando esta opción está desactivada, se siguen produciendo errores, pero no se abre la ventana una vez finalizada la compilación. Esta opción está habilitada de manera predeterminada.
 
 ## <a name="track-active-item-in-solution-explorer"></a>Realizar seguimiento del elemento activo en el Explorador de soluciones
 
-Si esta opción está activada, el **Explorador de soluciones** se abre automáticamente y se selecciona el elemento activo. El elemento seleccionado cambia conforme trabaja con distintos archivos de un proyecto o solución o con distintos componentes de un diseñador. Si esta opción está desactivada, la selección del **Explorador de soluciones** no cambia automáticamente. Esta opción está habilitada de forma predeterminada.
+Si esta opción está activada, el **Explorador de soluciones** se abre automáticamente y se selecciona el elemento activo. El elemento seleccionado cambia conforme trabaja con distintos archivos de un proyecto o solución o con distintos componentes de un diseñador. Si esta opción está desactivada, la selección del **Explorador de soluciones** no cambia automáticamente. Esta opción está habilitada de manera predeterminada.
 
 ## <a name="show-advanced-build-configurations"></a>Mostrar configuraciones de compilación avanzadas
 
@@ -96,7 +98,7 @@ Si no tiene esta opción seleccionada y quiere editar un archivo de proyecto de 
 
 ::: moniker-end
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Cuadro de diálogo Opciones: Proyectos y soluciones \> Ubicaciones](projects-solutions-locations-options.md)
 - [Cuadro de diálogo Opciones, Proyectos y soluciones, Compilar y ejecutar](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)

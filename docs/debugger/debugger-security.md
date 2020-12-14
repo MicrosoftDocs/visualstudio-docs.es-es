@@ -1,5 +1,7 @@
 ---
 title: Seguridad del depurador | Microsoft Docs
+description: Obtenga información sobre los riesgos de seguridad que supone la depuración, tanto para el equipo de depuración como para el que se depura. Siga las recomendaciones para minimizar el riesgo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8b7ac2aed43bcb39b4bb5924ad6f1cf2c438b64
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: f6d0c09a7f54157bd2ace9a6be09a357eb436ceb
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600079"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559750"
 ---
 # <a name="debugger-security"></a>Seguridad del depurador
 La posibilidad de depurar otro proceso le confiere amplios poderes que, de otra forma, no tendría, especialmente al depurar de forma remota. Un depurador malintencionado podría infligir daños generalizados en el equipo depurado.
@@ -37,7 +39,7 @@ La posibilidad de depurar otro proceso le confiere amplios poderes que, de otra 
 ### <a name="managed-debugging-security"></a>Seguridad de la depuración administrada
  Las siguientes recomendaciones generales se aplican a toda la depuración administrada.
 
-- Se debe tener cuidado al asociar al proceso de un usuario que no sea de confianza: si lo hace, está dando por sentado que es digno de confianza. Si intenta asociarse al proceso de un usuario que no es de confianza, aparecerá un cuadro de diálogo de confirmación con una advertencia de seguridad que le preguntará si quiere asociarse al proceso. Los "usuarios de confianza" son, además del propio usuario, un conjunto de usuarios estándar definidos generalmente en los equipos en los que se ha instalado .NET Framework, como **aspnet**, **localsystem**, **networkservice**y **localservice**. Para obtener más información, vea [Advertencia de seguridad: Adjuntar a un proceso que pertenezca a un usuario que no sea de confianza puede ser peligroso. Si la información siguiente le resulta sospechosa o no está seguro de su procedencia, no la adjunte a este proceso](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).
+- Se debe tener cuidado al asociar al proceso de un usuario que no sea de confianza: si lo hace, está dando por sentado que es digno de confianza. Si intenta asociarse al proceso de un usuario que no es de confianza, aparecerá un cuadro de diálogo de confirmación con una advertencia de seguridad que le preguntará si quiere asociarse al proceso. Los "usuarios de confianza" son, además del propio usuario, un conjunto de usuarios estándar definidos generalmente en los equipos en los que se ha instalado .NET Framework, como **aspnet**, **localsystem**, **networkservice** y **localservice**. Para obtener más información, vea [Advertencia de seguridad: Adjuntar a un proceso que pertenezca a un usuario que no sea de confianza puede ser peligroso. Si la información siguiente le resulta sospechosa o no está seguro de su procedencia, no la adjunte a este proceso](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).
 
 - Se debe tener cuidado al descargar un proyecto de Internet y cargarlo en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Esta práctica es muy arriesgada incluso sin depuración. Si lo hace, está dando por sentado que el proyecto y el código que contiene son dignos de confianza.
 

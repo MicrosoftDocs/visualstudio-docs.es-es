@@ -1,5 +1,7 @@
 ---
 title: Parámetros y valores no usados
+description: Obtenga información sobre las asignaciones de valores, variables y parámetros no utilizados y cómo aparecen en el editor de código de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/15/2019
 ms.topic: reference
 author: kendrahavens
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: ce2b0f1e0c0db45c478c3917306683b314da0564
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8768992ce3ef9f40ab0adba1724d43b32e5bde5c
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "65531877"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560712"
 ---
 # <a name="unused-value-assignments-variables-and-parameters"></a>Parámetros, variables y asignaciones de valor sin usar
 

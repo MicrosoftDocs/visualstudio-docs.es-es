@@ -1,18 +1,18 @@
 ---
-title: Ventaja de CloudPilot en las suscripciones de Visual Studio | Microsoft Docs
+title: Ventaja de CloudPilot en las suscripciones de Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 6255b6a3-f101-4b2c-b7fa-851eccc944b2
-ms.date: 03/24/2020
+ms.date: 12/02/2020
 ms.topic: conceptual
 description: Obtenga información sobre la ventaja de CloudPilot disponible en las suscripciones de Visual Studio.
-ms.openlocfilehash: 642a5b35f41676c76d9eb4e5f1319fbbf57c55df
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 505e4caad5ee6d9b70fc50769c8a008469aa1345
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005929"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538155"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Ventaja de CloudPilot para suscripciones de Visual Studio
 Transfiera las aplicaciones a Microsoft Azure fácilmente y en pocos pasos. Identifique todos los cambios de código necesarios en cuestión de minutos debajo de la línea de código. Así, podrá efectuar una migración correcta a contenedores, máquinas virtuales, App Services, SQL Azure o una instancia administrada de SQL. A continuación, migre las aplicaciones a Azure mediante asistentes que utilicen ASR, DMA y DMS.
@@ -60,9 +60,9 @@ CloudPilot, de UnifyCloud, está diseñado para ayudar a los desarrolladores a t
 | Nivel de suscripción                                                 |     Canales                                            | Prestación                                                          | ¿Renovable?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (estándar)   | Licencia por volumen, Azure, venta directa | 2 licencias, 90 días, exámenes ilimitados       |  No.  Disponible solo para nuevos suscriptores          |
-| Visual Studio Enterprise con GitHub Enterprise   | VL | 2 licencias, 90 días, exámenes ilimitados       |  No.  Disponible solo para nuevos suscriptores          |
+| Suscripción de Visual Studio Enterprise con GitHub Enterprise   | VL | 2 licencias, 90 días, exámenes ilimitados       |  No.  Disponible solo para nuevos suscriptores          |
 | Visual Studio Professional (estándar) | Licencia por volumen, Azure, venta directa                                       | 1 licencia, 30 días, un examen                                                            |  No.  Disponible solo para nuevos suscriptores           |
-| Visual Studio Professional con GitHub Enterprise | VL | 1 licencia, 30 días, un examen                                                            |  No.  Disponible solo para nuevos suscriptores           |
+| Suscripción de Visual Studio Professional con GitHub Enterprise | VL | 1 licencia, 30 días, un examen                                                            |  No.  Disponible solo para nuevos suscriptores           |
 | Visual Studio Test Professional (estándar)                         | Licencia por volumen, venta directa                                              | No disponible                                             |  N/D           |
 | Plataformas MSDN (estándar)                                          | Licencia por volumen, venta directa                                              | No disponible                                              |  N/D          |
 | Visual Studio Enterprise (estándar)  | NFR<sup>1</sup> |No disponible  | N/D |

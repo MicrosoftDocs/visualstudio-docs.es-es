@@ -2,17 +2,17 @@
 title: WhiteSource Bolt en las suscripciones de Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 5e5d3f1a-533d-42eb-960e-01bb6bc7ca16
-ms.date: 10/22/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Obtenga más información sobre cómo activar la suscripción de WhiteSource Bolt que se incluye con la suscripción a Visual Studio.
-ms.openlocfilehash: 7d0e95bf82f31b92ef5b581a0b7d8b7d082d3237
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: dffa4645795e771b2f947426907ed3e03caedf80
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92435987"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537687"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>WhiteSource Bolt en las suscripciones de Visual Studio
 
@@ -43,9 +43,9 @@ Descubra y corrija vulnerabilidades del código abierto y genere informes comple
 | Nivel de suscripción                                                 |     Canales                                            | Prestación                                                          | ¿Renovable?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (estándar)   | Licencia por volumen, Azure, venta directa, no para reventa<sup>1</sup> | 6 meses       |  Sí       |
-| Visual Studio Enterprise con GitHub Enterprise | VL | 6 meses       |  Sí       |
+| Suscripción de Visual Studio Enterprise con GitHub Enterprise | VL | 6 meses       |  Sí       |
 | Visual Studio Professional (estándar) | Licencia por volumen, Azure, venta directa                                       | No disponible                                                           |NA         |
-| Visual Studio Professional con GitHub Enterprise | VL                                      | No disponible                                                           |NA         |
+| Suscripción de Visual Studio Professional con GitHub Enterprise | VL                                      | No disponible                                                           |NA         |
 | Visual Studio Test Professional (estándar)                         | Licencia por volumen, venta directa                                              | No disponible                                                           |NA         |
 | Plataformas MSDN (estándar)                                          | Licencia por volumen, venta directa                                              | No disponible                                                           |NA         |
 | Visual Studio Enterprise, Visual Studio Professional (de nube mensual) | Azure                                       | No disponible                                                           |NA|

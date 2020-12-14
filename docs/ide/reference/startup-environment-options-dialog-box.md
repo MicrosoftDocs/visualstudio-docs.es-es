@@ -1,5 +1,7 @@
 ---
 title: Inicio, Entorno, Opciones (cuadro de diálogo)
+description: Obtenga información sobre cómo usar la página Inicio de la sección Entorno para establecer otra acción predeterminada cuando se abra Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27803983fe0b387f98934adfa6be3abbbe23611c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f8e6cbac9da68a31c345805c1070c4d5b9fd168d
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770590"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616309"
 ---
 # <a name="options-dialog-box-environment--startup"></a>Cuadro de diálogo Opciones: Entorno \> Inicio
 

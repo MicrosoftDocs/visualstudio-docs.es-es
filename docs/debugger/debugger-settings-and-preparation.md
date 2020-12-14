@@ -1,5 +1,7 @@
 ---
 title: Configuración y preparación del depurador | Microsoft Docs
+description: En esta sección se explica cómo prepararse para usar el depurador de Visual Studio y se describen las propiedades pertinentes. Siga los vínculos a la información que necesite.
+ms.custom: SEO-VS-2020
 ms.date: 08/01/2018
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2704f4e73b1077f14c89e377453a858d341a2738
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 5ddae505580781c707678e95d9e270c46b86cdae
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738280"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560231"
 ---
 # <a name="debugger-settings-and-preparation"></a>Preparación y configuración de la depuración
 En esta sección se describe la configuración de las propiedades relacionadas con el depurador y la preparación necesaria para depurar el programa con el depurador de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Si crea el programa en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] mediante las plantillas de proyecto, esta configuración se habilita automáticamente en la configuración Debug.

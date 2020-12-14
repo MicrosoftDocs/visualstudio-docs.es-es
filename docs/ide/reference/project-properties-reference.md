@@ -1,5 +1,7 @@
 ---
 title: Referencia de propiedades del proyecto
+description: Obtenga información sobre cómo configurar y personalizar propiedades del proyecto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc3ec00ed771caba7e779e708801d611ca16b8c5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f76e34f0a806a524c1305796bddabebd155e680c
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75567728"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560348"
 ---
 # <a name="project-properties-reference"></a>Referencia de propiedades del proyecto
 
@@ -24,9 +26,9 @@ Obtenga más información sobre cómo configurar y personalizar propiedades del 
 
 ## <a name="project-properties-pages"></a>Páginas de propiedades del proyecto
 
-| Título | Description |
+| Título | Descripción |
 | - | - |
-| [Página Aplicación, Diseñador de proyectos (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md) | Use esta página para especificar la configuración de la aplicación y las propiedades de un proyecto de [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]. |
+| [Página de aplicación, Diseñador de proyectos (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md) | Use esta página para especificar la configuración de la aplicación y las propiedades de un proyecto de [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]. |
 | [Página de aplicación, Diseñador de proyectos (C#)](../../ide/reference/application-page-project-designer-csharp.md) | Use esta página para especificar la configuración de la aplicación y las propiedades de un proyecto de [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]. |
 | [Página Eventos de compilación, Diseñador de proyectos (C#)](../../ide/reference/build-events-page-project-designer-csharp.md) | Use este panel para especificar las instrucciones de configuración de compilación. |
 | [Página Compilar (Diseñador de proyectos) (C#)](../../ide/reference/build-page-project-designer-csharp.md) | Use este panel para especificar las propiedades de configuración de compilación de un proyecto de [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]. |
@@ -38,6 +40,6 @@ Obtenga más información sobre cómo configurar y personalizar propiedades del 
 | [Página Seguridad, Diseñador de proyectos](../../ide/reference/security-page-project-designer.md) | Use esta página para configurar las opciones de seguridad de acceso del código para las aplicaciones que se implementan con la implementación de [!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)]. |
 | [Página Firma, Diseñador de proyectos](../../ide/reference/signing-page-project-designer.md) | Use esta página para firmar los manifiestos de implementación y aplicación, y firmar el ensamblado. |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Soluciones y proyectos](../../ide/solutions-and-projects-in-visual-studio.md)

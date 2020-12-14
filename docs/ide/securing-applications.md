@@ -1,5 +1,7 @@
 ---
 title: Seguridad
+description: Obtenga información sobre algunos conceptos de seguridad y las características de seguridad que pueden ayudarle a desarrollar aplicaciones seguras de forma eficaz.
+ms.custom: SEO-VS-2020
 ms.date: 06/01/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +13,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e02900c96991a402d7ea7b789a47f8f2dea447c3
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: 07f0c685b61ab72d3db9ada79b29dcb5b4e4a1f1
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91781019"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560829"
 ---
-# <a name="secure-applications"></a>Proteger aplicaciones
+# <a name="secure-applications"></a>Aplicaciones seguras
 
 Las consideraciones sobre seguridad se deben aplicar a todo el desarrollo de la aplicación, desde el diseño hasta la implementación. Comience ejecutando Visual Studio de la forma más segura posible. Vea [Permisos de usuario](../ide/user-permissions-and-visual-studio.md).
 
@@ -38,7 +40,7 @@ La seguridad también es una consideración importante en el proceso de compilac
 - [Dotfuscator](dotfuscator/index.md) es gratuito y ayuda a proteger los ensamblados de .NET frente al uso no autorizado y a la ingeniería inversa, como la depuración no autorizada.
 - La [firma de nombre seguro](managing-assembly-and-manifest-signing.md) se puede usar para identificar los componentes de software e impide la suplantación de nombres.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Seguridad en .NET](/dotnet/standard/security/index)
 - [Seguridad de Azure](/azure/security/)

@@ -1,5 +1,7 @@
 ---
 title: Opciones de configuración del proyecto C++
+description: Obtenga información sobre cómo usar la página Configuración del proyecto de VC++ de la sección Proyectos y soluciones para definir la configuración de compilación y del proyecto de C++ relacionada con el registro, el rendimiento y los tipos de archivos compatibles.
+ms.custom: SEO-VS-2020
 ms.date: 08/02/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c7acd0d8f9c6d15f9f20c42f59c3bd5562884ac3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 16226cd66c2cf46d1dc46f1cb3f90dc3bad9658c
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "68918884"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616283"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Configuración de proyecto de VC++, Proyectos y soluciones, Opciones (Cuadro de diálogo)
 
@@ -33,7 +35,7 @@ Este cuadro de diálogo le permite definir la configuración del proyecto y la c
 
 1. En el menú **Herramientas** , haga clic en **Opciones**.
 
-2. Seleccione **Proyectos y soluciones** y **Configuración de proyecto de VC++** .
+2. Seleccione **Proyectos y soluciones** y **Configuración de proyecto de VC++**.
 
 ## <a name="build-logging"></a>Registro de compilación
 
@@ -59,7 +61,7 @@ Las variables de entorno se excluyen del archivo de registro de compilación.
 
  **Sí**
 
-  Activa el registro de compilación. Si se selecciona, se muestra en la ventana de salida el tiempo que se tarda en completar la compilación. Para más información, vea [Ventana de salida](../../ide/reference/output-window.md).
+  Activa el registro de compilación. Si se selecciona, se muestra en la ventana de salida el tiempo que se tarda en completar la compilación. Para más información, consulte [Ventana Resultados](../../ide/reference/output-window.md).
 
  **No**
 
@@ -101,7 +103,7 @@ Permite que Visual Studio almacene en caché los datos del proyecto para que, c
 
 No se usan los datos de proyecto almacenados en caché. Se analizan los archivos de proyecto cada vez que se cargue el proyecto.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Compilación de programas de C/C++](/cpp/build/projects-and-build-systems-cpp)
 - [Referencia de compilación de C/C++](/cpp/build/reference/c-cpp-building-reference)

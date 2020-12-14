@@ -7,12 +7,12 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 10/28/2020
 ms.topic: how-to
 description: Vea cómo activar el beneficio de crédito individual de Azure DevTest que se incluye con la suscripción de Visual Studio.
-ms.openlocfilehash: f524f0933d067d0c62c184d54c441edc7b15739d
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: bfd94ef7995ed5f456462e1bce6aa0d4d045bdd0
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903641"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538012"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Usar Microsoft Azure en suscripciones de Visual Studio
 Como suscriptor de Visual Studio, puede usar Microsoft Azure sin cargo adicional.  Gracias a su [crédito individual mensual de Azure DevTest](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/), dispone de Azure como espacio aislado personal para desarrollo y pruebas.  Puede aprovisionar máquinas virtuales, servicios en la nube y otros recursos de Azure.  La cantidad de crédito varía según el nivel de suscripción.
@@ -73,10 +73,10 @@ Si tiene preguntas sobre la transferencia de recursos, la eliminación de límit
 |                 Programa/nivel de suscripción                 |           Prestación           |                         ¿Renovable?                          |
 |--------------------------------------------------------------|-----------------------------|-------------------------------------------------------------|
 |              Visual Studio Enterprise estándar               |     Crédito mensual de 150 USD     |                             Sí                             |
-|              Visual Studio Enterprise con GitHub Enterprise               |     Crédito mensual de 150 USD     |                             Sí                             |
+|              Suscripción de Visual Studio Enterprise con GitHub Enterprise               |     Crédito mensual de 150 USD     |                             Sí                             |
 |               Visual Studio Enterprise mensual               |        No disponible        |                                                             |
 |             Visual Studio Professional estándar              |     Crédito mensual de 50 USD      |                             Sí
-|              Visual Studio Professional con GitHub Enterprise              |     Crédito mensual de 150 USD     |                             Sí                             |
+|              Suscripción de Visual Studio Professional con GitHub Enterprise              |     Crédito mensual de 150 USD     |                             Sí                             |
 |              Visual Studio Professional mensual              |        No disponible        |                                                             |
 |                    Visual Studio Test Pro                    |     Crédito mensual de 50 USD      |                             Sí                             |
 |                        Plataformas de MSDN                        |     Crédito mensual de 100 USD     |                             Sí                             |

@@ -1,5 +1,7 @@
 ---
 title: Generar invalidaciones de los métodos Equals y GetHashCode de C#
+description: Obtenga información sobre cómo usar el menú Acciones rápidas y refactorizaciones para generar métodos Equals y GetHashCode.
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f9b1a639dd655f4f75b21555396866858b144010
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f6f7ec74af21ef62079a3fef18dd39544e7b42aa
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75569288"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617518"
 ---
 # <a name="generate-equals-and-gethashcode-method-overrides-in-visual-studio"></a>Generación de invalidaciones de los métodos Equals y GetHashCode en Visual Studio
 
@@ -32,7 +34,7 @@ Esta generación de código se aplica a:
 
 - Invalide el método **GetHashCode** para permitir que un tipo funcione correctamente en una tabla hash. Obtenga más información sobre los [operadores de igualdad](/dotnet/standard/design-guidelines/equality-operators).
 
-## <a name="how-to"></a>Procedimiento
+## <a name="how-to"></a>Instrucciones
 
 1. Coloque el cursor en algún lugar de la línea de la declaración de tipos.
 

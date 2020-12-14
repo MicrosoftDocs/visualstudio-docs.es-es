@@ -1,5 +1,6 @@
 ---
 title: Extensiones, Entorno, Opciones (cuadro de diálogo)
+description: Obtenga información sobre cómo usar la página Extensiones de la sección Entorno para establecer opciones sobre cómo realiza Visual Studio las actualizaciones y cómo se actualizan y detectan las extensiones.
 ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
@@ -10,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7b0e1ca6d73e27f216f80054f87a35cf5389179
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 10642cabb5ac9d0d864da25f8cbf285e5b58e995
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114233"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617349"
 ---
 # <a name="options-dialog-box-environment--extensions"></a>Cuadro de diálogo Opciones: Entorno \> Extensiones
 

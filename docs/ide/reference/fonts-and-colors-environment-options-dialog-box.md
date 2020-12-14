@@ -1,5 +1,7 @@
 ---
 title: Fuentes y colores, Entorno, Opciones (Cuadro de diálogo)
+description: Obtenga información sobre cómo usar la página Fuentes y colores de la sección Entorno para establecer una combinación personalizada de colores y fuentes para varios elementos de la interfaz de usuario del IDE.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -25,12 +27,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d5c9edd47e3db43735d3c6e8f6a4ec1a881214e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dbbd42b0e4eae6d124fc59d68592155bf2c9bd49
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595623"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617531"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Fuentes y colores, Entorno, Opciones (Cuadro de diálogo)
 

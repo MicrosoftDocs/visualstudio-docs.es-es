@@ -1,5 +1,7 @@
 ---
 title: Shell (Comando)
+description: Obtenga información sobre el comando Shell y cómo inicia programas ejecutables desde Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bf13c7624d6c9d8e64b79f653eb83a0c5f3b3f0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a6197201ed35520ba8d362b6aa448fe625a2fe3a
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75565882"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616374"
 ---
 # <a name="shell-command"></a>Shell (Comando)
 Inicia programas ejecutables desde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
@@ -43,7 +45,7 @@ Obligatorio. El nombre de archivo y la ruta de acceso del archivo que se va a ej
 
 Opcional. Argumentos que se pasan al programa invocado.
 
-## <a name="switches"></a>Modificadores
+## <a name="switches"></a>Conmutadores
 /commandwindow [o] /command [o] /c [o] /cmd
 
 Opcional. Especifica que la salida del ejecutable se muestra en la ventana **Comandos**.
@@ -56,7 +58,7 @@ Opcional. Especifica el directorio de trabajo que se establecerá cuando se ejec
 
 Opcional. Especifica que la salida del ejecutable se muestra en la ventana **Salida**.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 Los modificadores /dir /o /c tienen que especificarse inmediatamente después de `Tools.Shell`. Cualquier elemento especificado después del nombre del ejecutable se pasa como argumentos de línea de comandos.
 
 El alias predefinido `Shell` se puede usar en lugar de `Tools.Shell`.
@@ -84,10 +86,10 @@ El siguiente comando usa xcopy.exe para copiar el archivo `MyText.txt` en la car
 >Tools.Shell /o /c xcopy.exe c:\MyText.txt c:\Text\MyText.txt
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Ventana Comandos](../../ide/reference/command-window.md)
-- [Resultados (Ventana)](../../ide/reference/output-window.md)
+- [Ventana de Salida](../../ide/reference/output-window.md)
 - [Cuadro Buscar/Comando](../../ide/find-command-box.md)
-- [Alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

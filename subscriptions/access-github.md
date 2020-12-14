@@ -1,5 +1,5 @@
 ---
-title: Visual Studio con GitHub Enterprise | Microsoft Docs
+title: Suscripciones de Visual Studio con GitHub Enterprise | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
@@ -7,14 +7,14 @@ ms.assetid: 2249b32a-46d7-4e29-b543-4769c71ceda6
 ms.date: 10/22/2020
 ms.topic: conceptual
 description: Obtenga información sobre el acceso a GitHub Enterprise como parte de las suscripciones de Visual Studio
-ms.openlocfilehash: fc4c36e72affb94f0707389d219284cc2a652bfd
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: 59b665b1da7d46732f1f4e967ae2a98ec54875ff
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467523"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537908"
 ---
-# <a name="visual-studio-with-github-enterprise-subscriptions"></a>Suscripciones de Visual Studio con GitHub Enterprise
+# <a name="visual-studio-subscriptions-with-github-enterprise"></a>Suscripciones de Visual Studio con GitHub Enterprise 
 
 Los clientes que tengan contratos Enterprise (EA) con Microsoft pueden comprar una nueva oferta de suscripciones que junta las suscripciones estándar de Visual Studio y GitHub Enterprise. Es una forma fácil y económica para los suscriptores de Visual Studio de adquirir GitHub Enterprise. 
 
@@ -33,13 +33,13 @@ Visual Studio Enterprise, Visual Studio Professional y GitHub Enterprise tambi
 
 Para obtener más información sobre las ventajas y las opciones, visite <https://visualstudio.microsoft.com/subscriptions/visual-studio-github>. 
 
-## <a name="what-is-the-visual-studio-with-github-enterprise-setup-process"></a>¿Qué es el proceso de configuración de Visual Studio con GitHub Enterprise?
+## <a name="what-is-the-visual-studio-subscription-with-github-enterprise-setup-process"></a>¿En qué consiste el proceso de configuración de suscripciones de Visual Studio con GitHub Enterprise?
 
 Las suscripciones de Visual Studio con GitHub Enterprise se administran en dos partes:
 1. La suscripción de Visual Studio (Enterprise o Professional)
 2. GitHub Enterprise 
 
-Cuando se le asigne una suscripción de Visual Studio con GitHub, va a recibir un correo electrónico en el que se indica que el administrador de suscripciones de Visual Studio le ha asignado una suscripción.  En ese momento puede ver las ventajas disponibles de la suscripción en <https://my.visualstudio.com/benefits>.  Esto incluye la ventaja de GitHub Enterprise, como se ve a continuación.
+Cuando se le asigne una suscripción de Visual Studio con GitHub Enterprise, recibirá un correo electrónico en el que se le indica que el administrador de suscripciones de Visual Studio le ha asignado una.  En ese momento puede ver las ventajas disponibles de la suscripción en <https://my.visualstudio.com/benefits>.  Esto incluye la ventaja de GitHub Enterprise, como se ve a continuación.
 
    > [!div class="mx-imgBorder"]
    > ![GitHub Enterprise a falta de la configuración de la cuenta de Enterprise](_img/access-github/pending-account-setup.png "En primer lugar, la organización debe configurar una cuenta de Enterprise.")  

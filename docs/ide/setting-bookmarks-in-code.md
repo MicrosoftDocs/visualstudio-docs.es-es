@@ -1,5 +1,7 @@
 ---
 title: Establecimiento de marcadores de código
+description: Obtenga información sobre cómo usar marcadores para marcar líneas en el código de forma que pueda volver rápidamente a una ubicación concreta o moverse hacia delante o hacia atrás entre ubicaciones.
+ms.custom: SEO-VS-2020
 ms.date: 02/23/2018
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c62ded0b94db9d39a197dde55fbc77434c5325d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ded48fcea0630bf07311cbb92ed2e258cdf4afb1
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595441"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560868"
 ---
 # <a name="set-bookmarks-in-code"></a>Establecimiento de marcadores de código en Visual Studio
 

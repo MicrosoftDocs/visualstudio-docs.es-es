@@ -1,5 +1,7 @@
 ---
 title: Refactorización de cambio de nombre
+description: Obtenga información sobre cómo usar la característica Refactorizar Cambiar nombre para cambiar el nombre de los identificadores de símbolos de código, como campos, variables locales, métodos, espacios de nombres, propiedades y tipos.
+ms.custom: SEO-VS-2020
 ms.date: 05/04/2020
 ms.topic: reference
 author: TerryGLee
@@ -12,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8d5b3d32b23b336dc86a92c33bcb97d02312f2dc
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 43a6e93815732c4f9d2ec7f29d6d6bef4c1f3451
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84182967"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616725"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>Refactorización de cambio de nombre de un símbolo de código
 

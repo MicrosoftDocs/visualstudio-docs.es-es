@@ -1,5 +1,7 @@
 ---
 title: Generar instrucciones Using
+description: Obtenga información sobre cómo usar el menú Acciones rápidas y refactorizaciones para agregar inmediatamente las importaciones necesarias o directivas de uso para el código de copia y pegado.
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
@@ -12,12 +14,12 @@ ms.workload:
 - dotnet
 helpviewer_keywords:
 - add missing usings
-ms.openlocfilehash: 903b160bac0e8096062e09fd78ff4c92c46cf8ee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 38996d1cda52dfe98b6ce9cf24e5adcca6a8b069
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79094318"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617167"
 ---
 # <a name="add-missing-usings-in-visual-studio"></a>Agregar instrucciones Using que faltan en Visual Studio
 

@@ -1,5 +1,6 @@
 ---
 title: Pestaña General, cuadro de diálogo Propiedades del subproceso | Microsoft Docs
+description: Vea el cuadro de diálogo Propiedades del subproceso para obtener información sobre un subproceso, incluido el nombre del módulo, el identificador del subproceso, el identificador del proceso, el estado del subproceso, el motivo de la espera y el tiempo de CPU.
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e8604c2d31f6bb50e9e77efbf6423f56ed719c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dd4c2bf24058ce8a69f05d8d2cee17a18ff9505d
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62896372"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96863002"
 ---
 # <a name="general-tab-thread-properties-dialog-box"></a>Pestaña General (Cuadro de diálogo Propiedades del subproceso)
 Use este cuadro de diálogo para saber más sobre un subproceso específico. Para mostrar este cuadro de diálogo, mueva el foco a una ventana [Vista de subprocesos](../debugger/threads-view.md) o abra [Vista de mensajes](../debugger/messages-view.md) y expanda un mensaje. Seleccione cualquier nodo de subproceso en el árbol y, después, elija **Propiedades** en el menú **Vista**.
@@ -27,7 +28,7 @@ Use este cuadro de diálogo para saber más sobre un subproceso específico. Par
 |-----------|-----------------|
 |**Nombre del módulo**|El nombre del módulo.|
 |**Identificador de subproceso**|Identificador único de este subproceso. Tenga en cuenta que se reutilizan los números de identificador de subproceso; estos identifican un subproceso solo mientras dure este.|
-|**Identificador del proceso**|Identificador único de este proceso. Los números de identificador de proceso se reutilizan, por lo que identifican un proceso solo mientras dura este. Cuando se ejecuta un programa, se crea el tipo de objeto Process. Todos los subprocesos de un proceso comparten el mismo espacio de direcciones y tienen acceso a los mismos datos. Elija este valor para ver las propiedades del identificador de proceso.|
+|**Identificador del proceso**|Identificador único de este proceso. Los números de identificador de proceso se reutilizan, por lo que identifican un proceso solo mientras dura dicho proceso. Cuando se ejecuta un programa, se crea el tipo de objeto Proceso. Todos los subprocesos de un proceso comparten el mismo espacio de direcciones y tienen acceso a los mismos datos. Elija este valor para ver las propiedades del identificador de proceso.|
 |**Estado del subproceso**|Estado actual del subproceso. Un subproceso en ejecución está utilizando un procesador; un subproceso en espera está a punto de usar uno. Un subproceso listo está esperando para usar un procesador porque no hay ninguno disponible. Un subproceso en transición está esperando a que se ejecute un recurso, como esperar a que su pila de ejecución se pagine en el disco. Un subproceso en espera no necesita el procesador porque está esperando a que se complete una operación periférica o a que se libere un recurso.|
 |**Motivo de espera**|Esto solo es aplicable cuando el subproceso está en estado de espera. Se usan pares de eventos para comunicarse con subsistemas protegidos.|
 |**Tiempo de CPU**|Tiempo total de CPU empleado en este proceso y sus subprocesos. Igual al tiempo de usuario + tiempo con privilegios.|

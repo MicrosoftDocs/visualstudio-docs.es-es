@@ -1,5 +1,7 @@
 ---
 title: Refactorización de retirada de código no accesible
+description: Obtenga información sobre cómo usar el menú Acciones rápidas y refactorizaciones para quitar código que nunca se va a ejecutar.
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: cd827870f07fb3161674d287d20f266942e61afe
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3af9d0a14b600773c5025fcaad68380c7bb82b29
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79093977"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616712"
 ---
 # <a name="remove-unreachable-code-refactoring"></a>Refactorización de retirada de código no accesible
 
@@ -31,7 +33,7 @@ Esta refactorización se aplica a lo siguiente:
 
 **Por qué:** Mejorar la legibilidad y facilidad de mantenimiento mediante la eliminación de código superfluo que nunca se ejecutará.
 
-## <a name="how-to"></a>Procedimiento
+## <a name="how-to"></a>Instrucciones
 
 1. Coloque el cursor en cualquier lugar del código atenuado que no es accesible:
 

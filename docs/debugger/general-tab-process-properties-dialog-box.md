@@ -1,5 +1,7 @@
 ---
 title: General (Pestaña), Propiedades del proceso (Cuadro de diálogo) | Microsoft Docs
+description: Vea la pestaña General para obtener información sobre un proceso, incluido el nombre del módulo, el identificador del proceso, la prioridad base, el número de subprocesos, el tiempo de CPU de usuario y el transcurrido.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6116beb67baf072d9c9762a1e8c67408cc915f29
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4980437c63348050db1a007e8f541e9af9e186cc
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62849820"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862742"
 ---
 # <a name="general-tab-process-properties-dialog-box"></a>Pestaña General (Cuadro de diálogo Propiedades del proceso)
 Use la pestaña **General** para obtener más información sobre un proceso determinado. Para mostrar el [Cuadro de diálogo Propiedades del proceso](../debugger/process-properties-dialog-box.md), mueva el foco a una ventana de la [Vista Procesos](../debugger/processes-view.md). Seleccione cualquier nodo de proceso del árbol y luego **Propiedades** en el menú **Vista**.

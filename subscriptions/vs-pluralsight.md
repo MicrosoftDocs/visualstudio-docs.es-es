@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
-ms.date: 08/04/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Obtenga información sobre la suscripción de aprendizaje de Pluralsight incluida en la suscripción de Visual Studio.
-ms.openlocfilehash: 26056c823dc4ab67f576eb430b85caac26d854af
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 02ed0d2417317116182800980206a1fcc7fbfc16
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "91005347"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537986"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Ventajas de aprendizaje de Pluralsight en las suscripciones de Visual Studio
 
@@ -73,9 +73,9 @@ Cuando expire la suscripción a Pluralsight, el estado cambiará a "Quedan 0 dí
 |                          Nivel de suscripción                          |     Canales      |    Prestación    |   ¿Renovable?   |
 |----------------------------------------------------------------------|-------------------|---------------|----------------|
 |          Visual Studio Enterprise (estándar)           | Licencia por volumen, Azure, venta directa |   6 meses    | Sí<sup>2</sup> |
-|          Visual Studio Enterprise con GitHub Enterprise          | VL  |   6 meses    | Sí<sup>2</sup> |
+|          Suscripción de Visual Studio Enterprise con GitHub Enterprise          | VL  |   6 meses    | Sí<sup>2</sup> |
 |         Visual Studio Professional (estándar)          | Licencia por volumen, Azure, venta directa |   3 meses    | Sí<sup>2</sup> |
-|         Visual Studio Professional con GitHub Enterprise          | VL  |   3 meses    | Sí<sup>2</sup> |
+|         Suscripción de Visual Studio Professional con GitHub Enterprise          | VL  |   3 meses    | Sí<sup>2</sup> |
 |              Visual Studio Test Professional (estándar)              |    Licencia por volumen, venta directa     |   No disponible    | NA  |
 |                      Plataformas MSDN (estándar)                       |    Licencia por volumen, venta directa     |   No disponible    | NA  |
 | Visual Studio Enterprise, Visual Studio Professional (de nube mensual) |       Azure       | No disponible |       NA       |

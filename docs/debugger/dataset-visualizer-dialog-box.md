@@ -1,5 +1,7 @@
 ---
 title: Visualizador del conjunto de datos (cuadro de diálogo) | Microsoft Docs
+description: Los visualizadores del depurador de Visual Studio son componentes que muestran datos. Use el visualizador de conjuntos de datos para ver el contenido de objetos DataSet, DataTable, DataView o DataViewManager.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e215d4a52965b4e89bc3a01b15da57fc8919437
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3f57247d23a318da6bf492534c1ff060bb4116bb
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745604"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560478"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>Visualizador del conjunto de datos (cuadro de diálogo)
 El visualizador de conjuntos de datos permite ver el contenido de objetos DataSet, DataTable, DataView o DataViewManager. Puede tener acceso a este visualizador si hace clic en el icono de lupa que aparece junto al valor de uno de dichos objetos en una ventana de variables del depurador o en una información sobre datos.

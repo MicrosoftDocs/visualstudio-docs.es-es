@@ -1,5 +1,7 @@
 ---
 title: Inmediato (ventana)
+description: Obtenga información sobre cómo usar la ventana Inmediato para depurar y evaluar expresiones, ejecutar instrucciones e imprimir valores de variables.
+ms.custom: SEO-VS-2020
 ms.date: 02/25/2019
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b21cdb9136abe1e960e5b74bbf09e7d1694519d7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 342a2a34528134ed1174058b6701c77c9217fc63
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568963"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617024"
 ---
 # <a name="immediate-window"></a>Inmediato (ventana)
 
@@ -90,7 +92,7 @@ Al establecer el contexto de evaluación de expresiones en tiempo de diseño, Vi
 
 Escriba el signo mayor que (>) al emitir comandos de Visual Studio en la ventana **Inmediato**. Use las teclas **Flecha arriba** y **Flecha abajo** para desplazarse por los comandos usados anteriormente.
 
-|Tarea|Soluciones|Ejemplo|
+|Tarea|Solución|Ejemplo|
 |----------|--------------|-------------|
 |Evaluar una expresión.|Empezar la expresión con un signo de interrogación (?).|`? a+b`|
 |Entrar temporalmente en el modo Comando mientras está en el modo Inmediato (para ejecutar un único comando).|Escribir el comando, precedido de un signo mayor que (>).|`>alias`|
@@ -129,7 +131,7 @@ En algunas configuraciones, se muestran notificaciones de excepciones de primera
 
 2. Haga clic con el botón derecho en el área de texto de la ventana **Salida** y active o desactive **Mensajes de excepción**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Desplazarse por el código con el depurador](../../debugger/navigating-through-code-with-the-debugger.md)
 - [Ventana Comandos](../../ide/reference/command-window.md)

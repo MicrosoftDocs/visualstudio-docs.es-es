@@ -1,5 +1,7 @@
 ---
 title: Establecer subproceso actual (Comando)
+description: Obtenga información sobre el comando Establecer subproceso actual y cómo establece el subproceso especificado como el actual.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54c2dabeea14293fdb86120f822eb396a028757a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3cedd37ece7bcc0eb79ad52cc426b07f8cb2ca57
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85768689"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616569"
 ---
 # <a name="set-current-thread-command"></a>Establecer subproceso actual (Comando)
 Establece el subproceso especificado como el subproceso actual.
@@ -40,9 +42,9 @@ Obligatorio. Selecciona un subproceso por su índice.
 >Debug.SetCurrentThread 1
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Ventana Comandos](../../ide/reference/command-window.md)
 - [Cuadro Buscar/Comando](../../ide/find-command-box.md)
-- [Alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

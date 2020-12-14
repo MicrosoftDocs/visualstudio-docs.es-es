@@ -1,5 +1,7 @@
 ---
 title: Archivos varios
+description: Obtenga información sobre cómo trabajar con archivos que no están incluidos en un proyecto o solución de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 793500faf217c74772506b4b7394d926447ffd40
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dc797fe7676d24a80867cc318cbe02f94e90e7d0
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585302"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96561102"
 ---
 # <a name="miscellaneous-files"></a>Archivos varios
 

@@ -1,5 +1,7 @@
 ---
 title: Refactorización de extracción de una interfaz
+description: Obtenga información sobre cómo usar el menú Acciones rápidas y refactorizaciones para crear una interfaz mediante los miembros existentes de una clase, estructura o interfaz.
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -12,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5055f50d07cf9362c9be1bdc8135e31240a7cc66
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 13e9b684c81abf491b5836c96190c6a89bdc0643
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595675"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617401"
 ---
 # <a name="extract-an-interface-refactoring"></a>Refactorización de extracción de una interfaz
 
@@ -60,8 +62,8 @@ Esta refactorización se aplica a lo siguiente:
 
    | Campo | Descripción |
    | - | - |
-   | **Nuevo nombre de interfaz** | Nombre de la interfaz que se va a crear. El nombre predeterminado es I*ClassName*, donde *ClassName* es el nombre de la clase seleccionada anteriormente. |
-   | **Nuevo nombre de archivo** | Nombre del archivo generado que va a incluir la interfaz. Al igual que el nombre de interfaz, el nombre predeterminado es I*ClassName*, donde *ClassName* es el nombre de la clase seleccionada anteriormente. También puede seleccionar la opción **Agregar al archivo actual**. |
+   | **Nuevo nombre de interfaz** | Nombre de la interfaz que se va a crear. El nombre predeterminado es I *ClassName*, donde *ClassName* es el nombre de la clase seleccionada anteriormente. |
+   | **Nuevo nombre de archivo** | Nombre del archivo generado que va a incluir la interfaz. Al igual que el nombre de interfaz, el nombre predeterminado es I *ClassName*, donde *ClassName* es el nombre de la clase seleccionada anteriormente. También puede seleccionar la opción **Agregar al archivo actual**. |
    | **Seleccionar miembros públicos para formar interfaz** | Los elementos que se van a extraer a la interfaz. Puede seleccionar tantos como desee. |
 
 4. Elija **Aceptar**.

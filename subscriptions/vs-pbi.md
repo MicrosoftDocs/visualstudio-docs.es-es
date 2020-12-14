@@ -1,18 +1,18 @@
 ---
-title: Beneficio de Power BI Pro en las suscripciones de Visual Studio | Microsoft Docs
+title: Ventaja de Power BI Pro en las suscripciones de Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 383fc910-3f4c-474a-a3f8-0f13525f05e9
-ms.date: 10/22/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Obtenga información sobre la suscripción de Power BI Pro incluida en la suscripción de Visual Studio seleccionada.
-ms.openlocfilehash: efc7aca0c5729a65a7f622721dbf25931eb89fb8
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 6d64c9e5d15e24dcf53dd5b45261305dffb43353
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92435781"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538077"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro en suscripciones de Visual Studio
 
@@ -64,9 +64,9 @@ Para usar Power BI Pro, debe configurar una cuenta o iniciar sesión con una cue
 | Nivel de suscripción                                                 |     Canales                                            | Prestación                                                          | ¿Renovable?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (estándar)   | Licencia por volumen, Azure, venta directa, no para reventa<sup>1</sup> | Disponible       |  Sí|
-| Visual Studio Enterprise con GitHub Enterprise  | VL | Disponible       |  Sí|
+| Suscripción de Visual Studio Enterprise con GitHub Enterprise  | VL | Disponible       |  Sí|
 | Visual Studio Professional (estándar, de nube mensual) | Licencia por volumen, Azure, venta directa                                       | No disponible                                                            |NA         |
-| Visual Studio Professional con GitHub Enterprise | VL                                      | No disponible                                                            |NA         |
+| Suscripción de Visual Studio Professional con GitHub Enterprise | VL                                      | No disponible                                                            |NA         |
 | Visual Studio Test Professional (estándar)                         | Licencia por volumen, venta directa                                              | No disponible                                                            |NA         |
 | Plataformas MSDN (estándar)                                          | Licencia por volumen, venta directa                                              | Disponible       |  Sí|
 | Visual Studio Enterprise (nube mensual) | Azure                                       | No disponible                                  |NA|

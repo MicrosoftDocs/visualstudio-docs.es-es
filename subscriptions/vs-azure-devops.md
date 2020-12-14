@@ -7,12 +7,12 @@ ms.assetid: fe826200-9600-4b29-a64e-0d66ba3caf3d
 ms.date: 07/22/2020
 ms.topic: conceptual
 description: Descubra cómo puede usar Azure DevOps como un suscriptor de Visual Studio.
-ms.openlocfilehash: 536941d02b790349d126257e61164d2b0b98d794
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: f8cf4cd5f2165a528301d5dc2387a7906f11dcab
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95970500"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537700"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Ventajas de Azure DevOps para suscriptores de Visual Studio
 Como suscriptor activo de Visual Studio, puede usar una serie de características de Azure DevOps que se incluyen como ventaja en la suscripción. Podrá usar estas mismas características en cada organización de Azure DevOps de la que sea miembro (porque haya creado la organización usted mismo o porque otra persona le ha agregado).
@@ -31,9 +31,9 @@ Cuando inicie sesión en Azure DevOps (ya sea con la identidad que ha usado para
 | Nivel de suscripción                                                 |     Canales                                            | Prestación                                                          | ¿Renovable?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (estándar, de nube mensual)   | Licencia por volumen, Azure, venta directa, no para reventa<sup>1</sup>  | Azure Boards y Azure Repos (básico<sup>2</sup>), Azure Test Plans, trabajos paralelos autohospedados |  Sí          |
-| Visual Studio Enterprise con GitHub Enterprise   | VL| Azure Boards y Azure Repos (básico<sup>2</sup>), Azure Test Plans, trabajos paralelos autohospedados |  Sí          |
+| Suscripción de Visual Studio Enterprise con GitHub Enterprise   | VL| Azure Boards y Azure Repos (básico<sup>2</sup>), Azure Test Plans, trabajos paralelos autohospedados |  Sí          |
 | Visual Studio Professional (estándar, de nube mensual) | Licencia por volumen, Azure, venta directa                                        | Azure Boards y Azure Repos (básico<sup>2</sup>)                                                             |  Sí          |
-| Visual Studio Professional con GitHub Enterprise | VL| Azure Boards y Azure Repos (básico<sup>2</sup>)                                                             |  Sí          |
+| Suscripción de Visual Studio Professional con GitHub Enterprise | VL| Azure Boards y Azure Repos (básico<sup>2</sup>)                                                             |  Sí          |
 | Visual Studio Test Professional (estándar)                         | Licencia por volumen, venta directa                                              | Azure Boards y Azure Repos (básico<sup>2</sup>), Azure Test Plans                                              |  Sí          |
 | Plataformas MSDN (estándar)                                          | Licencia por volumen, venta directa                                              | Azure Boards y Azure Repos (básico<sup>2</sup>), Azure Test Plans                                             |  Sí          |
 ||

@@ -1,5 +1,7 @@
 ---
 title: Página Configuración, Diseñador de proyectos
+description: Obtenga información sobre cómo usar la página Configuración del Diseñador de proyectos para especificar la configuración de la aplicación de un proyecto.
+ms.custom: SEO-VS-2020
 ms.date: 06/14/2018
 ms.topic: reference
 f1_keywords:
@@ -12,16 +14,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f4ca1def334241999445e3f11cf142aa426d962
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2b5aa077043b16c01a05e8730bcd2b42719edaf0
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75566779"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560322"
 ---
 # <a name="settings-page-project-designer"></a>Página Configuración, Diseñador de proyectos
 
-Use la página **Configuración** del Diseñador de proyectos para especificar la configuración de la aplicación de un proyecto. La configuración de la aplicación permite almacenar y recuperar valores de propiedad y otros datos para la aplicación de forma dinámica. También permite mantener la aplicación y las preferencias del usuario personalizadas en un equipo cliente. Para obtener más información, vea [Administración de la configuración de la aplicación](../managing-application-settings-dotnet.md).
+Use la página **Configuración** del Diseñador de proyectos para especificar la configuración de la aplicación de un proyecto. La configuración de la aplicación permite almacenar y recuperar valores de propiedad y otros datos para la aplicación de forma dinámica. También permite mantener la aplicación y las preferencias del usuario personalizadas en un equipo cliente. Para más información, consulte [Administración de la configuración de las aplicaciones](../managing-application-settings-dotnet.md).
 
 Para acceder a la página **Configuración**, seleccione un nodo de proyecto en el **Explorador de soluciones** y, luego, seleccione **Proyecto** > **Propiedades**. Cuando aparezca el Diseñador de proyectos, seleccione la pestaña **Configuración**.
 
@@ -57,7 +59,7 @@ Para proyectos de Visual C#, el modificador de acceso puede ser **Interno** o **
 
 Para proyectos de Visual Basic, el modificador de acceso puede ser **Amigo** o **Público**.
 
-De forma predeterminada, el valor es **Interno** en C# y **Amigo** en Visual Basic. Cuando Visual Studio genera clases del asistente como **Interno** o **Amigo**, las aplicaciones ejecutables ( *.exe*) no pueden acceder a los recursos y la configuración que ha agregado a las bibliotecas de clases (archivos *.dll*). Si tiene que compartir recursos y la configuración de una biblioteca de clases, establezca el modificador de acceso en **Público**.
+De forma predeterminada, el valor es **Interno** en C# y **Amigo** en Visual Basic. Cuando Visual Studio genera clases del asistente como **Interno** o **Amigo**, las aplicaciones ejecutables (*.exe*) no pueden acceder a los recursos y la configuración que ha agregado a las bibliotecas de clases (archivos *.dll*). Si tiene que compartir recursos y la configuración de una biblioteca de clases, establezca el modificador de acceso en **Público**.
 
 Para obtener más información sobre las clases del asistente de configuración, vea [Administración de la configuración de la aplicación](../managing-application-settings-dotnet.md).
 
@@ -65,11 +67,11 @@ Para obtener más información sobre las clases del asistente de configuración,
 
 La **cuadrícula Configuración** se usa para configurar la configuración de la aplicación. Esta cuadrícula incluye las siguientes columnas:
 
-**Name**
+**Nombre**
 
 Escriba el nombre de la configuración de la aplicación en este campo.
 
-**ype**
+**Tipo**
 
 Use la lista desplegable para seleccionar un tipo de configuración. Los tipos utilizados con mayor frecuencia aparecen en la lista desplegable, por ejemplo, **Cadena**, **(Cadena de conexión)** y **System.Drawing.Font**. Puede elegir otro tipo si hace clic en **Examinar** al final de la lista y elige un tipo en el cuadro de diálogo **Select a Type** (Seleccionar un tipo). Después de elegir un tipo, este se agrega a los tipos comunes en la lista desplegable (solo para la solución actual).
 
@@ -85,7 +87,7 @@ La configuración de ámbito de usuario, como las fuentes del sistema, está dis
 
 Los datos o el valor asociado con la configuración de la aplicación. Por ejemplo, si el valor es una fuente, su valor podría ser **Verdana, 9.75pt, style=Bold**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Administración de la configuración de la aplicación](../managing-application-settings-dotnet.md)
+- [Administrar configuración de la aplicación](../managing-application-settings-dotnet.md)
 - [Acceso a la configuración de la aplicación (Visual Basic)](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings)

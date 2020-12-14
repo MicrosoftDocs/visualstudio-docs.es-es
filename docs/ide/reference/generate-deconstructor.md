@@ -1,5 +1,7 @@
 ---
 title: Acción rápida Generar un deconstructor
+description: Obtenga información sobre cómo usar el menú Acciones rápidas y refactorizaciones para generar inmediatamente el stub de método para un nuevo deconstructor.
+ms.custom: SEO-VS-2020
 ms.date: 02/19/2019
 ms.topic: reference
 author: kendrahavens
@@ -9,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5a3a89d15d05b44575fede98d3043d706b24c1d9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ff2ac7682eff1c3da0597a95945a6a0b016d9213
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "65531881"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617258"
 ---
 # <a name="generate-a-deconstructor-in-visual-studio"></a>Generar un deconstructor en Visual Studio
 
@@ -34,13 +36,13 @@ Esta generación de código se aplica a:
 
    ![Error de deconstructor ausente](media/deconstruct.png)
 
-2. Elija uno de los siguientes pasos:
+2. Realice uno de los siguientes pasos:
 
    - **Teclado**
       - Con el cursor en la declaración, seleccione Ctrl+. para activar el menú **Acciones rápidas y refactorizaciones**.
    - **Mouse**
       - Haga clic con el botón derecho y seleccione el menú **Acciones rápidas y refactorizaciones**.
-      - Seleccione el ![icono de destornillador](media/screwdriver.png) que aparece en el margen izquierdo si el cursor de texto ya está en la línea vacía de la clase.
+      - Seleccione el icono :::image type="icon" source="media/screwdriver.png"::: que aparece en el margen izquierdo si el cursor de texto ya está en la línea vacía de la clase.
 
       ![Generar corrección del código de deconstructor](media/deconstruct-codefix.png)
 

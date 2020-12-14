@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: fc33d419-78cf-485e-b558-5b7efa900f14
-ms.date: 10/22/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Obtenga información sobre la suscripción de aprendizaje de DataCamp incluida en la suscripción de Visual Studio seleccionada.
-ms.openlocfilehash: 54f2cf98d6e726e8abf8a0a863a54cc891c12523
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: c675d49f1a099c53dfdabe08a71f1c5545010f97
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92435892"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538090"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Beneficio de aprendizaje de DataCamp en suscripciones de Visual Studio
 Entre las suscripciones de Visual Studio válidas se incluyen las suscripciones a DataCamp.  Con DataCamp, puede obtener información sobre todas las aptitudes ciencia de datos que necesita cómodamente desde el explorador. Puede elegir cuándo y qué aprender. Al no tener que instalar ningún software ni cumplir ningún requisito de hardware en particular, ahora el aprendizaje de ciencia de datos es más fácil que nunca.
@@ -60,9 +60,9 @@ Puede parar en cualquier momento y reanudar el curso en la siguiente sesión.  S
 | Nivel de suscripción                                                 |     Canales                                            | Prestación                                                          | ¿Renovable?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (estándar)   | Licencia por volumen, Azure, venta directa | 3 meses       |  No.  Disponible solo para nuevos suscriptores          |
-| Visual Studio Enterprise con GitHub Enterprise   | VL | 3 meses       |  No.  Disponible solo para nuevos suscriptores          |
+| Suscripción de Visual Studio Enterprise con GitHub Enterprise   | VL | 3 meses       |  No.  Disponible solo para nuevos suscriptores          |
 | Visual Studio Professional (estándar) | Licencia por volumen, Azure, venta directa                                       | 3 meses                                                            |  No.  Disponible solo para nuevos suscriptores           |
-| Visual Studio Professional con GitHub Enterprise| VL | 3 meses                                                            |  No.  Disponible solo para nuevos suscriptores           |
+| Suscripción de Visual Studio Professional con GitHub Enterprise| VL | 3 meses                                                            |  No.  Disponible solo para nuevos suscriptores           |
 | Visual Studio Test Professional (estándar)                         | Licencia por volumen, venta directa                                              | 3 meses                                             |  No.  Disponible solo para nuevos suscriptores           |
 | Plataformas MSDN (estándar)                                          | Licencia por volumen, venta directa                                              | 3 meses                                              |  No.  Disponible solo para nuevos suscriptores           |
 | Visual Studio Enterprise (estándar)  | NFR<sup>1</sup> |No disponible  | N/D |

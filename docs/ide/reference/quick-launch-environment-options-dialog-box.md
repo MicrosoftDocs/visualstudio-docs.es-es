@@ -1,5 +1,7 @@
 ---
 title: Inicio rápido, Entorno, Opciones (cuadro de diálogo)
+description: Obtenga información sobre cómo usar la página Inicio rápido de la sección Entorno para buscar y ejecutar acciones rápidamente para recursos del IDE como opciones, plantillas y menús.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +17,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 706b54e3ee925b1833f860da2f84c8d28af9617e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e055906dd4cddabd16b39e3b2cad66d07dddd38d
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75565674"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616751"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Inicio rápido, Entorno, Opciones (cuadro de diálogo)
 
@@ -34,7 +36,7 @@ Aparecen los resultados de búsqueda de Inicio rápido en cuatro categorías: **
 
 Puede utilizar los siguientes accesos directos para limitar la búsqueda a las categorías específicas.
 
-|Categoría|Acceso directo|Descripción del acceso directo|
+|Category|Acceso directo|Descripción del acceso directo|
 |--------------|--------------| - |
 |Usados más recientemente|@mru<br /><br /> Por ejemplo: `@mru font`|Muestra hasta cinco de los elementos que ha **usado más recientemente**.|
 |Menús|@menu<br /><br /> Por ejemplo: `@menu project`|Limita la búsqueda a los elementos de menú.|

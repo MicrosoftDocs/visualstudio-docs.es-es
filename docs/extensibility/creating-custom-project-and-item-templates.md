@@ -1,5 +1,7 @@
 ---
 title: Creación de plantillas de proyecto y de elemento personalizadas | Microsoft Docs
+description: Obtenga información sobre cómo la creación de plantillas en el SDK de Visual Studio le permite incluir plantillas en extensiones de mayor tamaño.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: overview
 ms.assetid: 586da5dc-f678-402b-afd0-0332959fd7a6
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb6bcd63896a11f9ca1eabddddc17b3e52865e5b
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 78770c74e5b866ad6791db01a448d46231edfd2a
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801261"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915627"
 ---
 # <a name="create-custom-project-and-item-templates"></a>Creación de plantillas de proyecto y de elemento personalizadas
 
@@ -32,7 +34,7 @@ Para los escenarios de creación de plantillas básicas, debe usar el asistente 
 
 1. Cree un proyecto de plantilla de proyecto. Puede encontrar la plantilla de proyecto en el cuadro de diálogo **Nuevo proyecto** buscando "plantilla de proyecto" y seleccionando la versión C# o Visual Basic.
 
-     La plantilla genera un archivo de clase, un icono, un archivo *.vstemplate*, un archivo de proyecto editable denominado *ProjectTemplate.vbproj* o *ProjectTemplate.csproj*y algunos archivos generados normalmente por otros tipos de proyecto, como un archivo *resources.resx*, un archivo *AssemblyInfo* y un archivo *.settings*. Cada archivo de código contiene sustituciones de parámetros comunes donde corresponda.
+     La plantilla genera un archivo de clase, un icono, un archivo *.vstemplate*, un archivo de proyecto editable denominado *ProjectTemplate.vbproj* o *ProjectTemplate.csproj* y algunos archivos generados normalmente por otros tipos de proyecto, como un archivo *resources.resx*, un archivo *AssemblyInfo* y un archivo *.settings*. Cada archivo de código contiene sustituciones de parámetros comunes donde corresponda.
 
 ![selección de proyecto de plantilla de proyecto](media/project-template-selection.png)
 

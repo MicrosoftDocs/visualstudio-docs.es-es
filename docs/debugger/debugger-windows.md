@@ -1,6 +1,7 @@
 ---
 title: Inspección de datos mediante ventanas del depurador | Microsoft Docs
-ms.custom: seodec18
+description: Hay muchos tipos de ventanas del depurador en las que se proporciona información. En este artículo se proporciona una lista de los tipos. Para cada una de ellas hay un vínculo a más información.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 04/25/2018
 ms.topic: conceptual
 ms.assetid: 4c6fe8f1-b015-4989-bb31-72ebac390026
@@ -9,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c27d2b4436fc5defedcda44c4f7840760018ade
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: e8caa5f11f4f0501d8b56c308d5336f10d518062
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188544"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560738"
 ---
 # <a name="inspect-data-using-debugger-windows-in-visual-studio"></a>Inspección de datos mediante ventanas del depurador en Visual Studio
 

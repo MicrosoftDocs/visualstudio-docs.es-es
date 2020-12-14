@@ -1,5 +1,5 @@
 ---
-title: Ventaja de CAST Highlight en las suscripciones de Visual Studio | Microsoft Docs
+title: Ventaja de CAST Highlight en las suscripciones de Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: lank
@@ -7,12 +7,12 @@ ms.assetid: 92e8957f-c690-46bd-a812-3efd06a2bc6b
 ms.date: 10/21/2020
 ms.topic: how-to
 description: Obtenga información sobre la ventaja de CAST Highlight disponible en las suscripciones de Visual Studio.
-ms.openlocfilehash: a6c1836724f05255c5120a336b8976ccae3cadbd
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: fbc7b6278d29d96ed8d97933c295468c7d3e2754
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353374"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538142"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Ventaja de CAST Highlight para suscripciones de Visual Studio
 Los desarrolladores necesitan información clave sobre su software al realizar la migración a la nube. Con CAST Highlight, los suscriptores de Visual Studio pueden examinar rápidamente su código fuente de aplicación para identificar la preparación de la nube de sus aplicaciones para la migración a Azure y supervisar el progreso de su aplicación tanto durante una migración como después.
@@ -78,9 +78,9 @@ Tras la aprobación de su solicitud, recibirá un segundo correo electrónico en
 | Nivel de suscripción                                                 |     Canales                                            | Prestación                                                          | ¿Renovable?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (estándar)   | Licencia por volumen, Azure, venta directa | Evalúe 5 aplicaciones durante tres meses.|  No.  Disponible solo para nuevos suscriptores          |
-| Visual Studio Enterprise con GitHub Enterprise  | VL | Evalúe 5 aplicaciones durante tres meses.|  No.  Disponible solo para nuevos suscriptores          |
+| Suscripción de Visual Studio Enterprise con GitHub Enterprise  | VL | Evalúe 5 aplicaciones durante tres meses.|  No.  Disponible solo para nuevos suscriptores          |
 | Visual Studio Professional (estándar) | Licencia por volumen, Azure, venta directa                                       | Evalúe 1 aplicación durante tres meses.                                                             |  No.  Disponible solo para nuevos suscriptores                  |
-| Visual Studio Professional con GitHub Enterprise | VL                                       | Evalúe 1 aplicación durante tres meses.                                                            |  No.  Disponible solo para nuevos suscriptores                  |
+| Suscripción de Visual Studio Professional con GitHub Enterprise | VL                                       | Evalúe 1 aplicación durante tres meses.                                                            |  No.  Disponible solo para nuevos suscriptores                  |
 | Visual Studio Test Professional (estándar)                         | Licencia por volumen, venta directa                                              | No disponible                                             |  N/D           |
 | Plataformas MSDN (estándar)                                          | Licencia por volumen, venta directa                                              | No disponible                                              |  N/D          |
 | Visual Studio Enterprise (estándar)  | NFR<sup>1</sup> |No disponible  | N/D |

@@ -1,18 +1,18 @@
 ---
-title: Beneficio de cuenta de desarrollador de Windows en suscripciones de Visual Studio | Microsoft Docs
+title: Ventaja Cuenta de desarrollador de Windows en suscripciones de Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
-ms.date: 10/22/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Obtenga información sobre la cuenta de desarrollador de Windows que se incluye con la suscripción de Visual Studio.
-ms.openlocfilehash: 46cb22becd8a5ac852c7fddbd2cf8b473cef47bc
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 4b8d2190792f942f808c1fda62a7020fefdca866
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92435822"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537726"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Cuenta de desarrollador de Windows en suscripciones de Visual Studio
 Su cuenta de desarrollador de Windows, incluida con algunas suscripciones de Visual Studio, permite enviar a Microsoft Store aplicaciones Windows tanto gratuitas como de pago.
@@ -44,9 +44,9 @@ Se recomienda crear una ventana "privada" del explorador para este proceso.  Por
 | Nivel de suscripción                                                 |     Canales                                            | Prestación                                                          | ¿Renovable?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (estándar)   | Licencia por volumen, Azure, venta directa, no para reventa<sup>1</sup> | Included       |  Sí|
-| Visual Studio Enterprise con GitHub Enterprise   | VL  | Included       |  Sí|
+| Suscripción de Visual Studio Enterprise con GitHub Enterprise   | VL  | Included       |  Sí|
 | Visual Studio Professional (estándar) | Licencia por volumen, Azure, venta directa                                       | Included                                                            |Sí|
-| Visual Studio Professional con GitHub Enterprise | VL                                        | Included                                                            |Sí|
+| Suscripción de Visual Studio Professional con GitHub Enterprise | VL                                        | Included                                                            |Sí|
 | Visual Studio Test Professional (estándar)                         | Licencia por volumen, venta directa                                              | No disponible                                            |  NA|
 | Plataformas MSDN (estándar)                                          | Licencia por volumen, venta directa                                              |  No disponible                                            |  NA|
 | Visual Studio Enterprise, Visual Studio Professional (de nube mensual) | Azure                                       | No disponible                                                           |NA|

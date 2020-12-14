@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: c15f7e18-b280-4902-a60d-2c2598653207
-ms.date: 11/17/2020
+ms.date: 12/02/2020
 ms.topic: conceptual
 description: Obtenga información sobre la ventaja Soporte técnico de la Comunidad de Azure incluida en las suscripciones de Visual Studio.
-ms.openlocfilehash: 21f984d3c41ae4f654fea638792b5db4f3c8acb2
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 58f587d5e9c27197b28457c512e4eb94f07851ef
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903928"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538025"
 ---
 # <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Foro de soporte técnico de la Comunidad de Azure en las suscripciones de Visual Studio
 Obtenga ayuda directamente del equipo de Azure en los foros de soporte seleccionados a través de la Comunidad Azure.  El beneficio de la Comunidad Azure proporciona acceso a una colección de foros que se centran en los temas relacionados con Azure.
@@ -71,9 +71,9 @@ La disponibilidad de la ventaja Comunidad Azure depende del nivel de suscripció
 |                                          Nivel de suscripción                                           |     Canales      |    Prestación    | ¿Renovable? |
 |-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
 |                           Visual Studio Enterprise (estándar), NFR<sup>1</sup>                            | Licencia por volumen, Azure, venta directa |   Disponible    |    Sí     |
-|                           Visual Studio Enterprise con GitHub Enterprise                           | Licencia por volumen, Azure, venta directa |   Disponible    |    Sí     |
+|                           Suscripción de Visual Studio Enterprise con GitHub Enterprise                           | Licencia por volumen, Azure, venta directa |   Disponible    |    Sí     |
 |                          Visual Studio Professional (estándar)                          | Licencia por volumen, Azure, venta directa |   Disponible    |    Sí     |
-|                          Visual Studio Professional con GitHub Enterprise                          | Licencia por volumen, Azure, venta directa |   Disponible    |    Sí     |
+|                          Suscripción de Visual Studio Professional con GitHub Enterprise                          | Licencia por volumen, Azure, venta directa |   Disponible    |    Sí     |
 |                              Visual Studio Test Professional (estándar)                               |    Licencia por volumen, venta directa     |   Disponible    |    Sí     |
 |                                       Plataformas MSDN (estándar)                                       |    Licencia por volumen, venta directa     |   Disponible    |    Sí     |
 | Visual Studio Enterprise (nube mensual) Visual Studio Professional (nube mensual)|        Todas        | No disponible |     No     |

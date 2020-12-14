@@ -1,5 +1,7 @@
 ---
 title: Alias de comandos
+description: Obtenga información sobre cómo usar alias de comandos para escribir menos caracteres cuando se quiere ejecutar un comando.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b420644672309371ab61f1499e22d4745c69c569
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9dda564939652a09b64fec65747ca14d1315b3f1
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596416"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96561076"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 
@@ -35,21 +37,21 @@ La tabla siguiente contiene una lista de los alias de comando de Visual Studio p
 
 |Nombre de comando|Alias|Nombre completo|
 |------------------|-----------|-------------------|
-|[Comando Imprimir](../../ide/reference/print-command.md)|?|Debug.Print|
+|[Imprimir (Comando)](../../ide/reference/print-command.md)|?|Debug.Print|
 |[Inspección rápida (Comando)](../../ide/reference/quick-watch-command.md)|??|Debug.Quickwatch|
 |Agregar nuevo proyecto|AddProj|File.AddNewProject|
 |[Alias (Comando)](../../ide/reference/alias-command.md)|Alias|Tools.Alias|
 |Ventana Automático|Autos|Debug.Autos|
 |ventana Puntos de interrupción|bl|Debug.Breakpoints|
-|Alternar punto de interrupción|bp|Debug.ToggleBreakPoint|
+|Alternar puntos de interrupción|bp|Debug.ToggleBreakPoint|
 |Ventana Pila de llamadas|CallStack|Debug.CallStack|
 |Borrar marcadores|ClearBook|Edit.ClearBookmarks|
 |Cerrar|Cerrar|File.Close|
 |Cerrar todos los documentos|CloseAll|Window.CloseAllDocuments|
 |Borrar todo|cls|Edit.ClearAll|
 |Modo Comando|cmd|View.CommandWindow|
-|Ver código|code|View.ViewCode|
-|[Mostrar memoria (comando)](../../ide/reference/list-memory-command.md)|d|Debug.ListMemory|
+|Ver código|código|View.ViewCode|
+|[Mostrar memoria (Comando)](../../ide/reference/list-memory-command.md)|d|Debug.ListMemory|
 |[Comando Mostrar memoria](../../ide/reference/list-memory-command.md) como ANSI|da|Debug.ListMemory /Ansi|
 |[Comando Mostrar memoria](../../ide/reference/list-memory-command.md) con formato de un byte|db|Debug.ListMemory /Format:OneByte|
 |[Comando Mostrar memoria](../../ide/reference/list-memory-command.md) como ANSI con formato de cuatro bytes|dc|Debug.ListMemory /Format:FourBytes /Ansi|
@@ -66,11 +68,11 @@ La tabla siguiente contiene una lista de los alias de comando de Visual Studio p
 |Salir|Salir|File.Exit|
 |Dar formato a la selección|format|Edit.FormatSelection|
 |Pantalla completa|FullScreen|View.FullScreen|
-|[Iniciar (Comando)](../../ide/reference/start-command.md)|e|Debug.Start|
-|[Ir a (Comando)](../../ide/reference/go-to-command.md)|GotoLn|Edit.GoTo|
+|[Iniciar (Comando)](../../ide/reference/start-command.md)|g|Debug.Start|
+|[Ir a, comando](../../ide/reference/go-to-command.md)|GotoLn|Edit.GoTo|
 |Ir a llave|GotoBrace|Edit.GotoBrace|
 |F1Help|Ayuda|Help.F1Help|
-|Modo Inmediato|immed|Tools.ImmediateMode|
+|Modo inmediato|immed|Tools.ImmediateMode|
 |Insertar archivo como texto|InsertFile|Edit.InsertFileAsText|
 |[Mostrar pila de llamadas (Comando)](../../ide/reference/list-call-stack-command.md)|kb|Debug.ListCallStack|
 |Poner en minúsculas|Lcase|Edit.MakeLowercase|
@@ -78,37 +80,37 @@ La tabla siguiente contiene una lista de los alias de comando de Visual Studio p
 |Eliminar línea|LineDel|Edit.LineDelete|
 |Lista de miembros|ListMembers|Edit.ListMembers|
 |Ventana Locales|Locals|Debug.Locals|
-|[Registrar resultados de la ventana de comandos (Comando)](../../ide/reference/log-command-window-output-command.md)|Registro|Tools.LogCommandWindowOutput|
+|[Registrar resultados de la ventana de comandos (Comando)](../../ide/reference/log-command-window-output-command.md)|Log|Tools.LogCommandWindowOutput|
 |Modo Marcar ventana de comandos|mark|Tools.CommandWindowMarkMode|
 |Ventana Memoria|Memory Memory1|Debug.Memory1|
 |Ventana Memoria 2|Memory2|Debug.Memory2|
 |Ventana Memoria 3|Memory3|Debug.Memory3|
 |Ventana Memoria 4|Memory4|Debug.Memory4|
 |[Establecer base (comando)](../../ide/reference/set-radix-command.md)|n|Debug.SetRadix|
-|[Comando ShowWebBrowser](../../ide/reference/showwebbrowser-command.md)|nav navigate|View.ShowWebBrowser|
+|[ShowWebBrowser (Comando)](../../ide/reference/showwebbrowser-command.md)|nav navigate|View.ShowWebBrowser|
 |Marcador siguiente|NextBook|Edit.NextBookmark|
-|[Comando Nuevo archivo](../../ide/reference/new-file-command.md)|nf|File.NewFile|
-|nuevo proyecto|np NewProj|File.NewProject|
+|[Nuevo archivo (Comando)](../../ide/reference/new-file-command.md)|nf|File.NewFile|
+|Nuevo proyecto|np NewProj|File.NewProject|
 |[Abrir archivo (comando)](../../ide/reference/open-file-command.md)|of Open|File.OpenFile|
 |[Abrir proyecto (Comando)](../../ide/reference/open-project-command.md)|op|File.OpenProject|
 |Contraer a definiciones/Detener esquematización|OutlineDefs StopOutlining|Edit.CollapseToDefinitions|
 |Paso a paso por procedimientos|p|Debug.StepOver|
 |Información de parámetros|ParamInfo|Edit.ParameterInfo|
-|Paso a paso para salir|pr|Debug.StepOut|
+|Depurar paso a paso para salir|pr|Debug.StepOut|
 |Marcador anterior|PrevBook|Edit.PreviousBookmark|
-|Imprimir archivo|print|File.Print|
+|Imprimir archivo|imprimir|File.Print|
 |Ventana Propiedades|props|View.PropertiesWindow|
-|Detener|q|Debug.StopDebugging|
-|Redo|redo|Edit.Redo|
+|Stop|q|Debug.StopDebugging|
+|Rehacer|rehacer|Edit.Redo|
 |Ventana Registros|registers|Debug.Registers|
 |Ejecutar hasta el cursor|rtc|Debug.RunToCursor|
-|Guardar los elementos seleccionados|save|File.SaveSelectedItems|
+|Guardar los elementos seleccionados|Guardar|File.SaveSelectedItems|
 |Guardar todo|SaveAll|File.SaveAll|
 |Guardar como|SaveAs|File.SaveSelectedItemsAs|
 |[Shell (comando)](../../ide/reference/shell-command.md)|shell|Tools.Shell|
 |Detener Buscar en archivos|StopFind|Edit.FindInFiles /stop|
 |Cambiar delimitador|SwapAnchor|Edit.SwapAnchor|
-|Paso a paso por instrucciones|m|Debug.StepInto|
+|Paso a paso por instrucciones|t|Debug.StepInto|
 |Aplicar tabulación a la selección|tabify|Edit.TabifySelection|
 |Ventana Lista de tareas|TaskList|View.TaskList|
 |Ventana Subprocesos|Subprocesos|Debug.Threads|
@@ -116,16 +118,16 @@ La tabla siguiente contiene una lista de los alias de comando de Visual Studio p
 |Mosaico vertical|TileV|Window.TileVertically|
 |Alternar marcador|ToggleBook|Edit.ToggleBookmark|
 |Ventana Cuadro de herramientas|cuadro de herramientas|View.Toolbox|
-|[Comando Mostrar desensamblador](../../ide/reference/list-disassembly-command.md)|u|Debug.ListDisassembly|
+|[Mostrar desensamblador (comando)](../../ide/reference/list-disassembly-command.md)|u|Debug.ListDisassembly|
 |Poner en mayúsculas|Ucase|Edit.MakeUppercase|
-|Undo|undo|Edit.Undo|
+|Deshacer|deshacer|Edit.Undo|
 |Quitar tabulación a la selección|Untabify|Edit.UntabifySelection|
-|Ventana Inspección|Watch|Debug.WatchN|
+|Ventana Inspección|Inspección|Debug.WatchN|
 |Alternar ajuste de línea|WordWrap|Edit.ToggleWordWrap|
 |Mostrar procesos|&#124;|Debug.ListProcesses|
-|[Comando Mostrar subprocesos](../../ide/reference/list-threads-command.md)|~ ~*k ~\*kb|Debug.ListThreads Debug.ListTheads /AllThreads|
+|[Mostrar subprocesos (Comando)](../../ide/reference/list-threads-command.md)|~ ~*k ~\*kb|Debug.ListThreads Debug.ListTheads /AllThreads|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Ventana Comandos](../../ide/reference/command-window.md)

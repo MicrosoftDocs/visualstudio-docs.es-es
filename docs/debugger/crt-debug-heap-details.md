@@ -1,5 +1,7 @@
 ---
 title: Detalles del montón de depuración de CRT | Microsoft Docs
+description: El montón de depuración proporciona herramientas eficaces para solucionar los problemas de asignación de memoria. Obtenga información sobre las herramientas y cómo ayudan a solucionar problemas como las pérdidas y los desbordamientos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -73,12 +75,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22307c44e4f82056887fadf6e8fde9e1449a19a5
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 774c6c03d0485664eb01e1a7967003ef2f5bd2bc
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88247938"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560621"
 ---
 # <a name="crt-debug-heap-details"></a>Detalles del montón de depuración de CRT
 Este tema proporciona un examen detallado del montón de depuración de CRT.

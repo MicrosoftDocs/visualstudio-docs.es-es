@@ -1,5 +1,7 @@
 ---
 title: Ventana Cuadro de herramientas
+description: Obtenga información sobre la ventana Cuadro de herramientas y cómo muestra controles que puede agregar a proyectos de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 06/01/2020
 ms.topic: reference
 f1_keywords:
@@ -13,18 +15,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9807762a4573cdbc68a4af26bf9d73b46827c7af
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 905288d4a580f5633196273666fbea3954d1767c
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285350"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560283"
 ---
 # <a name="toolbox"></a>Cuadro de herramientas
 
 La ventana **Cuadro de herramientas** muestra los controles que puede agregar a proyectos de Visual Studio. Para abrir la ventana **Cuadro de herramientas**, elija **Ver** > **Cuadro de herramienta** en la barra de menús, o bien presione **Ctrl**+**Alt**+**X**.
 
-![Ventana Cuadro de herramientas](media/vs-2019/toolbox.png "Captura de pantalla de la ventana Cuadro de herramientas")
+![Captura de pantalla de la ventana Cuadro de herramientas en la que se muestran las opciones de la sección Contenedores.](media/vs-2019/toolbox.png "Captura de pantalla de la ventana Cuadro de herramientas")
 
 Puede arrastrar y colocar distintos controles en la superficie del diseñador que use y cambiar su tamaño y posición.
 
@@ -37,7 +39,7 @@ La versión de .NET de destino del proyecto también afecta al conjunto de contr
 
 ::: moniker range="vs-2019"
 
-![Ventana Cuadro de herramientas](media/vs-2019/toolbox-change-dotnet-version.png "Captura de pantalla del cuadro de diálogo donde puede cambiar la versión de .NET")
+![Captura de pantalla del cuadro de diálogo Aplicación en el que se muestran las opciones de la lista desplegable Plataforma de destino.](media/vs-2019/toolbox-change-dotnet-version.png "Captura de pantalla del cuadro de diálogo donde puede cambiar la versión de .NET")
 
 ::: moniker-end
 

@@ -1,5 +1,7 @@
 ---
 title: Ruta de acceso de símbolos (Comando)
+description: Obtenga información sobre el comando Ruta de acceso de símbolos y cómo establece la lista de directorios para que el depurador busque símbolos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83acc551c778fdb245b3bacec164a7544253d55f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: bd3268f3c40736f85a18b35e33c6cc78c96d6c88
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808696"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616452"
 ---
 # <a name="symbol-path-command"></a>Ruta de acceso de símbolos (Comando)
 Establece la lista de directorios para que el depurador busque símbolos.
@@ -35,7 +37,7 @@ Debug.SymbolPath pathname1;pathname2;... pathnameN
 
 Opcional. Lista de rutas de acceso delimitada por puntos y comas para que el depurador busque símbolos.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 Si no se especifica ningún `pathname`, el comando muestra las rutas de acceso de símbolos actuales.
 
 ## <a name="example-1"></a>Ejemplo 1
@@ -52,7 +54,7 @@ En este ejemplo, se muestra una lista delimitada por puntos y comas de rutas de 
 Debug.SymbolPath
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Ventana Comandos](../../ide/reference/command-window.md)
 - [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)

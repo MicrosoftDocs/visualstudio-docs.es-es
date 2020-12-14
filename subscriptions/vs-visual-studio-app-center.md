@@ -1,18 +1,18 @@
 ---
-title: Beneficio de Visual Studio App Center en las suscripciones de Visual Studio | Microsoft Docs
+title: Ventaja Visual Studio App Center en las suscripciones de Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabushcl
 ms.assetid: badd1d4a-90a6-46de-a037-945a91e6019b
-ms.date: 10/22/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Obtenga información sobre la ventaja Visual Studio App Center incluida en las suscripciones de Visual Studio.
-ms.openlocfilehash: 6b1fc94d596f3b771f8354c0857ef533c00e1449
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 8468b7641d12eca4db09d55d8d308ef5a913bc3c
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92435730"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537778"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center en suscripciones de Visual Studio
 
@@ -43,9 +43,9 @@ Es sencillo empezar a utilizar Visual Studio App Center.
 | Nivel de suscripción                                                 |     Canales                                            | Prestación                                                          | ¿Renovable?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (estándar, de nube mensual)   | Licencia por volumen, Azure, venta directa, NFR<sup>1</sup> | Included       |  Sí          |
-| Visual Studio Enterprise con GitHub Enterprise  | VL | Included       |  Sí          |
+| Suscripción de Visual Studio Enterprise con GitHub Enterprise  | VL | Included       |  Sí          |
 | Visual Studio Professional (estándar, de nube mensual) | Licencia por volumen, Azure, venta directa                                       | Included                                                            |Sí |
-| Visual Studio Professional con GitHub Enterprise | VL                                      | Included                                                            |Sí |
+| Suscripción de Visual Studio Professional con GitHub Enterprise | VL                                      | Included                                                            |Sí |
 | Visual Studio Test Professional (estándar)                         | Licencia por volumen, venta directa                                              | Included                                                            |Sí |
 | Plataformas MSDN (estándar)                                          | Licencia por volumen, venta directa                                              | Included                                                            |Sí |
 ||

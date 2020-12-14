@@ -1,5 +1,7 @@
 ---
 title: Depuración y proceso host | Microsoft Docs
+description: Para las versiones de Visual Studio anteriores a 2017, use el proceso de hospedaje para mejorar el rendimiento del depurador y acceder a algunas de sus características.
+ms.custom: SEO-VS-2020
 ms.date: 08/01/2018
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f77df2eae643b658e915662e0f50f6a376141d27
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 3b6f2650da6a83d936869d01fdc661bc9ddf8fc0
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188459"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560699"
 ---
 # <a name="debugging-and-the-hosting-process"></a>Depuración y proceso host
 El proceso host de Visual Studio mejora el rendimiento del depurador y permite ofrecer nuevas características de depuración, como la depuración de confianza parcial y la evaluación de expresiones en tiempo de diseño. Si es necesario, puede deshabilitar el proceso host. En las secciones siguientes se describen algunas diferencias entre la depuración con y sin el proceso host.

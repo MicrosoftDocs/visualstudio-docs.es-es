@@ -1,5 +1,7 @@
 ---
 title: Creación de minivolcados con todas las pilas de llamadas
+description: Obtenga información sobre cómo crear minivolcados para un proceso de Visual Studio que incluye información para todas las pilas de llamadas.
+ms.custom: SEO-VS-2020
 ms.date: 06/27/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +16,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Collect minidumps to send to Microsoft for help with troubleshooting issues with Visual Studio
-ms.openlocfilehash: 8af2ef642a1c2422d470c716e14dca7d2e0168eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5cf6add1a20a0ee45ec69ade0d5f2839483bb9f
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770842"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560881"
 ---
 # <a name="create-minidumps-for-a-visual-studio-process-with-all-call-stacks"></a>Creación de minivolcados para un proceso de Visual Studio con todas las pilas de llamadas
 

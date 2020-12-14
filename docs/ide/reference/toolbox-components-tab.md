@@ -1,5 +1,7 @@
 ---
 title: Cuadro de herramientas, pestaña Componentes
+description: Obtenga información sobre los componentes que encontrará en la pestaña Componentes de la ventana Cuadro de herramientas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5eb8c320a3190121d95395f7b359aa9ed978408
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 40ba84712a343a071d6213dc9cd985727fc20ebf
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75597313"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560946"
 ---
 # <a name="toolbox-components-tab"></a>Cuadro de herramientas, pestaña Componentes
 
@@ -68,7 +70,7 @@ Crea una instancia del componente <xref:System.Messaging.MessageQueue> que se pu
 
 Crea una instancia del componente <xref:System.Diagnostics.PerformanceCounter> que se puede usar para interactuar con los contadores de rendimiento de Windows, como crear nuevas categorías e instancias, leer valores de contadores y realizar cálculos en datos del contador.
 
-**Process**
+**Proceso**
 
 Crea una instancia del componente <xref:System.Diagnostics.Process> que se puede usar para detener, iniciar y manipular los datos asociados con procesos del sistema.
 
@@ -87,7 +89,7 @@ Crea una instancia del componente <xref:System.Windows.Forms.Timer> que se puede
 > [!NOTE]
 > También hay un componente <xref:System.Timers.Timer> basado en el sistema que se puede agregar al **Cuadro de herramientas**. Este componente <xref:System.Timers.Timer> está optimizado para aplicaciones de servidor, mientras que el componente <xref:System.Windows.Forms.Timer> de Windows Forms es más adecuado para su uso en Windows Forms.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Controles que se utilizan en formularios Windows Forms](/dotnet/framework/winforms/controls/controls-to-use-on-windows-forms)
 - [Elegir elementos del Cuadro de herramientas, componentes de WPF](choose-toolbox-items-wpf-components.md)

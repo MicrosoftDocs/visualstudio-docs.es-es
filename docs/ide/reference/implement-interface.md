@@ -1,5 +1,7 @@
 ---
 title: Implementar una interfaz
+description: Obtenga información sobre cómo usar el menú Acciones rápidas y refactorizaciones para generar inmediatamente el código necesario para implementar una interfaz.
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7d420bd0d42e89476696966f7eda94a19893fc23
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0484ed5f63cd4651669a8e3c1f94f5aad96fcc03
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595558"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617115"
 ---
 # <a name="implement-an-interface-in-visual-studio"></a>Implementación de una interfaz en Visual Studio
 
@@ -28,7 +30,7 @@ Esta generación de código se aplica a:
 
 **Por qué:** Podría implementar manualmente todas las interfaces una por una, sin embargo, esta característica generará automáticamente todas las firmas de método de manera automática.
 
-## <a name="how-to"></a>Procedimiento
+## <a name="how-to"></a>Instrucciones
 
 1. Coloque el cursor en la línea donde hay un subrayado ondulado de color rojo, que señala que ha hecho referencia a una interfaz, pero que no ha implementado todos los miembros requeridos.
 
@@ -54,7 +56,7 @@ Esta generación de código se aplica a:
    ![Vista previa de implementación de interfaz](media/interface-preview-cs.png)
 
    > [!TIP]
-   > - Use el vínculo **Vista previa de los cambios** en la parte inferior de la ventana de vista previa [para ver todos los cambios ](../../ide/preview-changes.md) que se aplicarán antes de realizar la selección.
+   > - Use el vínculo **Vista previa de los cambios** en la parte inferior de la ventana de vista previa [para ver todos los cambios](../../ide/preview-changes.md) que se aplicarán antes de realizar la selección.
    > - Use los vínculos **Documento**, **Proyecto** y **Solución** de la parte inferior de la ventana de vista previa para crear las firmas de método adecuadas entre las múltiples clases que implementan la interfaz.
 
    Las firmas de método de la interfaz se crean y están listas para su implementación.

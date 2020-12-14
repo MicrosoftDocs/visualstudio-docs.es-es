@@ -1,5 +1,7 @@
 ---
 title: Creación de visualizadores de datos personalizados | Microsoft Docs
+description: Los visualizadores del depurador de Visual Studio son componentes que muestran datos. Obtenga información sobre los seis visualizadores estándar y sobre cómo puede escribir o descargar otros.
+ms.custom: SEO-VS-2020
 ms.date: 05/27/2020
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e184507415810f64060b0d2b2e92a825d642d2e
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 4c39fae399cd735d09218699f10c1eaead8e40ee
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85280881"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560686"
 ---
 # <a name="create-custom-data-visualizers"></a>Creación de visualizadores de datos personalizados
 

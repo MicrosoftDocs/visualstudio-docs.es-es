@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
-ms.date: 11/05/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Vea cómo activar la ventaja de soporte técnico que se incluye con la suscripción de Visual Studio.
-ms.openlocfilehash: 9ae88bcc066473752a600284d815378bc8870f64
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: ea67dde54dd66af6d20b7f9af84d2bfe80211444
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93413986"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537973"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Activación y uso de la ventaja de soporte técnico en suscripciones de Visual Studio
 La ventaja de soporte técnico en suscripciones de Visual Studio sirve para resolver problemas break-fix en **entornos de no producción** para productos que siguen en la fase de soporte técnico general del [ciclo de vida de soporte](https://support.microsoft.com/lifecycle/search). Las suscripciones de nube anuales y estándar de Visual Studio Enterprise reciben cuatro incidentes, mientras que las suscripciones de nube anuales y estándar de Visual Studio Professional reciben dos, con validez de un año a partir de la activación de la ventaja. La activación de la ventaja debe producirse mientras la suscripción está activa.
@@ -108,9 +108,9 @@ Para usar la ventaja de soporte técnico de la suscripción de Visual Studio en 
 | Nivel de suscripción                                                 |     Canales                                            | Prestación                                                          | ¿Renovable?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (estándar)   | Licencia por volumen, Azure, venta directa, no para reventa<sup>1</sup> | Cuatro incidentes       |  Sí|
-| Visual Studio Enterprise con GitHub Enterprise | VL | Cuatro incidentes       |  Sí|
+| Suscripción de Visual Studio Enterprise con GitHub Enterprise | VL | Cuatro incidentes       |  Sí|
 | Visual Studio Professional (estándar) | Licencia por volumen, Azure, venta directa, no para reventa<sup>2</sup>                                        | Dos incidentes                                                          |Sí         |
-| Visual Studio Professional con GitHub Enterprise | VL                                     | Dos incidentes                                                          |Sí         |
+| Suscripción de Visual Studio Professional con GitHub Enterprise | VL                                     | Dos incidentes                                                          |Sí         |
 | Visual Studio Test Professional (estándar)                         | Licencia por volumen, venta directa                                              | Dos incidentes                                             |  Sí         |
 | Plataformas MSDN (estándar)                                          | Licencia por volumen, venta directa                                              | Dos incidentes                                               | Sí         |
 | Visual Studio Enterprise, Visual Studio Professional (de nube mensual) | Azure                                       | No disponible                                                           |NA|

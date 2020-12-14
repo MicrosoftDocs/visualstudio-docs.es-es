@@ -1,5 +1,7 @@
 ---
 title: Buscar ventana (Cuadro de diálogo) | Microsoft Docs
+description: Use el cuadro de diálogo Buscar ventana para seleccionar una ventana y mostrar sus propiedades o mensajes.  En este artículo se proporcionan los detalles de uso.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 392c0150c9bfb653a3a52c11c0d31097e04c9cc1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 571cee3b1e3a391a8dc328fcc76a0ca0d06ed14f
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62849990"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96863028"
 ---
 # <a name="find-window-dialog-box"></a>Cuadro de diálogo Buscar ventana
 Use este cuadro de diálogo para seleccionar una ventana y mostrar sus propiedades o mensajes. Para mostrar este cuadro de diálogo, seleccione **Buscar ventana** en el menú de **Spy**.
@@ -50,6 +52,6 @@ Use este cuadro de diálogo para seleccionar una ventana y mostrar sus propiedad
 
  [Cuadro de diálogo Buscar ventana](../debugger/window-search-dialog-box.md) Se usa para buscar el nodo de una ventana concreta en la vista Ventanas.
 
- [Cuadro de diálogo Propiedades de la ventana](../debugger/window-properties-dialog-box.md) Se usa para mostrar las propiedades de una ventana seleccionada en la vista Ventanas.
+ [Cuadro de diálogo Propiedades de la ventana](../debugger/window-properties-dialog-box.md). Se usa para mostrar las propiedades de una ventana seleccionada en la vista Ventanas.
 
- [Referencia de Spy++](../debugger/spy-increment-reference.md) Incluye secciones que describen cada menú y cuadro de diálogo de Spy++.
+ [Referencia de Spy++](../debugger/spy-increment-reference.md). Incluye secciones que describen cada menú y cuadro de diálogo de Spy++.

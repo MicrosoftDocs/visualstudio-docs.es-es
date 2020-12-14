@@ -1,5 +1,7 @@
 ---
 title: Cambiar las fuentes y los colores del editor
+description: Obtenga información sobre cómo cambiar la fuente predeterminada, ajustar el tamaño de fuente y cambiar los colores de primer plano y de fondo de diversos elementos de representación de texto en el editor de código.
+ms.custom: SEO-VS-2020
 ms.date: 06/01/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa56a7ab8b3147cc3e8fbb784211d9a34536189d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6ad32d814b67cae9a9a0a538d6c131aecba9c0b8
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770430"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617128"
 ---
 # <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>Procedimiento Cambiar las fuentes y los colores del editor de Visual Studio
 

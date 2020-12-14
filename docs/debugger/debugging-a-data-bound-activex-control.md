@@ -1,5 +1,7 @@
 ---
 title: Depuración de un control ActiveX enlazado a datos | Microsoft Docs
+description: Obtenga información sobre cómo depurar un control ActiveX enlazado a un control de origen de datos mediante la creación de una aplicación contenedora para la depuración.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccca00387e701d62e47eee0a93adff44a4765fa2
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: a999014309c4545067967b77d1b91794e4bd3c99
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600065"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560725"
 ---
 # <a name="debugging-a-data-bound-activex-control"></a>Depurar un control ActiveX enlazado a datos
 Si está desarrollando un control ActiveX que se enlazará a un control de origen de datos, puede crear su propia aplicación contenedora y utilizar dicho contenedor para depurar el control ActiveX.

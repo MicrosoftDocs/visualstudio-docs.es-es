@@ -1,5 +1,6 @@
 ---
 title: Pestaña General (Cuadro de diálogo Propiedades de la ventana) | Microsoft Docs
+description: Vea la pestaña General para obtener información sobre una ventana, incluidos el título, el controlador, el rectángulo, el identificador de instancia de la aplicación, el identificador de menú y los datos de usuario.
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5160c79e2c8dae474927e6af7ebdc9e371e9edc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 125420655af4fb021e264c3885a739fc90cfff59
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62849563"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862755"
 ---
 # <a name="general-tab-window-properties-dialog-box"></a>Pestaña General (Cuadro de diálogo Propiedades de la ventana)
 Use la pestaña **General** para mostrar información sobre la ventana seleccionada. Para mostrar el [cuadro de diálogo Propiedades de la ventana](../debugger/window-properties-dialog-box.md), mueva el foco a la ventana [Vista Ventanas](../debugger/windows-view.md). Seleccione un nodo de ventana en el árbol y, después, elija **Propiedades** en el menú **Vista**.

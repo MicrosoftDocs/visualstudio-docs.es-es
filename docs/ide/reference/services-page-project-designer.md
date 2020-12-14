@@ -1,5 +1,7 @@
 ---
 title: Página Servicios, Diseñador de proyectos
+description: Obtenga información sobre cómo usar la página Servicios del Diseñador de proyectos para habilitar y configurar servicios de aplicación cliente para el proyecto.
+ms.custom: SEO-VS-2020
 ms.date: 01/18/2018
 ms.topic: reference
 f1_keywords:
@@ -12,18 +14,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d30d8e8ddcdc8c1fa4fe1935da1f1dedd1b18f4b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3c286dbd632e09a9a9c2c2b62ac2002f2e48f283
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593569"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560803"
 ---
 # <a name="services-page-project-designer"></a>Página Servicios, Diseñador de proyectos
 
-Los servicios de aplicaciones cliente proporcionan acceso simplificado al inicio de sesión, los roles y los servicios de perfiles de [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] desde aplicaciones de Windows Forms y Windows Presentation Foundation (WPF). Puede usar la página **Servicios** del **Diseñador de proyectos** para habilitar y configurar servicios de aplicación cliente para el proyecto.
+Los servicios de aplicación cliente proporcionan acceso simplificado al inicio de sesión, los roles y los servicios de perfiles de [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] desde aplicaciones de Windows Forms y Windows Presentation Foundation (WPF). Puede usar la página **Servicios** del **Diseñador de proyectos** para habilitar y configurar servicios de aplicación cliente para el proyecto.
 
-Con los servicios de aplicación cliente, puede usar un servidor centralizado para autenticar a los usuarios, determinar los roles asignados a cada usuario y almacenar ajustes de aplicación por usuario para compartirlos a través de la red. Para obtener más información, consulte [Servicios de aplicación cliente](/dotnet/framework/common-client-technologies/client-application-services).
+Con los servicios de aplicación cliente, puede usar un servidor centralizado para autenticar a los usuarios, determinar los roles asignados a cada usuario y almacenar ajustes de aplicación por usuario para compartirlos a través de la red. Para más información, vea [Servicios de aplicación cliente](/dotnet/framework/common-client-technologies/client-application-services).
 
 Para acceder a la página **Servicios**, seleccione un nodo de proyecto en el **Explorador de soluciones** y luego haga clic en **Propiedades** en el menú **Proyecto**. Cuando se muestre el **Diseñador de proyectos**, haga clic en la pestaña **Servicios**.
 
@@ -45,7 +47,7 @@ Este control no se puede modificar en esta página. Para obtener una descripció
 
 Seleccione este valor para habilitar los servicios de aplicación cliente. Para usar los servicios de aplicación cliente tiene que especificar las ubicaciones del servicio en la página **Servicios**.
 
- **Usar autenticación de Windows**
+ **Usar la autenticación de Windows**
 
 Indica que el proveedor de autenticación va a usar la autenticación basada en Windows, es decir, la identidad proporcionada por el sistema operativo Windows.
 
@@ -73,10 +75,10 @@ Especifica la ubicación del servicio de perfil (configuración web).
 
 Abre [Configuración avanzada de servicios (Cuadro de diálogo)](../../ide/reference/advanced-settings-for-services-dialog-box.md), que se puede usar para invalidar el comportamiento predeterminado. Por ejemplo, puede usar este cuadro de diálogo para especificar una base de datos para el almacenamiento sin conexión en lugar de emplear el sistema de archivos local. Para más información, vea [Configuración avanzada de servicios (Cuadro de diálogo)](../../ide/reference/advanced-settings-for-services-dialog-box.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Servicios de aplicación cliente](/dotnet/framework/common-client-technologies/client-application-services)
-- [Cuadro de diálogo Configuración avanzada de servicios](../../ide/reference/advanced-settings-for-services-dialog-box.md)
+- [Configuración avanzada de servicios (Cuadro de diálogo)](../../ide/reference/advanced-settings-for-services-dialog-box.md)
 - [Cómo: Configurar servicios de aplicaciones cliente](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
 - [Página Compilación, Diseñador de proyectos (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)
 - [Página Compilar (Diseñador de proyectos) (C#)](../../ide/reference/build-page-project-designer-csharp.md)

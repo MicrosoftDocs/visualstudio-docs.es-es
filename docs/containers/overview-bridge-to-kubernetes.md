@@ -9,12 +9,12 @@ monikerRange: '>=vs-2019'
 manager: jillfra
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: d1a92433a90e6e6b7f71d0c7db6ced3a52c33315
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: c6a85faf2d1451dcab9bc822fcdf228513b90dca
+ms.sourcegitcommit: ab60fd7b4a8219e378d100df1386e1b038ecdafc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440615"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96595271"
 ---
 # <a name="how-bridge-to-kubernetes-works"></a>Funcionamiento del Puente a Kubernetes
 
@@ -72,7 +72,8 @@ Cuando se habilita el trabajo de forma aislada, además de conectarse al clúste
 Si Puente a Kubernetes detecta que Azure Dev Spaces está habilitado en el clúster de Kubernetes, se le pedirá que deshabilite Azure Dev Spaces para poder usar Puente a Kubernetes.
 
 El administrador de enrutamiento hace lo siguiente cuando se inicia:
-* Duplica todas las entradas que se encuentran en el espacio de nombres, para lo que usa *GENERATED_NAME* para el subdominio.
+
+* Duplica todas las entradas (incluidas las del equilibrador de carga) que se encuentran en el espacio de nombres mediante el valor *GENERATED_NAME* para el subdominio.
 * Crea un pod de envío para cada servicio asociado a las entradas duplicadas con el subdominio *GENERATED_NAME*.
 * Crea un pod de envío adicional para el servicio en el que se trabaja de forma aislada. Esto permite que las solicitudes con el subdominio se enruten al equipo de desarrollo.
 * Configura reglas de enrutamiento para que cada pod de envío controle el enrutamiento de servicios con el subdominio.
@@ -144,7 +145,7 @@ Puente a Kubernetes tiene las siguientes limitaciones:
 * Un servicio debe estar respaldado por un único pod para poder conectarse a ese servicio. No se puede conectar a un servicio con varios pods, como un servicio con réplicas.
 * Un pod solo puede tener un único contenedor en ejecución en ese pod para que el Puente a Kubernetes se conecte correctamente. Puente a Kubernetes no se puede conectar a los servicios con pods que tienen contenedores adicionales, como los contenedores sidecar inyectados por las mallas de servicios.
 * Actualmente, los pods de Bridge to Kubernetes deben ser contenedores de Linux. No se admiten los contenedores de Windows.
-* El aislamiento no se puede usar con HTTPS.
+* No se puede utilizar el aislamiento con HTTPS cuando se usa Bridge to Kubernetes con Visual Studio. HTTPS solo se admite en modo de aislamiento cuando se usa Visual Studio Code.
 * Puente a Kubernetes necesita permisos elevados para ejecutarse en el equipo de desarrollo con el fin de editar el archivo hosts.
 * Puente a Kubernetes no se puede usar en clústeres que tengan habilitado Azure Dev Spaces.
 

@@ -1,5 +1,7 @@
 ---
 title: Cuadro de herramientas, HTML (Pestaña)
+description: Obtenga información sobre los componentes HTML que encontrará en la pestaña HTML de la ventana Cuadro de herramientas.
+ms.custom: SEO-VS-2020
 ms.date: 06/21/2017
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0489f534466149a437384d4f21e34f1fa9e98c5b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f91e832e33d6a65d9fc70ee594d0c0670242306e
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596442"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560465"
 ---
 # <a name="toolbox-html-tab"></a>Cuadro de herramientas, HTML (Pestaña)
 
@@ -30,7 +32,7 @@ Para crear una instancia de una herramienta en la pestaña **HTML**, haga doble 
 
 Las siguientes herramientas están disponibles de manera predeterminada en la pestaña HTML.
 
-**Pointer**
+**Puntero**
 
 ![Puntero de página HTML del Diseñador de ASP.NET Mobile](../../ide/reference/media/vxpointer.gif)
 
@@ -168,7 +170,7 @@ Si arrastra **Textarea** a la superficie de la vista Diseño, se inserta código
 > [!IMPORTANT]
 > Se recomienda que valide todos los datos proporcionados por el usuario. Para obtener más información, vea [Validar la información especificada por el usuario en sitios de ASP.NET Web Pages (Razor)](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).
 
-**Table**
+**Tabla**
 
 ![Captura de pantalla de HTMLpageToolbarTable](../../ide/reference/media/vxtable.gif)
 
@@ -180,7 +182,7 @@ Si arrastra **Table** a la superficie de la vista Diseño, se inserta código HT
 <table cellspacing="1" width="75%" border=1> <tr><td></td></tr></table>
 ```
 
-**Image**
+**Imagen**
 
 ![Elemento de imagen de página HTML](../../ide/reference/media/vximage.gif)
 
@@ -192,7 +194,7 @@ Si arrastra **Image** a la superficie de la vista Diseño, se inserta código HT
 <img alt="" src="">
 ```
 
-**Seleccionar**
+**Select**
 
 ![Cuadro de herramientas desplegable de la página HTML](../../ide/reference/media/vxdropdown.gif)
 
@@ -230,6 +232,6 @@ Si arrastra **Div** a la superficie de la vista Diseño, se inserta código HTML
 <div ms_positioning="FlowLayout" style="width: 70px; position: relative; height: 15px">Label</div>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Cuadro de herramientas](../../ide/reference/toolbox.md)

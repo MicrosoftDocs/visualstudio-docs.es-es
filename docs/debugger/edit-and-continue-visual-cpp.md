@@ -1,5 +1,7 @@
 ---
 title: Editar y continuar (C++) | Microsoft Docs
+description: Editar y continuar está disponible para los proyectos de C++. Obtenga información sobre qué ediciones se admiten y cómo puede controlar si se aplican y cuándo.
+ms.custom: SEO-VS-2020
 ms.date: 05/31/2018
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9c32c161d1df70fc81eee4186aa9d1ac102afa69
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 2a8cb40850aefe83ac048c708192bc24533a8296
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599653"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96863067"
 ---
 # <a name="edit-and-continue-c"></a>Editar y continuar (C++)
 Puede usar Editar y continuar en proyectos de C++. Vea [Cambios admitidos en el código (C++)](../debugger/supported-code-changes-cpp.md) para obtener información sobre las limitaciones de Editar y continuar.

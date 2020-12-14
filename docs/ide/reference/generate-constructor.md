@@ -1,5 +1,7 @@
 ---
 title: Acción rápida Generación de un constructor
+description: Obtenga información sobre cómo usar el menú Acciones rápidas y refactorizaciones para generar inmediatamente el código para un nuevo constructor en una clase.
+ms.custom: SEO-VS-2020
 ms.date: 07/10/2020
 ms.topic: reference
 author: mikadumont
@@ -7,12 +9,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ead3242c348acdf846fb57ec06057cc50c4b1c3b
-ms.sourcegitcommit: 8b1314ceab58e0d562cdbb1367fa738fdca7bf1e
+ms.openlocfilehash: 80de8b5c8b5699f4ddbf5148e16afd2da42388f2
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "86285423"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617557"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Generación de un constructor en Visual Studio
 
@@ -49,9 +51,9 @@ Esta generación de código se aplica a:
       - Presione **Ctrl**+ **.** para activar el menú **Acciones rápidas y refactorizaciones**.
    - **Mouse**
       - Haga clic con el botón derecho y seleccione el menú **Acciones rápidas y refactorizaciones**.
-      - Haga clic en el botón ![icono de destornillador](media/screwdriver.png) que aparece en el margen izquierdo si el cursor de texto ya está en la línea vacía de la clase.
+      - Haga clic en el icono :::image type="icon" source="media/screwdriver.png"::: que aparece en el margen izquierdo si el cursor de texto ya está en la línea vacía de la clase.
 
-   ![Vista previa de generación de constructor](media/constructor1-preview-cs.png)
+   ![Captura de pantalla de la opción Generar constructor.](media/constructor1-preview-cs.png)
 
 1. Seleccione **Generar constructor** en el menú desplegable.
 
@@ -66,7 +68,7 @@ Esta generación de código se aplica a:
 
    El constructor se crea con los parámetros seleccionados.
 
-   ![Resultado de la generación de constructor](media/constructor1-result-cs.png)
+   ![Captura de pantalla en la que se muestra el constructor creado con los parámetros seleccionados.](media/constructor1-result-cs.png)
 
 ## <a name="generate-constructor-with-properties-c-only"></a><a id = "with"></a> Generación de un constructor con propiedades (solo C#)
 
@@ -76,7 +78,7 @@ Esta generación de código se aplica a:
 
 3. Seleccione **Generar constructor en `<QualifiedName>` (con propiedades)** .
 
-   ![Vista previa de generación de constructor](media/generate-constructor-with-properties.png)
+   ![Captura de pantalla de la opción Generar constructor en la clave (con propiedades).](media/generate-constructor-with-properties.png)
 
 ## <a name="generate-constructor-from-selected-fields-c-only"></a><a id="selection"></a> Generación de constructor a partir de campos seleccionados (solo C#)
 
@@ -90,15 +92,15 @@ Esta generación de código se aplica a:
       - Presione **Ctrl**+ **.** para activar el menú **Acciones rápidas y refactorizaciones**.
    - **Mouse**
       - Haga clic con el botón derecho y seleccione el menú **Acciones rápidas y refactorizaciones**.
-      - Haga clic en el botón ![icono de destornillador](media/screwdriver.png) que aparece en el margen izquierdo si el cursor de texto ya está en la línea con la selección.
+      - Haga clic en el icono :::image type="icon" source="media/screwdriver.png"::: que aparece en el margen izquierdo si el cursor de texto ya está en la línea con la selección.
 
-      ![Vista previa de generación de constructor](media/constructor2-preview-cs.png)
+      ![Captura de pantalla de la opción de cadena Generar constructor de cadena Person.](media/constructor2-preview-cs.png)
 
 1. Seleccione **Generar constructor "TypeName(...)"** en el menú desplegable.
 
    El constructor se crea con los parámetros seleccionados.
 
-   ![Resultado de la generación de constructor](media/constructor2-result-cs.png)
+   ![Captura de pantalla en la que se muestra que se ha creado el constructor con los parámetros seleccionados.](media/constructor2-result-cs.png)
 
 ## <a name="generate-constructor-from-new-usage-c-and-visual-basic"></a><a id="usage"></a> Generación de constructor a partir de nuevo uso (C# y Visual Basic)
 
@@ -118,15 +120,15 @@ Esta generación de código se aplica a:
       - Presione **Ctrl**+ **.** para activar el menú **Acciones rápidas y refactorizaciones**.
    - **Mouse**
       - Haga clic con el botón derecho y seleccione el menú **Acciones rápidas y refactorizaciones**.
-      - Mantenga el mouse sobre el subrayado ondulado de color rojo y haga clic en el botón ![bombilla de error](media/error-bulb.png) que aparece.
-      - Haga clic en el botón ![bombilla de error](media/error-bulb.png) que aparece en el margen izquierdo si el cursor de texto ya está en la línea con el subrayado ondulado de color rojo.
+      - Mantenga el mouse sobre el subrayado ondulado de color rojo y haga clic en el icono :::image type="icon" source="media/error-bulb.png"::: que aparece.
+      - Haga clic en el icono :::image type="icon" source="media/error-bulb.png"::: que aparece en el margen izquierdo si el cursor de texto ya está en la línea con el subrayado ondulado de color rojo.
 
-      ![Vista previa de generación de constructor](media/constructor-preview-cs.png)
+      ![Captura de pantalla de la opción Generar constructor en Persona.](media/constructor-preview-cs.png)
 
 3. Seleccione **Generar constructor en "*TypeName*"** en el menú desplegable.
 
    > [!TIP]
-   > Use el vínculo **Vista previa de los cambios** en la parte inferior de la ventana de vista previa [para ver todos los cambios ](../../ide/preview-changes.md) que se aplicarán antes de realizar la selección.
+   > Use el vínculo **Vista previa de los cambios** en la parte inferior de la ventana de vista previa [para ver todos los cambios](../../ide/preview-changes.md) que se aplicarán antes de realizar la selección.
 
    El constructor se crea con los parámetros que se deducen de su uso.
 
@@ -144,7 +146,7 @@ Esta generación de código se aplica a:
 
 2. Coloque el cursor en la línea donde hay un subrayado ondulado de color rojo que indica que ha utilizado un constructor que aún no existe.
 
-    ![Destacado de generación de constructor](media/constructor4-highlight-cs.png)
+    ![Captura de pantalla en la que se muestra la línea con un subrayado ondulado de color rojo.](media/constructor4-highlight-cs.png)
 
 3. A continuación, realice alguno de los siguientes procedimientos:
 
@@ -152,16 +154,16 @@ Esta generación de código se aplica a:
       - Presione **Ctrl**+ **.** para activar el menú **Acciones rápidas y refactorizaciones**.
    - **Mouse**
       - Haga clic con el botón derecho y seleccione el menú **Acciones rápidas y refactorizaciones**.
-      - Mantenga el mouse sobre el subrayado ondulado de color rojo y haga clic en el botón ![bombilla de error](media/error-bulb.png) que aparece.
-      - Haga clic en el botón ![bombilla de error](media/error-bulb.png) que aparece en el margen izquierdo si el cursor de texto ya está en la línea con el subrayado ondulado de color rojo.
+      - Mantenga el mouse sobre el subrayado ondulado de color rojo y haga clic en el icono :::image type="icon" source="media/error-bulb.png"::: que aparece.
+      - Haga clic en el icono :::image type="icon" source="media/error-bulb.png"::: que aparece en el margen izquierdo si el cursor de texto ya está en la línea con el subrayado ondulado de color rojo.
 
-      ![Vista previa de generación de constructor](media/constructor4-preview-cs.png)
+      ![Captura de pantalla de la opción de cadena Agregar parámetro a la cadena Person.](media/constructor4-preview-cs.png)
 
 4. Seleccione **Agregar parámetro a "TypeName(...)"** en el menú desplegable.
 
    El parámetro se agrega al constructor con su tipo inferido a partir de su uso.
 
-   ![Resultado de la generación de constructor](media/constructor4-result-cs.png)
+   ![Captura de pantalla en la que se muestra que el parámetro se agrega al constructor, con su tipo inferido a partir de su uso.](media/constructor4-result-cs.png)
 
 También puede agregar un parámetro a un método existente. Para más información, consulte [Incorporación de un parámetro a un método](add-parameter.md).
 
@@ -169,7 +171,7 @@ También puede agregar un parámetro a un método existente. Para más informaci
 
 1. Busque un constructor existente y agregue un parámetro:
 
-   ![Destacado de generación de constructor](media/constructor5-highlight-cs.png)
+   ![Captura de pantalla en la que se muestra un constructor existente.](media/constructor5-highlight-cs.png)
 
 1. Coloque el cursor dentro del parámetro recién agregado.
 
@@ -179,15 +181,15 @@ También puede agregar un parámetro a un método existente. Para más informaci
       - Presione **Ctrl**+ **.** para activar el menú **Acciones rápidas y refactorizaciones**.
    - **Mouse**
       - Haga clic con el botón derecho y seleccione el menú **Acciones rápidas y refactorizaciones**.
-      - Haga clic en el botón ![icono de destornillador](media/screwdriver.png) que aparece en el margen izquierdo si el cursor de texto ya está en la línea con el parámetro agregado.
+      - Haga clic en el icono :::image type="icon" source="media/screwdriver.png"::: que aparece en el margen izquierdo si el cursor de texto ya está en la línea con el parámetro agregado.
 
-   ![Vista previa de generación de constructor](media/constructor5-preview-cs.png)
+   ![Captura de pantalla de la opción Crear e inicializar propiedad Age.](media/constructor5-preview-cs.png)
 
 1. Seleccione **Crear e inicializar propiedad** o **Crear e inicializar campo** en el menú desplegable.
 
    El campo o la propiedad se declaran y se les asignará automáticamente un nombre que coincida con sus tipos. También se agrega una línea de código para inicializar el campo o la propiedad en el cuerpo del constructor.
 
-   ![Resultado de la generación de constructor](media/constructor5-result-cs.png)
+   ![Captura de pantalla en la que se muestra que el campo o la propiedad se declaran y se les asigna automáticamente un nombre que coincide con los tipos.](media/constructor5-result-cs.png)
 
 ## <a name="see-also"></a>Vea también
 

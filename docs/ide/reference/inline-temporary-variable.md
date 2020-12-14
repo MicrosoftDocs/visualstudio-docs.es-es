@@ -1,5 +1,7 @@
 ---
 title: Sustitución de una variable temporal por su valor
+description: Obtenga información sobre cómo usar el menú Acciones rápidas y refactorizaciones para quitar una variable temporal y reemplazarla por su valor.
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8f0199436f5f9b1013a4c49cfb5909e760c73dcc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d24c63bdc1908ecc15c206faeda3e9de511f8f9b
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568872"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617414"
 ---
 # <a name="inline-a-temporary-variable-refactoring"></a>Refactorización de inserción de una variable temporal
 
@@ -31,7 +33,7 @@ Esta refactorización se aplica a lo siguiente:
 
 **Quitar:** El hecho de quitar una variable temporal puede facilitar la lectura del código.
 
-## <a name="how-to"></a>Procedimiento
+## <a name="how-to"></a>Instrucciones
 
 1. Resalte o coloque el cursor de texto dentro de la variable temporal que se va a insertar en línea:
 

@@ -1,5 +1,7 @@
 ---
 title: Invertir instrucción if
+description: Obtenga información sobre cómo usar el menú Acciones rápidas y refactorizaciones para invertir una instrucción if o if else sin cambiar el significado del código.
+ms.custom: SEO-VS-2020
 ms.date: 02/19/2019
 ms.topic: reference
 author: kendrahavens
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: a0419100cbc5fcd543eb250fa85cbfe2ebd1c97f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 71b3a11e053b6a600d0b33db7c52a91c4950bf5b
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "65531589"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616985"
 ---
 # <a name="invert-if-statement"></a>Invertir instrucción if
 

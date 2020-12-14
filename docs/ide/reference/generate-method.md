@@ -1,5 +1,7 @@
 ---
 title: Generación de un método
+description: Obtenga información sobre cómo usar el menú Acciones rápidas y refactorizaciones para agregar inmediatamente un método a una clase.
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f166c31a1615c951170367223a5b19ab93811b5d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 22c49085a430c7afc002fe4e11dcf1184348efdc
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595597"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617219"
 ---
 # <a name="generate-a-method-in-visual-studio"></a>Generación de un método en Visual Studio
 
@@ -28,7 +30,7 @@ Esta generación de código se aplica a:
 
 **Por qué:** Podría declarar el método y los parámetros antes de usarlo; sin embargo, esta característica generará la declaración automáticamente.
 
-## <a name="how-to"></a>Procedimiento
+## <a name="how-to"></a>Instrucciones
 
 1. Coloque el cursor en la línea donde haya un subrayado ondulado de color rojo. Este subrayado ondulado de color rojo señala un método que aún no existe.
 
@@ -54,7 +56,7 @@ Esta generación de código se aplica a:
 3. Seleccione **Generar método** en el menú desplegable.
 
    > [!TIP]
-   > Use el vínculo **Vista previa de los cambios** en la parte inferior de la ventana de vista previa [para ver todos los cambios ](../../ide/preview-changes.md) que se aplicarán antes de realizar la selección.
+   > Use el vínculo **Vista previa de los cambios** en la parte inferior de la ventana de vista previa [para ver todos los cambios](../../ide/preview-changes.md) que se aplicarán antes de realizar la selección.
 
    El método se crea con los parámetros que se deducen de su uso.
 

@@ -1,5 +1,7 @@
 ---
 title: Especificadores de formato en el depurador (C++) | Microsoft Docs
+description: Use un especificador de formato para cambiar el formato en el que se muestra un valor en las ventanas Inspección, Automático o Variables locales. En este artículo se proporcionan los detalles de uso.
+ms.custom: SEO-VS-2020
 ms.date: 3/11/2019
 ms.topic: conceptual
 f1_keywords:
@@ -24,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 287ef3ccfd344786bd98098c5f28d0a2bd6573f6
-ms.sourcegitcommit: 4a9689890f271f9b8b73c3333e0699cce84a95d8
+ms.openlocfilehash: 64166768dea1da015c223a74c74440ae09a0d106
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90832325"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96863041"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Especificadores de formato para C++ en el depurador de Visual Studio
 Puede cambiar el formato en el que se muestra un valor en las ventanas **Inspección**, **Automático** y **Variables locales** mediante especificadores de formato.
@@ -40,7 +42,7 @@ También puede usar especificadores de formato en la ventana **Inmediato** y la 
 > Cuando el depurador nativo de Visual Studio cambia a un nuevo motor de depuración, se agregan algunos especificadores de formato nuevos y se quitan otros antiguos. El depurador antiguo todavía se usa cuando se realiza depuración de interoperabilidad (administrada y nativa mixta) con C++/CLI.
 
 ## <a name="set-format-specifiers"></a>Establecimiento de los especificadores de formato
-Usaremos el siguiente código de ejemplo:
+Se usará el siguiente código de ejemplo:
 
 ```C++
 int main() {
@@ -50,7 +52,7 @@ int main() {
 }
 ```
 
-Agregue la variable `my_var1` a la ventana **Inspección** al depurar, **Depurar** > **Windows** > **Inspección** > **Inspección 1**. A continuación, haga clic con el botón derecho en la variable y seleccione **Presentación hexadecimal**. Ahora, en la ventana **Inspección** se muestra el valor 0x0065. Para ver este valor expresado como un carácter en lugar de un entero, primero haga clic con el botón derecho y anule la selección de **Presentación hexadecimal**. Luego, agregue el especificador de formato de carácter **, c** en la columna **Nombre** después del nombre de la variable. En la columna **Valor** se muestra ahora **101 "e"** .
+Agregue la variable `my_var1` a la ventana **Inspección** al depurar, **Depurar** > **Ventanas** > **Inspección** > **Inspección 1**. Después, haga clic con el botón derecho en la variable y seleccione **Presentación hexadecimal**. Ahora, en la ventana **Inspección** se muestra el valor 0x0065. Para ver este valor expresado como un carácter en lugar de un entero, primero haga clic con el botón derecho y anule la selección de **Presentación hexadecimal**. Luego, agregue el especificador de formato de carácter **, c** en la columna **Nombre** después del nombre de la variable. En la columna **Valor** se muestra ahora **101 "e"** .
 
 ![WatchFormatCPlus1](../debugger/media/watchformatcplus1.png "WatchFormatCPlus1")
 

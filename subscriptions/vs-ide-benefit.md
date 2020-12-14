@@ -1,18 +1,18 @@
 ---
-title: Beneficio de IDE de Visual Studio en las suscripciones de Visual Studio | Microsoft Docs
+title: Ventaja IDE de Visual Studio en las suscripciones de Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: c4b13464-76be-40f1-ad60-ed79ee264b12
-ms.date: 10/22/2020
+ms.date: 12/02/2020
 ms.topic: how-to
-description: Obtenga información sobre cómo descargar e instalar el IDE de Visual Studio incluido en la suscripción a Visual Studio.
-ms.openlocfilehash: 2baf2e452e86d44d814e3f4a511ebb5442b83578
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+description: Obtenga información sobre cómo descargar e instalar el IDE de Visual Studio incluido en la suscripción a Visual Studio.
+ms.openlocfilehash: edabaa21e8f8b6c7fe8fee33d2c1a4252efa7a1c
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92435759"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538064"
 ---
 # <a name="the-visual-studio-2019-benefit"></a>La ventaja de Visual Studio 2019
 
@@ -28,21 +28,21 @@ Para descargar el IDE:
    > [!div class="mx-imgBorder"]
    > ![Icono de Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-tile.png "Haga clic en "Descargar" en el icono de Visual Studio para instalar Visual Studio".)
 
-3. Se le redirigirá a la página Descargar resultados de Visual Studio, en la que tendrá la oportunidad de descargar el IDE y obtener una clave de producto para activarlo. También puede solicitar una clave de producto haciendo clic en el vínculo azul **Obtener clave** , o puede solicitar una clave más adelante en la página [Claves de producto](https://my.visualstudio.com/productkeys).
+3. Se le redirigirá a la página Descargar resultados de Visual Studio, en la que tendrá la oportunidad de descargar el IDE y obtener una clave de producto para activarlo. También puede solicitar una clave de producto haciendo clic en el vínculo azul **Obtener clave**, o puede solicitar una clave más adelante en la página [Claves de producto](https://my.visualstudio.com/productkeys).
 4. En la pestaña Detalles de la página Descargar resultados:
    - Seleccione la arquitectura que quiera (x86, x64).
    - Seleccione su preferencia de idioma.
 5. Haga clic en el botón de descarga.
    > [!div class="mx-imgBorder"]
    > ![Detalles de descarga de Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-download-details.png "Haga clic en el botón "Descargar" para iniciar la descarga.")
-6. Haga clic en el paquete del instalador que se descargó.  Si se le pide realizar la instalación ahora, haga clic en **Ejecutar** .
-7. En el cuadro de diálogo Control de cuentas de usuario, haga clic en **Sí** .
+6. Haga clic en el paquete del instalador que se descargó.  Si se le pide realizar la instalación ahora, haga clic en **Ejecutar**.
+7. En el cuadro de diálogo Control de cuentas de usuario, haga clic en **Sí**.
 8. Haga clic en **Continuar** para aceptar los términos de licencia.
 9. Cuando se inicie el instalador, elija las cargas de trabajo, los componentes individuales y los paquetes de idioma que quiera en las pestañas correspondientes.
    > [!div class="mx-imgBorder"]
    > ![Personalización de Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-customize-install-cropped.png "Elija las cargas de trabajo y otros componentes.")
 
-10. Haga clic en **Instalar** .
+10. Haga clic en **Instalar**.
 
 11. Una vez completada la instalación, tendrá la opción de modificarla o iniciar Visual Studio.  Haga clic en **Iniciar** para empezar.  Si tiene varias versiones instaladas, se muestran aquí.
     > [!div class="mx-imgBorder"]
@@ -50,7 +50,7 @@ Para descargar el IDE:
 
 12. Inicie sesión con la cuenta asociada a la suscripción de Visual Studio.
 
-13. Elija el tema preferido y haga clic en **Iniciar Visual Studio** .
+13. Elija el tema preferido y haga clic en **Iniciar Visual Studio**.
 
 14. Se abre Visual Studio. Ya puede empezar a utilizar Visual Studio.
 
@@ -63,9 +63,9 @@ Para descargar el IDE:
 | Nivel de suscripción                                                 |     Canales                                            | Prestación                                                          | ¿Renovable?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (estándar, de nube mensual)   | Licencia por volumen, Azure, venta directa, no para reventa<sup>1</sup> | Disponible       |  Sí          |
-| Visual Studio Enterprise con GitHub Enterprise   | VL | Disponible       |  Sí          |
+| Suscripción de Visual Studio Enterprise con GitHub Enterprise   | VL | Disponible       |  Sí          |
 | Visual Studio Professional (estándar, de nube mensual) | Licencia por volumen, Azure, venta directa                                       | Disponible                                                            |  Sí          |
-| Visual Studio Professional con GitHub Enterprise | VL   | Disponible              |  Sí          |
+| Suscripción de Visual Studio Professional con GitHub Enterprise | VL   | Disponible              |  Sí          |
 | Visual Studio Test Professional (estándar)                         | Licencia por volumen, venta directa                                              | Disponible                                             |  Sí         |
 | Plataformas MSDN (estándar)                                          | Licencia por volumen, venta directa                                              | No disponible                                              |  N/D          |
 

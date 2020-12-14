@@ -3,15 +3,15 @@ title: Configuración de un repositorio Git
 description: Conexión a un repositorio Git mediante Visual Studio para Mac.
 author: therealjohn
 ms.author: johmil
-ms.date: 11/09/2020
+ms.date: 12/03/2020
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
 ms.topic: how-to
-ms.openlocfilehash: 862f073d3c6d535d612a67f215aee740cea175bd
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: bacd533bf5c28c6f431fe7088fad36b6bbd3d04b
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493132"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96561063"
 ---
 # <a name="set-up-a-git-repository"></a>Configurar un repositorio Git
 
@@ -44,6 +44,9 @@ Para configurar un repositorio Git, ejecute los siguientes pasos:
 ## <a name="publishing-an-existing-project"></a>Publicación de un proyecto existente
 
 Si dispone de un proyecto que _aún no está_ en control de versiones, siga estos pasos para configurarlo en Git:
+
+> [!TIP]
+> Use un archivo .gitignore para controlar las carpetas y los archivos de los que se realiza el seguimiento y se publican con Git. Es posible que quiera excluir directorios de compilación, binarios o archivos generados. Obtenga más información en la [documentación de GitHub sobre la omisión de archivos](https://docs.github.com/en/free-pro-team@latest/github/using-git/ignoring-files).
 
 1. Seleccione el nombre de la solución en la ventana de la solución de Visual Studio para Mac.
 

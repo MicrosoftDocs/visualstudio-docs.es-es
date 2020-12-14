@@ -1,5 +1,7 @@
 ---
 title: Establecer base (Comando)
+description: Obtenga información sobre el comando Establecer base y cómo establece o devuelve la base numérica que se usa para mostrar valores enteros.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e88dc1318e29ddf35073b78218eb113fe8952aac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b47c30ed938a83a2b4c47f73f55b5f7ca1db6a62
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769654"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616413"
 ---
 # <a name="set-radix-command"></a>Establecer base (Comando)
 Establece o devuelve la base numérica que se ha usado para mostrar valores enteros.
@@ -41,9 +43,9 @@ En este ejemplo se establece el entorno para mostrar valores enteros en formato 
 >Debug.SetRadix hex
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Ventana Comandos](../../ide/reference/command-window.md)
 - [Cuadro Buscar/Comando](../../ide/find-command-box.md)
-- [Alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

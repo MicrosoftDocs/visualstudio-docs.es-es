@@ -1,5 +1,7 @@
 ---
 title: ShowWebBrowser (Comando)
+description: Obtenga información sobre el comando ShowWebBrowser y cómo muestra la dirección URL especificada en una ventana del explorador web dentro o fuera del IDE.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8266a7c70544d8a320658fcd8b9f5ad249162fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 026878bdc2158d803f191cf2d28c8eb52f0b6e09
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769579"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616322"
 ---
 # <a name="showwebbrowser-command"></a>ShowWebBrowser (Comando)
 
@@ -35,7 +37,7 @@ View.ShowWebBrowser URL [/new][/ext]
 
 Obligatorio. Dirección URL (localizador uniforme de recursos) del sitio web.
 
-## <a name="switches"></a>Modificadores
+## <a name="switches"></a>Conmutadores
 /new
 
 Opcional. Especifica que la página aparece en una nueva instancia del explorador web.
@@ -44,7 +46,7 @@ Opcional. Especifica que la página aparece en una nueva instancia del explorado
 
 Opcional. Especifica que la página aparece en el explorador web predeterminado fuera del IDE.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 El alias del comando **ShowWebBrowser** es **navigate** o **nav**.
 
 ## <a name="example"></a>Ejemplo
@@ -54,9 +56,9 @@ En el ejemplo siguiente se muestra la página principal de Microsoft Docs en un 
 >View.ShowWebBrowser https://docs.microsoft.com /ext
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Ventana Comandos](../../ide/reference/command-window.md)
 - [Cuadro Buscar/Comando](../../ide/find-command-box.md)
-- [Alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

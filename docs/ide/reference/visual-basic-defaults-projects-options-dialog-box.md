@@ -1,5 +1,7 @@
 ---
 title: Valores predeterminados de Visual Basic, Proyectos, Opciones (Cuadro de diálogo)
+description: Obtenga información sobre cómo usar la página Valores predeterminados de Visual Basic de la sección Proyectos y soluciones para especificar la configuración predeterminada de las opciones del proyecto de Visual Basic.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f33dd9b19297811597be406337d70392904e6e44
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f761161f2ad29be994b3a6260bafe827a41fabe0
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596393"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616361"
 ---
 # <a name="visual-basic-defaults-projects-options-dialog-box"></a>Valores predeterminados de Visual Basic, Proyectos, Opciones (Cuadro de diálogo)
 Especifica la configuración predeterminada de las opciones de proyecto de Visual Basic. Cuando se crea un proyecto, se agregarán las instrucciones de la opción especificada al encabezado del proyecto en el Editor de código. Las opciones se aplican a todos los proyectos de Visual Basic.
@@ -42,6 +44,6 @@ Establece el valor predeterminado del compilador para las comparaciones de caden
 
 Establece el valor predeterminado del compilador para la inferencia de tipo de variable local. De forma predeterminada, **Option Infer** está establecido en **On** para los proyectos recién creados y en **Off** para los proyectos migrados creados en versiones anteriores de Visual Basic. Para más información, vea [/optioninfer](/dotnet/visual-basic/reference/command-line-compiler/optioninfer).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Soluciones y proyectos](../../ide/solutions-and-projects-in-visual-studio.md)

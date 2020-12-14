@@ -1,5 +1,7 @@
 ---
 title: Búsqueda de fugas de memoria con la biblioteca de CRT | Microsoft Docs
+description: Obtenga información sobre cómo el depurador de C/C++ y la biblioteca en tiempo de ejecución de C (CRT) pueden ayudarle a detectar fugas de memoria. Las técnicas incluyen informes de fugas de memoria y la comparación de instantáneas de memoria.
+ms.custom: SEO-VS-2020
 ms.date: 10/04/2018
 ms.topic: how-to
 dev_langs:
@@ -26,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5deb42b2ab708bae572aebbcac15af2d077b14fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f5c906bd06fd4107166a45e93bf11be579c2270
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350490"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96863080"
 ---
 # <a name="find-memory-leaks-with-the-crt-library"></a>Búsqueda de fugas de memoria con la biblioteca de CRT
 

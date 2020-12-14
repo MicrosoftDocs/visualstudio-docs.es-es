@@ -1,5 +1,7 @@
 ---
 title: Comandos
+description: Obtenga información sobre los distintos comandos a los que tiene acceso en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,14 +14,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac0284ce274791f21c9c0f85d265d92a7097cb09
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7928c03e52e4a72fb354bd7202e041ec2264fcd6
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596403"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560959"
 ---
-# <a name="visual-studio-commands"></a>comandos de Visual Studio
+# <a name="visual-studio-commands"></a>Comandos de Visual Studio
 
 Puede escribir comandos de Visual Studio en la ventana **Comando**, la ventana **Inmediato** o el cuadro **Buscar/Comando**. En todos los casos, el signo mayor que (`>`) indica que se debe seguir un comando en lugar de una operación de búsqueda o de depuración.
 
@@ -43,14 +45,14 @@ El símbolo de intercalación funciona igual tanto si está dentro como fuera de
 
 Los siguientes comandos toman argumentos o modificadores:
 
-| Nombre de comando | Description |
+| Nombre de comando | Descripción |
 | - | - |
 | [Agregar elemento existente](../../ide/reference/add-existing-item-command.md) | Agrega un archivo existente a la solución actual y lo abre. |
 | [Agregar proyecto existente](../../ide/reference/add-existing-project-command.md) | Agrega un proyecto existente a la solución actual. |
 | [Agregar nuevo elemento](../../ide/reference/add-new-item-command.md) | Agrega un nuevo elemento de solución (como un archivo .htm, .css o .txt o un conjunto de marcos) a la solución actual y lo abre. |
 | [Alias](../../ide/reference/alias-command.md) | Crea un nuevo alias para un comando completo, un comando completo con argumentos o incluso otro alias. |
 | [Evaluar instrucción](../../ide/reference/evaluate-statement-command.md) | Evalúa y muestra la instrucción dada. |
-| [Find](../../ide/reference/find-command.md) | Busca archivos empleando un subconjunto de las opciones disponibles en el control **Buscar y reemplazar** . |
+| [Buscar](../../ide/reference/find-command.md) | Busca archivos empleando un subconjunto de las opciones disponibles en el control **Buscar y reemplazar** . |
 | [Buscar en archivos](../../ide/reference/find-in-files-command.md) | Busca archivos empleando un subconjunto de las opciones disponibles en el control [Buscar en archivos](../../ide/find-in-files.md). |
 | [Ir a](../../ide/reference/go-to-command.md) | Mueve el cursor a la línea especificada. |
 | [Mostrar pila de llamadas](../../ide/reference/list-call-stack-command.md) | Muestra la pila de llamadas actual. |
@@ -66,19 +68,19 @@ Los siguientes comandos toman argumentos o modificadores:
 | [Abrir proyecto](../../ide/reference/open-project-command.md) | Abre un proyecto existente y le permite agregar el proyecto a la solución actual. |
 | [Imprimir](../../ide/reference/print-command.md) | Evalúa la expresión y muestra los resultados o el texto especificado. |
 | [Inspección rápida (Comando)](../../ide/reference/quick-watch-command.md) | Muestra el texto seleccionado o especificado en el campo **Expresión** del cuadro de diálogo **Inspección rápida** . |
-| [Reemplazar](../../ide/reference/replace-command.md) | Reemplaza texto de los archivos empleando un subconjunto de las opciones disponibles en el control **Buscar y reemplazar** . |
+| [Sustituya](../../ide/reference/replace-command.md) | Reemplaza texto de los archivos empleando un subconjunto de las opciones disponibles en el control **Buscar y reemplazar** . |
 | [Reemplazar en archivos](../../ide/reference/replace-in-files-command.md) | Reemplaza texto de los archivos empleando un subconjunto de las opciones disponibles en [Reemplazar en archivos](../../ide/replace-in-files.md). |
 | [Establecer marco de pila actual](../../ide/reference/set-current-stack-frame-command.md) | Le permite ver un marco de pila determinado. |
 | [Establecer subproceso actual](../../ide/reference/set-current-thread-command.md) | Le permite ver un subproceso determinado. |
 | [Establecer base](../../ide/reference/set-radix-command.md) | Determina el número de bytes que se van a ver. |
 | [Shell](../../ide/reference/shell-command.md) | Inicia programas desde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] como si el comando se hubiera ejecutado desde el símbolo del sistema. |
-| [Comando ShowWebBrowser](../../ide/reference/showwebbrowser-command.md) | Muestra la dirección URL especificada en una ventana del explorador web dentro o fuera del entorno de desarrollo integrado (IDE). |
-| [Inicio](../../ide/reference/start-command.md) | Inicia el proceso de depuración y le permite especificar cómo se deben tratar los errores. |
+| [ShowWebBrowser (Comando)](../../ide/reference/showwebbrowser-command.md) | Muestra la dirección URL especificada en una ventana del explorador web dentro o fuera del entorno de desarrollo integrado (IDE). |
+| [Iniciar](../../ide/reference/start-command.md) | Inicia el proceso de depuración y le permite especificar cómo se deben tratar los errores. |
 | [Path](../../ide/reference/symbol-path-command.md) | Establece la lista de directorios para que el depurador busque símbolos. |
 | [Alternar punto de interrupción](../../ide/reference/toggle-breakpoint-command.md) | Activa o desactiva el punto de interrupción, en función del estado actual, en la ubicación actual del archivo. |
-| [Comando Inspección](../../ide/reference/watch-command.md) | Crea y abre una instancia especificada de una ventana **Inspección** . |
+| [Inspección (Comando)](../../ide/reference/watch-command.md) | Crea y abre una instancia especificada de una ventana **Inspección** . |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Ventana Comandos](../../ide/reference/command-window.md)
 - [Cuadro Buscar/Comando](../../ide/find-command-box.md)

@@ -1,5 +1,7 @@
 ---
 title: Configuración del proyecto para el depurador | Microsoft Docs
+description: Hay varias configuraciones del proyecto que afectan a la depuración. Siga los vínculos de este artículo para obtener información sobre cómo usar el cuadro de diálogo Páginas de propiedades para cambiar la configuración.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77f5ca5dcc1b886ec56b7177dd0d6aa62a8ce4f0
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 6a3a5ba7a1e215fddd5b1127859948496e9b4e1d
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188634"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96561037"
 ---
 # <a name="debugger-project-settings"></a>Configuración del proyecto para el depurador
 Ciertos valores de configuración del proyecto también afectan a la depuración. Estos valores determinan, por ejemplo, qué directorios consulta el depurador, el comando y los argumentos del comando utilizados para iniciar el programa y el tipo de información de depuración que se crea para el programa. Estos valores se pueden cambiar en el cuadro de diálogo **Páginas de propiedades** .

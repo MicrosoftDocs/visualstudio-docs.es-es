@@ -1,5 +1,6 @@
 ---
 title: Configuración internacional del cuadro de diálogo Opciones
+description: Obtenga información sobre cómo usar la página Configuración internacional de la sección Entorno para cambiar el idioma predeterminado si tiene más de una versión de idioma del IDE.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -18,12 +19,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1210f217c9e1dc1f8a90eb99fec9e55970aa8eff
-ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
+ms.openlocfilehash: 37be8d3e5a652bb55b1d71f66c0e9c8ca4cc2f16
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93102498"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617375"
 ---
 # <a name="options-dialog-box-environment--international-settings"></a>Cuadro de diálogo Opciones: Entorno \> Configuración internacional
 

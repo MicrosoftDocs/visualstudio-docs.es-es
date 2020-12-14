@@ -1,5 +1,6 @@
 ---
 title: Importar y exportar configuraciones del cuadro de diálogo Opciones
+description: Obtenga información sobre cómo usar la página Importar y exportar configuraciones de la sección Entorno para especificar dónde se guarda el archivo de configuración de usuario.
 ms.custom: SEO-VS-2020
 ms.date: 03/28/2019
 ms.topic: reference
@@ -11,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b78cae626e6e000e6c916c801ada6c1938f1731e
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 1e2ef878ec548baed476205cbc3dcaddce67355a
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046604"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616960"
 ---
 # <a name="options-dialog-box-environment--import-and-export-settings"></a>Cuadro de diálogo Opciones: Entorno \> Importar y exportar configuración
 

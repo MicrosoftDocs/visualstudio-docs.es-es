@@ -1,5 +1,7 @@
 ---
 title: Buscar y reemplazar, Entorno, Opciones (Cuadro de diálogo)
+description: Obtenga información sobre cómo usar la página Buscar y reemplazar de la sección Entorno para controlar cuadros de mensaje y otros aspectos de una operación de búsqueda y reemplazo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ef53be4d3894dd1d22a3afbde9dbf631b472aa2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 29f5fb6034c693c14cd04c83fe4c71f8763a0b0c
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75569574"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617323"
 ---
 # <a name="find-and-replace-environment-options-dialog-box"></a>Buscar y reemplazar, Entorno, Opciones (Cuadro de diálogo)
 
@@ -53,6 +55,6 @@ Cuando haya desactivado la opción **Mostrar siempre este mensaje** en algunos, 
 
 Seleccione esta opción para pegar el texto en cualquier lado del punto de inserción del editor actual en el campo **Buscar** cuando selecciona cualquier vista de la ventana **Buscar y reemplazar** desde el menú **Edición**. Desactive esta opción para usar el último patrón de búsqueda de la búsqueda anterior como la cadena **Buscar**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Buscar y reemplazar texto](../../ide/finding-and-replacing-text.md)

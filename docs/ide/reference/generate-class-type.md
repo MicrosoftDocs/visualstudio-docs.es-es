@@ -1,5 +1,7 @@
 ---
 title: Generación de una clase o tipo
+description: Obtenga información sobre cómo usar el menú Acciones rápidas y refactorizaciones para generar inmediatamente el código de una clase o un tipo.
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -12,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 94786ef10e427a0deb4f80471305509124f1638b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fe38cacf9f33acfac6b1634b6be6a8a3e45de820
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595636"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617544"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>Generación de una clase o tipo en Visual Studio
 
@@ -27,13 +29,13 @@ Esta generación de código se aplica a:
 
 - Visual Basic
 
-**Qué:** Permite generar el código de inmediato para una clase o un tipo.
+**Qué:** Le permite generar el código de inmediato para una clase o un tipo.
 
-**Cuándo:** Presenta una nueva clase o un tipo, y quiere declararlo de manera adecuada y de inmediato.
+**Cuándo:** Introduce una nueva clase o un tipo y desea declararlo de manera adecuada y de inmediato.
 
-**Por qué:** Podría declarar la clase o el tipo antes de usarlo; pero esta característica generará la clase o el tipo de forma automática.
+**Por qué:** Podría declarar la clase o el tipo antes de usarlo; sin embargo, esta característica generará la clase o el tipo automáticamente.
 
-## <a name="how-to"></a>Procedimiento
+## <a name="how-to"></a>Instrucciones
 
 1. Coloque el cursor en la línea donde haya un subrayado ondulado de color rojo. El subrayado ondulado de color rojo señala una clase que aún no existe.
 
@@ -64,17 +66,17 @@ Esta generación de código se aplica a:
    - Generar nuevo tipo...: Crea una clase o estructura con todas las propiedades que especifique.
 
    > [!TIP]
-   > Use el vínculo **Vista previa de los cambios** en la parte inferior de la ventana de vista previa [para ver todos los cambios ](../../ide/preview-changes.md) que se aplicarán antes de realizar la selección.
+   > Use el vínculo **Vista previa de los cambios** en la parte inferior de la ventana de vista previa [para ver todos los cambios](../../ide/preview-changes.md) que se aplicarán antes de realizar la selección.
 
 4. Si ha seleccionado el elemento **Generar nuevo tipo**, se abre el cuadro de diálogo **Generar tipo**. Configure la accesibilidad, la clase y la ubicación del nuevo tipo.
 
    ![Generar tipo](media/class-newtype-cs.png)
 
-   Selección | Descripción
+   Número de selección | Descripción
    --- | ---
-   Access | Configure el tipo para que tenga acceso *Predeterminado*, *Interno* o *Público*.
+   Acceso | Configure el tipo para que tenga acceso *Predeterminado*, *Interno* o *Público*.
    Kind | Esta propiedad puede establecerse como *clase* o *struct*.
-   NOMBRE | No se puede cambiar y será el nombre que ya ha escrito.
+   Nombre | No se puede cambiar y será el nombre que ya ha escrito.
    Proyecto | Si hay varios proyectos en la solución, puede elegir dónde desea que resida la clase/estructura.
    Nombre de archivo | Puede crear un nuevo archivo o agregar el tipo a un archivo existente.
 
