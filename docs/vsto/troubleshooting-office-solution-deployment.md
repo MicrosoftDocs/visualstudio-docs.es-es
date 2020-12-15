@@ -1,5 +1,7 @@
 ---
 title: Solucionar problemas de implementación de soluciones de Office
+description: Obtenga información acerca de cómo solucionar problemas comunes que pueden surgir al implementar soluciones de Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: troubleshooting
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4c7db4a699fcc8b28e4f2f423f612738de6a6836
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: b70b03e8342564de828059d1a335f6347c19b5a3
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90806738"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522967"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Solucionar problemas de implementación de soluciones de Office
   Este tema contiene información sobre cómo solucionar problemas comunes que pueden surgir al implementar soluciones de Office.
@@ -73,7 +75,7 @@ ms.locfileid: "90806738"
 
 2. En la página **Aplicación** , elija **Información de ensamblado**.
 
-3. Establezca el número de revisión, el tercer campo, de la **versión del ensamblado**en un carácter comodín ( \* ). Por ejemplo, "1,0. *".  A continuación, elija el botón **Aceptar** .
+3. Establezca el número de revisión, el tercer campo, de la **versión del ensamblado** en un carácter comodín ( \* ). Por ejemplo, "1,0. *".  A continuación, elija el botón **Aceptar** .
 
    Después de cambiar la versión del ensamblado, puede continuar para firmar el ensamblado con un nombre seguro y Fusion cargará la versión más reciente de la personalización.
 

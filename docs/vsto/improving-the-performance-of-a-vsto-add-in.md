@@ -1,5 +1,7 @@
 ---
 title: Mejorar el rendimiento de un complemento de VSTO
+description: Obtenga información acerca de cómo optimizar los complementos de VSTO que cree para las aplicaciones de Office para que se inicien, cierren, abran elementos y realicen otras tareas rápidamente.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -10,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7529c69270b5f33cde32e8a7907f1b80589c43b7
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 83ba2e9cc2cd55b3e3f6362250ffc1e9489b1626
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "92298509"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524434"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>Mejorar el rendimiento de un complemento de VSTO
   Puede ofrecer a los usuarios una mejor experiencia si optimiza los complementos de VSTO que cree para las aplicaciones de Office, de modo que se inicien, se cierren, abran elementos y realicen otras tareas rápidamente. Si el complemento de VSTO es para Outlook, también puede reducir la posibilidad de que se deshabilite debido a un bajo rendimiento. Puede aumentar el rendimiento del complemento de VSTO si implementa las estrategias siguientes:
@@ -51,13 +53,13 @@ ms.locfileid: "92298509"
 
 ### <a name="to-configure-a-windows-installer-solution-to-load-vsto-add-ins-on-demand"></a>Para configurar una solución de Windows Installer para cargar complementos de VSTO a petición
 
-1. En el registro, establezca la `LoadBehavior` entrada de la clave ** _raíz_\SOFTWARE\MICROSOFT\OFFICE \\ _applicationName_\Addins de \\ _identificador de complemento_ ** en **0x10**.
+1. En el registro, establezca la `LoadBehavior` entrada de la clave **_raíz_\SOFTWARE\MICROSOFT\OFFICE \\ _applicationName_\Addins de \\ _identificador de complemento_** en **0x10**.
 
      Para obtener más información, vea [entradas del registro para complementos de VSTO](../vsto/registry-entries-for-vsto-add-ins.md).
 
 ### <a name="to-configure-a-solution-to-load-vsto-add-ins-on-demand-while-you-debug-the-solution"></a>Para configurar una solución para cargar complementos de VSTO a petición mientras se depura la solución
 
-1. Cree un script que establezca la `LoadBehavior` entrada de la clave ** _raíz_\SOFTWARE\MICROSOFT\OFFICE \\ _applicationName_\Addins de \\ _identificador de complemento_ ** en **0x10**.
+1. Cree un script que establezca la `LoadBehavior` entrada de la clave **_raíz_\SOFTWARE\MICROSOFT\OFFICE \\ _applicationName_\Addins de \\ _identificador de complemento_** en **0x10**.
 
      El código siguiente muestra un ejemplo de este script.
 

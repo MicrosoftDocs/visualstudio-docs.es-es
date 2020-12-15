@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: volver a habilitar un complemento de VSTO que se ha deshabilitado'
+description: Obtenga información sobre cómo puede usar Visual Studio para volver a habilitar un complemento de VSTO que se ha deshabilitado en una aplicación Microsoft Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3575e119f4da3ca3050a28243104fb4773089cf3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d03a03494b149a761910ddbdaa1d41592704f969
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541263"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524478"
 ---
 # <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>Cómo: volver a habilitar un complemento de VSTO que se ha deshabilitado
   Las aplicaciones de Microsoft Office pueden deshabilitar los complementos de VSTO que se comporten de forma inesperada. Si una aplicación no carga el complemento de VSTO cuando intenta depurarlo, la aplicación podría haber deshabilitado total o parcialmente el complemento de VSTO.
@@ -43,7 +45,7 @@ ms.locfileid: "85541263"
 
      La columna **Nombre** especifica el nombre del ensamblado y la columna **Ubicación** especifica la ruta de acceso completa del manifiesto de aplicación.
 
-5. En el cuadro **Administrar** , haga clic en **Elementos deshabilitados**y, a continuación, haga clic en **Ir**.
+5. En el cuadro **Administrar** , haga clic en **Elementos deshabilitados** y, a continuación, haga clic en **Ir**.
 
 6. Seleccione el complemento de VSTO y haga clic en **Habilitar**.
 
@@ -67,7 +69,7 @@ ms.locfileid: "85541263"
 
      La columna **Nombre** especifica el nombre del ensamblado y la columna **Ubicación** especifica la ruta de acceso completa del manifiesto de aplicación.
 
-5. En el cuadro **Administrar** , haga clic en **Complementos COM**y, a continuación, haga clic en **Ir**.
+5. En el cuadro **Administrar** , haga clic en **Complementos COM** y, a continuación, haga clic en **Ir**.
 
 6. En el cuadro de diálogo **Complementos COM** , seleccione la casilla situada al lado del complemento de VSTO deshabilitado.
 

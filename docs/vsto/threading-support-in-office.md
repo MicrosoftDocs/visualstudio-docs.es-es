@@ -1,5 +1,7 @@
 ---
 title: Compatibilidad de subprocesos en Office
+description: Los subprocesos se admiten en el modelo de objetos de Microsoft Office. El modelo de objetos de Office no es seguro para subprocesos, pero puede funcionar con varios subprocesos en una solución de Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3218a12add86739c76cd50f82fdda5d845e2b069
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d44c86e17b5df79c44f85cd555b3036e925ae61
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62978772"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524191"
 ---
 # <a name="threading-support-in-office"></a>Compatibilidad de subprocesos en Office
   En este artículo se proporciona información sobre cómo se admiten los subprocesos en el modelo de objetos de Microsoft Office. El modelo de objetos de Office no es seguro para subprocesos, pero es posible trabajar con varios subprocesos en una solución de Office. Las aplicaciones de Office son servidores del modelo de objetos componentes (COM). COM permite que los clientes llamen a los servidores COM en subprocesos arbitrarios. En el caso de los servidores COM que no son seguros para subprocesos, COM proporciona un mecanismo para serializar las llamadas simultáneas de modo que solo se ejecute un subproceso lógico en el servidor en cualquier momento. Este mecanismo se conoce como el modelo de contenedor uniproceso (STA). Dado que las llamadas se serializan, los llamadores pueden bloquearse durante períodos de tiempo mientras el servidor está ocupado o controlando otras llamadas en un subproceso en segundo plano.
@@ -36,7 +38,7 @@ ms.locfileid: "62978772"
 
 - Simultaneidad
 
-- Sincronización
+- Synchronization
 
 - Marshaling
 

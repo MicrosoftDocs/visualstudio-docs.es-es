@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: insertar texto en un documento desde un panel de acciones'
+description: Crear un panel de acciones en un documento de Microsoft Word. Obtenga información acerca de que el panel de acciones contiene dos controles que recopilan entradas y, a continuación, envían el texto al documento.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c65027d7670c4d6789f32eb4d9080df061d904a
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 44fd876dfad99e1a1320a5e5d743ea8e30dfdb98
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584968"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524161"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>Tutorial: insertar texto en un documento desde un panel de acciones
   En este tutorial se muestra cómo crear un panel de acciones en un documento de Microsoft Office Word. El panel acciones contiene dos controles que recopilan entradas y, a continuación, envían el texto al documento.
@@ -44,7 +46,7 @@ ms.locfileid: "91584968"
 
 - [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] o [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].
 
-## <a name="create-the-project"></a>Crear el proyecto
+## <a name="create-the-project"></a>Creación del proyecto
  El primer paso es crear un proyecto de tipo Documento de Word.
 
 ### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto
@@ -76,7 +78,7 @@ ms.locfileid: "91584968"
 
      Aparece el cuadro de diálogo **Agregar control de marcador** .
 
-2. Seleccione el **nombre**de la palabra, sin seleccionar la marca de párrafo, y haga clic en **Aceptar**.
+2. Seleccione el **nombre** de la palabra, sin seleccionar la marca de párrafo, y haga clic en **Aceptar**.
 
     > [!NOTE]
     > La marca de párrafo debe estar fuera del marcador. Si las marcas de párrafo no están visibles en el documento, haga clic en el menú **herramientas** , elija **Microsoft Office herramientas de Word** y, a continuación, haga clic en **Opciones**. Haga clic en la pestaña **Ver** y active la casilla **marcas de párrafo** en la sección **marcas de formato** del cuadro de diálogo **Opciones** .
@@ -180,7 +182,7 @@ ms.locfileid: "91584968"
 
 - Enlazar datos a controles en un panel de acciones. Para obtener más información, vea [Tutorial: enlazar datos a controles en un panel de acciones de Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Información general del panel de acciones](../vsto/actions-pane-overview.md)
 - [Cómo: agregar un panel de acciones a documentos de Word o libros de Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
 - [Cómo: agregar un panel de acciones a los libros de Excel](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100))

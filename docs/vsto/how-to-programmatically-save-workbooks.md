@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: guardar libros mediante programación'
+description: Guardar mediante programación los libros de Microsoft Excel sin cambiar la ruta de acceso y guardar una copia de un libro sin modificar el libro abierto en memoria.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6b45449f72275ac154a433cad725a2867062cc5e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dbc228a703d6c9224fda545a93132ccb45c94b0f
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547087"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524616"
 ---
 # <a name="how-to-programmatically-save-workbooks"></a>Cómo: guardar libros mediante programación
   Existen varias formas de guardar un libro. Puede guardar un libro sin cambiar la ruta de acceso. Si el libro nunca se guardó, debe guardarlo especificando una ruta de acceso. Sin una ruta de acceso explícita, Microsoft Office Excel guarda el archivo en la carpeta actual con el nombre que se especificó cuando se creó. También puede guardar una copia del libro sin modificar el libro abierto en memoria.
@@ -82,7 +84,7 @@ ms.locfileid: "85547087"
 ## <a name="robust-programming"></a>Programación sólida
  Si se cancela interactivamente cualquiera de los métodos que guardan o copian el libro se produce un error en tiempo de ejecución en el código. Por ejemplo, si el procedimiento llama al <xref:Microsoft.Office.Tools.Excel.Workbook.SaveAs%2A> método, pero no deshabilita los mensajes de Excel, y el usuario hace clic en **Cancelar** cuando se le solicita, Excel genera un error en tiempo de ejecución.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Trabajar con libros](../vsto/working-with-workbooks.md)
 - [Elemento host del libro](../vsto/workbook-host-item.md)
 - [Cómo: cerrar libros mediante programación](../vsto/how-to-programmatically-close-workbooks.md)

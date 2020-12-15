@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: mostrar una cadena en una celda de una hoja de cálculo mediante programación'
+description: Obtenga información sobre cómo puede mostrar mediante programación una cadena en una celda de hoja de cálculo de Microsoft Excel mediante un control NamedRange o un objeto de intervalo de Excel nativo.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eb3dbaec2efd95f63428e8494598720953f791e7
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: a97534b8ac43c9a05cfb59fb911442a87d51c767
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585228"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523949"
 ---
 # <a name="how-to-programmatically-display-a-string-in-a-worksheet-cell"></a>Cómo: mostrar una cadena en una celda de una hoja de cálculo mediante programación
   En este ejemplo se muestra cómo mostrar texto en una celda mediante programación. Para mostrar texto en la celda, use un <xref:Microsoft.Office.Tools.Excel.NamedRange> control o un objeto de intervalo de Excel nativo.
@@ -46,7 +48,7 @@ ms.locfileid: "91585228"
      [!code-csharp[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#69)]
      [!code-vb[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#69)]
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Tutorial: recopilar datos con Windows Forms](../vsto/walkthrough-collecting-data-using-a-windows-form.md)
 - [Solucionar problemas de soluciones de Office](../vsto/troubleshooting-office-solutions.md)
 - [NamedRange (control)](../vsto/namedrange-control.md)

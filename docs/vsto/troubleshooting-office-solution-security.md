@@ -1,5 +1,7 @@
 ---
 title: Solucionar problemas de seguridad de soluciones de Office
+description: Conozca algunas sugerencias para solucionar problemas comunes que pueden surgir al trabajar con la protección de soluciones de Microsoft Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: troubleshooting
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8825f1f4393d93df6a621fd71b6782c6652a9c0c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 89ca980b378ee71d1db9b373459c8b7309f0ecc2
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87234814"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522890"
 ---
 # <a name="troubleshoot-office-solution-security"></a>Solucionar problemas de seguridad de soluciones de Office
   Este tema contiene sugerencias para solucionar problemas comunes que pueden surgir al trabajar con la protección de soluciones de Office.

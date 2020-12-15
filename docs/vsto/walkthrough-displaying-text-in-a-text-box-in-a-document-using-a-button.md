@@ -1,5 +1,7 @@
 ---
 title: Mostrar texto en el cuadro de texto del documento con el botón
+description: Obtenga información sobre cómo puede usar los botones y cuadros de texto en una personalización de nivel de documento para Microsoft Word.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8f3c467abcee8fb4faafd2da06ba261e7f3039fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1cda1fe3e7430ff30dcc3b3921eb2bcd4d31b699
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328753"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522755"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>Tutorial: mostrar texto en un cuadro de texto de un documento mediante un botón
   Este tutorial muestra cómo usar los botones y cuadros de texto en una personalización de nivel de documento para Microsoft Office Word.
@@ -39,7 +41,7 @@ ms.locfileid: "67328753"
 
 - Microsoft Word
 
-## <a name="create-the-project"></a>Crear el proyecto
+## <a name="create-the-project"></a>Creación del proyecto
  El primer paso es crear un proyecto de tipo Documento de Word.
 
 ### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto
@@ -80,7 +82,7 @@ ms.locfileid: "67328753"
 
 ### <a name="to-write-to-the-text-box-when-the-button-is-clicked"></a>Para escribir en el cuadro de texto cuando se haga clic en el botón
 
-1. En **Explorador de soluciones**, haga clic con el botón secundario en **ThisDocument**y, a continuación, haga clic en **Ver código** en el menú contextual.
+1. En **Explorador de soluciones**, haga clic con el botón secundario en **ThisDocument** y, a continuación, haga clic en **Ver código** en el menú contextual.
 
 2. Agregue el siguiente código al controlador de eventos <xref:System.Windows.Forms.Control.Click> del botón.
 

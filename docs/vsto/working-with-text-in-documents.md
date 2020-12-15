@@ -1,5 +1,7 @@
 ---
 title: Trabajar con texto en documentos
+description: Obtenga información sobre procedimientos paso a paso y ejemplos de código para usar el modelo de objetos de Microsoft Word para trabajar con texto en proyectos de Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cdb38bcb8a86900cae7eb596c48b5765bc247eac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8314752b5d1be6d1d86dcf35cf78851bcb45cb3c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62815092"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523383"
 ---
 # <a name="work-with-text-in-documents"></a>Trabajar con texto en documentos
   Los temas de esta sección proporcionan procedimientos detallados y ejemplos de código para usar el modelo de objetos de Microsoft Office Word para trabajar con texto en proyectos de Office.

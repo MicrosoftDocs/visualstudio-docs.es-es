@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: abrir libros mediante programación'
+description: Obtenga información sobre cómo puede usar Visual Studio para abrir mediante programación un libro de Microsoft Excel o trabajar con un libro existente.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 10a849d8545565e450cd099b32a9e3e8f7f11b56
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f7de4072df177bd9a7c6ae23bf59e44e50d56e32
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537909"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523894"
 ---
 # <a name="how-to-programmatically-open-workbooks"></a>Cómo: abrir libros mediante programación
   La <xref:Microsoft.Office.Interop.Excel.Workbooks> colección de Microsoft Office Excel permite trabajar con todos los libros abiertos y abrir los libros.

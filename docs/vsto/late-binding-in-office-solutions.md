@@ -1,5 +1,7 @@
 ---
 title: Enlace en tiempo de ejecución en las soluciones de Office
+description: Obtenga información sobre cómo algunos tipos de modelos de objetos de Microsoft Office aplicaciones proporcionan funcionalidad que está disponible a través de las características de enlace en tiempo de ejecución.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 62224006d04e0a1e7447053e868dd9946f00c97e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 201b850d8a577f8cc76aff97e2370998b6f885ed
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62583951"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523562"
 ---
 # <a name="late-binding-in-office-solutions"></a>Enlace en tiempo de ejecución en las soluciones de Office
   Algunos tipos de los modelos de objetos de las aplicaciones de Office proporcionan funcionalidad que está disponible a través de las características de enlace en tiempo de ejecución. Por ejemplo, algunos métodos y propiedades pueden devolver distintos tipos de objetos en función del contexto de la aplicación de Office, y algunos tipos pueden exponer métodos o propiedades diferentes en contextos diferentes.

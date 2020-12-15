@@ -1,5 +1,7 @@
 ---
 title: Mostrar texto en el cuadro de texto de la hoja de cálculo con el botón
+description: Conozca los aspectos básicos del uso de botones y cuadros de texto en hojas de cálculo de Microsoft Excel. Cree también proyectos de Excel mediante las herramientas de desarrollo de Office en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b30eea0152b75cdd0869ececac674ee5aeee7933
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c499800efa783ce252dbf925f307bc64e814420f
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328718"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522643"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-worksheet-using-a-button"></a>Tutorial: mostrar texto en un cuadro de texto de una hoja de cálculo mediante un botón
   En este tutorial se muestran los aspectos básicos del uso de botones y cuadros de texto en Microsoft Office hojas de cálculo de Excel y cómo crear proyectos de Excel con las herramientas de desarrollo de Office en Visual Studio. Para ver el resultado como un ejemplo completado, vea el ejemplo de controles de Excel en [ejemplos y tutoriales de desarrollo de Office](../vsto/office-development-samples-and-walkthroughs.md).
@@ -45,7 +47,7 @@ ms.locfileid: "67328718"
 
 - [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] o [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
-## <a name="create-the-project"></a>Crear el proyecto
+## <a name="create-the-project"></a>Creación del proyecto
  En este paso, creará un proyecto de libro de Excel con Visual Studio.
 
 ### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto
@@ -81,7 +83,7 @@ ms.locfileid: "67328718"
 
 ### <a name="to-write-to-the-text-box-when-the-button-is-clicked"></a>Para escribir en el cuadro de texto cuando se haga clic en el botón
 
-1. En **Explorador de soluciones**, haga clic con el botón secundario en **Hoja1**y, a continuación, haga clic en **Ver código** en el menú contextual.
+1. En **Explorador de soluciones**, haga clic con el botón secundario en **Hoja1** y, a continuación, haga clic en **Ver código** en el menú contextual.
 
 2. Agregue el código siguiente al <xref:System.Windows.Forms.Control.Click> controlador de eventos del botón:
 

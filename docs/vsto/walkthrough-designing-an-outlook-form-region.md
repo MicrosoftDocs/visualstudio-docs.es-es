@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: diseñar un área de formulario de Outlook'
+description: Obtenga información acerca de cómo puede diseñar un área de formulario de Microsoft Outlook personalizada que aparece como una nueva página en la ventana del inspector de un elemento de contacto.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 01cfe55964a1d61c2ad200c9538ced9ff0aa5599
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e306814512c6cab2d331a26128f22bb94d7dbbf4
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985463"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524210"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>Tutorial: diseñar un área de formulario de Outlook
   Las áreas de formulario personalizadas extienden los formularios estándar o personalizados de Microsoft Office Outlook. En este tutorial diseñará un área de formulario personalizada que aparece como una nueva página en la ventana del inspector de un elemento de contacto. Esta área de formulario muestra una asignación de cada dirección incluida para el contacto, enviando la información de la dirección al sitio web de búsqueda local de Windows Live. Para obtener información sobre las áreas de formulario, consulte [crear áreas de formulario de Outlook](../vsto/creating-outlook-form-regions.md).
@@ -70,13 +72,13 @@ ms.locfileid: "72985463"
 
 2. En el menú **Proyecto** , haga clic en **Agregar nuevo elemento**.
 
-3. En el cuadro de diálogo **Agregar nuevo elemento** , seleccione **área de formulario de Outlook**, asigne al archivo el nombre **MapIt**y, a continuación, haga clic en **Agregar**.
+3. En el cuadro de diálogo **Agregar nuevo elemento** , seleccione **área de formulario de Outlook**, asigne al archivo el nombre **MapIt** y, a continuación, haga clic en **Agregar**.
 
      Se inicia el Asistente para **NewOutlook Form region** .
 
-4. En la página **Seleccione cómo desea crear el área de formulario** , haga clic en **diseñar una nueva área de formulario**y, a continuación, haga clic en **siguiente**.
+4. En la página **Seleccione cómo desea crear el área de formulario** , haga clic en **diseñar una nueva área de formulario** y, a continuación, haga clic en **siguiente**.
 
-5. En la página **Seleccione el tipo de área de formulario que desea crear** , haga clic en **independiente**y, a continuación, haga clic en **siguiente**.
+5. En la página **Seleccione el tipo de área de formulario que desea crear** , haga clic en **independiente** y, a continuación, haga clic en **siguiente**.
 
      Un área de formulario *independiente* agrega una nueva página a un formulario de Outlook. Para obtener más información sobre los tipos de áreas de formulario, consulte [crear áreas de formulario de Outlook](../vsto/creating-outlook-form-regions.md).
 
@@ -84,9 +86,9 @@ ms.locfileid: "72985463"
 
      Este nombre aparece en la cinta de opciones de la ventana del inspector cuando se abre el elemento de contacto.
 
-7. Seleccione **inspectores que estén en modo de redacción** e **inspectores que estén en modo de lectura**y, a continuación, haga clic en **siguiente**.
+7. Seleccione **inspectores que estén en modo de redacción** e **inspectores que estén en modo de lectura** y, a continuación, haga clic en **siguiente**.
 
-8. En la página **identifique las clases de mensaje que mostrarán esta área de formulario** , desactive mensaje de **correo**, seleccione **contacto**y, a continuación, haga clic en **Finalizar**.
+8. En la página **identifique las clases de mensaje que mostrarán esta área de formulario** , desactive mensaje de **correo**, seleccione **contacto** y, a continuación, haga clic en **Finalizar**.
 
      Se agrega un archivo *MapIt.CS* o *MapIt. VB* al proyecto.
 
@@ -114,7 +116,7 @@ ms.locfileid: "72985463"
 
 ### <a name="to-customize-the-behavior-of-the-form-region"></a>Para personalizar el comportamiento del área de formulario
 
-1. En **Explorador de soluciones**, haga clic con el botón secundario en *MapIt.CS* o *MapIt. VB*y, a continuación, haga clic en **Ver código**.
+1. En **Explorador de soluciones**, haga clic con el botón secundario en *MapIt.CS* o *MapIt. VB* y, a continuación, haga clic en **Ver código**.
 
     *MapIt.CS* o *MapIt. VB* se abre en el editor de código.
 
@@ -147,7 +149,7 @@ ms.locfileid: "72985463"
 
      Se abre Outlook.
 
-2. En Outlook, en la pestaña **Inicio** , haga clic en **nuevos elementos**y, a continuación, haga clic en **contacto**.
+2. En Outlook, en la pestaña **Inicio** , haga clic en **nuevos elementos** y, a continuación, haga clic en **contacto**.
 
 3. En el formulario de contacto, escriba **Ann Díaz** como nombre de contacto y, a continuación, especifique las tres direcciones siguientes.
 
@@ -165,7 +167,7 @@ ms.locfileid: "72985463"
 
 6. En el grupo **Mostrar** de la cinta de opciones del elemento, haga clic en **asignar** para abrir el área de formulario Map it.
 
-     Aparece el área de formulario Map It y muestra el sitio web de búsqueda local. Las direcciones **empresa**, **Inicio**y **otras** aparecen en el panel de borrador. En dicho bloc, seleccione la dirección que desea asignar.
+     Aparece el área de formulario Map It y muestra el sitio web de búsqueda local. Las direcciones **empresa**, **Inicio** y **otras** aparecen en el panel de borrador. En dicho bloc, seleccione la dirección que desea asignar.
 
 ## <a name="next-steps"></a>Pasos siguientes
  Puede obtener más información sobre cómo personalizar la interfaz de usuario de una aplicación de Outlook en estos temas:

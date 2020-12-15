@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: automatizar una aplicación desde un panel de tareas personalizado'
+description: Cree un panel de tareas personalizado que automatice Microsoft PowerPoint insertando fechas en una diapositiva cuando el usuario hace clic en un control MonthCalendar en el panel de tareas personalizado.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52474aeebfbc03fba2a2e119e1b3366c30cf6959
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 7bb53d56a83c74a0ab1719f62377e2da426a83fd
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585085"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522803"
 ---
 # <a name="walkthrough-automate-an-application-from-a-custom-task-pane"></a>Tutorial: automatizar una aplicación desde un panel de tareas personalizado
   En este tutorial se muestra cómo crear un panel de tareas personalizado que automatiza PowerPoint. El panel de tareas personalizado inserta fechas en una diapositiva cuando el usuario hace clic en un control <xref:System.Windows.Forms.MonthCalendar> que se encuentra en el panel de tareas personalizado.
@@ -66,7 +68,7 @@ ms.locfileid: "91585085"
 
 1. En el menú **Proyecto** , haga clic en **Agregar control de usuario**.
 
-2. En el cuadro de diálogo **Agregar nuevo elemento** , cambie el nombre del control de usuario a **MyUserControl**y haga clic en **Agregar**.
+2. En el cuadro de diálogo **Agregar nuevo elemento** , cambie el nombre del control de usuario a **MyUserControl** y haga clic en **Agregar**.
 
      Se abre el control de usuario en el diseñador.
 
@@ -141,7 +143,7 @@ ms.locfileid: "91585085"
 
 - Crear un panel de tareas personalizado para cada mensaje de correo que se abre en Outlook. Para obtener más información, vea [Tutorial: Mostrar paneles de tareas personalizados con mensajes de correo electrónico en Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Paneles de tareas personalizados](../vsto/custom-task-panes.md)
 - [Cómo: agregar un panel de tareas personalizado a una aplicación](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
 - [Tutorial: sincronizar un panel de tareas personalizado con un botón de la cinta de opciones](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)

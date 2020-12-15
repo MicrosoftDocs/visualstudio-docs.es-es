@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: quitar extensiones de código administrado de documentos'
+description: Quitar mediante programación el ensamblado de personalización de un documento o un libro que forma parte de una personalización de nivel de documento para Microsoft Word o Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3b4f5cb3098289463cea7e650332583ec7b12258
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be32109e2a34df8605c0dbe5ba9f1df4e32cfc55
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541315"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524460"
 ---
 # <a name="how-to-remove-managed-code-extensions-from-documents"></a>Cómo: quitar extensiones de código administrado de documentos
   Puede quitar mediante programación el ensamblado de personalización de un documento o un libro que forme parte de una personalización de nivel de documento para Microsoft Office Word o Microsoft Office Excel. A continuación, los usuarios pueden abrir los documentos y ver el contenido, pero cualquier interfaz de usuario personalizada que agregue a los documentos no aparecerá y el código no se ejecutará.

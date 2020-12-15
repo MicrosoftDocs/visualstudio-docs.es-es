@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: crear el primer complemento de VSTO para Outlook'
+description: Cree un complemento de nivel de aplicación para Microsoft Outlook. Esta característica está disponible para la propia aplicación, con independencia del elemento de Outlook que esté abierto.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: baedd24b7eba14b3f2fa6496a7a681773b81cb9b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7950858d3205cf910eb09e5b0a99b5f67c71c4bd
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "69547981"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524232"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-outlook"></a>Tutorial: crear el primer complemento de VSTO para Outlook
   Este tutorial muestra cómo crear un complemento de VSTO para Microsoft Office Outlook. Las características que cree en este tipo de solución estarán disponibles para la propia aplicación, con independencia del elemento de Outlook que se abra. Para obtener más información, vea [información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -48,15 +50,15 @@ ms.locfileid: "69547981"
 
 - Microsoft Outlook
 
-## <a name="create-the-project"></a>Crear el proyecto
+## <a name="create-the-project"></a>Creación del proyecto
 
 ### <a name="to-create-a-new-outlook-project-in-visual-studio"></a>Para crear un nuevo proyecto de Outlook en Visual Studio
 
 1. Inicie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. En el menú **Archivo** , seleccione **Nuevo**y haga clic en **Proyecto**.
+2. En el menú **Archivo** , seleccione **Nuevo** y haga clic en **Proyecto**.
 
-3. En el panel de plantillas, expanda **Visual C#** o **Visual Basic**y luego expanda **Office/SharePoint**.
+3. En el panel de plantillas, expanda **Visual C#** o **Visual Basic** y luego expanda **Office/SharePoint**.
 
 4. En el nodo **Office/SharePoint** expandido, seleccione el nodo **Complementos de Office** .
 
@@ -64,7 +66,7 @@ ms.locfileid: "69547981"
 
 6. En el cuadro **Nombre** , escriba **FirstOutlookAddIn**.
 
-7. Haga clic en **Aceptar**.
+7. Haga clic en **OK**.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] crea el proyecto **FirstOutlookAddIn** y abre el archivo de código **ThisAddIn** en el editor.
 
@@ -137,7 +139,7 @@ ms.locfileid: "69547981"
 
 - Implementar complementos de VSTO para Outlook. Para obtener más información, vea [implementar una solución de Office](../vsto/deploying-an-office-solution.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Complementos de VSTO de programa](../vsto/programming-vsto-add-ins.md)
 - [Soluciones de Outlook](../vsto/outlook-solutions.md)
 - [Personalización de la interfaz de usuario de Office](../vsto/office-ui-customization.md)

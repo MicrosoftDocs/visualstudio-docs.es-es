@@ -1,5 +1,7 @@
 ---
 title: Limitaciones de los controles de Windows Forms en documentos de Office
+description: Obtenga información sobre las limitaciones de las propiedades y los métodos de control de Windows Forms en los documentos de Microsoft Office.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -21,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ade7da21a8d07fbd429a88303ad2be375877c1ec
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 63459f4daf1f9fe717946491a997ba47510fbab8
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583741"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524457"
 ---
 # <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Limitaciones de los controles de Windows Forms en documentos de Office
 
@@ -71,7 +73,7 @@ Tampoco se puede establecer la <xref:System.Windows.Forms.Control.Left> <xref:Sy
 
 Los controles Windows Forms suelen tener el mismo comportamiento en un documento de Office que en Windows Forms, pero existen algunas diferencias. En la tabla siguiente se describen las diferencias que existen para los controles de Windows Forms en documentos de Office.
 
-|Funcionalidad|Diferencia|
+|Funcionalidad|Resta|
 |-------------------|----------------|
 |Orden de las pestañas de control|No se puede realizar una tabulación a través de los controles colocados en una hoja de cálculo o un documento de Word|
 |Agrupación de controles|No se puede usar un <xref:System.Windows.Forms.GroupBox> control para que contenga otros controles en un documento de Office. Cuando se agregan varios botones de radio directamente al documento, los botones de radio no se excluyen mutuamente. Puede escribir código para que los botones de radio sean mutuamente excluyentes. sin embargo, el método preferido es agregar los botones de radio a un control de usuario y, a continuación, agregar el control de usuario al documento. Para obtener más información, vea el ejemplo de controles de Word o de controles de Excel en [ejemplos y tutoriales de desarrollo de Office](../vsto/office-development-samples-and-walkthroughs.md).|
@@ -183,7 +185,7 @@ Los siguientes controles y componentes no están disponibles en el **cuadro de h
 
 Si crea un proyecto de Office de nivel de documento que use un documento de Word o un libro de Excel existente que contenga controles ActiveX, no se perderá la funcionalidad de los controles ActiveX. sin embargo, no se admite la adición de nuevos controles ActiveX a los documentos desde Visual Studio. Por ejemplo, si el documento de Word tiene un botón del cuadro de herramientas de **control** que ejecuta una macro Visual Basic para aplicaciones (VBA), seguirá ejecutando la macro después de que el documento se haya usado en un proyecto de Office. Sin embargo, se recomienda que quite los controles ActiveX y las macros VBA y los reemplace por Windows Forms controles y código administrado.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Controles en documentos de Office](../vsto/controls-on-office-documents.md)
 - [Información general sobre los controles de Windows Forms en documentos de Office](../vsto/windows-forms-controls-on-office-documents-overview.md)

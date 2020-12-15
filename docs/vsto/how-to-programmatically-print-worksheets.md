@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: imprimir hojas de cálculo mediante programación'
+description: Obtenga información sobre cómo puede usar Visual Studio para imprimir mediante programación cualquier hoja de cálculo en un libro de Microsoft Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b0affdd34ad1cb302beacdc1abc9d02275878afd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 356c47ec3275c1442082f367dd08fe6901f9c0a3
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537896"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523763"
 ---
 # <a name="how-to-programmatically-print-worksheets"></a>Cómo: imprimir hojas de cálculo mediante programación
 

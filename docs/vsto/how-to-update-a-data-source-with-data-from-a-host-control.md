@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: actualizar un origen de datos con datos de un control host'
+description: Obtenga información sobre cómo puede enlazar un control host a un origen de datos y actualizar el origen de datos con los cambios que se realizan en los datos del control.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52540f0cf94a12efda891657ec4aae9452ad6f86
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 2f79b8ae8716631a7adc68446b0c5fe267a30a88
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585124"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523606"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Cómo: actualizar un origen de datos con datos de un control host
   Puede enlazar un control host a un origen de datos y actualizar el origen de datos con los cambios que se realicen en los datos del control. Hay dos pasos principales en este proceso:
@@ -90,7 +92,7 @@ ms.locfileid: "91585124"
 
 6. Cierre el cuadro de diálogo **Formato y enlace de datos avanzado** .
 
-## <a name="update-the-database"></a>Actualizar la base de datos
+## <a name="update-the-database"></a>Actualización de la base de datos
  Si el origen de datos en memoria está asociado a una base de datos, debe actualizar la base de datos con los cambios en el origen de datos. Para obtener más información acerca de cómo actualizar una base de datos, vea [guardar datos en la base](../data-tools/save-data-back-to-the-database.md)  de datos y [actualizar datos mediante un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md) .
 
 ### <a name="to-update-the-database"></a>Para actualizar la base de datos
@@ -113,7 +115,7 @@ ms.locfileid: "91585124"
      [!code-csharp[Trin_VstcoreDataExcel#21](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#21)]
      [!code-vb[Trin_VstcoreDataExcel#21](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#21)]
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Guardar los datos de nuevo en la base de datos](../data-tools/save-data-back-to-the-database.md)
 - [Actualizar datos mediante un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)

@@ -1,5 +1,7 @@
 ---
 title: Solucionar errores en soluciones de Office
+description: Obtenga información acerca de cómo solucionar los errores que pueden producirse al desarrollar soluciones de Microsoft Office en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: troubleshooting
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4f0d4eee6714d29a1609f6f6531ab18c132d5527
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd12c3dd9cd3c90564351dd1c64cebfe5df6e99d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87234697"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523030"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Solucionar errores en soluciones de Office
   Pueden surgir problemas al realizar las siguientes tareas mientras desarrolla soluciones de Office en Visual Studio:
@@ -36,7 +38,7 @@ ms.locfileid: "87234697"
 
 - [Escribir código](#code)
 
-- [Proyectos de compilación](#building)
+- [Compilación de proyectos](#building)
 
 - [Depurar proyectos](#debugging)
 
@@ -115,7 +117,7 @@ ms.locfileid: "87234697"
 
  Este error significa que está intentando acceder a un evento que tiene el mismo nombre que otra propiedad o método del objeto. Para tener acceso al evento, debe convertir el objeto a su *interfaz de eventos*.
 
- Los tipos de PIA de Office que tienen eventos implementan dos interfaces: una interfaz básica con todas las propiedades y métodos, y una interfaz de eventos que contiene los eventos expuestos por el objeto. Estas interfaces de eventos utilizan la Convención de nomenclatura *objectname*Events*n*_Event, como <xref:Microsoft.Office.Interop.Excel.AppEvents_Event> y <xref:Microsoft.Office.Interop.Word.ApplicationEvents2_Event> . Si no puede acceder a un evento que espera encontrar en un objeto, convierta el objeto a su interfaz de eventos.
+ Los tipos de PIA de Office que tienen eventos implementan dos interfaces: una interfaz básica con todas las propiedades y métodos, y una interfaz de eventos que contiene los eventos expuestos por el objeto. Estas interfaces de eventos utilizan la Convención de nomenclatura *objectname* Events *n* _Event, como <xref:Microsoft.Office.Interop.Excel.AppEvents_Event> y <xref:Microsoft.Office.Interop.Word.ApplicationEvents2_Event> . Si no puede acceder a un evento que espera encontrar en un objeto, convierta el objeto a su interfaz de eventos.
 
  Por ejemplo, los objetos <xref:Microsoft.Office.Interop.Excel.Application> tienen un evento <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook> y una propiedad <xref:Microsoft.Office.Interop.Excel._Application.NewWorkbook%2A>. Para controlar el evento <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook>, convierta <xref:Microsoft.Office.Interop.Excel.Application> a la interfaz <xref:Microsoft.Office.Interop.Excel.AppEvents_Event>. En el ejemplo de código siguiente se muestra cómo hacerlo desde un proyecto de nivel de documento para Excel.
 
@@ -170,7 +172,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 
  Aunque haya importado el espacio de nombres de Word o Excel y tenga acceso a todas las clases que contiene, debe calificar totalmente todos los tipos con Word o Excel para quitar la ambigüedad de los espacios de nombres.
 
-## <a name="build-projects"></a><a name="building"></a> Compilar proyectos
+## <a name="build-projects"></a><a name="building"></a> Proyectos de compilación
  Pueden producirse los siguientes errores al compilar proyectos de Office.
 
 ### <a name="cannot-build-a-document-level-project-that-is-based-on-a-document-with-restricted-permissions"></a>No se puede compilar un proyecto de nivel de documento basado en un documento con permisos restringidos
@@ -197,7 +199,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
  Si crea un proyecto de nivel de documento para Excel o Word en una ubicación de red UNC, debe agregar la ubicación del documento a la lista de ubicaciones de confianza en Excel o Word. De lo contrario, la personalización no se cargará cuando intente ejecutar o depurar el proyecto en Visual Studio. Para obtener más información sobre las ubicaciones de confianza, vea [conceder confianza a los documentos](../vsto/granting-trust-to-documents.md).
 
 ### <a name="threads-are-not-stopped-correctly-after-debugging"></a>Los subprocesos no se detienen correctamente tras la depuración
- Los proyectos de Office en Visual Studio siguen una convención de nomenclatura de subprocesos que permite al depurador cerrar el programa correctamente. Si crea subprocesos en la solución, debe asignar al nombre de cada subproceso el prefijo VSTA_ para asegurarse de que estos subprocesos se controlan correctamente cuando se detiene la depuración. Por ejemplo, puede establecer la `Name` propiedad de un subproceso que espera a que se **VSTA_NetworkListener**un evento de red.
+ Los proyectos de Office en Visual Studio siguen una convención de nomenclatura de subprocesos que permite al depurador cerrar el programa correctamente. Si crea subprocesos en la solución, debe asignar al nombre de cada subproceso el prefijo VSTA_ para asegurarse de que estos subprocesos se controlan correctamente cuando se detiene la depuración. Por ejemplo, puede establecer la `Name` propiedad de un subproceso que espera a que se **VSTA_NetworkListener** un evento de red.
 
 ### <a name="cannot-run-or-debug-any-office-solution-on-the-development-computer"></a>No se puede ejecutar o depurar ninguna solución de Office en el equipo de desarrollo
  Si no puede ejecutar o desarrollar un proyecto de Office en el equipo de desarrollo, podría ver el siguiente mensaje de error.

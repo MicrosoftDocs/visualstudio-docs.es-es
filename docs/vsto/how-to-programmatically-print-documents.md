@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: imprimir documentos mediante programación'
+description: Obtenga información acerca de cómo puede imprimir un documento de Microsoft Word completo o parte de un documento en la impresora predeterminada.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 413d0e4f56aeb897af4f16a0dc6c43b4f04eace7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e17976c86a519db3c5edcd60c426b5d20e84b526
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537831"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523914"
 ---
 # <a name="how-to-programmatically-print-documents"></a>Cómo: imprimir documentos mediante programación
   Puede imprimir la totalidad o parte de un documento de Microsoft Office Word en la impresora predeterminada.

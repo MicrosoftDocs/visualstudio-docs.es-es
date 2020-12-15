@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: ejecutar cálculos de Excel mediante programación'
+description: Obtenga información sobre cómo puede usar Visual Studio para ejecutar cálculos mediante programación en un libro de Microsoft Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a02e86864065d2c626de2f6e7fea7528554f1391
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e9f385e7c58972844c30320c680f42d8394580d8
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547386"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524699"
 ---
 # <a name="how-to-programmatically-run-excel-calculations"></a>Cómo: ejecutar cálculos de Excel mediante programación
   Se usa un proceso similar para ejecutar cálculos en un <xref:Microsoft.Office.Tools.Excel.NamedRange> control o en un objeto de intervalo de Excel nativo.

@@ -1,5 +1,7 @@
 ---
 title: Mostrar paneles de tareas personalizados con mensajes de correo electrónico en Outlook
+description: Obtenga información sobre cómo mostrar una instancia única de un panel de tareas personalizado con cada mensaje de correo electrónico de Microsoft Outlook que se crea o se abre.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 00a8eae3f0beea7482c5fd7a1ac1ebd1994b9c35
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: ac14eff05c6f776181c20acde4cff4e2ed7a87b6
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584287"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522707"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>Tutorial: Mostrar paneles de tareas personalizados con mensajes de correo electrónico en Outlook
   En este tutorial se muestra cómo mostrar una instancia única de un panel de tareas personalizado con cada mensaje de correo electrónico que se crea o se abre. Los usuarios pueden mostrar u ocultar el panel de tareas personalizado mediante un botón de la cinta de opciones de cada mensaje de correo.
@@ -58,7 +60,7 @@ ms.locfileid: "91584287"
 
 - Microsoft [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] o Microsoft Outlook 2010.
 
-## <a name="create-the-project"></a>Crear el proyecto
+## <a name="create-the-project"></a>Creación del proyecto
  Los paneles de tareas personalizados se implementan en complementos de VSTO. Empiece por crear un proyecto de complemento de VSTO para Outlook.
 
 ### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto
@@ -76,7 +78,7 @@ ms.locfileid: "91584287"
 
 2. En el menú **Proyecto** , haga clic en **Agregar control de usuario**.
 
-3. En el cuadro de diálogo **Agregar nuevo elemento** , cambie el nombre del control de usuario a **TaskPaneControl**y haga clic en **Agregar**.
+3. En el cuadro de diálogo **Agregar nuevo elemento** , cambie el nombre del control de usuario a **TaskPaneControl** y haga clic en **Agregar**.
 
      Se abre el control de usuario en el diseñador.
 
@@ -91,11 +93,11 @@ ms.locfileid: "91584287"
 
 2. En el cuadro de diálogo **Agregar nuevo elemento** , seleccione **Cinta (diseñador visual)**.
 
-3. Cambie el nombre de la nueva cinta de opciones por **ManageTaskPaneRibbon**y haga clic en **Agregar**.
+3. Cambie el nombre de la nueva cinta de opciones por **ManageTaskPaneRibbon** y haga clic en **Agregar**.
 
      El archivo *ManageTaskPaneRibbon.cs* o *ManageTaskPaneRibbon.vb* se abre en el diseñador de la cinta de opciones y muestra una pestaña y un grupo predeterminados.
 
-4. En el diseñador de la cinta de opciones, haga clic en **group1**para seleccionarlo.
+4. En el diseñador de la cinta de opciones, haga clic en **group1** para seleccionarlo.
 
 5. En la ventana **Propiedades** , establezca el valor de la propiedad **Label** en **Administrador de panel de tareas**.
 
@@ -112,7 +114,7 @@ ms.locfileid: "91584287"
 
 1. En el diseñador de la cinta de opciones, haga clic en la cinta **ManageTaskPaneRibbon** .
 
-2. En la ventana **Propiedades** , haga clic en la lista desplegable situada junto a **RibbonType**y seleccione **Microsoft.Outlook.Mail.Compose** y **Microsoft.Outlook.Mail.Read**.
+2. En la ventana **Propiedades** , haga clic en la lista desplegable situada junto a **RibbonType** y seleccione **Microsoft.Outlook.Mail.Compose** y **Microsoft.Outlook.Mail.Read**.
 
 ## <a name="create-a-class-to-manage-inspector-windows-and-custom-task-panes"></a>Crear una clase para administrar ventanas de inspector y paneles de tareas personalizados
  Hay varios casos en los que el complemento de VSTO debe identificar qué panel de tareas personalizado está asociado a un mensaje de correo electrónico específico. Estos casos son los siguientes:
@@ -267,7 +269,7 @@ ms.locfileid: "91584287"
 
 - Crear un botón de cinta de opciones en Excel que se puede usar para ocultar o mostrar un panel de tareas personalizado. Para obtener más información, vea [Tutorial: sincronizar un panel de tareas personalizado con un botón de la cinta de opciones](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Paneles de tareas personalizados](../vsto/custom-task-panes.md)
 - [Cómo: agregar un panel de tareas personalizado a una aplicación](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
 - [Tutorial: automatizar una aplicación desde un panel de tareas personalizado](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)

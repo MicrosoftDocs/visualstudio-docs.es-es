@@ -1,5 +1,7 @@
 ---
 title: Tutoriales de uso de Word
+description: Obtenga información sobre cómo puede usar las personalizaciones de nivel de documento y los complementos de VSTO para automatizar Microsoft Word y personalizar la interfaz de usuario (UI).
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c6d3b4ece92bf278ef8d43dca7e449272982381c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd2685b7fee0534e56c55e2c865d1d7f16423de5
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254993"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522575"
 ---
 # <a name="walkthroughs-using-word"></a>Tutoriales de uso de Word
   En los siguientes tutoriales se muestran las maneras en las que puede usar las personalizaciones de nivel de documento y los complementos de VSTO para automatizar Microsoft Office Word y personalizar la interfaz de usuario (IU).

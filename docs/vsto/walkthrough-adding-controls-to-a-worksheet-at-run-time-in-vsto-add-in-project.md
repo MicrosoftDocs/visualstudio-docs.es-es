@@ -1,5 +1,7 @@
 ---
 title: Agregar controles a la hoja de cálculo en tiempo de ejecución en un proyecto de complemento de VSTO
+description: Obtenga información sobre cómo usar la cinta de opciones para permitir que los usuarios agreguen un botón, un NamedRange y un ListObject a una hoja de cálculo.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ec1d1361d7ca58d4292cbbb7bc4ea3b707a748ff
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: e9987e9427c0fe982cf3ddcb88ce8071caab04b0
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584352"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522780"
 ---
 # <a name="walkthrough-add-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project"></a>Tutorial: agregar controles a una hoja de cálculo en tiempo de ejecución en el proyecto de complemento de VSTO
   Puede agregar controles a cualquier hoja de cálculo abierta mediante el uso de un complemento de VSTO de Excel. Este tutorial muestra cómo usar la cinta para permitir a los usuarios agregar un <xref:Microsoft.Office.Tools.Excel.Controls.Button>, <xref:Microsoft.Office.Tools.Excel.NamedRange> y <xref:Microsoft.Office.Tools.Excel.ListObject> a una hoja de cálculo. Para obtener más información, vea [Agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md).
@@ -73,8 +75,8 @@ ms.locfileid: "91584352"
 
     |Propiedad|Value|
     |--------------|-----------|
-    |**Nombre**|**Botón**|
-    |**Label**|**Botón**|
+    |**Nombre**|**Button**|
+    |**Label**|**Button**|
 
 6. Agregue una segunda casilla a **group1**, y, a continuación, cambie las siguientes propiedades.
 
@@ -83,7 +85,7 @@ ms.locfileid: "91584352"
     |**Nombre**|**NamedRange**|
     |**Label**|**NamedRange**|
 
-7. Agregue una tercera casilla a **Grupo1**y, a continuación, cambie las siguientes propiedades.
+7. Agregue una tercera casilla a **Grupo1** y, a continuación, cambie las siguientes propiedades.
 
     |Propiedad|Value|
     |--------------|-----------|
@@ -142,7 +144,7 @@ ms.locfileid: "91584352"
 
 2. En el menú **Ver** , haga clic en **Código**.
 
-3. Agregue el siguiente método a la clase `ThisAddIn`. Este código obtiene la primera hoja de cálculo del libro y, a continuación, usa el método `HasVstoObject` para comprobar si la hoja de cálculo tiene un objeto de hoja de cálculo generado. Si el objeto de hoja de cálculo generado tiene controles, el código obtiene ese objeto de hoja de cálculo y recorre en iteración la colección de controles, quitando los controles.
+3. Agrega el método siguiente a la clase `ThisAddIn`: Este código obtiene la primera hoja de cálculo del libro y, a continuación, usa el método `HasVstoObject` para comprobar si la hoja de cálculo tiene un objeto de hoja de cálculo generado. Si el objeto de hoja de cálculo generado tiene controles, el código obtiene ese objeto de hoja de cálculo y recorre en iteración la colección de controles, quitando los controles.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#6](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#6)]
      [!code-vb[Trin_Excel_Dynamic_Controls#6](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#6)]
@@ -187,7 +189,7 @@ ms.locfileid: "91584352"
 
 - Para obtener información sobre cómo guardar controles en una hoja de cálculo, vea el ejemplo de controles dinámicos de complemento de VSTO de Excel en [ejemplos y tutoriales de desarrollo de Office](../vsto/office-development-samples-and-walkthroughs.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Soluciones de Excel](../vsto/excel-solutions.md)
 - [Información general sobre los controles de Windows Forms en documentos de Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
 - [Controles en documentos de Office](../vsto/controls-on-office-documents.md)

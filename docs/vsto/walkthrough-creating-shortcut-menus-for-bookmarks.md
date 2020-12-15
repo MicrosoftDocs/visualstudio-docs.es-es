@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: crear menús contextuales para marcadores'
+description: Obtenga información sobre cómo crear menús contextuales para los controles Bookmark en una personalización de nivel de documento para Microsoft Word.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9b4b412d2e9456142c1be1af388e2803634d15c0
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 8b018687ec10eb725ece7d776277ea1c699dbbec
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "91146909"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524213"
 ---
 # <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>Tutorial: crear menús contextuales para marcadores
   En este tutorial se muestra cómo crear menús contextuales para <xref:Microsoft.Office.Tools.Word.Bookmark> los controles de una personalización de nivel de documento para Word. Cuando un usuario hace clic con el botón secundario en el texto de un marcador, aparece un menú contextual que proporciona las opciones de usuario para dar formato al texto.
@@ -92,7 +94,7 @@ ms.locfileid: "91146909"
 
 2. En **Explorador de soluciones**, seleccione **ThisDocument.CS** o **ThisDocument. VB**.
 
-3. En la barra de menús, elija **Ver**  >  **código**.
+3. En la barra de menús, elija **Ver** > **Código**.
 
      El archivo de clase **ThisDocument** se abre en el editor de código.
 
@@ -103,7 +105,7 @@ ms.locfileid: "91146909"
 
 5. En el **Explorador de soluciones**, seleccione el archivo XML de cinta. De forma predeterminada, el archivo XML de cinta se denomina Ribbon1.xml.
 
-6. En la barra de menús, elija **Ver**  >  **código**.
+6. En la barra de menús, elija **Ver** > **Código**.
 
      Se abrirá el archivo de código XML de cinta de opciones en el Editor de código.
 
@@ -134,7 +136,7 @@ ms.locfileid: "91146909"
 
 10. En **Explorador de soluciones**, seleccione el archivo de código de la cinta de opciones. De forma predeterminada, el archivo de código de la cinta de opciones se denomina **Ribbon1.CS** o **Ribbon1. VB**.
 
-11. En la barra de menús, elija **Ver**  >  **código**.
+11. En la barra de menús, elija **Ver** > **Código**.
 
      Se abre el archivo de código de la cinta de opciones en el editor de código.
 
@@ -154,7 +156,7 @@ ms.locfileid: "91146909"
 
 2. **Explorador de soluciones**, seleccione **ThisDocument.CS** o **ThisDocument. VB**.
 
-3. En la barra de menús, elija **Ver**  >  **código**.
+3. En la barra de menús, elija **Ver** > **Código**.
 
      El archivo de clase **ThisDocument** se abre en el editor de código.
 
@@ -192,7 +194,7 @@ ms.locfileid: "91146909"
 
 - Use una casilla para cambiar el formato de un marcador. Para obtener más información, vea [Tutorial: cambiar el formato de un documento mediante controles de casilla](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Tutoriales de uso de Word](../vsto/walkthroughs-using-word.md)
 - [Personalización de la interfaz de usuario de Office](../vsto/office-ui-customization.md)
 - [Automatizar Word con objetos extendidos](../vsto/automating-word-by-using-extended-objects.md)

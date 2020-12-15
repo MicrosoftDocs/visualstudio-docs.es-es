@@ -1,5 +1,7 @@
 ---
 title: Information Rights Management & extensiones de código administrado
+description: Obtenga información acerca de Information Rights Management (IRM), una característica que puede ayudarle a evitar que personas no autorizadas vean o modifiquen información confidencial.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 06b55855184aaef57ec0a3425abed7d235ec837b
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: fc300ac83674b8faf2bd4c0fc6128f60c28ee92b
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298065"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523054"
 ---
 # <a name="information-rights-management-and-managed-code-extensions-overview"></a>Información general sobre Information Rights Management y extensiones de código administrado
   Microsoft Office Word y Microsoft Office Excel proporcionan información Rights Management (IRM), una característica que puede ayudarle a evitar que personas no autorizadas vean o modifiquen información confidencial. Para obtener más información sobre cómo funciona la información Rights Management, vea la ayuda de en la aplicación de Office específica.

@@ -1,5 +1,7 @@
 ---
 title: Trabajar con hojas de cálculo
+description: Obtenga información sobre que las clases de hoja de cálculo y hoja de cálculo contienen los métodos y las propiedades que se usan para realizar tareas con hojas de cálculo.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1f518a3d6e271c4f457e50ad6f9affcc3afccdf9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d58576c999d11441122bb0b2115d2367b7ce04ce
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62814595"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522542"
 ---
 # <a name="work-with-worksheets"></a>Trabajar con hojas de cálculo
   Las clases <xref:Microsoft.Office.Tools.Excel.Worksheet> y <xref:Microsoft.Office.Interop.Excel.Worksheet> contienen los métodos y las propiedades que se usan para llevar a cabo tareas con hojas de cálculo.
