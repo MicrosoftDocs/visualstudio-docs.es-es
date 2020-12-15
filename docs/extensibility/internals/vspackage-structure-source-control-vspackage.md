@@ -1,5 +1,7 @@
 ---
 title: Estructura VSPackage (VSPackage de control de código fuente) | Microsoft Docs
+description: Obtenga información sobre el SDK del paquete de control de código fuente, que proporciona directrices para un VSPackage con un implementador de control de código fuente para integrarlo con Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3f09b189e1e4b47187586e66c74315ee32495c8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f5850dfb2448364124c8f1778eac48ac9c653269
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703805"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487964"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>Estructura de VSPackage (VSPackage de control de código fuente)
 

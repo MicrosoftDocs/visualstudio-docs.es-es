@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: crear un servicio de lenguaje heredado | Microsoft Docs'
+description: Obtenga información sobre cómo usar las clases de lenguaje de Managed Package Framework para implementar un servicio de lenguaje en Visual C#.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,17 +12,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbdad85dd1c0f62b22bb33b5ed6ab2c597e62164
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4fcc4004542f9a566d6c6bfa820cbb8c2e1846fa
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905981"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487938"
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>Tutorial: Creación de un servicio de lenguaje heredado
 El uso de las clases de lenguaje de Managed Package Framework (MPF) para implementar un servicio de lenguaje en [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] es sencillo. Necesita un VSPackage para hospedar el servicio de lenguaje, el propio servicio de lenguaje y un analizador para su lenguaje.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
  Para seguir este tutorial, debe instalar SDK de Visual Studio. Para obtener más información, vea el [SDK de Visual Studio](../../extensibility/visual-studio-sdk.md).
 
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Ubicaciones de la plantilla de proyecto de paquete de Visual Studio
@@ -42,11 +44,11 @@ El uso de las clases de lenguaje de Managed Package Framework (MPF) para impleme
 
     Puede usar cualquier nombre que desee. Estos procedimientos detallados aquí suponen MyLanguagePackage como nombre.
 
-3. Seleccione [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] como lenguaje y la opción para generar un nuevo archivo de clave. Haga clic en **Next**.
+3. Seleccione [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] como lenguaje y la opción para generar un nuevo archivo de clave. Haga clic en **Siguiente**.
 
-4. Escriba la información de la compañía y del paquete adecuada. Haga clic en **Next**.
+4. Escriba la información de la compañía y del paquete adecuada. Haga clic en **Siguiente**.
 
-5. Seleccione el **comando de menú**. Haga clic en **Next**.
+5. Seleccione el **comando de menú**. Haga clic en **Siguiente**.
 
     Si no tiene previsto admitir fragmentos de código, puede hacer clic en finalizar y omitir el paso siguiente.
 
@@ -56,7 +58,7 @@ El uso de las clases de lenguaje de Managed Package Framework (MPF) para impleme
 
 ### <a name="create-the-language-service-class"></a>Crear la clase de servicio de lenguaje
 
-1. En **Explorador de soluciones**, haga clic con el botón derecho en el proyecto MyLanguagePackage, elija **Agregar**, **referencia**y, a continuación, elija el botón **Agregar nueva referencia** .
+1. En **Explorador de soluciones**, haga clic con el botón derecho en el proyecto MyLanguagePackage, elija **Agregar**, **referencia** y, a continuación, elija el botón **Agregar nueva referencia** .
 
 2. En el cuadro de diálogo **Agregar referencia** , seleccione **Microsoft. VisualStudio. Package. LanguageService** en la pestaña **.net** y haga clic en **Aceptar**.
 
@@ -130,5 +132,5 @@ El uso de las clases de lenguaje de Managed Package Framework (MPF) para impleme
 
      Por ejemplo, escriba `public override` para ver una lista de todos los métodos que se pueden invalidar en esa clase.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Implementación de un servicio de lenguaje heredado](../../extensibility/internals/implementing-a-legacy-language-service1.md)

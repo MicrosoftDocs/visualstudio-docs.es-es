@@ -1,5 +1,7 @@
 ---
 title: Asistente (. Archivo vsz) | Microsoft Docs
+description: Obtenga información sobre los archivos. vsz que usa el IDE para iniciar asistentes. Los archivos contienen información sobre qué asistente llamar y qué pasar al asistente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fedf409c0ca320c054ddf1cc16318d08d25463a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5fe32028f271d02dd518509bb86906197e6acb4e
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703309"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487743"
 ---
 # <a name="wizard-vsz-file"></a>Archivo de asistente (.Vsz)
 

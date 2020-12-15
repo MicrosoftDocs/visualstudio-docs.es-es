@@ -1,5 +1,7 @@
 ---
 title: Asistentes | Microsoft Docs
+description: Obtenga información acerca de cómo mostrar el asistente entre los asistentes y plantillas disponibles en Visual Studio y sobre los requisitos que el asistente debe cumplir en el IDE.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d65cf2dcc10380b0ac750c8e1b0e7fd56eab95b5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f367723a3c819635f2d7cf20ed812a36cda12830
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703208"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487756"
 ---
 # <a name="wizards"></a>Asistentes
-Después de crear un asistente, normalmente desea agregarlo al [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] entorno de desarrollo integrado (IDE) para que otros usuarios puedan usarlo. A continuación, el asistente agregado aparece en los cuadros de diálogo **Agregar nuevo proyecto** o **Agregar nuevo elemento** . Para ver los cuadros de diálogo **Agregar nuevo proyecto** o **Agregar nuevo elemento** , haga clic con el botón secundario en una solución abierta en **Explorador de soluciones**, seleccione **Agregar**y, a continuación, haga clic en **nuevo proyecto** o **nuevo elemento**.
+Después de crear un asistente, normalmente desea agregarlo al [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] entorno de desarrollo integrado (IDE) para que otros usuarios puedan usarlo. A continuación, el asistente agregado aparece en los cuadros de diálogo **Agregar nuevo proyecto** o **Agregar nuevo elemento** . Para ver los cuadros de diálogo **Agregar nuevo proyecto** o **Agregar nuevo elemento** , haga clic con el botón secundario en una solución abierta en **Explorador de soluciones**, seleccione **Agregar** y, a continuación, haga clic en **nuevo proyecto** o **nuevo elemento**.
 
  Los asistentes se pueden implementar en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para permitir a los usuarios seleccionar en una vista de árbol de los valores disponibles cuando abren el cuadro de diálogo **Agregar nuevo proyecto** o el cuadro de diálogo **Agregar nuevo elemento** , o cuando hacen clic con el botón secundario en un elemento de **Explorador de soluciones**.
 

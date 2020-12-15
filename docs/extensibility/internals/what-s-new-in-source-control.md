@@ -1,5 +1,7 @@
 ---
 title: Novedades del control de código fuente en el SDK de 2015 de Visual Studio | Microsoft Docs
+description: Obtenga información sobre las características del control de código fuente VSPackages y revise una introducción a los pasos de implementación.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f90ae3e1d327b10e99713ad28aa2d5a06c0be34b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2af2c321eb91407808e71f4c0126b86d79980c53
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703406"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487821"
 ---
 # <a name="whats-new-in-source-control-for-the-visual-studio-2015-sdk"></a>Novedades del control de código fuente para el SDK de Visual Studio 2015
 

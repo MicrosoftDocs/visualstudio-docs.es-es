@@ -1,5 +1,7 @@
 ---
 title: Atributos de compatibilidad del sitio web | Microsoft Docs
+description: Obtenga información sobre los atributos de compatibilidad del sitio web necesarios para extender la funcionalidad de Visual Studio mediante proyectos de sitio Web.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef75f99480145475278357a552f3ac74c0289800
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9beee39ca6968b0922bc134fa21e0cde3d6dd3b6
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703494"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487873"
 ---
 # <a name="web-site-support-attributes"></a>Atributos de compatibilidad del sitio web
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] El proyecto de sitio web se puede extender para proporcionar compatibilidad con los lenguajes de programación web. El idioma debe registrarse con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para que las plantillas de proyecto puedan aparecer en el cuadro de diálogo **nuevo sitio web** cuando se seleccione el idioma.

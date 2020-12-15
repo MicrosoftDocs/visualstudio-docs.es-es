@@ -1,5 +1,7 @@
 ---
 title: VSPackages | Microsoft Docs
+description: Obtenga información sobre los VSPackages, que son módulos de software que amplían el IDE de Visual Studio proporcionando elementos de interfaz de usuario, servicios, proyectos, editores y diseñadores.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24dec363d261b8dbfa2135dec34e28c247c47251
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 440e2517a0138ca84be87090d9636288a7a5d9af
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703825"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487951"
 ---
 # <a name="vspackages"></a>VSPackages
 Los VSPackages son módulos de software que amplían el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] entorno de desarrollo integrado (IDE) proporcionando elementos de interfaz de usuario, servicios, proyectos, editores y diseñadores.

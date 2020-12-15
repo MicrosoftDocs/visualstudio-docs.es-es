@@ -1,5 +1,7 @@
 ---
 title: Registro de VSPackage | Microsoft Docs
+description: Obtenga información sobre el registro de VSPackage, donde los paquetes indican a Visual Studio que están instalados y deben cargarse escribiendo información en el registro.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5941a0bc5d9f9f983a616dcc22cf1260d0911fa8
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 88c8294042bb61939a52f4053f5b27ae915e01df
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012131"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487990"
 ---
 # <a name="vspackage-registration"></a>Registro de VSPackage
 Los VSPackages deben informar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] de que están instalados y deben cargarse. Este proceso se consigue escribiendo información en el registro. Es un trabajo típico de un instalador.
@@ -40,7 +42,7 @@ Los VSPackages deben informar [!INCLUDE[vsprvs](../../code-quality/includes/vspr
 > [!NOTE]
 > La herramienta RegPkg no es redistribuible y no se puede usar para registrar un VSPackage en el sistema de un usuario.
 
-## <a name="why-vspackages-should-not-self-register-at-install-time"></a>Por qué los VSPackages no se deben registrar automáticamente en el momento de la instalación
+## <a name="why-vspackages-should-not-self-register-at-install-time"></a>Por qué los paquetes de VSPackages no deben Self-Register en el momento de la instalación
  Los instaladores de VSPackage no deben confiar en el registro automático. A primera vista, mantener los valores del registro de un VSPackage solo en el propio VSPackage parece una buena idea. Dado que los desarrolladores necesitan que los valores del registro estén disponibles para su trabajo rutinario y las pruebas, tiene sentido evitar mantener una copia independiente de los datos del registro en el instalador. El instalador puede confiar en el propio VSPackage para escribir valores del registro.
 
  Aunque es bueno en teoría, el registro automático tiene varios errores que hacen que no sea adecuado para la instalación de VSPackage:

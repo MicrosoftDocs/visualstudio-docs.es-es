@@ -1,5 +1,7 @@
 ---
 title: Validando puntos de interrupción en un servicio de lenguaje heredado | Microsoft Docs
+description: Obtenga información sobre cómo puede invalidar el método ValidateBreakpointLocation en un servicio de lenguaje heredado para validar los puntos de interrupción antes de que se inicie el depurador.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af09e4f8f2156100bea9267c92ffebeb64ce1aa3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d48db7397e2f9a5921315036bea15551fb7baa9
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704094"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97488029"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>Validación de puntos de interrupción en un servicio de lenguaje heredado
 Un punto de interrupción indica que la ejecución del programa se debe detener en un punto determinado mientras se ejecuta en un depurador. Un usuario puede colocar un punto de interrupción en cualquier línea del archivo de código fuente, ya que el editor no tiene ningún conocimiento de lo que constituye una ubicación válida para un punto de interrupción. Cuando se inicia el depurador, todos los puntos de interrupción marcados (denominados puntos de interrupción pendientes) se enlazan a la ubicación adecuada en el programa en ejecución. Al mismo tiempo, los puntos de interrupción se validan para asegurarse de que marcan ubicaciones de código válidas. Por ejemplo, un punto de interrupción en un comentario no es válido, ya que no hay ningún código en esa ubicación en el código fuente. El depurador deshabilita los puntos de interrupción no válidos.
@@ -98,5 +100,5 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Características del servicio de lenguaje heredado](../../extensibility/internals/legacy-language-service-features1.md)

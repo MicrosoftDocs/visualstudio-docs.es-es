@@ -1,5 +1,7 @@
 ---
 title: Solución de problemas de registro de paquetes de RegPkg | Microsoft Docs
+description: Use esta información para solucionar problemas de registro de paquetes de RegPkg en Visual Studio. Use la versión de RegPkg que sea adecuada para el paquete.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5266579ff235a0f6c4f3e555d79d5a00de2c194
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eef67b86925bc38a317196bbf00860b75a6ee15c
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87234866"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487717"
 ---
 # <a name="troubleshooting-regpkg-package-registration"></a>Solución de problemas del registro de paquete RegPkg
 > [!NOTE]
@@ -36,6 +38,6 @@ ms.locfileid: "87234866"
 
    La versión anterior de RegPkg puede registrar paquetes compilados con el ensamblado de Microsoft.VisualStudio.Shell.dll. Sin embargo, no puede registrar los paquetes compilados con versiones posteriores de ese ensamblado.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [VSPackages](../../extensibility/internals/vspackages.md)
 - [Solucionar problemas de Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

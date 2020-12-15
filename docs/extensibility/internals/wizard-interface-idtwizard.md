@@ -1,5 +1,7 @@
 ---
 title: Interfaz del asistente (IDTWizard) | Microsoft Docs
+description: El IDE usa la interfaz IDTWizard para comunicarse con los asistentes. Los asistentes deben implementar esta interfaz para instalarse en el IDE.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb1c8d728a76097321e4e1f16640cab97599d6ba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e87759a979d0c680018d99a1e18a12e645f430c6
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703275"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487769"
 ---
 # <a name="wizard-interface-idtwizard"></a>Interfaz de asistente (IDTWizard)
 El entorno de desarrollo integrado (IDE) utiliza la <xref:EnvDTE.IDTWizard> interfaz para comunicarse con los asistentes. Los asistentes deben implementar esta interfaz para poder instalarse en el IDE.

@@ -1,5 +1,7 @@
 ---
 title: 'Área de prueba 7: compartir | Microsoft Docs'
+description: Este área de prueba del control de código fuente cubre la utilización del comando compartir para el complemento de control de código fuente de Visual Studio para compartir elementos entre ubicaciones.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd4c48e94015d95f5e56d465cdbf98562108d3b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 02593af854a9e68e7f4a6cc66f54452d3c3d3f94
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704405"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487613"
 ---
 # <a name="test-area-7-share"></a>Área de prueba 7: Compartir
 En este área de prueba se trata el uso compartido de elementos entre ubicaciones a través del comando **compartir** .
@@ -36,7 +38,7 @@ En este área de prueba se trata el uso compartido de elementos entre ubicacione
 ## <a name="command-menu-access"></a>Acceso al menú de comandos
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]En los casos de prueba se usan las siguientes rutas de menú del entorno de desarrollo integrado.
 
- Recurso compartido **:** -> **Source Control** -> **recurso compartido**de control de código fuente.
+ Recurso compartido **:** ->  -> **recurso compartido** de control de código fuente.
 
 ## <a name="expected-behavior"></a>Comportamiento esperado
 
@@ -51,12 +53,12 @@ En este área de prueba se trata el uso compartido de elementos entre ubicacione
 
 |Acción|Pasos de prueba|Resultados esperados que se van a comprobar|
 |------------|----------------|--------------------------------|
-|Compartir un archivo de un proyecto cargado bajo control de código fuente en otro proyecto cargado|1. cree un nuevo proyecto.<br />2. agregar un segundo proyecto a la solución.<br />3. cree un archivo en el segundo proyecto con un nombre que no esté en el primer proyecto.<br />4. Agregue la solución al control de código fuente.<br />5. Seleccione el primer proyecto.<br />6. Abrir cuadro de diálogo **compartir** (**File**  ->  recurso compartido de**control de código fuente**de archivo  ->  **Share**).<br />7. compartir el archivo del segundo proyecto con el primero.<br />8. acepte la **desprotección** si se le solicita.|Comportamiento esperado común.|
-|Compartir un archivo de un proyecto a otro|1. cree un nuevo proyecto.<br />2. agréguelo al control de código fuente.<br />3. Cierre la solución.<br />4. crear un segundo proyecto (nueva solución).<br />5. agregar la solución al control de código fuente.<br />6. Seleccione el proyecto.<br />7. Abra el cuadro de diálogo **compartir** (**File**  ->  recurso compartido de**control de código fuente**de archivo  ->  **Share**).<br />8. comparta un archivo desde el proyecto agregado previamente al proyecto abierto.<br />9. acepte la **desprotección** si se le solicita.|Comportamiento esperado común.|
-|Compartir un archivo que no forma parte del proyecto desde el control de código fuente en el proyecto cargado actualmente|1. cree un nuevo proyecto.<br />2. Agregue la solución al control de código fuente.<br />3. agregar un archivo al control de código fuente que no forma parte del proyecto o de la solución.<br />4. Seleccione el proyecto y abra el cuadro de diálogo **compartir** (**File**  ->  recurso compartido de**control de código fuente**de archivo  ->  **Share**).<br />5. Seleccione un archivo en el cuadro de diálogo **compartir** que no exista en el proyecto o la solución actual y compártalo.<br />6. acepte la **desprotección** si se le solicita.|El almacén de control de código fuente ha realizado un get, por lo que el archivo está ahora en la ubicación local del proyecto.|
-|Compartir archivos dentro del mismo proyecto en una carpeta diferente|1. Seleccione **Desproteger automáticamente** en **herramientas**  ->  **Opciones**  ->  **control de código fuente**.<br />2. cree un nuevo proyecto y agréguelo al control de código fuente.<br />3. Agregue una carpeta al proyecto.<br />4. Agregue un archivo a la carpeta y proteja la carpeta.<br />5. Seleccione la carpeta.<br />6. Abrir cuadro de diálogo **compartir** (**File**  ->  recurso compartido de**control de código fuente**de archivo  ->  **Share**).<br />7. compartir el archivo con la carpeta seleccionada.|Comportamiento esperado común.<br /><br /> La carpeta debe protegerse con un archivo en ella para que se pueda usar para el recurso compartido.|
-|Compartir una carpeta en el proyecto cargado: recursivo|1. cree un nuevo proyecto.<br />2. Agregue la solución al control de código fuente.<br />3. Seleccione el proyecto.<br />4. Abra el cuadro de diálogo **compartir** (**File**  ->  recurso compartido de**control de código fuente**de archivo  ->  **Share**).<br />5. Seleccione una carpeta.<br />6. comparta la carpeta de forma recursiva en el proyecto.|Comportamiento esperado común.|
-|Compartir varios archivos de un proyecto a otro|1. cree un nuevo proyecto con varios archivos en él.<br />2. Agregue la solución al control de código fuente.<br />3. Cierre la solución.<br />4. cree un nuevo proyecto en una nueva solución.<br />5. agregar la solución al control de código fuente.<br />6. Seleccione el proyecto.<br />7. Abra el cuadro de diálogo **compartir** (**File**  ->  recurso compartido de**control de código fuente**de archivo  ->  **Share**).<br />8. comparta varios archivos del proyecto creado anteriormente con el proyecto actualmente abierto.|Comportamiento esperado común.|
+|Compartir un archivo de un proyecto cargado bajo control de código fuente en otro proyecto cargado|1. cree un nuevo proyecto.<br />2. agregar un segundo proyecto a la solución.<br />3. cree un archivo en el segundo proyecto con un nombre que no esté en el primer proyecto.<br />4. Agregue la solución al control de código fuente.<br />5. Seleccione el primer proyecto.<br />6. Abrir cuadro de diálogo **compartir** (  ->  recurso compartido de **control de código fuente** de archivo  ->  ).<br />7. compartir el archivo del segundo proyecto con el primero.<br />8. acepte la **desprotección** si se le solicita.|Comportamiento esperado común.|
+|Compartir un archivo de un proyecto a otro|1. cree un nuevo proyecto.<br />2. agréguelo al control de código fuente.<br />3. Cierre la solución.<br />4. crear un segundo proyecto (nueva solución).<br />5. agregar la solución al control de código fuente.<br />6. Seleccione el proyecto.<br />7. Abra el cuadro de diálogo **compartir** (  ->  recurso compartido de **control de código fuente** de archivo  ->  ).<br />8. comparta un archivo desde el proyecto agregado previamente al proyecto abierto.<br />9. acepte la **desprotección** si se le solicita.|Comportamiento esperado común.|
+|Compartir un archivo que no forma parte del proyecto desde el control de código fuente en el proyecto cargado actualmente|1. cree un nuevo proyecto.<br />2. Agregue la solución al control de código fuente.<br />3. agregar un archivo al control de código fuente que no forma parte del proyecto o de la solución.<br />4. Seleccione el proyecto y abra el cuadro de diálogo **compartir** (  ->  recurso compartido de **control de código fuente** de archivo  ->  ).<br />5. Seleccione un archivo en el cuadro de diálogo **compartir** que no exista en el proyecto o la solución actual y compártalo.<br />6. acepte la **desprotección** si se le solicita.|El almacén de control de código fuente ha realizado un get, por lo que el archivo está ahora en la ubicación local del proyecto.|
+|Compartir archivos dentro del mismo proyecto en una carpeta diferente|1. Seleccione **Desproteger automáticamente** en **herramientas**  ->  **Opciones**  ->  **control de código fuente**.<br />2. cree un nuevo proyecto y agréguelo al control de código fuente.<br />3. Agregue una carpeta al proyecto.<br />4. Agregue un archivo a la carpeta y proteja la carpeta.<br />5. Seleccione la carpeta.<br />6. Abrir cuadro de diálogo **compartir** (  ->  recurso compartido de **control de código fuente** de archivo  ->  ).<br />7. compartir el archivo con la carpeta seleccionada.|Comportamiento esperado común.<br /><br /> La carpeta debe protegerse con un archivo en ella para que se pueda usar para el recurso compartido.|
+|Compartir una carpeta en el proyecto cargado: recursivo|1. cree un nuevo proyecto.<br />2. Agregue la solución al control de código fuente.<br />3. Seleccione el proyecto.<br />4. Abra el cuadro de diálogo **compartir** (  ->  recurso compartido de **control de código fuente** de archivo  ->  ).<br />5. Seleccione una carpeta.<br />6. comparta la carpeta de forma recursiva en el proyecto.|Comportamiento esperado común.|
+|Compartir varios archivos de un proyecto a otro|1. cree un nuevo proyecto con varios archivos en él.<br />2. Agregue la solución al control de código fuente.<br />3. Cierre la solución.<br />4. cree un nuevo proyecto en una nueva solución.<br />5. agregar la solución al control de código fuente.<br />6. Seleccione el proyecto.<br />7. Abra el cuadro de diálogo **compartir** (  ->  recurso compartido de **control de código fuente** de archivo  ->  ).<br />8. comparta varios archivos del proyecto creado anteriormente con el proyecto actualmente abierto.|Comportamiento esperado común.|
 
 ## <a name="see-also"></a>Vea también
 - [Guía de pruebas para los complementos de control de código fuente](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

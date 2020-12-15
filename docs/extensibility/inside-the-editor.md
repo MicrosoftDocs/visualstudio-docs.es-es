@@ -1,5 +1,7 @@
 ---
 title: Dentro del editor
+description: Obtenga información sobre los subsistemas y características del editor. Puede extender las características del editor de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bba0b5192df53b6ec837b0030c7b236bf8e08dea
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 14193c0806c4b45f721ee97b101969de8437448d
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710326"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487535"
 ---
 # <a name="inside-the-editor"></a>Dentro del editor
 
@@ -226,7 +228,7 @@ Otros tipos de etiquetas son <xref:Microsoft.VisualStudio.Text.Tagging.TextMarke
 
 Una <xref:Microsoft.VisualStudio.Text.Classification.IClassificationType> interfaz representa una clase de equivalencia, que es una categoría de texto abstracta. Los tipos de clasificación pueden heredar varios de otros tipos de clasificación. Por ejemplo, las clasificaciones del lenguaje de programación pueden incluir "palabra clave", "comentario" e "identificador", que heredan de "código". Los tipos de clasificación de lenguaje natural pueden incluir "Sustantivo", "Verb" y "adjetivo", que heredan de "natural Language".
 
-#### <a name="classifications"></a>Classifications
+#### <a name="classifications"></a>Clasificaciones
 
 Una clasificación es una instancia de un tipo de clasificación determinado, normalmente en un intervalo de texto. <xref:Microsoft.VisualStudio.Text.Classification.ClassificationSpan>Se utiliza para representar una clasificación. Un intervalo de clasificación puede considerarse como una etiqueta que abarque un intervalo de texto determinado e indica al sistema que este intervalo de texto es de un tipo de clasificación determinado.
 

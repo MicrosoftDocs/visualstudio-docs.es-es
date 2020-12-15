@@ -1,5 +1,7 @@
 ---
 title: Obtener una lista de fragmentos de código instalados (heredados) | Microsoft Docs
+description: Obtenga información sobre cómo obtener todos los fragmentos de código para un GUID de lenguaje específico. Los métodos abreviados de los fragmentos de código se pueden insertar en una lista de finalización de IntelliSense.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3d5ef857973555c4b2d201f98957bd2c39328b5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 390f8e7030d0e758eb27fce4e83a30e30fbf64af
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703650"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487899"
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>Tutorial: Obtención de una lista de los fragmentos de código instalados (implementación heredada)
 Un fragmento de código es un fragmento de código que se puede insertar en el búfer de origen con un comando de menú (que permite elegir entre una lista de fragmentos de código instalados) o mediante la selección de un acceso directo a un fragmento de código de una lista de finalización de IntelliSense.

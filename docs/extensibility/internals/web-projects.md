@@ -1,5 +1,7 @@
 ---
 title: Proyectos Web | Microsoft Docs
+description: Obtenga información sobre los detalles internos sobre cómo funciona el sistema de proyectos web en Visual Studio para desarrolladores que desean ampliar Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 23194ba5ad59a113e5599b7fe1f5f39bed557351
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6afdbff1e844f45cac56b68909e1327a190f7a74
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703529"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487886"
 ---
 # <a name="web-projects"></a>Proyectos web
 Un sistema de proyectos web es un sistema de proyectos que crea proyectos Web. Los proyectos web a su vez crean aplicaciones Web. Puede programar una página web mediante lenguajes de programación tradicionales, como [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] o [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] , para recopilar y procesar información de un usuario, almacenarla en una base de datos, etc. Las páginas web con código asociado se denominan páginas web inteligentes.

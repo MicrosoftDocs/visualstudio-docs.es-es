@@ -1,5 +1,7 @@
 ---
 title: Usar MSBuild | Microsoft Docs
+description: MSBuild proporciona un formato XML extensible para crear archivos de proyecto que describen por completo los elementos de proyecto que se van a compilar, las tareas de compilación y las configuraciones de compilación.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f961249ff584f7767dc2505bb20b1fb0961b7dd3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0d5168d739e49ebfc78054ea695f8b73a3e06fbc
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704287"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487678"
 ---
 # <a name="using-msbuild"></a>Uso de MSBuild
 MSBuild proporciona un formato XML bien definido y extensible para crear archivos de proyecto que describen por completo los elementos de proyecto que se van a compilar, las tareas de compilación y las configuraciones de compilación.

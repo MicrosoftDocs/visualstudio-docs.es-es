@@ -1,5 +1,7 @@
 ---
 title: Usar ensamblados de interoperabilidad de Visual Studio | Microsoft Docs
+description: Obtenga información sobre cómo los ensamblados de interoperabilidad de Visual Studio permiten a las aplicaciones administradas tener acceso a las interfaces COM que proporcionan extensibilidad de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5926b2cce217565c889c7ef2eeef877691101ed6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c52dd2cf8c76cdef9be5080950d5f1b9e621e70
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704132"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487665"
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>Uso de ensamblados de interoperabilidad de Visual Studio
 Los ensamblados de interoperabilidad de Visual Studio permiten a las aplicaciones administradas tener acceso a las interfaces COM que proporcionan extensibilidad de Visual Studio. Hay algunas diferencias entre las interfaces COM directas y sus versiones de interoperabilidad. Por ejemplo, los HRESULTs se representan generalmente como valores int y deben administrarse de la misma manera que las excepciones, y los parámetros (especialmente los parámetros out) se tratan de forma diferente.
@@ -131,4 +133,4 @@ else
  Los métodos administrados que llaman a interfaces de este tipo deben extraer el primer elemento de la matriz [out]. Este elemento se puede tratar como si fuera un `retval` valor devuelto de la interfaz com correspondiente.
 
 ## <a name="see-also"></a>Vea también
-- [Interoperar con código no administrado](/dotnet/framework/interop/index)
+- [Interoperating with Unmanaged Code](/dotnet/framework/interop/index) (Interoperar con código no administrado)

@@ -1,5 +1,7 @@
 ---
 title: Plantillas de soporte del sitio web | Microsoft Docs
+description: Obtenga información sobre las plantillas de soporte técnico del sitio Web. Las plantillas de proyecto y elemento de sitio web de Visual Studio proporcionan códigos auxiliares de elemento y proyecto de sitio web reutilizable y personalizable.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e3c139ae6f2f9ec618e6382a1551a9e35eee7ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7bb3d669dadf7c33fa81231adf26ae30e999c51
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703455"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487860"
 ---
 # <a name="web-site-support-templates"></a>Plantillas de compatibilidad del sitio web
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Las plantillas de elementos y proyectos de sitio web proporcionan códigos auxiliares reutilizables y personalizables de los elementos y del proyecto de sitio web que aceleran el proceso de desarrollo mediante la eliminación de la necesidad de crear nuevos proyectos y elementos de sitios web desde cero. Para obtener más información sobre [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] las plantillas, vea [crear plantillas de proyecto y de elemento](../../ide/creating-project-and-item-templates.md).
