@@ -1,5 +1,7 @@
 ---
 title: Guía de pruebas para los complementos de control de código fuente | Microsoft Docs
+description: Obtenga información sobre cómo probar el complemento de control de código fuente con Visual Studio. En esta información general se incluyen áreas de pruebas comunes.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 321d61175068f135aae87bff73f13ac800f4793c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a288beb618b0b539f53270928366349f47aee9e9
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905150"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487730"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Guía de pruebas para los complementos de control de código fuente
 En esta sección se proporcionan instrucciones para probar el complemento de control de código fuente con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Se proporciona una amplia introducción a las áreas de pruebas más comunes, así como algunas de las más complicadas que pueden ser problemáticas. Esta introducción no pretende ser una lista exhaustiva de casos de prueba.

@@ -202,6 +202,8 @@
       href: visual-studio-experience-improvement-program.md
     - name: Notificar un problema
       href: report-a-problem.md
+    - name: 'Solución del problema: ¿Cómo publico una nueva versión de mi extensión existente?'
+      href: migrate-extensions.md
     - name: "Solución del problema: ¿Es compatible Visual\_Studio para Mac con Control de versiones de Team Foundation?"
       href: tf-version-control.md
     - name: 'Solución del problema: ¿Por qué no puedo ver todas las plantillas?'
