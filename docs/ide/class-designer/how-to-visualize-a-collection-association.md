@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Visualizar una asociación de colecciones (Diseñador de clases)'
+title: Visualizar una asociación de colecciones
 description: Aprenda a visualizar una asociación de colecciones en el Diseñador de clases.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -17,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b1e5be53f829949cfffbdc7db727b1117aa9de8
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: eaec7d97cd92e65671dedca14c2dbae056b1af10
+ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901081"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96933588"
 ---
 # <a name="how-to-visualize-a-collection-association-in-class-designer"></a>Cómo: Visualizar una asociación de colecciones en el Diseñador de clases
 

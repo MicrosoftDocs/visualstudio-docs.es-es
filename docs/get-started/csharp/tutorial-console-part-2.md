@@ -10,17 +10,18 @@ ms.devlang: CSharp
 author: ghogen
 ms.author: ghogen
 manager: jillfra
+monikerRange: '>=vs-2019'
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 4f2d5bf573da940c39790d6868a94d588e5efb7b
-ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
+ms.openlocfilehash: 55b1e30d214ff85bfc1b7e9c00ebff7e76a95f12
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92918218"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527887"
 ---
 # <a name="tutorial-extend-a-simple-c-console-app"></a>Tutorial: Extensión de una aplicación de consola de C# sencilla
 
@@ -42,7 +43,7 @@ El código real está formado por numerosos proyectos que funcionan conjuntament
 
    ![Captura de pantalla del Explorador de soluciones con el proyecto de biblioteca de clases CalculatorLibrary agregado](media/vs-2019/calculator2-solution-explorer-with-class-library-dark2.png)
 
-1. En lugar de dejar el nombre de archivo *Class1.cs* , cámbielo a **CalculatorLibrary.cs**. Puede hacer clic en el nombre en el **Explorador de soluciones** para cambiarlo, o bien hacer clic con el botón derecho y seleccionar **Cambiar nombre**. Otra opción es presionar la tecla **F2**.
+1. En lugar de dejar el nombre de archivo *Class1.cs*, cámbielo a **CalculatorLibrary.cs**. Puede hacer clic en el nombre en el **Explorador de soluciones** para cambiarlo, o bien hacer clic con el botón derecho y seleccionar **Cambiar nombre**. Otra opción es presionar la tecla **F2**.
 
    Es posible que se le pregunte si quiere cambiar el nombre de las referencias a `Class1` en el archivo. No importa qué responda en este momento, ya que reemplazará el código en un paso posterior.
 
@@ -54,11 +55,11 @@ El código real está formado por numerosos proyectos que funcionan conjuntament
 
    ![Captura de pantalla del cuadro de diálogo Administrador de referencias](media/vs-2019/calculator2-ref-manager-dark.png)
 
-1. En el cuadro de diálogo **Administrador de referencias** , active la casilla correspondiente al proyecto **CalculatorLibrary** y seleccione **Aceptar**.  La referencia del proyecto aparece en un nodo **Proyectos** en el **Explorador de soluciones**.
+1. En el cuadro de diálogo **Administrador de referencias**, active la casilla correspondiente al proyecto **CalculatorLibrary** y seleccione **Aceptar**.  La referencia del proyecto aparece en un nodo **Proyectos** en el **Explorador de soluciones**.
 
    ![Captura de pantalla del Explorador de soluciones con una referencia de proyecto](media/vs-2019/calculator2-solution-explorer-with-project-reference-dark2.png)
 
-1. En *Program.cs* , seleccione la clase `Calculator` y todo su código, y presione **CTRL+X** para cortarla de Program.cs. Después, en **CalculatorLibrary** , en *CalculatorLibrary.cs* , pegue el código en el espacio de nombres `CalculatorLibrary`. Posteriormente, haga que la clase Calculator `public` lo exponga fuera de la biblioteca. El código de *CalculatorLibrary.cs* ahora debería ser similar al siguiente:
+1. En *Program.cs*, seleccione la clase `Calculator` y todo su código, y presione **CTRL+X** para cortarla de Program.cs. Después, en **CalculatorLibrary**, en *CalculatorLibrary.cs*, pegue el código en el espacio de nombres `CalculatorLibrary`. Posteriormente, haga que la clase Calculator `public` lo exponga fuera de la biblioteca. El código de *CalculatorLibrary.cs* ahora debería ser similar al siguiente:
 
    ```csharp
    using System;
@@ -204,7 +205,7 @@ El código real está formado por numerosos proyectos que funcionan conjuntament
 
 ## <a name="add-a-nuget-package-write-to-a-json-file"></a>Incorporación de paquete NuGet: escritura en un archivo JSON
 
-1. Supongamos ahora que queremos generar las operaciones en JSON, un formato popular y portable para almacenar datos de objeto. Para implementar esta funcionalidad, es necesario hacer referencia al paquete NuGet Newtonsoft.Json. Los paquetes NuGet son el vehículo principal para la distribución de bibliotecas de clases .NET. En el **Explorador de soluciones** , haga clic con el botón derecho en el nodo **Referencias** del proyecto CalculatorLibrary y seleccione **Administrar paquetes NuGet**.
+1. Supongamos ahora que queremos generar las operaciones en JSON, un formato popular y portable para almacenar datos de objeto. Para implementar esta funcionalidad, es necesario hacer referencia al paquete NuGet Newtonsoft.Json. Los paquetes NuGet son el vehículo principal para la distribución de bibliotecas de clases .NET. En el **Explorador de soluciones**, haga clic con el botón derecho en el nodo **Referencias** del proyecto CalculatorLibrary y seleccione **Administrar paquetes NuGet**.
 
    ![Captura de pantalla del menú contextual Administrar paquetes NuGet](media/vs-2019/calculator2-manage-nuget-packages-dark2.png)
 
@@ -299,7 +300,7 @@ El código real está formado por numerosos proyectos que funcionan conjuntament
     }
    ```
 
-1. En *Program.cs* , agregue una llamada a Finish al final.
+1. En *Program.cs*, agregue una llamada a Finish al final.
 
    ```csharp
             // And call to close the JSON writer before return
@@ -333,7 +334,7 @@ El código real está formado por numerosos proyectos que funcionan conjuntament
 
 El depurador de Visual Studio es una herramienta eficaz que permite ejecutar el código paso a paso para buscar el punto exacto donde se ha cometido un error de programación. A continuación, comprenderá qué correcciones necesita hacer en el código. Visual Studio le permite realizar cambios temporales para poder seguir ejecutando el programa.
 
-1. En *Program.cs* , haga clic en el margen situado a la izquierda del código siguiente (o bien, abra el menú contextual y elija **Punto de interrupción** > **Insertar punto de interrupción** o presione **F9** ):
+1. En *Program.cs*, haga clic en el margen situado a la izquierda del código siguiente (o bien, abra el menú contextual y elija **Punto de interrupción** > **Insertar punto de interrupción** o presione **F9**):
 
    ```csharp
    result = calculator.DoOperation(cleanNum1, cleanNum2, op);
@@ -373,13 +374,13 @@ El depurador de Visual Studio es una herramienta eficaz que permite ejecutar el 
 
 3. Fíjese en la ventana **Automático**.
 
-   La ventana Automático es similar a la ventana **Variables locales** , pero muestra las variables inmediatamente anteriores y posteriores a la línea de código actual en la que la aplicación permanece en pausa.
+   La ventana Automático es similar a la ventana **Variables locales**, pero muestra las variables inmediatamente anteriores y posteriores a la línea de código actual en la que la aplicación permanece en pausa.
 
    A continuación, ejecutará el código en el depurador instrucción por instrucción, lo que se denomina *ejecución paso a paso*.
 
 ## <a name="debug-step-through-code"></a>Depuración: examinar el código
 
-1. Presione **F11** (o **Depurar** > **Depurar paso a paso por instrucciones** ).
+1. Presione **F11** (o **Depurar** > **Depurar paso a paso por instrucciones**).
 
    Con el comando Depurar paso a paso por instrucciones, la aplicación ejecuta la instrucción actual y avanza hasta la siguiente instrucción ejecutable (normalmente la siguiente línea de código). El puntero amarillo de la izquierda siempre indica la instrucción actual.
 
@@ -387,13 +388,13 @@ El depurador de Visual Studio es una herramienta eficaz que permite ejecutar el 
 
    Acaba de depurar paso a paso por instrucciones el método `DoOperation` de la clase `Calculator`.
 
-1. Para obtener una visión jerárquica del flujo del programa, examine la ventana **Pila de llamadas**. (Si está cerrada, elija **Depurar** > **Ventanas** > **Pila de llamadas** ).
+1. Para obtener una visión jerárquica del flujo del programa, examine la ventana **Pila de llamadas**. (Si está cerrada, elija **Depurar** > **Ventanas** > **Pila de llamadas**).
 
    ![Captura de pantalla de la pila de llamadas](media/vs-2019/calculator-2-debug-call-stack.png)
 
-   Esta vista muestra el método `Calculator.DoOperation` actual, indicado por el puntero amarillo, y la segunda fila muestra la función que lo llamó, del método `Main` en *Program.cs*. En la ventana **Pila de llamadas** se muestra el orden en el que se llama a los métodos y las funciones. Además, proporciona acceso a muchas características del depurador, como **Ir al código fuente** , en el menú contextual.
+   Esta vista muestra el método `Calculator.DoOperation` actual, indicado por el puntero amarillo, y la segunda fila muestra la función que lo llamó, del método `Main` en *Program.cs*. En la ventana **Pila de llamadas** se muestra el orden en el que se llama a los métodos y las funciones. Además, proporciona acceso a muchas características del depurador, como **Ir al código fuente**, en el menú contextual.
 
-1. Presione **F10** (o **Depurar** > **Depurar paso a paso por procedimientos** ) varias veces hasta que la aplicación se pause en la instrucción `switch`.
+1. Presione **F10** (o **Depurar** > **Depurar paso a paso por procedimientos**) varias veces hasta que la aplicación se pause en la instrucción `switch`.
 
    ```csharp
    switch (op)
@@ -427,7 +428,7 @@ El depurador de Visual Studio es una herramienta eficaz que permite ejecutar el 
 
    En C#, `Infinity` es el resultado de dividir por cero.
 
-1. Presione **F5** (o, **Depurar** > **Continuar depurando** ).
+1. Presione **F5** (o, **Depurar** > **Continuar depurando**).
 
    El símbolo de infinito aparece en la consola como el resultado de la operación matemática.
 
