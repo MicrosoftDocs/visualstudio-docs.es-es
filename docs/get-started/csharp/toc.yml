@@ -16,9 +16,9 @@
     - name: Crear la primera aplicación de C#
       expanded: true
       items:
-        - name: 'Parte 1: creación de una aplicación de consola en C#'
+        - name: creación de una aplicación de consola en C#
           href: tutorial-console.md
-        - name: 'Parte 2: ampliación de una aplicación de consola en C#'
+        - name: ampliación de una aplicación de consola en C#
           href: tutorial-console-part-2.md
     - name: Creación de una aplicación web
       href: tutorial-aspnet-core.md
