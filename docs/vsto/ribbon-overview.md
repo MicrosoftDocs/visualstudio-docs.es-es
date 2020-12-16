@@ -1,5 +1,7 @@
 ---
 title: Información general sobre la cinta
+description: Obtenga información acerca de cómo la cinta de opciones es una manera de organizar los comandos relacionados para que sean más fáciles de encontrar y de cómo aparecen los comandos como controles en la cinta de opciones.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 668517705caa7ba6baef0b85305bf4470bc3b26b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ca7f7757cddf89b97f7a374385ea834728f0e975
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985612"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527975"
 ---
 # <a name="ribbon-overview"></a>Información general sobre la cinta
   La cinta de opciones es una manera de organizar comandos relacionados para que sean más fáciles de encontrar. Los comandos aparecen como controles en la cinta de opciones. Los controles se organizan en *grupos* a lo largo de una franja horizontal en el borde superior de una ventana de la aplicación. Los grupos relacionados se organizan en pestañas.
@@ -93,7 +95,7 @@ ms.locfileid: "72985612"
 ## <a name="add-multiple-ribbon-items-to-a-project"></a>Agregar varios elementos de la cinta de opciones a un proyecto
  Puede agregar más de un elemento de cinta a un mismo proyecto. Esto resulta útil si desea realizar alguna de las dos tareas indicadas a continuación:
 
-- Cree cintas de opciones para los *inspectores*de Outlook. Para obtener más información, consulte [personalizar una cinta de opciones para Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
+- Cree cintas de opciones para los *inspectores* de Outlook. Para obtener más información, consulte [personalizar una cinta de opciones para Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
 
     > [!NOTE]
     > Un Inspector es una ventana que se abre cuando los usuarios realizan ciertas tareas, como crear un mensaje de correo electrónico.

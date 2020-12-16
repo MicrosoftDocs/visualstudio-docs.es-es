@@ -1,5 +1,7 @@
 ---
 title: Información general del modelo de objetos de la cinta
+description: Obtenga información sobre cómo el motor en tiempo de ejecución de Visual Studio Tools para Office expone un modelo de objetos fuertemente tipados que puede usar para obtener y establecer las propiedades de los controles de la cinta de opciones en tiempo de ejecución.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6ca22704345fefb4944bda7dd9f71942fe8dfb50
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f97bbbab4b867f503e5b5befff27844df8a4b4bc
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71256013"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527992"
 ---
 # <a name="ribbon-object-model-overview"></a>Información general del modelo de objetos de la cinta
   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]Expone un modelo de objetos fuertemente tipado que puede usar para obtener y establecer las propiedades de los controles de la cinta de opciones en tiempo de ejecución. Por ejemplo, puede rellenar dinámicamente los controles de menú o mostrar y ocultar controles de forma contextual. También puede Agregar pestañas, grupos y controles a una cinta de opciones, pero solo antes de que la aplicación de Office cargue la cinta de opciones. Para obtener más información, vea [establecer propiedades que pasan a ser de solo lectura](#SettingReadOnlyProperties).
@@ -37,7 +39,7 @@ ms.locfileid: "71256013"
 |Evento|Descripción|
 |-----------|-----------------|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Load>|Se genera cuando la aplicación de Office carga la personalización de la cinta de opciones. El <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load> controlador de eventos se agrega automáticamente al archivo de código de la cinta de opciones. Use este controlador de eventos para ejecutar código personalizado cuando se cargue la cinta de opciones.|
-|<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.LoadImage>|Permite almacenar en caché imágenes en la personalización de la cinta de opciones cuando se carga la cinta de opciones. Puede obtener una ligera mejora del rendimiento si escribe código para almacenar en caché las imágenes de la cinta de opciones en este controlador de eventos. Para más información, consulte <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>.|
+|<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.LoadImage>|Permite almacenar en caché imágenes en la personalización de la cinta de opciones cuando se carga la cinta de opciones. Puede obtener una ligera mejora del rendimiento si escribe código para almacenar en caché las imágenes de la cinta de opciones en este controlador de eventos. Para obtener más información, vea <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>.|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Close>|Se genera cuando se cierra la instancia de la cinta de opciones.|
 
 ## <a name="ribbon-controls"></a><a name="RibbonControlClasses"></a> Controles de la cinta
@@ -48,11 +50,11 @@ ms.locfileid: "71256013"
 |Nombre del control|Nombre de la clase|
 |------------------|----------------|
 |**Box**|<xref:Microsoft.Office.Tools.Ribbon.RibbonBox>|
-|**Botón**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton>|
+|**Button**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton>|
 |**ButtonGroup**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButtonGroup>|
 |**CheckBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox>|
 |**ComboBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>|
-|**DropDown**|<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>|
+|**Plegable**|<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>|
 |**EditBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|
 |**Galería**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
 |**Grupo**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup>|
@@ -60,7 +62,7 @@ ms.locfileid: "71256013"
 |**Menú**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|
 |**Separador**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator>|
 |**SplitButton**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|
-|**Pestaña**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|
+|**Tabulador**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|
 |**ToggleButton**|<xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|
 
  El <xref:Microsoft.Office.Tools.Ribbon> espacio de nombres usa el prefijo "Ribbon" para estos tipos a fin de evitar un conflicto de nombres con los nombres de las clases de control del <xref:System.Windows.Forms> espacio de nombres.
@@ -146,7 +148,7 @@ ms.locfileid: "71256013"
 |**Items**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|
 |**MaxLength**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|
 |**Nombre**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComponent>|
-|**Posición**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonTab><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|
+|**Position**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonTab><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|
 |**RibbonType**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|
 |**Empleado**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
 |**ShowItemImage**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
@@ -184,11 +186,11 @@ ms.locfileid: "71256013"
 |*remitente*|Objeto <xref:System.Object> que representa el control que provocó el evento.|
 |*e*|Un objeto <xref:Microsoft.Office.Tools.Ribbon.RibbonControlEventArgs> que contiene un control <xref:Microsoft.Office.Core.IRibbonControl>. Utilice este control para tener acceso a cualquier propiedad que no esté disponible en el modelo de objetos de la cinta de opciones proporcionado por [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] .|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Obtener acceso a la cinta de opciones en tiempo de ejecución](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Información general sobre la cinta](../vsto/ribbon-overview.md)
 - [Cómo: Introducción a la personalización de la cinta de opciones](../vsto/how-to-get-started-customizing-the-ribbon.md)
-- [Diseñador de la cinta](../vsto/ribbon-designer.md)
+- [Diseñador de la cinta de opciones](../vsto/ribbon-designer.md)
 - [Tutorial: crear una pestaña personalizada mediante el diseñador de la cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
 - [Tutorial: actualizar los controles de una cinta de opciones en tiempo de ejecución](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)
 - [Personalización de una cinta para Outlook](../vsto/customizing-a-ribbon-for-outlook.md)

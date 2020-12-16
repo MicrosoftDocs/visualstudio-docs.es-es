@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: cambiar el tamaño de los controles ListObject'
+description: Obtenga información sobre cómo puede usar Visual Studio para cambiar el tamaño de los controles ListObject mediante programación en un libro de Microsoft Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 68a9841d8471189538959a311bf9349199d55f78
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c401f3938679c72cee3a07c4bff79a5777fcbc1
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545839"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528533"
 ---
 # <a name="how-to-resize-listobject-controls"></a>Cómo: cambiar el tamaño de los controles ListObject
   Aunque se puede establecer el tamaño de un control <xref:Microsoft.Office.Tools.Excel.ListObject> al agregarlo a un libro de Microsoft Office Excel, podrían ser necesarios cambios posteriores. Por ejemplo, conviene cambiar una lista de columnas de dos a tres columnas.
@@ -42,9 +44,9 @@ ms.locfileid: "85545839"
 
 ### <a name="to-resize-a-list-by-using-the-resize-list-dialog-box"></a>Para cambiar el tamaño de una lista mediante el cuadro de diálogo Cambiar el tamaño de la lista
 
-1. Haga clic en cualquier parte de la  <xref:Microsoft.Office.Tools.Excel.ListObject> tabla. **Table Tools**  >  Aparece la pestaña**diseño** de herramientas de tabla de la cinta de opciones.
+1. Haga clic en cualquier parte de la  <xref:Microsoft.Office.Tools.Excel.ListObject> tabla.   >  Aparece la pestaña **diseño** de herramientas de tabla de la cinta de opciones.
 
-2. En la sección Propiedades, haga clic en **cambiar el tamaño**de la tabla.
+2. En la sección Propiedades, haga clic en **cambiar el tamaño** de la tabla.
 
     ![VSTO_ResizeTable](../vsto/media/vsto-resizetable.png)
 

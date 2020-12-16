@@ -1,5 +1,7 @@
 ---
 title: Ribbon XML
+description: Obtenga información sobre cómo usar el elemento cinta (XML) Si desea personalizar la cinta de opciones de un modo que no sea compatible con el elemento cinta (diseñador visual).
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e9ce2388dbf61ef3af524f0debc776891dca004f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c9e1cf4c6af266495b3d85d96aa8cce1697cca7
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90842554"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528422"
 ---
 # <a name="ribbon-xml"></a>Ribbon XML
   El elemento cinta (XML) le permite personalizar una cinta de opciones mediante XML. Use el elemento cinta (XML) Si desea personalizar la cinta de modo que no sea compatible con el elemento cinta (diseñador visual). Para obtener una comparación de lo que puede hacer con cada elemento, consulte [información general de la cinta](../vsto/Ribbon-overview.md)de opciones.
@@ -45,7 +47,7 @@ ms.locfileid: "90842554"
   De forma predeterminada, estos archivos agregan un grupo personalizado a la pestaña **Complementos** de la cinta de opciones.
 
 ## <a name="display-the-custom-ribbon-in-a-microsoft-office-application"></a>Mostrar la cinta de opciones personalizada en una aplicación Microsoft Office
- Después de agregar un elemento **cinta (XML)** al proyecto, debe agregar código a la clase **ThisAddIn**, **ThisWorkbook**o **ThisDocument** que reemplaza el `CreateRibbonExtensibilityObject` método y devuelve la clase XML de la cinta de opciones a la aplicación de Office.
+ Después de agregar un elemento **cinta (XML)** al proyecto, debe agregar código a la clase **ThisAddIn**, **ThisWorkbook** o **ThisDocument** que reemplaza el `CreateRibbonExtensibilityObject` método y devuelve la clase XML de la cinta de opciones a la aplicación de Office.
 
  En el siguiente código de ejemplo se reemplaza el método `CreateRibbonExtensibilityObject` y devuelve una clase XML Ribbon llamada MyRibbon.
 
@@ -71,7 +73,7 @@ ms.locfileid: "90842554"
 <toggleButton id="toggleButton1" onAction="OnToggleButton1" />
 ```
 
- Se llama a**onAction** cuando el usuario efectúa la tarea principal asociada a un control determinado. Por ejemplo, se llama al método de devolución de llamada **onAction** de un botón de alternancia cuando el usuario hace clic en el botón.
+ Se llama a **onAction** cuando el usuario efectúa la tarea principal asociada a un control determinado. Por ejemplo, se llama al método de devolución de llamada **onAction** de un botón de alternancia cuando el usuario hace clic en el botón.
 
  El método que especifique en el atributo puede tener cualquier nombre. Sin embargo, debe coincidir con el nombre del método que defina en el archivo de código de la cinta de opciones.
 
@@ -133,7 +135,7 @@ ms.locfileid: "90842554"
  Los elementos y atributos predeterminados del archivo XML de la cinta de opciones son un subconjunto pequeño de los elementos y atributos disponibles. Para obtener una lista completa de los elementos y atributos disponibles, consulte el artículo técnico [Personalización de la interfaz de usuario de la cinta de opciones de Office (2007) para desarrolladores (parte 2 de 3)](/previous-versions/office/developer/office-2007/aa338199(v=office.12)).
 
 ## <a name="ribbon-class-reference"></a><a name="RibbonExtensionClass"></a> Referencia de clase Ribbon
- Visual Studio genera la clase Ribbon en el archivo de código de la cinta de opciones. Agregue los métodos de devolución de llamada para los controles de la cinta de opciones a esta clase. Esta clase implementa la interfaz <xref:Microsoft.Office.Core.IRibbonExtensibility>.
+ Visual Studio genera la clase Ribbon en el archivo de código de la cinta de opciones. Agregue los métodos de devolución de llamada para los controles de la cinta de opciones a esta clase. Esta clase implementa la interfaz <xref:Microsoft.Office.Core.IRibbonExtensibility> .
 
  En la siguiente tabla se describen los métodos predeterminados de esta clase.
 
@@ -143,7 +145,7 @@ ms.locfileid: "90842554"
 |`OnLoad`|Asigne el parámetro <xref:Microsoft.Office.Core.IRibbonControl> al campo `Ribbon` . Microsoft Office aplicaciones llaman a este método cuando cargan la cinta de opciones personalizada. Puede usar este campo para actualizar dinámicamente la cinta de opciones personalizada. Para obtener más información, consulte el artículo técnico [Personalización de la interfaz de usuario de la cinta de opciones de Office (2007) para desarrolladores (parte 1 de 3)](/previous-versions/office/developer/office-2007/aa338202(v=office.12)).|
 |`GetResourceText`|Lo llama el método `GetCustomUI` para obtener el contenido del archivo XML de la cinta de opciones.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Información general sobre la cinta](../vsto/ribbon-overview.md)
 - [Tutorial: crear una pestaña personalizada usando XML de la cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)
 - [Personalización de la interfaz de usuario de Office](../vsto/office-ui-customization.md)

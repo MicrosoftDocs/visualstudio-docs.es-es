@@ -1,5 +1,7 @@
 ---
 title: Enlazar a datos de un servicio en un proyecto de complemento de VSTO
+description: Obtenga información sobre cómo agregar controles a un documento de Microsoft Word, enlazar los controles a los datos recuperados de MSDN Content Service y responder a eventos en tiempo de ejecución.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 75d984617b56525e640a74aa4badd6f520c0b892
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6b65308cfc0ba4dee33dd6b20d3fd4028e9ea22e
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72381317"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527479"
 ---
 # <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>Tutorial: enlazar a datos de un servicio en un proyecto de complemento de VSTO
   Puede enlazar datos a controles host en proyectos de complemento de VSTO. Este tutorial muestra cómo agregar controles a un documento de Microsoft Office Word, enlazar los controles a los datos recuperados de MSDN Content Service y responder a eventos en tiempo de ejecución.
@@ -43,12 +45,12 @@ ms.locfileid: "72381317"
 
 - [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] o [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].
 
-## <a name="create-a-new-project"></a>Creación de un nuevo proyecto
+## <a name="create-a-new-project"></a>Creación de un proyecto
  El primer paso es crear un proyecto de complemento de VSTO de Word.
 
 ### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto
 
-1. Cree un proyecto de complemento VSTO de Word con el nombre **MTPS Content Service**mediante Visual Basic o C#.
+1. Cree un proyecto de complemento VSTO de Word con el nombre **MTPS Content Service** mediante Visual Basic o C#.
 
      Para obtener más información, vea [Cómo: crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
@@ -61,7 +63,7 @@ ms.locfileid: "72381317"
 
 1. En el menú **Datos** , haga clic en **Agregar nuevo elemento**.
 
-2. En el **Asistente para la configuración de orígenes de datos**, haga clic en **Servicio**y haga clic en **Siguiente**.
+2. En el **Asistente para la configuración de orígenes de datos**, haga clic en **Servicio** y haga clic en **Siguiente**.
 
 3. En el campo **Dirección** , escriba la dirección URL siguiente:
 
@@ -69,7 +71,7 @@ ms.locfileid: "72381317"
 
 4. Haga clic en **Ir**.
 
-5. En el campo **Espacio de nombres** , escriba **ContentService**y haga clic en **Aceptar**.
+5. En el campo **Espacio de nombres** , escriba **ContentService** y haga clic en **Aceptar**.
 
 6. En el cuadro de diálogo **Asistente para agregar referencias** , haga clic en **Finalizar**.
 
@@ -83,12 +85,12 @@ ms.locfileid: "72381317"
      [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#2](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#2)]
      [!code-vb[Trin_WordAddIn_BindingDataToContentControl#2](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#2)]
 
-2. Agregue el siguiente método a la clase `ThisAddIn`. Este método crea un control content al principio del documento activo.
+2. Agrega el método siguiente a la clase `ThisAddIn`: Este método crea un control content al principio del documento activo.
 
      [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#4](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#4)]
      [!code-vb[Trin_WordAddIn_BindingDataToContentControl#4](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#4)]
 
-3. Agregue el siguiente método a la clase `ThisAddIn`. Este método inicializa los objetos necesarios para crear y enviar una solicitud al servicio Web.
+3. Agrega el método siguiente a la clase `ThisAddIn`: Este método inicializa los objetos necesarios para crear y enviar una solicitud al servicio Web.
 
      [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#6](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#6)]
      [!code-vb[Trin_WordAddIn_BindingDataToContentControl#6](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#6)]

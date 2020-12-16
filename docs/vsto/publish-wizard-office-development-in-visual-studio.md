@@ -1,5 +1,7 @@
 ---
 title: Asistente para publicación (desarrollo de Office en Visual Studio)
+description: Obtenga información sobre cómo puede usar el Asistente para publicación para copiar archivos de solución en una ubicación especificada, crear los archivos de manifiesto y crear un programa de instalación en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: be5742533280ab2ff7da04ee287b0534980d9436
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 25821a0f245f2f0ed30fcbfb10137a772dd0dd01
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810985"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528009"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Asistente para publicación (desarrollo de Office en Visual Studio)
   Use el **Asistente para publicación** para copiar archivos de solución en una ubicación especificada, crear los archivos de manifiesto y crear un programa de instalación.
@@ -39,7 +41,7 @@ ms.locfileid: "90810985"
 
 - Una ruta de acceso relativa o absoluta en formato estándar de Windows, como *C:\Deploy\MyApplication* o *\MyApplication*.
 
-- Una ruta de acceso UNC (Convención de nomenclatura universal), como * \\ \ServerName\MyApplication \\ *.
+- Una ruta de acceso UNC (Convención de nomenclatura universal), como *\\ \ServerName\MyApplication \\*.
 
 - Una dirección URL de un sitio web, como `http://www.contoso.com/MyApplication` .
 

@@ -1,5 +1,7 @@
 ---
 title: Protección mediante contraseña en documentos de Office
+description: Obtenga información acerca de cómo establecer una contraseña en los libros de Excel y los documentos de Microsoft Word para que los usuarios no autorizados no puedan abrirla.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e3c9521389ce348a482f35ec95c9766edea49f5f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6beaf85000438846e5d440e48c9722b9660f9bd
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62977905"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528064"
 ---
 # <a name="password-protection-on-office-documents"></a>Protección mediante contraseña en documentos de Office
   Es posible establecer una contraseña en el Microsoft Office documentos de Word y Microsoft Office libros de Excel para que no se puedan abrir por alguien que no conozca la contraseña. Esta opción se denomina **contraseña al abrirse**.

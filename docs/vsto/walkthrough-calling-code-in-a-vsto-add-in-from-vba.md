@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: llamar a código en un complemento de VSTO desde VBA'
+description: Obtenga información sobre cómo exponer un objeto en un complemento de VSTO a otras soluciones de Microsoft Office, incluidos los complementos de VSTO Visual Basic para Aplicaciones (VBA) y COM.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6fdbd2cf85086bac0aa7bb56c128a7ad6fe36f94
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0cbf03ef234ea6cf4eab790d96082d23b7ed5199
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72650786"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527291"
 ---
 # <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>Tutorial: llamar a código en un complemento de VSTO desde VBA
   Este tutorial muestra cómo exponer un objeto de un complemento de VSTO a otras soluciones de Microsoft Office, incluido Visual Basic para aplicaciones (VBA) y complementos VSTO de COM.
@@ -54,7 +56,7 @@ ms.locfileid: "72650786"
 
 ### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto
 
-1. Cree un proyecto de complemento de VSTO para Excel con el nombre **ExcelImportData**mediante la plantilla de proyecto de complementos de VSTO para Excel. Para obtener más información, consulta [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Cree un proyecto de complemento de VSTO para Excel con el nombre **ExcelImportData** mediante la plantilla de proyecto de complementos de VSTO para Excel. Para obtener más información, consulta [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] abre el archivo de código **ThisAddIn.CS** o **ThisAddIn. VB** y agrega el proyecto **ExcelImportData** a **Explorador de soluciones**.
 
@@ -67,7 +69,7 @@ ms.locfileid: "72650786"
 
 1. En el menú **Proyecto** , haga clic en **Agregar clase**.
 
-2. En el cuadro de diálogo **Agregar nuevo elemento** , cambie el nombre de la nueva clase a **AddInUtilities**y haga clic en **Agregar**.
+2. En el cuadro de diálogo **Agregar nuevo elemento** , cambie el nombre de la nueva clase a **AddInUtilities** y haga clic en **Agregar**.
 
      El archivo **AddInUtilities.cs** o **AddInUtilities.vb** se abre en el Editor de código.
 
@@ -90,14 +92,14 @@ ms.locfileid: "72650786"
 
 1. En el **Explorador de soluciones**, expanda **Excel**.
 
-2. Haga clic con el botón secundario en el archivo **ThisAddin.cs** o **ThisAddin.vb**y, a continuación, haga clic en **Ver código**.
+2. Haga clic con el botón secundario en el archivo **ThisAddin.cs** o **ThisAddin.vb** y, a continuación, haga clic en **Ver código**.
 
 3. Agregue el siguiente código a la clase `ThisAddIn` .
 
      [!code-csharp[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/ThisAddIn.cs#1)]
      [!code-vb[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/ThisAddIn.vb#1)]
 
-4. En el menú **Compilar**, haga clic en **Compilar solución**.
+4. En el menú **Compilar** , haga clic en **Compilar solución**.
 
      Compruebe que la solución se compila sin errores.
 

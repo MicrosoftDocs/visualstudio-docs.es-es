@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: crear el primer complemento de VSTO para Project'
+description: Cree un complemento de nivel de aplicación para Microsoft Project. Esta característica está disponible para la propia aplicación, con independencia de los proyectos que estén abiertos.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4a84d295a47d3391f27e7101ad815dca0c910aa6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6f4774b8f5ba55d54e05e3a9ef18f8ea13fd48fc
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62981415"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527903"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>Tutorial: crear el primer complemento de VSTO para Project
   En este tutorial se muestra cómo crear un complemento de VSTO para Microsoft Office proyecto. Las características que cree en este tipo de solución estarán disponibles para la propia aplicación, con independencia de los proyectos que estén abiertos. Para obtener más información, vea [información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -46,15 +48,15 @@ ms.locfileid: "62981415"
 
 - [!INCLUDE[Project_15_short](../vsto/includes/project-15-short-md.md)] o [!INCLUDE[Project_14_short](../vsto/includes/project-14-short-md.md)].
 
-## <a name="create-the-project"></a>Crear el proyecto
+## <a name="create-the-project"></a>Creación del proyecto
 
 ### <a name="to-create-a-new-project-in-visual-studio"></a>Para crear un nuevo proyecto en Visual Studio
 
 1. Inicie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. En el menú **Archivo** , seleccione **Nuevo**y haga clic en **Proyecto**.
+2. En el menú **Archivo** , seleccione **Nuevo** y haga clic en **Proyecto**.
 
-3. En el panel de plantillas, expanda **Visual C#** o **Visual Basic**y luego expanda **Office/SharePoint**.
+3. En el panel de plantillas, expanda **Visual C#** o **Visual Basic** y luego expanda **Office/SharePoint**.
 
 4. En el nodo **Office/SharePoint** expandido, seleccione el nodo **Complementos de Office** .
 
@@ -62,7 +64,7 @@ ms.locfileid: "62981415"
 
 6. En el cuadro **Nombre** , escriba **FirstProjectAddIn**.
 
-7. Haga clic en **Aceptar**.
+7. Haga clic en **OK**.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] crea el proyecto **FirstProjectAddIn** y abre el archivo de código **ThisAddIn** en el editor.
 

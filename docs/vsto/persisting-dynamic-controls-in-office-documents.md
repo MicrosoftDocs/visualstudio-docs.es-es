@@ -1,5 +1,7 @@
 ---
 title: Conservar controles dinámicos en documentos de Office
+description: Obtenga información sobre cómo puede agregar código a la solución para volver a crear controles dinámicos persistentes cuando un usuario vuelve a abrir un documento cerrado.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5d48dfab18ec2165753ac19330f7fbe18c923da9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6efb00571a9f594de6045860621fb840076e8f5
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71256003"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527528"
 ---
 # <a name="persist-dynamic-controls-in-office-documents"></a>Conservar controles dinámicos en documentos de Office
 
@@ -78,7 +80,7 @@ Puede volver a crear los controles de formularios Windows Forms eliminados cuand
 
 1. Almacenar información sobre el tamaño, la ubicación y el estado de los controles cuando se guarda o se cierra el documento. En una personalización de nivel de documento, puede guardar los datos en la memoria caché de datos del documento. En un complemento de VSTO, puede guardar los datos en un elemento XML personalizado del documento.
 
-2. Volver a crear los controles en un evento que se genera cuando se abre el documento. En los proyectos de nivel de documento, puede hacerlo en los `Sheet` *n* `_Startup` controladores de `ThisDocument_Startup` eventos n o. En proyectos de complemento de VSTO, puede hacerlo en los controladores de eventos de los eventos <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> o <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> .
+2. Volver a crear los controles en un evento que se genera cuando se abre el documento. En los proyectos de nivel de documento, puede hacerlo en los `Sheet`  `_Startup` controladores de `ThisDocument_Startup` eventos n o. En proyectos de complemento de VSTO, puede hacerlo en los controladores de eventos de los eventos <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> o <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> .
 
 ### <a name="remove-activex-wrappers-in-an-add-in"></a><a name="removingActiveX"></a> Quitar contenedores de ActiveX en un complemento
 

@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: eliminar hojas de cálculo de libros mediante programación'
+description: Obtenga información sobre cómo puede eliminar mediante programación cualquier hoja de cálculo de un libro de Microsoft Excel mediante el elemento host de hoja de cálculo, por ejemplo.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5fbcffdf56ea2168974658477579428ef546f061
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: e9d1330c454e0b9b9f5ad4624c18e4ed1055343d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585254"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527781"
 ---
 # <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>Cómo: eliminar hojas de cálculo de libros mediante programación
   Puede eliminar cualquier hoja de cálculo de un libro. Para eliminar una hoja de cálculo, use el elemento host worksheet o acceda a la hoja de cálculo mediante la colección Sheets del libro.
@@ -65,7 +67,7 @@ ms.locfileid: "91585254"
      [!code-csharp[Trin_VstcoreExcelAutomation#18](codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#18)]
      [!code-vb[Trin_VstcoreExcelAutomation#18](codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#18)]
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Trabajar con hojas de cálculo](working-with-worksheets.md)
 - [Cómo: ocultar hojas de cálculo mediante programación](how-to-programmatically-hide-worksheets.md)
 - [Cómo: trasladar hojas de cálculo dentro de libros mediante programación](how-to-programmatically-move-worksheets-within-workbooks.md)

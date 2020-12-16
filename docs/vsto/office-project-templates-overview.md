@@ -1,5 +1,7 @@
 ---
 title: Información general de plantillas de proyecto de Office
+description: Obtenga información sobre cómo las herramientas de desarrollo de Microsoft Office en Visual Studio incluyen plantillas de proyecto para crear diferentes tipos de soluciones de Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -30,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d83b04795386cfec80a8a309a9a84da04f6df105
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5e3203eb4bbd7339f5e59ecffea8436b02180b8b
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68926598"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528082"
 ---
 # <a name="office-project-templates-overview"></a>Información general de plantillas de proyecto de Office
   Las Microsoft Office Developer Tools en Visual Studio incluye plantillas de proyecto para crear los siguientes tipos de soluciones de Office:
@@ -83,7 +85,7 @@ ms.locfileid: "68926598"
 
 - [Personalizaciones de nivel de documento de programa](../vsto/programming-document-level-customizations.md)
 
-- [soluciones para Word](../vsto/word-solutions.md)
+- [Soluciones de Word](../vsto/word-solutions.md)
 
 - [Soluciones de Excel](../vsto/excel-solutions.md)
 
@@ -164,9 +166,9 @@ ms.locfileid: "68926598"
  Cuando una plantilla de Microsoft Office Word tiene extensiones de código administradas, no se llama al ensamblado del proyecto si la plantilla se adjunta como plantilla global o se carga desde el directorio de inicio de Word. Además, el documento no reconoce el formato de una plantilla que forma parte de una solución de Office.
 
 ## <a name="excel-add-ins-xla-files"></a>Complementos de Excel (archivos. xla)
- No hay ningún proyecto de Office para crear un complemento de VSTO de Excel (archivo *. xla* ). Se pueden guardar libros como archivos .xla, pero no es una operación admitida y no es recomendable hacerlo. Si guarda un libro que tiene extensiones de código administrado como un archivo **de complemento de Excel ( \* . xla) de Microsoft Office** , puede seleccionarlo en el cuadro de diálogo **Complementos** para aplicarlo a otro libro. En algunos casos, el código se ejecutará en el libro de destino una vez aplicado el complemento de VSTO, pero no se admite dicho uso de la solución de Office.
+ No hay ningún proyecto de Office para crear un complemento de VSTO de Excel (archivo *. xla* ). Se pueden guardar libros como archivos .xla, pero no es una operación admitida y no es recomendable hacerlo. Si guarda un libro que tiene extensiones de código administrado como un archivo **Microsoft Office Excel Add-In ( \* . xla)** , puede seleccionarlo en el cuadro de diálogo **Complementos** para aplicarlo a otro libro. En algunos casos, el código se ejecutará en el libro de destino una vez aplicado el complemento de VSTO, pero no se admite dicho uso de la solución de Office.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md)
 - [Desarrollo de soluciones de Office](../vsto/developing-office-solutions.md)
 - [Cómo: crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)

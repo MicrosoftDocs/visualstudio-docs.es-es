@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: crear nuevos documentos de Visio mediante programación'
+description: Obtenga información acerca de cómo puede crear un nuevo documento de dibujo de Microsoft Visio mediante programación y agregarlo a la colección documentos de documentos de Visio abiertos.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 171ad93caf6b5c13d000073a0d7f7e82282b9b4a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 59c1fe0264a294692bea04b05e5e143fa28be801
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541536"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526840"
 ---
 # <a name="how-to-programmatically-create-new-visio-documents"></a>Cómo: crear nuevos documentos de Visio mediante programación
   Cuando se crea un nuevo documento de dibujo de Visio de Microsoft Office, debe agregarse a la colección `Microsoft.Office.Interop.Visio.Documents` de documentos de Visio abiertos. Por consiguiente, el método `Microsoft.Office.Interop.Visio.Documents.Add` crea un nuevo documento de dibujo de Visio. Para obtener más información, consulte la documentación de referencia VBA para el método [Microsoft.Office.Interop.Visio.Documents.Add](/office/vba/api/Visio.Documents.Add) .

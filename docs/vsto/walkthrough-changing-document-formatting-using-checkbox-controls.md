@@ -1,5 +1,7 @@
 ---
 title: Cambiar el formato de un documento mediante controles CheckBox
+description: Aprenda a usar Windows Forms controles en una personalización de nivel de documento para que Microsoft Word cambie el formato del texto.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 24c3cb8d76551bb477f9c13cc56c313519f3b617
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 931e9554a10e0e1525d9ee4a10505633b211610b
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328724"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527244"
 ---
 # <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>Tutorial: cambiar el formato de un documento mediante controles CheckBox
   En este tutorial se muestra cómo usar los controles Windows Forms en una personalización de nivel de documento para Microsoft Office Word para cambiar el formato del texto.
@@ -45,10 +47,10 @@ ms.locfileid: "67328724"
 
 - [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] o [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].
 
-## <a name="create-the-project"></a>Crear el proyecto
+## <a name="create-the-project"></a>Creación del proyecto
  El primer paso es crear un proyecto de tipo Documento de Word.
 
-### <a name="create-a-new-project"></a>Creación de un nuevo proyecto
+### <a name="create-a-new-project"></a>Creación de un proyecto
 
 1. Cree un proyecto de documento de Word con el nombre **mi formato de Word**. En el asistente, seleccione **crear un nuevo documento**.
 
@@ -88,7 +90,7 @@ ms.locfileid: "67328724"
     |Propiedad|Value|
     |--------------|-----------|
     |**Nombre**|**applyUnderlineFont**|
-    |**Texto**|**Raya**|
+    |**Texto**|**Subrayado**|
 
 ### <a name="add-text-and-a-bookmark-control"></a>Agregar texto y un control Bookmark
 
@@ -113,7 +115,7 @@ ms.locfileid: "67328724"
 
 ### <a name="change-formatting-when-a-check-box-is-selected"></a>Cambiar el formato cuando se activa una casilla
 
-1. Haga clic con el botón secundario `ThisDocument` en **Explorador de soluciones**y, a continuación, haga clic en **Ver código** en el menú contextual.
+1. Haga clic con el botón secundario `ThisDocument` en **Explorador de soluciones** y, a continuación, haga clic en **Ver código** en el menú contextual.
 
 2. Solo para C#, agregue las siguientes constantes a la clase **ThisDocument** .
 

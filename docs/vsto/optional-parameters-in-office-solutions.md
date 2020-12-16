@@ -1,5 +1,7 @@
 ---
 title: Parámetros opcionales en las soluciones de Office
+description: Obtenga información sobre cómo no tiene que pasar un valor para los parámetros opcionales, ya que los valores predeterminados se usan automáticamente para cada parámetro que falta.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e8684ad4b9429a5499660ef4ad6fdd8133dccaa5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7567f43dfa79e6a1e5d92b9ecddbf7918a6edef3
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90843002"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527571"
 ---
 # <a name="optional-parameters-in-office-solutions"></a>Parámetros opcionales en las soluciones de Office
   Muchos de los métodos de los modelos de objetos de las aplicaciones de Microsoft Office aceptan parámetros opcionales. Si utiliza Visual Basic para desarrollar una solución de Office en Visual Studio, no es necesario pasar un valor para los parámetros opcionales, ya que se usan automáticamente los valores predeterminados para cada parámetro que falte. En la mayoría de los casos, también puede omitir los parámetros opcionales en los proyectos de Visual C#. Sin embargo, no puede omitir los parámetros **ref** opcionales de la `ThisDocument` clase en proyectos de Word de nivel de documento.
@@ -68,6 +70,6 @@ ms.locfileid: "90843002"
 
   Para obtener más información sobre los parámetros de tipo de valor y de referencia, vea [pasar argumentos por valor y por referencia &#40;Visual Basic&#41;](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (para Visual Basic) y [pasar parámetros &#40;guía de programación de C&#35;&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Desarrollo de soluciones de Office](../vsto/developing-office-solutions.md)
 - [Escribir código en soluciones de Office](../vsto/writing-code-in-office-solutions.md)

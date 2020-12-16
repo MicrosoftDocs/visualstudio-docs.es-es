@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: firmar soluciones de Office'
+description: Obtenga información sobre cómo conceder confianza a la solución de Microsoft Office mediante el uso de un certificado como prueba.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 23afc171fd97620b3e6801b8d199da6890198d8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7451630570e6d557dc5d2b635d149ebc07cfb388
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545761"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528124"
 ---
 # <a name="how-to-sign-office-solutions"></a>Cómo: firmar soluciones de Office
   Si firma una solución, puede conceder confianza a la solución mediante el certificado como evidencia. Puede usar el mismo certificado para varias soluciones y todas las soluciones serán de confianza sin actualizaciones adicionales de la Directiva de seguridad.
@@ -35,7 +37,7 @@ ms.locfileid: "85545761"
 
 ### <a name="to-sign-an-office-solution-by-using-a-certificate"></a>Para firmar una solución de Office mediante un certificado
 
-1. En el menú **proyecto** , haga clic en**propiedades**de _solutionname_.
+1. En el menú **proyecto** , haga clic en **propiedades** de _solutionname_.
 
 2. Haga clic en la pestaña **Firma** .
 
@@ -45,8 +47,8 @@ ms.locfileid: "85545761"
 
 5. Para comprobar que se está usando el certificado correcto, haga clic en **más detalles** para ver la información del certificado.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Proteger soluciones de Office](../vsto/securing-office-solutions.md)
 - [Conceder confianza a las soluciones de Office](../vsto/granting-trust-to-office-solutions.md)
-- [Página firma, diseñador de proyectos](../ide/reference/signing-page-project-designer.md)
+- [Página Firma, Diseñador de proyectos](../ide/reference/signing-page-project-designer.md)

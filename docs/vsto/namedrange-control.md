@@ -1,5 +1,7 @@
 ---
 title: NamedRange (control)
+description: Obtenga información sobre cómo el control NamedRange es un intervalo que tiene un nombre único, expone eventos y se puede enlazar a datos.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e2b5b5d246e1033148bc199da6e7d2bdfb7aa9b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1881afb0dd718eec3815ab9de3becbeaf070f5d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254716"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528098"
 ---
 # <a name="namedrange-control"></a>NamedRange (control)
   El control <xref:Microsoft.Office.Tools.Excel.NamedRange> es un rango que tiene un nombre único, expone eventos y se puede enlazar a datos. Para obtener más información, vea [información general sobre el modelo de objetos de Excel](../vsto/excel-object-model-overview.md).
@@ -46,7 +48,7 @@ ms.locfileid: "71254716"
 
  Si los datos del conjunto de datos enlazado se actualizan mediante cualquier mecanismo, el control <xref:Microsoft.Office.Tools.Excel.NamedRange> refleja los cambios.
 
-## <a name="formatting"></a>Formato
+## <a name="formatting"></a>Aplicación de formato
  El formato que se puede aplicar a un control <xref:Microsoft.Office.Interop.Excel.Range> también puede aplicarse a un control <xref:Microsoft.Office.Tools.Excel.NamedRange> . Esto incluye bordes, fuentes, formatos de número y estilos.
 
 ## <a name="rename-the-control"></a>Cambiar el nombre del control
@@ -71,7 +73,7 @@ ms.locfileid: "71254716"
 
 - <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange>
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Automatizar Excel usando objetos extendidos](../vsto/automating-excel-by-using-extended-objects.md)
 - [Ejemplos y tutoriales de desarrollo de Office](../vsto/office-development-samples-and-walkthroughs.md)
 - [Enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md)

@@ -1,5 +1,7 @@
 ---
 title: Proteger soluciones de Office
+description: Obtenga información sobre cómo el modelo de seguridad para las soluciones de Office implica varias tecnologías, incluidas las Visual Studio Tools para Office Runtime y ClickOnce.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 31a17fdf51e838405c93efca79d7994cd40ece5c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bedb49a6d5d17e3c9f79a652183c2b4cd748ff6c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62978620"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528477"
 ---
 # <a name="secure-office-solutions"></a>Proteger soluciones de Office
   El modelo de seguridad para soluciones de Office implica varias tecnologías: [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] , el centro de confianza de Microsoft Office y la zona de sitios restringidos de Internet Explorer. En las secciones siguientes se describe el funcionamiento de las distintas características de seguridad:
@@ -62,7 +64,7 @@ ms.locfileid: "62978620"
 ### <a name="document-level-solutions"></a>Soluciones de nivel de documento
  La ruta de acceso completa de un documento debe agregarse a la lista de ubicaciones de confianza en la aplicación de Microsoft Office si va a desarrollar los siguientes tipos de proyectos:
 
-- Soluciones de nivel de documento que se encuentran en un recurso compartido de archivos de red, como * \\ \nombreservidor\nombrerecursocompartido*.
+- Soluciones de nivel de documento que se encuentran en un recurso compartido de archivos de red, como *\\ \nombreservidor\nombrerecursocompartido*.
 
 - Soluciones de nivel de documento para Word que usan archivos *. doc* o *. docm* .
 
@@ -110,5 +112,5 @@ ms.locfileid: "62978620"
 - [Solucionar problemas de seguridad de soluciones de Office](../vsto/troubleshooting-office-solution-security.md)
 - [Manifiestos de aplicación para soluciones de Office](../vsto/application-manifests-for-office-solutions.md)
 - [Manifiestos de implementación para soluciones de Office](../vsto/deployment-manifests-for-office-solutions.md)
-- [Referencia de ClickOnce](../deployment/clickonce-reference.md)
+- [Referencia a ClickOnce](../deployment/clickonce-reference.md)
 - [Implementar una solución de Office](../vsto/deploying-an-office-solution.md)

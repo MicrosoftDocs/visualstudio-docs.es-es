@@ -1,5 +1,7 @@
 ---
 title: Proteger documentos y partes de documentos mediante programación
+description: Obtenga información acerca de cómo puede agregar protección a documentos de Microsoft Word para impedir que los usuarios realicen modificaciones en el documento.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: beab8c2e1b18d56dc7b71688e0ff2ec5b74ac596
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 1dbb001a8c350b376f30047dbafbf747f043e91d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584851"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527765"
 ---
 # <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>Cómo: proteger documentos y partes de documentos mediante programación
   Puede agregar protección a documentos de Microsoft Office Word para impedir que los usuarios realicen cualquier modificación en el documento.
@@ -69,7 +71,7 @@ ms.locfileid: "91584851"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#111](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#111)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#111](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#111)]
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Protección de documentos en soluciones de nivel de documento](../vsto/document-protection-in-document-level-solutions.md)
 - [Protección mediante contraseña en documentos de Office](../vsto/password-protection-on-office-documents.md)
 - [Cómo: permitir que el código se ejecute en documentos con permisos restringidos](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)

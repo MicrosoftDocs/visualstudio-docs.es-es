@@ -1,5 +1,7 @@
 ---
 title: Soluciones de proyecto
+description: Obtenga información sobre cómo puede usar los complementos de VSTO para automatizar Project, ampliar las características del proyecto o personalizar la interfaz de usuario (UI) del proyecto.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 84dfe7cf86df2139b06a320d1c6441665a08a1b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c44e1208daaef11cb7fd9bd22e3e3ae574ca610d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985637"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527512"
 ---
 # <a name="project-solutions"></a>Soluciones de proyecto
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] incluye plantillas de proyecto que se pueden usar para crear complementos VSTO para Microsoft Office Project. Puede usar los complementos para automatizar Project, ampliar sus características o personalizar la interfaz de usuario.
@@ -62,7 +64,7 @@ ms.locfileid: "72985637"
 
  Para obtener más información sobre cómo personalizar la interfaz de usuario de Project y otras aplicaciones Microsoft Office, consulte [Personalización](../vsto/office-ui-customization.md)de la interfaz de usuario de Office.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Tutorial: crear el primer complemento de VSTO para Project](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)
 - [Introducción a la programación de complementos de VSTO](../vsto/getting-started-programming-vsto-add-ins.md)
 - [Información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
@@ -70,6 +72,6 @@ ms.locfileid: "72985637"
 - [Cómo: crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Complementos de VSTO de programa](../vsto/programming-vsto-add-ins.md)
 - [Escribir código en soluciones de Office](../vsto/writing-code-in-office-solutions.md)
-- [ensamblados de interoperabilidad primarios de Office](../vsto/office-primary-interop-assemblies.md)
+- [Ensamblados de interoperabilidad primarios de Office](../vsto/office-primary-interop-assemblies.md)
 - [Personalización de la interfaz de usuario de Office](../vsto/office-ui-customization.md)
 - [Proyecto 2010 y Project Server 2010 en el desarrollo de Office](/previous-versions/office/developer/office-2010/ee758031(v=office.14))

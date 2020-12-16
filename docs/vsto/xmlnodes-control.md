@@ -1,5 +1,7 @@
 ---
 title: XMLNodes (control)
+description: Obtenga información sobre cómo se crea el control XMLNodes solo cuando se asigna un elemento de esquema repetido a un documento de Microsoft Word.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9ad16165924a33a25dab2b1cfb49a0a7bbfe0875
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd82b4bac36d648bee3f6735cf844691ef6d58b2
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90843314"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527845"
 ---
 # <a name="xmlnodes-control"></a>XMLNodes (control)
   **Importante** La información configurada en este tema con respecto a Microsoft Word se presenta exclusivamente para la ventaja y el uso de las personas y organizaciones que se encuentran fuera del Estados Unidos y de sus territorios, o bien el desarrollo de programas que se ejecutan en, productos de Microsoft Word con licencia de Microsoft antes de la 2010 de enero, cuando Microsoft quitó una implementación de funcionalidad específica relacionada con XML personalizado de Es posible que la información relativa a Microsoft Word no sea leída ni utilizada por personas u organizaciones en el Estados Unidos ni en sus territorios que utilicen o desarrollen programas que se ejecutan en, productos de Microsoft Word con licencia de Microsoft a partir del 10 de enero de 2010; Estos productos no se comportarán igual que los productos con licencia antes de esa fecha o adquiridos y con licencia para usarlos fuera del Estados Unidos.
@@ -35,7 +37,7 @@ ms.locfileid: "90843314"
 ## <a name="bind-data-to-the-control"></a>Enlazar datos al control
  Un <xref:Microsoft.Office.Tools.Word.XMLNodes> control no admite el enlace de datos. Esto se debe <xref:Microsoft.Office.Tools.Word.XMLNodes> a que el control no tiene capacidades de enlace de datos complejas y el enlace de datos simple no puede representar datos de repetición.
 
-## <a name="formatting"></a>Formato
+## <a name="formatting"></a>Aplicación de formato
  Cualquier formato que se pueda aplicar al texto dentro del documento se puede aplicar a un <xref:Microsoft.Office.Tools.Word.XMLNodes> control.
 
 ## <a name="events"></a>Eventos
@@ -79,7 +81,7 @@ ms.locfileid: "90843314"
 
  Existen las mismas diferencias entre el <xref:Microsoft.Office.Tools.Word.XMLNodes.ContextLeave> evento y el <xref:Microsoft.Office.Tools.Word.XMLNodes.Deselect> evento.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Información general sobre elementos y controles host](../vsto/host-items-and-host-controls-overview.md)
 - [Automatizar Word con objetos extendidos](../vsto/automating-word-by-using-extended-objects.md)
 - [XMLNode (control)](../vsto/xmlnode-control.md)

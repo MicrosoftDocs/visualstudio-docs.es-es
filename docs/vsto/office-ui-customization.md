@@ -1,5 +1,7 @@
 ---
 title: Personalización de la interfaz de usuario de Office
+description: Obtenga información sobre cómo personalizar la interfaz de usuario (UI) de Microsoft Office aplicaciones mediante Office Developer Tools en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 257f87aedf5d4337e81fb6f251cc8df07f4e577c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 289b055ab84dd9c2c440b55f3d64fe1fe39b8e1b
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88041069"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527584"
 ---
 # <a name="office-ui-customization"></a>Personalización de la interfaz de usuario de Office
   Puede personalizar la interfaz de usuario (UI) de las aplicaciones de Microsoft Office mediante el uso de las herramientas de desarrollo de Office en Visual Studio. En este tema se describen las características de la interfaz de usuario que se pueden personalizar en las secciones siguientes:

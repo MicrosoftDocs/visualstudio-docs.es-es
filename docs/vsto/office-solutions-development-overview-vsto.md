@@ -1,5 +1,7 @@
 ---
 title: Información general sobre el desarrollo de soluciones de Office (VSTO)
+description: Obtenga información sobre cómo desarrollar personalizaciones para las conocidas interfaces de usuario de Microsoft Office y herramientas como las características de procesamiento de texto de Word y las características de análisis de datos de Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c1e9ce9ff2ab0a55de0a7e51325885d86c2fbf1
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 9bb964e90c44c4e0b41e0f09df8931665426dc70
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811024"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527715"
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Información general sobre el desarrollo de soluciones de Office (VSTO)
   Mediante el uso de Microsoft Office como front-end de soluciones, puede beneficiarse de las conocidas interfaces de usuario y herramientas de Microsoft Office, como las características de procesamiento de texto de Word, las características de análisis de datos de Excel y las características de administración de correo electrónico de Outlook. Puede desarrollar soluciones en Visual Studio para personalizar las aplicaciones de Office y agregar las características específicas que necesite para sus procesos empresariales. Por ejemplo, puede convertir Word en un generador de contratos que ensamble contratos a partir de elementos previamente existentes que se pueden hacer modificables o no modificables. Con Excel puede crear una hoja de cálculo de presupuestos automatizada y personalizada para distintos proyectos. Los usuarios pueden aprovechar las soluciones de Office sin conexión, lo que hace que soluciones complejas resulten más prácticas de lo que serían si utilizase una arquitectura basada en web.
@@ -28,7 +30,7 @@ ms.locfileid: "90811024"
 ## <a name="choose-an-office-project-type"></a>Elegir un tipo de proyecto de Office
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] proporciona los siguientes tipos de plantillas de proyecto para el desarrollo de Office basado en VSTO:
 
-- Las**personalizaciones de nivel de documento** están asociadas a un documento concreto.
+- Las **personalizaciones de nivel de documento** están asociadas a un documento concreto.
 
 - **VSTO Add-ins** están asociados a la propia aplicación.
 

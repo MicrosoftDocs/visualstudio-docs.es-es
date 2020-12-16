@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: crear el primer complemento de VSTO para Excel'
+description: Cree un complemento de nivel de aplicación para Microsoft Excel. Las características que cree estarán disponibles para la propia aplicación, con independencia de los libros que estén abiertos.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52b683b1f75f2967807f171c204fbf02a2e5db69
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0f04532e627a694e8a234f1842995b92a707e537
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "69548016"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527909"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>Tutorial: crear el primer complemento de VSTO para Excel
   Este tutorial introductorio muestra cómo crear un complemento de nivel de aplicación para Microsoft Office Excel. Las características que cree en este tipo de solución estarán disponibles para la propia aplicación, con independencia de los libros que se abran.
@@ -48,15 +50,15 @@ ms.locfileid: "69548016"
 
 - [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] o [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
-## <a name="create-the-project"></a>Crear el proyecto
+## <a name="create-the-project"></a>Creación del proyecto
 
 #### <a name="to-create-a-new-excel-vsto-add-in-project-in-visual-studio"></a>Para crear un nuevo proyecto de complemento de VSTO en Visual Studio
 
 1. Inicie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. En el menú **Archivo** , seleccione **Nuevo**y haga clic en **Proyecto**.
+2. En el menú **Archivo** , seleccione **Nuevo** y haga clic en **Proyecto**.
 
-3. En el panel de plantillas, expanda **Visual C#** o **Visual Basic**y luego expanda **Office/SharePoint**.
+3. En el panel de plantillas, expanda **Visual C#** o **Visual Basic** y luego expanda **Office/SharePoint**.
 
 4. En el nodo **Office/SharePoint** expandido, seleccione el nodo **Complementos de Office** .
 
@@ -64,7 +66,7 @@ ms.locfileid: "69548016"
 
 6. En el cuadro **Nombre** , escriba **FirstExcelAddIn**.
 
-7. Haga clic en **Aceptar**.
+7. Haga clic en **OK**.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] crea el proyecto **FirstExcelAddIn** y abre el archivo de código ThisAddIn en el editor.
 
@@ -132,7 +134,7 @@ ms.locfileid: "69548016"
 
 - Implementar complementos de VSTO para Excel: [implementar una solución de Office](../vsto/deploying-an-office-solution.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Soluciones de Excel](../vsto/excel-solutions.md)
 - [Complementos de VSTO de programa](../vsto/programming-vsto-add-ins.md)

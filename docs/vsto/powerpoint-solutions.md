@@ -1,5 +1,7 @@
 ---
 title: Soluciones de PowerPoint
+description: Obtenga información sobre cómo Visual Studio proporciona plantillas de proyecto que puede usar para crear complementos de VSTO para Microsoft PowerPoint.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c41b2942b53c97222abf7308b6706a7cdc734df1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e297b0d269d5ff0bff0deeadd6bd346de00a324
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985665"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528035"
 ---
 # <a name="powerpoint-solutions"></a>Soluciones de PowerPoint
   Visual Studio ofrece plantillas de proyecto que puede usarse para crear complementos de VSTO para Microsoft Office Outlook. Los complementos de VSTO se pueden usar para automatizar PowerPoint, ampliar las características de PowerPoint o personalizar la interfaz de usuario (UI) de PowerPoint.
@@ -78,6 +80,6 @@ ms.locfileid: "72985665"
 - [Cómo: crear proyectos de Office en Visual Studio](how-to-create-office-projects-in-visual-studio.md)
 - [Complementos de VSTO de programa](programming-vsto-add-ins.md)
 - [Escribir código en soluciones de Office](writing-code-in-office-solutions.md)
-- [ensamblados de interoperabilidad primarios de Office](office-primary-interop-assemblies.md)
+- [Ensamblados de interoperabilidad primarios de Office](office-primary-interop-assemblies.md)
 - [Personalización de la interfaz de usuario de Office](office-ui-customization.md)
 - [PowerPoint 2010 en el desarrollo de Office](/previous-versions/office/developer/office-2010/ff604967(v=office.14))

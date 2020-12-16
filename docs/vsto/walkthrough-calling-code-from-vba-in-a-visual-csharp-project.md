@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: llamar a código desde VBA en un proyecto de Visual C#'
+description: Obtenga información sobre cómo llamar a un método en una personalización de nivel de documento para Microsoft Excel desde el código Visual Basic para Aplicaciones (VBA) del libro.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1c089a3156d005da7d49976f6c96bb10daac0662
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: daf25a1e2e80d2c5918d0d11c4b31c75a2e40c87
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "92297939"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527298"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>Tutorial: llamar a código desde VBA en un proyecto de Visual C#
   Este tutorial muestra cómo llamar a un método en una personalización de nivel de documento para Microsoft Office Excel desde el código de Visual Basic para Aplicaciones (VBA) del libro. El procedimiento implica tres pasos básicos: agregar un método a la clase de elemento host `Sheet1` , exponer el método a código VBA del libro y llamar al método desde código VBA del libro.
@@ -97,7 +99,7 @@ ms.locfileid: "92297939"
 
 1. Inicie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. En el menú **Archivo** , seleccione **Nuevo**y haga clic en **Proyecto**.
+2. En el menú **Archivo** , seleccione **Nuevo** y haga clic en **Proyecto**.
 
 3. En el panel de plantillas, expanda **Visual C#** y luego expanda **Office/SharePoint**.
 
@@ -111,7 +113,7 @@ ms.locfileid: "92297939"
 
      Se abre el **Asistente para proyectos de Visual Studio Tools para Office** .
 
-8. Seleccione **Copiar un documento existente**y, en el cuadro **Ruta de acceso completa del documento existente** , especifique la ubicación del libro **WorkbookWithVBA** que creó anteriormente. Si usa su propio libro habilitado para macros, especifique la ubicación de dicho libro.
+8. Seleccione **Copiar un documento existente** y, en el cuadro **Ruta de acceso completa del documento existente** , especifique la ubicación del libro **WorkbookWithVBA** que creó anteriormente. Si usa su propio libro habilitado para macros, especifique la ubicación de dicho libro.
 
 9. Haga clic en **Finalizar**
 
@@ -153,7 +155,7 @@ ms.locfileid: "92297939"
 
 ### <a name="to-add-a-method-to-the-sheet1-class"></a>Para agregar un método a la clase Sheet1
 
-1. En el **Explorador de soluciones**, haga clic con el botón derecho en **Sheet1.cs**y, a continuación, haga clic en **Ver código**.
+1. En el **Explorador de soluciones**, haga clic con el botón derecho en **Sheet1.cs** y, a continuación, haga clic en **Ver código**.
 
      Se abre el archivo **Sheet1.cs** en el editor de código.
 
@@ -161,7 +163,7 @@ ms.locfileid: "92297939"
 
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#2](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#2)]
 
-3. Agregue el siguiente método a la clase `Sheet1`. Este método invalida el método <xref:Microsoft.Office.Tools.Excel.WorksheetBase.GetAutomationObject%2A> para devolver la instancia actual de la clase `Sheet1` .
+3. Agrega el método siguiente a la clase `Sheet1`: Este método invalida el método <xref:Microsoft.Office.Tools.Excel.WorksheetBase.GetAutomationObject%2A> para devolver la instancia actual de la clase `Sheet1` .
 
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#3](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#3)]
 

@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: actualizar un gráfico en un documento mediante botones de radio'
+description: Obtenga información sobre cómo puede usar los botones de radio en una personalización de nivel de documento para Microsoft Word para ofrecer a los usuarios la opción de seleccionar estilos de gráfico en el documento.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f4b39949deb3bcbf3d9330ca8d820a5841b0f4c4
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: df2996d99e752fbe0f7f36bcab537ee8c19d4f06
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584300"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528385"
 ---
 # <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>Tutorial: actualizar un gráfico en un documento mediante botones de radio
   En este tutorial se demuestra cómo usar los botones de radio en una personalización de nivel de documento para Microsoft Office Word a fin de ofrecer a los usuarios la opción de seleccionar estilos de gráfico en el documento.
@@ -45,7 +47,7 @@ ms.locfileid: "91584300"
 
 - [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] o [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].
 
-## <a name="create-the-project"></a>Crear el proyecto
+## <a name="create-the-project"></a>Creación del proyecto
  El primer paso es crear un proyecto de tipo Documento de Word.
 
 ### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto
@@ -171,11 +173,11 @@ ms.locfileid: "91584300"
 
 ### <a name="to-add-the-user-control-your-document"></a>Para agregar el control de usuario al documento
 
-1. En el menú **Compilar**, haga clic en **Compilar solución**.
+1. En el menú **Compilar** , haga clic en **Compilar solución**.
 
      El control de usuario **ChartOptions** se agrega al **cuadro de herramientas**.
 
-2. En **Explorador de soluciones**, haga clic con el botón secundario en **ThisDocument. VB** o **ThisDocument.CS**y, a continuación, haga clic en **Ver diseñador**.
+2. En **Explorador de soluciones**, haga clic con el botón secundario en **ThisDocument. VB** o **ThisDocument.CS** y, a continuación, haga clic en **Ver diseñador**.
 
 3. Arrastre el `ChartOptions` control desde el **cuadro de herramientas** al documento.
 
@@ -186,7 +188,7 @@ ms.locfileid: "91584300"
 
 ### <a name="to-change-the-type-of-chart-that-is-displayed-in-the-document"></a>Para cambiar el tipo de gráfico que se muestra en el documento
 
-1. Agregue el siguiente controlador de eventos a la clase `ThisDocument`.
+1. Agrega el siguiente controlador de eventos a la clase `ThisDocument`.
 
      [!code-vb[Trin_VstcoreProgrammingControlsWord#15](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#15)]
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#15](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#15)]
@@ -213,7 +215,7 @@ ms.locfileid: "91584300"
 
 - Cambiar el formato por medio de la selección de un estilo de un cuadro combinado. Para obtener más información, vea [Tutorial: cambiar el formato de un documento mediante controles de casilla](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Tutoriales de uso de Word](../vsto/walkthroughs-using-word.md)
 - [Ejemplos y tutoriales de desarrollo de Office](../vsto/office-development-samples-and-walkthroughs.md)
 - [Limitaciones de los controles de Windows Forms en documentos de Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)

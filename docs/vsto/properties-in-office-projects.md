@@ -1,5 +1,7 @@
 ---
 title: Propiedades de los proyectos de Office
+description: Obtenga información sobre las propiedades que están disponibles para los proyectos de Office en Visual Studio a través de la ventana Propiedades.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9fc2a0774206eac0c9295a425d81555ffdd3cac8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cdc54de3935646e36f9d4f09727037de4c373c92
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62561374"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528032"
 ---
 # <a name="properties-in-office-projects"></a>Propiedades de los proyectos de Office
   Hay varias propiedades importantes que están disponibles para los proyectos de Office en Visual Studio. Se puede obtener acceso a estas propiedades en la ventana **Propiedades** .

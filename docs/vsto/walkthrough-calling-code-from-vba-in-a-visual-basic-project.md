@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: llamar a código desde VBA en un proyecto de Visual Basic'
+description: Obtenga información sobre cómo llamar a un método en una personalización de nivel de documento para Microsoft Word a partir de código de Visual Basic para Aplicaciones (VBA) en el documento.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ad50ed0f55a148a05c0fedc6fe0ccb0dd5b890b9
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 6016dbf53413f6e55c88edfe930af677472bdaf5
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298259"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527383"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>Tutorial: llamar a código desde VBA en un proyecto de Visual Basic
   Este tutorial muestra cómo llamar a un método en una personalización de nivel de documento para Microsoft Office Word desde el código de Visual Basic para Aplicaciones (VBA) del documento. El procedimiento implica tres pasos básicos: agregar un método a la clase de elemento host `ThisDocument` , exponer el método a código VBA y llamar al método desde código VBA del documento.
@@ -96,9 +98,9 @@ ms.locfileid: "92298259"
 
 1. Inicie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. En el menú **Archivo** , seleccione **Nuevo**y haga clic en **Proyecto**. Si su IDE está configurado para usar la configuración de desarrollo de Visual Basic, en el menú **Archivo** haga clic en **Nuevo proyecto**.
+2. En el menú **Archivo** , seleccione **Nuevo** y haga clic en **Proyecto**. Si su IDE está configurado para usar la configuración de desarrollo de Visual Basic, en el menú **Archivo** haga clic en **Nuevo proyecto**.
 
-3. En el panel de plantillas, expanda **Visual Basic**y luego expanda **Office/SharePoint**.
+3. En el panel de plantillas, expanda **Visual Basic** y luego expanda **Office/SharePoint**.
 
 4. Seleccione el nodo **Complementos de Office** .
 
@@ -110,7 +112,7 @@ ms.locfileid: "92298259"
 
      Se abre el **Asistente para proyectos de Visual Studio Tools para Office** .
 
-8. Seleccione **Copiar un documento existente**y, en el cuadro **Ruta de acceso completa del documento existente** , especifique la ubicación del documento **DocumentWithVBA** que creó anteriormente. Si usa su propio documento habilitado para macros, especifique la ubicación de dicho documento.
+8. Seleccione **Copiar un documento existente** y, en el cuadro **Ruta de acceso completa del documento existente** , especifique la ubicación del documento **DocumentWithVBA** que creó anteriormente. Si usa su propio documento habilitado para macros, especifique la ubicación de dicho documento.
 
 9. Haga clic en **Finalizar**
 
@@ -152,11 +154,11 @@ ms.locfileid: "92298259"
 
 ### <a name="to-add-a-method-to-the-thisdocument-class"></a>Para agregar un método a la clase ThisDocument
 
-1. En el **Explorador de soluciones**, haga clic con el botón derecho en **ThisDocument.vb**y, a continuación, haga clic en **Ver código**.
+1. En el **Explorador de soluciones**, haga clic con el botón derecho en **ThisDocument.vb** y, a continuación, haga clic en **Ver código**.
 
      Se abre el archivo **ThisDocument.vb** en el Editor de código.
 
-2. Agregue el siguiente método a la clase `ThisDocument`. Este método crea una tabla con dos filas y dos columnas al principio del documento. Los parámetros especifican el texto que se muestra en la primera fila. Más adelante en este tutorial, llamará a este método desde el código de VBA del documento.
+2. Agrega el método siguiente a la clase `ThisDocument`: Este método crea una tabla con dos filas y dos columnas al principio del documento. Los parámetros especifican el texto que se muestra en la primera fila. Más adelante en este tutorial, llamará a este método desde el código de VBA del documento.
 
      [!code-vb[Trin_CallingVBCustomizationFromVBA#1](../vsto/codesnippet/VisualBasic/CallingCodeFromVBA/ThisDocument.vb#1)]
 

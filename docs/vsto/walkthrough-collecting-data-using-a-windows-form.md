@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: recopilar datos con Windows Forms'
+description: Abra un Windows Form desde una personalización de nivel de documento para Microsoft Excel, recopile información del usuario y escriba esa información en una celda de la hoja de cálculo.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 893418ca5eb82e9466ea13a12088b38fd496e695
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 58d6f58f732d4a52aade6ff3678842900f1c29cd
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90842519"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527168"
 ---
 # <a name="walkthrough-collect-data-by-using-a-windows-form"></a>Tutorial: recopilar datos mediante Windows Forms
   En este tutorial se muestra cómo abrir un formulario de Windows Forms desde una personalización de nivel de documento de Microsoft Office Excel, cómo recopilar la información del usuario y cómo escribir dicha información en una celda de la hoja de cálculo.
@@ -39,12 +41,12 @@ ms.locfileid: "90842519"
 > [!NOTE]
 > Es posible que tu equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="create-a-new-project"></a>Crear un proyecto nuevo
+## <a name="create-a-new-project"></a>Creación de un proyecto
  En primer lugar, es necesario crear un proyecto de libro de Excel.
 
 ### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto
 
-1. Cree un proyecto de libro de Excel con el nombre **WinFormInput**y seleccione **Crear un nuevo documento** en el asistente. Para obtener más información, vea [Cómo: crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Cree un proyecto de libro de Excel con el nombre **WinFormInput** y seleccione **Crear un nuevo documento** en el asistente. Para obtener más información, vea [Cómo: crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      Visual Studio abre el nuevo libro de Excel en el diseñador y agrega el proyecto **WinFormInput** al **Explorador de soluciones**.
 
@@ -71,7 +73,7 @@ ms.locfileid: "90842519"
 
 2. En el menú **Proyecto** , haga clic en **Agregar formulario de Windows Forms**.
 
-3. Asigne un nombre al formulario **GetInputString.vb** o **GetInputString.cs**y, a continuación, haga clic en **Agregar**.
+3. Asigne un nombre al formulario **GetInputString.vb** o **GetInputString.cs** y, a continuación, haga clic en **Agregar**.
 
     El formulario se abrirá en el diseñador.
 
@@ -86,7 +88,7 @@ ms.locfileid: "90842519"
 
 #### <a name="to-display-the-form-and-collect-information"></a>Mostrar el formulario y recopilar la información
 
-1. Haga clic con el botón derecho en **ThisWorkbook.vb** o en **ThisWorkbook.cs** en el **Explorador de soluciones**y, a continuación, seleccione **Ver código**.
+1. Haga clic con el botón derecho en **ThisWorkbook.vb** o en **ThisWorkbook.cs** en el **Explorador de soluciones** y, a continuación, seleccione **Ver código**.
 
 2. En el controlador de eventos <xref:Microsoft.Office.Tools.Excel.Workbook.Open> de `ThisWorkbook`, agregue el siguiente código para declarar una variable del formulario `GetInputString` y hacer que se este se muestre.
 
@@ -107,7 +109,7 @@ ms.locfileid: "90842519"
 
 ### <a name="to-send-information-to-the-worksheet"></a>Enviar información a la hoja de cálculo
 
-1. Haga clic con el botón derecho en **GetInputString** , en el **Explorador de soluciones**y, a continuación, seleccione **Diseñador de vistas**.
+1. Haga clic con el botón derecho en **GetInputString** , en el **Explorador de soluciones** y, a continuación, seleccione **Diseñador de vistas**.
 
 2. Haga doble clic en el botón para abrir el archivo de código con el controlador de eventos <xref:System.Windows.Forms.Control.Click> del botón agregado.
 
@@ -136,7 +138,7 @@ ms.locfileid: "90842519"
 
 - Modificar la interfaz de usuario de una aplicación Microsoft Office a partir de una personalización de nivel de documento o un complemento de VSTO. Para obtener más información, consulte [Personalización](../vsto/office-ui-customization.md)de la interfaz de usuario de Office.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Desarrollo de soluciones de Office](../vsto/developing-office-solutions.md)
 - [Escribir código en soluciones de Office](../vsto/writing-code-in-office-solutions.md)
 - [Complementos de VSTO de programa](../vsto/programming-vsto-add-ins.md)

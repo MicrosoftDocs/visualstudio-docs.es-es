@@ -1,5 +1,7 @@
 ---
 title: Crear la primera personalización de nivel de documento para Excel
+description: Cree una personalización de nivel de documento para Microsoft Excel. Las características que se crean en este tipo de solución solo están disponibles cuando se abre un libro concreto.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b75bf6894bff4e5fa8d6ac17ed537f15041b3ede
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 4183e84a930957b7cf87a6cc1e6fabcb21420785
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585007"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527950"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>Tutorial: crear la primera personalización de nivel de documento para Excel
 
@@ -50,15 +52,15 @@ ms.locfileid: "91585007"
 
 - [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] o [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
-## <a name="create-the-project"></a>Crear el proyecto
+## <a name="create-the-project"></a>Creación del proyecto
 
 ### <a name="to-create-a-new-excel-workbook-project-in-visual-studio"></a>Para crear un nuevo proyecto de libro de Excel en Visual Studio
 
 1. Inicie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. En el menú **Archivo** , seleccione **Nuevo**y haga clic en **Proyecto**.
+2. En el menú **Archivo** , seleccione **Nuevo** y haga clic en **Proyecto**.
 ::: moniker range="vs-2017"
-3. En el panel de plantillas, expanda **Visual C#** o **Visual Basic**y luego expanda **Office/SharePoint**.
+3. En el panel de plantillas, expanda **Visual C#** o **Visual Basic** y luego expanda **Office/SharePoint**.
 
 4. En el nodo **Office/SharePoint** expandido, seleccione el nodo **Complementos de VSTO** .
 
@@ -68,18 +70,18 @@ ms.locfileid: "91585007"
 
 7. Haga clic en **OK**.
 
-8. Seleccione **crear un nuevo documento** en el **Asistente para proyectos de Visual Studio Tools de Office**y haga clic en **Aceptar**.
+8. Seleccione **crear un nuevo documento** en el **Asistente para proyectos de Visual Studio Tools de Office** y haga clic en **Aceptar**.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 3. En el cuadro de diálogo **crear un nuevo proyecto** , seleccione el proyecto de **libro de Excel VSTO** .
 
      [!INCLUDE[new-project-dialog-search](../vsto/includes/new-project-dialog-search-md.md)]
 
-4. Haga clic en **Siguiente**.
+4. Haga clic en **Next**.
 
 5. Escriba **FirstWorkbookCustomization** en el cuadro **nombre** del cuadro de diálogo **configurar el nuevo proyecto** y haga clic en **crear**.
 
-6. Seleccione **crear un nuevo documento** en el **Asistente para proyectos de Visual Studio Tools de Office**y haga clic en **Aceptar**.
+6. Seleccione **crear un nuevo documento** en el **Asistente para proyectos de Visual Studio Tools de Office** y haga clic en **Aceptar**.
 ::: moniker-end
    - [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] crea el proyecto **FirstWorkbookCustomization** y agrega los siguientes archivos al proyecto.
 
@@ -115,7 +117,7 @@ ms.locfileid: "91585007"
 
 ### <a name="to-add-text-to-a-worksheet-by-using-the-designer"></a>Para agregar texto a la hoja de cálculo mediante el diseñador
 
-1. En la hoja de cálculo que está abierta en el diseñador, seleccione la celda **a1**y escriba el texto siguiente.
+1. En la hoja de cálculo que está abierta en el diseñador, seleccione la celda **a1** y escriba el texto siguiente.
 
      **Este texto se agregó mediante el diseñador.**
 
@@ -132,7 +134,7 @@ ms.locfileid: "91585007"
 
 ### <a name="to-add-a-second-line-of-text-to-the-worksheet-by-using-code"></a>Para agregar una segunda línea de texto a la hoja de cálculo mediante código
 
-1. En **Explorador de soluciones**, haga clic con el botón secundario en **Hoja1**y, a continuación, haga clic en **Ver código**.
+1. En **Explorador de soluciones**, haga clic con el botón secundario en **Hoja1** y, a continuación, haga clic en **Ver código**.
 
      El archivo de código se abre en Visual Studio.
 
@@ -183,7 +185,7 @@ ms.locfileid: "91585007"
 
 - Implementar personalizaciones de nivel de documento para Excel: [implementar una solución de Office](../vsto/deploying-an-office-solution.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Soluciones de Excel](../vsto/excel-solutions.md)

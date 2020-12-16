@@ -1,5 +1,7 @@
 ---
 title: Trabajar con documentos
+description: Obtenga información sobre los procedimientos paso a paso y ejemplos de código para usar el modelo de objetos de Microsoft Word para trabajar con documentos en proyectos de Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1b21f8c84082e19c1d9f43d6a2ae36d158a15c01
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a8b994ed88c6499d17cc0cf241e60a17f235b97
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "63008695"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527022"
 ---
 # <a name="work-with-documents"></a>Trabajar con documentos
   En los temas de esta sección se proporcionan procedimientos detallados y ejemplos de código para usar el modelo de objetos de Microsoft Office Word de modo que funcione con documentos en proyectos de Office.

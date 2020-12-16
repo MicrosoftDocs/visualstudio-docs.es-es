@@ -1,5 +1,7 @@
 ---
 title: Personalizaciones de nivel de documento de programa
+description: Obtenga información acerca de cómo extender Microsoft Word o Excel mediante una personalización de nivel de documento para que pueda realizar varias tareas.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -27,12 +29,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7d1908f72bce01956bbb2eeb62bb9bbc30a64b0d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 58dd8e1803fc0bd06f5c2295b29e9586e1f8eb68
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254020"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527526"
 ---
 # <a name="program-document-level-customizations"></a>Personalizaciones de nivel de documento de programa
   Al ampliar Microsoft Office Word o Microsoft Office Excel mediante una personalización de nivel de documento, puede realizar las siguientes tareas:

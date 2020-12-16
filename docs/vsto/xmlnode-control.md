@@ -1,5 +1,7 @@
 ---
 title: XMLNode (control)
+description: Obtenga información sobre que el control XMLNode es un objeto de nodo XML asignado que expone eventos y se puede enlazar a datos.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a8bd5c4612b59f909ae623eb4092a209798f98c5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 58f9c5db883f55c00236bc202797dcf2ec3003f6
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62975718"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528344"
 ---
 # <a name="xmlnode-control"></a>XMLNode (control)
   **Importante** La información configurada en este tema con respecto a Microsoft Word se presenta exclusivamente para la ventaja y el uso de las personas y organizaciones que se encuentran fuera del Estados Unidos y de sus territorios, o bien el desarrollo de programas que se ejecutan en, productos de Microsoft Word con licencia de Microsoft antes de la 2010 de enero, cuando Microsoft quitó una implementación de funcionalidad específica relacionada con XML personalizado de Es posible que la información relativa a Microsoft Word no sea leída ni utilizada por personas u organizaciones en el Estados Unidos ni en sus territorios que utilicen o desarrollen programas que se ejecutan en, productos de Microsoft Word con licencia de Microsoft a partir del 10 de enero de 2010; Estos productos no se comportarán igual que los productos con licencia antes de esa fecha o adquiridos y con licencia para usarlos fuera del Estados Unidos.
@@ -31,7 +33,7 @@ ms.locfileid: "62975718"
 ## <a name="bind-data-to-the-control"></a>Enlazar datos al control
  Un <xref:Microsoft.Office.Tools.Word.XMLNode> control admite el enlace de datos simple. El nodo XML se debe enlazar a un origen de datos utilizando la <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> propiedad. Si los datos del conjunto de datos enlazado se actualizan, el control <xref:Microsoft.Office.Tools.Word.XMLNode> reflejará los cambios.
 
-## <a name="formatting"></a>Formato
+## <a name="formatting"></a>Aplicación de formato
  El formato que se puede aplicar a un <xref:Microsoft.Office.Interop.Word.XMLNode> objeto se puede aplicar a un <xref:Microsoft.Office.Tools.Word.XMLNode> control. Esto incluye las fuentes, los estilos de subrayado y los estilos de carácter.
 
 ## <a name="events"></a>Eventos

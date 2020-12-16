@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: restaurar selecciones después de realizar búsquedas mediante programación'
+description: Obtenga información sobre cómo puede usar Visual Studio para restaurar selecciones mediante programación después de realizar búsquedas en un documento de Microsoft Word.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 452e483600f6da0eacd5337b42c728145bcfe8aa
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: d396602a5d2bc0c3a90d32256bf226348abff3f3
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584786"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528277"
 ---
 # <a name="how-to-programmatically-restore-selections-after-searches"></a>Cómo: restaurar selecciones después de realizar búsquedas mediante programación
   Si encuentra y reemplaza el texto de un documento, es posible que desee restaurar la selección original del usuario una vez completada la búsqueda.
@@ -52,7 +54,7 @@ ms.locfileid: "91584786"
  [!code-vb[Trin_VstcoreWordAutomation#82](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#82)]
  [!code-csharp[Trin_VstcoreWordAutomation#82](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#82)]
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Cómo: buscar y reemplazar texto en documentos mediante programación](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)
 - [Cómo: establecer opciones de búsqueda en Word mediante programación](../vsto/how-to-programmatically-set-search-options-in-word.md)
 - [Cómo: recorrer los elementos encontrados en documentos mediante programación](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)

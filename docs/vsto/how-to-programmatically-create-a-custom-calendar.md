@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: crear un calendario personalizado mediante programación'
+description: Use este ejemplo para crear mediante programación una nueva carpeta de calendario denominada PersonalCalendar y, a continuación, cree un nuevo elemento de cita y agréguelo a la carpeta Calendar.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,15 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aab9e14c7fa4b4c70b2e61eca382af2ce787148c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6d0a76189e96a6551408abe49b6e08a26c91ffa8
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546060"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527838"
 ---
 # <a name="how-to-programmatically-create-a-custom-calendar"></a>Cómo: crear un calendario personalizado mediante programación
-  En este ejemplo se crea una nueva carpeta de calendario denominada **PersonalCalendar**y, a continuación, se crea un nuevo elemento de cita y se agrega a la carpeta Calendar. Después, el código muestra la carpeta calendario.
+  En este ejemplo se crea una nueva carpeta de calendario denominada **PersonalCalendar** y, a continuación, se crea un nuevo elemento de cita y se agrega a la carpeta Calendar. Después, el código muestra la carpeta calendario.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 

@@ -1,5 +1,7 @@
 ---
 title: Trabajar con rangos
+description: Obtenga información sobre que las clases NamedRange y Range contienen los métodos y las propiedades que se usan para realizar tareas con rangos.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d64e774fe418bb7373a6e632b1e8c2cebecc2854
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 168774f031e992db62b4173bd8d27652aa21b82f
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62815029"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526910"
 ---
 # <a name="work-with-ranges"></a>Trabajar con rangos
   Las clases <xref:Microsoft.Office.Tools.Excel.NamedRange> y <xref:Microsoft.Office.Interop.Excel.Range> contienen los métodos y las propiedades que se usan para llevar a cabo tareas con rangos.

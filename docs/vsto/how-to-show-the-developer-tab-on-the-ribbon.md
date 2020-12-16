@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: Mostrar la pestaña programador en la cinta de opciones'
+description: Obtenga información sobre cómo puede usar Visual Studio para mostrar mediante programación la pestaña Desarrollador en la cinta de opciones en un documento de Microsoft Word.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 41070c92d0c27c1ee8fbf480f7461c22421b8fdc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4dc38b941d27cab0653b923ddd03ba8b78eeab58
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545852"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528144"
 ---
 # <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Cómo: Mostrar la pestaña programador en la cinta de opciones
   Para tener acceso a la pestaña **desarrollador** de la cinta de opciones de una aplicación de Office, debe configurarla para mostrar esa pestaña, ya que no aparece de forma predeterminada. Por ejemplo, debe mostrar esa pestaña si desea agregar un <xref:Microsoft.Office.Tools.Word.GroupContentControl> a una personalización de nivel de documento para Word.
@@ -52,7 +54,7 @@ ms.locfileid: "85545852"
 
      ![El botón Opciones de Outlook 2013 Preview](../vsto/media/vsto-office2013-optionsbutton.png "El botón Opciones de Outlook 2013 Preview")
 
-3. En el cuadro de diálogo Opciones de _applicationName_, elija el botón **personalizar la cinta** de**Opciones** .
+3. En el cuadro de diálogo Opciones de _applicationName_, elija el botón **personalizar la cinta** de **Opciones** .
 
      La siguiente ilustración muestra el cuadro de diálogo Opciones y el botón **personalizar la cinta** de **opciones** en Excel 2010. La ubicación de este botón es similar en el resto de las aplicaciones que se enumeran en la sección "Se aplica a" cerca de la parte superior de este tema.
 
@@ -66,5 +68,5 @@ ms.locfileid: "85545852"
 
 5. Elija el botón **Aceptar** para cerrar el cuadro de diálogo **Opciones** .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Personalización de la interfaz de usuario de Office](../vsto/office-ui-customization.md)

@@ -1,5 +1,7 @@
 ---
 title: Referencia administrada (desarrollo de Office en Visual Studio)
+description: Obtenga información sobre la documentación de referencia de API para los espacios de nombres y los tipos que se usan en los proyectos de Office destinados a la .NET Framework.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 08/14/2019
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 20ae614ceef76a0ab5789c04212a3facfa571662
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 044ba7e4858a87dea1894f647f110d62b840aa42
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583754"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528509"
 ---
 # <a name="managed-reference-office-development-in-visual-studio"></a>Referencia administrada (desarrollo de Office en Visual Studio)
   Esta sección contiene documentación de referencia de API para los espacios de nombres y los tipos que se utilizan en los proyectos de Office que abordan [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o [!INCLUDE[net_v45](includes/net-v45-md.md)]. Para obtener documentación de referencia de API sobre los espacios de nombres y los tipos que se usan en los proyectos de Office destinados a la .NET Framework 3,5, vea la siguiente sección de referencia en la documentación de Visual Studio: [referencia administrada (desarrollo de Office en Visual Studio)](managed-reference-office-development-in-visual-studio.md).
@@ -71,7 +73,7 @@ ms.locfileid: "91583754"
 
  Contiene las clases de la tarea MSBuild que se usan para crear proyectos de Office.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Información general de Visual Studio Tools para Office Runtime](visual-studio-tools-for-office-runtime-overview.md)
 - [Introducción &#40;desarrollo de Office en Visual Studio&#41;](getting-started-office-development-in-visual-studio.md)
 - [Ejemplos y tutoriales de desarrollo de Office](office-development-samples-and-walkthroughs.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: crear elementos de carpeta personalizados mediante programación'
+description: Obtenga información sobre cómo puede crear elementos de carpeta personalizados mediante programación en Microsoft Outlook mediante Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ author: John-Hart
 ms.author: johnhart
 ms.workload:
 - office
-ms.openlocfilehash: 034131f19c141f81922c843be0eb49e640dee858
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: f149758665e5d7a7cdf7f4edd5d926e1de632dca
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399216"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527789"
 ---
 # <a name="how-to-programmatically-create-custom-folder-items"></a>Cómo: crear elementos de carpeta personalizados mediante programación
   En este ejemplo se crea una nueva carpeta en Microsoft Office Outlook. El nombre del usuario que ha iniciado sesión se usa para el nombre de la carpeta.

@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: recuperar una carpeta por nombre mediante programación'
+description: Obtenga información sobre cómo puede usar Visual Studio para recuperar mediante programación una carpeta por nombre y, a continuación, mostrar el contenido de la carpeta.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 901de848b22f344ded2d71b11e9859917b8382d4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4e615897fedcbfa41ad7958e93354718d9ccfbc
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547113"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528578"
 ---
 # <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>Cómo: recuperar una carpeta por nombre mediante programación
   En este ejemplo se obtiene una referencia a una carpeta personalizada con nombre y, a continuación, se muestra el contenido de la carpeta.
@@ -32,7 +34,7 @@ ms.locfileid: "85547113"
 
 - Una carpeta denominada TestFolder.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Trabajar con carpetas](../vsto/working-with-folders.md)
 - [Cómo: buscar en una carpeta específica mediante programación](../vsto/how-to-programmatically-search-within-a-specific-folder.md)
 - [Cómo: buscar un contacto específico mediante programación](../vsto/how-to-programmatically-search-for-a-specific-contact.md)

@@ -1,5 +1,7 @@
 ---
 title: Información general sobre los controles de Windows Forms en documentos de Office
+description: Aprenda cómo Windows Forms controles son objetos con los que pueden interactuar los usuarios para escribir o manipular datos.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -27,12 +29,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a101f22bccb3624eccff1edcea502c9350991392
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0309ea22444062b117d3684e32b56960585aa184
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254911"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527048"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Información general sobre los controles de Windows Forms en documentos de Office
   Los controles de Windows Forms son objetos con los que pueden interactuar los usuarios para escribir o manipular datos. En proyectos de nivel de documento para Microsoft Office Excel y Microsoft Office Word, puede agregar controles de Windows Forms al documento o al libro en su proyecto en tiempo de ejecución, o agregar mediante programación estos controles en tiempo de diseño. Puede agregar estos controles mediante programación a cualquier documento o hoja de cálculo abierto en tiempo de ejecución en un complemento de VSTO para Excel o Word.
@@ -146,7 +148,7 @@ En un formulario de Windows Form.
 ### <a name="add-components-at-design-time"></a>Agregar componentes en tiempo de diseño
  Algunos controles o componentes no están visibles en el documento y, en su lugar, se muestran en una bandeja de componentes. Visual Studio proporciona una bandeja de componentes para cada ventana de documento. La bandeja de componentes aparece en la pantalla solo si existen componentes en el documento.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Controles en documentos de Office](../vsto/controls-on-office-documents.md)
 - [Agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [Información general sobre elementos y controles host](../vsto/host-items-and-host-controls-overview.md)

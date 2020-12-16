@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: leer y escribir en propiedades de documento'
+description: Obtenga información sobre cómo puede usar Visual Studio para obtener o establecer propiedades de documento en Microsoft Excel y Microsoft Word.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: adad9ec70290f426ce7c3c59ad13ff8636a69463
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 60ee5ccebc9c6c38369ed707c9d2043ffc1995c9
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541328"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528209"
 ---
 # <a name="how-to-read-from-and-write-to-document-properties"></a>Cómo: leer y escribir en propiedades de documento
   Puede almacenar propiedades de documento junto con un documento. Las aplicaciones de Office proporcionan una serie de propiedades integradas, como author, title y subject. En este tema se muestra cómo establecer las propiedades de documento en Microsoft Office Excel y Microsoft Office Word.

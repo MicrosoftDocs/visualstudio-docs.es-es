@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: establecer opciones de búsqueda en Word mediante programación'
+description: Obtenga información sobre cómo puede usar Visual Studio para establecer mediante programación opciones de búsqueda para selecciones en Microsoft Word.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 434dfc85ed6c4e03c7c610a497bd063ce1826c62
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 45af6a801a146838919402c31be502cf4825e718
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546996"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528558"
 ---
 # <a name="how-to-programmatically-set-search-options-in-word"></a>Cómo: establecer opciones de búsqueda en Word mediante programación
   Hay dos maneras de establecer las opciones de búsqueda para las selecciones en Microsoft Office documentos de Word:
@@ -47,12 +49,12 @@ ms.locfileid: "85546996"
 
 ### <a name="to-set-search-options-using-execute-method-arguments"></a>Para establecer las opciones de búsqueda mediante los argumentos del método Execute
 
-1. Pase los criterios de búsqueda como parámetros del <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> método para buscar hacia delante a través de una selección para **Buscar**el texto.
+1. Pase los criterios de búsqueda como parámetros del <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> método para buscar hacia delante a través de una selección para **Buscar** el texto.
 
      [!code-vb[Trin_VstcoreWordAutomation#77](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#77)]
      [!code-csharp[Trin_VstcoreWordAutomation#77](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#77)]
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Cómo: buscar y reemplazar texto en documentos mediante programación](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)
 - [Cómo: recorrer los elementos encontrados en documentos mediante programación](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)
 - [Cómo: restaurar selecciones después de realizar búsquedas mediante programación](../vsto/how-to-programmatically-restore-selections-after-searches.md)

@@ -1,5 +1,7 @@
 ---
 title: Cambiar el formato de la hoja de cálculo mediante controles CheckBox
+description: Obtenga información sobre cómo puede usar las herramientas de desarrollo de Office en Visual Studio para crear y agregar código al proyecto.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 42d2c46f6fd61d74476933cfda3dea8c62b00c95
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28b9f000c2e8517304387e2b203dfa7888b33d64
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328699"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527217"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>Tutorial: cambiar el formato de una hoja de cálculo mediante controles CheckBox
   En este tutorial se muestran los aspectos básicos del uso de las casillas en una Microsoft Office hoja de cálculo de Excel para cambiar el formato. Usará las herramientas de desarrollo de Office en Visual Studio para crear y agregar código al proyecto. Para ver el resultado como un ejemplo completado, vea el ejemplo de controles de Excel en [ejemplos y tutoriales de desarrollo de Office](../vsto/office-development-samples-and-walkthroughs.md).
@@ -44,7 +46,7 @@ ms.locfileid: "67328699"
 
 - [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] o [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
-## <a name="create-the-project"></a>Crear el proyecto
+## <a name="create-the-project"></a>Creación del proyecto
  En este paso, creará un proyecto de libro de Excel mediante Visual Studio.
 
 ### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto
@@ -83,11 +85,11 @@ ms.locfileid: "67328699"
     |Propiedad|Value|
     |--------------|-----------|
     |**Nombre**|**applyUnderlineFont**|
-    |**Texto**|**Raya**|
+    |**Texto**|**Subrayado**|
 
 7. Active los tres controles de casilla mientras mantiene presionada la tecla **Ctrl** .
 
-8. En el grupo organizar de la pestaña formato de Excel, haga clic en **alinear**y, a continuación, haga clic en **alinear**a la izquierda.
+8. En el grupo organizar de la pestaña formato de Excel, haga clic en **alinear** y, a continuación, haga clic en **alinear** a la izquierda.
 
      Los tres controles de casilla están alineados en el lado izquierdo, en la posición del primer control seleccionado.
 
@@ -122,7 +124,7 @@ ms.locfileid: "67328699"
 
 ### <a name="to-change-formatting-when-a-check-box-is-selected"></a>Para cambiar el formato cuando se activa una casilla
 
-1. Haga clic con el botón secundario en **Hoja1**y, a continuación, haga clic en **Ver código** en el menú contextual.
+1. Haga clic con el botón secundario en **Hoja1** y, a continuación, haga clic en **Ver código** en el menú contextual.
 
 2. Agregue el código siguiente al <xref:System.Windows.Forms.Control.Click> controlador de eventos de la `applyBoldFont` casilla:
 

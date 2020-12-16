@@ -1,5 +1,7 @@
 ---
 title: Buscar una dirección de correo electrónico en contactos mediante programación
+description: Obtenga información sobre cómo puede usar Visual Studio para buscar una dirección de correo electrónico en los contactos de Microsoft Outlook mediante programación.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a4a9d52ae16b77b40461a314c6008f8cdd741bcd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7fa6578612fb81d9d025e613697c4342bac11bee
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537649"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528222"
 ---
 # <a name="how-to-programmatically-search-for-an-email-address-in-contacts"></a>Cómo: buscar una dirección de correo electrónico en contactos mediante programación
   En este ejemplo se busca en una carpeta de contactos los contactos que tienen el nombre de dominio **ejemplo.com** en sus direcciones de correo.

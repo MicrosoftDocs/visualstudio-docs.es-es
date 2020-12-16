@@ -1,5 +1,7 @@
 ---
 title: Diseñador de la cinta de opciones
+description: Obtenga información sobre cómo puede usar el diseñador de la cinta de opciones para agregar pestañas, grupos y controles personalizados a la cinta de opciones de una aplicación Microsoft Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -26,12 +28,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e1c2941b0c088a832540fd3380c993fe2c380b44
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b72270da75d27ed2837540369f74e9c5e87b417b
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985624"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528003"
 ---
 # <a name="ribbon-designer"></a>Diseñador de la cinta de opciones
   El diseñador de la cinta de opciones es un lienzo de diseño visual. Use el diseñador de la cinta de opciones para agregar pestañas, grupos y controles personalizados a la cinta de opciones de una aplicación Microsoft Office.
@@ -71,7 +73,7 @@ ms.locfileid: "72985624"
 
 - En **Explorador de soluciones**, seleccione el archivo de código de la cinta de opciones y, a continuación, haga clic en **Diseñador** en el menú **Ver** .
 
-  El diseñador de la cinta de opciones contiene una ficha y un grupo predeterminados. Puede quitar la pestaña y el grupo predeterminados del diseñador de la cinta de opciones. Para quitar el grupo predeterminado, haga clic con el botón secundario en **Grupo1**y, a continuación, haga clic en **eliminar**. Para quitar la pestaña predeterminada, haga clic con el botón secundario en un área vacía de la superficie de diseño y, a continuación, haga clic en **quitar la pestaña de la cinta**.
+  El diseñador de la cinta de opciones contiene una ficha y un grupo predeterminados. Puede quitar la pestaña y el grupo predeterminados del diseñador de la cinta de opciones. Para quitar el grupo predeterminado, haga clic con el botón secundario en **Grupo1** y, a continuación, haga clic en **eliminar**. Para quitar la pestaña predeterminada, haga clic con el botón secundario en un área vacía de la superficie de diseño y, a continuación, haga clic en **quitar la pestaña de la cinta**.
 
   También puede Agregar pestañas, grupos y controles personalizados al diseñador de la cinta de opciones. Puede encontrar estos controles en el **cuadro de herramientas**, en el grupo controles de la cinta de opciones de **Office** . Hay tres maneras de agregar controles desde el grupo **controles** de la cinta de opciones de Office al diseñador de la cinta de opciones:
 
@@ -103,7 +105,7 @@ ms.locfileid: "72985624"
 
 - Haga clic con el botón secundario en el diseñador de la cinta y, a continuación, haga clic en **Agregar pestaña de cinta**.
 
-- Abra el **Editor de la colección de pestañas**y haga clic en **Agregar**.
+- Abra el **Editor de la colección de pestañas** y haga clic en **Agregar**.
 
    Para abrir el **Editor de la colección de pestañas**, en la ventana **propiedades** , seleccione la propiedad **Tabs** y, a continuación, haga clic en el botón de puntos suspensivos ASP.net de la ![elipse de Mobile Designer](../sharepoint/media/mwellipsis.gif "Elipse del Diseñador de ASP.NET Mobile").
 
@@ -139,11 +141,11 @@ ms.locfileid: "72985624"
 |Control|Descripción|
 |-------------|-----------------|
 |**Box**|Contenedor que organiza los controles de un grupo. Puede agregar cualquier control a un cuadro excepto un separador, un grupo o una pestaña. Un cuadro puede ser horizontal o vertical.|
-|**Botón**|Un botón que inicia una acción. Puede Agregar un botón a un grupo, un grupo de botones, una lista desplegable, una galería, un menú o un botón de expansión.|
+|**Button**|Un botón que inicia una acción. Puede Agregar un botón a un grupo, un grupo de botones, una lista desplegable, una galería, un menú o un botón de expansión.|
 |**ButtonGroup**|Un grupo que contiene uno o varios botones, botones de alternancia, menús, botones de expansión y galerías. Puede Agregar un grupo de botones a un grupo o un menú.|
 |**CheckBox**|Cuadro que se selecciona o se desactiva para activar o desactivar una opción.|
 |**ComboBox**|Cuadro de edición con un cuadro de lista asociado. Los usuarios pueden escribir o seleccionar su elección. El cuadro muestra la selección actual. Utilice la <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Items%2A> propiedad para agregar y quitar elementos en tiempo de ejecución antes o después de cargar la cinta de opciones en la aplicación de Office.|
-|**DropDown**|Una lista de elementos que el usuario puede seleccionar. El usuario no puede escribir un nuevo elemento en una lista desplegable.<br /><br /> Utilice la <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Items%2A> propiedad para agregar elementos a la lista. Puede Agregar y quitar elementos en tiempo de ejecución.<br /><br /> Utilice la <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Buttons%2A> propiedad para agregar botones a la lista. Sin embargo, no puede agregar ni quitar botones en tiempo de ejecución después de cargar la cinta de opciones en la aplicación de Office.|
+|**Plegable**|Una lista de elementos que el usuario puede seleccionar. El usuario no puede escribir un nuevo elemento en una lista desplegable.<br /><br /> Utilice la <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Items%2A> propiedad para agregar elementos a la lista. Puede Agregar y quitar elementos en tiempo de ejecución.<br /><br /> Utilice la <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Buttons%2A> propiedad para agregar botones a la lista. Sin embargo, no puede agregar ni quitar botones en tiempo de ejecución después de cargar la cinta de opciones en la aplicación de Office.|
 |**EditBox**|Cuadro en el que el usuario puede escribir texto.|
 |**Galería**|Menú que presenta una matriz o cuadrícula de opciones visuales desde las que los usuarios pueden seleccionar. Puede controlar el diseño de las selecciones en el menú. Use las <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> propiedades y <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> para especificar el número de filas y columnas que mostrarán los elementos y botones de la galería.|
 |**Label**|Texto que puede usar para identificar controles en la cinta de opciones.|
@@ -180,7 +182,7 @@ ms.locfileid: "72985624"
 |Mueva un control antes del control anterior en la lista.|**Ctrl** + **Subir**<br /><br /> **Ctrl** + **Izquierda**|
 |Mueve un control después del siguiente control de la lista.|**Ctrl** + **Abajo**<br /><br /> **Ctrl** + **Derecha**|
 |Mueva la selección de un control a otro en el mismo grupo. En un panel desplegable, desplazarse entre el control primario y los controles del panel desplegable.|**Up** (Arriba)<br /><br /> **Bajar**|
-|Recorrer en iteración hacia delante todos los controles.|**Pestaña**|
+|Recorrer en iteración hacia delante todos los controles.|**Tabulador**|
 |Iterar hacia atrás a través de todos los controles.|**Mayús**+**Tabulador**|
 |Eliminar el control o conjunto de controles seleccionado.|**Eliminar**|
 |Copiar los controles seleccionados.|**Ctrl** + **C**|
@@ -199,7 +201,7 @@ ms.locfileid: "72985624"
 |Seleccione el primer control del panel desplegable si el panel desplegable está abierto.|**Right**|
 |Cerrar un panel desplegable.|**Esc**|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Información general sobre la cinta](../vsto/ribbon-overview.md)
 - [Ribbon XML](../vsto/ribbon-xml.md)
