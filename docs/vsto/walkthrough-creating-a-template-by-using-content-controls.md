@@ -1,5 +1,6 @@
 ---
 title: 'Tutorial: crear una plantilla mediante controles de contenido'
+description: Obtenga información sobre cómo crear una personalización de nivel de documento que use controles de contenido para crear contenido estructurado y reutilizable en una plantilla de Microsoft Word.
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 30f2443c724d547afe3c510e64f2c50fd9dd4db9
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 2dd7e75048a84a4e235390b99d17d48dfad039ec
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585033"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524987"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>Tutorial: crear una plantilla mediante controles de contenido
   Este tutorial muestra cómo crear una personalización de nivel de documento que usa controles de contenido para crear contenido estructurado y reutilizable en una plantilla de Microsoft Office Word.
@@ -68,7 +69,7 @@ ms.locfileid: "91585033"
 
 1. En la plantilla de Word que se hospeda en el [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Diseñador de, en la cinta de opciones, haga clic en la pestaña **Insertar** .
 
-2. En el grupo **tablas** , haga clic en **tabla**e inserte una tabla con dos columnas y cuatro filas.
+2. En el grupo **tablas** , haga clic en **tabla** e inserte una tabla con dos columnas y cuatro filas.
 
 3. Escriba texto en la primera columna de modo que se parezca a la siguiente columna:
 
@@ -109,7 +110,7 @@ ms.locfileid: "91585033"
 
 2. En la cinta de opciones, haga clic en la pestaña **Insertar** .
 
-3. En el grupo **tablas** , haga clic en **tabla**e inserte una tabla con dos columnas y tres filas.
+3. En el grupo **tablas** , haga clic en **tabla** e inserte una tabla con dos columnas y tres filas.
 
 4. Escriba texto en la primera columna de modo que se parezca a la siguiente columna:
 
@@ -138,7 +139,7 @@ ms.locfileid: "91585033"
 
 ### <a name="to-modify-the-ui-of-the-content-controls-programmatically"></a>Para modificar la interfaz de usuario de los controles de contenido mediante programación
 
-1. En **Explorador de soluciones**, haga clic con el botón secundario en **ThisDocument.CS** o **ThisDocument. VB**y, a continuación, haga clic en **Ver código**.
+1. En **Explorador de soluciones**, haga clic con el botón secundario en **ThisDocument.CS** o **ThisDocument. VB** y, a continuación, haga clic en **Ver código**.
 
 2. Agregue el siguiente código a la clase `ThisDocument` . Este código declara varios objetos que usará más adelante en este tutorial.
 
@@ -235,7 +236,7 @@ ms.locfileid: "91585033"
 
 - Enlazar controles de contenido a elementos XML (también llamados elementos XML personalizados) que están insertados en un documento. Para obtener más información, vea [Tutorial: enlazar controles de contenido a elementos XML personalizados](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Automatizar Word con objetos extendidos](../vsto/automating-word-by-using-extended-objects.md)
 - [Controles de contenido](../vsto/content-controls.md)
 - [Cómo: agregar controles de contenido a documentos de Word](../vsto/how-to-add-content-controls-to-word-documents.md)

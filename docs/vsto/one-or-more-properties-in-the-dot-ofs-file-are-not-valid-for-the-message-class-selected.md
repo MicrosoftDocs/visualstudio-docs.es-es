@@ -1,5 +1,7 @@
 ---
 title: Propiedades no válidas en el archivo. OFS para la clase de mensaje "
+description: Obtenga información sobre cómo corregir un error que se produce cuando una o varias propiedades del archivo. OFS no son válidas para la clase de mensaje seleccionada.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 66e8ecacffb58e945a3f80d03f47edc1329668d1
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: b655a7bb6ab4b9ab971c0edd775aa8f29150dead
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584664"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525089"
 ---
 # <a name="invalid-properties-in-the-ofs-file-for-the-message-class"></a>Propiedades no válidas en el archivo. OFS para la clase de mensaje
 
@@ -33,5 +35,5 @@ Por ejemplo, puede seleccionar **Tarea (IPM.Tarea)** en la página final del asi
 
 - En el diseñador de formularios de Outlook, quite los campos que no sean compatibles con las clases de mensaje. Quite los campos que planea seleccionar en la página final del asistente **nueva región de formulario** .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Tutorial: importar un área de formulario diseñada en Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)

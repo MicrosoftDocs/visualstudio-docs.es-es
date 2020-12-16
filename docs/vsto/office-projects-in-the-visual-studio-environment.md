@@ -1,5 +1,7 @@
 ---
 title: Proyectos de Office en el entorno de Visual Studio
+description: Obtenga información sobre cómo los proyectos de Microsoft Office tienen una experiencia de desarrollo similar a la de otros tipos de proyectos de Visual Studio, como los proyectos de Windows Forms.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -41,12 +43,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 65f3a3abfe7e49872c7131a247d74612200bf42a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0e183d5aca3fa856f45f322c2b79a76524b28005
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62978063"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525160"
 ---
 # <a name="office-projects-in-the-visual-studio-environment"></a>Proyectos de Office en el entorno de Visual Studio
   Los proyectos de Microsoft Office tienen una experiencia de desarrollo que es similar a otros tipos de proyectos en Visual Studio, como los proyectos de Windows Forms. Al crear o abrir un proyecto de Office, los elementos del proyecto aparecen en el **Explorador de soluciones**. Para los proyectos en el nivel de documento, el documento (es decir, el documento de Word o el libro de Excel) se abre en Visual Studio y se comporta como un diseñador visual.
@@ -64,14 +66,14 @@ ms.locfileid: "62978063"
 
   En un proyecto de complemento VSTO, el **Explorador de soluciones** muestra los siguientes elementos predeterminados:
 
-- El nodo de la aplicación. Este nodo tiene el mismo nombre que la aplicación host, como **Word**, **Excel**u **Outlook**. El nodo de la aplicación contiene el archivo de código ThisAddIn. También proporciona la propiedad **Espacio de nombres para el elemento host** . Para obtener más información sobre esta propiedad, vea [propiedades en proyectos de Office](../vsto/properties-in-office-projects.md).
+- El nodo de la aplicación. Este nodo tiene el mismo nombre que la aplicación host, como **Word**, **Excel** u **Outlook**. El nodo de la aplicación contiene el archivo de código ThisAddIn. También proporciona la propiedad **Espacio de nombres para el elemento host** . Para obtener más información sobre esta propiedad, vea [propiedades en proyectos de Office](../vsto/properties-in-office-projects.md).
 
 - El archivo de código ThisAddIn. Este archivo contiene la clase `ThisAddIn` generada para el complemento VSTO. Para obtener más información acerca de esta clase, vea [programas de complementos de VSTO](../vsto/programming-vsto-add-ins.md).
 
 - Los archivos de proyecto ocultos que no piensa editar directamente. Para obtener más información, vea [archivos de proyecto ocultos](#hiddenfiles).
 
 ### <a name="temporary-certificates"></a>Certificados temporales
- Los proyectos de Office también incluyen un certificado temporal denominado *NombreDeProyecto*_TemporaryKey.pfx. Este certificado se usa para firmar los manifiestos de implementación y aplicación para el proyecto durante el desarrollo. Para obtener más información, vea [conceder confianza a las soluciones de Office](../vsto/granting-trust-to-office-solutions.md) y proteger las soluciones de [Office](../vsto/securing-office-solutions.md).
+ Los proyectos de Office también incluyen un certificado temporal denominado *NombreDeProyecto* _TemporaryKey.pfx. Este certificado se usa para firmar los manifiestos de implementación y aplicación para el proyecto durante el desarrollo. Para obtener más información, vea [conceder confianza a las soluciones de Office](../vsto/granting-trust-to-office-solutions.md) y proteger las soluciones de [Office](../vsto/securing-office-solutions.md).
 
 ### <a name="hidden-project-files"></a><a name="hiddenfiles"></a> Archivos de proyecto ocultos
  Hay varios archivos de proyecto que están ocultos de manera predeterminada. Visual Studio genera estos archivos, que son diferentes según el tipo de proyecto. Para mostrar los archivos ocultos, haga clic en **Mostrar todos los archivos** en el **Explorador de soluciones**.
@@ -113,7 +115,7 @@ ms.locfileid: "62978063"
  Para obtener más información sobre el editor de código, vea [escribir código en el editor de código y texto](../ide/writing-code-in-the-code-and-text-editor.md). Para obtener más información sobre cómo escribir código en proyectos de Office, vea [escribir código en soluciones de Office](../vsto/writing-code-in-office-solutions.md).
 
 ## <a name="properties-window"></a>Propiedades (ventana)
- La ventana **Propiedades** muestra las propiedades de los elementos de proyecto que están seleccionados en el **Explorador de soluciones**y los elementos de la interfaz de usuario que están seleccionados en el diseñador, como los controles o el documento en un proyecto de nivel de documento. Algunas propiedades son específicas de la aplicación y el documento, mientras que otras son iguales en todos los proyectos.
+ La ventana **Propiedades** muestra las propiedades de los elementos de proyecto que están seleccionados en el **Explorador de soluciones** y los elementos de la interfaz de usuario que están seleccionados en el diseñador, como los controles o el documento en un proyecto de nivel de documento. Algunas propiedades son específicas de la aplicación y el documento, mientras que otras son iguales en todos los proyectos.
 
 ## <a name="data-sources-window"></a>Ventana de orígenes de datos
  Puede usar la ventana **Orígenes de datos** en los proyectos de Office de nivel de documento para arrastrar un origen de datos a su documento y crear un control enlazado al origen de datos. Para obtener más información, vea [enlazar controles a datos en Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).

@@ -1,5 +1,7 @@
 ---
 title: Crear relación de maestro de detalles mediante el conjunto de información en caché
+description: Obtenga información sobre cómo crear una relación principal-detalle en una hoja de cálculo y almacenar en caché los datos para que la solución se pueda usar sin conexión.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0acf84dd983a8c10f2af526ae0bb904eaa90a360
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: de7bf3ba34a2a7dd3e7db9ff549e4a839800d524
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328363"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524864"
 ---
 # <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>Tutorial: crear una relación maestra-detalle mediante un conjunto de información almacenado en caché
   En este tutorial se muestra cómo crear una relación principal-detalle en una hoja de cálculo y cómo almacenar en caché los datos para que la solución se pueda usar sin conexión.
@@ -49,7 +51,7 @@ ms.locfileid: "67328363"
 
 - Permisos para leer y escribir en la base de datos de SQL Server.
 
-## <a name="create-a-new-project"></a>Creación de un nuevo proyecto
+## <a name="create-a-new-project"></a>Creación de un proyecto
  En este paso, creará un proyecto de libro de Excel.
 
 ### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto
@@ -63,7 +65,7 @@ ms.locfileid: "67328363"
 
 ### <a name="to-create-the-data-source"></a>Para crear el origen de datos
 
-1. Si la ventana **orígenes de datos** no está visible, puede mostrarla en la barra de menús y elegir **Ver**  >  **otros**  >  **orígenes de datos**de Windows.
+1. Si la ventana **orígenes de datos** no está visible, puede mostrarla en la barra de menús y elegir **Ver**  >  **otros**  >  **orígenes de datos** de Windows.
 
 2. Elija **Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de orígenes de datos**.
 
@@ -102,7 +104,7 @@ ms.locfileid: "67328363"
 
 6. Haga clic en **ListObject** en la lista desplegable y, a continuación, arrastre la tabla **OrderDetails** a la celda **A6**.
 
-7. Un <xref:Microsoft.Office.Tools.Excel.ListObject> control denominado **Order_DetailsListObject** se crea en la celda **A6**y se enlaza a <xref:System.Windows.Forms.BindingSource> .
+7. Un <xref:Microsoft.Office.Tools.Excel.ListObject> control denominado **Order_DetailsListObject** se crea en la celda **A6** y se enlaza a <xref:System.Windows.Forms.BindingSource> .
 
 ### <a name="to-add-two-buttons"></a>Para agregar dos botones
 
@@ -136,7 +138,7 @@ ms.locfileid: "67328363"
 
 ### <a name="to-initialize-the-data-and-the-controls"></a>Para inicializar los datos y los controles
 
-1. En **Explorador de soluciones**, haga clic con el botón secundario en **Hoja1. VB** o **Sheet1.CS**y, a continuación, haga clic en **Ver código** en el menú contextual.
+1. En **Explorador de soluciones**, haga clic con el botón secundario en **Hoja1. VB** o **Sheet1.CS** y, a continuación, haga clic en **Ver código** en el menú contextual.
 
 2. Agregue el código siguiente al `Sheet1_Startup` método para establecer el texto de los botones.
 

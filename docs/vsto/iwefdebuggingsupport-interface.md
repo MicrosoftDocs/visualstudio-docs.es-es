@@ -1,5 +1,7 @@
 ---
 title: Interfaz Iwefdebuggingsupport (
+description: Obtenga información sobre cómo puede usar un entorno de depuración como Visual Studio para facilitar la depuración de aplicaciones Microsoft Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: interface
 dev_langs:
@@ -10,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0a4883d36c1833c66a2539380184521b070f5c2a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6a818973bdc2f62194d6ed0026c0798806fe5f2a
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544734"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525320"
 ---
 # <a name="iwefdebuggingsupport-interface"></a>Interfaz Iwefdebuggingsupport (
   Implementado por un entorno de depuración, como Visual Studio, para facilitar la depuración de aplicaciones para Office. La aplicación de Office, como Word o Excel, obtiene esta interfaz de Visual Studio y, a continuación, llama a los métodos en la interfaz en determinados puntos durante la sesión de depuración.

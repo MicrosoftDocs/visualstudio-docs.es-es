@@ -1,5 +1,7 @@
 ---
 title: Actualizar gráfico en una hoja de cálculo mediante botones de radio
+description: Conozca los aspectos básicos del uso de botones de radio en una hoja de cálculo de Microsoft Excel para proporcionar al usuario una manera de cambiar rápidamente entre las opciones.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e63d7d09a09fe4c051d8137428fdae90490cbae5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e375f394cd3d8be35ace8e3df07920fb824a07e
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238821"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526059"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>Tutorial: Actualizar un gráfico en una hoja de cálculo utilizando botones de radio
   En este tutorial se muestran los aspectos básicos del uso de botones de radio en una hoja de cálculo de Excel Microsoft Office para ofrecer al usuario una manera de cambiar rápidamente entre las opciones. En este caso, las opciones cambian el estilo de un gráfico.
@@ -68,7 +70,7 @@ ms.locfileid: "88238821"
 
 ### <a name="to-add-a-chart-in-excel"></a>Para agregar un gráfico en Excel
 
-1. En la pestaña **Insertar** , en el grupo **gráficos** , haga clic en **columna**y, a continuación, haga clic en **todos los tipos de gráficos**.
+1. En la pestaña **Insertar** , en el grupo **gráficos** , haga clic en **columna** y, a continuación, haga clic en **todos los tipos de gráficos**.
 
 2. En el cuadro de diálogo **Insertar gráfico** , haga clic en **Aceptar**.
 
@@ -86,7 +88,7 @@ ms.locfileid: "88238821"
 
 9. Salga de Excel.
 
-## <a name="create-a-new-project"></a>Creación de un nuevo proyecto
+## <a name="create-a-new-project"></a>Creación de un proyecto
  En este paso, creará un proyecto de libro de Excel basado en el libro **ExcelChart** .
 
 ### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto
@@ -203,11 +205,11 @@ ms.locfileid: "88238821"
 
 ### <a name="to-add-the-user-control-your-worksheet"></a>Para agregar el control de usuario a la hoja de cálculo
 
-1. En el menú **Compilar**, haga clic en **Compilar solución**.
+1. En el menú **Compilar** , haga clic en **Compilar solución**.
 
      El control de usuario **ChartOptions** se agrega al **cuadro de herramientas**.
 
-2. En **Explorador de soluciones**, haga clic con el botón secundario en **Hoja1. VB** o **Sheet1.CS**y, a continuación, haga clic en **Ver diseñador**.
+2. En **Explorador de soluciones**, haga clic con el botón secundario en **Hoja1. VB** o **Sheet1.CS** y, a continuación, haga clic en **Ver diseñador**.
 
 3. Arrastre el control **ChartOptions** desde el **cuadro de herramientas** a la hoja de cálculo.
 
@@ -220,7 +222,7 @@ ms.locfileid: "88238821"
 
 ### <a name="to-change-the-type-of-chart-that-is-displayed-in-the-worksheet"></a>Para cambiar el tipo de gráfico que se muestra en la hoja de cálculo
 
-1. Agregue el siguiente controlador de eventos a la clase `Sheet1`.
+1. Agrega el siguiente controlador de eventos a la clase `Sheet1`.
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#19](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#19)]
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#19](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#19)]

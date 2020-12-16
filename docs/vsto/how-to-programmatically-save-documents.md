@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: guardar documentos mediante programación'
+description: Obtenga información sobre cómo puede usar Visual Studio para guardar un documento mediante programación sin cambiar el nombre del documento o con un nombre nuevo.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 464d131261ecfb0a64a3ca279007ff9332cdb2e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2221ec6576e7ac0de399613a1cda3cdcb8dcea6c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537597"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525467"
 ---
 # <a name="how-to-programmatically-save-documents"></a>Cómo: guardar documentos mediante programación
 

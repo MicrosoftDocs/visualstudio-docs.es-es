@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: cambiar el tamaño de los controles dentro de las celdas de la hoja de cálculo'
+description: Obtenga información sobre cómo puede usar Visual Studio para cambiar el tamaño de los controles dentro de las celdas de la hoja de cálculo de Microsoft Excel en tiempo de diseño y en tiempo de ejecución.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f2d22973e13ee77b66de303041f8b6a765b4b93a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba2a77dc44618c0415e645718aff3ead542b4b48
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545878"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525351"
 ---
 # <a name="how-to-resize-controls-within-worksheet-cells"></a>Cómo: cambiar el tamaño de los controles dentro de las celdas de la hoja de cálculo
   Al cambiar el tamaño de las columnas o filas de una hoja de cálculo, los controles host de las celdas se ajustan automáticamente al alto o ancho de la celda cuyo tamaño se cambió. Los controles Windows Forms no se ajustan automáticamente de forma predeterminada.

@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: programar contra eventos de un control NamedRange'
+description: Obtenga información sobre cómo puede Agregar un control NamedRange a una hoja de cálculo de Microsoft Excel y programar contra sus eventos mediante las herramientas de desarrollo de Office en Visual Studio.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2e5ce12e2de8274afd2c27d4ece36529563a6386
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 9e311a567d32ee083bcc13f417c248f5f3d3ee5a
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584942"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526134"
 ---
 # <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>Tutorial: programar contra eventos de un control NamedRange
   En este tutorial se muestra cómo agregar un <xref:Microsoft.Office.Tools.Excel.NamedRange> control a una hoja de cálculo de Excel Microsoft Office y programar con sus eventos mediante las herramientas de desarrollo de Office en Visual Studio.
@@ -47,19 +49,19 @@ ms.locfileid: "91584942"
 
 - [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] o [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
-## <a name="create-the-project"></a>Crear el proyecto
+## <a name="create-the-project"></a>Creación del proyecto
  En este paso, creará un proyecto de libro de Excel con Visual Studio.
 
 ### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto
 
-1. Cree un proyecto de libro de Excel con el nombre **mis eventos de rango con**nombre. Asegúrese de que **la opción crear un nuevo documento** está seleccionada. Para obtener más información, vea [Cómo: crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Cree un proyecto de libro de Excel con el nombre **mis eventos de rango con** nombre. Asegúrese de que **la opción crear un nuevo documento** está seleccionada. Para obtener más información, vea [Cómo: crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      Visual Studio abre el nuevo libro de Excel en el diseñador y agrega el proyecto **mis eventos de rango con nombre** a **Explorador de soluciones**.
 
 ## <a name="add-text-and-named-ranges-to-the-worksheet"></a>Agregar texto y rangos con nombre a la hoja de cálculo
- Dado que los controles host son objetos de Office extendidos, puede agregarlos al documento de la misma manera que agregaría el objeto nativo. Por ejemplo, puede Agregar un control de Excel <xref:Microsoft.Office.Tools.Excel.NamedRange> a una hoja de cálculo; para ello, abra el menú **Insertar** , seleccione **nombre**y elija **definir**. También puede Agregar un <xref:Microsoft.Office.Tools.Excel.NamedRange> control arrastrándolo desde el **cuadro de herramientas** hasta la hoja de cálculo.
+ Dado que los controles host son objetos de Office extendidos, puede agregarlos al documento de la misma manera que agregaría el objeto nativo. Por ejemplo, puede Agregar un control de Excel <xref:Microsoft.Office.Tools.Excel.NamedRange> a una hoja de cálculo; para ello, abra el menú **Insertar** , seleccione **nombre** y elija **definir**. También puede Agregar un <xref:Microsoft.Office.Tools.Excel.NamedRange> control arrastrándolo desde el **cuadro de herramientas** hasta la hoja de cálculo.
 
- En este paso, agregará dos controles de rango con nombre a la hoja de cálculo mediante el **cuadro de herramientas**y, a continuación, agregará texto a la hoja de cálculo.
+ En este paso, agregará dos controles de rango con nombre a la hoja de cálculo mediante el **cuadro de herramientas** y, a continuación, agregará texto a la hoja de cálculo.
 
 ### <a name="to-add-a-range-to-your-worksheet"></a>Para agregar un intervalo a la hoja de cálculo
 
@@ -156,7 +158,7 @@ ms.locfileid: "91584942"
 
 - Implementar el proyecto. Para obtener más información, vea [implementar una solución de Office](../vsto/deploying-an-office-solution.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Información general sobre elementos y controles host](../vsto/host-items-and-host-controls-overview.md)
 - [Automatizar Excel usando objetos extendidos](../vsto/automating-excel-by-using-extended-objects.md)
 - [NamedRange (control)](../vsto/namedrange-control.md)

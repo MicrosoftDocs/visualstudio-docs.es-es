@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: enlazar datos a controles en un panel de acciones de Excel'
+description: Enlazar datos a controles en un panel de acciones de Microsoft Excel. Los controles muestran una relación principal-detalle entre las tablas de una base de datos de SQL Server.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3801aff53a5bf9a9a8d77263ab74127c1b2a9846
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 6c53f4c1dfe9838fe4522dcc71b675a7f6b868d4
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585059"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524967"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-an-excel-actions-pane"></a>Tutorial: enlazar datos a controles en un panel de acciones de Excel
   En este tutorial se muestra cómo enlazar datos a controles en un panel de acciones en Microsoft Office Excel. Los controles muestran una relación principal-detalle entre las tablas de una base de datos de SQL Server.
@@ -54,7 +56,7 @@ ms.locfileid: "91585059"
 
 - Permisos para leer y escribir en la base de datos de SQL Server.
 
-## <a name="create-the-project"></a>Crear el proyecto
+## <a name="create-the-project"></a>Creación del proyecto
  En primer lugar, es necesario crear un proyecto de libro de Excel.
 
 ### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto
@@ -67,7 +69,7 @@ ms.locfileid: "91585059"
 
 ### <a name="to-add-a-new-data-source-to-the-project"></a>Para agregar un nuevo origen de datos al proyecto
 
-1. Si la ventana **orígenes de datos** no está visible, puede mostrarla en la barra de menús y elegir **Ver**  >  **otros**  >  **orígenes de datos**de Windows.
+1. Si la ventana **orígenes de datos** no está visible, puede mostrarla en la barra de menús y elegir **Ver**  >  **otros**  >  **orígenes de datos** de Windows.
 
 2. Elija **Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de orígenes de datos**.
 
@@ -75,7 +77,7 @@ ms.locfileid: "91585059"
 
 4. Seleccione una conexión de datos a la base de datos de ejemplo Northwind SQL Server o agregue una nueva conexión mediante el botón **nueva conexión** .
 
-5. Haga clic en **Siguiente**.
+5. Haga clic en **Next**.
 
 6. Desactive la opción para guardar la conexión si está seleccionada y, a continuación, haga clic en **siguiente**.
 
@@ -83,7 +85,7 @@ ms.locfileid: "91585059"
 
 8. Active la casilla situada junto a la tabla **proveedores** .
 
-9. Expanda la tabla **Products** y seleccione **ProductName**, **SupplierID**, **QuantityPerUnit**y **UnitPrice**.
+9. Expanda la tabla **Products** y seleccione **ProductName**, **SupplierID**, **QuantityPerUnit** y **UnitPrice**.
 
 10. Haga clic en **Finalizar**
 
@@ -121,7 +123,7 @@ ms.locfileid: "91585059"
 
 2. En el menú **Proyecto** , haga clic en **Agregar nuevo elemento**.
 
-3. En el cuadro de diálogo **Agregar nuevo elemento** , seleccione **control del panel de acciones**, asígnele el nombre **ActionsControl**y haga clic en **Agregar**.
+3. En el cuadro de diálogo **Agregar nuevo elemento** , seleccione **control del panel de acciones**, asígnele el nombre **ActionsControl** y haga clic en **Agregar**.
 
 ### <a name="to-add-data-bound-windows-forms-controls-to-an-actions-pane-control"></a>Para agregar controles de Windows Forms enlazados a datos a un control del panel de acciones
 
@@ -152,7 +154,7 @@ ms.locfileid: "91585059"
 
 #### <a name="to-show-the-actions-pane"></a>Para mostrar el panel de acciones
 
-1. En **Explorador de soluciones**, haga clic con el botón secundario en *ThisWorkbook. VB* o *ThisWorkbook.CS*y, a continuación, haga clic en **Ver código**.
+1. En **Explorador de soluciones**, haga clic con el botón secundario en *ThisWorkbook. VB* o *ThisWorkbook.CS* y, a continuación, haga clic en **Ver código**.
 
 2. Cree una nueva instancia del control de usuario en la `ThisWorkbook` clase.
 
@@ -184,7 +186,7 @@ ms.locfileid: "91585059"
 
 - Implementar el proyecto. Para obtener más información, vea [implementar una solución de Office mediante ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Información general del panel de acciones](../vsto/actions-pane-overview.md)
 - [Cómo: administrar el diseño de controles en paneles de acciones](../vsto/how-to-manage-control-layout-on-actions-panes.md)
 - [Enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md)

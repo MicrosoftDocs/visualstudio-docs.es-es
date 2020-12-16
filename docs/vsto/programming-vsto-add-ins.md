@@ -1,5 +1,7 @@
 ---
 title: Complementos de VSTO de programa
+description: Obtenga información sobre cómo puede usar la clase ThisAddIn para realizar tareas como el acceso al modelo de objetos de la aplicación host de Microsoft Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -32,12 +34,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 240995eb744f8107503c108cbcdbbb8522748b79
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7c3a4b14a1935d1d276f0884234fcd121b838f39
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87115334"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525121"
 ---
 # <a name="program-vsto-add-ins"></a>Complementos de VSTO de programa
   Cuando se amplía una aplicación de Microsoft Office mediante la creación de un complemento VSTO, el código se escribe directamente en la clase `ThisAddIn` de su proyecto. Puede usar esta clase para realizar tareas tales como tener acceso al modelo de objetos de la aplicación host de Microsoft Office, personalizar la interfaz de usuario (UI) de la aplicación y exponer objetos del complemento VSTO en otras soluciones de Office.
@@ -97,7 +99,7 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
 
 - [Información general del modelo de objetos de Outlook](../vsto/outlook-object-model-overview.md)
 
-- [soluciones de InfoPath](../vsto/infopath-solutions.md)
+- [Soluciones de InfoPath](../vsto/infopath-solutions.md)
 
 - [Soluciones de PowerPoint](../vsto/powerpoint-solutions.md)
 
@@ -121,7 +123,7 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
 |Ejecute el código para inicializar el complemento VSTO cuando este se cargue.|Agregue código al método `ThisAddIn_Startup` . Este es el controlador de eventos predeterminado para el evento <xref:Microsoft.Office.Tools.AddInBase.Startup> . Para obtener más información, vea [eventos en proyectos de Office](../vsto/events-in-office-projects.md).|
 |Ejecute el código para limpiar los recursos usados por el complemento VSTO antes de que este se descargue.|Agregue código al método `ThisAddIn_Shutdown` . Este es el controlador de eventos predeterminado para el evento <xref:Microsoft.Office.Tools.AddInBase.Shutdown> . Para obtener más información, vea [eventos en proyectos de Office](../vsto/events-in-office-projects.md). **Nota:**  En Outlook, de forma predeterminada, `ThisAddIn_Shutdown` no siempre se llama al controlador de eventos cuando se descarga el complemento de VSTO. Para obtener más información, vea [eventos en proyectos de Office](../vsto/events-in-office-projects.md).|
 |Mostrar un panel de tareas personalizado.|Utilice el campo `CustomTaskPanes` . Para obtener más información, consulte [paneles de tareas personalizados](../vsto/custom-task-panes.md).|
-|Exponer objetos de un complemento VSTO en otras soluciones de Microsoft Office.|Invalide el método <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A>. Para obtener más información, consulte [llamar a código en complementos de VSTO desde otras soluciones de Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).|
+|Exponer objetos de un complemento VSTO en otras soluciones de Microsoft Office.|Invalide el método <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> . Para obtener más información, consulte [llamar a código en complementos de VSTO desde otras soluciones de Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).|
 |Personalizar una característica del sistema Microsoft Office implementando una interfaz de extensibilidad.|Invalide el método <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> para que devuelva una instancia de una clase que implemente la interfaz. Para obtener más información, vea [personalizar características de la interfaz de usuario mediante interfaces de extensibilidad](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md). **Nota:**  Para personalizar la interfaz de usuario de la cinta de opciones, también puede invalidar el <xref:Microsoft.Office.Tools.AddInBase.CreateRibbonExtensibilityObject%2A> método.|
 
 ### <a name="understand-the-design-of-the-thisaddin-class"></a>Descripción del diseño de la clase ThisAddIn

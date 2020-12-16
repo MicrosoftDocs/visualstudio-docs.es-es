@@ -1,5 +1,7 @@
 ---
 title: Publicar (página), diseñador de proyectos (desarrollo de Office)
+description: Obtenga información sobre cómo se usa la página publicar del diseñador de proyectos de Visual Studio para configurar las propiedades de la implementación.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,17 +18,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4dfa575bea4e629c7521cc7f4c5a79707462714c
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 7f68ab8f0ee9efde903148d4702e85e99aad77d2
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810998"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525017"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Publicar (página), diseñador de proyectos (desarrollo de Office en Visual Studio)
   La página **Publicar** del **Diseñador de proyectos** se usa para configurar las propiedades de la implementación.
 
- Para acceder a esta página, seleccione el proyecto en el **Explorador de soluciones**y luego, en el menú **Proyecto** , elija *Propiedades de* **nombreDelProyecto**. Si no se muestra la página **Publicar** , elija la pestaña **Publicar** .
+ Para acceder a esta página, seleccione el proyecto en el **Explorador de soluciones** y luego, en el menú **Proyecto** , elija *Propiedades de* **nombreDelProyecto**. Si no se muestra la página **Publicar** , elija la pestaña **Publicar** .
 
 > [!NOTE]
 > También puede establecer la ubicación de publicación en el **Asistente para publicación**. Para obtener más información, consulte [Cómo: publicar una solución de Office mediante ClickOnce](/previous-versions/bb386095(v=vs.110)).
@@ -36,15 +38,15 @@ ms.locfileid: "90810998"
 
  La ubicación de la carpeta de publicación es el directorio donde Visual Studio copia los archivos de la solución como, por ejemplo, los manifiestos, los ensamblados y otros archivos de la compilación. Es necesario tener acceso de escritura a este directorio.
 
- Las opciones incluyen el equipo local, un recurso compartido de archivos UNC o un sitio web HTTP/HTTPS. La ruta de acceso puede ser local (*c:\foldername\publishfolder*), relativa (* \\ publicar*) o una ubicación completa (* \\ \servername\foldername* o http://<em>ServerName/nombreDeCarpeta</em>).
+ Las opciones incluyen el equipo local, un recurso compartido de archivos UNC o un sitio web HTTP/HTTPS. La ruta de acceso puede ser local (*c:\foldername\publishfolder*), relativa (*\\ publicar*) o una ubicación completa (*\\ \servername\foldername* o http://<em>ServerName/nombreDeCarpeta</em>).
 
- De forma predeterminada, la ubicación de publicación es *http://localhost/projectname/* si tiene IIS instalado o el directorio de *publicación \\ * si no tiene IIS instalado.
+ De forma predeterminada, la ubicación de publicación es *http://localhost/projectname/* si tiene IIS instalado o el directorio de *publicación \\* si no tiene IIS instalado.
 
  **URL** de la carpeta de instalación Opta.
 
  La URL de la carpeta de instalación es el directorio desde el que el usuario final instalará la personalización. También es la ruta de acceso que usará la solución para buscar actualizaciones. La ruta de acceso puede ser igual que la ubicación de la carpeta de publicación, pero esto no es un requisito.
 
- Las opciones incluyen el equipo local, un recurso compartido de archivos UNC o un sitio web HTTP/HTTPS. La ruta de acceso puede ser local (*c:\foldername\publishfolder*), relativa (* \\ publicar*) o una ubicación completa (* \\ \servername\foldername* o http://<em>ServerName/nombreDeCarpeta</em>). Todas las ubicaciones HTTP/HTTPS se deben crear con caracteres US-ASCII. No se admiten caracteres Unicode.
+ Las opciones incluyen el equipo local, un recurso compartido de archivos UNC o un sitio web HTTP/HTTPS. La ruta de acceso puede ser local (*c:\foldername\publishfolder*), relativa (*\\ publicar*) o una ubicación completa (*\\ \servername\foldername* o http://<em>ServerName/nombreDeCarpeta</em>). Todas las ubicaciones HTTP/HTTPS se deben crear con caracteres US-ASCII. No se admiten caracteres Unicode.
 
  Si se establece la ruta de instalación, los archivos de personalización deben estar en dicha ubicación para que los usuarios instalen la personalización. La ubicación solo debe establecerse si conoce la ubicación de implementación final.
 

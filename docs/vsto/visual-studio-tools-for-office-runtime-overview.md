@@ -1,5 +1,7 @@
 ---
 title: Información general sobre el tiempo de ejecución de Visual Studio Tools para Office
+description: Visual Studio 2010 Tools para Office Runtime debe estar instalado en los equipos de los usuarios finales para ejecutar soluciones creadas con las herramientas de desarrollo de Microsoft Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -26,12 +28,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 31d2244796282aaad56011d5b9963232d3438ce9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16431a9ba2fe56b88f9f6b7f2c874c75bfad61c3
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71253986"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526274"
 ---
 # <a name="visual-studio-tools-for-office-runtime-overview"></a>Información general sobre el tiempo de ejecución de Visual Studio Tools para Office
   Para ejecutar soluciones creadas con las herramientas de desarrollo de Microsoft Office en Visual Studio, se debe instalar Visual Studio 2010 Tools para Office Runtime en los equipos de los usuarios finales. Para obtener más información, vea [Cómo: instalar el Visual Studio Tools para Office Runtime Redistributable](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md). El tiempo de ejecución de Visual Studio 2010 Tools para Office consta de dos componentes principales:
@@ -115,7 +117,7 @@ ms.locfileid: "71253986"
 ## <a name="repair-the-visual-studio-2010-tools-for-office-runtime"></a>Reparación del tiempo de ejecución de Visual Studio 2010 Tools para Office
  Si necesita reparar el runtime, abra **Programas y características** o **Agregar o quitar programas** en el Panel de control, seleccione **Runtime de Microsoft Visual Studio 2010 Tools para Office** en la lista de programas y, a continuación, haga clic en **Desinstalar**. El programa de instalación que se ejecuta permite reparar el runtime. Si hace clic en **Cambiar**, no tendrá la opción de reparar el runtime.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Visual Studio Tools para escenarios de instalación en tiempo de ejecución de Office](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md)
 - [Ensamblados en el Visual Studio Tools para Office Runtime](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md)
 - [Arquitectura de las soluciones de Office en Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: crear una pestaña personalizada mediante el diseñador de la cinta de opciones'
+description: Obtenga información sobre cómo crear una pestaña personalizada y, a continuación, agregar y colocar controles en ella mediante el diseñador de la cinta de opciones.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5f311f35ba4a8c443f47941a905ee4cf4d3ebfb2
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 539f75b7770abab75e912a28bc62ed51b7fb61d8
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585020"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524827"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-the-ribbon-designer"></a>Tutorial: crear una pestaña personalizada mediante el diseñador de la cinta de opciones
   El diseñador de la cinta de opciones permite crear una pestaña personalizada y, a continuación, agregar y colocar controles en ella.
@@ -64,7 +66,7 @@ ms.locfileid: "91585020"
 
 1. En el menú **Proyecto** , elija **Agregar nuevo elemento**.
 
-2. En el cuadro de diálogo **Agregar nuevo elemento** , seleccione **ActionsPaneControl**y, a continuación, elija **Agregar**.
+2. En el cuadro de diálogo **Agregar nuevo elemento** , seleccione **ActionsPaneControl** y, a continuación, elija **Agregar**.
 
      Se abre el archivo **ActionsPaneControl1.CS** o **ActionsPaneControl1. VB** en el diseñador.
 
@@ -83,7 +85,7 @@ ms.locfileid: "91585020"
 
 2. En el cuadro de diálogo **Agregar nuevo elemento** , seleccione **Cinta (diseñador visual)**.
 
-3. Cambie el nombre de la nueva cinta de opciones a **myribbon**y elija **Agregar**.
+3. Cambie el nombre de la nueva cinta de opciones a **myribbon** y elija **Agregar**.
 
      El archivo **MyRibbon.cs** o **MyRibbon.vb** se abre en el diseñador de la cinta de opciones y muestra una ficha y un grupo predeterminados.
 
@@ -103,7 +105,7 @@ ms.locfileid: "91585020"
 
 11. En la ventana **propiedades** , establezca **etiqueta** en **Show Actions pane 1**.
 
-12. Agregue un segundo botón a **Grupo1**y establezca la propiedad **etiqueta** en **Show Actions pane 2**.
+12. Agregue un segundo botón a **Grupo1** y establezca la propiedad **etiqueta** en **Show Actions pane 2**.
 
 13. En la pestaña controles de la cinta de opciones de **Office** del **cuadro de herramientas**, arrastre un control **ToggleButton** a **Grupo1**.
 
@@ -114,7 +116,7 @@ ms.locfileid: "91585020"
 
 ### <a name="to-hide-and-show-actions-panes-by-using-buttons-in-the-custom-tab"></a>Para ocultar y mostrar paneles de acciones con botones de la ficha personalizada
 
-1. En **Explorador de soluciones**, abra el menú contextual de *MyRibbon.CS* o *myribbon. VB*y, a continuación, elija **Ver código**.
+1. En **Explorador de soluciones**, abra el menú contextual de *MyRibbon.CS* o *myribbon. VB* y, a continuación, elija **Ver código**.
 
 2. Agregue el siguiente código al comienzo de la clase `MyRibbon`. Este código crea dos objetos de panel de acciones.
 
@@ -159,7 +161,7 @@ ms.locfileid: "91585020"
 
 - Extender un formulario estándar o personalizado de Microsoft Office Outlook. Para obtener más información, vea [Tutorial: diseñar un área de formulario de Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Obtener acceso a la cinta de opciones en tiempo de ejecución](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Información general sobre la cinta](../vsto/ribbon-overview.md)
 - [Diseñador de la cinta de opciones](../vsto/ribbon-designer.md)

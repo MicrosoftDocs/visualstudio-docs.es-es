@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: crear una pestaña personalizada usando XML de la cinta de opciones'
+description: Obtenga información acerca de cómo puede agregar botones a la pestaña Add-Ins y automatizar Microsoft Word mediante la cinta (XML).
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e05bd9173b83ec3303a058dcf61ea48a7ef7675c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e81d20dc179df76b759223c1460ca13bfceb5706
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90842451"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524881"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-ribbon-xml"></a>Tutorial: crear una pestaña personalizada usando XML de la cinta de opciones
   En este tutorial se muestra cómo crear una pestaña personalizada de la cinta de opciones mediante el elemento **cinta (XML)** .
@@ -45,7 +47,7 @@ ms.locfileid: "90842451"
 
 - Microsoft Word.
 
-## <a name="create-the-project"></a>Crear el proyecto
+## <a name="create-the-project"></a>Creación del proyecto
  El primer paso es crear un proyecto de complemento de VSTO de Word. Más adelante se personalizará la pestaña **Complementos** de este documento.
 
 ### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto
@@ -65,11 +67,11 @@ ms.locfileid: "90842451"
 
 2. En el cuadro de diálogo **Agregar nuevo elemento** , seleccione **cinta (XML)**.
 
-3. Cambie el nombre de la nueva cinta de opciones por **MyRibbon**y haga clic en **Agregar**.
+3. Cambie el nombre de la nueva cinta de opciones por **MyRibbon** y haga clic en **Agregar**.
 
      Se abre el archivo **MyRibbon.CS** o **myribbon. VB** en el diseñador. También se agregará a su proyecto un archivo XML denominado **MyRibbon.xml** .
 
-4. En **Explorador de soluciones**, haga clic con el botón secundario en **ThisAddIn.CS** o **ThisAddIn. VB**y, a continuación, haga clic en **Ver código**.
+4. En **Explorador de soluciones**, haga clic con el botón secundario en **ThisAddIn.CS** o **ThisAddIn. VB** y, a continuación, haga clic en **Ver código**.
 
 5. Agregue el siguiente código a la clase **ThisAddin** . Este código invalida el método `CreateRibbonExtensibilityObject` y devuelve la clase XML Ribbon a la aplicación de Office.
 
@@ -85,7 +87,7 @@ ms.locfileid: "90842451"
 
 1. En **Explorador de soluciones**, haga clic con el botón secundario en **MyRibbon.xml** y haga clic en **abrir**.
 
-2. Reemplace el contenido del elemento **Tab** por el siguiente código XML. Este XML cambia la etiqueta del grupo de control predeterminado a **contenido**y agrega dos nuevos botones con las etiquetas **insertar texto** e **Insertar tabla**.
+2. Reemplace el contenido del elemento **Tab** por el siguiente código XML. Este XML cambia la etiqueta del grupo de control predeterminado a **contenido** y agrega dos nuevos botones con las etiquetas **insertar texto** e **Insertar tabla**.
 
     ```xml
     <tab idMso="TabAddIns">
@@ -105,19 +107,19 @@ ms.locfileid: "90842451"
 
 ### <a name="to-add-callback-methods-for-the-buttons"></a>Para agregar métodos de devolución de llamada a los botones
 
-1. En **Explorador de soluciones**, haga clic con el botón secundario en **MyRibbon.CS** o **myribbon. VB**y, a continuación, haga clic en **abrir**.
+1. En **Explorador de soluciones**, haga clic con el botón secundario en **MyRibbon.CS** o **myribbon. VB** y, a continuación, haga clic en **abrir**.
 
 2. Agregue el código siguiente en la parte superior del archivo **MyRibbon.CS** o **myribbon. VB** . Este código crea un alias para el espacio de nombres <xref:Microsoft.Office.Interop.Word>.
 
      [!code-csharp[Trin_RibbonButtons#1](../vsto/codesnippet/CSharp/Trin_RibbonButtons/MyRibbon.cs#1)]
      [!code-vb[Trin_RibbonButtons#1](../vsto/codesnippet/VisualBasic/Trin_RibbonButtons/MyRibbon.vb#1)]
 
-3. Agregue el siguiente método a la clase `MyRibbon`. Se trata de un método de devolución de llamada para el botón **insertar texto** que agrega una cadena al documento activo en la ubicación actual del cursor.
+3. Agrega el método siguiente a la clase `MyRibbon`: Se trata de un método de devolución de llamada para el botón **insertar texto** que agrega una cadena al documento activo en la ubicación actual del cursor.
 
      [!code-csharp[Trin_Ribbon_Custom_Tab_XML#2](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.cs#2)]
      [!code-vb[Trin_Ribbon_Custom_Tab_XML#2](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.vb#2)]
 
-4. Agregue el siguiente método a la clase `MyRibbon`. Se trata de un método de devolución de llamada para el botón **Insertar tabla** que agrega una tabla al documento activo en la ubicación actual del cursor.
+4. Agrega el método siguiente a la clase `MyRibbon`: Se trata de un método de devolución de llamada para el botón **Insertar tabla** que agrega una tabla al documento activo en la ubicación actual del cursor.
 
      [!code-csharp[Trin_Ribbon_Custom_Tab_XML#3](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.cs#3)]
      [!code-vb[Trin_Ribbon_Custom_Tab_XML#3](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.vb#3)]
@@ -154,7 +156,7 @@ ms.locfileid: "90842451"
 
 - Personalizar la interfaz de usuario de Microsoft Office Outlook mediante las áreas de formulario de Outlook. Para obtener más información, vea [Tutorial: diseñar un área de formulario de Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Información general sobre la cinta](../vsto/ribbon-overview.md)
 - [Ribbon XML](../vsto/ribbon-xml.md)
 - [Tutorial: crear una pestaña personalizada mediante el diseñador de la cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: actualizar los controles de una cinta de opciones en tiempo de ejecución'
+description: Obtenga información sobre cómo puede usar el modelo de objetos de la cinta de opciones para actualizar los controles de una cinta de opciones después de cargar la cinta de opciones en la aplicación de Office.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9c2e870f028b3337fd162adde881281d7050e142
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 2246dcdca1e754c885dd610f98986306a256228c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298056"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526057"
 ---
 # <a name="walkthrough-update-the-controls-on-a-ribbon-at-run-time"></a>Tutorial: actualizar los controles de una cinta de opciones en tiempo de ejecución
 
@@ -78,7 +80,7 @@ La cinta de opciones de este ejemplo aparecerá cuando un usuario crea un nuevo 
 
 2. En el cuadro de diálogo **Agregar nuevo elemento** , seleccione **Cinta (diseñador visual)**.
 
-3. Cambie el nombre de la nueva cinta de opciones a **CustomerRibbon**y, a continuación, haga clic en **Agregar**.
+3. Cambie el nombre de la nueva cinta de opciones a **CustomerRibbon** y, a continuación, haga clic en **Agregar**.
 
      El archivo *CustomerRibbon.CS* o *CustomerRibbon. VB* se abre en el diseñador de la cinta de opciones y muestra una pestaña y un grupo predeterminados.
 
@@ -136,9 +138,9 @@ Use la ventana **Orígenes de datos** para agregar un conjunto de datos con tipo
 
      Esto inicia el **Asistente para la configuración de orígenes de datos**.
 
-2. Seleccione **base de datos**y, a continuación, haga clic en **siguiente**.
+2. Seleccione **base de datos** y, a continuación, haga clic en **siguiente**.
 
-3. Seleccione **DataSet**y, a continuación, haga clic en **siguiente**.
+3. Seleccione **DataSet** y, a continuación, haga clic en **siguiente**.
 
 4. Seleccione una conexión de datos a la base de datos de ejemplo Northwind Microsoft SQL Server Compact 4,0, o bien agregue una nueva conexión mediante el botón **nueva conexión** .
 
@@ -150,7 +152,7 @@ Use la ventana **Orígenes de datos** para agregar un conjunto de datos con tipo
 
 8. Active la casilla situada al lado de cada una de las siguientes tablas:
 
-    1. **Clientes**
+    1. **Compradores**
 
     2. **Detalles de pedido**
 
@@ -262,7 +264,7 @@ Para crear un mensaje de correo electrónico de seguimiento de cliente, seleccio
 
      Se inicia Outlook.
 
-2. En Outlook, en el menú **archivo** , seleccione **nuevo**y, a continuación, haga clic en **mensaje de correo**.
+2. En Outlook, en el menú **archivo** , seleccione **nuevo** y, a continuación, haga clic en **mensaje de correo**.
 
      Se producirán las acciones siguientes:
 

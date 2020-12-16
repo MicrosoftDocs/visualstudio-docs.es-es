@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: enlazar datos a controles en un panel de acciones de Word'
+description: Enlazar datos a controles en un panel de acciones de Microsoft Word. Los controles muestran una relación principal-detalle entre las tablas de una base de datos de SQL Server.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 05df38bf6056b392c0b991617316ba2c1c657306
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 76dffda9b332b9b76d6c0e0a423073959bcc7a56
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585072"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526211"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>Tutorial: enlazar datos a controles en un panel de acciones de Word
   En este tutorial se muestra cómo enlazar datos a controles en un panel de acciones de Word. Los controles muestran una relación principal-detalle entre las tablas de una base de datos de SQL Server.
@@ -52,7 +54,7 @@ ms.locfileid: "91585072"
 
 - Permisos para leer y escribir en la base de datos de SQL Server.
 
-## <a name="create-the-project"></a>Crear el proyecto
+## <a name="create-the-project"></a>Creación del proyecto
  El primer paso es crear un proyecto de tipo Documento de Word.
 
 ### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto
@@ -72,11 +74,11 @@ ms.locfileid: "91585072"
 
 2. En el menú **Proyecto** , haga clic en **Agregar nuevo elemento**.
 
-3. En el cuadro de diálogo **Agregar nuevo elemento** , seleccione **control del panel de acciones**, asígnele el nombre **ActionsControl**y, a continuación, haga clic en **Agregar**.
+3. En el cuadro de diálogo **Agregar nuevo elemento** , seleccione **control del panel de acciones**, asígnele el nombre **ActionsControl** y, a continuación, haga clic en **Agregar**.
 
 ### <a name="to-add-a-data-source-to-the-project"></a>Para agregar un origen de datos al proyecto
 
-1. Si la ventana **orígenes de datos** no está visible, puede mostrarla en la barra de menús y elegir **Ver**  >  **otros**  >  **orígenes de datos**de Windows.
+1. Si la ventana **orígenes de datos** no está visible, puede mostrarla en la barra de menús y elegir **Ver**  >  **otros**  >  **orígenes de datos** de Windows.
 
    > [!NOTE]
    > Si **Mostrar orígenes de datos** no está disponible, haga clic en el documento de Word y, a continuación, vuelva a comprobarlo.
@@ -87,7 +89,7 @@ ms.locfileid: "91585072"
 
 4. Seleccione una conexión de datos a la base de datos de ejemplo Northwind SQL Server o agregue una nueva conexión mediante el botón **nueva conexión** .
 
-5. Haga clic en **Siguiente**.
+5. Haga clic en **Next**.
 
 6. Desactive la opción para guardar la conexión si está seleccionada y, a continuación, haga clic en **siguiente**.
 
@@ -202,7 +204,7 @@ ms.locfileid: "91585072"
 
 ### <a name="to-show-the-actions-pane"></a>Para mostrar el panel de acciones
 
-1. En **Explorador de soluciones**, haga clic con el botón secundario en **ThisDocument. VB** o **ThisDocument.CS**y, a continuación, haga clic en **Ver código** en el menú contextual.
+1. En **Explorador de soluciones**, haga clic con el botón secundario en **ThisDocument. VB** o **ThisDocument.CS** y, a continuación, haga clic en **Ver código** en el menú contextual.
 
 2. Cree una nueva instancia del control en la parte superior de la `ThisDocument` clase para que tenga un aspecto similar al ejemplo siguiente.
 
@@ -236,7 +238,7 @@ ms.locfileid: "91585072"
 
 - Implementar el proyecto. Para obtener más información, vea [implementar una solución de Office mediante ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Información general del panel de acciones](../vsto/actions-pane-overview.md)
 - [Cómo: agregar un panel de acciones a documentos de Word o libros de Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
 - [Enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md)

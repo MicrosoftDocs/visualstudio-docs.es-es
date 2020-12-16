@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: abrir documentos existentes mediante programación'
+description: Obtenga información sobre cómo usar el método Open para abrir un documento de Microsoft Word existente especificado por una ruta de acceso completa y un nombre de archivo.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eba4d110b06147db384a4d7aafe01c7d9f272ba3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 994afc6f0d8d9bb76aff56097d0a18b8c3f940d9
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85519904"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525558"
 ---
 # <a name="how-to-programmatically-open-existing-documents"></a>Cómo: abrir documentos existentes mediante programación
   El <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> método abre el documento de Word Microsoft Office existente especificado por una ruta de acceso completa y un nombre de archivo. Este método devuelve un <xref:Microsoft.Office.Interop.Word.Document> que representa el documento abierto.
@@ -44,7 +46,7 @@ ms.locfileid: "85519904"
 
 - Un documento denominado *NewDocument.doc* debe existir en un directorio denominado *Test* en la unidad C.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Cómo: crear nuevos documentos mediante programación](../vsto/how-to-programmatically-create-new-documents.md)
 - [Cómo: cerrar documentos mediante programación](../vsto/how-to-programmatically-close-documents.md)
 - [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)

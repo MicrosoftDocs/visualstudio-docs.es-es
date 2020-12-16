@@ -1,5 +1,7 @@
 ---
 title: Sincronizar el panel de tareas personalizado con el botón de la cinta
+description: Obtenga información acerca de cómo puede crear un panel de tareas personalizado que los usuarios pueden ocultar o mostrar haciendo clic en un botón de alternancia de la cinta de opciones.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ad910f94c6b6a4345f6973e84e02c85d4fe1f0e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7453d221cf57188a2c2f589492e4df59817f2cd9
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328336"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526092"
 ---
 # <a name="walkthrough-synchronize-a-custom-task-pane-with-a-ribbon-button"></a>Tutorial: sincronizar un panel de tareas personalizado con un botón de la cinta de opciones
   En este tutorial se muestra cómo crear un panel de tareas personalizado que los usuarios pueden ocultar o mostrar haciendo clic en un botón de alternancia de la cinta de opciones. Siempre se debe crear un elemento de interfaz de usuario, como un botón, en el que los usuarios puedan hacer clic para mostrar u ocultar el panel de tareas personalizado, porque las aplicaciones de Microsoft Office no proporcionan una manera predeterminada para que los usuarios muestren u oculten los paneles de tareas personalizados.
@@ -73,11 +75,11 @@ ms.locfileid: "67328336"
 
 2. En el cuadro de diálogo **Agregar nuevo elemento** , seleccione **Cinta (diseñador visual)**.
 
-3. Cambie el nombre de la nueva cinta de opciones por **ManageTaskPaneRibbon**y haga clic en **Agregar**.
+3. Cambie el nombre de la nueva cinta de opciones por **ManageTaskPaneRibbon** y haga clic en **Agregar**.
 
      El archivo **ManageTaskPaneRibbon.cs** o **ManageTaskPaneRibbon.vb** se abre en el diseñador de la cinta de opciones y muestra una pestaña y un grupo predeterminados.
 
-4. En el diseñador de la cinta de opciones, haga clic en **group1**para seleccionarlo.
+4. En el diseñador de la cinta de opciones, haga clic en **group1** para seleccionarlo.
 
 5. En la ventana **Propiedades** , establezca el valor de la propiedad **Label** en **Administrador de panel de tareas**.
 
@@ -94,7 +96,7 @@ ms.locfileid: "67328336"
 
 1. En el menú **Proyecto** , haga clic en **Agregar control de usuario**.
 
-2. En el cuadro de diálogo **Agregar nuevo elemento** , cambie el nombre del control de usuario a **TaskPaneControl**y haga clic en **Agregar**.
+2. En el cuadro de diálogo **Agregar nuevo elemento** , cambie el nombre del control de usuario a **TaskPaneControl** y haga clic en **Agregar**.
 
      Se abre el control de usuario en el diseñador.
 
@@ -119,7 +121,7 @@ ms.locfileid: "67328336"
      [!code-csharp[Trin_TaskPaneRibbonSynchronize#2](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs#2)]
      [!code-vb[Trin_TaskPaneRibbonSynchronize#2](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb#2)]
 
-5. Agregue el siguiente método a la clase `ThisAddIn`. Este método controla el evento <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> . Cuando el usuario cierra el panel de tareas haciendo clic en el botón **Cerrar** (X), este método actualiza el estado del botón de alternancia en la cinta de opciones.
+5. Agrega el método siguiente a la clase `ThisAddIn`: Este método controla el evento <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> . Cuando el usuario cierra el panel de tareas haciendo clic en el botón **Cerrar** (X), este método actualiza el estado del botón de alternancia en la cinta de opciones.
 
      [!code-csharp[Trin_TaskPaneRibbonSynchronize#3](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs#3)]
      [!code-vb[Trin_TaskPaneRibbonSynchronize#3](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb#3)]

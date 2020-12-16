@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: crear el primer complemento de VSTO para PowerPoint'
+description: Cree un complemento de nivel de aplicación para Microsoft PowerPoint. Esta característica está disponible para la propia aplicación, con independencia de qué presentaciones estén abiertas.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a50a47a813891151427707c371f1ebf3f75c336f
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 3e02da3484ce7c2beb35e643d3d90d8e37225e11
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584313"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524850"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-powerpoint"></a>Tutorial: crear el primer complemento de VSTO para PowerPoint
   En este tutorial se muestra cómo crear un complemento de VSTO para Microsoft Office PowerPoint. Las características que cree en este tipo de solución estarán disponibles para la propia aplicación, con independencia de qué presentaciones están abiertas. Para obtener más información, vea [información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -47,15 +49,15 @@ ms.locfileid: "91584313"
 
 - PowerPoint
 
-## <a name="create-the-project"></a>Crear el proyecto
+## <a name="create-the-project"></a>Creación del proyecto
 
 ### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto
 
 1. Inicie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. En el menú **Archivo** , seleccione **Nuevo**y haga clic en **Proyecto**.
+2. En el menú **Archivo** , seleccione **Nuevo** y haga clic en **Proyecto**.
 
-3. En el panel de plantillas, expanda **Visual C#** o **Visual Basic**y luego expanda **Office/SharePoint**.
+3. En el panel de plantillas, expanda **Visual C#** o **Visual Basic** y luego expanda **Office/SharePoint**.
 
 4. En el nodo **Office/SharePoint** expandido, seleccione el nodo **Complementos de Office** .
 
@@ -76,14 +78,14 @@ ms.locfileid: "91584313"
 
 ### <a name="to-add-a-text-box-to-each-new-slide"></a>Para agregar un cuadro de texto a cada nueva diapositiva
 
-1. En el archivo de código ThisAddIn, agregue el código siguiente a la clase `ThisAddIn` . Este código define un controlador de eventos para el evento [Microsoft. Office. Interop. PowerPoint. EApplication_Event. PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) del objeto de [aplicación](/previous-versions/office/developer/office-2010/ff764034(v=office.14)) .
+1. En el archivo de código ThisAddIn, agregue el código siguiente a la clase `ThisAddIn` . Este código define un controlador de eventos para el evento [Microsoft.Office.Interop.PowerPoint.EApplication_Event. PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) del objeto de [aplicación](/previous-versions/office/developer/office-2010/ff764034(v=office.14)) .
 
     Cuando el usuario agrega una nueva diapositiva a la presentación activa, este controlador de eventos agrega un cuadro de texto a la parte superior de la nueva diapositiva y agrega texto al cuadro de texto.
 
     [!code-vb[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_PowerPointAddInTutorial/ThisAddIn.vb#1)]
     [!code-csharp[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#1)]
 
-2. Si está usando C#, agregue el siguiente código al controlador de eventos `ThisAddIn_Startup` . Este código es necesario para conectar el `Application_PresentationNewSlide` controlador de eventos con el evento [Microsoft. Office. Interop. PowerPoint. EApplication_Event. PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) .
+2. Si está usando C#, agregue el siguiente código al controlador de eventos `ThisAddIn_Startup` . Este código es necesario para conectar el `Application_PresentationNewSlide` controlador de eventos con el evento [Microsoft.Office.Interop.PowerPoint.EApplication_Event. PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) .
 
     [!code-csharp[Trin_PowerPointAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#2)]
 
@@ -91,7 +93,7 @@ ms.locfileid: "91584313"
 
 - El campo `Application` de la clase `ThisAddIn` . El `Application` campo devuelve un objeto de [aplicación](/previous-versions/office/developer/office-2010/ff764034(v=office.14)) , que representa la instancia actual de PowerPoint.
 
-- `Sld`Parámetro del controlador de eventos para el evento [Microsoft. Office. Interop. PowerPoint. EApplication_Event. PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) . El `Sld` parámetro es un objeto [Slide](/previous-versions/office/developer/office-2010/ff763417(v=office.14)) , que representa la nueva diapositiva. Para obtener más información, vea [soluciones de PowerPoint](../vsto/powerpoint-solutions.md).
+- `Sld`Parámetro del controlador de eventos para el evento [Microsoft.Office.Interop.PowerPoint.EApplication_Event. PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) . El `Sld` parámetro es un objeto [Slide](/previous-versions/office/developer/office-2010/ff763417(v=office.14)) , que representa la nueva diapositiva. Para obtener más información, vea [soluciones de PowerPoint](../vsto/powerpoint-solutions.md).
 
 ## <a name="test-the-project"></a>Prueba del proyecto
  Al compilar y ejecutar el proyecto, compruebe que aparece el cuadro de texto en las diapositivas nuevas que agregue a una presentación.
@@ -130,7 +132,7 @@ ms.locfileid: "91584313"
 
 - Implementar complementos de VSTO para PowerPoint. Para obtener más información, vea [implementar una solución de Office](../vsto/deploying-an-office-solution.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Complementos de VSTO de programa](../vsto/programming-vsto-add-ins.md)
 - [Soluciones de PowerPoint](../vsto/powerpoint-solutions.md)
 - [Personalización de la interfaz de usuario de Office](../vsto/office-ui-customization.md)

@@ -1,5 +1,7 @@
 ---
 title: Usar controles de WPF en soluciones de Office
+description: Obtenga información sobre cómo puede usar controles de Windows Presentation Foundation (WPF) para diseñar interfaces de usuario en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 717e24315d1f6e57eda224ef17cc4ea5b5d550c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e041cda914cbf8aced4b19adfc80c601984c30e0
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73189752"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526439"
 ---
 # <a name="use-wpf-controls-in-office-solutions"></a>Usar controles de WPF en soluciones de Office
 
@@ -92,7 +94,7 @@ No puede agregar controles WPF directamente a los elementos de la interfaz de us
 
 ## <a name="host-wpf-controls-by-using-the-elementhost-class"></a>Hospedar controles de WPF mediante la clase ElementHost
 
-Visual Studio proporciona características que le ayudan a usar controles de Windows Forms en las soluciones de Office, pero no proporciona características similares para los controles WPF. Por ejemplo, puede Agregar controles Windows Forms a documentos y hojas de cálculo en tiempo de diseño arrastrando los controles del **cuadro de herramientas**o en tiempo de ejecución mediante métodos auxiliares. Sin embargo, estas herramientas no están disponibles para los controles de WPF.
+Visual Studio proporciona características que le ayudan a usar controles de Windows Forms en las soluciones de Office, pero no proporciona características similares para los controles WPF. Por ejemplo, puede Agregar controles Windows Forms a documentos y hojas de cálculo en tiempo de diseño arrastrando los controles del **cuadro de herramientas** o en tiempo de ejecución mediante métodos auxiliares. Sin embargo, estas herramientas no están disponibles para los controles de WPF.
 
 Los controles de WPF utilizan la clase <xref:System.Windows.Forms.Integration.ElementHost> como una capa de la integración entre un control de formularios Windows Forms y los controles de WPF. Al agregar controles de WPF a la solución en tiempo de diseño, Visual Studio genera automáticamente un objeto <xref:System.Windows.Forms.Integration.ElementHost>.
 
@@ -106,7 +108,7 @@ Para obtener más información sobre los problemas de arquitectura y diseño rel
 
 - [Interoperabilidad de WPF y Windows Forms](/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)
 
-- [Windows Forms controles y controles equivalentes de WPF](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)
+- [Controles de Windows Forms y controles equivalentes de WPF](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)
 
 Para obtener más información sobre cómo agregar controles de WPF a los controles de formularios y formularios Windows Forms en Visual Studio en tiempo de diseño, vea los temas siguientes:
 
@@ -116,7 +118,7 @@ Para obtener más información sobre cómo agregar controles de WPF a los contro
 
 - [Tutorial: contenido de WPF de estilo](/dotnet/framework/winforms/advanced/walkthrough-styling-wpf-content)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Personalización de la interfaz de usuario de Office](../vsto/office-ui-customization.md)
 - [Información general sobre los controles de Windows Forms en documentos de Office](../vsto/windows-forms-controls-on-office-documents-overview.md)

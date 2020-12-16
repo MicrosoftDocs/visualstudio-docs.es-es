@@ -1,5 +1,7 @@
 ---
 title: Tutoriales de uso de Excel
+description: Obtenga información sobre cómo puede usar las personalizaciones de nivel de documento y los complementos de VSTO para automatizar Microsoft Excel. También puede personalizar la interfaz de usuario (UI).
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b802d61c4e30fa9dd13279c54c2a9bfa343f322f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba8a52e615a8e3d40b5c76be66f4b639aec6c07e
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255054"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525962"
 ---
 # <a name="walkthroughs-using-excel"></a>Tutoriales de uso de Excel
   En los siguientes tutoriales se muestran las maneras en las que puede usar las personalizaciones de nivel de documento y los complementos de VSTO para automatizar Microsoft Office Excel y personalizar la interfaz de usuario (UI).

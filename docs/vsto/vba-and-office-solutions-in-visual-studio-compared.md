@@ -1,5 +1,7 @@
 ---
 title: Comparación de las soluciones de VBA y Office en Visual Studio
+description: Obtenga información sobre las diferencias entre las soluciones de Microsoft Visual Basic para Aplicaciones (VBA) y Microsoft Office en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 24e7d3674712a17d940b94637db808c0d91d2d6a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4d07975061a7b2f5f655bf7f4339671f28fe14c9
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62982120"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526410"
 ---
 # <a name="vba-and-office-solutions-in-visual-studio-compared"></a>Comparación de las soluciones de VBA y Office en Visual Studio
   Microsoft Visual Basic para aplicaciones (VBA) utiliza código no administrado que se integra estrechamente con las aplicaciones de Office. Los proyectos de Microsoft Office creados con Visual Studio le permiten sacar partido de .NET Framework y las herramientas de diseño de Visual Studio.

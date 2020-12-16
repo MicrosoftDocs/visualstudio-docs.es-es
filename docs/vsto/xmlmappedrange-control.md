@@ -1,5 +1,7 @@
 ---
 title: Control XmlMappedRange (
+description: Obtenga información sobre que el control XmlMappedRange (es un intervalo que solo se crea cuando se asigna un elemento de esquema que no es de repetición a una celda de Microsoft Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 01417d9c08491edc882f7f758bb36e6184500e52
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f3b3fd140787d44cdd8364ce77d5292dfcd83f54
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985357"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525891"
 ---
 # <a name="xmlmappedrange-control"></a>Control XmlMappedRange (
   El <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> control es un intervalo que solo se crea cuando se asigna un elemento de esquema que no es de repetición a una celda de Microsoft Office Excel. Por ejemplo, cuando el `maxOccurs` atributo de un elemento de esquema es igual a 1. Después de que Visual Studio cree el intervalo asignado XML, puede programar directamente sin tener que recorrer el modelo de objetos de Excel. Solo se puede eliminar un <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> control dentro de Excel cuando se quita la asignación del elemento.
@@ -33,7 +35,7 @@ ms.locfileid: "72985357"
 
  Si los datos del conjunto de datos enlazado se actualizan mediante cualquier mecanismo, el <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> control reflejará los cambios.
 
-## <a name="formatting"></a>Formato
+## <a name="formatting"></a>Aplicación de formato
  Puede aplicar el mismo formato a un <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> control que puede aplicar a un <xref:Microsoft.Office.Interop.Excel.Range> . Esto incluye bordes, fuentes, formato de número y estilos.
 
 ## <a name="events"></a>Eventos
@@ -55,7 +57,7 @@ ms.locfileid: "72985357"
 
 - <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.SelectionChange>
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Automatizar Excel usando objetos extendidos](../vsto/automating-excel-by-using-extended-objects.md)
 - [Cómo: agregar controles XmlMappedRange (a hojas de cálculo](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)
 - [Enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md)

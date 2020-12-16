@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: recuperar datos almacenados en caché de un libro en un servidor'
+description: Obtenga información sobre cómo recuperar datos de un conjunto de datos almacenado en la memoria caché de un libro de Microsoft Excel sin iniciar Excel con la clase ServerDocument.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 69d5a9932a781260609a0b00c8576c9ecc85ad1d
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: f32ad4ffe44eb725953bc664acf4c4c38da4b11e
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584955"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524845"
 ---
 # <a name="walkthrough-retrieve-cached-data-from-a-workbook-on-a-server"></a>Tutorial: recuperar datos almacenados en caché de un libro en un servidor
   En este tutorial se muestra cómo recuperar datos de un conjunto de datos almacenado en la memoria caché de un libro de Microsoft Office Excel sin iniciar Excel mediante la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> clase.
@@ -66,9 +68,9 @@ ms.locfileid: "91584955"
 
 1. Inicie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. En el menú **Archivo** , seleccione **Nuevo**y haga clic en **Proyecto**.
+2. En el menú **Archivo** , seleccione **Nuevo** y haga clic en **Proyecto**.
 
-3. En el panel plantillas, expanda **Visual C#** o **Visual Basic**y, a continuación, haga clic en **Windows**.
+3. En el panel plantillas, expanda **Visual C#** o **Visual Basic** y, a continuación, haga clic en **Windows**.
 
 4. En la lista de plantillas de proyecto, seleccione **biblioteca de clases**.
 
@@ -82,7 +84,7 @@ ms.locfileid: "91584955"
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] agrega el proyecto **AdventureWorksDataSet** a **Explorador de soluciones** y abre el archivo de código *Class1.CS* o *Class1. VB* .
 
-9. En **Explorador de soluciones**, haga clic con el botón secundario en *Class1.CS* o *Class1. VB*y, a continuación, haga clic en **eliminar**. No necesita este archivo para este tutorial.
+9. En **Explorador de soluciones**, haga clic con el botón secundario en *Class1.CS* o *Class1. VB* y, a continuación, haga clic en **eliminar**. No necesita este archivo para este tutorial.
 
 ## <a name="define-a-dataset-in-the-class-library-project"></a>Definición de un conjunto de DataSet en el proyecto de biblioteca de clases
  Defina un conjunto de datos con tipo que contenga los datos de la base de datos AdventureWorksLT para SQL Server 2005. Más adelante en este tutorial, hará referencia a este conjunto de información desde un proyecto de libro de Excel y un proyecto de aplicación de consola.
@@ -93,15 +95,15 @@ ms.locfileid: "91584955"
 
 1. En **Explorador de soluciones**, haga clic en el proyecto **AdventureWorksDataSet** .
 
-2. Si la ventana **orígenes de datos** no está visible, puede mostrarla en la barra de menús y elegir **Ver**  >  **otros**  >  **orígenes de datos**de Windows.
+2. Si la ventana **orígenes de datos** no está visible, puede mostrarla en la barra de menús y elegir **Ver**  >  **otros**  >  **orígenes de datos** de Windows.
 
 3. Elija **Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de orígenes de datos**.
 
-4. Haga clic en **Base de datos**y luego en **Siguiente**.
+4. Haga clic en **Base de datos** y luego en **Siguiente**.
 
 5. Si tiene una conexión existente a la base de datos AdventureWorksLT, elija esta conexión y haga clic en **siguiente**.
 
-    De lo contrario, haga clic en **Nueva conexión**y use el cuadro de diálogo **Agregar conexión** para crear la nueva conexión. Para obtener más información, consulte [Agregar nuevas conexiones](../data-tools/add-new-connections.md).
+    De lo contrario, haga clic en **Nueva conexión** y use el cuadro de diálogo **Agregar conexión** para crear la nueva conexión. Para obtener más información, consulte [Agregar nuevas conexiones](../data-tools/add-new-connections.md).
 
 6. En la página **Guardar cadena de conexión en el archivo de configuración de la aplicación** , haga clic en **Siguiente**.
 
@@ -126,9 +128,9 @@ ms.locfileid: "91584955"
 
 ### <a name="create-the-excel-workbook-project"></a>Crear el proyecto de libro de Excel
 
-1. En **Explorador de soluciones**, haga clic con el botón secundario en la solución **AdventureWorksDataSet** , seleccione **Agregar**y, a continuación, haga clic en **nuevo proyecto**.
+1. En **Explorador de soluciones**, haga clic con el botón secundario en la solución **AdventureWorksDataSet** , seleccione **Agregar** y, a continuación, haga clic en **nuevo proyecto**.
 
-2. En el panel de plantillas, expanda **Visual C#** o **Visual Basic**y luego expanda **Office/SharePoint**.
+2. En el panel de plantillas, expanda **Visual C#** o **Visual Basic** y luego expanda **Office/SharePoint**.
 
 3. En el nodo **Office/SharePoint** expandido, seleccione el nodo **Complementos de Office** .
 
@@ -155,7 +157,7 @@ ms.locfileid: "91584955"
 
      Se abre el **Asistente para la configuración de orígenes de datos** .
 
-3. Haga clic en **objeto**y, a continuación, en **siguiente**.
+3. Haga clic en **objeto** y, a continuación, en **siguiente**.
 
 4. En la página **Seleccione el objeto al que desea enlazar** , haga clic en **Agregar referencia**.
 
@@ -202,7 +204,7 @@ ms.locfileid: "91584955"
 
 ### <a name="build-and-run-the-project"></a>Compilación y ejecución del proyecto
 
-1. En **Explorador de soluciones**, haga clic con el botón derecho en el proyecto **AdventureWorksReport** , elija **depurar**y, a continuación, haga clic en **Iniciar nueva instancia**.
+1. En **Explorador de soluciones**, haga clic con el botón derecho en el proyecto **AdventureWorksReport** , elija **depurar** y, a continuación, haga clic en **Iniciar nueva instancia**.
 
      El proyecto se compila y el libro se abre en Excel. Verifique lo siguiente:
 
@@ -217,9 +219,9 @@ ms.locfileid: "91584955"
 ## <a name="create-a-console-application-project"></a>Crear un proyecto de aplicación de consola
  Cree un proyecto de aplicación de consola que se utilizará para modificar los datos del conjunto de datos almacenado en la memoria caché del libro.
 
-1. En **Explorador de soluciones**, haga clic con el botón secundario en la solución **AdventureWorksDataSet** , seleccione **Agregar**y, a continuación, haga clic en **nuevo proyecto**.
+1. En **Explorador de soluciones**, haga clic con el botón secundario en la solución **AdventureWorksDataSet** , seleccione **Agregar** y, a continuación, haga clic en **nuevo proyecto**.
 
-2. En el panel **tipos de proyecto** , expanda **Visual C#** o **Visual Basic**y, a continuación, haga clic en **Windows**.
+2. En el panel **tipos de proyecto** , expanda **Visual C#** o **Visual Basic** y, a continuación, haga clic en **Windows**.
 
 3. En el panel **Plantillas**, seleccione **Aplicación de consola**.
 
@@ -242,7 +244,7 @@ ms.locfileid: "91584955"
 
 4. En **Explorador de soluciones**, haga clic con el botón derecho en el proyecto **DataReader** y haga clic en **Agregar referencia**.
 
-5. En la pestaña **proyectos** , seleccione **AdventureWorksDataSet**y haga clic en **Aceptar**.
+5. En la pestaña **proyectos** , seleccione **AdventureWorksDataSet** y haga clic en **Aceptar**.
 
 6. Abra el archivo *Program.CS* o *Module1. VB* en el editor de código.
 
@@ -283,7 +285,7 @@ ms.locfileid: "91584955"
 
 ### <a name="test-the-workbook"></a>Probar el libro
 
-1. En **Explorador de soluciones**, haga clic con el botón secundario en el proyecto **DataReader** , seleccione **depurar**y, a continuación, haga clic en **Iniciar nueva instancia**.
+1. En **Explorador de soluciones**, haga clic con el botón secundario en el proyecto **DataReader** , seleccione **depurar** y, a continuación, haga clic en **Iniciar nueva instancia**.
 
      Compruebe que la aplicación indica que el conjunto de filas local tiene 295 filas.
 
@@ -294,7 +296,7 @@ ms.locfileid: "91584955"
 
 - Cambiar los datos de un conjunto de datos almacenado en memoria caché sin iniciar Excel. Para obtener más información, vea [Tutorial: cambiar los datos almacenados en caché de un libro en un servidor](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Tutorial: insertar datos en un libro en un servidor](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md)
 - [Tutorial: cambiar los datos almacenados en caché de un libro en un servidor](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)

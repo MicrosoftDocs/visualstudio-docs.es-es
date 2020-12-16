@@ -1,5 +1,7 @@
 ---
 title: Tutoriales de personalización de la interfaz de usuario de Office
+description: Obtenga información sobre cómo personalizar la interfaz de usuario (UI) de Microsoft Office aplicaciones mediante personalizaciones de nivel de documento y complementos de VSTO.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e961479fc500e53133c62337478368878bf26893
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5e9cd19687e15cd30c8196183f43709d4ba5149d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254128"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525107"
 ---
 # <a name="office-ui-customization-walkthroughs"></a>Tutoriales de personalización de la interfaz de usuario de Office
   En los siguientes tutoriales se muestran mecanismos para personalizar la interfaz de usuario (UI) de las aplicaciones de Microsoft Office mediante personalizaciones de nivel del documento y complementos de VSTO.
@@ -64,7 +66,7 @@ ms.locfileid: "71254128"
 
 - [Tutorial: actualizar un gráfico en una hoja de cálculo mediante botones de radio](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md) Muestra los conceptos básicos del cambio de estilos de gráfico mediante los botones de opción de una hoja de cálculo de Excel.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Tutoriales de uso de Word](../vsto/walkthroughs-using-word.md)
 - [Tutoriales de uso de Excel](../vsto/walkthroughs-using-excel.md)
 - [Datos en los tutoriales de soluciones de Office](../vsto/data-in-office-solutions-walkthroughs.md)

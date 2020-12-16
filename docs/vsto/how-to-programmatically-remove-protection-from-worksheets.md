@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: quitar la protección de las hojas de cálculo mediante programación'
+description: Obtenga información sobre cómo puede usar Visual Studio para quitar mediante programación la protección de una hoja de cálculo de Microsoft Excel.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0660c703d94111d042b943935c64546d87bc61fa
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 86140e5595fc539a06a9eb8381e50b503e31708d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584812"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526631"
 ---
 # <a name="how-to-programmatically-remove-protection-from-worksheets"></a>Cómo: quitar la protección de las hojas de cálculo mediante programación
   Puede quitar mediante programación la protección de una hoja de cálculo de Microsoft Office Excel.
@@ -44,7 +46,7 @@ ms.locfileid: "91584812"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#18](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#18)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#18](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#18)]
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Trabajar con hojas de cálculo](../vsto/working-with-worksheets.md)
 - [Cómo: proteger hojas de cálculo mediante programación](../vsto/how-to-programmatically-protect-worksheets.md)
 - [Cómo: proteger libros mediante programación](../vsto/how-to-programmatically-protect-workbooks.md)

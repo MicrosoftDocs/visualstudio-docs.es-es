@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: mostrar los comentarios de una hoja de cálculo mediante programación'
+description: Obtenga información sobre cómo puede mostrar y ocultar comentarios en una hoja de cálculo de Microsoft Excel en el nivel de documento o en el nivel de aplicación mediante programación.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0fc84e2726cd7a70b8fc59b0f1ac2b3377f9c4af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 33ae98f6b6e4508f76323b0b06dab3693f0ac5d0
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543369"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525845"
 ---
 # <a name="how-to-programmatically-display-worksheet-comments"></a>Cómo: mostrar los comentarios de una hoja de cálculo mediante programación
   Puede mostrar y ocultar comentarios en las hojas de cálculo de Microsoft Office Excel mediante programación.
@@ -39,7 +41,7 @@ ms.locfileid: "85543369"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#21](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#21)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#21](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#21)]
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Trabajar con hojas de cálculo](../vsto/working-with-worksheets.md)
 - [Cómo: agregar y eliminar comentarios de hojas de cálculo mediante programación](../vsto/how-to-programmatically-add-and-delete-worksheet-comments.md)
 - [Información general sobre elementos y controles host](../vsto/host-items-and-host-controls-overview.md)

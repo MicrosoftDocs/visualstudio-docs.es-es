@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: abrir archivos de texto como libros mediante programación'
+description: Obtenga información sobre cómo puede usar Visual Studio para abrir mediante programación un archivo de texto como un libro de Microsoft Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7a0f1b384aafb491183a750f17653ab55f2003e2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f471161a8563718f69f14ea341ab099fbf138d8
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85519838"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525531"
 ---
 # <a name="how-to-programmatically-open-text-files-as-workbooks"></a>Cómo: abrir archivos de texto como libros mediante programación
   Puede abrir un archivo de texto como un libro de. Debe pasar el nombre del archivo de texto que desea abrir. Puede especificar varios parámetros opcionales, como el número de fila en el que se va a iniciar el análisis y el formato de columna de los datos del archivo.
@@ -37,7 +39,7 @@ ms.locfileid: "85519838"
 
 - Archivo de texto `Test.txt` que se va a almacenar en la unidad C.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Trabajar con libros](../vsto/working-with-workbooks.md)
 - [Cómo: abrir libros mediante programación](../vsto/how-to-programmatically-open-workbooks.md)
 - [Cómo: crear nuevos libros mediante programación](../vsto/how-to-programmatically-create-new-workbooks.md)

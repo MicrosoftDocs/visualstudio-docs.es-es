@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: elegir como destino la interfaz de usuario multilingüe de Office'
+description: Obtenga información sobre cómo puede usar Visual Studio para establecer como destino mediante programación la interfaz de usuario multilingüe de Microsoft Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5217f2d6cf67eced00c0c84b9bacda94573c5a09
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6b6771b202515148b757e811fdfc63fc0d5052e9
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537506"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526624"
 ---
 # <a name="how-to-target-the-office-multilingual-user-interface"></a>Cómo: elegir como destino la interfaz de usuario multilingüe de Office
   La interfaz de usuario multilingüe (MUI) es una característica Microsoft Office que proporciona al usuario final la capacidad de cambiar el idioma de la interfaz de usuario (UI). Por ejemplo, un usuario final que trabaja con una interfaz de usuario en inglés puede cambiar el idioma de la interfaz de usuario a español.
