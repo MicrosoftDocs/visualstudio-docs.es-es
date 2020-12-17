@@ -1,5 +1,7 @@
 ---
 title: Menus (elemento) | Microsoft Docs
+description: El elemento menus define todos los menús y las barras de herramientas que implementa un VSPackage. Este artículo contiene un ejemplo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6382abed36aba66087066bf5664ae55682e39e2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: abc5621784579c295393d77c792013dd0c737871
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702587"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615582"
 ---
 # <a name="menus-element"></a>Menus (elemento)
 Define todos los menús y las barras de herramientas que implementa un VSPackage.
@@ -77,6 +79,6 @@ Define todos los menús y las barras de herramientas que implementa un VSPackage
 <Commands>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Cómo agrega VSPackages los elementos de la interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md)

@@ -1,5 +1,7 @@
 ---
 title: Localizar comandos de menú | Microsoft Docs
+description: Obtenga información sobre cómo proporcionar texto localizado para comandos de menús y barras de herramientas mediante la creación de archivos. Vsct localizados y archivos. resx localizados para el VSPackage.
+ms.custom: SEO-VS-2020
 ms.date: 10/08/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -15,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c1c158fd689cbcae18fec5d3306e6d6fadb169f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 51f3692a4539eddbf35e24de8024eadd39031080
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904555"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615608"
 ---
 # <a name="localize-menu-commands"></a>Localizar comandos de menú
 
@@ -165,7 +167,7 @@ Debe modificar el archivo *AssemblyInfo.CS* y el archivo de proyecto para incorp
 
      Esto crea un ensamblado principal y ensamblados de recursos para cada idioma. Para obtener información sobre la localización del proceso de implementación, consulte [localizar paquetes VSIX](../extensibility/localizing-vsix-packages.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Extender menús y comandos](../extensibility/extending-menus-and-commands.md)
 - [Globalizar y localizar aplicaciones](../ide/globalizing-and-localizing-applications.md)

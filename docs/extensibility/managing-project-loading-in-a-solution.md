@@ -1,5 +1,7 @@
 ---
 title: Administrar la carga de proyectos en una solución | Microsoft Docs
+description: Obtenga información sobre cómo los desarrolladores pueden reducir los tiempos de carga de la solución y administrar el comportamiento de carga del proyecto mediante la creación de un administrador de carga de soluciones.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21cd5e7e557e795db49aea7a14e8e4cc7caa0422
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 093db17990d538bf72ddeab9ba9da2b8db30d8f0
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702733"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616362"
 ---
 # <a name="manage-project-loading-in-a-solution"></a>Administrar la carga de proyectos en una solución
 Las soluciones de Visual Studio pueden contener un gran número de proyectos. El comportamiento predeterminado de Visual Studio es cargar todos los proyectos de una solución en el momento en que se abre la solución y no permitir que el usuario tenga acceso a ninguno de los proyectos hasta que todos ellos hayan terminado de cargarse. Cuando el proceso de carga del proyecto dure más de dos minutos, se muestra una barra de progreso que muestra el número de proyectos cargados y el número total de proyectos. El usuario puede descargar proyectos mientras trabaja en una solución con varios proyectos, pero este procedimiento tiene algunas desventajas: los proyectos descargados no se compilan como parte de un comando recompilar solución y no se muestran las descripciones de IntelliSense de tipos y miembros de proyectos cerrados.

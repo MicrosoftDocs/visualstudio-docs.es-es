@@ -1,5 +1,7 @@
 ---
 title: Finalización de palabras en un servicio de lenguaje heredado | Microsoft Docs
+description: La finalización de palabras se puede admitir para un servicio de lenguaje heredado en el SDK de Visual Studio. Obtenga información sobre cómo se implementan los servicios de lenguaje heredados en un VSPackage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 948751cde5b6b710d911a30ca26a61e5411bba4d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 489b43c825e3512e1bd33bc732833de84aed54c3
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703174"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616280"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>Finalización de palabras en un servicio de lenguaje heredado
 La finalización de palabras rellena los caracteres que faltan en una palabra parcialmente tipada. Si solo hay una posible finalización, la palabra se completa cuando se escribe el carácter de finalización. Si la palabra parcial coincide con más de una posibilidad, se muestra una lista de posibles finalizaciones. Un carácter de finalización puede ser cualquier carácter que no se use para los identificadores.

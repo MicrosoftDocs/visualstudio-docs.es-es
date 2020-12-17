@@ -1,5 +1,7 @@
 ---
 title: Administrar VSPackages | Microsoft Docs
+description: Obtenga información acerca de cómo administrar VSPackages, para saber cuándo puede utilizar simplemente la administración predeterminada de VSPackage proporcionada por Visual Studio y cómo y cuándo personalizarla.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60745d07679ae53b85d169473ed37ab314b67624
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6a040777671a5d6a4378e9b2ad68b2ffa2fabaeb
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702649"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615745"
 ---
 # <a name="manage-vspackages"></a>Administración de VSPackages
 En la mayoría de los casos no es necesario preocuparse por la administración de VSPackages, ya que las plantillas de proyecto y de elemento registran y cargan el paquete automáticamente. Sin embargo, en algunas circunstancias, puede que tenga que aprender un poco más para administrar el paquete.
@@ -44,5 +46,5 @@ Las extensiones pueden afectar al rendimiento de la carga de la solución y el i
 ## <a name="troubleshoot-vspackages"></a>Solucionar problemas de VSPackages
  Descubra las técnicas para solucionar problemas de los VSPackages que no cargan o están experimentando errores: [solución de problemas de VSPackages](../extensibility/troubleshooting-vspackages.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [VSPackages](../extensibility/internals/vspackages.md)

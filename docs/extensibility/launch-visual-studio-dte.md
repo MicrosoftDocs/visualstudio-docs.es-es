@@ -1,5 +1,7 @@
 ---
 title: Inicio de Visual Studio con DTE
+description: Obtenga información sobre cómo iniciar Visual Studio con DTE para admitir instalaciones en paralelo de las versiones principales. En este artículo se incluye un ejemplo de código.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 04/26/2019
 ms.topic: conceptual
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3217835571ac659ac2cef2b46cb45a1c02ba2584
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c84d44b3f775f384ed15a0ede1ef9c68ad2fd5a6
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703036"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615882"
 ---
 # <a name="launch-visual-studio-using-dte"></a>Inicio de Visual Studio con DTE
 
@@ -185,7 +187,7 @@ namespace ConsoleLauncherApp
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Localización de Visual Studio](locating-visual-studio.md)
 - [Tutorial: acceso al objeto DTE desde una extensión de editor](walkthrough-accessing-the-dte-object-from-an-editor-extension.md)

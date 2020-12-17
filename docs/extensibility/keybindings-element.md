@@ -1,5 +1,7 @@
 ---
 title: KeyBindings (elemento) | Microsoft Docs
+description: El elemento KeyBindings agrupa los elementos KeyBinding y otras agrupaciones de enlaces de teclado. Este artículo contiene un ejemplo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: df1720286007d8f6acf073c21f5b2dcc8486782c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 928637d8103a69eafd3bda4446a55bb7523f83a8
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703136"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616096"
 ---
 # <a name="keybindings-element"></a>KeyBindings (elemento)
 El elemento KeyBindings agrupa los elementos KeyBinding y otras agrupaciones de enlaces de teclado.
@@ -65,6 +67,6 @@ El elemento KeyBindings agrupa los elementos KeyBinding y otras agrupaciones de 
 </KeyBindings>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Elemento KeyBinding](../extensibility/keybinding-element.md)
 - [Archivos de tabla de comandos de Visual Studio (. Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

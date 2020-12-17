@@ -1,5 +1,7 @@
 ---
 title: Administrar asociaciones de archivo en paralelo | Microsoft Docs
+description: Si el VSPackage proporciona asociaciones de archivo, decida cómo administrar las instalaciones en paralelo en las que una versión concreta de Visual Studio abre un archivo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c284fe7ef4c2d07051a8524860583cb634e13bf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 477afbd5bc4586d8c46db11b036364f8058133b0
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702759"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616349"
 ---
 # <a name="manage-side-by-side-file-associations"></a>Administrar asociaciones de archivos en paralelo
 
@@ -23,7 +25,7 @@ Si el VSPackage proporciona asociaciones de archivo, debe decidir cómo administ
 
 Los usuarios esperan que una nueva versión de un producto sea compatible con versiones anteriores, de modo que los archivos existentes se puedan cargar en una nueva versión sin perder datos. Idealmente, el VSPackage puede cargar y guardar los formatos de archivo de las versiones anteriores. Si no es así, debe ofrecer para actualizar el formato de archivo a la nueva versión del VSPackage. El inconveniente de este enfoque es que el archivo actualizado no se puede abrir en la versión anterior.
 
-Para evitar este problema, puede cambiar las extensiones cuando los formatos de archivo sean incompatibles. Por ejemplo, la versión 1 del VSPackage podría usar la extensión, *. mypkg10*y la versión 2 podría usar la extensión, *. mypkg20*. Esta diferencia identifica el VSPackage que abre un archivo determinado. Si agrega VSPackages más recientes a la lista de programas que están asociados a una extensión anterior, los usuarios pueden hacer clic con el botón derecho en el archivo y elegir abrirlo en un VSPackage más reciente. En ese momento, el VSPackage puede ofrecer para actualizar el archivo al nuevo formato o abrir el archivo y mantener la compatibilidad con versiones anteriores del VSPackage.
+Para evitar este problema, puede cambiar las extensiones cuando los formatos de archivo sean incompatibles. Por ejemplo, la versión 1 del VSPackage podría usar la extensión, *. mypkg10* y la versión 2 podría usar la extensión, *. mypkg20*. Esta diferencia identifica el VSPackage que abre un archivo determinado. Si agrega VSPackages más recientes a la lista de programas que están asociados a una extensión anterior, los usuarios pueden hacer clic con el botón derecho en el archivo y elegir abrirlo en un VSPackage más reciente. En ese momento, el VSPackage puede ofrecer para actualizar el archivo al nuevo formato o abrir el archivo y mantener la compatibilidad con versiones anteriores del VSPackage.
 
 > [!NOTE]
 > Puede combinar estos enfoques. Por ejemplo, puede ofrecer compatibilidad con versiones anteriores si carga un archivo y una oferta más antiguos para actualizar el formato de archivo cuando el usuario lo guarda.
@@ -65,7 +67,7 @@ Si desea que varios VSPackages en paralelo usen la misma extensión, debe elegir
   |CA_SetDevenvLatest_2003|DEVENV_EXE_2003 Y NO DEVENV_EXE_2005|420|
   |CA_SetDevenvLatest_2005|DEVENV_EXE_2005|430|
 
-   Puede usar la propiedad DEVENV_EXE_LATEST de la tabla del registro del paquete de Windows Installer para escribir el valor predeterminado de HKEY_CLASSES_ROOT la clave **ShellOpenCommand*ProgID*** , [DEVENV_EXE_LATEST] "%1".
+   Puede usar la propiedad DEVENV_EXE_LATEST de la tabla del registro del paquete de Windows Installer para escribir el valor predeterminado de HKEY_CLASSES_ROOT la clave **ShellOpenCommand *ProgID*** , [DEVENV_EXE_LATEST] "%1".
 
 - Ejecute un programa iniciador compartido que pueda tomar la mejor elección de las versiones disponibles de VSPackage.
 
@@ -85,7 +87,7 @@ Al desinstalar un VSPackage que escribe las entradas del registro para las asoci
 
 - Proporcione una página o un cuadro de diálogo de opciones de configuración que permita a los usuarios elegir asociaciones de archivos y reclamar asociaciones perdidas. Indicar a los usuarios que lo ejecuten después de la desinstalación.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Registrar las extensiones de nombre de archivo para implementaciones en paralelo](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)
 - [Registrar verbos para las extensiones de nombre de archivo](../extensibility/registering-verbs-for-file-name-extensions.md)

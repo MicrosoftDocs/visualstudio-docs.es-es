@@ -1,5 +1,7 @@
 ---
 title: Administración de proyectos universales de Windows | Microsoft Docs
+description: Para admitir aplicaciones universales de Windows, las extensiones de Visual Studio que administran proyectos deben tener en cuenta la estructura de proyecto de aplicación universal de Windows.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
@@ -8,24 +10,24 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83e3b07bc3373070953709ffe913f37529e74bc7
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: f86edd33e7719dc326aa2c5d252d11322509de64
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012313"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615569"
 ---
 # <a name="manage-universal-windows-projects"></a>Administrar proyectos universales de Windows
 
 Las aplicaciones universales de Windows son aplicaciones que tienen como destino Windows 8.1 y Windows Phone 8,1, lo que permite a los desarrolladores usar código y otros recursos en ambas plataformas. El código compartido y los recursos se mantienen en un proyecto compartido, mientras que el código y los recursos específicos de la plataforma se mantienen en proyectos independientes, uno para Windows y el otro para Windows Phone. Para obtener más información sobre las aplicaciones universales de Windows, consulte [aplicaciones universales de Windows](/windows/uwp/get-started/create-uwp-apps). Las extensiones de Visual Studio que administran proyectos deben tener en cuenta que los proyectos de aplicaciones universales de Windows tienen una estructura que difiere de las aplicaciones de una sola plataforma. En este tutorial se muestra cómo navegar por el proyecto compartido y administrar los elementos compartidos.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
 
 A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS después. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ### <a name="navigate-the-shared-project"></a>Navegar por el proyecto compartido
 
-1. Cree un proyecto VSIX de C# denominado **TestUniversalProject**. (**Archivo**  >  **Nueva**  >  **Proyecto** y, **C#** a continuación,  >  **extensibilidad**de C#  >  **paquete de Visual Studio**). Agregue una plantilla de elemento de proyecto de **comando personalizado** (en el **Explorador de soluciones**, haga clic con el botón secundario en el nodo del proyecto y seleccione **Agregar**  >  **nuevo elemento**y, a continuación, vaya a **extensibilidad**). Asigne al archivo el nombre **TestUniversalProject**.
+1. Cree un proyecto VSIX de C# denominado **TestUniversalProject**. (**Archivo**  >  **Nueva**  >  **Proyecto** y, a continuación,  >  **extensibilidad** de C#  >  **paquete de Visual Studio**). Agregue una plantilla de elemento de proyecto de **comando personalizado** (en el **Explorador de soluciones**, haga clic con el botón secundario en el nodo del proyecto y seleccione **Agregar**  >  **nuevo elemento** y, a continuación, vaya a **extensibilidad**). Asigne al archivo el nombre **TestUniversalProject**.
 
 2. Agregue una referencia a *Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll* y *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll* (en la sección de **extensiones** ).
 
@@ -291,7 +293,7 @@ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el c
     output.OutputStringThreadSafe("set active project: " + platformCaption +'\n');
     ```
 
-16. Pruébelo ahora. Presione F5 para iniciar la instancia experimental. Cree un proyecto de aplicación de Windows universal Hub en la instancia experimental (en el cuadro de diálogo **nuevo proyecto** , en **Visual C#**  >  **Windows**  >  **Windows 8**  >  **universal**  >  **Hub App**). Una vez cargada la solución, vaya al menú **herramientas** y haga clic en **invocar TestUniversalProject**y, a continuación, compruebe el texto en el panel de **salida** . Debe ver algo parecido a lo siguiente:
+16. Pruébelo ahora. Presione F5 para iniciar la instancia experimental. Cree un proyecto de aplicación de Windows universal Hub en la instancia experimental (en el cuadro de diálogo **nuevo proyecto** , en **Visual C#**  >  **Windows**  >  **Windows 8**  >  **universal**  >  **Hub App**). Una vez cargada la solución, vaya al menú **herramientas** y haga clic en **invocar TestUniversalProject** y, a continuación, compruebe el texto en el panel de **salida** . Debe ver algo parecido a lo siguiente:
 
     ```
     Found shared project: HubApp.Shared
@@ -353,7 +355,7 @@ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el c
     output.OutputStringThreadSafe(string.Format("Shared item full path: {0}\n", fullPath));
     ```
 
-4. Pruébelo ahora. Presione **F5** para iniciar la instancia experimental. Cree un proyecto de aplicación de C# universal Hub en la instancia experimental (en el cuadro de diálogo **nuevo proyecto** , **Visual C#**  >  **Windows**  >  **Windows 8**  >  **universal**  >  **Hub App**) vaya al menú **herramientas** , haga clic en **invocar TestUniversalProject**y, a continuación, compruebe el texto del panel de **salida** . Debe ver algo parecido a lo siguiente:
+4. Pruébelo ahora. Presione **F5** para iniciar la instancia experimental. Cree un proyecto de aplicación de C# universal Hub en la instancia experimental (en el cuadro de diálogo **nuevo proyecto** , **Visual C#**  >  **Windows**  >  **Windows 8**  >  **universal**  >  **Hub App**) vaya al menú **herramientas** , haga clic en **invocar TestUniversalProject** y, a continuación, compruebe el texto del panel de **salida** . Debe ver algo parecido a lo siguiente:
 
     ```
     Found shared project: HubApp.Shared
@@ -549,7 +551,7 @@ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el c
     this.ModifyFileNameInProject(sharedHier, fullPath);
     ```
 
-11. Compile y ejecute el proyecto. Cree una aplicación de C# universal Hub en la instancia experimental, vaya al menú **herramientas** y haga clic en **invocar TestUniversalProject**y compruebe el texto en el panel de salida general. El nombre del primer elemento del proyecto compartido (esperamos que sea el archivo *app. Xaml* ) debe cambiarse y debería ver que se <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed> ha desencadenado el evento. En este caso, puesto que el cambio de nombre de *app. Xaml* hace que también se cambie el nombre de *app.Xaml.CS* , debería ver cuatro eventos (dos para cada proyecto de plataforma). (Los eventos DTE no realizan el seguimiento de los elementos del proyecto compartido). Debería ver dos <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> eventos (uno para cada uno de los proyectos de plataforma), pero no <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> los eventos.
+11. Compile y ejecute el proyecto. Cree una aplicación de C# universal Hub en la instancia experimental, vaya al menú **herramientas** y haga clic en **invocar TestUniversalProject** y compruebe el texto en el panel de salida general. El nombre del primer elemento del proyecto compartido (esperamos que sea el archivo *app. Xaml* ) debe cambiarse y debería ver que se <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed> ha desencadenado el evento. En este caso, puesto que el cambio de nombre de *app. Xaml* hace que también se cambie el nombre de *app.Xaml.CS* , debería ver cuatro eventos (dos para cada proyecto de plataforma). (Los eventos DTE no realizan el seguimiento de los elementos del proyecto compartido). Debería ver dos <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> eventos (uno para cada uno de los proyectos de plataforma), pero no <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> los eventos.
 
 12. Ahora intente cambiar el nombre de un archivo en un proyecto de plataforma y puede ver la diferencia en los eventos que se desencadenan. Agregue el código siguiente en `ShowMessageBox` después de la llamada a `ModifyFileName` .
 
@@ -566,4 +568,4 @@ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el c
     this.ModifyFileNameInProject(activePlatformHier, unsharedPath);
     ```
 
-13. Compile y ejecute el proyecto. Cree un proyecto universal de C# en la instancia experimental, vaya al menú **herramientas** y haga clic en **invocar TestUniversalProject**y compruebe el texto en el panel de salida general. Después de cambiar el nombre del archivo en el proyecto de plataforma, debería ver un <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> evento y un <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> evento. Puesto que no se ha podido cambiar el archivo porque no se propagan otros archivos y, como los cambios en los elementos de un proyecto de plataforma, no se propagan en ningún lugar, solo hay uno de estos eventos.
+13. Compile y ejecute el proyecto. Cree un proyecto universal de C# en la instancia experimental, vaya al menú **herramientas** y haga clic en **invocar TestUniversalProject** y compruebe el texto en el panel de salida general. Después de cambiar el nombre del archivo en el proyecto de plataforma, debería ver un <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> evento y un <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> evento. Puesto que no se ha podido cambiar el archivo porque no se propagan otros archivos y, como los cambios en los elementos de un proyecto de plataforma, no se propagan en ningún lugar, solo hay uno de estos eventos.

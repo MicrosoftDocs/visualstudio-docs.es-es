@@ -1,5 +1,7 @@
 ---
 title: Localizar paquetes VSIX | Microsoft Docs
+description: Para obtener información sobre cómo localizar un paquete VSIX, cree un archivo Extension. vsixlangpack para cada idioma de destino y, a continuación, colóquelos en la carpeta correcta.
+ms.custom: SEO-VS-2020
 ms.date: 10/26/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d2d4222e45d56447951e86d558af9983a0d1cc9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cc9f7055145748e0625788e7487bb978911bae7f
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702900"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615543"
 ---
 # <a name="localizing-vsix-packages"></a>Adaptación de paquetes VSIX
 
@@ -53,7 +55,7 @@ Al crear un archivo vsixlangpack, debe establecer la `Include in Vsix` propiedad
 
 1. En **Explorador de soluciones**, haga clic con el botón secundario en el archivo Extension. vsixlangpack y, a continuación, haga clic en **propiedades**.
 
-2. En la **cuadrícula de propiedades**, haga clic en **incluir en VSIX**y establezca su valor en `true` .
+2. En la **cuadrícula de propiedades**, haga clic en **incluir en VSIX** y establezca su valor en `true` .
 
 ## <a name="example"></a>Ejemplo
 
