@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 567af541b819186bda3dc869628c2812be9888b8
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 48dcb2d01e53502c371595048666fd94c267b6ec
+ms.sourcegitcommit: fed8782b2fb2ca18a90746b6e7e0b33f3fde10f1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96039593"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97646390"
 ---
 # <a name="code-analysis-faq"></a>Preguntas más frecuentes sobre análisis de código
 
@@ -100,9 +100,9 @@ Los [analizadores de StyleCop](https://github.com/DotNetAnalyzers/StyleCopAnalyz
 
 **P**: ¿Dónde está la página de propiedades análisis de código para la solución?
 
-**R**: la página de propiedades análisis de código en el nivel de solución se quitó en favor del grupo de propiedades compartidas más confiables. Para administrar el análisis de código en el nivel de proyecto, la página de propiedades análisis de código sigue estando disponible. (En el caso de los proyectos administrados, también se recomienda migrar de conjuntos de reglas a EditorConfig para la configuración de la regla).  Para compartir conjuntos de archivos entre varios proyectos de una solución o un repositorio, se recomienda definir un grupo de propiedades con la propiedad CodeAnalysisRuleSet en un archivo de propiedades compartidas/destinos o directorio. props/Directory. targets. Si no tiene ninguna propiedad o destino común que se importen todos los proyectos, considere la posibilidad de [Agregar un grupo de propiedades de este tipo a un directorio. props o un directorio. targets en un directorio de soluciones de nivel superior, que se importa automáticamente en todos los archivos de proyecto definidos en el directorio o en sus](../msbuild/customize-your-build.md)subdirectorios.
+**R**: la página de propiedades análisis de código en el nivel de solución se quitó en favor del grupo de propiedades compartidas más confiables. Para administrar el análisis de código en el nivel de proyecto, la página de propiedades análisis de código sigue estando disponible. (En el caso de los proyectos administrados, también se recomienda migrar de conjuntos de reglas a EditorConfig para la configuración de la regla).  Para compartir conjuntos de archivos entre varios proyectos de una solución o un repositorio, se recomienda definir un grupo de propiedades con la propiedad [CodeAnalysisRuleSet](../code-quality/using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project) en un archivo de propiedades compartidas/destinos o *directorio. props/Directory. targets* . Si no tiene ninguna de estas propiedades o destinos comunes que importen todos los proyectos, considere la posibilidad de agregar un grupo de propiedades de este tipo a un [directorio. props o un archivo Directory. targets](../msbuild/customize-your-build.md) en un directorio de soluciones de nivel superior, que se importa automáticamente en todos los archivos de proyecto definidos en el directorio o en sus subdirectorios.
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Consulte también
 
 - [Información general de los analizadores](roslyn-analyzers-overview.md)
 - [Configuración de la convención de codificación de .NET para EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options)
