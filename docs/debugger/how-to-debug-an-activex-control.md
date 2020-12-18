@@ -1,5 +1,7 @@
 ---
 title: Depuración de un control ActiveX | Microsoft Docs
+Description: Vea cómo depurar un control ActiveX. Debe especificar un archivo ejecutable como contenedor. Puede hacerlo en las páginas de Propiedades del proyecto o al comenzar la depuración.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -24,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc15d42aa2984a7257687eeb051ce754bace9e81
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: a0458fb4981642d3f8386edd4c3605ae7b902a14
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852170"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398680"
 ---
 # <a name="how-to-debug-an-activex-control"></a>Procedimiento Depuración de un control ActiveX
 

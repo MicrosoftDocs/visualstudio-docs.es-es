@@ -2,19 +2,19 @@
 title: Consejos para mejorar el rendimiento
 description: Descubra cómo puede optimizar ciertas características de Visual Studio que puede que no esté usando para mejorar el rendimiento.
 ms.custom: SEO-VS-2020
-ms.date: 08/13/2020
+ms.date: 12/14/2020
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f4c36987e198be576d843b984be14ddea824919
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: b3655407ce94395f74ebe5362e7006075ef1e790
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479620"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97488185"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Sugerencias y trucos de rendimiento de Visual Studio
 
@@ -71,7 +71,7 @@ Si es habitual que se quede sin memoria durante las sesiones de depuración, pue
 
     Se recomienda deshabilitar la generación de perfiles de CPU después de su uso. Esta característica puede consumir grandes cantidades de recursos. Una vez habilitada la generación de perfiles de CPU, este estado se mantiene en las sesiones de depuración posteriores, por lo que merece la pena desactivarla de forma explícita al terminar. Puede ahorrar algunos recursos si deshabilita las herramientas de diagnóstico durante la depuración si no necesita las características proporcionadas.
 
-    Para deshabilitar las **herramientas de diagnóstico**, inicie una sesión de depuración, elija **Herramientas** > **Opciones** > **Habilitar herramientas de diagnóstico** y anule la selección de la opción.
+    Para deshabilitar las **Herramientas de diagnóstico**, inicie una sesión de depuración, seleccione **Herramientas** > **Opciones** > **Depuración** > **General** y anule la selección de la opción **Habilitar herramientas de diagnóstico durante la depuración**.
 
     Para más información, vea [Herramientas de generación de perfiles](../profiling/profiling-feature-tour.md).
 

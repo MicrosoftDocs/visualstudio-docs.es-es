@@ -1,5 +1,7 @@
 ---
 title: para depurar excepciones de ASP.NET | Microsoft Docs
+Description: Vea cómo configurar el depurador para que se detenga cuando se produzcan excepciones no controladas en una aplicación de ASP.NET. Puede asegurarse de que la interrupción se produzca en código que no sea del sistema.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 011094eed88245e3cd83b092a3f1b2e47bc77ae8
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 945e289f3da55c8884f4ec2cd115c65dbe3be237
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852157"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398654"
 ---
 # <a name="how-to-debug-aspnet-exceptions"></a>Procedimiento Depuración de excepciones de ASP.NET
 La depuración de excepciones es una parte importante del desarrollo de una aplicación [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] sólida. Encontrará información general sobre cómo depurar excepciones en [Administración de excepciones con el depurador](../debugger/managing-exceptions-with-the-debugger.md).

@@ -8,12 +8,12 @@ ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: e640d19659861a03d0f97abc799344bebb14b936
-ms.sourcegitcommit: f78960320798e2c6b33145cee77a2221f031603c
+ms.openlocfilehash: 7eed02ffda47de9c6a788d186d41dcc087852e64
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94878314"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524089"
 ---
 # <a name="git-experience-in-visual-studio"></a>Experiencia de Git en Visual Studio
 
@@ -187,9 +187,9 @@ Para personalizar la configuración de Git en un nivel de repositorio, así como
 
 :::image type="content" source="media/git-options-settings.png" alt-text="Cuadro de diálogo Opciones donde puede elegir la configuración de personalización en el IDE de Visual Studio":::
 
-## <a name="how-to-use-the-legacy-team-explorer-experience-in-visual-studio"></a>Cómo usar la experiencia de Team Explorer heredada en Visual Studio
+## <a name="how-to-use-the-full-team-explorer-experience-in-visual-studio"></a>Cómo usar la experiencia de Team Explorer heredada en Visual Studio
 
-La nueva experiencia de Git es el sistema de control de versiones predeterminado en Visual Studio 2019 a partir de la [versión 16.8](/visualstudio/releases/2019/release-notes/). Sin embargo, si desea desactivarla, puede hacerlo. Vaya a **Herramientas** > **Opciones** > **Entorno** > **Características en versión preliminar** y active la casilla **New Git User Experience** (Nueva experiencia de usuario de Git), que le cambiará a la experiencia de Team Explorer heredada.
+La nueva experiencia de Git es el sistema de control de versiones predeterminado en Visual Studio 2019 a partir de la [versión 16.8](/visualstudio/releases/2019/release-notes/). Sin embargo, si desea desactivarla, puede hacerlo. Vaya a **Herramientas** > **Opciones** > **Entorno** > **Características en versión preliminar** y active la casilla **New Git User Experience** (Nueva experiencia de usuario de Git), que le cambiará a la experiencia de Team Explorer para Git.
 
 :::image type="content" source="media/git-opt-new-user-experience.png" alt-text="Sección Características en versión preliminar del cuadro de diálogo Opciones de Visual Studio":::
 

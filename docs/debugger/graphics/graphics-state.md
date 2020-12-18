@@ -1,5 +1,7 @@
 ---
 title: Estado de gráficos | Microsoft Docs
+description: Para solucionar los problemas de representación, vea el estado de los gráficos de cada llamada a Draw. Se resaltan las partes del estado que cambiaron desde la llamada anterior.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a07e198c6ff4e432f708ac1751e69bbef77a22c4
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: de8f3c356cfe05aade3e4f2197b3f7429967a259
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823770"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994021"
 ---
 # <a name="graphics-state"></a>Estado de gráficos
 La ventana de estado de diagnóstico de gráficos de Visual Studio ofrece información sobre el estado activo de los gráficos en el momento del evento actual (por ejemplo, durante una llamada a draw).

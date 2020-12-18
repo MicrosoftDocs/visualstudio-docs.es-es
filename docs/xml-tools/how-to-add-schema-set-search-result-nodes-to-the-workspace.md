@@ -1,5 +1,5 @@
 ---
-title: Incorporación de nodos de resultados de búsqueda del conjunto de esquemas XML al área de trabajo
+title: Adición de nodos de resultados de búsqueda del conjunto de esquemas
 description: Descubra cómo agregar nodos que están resaltados en el Explorador de esquemas XML como el resultado de una búsqueda de palabra clave en el área de trabajo.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e306ec76b6089d822dfdcd154ff1947aef1c9cac
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: cffced7a0b680932a1f2b17bd1261e160563462c
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049182"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996284"
 ---
 # <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>Procedimiento Adición de nodos de resultados de búsqueda del conjunto de esquemas al área de trabajo
 

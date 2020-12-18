@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8e0718eb01f422ad435492304e77d73c14b4dee
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 2956372882d4449345d026e691a12afb2988054a
+ms.sourcegitcommit: 6ef4e46c786c5bbcc52cd9c30e5ddfca12ea8b3c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211180"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97050837"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Cómo notificar un problema con Visual Studio o con el Instalador de Visual Studio
 
@@ -65,7 +65,7 @@ Puede notificar un problema desde Visual Studio o desde su instalador. Con la h
 
 En el caso de que a una incidencia le falte información importante, le asignaremos el estado pertinente para indicar que **se requiere más información**. Agregaremos un comentario en la incidencia con la información específica que necesitamos y recibirá una notificación por correo electrónico. Si no recibimos la información en un plazo de siete días, le enviaremos un recordatorio. Tras ese recordatorio, cerraremos la solicitud después de 14 días de inactividad.
 
-1. Siga el vínculo del correo electrónico al informe de problemas o vaya a Mis comentarios para ver todos los informes en el estado **Necesita más información**.
+1. Siga el vínculo del correo electrónico al informe de problemas o vaya a la página principal para ver todos los informes en el estado **Necesita más información**.
 
     ![Mis comentarios](../ide/media/feedback-my-feedback.png)
 

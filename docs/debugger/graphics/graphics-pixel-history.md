@@ -1,5 +1,7 @@
 ---
 title: Historial de píxeles de gráfico | Microsoft Docs
+description: Para solucionar los problemas de representación, vea el historial de un píxel específico. El Historial de píxeles de gráfico muestra los efectos de los eventos de Direct3D.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cb1b7a869915eebc561e1baf47082dd5dbc00df
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 0b12264c610d291ff49be0524663141a59082e9e
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72735482"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995309"
 ---
 # <a name="graphics-pixel-history"></a>Historial de píxeles de gráfico
 La ventana Historial de píxeles de gráfico del Analizador de gráficos de Visual Studio ayuda a comprender cómo afectan los eventos de Direct3D que se producen durante un fotograma del juego o la aplicación a un píxel concreto.

@@ -1,5 +1,7 @@
 ---
 title: Depuración de un sombreador de cálculo mediante diagnóstico de gráficos
+description: Vea un ejemplo de solución de problemas de un sombreador de cálculo. Verá el uso de Lista de eventos gráficos, Pila de llamadas de eventos gráficos y Etapas de canalización de gráficos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 69287456-644b-4aff-bd03-b1bbb2abb82a
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19ae8472aaafbad1a04485ff2e3a2637f345bc00
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 939b1906a32c48aa1ad32f2fb03372a74afc43ec
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66262862"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398719"
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Tutorial: Uso de Diagnóstico de gráficos para depurar un sombreador de cálculo
 En este tutorial se muestra cómo usar las herramientas de diagnóstico de gráficos de Visual Studio para investigar un sombreador de cálculo que genera resultados incorrectos.

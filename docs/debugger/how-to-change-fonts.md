@@ -1,5 +1,7 @@
 ---
 title: para cambiar fuentes | Microsoft Docs
+Description: Consulte cómo establecer la fuente, el estilo de fuente y el tamaño de fuente de las ventanas de Spy++. Puede guardar las opciones como valores predeterminados para futuras ventanas de Spy++.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77789ed5d262be87076631e978fbc46e972158ae
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 93a3a0c536e9f3cfc13d2372038651c0765149cf
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851494"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398408"
 ---
 # <a name="how-to-change-fonts"></a>Procedimiento Cambio de fuentes
 Puede cambiar la fuente, el estilo de fuente y el tamaño de fuente de las ventanas de Spy++.

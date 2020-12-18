@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95e35037ba07dcba1f51da7b47b7fca40a447dfb
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 58faf100c61a25ae014bdcc0b09d161e924ad5c9
+ms.sourcegitcommit: 21ac4a0c8ffac3964b75604678b12e0955e0159b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850031"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97098532"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Ejecutar pruebas unitarias con el Explorador de pruebas
 
@@ -186,7 +186,7 @@ En el marco de pruebas unitarias de Microsoft para aplicaciones administradas, e
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|La categoría de propietario se define desde el marco de pruebas unitarias y requiere un valor de cadena del propietario.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|La categoría de prioridad se define desde el marco de pruebas unitarias y requiere un valor entero de la prioridad.|
-|<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute>|El atributo TestCategory permite proporcionar una categoría sin ningún valor.|
+|<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute>|El atributo TestCategory le permite especificar la categoría de una prueba unitaria.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>|El atributo TestProperty permite definir un par categoría-valor de rasgo.|
 
 
@@ -234,7 +234,16 @@ También puede activar o desactivar las casillas de los grupos primarios de la j
 
 ![Archivo XML de lista de reproducción](../test/media/vs-2019/test-explorer-playlist-xml-file.png)
 
-Si quiere crear una lista de reproducción para los rasgos, use el formato siguiente. Asegúrese de que haya un espacio entre el nombre de `TestCategory` y `[Value]`.
+Si desea crear una lista de reproducción para los rasgos, use el formato siguiente para MSTest.
+```xml
+<Playlist Version="2.0">
+    <Rule Name="Includes" Match="Any">
+        <Property Name="Trait" Value="SchemaUpdateBasic" />
+    </Rule>
+</Playlist>
+```
+
+Use el siguiente formato para xUnit. Asegúrese de que haya un espacio entre el nombre de `TestCategory` y `[Value]`.
 ```xml
 <Playlist Version="2.0">
   <Rule Name="Includes" Match="Any">

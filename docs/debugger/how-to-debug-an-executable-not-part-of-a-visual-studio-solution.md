@@ -1,7 +1,8 @@
 ---
 title: Depuración de una aplicación que no forma parte de una solución de Visual Studio
 titleSuffix: ''
-ms.custom: ''
+Description: Vea cómo depurar una aplicación que no forma parte de una solución de Visual Studio. Es posible que pueda asociar el depurador de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/21/2020
 ms.topic: how-to
 dev_langs:
@@ -20,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8cb71acb9c1c332f269f77129fa2d11a9a874f8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd4d5497a4c29502fe4d7e4825b1767991c79298
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350152"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398667"
 ---
 # <a name="debug-an-app-that-isnt-part-of-a-visual-studio-solution-c-c-visual-basic-f"></a>Depuración de una aplicación que no forma parte de una solución de Visual Studio (C++, C#, Visual Basic y F#)
 

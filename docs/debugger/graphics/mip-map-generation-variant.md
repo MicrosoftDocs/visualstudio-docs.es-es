@@ -1,5 +1,7 @@
 ---
 title: Variante de generación de asignación de MIP | Microsoft Docs
+description: Si la generación de asignación de MIP muestra un aumento del rendimiento, indica que usa texturas sin habilitar asignaciones de MIP y no obtiene el máximo partido de la caché de texturas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3b4b3583-0b01-4f5d-aacb-3f96d19111d9
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 422a68f4e33733aa2874c639f0dcc799cd3ec795
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: d939fb537ac6aed75d9b0f7bda2970a85f9175ad
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72734899"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994972"
 ---
 # <a name="mip-map-generation-variant"></a>Mip-map (Variante de generación)
 Habilita la asignación de MIP en las texturas que no son objetivos de presentación.

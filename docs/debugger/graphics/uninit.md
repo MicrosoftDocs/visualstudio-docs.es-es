@@ -1,5 +1,7 @@
 ---
 title: UnInit | Microsoft Docs
+description: Use el método UnInit() de VsgDbg para finalizar y cerrar el archivo de registro de gráficos y liberar recursos de registro.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 4cd4fc0b-974a-4e61-9ea8-0aaa1a0c52ea
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef809b646a0af58e46b8c68dc5a8cf7633692bcc
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1f79b39ced4f3285815412b9b231692868e5e00f
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72734818"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996063"
 ---
 # <a name="uninit"></a>UnInit
 Finaliza el archivo de registro de gráficos, lo cierra y libera los recursos utilizados mientras la aplicación estaba grabando activamente información de gráficos.

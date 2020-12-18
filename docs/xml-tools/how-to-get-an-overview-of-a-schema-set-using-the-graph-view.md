@@ -1,6 +1,6 @@
 ---
-title: 'Diseñador de esquemas XML: Obtención de información de un conjunto de esquemas con la vista Gráfico'
-description: Aprenda a usar la vista Gráfico del Diseñador de esquemas XML para obtener una vista general de los nodos de un conjunto de esquemas y de las relaciones entre los nodos.
+title: Obtención de información general de un conjunto de esquemas
+description: 'Diseñador de esquemas XML: Aprenda a usar la vista Gráfico del Diseñador de esquemas XML para obtener una vista general de los nodos de un conjunto de esquemas y de las relaciones entre los nodos.'
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,14 +10,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 553b9f2d84f70c75ebcee40cdffe044237c23a5f
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 699167f8fe3662bbb162706f3f9fc6e5d53d82dc
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398493"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995296"
 ---
-# <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>Procedimiento Obtención de información general de un conjunto de esquemas con la vista Gráfico
+# <a name="how-to-get-an-overview-of-a-schema-set-by-using-the-graph-view"></a>Procedimiento: Obtención de información general de un conjunto de esquemas con la vista Gráfico
 
 En este tema se describe cómo utilizar la [vista Gráfico](../xml-tools/graph-view.md) para obtener una vista general de los nodos en un conjunto de esquemas y de las relaciones entre los nodos.
 

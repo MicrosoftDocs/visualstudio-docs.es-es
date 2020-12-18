@@ -1,6 +1,7 @@
 ---
 title: Averiguar quién está pasando un valor de parámetro erróneo | Microsoft Docs
-ms.custom: seodec18
+Description: Puede averiguar qué código llama a la función y pasa un valor de parámetro incorrecto. Obtenga información sobre cómo usar un punto de interrupción condicional para hacer esto.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bd6aaa912a384acbb41c42bfa4785eda52ae78a
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: de87da994dfab59d5df618671737003beea9678b
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599871"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398316"
 ---
 # <a name="how-can-i-find-out-who-is-passing-a-wrong-parameter-value"></a>Cómo averiguar quién está pasando un valor de parámetro erróneo
 ## <a name="problem-description"></a>Descripción del problema

@@ -1,5 +1,7 @@
 ---
 title: para controlar la vista Mensajes | Microsoft Docs
+Description: Puede elegir las ventanas y los tipos de mensajes que se muestran en una ventana de vista de mensajes, así como el formato de visualización de las líneas del mensaje. Consulta este artículo para obtener más información.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 917fc2af5ab09544201a6aa35c34611a89d7a277
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 58c99f0db1686a9f1dd8dcb13949eb6fe47f3fdc
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90850974"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398641"
 ---
 # <a name="how-to-control-messages-view"></a>Procedimiento Controlar la vista Mensajes
 Con Spy++, tiene un control considerable sobre el contenido de una ventana [Vista Mensajes](../debugger/messages-view.md). Puede [iniciar y detener](../debugger/how-to-start-and-stop-the-message-log-display.md) la representación de los mensajes en cualquier momento, y puede especificar lo siguiente:

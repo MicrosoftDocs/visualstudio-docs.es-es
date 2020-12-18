@@ -1,5 +1,6 @@
 ---
 title: Cambio de la máquina de reproducción de Diagnóstico de gráficos
+description: Reproduzca información de gráficos desde un registro de gráficos mediante el equipo local o un equipo o dispositivo remoto que reproduzca mejor el problema.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -9,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7b7f3f09495b760d4ee3ab8c20781bc337b1bb2
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 8b6ae19fde7397b97ebe087557d71a52303605ec
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810697"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995075"
 ---
 # <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>Procedimiento para cambiar la máquina de reproducción de Diagnóstico de gráficos
 Puede reproducir información de gráficos mediante el equipo local o un equipo o dispositivo remoto.

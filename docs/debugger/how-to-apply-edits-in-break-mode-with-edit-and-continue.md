@@ -1,6 +1,7 @@
 ---
 title: Aplicación de ediciones en el modo de interrupción con Editar y continuar | Microsoft Docs
-ms.custom: seodec18
+Description: Vea cómo usar Editar y continuar para editar el código de Visual Basic en modo de interrupción. Hay varias formas de entrar en el modo de interrupción.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -23,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: acdd5b85c77b177dfb5f6d8129594967e902337c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7b8e6ef8c41fbaf5aafa6b1fc9ef4216c773e75e
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350307"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398693"
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>Procedimiento Aplicación de ediciones en el modo de interrupción con Editar y continuar (Visual Basic)
 Puede utilizar la opción Editar y continuar para modificar el código en modo de interrupción y, posteriormente, continuar sin detener ni reiniciar la ejecución.

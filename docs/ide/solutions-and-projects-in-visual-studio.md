@@ -1,8 +1,8 @@
 ---
 title: Soluciones y proyectos
-description: Obtenga información sobre los proyectos y las soluciones de Visual Studio y aprenda a crear un nuevo proyecto con la herramienta Explorador de soluciones.
+description: Vea cómo son los proyectos y las soluciones de Visual Studio, cómo se crean proyectos nuevos a partir de una plantilla y cómo se pueden ver y administrar los proyectos en el Explorador de soluciones.
 ms.custom: SEO-VS-2020
-ms.date: 06/26/2020
+ms.date: 12/15/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.addnewitem
@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 949da02ac074e9740038fef7917655ca552a12f6
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 6504d3e7fe278e8713a897ffacefa1f22cec6a09
+ms.sourcegitcommit: f43e669f3597a4b07975b2bd2dce362a41a2e83f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480712"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97578258"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluciones y proyectos en Visual Studio
 
@@ -53,6 +53,8 @@ Los archivos de proyecto se basan en el [esquema XML de MSBuild](../msbuild/msbu
 
 Un proyecto está incluido dentro de una *solución*. A pesar de su nombre, una solución no es una "respuesta", sino simplemente un contenedor con uno o más proyectos relacionados, junto con información de compilación, la configuración de ventanas de Visual Studio y archivos varios que no estén asociados a un proyecto determinado. Una solución se describe mediante un archivo de texto (extensión *.sln*) con su propio formato único; no está diseñada para modificarse de forma manual.
 
+### <a name="solution-file"></a>Archivo de soluciones
+
 En Visual Studio se usan dos tipos de archivo ( *.sln* y *.suo*) para almacenar la configuración de las soluciones:
 
 |Comprobación de actualización|NOMBRE|Descripción|
@@ -60,13 +62,17 @@ En Visual Studio se usan dos tipos de archivo ( *.sln* y *.suo*) para almacenar 
 |.sln|Solución de Visual Studio|Organiza proyectos, elementos de proyecto y elementos de solución en la solución.|
 |.suo|Opciones de usuario de la solución|Almacena la configuración de nivel de usuario y las personalizaciones, como los puntos de interrupción.|
 
+### <a name="solution-folder"></a>Carpeta de solución
+
+Una "carpeta de solución" es una carpeta virtual que solo se encuentra en el **Explorador de soluciones**, donde se puede usar para agrupar proyectos en una solución. Si desea buscar un archivo de una solución en un equipo, vaya a **Herramientas** > **Opciones** > **Proyectos y soluciones** > **Ubicaciones**. Para obtener más información, vea [Cuadro de diálogo Opciones: Proyectos y soluciones > Ubicaciones](./reference/projects-solutions-locations-options.md).
+
 ## <a name="create-new-projects"></a>Crear nuevos proyectos
 
 La manera más fácil de crear un proyecto consiste en empezar desde una plantilla de proyecto para un tipo concreto de aplicación o sitio web. Una plantilla de proyecto consta de un conjunto básico de archivos de código generados previamente, archivos de configuración, recursos y configuraciones. Estas plantillas están disponibles en el cuadro de diálogo en que se crea un proyecto (**Archivo** > **Nuevo** > **Proyecto**). Para obtener más información, consulte [Creación de un proyecto nuevo en Visual Studio](create-new-project.md) y [Crear soluciones y proyectos](../ide/creating-solutions-and-projects.md).
 
 Si a menudo personaliza sus proyectos de una determinada manera, puede crear una plantilla de proyecto personalizada y usarla luego para crear proyectos. Para obtener más información, vea [Crear plantillas para proyectos y elementos](../ide/creating-project-and-item-templates.md).
 
-Cuando crea un proyecto, se guarda de forma predeterminada en *%USERPROFILE%\source\repos*. Puede cambiar esta ubicación en el ajuste **Ubicación del proyecto**, que encontrará en **Herramientas** > **Opciones** > **Proyectos y soluciones** > **Ubicaciones**. Para obtener más información, vea [Página Proyectos y soluciones, Cuadro de diálogo Opciones](../ide/reference/projects-and-solutions-options-dialog-box.md).
+Cuando crea un proyecto, se guarda de forma predeterminada en *%USERPROFILE%\source\repos*. Puede cambiar esta ubicación en el ajuste **Ubicación del proyecto**, que encontrará en **Herramientas** > **Opciones** > **Proyectos y soluciones** > **Ubicaciones**. Para obtener más información, vea [Página Proyectos y soluciones, Cuadro de diálogo Opciones](./reference/projects-and-solutions-options-dialog-box.md).
 
 ## <a name="solution-explorer"></a>Explorador de soluciones
 

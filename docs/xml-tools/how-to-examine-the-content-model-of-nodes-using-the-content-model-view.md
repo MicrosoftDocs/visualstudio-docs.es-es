@@ -1,5 +1,5 @@
 ---
-title: Examinen de nodos mediante la vista Modelo de contenido en el diseñador de esquemas XML
+title: Examinación del modelo de contenido de nodos
 description: Aprenda a usar la vista Modelo de contenido del Diseñador de esquemas XML para examinar el modelo de contenido de los nodos de un esquema XML.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -10,14 +10,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef330e6e189b9cee1126d5de48d55622fe8d9046
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: f3ce3d1a47125c446521ceb60a851322c37209d0
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399514"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995283"
 ---
-# <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Procedimiento Examinación del modelo de contenido de los nodos mediante la vista Modelo de contenido
+# <a name="how-to-examine-the-content-model-of-nodes-by-using-the-content-model-view"></a>Procedimiento: Examinación del modelo de contenido de los nodos mediante la vista Modelo de contenido
 
 En este tema se explica cómo explorar los nodos mediante la [vista Modelo de contenido](../xml-tools/content-model-view.md).
 

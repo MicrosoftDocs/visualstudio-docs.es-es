@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: Objetos ausentes debido al estado del dispositivo | Microsoft Docs'
+description: Siga una investigación que encuentre un estado de dispositivo mal configurado. Muestra el uso de la lista de eventos gráficos, las etapas de canalización de gráficos y el historial de píxeles de gráfico.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 1b0d2bbd-0729-4aa5-8308-70c5bf1468c5
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e85aa8fc5af3f32f117b112e8624962a49d90c6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c29e240d4be2f66fb0684bf5372d59fe5d4d825a
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62895455"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995062"
 ---
 # <a name="walkthrough-missing-objects-due-to-device-state"></a>Tutorial: Objetos ausentes debido al estado del dispositivo
 En este tutorial se muestra cómo usar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para investigar un objeto que falta como consecuencia de un estado de dispositivo mal configurado.
@@ -94,7 +96,7 @@ En este tutorial se muestra cómo usar el Diagnóstico de gráficos de [!INCLUDE
 
 1. Abra la ventana **Tabla de objetos gráficos** . En la barra de herramientas **Diagnóstico de gráficos** , elija **Tabla de objetos**.
 
-2. Busque el objeto **Dispositivo D3D10** en la **Tabla de objetos gráficos**y luego abra el objeto **Dispositivo D3D10** . Se abrirá una nueva pestaña **dispositivo d3d10** en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Para facilitar esta tarea, puede ordenar la **Tabla de objetos gráficos** por **Tipo**:
+2. Busque el objeto **Dispositivo D3D10** en la **Tabla de objetos gráficos** y luego abra el objeto **Dispositivo D3D10** . Se abrirá una nueva pestaña **dispositivo d3d10** en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Para facilitar esta tarea, puede ordenar la **Tabla de objetos gráficos** por **Tipo**:
 
     ![Tabla de objetos gráficos y estado del dispositivo relacionado](media/vsg_walkthru1_objtable.png "vsg_walkthru1_objtable")
 

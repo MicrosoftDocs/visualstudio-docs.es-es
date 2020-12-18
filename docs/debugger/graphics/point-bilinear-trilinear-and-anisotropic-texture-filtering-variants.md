@@ -1,5 +1,7 @@
 ---
 title: Variantes de filtrado puntual, bilineal, trilineal y anisotrópico de textura
+description: Si el costo de rendimiento de una variante de filtrado de punto, bilineal, trilineal o anisotrópico de textura es significativo, puede considerar si el costo por su uso vale la pena.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 57d14fc9-b5f7-45ee-9717-48086886742d
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 075fc9c4be3890ce9a63c1aa79762dbd8ceaeea5
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: c38869b4c8daa4cb4433f9f6a64afcc7398c9a9c
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407567"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996089"
 ---
 # <a name="point-bilinear-trilinear-and-anisotropic-texture-filtering-variants"></a>Variantes de filtrado puntual, bilineal, trilineal y anisotrópico de textura
 Reemplaza el modo de filtrado en las muestras de textura adecuadas.
@@ -54,9 +56,9 @@ Reemplaza el modo de filtrado en las muestras de textura adecuadas.
 
 - `D3D11_FILTER_ANISOTROPIC`
 
-  En la variante **Point Texture Filtering** , el modo de filtrado proporcionado por la aplicación se reemplaza por `D3D11_FILTER_MIN_MAG_MIP_POINT`; en la variante **Bilinear Texture Filtering** , se reemplaza por `D3D11_FILTER_MIN_MAG_LINEAR_MIP_POINT`; y en la variante **Trilinear Texture Filtering** , se reemplaza por `D3D11_FILTER_MIN_MAG_MIP_LINEAR`.
+  En la variante **Point Texture Filtering**, el modo de filtrado proporcionado por la aplicación se reemplaza por `D3D11_FILTER_MIN_MAG_MIP_POINT`; en la variante **Bilinear Texture Filtering**, se reemplaza por `D3D11_FILTER_MIN_MAG_LINEAR_MIP_POINT`; y en la variante **Trilinear Texture Filtering**, se reemplaza por `D3D11_FILTER_MIN_MAG_MIP_LINEAR`.
 
-  En la variante **Anisotropic Texture Filtering** , el modo de filtrado proporcionado por la aplicación se reemplaza por `D3D11_FILTER_ANISOTROPIC` y Max Anisotropy se establece en 16.
+  En la variante **Anisotropic Texture Filtering**, el modo de filtrado proporcionado por la aplicación se reemplaza por `D3D11_FILTER_ANISOTROPIC` y Max Anisotropy se establece en 16.
 
 ## <a name="restrictions-and-limitations"></a>Restricciones y limitaciones
  En Direct3D, el nivel de características 9.1 especifica una anisotropía máxima de 2x. Como la variante **Anisotropic Texture Filtering** intenta utilizar únicamente la anisotropía 16x, se produce un error en la reproducción cuando el análisis de fotogramas se ejecuta en un dispositivo con nivel de características 9.1. Entre los dispositivos actuales que están afectados por esta limitación se incluyen las tabletas de Microsoft basadas en ARM Surface RT y Surface 2. También pueden verse afectadas otras GPU que todavía pueden encontrarse en algunos ordenadores, pero en general se considera que están obsoletas y de cada vez son menos habituales.

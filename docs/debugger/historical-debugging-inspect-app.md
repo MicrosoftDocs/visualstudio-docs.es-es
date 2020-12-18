@@ -1,5 +1,7 @@
 ---
 title: Inspección de la aplicación con depuración histórica | Microsoft Docs
+description: Lleve a cabo una investigación que use el historial de depuración de IntelliTrace para hacer un seguimiento de un error en una aplicación de consola de C#.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 629b5d93-39b2-430a-b8ba-d2a47fdf2584
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: efabc8cd185daed4f018e3e4209e391b5bc39f44
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: d51327f67429071d08f6dfd02c0ec0a1fc55822f
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85350451"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398706"
 ---
 # <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio-c-visual-basic-c"></a>Inspección de la aplicación con depuración histórica de IntelliTrace en Visual Studio (C#, Visual Basic, C++)
 

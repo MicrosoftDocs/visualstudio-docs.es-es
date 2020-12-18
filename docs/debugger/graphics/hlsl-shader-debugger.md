@@ -1,5 +1,6 @@
 ---
 title: Depurador de sombreador HLSL | Microsoft Docs
+description: Use el depurador de HLSL en el Analizador de gráficos para entender cómo funciona el código HLSL en la aplicación. El depurador puede simular el subproceso de HLSL exacto que le interese.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 164c404f3bce6b8216092635e3489843039fb1eb
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 65f643d0f03f9754d580de8be95fb5c1f65a940d
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72735301"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995140"
 ---
 # <a name="hlsl-shader-debugger"></a>Depurador de sombreador HLSL
 El depurador de HLSL en el Analizador de gráficos de Visual Studio hace que sea más fácil entender cómo funciona el código del sombreador HLSL en condiciones reales de la aplicación.
