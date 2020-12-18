@@ -4,7 +4,7 @@ titleSuffix: ''
 description: Obtenga más información sobre las opciones de publicación de la aplicación con la herramienta de publicación.
 ms.custom:
 - SEO-VS-2020
-- contperfq1
+- contperf-fy21q1
 ms.date: 08/21/2020
 ms.topic: troubleshooting
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45fc0a58262a533416f630ede795d0060f9fc909
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 86a771b1eae096227a46378c8146e6aa5d9e2a06
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434498"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97683920"
 ---
 # <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>Implementación de la aplicación en una carpeta, IIS, Azure u otro destino
 
