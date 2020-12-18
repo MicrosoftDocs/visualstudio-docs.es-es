@@ -1,5 +1,6 @@
 ---
 title: Texto y ayuda de la interfaz de usuario para Visual Studio | Microsoft Docs
+description: Obtenga información sobre el texto de la interfaz de usuario y la terminología que se usa en la información de ayuda de Visual Studio.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
@@ -8,12 +9,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3247aeaa702b59722471c7d28e98957f04f3e07
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2795d766c43d6119fa50a12c4dcd1e2c72d79186
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698296"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668604"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Texto de la interfaz de usuario y ayuda para Visual Studio
 ## <a name="ui-text-and-terminology"></a><a name="BKMK_UITextAndTerminology"></a> Texto y terminología de la interfaz de usuario
@@ -60,11 +61,11 @@ ms.locfileid: "80698296"
 #### <a name="supplemental-instructions"></a>Instrucciones complementarias
  Las instrucciones complementarias proporcionan información adicional que ayuda al usuario a comprender los controles o las agrupaciones de control. También podría incluir el texto de la sugerencia necesario para comprender qué formato espera el control de entrada. Use instrucciones complementarias con moderación. Reservarlas para los casos en los que es probable que el usuario no comprenda completamente las ramificaciones de la elección que están realizando.
 
- ![Texto complementario en Visual Studio](../../extensibility/ux-guidelines/media/0601-b_supplementaltext1.png "0601-b_SupplementalText1")
+ ![Captura de pantalla que muestra el botón Opciones de Internet Explorer con texto complementario que describe el impacto de cambiar la configuración de las opciones.](../../extensibility/ux-guidelines/media/0601-b_supplementaltext1.png "0601-b_SupplementalText1")
 
  **Texto complementario en Visual Studio**
 
- ![Texto complementario en Visual Studio](../../extensibility/ux-guidelines/media/0601-c_supplementaltext2.png "0601-c_SupplementalText2")
+ ![Captura de pantalla del cuadro de diálogo elegir control de código fuente de Visual Studio que muestra texto complementario que describe cada una de las opciones del sistema de control de código fuente.](../../extensibility/ux-guidelines/media/0601-c_supplementaltext2.png "0601-c_SupplementalText2")
 
  **Texto complementario en Visual Studio**
 
@@ -136,15 +137,15 @@ ms.locfileid: "80698296"
 
 - En lugar de la etiqueta de control:
 
-     ![Texto de sugerencia en Visual Studio](../../extensibility/ux-guidelines/media/0601-f_hinttext1.png "0601-f_HintText1")
+     ![Captura de pantalla de un control desplegable con el texto de sugerencia en lugar de la etiqueta de control que lee "Explorador de soluciones de búsqueda (Ctrl +;)".](../../extensibility/ux-guidelines/media/0601-f_hinttext1.png "0601-f_HintText1")
 
 - Con un verbo, que proporciona instrucciones:
 
-     ![Texto de sugerencia en Visual Studio](../../extensibility/ux-guidelines/media/0601-g_hinttext2.png "0601-g_HintText2")
+     ![Captura de pantalla de un cuadro de texto con el texto de sugerencia en el control que dice "escriba su nombre".](../../extensibility/ux-guidelines/media/0601-g_hinttext2.png "0601-g_HintText2")
 
 - Con texto que indica una entrada obligatoria:
 
-     ![Texto de sugerencia en Visual Studio](../../extensibility/ux-guidelines/media/0601-h_hinttext3.png "0601-h_HintText3")
+     ![Captura de pantalla de un cuadro de texto con el texto de sugerencia en el control que indica " \< required \> ".](../../extensibility/ux-guidelines/media/0601-h_hinttext3.png "0601-h_HintText3")
 
 #### <a name="watermark-text"></a>Texto de marca de agua
  En una superficie de diseño vacía, el texto debe indicar qué hacer y proporcionar vínculos para abrir otras ventanas relacionadas, si es necesario:
@@ -304,7 +305,7 @@ ms.locfileid: "80698296"
 
  Cuando se crea el cuadro de diálogo, envía el procedimiento de cuadro de diálogo a una pila e invoca el cuadro de diálogo con un procedimiento de cuadro de diálogo de preprocesamiento llamado **DialogPreProc**. ¿Cuándo **?** , se envía un **WM_SYSCOMMAND** de **SC_CONTEXTHELP** al cuadro de diálogo. **DialogPreProc** captura este comando y lo cambia a un mensaje **WM_HELP** , que se pasa al procedimiento de diálogo original.
 
- La mayoría de los cuadros de diálogo creados por el entorno tienen un botón ayuda en el cuadro de diálogo. Cuando se muestra el cuadro de diálogo **, el botón** ayuda se oculta automáticamente y solo el el botón funciona. Si el **?** el botón se quita o se cambia en Windows, esta solución permite retroceder rápidamente a los botones de ayuda originales.
+ La mayoría de los cuadros de diálogo creados por el entorno tienen un botón ayuda en el cuadro de diálogo. Cuando se muestra el cuadro de diálogo **, el botón** ayuda se oculta automáticamente y solo el el botón funciona. Si el  el botón se quita o se cambia en Windows, esta solución permite retroceder rápidamente a los botones de ayuda originales.
 
  Esta solución hace cuatro suposiciones que podrían provocar errores:
 
@@ -420,7 +421,7 @@ public class HelpForm : Form
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Fuentes y formato de Visual Studio](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md)
 - [Diseño para Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md)
 - [Notificaciones y progreso para Visual Studio](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)

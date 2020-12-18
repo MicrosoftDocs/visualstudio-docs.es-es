@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9427895644686c5c3b50311c8a3ab3ee036a6f4
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 6ba78ff7d38d993394072aa9dd18a7a8fa8cbb9d
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862466"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668708"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Extensibilidad del sistema de proyectos de Visual Studio C++ y integración del conjunto de herramientas
 
@@ -68,11 +68,11 @@ Estos valores de propiedad especifican nombres de carpeta en la `$(VCTargetsPath
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*PlatformToolsets*\\ \
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)`
 
-La `$(VCTargetsPath)` \\ *Platforms* \\ carpeta Platforms se utiliza cuando `$(ApplicationType)` está vacía, para los proyectos de escritorio de Windows.
+La `$(VCTargetsPath)` \\  \\ carpeta Platforms se utiliza cuando `$(ApplicationType)` está vacía, para los proyectos de escritorio de Windows.
 
 ### <a name="add-a-new-platform-toolset"></a>Agregar un nuevo conjunto de herramientas de la plataforma
 
-Para agregar un nuevo conjunto de herramientas, por ejemplo, "mi Toolset" para la plataforma Win32 existente, cree una carpeta mi *Toolset* en `$(VCTargetsPath)` * \\ Platforms \\ Win32 \\ \\ PlatformToolsets*y cree archivos *Toolset. props* y *Toolset. targets* en ella.
+Para agregar un nuevo conjunto de herramientas, por ejemplo, "mi Toolset" para la plataforma Win32 existente, cree una carpeta mi *Toolset* en `$(VCTargetsPath)` *\\ Platforms \\ Win32 \\ \\ PlatformToolsets* y cree archivos *Toolset. props* y *Toolset. targets* en ella.
 
 Cada nombre de carpeta de *PlatformToolsets* aparece en el cuadro de diálogo de **propiedades del proyecto** como un conjunto de herramientas de la **plataforma** disponible para la plataforma especificada, como se muestra aquí:
 
@@ -82,7 +82,7 @@ Cree carpetas *de un conjunto de* herramientas y archivos *Toolset. props* y *To
 
 ### <a name="add-a-new-platform"></a>Agregar una nueva plataforma
 
-Para agregar una nueva plataforma, por ejemplo, "mi plataforma", cree una carpeta de la *plataforma* en `$(VCTargetsPath)` * \\ \\ plataformas*y cree archivos *Platform. default. props*, *Platform. props*y *Platform. targets* en ella. Cree también una `$(VCTargetsPath)` carpeta * \\ \\ Platforms** \\ PlatformToolsets \\ * de<strong><em>Platform</em></strong>y cree al menos un conjunto de herramientas en ella.
+Para agregar una nueva plataforma, por ejemplo, "mi plataforma", cree una carpeta de la *plataforma* en `$(VCTargetsPath)` *\\ \\ plataformas* y cree archivos *Platform. default. props*, *Platform. props* y *Platform. targets* en ella. Cree también una `$(VCTargetsPath)` carpeta *\\ \\ Platforms**\\ PlatformToolsets \\* de <strong><em>Platform</em></strong>y cree al menos un conjunto de herramientas en ella.
 
 Todos los nombres de carpeta de la carpeta *Platforms* de cada `$(ApplicationType)` y `$(ApplicationTypeRevision)` aparecen en el IDE como opciones de **plataforma** disponibles para un proyecto.
 
@@ -90,7 +90,7 @@ Todos los nombres de carpeta de la carpeta *Platforms* de cada `$(ApplicationTyp
 
 ### <a name="add-a-new-application-type"></a>Agregar un nuevo tipo de aplicación
 
-Para agregar un nuevo tipo de aplicación, cree una carpeta *MyApplicationType* en `$(VCTargetsPath)` * \\ tipo \\ de aplicación* y cree un archivo *predeterminados. props* en ella. Se requiere al menos una revisión para un tipo de aplicación, por lo que también debe crear una `$(VCTargetsPath)` carpeta de * \\ tipo de aplicación \\ MyApplicationType \\ 1,0* y crear un archivo *defaults. props* en ella. También debe crear una carpeta `$(VCTargetsPath)` * \\ ApplicationType \\ MyApplicationType \\ 1,0 \\ Platforms* y crear al menos una plataforma en ella.
+Para agregar un nuevo tipo de aplicación, cree una carpeta *MyApplicationType* en `$(VCTargetsPath)` *\\ tipo \\ de aplicación* y cree un archivo *predeterminados. props* en ella. Se requiere al menos una revisión para un tipo de aplicación, por lo que también debe crear una `$(VCTargetsPath)` carpeta de *\\ tipo de aplicación \\ MyApplicationType \\ 1,0* y crear un archivo *defaults. props* en ella. También debe crear una carpeta `$(VCTargetsPath)` *\\ ApplicationType \\ MyApplicationType \\ 1,0 \\ Platforms* y crear al menos una plataforma en ella.
 
 `$(ApplicationType)` las `$(ApplicationTypeRevision)` propiedades y no están visibles en la interfaz de usuario. Se definen en las plantillas de proyecto y no se pueden cambiar una vez creado el proyecto.
 
@@ -101,9 +101,9 @@ Un árbol simplificado de importaciones para archivos de destino y propiedades d
 > `$(VCTargetsPath)`\\*Microsoft. cpp. default. props* \
 &nbsp;&nbsp;&nbsp;&nbsp;`$(MSBuildExtensionsPath)`\\`$(MSBuildToolsVersion)`\\*Microsoft. Common. props* \
 &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportBefore* \\ *Valor predeterminado* \\ \* . *propiedades* de \
-&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Application Type* \\ Tipo `$(ApplicationType)` de \\ aplicación *Default. props* \
-&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Application Type* \\ Tipo `$(ApplicationType)` \\ de `$(ApplicationTypeRevision)` aplicación \\ *Default. props* \
-&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Application Type* \\ Tipo `$(ApplicationType)` \\ de `$(ApplicationTypeRevision)` aplicación \\ *Plataformas* \\ `$(Platform)` de \\ *Platform. default. props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\ \\ Tipo `$(ApplicationType)` de \\ aplicación *Default. props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\ \\ Tipo `$(ApplicationType)` \\ de `$(ApplicationTypeRevision)` aplicación \\ *Default. props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\ \\ Tipo `$(ApplicationType)` \\ de `$(ApplicationTypeRevision)` aplicación \\ *Plataformas* \\ `$(Platform)` de \\ *Platform. default. props* \
 &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportAfter* \\ *Valor predeterminado* \\ \* . *propiedades* de
 
 Los proyectos de escritorio de Windows no definen `$(ApplicationType)` , por lo que solo importan
@@ -120,7 +120,7 @@ Usaremos la `$(_PlatformFolder)` propiedad para almacenar las ubicaciones de la 
 
 para las aplicaciones de escritorio de Windows y
 
-> `$(VCTargetsPath)`\\*Application Type* \\ Tipo `$(ApplicationType)` \\ de `$(ApplicationTypeRevision)` aplicación \\ *Plataformas* de\\`$(Platform)`
+> `$(VCTargetsPath)`\\ \\ Tipo `$(ApplicationType)` \\ de `$(ApplicationTypeRevision)` aplicación \\ *Plataformas* de\\`$(Platform)`
 
 para todo lo demás.
 
@@ -130,7 +130,7 @@ Los archivos de propiedades se importan en este orden:
 &nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*Platform. props* \
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Microsoft. cpp. Platform. props* \
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportBefore* \\ \* . *propiedades* de \
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*PlatformToolsets* \\ `$(PlatformToolset)` PlatformToolsets \\ *Toolset. props* \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\ \\ `$(PlatformToolset)` PlatformToolsets \\ *Toolset. props* \
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportAfter* \\ \* . *propiedades* de
 
 Los archivos de destinos se importan en este orden:
@@ -140,7 +140,7 @@ Los archivos de destinos se importan en este orden:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*Plataforma. targets* \
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Microsoft. cpp. Platform. targets* \
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportBefore* \\ \* . *destinos* de \
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*PlatformToolsets* \\ `$(PlatformToolset)` PlatformToolsets \\ *Toolset. Target* \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\ \\ `$(PlatformToolset)` PlatformToolsets \\ *Toolset. Target* \
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportAfter* \\ \* . *destinos* de
 
 Si necesita definir algunas propiedades predeterminadas para el conjunto de herramientas, puede Agregar archivos a las carpetas ImportBefore y ImportAfter apropiadas.
@@ -285,13 +285,13 @@ Si necesita crear una nueva tarea para una herramienta de compilación, puede el
 
    - Tarea XAML (regla de compilación personalizada)
 
-     Para ver un ejemplo de una declaración de tarea XAML, consulte `$(VCTargetsPath)` \\ *BuildCustomizations* \\ *masm.xml*y, para su uso, consulte `$(VCTargetsPath)` \\ *BuildCustomizations* \\ *MASM. targets*.
+     Para ver un ejemplo de una declaración de tarea XAML, consulte `$(VCTargetsPath)` \\ *BuildCustomizations* \\ *masm.xml* y, para su uso, consulte `$(VCTargetsPath)` \\ *BuildCustomizations* \\ *MASM. targets*.
 
    - [Tarea de código](../msbuild/msbuild-inline-tasks.md)
 
 1. Si desea mejorar el rendimiento de las tareas o simplemente necesita una funcionalidad más compleja, use el proceso normal de [escritura de tareas](../msbuild/task-writing.md) de MSBuild.
 
-   Si no todas las entradas y salidas de la herramienta aparecen en la línea de comandos de la herramienta, como en los `CL` `MIDL` casos, y `RC` , y si desea realizar el seguimiento automático de archivos de entrada y salida y la creación del archivo. registro de transacciones, derive su tarea de la `Microsoft.Build.CPPTasks.TrackedVCToolTask` clase. En la actualidad, aunque hay documentación para la clase base [ToolTask](/dotnet/api/microsoft.build.utilities.tooltask) , no hay ningún ejemplo o documentación para los detalles de la `TrackedVCToolTask` clase. Si esto sería de especial interés, agregue su voz a una solicitud en [developercommunity.VisualStudio.com](https://developercommunity.visualstudio.com/spaces/62/index.html).
+   Si no todas las entradas y salidas de la herramienta aparecen en la línea de comandos de la herramienta, como en los `CL` `MIDL` casos, y `RC` , y si desea realizar el seguimiento automático de archivos de entrada y salida y la creación del archivo. registro de transacciones, derive su tarea de la `Microsoft.Build.CPPTasks.TrackedVCToolTask` clase. En la actualidad, aunque hay documentación para la clase base [ToolTask](/dotnet/api/microsoft.build.utilities.tooltask) , no hay ningún ejemplo o documentación para los detalles de la `TrackedVCToolTask` clase. Si esto es de especial interés, agregue su voz a una solicitud en la [comunidad de desarrolladores](https://aka.ms/feedback/suggest?space=62).
 
 ## <a name="incremental-builds-and-up-to-date-checks"></a>Compilaciones incrementales y comprobaciones actualizadas
 
@@ -308,7 +308,7 @@ Como alternativa, puede crearlos mediante la `WriteLinesToFile` tarea. Vea el `_
 
 ## <a name="tlog-files"></a>archivos. el archivo de transacciones
 
-Hay tres tipos de archivos. el archivo de transacciones: *lectura*, *escritura*y *línea de comandos*. Los archivos de lectura y escritura. el registro de transacciones se usan en las compilaciones incrementales y en la comprobación actualizada en el IDE. Los archivos de línea de comandos. el archivo de transacciones solo se usan en compilaciones incrementales.
+Hay tres tipos de archivos. el archivo de transacciones: *lectura*, *escritura* y *línea de comandos*. Los archivos de lectura y escritura. el registro de transacciones se usan en las compilaciones incrementales y en la comprobación actualizada en el IDE. Los archivos de línea de comandos. el archivo de transacciones solo se usan en compilaciones incrementales.
 
 MSBuild proporciona estas clases auxiliares para leer y escribir archivos. el archivo de transacciones:
 
@@ -497,7 +497,7 @@ El `PageTemplate` atributo define cómo se muestra la regla en el cuadro de diá
 |------------| - |
 | `generic` | Todas las propiedades se muestran en una página en encabezados de categoría.<br/>La regla puede ser visible para `Project` los `PropertySheet` contextos y, pero no para `File` .<br/><br/> Ejemplo: `$(VCTargetsPath)` \\ *1033* \\ *general.xml* |
 | `tool` | Las categorías se muestran como subpáginas.<br/>La regla puede ser visible en todos los contextos `Project` : `PropertySheet` y `File` .<br/>La regla solo está visible en las propiedades del proyecto si el proyecto tiene elementos con el `ItemType` definido en `Rule.DataSource` , a menos que el nombre de la regla esté incluido en el `ProjectTools` grupo de elementos.<br/><br/>Ejemplo: `$(VCTargetsPath)` \\ *1033* \\ *clang.xml* |
-| `debugger` | La página se muestra como parte de la página de depuración.<br/>Las categorías se omiten actualmente.<br/>El nombre de la regla debe coincidir con el atributo del objeto MEF del iniciador de depuración `ExportDebugger` .<br/><br/>Ejemplo: `$(VCTargetsPath)` \\ *1033* \\ * \_ \_windows.xmllocal del depurador* |
+| `debugger` | La página se muestra como parte de la página de depuración.<br/>Las categorías se omiten actualmente.<br/>El nombre de la regla debe coincidir con el atributo del objeto MEF del iniciador de depuración `ExportDebugger` .<br/><br/>Ejemplo: `$(VCTargetsPath)` \\ *1033* \\ *\_ \_windows.xmllocal del depurador* |
 | *personal* | Plantilla personalizada. El nombre de la plantilla debe coincidir con el `ExportPropertyPageUIFactoryProvider` atributo del `PropertyPageUIFactoryProvider` objeto MEF. Vea **Microsoft. VisualStudio. Project System. Designers. properties. IPropertyPageUIFactoryProvider**.<br/><br/> Ejemplo: `$(VCTargetsPath)` \\ *1033* \\ *userMacros.xml* |
 
 Si la regla usa una de las plantillas basadas en cuadrícula de propiedades, puede usar estos puntos de extensibilidad para sus propiedades:
@@ -590,7 +590,7 @@ El actualizador utiliza estos criterios para decidir si un proyecto se puede act
 
    En estos nombres de propiedad, *\<safe_toolset_name>* representa el nombre del conjunto de herramientas con todos los caracteres no alfanuméricos reemplazados por un carácter de subrayado ( **\_** ).
 
-Cuando un proyecto se puede actualizar, participa en la *redestinación*de la solución. Para obtener más información, vea [IVsTrackProjectRetargeting2](/dotnet/api/microsoft.visualstudio.shell.interop.ivstrackprojectretargeting2).
+Cuando un proyecto se puede actualizar, participa en la *redestinación* de la solución. Para obtener más información, vea [IVsTrackProjectRetargeting2](/dotnet/api/microsoft.visualstudio.shell.interop.ivstrackprojectretargeting2).
 
 Si desea adornar los nombres de proyecto en **Explorador de soluciones** cuando los proyectos usan un conjunto de herramientas concreto, defina una `_PlatformToolsetShortNameFor_<safe_toolset_name>` propiedad.
 

@@ -8,12 +8,12 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: d213a7add358c46f7088f504d8c54352cda44a1c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 964b360806f6f834aa57c475d2117c124f2cf8af
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905974"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668643"
 ---
 # <a name="open-folder-extensibility"></a>Extensibilidad de Abrir carpeta
 
@@ -51,7 +51,7 @@ Las características que usan los tipos siguientes tendrán que adoptar nuevas A
 
 ## <a name="feedback-comments-issues"></a>comentarios, sugerencias e incidencias
 
-Abrir carpeta y las API `Microsoft.VisualStudio.Workspace.*` están en fase de desarrollo activo. Si observa un comportamiento inesperado, vea los problemas conocidos de la versión de interés. [Developer Community](https://developercommunity.visualstudio.com) es el lugar recomendado para votar y crear cualquier incidencia. Para cada comentario, se recomienda una descripción detallada de la incidencia. Incluya la versión de Visual Studio para la que desarrolla, las API que usa (lo que ha implementado y aquello con lo que interactúe), el resultado esperado y el resultado real. Si es posible, incluya un volcado del proceso devenv.exe. Use el seguimiento de incidencias de GitHub para proporcionar comentarios sobre esto y documentación relacionada.
+Abrir carpeta y las API `Microsoft.VisualStudio.Workspace.*` están en fase de desarrollo activo. Si observa un comportamiento inesperado, vea los problemas conocidos de la versión de interés. [Developer Community](https://aka.ms/feedback/suggest?space=8) es el lugar recomendado para votar y crear cualquier incidencia. Para cada comentario, se recomienda una descripción detallada de la incidencia. Incluya la versión de Visual Studio para la que desarrolla, las API que usa (lo que ha implementado y aquello con lo que interactúe), el resultado esperado y el resultado real. Si es posible, incluya un volcado del proceso devenv.exe. Use el seguimiento de incidencias de GitHub para proporcionar comentarios sobre esto y documentación relacionada.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

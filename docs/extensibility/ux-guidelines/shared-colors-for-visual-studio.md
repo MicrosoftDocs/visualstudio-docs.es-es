@@ -1,5 +1,6 @@
 ---
 title: Colores compartidos para Visual Studio | Microsoft Docs
+description: Aprenda a usar elementos y temas comunes de Visual Studio Shell para diseñar su propia interfaz de usuario personalizada que sea coherente con el entorno de Visual Studio.
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
@@ -8,12 +9,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e31e5d9c3d1dc284694bd2db2a9f37d863462ad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 939a327100b1fcf0908c56a4fc67540e646eac7e
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699929"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668916"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Colores compartidos para Visual Studio
 Al diseñar la interfaz de usuario que usa elementos comunes de Shell de Visual Studio, o si desea que el elemento de la interfaz sea coherente con características similares, use los nombres de token existentes en los archivos de definición de paquete para elegir y asignar colores. Esto garantiza que la interfaz de usuario mantenga la coherencia con el entorno general de Visual Studio y que se actualice automáticamente cuando se agreguen o actualicen temas.
@@ -1333,7 +1334,7 @@ Un grupo de la barra de comandos se compone de un conjunto relacionado de contro
 
  **Botón desplegable de la barra de comandos: estado de desplazamiento**
 
-![Botón desplegable de la barra de comandos al mantener el mouse](../../extensibility/ux-guidelines/media/0303-034_comboboxdropdownbuttonhover.png "0303-034_ComboBoxDropdownButtonHover")<br />Botón desplegable de la barra de comandos al mantener el mouse
+![Botón desplegable del cuadro combinado de la barra de comandos al mantener el mouse](../../extensibility/ux-guidelines/media/0303-034_comboboxdropdownbuttonhover.png "0303-034_ComboBoxDropdownButtonHover")<br />Botón desplegable de la barra de comandos al mantener el mouse
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1342,7 +1343,7 @@ Un grupo de la barra de comandos se compone de un conjunto relacionado de contro
 
 **Lista desplegable de la barra de comandos: estado de desplazamiento**
 
- ![Lista desplegable de la barra de comandos al mantener el mouse](../../extensibility/ux-guidelines/media/0303-035_comboboxdropdownlisthover.png "0303-035_ComboBoxDropdownListHover")<br />Lista desplegable de la barra de comandos al mantener el mouse
+ ![Lista desplegable de cuadro combinado de la barra de comandos al mantener el mouse](../../extensibility/ux-guidelines/media/0303-035_comboboxdropdownlisthover.png "0303-035_ComboBoxDropdownListHover")<br />Lista desplegable de la barra de comandos al mantener el mouse
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1383,7 +1384,7 @@ Un grupo de la barra de comandos se compone de un conjunto relacionado de contro
 
 **Botón desplegable de la barra de comandos: estado presionado**
 
-![Botón desplegable de la barra de comandos presionado](../../extensibility/ux-guidelines/media/0303-039_comboboxdropdownbuttonpressed.png "0303-039_ComboBoxDropdownButtonPressed")<br />Botón desplegable de la barra de comandos presionado
+![Botón desplegable del cuadro combinado de la barra de comandos presionado](../../extensibility/ux-guidelines/media/0303-039_comboboxdropdownbuttonpressed.png "0303-039_ComboBoxDropdownButtonPressed")<br />Botón desplegable de la barra de comandos presionado
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1403,7 +1404,7 @@ Un grupo de la barra de comandos se compone de un conjunto relacionado de contro
 
 **Botón desplegable de la barra de comandos: Estado deshabilitado**
 
-![Botón desplegable de la barra de comandos deshabilitada](../../extensibility/ux-guidelines/media/0303-040_comboboxdropdownbuttondisabled.png "0303-040_ComboBoxDropdownButtonDisabled")<br />Botón desplegable de la barra de comandos deshabilitada
+![Botón desplegable del cuadro combinado de la barra de comandos deshabilitada](../../extensibility/ux-guidelines/media/0303-040_comboboxdropdownbuttondisabled.png "0303-040_ComboBoxDropdownButtonDisabled")<br />Botón desplegable de la barra de comandos deshabilitada
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |

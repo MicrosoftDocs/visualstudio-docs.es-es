@@ -1,5 +1,6 @@
 ---
 title: 'Nueva generación de proyectos: en el capó, parte uno | Microsoft Docs'
+description: Eche un vistazo a lo que sucede en el entorno de desarrollo integrado (IDE) de Visual Studio a medida que crea su propio tipo de proyecto (parte 1 de 2).
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aca35e85e57a07a2b411a23d81b99cff9983b9c2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ec16895e71788f160e0ce6025f35b4dff02d7d2f
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707053"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668890"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>Generación de nuevos proyectos: Aspectos técnicos (parte 1)
 ¿Alguna vez ha pensado en cómo crear su propio tipo de proyecto? ¿Se pregunta qué ocurre realmente cuando se crea un nuevo proyecto? Echemos un vistazo al Capó y veamos lo que está ocurriendo realmente.
@@ -36,7 +37,7 @@ ms.locfileid: "80707053"
 ## <a name="the-new-project-dialog-box"></a>Cuadro de diálogo nuevo proyecto
  Todo comienza cuando se selecciona un tipo de proyecto para un proyecto nuevo. Para empezar, haga clic en **nuevo proyecto** en el menú **archivo** . Aparece el cuadro de diálogo **nuevo proyecto** , que tiene un aspecto similar al siguiente:
 
- ![Cuadro de diálogo nuevo proyecto](../../extensibility/internals/media/newproject.gif "NuevoProyecto")
+ ![Captura de pantalla del cuadro de diálogo Nuevo proyecto.](../../extensibility/internals/media/newproject.gif)
 
  Veámoslo con más detalle. En el árbol **tipos de proyecto** se muestran los distintos tipos de proyecto que se pueden crear. Al seleccionar un tipo de proyecto como **Visual C# Windows**, verá una lista de plantillas de aplicación para comenzar. **Las plantillas instaladas de Visual Studio** se instalan con Visual Studio y están disponibles para cualquier usuario del equipo. Las nuevas plantillas que cree o recopile se pueden agregar a **Mis plantillas** y solo están disponibles para usted.
 
@@ -63,7 +64,7 @@ devenv /installvstemplates
  Las entradas del registro del sistema determinan la posición y los nombres de los nodos raíz de **tipos de proyecto** , como **Visual C#** y **otros lenguajes**. La organización de los nodos secundarios, como la **base de datos** y **Smart Device**, refleja la jerarquía de las carpetas que contienen los archivos. vstemplate correspondientes. Echemos un vistazo primero a los nodos raíz.
 
 #### <a name="project-type-root-nodes"></a>Nodos raíz de tipo de proyecto
- Cuando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] se inicializa, atraviesa las subclaves de la clave del registro del sistema HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\14.0\newprojecttemplates\templatedirs para compilar y asignar nombres a los nodos raíz del árbol de **tipos de proyecto** . Esta información se almacena en caché para su uso posterior. Observe la clave TemplateDirs \\ {FAE04EC1-301F-11D3-BF4B-00C04F79EFBC} \\ /1. Cada entrada es un GUID de VSPackage. Se omite el nombre de la subclave (/1), pero su presencia indica que se trata de un nodo raíz de **tipos de proyecto** . Un nodo raíz puede, A su vez, tener varias subclaves que controlan su apariencia en el árbol de **tipos de proyecto** . Echemos un vistazo a algunos de ellos.
+ Cuando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] se inicializa, atraviesa las subclaves de la clave del registro del sistema HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0\NewProjectTemplates\TemplateDirs para compilar y asignar nombres a los nodos raíz del árbol de **tipos de proyecto** . Esta información se almacena en caché para su uso posterior. Observe la clave TemplateDirs \\ {FAE04EC1-301F-11D3-BF4B-00C04F79EFBC} \\ /1. Cada entrada es un GUID de VSPackage. Se omite el nombre de la subclave (/1), pero su presencia indica que se trata de un nodo raíz de **tipos de proyecto** . Un nodo raíz puede, A su vez, tener varias subclaves que controlan su apariencia en el árbol de **tipos de proyecto** . Echemos un vistazo a algunos de ellos.
 
 ##### <a name="default"></a>(Es el valor predeterminado).
  Es el identificador de recurso de la cadena traducida que nombra el nodo raíz. El recurso de cadena se encuentra en el archivo DLL satélite seleccionado por el GUID del VSPackage.
@@ -97,7 +98,7 @@ devenv /installvstemplates
 ##### <a name="folder"></a>Carpeta
  Si esta subclave está presente, el nodo raíz se convierte en un nodo secundario de la carpeta especificada. Aparece una lista de las carpetas posibles bajo la clave
 
- HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\11.0\NewProjectTemplates\PseudoFolders
+ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\NewProjectTemplates\PseudoFolders
 
  Por ejemplo, la entrada proyectos de base de datos tiene una clave de carpeta que coincide con la entrada otros tipos de proyectos de PseudoFolders. Por lo tanto, en el árbol **tipos de proyecto** , los proyectos de **base de datos** serán un nodo secundario de **otros tipos de proyecto**.
 
@@ -106,11 +107,11 @@ devenv /installvstemplates
 
  En Visual Studio con la configuración de desarrollador de C#, el árbol de **tipos de proyecto** tiene un aspecto similar al siguiente:
 
- ![Tipos de proyecto](../../extensibility/internals/media/projecttypes.png "ProjectTypes")
+ ![Captura de pantalla del árbol de carpetas tipos de proyecto en Visual Studio con la configuración del desarrollador de C#.](../../extensibility/internals/media/projecttypes.png)
 
  La carpeta ProjectTemplates correspondiente tiene el siguiente aspecto:
 
- ![Plantillas de proyecto](../../extensibility/internals/media/projecttemplates.png "ProjectTemplates")
+ ![Captura de pantalla del árbol de carpetas de plantillas de proyecto en Visual Studio con la configuración del desarrollador de C#.](../../extensibility/internals/media/projecttemplates.png)
 
  Cuando se abra el cuadro de diálogo **nuevo proyecto** , [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] recorra la carpeta ProjectTemplates y vuelva a crear su estructura en el árbol **tipos de proyecto** con algunos cambios:
 
@@ -208,9 +209,9 @@ devenv /installvstemplates
 
 10. Abra el cuadro de diálogo **nuevo proyecto** y expanda el nodo de proyecto de **Visual C#** .
 
-    ![MyProjectNode](../../extensibility/internals/media/myprojectnode.png "MyProjectNode")
+    ![Captura de pantalla del árbol de carpetas tipos de proyecto en el cuadro de diálogo nuevo proyecto con MyProjectNode resaltado en el nodo de proyecto expandido de Visual C#.](../../extensibility/internals/media/myprojectnode.png)
 
     **MyProjectNode** aparece como un nodo secundario de Visual C# justo debajo del nodo Windows.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Generación de nuevos proyectos: Aspectos técnicos (parte 2)](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

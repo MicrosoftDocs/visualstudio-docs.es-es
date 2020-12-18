@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4181fd11e6f1ba86e2965991aab704995210e6bc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 901a5a5eea7835720ab9d5963f0ab1be36df3685
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88168741"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668864"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>SDK del Visor de Ayuda de Microsoft
 
@@ -302,7 +302,7 @@ Establezca los siguientes valores del registro para habilitar la reserva de F1 p
 
    - Para sistemas operativos de 64 bits:
 
-        HKEY_LOCAL_MACHINE \SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
+        HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
 
         "VendorContent" = dword: 00000001
 
@@ -310,13 +310,13 @@ Establezca los siguientes valores del registro para habilitar la reserva de F1 p
 
    - Para sistemas operativos de 32 bits:
 
-      HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\Help\v2.3\Partner<em> \\<espacio \> de nombres</em>
+      HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.3\Partner<em> \\ espacio de \> nombres<</em>
 
       "ubicación" = "sin conexión"
 
    - Para sistemas operativos de 64 bits:
 
-      HKEY_LOCAL_MACHINE \SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Partner<em> \\<espacio \> de nombres</em>
+      HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Partner<em> \\ espacio de \> nombres<</em>
 
       "ubicación" = "sin conexión"
 
@@ -324,7 +324,7 @@ Establezca los siguientes valores del registro para habilitar la reserva de F1 p
 
 Para activar el análisis de un espacio de nombres nativo base, en el registro agregue un nuevo valor DWORD con el nombre de: BaseNativeNamespaces y establezca su valor en 1 (en la clave de catálogo que desea admitir).  Por ejemplo, si desea utilizar el catálogo de Visual Studio, puede Agregar la clave a la ruta de acceso:
 
-HKEY_LOCAL_MACHINE \SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
+HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
 
 Cuando se encuentra una palabra clave de F1 en el encabezado o el método de formato, se analiza el carácter '/', lo que da como resultado la construcción siguiente:
 
@@ -342,13 +342,13 @@ Agregue la siguiente clave y valor del registro:
 
 ::: moniker range="vs-2017"
 
-**HKEY_CURRENT_USER ayuda de \Software\Microsoft\VisualStudio\15.0\Dynamic**
+**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic Help**
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-**HKEY_CURRENT_USER ayuda de \Software\Microsoft\VisualStudio\16.0\Dynamic**
+**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Dynamic Help**
 
 ::: moniker-end
 
@@ -601,7 +601,7 @@ Contenido de Visual Studio muestra un logotipo de Visual Studio, así como otros
 |-|-|-|
 |clear.gif|Se usa para representar el área contraíble||
 |footer_slice.gif|Presentación de pie de página||
-|info_icon.gif|Se usa al Mostrar información|Renuncia de responsabilidades|
+|info_icon.gif|Se usa al Mostrar información|Declinación de responsabilidades|
 |online_icon.gif|Este icono se asociará a vínculos en línea||
 |tabLeftBD.gif|Se usa para representar el contenedor de fragmentos de código||
 |tabRightBD.gif|Se usa para representar el contenedor de fragmentos de código||
@@ -704,7 +704,7 @@ En este tutorial se muestra cómo incorporar el contenido de la ayuda en una apl
 
 2. [Visual Studio 2013 Redist. de Shell aislado](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/)
 
-**Información general**
+**Introducción**
 
 El [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] Shell es una versión del [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] IDE en el que puede basar una aplicación. Estas aplicaciones contienen el shell aislado junto con las extensiones que se crean. Use plantillas de proyecto de Shell aislado, que se incluyen en el [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] SDK, para compilar extensiones.
 
@@ -741,11 +741,11 @@ Defina el almacén de contenido en el registro. Para el shell integrado, cambie 
 
 Para crear una extensión de Shell aislado:
 
-1. En el **archivo**de Visual Studio, elija **nuevo proyecto**, en **otros tipos de proyectos** , elija **extensibilidad**y, a continuación, elija  **Visual Studio Shell aislado**. Asigne un nombre al proyecto `ContosoHelpShell` ) para crear un proyecto de extensibilidad basado en la plantilla de Shell aislado de Visual Studio.
+1. En el **archivo** de Visual Studio, elija **nuevo proyecto**, en **otros tipos de proyectos** , elija **extensibilidad** y, a continuación, elija  **Visual Studio Shell aislado**. Asigne un nombre al proyecto `ContosoHelpShell` ) para crear un proyecto de extensibilidad basado en la plantilla de Shell aislado de Visual Studio.
 
 2. En Explorador de soluciones, en el proyecto ContosoHelpShellUI, en la carpeta archivos de recursos, abra ApplicationCommands. Vsct. Asegúrese de que esta línea está comentada (busque "No_Help"): `<!-- <define name="No_HelpMenuCommands"/> -->`
 
-3. Elija la tecla F5 para compilar y ejecutar **Debug**. En la instancia experimental del IDE de Shell aislado, elija el menú **ayuda** . Asegúrese de que aparecen los comandos **Ver ayuda**, **Agregar y quitar contenido**de la ayuda y **establecer preferencias** de la ayuda.
+3. Elija la tecla F5 para compilar y ejecutar **Debug**. En la instancia experimental del IDE de Shell aislado, elija el menú **ayuda** . Asegúrese de que aparecen los comandos **Ver ayuda**, **Agregar y quitar contenido** de la ayuda y **establecer preferencias** de la ayuda.
 
 4. En Explorador de soluciones, en el proyecto ContosHelpShell, en la carpeta de personalización de Shell, abra ContosoHelpShell. pkgdef. Para definir el catálogo de ayuda de Contoso, agregue las líneas siguientes:
 
@@ -785,7 +785,7 @@ Para probar esto como si se hubiera implementado:
 
 3. Copie el contenido de la carpeta ContosoHelpShell release en la \\ carpeta \Archivos de programa (x86) \Contoso\
 
-4. Para iniciar el editor del registro, elija  **Ejecutar** en el menú **Inicio** y escriba `Regedit` . En el editor del registro, elija **archivo**y, a continuación, **importar**. Vaya a la carpeta del proyecto ContosoHelpShell. En la subcarpeta ContosoHelpShell, elija ContosoHelpShell. reg.
+4. Para iniciar el editor del registro, elija  **Ejecutar** en el menú **Inicio** y escriba `Regedit` . En el editor del registro, elija **archivo** y, a continuación, **importar**. Vaya a la carpeta del proyecto ContosoHelpShell. En la subcarpeta ContosoHelpShell, elija ContosoHelpShell. reg.
 
 5. Cree un almacén de contenido:
 
@@ -822,7 +822,7 @@ Para probar esto como si se hubiera implementado:
 
 10. Inicie la aplicación contoso (desde la raíz de la aplicación contoso). En el shell ISO, elija el elemento de menú **ayuda** y cambie **establecer preferencia de ayuda** a **usar la ayuda local**.
 
-11. En el Shell, elija el elemento de menú **ayuda** y, a continuación, **Ver ayuda**. Debe iniciar el visor de ayuda local. Elija la pestaña **administrar contenido** . En **origen**de la instalación, elija el botón de opción **disco** . Elija el botón **...** y busque la carpeta local que contiene el contenido de Contoso (copiada en la carpeta local del paso anterior). Elija el archivos helpcontentsetup. MSHA. Contoso debe aparecer ahora como un libro en las selecciones de los libros. Elija **Agregar**y, a continuación, elija el botón **Actualizar** (esquina inferior derecha).
+11. En el Shell, elija el elemento de menú **ayuda** y, a continuación, **Ver ayuda**. Debe iniciar el visor de ayuda local. Elija la pestaña **administrar contenido** . En **origen** de la instalación, elija el botón de opción **disco** . Elija el botón **...** y busque la carpeta local que contiene el contenido de Contoso (copiada en la carpeta local del paso anterior). Elija el archivos helpcontentsetup. MSHA. Contoso debe aparecer ahora como un libro en las selecciones de los libros. Elija **Agregar** y, a continuación, elija el botón **Actualizar** (esquina inferior derecha).
 
 12. En el IDE de Contoso, elija la tecla F1 para probar la funcionalidad de F1.
 
@@ -832,4 +832,4 @@ Para la API en tiempo de ejecución, consulte [API de ayuda de Windows](/previou
 
 Para obtener más información sobre cómo aprovechar la API de ayuda, vea [ejemplos de código del visor de ayuda](https://marketplace.visualstudio.com/items?itemName=RobChandlerHelpMVP.HelpViewer20CodeExamples).
 
-Puede enviar sugerencias de características a la [comunidad de desarrolladores](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
+Puede enviar sugerencias de características a la [comunidad de desarrolladores](https://aka.ms/feedback/suggest?space=8).
