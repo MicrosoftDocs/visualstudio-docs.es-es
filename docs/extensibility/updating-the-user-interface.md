@@ -1,5 +1,7 @@
 ---
 title: Actualizando la interfaz de usuario | Microsoft Docs
+description: Obtenga información sobre cómo agregar código para actualizar la interfaz de usuario después de implementar un nuevo comando en el VSPackage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c51ae790eb35645fbe9aec5d9c422e1051aaa69
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fae228b3fab1e25f92c02da2512abdd78edda0db
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698882"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716034"
 ---
 # <a name="updating-the-user-interface"></a>Actualización de la interfaz de usuario
 Después de implementar un comando, puede agregar código para actualizar la interfaz de usuario con el estado de los nuevos comandos.
@@ -27,7 +29,7 @@ Después de implementar un comando, puede agregar código para actualizar la int
 
 1. Realice uno de estos pasos:
 
-    - Llame al método <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> .
+    - Llame al método <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A>.
 
          Una <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> interfaz se puede obtener del <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> servicio, como se indica a continuación.
 

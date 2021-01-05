@@ -1,5 +1,7 @@
 ---
 title: Extensiones cargadas automáticamente y sincrónicamente
+description: Obtenga información sobre el comportamiento predeterminado a partir de Visual Studio 2019, que bloquea los paquetes cargados de forma sincrónica de cualquier extensión.
+ms.custom: SEO-VS-2020
 ms.date: 12/11/2019
 ms.topic: conceptual
 ms.assetid: 822e3cf8-f723-4ff1-8467-e0fb42358a1f
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab62d235fd6ed4e47e765fc23868acd5c56efcb2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 506c098f1f385ddf39c5d000f4571a8ee92c09fc
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699370"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715449"
 ---
 # <a name="synchronously-autoloaded-extensions"></a>Extensiones cargadas automáticamente y sincrónicamente
 
@@ -42,7 +44,7 @@ Todas las extensiones que cargan de forma sincrónica los paquetes de cualquier 
 
 Los administradores pueden habilitar una directiva de grupo para permitir la carga asincrónica sincrónica. Para ello, establezca una directiva basada en el Registro en la siguiente clave:
 
-**HKEY_LOCAL_MACHINE \SOFTWARE\Policies\Microsoft\VisualStudio\SynchronousAutoload**
+**HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SynchronousAutoload**
 
 Entry = **permitido**
 
@@ -53,5 +55,5 @@ Valor = (DWORD)
 ## <a name="extension-authors"></a>Autores de extensiones
 Los autores de extensiones pueden encontrar instrucciones para migrar paquetes a la carga asincrónica asincrónica en [migrar a AsyncPackage](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/AsyncPackageMigration).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 Para obtener más información sobre la configuración de la carga asincrónica sincrónica en Visual Studio 2019, vea la página [comportamiento de carga asincrónica sincrónica](https://devblogs.microsoft.com/visualstudio/updates-to-synchronous-autoload-of-extensions-in-visual-studio-2019/) .

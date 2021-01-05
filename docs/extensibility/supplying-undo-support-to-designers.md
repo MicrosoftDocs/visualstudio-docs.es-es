@@ -1,5 +1,7 @@
 ---
 title: Proporcionar compatibilidad con la deshacer para diseñadores | Microsoft Docs
+description: Obtenga información sobre cómo proporcionar compatibilidad con la deshacer en los diseñadores, ya sea de forma automática o mediante las características del SDK de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0580f974c362a71c3e400946f2ad34f565ad1232
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4108e259fb0a2e60c2719df8a7fb76f273634799
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699674"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715580"
 ---
 # <a name="supply-undo-support-to-designers"></a>Proporcionar compatibilidad con la deshacer para diseñadores
 
@@ -29,7 +31,7 @@ Implementaciones de diseñador que necesitan proporcionar compatibilidad con la 
 
 - Proporcione persistencia y compatibilidad con CodeDOM implementando <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> las  <xref:System.ComponentModel.Design.IComponentChangeService> clases y.
 
-Para obtener más información sobre cómo escribir diseñadores mediante .NET Framework, vea [extender la compatibilidad en tiempo de diseño](/previous-versions/37899azc(v=vs.140)).
+Para obtener más información sobre cómo escribir diseñadores mediante .NET Framework, consulte extensión de la [compatibilidad con Design-Time](/previous-versions/37899azc(v=vs.140)).
 
 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]Proporciona una infraestructura de deshacer predeterminada mediante:
 
@@ -99,8 +101,8 @@ Los diseñadores que implementan un <xref:Microsoft.VisualStudio.Shell.Design.Ol
 
 - El diseñador elige crear explícitamente las unidades de deshacer mediante la unidad de deshacer estándar que proporciona una implementación de <xref:System.ComponentModel.Design.UndoEngine.UndoUnit> o la implementación específica de Visual Studio <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit> , que deriva de <xref:System.ComponentModel.Design.UndoEngine.UndoUnit> y también proporciona una implementación de <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit> y <xref:Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit> .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - <xref:System.ComponentModel.Design.UndoEngine>
 - <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>
-- [Ampliar la compatibilidad en tiempo de diseño](/previous-versions/37899azc(v=vs.140))
+- [Ampliación de la compatibilidad con Design-Time](/previous-versions/37899azc(v=vs.140))

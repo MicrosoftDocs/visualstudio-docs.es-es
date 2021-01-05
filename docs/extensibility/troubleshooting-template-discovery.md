@@ -1,5 +1,7 @@
 ---
 title: Solución de problemas de detección de plantillas en Visual Studio | Microsoft Docs
+description: Obtenga información sobre cómo habilitar el registro de diagnóstico para solucionar problemas de implementación de proyectos y plantillas personalizados en el SDK de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: troubleshooting
 author: acangialosi
@@ -7,12 +9,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89ff5b9974f20841378f367c3cb631a8d4cf7787
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ff864e1a244d058b2c5ec1de33d116cfdcfe22db
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87235048"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716051"
 ---
 # <a name="troubleshooting-template-installation"></a>Solución de problemas de instalación de plantillas
 

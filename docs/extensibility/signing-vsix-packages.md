@@ -1,5 +1,7 @@
 ---
 title: Firma de paquetes VSIX | Microsoft Docs
+description: Más información sobre la firma de ensamblados de extensión. El instalador de VSIX muestra un mensaje que indica que se ha firmado un VSIX e información sobre la propia firma.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 17179c35496fc19322c5bb951f4d04bc28e5d7bc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e9152e45b402294dfd0bbb41bfda2c685588f01e
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700089"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716086"
 ---
 # <a name="signing-vsix-packages"></a>Firma de paquetes VSIX
 No es necesario que los ensamblados de extensión estén firmados antes de que se puedan ejecutar en Visual Studio, pero es recomendable hacerlo.
@@ -46,5 +48,5 @@ No es necesario que los ensamblados de extensión estén firmados antes de que s
 
    VSIXSignTool.exe signo/f \<certfile> /p \<password>\<VSIXfile>
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Suministro de extensiones de Visual Studio](../extensibility/shipping-visual-studio-extensions.md)

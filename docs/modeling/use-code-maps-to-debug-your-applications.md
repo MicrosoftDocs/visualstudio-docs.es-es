@@ -18,12 +18,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7af24dbbb510fb1d5c9c62b40d5986ea5c74d35b
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: d935ee5c4341a2d625c6f85226cc649d696d6e6e
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361656"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729397"
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>Usar mapas de código para depurar aplicaciones
 
@@ -62,9 +62,9 @@ Para obtener detalles de los comandos y las acciones que se pueden usar al traba
 ## <a name="navigate-and-examine-code-from-the-map"></a>Navegar y examinar código desde la asignación
  Para ver la definición de código de cada campo, haga doble clic en el campo en el mapa o seleccione el campo y presione **F12**. La flecha verde se desplaza entre los elementos del mapa. El cursor del editor de código también se desplaza automáticamente.
 
- ![Mapa de código &#45; examinar definición de campo](../modeling/media/codemapstoryboardpaint5.png)
+ ![Captura de pantalla de una ventana de mapa de código con el campo historial seleccionado y una ventana del editor de código donde se resaltan todas las instancias del historial.](../modeling/media/codemapstoryboardpaint5.png)
 
- ![Mapa de código &#45; examinar definición de campo](../modeling/media/codemapstoryboardpaint5a.png)
+ ![Captura de pantalla de una ventana de mapa de código con el campo paintObjects seleccionado y una ventana del editor de código donde se resaltan todas las instancias de paintObjects.](../modeling/media/codemapstoryboardpaint5a.png)
 
 > [!TIP]
 > También puede mover la flecha verde en el mapa moviendo el cursor en el editor de código.
@@ -81,24 +81,24 @@ Para obtener detalles de los comandos y las acciones que se pueden usar al traba
 
  Cambie el diseño para reorganizar el flujo de las relaciones y facilitar la lectura del mapa. También puede mover los elementos por el mapa arrastrándolos.
 
- ![Mapa de código &#45; cambiar diseño](../modeling/media/codemapstoryboardpaint7a.png)
+ ![Captura de pantalla de una ventana de mapa de código con el menú de diseño abierto y el comando de izquierda a rgiht seleccionado.](../modeling/media/codemapstoryboardpaint7a.png)
 
 > [!TIP]
 > De forma predeterminada, el **diseño incremental** está activado. El mapa se reorganiza lo menos posible cuando se agregan nuevos elementos. Para reorganizar todo el mapa cada vez que agregue nuevos elementos, desactive el **diseño incremental**.
 
- ![Mapa de código &#45; cambiar diseño](../modeling/media/codemapstoryboardpaint7.png)
+ ![Captura de pantalla de una ventana de mapa de código con las flechas relationshiop entre los campos que apuntan de izquierda a derecha.](../modeling/media/codemapstoryboardpaint7.png)
 
  Examinemos estos métodos. En el mapa, haga doble clic en el método **PaintCanvas** o seleccione este método y presione **F12**. Verá que este método crea `history` y `paintObjects` como listas vacías.
 
- ![Mapa de código &#45; examinar definición de método](../modeling/media/codemapstoryboardpaint8.png)
+ ![Captura de pantalla de una ventana de mapa de código con el método PaintCanvas seleccionado y una imagen de fragmento de código que muestra el nombre del método PainCanvas resaltado.](../modeling/media/codemapstoryboardpaint8.png)
 
  Ahora repita los mismos pasos para examinar la definición del método `clear`. Verá que `clear` lleva a cabo algunas tareas con `paintObjects` e `history`. A continuación, llama al método `Repaint`.
 
- ![Mapa de código &#45; examinar definición de método](../modeling/media/codemapstoryboardpaint9.png)
+ ![Captura de pantalla de una ventana de mapa de código con el método Clear seleccionado y una imagen de fragmento de código que muestra el código para el método Clear.](../modeling/media/codemapstoryboardpaint9.png)
 
  Ahora, examine la definición del método `addPaintObject`. También realiza algunas tareas con `history` y `paintObjects`. También llama a `Repaint`.
 
- ![Mapa de código &#45; examinar definición de método](../modeling/media/codemapstoryboardpaint10.png)
+ ![Captura de pantalla de una ventana de mapa de código con el método addPaintObject seleccionado y una imagen de fragmento de código que muestra el código para el método addPaintObject.](../modeling/media/codemapstoryboardpaint10.png)
 
 ## <a name="find-the-problem-by-examining-the-map"></a>Buscar el problema examinando la asignación
  Parece que todos los métodos que modifican `history` y `paintObjects` llaman a `Repaint`. Con todo, el método `undo` no llama a `Repaint`, aunque `undo` modifica los mismos campos. Por tanto, cree que puede corregir este problema mediante una llamada a `Repaint` desde `undo`.
@@ -142,7 +142,7 @@ Para obtener detalles de los comandos y las acciones que se pueden usar al traba
 
  Ahora ya ha terminado con la investigación. Encontró y corrigió correctamente el problema asignando el código. También tiene un mapa que le ayuda a navegar por el código y a recordar lo que ha aprendido, y le muestra los pasos llevados a cabo para corregir el problema.
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Consulte también
 
 - [Asignar métodos en la pila de llamadas durante la depuración](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
 - [Visualizar el código](../modeling/visualize-code.md)

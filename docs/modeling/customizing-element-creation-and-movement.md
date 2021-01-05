@@ -13,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96ef956980b08e688970ad0a00d7d1a0804da7c3
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: b84f638876270658be2f08a7e375540f0329a1d6
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363125"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729345"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personalizar la creación y el movimiento de los elementos
 
@@ -40,7 +40,7 @@ Aunque es posible que las operaciones de creación parezcan distintas de las ope
 
 La responsabilidad de un EMD es decidir cómo se debe combinar un objeto o un grupo de objetos en una ubicación determinada del modelo. En concreto, decide qué relaciones deben crearse para vincular el Grupo combinado al modelo. También puede personalizarlo para establecer las propiedades y crear objetos adicionales.
 
-![Combinación de EMD&#95;DSL&#45;](../modeling/media/dsl-emd_merge.png)
+![Diagrama que muestra un y antes y después de examinar un árbol de elementos y sus relaciones de referencia cuando una E M D determina cómo se agrega un nuevo elemento.](../modeling/media/dsl-emd_merge.png)
 
 Un EMD se genera automáticamente cuando se define una relación de incrustación. Este EMD predeterminado crea una instancia de la relación cuando los usuarios agregan nuevas instancias secundarias al elemento primario. Puede modificar estos EMDs predeterminados, por ejemplo, agregando código personalizado.
 
@@ -50,7 +50,7 @@ También puede agregar su propia EMDs en la definición de DSL para permitir que
 
 Puede Agregar directivas de combinación de elementos a clases de dominio, relaciones de dominio, formas, conectores y diagramas. Puede agregarlos o encontrarlos en el explorador de DSL en la clase de dominio receptor. La clase receptora es la clase de dominio del elemento que ya está en el modelo y en la que se combinará el elemento nuevo o copiado.
 
-![Detalles de EMD&#95;de DSL&#45;](../modeling/media/dsl-emd_details.png)
+![Captura de pantalla del explorador de DSL que muestra la adición de un E M D con ExampleElement seleccionado como clase de indexación y la opción se aplica a las subclases activada.](../modeling/media/dsl-emd_details.png)
 
 La **clase de indización** es la clase de dominio de los elementos que se pueden combinar en los miembros de la clase receptora. Este EMD también combinará las instancias de subclases de la clase de indexación, a menos que establezca **se aplica a las subclases** a false.
 
@@ -318,7 +318,7 @@ Puede crear una directiva de combinación hacia delante en la solución modelo d
 
      No debe ver el puntero no disponible y debe poder quitar el nuevo **Puerto de entrada** en el existente. Seleccione el nuevo **Puerto de entrada** y arrástrelo hasta otro punto del **componente**.
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Consulte también
 
 - [Navegar y actualizar un modelo en el código del programa](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Personalizar las herramientas y el cuadro de herramientas](../modeling/customizing-tools-and-the-toolbox.md)

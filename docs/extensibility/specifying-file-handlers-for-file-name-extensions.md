@@ -1,5 +1,7 @@
 ---
 title: Especificar controladores de archivos para las extensiones de nombre de archivo | Microsoft Docs
+description: Obtenga información sobre cómo determinar qué aplicación controla una extensión de archivo en el SDK de Visual Studio mediante OpenWithList y OpenWithProgids.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af195aea09c91696843c6be42c20053bb8c095a2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 421244cd88af43e7602298e7384a632c8aa51833
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699751"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715605"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>Especificación de identificadores de archivo para extensiones de nombre de archivo
 Hay varias maneras de determinar la aplicación que controla un archivo que tiene una extensión de archivo determinada. Los verbos OpenWithList y OpenWithProgids son dos maneras de especificar controladores de archivo en la entrada del registro para la extensión de archivo.
@@ -34,7 +36,7 @@ HKEY_CLASSES_ROOT\
 ```
 
 > [!NOTE]
-> Las claves que especifican aplicaciones son de la lista en HKEY_CLASSES_ROOT \Applications.
+> Las claves que especifican las aplicaciones se encuentran en la lista de HKEY_CLASSES_ROOT\Applications.
 
  Al agregar una clave OpenWithList, se declara que la aplicación admite una extensión de archivo incluso si otra aplicación toma posesión de la extensión. Puede tratarse de una versión futura de la aplicación o de otra aplicación.
 
@@ -47,12 +49,12 @@ HKEY_CLASSES_ROOT\
 |--------------------|----------------------|
 |. Extension|NombreDeProducto. extensión. propiedad versionmajor. versionMinor|
 
- Puede registrar diferentes aplicaciones que pueden abrir una extensión de archivo determinada agregando los ProgID con versión como valores a la \\ *\<extension>* clave HKEY_CLASSES_ROOT \OpenWithProgids. Esta clave del registro contiene una lista de ProgID alternativos asociados a la extensión de archivo. Las aplicaciones asociadas a los ProgID enumerados aparecen en el submenú **abrir con**el_nombre del producto_ . Si se especifica la misma aplicación en las `OpenWithList` claves y `OpenWithProgids` , el sistema operativo combina los duplicados.
+ Puede registrar diferentes aplicaciones que pueden abrir una extensión de archivo determinada agregando los ProgID con versión como valores a la \\ *\<extension>* clave HKEY_CLASSES_ROOT \OpenWithProgids. Esta clave del registro contiene una lista de ProgID alternativos asociados a la extensión de archivo. Las aplicaciones asociadas a los ProgID enumerados aparecen en el submenú **abrir con** el _nombre del producto_ . Si se especifica la misma aplicación en las `OpenWithList` claves y `OpenWithProgids` , el sistema operativo combina los duplicados.
 
 > [!NOTE]
 > La `OpenWithProgids` clave solo se admite en Windows XP. Dado que otros sistemas operativos omiten esta clave, no la use como único registro para los controladores de archivos. Use esta clave para proporcionar una mejor experiencia de usuario en Windows XP.
 
- Agregue los ProgID deseados como valores del tipo REG_NONE. El código siguiente proporciona un ejemplo de registro de los ProgID para una extensión de archivo (.* EXT*).
+ Agregue los ProgID deseados como valores del tipo REG_NONE. El código siguiente proporciona un ejemplo de registro de los ProgID para una extensión de archivo (.*EXT*).
 
 ```
 HKEY_CLASSES_ROOT\
@@ -77,6 +79,6 @@ HKEY_CLASSES_ROOT\
 
  Si el ProgID antiguo tiene verbos asociados, estos verbos también aparecerán en **abrir con** el *nombre del producto* en el menú contextual.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Acerca de las extensiones de nombre de archivo](../extensibility/about-file-name-extensions.md)
 - [Registro de verbos para extensiones de nombre de archivo](../extensibility/registering-verbs-for-file-name-extensions.md)

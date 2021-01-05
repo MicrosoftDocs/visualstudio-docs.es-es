@@ -1,5 +1,7 @@
 ---
 title: Compatibilidad con varias vistas de documento | Microsoft Docs
+description: Obtenga información sobre cómo proporcionar más de una vista de un documento mediante el uso de datos de documento independientes y objetos de vista de documento para el editor personalizado en el SDK de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a952414fa7156d80675564e519e556ccedd524a3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c1d99f4beb000d4b48435b9215a01f31ef8e936
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699543"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716099"
 ---
 # <a name="supporting-multiple-document-views"></a>Compatibilidad con vistas de varios documentos
 Puede proporcionar más de una vista de un documento creando datos de documento independientes y objetos de vista de documento para el editor. Algunos casos en los que una vista de documento adicional sería útil son:

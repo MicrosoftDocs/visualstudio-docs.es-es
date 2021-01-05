@@ -1,5 +1,7 @@
 ---
 title: Patrones de control comunes para Visual Studio | Microsoft Docs
+description: Obtenga información sobre cómo los controles comunes de Visual Studio siguen las instrucciones de interacción del escritorio de Windows y sobre las situaciones especiales que amplían esas directrices.
+ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0b5a1904c01f5688a00e45de7feed7ae326d9b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c1caccebf1dc14146bef214a4d33e1216243780
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698711"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715891"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Patrones de control comunes para Visual Studio
 ## <a name="common-controls"></a><a name="BKMK_CommonControls"></a> Controles comunes
@@ -363,7 +365,7 @@ Un nodo de vista de árbol puede revelar opciones de submenú en un menú contex
 
 ![El elemento que ha generado el menú contextual obtiene el foco para notificar al usuario qué elemento se ha seleccionado.](../../extensibility/ux-guidelines/media/070705-5_contextmenu.png "070705-5_ContextMenu")<br />El elemento que ha generado el menú contextual obtiene el foco para notificar al usuario qué elemento se ha seleccionado.
 
-#### <a name="keyboard"></a>Keyboard
+#### <a name="keyboard"></a>Teclado
 La vista de árbol debe proporcionar la capacidad de seleccionar elementos y de expandir o contraer los nodos con el teclado. Esto garantiza que la navegación cumple nuestros requisitos de accesibilidad.
 
 ##### <a name="tree-view-control"></a>Control de vista de árbol

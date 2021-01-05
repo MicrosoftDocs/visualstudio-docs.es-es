@@ -15,16 +15,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d6b9bb2eb6169de2bbbf41b6d4e96a5960e40fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5cd7bb050204d65bb78a597c1ae3c7eea36ac184
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348254"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729358"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Navegación por el código con el depurador de Visual Studio
 
-El depurador de Visual Studio puede ayudarle a navegar por el código para inspeccionar el estado de una aplicación y mostrar su flujo de ejecución. Puede usar métodos abreviados de teclado, y depurar comandos, puntos de interrupción y otras características para obtener rápidamente el código que quiera examinar. Familiarizarse con los comandos de navegación y los métodos abreviados de teclado del depurador permite encontrar y resolver problemas de la aplicación de forma más rápida y sencilla.  Si esta es la primera vez que intenta depurar código, le recomendamos que lea [Cómo depurar para principiantes sin experiencia](../debugger/debugging-absolute-beginners.md) y [Herramientas y técnicas de depuración](../debugger/write-better-code-with-visual-studio.md) antes de continuar con este artículo.
+El depurador de Visual Studio puede ayudarle a navegar por el código para inspeccionar el estado de una aplicación y mostrar su flujo de ejecución. Puede usar métodos abreviados de teclado, y depurar comandos, puntos de interrupción y otras características para obtener rápidamente el código que quiera examinar. Familiarizarse con los comandos de navegación y los métodos abreviados de teclado del depurador permite encontrar y resolver problemas de la aplicación de forma más rápida y sencilla.
+
+> [!NOTE]
+> Si esta es la primera vez que intenta depurar código, le recomendamos que lea [Cómo depurar para principiantes sin experiencia](../debugger/debugging-absolute-beginners.md) y [Herramientas y técnicas de depuración](../debugger/write-better-code-with-visual-studio.md) antes de continuar con este artículo.
 
 ## <a name="get-into-break-mode"></a>Acceso al "modo de interrupción"
 

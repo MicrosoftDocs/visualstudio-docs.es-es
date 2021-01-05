@@ -1,5 +1,7 @@
 ---
 title: Patrones compuestos para Visual Studio | Microsoft Docs
+description: Obtenga información sobre los patrones compuestos importantes para lograr coherencia en Visual Studio. Los patrones compuestos combinan elementos de interacción y diseño.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ebc8f4f6c17af54f4dfdcfc0d0d05c5da9d2d88b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 719ce0ac88761599fbed7da90643fd8a9d79db69
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88114081"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715826"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Patrones compuestos para Visual Studio
 Los patrones compuestos combinan elementos de interacción y diseño en configuraciones distintas. Algunos de los patrones compuestos más importantes en Visual Studio con respecto a la coherencia incluyen:
@@ -71,7 +73,7 @@ Los patrones compuestos combinan elementos de interacción y diseño en configur
 #### <a name="color"></a>Color
  Hay una paleta específica de colores de gráficos definidos para su uso en Visual Studio. La paleta es accesible para los principales tipos de ceguera de color y los colores se pueden diferenciar incluso cuando se usan como segmentos de color muy estrechos. Puede usar estos colores en cualquier combinación para cualquier tipo de gráfico o gráfico de la interfaz de usuario. No es necesario usar los siete colores si no se necesitan muchos colores distintos. Estos colores no se diseñaron para usarse con elementos de primer plano, por lo que no debe colocar texto ni glifos encima de estos colores. Estas tonalidades deben estar codificadas de forma rígida y expuestas a la personalización del usuario en **herramientas > opciones** (consulte [exposición de colores para usuarios finales](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)).
 
-|Muestras|Hex|RGB|
+|Muestra|Hex|RGB|
 |------------|---------|---------|
 |![Muestra 71B252](../../extensibility/ux-guidelines/media/0711_71b252.png "0711_71B252")|#71B252|113178, 82|
 |![Muestra BF3F00](../../extensibility/ux-guidelines/media/0711_bf3f00.png "0711_BF3F00")|#BF3F00|191, 63, 0|
@@ -310,7 +312,7 @@ Los patrones compuestos combinan elementos de interacción y diseño en configur
  **Selección de región (cuadro) en Visual Studio**
 
 #### <a name="text-selection-appearance"></a>Apariencia de la selección de texto
- Los colores que se usan para la selección activa e inactiva en el editor se pueden personalizar. Para personalizar el aspecto visual del editor, un usuario puede ir a **herramientas > opciones**y, a continuación, buscar en **entorno > fuentes y colores > editor de texto**.
+ Los colores que se usan para la selección activa e inactiva en el editor se pueden personalizar. Para personalizar el aspecto visual del editor, un usuario puede ir a **herramientas > opciones** y, a continuación, buscar en **entorno > fuentes y colores > editor de texto**.
 
 ### <a name="graphical-selection"></a>Selección gráfica
 
