@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 447725fd27ab81b85890d37a8f0df8a35ad5fbee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03c5dca96b4e20e36bc6c69b907423f27ac4af71
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85328475"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833226"
 ---
 # <a name="troubleshooting-xaml-hot-reload"></a>Solución de problemas con la recarga activa de XAML
 
@@ -34,13 +34,13 @@ La característica está habilitada de forma predeterminada. Cuando empiece a de
 
 ![Recarga activa de XAML disponible](../debugger/media/xaml-hot-reload-available.png)
 
-Si no ve la barra de herramientas en la aplicación, abra opciones de **depuración**  >  **Options**  >  **General**. Asegúrese de que están seleccionadas las dos opciones, **habilitar las herramientas de depuración de la interfaz de usuario para XAML** y **Habilitar la recarga activa de XAML** .
+Si no ve la barra de herramientas en la aplicación, abra opciones de **depuración**  >    >  **General**. Asegúrese de que están seleccionadas las dos opciones, **habilitar las herramientas de depuración de la interfaz de usuario para XAML** y **Habilitar la recarga activa de XAML** .
 
-![Habilitar recarga activa de XAML](../debugger/media/xaml-hot-reload-enable.png)
+![Captura de pantalla de la ventana Opciones de depuración de Visual Studio. Se seleccionan las opciones generales de depuración y se activa la opción Habilitar recarga activa de XAML.](../debugger/media/xaml-hot-reload-enable.png)
 
-Si estas opciones están seleccionadas, vaya al árbol visual dinámico (**depurar**  >  **Windows**  >  **árbol visual**de Windows Live) y asegúrese de que la opción **Mostrar herramientas en tiempo de ejecución en la aplicación** (en el extremo izquierdo) está seleccionada.
+Si estas opciones están seleccionadas, vaya al árbol visual dinámico (**depurar**  >    >  **árbol visual** de Windows Live) y asegúrese de que la opción **Mostrar herramientas en tiempo de ejecución en la aplicación** (en el extremo izquierdo) está seleccionada.
 
-![Habilitar recarga activa de XAML](../debugger/media/xaml-hot-reload-show-runtime-tools.png)
+![Captura de pantalla de la barra de herramientas en la parte superior de la ventana del árbol visual activo con el botón "Mostrar herramientas en tiempo de ejecución en la aplicación" seleccionado.](../debugger/media/xaml-hot-reload-show-runtime-tools.png)
 
 ## <a name="verify-that-you-use-start-debugging-rather-than-attach-to-process"></a>Compruebe que usa iniciar depuración en lugar de asociar al proceso.
 
@@ -69,6 +69,6 @@ Debe establecer manualmente la propiedad de MSBuild correcta para admitir la rec
 
 Si el archivo XAML muestra errores en el **lista de errores**, es posible que la recarga activa de XAML no funcione.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Escribir y depurar código XAML en ejecución con recarga activa de XAML](xaml-hot-reload.md)

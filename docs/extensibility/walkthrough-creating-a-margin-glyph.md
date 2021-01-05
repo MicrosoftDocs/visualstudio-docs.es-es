@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: crear un glifo de margen | Microsoft Docs'
+description: Obtenga información acerca de cómo personalizar la apariencia de los márgenes del editor mediante el uso de extensiones de editor personalizadas mediante este tutorial.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,22 +12,22 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b94ab61f56d74537758c189adc9c104516f67f92
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d8a2ac481ebf76fc2b34be841cd20d15b97fcfa9
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905051"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863084"
 ---
 # <a name="walkthrough-create-a-margin-glyph"></a>Tutorial: crear un glifo de margen
 Puede personalizar la apariencia de los márgenes del editor mediante extensiones de editor personalizadas. En este tutorial se coloca un glifo personalizado en el margen del indicador siempre que aparece la palabra "todo" en un Comentario de código.
 
-## <a name="prerequisites"></a>Requisitos previos
- A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+## <a name="prerequisites"></a>Prerrequisitos
+ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS después. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-mef-project"></a>Creación de un proyecto MEF
 
-1. Cree un proyecto VSIX en C#. (En el cuadro de diálogo **nuevo proyecto** , seleccione **Visual C#/extensibilidad**y, a continuación, **Proyecto VSIX**). Asigne a la solución el nombre `TodoGlyphTest` .
+1. Cree un proyecto VSIX en C#. (En el cuadro de diálogo **nuevo proyecto** , seleccione **Visual C#/extensibilidad** y, a continuación, **Proyecto VSIX**). Asigne a la solución el nombre `TodoGlyphTest` .
 
 2. Agregue un elemento de proyecto clasificador de editor. Para obtener más información, vea [crear una extensión con una plantilla de elemento de editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).
 

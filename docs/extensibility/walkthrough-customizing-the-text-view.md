@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: personalizar la vista de texto | Microsoft Docs'
+description: Para obtener información sobre cómo personalizar una vista de texto, modifique cualquiera de las distintas propiedades de la asignación de formato de editor mediante este tutorial.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b7a62ee2b55bf2b56ae1d8e28fc1910ed444c29
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 057e2a68e1d9a130f69441d8aec4b6a7fe0249e9
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904934"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97862968"
 ---
 # <a name="walkthrough-customize-the-text-view"></a>Tutorial: personalizar la vista de texto
 Puede personalizar una vista de texto modificando cualquiera de las siguientes propiedades en la asignación de formato del editor:
@@ -32,12 +34,12 @@ Puede personalizar una vista de texto modificando cualquiera de las siguientes p
 
 - Espacio en blanco visible
 
-## <a name="prerequisites"></a>Requisitos previos
- A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+## <a name="prerequisites"></a>Prerrequisitos
+ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS después. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-mef-project"></a>Creación de un proyecto MEF
 
-1. Cree un proyecto VSIX en C#. (En el cuadro de diálogo **nuevo proyecto** , seleccione **Visual C#/extensibilidad**y, a continuación, **Proyecto VSIX**). Asigne a la solución el nombre `ViewPropertyTest` .
+1. Cree un proyecto VSIX en C#. (En el cuadro de diálogo **nuevo proyecto** , seleccione **Visual C#/extensibilidad** y, a continuación, **Proyecto VSIX**). Asigne a la solución el nombre `ViewPropertyTest` .
 
 2. Agregue una plantilla de elemento clasificador de editor al proyecto. Para obtener más información, vea [crear una extensión con una plantilla de elemento de editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).
 

@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: crear un SDK con JavaScript | Microsoft Docs'
+description: Aprenda a usar JavaScript para crear un SDK de matemáticas sencillo como una extensión de Visual Studio mediante este tutorial.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: a8c89d5d-5b78-4435-817f-c5f25ca6d715
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 29dac6cca7936dde8be2ebc57366f6370b8bcbc6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd138638a1f8bb4c0fe8dc73504059f0c9dd4023
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904941"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97862911"
 ---
 # <a name="walkthrough-create-an-sdk-using-javascript"></a>Tutorial: crear un SDK mediante JavaScript
 En este tutorial se enseña cómo usar JavaScript para crear un SDK de Math sencillo como extensión de Visual Studio (VSIX).  El tutorial se divide en estas partes:
@@ -24,14 +26,14 @@ En este tutorial se enseña cómo usar JavaScript para crear un SDK de Math senc
 
   En JavaScript, no hay ningún tipo de proyecto de biblioteca de clases. En este tutorial, el archivo de *arithmetic.js* de ejemplo se crea directamente en el Proyecto VSIX. En la práctica, se recomienda compilar y probar primero los archivos JavaScript y CSS como una aplicación de la tienda Windows (por ejemplo, usando la plantilla **aplicación vacía** ) antes de colocarlos en un proyecto VSIX.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
  Para seguir este tutorial, debe instalar SDK de Visual Studio. Para obtener más información, vea el [SDK de Visual Studio](../extensibility/visual-studio-sdk.md).
 
 ## <a name="to-create-the-simplemathvsix-extension-sdk-project"></a><a name="createSimpleMathVSIX"></a> Para crear el proyecto de SDK de extensión SimpleMathVSIX
 
 1. En la barra de menús, elija **Archivo** > **Nuevo** > **Proyecto**.
 
-2. En la lista de categorías de plantilla, en **Visual C#**, seleccione **extensibilidad**y, a continuación, seleccione la plantilla de **Proyecto VSIX** .
+2. En la lista de categorías de plantilla, en **Visual C#**, seleccione **extensibilidad** y, a continuación, seleccione la plantilla de **Proyecto VSIX** .
 
 3. En el cuadro de texto **nombre** , especifique `SimpleMathVSIX` y elija el botón **Aceptar** .
 
@@ -88,13 +90,13 @@ En este tutorial se enseña cómo usar JavaScript para crear un SDK de Math senc
 
 11. En la ventana **propiedades** , establezca la propiedad **incluir en VSIX en** **true**.
 
-12. En **Explorador de soluciones**, en el menú contextual del proyecto **SimpleMathVSIX** , elija **Agregar**  >  **nueva carpeta**y, a continuación, asigne un nombre a la carpeta `Redist` .
+12. En **Explorador de soluciones**, en el menú contextual del proyecto **SimpleMathVSIX** , elija **Agregar**  >  **nueva carpeta** y, a continuación, asigne un nombre a la carpeta `Redist` .
 
 13. Agregue subcarpetas en Redist para crear esta estructura de carpetas:
 
      *\Redist\CommonConfiguration\Neutral\SimpleMath\js\\*
 
-14. En el menú contextual de la carpeta **\js \\ ** , elija **Agregar**  >  **nuevo elemento**.
+14. En el menú contextual de la carpeta **\js \\** , elija **Agregar**  >  **nuevo elemento**.
 
 15. En **elementos de Visual C#**, seleccione la categoría **Web** y, a continuación, seleccione el elemento **archivo de JavaScript** . Asigne un nombre al archivo `arithmetic.js` y, a continuación, elija el botón **Agregar** .
 
@@ -132,27 +134,27 @@ En este tutorial se enseña cómo usar JavaScript para crear un SDK de Math senc
 
 18. En **Explorador de soluciones**, en el menú contextual del proyecto **SimpleMathVSIX** , elija **compilar**.
 
-19. Una vez que la compilación se complete correctamente, en el menú contextual del proyecto, elija **Abrir carpeta en el explorador de archivos**. Vaya a **\bin\debug \\ **y ejecute `SimpleMathVSIX.vsix` para instalarlo.
+19. Una vez que la compilación se complete correctamente, en el menú contextual del proyecto, elija **Abrir carpeta en el explorador de archivos**. Vaya a **\bin\debug \\** y ejecute `SimpleMathVSIX.vsix` para instalarlo.
 
 20. Elija el botón **instalar** y deje que se complete la instalación.
 
-21. Reinicie Visual Studio.
+21. Reinicie Visual Studio.
 
 ## <a name="to-create-a-sample-app-that-uses-the-sdk"></a><a name="createSampleApp"></a> Para crear una aplicación de ejemplo que usa el SDK
 
 1. En la barra de menús, elija **Archivo** > **Nuevo** > **Proyecto**.
 
-2. En la lista de categorías de plantilla, en **JavaScript**, seleccione **tienda Windows**y, a continuación, seleccione la plantilla **aplicación vacía** .
+2. En la lista de categorías de plantilla, en **JavaScript**, seleccione **tienda Windows** y, a continuación, seleccione la plantilla **aplicación vacía** .
 
 3. En el cuadro **nombre** , especifique `ArithmeticUI` . Elija el botón **Aceptar** .
 
 4. En **Explorador de soluciones**, abra el menú contextual del proyecto **ArithmeticUI** y, a continuación, elija **Agregar**  >  **referencia**.
 
-5. En **Windows**, elija **extensiones**y observe que se muestra **matemáticas simples** .
+5. En **Windows**, elija **extensiones** y observe que se muestra **matemáticas simples** .
 
 6. Active la casilla **matemáticas simples** y, a continuación, elija el botón **Aceptar** .
 
-7. En **Explorador de soluciones**, en **referencias**, observe que se muestra la referencia **matemática simple** . Expándalo y observe que hay una carpeta **\js \\ ** que incluye **arithmetic.js**. Puede abrir **arithmetic.js** para confirmar que el código fuente está instalado.
+7. En **Explorador de soluciones**, en **referencias**, observe que se muestra la referencia **matemática simple** . Expándalo y observe que hay una carpeta **\js \\** que incluye **arithmetic.js**. Puede abrir **arithmetic.js** para confirmar que el código fuente está instalado.
 
 8. Use el código siguiente para reemplazar el contenido de *default.htm*.
 

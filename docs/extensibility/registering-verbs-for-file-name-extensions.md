@@ -1,5 +1,7 @@
 ---
 title: Registrando verbos para las extensiones de nombre de archivo | Microsoft Docs
+description: Obtenga información sobre cómo registrar un verbo que está asociado a un identificador de programación para una extensión de nombre de archivo mediante una clave de Shell.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac2854f1799075cc14d9beb557335be5228be21d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: df0dfe90bd5e3bccbb6bb0f9dab400082f539fbf
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701530"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863040"
 ---
 # <a name="register-verbs-for-file-name-extensions"></a>Registrar verbos para las extensiones de nombre de archivo
 La Asociación de una extensión de nombre de archivo con una aplicación generalmente tiene una acción preferida que se produce cuando un usuario hace doble clic en un archivo. Esta acción preferida está vinculada a un verbo, como Open, que corresponde a la acción.
@@ -31,7 +33,7 @@ La Asociación de una extensión de nombre de archivo con una aplicación genera
 
 - Reproducir
 
-- Impresión
+- Imprimir
 
 - Vista previa
 
@@ -111,5 +113,5 @@ La Asociación de una extensión de nombre de archivo con una aplicación genera
 > [!NOTE]
 > Si tiene previsto cambiar el verbo predeterminado de una extensión en una implementación en paralelo, tenga en cuenta el impacto en la instalación y la eliminación. Durante la instalación, se sobrescribe el valor predeterminado original.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Administrar asociaciones de archivos en paralelo](../extensibility/managing-side-by-side-file-associations.md)

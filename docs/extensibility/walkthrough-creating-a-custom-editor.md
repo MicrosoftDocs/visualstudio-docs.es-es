@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: crear un editor personalizado | Microsoft Docs'
+description: Obtenga información sobre cómo la plantilla de proyecto de VSPackage puede crear un editor personalizado simple en C++ mediante este tutorial.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,17 +12,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4713931d70fd91dd57b85bc6fc749e62e03eb20b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 188c02471e8921e66faefe9668ec3f54c935b50b
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905927"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863125"
 ---
 # <a name="walkthrough-create-a-custom-editor"></a>Tutorial: crear un editor personalizado
 La plantilla de proyecto VSPackage puede crear un editor personalizado simple en C++. La plantilla de proyecto de VSPackage ya no es compatible con proyectos de C# o Visual Basic. Para obtener más información, vea el [SDK de Visual Studio](../extensibility/visual-studio-sdk.md).
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
  Para seguir este tutorial, debe instalar SDK de Visual Studio. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="the-visual-studio-package-project-template"></a>La plantilla de proyecto de paquete de Visual Studio

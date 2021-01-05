@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: agregar XAML personalizado a la página de inicio | Microsoft Docs'
+description: Obtenga información sobre cómo crear una página de inicio personalizada de Visual Studio que contenga un explorador Web mediante este tutorial.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 85cc6520ea86db664de676232e8d61a643483ca4
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 8f23b1331b2c083a38f6b11d9a4a3647474b2f04
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012079"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97862790"
 ---
 # <a name="walkthrough-add-custom-xaml-to-the-start-page"></a>Tutorial: agregar XAML personalizado a la página de inicio
 
@@ -87,7 +89,7 @@ Para aplicar la página de inicio personalizada, en **herramientas**  >  **Opcio
 
 La página de inicio de Visual Studio contiene ahora una pestaña que muestra una pestaña del explorador Web y una pestaña MyButton. Puede crear páginas de inicio personalizadas que tienen otras funciones mediante el uso del modelo *de código subyacente* para agregar un archivo. dll personalizado, tal como se muestra en [Agregar control de usuario a la página de inicio](../extensibility/adding-user-control-to-the-start-page.md). Puede compartir páginas de inicio personalizadas con otros usuarios si publica el archivo. vsix resultante en el sitio web de [Visual Studio Marketplace](https://marketplace.visualstudio.com/) , o en otro sitio web o recurso compartido de red. Para obtener más información, consulta [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Personalizar la página de inicio](../ide/customizing-the-start-page-for-visual-studio.md)
 - [Controles de contenedor de WPF](/previous-versions/bb675291(v=vs.110))

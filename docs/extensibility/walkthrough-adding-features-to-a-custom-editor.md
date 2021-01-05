@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: agregar características a un editor personalizado | Microsoft Docs'
+description: Obtenga información acerca de cómo agregar más características a un editor personalizado después de crear el editor mediante este tutorial.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12f585a3e7dd4a8182d7ed80cf65a20d0a82da83
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: c08af63eaf68701f1a6703ac41fec20368d78931
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414027"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863198"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>Tutorial: agregar características a un editor personalizado
 Después de crear un editor personalizado, puede agregarle más características.
@@ -69,7 +71,7 @@ Después de crear un editor personalizado, puede agregarle más características
 
     2. Llame a `QueryService` en <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> el servicio para obtener un puntero a <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> .
 
-9. Permite a los usuarios arrastrar y colocar elementos entre el editor y el **cuadro de herramientas** , o entre editores externos (como Microsoft Word) y el cuadro de **herramientas**. Siga estos pasos:
+9. Permite a los usuarios arrastrar y colocar elementos entre el editor y el **cuadro de herramientas**, o entre editores externos (como Microsoft Word) y el cuadro de **herramientas**. Siga estos pasos:
 
     1. Implemente `IDropTarget` en el editor para alertar al IDE de que el editor es un destino de colocación.
 
@@ -138,7 +140,7 @@ Después de crear un editor personalizado, puede agregarle más características
   > [!NOTE]
   > La `IOleInPlaceComponent` interfaz se utiliza para evitar la combinación de menús de OLE 2.
 
-   La `IOleCommandTarget` implementación controla comandos como **cortar** , **copiar** y **pegar**. Al implementar `IOleCommandTarget` , decida si el editor requiere su propio archivo *. Vsct* para definir su propia estructura de menú de comandos o si puede implementar comandos estándar definidos por [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Normalmente, los editores usan y extienden los menús del IDE y definen sus propias barras de herramientas. Sin embargo, a menudo es necesario que un editor defina sus propios comandos específicos además de usar el conjunto de comandos estándar del IDE. El editor debe declarar los comandos estándar que usa y, a continuación, definir los comandos nuevos, los menús contextuales, los menús de nivel superior y las barras de herramientas en un archivo *. Vsct* . Si crea un editor de activación en contexto, implemente <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> y defina los menús y las barras de herramientas del editor en un archivo *. Vsct* en lugar de usar la combinación de menús de OLE 2.
+   La `IOleCommandTarget` implementación controla comandos como **cortar**, **copiar** y **pegar**. Al implementar `IOleCommandTarget` , decida si el editor requiere su propio archivo *. Vsct* para definir su propia estructura de menú de comandos o si puede implementar comandos estándar definidos por [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Normalmente, los editores usan y extienden los menús del IDE y definen sus propias barras de herramientas. Sin embargo, a menudo es necesario que un editor defina sus propios comandos específicos además de usar el conjunto de comandos estándar del IDE. El editor debe declarar los comandos estándar que usa y, a continuación, definir los comandos nuevos, los menús contextuales, los menús de nivel superior y las barras de herramientas en un archivo *. Vsct* . Si crea un editor de activación en contexto, implemente <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> y defina los menús y las barras de herramientas del editor en un archivo *. Vsct* en lugar de usar la combinación de menús de OLE 2.
 
 - Para evitar la amontonación del comando de menú en la interfaz de usuario, debe usar los comandos existentes en el IDE antes de inventar nuevos comandos. Los comandos compartidos se definen en *SharedCmdDef. Vsct* y *ShellCmdDef. Vsct*. Estos archivos se instalan de forma predeterminada en el subdirectorio VisualStudioIntegration\Common\Inc de la [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] instalación de.
 

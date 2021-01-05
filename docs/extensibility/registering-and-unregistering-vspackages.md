@@ -1,5 +1,7 @@
 ---
 title: Registrar y anular el registro de VSPackages | Microsoft Docs
+description: Obtenga información sobre cómo registrar y anular el registro de VSPackages, incluidos los atributos que se usan y el archivo. pkgdef.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f345bdbd3cf5858d495937c743b580abf5e3dd50
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b60844826387c2807eedcb47fe24c11a58af80f
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701578"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97862876"
 ---
 # <a name="register-and-unregister-vspackages"></a>Registrar y anular el registro de VSPackages
 Los atributos se usan para registrar un VSPackage, pero
@@ -29,7 +31,7 @@ Los atributos se usan para registrar un VSPackage, pero
 ```csharp
 [PackageRegistration(UseManagedResourcesOnly = true)]
 [Guid("0B81D86C-0A85-4f30-9B26-DD2616447F95")]
-public sealed class BasicPackage : Package
+public sealed class BasicPackage : Package
 {
     // ...
 }
@@ -121,5 +123,5 @@ public override void Unregister(RegistrationContext context)
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [VSPackages](../extensibility/internals/vspackages.md)

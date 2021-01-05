@@ -1,5 +1,7 @@
 ---
 title: Preparando extensiones para la implementación de Windows Installer | Microsoft Docs
+description: Obtenga información sobre cómo preparar un proyecto cuya salida predeterminada sea un paquete VSIX para su inclusión en un proyecto de instalación.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0084cfc6c08db1c1d15013362a186fec175b4ee4
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: ba494af91d3d40720493b27e7381660ece3fba69
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012222"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97862896"
 ---
 # <a name="prepare-extensions-for-windows-installer-deployment"></a>Preparar las extensiones para la implementación de Windows Installer
 No se puede usar un paquete de Windows Installer (MSI) para implementar un paquete VSIX. Sin embargo, puede extraer el contenido de un paquete VSIX para la implementación de MSI. En este documento se muestra cómo preparar un proyecto cuya salida predeterminada es un paquete VSIX para su inclusión en un proyecto de instalación.
@@ -54,6 +56,6 @@ No se puede usar un paquete de Windows Installer (MSI) para implementar un paque
 
 5. Agregue los archivos restantes al proyecto de instalación.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Implementación del instalador de Visual Studio](/previous-versions/2kt85ked(v=vs.120))
 - [Tutorial: crear una acción personalizada](/previous-versions/visualstudio/visual-studio-2010/d9k65z2d(v=vs.100))

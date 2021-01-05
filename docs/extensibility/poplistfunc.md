@@ -1,5 +1,7 @@
 ---
 title: POPLISTFUNC | Microsoft Docs
+description: Obtenga información sobre la función de devolución de llamada POPLISTFUNC, que usa el complemento de control de código fuente para actualizar una lista de archivos o directorios.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c5f8c1683a993915476ff23f1f5d5f2c2aba462
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 239f1aa5a55c3a5ce3a0f2a3ec9145f3cdb0630e
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702064"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863157"
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
 El IDE proporciona esta devolución de llamada al [SccPopulateList](../extensibility/sccpopulatelist-function.md) y la usa el complemento de control de código fuente para actualizar una lista de archivos o directorios (también proporcionados a la `SccPopulateList` función).
@@ -47,12 +49,12 @@ typedef BOOL (*POPLISTFUNC) (
 
 ## <a name="return-value"></a>Valor devuelto
 
-|Value|Descripción|
+|Valor|Descripción|
 |-----------|-----------------|
 |`TRUE`|El complemento puede seguir llamando a esta función.|
 |`FALSE`|Se ha producido un problema en el lado del IDE (por ejemplo, una situación de memoria insuficiente). El complemento debe detener la operación.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
  Para cada archivo que el complemento de control de código fuente desea agregar o eliminar de la lista de archivos, llama a esta función, pasando el `lpFileName` . La `fAddRemove` marca indica un nuevo archivo que se va a agregar a la lista o a un archivo anterior que se va a eliminar. El `nStatus` parámetro proporciona el estado del archivo. Cuando el complemento SCC ha terminado de agregar y eliminar archivos, vuelve de la llamada a [SccPopulateList](../extensibility/sccpopulatelist-function.md) .
 
 > [!NOTE]

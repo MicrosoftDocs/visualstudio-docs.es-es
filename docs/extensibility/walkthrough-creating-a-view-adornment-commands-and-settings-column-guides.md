@@ -1,5 +1,7 @@
 ---
 title: Crear un elemento gráfico de vista, comandos y valores | Microsoft Docs
+description: Obtenga información sobre cómo extender el editor de código de Visual Studio con guías de columna mediante este tutorial.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 392c4be60f2285edb986d5ca7a1cf4a2202e03c7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2108abe89a47fa276da53a14439a52451d936eea
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905043"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863065"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>Tutorial: crear un elemento gráfico de vista, comandos y configuración (guías de columnas)
 Puede extender el editor de texto/código de Visual Studio con los comandos y los efectos de la vista. En este artículo se muestra cómo empezar a trabajar con una característica de extensión popular, guías de columnas. Las guías de columnas son líneas claras visualmente dibujadas en la vista del editor de texto para ayudarle a administrar el código en anchos de columna específicos. En concreto, el código con formato puede ser importante para los ejemplos que se incluyen en documentos, entradas de blog o informes de errores.
@@ -31,8 +33,8 @@ En este tutorial realizará lo siguiente:
   > [!NOTE]
   > En este tutorial, se pega una gran cantidad de código en algunos archivos generados por plantillas de extensión de Visual Studio. Pero pronto este tutorial hará referencia a una solución completada en GitHub con otros ejemplos de extensión. El código completado es ligeramente diferente en que tiene iconos de comando reales en lugar de usar iconos de GenericTemplate.
 
-## <a name="get-started"></a>Primeros pasos
-A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+## <a name="get-started"></a>Introducción
+A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS después. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="set-up-the-solution"></a>Configuración de la solución
 En primer lugar, cree un proyecto VSIX, agregue un elemento gráfico de la vista del editor y, a continuación, agregue un comando (que agrega un VSPackage para que sea el propietario del comando). La arquitectura básica es la siguiente:
@@ -47,7 +49,7 @@ En primer lugar, cree un proyecto VSIX, agregue un elemento gráfico de la vista
 
   Puede ver que esta plantilla de elemento agrega dos archivos al proyecto (así como referencias, etc.): **ColumnGuideAdornment.CS** y **ColumnGuideAdornmentTextViewCreationListener.CS**. Las plantillas dibujan un rectángulo púrpura en la vista. En la sección siguiente, cambiará un par de líneas en el agente de escucha de creación de vistas y reemplazará el contenido de **ColumnGuideAdornment.CS**.
 
-  **Comandos**. En **Explorador de soluciones**, presione el botón derecho del mouse en el nodo del proyecto. Elija el comando **agregar &#124; nuevo elemento...** para agregar un nuevo elemento de gráfico de vista. Elija **extensibilidad &#124; VSPackage** en el panel de navegación izquierdo y elija **comando personalizado** en el panel derecho. Escriba el nombre **ColumnGuideCommands** como el nombre del elemento y elija **Agregar**. Además de varias referencias, agregar los comandos y el paquete también agregó **ColumnGuideCommands.CS**, **ColumnGuideCommandsPackage.CS**y **ColumnGuideCommandsPackage. Vsct**. En la siguiente sección, reemplazará el contenido de los archivos primero y último para definir e implementar los comandos.
+  **Comandos**. En **Explorador de soluciones**, presione el botón derecho del mouse en el nodo del proyecto. Elija el comando **agregar &#124; nuevo elemento...** para agregar un nuevo elemento de gráfico de vista. Elija **extensibilidad &#124; VSPackage** en el panel de navegación izquierdo y elija **comando personalizado** en el panel derecho. Escriba el nombre **ColumnGuideCommands** como el nombre del elemento y elija **Agregar**. Además de varias referencias, agregar los comandos y el paquete también agregó **ColumnGuideCommands.CS**, **ColumnGuideCommandsPackage.CS** y **ColumnGuideCommandsPackage. Vsct**. En la siguiente sección, reemplazará el contenido de los archivos primero y último para definir e implementar los comandos.
 
 ## <a name="set-up-the-text-view-creation-listener"></a>Configuración del agente de escucha de creación de la vista de texto
 Abra *ColumnGuideAdornmentTextViewCreationListener.CS* en el editor. Este código implementa un controlador para cada vez que Visual Studio crea vistas de texto. Hay atributos que controlan Cuándo se llama al controlador en función de las características de la vista.
@@ -1180,7 +1182,7 @@ La línea siguiente proporciona ayuda para cuando los usuarios invocan el comand
 _addGuidelineCommand.ParametersDescription = "<column>";
 ```
 
- **Estado**de la consulta. El estado de la consulta funciona `AddColumnGuideBeforeQueryStatus` y `RemoveColumnGuideBeforeQueryStatus` comprueba algunos valores (como el número máximo de guías o la columna Max) o si hay una guía de columna para quitar. Habilitan los comandos si las condiciones son correctas.  Las funciones de estado de consulta deben ser eficaces porque se ejecutan cada vez que Visual Studio muestra un menú y para cada comando en el menú.
+ **Estado** de la consulta. El estado de la consulta funciona `AddColumnGuideBeforeQueryStatus` y `RemoveColumnGuideBeforeQueryStatus` comprueba algunos valores (como el número máximo de guías o la columna Max) o si hay una guía de columna para quitar. Habilitan los comandos si las condiciones son correctas.  Las funciones de estado de consulta deben ser eficaces porque se ejecutan cada vez que Visual Studio muestra un menú y para cada comando en el menú.
 
  **Función AddColumnGuideExecuted**. La parte interesante de la adición de una guía es la visualización de la vista del editor actual y la ubicación del símbolo de intercalación.  En primer lugar, esta función llama a `GetApplicableColumn` , que comprueba si hay un argumento proporcionado por el usuario en los argumentos de evento del controlador de comandos y, si no hay ninguno, la función comprueba la vista del editor:
 
