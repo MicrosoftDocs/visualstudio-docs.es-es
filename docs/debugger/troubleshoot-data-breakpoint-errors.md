@@ -15,12 +15,12 @@ ms.author: waan
 manager: caslan
 ms.workload:
 - multiple
-ms.openlocfilehash: c9f06b72673ea73e68f6c224ec9734568d70e25a
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 4cded3bfdb6adc206f02ef54402964f4e7276f93
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852262"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668786"
 ---
 # <a name="troubleshooting-data-breakpoint-errors"></a>Solución de errores con el punto de interrupción de datos
 Esta página lo guiará a través de la resolución de los errores comunes vistos cuando se usa "Interrumpir cuando cambia el valor".
@@ -81,7 +81,7 @@ La arquitectura (configuración de plataforma) en la que se ejecuta el programa 
 
 ## <a name="provide-feedback"></a>Proporcionar comentarios
 
-Si tiene algún problema o sugerencia sobre esta característica, comuníquela en Ayuda > Enviar comentarios > [Notificar un problema](../ide/how-to-report-a-problem-with-visual-studio.md) en el IDE o en [Developer Community](https://developercommunity.visualstudio.com/).
+Si tiene algún problema o sugerencia sobre esta característica, comuníquela en Ayuda > Enviar comentarios > [Notificar un problema](../ide/how-to-report-a-problem-with-visual-studio.md) en el IDE o en [Developer Community](https://aka.ms/feedback/suggest?space=8).
 
 ## <a name="see-also"></a>Vea también
 

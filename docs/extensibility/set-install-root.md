@@ -1,5 +1,7 @@
 ---
 title: Instalación fuera de la carpeta de extensiones con VSIX V3 | Microsoft Docs
+description: Obtenga información sobre cómo instalar recursos de extensión del SDK de Visual Studio fuera de la carpeta extensiones y qué ubicaciones son válidas.
+ms.custom: SEO-VS-2020
 ms.date: 11/09/2016
 ms.topic: conceptual
 ms.assetid: 913c3745-8aa9-4260-886e-a05aecfb2225
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa2c7d97dda9bba139ec613b367eedbc6307848a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 73bfb963122762c3185a964826a11dca5e771717
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700181"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716021"
 ---
 # <a name="install-outside-the-extensions-folder"></a>Instalar fuera de la carpeta de extensiones
 

@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 771fd167a2dc9fce8278ca53f730872a9f170eb7
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 62c06333af1e296c7e9745b70f33577d45ede68b
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329915"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668773"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Generación de entradas con la ejecución simbólica dinámica
 
@@ -133,7 +133,7 @@ La clase estática [PexChoose](static-helper-classes.md#pexchoose) puede usarse 
 
 ## <a name="got-feedback"></a>¿Tiene comentarios?
 
-Publique sus ideas y solicitudes de características en [Comunidad de desarrolladores](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
+Publique sus ideas y solicitudes de características en [Comunidad de desarrolladores](https://aka.ms/feedback/suggest?space=8).
 
 ## <a name="further-reading"></a>Lecturas adicionales
 

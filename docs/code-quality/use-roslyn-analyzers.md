@@ -13,12 +13,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f5ca27d44e611ab3b541dfb5992ef37d230513c3
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: fc74a556fe6baf21b6270b21951018fc246aa962
+ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040646"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "97696628"
 ---
 # <a name="overview"></a>Información general
 
@@ -261,7 +261,7 @@ dotnet_diagnostic.CA2231.severity = warning
 
 ### <a name="set-rule-severity-from-solution-explorer"></a>Establecer la gravedad de la regla desde Explorador de soluciones
 
-1. En explorador de soluciones, expanda los analizadores de **referencias**  >  **Analyzers** (o los **Dependencies**  >  **analizadores** de dependencias para proyectos de .net Core).
+1. En explorador de soluciones, expanda los analizadores de **referencias**  >   (o los   >  **analizadores** de dependencias para proyectos de .net Core).
 
 2. Expanda el ensamblado que contiene la regla para la que desea establecer la gravedad.
 
@@ -382,7 +382,9 @@ Hay varias maneras de suprimir las infracciones de reglas:
 
 Al compilar el proyecto en la línea de comandos, las infracciones de la regla aparecen en la salida de la compilación si se cumplen las condiciones siguientes:
 
-- Los analizadores se instalan como un paquete NuGet y no como una extensión VSIX.
+- Los analizadores se instalan con el SDK de .NET o como un paquete de NuGet, y no como una extensión VSIX.
+
+  En el caso de los analizadores instalados con el SDK de .NET, puede que tenga que [habilitar los analizadores](../code-quality/install-net-analyzers.md). En el caso de los estilos de código, también puede [aplicar estilos de código en la compilación](/dotnet/fundamentals/code-analysis/overview#code-style-analysis) estableciendo una propiedad de MSBuild.
 
 - Una o varias reglas se infringen en el código del proyecto.
 
@@ -411,7 +413,7 @@ En un proyecto de .NET Core, si agrega una referencia a un proyecto que tiene an
 <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="5.0.0" PrivateAssets="all" />
 ```
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Consulte también
 
 - [Información general de los analizadores de código en Visual Studio](../code-quality/roslyn-analyzers-overview.md)
 - [Enviar un error del analizador de código](https://github.com/dotnet/roslyn-analyzers/issues)

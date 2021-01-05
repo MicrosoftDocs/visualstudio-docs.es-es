@@ -1,5 +1,7 @@
 ---
 title: Envío de extensiones de Visual Studio | Microsoft Docs
+description: Obtenga información sobre cómo publicar y mantener la extensión del SDK de Visual Studio, incluido el trabajo con archivos. vsix, la publicación, la localización y la actualización.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 767bb24bb5cb47f1af1452aa04ebdc91c778e284
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 812fc4f4e2f8dcf54876e2764f0c091f16348496
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700117"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716008"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Suministro de extensiones de Visual Studio
 Una vez que haya terminado de desarrollar la extensión, puede instalarla en otras máquinas, compartirla con sus amigos y compañeros o publicarla en el Visual Studio Marketplace. En esta sección se explican todas las cosas que debe hacer para publicar y mantener la extensión: trabajar con archivos. vsix, publicar, localizar y actualizar.
@@ -30,7 +32,7 @@ Una vez que haya terminado de desarrollar la extensión, puede instalarla en otr
  El formato VSIX no admite la instalación de fragmentos de código. Tampoco admite otros escenarios, como la escritura en la caché de ensamblados global (GAC) o en el registro del sistema. Si tiene que escribir en la GAC o en el registro de la instalación, debe usar el Windows Installer. Para obtener más información, consulte [preparación de extensiones para la implementación de Windows Installer](../extensibility/preparing-extensions-for-windows-installer-deployment.md).
 
 ## <a name="publishing-your-extension-to-the-visual-studio-marketplace"></a>Publicar la extensión en el Visual Studio Marketplace
- Puede distribuir la extensión a otras personas simplemente enviándoles el archivo. vsix o colocando en un servidor. Pero la mejor manera de obtener el código en manos de muchos usuarios es colocarlo en el [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs). Visual Studio Marketplace extensiones están disponibles para los usuarios de Visual Studio a través **de extensiones y actualizaciones**. Para obtener más información, vea [Buscar y usar extensiones de Visual Studio](../ide/finding-and-using-visual-studio-extensions.md).
+ Puede distribuir la extensión a otras personas simplemente enviándoles el archivo. vsix o colocando en un servidor. Pero la mejor manera de obtener el código en manos de muchos usuarios es colocarlo en el [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs). Visual Studio Marketplace extensiones están disponibles para los usuarios de Visual Studio a través **de extensiones y actualizaciones**. Para más información, vea [Buscar y usar extensiones de Visual Studio](../ide/finding-and-using-visual-studio-extensions.md).
 
  Para obtener un ejemplo completo que muestra cómo cargar una extensión en el Visual Studio Marketplace, vea [Tutorial: publicar una extensión de Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md).
 

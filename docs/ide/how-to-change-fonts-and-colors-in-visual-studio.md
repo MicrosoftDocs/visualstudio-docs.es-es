@@ -3,7 +3,7 @@ title: Cambio de temas, fuentes, texto y contraste para mejorar la accesibilidad
 description: Aprenda a cambiar los temas de color, los colores de fuentes, los tamaños de texto y los colores de contraste adicional de Visual Studio para facilitar el uso y permitir una mejor accesibilidad.
 ms.date: 08/20/2020
 ms.topic: how-to
-ms.custom: contperfq1
+ms.custom: contperf-fy21q1
 helpviewer_keywords:
 - Visual Studio, color themes
 - color themes, Visual Studio
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2410974ed95b1aa8dca3dc3e31a39c39df2d4a0
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 7c52be25c007a16d7e6221663c434767c02d8d50
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801443"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97683900"
 ---
 # <a name="how-to-change-fonts-colors-and-themes-in-visual-studio"></a>Procedimiento Cambio de fuentes, colores y temas en Visual Studio
 
@@ -116,7 +116,7 @@ Use los procedimientos siguientes para alternar la opción de contraste adiciona
 Para más información sobre otras opciones de accesibilidad de Visual Studio disponibles, vea la página [Características de accesibilidad de Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md).
 
 > [!TIP]
-> Si hay una opción de accesibilidad para los colores o las fuentes que cree que puede ser útil pero no está disponible actualmente en Visual Studio, háganoslo saber seleccionando **Sugerir una característica** en [Visual Studio Developer Community](https://developercommunity.visualstudio.com/). Para más información sobre este foro y cómo funciona, vea la página [Sugerir una característica](../ide/suggest-a-feature.md).
+> Si hay una opción de accesibilidad para los colores o las fuentes que cree que puede ser útil pero no está disponible actualmente en Visual Studio, háganoslo saber seleccionando **Sugerir una característica** en [Visual Studio Developer Community](https://aka.ms/feedback/suggest?space=8). Para más información sobre este foro y cómo funciona, vea la página [Sugerir una característica](../ide/suggest-a-feature.md).
 
 ## <a name="next-steps"></a>Pasos siguientes
 

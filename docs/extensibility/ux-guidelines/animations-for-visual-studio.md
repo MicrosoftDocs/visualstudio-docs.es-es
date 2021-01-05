@@ -1,5 +1,7 @@
 ---
 title: Animaciones para Visual Studio | Microsoft Docs
+description: Obtenga información sobre las reglas que ayudan a garantizar estilos de animación coherentes y fáciles de conocer en el IDE de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 446773a9-e6f7-4c0c-8dbc-9e303bf32eb1
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc11eb7bab69728be5ceaa55143f56e93cd1fca4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c86b033986511100415989e76f4f1e6ef7702f10
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698602"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715956"
 ---
 # <a name="animations-for-visual-studio"></a>Animaciones para Visual Studio
 ## <a name="animation-fundamentals"></a>Aspectos básicos de la animación
@@ -43,7 +45,7 @@ Siga estas reglas para garantizar que los estilos de animación sean coherentes 
 
 - **El detalle es importante.** En la mayoría de los casos, la animación no tiene que solicitar la atención del usuario para atender su finalidad. Los cambios sutiles en el tiempo, la secuenciación y el comportamiento pueden afectar de forma significativa a la percepción y pueden hacer la diferencia entre una animación efectiva e ineficaz.
 
-- Al usar animaciones para atraer la atención a algo, asegúrese de **que merece la pena interrumpir el**entrenamiento del usuario.
+- Al usar animaciones para atraer la atención a algo, asegúrese de **que merece la pena interrumpir el** entrenamiento del usuario.
 
 - **Al mostrar el progreso o el estado** a través de la animación:
 
@@ -126,7 +128,7 @@ Mostrar información compleja y variable:
 
 - Progreso
 
-- Errores
+- Errors
 
 ##### <a name="structure"></a>Estructura
 
@@ -142,7 +144,7 @@ Mostrar información compleja y variable:
 
 - Voltear imágenes
 
-##### <a name="time"></a>Time
+##### <a name="time"></a>Hora
 
 - Mostrar cambio con el tiempo, lapso de tiempo y screencast
 

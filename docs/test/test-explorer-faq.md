@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: ef6c6bf3cedcccd156e7ae9ae02c2e5f70805521
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: b69274058ea939251a772dfb30ddf7b42861542c
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96330178"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668591"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Preguntas frecuentes del Explorador de pruebas de Visual Studio
 
@@ -97,13 +97,13 @@ Los iconos situados junto a los grupos Proyecto, Espacio de nombres y Clase refl
 
 **Ya no hay un filtro "Ruta de acceso de archivo" en el cuadro de búsqueda del Explorador de pruebas.**
 
-El filtro de ruta de acceso de archivo del cuadro de búsqueda **Explorador de pruebas** se ha quitado en Visual Studio de 2017 versión 15.7. Esta característica se usaba poco y el Explorador de pruebas puede recuperar los métodos de prueba más rápido al excluirla. Si este cambio interrumpe el flujo de desarrollo, háganoslo saber enviando sus comentarios a la [Comunidad de desarrolladores](https://developercommunity.visualstudio.com/).
+El filtro de ruta de acceso de archivo del cuadro de búsqueda **Explorador de pruebas** se ha quitado en Visual Studio de 2017 versión 15.7. Esta característica se usaba poco y el Explorador de pruebas puede recuperar los métodos de prueba más rápido al excluirla. Si este cambio interrumpe el flujo de desarrollo, háganoslo saber enviando sus comentarios a la [Comunidad de desarrolladores](https://aka.ms/feedback/suggest?space=8).
 
 ## <a name="remove-undocumented-interfaces"></a>Eliminación de interfaces no documentadas
 
 **Algunas API relacionadas con las pruebas ya no están presentes en Visual Studio de 2019. ¿Qué ha cambiado?**
 
-En Visual Studio 2019, se quitará alguna ventana de prueba de API que anteriormente se han marcado como públicas pero nunca se documentaron oficialmente. Se marcaron como "obsoletas" en Visual Studio 2017 para proporcionar advertencias prematuras a los mantenedores de extensiones. Que nosotros sepamos, muy pocas extensiones encontraron estas API y tenían una dependencia en ellas. Entre estas se incluyen `IGroupByProvider`, `IGroupByProvider<T>`, `KeyComparer`, `ISearchFilter`, `ISearchFilterToken`, `ISearchToken` y `SearchFilterTokenType`. Si este cambio afecta a su extensión, háganoslo saber enviando un error a la [Comunidad de desarrolladores](https://developercommunity.visualstudio.com).
+En Visual Studio 2019, se quitará alguna ventana de prueba de API que anteriormente se han marcado como públicas pero nunca se documentaron oficialmente. Se marcaron como "obsoletas" en Visual Studio 2017 para proporcionar advertencias prematuras a los mantenedores de extensiones. Que nosotros sepamos, muy pocas extensiones encontraron estas API y tenían una dependencia en ellas. Entre estas se incluyen `IGroupByProvider`, `IGroupByProvider<T>`, `KeyComparer`, `ISearchFilter`, `ISearchFilterToken`, `ISearchToken` y `SearchFilterTokenType`. Si este cambio afecta a su extensión, háganoslo saber enviando un error a la [Comunidad de desarrolladores](https://aka.ms/feedback/suggest?space=8).
 
 ## <a name="test-adapter-nuget-reference"></a>Referencia de NuGet del adaptador de prueba
 

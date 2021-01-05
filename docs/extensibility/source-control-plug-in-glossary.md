@@ -1,5 +1,7 @@
 ---
 title: Glosario de complementos de control de código fuente | Microsoft Docs
+description: En este artículo se incluyen términos y definiciones útiles que pertenecen a la documentación del SDK del complemento de control de código fuente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3835561eb63fa2a4a71174732c07ecd73f1df5d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f5b878efd9d937f532526ed3b49ad41228749b47
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699907"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715410"
 ---
 # <a name="source-control-plug-in-glossary"></a>Glosario del complemento de control de código fuente
 Los siguientes términos y definiciones útiles pertenecen a la documentación del SDK del complemento de control de código fuente.
@@ -50,5 +52,5 @@ Los siguientes términos y definiciones útiles pertenecen a la documentación d
 
  Revisar un cambio confirmado en el historial de un archivo o conjunto de archivos. Una revisión es una instantánea en un proyecto que cambia continuamente.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Complementos de control de código fuente](../extensibility/source-control-plug-ins.md)

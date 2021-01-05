@@ -8,16 +8,16 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d8106463f306ddbc3fe6aefb337935cbe0d316c
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.openlocfilehash: a17f196f48b053f8b834b8fd25b8c0295e42b547
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88114221"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668903"
 ---
 # <a name="suggest-a-feature-for-visual-studio"></a>Sugerir una característica para Visual Studio
 
-Hemos introducido una nueva experiencia para sugerir características junto con la capacidad actual para notificar los problemas en la [Comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com). Esta es una nueva forma mediante la que se puede involucrar directamente en el flujo de trabajo de ingeniería de Visual Studio.
+Hemos introducido una nueva experiencia para sugerir características junto con la capacidad actual para notificar los problemas en la [Comunidad de desarrolladores de Visual Studio](https://aka.ms/feedback/suggest?space=8). Esta es una nueva forma mediante la que se puede involucrar directamente en el flujo de trabajo de ingeniería de Visual Studio.
 
 ![Botón Sugerir una característica en la Comunidad de desarrolladores](media/suggest-a-feature/suggest-feature-button.png)
 
@@ -25,7 +25,7 @@ También puede iniciar una sugerencia de característica directamente desde Visu
 
 ![Menú Proporcionar una sugerencia en Visual Studio](media/suggest-a-feature/provide-suggestion.png)
 
-Si selecciona **Proporcionar una sugerencia**, se le llevará a la [Comunidad de desarrolladores](https://developercommunity.visualstudio.com), donde puede redactar su sugerencia.
+Si selecciona **Proporcionar una sugerencia**, se le llevará a la [Comunidad de desarrolladores](https://aka.ms/feedback/suggest?space=8), donde puede redactar su sugerencia.
 
 ## <a name="user-voice"></a>UserVoice
 

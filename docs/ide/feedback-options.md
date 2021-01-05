@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 3b50ec910c6d5880ead2df48db2ef763753379bb
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 11caf55a8412477ac94d290add667b9393435fb6
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90807890"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668747"
 ---
 # <a name="visual-studio-feedback-options"></a>Opciones de comentarios de Visual Studio
 
@@ -34,7 +34,7 @@ Si experimenta problemas con Visual Studio &mdash;como bloqueos, rendimiento len
 
 ![Icono Enviar comentarios del IDE de Visual Studio 2019](./media/vs-2019/send-feedback-icon.png)
 
-A continuación, Visual Studio abre la interfaz de [Developer Community](https://developercommunity.visualstudio.com), donde puede iniciar sesión para informar del problema. Para más información, vea [Cómo notificar un problema con Visual Studio](how-to-report-a-problem-with-visual-studio.md).
+A continuación, Visual Studio abre la interfaz de [Developer Community](https://aka.ms/feedback/suggest?space=8), donde puede iniciar sesión para informar del problema. Para más información, vea [Cómo notificar un problema con Visual Studio](how-to-report-a-problem-with-visual-studio.md).
 
 ::: moniker-end
 
@@ -44,7 +44,7 @@ Si experimenta problemas con Visual Studio &mdash;como bloqueos, rendimiento len
 
 ![Icono Enviar comentarios del IDE de Visual Studio 2019](./media/send-feedback-icon.png)
 
-A continuación, Visual Studio abre la interfaz de [Developer Community](https://developercommunity.visualstudio.com), donde puede iniciar sesión para informar del problema. Para más información, vea [Cómo notificar un problema con Visual Studio](how-to-report-a-problem-with-visual-studio.md).
+A continuación, Visual Studio abre la interfaz de [Developer Community](https://aka.ms/feedback/suggest?space=8), donde puede iniciar sesión para informar del problema. Para más información, vea [Cómo notificar un problema con Visual Studio](how-to-report-a-problem-with-visual-studio.md).
 
 ::: moniker-end
 
@@ -54,7 +54,7 @@ A continuación, Visual Studio abre la interfaz de [Developer Community](https:
 
 Si tiene alguna idea o sugerencia para mejorar Visual Studio, puede hacérnosla llegar mediante la herramienta **Sugerir una característica**. En Visual Studio, elija el icono de comentarios situado en el extremo superior derecho, o bien elija **Ayuda** > **Enviar comentarios** > **Sugerir una característica** en la barra de menús.
 
-A continuación, Visual Studio abre la interfaz [Developer Community](https://developercommunity.visualstudio.com), donde puede iniciar sesión para compartir su idea. Para más información, consulte [Sugerir una característica para Visual Studio](suggest-a-feature.md).
+A continuación, Visual Studio abre la interfaz [Developer Community](https://aka.ms/feedback/suggest?space=8), donde puede iniciar sesión para compartir su idea. Para más información, consulte [Sugerir una característica para Visual Studio](suggest-a-feature.md).
 
 ::: moniker-end
 
@@ -62,7 +62,7 @@ A continuación, Visual Studio abre la interfaz [Developer Community](https://d
 
 Si tiene alguna idea o sugerencia para mejorar Visual Studio, puede hacérnosla llegar mediante la herramienta **Proporcionar una sugerencia**. En Visual Studio, haga clic en el icono de comentarios que se encuentra junto al cuadro de búsqueda o elija **Ayuda** > **Enviar comentarios** > **Proporcionar una sugerencia** en la barra de menús.
 
-A continuación, Visual Studio abre la página [Developer Community](https://developercommunity.visualstudio.com), donde puede iniciar sesión para compartir su idea. Para más información, consulte [Sugerir una característica para Visual Studio](suggest-a-feature.md).
+A continuación, Visual Studio abre la página [Developer Community](https://aka.ms/feedback/suggest?space=8), donde puede iniciar sesión para compartir su idea. Para más información, consulte [Sugerir una característica para Visual Studio](suggest-a-feature.md).
 
 ::: moniker-end
 

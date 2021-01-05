@@ -1,6 +1,8 @@
 ---
 title: Actualización de plantillas de proyecto y de elemento personalizadas para Visual Studio 2017
 titleSuffix: ''
+description: Obtenga información sobre cómo actualizar el proyecto personalizado y la plantilla de elementos de versiones anteriores del SDK de Visual Studio para su uso con Visual Studio 2017 y versiones posteriores.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
@@ -10,12 +12,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 5f807e142b376d05e5a44600e8f6b24ddb3593be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 089baadcb60afcc8b32e287095b10ab30196ce17
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698860"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715982"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>Actualización de Plantillas de proyecto y elemento para Visual Studio personalizado 2017
 
@@ -27,13 +29,13 @@ Si desea crear una plantilla de proyecto o elemento como parte de una extensión
 
 ## <a name="template-scanning"></a>Examen de plantillas
 
-En versiones anteriores de Visual Studio, **devenv/Setup** o **devenv/installvstemplates** examinaban el disco local para buscar plantillas de proyecto y de elemento. A partir de Visual Studio 2017, el examen solo se realiza para la ubicación de nivel de usuario. La ubicación predeterminada del nivel de usuario es **%USERPROFILE%\Documents \\<Visual Studio \> versión \\ \Templates**. Esta ubicación se usa para las plantillas generadas **Project**por el  >  comando**exportar plantillas.** .. de proyecto si la opción **importar automáticamente la plantilla en Visual Studio** está seleccionada en el asistente.
+En versiones anteriores de Visual Studio, **devenv/Setup** o **devenv/installvstemplates** examinaban el disco local para buscar plantillas de proyecto y de elemento. A partir de Visual Studio 2017, el examen solo se realiza para la ubicación de nivel de usuario. La ubicación predeterminada del nivel de usuario es **%USERPROFILE%\Documents \\<Visual Studio \> versión \\ \Templates**. Esta ubicación se usa para las plantillas generadas por el  >  comando **exportar plantillas.** .. de proyecto si la opción **importar automáticamente la plantilla en Visual Studio** está seleccionada en el asistente.
 
 En el caso de otras ubicaciones (no de usuario), debe incluir un archivo de manifiesto (. vstman) que especifique la ubicación y otras características de la plantilla. El archivo. vstman se genera junto con el archivo. vstemplate usado para las plantillas. Si instala la extensión con un. vsix, puede hacerlo volviendo a compilar la extensión en Visual Studio 2017. Pero si usa un archivo. msi, debe realizar los cambios manualmente. Para obtener una lista de lo que debe hacer para realizar estos cambios, consulte  **actualizaciones de las extensiones instaladas con un. MSI** más adelante en esta página.
 
 ## <a name="how-to-update-a-vsix-extension-with-project-or-item-templates"></a>Cómo actualizar una extensión VSIX con plantillas de proyecto o elemento
 
-1. Abra la solución en Visual Studio 2017. Se le pedirá que actualice el código. Haga clic en **OK**.
+1. Abra la solución en Visual Studio 2017. Se le pedirá que actualice el código. Haga clic en **Aceptar**.
 
 2. Una vez finalizada la actualización, es posible que deba cambiar la versión del destino de instalación. En el Proyecto VSIX, abra el archivo source. Extension. vsixmanifest y seleccione la pestaña **destinos de instalación** . Si el campo **intervalo de versión** es **[14,0]**, haga clic en **Editar** y cámbielo para incluir Visual Studio 2017. Por ejemplo, puede establecerlo en **[14.0, 15.0]** para instalar la extensión en visual Studio 2015 o visual Studio 2017 o en **[15,0]** para instalarlo en solo Visual Studio 2017.
 

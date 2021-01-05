@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 2c2381211c628a9a405706859b3c80bfc50aa692
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: ab0d5cc497709a690c88b16771f2c12651e5aed0
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400226"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668669"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Novedades de Visual Studio 2017
 
@@ -56,7 +56,7 @@ Aquí se muestra información más detallada sobre algunas de las mejoras más d
 
 Visual Studio acelera y facilita la instalación de simplemente las características que necesita, y justo cuando las necesita. Y, además, se desinstala sin errores.
 
-El cambio más importante que verá cuando instale Visual Studio es su nueva experiencia de instalación. En la pestaña **Cargas de trabajo** , verá opciones de instalación que se agrupan para representar marcos, lenguajes y plataformas comunes. Abarca todo, desde el desarrollo de escritorio de .NET hasta el desarrollo de aplicaciones de C++ en Windows, Linux y iOS.
+El cambio más importante que verá cuando instale Visual Studio es su nueva experiencia de instalación. En la pestaña **Cargas de trabajo**, verá opciones de instalación que se agrupan para representar marcos, lenguajes y plataformas comunes. Abarca todo, desde el desarrollo de escritorio de .NET hasta el desarrollo de aplicaciones de C++ en Windows, Linux y iOS.
 
 Seleccione las cargas de trabajo que requiere y cámbielas cuando sea necesario.
 
@@ -66,13 +66,13 @@ También tiene diferentes opciones para configurar la instalación:
 
 * ¿Quiere seleccionar sus propios componentes en lugar de usar cargas de trabajo? Seleccione la pestaña **Componentes individuales** del instalador.
 * ¿Quiere instalar paquetes de idioma sin tener que cambiar la opción de idioma de Windows? Pulse la pestaña **Paquetes de idioma** del instalador.
-* **Novedad de la versión 15.7** : ¿Quiere cambiar la ubicación de instalación de Visual Studio? Elija la pestaña **Opciones de instalación** del instalador.
+* **Novedad de la versión 15.7**: ¿Quiere cambiar la ubicación de instalación de Visual Studio? Elija la pestaña **Opciones de instalación** del instalador.
 
 Para más información sobre la nueva experiencia de instalación, incluidas instrucciones paso a paso para guiarle, consulte la página [Instalación de Visual Studio](../install/install-visual-studio.md).
 
 ### <a name="a-focus-on-accessibility"></a>Hacer hincapié en la accesibilidad
 
-**Novedad de la versión 15.3** : hemos realizado más de 1700 correcciones de destino para mejorar la compatibilidad entre Visual Studio y las tecnologías de asistencia que muchos clientes usan. Existen docenas de escenarios que son más compatibles que nunca con lectores de pantalla, temas de alto contraste y otras tecnologías de ayuda. El depurador, el editor y el shell también se han mejorado considerablemente.
+**Novedad de la versión 15.3**: hemos realizado más de 1700 correcciones de destino para mejorar la compatibilidad entre Visual Studio y las tecnologías de asistencia que muchos clientes usan. Existen docenas de escenarios que son más compatibles que nunca con lectores de pantalla, temas de alto contraste y otras tecnologías de ayuda. El depurador, el editor y el shell también se han mejorado considerablemente.
 
 Para más información, vea la entrada de blog [Accessibility improvements in Visual Studio 2017 version 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Mejoras de accesibilidad en Visual Studio 2017 versión 15.3).
 
@@ -108,12 +108,12 @@ Roaming Extension Manager realiza un seguimiento de todas las extensiones que in
 
 Cuando use Roaming Extension Manager, verá tres tipos de icono en la lista:
 
-* ![Icono de extensión con perfil itinerante](media/vs2017ide-roamedicon.png) **_Extensión con perfil itinerante_** : una extensión que forma parte de esta lista de itinerancia, pero que no está instalada en el equipo.
-  (Puede instalarlas mediante el botón **Descargar** ).
-* ![Icono de extensión con perfil itinerante e instalada](media/vs2017ide-roamedinstalledicon.png) **_Extensión con perfil itinerante e instalada_** : todas las extensiones que forman parte de la lista Itinerancia y están instaladas en el entorno de desarrollo.
-  (Si decide que no quiere usar un perfil itinerante, puede quitarlas mediante el botón **Detener itinerancia** ).
-* ![Icono de extensión instalada](media/vs2017ide-installedicon.png) **_Extensión instalada_** : todas las extensiones que están instaladas en este entorno, pero que no forman parte de la lista Itinerancia.
-  (Puede agregar extensiones a la lista de itinerancia mediante el botón **Iniciar itinerancia** ).
+* ![Icono de extensión con perfil itinerante](media/vs2017ide-roamedicon.png) **_Extensión con perfil itinerante_**: una extensión que forma parte de esta lista de itinerancia, pero que no está instalada en el equipo.
+  (Puede instalarlas mediante el botón **Descargar**).
+* ![Icono de extensión con perfil itinerante e instalada](media/vs2017ide-roamedinstalledicon.png) **_Extensión con perfil itinerante e instalada_**: todas las extensiones que forman parte de la lista Itinerancia y están instaladas en el entorno de desarrollo.
+  (Si decide que no quiere usar un perfil itinerante, puede quitarlas mediante el botón **Detener itinerancia**).
+* ![Icono de extensión instalada](media/vs2017ide-installedicon.png) **_Extensión instalada_**: todas las extensiones que están instaladas en este entorno, pero que no forman parte de la lista Itinerancia.
+  (Puede agregar extensiones a la lista de itinerancia mediante el botón **Iniciar itinerancia**).
 
 Todas las extensiones que descargue con la sesión iniciada se agregan a la lista como **Extensión con perfil itinerante e instalada**. La extensión pasa a formar parte de la lista Itinerancia, que le proporciona acceso a ella desde cualquier equipo.
 
@@ -139,13 +139,13 @@ Para obtener más información sobre las novedades de la extensión de DevLabs d
 
 #### <a name="multi-caret-editing"></a>Edición de varios símbolos de inserción
 
-**Novedad de la versión 15.8** : ahora es fácil editar varias ubicaciones en un archivo al mismo tiempo. Empiece por crear puntos de inserción y selecciones en varias ubicaciones de un archivo. Después, use la característica de edición de varios símbolos de inserción para realizar la misma edición en dos o más lugares al mismo tiempo.
+**Novedad de la versión 15.8**: ahora es fácil editar varias ubicaciones en un archivo al mismo tiempo. Empiece por crear puntos de inserción y selecciones en varias ubicaciones de un archivo. Después, use la característica de edición de varios símbolos de inserción para realizar la misma edición en dos o más lugares al mismo tiempo.
 
 Para más información, vea la sección [Selección de varios símbolos de inserción](finding-and-replacing-text.md#multi-caret-selection) de la página [Buscar y reemplazar texto](finding-and-replacing-text.md).
 
 #### <a name="keep-keybinding-profiles-consistent"></a>Mantener la coherencia de los perfiles de enlace de teclado
 
-**Novedad de la versión 15.8** : ahora puede mantener los mismos enlaces de teclado entre distintas herramientas mediante dos nuevos perfiles de teclado: Visual Studio Code y ReSharper (Visual Studio). Puede encontrar estos esquemas en **Herramientas** > **Opciones** > **General** > **Teclado** y el menú desplegable superior.
+**Novedad de la versión 15.8**: ahora puede mantener los mismos enlaces de teclado entre distintas herramientas mediante dos nuevos perfiles de teclado: Visual Studio Code y ReSharper (Visual Studio). Puede encontrar estos esquemas en **Herramientas** > **Opciones** > **General** > **Teclado** y el menú desplegable superior.
 
   ![Nuevos perfiles de enlace de teclado para ReSharper y Visual Studio Code](media/vs-keyboard-mappings-code-resharper.png)
 
@@ -174,19 +174,19 @@ Cuando se trabaja con un proyecto en Visual Studio, puede configurar y rápidame
 
 Se ha actualizado la experiencia de navegación para ayudarle a llegar de A a B con mayor confianza y menos distracciones.
 
-* **Novedad de la versión 15.4** : **Ir a definición** ( **Ctrl**+**clic** o **F12** ) &ndash; Los usuarios del mouse tienen una manera más fácil de navegar a la definición de un miembro: presionar **Ctrl** y, después, hacer clic en el miembro. Al presionar **Ctrl** y mantener el puntero sobre un símbolo de código lo subrayará y lo convertirá en un vínculo. Vea [Go To Definition and Peek Definition](go-to-and-peek-definition.md) (Ir a definición y Ver la definición) para más información.
+* **Novedad de la versión 15.4**: **Ir a definición** (**Ctrl**+**clic** o **F12**) &ndash; Los usuarios del mouse tienen una manera más fácil de navegar a la definición de un miembro: presionar **Ctrl** y, después, hacer clic en el miembro. Al presionar **Ctrl** y mantener el puntero sobre un símbolo de código lo subrayará y lo convertirá en un vínculo. Vea [Go To Definition and Peek Definition](go-to-and-peek-definition.md) (Ir a definición y Ver la definición) para más información.
 
-* **Ir a implementación** ( **CTRL**+**F12** ) &ndash; Navegue desde cualquier tipo base o miembro a sus diversas implementaciones.
+* **Ir a implementación** (**CTRL**+**F12**) &ndash; Navegue desde cualquier tipo base o miembro a sus diversas implementaciones.
 
-* **Ir a todo** ( **CTRL**+**T** o **CTRL**+ **,** ) &ndash; Navegue directamente a cualquier declaración de archivo/tipo/miembro/símbolo. Puede filtrar la lista de resultados o usar la sintaxis de consulta (por ejemplo, "f searchTerm" para los archivos, "t searchTerm" para los tipos, etc.).
+* **Ir a todo** (**CTRL**+**T** o **CTRL**+ **,** ) &ndash; Navegue directamente a cualquier declaración de archivo/tipo/miembro/símbolo. Puede filtrar la lista de resultados o usar la sintaxis de consulta (por ejemplo, "f searchTerm" para los archivos, "t searchTerm" para los tipos, etc.).
 
   ![Se ha mejorado la opción "Ir a Todo"](media/vs2017ide-navigation-go-to.png)
 
-* **Buscar todas las referencias** ( **Mayús**+**F12** ) &ndash; Con la coloración de sintaxis, puede agrupar los resultados de Buscar todas las referencias mediante una combinación de proyecto, definición y ruta de acceso. También puede "bloquear" resultados para seguir encontrando otras referencias sin perder los resultados originales.
+* **Buscar todas las referencias** (**Mayús**+**F12**) &ndash; Con la coloración de sintaxis, puede agrupar los resultados de Buscar todas las referencias mediante una combinación de proyecto, definición y ruta de acceso. También puede "bloquear" resultados para seguir encontrando otras referencias sin perder los resultados originales.
 
   ![Nueva herramienta Buscar todas las referencias](media/vs2017ide-find-all-references.png)
 
-* **Visualizador de estructuras** : las líneas verticales grises con puntos sirven como puntos de referencia en el código para proporcionar contexto dentro del marco de vista. Puede reconocerlas de las populares herramientas Productivity Power Tools. Puede usarlas para visualizar y descubrir en qué bloque de código se encuentra en cualquier momento sin tener que desplazarse. Al mantener el puntero sobre las líneas aparece la información sobre herramientas que muestra la apertura de ese bloque y sus elementos primarios. Está disponible para todos los lenguajes admitidos a través de las gramáticas de TextMate, así como C#, Visual Basic y XAML.
+* **Visualizador de estructuras**: las líneas verticales grises con puntos sirven como puntos de referencia en el código para proporcionar contexto dentro del marco de vista. Puede reconocerlas de las populares herramientas Productivity Power Tools. Puede usarlas para visualizar y descubrir en qué bloque de código se encuentra en cualquier momento sin tener que desplazarse. Al mantener el puntero sobre las líneas aparece la información sobre herramientas que muestra la apertura de ese bloque y sus elementos primarios. Está disponible para todos los lenguajes admitidos a través de las gramáticas de TextMate, así como C#, Visual Basic y XAML.
 
   ![Visualizador de estructura de Visual Studio 2017](media/vsIDE-StructureVisualizer.png)
 
@@ -196,7 +196,7 @@ Para más información sobre las nuevas características de productividad, consu
 
 Verá varias mejoras en Visual Studio, como la distribución de C++ Core Guidelines con Visual Studio, la actualización del compilador mediante la incorporación de compatibilidad mejorada para características de C++11 y C++ y la adición y actualización de las funciones de las bibliotecas de C++. También hemos mejorado el rendimiento del IDE de C++ y las cargas de trabajo de la instalación, entre otros elementos.
 
-Además, hemos corregido más de 250 errores y problemas notificados en el compilador y las herramientas, muchos de ellos enviados por los usuarios a través de la [Comunidad de desarrolladores de C++](https://developercommunity.visualstudio.com/spaces/62/index.html "Comunidad de desarrolladores de C++").
+Además, hemos corregido más de 250 errores y problemas notificados en el compilador y las herramientas, muchos de ellos enviados por los usuarios a través de la [Comunidad de desarrolladores de C++](https://aka.ms/feedback/report?space=62 "Comunidad de desarrolladores de C++").
 
 Para información completa, consulte la página [Novedades de Visual C++ en Visual 2017](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio).
 
@@ -218,7 +218,7 @@ Para obtener más información, vea la publicación del blog [Use the New Except
 
 #### <a name="snapshots-and-intellitrace-step-back"></a>Instantáneas y step-back de IntelliTrace
 
-**Novedades de la versión 15.5** : La característica step-back (paso atrás) de IntelliTrace toma automáticamente una instantánea de la aplicación en cada punto de interrupción y evento de paso del depurador. Las instantáneas registradas le permiten volver a puntos de interrupción anteriores y ver el estado de la aplicación tal y como estaba en un momento anterior. La característica step-back de IntelliTrace puede permitirle ahorrar tiempo cuando desea ver el estado anterior de la aplicación, pero no desea reiniciar la depuración ni volver a crear el estado de aplicación que se desea.
+**Novedades de la versión 15.5**: La característica step-back (paso atrás) de IntelliTrace toma automáticamente una instantánea de la aplicación en cada punto de interrupción y evento de paso del depurador. Las instantáneas registradas le permiten volver a puntos de interrupción anteriores y ver el estado de la aplicación tal y como estaba en un momento anterior. La característica step-back de IntelliTrace puede permitirle ahorrar tiempo cuando desea ver el estado anterior de la aplicación, pero no desea reiniciar la depuración ni volver a crear el estado de aplicación que se desea.
 
 Para poder navegar y ver las instantáneas, use los botones **Retroceder paso a paso** y **Avanzar paso a paso** en la barra de herramientas de **depuración**. Estos botones permiten navegar por los eventos que aparecen en la pestaña **Eventos** en la ventana **Herramientas de diagnóstico**. Retroceder o avanzar paso a paso a un evento activa de manera automática la depuración histórica del evento seleccionado.
 
@@ -232,7 +232,7 @@ Los contenedores proporcionan mayor densidad de aplicaciones y menores costos de
 
 #### <a name="docker-container-tooling"></a>Herramientas de contenedor de Docker
 
-**Novedades de la versión 15.5** :
+**Novedades de la versión 15.5**:
 
 * Visual Studio incluye herramientas para los contenedores de Docker que ahora admiten Dockerfiles de varias etapas que simplifican la creación de imágenes optimizadas de contenedor.
 * De forma predeterminada, Visual Studio extrae, compila y ejecuta automáticamente las imágenes de contenedor necesarias en segundo plano cuando se abre un proyecto que incluye compatibilidad con Docker. Puede deshabilitarlo en la opción **Iniciar automáticamente los contenedores en segundo plano** de Visual Studio.
@@ -247,7 +247,7 @@ Para obtener más información, vea la página [Herramientas de Azure Functions 
 
 ### <a name="debug-live-aspnet-apps-using-snappoints-and-logpoints-in-live-azure-applications"></a>Depuración de aplicaciones ASP.NET activas con puntos de acoplamiento y puntos de registro en aplicaciones Azure activas
 
-**Novedades de la versión 15.5** : Snapshot Debugger toma una instantánea de las aplicaciones en producción cuando se ejecuta el código que le interesa. Para indicar al depurador que tome una instantánea, establezca puntos de acoplamiento y puntos de registro en el código. El depurador le permite ver exactamente qué salió mal, sin afectar el tráfico de la aplicación de producción. El Depurador de instantáneas puede permitirle disminuir considerablemente el tiempo que tarda en resolver los problemas que se producen en los entornos de producción.
+**Novedades de la versión 15.5**: Snapshot Debugger toma una instantánea de las aplicaciones en producción cuando se ejecuta el código que le interesa. Para indicar al depurador que tome una instantánea, establezca puntos de acoplamiento y puntos de registro en el código. El depurador le permite ver exactamente qué salió mal, sin afectar el tráfico de la aplicación de producción. El Depurador de instantáneas puede permitirle disminuir considerablemente el tiempo que tarda en resolver los problemas que se producen en los entornos de producción.
 
 La colección de instantáneas está disponible para las siguientes aplicaciones web que se ejecutan en Azure App Service:
 
@@ -266,7 +266,7 @@ Plataforma universal de Windows (UWP) es la plataforma de aplicaciones de Window
 
 Elija el lenguaje de desarrollo de su preferencia&mdash;desde C#, Visual Basic, C++ o JavaScript&mdash;para crear una aplicación Plataforma universal de Windows para dispositivos con Windows 10. Visual Studio 2017 proporciona una plantilla de aplicaciones de UWP para cada lenguaje que le permite crear un solo proyecto para todos los dispositivos. Una vez que se finaliza el trabajo, puede generar un paquete de la aplicación y enviarlo a Microsoft Store desde Visual Studio para que la aplicación quede a disposición de los clientes en cualquier dispositivo Windows 10.
 
-**Novedades de la versión 15.5** : La versión 15.5 de Visual Studio 2017 proporciona el mejor respaldo para el SDK de Windows 10 Fall Creators Update (10.0.16299.0). Windows 10 Fall Creators Update también ofrece muchas mejoras para los desarrolladores de UWP. A continuación, algunos de los cambios más importantes: 
+**Novedades de la versión 15.5**: La versión 15.5 de Visual Studio 2017 proporciona el mejor respaldo para el SDK de Windows 10 Fall Creators Update (10.0.16299.0). Windows 10 Fall Creators Update también ofrece muchas mejoras para los desarrolladores de UWP. A continuación, algunos de los cambios más importantes: 
 
 * **Compatibilidad con .NET Standard 2.0**<br/>Además de una implementación de aplicación optimizada, Windows 10 Fall Creators Update es la primera versión de Windows 10 que ofrece compatibilidad con .NET Standard 2.0. De hecho, [.NET Standard](https://devblogs.microsoft.com/dotnet/introducing-net-standard/) es una implementación de referencia de la biblioteca de clases base que cualquier plataforma .NET puede implementar. El objetivo de .NET Standard es que sea lo más sencillo posible que los desarrolladores de .NET compartan el código en cualquier plataforma .NET en la que elijan trabajar.
 * **Lo mejor de UWP y Win32**<br/>Mejoramos la plataforma Windows 10 con el [Puente de dispositivo de escritorio](/windows/uwp/porting/desktop-to-uwp-root) para mejorar Windows 10 para todos los desarrolladores de .NET, sin importar si se centran en UWP, WPF, Windows Forms o Xamarin. Con el nuevo tipo de proyecto de paquetes de la implementación de la versión 15.5 de Visual Studio 2017, puede crear paquetes de aplicaciones de Windows para los proyectos de WPF o Windows Forms, exactamente igual que para los proyectos de UWP. Cuando empaqueta la aplicación, obtiene todos los beneficios de la implementación de la aplicación de Windows 10 y tiene la opción de una distribución a través de Microsoft Store (para aplicaciones de consumidor) o Microsoft Store para Empresas y para Educación. Como las aplicaciones empaquetadas tienen acceso tanto a la superficie de API UWP y las API Win32, ahora puede modernizar las aplicaciones de WPF y Windows Forms de manera gradual con las API UWP y las características de Windows 10. Además, puede incluir los componentes Win32 en las aplicaciones de UWP que funcionan en los equipos de escritorio con todas las funcionalidades Win32.
@@ -283,25 +283,25 @@ Para obtener más información, vea la página [Visual Studio y Xamarin](/xamari
 
 ### <a name="entitlements-editor"></a>Editor de derechos
 
-**Novedad de la versión 15.3** : Para las necesidades de desarrollo de iOS, se ha agregado un editor de derechos independiente. Incluye una interfaz de usuario fácil de usar que puede examinarse fácilmente. Para iniciarlo, haga doble clic en el archivo *entitlements.plist*.
+**Novedad de la versión 15.3**: Para las necesidades de desarrollo de iOS, se ha agregado un editor de derechos independiente. Incluye una interfaz de usuario fácil de usar que puede examinarse fácilmente. Para iniciarlo, haga doble clic en el archivo *entitlements.plist*.
 
 ![Editor de derechos para Xamarin](media/xamarin-entitlements-editor.png)
 
 ### <a name="visual-studio-tools-for-xamarin"></a>Visual Studio Tools para Xamarin
 
-**Novedad de la versión 15.4** : Xamarin Live permite a los desarrolladores implementar, probar y depurar constantemente sus aplicaciones directamente en dispositivos iOS y Android. Después de descargar Xamarin Live Player (que se encuentra disponible en el App Store o en Google Play), puede emparejar su dispositivo con Visual Studio y revolucionar la forma en que compila aplicaciones móviles. Esta funcionalidad ya está incluida en Visual Studio y puede habilitarse en **Herramientas** > **Opciones** > **Xamarin** > **Otros** > **Habilitar Xamarin Live Player**.
+**Novedad de la versión 15.4**: Xamarin Live permite a los desarrolladores implementar, probar y depurar constantemente sus aplicaciones directamente en dispositivos iOS y Android. Después de descargar Xamarin Live Player (que se encuentra disponible en el App Store o en Google Play), puede emparejar su dispositivo con Visual Studio y revolucionar la forma en que compila aplicaciones móviles. Esta funcionalidad ya está incluida en Visual Studio y puede habilitarse en **Herramientas** > **Opciones** > **Xamarin** > **Otros** > **Habilitar Xamarin Live Player**.
 
 ![Animación del modo de edición en vivo, implementación y par de Xamarin Live Player](media/xamarinliveplayer.gif)
 
 ### <a name="support-for-google-android-emulator"></a>Compatibilidad con Google Android Emulator
 
-**Novedad de la versión 15.8** : Cuando use Hyper-V, ahora ya puede usar Google Android Emulator en paralelo con otras tecnologías basadas en Hyper-V, como las máquinas virtuales de Hyper-V, el conjunto de herramientas Docker, el emulador HoloLens y mucho más. (Esta característica requiere Windows 10 con la actualización del 10 de abril de 2018 o posterior).
+**Novedad de la versión 15.8**: Cuando use Hyper-V, ahora ya puede usar Google Android Emulator en paralelo con otras tecnologías basadas en Hyper-V, como las máquinas virtuales de Hyper-V, el conjunto de herramientas Docker, el emulador HoloLens y mucho más. (Esta característica requiere Windows 10 con la actualización del 10 de abril de 2018 o posterior).
 
 ![Google Android Emulator en tecnologías Hyper-V](media/xamarin-hyperv-android-emulator.png)
 
 #### <a name="xamarinandroid-designer-split-view-editor"></a>Editor de vista dividida de Xamarin.Android Designer
 
-Otra **novedad de la versión 15.8** : Se han realizado mejoras importantes en la experiencia del diseñador para Xamarin.Android. Destaca el nuevo editor de vista dividida que le permite crear, editar y obtener una vista previa de los diseños al mismo tiempo.
+Otra **novedad de la versión 15.8**: Se han realizado mejoras importantes en la experiencia del diseñador para Xamarin.Android. Destaca el nuevo editor de vista dividida que le permite crear, editar y obtener una vista previa de los diseños al mismo tiempo.
 
 ![Editor de vista dividida de Xamarin.Android Designer](media/android-designer-split-view.png)
 
@@ -309,7 +309,7 @@ Para más información, vea [Aceleración de hardware para el rendimiento del em
 
 ### <a name="visual-studio-app-center"></a>Centro de aplicaciones de Visual Studio
 
-**Novedades de la versión 15.5** : Visual Studio App Center (que ahora está disponible con carácter general para aplicaciones Android, iOS, macOS y Windows) tiene todo lo necesario para administrar el ciclo de vida de las aplicaciones, incluidas compilaciones automatizadas, pruebas en dispositivos reales en la nube, distribución a los evaluadores de versiones Beta y las tiendas de aplicaciones, además de la supervisión del uso en tiempo real a través de los datos de bloqueo y análisis. Las aplicaciones escritas en Objective-C, Swift, Java, C#, Xamarin y React Native son compatibles con todas las características.
+**Novedades de la versión 15.5**: Visual Studio App Center (que ahora está disponible con carácter general para aplicaciones Android, iOS, macOS y Windows) tiene todo lo necesario para administrar el ciclo de vida de las aplicaciones, incluidas compilaciones automatizadas, pruebas en dispositivos reales en la nube, distribución a los evaluadores de versiones Beta y las tiendas de aplicaciones, además de la supervisión del uso en tiempo real a través de los datos de bloqueo y análisis. Las aplicaciones escritas en Objective-C, Swift, Java, C#, Xamarin y React Native son compatibles con todas las características.
 
   ![Entorno de prueba Visual Studio App Center](media/app-center-test-env.png)
 
@@ -340,7 +340,7 @@ La plataforma .NET Core está formada por varios componentes, entre los que se i
 
 Ahora también es compatible con Docker.
 
-**Novedad de la versión 15.3** : La versión 15.3 de Visual Studio 2017 admite el desarrollo de .NET Core 2.0. El uso de .NET Core 2.0 requiere descargar e instalar el SDK de .NET Core 2.0 de manera independiente.
+**Novedad de la versión 15.3**: La versión 15.3 de Visual Studio 2017 admite el desarrollo de .NET Core 2.0. El uso de .NET Core 2.0 requiere descargar e instalar el SDK de .NET Core 2.0 de manera independiente.
 
 Para obtener más información, vea la página [Guía de .NET Core](/dotnet/core/index).
 
@@ -356,7 +356,7 @@ Para obtener más información, vea la página [Visual Studio Tools para Unity](
 
 ### <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools para IA
 
-**Novedades de la versión 15.5** : Use las características de productividad de Visual Studio para impulsar sin dilación la innovación de AI. Use características de editor de código integradas como el resaltado de sintaxis, IntelliSense y el formato automático de texto. La aplicación de aprendizaje profundo se puede probar de forma interactiva en el entorno local por medio de la depuración paso a paso de los modelos y las variables locales.
+**Novedades de la versión 15.5**: Use las características de productividad de Visual Studio para impulsar sin dilación la innovación de AI. Use características de editor de código integradas como el resaltado de sintaxis, IntelliSense y el formato automático de texto. La aplicación de aprendizaje profundo se puede probar de forma interactiva en el entorno local por medio de la depuración paso a paso de los modelos y las variables locales.
 
   ![IDE de aprendizaje profundo](../ai/media/about/ide.png)
 

@@ -12,16 +12,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82c89f2f6ec2a1a9bc6c87a600c355226b2f3da4
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: dccf962aef39227388f86134a9dd1f8c96440a3c
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95005943"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668552"
 ---
 # <a name="developer-community-data-privacy"></a>Privacidad de datos de la Comunidad de desarrolladores
 
-De forma predeterminada, toda la información de los informes de problemas sobre la [Comunidad de desarrolladores](https://developercommunity.visualstudio.com/), incluidos los comentarios y las respuestas, está visible de forma pública. Esto es una ventaja, porque permite que toda la comunidad pueda ver los problemas, las soluciones y las alternativas que han encontrado otros usuarios. Pero si le preocupa la privacidad de sus datos o su identidad, tiene distintas opciones.
+De forma predeterminada, toda la información de los informes de problemas sobre la [Comunidad de desarrolladores](https://aka.ms/feedback/suggest?space=8), incluidos los comentarios y las respuestas, está visible de forma pública. Esto es una ventaja, porque permite que toda la comunidad pueda ver los problemas, las soluciones y las alternativas que han encontrado otros usuarios. Pero si le preocupa la privacidad de sus datos o su identidad, tiene distintas opciones.
 
 ## <a name="identity-privacy"></a>Privacidad de identidad
 

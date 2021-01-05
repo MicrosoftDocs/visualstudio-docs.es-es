@@ -3,19 +3,19 @@ title: Página predeterminada para obtener ayuda de F1
 description: Solicitudes de la página predeterminada para obtener ayuda F1 para Visual Studio
 ms.date: 08/20/2020
 ms.topic: troubleshooting
-ms.custom: contperfq1
+ms.custom: contperf-fy21q1
 robots: noindex,nofollow
 f1_keywords:
 - vs.ambient
 manager: jillfra
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 2c62a10e87b3a866956e4818a3b279eb0d4b833e
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 3e3092c3f4cea22daf3b2b61d2c1aa8340340457
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808238"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97684009"
 ---
 # <a name="f1-help"></a>Ayuda de F1
 

@@ -1,5 +1,7 @@
 ---
 title: Elemento Strings | Microsoft Docs
+description: El elemento Strings contiene un elemento secundario ButtonText y otros elementos secundarios opcionales. Un símbolo de y comercial en la cadena de texto especifica un método abreviado de teclado.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db44db8926b523665a21c00b710dcee55749ab89
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f517d350f3383dcaeb99d651872ffb8ed09814fe
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699729"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715254"
 ---
 # <a name="strings-element"></a>Strings (Elemento)
 El elemento Strings debe contener al menos un elemento secundario **ButtonText** . Todos los demás elementos secundarios son opcionales. Los caracteres XML no válidos, como ' & ' y ' < ', deben codificarse como entidades (' &amp; ' y ' ', etc &lt; .).
@@ -60,5 +62,5 @@ El elemento Strings debe contener al menos un elemento secundario **ButtonText**
 |[Menu (Elemento)](../extensibility/menu-element.md)|Define un elemento de menú único.|
 |[Combo (Elemento)](../extensibility/combo-element.md)|Define comandos que aparecen en un cuadro combinado.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Archivos de tabla de comandos de Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

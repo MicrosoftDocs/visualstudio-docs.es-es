@@ -1,5 +1,7 @@
 ---
 title: Usar el almacén de configuración | Microsoft Docs
+description: Obtenga información sobre cómo leer datos del almacén de configuración, que son valores de Visual Studio y VSPackage de solo lectura.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3bbc09586f883e067e32f525a0331c1a9e253f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aeb147c245f7dc09cf91db8a1b810a7c5f30b46b
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698516"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715917"
 ---
 # <a name="using-the-settings-store"></a>Uso del almacén de configuración
 Hay dos tipos de almacenes de configuración:
@@ -79,7 +81,7 @@ Hay dos tipos de almacenes de configuración:
 
 1. Abra Regedit.exe.
 
-2. Vaya a HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\14.0Exp_Config \InstalledProducts \\ .
+2. Vaya a HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProducts\\ .
 
     > [!NOTE]
     > Asegúrese de que está examinando la clave que contiene \ 14.0Exp_Config \ y no \ 14.0_Config \\ . Al ejecutar la instancia experimental de Visual Studio, las opciones de configuración se encuentran en el subárbol del registro "14.0Exp_Config".

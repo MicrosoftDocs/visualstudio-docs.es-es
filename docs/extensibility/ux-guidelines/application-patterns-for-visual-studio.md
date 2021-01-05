@@ -1,5 +1,7 @@
 ---
 title: Patrones de aplicación para Visual Studio | Microsoft Docs
+description: Obtenga información sobre la diferencia entre las ventanas de documentos, las ventanas de herramientas y los cuadros de diálogo no modales, incluidos los patrones de uso de ventanas para las nuevas características de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 036c95951fe3dc9e65a0f3338f75ae9867d721c3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 709daa641e898f9d75f4bab340c8e5fd00d28a88
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698595"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716125"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Patrones de aplicaciones para Visual Studio
 ## <a name="window-interactions"></a><a name="BKMK_WindowInteractions"></a> Interacciones de ventanas
@@ -32,8 +34,8 @@ Piense detenidamente en qué tipo de contenedor necesita. En la tabla siguiente 
 
 ||Ventana de documento|Ventana de herramientas|Cuadro de diálogo no modal|
 |-|---------------------|-----------------|---------------------|
-| **Posición** | Siempre se coloca dentro del área del documento y no se acopla alrededor de los bordes del IDE. Se puede "extraer" para que flote por separado del shell principal. | Normalmente acoplado con tabulación alrededor de los bordes del IDE, pero se puede personalizar para que sea flotante, oculto automáticamente (desanclado) o acoplado dentro del área del documento.|Ventana flotante grande independiente del IDE. |
-| **Modelo de confirmación** | *Confirmación diferida*<br /><br /> Para guardar los datos en un documento, el usuario debe emitir el comando ** &gt; Guardar**, **Guardar como**o **guardar todo** . Una ventana de documento tiene el concepto de los datos que contiene y se confirma en uno de los comandos de guardar. Al cerrar una ventana de documento, todo el contenido se guarda en el disco o se pierde. | *Confirmación inmediata*<br /><br /> No hay ningún modelo de guardado. En el caso de las ventanas de herramientas de inspector que ayudan a editar un archivo, el archivo debe estar abierto en el editor o diseñador activo y el editor o el diseñador posee el guardado. | *Confirmación retrasada o inmediata*<br /><br /> A menudo, un cuadro de diálogo no modal de gran tamaño requiere una acción para confirmar los cambios y permite una operación de "cancelación", que revierte los cambios realizados en la sesión de diálogo.  Esto diferencia un cuadro de diálogo no modal de una ventana de herramientas en que las ventanas de herramientas siempre tienen un modelo de confirmación inmediato. |
+| **Position** | Siempre se coloca dentro del área del documento y no se acopla alrededor de los bordes del IDE. Se puede "extraer" para que flote por separado del shell principal. | Normalmente acoplado con tabulación alrededor de los bordes del IDE, pero se puede personalizar para que sea flotante, oculto automáticamente (desanclado) o acoplado dentro del área del documento.|Ventana flotante grande independiente del IDE. |
+| **Modelo de confirmación** | *Confirmación diferida*<br /><br /> Para guardar los datos en un documento, el usuario debe emitir el comando **&gt; Guardar**, **Guardar como** o **guardar todo** . Una ventana de documento tiene el concepto de los datos que contiene y se confirma en uno de los comandos de guardar. Al cerrar una ventana de documento, todo el contenido se guarda en el disco o se pierde. | *Confirmación inmediata*<br /><br /> No hay ningún modelo de guardado. En el caso de las ventanas de herramientas de inspector que ayudan a editar un archivo, el archivo debe estar abierto en el editor o diseñador activo y el editor o el diseñador posee el guardado. | *Confirmación retrasada o inmediata*<br /><br /> A menudo, un cuadro de diálogo no modal de gran tamaño requiere una acción para confirmar los cambios y permite una operación de "cancelación", que revierte los cambios realizados en la sesión de diálogo.  Esto diferencia un cuadro de diálogo no modal de una ventana de herramientas en que las ventanas de herramientas siempre tienen un modelo de confirmación inmediato. |
 | **Visibilidad** | *Abrir/crear (archivo) y cerrar*<br /><br /> Para abrir una ventana de documento, se puede abrir un documento existente o usar una plantilla para crear un nuevo documento. No hay ningún comando "abrir \<specific editor> ". | *Ocultar y mostrar*<br /><br /> Las ventanas de herramientas de una sola instancia se pueden ocultar o mostrar. El contenido y los Estados de la ventana de herramientas se conservarán en la vista u ocultarse. Las ventanas de herramientas de varias instancias se pueden cerrar y ocultar. Cuando se cierra una ventana de herramientas de varias instancias, se descartan el contenido y el estado de la ventana de herramientas. | *Iniciado desde un comando*<br /><br /> Los cuadros de diálogo se inician desde un comando basado en tareas. |
 | **Stance** | *Instancias múltiples*<br /><br /> Varios editores pueden abrirse al mismo tiempo y editar distintos archivos, mientras que algunos editores también permiten que el mismo archivo se abra en más de un editor (mediante el comando **ventana &gt; nueva ventana** ).<br /><br /> Un solo editor puede estar editando uno o varios archivos al mismo tiempo (diseñador de proyectos). | *Una o varias instancias*<br /><br /> Cambio de contenido para reflejar el contexto (como en el explorador de propiedades) o el foco o el contexto de la extracción en otras ventanas (Lista de tareas, Explorador de soluciones).<br /><br /> Las ventanas de herramientas de instancia única y de varias instancias deben estar asociadas a la ventana de documento activa, a menos que haya una buena razón para no hacerlo. | *Instancia única* |
 | **Ejemplos** | **Editores de texto**, como el editor de código<br /><br /> **Superficies de diseño**, como un diseñador de formularios o una superficie de modelado<br /><br /> **Diseños de controles similares a los cuadros de diálogo**, como el diseñador de manifiestos | El **Explorador de soluciones** proporciona una solución y proyectos incluidos en la solución.<br /><br /> El **Explorador de servidores** proporciona una vista jerárquica de los servidores y las conexiones de datos que el usuario elige abrir en la ventana de. Abrir un objeto de la jerarquía de la base de datos, como una consulta, abre una ventana de documento y permite al usuario editar la consulta.<br /><br /> El **Explorador de propiedades** muestra las propiedades del objeto seleccionado en una ventana de documento o en otra ventana de herramientas. Las propiedades se presentan en una vista de cuadrícula jerárquica o en controles complejos de cuadro de diálogo y permiten que el usuario establezca los valores de esas propiedades. | |
@@ -73,11 +75,11 @@ Las ventanas de herramientas de Visual Studio tienen distintos Estados, algunos 
 ![Estados de la ventana de herramientas en Visual Studio](../../extensibility/ux-guidelines/media/0702-01_toolwindowstates.png "0702-01_ToolWindowStates")<br />Estados de la ventana de herramientas en Visual Studio
 
 #### <a name="single-instance-and-multi-instance"></a>Instancia única y de varias instancias
-Las ventanas de herramientas son de instancia única o de varias instancias. Es posible que algunas ventanas de herramientas de una sola instancia estén asociadas a la ventana de documento activa, mientras que las ventanas de herramientas de varias instancias podrían no hacerlo. Las ventanas de herramientas de varias instancias responden al comando ventana ** &gt; nueva ventana** creando una nueva instancia de la ventana. En la imagen siguiente se muestra una ventana de herramientas que habilita el comando nueva ventana cuando una instancia de la ventana está activa:
+Las ventanas de herramientas son de instancia única o de varias instancias. Es posible que algunas ventanas de herramientas de una sola instancia estén asociadas a la ventana de documento activa, mientras que las ventanas de herramientas de varias instancias podrían no hacerlo. Las ventanas de herramientas de varias instancias responden al comando ventana **&gt; nueva ventana** creando una nueva instancia de la ventana. En la imagen siguiente se muestra una ventana de herramientas que habilita el comando nueva ventana cuando una instancia de la ventana está activa:
 
 ![Ventana de herramientas que habilita el comando ' nueva ventana ' cuando una instancia de la ventana está activa](../../extensibility/ux-guidelines/media/0702-02_toolwindowenablingcommand.png "0702-02_ToolWindowEnablingCommand")<br />Ventana de herramientas que habilita el comando ' nueva ventana ' cuando una instancia de la ventana está activa
 
-Las ventanas de herramientas de una sola instancia se pueden ocultar o mostrar, mientras que las ventanas de herramientas de varias instancias se pueden cerrar y ocultar. Todas las ventanas de herramientas se pueden acoplar, vincular por pestañas, flotar o establecer como una ventana secundaria de la interfaz de múltiples documentos (MDI) (similar a una ventana de documento). Todas las ventanas de herramientas deben responder a los comandos de administración de ventanas correspondientes en el menú ventana:
+Las ventanas de herramientas de una sola instancia se pueden ocultar o mostrar, mientras que las ventanas de herramientas de varias instancias se pueden cerrar y ocultar. Todas las ventanas de herramientas se pueden acoplar, vincular por pestañas, flotar o establecer como una ventana secundaria de interfaz de Multiple-Document (MDI) (similar a una ventana de documento). Todas las ventanas de herramientas deben responder a los comandos de administración de ventanas correspondientes en el menú ventana:
 
 ![Comandos de administración de ventanas en el menú ventana de Visual Studio](../../extensibility/ux-guidelines/media/0702-03_windowmanagementcontrols.png "0702-03_WindowManagementControls")<br />Comandos de administración de ventanas en el menú ventana de Visual Studio
 
@@ -151,7 +153,7 @@ Ejemplos de ventanas de herramientas de lista navegables son los Explorador de s
 | --- | --- |
 | Autos ||
 | Inmediata ||
-| Output | La ventana de salida se puede usar siempre que se tenga el estado o los eventos de texto que se van a declarar. |
+| Resultados | La ventana de salida se puede usar siempre que se tenga el estado o los eventos de texto que se van a declarar. |
 | Memoria ||
 | Puntos de interrupción ||
 | En ejecución ||
@@ -176,7 +178,7 @@ La edición de documentos requiere una experiencia de usuario coherente. Para qu
 
 - Actualice la funcionalidad relacionada en ventanas y menús relacionados cuando se abra la ventana de documento.
 
-- Los comandos de menú se integran correctamente en menús comunes como **Editar**, **dar formato**y **Ver** menús. Si hay disponible una cantidad considerable de comandos especializados, se puede crear un nuevo menú. Este nuevo menú solo debe estar visible cuando el documento tiene el foco.
+- Los comandos de menú se integran correctamente en menús comunes como **Editar**, **dar formato** y **Ver** menús. Si hay disponible una cantidad considerable de comandos especializados, se puede crear un nuevo menú. Este nuevo menú solo debe estar visible cuando el documento tiene el foco.
 
 - Una barra de herramientas incrustada se puede colocar en la parte superior del editor. Es preferible tener una barra de herramientas independiente que aparezca fuera del editor.
 
@@ -337,7 +339,7 @@ Los cuadros de diálogo en capas incluyen pestañas, paneles y árboles incrusta
 
 En el caso más sencillo, el mecanismo para cambiar entre agrupaciones es un control de ficha. Hay varias alternativas disponibles. Consulte priorización y disposición en capas para elegir el estilo más apropiado.
 
-El cuadro de diálogo ** &gt; Opciones de herramientas** es un ejemplo de un cuadro de diálogo en capas que usa un árbol incrustado:
+El cuadro de diálogo **&gt; Opciones de herramientas** es un ejemplo de un cuadro de diálogo en capas que usa un árbol incrustado:
 
 ![Herramientas > opciones es un ejemplo de un cuadro de diálogo en capas en Visual Studio.](../../extensibility/ux-guidelines/media/0704-02_toolsoptions.png "0704-02_ToolsOptions")<br />Herramientas > opciones es un ejemplo de un cuadro de diálogo en capas en Visual Studio.
 
@@ -398,7 +400,7 @@ Sea coherente con las configuraciones de control existentes que realizan lo mism
   ![Especificaciones de instrucciones para las barras de título de los cuadros de diálogo de Visual Studio](../../extensibility/ux-guidelines/media/0704-03_titlebarspecs.png "0704-03_TitleBarSpecs")<br />Especificaciones de instrucciones para las barras de título de los cuadros de diálogo de Visual Studio
 
 #### <a name="control-buttons"></a>Botones de control
-En general, los botones **Aceptar**, **Cancelar**y **ayuda** se deben organizar horizontalmente en la esquina inferior derecha del cuadro de diálogo. La pila vertical alternativa está permitida si un cuadro de diálogo tiene varios botones en la parte inferior del cuadro de diálogo que presentarían confusión visual con los botones de control.
+En general, los botones **Aceptar**, **Cancelar** y **ayuda** se deben organizar horizontalmente en la esquina inferior derecha del cuadro de diálogo. La pila vertical alternativa está permitida si un cuadro de diálogo tiene varios botones en la parte inferior del cuadro de diálogo que presentarían confusión visual con los botones de control.
 
 ![Configuraciones aceptables para botones de control en los cuadros de diálogo de Visual Studio](../../extensibility/ux-guidelines/media/0704-04_controlbuttonconfig.png "0704-04_ControlButtonConfig")<br />Configuraciones aceptables para botones de control en los cuadros de diálogo de Visual Studio
 
@@ -411,9 +413,9 @@ El cuadro de diálogo debe incluir un botón de control predeterminado. Para det
 Evite elegir una acción destructiva permanentemente para el comando predeterminado. Si hay un comando de este tipo, elija un comando más seguro como el predeterminado en su lugar.
 
 #### <a name="access-keys"></a>Claves de acceso
-No use teclas de acceso para los botones **Aceptar**, **Cancelar**o **ayuda** . De forma predeterminada, estos botones se asignan a las teclas de método abreviado:
+No use teclas de acceso para los botones **Aceptar**, **Cancelar** o **ayuda** . De forma predeterminada, estos botones se asignan a las teclas de método abreviado:
 
-| Nombre del botón | Método abreviado de teclado |
+| Nombre del botón | Métodos abreviados de teclado |
 | --- | --- |
 | Aceptar | Escriba |
 | Cancelar | Esc |
@@ -438,7 +440,7 @@ Existen ventajas y desventajas de los distintos métodos para la disposición en
 | --- | --- | --- |
 | Control Tab | Agrupar lógicamente las páginas de cuadro de diálogo en conjuntos relacionados<br /><br />Útil para menos de cinco (o el número de pestañas que caben en una fila en las páginas del cuadro de diálogo) de controles relacionados en el cuadro de diálogo<br /><br />Las etiquetas de tabulación deben ser cortas: una o dos palabras que puedan identificar fácilmente el contenido<br /><br />Estilo de cuadro de diálogo común del sistema<br /><br />Ejemplo: **propiedades de &gt; elemento del explorador de archivos** | Crear etiquetas cortas descriptivas puede ser difícil<br /><br />Por lo general, no se escalan las cinco pestañas en un cuadro de diálogo<br /><br />No es apropiado si tiene demasiadas pestañas para una fila (use una técnica de capas alternativa)<br /><br />No extensible |
 | Navegación de Sidebar | Dispositivo de conmutación simple que puede alojar más categorías que las pestañas<br /><br />Lista plana de categorías (sin jerarquía)<br /><br />Extensible<br /><br />Ejemplo: **personalización... &gt; Agregar comando** | No es un buen uso del espacio horizontal si hay menos de tres grupos<br /><br />La tarea puede ser más adecuada para una lista desplegable |
-| Tree (control) | Permite categorías ilimitadas<br /><br />Permite agrupar y/o jerarquía de categorías<br /><br />Extensible<br /><br />Ejemplo: ** &gt; Opciones de herramientas** | Las jerarquías muy anidadas pueden provocar un desplazamiento horizontal excesivo<br /><br />Visual Studio tiene una gran cantidad de vistas de árbol |
+| Tree (control) | Permite categorías ilimitadas<br /><br />Permite agrupar y/o jerarquía de categorías<br /><br />Extensible<br /><br />Ejemplo: **&gt; Opciones de herramientas** | Las jerarquías muy anidadas pueden provocar un desplazamiento horizontal excesivo<br /><br />Visual Studio tiene una gran cantidad de vistas de árbol |
 | Asistente | Ayuda con la finalización de las tareas al guiar al usuario a través de pasos secuenciales basados en tareas: el asistente representa una tarea de alto nivel y los paneles individuales representan las subtareas necesarias para realizar la tarea global.<br /><br />Resulta útil cuando la tarea cruza los límites de la interfaz de usuario, como cuando el usuario tendría que usar varios editores y ventanas de herramientas para completar la tarea.<br /><br />Útil cuando la tarea requiere bifurcación<br /><br />Resulta útil cuando la tarea contiene dependencias entre pasos<br /><br />Resulta útil cuando se pueden presentar en un cuadro de diálogo varias tareas similares con una bifurcación de decisión para reducir el número de cuadros de diálogo similares diferentes. | No es apropiado para cualquier tarea que no requiera un flujo de trabajo secuencial<br /><br />Los usuarios pueden saturarse y confundirse con un asistente con demasiados pasos<br /><br />Los asistentes tienen una inmobiliaria de pantalla limitada de forma inherente |
 
 ##### <a name="hallways-or-dashboards"></a>Vestíbulos o paneles
@@ -507,11 +509,11 @@ No se admite arrastrar elementos de proyecto entre instancias de Visual Studio (
 
 El usuario siempre debe ser capaz de determinar el efecto de una operación de arrastrar y colocar seleccionando un elemento, arrastrándolo a la ubicación de destino y observando cuál de los siguientes punteros del mouse aparece antes de que se quite el elemento:
 
-| Puntero | Get-Help | Descripción |
+| Puntero | Get-Help | Description |
 | :---: | --- | --- |
 | ![Icono de mouse "No colocar"](../../extensibility/ux-guidelines/media/0706-01_mousenodrop.png "0706-01_MouseNoDrop") | No eliminar | No se puede quitar el elemento de la ubicación especificada. |
 | ![Icono de mouse "Copiar"](../../extensibility/ux-guidelines/media/0706-02_mousecopy.png "0706-02_MouseCopy") | Copiar | El elemento se copiará en la ubicación de destino. |
-| ![Icono de mouse "Mover"](../../extensibility/ux-guidelines/media/0706-03_mousemove.png "0706-03_MouseMove") | Mover | El elemento se mueve a la ubicación de destino. |
+| ![Icono de mouse "Mover"](../../extensibility/ux-guidelines/media/0706-03_mousemove.png "0706-03_MouseMove") | Move | El elemento se mueve a la ubicación de destino. |
 | ![Icono de mouse "Agregar referencia"](../../extensibility/ux-guidelines/media/0706-04_mouseaddref.png "0706-04_MouseAddRef") | Agregar referencia | Se agregará una referencia al elemento seleccionado en la ubicación de destino. |
 
 #### <a name="reference-based-projects"></a>Proyectos basados en referencia
@@ -519,11 +521,11 @@ El usuario siempre debe ser capaz de determinar el efecto de una operación de a
 
 | Modificador | Category | Elemento de origen: referencia/vínculo | Elemento de origen: elemento físico o sistema de archivos ( `CF_HDROP` ) |
 | --- | --- | --- | --- |
-| Sin modificador | Acción | Mover | Vínculo |
+| Sin modificador | Acción | Move | Link |
 | Sin modificador | Destino | Agrega una referencia al elemento original | Agrega una referencia al elemento original |
 | Sin modificador | Source | Elimina la referencia al elemento original | Conserva el elemento original |
 | Sin modificador | Resultado | `DROPEFFECT_MOVE` se devuelve como acción de `::Drop` y el elemento permanece en la ubicación original en el almacenamiento. | `DROPEFFECT_LINK` se devuelve como acción de `::Drop` y el elemento permanece en la ubicación original en el almacenamiento. |
-| Mayús + arrastrar | Acción | Mover | No eliminar |
+| Mayús + arrastrar | Acción | Move | No eliminar |
 | Mayús + arrastrar | Destino | Agrega una referencia al elemento original | No eliminar |
 | Mayús + arrastrar | Source | Elimina la referencia al elemento original | No eliminar |
 | Mayús + arrastrar | Resultado | `DROPEFFECT_MOVE` se devuelve como acción de `::Drop` y el elemento permanece en la ubicación original en el almacenamiento. | No eliminar |
@@ -531,16 +533,16 @@ El usuario siempre debe ser capaz de determinar el efecto de una operación de a
 | Ctrl + arrastrar | Destino | Agrega una referencia al elemento original | No eliminar |
 | Ctrl + arrastrar | Source | Conserva la referencia al elemento original | No eliminar |
 | Ctrl + arrastrar | Resultado | `DROPEFFECT_COPY` se devuelve como acción de `::Drop` y el elemento permanece en la ubicación original en el almacenamiento. | No eliminar |
-| Ctrl + Mayús + arrastrar | Acción | Vínculo | Vínculo |
+| Ctrl + Mayús + arrastrar | Acción | Link | Link |
 | Ctrl + Mayús + arrastrar | Destino | Agrega una referencia al elemento original | Agrega una referencia al elemento original |
 | Ctrl + Mayús + arrastrar | Source | Conserva la referencia al elemento original | Conserva el elemento original |
 | Ctrl + Mayús + arrastrar | Resultado | `DROPEFFECT_LINK` se devuelve como acción de `::Drop` y el elemento permanece en la ubicación original en el almacenamiento. | `DROPEFFECT_LINK` se devuelve como acción de `::Drop` y el elemento permanece en la ubicación original en el almacenamiento. |
 | Ctrl + Mayús + arrastrar | Nota | Igual que el comportamiento de arrastrar y colocar para los accesos directos en el explorador de Windows. ||
-| Cortar y pegar | Acción | Mover | Vínculo |
+| Cortar y pegar | Acción | Move | Link |
 | Cortar y pegar | Destino | Agrega una referencia al elemento original | Agrega una referencia al elemento original |
 | Cortar y pegar | Source | Conserva la referencia al elemento original|Conserva el elemento original |
 | Cortar y pegar | Resultado | El elemento permanece en la ubicación original en el almacenamiento | El elemento permanece en la ubicación original en el almacenamiento |
-| Copiar y pegar | Acción | Copiar | Vínculo |
+| Copiar y pegar | Acción | Copiar | Link |
 | Copiar y pegar | Source | Agrega una referencia al elemento original | Agrega una referencia al elemento original |
 | Copiar y pegar | Resultado | Conserva la referencia al elemento original | Conserva el elemento original |
 | Copiar y pegar | Acción | El elemento permanece en la ubicación original en el almacenamiento | El elemento permanece en la ubicación original en el almacenamiento |
@@ -550,10 +552,10 @@ En la tabla siguiente se resumen las operaciones de arrastrar y colocar (así co
 
 | Modificador | Category | Elemento de origen: referencia/vínculo | Elemento de origen: elemento físico o sistema de archivos ( `CF_HDROP` ) |
 |-----------------|----------| - | - |
-| Sin modificador | Acción | Mover | Mover |
+| Sin modificador | Acción | Move | Move |
 | Sin modificador | Destino | Copia el elemento en la ubicación de destino | Copia el elemento en la ubicación de destino |
 | Sin modificador | Source | Elimina la referencia al elemento original | Elimina la referencia al elemento original |
-| Mayús + arrastrar | Acción | Mover | Mover |
+| Mayús + arrastrar | Acción | Move | Move |
 | Mayús + arrastrar | Destino | Copia el elemento en la ubicación de destino | Copia el elemento en la ubicación de destino |
 | Mayús + arrastrar | Source | Elimina la referencia al elemento original | Elimina un elemento de la ubicación original |
 | Mayús + arrastrar | Resultado | `DROPEFFECT_MOVE` se devuelve como acción de `::Drop` y el elemento permanece en la ubicación original en el almacenamiento. | `DROPEFFECT_MOVE` se devuelve como acción de `::Drop` y el elemento permanece en la ubicación original en el almacenamiento. |
@@ -562,7 +564,7 @@ En la tabla siguiente se resumen las operaciones de arrastrar y colocar (así co
 | Ctrl + arrastrar | Source | Conserva la referencia al elemento original | Conserva la referencia al elemento original |
 | Ctrl + arrastrar | Resultado | `DROPEFFECT_COPY` se devuelve como acción de `::Drop` y el elemento permanece en la ubicación original en el almacenamiento. | `DROPEFFECT_COPY` se devuelve como acción de `::Drop` y el elemento permanece en la ubicación original en el almacenamiento. |
 | Ctrl + Mayús + arrastrar | | No eliminar | No eliminar |
-| Cortar y pegar | Acción | Mover | Mover |
+| Cortar y pegar | Acción | Move | Move |
 | Cortar y pegar | Destino | Copia el elemento en la ubicación de destino | Copia el elemento en la ubicación de destino |
 | Cortar y pegar | Source | Elimina la referencia al elemento original | Elimina un elemento de la ubicación original |
 | Cortar y pegar | Resultado | El elemento permanece en la ubicación original en el almacenamiento | El elemento se elimina de la ubicación original en el almacenamiento |
@@ -576,11 +578,11 @@ En la tabla siguiente se resumen las operaciones de arrastrar y colocar (así co
 
 | Modificador | Category | Elemento de origen: referencia/vínculo | Elemento de origen: elemento físico o sistema de archivos ( `CF_HDROP` ) |
 | --- | --- | --- | --- |
-| Sin modificador | Acción | Mover | Mover |
+| Sin modificador | Acción | Move | Move |
 | Sin modificador | Destino | Agrega una referencia al elemento original | Copia el elemento en la ubicación de destino |
 | Sin modificador | Source | Elimina la referencia al elemento original | Elimina la referencia al elemento original |
 | Sin modificador | Resultado | `DROPEFFECT_ MOVE` se devuelve como acción de `::Drop` y el elemento permanece en la ubicación original en el almacenamiento. | `DROPEFFECT_ MOVE` se devuelve como acción de `::Drop` y el elemento se elimina de la ubicación original en el almacenamiento. |
-| Mayús + arrastrar | Acción | Mover | Mover |
+| Mayús + arrastrar | Acción | Move | Move |
 | Mayús + arrastrar | Destino | Agrega una referencia al elemento original | Copia el elemento en la ubicación de destino |
 | Mayús + arrastrar | Source | Elimina la referencia al elemento original | Elimina un elemento de la ubicación original |
 | Mayús + arrastrar | Resultado | `DROPEFFECT_ MOVE` se devuelve como acción de `::Drop` y el elemento permanece en la ubicación original en el almacenamiento. | `DROPEFFECT_ MOVE` se devuelve como acción de `::Drop` y el elemento se elimina de la ubicación original en el almacenamiento. |
@@ -588,11 +590,11 @@ En la tabla siguiente se resumen las operaciones de arrastrar y colocar (así co
 | Ctrl + arrastrar | Destino | Agrega una referencia al elemento original | Copia el elemento en la ubicación de destino |
 | Ctrl + arrastrar | Source | Conserva la referencia al elemento original | Conserva el elemento original |
 | Ctrl + arrastrar | Resultado | `DROPEFFECT_ COPY` se devuelve como acción de `::Drop` y el elemento permanece en la ubicación original en el almacenamiento. | `DROPEFFECT_ COPY` se devuelve como acción de `::Drop` y el elemento permanece en la ubicación original en el almacenamiento. |
-| Ctrl + Mayús + arrastrar | Acción | Vínculo | Vínculo |
+| Ctrl + Mayús + arrastrar | Acción | Link | Link |
 | Ctrl + Mayús + arrastrar | Destino | Agrega una referencia al elemento original | Agrega una referencia al elemento de origen original. |
 | Ctrl + Mayús + arrastrar | Source | Conserva la referencia al elemento original | Conserva el elemento original |
 | Ctrl + Mayús + arrastrar | Resultado | `DROPEFFECT_ LINK` se devuelve como acción de `::Drop` y el elemento permanece en la ubicación original en el almacenamiento. | `DROPEFFECT_ LINK` se devuelve como acción de `::Drop` y el elemento permanece en la ubicación original en el almacenamiento. |
-| Cortar y pegar | Acción | Mover | Mover |
+| Cortar y pegar | Acción | Move | Move |
 | Cortar y pegar | Destino | Copia el elemento en la ubicación de destino | Copia el elemento en la ubicación de destino |
 | Cortar y pegar | Source | Elimina la referencia al elemento original | Elimina un elemento de la ubicación original |
 | Cortar y pegar | Resultado | El elemento permanece en la ubicación original en el almacenamiento | El elemento se elimina de la ubicación original en el almacenamiento |

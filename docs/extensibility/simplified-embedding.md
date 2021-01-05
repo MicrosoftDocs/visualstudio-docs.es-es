@@ -1,5 +1,7 @@
 ---
 title: Incrustación simplificada | Microsoft Docs
+description: Obtenga información sobre la incrustación simplificada, que se puede habilitar en un editor cuando su objeto de vista de documento es un elemento secundario de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9bc9619ae1ed75aed3656ff014296f7c7d88fa0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 99aaf5070646bbbb95c6be98eb8ac2f7a5948ff2
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700073"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715280"
 ---
 # <a name="simplified-embedding"></a>Inserción simplificada
 La incrustación simplificada está habilitada en un editor cuando su objeto de vista de documento es primario (es decir, se ha convertido en un elemento secundario de) [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] y la <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> interfaz se implementa para controlar sus comandos de ventana. Los editores de incrustación simplificados no pueden hospedar controles activos. En la ilustración siguiente se muestran los objetos que se usan para crear un editor con incrustación simplificada.

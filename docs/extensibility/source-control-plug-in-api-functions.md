@@ -1,5 +1,7 @@
 ---
 title: Funciones de la API del complemento de control de código fuente | Microsoft Docs
+description: Obtenga información sobre las funciones que proporciona la API del complemento de control de código fuente, que debe ser implementada por el complemento de control de código fuente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce685729dda8750d772e244398b736cff4951b72
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 114862bb3358cc2a5400d6f40031deb030e4e4df
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699924"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715995"
 ---
 # <a name="source-control-plug-in-api-functions"></a>Funciones de API de complemento de control de código fuente
 La API del complemento de control de código fuente proporciona las siguientes funciones, que debe implementar el complemento de control de código fuente de acuerdo con esta API. Las firmas de cada función y la semántica asociada a las marcas de bits y otros parámetros se describen en detalle en esta referencia.
@@ -85,6 +87,6 @@ La API del complemento de control de código fuente proporciona las siguientes f
 
  (Se proporciona en la carpeta Common includes del SDK de entorno, de forma predeterminada *[unidad]* \Archivos de Files\VSIP 8.0 \ EnvSDK\common\inc; también se proporciona en la carpeta VSIP con el ejemplo MSSCCI, *[unidad]* \Archivos de Files\VSIP 8.0 \ MSSCCI).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Complementos de control de código fuente](../extensibility/source-control-plug-ins.md)
 - [Creación de un complemento de control de código fuente](../extensibility/internals/creating-a-source-control-plug-in.md)

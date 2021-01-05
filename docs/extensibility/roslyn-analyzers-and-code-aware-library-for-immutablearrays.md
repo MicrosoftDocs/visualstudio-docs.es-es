@@ -1,7 +1,8 @@
 ---
 title: Analizadores de Roslyn y bibliotecas con reconocimiento de código para ImmutableArrays
-titleSuffix: ''
+description: Aprenda a crear un analizador Roslyn real para detectar errores comunes al usar el paquete NuGet System. Collections. immutable.
 ms.custom: SEO-VS-2020
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
@@ -10,18 +11,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db3ebbd289feb227506d8c188ade9261dfb53da2
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 04b65ae8c81f381ee996da5f20ec15588b9180de
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037652"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715774"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analizadores de Roslyn y biblioteca con reconocimiento de código para ImmutableArrays
 
 El [.net Compiler Platform](https://github.com/dotnet/roslyn) ("Roslyn") le ayuda a crear bibliotecas compatibles con el código. Una biblioteca con reconocimiento de código proporciona funcionalidad que puede usar y herramientas (analizadores de Roslyn) para ayudarle a usar la biblioteca de la mejor manera o para evitar errores. En este tema se muestra cómo crear un analizador Roslyn real para detectar errores comunes al usar el paquete NuGet [System. Collections. immutable](https://www.nuget.org/packages/System.Collections.Immutable) . En el ejemplo también se muestra cómo proporcionar una corrección de código para un problema de código encontrado por el analizador. Los usuarios ven correcciones de código en la interfaz de usuario de la bombilla de Visual Studio y pueden aplicar una corrección para el código automáticamente.
 
-## <a name="get-started"></a>Primeros pasos
+## <a name="get-started"></a>Introducción
 
 Para compilar este ejemplo, necesita lo siguiente:
 
@@ -57,13 +58,13 @@ El error con los inicializadores de colección tiene lugar porque el `ImmutableA
 
 ## <a name="find-relevant-syntax-node-types-to-trigger-your-analyzer"></a>Buscar tipos de nodos de sintaxis relevantes para desencadenar el analizador
 
- Para empezar a compilar el analizador, primero debe averiguar qué tipo de SyntaxNode debe buscar. Inicie el **Syntax Visualizer** en el menú **Ver**  >  **otras**  >  **Syntax Visualizer**de Windows Roslyn.
+ Para empezar a compilar el analizador, primero debe averiguar qué tipo de SyntaxNode debe buscar. Inicie el **Syntax Visualizer** en el menú **Ver**  >  **otras**  >  **Syntax Visualizer** de Windows Roslyn.
 
 Coloque el símbolo de intercalación del editor en la línea que declara `b1` . Verá que el Syntax Visualizer muestra que se encuentra en un `LocalDeclarationStatement` nodo del árbol de sintaxis. Este nodo tiene un `VariableDeclaration` , que a su vez tiene un `VariableDeclarator` , que a su vez tiene un `EqualsValueClause` y, por último, hay un `ObjectCreationExpression` . Al hacer clic en el árbol de Syntax Visualizer de nodos, la sintaxis de la ventana del editor se resalta para mostrar el código representado por ese nodo. Los nombres de los subtipos de SyntaxNode coinciden con los nombres que se usan en la gramática de C#.
 
 ## <a name="create-the-analyzer-project"></a>Crear el proyecto de analizador
 
-En el menú principal, elija **archivo**  >  **nuevo**  >  **proyecto**. En el cuadro de diálogo **nuevo proyecto** , en proyectos de **C#** en la barra de navegación de la izquierda, elija **extensibilidad**y, en el panel derecho, elija la plantilla de proyecto **analizador con corrección de código** . Escriba un nombre y confirme el cuadro de diálogo.
+En el menú principal, elija **archivo**  >  **nuevo**  >  **proyecto**. En el cuadro de diálogo **nuevo proyecto** , en proyectos de **C#** en la barra de navegación de la izquierda, elija **extensibilidad** y, en el panel derecho, elija la plantilla de proyecto **analizador con corrección de código** . Escriba un nombre y confirme el cuadro de diálogo.
 
 La plantilla abre un archivo *DiagnosticAnalyzer.CS* . Elija la pestaña búfer del editor. Este archivo tiene una clase de analizador (formada a partir del nombre que asignó al proyecto) que deriva de `DiagnosticAnalyzer` (un tipo de API Roslyn). La nueva clase tiene una `DiagnosticAnalyzerAttribute` declaración el analizador es relevante para el lenguaje C#, de modo que el compilador detecta y carga el analizador.
 
@@ -141,11 +142,11 @@ Todavía aparecen subrayados ondulados de color rojo en `ImmutableArray` , por t
 
 En la primera instancia de Visual Studio, establezca un punto de interrupción al principio del `AnalyzeObjectCreation` método presionando **F9** con el símbolo de intercalación en la primera línea.
 
-Vuelva a iniciar el analizador con **F5**y, en la segunda instancia de Visual Studio, vuelva a abrir la aplicación de consola que creó la última vez.
+Vuelva a iniciar el analizador con **F5** y, en la segunda instancia de Visual Studio, vuelva a abrir la aplicación de consola que creó la última vez.
 
 Vuelve a la primera instancia de Visual Studio en el punto de interrupción porque el compilador Roslyn vio una expresión de creación de objeto y se llamaba al analizador.
 
-**Obtiene el nodo de creación del objeto.** Desplazarse por encima de la línea que establece la `objectCreation` variable presionando **F10**y, en la **ventana inmediato** , evalúe la expresión `"objectCreation.ToString()"` . Verá que el nodo de sintaxis al que apunta la variable es el código `"new ImmutableArray<int>()"` , lo que busca.
+**Obtiene el nodo de creación del objeto.** Desplazarse por encima de la línea que establece la `objectCreation` variable presionando **F10** y, en la **ventana inmediato** , evalúe la expresión `"objectCreation.ToString()"` . Verá que el nodo de sintaxis al que apunta la variable es el código `"new ImmutableArray<int>()"` , lo que busca.
 
 **Obtiene el objeto de tipo ImmutableArray<T \> .** Debe comprobar si el tipo que se va a crear es ImmutableArray. En primer lugar, obtiene el objeto que representa este tipo. Compruebe los tipos mediante el modelo semántico para asegurarse de que tiene exactamente el tipo correcto y no compare la cadena de `ToString()` . Escriba la siguiente línea de código al final de la función:
 
@@ -300,7 +301,7 @@ A continuación, el método captura la raíz del documento y, como esto puede im
 
 Ahora puede presionar **F5** para ejecutar el analizador en una segunda instancia de Visual Studio. Abra el proyecto de consola que usó antes. Ahora debería ver la bombilla en la que se muestra la nueva expresión de creación de objetos `ImmutableArray<int>` . Si presiona **Ctrl** + **.** (punto), verá la corrección del código y verá una vista previa de la diferencia de código generada automáticamente en la interfaz de usuario de bombillas. Roslyn lo crea automáticamente.
 
-**Sugerencia Pro:** Si inicia la segunda instancia de Visual Studio y no ve la bombilla con la corrección del código, es posible que deba borrar la memoria caché de componentes de Visual Studio. Al borrar la memoria caché se fuerza a Visual Studio a volver a examinar los componentes, por lo que Visual Studio debería seleccionar el componente más reciente. En primer lugar, cierre la segunda instancia de Visual Studio. A continuación, en el **Explorador de Windows**, vaya a *%LOCALAPPDATA%\Microsoft\VisualStudio\16.0Roslyn \\ *. (El "16,0" cambia de la versión a la versión con Visual Studio). Elimine el subdirectorio *ComponentModelCache*.
+**Sugerencia Pro:** Si inicia la segunda instancia de Visual Studio y no ve la bombilla con la corrección del código, es posible que deba borrar la memoria caché de componentes de Visual Studio. Al borrar la memoria caché se fuerza a Visual Studio a volver a examinar los componentes, por lo que Visual Studio debería seleccionar el componente más reciente. En primer lugar, cierre la segunda instancia de Visual Studio. A continuación, en el **Explorador de Windows**, vaya a *%LOCALAPPDATA%\Microsoft\VisualStudio\16.0Roslyn \\*. (El "16,0" cambia de la versión a la versión con Visual Studio). Elimine el subdirectorio *ComponentModelCache*.
 
 ## <a name="talk-video-and-finish-code-project"></a>Hable de vídeo y finalización del proyecto de código
 

@@ -1,5 +1,7 @@
 ---
 title: Vistas de una y varias pestañas | Microsoft Docs
+description: Obtenga información sobre cómo implementar vistas de varias pestañas en editores, como un editor de código de Windows y un diseñador de formularios.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c308b4d6c7b90456255019ef57c6b9d544aefc77
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 94081af0bfdb85793c092f76d28758f220f4628b
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699987"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715215"
 ---
 # <a name="single-and-multi-tab-views"></a>Vistas de una sola pestaña y varias pestañas
 Un editor puede crear diferentes tipos de vistas. Un ejemplo es una ventana del editor de código, otra es un diseñador de formularios.
@@ -112,7 +114,7 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Compatibilidad con vistas de varios documentos](../extensibility/supporting-multiple-document-views.md)
 - [Anexión de vistas a datos de documentos](../extensibility/how-to-attach-views-to-document-data.md)
 - [Creación de diseñadores y editores personalizados](../extensibility/creating-custom-editors-and-designers.md)

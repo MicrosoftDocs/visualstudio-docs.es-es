@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ab66089de25b7648b13e1ba05f88ab55b7868df
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: d7e2a05fe84b023a60ef75f0cb262a08fc02587a
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85348033"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727429"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Inspección de variables con las ventanas Inspección e Inspección rápida
 
@@ -30,7 +30,8 @@ Mientras realiza la depuración, puede usar las ventanas **Inspección** e **Ins
 
 Las ventanas **Inspección** pueden mostrar varias variables a la vez durante la depuración. El cuadro de diálogo **Inspección rápida** muestra una sola variable a la vez y se debe cerrar antes de que pueda continuar la depuración.
 
-Si esta es la primera vez que intenta depurar código, le recomendamos que lea [Cómo depurar para principiantes sin experiencia](../debugger/debugging-absolute-beginners.md) y [Herramientas y técnicas de depuración](../debugger/write-better-code-with-visual-studio.md) antes de continuar con este artículo.
+> [!NOTE]
+> Si esta es la primera vez que intenta depurar código, le recomendamos que lea [Cómo depurar para principiantes sin experiencia](../debugger/debugging-absolute-beginners.md) y [Herramientas y técnicas de depuración](../debugger/write-better-code-with-visual-studio.md) antes de continuar con este artículo.
 
 ## <a name="observe-variables-with-a-watch-window"></a>Consulta de las variables mediante una ventana Inspección
 

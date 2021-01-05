@@ -10,12 +10,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 6aacd4639e440998a5123dae8c38a64c84ebb948
-ms.sourcegitcommit: d9dd86c421532cfca6c0c5761d160f35829419c6
+ms.openlocfilehash: 367b3681d2ff8a828ee45f59359043b5fede3d26
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90026307"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668110"
 ---
 # <a name="visual-studio-on-arm-powered-devices"></a>Visual Studio en dispositivos con tecnología ARM
 
@@ -42,4 +42,4 @@ Para depurar una aplicación que se ejecuta en un dispositivo remoto, deberá [d
 No todos los proyectos de Visual Studio están configurados para iniciar proyectos de manera local cuando se inicia la depuración (**F5**) desde un dispositivo ARM. Es posible que tenga que configurar Visual Studio para realizar la depuración remota, aunque la aplicación se ejecute localmente. Para más información, consulte [Depuración remota](../debugger/remote-debugging.md).
 
 ## <a name="we-need-your-help"></a>Necesitamos que nos ayude.
-Si quiere que Visual Studio se ejecute de forma nativa en dispositivos ARM, nos encantaría saber sobre los escenarios y el soporte necesarios. Puede ponerse en contacto con nosotros si publica en [Developer Community](https://developercommunity.visualstudio.com/idea/1161018/native-arm-support-for-visual-studio.html). 
+Si quiere que Visual Studio se ejecute de forma nativa en dispositivos ARM, nos encantaría saber sobre los escenarios y el soporte necesarios. Puede ponerse en contacto con nosotros si publica en [Developer Community](https://developercommunity.visualstudio.com/idea/1161018/native-arm-support-for-visual-studio.html).

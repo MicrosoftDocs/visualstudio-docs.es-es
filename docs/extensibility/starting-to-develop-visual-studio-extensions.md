@@ -1,5 +1,7 @@
 ---
 title: Empezar a desarrollar extensiones de Visual Studio | Microsoft Docs
+description: Obtenga información sobre algunas de las preguntas comunes que puede tener la primera vez que empiece a escribir una extensión de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 09/18/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +13,16 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 812c5b2366e40226011a15acfc1cae2327e4b897
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: da8bd850413d32e5453b7dc312e863832e5f5218
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099393"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715267"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Comienzo del desarrollo de extensiones de Visual Studio
 
-Si nunca ha escrito una extensión de Visual Studio, es probable que tenga algunas preguntas. Aquí se enumeran algunos de los más comunes. Si no ve la información que busca, use los botones de comentarios (¿le resulta**útil esta página?** en la esquina superior derecha de la pantalla) para solicitar lo que desea.
+Si nunca ha escrito una extensión de Visual Studio, es probable que tenga algunas preguntas. Aquí se enumeran algunos de los más comunes. Si no ve la información que busca, use los botones de comentarios (¿le resulta **útil esta página?** en la esquina superior derecha de la pantalla) para solicitar lo que desea.
 
 > [!NOTE]
 > Este artículo se aplica a Visual Studio para Windows. Para obtener Visual Studio para Mac, vea [extender Visual Studio para Mac](/visualstudio/mac/extending-visual-studio-mac). Para obtener Visual Studio Code, consulte [API de extensión de Visual Studio Code](https://code.visualstudio.com/api).
@@ -49,7 +51,7 @@ En la práctica, hemos descubierto que las características que la mayoría de l
 
 - [Extensión de menús y comandos](../extensibility/extending-menus-and-commands.md): agregue sus propios elementos a los menús y las barras de herramientas de Visual Studio. Puede usarlos para iniciar nuevas funcionalidades de Visual Studio o sus propias aplicaciones auxiliares externas. También puede proporcionar accesos directos personalizados para los elementos de menú.
 
-- [Extender y personalizar ventanas de herramientas](../extensibility/extending-and-customizing-tool-windows.md): Extienda las ventanas de herramientas existentes o cree sus propias ventanas de herramientas. Por ejemplo, puede agregar nuevas propiedades a las **propiedades**o puede crear una nueva ventana de herramientas para agregar características adicionales.
+- [Extender y personalizar ventanas de herramientas](../extensibility/extending-and-customizing-tool-windows.md): Extienda las ventanas de herramientas existentes o cree sus propias ventanas de herramientas. Por ejemplo, puede agregar nuevas propiedades a las **propiedades** o puede crear una nueva ventana de herramientas para agregar características adicionales.
 
 - [Extensiones del editor y del servicio de lenguaje](../extensibility/editor-and-language-service-extensions.md): agregue sus propias personalizaciones a IntelliSense proporcionado para los lenguajes de Visual Studio o cree compatibilidad para los nuevos lenguajes de programación. Puede crear nuevas finalizaciones de instrucciones, sugerencias y nuevas informaciones sobre herramientas de QuickInfo. Con las bombillas, puede Agregar sugerencias de refactorización y correcciones de código para admitir nuevos lenguajes de programación.
 

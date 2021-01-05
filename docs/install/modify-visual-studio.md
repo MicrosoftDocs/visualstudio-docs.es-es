@@ -4,7 +4,7 @@ titleSuffix: ''
 description: Obtenga información sobre cómo modificar Visual Studio, paso a paso.
 ms.date: 10/12/2020
 ms.topic: how-to
-ms.custom: contperfq2
+ms.custom: contperf-fy21q2
 helpviewer_keywords:
 - modify Visual Studio
 - change visual studio
@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: dad71e4f52350357106ee9a9ef9ce90d18204bfb
-ms.sourcegitcommit: 4eb8fe6eb7f1dc639f1d213db05a7a3007e8087e
+ms.openlocfilehash: 17a02fb8c05c6f1720aa1b352e30c46e04a8b69d
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92157380"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97684089"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>Modificación de Visual Studio mediante la incorporación o la eliminación de cargas de trabajo y componentes
 
@@ -55,19 +55,19 @@ Esta es la manera de hacerlo.
 
 1. Busque el instalador de Visual Studio en su equipo.
 
-     Por ejemplo, en un equipo que ejecuta Windows 10, seleccione **Iniciar** y, después, desplácese hasta la letra **I** donde lo verá como **Instalador de Visual Studio** .
+     Por ejemplo, en un equipo que ejecuta Windows 10, seleccione **Iniciar** y, después, desplácese hasta la letra **I** donde lo verá como **Instalador de Visual Studio**.
 
      ![Instalador de Visual Studio](media/locate-the-visual-studio-installer.png "Búsqueda del Instalador de Microsoft Visual Studio")
 
      >[!TIP]
      >En algunos equipos, el instalador de Visual Studio podría aparecer en la letra **"M"** como **Microsoft Visual Studio Installer** (instalador de Microsoft Visual Studio).<br/><br/> Como alternativa, puede encontrar el Instalador de Visual Studio en la siguiente ubicación: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
-1. Abra el instalador y, después, elija **Modificar** .
+1. Abra el instalador y, después, elija **Modificar**.
 
      ![Inicio o modificación de Visual Studio](media/modify-visual-studio.png "Modificación de Visual Studio 2017")
 
      > [!IMPORTANT]
-     > Si tiene una actualización pendiente, el botón Modificar se encuentra en otro lugar. De este modo, puede modificar Visual Studio sin actualizar, si decide hacerlo. Haga clic en **Más** y, a continuación, elija **Modificar** .
+     > Si tiene una actualización pendiente, el botón Modificar se encuentra en otro lugar. De este modo, puede modificar Visual Studio sin actualizar, si decide hacerlo. Haga clic en **Más** y, a continuación, elija **Modificar**.
      >
      > ![Actualización o modificación de Visual Studio](media/modify-or-update-visual-studio.png "Actualización o modificación de Visual Studio 2017")
 
@@ -88,12 +88,12 @@ Esta es la manera de hacerlo.
 
     Es posible que tenga que actualizar el instalador antes de continuar. De ser así, siga las indicaciones.
 
-1. En el instalador, busque la edición de Visual Studio que haya instalado y, luego, elija **Modificar** .
+1. En el instalador, busque la edición de Visual Studio que haya instalado y, luego, elija **Modificar**.
 
      ![Selección de la edición de Visual Studio y posterior modificación](media/vs-2019/vs-installer-modify.png "Selección de la edición Visual Studio 2019 y posterior modificación")
 
      > [!IMPORTANT]
-     > Si tiene una actualización pendiente, el botón Modificar se encuentra en otro lugar. De este modo, puede modificar Visual Studio sin actualizar, si decide hacerlo. Elija **Más** y, a continuación, **Modificar** .
+     > Si tiene una actualización pendiente, el botón Modificar se encuentra en otro lugar. De este modo, puede modificar Visual Studio sin actualizar, si decide hacerlo. Elija **Más** y, a continuación, **Modificar**.
      >
      > ![Actualización o modificación de Visual Studio](media/vs-2019/modify-update-visual-studio.png "Actualización o modificación de Visual Studio 2019")
 
@@ -109,13 +109,13 @@ Esta es la manera de hacerlo.
 
     ![Cuadro de diálogo del programa de instalación de Visual Studio 2017](media/modify-workloads.png "Elección de una carga de trabajo en Visual Studio 2019")
 
-1. Elija si quiere aceptar la opción predeterminada, **Instalar durante la descarga** , o la opción **Descargar e instalar todo** .
+1. Elija si quiere aceptar la opción predeterminada, **Instalar durante la descarga**, o la opción **Descargar e instalar todo**.
 
     ![Opciones del programa de instalación de Visual Studio 2017](media/vs-2019/vs-installer-choose-install-or-download.png "Selección de la opción de instalar durante la descarga o descargar primero e instalar después")
 
     La opción "Descargar e instalar todo" resulta útil si quiere realizar la descarga en primer lugar e instalar el producto más adelante.
 
-1. Elija **Modificar** .
+1. Elija **Modificar**.
 
 1. Cuando se hayan instalado las nuevas cargas de trabajo, elija **Iniciar** en el Instalador de Visual Studio para abrir Visual Studio.
 
@@ -132,13 +132,13 @@ Esta es la manera de hacerlo.
 
     ![Cuadro de diálogo del programa de instalación de Visual Studio 2019](media/vs-2019/vs-installer-modify-workloads.png "Elección de una carga de trabajo en Visual Studio 2019")
 
-1. Elija si quiere aceptar la opción predeterminada, **Instalar durante la descarga** , o la opción **Descargar e instalar todo** .
+1. Elija si quiere aceptar la opción predeterminada, **Instalar durante la descarga**, o la opción **Descargar e instalar todo**.
 
     ![Opciones del programa de instalación de Visual Studio 2019](media/vs-2019/vs-installer-choose-install-or-download.png "Selección de la opción de instalar durante la descarga o descargar primero e instalar después")
 
     La opción "Descargar e instalar todo" resulta útil si quiere realizar la descarga en primer lugar e instalar el producto más adelante.
 
-1. Elija **Modificar** .
+1. Elija **Modificar**.
 
 1. Cuando se hayan instalado las nuevas cargas de trabajo, elija **Iniciar** en el Instalador de Visual Studio para abrir Visual Studio.
 

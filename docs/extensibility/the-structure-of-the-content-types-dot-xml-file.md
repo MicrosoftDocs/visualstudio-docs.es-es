@@ -1,5 +1,7 @@
 ---
 title: Estructura del archivo [Content_types]. XML | Microsoft Docs
+description: Obtenga información sobre la estructura del archivo de tipos de contenido, que contiene información sobre los tipos de contenido de un paquete VSIX.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e96af4936f27d869409a7215c720d9bb64e4128
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 7117845e4756f8b0e09a8fa603e66448e705b903
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012522"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715228"
 ---
 # <a name="the-structure-of-the-content_typesxml-file"></a>Estructura del archivo [Content_types].xml
 Contiene información sobre los tipos de contenido de un paquete VSIX. Visual Studio usa el archivo [Content_Types]. XML para instalar el paquete, pero no instala el propio archivo.
@@ -43,7 +45,7 @@ Contiene información sobre los tipos de contenido de un paquete VSIX. Visual St
 
 ### <a name="attribute-name-attribute"></a>{Nombre de atributo} Atribui
 
-| Value | Descripción |
+| Valor | Descripción |
 | - | - |
 | `http://schemas.openformats.org/package/2006/content-types` | La ubicación del esquema de tipos de contenido. |
 
