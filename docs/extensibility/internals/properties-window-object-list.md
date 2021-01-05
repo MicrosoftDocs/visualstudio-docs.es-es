@@ -1,5 +1,7 @@
 ---
 title: Lista de objetos de la ventana Propiedades | Microsoft Docs
+description: Obtenga información sobre las interfaces que se usan para interactuar con la lista de objetos en el ventana Propiedades en el IDE de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ffe11ae6ebb4e692686c884b663a4f93d1466535
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 92fcce4dc62cdc84d15ca6dc51420791d4460340
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706146"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875432"
 ---
 # <a name="properties-window-object-list"></a>Lista de objetos de la ventana Propiedades
 La lista de objetos de la ventana **propiedades** es una lista desplegable que permite cambiar la selección a otros objetos disponibles en una o varias ventanas seleccionadas. Al seleccionar un objeto diferente en esta lista, se desencadena una llamada a <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A> para informar al entorno de que se ha seleccionado un nuevo objeto. La información que se muestra en la ventana **propiedades** se cambia para mostrar las propiedades asociadas al objeto recién seleccionado.
@@ -29,5 +31,5 @@ La lista de objetos de la ventana **propiedades** es una lista desplegable que p
 
  Si el objeto COM no implementa <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo> , la ventana **propiedades** muestra el nombre de la interfaz en lugar del nombre de objeto en el lado izquierdo de la lista.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Extensión de propiedades](../../extensibility/internals/extending-properties.md)

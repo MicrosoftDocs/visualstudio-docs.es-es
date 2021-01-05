@@ -1,5 +1,7 @@
 ---
 title: Objeto objeto vstextbuffer | Microsoft Docs
+description: El objeto objeto vstextbuffer representa una secuencia de texto Unicode, que generalmente está asociada a un archivo. En este artículo se enumeran las interfaces de objeto vstextbuffer.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 193d96be91839143893ac0798db723f3e94ea26c
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: e5c2afa08e9c480342bff95d417dfb9174250b83
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93413923"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863955"
 ---
 # <a name="vstextbuffer-object"></a>Objeto objeto vstextbuffer
 El objeto de búfer de texto representa una secuencia de texto Unicode, que generalmente está asociada a un archivo. Un <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> objeto se puede utilizar fuera del contexto del editor principal, como en, un asistente.
@@ -40,7 +42,7 @@ El objeto de búfer de texto representa una secuencia de texto Unicode, que gene
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData>|Proporciona acceso a una colección genérica de propiedades. La propiedad más importante es el nombre, o moniker, del búfer. Puede almacenar sus propios datos aleatorios en el búfer con esta interfaz mediante la creación de un GUID y su uso como clave.|
 |<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>|Admite puntos de conexión para eventos.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
  `VSTextBuffer`Normalmente, se encuentra en una `QueryInterface` llamada en `IVsTextBuffer` . Para obtener más información, vea [búfer de texto](/previous-versions/visualstudio/visual-studio-2015/extensibility/accessing-the-text-buffer-by-using-the-legacy-api?preserve-view=true&view=vs-2015).
 
 ## <a name="see-also"></a>Consulte también

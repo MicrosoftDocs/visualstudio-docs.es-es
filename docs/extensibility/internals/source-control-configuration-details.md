@@ -1,5 +1,7 @@
 ---
 title: Detalles de configuración del control de código fuente | Microsoft Docs
+description: Obtenga información sobre cómo implementar el control de código fuente para un tipo de proyecto en Visual Studio, lo que implica configurar el sistema del proyecto o el editor para solicitar permisos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cf4a5c55e8093e5dcd6406cde1c60f642188495
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: efed4592bfa0b697d66f377430cc5998d3e9e5d3
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705291"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875510"
 ---
 # <a name="source-control-configuration-details"></a>Detalles de configuración del control de código fuente
 Para implementar el control de código fuente, debe configurar correctamente el sistema del proyecto o el editor para hacer lo siguiente:

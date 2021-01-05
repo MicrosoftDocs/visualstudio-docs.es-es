@@ -1,5 +1,7 @@
 ---
 title: Selección y moneda en el IDE | Microsoft Docs
+description: Obtenga información acerca de cómo los VSPackages toman parte en el seguimiento de moneda. El IDE de Visual Studio mantiene información acerca de los objetos seleccionados actualmente mediante el contexto de selección.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,15 +15,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f580b7c8e1651dcbcd053476ae756399a0ac3482
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b2d745619be8bff77503bc14a1d7a87d84cc7864
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705581"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875602"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>Selección y moneda en el IDE
-El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] entorno de desarrollo integrado (IDE) mantiene información acerca de los objetos seleccionados actualmente por los usuarios mediante el *contexto*de selección. Con el contexto de selección, los VSPackages pueden participar en el seguimiento de moneda de dos maneras:
+El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] entorno de desarrollo integrado (IDE) mantiene información acerca de los objetos seleccionados actualmente por los usuarios mediante el *contexto* de selección. Con el contexto de selección, los VSPackages pueden participar en el seguimiento de moneda de dos maneras:
 
 - Al propagar la información de moneda sobre los VSPackages al IDE.
 

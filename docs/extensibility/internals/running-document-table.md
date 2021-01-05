@@ -1,5 +1,7 @@
 ---
 title: Tabla de documentos en ejecución | Microsoft Docs
+description: Obtenga información sobre cómo el IDE de Visual Studio mantiene la tabla de documentos en ejecución, que incluye todos los documentos abiertos en la memoria.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e6aa882921786b1592922372581beae8c4c2443
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd166626d6043da4ac94658bdd35219efc7a37c2
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705566"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875653"
 ---
 # <a name="running-document-table"></a>Tabla de documentos en ejecución
 El IDE mantiene la lista de todos los documentos abiertos actualmente en una estructura interna denominada tabla de documentos en ejecución (RDT). Esta lista incluye todos los documentos abiertos en la memoria, independientemente de si estos documentos se están editando en ese momento. Un documento es cualquier elemento que se conserva, incluidos los archivos de un proyecto o el archivo del proyecto principal (por ejemplo, un archivo. vcxproj).
@@ -56,6 +58,6 @@ El IDE mantiene la lista de todos los documentos abiertos actualmente en una est
 
 - Use la jerarquía o el identificador de elemento para solicitar al sistema del proyecto la ruta de acceso completa del documento y, a continuación, busque el elemento en el RDT.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Uso de RDT_ReadLock](../../extensibility/internals/rdt-readlock-usage.md)
 - [Persistencia y tabla de documentos en ejecución](../../extensibility/internals/persistence-and-the-running-document-table.md)

@@ -1,5 +1,7 @@
 ---
 title: Referencia de esquema de manifiesto de plantilla de Visual Studio | Microsoft Docs
+description: Esta referencia de esquema describe el formato de los archivos de manifiesto de la plantilla de Visual Studio que se generan para las plantillas de proyecto o de elemento de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbe46851d9df85569be796b4147217bd7db450ed
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d712f2cb95b2df9680c4476805e9dfb6809cf038
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697981"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863842"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Referencia de esquema de manifiesto de plantilla de Visual Studio
 Este esquema describe el formato de los archivos de manifiesto de plantilla de Visual Studio (*. vstman*) que se generan para las plantillas de proyecto o elemento de Visual Studio. El esquema también describe la ubicación y otra información relevante sobre la plantilla.
@@ -28,7 +30,7 @@ Este esquema describe el formato de los archivos de manifiesto de plantilla de V
 
 ### <a name="attributes"></a>Atributos
 
-- **Versión**: una cadena que representa la versión del manifiesto de la plantilla. Necesario.
+- **Versión**: una cadena que representa la versión del manifiesto de la plantilla. Obligatorio.
 
 - **Locale**: una cadena que representa la configuración regional o las configuraciones regionales del manifiesto de la plantilla. El valor de configuración regional se aplica a todas las plantillas. Debe usar un manifiesto independiente para cada configuración regional. Opcional.
 
@@ -45,7 +47,7 @@ Este esquema describe el formato de los archivos de manifiesto de plantilla de V
  Contenedor de los elementos de manifiesto de la plantilla. Un manifiesto tiene un contenedor de plantilla para cada plantilla que define.
 
 ### <a name="attributes"></a>Atributos
- **VSTemplateType**: valor de cadena que especifica el tipo de la plantilla ( `"Project"` , `"Item"` o `"ProjectGroup"` ). Obligatorio
+ **VSTemplateType**: valor de cadena que especifica el tipo de la plantilla ( `"Project"` , `"Item"` o `"ProjectGroup"` ). Requerido
 
 ### <a name="child-elements"></a>Elementos secundarios
 

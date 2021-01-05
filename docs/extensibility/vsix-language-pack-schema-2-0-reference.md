@@ -1,5 +1,7 @@
 ---
 title: Referencia del esquema del paquete de idioma VSIX 2,0 | Microsoft Docs
+description: El esquema del paquete de idioma VSIX proporciona información de instalación localizada para los paquetes VSIX. La versión 2,0 admite elementos de localización adicionales.
+ms.custom: SEO-VS-2020
 ms.date: 10/26/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.assetid: 2a2932bc-cdbe-4d32-91fa-a3e0474f9098
 author: acangialosi
 ms.author: anthc
 manager: jillfra
-ms.openlocfilehash: f0eee51c0654c6e517209e23baf43c6b262d8f73
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: fc9c3c1aa7f8cf77ebf165a3e10a67ccbd5887f7
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91830709"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863831"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>Referencia del esquema del paquete de idioma VSIX 2,0
 
@@ -30,7 +32,7 @@ El elemento raíz del archivo de paquete de idioma es `<PackageLanguagePackManif
 
 Dentro del `<PackageLanguagePackManifest>` elemento debe existir el siguiente elemento:
 
-|Título|Descripción|
+|Title|Descripción|
 |-----------|-----------------|
 |`<Metadata>`| El elemento contenedor para todos los metadatos de paquete localizados
 
@@ -38,7 +40,7 @@ Dentro del `<PackageLanguagePackManifest>` elemento debe existir el siguiente el
 
 Dentro del `<Metadata>` elemento puede tener los elementos siguientes:
 
-|Título|Descripción|
+|Title|Descripción|
 |-----------|-----------------|
 |`<DisplayName>`|Nombre localizado de la extensión que se va a instalar.|
 |`<Description>`|La descripción localizada de la extensión que se va a instalar.|

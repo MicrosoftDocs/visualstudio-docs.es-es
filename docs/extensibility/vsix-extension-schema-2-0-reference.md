@@ -1,5 +1,7 @@
 ---
 title: Referencia del esquema de extensión VSIX 2,0 | Microsoft Docs
+description: El esquema de extensión VSIX 2,0 define el formato de archivo para un archivo de manifiesto de implementación VSIX, que describe el contenido de un paquete VSIX.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78e260c62d67afc10fea25d52169c48b64c82f72
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b2edd0349555380f6d98d24f7a40c22e48797d12
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697908"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863760"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Referencia del esquema de extensión VSIX 2,0
 Un archivo de manifiesto de implementación de VSIX describe el contenido de un paquete VSIX. El formato de archivo se rige por un esquema. La versión 2,0 de este esquema admite la adición de tipos y atributos personalizados.  El esquema del manifiesto es extensible. El cargador de manifiestos omite los elementos y atributos XML que no comprende.
@@ -219,6 +221,6 @@ Un archivo de manifiesto de implementación de VSIX describe el contenido de un 
 </PackageManifest>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Envío de extensiones de Visual Studio](../extensibility/shipping-visual-studio-extensions.md)

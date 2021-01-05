@@ -1,5 +1,7 @@
 ---
 title: Registrando un tipo de proyecto | Microsoft Docs
+description: Obtenga información sobre cómo crear entradas del registro que permitan a Visual Studio reconocer y trabajar con el nuevo tipo de proyecto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7267060f2207b0842885dc3001c3926874be30a9
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: 9a34f5c7f1ae3a214a0a72932ae80dbc44845a45
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407736"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875207"
 ---
 # <a name="registering-a-project-type"></a>Registro de un tipo de proyecto
 Al crear un nuevo tipo de proyecto, debe crear entradas del registro que habiliten [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para reconocer y trabajar con el tipo de proyecto. Normalmente, estas entradas del registro se crean mediante un archivo de script de registro (. RGS).
@@ -147,7 +149,7 @@ Al crear un nuevo tipo de proyecto, debe crear entradas del registro que habilit
 
  En la tabla siguiente se muestran las opciones de filtros disponibles en el segmento de código anterior.
 
-|Opción de filtro|Descripción|
+|Opción de filtro|Description|
 |-------------------|-----------------|
 |`CommonFindFilesFilter`|Indica que el filtro es uno de los filtros comunes del cuadro de diálogo **Buscar en archivos** . Los filtros comunes se enumeran en la lista de filtros antes de que los filtros no estén marcados como comunes.|
 |`CommonOpenFilesFilter`|Indica que el filtro es uno de los filtros comunes del cuadro de diálogo **Abrir archivo** . Los filtros comunes se enumeran en la lista de filtros antes de que los filtros no estén marcados como comunes.|
@@ -264,7 +266,7 @@ Al crear un nuevo tipo de proyecto, debe crear entradas del registro que habilit
 
  Esto significa que si incluye una entrada PROJECT_TYPE = EF en el archivo. vsz, el entorno busca los archivos. vsz en el directorio ProductDir especificado anteriormente.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Lista de comprobación: Creación de nuevos tipos de proyectos](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Elementos de un modelo de proyecto](../../extensibility/internals/elements-of-a-project-model.md)
 - [Creación de instancias de proyecto mediante generadores de proyecto](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)

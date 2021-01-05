@@ -1,5 +1,7 @@
 ---
 title: Abrir una ventana de herramientas dinámica | Microsoft Docs
+description: Obtenga información sobre las ventanas de herramientas dinámicas, que se abre cada vez que se aplica un contexto de interfaz de usuario específico y se cierra cuando el contexto de la interfaz de usuario ya no se aplica.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a06cea6d9de4271572457dc9fe6473b5c969b66
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 12b08f676e02a9023374c709aa18edfc0e8815db
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903716"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863510"
 ---
 # <a name="open-a-dynamic-tool-window"></a>Abrir una ventana de herramientas dinámica
 Las ventanas de herramientas normalmente se abren desde un comando de un menú o un método abreviado de teclado equivalente. Sin embargo, en ocasiones, es posible que necesite una ventana de herramientas que se abra cada vez que se aplique un contexto de interfaz de usuario específico y se cierre cuando el contexto de la interfaz de usuario ya no se aplique. Estos tipos de ventanas de herramientas se denominan *dinámicas* o *automáticas*.

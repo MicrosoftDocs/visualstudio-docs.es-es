@@ -1,5 +1,7 @@
 ---
 title: Elemento primario | Microsoft Docs
+description: El elemento primario especifica que un elemento es un elemento primario de un botón, un cuadro combinado, un menú o un grupo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c018505ba06762bf8426f266b24ee1835313c29
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03f1709184126d31845bfe1145afdebfeffcd1d1
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702225"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863326"
 ---
 # <a name="parent-element"></a>Elemento primario
 El elemento primario de un botón o un cuadro combinado solo puede ser un grupo. El elemento primario de un menú o grupo puede ser cualquier otro menú o grupo. En un [elemento CommandPlacement](../extensibility/commandplacement-element.md), este elemento es obligatorio; en todas las demás instancias es opcional. Si se omite este elemento, el elemento primario de `Group_Undefined:0` será implícito.
@@ -34,8 +36,8 @@ El elemento primario de un botón o un cuadro combinado solo puede ser un grupo.
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|guid|Necesario. GUID del identificador del comando GUID/ID.|
-|id|Necesario. Identificador del identificador del comando GUID/ID.|
+|guid|Obligatorio. GUID del identificador del comando GUID/ID.|
+|id|Obligatorio. Identificador del identificador del comando GUID/ID.|
 
 ### <a name="child-elements"></a>Elementos secundarios
  Ninguno

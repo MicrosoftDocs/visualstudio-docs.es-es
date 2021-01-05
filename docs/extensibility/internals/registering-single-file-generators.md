@@ -1,5 +1,7 @@
 ---
 title: Registrando generadores de archivo único | Microsoft Docs
+description: Obtenga información sobre cómo registrar una herramienta personalizada en Visual Studio para crear una instancia de ella y asociarla a un tipo de proyecto determinado.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 185e60daac2aef2c8aeeb4f087547984e6fcf510
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 7a0ce4afeddebdec8519467e1f4249095ce98f6b
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012040"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875263"
 ---
 # <a name="registering-single-file-generators"></a>Registro de generadores de un solo archivo
 Para que una herramienta personalizada esté disponible en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , debe registrarla de modo que [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pueda crear una instancia de ella y asociarla a un tipo de proyecto determinado.
@@ -67,7 +69,7 @@ Para que una herramienta personalizada esté disponible en [!INCLUDE[vsprvs](../
    "GeneratesDesignTimeSource"=dword:00000001
    ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>
 - [Implementación de generadores de un solo archivo](../../extensibility/internals/implementing-single-file-generators.md)
 - [Exposición de tipos a diseñadores visuales](../../extensibility/internals/exposing-types-to-visual-designers.md)

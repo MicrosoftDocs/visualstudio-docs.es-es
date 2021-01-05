@@ -1,5 +1,7 @@
 ---
 title: Diseñador de manifiestos de VSIX | Microsoft Docs
+description: Obtenga información sobre cómo el diseñador de manifiestos VSIX modifica un archivo de manifiesto del paquete VSIX, que establece el comportamiento de instalación de una extensión de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,19 +16,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30620e0fe91d0e90995d2d2f721950f878c65fdc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6323b4330279848bc0453bdc7413904e2582d13a
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697890"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863970"
 ---
 # <a name="vsix-manifest-designer"></a>Diseñador de manifiestos de VSIX
 Modifica un archivo de manifiesto del paquete VSIX, que establece el comportamiento de instalación de una extensión de Visual Studio.
 
  El **Diseñador de manifiestos VSIX** asigna al esquema VSIX subyacente. Cada elemento del esquema se puede establecer utilizando un control correspondiente en el diseñador. Para obtener más información sobre el esquema, vea [referencia de esquema de extensión VSIX 2,0](../extensibility/vsix-extension-schema-2-0-reference.md).
 
- Para abrir el **Diseñador de manifiestos VSIX**, busque un archivo *source. Extension. vsixmanifest* en **Explorador de soluciones**y abra el archivo. Si el archivo no contiene XML válido, el diseñador de manifiestos no se abrirá.
+ Para abrir el **Diseñador de manifiestos VSIX**, busque un archivo *source. Extension. vsixmanifest* en **Explorador de soluciones** y abra el archivo. Si el archivo no contiene XML válido, el diseñador de manifiestos no se abrirá.
 
 > [!NOTE]
 > El archivo *source. Extension. vsixmanifest* se envía a *Extension. vsixmanifest* cuando se compila el paquete.
@@ -128,6 +130,6 @@ Modifica un archivo de manifiesto del paquete VSIX, que establece el comportamie
 
   El identificador debe coincidir con el `ID` atributo de los metadatos del paquete de dependencia. El origen puede ser un proyecto de la solución actual, una extensión instalada actualmente o un archivo. El valor de configuración de la **dependencia resuelta** puede ser la ruta de acceso relativa de un paquete anidado o la dirección URL de la ubicación de descarga de la dependencia. El identificador, la versión y la resolución del paquete de dependencia se corresponden con los `Id` `Version` atributos, y `Location` del `Dependency` elemento asociado.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Referencia del esquema de extensión VSIX 2,0](../extensibility/vsix-extension-schema-2-0-reference.md)
 - [Anatomía de un paquete VSIX](../extensibility/anatomy-of-a-vsix-package.md)

@@ -1,5 +1,7 @@
 ---
 title: Registrando plantillas de proyecto y elemento | Microsoft Docs
+description: Aprenda cómo Visual Studio usa la información de registro de los tipos de proyecto para determinar lo que se debe mostrar en los cuadros de diálogo Agregar nuevo proyecto y agregar nuevo elemento.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b64504c39b1fc3c4a82530b265cfd0e96832b4f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 999b435719113883201b7619daca9a84d095294e
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705822"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875276"
 ---
 # <a name="registering-project-and-item-templates"></a>Registro de plantillas para proyectos y elementos
 Los tipos de proyecto deben registrar los directorios donde se encuentran las plantillas de proyecto y de elemento de proyecto. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usa la información de registro asociada a los tipos de proyecto para determinar lo que se va a mostrar en los cuadros de diálogo **Agregar nuevo proyecto** y **Agregar nuevo elemento** .
@@ -27,7 +29,7 @@ Los tipos de proyecto deben registrar los directorios donde se encuentran las pl
  Para obtener más información acerca de las plantillas, vea [agregar plantillas de proyecto y de elemento de proyecto](../../extensibility/internals/adding-project-and-project-item-templates.md).
 
 ## <a name="registry-entries-for-projects"></a>Entradas del registro para proyectos
- En los ejemplos siguientes se muestran las entradas del registro en HKEY_LOCAL_MACHINE versión de \software\microsoft\visualstudio \\ < *Version*>. En las tablas adjuntas se explican los elementos que se usan en los ejemplos.
+ En los ejemplos siguientes se muestran las entradas del registro en HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\ < *versión*>. En las tablas adjuntas se explican los elementos que se usan en los ejemplos.
 
 ```
 [Projects\{ProjectGUID}]
@@ -37,11 +39,11 @@ Los tipos de proyecto deben registrar los directorios donde se encuentran las pl
 "ProjectTemplatesDir"="C:\\MyProduct\\MyProjectTemplates"
 ```
 
-|Nombre|Tipo|Descripción|
+|Nombre|Tipo|Description|
 |----------|----------|-----------------|
 |@|REG_SZ|Nombre predeterminado de los proyectos de este tipo.|
 |DisplayName|REG_SZ|IDENTIFICADOR de recurso del nombre que se va a recuperar de la DLL satélite registrada en packages.|
-|Paquete|REG_SZ|IDENTIFICADOR de clase del paquete registrado en paquetes.|
+|Package|REG_SZ|IDENTIFICADOR de clase del paquete registrado en paquetes.|
 |ProjectTemplatesDir|REG_SZ|Ruta de acceso predeterminada de los archivos de plantilla de proyecto. La nueva plantilla de **proyecto** muestra los archivos de plantilla de proyecto.|
 
 ### <a name="registering-item-templates"></a>Registrar plantillas de elementos
@@ -55,7 +57,7 @@ Los tipos de proyecto deben registrar los directorios donde se encuentran las pl
 "SortPriority"=dword:00000064
 ```
 
-| Nombre | Tipo | Descripción |
+| Nombre | Tipo | Description |
 |--------------------------|-----------| - |
 | @ | REG_SZ | IDENTIFICADOR de recurso para agregar plantillas de elementos. |
 | TemplatesDir | REG_SZ | Ruta de acceso de los elementos de proyecto mostrados en el cuadro de diálogo para el Asistente para **Agregar nuevo elemento** . |
@@ -67,7 +69,7 @@ Los tipos de proyecto deben registrar los directorios donde se encuentran las pl
 
  **Archivos de Visual C# ( \* . CS, \* . resx, \* . Settings, \* . xsd, \* . WSDL); \* . CS, \* . resx, \* . Settings, \* . xsd, \* . WSDL)**
 
- Para admitir el registro de varios filtros, cada filtro se registra en su propia subclave en HKEY_LOCAL_MACHINE versión de \software\microsoft\visualstudio \\ < *Version*> \projects \\ { \<*ProjectGUID*> } \Filters \\ < *subclave*>. El nombre de la subclave es arbitrario; [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] omite el nombre de la subclave y usa solo sus valores.
+ Para admitir el registro de varios filtros, cada filtro se registra en su propia subclave en HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\ < *versión*> la \\ subclave \projects { \<*ProjectGUID*> } \Filters \\ < >. El nombre de la subclave es arbitrario; [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] omite el nombre de la subclave y usa solo sus valores.
 
  Puede controlar los contextos en los que se usa un filtro mediante el establecimiento de marcas, que se muestra en la tabla siguiente. Si un filtro no tiene ninguna marca establecida, se mostrará después de los filtros comunes en el cuadro de diálogo **Agregar elemento existente** y el cuadro de diálogo **Abrir archivo** , pero no se utilizará en el cuadro de diálogo **Buscar en archivos** .
 
@@ -82,7 +84,7 @@ Los tipos de proyecto deben registrar los directorios donde se encuentran las pl
 "SortPriority"=dword:00000064
 ```
 
-|Nombre|Tipo|Descripción|
+|Nombre|Tipo|Description|
 |----------|----------|-----------------|
 |CommonFindFilesFilter|REG_DWORD|Hace que el filtro sea uno de los filtros comunes del cuadro de diálogo **Buscar en archivos** . Los filtros comunes se muestran en la lista de filtros antes de que los filtros no estén marcados como comunes.|
 |CommonOpenFilesFilter|REG_DWORD|Hace que el filtro sea uno de los filtros comunes del cuadro de diálogo **Abrir archivo** . Los filtros comunes se muestran en la lista de filtros antes de que los filtros no estén marcados como comunes.|
@@ -116,7 +118,7 @@ Los tipos de proyecto deben registrar los directorios donde se encuentran las pl
 
  \WizardFiles
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Adición de plantillas de proyecto y de elementos de proyecto](../../extensibility/internals/adding-project-and-project-item-templates.md)
 - [Asistentes](../../extensibility/internals/wizards.md)

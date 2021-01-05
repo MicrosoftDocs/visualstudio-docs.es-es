@@ -1,5 +1,7 @@
 ---
 title: Galerías privadas | Microsoft Docs
+description: Aprenda a compartir los controles, las plantillas y las herramientas que desarrolle en el SDK de Visual Studio publicándolo en una galería privada.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: afd1d79d7f1846e60386d2a9478466bf7eae72e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1ec7390acf753af20bc0edbe20194ba17c2d9d80
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81444653"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863503"
 ---
 # <a name="private-galleries"></a>Galerías privadas
 Puede compartir los controles, las plantillas y las herramientas que desarrolle mediante su publicación en una *galería privada* de la intranet de la organización, como se indica a continuación:
@@ -51,7 +53,7 @@ Puede compartir los controles, las plantillas y las herramientas que desarrolle 
 
 ```
 [$RootKey$\ExtensionManager\Repositories\{UniqueGUID}]
-@={URI}  (REG_SZ)
+@={URI}  (REG_SZ)
 Disabled=0 | 1 (DWORD)
 Priority=0 (highest priority) ... MaxInt (lowest priority) (DWORD) (uint)
 Protocol=Atom|Sharepoint (REG_SZ)
@@ -72,7 +74,7 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 
 1. En la barra de menús, elija **herramientas**  >  **extensiones y actualizaciones**.
 
-2. En el panel izquierdo, seleccione **extensiones en línea**y, a continuación, seleccione **mi Galería**.
+2. En el panel izquierdo, seleccione **extensiones en línea** y, a continuación, seleccione **mi Galería**.
 
 3. En el panel derecho, seleccione una extensión y, a continuación, elija el botón **Descargar** .
 
@@ -85,7 +87,7 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 
 1. En la barra de menús, elija **herramientas**  >  **extensiones y actualizaciones**.
 
-2. En el panel izquierdo, seleccione **actualizaciones**y, a continuación, seleccione **mi repositorio**.
+2. En el panel izquierdo, seleccione **actualizaciones** y, a continuación, seleccione **mi repositorio**.
 
 3. En el panel derecho, seleccione una extensión y, a continuación, elija el botón **Actualizar** .
 

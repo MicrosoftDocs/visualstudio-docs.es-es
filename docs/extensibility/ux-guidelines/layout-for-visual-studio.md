@@ -1,5 +1,7 @@
 ---
 title: Diseño para Visual Studio | Microsoft Docs
+description: Obtenga información sobre el diseño de los cuadros de diálogo de Visual Studio, incluidos los cuadros de diálogo desvinculados y los nuevos cuadros de diálogo que tienen una apariencia con un formato.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4eb8eb7468751d46b922c15530389c554a8d3e36
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3e6c90831c39f0e378dd9060397c68592ec73384
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698402"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863663"
 ---
 # <a name="layout-for-visual-studio"></a>Diseño para Visual Studio
 La mayoría de los cuadros de diálogo de Visual Studio son el [diseño del cuadro de diálogo](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout)de la utilidad, que son los cuadros de diálogo desvinculados que siguen los principios de diseño de diálogo estándar del escritorio de [Windows](/windows/desktop/uxguide/win-dialog-box). A medida que Visual Studio se mueve para actualizar su interfaz de usuario, algunos de los cuadros de diálogo más destacados tienen un nuevo diseño que los establece como experiencias de definición del producto. Estos [diseños de cuadro de diálogo](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) tienen una apariencia de los mismos.
@@ -103,11 +105,11 @@ La mayoría de los cuadros de diálogo de Visual Studio son el [diseño del cuad
 #### <a name="interior-command-buttons"></a><a name="BKMK_InteriorCommandButtons"></a> Botones del comando interior
  En cuadros de diálogo más complejos, un control interno podría tener sus propios botones relacionados, lo que podría afectar al lugar donde se encuentran los botones de confirmación del cuadro de diálogo.
 
-- Use una alineación vertical (columna) de los botones interiores **OK**cuando / la**cancelación** de la OK esté orientada horizontalmente en la esquina inferior derecha.
+- Use una alineación vertical (columna) de los botones interiores cuando / la **cancelación** de la OK esté orientada horizontalmente en la esquina inferior derecha.
 
-- Use una alineación horizontal (fila) de botones interiores cuando **OK** / la**cancelación** de la aceptar esté orientada verticalmente en la esquina superior derecha. Esta situación es menos frecuente.
+- Use una alineación horizontal (fila) de botones interiores cuando  / la **cancelación** de la aceptar esté orientada verticalmente en la esquina superior derecha. Esta situación es menos frecuente.
 
-- El tamaño del botón interior debe tener como destino el tamaño de botón estándar de 75x23 píxeles, que coincide con el tamaño de los botones de cancelación **correctos** / **Cancel** cuando sea posible. Si una etiqueta de botón hace que el botón supere el tamaño de botón estándar, los demás botones del conjunto deben alinearse con ese tamaño más amplio.
+- El tamaño del botón interior debe tener como destino el tamaño de botón estándar de 75x23 píxeles, que coincide con el tamaño de los botones de cancelación **correctos** /  cuando sea posible. Si una etiqueta de botón hace que el botón supere el tamaño de botón estándar, los demás botones del conjunto deben alinearse con ese tamaño más amplio.
 
   ![Botones horizontales Aceptar y Cancelar](../../extensibility/ux-guidelines/media/0801-f_horizokcan.png "0801-f_HorizOKCan")
 
@@ -154,7 +156,7 @@ La mayoría de los cuadros de diálogo de Visual Studio son el [diseño del cuad
 
  **Figura 08,01-k: colores de diálogo con la misma**
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Patrones de aplicaciones para Visual Studio](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md)
 - [Controles (Windows)](/windows/desktop/uxguide/controls)
 - [Cuadros de diálogo (Windows)](/windows/desktop/uxguide/win-dialog-box)

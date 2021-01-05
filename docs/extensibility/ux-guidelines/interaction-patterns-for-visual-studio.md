@@ -1,5 +1,7 @@
 ---
 title: Patrones de interacción para Visual Studio | Microsoft Docs
+description: Obtenga información sobre la biblioteca de patrones de interacción comunes que puede usar al compilar nuevas características para Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 05/13/2020
 ms.topic: conceptual
 ms.assetid: a3643792-b0df-481c-bc35-576f948e04cf
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5376c1edf2c87ece78d966bede05b60cc0b6bab
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: 1cd618b66eed900c2436704d40de5325c1205e85
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467653"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863485"
 ---
 # <a name="interaction-patterns-for-visual-studio"></a>Patrones de interacción para Visual Studio
 ## <a name="overview"></a>Información general

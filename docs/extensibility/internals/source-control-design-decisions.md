@@ -1,5 +1,7 @@
 ---
 title: Decisiones de diseño del control de código fuente | Microsoft Docs
+description: Obtenga información acerca de varias decisiones de diseño clave que se deben tener en cuenta para los proyectos al implementar el control de código fuente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c36bb2b50a72a52aeaeb7712f4ed711845b5e6d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98e84167bc9cbbcad41b897c2de69115c6827ca5
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705253"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875523"
 ---
 # <a name="source-control-design-decisions"></a>Decisiones de diseño del control de código fuente
 Se deben tener en cuenta las siguientes decisiones de diseño para los proyectos de al implementar el control de código fuente.

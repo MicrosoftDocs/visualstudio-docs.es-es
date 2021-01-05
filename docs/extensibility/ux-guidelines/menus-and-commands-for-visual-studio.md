@@ -1,5 +1,7 @@
 ---
 title: Menús y comandos para Visual Studio | Microsoft Docs
+description: Obtenga información sobre cómo las barras de comandos permiten la flexibilidad en la interfaz de usuario al crear nuevas características para Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0a1ed675-2bd1-4603-ba3a-f40dfb5cfb69
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1f22b7ac4377b600208c079b6af1eff7fc3cbfc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7abb0249efc1a8da5d7e65572777e192e72c25e7
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698382"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863536"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>Menús y comandos para Visual Studio
 ## <a name="command-usage"></a>Uso del comando
@@ -49,13 +51,13 @@ ms.locfileid: "80698382"
  Resulta útil colocar comandos en proximidad cerca del área del foco del usuario. Una manera de hacerlo es crear una barra de herramientas incrustada en la parte superior de la ventana de herramientas o del editor de documentos. Los comandos que se colocan en la barra de herramientas deben ser específicos de la región de contenido dentro de la ventana. No duplique los comandos compartidos en estas barras de herramientas. Por ejemplo, no coloque nunca un icono "guardar" dentro de una barra de herramientas incrustada.
 
 ### <a name="content-and-command-visibility"></a>Visibilidad de contenido y comandos
- Los comandos existen en los siguientes ámbitos: **entorno**, **jerarquía**y **documento**. Conozca cada ámbito para tener confianza en la ubicación de los comandos.
+ Los comandos existen en los siguientes ámbitos: **entorno**, **jerarquía** y **documento**. Conozca cada ámbito para tener confianza en la ubicación de los comandos.
 
- Los comandos del ámbito del **entorno** establecen el contexto principal y se comparten entre varios contextos. Modifican la visibilidad o organización de los documentos y las ventanas de herramientas. Entre los comandos del ámbito del entorno se **encuentran nuevo proyecto**, **conectar con el servidor**, **asociar proceso**, **cortar**, **copiar**, **pegar**, **Buscar**, **Opciones**, **personalizar**, **nueva ventana**y **Ver ayuda**.
+ Los comandos del ámbito del **entorno** establecen el contexto principal y se comparten entre varios contextos. Modifican la visibilidad o organización de los documentos y las ventanas de herramientas. Entre los comandos del ámbito del entorno se **encuentran nuevo proyecto**, **conectar con el servidor**, **asociar proceso**, **cortar**, **copiar**, **pegar**, **Buscar**, **Opciones**, **personalizar**, **nueva ventana** y **Ver ayuda**.
 
- Los comandos del ámbito de la **jerarquía** administran las jerarquías de Visual Studio, incluidos el **proyecto**, el **equipo**y los **datos**. Se relacionan con el subcontexto de un proyecto (por ejemplo, **depurar**, **compilar**, **probar**, **arquitectura**o **analizar**). Entre los comandos del ámbito de la jerarquía **están agregar nuevo elemento**, **nueva consulta**, **configuración del proyecto**, **Agregar nuevo origen de datos**, iniciar el Asistente de **rendimiento**y **nuevo diagrama**.
+ Los comandos del ámbito de la **jerarquía** administran las jerarquías de Visual Studio, incluidos el **proyecto**, el **equipo** y los **datos**. Se relacionan con el subcontexto de un proyecto (por ejemplo, **depurar**, **compilar**, **probar**, **arquitectura** o **analizar**). Entre los comandos del ámbito de la jerarquía **están agregar nuevo elemento**, **nueva consulta**, **configuración del proyecto**, **Agregar nuevo origen de datos**, iniciar el Asistente de **rendimiento** y **nuevo diagrama**.
 
- Los comandos del ámbito del **documento** actúan sobre el contenido de un documento, como código, diseño o una consulta de elementos de trabajo (WIQ). También actúan sobre la vista de una ventana de herramientas o son específicas de la ventana de herramientas. Los comandos de ámbito de documento también actúan sobre los objetos de archivo que son específicos de la jerarquía, como **quitar del proyecto**. Entre los comandos del ámbito del documento se incluyen **refactorizar > cambiar el nombre**, **crear una copia del elemento de trabajo**, **expandir todo**, **contraer todo**y **crear tarea de usuario**.
+ Los comandos del ámbito del **documento** actúan sobre el contenido de un documento, como código, diseño o una consulta de elementos de trabajo (WIQ). También actúan sobre la vista de una ventana de herramientas o son específicas de la ventana de herramientas. Los comandos de ámbito de documento también actúan sobre los objetos de archivo que son específicos de la jerarquía, como **quitar del proyecto**. Entre los comandos del ámbito del documento se incluyen **refactorizar > cambiar el nombre**, **crear una copia del elemento de trabajo**, **expandir todo**, **contraer todo** y **crear tarea de usuario**.
 
 ### <a name="command-placement-decisions"></a>Decisiones de selección de ubicación de comandos
  Una vez que haya decidido crear un comando, deberá determinar su ubicación adecuada y si desea crear un método abreviado de teclado. Siga esta ruta de acceso de decisión para establecer dónde colocar el comando:
@@ -103,7 +105,7 @@ ms.locfileid: "80698382"
 
 - Prueba
 
-- Architecture
+- Arquitectura
 
 - Analizar
 

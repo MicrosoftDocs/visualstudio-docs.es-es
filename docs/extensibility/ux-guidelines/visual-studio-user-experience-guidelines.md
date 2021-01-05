@@ -1,5 +1,7 @@
 ---
 title: Instrucciones para la experiencia del usuario de Visual Studio | Microsoft Docs
+description: Las instrucciones para la experiencia del usuario de Visual Studio contienen modelos de usuario y patrones de interacción comunes para ayudar a crear experiencias de usuario coherentes para las nuevas características.
+ms.custom: SEO-VS-2020
 ms.date: 10/05/2018
 ms.topic: conceptual
 ms.assetid: 3abbe495-cbbc-4982-a809-38bda34553a7
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 994d0029e7dfdc3559adae0e1c022acd38d7f5a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c8200d5d0dbb18240f67214abecca4d066ce6270
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698205"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863947"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Instrucciones para la experiencia de usuario de Visual Studio
 Siga las instrucciones de la experiencia del usuario de Visual Studio si diseña nuevas características para Visual Studio. Estas instrucciones contienen información sobre los modelos de usuario y patrones de interacción comunes para que los diseñadores de nuevas interfaces de usuario (UI) puedan crear experiencias de usuario que sean perfectas y coherentes en el entorno de desarrollo.

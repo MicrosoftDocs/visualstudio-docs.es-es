@@ -1,5 +1,7 @@
 ---
 title: Registrar VSPackages | Microsoft Docs
+description: Un archivo. pkgdef contiene información que, de lo contrario, se agregaría al registro del sistema. Obtenga información sobre cómo Visual Studio usa los archivos. pkgdef para describir o localizar un VSPackage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b40793a5ab317b6a467e55df13302f19cec82640
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ae4d7ae70766b7e0d2d8eedb5d79d97159839146
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705744"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875120"
 ---
 # <a name="registering-vspackages"></a>Registro de VSPackages
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] se basa en los archivos. pkgdef para describir y buscar un VSPackage. Un archivo. pkgdef contiene toda la información de registro que, de lo contrario, se agregaría al registro del sistema. Los VSPackages administrados se registran agregando atributos al código fuente y, a continuación, ejecutando la [utilidad CreatePkgDef](../../extensibility/internals/createpkgdef-utility.md) en el ensamblado resultante para generar un archivo. pkgdef.

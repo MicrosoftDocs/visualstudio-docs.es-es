@@ -1,5 +1,7 @@
 ---
 title: Registrando controladores de comandos de ensamblado de interoperabilidad | Microsoft Docs
+description: Obtenga información sobre el contrato de comandos básico que utilizan todos los paquetes de comandos que implementan comandos mediante ensamblados de interoperabilidad.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dfff8e4e6cc8ba3974ec70e6466b25e9ff7432e4
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: b45fe06722b190569e067dccd325ba4acac4fb0f
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012053"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875177"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Registro de controladores de comandos de ensamblado de interoperabilidad
 Un VSPackage debe registrarse con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para que el entorno de desarrollo integrado (IDE) enrute sus comandos correctamente.
@@ -28,10 +30,10 @@ Un VSPackage debe registrarse con [!INCLUDE[vsprvs](../../code-quality/includes/
 - Los recursos de [referencia de formato de tabla de comandos](/previous-versions/bb164647(v=vs.100)) se encuentran en archivos dll satélite no administrados.
 
 ## <a name="command-handler-registration-of-a-vspackage"></a>Registro del controlador de comandos de un VSPackage
- Un VSPackage que actúa como controlador para comandos basados en la interfaz de usuario (UI) requiere una entrada del registro denominada después del VSPackage `GUID` . Esta entrada del registro especifica la ubicación del archivo de recursos de la interfaz de usuario del VSPackage y el recurso de menú dentro de dicho archivo. La propia entrada del registro se encuentra en HKEY_LOCAL_MACHINE \Software\Microsoft\VisualStudio \\ *\<Version>* \Menus, donde *\<Version>* es la versión de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , por ejemplo 9,0.
+ Un VSPackage que actúa como controlador para comandos basados en la interfaz de usuario (UI) requiere una entrada del registro denominada después del VSPackage `GUID` . Esta entrada del registro especifica la ubicación del archivo de recursos de la interfaz de usuario del VSPackage y el recurso de menú dentro de dicho archivo. La propia entrada del registro se encuentra en HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\ *\<Version>* \Menus, donde *\<Version>* es la versión de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , por ejemplo 9,0.
 
 > [!NOTE]
-> La ruta de acceso raíz de HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio \\ *\<Version>* se puede invalidar con una raíz alternativa cuando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] se inicializa el shell. Para obtener más información acerca de la ruta de acceso raíz, consulte [Installing VSPackages With Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md).
+> La ruta de acceso raíz de HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<Version>* se puede invalidar con una raíz alternativa cuando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] se inicializa el shell. Para obtener más información acerca de la ruta de acceso raíz, consulte [Installing VSPackages With Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md).
 
 ### <a name="the-ctmenu-resource-registry-entry"></a>La entrada del registro de recursos CTMENU
  La estructura de la entrada del registro es:
@@ -66,6 +68,6 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\9.0Exp\
     {1b027a40-8f43-11d0-8d11-00a0c91bc942} = , 10211, 3
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Cómo VSPackages agrega elementos de la interfaz de usuario](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Comandos y menús que usan ensamblados de interoperabilidad](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)

@@ -1,5 +1,7 @@
 ---
 title: POPDIRLISTFUNC | Microsoft Docs
+description: Obtenga información sobre la función de devolución de llamada POPDIRLISTFUNC, que se pasa a los directorios de actualización para averiguar cuáles están bajo control de código fuente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52a0c16af0e142bda8527c5244a22e0830ced9e0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 805d7a5c9250bc511692c497bc9083852dad2301
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702079"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863443"
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
 Se trata de una función de devolución de llamada proporcionada a la función [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) para actualizar una colección de directorios y (opcionalmente) nombres de archivo para averiguar cuáles están bajo control de código fuente.
@@ -50,13 +52,13 @@ de Ruta de acceso local completa a un directorio o nombre de archivo que se encu
 ## <a name="return-value"></a>Valor devuelto
  El IDE devuelve un código de error adecuado:
 
-|Value|Descripción|
+|Valor|Descripción|
 |-----------|-----------------|
 |SCC_OK|Continúe el procesamiento.|
 |SCC_I_OPERATIONCANCELED|Detiene el procesamiento.|
 |SCC_E_xxx|Cualquier error de control de código fuente adecuado debe detener el procesamiento.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
  Si el `fOptions` parámetro de la `SccPopulateDirList` función contiene la `SCC_PDL_INCLUDEFILES` marca, la lista posiblemente contendrá nombres de archivo y nombres de directorio.
 
 ## <a name="see-also"></a>Consulte también

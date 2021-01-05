@@ -1,5 +1,7 @@
 ---
 title: Notificaciones y progreso de Visual Studio | Microsoft Docs
+description: Obtenga información acerca de varias maneras de informar a los usuarios de lo que ocurre en Visual Studio con respecto a sus tareas de desarrollo de software.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f0ef65e9-0f1f-45f4-9f25-6e2398691168
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f6a7ddd5d1a5a7257617b03098722e1341017b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 56acfd96f8d9be575f6e13c727a294f28301bef4
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699880"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863785"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Notificaciones y progreso para Visual Studio
 ## <a name="notification-systems"></a><a name="BKMK_NotificationSystems"></a> Sistemas de notificación
@@ -174,16 +176,16 @@ ms.locfileid: "80699880"
 #### <a name="progress-bars"></a>Barras de progreso
 
 ##### <a name="indeterminate"></a>Determina
- ![Barra de progreso indeterminado](../../extensibility/ux-guidelines/media/0901-04_indeterminate.png "0901-04_Indeterminate")
+ ![Barra de progreso indeterminada](../../extensibility/ux-guidelines/media/0901-04_indeterminate.png "0901-04_Indeterminate")
 
- **Barra de progreso indeterminado**
+ **Barra de progreso indeterminada**
 
  "Indeterminado" significa que no se puede determinar el progreso general de una operación o proceso. Use barras de progreso indeterminadas para las operaciones que requieren un período de tiempo ilimitado o que tengan acceso a un número desconocido de objetos. Use una descripción textual para acompañar lo que está ocurriendo. Utilice los tiempos de espera para proporcionar límites a las operaciones basadas en el tiempo. Las barras de progreso indeterminadas usan animaciones para mostrar que se está realizando el progreso, pero no proporcionan ninguna otra información. No elija una barra de progreso indeterminada basada únicamente en la falta de precisión.
 
 ##### <a name="determinate"></a>Determinada
- ![Barra de progreso determinada](../../extensibility/ux-guidelines/media/0901-05_determinate.png "0901-05_Determinate")
+ ![Barra de progreso de desterminación](../../extensibility/ux-guidelines/media/0901-05_determinate.png "0901-05_Determinate")
 
- **Barra de progreso determinada**
+ **Barra de progreso de desterminación**
 
  "Determinate" significa que una operación o proceso requiere una cantidad limitada de tiempo, incluso si esa cantidad de tiempo no se puede predecir con precisión. Indique claramente la finalización. No permita que una barra de progreso vaya al 100 por ciento, a menos que la operación se haya completado. La animación de la barra de progreso de determinaciones se mueve de izquierda a derecha de 0 a 100%.
 
@@ -286,7 +288,7 @@ ms.locfileid: "80699880"
 ### <a name="overview"></a>Información general
  Las barras al usuario un indicador cercano a su punto de atención y el uso del control de barra de información compartido garantiza la coherencia en el aspecto visual y la interacción.
 
- ![Barra de información](../../extensibility/ux-guidelines/media/0904-01_infobar.png "0904-01_Infobar")
+ ![Barra](../../extensibility/ux-guidelines/media/0904-01_infobar.png "0904-01_Infobar")
 
  **Las barras en Visual Studio**
 
@@ -409,7 +411,7 @@ private bool TryCreateInfoBarUI(IVsInfoBar infoBar, out IVsInfoBarUIElement uiEl
 }
 ```
 
-### <a name="placement"></a>Ubicación
+### <a name="placement"></a>Selección de ubicación
  Las barras se puede mostrar en una o varias de las siguientes ubicaciones:
 
 - Ventanas de herramientas

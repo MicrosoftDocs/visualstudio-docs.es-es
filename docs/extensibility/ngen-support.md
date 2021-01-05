@@ -1,5 +1,7 @@
 ---
 title: Compatibilidad con Ngen en VSIX V3 | Microsoft Docs
+description: Aprenda a habilitar el generador de imágenes nativas, que es una herramienta que los desarrolladores de extensiones pueden usar para mejorar el rendimiento de las aplicaciones administradas.
+ms.custom: SEO-VS-2020
 ms.date: 11/09/2016
 ms.topic: conceptual
 ms.assetid: 1472e884-c74e-4c23-9d4a-6d8bdcac043b
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb75b9256ca937106235fa7a7d66d9cec71c9c60
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 064176a0a28e3621e796bf60ede552f9cda155b0
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702399"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97864037"
 ---
 # <a name="ngen-support-in-vsix-v3"></a>Compatibilidad con Ngen en VSIX v3
 

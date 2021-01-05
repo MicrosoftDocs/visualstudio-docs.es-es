@@ -1,5 +1,7 @@
 ---
 title: Guardar un documento estándar | Microsoft Docs
+description: Obtenga información sobre el proceso que se produce para un documento estándar para un tipo de proyecto que se agrega al IDE de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,15 +14,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8d50a9e62e69f925564717020a51f88620f5f3b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 81c79ece83bc8aaaf7ca4dd28642de5973ad94c1
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705548"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875671"
 ---
 # <a name="saving-a-standard-document"></a>Guardado de un documento estándar
-El entorno controla los comandos guardar, guardar como y guardar todo. Cuando un usuario selecciona **Guardar**, **Guardar como**o **guardar todo** en el menú **archivo** o cierra la solución, lo que da lugar a **guardar todo**, se produce el siguiente proceso.
+El entorno controla los comandos guardar, guardar como y guardar todo. Cuando un usuario selecciona **Guardar**, **Guardar como** o **guardar todo** en el menú **archivo** o cierra la solución, lo que da lugar a **guardar todo**, se produce el siguiente proceso.
 
  ![Editor estándar](../../extensibility/internals/media/public.gif "Público") Guardar, guardar como y guardar todo el control de comandos para un editor estándar
 

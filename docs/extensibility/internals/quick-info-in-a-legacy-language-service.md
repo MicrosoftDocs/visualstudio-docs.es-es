@@ -1,5 +1,7 @@
 ---
 title: Información rápida en un servicio de lenguaje heredado | Microsoft Docs
+description: Obtenga información sobre la compatibilidad con la operación de información rápida de IntelliSense para mostrar información sobre un identificador.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d070c607313b406f036a5b6f071eaa371070408
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 255022c2722104d3790d1c417eee644730ddc1e8
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705940"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875081"
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>Información rápida en un servicio de lenguaje heredado
 La información rápida de IntelliSense muestra información sobre un identificador en el origen cuando el usuario coloca el símbolo de intercalación en el identificador y selecciona **información rápida** en el menú **IntelliSense** o mantiene el cursor del mouse sobre el identificador. Esto hace que aparezca una información sobre herramientas con información sobre el identificador. Esta información normalmente se compone del tipo de identificador. Cuando el motor de depuración está activo, esta información puede incluir el valor actual. El motor de depuración proporciona valores de expresión, mientras que el servicio de lenguaje solo administra identificadores.
