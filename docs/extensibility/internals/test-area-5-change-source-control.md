@@ -1,5 +1,7 @@
 ---
 title: 'Área de prueba 5: cambiar control de código fuente | Microsoft Docs'
+description: Este área de prueba del complemento de control de código fuente cubre el cambio del control de código fuente mediante el comando Cambiar control de código fuente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1c0df31fbecd532e6a5f7f317730cd995cd8225
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c4b0f33f0c898d4b9992acad6ed4035e350df2b
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704528"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876277"
 ---
 # <a name="test-area-5-change-source-control"></a>Área de prueba 5: Cambio del control de código fuente
 Este área de prueba del complemento de control de código fuente cubre el cambio del control de código fuente mediante el comando **Cambiar control de código fuente** .
@@ -43,7 +45,7 @@ Este área de prueba del complemento de control de código fuente cubre el cambi
 ## <a name="test-cases"></a>Casos de prueba
  Los siguientes son casos de prueba específicos para el área de prueba del comando **Cambiar control de código fuente** .
 
-### <a name="case-5a-bind"></a>Caso 5A: enlace
+### <a name="case-5a-bind"></a>Caso 5a: Bind
  Bind permite al usuario agregar información de control de código fuente a los proyectos y soluciones seleccionados. Normalmente, se pide al usuario que identifique un proyecto en el control de código fuente al que se van a agregar. El usuario no puede crear un nuevo proyecto en el control de código fuente como parte de esta operación (contraste con agregar a control de código fuente).
 
 | Acción | Pasos de prueba | Resultados esperados que se van a comprobar |
@@ -54,7 +56,7 @@ Este área de prueba del complemento de control de código fuente cubre el cambi
 | Solución de enlace que nunca estaba bajo control de código fuente | 1. cree una carpeta vacía en el control de código fuente.<br />2. cree un proyecto de cliente.<br />3. abrir el cuadro de diálogo **Cambiar control de código fuente** (**archivo**, **control de código fuente**, **Cambiar control de código fuente**).<br />4. enlazar la solución a una ubicación vacía en el control de código fuente.<br />5. Haga clic en **Aceptar** para cerrar el cuadro de diálogo **Cambiar control de código fuente** .<br />6. Haga clic en **continuar con estos enlaces** en el cuadro de diálogo de confirmación.<br />7. Haga clic en **Aceptar** en el cuadro de diálogo de advertencia, si aparece. | La solución se agrega al control de código fuente.<br /><br /> La solución y el proyecto están desprotegidos. |
 | Cancelar enlace | 1. cree un proyecto.<br />2. Agregue la solución al control de código fuente.<br />3. Abra el cuadro de diálogo Cambiar control de código fuente.<br />4. Desenlazar todo.<br />5. Haga clic en el botón **Aceptar** para cerrar el cuadro de diálogo. Si este paso se realiza correctamente, continúe con el paso siguiente.<br />6. Vuelva a abrir el cuadro de diálogo **Cambiar control de código fuente** .<br />7. enlace a una ubicación no relacionada.<br />8. Haga clic en **Cancelar**. | `Result from Step 5:`<br /><br /> La solución ya no está bajo control de código fuente<br /><br /> `Result from Step 8:`<br /><br /> La solución todavía no está bajo control de código fuente. |
 
-### <a name="case-5b-unbind"></a>Caso 5B: desenlazar
+### <a name="case-5b-unbind"></a>Caso 5b: Unbind
  Unbind quita la información de control de código fuente de los proyectos y su solución. Los proyectos y la solución afectados se basan en una combinación de selección de usuario y en cómo se agregaron los elementos al control de código fuente.
 
 |Acción|Pasos de prueba|Resultados esperados que se van a comprobar|
@@ -62,7 +64,7 @@ Este área de prueba del complemento de control de código fuente cubre el cambi
 |Desenlazar la solución que contiene un sistema de archivos o un proyecto Web de IIS local y un proyecto de cliente|1. cree un sistema de archivos o un proyecto Web de IIS local.<br />2. Agregue la solución al control de código fuente.<br />3. Agregue un nuevo proyecto de cliente a la solución.<br />4. acepte la desprotección de la solución si se le solicita.<br />5. Abra el cuadro de diálogo **Cambiar control de código fuente** .<br />6. Haga clic en **Desenlazar**.<br />7. Haga clic en **Aceptar** para cerrar el cuadro de diálogo.<br />8. intente desproteger la solución, el proyecto, los elementos de la solución, los elementos de proyecto.|La solución y los proyectos no están bajo control de código fuente.<br /><br /> Los comandos de menú de control de código fuente no aparecen.|
 |Cancelar desenlace|1. cree un proyecto.<br />2. Agregue la solución al control de código fuente.<br />3. Abra el cuadro de diálogo **Cambiar control de código fuente** .<br />4. Haga clic en **Desenlazar todo**.<br />5. Haga clic en **Cancelar**.|La solución está bajo control de código fuente.|
 
-### <a name="case-5c-rebind"></a>Caso 5C: reenlace
+### <a name="case-5c-rebind"></a>Caso 5c: Reenlace
  Reenlazar es simplemente una combinación de desenlace y enlace: el proceso de volver a enlazar un proyecto o una solución que anteriormente estaba bajo control de código fuente y era independiente.
 
 |Acción|Pasos de prueba|Resultados esperados que se van a comprobar|
@@ -72,5 +74,5 @@ Este área de prueba del complemento de control de código fuente cubre el cambi
 |Reenlazar solución solo sin cerrar **Cambiar control de código fuente** (cuadro de diálogo)|1. cree un proyecto.<br />2. Agregue solo la solución al control de código fuente mediante (**archivo**, **control de código fuente**, **Agregar proyectos seleccionados al control de código fuente**.<br />3. Abra el cuadro de diálogo **Cambiar control de código fuente** .<br />4. Desenlazar solo la solución (no cierre el cuadro de diálogo **Cambiar control de código fuente** ).<br />5. enlazar solo la solución.<br />6. Haga clic en **Aceptar** para cerrar el cuadro de diálogo.<br />7. Consulte los elementos de la solución y la solución (si los hay).|La solución permanece controlada.<br /><br /> El proyecto permanece sin control.|
 |Reenlazar solución/proyecto solo cuando está en el mismo directorio|1. cree un proyecto.<br />2. Agregue solo el proyecto al control de código fuente mediante (**archivo**, **control de código fuente**, **Agregar proyectos seleccionados al control de código fuente**.<br />3. Cierre la solución.<br />4. cree una nueva solución con al menos dos proyectos.<br />5. agregar la solución al control de código fuente.<br />6. Agregue el proyecto creado en el paso 1 desde el control de código fuente.<br />7. acepte la desprotección de la solución si se le solicita.<br />8. Proteja toda la solución.<br />9. Abra el cuadro de diálogo **Cambiar control de código fuente** .<br />10. Seleccione el proyecto agregado (del paso 6) y haga clic en **Desenlazar**.<br />11. Haga clic en **Aceptar** para cerrar el cuadro de diálogo.<br />12. acepte la desprotección si se le solicita.<br />13. Vuelva a abrir el cuadro de diálogo **Cambiar control de código fuente** .<br />14. Seleccione el proyecto agregado (del paso 6) y haga clic en **enlazar**.<br />15. Seleccione la ubicación original.|La solución y los proyectos permanecen controlados.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Guía de pruebas para los complementos de control de código fuente](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

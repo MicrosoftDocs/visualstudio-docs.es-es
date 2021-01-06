@@ -1,5 +1,7 @@
 ---
 title: Opciones de usuario de la solución (. Suo) | Microsoft Docs
+description: Obtenga información sobre el archivo de opciones de usuario de la solución (. suo), que contiene opciones de solución por usuario en un archivo de almacenamiento estructurado almacenado en formato binario.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9469663d3ac258e1c568778894d8584c68c13632
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7b2a5386e8329bb3ca51ca88a2449e223bb8d73d
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705314"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876759"
 ---
 # <a name="solution-user-options-suo-file"></a>Archivo de opciones de usuario de la solución (.Suo)
 El archivo de opciones de usuario de la solución (. suo) contiene opciones de solución por usuario. Este archivo no se debe proteger en el control de código fuente.
@@ -36,6 +38,6 @@ El archivo de opciones de usuario de la solución (. suo) contiene opciones de s
 
  Estos dos métodos, `SaveUserOptions` y `WriteUserOptions` , se llaman de forma recursiva para cada flujo de información que se va a guardar en el archivo. suo, pasando el puntero a `IVsSolutionPersistence` . Se llaman de forma recursiva para permitir la escritura de varias secuencias en el archivo. suo. De este modo, la información de usuario se conserva con la solución y se garantiza que estará ahí la próxima vez que se abra la solución.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>
 - [Soluciones](../../extensibility/internals/solutions-overview.md)

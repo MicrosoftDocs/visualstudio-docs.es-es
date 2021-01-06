@@ -1,5 +1,7 @@
 ---
 title: Contexto del proyecto | Microsoft Docs
+description: Obtenga información sobre cómo el IDE de Visual Studio usa el contexto del proyecto para determinar cómo realizar operaciones cuando el usuario agrega o trabaja con proyectos y elementos de proyecto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51e411f0bca361f96cdffcfd89498908fd21d441
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc4234481023592595de2df482d5ff6c2227a95e
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706594"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877668"
 ---
 # <a name="project-context"></a>Contexto del proyecto
 Cuando el usuario agrega o trabaja con proyectos y elementos de proyecto, el IDE usa la noción de contexto del proyecto para determinar cómo se deben realizar varias operaciones.
@@ -26,6 +28,6 @@ Cuando el usuario agrega o trabaja con proyectos y elementos de proyecto, el IDE
 
  En otras ocasiones, no se especifica explícitamente el contexto del proyecto de un elemento. Por ejemplo, el contexto de un elemento no está disponible cuando el usuario abre un archivo seleccionando el comando **Abrir archivo existente** en el menú **archivo** , cuando el depurador funciona en un archivo o cuando el usuario hace clic en el comando **Buscar en archivos** del cuadro de diálogo **Buscar y reemplazar** . Para controlar estas situaciones, el IDE llama <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument> a para administrar el proceso de búsqueda del mejor proyecto para abrir un documento.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Prioridad del proyecto](../../extensibility/internals/project-priority.md)
 - [Adición de plantillas de proyecto y de elementos de proyecto](../../extensibility/internals/adding-project-and-project-item-templates.md)

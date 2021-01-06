@@ -1,5 +1,7 @@
 ---
 title: Características del VSPackage de control de código fuente | Microsoft Docs
+description: Obtenga información sobre las características de un VSPackage de control de código fuente, incluidos los detalles de registro y selección, y sobre algunas de las características principales relacionadas con el control de código fuente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a01b9d8fbf5f8d0645b5245d21b05aba9e7dacea
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8dd887488adc5813ad51c9fa2a25648e25ab4876
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705014"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876225"
 ---
 # <a name="source-control-vspackage-features"></a>Características de VSPackage de control de código fuente
-En esta sección se describen las distintas características de un VSPackage de control de código fuente. Describe los detalles de registro y selección para este VSPackage y explica tres de las características principales relacionadas con el control de código fuente: el control de los eventos de consulta y modificación de consultas (QEQS), el reemplazo de glifos y la interfaz de usuario personalizada para las funciones de control de código fuente.
+En esta sección se describen las distintas características de un VSPackage de control de código fuente. Se describen los detalles de registro y selección para este VSPackage y se describen tres de las características principales relacionadas con el control de código fuente: el control de eventos Query-Edit Query-Save (QEQS), el reemplazo de glifos y la interfaz de usuario personalizada (UI) para las funciones de control de código fuente.
 
 ## <a name="in-this-section"></a>En esta sección
 - [Registro y selección](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)
@@ -27,7 +29,7 @@ En esta sección se describen las distintas características de un VSPackage de 
 
 - [Edición y guardado de consultas](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)
 
- Explica el rol de los eventos de guardar consulta-Edit y cómo los controla el VSPackage de control de código fuente.
+ Explica el rol de los eventos de Query-Save de Query-Edit y cómo los controla el VSPackage de control de código fuente.
 
 - [Control de glifos](../../extensibility/internals/glyph-control-source-control-vspackage.md)
 

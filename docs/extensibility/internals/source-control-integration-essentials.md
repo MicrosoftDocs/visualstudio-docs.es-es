@@ -1,5 +1,7 @@
 ---
 title: Aspectos básicos de la integración del control de código fuente | Microsoft Docs
+description: 'Obtenga información sobre los dos tipos de integración de control de código fuente que admite Visual Studio: un complemento de control de código fuente y una solución de control de código fuente basada en VSPackage.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e56658d644720f1563d71d3d08bf35268119112f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a4dd5186b20dfac4ad5a027e4519700ff8ac1f77
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705231"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876043"
 ---
 # <a name="source-control-integration-essentials"></a>Conceptos básicos de la integración del control de código fuente
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] admite dos tipos de integración de control de código fuente: un complemento de control de código fuente que proporciona la funcionalidad básica y se crea mediante la API del complemento de control de código fuente (anteriormente conocida como la API MSSCCI) y una solución de integración de control de código fuente basada en VSPackage que proporciona una funcionalidad más sólida.
@@ -50,7 +52,7 @@ ms.locfileid: "80705231"
 
    Para obtener más información, vea [crear un VSPackage de control de código fuente](../../extensibility/internals/creating-a-source-control-vspackage.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Información general](../../extensibility/internals/source-control-integration-overview.md)
 - [Creación de un complemento de control de código fuente](../../extensibility/internals/creating-a-source-control-plug-in.md)
 - [Creación de un VSPackage de control de código fuente](../../extensibility/internals/creating-a-source-control-vspackage.md)

@@ -1,5 +1,7 @@
 ---
 title: Registro y selección (VSPackage de control de código fuente) | Microsoft Docs
+description: Obtenga información sobre cómo registrar un VSPackage de control de código fuente con Visual Studio y cómo seleccionar qué paquete cargar desde varios paquetes de control de código fuente registrados.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 973eb19916a737dfa775fe79ee62cb3d11fe0123
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76f0bd737eff52706cf73c9a1105b79e08c556f0
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705717"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877369"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Registro y selección (VSPackage de control de código fuente)
 Un VSPackage de control de código fuente debe estar registrado para exponerlo en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Si se registra más de un VSPackage de control de código fuente, el usuario puede seleccionar qué VSPackage cargar en los momentos adecuados. Vea los [VSPackages](../../extensibility/internals/vspackages.md) para obtener más detalles sobre los VSPackages y cómo registrarlos.
@@ -24,7 +26,7 @@ Un VSPackage de control de código fuente debe estar registrado para exponerlo e
 ## <a name="registering-a-source-control-package"></a>Registrar un paquete de control de código fuente
  El paquete de control de código fuente se registra para que el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] entorno pueda encontrarlo y consultar sus características admitidas. Esto es conforme a un esquema de carga retrasada en el que se crea una instancia de un paquete solo cuando sus características o comandos son necesarios o se solicitan explícitamente.
 
- Los VSPackages colocan información en una clave del registro específica de la versión, HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio \\ *X. Y*, donde *X* es el número de versión principal e *y* es el número de versión secundaria. Esta práctica proporciona la capacidad de admitir la instalación en paralelo de varias versiones de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
+ Los VSPackages colocan información en una clave del registro específica de la versión, HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *x. Y*, donde *X* es  el número de versión principal e y es el número de versión secundaria. Esta práctica proporciona la capacidad de admitir la instalación en paralelo de varias versiones de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
  La [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interfaz de usuario (UI) admite la selección entre varios complementos de control de código fuente instalados (a través del paquete del adaptador de control de código fuente), así como VSPackages de control de código fuente. Solo puede haber un complemento de control de código fuente activo o VSPackage a la vez. Sin embargo, tal y como se describe a continuación, el IDE permite cambiar entre complementos de control de código fuente y VSPackages a través de un mecanismo automático de intercambio de paquetes basado en soluciones. Hay algunos requisitos en la parte del VSPackage de control de código fuente para habilitar este mecanismo de selección.
 
@@ -79,7 +81,7 @@ Un VSPackage de control de código fuente debe estar registrado para exponerlo e
 
   A diferencia de las versiones anteriores de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , un reinicio de IDE ya no es la única manera de cambiar los VSPackages de control de código fuente. La selección del VSPackage es automática. El cambio de paquetes requiere privilegios de usuario de Windows (no administrador ni usuario avanzado).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence>
 - [Características](../../extensibility/internals/source-control-vspackage-features.md)
 - [Creación de un complemento de control de código fuente](../../extensibility/internals/creating-a-source-control-plug-in.md)

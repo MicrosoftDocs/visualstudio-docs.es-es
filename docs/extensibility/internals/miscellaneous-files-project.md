@@ -1,5 +1,7 @@
 ---
 title: Proyecto de archivos varios | Microsoft Docs
+description: Obtenga información sobre los dos tipos de editores que se pueden usar para abrir archivos en un proyecto de Visual Studio y el rol del proyecto para determinar qué editor usar.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,19 +15,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95cc1312fb7b381e1e20df834698480295fadcc8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a963b4d452a5d8ea9e0556b232f488e93dc0a29c
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707097"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876784"
 ---
 # <a name="miscellaneous-files-project"></a>Proyecto de archivos varios
 Cuando un usuario abre elementos de proyecto, el IDE asigna al proyecto archivos varios todos los elementos que no son miembros de ningún proyecto de una solución.
 
  Los proyectos desempeñan un papel importante a la hora de determinar qué editor se usa cuando un usuario abre un elemento de proyecto. Un proyecto se puede diseñar para abrir determinados archivos mediante un editor específico del proyecto o un editor estándar.
 
- Normalmente, un editor específico del proyecto requiere que el usuario tenga un conocimiento especial o use interfaces especiales del proyecto. Para obtener más información, consulte [Cómo: abrir editores específicos del proyecto](../../extensibility/how-to-open-project-specific-editors.md).
+ Normalmente, un editor específico del proyecto requiere que el usuario tenga un conocimiento especial o use interfaces especiales del proyecto. Para obtener más información, consulte [Cómo: abrir editores de Project-Specific](../../extensibility/how-to-open-project-specific-editors.md).
 
  Un editor estándar puede abrir cualquier archivo de una extensión específica en cualquier proyecto. El usuario puede personalizar algunos editores estándar, como el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Editor de texto, para los proyectos pero conserva su carácter público. Los editores estándar se crean mediante el <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> método.
 
@@ -35,7 +37,7 @@ Cuando un usuario abre elementos de proyecto, el IDE asigna al proyecto archivos
 
  El proyecto archivos varios no requiere que el usuario lo cree explícitamente con el cuadro de diálogo **nuevo proyecto** . Además, el proyecto archivos varios no administra de forma permanente una lista de miembros del proyecto. Usa una característica opcional para grabar una lista de archivos usados más recientemente para cada usuario.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument>
 - <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>

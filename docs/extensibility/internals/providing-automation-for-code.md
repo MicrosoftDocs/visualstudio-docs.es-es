@@ -1,5 +1,7 @@
 ---
 title: Proporcionar automatización para código | Microsoft Docs
+description: Obtenga información sobre la implementación de un modelo de código, que requiere la implementación de interfaces determinadas por la estructura de datos interna.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd13b7db2065069ff1540dbfc921570c2b230b8a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dd8d0745ae971f4039ffccf3431614325236e63f
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705992"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875861"
 ---
 # <a name="providing-automation-for-code"></a>Provisión de automatización para código
 No es necesario crear un modelo de automatización para el código. El SDK de entorno no proporciona un ejemplo para hacerlo. Para obtener información sobre los modelos de código, vea el <xref:EnvDTE.CodeModel> objeto.
@@ -32,5 +34,5 @@ No es necesario crear un modelo de automatización para el código. El SDK de en
 
  Si desea agregar características, como métodos o propiedades, que no están disponibles desde las `CodeModel` interfaces estándar y `FileCodeModel` , cree su propia interfaz que herede de la norma. Asegúrese de documentarlo con el sistema del proyecto para que los usuarios finales sepan buscarlo. Se devuelve la interfaz estándar, pero el usuario puede llamar al `QueryInterface` método o convertir a la interfaz si se sabe que existe.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Información general del modelo de automatización](../../extensibility/internals/automation-model-overview.md)

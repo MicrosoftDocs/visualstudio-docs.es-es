@@ -1,5 +1,7 @@
 ---
 title: Áreas de trabajo en Visual Studio | Microsoft Docs
+description: Obtenga información sobre cómo Visual Studio usa un área de trabajo para representar una colección de archivos en la carpeta abierta, incluidos los proveedores y servicios del área de trabajo.
+ms.custom: SEO-VS-2020
 ms.date: 02/21/2018
 ms.topic: conceptual
 author: vukelich
@@ -7,12 +9,12 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 011781b434c4d005e473c5f97c60a9269dc5d034
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1ed660a5f52aba548d087b28f7caea4d1966fe45
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62952768"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876953"
 ---
 # <a name="workspaces"></a>Áreas de trabajo
 
@@ -76,7 +78,7 @@ El resultado es una instancia de <xref:Microsoft.VisualStudio.Workspace.Settings
 }
 ```
 
-Suponiendo que esta configuración se encontraba en el _VSWorkspaceSettings.js_de un usuario, se puede tener acceso a los datos de la siguiente manera:
+Suponiendo que esta configuración se encontraba en el _VSWorkspaceSettings.js_ de un usuario, se puede tener acceso a los datos de la siguiente manera:
 
 ```csharp
 using System.Collections.Generic;
@@ -169,7 +171,7 @@ private static string MakeRootedUnderWorkingFolder(IWorkspace workspace, string 
 
 Los paquetes cargados pueden implementar `IVsSolutionEvents7` e invocar `IVsSolution.AdviseSolutionEvents` . Incluye eventos al abrir y cerrar una carpeta en Visual Studio.
 
-Un contexto de la interfaz de usuario se puede usar para cargar automáticamente el paquete. el valor es `4646B819-1AE0-4E79-97F4-8A8176FDD664`.
+Un contexto de la interfaz de usuario se puede usar para cargar automáticamente el paquete. El valor es `4646B819-1AE0-4E79-97F4-8A8176FDD664`.
 
 ## <a name="troubleshooting"></a>Solución de problemas
 
@@ -179,13 +181,13 @@ La extensibilidad del área de trabajo está basada mucho en MEF y los errores d
 
 ::: moniker range="vs-2017"
 
-Los detalles del error se pueden encontrar en _%localappdata%\microsoft\visualstudio\15.0_id \componentmodelcache\microsoft.VisualStudio.default.err_. Resuelva los errores de los tipos implementados por la extensión.
+Los detalles del error se pueden encontrar en _%localappdata%\microsoft\visualstudio\ 15.0_Id \componentmodelcache\microsoft.VisualStudio.default.err_. Resuelva los errores de los tipos implementados por la extensión.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Los detalles del error se pueden encontrar en _%localappdata%\microsoft\visualstudio\16.0_id \componentmodelcache\microsoft.VisualStudio.default.err_. Resuelva los errores de los tipos implementados por la extensión.
+Los detalles del error se pueden encontrar en _%localappdata%\microsoft\visualstudio\ 16.0_Id \componentmodelcache\microsoft.VisualStudio.default.err_. Resuelva los errores de los tipos implementados por la extensión.
 
 ::: moniker-end
 

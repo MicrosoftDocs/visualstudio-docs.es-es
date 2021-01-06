@@ -1,5 +1,6 @@
 ---
 title: Usar una tecla de método abreviado con una extensión de editor
+description: Obtenga información sobre cómo agregar un elemento gráfico de vista a una vista de texto mediante una tecla de método abreviado. Este tutorial se basa en la plantilla del editor de elementos gráficos de la ventanilla.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,22 +12,22 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78bbf84f6b11451c8b1a09e6883ba76b19cec757
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 4c939328e1ef8e517821db8622e7383cab90c384
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037463"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875848"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>Tutorial: usar una tecla de método abreviado con una extensión de editor
 Puede responder a las teclas de método abreviado en la extensión del editor. En el siguiente tutorial se muestra cómo agregar un elemento gráfico de vista a una vista de texto mediante una tecla de método abreviado. Este tutorial se basa en la plantilla del editor de elementos gráficos de la ventanilla y permite agregar el elemento gráfico mediante el carácter +.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
  A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS después. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-managed-extensibility-framework-mef-project"></a>Crear un proyecto Managed Extensibility Framework (MEF)
 
-1. Cree un proyecto VSIX en C#. (En el cuadro de diálogo **nuevo proyecto** , seleccione **Visual C#/extensibilidad**y, a continuación, **Proyecto VSIX**). Asigne a la solución el nombre `KeyBindingTest` .
+1. Cree un proyecto VSIX en C#. (En el cuadro de diálogo **nuevo proyecto** , seleccione **Visual C#/extensibilidad** y, a continuación, **Proyecto VSIX**). Asigne a la solución el nombre `KeyBindingTest` .
 
 2. Agregue una plantilla de elemento de gráfico de texto del editor al proyecto y asígnele el nombre `KeyBindingTest` . Para obtener más información, vea [crear una extensión con una plantilla de elemento de editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).
 
@@ -78,7 +79,7 @@ Antes de la versión 15,6 de Visual Studio 2017, la única manera de controlar l
 3. La clase denominada KeyBindingCommandFilter debe heredar de <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> .
 
     ```csharp
-    internal class KeyBindingCommandFilter : IOleCommandTarget
+    internal class KeyBindingCommandFilter : IOleCommandTarget
     ```
 
 4. Agregue campos privados para la vista de texto, el siguiente comando de la cadena de comandos y una marca que represente si ya se ha agregado el filtro de comandos.
@@ -86,8 +87,8 @@ Antes de la versión 15,6 de Visual Studio 2017, la única manera de controlar l
     ```csharp
     private IWpfTextView m_textView;
     internal IOleCommandTarget m_nextTarget;
-    internal bool m_added;
-    internal bool m_adorned;
+    internal bool m_added;
+    internal bool m_adorned;
     ```
 
 5. Agregue un constructor que establezca la vista de texto.

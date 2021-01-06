@@ -1,5 +1,7 @@
 ---
 title: Aspectos básicos del servicio | Microsoft Docs
+description: Obtenga información sobre los servicios, que son interfaces para que los consuma otro VSPackage. Los servicios de un VSPackage pueden invalidar los servicios integrados u otros servicios.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e2947cb4cd6a347d8e010340f8689eb1907a28a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 54d785d665122fd5c5fa1709aa9348777e3c730b
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705501"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875809"
 ---
 # <a name="service-essentials"></a>Conceptos básicos del servicio
 Un servicio es un contrato entre dos VSPackages. Un VSPackage proporciona un conjunto específico de interfaces para que lo consuma otro VSPackage. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] es en sí misma una colección de VSPackages que proporciona servicios a otros VSPackages.

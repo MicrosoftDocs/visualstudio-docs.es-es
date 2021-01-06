@@ -1,5 +1,7 @@
 ---
 title: Persistencia del proyecto | Microsoft Docs
+description: Obtenga información sobre la persistencia en el diseño del proyecto, incluido el uso de IPersistFileFormat para conservar objetos de proyecto basados en archivos y no basados en archivos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10a9cde91c0181fbfefbaa353c7c3702f4b36819
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6ffa60508eba02a4442bacb63b05abb39202ab9
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706462"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877447"
 ---
 # <a name="project-persistence"></a>Persistencia de un proyecto
 La persistencia es una consideración de diseño clave para el proyecto. La mayoría de los proyectos utilizan elementos de proyecto que representan archivos; [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] también admite proyectos cuyos datos no estén basados en archivos. Los archivos que pertenecen al proyecto y el archivo del proyecto deben ser persistentes. El IDE indica al proyecto que se guarde o un elemento de proyecto.
@@ -42,6 +44,6 @@ La persistencia es una consideración de diseño clave para el proyecto. La mayo
 
  Los métodos de la `IVsPersistHierarchyItem2` interfaz se usan para determinar si un elemento se puede volver a cargar y, si el elemento puede ser, para volver a cargarlo. Además, <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IgnoreItemFileChanges%2A> se puede implementar el método para que los elementos modificados se descarten sin guardarse.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Lista de comprobación: Creación de nuevos tipos de proyectos](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Creación de instancias de proyecto mediante generadores de proyecto](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)

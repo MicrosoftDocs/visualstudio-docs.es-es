@@ -1,5 +1,7 @@
 ---
 title: Información general sobre la integración del control de código fuente | Microsoft Docs
+description: 'Obtenga información sobre las diferencias entre las dos maneras de integrar el control de código fuente en Visual Studio: un complemento de control de código fuente y un VSPackage.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d80363286f5f0cac9a5ceb2e8ac9d20345df9e6f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6bbd385c7089504949d2437091b0a2ea002fafdd
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705123"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876017"
 ---
 # <a name="source-control-integration-overview"></a>Información general de la integración del control de código fuente
 En esta sección se comparan las dos maneras de integrar en el control de código fuente de Visual Studio; Complemento de control de código fuente y VSPackage que proporciona una solución de control de código fuente y resalta las nuevas características de control de código fuente. Visual Studio permite cambiar manualmente entre los paquetes VSPackage de control de código fuente y los complementos de control de código fuente, así como la conmutación automática basada en la solución.

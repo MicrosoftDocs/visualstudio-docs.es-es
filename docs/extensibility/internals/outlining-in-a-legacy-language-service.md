@@ -1,5 +1,7 @@
 ---
 title: Esquematización en un servicio de lenguaje heredado | Microsoft Docs
+description: Obtenga información sobre cómo admitir la esquematización a través de la implementación de regiones ocultas en un servicio de lenguaje heredado.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be485a0e7406d49c4dcce77958c720e0b62504b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ca457c32751fb1f9179a9c09b624c444efab627d
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706811"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876839"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>Esquematización en un servicio de lenguaje heredado
 La esquematización permite contraer un programa complejo en una introducción o un esquema. Por ejemplo, en C# todos los métodos se pueden contraer en una sola línea, mostrando solo la firma del método. Además, las estructuras y las clases se pueden contraer para mostrar solo los nombres de las estructuras y las clases. Dentro de un único método, la lógica compleja se puede contraer para mostrar el flujo global mostrando solo la primera línea de instrucciones, como `foreach` , `if` y `while` .

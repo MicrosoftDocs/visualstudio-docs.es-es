@@ -1,5 +1,7 @@
 ---
 title: Información de parámetros en un lenguaje heredado service2 | Microsoft Docs
+description: Obtenga información sobre cómo admitir la operación de información de parámetros de IntelliSense para mostrar una firma de método cuando el método se escribe en un servicio de lenguaje heredado.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dff6e871320d0727ed2fbec4188e8f7af2e5c5fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc239d5b0d580d420683c6940ac2bbd5198335d7
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88237963"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875952"
 ---
 # <a name="parameter-info-in-a-legacy-language-service-2"></a>Información de parámetros en un servicio de lenguaje heredado 2
 La información de parámetros de IntelliSense es una información sobre herramientas que muestra la firma de un método cuando el usuario escribe el carácter de inicio de la lista de parámetros (normalmente un paréntesis de apertura) para la lista de parámetros de método. A medida que se escribe cada parámetro y se escribe el separador de parámetros (normalmente una coma), la información sobre herramientas se actualiza para mostrar el siguiente parámetro en negrita.

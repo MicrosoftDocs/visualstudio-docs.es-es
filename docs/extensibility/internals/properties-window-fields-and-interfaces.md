@@ -1,5 +1,7 @@
 ---
 title: Campos e interfaces de la ventana Propiedades | Microsoft Docs
+description: Obtenga información sobre la selección que determina qué información se muestra en el ventana Propiedades en función de la ventana que tiene el foco en el IDE de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9529708c781e7fdb04c3b4c5ee143b7605857e84
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 21bc3a7f1d46a1afe579a67afa09097fd04458ff
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706157"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875770"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Interfaces y campos de la ventana Propiedades
 El modelo de selección para determinar qué información se muestra en la ventana **propiedades** se basa en la ventana que tiene el foco en el IDE. Todas las ventanas y objetos de la ventana seleccionada pueden hacer que su objeto de contexto de selección se inserte en el contexto de selección global. El entorno actualiza el contexto de selección global con los valores de un marco de ventana cuando la ventana tiene el foco. Cuando el foco cambia, también lo hace el contexto de selección.
@@ -114,6 +116,6 @@ STDAPI DLLGetDocumentation
 
  Otra manera de obtener el nombre y la descripción localizados de una propiedad es implementar <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.GetLocalizedPropertyInfo%2A>. Para obtener más información sobre la implementación de este método, consulte [Properties Window Fields and Interfaces](../../extensibility/internals/properties-window-fields-and-interfaces.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Extensión de propiedades](../../extensibility/internals/extending-properties.md)

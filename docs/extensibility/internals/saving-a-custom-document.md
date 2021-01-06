@@ -1,5 +1,7 @@
 ---
 title: Guardar un documento personalizado | Microsoft Docs
+description: Obtenga información sobre el proceso que se produce para un documento personalizado para un tipo de proyecto que se agrega al IDE de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,17 +14,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f04d588b4becfa778407269849032ea8ec56fb3f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d2d2aa249d6944e33ab9556000c483efdec78f20
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705616"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875684"
 ---
 # <a name="saving-a-custom-document"></a>Guardado de un documento personalizado
-El entorno controla los comandos **Guardar**, **Guardar como**y **guardar todo** . Cuando un usuario hace clic en **Guardar**, **Guardar como** **o guardar todo** en el menú **archivo** o cierra la solución, lo que da lugar a guardar todo, se produce el siguiente proceso.
+El entorno controla los comandos **Guardar**, **Guardar como** y **guardar todo** . Cuando un usuario hace clic en **Guardar**, **Guardar como** **o guardar todo** en el menú **archivo** o cierra la solución, lo que da lugar a guardar todo, se produce el siguiente proceso.
 
- ![Guardado del editor del cliente](../../extensibility/internals/media/private.gif "Privados") Guardar, guardar como y guardar todo el control de comandos para un editor personalizado
+ ![Guardado del editor del cliente](../../extensibility/internals/media/private.gif "Privada") Guardar, guardar como y guardar todo el control de comandos para un editor personalizado
 
  Este proceso se describe en los pasos siguientes:
 

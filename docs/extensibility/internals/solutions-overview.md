@@ -1,5 +1,7 @@
 ---
 title: Introducción a soluciones
+description: Obtenga información sobre los aspectos internos de una solución, para los desarrolladores de extensiones que deseen trabajar con soluciones en extensiones de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 767db749d953855cd5c6f81f356a195c830aa838
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b2888f2fd0b2c9b7bfb530cc3fd46708ca13422f
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705297"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876732"
 ---
 # <a name="solutions-overview"></a>Introducción a soluciones
 
@@ -45,7 +47,7 @@ Cuando se abre una solución, se produce el siguiente proceso.
 > [!NOTE]
 > Si desea crear una nueva configuración de soluciones formada por dos configuraciones de proyectos y excluida una tercera de la compilación, debe usar la interfaz de usuario de las páginas de propiedades o la automatización. No puede cambiar las configuraciones del administrador de compilación de soluciones y sus propiedades directamente, pero puede manipular el administrador de compilación de soluciones mediante la `SolutionBuild` clase de dte en el modelo de automatización. Para obtener más información sobre la configuración de soluciones, vea [configuración de soluciones](../../extensibility/internals/solution-configuration.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>

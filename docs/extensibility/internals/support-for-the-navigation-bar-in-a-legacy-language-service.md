@@ -1,5 +1,6 @@
 ---
 title: Compatibilidad con la barra de navegación en un servicio de lenguaje heredado
+description: Obtenga información sobre cómo admitir la barra de navegación en un servicio de lenguaje heredado. En la barra de navegación de la vista del editor se muestran los tipos y miembros del archivo.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0011e9dac5438715571d1df76ba379fb9ed122df
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 325789c3b7210c87d5c1b0414434af27c266c31c
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036566"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876550"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Compatibilidad con la barra de navegación en un servicio de lenguaje heredado
 La barra de navegación de la parte superior de la vista del editor muestra los tipos y miembros del archivo. Los tipos se muestran en la lista desplegable izquierda y los miembros se muestran en la lista desplegable derecha. Cuando el usuario selecciona un tipo, el símbolo de intercalación se coloca en la primera línea del tipo. Cuando el usuario selecciona un miembro, el símbolo de intercalación se coloca en la definición del miembro. Los cuadros desplegables se actualizan para reflejar la ubicación actual del símbolo de intercalación.

@@ -1,5 +1,7 @@
 ---
 title: Componentes principales del modelo de proyecto | Microsoft Docs
+description: Este artículo contiene descripciones de las interfaces y los servicios identificados en el modelo de proyecto Core, así como las interfaces y servicios asociados a los objetos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +13,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e29a9d40531b32f127054fe02f61c72738e508e
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: c6aeb24b2aee5b0abb3e5d803004ba97725bb707
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012417"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876901"
 ---
 # <a name="project-model-core-components"></a>Componentes principales del modelo de proyecto
 Las tablas siguientes se expanden en el modelo de proyecto. Las tablas presentan breves descripciones de las interfaces y los servicios identificados en el modelo, así como las interfaces y servicios asociados a objetos específicos. Además, las tablas detallan otras interfaces que son opcionales en la creación y el mantenimiento del proyecto en función de los requisitos de su tipo de proyecto específico.
 
- Para obtener más información, consulte [compatibilidad con herramientas de exploración de símbolos](../../extensibility/internals/supporting-symbol-browsing-tools.md).
+ Para obtener más información, consulte [compatibilidad con herramientas de Symbol-Browsing](../../extensibility/internals/supporting-symbol-browsing-tools.md).
 
 ### <a name="package-object"></a>Objeto de paquete
 
@@ -99,7 +101,7 @@ Las tablas siguientes se expanden en el modelo de proyecto. Las tablas presentan
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibility3>|Se utiliza para implementar el modelo de automatización. En el modelo de proyecto, devolverá un objeto de propiedades que le permite crear una instancia de ese objeto.|
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIHierWinClipboardHelper>|Se utiliza para implementar eventos del portapapeles en el objeto de proyecto en la jerarquía. `SVsUIHierWinClipboardHelper` permite controlar correctamente las operaciones de cortar, copiar y pegar.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - [Lista de comprobación: Creación de nuevos tipos de proyectos](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [No está en la compilación: usar clases de proyecto de HierUtil7 para implementar un tipo de proyecto (C++)](/previous-versions/bb166212(v=vs.100))

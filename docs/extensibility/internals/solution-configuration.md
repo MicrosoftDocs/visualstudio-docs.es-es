@@ -1,5 +1,7 @@
 ---
 title: Configuración de soluciones | Microsoft Docs
+description: Obtenga información sobre cómo implementar las configuraciones de soluciones compatibles con el tipo de proyecto, que dirigen el comportamiento de la clave Start (F5) y los comandos de compilación.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c96b73747ef8b136a74a7256cde7fef8d1c42de
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ad298a44eedea0681a554add74bd67ed22cad41
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705374"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876033"
 ---
 # <a name="solution-configuration"></a>Configuración de soluciones
 Las configuraciones de soluciones almacenan propiedades de nivel de solución. Dirigen el comportamiento de la tecla **Inicio** (F5) y los comandos de **compilación** . De forma predeterminada, estos comandos compilan e inician la configuración de depuración. Ambos comandos se ejecutan en el contexto de una configuración de soluciones. Esto significa que el usuario puede esperar F5 para iniciar y compilar la configuración de la solución activa. El entorno está diseñado para optimizar las soluciones en lugar de los proyectos cuando se trata de compilar y ejecutar.

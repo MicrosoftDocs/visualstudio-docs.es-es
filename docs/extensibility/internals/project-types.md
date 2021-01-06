@@ -1,5 +1,7 @@
 ---
 title: Tipos de proyecto | Microsoft Docs
+description: Visual Studio incluye varios tipos de proyecto para lenguajes como Visual C# y Visual Basic. Visual Studio también le permite crear sus propios tipos de proyecto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b343eeeee0912a6e9cad57ca6d35c33845e4dd4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 35e38649f825e0dfa554d9fbc90c57f63370b31f
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706266"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877200"
 ---
 # <a name="project-types"></a>Tipos de proyecto
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] incluye varios tipos de proyecto para lenguajes como [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] y [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] . [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] también le permite crear sus propios tipos de proyecto.
@@ -58,7 +60,7 @@ ms.locfileid: "80706266"
 
  Describe cómo puede participar el tipo de proyecto en el Asistente para actualización para actualizar archivos de proyecto de una versión anterior de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
-- [Architecture](../../extensibility/internals/project-types-architecture.md)
+- [Arquitectura](../../extensibility/internals/project-types-architecture.md)
 
  Proporciona información técnica detallada acerca de los tipos de proyecto.
 

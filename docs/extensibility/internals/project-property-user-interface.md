@@ -1,5 +1,7 @@
 ---
 title: Interfaz de usuario de propiedad de proyecto | Microsoft Docs
+description: Obtenga información sobre cómo los subtipos de proyecto pueden modificar el cuadro de diálogo páginas de propiedades del proyecto según lo proporcionado por el proyecto base.
+ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f15895a7dab5c57d8312787b1276acac89c28796
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 2c9bba8b163b7fd21cfa829bb26e06cf37b887bd
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011858"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877395"
 ---
 # <a name="project-property-user-interface"></a>Interfaz de usuario de propiedades de proyecto
 
@@ -57,7 +59,7 @@ Dado que el subtipo de proyecto agrega el <xref:Microsoft.VisualStudio.Shell.Int
 
 Las nuevas páginas de propiedades agregadas por un subtipo de proyecto se entregan a un objeto de exploración de configuración del proyecto desde la implementación del proyecto base. Este objeto de examen de configuración de proyecto es compatible con los extensores de automatización. Para obtener más información sobre AutomationExtenders, consulte [implementación y uso de extensores de automatización](/previous-versions/0y92k2w2(v=vs.140)). Las páginas de propiedades implementadas por la llamada de subtipo de proyecto <xref:EnvDTE.Project.Extender%2A> para recuperar su propio objeto de examen de configuración de subtipo de proyecto que extiende el objeto de exploración de configuración del proyecto base.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - <xref:EnvDTE.IFilterProperties>
 - [Cuadro de diálogo páginas de propiedades](/previous-versions/visualstudio/visual-studio-2010/as5chysf(v=vs.100))

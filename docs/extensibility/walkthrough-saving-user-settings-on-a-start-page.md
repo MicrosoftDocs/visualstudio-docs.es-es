@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: guardar la configuración de usuario en una página de inicio | Microsoft Docs'
+description: Para obtener información sobre cómo conservar la configuración de usuario de la página de inicio, guarde una configuración en el registro mediante este tutorial.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
@@ -9,24 +11,24 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 8dd20513defd1db8848cf6a80a29e04c127c9dd4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17dfb844733a15b1607d2daa2ce24a8f6e0be420
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903167"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876186"
 ---
 # <a name="walkthrough-save-user-settings-on-a-start-page"></a>Tutorial: guardar la configuración de usuario en una página de inicio
 
 Puede conservar la configuración de usuario de la página de inicio. Al seguir este tutorial, puede crear un control que guarda un valor en el registro cuando el usuario hace clic en un botón y, a continuación, recupera ese valor cada vez que se carga la página de inicio. Dado que la plantilla de proyecto de página de inicio incluye un control de usuario personalizable y el XAML de la página de inicio predeterminada llama a ese control, no es necesario modificar la propia página de inicio.
 
-El almacén de configuración del que se crea una instancia en este tutorial es una instancia de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> interfaz, que lee y escribe en la siguiente ubicación del registro cuando se llama: **HKCU\Software\Microsoft\VisualStudio\14.0 \\ \<CollectionName> **
+El almacén de configuración del que se crea una instancia en este tutorial es una instancia de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> interfaz, que lee y escribe en la siguiente ubicación del registro cuando se llama: **HKCU\Software\Microsoft\VisualStudio\14.0 \\ \<CollectionName>**
 
 Cuando se ejecuta en la instancia experimental de Visual Studio, la configuración almacena las lecturas y escrituras en **HKCU\Software\Microsoft\VisualStudio\14.0Exp \\ \<CollectionName> .**
 
 Para obtener más información sobre cómo conservar la configuración, vea [extender la configuración de usuario y las opciones](../extensibility/extending-user-settings-and-options.md).
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
 
 > [!NOTE]
 > Para seguir este tutorial, debe instalar SDK de Visual Studio. Para obtener más información, vea el [SDK de Visual Studio](../extensibility/visual-studio-sdk.md).
@@ -77,7 +79,7 @@ Para obtener más información sobre cómo conservar la configuración, vea [ext
 
 1. En el panel XAML, haga clic con el botón secundario en el `Click` atributo del <xref:System.Windows.Controls.Button> elemento y, a continuación, haga clic en **navegar hasta el controlador de eventos**.
 
-     Este paso abre *myControl.Xaml.CS*y crea un controlador de código auxiliar para el `Button_Click` evento.
+     Este paso abre *myControl.Xaml.CS* y crea un controlador de código auxiliar para el `Button_Click` evento.
 
 2. Agregue las siguientes `using` directivas a la parte superior del archivo.
 
@@ -166,15 +168,15 @@ Para obtener más información sobre cómo conservar la configuración, vea [ext
 
 2. En la instancia experimental, en el menú **herramientas** , haga clic en **Opciones**.
 
-3. En el nodo **entorno** , haga clic en **Inicio**y, a continuación, en la lista **Personalizar Página de inicio** , seleccione **[extensión instalada] guardar la página de inicio**de la configuración.
+3. En el nodo **entorno** , haga clic en **Inicio** y, a continuación, en la lista **Personalizar Página de inicio** , seleccione **[extensión instalada] guardar la página de inicio** de la configuración.
 
-     Haga clic en **OK**.
+     Haga clic en **Aceptar**.
 
 4. Cierre la página de inicio si está abierta y, a continuación, en el menú **Ver** , haga clic en **Página de inicio**.
 
 5. En la página Inicio, haga clic en la pestaña **control** .
 
-6. En el cuadro de texto, escriba **CAT**y, a continuación, haga clic en **guardar mi configuración**.
+6. En el cuadro de texto, escriba **CAT** y, a continuación, haga clic en **guardar mi configuración**.
 
 7. Cierre la página de inicio y vuelva a abrirla.
 

@@ -1,5 +1,7 @@
 ---
 title: Abrir y guardar elementos de proyecto | Microsoft Docs
+description: Obtenga información sobre los distintos enfoques para abrir y guardar archivos para el nuevo tipo de proyecto en el IDE de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbb89d99e401be6bae7d8ee9be8ee33fa7574723
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 971fef7939c91bdcdea9098da530c7ecb2daf9ec
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706964"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877642"
 ---
 # <a name="opening-and-saving-project-items"></a>Apertura y guardado de elementos de proyecto
 Al agregar un nuevo tipo de proyecto, debe administrar la apertura y el guardado de los archivos de proyectos en el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] entorno de desarrollo integrado (IDE). En los temas siguientes se describen los distintos enfoques para abrir y guardar archivos.
@@ -45,11 +47,11 @@ Al agregar un nuevo tipo de proyecto, debe administrar la apertura y el guardado
 
 - [Guardado de un documento estándar](../../extensibility/internals/saving-a-standard-document.md)
 
- Proporciona una explicación detallada de cómo el IDE controla los comandos **Guardar**, **Guardar como**y **guardar todos los** comandos de un documento abierto en un editor estándar.
+ Proporciona una explicación detallada de cómo el IDE controla los comandos **Guardar**, **Guardar como** y **guardar todos los** comandos de un documento abierto en un editor estándar.
 
 - [Guardado de un documento personalizado](../../extensibility/internals/saving-a-custom-document.md)
 
- Proporciona un diagrama y una explicación detallada de cómo el IDE controla el **guardado**, **Guardar como**y **guardar todos los** comandos para los documentos abiertos en un editor personalizado.
+ Proporciona un diagrama y una explicación detallada de cómo el IDE controla el **guardado**, **Guardar como** y **guardar todos los** comandos para los documentos abiertos en un editor personalizado.
 
 - [Determinación del editor que abre un archivo en un proyecto](../../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md)
 

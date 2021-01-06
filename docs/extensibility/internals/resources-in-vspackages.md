@@ -1,5 +1,7 @@
 ---
 title: Recursos en VSPackages | Microsoft Docs
+description: Obtenga información sobre qué tipos de recursos localizados se pueden incrustar en VSPackages. También puede incrustar recursos en archivos dll de la interfaz de usuario satélite nativa o en archivos dll satélite administrados.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 493e9834e3d7cf6d82cebb8dd93d5369678c7be0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2693d25e0b175a075bcc644077895076b75b7578
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705599"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875731"
 ---
 # <a name="resources-in-vspackages"></a>Recursos de VSPackages
 Puede incrustar recursos localizados en archivos dll de la interfaz de usuario satélite nativa, archivos dll satélite administrados o en un VSPackage administrado.
@@ -85,6 +87,6 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 
  Cuando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] solicita un recurso de un VSPackage después de la instalación, es probable que ese paquete ya esté cargado e inicializado, por lo que la pérdida de rendimiento es mínima.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Administración de VSPackages](../../extensibility/managing-vspackages.md)
-- [Recursos localizados en aplicaciones MFC: archivos dll satélite](/cpp/build/localized-resources-in-mfc-applications-satellite-dlls)
+- [Recursos localizados en aplicaciones MFC: archivos DLL satélite](/cpp/build/localized-resources-in-mfc-applications-satellite-dlls)

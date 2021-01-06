@@ -1,5 +1,7 @@
 ---
 title: Compatibilidad con propiedades de configuración y de proyecto | Microsoft Docs
+description: Obtenga información sobre cómo proporcionar una página de propiedades para su propio tipo de proyecto en el IDE de Visual Studio, que puede mostrar las propiedades extendidas del proyecto y la configuración.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be9d9a6e0976ab1ff336fc6754fa44d26c031378
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: fd5f15f16894faf6d47700e34db4d99a1fa3cb5a
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012027"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876602"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Compatibilidad con las propiedades de proyecto y configuración
 La ventana **propiedades** del [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] entorno de desarrollo integrado (IDE) puede mostrar las propiedades de configuración y del proyecto. Puede proporcionar una página de propiedades para su propio tipo de proyecto, de modo que el usuario pueda establecer las propiedades de la aplicación.
@@ -75,7 +77,7 @@ La ventana **propiedades** del [!INCLUDE[vsprvs](../../code-quality/includes/vsp
 
  El VSPackage al que está asociado el atributo no es importante. Cuando un VSPackage se registra con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , el ID. de clase (CLSID) de cualquier objeto que se puede crear se registra para que una llamada a <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry.CreateInstance%2A> pueda crearlo.
 
- La ruta de acceso del registro de un objeto que se puede crear se determina mediante la combinación de <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A> , la palabra, el CLSID y el GUID del tipo de objeto. Si la `MyProjectPropertyPage` clase tiene un GUID de {3c693da2-5bca-49b3-bd95-ffe0a39dd723} y UserRegistryRoot es HKEY_CURRENT_USER \software\microsoft\visualstudio\8.0exp, la ruta de acceso del registro sería HKEY_CURRENT_USER \software\microsoft\visualstudio\8.0exp\clsid \\ {3c693da2-5bca-49b3-bd95-ffe0a39dd723}.
+ La ruta de acceso del registro de un objeto que se puede crear se determina mediante la combinación de <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A> , la palabra, el CLSID y el GUID del tipo de objeto. Si `MyProjectPropertyPage` la clase tiene un GUID de {3c693da2-5bca-49b3-bd95-ffe0a39dd723} y UserRegistryRoot es HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0Exp, la ruta de acceso del registro sería HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0Exp\CLSID\\ {3c693da2-5bca-49b3-bd95-ffe0a39dd723}.
 
 ## <a name="project-and-configuration-property-attributes-and-layout"></a>Diseño y atributos de la propiedad de configuración y del proyecto
  Los <xref:System.ComponentModel.CategoryAttribute> <xref:System.ComponentModel.DisplayNameAttribute> atributos, y <xref:System.ComponentModel.DescriptionAttribute> determinan el diseño, el etiquetado y la descripción de las propiedades de configuración y del proyecto en una página de propiedades genérica. Estos atributos determinan la categoría, el nombre para mostrar y la descripción de la opción, respectivamente.
@@ -90,7 +92,7 @@ La ventana **propiedades** del [!INCLUDE[vsprvs](../../code-quality/includes/vsp
 
  La `MyConfigProp` propiedad configuración aparece en la página de propiedades de configuración como **mi propiedad config** en la categoría **My Category**. Si la opción está seleccionada, la descripción, **mi Descripción**, aparece en el panel Descripción.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Adición y eliminación de páginas de propiedades](../../extensibility/adding-and-removing-property-pages.md)
 - [Proyectos](../../extensibility/internals/projects.md)
 - [Archivos de descripción del directorio de plantilla (.Vsdir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)

@@ -1,5 +1,7 @@
 ---
 title: Elementos de diseño del VSPackage de control de código fuente | Microsoft Docs
+description: Obtenga información sobre la estructura que debe implementar el VSPackage de control de código fuente y las interfaces y servicios que el VSPackage de control de código fuente puede implementar.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5e94829f781c058d9b0ea56cdec6c03c71ffe0c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e586470208989dce070c92963fc215f1053559a4
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705011"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877655"
 ---
 # <a name="source-control-vspackage-design-elements"></a>Elementos de diseño de VSPackage de control de código fuente
 En los temas de esta sección se describe la estructura que debe implementar el VSPackage de control de código fuente para la integración profunda. También se enumeran las interfaces y servicios que el VSPackage de control de código fuente puede implementar y las interfaces y servicios que el VSPackage de control de código fuente puede usar desde otros [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] componentes para admitir su modelo de control de código fuente y su funcionalidad.

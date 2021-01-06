@@ -1,5 +1,7 @@
 ---
 title: Compatibilidad con el control de código fuente | Microsoft Docs
+description: Obtenga información sobre cómo Visual Studio admite desprotecciones de archivos, protecciones y otras operaciones de control de código fuente para el proyecto o el editor.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84de3120783528d209b1475477aee5087edac42b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e722770ad1db4b85dbc2a5a8754d9158b6ee436
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704732"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876459"
 ---
 # <a name="supporting-source-control"></a>Compatibilidad con control de código fuente
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] admite desprotecciones de archivos, protecciones y otras operaciones de control de código fuente para el proyecto o el editor. Como cliente de control de código fuente, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] está diseñado para interactuar con un paquete de control de código fuente, como [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] , que proporciona funciones de archivado, control de versiones y control para un conjunto de archivos definidos dinámicamente.

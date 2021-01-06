@@ -1,5 +1,7 @@
 ---
 title: Modelo de paquetes de control de código fuente | Microsoft Docs
+description: Este modelo representa una implementación de control de código fuente. En el artículo se muestran los nombres de las clases para que sea más fácil ver cómo se realiza el control de código fuente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46845be1bc22a67d6703af12933945bdfcfa7f4b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9ece2a7df1aeb2ec44f7b21075d2945a93d51838
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707072"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876694"
 ---
 # <a name="model-for-source-control-packages"></a>Modelo para paquetes de control de código fuente
 El modelo siguiente representa un ejemplo de una implementación de control de código fuente. En el modelo, verá las interfaces que debe implementar y los servicios de entorno a los que debe llamar. Al igual que todos los servicios, en realidad se llama a los métodos de una interfaz determinada que se obtiene por medio del servicio. Los nombres de las clases se identifican para facilitar la visualización del modo en que se realiza el control de código fuente.
@@ -33,7 +35,7 @@ El modelo siguiente representa un ejemplo de una implementación de control de c
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>|Lo llaman los proyectos para registrarse con el paquete de control de código fuente y obtener información sobre el estado del control de código fuente. Se tiene acceso a esta interfaz mediante el <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager> servicio.|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>|Implementado por el proyecto para responder a las solicitudes de control de código fuente para obtener información sobre los archivos y para obtener la configuración de control de código fuente necesaria para el archivo de proyecto.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>

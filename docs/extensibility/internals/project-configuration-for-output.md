@@ -1,5 +1,7 @@
 ---
 title: Configuración del proyecto para la salida | Microsoft Docs
+description: Obtenga información sobre los procesos de compilación que cada configuración puede admitir y las interfaces y los métodos por los que los elementos de salida pueden estar disponibles.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78b95457af4c5d806fdfcc20f49ac4e82df36488
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffe5cb6477808f892b8d36aa5fd616a5a0ea7969
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706664"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876329"
 ---
 # <a name="project-configuration-for-output"></a>Configuración del proyecto para la salida
 Cada configuración puede admitir un conjunto de procesos de compilación que producen elementos de salida, como archivos ejecutables o de recursos. Estos elementos de salida son privados para el usuario y se pueden colocar en grupos que vinculan tipos de salida relacionados, como archivos ejecutables (. exe,. dll,. lib) y archivos de código fuente (archivos. idl,. h).
@@ -43,7 +45,7 @@ Cada configuración puede admitir un conjunto de procesos de compilación que pr
 
  Para obtener más información, vea la implementación de `IVsOutputGroup` en el ejemplo de proyecto personalizado en [MPF para proyectos](https://github.com/tunnelvisionlabs/MPFProj10).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Administración de opciones de configuración](../../extensibility/internals/managing-configuration-options.md)
 - [Configuración del proyecto para la compilación](../../extensibility/internals/project-configuration-for-building.md)
 - [Objeto de configuración del proyecto](../../extensibility/internals/project-configuration-object.md)

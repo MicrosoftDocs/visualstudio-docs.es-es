@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: Mostrar la finalización de instrucciones | Microsoft Docs'
+description: Obtenga información sobre cómo implementar la finalización de instrucciones basada en lenguaje para el contenido de texto sin formato mediante este tutorial.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,28 +15,28 @@ dev_langs:
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: 472ff8c10e1346f25e7bc72ed5fd4ee9f31bbafa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d05d33074f48e59e365792fda63897b1d38cd585
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904786"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877161"
 ---
 # <a name="walkthrough-display-statement-completion"></a>Tutorial: Mostrar la finalización de instrucciones
 Puede implementar la finalización de instrucciones basada en el lenguaje si define los identificadores para los que desea proporcionar la finalización y, a continuación, desencadenar una sesión de finalización. Puede definir la finalización de instrucciones en el contexto de un servicio de lenguaje, definir su propia extensión de nombre de archivo y tipo de contenido y, a continuación, Mostrar la finalización solo para ese tipo. O bien, puede desencadenar la finalización de un tipo de contenido existente (por ejemplo, "Plaintext"). En este tutorial se muestra cómo desencadenar la finalización de instrucciones para el tipo de contenido "Plaintext", que es el tipo de contenido de los archivos de texto. El tipo de contenido "texto" es el antecesor de todos los demás tipos de contenido, incluidos los archivos de código y XML.
 
- La finalización de instrucciones se desencadena normalmente escribiendo ciertos caracteres (por ejemplo, al escribir el principio de un identificador como "Using"). Normalmente se descarta presionando la **barra espaciadora**, la **tabulación**o la tecla **entrar** para confirmar una selección. Puede implementar las características de IntelliSense que se desencadenan al escribir un carácter mediante un controlador de comandos para las pulsaciones de teclas (la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaz) y un proveedor de controladores que implementa la <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> interfaz. Para crear el origen de finalización, que es la lista de identificadores que participan en la finalización, implemente la <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> interfaz y un proveedor de origen de finalización (la <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider> interfaz). Los proveedores son partes de componentes de Managed Extensibility Framework (MEF). Son responsables de exportar las clases de origen y de controlador e importar los servicios y los agentes, por ejemplo, <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> , que permite la navegación en el búfer de texto y <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker> , que desencadena la sesión de finalización.
+ La finalización de instrucciones se desencadena normalmente escribiendo ciertos caracteres (por ejemplo, al escribir el principio de un identificador como "Using"). Normalmente se descarta presionando la **barra espaciadora**, la **tabulación** o la tecla **entrar** para confirmar una selección. Puede implementar las características de IntelliSense que se desencadenan al escribir un carácter mediante un controlador de comandos para las pulsaciones de teclas (la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaz) y un proveedor de controladores que implementa la <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> interfaz. Para crear el origen de finalización, que es la lista de identificadores que participan en la finalización, implemente la <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> interfaz y un proveedor de origen de finalización (la <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider> interfaz). Los proveedores son partes de componentes de Managed Extensibility Framework (MEF). Son responsables de exportar las clases de origen y de controlador e importar los servicios y los agentes, por ejemplo, <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> , que permite la navegación en el búfer de texto y <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker> , que desencadena la sesión de finalización.
 
  En este tutorial se muestra cómo implementar la finalización de instrucciones para un conjunto de identificadores codificados de forma rígida. En las implementaciones completas, el servicio de lenguaje y la documentación del lenguaje son responsables de proporcionar ese contenido.
 
-## <a name="prerequisites"></a>Requisitos previos
- A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+## <a name="prerequisites"></a>Prerrequisitos
+ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS después. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-mef-project"></a>Creación de un proyecto MEF
 
 #### <a name="to-create-a-mef-project"></a>Para crear un nuevo proyecto de MEF
 
-1. Cree un proyecto VSIX en C#. (En el cuadro de diálogo **nuevo proyecto** , seleccione **Visual C#/extensibilidad**y, a continuación, **Proyecto VSIX**). Asigne a la solución el nombre `CompletionTest` .
+1. Cree un proyecto VSIX en C#. (En el cuadro de diálogo **nuevo proyecto** , seleccione **Visual C#/extensibilidad** y, a continuación, **Proyecto VSIX**). Asigne a la solución el nombre `CompletionTest` .
 
 2. Agregue una plantilla de elemento clasificador de editor al proyecto. Para obtener más información, vea [crear una extensión con una plantilla de elemento de editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).
 
@@ -172,7 +174,7 @@ Puede implementar la finalización de instrucciones basada en el lenguaje si def
 
    - Permita que el carácter se escriba en el búfer y, a continuación, desencadene o filtre la finalización. (Los caracteres de impresión lo hacen).
 
-   - Confirma la finalización, pero no permite que el carácter se escriba en el búfer. (Espacio en blanco, **pestaña**y **Escriba** haga esto cuando se muestre una sesión de finalización).
+   - Confirma la finalización, pero no permite que el carácter se escriba en el búfer. (Espacio en blanco, **pestaña** y **Escriba** haga esto cuando se muestre una sesión de finalización).
 
    - Permite pasar el comando al siguiente controlador. (El resto de comandos).
 
@@ -202,7 +204,7 @@ Puede implementar la finalización de instrucciones basada en el lenguaje si def
 
 3. Cree un archivo de texto y escriba algún texto que incluya la palabra "agregar".
 
-4. A medida que escribe primero "a" y luego "d", debe aparecer una lista que contiene "suma" y "adaptación". Observe que está seleccionada la opción adición. Cuando escribe otra "d", la lista solo debe contener "suma", que ahora está seleccionada. Puede confirmar "suma" presionando la **barra espaciadora**, la **tabulación**o la tecla **entrar** , o bien descartar la lista escribiendo ESC o cualquier otra tecla.
+4. A medida que escribe primero "a" y luego "d", debe aparecer una lista que contiene "suma" y "adaptación". Observe que está seleccionada la opción adición. Cuando escribe otra "d", la lista solo debe contener "suma", que ahora está seleccionada. Puede confirmar "suma" presionando la **barra espaciadora**, la **tabulación** o la tecla **entrar** , o bien descartar la lista escribiendo ESC o cualquier otra tecla.
 
 ## <a name="see-also"></a>Consulte también
 - [Tutorial: vincular un tipo de contenido a una extensión de nombre de archivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

@@ -1,5 +1,7 @@
 ---
 title: Modelado de proyectos | Microsoft Docs
+description: Obtenga información sobre los objetos de proyecto estándar necesarios para crear la automatización para el nuevo tipo de proyecto y la ruta de acceso que sigue la automatización del proyecto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1ac89baf5bc7582d3430532938a5e5a0c35a4c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7a481e731f01230139ec4342231479606c49bd11
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706555"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877421"
 ---
 # <a name="project-modeling"></a>Modelado de proyectos
 El siguiente paso para proporcionar automatización para el proyecto es implementar los objetos de proyecto estándar: las <xref:EnvDTE.Projects> `ProjectItems` colecciones y, los `Project` <xref:EnvDTE.ProjectItem> objetos y, y los objetos restantes exclusivos de la implementación. Estos objetos estándar se definen en el archivo Dteinternal. h. En el ejemplo BscPrj se proporciona una implementación de los objetos estándar. Puede usar estas clases como modelos para crear sus propios objetos de proyecto estándar que se encuentran en paralelo con objetos de proyecto de otros tipos de proyectos.
@@ -52,7 +54,7 @@ Projects
 
  Si no implementa un `Project` objeto, el entorno de seguirá devolviendo un objeto genérico `Project` que contenga solo el nombre del proyecto.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - <xref:EnvDTE.Projects>
 - <xref:EnvDTE.ProjectItem>
 - <xref:EnvDTE.ProjectItems>

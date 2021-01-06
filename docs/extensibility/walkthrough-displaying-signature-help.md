@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: Mostrar la ayuda de las firmas | Microsoft Docs'
+description: Obtenga información sobre cómo mostrar la ayuda de firmas para el tipo de contenido de texto mediante este tutorial. Ayuda para las firmas muestra la firma de un método en una información sobre herramientas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b88c8555904bb31c2804579459ad3096d640b0c2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be324ab48d42e859678ccf01d8c75faae6cea381
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904813"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876251"
 ---
 # <a name="walkthrough-display-signature-help"></a>Tutorial: Mostrar ayuda para las firmas
 La ayuda para las firmas (también conocida como *información de parámetros*) muestra la firma de un método en una información sobre herramientas cuando un usuario escribe el carácter de inicio de la lista de parámetros (normalmente un paréntesis de apertura). Como parámetro y el separador de parámetros (normalmente una coma) se escriben, la información sobre herramientas se actualiza para mostrar el siguiente parámetro en negrita. Puede definir la ayuda de la firma de las siguientes maneras: en el contexto de un servicio de lenguaje, defina su propia extensión de nombre de archivo y el tipo de contenido, así como la ayuda para mostrar la firma solo para ese tipo o para mostrar la ayuda de las firmas para un tipo de contenido existente (por ejemplo, "texto"). En este tutorial se muestra cómo mostrar la ayuda de las firmas para el tipo de contenido "texto".
@@ -24,14 +26,14 @@ La ayuda para las firmas (también conocida como *información de parámetros*) 
 
  En este tutorial se muestra cómo configurar la ayuda para las firmas para un conjunto de identificadores codificados de forma rígida. En las implementaciones completas, el idioma es responsable de proporcionar ese contenido.
 
-## <a name="prerequisites"></a>Requisitos previos
- A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+## <a name="prerequisites"></a>Prerrequisitos
+ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS después. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="creating-a-mef-project"></a>Crear un proyecto MEF
 
 #### <a name="to-create-a-mef-project"></a>Para crear un nuevo proyecto de MEF
 
-1. Cree un proyecto VSIX en C#. (En el cuadro de diálogo **nuevo proyecto** , seleccione **Visual C#/extensibilidad**y, a continuación, **Proyecto VSIX**). Asigne a la solución el nombre `SignatureHelpTest` .
+1. Cree un proyecto VSIX en C#. (En el cuadro de diálogo **nuevo proyecto** , seleccione **Visual C#/extensibilidad** y, a continuación, **Proyecto VSIX**). Asigne a la solución el nombre `SignatureHelpTest` .
 
 2. Agregue una plantilla de elemento clasificador de editor al proyecto. Para obtener más información, vea [crear una extensión con una plantilla de elemento de editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).
 

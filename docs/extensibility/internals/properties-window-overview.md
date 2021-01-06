@@ -1,5 +1,7 @@
 ---
 title: Información general sobre la ventana Propiedades | Microsoft Docs
+description: Obtenga información sobre las interfaces que se usan para interactuar con el ventana Propiedades en el IDE de Visual Studio en esta información general.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 445a43cec976f363873c89dfe9b8e05429aebaf2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 712c3c5b5c0b94932abba602a841977e0601d3b3
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706030"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875900"
 ---
 # <a name="properties-window-overview"></a>Información general sobre la ventana Propiedades
 La ventana **propiedades** se utiliza para mostrar las propiedades de los objetos seleccionados en los dos tipos principales de ventanas disponibles en el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] entorno de desarrollo integrado (IDE). Estos dos tipos de ventanas son:
@@ -48,6 +50,6 @@ La ventana **propiedades** se utiliza para mostrar las propiedades de los objeto
 
  Para obtener más información sobre `IDispatch` , vea MSDN Library.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Extensión de propiedades](../../extensibility/internals/extending-properties.md)
 - [Interfaces y campos de la ventana Propiedades](../../extensibility/internals/properties-window-fields-and-interfaces.md)

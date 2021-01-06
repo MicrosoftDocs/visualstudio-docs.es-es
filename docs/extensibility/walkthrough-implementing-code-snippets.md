@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: implementar fragmentos de código | Microsoft Docs'
+description: Puede crear fragmentos de código e incluirlos en una extensión de editor. Aprenda a crear y registrar fragmentos de código mediante este tutorial.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
@@ -11,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: e06e97acc77b4701e02b0ca54de589830a768669
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a36590c0e56f1e1a2c01f8e084f0b95442607a5
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904714"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877122"
 ---
 # <a name="walkthrough-implement-code-snippets"></a>Tutorial: implementar fragmentos de código
 Puede crear fragmentos de código e incluirlos en una extensión de editor para que los usuarios de la extensión puedan agregarlos a su propio código.
@@ -35,8 +37,8 @@ Puede crear fragmentos de código e incluirlos en una extensión de editor para 
 
    Este tutorial se basa en el [Tutorial: Mostrar la finalización de instrucciones](../extensibility/walkthrough-displaying-statement-completion.md).
 
-## <a name="prerequisites"></a>Requisitos previos
- A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+## <a name="prerequisites"></a>Prerrequisitos
+ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS después. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-and-register-code-snippets"></a>Crear y registrar fragmentos de código
  Normalmente, los fragmentos de código están asociados a un servicio de lenguaje registrado. Sin embargo, no es necesario implementar un <xref:Microsoft.VisualStudio.Package.LanguageService> para registrar fragmentos de código. En su lugar, solo tiene que especificar un GUID en el archivo de índice de fragmento de código y, a continuación, usar el mismo GUID en el <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> que agregue al proyecto.
@@ -198,7 +200,7 @@ Puede crear fragmentos de código e incluirlos en una extensión de editor para 
      [!code-csharp[VSSDKCompletionTest#31](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_10.cs)]
      [!code-vb[VSSDKCompletionTest#31](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_10.vb)]
 
-7. Si un fragmento de código tiene campos a los que se puede navegar, la sesión de expansión se mantiene abierta hasta que se acepta explícitamente la expansión; Si el fragmento de código no tiene campos, la sesión se cierra y se devuelve como `null` el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.InvokeInsertionUI%2A> método. En el <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> método, después del código de la interfaz de usuario del selector de fragmentos de código que agregó en el paso anterior, agregue el código siguiente para controlar la navegación por fragmentos de código (cuando el usuario presiona la tecla **Tab** o **MAYÚS**después de la + **Tab** inserción del fragmento de código).
+7. Si un fragmento de código tiene campos a los que se puede navegar, la sesión de expansión se mantiene abierta hasta que se acepta explícitamente la expansión; Si el fragmento de código no tiene campos, la sesión se cierra y se devuelve como `null` el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.InvokeInsertionUI%2A> método. En el <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> método, después del código de la interfaz de usuario del selector de fragmentos de código que agregó en el paso anterior, agregue el código siguiente para controlar la navegación por fragmentos de código (cuando el usuario presiona la tecla **Tab** o **MAYÚS** después de la +  inserción del fragmento de código).
 
      [!code-csharp[VSSDKCompletionTest#32](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_11.cs)]
      [!code-vb[VSSDKCompletionTest#32](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_11.vb)]
@@ -245,7 +247,7 @@ Puede crear fragmentos de código e incluirlos en una extensión de editor para 
 
 5. Presione **Tab** y **MAYÚS** + **Tab** para alternar entre "primero" y "segundo".
 
-6. Presione **entrar** o **ESC**para aceptar la inserción.
+6. Presione **entrar** o **ESC** para aceptar la inserción.
 
 7. En otra parte del texto, escriba "Test" y, a continuación, presione **Tab**. Dado que "Test" es el acceso directo del fragmento de código, se debe volver a insertar el fragmento de código.
 
