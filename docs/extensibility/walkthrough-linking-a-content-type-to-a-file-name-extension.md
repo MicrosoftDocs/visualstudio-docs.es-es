@@ -1,5 +1,6 @@
 ---
 title: Vincular un tipo de contenido a una extensión de nombre de archivo
+description: Obtenga información sobre cómo vincular su propio tipo de contenido a una extensión de nombre de archivo mediante el editor Managed Extensibility Framework extensiones en este tutorial.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,24 +12,24 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d59ae0b5eb2411ff9e41466e8b87dbe20b835ba
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 478ecc6c2238703d1cacc8e649072d669a41c590
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90034668"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877915"
 ---
 # <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>Tutorial: vincular un tipo de contenido a una extensión de nombre de archivo
 Puede definir su propio tipo de contenido y vincular una extensión de nombre de archivo a él mediante las extensiones del editor Managed Extensibility Framework (MEF). En algunos casos, la extensión de nombre de archivo ya está definida por un servicio de lenguaje. Sin embargo, para usarlo con MEF, debe vincularlo a un tipo de contenido.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
  A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS después. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-mef-project"></a>Creación de un proyecto MEF
 
-1. Cree un proyecto VSIX en C#. (En el cuadro de diálogo **nuevo proyecto** , seleccione **Visual C#/extensibilidad**y, a continuación, **Proyecto VSIX**). Asigne a la solución el nombre `ContentTypeTest` .
+1. Cree un proyecto VSIX en C#. (En el cuadro de diálogo **nuevo proyecto** , seleccione **Visual C#/extensibilidad** y, a continuación, **Proyecto VSIX**). Asigne a la solución el nombre `ContentTypeTest` .
 
-2. En el **archivo source. Extension. vsixmanifest** , vaya a la pestaña **activos** y establezca el campo **tipo** en **Microsoft. VisualStudio. MefComponent**, el campo de **origen** en **un proyecto en la solución actual**y el campo **Project** en el nombre del proyecto.
+2. En el **archivo source. Extension. vsixmanifest** , vaya a la pestaña **activos** y establezca el campo **tipo** en **Microsoft. VisualStudio. MefComponent**, el campo de **origen** en **un proyecto en la solución actual** y el campo **Project** en el nombre del proyecto.
 
 ## <a name="define-the-content-type"></a>Definir el tipo de contenido
 

@@ -1,5 +1,7 @@
 ---
 title: Proyectos | Microsoft Docs
+description: Obtenga información sobre las formas en que los VSPackages pueden extender el sistema de proyectos de Visual Studio, incluidos los tipos de proyecto, los subtipos de proyecto y las herramientas personalizadas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,15 +16,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b7a9299321d2aa80eebb564bf9b926f07ab0108
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffc2dc28ed3d45194ba7738da58fa36dd022c79f
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706214"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878058"
 ---
 # <a name="projects"></a>Proyectos
-En Visual Studio, los proyectos son los contenedores que los desarrolladores usan para organizar los archivos de código fuente y otros recursos que aparecen en **Explorador de soluciones**. Normalmente, los proyectos son archivos (por ejemplo, un archivo. csproj para un proyecto de C#) que almacenan referencias a archivos de código fuente y recursos como archivos de mapa de bits. Los proyectos permiten organizar, compilar, depurar e implementar código fuente, referencias a servicios web y bases de datos, y a otros recursos. Los VSPackages pueden extender el sistema de proyectos de Visual Studio de tres maneras principales: *tipos de proyecto*, *subtipos de proyecto*y *herramientas personalizadas*.
+En Visual Studio, los proyectos son los contenedores que los desarrolladores usan para organizar los archivos de código fuente y otros recursos que aparecen en **Explorador de soluciones**. Normalmente, los proyectos son archivos (por ejemplo, un archivo. csproj para un proyecto de C#) que almacenan referencias a archivos de código fuente y recursos como archivos de mapa de bits. Los proyectos permiten organizar, compilar, depurar e implementar código fuente, referencias a servicios web y bases de datos, y a otros recursos. Los VSPackages pueden extender el sistema de proyectos de Visual Studio de tres maneras principales: *tipos de proyecto*, *subtipos de proyecto* y *herramientas personalizadas*.
 
 ## <a name="in-this-section"></a>En esta sección
 - [Tipos de proyecto](../../extensibility/internals/project-types.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: Mostrar sugerencias de bombillas | Microsoft Docs'
+description: Obtenga información sobre cómo crear una bombilla en el editor de Visual Studio que aparece en la palabra actual y tiene dos acciones sugeridas mediante este tutorial.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
@@ -8,17 +10,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 86412b82b291ee395b35d654d3cde6d326e956f0
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 8d8d498c1d9a5e5142672bcd561ac0749bbf8d75
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508956"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877967"
 ---
 # <a name="walkthrough-display-light-bulb-suggestions"></a>Tutorial: Mostrar sugerencias de bombillas
 Las bombillas son iconos en el editor de Visual Studio que se expanden para mostrar un conjunto de acciones, por ejemplo, correcciones de problemas identificados por los analizadores de código integrados o la refactorización de código.
 
- En los editores de Visual C# y Visual Basic, también puede usar el .NET Compiler Platform ("Roslyn") para escribir y empaquetar sus propios analizadores de código con acciones que muestren las bombillas automáticamente. Para obtener más información, consulte:
+ En los editores de Visual C# y Visual Basic, también puede usar el .NET Compiler Platform ("Roslyn") para escribir y empaquetar sus propios analizadores de código con acciones que muestren las bombillas automáticamente. Para más información, consulte:
 
 - [Cómo: escribir una corrección de código y diagnóstico de C#](https://github.com/dotnet/roslyn/blob/master/docs/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix.md)
 
@@ -34,14 +36,14 @@ Las bombillas son iconos en el editor de Visual Studio que se expanden para most
 
   ![vista previa de bombilla](../extensibility/media/lightbulbpreview.png "LightBulbPreview")
 
-  Puede usar bombillas para proporcionar sus propias acciones sugeridas. Por ejemplo, puede proporcionar acciones para mover las llaves de apertura a una nueva línea o moverlas al final de la línea anterior. En el siguiente tutorial se muestra cómo crear una bombilla que aparece en la palabra actual y tiene dos acciones sugeridas: **convertir a** mayúsculas y **convertir a**minúsculas.
+  Puede usar bombillas para proporcionar sus propias acciones sugeridas. Por ejemplo, puede proporcionar acciones para mover las llaves de apertura a una nueva línea o moverlas al final de la línea anterior. En el siguiente tutorial se muestra cómo crear una bombilla que aparece en la palabra actual y tiene dos acciones sugeridas: **convertir a** mayúsculas y **convertir a** minúsculas.
 
-## <a name="prerequisites"></a>Requisitos previos
- A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+## <a name="prerequisites"></a>Prerrequisitos
+ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS después. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-managed-extensibility-framework-mef-project"></a>Crear un proyecto Managed Extensibility Framework (MEF)
 
-1. Cree un proyecto VSIX en C#. (En el cuadro de diálogo **nuevo proyecto** , seleccione **Visual C#/extensibilidad**y, a continuación, **Proyecto VSIX**). Asigne a la solución el nombre `LightBulbTest` .
+1. Cree un proyecto VSIX en C#. (En el cuadro de diálogo **nuevo proyecto** , seleccione **Visual C#/extensibilidad** y, a continuación, **Proyecto VSIX**). Asigne a la solución el nombre `LightBulbTest` .
 
 2. Agregue una plantilla de elemento **clasificador de editor** al proyecto. Para obtener más información, vea [crear una extensión con una plantilla de elemento de editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).
 
@@ -222,8 +224,8 @@ Las bombillas son iconos en el editor de Visual Studio que se expanden para most
 2. Cree dos clases, la primera llamada `UpperCaseSuggestedAction` y la segunda llamada `LowerCaseSuggestedAction`. Ambas clases implementan <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction>.
 
     ```csharp
-    internal class UpperCaseSuggestedAction : ISuggestedAction
-    internal class LowerCaseSuggestedAction : ISuggestedAction
+    internal class UpperCaseSuggestedAction : ISuggestedAction
+    internal class LowerCaseSuggestedAction : ISuggestedAction
     ```
 
      Ambas clases son iguales, salvo que una llama a <xref:System.String.ToUpper%2A> y la otra llama a <xref:System.String.ToLower%2A>. Los siguientes pasos abarcan solo la clase de acción de mayúsculas, pero debe implementar ambas clases. Siga los pasos para implementar la acción de mayúsculas como un modelo para implementar la acción de minúsculas.
@@ -243,8 +245,8 @@ Las bombillas son iconos en el editor de Visual Studio que se expanden para most
 
     ```csharp
     private ITrackingSpan m_span;
-    private string m_upper;
-    private string m_display;
+    private string m_upper;
+    private string m_display;
     private ITextSnapshot m_snapshot;
     ```
 
@@ -288,7 +290,7 @@ Las bombillas son iconos en el editor de Visual Studio que se expanden para most
     {
         get { return false; }
     }
-    public string DisplayText
+    public string DisplayText
     {
         get { return m_display; }
     }
@@ -319,7 +321,7 @@ Las bombillas son iconos en el editor de Visual Studio que se expanden para most
 9. Implemente el método <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.Invoke%2A> reemplazando el texto en el intervalo por su equivalente en mayúsculas.
 
     ```csharp
-    public void Invoke(CancellationToken cancellationToken)
+    public void Invoke(CancellationToken cancellationToken)
     {
         m_span.TextBuffer.Replace(m_span.GetSpan(m_snapshot), m_upper);
     }

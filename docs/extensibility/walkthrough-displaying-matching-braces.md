@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: Mostrar llaves coincidentes | Microsoft Docs'
+description: Obtenga información sobre cómo definir llaves en el contexto de un idioma y aplicar etiquetas de coincidencia de llaves al tipo de contenido de texto mediante este tutorial.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,18 +12,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65a0bc2c53d5d6e970b4aaa956170bc06c24e7c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ce40f5673a8aba4ab3f7714a3aafdc3de4697cc4
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904847"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877954"
 ---
 # <a name="walkthrough-display-matching-braces"></a>Tutorial: Mostrar llaves coincidentes
 Implemente características basadas en el lenguaje, como la coincidencia de llaves mediante la definición de las llaves que desee buscar y la adición de una etiqueta de marcador de texto a las llaves coincidentes cuando el símbolo de intercalación esté en una de las llaves. Puede definir llaves en el contexto de un idioma, definir su propia extensión de nombre de archivo y tipo de contenido, y aplicar las etiquetas solo a ese tipo o aplicar las etiquetas a un tipo de contenido existente (como "texto"). En el siguiente tutorial se muestra cómo aplicar etiquetas de coincidencia de llaves al tipo de contenido de "texto".
 
-## <a name="prerequisites"></a>Requisitos previos
- A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+## <a name="prerequisites"></a>Prerrequisitos
+ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS después. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-managed-extensibility-framework-mef-project"></a>Crear un proyecto Managed Extensibility Framework (MEF)
 

@@ -13,12 +13,12 @@ manager: crdun
 ms.workload:
 - unity
 zone_pivot_groups: platform
-ms.openlocfilehash: ba95e15be083e0bb1274e01a986f4139d9443240
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 1f8cbe1629aab6a177a46888fe25cf8e3565d91d
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "94341390"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903758"
 ---
 # <a name="get-started-with-visual-studio-and-unity"></a>Introducción a Visual Studio y Unity
 
@@ -34,7 +34,7 @@ Visual Studio Tools para Unity es una extensión gratuita que proporciona compat
 > [!NOTE]
 > Esta guía de instalación es para Visual Studio. Si usa Visual Studio Code, visite la [documentación de desarrollo de Unity con vs Code](https://code.visualstudio.com/docs/other/unity).
 
-1. [Descargue el instalador de Visual Studio](/docs/install/install-visual-studio.md)o ejecútelo si ya está instalado.
+1. [Descargue el instalador de Visual Studio](/visualstudio/docs/install/install-visual-studio.md)o ejecútelo si ya está instalado.
 2. Haga clic en **Modificar** (si ya está instalado) o en **Instalar** (si es una nueva instalación) para la versión de Visual Studio que prefiera.
 3. En la pestaña **cargas de trabajo** , desplácese hasta la sección **juegos** y seleccione la carga de trabajo **desarrollo de juegos con Unity** .
 

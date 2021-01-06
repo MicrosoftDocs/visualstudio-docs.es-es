@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: Mostrar la información sobre herramientas de QuickInfo | Microsoft Docs'
+description: Obtenga información sobre cómo mostrar QuickInfo para el contenido de texto mediante este tutorial. QuickInfo muestra firmas de método y descripciones para un nombre de método.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.workload:
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 0eb70e5d39708ffd532fe39d6d597043621158d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 34e1bb2c92cd387e979fdaa5746a34ea8d3995fc
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904826"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877941"
 ---
 # <a name="walkthrough-display-quickinfo-tooltips"></a>Tutorial: Mostrar información sobre herramientas de QuickInfo
 QuickInfo es una característica de IntelliSense que muestra las firmas y descripciones de los métodos cuando el usuario mueve el puntero sobre un nombre de método. Puede implementar características basadas en lenguajes como QuickInfo si define los identificadores para los que desea proporcionar descripciones de QuickInfo y, a continuación, crea una información sobre herramientas en la que mostrar el contenido. Puede definir QuickInfo en el contexto de un servicio de lenguaje, o bien puede definir su propia extensión de nombre de archivo y tipo de contenido, y mostrar el QuickInfo solo para ese tipo o puede mostrar QuickInfo para un tipo de contenido existente (como "texto"). En este tutorial se muestra cómo mostrar QuickInfo para el tipo de contenido "texto".
@@ -37,14 +39,14 @@ QuickInfo es una característica de IntelliSense que muestra las firmas y descri
 
   En este ejemplo, el origen de QuickInfo usa una lista codificada de forma rígida de nombres de método y descripciones, pero en implementaciones completas, el servicio de lenguaje y la documentación del lenguaje son responsables de proporcionar ese contenido.
 
-## <a name="prerequisites"></a>Requisitos previos
- A partir de Visual Studio 2015, no es necesario instalar el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+## <a name="prerequisites"></a>Prerrequisitos
+ A partir de Visual Studio 2015, no es necesario instalar el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS después. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-mef-project"></a>Creación de un proyecto MEF
 
 ### <a name="to-create-a-mef-project"></a>Para crear un nuevo proyecto de MEF
 
-1. Cree un proyecto VSIX en C#. (En el cuadro de diálogo **nuevo proyecto** , seleccione **Visual C#/extensibilidad**y, a continuación, **Proyecto VSIX**). Asigne a la solución el nombre `QuickInfoTest` .
+1. Cree un proyecto VSIX en C#. (En el cuadro de diálogo **nuevo proyecto** , seleccione **Visual C#/extensibilidad** y, a continuación, **Proyecto VSIX**). Asigne a la solución el nombre `QuickInfoTest` .
 
 2. Agregue una plantilla de elemento clasificador de editor al proyecto. Para obtener más información, vea [crear una extensión con una plantilla de elemento de editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).
 

@@ -1,5 +1,7 @@
 ---
 title: Decisiones de diseño de tipo de proyecto | Microsoft Docs
+description: Obtenga información sobre el elemento, la persistencia de los archivos de proyecto y las decisiones de diseño del mecánico de compromiso que debe tomar antes de extender Visual Studio mediante la creación de un nuevo tipo de proyecto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5e33ac1c4168593b881f799dfdfb94005fb55fc1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ab29fbe79b474aa7b640faf81de812b7571de861
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706370"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877802"
 ---
 # <a name="project-type-design-decisions"></a>Decisiones de diseño del tipo de proyecto
 Antes de crear un nuevo tipo de proyecto, debe tomar varias decisiones de diseño con respecto al tipo de proyecto. Debe decidir qué tipos de elementos contendrán los proyectos, cómo se conservarán los archivos del proyecto y qué modelo de compromiso usará.

@@ -1,5 +1,7 @@
 ---
 title: Cuadrícula de visualización de propiedades | Microsoft Docs
+description: Obtenga información sobre dónde se encuentran los campos nombres de propiedad y valores de propiedad en la cuadrícula del ventana Propiedades y cómo trabajar con la cuadrícula en la extensión de propiedades.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d094c32ba8a64fc636f3fb6dfb2944dc3955628a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 418501ada340614d084e9796a59a46f8612aa743
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706189"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878032"
 ---
 # <a name="properties-display-grid"></a>Cuadrícula de visualización de propiedades
 
@@ -29,7 +31,7 @@ La lista de dos columnas muestra las propiedades independientes de la configurac
 
 2. Establezca el `pfHide` parámetro de <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.HideProperty%2A> en `TRUE` .
 
-Para enviar información a la ventana **propiedades** , el IDE usa <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> . <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> se llama mediante VSPackages para cada ventana que contiene objetos seleccionables con propiedades relacionadas que se mostrarán en la ventana **propiedades** . **Explorador de soluciones**la implementación de <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> llamadas `GetProperty` mediante [__VSHPROPID. VSHPROPID_BrowseObject](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_BrowseObject>) en la jerarquía del proyecto para adquirir los objetos que se van a examinar en la jerarquía.
+Para enviar información a la ventana **propiedades** , el IDE usa <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> . <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> se llama mediante VSPackages para cada ventana que contiene objetos seleccionables con propiedades relacionadas que se mostrarán en la ventana **propiedades** . **Explorador de soluciones** la implementación de <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> llamadas `GetProperty` mediante [__VSHPROPID. VSHPROPID_BrowseObject](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_BrowseObject>) en la jerarquía del proyecto para adquirir los objetos que se van a examinar en la jerarquía.
 
 Si el VSPackage no admite [__VSHPROPID. VSHPROPID_BrowseObject](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_BrowseObject>), el IDE intenta usar <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> con el valor de [__VSHPROPID. VSHPROPID_SelContainer](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_SelContainer>) que el elemento o elementos de la jerarquía suministran.
 
@@ -55,6 +57,6 @@ La ventana **propiedades** muestra distintos tipos de campos en función de los 
 
 - Al hacer clic en el botón de puntos suspensivos (...), se muestra una lista de valores de propiedad entre los que el usuario puede seleccionar (por ejemplo, un selector de colores o una lista de fuentes). <xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder> proporciona estos valores.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Propiedades de extensión](../../extensibility/internals/extending-properties.md)

@@ -1,5 +1,7 @@
 ---
 title: Arquitectura de complemento de control de código fuente | Microsoft Docs
+description: Obtenga información sobre cómo agregar compatibilidad de control de código fuente al IDE de Visual Studio implementando y adjuntando un complemento de control de código fuente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f549ad2c4ee456860a08fbf20ccda813934a8582
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e154e91ce552df9e54d45ea9210a0679edae5f28
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705108"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878071"
 ---
 # <a name="source-control-plug-in-architecture"></a>Arquitectura de complemento de control de código fuente
-Puede Agregar compatibilidad con el control de código fuente al [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] entorno de desarrollo integrado (IDE) implementando y adjuntando un complemento de control de código fuente. El IDE se conecta al complemento de control de código fuente a través de la API del complemento de control de código fuente bien definida. El IDE expone las características de control de versiones del sistema de control de código fuente proporcionando una interfaz de usuario (IU) que consta de barras de herramientas y comandos de menú. El complemento de control de código fuente implementa la funcionalidad de control de código fuente.
+Puede Agregar compatibilidad con el control de código fuente al [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] entorno de desarrollo integrado (IDE) implementando y adjuntando un complemento de control de código fuente. El IDE se conecta al complemento de control de código fuente a través del control de código fuente bien definido Plug-In API. El IDE expone las características de control de versiones del sistema de control de código fuente proporcionando una interfaz de usuario (IU) que consta de barras de herramientas y comandos de menú. El complemento de control de código fuente implementa la funcionalidad de control de código fuente.
 
 ## <a name="source-control-plug-in-resources"></a>Recursos de complemento de control de código fuente
  El complemento de control de código fuente proporciona recursos para ayudarle a crear y conectar su aplicación de control de versiones al [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE. El complemento de control de código fuente contiene la especificación de API que debe ser implementada por un complemento de control de código fuente para que se pueda integrar en el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE. También contiene un ejemplo de código (escrito en C++) que implementa un complemento de control de código fuente esqueleto que muestra la implementación de las funciones esenciales conforme a la API del complemento de control de código fuente.

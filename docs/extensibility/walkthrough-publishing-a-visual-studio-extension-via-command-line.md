@@ -1,5 +1,7 @@
 ---
 title: Publicar extensión mediante la línea de comandos
+description: Obtenga información sobre cómo usar la línea de comandos para publicar una extensión en el Visual Studio Marketplace, lo que permite a los desarrolladores buscar extensiones nuevas y actualizadas.
+ms.custom: SEO-VS-2020
 ms.date: 07/12/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5108f4afa382c00376424432d2086f0494e34a03
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4132d878ff1ec7689be890446a1849577fafd30
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904669"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877928"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>Tutorial: publicar una extensión de Visual Studio mediante la línea de comandos
 
@@ -24,13 +26,13 @@ En este tutorial se muestra cómo publicar una extensión de Visual Studio en el
 
 VsixPublisher.exe es la herramienta de línea de comandos para publicar extensiones de Visual Studio en Marketplace. Se puede tener acceso a ella desde $ {VSInstallDir} \VSSDK\VisualStudioIntegration\Tools\Bin\VsixPublisher.exe. Los comandos disponibles en esta herramienta son: **Publish**, **createPublisher**, **deletePublisher**, **deleteExtension**, **login**, **Logout**.
 
-## <a name="commands"></a>Comandos:
+## <a name="commands"></a>Comandos
 
 ### <a name="publish"></a>Publicar
 
 Publica una extensión en Marketplace. La extensión puede ser VSIX, un archivo exe o MSI, o un vínculo. Si la extensión ya existe con la misma versión, sobrescribirá la extensión. Si la extensión no existe, se creará una nueva extensión.
 
-|Opciones de comando |Descripción |
+|Opciones de comando |Description |
 |---------|---------|
 |carga útil (obligatorio) | Una ruta de acceso a la carga que se va a publicar o un vínculo que se usará como "más información URL". |
 |publishManifest (obligatorio) | Ruta de acceso al archivo de manifiesto de publicación que se va a usar. |
@@ -45,7 +47,7 @@ VsixPublisher.exe publish -payload "{path to vsix}" -publishManifest "{path to v
 
 Crea un publicador en Marketplace. También registra el publicador en el equipo para las siguientes acciones (por ejemplo, eliminar o publicar una extensión).
 
-|Opciones de comando |Descripción |
+|Opciones de comando |Description |
 |---------|---------|
 |displayName (obligatorio) | Nombre para mostrar del publicador. |
 |publisherName (obligatorio) | Nombre del publicador (por ejemplo, el identificador). |
@@ -61,7 +63,7 @@ VsixPublisher.exe createPublisher -publisherName "{Publisher Name}" -displayName
 
 Elimina un publicador en Marketplace.
 
-|Opciones de comando |Descripción |
+|Opciones de comando |Description |
 |---------|---------|
 |publisherName (obligatorio) | Nombre del publicador (por ejemplo, el identificador). |
 |personalAccessToken (obligatorio) | Token de acceso personal que se usa para autenticar el publicador. |
@@ -74,7 +76,7 @@ VsixPublisher.exe deletePublisher -publisherName "{Publisher Name}" -personalAcc
 
 Elimina una extensión de Marketplace.
 
-|Opciones de comando |Descripción |
+|Opciones de comando |Description |
 |---------|---------|
 |extensionName (obligatorio) | Nombre de la extensión que se va a eliminar. |
 |publisherName (obligatorio) | Nombre del publicador (por ejemplo, el identificador). |
@@ -88,7 +90,7 @@ VsixPublisher.exe deleteExtension -extensionName "{Extension Name}" -publisherNa
 
 Registra un publicador en la máquina.
 
-|Opciones de comando |Descripción |
+|Opciones de comando |Description |
 |---------|---------|
 |personalAccessToken (obligatorio | Token de acceso personal que se usa para autenticar el publicador. |
 |publisherName (obligatorio) | Nombre del publicador (por ejemplo, el identificador). |
@@ -102,7 +104,7 @@ VsixPublisher.exe login -personalAccessToken "{Personal Access Token}" -publishe
 
 Registra un publicador fuera de la máquina.
 
-|Opciones de comando |Descripción |
+|Opciones de comando |Description |
 |---------|---------|
 |publisherName (obligatorio) | Nombre del publicador (por ejemplo, el identificador). |
 |ignoreMissingPublisher | Especifica que la herramienta no debe ser un error si el publicador especificado todavía no tiene una sesión iniciada. |
@@ -192,7 +194,7 @@ Con el fin de resolver "images/testlogo.png" en el ejemplo anterior, un usuario 
 
 ## <a name="publishing-walkthrough"></a>Tutorial de publicación
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 Para seguir este tutorial, debe instalar SDK de Visual Studio. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 

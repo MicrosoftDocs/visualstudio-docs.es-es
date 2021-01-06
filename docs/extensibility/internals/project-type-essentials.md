@@ -1,5 +1,7 @@
 ---
 title: Aspectos básicos de los tipos de proyecto | Microsoft Docs
+description: Obtenga información acerca de Cuándo debe crear un tipo de proyecto y cuándo puede extender un tipo de proyecto existente mediante subtipos de proyecto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7634802899d72eb6abcb0aa837b8fb6a532b966
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: d55a4be044c44567f65e312d013ebdb61314ea00
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012066"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877811"
 ---
 # <a name="project-type-essentials"></a>Conceptos básicos del tipo de proyecto
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] incluye varios tipos de proyecto para lenguajes como [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] o [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] . [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] también le permite crear sus propios tipos de proyecto.
@@ -64,5 +66,5 @@ ms.locfileid: "90012066"
 
 - Los tipos de proyecto pueden admitir varias configuraciones, como la depuración y la versión. Los usuarios pueden cambiar las diferentes configuraciones de un proyecto mediante las páginas de propiedades que proporcione. Para obtener más información, vea [administrar opciones de configuración](../../extensibility/internals/managing-configuration-options.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Implementación de tipos de proyecto](../../extensibility/internals/deploying-project-types.md)

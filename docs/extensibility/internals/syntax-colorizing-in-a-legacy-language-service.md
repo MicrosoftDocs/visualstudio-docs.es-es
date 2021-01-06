@@ -1,5 +1,7 @@
 ---
 title: Coloración de la sintaxis en un servicio de lenguaje heredado | Microsoft Docs
+description: Obtenga información sobre cómo admitir la coloración de la sintaxis en un servicio de lenguaje heredado proporcionando un analizador o un escáner que pueda identificar los tipos de elementos o tokens léxicos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 02723a09254255b98291cb921ae5ec091d8b9859
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c51885e593fabffab80d11c930100f3cc719dff8
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704708"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877759"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>Coloreado de sintaxis en un servicio de lenguaje heredado
 La coloración de la sintaxis es una característica que hace que los distintos elementos de un lenguaje de programación se muestren en un archivo de código fuente con distintos colores y estilos. Para admitir esta característica, debe proporcionar un analizador o un escáner que pueda identificar los tipos de elementos o tokens léxicos en el archivo. Muchos idiomas distinguen las palabras clave, los delimitadores (como paréntesis o llaves) y los comentarios al colorearlos de maneras diferentes.
@@ -144,7 +146,7 @@ namespace TestLanguagePackage
         }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Características del servicio de lenguaje heredado](../../extensibility/internals/legacy-language-service-features1.md)
 - [Escáner y analizador del servicio de lenguaje heredado](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)
 - [Registro de un servicio de lenguaje heredado](../../extensibility/internals/registering-a-legacy-language-service1.md)

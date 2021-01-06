@@ -1,5 +1,7 @@
 ---
 title: Directiva de plantilla y la ventana Propiedades | Microsoft Docs
+description: Obtenga información sobre el uso de la Directiva de plantilla para establecer los valores predeterminados para las propiedades, ocultar propiedades y agregar propiedades en el ventana Propiedades.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08ed6f416441d06767661e63b5e32454dbe07f93
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 105a90699689ff6eab6ea5bdfa3d4037e700ecb5
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704661"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877720"
 ---
 # <a name="template-policy-and-the-properties-window"></a>Directiva de plantilla y ventana Propiedades
 Cuando un proyecto se encuentra dentro de un proyecto de Enterprise Templates, ese proyecto de plantilla de empresa puede aplicar la Directiva. La Directiva de plantilla se convierte en un sistema de restricción que se puede usar para establecer los valores predeterminados de las propiedades, ocultar propiedades, agregar propiedades, etc.
@@ -28,6 +30,6 @@ Cuando un proyecto se encuentra dentro de un proyecto de Enterprise Templates, e
 
   Usar la Directiva de plantilla para restringir de forma selectiva propiedades específicas en la ventana **propiedades** cuando se selecciona un elemento de proyecto de un tipo especificado en **Explorador de soluciones** puede ser beneficioso para todos los miembros del equipo de desarrollo que trabajan en un proyecto. Por ejemplo, mediante la Directiva de plantilla, puede configurar toda la información de la cadena de conexión en una base de datos para los desarrolladores y hacer que la cadena de conexión sea de solo lectura. De este modo, puede proporcionar una manera sencilla de garantizar que cada desarrollador use la ruta de acceso correcta para el acceso a los datos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing>
 - [Extensión de propiedades](../../extensibility/internals/extending-properties.md)

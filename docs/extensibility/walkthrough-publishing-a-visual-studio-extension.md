@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: publicar una extensión de Visual Studio | Microsoft Docs'
+description: Obtenga información sobre cómo publicar una extensión de Visual Studio en el Visual Studio Marketplace, que permite a los desarrolladores buscar extensiones nuevas y actualizadas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,18 +13,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6bd7a5d9622f7aea7382522dcf69ce660b61ae7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cbdd283c5d147c53e7d82843207b48d0dbf6e6e9
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904744"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877889"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>Tutorial: publicar una extensión de Visual Studio
 
 En este tutorial se muestra cómo publicar una extensión de Visual Studio en el Visual Studio Marketplace. Al agregar la extensión a Marketplace, los desarrolladores pueden usar **extensiones y actualizaciones** para buscar extensiones nuevas y actualizadas.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
 
  Para seguir este tutorial, debe instalar SDK de Visual Studio. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
@@ -68,9 +70,9 @@ En este artículo se usa una extensión VSPackage predeterminada, pero los pasos
 
 6. Elija el publicador que quiere usar para cargar la extensión. Puede cambiar los publicadores haciendo clic en los nombres de publicador que aparecen a la izquierda. Haga clic en **nueva extensión** y seleccione **Visual Studio**.
 
-7. En **1: cargar la extensión**, puede elegir cargar un archivo VSIX directamente en Visual Studio Marketplace o simplemente agregar un vínculo a su propio sitio Web. En este ejemplo, se carga la extensión *TestPublish. vsix* . Arrastre y coloque la extensión o use el vínculo **haga clic** para buscar el archivo. Busque la extensión en la carpeta \bin\Release del proyecto.  Haga clic en **Continuar**.
+7. En **1: cargar la extensión**, puede elegir cargar un archivo VSIX directamente en Visual Studio Marketplace o simplemente agregar un vínculo a su propio sitio Web. En este ejemplo, se carga la extensión *TestPublish. vsix* . Arrastre y coloque la extensión o use el vínculo **haga clic** para buscar el archivo. Busque la extensión en la carpeta \bin\Release del proyecto.  Haga clic en **Continue**.
 
-8. En **2: proporcione los detalles**de la extensión, algunos campos se rellenan automáticamente desde el archivo *source. Extension. vsixmanifest* de la extensión. Encuentre más detalles sobre cada uno de los siguientes:
+8. En **2: proporcione los detalles** de la extensión, algunos campos se rellenan automáticamente desde el archivo *source. Extension. vsixmanifest* de la extensión. Encuentre más detalles sobre cada uno de los siguientes:
 
     * **Nombre interno** se usa en la dirección URL de la página de detalles de la extensión. Por ejemplo, la publicación de una extensión con el nombre de publicador "nombre" y la especificación del nombre interno como "My Extension" da como resultado una dirección URL de "Marketplace. VisualStudio \. com/items? itemname = nombre. extensión" para la página de detalles de la extensión.
 
@@ -150,7 +152,7 @@ Puede quitar la extensión del Visual Studio Marketplace y del equipo.
 
 2. En la esquina superior derecha, haga clic en **publicar** extensiones. Elija el publicador que usó para publicar **TestPublish**. Aparece la lista de **TestPublish** .
 
-3. Haga clic con el botón derecho en la entrada de extensión y haga clic en **quitar**. Se le pedirá que confirme si desea quitar la extensión. Haga clic en **OK**.
+3. Haga clic con el botón derecho en la entrada de extensión y haga clic en **quitar**. Se le pedirá que confirme si desea quitar la extensión. Haga clic en **Aceptar**.
 
 ### <a name="to-remove-the-extension-from-your-computer"></a>Para quitar la extensión del equipo
 

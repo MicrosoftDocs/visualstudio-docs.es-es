@@ -1,5 +1,7 @@
 ---
 title: Migración de un servicio de lenguaje heredado | Microsoft Docs
+description: Obtenga información sobre cómo actualizar un servicio de lenguaje a la versión más reciente de Visual Studio actualizando el proyecto y agregando un archivo source. Extension. vsixmanifest.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e2eff3f3a27b7d8a276c8ed776c1e11d5ce332e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ced200ff24b17f312e63642c8083f038a6fc6a4d
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707107"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877837"
 ---
 # <a name="migrating-a-legacy-language-service"></a>Migración de un servicio de lenguaje heredado
 Puede migrar un servicio de lenguaje heredado a una versión posterior de Visual Studio actualizando el proyecto y agregando un archivo source. Extension. vsixmanifest al proyecto. El propio servicio de lenguaje seguirá funcionando como antes, ya que el editor de Visual Studio lo adapta.
@@ -51,13 +53,13 @@ Puede migrar un servicio de lenguaje heredado a una versión posterior de Visual
 
 4. Abra la solución RegExLangServ. sln.
 
-5. Aparece la ventana de **actualización unidireccional** . Haga clic en **OK**.
+5. Aparece la ventana de **actualización unidireccional** . Haga clic en **Aceptar**.
 
 6. Actualice las propiedades del proyecto. Para abrir la ventana **propiedades del proyecto** , seleccione el nodo del proyecto en el **Explorador de soluciones**, haga clic con el botón derecho y seleccione **propiedades**.
 
     - En la pestaña **aplicación** , cambie **plataforma de destino** a **4.6.1**.
 
-    - En la pestaña **depurar** , en el cuadro **programa externo de inicio** , escriba ** \<Visual Studio installation path>\Common7\IDE\devenv.exe.**
+    - En la pestaña **depurar** , en el cuadro **programa externo de inicio** , escriba **\<Visual Studio installation path>\Common7\IDE\devenv.exe.**
 
          En el cuadro argumentos de la **línea de comandos** , escriba/**rootsuffix exp**.
 
@@ -83,11 +85,11 @@ Puede migrar un servicio de lenguaje heredado a una versión posterior de Visual
 
 10. Debe agregar un archivo source. Extension. vsixmanifest.
 
-    - Copie este archivo desde una extensión existente al directorio del proyecto. (Una forma de obtener este archivo es crear un proyecto VSIX (en **archivo**, haga clic en **nuevo**y, a continuación, haga clic en **proyecto**. En Visual Basic o C#, haga clic en **extensibilidad**y, a continuación, seleccione **Proyecto VSIX**).
+    - Copie este archivo desde una extensión existente al directorio del proyecto. (Una forma de obtener este archivo es crear un proyecto VSIX (en **archivo**, haga clic en **nuevo** y, a continuación, haga clic en **proyecto**. En Visual Basic o C#, haga clic en **extensibilidad** y, a continuación, seleccione **Proyecto VSIX**).
 
     - Agregue el archivo al proyecto.
 
-    - En las **propiedades**del archivo, establezca **acción de compilación** en **ninguno**.
+    - En las **propiedades** del archivo, establezca **acción de compilación** en **ninguno**.
 
     - Abra el archivo con el **Editor de manifiestos de VSIX**.
 
@@ -99,13 +101,13 @@ Puede migrar un servicio de lenguaje heredado a una versión posterior de Visual
 
     - **Descripción**: un servicio de lenguaje de expresiones regulares.
 
-    - En **activos**, haga clic en **nuevo**, seleccione el **tipo** en **Microsoft. VisualStudio. VsPackage**, establezca el **origen** en **un proyecto en la solución actual**y, a continuación, establezca el **proyecto** en **RegExLangServ**.
+    - En **activos**, haga clic en **nuevo**, seleccione el **tipo** en **Microsoft. VisualStudio. VsPackage**, establezca el **origen** en **un proyecto en la solución actual** y, a continuación, establezca el **proyecto** en **RegExLangServ**.
 
     - Guarde y cierre el archivo.
 
-11. Compile la solución. Los archivos compilados se implementan en **%userprofile%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ \\ **.
+11. Compile la solución. Los archivos compilados se implementan en **%userprofile%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ \\**.
 
 12. Inicie la depuración. Se abre una segunda instancia de Visual Studio.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Extensibilidad de servicio de lenguaje heredado](../../extensibility/internals/legacy-language-service-extensibility.md)

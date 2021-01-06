@@ -1,5 +1,7 @@
 ---
 title: Configuración del proyecto para compilar | Microsoft Docs
+description: Obtenga información sobre cómo se administra una lista de configuraciones de soluciones para una solución determinada mediante el cuadro de diálogo Configuraciones de soluciones en un nuevo tipo de proyecto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdd084053e06206a99298b234b4d51c8504119a2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7768de1b57142e201c4108f5ef0c0768c57a8639
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706726"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878006"
 ---
 # <a name="project-configuration-for-building"></a>Configuración del proyecto para la compilación
 La lista de configuraciones de soluciones de una solución determinada se administra mediante el cuadro de diálogo Configuraciones de soluciones.
@@ -55,7 +57,7 @@ La lista de configuraciones de soluciones de una solución determinada se admini
 
  Además, puede proporcionar una cuadrícula en la ventana dependencias del proyecto. Para obtener más información, consulte [propiedades Mostrar cuadrícula](../../extensibility/internals/properties-display-grid.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Administración de opciones de configuración](../../extensibility/internals/managing-configuration-options.md)
 - [Configuración del proyecto para administrar la implementación](../../extensibility/internals/project-configuration-for-managing-deployment.md)
 - [Configuración del proyecto para la salida](../../extensibility/internals/project-configuration-for-output.md)

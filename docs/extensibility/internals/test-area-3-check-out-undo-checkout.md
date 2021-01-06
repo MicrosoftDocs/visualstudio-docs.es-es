@@ -1,5 +1,7 @@
 ---
-title: 'Área de prueba 3: extraer del repositorio-deshacer la desprotección | Microsoft Docs'
+title: 'Área de prueba 3: comprobar Out-Undo desprotección | Microsoft Docs'
+description: Este área de prueba del complemento de control de código fuente cubre la edición y reversión de los elementos del almacén de versiones mediante los comandos desproteger y Deshacer desproteger.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,17 +15,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5365da1e342df5aea9c1b1cd2ae5a446baea57f1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6292051e6ddf11e3ce4b56648574e0207bb5a41
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704617"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877694"
 ---
 # <a name="test-area-3-check-outundo-checkout"></a>Área de prueba 3: Extracción del repositorio y cancelación de la operación
 Este área de prueba del complemento de control de código fuente cubre la edición y reversión de los elementos del almacén de versiones a través de los comandos **Desproteger** y **Deshacer desproteger** .
 
-**Desproteger: marca**un elemento en el almacén de versiones como desprotegido, modifica la copia local a lectura/escritura.
+**Desproteger: marca** un elemento en el almacén de versiones como desprotegido, modifica la copia local a lectura/escritura.
 
 **Deshacer desprotección**: marca un elemento en el almacén de versiones como protegido, revierte la copia local al estado anterior a la desprotección (dependiendo de las opciones).
 
@@ -53,7 +55,7 @@ Este área de prueba del complemento de control de código fuente cubre la edici
 
 Los siguientes son casos de prueba específicos para el área de prueba de desprotección/Deshacer desprotección.
 
-### <a name="case-3a-check-out"></a>Caso 3A: extraer del repositorio
+### <a name="case-3a-check-out"></a>Caso 3a: Desproteger
 
 Esta sección se centra en el funcionamiento del comando Desproteger.
 
@@ -84,8 +86,8 @@ Cuando el usuario se vuelve a conectar al almacén de versiones, se sincronizan 
 |------------|----------------|--------------------------------|
 |Mientras está desconectado, desproteja un archivo y, a continuación, conéctese a la sincronización|1. desconectar un proyecto controlado mediante el cuadro de diálogo Cambiar control de código fuente (**archivo**, **control de código fuente**, **Cambiar control de código fuente**).<br />2. desproteger un archivo.<br />3. Haga clic en Desproteger (desconectada) en el cuadro de diálogo de advertencia.<br />4. edite el archivo.<br />5. Conéctese mediante el cuadro de diálogo Cambiar control de código fuente.<br />6. obtener la versión más reciente del archivo editado.|Comportamiento esperado común|
 
-### <a name="case-3c-query-editquery-save-qeqs"></a>Caso 3C: editar consulta/guardar consulta (QEQS)
- Se realiza un seguimiento de los elementos bajo control de código fuente para editar, cambiar y guardar para ayudar a los usuarios a administrar fácilmente sus archivos. Cuando se edita un elemento controlado que está "protegido", QEQS intercepta el intento de edición y pregunta al usuario si desea desproteger el archivo para editarlo. En función de las **herramientas**, la configuración de **Opciones** , el usuario se ve obligado a desproteger el archivo para editarlo o se le puede permitir editar una copia en la memoria y desprotegerlo más tarde. Si la opción **herramientas**del usuario, **Opciones** no está establecida para mostrar el cuadro de diálogo desproteger y simplemente desprotegerlo, cuando el usuario realice su edición, el archivo se desprotegerá automáticamente, siempre que sea posible.
+### <a name="case-3c-query-editquery-save-qeqs"></a>Caso 3c: Edición o guardado de consultas (QEQS)
+ Se realiza un seguimiento de los elementos bajo control de código fuente para editar, cambiar y guardar para ayudar a los usuarios a administrar fácilmente sus archivos. Cuando se edita un elemento controlado que está "protegido", QEQS intercepta el intento de edición y pregunta al usuario si desea desproteger el archivo para editarlo. En función de las **herramientas**, la configuración de **Opciones** , el usuario se ve obligado a desproteger el archivo para editarlo o se le puede permitir editar una copia en la memoria y desprotegerlo más tarde. Si la opción **herramientas** del usuario, **Opciones** no está establecida para mostrar el cuadro de diálogo desproteger y simplemente desprotegerlo, cuando el usuario realice su edición, el archivo se desprotegerá automáticamente, siempre que sea posible.
 
 #### <a name="expected-behavior"></a>Comportamiento esperado
 
@@ -104,7 +106,7 @@ Cuando el usuario se vuelve a conectar al almacén de versiones, se sincronizan 
 |Editar un archivo de proyecto que está protegido|Repita los pasos descritos en la prueba anterior, pero en lugar de modificar un archivo de texto, modifique Project cambiando las propiedades del proyecto.|Igual que la prueba anterior.|
 
 ### <a name="case-3d-silent-check-out"></a>Caso 3D: desprotección silenciosa
- En este tema se **describen los escenarios** de desprotección en los que el cuadro de diálogo desproteger no aparece en las **herramientas**, **Opciones**, configuración de **control de código fuente**del usuario.
+ En este tema se **describen los escenarios** de desprotección en los que el cuadro de diálogo desproteger no aparece en las **herramientas**, **Opciones**, configuración de **control de código fuente** del usuario.
 
 #### <a name="expected-behavior"></a>Comportamiento esperado
 
@@ -137,5 +139,5 @@ Cuando el usuario se vuelve a conectar al almacén de versiones, se sincronizan 
 |Deshacer la desprotección de un proyecto después de agregar archivos al proyecto|1. cree un nuevo proyecto y agréguelo al control de código fuente.<br />2. Desproteja el proyecto.<br />3. Agregue un archivo al proyecto.<br />4. deshacer la desprotección del proyecto.|El archivo agregado se quita del proyecto en Explorador de soluciones.<br /><br /> El proyecto ya no está desprotegido.|
 |Deshacer la desprotección de un proyecto después de eliminar archivos del proyecto|1. cree un nuevo proyecto y agréguelo al control de código fuente.<br />2. Desproteja el proyecto.<br />3. eliminar un archivo del proyecto.<br />4. deshacer la desprotección del proyecto.|El archivo eliminado aparece en el proyecto en Explorador de soluciones.<br /><br /> El proyecto ya no está desprotegido.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Guía de pruebas para los complementos de control de código fuente](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

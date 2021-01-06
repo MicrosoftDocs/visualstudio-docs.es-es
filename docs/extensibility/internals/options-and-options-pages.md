@@ -1,5 +1,7 @@
 ---
 title: Opciones y páginas de opciones | Microsoft Docs
+description: Obtenga información sobre la compatibilidad con las páginas de opciones, que permiten cambiar los valores de las opciones que determinan el estado de un VSPackage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d21bf6d5ab7e23047a02e1188fff9a47d0cbd58
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4699063d753539c72c373266b3fce9a0fdf8f00
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706834"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877876"
 ---
 # <a name="options-and-options-pages"></a>Opciones y páginas de opciones
 Al hacer clic en **Opciones** en el menú **herramientas** , se abre el cuadro de diálogo **Opciones** . Las opciones de este cuadro de diálogo se conocen colectivamente como páginas de opciones. El control de árbol del panel de navegación incluye las categorías de opciones, y cada categoría tiene páginas de opciones. Al seleccionar una página, sus opciones aparecen en el panel derecho. Estas páginas permiten cambiar los valores de las opciones que determinan el estado de un VSPackage.
@@ -37,9 +39,9 @@ Al hacer clic en **Opciones** en el menú **herramientas** , se abre el cuadro d
  [!code-csharp[VSSDKSupportForOptionsPages#1](../../extensibility/internals/codesnippet/CSharp/options-and-options-pages_1.cs)]
  [!code-vb[VSSDKSupportForOptionsPages#1](../../extensibility/internals/codesnippet/VisualBasic/options-and-options-pages_1.vb)]
 
- Si <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A> es HKEY_CURRENT_USER \software\microsoft\visualstudio\8.0exp, los pares de nombre y valor de propiedad son subclaves de HKEY_CURRENT_USER \software\microsoft\visualstudio\8.0exp\dialogpage\company.OptionsPage.optionspagegeneral.
+ Si <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A> se HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0Exp, los pares de nombre y valor de propiedad son subclaves de HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0Exp\DialogPage\Company.OptionsPage.OptionsPageGeneral.
 
- La ruta de acceso del registro de la página de opciones se determina mediante la combinación de <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A> , la palabra ToolsOptionsPages y la categoría y el nombre de la página de opciones. Por ejemplo, si la Página opciones personalizadas tiene la categoría, mis páginas de opciones y <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A> es HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\8.0exp, la Página opciones tiene la clave del registro HKEY_LOCAL_MACHINE opción \Software\microsoft\visualstudio\8.0exp\toolsoptionspages\my Pages\Custom.
+ La ruta de acceso del registro de la página de opciones se determina mediante la combinación de <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A> , la palabra ToolsOptionsPages y la categoría y el nombre de la página de opciones. Por ejemplo, si la Página opciones personalizadas tiene la categoría, mis páginas de opciones y <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A> es HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp, la Página opciones tiene la clave del registro HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\ToolsOptionsPages\My Option Pages\Custom.
 
 ## <a name="toolsoptions-page-attributes-and-layout"></a>Herramientas/opciones página atributos y diseño
  El <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> atributo determina la agrupación de las páginas de opciones personalizadas en categorías en el árbol de navegación del cuadro de diálogo **Opciones** . El <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> atributo asocia una página de opciones al VSPackage que proporciona la interfaz. Observe el fragmento de código siguiente:
@@ -81,7 +83,7 @@ Al hacer clic en **Opciones** en el menú **herramientas** , se abre el cuadro d
 
  Cuando el <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> atributo registra una página de opciones, la página se registra bajo la clave AutomationProperties si el `SupportsAutomation` argumento del atributo es `true` . Automation examina esta entrada del registro para buscar el VSPackage asociado y, a continuación, la automatización accede a la propiedad a través de la página Opciones hospedadas, en este caso, mi página de cuadrícula.
 
- La ruta de acceso del registro de la propiedad Automation se determina mediante la combinación de <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A> , la palabra, AutomationProperties y la categoría y el nombre de la página de opciones. Por ejemplo, si la página de opciones tiene la categoría mi categoría, el nombre de la página mi cuadrícula y el <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A> HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\8.0exp, la propiedad Automation tiene la clave del registro HKEY_LOCAL_MACHINE página de cuadrícula Category\My de \software\microsoft\visualstudio\8.0exp\automationproperties\my.
+ La ruta de acceso del registro de la propiedad Automation se determina mediante la combinación de <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A> , la palabra, AutomationProperties y la categoría y el nombre de la página de opciones. Por ejemplo, si la Página opciones tiene la categoría mi categoría, el nombre de la página mi cuadrícula y el <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A> HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp, la propiedad Automation tiene la clave del registro HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\AutomationProperties\My Category\My Grid Page.
 
 > [!NOTE]
 > La página de la cuadrícula nombre canónico, mi Category.My, es el valor de la subclave Name de esta clave.

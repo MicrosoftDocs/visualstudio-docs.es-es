@@ -1,5 +1,7 @@
 ---
-title: 'Área de prueba 1: agregar a abierto desde el control de código fuente | Microsoft Docs'
+title: 'Área de prueba 1: agregar To-Open desde el control de código fuente | Microsoft Docs'
+description: Este área de prueba del complemento de control de código fuente cubre la colocación de soluciones o proyectos bajo control de código fuente y su recuperación desde el control de código fuente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ac7b8e5a60fe25ac22272cc28fc3ed6f903b058
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 608d3489f657cf38d310e67a17bdd48a529de3e5
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704679"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877746"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>Área de prueba 1: Incorporación y apertura desde el control de código fuente
 Este área de prueba del complemento de control de código fuente cubre la colocación de soluciones o proyectos bajo control de código fuente y su recuperación desde el control de código fuente.
@@ -24,7 +26,7 @@ Este área de prueba del complemento de control de código fuente cubre la coloc
 ## <a name="command-menu-access"></a>Acceso al menú de comandos
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]En los casos de prueba se usan las siguientes rutas de menú del entorno de desarrollo integrado:
 
-- En [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] , abra desde el control de código fuente: **archivo**, **abrir**, **Project** / **solución**de proyecto; busque en la [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] ubicación.
+- En [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] , abra desde el control de código fuente: **archivo**, **abrir**,  / **solución** de proyecto; busque en la [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] ubicación.
 
 - Para otros complementos de control de código fuente, abra desde el control de código fuente: **archivo**, **control de código fuente**, **abrir desde el control de código fuente**.
 
@@ -54,7 +56,7 @@ Este área de prueba del complemento de control de código fuente cubre la coloc
 ## <a name="test-cases"></a>Casos de prueba
  Los siguientes son casos de prueba específicos para el área de prueba agregar a o abrir desde control de código fuente.
 
-### <a name="case-1a-add-solution-to-source-control"></a>Caso 1A: Agregar solución al control de código fuente
+### <a name="case-1a-add-solution-to-source-control"></a>Caso 1a: Adición de la solución al control de código fuente
  Este caso de prueba se centra en agregar soluciones al control de código fuente.
 
 |Acción|Pasos de prueba|Resultados esperados que se van a comprobar|
@@ -74,7 +76,7 @@ Este área de prueba del complemento de control de código fuente cubre la coloc
 |Abrir una solución que contenga un proyecto Web local o IIS desde el control de código fuente|1. cree un proyecto Web local o IIS.<br />2. Agregue la solución al control de código fuente.<br />3. Cierre la solución.<br />4. Abra la solución desde el control de código fuente a una nueva ubicación.|Solución/proyecto abierto desde el control de código fuente.|
 |Abrir una solución que contiene un proyecto Web de sitio remoto desde el control de código fuente|1. cree un proyecto Web de sitio remoto.<br />2. Agregue la solución al control de código fuente. Si este paso se realiza correctamente, continúe con el paso siguiente.<br />3. Cierre la solución.<br />4. Abra la solución desde el control de código fuente a una nueva ubicación.|`Result from Step 2:`<br /><br /> La web del sitio remoto no está bajo control de código fuente.<br /><br /> `Result from Step 4:`<br /><br /> Solución abierta desde el control de código fuente.<br /><br /> El proyecto de sitio remoto está cargado, pero no está bajo control de código fuente.|
 
-### <a name="case-1c-add-solution-from-source-control"></a>Caso 1C: Agregar solución desde el control de código fuente
+### <a name="case-1c-add-solution-from-source-control"></a>Caso 1c: Adición de la solución desde el control de código fuente
  Este caso de prueba se centra en agregar soluciones desde el control de código fuente.
 
 |Acción|Pasos de prueba|Resultados esperados que se van a comprobar|
@@ -83,5 +85,5 @@ Este área de prueba del complemento de control de código fuente cubre la coloc
 |Agregar a la solución con un solo proyecto: proyecto único|1. cree una solución con un solo proyecto.<br />2. Agregue la solución al control de código fuente.<br />3. Cierre la solución.<br />4. cree una segunda solución vacía.<br />5. agregar la solución controlada previamente desde el control de código fuente (**archivo**, **control de código fuente**, **Agregar proyecto desde el control de código fuente**).|El proyecto agregado aparece en **Explorador de soluciones** y está protegido.|
 |Agregar a solución: solución agregada al control de código fuente mediante selección|1. cree una solución con un proyecto.<br />2. Agregue solo la solución al control de código fuente como selección. Si este paso se realiza correctamente, continúe con el paso siguiente.<br />3. Cierre la solución.<br />4. cree una nueva solución.<br />5. agregar la solución controlada previamente desde el control de código fuente (**archivo**, **control de código fuente**, **Agregar proyecto desde el control de código fuente**).|`Result from Step 2:`<br /><br /> El proyecto no está bajo control de código fuente.<br /><br /> `Result from Step 5:`<br /><br /> Si la primera solución tenía elementos de la solución, no se pueden agregar desde el control de código fuente, por lo que no aparecen.<br /><br /> El proyecto de la primera solución aparece como no disponible.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Guía de pruebas para los complementos de control de código fuente](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

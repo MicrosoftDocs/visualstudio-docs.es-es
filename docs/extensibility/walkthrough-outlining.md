@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: esquematización | Microsoft Docs'
+description: Obtenga información sobre cómo definir y mostrar regiones de esquematización en el contexto de un servicio de lenguaje o para su propia extensión de nombre de archivo y tipo de contenido.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,18 +15,18 @@ ms.workload:
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 6e3e60fe873d7bcb512e56c844e76fcbef037d42
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: ea0f16deee17e2cd249c0ee1de0861a936abc75c
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508930"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877902"
 ---
 # <a name="walkthrough-outlining"></a>Tutorial: Esquematización
 Configure características basadas en lenguajes como la esquematización definiendo los tipos de regiones de texto que desea expandir o contraer. Puede definir regiones en el contexto de un servicio de lenguaje o definir su propia extensión de nombre de archivo y tipo de contenido, y aplicar la definición de región solo a ese tipo o aplicar las definiciones de región a un tipo de contenido existente (como "texto"). En este tutorial se muestra cómo definir y mostrar las regiones de esquematización.
 
-## <a name="prerequisites"></a>Requisitos previos
- A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+## <a name="prerequisites"></a>Prerrequisitos
+ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS después. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-managed-extensibility-framework-mef-project"></a>Crear un proyecto Managed Extensibility Framework (MEF)
 
@@ -134,5 +136,5 @@ Configure características basadas en lenguajes como la esquematización definie
 
 4. Debe haber una región de esquematización que incluya ambos corchetes. Debe poder hacer clic en el signo menos situado a la izquierda del corchete de apertura para contraer la región de esquematización. Cuando se contrae la región, el símbolo de puntos suspensivos (*...*) debe aparecer a la izquierda de la región contraída y debe aparecer un elemento emergente que contiene el **texto de desplazamiento** del texto cuando se mueve el puntero sobre los puntos suspensivos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Tutorial: vincular un tipo de contenido a una extensión de nombre de archivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
