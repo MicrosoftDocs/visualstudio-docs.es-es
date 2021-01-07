@@ -33,6 +33,8 @@
       href: azure-sql-database-add-connected-service.md
     - name: Incorporación de Azure Storage
       href: vs-azure-tools-connected-services-storage.md
+    - name: Adición de Azure App Configuration
+      href: vs-azure-tools-connected-services-app-configuration.md
 - name: Desarrollo de Azure Cloud Services
   expanded: false
   items:

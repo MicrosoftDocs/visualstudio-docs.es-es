@@ -4,17 +4,19 @@
   items:
     - name: Un primer vistazo a las herramientas de prueba
       href: improve-code-quality.md
+    - name: Tareas y herramientas de pruebas unitarias
+      href: unit-test-your-code.md
+- name: Tutoriales
+  items:
+    - name: Introducción
+      href: getting-started-with-unit-testing.md
 - name: Pruebas unitarias
   items:
-    - name: Introducción a las herramientas de pruebas unitarias
-      href: unit-test-your-code.md
-    - name: Primeros pasos
-      href: getting-started-with-unit-testing.md
     - name: Conceptos básicos de las pruebas unitarias
       href: unit-test-basics.md
     - name: Crear un proyecto de prueba unitaria
       href: create-a-unit-test-project.md
-    - name: Crear un comando de pruebas unitarias
+    - name: Creación de pruebas unitarias a partir de código
       href: create-unit-tests-menu.md
     - name: IntelliTest
       items:

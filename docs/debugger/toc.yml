@@ -6,8 +6,6 @@
       href: what-is-debugging.md
     - name: Herramientas y técnicas de depuración
       href: write-better-code-with-visual-studio.md
-    - name: Búsqueda de la tarea de depuración
-      href: find-your-debugging-task.md
 - name: Guías de inicio rápido
   items:
     - name: Primer vistazo al depurador
@@ -944,5 +942,7 @@
                   href: copyright-notice-for-spy-increment-help.md
 - name: Recursos
   items:
+    - name: 'Preguntas frecuentes: búsqueda de una característica de depuración'
+      href: find-your-debugging-task.md
     - name: Novedades del depurador de Visual Studio
       href: what-s-new-for-the-debugger-in-visual-studio.md

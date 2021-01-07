@@ -10,12 +10,12 @@ metadata:
   ms.author: mikejo
   manager: jillfra
   ms.date: 03/23/2020
-  ms.openlocfilehash: b2b60b7208fe06aa7e2c2e327174e7536941f204
-  ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+  ms.openlocfilehash: 8967405f3b743b2449a90817a700fec092319245
+  ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 10/08/2020
-  ms.locfileid: "91830699"
+  ms.lasthandoff: 12/23/2020
+  ms.locfileid: "97756583"
 landingContent:
 - title: Información sobre las herramientas de prueba
   linkLists:
@@ -23,36 +23,44 @@ landingContent:
     links:
     - text: Un primer vistazo a las herramientas de prueba
       url: improve-code-quality.md
-    - text: Introducción a las herramientas de pruebas unitarias
+    - text: Tareas y herramientas de pruebas unitarias
       url: unit-test-your-code.md
-    - text: Información general sobre las pruebas unitarias en vivo
+    - text: Información general sobre Live Unit Testing (.NET)
       url: live-unit-testing-intro.md
-- title: Pruebas unitarias
+- title: Introducción
   linkLists:
   - linkListType: tutorial
     links:
     - text: Introducción a las pruebas unitarias
       url: getting-started-with-unit-testing.md
-    - text: Crear y ejecutar pruebas unitarias en código administrado
-      url: walkthrough-creating-and-running-unit-tests-for-managed-code.md
     - text: Ejecutar pruebas unitarias con el Explorador de pruebas
       url: run-unit-tests-with-test-explorer.md
+  - linkListType: how-to-guide
+    links:
+    - text: Conceptos básicos de las pruebas unitarias
+      url: unit-test-basics.md
+    - text: 'Cobertura de código: permite determinar la cantidad de código que se está probando'
+      url: using-code-coverage-to-determine-how-much-code-is-being-tested.md
+- title: Pruebas unitarias de .NET
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Crear y ejecutar pruebas unitarias en código administrado
+      url: walkthrough-creating-and-running-unit-tests-for-managed-code.md
     - text: Introducción a Live Unit Testing
       url: live-unit-testing-start.md
     - text: Generación de pruebas unitarias (IntelliTest)
       url: generate-unit-tests-for-your-code-with-intellitest.md
-- title: Más herramientas de prueba
-  linkLists:
   - linkListType: how-to-guide
     links:
-    - text: 'Cobertura de código: permite determinar la cantidad de código que se está probando'
-      url: using-code-coverage-to-determine-how-much-code-is-being-tested.md
     - text: 'Microsoft Fakes: aislamiento del código sometido a pruebas'
       url: isolating-code-under-test-with-microsoft-fakes.md
-    - text: Interfaz de usuario codificada (en desuso)
-      url: use-ui-automation-to-test-your-code.md
-    - text: Prueba de carga (en desuso)
-      url: quickstart-create-a-load-test-project.md
+- title: Pruebas unitarias de C++
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Escritura de pruebas unitarias para C/C++
+      url: writing-unit-tests-for-c-cpp.md
 - title: Herramientas relacionadas (Azure DevOps)
   linkLists:
   - linkListType: how-to-guide
@@ -63,3 +71,11 @@ landingContent:
       url: /azure/devops/test/load-test/getting-started-with-performance-testing?view=azure-devops&preserve-view=true
     - text: Prueba continua (Azure Pipelines)
       url: /azure/devops/pipelines/?view=azure-devops&preserve-view=true
+- title: Más herramientas de prueba
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Interfaz de usuario codificada (en desuso)
+      url: use-ui-automation-to-test-your-code.md
+    - text: Prueba de carga (en desuso)
+      url: quickstart-create-a-load-test-project.md
