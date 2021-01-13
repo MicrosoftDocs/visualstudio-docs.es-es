@@ -1,5 +1,7 @@
 ---
 title: Depuración de servicios WCF | Microsoft Docs
+description: Encuentre vínculos a artículos sobre la depuración de servicios de Windows Communication Foundation (WCF) en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92349fe14aef8204c67b88ad0f6a4b34346d2347
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 6381a00216e0eabe97277d8c04b71f6377634497
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738072"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728192"
 ---
 # <a name="debugging-wcf-services"></a>Depurar servicios WCF
 ## <a name="in-this-section"></a>En esta sección
