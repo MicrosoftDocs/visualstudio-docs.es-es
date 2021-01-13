@@ -17,12 +17,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 99274d3884d002f6dee29a632f8a7c08ac90a56f
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: fc6260bdac6f4313daddc1ca59f8541bc4fda7c8
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211133"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761308"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Opciones de Python en Visual Studio
 
@@ -75,7 +75,7 @@ También hay opciones adicionales específicas de Python en la pestaña **Editor
 | --- | --- | --- |
 | **Ruta de acceso de ejecutable de Conda** | (en blanco) | Especifica una ruta de acceso exacta al ejecutable *conda.exe* en lugar de depender de la instalación predeterminada de Miniconda que se incluye con la carga de trabajo de Python. Si aquí se indica otra ruta de acceso, tiene prioridad sobre la instalación predeterminada y sobre cualquier otro ejecutable conda.exe que se especifique en el registro. Puede cambiar esta configuración si instala manualmente una versión más reciente de Anaconda o Miniconda o si quiere usar una distribución de 32 bits en lugar de la distribución predeterminada de 64 bits. |
 
-![Cuadro de diálogo Opciones de Python, pestaña Servidor de lenguaje](media/options-conda.png)
+![Captura de pantalla del cuadro de diálogo Opciones de Visual Studio Tools con Conda seleccionado en las opciones de Python y con el campo Ruta de acceso del ejecutable de conda en el panel derecho.](media/options-conda.png)
 
 ::: moniker-end
 
@@ -135,7 +135,7 @@ También hay opciones adicionales específicas de Python en la pestaña **Editor
 | **Deshabilitar las finalizaciones desde Typeshed** | Desactivado | Por lo general, Visual Studio IntelliSense usa una versión empaquetada de Typeshed (un conjunto de archivos *.pyi*) para encontrar las sugerencias de tipo para la biblioteca estándar y las bibliotecas de terceros para Python 2 y Python 3. Establecer esta opción deshabilita el comportamiento de TypeShed empaquetado. |
 | **Ruta de acceso de Typeshed personalizada** | (en blanco) | Si se establece, Visual Studio usa los archivos de Typeshed en esta ruta de acceso en lugar de su versión empaquetada. Omita si la opción **Deshabilitar las finalizaciones desde Typeshed** está establecida. |
 
-![Cuadro de diálogo Opciones de Python, pestaña Servidor de lenguaje](media/options-language-server.png)
+![Captura de pantalla del cuadro de diálogo Opciones de Visual Studio Tools con Servidor de lenguaje seleccionado en las opciones de Python y con las opciones de Servidor de lenguaje en el panel derecho.](media/options-language-server.png)
 
 ::: moniker-end
 
@@ -173,6 +173,6 @@ También hay opciones adicionales específicas de Python en la pestaña **Editor
 
 (Pestaña **Entorno** > **Fuentes y colores** dentro del grupo **Editor de texto**).
 
-Los nombres de las opciones de Pyhton están precedidas por **Python** y se explican por sí mismos. La fuente predeterminada para todos los temas de color de Visual Studio es Consolas de 10 pt, normal (no negrita). Los colores predeterminados varían según el tema. Normalmente, una fuente o un color se cambia si le resulta difícil de leer texto con la configuración predeterminada.
+Los nombres de las opciones de Pyhton están precedidas por **Python** y se explican por sí mismos. La fuente predeterminada para todos los temas de color de Visual Studio es Consolas de 10 puntos, normal (no negrita). Los colores predeterminados varían según el tema. Normalmente, una fuente o un color se cambia si le resulta difícil de leer texto con la configuración predeterminada.
 
 ![Opciones de fuente y color de Python](media/options-fonts-and-colors.png)

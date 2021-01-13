@@ -1,6 +1,7 @@
 ---
 title: Administración de excepciones con el depurador | Microsoft Docs
-ms.custom: seodec18
+description: Obtenga información sobre cómo especificar en qué excepciones se interrumpe el depurador, en qué punto quiere que se interrumpa y cómo se controlan las interrupciones.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 10/09/2018
 ms.topic: how-to
 f1_keywords:
@@ -33,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff28944a36d338230a17cd533a4832452e42885b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 210f2b2fc3e037f58fed19031d7ae9762185a640
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348462"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903853"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Administración de excepciones con el depurador en Visual Studio
 
@@ -216,9 +217,9 @@ Para agregar excepciones condicionales:
 
    ![Condiciones adicionales para una excepción](../debugger/media/extraconditionsforanexception.png "ExtraConditionsForAnException")
 
-3. Para cada línea de condición, escriba el nombre del módulo y cambie la lista de operadores de comparación a **Es igual a** o **No es igual a**. Puede especificar caracteres comodín ( **\\\*** ) en el nombre para especificar más de un módulo.
+3. Para cada línea de condición, escriba el nombre del módulo y cambie la lista de operadores de comparación a **Es igual a** o **No es igual a**. Puede especificar caracteres comodín (* *\\\** _) en el nombre para especificar más de un módulo.
 
-4. Si necesita eliminar una condición, elija la **X** al final de la línea de condición.
+4. Si necesita eliminar una condición, elija la _ *X** al final de la línea de condición.
 
 ## <a name="see-also"></a>Vea también
 

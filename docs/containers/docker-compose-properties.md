@@ -1,18 +1,18 @@
 ---
 title: Configuración de compilación de Docker Compose
 author: ghogen
-description: Información general del proceso de compilación en las herramientas de contenedor
+description: Obtenga información sobre cómo editar las propiedades de compilación de Docker Compose para personalizar el modo en que Visual Studio compila y ejecuta una aplicación de Docker Compose.
 ms.custom: SEO-VS-2020
 ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: reference
-ms.openlocfilehash: a25aca5082d8a55eccff861d542d16095c178a4f
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 0a27535e9c07f87391b3cdfd8440578e36feee9e
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036306"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846810"
 ---
 # <a name="docker-compose-build-properties"></a>Propiedades de compilación de Docker Compose
 

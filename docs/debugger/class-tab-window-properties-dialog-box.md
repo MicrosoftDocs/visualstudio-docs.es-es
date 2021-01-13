@@ -1,5 +1,7 @@
 ---
 title: Pestaña Clase (Cuadro de diálogo Propiedades de la ventana) | Microsoft Docs
+description: Seleccione la pestaña Clase en Visual Studio, mueva el foco a la ventana de la vista Ventanas, seleccione un nodo de ventana y elija Vista > Propiedades para ver el cuadro de diálogo Propiedades de la ventana.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0917c9a038b42e6302ec1f1782f095ca397a92ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3bf37d9e5d672f0ecce262699fdd5d704cde9efe
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565018"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729033"
 ---
 # <a name="class-tab-window-properties-dialog-box"></a>Pestaña Clase (Cuadro de diálogo Propiedades de la ventana)
 Use la pestaña **Clase** para mostrar información sobre la clase de la ventana seleccionada. Para mostrar el [cuadro de diálogo Propiedades de la ventana](../debugger/window-properties-dialog-box.md), mueva el foco a la ventana [Vista Ventanas](../debugger/windows-view.md). Seleccione un nodo de ventana en el árbol y, después, elija **Propiedades** en el menú **Vista**.

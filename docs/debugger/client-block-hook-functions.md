@@ -1,5 +1,7 @@
 ---
 title: Funciones de enlace con los bloques de tipo cliente | Microsoft Docs
+description: Escriba una función de enlace con bloques de tipo cliente para validar el contenido de los datos almacenados en bloques _CLIENT_BLOCK o informar sobre él.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 881809dda7e8254f9d337b68f0c317eccfd9093d
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 720087e3c109c6dec4db06d993d0357dc1eddcd4
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600195"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729020"
 ---
 # <a name="client-block-hook-functions"></a>Funciones de enlace con los bloques de tipo cliente
 Si desea validar o informar del contenido de los datos almacenados en bloques `_CLIENT_BLOCK`, puede escribir una función específicamente para ello. Esta función debe tener un prototipo similar al siguiente, como se define en CRTDBG.H:
@@ -35,7 +37,7 @@ Si desea validar o informar del contenido de los datos almacenados en bloques `_
 void YourClientDump(void *, size_t)
 ```
 
- En otras palabras, la función de enlace debería aceptar un puntero **void**al inicio del bloque de asignación, junto con un valor de tipo **size_t** que indique el tamaño de la asignación y devuelva `void`. Aparte de eso, el contenido se puede elegir libremente.
+ En otras palabras, la función de enlace debería aceptar un puntero **void** al inicio del bloque de asignación, junto con un valor de tipo **size_t** que indique el tamaño de la asignación y devuelva `void`. Aparte de eso, el contenido se puede elegir libremente.
 
  Una vez instalada la función de enlace mediante [_CrtSetDumpClient](/cpp/c-runtime-library/reference/crtsetdumpclient), recibirá una llamada cada vez que se realice un volcado de un bloque `_CLIENT_BLOCK`. Se puede, entonces, utilizar [_CrtReportBlockType](/cpp/c-runtime-library/reference/crtreportblocktype) para obtener información del tipo o subtipo de los bloques volcados.
 

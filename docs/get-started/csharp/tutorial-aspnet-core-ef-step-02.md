@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 6852ac1148c9a8001476eb9bb68e9e97d66e3eed
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: 21052d59205c7ddc14247f180348fea3b8d5652a
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91780985"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833252"
 ---
 # <a name="step-2-create-your-first-aspnet-core-web-app"></a>Paso 2: Creación de la primera aplicación web de ASP.NET Core
 
@@ -94,7 +94,7 @@ Reemplace el contenido de `<div>` en *Index.cshtml* por este marcado:
 
 Vuelva a ejecutar la aplicación. Debería ver que ahora la página muestra la hora actual, pero siempre es medianoche. Eso no es correcto.
 
-![Proyecto de ASP.NET Core en Visual Studio 2019 en el explorador](media/vs-2019/vs2019-app-in-browser.png)
+![Captura de pantalla de la página principal de la aplicación en una ventana del explorador. El contenido de la página indica lo siguiente: "It's 12:00 AM right now on the server!" (Ahora mismo son las 00:00 en el servidor).](media/vs-2019/vs2019-app-in-browser.png)
 
 ## <a name="debug-the-application"></a>Depurar la aplicación
 
@@ -102,7 +102,7 @@ Agregue un punto de interrupción al método `OnGet` donde asignamos un valor a 
 
 La ejecución se detiene en la línea y puede verse que `DateTime.Today` incluye la fecha pero la hora es siempre medianoche porque no incluye datos de hora.
 
-![Proyecto de ASP.NET Core en Visual Studio 2019 en el explorador](media/vs-2019/vs2019-breakpoint.png)
+![Captura de pantalla en la que se muestra el código de Index.cshtml.cs en Visual Studio. Se ha establecido un punto de interrupción en la línea, "Time = DateTime.Today.ToShortTimeString();".](media/vs-2019/vs2019-breakpoint.png)
 
 Cámbielo para que se use `DateTime.Now` y continúe la ejecución. El nuevo código para `OnGet` debe ser:
 
@@ -118,7 +118,7 @@ Ahora debería ver la hora real del servidor en el explorador cuando navegue a l
 > [!NOTE]
 > Los resultados pueden diferir de la imagen, ya que el formato de salida de ToShortDateTimeString depende de la configuración de la referencia cultural actual. Vea <xref:System.DateTime.ToShortTimeString>.
 
-![Proyecto de ASP.NET Core en Visual Studio 2019 en el explorador](media/vs-2019/vs2019-app-fixed-in-browser.png)
+![Captura de pantalla de la página principal de la aplicación en una ventana del explorador. El contenido de la página indica lo siguiente: "It's 1:46 AM right now on the server!" (Ahora mismo es la 1:46 en el servidor).](media/vs-2019/vs2019-app-fixed-in-browser.png)
 
 ## <a name="next-steps"></a>Pasos siguientes
 
@@ -126,6 +126,6 @@ En el vídeo siguiente, aprenderá a agregar compatibilidad con datos a la aplic
 
 [Tutorial: Trabajo con datos en la aplicación de ASP.NET Core](tutorial-aspnet-core-ef-step-03.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Tutorial: Creación de una aplicación web de páginas de Razor con ASP.NETCore](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1&preserve-view=true)

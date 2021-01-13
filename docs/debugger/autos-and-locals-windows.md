@@ -1,6 +1,7 @@
 ---
 title: 'Inspección de variables: ventanas Automático y Variables locales | Microsoft Docs'
-ms.custom: seodec18
+description: Inspeccione las variables en las ventanas Automático y Variables locales durante la depuración en Visual Studio. Las ventanas Automático y Variables locales muestran valores de variables durante la depuración.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 10/18/2018
 ms.topic: how-to
 f1_keywords:
@@ -15,16 +16,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ae67fadf5d9710f2088f47617b74eeeb8212826
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b57c27d038193a5c73bee48814a2aa457a94b6a6
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350750"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97760918"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Inspección de variables en las ventanas Automático y Variables locales
 
-Las ventanas **Automático** y **Variables locales** muestran valores de variables durante la depuración. Las ventanas solo están disponibles durante una sesión de depuración. La ventana **Automático** muestra las variables usadas en torno al punto de interrupción actual. La ventana **Variables locales** muestra las variables definidas en el ámbito local, que suele ser la función o el método actuales. Si esta es la primera vez que intenta depurar código, le recomendamos que lea [Cómo depurar para principiantes sin experiencia](../debugger/debugging-absolute-beginners.md) y [Herramientas y técnicas de depuración para ayudarle a escribir código de mayor calidad](../debugger/write-better-code-with-visual-studio.md) antes de continuar con este artículo.
+Las ventanas **Automático** y **Variables locales** muestran valores de variables durante la depuración. Las ventanas solo están disponibles durante una sesión de depuración. La ventana **Automático** muestra las variables usadas en torno al punto de interrupción actual. La ventana **Variables locales** muestra las variables definidas en el ámbito local, que suele ser la función o el método actuales.
+
+> [!NOTE]
+> Si esta es la primera vez que intenta depurar código, le recomendamos que lea [Cómo depurar para principiantes sin experiencia](../debugger/debugging-absolute-beginners.md) y [Herramientas y técnicas de depuración para ayudarle a escribir código de mayor calidad](../debugger/write-better-code-with-visual-studio.md) antes de continuar con este artículo.
 
  La ventana **Automático** está disponible para código de C#, Visual Basic, C++ y Python, pero no de JavaScript o F#.
 
@@ -39,7 +43,7 @@ Para abrir la ventana **Variables locales**, seleccione **Depurar** > **Ventanas
 
 Las matrices y los objetos se muestran en las ventanas **Automático** y **Variables locales** como controles de árbol. Seleccione la flecha situada a la izquierda del nombre de una variable para expandir la vista y mostrar los campos y las propiedades. En el ejemplo siguiente se muestra un objeto <xref:System.IO.FileStream?displayProperty=fullName> en la ventana **Variables locales**:
 
-![FileStream en Variables locales](../debugger/media/locals-filestream.png "FileStream en Variables locales")
+![Captura de pantalla de la ventana Variables locales con "archivo" establecido en un valor "System.IO.FileStream".](../debugger/media/locals-filestream.png)
 
 Un valor en rojo en la ventana **Variables locales** o **Automático** indica que el valor ha cambiado desde la última evaluación. La causa del cambio podría ser una sesión de depuración anterior o la modificación del valor en la ventana.
 
@@ -99,7 +103,7 @@ Establezca un punto de interrupción e inicie la depuración. Cuando se alcanza 
 
 ## <a name="variables-in-the-autos-window-c-c-visual-basic-python"></a><a name="bkmk_whatvariables"></a> Variables en la ventana Automático (C#, C++, Visual Basic, Python)
 
-Los diferentes lenguajes de código muestran distintas variables en la ventana**Automático**.
+Los diferentes lenguajes de código muestran distintas variables en la ventana **Automático**.
 
 - En C# y Visual Basic, la ventana **Automático** muestra cualquier variable que se usa en la línea actual o anterior. Por ejemplo, en código de C# o Visual Basic, declare las cuatro variables siguientes:
 
@@ -116,7 +120,7 @@ Los diferentes lenguajes de código muestran distintas variables en la ventana**
 
    Establezca un punto de interrupción en la línea `c = 3;` e inicie el depurador. Cuando la ejecución se pause, se mostrará la ventana **Automático**:
 
-   ![CSharp en Automático](../debugger/media/autos-csharp.png "CSharp en Automático")
+   ![Captura de pantalla de la ventana Automático con el valor de "c" establecido en "0".](../debugger/media/autos-csharp.png)
 
    El valor de `c` es 0, porque la línea `c = 3` aún no se ha ejecutado.
 
@@ -136,7 +140,7 @@ Los diferentes lenguajes de código muestran distintas variables en la ventana**
 
     Establezca un punto de interrupción en la línea `e = 5;` y ejecute el depurador. Cuando la ejecución se detenga, se mostrará la ventana **Automático**:
 
-    ![C++ en Automático](../debugger/media/autos-cplus.png "C++ en Automático")
+    ![Captura de pantalla de la ventana Automático con una línea resaltada en la que se muestra el tipo "int" de nombre "c" con un valor de "3".](../debugger/media/autos-cplus.png)
 
     La variable `e` no se ha inicializado porque la línea `e = 5` aún no se ha ejecutado.
 

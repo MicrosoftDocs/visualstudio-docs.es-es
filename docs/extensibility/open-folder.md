@@ -1,5 +1,7 @@
 ---
 title: Introducción a la extensibilidad de Abrir carpeta en Visual Studio | Microsoft Docs
+description: Obtenga información sobre la extensibilidad de la característica Abrir carpeta, que permite a los usuarios abrir un código base en Visual Studio sin archivos de proyecto o de solución.
+ms.custom: SEO-VS-2020
 ms.date: 02/21/2018
 ms.topic: overview
 ms.assetid: 94c3f8bf-1de3-40ea-aded-7f40c4b314c7
@@ -8,12 +10,12 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 964b360806f6f834aa57c475d2117c124f2cf8af
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 81ca62c834e09d542016ffce607abf3c32cf2a61
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668643"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863749"
 ---
 # <a name="open-folder-extensibility"></a>Extensibilidad de Abrir carpeta
 

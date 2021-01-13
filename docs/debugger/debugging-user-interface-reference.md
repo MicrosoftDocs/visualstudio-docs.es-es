@@ -1,5 +1,7 @@
 ---
 title: 'Depuración: referencia de la interfaz de usuario | Microsoft Docs'
+description: Revise los vínculos a información de referencia sobre los distintos cuadros de diálogo que puede encontrar en la interfaz de usuario de depuración de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 318ab9263b530ac283d210f59aa8ca29733c6e8d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 6bfd91e91b89e5a6409bf0c34245a6d37eba905e
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738054"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726805"
 ---
 # <a name="debugging-user-interface-reference"></a>Depuración: referencia de la interfaz de usuario
 Puede encontrar los cuadros de diálogo siguientes cuando depura la aplicación.

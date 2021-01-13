@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b47b59c8d45d76fae1e61584510ae39fe5a91784
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 6e6a37301477b43063169143456fc21a3c783968
+ms.sourcegitcommit: 4976419fae731860295dbcd072e6778832f7255d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94973801"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97917916"
 ---
 # <a name="profile-python-code"></a>Generación de perfiles de código de Python
 
@@ -32,7 +32,7 @@ Al seleccionar **Aceptar**, el generador de perfiles se ejecuta y abre un inform
 ![Informe de rendimiento de generación de perfiles](media/profiling-results.png)
 
 > [!Note]
-> En la actualidad, Visual Studio solo admite este nivel de generación de perfiles para toda la aplicación, pero sí desea sus comentarios sobre las funcionalidades futuras. Use el botón **Comentarios sobre el producto** que está en la parte inferior de esta página.
+> Al generar perfiles de una aplicación de Python, Visual Studio recopila datos durante la vigencia del proceso. Actualmente no es posible pausar la generación de perfiles. Nos encantaría recibir sus comentarios sobre las funcionalidades futuras. Use el botón **Comentarios sobre el producto** que está en la parte inferior de esta página.
 
 ## <a name="profiling-for-ironpython"></a>Generación de perfiles para IronPython
 

@@ -1,5 +1,7 @@
 ---
 title: Presentación de las propiedades de los mensajes | Microsoft Docs
+description: La vista Mensajes muestra el flujo de mensajes de una ventana, un proceso o un subproceso. Obtenga información sobre cómo mostrar las propiedades de un mensaje que aparece en la vista Mensajes.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35ca92905a100de09753b72aa8e913343c0729bf
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 009bada1354739c25aceab4cd19de77e255e9ad0
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852353"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903329"
 ---
 # <a name="how-to-display-message-properties"></a>Procedimiento Presentación de las propiedades de los mensajes
 Para obtener más información sobre un mensaje que se muestra en la [vista Mensajes](../debugger/messages-view.md), utilice el [cuadro de diálogo Propiedades del mensaje](../debugger/message-properties-dialog-box.md).

@@ -1,5 +1,7 @@
 ---
 title: 'Depuración ASP.NET: Requisitos del sistema | Microsoft Docs'
+description: Revise los requisitos de software y seguridad para la depuración local, en la que Visual Studio y la aplicación web se ejecutan en el mismo equipo, y para la depuración remota de ASP.NET.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 78f947c7ab9fcc1031d457526240ecdd7e9119a3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2002d6ccbbe8f2cd3e186c49aca7a846568eedb2
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745805"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729124"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>Depuración ASP.NET: Requisitos del sistema
 En este tema se describen los requisitos de software y seguridad de los escenarios de depuración de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] :
@@ -37,7 +39,7 @@ En este tema se describen los requisitos de software y seguridad de los escenari
 ## <a name="security-requirements"></a>Requisitos de seguridad
  Para la depuración remota, los equipos locales y remotos deben estar en una configuración de dominio o una configuración de grupo de trabajo.
 
- Para depurar el proceso de trabajo de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] (hospedado por un grupo de aplicaciones), debe tener permiso para depurar dicho proceso. De forma predeterminada, las aplicaciones [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] anteriores a IIS 6.0 se ejecutan como el usuario **ASPNET**. En IIS 6.0 e IIS 7.0, la cuenta predeterminada es **NETWORK SERVICE**. Si el proceso de trabajo se ejecuta con la cuenta **ASPNET**o **NETWORK SERVICE**, deberá tener privilegios de administrador para depurarlo.
+ Para depurar el proceso de trabajo de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] (hospedado por un grupo de aplicaciones), debe tener permiso para depurar dicho proceso. De forma predeterminada, las aplicaciones [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] anteriores a IIS 6.0 se ejecutan como el usuario **ASPNET**. En IIS 6.0 e IIS 7.0, la cuenta predeterminada es **NETWORK SERVICE**. Si el proceso de trabajo se ejecuta con la cuenta **ASPNET** o **NETWORK SERVICE**, deberá tener privilegios de administrador para depurarlo.
 
  > [!IMPORTANT]
  > A partir de Windows Server 2008 R2, se recomienda usar [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) como identidad para cada grupo de aplicaciones.

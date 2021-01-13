@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58faf100c61a25ae014bdcc0b09d161e924ad5c9
-ms.sourcegitcommit: 21ac4a0c8ffac3964b75604678b12e0955e0159b
+ms.openlocfilehash: b934c6cb7c2a6ba98113a5e68091ab53f54b1423
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97098532"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833369"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Ejecutar pruebas unitarias con el Explorador de pruebas
 
@@ -70,7 +70,7 @@ Puede ejecutar todas las pruebas de la solución, todas las pruebas de un grupo 
 
 - Seleccione las pruebas individuales que quiera ejecutar, abra el menú contextual de la prueba seleccionada y seleccione **Ejecutar pruebas seleccionadas**.
 
-- Si las pruebas individuales no tienen ninguna dependencia que impida que se ejecuten en cualquier orden, active la ejecución de pruebas paralelas con el botón de alternancia ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) en la barra de herramientas. Esto puede reducir considerablemente el tiempo necesario para ejecutar todas las pruebas.
+- Si las pruebas individuales no tienen ninguna dependencia que impida que se ejecuten en cualquier orden, active la ejecución de pruebas paralelas con el botón de alternancia ![Captura de pantalla del botón de alternancia Ejecución de pruebas paralelas en la barra de herramientas del Explorador de pruebas de Visual Studio. Cuando se selecciona este botón, las pruebas se ejecutan en paralelo.](../test/media/ute_parallelicon-small.png) en la barra de herramientas. Esto puede reducir considerablemente el tiempo necesario para ejecutar todas las pruebas.
 
 Según se vayan ejecutando las pruebas, se animará la **barra de superado o no superado** en la parte superior de la ventana del **Explorador de pruebas**. Al finalizar la ejecución de las pruebas, la **barra de superado o no superado** se mostrará en color verde si se superan todas las pruebas. En caso contrario, se volverá de color rojo.
 ::: moniker-end
@@ -150,7 +150,7 @@ El Explorador de pruebas le permite agrupar las pruebas en una jerarquía. La ag
 
 Puede definir sus propios niveles de la jerarquía y del grupo por **Estado** y, luego, **Clase**, por ejemplo, si selecciona las opciones Agrupar por en el orden que prefiera.
 
-![Agrupar por estado y luego clase](../test/media/vs-2019/test-explorer-groupby-state-16-2.png)
+![Captura de pantalla del Explorador de pruebas de Visual Studio en la que se muestra una jerarquía de prueba en un panel y el menú Agrupar por en el otro con las casillas de las opciones Clase y Estado activadas.](../test/media/vs-2019/test-explorer-groupby-state-16-2.png)
 ::: moniker-end
 
 ### <a name="test-explorer-groups"></a>Grupos del Explorador de pruebas
@@ -207,7 +207,7 @@ Puede crear y guardar una lista de pruebas que desea ejecutar o ver como grupo. 
 
 **Para abrir una lista de reproducción**, elija **Prueba** > **Lista de reproducción** en el menú de Visual Studio, y seleccione un elemento entre las listas de reproducción usadas recientemente. O bien, elija **Abrir lista de reproducción** para especificar el nombre y la ubicación de la lista de reproducción específica.
 
-Si las pruebas individuales no tienen ninguna dependencia que impida que se ejecuten en cualquier orden, active la ejecución de pruebas paralelas con el botón de alternancia ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) en la barra de herramientas. Esto puede reducir considerablemente el tiempo necesario para ejecutar todas las pruebas.
+Si las pruebas individuales no tienen ninguna dependencia que impida que se ejecuten en cualquier orden, active la ejecución de pruebas paralelas con el botón de alternancia ![Captura de pantalla del botón de alternancia Ejecución de pruebas paralelas en la barra de herramientas del Explorador de pruebas de Visual Studio.](../test/media/ute_parallelicon-small.png) en la barra de herramientas. Esto puede reducir considerablemente el tiempo necesario para ejecutar todas las pruebas.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 Puede crear y guardar una lista de pruebas que desea ejecutar o ver como grupo. Cuando seleccione una lista de reproducción, las pruebas de la lista aparecerá en una nueva pestaña del Explorador de pruebas. Puede agregar una prueba a más de una lista de reproducción.
@@ -264,7 +264,7 @@ Use el siguiente formato para xUnit. Asegúrese de que haya un espacio entre el 
 
 Los [grupos](#test-explorer-groups) también están disponibles como columnas en el Explorador de pruebas, junto con Rasgo, Seguimiento de la pila, Mensaje de error y Nombre completo. La mayoría de las columnas no están visibles de manera predeterminada y es posible personalizar qué columnas se ven y el orden en que se muestran.
 
-![Agrupar por estado y luego clase](../test/media/vs-2019/test-explorer-columns-16-2.png)
+![Captura de pantalla del Explorador de pruebas de Visual Studio en la que se muestra un menú con la opción Columnas seleccionada y un submenú con las opciones Duración, Rasgos y Mensaje de error seleccionadas.](../test/media/vs-2019/test-explorer-columns-16-2.png)
 
 ### <a name="filter-sort-and-rearrange-test-columns"></a>Filtrar, ordenar y reorganizar columnas de prueba
 

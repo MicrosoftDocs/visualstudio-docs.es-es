@@ -1,5 +1,7 @@
 ---
 title: Depuración COM y ActiveX | Microsoft Docs
+description: Obtenga sugerencias sobre cómo depurar aplicaciones COM y controles ActiveX en Visual Studio. Aprenda a depurar servidores y contenedores COM. Conozca las herramientas de depuración COM.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a818cfde2996b26bd9d5f31b128e41f2a9fe2e1
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 1df80e8486cb8f8667494137392fadb0a9754e8b
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188685"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729007"
 ---
 # <a name="com-and-activex-debugging"></a>Depurar COM y ActiveX
 Esta sección proporciona sugerencias sobre cómo depurar aplicaciones COM y controles ActiveX.

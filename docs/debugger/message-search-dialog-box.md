@@ -1,5 +1,7 @@
 ---
 title: Buscar mensaje (cuadro de diálogo) | Microsoft Docs
+description: Use Buscar mensaje para buscar y seleccionar el nodo de un mensaje concreto en la vista Mensajes. Puede buscar por manipulador, tipo de mensaje e identificador del mensaje.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fed7fe9bf9e10bf893159a11d28f991a255791c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3d100b36ff706752f1855939d4c45b5b7793ccfa
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62931295"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903056"
 ---
 # <a name="message-search-dialog-box"></a>Cuadro de diálogo Buscar mensaje
 Use este cuadro de diálogo para buscar y seleccionar el nodo de un mensaje concreto en la [vista Mensajes](../debugger/messages-view.md). Para mostrar este cuadro de diálogo, mueva el foco a la ventana de la Vista Mensajes. Después, elija **Buscar mensaje** en el menú **Buscar**.

@@ -1,5 +1,7 @@
 ---
 title: Preguntas más frecuentes sobre la depuración de código nativo | Microsoft Docs
+description: Encuentre vínculos a las preguntas más frecuentes (P+F) y a las respuestas sobre cómo depurar código nativo en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 15a94d20ade7bfe3e5aaac2c90bb3ba452ef4330
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 43c6bf4e817f78867534abdca69c7e975397d287
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738175"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726974"
 ---
 # <a name="debugging-native-code-faqs"></a>Preguntas más frecuentes sobre la depuración de código nativo
 Los siguientes temas contienen repuestas a algunas preguntas frecuentes:

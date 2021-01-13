@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 64166768dea1da015c223a74c74440ae09a0d106
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: 74b6b6b6a8f7a9f5f234a9b46c799e6e0580536f
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96863041"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761334"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Especificadores de formato para C++ en el depurador de Visual Studio
 Puede cambiar el formato en el que se muestra un valor en las ventanas **Inspección**, **Automático** y **Variables locales** mediante especificadores de formato.
@@ -54,7 +54,7 @@ int main() {
 
 Agregue la variable `my_var1` a la ventana **Inspección** al depurar, **Depurar** > **Ventanas** > **Inspección** > **Inspección 1**. Después, haga clic con el botón derecho en la variable y seleccione **Presentación hexadecimal**. Ahora, en la ventana **Inspección** se muestra el valor 0x0065. Para ver este valor expresado como un carácter en lugar de un entero, primero haga clic con el botón derecho y anule la selección de **Presentación hexadecimal**. Luego, agregue el especificador de formato de carácter **, c** en la columna **Nombre** después del nombre de la variable. En la columna **Valor** se muestra ahora **101 "e"** .
 
-![WatchFormatCPlus1](../debugger/media/watchformatcplus1.png "WatchFormatCPlus1")
+![Captura de pantalla de la ventana Inspección de Visual Studio con una línea seleccionada que muestra "my_var1, c" con un valor de "101 'e'" y un tipo "int".](../debugger/media/watchformatcplus1.png)
 
 ::: moniker range=">= vs-2019" 
 Puede ver una lista de especificadores de formato disponibles y seleccionar de dicha lista anexando una coma (,) al valor de la ventana **Inspección**. 

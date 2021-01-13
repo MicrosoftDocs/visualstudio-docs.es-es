@@ -1,5 +1,7 @@
 ---
 title: Depuración de proyectos DLL | Microsoft Docs
+description: Depure archivos de biblioteca de vínculos dinámicos (DLL) en Visual Studio. Use Visual Studio para crear, compilar, configurar y depurar archivos .dll.
+ms.custom: SEO-VS-2020
 ms.date: 11/06/2018
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 898eb0eb1489d83e97ec9f0a5b38b475bda0199d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ec78e9a04062699ea699f45671e1210fc2306631
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315075"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728517"
 ---
 # <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>Depuración de archivos DLL en Visual Studio (C#, C++, Visual Basic, F#)
 

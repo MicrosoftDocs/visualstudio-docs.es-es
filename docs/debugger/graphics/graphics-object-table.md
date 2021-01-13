@@ -1,5 +1,7 @@
 ---
 title: Tabla de objetos gráficos | Microsoft Docs
+description: Obtenga información sobre la Tabla de objetos gráficos, la cual, en el Análisis de fotogramas de gráficos de Visual Studio, le ayuda a comprender los objetos de Direct3D que admiten un fotograma de un juego o aplicación.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea80420b2146bd8c604a95d71012009dcb940ef5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b7e746d37edaca87abfca42f315a65a470369e7e
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72735448"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727585"
 ---
 # <a name="graphics-object-table"></a>Tabla de objetos gráficos
 La Tabla de objetos gráficos en el análisis de gráficos de Visual Studio le ayuda a comprender los objetos de Direct3D que admiten un fotograma de su juego o aplicación.

@@ -1,5 +1,7 @@
 ---
 title: Herramientas para depurar procesos y subprocesos | Microsoft Docs
+description: Revise las herramientas para depurar procesos y subprocesos en Visual Studio. Los procesos y subprocesos representan secuencias de instrucciones que se deben ejecutar en un orden concreto.
+ms.custom: SEO-VS-2020
 ms.date: 04/21/2018
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dcdaf083462b75485449cae05894681e2bb5c900
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 51917065e8764f7edbebbdb3bfcc7a03cc9723d4
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738380"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727156"
 ---
 # <a name="tools-to-debug-threads-and-processes-in-visual-studio"></a>Herramientas para depurar procesos y subprocesos en Visual Studio
 *Subprocesos* y *procesos* son conceptos relacionados en informática. Los dos representan secuencias de instrucciones que se deben ejecutar en un orden concreto. Sin embargo, las instrucciones de subprocesos o procesos independientes se pueden ejecutar en paralelo.

@@ -1,5 +1,6 @@
 ---
 title: Cuadro de diálogo Opciones de mensaje | Microsoft Docs
+description: En Opciones de mensaje, especifique los mensajes que aparecerán en la vista Mensajes y los datos de los mensajes que se mostrarán.
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97704675e1135959744e60724e4e3381bccf2b30
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f066dd687f4bfbb6b286667abe0bb67224a7b763
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62931327"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903589"
 ---
 # <a name="message-options-dialog-box"></a>Cuadro de diálogo Opciones de mensaje
 Utilice este cuadro de diálogo para seleccionar los mensajes que se enumeran en la [vista Mensajes](../debugger/messages-view.md). Para mostrar este cuadro de diálogo, elija **Mensajes de registro** en el menú de **Spy**.
@@ -37,10 +38,10 @@ Utilice este cuadro de diálogo para seleccionar los mensajes que se enumeran en
 
  [Búsqueda de mensajes en la vista Mensajes](../debugger/how-to-search-for-a-message-in-messages-view.md): explica cómo buscar un mensaje específico en la vista Mensajes.
 
- [Apertura de la vista Mensajes desde Buscar ventana](../debugger/how-to-open-messages-view-from-find-window.md): explica cómo abrir la vista Mensajes desde el cuadro de diálogo Buscar ventana.
+ [Apertura de la vista Mensajes desde Buscar ventana](../debugger/how-to-open-messages-view-from-find-window.md) Explica cómo abrir la vista Mensajes desde el cuadro de diálogo Buscar ventana.
 
- [Vista Mensajes](../debugger/messages-view.md): muestra el flujo de mensajes asociado a una ventana, proceso o subproceso.
+ [Vista Mensajes](../debugger/messages-view.md)Muestra el flujo de mensajes asociado a una ventana, un proceso o un subproceso.
 
- [Vistas de Spy + +](../debugger/spy-increment-views.md): explica las vistas de árbol de Spy++ de ventanas, mensajes, procesos y subprocesos.
+ [Vistas de Spy++](../debugger/spy-increment-views.md) Explica las vistas de árbol de Spy++ de ventanas, mensajes, procesos y subprocesos.
 
- [Uso de Spy + +](../debugger/using-spy-increment.md): se presenta la herramienta Spy++ y se explica cómo se puede usar.
+ [Uso de Spy++](../debugger/using-spy-increment.md): se presenta la herramienta Spy++ y se explica cómo se puede usar.

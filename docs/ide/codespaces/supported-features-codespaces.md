@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: f253ba9b7e46f809bc107aa2b3e26f635d778770
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 68fbdef0e86b125971480ae1bd6a7ba6d3108cd8
+ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928559"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "97696539"
 ---
 # <a name="supported-visual-studio-features-preview"></a>Características de Visual Studio compatibles (Preview)
 
@@ -27,7 +27,7 @@ En la actual versión [beta pública](https://github.com/features/codespaces) de
 Esto no **pretende ser una lista exhaustiva**, sino explicar la funcionalidad general de Visual Studio cuando se conecta a un codespace.
 
 > [!NOTE]
-> Si echa en falta alguna característica al usar codespaces con Visual Studio, háganoslo saber creando una incidencia en https://developercommunity.visualstudio.com/. Esto nos ayuda a priorizar las características más deseadas.
+> Si echa en falta alguna característica al usar codespaces con Visual Studio, háganoslo saber creando una incidencia en [Visual Studio Developer Community](https://aka.ms/feedback/suggest?space=8). Esto nos ayuda a priorizar las características más deseadas.
 
 > [!NOTE]
 > Las características que se describen a continuación corresponden a Visual Studio y no a los otros dos clientes de GitHub Codespaces: Visual Studio Code y el editor del explorador.
@@ -108,8 +108,8 @@ No disponible aún:
 
 Al trabajar con Visual Studio conectado a un codespace, se obtienen las mismas características de accesibilidad que al trabajar de forma local.
 
-* Control de código fuente: compatibilidad con Git completa a través de la nueva [ventana de Git](https://devblogs.microsoft.com/visualstudio/improved-git-experience-in-visual-studio-2019/).
-* Accesibilidad: hay un problema conocido con la tecnología de asistencia que no es capaz de acceder a la appcasting de una aplicación depurada. Además de esta limitación, no creemos que haya otros problemas de compatibilidad que no existan ya en la experiencia de Visual Studio local. Si detecta errores comuníquenoslo presentando una incidencia en [Developer Community](https://developercommunity.visualstudio.com/).
+* Control de código fuente: compatibilidad con Git completa a través de la nueva [experiencia de Git integrada](../git-with-visual-studio.md).
+* Accesibilidad: hay un problema conocido con la tecnología de asistencia que no es capaz de acceder a la appcasting de una aplicación depurada. Además de esta limitación, no creemos que haya otros problemas de compatibilidad que no existan ya en la experiencia de Visual Studio local. Si detecta errores comuníquenoslo presentando una incidencia en [Developer Community](https://aka.ms/feedback/report?space=8).
 * Publicación: se admite la publicación en Azure a través de Acciones de GitHub.
 * Servicios conectados: se admiten parcialmente App Insights, KeyVault, Storage, SQL, Redis, Cosmos, openAPI y gRPC.
 * Explorador de pruebas*: en su mayor parte.

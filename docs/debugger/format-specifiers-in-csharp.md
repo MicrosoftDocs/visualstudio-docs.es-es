@@ -27,12 +27,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 31739b9c8fecc862c891173a792986b467730400
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: a832bcee3f722cabaedcb3ac0672dbe09a4e77c4
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96862794"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761217"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Especificadores de formato en C# en el depurador de Visual Studio
 Puede cambiar el formato en el que se muestra un valor en la ventana **Inspección** mediante especificadores de formato. También puede usar especificadores de formato en la ventana **Inmediato** y la ventana **Comando**, en [puntos de seguimiento](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints) y en ventanas de código fuente. Si realiza una pausa sobre una expresión de esas ventanas, el resultado aparecerá en una [información sobre datos](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) en el formato de presentación especificado.
@@ -52,7 +52,7 @@ Se usará el siguiente código de ejemplo:
 
 Agregue la variable `my_var1` a la ventana **Inspección** al depurar, **Depurar** > **Ventanas** > **Inspección** > **Inspección 1**. Después, haga clic con el botón derecho en la variable y seleccione **Presentación hexadecimal**. Ahora, en la ventana **Inspección** se muestra el valor 0x0065. Para ver este valor como un entero decimal en lugar de un entero hexadecimal, agregue el especificador de formato decimal **, d** en la columna **Nombre** después del nombre de la variable. En la columna **Valor** ahora se muestra **101**.
 
-![WatchFormatCSharp](../debugger/media/watchformatcsharp.png "WatchFormatCSharp")
+![Captura de pantalla de la ventana Inspección de Visual Studio con una línea que muestra "my_var1, d" con un valor de "101" y un tipo "int".](../debugger/media/watchformatcsharp.png)
 
 ::: moniker range=">= vs-2019" 
 

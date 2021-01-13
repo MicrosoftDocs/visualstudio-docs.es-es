@@ -1,5 +1,7 @@
 ---
 title: Vista Mensajes | Microsoft Docs
+description: Cada ventana, subproceso y proceso tiene una secuencia de mensajes asociada que se puede ver en una ventana de la vista Mensajes. Obtenga información sobre cómo abrir y controlar la vista Mensajes.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b20ed28518c9156e82c6fe75ecceda74c66615d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 692902b2d2b612c71c2d1dc0f936c7550f430847
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62845862"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903408"
 ---
 # <a name="messages-view"></a>Vista Mensajes
 Cada ventana tiene una secuencia de mensajes asociada. La ventana de vista Mensajes muestra esta secuencia de mensajes. Se muestran el identificador de ventana, el código del mensaje y el mensaje. También puede crear una vista Mensajes para un subproceso o un proceso. Esto permite ver los mensajes enviados a todas las ventanas que pertenecen a un proceso o un subproceso específico, lo que es especialmente útil para capturar los mensajes de inicialización de la ventana.
@@ -60,7 +62,7 @@ Cada ventana tiene una secuencia de mensajes asociada. La ventana de vista Mensa
  [Mostrar Propiedades de mensaje](../debugger/how-to-display-message-properties.md) Describe cómo mostrar más información sobre un mensaje.
 
 ## <a name="related-sections"></a>Secciones relacionadas
- [Vistas de Spy++](../debugger/spy-increment-views.md) Explica las vistas de árbol de Spy++ de ventanas, mensajes, procesos y subprocesos.
+ [Vistas de Spy ++](../debugger/spy-increment-views.md): se explican las vistas de árbol de ventanas, mensajes, procesos y subprocesos de Spy++.
 
  [Usar Spy++](../debugger/using-spy-increment.md) Presenta la herramienta Spy++ y explica cómo se puede usar.
 

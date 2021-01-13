@@ -1,8 +1,8 @@
 ---
-title: Recursos de solución de problemas de errores
+title: Recursos de solución de problemas de errores del IDE
 description: Obtenga información sobre cómo usar artículos de Knowledge Base, foros o soporte técnico de productos para solucionar errores del IDE que no son lo suficientemente descriptivos como para ayudarle a resolver un problema.
 ms.custom: SEO-VS-2020
-ms.date: 07/23/2020
+ms.date: 12/18/2020
 ms.topic: troubleshooting
 f1_keywords:
 - VS.Message.0x00005A89
@@ -95,16 +95,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3fdf18c67be8188bd03c498778fe8e6ad9409ee
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 081b36767388da4f78e1fd8f1e0f279d7ca201c9
+ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96616594"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "97696546"
 ---
-# <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Recursos para solucionar problemas de errores en el entorno de desarrollo integrado
+# <a name="resources-for-troubleshooting-ide-errors"></a>Recursos de solución de problemas de errores del IDE
 
-No todos los mensajes de error tienen un tema de ayuda específico asociado. Si con la información del mensaje de error no consigue resolver el problema, puede consultar otros recursos, como los artículos de Knowledge Base, los foros o los servicios de soporte técnico.
+No todos los mensajes de error tienen un tema de ayuda específico asociado. Si con la información de un mensaje de error no consigue resolver el problema, puede consultar otros recursos, como los artículos de Knowledge Base, los foros o los servicios de soporte técnico.
 
 > [!NOTE]
 > Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Solución de problemas de Visual Studio para Mac](/visualstudio/mac/troubleshooting).
@@ -115,9 +115,14 @@ En Knowledge Base (KB), puede buscar en línea artículos sobre problemas con pr
 
 ## <a name="developer-forums"></a>Foros para desarrolladores
 
-Los foros permiten al usuario interactuar con otros desarrolladores y con empleados de Microsoft. Si se produce un error para el que no encuentra solución, puede publicar preguntas sobre dicho problema en un foro. También puede buscar en los grupos de noticias para ver si ya se ha expuesto el mismo problema.
+Los foros permiten al usuario interactuar con otros desarrolladores y con empleados de Microsoft. Si se produce un error para el que no encuentra solución, puede publicar preguntas sobre dicho problema en un foro. También puede buscar en los foros para ver si ya hay publicaciones sobre el mismo problema.
 
-Puede acceder a foros, blogs, chats y otros recursos en el sitio web de las [comunidades técnicas de Microsoft](https://techcommunity.microsoft.com/t5/Communities/ct-p/communities).
+Esta es una lista de foros:
+
+- [Visual Studio en Q&A](/answers/products/vs/)
+- [Foro de MSDN de Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio)
+- [Stack Overflow](https://stackoverflow.com/search?q=%22visual+studio%22)
+- [Reddit](https://www.reddit.com/r/VisualStudio)
 
 ## <a name="product-support"></a>Soporte técnico
 

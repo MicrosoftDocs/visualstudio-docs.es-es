@@ -1,5 +1,7 @@
 ---
 title: Depurar aplicaciones web | Microsoft Docs
+description: Encuentre vínculos que le ayudarán a depurar diferentes tipos de aplicaciones web, como aplicaciones de ASP.NET, aplicaciones de JavaScript y TypeScript, o aplicaciones de script de AJAX.
+ms.custom: SEO-VS-2020
 ms.date: 11/05/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2f54e80059896345abb00e955a827a00b5a35a5
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 63c5409f14fde2805e80f35f498cb57d68b1f58b
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600117"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728140"
 ---
 # <a name="debugging-web-applications"></a>Depurar aplicaciones web
 

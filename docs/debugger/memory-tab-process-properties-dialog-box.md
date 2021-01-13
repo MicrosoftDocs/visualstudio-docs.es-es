@@ -1,5 +1,7 @@
 ---
 title: Pestaña Memoria del cuadro de diálogo Propiedades del proceso | Microsoft Docs
+description: Use la pestaña Memoria del cuadro de diálogo Propiedades del proceso para ver cómo usa la memoria un proceso. Se proporciona información sobre el espacio usado, el espacio compartido y el espacio virtual utilizado.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bdfc2740094c807818922f09ca3fef0a21c9e1a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 10fd47127abfd9cc476ed7029edd0dbbeb5501de
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62931278"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903732"
 ---
 # <a name="memory-tab-process-properties-dialog-box"></a>Pestaña Memoria del cuadro de diálogo Propiedades del proceso
 Use la pestaña **Memoria** para mostrar el uso de la memoria por parte de un proceso. Para mostrar el [cuadro de diálogo Propiedades del proceso](../debugger/process-properties-dialog-box.md), mueva el foco a la ventana [Vista Procesos](../debugger/processes-view.md). Seleccione cualquier nodo de proceso en el árbol y, después, elija **Propiedades** en el menú **Vista**.

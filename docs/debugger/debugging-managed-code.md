@@ -1,5 +1,7 @@
 ---
 title: Depuración de código administrado | Microsoft Docs
+description: Consulte los problemas y técnicas de depuración comunes en Visual Studio para aplicaciones administradas o aplicaciones escritas en lenguajes que tienen como destino Common Language Runtime.
+ms.custom: SEO-VS-2020
 ms.date: 09/23/2019
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 76b841d94aee93a1bc88f6d01161239828dee166
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: e7dadfbc6a02382165b623aeff9d866e9edc975a
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188419"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727026"
 ---
 # <a name="debug-managed-code-c-visual-basic-f-ccli"></a>Depuración de código administrado (C#, Visual Basic, F#, C++/CLI)
 

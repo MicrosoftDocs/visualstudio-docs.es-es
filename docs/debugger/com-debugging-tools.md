@@ -1,5 +1,7 @@
 ---
 title: Herramientas de depuración COM | Microsoft Docs
+description: Obtenga descripciones de las herramientas de depuración que pueden ayudarle a probar e inspeccionar programas COM, como el visor de objetos OLE y COM.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6a3c0961d541aaac1f2fd81fee7a0a8e06583dd
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 216d820e455ad9902f19fe3c48caa927b21a2f0f
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600174"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728994"
 ---
 # <a name="com-debugging-tools"></a>Herramientas de depuración COM
 

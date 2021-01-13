@@ -8,12 +8,12 @@ ms.topic: include
 ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: 3fa0569739ee81ec4b2aa0eec8157068ffc949cd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1d049bc8b74b83028e04fe92e7ce96f45907d042
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89323676"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97762627"
 ---
 1. En el **Explorador de soluciones**, haga clic con el botón derecho en el nodo del proyecto y seleccione **Publicar** (para Web Forms, **Publicar aplicación web**).
 
@@ -21,7 +21,7 @@ ms.locfileid: "89323676"
 
 1. En el cuadro de diálogo **Publicar**, seleccione **Carpeta**, haga clic en **Examinar** y cree una carpeta, **C:\Publish**.
 
-    ![RemoteDBG_Publish_Local](../media/remotedbg_publish_local.png "RemoteDBG_Publish_Local")
+    ![Captura de pantalla del cuadro de diálogo Elegir un destino de publicación en Visual Studio con la carpeta "bin\Release\Publish" seleccionada como destino de publicación.](../media/remotedbg_publish_local.png)
 
     En el caso de una aplicación de Web Forms, elija **Personalizado** en el cuadro de diálogo Publicar, escriba un nombre de perfil y elija **Aceptar**.
 
@@ -36,7 +36,7 @@ ms.locfileid: "89323676"
 
 1. Haga clic en **Publicar**.
 
-    ![RemoteDBG_Publish_Debug_Config](../media/remotedbg_publish_debug_config.png "RemoteDBG_Publish_Debug_Config")
+    ![Captura de pantalla de la pestaña Configuración del cuadro de diálogo Publicar. La configuración está establecida en Depurar y el botón Publicar está seleccionado.](../media/remotedbg_publish_debug_config.png)
 
     La aplicación publica una configuración de **Depurar** del proyecto en la carpeta local. El progreso se muestra en la ventana de salida.
 

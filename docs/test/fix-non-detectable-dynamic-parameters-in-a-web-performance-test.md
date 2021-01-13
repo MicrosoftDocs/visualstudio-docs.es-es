@@ -12,12 +12,12 @@ ms.assetid: 92dff25c-36ee-4135-acdd-315c4962fa11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 713d711847d798c617074d2d620e09f914c1a147
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 9f670c9cf543ae209ebed63ce185fadfbbe253d0
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190243"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815729"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Corregir parámetros dinámicos no detectables en una prueba de rendimiento web
 
@@ -190,13 +190,13 @@ Para mostrar un parámetro dinámico detectable y no detectable, crearemos una s
 
 3. Vuelva al Visor de resultados de pruebas de rendimiento web y seleccione la página *JScriptQuery.aspx* que produjo un error. A continuación, elija la pestaña Solicitud, compruebe que la casilla Mostrar datos sin procesar está desactivada, desplácese hacia abajo y elija Búsqueda rápida en CustomQueryString.
 
-     ![Usar la búsqueda rápida para aislar el parámetro dinámico](../test/media/web_test_dynamicparameter_runresultsquckfind.png)
+     ![Captura de pantalla de la pestaña Solicitud en el Visor de resultados de pruebas de rendimiento web. Un parámetro QueryString está seleccionado y la opción Búsqueda rápida está resaltada en un menú contextual.](../test/media/web_test_dynamicparameter_runresultsquckfind.png)
 
 4. Al examinar el editor de pruebas, sabemos que el parámetro *CustomQueryString* de la solicitud JScriptQuery.aspx tenía asignado el valor `jScriptQueryString___1v0yhyiyr0raa2w4j4pwf5zl` y que la parte dinámica sospechosa es "1v0yhyiyr0raa2w4j4pwf5zl". En la lista desplegable Buscar, quite la parte sospechosa de la cadena de búsqueda. La cadena debe ser "CustomQueryString=jScriptQueryString___."
 
      Los valores de los parámetros dinámicos se asignan en una de las solicitudes que precede a la solicitud que tiene el error. Por tanto, active la casilla Buscar hacia atrás y elija Buscar siguiente hasta que vea resaltada la solicitud anterior a *Querystring.aspx* en el panel Solicitud. Esto debería ocurrir después de elegir tres veces Buscar siguiente.
 
-     ![Usar la búsqueda rápida para aislar el parámetro dinámico](../test/media/web_test_dynamicparameter_runresultsquckfind4.png)
+     ![Captura de pantalla del Visor de resultados de pruebas de rendimiento web. Una cadena de consulta está seleccionada y se muestra un cuadro de diálogo Buscar con las opciones Buscar hacia atrás y Buscar siguiente seleccionadas.](../test/media/web_test_dynamicparameter_runresultsquckfind4.png)
 
      Como puede ver en la pestaña Respuesta y en el código de JavaScript implementado anteriormente, el parámetro de cadena de consulta CustomQueryString tiene asignado el valor "jScriptQueryString___" y además está concatenado al valor devuelto desde la variable sessionId.
 

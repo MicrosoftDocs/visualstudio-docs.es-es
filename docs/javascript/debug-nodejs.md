@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 801ea23430d13dbefd9498c57b07881235275961
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 369fa3c080705f552aed25ecef6bd87a3db43a64
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285197"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815625"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Depuración de una aplicación JavaScript o TypeScript en Visual Studio
 
@@ -29,7 +29,7 @@ Puede depurar código JavaScript y TypeScript con Visual Studio. Puede establece
 
 1. Con el proyecto abierto en Visual Studio, abra un archivo JavaScript del servidor (como *server.js*) y haga clic en el medianil hacia el medianil izquierdo para establecer un punto de interrupción:
 
-    ![Establecer un punto de interrupción](../javascript/media/tutorial-nodejs-react-set-breakpoint.png)
+    ![Captura de pantalla de la ventana de código de Visual Studio en la que se muestra código de JavaScript. Un punto rojo en el margen izquierdo indica que se ha establecido un punto de interrupción.](../javascript/media/tutorial-nodejs-react-set-breakpoint.png)
 
     Los puntos de interrupción son la característica más básica y esencial para una depuración confiable. Un punto de interrupción indica dónde Visual Studio debe suspender la ejecución de código para poder echar un vistazo a los valores de las variables o al comportamiento de la memoria, o determinar si se está ejecutando o no una bifurcación de código.
 
@@ -107,7 +107,7 @@ Para asociar el depurador de Visual Studio y establecer puntos de interrupción
 
 1. Cambie a Visual Studio y, después, establezca un punto de interrupción en el código fuente, que puede ser un archivo de JavaScript, TypeScript o JSX. (Establezca el punto de interrupción en una línea de código que los permita, como una instrucción return o una declaración var).
 
-    ![Establecer un punto de interrupción](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
+    ![Captura de pantalla de la ventana de código de Visual Studio. Hay una instrucción "return" seleccionada y un punto rojo en el margen izquierdo que indica que se ha establecido un punto de interrupción.](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
     Para buscar el código específico en un archivo transpilado, presione **Ctrl**+**F** (**Editar** > **Buscar y reemplazar** > **Búsqueda rápida**).
 

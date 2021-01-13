@@ -1,5 +1,7 @@
 ---
 title: Cuadro de diálogo Propiedades del mensaje | Microsoft Docs
+description: Consulte el cuadro de diálogo Propiedades del mensaje para obtener más información sobre un mensaje que se muestra en la vista Mensajes.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f590f40e4e3361f4dbeb46a3a9b8758b8ab5075
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3f58ad7344c7de9a9486fcb3ccefbf263688926f
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62846120"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903069"
 ---
 # <a name="message-properties-dialog-box"></a>Cuadro de diálogo Propiedades del mensaje
 Use este cuadro de diálogo para saber más sobre un mensaje específico. Para mostrar este cuadro de diálogo, mueva el foco a la ventana de la [vista Mensajes](../debugger/messages-view.md). Seleccione un nodo de mensaje en el árbol y, después, elija **Propiedades** en el menú **Vista**.
@@ -50,4 +52,4 @@ Use este cuadro de diálogo para saber más sobre un mensaje específico. Para m
 
  [Vistas de Spy++](../debugger/spy-increment-views.md) Explica las vistas de árbol de Spy++ de ventanas, mensajes, procesos y subprocesos.
 
- [Usar Spy++](../debugger/using-spy-increment.md) Presenta la herramienta Spy++ y explica cómo se puede usar.
+ [Uso de Spy++](../debugger/using-spy-increment.md): se presenta la herramienta Spy++ y se explica cómo se puede usar.

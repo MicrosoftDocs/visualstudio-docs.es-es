@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: b28d87cc0842d5a3de8634ae50378915196366ff
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 484cb82a3659e306bd4c6bd14a3133c4677160db
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527928"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833343"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Tutorial: Creación de una aplicación de consola de C# sencilla en Visual Studio
 
@@ -282,7 +282,7 @@ Vamos a ver algunos errores comunes de entrada de usuario, a localizarlos en el 
 
 Al intentar dividir un número por cero, es posible que la aplicación de consola se inmovilice y, luego, muestre el problema en el editor de código.
 
-   ![Editor de código de Visual Studio que muestra el error de división entre cero](./media/csharp-console-calculator-dividebyzero-error.png)
+   ![Captura de pantalla del editor de código de Visual Studio en la que se muestra una línea resaltada en amarillo y un error de excepción no controlada para "Attempted to divide by zero" (Intento de división entre cero).](./media/csharp-console-calculator-dividebyzero-error.png)
 
 > [!NOTE]
 > A veces, la aplicación no se inmoviliza ni el depurador muestra un error de división por cero, sino que la aplicación puede devolver un resultado no numérico inesperado, como un símbolo de infinito. La corrección de código siguiente sigue siendo válida.
@@ -311,7 +311,7 @@ Vamos a cambiar el código para controlar este error.
 
 Ahora, cuando dividimos un número entre cero, la aplicación nos pedirá otro número. Mejor aún: no parará de pedirlo hasta que proporcionemos un número distinto de cero.
 
-   ![Corrección del error "división entre cero"](./media/csharp-console-calculator-dividebyzero.png)
+   ![Captura de pantalla del editor de código de Visual Studio en la que se muestra el código de la instrucción switch con la comprobación de la entrada de un divisor distinto de cero agregada.](./media/csharp-console-calculator-dividebyzero.png)
 
 ### <a name="fix-the-format-error"></a>Corregir el error de "formato"
 

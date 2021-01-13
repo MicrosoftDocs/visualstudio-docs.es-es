@@ -1,5 +1,7 @@
 ---
 title: Descompilación de código de .NET durante la depuración | Microsoft Docs
+description: Genere e inserte código fuente de ensamblados .NET durante la depuración en Visual Studio. Extraiga y visualice el código fuente insertado.
+ms.custom: SEO-VS-2020
 ms.date: 2/2/2020
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 87f8fbec389e3735b6f1c39cdd671a391c7334d7
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 8ad919b14642dff98746c194ad8c05bbb3aea529
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600115"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726740"
 ---
 # <a name="generate-source-code-from-net-assemblies-while-debugging"></a>Generación de código fuente a partir de ensamblados .NET durante la depuración
 

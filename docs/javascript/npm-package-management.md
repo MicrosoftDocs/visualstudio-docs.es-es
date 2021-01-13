@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: fed525f62466d096aa7868cc57c7fd7c75bf46f8
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: d2c7ec425767e432105bfcec493599197e2fd5ec
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91781032"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815690"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Administrar paquetes de npm en Visual Studio
 
@@ -55,7 +55,7 @@ En el caso de los proyectos Node.js, la manera más sencilla de instalar paquete
 
 En esta ventana puede buscar un paquete, especificar opciones e instalar.
 
-![Búsqueda del paquete de npm](../javascript/media/search-package.png)
+![Captura de pantalla del cuadro de diálogo 	Instalar nuevos paquetes de NPM. El paquete azure 2.2.1-preview está seleccionado y se muestran sus detalles y opciones.](../javascript/media/search-package.png)
 
 * **Tipo de dependencia**: elija entre paquetes **Estándar**, **Desarrollo** y **Opcional**. Estándar especifica que el paquete es una dependencia en tiempo de ejecución, mientras que Desarrollo especifica que el paquete solo es necesario durante el desarrollo.
 * **Agregar a package.json** (recomendado). Esta opción configurable está en desuso.
@@ -73,7 +73,7 @@ Se puede ver el progreso de la instalación en la salida de **npm** de la ventan
 
 Los paquetes de npm se muestran en el Explorador de soluciones. Las entradas del nodo **npm** imitan las dependencias del archivo *package.json*.
 
-![Búsqueda del paquete de npm](../javascript/media/solution-explorer-status.png)
+![Captura de pantalla del nodo npm en el Explorador de soluciones en la que se muestra el estado de la instalación de los paquetes de npm.](../javascript/media/solution-explorer-status.png)
 
 ### <a name="package-status"></a>Estado del paquete
 
@@ -86,12 +86,12 @@ Haga clic con el botón derecho en el nodo **npm** para realizar una de las sigu
 
 * **Instalar nuevos paquetes de npm**: abre la interfaz de usuario para instalar nuevos paquetes.
 * **Instalar los paquetes de npm**: ejecuta el comando de instalación de npm para instalar todos los paquetes enumerados en *package.json* (ejecuta `npm install`).
-* **Actualizar los paquetes de npm**: actualiza los paquetes a las versiones más recientes, según el rango de Versionamiento Semántico (SemVer) que se haya especificado en *package.json*. (ejecuta `npm update --save`). Los rangos de SemVer se especifican normalmente mediante "~" o "^". Para obtener más información, consulte [Configuración de package.json](../javascript/configure-packages-with-package-json.md).
+* **Actualizar los paquetes de NPM**: actualiza los paquetes a las versiones más recientes, según el rango de Versionamiento Semántico (SemVer) que se haya especificado en *package.json*. (ejecuta `npm update --save`). Los rangos de SemVer se especifican normalmente mediante "~" o "^". Para obtener más información, consulte [Configuración de package.json](../javascript/configure-packages-with-package-json.md).
 
 Haga clic con el botón derecho en el nodo de un paquete para realizar una de las siguientes acciones:
 
 * **Instalar los paquetes de npm**: ejecuta el comando de instalación de npm para instalar la versión del paquete enumerada en *package.json* (ejecuta `npm install`).
-* **Actualizar los paquetes de npm**: actualiza los paquetes a la versión más reciente, según el rango de SemVer que se haya especificado en *package.json*. (ejecuta `npm update --save`). Los rangos de SemVer se especifican normalmente mediante "~" o "^".
+* **Actualizar los paquetes de NPM**: actualiza los paquetes a la versión más reciente, según el rango de SemVer que se haya especificado en *package.json*. (ejecuta `npm update --save`). Los rangos de SemVer se especifican normalmente mediante "~" o "^".
 * **Desinstalar los paquetes de npm**: desinstala el paquete y lo quita de *package.json* (ejecuta `npm uninstall --save`).
 ::: moniker-end
 ::: moniker range="vs-2017"
@@ -160,11 +160,11 @@ Cuando se guarda el archivo, Visual Studio agrega el paquete en el nodo **Depen
 
 En el caso de los proyectos con npm incluido, se pueden configurar paquetes de npm mediante `package.json`. Haga clic con el botón derecho en el nodo de npm en el Explorador de soluciones y elija **Abrir package.json**.
 
-![Búsqueda del paquete de npm](../javascript/media/npm-add-package.png)
+![Captura de pantalla del Explorador de soluciones con el nodo npm seleccionado. Se muestra un menú contextual de clic con el botón derecho con la opción Open package.json (Abrir package.json) seleccionada.](../javascript/media/npm-add-package.png)
 
 IntelliSense en *package.json* ayuda a seleccionar una versión determinada de un paquete de npm.
 
-:::image type="content" source="../javascript/media/npm-add-package-intellisense.png" alt-text="Instalación del nuevo paquete de npm desde el Explorador de soluciones" border="true":::
+:::image type="content" source="../javascript/media/npm-add-package-intellisense.png" alt-text="Selección de la versión del paquete de npm" border="true":::
 
 Cuando se guarda el archivo, Visual Studio agrega el paquete en el nodo **Dependencias/npm** del Explorador de soluciones. Si no se ve el nodo, haga clic con el botón derecho en **package.json** y elija **Restaurar paquetes**.
 

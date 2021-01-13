@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3da0a3868b410fbb78ed98265eb8f0920e6482b
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 68d6d2823a4944ec74aaa477fb7b3913943a7296
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96330113"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833278"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>Usar pruebas automatizadas de IU para probar el código
 
@@ -217,7 +217,7 @@ Si el control que quiere seleccionar pierde el foco y desaparece cuando intenta 
 
 A veces, al agregar controles y validar sus propiedades, es posible que tenga que usar el teclado. Por ejemplo, al intentar registrar una prueba automatizada de IU que usa un control de menú de botón derecho, la lista de elementos de menú del control pierde el foco, y desaparece al intentar seleccionar la herramienta **Agregar aserciones** desde el **Generador de pruebas automatizadas de IU**. Esto se muestra en la ilustración siguiente, donde el menú de botón derecho de Internet Explorer pierde el foco y desaparece si intenta seleccionarlo con la herramienta **Agregar aserciones**.
 
-![PruebaAutomatizadaIU&#95;TecladoSelecciónControl](../test/media/codeduitest_selectcontrolkeyboard.png)
+![Captura de pantalla que muestra la herramienta Add Assertions (Agregar aserciones) del Generador de pruebas automatizadas de IU superpuesta al menú contextual de Internet Explorer.](../test/media/codeduitest_selectcontrolkeyboard.png)
 
 Para usar el teclado para seleccionar un control de IU, mantenga el mouse sobre el control. A continuación, mantenga presionadas las teclas **Ctrl** e **I** al mismo tiempo. Suelte las teclas. El **Generador de pruebas automatizadas de IU** registra el control.
 
@@ -229,7 +229,7 @@ En ciertas circunstancias, un control determinado que se use en una prueba autom
 
 Al realizar la prueba automatizada de IU, mantenga el mouse sobre el control. Después, mantenga presionadas las teclas **Ctrl**, **Mayús** y **R** del teclado al mismo tiempo. Suelte las teclas. El **Generador de pruebas automatizadas de IU** graba un evento de mantenimiento del mouse.
 
-![IUAutomatizada&#95;MantenerMouse](../test/media/codedui_hover.png)
+![Captura de pantalla de la barra de comandos del Generador de pruebas automatizadas de IU con el icono de pausa seleccionado. Una ventana de información sobre herramientas muestra la ubicación de un evento de mantener el mouse.](../test/media/codedui_hover.png)
 
 Después de generar el método de prueba, se agregará al archivo *UIMap.Designer.cs* código similar al del siguiente ejemplo:
 

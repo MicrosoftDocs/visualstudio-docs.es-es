@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: a7bf174191a6a2fb013aa3d25880b01bc2e7f070
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: d11ffcb2c43d2c519d75d43afad6383e0bfaa44a
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801677"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761282"
 ---
 # <a name="quickstart-open-and-run-python-code-in-a-folder"></a>Inicio rápido: Apertura y ejecución de código de Python en una carpeta
 
@@ -70,11 +70,11 @@ En tales casos, también debe agregar una línea al archivo JSON de configuraci�
 
 1. Haga clic con el botón derecho en el archivo de inicio de Python ( *.py*) en el **Explorador de soluciones** y seleccione **Configuración de depuración e inicio**.
 
-    ![Comando Configuración de depuración e inicio de un archivo de Python](media/quickstart-open-folder/09-debug-launch-settings-menu-command.png)
+    ![Captura de pantalla de la vista de carpetas del Explorador de soluciones con el archivo contemplate-koans.py seleccionado y la opción Configuración de depuración e inicio seleccionada en el menú contextual.](media/quickstart-open-folder/09-debug-launch-settings-menu-command.png)
 
 1. En el cuadro de diálogo **Seleccionar depurador** que aparece, seleccione **Valor predeterminado** y elija **Seleccionar**.
 
-    ![Comando Configuración de depuración e inicio de un archivo de Python](media/quickstart-open-folder/10-select-debugger.png)
+    ![Captura de pantalla del cuadro de diálogo Seleccionar un depurador con el depurador predeterminado y el botón Seleccionar seleccionados.](media/quickstart-open-folder/10-select-debugger.png)
 
     > [!Note]
     > Si **Valor predeterminado** no aparece como opción, asegúrese de haber elegido un archivo Python *.py* cuando seleccionó el comando **Configuración de depuración e inicio**. Visual Studio usa el tipo de archivo para determinar las opciones de depurador que se van a mostrar.

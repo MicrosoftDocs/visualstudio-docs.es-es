@@ -1,5 +1,7 @@
 ---
 title: Deshabilitar el depurador Just-In-Time | Microsoft Docs
+description: El cuadro de diálogo Depurador Just-in-Time puede abrirse cuando se produce un error en una aplicación. Obtenga información sobre qué puede hacer cuando esto sucede y sobre las formas de evitarlo.
+ms.custom: SEO-VS-2020
 ms.date: 05/23/2018
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3155c2cdc9ea3dc5208a52e5fe37f697a4ad5ef6
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 7904b4bbf56c0a547d9f7b1e94bb46af8dd48d98
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86386126"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903901"
 ---
 # <a name="disable-the-just-in-time-debugger"></a>Deshabilitar el depurador Just-In-Time
 
@@ -24,7 +26,7 @@ El cuadro de diálogo del depurador Just-In-Time puede abrirse cuando se produce
 
 El depurador Just-in-Time le ofrece la opción de iniciar Visual Studio para depurar el error. Debe tener instalado Visual Studio u otro depurador seleccionado para ver información detallada sobre el error o para intentar depurarlo.
 
-Si ya es usuario de Visual Studio y quiere intentar depurar el error, vea [Depurar mediante el depurador Just-in-Time](../debugger/debug-using-the-just-in-time-debugger.md). Si no puede corregir el error o quiere impedir que el depurador Just-in-Time se abra, puede [deshabilitar la depuración Just-in-Time desde Visual Studio](debug-using-the-just-in-time-debugger.md#BKMK_Enabling).
+Si ya es usuario de Visual Studio y quiere intentar depurar el error, vea el artículo [Depuración con el depurador Just-In-Time en Visual Studio](../debugger/debug-using-the-just-in-time-debugger.md). Si no puede corregir el error o quiere impedir que el depurador Just-in-Time se abra, puede [deshabilitar la depuración Just-in-Time desde Visual Studio](debug-using-the-just-in-time-debugger.md#BKMK_Enabling).
 
 Si tiene Visual Studio instalado pero ya no lo quiere, puede [deshabilitar la depuración Just-in-Time en el registro de Windows](debug-using-the-just-in-time-debugger.md#disable-just-in-time-debugging-from-the-windows-registry).
 

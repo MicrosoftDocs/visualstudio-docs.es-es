@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b32b402e2bbf85cf5c028ec2dc94821ec463644
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: f6e2b851057d924353e6e1e9a211fcbb294353c8
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94674795"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761269"
 ---
 # <a name="attach-to-a-process-running-on-a-docker-container"></a>Asociación a procesos que se ejecutan en contenedores de Docker 
 
@@ -34,7 +34,7 @@ Puede asociar el depurador de Visual Studio a un proceso que se ejecuta en un c
 
 1. En Visual Studio, seleccione **Depurar > Asociar al proceso (CTRL + ALT + P)** para abrir el cuadro de diálogo **Asociar al proceso**.
 
-![Menú Asociar al proceso](../debugger/media/attach-process-menu.png "Attach_To_Process_Menu")
+![Captura de pantalla del cuadro de diálogo Asociar al proceso en Visual Studio en la que se muestra un tipo de conexión Docker (contenedor de Linux).](../debugger/media/attach-process-menu.png "Attach_To_Process_Menu")
 
 2. Establezca **Tipo de conexión** en **Docker (contenedor de Linux)** .
 3. Seleccione **Buscar...** para establecer el **Destino de conexión** mediante el cuadro de diálogo **Seleccionar contenedor de Docker**.
@@ -63,7 +63,7 @@ Puede asociar el depurador de Visual Studio a un proceso que se ejecuta en un c
 
 4. Elija el proceso de contenedor correspondiente en la lista **Procesos disponibles** y seleccione **Asociar** para empezar a depurar el proceso de contenedor de C# en Visual Studio.
 
-    ![Menú para asociar Docker completado](../debugger/media/docker-attach-complete.png "Menú de conexión de Docker de Linux completado")
+    ![Captura de pantalla del cuadro de diálogo Asociar al proceso en Visual Studio. El tipo de conexión está establecido en Docker (contenedor de Linux) y el proceso dotnet está seleccionado.](../debugger/media/docker-attach-complete.png "Menú de conexión de Docker de Linux completado")
 
 ## <a name="attach-to-a-process-running-on-a-windows-docker-container"></a> Asociación a un proceso que se ejecuta en un contenedor de Docker de Windows
 
@@ -76,7 +76,7 @@ Puede asociar el depurador de Visual Studio a un proceso que se ejecuta en un c
 
 1. En Visual Studio, seleccione **Depurar > Asociar al proceso** (o **CTRL + ALT + P**) para abrir el cuadro de diálogo **Asociar al proceso**.
 
-   ![Menú Asociar al proceso](../debugger/media/attach-process-menu-docker-windows.png "Attach_To_Process_Menu")
+   ![Captura de pantalla del cuadro de diálogo Asociar al proceso en Visual Studio en la que se muestra un tipo de conexión Docker (contenedor de Windows).](../debugger/media/attach-process-menu-docker-windows.png "Attach_To_Process_Menu")
 
 2. Establezca **Tipo de conexión** en **Docker (contenedor de Windows)** .
 3. Seleccione **Buscar...** para establecer el **Destino de conexión** mediante el cuadro de diálogo **Seleccionar contenedor de Docker**.
@@ -93,6 +93,6 @@ Puede asociar el depurador de Visual Studio a un proceso que se ejecuta en un c
 
 4. Elija el proceso de contenedor correspondiente en la lista **Procesos disponibles** y seleccione **Asociar** para empezar a depurar el proceso de contenedor de C#.
 
-    ![Menú para asociar Docker completado](../debugger/media/docker-attach-complete-windows.png "Menú de conexión de Docker de Windows completado")
+    ![Captura de pantalla del cuadro de diálogo Asociar al proceso en Visual Studio. El tipo de conexión está establecido en Docker (contenedor de Windows) y el proceso dotnet.exe está seleccionado.](../debugger/media/docker-attach-complete-windows.png "Menú de conexión de Docker de Windows completado")
 
-5.  Elija el proceso de contenedor correspondiente en la lista de procesos disponibles y seleccione **Asociar** para empezar a depurar el proceso de contenedor de C#.
+5. Elija el proceso de contenedor correspondiente en la lista de procesos disponibles y seleccione **Asociar** para empezar a depurar el proceso de contenedor de C#.

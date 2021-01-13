@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d743749ebf1c31c25345c89922fee2434c3284bd
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 49da1f46ee5e182741d3aaa56432faac39bfe0f1
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86386737"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833291"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Hacer que el código funcione en Visual Studio
 
@@ -146,13 +146,13 @@ Para más información sobre el uso de puntos de interrupción, vea [Usar puntos
 
 Cuando el código en ejecución llega a un punto de interrupción y se detiene, la línea de código marcada en amarillo (la instrucción actual) todavía no se ha ejecutado. En este momento, es posible que quiera ejecutar la instrucción actual y después inspeccionar los valores cambiados. Se pueden usar varios comandos de *paso* para ejecutar código en el depurador. Si el código marcado es una llamada de método, puede ejecutarlo paso a paso si presiona **F11**. También se puede *saltar* la línea de código presionando **F10**. Para ver los comandos adicionales y obtener detalles sobre cómo recorrer el código, lea [Navegar por el código con el depurador](../debugger/navigating-through-code-with-the-debugger.md).
 
-![Inspección del valor de tiempo de ejecución de Visual Studio](../ide/media/vs_ide_gs_debug_hit_breakpoint.png)
+![Captura de pantalla de la ventana de código de Visual Studio. Un punto rojo en el margen izquierdo indica un punto de interrupción en la línea de código resaltada en amarillo.](../ide/media/vs_ide_gs_debug_hit_breakpoint.png)
 
 En la ilustración anterior, puede avanzar una instrucción en el depurador presionando **F10** o **F11** (dado que no hay ninguna llamada de método, ambos comandos tienen el mismo resultado).
 
 Cuando el depurador está pausado, puede inspeccionar las variables y pilas de llamadas para determinar qué está sucediendo. ¿Los valores están dentro de los intervalos que esperaba? ¿Las llamadas se están realizando en el orden correcto?
 
-![Inspección del valor de tiempo de ejecución de Visual Studio](../ide/media/vs_ide_gs_debug_inspect_value.png)
+![Captura de pantalla de la ventana de código de Visual Studio. En la línea de código resaltada en amarillo, hay una variable seleccionada y una lista desplegable muestra su valor actual y sus referencias.](../ide/media/vs_ide_gs_debug_inspect_value.png)
 
 Mantenga el mouse sobre una variable para ver su valor actual y las referencias. Si ve un valor que no esperaba, probablemente tenga un error en las líneas de código anteriores o en el código que realiza la llamada. Para obtener información sobre depuración más detallada, [vea más información](../debugger/debugger-feature-tour.md) sobre cómo usar el depurador.
 

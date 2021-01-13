@@ -1,5 +1,7 @@
 ---
 title: para depurar en un clúster de alto rendimiento | Microsoft Docs
+description: Conozca los rasgos distintivos de la depuración de un programa de multiproceso en un clúster de alto rendimiento. Hay dos ventanas que son particularmente útiles y existen técnicas especiales.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5f33fe5fd556830d0276f3e7cbfef3731dfe7db
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 6b19f1d919095f30e4408056e49847c3c9ba5671
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852457"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903132"
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>Procedimiento para depurar en un clúster de alto rendimiento (C#, Visual Basic, C++)
 

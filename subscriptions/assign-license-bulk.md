@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 10/22/2020
 ms.topic: how-to
 description: Obtenga información sobre cómo los administradores pueden asignar licencias a varios suscriptores mediante la característica de adición masiva o los grupos de Microsoft Azure Active Directory.
-ms.openlocfilehash: 6cb3613d76faca2adc9c6e946f6a8ec2c73770f1
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: e9d4cd5c7e73cdc3b71768a498a7c02546d3e1fc
+ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92467549"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "97696611"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Asignación de suscripciones a varios usuarios
 El Portal de administración de suscripciones permite agregar usuarios de uno en uno o en grupos grandes.  Para agregar usuarios individuales, consulte [Agregar usuarios individuales](assign-license.md).
@@ -86,7 +86,7 @@ Con esta característica, resulta más sencillo mantenerse al tanto de las asign
 > - Los grupos deben contener al menos un miembro.  No se admiten grupos vacíos.
 > - Los grupos deben tener menos de 1000 usuarios. 
 > - Todos los usuarios deben estar en el nivel superior del grupo.  No se admiten grupos anidados.
-> - Solo se admiten acuerdos de confianza.
+> - Solo se admiten acuerdos de confianza. (Solo se confía en los acuerdos que pueden "sobreasignar" suscripciones).
 > - Todos los miembros del grupo deben tener una dirección de correo electrónico asociada a su cuenta de Azure AD.
 > - Las notificaciones de suscripciones agregadas con grupos de Azure AD no se pueden enviar a direcciones de correo electrónico independientes.  
 
@@ -129,6 +129,12 @@ R: No, todos los miembros del grupo reciben la misma suscripción.
 
 ### <a name="q-can-i-edit-subscriber-details-of-individuals-added-in-an-azure-ad-group"></a>P: ¿Puedo editar los detalles de suscriptor de los usuarios agregados en un grupo de Azure AD?  
 R: No, para modificar la información de un suscriptor individual, deberá quitarlo del grupo de seguridad de Azure AD y asignarle una suscripción individualmente.  
+
+### <a name="q-why-cant-i-see-the-option-to-use-azure-active-directory-groups-to-add-subscribers"></a>P: ¿Por qué no veo la opción para usar grupos de Azure Active Directory para agregar suscriptores?
+R: Actualmente, esta característica solo está disponible para organizaciones con acuerdos de confianza.  Seleccione el botón **Detalles** para mostrar la información de su acuerdo.
+
+   > [!div class="mx-imgBorder"]
+   > ![Haga clic en el botón Detalles.](_img/assign-license-bulk/bulk-add-agreement.png "Haga clic en el botón Detalles para ver el tipo de acuerdo que tiene.")
 
 ### <a name="q-i-added-someone-to-my-azure-ad-security-group-but-i-dont-see-them-added-in-the-subscriptions-administration-portal-and-they-dont-have-a-subscription-why-not"></a>P: He agregado a alguien al grupo de seguridad de Azure AD, pero no lo veo en el Portal de administración de suscripciones ni tiene una suscripción. ¿Por qué no?  
 R: En función de cómo haya configurado la organización Azure AD, pueden producirse retrasos de hasta 24 horas antes de que se agregue el usuario. Si han pasado más de 24 horas, [póngase en contacto con el servicio de soporte técnico](https://visualstudio.microsoft.com/support/support-overview-vs).  

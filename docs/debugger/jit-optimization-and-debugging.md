@@ -1,5 +1,7 @@
 ---
 title: Optimización y depuración JIT | Microsoft Docs
+description: El código optimizado es más difícil de depurar que el no optimizado. Obtenga información sobre la optimización JIT y sobre cuándo y cómo suprimirla.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae11860aaa64448cd4d23b5602cf4c2da1575ce3
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 66f63c7232b52ebe849722147e007ab70527c311
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916221"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903927"
 ---
 # <a name="jit-optimization-and-debugging"></a>Optimización y depuración JIT
 Si intenta depurar código, resulta más fácil cuando ese código **no** está optimizado. Cuando se optimiza el código, el compilador y el tiempo de ejecución realizan cambios en el código de CPU emitido para que se ejecute más rápido, pero tiene una asignación menos directa al código fuente original. Si la asignación es menos directa, los depuradores a menudo no pueden indicarle el valor de las variables locales, y es posible que los puntos de interrupción y la ejecución de código no funcionen como se espera.

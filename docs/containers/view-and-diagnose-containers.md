@@ -7,12 +7,12 @@ ms.topic: how-to
 ms.date: 01/20/2020
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: 626666fc912fcff85fcfcc49425d59018778d1f6
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: fd876e86cefcd0ce50aab02de8e7f4cf37d3ab51
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742781"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729228"
 ---
 # <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>Visualización y diagnóstico de contenedores e imágenes en Visual Studio
 
@@ -27,7 +27,7 @@ Puede ver lo que está ocurriendo dentro de los contenedores que hospedan la apl
 
 La ventana de **contenedores** se abre automáticamente al iniciar un proyecto de .NET en contenedores. Para ver los contenedores en Visual Studio en cualquier momento, use **Ctrl**+**Q** para activar el cuadro de búsqueda de Visual Studio, escriba `Containers` y elija el primer elemento. También puede abrir la ventana de **contenedores** desde el menú principal. Use la ruta de acceso del menú **Ver** > **Otras ventanas** > **Contenedores**.  
 
-![Captura de pantalla de la pestaña Entorno en la ventana de contenedores](media/view-and-diagnose-containers/container-window.png)
+![Captura de pantalla de la ventana Contenedores en Visual Studio con un contenedor seleccionado en el panel izquierdo y la pestaña Entorno seleccionada en el panel derecho.](media/view-and-diagnose-containers/container-window.png)
 
 En el lado izquierdo, verá la lista de contenedores en el equipo local. Los contenedores asociados a la solución se muestran en **Contenedores de soluciones**. A la derecha, verá un panel con pestañas para **Entorno**, **Puertos**, **Registros** y **Archivos**.
 
@@ -38,7 +38,7 @@ En el lado izquierdo, verá la lista de contenedores en el equipo local. Los con
 
 En la pestaña **Entorno** se muestran las variables de entorno del contenedor. En el caso del contenedor de la aplicación, puede establecer estas variables de muchas maneras, por ejemplo, en el archivo Dockerfile, en un archivo .env o mediante la opción -e al iniciar un contenedor mediante un comando de Docker.
 
-![Captura de pantalla de la pestaña Entorno en la ventana de contenedores](media/view-and-diagnose-containers/containers-environment-vars.png)
+![Captura de pantalla de la ventana Contenedores en Visual Studio en la que se muestran las variables de entorno para el contenedor WebApplication11.](media/view-and-diagnose-containers/containers-environment-vars.png)
 
 > [!NOTE]
 > Los cambios en las variables de entorno no se reflejan en tiempo real. Además, las variables de entorno en esta pestaña son las variables de entorno del sistema en el contenedor y no reflejan las variables de entorno del usuario locales en la aplicación.

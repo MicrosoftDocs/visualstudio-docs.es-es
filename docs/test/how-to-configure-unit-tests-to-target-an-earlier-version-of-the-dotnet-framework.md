@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: 6badbb7723bf4d8ed0c9385558204c2dc4907574
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 3f90a3d42eb1390adbb242242172aea152a0a54f
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441253"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833239"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Procedimiento para configurar pruebas unitarias como destino para una versión anterior de .NET Framework
 
@@ -62,7 +62,7 @@ Se aplican las siguientes limitaciones cuando cambia el destino los proyectos de
 
 4. Utilice la lista desplegable **Marco de destino (todas las configuraciones)** para cambiar el marco de destino a **.NET Framework 3.5** o una versión posterior, como se muestra en la llamada B en la siguiente ilustración. No debe especificar una versión de cliente.
 
-     ![Lista desplegable de la plataforma de destino](../test/media/howtoconfigureunitest35frameworkstepb.png)
+     ![Captura de pantalla del cuadro de diálogo Configuración avanzada del compilador. La lista desplegable de la versión de .NET Framework de destino está resaltada y el valor está establecido en ".NET Framework 3.5".](../test/media/howtoconfigureunitest35frameworkstepb.png)
 
 ## <a name="retargeting-for-c-unit-test-projects"></a>Redestinación de proyectos de prueba unitaria de C#
 
@@ -74,7 +74,7 @@ Se aplican las siguientes limitaciones cuando cambia el destino los proyectos de
 
 3. En la pestaña **Aplicación**, seleccione **Plataforma de destino**. En la lista desplegable, elija **.NET Framework 3.5** o una versión posterior, como se muestra en la siguiente ilustración. No debe especificar una versión de cliente.
 
-   ![Lista desplegable de la plataforma de destino](../test/media/howtoconfigureunittest35frameworkcsharp.png)
+   ![Ilustración de la pestaña Aplicación en el panel Propiedades del Explorador de soluciones en la que está resaltada la ubicación de la lista desplegable Versión de .NET Framework de destino.](../test/media/howtoconfigureunittest35frameworkcsharp.png)
 
 ## <a name="retargeting-for-ccli-unit-test-projects"></a>Redestinación de proyectos de prueba unitaria de C++/CLI
 

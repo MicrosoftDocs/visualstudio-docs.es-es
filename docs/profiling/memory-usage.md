@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e1e6951aebac63494aada4e64c5c072eb79c6a9
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: 3d259c6fa69821d1fecd26944227bff86cc82104
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90074987"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815859"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Medición del uso de memoria en Visual Studio
 
@@ -124,7 +124,7 @@ Para analizar el uso de memoria, haga clic en uno de los vínculos que abre un i
 
  Para mostrar las instancias de un tipo seleccionado en el panel superior, elija el icono ![Instancia](../profiling/media/dbgdiag_mem_instanceicon.png "DBGDIAG_MEM_InstanceIcon").
 
- ![Vista de instancias](../profiling/media/dbgdiag_mem_managedtypesreport_instances.png "DBGDIAG_MEM_ManagedTypesReport_Instances")
+ ![Captura de pantalla de la vista Instancias de la herramienta Uso de memoria de Visual Studio, donde se muestran el panel Instancias y el panel Rutas de acceso al nodo raíz y Objetos a los que se hace referencia.](../profiling/media/dbgdiag_mem_managedtypesreport_instances.png "DBGDIAG_MEM_ManagedTypesReport_Instances")
 
  La vista **Instancias** muestra las instancias del objeto seleccionado en la instantánea en el panel superior. Los paneles **Rutas de acceso al nodo raíz** y **Objetos a los que se hace referencia** muestran los objetos que hacen referencia a la instancia seleccionada y los tipos a los que hace referencia la instancia seleccionada. Cuando el depurador se detiene en el punto donde se tomó la instantánea, puede desplazar el puntero sobre la celda **Valor** para mostrar los valores del objeto en la información sobre herramientas.
 
@@ -139,7 +139,7 @@ Para analizar el uso de memoria, haga clic en uno de los vínculos que abre un i
 
      La vista **Instancias** muestra cada instancia del tipo seleccionado. Al seleccionar una instancia se muestra la pila de llamadas que produjo la creación de la instancia en el panel **Pila de llamadas de asignación** .
 
-     ![Vista de instancias](../profiling/media/dbgdiag_mem_native_instances.png "DBGDIAG_MEM_Native_Instances")
+     ![Captura de pantalla de la vista Instancias de la herramienta Uso de memoria de Visual Studio, donde se muestran el panel Instancias y el panel Pila de llamadas de asignación.](../profiling/media/dbgdiag_mem_native_instances.png "DBGDIAG_MEM_Native_Instances")
 
 - Elija **Vista de pilas** en la lista **Modo de vista** para ver la pila de asignación del tipo seleccionado.
 

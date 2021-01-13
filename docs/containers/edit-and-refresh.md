@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.workload: multiple
 ms.date: 07/25/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 32f6535e92f41d8030b6e060960940339da91fc9
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: de7065ebdf5426077418e50d2c03118de9f9d68f
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92298211"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729306"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>Depurar aplicaciones en un contenedor de Docker local
 
@@ -62,7 +62,7 @@ Para iterar cambios rápidamente, puede iniciar la aplicación en un contenedor.
 
 1. Asegúrese de que Docker está configurado para usar el tipo de contenedor (Linux o Windows) que está usando. Haga clic con el botón derecho en el icono de Docker en la barra de tareas y elija **Switch to Linux containers** (Cambiar a contenedores de Linux) o **Cambiar a contenedores de Windows** (Cambiar a contenedores de Windows) según corresponda.
 
-1. (Solo .NET Core 3 y versiones posteriores) La edición del código y la actualización del sitio de ejecución tal y como se describe en esta sección no están habilitadas en las plantillas predeterminadas en NET Core 3.0 y versiones posteriores. Para habilitarlas, agregue el paquete NuGet [Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation/). En *Startup.cs* , agregue una llamada al método de extensión `IMvcBuilder.AddRazorRuntimeCompilation` al código del método `ConfigureServices`. Solo necesita que se habilite en el modo de depuración, por lo que se debe codificar de la siguiente manera:
+1. (Solo .NET Core 3 y versiones posteriores) La edición del código y la actualización del sitio de ejecución tal y como se describe en esta sección no están habilitadas en las plantillas predeterminadas en NET Core 3.0 y versiones posteriores. Para habilitarlas, agregue el paquete NuGet [Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation/). En *Startup.cs*, agregue una llamada al método de extensión `IMvcBuilder.AddRazorRuntimeCompilation` al código del método `ConfigureServices`. Solo necesita que se habilite en el modo de depuración, por lo que se debe codificar de la siguiente manera:
 
     ```csharp
     public IWebHostEnvironment Env { get; set; }
@@ -94,12 +94,12 @@ Para iterar cambios rápidamente, puede iniciar la aplicación en un contenedor.
 
    Para más información, vea [Compilación de archivos de Razor en ASP.NET Core](/aspnet/core/mvc/views/view-compilation?view=aspnetcore-3.1&preserve-view=true).
 
-1. Establezca **Configuración de solución** en **Depurar** . Luego presione **Ctrl**+**F5** para compilar la imagen de Docker y ejecutarla localmente.
+1. Establezca **Configuración de solución** en **Depurar**. Luego presione **Ctrl**+**F5** para compilar la imagen de Docker y ejecutarla localmente.
 
     Cuando la imagen del contenedor se ha compilado y se está ejecutando en un contenedor de Docker, Visual Studio inicia la aplicación web en el explorador predeterminado.
 
-1. Vaya a la página *Índice* . Los cambios se van a realizar en esta página.
-1. Vuelva a Visual Studio y abra *Index.cshtml* .
+1. Vaya a la página *Índice*. Los cambios se van a realizar en esta página.
+1. Vuelva a Visual Studio y abra *Index.cshtml*.
 1. Agregue el siguiente contenido HTML al final del archivo y luego guarde los cambios.
 
     ```html
@@ -119,7 +119,7 @@ Se han aplicado los cambios.
 
 A menudo, los cambios requieren inspección adicional. Puede usar las características de depuración de Visual Studio para esta tarea.
 
-1. En Visual Studio, abra *Index.cshtml.cs* .
+1. En Visual Studio, abra *Index.cshtml.cs*.
 2. Reemplace el contenido del método `OnGet` por el código siguiente:
 
    ```csharp
@@ -130,18 +130,18 @@ A menudo, los cambios requieren inspección adicional. Puede usar las caracterí
 4. Presione F5 para iniciar la depuración y alcanzar el punto de interrupción.
 5. Cambie a Visual Studio para ver el punto de interrupción. Inspeccione los valores.
 
-   ![Punto de interrupción](media/edit-and-refresh/breakpoint.png)
+   ![Captura de pantalla que muestra parte del código de Index.cshtml.cs en Visual Studio con un punto de interrupción establecido a la izquierda de una línea de código que está resaltada en amarillo.](media/edit-and-refresh/breakpoint.png)
 
 ## <a name="create-a-net-framework-console-app"></a>Creación de una aplicación de consola de .NET Framework
 
 Cuando se usan proyectos de aplicación de consola de .NET Framework, no se admite la opción de agregar compatibilidad de Docker sin orquestación. Puede seguir usando el siguiente procedimiento aunque solo use un proyecto de Docker.
 
 1. Cree un nuevo proyecto de aplicación de consola de .NET Framework.
-1. En el Explorador de soluciones, haga clic con el botón derecho en el nodo del proyecto y seleccione **Agregar** > **Container Orchestration Support** (Compatibilidad con la orquestación de contenedores).  En el cuadro de diálogo que aparece, seleccione **Docker Compose** . Se agregan al proyecto un Dockerfile y un proyecto de Docker Compose con archivos de compatibilidad asociados.
+1. En el Explorador de soluciones, haga clic con el botón derecho en el nodo del proyecto y seleccione **Agregar** > **Container Orchestration Support** (Compatibilidad con la orquestación de contenedores).  En el cuadro de diálogo que aparece, seleccione **Docker Compose**. Se agregan al proyecto un Dockerfile y un proyecto de Docker Compose con archivos de compatibilidad asociados.
 
 ### <a name="debug-with-breakpoints"></a>Depurar con puntos de interrupción
 
-1. En el Explorador de soluciones, abra *Program.cs* .
+1. En el Explorador de soluciones, abra *Program.cs*.
 2. Reemplace el contenido del método `Main` por el código siguiente:
 
    ```csharp
@@ -152,7 +152,7 @@ Cuando se usan proyectos de aplicación de consola de .NET Framework, no se admi
 4. Presione F5 para iniciar la depuración y alcanzar el punto de interrupción.
 5. Cambie a Visual Studio para ver el punto de interrupción e inspeccionar los valores.
 
-   ![Punto de interrupción](media/edit-and-refresh/breakpoint-console.png)
+   ![Captura de pantalla de la ventana de código para Program.cs en Visual Studio con un punto de interrupción establecido a la izquierda de una línea de código que está resaltada en amarillo.](media/edit-and-refresh/breakpoint-console.png)
 
 ## <a name="container-reuse"></a>Reutilización del contenedor
 

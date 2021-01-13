@@ -1,6 +1,6 @@
 ---
 title: 'Tutorial: Depurar código de Visual Basic'
-description: Obtenga información sobre cómo iniciar al depurador de Visual Studio, examinar el código e inspeccionar los datos.
+description: Obtenga información sobre las características del depurador de Visual Studio y sobre cómo iniciarlo, recorrer el código e inspeccionar los datos de una aplicación de Visual Basic.
 ms.custom: debug-experiment, seodec18, get-started
 ms.date: 02/03/2020
 ms.technology: vs-ide-debug
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84ed0de3542822597c64e0866c04f719ed6c2ab7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 000b46223811490695562159822f61240d0cea66
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77027243"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847004"
 ---
 # <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>Tutorial: Información sobre cómo depurar código de Visual Basic con Visual Studio
 

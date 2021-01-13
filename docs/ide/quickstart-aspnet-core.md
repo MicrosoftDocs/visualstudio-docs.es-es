@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 1873c11d8f2e6243a0dc0f867e579f1927cd1607
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 7e7c6eec178d0ba3b2934e390cc02310044c4dfa
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579963"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833356"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Inicio rápido: uso de Visual Studio para crear su primera aplicación web ASP.NET Core
 
@@ -124,7 +124,7 @@ Poco después, Visual Studio abre el archivo de proyecto.
 
 1. En el **Explorador de soluciones**, expanda la carpeta **Páginas** y después elija **About.cshtml**.
 
-   ![Selección del archivo About.cshtml desde el Explorador de soluciones](../ide/media/csharp-aspnet-about-page-html-file.png)
+   ![Captura de pantalla del Explorador de soluciones de Visual Studio en la que se muestran los archivos del proyecto HelloWorld. La carpeta Pages está expandida con About.cshtml seleccionado.](../ide/media/csharp-aspnet-about-page-html-file.png)
 
    Este archivo corresponde a una página denominada **Acerca de** en la aplicación web y que se ejecuta en un explorador web.
 
@@ -140,7 +140,7 @@ Poco después, Visual Studio abre el archivo de proyecto.
 
 1. En el **Explorador de soluciones**, expanda **About.cshtml** y luego elija **About.cshtml.cs**. (Este archivo también se corresponde con la página **Acerca de** en un explorador web).
 
-   ![Selección del archivo About.cshtml desde el Explorador de soluciones](../ide/media/csharp-aspnet-about-page-code-file.png)
+   ![Captura de pantalla del Explorador de soluciones de Visual Studio en la que se muestran los archivos del proyecto HelloWorld. About.cshtml está expandido con About.cshtml.cs seleccionado.](../ide/media/csharp-aspnet-about-page-code-file.png)
 
    En el editor, verá el código de C# que incluye texto para el área "Descripción de la aplicación" de la página **Acerca de**.
 
@@ -208,11 +208,11 @@ Vea la animación siguiente para comprobar el trabajo que ha realizado en la sec
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Para más información, continúe con el siguiente tutorial:
+Para obtener más información, continúe con el tutorial siguiente:
 
 > [!div class="nextstepaction"]
 > [Introducción a C# y ASP.NET Core en Visual Studio](../get-started/csharp/tutorial-aspnet-core.md)
 
 ## <a name="see-also"></a>Consulte también
 
-[Publicar una aplicación web en Azure App Service mediante Visual Studio](../deployment/quickstart-deploy-to-azure.md)
+[Publicar una aplicación web en Azure App Service mediante Visual Studio](../deployment/quickstart-deploy-to-azure.md)

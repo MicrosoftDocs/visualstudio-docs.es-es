@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a033c0fe1fd80edc7959c5f49993714982ecc805
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.openlocfilehash: bd1b12be2dba1526301cd0ea9a4356fb9cc14c14
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88238185"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815742"
 ---
 # <a name="learn-to-use-the-code-editor-for-javascript"></a>Información sobre cómo usar el editor de código para JavaScript
 
@@ -40,11 +40,11 @@ Puede usar el IDE para agregar nuevos archivos al proyecto.
 
 IntelliSense es un recurso impagable cuando se escribe código. Así, puede mostrar información sobre los miembros disponibles de un tipo o detalles de los parámetros para las distintas sobrecargas de un método. En el siguiente código, cuando se escribe `Router()`, se muestran los tipos de argumento que se pueden pasar. Esto se denomina ayuda de signatura.
 
-![Usar IntelliSense](../javascript/media/write-code-signature-checking.png)
+![Captura de pantalla de una ventana de código de Visual Studio en la que se está escribiendo código de JavaScript. Se muestra información de IntelliSense para la función Router().](../javascript/media/write-code-signature-checking.png)
 
 IntelliSense puede servir también para completar una palabra después de escribir una serie de caracteres y, así, eliminar cualquier tipo de ambigüedad. Si coloca el cursor después de la cadena `data` en el siguiente código y escribe `get`, IntelliSense mostrará las funciones definidas anteriormente en el código o que haya definidas en una biblioteca de terceros que esté agregada al proyecto.
 
-![Usar IntelliSense](../javascript/media/write-code-intellisense.png)
+![Captura de pantalla de una ventana de código de Visual Studio en la que se está escribiendo la palabra "get". Se muestra información de IntelliSense para todas las funciones que comienzan por "get".](../javascript/media/write-code-intellisense.png)
 
 IntelliSense también puede mostrar información sobre los tipos cuando se mantiene el puntero sobre elementos de programación.
 

@@ -1,5 +1,6 @@
 ---
 title: Sugerencias de rendimiento | Microsoft Docs
+description: Obtenga información sobre cómo usar las sugerencias de rendimiento y las Herramientas de diagnóstico integradas del depurador de Visual Studio para supervisar y analizar el rendimiento de la aplicación durante la depuración.
 ms.date: 9/11/2020
 ms.topic: how-to
 ms.assetid: 509d2d4f-48a5-4cdf-acad-6f7b75421303
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f260307b677046be54e6d80b0d8fe122b13292e4
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: 481113e9f5e2f5b66aec5f4dad29f581462165ca
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90075475"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815833"
 ---
 # <a name="perftips"></a>Sugerencias de rendimiento
 
@@ -33,7 +34,7 @@ Los puntos de interrupción y datos de tiempo asociados se registran en la venta
 
 En la ilustración siguiente se muestra la ventana **Herramientas de diagnóstico**.
 
-![Herramientas de diagnóstico: actualización 1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")
+![Captura de pantalla de la ventana Herramientas de diagnóstico en el depurador de Visual Studio, en la que se muestra la escala de tiempo y los gráficos del uso de memoria y de CPU.](../profiling/media/diagnostictools-update1.png)
 
 - La escala de tiempo **Eventos de interrupción** marca los puntos de interrupción que se alcanzaron en la sesión de depuración. Haga clic en un evento para seleccionarlo en la lista de detalles del **Depurador** .
 

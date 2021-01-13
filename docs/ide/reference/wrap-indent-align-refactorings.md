@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: d801f052cb02e6a5b53189eeae342b9015d30f9b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d8a98ebd1fa1e8a9ec937cf4e0965d804a8a9387
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79093887"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761230"
 ---
 # <a name="wrap-indent-and-align-refactorings"></a>Ajustar, aplicar sangría y alinear refactorizaciones
 
@@ -40,7 +40,7 @@ Esta refactorización se aplica a lo siguiente:
 2. Presione **Ctrl**+ **.** para activar el menú **Acciones rápidas y refactorizaciones**.
 3. Seleccione **Encapsular la cadena de llamada** o **Encapsular y alinear la cadena de llamada** para aceptar la refactorización.
 
-   ![Encapsulado y alineación de cadenas de llamada](media/wrap-call-chain.png)
+   ![Captura de pantalla en la que se muestran el menú Acciones rápidas y refactorizaciones de Visual Studio con la opción Encapsular la cadena de llamada seleccionada, y cambios en el código de C#.](media/wrap-call-chain.png)
 
 ## <a name="wrap-indent-and-align-parameters-or-arguments"></a>Encapsulado, sangría y alineación de parámetros o argumentos
 
@@ -85,7 +85,7 @@ Esta refactorización se aplica a lo siguiente:
 2. Presione **Ctrl**+ **.** para activar el menú **Acciones rápidas y refactorizaciones**.
 3. Seleccione **Ajustar la expresión** para aceptar la refactorización.
 
-   ![Encapsulado y alineación de cadenas de llamada](media/wrap-binary-expression.png)
+   ![Captura de pantalla en la que se muestran el menú Acciones rápidas y refactorizaciones de Visual Studio con la opción Ajustar la expresión seleccionada, y cambios en el código de C#.](media/wrap-binary-expression.png)
 
 ## <a name="see-also"></a>Vea también
 

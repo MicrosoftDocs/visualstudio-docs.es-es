@@ -1,5 +1,6 @@
 ---
 title: Depuración remota de ASP.NET en un equipo de IIS
+description: Aprenda a configurar una aplicación de ASP.NET MVC 4.5.2 de Visual Studio, a implementarla en IIS y a agregar el depurador remoto de Visual Studio.
 ms.custom:
 - remotedebugging
 - seodec18
@@ -11,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: cd2b787fe546b9c53332fcdc548d3da829759755
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 8a3520220da15ef771c8cecbd7962e4448727910
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84173920"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815716"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Depuración remota de ASP.NET en un equipo remoto de IIS
 Para depurar una aplicación de ASP.NET que se ha implementado en IIS, instale y ejecute las herramientas remotas en el equipo donde ha implementado la aplicación y, a continuación, asócielas a la aplicación en ejecución desde Visual Studio.
@@ -34,7 +35,7 @@ En esta guía se explica cómo configurar una aplicación de ASP.NET MVC 4.5.2 
 Para seguir los pasos que se muestran en este artículo, se requiere Visual Studio 2019.
 ::: moniker-end
 ::: moniker range="vs-2017"
-Para seguir los pasos que se muestran en este artículo, se requiere Visual Studio 2017.
+Se necesita Visual Studio 2017 para seguir los pasos que se muestran en este artículo.
 ::: moniker-end
 
 Estos procedimientos se han probado en estas configuraciones de servidor:
@@ -45,11 +46,11 @@ Estos procedimientos se han probado en estas configuraciones de servidor:
 El depurador remoto es compatible con Windows Server a partir de Windows Server 2008 Service Pack 2. Para obtener una lista completa de los requisitos, vea [Requisitos](../debugger/remote-debugging.md#requirements_msvsmon).
 
 > [!NOTE]
-> La depuración entre dos equipos conectados a través de un proxy no se admite. La depuración a través de una conexión de latencia alta o de ancho de banda bajo, como Internet mediante acceso telefónico o Internet a través de países, no se recomienda y puede producir un error o ser inaceptablemente lento.
+> No se admite la depuración entre dos equipos conectados a través de un proxy. La depuración a través de una conexión de latencia alta o de ancho de banda bajo, como Internet mediante acceso telefónico o Internet a través de países, no se recomienda y puede producir un error o ser inaceptablemente lento.
 
 ## <a name="app-already-running-in-iis"></a>¿La aplicación ya se está ejecutando en IIS?
 
-En este artículo se incluyen los pasos para realizar una configuración básica de IIS en Windows Server e implementar la aplicación desde Visual Studio. Estos pasos se incluyen para garantizar que el servidor tenga instalados los componentes necesarios, que la aplicación se pueda ejecutar correctamente y que usted esté a punto para la depuración remota.
+En este artículo se incluyen los pasos para realizar una configuración básica de IIS en Windows Server e implementar la aplicación desde Visual Studio. Estos pasos se incluyen para garantizar que el servidor tenga instalados los componentes necesarios, que la aplicación se pueda ejecutar correctamente y que usted esté a punto para la depuración remota.
 
 * Si la aplicación se ejecuta en IIS y solo quiere descargar el depurador remoto e iniciar la depuración, vaya a [Descargar e instalar las herramientas remotas en Windows Server](#BKMK_msvsmon).
 
@@ -91,7 +92,7 @@ Si quiere obtener información más detallada para instalar ASP.NET en IIS, cons
 
 1. Use el Instalador de plataforma web (WebPI) para instalar ASP.NET 4.5; desde el nodo de servidor en Windows Server 2012 R2, elija **Obtener nuevos componentes de plataforma web** y busque ASP.NET.
 
-    ![RemoteDBG_IIS_AspNet_45](../debugger/media/remotedbg_iis_aspnet_45.png "RemoteDBG_IIS_AspNet_45")
+    ![Captura de pantalla del Instalador de plataforma web 5.0 en la que se muestran los resultados de la búsqueda de asp.net con el componente de plataforma web IIS: ASP.NET 4.5 rodeado con un círculo rojo.](../debugger/media/remotedbg_iis_aspnet_45.png)
 
     > [!NOTE]
     > Si usa Windows Server 2008 R2, instale ASP.NET 4 en su lugar con este comando:
@@ -207,10 +208,10 @@ Para obtener información sobre cómo ejecutar el depurador remoto como servicio
     Compruebe que Visual Studio agrega el puerto necesario al nombre del equipo, que aparece en el formato **\<remote computer name>:puerto**.
 
     ::: moniker range=">=vs-2019"
-    En Visual Studio 2019, debería ver **\<remote computer name>:4024**
+    En Visual Studio 2019, debería ver **\<remote computer name>:4024**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    En Visual Studio 2017, debería ver **\<remote computer name>:4022**
+    En Visual Studio 2017, debería ver **\<remote computer name>:4022**.
     ::: moniker-end
     El puerto es obligatorio. Si no ve el número de puerto, agréguelo manualmente.
 
@@ -257,11 +258,11 @@ Puertos necesarios:
 ::: moniker range="vs-2017"
 * 4022: obligatorio para la depuración remota desde Visual Studio 2017 (vea [Asignaciones de puertos del depurador remoto](../debugger/remote-debugger-port-assignments.md) para obtener más información).
 ::: moniker-end
-* UDP 3702: (opcional) el puerto de detección habilita el botón **Buscar** al asociarse al depurador remoto en Visual Studio.
+* UDP 3702: (opcional) El puerto de detección habilita el botón **Buscar** al asociarse al depurador remoto en Visual Studio.
 
 1. Para abrir un puerto en Windows Server, abra el menú **Inicio**, busque **Firewall de Windows con seguridad avanzada**.
 
-2. Después, elija **Reglas de entrada > Regla nueva > Puerto**. Elija **Siguiente** y, en **Puertos locales específicos**, escriba el número de puerto, haga clic en **Siguiente** y **Permitir la conexión**. Luego, haga clic en Siguiente y agregue el nombre (**IIS**, **Web Deploy**o **msvsmon**) para la regla de entrada.
+2. Después, elija **Reglas de entrada > Regla nueva > Puerto**. Elija **Siguiente** y, en **Puertos locales específicos**, escriba el número de puerto, haga clic en **Siguiente** y **Permitir la conexión**. Luego, haga clic en Siguiente y agregue el nombre (**IIS**, **Web Deploy** o **msvsmon**) para la regla de entrada.
 
     Si quiere más información sobre cómo configurar el Firewall de Windows, vea [Configuración del Firewall de Windows para la depuración remota](../debugger/configure-the-windows-firewall-for-remote-debugging.md).
 

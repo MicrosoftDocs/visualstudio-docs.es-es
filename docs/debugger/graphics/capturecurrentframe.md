@@ -1,5 +1,7 @@
 ---
 title: CaptureCurrentFrame | Microsoft Docs
+description: Use el método CaptureCurrentFrame de la clase VsgDbg para capturar el resto del fotograma actual en el archivo de registro de gráficos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 4509311d-6fe2-4b65-9b4a-ff0522585d6a
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9967d776845088e707035c7b1c56855ac80af82
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 793d86ac7d23fa209560222415dce50f4e5ac508
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736138"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727949"
 ---
 # <a name="capturecurrentframe"></a>CaptureCurrentFrame
 Captura el resto del fotograma actual en el archivo de registro de gráficos.

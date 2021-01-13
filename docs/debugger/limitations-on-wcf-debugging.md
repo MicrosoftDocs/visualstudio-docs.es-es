@@ -1,5 +1,7 @@
 ---
 title: Limitaciones de la depuración de WCF | Microsoft Docs
+description: Obtenga información sobre las diferentes formas de comenzar a depurar un servicio WCF, las condiciones necesarias y las limitaciones de la depuración.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8612bd2423849c61f21a5c184a3e1d39da0302b
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: 30ca43483c352a4f102ab196dc5ea8e8650cdf81
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407749"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903862"
 ---
 # <a name="limitations-on-wcf-debugging"></a>Limitaciones de la depuración de WCF
 Hay tres maneras mediante las que puede empezar a depurar un servicio WCF:
@@ -32,7 +34,7 @@ Hay tres maneras mediante las que puede empezar a depurar un servicio WCF:
 
 - Se utiliza **Asociar al proceso** para asociarse a un servicio que se está ejecutando actualmente. La depuración comienza dentro del servicio.
 
-  En este tema se describen las limitaciones de estos escenarios.
+En este tema se describen las limitaciones de estos escenarios.
 
 ## <a name="limitations-on-stepping-into-a-service"></a>Limitaciones de ir a un servicio
  Para ir a un servicio desde una aplicación cliente que está depurando, se deben cumplir las siguientes condiciones:

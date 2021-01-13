@@ -1,5 +1,7 @@
 ---
 title: Depuración de aplicaciones | Microsoft Docs
+description: Obtenga información sobre cómo usar la depuración en Visual Studio para diferentes tipos de aplicaciones, como aplicaciones para UWP, de código administrado, de código nativo, de código de GPU y web.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,19 +15,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1849d6918c1fd5607c97b82c17e385d3c6521fc4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dfe7bb45d2979a62d07e34b2ee44076394ff936c
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535166"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727013"
 ---
 # <a name="debugging-applications"></a>Aplicaciones de depuración
 Las secciones siguientes tratan la depuración de tipos específicos de aplicaciones. Diferentes tipos de aplicaciones en distintos lenguajes requieren configuraciones y técnicas propias, y presentan distintos problemas que es necesario depurar.
 
 ## <a name="debugging-for-different-types-of-applications"></a>Depuración para distintos tipos de aplicaciones
 
-|Título|Descripción|
+|Title|Descripción|
 |-|-|
 |[Depuración de aplicaciones para UWP](../debugger/debugging-windows-store-and-windows-universal-apps.md)|Describe cómo depurar las aplicaciones para UWP.|
 |[Depuración del código administrado](../debugger/debugging-managed-code.md)|Describe cómo depurar código administrado (Visual C#, Visual Basic, F# y C++/CLI).|

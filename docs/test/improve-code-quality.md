@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: f5eff2257988a4210e7f4cd8a8a37c66c57c185d
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 0029321ddfc3ff12bb9c40dac9de64a9eb067a95
+ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328696"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97756648"
 ---
 # <a name="first-look-at-testing-tools-in-visual-studio"></a>Primer vistazo a las herramientas de prueba de Visual Studio
 
@@ -51,11 +51,17 @@ Visual Studio también puede ampliarse y abre la puerta a adaptadores de pruebas
 
 [Live Unit Testing](../test/live-unit-testing.md) ejecuta automáticamente pruebas unitarias en segundo plano y muestra una representación gráfica de los resultados de la prueba y la cobertura de código en el editor de código de Visual Studio.
 
+> [!NOTE]
+> Live Unit Testing solo está disponible en la edición Enterprise y únicamente se admite para código .NET.
+
 ## <a name="intellitest"></a>IntelliTest
 
 IntelliTest genera automáticamente pruebas unitarias y datos de prueba para el código administrado. IntelliTest mejora la cobertura y reduce drásticamente el esfuerzo de crear y mantener pruebas unitarias para código nuevo o existente.
 
 ![Funcionamiento de IntelliTest](media/devtest-intellitest.png)
+
+> [!NOTE]
+> IntelliTest solo está disponible en la edición Enterprise. Se admite para código de C# que tenga como destino .NET Framework. En estos momentos, no se admite .NET Core ni .NET Standard.
 
 * [Generar pruebas unitarias para el código con IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md)
 * [IntelliTest: una prueba para controlarlo todo](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/)
@@ -64,6 +70,9 @@ IntelliTest genera automáticamente pruebas unitarias y datos de prueba para el 
 ## <a name="code-coverage"></a>Cobertura de código
 
 La [cobertura de código](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) determina qué proporción del código del proyecto se está probando realmente mediante pruebas automatizadas como pruebas unitarias. Para restringir con eficacia los errores, las pruebas deberían ensayar o "cubrir" una proporción considerable del código.
+
+> [!NOTE]
+> La cobertura de código solo está disponible en la edición Enterprise.
 
 El análisis de cobertura de código puede aplicarse al código administrado y no administrado (nativo).
 
@@ -77,9 +86,15 @@ La cobertura de código es una opción al ejecutar métodos de prueba mediante e
 
 [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) ayuda a aislar el código que se está probando mediante la sustitución de otros elementos de la aplicación con código auxiliar (stub) o correcciones de compatibilidad (shim).
 
+> [!NOTE]
+> Microsoft Fakes solo está disponible en la edición Enterprise y únicamente se admite para código .NET.
+
 ## <a name="user-interface-testing-with-coded-ui-and-selenium"></a>Pruebas de interfaz de usuario con UI codificada y Selenium
 
 Las pruebas de UI codificada proporcionan una manera de crear pruebas completamente automatizadas con el fin de validar la funcionalidad y el comportamiento de la interfaz de usuario de la aplicación. Pueden automatizar las pruebas de la interfaz de usuario en varias tecnologías, incluidas las aplicaciones de UWP basadas en XAML, las aplicaciones del explorador y las de SharePoint.
+
+> [!NOTE]
+> La interfaz de usuario codificada es una característica en desuso.
 
 Tanto si elige las pruebas de IU codificadas más convenientes como las pruebas genéricas de interfaz de usuario basadas en exploradores con Selenium, Visual Studio proporciona todas las herramientas que necesita.
 
@@ -89,10 +104,6 @@ Tanto si elige las pruebas de IU codificadas más convenientes como las pruebas 
 * [Comenzar a crear, modificar y mantener una prueba de UI codificada](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 * [Comprobación de aplicaciones para UWP con pruebas automatizadas de IU](test-uwp-app-with-coded-ui-test.md)
 * [Introducción a las pruebas de UI codificadas con Visual Studio Enterprise (Lab)](https://www.boost.org/doc/libs/1_71_0/libs/test/doc/html/index.html)
-
-## <a name="load-testing"></a>Pruebas de carga
-
-La [prueba de carga](../test/quickstart-create-a-load-test-project.md) simula la carga en una aplicación de servidor mediante la ejecución de pruebas unitarias y pruebas de rendimiento web.
 
 ## <a name="related-scenarios"></a>Escenarios relacionados
 

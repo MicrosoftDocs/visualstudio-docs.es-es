@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c3cf9d5e4d72ed316344d1bda930d0416e9efe5
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 6202fa019aed8e6fc9eb9ff93bdb390bf22f2911
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77416403"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761256"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Cómo depurar para principiantes sin experiencia
 
@@ -78,7 +78,7 @@ A continuación, crearemos una aplicación que tiene algunos errores.
 
 1. Debe tener instalado Visual Studio y las cargas de trabajo **Desarrollo de escritorio de .NET** o **Desarrollo multiplataforma de .NET Core**, según el tipo de aplicación que quiera crear.
 
-    Si todavía no ha instalado Visual Studio, vaya a la página de  [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/)  para instalarlo de forma gratuita.
+    Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/) para instalarlo de forma gratuita.
 
     Si tiene que instalar la carga de trabajo pero ya tiene Visual Studio, haga clic en **Herramientas** > **Obtener herramientas y características**. Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de escritorio de .NET** (o la carga de trabajo **Desarrollo multiplataforma de .NET Core**) y después haga clic en **Modificar**.
 
@@ -229,17 +229,17 @@ A continuación, crearemos una aplicación que tiene algunos errores.
 
 1. Mantenga el mouse sobre la variable `GalaxyType` a la derecha y después, a la izquierda del icono de llave inglesa, expanda `theGalaxy.GalaxyType`. Verá que `GalaxyType` contiene una propiedad `MyGType` y el valor de propiedad se establece en `Spiral`.
 
-    ![Inspeccionar una variable](../debugger/media/beginners-inspect-variable.png)
+    ![Captura de pantalla del depurador de Visual Studio con una línea de código en amarillo y un menú expandido debajo de la propiedad theGalaxy.GalaxyType al final de la línea.](../debugger/media/beginners-inspect-variable.png)
 
     “Espiral” es realmente el valor correcto que se esperaba que se imprimiese en la consola. Por lo tanto, es un buen punto de partida que pueda tener acceso a este valor en el código mientras se ejecuta la aplicación. En este escenario, usamos la API incorrecta. Veremos si podemos corregir esto mientras se ejecuta código en el depurador.
 
 1. En el mismo código, mientras todavía se depura, coloque el cursor al final de `theGalaxy.GalaxyType` y cámbielo a `theGalaxy.GalaxyType.MyGType`. Aunque puede realizar este cambio, el editor de código muestra un error que indica que no puede compilar este código.
 
-    ![Error de sintaxis](../debugger/media/beginners-edit.png)
+    ![Captura de pantalla del depurador de Visual Studio con una línea de código resaltada en rojo y un cuadro de mensaje Editar y continuar con el botón Editar seleccionado.](../debugger/media/beginners-edit.png)
 
 1. Haga clic en **Editar** en el cuadro de mensaje **Editar y continuar**. Ahora verá un mensaje de error en la ventana **Lista de errores**. El error indica que el `'object'` no contiene una definición para `MyGType`.
 
-    ![Error de sintaxis](../debugger/media/beginners-no-definition.png)
+    ![Captura de pantalla del depurador de Visual Studio con una línea de código resaltada en rojo y una ventana Lista de errores con dos errores enumerados.](../debugger/media/beginners-no-definition.png)
 
     Aunque se establezca cada galaxia con un objeto de tipo `GType` (que tiene la propiedad `MyGType`), el depurador no reconoce el objeto `theGalaxy` como un objeto de tipo `GType`. ¿Qué sucede? Desea buscar cualquier código que establece el tipo de galaxia. Al hacerlo, verá que la clase `GType` definitivamente tiene una propiedad de `MyGType`, pero algo no es correcto. El mensaje de error sobre `object` resulta ser la pista; para el intérprete de lenguaje, el tipo parece ser un objeto de tipo `object` en lugar de un objeto de tipo `GType`.
 
@@ -288,7 +288,7 @@ A continuación, crearemos una aplicación que tiene algunos errores.
 
 1. Presione **F5** y mantenga de nuevo el mouse sobre la variable `type`. Repita este paso hasta que vea un valor de `I` en la variable `type`.
 
-    ![Inspeccionar una variable](../debugger/media/beginners-inspecting-data.png)
+    ![Captura de pantalla del depurador de Visual Studio con una línea de código en amarillo y una ventana pequeña en la que se muestra el valor de la variable type como "73 'I'".](../debugger/media/beginners-inspecting-data.png)
 
 1. Ahora, presione **F11** (**Depurar** > **Depurar paso a paso por instrucciones** o el botón **Depurar paso a paso por instrucciones** en la barra de herramientas Depuración).
 

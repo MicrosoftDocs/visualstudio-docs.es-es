@@ -1,5 +1,7 @@
 ---
 title: Cuadro de diálogo Elegir puntos de interrupción | Microsoft Docs
+description: Obtenga información sobre el cuadro de diálogo Elegir puntos de interrupción, el cual se abre al intentar establecer un punto de interrupción a partir de una entrada ambigua en el cuadro de diálogo Nuevo punto de interrupción en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fdec8c8d1b53f87e14700f5c14099cf0d2e6e392
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 876cc88756f6230585dce72b984b7ac40390a7f4
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745731"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729046"
 ---
 # <a name="choose-breakpoints-dialog-box"></a>Cuadro de diálogo Elegir puntos de interrupción
 El cuadro de diálogo **Elegir puntos de interrupción** se abre al intentar establecer un punto de interrupción a partir de una entrada ambigua en el cuadro de diálogo **Nuevo punto de interrupción**. Un ejemplo común de entrada ambigua es el de un nombre de función sobrecargada.

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 83446ab87af07e3ac46594beeecec781f596ecff
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: cf32e0aa1f19bb4398bc5600ae7fc9fbf151c76c
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349586"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815599"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Publique una aplicación web en Azure App Service mediante Visual Studio
 
@@ -53,11 +53,11 @@ En este artículo se describe cómo usar la herramienta de **publicación** para
 
 1. En el cuadro de diálogo **Create Azure App Service (Windows)** (Crear Azure App Service [Windows]), se rellenan los campos de entrada **Nombre de la aplicación,** , **Grupo de recursos** y **Plan de App Service**. Puede mantener estos nombres o cambiarlos. Cuando esté preparado, seleccione **Guardar**.
 
-    ![Elegir Azure App Service](../deployment/media/quickstart-publish-windows-create-new-dialog.png)
+    ![Captura de pantalla del cuadro de diálogo Create Azure App Service (Windows) (Crear Azure App Service [Windows]) con los campos Nombre, Suscripción, Grupo de recursos y Plan de hospedaje rellenados.](../deployment/media/quickstart-publish-windows-create-new-dialog.png)
 
 1. En el cuadro de diálogo **Publicar**, la instancia recién creada se ha seleccionado automáticamente. Cuando esté listo, seleccione **Finalizar**.
 
-    ![Elegir Azure App Service](../deployment/media/quickstart-publish-windows-select-instance.png)
+    ![Captura de pantalla de la ventana Publicar, a la que se accede desde el Explorador de soluciones de Visual Studio. Azure está seleccionado como destino de publicación.](../deployment/media/quickstart-publish-windows-select-instance.png)
 
 1. Seleccione **Publicar**. Visual Studio implementará la aplicación en Azure App Service y la aplicación web se cargará en el explorador. El panel de propiedades del proyecto **Publicar** muestra la dirección URL del sitio y otros detalles.
 

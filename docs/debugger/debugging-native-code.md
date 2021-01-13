@@ -1,5 +1,7 @@
 ---
 title: Depuración de código nativo | Microsoft Docs
+description: Obtenga información sobre problemas comunes de depuración y técnicas de alto nivel para aplicaciones nativas en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 04/11/2017
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f98b99a31d9215d661879aa7fa52d4b671024496
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4fee3044e4eaa1e7dd3549923082f9b843951b28
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738164"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728322"
 ---
 # <a name="debugging-native-code"></a>Depuración de código nativo
 Esta sección trata algunos problemas y técnicas de depuración comunes para aplicaciones nativas. Las técnicas descritas en esta sección son técnicas de alto nivel. Para más información sobre cómo usar el depurador de Visual Studio, vea [Primer vistazo al depurador de Visual Studio](../debugger/debugger-feature-tour.md).

@@ -1,6 +1,7 @@
 ---
 title: Preparación de la depuración de proyectos de C++ | Microsoft Docs
-ms.custom: seodec18
+description: Obtenga información sobre cómo preparar la depuración de los tipos de proyectos básicos creados mediante las plantillas de proyecto de Visual C++ en Visual Studio.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dc663115e98d7553e03a186874d59b75eb68cb90
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e399b28d3ddce07cae263550b536c21ad1db028
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75916320"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728309"
 ---
 # <a name="debugging-preparation-c-project-types"></a>Preparación de la depuración: Tipos de proyecto de C++
 En esta sección se describe cómo depurar los tipos de proyectos básicos creados mediante las plantillas de proyecto de [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)].

@@ -1,5 +1,7 @@
 ---
 title: Enrutamiento de mensajes a la ventana Salida | Microsoft Docs
+description: Escriba mensajes en tiempo de ejecución en la ventana Salida en Visual Studio mediante la clase Debug o la clase Trace, que forman parte de la biblioteca de clases System.Diagnostics.
+ms.custom: SEO-VS-2020
 ms.date: 11/08/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85d3c146775ac06b3118186738ee74932a4c452a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 345efabedca63187fd9f16b4ed9622de8e320e89
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350477"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728088"
 ---
 # <a name="send-messages-to-the-output-window"></a>Enrutamiento de mensajes a la ventana Salida
 

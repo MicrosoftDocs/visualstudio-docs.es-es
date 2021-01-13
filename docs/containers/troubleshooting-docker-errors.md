@@ -11,12 +11,12 @@ ms.topic: troubleshooting
 ms.workload: multiple
 ms.date: 01/27/2020
 ms.author: ghogen
-ms.openlocfilehash: 31b9d8649abed0f9901aa872ff3939c25e3025b8
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.openlocfilehash: 9535a7d88cb375d97867092eddf969095c327329
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87235113"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729259"
 ---
 # <a name="troubleshoot-visual-studio-development-with-docker"></a>Solución de problemas de desarrollo de Visual Studio con Docker
 
@@ -24,22 +24,15 @@ Al trabajar con las herramientas de contenedor de Visual Studio, se pueden produ
 
 ## <a name="volume-sharing-is-not-enabled-enable-volume-sharing-in-the-docker-ce-for-windows-settings--linux-containers-only"></a>El uso compartido de volúmenes no está habilitado. Habilite el uso compartido de volúmenes en la configuración de Docker CE para Windows (solo en contenedores con Linux)
 
-Para resolver este problema, haga lo siguiente:
+El uso compartido de archivos solo necesita administrarse si usa Hyper-V con Docker. Si usa WSL 2, los siguientes pasos no son necesarios y la opción de uso compartido de archivos no estará visible. Para resolver este problema, haga lo siguiente:
 
 1. Haga clic derecho en **Docker para Windows** en el área de notificación y, a continuación, seleccione **Configuración**.
-1. Seleccione **Shared Drives** (Unidades compartidas) y comparta la unidad del sistema con la unidad donde reside el proyecto.
+1. Seleccione **Recursos** > **Uso compartido de archivos** y comparta la carpeta a la que se necesita tener acceso. Es posible compartir toda la unidad del sistema, pero no se recomienda.
 
-> [!NOTE]
-> Si los archivos aparecen compartidos, puede que deba hacer clic en el vínculo "Reset credentials..." (Restablecer credenciales...) en la parte inferior del cuadro de diálogo para volver a habilitar el uso compartido de volúmenes. Para continuar después de restablecer las credenciales, es posible que deba reiniciar Visual Studio.
-
-![unidades compartidas](media/troubleshooting-docker-errors/shareddrives.png)
+    ![unidades compartidas](media/troubleshooting-docker-errors/docker-settings-image.png)
 
 > [!TIP]
-> Las versiones de Visual Studio posteriores a la versión 15.6 de Visual Studio 2017 preguntan cuando las **unidades compartidas** no están configuradas.
-
-### <a name="container-type"></a>Tipo de contenedor
-
-Al agregar compatibilidad con Docker a un proyecto, se elige un contenedor de Linux o Windows. El host de Docker debe ejecutar el mismo tipo de contenedor. Para cambiar el tipo de contenedor en la instancia de Docker en ejecución, haga clic con el botón derecho en el icono de Docker en la bandeja del sistema y elija **Switch to Windows containers...** (Cambiar a contenedores Windows) o **Switch to Linux containers...** (Cambiar a contenedores Linux).
+> Las versiones de Visual Studio posteriores a la versión 15.6 de Visual Studio 2017 le avisarán si las **unidades compartidas** no están configuradas.
 
 ## <a name="unable-to-start-debugging"></a>No se puede iniciar la depuración
 
@@ -83,15 +76,29 @@ En PowerShell, use la función [Add-LocalGroupMember](/powershell/module/microso
 
 ## <a name="low-disk-space"></a>Espacio de disco bajo
 
-De forma predeterminada, Docker almacena imágenes en la carpeta *%ProgramData%/Docker/* , que normalmente se encuentra en la unidad del sistema, *C:\ProgramData\Docker\*. Para evitar que las imágenes ocupen espacio valioso en la unidad del sistema, puede cambiar la ubicación de la carpeta de imágenes.  Desde el icono de Docker en la barra de tareas, abra la configuración de Docker, elija **Demonio** y cambie de **Básico** a **Avanzado**. En el panel de edición, agregue la configuración de la propiedad `graph` con el valor de la ubicación deseada para las imágenes de Docker:
+De forma predeterminada, Docker almacena imágenes en la carpeta *%ProgramData%/Docker/* , que normalmente se encuentra en la unidad del sistema, *C:\ProgramData\Docker\*. Para evitar que las imágenes ocupen espacio valioso en la unidad del sistema, puede cambiar la ubicación de la carpeta de imágenes. Para ello:
+
+ 1. Haga clic con el botón derecho en el icono de Docker en la barra de tareas y seleccione **Configuración**.
+ 1. Seleccione **Docker Engine** (Motor de Docker). 
+ 1. En el panel de edición, agregue la configuración de la propiedad `graph` con el valor de la ubicación deseada para las imágenes de Docker:
 
 ```json
     "graph": "D:\\mypath\\images"
 ```
 
-![Captura de pantalla de la configuración de ubicación de las imágenes de Docker](media/troubleshooting-docker-errors/docker-settings-image-location.png)
+![Captura de pantalla del uso compartido de archivos de Docker.](media/troubleshooting-docker-errors/docker-daemon-settings.png)
 
-Haga clic en **Aplicar** para reiniciar Docker. En estos pasos se modifica el archivo de configuración que se encuentra en *%ProgramData%\docker\config\daemon.json*. Las imágenes compiladas previamente no se mueven.
+Haga clic en **Apply & Restart** (Aplicar y reiniciar). En estos pasos se modifica el archivo de configuración que se encuentra en *%ProgramData%\docker\config\daemon.json*. Las imágenes compiladas previamente no se mueven.
+
+## <a name="container-type-mismatch"></a>Error de coincidencia de tipos de contenedores
+
+Al agregar compatibilidad con Docker a un proyecto, se elige un contenedor de Linux o Windows. Si el host de servidor de Docker no está configurado para ejecutar el mismo tipo de contenedor que el destino del proyecto, es probable que vea un error parecido al siguiente:
+
+![Captura de pantalla del error de coincidencia entre el host y el proyecto de Docker.](media/troubleshooting-docker-errors/docker-host-config-change-linux-to-windows.png)
+
+Para solucionar este problema:
+
+- Haga clic con el botón derecho en el icono de Docker para Windows en la bandeja del sistema y elija **Switch to Linux containers…** (Cambiar a contenedores de Linux…) o **Switch to Windows containers…** (Cambiar a contenedores de Windows…).
 
 ## <a name="microsoftdockertools-github-repo"></a>Repositorio de GitHub de Microsoft/DockerTools
 
@@ -99,4 +106,4 @@ Para otros problemas que detecte, consulte los problemas de [Microsoft/DockerToo
 
 ## <a name="see-also"></a>Consulte también
 
-- [Solución de problemas de Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)
+- [Solucionar problemas de Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

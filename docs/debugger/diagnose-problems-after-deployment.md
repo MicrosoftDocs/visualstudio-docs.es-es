@@ -1,5 +1,7 @@
 ---
 title: Diagnóstico de problemas tras la implementación | Microsoft Docs
+description: Diagnostique problemas después de la implementación mediante IntelliTrace en Visual Studio. Incluya información de compilación con su versión. Publique y supervise su aplicación para encontrar el problema.
+ms.custom: SEO-VS-2020
 ms.date: 04/10/2018
 ms.topic: how-to
 ms.assetid: a3463eab-a352-4d17-8551-adbaad526db0
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97499a88a04b2ae7b61b847c4aec133d297e613a
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 9be00d1ad040f6daca52417e4ab6dfa93f0f44cf
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928061"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726831"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>Diagnóstico de problemas después de la implementación con IntelliTrace (C# y Visual Basic)
 

@@ -1,5 +1,7 @@
 ---
 title: Comandos de menú | Microsoft Docs
+description: Vea una lista de los menús de Spy++ y, para cada menú, un vínculo a información adicional.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 584298725f2a57962ecd52c99fd1a745610ec336
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: db2c4ebe4a6aa24e0df8f66442f6128ecee8d491
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62931307"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97902978"
 ---
 # <a name="menu-commands"></a>Comandos de menú
 En los temas de ayuda de esta sección se enumeran los comandos disponibles en los menús de Spy++.
@@ -37,7 +39,7 @@ En los temas de ayuda de esta sección se enumeran los comandos disponibles en l
  [Comandos del menú Ayuda](../debugger/help-menu-commands.md): se describe cada comando disponible en el menú **Ayuda**.
 
 ## <a name="related-sections"></a>Secciones relacionadas
- [Uso de Spy + +](../debugger/using-spy-increment.md): introducción a la herramienta Spy++ y cómo se puede usar.
+ [Uso de Spy++](../debugger/using-spy-increment.md): se presenta la herramienta Spy++ y se explica cómo se puede usar.
 
  [Vistas de Spy + +](../debugger/spy-increment-views.md): explica las vistas de árbol de Spy++ de ventanas, mensajes, procesos y subprocesos.
 

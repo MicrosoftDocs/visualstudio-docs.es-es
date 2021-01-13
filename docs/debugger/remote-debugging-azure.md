@@ -1,5 +1,6 @@
 ---
 title: Depuración remota de ASP.NET Core en IIS y Azure | Microsoft Docs
+description: Obtenga información sobre cómo configurar una aplicación de ASP.NET Core en Visual Studio, implementarla en IIS con Azure y agregar el depurador remoto de Visual Studio.
 ms.custom: remotedebugging
 ms.date: 05/06/2020
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 926bd4a6630d9d99726ee6c1479d04c476756c18
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: b6535bb52221de780b9a8862be22a6a4deb79b57
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "92298745"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815846"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>Depuración remota de ASP.NET Core en IIS en Azure en Visual Studio
 
@@ -29,13 +30,13 @@ El método recomendado para la depuración remota en Azure dependerá de su esce
 
     En este escenario debe implementar la aplicación desde Visual Studio en Azure, pero no es necesario instalar ni configurar manualmente IIS o el depurador remoto (estos componentes se representan con líneas de puntos), tal y como se muestra en la siguiente ilustración.
 
-    ![Componentes del depurador remoto](../debugger/media/remote-debugger-azure-app-service.png "Remote_debugger_components")
+    ![Diagrama en el que se muestra la relación entre Visual Studio, Azure App Service y una aplicación de ASP.NET. IIS y el depurador remoto están representados con líneas de puntos.](../debugger/media/remote-debugger-azure-app-service.png)
 
 * Para depurar IIS en una máquina virtual de Azure, siga los pasos de este tema (vea la sección [Depuración remota en una máquina virtual de Azure](#remote_debug_azure_vm)). Esto le permite usar una configuración personalizada de IIS, pero los pasos de instalación e implementación son más complicados.
 
     En el caso de una máquina virtual de Azure, debe implementar la aplicación desde Visual Studio en Azure, así como instalar manualmente el rol de IIS y el depurador remoto, tal y como se muestra en la siguiente ilustración.
 
-    ![Componentes del depurador remoto](../debugger/media/remote-debugger-azure-vm.png "Remote_debugger_components")
+    ![Diagrama en el que se muestra la relación entre Visual Studio, una máquina virtual de Azure y una aplicación de ASP.NET. IIS y el depurador remoto están representados con líneas sólidas.](../debugger/media/remote-debugger-azure-vm.png)
 
 * Para depurar ASP.NET Core en Azure Service Fabric, vea [Depurar una aplicación de Service Fabric remota](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application).
 
@@ -78,7 +79,7 @@ Desde Visual Studio puede publicar y depurar rápidamente la aplicación en una 
 
     Si previamente ha configurado algún perfil de publicación, aparece el panel **Publicar**. Haga clic en **Nuevo perfil**.
 
-1. Elija **Azure App Service** en el cuadro de diálogo **Publicar**, seleccione **Crear nuevo**y siga las indicaciones para crear un perfil.
+1. Elija **Azure App Service** en el cuadro de diálogo **Publicar**, seleccione **Crear nuevo** y siga las indicaciones para crear un perfil.
 
     Para obtener instrucciones detalladas, vea [Publicar una aplicación de ASP.NET Core en Azure con Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 
@@ -207,7 +208,7 @@ Si va a importar la configuración de publicación, puede omitir esta sección.
 
 ### <a name="optional-publish-and-deploy-the-app-by-publishing-to-a-local-folder-from-visual-studio"></a>(Opcional) Publicación e implementación de la aplicación mediante la publicación en una carpeta local desde Visual Studio
 
-Si no está usando Web Deploy, debe publicar e implementar la aplicación con el sistema de archivos o con otras herramientas. Puede empezar creando un paquete con el sistema de archivos y, después, implementar el paquete manualmente o usar otras herramientas, como PowerShell, RoboCopy o XCopy. En esta sección se da por hecho que copiará el paquete manualmente si no usa Web Deploy.
+Si no está usando Web Deploy, debe publicar e implementar la aplicación con el sistema de archivos o con otras herramientas. Puede empezar creando un paquete con el sistema de archivos y, después, implementar el paquete manualmente o usar otras herramientas, como PowerShell, Robocopy o XCopy. En esta sección se da por hecho que copiará el paquete manualmente si no usa Web Deploy.
 
 [!INCLUDE [remote-debugger-deploy-app-local](../debugger/includes/remote-debugger-deploy-app-local.md)]
 

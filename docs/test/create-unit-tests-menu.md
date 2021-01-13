@@ -11,20 +11,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8afbc73e8c778829a9a1ce5a59d30df6de2f0daa
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: c9bdbd545a3509927dd13a800e22b9aaaab2cb2b
+ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441864"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97756635"
 ---
-# <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Crear códigos auxiliares de método de pruebas unitarias con el comando Crear pruebas unitarias
+# <a name="create-unit-test-method-stubs-from-code"></a>Creación de códigos auxiliares de método de pruebas unitarias a partir del código
 
 El comando **Crear pruebas unitarias** crea códigos auxiliares de método de pruebas unitarias. Esta característica permite una configuración sencilla de un proyecto de prueba, la clase de prueba y el código auxiliar de método de pruebas de su interior.
 
 ::: moniker range="vs-2017"
 > [!NOTE]
-> El comando de menú **Crear pruebas unitarias** solo está disponible para el código de C# que tiene como destino .NET Framework (pero no .NET Core).
+> El comando de menú **Crear pruebas unitarias** solo está disponible para el código de C# que tiene como destino .NET Framework (pero no .NET Core ni .NET Standard).
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 > [!NOTE]
@@ -38,6 +38,8 @@ El comando de menú **Crear pruebas unitarias** es extensible y puede utilizarse
 Para comenzar, seleccione un método, un tipo o un espacio de nombres en el editor de código del proyecto que quiere probar, haga clic con el botón derecho y elija **Crear pruebas unitarias**. Se abre el cuadro de diálogo **Crear pruebas unitarias**, donde puede configurarse cómo se quiere que se creen las pruebas.
 
 ![Usar el comando Crear pruebas unitarias](media/createunittestcommand.png)
+
+Si no ve las opciones del marco de pruebas para NUnit o xUnit, consulte la sección [Usar plataformas de pruebas unitarias de terceros](#use-third-party-unit-test-frameworks).
 
 ## <a name="set-unit-test-traits"></a>Establecer los rasgos de las pruebas unitarias
 

@@ -1,5 +1,6 @@
 ---
 title: Método insertado
+description: Obtenga información sobre cómo usar el menú Acciones rápidas y refactorizaciones de Visual Studio para refactorizar las declaraciones de métodos insertados y proporcionar una sintaxis más clara.
 ms.date: 11/03/2020
 ms.topic: reference
 author: mikadumont
@@ -10,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0cc619ea61a7fd4d7f4bc542b946e298933a8f73
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 655c6dad03b05b257aec3d92199321a0e0e93d22
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93403569"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761425"
 ---
 # <a name="inline-method"></a>Método insertado
 
@@ -41,11 +42,11 @@ Esta refactorización se aplica a lo siguiente:
     
    Seleccione **Inline `<QualifiedMethodName>`** para quitar la declaración del método insertado: .
 
-    ![Conversión de la clase en abstracta](media/inline-method-remove-declaration.png)
+    ![Captura de pantalla en la que se muestran el menú Acciones rápidas y refactorizaciones de Visual Studio con la opción "Inline 'CreateWidget()'" (Insertar "CreateWidget[]") seleccionada, y cambios en el código de C#.](media/inline-method-remove-declaration.png)
 
    Seleccione **Inline and keep `<QualifiedMethodName>`** para conservar la declaración del método original: .
 
-    ![Conversión de la clase en abstracta](media/inline-method-preserve-declaration.png)
+    ![Captura de pantalla en la que se muestran el menú Acciones rápidas y refactorizaciones de Visual Studio con la opción "Inline and keep 'CreateWidget()'" (Insertar y mantener "CreateWidget[]") seleccionada, y cambios en el código de C#.](media/inline-method-preserve-declaration.png)
 
 ## <a name="see-also"></a>Vea también
 

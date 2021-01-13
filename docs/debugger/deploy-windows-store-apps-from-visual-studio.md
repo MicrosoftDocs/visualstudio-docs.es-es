@@ -1,6 +1,7 @@
 ---
 title: Implementación de aplicaciones para UWP | Microsoft Docs
-ms.custom: seodec18
+description: Implemente aplicaciones para la Plataforma universal de Windows (UWP) desde Visual Studio. Especifique un dispositivo de destino local o remoto para la implementación. Obtenga información sobre las opciones de implementación.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 01/16/2018
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 4c58dbb32ef0a476ac7e22a840e27e389c710f97
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 70b4d862b69eeb34028fb0f782cc5c8d6acbdbce
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188283"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728205"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Implementar aplicaciones para UWP desde Visual Studio
 

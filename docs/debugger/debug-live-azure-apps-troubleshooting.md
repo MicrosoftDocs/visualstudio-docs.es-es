@@ -1,6 +1,7 @@
 ---
 title: Solución de problemas de depuración de instantáneas | Microsoft Docs
-ms.custom: ''
+description: Obtenga información sobre la solución de problemas y los problemas conocidos de depuración de instantáneas en Visual Studio. Cargue ICorProfiler sin provocar tiempo de inactividad en el sitio de producción.
+ms.custom: SEO-VS-2020
 ms.date: 04/24/2019
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -11,16 +12,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16d55c4e729a39f46b4b038490e92f7cb43bf98d
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: b5a76c1cae508acd08e5f077d466facf02e0211a
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84182877"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728649"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Solución de problemas y problemas conocidos de depuración de instantáneas en Visual Studio
 
-Si los pasos que se describen en este artículo no resuelven el problema, busque el problema en [Developer Community](https://developercommunity.visualstudio.com/spaces/8/index.html) o notifique un problema nuevo mediante la selección de **Ayuda** > **Enviar comentarios** > **Notificar un problema** en Visual Studio.
+Si los pasos que se describen en este artículo no resuelven el problema, busque el problema en [Developer Community](https://aka.ms/feedback/suggest?space=8) o notifique un problema nuevo mediante la selección de **Ayuda** > **Enviar comentarios** > **Notificar un problema** en Visual Studio.
 
 ## <a name="issue-attach-snapshot-debugger-encounters-an-http-status-code-error"></a>Problema: "Asociar Snapshot Debugger" detecta un error de código de estado HTTP
 

@@ -1,5 +1,7 @@
 ---
 title: Depuración de código optimizado | Microsoft Docs
+description: Si es posible, no compile un destino Win32 Release hasta que se depure el programa, ya que la optimización puede complicar la depuración. Consulte los detalles en este artículo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da0a9c40a2c4887b2798e908ad0c12d6c9a85b32
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 971ceb59a17788076a1188e42d834f7b4bd704cc
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852392"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903186"
 ---
 # <a name="how-to-debug-optimized-code"></a>Procedimiento Depuración de código optimizado
 
@@ -58,7 +60,7 @@ ms.locfileid: "90852392"
 
 ## <a name="to-turn-on-optimization-in-a-debug-build-configuration"></a>Para activar la optimización en una configuración de compilación Debug
 
-1. Cuando vaya a crear un proyecto nuevo, seleccione el destino `Win32 Debug`. Utilice como destino `Win32``Debug` hasta que el programa esté depurado por completo y pueda compilar un destino `Win32 Release`. El compilador no optimiza el destino `Win32 Debug`.
+1. Cuando vaya a crear un proyecto nuevo, seleccione el destino `Win32 Debug`. Utilice como destino `Win32 Debug` hasta que el programa esté depurado por completo y pueda compilar un destino `Win32 Release`. El compilador no optimiza el destino `Win32 Debug`.
 
 2. Seleccione el proyecto en el Explorador de soluciones.
 

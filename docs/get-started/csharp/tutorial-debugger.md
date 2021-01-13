@@ -1,6 +1,6 @@
 ---
 title: 'Tutorial: Depurar código de C#'
-description: Obtenga información sobre cómo iniciar al depurador de Visual Studio, examinar el código e inspeccionar los datos.
+description: Obtenga información sobre las características del depurador de Visual Studio y sobre cómo iniciarlo, recorrer el código e inspeccionar los datos de una aplicación de C#.
 ms.custom: debug-experiment, seodec18, get-started
 ms.date: 04/23/2020
 ms.technology: vs-ide-debug
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d6e9ee79602f3a0db8f68d701120c450bfee721
-ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
+ms.openlocfilehash: 435564a9bf4e90dd25ed5fee3a44d0578c201a99
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/25/2020
-ms.locfileid: "82153069"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846946"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Tutorial: Información sobre cómo depurar código de C# con Visual Studio
 
@@ -187,7 +187,7 @@ Normalmente, aquí usamos métodos abreviados de teclado porque son una buena fo
 
 1. Expanda la variable `letters` para ver sus propiedades, que incluyen todos los elementos que contiene.
 
-     ![Visualización de una sugerencia de datos](../csharp/media/get-started-view-data-tip.png "Visualización de una sugerencia de datos")
+     ![Captura de pantalla del depurador de Visual Studio con la instrucción "name+= letters[I]" resaltada y una lista desplegable que muestra los elementos de la matriz de letras.](../csharp/media/get-started-view-data-tip.png)
 
 1. Después, mantenga el mouse sobre la variable `name` y verá su valor actual, una cadena vacía.
 
@@ -197,7 +197,7 @@ Normalmente, aquí usamos métodos abreviados de teclado porque son una buena fo
 
 1. Presione **F10** varias veces, o bien elija **Depurar** > **Depurar paso a paso por procedimientos**, para iterar varias veces por el bucle `for`, deténgase de nuevo en el punto de interrupción y mantenga el mouse sobre la variable `name` cada vez para comprobar su valor.
 
-     ![Visualización de una sugerencia de datos](../csharp/media/get-started-data-tip.gif "Visualización de una sugerencia de datos")
+     ![Captura de pantalla animada del depurador de Visual Studio en la que se muestra el efecto de presionar F10 para depurar paso a paso por procedimientos y recorrer en iteración un bucle durante la depuración.](../csharp/media/get-started-data-tip.gif)
 
      El valor de la variable cambia con cada iteración del bucle `for` y muestra los valores de `f`, después, `fr`, luego, `fre`, etc. Para hacer que el depurador avance por el bucle más rápido en este escenario, puede presionar **F5**, o bien elegir **Depurar** > **Continuar**, en su lugar, lo que le permite avanzar hasta el punto de interrupción en lugar de hasta la siguiente instrucción.
 

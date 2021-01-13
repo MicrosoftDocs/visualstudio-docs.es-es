@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2956372882d4449345d026e691a12afb2988054a
-ms.sourcegitcommit: 6ef4e46c786c5bbcc52cd9c30e5ddfca12ea8b3c
+ms.openlocfilehash: a6f0d126853c518692725d495586b3adfa57c9aa
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97050837"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761360"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Cómo notificar un problema con Visual Studio o con el Instalador de Visual Studio
 
@@ -24,8 +24,9 @@ ms.locfileid: "97050837"
 Puede notificar un problema desde Visual Studio o desde su instalador. Con la herramienta de comentarios integrada es más fácil agregar información de diagnóstico, que los equipos de Visual Studio pueden usar para diagnosticar problemas y corregirlos. Estos son los pasos necesarios para notificar un problema.
 
 1. **En Visual Studio**, seleccione el icono de comentarios en la esquina superior derecha y seleccione Notificar un problema. También puede acceder a la Herramienta para enviar comentarios desde el menú **Ayuda** > **Enviar comentarios** > **Notificar un problema**.
-![Ventana emergente Notificar un problema en la Comunidad de desarrolladores de Visual Studio](media/feedback-button.png) Como alternativa, notifique un problema en el **Instalador de Visual Studio** si no puede instalar Visual Studio o si no puede acceder a la Herramienta para enviar comentarios en Visual Studio.  En el instalador, seleccione el icono de comentarios en la esquina superior derecha y seleccione Notificar un problema.
-![Menú emergente para notificar un problema en la Comunidad de desarrolladores de Visual Studio](media/installer.png)
+![Captura de pantalla en la que se muestra el icono de comentarios seleccionado en la esquina superior derecha de la ventana de Visual Studio y la opción Notificar un problema seleccionada en el menú contextual.](media/feedback-button.png)
+Como alternativa, notifique un problema en el **Instalador de Visual Studio** si no puede instalar Visual Studio o si no puede acceder a la herramienta para enviar comentarios en Visual Studio.  En el instalador, seleccione el icono de comentarios en la esquina superior derecha y seleccione Notificar un problema.
+![Captura de pantalla en la que se muestra el icono de comentarios seleccionado en la esquina superior derecha del Instalador de Visual Studio y la opción Notificar un problema seleccionada en el menú contextual.](media/installer.png)
 
 1. Al hacer clic en **Notificar un problema**, se abre el explorador predeterminado y se inicia sesión con la misma cuenta con la que inicia sesión en Visual Studio.
 
@@ -67,11 +68,11 @@ En el caso de que a una incidencia le falte información importante, le asignare
 
 1. Siga el vínculo del correo electrónico al informe de problemas o vaya a la página principal para ver todos los informes en el estado **Necesita más información**.
 
-    ![Mis comentarios](../ide/media/feedback-my-feedback.png)
+    ![Captura de pantalla de la página principal de la ventana de comentarios de Visual Studio. Se muestra un elemento de comentarios marcado con una etiqueta "Se necesita más información" en rojo.](../ide/media/feedback-my-feedback.png)
 
 1. Al seleccionar el vínculo Proporcionar más información del informe de problemas, se muestra una nueva pantalla. Desde aquí, puede ver qué información se solicita.
 
-   ![Mis comentarios](../ide/media/feedback-need-more-info.png)
+   ![Captura de pantalla de la ventana de comentarios de Visual Studio en la que se muestra la información que solicita Microsoft para resolver el problema.](../ide/media/feedback-need-more-info.png)
 
 1. Para proporcionar más información, puede agregar comentarios, datos adjuntos o grabar los pasos. Esta experiencia es similar a la notificación de un nuevo problema o a la de proporcionar información adicional cuando se vota un problema.
 
@@ -81,9 +82,9 @@ Puede ver estas solicitudes en la pantalla **Mis comentarios** junto con los dem
 
 ## <a name="search-for-solutions-or-provide-feedback"></a>Búsqueda de soluciones o envío de comentarios
 
-Si no quiere o no puede notificar un problema mediante Visual Studio, es posible que ese problema ya se haya notificado y que se haya publicado una solución en la página [Comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/).
+Si no quiere o no puede notificar un problema mediante Visual Studio, es posible que ese problema ya se haya notificado y que se haya publicado una solución en la página [Comunidad de desarrolladores de Visual Studio](https://developercommunity2.visualstudio.com/search?space=8).
 
-Si no tiene ningún problema que notificar, pero quiere sugerir una característica, también hay un lugar para hacerlo. Para obtener más información, vea la página [Sugerir una característica](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
+Si no tiene ningún problema que notificar, pero quiere sugerir una característica, también hay un lugar para hacerlo. Para obtener más información, vea la página [Sugerir una característica](https://aka.ms/feedback/suggest?space=8).
 
 ## <a name="see-also"></a>Vea también
 
@@ -91,5 +92,5 @@ Si no tiene ningún problema que notificar, pero quiere sugerir una característ
 * [Opciones de comentarios de Visual Studio](../ide/feedback-options.md)
 * [Notificación de un problema con Visual Studio para Mac](/visualstudio/mac/report-a-problem)
 * [Notificación de un problema con C++](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
-* [Comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/)
+* [Comunidad de desarrolladores de Visual Studio](https://aka.ms/feedback/suggest?space=8)
 * [Privacidad de datos de la Comunidad de desarrolladores](developer-community-privacy.md)

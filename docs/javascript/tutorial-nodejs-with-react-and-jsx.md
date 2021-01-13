@@ -1,6 +1,6 @@
 ---
 title: Creación de una aplicación Node.js y React
-description: En este tutorial, creará una aplicación con Node.js Tools para Visual Studio.
+description: Aprenda a crear un proyecto de aplicación web de Node.js a partir de una plantilla de Visual Studio.
 ms.custom: ''
 ms.date: 4/21/2020
 ms.topic: tutorial
@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: c6813e0ad482bb211269c9da3950842dda7f6abd
-ms.sourcegitcommit: a7f781d5a089e6aab6b073a07f3d4d2967af8aa6
+ms.openlocfilehash: 08e04407c5fc25a2835bd3209ffcd60fdc86d0b1
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81760090"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815781"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutorial: Crear una aplicación Node.js y React en Visual Studio
 
@@ -60,10 +60,10 @@ webpack empaqueta archivos JavaScript para que puedan ejecutarse en un explorado
 * Debe tener instalado Visual Studio y la carga de trabajo de desarrollo de Node.js.
 
     ::: moniker range=">=vs-2019"
-    Si todavía no ha instalado Visual Studio 2019, vaya a la página de  [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/)  para instalarlo de forma gratuita.
+    Si todavía no ha instalado Visual Studio 2019, vaya a la página [Descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/) para instalarlo de forma gratuita.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Si todavía no ha instalado Visual Studio 2017, vaya a la página de  [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/)  para instalarlo de forma gratuita.
+    Si todavía no ha instalado Visual Studio 2017, vaya a la página [Descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/) para instalarlo de forma gratuita.
     ::: moniker-end
 
     Si tiene que instalar la carga de trabajo pero ya tiene Visual Studio, vaya a **Herramientas** > **Obtener herramientas y características…** y se abrirá el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de Node.js** y, después, haga clic en **Modificar**.
@@ -369,7 +369,7 @@ A partir de Visual Studio 2019, se requiere un script de compilación. En luga
 
 1. En *server.js*, haga clic en el margen interno a la izquierda de la declaración `staticPath` para establecer un punto de interrupción:
 
-    ![Establecer un punto de interrupción](../javascript/media/tutorial-nodejs-react-set-breakpoint.png)
+    ![Captura de pantalla de la ventana de código de Visual Studio para server.js. Un punto rojo en el margen izquierdo indica que se ha establecido un punto de interrupción en la declaración staticPath.](../javascript/media/tutorial-nodejs-react-set-breakpoint.png)
 
     Los puntos de interrupción son la característica más básica y esencial para una depuración confiable. Un punto de interrupción indica dónde Visual Studio debe suspender la ejecución de código para poder echar un vistazo a los valores de las variables o al comportamiento de la memoria, o determinar si se está ejecutando o no una bifurcación de código.
 
@@ -436,13 +436,13 @@ Para este escenario, use Chrome.
 
     Para *app-bundle.js*, establezca el punto de interrupción en la función `render()`, como se muestra en la ilustración siguiente:
 
-    ![Establecer un punto de interrupción](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
+    ![Captura de pantalla de la ventana de código de Visual Studio para app-bundle.js. Un punto rojo en el margen izquierdo indica que se ha establecido un punto de interrupción en la función de representación.](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
     Para buscar la función `render()` en el archivo *app-bundle.js* transpilado, presione **Ctrl**+**F** (**Editar** > **Buscar y reemplazar** > **Búsqueda rápida**).
 
     Para *app.tsx*, establezca el punto de interrupción dentro de la función `render()`, en la instrucción `return`.
 
-    ![Establecer un punto de interrupción](../javascript/media/tutorial-nodejs-react-set-breakpoint-in-tsx-file.png)
+    ![Captura de pantalla de la ventana de código de Visual Studio para app.tsx. Un punto rojo en el margen izquierdo indica que se ha establecido un punto de interrupción en la instrucción "return" de la función de representación.](../javascript/media/tutorial-nodejs-react-set-breakpoint-in-tsx-file.png)
 
 2. Si va a establecer el punto de interrupción en el archivo *.tsx* (en lugar de *app-bundle.js*), tendrá que actualizar *webpack-config.js*. Reemplace el código siguiente:
 

@@ -1,5 +1,7 @@
 ---
 title: Depuración con el depurador Just-In-Time | Microsoft Docs
+description: Depure mediante el depurador Just-In-Time en Visual Studio. La depuración Just-in-Time puede iniciar Visual Studio automáticamente cuando se produce un error en una aplicación o esta se bloquea.
+ms.custom: SEO-VS-2020
 ms.date: 09/24/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40b6a0e43a8d0980615087c946e5dd14deef1b0b
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: a03afa64d19e3ccd0efbb170b4305049f6bfee30
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85350581"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761347"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Depuración con el depurador Just-In-Time en Visual Studio
 
@@ -128,11 +130,11 @@ En este ejemplo creará una aplicación de consola de C# en Visual Studio que pr
 
    Debería ver la siguiente ventana de comandos:
 
-   ![ThrowsNullExceptionConsole](../debugger/media/throwsnullexceptionconsole.png "ThrowsNullExceptionConsole")
+   ![Captura de pantalla de la consola para ThrowsNullException.exe, que produce una excepción de referencia nula no controlada (System.NullReferenceException).](../debugger/media/throwsnullexceptionconsole.png)
 
 1. Se abrirá el cuadro de diálogo **Elegir depurador Just-in-Time**.
 
-   ![JustInTimeDialog](../debugger/media/justintimedialog.png "JustInTimeDialog")
+   ![Captura de pantalla del cuadro de diálogo Elegir depurador Just-in-Time, el cual aparece después de mostrarse la excepción en la ventana de la consola de ThrowsNullException.exe.](../debugger/media/justintimedialog.png)
 
    En **Depuradores disponibles**, seleccione **Nueva instancia de \<your preferred Visual Studio version/edition>** , si todavía no está seleccionada.
 
@@ -140,7 +142,7 @@ En este ejemplo creará una aplicación de consola de C# en Visual Studio que pr
 
    El proyecto ThrowsNullException se abre en una nueva instancia de Visual Studio, con la ejecución detenida en la línea que produjo la excepción:
 
-   ![NullReferenceSecondInstance](../debugger/media/nullreferencesecondinstance.png "NullReferenceSecondInstance")
+   ![Captura de pantalla del proyecto ThrowsNullException en Visual Studio con la línea de código fuente que produjo la excepción resaltada.](../debugger/media/nullreferencesecondinstance.png)
 
 Puede iniciar la depuración en este punto. Si estaba depurando una aplicación real, deberá averiguar por qué el código está produciendo la excepción.
 

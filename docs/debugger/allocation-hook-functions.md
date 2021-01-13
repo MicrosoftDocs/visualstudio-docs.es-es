@@ -1,5 +1,7 @@
 ---
 title: Funciones de enlace de asignación | Microsoft Docs
+description: Obtenga información sobre cómo usar las funciones de enlace de asignación, las cuales se instalan mediante _CrtSetAllocHook, para realizar la depuración en tiempo de ejecución de C (CRT) en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -22,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f684c6c66448fdab2ee7607a81ff7ed769a5e607
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b0bea73a044dabce5270c06f68658f85c612574c
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745820"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729189"
 ---
 # <a name="allocation-hook-functions"></a>Funciones de enlace de asignación
 Una función de enlace de asignación, instalada mediante [_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook), recibe una llamada cada vez que se asigna, reasigna o libera memoria. Puede usar este tipo de enlace para muchos propósitos diferentes. Por ejemplo, puede usarlo para probar el modo en que una aplicación controla las situaciones de memoria insuficiente, como examinar pautas de asignación o registrar información de asignación para análisis posteriores.

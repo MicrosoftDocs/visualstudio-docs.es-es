@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 4e474cc96e4b950aee2f509a8e2879b0c31f912a
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 27002d9360d36330249167b2cc8b75b7cd832135
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350730"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815638"
 ---
 # <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>Publicar una aplicación de ASP.NET Core en App Service en Linux con Visual Studio
 
@@ -52,11 +52,11 @@ En este artículo se describe cómo usar la herramienta de **publicación** para
 
 1. En el cuadro de diálogo **Create Azure App Service (Linux)** (Crear Azure App Service [Linux]), se rellenan los campos de entrada **Nombre de la aplicación,** , **Grupo de recursos** y **Plan de App Service**. Puede mantener estos nombres o cambiarlos. Cuando esté preparado, seleccione **Guardar**.
 
-    ![Elegir Azure App Service](../deployment/media/quickstart-publish-linux-create-new-dialog.png)
+    ![Captura de pantalla del cuadro de diálogo Create Azure App Service (Linux) (Crear Azure App Service [Linux]) con los campos Nombre, Suscripción, Grupo de recursos y Plan de hospedaje rellenados.](../deployment/media/quickstart-publish-linux-create-new-dialog.png)
 
 1. En el cuadro de diálogo **Publicar**, la instancia recién creada se ha seleccionado automáticamente. Cuando esté listo, haga clic en **Finalizar**.
 
-    ![Elegir Azure App Service](../deployment/media/quickstart-publish-linux-select-instance.png)
+    ![Captura de pantalla del cuadro de diálogo Publicar con el servicio MyASpCoreWebAppOnAzure recién creado seleccionado como la instancia de App Service para la publicación.](../deployment/media/quickstart-publish-linux-select-instance.png)
 
 1. Seleccione **Publicar**. Visual Studio implementará la aplicación en Azure App Service y la aplicación web se cargará en el explorador. El panel de propiedades del proyecto **Publicar** muestra la dirección URL del sitio y otros detalles.
 

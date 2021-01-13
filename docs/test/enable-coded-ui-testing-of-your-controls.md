@@ -9,35 +9,35 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 7b36b7e2469aa5d4ef6e11cff2580e0fb0c8ff03
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 76224ce191354e05c2220af23aabe010403b35cb
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441409"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815768"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Habilitación de pruebas automatizadas de IU en los controles
 
 Para un control más estable, implemente compatibilidad con el marco de pruebas automatizadas de IU. Se pueden agregar niveles de compatibilidad de forma incremental. Para comenzar, admita la grabación, la reproducción y la validación de propiedades. A continuación, compile en base a eso para habilitar el generador de pruebas automatizadas de IU y que se reconozcan las propiedades personalizadas del control. Proporcione clases personalizadas para tener acceso a esas propiedades desde el código generado. También se puede ayudar al generador de pruebas de IU codificadas a capturar acciones de una manera que es próxima a la intención de la acción que se está registrando.
 
-![CUIT&#95;completo](../test/media/cuit_full.png)
+!Diagrama que muestra cómo las clases de ChartControl se extienden a través de la clase CreateAccessabilityInstance a las clases de ChartControlExtensionPackage.](../test/media/cuit_full.png)
 
-[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
+[!INCLUDE[coded-ui-test-deprecation](../test/includes/coded-ui-test-deprecation.md)]
 
 ## <a name="support-record-and-playback-and-property-validation-by-implementing-accessibility"></a>Admitir la grabación, la reproducción y la validación de propiedades al implementar la accesibilidad
 
 El generador de pruebas de IU codificadas captura información acerca de los controles que encuentra durante una grabación y después genera código para reproducir esa sesión. Si el control no admite accesibilidad, el generador de pruebas automatizadas de IU capturará acciones (como clics del mouse) mediante las coordenadas de pantalla. Cuando la prueba se reproduce, el código generado emite esas acciones en las mismas coordenadas de la pantalla. Si el control aparece en un lugar diferente de la pantalla cuando se reproduce la prueba, el código generado no podrá realizar la acción. Al no implementar la accesibilidad para el control, es posible que vea errores si la prueba se reproduce en otras configuraciones de pantalla, en entornos distintos, o cuando cambia el diseño de la interfaz de usuario.
 
-![CUIT&#95;RegistroSinSoporte](../test/media/cuit_recordnosupport.png)
+![Captura de pantalla de la ventana de grabación en el generador de pruebas automatizadas de IU. El botón Pausa está resaltado y se muestra "Click 'ChartControl' client" (Haga clic en el cliente "ChartControl") en la información sobre herramientas.](../test/media/cuit_recordnosupport.png)
 
 Si implementa accesibilidad, el generador de pruebas automatizadas de IU la usará para capturar información sobre el control cuando registre una prueba. A continuación, al ejecutar la prueba, el código generado volverá a reproducir esos eventos en el control, aunque esté en alguna otra parte en la interfaz de usuario. Los autores de las pruebas también pueden crear aserciones usando las propiedades básicas del control.
 
-![CUIT&#95;Registro](../test/media/cuit_record.png)
+![Captura de pantalla de la ventana de grabación en el generador de pruebas automatizadas de IU. El botón Pausa está resaltado y se muestra "Click 'A' label" (Haga clic en la etiqueta "A") en la información sobre herramientas.](../test/media/cuit_record.png)
 
 ### <a name="to-support-record-and-playback-property-validation-and-navigation-for-a-windows-forms-control"></a>Para admitir la grabación y reproducción, la validación de propiedades y la navegación de un control de Windows Forms
 Implemente la accesibilidad para el control como se indica en el procedimiento siguiente, que se explica en detalle en <xref:System.Windows.Forms.AccessibleObject>.
 
-![CUIT&#95;Accesible](../test/media/cuit_accessible.png)
+![Diagrama de clases de ChartControl que muestra la relación entre CreateAccessabilityInstance y la clase ChartControl.CurveLegend.](../test/media/cuit_accessible.png)
 
 1. Implemente una clase que se derive de <xref:System.Windows.Forms.Control.ControlAccessibleObject> y reemplace la propiedad <xref:System.Windows.Forms.Control.AccessibilityObject%2A> para devolver un objeto de la clase.
 
@@ -77,11 +77,11 @@ Implemente la accesibilidad para el control como se indica en el procedimiento s
 
 Una vez que haya implementado la compatibilidad básica para grabar, reproducir y validar propiedades, puede poner las propiedades personalizadas del control a disposición de las pruebas automatizadas de IU mediante la implementación de un complemento <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>. Por ejemplo, el procedimiento siguiente crea un proveedor de propiedades que permite que las pruebas automatizadas de IU tengan acceso a la propiedad State de los controles secundarios CurveLegend del control chart:
 
-![CUIT&#95;PropiedadesPersonalizadas](../test/media/cuit_customprops.png)
+![Captura de pantalla de la ventana principal del generador de pruebas automatizadas de IU parcialmente cubierta por una ventana Add Assertions (Agregar aserciones) con la propiedad de estado de un control de texto seleccionada.](../test/media/cuit_customprops.png)
 
 ### <a name="to-support-custom-property-validation"></a>Para admitir la validación de propiedades personalizada
 
-![CUIT&#95;Propiedades](../test/media/cuit_props.png)
+![Diagrama de las clases de ChartControl y ChartControlExtension con las clases ChartControlExtensionPackage y ChartControlIPropertyProvider resaltadas.](../test/media/cuit_props.png)
 
 1. Reemplace la propiedad <xref:System.Windows.Forms.AccessibleObject.Description%2A> del objeto accesible Curve Legend para pasar valores de propiedades enriquecidos en la cadena de descripción. Separe los distintos valores con punto y coma (;).
 
@@ -149,7 +149,7 @@ Si ha implementado un proveedor de propiedades para proporcionar acceso a las pr
 
 ### <a name="to-add-a-specialized-class-to-access-your-control"></a>Para agregar una clase especializada para obtener acceso al control
 
-![CUIT&#95;GeneraciónCódigo](../test/media/cuit_codegen.png)
+![Diagrama de las clases de ChartControl y ChartControlExtension con la clase CurveLegend resaltada en ChartControlExtensionPackage.](../test/media/cuit_codegen.png)
 
 1. Implemente una clase que se derive de <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinControl> y agregue el tipo del control a la colección de propiedades de búsqueda en el constructor.
 
@@ -165,7 +165,7 @@ Cuando Visual Studio registra una prueba, captura cada evento del mouse y del te
 
 ### <a name="to-support-intent-aware-actions"></a>Para admitir acciones intencionales
 
-![CUIT&#95;Acciones](../test/media/cuit_actions.png)
+![Diagrama de las clases ChartControl y ChartControlExtensionPackage con la clase ChartControlActionFilter resaltada en ChartControlExtensionPackage.](../test/media/cuit_actions.png)
 
 1. Implemente una clase de filtro de acción que derive de [UITestActionFilter](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110)), reemplazando las propiedades [ApplyTimeout](/previous-versions/visualstudio/visual-studio-2012/dd984649%28v%3dvs.110%29), [Category](/previous-versions/visualstudio/visual-studio-2012/dd986905(v=vs.110)), [Enabled](/previous-versions/visualstudio/visual-studio-2012/dd985633(v=vs.110)), [FilterType](/previous-versions/visualstudio/visual-studio-2012/dd778726(v=vs.110)), [Group](/previous-versions/visualstudio/visual-studio-2012/dd779219(v=vs.110)) y [Name](/previous-versions/visualstudio/visual-studio-2012/dd998334(v=vs.110)).
 

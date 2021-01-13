@@ -1,5 +1,7 @@
 ---
 title: Presentación de las propiedades del subproceso | Microsoft Docs
+description: La vista Subprocesos muestra un árbol de todos los subprocesos activos en el sistema. Obtenga información sobre cómo mostrar las propiedades de un subproceso que aparece en la vista Subprocesos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: acc57df5258675be42473c502a8d31d1a73e8c00
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 531b76511d4456f8491e1498c93a9d62ebf0b026
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852314"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903251"
 ---
 # <a name="how-to-display-thread-properties"></a>Procedimiento Presentación de las propiedades del subproceso
 Para obtener más información sobre un subproceso mostrado en [Vista de subprocesos](../debugger/threads-view.md), utilice el cuadro de diálogo [Propiedades del subproceso](../debugger/thread-properties-dialog-box.md).

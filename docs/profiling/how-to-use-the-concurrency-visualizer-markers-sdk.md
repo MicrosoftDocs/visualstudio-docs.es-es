@@ -1,5 +1,6 @@
 ---
 title: Usar el SDK de marcadores del Visualizador de simultaneidad | Microsoft Docs
+description: Aprenda a usar el SDK de marcadores del visualizador de simultaneidad en Visual Studio para crear intervalos y escribir marcas, mensajes y alertas.
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 19a45032-f8a7-4137-890e-2ceeec938b8d
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cf33ad094716ee0f8f4c8cc4bb06220db1237e5
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 24659a101da59ed3a8ca6389debfde6c08a038ed
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851585"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815612"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Cómo Usar el SDK de marcadores del Visualizador de simultaneidad
 Este tema muestra cómo usar el SDK del visualizador de simultaneidad para crear intervalos y escribir marcas, mensajes y alertas.
@@ -70,7 +71,7 @@ Este tema muestra cómo usar el SDK del visualizador de simultaneidad para crear
 
 6. Inicie el proyecto actual para mostrar el visualizador de simultaneidad. La serie de dos marcadores aparece en sus propios canales en la vista Subprocesos. En la siguiente ilustración se muestran dos nuevos intervalos.
 
-     ![Visualizador de simultaneidad con tres series de marcadores personalizados](../profiling/media/cvmarkerseriesnative.png "CvMarkerSeriesNative")
+     ![Captura de pantalla de la vista Subprocesos del visualizador de simultaneidad, en la que se muestra una serie de marcadores, marcas y mensajes, con un intervalo de marcas y un intervalo de mensajes.](../profiling/media/cvmarkerseriesnative.png "CvMarkerSeriesNative")
 
 ### <a name="to-use-visual-basic-or-c"></a>Para usar Visual Basic o C\#
 
@@ -164,7 +165,7 @@ Este tema muestra cómo usar el SDK del visualizador de simultaneidad para crear
 
 6. Inicie el proyecto actual para mostrar el visualizador de simultaneidad. Las tres series de marcadores aparecen en sus propios canales en la vista Subprocesos. En la siguiente ilustración se muestran tres nuevos intervalos.
 
-     ![Visualizador de simultaneidad con tres series de marcadores personalizados](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")
+     ![Captura de pantalla de la vista Subprocesos del visualizador de simultaneidad, en la que se muestra una serie de marcadores, marcas y mensajes, con un intervalo de marcas, un intervalo de mensajes y un intervalo de alertas.](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")
 
 ## <a name="see-also"></a>Vea también
 - [SDK del visualizador de simultaneidad](../profiling/concurrency-visualizer-sdk.md)

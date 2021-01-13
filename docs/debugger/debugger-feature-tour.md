@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffaeff850c739cd81569a88ae980acf837c413c1
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: c6d451735042374f0e3c6fb2154cd54520a069fc
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184216"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761438"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Primer vistazo al depurador de Visual Studio
 
@@ -64,17 +64,17 @@ Como se ha mencionado anteriormente, el depurador omite de forma predeterminada 
 
 Haga clic con el botón derecho en un campo o propiedad y elija **Ir a específico**. Luego elija una de las opciones disponibles.
 
-![Ir a específico](../debugger/media/dbg-tour-step-into-specific.png "Ir a específico")
+![Captura de pantalla del depurador de Visual Studio con una línea de código resaltada. La opción Ir a específico está seleccionada en el menú contextual con el método Path.set seleccionado.](../debugger/media/dbg-tour-step-into-specific.png)
 
 En este ejemplo, **Ir a específico** lleva al código de `Path.set`.
 
-![Ir a específico](../debugger/media/dbg-tour-step-into-specific-2.png "Ir a específico")
+![Captura de pantalla del depurador de Visual Studio en la que se muestra el código de Path.set. Las llaves que rodean la función "set" están resaltadas en amarillo.](../debugger/media/dbg-tour-step-into-specific-2.png)
 
 ## <a name="run-to-a-point-in-your-code-quickly-using-the-mouse"></a>Ejecutar hasta un punto del código rápidamente con el mouse
 
-En el depurador, mantenga el puntero sobre una línea de código hasta que el botón **Run to Click** (Ejecutar hasta clic) (ejecutar hasta aquí) ![Ejecutar hasta clic](../debugger/media/dbg-tour-run-to-click.png "RunToClick") aparezca a la izquierda.
+En el depurador, mantenga el puntero sobre una línea de código hasta que el botón **Run to Click** (Ejecutar hasta clic o Ejecutar hasta aquí) ![Captura de pantalla del botón Run to Click del depurador de Visual Studio. Este botón indica que la ejecución debe proceder hasta la línea donde está el botón.](../debugger/media/dbg-tour-run-to-click.png) aparezca a la izquierda.
 
-![Ejecutar hasta clic](../debugger/media/dbg-tour-run-to-click-2.png "Icono para ejecutar hasta la línea")
+![Captura de pantalla del depurador de Visual Studio en la que se muestra el botón Run to Click justo a la izquierda de una llamada a la función Update.](../debugger/media/dbg-tour-run-to-click-2.png)
 
 > [!NOTE]
 > El botón **Ejecutar hasta clic** (Ejecutar hasta aquí) está disponible a partir de [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].

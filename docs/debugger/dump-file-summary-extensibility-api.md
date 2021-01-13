@@ -1,5 +1,7 @@
 ---
 title: API de extensibilidad de resumen de archivos de volcado de memoria | Microsoft Docs
+description: Use la API de extensibilidad de resumen de archivos de volcado de memoria para ampliar el sistema de proyectos .exe y la página Resumen del volcado de memoria para usarlos con su propio motor de depuración en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d34e60b0b932470dec8a69874e28b99ebe76316b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2a91f262c34d9bdc69d5ce3319f05cdb3f0b952f
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72737980"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726532"
 ---
 # <a name="dump-file-summary-extensibility-api"></a>API de extensibilidad de resumen de archivos de volcado de memoria
 Mediante las API de extensibilidad de esta sección, puede ampliar el sistema de proyectos .Exe y la página **Resumen del volcado de memoria** para utilizarlos con su propio motor de depuración.

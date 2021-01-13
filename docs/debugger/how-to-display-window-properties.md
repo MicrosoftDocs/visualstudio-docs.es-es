@@ -1,5 +1,7 @@
 ---
 title: Presentación de propiedades de ventana | Microsoft Docs
+description: La vista Ventanas muestra un árbol de todas las ventanas activas del sistema. Obtenga información sobre cómo mostrar las propiedades de una ventana que aparece en la vista Ventanas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2eed4d85d01711fedd6235a45f5e8ea3a3340ca
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 55b4a40f1dae76f2fc0aa807b7099fdd7ac928f0
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852288"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903966"
 ---
 # <a name="how-to-display-window-properties"></a>Procedimiento Presentación de propiedades de ventana
 Para obtener más información sobre una ventana que aparece en la [vista Ventanas](../debugger/windows-view.md), use el [cuadro de diálogo Propiedades de la ventana](../debugger/window-properties-dialog-box.md).

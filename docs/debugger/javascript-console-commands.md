@@ -1,6 +1,7 @@
 ---
 title: Comandos de la consola JavaScript | Microsoft Docs
-ms.custom: ''
+description: Use comandos para enviar mensajes y realizar otras tareas en la ventana de la consola JavaScript. Este artículo se aplica a las aplicaciones de Node.js, a las aplicaciones para UWP y a las aplicaciones de Apache Cordova.
+ms.custom: SEO-VS-2020
 ms.date: 10/17/2019
 ms.topic: reference
 helpviewer_keywords:
@@ -14,12 +15,12 @@ monikerRange: vs-2017
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: 301461caa15321b5a77f42872c93f52f3ec2c9c1
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 2877b3ca9fb644ae4dae1af27e79e6ee52423b97
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211279"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903914"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Comandos de la consola JavaScript de Visual Studio
 

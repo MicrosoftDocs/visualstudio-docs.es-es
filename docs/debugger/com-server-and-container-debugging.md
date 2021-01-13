@@ -1,5 +1,7 @@
 ---
 title: Depuración de servidores y contenedores COM | Microsoft Docs
+description: Aprenda a depurar servidores y contenedores COM. Depure un servidor y un contenedor COM en la misma solución, una aplicación de servidor sin información de contenedor o una aplicación de SDI.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec5ed51c72ad7fd64bbdfd0135f53a13bb8c6e4b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 9b1d4ceecae385ac6e5444c60f6634b260f2e887
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745673"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728981"
 ---
 # <a name="com-server-and-container-debugging"></a>Depuración de servidores y contenedores COM
 Las aplicaciones COM realizan una serie de tareas fuera del control directo del programador. La comunicación entre archivos DLL, los contadores de uso en objetos y las operaciones del Portapapeles son sólo algunas de las áreas en las que se puede encontrar un comportamiento inesperado. Cuando esto ocurre, el primer paso es determinar el origen del problema.

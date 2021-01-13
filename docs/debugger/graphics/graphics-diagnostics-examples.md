@@ -1,5 +1,7 @@
 ---
 title: Ejemplos de diagnóstico de gráficos | Microsoft Docs
+description: Vea ejemplos de cómo depurar problemas de representación en aplicaciones basadas en DirectX mediante el conjunto de herramientas Diagnóstico de gráficos de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 45dd86b2-801e-4b07-a8c4-7bd25641d7f8
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4df2fafb523d04a8ec222b10e1ac9ed3aa95454d
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 2ab1c01ef0f0b82f80a521929f90e90c6a4e4bc7
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73187934"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727809"
 ---
 # <a name="graphics-diagnostics-examples"></a>Ejemplos de diagnóstico de gráficos
 Estos ejemplos muestran cómo depurar problemas de presentación en aplicaciones basadas en DirectX utilizando Diagnóstico de gráficos de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].

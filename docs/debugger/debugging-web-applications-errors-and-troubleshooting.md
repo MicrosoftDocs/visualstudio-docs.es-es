@@ -1,6 +1,7 @@
 ---
 title: 'Depuración de aplicaciones web: errores y solución de problemas'
-ms.custom: seodec18
+description: Encuentre vínculos a páginas de referencia para depurar aplicaciones web, como una página de solución de problemas y páginas en las que se describen cada uno de los errores que puede encontrar.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -27,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4cb60f4d378daab829713cb4bbbb670ef8ed25a
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: f827dd2bb8081787a4883b2d67ee41d8b6d43876
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188351"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726792"
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>Depurar aplicaciones web: errores y solución de problemas
 Al intentar depurar aplicaciones web pueden producirse los siguientes errores.

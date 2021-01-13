@@ -8,12 +8,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 0eaf41dc0bf3e21dfbf4018261844181d594f0d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cf6287ebdb4c2df6145a0e60e22ac1197a517fde
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649614"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729371"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Escribir pruebas unitarias para C/C++ en Visual Studio
 
@@ -85,7 +85,7 @@ Si el código de prueba no exporta las funciones que quiere probar, puede agrega
 
 Después, en el archivo *.cpp* de prueba unitaria, agregue una directiva `#include` relativa a cualquier archivo de encabezado que declare los tipos y funciones que quiera probar. Escriba `#include "` y, de este modo, IntelliSense se activará para ayudarle a elegir. Repita esto mismo con los encabezados que haya.
 
-![Agregar directivas include](media/cpp-add-includes-test-project.png)
+![Captura de pantalla del Explorador de soluciones que muestra la adición de una directiva #include con IntelliSense resaltando un archivo de encabezado para su inclusión.](media/cpp-add-includes-test-project.png)
 
 Para evitar tener que escribir la ruta de acceso completa en cada instrucción include en el archivo de código fuente, puede agregar las carpetas necesarias en **Proyecto** > **Propiedades** > **C/C++**  > **General** > **Directorios de inclusión adicionales**.
 
@@ -96,7 +96,7 @@ Para evitar tener que escribir la ruta de acceso completa en cada instrucción i
 
 El archivo *.cpp* del proyecto de prueba tiene un método y una clase de código auxiliar definidos automáticamente. Muestran un ejemplo de cómo escribir código de prueba. Las firmas usan las macros TEST_CLASS y TEST_METHOD, lo que hace que los métodos se puedan detectar desde la ventana **Explorador de pruebas**.
 
-![Agregar directivas include](media/cpp-write-test-methods.png)
+![Captura de pantalla de la ventana Explorador de pruebas en la que se muestra el archivo de código unittest1.cpp que contiene un método y una clase de código auxiliar con las macros TEST_CLASS y TEST_METHOD.](media/cpp-write-test-methods.png)
 
 TEST_CLASS y TEST_METHOD forman parte del [Marco de pruebas nativo de Microsoft](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). El **Explorador de pruebas** detecta métodos de prueba en otros marcos admitidos de forma similar.
 

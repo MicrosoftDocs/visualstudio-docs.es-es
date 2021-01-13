@@ -1,5 +1,6 @@
 ---
 title: Análisis del uso de memoria en el Generador de perfiles de rendimiento
+description: Obtenga información sobre cómo usar la herramienta Uso de memoria sin el depurador en el Generador de perfiles de rendimiento de Visual Studio para supervisar el uso de memoria de la aplicación.
 ms.custom: ''
 ms.date: 04/02/2020
 ms.topic: how-to
@@ -13,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6e1bd3d38e6303f11ec5da0e88816d56dd43d98
-ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
+ms.openlocfilehash: 65ac088d52b4e7a288965bb75e1bc6a00da40f7b
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92918232"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815820"
 ---
 # <a name="analyze-memory-usage-without-debugging-in-the-performance-profiler"></a>Análisis del uso de memoria sin depurar en el Generador de perfiles de rendimiento
 
@@ -34,11 +35,11 @@ La herramienta Uso de memoria se puede ejecutar [con o sin el depurador](../prof
 
    La herramienta Uso de memoria es compatible con aplicaciones .NET, ASP.NET, C++ o de modo mixto (.NET y nativas).
 
-1. En el menú Depurar, establezca la configuración de la solución en **Versión** y seleccione **Depurador local de Windows** (o **Equipo local** ) como el destino de implementación.
+1. En el menú Depurar, establezca la configuración de la solución en **Versión** y seleccione **Depurador local de Windows** (o **Equipo local**) como el destino de implementación.
 
 1. En la barra de menús, elija **Depurar** > **Generador de perfiles de rendimiento**.
 
-1. En **Herramientas disponibles** , seleccione **Uso de memoria** y después **Iniciar**.
+1. En **Herramientas disponibles**, seleccione **Uso de memoria** y después **Iniciar**.
 
    ![Iniciar una sesión de diagnóstico de Uso de memoria](../profiling/media/memuse_start_diagnosticssession.png "Iniciar una sesión de diagnóstico de Uso de memoria")
 
@@ -46,7 +47,7 @@ La herramienta Uso de memoria se puede ejecutar [con o sin el depurador](../prof
 
 Al iniciar una sesión de diagnóstico, se inicia la aplicación y en la ventana **Herramientas de diagnóstico** se muestra un gráfico de escala de tiempo del uso de memoria de la aplicación.
 
-![Página de información general de Uso de memoria](../profiling/media/memuse__reportoverview.png "MEMUSE__ReportOverview")
+![Captura de pantalla de la ventana Herramientas de diagnóstico en el Generador de perfiles de rendimiento de Visual Studio en la que se muestra un gráfico de escala de tiempo del uso de memoria de la aplicación.](../profiling/media/memuse__reportoverview.png "MEMUSE__ReportOverview")
 
 En el gráfico de escala de tiempo se muestran las fluctuaciones de memoria mientras se ejecuta la aplicación. Los picos del gráfico suelen indicar que hay código recopilando o creando datos que luego descarta una vez que termina el procesamiento. Los picos acusados indican áreas que se podrían optimizar. Más preocupante es un aumento del consumo de memoria que no se devuelva, ya que podría indicar un uso de memoria ineficaz o incluso una fuga de la misma.
 
@@ -66,7 +67,7 @@ Para detener una sesión de supervisión sin crear un informe, simplemente cierr
 
 Una vez detenida la recopilación de datos, la herramienta **Uso de memoria** detiene la aplicación y muestra la página de información general **Uso de memoria**.
 
-![Página de información general de Uso de memoria](../profiling/media/memuse__reportoverview1.png "Página de información general de Uso de memoria")
+![Captura de pantalla de la página de información general de la herramienta Uso de memoria en el Generador de perfiles de rendimiento de Visual Studio, que muestra un gráfico del uso de memoria y dos paneles de instantáneas.](../profiling/media/memuse__reportoverview1.png "Página de información general de Uso de memoria")
 
 ### <a name="memory-usage-snapshots"></a><a name="BKMK_Memory_Usage_snapshot_views"></a> Instantáneas de uso de memoria
 
@@ -85,7 +86,7 @@ Los números son vínculos que abren vistas de informes de **Uso de memoria** de
 
 ## <a name="memory-usage-snapshot-reports"></a>Informes de instantáneas de Uso de memoria
 
-<a name="BKMK_Snapshot_report_trees"></a> Cuando hace clic en uno de los vínculos de instantánea en la página de información general **Uso de memoria** , se abre un informe de instantáneas en una página nueva.
+<a name="BKMK_Snapshot_report_trees"></a> Cuando hace clic en uno de los vínculos de instantánea en la página de información general **Uso de memoria**, se abre un informe de instantáneas en una página nueva.
 
 ![Informe de instantánea Uso de memoria](../profiling/media/memuse_snapshotreport_all.png "Informe de instantánea Uso de memoria")
 
@@ -141,7 +142,7 @@ El árbol **Montón administrado** en un informe de detalles de instantánea tie
 ### <a name="paths-to-root-tree-snapshot-details-reports"></a><a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a> Rutas de acceso al árbol raíz (informes de detalles de instantánea)
 El árbol **Ruta de acceso al nodo raíz** muestra la cadena de objetos que hace referencia a un tipo o una instancia. El recolector de elementos no utilizados de .NET limpia la memoria de un objeto únicamente si todas las referencias a este se han liberado.
 
-Para un tipo en el árbol **Rutas de acceso al nodo raíz** , el número de objetos que contienen referencias a ese tipo se muestra en la columna **Recuento de referencias**.
+Para un tipo en el árbol **Rutas de acceso al nodo raíz**, el número de objetos que contienen referencias a ese tipo se muestra en la columna **Recuento de referencias**.
 
 ![Árbol Rutas de acceso al nodo raíz para tipos](../profiling/media/memuse_snapshotdetails_type_pathstoroottree.png "Árbol Rutas de acceso al nodo raíz para tipos")
 
@@ -191,7 +192,7 @@ El árbol **Montón administrado** en un informe de diferencias de instantánea 
 
 El árbol **Ruta de acceso al nodo raíz** muestra la cadena de objetos que hace referencia a un tipo o una instancia. El recolector de elementos no utilizados de .NET limpia la memoria de un objeto únicamente si todas las referencias a este se han liberado.
 
-Para un tipo en el árbol **Rutas de acceso al nodo raíz** , el número de objetos que contienen referencias a ese tipo se muestra en la columna **Recuento de referencias**. La diferencia de recuento con respecto a la instantánea anterior está en la columna **Diferencia de referencia**.
+Para un tipo en el árbol **Rutas de acceso al nodo raíz**, el número de objetos que contienen referencias a ese tipo se muestra en la columna **Recuento de referencias**. La diferencia de recuento con respecto a la instantánea anterior está en la columna **Diferencia de referencia**.
 
  ![Árbol Rutas de acceso al nodo raíz en un informe de diferencias](../profiling/media/memuse_snapshotdiff_pathstoroot_instance_all.png "Árbol Rutas de acceso al nodo raíz en un informe de diferencias")
 
@@ -201,7 +202,7 @@ En el árbol **Tipos a los que se hace referencia** u **Objetos a los que se hac
 
 ![Tipos a los que se hace referencia en un informe de diferencias](../profiling/media/memuse_snapshotdiff_referencedtypes.png "Tipos a los que se hace referencia en un informe de diferencias")
 
-El árbol **Tipos a los que se hace referencia** en un informe de diferencias de instantánea tiene las siguientes columnas. Un árbol **Objetos a los que se hacer referencia** tiene las columnas **Instancia** , **Tamaño (Bytes)** , **Tamaño inclusivo (Bytes)** y **Módulo**.
+El árbol **Tipos a los que se hace referencia** en un informe de diferencias de instantánea tiene las siguientes columnas. Un árbol **Objetos a los que se hacer referencia** tiene las columnas **Instancia**, **Tamaño (Bytes)** , **Tamaño inclusivo (Bytes)** y **Módulo**.
 
 |NOMBRE|Descripción|
 |-|-|

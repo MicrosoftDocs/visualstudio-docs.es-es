@@ -7,12 +7,12 @@ monikerRange: vs-2019
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 6421fd0139b04262ac5f1e835f010c1372c034ee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 29fa854ab00764fc0166a53d8b48989f2c74f036
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329172"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833304"
 ---
 # <a name="xaml-code-editor"></a>Editor de código XAML
 
@@ -136,7 +136,7 @@ Para obtener más información sobre el seguimiento de cambios, e incluir las l�
 
 Al modificar el código en el editor de código XAML, hay varias características a las que se puede acceder mediante el menú contextual. La mayoría de estas características están disponibles de forma universal en el IDE de Visual Studio, mientras que otras son específicas del uso de un editor de código junto con una ventana de diseño.
 
-![Menú contextual del editor de código XAML en Visual Studio](media/xaml-code-editor-right-click-menu.png "Captura de pantalla del menú contextual del editor de código XAML en Visual Studio 2019")
+![Captura de pantalla del menú contextual del editor de código XAML en Visual Studio 2019.](media/xaml-code-editor-right-click-menu.png)
 
 Esto es lo que hace cada característica y su utilidad:
 
@@ -163,7 +163,7 @@ La barra de desplazamiento puede hacer más que desplazarse por el código. Tamb
 
 En la barra de desplazamiento del editor de código, hay un botón **Dividir** en la parte superior derecha. Al elegirlo, puede abrir otro panel del editor de código. Esto resulta útil porque funcionan de forma independiente, por lo que puede usarlos para trabajar en código en diferentes ubicaciones.
 
-![Editor de código XAML, solo el panel central, en Visual Studio](media/code-editor-split-window-button.png "Captura de pantalla del editor de código XAML, solo el panel central, en Visual Studio 2019")
+![Captura de pantalla en la que se muestra el panel central del editor de código XAML en Visual Studio 2019 con el botón de vista en dos paneles resaltado en la parte superior derecha del panel.](media/code-editor-split-window-button.png)
 
 Para obtener más información sobre cómo dividir una ventana del editor, vea la página [Administración de ventanas del editor](../ide/how-to-manage-editor-windows.md).
 

@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: be0ba7b32af5247bb0dccccb68d900cb6797cc13
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 8be766e078a04d713ed69aa0b9cc464433dcb73d
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801183"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761399"
 ---
 # <a name="get-started-with-r-tools-for-visual-studio"></a>Introducción a Herramientas de R para Visual Studio
 
@@ -62,7 +62,7 @@ Una vez que Herramientas de R para Visual Studio (RTVS) esté instalado (vea [In
 
 1. Algunos comandos, como `plot(1:100)`, abren una nueva ventana en Visual Studio cuando los resultados no se pueden mostrar directamente en la ventana interactiva:
 
-    ![Visualización de un trazado en Visual Studio](media/getting-started-07-plot-window.png)
+    ![Captura de pantalla de una ventana de trazado de R de Visual Studio en la que se muestra la salida de la función de gráfico con un trazado (1:100).](media/getting-started-07-plot-window.png)
 
 La ventana interactiva también permite revisar el historial, cargar y guardar áreas de trabajo, adjuntar a un depurador e interactuar con los archivos de código fuente en lugar de usar las operaciones de copiar y pegar. Vea [Working with the R Interactive Window (Trabajar con la ventana R interactivo)](interactive-repl-for-r-in-visual-studio.md) para obtener detalles.
 
@@ -86,7 +86,7 @@ Como ejemplo, los pasos siguientes crean un poco de código para explorar el [te
 
 1. Para ver rápidamente los resultados, seleccione todo el código (**Ctrl**+**A**) y luego presione **Ctrl**+**Entrar** o haga clic con el botón derecho y seleccione **Ejecutar en modo interactivo**. Todo el código seleccionado se ejecuta en la ventana interactiva como si lo hubiera escrito directamente y muestra el resultado en una ventana de trazados:
 
-    ![Visualización de un trazado en Visual Studio](media/getting-started-08-plot1.png)
+    ![Captura de pantalla de una ventana de trazado de R de Visual Studio en la que se muestra un gráfico de la densidad demográfica.](media/getting-started-08-plot1.png)
 
 1. Para una sola línea, simplemente presione **Ctrl**+**Entrar** en cualquier momento para ejecutar esa línea en la ventana interactiva.
 
@@ -163,7 +163,7 @@ Para profundizar más, vea [Depuración](debugging-r-in-visual-studio.md) y [Exp
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-En este tutorial ha aprendido los conceptos básicos de los proyectos de R y ha usado la ventana R interactivo, la edición de código y la depuración de Visual Studio. Para seguir explorando otras funcionalidades, consulte los artículos siguientes, así como los que aparecen en la tabla de contenido:
+En este tutorial ha aprendido los conceptos básicos de los proyectos de R y ha usado la ventana R interactivo, la edición de código y la depuración de Visual Studio. Para seguir explorando otras funcionalidades, consulte los artículos siguientes y los que aparecen en la tabla de contenido:
 
 - [Proyectos de ejemplo](getting-started-samples.md)
 - [Edición de código](editing-r-code-in-visual-studio.md)

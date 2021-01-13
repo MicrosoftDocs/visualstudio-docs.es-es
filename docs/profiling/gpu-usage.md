@@ -1,5 +1,6 @@
 ---
 title: Uso de GPU | Microsoft Docs
+description: Aprenda a usar la herramienta Uso de GPU del Generador de perfiles de rendimiento para comprender mejor el uso del hardware de alto nivel en la aplicación Direct3D.
 ms.date: 11/01/2018
 ms.topic: conceptual
 author: mikejo5000
@@ -7,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a738490933c6f2d1cdf89e7e974a268540af991
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: a6b143cc0b3001f0a182de43f1b6eea554025eda
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90074974"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815657"
 ---
 # <a name="gpu-usage"></a>Uso de GPU
 
@@ -62,11 +63,11 @@ Para generar y ver el informe Uso de GPU:
 
 1. Seleccione el vínculo **Detener colección** en la parte inferior de la ventana de sesión de diagnóstico, o seleccione **Detener** en la esquina superior izquierda.
 
-   ![Captura de pantalla de la ventana de sesión de diagnóstico](media/gfx_diag_gpu_usage_collect.png "gfx_diag_gpu_usage_collect")
+   ![Captura de pantalla de una ventana de sesión de diagnóstico en la herramienta Uso de GPU que muestra los fotogramas por segundo, el uso de la GPU, el botón de detención y el vínculo para detener la recopilación.](media/gfx_diag_gpu_usage_collect.png "gfx_diag_gpu_usage_collect")
 
 2. En la parte superior del informe, seleccione una sección en uno de los gráficos en los que se muestra el problema que desea investigar. La selección puede tener una duración de hasta 3 segundos. Las secciones más largas se truncan hacia el principio.
 
-   ![Captura de pantalla de la ventana de sesión de diagnóstico](media/gfx_diag_gpu_usage_select1.png "gfx_diag_gpu_usage_select1")
+   ![Captura de pantalla de una ventana de sesión de diagnóstico en la herramienta Uso de GPU con parte de la escala de tiempo de la sesión de diagnóstico seleccionada.](media/gfx_diag_gpu_usage_select1.png "gfx_diag_gpu_usage_select1")
 
 3. Para ver una escala de tiempo detallada de la selección, seleccione **ver detalles** en el mensaje **...haga clic aquí para ver detalles de uso de la GPU del intervalo**, en la parte inferior del informe.
 
@@ -84,7 +85,7 @@ A partir de Visual Studio 2017, puede abrir estos datos con [GPUView](/windows-h
 
 ## <a name="use-the-gpu-usage-report"></a>Uso del informe Uso de GPU
 
-La parte superior del informe Uso de GPU muestra escalas de tiempo de las actividades de procesamiento de la CPU, de representación de la GPU y de copia de la GPU. Estas escalas de tiempo se dividen mediante barras verticales de color gris claro que indican la sincronización vertical de la pantalla. La frecuencia de las barras coincide con la frecuencia de actualización de una de las pantallas (seleccionada mediante la lista desplegable **Pantalla**) de la que se han recopilado los datos de uso de la GPU.
+La parte superior del informe Uso de GPU muestra escalas de tiempo de las actividades de procesamiento de la CPU, de representación de la GPU y de copia de la GPU. Estas escalas de tiempo se dividen mediante barras verticales de color gris claro que indican la sincronización vertical de la pantalla (vsync). La frecuencia de las barras coincide con la frecuencia de actualización de una de las pantallas (seleccionada mediante la lista desplegable **Pantalla**) de la que se han recopilado los datos de uso de la GPU.
 
 Dado que la pantalla puede tener una frecuencia de actualización mayor que el destino de rendimiento de la aplicación, no puede haber una relación de uno a uno entre la sincronización vertical y la velocidad de fotogramas que debe alcanzar la aplicación. Para alcanzar su destino de rendimiento, una aplicación debe completar todo el procesamiento, realizar la representación y realizar una llamada `Present()` a la velocidad de fotogramas de destino. Sin embargo, el fotograma representado no se muestra hasta la siguiente sincronización vertical tras `Present()`.
 

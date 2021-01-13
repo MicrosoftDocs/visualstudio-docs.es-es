@@ -1,5 +1,6 @@
 ---
 title: Páginas de propiedades Depurar archivos de código fuente/Solución
+description: Acceda a la página de propiedades Depurar archivos de código fuente en Visual Studio haciendo clic con el botón derecho en su solución desde el Explorador de soluciones y, después, seleccione Propiedades > Propiedades comunes.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -23,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3057a6a94edb09018836493257e8d875d938b839
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: be57355c8fc38758080ebde344db0b4224bc3df8
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809549"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728530"
 ---
 # <a name="debug-source-files-common-properties-solution-property-pages-dialog-box"></a>Depurar archivos de código fuente, Propiedades comunes, Páginas de propiedades de Solución (Cuadro de diálogo)
 Esta página de propiedades especifica si el depurador buscará archivos de código fuente al depurar la solución.

@@ -1,5 +1,6 @@
 ---
 title: Modelos comunes para aplicaciones multiproceso con comportamiento deficiente
+description: Obtenga información sobre los patrones comunes para aplicaciones multiproceso con comportamiento deficiente que se incluyen en el visualizador de simultaneidad de Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f45c22684ef737de7235caebd4ad0b1b4189155
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 36e14640da4d66134ca961607f66f6a355f6b9d9
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808947"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815794"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Modelos comunes para aplicaciones multiproceso con comportamiento deficiente
 
@@ -37,17 +38,17 @@ Para obtener más información, consulte la sección "Start with the problem" (E
 
 ## <a name="uneven-workload-distribution"></a>Distribución de carga de trabajo desigual
 
-![Carga de trabajo desigual](../profiling/media/unevenworkload_1.png "UnevenWorkLoad_1")
+![Captura de pantalla de un gráfico de la carga de trabajo para los subprocesos paralelos en el visualizador de simultaneidad. Los subprocesos terminan en momentos diferentes que muestran un patrón escalonado.](../profiling/media/unevenworkload_1.png)
 
 Cuando se produce una distribución irregular de trabajo entre varios subprocesos paralelos en una aplicación, aparece un patrón de escalón típico a medida que cada subproceso completa su trabajo, como se muestra en la ilustración anterior. El visualizador de simultaneidad suele mostrar tiempos de inicio muy similares para cada subproceso simultáneo. Sin embargo, estos subprocesos normalmente finalizan de forma irregular, en lugar de finalizar simultáneamente. Este patrón indica una distribución irregular de trabajo entre un grupo de subprocesos paralelos, lo que puede provocar una disminución del rendimiento. El mejor enfoque para este problema es volver a evaluar el algoritmo utilizado para dividir el trabajo entre los subprocesos paralelos.
 
 Como se muestra en la siguiente ilustración, el visualizador de simultaneidad también puede exponer este síntoma en la vista Uso de CPU como un descenso gradual del uso de CPU.
 
-![Carga de trabajo desigual](../profiling/media/unevenworkload_2.png "UnevenWorkload_2")
+![Captura de pantalla de la vista Uso de CPU en el visualizador de simultaneidad en la que se muestra un patrón en escalera al final del gráfico de uso de CPU.](../profiling/media/unevenworkload_2.png)
 
 ## <a name="oversubscription"></a>Suscripción excesiva
 
-![Suscripción excesiva](../profiling/media/oversubscription.png "Suscripción excesiva")
+![Captura de pantalla de un gráfico de la carga de trabajo para todos los subprocesos activos en el visualizador de simultaneidad. Una leyenda muestra la cantidad de tiempo empleado en la ejecución y el adelantamiento.](../profiling/media/oversubscription.png)
 
 En el caso de la suscripción excesiva, el número de subprocesos activos en un proceso es mayor que el número de núcleos lógicos disponibles en el sistema. La ilustración anterior muestra los resultados de la suscripción excesiva, con bandas de adelantamiento significativas en todos los subprocesos activos. Además, la leyenda muestra que un gran porcentaje de tiempo se invierte en el adelantamiento (84 por ciento en este ejemplo). Esto puede indicar que el proceso está solicitando al sistema que ejecute más subprocesos simultáneos que el número de núcleos lógicos. Sin embargo, esto también puede indicar que otros procesos del sistema están usando recursos que se daba por hecho que estaban disponibles para este proceso.
 

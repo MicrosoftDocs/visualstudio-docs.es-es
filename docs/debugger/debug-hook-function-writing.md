@@ -1,5 +1,7 @@
 ---
 title: Creación de funciones de enlace de depuración | Microsoft Docs
+description: Obtenga información sobre varias funciones de enlace de depuración personalizadas que puede escribir y que le permitirán insertar su código en algunos puntos predefinidos dentro del procesamiento normal del depurador.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 038c976380ff1e1f0a1a7c4c150fc462f6b1d1db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a5e2f05005d0b43d526936bfbc8018739cb1ed88
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350724"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728942"
 ---
 # <a name="debug-hook-function-writing"></a>Creación de funciones de enlace de depuración
 Esta sección describe varias funciones de enlace de depuración personalizadas que puede escribir y que le permitirán insertar el código que desee en algunos puntos predefinidos dentro del procesamiento normal del depurador.

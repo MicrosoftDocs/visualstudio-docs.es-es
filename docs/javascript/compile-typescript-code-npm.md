@@ -1,6 +1,6 @@
 ---
 title: Compilar y generar código TypeScript con npm
-description: Obtenga información sobre cómo compilar y generar TypeScript en Visual Studio.
+description: Aprenda a agregar compatibilidad con TypeScript a sus proyectos de Visual Studio mediante el administrador de paquetes de nodos (npm).
 ms.date: 7/23/2020
 ms.topic: conceptual
 author: mikejo5000
@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: add67535c0c3c9e4a48b95c2b9d5fe0717511797
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: be7bc30f260a492fbc783a8e730b1e550fcb4671
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414386"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846807"
 ---
 # <a name="compile-typescript-code-nodejs"></a>Compilar código TypeScript (Node.js)
 
@@ -35,7 +35,7 @@ El [paquete npm de TypeScript](https://www.npmjs.com/package/typescript) agrega 
 
    En el Explorador de soluciones (panel derecho), abra *package.json* en la raíz del proyecto. Los paquetes enumerados corresponden a los paquetes del nodo npm del Explorador de soluciones. Para más información, vea [Administrar paquetes de npm](../javascript/npm-package-management.md).
 
-   En el caso de un proyecto de Node.js, puede instalar el paquete de npm de TypeScript mediante la línea de comandos o el IDE. Para realizar la instalación mediante el IDE, haga clic con el botón derecho en el nodo npm del Explorador de soluciones, elija **Instalar nuevos paquetes de npm** , busque **TypeScript** e instale el paquete.
+   En el caso de un proyecto de Node.js, puede instalar el paquete de npm de TypeScript mediante la línea de comandos o el IDE. Para realizar la instalación mediante el IDE, haga clic con el botón derecho en el nodo npm del Explorador de soluciones, elija **Instalar nuevos paquetes de npm**, busque **TypeScript** e instale el paquete.
 
    Active la opción **npm** de la ventana **Resultados** para ver el progreso de la instalación del paquete. El paquete instalado se muestra en el nodo **npm** del Explorador de soluciones.
 
@@ -72,14 +72,14 @@ El [paquete npm de TypeScript](https://www.npmjs.com/package/typescript) agrega 
 
 ## <a name="build-the-application"></a>Compilar la aplicación
 
-1. Agregue archivos TypeScript ( *.ts* ) o TypeScript JSX ( *.tsx* ) al proyecto y, a continuación, agregue código de TypeScript. Para obtener un ejemplo sencillo de TypeScript, use lo siguiente:
+1. Agregue archivos TypeScript ( *.ts*) o TypeScript JSX ( *.tsx*) al proyecto y, a continuación, agregue código de TypeScript. Para obtener un ejemplo sencillo de TypeScript, use lo siguiente:
 
    ```typescript
    let message: string = 'Hello World';
    console.log(message);
    ```
 
-1. En *package.json* , agregue compatibilidad con los comandos de limpieza y compilación de Visual Studio mediante los siguientes scripts.
+1. En *package.json*, agregue compatibilidad con los comandos de limpieza y compilación de Visual Studio mediante los siguientes scripts.
 
    ```json
    "scripts": {
@@ -88,7 +88,7 @@ El [paquete npm de TypeScript](https://www.npmjs.com/package/typescript) agrega 
    },
    ```
 
-   Si debe realizar la compilación mediante una herramienta de terceros como webpack, puede agregar un script de compilación de línea de comandos al archivo *package.json* :
+   Si debe realizar la compilación mediante una herramienta de terceros como webpack, puede agregar un script de compilación de línea de comandos al archivo *package.json*:
 
    ```json
    "scripts": {
