@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fd1ff5ff0f8c7510185236c425ddd870f8b500f
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: 6fb2fde5d5629b84ccd0e136c132a200b154ea71
+ms.sourcegitcommit: dc71e9030ff35bb26916572b431d4d9e78df3d6f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97760931"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98031047"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Asociar con procesos en ejecución con el depurador de Visual Studio
 
@@ -199,7 +199,7 @@ Para seleccionar rápidamente un proceso en ejecución al que asociarse, en Visu
 |Depuración de una aplicación de C#, Visual Basic o C++ en la máquina local|Uso de la depuración estándar (**F5**) o **Asociar al proceso**|*\<appname>.exe*|En la mayoría de los escenarios, use la depuración estándar y no **Asociar al proceso**.|
 |Depuración remota de una aplicación de escritorio de Windows|Herramientas remotas|N/D| Consulte [Depuración de una aplicación de C# o Visual Basic](../debugger/remote-debugging-csharp.md) o [Depuración remota de un proyecto C++](../debugger/remote-debugging-cpp.md).|
 |Depuración de .NET Core en Linux|Uso de **Asociar al proceso**|*dotnet.exe* o un nombre de proceso único|Para usar SSH, consulte [Depuración remota de .NET Core en Linux con SSH](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md). Con aplicaciones en contenedor, consulte [Asociación a procesos que se ejecutan en contenedores de Docker](../debugger/attach-to-process-running-in-docker-container.md#attach-to-a-process-running-on-a-linux-docker-container).|
-|Depuración de aplicaciones en contenedor|*dotnet.exe* o un nombre de proceso único|Consulte [Asociación a procesos que se ejecutan en contenedores de Docker](../debugger/attach-to-process-running-in-docker-container.md)|
+|Depuración de aplicaciones en contenedor|Uso de **Asociar al proceso**|*dotnet.exe* o un nombre de proceso único|Consulte [Asociación a procesos que se ejecutan en contenedores de Docker](../debugger/attach-to-process-running-in-docker-container.md)|
 |Depuración remota de Python en Linux|Uso de **Asociar al proceso**|*debugpy*|Consulte [Asociar desde Herramientas de Python de forma remota](../python/debugging-python-code-on-remote-linux-machines.md#attach-remotely-from-python-tools)|
 |Depuración de una aplicación de ASP.NET en el equipo local después de iniciar la aplicación sin el depurador|Uso de **Asociar al proceso**|*iiexpress.exe*|Puede resultar útil para agilizar la carga de la aplicación, como (por ejemplo,) al generar perfiles. |
 |Depuración de otros tipos de aplicaciones compatibles en un proceso de servidor|Si el servidor es remoto, use herramientas remotas y **Asociar al proceso**.|*chrome.exe*, *iexplore.exe* u otros procesos|Si es necesario, utilice Monitor de recursos para identificar mejor el proceso. Vea [Depuración remota](../debugger/remote-debugging.md).|
