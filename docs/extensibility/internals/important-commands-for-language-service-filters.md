@@ -1,5 +1,7 @@
 ---
 title: Comandos importantes para filtros del servicio de lenguaje | Microsoft Docs
+description: Obtenga información sobre los comandos importantes que debe admitir al crear un filtro de servicio de lenguaje completo en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb29ee5b5a5359d6cfe34911656dfe9be015262e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13014d61450897897029750b012833cf93a57729
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707611"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204623"
 ---
 # <a name="important-commands-for-language-service-filters"></a>Comandos importantes para los filtros del servicio de lenguaje
 Si desea crear un filtro de servicio de lenguaje completo, considere la posibilidad de controlar los siguientes comandos. La lista completa de identificadores de comando se define en la <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> enumeración para el código administrado y el archivo de encabezado Stdidcmd. h para el código no administrado [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] . Puede encontrar el archivo Stdidcmd. h en la *ruta de instalación de Visual Studio SDK*\VisualStudioIntegration\Common\Inc.
@@ -26,7 +28,7 @@ Si desea crear un filtro de servicio de lenguaje completo, considere la posibili
 > [!NOTE]
 > No es obligatorio filtrar para todos los comandos de la tabla siguiente.
 
-|Get-Help|Descripción|
+|Comando|Descripción|
 |-------------|-----------------|
 |<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Se envía cuando el usuario hace clic con el botón secundario. Este comando indica que es el momento de proporcionar un menú contextual. Si no controla este comando, el editor de texto proporciona un menú contextual predeterminado sin ningún comando específico del lenguaje. Para incluir sus propios comandos en este menú, controle el comando y muestre un menú contextual.|
 |<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Normalmente se envía cuando el usuario escribe CTRL + J. Llame al <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> método en <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> para mostrar el cuadro de finalización de instrucciones.|

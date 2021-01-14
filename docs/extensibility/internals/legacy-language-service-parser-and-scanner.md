@@ -1,5 +1,7 @@
 ---
 title: Analizador y analizador del servicio de lenguaje heredado | Microsoft Docs
+description: Obtenga información sobre el analizador y el analizador del servicio de lenguaje heredado que seleccionan información sobre el código que se muestra.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +13,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c87f447a4b8bca804d27aae4967f4adaf389c627
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 20c8c58a98887e5509026641ba0295fc167435e3
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707313"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204610"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Escáner y analizador del servicio de lenguaje heredado
 El analizador es el corazón del servicio de lenguaje. Las clases de lenguaje de Managed Package Framework (MPF) requieren un analizador de lenguaje para seleccionar información sobre el código que se muestra. Un analizador separa el texto en tokens léxicos y, a continuación, identifica esos tokens por tipo y funcionalidad.
 
-## <a name="discussion"></a>Debate
+## <a name="discussion"></a>Discusión
  A continuación se encuentra un método de C#.
 
 ```csharp
@@ -46,9 +48,9 @@ namespace MyNamespace
 |{ } ( ) ;|delimiter|
 |MyNameSpace, MyClass, myFunction, arg1, Var1|identificador|
 |MyNamespace|espacio de nombres|
-|MyClass|clase|
-|MyFunction|método|
-|arg1|parámetro|
+|MyClass|class|
+|MyFunction|method|
+|arg1|parameter|
 |Var1|variable local|
 
  El rol del analizador es identificar los tokens. Algunos tokens pueden tener más de un tipo. Una vez que el analizador ha identificado los tokens, el servicio de lenguaje puede utilizar la información para proporcionar características útiles, como el resaltado de sintaxis, la coincidencia de llaves y las operaciones de IntelliSense.

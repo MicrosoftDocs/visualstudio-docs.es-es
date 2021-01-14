@@ -1,5 +1,7 @@
 ---
 title: Conceptos básicos del servicio de lenguaje heredado | Microsoft Docs
+description: Obtenga información sobre las características esenciales disponibles en los servicios de lenguaje heredados que le permiten integrar un lenguaje de programación en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 501bccf755293e86e8a9dc23fce125a10c882376
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffa21b619ef17be3fa649732a2b6e3bcd700dda6
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707423"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205156"
 ---
 # <a name="legacy-language-service-essentials"></a>Fundamentos de servicio de lenguaje heredado
 Debe proporcionar un servicio de lenguaje para integrar un lenguaje de programación en Visual Studio. En este tema se explican las características disponibles en los servicios de lenguaje heredado.
@@ -45,4 +47,4 @@ Debe proporcionar un servicio de lenguaje para integrar un lenguaje de programac
 | Característica | Descripción |
 |-----------------------| - |
 | Evaluadores de expresiones | Admite el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depurador validando los puntos de interrupción y proporcionando una lista de expresiones que se mostrarán en la ventana depuración **automática** .<br /><br /> Para obtener más información, vea [compatibilidad del servicio de lenguaje para la depuración](../../extensibility/internals/language-service-support-for-debugging.md). |
-| Herramientas de exploración de símbolos | Admite **Examinador de objetos**, **vista de clases**, **Explorador de llamadas**y **Buscar resultados de símbolos**. |
+| Herramientas de exploración de símbolos | Admite **Examinador de objetos**, **vista de clases**, **Explorador de llamadas** y **Buscar resultados de símbolos**. |

@@ -1,5 +1,7 @@
 ---
 title: Compatibilidad del servicio de lenguaje para la depuración | Microsoft Docs
+description: Obtenga información sobre las características del servicio de lenguaje de la interfaz IVsLanguageDebugInfo que proporcionan compatibilidad para la depuración en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c80e8e1f584b1728f342cb596b689f6a22c9297
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c17b11ce3639664a8097abeaa2a2de9a6faaadc7
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707430"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205169"
 ---
 # <a name="language-service-support-for-debugging"></a>Compatibilidad del servicio de lenguaje con la depuración
 Un servicio de lenguaje puede proporcionar características que admiten un depurador a través de la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo> interfaz. Estas características incluyen la validación de puntos de interrupción y la especificación de una lista de expresiones en la ventana **automático** .

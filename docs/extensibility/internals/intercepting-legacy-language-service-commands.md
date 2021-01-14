@@ -1,5 +1,7 @@
 ---
 title: Interceptando comandos de servicio de lenguaje heredado | Microsoft Docs
+description: Obtenga información sobre cómo usar los filtros de comandos en Visual Studio para interceptar comandos del servicio de lenguaje heredado y agregar un comportamiento específico del lenguaje.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5206bced8b4bfae32498434765e5c3f61801b386
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b67ffab5935b0e52ee6c403f2e38e7bbafab2d06
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707453"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205195"
 ---
 # <a name="intercepting-legacy-language-service-commands"></a>Intercepción de comandos del servicio de lenguaje heredado
 Con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , puede hacer que el servicio de lenguaje intercepte los comandos que la vista de texto controlaría de otro modo. Esto resulta útil para el comportamiento específico del lenguaje que no administra la vista de texto. Puede interceptar estos comandos agregando uno o más filtros de comandos a la vista de texto desde el servicio de lenguaje.

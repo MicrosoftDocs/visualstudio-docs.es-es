@@ -1,5 +1,7 @@
 ---
 title: Crear comandos disponibles | Microsoft Docs
+description: Obtenga información sobre cómo controlar la disponibilidad de los comandos que se agregan al IDE de Visual Studio en VSPackages mediante la carga retrasada, el contexto y la visibilidad.
+ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d64df85516e0a1ac326f8d40558755718c4644c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d17fd0b63438183b10b1ecb0e5eb6abb9f5d7f46
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707334"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204545"
 ---
 # <a name="making-commands-available"></a>Crear comandos disponibles
 

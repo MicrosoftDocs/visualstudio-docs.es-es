@@ -1,5 +1,7 @@
 ---
 title: Lista de servicios disponibles | Microsoft Docs
+description: Vea una lista de los servicios disponibles admitidos por Visual Studio y el SDK de Visual Studio, incluidos los GUID de servicio para obtener una interfaz para cada servicio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 302d4bcff647a74acc973c47e0b62e66c86e5859
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 53ab3531e67be540f7c66da52b7e5152a510fa27
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707346"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204649"
 ---
 # <a name="list-of-available-services"></a>Lista de servicios disponibles
 
@@ -55,7 +57,7 @@ Use los GUID de servicio enumerados aquí u obtenidos de otro origen (por ejempl
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsClassView> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsClassView> | Sí | Sí | Permite a un VSPackage sincronizar el **vista de clases** con un objeto concreto. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsCmdNameMapping> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsCmdNameMapping> | Sí | Sí | Proporciona compatibilidad para asignar nombres de comando a GUID y atrás y determinar los nombres de todos los comandos y nombres disponibles. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsCodeDefView> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsCodeDefView> | No | Sí | Permite a un VSPackage manipular la **vista de definición de código**. |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsCodeShareHandler> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsCodeShareHandler> | Sí | Sí | Servicio interno. No debe usarse. |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsCodeShareHandler> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsCodeShareHandler> | Sí | Sí | Servicio interno. No utilizar. |
 | <xref:Microsoft.VisualStudio.TextManager.Interop.SVsCodeWindow> | <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> | Sí | Sí | Proporciona acceso a una ventana de código que puede contener uno o varios documentos. |
 | <xref:Microsoft.VisualStudio.TextManager.Interop.SVsCodeWindowManager> | <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> | Sí | Sí | Permite que un VSPackage agregue cambios a la ventana de código, como barras desplegables. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsCommandWindow> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsCommandWindow><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsCommandWindow2> | Sí | Sí | Permite que un VSPackage ejecute un comando a través de la **ventana de comandos** y, de lo contrario, interactúe con la **ventana de comandos**. |
@@ -140,9 +142,9 @@ Use los GUID de servicio enumerados aquí u obtenidos de otro origen (por ejempl
 | <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextSpanSet> | <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextSpanSet> | Sí | Sí | Proporciona acceso a una lista de intervalos de texto en una imagen de texto o en un búfer. Este servicio se implementa normalmente en un contenedor de documentos y hace referencia al documento actual. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsThreadedWaitDialog> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsThreadedWaitDialog> | No | Sí | Habilita un VSPackage para mostrar un cuadro de diálogo que espera en un subproceso diferente (se usa para esperar tareas en segundo plano). |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsThreadPool> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsThreadPool> | No | Sí | Permite que un VSPackage inicie tareas en segundo plano que mantiene [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolbox> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox> | Sí | Sí | Proporciona acceso al **cuadro de herramientas**del IDE. |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolbox> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox> | Sí | Sí | Proporciona acceso al **cuadro de herramientas** del IDE. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolboxActiveXDataProvider> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxDataProvider> | Sí | Sí | Permite a un VSPackage obtener información de los elementos del **cuadro de herramientas** . |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolboxDataProviderRegistry> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxDataProviderRegistry> | No | Sí | Permite que un VSPackage registre un proveedor de datos del cuadro de herramientas sin incurrir en el costo de rendimiento de la carga previa del **cuadro de herramientas**completo. |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolboxDataProviderRegistry> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxDataProviderRegistry> | No | Sí | Permite que un VSPackage registre un proveedor de datos del cuadro de herramientas sin incurrir en el costo de rendimiento de la carga previa del **cuadro de herramientas** completo. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolsOptions> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolsOptions> | No | Sí | Habilita un VSPackage para determinar si el cuadro de diálogo **Opciones** está abierto y para actualizar la visibilidad de todas las páginas de opciones. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments3> | No | Sí | Permite que un VSPackage supervise los cambios en los archivos de un proyecto y proporcione control por lotes sobre un proveedor de control de código fuente. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackSelectionEx> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx> | Sí | Sí | Permite que un VSPackage informe al IDE de los cambios en una selección que puede afectar al elemento de proyecto seleccionado actualmente. |
@@ -158,6 +160,6 @@ Use los GUID de servicio enumerados aquí u obtenidos de otro origen (por ejempl
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsWindowFrame> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> | Sí | Sí | Permite que un VSPackage obtenga el marco de ventana en el que se puede ubicar el paquete o parte del paquete. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsXMLMemberIndexService> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsXMLMemberIndexService> | Sí | Sí | Proporciona acceso a los archivos de documentación con formato XML asociados a un archivo de metadatos determinado. |
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Uso y prestación de servicios](../../extensibility/using-and-providing-services.md)

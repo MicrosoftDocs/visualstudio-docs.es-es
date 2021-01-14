@@ -1,5 +1,7 @@
 ---
 title: Información general del servicio de lenguaje heredado | Microsoft Docs
+description: Obtenga información sobre los servicios de lenguaje heredados en Visual Studio y las características admitidas por las clases de servicio de lenguaje de Managed Package Framework (MPF).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aed653ec200063e72434fc758c7920e6caabafe1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c1ec349e38acbdb0271ecfb0c081b4f1aadadcd9
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707354"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204948"
 ---
 # <a name="legacy-language-service-overview"></a>Información general del servicio de lenguaje heredado
 Un servicio de lenguaje proporciona compatibilidad con el editor que permite implementar determinadas [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] características. Las clases de servicio de lenguaje de Managed Package Framework (MPF) proporcionan compatibilidad completa con las características usadas con frecuencia y compatibilidad parcial con otras características.
@@ -23,7 +25,7 @@ Un servicio de lenguaje proporciona compatibilidad con el editor que permite imp
 ## <a name="fully-supported-features-in-the-mpf"></a>Características totalmente compatibles en MPF
  Las clases de servicio del lenguaje MPF admiten las siguientes características:
 
-- Resaltado de sintaxis
+- Resalte de sintaxis
 
 - esquematizar
 

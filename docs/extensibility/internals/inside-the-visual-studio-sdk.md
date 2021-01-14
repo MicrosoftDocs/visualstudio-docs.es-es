@@ -1,5 +1,7 @@
 ---
 title: Dentro del SDK de Visual Studio | Microsoft Docs
+description: Obtenga información sobre las extensiones del SDK de Visual Studio, incluida la arquitectura, los componentes, los servicios, los esquemas y las utilidades de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e72020795bc3181e11f0f90eff580a2365d4000
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 73bbb1beb30677711b8b517262b48465e7529585
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707582"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205338"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Dentro de Visual Studio SDK
 
@@ -26,7 +28,7 @@ En esta sección se proporciona información detallada sobre las extensiones de 
 ## <a name="extensibility-architecture"></a>Arquitectura de extensibilidad
  En la ilustración siguiente se muestra la arquitectura de extensibilidad de Visual Studio. Los VSPackages proporcionan funcionalidad de la aplicación, que se comparte en el IDE como servicios. El IDE estándar también ofrece una amplia gama de servicios, como <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> , que proporcionan acceso a la funcionalidad de ventanas del IDE.
 
- ![Gráfico de arquitectura de entorno](../../extensibility/internals/media/environment.gif "entorno") Vista generalizada de la arquitectura de Visual Studio
+ ![Gráfico de arquitectura de entorno](../../extensibility/internals/media/environment.gif "Environment") Vista generalizada de la arquitectura de Visual Studio
 
 ## <a name="vspackages"></a>VSPackages
  Los VSPackages son módulos de software que conforman y amplían Visual Studio con elementos de interfaz de usuario, servicios, proyectos, editores y diseñadores. Los VSPackages son la unidad arquitectónica central de Visual Studio. Para obtener más información, consulte [VSPackages](../../extensibility/internals/vspackages.md).
@@ -37,7 +39,7 @@ En esta sección se proporciona información detallada sobre las extensiones de 
 ## <a name="user-experience-guidelines"></a>Directrices de la experiencia de usuario
  Si tiene previsto diseñar nuevas características para Visual Studio, eche un vistazo a estas instrucciones de diseño y sugerencias de facilidad de uso: instrucciones para la [experiencia del usuario de Visual Studio](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).
 
-## <a name="commands"></a>Comandos:
+## <a name="commands"></a>Comandos
  Los comandos son funciones que realizan tareas, como la impresión de un documento, la actualización de una vista o la creación de un archivo nuevo.
 
  Al extender Visual Studio, puede crear comandos y registrarlos con Visual Studio Shell. Puede especificar cómo aparecerán estos comandos en el IDE, por ejemplo, en un menú o una barra de herramientas. Normalmente aparece un comando personalizado en el menú **herramientas** y un comando para mostrar una ventana de herramientas aparecerá en el submenú **otras ventanas** del menú **Ver** .
@@ -47,7 +49,7 @@ En esta sección se proporciona información detallada sobre las extensiones de 
  Para obtener más información, vea [comandos, menús y barras de herramientas](../../extensibility/internals/commands-menus-and-toolbars.md).
 
 ## <a name="menus-and-toolbars"></a>Menús y barras de herramientas
- Los menús y las barras de herramientas proporcionan a los usuarios una manera de invocar comandos. Los menús son filas o columnas de comandos que normalmente se muestran como elementos de texto individuales en la parte superior de una ventana de herramientas. Los submenús son menús secundarios que aparecen cuando un usuario hace clic en los comandos que incluyen una flecha pequeña. Los menús contextuales aparecen cuando un usuario hace clic con el botón secundario en determinados elementos de la interfaz de usuario. Algunos nombres de menú comunes son **archivo**, **edición**, **vista**y **ventana**. Para obtener más información, vea [extender menús y comandos](../../extensibility/extending-menus-and-commands.md).
+ Los menús y las barras de herramientas proporcionan a los usuarios una manera de invocar comandos. Los menús son filas o columnas de comandos que normalmente se muestran como elementos de texto individuales en la parte superior de una ventana de herramientas. Los submenús son menús secundarios que aparecen cuando un usuario hace clic en los comandos que incluyen una flecha pequeña. Los menús contextuales aparecen cuando un usuario hace clic con el botón secundario en determinados elementos de la interfaz de usuario. Algunos nombres de menú comunes son **archivo**, **edición**, **vista** y **ventana**. Para obtener más información, vea [extender menús y comandos](../../extensibility/extending-menus-and-commands.md).
 
  Las barras de herramientas son filas o columnas de botones y otros controles, como cuadros combinados, cuadros de lista y cuadros de texto. Los botones de barra de herramientas suelen tener imágenes de iconos, como un icono de carpeta para un comando **Abrir archivo** o una impresora para un comando **Imprimir** . Todos los elementos de la barra de herramientas están asociados a comandos. Al hacer clic en un botón de la barra de herramientas, se ejecuta el comando asociado. En el caso de un control desplegable, cada elemento de la lista desplegable está asociado a un comando diferente. Algunos controles de barra de herramientas, como un control divisor, son híbridos. Un lado del control es un botón de la barra de herramientas y el otro lado es una flecha hacia abajo que muestra varios comandos cuando se hace clic en él.
 

@@ -1,5 +1,7 @@
 ---
 title: Administrar opciones de configuración | Microsoft Docs
+description: Obtenga información sobre cómo administrar las opciones de configuración de soluciones y proyectos en Visual Studio para controlar cómo se compilará, empaquetará, implementará y ejecutará el proyecto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e18c308d74f8c20267c286c47d0e89bf82cd2850
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a34f772b780cda825861e11e6816d1d88405f74e
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707308"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204537"
 ---
 # <a name="managing-configuration-options"></a>Administración de opciones de configuración
 Al crear un nuevo tipo de proyecto, debe administrar las opciones de configuración del proyecto y de la solución que determinan cómo se compilará, empaquetará, implementará y ejecutará el proyecto. En los temas siguientes se describe la configuración de proyectos y soluciones.

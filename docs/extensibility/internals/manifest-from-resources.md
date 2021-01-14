@@ -1,5 +1,7 @@
 ---
 title: Manifest from Resources | Microsoft Docs
+description: Aprenda a usar la herramienta de Manifest from Resources para agregar archivos. png o. XAML a un archivo. imagemanifest para su uso con el servicio de imágenes de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ea5931c77e267bc6065693be1ae144c250ce6df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52eee4fa826d92e7de389627a3d7a2afddcc9156
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536233"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204506"
 ---
 # <a name="manifest-from-resources"></a>Manifest from Resources
 La herramienta Manifest from Resources es una aplicación de consola que toma una lista de recursos de imagen (archivos. png o. xaml) y genera un archivo. imagemanifest que permite usar esas imágenes con el servicio de imágenes de Visual Studio. Además, esta herramienta se puede usar para agregar imágenes a un imagemanifest existente. Esta herramienta es útil para agregar la compatibilidad con las imágenes y los elementos de gran nivel en una extensión de Visual Studio. El archivo. imagemanifest generado debe incluirse en e implementarse como parte de una extensión de Visual Studio (. vsix).
@@ -27,17 +29,17 @@ La herramienta Manifest from Resources es una aplicación de consola que toma un
 
 |**Nombre del conmutador**|**Notas**|**Obligatorio u opcional**|
 |-|-|-|
-|/resources|Una lista delimitada por signos de punto y coma de imágenes o directorios. Esta lista siempre debe contener la lista completa de imágenes que se incluirán en el manifiesto. Si solo se proporciona una lista parcial, se perderán las entradas que no se incluyan.<br /><br /> Si un archivo de recursos determinado es una franja de imágenes, la herramienta lo dividirá en imágenes independientes antes de agregar cada subimagen al manifiesto.<br /><br /> Si la imagen es un archivo. png, se recomienda dar formato al nombre de este modo para que la herramienta pueda rellenar los atributos adecuados para la imagen: \<Name> . \<Width> . \<Height> . dicho.|Obligatorio|
-|/Assembly|Nombre del ensamblado administrado (sin incluir la extensión) o la ruta de acceso en tiempo de ejecución del ensamblado nativo que hospeda los recursos (en relación con la ubicación en tiempo de ejecución del manifiesto).|Obligatorio|
-|/manifest|Nombre que se va a asignar al archivo. imagemanifest generado. También puede incluir una ruta de acceso absoluta o relativa para crear el archivo en una ubicación diferente. El nombre predeterminado coincide con el nombre del ensamblado.<br /><br /> Valor predeterminado: \<Current Directory> \\ ensamblado de<\> . imagemanifest|Opcional|
-|/guidName|Nombre que se va a asignar al símbolo GUID para todas las imágenes del manifiesto generado.<br /><br /> Valor predeterminado: AssetsGuid|Opcional|
-|/rootPath|La ruta de acceso raíz que debe quitarse antes de crear los URI de recursos administrados. (Esta marca es para ayudar en los casos en los que la herramienta obtiene la ruta de acceso del URI relativa equivocada, lo que provoca un error en la carga de los recursos).<br /><br /> Valor predeterminado: \<Current Directory>|Opcional|
-|/Recursive|Al establecer esta marca, se indica a la herramienta que busque de forma recursiva en los directorios del argumento/Resources. Si se omite este marcador, se producirá una búsqueda de directorios de nivel superior.|Opcional|
-|/isNative|Establezca esta marca cuando el argumento de ensamblado sea una ruta de acceso para un ensamblado nativo. Omita esta marca cuando el argumento de ensamblado sea el nombre de un ensamblado administrado. (Consulte la sección Notas para obtener más información acerca de esta marca).|Opcional|
-|/newGuids|Al establecer esta marca, se indica a la herramienta que cree un nuevo valor para el símbolo GUID de las imágenes en lugar de combinar el del manifiesto existente.|Opcional|
-|/newIds|Al establecer esta marca, se indica a la herramienta que cree nuevos valores de símbolo de identificador para cada imagen en lugar de combinar los valores del manifiesto existente.|Opcional|
-|/noLogo|Al establecer esta marca se detiene la impresión del producto y la información de copyright.|Opcional|
-|/?|Imprime la información de ayuda.|Opcional|
+|/resources|Una lista delimitada por signos de punto y coma de imágenes o directorios. Esta lista siempre debe contener la lista completa de imágenes que se incluirán en el manifiesto. Si solo se proporciona una lista parcial, se perderán las entradas que no se incluyan.<br /><br /> Si un archivo de recursos determinado es una franja de imágenes, la herramienta lo dividirá en imágenes independientes antes de agregar cada subimagen al manifiesto.<br /><br /> Si la imagen es un archivo. png, se recomienda dar formato al nombre de este modo para que la herramienta pueda rellenar los atributos adecuados para la imagen: \<Name> . \<Width> . \<Height> . dicho.|Requerido|
+|/Assembly|Nombre del ensamblado administrado (sin incluir la extensión) o la ruta de acceso en tiempo de ejecución del ensamblado nativo que hospeda los recursos (en relación con la ubicación en tiempo de ejecución del manifiesto).|Requerido|
+|/manifest|Nombre que se va a asignar al archivo. imagemanifest generado. También puede incluir una ruta de acceso absoluta o relativa para crear el archivo en una ubicación diferente. El nombre predeterminado coincide con el nombre del ensamblado.<br /><br /> Valor predeterminado: \<Current Directory> \\ ensamblado de<\> . imagemanifest|Opcionales|
+|/guidName|Nombre que se va a asignar al símbolo GUID para todas las imágenes del manifiesto generado.<br /><br /> Valor predeterminado: AssetsGuid|Opcionales|
+|/rootPath|La ruta de acceso raíz que debe quitarse antes de crear los URI de recursos administrados. (Esta marca es para ayudar en los casos en los que la herramienta obtiene la ruta de acceso del URI relativa equivocada, lo que provoca un error en la carga de los recursos).<br /><br /> Valor predeterminado: \<Current Directory>|Opcionales|
+|/Recursive|Al establecer esta marca, se indica a la herramienta que busque de forma recursiva en los directorios del argumento/Resources. Si se omite este marcador, se producirá una búsqueda de directorios de nivel superior.|Opcionales|
+|/isNative|Establezca esta marca cuando el argumento de ensamblado sea una ruta de acceso para un ensamblado nativo. Omita esta marca cuando el argumento de ensamblado sea el nombre de un ensamblado administrado. (Consulte la sección Notas para obtener más información acerca de esta marca).|Opcionales|
+|/newGuids|Al establecer esta marca, se indica a la herramienta que cree un nuevo valor para el símbolo GUID de las imágenes en lugar de combinar el del manifiesto existente.|Opcionales|
+|/newIds|Al establecer esta marca, se indica a la herramienta que cree nuevos valores de símbolo de identificador para cada imagen en lugar de combinar los valores del manifiesto existente.|Opcionales|
+|/noLogo|Al establecer esta marca se detiene la impresión del producto y la información de copyright.|Opcionales|
+|/?|Imprime la información de ayuda.|Opcionales|
 |/help|Imprime la información de ayuda.|Opcional|
 
  **Ejemplos**
