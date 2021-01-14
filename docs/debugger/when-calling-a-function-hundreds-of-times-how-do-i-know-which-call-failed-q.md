@@ -1,5 +1,6 @@
 ---
 title: Búsqueda de errores de llamadas al llamar a una función muchas veces
+description: Descubra una técnica para establecer un punto de interrupción en una función de modo que la interrupción se produzca solo en la llamada para la que se produzca un error en la función.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -28,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de3d186b7800efc3e807e3f775b48d91b44072b4
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 567450f11572cc998f952117c33992cdba33570d
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810489"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149305"
 ---
 # <a name="when-calling-a-function-hundreds-of-times-how-do-i-know-which-call-failed"></a>Determinar qué llamada genera el error cuando se llama a una función varias veces
 ## <a name="problem-description"></a>Descripción del problema

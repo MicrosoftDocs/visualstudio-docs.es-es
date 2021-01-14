@@ -1,7 +1,8 @@
 ---
 title: Visualización de archivos DLL y ejecutables
+description: Consulte los archivos DLL y los ejecutables (.exe) que usa la aplicación en la ventana Módulos durante una sesión de depuración en Visual Studio.
+ms.custom: SEO-VS-2020, seodec18
 titleSuffix: Visual Studio Modules window
-ms.custom: seodec18
 ms.date: 11/04/2018
 ms.topic: how-to
 f1_keywords:
@@ -25,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fa284a44f75503a2890a15981d2b4f9947be2fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0471aa25b14111271e6f9219e8e849eed49f113f
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348683"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150566"
 ---
 # <a name="view-dlls-and-executables-in-the-modules-window-c-c-visual-basic-f"></a>Visualización de archivos DLL y ejecutables en la venta Módulos (C#, C++, Visual Basic, F#)
 
@@ -41,7 +42,7 @@ Durante la depuración en Visual Studio, en la ventana **Módulos** se muestra 
 
 ## <a name="use-the-modules-window"></a>Uso de la ventana Módulos
 
-Para abrir la ventana Módulos mientras realiza la depuración, seleccione **Depurar** > **Ventanas** > **Módulos** (o bien, presione**Ctrl + Alt + U**).
+Para abrir la ventana Módulos mientras realiza la depuración, seleccione **Depurar** > **Ventanas** > **Módulos** (o bien, presione **Ctrl + Alt + U**).
 
 De forma predeterminada, la ventana **Módulos** ordena los módulos por orden de carga. Para ordenar por cualquier columna de la ventana, seleccione el encabezado en la parte superior de la columna.
 

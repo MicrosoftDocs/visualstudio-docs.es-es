@@ -1,5 +1,7 @@
 ---
 title: Representación de información personalizada mediante DebuggerDisplay | Microsoft Docs
+description: Use una instancia de DebuggerDisplayAttribute para controlar la forma en la que se muestra un objeto, una propiedad o un campo en las ventanas de variables del depurador.
+ms.custom: SEO-VS-2020
 ms.date: 01/09/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2387c5e9a920f0811a65ca400d8da48aa81dccd3
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.openlocfilehash: 1d846fd5e423ed17f7754260f169e32dbef5486b
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85418787"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150761"
 ---
 # <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Indicar al depurador qué se va a mostrar mediante el atributo DebuggerDisplay (C#, Visual Basic, F#, C++/CLI)
 

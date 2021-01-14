@@ -1,5 +1,7 @@
 ---
 title: Otros cuadros de diálogo | Microsoft Docs
+description: 'En esta sección, se documentan dos cuadros de diálogo: Acerca de Microsoft Spy++ y Aviso de copyright para la ayuda de Spy++.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6eda65a49fce09dbbb085da7258a8536484af174
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e0db14b7aa641bd7da2d611b9f5156fb1da52f86
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905111"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975178"
 ---
 # <a name="other-dialog-boxes"></a>Otros cuadros de diálogo
 Estos cuadros de diálogo muestran información sobre el programa Spy++.
@@ -31,4 +33,4 @@ Estos cuadros de diálogo muestran información sobre el programa Spy++.
 
  [Uso de Spy++](../debugger/using-spy-increment.md) Se presenta la herramienta Spy++ y se explica cómo se puede usar.
 
- [Vistas de Spy++](../debugger/spy-increment-views.md) Se explican las vistas de árbol de Spy++ de ventanas, mensajes, procesos y subprocesos.
+ [Vistas de Spy++](../debugger/spy-increment-views.md): se explican las vistas de árbol de las ventanas, los mensajes, los procesos y los subprocesos de Spy++.

@@ -1,5 +1,7 @@
 ---
 title: Características de IntelliTrace | Microsoft Docs
+description: Obtenga información sobre las características de IntelliTrace en Visual Studio. Use IntelliTrace para registrar eventos y llamadas a métodos en la aplicación.
+ms.custom: SEO-VS-2020
 ms.date: 09/19/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ac7ca0e59a479aff3386486d2ceaf061038db68
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 2f5d4603e052cd5968055304290559b8a8d5a56a
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85536583"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148642"
 ---
 # <a name="intellitrace-features-c-visual-basic-c"></a>Características de IntelliTrace (C#, Visual Basic, C++)
 

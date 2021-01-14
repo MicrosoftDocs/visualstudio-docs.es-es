@@ -1,5 +1,7 @@
 ---
 title: Advertencia de código obsoleto (cuadro de diálogo) | Microsoft Docs
+description: Obtenga información sobre el cuadro de diálogo Advertencia de código obsoleto, que aparece cuando se han realizado cambios en el código nativo que Editar y continuar no ha podido aplicar inmediatamente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dba38e5b5d9f7a2be710cad58d6f2297dd03a412
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 5bb2666b3b57c8f84c81e181355f096674543445
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72729539"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150332"
 ---
 # <a name="stale-code-warning-dialog-box"></a>Advertencia de código obsoleto (cuadro de diálogo)
 

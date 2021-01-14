@@ -1,5 +1,7 @@
 ---
 title: Vistas de Spy++ | Microsoft Docs
+description: Obtenga información sobre las vistas en la herramienta de depuración Spy++. Spy++ muestra vistas de árbol de las ventanas, los mensajes, los procesos y los subprocesos disponibles en el equipo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d60f497db60e08094eb881f6766f95279b85456
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: caf275443f01ade5914b85dee8ef7105b3f6c9ac
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62902574"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148070"
 ---
 # <a name="spy-views"></a>Vistas de Spy++
 Spy++ muestra vistas de árbol de las ventanas, mensajes, procesos y subprocesos disponibles en la máquina.
@@ -35,4 +37,4 @@ Spy++ muestra vistas de árbol de las ventanas, mensajes, procesos y subprocesos
 
  [Uso de Spy++](../debugger/using-spy-increment.md) Se presenta la herramienta Spy++ y se explica cómo se puede usar.
 
- [Referencia de Spy++](../debugger/spy-increment-reference.md) Se incluyen secciones en las que se describe cada menú y cuadro de diálogo de Spy++.
+ [Referencia de Spy++](../debugger/spy-increment-reference.md): incluye secciones que describen cada menú y cuadro de diálogo de Spy++.

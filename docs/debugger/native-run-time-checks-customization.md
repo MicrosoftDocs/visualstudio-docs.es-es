@@ -1,5 +1,7 @@
 ---
 title: Personalización de las comprobaciones nativas en tiempo de ejecución | Microsoft Docs
+description: Obtenga información sobre las formas de personalizar la comprobación en tiempo de ejecución, incluidas la especificación de un destino de mensaje, la escritura de una función de informe de errores y la consulta de información de errores.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -22,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: db7cc513c4c96a8b60cc6471280bb837a7b9a248
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3b5f5aa55ac9d8c13da605a09986569c534a30bf
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72730888"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975204"
 ---
 # <a name="native-run-time-checks-customization"></a>Personalización de las comprobaciones nativas en tiempo de ejecución
 Cuando se compila con la opción **/RTC** (comprobaciones en tiempo de ejecución) o se usa el pragma `runtime_checks`, la biblioteca en tiempo de ejecución de C proporciona comprobaciones nativas en tiempo de ejecución. En algunos casos puede ser conveniente personalizar las comprobaciones en tiempo de ejecución:

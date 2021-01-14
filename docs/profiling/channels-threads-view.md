@@ -1,5 +1,7 @@
 ---
 title: Canales (Vista de subprocesos) | Microsoft Docs
+description: Obtenga información sobre la vista Subprocesos al usar canales en el visualizador de simultaneidad de Visual Studio. Vea canales de subprocesos, canales de disco, canales de marcadores y canales de GPU.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f18a636d83210b2329d103b1babdf47e697fd5c7
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 5a4ed0a82ad7ddb67cacde2a09f595d0c9250710
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85537090"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148616"
 ---
 # <a name="channels-threads-view"></a>Canales (vista Subprocesos)
 El visualizador de simultaneidad muestra cuatro tipos de canales: canales de subprocesos, de discos, de marcador y de GPU.

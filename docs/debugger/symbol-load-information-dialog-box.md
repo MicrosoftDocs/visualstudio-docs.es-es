@@ -1,5 +1,7 @@
 ---
 title: Información de carga de símbolos (Cuadro de diálogo) | Microsoft Docs
+description: Revise el cuadro de diálogo Información de carga de símbolos, que se abre en el depurador de Visual Studio al hacer clic con el botón derecho en la ventana Módulos y elegir Información de carga de símbolos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6bc7a795d45caf712b837f7d59e3ce6a0f9c8aa
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a2412aeade894b32ce3c42855ecf3f3dacf9bc16
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72729012"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149149"
 ---
 # <a name="symbol-load-information-dialog-box"></a>Información de carga de símbolos (Cuadro de diálogo)
 El cuadro de diálogo **Información de carga de símbolos** se abre al hacer clic con el botón derecho en la ventana **Módulos** y elegir **Información de carga de símbolos**.

@@ -1,5 +1,7 @@
 ---
 title: 'Vista Llamador y destinatario: datos de muestreo de memoria de .NET | Microsoft Docs'
+description: Obtenga información sobre cómo la vista Llamador y destinatario permite visualizar los datos del muestreo de memoria de. NET para una función seleccionada, y sus funciones primarias y secundarias en el Explorador de rendimiento.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 50e278e858ea086c83b29ef4eebf6b48ee8e477e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a5f0e3613dc9b122a6fac915f4683d9f7b859ee3
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74773314"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150904"
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>Vista Llamador y destinatario: datos de muestreo de memoria de .NET
 La vista Llamador y destinatario muestra datos de la generación de perfiles de memoria de. NET para una función seleccionada y sus funciones primarias y secundarias. La vista Llamador y destinatario contiene tres cuadrículas.
@@ -32,20 +34,20 @@ La vista Llamador y destinatario muestra datos de la generación de perfiles de 
 |Columna|Descripción|
 |------------|-----------------|
 |**Identificador del proceso**|Identificador de proceso (PID) de la ejecución de generación de perfiles.|
-|**Nombre de proceso**|Nombre del proceso.|
+|**Nombre del proceso**|Nombre del proceso.|
 |**Nombre del módulo**|Nombre del módulo que contiene la función.|
 |**Ruta de acceso del módulo**|Ruta de acceso del módulo que contiene la función.|
-|**Archivo de código fuente**|Archivo de origen que contiene la definición de esta función.|
+|**Archivo de origen**|Archivo de origen que contiene la definición de esta función.|
 |**Nombre de la función**|El nombre completo de la función.|
 |**Número de línea de la función**|Número de línea del inicio de esta función en el archivo de origen.|
-|**Dirección de la función**|Dirección de la función.|
+|**Dirección de función**|Dirección de la función.|
 |**Type**|El contexto de la función:<br /><br /> **0**: la función actual<br /><br /> **1**: una función que llama a la función actual<br /><br /> **2**: una función llamada por la función actual<br /><br /> Solo disponible en los informes de línea de comandos de [VSPerfReport](../profiling/vsperfreport.md).|
-|**Nivel**|La profundidad de esta función en el árbol de llamadas. Solo disponible en los informes de línea de comandos de [VSPerfReport](../profiling/vsperfreport.md).|
+|**Level**|La profundidad de esta función en el árbol de llamadas. Solo disponible en los informes de línea de comandos de [VSPerfReport](../profiling/vsperfreport.md).|
 |**Asignaciones inclusivas**|-   En la función actual, el número de objetos asignados por la función en la ejecución de la generación de perfiles. Este número incluye los objetos creados en funciones de destinatario.<br />-   En una función de llamador, el número de asignaciones inclusivas de la función actual generadas por llamadas de esta función.<br />-   En una función de destinatario, el número de objetos asignados por las instancias de esta función a las que llamó la función actual. El número incluye las asignaciones realizadas por funciones a las que llamó la función de destinatario.|
 |**Porcentaje de asignaciones inclusivas**|El porcentaje de todos los objetos que se crearon durante la ejecución de la generación de perfiles que eran asignaciones inclusivas de esta función.|
 |**Asignaciones exclusivas**|-   En la función actual, el número de objetos creados cuando la función estaba ejecutando código del cuerpo de la función (es decir, cuando la función estaba en la parte superior de la pila de llamadas). El número no incluye los objetos creados en funciones a las que llamó la función.<br />-   En una función de llamador, el número de asignaciones exclusivas de la función actual generadas por llamadas de esta función.<br />-   En una función de destinatario, el número de objetos creados por las instancias de esta función a las que llamó la función actual. El número no incluye los objetos creados por funciones a las que llamó la función de destinatario.|
 |**Porcentaje de asignaciones exclusivas**|El porcentaje de todos los objetos que se crearon durante la ejecución de la generación de perfiles que eran asignaciones inclusivas de esta función.|
-|**Bytes inclusivos**|-   En la función actual, el número de bytes de memoria asignados por la función en la ejecución de la generación de perfiles. El número incluye la memoria asignada en las funciones a las que llamó esta función.<br />-   En una función de llamador, el número de bytes inclusivos de la función actual generados por llamadas de la función de llamador.<br />-   En una función de destinatario, el número de bytes asignados por las instancias de esta función generadas por llamadas de la función actual. El número incluye los bytes asignados por las funciones a las que llamó la función de destinatario.|
+|**Porcentaje de bytes inclusivos**|-   En la función actual, el número de bytes de memoria asignados por la función en la ejecución de la generación de perfiles. El número incluye la memoria asignada en las funciones a las que llamó esta función.<br />-   En una función de llamador, el número de bytes inclusivos de la función actual generados por llamadas de la función de llamador.<br />-   En una función de destinatario, el número de bytes asignados por las instancias de esta función generadas por llamadas de la función actual. El número incluye los bytes asignados por las funciones a las que llamó la función de destinatario.|
 |**Porcentaje de bytes inclusivos**|El porcentaje de todos los bytes de memoria que se asignaron durante la ejecución de la generación de perfiles que eran asignaciones inclusivas de esta función.|
 |**Bytes exclusivos**|-   En la función actual, el número de bytes de memoria asignados por la función en la ejecución de la generación de perfiles. Este número no incluye la memoria asignada por las funciones a las que llamó la función actual.<br />-   En una función de llamador, el número de bytes exclusivos de la función actual generados por llamadas de la función de llamador.<br />-   En una función de destinatario, el número de bytes asignados por las instancias de la función generadas por llamadas de la función actual. El número no incluye los bytes asignados por las funciones a las que llamó la función de destinatario.|
 |**Porcentaje de bytes exclusivos**|El porcentaje de todos los bytes de memoria que se asignaron durante la ejecución de la generación de perfiles que eran asignaciones exclusivas de esta función.|

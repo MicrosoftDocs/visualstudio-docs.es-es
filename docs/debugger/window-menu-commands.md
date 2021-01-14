@@ -1,5 +1,7 @@
 ---
 title: Comandos del menú Ventana | Microsoft Docs
+description: En el menú Ventana se proporcionan comandos para administrar las ventanas de Spy++. Vea una lista de los comandos con una descripción breve de cada uno.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0d6332be7049d575b15c229b5892112fc972895
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0347ba8ffe0d5e479dc31f5d19a4f21c9a51df5c
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62900972"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149266"
 ---
 # <a name="window-menu-commands"></a>Comandos del menú Ventana
 En el menú **Ventana** se proporcionan comandos para administrar las ventanas de Spy++.

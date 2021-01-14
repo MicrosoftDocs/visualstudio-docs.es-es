@@ -1,5 +1,7 @@
 ---
 title: Retroceso o avance en la memoria | Microsoft Docs
+description: Descubra cómo se retrocede y se avanza en la memoria para ver el contenido de esta en las ventanas Memoria o Desensamblado durante la depuración en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee4e4e2037e39df7ce343143ff64235f1de0364f
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 1fc586603caf18261654e5ec8ee437c0875616a7
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852053"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148889"
 ---
 # <a name="how-to-page-up-or-down-in-memory"></a>Procedimiento Retroceso o avance en la memoria
 

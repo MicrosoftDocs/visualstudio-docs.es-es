@@ -1,5 +1,7 @@
 ---
 title: Visualización de documentos de script | Microsoft Docs
+description: Obtenga información sobre cómo ver documentos de script en el servidor de JavaScript en Visual Studio mediante el Explorador de soluciones.
+ms.custom: SEO-VS-2020
 ms.date: 11/05/2019
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f6d60d11737cde2beebdaeeccae8e547df78853
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 91c2e1c0438ebf8fad69f985f62a976ff6710a81
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851039"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150488"
 ---
 # <a name="how-to-view-script-documents-javascript"></a>Procedimiento Visualización de documentos de script (JavaScript)
 

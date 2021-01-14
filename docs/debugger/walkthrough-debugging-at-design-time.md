@@ -1,6 +1,7 @@
 ---
 title: Depuración en tiempo de diseño | Microsoft Docs
-ms.custom: ''
+description: Use la ventana Inmediato para depurar el código en tiempo de diseño, sin ejecutar la aplicación. Puede ejecutar una función y examinar el estado cuando se alcance un punto de interrupción.
+ms.custom: SEO-VS-2020
 ms.date: 01/10/2019
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bc5d08e8b0ae71acb846e1e863e24e8b8def0ee
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: f127c630cec0e0b64ab5602e81f2b314a3896b16
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183566"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148854"
 ---
 # <a name="debug-at-design-time-in-visual-studio-c-ccli-visual-basic-f"></a>Depuración en tiempo de diseño en Visual Studio (C#, C++/CLI, Visual Basic, F#)
 

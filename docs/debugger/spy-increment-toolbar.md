@@ -1,5 +1,7 @@
 ---
 title: Barra de herramientas de Spy++ | Microsoft Docs
+description: Conozca los elementos de la interfaz de usuario de la barra de herramientas de Spy++, que aparece en la barra de menús. Para mostrar u ocultar la barra de herramientas, en el menú Vista, haga clic en Barra de herramientas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fa1dfe0917fece3c814678295c5abd6013b426b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 9dc2564a69c291055d53e358c084e7dd9c4d0506
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72729740"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148200"
 ---
 # <a name="spy-toolbar"></a>Barra de herramientas de Spy++
 La barra de herramientas aparece en la barra de menús de Spy++. Para mostrar u ocultar la barra de herramientas, en el menú **Vista**, haga clic en **Barra de herramientas**.

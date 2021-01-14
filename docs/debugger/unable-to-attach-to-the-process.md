@@ -1,5 +1,7 @@
 ---
 title: No se puede asociar al proceso | Microsoft Docs
+description: Obtenga información sobre lo que significa el error "No se puede asociar al proceso", los dos escenarios que lo causan y las formas de solucionarlo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22d798d30d09cb509f53d093ae61bb1a02b414ec
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e7a90d2e08d16ddfb7ac22baafe58cf76b4895d3
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728876"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150852"
 ---
 # <a name="unable-to-attach-to-the-process"></a>No se puede asociar al proceso
 No se puede asociar al proceso. Se denegó el acceso al componente del depurador del servidor mientras se conectaba a este equipo.

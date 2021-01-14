@@ -1,5 +1,7 @@
 ---
 title: Visualización de subprocesos de GPU en el depurador | Microsoft Docs
+description: Use la ventana Subprocesos de GPU para examinar los subprocesos que se estén ejecutando en la GPU de la aplicación que esté depurando en Visual Studio y trabajar con estos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbbb49a1017fb0bc65300f3c16050db4954e1103
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5919ac657d828e87e48b8cfb3f4f643e1187f701
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348722"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150592"
 ---
 # <a name="how-to-use-the-gpu-threads-window-c"></a>Procedimiento Uso de la ventana Subprocesos de GPU (C++)
 Desde la ventana Subprocesos de GPU, puede examinar y trabajar con los subprocesos que se ejecutan en la GPU de la aplicación que esté depurando. Para obtener más información sobre las aplicaciones que se ejecutan en la GPU, vea [Información general sobre C++ AMP](/cpp/parallel/amp/cpp-amp-overview).

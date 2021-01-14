@@ -1,6 +1,7 @@
 ---
 title: Establecimiento de una inspección en las variables | Microsoft Docs
-ms.custom: seodec18
+description: Durante la depuración, podrá ver variables y expresiones en Inspección e Inspección rápida. Inspección puede mostrar varias variables; Inspección rápida solo puede mostrar una variable y únicamente mientras la depuración esté en pausa.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 10/11/2018
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7e2a05fe84b023a60ef75f0cb262a08fc02587a
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: d13ee6163ebe8cf0f706cbe95e7451c2ebc7c411
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727429"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149487"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Inspección de variables con las ventanas Inspección e Inspección rápida
 

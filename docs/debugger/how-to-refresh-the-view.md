@@ -1,5 +1,7 @@
 ---
 title: Actualización de la vista | Microsoft Docs
+description: Vea cómo se actualiza una vista en la herramienta Spy++ durante la depuración en Visual Studio. Spy++ toma una instantánea de las tablas del sistema y actualiza una vista a partir de esta información.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d964f0a33b1944255fee2f9fdb7658b04aaedebb
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 674eb33418aac8301cf19a0cbbefd15d90e24238
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852040"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148876"
 ---
 # <a name="how-to-refresh-the-view"></a>Procedimiento Actualización de la vista
 Spy++ toma una "instantánea" de las tablas del sistema y actualiza una vista basada en esta información. Es importante que actualice periódicamente las vistas del sistema. Si tiene una vista de Spy++ abierta y no ha actualizado la vista, no verá los procesos, subprocesos y ventanas que se crean posteriormente. También es posible que vea elementos que ya no existen. El comando **Actualizar** está disponible para todas las vistas excepto la vista Mensajes.

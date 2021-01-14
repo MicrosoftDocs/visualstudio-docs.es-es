@@ -1,5 +1,7 @@
 ---
 title: Búsqueda de un proceso en la vista Procesos | Microsoft Docs
+description: Para buscar un proceso específico en la vista Procesos de la herramienta Spy++, utilice su id. de proceso o cadena de módulo como criterio de búsqueda al realizar una depuración en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b94a052f7cb50df676140b45a43f49b92283903
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 2f6c51276bea76fe77455d13e011aa85efa8f6fd
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852001"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148564"
 ---
 # <a name="how-to-search-for-a-process-in-processes-view"></a>Procedimiento Búsqueda de un proceso en la vista Procesos
 Para buscar un proceso específico en la vista Procesos, utilice su id. de proceso o cadena de módulo como criterios de búsqueda. También puede especificar la dirección inicial de la búsqueda. En los campos del cuadro de diálogo se mostrarán los atributos del proceso seleccionado en el árbol de procesos.

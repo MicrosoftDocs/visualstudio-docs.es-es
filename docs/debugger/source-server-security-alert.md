@@ -1,5 +1,7 @@
 ---
 title: Alerta de seguridad del servidor de origen | Microsoft Docs
+description: Obtenga información sobre la advertencia de la alerta de seguridad del servidor de origen del depurador de Visual Studio. Tenga en cuenta las amenazas de seguridad que pueden existir al usar el servidor de origen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69511c2f83570abf37ef4bea8b71c8f59431a128
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: bf62abb91411048f46bfe7240074bd86c119bcd4
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72729570"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149123"
 ---
 # <a name="source-server-security-alert"></a>Alerta de seguridad del servidor de origen
 Si utiliza el servidor de origen, trabaje únicamente con archivos de símbolos procedentes de una ubicación conocida y de confianza.

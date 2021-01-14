@@ -1,5 +1,7 @@
 ---
 title: Uso de comprobaciones nativas en tiempo de ejecución | Microsoft Docs
+description: Use comprobaciones nativas en tiempo de ejecución en Visual Studio para detectar errores en tiempo de ejecución comunes, como daños en el puntero de pila, saturaciones de matrices locales y daños en la pila.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -37,12 +39,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 586f43f14a8638ab9c3c67f8ffef52ef52a70c53
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 7e46e2253c5664fff9cf456250d375993a0a0c9a
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852672"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150644"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>Procedimiento Uso de comprobaciones nativas en tiempo de ejecución
 En un proyecto de C++ de Visual Studio, puede realizar [runtime_checks](/cpp/preprocessor/runtime-checks) de forma nativa para detectar errores en tiempo de ejecución, tales como:

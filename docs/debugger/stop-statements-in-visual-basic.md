@@ -1,5 +1,7 @@
 ---
 title: Instrucciones Stop en Visual Basic | Microsoft Docs
+description: Revise la instrucción Stop de Visual Basic, que proporciona una alternativa de programación al establecimiento de un punto de interrupción en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f9ab4ef453a921371ab7ef4f272cd0e38f4108a
-ms.sourcegitcommit: 4d2620bee4688fb881e09a07ea4a264b99f0743e
+ms.openlocfilehash: b36f00f628d9551d8e45075d790d8e5d2de294dc
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71322532"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149435"
 ---
 # <a name="stop-statements-in-visual-basic"></a>Instrucciones Stop en Visual Basic
 

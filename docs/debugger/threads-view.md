@@ -1,5 +1,7 @@
 ---
 title: Vista Subprocesos | Microsoft Docs
+description: Obtenga información sobre la vista Subprocesos en la herramienta de depuración Spy++. La vista Subprocesos es una lista plana de todos los subprocesos asociados a Windows en el sistema.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82c8bb229a0781f299b5fa8c3a8c73670be8c4fc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 356db0f3ad8308edae2910e060b5b08731f9aabb
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62929941"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150215"
 ---
 # <a name="threads-view"></a>Vista de subprocesos
 La vista Subprocesos es una lista plana de todos los subprocesos asociados a Windows en el sistema. Se muestran el identificador del subproceso y el nombre del módulo para cada subproceso. Los procesos no se incluyen, pero puede encontrar fácilmente el proceso que posee un subproceso seleccionado.

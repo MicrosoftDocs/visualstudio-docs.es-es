@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: overview
 ms.date: 03/20/2019
 ms.technology: vs-azure
-ms.openlocfilehash: f1473c731dbf9413cf695e1b2331039c3880b8d7
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: 4f8c1c265f49b600880cd1278b51095fda9cfb1d
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91829873"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975152"
 ---
 # <a name="container-tools-in-visual-studio"></a>Herramientas de contenedor en Visual Studio
 
@@ -119,9 +119,9 @@ Repita el proceso con los otros proyectos que quiera controlar mediante Docker C
 Para agregar compatibilidad con Kubernetes, instale [Visual Studio Tools para Kubernetes](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-tools-for-kubernetes).
 ::: moniker-end
 
-Con la compatibilidad con Kubernetes, puede habilitar una conexión entre su proyecto local y un clúster de Kubernetes que se ejecuta en [Azure Kubernetes Service (AKS)](/azure/aks) y, por tanto, modificar y depurar los servicios que se ejecutan en AKS con Visual Studio.  Este servicio se proporciona mediante [Azure Dev Spaces](/azure/dev-spaces/quickstart-netcore-visualstudio). Azure Dev Spaces también le permite configurar ramas distintas de servicios de Kubernetes llamadas *dev spaces* para fines de desarrollo, de esta manera puede aislar de forma eficaz servicios de producción de las versiones que se usan para desarrollo y mantener las distintas modificaciones claramente separadas unas de otras.
+Gracias a la compatibilidad con Kubernetes, puede habilitar una conexión entre su proyecto local y un clúster de Kubernetes que se ejecute en [Azure Kubernetes Service (AKS)](/azure/aks) y, por tanto, modificar y depurar los servicios en ejecución con Visual Studio.  Este servicio lo proporciona [Bridge to Kubernetes](overview-bridge-to-kubernetes.md). Bridge to Kubernetes también le permite configurar ramas distintas de servicios de Kubernetes para fines de desarrollo. De esta manera, puede aislar de forma eficaz servicios de producción de las versiones que se usan para el desarrollo y mantener las distintas modificaciones claramente separadas unas de otras.
 
-Para agregar a sus proyectos compatibilidad con Kubernetes, elija **Kubernetes/Helm** al agregar compatibilidad con la orquestación de contenedores. Se agregan varios archivos al proyecto, como *azds.yaml*, que configura Azure Dev Spaces, y gráficos de Helm, que describen la estructura de los servicios de Kubernetes.
+Para agregar a sus proyectos compatibilidad con Kubernetes, elija **Kubernetes/Helm** al agregar compatibilidad con la orquestación de contenedores. Se agregan varios archivos al proyecto, como gráficos de Helm, que describen la estructura de los servicios de Kubernetes. Para empezar a usar Bridge to Kubernetes, vea [Uso de Bridge to Kubernetes](bridge-to-kubernetes.md).
 
 ## <a name="service-fabric-support"></a>Compatibilidad con Service Fabric
 

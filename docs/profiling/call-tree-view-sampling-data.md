@@ -1,5 +1,7 @@
 ---
 title: 'Vista Árbol de llamadas: datos de muestreo | Microsoft Docs'
+description: Obtenga información sobre cómo la vista Árbol de llamadas permite visualizar los datos de muestreo para las rutas de ejecución de funciones que se recorrieron en la aplicación de la que se generaron perfiles en el Explorador de rendimiento.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 558cef408ceca48a55563ae31f2399da0e951b8e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1fc7493d20d09ebd606e3a6ec8e5271981fb6f62
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779758"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150527"
 ---
 # <a name="call-tree-view---sampling-data"></a>Vista Árbol de llamadas: datos de muestreo
 La vista Árbol de llamadas muestra las rutas de acceso de ejecución de funciones que se recorrieron en la aplicación de la que se generaron perfiles.
@@ -40,14 +42,14 @@ La vista Árbol de llamadas muestra las rutas de acceso de ejecución de funcion
 |Columna|Descripción|
 |------------|-----------------|
 |**Identificador del proceso**|Identificador de proceso (PID) de la ejecución de generación de perfiles.|
-|**Nombre de proceso**|Nombre del proceso.|
+|**Nombre del proceso**|Nombre del proceso.|
 |**Nombre del módulo**|Nombre del módulo que contiene la función.|
 |**Ruta de acceso del módulo**|Ruta de acceso del módulo que contiene la función.|
-|**Archivo de código fuente**|Archivo de origen que contiene la definición de esta función.|
+|**Archivo de origen**|Archivo de origen que contiene la definición de esta función.|
 |**Nombre de la función**|El nombre completo de la función.|
 |**Número de línea de la función**|Número de línea del inicio de esta función en el archivo de origen.|
-|**Dirección de la función**|Dirección de la función.|
-|**Nivel**|La profundidad de esta función en el árbol de llamadas. Solo disponible en los informes de línea de comandos de [VSPerfReport](../profiling/vsperfreport.md).|
+|**Dirección de función**|Dirección de la función.|
+|**Level**|La profundidad de esta función en el árbol de llamadas. Solo disponible en los informes de línea de comandos de [VSPerfReport](../profiling/vsperfreport.md).|
 |**Muestras exclusivas**|El número de muestras que se recopilaron en esta función cuando la llamó la función primaria en el árbol de llamadas. Este número no incluye aquellas muestras recopiladas en funciones a las que llamó la función.|
 |**Porcentaje de muestras exclusivas**|El porcentaje de todas las muestras de la ejecución de generación de perfiles que eran muestras exclusivas de esta función cuando la llamó la función primaria en el árbol de llamadas.|
 |**Muestras inclusivas**|El número de muestras que se recopilaron en esta función cuando la llamó la función primaria en el árbol de llamadas. Este número incluye aquellas muestras recopiladas en funciones a las que llamó la función.|

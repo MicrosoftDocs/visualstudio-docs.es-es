@@ -1,5 +1,7 @@
 ---
 title: Uso de datos de IntelliTrace guardados | Microsoft Docs
+description: Use un archivo de IntelliTrace (.iTrace) para iniciar la depuración en un punto de ejecución específico. El archivo contiene información que IntelliTrace registró a partir de una ejecución de la aplicación.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb79e2f1a9ffd84f48910637deaff85329c3d91e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 42f355a0a8d04e48a2b9d14d0d62edf2cd949a87
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911323"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150943"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>Uso de datos de IntelliTrace guardados (C#, Visual Basic, C++)
 

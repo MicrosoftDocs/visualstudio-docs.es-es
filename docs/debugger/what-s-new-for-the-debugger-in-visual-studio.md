@@ -1,6 +1,8 @@
 ---
 title: Novedades del depurador de Visual Studio 2017 | Microsoft Docs
 titleSuffix: ''
+description: Vea las nuevas característica de la versión 15.5 del depurador. Se incluyen instantáneas del código seleccionado de las aplicaciones en producción y la característica Retroceder de IntelliTrace.
+ms.custom: SEO-VS-2020
 ms.date: 01/22/2018
 ms.topic: conceptual
 dev_langs:
@@ -20,12 +22,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 523867a8f9aa074e9122c74deb8bcd91cddd8bee
-ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
+ms.openlocfilehash: 986ebf20cd49569bfcaf471b9bef994dfe774437
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75944228"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149409"
 ---
 # <a name="whats-new-for-the-debugger-in-visual-studio-2017"></a>Novedades del depurador de Visual Studio 2017
 

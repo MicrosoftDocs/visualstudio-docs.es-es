@@ -1,5 +1,7 @@
 ---
 title: Dónde buscar códigos de error de Win32 | Microsoft Docs
+description: Para buscar un código de error de Win32, escríbalo en Inspección o en Inspección rápida. Por ejemplo, "0x80000004,hr". Las definiciones de los códigos de error se encuentran en INCLUDE\WINERROR.H.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8e3dda1b728cd631efe8a84913af3d5c475138d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 44a006be3b6ecad3ef723c00154354cb35df0049
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728035"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149292"
 ---
 # <a name="where-can-i-look-up-win32-error-codes"></a>Dónde buscar códigos de error de Win32
 El archivo WINERROR.H, situado en el directorio INCLUDE de la instalación predeterminada del sistema, contiene las definiciones de código de error para las funciones de la API Win32.

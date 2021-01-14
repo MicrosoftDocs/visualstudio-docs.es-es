@@ -1,5 +1,7 @@
 ---
 title: para usar Editar y continuar (C#) | Microsoft Docs
+description: Use Editar y continuar para realizar y aplicar cambios en el código en modo de interrupción durante la depuración, sin tener que detener y reiniciar la sesión de depuración en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 10/04/2018
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 18d11f552d486fd9ebd7a95323e327324de14108
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: a0f8126689c0874c984a679da9b6debcb66a3075
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851858"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150657"
 ---
 # <a name="how-to-use-edit-and-continue-c"></a>Procedimiento Usar Editar y continuar (C#)
 Con Editar y continuar, puede realizar y aplicar cambios en el código en modo de interrupción durante la depuración, sin tener que detener y reiniciar la sesión de depuración.

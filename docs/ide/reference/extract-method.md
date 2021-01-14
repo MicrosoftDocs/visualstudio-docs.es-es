@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 50f14cc2a7eafe5d65e0c6a6af54bafa2ebb5a1f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 21f6ac868268c40ea6df837596546f86fd9a3a44
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75569704"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98129476"
 ---
 # <a name="extract-a-method-refactoring"></a>Refactorización de extracción de un método
 
@@ -40,11 +40,11 @@ Esta refactorización se aplica a lo siguiente:
 
    - C#:
 
-       ![Código resaltado (C#)](media/extractmethod-highlight-cs.png)
+       Captura de pantalla en la que se muestra código de C# para la clase Program. En la función Main de esa clase, aparece resaltada una línea de código.](media/extractmethod-highlight-cs.png)
 
    - Visual Basic:
 
-       ![Código resaltado (Visual Basic)](media/extractmethod-highlight-vb.png)
+       ![Captura de pantalla en la que muestra el código de Visual Basic del procedimiento Main Sub. En ese procedimiento, se resalta una línea de código.](media/extractmethod-highlight-vb.png)
 
 2. A continuación, realice alguno de los siguientes procedimientos:
 
@@ -63,11 +63,11 @@ Esta refactorización se aplica a lo siguiente:
 
    - C#:
 
-      ![Cambio de nombre del método (C#)](media/extractmethod-rename-cs.png)
+      ![Captura de pantalla en la que se muestra código de C# para la clase Program. Se resalta el nombre de un método y aparece la ventana emergente Cambiar nombre.](media/extractmethod-rename-cs.png)
 
    - Visual Basic:
 
-      ![Cambio de nombre del método (Visual Basic)](media/extractmethod-rename-vb.png)
+      ![Captura de pantalla en la que muestra el código de Visual Basic del procedimiento Main Sub. Se resalta el nombre de un método y aparece la ventana emergente Cambiar nombre.](media/extractmethod-rename-vb.png)
 
 3. Cuando esté satisfecho con el cambio, seleccione el botón **Aplicar** o presione **Entrar**. Los cambios se confirmarán.
 

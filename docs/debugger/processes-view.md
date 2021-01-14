@@ -1,5 +1,7 @@
 ---
 title: Vista Procesos | Microsoft Docs
+description: La vista Procesos muestra un árbol de todos los procesos activos en el sistema. Obtenga información sobre su contenido y sus usos, y haga clic en los vínculos a información adicional.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99ba60021410f1965e05f7c5479231013d53cb71
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a52da28d01eac4f04081497888fbbfccaf4495e2
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62904239"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975139"
 ---
 # <a name="processes-view"></a>Vista Procesos
 La vista Procesos muestra un árbol de todos los procesos activos en el sistema. Se muestran el identificador del proceso y el nombre del módulo. Use la vista Procesos si quiere examinar un determinado proceso del sistema, que normalmente corresponde a un programa en ejecución. Los procesos se identifican por nombres de módulo o se designan como "procesos del sistema".

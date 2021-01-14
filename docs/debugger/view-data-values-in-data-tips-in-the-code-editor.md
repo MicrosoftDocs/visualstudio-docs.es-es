@@ -1,6 +1,7 @@
 ---
 title: Consulta de valores de variables en la Información sobre datos | Microsoft Docs
-ms.custom: seodec18
+description: Use Información sobre datos para consultar fácilmente información sobre variables, incluidas las matrices y las estructuras, durante la depuración. También puede modificar valores.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/21/2018
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf5eda8205dbe0629d0b2801473de83c2f91257e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 432fd50d30347972d7b1fc8222a430fc90a9e590
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75404281"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149968"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Consulta de valores en la Información sobre datos en el editor de código
 

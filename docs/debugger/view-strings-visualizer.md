@@ -1,5 +1,7 @@
 ---
 title: Ver cadenas en un visualizador de cadenas | Microsoft Docs
+description: Use el visualizador de cadenas en el depurador de Visual Studio para ver cadenas de texto, así como cadenas en formato XML, HTML y JSON. Puede ver otros tipos de objetos, incluidos DataSet y DataTable.
+ms.custom: SEO-VS-2020
 ms.date: 04/08/2019
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33e1cbd4b1c754498d7e2bd6c354e874ae8cdad5
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: d13e5f5c3ee5a82a56dd8c98fa37e3e13e5169d5
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72450385"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149942"
 ---
 # <a name="view-strings-in-a-string-visualizer-in-visual-studio"></a>Ver cadenas en un visualizador de cadenas en Visual Studio
 
@@ -48,7 +50,7 @@ Para ver las cadenas que el visualizador seleccionado no puede reconocer, elija 
 
 ### <a name="view-json-string-data"></a>Ver los datos de cadenas JSON
 
-Una cadena JSON con el formato correcto es similar a la ilustración siguiente en el visualizador de JSON. El código JSON con formato incorrecto puede mostrar un icono de error o en blanco si no se reconoce. Para identificar el error de JSON, copie y pegue la cadena en una herramienta de linting de JSON como [JSLint](https://www.jslint.com/).
+Una cadena JSON con el formato correcto es similar a la ilustración siguiente en el visualizador de JSON. El código JSON con formato incorrecto puede mostrar un icono de error (o en blanco si no se reconoce). Para identificar el error de JSON, copie y pegue la cadena en una herramienta de linting de JSON como [JSLint](https://www.jslint.com/).
 
 ![Visualizador de cadenas JSON](../debugger/media/dbg-tips-string-visualizer-json.png "Visualizador de cadenas JSON")
 

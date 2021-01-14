@@ -1,7 +1,8 @@
 ---
 title: 'Depurador de Microsoft Visual Studio: se inició una excepción (cuadro de diálogo) | Microsoft Docs'
 titleSuffix: ''
-ms.custom: seodec18
+description: 'Obtenga información sobre qué hacer cuando se produzca una excepción que el programa deba gestionar. Puede realizar lo siguiente: 1) interrumpir el depurador, 2) continuar o 3) ignorar la excepción.'
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8376d0cd82e309c2c8db94e38b8c6a2083bd429a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1c86c765ad8ebfbe36dcaca484f7da4121b7e297
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72731209"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975282"
 ---
 # <a name="microsoft-visual-studio-debugger-exception-thrown-dialog-box"></a>Depurador de Microsoft Visual Studio: se inició una excepción (cuadro de diálogo)
 Se ha producido una excepción en el programa. Este cuadro de diálogo informa sobre la clase de excepción producida. El código necesita tratar esta excepción. Puede elegir entre las siguientes opciones para controlar la excepción:

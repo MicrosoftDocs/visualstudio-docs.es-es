@@ -1,5 +1,7 @@
 ---
 title: Salida (Pestaña), Opciones de mensaje (Cuadro de diálogo) | Microsoft Docs
+description: Use la pestaña Salida de Opciones de mensaje para especificar qué datos de mensaje aparecerán en la vista Mensajes. En este artículo se describe la configuración disponible.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63268fdbc320e78a697c181112dbeaaf8ad161ab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c4d965b92a30d8d8a5b998a27bea9651f8669c8f
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905080"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975087"
 ---
 # <a name="output-tab-message-options-dialog-box"></a>Pestaña Salida (Cuadro de diálogo Opciones de mensaje)
 Use la pestaña **Salida** para especificar qué datos de cada mensaje se van a mostrar en la [Vista Mensajes](../debugger/messages-view.md). Para mostrar el [cuadro de diálogo Opciones de mensaje](../debugger/message-options-dialog-box.md), elija **Mensajes de registro** en el menú de **Spy**.

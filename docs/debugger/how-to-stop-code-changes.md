@@ -1,5 +1,7 @@
 ---
 title: Detención de cambios de código | Microsoft Docs
+description: Aprenda a dejar de aplicar cambios de código al usar la característica Editar y continuar durante una sesión de depuración de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 62a775944563d63834abf5e32b1f9d4c2453444c
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: a63a15340c597a7b62735dfb3f6f14d3707262ac
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851884"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150709"
 ---
 # <a name="how-to-stop-code-changes"></a>Procedimiento Detención de los cambios en el código
 Mientras Editar y continuar se encuentra en proceso de aplicar los cambios del código, puede detener la operación.

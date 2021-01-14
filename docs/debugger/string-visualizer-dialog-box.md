@@ -1,7 +1,8 @@
 ---
 title: Visualizador de cadenas (cuadro de diálogo) | Microsoft Docs
+description: Vea cadenas con el cuadro de diálogo integrado Visualizador de cadenas durante la depuración en Visual Studio.
 ms.date: 10/10/2018
-ms.custom: seoapril2019
+ms.custom: seoapril2019, SEO-VS-2020
 ms.topic: reference
 f1_keywords:
 - vs.debug.stringviewer
@@ -20,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 10e7e50ffc0cb61bd036bef65c554e8147eecc09
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 1c33459312cb0c5c4dd4be3bc043956ccb33a6e1
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72430820"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150280"
 ---
 # <a name="string-visualizer-dialog-box"></a>Visualizador de cadenas (cuadro de diálogo)
 

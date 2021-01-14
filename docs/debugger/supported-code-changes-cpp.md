@@ -1,5 +1,7 @@
 ---
 title: Cambios admitidos en el código (C++) | Microsoft Docs
+description: Obtenga información sobre qué cambios de código se admiten al usar la característica Editar y continuar durante la depuración de un proyecto de C++ en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/18/2020
 ms.topic: conceptual
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: af6c0d88dd230bee768641905e200f1f47749d77
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: d693753cbcc9844ff602ab4d20e90fdc6de7dae5
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77629591"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150501"
 ---
 # <a name="supported-code-changes-c"></a>Cambios admitidos en el código (C++)
 Con proyectos de C++, Editar y continuar controla la mayoría de los tipos de cambios del código. Sin embargo, algunos cambios no se pueden aplicar durante la ejecución de programa. Para aplicar estos cambios, debe detener la ejecución y compilar una versión nueva del código.
@@ -116,10 +118,10 @@ Con proyectos de C++, Editar y continuar controla la mayoría de los tipos de ca
 ### <a name="linker-options-that-disable-edit-and-continue"></a><a name="BKMK_Linker_options_that_disable_Edit_and_Continue"></a> Opciones del vinculador que deshabilitan Editar y continuar
  Las siguientes opciones del vinculador deshabilitan Editar y continuar:
 
-- La definición de **/OPT:REF**, **/OPT:ICF**o **/INCREMENTAL:NO** deshabilita Editar y continuar con la advertencia siguiente:  
+- La definición de **/OPT:REF**, **/OPT:ICF** o **/INCREMENTAL:NO** deshabilita Editar y continuar con la advertencia siguiente:  
      `LINK : warning LNK4075: ignoring /EDITANDCONTINUE due to /OPT specification`
 
-- La definición de **/ORDER**, **/RELEASE**o **/FORCE** deshabilita Editar y continuar con esta advertencia:  
+- La definición de **/ORDER**, **/RELEASE** o **/FORCE** deshabilita Editar y continuar con esta advertencia:  
      `LINK : warning LNK4075: ignoring /INCREMENTAL due to /option specification`
 
 - La configuración de alguna opción que impida la creación de un archivo de base de datos de programa (.pdb) deshabilita Editar y continuar sin ninguna advertencia específica.

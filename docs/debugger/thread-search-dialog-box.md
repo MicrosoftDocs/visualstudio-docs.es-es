@@ -1,5 +1,7 @@
 ---
 title: Buscar subproceso (cuadro de diálogo) | Microsoft Docs
+description: Obtenga información sobre el cuadro de diálogo Buscar subproceso de la herramienta de depuración Spy++. Use este cuadro de diálogo para buscar y seleccionar el nodo de un subproceso concreto en la Vista Ventanas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fddbb589a6978f72dc5926a78c9eb13f21b3a4b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 895241a99131c31e2fab73b9799f6203db7259e0
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901867"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148759"
 ---
 # <a name="thread-search-dialog-box"></a>Cuadro de diálogo Buscar subproceso
 Use este cuadro de diálogo para buscar y seleccionar el nodo de un subproceso concreto en la [Vista Ventanas](../debugger/threads-view.md). Para mostrar este cuadro de diálogo, mueva el foco a la ventana de la vista **Subprocesos**. Después, elija **Buscar subproceso** en el menú **Buscar**.
@@ -39,4 +41,4 @@ Use este cuadro de diálogo para buscar y seleccionar el nodo de un subproceso c
 
  [Vistas de Spy++](../debugger/spy-increment-views.md) Explica las vistas de árbol de Spy++ de ventanas, mensajes, procesos y subprocesos.
 
- [Usar Spy++](../debugger/using-spy-increment.md) Presenta la herramienta Spy++ y explica cómo se puede usar.
+ [Uso de Spy++](../debugger/using-spy-increment.md): se presenta la herramienta Spy++ y se explica cómo se puede usar.

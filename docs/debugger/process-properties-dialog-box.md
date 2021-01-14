@@ -1,5 +1,7 @@
 ---
 title: Cuadro de diálogo Propiedades del proceso | Microsoft Docs
+description: 'Use Propiedades del proceso para obtener más información sobre un proceso seleccionado en la vista Procesos. Hay cuatro pestañas: General, Memoria, Archivo de paginación y Espacio.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2448659a8725c7e284e12a99d52478144ebec1b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: abf4e8c6d1e61441459b0b48adfda4fa8728f44a
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62903761"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975113"
 ---
 # <a name="process-properties-dialog-box"></a>Cuadro de diálogo Propiedades del proceso
 Use este cuadro de diálogo para obtener más información sobre un proceso determinado. Para mostrar este cuadro de diálogo, mueva el foco a la ventana [Vista Procesos](../debugger/processes-view.md). Seleccione cualquier nodo de proceso en el árbol y, después, elija **Propiedades** en el menú **Vista**.
@@ -41,6 +43,6 @@ Use este cuadro de diálogo para obtener más información sobre un proceso dete
 
  [Vista Procesos](../debugger/processes-view.md) Se muestra una vista de árbol de los procesos activos.
 
- [Vistas de Spy++](../debugger/spy-increment-views.md) Se explican las vistas de árbol de Spy++ de ventanas, mensajes, procesos y subprocesos.
+ [Vistas de Spy++](../debugger/spy-increment-views.md) Explica las vistas de árbol de Spy++ de ventanas, mensajes, procesos y subprocesos.
 
- [Uso de Spy++](../debugger/using-spy-increment.md) Se presenta la herramienta Spy++ y se explica cómo se puede usar.
+ [Uso de Spy++](../debugger/using-spy-increment.md): se presenta la herramienta Spy++ y se explica cómo se puede usar.

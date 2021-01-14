@@ -1,5 +1,7 @@
 ---
 title: Uso de la Herramienta de búsqueda | Microsoft Docs
+description: Use la herramienta de búsqueda del cuadro de diálogo Buscar ventana de la herramienta Spy++ para mostrar las propiedades o los mensajes de una ventana durante una sesión de depuración.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e92223359c6bc78b2a98c234c03ee139c052f86
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 41ca277962f81b3cd1c35ebcf8a940e8168a6803
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851845"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150605"
 ---
 # <a name="how-to-use-the-finder-tool"></a>Procedimiento Uso de la herramienta de búsqueda
 Puede usar la Herramienta de búsqueda del cuadro de diálogo **Buscar ventana** para mostrar las propiedades o los mensajes de una ventana. La Herramienta de búsqueda también puede buscar ventanas secundarias deshabilitadas y decidir qué ventana se va a resaltar si las ventanas secundarias deshabilitadas se superponen.

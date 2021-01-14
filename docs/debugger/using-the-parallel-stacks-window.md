@@ -1,5 +1,7 @@
 ---
 title: Visualización de subprocesos en la ventana Pilas paralelas | Microsoft Docs
+description: Use Pilas paralelas como ayuda para depurar aplicaciones multiproceso. Puede ver la información de pila de todos los subprocesos y la información de la pila de llamadas centrada en tareas.
+ms.custom: SEO-VS-2020
 ms.date: 11/20/2018
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9728346bc4c6d805bb0febd3a0d5bef0ed809a5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 55a004e65a39f4a2b7bbf972cec36d689bf88d97
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62902426"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150176"
 ---
 # <a name="view-threads-and-tasks-in-the-parallel-stacks-window-c-visual-basic-c"></a>Visualización de subprocesos y tareas en la ventana Pilas paralelas (C#, Visual Basic, C++)
 

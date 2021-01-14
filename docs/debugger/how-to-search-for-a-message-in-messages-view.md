@@ -1,5 +1,7 @@
 ---
 title: Búsqueda de un mensaje en la vista Mensajes | Microsoft Docs
+description: Busque un mensaje específico en la vista Mensajes de la herramienta Spy++ mediante su manipulador, tipo o identificador de mensaje como criterios de búsqueda durante la depuración en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c4b597870d7a87b396b4c6e828da814c49f9bfb
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: c351eacc6fc3793065bcd11eb5456eebdc1864f3
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852014"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148590"
 ---
 # <a name="how-to-search-for-a-message-in-messages-view"></a>Procedimiento Búsqueda de un mensaje en la vista Mensajes
 Puede buscar un mensaje específico en la vista Mensajes mediante su manipulador, tipo o identificador de mensaje como criterios de búsqueda. Cualquiera de ellos (o una combinación) será un criterio de búsqueda válido. También se puede especificar la dirección inicial de la búsqueda. Los campos del cuadro de diálogo se cargan previamente con los atributos del mensaje seleccionado actualmente.

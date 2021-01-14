@@ -1,5 +1,7 @@
 ---
 title: Pestaña Espacio, Propiedades del proceso (cuadro de diálogo) | Microsoft Docs
+description: Obtenga información sobre cómo mostrar el cuadro de diálogo Propiedades del proceso en Spy++ durante la depuración. Revise la configuración que está disponible en la pestaña Espacio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 563d54c39b4d9ce3bb2d76a9e531161c2c4ee5b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fe168f34baf65b00eab59e94afb30e07dfe89b50
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929821"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149084"
 ---
 # <a name="space-tab-process-properties-dialog-box"></a>Pestaña Espacio, Propiedades del proceso (cuadro de diálogo)
 Use la pestaña **Espacio** para examinar el espacio de direcciones de un proceso. Para que se muestre el cuadro de diálogo [Propiedades del proceso](../debugger/process-properties-dialog-box.md), mueva el foco a una ventana [Vista Procesos](../debugger/processes-view.md). Seleccione cualquier nodo de proceso en el árbol y, a continuación, seleccione **Propiedades** en el menú **Ver**.

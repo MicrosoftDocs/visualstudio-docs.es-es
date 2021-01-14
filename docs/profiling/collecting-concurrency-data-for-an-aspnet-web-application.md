@@ -1,5 +1,6 @@
 ---
 title: 'Línea de comandos del generador de perfiles: obtención de datos de simultaneidad de ASP.NET'
+description: Consulte información de referencia sobre el método de simultaneidad de las Herramientas de generación de perfiles de Visual Studio, que permite recopilar datos de contención de recursos.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -13,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 7a28e9cea6db337cbe114c7e51c387315879ccd5
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: e12288471bed62014f9a307d609ef3d588e0026a
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407712"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148330"
 ---
 # <a name="collect-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line"></a>Recopilación de datos de simultaneidad para una aplicación web ASP.NET con la línea de comandos del generador de perfiles
 El método de simultaneidad de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permite recopilar datos de contención de recursos.
@@ -54,5 +55,5 @@ El método de simultaneidad de las herramientas de generación de perfiles de [!
 
 - [Visualizador de simultaneidad](../profiling/concurrency-visualizer.md)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Referencia de las herramientas de generación de perfiles de la línea de comandos](../profiling/command-line-profiling-tools-reference.md)

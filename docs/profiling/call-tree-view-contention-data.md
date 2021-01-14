@@ -1,5 +1,7 @@
 ---
 title: 'Vista Árbol de llamadas: datos de contención | Microsoft Docs'
+description: Revise la vista Árbol de llamadas, que muestra los datos de contención para las rutas de funciones que se recorrieron en la aplicación de la que se generaron perfiles.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e91e231f72b006d2020c8b4d5d96c7e24fa1dd9c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 974eeccbb1f4691c00fafad65fadef7c909a7ed2
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779784"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150423"
 ---
 # <a name="call-tree-view---contention-data"></a>Vista Árbol de llamadas: datos de contención
 La vista Árbol de llamadas muestra las rutas de acceso de ejecución de funciones que se recorrieron en la aplicación de la que se generaron perfiles. La raíz del árbol es el punto de entrada a la aplicación o el componente. Cada nodo de función enumera todas las funciones a las que llamó, el número de veces que se bloqueó la función y la cantidad de tiempo que se bloqueó la función porque estaba luchando por un recurso con otros subprocesos o procesos.
@@ -39,19 +41,19 @@ La vista Árbol de llamadas muestra las rutas de acceso de ejecución de funcion
 |**Porcentaje de tiempo de bloqueo exclusivo**|El porcentaje de tiempo de bloqueo exclusivo de esta función en esta ruta de acceso de ejecución con respecto al tiempo de bloqueo total de la ejecución de generación de perfiles.|
 |**Contenciones exclusivas**|El número de contenciones que se produjeron en instancias de esta función en esta ruta de acceso de ejecución. El número no incluye las contenciones de las funciones secundarias a las que llamó la función.|
 |**Porcentaje de contenciones exclusivas**|El porcentaje de contenciones exclusivas de las instancias de esta función llamadas por la función primaria del árbol de llamadas con respecto a todas las contenciones de la ejecución de generación de perfiles.|
-|**Dirección de la función**|Dirección de la función.|
+|**Dirección de función**|Dirección de la función.|
 |**Nombre de la función**|El nombre completo de la función.|
 |**Tiempo de bloqueo inclusivo**|El tiempo total que no se pudieron ejecutar en la generación de perfiles las instancias de esta función en esta ruta de acceso de ejecución. El valor incluye el tiempo de bloqueo de las funciones secundarias a las que llamó la función.|
 |**Porcentaje de tiempo de bloqueo inclusivo**|El porcentaje de tiempo de bloqueo inclusivo de las instancias de esta función en esta ruta de acceso de ejecución con respecto al tiempo de bloqueo total de la ejecución de generación de perfiles.|
 |**Contenciones inclusivas**|El número total de contenciones que bloquearon las instancias de esta función en esta ruta de acceso de ejecución. El número incluye las contenciones de las funciones secundarias a las que llamó la función.|
 |**Porcentaje de contenciones inclusivas**|El porcentaje de las contenciones inclusivas de las instancias de esta función en esta ruta de acceso de ejecución con respecto a todas las contenciones de la ejecución de generación de perfiles.|
-|**Nivel**|Nivel de la función en el árbol de llamadas. Solo en informes de línea de comandos de VSReport. Para obtener más información, consulte [VSPerfReport](../profiling/vsperfreport.md).|
+|**Level**|Nivel de la función en el árbol de llamadas. Solo en informes de línea de comandos de VSReport. Para obtener más información, consulte [VSPerfReport](../profiling/vsperfreport.md).|
 |**Número de línea de la función**|Número de línea del inicio de esta función en el archivo de origen.|
 |**Nombre del módulo**|Nombre del módulo que contiene la función.|
 |**Ruta de acceso del módulo**|Ruta de acceso del módulo que contiene la función.|
 |**Identificador del proceso**|Identificador de proceso (PID) de la ejecución de generación de perfiles.|
-|**Nombre de proceso**|Nombre del proceso.|
-|**Archivo de código fuente**|Archivo de origen que contiene la definición de esta función.|
+|**Nombre del proceso**|Nombre del proceso.|
+|**Archivo de origen**|Archivo de origen que contiene la definición de esta función.|
 
 ## <a name="see-also"></a>Vea también
 - [Cómo: Personalizar las columnas de la vista de informes](../profiling/how-to-customize-report-view-columns.md)

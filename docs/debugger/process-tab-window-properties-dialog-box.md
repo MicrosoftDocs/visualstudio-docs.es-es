@@ -1,5 +1,7 @@
 ---
 title: Pestaña Proceso (Cuadro de diálogo Propiedades de la ventana) | Microsoft Docs
+description: Use la pestaña Proceso de Propiedades de la ventana para ver el identificador del subproceso que ha creado la ventana seleccionada y el identificador del proceso que tiene el subproceso.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ecd6bc2c5612424b91a9b2cd121de780848be8bd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4056308f033ef61aa41456d287e7088c8bc6348b
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62903748"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975074"
 ---
 # <a name="process-tab-window-properties-dialog-box"></a>Pestaña Proceso (Cuadro de diálogo Propiedades de la ventana)
 Use la pestaña **Proceso** para identificar el proceso de la ventana seleccionada. Para mostrar el [cuadro de diálogo Propiedades de la ventana](../debugger/window-properties-dialog-box.md), mueva el foco a la ventana [Vista Ventanas](../debugger/windows-view.md). Seleccione un nodo de ventana en el árbol y, después, elija **Propiedades** en el menú **Vista**.

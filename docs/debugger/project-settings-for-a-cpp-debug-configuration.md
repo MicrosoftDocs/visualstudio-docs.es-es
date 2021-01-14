@@ -1,6 +1,7 @@
 ---
 title: Configuración del proyecto para una configuración de depuración de C++
-ms.custom: seodec18
+description: Configure la depuración de C y C++ en Páginas de propiedades. En este artículo se describe la configuración y se indica su categoría.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/26/2018
 ms.topic: reference
 f1_keywords:
@@ -112,12 +113,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bca39b97f6363d8b8fefcfd691b69baf85c32170
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 6130b49beecb3411c275fc5d2005b7aabee262fd
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72450375"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975295"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>Configuración del proyecto para una configuración de depuración de C++
 Es posible cambiar la configuración del proyecto para la configuración de depuración de C o C++ en el cuadro de diálogo **Páginas de propiedades**, como se describe en [ Establecer configuraciones Debug y Release](../debugger/how-to-set-debug-and-release-configurations.md). En las siguientes tablas se muestra dónde encontrar los valores relacionados con el depurador en el cuadro de diálogo **Páginas de propiedades**.
@@ -175,7 +176,7 @@ Es posible cambiar la configuración del proyecto para la configuración de depu
 |**Generar archivo de asignaciones** ([/MAP](/cpp/build/reference/map-generate-mapfile))|Indica al vinculador que genere un archivo de asignaciones durante la vinculación. La configuración predeterminada es No. Para obtener más información, consulte [/MAP (generar archivo de asignaciones)](/cpp/build/reference/map-generate-mapfile).|
 |**Nombre de archivo de asignaciones** ([/MAP:](/cpp/build/reference/map-generate-mapfile)*nombre*)|Si elige Generar archivo de asignaciones, puede especificar el archivo de asignaciones en este cuadro. Para obtener más información, consulte [/MAP (generar archivo de asignaciones)](/cpp/build/reference/map-generate-mapfile).|
 |**Exportaciones de asignaciones** ([/MAPINFO:EXPORTS](/cpp/build/reference/mapinfo-include-information-in-mapfile))|Incluye las funciones exportadas en el archivo de asignaciones. La configuración predeterminada es No. Para obtener más información, vea [/MAPINFO (Incluir información en el archivo de asignaciones)](/cpp/build/reference/mapinfo-include-information-in-mapfile).|
-|**Ensamblado depurable** ([/ASSEMBLYDEBUG](/cpp/build/reference/mapinfo-include-information-in-mapfile))|Especifica la configuración de la opción /ASSEMBLYDEBUG del vinculador. Los valores posibles son:<br /><br /> -   **No se emitió el atributo Debuggable**.<br />-   **Seguimiento de runtime y deshabilitar optimizaciones (/ASSEMBLYDEBUG)** . Esta es la configuración predeterminada.<br />-   **No realizar seguimiento del motor en tiempo de ejecución ni habilitar optimizaciones (/ASSEMBLYDEBUG:DISABLE)** .<br />-    **\<heredar de primario o valores predeterminados del proyecto>** .<br />-   Para obtener más información, vea [/ASSEMBLYDEBUG (Agregar DebuggableAttribute)](/cpp/build/reference/assemblydebug-add-debuggableattribute).|
+|**Ensamblado depurable** ([/ASSEMBLYDEBUG](/cpp/build/reference/mapinfo-include-information-in-mapfile))|Especifica la configuración de la opción /ASSEMBLYDEBUG del vinculador. Los valores posibles son:<br /><br /> -   **No se emitió el atributo Debuggable**.<br />-   **Seguimiento de runtime y deshabilitar optimizaciones (/ASSEMBLYDEBUG)** . Esta es la configuración predeterminada.<br />-   **No realizar seguimiento del motor en tiempo de ejecución ni habilitar optimizaciones (/ASSEMBLYDEBUG:DISABLE)** .<br />-   **\<inherit from parent or project defaults>**.<br />-   Para obtener más información, vea [/ASSEMBLYDEBUG (Agregar DebuggableAttribute)](/cpp/build/reference/assemblydebug-add-debuggableattribute).|
 
  Puede cambiar esta configuración en la carpeta Propiedades de configuración (categoría Depuración) mediante programación a través de la interfaz de Microsoft.VisualStudio.VCProjectEngine.VCDebugSettings. Para obtener más información, vea <xref:Microsoft.VisualStudio.VCProjectEngine.VCDebugSettings>.
 

@@ -1,5 +1,7 @@
 ---
 title: Arquitectura de un visualizador | Microsoft Docs
+description: Los visualizadores muestran un tipo específico de elemento de datos y también pueden permitir la edición. Obtenga información sobre la arquitectura de un visualizador.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6dfbc8c57ff2e78bf0c6ebbd4e9899c372d7084
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 9166cc3c98f72e43042a26c0787d1cbf45223a74
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73187162"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149760"
 ---
 # <a name="visualizer-architecture"></a>Arquitectura de un visualizador
 La arquitectura de un visualizador del depurador tiene dos partes:

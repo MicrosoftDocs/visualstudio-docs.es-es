@@ -1,5 +1,7 @@
 ---
 title: Uso de Spy++ | Microsoft Docs
+description: Spy++ (SPYXX.EXE) le ofrece una vista gráfica de los procesos, los subprocesos, las ventanas y los mensajes de ventana del sistema. Aquí encontrará vínculos a artículos pertinentes.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8751aa4bdd80b95406dcc588b469da43f7221a13
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0f01167f00b3428bab52b4a6f2ab88d909e7b31f
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929913"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150930"
 ---
 # <a name="using-spy"></a>Usar Spy++
 Spy++ (SPYXX.EXE) es una utilidad basada en Win32 que le ofrece una vista gráfica de los procesos, los subprocesos, las ventanas y los mensajes de ventana del sistema. Esta sección de la ayuda de Spy++ incluye los siguientes temas:

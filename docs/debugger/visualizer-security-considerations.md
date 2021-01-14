@@ -1,5 +1,7 @@
 ---
 title: Consideraciones de seguridad del visualizador | Microsoft Docs
+description: Un visualizador para el depurador de Visual Studio debe ejecutarse con plena confianza. Cuando esté escribiendo el suyo, tenga en cuenta las amenazas de seguridad que pueden existir y tome las precauciones adecuadas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1c18ec84a6a62da6cd564c69ef4b83ea76bcfd6
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 2db18a1443b0c4faaa288a887a22d935d243f678
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73187147"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149747"
 ---
 # <a name="visualizer-security-considerations"></a>Consideraciones de seguridad del visualizador
 Escribir datos en un visualizador implica poner en riesgo la seguridad. En la actualidad, no se conoce ningún tipo de ataque que intente aprovecharse de esta vulnerabilidad potencial, pero los desarrolladores deben tenerlo en cuenta y adoptar las debidas precauciones, tal y como se describe en este documento, para protegerse de futuros ataques.

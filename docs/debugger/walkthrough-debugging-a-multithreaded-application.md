@@ -1,5 +1,7 @@
 ---
 title: Visualización de subprocesos en el depurador | Microsoft Docs
+description: Use la opción Subprocesos para examinar y controlar los subprocesos. Puede agrupar, ordenar, marcar, inmovilizar, reanudar y buscar subprocesos, seleccionar columnas y mostrar pilas de llamadas.
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f65bd7a904f30f132f654b6dd718532d9d0e66e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b02d980292eaed40c7c1598c772b52f695bf23e2
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67821589"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149708"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>Visualización de subprocesos en el depurador de Visual Studio mediante la ventana Subprocesos (C#, Visual Basic, C++)
 Desde la ventana **Subprocesos**, puede examinar y trabajar con los subprocesos de la aplicación que esté depurando. Para obtener instrucciones paso a paso sobre cómo usar la ventana **Subprocesos**, vea [Tutorial: Depuración con la ventana Subprocesos](../debugger/how-to-use-the-threads-window.md).

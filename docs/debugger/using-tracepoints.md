@@ -1,5 +1,7 @@
 ---
 title: Registro de información con puntos de seguimiento | Microsoft Docs
+description: Establezca puntos de seguimiento para registrar información en Salida sin modificar ni detener el código. Solo tiene que especificar una cadena de salida en la casilla Acción de la configuración del punto de interrupción.
+ms.custom: SEO-VS-2020
 ms.date: 10/28/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 33b471122318038ab66bc4f73e437209c6da2ffe
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 144f83b1be0c3a21aa5cb244f8498f61e3ef380a
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "89561343"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150098"
 ---
 # <a name="log-info-to-the-output-window-using-tracepoints-in-visual-studio"></a>Registro de información en la ventana de salida mediante puntos de seguimiento en Visual Studio
 

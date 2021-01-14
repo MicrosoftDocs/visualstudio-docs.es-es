@@ -1,5 +1,7 @@
 ---
 title: Cuadro de diálogo Propiedades de la ventana | Microsoft Docs
+description: Obtenga información sobre cómo mostrar las propiedades de una ventana que aparece en la vista Ventanas. En este artículo se incluyen vínculos a otros artículos en los que se documentan las propiedades.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c27f10298f3a5621bc68e31bc2b150663955d6c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5bd6c8a7f3b07cdd0667ae8d2c33aeb96d6d7679
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929214"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149227"
 ---
 # <a name="window-properties-dialog-box"></a>Cuadro de diálogo Propiedades de la ventana
 Use este cuadro de diálogo para obtener más información sobre una ventana específica. Para mostrar este cuadro de diálogo, mueva el foco a la ventana [Vista de ventanas](../debugger/windows-view.md). Seleccione cualquier nodo de ventana del árbol y, después, elija **Propiedades** en el menú **Vista**.
@@ -40,8 +42,8 @@ Use este cuadro de diálogo para obtener más información sobre una ventana esp
 
  [Búsqueda de una ventana en la vista Ventanas](../debugger/how-to-search-for-a-window-in-windows-view.md): se explica cómo buscar una ventana específica en la vista Ventanas.
 
- [Vista Ventanas](../debugger/windows-view.md): se muestra una vista de árbol de las ventanas y los controles disponibles.
+ [Vista Ventanas](../debugger/windows-view.md) Muestra una vista de árbol de las ventanas y los controles disponibles.
 
- [Vistas de Spy + +](../debugger/spy-increment-views.md): explica las vistas de árbol de Spy++ de ventanas, mensajes, procesos y subprocesos.
+ [Vistas de Spy++](../debugger/spy-increment-views.md) Explica las vistas de árbol de Spy++ de ventanas, mensajes, procesos y subprocesos.
 
- [Uso de Spy + +](../debugger/using-spy-increment.md): introducción a la herramienta Spy++ y cómo se puede usar.
+ [Uso de Spy++](../debugger/using-spy-increment.md): se presenta la herramienta Spy++ y se explica cómo se puede usar.

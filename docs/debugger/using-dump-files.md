@@ -1,6 +1,7 @@
 ---
 title: Uso de archivos de volcado de memoria en el depurador | Microsoft Docs
-ms.custom: seodec18
+description: Un archivo de volcado de memoria es una instantánea de una aplicación en ejecución y los módulos cargados. Considere la posibilidad de crear un archivo de volcado de memoria para las situaciones en las que no tenga acceso de depuración a la aplicación.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/05/2018
 ms.topic: conceptual
 f1_keywords:
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dbfd8ac877fce4b1808a76e3bb2a66ac595693de
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 8bcd225bb64096d8a8e58e3cffd15e7bc94bf5cc
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95970619"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150878"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Archivos de volcado de memoria en el depurador de Visual Studio.
 

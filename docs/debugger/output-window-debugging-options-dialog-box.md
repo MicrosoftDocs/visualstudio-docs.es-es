@@ -1,5 +1,7 @@
 ---
 title: Ventana de salida, Depuración, Opciones (cuadro de diálogo) | Microsoft Docs
+description: Puede especificar qué tipos de información de depuración aparecen en la Ventana de salida. Obtenga información sobre dónde realizar esta acción y los tipos de información que puede controlar.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9224258a2dfd48cc17ed15f9723e455e225af8b2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d7f74b0e490cf8b2baaa8818fa8f8eebb7842a30
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62904792"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975022"
 ---
 # <a name="output-window-debugging-options-dialog-box"></a>Ventana de salida, Depuración, Opciones (cuadro de diálogo)
 Puede especificar qué tipos de información de depuración aparecen en la **Ventana de salida**. Para mostrar estas opciones, abra el menú **Herramientas**, haga clic en **Opciones**, expanda el nodo **Depuración** y haga clic en **Ventana de salida**.

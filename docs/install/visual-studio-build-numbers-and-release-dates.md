@@ -5,19 +5,19 @@ description: Una lista de las versiones de lanzamiento y los números de compila
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 12/8/2020
+ms.date: 1/12/2021
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: ad594d41c621112fd34f83eba6b5c7a3cd53d938
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 7dee68d791880027ae1dfabfccf58954cd2d5fe1
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915497"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150540"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Números de compilación y fechas de lanzamiento de Visual Studio
 
@@ -29,6 +29,10 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de v
 
 | **Versión**| **Canal** | **Fecha de lanzamiento** | **Versión de compilación** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.8.4 | Release | 12 de enero de 2021 | 16.8.30907.101 |
+| 16.7.10 | Release | 12 de enero de 2021 | 16.7.30816.78 |
+| 16.4.17 | Release | 12 de enero de 2021 | 16.4.30816.121 |
+| 16.0.22 | Release | 12 de enero de 2021 | 16.0.28803.916 |
 | 16.0.21 | Release | 8 de diciembre de 2020 | 16.0.28803.902 |
 | 16.9.0 | Versión preliminar 2 | 8 de diciembre de 2020 | 16.9.30803.129 |
 | 16.8.3 | Release | 8 de diciembre de 2020 | 16.8.30804.86 |
@@ -199,6 +203,7 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de l
 
 | **Versión**| **Canal** | **Fecha de lanzamiento** | **Versión de compilación** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.31 | Release | 12 de enero de 2021 | 15.9.28307.1342 |
 | 15.9.30 | Release | 8 de diciembre de 2020 | 15.9.28307.1321 |
 | 15.9.29 | Release | 10 de noviembre de 2020 | 15.9.28307.1300 |
 | 15.9.28 | Release | 13 de octubre de 2020 | 15.9.28307.1274 |

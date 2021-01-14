@@ -1,5 +1,7 @@
 ---
 title: Cuadro de diálogo Propiedades del subproceso | Microsoft Docs
+description: Obtenga información sobre el cuadro de diálogo Propiedades del subproceso de la herramienta de depuración de Spy++. Use este cuadro de diálogo para saber más sobre un subproceso específico.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 371314bff934fdceeb301f61e976224034333559
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 377357345516d210b30dd4db278dd672a8b6b469
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929713"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149136"
 ---
 # <a name="thread-properties-dialog-box"></a>Cuadro de diálogo Propiedades del subproceso
 Use este cuadro de diálogo para obtener más información sobre un subproceso específico. Para que se muestre este cuadro de diálogo, mueva el foco a una ventana [Vista Subprocesos](../debugger/threads-view.md) o abra [Vista Mensajes](../debugger/messages-view.md) y expanda un mensaje. Seleccione cualquier nodo de subproceso del árbol y, a continuación, seleccione **Propiedades** en el menú **Ver**.

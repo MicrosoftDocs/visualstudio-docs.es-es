@@ -1,5 +1,7 @@
 ---
 title: Uso del recopilador independiente de IntelliTrace | Microsoft Docs
+description: Use el recopilador independiente de IntelliTrace para recopilar datos sin instalar Visual Studio y sin cambiar el entorno del sistema de destino.
+ms.custom: SEO-VS-2020
 ms.date: 07/30/2019
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f0e0ce657c1cc0ed79d56e3daa90480ed0c1381
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: cbdd7e948aaafff8e90aa8e67907c9a53471b05c
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85536498"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150085"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Uso del recopilador independiente de IntelliTrace (C#, Visual Basic)
 
@@ -28,7 +30,7 @@ El **recolector independiente IntelliTrace** permite recopilar datos de diagnós
 > [!NOTE]
 > Los mismos datos de IntelliTrace se pueden recopilar también para aplicaciones web y de Sharepoint que se ejecutan en equipos remotos; para ello, hay que usar **Microsoft Monitoring Agent** en modo **Trace** .
 >
-> Si el agente se ejecuta en modo **Monitor** , puede recopilar eventos relacionados con el rendimiento en los datos de IntelliTrace. El modo**Monitor** tiene un impacto en el rendimiento menos acusado que el modo **Trace** o el **recolector independiente IntelliTrace**. Microsoft Monitoring Agent sí modifica el entorno del sistema de destino cuando se instala. Consulte [Usar Microsoft Monitoring Agent](../debugger/using-the-microsoft-monitoring-agent.md).
+> Si el agente se ejecuta en modo **Monitor** , puede recopilar eventos relacionados con el rendimiento en los datos de IntelliTrace. El modo **Monitor** tiene un impacto en el rendimiento menos acusado que el modo **Trace** o el **recolector independiente IntelliTrace**. Microsoft Monitoring Agent sí modifica el entorno del sistema de destino cuando se instala. Consulte [Usar Microsoft Monitoring Agent](../debugger/using-the-microsoft-monitoring-agent.md).
 > El recopilador independiente de IntelliTrace no admite instantáneas de proceso.
 
  **Requisitos**
@@ -84,7 +86,7 @@ El **recolector independiente IntelliTrace** permite recopilar datos de diagnós
 
    - **Centro de descarga de Microsoft** o **my.visualstudio.com**:
 
-     1. Seleccione la opción **Descargar**cerca de **IntelliTraceCollector.exe**.
+     1. Seleccione la opción **Descargar** cerca de **IntelliTraceCollector.exe**.
 
      2. Guarde IntelliTraceCollector.exe en el directorio del recopilador, por ejemplo: **C:\IntelliTraceCollector**
 

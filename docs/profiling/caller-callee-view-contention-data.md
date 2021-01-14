@@ -1,5 +1,7 @@
 ---
 title: 'Vista Llamador y destinatario: datos de contención | Microsoft Docs'
+description: Obtenga información sobre cómo la vista Llamador y destinatario permite visualizar la información de contención para una función seleccionada, y sus funciones primarias y secundarias en el Explorador de rendimiento.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 083386a808f7b91a18b3ea685ae657118c723978
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5b51504d029c1e723321c8c92df28a2ecad1fd1a
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779745"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150917"
 ---
 # <a name="callercallee-view----contention-data"></a>Vista Llamador y destinatario: datos de contención
 La vista Llamador y destinatario muestra información de contención para una función seleccionada y sus funciones primarias y secundarias. La vista Llamador y destinatario contiene tres cuadrículas.
@@ -34,7 +36,7 @@ La vista Llamador y destinatario muestra información de contención para una fu
 |**Porcentaje de tiempo de bloqueo exclusivo**|El porcentaje de tiempo de bloqueo exclusivo de esta función en este contexto con respecto al tiempo de bloqueo total de la ejecución de generación de perfiles.|
 |**Contenciones exclusivas**|- En la función actual, el número de veces en las que esta función no pudo ejecutar código en el cuerpo de la función. Las contenciones que se produjeron en funciones a las que llamó la función no se incluyen.<br />- En una función de llamador, el número de contenciones exclusivas de la función actual que se produjeron cuando esta función llamó a la función actual.<br />- En la función de destinatario, el número de veces en las que esta función no pudo ejecutar código en el cuerpo de la función cuando la función actual llamó a esta función. Las contenciones que se produjeron en funciones a las que llamó la función de destinatario no se incluyen.|
 |**Porcentaje de contenciones exclusivas**|El porcentaje de contenciones exclusivas de esta función en este contexto con respecto a todas las contenciones en la ejecución de generación de perfiles.|
-|**Dirección de la función**|La dirección o el token de la función.|
+|**Dirección de función**|La dirección o el token de la función.|
 |**Nombre de la función**|El nombre completo de la función.|
 |**Tiempo de bloqueo inclusivo**|- En la función actual, el tiempo durante el cual no se pudo ejecutar esta función o una de las funciones a las que llamó esta función. Se incluye el tiempo de bloqueo de las funciones a las que llamó la función actual.<br />- En una función de llamador, la parte del tiempo de bloqueo inclusivo de la función actual que transcurrió cuando esta función llamó a la función actual.<br />- En una función de destinatario, el tiempo durante el cual no se pudo ejecutar esta función o una de las funciones a las que llamó la función cuando la función actual llamó a esta función. Se incluye el tiempo de bloqueo de las funciones a las que llamó la función de destinatario.|
 |**Porcentaje de tiempo de bloqueo inclusivo**|El porcentaje de tiempo de bloqueo inclusivo de esta función en este contexto con respecto al tiempo de bloqueo total de la ejecución de generación de perfiles.|
@@ -44,12 +46,12 @@ La vista Llamador y destinatario muestra información de contención para una fu
 |**Nombre del módulo**|Nombre del módulo que contiene la función.|
 |**Ruta de acceso del módulo**|Ruta de acceso del módulo que contiene la función.|
 |**Identificador del proceso**|El identificador de proceso (PID) en el que se produjeron las contenciones.|
-|**Nombre de proceso**|Nombre del proceso.|
-|**Nombre de la función raíz**|El nombre de la función actual. Solo disponible en los informes de línea de comandos de [VSPerfReport](../profiling/vsperfreport.md).|
-|**Archivo de código fuente**|Archivo de origen que contiene la definición de esta función.|
+|**Nombre del proceso**|Nombre del proceso.|
+|**Nombre de la función raíz**|Nombre de la función actual. Solo disponible en los informes de línea de comandos de [VSPerfReport](../profiling/vsperfreport.md).|
+|**Archivo de origen**|Archivo de origen que contiene la definición de esta función.|
 
 ## <a name="see-also"></a>Vea también
-- [Cómo: Personalizar las columnas de la vista de informes](../profiling/how-to-customize-report-view-columns.md)
+- [Procedimiento: Personalizar las columnas de la vista de informes](../profiling/how-to-customize-report-view-columns.md)
 - [Llamador y destinatario (vista)](../profiling/caller-callee-view.md)
 - [Vista Llamador y destinatario: datos de muestreo](../profiling/caller-callee-view-sampling-data.md)
 - [Vista Llamador y destinatario: datos de instrumentación de memoria de .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)

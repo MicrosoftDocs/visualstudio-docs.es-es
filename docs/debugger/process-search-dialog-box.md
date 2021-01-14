@@ -1,5 +1,7 @@
 ---
 title: Buscar proceso (cuadro de diálogo) | Microsoft Docs
+description: Use Buscar proceso para buscar y seleccionar el nodo de un proceso concreto en la vista Procesos. Puede especificar el identificador del proceso, la cadena del módulo y la dirección de la búsqueda.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 190ec35d014e6b443a9f80bf79433ac14b8fb8ad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 889c6bac2f00041af6578d31bc0c6e036d82afe1
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62903774"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975100"
 ---
 # <a name="process-search-dialog-box"></a>Cuadro de diálogo Buscar proceso
 Use este cuadro de diálogo para buscar y seleccionar el nodo de un proceso concreto en la [vista Procesos](../debugger/processes-view.md). Para mostrar este cuadro de diálogo, mueva el foco a la ventana de vista **Procesos**. Elija **Buscar proceso** en el menú **Buscar**.

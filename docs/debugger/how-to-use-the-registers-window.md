@@ -1,6 +1,7 @@
 ---
 title: Visualización de valores de registro en el depurador | Microsoft Docs
-ms.custom: seodec18
+description: Vea los valores de registro en la ventana Registros de Visual Studio. Durante la depuración, los valores de registro cambian a medida que el código se ejecuta en la aplicación.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/19/2018
 ms.topic: how-to
 f1_keywords:
@@ -24,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed60b21d7c8e90e18b389a29c3343713ac8ece3d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8422738b5c46b5482ac65cd24ccc903acdb4506e
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348579"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148044"
 ---
 # <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>Visualización de valores de registro en la ventana Registros (C#, C++, Visual Basic, F#)
 

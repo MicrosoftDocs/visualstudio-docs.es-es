@@ -1,5 +1,7 @@
 ---
 title: Buscar ventana (Cuadro de diálogo) | Microsoft Docs
+description: Use Buscar ventana para buscar y seleccionar el nodo de una ventana concreta en la vista Ventanas. Consulte este artículo para ver las descripciones de la configuración.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ca04cadbfce26319a9ed72b85071d7ab139a85a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f83469d6bd97e493a704282aa1fca1fbec96962d
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62900928"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148993"
 ---
 # <a name="window-search-dialog-box"></a>Cuadro de diálogo Buscar ventana
 Use este cuadro de diálogo para buscar y seleccionar el nodo de un ventana concreta en la [Vista Ventanas](../debugger/windows-view.md). Para mostrar este cuadro de diálogo, mueva el foco a la ventana de una vista Mensajes. Luego, seleccione **Buscar ventana**, en el menú **Buscar**.
@@ -49,4 +51,4 @@ Use este cuadro de diálogo para buscar y seleccionar el nodo de un ventana conc
 
  [Cuadro de diálogo Propiedades de la ventana](../debugger/window-properties-dialog-box.md) Se usa para mostrar las propiedades de una ventana seleccionada en la vista Ventanas.
 
- [Referencia de Spy++](../debugger/spy-increment-reference.md) Incluye secciones que describen cada menú y cuadro de diálogo de Spy++.
+ [Referencia de Spy++](../debugger/spy-increment-reference.md). Incluye secciones que describen cada menú y cuadro de diálogo de Spy++.
