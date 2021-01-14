@@ -10,12 +10,12 @@ user.type: subscriber, admin
 tags: purchasing
 subscription.type: vl, cloud, retail, partner
 sap.id: c374762c-640b-8b2c-d049-bda9545e903c
-ms.openlocfilehash: b16123ef691036c027ac6046616699624e53b10a
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: 90c56d7be8e4f3e687ff602619b5eda80807b030
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96916183"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147592"
 ---
 ## <a name="purchase-subscriptions-through-microsoft-store"></a>Compra de suscripciones a través de Microsoft Store 
 
@@ -37,7 +37,7 @@ Cada una de estas suscripciones ofrece la opción de realizar una compra inicial
 1. Haga clic en "Download – New" (Descargar: nueva) y agréguela al carro. Nota: A veces, la tienda mostrará de forma predeterminada el precio de renovación. Asegúrese de que está comprando una suscripción nueva. La tienda no validará si tiene una suscripción actual cuando compre al precio de renovación. No podrá activar la renovación sin una suscripción actual que coincida.
 1. Desproteger. En la página de confirmación, se le proporcionará una clave de producto que tendrá que usar para activar la suscripción. Vea las instrucciones que se muestran debajo. 
 
-## <a name="how-to-activate"></a>Activación  
+## <a name="how-to-activate-your-subscription"></a>Activación de la suscripción 
 
 Después de comprar una suscripción de Visual Studio a través de Microsoft Store, puede iniciar el proceso de activación desde la página de confirmación del pago o el correo electrónico de confirmación que ha recibido tras la compra. 
 
@@ -47,7 +47,7 @@ Después de comprar una suscripción de Visual Studio a través de Microsoft S
 
 La suscripción ahora debería estar visible en la  [página de suscripciones](https://my.visualstudio.com/subscriptions) y debería tener acceso a todas las ventajas de su suscripción. 
 
-## <a name="more-information"></a>Más información 
+## <a name="compare-subscription-benefits"></a>Comparación de las ventajas de la suscripción
 
 [Compare las ventajas y los precios de las suscripciones](https://visualstudio.microsoft.com/vs/pricing/) para ver qué ventajas ofrece cada suscripción de Visual Studio. 
 

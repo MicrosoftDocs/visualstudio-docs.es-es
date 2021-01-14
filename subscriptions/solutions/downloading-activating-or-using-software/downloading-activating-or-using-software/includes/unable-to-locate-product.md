@@ -10,12 +10,12 @@ user.type: subscriber
 tags: download, activate
 subscription.type: vl, cloud, retail, partner
 sap.id: 53a7a6d4-7755-352a-5a65-715d78af84bf
-ms.openlocfilehash: c862de5bc5006abc60650a26132453f260a51a89
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: e4d24412ab4e3aee22a9184d23ddbefb6ceb35fa
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96916151"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147481"
 ---
 ## <a name="im-unable-to-locate-the-product-i-need-to-download"></a>No puedo encontrar el producto que necesito descargar.
 
@@ -30,8 +30,8 @@ Puede [descargar una lista extensa](https://download.microsoft.com/download/1/5/
 1. Aquí podrá ver una lista de las descargas más populares o buscar un producto específico. Nota: Si tiene más de una suscripción asociada con la misma dirección de inicio de sesión, verá las descargas incluidas con la suscripción de nivel más alto, independientemente de la suscripción que esté viendo.
 1. Haga clic en "Obtener clave" para ver todas las claves disponibles para el producto que quiere descargar. Después, haga clic en "Claim key" (Reclamar clave) para reclamar una clave de producto, en caso de que la descarga requiera una clave para comenzar. 
 
-## <a name="product-keys-page"></a>Página Claves de producto 
+## <a name="find-available-product-keys"></a>Búsqueda de las claves de producto disponibles
 También puede visitar la página [Claves de producto](https://my.visualstudio.com/productkeys), en la que todas las claves están disponibles en forma agregada. Puede editar la columna notas para identificar cuándo y por qué ha reclamado la clave. 
 
-## <a name="more-information"></a>Más información 
+## <a name="more-information-about-product-keys"></a>Más información sobre las claves de producto
 [Obtenga más información](https://docs.microsoft.com/visualstudio/subscriptions/find-keys) sobre cómo buscar y reclamar descargas y claves de producto.  

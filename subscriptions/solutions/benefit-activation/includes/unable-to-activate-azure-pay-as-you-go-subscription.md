@@ -10,12 +10,12 @@ user.type: subscriber
 tags: benefit, azure, dev-test
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: 25065465cee2239e9f4b5e7febafcf2a01eefc50
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: 2a6e02721512d9780cd94d2d9601fe7099eac956
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96916224"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147514"
 ---
 ## <a name="im-unable-to-activate-my-azure-dev--test-pay-as-you-go-subscription"></a>No puedo activar mi suscripción de Pago por uso de desarrollo/pruebas de Azure.
 
@@ -27,5 +27,6 @@ Como suscriptor de Visual Studio, recibirá tarifas por horas con descuentos ex
 1. En la página de registro de Microsoft Azure, tendrá la opción de configurar la oferta Desarrollo/pruebas - Pago por uso (PAYG) o actualizar a la oferta de Visual Studio Enterprise. Si no quiere actualizar, haga clic en Continuar con la oferta actual (Desarrollo/pruebas - Pago por uso). 
 1. Agregue un método de pago, acepte el contrato de suscripción y ya estará listo para empezar. En el futuro, podrá acceder a la suscripción de Azure en [portal.azure.com](https://portal.azure.com/). 
 
-## <a name="more-information"></a>Más información 
+## <a name="more-information-about-subscriptions"></a>Más información sobre las suscripciones
+ 
 [Obtenga más información sobre las suscripciones de Desarrollo/pruebas - Pago por uso de Azure](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure-payg).

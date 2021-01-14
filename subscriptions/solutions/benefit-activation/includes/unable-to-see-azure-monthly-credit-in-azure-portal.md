@@ -10,12 +10,12 @@ user.type: subscriber
 tags: benefit, azure
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: f12da1b45520de87bfd94f5b4597d10820968a11
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: 48f52f1381bb890942e6f5ed3f1772c0735b1fb8
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96916111"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147335"
 ---
 ## <a name="im-unable-to-see-my-azure-monthly-credit-in-the-azure-portal"></a>No puedo ver el crédito mensual de Azure en Azure Portal.
 
@@ -29,10 +29,12 @@ También puede asociar una [cuenta alternativa](https://docs.microsoft.com/visua
 
 Tendrá que iniciar sesión en [Azure Portal](https://portal.azure.com/) con el correo electrónico con el que haya configurado la cuenta. Por ejemplo, si ha activado el crédito mensual con la cuenta alternativa, siempre tendrá que iniciar sesión en la suscripción de Azure con ese correo electrónico. 
 
-## <a name="azure-directories"></a>Directorios de Azure 
+## <a name="azure-directories"></a>Directorios de Azure
+ 
 Puede tener varios directorios como parte de la suscripción de Azure. Asegúrese de que usa el directorio que ha configurado con la suscripción de Azure. Para ver y cambiar de directorio, haga clic en el icono de la cuenta en la esquina superior derecha de Azure Portal. 
 
-## <a name="how-to-activate"></a>Activación
+## <a name="how-to-activate-your-azure-monthly-credit"></a>Activación del crédito mensual de Azure
+
 1. Inicie sesión en el [portal de suscripciones](https://my.visualstudio.com/benefits).  
 1. Busque el icono de crédito individual de desarrollo/pruebas de Azure en la sección Herramientas de la página Ventajas y haga clic en el vínculo Activar en la parte inferior del icono de la ventaja. Si no encuentra el icono de crédito mensual de Azure, use la [página de comparación de ventajas](https://visualstudio.microsoft.com/vs/benefits/#azure?cat=visual-studio-enterprise-subscription) para comprobar que la suscripción incluye un crédito mensual. 
 1. Si no tiene una suscripción de Azure existente, se le pedirá que rellene la información personal necesaria para crear una.  
@@ -42,7 +44,7 @@ Puede tener varios directorios como parte de la suscripción de Azure. Asegúres
 
 Las suscripciones de Azure creadas a través de la ventaja Suscripciones de Visual Studio pueden verse afectadas por restricciones que no se imponen en las suscripciones de pago. Es posible que algunas zonas geográficas no estén disponibles para crear máquinas virtuales y servicios de Azure, y que algunos tipos de servicio no estén disponibles. Puede haber una cuota predeterminada inferior que la de las suscripciones de pago. 
 
-## <a name="more-information"></a>Más información 
+## <a name="more-information-about-azure-monthly-credits"></a>Más información sobre los créditos mensuales de Azure
 
 [Obtenga más](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure) información sobre la activación, la idoneidad y otros recursos de soporte técnico.  
 

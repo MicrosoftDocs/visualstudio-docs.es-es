@@ -10,12 +10,12 @@ user.type: subscriber
 tags: billing
 subscription.type: vl, cloud, retail, partner
 sap.id: 2db8f927-5814-835b-cc9d-daab30a7a09e
-ms.openlocfilehash: a7121ac942b074b0414c00ee791ccf37bf8320bd
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: fa95610b98d8731b486392d927452b8d42576f28
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96916143"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147597"
 ---
 ## <a name="how-do-i-view-my-bill"></a>¿Cómo se puede ver la factura?
 
@@ -34,5 +34,5 @@ La característica de límite de gasto de Azure le permite establecer un límite
 
 Si ha quitado el límite de gasto de la suscripción de Azure, lo ha convertido a Pago por uso, aprovecha los ventajas de los precios de desarrollo y pruebas para empresas que solo están disponibles para los suscriptores de Visual Studio, o bien si quiere usar servicios ajenos a los que se utilizan para el desarrollo y las pruebas que se incluyen en el crédito mensual, se le facturará mensualmente por los servicios.  
 
-## <a name="more-information"></a>Más información 
+## <a name="more-information-about-billing"></a>Más información sobre la facturación
 Obtenga respuestas a preguntas habituales sobre la utilización y los cargos. Visite [Preguntas más frecuentes sobre facturación](https://docs.microsoft.com/azure/cost-management-billing/manage/getting-started). 
