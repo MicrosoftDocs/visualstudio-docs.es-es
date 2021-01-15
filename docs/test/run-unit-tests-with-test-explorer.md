@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b934c6cb7c2a6ba98113a5e68091ab53f54b1423
-ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
+ms.openlocfilehash: c992a1a4fca536f219a69b9ab629f6f602b4dfb0
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "97833369"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150514"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Ejecutar pruebas unitarias con el Explorador de pruebas
 
@@ -377,6 +377,16 @@ Para ejecutar las pruebas desde el Explorador de pruebas, haga clic con el botó
 > [!NOTE]
 > No se puede ejecutar una prueba en una clase abstracta, ya que las pruebas solo se definen en las clases abstractas, no se crean instancias. Para ejecutar pruebas en las clases abstractas, cree una clase que se derive de la clase abstracta.
 
+::: moniker range=">=vs-2019"
+## <a name="test-audio-cue"></a>Notificación de audio de la prueba
+Explorador de pruebas puede reproducir un sonido cuando se completa una serie de pruebas. Hay dos sonidos: uno para indicar que la serie de pruebas se ha realizado correctamente con todas las pruebas superadas y otro para indicar que la serie de pruebas se ha completado con al menos una prueba con errores. Puede configurar estos sonidos en el cuadro de diálogo de sonido predeterminado de Windows 10. Esta característica está disponible a partir de Visual Studio 2019, actualización 16.9, versión preliminar 3.
+
+1. Abra el cuadro de diálogo de sonido predeterminado de Windows 10.
+2. Vaya a la pestaña **Sonidos**.
+3. Busque la categoría **Microsoft Visual Studio**. Elija los sonidos **Test Run Succeeded** (Serie de pruebas correcta) o **Test Run Failed** (Serie de pruebas con errores) para seleccionar los sonidos preestablecidos o buscar su propio archivo de audio.  
+![Cuadro de diálogo de sonido de Windows 10](../test/media/default-windows-10-sound-dialog.png)
+
+::: moniker-end
 ## <a name="see-also"></a>Vea también
 
 - [Haga una prueba unitaria de su código](../test/unit-test-your-code.md)
