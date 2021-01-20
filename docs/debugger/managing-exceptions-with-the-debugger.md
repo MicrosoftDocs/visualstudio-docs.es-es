@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 210f2b2fc3e037f58fed19031d7ae9762185a640
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 58a701e6297cb81ce84c164b3b6791a6e73c76f8
+ms.sourcegitcommit: 993fca11dc373a10150751bc2a045a9701a9db2f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903853"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98240275"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Administración de excepciones con el depurador en Visual Studio
 
@@ -226,5 +226,4 @@ Para agregar excepciones condicionales:
 - [Continuación de la ejecución después de una excepción](../debugger/continuing-execution-after-an-exception.md)<br/>
 - [Cómo: examinar el código del sistema después de una excepción](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
 - [Cómo: usar comprobaciones nativas en tiempo de ejecución](../debugger/how-to-use-native-run-time-checks.md)<br/>
-- [Usar comprobaciones en tiempo de ejecución sin la biblioteca en tiempo de ejecución de C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
 - [Primer vistazo al depurador](../debugger/debugger-feature-tour.md)

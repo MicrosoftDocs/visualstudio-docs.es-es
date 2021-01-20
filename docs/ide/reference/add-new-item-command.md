@@ -4,8 +4,6 @@ description: Aprenda a usar el comando Agregar nuevo elemento para agregar un nu
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
-f1_keywords:
-- project.addnewitem
 helpviewer_keywords:
 - Add New Item command
 - File.AddNewItem command
@@ -15,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac07b374ef08a963426b9bfd44f101a8863f04c8
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: d9045f9874c966ec0b9780b3ba2876912e433fbf
+ms.sourcegitcommit: 208f75ad89ad91b994701bb5cbc0a251fbaa3604
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871293"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98166828"
 ---
 # <a name="add-new-item-command"></a>Agregar nuevo elemento (Comando)
 Agrega un nuevo elemento de solución (como un archivo .htm, .css o .txt o un conjunto de marcos) a la solución actual y lo abre.

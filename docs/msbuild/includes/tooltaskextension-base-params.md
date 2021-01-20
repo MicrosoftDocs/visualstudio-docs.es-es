@@ -3,12 +3,12 @@ author: ghogen
 ms.author: ghogen
 ms.topic: include
 ms.date: 4/23/2020
-ms.openlocfilehash: 6fd0fc6fd4f2e54c0d15f649139b649797f8336f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7d4027c53f599b4a17d267d5ebf72eee1ed296b
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89042890"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98535297"
 ---
 ### <a name="tooltaskextension-parameters"></a>Parámetros de ToolTaskExtension
 
@@ -21,7 +21,6 @@ En la siguiente tabla se describen los parámetros de las clases base:
 | <xref:Microsoft.Build.Utilities.ToolTask.EchoOff%2A> | Parámetro `bool` opcional.<br /><br /> Cuando se establece en `true`, esta tarea pasa **/Q** a la línea de comandos *cmd.exe* de modo que la línea de comandos no se copia en stdout. |
 | <xref:Microsoft.Build.Utilities.ToolTask.EnvironmentVariables%2A> | Parámetro de matriz `String` opcional.<br /><br /> Matriz de definiciones de variables de entorno, separadas por punto y coma. Cada definición debe especificar un valor y un nombre para la variable de entorno separados por un signo igual. Estas variables se pasan al ejecutable generado y, además, pasan el bloque de entorno normal o lo invalidan de manera selectiva. Por ejemplo, `Variable1=Value1;Variable2=Value2`. |
 | <xref:Microsoft.Build.Utilities.ToolTask.ExitCode%2A> | Parámetro de solo lectura de salida `Int32` opcional.<br /><br /> Especifica el código de salida proporcionado por el comando ejecutado. Si la tarea registró errores pero el proceso tenía un código de salida de 0 (correcto), se establece en -1. |
-| <xref:Microsoft.Build.Utilities.ToolTask.LogStandardErrorAsError%2A> | Parámetro `bool` opcional.<br /><br /> Si `true`, todos los mensajes recibidos en el flujo de error estándar se registran como errores. |
 | <xref:Microsoft.Build.Utilities.ToolTask.LogStandardErrorAsError%2A> | Parámetro `bool` opcional.<br /><br /> Si `true`, todos los mensajes recibidos en el flujo de error estándar se registran como errores. |
 | <xref:Microsoft.Build.Utilities.ToolTask.StandardErrorImportance%2A> | Parámetro `String` opcional.<br /><br /> Importancia con la que se va a registrar el texto de la secuencia de salida estándar. |
 | <xref:Microsoft.Build.Utilities.ToolTask.StandardOutputImportance%2A> | Parámetro `String` opcional.<br /><br /> Importancia con la que se va a registrar el texto de la secuencia de salida estándar. |
