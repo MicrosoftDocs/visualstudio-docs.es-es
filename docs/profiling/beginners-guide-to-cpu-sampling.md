@@ -1,6 +1,7 @@
 ---
 title: Guía para principiantes para el muestreo de la CPU
-ms.custom: seodec18
+description: Descubra cómo las Herramientas de generación de perfiles de Visual Studio permiten saber cuánto tiempo usan las funciones de una aplicación. De esta forma, podrá detectar las partes en las que se puede acelerar la aplicación.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 02/27/2017
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a58803747e0da411012226325c390352edf4e919
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c61d407247910131deee9585d19a921f8cf76cca
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330601"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205364"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>Guía para principiantes para el muestreo de la CPU
 Puede utilizar las herramientas de generación de perfiles de Visual Studio para analizar problemas de rendimiento en su aplicación. Este procedimiento muestra cómo utilizar datos de **muestreo**.
@@ -127,6 +128,6 @@ Puede utilizar las herramientas de generación de perfiles de Visual Studio para
 ## <a name="see-also"></a>Vea también
 - [Explorador de rendimiento](../profiling/performance-explorer.md)
 - [Introducción](../profiling/getting-started-with-performance-tools.md)
-- [Información general](../profiling/overviews-performance-tools.md)
+- [Temas de introducción](../profiling/overviews-performance-tools.md)
 - [Generación de perfiles en Visual Studio](../profiling/index.yml)
 - [Primer vistazo a la generación de perfiles](../profiling/profiling-feature-tour.md)

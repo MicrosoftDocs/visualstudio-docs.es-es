@@ -1,5 +1,7 @@
 ---
 title: AutoMark | Microsoft Docs
+description: Use la opción AutoMark para especificar un intervalo de tiempo entre los eventos de recopilación de datos de contadores de rendimiento de Windows. Úsela junto con la opción WinCounter.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: c4de965e-0364-4f78-9936-1f509e85df74
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: aaa1e7f39a9dcaedec51eb6a40ed3a2d06bcfb0e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 94578571a9cfe6a170fd94019615eeec3071356a
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330605"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205767"
 ---
 # <a name="automark"></a>AutoMark
 La opción **AutoMark** especifica el número de milisegundos entre la colección de eventos de los contadores de rendimiento de software de Windows. Los contadores de rendimiento de Windows se especifican en la opción **WinCounter**.

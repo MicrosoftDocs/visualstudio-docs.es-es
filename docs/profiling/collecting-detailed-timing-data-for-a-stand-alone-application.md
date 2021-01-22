@@ -1,5 +1,7 @@
 ---
 title: 'Línea de comandos del generador de perfiles: Detalle de datos de control de tiempo para una aplicación independiente'
+description: Obtenga información sobre cómo usar el método de instrumentación desde la línea de comandos para recopilar datos de rendimiento detallados sobre un componente independiente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f088a0da0e8525189e4e2addf1464b30e1e98d06
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: d93673080acd36f4195fb9b19382c9f0152f51f5
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85331834"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533841"
 ---
 # <a name="collect-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>Recopilación de datos detallados de tiempo para una aplicación independiente mediante la línea de comandos del generador de perfiles
 En esta sección se describen los procedimientos y las opciones para recopilar datos de rendimiento detallados para un componente cliente (independiente) mediante el método de instrumentación desde la línea de comandos.

@@ -1,6 +1,7 @@
 ---
 title: Analizar el uso de memoria
-ms.custom: seodec18
+description: Obtenga información sobre las herramientas que puede usar para detectar fugas de memoria y un uso ineficiente de la memoria; por ejemplo, Uso de memoria y Asignación de objetos .NET.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 10/12/2020
 ms.topic: conceptual
 author: mikejo5000
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53d8e33555530eacf482f3f99752ea4c42f8d827
-ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
+ms.openlocfilehash: 675636b7abca10fb2f9f1898d753155235830f86
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92918102"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205728"
 ---
 # <a name="analyze-memory-usage"></a>Analizar el uso de memoria
 
@@ -31,7 +32,7 @@ Los desarrolladores de C++ pueden usar la herramienta Uso de memoria integrada e
 - [Análisis del uso de memoria con el depurador](../profiling/memory-usage.md)
 - [Análisis del uso de memoria sin el depurador](../profiling/memory-usage-without-debugging2.md)
 
-Las herramientas de generación de perfiles se pueden usar sin el depurador en Windows 7 y versiones posteriores. Para ejecutar las herramientas de generación de perfiles con el depurador se requiere Windows 8 y versiones posteriores (ventana **Herramientas de diagnóstico** ).
+Las herramientas de generación de perfiles se pueden usar sin el depurador en Windows 7 y versiones posteriores. Para ejecutar las herramientas de generación de perfiles con el depurador se requiere Windows 8 y versiones posteriores (ventana **Herramientas de diagnóstico**).
 
 ## <a name="blogs-and-videos"></a>Blogs y vídeos
 

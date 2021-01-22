@@ -1,5 +1,7 @@
 ---
 title: Generación de perfiles de aplicaciones independientes en la línea de comandos | Microsoft Docs
+description: Obtenga información sobre cómo usar las Herramientas de generación de perfiles desde la línea de comandos para recopilar datos de rendimiento sobre aplicaciones de cliente (independientes).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f80f3e65969973202af08299b07ebfa420f3bd2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 876c2a72f0929cffa3613026fa56a17d82786854
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77557854"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533646"
 ---
 # <a name="command-line-profiling-of-stand-alone-applications"></a>Generación de perfiles de aplicaciones independientes en la línea de comandos
 En esta sección se describen los procedimientos y las opciones para recopilar datos de rendimiento de aplicaciones independientes (cliente) mediante las herramientas de generación de perfiles [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] desde la línea de comandos.
@@ -36,5 +38,5 @@ En esta sección se describen los procedimientos y las opciones para recopilar d
 
 |Tarea|Contenido relacionado|
 |----------|---------------------|
-|**Generar perfiles de aplicaciones de ASP.NET**|-   [Generación de perfiles de aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)|
+|**Generar perfiles de aplicaciones ASP.NET**|-   [Generación de perfiles de aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)|
 |**Generar perfiles para servicios**|-   [Servicios de generación de perfiles](../profiling/command-line-profiling-of-services.md)|

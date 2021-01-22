@@ -1,5 +1,7 @@
 ---
 title: Depuración de JavaScript con la consola | Microsoft Docs
+description: Use la ventana Consola JavaScript de Visual Studio para interactuar con ella y depurar aplicaciones de la Plataforma universal de Windows (UWP) compiladas mediante JavaScript.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +18,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: aca36c56bfeed4fd5d8b240cce6bea5b55b75d85
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 8a2b2e82e664abea1a53112776dc0ec3ec5f1259
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211081"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205013"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>Depuración de JavaScript con la consola en Visual Studio
 
@@ -203,7 +205,7 @@ Aunque un programa esté en modo de interrupción, puede utilizar la ventana Con
 
 2. Elija **Máquina local** en la lista desplegable que se encuentra junto al botón **Iniciar depuración** de la barra de herramientas **Depurar**.
 
-3. Elija **Depurar** > **Iniciar depuración**o presione F5.
+3. Elija **Depurar** > **Iniciar depuración** o presione F5.
 
     La aplicación entra en el modo de interrupción cuando la ejecución alcanza la función `updateImages()` . La línea actual de ejecución del programa se resalta en amarillo.
 

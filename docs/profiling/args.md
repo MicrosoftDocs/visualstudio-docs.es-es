@@ -1,5 +1,7 @@
 ---
 title: Args | Microsoft Docs
+description: Use la opción ARGS de VSPerfCmd.exe para pasar una lista de argumentos a la aplicación de destino del subcomando Launch.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 20c35949-1f29-4282-ac75-4e6c237d71bc
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b6d01a95b7e0872d6bb36c6d9f3917bc6a05b3b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ff16d67d0c7168524ff145183f49a662e1f660f0
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779823"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205715"
 ---
 # <a name="args"></a>Args
 La opción **Args** de VSPerfCmd.exe especifica una lista de argumentos que se pasan a la aplicación de destino del subcomando **Launch**.

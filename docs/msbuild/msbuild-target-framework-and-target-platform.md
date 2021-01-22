@@ -10,16 +10,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d29c4e4659e8e6a5564e3fb41f54615bf29171d2
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 958f33a39126f8f48cf29bad1c25c7d962513ed0
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049102"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533867"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Versión de .NET Framework de destino y plataforma de destino de MSBuild
 
-Un proyecto se puede compilar para su ejecución en una *plataforma de destino* , que es una versión determinada de .NET Framework, y en una *plataforma de destino* , que es una arquitectura de software determinada.  Por ejemplo, puede diseñar una aplicación para que se ejecute en .NET Framework 2.0 en una plataforma de 32 bits compatible con la familia de procesadores 80x86 ("x86"). La combinación de la plataforma de destino y la plataforma de destino se denomina *contexto de destino*.
+Un proyecto se puede compilar para su ejecución en una *plataforma de destino*, que es una versión determinada de .NET Framework, y en una *plataforma de destino*, que es una arquitectura de software determinada.  Por ejemplo, puede diseñar una aplicación para que se ejecute en .NET Framework 2.0 en una plataforma de 32 bits compatible con la familia de procesadores 80x86 ("x86"). La combinación de la plataforma de destino y la plataforma de destino se denomina *contexto de destino*.
 
 > [!IMPORTANT]
 > En este artículo se muestra la forma antigua de especificar una plataforma de destino. Los proyectos de estilo SDK permiten diferentes plataformas de destino, como netstandard. Para más información, consulte [Plataformas de destino](/dotnet/standard/frameworks).
@@ -78,7 +78,7 @@ El marco de trabajo de destino se especifica en la propiedad `TargetFrameworkVer
 
 - `x86` designa un sistema operativo Windows de 32 bits que se ejecuta en un procesador Intel 80x86 o su equivalente.
 
-- `x64` designa un sistema operativo Windows de 64 bits que se ejecuta en un procesador Intel x64 o su equivalente.
+- `x64` designa un sistema operativo Windows de 64 bits que se ejecuta en un procesador Intel x64 o su equivalente.
 
 - `Xbox` designa la plataforma Microsoft Xbox 360.
 

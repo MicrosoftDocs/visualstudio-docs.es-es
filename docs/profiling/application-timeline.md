@@ -1,6 +1,7 @@
 ---
 title: Análisis del consumo de recursos en aplicaciones XAML
-ms.custom: seodec18
+description: Utilice el generador de perfiles de Escala de tiempo de la aplicación para detectar problemas de rendimiento en aplicaciones XAML. Puede analizar el tiempo dedicado a varias tareas en varios escenarios.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/01/2018
 ms.topic: conceptual
 ms.assetid: df7d854b-0a28-45a9-8a64-c015a4327701
@@ -9,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 6d7f3d943d621708efab8df1e2f69402a0c5f26c
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 8fc482e10ae1ca08230feb38eb2997d0c4dcab00
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038353"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205741"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Análisis del consumo de recursos y la actividad del subproceso de interfaz de usuario (XAML)
 

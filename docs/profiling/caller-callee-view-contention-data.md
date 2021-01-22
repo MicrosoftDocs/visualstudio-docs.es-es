@@ -1,6 +1,6 @@
 ---
 title: 'Vista Llamador y destinatario: datos de contención | Microsoft Docs'
-description: Obtenga información sobre cómo la vista Llamador y destinatario permite visualizar la información de contención para una función seleccionada, y sus funciones primarias y secundarias en el Explorador de rendimiento.
+description: Obtenga información sobre cómo la vista Llamador y destinatario muestra información de contención de una función seleccionada, y sus funciones primarias y secundarias, en el Explorador de rendimiento.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b51504d029c1e723321c8c92df28a2ecad1fd1a
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: ab622ffda91e6ea9020fb8caa6af2fb460128f17
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150917"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204805"
 ---
 # <a name="callercallee-view----contention-data"></a>Vista Llamador y destinatario: datos de contención
 La vista Llamador y destinatario muestra información de contención para una función seleccionada y sus funciones primarias y secundarias. La vista Llamador y destinatario contiene tres cuadrículas.

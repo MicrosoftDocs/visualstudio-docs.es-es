@@ -1,5 +1,7 @@
 ---
 title: Análisis del uso de energía en las aplicaciones para UWP | Microsoft Docs
+description: Utilice el generador de perfiles Consumo de energía de Visual Studio para analizar las necesidades de energía y potencia de las aplicaciones de UWP que se ejecutan en dispositivos alimentados por batería.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ manager: jillfra
 ms.workload:
 - uwp
 monikerRange: vs-2017
-ms.openlocfilehash: 2945ef9879e83567f37ebe410ba9f265bfd64760
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: cf55035ba5a05917334b2192067a3273f4930775
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90075462"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205793"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Análisis del uso de energía en las aplicaciones para UWP
 
@@ -126,7 +128,7 @@ if (performance && performance.mark) {
 
 |Imagen|Descripción|
 |-|-|
-|![Paso 1](../profiling/media/procguid_1.png "ProcGuid_1")|El archivo de informe se denomina Report*YYYYMMDD-HHMM*.diagsession. Puedes cambiar el nombre si decides guardarlo.|
+|![Paso 1](../profiling/media/procguid_1.png "ProcGuid_1")|El archivo de informe se denomina Report *YYYYMMDD-HHMM*.diagsession. Puedes cambiar el nombre si decides guardarlo.|
 |![Paso 2](../profiling/media/procguid_2.png "ProcGuid_2")|La escala de tiempo muestra la longitud de la sesión de generación de perfiles, los eventos de activación del ciclo de vida de la aplicación y las marcas de usuario.|
 |![Paso 3](../profiling/media/procguid_3.png "ProcGuid_3")|Puedes restringir el informe a una parte de la escala de tiempo arrastrando las barras azules para seleccionar una región de esta.|
 |![Paso 4](../profiling/media/procguid_4.png "ProcGuid_4")|El gráfico **Uso de potencia** es un gráfico de varias líneas que muestra los cambios producidos en la potencia de salida por un recurso de dispositivo durante una sesión de generación de perfiles. El generador de perfiles Consumo de energía hace un seguimiento de la potencia utilizada por la CPU, la actividad de red y la presentación en pantalla.|

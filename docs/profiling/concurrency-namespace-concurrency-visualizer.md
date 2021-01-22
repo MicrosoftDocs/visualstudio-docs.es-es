@@ -1,5 +1,7 @@
 ---
 title: Espacio de nombres de simultaneidad (visualizador de simultaneidad)| Microsoft Docs
+description: Para escribir programas simultáneos en C++, utilice el espacio de nombres Simultaneidad, que proporciona acceso al Runtime de simultaneidad, un marco de simultaneidad para C++.
+custom.ms: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,15 +14,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 258cb5964946d5dbf136463538905d970346b8df
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: bdb9f2cee62c126f7a8b91fb7be57f558c9a7e5c
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "63001083"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533438"
 ---
 # <a name="concurrency-namespace-concurrency-visualizer"></a>Espacio de nombres de simultaneidad (Visualizador de simultaneidad)
-El espacio de nombres `Concurrency` proporciona las clases y funciones que dan acceso al Runtime de simultaneidad, un marco de programación simultáneo para C++. Para obtener más información, consulte [Runtime de simultaneidad](/cpp/parallel/concrt/concurrency-runtime).
+El espacio de nombres `Concurrency` proporciona las clases y funciones que dan acceso al Runtime de simultaneidad, un marco de programación simultáneo para C++. Para obtener más información, consulta [Concurrency Runtime](/cpp/parallel/concrt/concurrency-runtime).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -32,12 +34,12 @@ namespace Concurrency;
 
 ### <a name="namespaces"></a>Espacios de nombres
 
-|Name|Description|
+|Nombre|Descripción|
 |----------|-----------------|
-|[diagnostic (Espacio de nombres)](../profiling/diagnostic-namespace.md)|El espacio de nombres `diagnostics` proporciona funcionalidad para emitir los marcadores del visualizador de simultaneidad.|
+|[diagnostic (espacio de nombres)](../profiling/diagnostic-namespace.md)|El espacio de nombres `diagnostics` proporciona funcionalidad para emitir los marcadores del visualizador de simultaneidad.|
 
 ## <a name="requirements"></a>Requisitos
  **Encabezado:** cvmarkersobj.h
 
-## <a name="see-also"></a>Vea también
-- [Referencia de la biblioteca de C](../profiling/c-library-reference.md)
+## <a name="see-also"></a>Consulte también
+- [Referencia de la biblioteca C](../profiling/c-library-reference.md)

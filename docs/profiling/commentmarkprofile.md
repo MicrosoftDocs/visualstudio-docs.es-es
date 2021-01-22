@@ -1,5 +1,7 @@
 ---
 title: CommentMarkProfile | Microsoft Docs
+description: Utilice la función CommentMarkProfile para insertar un marcador numérico y una cadena de texto en el archivo *.vsp*.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,15 +14,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2972f9d470bebe3a65b7d525aa2b358d68ad5f1c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: e943be08ffd586347ab5de54cb803bcedc8c24d7
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85546593"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533594"
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
-La función `CommentMarkProfile` inserta un marcador numérico y una cadena de texto en el archivo .*vsp*. Para que la marca y el comentario se inserten, la generación de perfiles para el subproceso que contiene la función `CommentMarkProfile` debe estar activada.
+La función `CommentMarkProfile` inserta un marcador numérico y una cadena de texto en el archivo *.vsp*. Para que la marca y el comentario se inserten, la generación de perfiles para el subproceso que contiene la función `CommentMarkProfile` debe estar activada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -55,7 +57,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
 ## <a name="remarks"></a>Comentarios
  El estado de generación de perfiles del subproceso que contiene la función de perfil de marcas debe estar activado cuando se inserten marcas o comentarios con el comando VSInstr Mark o con funciones (CommentMarkAtProfile, CommentMarkProfile o MarkProfile).
 
- Las marcas de perfil tienen un ámbito global. Por ejemplo, una marca de perfil insertada en un subproceso se puede usar para marcar el inicio y el final de un segmento de datos en cualquier subproceso del archivo .*vsp*.
+ Las marcas de perfil tienen un ámbito global. Por ejemplo, una marca de perfil insertada en un subproceso se puede usar para marcar el inicio y el final de un segmento de datos en cualquier subproceso del archivo *.vsp*.
 
 > [!IMPORTANT]
 > El método CommentMarkProfile solo se puede utilizar con instrumentación.

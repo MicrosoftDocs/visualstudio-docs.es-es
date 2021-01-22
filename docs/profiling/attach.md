@@ -1,5 +1,7 @@
 ---
 title: Attach | Microsoft Docs
+description: Utilice la opción Attach de VSPerfCmd.exe para comenzar la generación de perfiles del proceso de ejecución especificado por el id. de proceso (PID).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 79614283-6733-4592-a53a-d428052271ad
@@ -9,20 +11,20 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 482b3e80bce796910860cb7eab1e5a0066854238
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c97dee50d58b49092d9b23a497192b29746e0c22
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329862"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205702"
 ---
-# <a name="attach"></a>Attach
+# <a name="attach"></a>Adjuntar
 La opción **Attach** de *VSPerfCmd.exe* comienza la generación de perfiles de muestra del proceso en ejecución que especifica el id. de proceso (PID).
 
  Para usar la opción **Attach**, debe especificar el método **Sample** en la opción Start.
 
 > [!NOTE]
-> Si la opción **Start** se ha especificado con la opción **CrossSession**, en cualquier llamada a **VSPerfCmd /Attach** o a **VSPerfCmd /Detach** también se debe especificar **CrossSession**.
+> Si la opción **Iniciar** se ha especificado con la opción **CrossSession**, en cualquier llamada a **VSPerfCmd /Attach** o a **VSPerfCmd /Detach** también se debe especificar **CrossSession**.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -36,7 +38,7 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
 ## <a name="valid-options"></a>Opciones válidas
  Las opciones siguientes de **VSPerfCmd** se pueden combinar con la opción **Adjuntar** en una sola línea de comandos.
 
- **Crosssession** Habilita la generación de perfiles de aplicaciones en las sesiones que no sean la sesión de inicio. Es obligatorio si la opción **Start** se ha especificado con la opción **CrossSession**.
+ **Crosssession** Habilita la generación de perfiles de aplicaciones en las sesiones que no sean la sesión de inicio. Es obligatorio si la opción **Iniciar** se ha especificado con la opción **CrossSession**.
 
  **Start:** `Method` Inicializa la sesión del generador de perfiles de línea de comandos y establece el método de generación de perfiles especificado.
 

@@ -1,6 +1,7 @@
 ---
 title: Configuración de proyectos para configuraciones de depuración de VB | Microsoft Docs
-ms.custom: seodec18
+description: Obtenga información sobre cómo cambiar los valores de proyecto de una configuración de depuración de Visual Basic en la ventana Páginas de propiedades de Visual Studio.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -23,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bcac88c2faf1af7378ce25597789700df61648a9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 277d78b225afae13d73e091c1228e181df30e532
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72730614"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205598"
 ---
 # <a name="project-settings-for-a-visual-basic-debug-configuration"></a>Configuración del proyecto para una configuración de depuración de Visual Basic
 Es posible cambiar la configuración del proyecto para una configuración de depuración de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] en la ventana **Páginas de propiedades**, como se describe en [Configuraciones Debug y Release](../debugger/how-to-set-debug-and-release-configurations.md). En las siguientes tablas se muestra dónde encontrar valores relacionados con el depurador en la ventana **Páginas de propiedades**.

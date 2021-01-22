@@ -1,5 +1,7 @@
 ---
 title: Ejecución de aplicaciones para UWP en el simulador | Microsoft Docs
+description: Descubra cómo ejecutar aplicaciones de la Plataforma universal de Windows (UWP) en el simulador de Visual Studio, que es una aplicación de escritorio que simula una aplicación de UWP.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 9b46abc4d22ddfdc551669d3bcd4cba5acf7cce4
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 12d2fed62e1a4762c9b92304ff1acfe8374ab976
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599526"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205637"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Ejecutar aplicaciones para UWP en el simulador
 

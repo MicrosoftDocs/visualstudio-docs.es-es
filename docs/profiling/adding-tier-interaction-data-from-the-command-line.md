@@ -1,5 +1,7 @@
 ---
 title: Agregar datos de interacción de capas desde la línea de comandos | Microsoft Docs
+description: En el caso de las aplicaciones de varios niveles que se conectan a una base de datos o a más de una, utilice la generación de perfiles de interacción de capa para obtener información de tiempo de ejecución de llamadas sincrónicas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 20b8438243382b28cccb510894d1674aa5872946
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e5e3dc7fc3ebbb3d06e85f7322237ecb72b22b0e
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779875"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205546"
 ---
 # <a name="add-tier-interaction-data-from-the-command-line"></a>Agregar datos de interacción de capas desde la línea de comandos
 

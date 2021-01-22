@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: ba3db5b74a415d3736c37f54fdb708fde3436d92
-ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
+ms.openlocfilehash: dc82d72d7c0a333fc28146746a473ed359857490
+ms.sourcegitcommit: 993fca11dc373a10150751bc2a045a9701a9db2f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97756596"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98240288"
 ---
 # <a name="unit-test-tools-and-tasks"></a>Tareas y herramientas de pruebas unitarias
 
@@ -36,7 +36,7 @@ Las herramientas de pruebas unitarias incluyen:
 
 * **Marco de aislamiento de Microsoft Fakes**: el marco de aislamiento de Microsoft Fakes puede crear clases y métodos de sustitución para el código .NET de producción y de sistema que crean dependencias en el código sometido a prueba. Cuando se implementan falsos delegados para una función, se controla el comportamiento y el resultado del objeto de dependencia.
 
-También puede crear pruebas [IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md), que exploran el código .NET para generar datos de prueba y un conjunto de pruebas unitarias. Para cada instrucción en el código, se genera una entrada de prueba que ejecutará esa instrucción. Se lleva a cabo un análisis de caso para cada bifurcación condicional en el código.
+Para .NET, también puede usar [IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md) para explorar su código y generar datos de pruebas y una serie de pruebas unitarias. Para cada instrucción en el código, se genera una entrada de prueba que ejecutará esa instrucción. Se lleva a cabo un análisis de caso para cada bifurcación condicional en el código.
 
 ## <a name="key-tasks"></a>Tareas clave
 

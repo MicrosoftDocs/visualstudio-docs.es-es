@@ -1,5 +1,7 @@
 ---
 title: Vistas de datos comunes | Microsoft Docs
+description: Consulte esta sección para ver información de referencia sobre las vistas e informes de los archivos de datos del generador de perfiles que son comunes para todos los métodos de generación de perfiles.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 39af1975dc3bcb0f5df729579ca1af38fa60160f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 69f68bec998108869676946e2995e45b2f662169
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777834"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533542"
 ---
 # <a name="common-data-views"></a>Vistas de datos comunes
 Esta sección contiene información de referencia acerca de las vistas e informes de archivos de datos del generador de perfiles que son comunes para todos los métodos de generación de perfiles.

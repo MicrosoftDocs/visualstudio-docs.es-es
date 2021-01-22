@@ -1,5 +1,7 @@
 ---
 title: Informe de perfil de tiempo de bloqueo | Microsoft Docs
+description: 'Los informes de perfil de tiempo de bloqueo ofrecen datos sobre el tiempo de bloqueo agregado. Hay seis tipos de informes: Sincronización, Suspensión, E/S, Memoria, Adelantamiento y UI.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3ed24dce0779b9bc7ea9cfd7bedcaa5ca181c68
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 74cfeb0b93b1819b4491b18b8e455b3c8d49be4d
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "68926306"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204584"
 ---
 # <a name="blocking-time-profile-report"></a>Informe de perfil de tiempo de bloqueo
 Los informes de perfil proporcionan datos agregados de tiempo de bloqueo para las pilas de llamadas que son específicas de cada categoría de bloqueo (por ejemplo, "E/S" o "Sincronización"). El informe de adelantamiento enumera los procesos que adelantaron el proceso actual junto con el número de instancias de adelantamiento. Para compilar el informe de perfil de bloqueo, la herramienta recopila las llamadas API de bloqueo y las acumula en un árbol de pilas de llamadas. Los datos que se muestran en estos informes varían según el intervalo de tiempo actual, los subprocesos ocultos y los dos filtros siguientes que se pueden aplicar:
@@ -31,25 +33,25 @@ Los informes de perfil proporcionan datos agregados de tiempo de bloqueo para la
 ## <a name="blocking-time-report-columns"></a>Columnas del informe de tiempo de bloqueo
  En la siguiente tabla se muestran las columnas de cada informe de tiempo de bloqueo.
 
-|Nombre de columna|Description|
+|Nombre de la columna|Descripción|
 |-----------------|-----------------|
-|**Name**|El nombre de la función para cada nivel de la pila de llamadas.|
+|**Nombre**|El nombre de la función para cada nivel de la pila de llamadas.|
 |**Instancias**|El número de instancias de la llamada de bloqueo para el período de tiempo visible.|
 |**Tiempo de bloqueo inclusivo**|El tiempo de bloqueo total que se emplea para todas las pilas comprendidas en este nivel del árbol de pila de llamadas. El número inclusivo es la suma del tiempo de bloqueo exclusivo de esta función y el tiempo de bloqueo exclusivo de todos sus nodos secundarios.|
 |**Tiempo de bloqueo exclusivo**|El tiempo de bloqueo total que se emplea durante el cual esta función es el nivel más bajo de la pila de llamadas. Una entrada de la pila de llamadas única que tenga un tiempo de bloqueo exclusivo elevado puede ser una función de interés.|
 |**Categoría de espera/API**|Se muestra solo para las funciones en el nivel más bajo de la pila de llamadas. Cuando se reconoce la firma de la llamada de bloqueo, se proporciona el nombre de la API de bloqueo. Si no se reconoce la firma, se proporciona la información notificada por el kernel.|
 |**Detalles**|Nombre completo de la función. Esto incluye el recuento de líneas cuando está disponible.|
 
-### <a name="synchronization"></a>Sincronización
+### <a name="synchronization"></a>Synchronization
  En el informe de sincronización se muestran las llamadas responsables de los segmentos que bloquean la sincronización y los tiempos de bloqueo agregados de cada pila de llamadas. Para obtener más información, vea [Tiempo de sincronización](../profiling/synchronization-time.md).
 
-### <a name="sleep"></a>Sleep
+### <a name="sleep"></a>En reposo
  El informe Sleep muestra las llamadas responsables del tiempo de bloqueo atribuido al tiempo que se empleó en modo de suspensión y los tiempos de bloqueo agregados de cada pila de llamadas. Para más información, vea [Tiempo de suspensión](../profiling/sleep-time.md).
 
 ### <a name="io"></a>E/S
  En el informe de E/S se muestran las llamadas responsables de los segmentos que bloquean la E/S y los tiempos de bloqueo agregados de cada pila de llamadas. Para más información, vea [Tiempo de E/S (vista Subprocesos)](../profiling/i-o-time-threads-view.md).
 
-### <a name="memory-management"></a>Administración de la memoria
+### <a name="memory-management"></a>Administración de memoria
  En el informe de administración de memoria se muestran las llamadas responsables de los segmentos que bloquean las operaciones de administración de memoria y los tiempos de bloqueo agregados de cada pila de llamadas. Para más información, vea [Tiempo de administración de la memoria](../profiling/memory-management-time.md).
 
 ### <a name="preemption"></a>Adelantamiento

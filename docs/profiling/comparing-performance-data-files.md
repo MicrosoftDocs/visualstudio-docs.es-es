@@ -1,5 +1,7 @@
 ---
 title: Comparar archivos de datos de rendimiento | Microsoft Docs
+description: Utilice las Herramientas de generación de perfiles para comparar dos archivos de informe (.vsp o .vsps). En la comparación se muestran las diferencias, las regresiones en el rendimiento y las mejoras.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +14,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 64842c5b4f622a1f76aa528360f79403ec92cb42
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8d1c57c6c3dd8d7d01e37eae374c547e074d62e6
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777862"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533503"
 ---
 # <a name="compare-performance-data-files"></a>Comparar archivos de datos de rendimiento
 
-La funcionalidad de comparación de archivos de datos de las herramientas de generación de perfiles permite seleccionar dos archivos de informe (.*vsp* o .*vsps*) y generar un informe en el que se muestran las diferencias, las regresiones de rendimiento y las mejoras producidas de una sesión de generación de perfiles a otra.
+La funcionalidad de comparación de archivos de datos de las Herramientas de generación de perfiles permite seleccionar dos archivos de informe (.*vsp* o .*vsps*) y generar un informe en el que se muestran las diferencias, las regresiones en el rendimiento y las mejoras que se han producido de una sesión de generación de perfiles a otra.
 
 En un informe de comparación de archivos de datos de herramientas de generación de perfiles [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] se comparan los resultados de un análisis en un archivo de datos de generación de perfiles con los resultados de un análisis de línea base en otro archivo de datos. Ambos archivos de datos deben haberse generado mediante el mismo método de generación de perfiles. El informe de las comparaciones analizadas se guarda como un archivo .*vsps*.
 
@@ -35,4 +37,4 @@ Puede establecerse un umbral para reducir el ruido y filtrar los datos en la vis
 
 ## <a name="in-this-section"></a>En esta sección
 
-[Comparación de archivos de datos de rendimiento](../profiling/how-to-compare-performance-data-files.md)
+[Procedimiento Comparar archivos de datos de rendimiento](../profiling/how-to-compare-performance-data-files.md)

@@ -12,19 +12,19 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 0029321ddfc3ff12bb9c40dac9de64a9eb067a95
-ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
+ms.openlocfilehash: cc5a1a7b72dcbdba8b874958bbef47ac4b98e936
+ms.sourcegitcommit: 993fca11dc373a10150751bc2a045a9701a9db2f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97756648"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98240327"
 ---
 # <a name="first-look-at-testing-tools-in-visual-studio"></a>Primer vistazo a las herramientas de prueba de Visual Studio
 
 Las herramientas de prueba de Visual Studio pueden ayudarle a usted y a su equipo a desarrollar y mantener altos estándares de excelencia de código.
 
 > [!NOTE]
-> Las pruebas unitarias están disponibles en todas las ediciones de Visual Studio. Otras herramientas de pruebas, como Live Unit Testing, IntelliTest y pruebas automatizadas de IU, solo están disponibles en la edición Visual Studio Enterprise. Para obtener más información sobre las ediciones, vea [Comparar los IDE de Visual Studio](https://visualstudio.microsoft.com/vs/compare/).
+> Las pruebas unitarias están disponibles en todas las ediciones de Visual Studio. Otras herramientas de pruebas, como Live Unit Testing e IntelliTest, solo están disponibles en la edición Visual Studio Enterprise. Para obtener más información sobre las ediciones, vea [Comparar los IDE de Visual Studio](https://visualstudio.microsoft.com/vs/compare/).
 
 ## <a name="test-explorer"></a>Explorador de pruebas
 

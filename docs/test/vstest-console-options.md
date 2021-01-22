@@ -12,12 +12,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98d58b745b35870d287b6e81aa0a14fcdaeac921
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 0dc266b43d9a4634fe8cfbc05a3a070ae72cdaa9
+ms.sourcegitcommit: 1ceb58e3a1afa80a3211911ada4e5adaa1b1d439
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598528"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98192868"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Opciones de la línea de comandos para VSTest.Console.exe
 
@@ -44,7 +44,7 @@ En la siguiente tabla se muestran todas las opciones de *VSTest.Console.exe* jun
 |**/InIsolation**|Ejecuta las pruebas en un proceso aislado.<br />Con este aislamiento, es menos probable que el proceso *vstest.console.exe* se detenga por un error de las pruebas, aunque es posible que las pruebas se ejecuten más despacio.|
 |**/UseVsixExtensions**|Esta opción hace que el proceso *vstest.console.exe* use u omita las extensiones VSIX instaladas (si procede) en la serie de pruebas.<br />Esta opción está en desuso. A partir de la siguiente versión principal de Visual Studio, esta opción puede desaparecer. Use extensiones disponibles como paquete NuGet.<br />Ejemplo: `/UseVsixExtensions:true`|
 |**/TestAdapterPath:[*ruta*]**|Obliga al proceso *vstest.console.exe* a usar adaptadores de prueba personalizados de una ruta de acceso especificada (si los hubiera) en la serie de pruebas.<br />Ejemplo: `/TestAdapterPath:[pathToCustomAdapters]`|
-|**/Platform:[*tipo de plataforma*]**|Arquitectura de la plataforma de destino que se usará para la ejecución de pruebas.<br />Los valores válidos son x86, x64 y ARM.|
+|**/Platform:[*tipo de plataforma*]**|Permite forzar que se use la plataforma especificada en vez de la plataforma determinada del entorno de ejecución actual. Esta opción solo puede forzar plataformas x86 y x64 en Windows. La opción ARM no funciona y dará como resultado x64 en la mayoría de los sistemas.<br />NO especifique esta opción para que se ejecute en entornos de ejecución que no consten en la lista de valores válidos, como ARM64.<br />Los valores válidos son x86, x64 y ARM.<br /> 
 |**/Framework: [*versión de Framework*]**|Establezca como destino la versión de .NET que se va a usar para la ejecución de pruebas.<br />Algunos valores de ejemplo son `Framework35`, `Framework40`, `Framework45`, `FrameworkUap10` o `.NETCoreApp,Version=v1.1`.<br />TargetFrameworkAttribute se usa para detectar automáticamente esta opción desde el ensamblado y se establece de forma predeterminada en `Framework40` cuando el atributo no está presente. Debe especificar esta opción explícitamente si quita [TargetFrameworkAttribute](/dotnet/api/system.runtime.versioning.targetframeworkattribute) de los ensamblados de .NET Core.<br />Si la plataforma de destino se especifica como **Framework35**, las pruebas se ejecutan en "modo de compatibilidad" de CLR 4.0.<br />Ejemplo: `/Framework:framework40`|
 |**/TestCaseFilter:[*expresión*]**|Ejecuta pruebas que coinciden con la expresión dada.<br /><Expression\> tiene el formato <property\>=<value\>[\|<Expression\>].<br />Ejemplo: `/TestCaseFilter:"Priority=1"`<br />Ejemplo: `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />La opción de línea de comandos **/TestCaseFilter** no se puede usar con la opción de línea de comandos **/Tests**. <br />Para obtener información sobre cómo crear y usar expresiones, vea [TestCase filter](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md) (Filtro TestCase).|
 |**/?**|Muestra información de uso.|

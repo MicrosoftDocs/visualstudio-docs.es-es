@@ -1,5 +1,7 @@
 ---
 title: Pestaña Ventanas (Cuadro de diálogo Propiedades de la ventana) | Microsoft Docs
+description: Use la pestaña Ventanas de Propiedades de Windows para ver información sobre las ventanas que están relacionadas con la ventana seleccionada. Consulte este artículo para conocer la configuración.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce1015741b2a1e7ba1608eea7f198b726e808f7f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 03cbcee265855c0e3ee26f75d5937315d64661a2
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62900788"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205403"
 ---
 # <a name="windows-tab-window-properties-dialog-box"></a>Pestaña Ventanas (Cuadro de diálogo Propiedades de la ventana)
 Use la pestaña **Ventanas** para ver información sobre las ventanas relacionadas con la ventana seleccionada. Para ver el [Cuadro de diálogo Propiedades de la ventana](../debugger/window-properties-dialog-box.md), mueva el foco a la ventana [Vista Ventanas](../debugger/windows-view.md). Seleccione un nodo de ventana en el árbol y, después, elija **Propiedades** en el menú **Vista**.

@@ -1,5 +1,6 @@
 ---
 title: 'Línea de comandos del generador de perfiles: obtención de datos de memoria de aplicaciones web de ASP.NET'
+description: Obtenga información sobre cómo usar la herramienta de línea de comandos VSPerfCmd para recopilar datos de asignación de memoria y de duración de objetos para una aplicación web ASP.NET.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -13,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 690b3cd03d245281b488f2bb2b77ebdebedd00c2
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: b2cb0e199e543152b9d11da4b4de014c9465c1b7
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809419"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533776"
 ---
 # <a name="collect-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line"></a>Recopilación de datos de memoria de una aplicación web ASP.NET con la línea de comandos del generador de perfiles
 En esta sección se describen los procedimientos y las opciones para recopilar datos de asignación de memoria y de duración de objetos para una aplicación web ASP.NET mediante la herramienta de línea de comandos **VSPerfCmd**.

@@ -1,5 +1,7 @@
 ---
 title: Recopilar datos de interacción de capas | Microsoft Docs
+description: Obtenga información sobre cómo recopilar información sobre generación de perfiles de niveles para aplicaciones de varios niveles que se conectan con bases de datos mediante los servicios de ADO.NET.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f7b2a2bb5efd86d052247825a29a06c7f5ad109
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 768cb173bca578c440e3209fe7b7a1df60fab1be
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331596"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533685"
 ---
 # <a name="collect-tier-interaction-data"></a>Recopilar datos de interacción de capas
 
@@ -32,9 +34,9 @@ Los datos de generación de perfiles de interacción de capas se pueden recopila
 
 **Windows 8 y Windows Server 2012**
 
-Para recopilar datos de interacción de capas de aplicaciones de escritorio de Windows 8 o aplicaciones de Windows Server 2012, debe usar el método de instrumentación. No se pueden recopilar datos de interacción de capas para las aplicaciones para UWP. Consulte [Generar perfiles de aplicaciones de Windows 8 y Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md). Puede incluir datos de interacción de capas en todos los métodos de generación de perfiles de otras versiones compatibles de Windows.
+Para recopilar datos de interacción de capas de aplicaciones de escritorio de Windows 8 o aplicaciones de Windows Server 2012, debe usar el método de instrumentación. No se pueden recopilar datos de interacción de capas para las aplicaciones para UWP. Consulte [Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md). Puede incluir datos de interacción de capas en todos los métodos de generación de perfiles de otras versiones compatibles de Windows.
 
-**Asistente de rendimiento**
+**Asistente para rendimiento**
 
 Debido a un error en el Asistente para rendimiento, debe agregar la opción de recopilación de datos de interacción de capas a una ejecución de generación de perfiles desde el Explorador de rendimiento. También debe agregar el proyecto, el archivo ejecutable o el sitio web al nodo de destino del Explorador de rendimiento.
 
@@ -46,6 +48,6 @@ Debido a un error en el Asistente para rendimiento, debe agregar la opción de r
 
 3. En el Explorador de rendimiento, seleccione el nodo **Destinos** y, después, especifique el proyecto, el archivo ejecutable o el sitio web cuyo perfil desea generar.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Interacciones de capas (vista)](../profiling/tier-interactions-view.md)

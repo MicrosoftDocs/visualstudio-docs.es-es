@@ -1,6 +1,7 @@
 ---
 title: Depuración remota de ASP.NET Core en un equipo remoto de IIS | Microsoft Docs
-ms.custom: remotedebugging
+description: Depure una aplicación ASP.NET Core que se haya implementado en un equipo remoto de Internet Information Services (IIS) mediante el depurador remoto de Visual Studio.
+ms.custom: remotedebugging, SEO-VS-2020
 ms.date: 05/06/2020
 ms.topic: conceptual
 ms.assetid: 573a3fc5-6901-41f1-bc87-557aa45d8858
@@ -10,12 +11,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 389fe1491a92cacecd772244c2a0facd0d12c887
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: bc746d5139b897d51d4d038f077906f56aa5d552
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "92298756"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205819"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio"></a>Depuración remota de ASP.NET Core en un equipo remoto de IIS en Visual Studio
 
@@ -31,7 +32,7 @@ En esta guía se explica cómo configurar una aplicación ASP.NET Core de Visual
 Para seguir los pasos que se muestran en este artículo, se requiere Visual Studio 2019.
 ::: moniker-end
 ::: moniker range="vs-2017"
-Para seguir los pasos que se muestran en este artículo, se requiere Visual Studio 2017.
+Se necesita Visual Studio 2017 para seguir los pasos que se muestran en este artículo.
 ::: moniker-end
 
 Estos procedimientos se han probado en estas configuraciones de servidor:
@@ -45,7 +46,7 @@ No se admite la depuración entre dos equipos conectados a través de un proxy. 
 
 ## <a name="app-already-running-in-iis"></a>¿La aplicación ya se ejecuta en IIS?
 
-En este artículo se incluyen los pasos para realizar una configuración básica de IIS en Windows Server e implementar la aplicación desde Visual Studio. Estos pasos se incluyen para garantizar que el servidor tenga instalados los componentes necesarios, que la aplicación se pueda ejecutar correctamente y que usted esté a punto para la depuración remota.
+En este artículo se incluyen los pasos para realizar una configuración básica de IIS en Windows Server e implementar la aplicación desde Visual Studio. Estos pasos se incluyen para garantizar que el servidor tenga instalados los componentes necesarios, que la aplicación se pueda ejecutar correctamente y que usted esté a punto para la depuración remota.
 
 * Si la aplicación se ejecuta en IIS y solo quiere descargar el depurador remoto e iniciar la depuración, vaya a [Descargar e instalar las herramientas remotas en Windows Server](#BKMK_msvsmon).
 
@@ -81,7 +82,7 @@ Al descargar el software, es posible que reciba solicitudes para conceder permis
 
 ## <a name="install-aspnet-core-on-windows-server"></a>Instalación de ASP.NET Core en Windows Server
 
-1. Instale el conjunto de hospedaje de .NET Core en el sistema de hospedaje. El lote instala .NET Core Runtime, .NET Core Library y el módulo ASP.NET Core. Para obtener más instrucciones detalladas, vea [Publicación en IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration).
+1. Instale el conjunto de hospedaje de .NET Core en el sistema de hospedaje. El lote instala .NET Core Runtime, .NET Core Library y el módulo ASP.NET Core. Para obtener más instrucciones detalladas, vea [Publicación en IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration).
 
     En el caso de .NET Core 3, instale el [conjunto de hospedaje de .NET Core](https://dotnet.microsoft.com/permalink/dotnetcore-current-windows-runtime-bundle-installer).
     En el caso de .NET Core 2, instale el [hospedaje de .NET Core Windows Server](https://aka.ms/dotnetcore-2-windowshosting).
@@ -248,7 +249,7 @@ Puertos necesarios:
 ::: moniker range="vs-2017"
 * 4022: obligatorio para la depuración remota desde Visual Studio 2017 (vea [Asignaciones de puertos del depurador remoto](../debugger/remote-debugger-port-assignments.md) para obtener más información).
 ::: moniker-end
-* UDP 3702: (opcional) el puerto de detección habilita el botón **Buscar** al asociarse al depurador remoto en Visual Studio.
+* UDP 3702: (opcional) El puerto de detección habilita el botón **Buscar** al asociarse al depurador remoto en Visual Studio.
 
 1. Para abrir un puerto en Windows Server, abra el menú **Inicio**, busque **Firewall de Windows con seguridad avanzada**.
 

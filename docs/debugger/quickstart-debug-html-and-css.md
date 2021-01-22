@@ -1,5 +1,7 @@
 ---
 title: Depuración de HTML y CSS en aplicaciones para UWP | Microsoft Docs
+description: Descubra cómo depurar HTML y CSS en aplicaciones de la Plataforma universal de Windows (UWP) desde Visual Studio. Las características de depuración de JavaScript son compatibles con las aplicaciones de UWP.
+ms.custom: SEO-VS-2020
 ms.date: 07/17/2018
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +19,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 5e270956fc6c8f1d7432cb65e1eaf37fdc58907c
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: fafab7a2cbf660987de0365549aaa823a4e3445d
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211094"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205481"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Depuración de HTML y CSS en aplicaciones para UWP en Visual Studio
 
@@ -149,7 +151,7 @@ En el procedimiento siguiente, analizaremos el proceso de depurar de forma inter
 
     ![Selección de lista de destino de depuración](../debugger/media/js_select_target.png "JS_Select_Target")
 
-8. Elija **Depurar** > **Iniciar depuración**o bien presione F5 para ejecutar la aplicación en modo de depuración.
+8. Elija **Depurar** > **Iniciar depuración** o bien presione F5 para ejecutar la aplicación en modo de depuración.
 
     Con esto se ejecuta la aplicación, pero lo que verá principalmente será una pantalla en blanco, porque el estilo tiene algunos errores. La primera imagen `FlipView` aparece en un cuadrado pequeño cerca del centro de la pantalla.
 
@@ -182,7 +184,7 @@ En el procedimiento siguiente, analizaremos el proceso de depurar de forma inter
 14. En la ventana principal, haga doble clic en `width: 100px;height: 100px;`, presione la tecla **Suprimir** y, luego, presione **ENTRAR**. Después de presionar ENTRAR, los valores nuevos se reflejan de inmediato en la aplicación, aunque no haya detenido la sesión de depuración.
 
     > [!IMPORTANT]
-    > Al igual que puedes actualizar atributos en la ventana del Explorador DOM, también puede actualizar los valores que aparecen en las pestañas **Estilos**, **Calculado**y **Diseño** .
+    > Al igual que puedes actualizar atributos en la ventana del Explorador DOM, también puede actualizar los valores que aparecen en las pestañas **Estilos**, **Calculado** y **Diseño** .
 
 15. Para cambiar a la aplicación, selecciónela o use Alt+Tab.
 

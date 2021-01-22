@@ -1,8 +1,10 @@
 ---
 title: Depuración remota | Microsoft Docs
+description: Puede depurar una aplicación de Visual Studio que se haya implementado en otro equipo usando el depurador remoto de Visual Studio.
 ms.custom:
 - remotedebugging
 - seodec18
+- SEO-VS-2020
 ms.date: 07/02/2018
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8051b83e0022361e4cb1cb61602dfcf8991062e
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: e97fd8979235f8ea89b43c6466b3119debe5b3ca
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "92298682"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205676"
 ---
 # <a name="remote-debugging"></a>Depuración remota
 Puede depurar una aplicación de Visual Studio que se ha implementado en un equipo diferente. Para ello, use el depurador remoto de Visual Studio
@@ -55,7 +57,7 @@ Si solo quiere descargar e instalar el depurador remoto y no necesita instruccio
 
 ## <a name="optional-to-run-the-remote-debugger-from-a-file-share"></a><a name="fileshare_msvsmon"></a> (Opcional) Ejecución del depurador remoto desde un recurso compartido de archivos
 
-Encontrará el depurador remoto ( *msvsmon.exe* ) en un equipo con Visual Studio Community, Professional o Enterprise ya instalado. En algunos escenarios, la manera más sencilla de configurar la depuración remota es ejecutar el depurador remoto (msvsmon.exe) desde un recurso compartido de archivos. Para conocer las limitaciones de uso, consulte la página de ayuda del depurador remoto ( **Ayuda > Uso** en el depurador remoto).
+Encontrará el depurador remoto (*msvsmon.exe*) en un equipo con Visual Studio Community, Professional o Enterprise ya instalado. En algunos escenarios, la manera más sencilla de configurar la depuración remota es ejecutar el depurador remoto (msvsmon.exe) desde un recurso compartido de archivos. Para conocer las limitaciones de uso, consulte la página de ayuda del depurador remoto (**Ayuda > Uso** en el depurador remoto).
 
 1. Busque *msvsmon.exe* en el directorio y elija el archivo que corresponda a su versión de Visual Studio:
 
@@ -88,14 +90,14 @@ Encontrará el depurador remoto ( *msvsmon.exe* ) en un equipo con Visual Studi
 ### <a name="configure-the-remote-debugger"></a><a name="configure_msvsmon"></a> Configuración del depurador remoto
 Puede cambiar algunos aspectos de la configuración del depurador remoto tras iniciarlo por primera vez.
 
-- Si necesita agregar permisos para que otros usuarios se conecten al depurador remoto, elija **Herramientas > Permisos** . Debe tener privilegios de administrador para conceder o denegar permisos.
+- Si necesita agregar permisos para que otros usuarios se conecten al depurador remoto, elija **Herramientas > Permisos**. Debe tener privilegios de administrador para conceder o denegar permisos.
 
      > [!IMPORTANT]
      > Puede ejecutar el depurador remoto con una cuenta de usuario distinta de la que se usa en el equipo de Visual Studio, pero debe agregar dicha cuenta de usuario a los permisos del depurador remoto.
 
      También puede iniciar el depurador remoto desde la línea de comandos con el parámetro **/allow \<username>** : **msvsmon /allow \<username@computer>** .
 
-- Si necesita cambiar el modo de autenticación o el número de puerto, o especificar un valor de tiempo de espera para las herramientas remotas, elija **Herramientas > Opciones** .
+- Si necesita cambiar el modo de autenticación o el número de puerto, o especificar un valor de tiempo de espera para las herramientas remotas, elija **Herramientas > Opciones**.
 
      Para obtener una lista de los números de puerto que se usan de forma predeterminada, consulte [Asignaciones de puertos del depurador remoto](../debugger/remote-debugger-port-assignments.md).
 
@@ -109,23 +111,23 @@ Para la depuración en ASP.NET y en otros entornos de servidor, debe ejecutar el
 
 1. Busque el **Asistente para configuración del depurador remoto** (rdbgwiz.exe). (Esta es una aplicación independiente del Depurador remoto). Está disponible solo cuando se instalan las herramientas remotas. No se instala con Visual Studio.
 
-2. Inicie el asistente para la configuración. Cuando aparezca la primera página, haga clic en **Siguiente** .
+2. Inicie el asistente para la configuración. Cuando aparezca la primera página, haga clic en **Siguiente**.
 
-3. Active la casilla **Ejecutar el depurador remoto de Visual Studio 2015 como servicio** .
+3. Active la casilla **Ejecutar el depurador remoto de Visual Studio 2015 como servicio**.
 
 4. Agregue el nombre de la cuenta de usuario y la contraseña.
 
-    Es posible que necesite agregar el derecho de usuario **Iniciar sesión como servicio** a esta cuenta. Para ello, busque **Directiva de seguridad local** (secpol.msc) en la ventana o la página **Iniciar** , o bien escriba **secpol** en un símbolo del sistema. Cuando aparezca la ventana, haga doble clic en **Asignación de derechos de usuario** y, a continuación, busque **Iniciar sesión como servicio** en el panel derecho. Haga doble clic en ella. Agregue la cuenta de usuario a la ventana **Propiedades** y haga clic en **Aceptar** . Haga clic en **Siguiente** .
+    Es posible que necesite agregar el derecho de usuario **Iniciar sesión como servicio** a esta cuenta. Para ello, busque **Directiva de seguridad local** (secpol.msc) en la ventana o la página **Iniciar**, o bien escriba **secpol** en un símbolo del sistema. Cuando aparezca la ventana, haga doble clic en **Asignación de derechos de usuario** y, a continuación, busque **Iniciar sesión como servicio** en el panel derecho. Haga doble clic en ella. Agregue la cuenta de usuario a la ventana **Propiedades** y haga clic en **Aceptar**. Haga clic en **Siguiente**.
 
-5. Seleccione el tipo de red con el que desea que se comuniquen las herramientas remotas. Debe seleccionar al menos un tipo de red. Si los equipos están conectados a través de un dominio, debe elegir el primer elemento. Si los equipos están conectados a través de un grupo de trabajo o un grupo en el hogar, debe elegir el segundo o tercer elemento. Haga clic en **Siguiente** .
+5. Seleccione el tipo de red con el que desea que se comuniquen las herramientas remotas. Debe seleccionar al menos un tipo de red. Si los equipos están conectados a través de un dominio, debe elegir el primer elemento. Si los equipos están conectados a través de un grupo de trabajo o un grupo en el hogar, debe elegir el segundo o tercer elemento. Haga clic en **Siguiente**.
 
-6. Si se puede iniciar el servicio, se mostrará el mensaje **Completó correctamente el Asistente para configuración de Visual Studio Remote Debugger** . Si no se puede iniciar el servicio, se mostrará el mensaje **Error al completar el Asistente para la configuración de Visual Studio Remote Debugger** . La página también proporciona algunas sugerencias para conseguir que se inicie el servicio.
+6. Si se puede iniciar el servicio, se mostrará el mensaje **Completó correctamente el Asistente para configuración de Visual Studio Remote Debugger**. Si no se puede iniciar el servicio, se mostrará el mensaje **Error al completar el Asistente para la configuración de Visual Studio Remote Debugger**. La página también proporciona algunas sugerencias para conseguir que se inicie el servicio.
 
-7. Haga clic en **Finalizar** .
+7. Haga clic en **Finalizar**.
 
-   En este momento, el depurador remoto se ejecuta como servicio. Puede comprobarlo en **Panel de Control > Servicios** , buscando **Depurador remoto de Visual Studio 2015** .
+   En este momento, el depurador remoto se ejecuta como servicio. Puede comprobarlo en **Panel de Control > Servicios**, buscando **Depurador remoto de Visual Studio 2015**.
 
-   Puede detener e iniciar el servicio del depurador remoto desde **Panel de Control > Servicios** .
+   Puede detener e iniciar el servicio del depurador remoto desde **Panel de Control > Servicios**.
 
 ## <a name="set-up-debugging-with-remote-symbols"></a>Configuración de la depuración con símbolos remotos
 

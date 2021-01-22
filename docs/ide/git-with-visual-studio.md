@@ -2,18 +2,18 @@
 title: La experiencia Git en Visual Studio
 titleSuffix: ''
 description: Obtenga información sobre cómo la nueva experiencia integrada de Git en Visual Studio 2019 puede ayudarle a ser más productivo.
-ms.date: 11/16/2020
+ms.date: 01/15/2021
 ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 7eed02ffda47de9c6a788d186d41dcc087852e64
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 5f93d8c29bcf7e85df04dd364868e65f70482b72
+ms.sourcegitcommit: 59b63039982bb5894eb35d8b544657688731614f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524089"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98597417"
 ---
 # <a name="git-experience-in-visual-studio"></a>Experiencia de Git en Visual Studio
 
@@ -92,7 +92,7 @@ Mientras usted realiza su trabajo, Visual Studio realiza un seguimiento de los 
 
 Cuando esté listo para almacenar provisionalmente los cambios, haga clic en el botón **+** (más) en cada archivo que quiera almacenar provisionalmente o haga clic con el botón derecho en un archivo y seleccione **Agregar al "stage"** . También puede almacenar provisionalmente todos los archivos modificados con un solo clic mediante el botón **+** (más) de Almacenar todo provisionalmente situado en la parte superior de la sección **Cambios**.
 
-Al almacenar provisionalmente un cambio, Visual Studio crea una sección **Cambios almacenados provisionalmente**. Solo se agregan en la siguiente confirmación los cambios de la sección **Cambios almacenados provisionalmente**, lo que puede hacer seleccionando **Confirmar almacenados provisionalmente**. También se pueden deshacer los cambios almacenados provisionalmente haciendo clic en el botón **–** (menos). El comando equivalente para esta acción es `git commit -m "Your commit message"`.
+Al almacenar provisionalmente un cambio, Visual Studio crea una sección **Cambios almacenados provisionalmente**. Solo se agregan en la siguiente confirmación los cambios de la sección **Cambios almacenados provisionalmente**, lo que puede hacer seleccionando **Confirmar almacenados provisionalmente**. El comando equivalente para esta acción es `git commit -m "Your commit message"`. También se puede cambiar el almacenamiento provisional de los cambios haciendo clic en el botón **–** (menos). El comando equivalente para esta acción es `git reset <file_path>` para cambiar el almacenamiento provisional de los cambios de un único archivo o `git reset <directory_path>` para cambiar el de todos los archivos de un directorio.
 
 También puede optar por no almacenar provisionalmente los archivos modificados omitiendo el almacenamiento provisional. En este caso, Visual Studio le permite confirmar los cambios directamente sin tener que almacenarlos provisionalmente. Solo tiene que escribir el mensaje de confirmación y luego seleccionar **Confirmar todo**. El comando equivalente para esta acción es `git commit -a`.
 

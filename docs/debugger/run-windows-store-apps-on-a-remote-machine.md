@@ -1,5 +1,7 @@
 ---
 title: Depuración de aplicaciones para UWP en máquinas remotas | Microsoft Docs
+description: Consulte cómo usar Visual Studio para ejecutar, depurar y probar una aplicación de la Plataforma universal de Windows (UWP), además de generar perfiles para ella, en otro equipo o dispositivo de forma remota.
+ms.custom: SEO-VS-2020
 ms.date: 10/05/2018
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: c8e8305cb454bfc9f0fb0be4b9964ac1a7e4fe96
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: a28769237f0c1b0078e9c9c117695e68e5b521ac
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "92298708"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204961"
 ---
 # <a name="debug-uwp-apps-on-remote-machines-from-visual-studio"></a>Depuración de aplicaciones para UWP en máquinas remotas desde Visual Studio
 

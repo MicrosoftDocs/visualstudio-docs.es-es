@@ -1,6 +1,7 @@
 ---
 title: Asignaciones de puertos del depurador remoto | Microsoft Docs
-ms.custom: ''
+description: Obtenga información sobre las asignaciones de puerto del depurador remoto de Visual Studio en sistemas operativos de 32 y 64 bits y en Azure. Obtenga información sobre el puerto de detección.
+ms.custom: SEO-VS-2020
 ms.date: 05/18/2018
 ms.topic: reference
 ms.assetid: 238bb4ec-bb00-4c2b-986e-18ac278f3959
@@ -9,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fcd0159e5bd315009c1c468dc7a19b5ba5a9c61
-ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
+ms.openlocfilehash: 40081f276dc9649cf448bf00e80d11fc80f58f47
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90713508"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204831"
 ---
 # <a name="remote-debugger-port-assignments"></a>Asignaciones de puertos del depurador remoto
 El depurador remoto de Visual Studio se puede ejecutar como una aplicación o como un servicio en segundo plano. Cuando se ejecuta como una aplicación, usa un puerto asignado de forma predeterminada como se muestra a continuación:
@@ -72,4 +73,4 @@ En otras palabras, el número de puerto asignado al depurador remoto se incremen
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.FileUpload|32400|32398|
 
 ## <a name="see-also"></a>Vea también
-- [Depuración remota](../debugger/remote-debugging.md)
+- [Remote Debugging](../debugger/remote-debugging.md)

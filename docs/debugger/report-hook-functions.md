@@ -1,5 +1,7 @@
 ---
 title: Funciones de enlace de informe | Microsoft Docs
+description: Consulte las funciones de enlace de informes de Visual Studio. Una función de enlace de informe, instalada mediante _CrtSetReportHook, recibe una llamada cada vez que _CrtDbgReport genera un informe de depuración.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0bb14b47fb17c4d59089aafa123115b85ab9342
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8dea558d2f125c1e64f46bb4fbf738434eda2394
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72729872"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205624"
 ---
 # <a name="report-hook-functions"></a>Funciones de enlace de informe
 Una función de enlace de informe, instalada mediante [_CrtSetReportHook](/cpp/c-runtime-library/reference/crtsetreporthook), recibe una llamada cada vez que [_CrtDbgReport](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw) genera un informe de depuración. Se puede utilizar, entre otras cosas, para filtrar informes que se concentran en determinados tipos de asignaciones. Una función de enlace de informe debería tener un prototipo como el siguiente:
@@ -43,7 +45,7 @@ int YourReportHook(int nRptType, char *szMsg, int *retVal);
 typedef int (__cdecl *_CRT_REPORT_HOOK)(int, char *, int *);
 ```
 
- Cuando la biblioteca en tiempo de ejecución llama a la función de enlace, el argumento *nRptType*contiene la categoría del informe ( **_CRT_WARN**, **_CRT_ERROR** o **_CRT_ASSERT**), *szMsg* contiene un puntero a una cadena de mensaje de informe completamente ensamblada y *retVal* especifica si `_CrtDbgReport` debería continuar con la ejecución normal después de generar el informe o bien iniciar el depurador. Un valor cero en *retVal* permite continuar la ejecución, un valor 1 inicia el depurador.
+ Cuando la biblioteca en tiempo de ejecución llama a la función de enlace, el argumento *nRptType* contiene la categoría del informe ( **_CRT_WARN**, **_CRT_ERROR** o **_CRT_ASSERT**), *szMsg* contiene un puntero a una cadena de mensaje de informe completamente ensamblada y *retVal* especifica si `_CrtDbgReport` debería continuar con la ejecución normal después de generar el informe o bien iniciar el depurador. Un valor cero en *retVal* permite continuar la ejecución, un valor 1 inicia el depurador.
 
  Si el enlace se encarga de procesar completamente el mensaje en cuestión, de forma que no se requiera ningún informe posterior, debería devolver **TRUE**. Si devuelve **FALSE**, `_CrtDbgReport` informará del mensaje como es habitual.
 

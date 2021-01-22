@@ -1,5 +1,7 @@
 ---
 title: Cuadro de diálogo Configuración avanzada (Visualizador de simultaneidad) | Microsoft Docs
+description: Use la Configuración avanzada del Visualizador de simultaneidad para controlar el contenido del seguimiento. Hay pestañas para los símbolos, la opción Solo mi código y el almacenamiento en búfer, entre otros.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa9d6658ae14c4b84aae9361f73e4701e758f975
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fc7d3464fd05b1fe99fcbfa8773e64bca4cb95e7
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72911223"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205507"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Cuadro de diálogo Configuración avanzada (Visualizador de simultaneidad)
 Mediante el cuadro de diálogo **Opciones avanzadas** del Visualizador de simultaneidad, puede controlar cómo se recopilan los seguimientos.  El cuadro de diálogo tiene pestañas para los símbolos, Solo mi código, almacenamiento en búfer, filtrado, eventos de CLR, marcadores, proveedores y archivos.
@@ -28,10 +30,10 @@ Mediante el cuadro de diálogo **Opciones avanzadas** del Visualizador de simult
 
  Las rutas de acceso de los archivos .*exe* y .*dll* se almacenan en el archivo de seguimiento cuando se recopila el seguimiento.  El cambio de este parámetro no afecta a los seguimientos recopilados previamente.
 
-## <a name="buffering"></a>Almacenamiento en búfer
+## <a name="buffering"></a>de respuesta
  El Visualizador de simultaneidad utiliza el Seguimiento de eventos para Windows (ETW) cuando recopila un seguimiento.  ETW utiliza varios búferes a medida que almacena eventos.  Puede que la configuración del búfer de ETW predeterminada no sea óptima en todos los casos y, eventualmente, podrían producirse problemas, tales como eventos perdidos.  Puede utilizar la pestaña Almacenamiento en búfer para configurar los valores del búfer de ETW. Para obtener más información, vea [Event Tracing](/windows/win32/etw/event-tracing-portal) (Seguimiento de eventos) y [EVENT_TRACE_PROPERTIES structure](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties) (Estructura de EVENT_TRACE_PROPERTIES).
 
-## <a name="filter"></a>Filtro
+## <a name="filter"></a>Filter
  En la pestaña Filtro, puede seleccionar el conjunto de eventos que recopila el Visualizador de simultaneidad. La selección de un subconjunto de eventos limita los tipos de datos que se presentan en los informes y, además, reduce el tamaño de cada seguimiento y el tiempo necesario para procesarlos.
 
 ### <a name="clr-events"></a>eventos CLR
@@ -52,7 +54,7 @@ Mediante el cuadro de diálogo **Opciones avanzadas** del Visualizador de simult
 ### <a name="file-io-events"></a>Eventos de E/S de archivo
  Los eventos de E/S de archivos representan accesos a disco en nombre del proceso actual.  Si deshabilita los eventos de E/S de archivos, el tamaño del seguimiento se reduce, pero la vista de subprocesos no notificará ninguna información sobre los canales o las operaciones de disco.
 
-## <a name="markers"></a>Markers
+## <a name="markers"></a>Marcadores
  En la pestaña **Marcadores** puede configurar el conjunto de proveedores de ETW que se muestran como marcadores en el Visualizador de simultaneidad.  También se puede filtrar la colección de marcadores según el nivel de importancia y la categoría de ETW.  Si usa el [SDK del Visualizador de simultaneidad](../profiling/concurrency-visualizer-sdk.md) y el propio proveedor de marcadores, puede registrarlo aquí para que aparezca en la vista de subprocesos.
 
 ### <a name="add-a-new-provider"></a>Agregar un nuevo proveedor
@@ -83,6 +85,6 @@ Mediante el cuadro de diálogo **Opciones avanzadas** del Visualizador de simult
 
   Los dos archivos de registro de seguimiento de eventos almacenan los datos de seguimiento sin procesar, y los dos archivos del Visualizador de simultaneidad almacenan los datos procesados.  Los archivos de registro de seguimiento de eventos sin formato no se utilizan normalmente una vez procesado un seguimiento.  Al activar la casilla **Eliminar archivos de registro de seguimiento de eventos (ETL) tras el análisis**, se reduce la cantidad de datos de seguimiento que se almacenan en el disco.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Solo mi código](../profiling/just-my-code-threads-view.md)
 - [Marcadores del Visualizador de simultaneidad](../profiling/concurrency-visualizer-markers.md)

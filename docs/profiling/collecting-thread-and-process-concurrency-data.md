@@ -1,5 +1,6 @@
 ---
 title: Recopilación de datos de simultaneidad de subprocesos y procesos
+description: Utilice el método de generación de perfiles de simultaneidad de las Herramientas de generación de perfiles para recopilar datos sobre cada uno de los eventos de sincronización que provocan que una función tenga que esperar para acceder a un recurso.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f44b7785306fc486c8f550c41bcac199825b8ed
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: c1f6d0dbc8c10c972957e2bcf8092d145bb3651c
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810723"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533750"
 ---
 # <a name="collect-thread-and-process-concurrency-data"></a>Recopilar datos de simultaneidad de subprocesos y procesos
 

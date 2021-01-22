@@ -1,5 +1,7 @@
 ---
 title: Vista Ventanas | Microsoft Docs
+description: La vista Ventanas muestra un árbol de todos los controles y ventanas. Úsela como punto de partida para obtener información sobre las ventanas que le puedan interesar.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fef652cbaa83fde61f098fb8fcef9558473fe19a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 717c0f18d5443f712151a2f8318c56a8e738f6d7
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900869"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205377"
 ---
 # <a name="windows-view"></a>Vista Ventanas
 La primera vez que abre Spy++, la vista Ventanas muestra un árbol de todas las ventanas y todos los controles del sistema. Se muestran el manipulador de ventanas y el nombre de clases. La ventana del escritorio actual se encuentra en la parte superior del árbol. Todas las demás ventanas son elementos secundarios del escritorio y se muestran según la jerarquía de ventanas estándar. Las ventanas del mismo nivel aparecen en listas expansibles con una sangría debajo de sus elementos primarios.
@@ -38,14 +40,14 @@ La primera vez que abre Spy++, la vista Ventanas muestra un árbol de todas las 
  [Cómo: mostrar las propiedades de la ventana](../debugger/how-to-display-window-properties.md). Procedimientos para abrir el cuadro de diálogo Propiedades de la ventana.
 
 ## <a name="related-sections"></a>Secciones relacionadas
- [Vistas de Spy++](../debugger/spy-increment-views.md). Explica las vistas de árbol de Spy++ de ventanas, mensajes, procesos y subprocesos.
+ [Vistas de Spy ++](../debugger/spy-increment-views.md): se explican las vistas de árbol de ventanas, mensajes, procesos y subprocesos de Spy++.
 
- [Usar Spy++](../debugger/using-spy-increment.md). Presenta la herramienta Spy++ y explica cómo se puede usar.
+ [Usar Spy++](../debugger/using-spy-increment.md) Presenta la herramienta Spy++ y explica cómo se puede usar.
 
  [Cuadro de diálogo Buscar ventana](../debugger/find-window-dialog-box.md). Se usa para ver las propiedades o los mensajes de una ventana específica.
 
  [Cuadro de diálogo Buscar ventana](../debugger/window-search-dialog-box.md). Se usa para buscar el nodo de un ventana concreta en la vista Ventanas.
 
- [Cuadro de diálogo Propiedades de la ventana](../debugger/window-properties-dialog-box.md). Se usa para mostrar las propiedades de una ventana seleccionada en la vista Ventanas.
+ [Cuadro de diálogo Propiedades de la ventana](../debugger/window-properties-dialog-box.md) Se usa para mostrar las propiedades de una ventana seleccionada en la vista Ventanas.
 
  [Referencia de Spy++](../debugger/spy-increment-reference.md). Incluye secciones que describen cada menú y cuadro de diálogo de Spy++.

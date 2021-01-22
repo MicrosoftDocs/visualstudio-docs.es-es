@@ -1,5 +1,7 @@
 ---
 title: Comandos del menú Buscar | Microsoft Docs
+description: Revise el menú Buscar de Visual Studio, en el que encontrará comandos que sirven para buscar ventanas específicas. Utilice las opciones Buscar ventana, Buscar proceso, Buscar subproceso, Buscar mensaje, Buscar siguiente y Buscar anterior.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c61dc9e752dccee909baa742e4c8d677df865a8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 46a93ca2a1f3d2f8c1abd35e5e1ad0e2463431b1
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929799"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205585"
 ---
 # <a name="search-menu-commands"></a>Comandos del menú Buscar
 En el menú **Buscar** se proporcionan comandos para buscar ventanas específicas.
