@@ -40,8 +40,8 @@
   items:
     - name: Trabajo con proyectos de servicio en la nube
       items:
-        - name: Nubes de acceso privado de Azure
-          href: vs-azure-tools-access-private-azure-clouds-with-visual-studio.md
+        - name: 'Uso de Cloud Services (soporte extendido, versión preliminar)'
+          href: cloud-services-extended-support.md
         - name: Creación de un proyecto de servicio en la nube de Azure
           href: vs-azure-tools-azure-project-create.md
         - name: Administración de roles en los servicios en la nube de Azure
@@ -60,6 +60,8 @@
           href: vs-azure-tools-multiple-services-project-configurations.md
         - name: Actualización de proyectos a la versión actual de Azure Tools
           href: vs-azure-tools-upgrade-projects-to-the-current-version-of-the-azure-tools.md
+        - name: Nubes de acceso privado de Azure
+          href: vs-azure-tools-access-private-azure-clouds-with-visual-studio.md
     - name: Prueba y depuración de un servicio en la nube
       items:
         - name: Depuración de un servicio en la nube o una máquina virtual en Visual Studio
