@@ -1,5 +1,6 @@
 ---
 title: 'Vista Resumen: vista de contención de recursos | Microsoft Docs'
+description: La vista Resumen muestra información sobre los eventos de la aplicación en el que se suspendió un proceso o subproceso mientras esperaba el acceso a un recurso.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 185345c13134f4d2ec6086e6a66183e044c577ba
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 40d922d8728e53d0098ad67c8b8140f9045c32b0
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74771453"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722651"
 ---
 # <a name="summary-view---resource-contention-view"></a>Vista Resumen: vista de contención de recursos
 La vista Resumen muestra información sobre los eventos de la aplicación en el que se suspendió un proceso o subproceso mientras esperaba el acceso a un recurso.
@@ -24,16 +25,16 @@ La vista Resumen muestra información sobre los eventos de la aplicación en el 
  Para obtener más información, incluyendo una descripción de los vínculos de notificación y las listas de informes, consulte [Vista Resumen](../profiling/summary-view.md).
 
 ## <a name="timeline-graph"></a>Gráfico de escala de tiempo
- El gráfico de escala de tiempo en la vista Resumen muestra el número de eventos de contención de la aplicación de la que se generan perfiles durante el tiempo que se generaron perfiles. Puede usar el gráfico de escala de tiempo para filtrar la vista en un intervalo de tiempo seleccionado. Para obtener más información, consulte [Cómo: Filtrar vistas de informe desde la escala de tiempo de resumen](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).
+ El gráfico de escala de tiempo en la vista Resumen muestra el número de eventos de contención de la aplicación de la que se generan perfiles durante el tiempo que se generaron perfiles. Puede usar el gráfico de escala de tiempo para filtrar la vista en un intervalo de tiempo seleccionado. Para obtener más información, vea [Cómo: Filtrar vistas de informe desde la escala de tiempo de resumen](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).
 
 ## <a name="most-contended-resources"></a>Recursos más contenidos
  **Recursos más contenidos** enumera los recursos de la aplicación que provocaron más eventos de contención. Puede hacer clic en un nombre de recurso para mostrar la vista Contenciones. La vista Contenciones proporciona una escala de tiempo detallada de las contenciones de recursos por subproceso.
 
  **Recursos más contenidos** incluye los siguientes datos para cada recurso.
 
-|Columna|Description|
+|Columna|Descripción|
 |------------|-----------------|
-|**Name**|Nombre del recurso.|
+|**Nombre**|Nombre del recurso.|
 |**Porcentaje de contenciones**|El porcentaje de todos los eventos de contención de los datos de generación de perfiles que eran contenciones de este recurso.|
 
 ## <a name="most-contended-thread"></a>Subprocesos más contenidos
@@ -41,8 +42,8 @@ La vista Resumen muestra información sobre los eventos de la aplicación en el 
 
  **Subprocesos más contenidos** incluye los siguientes datos para cada subproceso.
 
-|Columna|Description|
+|Columna|Descripción|
 |------------|-----------------|
-|**ID**|Identifiador del subproceso.|
-|**Name**|Nombre del proceso que posee el subproceso.|
+|**Id**|Identificador de subproceso.|
+|**Nombre**|Nombre del proceso que posee el subproceso.|
 |**Porcentaje de contenciones**|El porcentaje de todos los eventos de contención de los datos de generación de perfiles que eran contenciones de este recurso.|
