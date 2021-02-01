@@ -1,5 +1,7 @@
 ---
 title: Vista Funciones | Microsoft Docs
+description: Obtenga información sobre la vista Funciones del Explorador de rendimiento de Visual Studio. La vista Funciones muestra las funciones que se llaman durante la generación de perfiles.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f066d6c9476f0a44a23e59ff2b715a6df9975ba
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f85e8ddf17e220ff9235fd3d405a61b2efec16e5
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779199"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801233"
 ---
 # <a name="functions-view"></a>Vista Funciones
 La vista Funciones muestra las funciones que se llaman durante la generación de perfiles.
@@ -32,7 +34,7 @@ La vista Funciones muestra las funciones que se llaman durante la generación de
 
  Las columnas que están disponibles en la vista Funciones dependen del método de generación de perfiles (muestreo o instrumentación) usado para recopilar los datos y de si los datos de memoria de .NET se recopilaron en la ejecución de generación de perfiles.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Vista Funciones](../profiling/functions-view-sampling-data.md)
 - [Vista Funciones](../profiling/functions-view-instrumentation-data.md)
 - [Vista Funciones: instrumentación](../profiling/functions-view-dotnet-memory-instrumentation-data.md)

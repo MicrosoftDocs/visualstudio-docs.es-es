@@ -1,5 +1,7 @@
 ---
 title: CvReleaseMarkerSeries (función) | Microsoft Docs
+description: Consulte la información de referencia de la función del SDK CvReleaseMarkerSeries (biblioteca de C) del visualizador de simultaneidad.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84db5dac77fbbc51c9f1c0e24173dcc8ca1d68c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a69f60a991b9d88e6969992edbfe8eabdb7bd116
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85332190"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686459"
 ---
 # <a name="cvreleasemarkerseries-function"></a>Función CvReleaseMarkerSeries
 Libera la serie de marcadores. No utilice el objeto de la serie de marcadores después de liberar la aplicación; de lo contrario, la aplicación podría bloquearse. Si no se puede liberar la serie de marcadores, se produce una pérdida de memoria.
@@ -39,5 +41,5 @@ HRESULT CvReleaseMarkerSeries(
 ## <a name="requirements"></a>Requisitos
  **Encabezado:** *cvmarkers.h*
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Referencia de la biblioteca C++](../profiling/cpp-library-reference.md)

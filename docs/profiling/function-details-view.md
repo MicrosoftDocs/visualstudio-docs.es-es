@@ -1,5 +1,7 @@
 ---
 title: Vista Detalles de la función | Microsoft Docs
+description: En el Explorador de rendimiento, obtenga información sobre la ventana de la vista Detalles de la función, el gráfico de barras Distribución del costo, la tabla Detalles de rendimiento de la función y la ventana Vista de código de función.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fa53ba1d2e805f744d6a817c65b77428d757a25
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 6e812f0fdef46d0ac5ef42788c2f854922a7375c
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85536999"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801261"
 ---
 # <a name="function-details-view"></a>Vista Detalles de la función
 La ventana de **Vista Detalles de la función** muestra la siguiente información:

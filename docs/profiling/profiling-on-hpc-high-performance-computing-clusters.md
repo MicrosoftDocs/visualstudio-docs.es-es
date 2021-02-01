@@ -1,5 +1,6 @@
 ---
 title: Generar perfiles en clústeres HPC (Sistemas de alto rendimiento) | Microsoft Docs
+description: Obtenga más información sobre cómo puede generar perfiles en nodos de ejecución de clústeres de Microsoft Windows HPC usando el método de muestreo de las Herramientas de generación de perfiles de Visual Studio.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +21,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f2d3949194dedab6d7e7ea2faa1aea304d889bc4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 06a160adda25debe21d8262d9064c23849011dc9
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74772125"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720532"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>Generar perfiles en clústeres HPC (informática de alto rendimiento)
 
@@ -54,8 +55,8 @@ Para generar perfiles en un nodo de ejecución HPC, debe hacer lo siguiente:
 | | |
 |------------------| - |
 | *%HeadNode%* | Nombre del nodo principal del clúster. |
-| *%FxPath%* | Ruta de acceso al instalador de .NET Framework 4. En el medio de instalación de Visual Studio, la ruta de acceso es: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe |
-| *%ProfilerPath%* | Ruta de acceso a la versión independiente del instalador de las herramientas de generación de perfiles. En el medio de instalación de Visual Studio, la ruta de acceso es: Standalone Profiler\x64\vs_profiler.exe |
+| *%FxPath%* | Ruta de acceso al instalador de .NET Framework 4. En el soporte de instalación de Visual Studio, la ruta de acceso es: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe |
+| *%ProfilerPath%* | Ruta de acceso a la versión independiente del instalador de las herramientas de generación de perfiles. En el soporte de instalación de Visual Studio la ruta de acceso es: Standalone Profiler\x64\vs_profiler.exe |
 
 ## <a name="profile-on-an-hpc-compute-node"></a>Generación de perfiles en un nodo de ejecución HPC
 
@@ -69,9 +70,9 @@ Configure una sesión de generación de perfiles mediante el Asistente de rendim
 
    - Para generar perfiles de un proyecto que está abierto actualmente en [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], seleccione la opción **Uno o más proyectos disponibles** y después el nombre del proyecto de la lista.
 
-   - Para generar perfiles de un binario que no está en un proyecto abierto, seleccione la opción **Un archivo ejecutable (un archivo .EXE)** .
+   - Para generar perfiles de un binario que no está en un proyecto abierto, seleccione la opción **Un archivo ejecutable (un archivo .EXE)**.
 
-4. Haga clic en **Siguiente**.
+4. Haga clic en **Next**.
 
 5. En la tercera página del asistente:
 
@@ -83,7 +84,7 @@ Configure una sesión de generación de perfiles mediante el Asistente de rendim
 
     - En **Ubicación de implementación**, especifique la ruta de acceso al directorio que el servidor HPC usa para organizar las imágenes para la implementación.
 
-6. Haga clic en **Siguiente**.
+6. Haga clic en **Next**.
 
 7. En la cuarta página del asistente:
 
@@ -97,13 +98,13 @@ Configure una sesión de generación de perfiles mediante el Asistente de rendim
 
          Para generar perfiles del proceso o procesos que se ejecutan en un nodo concreto del clúster HPC, seleccione la opción **Perfil en el nodo** y después el nodo de la lista desplegable.
 
-8. Haga clic en **Siguiente**.
+8. Haga clic en **Next**.
 
 9. En la quinta página del asistente, puede elegir iniciar inmediatamente el generador de perfiles y el proceso de generación de perfiles o iniciar la generación de perfiles más tarde mediante el Explorador de rendimiento.
 
     - Seleccione **Iniciar la generación de perfiles cuando finalice el asistente** para empezar a generar perfiles inmediatamente o desactive la casilla para empezar a generar perfiles manualmente.
 
-10. Haga clic en **Finalizar**.
+10. Haga clic en **Finalizar**
 
 ## <a name="set-hpc-profiling-properties-by-using-performance-session-property-pages"></a>Establecer las propiedades de generación de perfiles de HPC usando las páginas de propiedades de la sesión de rendimiento
 
@@ -125,7 +126,7 @@ Puede cambiar las propiedades de la sesión de rendimiento que estableció en el
 
 ### <a name="hpc-launch-properties"></a>Propiedades de inicio de HPC
 
-|Propiedad.|Descripción|
+|Propiedad|Descripción|
 |--------------|-----------------|
 |**Nodo principal**|Especifica el equipo que actúa como el nodo principal de HPC en la generación de perfiles.|
 |**Número de procesos**|Especifica el número de instancias de la aplicación que se ejecutan en la aplicación perfilada.|
@@ -136,11 +137,11 @@ Puede cambiar las propiedades de la sesión de rendimiento que estableció en el
 
 ### <a name="advanced-properties"></a>Propiedades avanzadas
 
-| Propiedad. | Descripción |
+| Propiedad | Descripción |
 |---------------------------------------| - |
 | **Nombre del proyecto** | Muestra el nombre del proyecto o la solución de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] actual. |
 | **Limpiar cuando se detenga el generador de perfiles** | Cuando es true, quita los binarios que se han implementado en el directorio de ejecución. Los archivos y directorios creados por el programa de usuario no se quitan en este paso. Si el directorio de ejecución y el de implementación fueron creados por el IDE, el IDE intentará quitarlos, pero no podrá hacerlo si tienen archivos no implementados por el IDE. |
-| **Archivos adicionales para implementar** | Especifica una lista separada por puntos y comas de los archivos adicionales para implementar en el nodo de ejecución. Puede hacer clic en el botón de puntos suspensivos ( **...** ) para seleccionar varios archivos mediante un cuadro de diálogo. |
+| **Archivos adicionales para implementar** | Especifica una lista separada por puntos y comas de los archivos adicionales para implementar en el nodo de ejecución. Puede hacer clic en el botón de puntos suspensivos (**...**) para seleccionar varios archivos mediante un cuadro de diálogo. |
 | **Comando Mpiexec** | Especifica la aplicación que inicia la aplicación de MPI. El valor predeterminado es **mpiexec.exe** |
 | **Argumentos Mpiexec** | Especifica los argumentos para pasar al comando de mpiexec.exe. |
 | **Nodos solicitados en el clúster** | Especifica el número de nodos en el clúster en los que se va a ejecutar la aplicación. |

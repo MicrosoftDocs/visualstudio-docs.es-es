@@ -1,5 +1,6 @@
 ---
 title: Establecer opciones generales de sesión de rendimiento | Microsoft Docs
+description: Obtenga más información sobre cómo establecer el método de recopilación y las convenciones de nomenclatura de los datos de la generación de perfiles para una sesión de rendimiento de las Herramientas de generación de perfiles.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 698905f5e924bd8ddd424207a508ceaa4562ec57
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 2691d9d8868343291f3be4d9f5b3002e24605b85
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85544474"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720194"
 ---
 # <a name="set-general-performance-session-options"></a>Establecer opciones generales de sesión de rendimiento
 

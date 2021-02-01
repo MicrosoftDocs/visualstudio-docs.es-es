@@ -1,5 +1,6 @@
 ---
 title: Vista Subprocesos del Visualizador de simultaneidad | Microsoft Docs
+description: Obtenga información sobre cómo en la vista de subprocesos puede identificar qué subprocesos ejecutan código durante un segmento de ejecución.
 ms.date: 11/04/2018
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4382a21a68848a758f3d4cd37a8528722927691c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 619e76b3db67314119782ebc3010465ac7fa622f
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62973764"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722729"
 ---
 # <a name="threads-view-in-the-concurrency-visualizer"></a>Vista Subprocesos del Visualizador de simultaneidad
 
@@ -128,7 +129,7 @@ La pestaña **Informe de perfil** muestra informes de las categorías y los vín
 
 - **Resumen por subproceso** Seleccione **Resumen por subproceso** para ver un gráfico que muestra el estado de los subprocesos del intervalo de tiempo seleccionado. Las columnas codificadas por colores muestran el tiempo total que cada subproceso ha estado en ejecución, bloqueado, en E/S y en otros estados. Los subprocesos se etiquetan en la parte inferior. Al ajustar el nivel de zoom en el gráfico de escala de tiempo, este gráfico se actualiza automáticamente.
 
-  En algunos niveles de zoom, es posible que algunos subprocesos no se muestren en el gráfico. Si sucede eso, aparecen puntos suspensivos ( **...** ) a la derecha. Si el subproceso que desea no aparece, puede ocultar otros subprocesos. Para obtener más información, vea [Informe de resumen por subproceso](../profiling/per-thread-summary-report.md).
+  En algunos niveles de zoom, es posible que algunos subprocesos no se muestren en el gráfico. Si sucede eso, aparecen puntos suspensivos (**...**) a la derecha. Si el subproceso que desea no aparece, puede ocultar otros subprocesos. Para obtener más información, vea [Informe de resumen por subproceso](../profiling/per-thread-summary-report.md).
 
 - **Operaciones en disco** Seleccione **Operaciones en disco** para mostrar los procesos y subprocesos implicados en la E/S de disco del proceso actual, los archivos que han modificado (por ejemplo, archivos DLL cargados), cuántos bytes leen y otra información. Puede usar este informe para evaluar el tiempo invertido en acceder a archivos durante la ejecución, especialmente si el proceso parece estar enlazado a E/S. Para obtener más información, vea [Informe de operaciones en disco](../profiling/disk-operations-report-threads-view.md).
 
@@ -138,5 +139,5 @@ Esta pestaña muestra la pila de llamadas para un punto seleccionado en un segme
 ### <a name="unblocking-stack-tab"></a>Pestaña Pila de desbloqueo
 Esta pestaña muestra qué subproceso ha desbloqueado el subproceso seleccionado y la pila de llamadas de desbloqueo.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Visualizador de simultaneidad](../profiling/concurrency-visualizer.md)

@@ -1,5 +1,7 @@
 ---
 title: Referencia de la biblioteca C++ | Microsoft Docs
+description: Vea esta sección para obtener información de referencia sobre el SDK del visualizador de simultaneidad.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,16 +12,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d15b749d0564010cf6a67527f456a76a9db885cc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: efe02bbd2e31792e1feb306ba331fa3bc4f736f9
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329193"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723015"
 ---
 # <a name="c-library-reference"></a>Referencia de la biblioteca C++
 
-Esta sección contiene información de referencia para el SDK del Visualizador de simultaneidad.
+Esta sección contiene información de referencia para el SDK del visualizador de simultaneidad.
 
 > [!NOTE]
 > El estándar del lenguaje C++ reserva el uso de los identificadores que comienzan con un carácter de subrayado (`_`) para implementaciones como bibliotecas. No utilice nombres que comiencen por un carácter de subrayado en el código. El comportamiento de los elementos de código cuyos nombres siguen esta convención no está garantizado y está sujeto a cambios en el futuro. Por estos motivos, dichos elementos de código se omiten de esta documentación.

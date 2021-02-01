@@ -1,5 +1,6 @@
 ---
 title: VSInstr | Microsoft Docs
+description: Obtenga información sobre cómo se usa la herramienta VSInstr para instrumentar archivos binarios y otras de sus opciones.
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -18,12 +19,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: fc68ad7da06a1710e3c34ddb601155fc3d0b1182
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 576e83e5440607b06aca1b80171f8ca30d716e24
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85330508"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723119"
 ---
 # <a name="vsinstr"></a>VSInstr
 La herramienta VSInstr se usa para instrumentar archivos binarios. Se invoca mediante la siguiente sintaxis:

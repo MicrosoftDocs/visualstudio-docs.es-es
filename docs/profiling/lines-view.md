@@ -1,5 +1,6 @@
 ---
 title: Vista Líneas | Microsoft Docs
+description: Obtenga información sobre cómo la vista Líneas está disponible solo para los datos del generador de perfiles recopilados mediante el método de muestreo.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 25dbb0beb600f7f043ae006e09ac48b9b64d613b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ac0d7785071e5f2928e7eabb4a29b1655b42c5ad
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74773986"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721299"
 ---
 # <a name="lines-view"></a>Vista Líneas
 La vista Líneas está disponible solo para los datos del generador de perfiles recopilados mediante el método de muestreo. La vista no está disponible para los datos recopilados mediante instrumentación.
@@ -43,7 +44,7 @@ La vista Líneas está disponible solo para los datos del generador de perfiles 
 
 - El carácter en la línea de origen donde finaliza la instrucción.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Vista Líneas](../profiling/lines-view-sampling-data.md)
 - [Vista Líneas: muestreo](../profiling/lines-view-dotnet-memory-sampling-data.md)
 - [Vista Líneas](../profiling/lines-view-contention-data.md)

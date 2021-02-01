@@ -1,5 +1,7 @@
 ---
 title: CvCreateDefaultMarkerSeriesOfDefaultProvider (función) | Microsoft Docs
+description: Consulte la información de referencia de la función del SDK CvCreateDefaultMarkerSeriesOfDefaultProvider (biblioteca de C) del visualizador de simultaneidad.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 560ecc3d66dc2bc84d2ef301654b392aee6a42b4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0802b91bb9cbbbe31cb156104bb7b5df3fda1282
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85332223"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686186"
 ---
 # <a name="cvcreatedefaultmarkerseriesofdefaultprovider-function"></a>Función CvCreateDefaultMarkerSeriesOfDefaultProvider
 Crea la serie de marcadores predeterminados de un proveedor predeterminado.
@@ -42,5 +44,5 @@ HRESULT CvCreateDefaultMarkerSeriesOfDefaultProvider(
 ## <a name="requirements"></a>Requisitos
  **Encabezado:** *cvmarkers.h*
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Referencia de la biblioteca C++](../profiling/cpp-library-reference.md)

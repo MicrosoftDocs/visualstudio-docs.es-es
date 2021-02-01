@@ -1,5 +1,7 @@
 ---
 title: CvCreateMarkerSeries (función) | Microsoft Docs
+description: Consulte la información de referencia de la función del SDK CvCreateMarkerSeries (biblioteca de C) del visualizador de simultaneidad.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc44e9e1a9a1d17d3f5b0f31515e2402e9512c55
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a80d833396644fa6c2a025dc24b6db473b2b393
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85332213"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686173"
 ---
 # <a name="cvcreatemarkerseries-function"></a>Función CvCreateMarkerSeries
 Crea series de marcadores para un proveedor determinado.
@@ -39,11 +41,11 @@ _Check_return_ HRESULT CvCreateMarkerSeriesA(
 ```
 
 #### <a name="parameters"></a>Parámetros
- `pProvider` Objeto de proveedor inicializado anteriormente por CvInitProvider. No puede ser nulo.
+ `pProvider` Objeto de proveedor inicializado anteriormente por CvInitProvider. No puede ser NULL.
 
  `pSeriesName` Nombre de la serie de marcador. No puede ser nulo, pero se permite una cadena vacía.
 
- `ppMarkerSeries` Dirección de una variable de salida que almacenará el contexto de la serie de marcador. No puede ser nulo.
+ `ppMarkerSeries` Dirección de una variable de salida que almacenará el contexto de la serie de marcador. No puede ser NULL.
 
 ## <a name="return-value"></a>Valor devuelto
  S_OK cuando la serie de marcador se crea correctamente, o código de error en caso de que se hayan producido errores. Utilice macros SUCCEEDED/FAILED para comprobar si existe una condición de error.
@@ -55,5 +57,5 @@ _Check_return_ HRESULT CvCreateMarkerSeriesA(
 
  **ANSI:** CvCreateMarkerSeriesA
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Referencia de la biblioteca C++](../profiling/cpp-library-reference.md)

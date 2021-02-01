@@ -1,5 +1,7 @@
 ---
 title: Actividad de GPU (paginación) | Microsoft Docs
+description: Revise los segmentos GPU Activity (Paging) (Actividad de GPU [Paginación]) en la pestaña Threads (Subprocesos) del visualizador de simultaneidad. Los segmentos representan los tiempos en los que la GPU estaba procesando solicitudes de paginación.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,17 +13,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bd28c7b41a01992ad52fa343b098b0a02460806
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2bdf1fcffad90155baba8f92d11e31d1b316710b
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62969620"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801182"
 ---
 # <a name="gpu-activity-paging"></a>Actividad de GPU (Paginación)
-Los segmentos **Actividad de GPU (paginación)** en la pestaña **Subprocesos**  representan los momentos en que la GPU estaba procesando solicitudes de paginación.  La longitud de un segmento representa la cantidad de tiempo que la GPU estuvo procesando un paquete de paginación de acceso a memoria directa (DMA). Normalmente, los paquetes de paginación se asocian a la transferencia de memoria entre la CPU y la GPU.
+Los segmentos **Actividad de GPU (paginación)** en la pestaña **Subprocesos** representan los momentos en que la GPU estaba procesando solicitudes de paginación.  La longitud de un segmento representa la cantidad de tiempo que la GPU estuvo procesando un paquete de paginación de acceso a memoria directa (DMA). Normalmente, los paquetes de paginación se asocian a la transferencia de memoria entre la CPU y la GPU.
 
  Al seleccionar este tipo de segmento de paginación de GPU, el informe en la pestaña **Actual** muestra información sobre el paquete de DMA que se procesó. La información incluye la cantidad de tiempo que ha esperado en la cola de hardware asociada al motor de DirectX, el proceso que envió el paquete de DMA y el tiempo necesario para procesar el paquete.
 
-## <a name="see-also"></a>Vea también
-- [Vista Utilización](../profiling/utilization-view.md)
+## <a name="see-also"></a>Consulte también
+- [Vista de utilización](../profiling/utilization-view.md)

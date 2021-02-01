@@ -1,5 +1,6 @@
 ---
 title: Vista Interacciones de capas | Microsoft Docs
+description: Obtenga información sobre cómo la generación de perfiles de interacción de capas proporciona detalles sobre los tiempos de ejecución de las funciones de aplicaciones de varias capas que se comunican con bases de datos.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,14 +13,14 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d188d6c3268c8ee9f066eba1b6a57e469f34a78e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9021f814f093151c6d65beaececc0fa99a662d44
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778146"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722521"
 ---
-# <a name="tier-interactions-view"></a>Interacciones de capas (Vista)
+# <a name="tier-interactions-view"></a>Interacciones de capas (vista)
 
 La generación de perfiles de interacción de capas proporciona información adicional sobre los tiempos de ejecución de funciones de aplicaciones de varias capas que se comunican con las bases de datos a través de servicios de [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)]. Los datos se recopilan solamente para las llamadas a funciones sincrónicas.
 
@@ -37,9 +38,9 @@ La vista de interacciones muestra datos de interacción de capas en dos paneles:
 
 ## <a name="master-pane"></a>Panel principal
 
-|Columna|Description|
+|Columna|Descripción|
 |------------|-----------------|
-|**Name**|- Para una fila de nivel superior, el nombre de la página web o del proceso del que se generaron perfiles.<br />- Para una fila de conexión de base de datos, el nombre del servidor que hospeda la base de datos.|
+|**Nombre**|- Para una fila de nivel superior, el nombre de la página web o del proceso del que se generaron perfiles.<br />- Para una fila de conexión de base de datos, el nombre del servidor que hospeda la base de datos.|
 |**Base de datos**|El nombre de la base de datos (solo filas de conexión de base de datos).|
 |**Recuento**|El número total de solicitudes generadas por el proceso, la página web o la conexión de base de datos.|
 |**Tiempo total transcurrido**|El tiempo total dedicado a ejecutar cualquier solicitud del proceso, la página web o la conexión de base de datos.|
@@ -49,7 +50,7 @@ La vista de interacciones muestra datos de interacción de capas en dos paneles:
 
 ## <a name="database-connection-details-pane"></a>Panel Detalles de conexión de la base de datos
 
-|Columna|Description|
+|Columna|Descripción|
 |------------|-----------------|
 |**Texto de comando**|La consulta SQL de la solicitud.|
 |**Número de consultas**|El número de veces que se ejecutó la consulta.|

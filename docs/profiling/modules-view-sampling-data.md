@@ -1,5 +1,6 @@
 ---
 title: 'Vista Módulos: datos de muestreo | Microsoft Docs'
+description: Obtenga información sobre cómo la vista Módulos de los datos de muestreo muestra datos de rendimiento agrupados por los módulos de los que se han tomado muestras en los datos de generación de perfiles.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,24 +13,24 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ead219ddf482af5917842118d386c6fefe67973
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0de246e5ecdc51ff6471eeed242d638fee261c8c
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74772719"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722963"
 ---
 # <a name="modules-view---sampling-data"></a>Vista Módulos: datos de muestreo
 La vista Módulos de datos de muestro muestra datos de rendimiento agrupados por los módulos de los que se toman muestras en los datos de generación de perfiles. Cada módulo es la raíz de un árbol jerárquico. Las funciones del módulo de las que se toman muestras se enumeran bajo el nodo de módulo.
 
 > [!NOTE]
-> Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 requirieron cambios significativos en la forma en que el generador de perfiles de Visual Studio recopila datos en estas plataformas. Las aplicaciones para UWP también requieren nuevas técnicas de recolección. Consulte [Generar perfiles de aplicaciones de Windows 8 y Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
+> Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 requirieron cambios significativos en la forma en que el generador de perfiles de Visual Studio recopila datos en estas plataformas. Las aplicaciones para UWP también requieren nuevas técnicas de recopilación. Consulte [Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 
  Si la función se estaba ejecutando cuando se recopilaron las muestras (es decir, si la función estaba en la parte superior de la pila de llamadas), las líneas de código fuente y las direcciones de instrucción que se estaban ejecutando aparecen debajo del nodo de función. Dado que cuando se ejecuta la línea o la instrucción, se recopilan datos de una línea de código fuente o un puntero de instrucción, los valores inclusivos y exclusivos siempre son los mismos para los datos de línea y de instrucción.
 
-|Columna|Description|
+|Columna|Descripción|
 |------------|-----------------|
-|**Name**|El nombre del módulo, función, número de línea o dirección del puntero de instrucción.|
+|**Nombre**|El nombre del módulo, función, número de línea o dirección del puntero de instrucción.|
 |**Identificador del proceso**|Identificador de proceso (PID) de la ejecución de generación de perfiles.|
 |**Nombre del proceso**|Nombre del proceso.|
 |**Nombre del módulo**|Nombre del módulo que contiene la función, línea o dirección del puntero de instrucción.|
@@ -41,7 +42,7 @@ La vista Módulos de datos de muestro muestra datos de rendimiento agrupados por
 |**Muestras exclusivas**|-   Para una función, el número de muestras de la pila de llamadas en las que se estaba ejecutando directamente esta función, es decir, el número de muestras en las que esta función estaba en la parte superior de la pila de llamadas.<br />-   Para un módulo, la suma de muestras exclusivas de las funciones del módulo.<br />-   Para una línea o instrucción, el número de muestras en las que se estaba ejecutando esta línea o instrucción.|
 |**Porcentaje de muestras exclusivas**|-   Para una función o un módulo, el porcentaje de todas las muestras de la generación de perfiles que fueron muestras exclusivas de esta función o módulo.<br />-   Para una línea o instrucción, el porcentaje de todas las muestras de la generación de perfiles en las que se estaba ejecutando esta línea o instrucción.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Vista Módulos: muestreo](../profiling/modules-view-dotnet-memory-sampling-data.md)
 - [Vista Módulos: instrumentación](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
 - [Vista Módulos](../profiling/modules-view-instrumentation-data.md)

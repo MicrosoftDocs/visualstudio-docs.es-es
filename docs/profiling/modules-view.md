@@ -1,5 +1,6 @@
 ---
 title: Vista Módulos | Microsoft Docs
+description: Obtenga información sobre cómo en la vista Módulos se enumeran los módulos de los datos de generación de perfiles. Cada módulo es el nodo raíz de un árbol jerárquico.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 89d9146b3f724b4883f21a43689a495eef252777
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d0ff17c128af78c1772ad85597153332a0848062
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778523"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722950"
 ---
 # <a name="modules-view"></a>Vista Módulos
 En la vista Módulos se enumeran los módulos de los datos de generación de perfiles. Cada módulo es el nodo raíz de un árbol jerárquico. Las funciones del módulo para las que se generan perfiles se enumeran debajo del nodo de módulo. Si los datos de generación de perfiles se han recopilado mediante el método de muestreo, la información de la línea se enumera debajo del nodo de función y los datos del puntero de instrucción se muestran debajo del nodo de línea.
@@ -31,7 +32,7 @@ En la vista Módulos se enumeran los módulos de los datos de generación de per
 
  Las columnas que están disponibles en la vista Módulos dependen del método de generación de perfiles (muestreo o instrumentación) usado para recopilar los datos y de si los datos de memoria de .NET se han recopilado en la ejecución de generación de perfiles.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Vista Módulos](../profiling/modules-view-sampling-data.md)
 - [Vista Módulos](../profiling/modules-view-instrumentation-data.md)
 - [Vista Módulos: instrumentación](../profiling/modules-view-dotnet-memory-instrumentation-data.md)

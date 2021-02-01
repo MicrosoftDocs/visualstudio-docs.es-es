@@ -1,5 +1,6 @@
 ---
 title: Introducción a los valores de datos de muestreo | Microsoft Docs
+description: Obtenga más información sobre cómo el método de generación de perfiles de muestreo de las Herramientas de generación de perfiles de Visual Studio interrumpe el procesador del equipo a intervalos establecidos y recopila la pila de llamadas de las funciones.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 289f92deaceca32a44249ed77c17187743a34fa4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 81efd0f20ba971555ec8c1333dfc322112f13e17
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778055"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722170"
 ---
 # <a name="understand-sampling-data-values"></a>Introducción a los valores de datos de muestreo
 
@@ -50,7 +51,7 @@ El porcentaje del número total de muestras inclusivas de la generación de perf
 
 El porcentaje del número total de muestras exclusivas de la generación de perfiles que son muestras exclusivas de la función o el rango de datos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Cómo: Elegir métodos de recopilación](../profiling/how-to-choose-collection-methods.md)
 [Analizar datos de herramientas de rendimiento](../profiling/analyzing-performance-tools-data.md)

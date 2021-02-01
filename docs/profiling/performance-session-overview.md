@@ -1,5 +1,6 @@
 ---
 title: Información general sobre las sesiones de rendimiento | Microsoft Docs
+description: Obtenga información sobre cómo usar las herramientas de rendimiento para optimizar la productividad rápidamente y aumentar el rendimiento del código.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e7b23a7cbefeace19a3deaa5c1bfc05580081d39
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1fcccf6a68afa26d8fe9ab5e5a4f40466822c689
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778471"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723275"
 ---
 # <a name="performance-session-overview"></a>Información general sobre las sesiones de rendimiento
 Esta introducción explica los conceptos básicos de la generación de perfiles. Los desarrolladores que no tienen experiencia en el trabajo de rendimiento verán cómo las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pueden ayudarles a ser productivos rápidamente y a aumentar el rendimiento de su código. Los desarrolladores con experiencia en la generación de perfiles pueden obtener una visión general de las características específicas y procesos de las herramientas.
@@ -74,6 +75,6 @@ Esta introducción explica los conceptos básicos de la generación de perfiles.
 ## <a name="generate-a-report-of-the-results"></a>Generar un informe de los resultados
  Puede pegar filas de cualquier vista de informe de rendimiento en mensajes de correo electrónico y hojas de cálculo, y puede generar informes que contengan los datos para una o más vistas.
 
-## <a name="see-also"></a>Vea también
-- [Información general](../profiling/overviews-performance-tools.md)
+## <a name="see-also"></a>Consulte también
+- [Temas de introducción](../profiling/overviews-performance-tools.md)
 - [Tutorial: Identificación de problemas de rendimiento](beginners-guide-to-cpu-sampling.md)

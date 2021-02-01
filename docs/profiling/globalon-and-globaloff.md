@@ -1,5 +1,7 @@
 ---
 title: GlobalOn y GlobalOff | Microsoft Docs
+description: Revise las opciones GlobalOn y GlobalOff en VSPerfCmd.exe. Estas opciones pausan y reanudan la generación de perfiles de procesos y subprocesos en una sesión de generación de perfiles de la línea de comandos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 24b0ed68-d19e-473e-9af3-252c11d82bcf
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 518f41557809cdeaaae9f9e1ac79e3797a854395
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: eaeac096c6bdff77368508bd34276d66530fa739
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74776971"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801343"
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn y GlobalOff
 Las opciones **GlobalOff** y **GlobalOn** de *VSPerfCmd.exe* pausan y reanudan la generación de perfiles para todos los procesos y subprocesos de una sesión de generación de perfiles de la línea de comandos.

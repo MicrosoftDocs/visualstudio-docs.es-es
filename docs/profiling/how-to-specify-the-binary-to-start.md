@@ -1,5 +1,6 @@
 ---
 title: Especificar el binario de inicio | Microsoft Docs
+description: Obtenga más información sobre cómo debe escribir información en el cuadro de diálogo Páginas de propiedades <Target> para generar perfiles de archivos binarios, como los archivos DLL.
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b3aec9448c6493350683dc9f0bec0cc2d60fa82
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 715c92a26ae33a4e909ec737c866be1cdc15251e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851338"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721845"
 ---
 # <a name="how-to-specify-the-binary-to-start"></a>Procedimiento Especificar el binario de inicio
 

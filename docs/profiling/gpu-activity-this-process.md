@@ -1,5 +1,7 @@
 ---
 title: Actividad de GPU (este proceso) | Microsoft Docs
+description: Obtenga información sobre los segmentos GPU Activity (This Process) (Actividad de GPU [Este proceso]) en la vista Threads (Subprocesos) del visualizador de simultaneidad.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68e85fc44977a3d9756965de12e25d13d62dbb89
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fcfc96f9b29b8fae3bf9a97273ed6c675d1655fb
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62969543"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801174"
 ---
 # <a name="gpu-activity-this-process"></a>Actividad GPU (Este proceso)
 Los segmentos **Actividad de GPU (este proceso)** en la vista de subprocesos del visualizador de simultaneidad representan los momentos en que la GPU estaba procesando solicitudes en nombre de otros procesos del sistema. Estas solicitudes se envían a la GPU como paquetes de acceso a memoria directa (DMA). La longitud de un segmento representa el tiempo que la GPU estaba procesando un paquete de DMA en nombre del proceso actual.

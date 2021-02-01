@@ -1,5 +1,7 @@
 ---
 title: Recopilar datos de seguimiento de eventos para Windows (ETW) | Microsoft Docs
+description: Obtenga información sobre cómo usar Seguimiento de eventos para Windows (ETW) para determinar dónde se producen problemas de rendimiento en la aplicación. Los datos se consultan con VSPerfReport.exe.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: fc5f1877ff6530dbe0bbc888824a6ae60215eca1
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 853e27c51b626ef63a7e0924d4c0164a6386cda2
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851273"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801553"
 ---
 # <a name="how-to-collect-event-tracing-for-windows-etw-data"></a>Procedimiento Recopilar datos de seguimiento de eventos para Windows (ETW)
 

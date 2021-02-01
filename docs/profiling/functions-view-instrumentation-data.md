@@ -1,5 +1,7 @@
 ---
 title: 'Vista Funciones: datos de instrumentación | Microsoft Docs'
+description: Lea las descripciones de las columnas de datos de la generación de perfiles en la vista de informe Funciones, que muestra los datos de la generación de perfiles por nombre de función.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 423b6d61af93c37e6fa83549ed3fa5d422128165
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2b12fc05f9eeb9b77e982c62ae52bfbbe784f5e6
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779225"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801363"
 ---
 # <a name="functions-view---instrumentation-data"></a>Vista Funciones: datos de instrumentación
 En la vista del informe de funciones se enumeran los datos de generación de perfiles por nombre de la función.
@@ -27,14 +29,14 @@ En la vista del informe de funciones se enumeran los datos de generación de per
 |Columna|Descripción|
 |------------|-----------------|
 |**Nombre de la función**|Nombre de la función.|
-|**Dirección de la función**|Dirección de la función.|
+|**Dirección de función**|Dirección de la función.|
 |**Número de línea de la función**|Número de línea del inicio de esta función en el archivo de origen.|
 |**Número de llamadas**|Número total de llamadas realizadas a esta función.|
-|**Archivo de código fuente**|Archivo de origen que contiene la definición de esta función.|
+|**Archivo de origen**|Archivo de origen que contiene la definición de esta función.|
 |**Nombre del módulo**|Nombre del módulo que contiene la función.|
 |**Ruta de acceso del módulo**|Ruta de acceso del módulo que contiene la función.|
 |**Identificador del proceso**|Identificador de proceso (PID) de la ejecución de generación de perfiles.|
-|**Nombre de proceso**|Nombre del proceso.|
+|**Nombre del proceso**|Nombre del proceso.|
 |**Sobrecarga de tiempo exclusiva por sondeos**|Sobrecarga de tiempo para esta función debida a la instrumentación. No incluye la sobrecarga de las funciones a las que llamó la función. La sobrecarga por sondeos se ha restado de todos los tiempos exclusivos.|
 |**Sobrecarga de tiempo inclusiva por sondeos**|Sobrecarga de tiempo para esta función y sus funciones secundarias debida a la instrumentación. Incluye la sobrecarga de las funciones a las que llamó la función. La sobrecarga por sondeos se ha restado de todos los tiempos inclusivos.|
 
@@ -47,7 +49,7 @@ En la vista del informe de funciones se enumeran los datos de generación de per
 |**Porcentaje de tiempo inclusivo transcurrido**|El porcentaje de tiempo inclusivo transcurrido total de la ejecución de generación de perfiles que se ha empleado en el tiempo inclusivo transcurrido de esta función.|
 |**Promedio de tiempo inclusivo transcurrido**|Promedio de tiempo inclusivo transcurrido de una llamada a esta función.|
 |**Tiempo inclusivo máximo transcurrido**|Tiempo inclusivo máximo transcurrido de una llamada a esta función.|
-|**Tiempo inclusivo transcurrido mínimo**|Tiempo inclusivo mínimo transcurrido de una llamada a esta función.|
+|**Tiempo inclusivo mínimo transcurrido**|Tiempo inclusivo mínimo transcurrido de una llamada a esta función.|
 
 ## <a name="elapsed-exclusive-values"></a>Valores de tiempo exclusivo transcurrido
  Los valores exclusivos transcurridos indican el tiempo que una función estaba ejecutando código en el cuerpo de la función, es decir, cuando la función estaba en la parte superior de la pila de llamadas. Incluye el tiempo dedicado a llamadas al sistema operativo, como modificadores de contexto y operaciones de E/S, pero no incluye el tiempo dedicado a funciones a las que llamó la función.
@@ -57,7 +59,7 @@ En la vista del informe de funciones se enumeran los datos de generación de per
 |**Tiempo exclusivo transcurrido**|Tiempo exclusivo total transcurrido para todas las llamadas a esta función.|
 |**Porcentaje de tiempo exclusivo transcurrido**|El porcentaje de tiempo exclusivo transcurrido de la generación de perfiles que se ha empleado en el tiempo exclusivo transcurrido total de esta función.|
 |**Promedio de tiempo exclusivo transcurrido**|Promedio de tiempo exclusivo transcurrido de una llamada a esta función.|
-|**Tiempo exclusivo transcurrido máximo**|Tiempo exclusivo máximo transcurrido de una llamada a esta función.|
+|**Tiempo exclusivo máximo transcurrido**|Tiempo exclusivo máximo transcurrido de una llamada a esta función.|
 |**Tiempo exclusivo mínimo transcurrido**|Tiempo exclusivo mínimo transcurrido de una llamada a esta función.|
 
 ## <a name="application-inclusive-values"></a>Valores de tiempo inclusivo de aplicación
@@ -80,9 +82,9 @@ En la vista del informe de funciones se enumeran los datos de generación de per
 |**Porcentaje de tiempo exclusivo de aplicación**|El porcentaje de tiempo exclusivo transcurrido total de la ejecución de generación de perfiles que se ha empleado en el tiempo exclusivo de aplicación total de esta función.|
 |**Promedio de tiempo exclusivo de aplicación**|El promedio de tiempo exclusivo de aplicación de una llamada a esta función.|
 |**Tiempo exclusivo de aplicación máximo**|El tiempo exclusivo de aplicación máximo de una llamada a esta función.|
-|**Tiempo exclusivo mínimo de aplicación**|El tiempo exclusivo de aplicación mínimo de una llamada a esta función.|
+|**Tiempo exclusivo de aplicación mínimo**|El tiempo exclusivo de aplicación mínimo de una llamada a esta función.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Cómo: Personalizar las columnas de la vista de informes](../profiling/how-to-customize-report-view-columns.md)
 - [Vista Funciones](../profiling/functions-view-sampling-data.md)
 - [Vista Funciones: muestreo](../profiling/functions-view-dotnet-memory-sampling-data.md)

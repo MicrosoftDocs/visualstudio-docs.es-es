@@ -1,6 +1,7 @@
 ---
 title: Advertencias de VSInstr | Microsoft Docs
 ms.date: 11/04/2016
+description: Obtenga información sobre las advertencias emitidas por la herramienta VSInstr.exe y cómo puede usar la opción NOWARN junto con los números de advertencia para evitar que aparezca la advertencia.
 ms.topic: reference
 helpviewer_keywords:
 - instrumentation, VSInstr tool
@@ -15,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3af98372102da49e7553d2f2992f3804cf0a619e
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: d5510c475ab566e65d2bd152136535fde62f257b
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85330540"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723132"
 ---
 # <a name="vsinstr-warnings"></a>Advertencias de VSInstr
 En la tabla siguiente se muestran las advertencias emitidas por la herramienta *VSInstr.exe*. Para evitar que aparezca una advertencia, utilice su número con la opción NOWARN.

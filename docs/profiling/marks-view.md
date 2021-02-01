@@ -1,5 +1,6 @@
 ---
 title: Vista Marcas | Microsoft Docs
+description: Obtenga más información sobre cómo se muestran en la vista Marcas los eventos de ETW y muestreo que se insertaron en la aplicación.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d7483f309a3d7edb92d25c34e9665a6212c8038
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 969bf0debfc1da9f7ca1763d8c9c001d565ce64a
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037522"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718985"
 ---
 # <a name="marks-view"></a>Vista Marcas
 En la vista Marcas se muestran eventos ETW y de muestreo que se insertaron en la aplicación.
@@ -40,7 +41,7 @@ En la vista Marcas se muestran eventos ETW y de muestreo que se insertaron en la
 
  Datos del contador de rendimiento de Windows Cuando se recopilan los datos del contador de rendimiento de Windows, los valores se muestran en una columna que tiene el nombre del contador.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Información general sobre el informe de rendimiento](../profiling/performance-report-overview.md)
 - [Cómo: Recopilar datos de contadores de Windows](../profiling/how-to-collect-windows-counter-data.md)
 - [&#91;NIB&#93; Control de recolección de datos (ventana)](/previous-versions/bb385767(v=vs.110))

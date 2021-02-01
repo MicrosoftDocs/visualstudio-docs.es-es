@@ -1,5 +1,7 @@
 ---
 title: CvWriteFlag (función) | Microsoft Docs
+description: Consulte la información de referencia de la función del SDK CvWriteFlag del visualizador de simultaneidad (biblioteca de C).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 396edc736f61ae76aab7263bcd15bb0bfad13204
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7b3c82a84e9a6523a0a969639f26b28d64cdfc9e
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85332153"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686472"
 ---
 # <a name="cvwriteflag-function"></a>Función CvWriteFlag
 Escribe una marca en el archivo de seguimiento del visualizador de simultaneidad.
@@ -69,9 +71,9 @@ HRESULT CvWriteFlagExVA(
 
  `level` Nivel de importancia.
 
- `pMarkerSeries` Contexto de la serie de marcador válido. No puede ser nulo.
+ `pMarkerSeries` Contexto de la serie de marcador válido. No puede ser NULL.
 
- `pMessage` Cadena de formato de mensaje. No puede ser nulo.
+ `pMessage` Cadena de formato de mensaje. No puede ser NULL.
 
 ## <a name="return-value"></a>Valor devuelto
  S_OK cuando el mensaje se ha escrito correctamente. Código de error en caso de que se hayan producido errores. Utilice macros SUCCEEDED/FAILED para comprobar si existe una condición de error.
@@ -83,5 +85,5 @@ HRESULT CvWriteFlagExVA(
 
  <strong>ANSI:</strong>CvWriteFlagExA, CvWriteFlagExVA
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Referencia de la biblioteca C++](../profiling/cpp-library-reference.md)

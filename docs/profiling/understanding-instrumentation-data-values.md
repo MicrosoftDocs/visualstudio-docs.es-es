@@ -1,5 +1,6 @@
 ---
 title: Introducción a los valores de datos de instrumentación | Microsoft Docs
+description: Obtenga información sobre cómo el método de generación de perfiles de instrumentación registra información de tiempo detallada para llamadas a funciones, líneas e instrucciones de la aplicación de la que se ha generado el perfil.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dace7b13816c63664ccb4dabfed52d1c5fb7523
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f2f049ccb40d2d34c22fddbf841e36bd513db80f
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778081"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722352"
 ---
 # <a name="understand-instrumentation-data-values"></a>Introducción a los valores de datos de instrumentación
 
@@ -96,7 +97,7 @@ El porcentaje de los valores de tiempo inclusivo de aplicación total de la sesi
 
 100 * tiempo exclusivo de aplicación de función / tiempo inclusivo de aplicación de sesión
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Analizar datos de herramientas de rendimiento](../profiling/analyzing-performance-tools-data.md)
 [ Elegir métodos de recopilación](../profiling/how-to-choose-collection-methods.md)
