@@ -1,5 +1,6 @@
 ---
 title: Asociación del generador de perfiles a una aplicación nativa y recopilación de datos de simultaneidad
+description: Use las herramientas de línea de comandos de las Herramientas de generación de perfiles de Visual Studio para asociar el generador de perfiles a una aplicación independiente nativa (C/C++) en ejecución y obtener datos de contención de subprocesos.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a853a8ff3d8ecdc89316edafc927ec93096f720f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: fd06783f50708e13c97f7bfe00a22be26739fd9c
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811063"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801633"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line"></a>Procedimiento para asociar el generador de perfiles a una aplicación nativa independiente y recopilar datos de simultaneidad mediante la línea de comandos
 En este tema se describe cómo usar las herramientas de línea de comandos de las Herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para adjuntar el generador de perfiles a una aplicación independiente nativa (C/C++) en ejecución y recopilar datos de contención de subprocesos.

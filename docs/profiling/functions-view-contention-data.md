@@ -1,5 +1,7 @@
 ---
 title: 'Vista Funciones: datos de contención | Microsoft Docs'
+description: Obtenga información sobre la vista de datos de contención del informe Funciones, que enumera las funciones en la ejecución de la generación de perfiles que no se han podido ejecutar durante la ejecución de la generación de perfiles.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5874ffc7b4d304d1eaacd78032d657fe6ff31d94
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 07f23e38a0d2bc7b538bbe42818ce8a8a2f3d2c1
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74780057"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801663"
 ---
 # <a name="functions-view---contention-data"></a>Vista Funciones: datos de contención
 La vista de informe Funciones de datos de contención enumera las funciones en la ejecución de generación de perfiles a las que se les ha impedido la ejecución durante la ejecución de generación de perfiles.
@@ -29,7 +31,7 @@ La vista de informe Funciones de datos de contención enumera las funciones en l
 |**Porcentaje de tiempo de bloqueo exclusivo**|Porcentaje de tiempo de bloqueo exclusivo de esta función con respecto al tiempo de bloqueo total de la ejecución de generación de perfiles.|
 |**Contenciones exclusivas**|Número de veces en las que esta función no pudo ejecutar código en el cuerpo de la función. No se incluyen las contenciones en las funciones a las que ha llamado la función.|
 |**Porcentaje de contenciones exclusivas**|Porcentaje de contenciones exclusivas de esta función con respecto a todas las contenciones en la ejecución de generación de perfiles.|
-|**Dirección de la función**|Dirección de la función.|
+|**Dirección de función**|Dirección de la función.|
 |**Nombre de la función**|El nombre completo de la función.|
 |**Tiempo de bloqueo inclusivo**|Tiempo durante el cual esta función o una función llamada por esta función no pudieron ejecutarse.|
 |**Porcentaje de tiempo de bloqueo inclusivo**|Porcentaje de tiempo de bloqueo inclusivo de esta función o módulo con respecto al tiempo de bloqueo total de la ejecución de generación de perfiles.|
@@ -39,8 +41,8 @@ La vista de informe Funciones de datos de contención enumera las funciones en l
 |**Nombre del módulo**|Nombre del módulo que contiene la función.|
 |**Ruta de acceso del módulo**|Ruta de acceso del módulo que contiene la función.|
 |**Identificador del proceso**|El Id. del proceso (PID) en el que se estaba ejecutando la función.|
-|**Nombre de proceso**|Nombre del proceso.|
-|**Archivo de código fuente**|Archivo de origen que contiene la definición de esta función.|
+|**Nombre del proceso**|Nombre del proceso.|
+|**Archivo de origen**|Archivo de origen que contiene la definición de esta función.|
 
 ## <a name="see-also"></a>Vea también
 - [Cómo: Personalizar las columnas de la vista de informes](../profiling/how-to-customize-report-view-columns.md)

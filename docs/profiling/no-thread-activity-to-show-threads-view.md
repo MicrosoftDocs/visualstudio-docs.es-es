@@ -1,5 +1,6 @@
 ---
 title: No hay actividades de subprocesos que mostrar (Vista de subprocesos) | Microsoft Docs
+description: Obtenga más información sobre la vista de subprocesos, en la que no hay ninguna actividad que mostrar en el intervalo de tiempo visible actualmente.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91cc840a69135edf59603ba62d15985eb541df0e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 27298b03a03edf99a12a6d067a22ca8ba17faef0
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62794473"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722885"
 ---
 # <a name="no-thread-activity-to-show-threads-view"></a>No hay actividades de subprocesos que mostrar (vista de subprocesos)
 En esta área se muestran datos sobre los subprocesos que no están ocultos en el intervalo de tiempo visible actualmente.
@@ -33,4 +34,4 @@ En esta área se muestran datos sobre los subprocesos que no están ocultos en e
 - Asegúrese de que Reducción de nodos irrelevantes está establecida en un umbral bajo.
 
 ## <a name="see-also"></a>Vea también
-- [Vista Subprocesos](../profiling/threads-view-parallel-performance.md)
+- [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)

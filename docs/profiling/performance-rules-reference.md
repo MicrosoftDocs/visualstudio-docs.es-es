@@ -1,5 +1,6 @@
 ---
 title: Referencia de reglas de rendimiento | Microsoft Docs
+description: Obtenga información sobre cómo las reglas de rendimiento de las Herramientas de generación de perfiles proporcionan advertencias adicionales e información sobre el rendimiento de la aplicación.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 59fc9424-76ca-4365-ae47-bb14a736c9c2
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5280226aaba40de42052d72e58928a53af53f631
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: ca20a6a1ad687fde432d0b748aa8b87c823a1da2
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85543642"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723288"
 ---
 # <a name="performance-rules-reference"></a>Referencia de reglas de rendimiento
 Las reglas de rendimiento de las herramientas de generación de perfiles proporcionan advertencias adicionales e información sobre el rendimiento de la aplicación. Las reglas de rendimiento analizan los datos en un proceso de generación de perfiles recopilados de orígenes como los contadores de rendimiento de procesador y de Windows. Los mensajes de regla aparecen en la ventana Salida de error del entorno de desarrollo integrado de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Los mensajes se muestran con uno de los siguientes niveles de regla:

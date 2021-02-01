@@ -1,5 +1,7 @@
 ---
 title: Actividad de GPU (otros procesos) | Microsoft Docs
+description: Obtenga información sobre los segmentos GPU Activity (Other Processes) (Actividad de GPU [Otros procesos]) en la vista Threads (Subprocesos) del visualizador de simultaneidad.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a502590c20fce1455d9259ae681178d9cd48e33
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 71ecb1587545120aef8e18ce847d5e957f3e3cdd
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62969507"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801315"
 ---
 # <a name="gpu-activity-other-processes"></a>Actividad GPU (Otros procesos)
 Los segmentos **Actividad de GPU (otros procesos)** en la vista de subprocesos del visualizador de simultaneidad representan los momentos en que la GPU estaba procesando solicitudes en nombre de otros procesos del sistema. Estas solicitudes se envían a la GPU como paquetes de acceso a memoria directa (DMA).  La longitud de un segmento representa la cantidad de tiempo que la GPU ha procesado el paquete.

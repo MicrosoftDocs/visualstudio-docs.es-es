@@ -1,5 +1,6 @@
 ---
 title: Visualizar eventos EventSource como marcadores | Microsoft Docs
+description: Obtenga información sobre cómo el visualizador de simultaneidad puede mostrar eventos EventSource como marcadores y cómo el usuario puede controlar el modo de mostrar los marcadores.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3a10022a-5c37-48b1-a833-dd35902176b6
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd6339b3f55b4a4c9a1e2c90ff3183a36f16c178
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6f8fadf9ef97717983c96226d81d43efada65e89
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "64811549"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723145"
 ---
 # <a name="visualize-eventsource-events-as-markers"></a>Visualizar eventos EventSource como marcadores
 El visualizador de simultaneidad puede mostrar eventos EventSource como marcadores, y puede controlar cómo se muestran los marcadores. Para ver los marcadores de EventSource, registre el GUID del proveedor de ETW mediante el cuadro de diálogo [Configuración avanzada](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md). El visualizador de simultaneidad tiene convenciones predeterminadas para representar eventos de EventSource como [marcadores de marca](../profiling/flag-markers.md), [marcadores de intervalo](../profiling/span-markers.md) y [marcadores de mensaje](../profiling/message-markers.md). Puede personalizar cómo se muestran los eventos EventSource agregando campos personalizados a los eventos. Para obtener más información sobre los marcadores, consulte [Marcadores del visualizador de simultaneidad](../profiling/concurrency-visualizer-markers.md). Para obtener más información sobre eventos EventSource, consulte <xref:System.Diagnostics.Tracing>.
@@ -29,7 +30,7 @@ El visualizador de simultaneidad puede mostrar eventos EventSource como marcador
 
 3. En los demás casos, el evento se trata como un mensaje.
 
-### <a name="importance"></a>Importancia
+### <a name="importance"></a>importancia
  La siguiente tabla define cómo se asigna el nivel de evento a la importancia de marcador.
 
 |Nivel ETW|Importancia del visualizador de simultaneidad|
@@ -42,10 +43,10 @@ El visualizador de simultaneidad puede mostrar eventos EventSource como marcador
 |win:Verbose|Bajo|
 |Mayor que win:verbose|Bajo|
 
-### <a name="series-name"></a>Nombre de serie
+### <a name="series-name"></a>Nombre de la serie
  El nombre de la tarea del evento se usa para el nombre de la serie. El nombre de la serie está vacío si no se definió ninguna tarea para el evento.
 
-### <a name="category"></a>Categoría
+### <a name="category"></a>Category
  Si el Level es win:Critical o win:Error, la categoría es Alert (-1). De lo contrario, la categoría es el valor predeterminado (0).
 
 ### <a name="text"></a>Texto
@@ -59,13 +60,13 @@ El visualizador de simultaneidad puede mostrar eventos EventSource como marcador
 
 |Valor cvType|Tipo de marcador resultante|
 |------------------|---------------------------|
-|0|Mensaje|
+|0|Message|
 |1|Inicio de intervalo|
 |2|Final de intervalo|
 |3|Marcar|
-|Todos los demás valores|Mensaje|
+|Todos los demás valores|Message|
 
-### <a name="importance"></a>Importancia
+### <a name="importance"></a>importancia
  Puede usar el campo `cvImportance`, un byte, para controlar la configuración de la importancia de un evento EventSource. Sin embargo, se recomienda controlar la importancia mostrada de un evento mediante su Level.
 
 |Valor cvImportance|Importancia del visualizador de simultaneidad|
@@ -78,10 +79,10 @@ El visualizador de simultaneidad puede mostrar eventos EventSource como marcador
 |5|Bajo|
 |Todos los demás valores|Bajo|
 
-### <a name="series-name"></a>Nombre de serie
+### <a name="series-name"></a>Nombre de la serie
  Utilice el campo de evento `cvSeries`, una cadena, para controlar el nombre de la serie que el visualizador de simultaneidad proporciona a un evento EventSource.
 
-### <a name="category"></a>Categoría
+### <a name="category"></a>Category
  Utilice el campo `cvCategory`, un byte, para controlar la categoría que el visualizador de simultaneidad proporciona a un evento EventSource.
 
 ### <a name="text"></a>Texto
@@ -93,5 +94,5 @@ El visualizador de simultaneidad puede mostrar eventos EventSource como marcador
 > [!NOTE]
 > Para usar SpanID para anidar intervalos, permita que se superpongan en el mismo subproceso o no permita que se inicien en un subproceso terminen en otro.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Marcadores del Visualizador de simultaneidad](../profiling/concurrency-visualizer-markers.md)

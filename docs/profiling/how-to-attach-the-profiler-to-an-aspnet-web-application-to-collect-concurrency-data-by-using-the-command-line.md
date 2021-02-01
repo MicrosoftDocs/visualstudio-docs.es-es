@@ -1,5 +1,6 @@
 ---
 title: Asociación del generador de perfiles a ASP.NET para recopilar datos de simultaneidad
+description: Use las herramientas de línea de comandos de las Herramientas de generación de perfiles de Visual Studio para asociar el generador de perfiles a una aplicación ASP.NET y recopilar datos de simultaneidad de procesos y subprocesos.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 939cf4eb16ff685b8ba8dc19064f497f3f7c6464
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 4a4f83cbff6e12798649ce34c109786e71a56c28
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90807994"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801615"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>Procedimiento para adjuntar el generador de perfiles a una aplicación web ASP.NET para recopilar datos de simultaneidad mediante la línea de comandos
 

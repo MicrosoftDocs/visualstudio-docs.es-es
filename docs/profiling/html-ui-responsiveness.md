@@ -1,5 +1,6 @@
 ---
 title: Análisis de la capacidad de respuesta de la IU HTML en aplicaciones de UWP | Microsoft Docs
+description: Obtenga más información sobre cómo aislar los problemas de rendimiento en las aplicaciones mediante el generador de perfiles de la capacidad de respuesta de la interfaz de usuario, una herramienta de rendimiento disponible para las aplicaciones universales de Windows.
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -17,12 +18,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 9fdc2b7fc459d655748444759913cab903dfe782
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6545fb206096c7b74a7016b506ae3bcade7f136c
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331411"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721884"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Análisis de la capacidad de respuesta de la IU HTML en aplicaciones de UWP
 En este tema, se describe cómo aislar los problemas de rendimiento en las aplicaciones mediante el generador de perfiles de la capacidad de respuesta de la interfaz de usuario, una herramienta de rendimiento disponible para las aplicaciones universales de Windows.
@@ -58,7 +59,7 @@ En este tema, se describe cómo aislar los problemas de rendimiento en las aplic
 
          Puedes usar esta opción para analizar el rendimiento de las aplicaciones que has instalado en el equipo cuando no tienes acceso al código fuente. Esta opción también es útil cuando solo deseas analizar el rendimiento de cualquier aplicación que no forma parte de tu trabajo de desarrollo de aplicaciones.
 
-3. En **Herramientas disponibles**, selecciona **Capacidad de respuesta de la IU de HTML**y elige **Iniciar**.
+3. En **Herramientas disponibles**, selecciona **Capacidad de respuesta de la IU de HTML** y elige **Iniciar**.
 
 4. Al iniciar el generador de perfiles de la capacidad de respuesta de la IU, puede aparecer una ventana de Control de cuentas de usuario que solicite tu permiso para ejecutar Visual Studio ETW Collector.exe. Elija **Sí**.
 
@@ -169,7 +170,7 @@ if (performance.mark && performance.measure) {
 
  ![Evento de medida de usuario en la vista de detalles de la escala de tiempo](../profiling/media/js_htmlvizprofiler_user_measure.png "JS_HTMLVizProfiler_User_Measure")
 
-## <a name="analyze-data"></a>Analizar datos
+## <a name="analyze-data"></a>Análisis de datos
  En las secciones siguientes se proporciona información para ayudar a interpretar los datos que aparecen en el generador de perfiles.
 
 ### <a name="view-the-diagnostic-session-timeline"></a><a name="Ruler"></a> Ver la escala de tiempo de la sesión de diagnóstico
@@ -188,7 +189,7 @@ if (performance.mark && performance.measure) {
 - Un evento de navegación, que se produce cuando navegas a otra página. La información sobre herramientas del evento muestra la dirección URL de la página de destino.
 
 ### <a name="view-cpu-utilization"></a><a name="CPUUtilization"></a> Ver uso de CPU
- El gráfico de uso de CPU te permite identificar los períodos de tiempo en los que hay una actividad excesiva de la CPU. Proporciona información sobre el promedio de consumo de CPU de la aplicación durante un período de tiempo. La información está codificada por colores para representar las categorías específicas siguientes: **Carga**, **Scripting**, recolección de elementos no utilizados (**GC**), **Aplicación de estilos**, **Representación**y **Descodificación de imágenes**. Para obtener más información sobre estas categorías, consulte [Profiler event reference](#profiler-event-reference) en este tema.
+ El gráfico de uso de CPU te permite identificar los períodos de tiempo en los que hay una actividad excesiva de la CPU. Proporciona información sobre el promedio de consumo de CPU de la aplicación durante un período de tiempo. La información está codificada por colores para representar las categorías específicas siguientes: **Carga**, **Scripting**, recolección de elementos no utilizados (**GC**), **Aplicación de estilos**, **Representación** y **Descodificación de imágenes**. Para obtener más información sobre estas categorías, consulte [Profiler event reference](#profiler-event-reference) en este tema.
 
  El gráfico de uso de CPU muestra la cantidad de tiempo empleado en todos los subprocesos de la aplicación, agrupando valores de uso de CPU de una o más CPU en un único valor de porcentaje. El valor de uso de CPU puede superar el cien por cien si se utilizan varias CPU.
 
@@ -325,7 +326,7 @@ if (performance.mark && performance.measure) {
 
   En esta tabla se muestran los eventos y sus descripciones:
 
-|evento|Categoría de eventos|Se produce cuando|
+|Evento|Categoría de eventos|Ocurre cuando|
 |-----------|--------------------|-----------------|
 |Análisis de CSS|Carga|Se encontró nuevo contenido de CSS y se intentó analizarlo.|
 |Análisis de HTML|Carga|Se encontró nuevo contenido HTML y se intentó analizarlo en nodos e insertarlo en el árbol DOM.|
@@ -357,5 +358,5 @@ if (performance.mark && performance.measure) {
 
 - Para obtener información sobre el modelo y rendimiento de ejecución de código uniproceso, consulte [Ejecución de código](/previous-versions/windows/apps/hh781217\(v\=win.10\)).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Primer vistazo a la generación de perfiles](../profiling/profiling-feature-tour.md)

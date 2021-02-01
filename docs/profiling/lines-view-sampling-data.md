@@ -1,5 +1,6 @@
 ---
 title: 'Vista Líneas: datos de muestreo | Microsoft Docs'
+description: Obtenga información sobre cómo la vista Líneas de los datos de muestreo enumera los datos de rendimiento de las instrucciones que se encontraban en ejecución al recopilar las muestras en la ejecución de generación de perfiles.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +12,18 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ff4d851937111400002de531696b9b69aec20ba9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 38ae3e9c40204082ea8791ddea4e92d77a0d311e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778588"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721325"
 ---
 # <a name="lines-view---sampling-data"></a>Vista Líneas: datos de muestreo
 La vista Líneas de datos de muestreo muestra los datos de rendimiento de las instrucciones que se estaban ejecutando cuando se recopilaron las muestras en la ejecución de generación de perfiles.
 
 > [!NOTE]
-> Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 requirieron cambios significativos en la forma en que el generador de perfiles de Visual Studio recopila datos en estas plataformas. Las aplicaciones para UWP también requieren nuevas técnicas de recolección. Consulte [Generar perfiles de aplicaciones de Windows 8 y Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
+> Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 requirieron cambios significativos en la forma en que el generador de perfiles de Visual Studio recopila datos en estas plataformas. Las aplicaciones para UWP también requieren nuevas técnicas de recopilación. Consulte [Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 
  En un archivo de origen, una instrucción puede abarcar más de una línea y una sola línea puede incluir más de una instrucción. Una instrucción se identifica mediante lo siguiente:
 
@@ -42,7 +43,7 @@ La vista Líneas de datos de muestreo muestra los datos de rendimiento de las in
 
   Por definición, una instrucción no llama a otras funciones. Por lo tanto, se muestran solo los valores exclusivos.
 
-|Columna|Description|
+|Columna|Descripción|
 |------------|-----------------|
 |**Identificador del proceso**|Identificador de proceso (PID) de la ejecución de generación de perfiles.|
 |**Nombre del proceso**|Nombre del proceso.|
@@ -60,5 +61,5 @@ La vista Líneas de datos de muestreo muestra los datos de rendimiento de las in
 |**Muestras exclusivas**|El número total de muestras recopiladas cuando la línea de la función se estaba ejecutando.|
 |**Porcentaje de muestras exclusivas**|El porcentaje de todas las muestras que se recopilaron durante la generación de perfiles mientras se ejecutaba la línea de la función.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Vista Líneas: muestreo](../profiling/lines-view-dotnet-memory-sampling-data.md)

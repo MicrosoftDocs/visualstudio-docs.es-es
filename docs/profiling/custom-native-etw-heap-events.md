@@ -1,5 +1,7 @@
 ---
 title: Eventos de montón ETW nativos personalizados | Microsoft Docs
+description: Obtenga más información sobre cómo usar un montón personalizado para reducir la sobrecarga de asignación, pero sin dejar de proporcionar información de asignación al generador de perfiles de memoria con el fin de poder analizar la asignación.
+ms.custom: SEO-VS-2020
 ms.date: 02/24/2017
 ms.topic: conceptual
 ms.assetid: 668a6603-5082-4c78-98e6-f3dc871aa55b
@@ -10,12 +12,12 @@ dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1bb6f906cbfb715d67f6e10ddcecf094bc25821f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 61005bf108d0dab16ec419e942e3da97e02cdc7f
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62552962"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686329"
 ---
 # <a name="custom-native-etw-heap-events"></a>Eventos de montón ETW nativos personalizados
 
@@ -49,7 +51,7 @@ En una instantánea de la herramienta [Uso de memoria](../profiling/memory-usage
 
 ![Asignación del montón de Windows](media/heap-example-windows-heap.png)
 
-Mediante los pasos siguientes, podemos usar esta misma herramienta para realizar un seguimiento del uso de memoria en el montón personalizado.
+Con los pasos siguientes, podemos usar esta misma herramienta para realizar un seguimiento del uso de memoria en el montón personalizado.
 
 ## <a name="how-to-use"></a>Cómo se usa
 
@@ -90,7 +92,7 @@ Esta biblioteca se puede usar fácilmente en C y C++.
    pHeapTracker->AllocateEvent(memPtr, size);
    ```
 
-   o
+   or
 
    ```C
    VSHeapTrackerAllocateEvent(hHeapTracker, memPtr, size);
@@ -135,7 +137,7 @@ Esta biblioteca se puede usar fácilmente en C y C++.
    CloseHeapTracker(hHeapTracker);
    ```
 
-## <a name="track-memory-usage"></a>Realizar un seguimiento del uso de la memoria
+## <a name="track-memory-usage"></a>Seguimiento de uso de la memoria
 Una vez realizadas estas llamadas, se puede realizar un seguimiento del uso del montón personalizado mediante la herramienta estándar **Uso de memoria** en Visual Studio.  Para obtener más información sobre cómo usar esta herramienta, vea la documentación sobre el [uso de memoria](../profiling/memory-usage.md). Asegúrese de que ha habilitado la generación de perfiles de montón con instantáneas. En caso contrario, no verá el uso del montón personalizado.
 
 ![Habilitar la generación de perfiles de montón](media/heap-enable-heap.png)
@@ -155,6 +157,6 @@ Al igual que en el montón de Windows estándar, también puede usar esta herram
 > [!TIP]
 > Visual Studio también contiene la herramienta **Uso de memoria** en el conjunto de herramientas **Generación de perfiles de rendimiento**, que se habilita en la opción de menú **Depurar** > **Generador de perfiles de rendimiento** o mediante la combinación de teclado **Alt**+**F2**.  Esta característica no incluye el seguimiento del montón y no mostrará el montón personalizado como se describe aquí.  Esta funcionalidad solo está incluida en la ventana **Herramientas de diagnóstico**, que se puede habilitar en el menú **Depurar** > **Windows** > **Mostrar herramientas de diagnóstico** o mediante la combinación de teclado **Ctrl**+**Alt**+**F2**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 [Un primer vistazo a las herramientas de generación de perfiles](../profiling/profiling-feature-tour.md)
 [Uso de memoria](../profiling/memory-usage.md)

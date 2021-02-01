@@ -1,5 +1,6 @@
 ---
 title: Valores de datos de asignación de memoria y duración de objetos
+description: Obtenga más información sobre cómo el método de generación de perfiles de asignación de memoria de .NET recopila información sobre el tamaño y número de objetos que se crearon en una asignación.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b3f7f6785b1a1693e0b041e64a0d507281926d3
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 8a811206db28ab6ba2193e57cd2e53f94c91971c
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189827"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722326"
 ---
 # <a name="understand-memory-allocation-and-object-lifetime-data-values"></a>Descripción de los valores de datos de asignación de memoria y duración de objetos
 

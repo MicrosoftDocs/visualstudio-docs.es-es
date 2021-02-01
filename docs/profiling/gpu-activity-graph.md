@@ -1,5 +1,7 @@
 ---
 title: Gráfico de actividad de GPU | Microsoft Docs
+description: Entienda el gráfico GPU Activity (Actividad de GPU), que muestra el nivel de actividad de DirectX del sistema en el visualizador de simultaneidad.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5734b9eb1b4307f7c32dcb8a170f7c6c571f46ca
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: bccf4869a1197306017b443b00670cc123300a48
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62969571"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801325"
 ---
 # <a name="gpu-activity-graph"></a>Gráfico de actividad de GPU
 El gráfico de actividad de GPU en el visualizador de simultaneidad muestra el nivel de actividad de DirectX en el sistema, medido por el número de motores de DirectX que se utilizan con el tiempo.  El gráfico no muestra qué motores específicos se utilizaron.  Se considera que un motor está en uso si está procesando cualquier trabajo de GPU.
@@ -27,5 +29,5 @@ El gráfico de actividad de GPU en el visualizador de simultaneidad muestra el n
 
  El color blanco indica la disponibilidad de los motores de DirectX no utilizados en el sistema. Estos motores están disponibles para su proceso si puede encontrar más oportunidades de explotarlos. Algunos motores solo pueden utilizarse para determinados tipos de tareas.
 
-## <a name="see-also"></a>Vea también
-- [Vista Utilización](../profiling/utilization-view.md)
+## <a name="see-also"></a>Consulte también
+- [Vista de utilización](../profiling/utilization-view.md)

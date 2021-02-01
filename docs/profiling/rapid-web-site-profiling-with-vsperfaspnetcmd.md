@@ -1,5 +1,6 @@
 ---
 title: Generación rápida de perfiles de sitio web con VSPerfASPNETCmd | Microsoft Docs
+description: Obtenga más información sobre cómo la herramienta de línea de comandos VSPerfASPNETCmd le permite generar perfiles fácilmente para aplicaciones web de ASP.NET.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: fff2486c4197cbbe28c3b5deb0099e264805e12b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a08604b95f49f55a5fea254447046d305d8feff9
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74771697"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720428"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Generación rápida de perfiles de sitio web con VSPerfASPNETCmd
 
@@ -40,15 +41,15 @@ Para generar perfiles de una aplicación web de [!INCLUDE[vstecasp](../code-qual
 ## <a name="to-collect-application-statistics-by-using-the-sampling-method"></a>Para recopilar estadísticas de aplicación mediante el método de muestreo
  El muestreo es el método predeterminado de generación de perfiles de la herramienta **VSPerfASPNETCmd** y no tiene que especificarse en la línea de comandos. La siguiente línea de comandos recopila estadísticas de aplicación de la aplicación web especificada:
 
- **vsperfaspnetcmd** *websiteUrl*
+ **vsperfaspnetcmd**  *websiteUrl*
 
- Un ejemplo de una *websiteUrl* hospedada en un servidor local podría ser *http://localhost/MySite/default.aspx* . Un ejemplo de sitio externo es *http://www.contoso.com* . Para más información, consulte las direcciones URL de ejemplo en [Para generar perfiles de un sitio web sin tener que abrir un proyecto en Visual Studio](how-to-collect-performance-data-for-a-web-site.md#to-profile-a-web-site-without-opening-a-project-in-visual-studio).
+ Un ejemplo de una *websiteUrl* hospedada en un servidor local podría ser *http://localhost/MySite/default.aspx*. Un ejemplo de sitio externo es *http://www.contoso.com* . Para más información, consulte las direcciones URL de ejemplo en [Para generar perfiles de un sitio web sin tener que abrir un proyecto en Visual Studio](how-to-collect-performance-data-for-a-web-site.md#to-profile-a-web-site-without-opening-a-project-in-visual-studio).
 
 ## <a name="to-collect-detailed-timing-data-by-using-the-instrumentation-method"></a>Para recopilar datos de intervalos mediante el método de instrumentación
 
 Use la siguiente línea de comandos para recopilar datos detallados de intervalos de una aplicación web de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilada dinámicamente:
 
-**vsperfaspnetcmd /trace** *websiteUrl*
+**vsperfaspnetcmd /trace**  *websiteUrl*
 
 Si quiere generar perfiles de archivos .*dll* compilados de forma estática en la aplicación web, debe instrumentar los archivos mediante el uso de la herramienta de línea de comandos [VSInstr](../profiling/vsinstr.md). El comando vsperfaspnetcmd /trace incluirá datos de los archivos instrumentados.
 
@@ -64,14 +65,14 @@ La opción **/Memory** recopila datos acerca de la asignación de objetos de mem
 
  También puede utilizar la opción **/Trace** para incluir información de tiempo detallada con los datos de memoria de .NET:
 
- **vsperfaspnetcmd /memory**[ **:lifetime**] **/trace**`websiteUrl`
+ **vsperfaspnetcmd /memory**[**:lifetime**] **/trace**`websiteUrl`
 
 ## <a name="to-collect-tier-interaction-data"></a>Para recopilar datos de interacción de capas
 
 > [!WARNING]
 > Los datos de generación de perfiles de interacción de capas (TIP) se pueden recopilar con cualquier edición de Visual Studio. Sin embargo, los datos de generación de perfiles de interacción de capas solo se pueden ver en Visual Studio Enterprise.
 >
-> Para recopilar datos de TIP en Windows 8 o Windows Server 2012, debe usar la opción de instrumentación ( **/trace**).
+> Para recopilar datos de TIP en Windows 8 o Windows Server 2012, debe usar la opción de instrumentación (**/trace**).
 
 Para recopilar datos de interacción de capas con datos de muestreo:
 
@@ -83,7 +84,7 @@ Para recopilar datos de interacción de capas con datos de instrumentación:
 
 Para recopilar datos de interacción de capas con datos de memoria de .NET:
 
-**vsperfaspnetcmd /memory**[ **:lifetime**] **/tip**_websiteUrl_
+**vsperfaspnetcmd /memory**[**:lifetime**] **/tip**_websiteUrl_
 
 ## <a name="use-the-nowait-option"></a>Usar la opción /NoWait
 
@@ -91,7 +92,7 @@ De forma predeterminada, el símbolo del sistema no se devuelve valores después
 
 Para iniciar la generación de perfiles:
 
-**vsperfaspnetcmd** [ */Options*] **/nowait**_websiteUrl_
+**vsperfaspnetcmd** [*/Options*] **/nowait**_websiteUrl_
 
 Para finalizar la generación de perfiles:
 

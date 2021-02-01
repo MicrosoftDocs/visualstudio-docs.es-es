@@ -1,5 +1,6 @@
 ---
 title: Tiempo de adelantamiento | Microsoft Docs
+description: Obtenga más información sobre el tiempo de adelantamiento y profundice en el hecho de que estos segmentos de la escala de tiempo están asociados al tiempo de bloqueo que se clasifica como adelantamiento.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de7a02f7247e09876bc4598d44fc1c395161ebc2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a102b11fdc7608b94b97105b061e28860f41a9a1
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62935898"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719518"
 ---
 # <a name="preemption-time"></a>Tiempo de adelantamiento
 Estos segmentos de la escala de tiempo están asociados al tiempo de bloqueo que se clasifica como Adelantamiento. Esta categoría implica que se sale de un subproceso debido a una de estas razones:
@@ -31,4 +32,4 @@ Estos segmentos de la escala de tiempo están asociados al tiempo de bloqueo que
   La información sobre herramientas de un segmento preferente muestra el nombre del proceso o subproceso que produjo el adelantamiento. Sin embargo, esto no implica que el proceso o subproceso que se adelantó se ejecutara durante todo el período de adelantamiento.
 
 ## <a name="see-also"></a>Vea también
-- [Vista Subprocesos](../profiling/threads-view-parallel-performance.md)
+- [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)

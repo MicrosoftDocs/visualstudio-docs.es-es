@@ -1,5 +1,6 @@
 ---
 title: Reglas de rendimiento de memoria y paginación | Microsoft Docs
+description: Obtenga más información sobre cómo las reglas de rendimiento en la categoría de paginación y memoria identifican la actividad de paginación en una generación de perfiles que puede afectar al rendimiento y la capacidad de respuesta de la aplicación.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f37972b2-efe4-4a1c-a5d1-a246ccd76817
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 716bc771310b73c8a0b11a97080184d9868fe91b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: e1cddda12fbb67f9b604186e754146558cdd62ee
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85535140"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720610"
 ---
 # <a name="memory-and-paging-performance-rules"></a>Reglas de rendimiento de memoria y paginación
 Las reglas de rendimiento en la categoría de paginación y memoria identifican la actividad de paginación en una generación de perfiles que puede afectar al rendimiento y la capacidad de respuesta de la aplicación.

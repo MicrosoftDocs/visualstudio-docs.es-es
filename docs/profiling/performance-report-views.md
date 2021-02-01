@@ -1,5 +1,6 @@
 ---
 title: Vistas de informes de rendimiento | Microsoft Docs
+description: Obtenga información sobre cómo las vistas de archivos de datos de generación de perfiles se muestran en el entorno de desarrollo integrado (IDE) de Visual Studio.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cfb0d9ae2d677b1cc9dc828ffaecd5c0f71bfd5b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 611c31027bd725d8a1a98e6cb2e76d544743c811
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74772293"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722755"
 ---
 # <a name="performance-report-views"></a>Vistas de informes de rendimiento
 Esta sección proporciona información de referencia para los informes y vistas de las Herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Las vistas de archivos de datos de generación de perfiles se muestran en el entorno de desarrollo integrado (IDE) de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. La herramienta de línea de comandos de [VSPerfReport](../profiling/vsperfreport.md) genera los informes.
@@ -52,5 +53,5 @@ Esta sección proporciona información de referencia para los informes y vistas 
 
  Información de referencia para la vista Interacción y el informe de los archivos de datos de generación de perfiles que incluyen datos de interacción de capas.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Análisis de datos de herramientas de rendimiento](../profiling/analyzing-performance-tools-data.md)

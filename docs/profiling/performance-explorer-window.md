@@ -1,5 +1,6 @@
 ---
 title: Ventana Explorador de rendimiento | Microsoft Docs
+description: Obtenga información sobre cómo la ventana Explorador de rendimiento del IDE de Visual Studio permite configurar sesiones de rendimiento mediante las Herramientas de generación de perfiles de Visual Studio.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a365892f606da90c608e43b7ccce73b902ec0e98
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 06d2b7e2ad5d5df4022dc78aa06315545d56c0ee
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74772444"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722820"
 ---
 # <a name="performance-explorer-window"></a>Ventana Explorador de rendimiento
 
@@ -50,7 +51,7 @@ La ventana **Explorador de rendimiento** contiene un control de árbol que muest
 
 - **Informes**: muestra los nombres de archivos de datos del generador de perfiles que se generan para la sesión. Haga clic con el botón derecho en **Informes** para agregar un informe existente o comparar dos archivos de datos del generador de perfiles. Haga clic con el botón derecho en un nombre de informe para abrir, quitar o exportar un archivo de datos del generador de perfiles.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Información general](../profiling/overviews-performance-tools.md)
 [Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)

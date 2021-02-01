@@ -1,5 +1,6 @@
 ---
 title: Tiempo de E/S (Vista de subprocesos) | Microsoft Docs
+description: Obtenga más información sobre cómo los segmentos de tiempo de E/S están asociados a tiempos de bloqueo que se clasifican como E/S, lo que significa que un subproceso está esperando a que finalice una operación de E/S.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,15 +13,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d7ba29383ddddc02160967a90b56046128d2f19
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 915ab6aef595fba7e13321d4e23c08bdd2eadaf3
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62995442"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721637"
 ---
 # <a name="io-time-threads-view"></a>Tiempo de E/S (Vista de subprocesos)
 Estos segmentos de la escala de tiempo están asociados a tiempos de bloqueo que se clasifican como E/S. Esto significa que un subproceso está esperando a que una operación de E/S finalice. El subproceso puede haberse bloqueado en una API o en una espera de kernel relacionada con una operación de E/S que el visualizador de simultaneidad identifica como E/S. Las API como `CreateFile()`, `ReadFile()`, y `WSARecv()` se incluyen en este grupo.
 
 ## <a name="see-also"></a>Vea también
-- [Vista Subprocesos](../profiling/threads-view-parallel-performance.md)
+- [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)

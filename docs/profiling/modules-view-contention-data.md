@@ -1,5 +1,6 @@
 ---
 title: 'Vista Módulos: datos de contención | Microsoft Docs'
+description: Obtenga información sobre cómo en la vista Módulos de los datos de contención se muestran datos de simultaneidad agrupados por los módulos de los que se han tomado muestras en los datos de generación de perfiles.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2de844867e9c0a8d95abdaa13f860a6487254bfe
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0640bc238bc300868d42aedc8905da8ffc97f65e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74780018"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723327"
 ---
 # <a name="modules-view---contention-data"></a>Vista Módulos: datos de contención
 En la vista Módulos de datos de contención se muestran datos de simultaneidad agrupados por los módulos de los que se toman muestras en los datos de generación de perfiles. Cada módulo es la raíz de un árbol jerárquico. Las funciones del módulo en el que se produjeron los eventos de contención se muestran debajo del nodo de módulo.
@@ -38,10 +39,10 @@ En la vista Módulos de datos de contención se muestran datos de simultaneidad 
 |**Número de línea de la función**|Número de línea del inicio de esta función en el archivo de origen.|
 |**Nombre del módulo**|Nombre del módulo que contiene la función, línea o dirección del puntero de instrucción.|
 |**Ruta de acceso del módulo**|La ruta de acceso del módulo que contiene el módulo, función, línea o dirección del puntero de instrucción.|
-|**Name**|Nombre del módulo o de la función.|
+|**Nombre**|Nombre del módulo o de la función.|
 |**Identificador del proceso**|Identificador de proceso (PID) de la ejecución de generación de perfiles.|
-|**Nombre de proceso**|Nombre del proceso.|
-|**Archivo de código fuente**|Archivo de origen que contiene la definición de esta función.|
+|**Nombre del proceso**|Nombre del proceso.|
+|**Archivo de origen**|Archivo de origen que contiene la definición de esta función.|
 
 ## <a name="see-also"></a>Vea también
 - [Cómo: Personalizar las columnas de la vista de informes](../profiling/how-to-customize-report-view-columns.md)
