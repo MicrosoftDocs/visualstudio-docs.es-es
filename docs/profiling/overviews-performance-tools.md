@@ -1,5 +1,6 @@
 ---
 title: Información general (herramientas de rendimiento) | Microsoft Docs
+description: Conozca los conceptos y la terminología de las Herramientas de generación de perfiles de Visual Studio. Use la información para medir las características de rendimiento de una aplicación en desarrollo.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: b877802d-c736-4047-821a-bd7733fff6de
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d284ffc6b850a9746cf1442f35400a18045bbe18
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d27f777b660b2ffc94c4b9b6f0b6ba55816d626b
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74772689"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722833"
 ---
 # <a name="overviews-performance-tools"></a>Información general (herramientas de rendimiento)
 Esta sección proporciona información sobre los conceptos y la terminología relacionados con las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], herramientas que le sirven para medir las características de rendimiento de una aplicación en desarrollo.

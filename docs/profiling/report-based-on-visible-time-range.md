@@ -1,5 +1,6 @@
 ---
 title: Informe basado en el intervalo de tiempo visible | Microsoft Docs
+description: Obtenga más información sobre cómo la vista Perfil muestra los informes que se basan en los canales y el intervalo de tiempo visible en ese momento.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,19 +13,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd4758f5484089e58f50462300f48f76f1538381
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 02dc0e009702b25c2204f0a1302931fe941b5f59
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "63002344"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720376"
 ---
 # <a name="report-based-on-visible-time-range"></a>Informe basado en el intervalo de tiempo visible
 La vista Perfil muestra los informes que se basan en los canales y el intervalo de tiempo visible en ese momento. Para ver detalles de los diferentes subconjuntos de datos, haga clic en los elementos de la leyenda.
 
  Puede encontrar más información sobre los datos de las tablas aquí.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [No hay actividad de subprocesos para mostrar](../profiling/no-thread-activity-to-show-threads-view.md)
 - [Informe del perfil de ejecución](../profiling/execution-profile-report.md)
 - [Hora de sincronización](../profiling/synchronization-time.md)
@@ -35,4 +36,4 @@ La vista Perfil muestra los informes que se basan en los canales y el intervalo 
 - [Tiempo de procesamiento de la interfaz de usuario](../profiling/ui-processing-time.md)
 - [Informe de operaciones en disco](../profiling/disk-operations-report-threads-view.md)
 - [Informe de resumen por subproceso](../profiling/per-thread-summary-report.md)
-- [Vista Subprocesos](../profiling/threads-view-parallel-performance.md)
+- [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)

@@ -1,5 +1,7 @@
 ---
 title: Recopilar datos de contadores de CPU | Microsoft Docs
+description: Obtenga información sobre cómo usar los contadores de eventos de CPU (hardware) para recopilar datos de rendimiento específicos de hardware. En este artículo se enumeran los distintos tipos de eventos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -13,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 96934250bc00b02630b60e83d50ed4b274db0323
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: e59214640ab3048f94b2801ad6b6b2d7e12d2e25
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851286"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801559"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>Procedimiento Recopilar datos de contadores de CPU
 
@@ -30,9 +32,9 @@ Se producen dos tipos de eventos de contador de CPU:
 
 - Eventos de plataforma: eventos de CPU que están asociados a una CPU específica.
 
-  Los eventos portátiles incluyen eventos generales, como instrucciones retiradas y ciclos no detenidos, eventos de búfer de la CPU, eventos de bifurcación y eventos de caché L2. El fabricante del procesador determina los contadores de eventos de plataforma disponibles.
+Los eventos portátiles incluyen eventos generales, como instrucciones retiradas y ciclos no detenidos, eventos de búfer de la CPU, eventos de bifurcación y eventos de caché L2. El fabricante del procesador determina los contadores de eventos de plataforma disponibles.
 
-  Las categorías de eventos pueden compartirse entre los contadores de eventos portátiles y de plataforma. Por ejemplo, las siguientes categorías de datos son con frecuencia comunes a ambos tipos:
+Las categorías de eventos pueden compartirse entre los contadores de eventos portátiles y de plataforma. Por ejemplo, las siguientes categorías de datos son con frecuencia comunes a ambos tipos:
 
 - Eventos de memoria.
 
@@ -40,7 +42,7 @@ Se producen dos tipos de eventos de contador de CPU:
 
 - Eventos de bifurcación.
 
-  Puede recopilar datos del contador de rendimiento de dos formas en el generador de perfiles:
+Puede recopilar datos del contador de rendimiento de dos formas en el generador de perfiles:
 
 - Recopilar datos de uno o más contadores al generar perfiles mediante la instrumentación.
 

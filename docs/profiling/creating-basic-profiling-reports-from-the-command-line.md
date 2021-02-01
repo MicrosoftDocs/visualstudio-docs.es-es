@@ -1,5 +1,6 @@
 ---
 title: 'Línea de comandos de generación de perfiles: creación de informes básicos'
+description: Obtenga más información sobre las opciones Summary y CallTrace de VSPerfReport.exe, que crean informes .csv (valores separados por comas) a partir de un archivo de datos de generación de perfiles .vps o .vsps.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c9ee74732c917ee4267e08f7ff1c60715971ed71
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 86c72f0281f459852b878f17687411ce87eb6978
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808856"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718946"
 ---
 # <a name="create-basic-profiling-reports-from-the-command-line"></a>Creación de informes básicos de generación de perfiles desde la línea de comandos
 En este artículo se describen los comandos básicos de VSPerfReport que generan informes de valores separados por comas (.*csv*) a partir de un archivo de datos de generación de perfiles .*vsp* o .*vsps*. Para una descripción de todas las opciones de informes, vea [VSPerfReport](../profiling/vsperfreport.md).

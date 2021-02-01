@@ -1,5 +1,6 @@
 ---
 title: Propiedades de las sesiones de rendimiento | Microsoft Docs
+description: Obtenga más información sobre cómo una sesión de rendimiento le permite configurar las opciones que determinan cómo se genera un perfil de la aplicación.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b3bafa976c8e57f468a3f3f59a3b6b19308fd1b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 02ddf15251cf40dd340465563068b114940f9318
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74772207"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721234"
 ---
 # <a name="performance-session-properties"></a>Propiedades de las sesiones de rendimiento
 
@@ -33,21 +34,21 @@ La sesión de rendimiento tiene las siguientes páginas de propiedades:
 
 Estas opciones le permiten seleccionar el método de generación de perfiles, agregar la colección de objetos .NET y datos de duración, y especificar la ubicación predeterminada del informe y las convenciones de nomenclatura.
 
-Para obtener más información, consulte:
+Para más información, consulte:
 
 [Elección de métodos de recopilación](../profiling/how-to-choose-collection-methods.md)
 
 [Recopilación de datos referentes a la asignación y duración de memoria de .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)
 
-- [Establecimiento de opciones de nombre de archivo de datos de rendimiento](../profiling/how-to-set-performance-data-file-name-options.md)
+- [Cómo: Establecer opciones de nombre de archivo de datos de rendimiento](../profiling/how-to-set-performance-data-file-name-options.md)
 
 ## <a name="launch"></a>Launch
 
 Esta configuración le permite seleccionar de una lista de binarios y especificar el orden de inicio de los binarios.
 
-Para obtener más información, vea [Cómo: Especificar el binario para empezar](../profiling/how-to-specify-the-binary-to-start.md).
+Para obtener más información, vea [Cómo: Especificar el binario de inicio](../profiling/how-to-specify-the-binary-to-start.md)
 
-## <a name="sampling"></a>Muestreo
+## <a name="sampling"></a>muestreo
 
 Estos valores le permiten seleccionar el intervalo de muestreo y de eventos de muestra cuando se utiliza el muestreo como método de generación de perfiles. Un evento de muestra se utiliza para recopilar datos de generación de perfiles en el intervalo especificado. Por ejemplo, si el evento de muestra es de ciclos de reloj y el intervalo de muestreo está establecido en 10.000.000, los datos de generación de perfiles se recopilan una vez cada 10 millones de ciclos de reloj. Los siguientes cuatro tipos de eventos de muestra están disponibles:
 
@@ -57,12 +58,12 @@ Estos valores le permiten seleccionar el intervalo de muestreo y de eventos de m
 - Contadores de rendimiento: para problemas de rendimiento de bajo nivel
 - Se pueden especificar eventos de muestra adicionales en función de los contadores de rendimiento disponibles
 
-Para obtener más información, vea [Cómo: Elegir eventos de muestreo](../profiling/how-to-choose-sampling-events.md).
+Para obtener más información, vea [Cómo: Elegir eventos de muestreo](../profiling/how-to-choose-sampling-events.md)
 
 ## <a name="binary"></a>Binary
 Esta configuración le permite especificar si desea reubicar el binario instrumentado. Por ejemplo, si genera perfiles de *My.DLL* y decide no reubicar el binario instrumentado, se crea una copia de seguridad de *My.DLL* denominada *My.Orig.DLL*. Posteriormente, se modifica *My.DLL* insertando sondeos para recopilar datos. Si decide reubicar el binario instrumentado, no se cambia el nombre del binario original y el binario instrumentado se copia en la ubicación especificada para su uso durante la instrumentación.
 
-Para obtener más información, vea [Cómo: Especificar el binario para empezar](../profiling/how-to-specify-the-binary-to-start.md).
+Para obtener más información, vea [Cómo: Especificar el binario de inicio](../profiling/how-to-specify-the-binary-to-start.md)
 
 ## <a name="tier-interactions"></a>Interacciones de capas
 
@@ -72,11 +73,11 @@ Para obtener más información, consulte [Recopilar datos de interacción de cap
 
 Esta configuración permite recopilar datos de rendimiento de código JScript en páginas web de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] y especificar cualquier evento **anterior a la instrumentación** y **posterior a la instrumentación** que desee que se produzcan.
 
-Para obtener más información, consulte:
+Para más información, consulte:
 
 [Cómo: Generar perfiles de código de JavaScript en páginas web](../profiling/how-to-profile-javascript-code-in-web-pages.md)
 
-[Especificación de comandos anteriores y posteriores a la instrumentación](../profiling/how-to-specify-pre-and-post-instrument-commands.md)
+[Cómo: Especificar comandos anteriores y posteriores a la instrumentación](../profiling/how-to-specify-pre-and-post-instrument-commands.md)
 
 ## <a name="cpu-counters"></a>Contadores de CPU
 
@@ -88,9 +89,9 @@ Para obtener más información, vea [Cómo: Recopilar datos de contadores de CPU
 
 Durante la generación de perfiles, puede recopilar datos de proveedores de seguimiento de eventos. Puede ver los datos mediante la opción `/calltrace` de la herramienta de línea de comandos *VSPerfReport.exe*. Para obtener más información acerca de Seguimiento de eventos para Windows (ETW), consulte [Sobre el seguimiento de eventos](/windows/win32/etw/about-event-tracing).
 
-Para obtener más información, consulte:
+Para más información, consulte:
 
-[Recopilación de datos de Seguimiento de eventos para Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)
+[Cómo: Recopilar datos de seguimiento de eventos para Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)
 
 [VSPerfReport](../profiling/vsperfreport.md).
 
@@ -100,17 +101,17 @@ Esta opción le permite recopilar datos de contadores del Monitor de rendimiento
 
  Para obtener más información, vea [Cómo: Recopilar datos de contadores de Windows](../profiling/how-to-collect-windows-counter-data.md).
 
-## <a name="advanced"></a>Avanzadas
+## <a name="advanced"></a>Avanzado
 
 Esta configuración permite agregar opciones al proceso de instrumentación mediante la especificación de una o más opciones de la herramienta de generación de perfiles de línea de comandos [VSInstr](../profiling/vsinstr.md). También puede especificar la versión de Common Runtime de la que quiere generar perfiles cuando utiliza más de una versión de la aplicación.
 
-Para obtener más información, consulte:
+Para más información, consulte:
 
-[Especificación de runtime de .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)
+[Cómo: Especificar runtime de .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)
 
-[Especificación de opciones de instrumentación adicionales](../profiling/how-to-specify-additional-instrumentation-options.md)
+[Cómo: Especificar opciones de instrumentación adicionales](../profiling/how-to-specify-additional-instrumentation-options.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Información general](../profiling/overviews-performance-tools.md)
 [Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)

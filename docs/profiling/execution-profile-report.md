@@ -1,5 +1,7 @@
 ---
 title: Informe del perfil de ejecución | Microsoft Docs
+description: Obtenga información sobre el informe del perfil de ejecución, que es un perfil de muestreo tradicional disponible en la extensión del visualizador de simultaneidad de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25886ad4f7c31ea02c8dab2d45d8709a362a5a69
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 98361f9abad40e447d7198265d21ef193bb9ddf5
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62969997"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801379"
 ---
 # <a name="execution-profile-report"></a>Informe del perfil de ejecución
 El informe del perfil de ejecución es un perfil de muestreo tradicional. Se toman muestras aproximadamente cada milisegundo durante los períodos cuando un subproceso se está ejecutando en un núcleo lógico, y el visualizador de simultaneidad intercala el conjunto acumulado de pilas de muestras para generar un árbol de llamadas típico. Los datos de esta tabla pueden verse afectados por el intervalo de tiempo actual y los subprocesos ocultos, así como por estos filtros que se pueden aplicar:
@@ -28,9 +30,9 @@ El informe del perfil de ejecución es un perfil de muestreo tradicional. Se tom
 
   En la tabla siguiente se muestran las columnas del informe.
 
-|Columna|Description|
+|Columna|Descripción|
 |------------|-----------------|
-|Name|El nombre de la función para cada nivel de la pila de llamadas.|
+|Nombre|El nombre de la función para cada nivel de la pila de llamadas.|
 |Muestras inclusivas|Número total de muestras recopiladas para todas las pilas que se acumulan en este nivel del árbol de pila de llamadas. El número inclusivo es la suma de muestras exclusivas de esta función y de contadores inclusivos para todos sus nodos secundarios.|
 |Muestras exclusivas|Número total de muestras recopiladas para las que esta función es el nivel más bajo de la pila de llamadas.|
 |% de inclusivas|El porcentaje de muestras totales que se muestra en la columna de muestras inclusivas. Los porcentajes se redondean a dos posiciones decimales.|
@@ -40,4 +42,4 @@ El informe del perfil de ejecución es un perfil de muestreo tradicional. Se tom
  Esta tabla de informe se puede ver en la vista [Tiempo de ejecución (vista de subprocesos)](../profiling/execution-time-threads-view.md).
 
 ## <a name="see-also"></a>Vea también
-- [Vista Subprocesos](../profiling/threads-view-parallel-performance.md)
+- [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)

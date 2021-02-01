@@ -1,5 +1,7 @@
 ---
 title: CvEnterSpan (Función) | Microsoft Docs
+description: Consulte la información de referencia de la función del SDK CvEnterSpan del visualizador de simultaneidad (biblioteca de C).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -24,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5bb034d4a2501175d117256364082966a97af8a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 50a68d58d6a9b2564c732605075811e8bc99721f
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85328970"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686524"
 ---
 # <a name="cventerspan-function"></a>Función CvEnterSpan
 Marca el principio de un nuevo intervalo.
@@ -108,9 +110,9 @@ HRESULT CvEnterSpanExVA(
 
  `level` Nivel de importancia del intervalo.
 
- `pMarkerSeries` Contexto de la serie de marcador válido. No puede ser nulo.
+ `pMarkerSeries` Contexto de la serie de marcador válido. No puede ser NULL.
 
- `pMessage` Cadena de formato de mensaje. No puede ser nulo.
+ `pMessage` Cadena de formato de mensaje. No puede ser NULL.
 
  `ppSpan` Dirección de la variable que contendrá el objeto de intervalo resultante. La dirección no puede ser NULL, pero la variable puede tener cualquier valor.
 
@@ -124,5 +126,5 @@ HRESULT CvEnterSpanExVA(
 
  **ANSI:** CvEnterSpanA, CvEnterSpanVA, CvEnterSpanExA, CvEnterSpanExVW
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Referencia de la biblioteca C++](../profiling/cpp-library-reference.md)

@@ -1,5 +1,7 @@
 ---
-title: para recopilar datos de rendimiento de un sitio web | Microsoft Docs
+title: Recopilación de los datos de rendimiento de un sitio web | Microsoft
+description: Obtenga más información sobre cómo usar el Asistente para rendimiento con el objetivo de recopilar los datos de rendimiento de una aplicación web ASP.NET. La aplicación se ejecuta en el equipo local y puede abrirse en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -18,12 +20,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ea4e3309fc003a4fc4fc73377e8b2bbe12cd567
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 92e70ff7c6d10ad060086230955c27b781dd73be
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851481"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801055"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Procedimiento para recopilar datos de rendimiento de un sitio web
 

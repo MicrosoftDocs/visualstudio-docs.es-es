@@ -1,5 +1,6 @@
 ---
 title: Guardar y exportar datos de herramientas de rendimiento | Microsoft Docs
+description: Obtenga información sobre cómo puede guardar vistas filtradas o sin filtrar de los archivos de datos de generación de perfiles (.vsp) como archivos de informe analizado (.vsps).
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 729dc2e28446420dd2590e132b7ec8a5444fcb9c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0b340abd81cef7183c2ba25af58ae432d8c80e6a
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74773904"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720160"
 ---
 # <a name="save-and-export-performance-tools-data"></a>Guardar y exportar datos de herramientas de rendimiento
 En este artículo, se describe cómo guardar y exportar archivos de datos de rendimiento.

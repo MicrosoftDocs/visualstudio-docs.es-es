@@ -1,5 +1,7 @@
 ---
 title: Tiempo de ejecución (vista de subprocesos) | Microsoft Docs
+description: Revise el tiempo de ejecución en la vista Threads (Subprocesos) del visualizador de simultaneidad. El tiempo de ejecución se representa mediante segmentos que muestran cuando un subproceso está funcionando activamente en un núcleo lógico.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac0cf2a60fd194176b7cd9091f4e7dc7a758006f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f26df8f724d4a17f55ea54c3e7c61e5e1630e635
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62969919"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801484"
 ---
 # <a name="execution-time-threads-view"></a>Tiempo de ejecución (vista de subprocesos)
 Estos segmentos de la escala de tiempo de la vista de subprocesos representan el tiempo de ejecución, cuando el subproceso está realizando activamente una tarea en un núcleo lógico en el sistema.
@@ -28,6 +30,6 @@ Estos segmentos de la escala de tiempo de la vista de subprocesos representan el
 
  Para ver un perfil de muestreo tradicional para todos los segmentos de ejecución en la vista actual, haga clic en **Ejecución** en el perfil de escala de tiempo visible.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Informe del perfil de ejecución](../profiling/execution-profile-report.md)
-- [Vista Subprocesos](../profiling/threads-view-parallel-performance.md)
+- [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)

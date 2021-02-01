@@ -1,5 +1,6 @@
 ---
 title: 'Vista Líneas: datos de contención | Microsoft Docs'
+description: Obtenga más información sobre cómo la vista Líneas de datos de contención muestra los datos de rendimiento de las instrucciones que se estaban ejecutando cuando se recopilaron las muestras en la ejecución de generación de perfiles.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1dfcdf67c897c0c1565e536a69cc940b9df83390
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 50a314d5ba0a5dd907da3a915835f1410894ee7a
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778601"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721351"
 ---
 # <a name="lines-view---contention-data"></a>Vista Líneas: datos de contención
 La vista Líneas de datos de contención muestra los datos de rendimiento de las instrucciones que se estaban ejecutando cuando se recopilaron las muestras en la ejecución de generación de perfiles. En un archivo de origen, una instrucción puede abarcar más de una línea y una sola línea puede incluir más de una instrucción.
@@ -45,7 +46,7 @@ La vista Líneas de datos de contención muestra los datos de rendimiento de las
 |**Porcentaje de tiempo de bloqueo exclusivo**|El porcentaje de tiempo de bloqueo total en el proceso que es tiempo de bloqueo exclusivo de la instrucción.|
 |**Contenciones exclusivas**|El número de veces que esta instrucción no pudo ejecutar el código de la instrucción debido a un evento de contención. No se incluyen los eventos de contención de las funciones a las que llamó la instrucción.|
 |**Porcentaje de contenciones exclusivas**|El porcentaje de todos los eventos de contención en el proceso que eran contenciones exclusivas de esta instrucción.|
-|**Dirección de la función**|La dirección de la función que contiene esta instrucción.|
+|**Dirección de función**|La dirección de la función que contiene esta instrucción.|
 |**Nombre de la función**|El nombre completo de la función que contiene esta instrucción.|
 |**Tiempo de bloqueo inclusivo**|El tiempo bloqueado en esta instrucción y las funciones a las que llama la instrucción.|
 |**Porcentaje de tiempo de bloqueo inclusivo**|El porcentaje de tiempo de bloqueo total en el proceso que es tiempo de bloqueo inclusivo de la instrucción.|
@@ -55,15 +56,15 @@ La vista Líneas de datos de contención muestra los datos de rendimiento de las
 |**Número de línea de la función**|Número de línea del inicio de esta función en el archivo de origen.|
 |**Nombre del módulo**|Nombre del módulo que contiene la instrucción.|
 |**Ruta de acceso del módulo**|Ruta de acceso del módulo que contiene la instrucción.|
-|**Identificador de proceso**|El identificador de proceso (PID) del proceso del que se generaron perfiles.|
-|**Nombre de proceso**|Nombre del proceso.|
+|**Identificador del proceso**|El identificador de proceso (PID) del proceso del que se generaron perfiles.|
+|**Nombre del proceso**|Nombre del proceso.|
 |**Carácter de inicio en el código fuente**|Desplazamiento del carácter de inicio en la línea del archivo de origen donde se inicia la instrucción.|
 |**Carácter de finalización en el código fuente**|Desplazamiento del carácter de inicio en la línea del archivo de origen donde finaliza la instrucción.|
-|**Archivo de código fuente**|El nombre del archivo de código fuente que contiene la instrucción de la función.|
+|**Archivo de origen**|El nombre del archivo de código fuente que contiene la instrucción de la función.|
 |**Línea de inicio del origen**|El número de línea en el archivo de origen en el que comienza esta instrucción.|
 |**Línea de finalización del origen**|El número de línea en el archivo de origen en el que finaliza esta instrucción.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Cómo: Personalizar las columnas de la vista de informes](../profiling/how-to-customize-report-view-columns.md)
 - [Vista Líneas](../profiling/lines-view.md)
 - [Vista Líneas: muestreo](../profiling/lines-view-dotnet-memory-sampling-data.md)

@@ -1,5 +1,7 @@
 ---
 title: CvIsEnabled (función) | Microsoft Docs
+description: Consulte la información de referencia de la función del SDK CvIsEnabled del visualizador de simultaneidad (biblioteca de C).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53de9ee136c9bd12c732339b4c1c8a223fe1a3ac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 57f1bb96480fe054c729b11a3fabd311407fa858
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330060"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686485"
 ---
 # <a name="cvisenabled-function"></a>Función CvIsEnabled
 Determina si alguna sesión ha habilitado el proveedor ETW especificado.
@@ -42,7 +44,7 @@ HRESULT CvIsEnabledEx(
 
  `level` Nivel de importancia.
 
- `pProvider` Objeto de proveedor válido. No puede ser nulo.
+ `pProvider` Objeto de proveedor válido. No puede ser NULL.
 
 ## <a name="return-value"></a>Valor devuelto
  S_OK si el proveedor está habilitado actualmente. S_FALSE si el proveedor está deshabilitado actualmente. Código de error en caso de que se hayan producido errores. Utilice la macro FAILED para comprobar si hay alguna condición de error y, a continuación, comprobar S_OK y S_FALSE.
@@ -50,5 +52,5 @@ HRESULT CvIsEnabledEx(
 ## <a name="requirements"></a>Requisitos
  **Encabezado:** *cvmarkers.h*
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Referencia de la biblioteca C++](../profiling/cpp-library-reference.md)

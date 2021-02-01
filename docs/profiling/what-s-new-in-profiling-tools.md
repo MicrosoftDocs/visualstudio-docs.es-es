@@ -1,5 +1,6 @@
 ---
 title: Novedades de la creación de perfil de Visual Studio 2017 | Microsoft Docs
+description: Obtenga información sobre cómo las herramientas de diagnóstico incluyen nuevas visualizaciones para ayudarle a identificar problemas que se deben corregir en la aplicación.
 titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +14,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 0512c6e95f0a26184593f7af5ba08c31c33a3299
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 57ccf59de6ce5d18aab0a461cff91875cc74486d
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "71128337"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723106"
 ---
 # <a name="whats-new-in-profiling-tools-in-includevs_dev15"></a>Novedades de las herramientas de generación de perfiles en [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
@@ -34,7 +35,7 @@ La herramienta de uso de CPU tiene [nuevas visualizaciones](../profiling/Beginne
 
 ![Vista Llamador y destinatario de Herramientas de diagnóstico](../profiling/media/diag-tools-caller-callee-2.png "DiagToolsCallerCallee")
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Profile in Visual Studio](../profiling/index.yml) (Generación de perfiles en Visual Studio)
+- [Generación de perfiles en Visual Studio](../profiling/index.yml)
 - [Primer vistazo a la generación de perfiles](../profiling/profiling-feature-tour.md)

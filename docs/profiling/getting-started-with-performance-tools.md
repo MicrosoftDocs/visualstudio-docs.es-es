@@ -1,5 +1,7 @@
 ---
 title: Introducción a las herramientas de rendimiento | Microsoft Docs
+description: Obtenga información sobre las distintas formas que ofrece Visual Studio para recopilar, ver y analizar los datos de rendimiento del código.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: faba7a6d2e698e919c0f0adca6fa574838b8b3c4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4f168c4c88ba12ff1f1c9bd0543e9d2b74ae095c
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779212"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801503"
 ---
 # <a name="getting-started-with-performance-tools"></a>Introducción a las herramientas de rendimiento
 

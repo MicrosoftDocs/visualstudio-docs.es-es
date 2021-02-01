@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b34d96f49370a71a63e986a79584caffbc00adf
-ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
+ms.openlocfilehash: a2a64b613ca19632a7827686ab0552e6e23620c1
+ms.sourcegitcommit: 3922edfe67063e1ede418cdbf6aa6293117c4855
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847038"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98773335"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluciones y proyectos en Visual Studio
 
@@ -102,10 +102,13 @@ La barra de herramientas situada en la parte superior del **Explorador de soluci
 
 Muchos comandos de menú están disponibles en el menú contextual que aparece al hacer clic con el botón derecho en distintos elementos del **Explorador de soluciones**. Estos comandos incluyen compilar un proyecto, administrar paquetes NuGet, agregar una referencia, cambiar el nombre de un archivo y ejecutar pruebas, solo por nombrar algunos.
 
-> [!TIP]
-> Si ha cerrado el Explorador de soluciones y quiere volver a abrirlo, elija **Ventana** > **Restablecer diseños de ventana** en la barra de menús.
-
 Para los proyectos de ASP.NET Core, puede personalizar cómo se anidan los archivos en el **Explorador de soluciones**. Para obtener más información, consulte [Personalizar el anidamiento de archivos en el Explorador de soluciones](file-nesting-solution-explorer.md).
+
+> [!TIP]
+> Si ha cerrado el Explorador de soluciones y quiere volver a abrirlo, elija **Ver** > **Explorador de soluciones** en la barra de menús o presione **Ctrl**+**Alt**+**L**. Y si ha cerrado las pestañas laterales y quiere restaurarlas a sus ubicaciones predeterminadas, elija **Ventana** > **Restablecer diseños de ventana** en la barra de menús.
+
+> [!NOTE]
+> Para ver los iconos y las imágenes de las aplicaciones que aparecen en Visual Studio, descargue la [**biblioteca de imágenes de Visual Studio**](https://www.microsoft.com/download/details.aspx?id=35825).
 
 ## <a name="see-also"></a>Consulte también
 

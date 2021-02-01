@@ -1,5 +1,7 @@
 ---
 title: 'Vista Funciones: Datos de instrumentación de memoria de .NET | Microsoft Docs'
+description: Obtenga información sobre la vista Funciones de los datos de la generación de perfiles de asignación de memoria de .NET recopilados mediante el método de instrumentación.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: eba1f0d1434d253aaca698d3ae582e3c507c2d23
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5a245ebffc0aa0efaec8df1ec0c5b93b2d99228d
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779238"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801534"
 ---
 # <a name="functions-view---net-memory-instrumentation-data"></a>Vista Funciones: Datos de instrumentación de memoria de .NET
 La vista Funciones de los datos de generación de perfiles de asignación de memoria de .NET que se recopilaron mediante el método de instrumentación enumera las funciones que asignaron memoria durante la generación de perfiles. Una fila de función indica el tamaño y el número de asignaciones y los datos de tiempo para la función.
@@ -26,14 +28,14 @@ La vista Funciones de los datos de generación de perfiles de asignación de mem
 |Columna|Descripción|
 |------------|-----------------|
 |**Nombre de la función**|Nombre de la función.|
-|**Dirección de la función**|Dirección de la función.|
+|**Dirección de función**|Dirección de la función.|
 |**Número de línea de la función**|Número de línea del inicio de esta función en el archivo de origen.|
 |**Número de llamadas**|Número total de llamadas realizadas a esta función.|
-|**Archivo de código fuente**|Archivo de origen que contiene la definición de esta función.|
+|**Archivo de origen**|Archivo de origen que contiene la definición de esta función.|
 |**Nombre del módulo**|Nombre del módulo que contiene la función.|
 |**Ruta de acceso del módulo**|Ruta de acceso del módulo que contiene la función.|
 |**Identificador del proceso**|Identificador de proceso (PID) de la ejecución de generación de perfiles.|
-|**Nombre de proceso**|Nombre del proceso.|
+|**Nombre del proceso**|Nombre del proceso.|
 |**Sobrecarga de tiempo exclusiva por sondeos**|Sobrecarga de tiempo para esta función debida a la instrumentación. La sobrecarga por sondeos se ha restado de todos los tiempos exclusivos.|
 |**Sobrecarga de tiempo inclusiva por sondeos**|Sobrecarga de tiempo para esta función y sus funciones secundarias debida a la instrumentación. La sobrecarga por sondeos se ha restado de todos los tiempos inclusivos.|
 
@@ -45,13 +47,13 @@ La vista Funciones de los datos de generación de perfiles de asignación de mem
 |Columna|Descripción|
 |------------|-----------------|
 |**Asignaciones inclusivas**|Número total de objetos creados en esta función y en funciones a las que llamó esta función.|
-|**Porcentaje de asignaciones inclusivas**|Porcentaje de todos los objetos que se asignaron durante la ejecución de la generación de perfiles que eran asignaciones inclusivas de esta función.|
+|**Porcentaje de asignaciones inclusivas**|Porcentaje de todos los objetos que se han asignado durante la ejecución de la generación de perfiles que eran asignaciones inclusivas de esta función.|
 |**Asignaciones exclusivas**|Número total de objetos creados cuando la función estaba ejecutando código en el cuerpo de la función. Este número no incluye los objetos creados en las funciones a las que llamó esta función.|
 |**Porcentaje de asignaciones exclusivas**|El porcentaje de todos los objetos que se crearon durante la ejecución de la generación de perfiles que eran asignaciones exclusivas de esta función.|
 |**Porcentaje de bytes inclusivos**|Número de bytes de memoria que se asignaron en esta función y en funciones a las que llamó esta función.|
-|**Porcentaje de bytes inclusivos**|Porcentaje de todos los bytes de memoria que se asignaron durante la ejecución de la generación de perfiles que eran bytes inclusivos de esta función.|
+|**Porcentaje de bytes inclusivos**|Porcentaje de todos los bytes de memoria que se han asignado durante la ejecución de la generación de perfiles que eran bytes inclusivos de esta función.|
 |**Bytes exclusivos**|Número de bytes de memoria asignados por esta función, pero no por funciones a las que llamó esta función.|
-|**Porcentaje de bytes exclusivos**|Porcentaje de todos los bytes de memoria que se asignaron durante la ejecución de la generación de perfiles que eran bytes exclusivos de esta función.|
+|**Porcentaje de bytes exclusivos**|Porcentaje de todos los bytes de memoria que se han asignado durante la ejecución de la generación de perfiles que eran bytes exclusivos de esta función.|
 
 ## <a name="elapsed-inclusive-values"></a>Valores de tiempo inclusivo transcurrido
  Los valores inclusivos transcurridos indican el tiempo que una función estuvo en la pila de llamadas. Incluye el tiempo dedicado a funciones secundarias y llamadas al sistema operativo, como modificadores de contexto y operaciones de E/S.
@@ -62,7 +64,7 @@ La vista Funciones de los datos de generación de perfiles de asignación de mem
 |**Porcentaje de tiempo inclusivo transcurrido**|El porcentaje de tiempo inclusivo transcurrido total de la ejecución de generación de perfiles que se ha empleado en el tiempo inclusivo transcurrido de esta función.|
 |**Promedio de tiempo inclusivo transcurrido**|Promedio de tiempo inclusivo transcurrido de una llamada a esta función.|
 |**Tiempo inclusivo máximo transcurrido**|Tiempo inclusivo máximo transcurrido de una llamada a esta función.|
-|**Tiempo inclusivo transcurrido mínimo**|Tiempo inclusivo mínimo transcurrido de una llamada a esta función.|
+|**Tiempo inclusivo mínimo transcurrido**|Tiempo inclusivo mínimo transcurrido de una llamada a esta función.|
 
 ## <a name="elapsed-exclusive-values"></a>Valores de tiempo exclusivo transcurrido
  Los valores exclusivos transcurridos indican el tiempo que una función se estaba ejecutando directamente en la parte superior de la pila de llamadas. Incluye el tiempo dedicado llamadas al sistema operativo, como modificadores de contexto y operaciones de E/S, pero no incluye el tiempo dedicado a funciones secundarias.
@@ -72,7 +74,7 @@ La vista Funciones de los datos de generación de perfiles de asignación de mem
 |**Tiempo exclusivo transcurrido**|Tiempo exclusivo total transcurrido para todas las llamadas a esta función.|
 |**Porcentaje de tiempo exclusivo transcurrido**|El porcentaje de tiempo exclusivo transcurrido de la generación de perfiles que se ha empleado en el tiempo exclusivo transcurrido total de esta función.|
 |**Promedio de tiempo exclusivo transcurrido**|Promedio de tiempo exclusivo transcurrido de una llamada a esta función.|
-|**Tiempo exclusivo transcurrido máximo**|Tiempo exclusivo máximo transcurrido de una llamada a esta función.|
+|**Tiempo exclusivo máximo transcurrido**|Tiempo exclusivo máximo transcurrido de una llamada a esta función.|
 |**Tiempo exclusivo mínimo transcurrido**|Tiempo exclusivo mínimo transcurrido de una llamada a esta función.|
 
 ## <a name="application-inclusive-values"></a>Valores de tiempo inclusivo de aplicación
@@ -95,9 +97,9 @@ La vista Funciones de los datos de generación de perfiles de asignación de mem
 |**Porcentaje de tiempo exclusivo de aplicación**|El porcentaje de tiempo exclusivo transcurrido total de la ejecución de generación de perfiles que se ha empleado en el tiempo exclusivo de aplicación total de esta función.|
 |**Promedio de tiempo exclusivo de aplicación**|El promedio de tiempo exclusivo de aplicación de una llamada a esta función.|
 |**Tiempo exclusivo de aplicación máximo**|El tiempo exclusivo de aplicación máximo de una llamada a esta función.|
-|**Tiempo exclusivo mínimo de aplicación**|El tiempo exclusivo de aplicación mínimo de una llamada a esta función.|
+|**Tiempo exclusivo de aplicación mínimo**|El tiempo exclusivo de aplicación mínimo de una llamada a esta función.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Cómo: Personalizar las columnas de la vista de informes](../profiling/how-to-customize-report-view-columns.md)
 - [Vista Funciones: muestreo](../profiling/functions-view-dotnet-memory-sampling-data.md)
 - [Vista Funciones](../profiling/functions-view-instrumentation-data.md)

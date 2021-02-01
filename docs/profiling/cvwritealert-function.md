@@ -1,5 +1,7 @@
 ---
 title: CvWriteAlert (función) | Microsoft Docs
+description: Consulte la información de referencia de la función del SDK CvWriteAlert del visualizador de simultaneidad (biblioteca de C).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56af9515fb9c066e56dd45a0fb91a95530f09799
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eb2cc6f7408fc5d9af0215dbccf166477876ac23
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85332173"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686446"
 ---
 # <a name="cvwritealert-function"></a>Función CvWriteAlert
 Escribe una alerta en el archivo de seguimiento del visualizador de simultaneidad.
@@ -57,9 +59,9 @@ HRESULT CvWriteAlertVA(
 #### <a name="parameters"></a>Parámetros
  `argList` Lista de argumentos.
 
- `pMarkerSeries` Contexto de la serie de marcador válido. No puede ser nulo.
+ `pMarkerSeries` Contexto de la serie de marcador válido. No puede ser NULL.
 
- `pMessage` Cadena de formato de mensaje. No puede ser nulo.
+ `pMessage` Cadena de formato de mensaje. No puede ser NULL.
 
 ## <a name="return-value"></a>Valor devuelto
  S_OK cuando el mensaje se ha escrito correctamente. Código de error en caso de que se hayan producido errores. Utilice macros SUCCEEDED/FAILED para comprobar si existe una condición de error.
@@ -71,5 +73,5 @@ HRESULT CvWriteAlertVA(
 
  **ANSI:** CvWriteAlertA, CvWriteAlertVA
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Referencia de la biblioteca C++](../profiling/cpp-library-reference.md)

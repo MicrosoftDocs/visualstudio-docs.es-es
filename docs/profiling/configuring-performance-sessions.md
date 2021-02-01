@@ -1,5 +1,7 @@
 ---
 title: Configurar sesiones de rendimiento | Microsoft Docs
+description: Obtenga información sobre cómo configurar las Herramientas de generación de perfiles de Visual Studio para recopilar los datos de rendimiento deseados. En este artículo se enumeran las tareas comunes y se proporcionan vínculos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,15 +16,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bdf1c372ffcb3ad3a0ebf102827565853947e2b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 52e2575e034dbabe5e380857edd95e4bc46f56d2
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777873"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721026"
 ---
-# <a name="configure-performance-sessions"></a>Configuración de sesiones de rendimiento
-Mediante el uso de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], puede recopilar una gran variedad de datos de rendimiento para un gran número de tipos de aplicaciones. En esta sección se muestra cómo utilizar las propiedades del Asistente de rendimiento, las propiedades de la sesión de rendimiento y el binario de destino para configurar las herramientas de generación de perfiles para recopilar los datos que le interesen. Las propiedades de configuración de las herramientas de generación de perfiles también pueden emplearse para controlar la cantidad de datos recopilados en una ejecución de generación de perfiles. Para más información, vea [Control de la recopilación de datos](../profiling/controlling-data-collection.md).
+# <a name="configure-performance-sessions"></a>Configurar sesiones de rendimiento
+Mediante el uso de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], puede recopilar una gran variedad de datos de rendimiento para un gran número de tipos de aplicaciones. En esta sección se muestra cómo usar el Asistente de rendimiento, así como las propiedades de la sesión de rendimiento y el binario de destino, para configurar las Herramientas de generación de perfiles a fin de recopilar los datos que le interesen. Las propiedades de configuración de las herramientas de generación de perfiles también pueden emplearse para controlar la cantidad de datos recopilados en una ejecución de generación de perfiles. Para más información, vea [Control de la recopilación de datos](../profiling/controlling-data-collection.md).
 
 > [!NOTE]
 > En muchos casos, utilizar las propiedades predeterminadas del Asistente de rendimiento es una forma eficaz de recopilar datos de generación de perfiles. Para más información, vea [Guía básica para la generación de perfiles de rendimiento](../profiling/beginners-guide-to-performance-profiling.md) e [Introducción](../profiling/getting-started-with-performance-tools.md).
@@ -31,7 +33,7 @@ Mediante el uso de las herramientas de generación de perfiles de [!INCLUDE[vspr
 
 | Tarea | Contenido relacionado |
 | - | - |
-| **Establecer las opciones de generación de perfiles básicas:** debe configurar [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] para utilizar el servidor de símbolos de Microsoft. Esto asegurará que tiene acceso a los símbolos, como los nombres de las funciones y los parámetros, para la versión actual de Windows y otras aplicaciones de Microsoft. También puede especificar otras opciones generales antes de iniciar una sesión de generación de perfiles, como los permisos de sistema para las herramientas de generación de perfiles y los nombres de los archivos de datos de generación de perfiles. | -   [Cómo: Hacer referencia a información de símbolos de Windows](../profiling/how-to-reference-windows-symbol-information.md)<br />-   [Cómo: Serializar la información de símbolos](../profiling/how-to-serialize-symbol-information.md)<br />-   [Cómo: Establecer la sesión actual](../profiling/how-to-set-the-current-session.md)<br />-   [Cómo: Establecer permisos](../profiling/how-to-set-permissions.md)<br />-   [Cómo: establecer opciones de nombre de archivo de datos de rendimiento](../profiling/how-to-set-performance-data-file-name-options.md) |
+| **Establecer las opciones de generación de perfiles básicas:** debe configurar [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] para utilizar el servidor de símbolos de Microsoft. Esto asegurará que tiene acceso a los símbolos, como los nombres de las funciones y los parámetros, para la versión actual de Windows y otras aplicaciones de Microsoft. También puede especificar otras opciones generales antes de iniciar una sesión de generación de perfiles, como los permisos de sistema para las herramientas de generación de perfiles y los nombres de los archivos de datos de generación de perfiles. | -   [Cómo: Hacer referencia a información de símbolos de Windows](../profiling/how-to-reference-windows-symbol-information.md)<br />-   [Cómo: Serializar la información de símbolos](../profiling/how-to-serialize-symbol-information.md)<br />-   [Cómo: Establecer la sesión actual](../profiling/how-to-set-the-current-session.md)<br />-   [Cómo: Establecer permisos](../profiling/how-to-set-permissions.md)<br />-   [Cómo: Establecer opciones de nombre de archivo de datos de rendimiento](../profiling/how-to-set-performance-data-file-name-options.md) |
 | **Especificar los datos que quiere recopilar:** los procedimientos que se utilizan para configurar una sesión de generación de perfiles dependen del tipo de aplicación de destino de la que se quiere generar el perfil y del tipo de datos de rendimiento que se van a recopilar. | -   [Cómo: Elegir métodos de recopilación](../profiling/how-to-choose-collection-methods.md)<br />-   [Recopilación de estadísticas de rendimiento mediante el muestreo](../profiling/collecting-performance-statistics-by-using-sampling.md)<br />-   [Recopilación de datos referentes a la asignación y duración de memoria de .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)<br />-   [Recopilación de datos de control de tiempo detallados mediante la instrumentación](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md)<br />-   [Cómo: Generar perfiles de código de JavaScript en páginas web](../profiling/how-to-profile-javascript-code-in-web-pages.md)<br />-   [Recopilación de datos de simultaneidad de subprocesos y procesos](../profiling/collecting-thread-and-process-concurrency-data.md)<br />-   [Recopilación de datos de rendimiento adicionales](../profiling/collecting-additional-performance-data.md) |
 | **Establecer opciones de configuración avanzada:** al generar perfiles de aplicaciones .NET Framework que cargan varias versiones de Common Language Run-time (CLR), puede especificar de qué versión se va a generar el perfil. Cuando tenga varios archivos .exe en una sesión de rendimiento, puede establecer el orden de inicio de los archivos binarios. | -   [Cómo: Especificar runtime de .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)<br />-   [Cómo: Especificar el binario de inicio](../profiling/how-to-specify-the-binary-to-start.md) |
 

@@ -1,5 +1,6 @@
 ---
 title: Vista de utilización | Microsoft Docs
+description: Obtenga información sobre cómo en la vista de utilización se muestran detalles sobre la CPU, la GPU y otros recursos del sistema utilizados por el proceso actual.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,17 +13,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 926c67261f91aa8787d9be4a33dadbd3a890c568
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 047c9ef9d5bb03546eb88372ae43a51c7c8e4d32
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62823534"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723210"
 ---
 # <a name="utilization-view"></a>Vista Utilización
 La **vista Utilización** muestra información sobre la CPU, la GPU y otros recursos del sistema que el proceso actual usa (elija **Analizar** > **Visualizador de simultaneidad** para iniciar el visualizador de simultaneidad). Muestra el uso de núcleo promedio por el proceso analizado, el proceso inactivo, el proceso del sistema y otros procesos que se ejecutan en el sistema a lo largo del tiempo. No muestra qué núcleo concreto está activo en un momento dado. Por ejemplo, si dos núcleos se ejecutan al 50 por ciento de su capacidad durante un período de tiempo determinado, esta vista muestra que se está utilizando un núcleo lógico. La vista se genera al dividir el tiempo de generación de perfiles en segmentos de tiempo cortos. Para cada segmento, el gráfico traza el promedio de subprocesos del proceso que se ejecutan en núcleos lógicos durante ese intervalo.
 
- ![Vista Uso de CPU](../profiling/media/vsts_ppacpuutil.png "VSTS_PPAcpuUtil")
+ ![Vista de utilización de la CPU](../profiling/media/vsts_ppacpuutil.png "VSTS_PPAcpuUtil")
 
  El gráfico muestra el tiempo (en el eje x) y el promedio de núcleos lógicos que se utilizan en el proceso de destino, el proceso inactivo y el proceso del sistema. (El proceso inactivo muestra núcleos inactivos. El proceso del sistema es un proceso de Windows que puede realizar trabajo en nombre de otros procesos). Los procesos restantes que se ejecutan en el sistema utilizan los núcleos restantes.
 
@@ -48,6 +49,6 @@ La **vista Utilización** muestra información sobre la CPU, la GPU y otros recu
 ## <a name="zoom"></a>Zoom
  Para ampliar el gráfico de utilización de CPU o el gráfico de actividad de GPU, seleccione una sección o utilice el control deslizante de zoom sobre el gráfico. La configuración de zoom se conserva cuando se cambia a otras vistas. Para reducir, use el control deslizante de zoom. También puede hacer zoom si presiona **Ctrl**+**rueda del mouse**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Visualizador de simultaneidad](../profiling/concurrency-visualizer.md)
 - [Vista de núcleos](../profiling/cores-view.md)

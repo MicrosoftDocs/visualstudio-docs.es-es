@@ -1,5 +1,6 @@
 ---
 title: Explorador de rendimiento | Microsoft Docs
+description: Obtenga información sobre cómo las Herramientas de generación de perfiles de Visual Studio permiten a los desarrolladores medir, evaluar y detectar problemas relacionados con el rendimiento del código.
 ms.date: 06/19/2017
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 89399d49909e1c9067723e75a1adbaa123865758
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7a796ee0791fd96edf1e54954df47f2983df3ee4
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778484"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722781"
 ---
 # <a name="performance-explorer"></a>Explorador de rendimiento
 
@@ -35,7 +36,7 @@ Para obtener más información sobre temas actuales y avanzados relacionados con
 |Tarea|Contenido relacionado|
 |----------|---------------------|
 |**Técnicas para Windows 8 y versiones posteriores**|[Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)|
-|**Entender los conceptos de generación de perfiles:** proporciona información sobre los conceptos y los términos que utilizará para recopilar, ver y analizar el rendimiento del código mediante las herramientas de generación de perfiles.|[Información general](../profiling/overviews-performance-tools.md)|
+|**Entender los conceptos de generación de perfiles:** proporciona información sobre los conceptos y los términos que utilizará para recopilar, ver y analizar el rendimiento del código mediante las herramientas de generación de perfiles.|[Temas de introducción](../profiling/overviews-performance-tools.md)|
 |**Comenzar el aprendizaje:** proporciona información sobre los procedimientos básicos que utilizará al recopilar, ver y analizar el rendimiento del código mediante las herramientas de generación de perfiles. Pruébelo con un tutorial práctico.|[Introducción](../profiling/getting-started-with-performance-tools.md)|
 |**Configurar una sesión de generación de perfiles:** proporciona información sobre cómo especificar los proyectos o binarios de los que se van a generar perfiles, seleccionar un método de generación de perfiles, elegir los datos de rendimiento que se van a recopilar y establecer otras opciones de la sesión de generación de perfiles.|[Configuración de sesiones de rendimiento](../profiling/configuring-performance-sessions.md)|
 |**Controlar los datos que recopila el generador de perfiles:** proporciona información sobre cómo utilizar las propiedades de una sesión de rendimiento y los procedimientos interactivos para iniciar y detener la generación de perfiles, además de cómo limitar los datos de rendimiento que va a recopilar a la información estrictamente deseada.|[Control de la recopilación de datos](../profiling/controlling-data-collection.md)|
@@ -43,9 +44,9 @@ Para obtener más información sobre temas actuales y avanzados relacionados con
 |**Analizar cambios de rendimiento:** proporciona información sobre cómo comparar dos archivos de datos del generador de perfiles para analizar los cambios de rendimiento.|[Comparación de archivos de datos de rendimiento](../profiling/comparing-performance-data-files.md)|
 |**Guardar y compartir los resultados:** proporciona información sobre cómo guardar datos de generación de perfiles para archivarlos o compartirlos.|[Guardar y exportar datos de herramientas de rendimiento](../profiling/saving-and-exporting-performance-tools-data.md)|
 |**Generación automática de perfiles:** proporciona información sobre cómo utilizar las herramientas de generación de perfiles desde el símbolo del sistema.|[Generar perfiles desde la línea de comandos](../profiling/using-the-profiling-tools-from-the-command-line.md)|
-|**Controlar la generación de perfiles mediante programación:** proporciona información sobre cómo utilizar las API administradas y nativas de las herramientas de generación de perfiles para controlar la recolección de datos del código fuente directamente.|[API de herramientas de generación de perfiles](../profiling/profiling-tools-apis.md)|
+|**Controlar la generación de perfiles mediante programación:** proporciona información sobre cómo utilizar las API administradas y nativas de las herramientas de generación de perfiles para controlar la recolección de datos del código fuente directamente.|[APIs de herramientas de generación de perfiles](../profiling/profiling-tools-apis.md)|
 |**Solucionar problemas de generación de perfiles**|[Solución de problemas de herramientas de rendimiento](../profiling/troubleshooting-performance-tools-issues.md)|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Primer vistazo a la generación de perfiles](../profiling/profiling-feature-tour.md)

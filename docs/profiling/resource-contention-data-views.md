@@ -1,5 +1,6 @@
 ---
 title: Vistas de datos de contención de recursos | Microsoft Docs
+description: Obtenga más detalles sobre la información de referencia de las vistas y los informes de archivos de datos del generador de perfiles que contienen datos de generación de perfiles de contención de subprocesos.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e30589a7c58a756a981ed8a690afe4b052aeaf0b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 25dc334819c4b32bf74822e46dd3251919f621bf
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74771535"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720337"
 ---
 # <a name="resource-contention-data-views"></a>Vistas de datos de contención de recursos
 Esta sección contiene información de referencia sobre las vistas y los informes de archivos de datos del generador de perfiles que contienen datos de generación de perfiles de contención de subprocesos.

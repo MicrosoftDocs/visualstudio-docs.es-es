@@ -1,5 +1,6 @@
 ---
 title: Uso de varias herramientas de generación de perfiles de forma simultánea | Microsoft Docs
+description: Obtenga más información sobre cómo el Generador de perfiles de rendimiento se diseñó con la idea de que se pudieran usar varias herramientas en la misma sesión con el fin de facilitar la comprensión de los problemas de rendimiento.
 ms.date: 4/29/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +10,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: f72757d46496c3990c0a0d4205753d185078eac7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a4c4658282f15b6b34562e51be94d9f2be195a8
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85332034"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721182"
 ---
 # <a name="using-multiple-profiler-tools-simultaneously"></a>Uso de varias herramientas de generación de perfiles de forma simultánea
 

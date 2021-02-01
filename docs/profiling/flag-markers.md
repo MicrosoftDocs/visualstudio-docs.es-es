@@ -1,5 +1,7 @@
 ---
 title: Marcadores de marca | Microsoft Docs
+description: Obtenga información sobre los marcadores de marca del visualizador de simultaneidad de Visual Studio. Un marcador de marca representa algo que se ha producido en un momento determinado en una aplicación.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccc0c7aa3386e906ad13331a596953db70240701
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fc7b128915b7fc961b44aa7d70a24a813d432ddf
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62969984"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801472"
 ---
 # <a name="flag-markers"></a>Marcadores de marca
 Un marcador de marca representa algo que se ha producido en un momento determinado en una aplicación. Una marca puede representar muchos tipos de eventos de aplicación. Por ejemplo, una marca puede mostrar cuándo se ha programado un elemento de trabajo determinado o cuándo se ha producido una excepción. Los runtimes, como la biblioteca TPL, también pueden generar marcas.
@@ -42,6 +44,6 @@ Un marcador de marca representa algo que se ha producido en un momento determina
 
  ![Marcas de agregación que muestran cuatro niveles de importancia](../profiling/media/cvmarkeraggregate.png "CVMarkerAggregate") Marcas de agregación por nivel de importancia
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Marcadores del Visualizador de simultaneidad](../profiling/concurrency-visualizer-markers.md)
 - [SDK del visualizador de simultaneidad](../profiling/concurrency-visualizer-sdk.md)

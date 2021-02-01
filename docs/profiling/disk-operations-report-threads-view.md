@@ -1,5 +1,7 @@
 ---
 title: Informe de operaciones de disco (vista de subprocesos) | Microsoft Docs
+description: En el informe de operaciones de disco se muestran las operaciones de E/S de disco en los canales de disco. Consulte la información notificada para cada acceso al disco.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69cbef53bcca74cceba4f9409b578fca45a58806
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 44975999c71b1c331d90aa10f709071cef466cb1
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62970075"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686537"
 ---
 # <a name="disk-operations-report-threads-view"></a>Informe de operaciones de disco (Vista de subprocesos)
 En el informe de operaciones de disco se muestran las operaciones de E/S de disco en los canales de disco.
@@ -43,4 +45,4 @@ En el informe de operaciones de disco se muestran las operaciones de E/S de disc
 - La latencia de escritura, en milisegundos
 
 ## <a name="see-also"></a>Vea también
-- [Vista Subprocesos](../profiling/threads-view-parallel-performance.md)
+- [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)

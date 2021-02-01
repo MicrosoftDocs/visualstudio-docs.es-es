@@ -1,5 +1,6 @@
 ---
 title: Informe de resumen por subproceso | Microsoft Docs
+description: Vea un gráfico de barras en el que se muestra la proporción de tiempo que cada subproceso no oculto invierte en cada categoría de actividad durante el intervalo de tiempo visible actualmente.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,22 +13,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ab5e88db9f539dd79482044ab3834b27a6b1747
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 03797190097d3495a315fd0e0343fa9999100147
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62794331"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722794"
 ---
 # <a name="per-thread-summary-report"></a>Informe de resumen por subproceso
 Este gráfico de barras muestra la proporción de tiempo que cada subproceso no oculto invierte en cada categoría de actividad durante el intervalo de tiempo visible actualmente. "Ejecución" significa que se está ejecutando el subproceso, todas las demás categorías significan que el subproceso está esperando algo.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Tiempo de ejecución (Vista de subprocesos)](../profiling/execution-time-threads-view.md)
 - [Tiempo de E/S (Vista de subprocesos)](../profiling/i-o-time-threads-view.md)
 - [Tiempo de administración de la memoria](../profiling/memory-management-time.md)
 - [Tiempo de adelantamiento](../profiling/preemption-time.md)
-- [Tiempo de suspensión](../profiling/sleep-time.md)
+- [Sleep time](../profiling/sleep-time.md)
 - [Hora de sincronización](../profiling/synchronization-time.md)
 - [Tiempo de procesamiento de la interfaz de usuario](../profiling/ui-processing-time.md)
-- [Vista Subprocesos](../profiling/threads-view-parallel-performance.md)
+- [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)

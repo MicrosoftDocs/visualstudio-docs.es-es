@@ -1,5 +1,6 @@
 ---
 title: VSPerfReport | Microsoft Docs
+description: Obtenga más información sobre cómo se usa la herramienta de la línea de comandos VSPerfReport para crear informes mediante los archivos de datos para la generación de perfiles de las Herramientas de generación de perfiles de Visual Studio.
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -16,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 54d5de2395c0ce95bc0c20c3ae7810b2762122fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ed3ba5453976e3f3976aba43bc296c040a86b7a5
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329960"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719778"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 La herramienta de la línea de comandos VSPerfReport se usa para crear informes mediante los archivos de datos para la generación de perfiles de las Herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. El formato de informe predeterminado es un archivo .*csv*.
@@ -51,7 +52,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 |Opciones|Descripción|
 |-------------|-----------------|
 |**U**|El informe de resultados y la salida de la consola redirigida se escriben como Unicode. Esta debe ser la primera opción especificada.|
-|**Summary:** [*types*]|Crea uno o varios tipos de informes.<br /><br /> -   `All`: se generan todos los tipos de informes.<br />-   `CallerCallee`: relaciones de elemento primario/secundario entre funciones.<br />-   `Function`: funciones llamadas.<br />-   `CallTree`: jerarquía de funciones llamadas.<br />-   `Counter`: todas las marcas junto con valores del contador de rendimiento de Windows.<br />-   `Ip`: instrucciones para las que se generan perfiles.<br />-   `Life`: duración de los objetos asignados (disponible cuando se han recopilado datos de asignaciones).<br />-   `Line`: datos del perfil de la línea de código fuente.<br />-   `Header`: el informe contiene información del encabezado del archivo.<br />-   `Mark`: todas las marcas.<br />-   `Module`: módulos para los que se generan perfiles.<br />-   `Process`: procesos para los que se generan perfiles.<br />-   `Thread`: subprocesos para los que se generan perfiles.<br />-   `Type`: tipos asignados.<br />-   `Contention`: contenciones de recursos.<br />-   `RuleWarnings`: problemas de reglas de rendimiento.<br />-   `ETW`: todos los eventos de Seguimiento de eventos para Windows (ETW) recopilados en la generación de perfiles. El archivo de datos .etl debe estar en su ubicación original o en el directorio que contiene el archivo .vsp o .vsps.|
+|**Summary:**[*types*]|Crea uno o varios tipos de informes.<br /><br /> -   `All`: se generan todos los tipos de informes.<br />-   `CallerCallee`: relaciones de elemento primario/secundario entre funciones.<br />-   `Function`: funciones llamadas.<br />-   `CallTree`: jerarquía de funciones llamadas.<br />-   `Counter`: todas las marcas junto con valores del contador de rendimiento de Windows.<br />-   `Ip`: instrucciones para las que se generan perfiles.<br />-   `Life`: duración de los objetos asignados (disponible cuando se han recopilado datos de asignaciones).<br />-   `Line`: datos del perfil de la línea de código fuente.<br />-   `Header`: el informe contiene información del encabezado del archivo.<br />-   `Mark`: todas las marcas.<br />-   `Module`: módulos para los que se generan perfiles.<br />-   `Process`: procesos para los que se generan perfiles.<br />-   `Thread`: subprocesos para los que se generan perfiles.<br />-   `Type`: tipos asignados.<br />-   `Contention`: contenciones de recursos.<br />-   `RuleWarnings`: problemas de reglas de rendimiento.<br />-   `ETW`: todos los eventos de Seguimiento de eventos para Windows (ETW) recopilados en la generación de perfiles. El archivo de datos .etl debe estar en su ubicación original o en el directorio que contiene el archivo .vsp o .vsps.|
 |**Xml**|Informe de resultados en formato XML.|
 |**CallTrace**|Crea una lista de entradas y salidas de la función, eventos ETW y marcas.|
 |**ClearPackedSymbols**|Quita los símbolos insertados previamente de un archivo de datos del generador de perfiles. Ejecute este comando antes de ejecutar PackSymbols por segunda vez.|
@@ -84,8 +85,8 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 
 |Opciones|Descripción|
 |-------------|-----------------|
-|**Diff** `vspfile1 vspfile2`|Se comparan dos archivos de informe (.*vsp* o .*vsps*). Las opciones de resumen se omitirán mediante la opción diff.|
-|**Diff:** [*value*]|Se descarta cualquier diferencia entre dos valores que se encuentre bajo este valor de umbral. Asimismo, no se muestran nuevos datos que tengan valores por debajo de este umbral.|
+|**Diferencias**  `vspfile1 vspfile2`|Se comparan dos archivos de informe (.*vsp* o .*vsps*). Las opciones de resumen se omitirán mediante la opción diff.|
+|**Diff:**[*value*]|Se descarta cualquier diferencia entre dos valores que se encuentre bajo este valor de umbral. Asimismo, no se muestran nuevos datos que tengan valores por debajo de este umbral.|
 |**DiffTable:** [*tablename*]|Use esta tabla concreta para comparar archivos. El valor predeterminado es la tabla de funciones.|
 |**DiffColumn:** [*columnname*]|Use estos valores de comparación de columna específicos. El valor predeterminado es la columna de porcentaje de muestras exclusivas.|
 |**QueryDiffTables**|Muestra las tablas y columnas válidas para los dos archivos de informe proporcionados.|

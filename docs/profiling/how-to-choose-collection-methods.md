@@ -1,5 +1,7 @@
 ---
 title: Elegir métodos de recopilación | Microsoft Docs
+description: Las Herramientas de generación de perfiles de Visual Studio admiten tres métodos para recopilar datos de rendimiento. Obtenga información sobre cómo elegir el que necesita para su aplicación.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b66df2f302790f579891c337b217e76202e79ac
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 3fe102c7ebd8ed551a0da4e92c66dfac8acb78ec
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851312"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801584"
 ---
 # <a name="how-to-choose-collection-methods"></a>Procedimiento Elegir métodos de recopilación
 

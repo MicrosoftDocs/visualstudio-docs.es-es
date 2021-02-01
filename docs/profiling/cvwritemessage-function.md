@@ -1,5 +1,7 @@
 ---
 title: CvWriteMessage (función) | Microsoft Docs
+description: Consulte la información de referencia de la función del SDK CvWriteMessage del visualizador de simultaneidad (biblioteca de C).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -26,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66fb584090a0b6483c18f8254eb4a96b6186d51e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 92d6b3bb37937e010bc10a685f958063e7cc3358
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85332127"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686433"
 ---
 # <a name="cvwritemessage-function"></a>Función CvWriteMessage
 Escribe un mensaje en el archivo de seguimiento del visualizador de simultaneidad.
@@ -99,9 +101,9 @@ HRESULT CvWriteMessageExVA(
 
  `level` Nivel de importancia del intervalo.
 
- `pMarkerSeries` Contexto de la serie de marcador válido. No puede ser nulo.
+ `pMarkerSeries` Contexto de la serie de marcador válido. No puede ser NULL.
 
- `pMessage` Cadena de formato de mensaje. No puede ser nulo.
+ `pMessage` Cadena de formato de mensaje. No puede ser NULL.
 
 ## <a name="return-value"></a>Valor devuelto
  S_OK cuando el mensaje se ha escrito correctamente. Código de error en caso de que se hayan producido errores. Utilice macros SUCCEEDED/FAILED para comprobar si existe una condición de error.
@@ -113,5 +115,5 @@ HRESULT CvWriteMessageExVA(
 
  **ANSI:** CvWriteMessageA, CvWriteMessageVA, CvWriteMessageExA, CvWriteMessageExVA
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Referencia de la biblioteca C++](../profiling/cpp-library-reference.md)

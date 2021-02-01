@@ -1,5 +1,6 @@
 ---
 title: Pausar y reanudar la recopilación de datos de rendimiento | Microsoft Docs
+description: Obtenga información sobre cómo puede controlar la recolección de datos de generación de perfiles de forma interactiva desde la ventana de la página de la sesión de generación de perfiles.
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5abdd7f8324e76f452d5e090aba861f8e7cf8301
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 3e9cd58eb6563298a0ee38fbad0cbae5d85e57e9
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851390"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723353"
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>Procedimiento Pausar y reanudar la recopilación de datos de rendimiento
 En la ventana de la página de la sesión de generación de perfiles, puede controlar la recolección de datos de generación de perfiles de forma interactiva.

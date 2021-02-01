@@ -1,5 +1,6 @@
 ---
 title: VSPerfCLREnv | Microsoft Docs
+description: Obtenga información sobre cómo se usa la herramienta VSPerfCLREnv a fin de establecer las variables de entorno necesarias para generar perfiles de una aplicación de .NET Framework.
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 828768b59e4ab465e4723d399d406b994fa8c8ce
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1aa0d4a476c64ec20f0a378398cfb95e364a07e3
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330429"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719219"
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
 
@@ -65,7 +66,7 @@ VSPerfCmd /Attach:MyService.exe
 
 En la siguiente tabla se describen las opciones de VSPerfCLREnv para la generación de perfiles de instrumentación:
 
-|Opción|Description|
+|Opción|Descripción|
 |------------|-----------------|
 |**TraceOn**|Permite generar perfiles mediante el método de instrumentación. No permite la generación de perfiles de asignación de memoria o recopilar datos de duración de objetos.|
 |**TraceGC**|Permite generar perfiles de asignación de memoria mediante el método de instrumentación. No permite recopilar datos de duración de objetos.|
@@ -75,7 +76,7 @@ En la siguiente tabla se describen las opciones de VSPerfCLREnv para la generaci
 
 En la siguiente tabla se describen las opciones de VSPerfCLREnv para la generación de perfiles de muestreo:
 
-|Opción|Description|
+|Opción|Descripción|
 |------------|-----------------|
 |**SampleOn**|Permite generar perfiles mediante el método de muestreo. No permite la generación de perfiles de asignación de memoria o recopilar datos de duración de objetos.|
 |**SampleGC**|Permite generar perfiles de asignación de memoria mediante el método de muestreo. No permite recopilar datos de duración de objetos.|
@@ -86,7 +87,7 @@ En la siguiente tabla se describen las opciones de VSPerfCLREnv para la generaci
 
 Para generar perfiles de un servicio administrado como una aplicación web ASP.NET que inicia el sistema operativo en lugar del usuario, utilice las opciones de generación de perfiles global de las opciones de VSPerfCLREnv. En la siguiente tabla se describen las versiones globales de las opciones de VSPerfCLREnv. Estas opciones establecen las variables de entorno adecuadas en el registro.
 
-|Opción|Description|
+|Opción|Descripción|
 |------------|-----------------|
 |**GlobalTraceOn**|Permite generar perfiles globales mediante el método de instrumentación. No recopila eventos de asignación de memoria ni datos de duración de objetos.|
 |**GlobalTraceGC**|Permite generar perfiles de asignación de memoria globales mediante el método de instrumentación. No permite recopilar datos de duración de objetos.|
@@ -99,9 +100,9 @@ Para generar perfiles de un servicio administrado como una aplicación web ASP.N
 
  Cuando haya terminado de generar perfiles de la aplicación administrada, utilice una de las siguientes opciones para eliminar las variables de entorno que agregó VSPerfCLREnv. En la siguiente tabla se describe cómo eliminar las variables de entorno estándar y globales:
 
-|Opción|Description|
+|Opción|Descripción|
 |------------|-----------------|
-|**Off**|Elimina las variables de entorno de generación de perfiles de .NET estándar. Utilice esta opción cuando se hayan utilizado las opciones de VSPerfClrEnv que no sean globales para establecer las variables de entorno del generador de perfiles.|
+|**Desactivado**|Elimina las variables de entorno de generación de perfiles de .NET estándar. Utilice esta opción cuando se hayan utilizado las opciones de VSPerfClrEnv que no sean globales para establecer las variables de entorno del generador de perfiles.|
 |**GlobalOff**|Elimina las variables de entorno de generación de perfiles de .NET global. Utilice esta opción cuando el sistema operativo, y no el generador de perfiles, haya iniciado la aplicación.|
 
 ## <a name="remarks"></a>Observaciones

@@ -1,5 +1,6 @@
 ---
 title: span (Clase) | Microsoft Docs
+description: Obtenga más información sobre la clase span y cómo define una fase de la aplicación. Obtenga más información también sobre los constructores públicos de la clase span y la jerarquía de herencia.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d8f31d24dc6c6c2ea20b50c9bf8af1cb4a9f9af
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0ca1e674b13877ff8a8864c3b7447f15fd0307d7
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62979762"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720051"
 ---
 # <a name="span-class"></a>Clase span
 Define una fase de la aplicación.
@@ -32,7 +33,7 @@ class span;
 
 ### <a name="public-constructors"></a>Constructores públicos
 
-|NOMBRE|Descripción|
+|Nombre|Descripción|
 |----------|-----------------|
 |[span::span (Constructor)](../profiling/span-span-constructor.md)|Inicializa una nueva instancia de la clase `span`.|
 |[span::~span (Destructor)](../profiling/span-tilde-span-destructor.md)|Destruye el objeto de `span` y libera sus recursos.|
@@ -43,7 +44,7 @@ class span;
 ## <a name="requirements"></a>Requisitos
  **Encabezado:** *cvmarkersobj.h*
 
- **Espacio de nombres**: Concurrency::diagnostic
+ **Espacio de nombres:** Concurrency::diagnostic
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [espacio de nombres de diagnóstico](../profiling/diagnostic-namespace.md)

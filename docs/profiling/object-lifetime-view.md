@@ -1,5 +1,6 @@
 ---
 title: Visa Duración del objeto| Microsoft Docs
+description: Obtenga información sobre cómo la vista Duración del objeto está disponible cuando se activa la opción "Also collect .NET object lifetime data" (Recopilar también datos de duración del objeto de .NET) en las páginas de propiedades de la sesión de rendimiento.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +18,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d4ea486930d0ea9f266b4ee57b69a50f7c570651
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9405b66c7412d65402a5572dcb5c71b232341b22
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74772629"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722872"
 ---
 # <a name="object-lifetime-view"></a>Vista Duración del objeto
 La vista Duración del objeto está disponible cuando se activa **Also collect .NET object lifetime data** (Recopilar también datos de duración del objeto de .NET) en las páginas de propiedades de la **sesión de rendimiento**.
@@ -33,7 +34,7 @@ La vista Duración del objeto está disponible cuando se activa **Also collect .
 
 ## <a name="general"></a>General
 
-|Columna|Description|
+|Columna|Descripción|
 |------------|-----------------|
 |**Nombre de la clase**|Nombre de clase del tipo asignado.|
 |**Identificador del proceso**|El identificador del proceso de la ejecución de generación de perfiles.|
@@ -44,7 +45,7 @@ La vista Duración del objeto está disponible cuando se activa **Also collect .
 ## <a name="instance-data"></a>Datos de instancia
  Datos de instancia indica el número de objetos del tipo que se crearon en la generación de perfiles y la generación en la que se desasignaron objetos por parte del recolector de elementos no utilizados.
 
-|Columna|Description|
+|Columna|Descripción|
 |------------|-----------------|
 |**Instancias**|Número de asignaciones de objetos de este tipo.|
 |**Total de instancias %**|Porcentaje del número total de asignaciones que se realizaron en la generación de perfiles.|
@@ -56,7 +57,7 @@ La vista Duración del objeto está disponible cuando se activa **Also collect .
 ## <a name="size-byte-data"></a>Tamaño (bytes) de datos
  El tamaño (bytes) de datos indica el número de objetos del tipo que se crearon en la generación de perfiles y la cantidad de memoria que se reclamó en cada generación en la que se desasignaron los objetos.
 
-|Columna|Description|
+|Columna|Descripción|
 |------------|-----------------|
 |**Total de bytes asignados**|Número total de bytes de todas las instancias del tipo.|
 |**Total de bytes %**|Porcentaje del número total de bytes asignados en la generación de perfiles, que se asignaron para instancias de este tipo.|
@@ -67,10 +68,10 @@ La vista Duración del objeto está disponible cuando se activa **Also collect .
 ## <a name="large-object-heap-data"></a>Tamaño de montón de objetos grandes
  El asignador de memoria de .NET administra objetos muy grandes en una ubicación que es independiente del montón administrado estándar. Los datos de montón de objeto grande indican el número y el tamaño de los objetos del tipo que se administraron en esta ubicación.
 
-|Columna|Description|
+|Columna|Descripción|
 |------------|-----------------|
 |**Instancias de montón de objeto grande recopiladas**|Número de instancias de este tipo que se encontraban en el montón de objeto grande y que se recopilaron en la generación de perfiles.|
 |**Bytes de montón de objeto grande recopilados**|Tamaño, en bytes, de las instancias de este tipo que se encontraban en el montón de objeto grande y que se recopilaron en la generación de perfiles.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Vistas de datos de memoria de .NET](../profiling/dotnet-memory-data-views.md)

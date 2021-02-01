@@ -1,5 +1,6 @@
 ---
 title: Información general sobre el informe de rendimiento | Microsoft Docs
+description: Vea los datos de generación de la ventana Informe de rendimiento del entorno de desarrollo integrado de Visual Studio Team System Development Edition.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 517156677a6d3711fa5dc2e4a15629a55229cfe2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 95fbb51cbcc4d2467b9d1636c7e9f61232791d62
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74772237"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722768"
 ---
 # <a name="performance-report-overview"></a>Información general sobre el informe de rendimiento
 Puede ver los datos de generación de perfiles de una sesión de rendimiento en la ventana **Informe de rendimiento** del entorno de desarrollo integrado (IDE) de Visual Studio Team System Development Edition. Los datos de generación de perfiles se guardan en archivos .vsp y .vsps. Las ventanas de la vista Informe permiten ver y analizar problemas de rendimiento de la aplicación.
@@ -38,7 +39,7 @@ Puede ver los datos de generación de perfiles de una sesión de rendimiento en 
 ### <a name="summary-view"></a>Vista Resumen
  De forma predeterminada, en la vista Resumen se muestran los datos de generación de perfiles. Esta vista es un punto de partida en la investigación de problemas de rendimiento. Desde cada línea de la vista Resumen, puede desplazarse a vistas más detalladas haciendo clic con el botón derecho en el nombre del módulo o la función. Para obtener más información, consulte [Vista Resumen](../profiling/summary-view.md).
 
-### <a name="callercallee-view"></a>Vista Llamador y destinatario
+### <a name="callercallee-view"></a>Llamador y destinatario (vista)
  La vista Llamador y destinatario muestra un árbol de llamadas para una función individual. Esta vista está dividida en tres partes:
 
 - La función de destino se muestra en el centro de la vista.
@@ -94,6 +95,6 @@ Puede ver los datos de generación de perfiles de una sesión de rendimiento en 
 
 - **Exportar**: guarda el informe actual en un archivo con formato .CSV o .XML, con opciones para guardar las diferentes vistas.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Análisis de datos de herramientas de rendimiento](../profiling/analyzing-performance-tools-data.md)
 - [Vistas de informes de rendimiento](../profiling/performance-report-views.md)

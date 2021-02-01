@@ -1,5 +1,7 @@
 ---
 title: Marcadores del Visualizador de simultaneidad | Microsoft Docs
+description: 'Obtenga más información sobre los marcadores en el visualizador de simultaneidad. Los marcadores son iconos que representan eventos generados por una aplicación. Hay tres tipos: marcas, mensajes e intervalos.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab5e4b65db5c3d96b16a68a7b8e21a2786b9110b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fab8108e15f3cbaf81130c2ce8533d00f2a23c7e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "63001053"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721000"
 ---
 # <a name="concurrency-visualizer-markers"></a>Marcadores del Visualizador de simultaneidad
 En el visualizador de simultaneidad, los marcadores son iconos que representan los eventos que se producen en una aplicación.  Normalmente, la aplicación genera estos eventos para designar las fases o las instancias de una aplicación.  Los eventos se pueden generar mediante la aplicación o las bibliotecas y los runtimes que utiliza la aplicación.
@@ -60,7 +62,7 @@ En el visualizador de simultaneidad, los marcadores son iconos que representan l
 ## <a name="markers-from-eventsource"></a>Marcadores de EventSource
  El visualizador de simultaneidad también puede mostrar eventos EventSource.  Para obtener más información, vea [Visualizar eventos EventSource como marcadores](../profiling/visualizing-eventsource-events-as-markers.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Marcadores de marca](../profiling/flag-markers.md)
 - [Marcadores de mensaje](../profiling/message-markers.md)
 - [Marcadores de intervalo](../profiling/span-markers.md)

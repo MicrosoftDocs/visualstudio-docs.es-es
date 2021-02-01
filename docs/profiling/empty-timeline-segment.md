@@ -1,5 +1,7 @@
 ---
 title: Segmento de escala de tiempo vacío | Microsoft Docs
+description: En el visualizador de simultaneidad de Visual Studio, entienda por qué una sección de una escala de tiempo puede estar vacía (tiene un fondo blanco) para un tipo de canal.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a96cdc7ae4edc7ea7193d5b95dfc73fa1747c1fb
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 15dc4526ce101e21c00fe083b85f81db92bcd609
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62970114"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801430"
 ---
 # <a name="empty-timeline-segment"></a>Segmento de escala de tiempo vacío
 En el visualizador de simultaneidad, el motivo por el que una sección de la escala de tiempo está vacía (tiene un fondo blanco) depende del tipo de canal.
@@ -31,5 +33,5 @@ En el visualizador de simultaneidad, el motivo por el que una sección de la esc
 - Un canal de marcador, significa que no se generó ningún marcador.
 
 ## <a name="see-also"></a>Vea también
-- [Vista Subprocesos](../profiling/threads-view-parallel-performance.md)
+- [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)
 - [Control de zoom (vista Subprocesos)](../profiling/zoom-control-threads-view.md)

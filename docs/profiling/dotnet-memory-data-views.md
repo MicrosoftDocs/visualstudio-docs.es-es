@@ -1,5 +1,7 @@
 ---
 title: Vistas de datos de memoria de .NET | Microsoft Docs
+description: Consulte los vínculos a la información de referencia de las vistas y los informes de archivos de datos del generador de perfiles que contienen datos de la generación de perfiles de memoria de .NET.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e74027512eba0d64593133a3bbe758570cbf567
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8a4a6143127a2e55bf5c13cf6606bfe00de5cd9e
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779277"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801274"
 ---
 # <a name="net-memory-data-views"></a>Vistas de datos de memoria de .NET
 Esta sección contiene información de referencia acerca de las vistas y los informes de archivos de datos del generador de perfiles que contienen datos de generación de perfiles de memoria de .NET.
@@ -55,7 +57,7 @@ Esta sección contiene información de referencia acerca de las vistas y los inf
 
  Enumera los datos de asignación de memoria de las líneas de código fuente de las funciones de la ejecución de generación de perfiles.
 
-- [Vista Punteros de instrucciones (IP): muestreo](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)
+- [Vista Punteros de instrucción (IP): muestreo](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)
 
  Enumera los datos de asignación de memoria de las instrucciones de las funciones de la ejecución de generación de perfiles.
 

@@ -1,5 +1,6 @@
 ---
 title: Solucionar problemas de herramientas de rendimiento | Microsoft Docs
+description: Obtenga información sobre los distintos aspectos que puede experimentar al solucionar problemas de las herramientas de rendimiento, por ejemplo, cuando las Herramientas de generación de perfiles no recopilan datos.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0b61cdf7-75b7-4abd-aff2-7bd997717626
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 514b910f2c19822dc821b8c9a52ae96b8aac80f0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d079c2fbd41f6a3eff881a544e8b88c50938e3bf
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778107"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722417"
 ---
 # <a name="troubleshoot-performance-tools-issues"></a>Solución de problemas de herramientas de rendimiento
 Puede experimentar uno de los siguientes problemas al utilizar las herramientas de generación de perfiles:

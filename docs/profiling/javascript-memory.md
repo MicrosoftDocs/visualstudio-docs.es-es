@@ -1,5 +1,6 @@
 ---
 title: Análisis del uso de memoria de JavaScript en aplicaciones de UWP | Microsoft Docs
+description: Obtenga información sobre cómo el analizador de memoria de JavaScript está disponible para ayudarle a entender la utilización de la memoria y a localizar fugas de memoria en las aplicaciones para UWP creadas para Windows con JavaScript.
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -20,12 +21,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 86a1b857639d8a58ffc7686569ad8e103674f136
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: a29d12a4ca2e6a7a620c5197f76c0ad35ac33a40
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037489"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721689"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Análisis del uso de memoria de JavaScript en aplicaciones de UWP
 El analizador de memoria de JavaScript está disponible en Visual Studio para ayudarle a entender el uso de memoria y a localizar fugas de memoria en las aplicaciones para UWP creadas para Windows con JavaScript. Las aplicaciones compatibles comprenden las aplicaciones universales de Windows.
@@ -114,7 +115,7 @@ El analizador de memoria de JavaScript está disponible en Visual Studio para ay
 
 5. Cambia a Visual Studio (presione **Alt**+**Tab**).
 
-6. Elige **Tomar instantánea de montón**para tomar una instantánea de montón de línea de base.
+6. Elige **Tomar instantánea de montón** para tomar una instantánea de montón de línea de base.
 
     En la ilustración siguiente se muestra un ejemplo de una instantánea de línea de base.
 
@@ -302,7 +303,7 @@ El analizador de memoria de JavaScript está disponible en Visual Studio para ay
  Para mostrar estos objetos, elija **Mostrar elementos integrados** en la lista de configuración ![Lista desplegable de configuración en el analizador de memoria](../profiling/media/js_mem_settings.png "JS_Mem_Settings"), en la esquina superior derecha del panel.
 
 ## <a name="save-diagnostic-session-files"></a>Guardar archivos de sesión de diagnóstico
- Los resúmenes de instantánea de diagnóstico y sus vistas de detalles asociadas se guardan como archivos *.diagsession*. El**Explorador de soluciones** muestra las sesiones de diagnóstico anteriores en la carpeta Diagnostic Sessions. En el **Explorador de soluciones**, puedes abrir sesiones anteriores o quitar o cambiar el nombre de archivos.
+ Los resúmenes de instantánea de diagnóstico y sus vistas de detalles asociadas se guardan como archivos *.diagsession*. El **Explorador de soluciones** muestra las sesiones de diagnóstico anteriores en la carpeta Diagnostic Sessions. En el **Explorador de soluciones**, puedes abrir sesiones anteriores o quitar o cambiar el nombre de archivos.
 
 ## <a name="associate-source-code-with-memory-usage-data"></a>Asociar código fuente con los datos de uso de memoria
  Para ayudar a aislar la sección de código que tienes problemas de memoria, usa los siguientes métodos:

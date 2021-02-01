@@ -1,5 +1,6 @@
 ---
 title: Generación de perfiles y seguridad en Windows Vista | Microsoft Docs
+description: En función de la configuración disponible de los permisos de acceso del usuario, un usuario puede tener permisos de seguridad para generar perfiles de un proceso en ese equipo.
 ms.date: 11/02/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a74862d59fe402cbfd9e6bfa804d62ca4c8310b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0bfd12808a4639f44a3a5075a4b474012ab2c2fa
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778380"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719414"
 ---
 # <a name="profiling-and-windows-vista-security"></a>Generación de perfiles y seguridad en Windows Vista
 
@@ -45,8 +46,8 @@ Puede ver una lista de los procesos que están disponibles mediante el estableci
 
   Cuando esta opción no está seleccionada, la lista muestra los procesos de la sesión actual. De lo contrario, la lista muestra los procesos de todas las sesiones.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Información general](../profiling/overviews-performance-tools.md)
+- [Temas de introducción](../profiling/overviews-performance-tools.md)
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [Cómo: Conectar a procesos en ejecución](/previous-versions/visualstudio/visual-studio-2010/c6wf8e4z\(v\=vs.100\))
