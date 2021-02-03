@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c69f93aca88cb8e83417a370de7113640d3ae38c
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 3a6f1efc85366bc74206dc8637c992f249c4eb44
+ms.sourcegitcommit: e443866e3468f838bc3655ad56a83a552013ceed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351341"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98925887"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>Tutorial: Depuración de una hoja de estilos XSLT
 
@@ -24,7 +24,7 @@ En este tutorial se indican los pasos para utilizar el depurador de XSLT. Éstos
 Para prepararse para este tutorial, copie primero los dos [archivos de ejemplo](#sample-files) en el equipo local. Uno es la hoja de estilos y otro es el archivo XML que se utilizará como entrada para la hoja de estilos. En este tutorial, la hoja de estilos que usamos busca todos los libros cuyo costo sea inferior al precio medio de los libros.
 
 > [!NOTE]
-> El depurador de XSLT solo está disponible en la edición Enterprise de Visual Studio.
+> El depurador de XSLT solo está disponible en las ediciones Professional y Enterprise de Visual Studio.
 
 ## <a name="start-debugging"></a>Iniciar depuración
 
