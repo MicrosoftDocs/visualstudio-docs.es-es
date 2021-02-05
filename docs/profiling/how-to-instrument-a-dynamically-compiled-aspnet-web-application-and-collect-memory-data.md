@@ -1,5 +1,7 @@
 ---
 title: 'Línea de comandos del generador de perfiles: Instrumentación de la aplicación de ASP.NET dinámica y obtención de los datos de memoria'
+description: Aprenda a usar las herramientas de línea de comandos de las Herramientas de generación de perfiles de Visual Studio para recopilar datos detallados de la actividad de la memoria para una aplicación ASP.NET compilada dinámicamente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 2cdd9903-39db-47e8-93dd-5e6a21bc3435
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 7c1fafd3b21dd40da1215e7864c6d66090589d03
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: c26342fb956aa5043f316015f05e18ef70d20559
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85328074"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883597"
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Procedimiento Instrumentar una aplicación web ASP.NET compilada dinámicamente y recopilar datos de memoria mediante la línea de comandos del generador de perfiles
 En este tema se explica cómo usar las herramientas de línea de comandos de las Herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para recopilar datos detallados de asignación de memoria y de duración de objetos de .NET para una aplicación web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilada dinámicamente mediante el método de generación de perfiles de instrumentación.

@@ -1,5 +1,7 @@
 ---
 title: 'Línea de comandos del generador de perfiles: Instrumentación de la aplicación de ASP.NET dinámica y obtención de los datos de intervalos'
+description: Aprenda a usar las herramientas de línea de comandos de las Herramientas de generación de perfiles de Visual Studio para recopilar datos detallados de control de tiempo para una aplicación ASP.NET compilada dinámicamente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: mikejo5000
@@ -8,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: f510878c3952cb98bcbee3bfecedf05b87b2658f
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 318728a78e6f15d8858aa2f037b890a3bfe8aeca
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85327968"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883636"
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line"></a>Procedimiento Instrumentar una aplicación web ASP.NET compilada dinámicamente y recopilar datos detallados de control de tiempo con el generador de perfiles mediante la línea de comandos
 

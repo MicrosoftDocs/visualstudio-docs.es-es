@@ -1,5 +1,7 @@
 ---
 title: Limitar la instrumentación a archivos DLL específicos | Microsoft Docs
+description: Aprenda a usar el método de generación de perfiles de instrumentación para limitar la recopilación de datos de generación de perfiles a uno o más archivos .dll en una aplicación.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a3584498854e7518e93c4ba00dc019d804b0e8d8
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 7bd781f2c62a313a8e0c0b044103ca5da28021f8
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851026"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883376"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Procedimiento Limitar la instrumentación a archivos DLL específicos
 

@@ -1,5 +1,7 @@
 ---
 title: 'Línea de comandos del generador de perfiles: Instrumentación de la aplicación de ASP.NET estática y obtención de los datos de memoria'
+description: Aprenda a usar las herramientas de línea de comandos de las Herramientas de generación de perfiles de Visual Studio para recopilar datos de memoria y de control de tiempo para un sitio web o un componente web precompilado de ASP.NET.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: ea1dcb7c-1dc3-49ff-9418-8795b5b3d3bc
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 427ece50dc2e8add6cc05e944907a9e0e1a890ae
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 51523991ece7322eef6db38a7b5738ce07a471ea
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85327935"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883509"
 ---
 # <a name="how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Procedimiento Instrumentar una aplicación web ASP.NET compilada estáticamente y recopilar datos de memoria mediante la línea de comandos del generador de perfiles
 En este artículo se describe cómo utilizar las herramientas de línea de comandos de las Herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para instrumentar un sitio web o componente web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] precompilado y recopilar datos detallados de asignación de memoria de .NET, duración de objetos y control de tiempo.

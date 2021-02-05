@@ -1,5 +1,7 @@
 ---
 title: Crear manualmente sesiones de rendimiento | Microsoft Docs
+description: Obtenga información sobre cómo crear manualmente una sesión de rendimiento sin abrir un proyecto en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b918c201509829ad4194da415441ddd9506638a1
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 1a368da7a69d921c7e7a55922fb89774ce192b08
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851013"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883497"
 ---
 # <a name="how-to-manually-create-performance-sessions"></a>Procedimiento Crear manualmente sesiones de rendimiento
 Puede crear manualmente una sesión de rendimiento. No es necesario abrir un proyecto en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para ello. Para obtener más información, vea [Configuración sesiones de rendimiento](../profiling/configuring-performance-sessions.md).

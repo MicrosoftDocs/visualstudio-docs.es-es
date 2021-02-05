@@ -1,5 +1,7 @@
 ---
 title: 'Línea de comandos del generador de perfiles: Apertura de la aplicación cliente nativa y obtención de los datos de simultaneidad'
+description: Aprenda a usar las herramientas de línea de comandos de las Herramientas de generación de perfiles de Visual Studio para iniciar una aplicación cliente independiente y nativa, y recopilar datos de simultaneidad de procesos y de subprocesos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: e5aed651-afed-4b70-9a7e-1a6032cc614f
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0aeebe82e3c7b574b65ab463a7bfd986d43d46ef
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: ce8c16c3c895c0538f91bdb27af08e003b1450cf
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85327653"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883512"
 ---
 # <a name="how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>Procedimiento Iniciar una aplicación nativa independiente con el generador de perfiles para recopilar datos de simultaneidad mediante la línea de comandos
 En este tema se describe cómo utilizar las herramientas de línea de comandos de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para iniciar una aplicación independiente nativa (cliente) y recopilar datos de simultaneidad de procesos y de subprocesos.
@@ -77,7 +79,7 @@ En este tema se describe cómo utilizar las herramientas de línea de comandos d
 - También puede usar la opción [/mark](../profiling/mark.md) de **VSPerfCmd.exe** para insertar una marca de generación de perfiles en el archivo de datos. El comando **/mark** agrega un identificador, una marca de tiempo y una cadena de texto opcional definida por el usuario. Las marcas se pueden utilizar para filtrar los datos que se muestran en las vistas de informes y datos del generador de perfiles.
 
 ## <a name="end-the-profiling-session"></a>Finalización de la sesión de generación de perfiles
- Para finalizar la sesión de generación de perfiles, el generador de perfiles no debe estar recopilando datos. Para dejar de recopilar datos de simultaneidad, cierre la aplicación para la que se generan perfiles o invoque la opción **VSPerfCmd /detach**. Después, invoque a la opción **VSPerfCmd /shutdown** para desactivar el generador de perfiles y cerrar el archivo de datos de generación de perfiles.
+ Para finalizar la sesión de generación de perfiles, el generador de perfiles no debe estar recopilando datos. Para dejar de recopilar datos de simultaneidad, cierre la aplicación para la que se generan perfiles o invoque la opción **VSPerfCmd /detach**. Después, invoque la opción **VSPerfCmd /shutdown** para desactivar el generador de perfiles y cerrar el archivo de datos de generación de perfiles.
 
 #### <a name="to-end-a-profiling-session"></a>Para finalizar una sesión de generación de perfiles
 

@@ -11,16 +11,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bde5bb8722e0f95a10991019bdc9cba9c8a48ec3
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 599ebe86867e78d17029b2787b9f35b6755c3040
+ms.sourcegitcommit: 586369f5aa61d4a0330802f718f0ceaa55d7e9c7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204896"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99224358"
 ---
 # <a name="debug-net-core-on-linux-using-ssh-by-attaching-to-a-process"></a>Depuración de .NET Core en Linux con SSH mediante la asociación a un proceso
 
-A partir de Visual Studio 2017, puede crear asociaciones a los procesos de .NET Core que se ejecutan en una implementación de Linux local o remota a través de SSH. En este artículo se describe cómo configurar la depuración y cómo depurar. Para conocer los escenarios de depuración con contenedores de Docker, consulte [Asociación a procesos que se ejecuta en contenedores de Docker](../debugger/attach-to-process-running-in-docker-container.md).
+A partir de Visual Studio 2017, puede crear asociaciones a los procesos de .NET Core que se ejecutan en una implementación de Linux local o remota a través de SSH. En este artículo se describe cómo configurar la depuración y cómo depurar. Para conocer los escenarios de depuración con contenedores de Docker, consulte [Asociación a procesos que se ejecutan en contenedores de Docker](../debugger/attach-to-process-running-in-docker-container.md) y el artículo sobre las [herramientas de contenedor](../containers/edit-and-refresh.md). Para depurar Linux en WSL 2 desde Visual Studio (sin asociar al proceso), vea [Depuración de aplicaciones de .NET Core en WSL 2 con Visual Studio](../debugger/debug-dotnet-core-in-wsl-2.md).
 
 ## <a name="prerequisites"></a>Requisitos previos
 

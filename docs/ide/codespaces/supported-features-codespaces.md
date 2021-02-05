@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 68fbdef0e86b125971480ae1bd6a7ba6d3108cd8
-ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
+ms.openlocfilehash: 994ac7b759b943a2076c4e8f401d757258e782ab
+ms.sourcegitcommit: 0e91210421974ad08189919495a7327e60be93bb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "97696539"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99251445"
 ---
 # <a name="supported-visual-studio-features-preview"></a>Características de Visual Studio compatibles (Preview)
 
@@ -73,6 +73,7 @@ Se admite la mayoría de los tipos de aplicación y las configuraciones de proye
 No disponible aún:
 
 * Diseñadores de interfaz de usuario: WinForms, WPF y diseñadores de recursos.
+* La conversión de aplicaciones de proyectos de WinForms y WPF solo está disponible con una marca de características
 * Proyectos de Visual Basic y F#
 * Proyectos destinados a .NET Framework
 * Proyectos de Docker Compose
@@ -108,7 +109,7 @@ No disponible aún:
 
 Al trabajar con Visual Studio conectado a un codespace, se obtienen las mismas características de accesibilidad que al trabajar de forma local.
 
-* Control de código fuente: compatibilidad con Git completa a través de la nueva [experiencia de Git integrada](../git-with-visual-studio.md).
+* Control de código fuente: compatibilidad con Git completa a través de la nueva [experiencia de Git integrada](../git-with-visual-studio.md). Para que los submódulos de Git se clonen a un elemento codespace, es posible que tenga que ejecutar `git submodule update` desde el terminal.
 * Accesibilidad: hay un problema conocido con la tecnología de asistencia que no es capaz de acceder a la appcasting de una aplicación depurada. Además de esta limitación, no creemos que haya otros problemas de compatibilidad que no existan ya en la experiencia de Visual Studio local. Si detecta errores comuníquenoslo presentando una incidencia en [Developer Community](https://aka.ms/feedback/report?space=8).
 * Publicación: se admite la publicación en Azure a través de Acciones de GitHub.
 * Servicios conectados: se admiten parcialmente App Insights, KeyVault, Storage, SQL, Redis, Cosmos, openAPI y gRPC.

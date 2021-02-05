@@ -1,5 +1,7 @@
 ---
 title: Limitar la instrumentación a funciones específicas | Microsoft Docs
+description: Obtenga información sobre cómo limitar la instrumentación y la recopilación de datos a una o más funciones configurando las opciones de la página "Avanzado" o de las páginas de propiedades del binario de destino.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b2316c0c3fe0b74bbd7b3e80324284f37dff0e64
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 92825f77b1c94a7545b399dbc1cb35ecefb8218d
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851000"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883337"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-functions"></a>Procedimiento Limitar la instrumentación a funciones específicas
 La instrumentación y recopilación de datos se pueden limitar a una o más funciones. Basta con establecer las opciones de la página **Avanzado** de la **Sesión de rendimiento** o las páginas de propiedades del binario de destino:
@@ -42,10 +44,10 @@ La instrumentación y recopilación de datos se pueden limitar a una o más func
 
     **/include:** `FuncSpec` **[;** `FuncSpec` **]** `...`
 
-    `FuncSpec` es el nombre del espacio de nombres y la función. Tiene el formato `Namespace` **::** `FunctionName`. Use un signo de punto y coma para separar varias funciones. Use un asterisco (\*) para especificar un carácter comodín para uno o más caracteres. Por ejemplo, **-include:MyNS::\\** * especifica todas las funciones en el espacio de nombres MyNS.
+    `FuncSpec` es el nombre del espacio de nombres y la función. Tiene el formato `Namespace` **::** `FunctionName`. Use un signo de punto y coma para separar varias funciones. Use un asterisco (\*) para especificar un carácter comodín para uno o más caracteres. Por ejemplo, **/include:MyNS::\\** _ especifica todas las funciones en el espacio de nombres MyNS.
 
    > [!NOTE]
-   > Para obtener una lista de las funciones en un archivo binario, abra una ventana de símbolo del sistema en el directorio de instalación de Herramientas de generación de perfiles (vea [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)) y después escriba **vsinstr /DumpFuncs**.
+   > Para obtener una lista de las funciones en un archivo binario, abra una ventana de símbolo del sistema en el directorio de instalación de las Herramientas de generación de perfiles (vea el artículo [Especificar la ruta de acceso a las herramientas de línea de comandos de las Herramientas de generación de perfiles](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)) y después escriba _ *vsinstr /DumpFuncs**.
 
 ### <a name="to-limit-instrumentation-to-specific-functions-in-a-binary"></a>Para limitar la instrumentación a funciones específicas en un binario
 
@@ -61,10 +63,10 @@ La instrumentación y recopilación de datos se pueden limitar a una o más func
 
     **/include:** `FuncSpec` **[;** `FuncSpec` **]** `...`
 
-    `FuncSpec` es el nombre del espacio de nombres y la función. Tiene el formato `Namespace` **::** `FunctionName`. Use un signo de punto y coma para separar varias funciones. Use un asterisco (\*) para especificar un carácter comodín para uno o más caracteres. Por ejemplo, **-include:MyNS::\\** * especifica todas las funciones en el espacio de nombres MyNS.
+    `FuncSpec` es el nombre del espacio de nombres y la función. Tiene el formato `Namespace` **::** `FunctionName`. Use un signo de punto y coma para separar varias funciones. Use un asterisco (\*) para especificar un carácter comodín para uno o más caracteres. Por ejemplo, **/include:MyNS::\\** _ especifica todas las funciones en el espacio de nombres MyNS.
 
    > [!NOTE]
-   > Para obtener una lista de las funciones en un archivo binario, abra una ventana de símbolo del sistema en el directorio de instalación de Herramientas de generación de perfiles (vea [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)) y después escriba **vsinstr /DumpFuncs**.
+   > Para obtener una lista de las funciones en un archivo binario, abra una ventana de símbolo del sistema en el directorio de instalación de las Herramientas de generación de perfiles (vea el artículo [Especificar la ruta de acceso a las herramientas de línea de comandos de las Herramientas de generación de perfiles](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)) y después escriba _ *vsinstr /DumpFuncs**.
 
 ## <a name="see-also"></a>Vea también
 - [Control de la recopilación de datos](../profiling/controlling-data-collection.md)

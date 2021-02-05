@@ -1,5 +1,6 @@
 ---
 title: 'Archivo web.config: instrumentación y generación de perfiles de aplicación ASP.NET dinámica'
+description: Obtenga información sobre cómo usar las Herramientas de generación de perfiles de Visual Studio para recopilar datos de control de tiempo y de actividad de la memoria para una aplicación web ASP.NET compilada dinámicamente.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 9682fe820e34e8e30a3c57670f5e5fbc7eae2153
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: e08732689d11cd7de70df1e93d1d1110a35baa6d
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809601"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883504"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Procedimiento Modificar archivos web.config para instrumentar y generar perfiles de aplicaciones web ASP.NET compiladas dinámicamente
 Puede usar el método de instrumentación de las herramientas de generación de perfiles [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para recopilar datos detallados de tiempo, los datos de asignación de memoria de .NET y datos de duración de objetos .NET de aplicaciones web compiladas de forma dinámica [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].

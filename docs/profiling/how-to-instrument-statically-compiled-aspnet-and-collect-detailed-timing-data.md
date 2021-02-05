@@ -1,5 +1,7 @@
 ---
 title: 'Línea de comandos del generador de perfiles: Instrumentación de la aplicación de ASP.NET estática y obtención de los datos de intervalos'
+description: Aprenda a usar las herramientas de línea de comandos de las Herramientas de generación de perfiles de Visual Studio para recopilar datos detallados de control de tiempo para un sitio web o un componente web precompilado de ASP.NET.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: b260ce68-76e6-4c3b-8062-3c00bd5cf7b8
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 97d8e18d68ecaf0abf2b3b94e6c22ea6ba3237de
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 256cecda13b15eb679ac3826199d6c86df7a1acf
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85327923"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883532"
 ---
 # <a name="how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line"></a>Procedimiento Instrumentar una aplicación web ASP.NET compilada estáticamente y recopilar datos detallados de control de tiempo con el generador de perfiles mediante la línea de comandos
 En este artículo se describe cómo usar las herramientas de línea de comandos de las Herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para instrumentar un componente web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] precompilado o un sitio web, y recopilar datos de tiempo detallados.

@@ -1,5 +1,7 @@
 ---
 title: 'Línea de comandos del generador de perfiles: Instrumentación del servicio de .NET y obtención de datos de intervalos'
+description: Aprenda a usar las herramientas de línea de comandos de las Herramientas de generación de perfiles de Visual Studio para recopilar datos detallados de control de tiempo para un servicio de .NET Framework.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: mikejo5000
@@ -8,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 62303ab2ea7296ca5093636efcf97ea7a3c540c1
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 6002af64474c6ed15aa9807b804c588f20f1443b
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85331475"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883610"
 ---
 # <a name="how-to-instrument-a-net-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Procedimiento Instrumentar un servicio .NET y recopilar datos detallados de control de tiempo mediante la línea de comandos del generador de perfiles
 

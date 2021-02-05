@@ -1,5 +1,7 @@
 ---
 title: 'Línea de comandos del generador de perfiles: Instrumentación del servicio de .NET y obtención de datos de memoria'
+description: Aprenda a usar las herramientas de línea de comandos de las Herramientas de generación de perfiles de Visual Studio para recopilar datos de asignación de memoria y de duración de objetos para un servicio de .NET Framework.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 2fa072fc-05fe-4420-99c0-51d2ea3ac4ce
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8ff00f9a8a79dadc0cc037b707db057610b904e8
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 28d17a80a04ad7ecd8e7dcb35226b3b1815db4bb
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809614"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883662"
 ---
 # <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>Procedimiento Instrumentar un servicio de .NET Framework y recopilar datos de memoria mediante la línea de comandos del generador de perfiles
 

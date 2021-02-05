@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cfec7d31e6fc2c120ef42dc9de2a5a7eea4132e0
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 909e15a3acdc6725556c8d5121a363d1754a74be
+ms.sourcegitcommit: cfeffe2364275a347db0ba2dce36d8e80001c081
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597098"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99104284"
 ---
 # <a name="how-to-save-and-open-files-with-encoding"></a>Cómo: Guardar y abrir archivos con codificación
 
@@ -39,6 +39,9 @@ Puede guardar archivos con codificación de caracteres específicos para admitir
      Esta opción es útil si va a intercambiar el archivo con usuarios de otro sistema operativo.
 
      Si quiere trabajar con un archivo que sabe que está codificado de una forma concreta, puede indicar a Visual Studio que use esa codificación al abrirlo. El método que use depende de si el archivo forma parte del proyecto.
+
+> [!NOTE]
+> Si quiere guardar el archivo del proyecto con codificación, la opción **Guardar archivo como** no está habilitada hasta que no descarga el proyecto.
 
 ## <a name="to-open-an-encoded-file-that-is-part-of-a-project"></a>Para abrir un archivo codificado que forma parte de un proyecto
 
