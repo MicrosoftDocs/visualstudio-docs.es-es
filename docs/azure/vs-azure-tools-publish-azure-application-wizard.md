@@ -2,17 +2,17 @@
 title: Publicación de un servicio en la nube de Azure
 description: Obtenga información sobre cómo configurar los distintos ajustes del Asistente Publicar aplicación de Azure de Visual Studio
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 87082a0d4df4542f36b1ce95cba92d261a2b4d9e
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: f965d8e7f71ba34be9901d77fa4f0af881805bb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902316"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844065"
 ---
 # <a name="using-the-visual-studio-publish-azure-application-wizard"></a>Uso del Asistente Publicar aplicación de Azure de Visual Studio
 
@@ -51,7 +51,7 @@ Puede tener acceso al Asistente Publicar aplicación de Azure de dos formas seg�
 
 ![Configuración común](./media/vs-azure-tools-publish-azure-application-wizard/settings-common-settings.png)
 
-**Servicio en la nube**: en la lista desplegable, seleccione un servicio en la nube existente o seleccione **&lt;Crear nuevo&gt;** y cree un servicio en la nube. El centro de datos aparece entre paréntesis para cada servicio en la nube. Se recomienda que la ubicación del centro de datos del servicio en la nube sea la misma ubicación del centro de datos de la cuenta de almacenamiento (Configuración avanzada).
+**Servicio** en la nube: mediante la lista desplegable, seleccione un servicio en la nube existente o seleccione **&lt; crear nuevo>** y cree un servicio en la nube. El centro de datos aparece entre paréntesis para cada servicio en la nube. Se recomienda que la ubicación del centro de datos del servicio en la nube sea la misma ubicación del centro de datos de la cuenta de almacenamiento (Configuración avanzada).
 
 **Entorno**: seleccione **Producción** o **Ensayo**. Elija el entorno de ensayo si desea implementar la aplicación en un entorno de prueba.
 
@@ -97,7 +97,7 @@ Diagnósticos le permite solucionar los problemas de un servicio en la nube de A
 
 ![Página de resumen](./media/vs-azure-tools-publish-azure-application-wizard/summary.png)
 
-**Perfil de destino**: puede optar por crear un perfil de publicación a partir de la configuración que eligió. Por ejemplo, puede crear un perfil para un entorno de pruebas y otro para producción. Para guardar este perfil, elija el icono **Guardar**. El asistente creará el perfil y lo guardará en el proyecto de Visual Studio. Para modificar el nombre del perfil, abra la lista **Perfil de destino** y, a continuación, elija **&lt;Administrar…&gt;**.
+**Perfil de destino**: puede optar por crear un perfil de publicación a partir de la configuración que eligió. Por ejemplo, puede crear un perfil para un entorno de pruebas y otro para producción. Para guardar este perfil, elija el icono **Guardar**. El asistente creará el perfil y lo guardará en el proyecto de Visual Studio. Para modificar el nombre del perfil, abra la lista **Perfil de destino** y, a continuación, elija **&lt; administrar &gt; ..**..
 
    > [!Note]
    > El perfil de publicación aparecerá en el Explorador de soluciones en Visual Studio y su configuración se escribirá en un archivo con la extensión .azurePubxml. La configuración se guarda como atributos de etiquetas XML.

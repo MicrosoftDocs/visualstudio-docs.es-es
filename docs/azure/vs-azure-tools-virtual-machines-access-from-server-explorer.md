@@ -2,17 +2,17 @@
 title: Acceso a Azure Virtual Machines desde el Explorador de servidores | Microsoft Docs
 description: Obtenga una visión general de cómo ver, crear y administrar Azure los máquinas virtuales (VM) en el Explorador de servidores de Visual Studio.
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/31/2017
 ms.author: ghogen
-ms.openlocfilehash: 653a9be556441f5f8d5fc1c1053b144dc97dd3b2
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: a40434845187490ee4f8437f8e15963bddd1998f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901875"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99843792"
 ---
 # <a name="accessing-azure-virtual-machines-from-server-explorer"></a>Tener acceso a Azure Virtual Machines desde el Explorador de servidores
 
@@ -28,7 +28,7 @@ Si tiene máquinas virtuales hospedadas por Azure, puede acceder a ellas en el E
    | Entorno |En el caso de una máquina virtual, el valor de esta propiedad siempre es Production. |
    | Nombre |El nombre de la máquina virtual. |
    | Size |El tamaño de la máquina virtual, que refleja la cantidad de memoria y espacio en disco disponibles. Para obtener más información, consulte [tamaños de máquina virtual](/azure/cloud-services/cloud-services-sizes-specs). |
-   | Status |Los valores incluyen: Iniciando, Iniciado, Deteniéndose, Detenido y Recuperando estado. Si aparece Recuperando estado, el estado actual es desconocido. Los valores para esta propiedad son distintos de los que se usan en [Azure Portal](https://portal.azure.com). |
+   | Estado |Los valores incluyen: Iniciando, Iniciado, Deteniéndose, Detenido y Recuperando estado. Si aparece Recuperando estado, el estado actual es desconocido. Los valores para esta propiedad son distintos de los que se usan en [Azure Portal](https://portal.azure.com). |
    | SubscriptionID |El Id. de suscripción de la cuenta de Azure. Esta información se puede mostrar en [Azure Portal](https://portal.azure.com) mediante la visualización de las propiedades de una suscripción. |
 2. Elija un nodo de extremo y, a continuación, vea la ventana **Propiedades**.
 3. La tabla siguiente describe las propiedades disponibles de los extremos, pero son de solo lectura. Para agregar o editar los puntos de conexión de una máquina virtual, use [Azure Portal](https://portal.azure.com).

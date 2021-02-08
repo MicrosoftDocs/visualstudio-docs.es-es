@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1079847e-d45f-4cb8-9d92-1e01ce5d08f6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 281787da3499c081fbbe6f59b7b8175a4dbf24d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bad1cae248c0fe3babd920e0773825d9d36b7042
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700706"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844572"
 ---
 # <a name="sccgetprojpath-function"></a>SccGetProjPath función)
 Esta función solicita al usuario una ruta de acceso del proyecto, que es una cadena que solo es significativa para el complemento de control de código fuente. Se llama cuando el usuario es:
@@ -78,12 +78,12 @@ de Si es `TRUE` , el complemento de control de código fuente puede solicitar y 
 
 |Entrante|Interpretación|
 |--------------|--------------------|
-|TRUE|El usuario puede crear un nuevo proyecto.|
+|true|El usuario puede crear un nuevo proyecto.|
 |FALSE|Es posible que el usuario no cree un nuevo proyecto.|
 
 |Saliente|Interpretación|
 |--------------|--------------------|
-|TRUE|Se creó un nuevo proyecto.|
+|true|Se creó un nuevo proyecto.|
 |FALSE|Se seleccionó un proyecto existente.|
 
 ## <a name="return-value"></a>Valor devuelto
@@ -97,7 +97,7 @@ de Si es `TRUE` , el complemento de control de código fuente puede solicitar y 
 |SCC_E_CONNECTIONFAILURE|Hubo un problema al intentar conectarse al sistema de control de código fuente.|
 |SCC_E_NONSPECIFICERROR|Se ha producido un error no especificado.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  El propósito de esta función es que el IDE adquiera los parámetros `lpProjName` y `lpAuxProjPath` . Después de que el complemento de control de código fuente pida esta información al usuario, vuelve a pasar estas dos cadenas al IDE. El IDE conserva estas cadenas en su archivo de solución y las pasa a [SccOpenProject](../extensibility/sccopenproject-function.md) cada vez que el usuario abre este proyecto. Estas cadenas permiten que el complemento realice un seguimiento de la información asociada a un proyecto.
 
  Cuando se llama a la función por primera vez, `lpAuxProjPath` se establece en una cadena vacía. `lProjName` también puede estar vacío o puede contener el nombre del proyecto IDE, que el complemento de control de código fuente puede utilizar u omitir. Cuando la función devuelve correctamente, el complemento devuelve las dos cadenas correspondientes. El IDE no realiza suposiciones sobre estas cadenas, no las usará y no permitirá al usuario modificarlas. Si el usuario desea cambiar la configuración, el IDE llamará `SccGetProjPath` de nuevo y pasará los mismos valores que había recibido la hora anterior. Esto proporciona al complemento un control completo sobre estas dos cadenas.

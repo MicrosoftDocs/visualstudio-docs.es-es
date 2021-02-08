@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 939b6f9c-113b-471d-9f30-b03871af6285
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b0ee695e1108bf9f1c6069084a0826ee23bf37d4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4750b4d1a9c1f972c0445dfcf3ea2f4fa5be328
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737771"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99842660"
 ---
 # <a name="bp_unbound_reason"></a>BP_UNBOUND_REASON
 Proporciona la razón por la que se desenlaza un punto de interrupción.
@@ -59,7 +59,7 @@ El punto de interrupción se ha reenlazado a una ubicación diferente. Esto pued
 `BPUR_ BREAKPOINT_ERROR`\
 El punto de interrupción se determina como erróneo una vez enlazado. Esto sucede con los puntos de interrupción administrados cuyas condiciones ya no son válidas.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Devuelto por el método [GetReason (](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) .
 
 ## <a name="requirements"></a>Requisitos

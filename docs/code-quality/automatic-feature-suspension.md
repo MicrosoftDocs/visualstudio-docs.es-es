@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 572c15aa-1fd0-468c-b6be-9fa50e170914
 author: Mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 12b15ed8aa02e53841b85245350735258e7ec11d
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: efd053a846a7bf70f475db44788b14152498dc0b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348546"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99843727"
 ---
 # <a name="automatic-feature-suspension"></a>Suspensión automática de la característica
 

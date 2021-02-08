@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 34b2cf99-2e52-4757-8969-1d12ac517ec0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 28ff6065bbe83852b5acc3ffe253a0bdabcc67ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3cfaf6dd332f17bd934a55f700e4d28096fba8b8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725101"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844780"
 ---
 # <a name="idebugportex2launchsuspended"></a>IDebugPortEx2::LaunchSuspended
 Inicia un archivo ejecutable.
@@ -28,7 +28,7 @@ Inicia un archivo ejecutable.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT LaunchSuspended( 
+HRESULT LaunchSuspended( 
    LPCOLESTR        pszExe,
    LPCOLESTR        pszArgs,
    LPCOLESTR        pszDir,
@@ -41,7 +41,7 @@ HRESULT LaunchSuspended( 
 ```
 
 ```csharp
-int LaunchSuspended( 
+int LaunchSuspended( 
    string             pszExe,
    string             pszArgs,
    string             pszDir,
@@ -81,7 +81,7 @@ enuncia Devuelve un objeto [IDebugPendingBreakpoint2](../../../extensibility/deb
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Este método debe iniciar el proceso para que se suspenda y no se ejecute ningún código. Se llama al método [ResumeProcess](../../../extensibility/debugger/reference/idebugportex2-resumeprocess.md) para reanudar el proceso.
 
  Un programa también se puede iniciar desde un motor de depuración. Para obtener más información, vea [iniciar un programa](../../../extensibility/debugger/launching-a-program.md).

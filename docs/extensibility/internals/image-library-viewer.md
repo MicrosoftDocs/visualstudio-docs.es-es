@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae9090604a16196c43b80140395eb3401215d665
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: dc0acd64a61acac2cb30b9251bcb4e528c08f227
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761276"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840124"
 ---
 # <a name="image-library-viewer"></a>Visor de la biblioteca de imágenes
 La herramienta Visor de la biblioteca de imágenes de Visual Studio puede cargar y buscar manifiestos de imagen, lo que permite al usuario manipularlos de la misma forma que lo haría Visual Studio. El usuario puede modificar el fondo, los tamaños, los PPP, el contraste alto y otros valores de configuración. La herramienta también muestra la información de carga de cada manifiesto de imagen y muestra información de origen de cada imagen en el manifiesto de imagen. Esta herramienta es útil para:
@@ -70,11 +70,11 @@ La herramienta Visor de la biblioteca de imágenes de Visual Studio puede cargar
 </Symbols>
 ```
 
-|**Subelemento**|**Definición**|
+|**Subelemento**|**Definition**|
 |-|-|
 |Importar|Importa los símbolos del archivo de manifiesto especificado para su uso en el manifiesto actual.|
 |Guid|El símbolo representa un GUID y debe coincidir con el formato de GUID.|
-|Id.|El símbolo representa un identificador y debe ser un entero no negativo.|
+|ID|El símbolo representa un identificador y debe ser un entero no negativo.|
 |String|El símbolo representa un valor de cadena arbitrario.|
 
  Los símbolos distinguen mayúsculas de minúsculas y se hace referencia a ellos mediante la sintaxis $ (nombre de símbolo):
@@ -110,10 +110,10 @@ La herramienta Visor de la biblioteca de imágenes de Visual Studio puede cargar
 </Image>
 ```
 
-|**Atributo**|**Definición**|
+|**Atributo**|**Definition**|
 |-|-|
 |Guid|Desee Parte del GUID del moniker de la imagen|
-|Id.|Desee La parte de identificador del moniker de imagen|
+|ID|Desee La parte de identificador del moniker de imagen|
 |AllowColorInversion|[Opcional, valor predeterminado True] Indica si la imagen puede tener sus colores inversos mediante programación cuando se usa en un fondo oscuro.|
 
  **Origen**
@@ -126,16 +126,16 @@ La herramienta Visor de la biblioteca de imágenes de Visual Studio puede cargar
  </Source>
 ```
 
-|**Atributo**|**Definición**|
+|**Atributo**|**Definition**|
 |-|-|
 |Identificador URI|Desee URI que define dónde se puede cargar la imagen. Puede tener uno de los valores siguientes:<br /><br /> -Un [pack uri](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) mediante la autoridad Application:///<br /><br /> -Una referencia de recurso de componente absoluta<br /><br /> -Una ruta de acceso a un archivo que contiene un recurso nativo|
 |Información previa|Opta Indica qué tipo de fondo está previsto usar el origen.<br /><br /> Puede tener uno de los valores siguientes:<br /><br /> - *Light*: el origen se puede usar en un fondo claro.<br /><br /> - *Dark*: el origen se puede usar en un fondo oscuro.<br /><br /> - *HighContrast*: el origen puede usarse en cualquier fondo del modo contraste alto.<br /><br /> - *HighContrastLight*: el origen se puede usar en un fondo claro en modo de contraste alto.<br /><br /> -*HighContrastDark*: el origen se puede usar en un fondo oscuro en modo de contraste alto.<br /><br /> Si se omite el atributo **background** , el origen puede usarse en cualquier fondo.<br /><br /> Si **background** es *Light*, *Dark*, *HighContrastLight* o *HighContrastDark*, los colores del origen nunca se invierten. Si se omite **background** o se establece en *HighContrast*, el atributo **AllowColorInversion** de la imagen controla la inversión de los colores del origen.|
 
  Un \<Source> elemento puede tener exactamente uno de los siguientes subelementos opcionales:
 
-|**Element**|**Atributos (todos obligatorios)**|**Definición**|
+|**Element**|**Atributos (todos obligatorios)**|**Definition**|
 |-|-|-|
-|\<Size>|Valor|El origen se usará para las imágenes del tamaño especificado (en unidades de dispositivo). La imagen será cuadrada.|
+|\<Size>|Value|El origen se usará para las imágenes del tamaño especificado (en unidades de dispositivo). La imagen será cuadrada.|
 |\<SizeRange>|MinSize, MaxSize|El origen se usará para las imágenes de MinSize a MaxSize (en unidades de dispositivo) de un solo uso. La imagen será cuadrada.|
 |\<Dimensions>|Ancho, alto|El origen se usará para las imágenes con el ancho y alto especificados (en unidades de dispositivo).|
 |\<DimensionRange>|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|El origen se usará para las imágenes desde el ancho o el alto mínimo hasta el ancho/alto máximo (en unidades de dispositivo), ambos inclusive.|
@@ -146,10 +146,10 @@ La herramienta Visor de la biblioteca de imágenes de Visual Studio puede cargar
 <NativeResource Type="type" ID="int" />
 ```
 
-|**Atributo**|**Definición**|
+|**Atributo**|**Definition**|
 |-|-|
 |Tipo|Desee El tipo del recurso nativo, ya sea XAML o PNG|
-|Id.|Desee La parte del identificador entero del recurso nativo|
+|ID|Desee La parte del identificador entero del recurso nativo|
 
  **ImageList**
 
@@ -162,10 +162,10 @@ La herramienta Visor de la biblioteca de imágenes de Visual Studio puede cargar
  </ImageList>
 ```
 
-|**Atributo**|**Definición**|
+|**Atributo**|**Definition**|
 |-|-|
 |Guid|Desee Parte del GUID del moniker de la imagen|
-|Id.|Desee La parte de identificador del moniker de imagen|
+|ID|Desee La parte de identificador del moniker de imagen|
 |Externo|[Opcional, valor predeterminado False] Indica si el moniker de imagen hace referencia a una imagen del manifiesto actual.|
 
  No es necesario que el moniker de la imagen contenida haga referencia a una imagen definida en el manifiesto actual. Si no se encuentra la imagen contenida en la biblioteca de imágenes, se usará una imagen de marcador de posición en blanco en su lugar.

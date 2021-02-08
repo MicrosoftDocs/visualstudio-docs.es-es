@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 17863747-1901-4c53-a2b3-ed996085e120
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc7b68df3331c1240ad833048940e656da034ccf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e4bc3e4bf6acef8ff8de1cdcecb2596dcf6d86e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700688"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844559"
 ---
 # <a name="sccgetuseroption-function"></a>SccGetUserOption (Función)
 Esta función recupera una variedad de opciones específicas del usuario.
@@ -25,10 +25,10 @@ Esta función recupera una variedad de opciones específicas del usuario.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-SCCRTN SccGetUserOption(
-   LPVOID pContext,
-   LONG nOption,
-   LPLONG lpVal
+SCCRTN SccGetUserOption(
+   LPVOID pContext,
+   LONG nOption,
+   LPLONG lpVal
 );
 ```
 
@@ -54,7 +54,7 @@ enuncia Valor asociado a la opción.
 |SCC_E_OPNOTSUPPORTED|No se admite la opción.|
 |SCC_E_NONSPECIFICERROR|Se ha producido un error no especificado.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Este comando admite las siguientes opciones:
 
 |Opción de usuario|Descripción|
