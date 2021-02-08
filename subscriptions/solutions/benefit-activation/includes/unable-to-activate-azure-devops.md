@@ -1,5 +1,5 @@
 ---
-title: No puedo activar la ventaja Azure DevOps.
+title: No se puede activar la ventaja Azure DevOps
 description: No puedo activar la ventaja Azure DevOps que se incluye con la suscripción de Visual Studio.
 ms.topic: include
 ms.assetid: 3ec2a8c1-07e0-45cd-808c-c354b9e26fb4
@@ -10,12 +10,12 @@ user.type: subscriber
 tags: benefit, azure-devops
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: 7bd0cf67d86062b73bfdfe2461ace98e8ef43639
-ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
+ms.openlocfilehash: 7803b30fc189b29b58a1642dc8b86cd5d7b8a526
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98147654"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541256"
 ---
 ## <a name="im-unable-to-activate-my-azure-devops-benefit"></a>No puedo activar la ventaja Azure DevOps.
 
@@ -27,4 +27,4 @@ Como suscriptor de Visual Studio, puede usar una variedad de características d
 1. Inicie sesión en Azure DevOps mediante el correo electrónico que usa para iniciar sesión en la suscripción de Visual Studio. Si prefiere usar otro correo electrónico para iniciar sesión, puede [crear una cuenta alternativa](https://docs.microsoft.com/visualstudio/subscriptions/vs-alternate-identity) para vincular la suscripción, lo que le permite acceder a Azure DevOps con los dos correos electrónicos. 
 
 ## <a name="more-information-about-subscription-eligibility"></a>Más información sobre la idoneidad de la suscripción 
-[Obtenga más](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure-devops) información sobre la idoneidad por nivel de suscripción.
+Obtenga más [información sobre la idoneidad por nivel de suscripción](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure-devops).

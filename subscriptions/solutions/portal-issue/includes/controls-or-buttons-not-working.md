@@ -1,5 +1,5 @@
 ---
-title: Los controles o botones no funcionan.
+title: Los controles o botones no funcionan
 description: Los controles o botones no funcionan en el portal de suscripciones de Visual Studio.
 ms.topic: include
 ms.assetid: 33b1aa45-b2fc-4c00-9862-3d1281d28fa2
@@ -10,12 +10,12 @@ user.type: subscriber
 tags: portal-error
 subscription.type: vl, cloud, retail, partner
 sap.id: 8250612f-7446-20c5-7473-16d089f2280d
-ms.openlocfilehash: e463a4e3c5ed78cd7886238cd71477a205b5c63d
-ms.sourcegitcommit: cfc984316ded3396db6722ad90f9378dfb7661ff
+ms.openlocfilehash: 1fff22ee7b07a5c0817d0b4e0cd8fac4d2732215
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98024366"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541267"
 ---
 ## <a name="were-sorry-to-hear-that-youre-experiencing-an-issue-with-controls-or-buttons-while-using-the-visual-studio-subscriptions-portal"></a>Lamentamos que experimente un problema con los controles o botones mientras usa el portal de suscripciones de Visual Studio. 
 

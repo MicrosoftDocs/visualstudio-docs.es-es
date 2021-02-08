@@ -1,5 +1,5 @@
 ---
-title: No puedo activar la ventaja Pluralsight.
+title: No se puede activar la ventaja Pluralsight
 description: No puedo activar la ventaja Pluralsight que se incluye con la suscripción de Visual Studio.
 ms.topic: include
 ms.assetid: 7e5d8886-538c-4e29-9c4c-8989cf4e09dd
@@ -10,12 +10,12 @@ user.type: subscriber
 tags: benefit, pluralsight
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: d68ff15483241d5c6d1364aaa974031f4e1abe52
-ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
+ms.openlocfilehash: 1ab283581d029d69b507271863420da71257d967
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98147619"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541138"
 ---
 ## <a name="im-unable-to-activate-my-pluralsight-benefit"></a>No puedo activar la ventaja Pluralsight.
 
@@ -30,4 +30,4 @@ En función de la suscripción o pertenencia a un programa de Visual Studio, es
 
 ## <a name="more-information-about-the-pluralsight-benefit"></a>Más información sobre la ventaja Pluralsight
 
-[Obtenga más](https://docs.microsoft.com/visualstudio/subscriptions/vs-pluralsight) información sobre la activación, elegibilidad y las preguntas más frecuentes sobre la ventaja Pluralsight.  
+Obtenga más [información sobre la activación, la elegibilidad y las preguntas más frecuentes sobre la ventaja Pluralsight](https://docs.microsoft.com/visualstudio/subscriptions/vs-pluralsight).  
