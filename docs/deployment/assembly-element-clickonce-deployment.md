@@ -15,20 +15,20 @@ helpviewer_keywords:
 ms.assetid: b8e3362a-f821-4696-b98d-571d4bbfe431
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dde3bdb5fc0e9c6ea256aaa4368623a8e8af18d6
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: b7838e0a212bbc1e743783255106bb44561fbe62
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383240"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837767"
 ---
 # <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;Assembly &gt; (elemento, implementación ClickOnce)
 El elemento de nivel superior para el manifiesto de implementación.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ```xml
 
@@ -66,4 +66,4 @@ El elemento de nivel superior para el manifiesto de implementación.
 
 ## <a name="see-also"></a>Vea también
 - [Manifiesto de implementación de ClickOnce](../deployment/clickonce-deployment-manifest.md)
-- [\<assembly> Element](../deployment/assembly-element-clickonce-application.md)
+- [Elemento \<assembly>](../deployment/assembly-element-clickonce-application.md)

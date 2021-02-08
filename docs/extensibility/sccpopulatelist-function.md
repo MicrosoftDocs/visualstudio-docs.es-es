@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7416e781-c571-4a7f-8af3-a089ce8be662
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f518413adba1546bcff4f7cf2e62b4563cf1bcc7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2deb30b606de686269e095fffe369a7d56adb453
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700528"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836935"
 ---
 # <a name="sccpopulatelist-function"></a>SccPopulateList (Función)
 Esta función actualiza una lista de archivos para un comando de control de código fuente determinado y proporciona el estado del control de código fuente en todos los archivos especificados.
@@ -78,7 +78,7 @@ de Marcas de comandos (consulte la sección "PopulateList flag" de [marcadores q
 |SCC_OK|Correcto.|
 |SCC_E_NONSPECIFICERROR|Error no específico.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Esta función examina la lista de archivos en busca de su estado actual. Usa la función de devolución de llamada `pfnPopulate` para notificar al llamador cuando un archivo no coincide con los criterios de `nCommand` . Por ejemplo, si el comando es `SCC_COMMAND_CHECKIN` y no se desprotege un archivo de la lista, la devolución de llamada se usa para informar al llamador. En ocasiones, el complemento de control de código fuente puede encontrar otros archivos que pueden formar parte del comando y agregarlos. Esto permite, por ejemplo, que un usuario de Visual Basic desproteja un archivo. bmp utilizado por su proyecto, pero que no aparece en el archivo de proyecto de Visual Basic. Un usuario elige el comando **Get** en el IDE. El IDE mostrará una lista de todos los archivos que cree que el usuario puede obtener, pero antes de que se muestre la lista, `SccPopulateList` se llama a la función para asegurarse de que la lista que se va a mostrar está actualizada.
 
 ## <a name="example"></a>Ejemplo

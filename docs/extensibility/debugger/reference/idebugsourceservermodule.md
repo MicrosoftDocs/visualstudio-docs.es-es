@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 38213060-451d-46e6-8b4a-efc123e01a2c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2c362bc4a103c707238acfa3b3148f00c0e25be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8dfc4b3defc0b74c1e22c45670209682692a4807
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719913"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837702"
 ---
 # <a name="idebugsourceservermodule"></a>IDebugSourceServerModule
 Representa la información del servidor de origen que se encuentra en un archivo PDB.

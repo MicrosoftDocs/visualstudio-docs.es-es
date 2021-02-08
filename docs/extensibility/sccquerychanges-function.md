@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4cd58eb3-6952-49b1-9620-8682e3eaa604
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec335d808c287decb75bf759d5a3795d98962579
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd69183b290fa194d87dff79d69596dd65ec19ba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700493"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836727"
 ---
 # <a name="sccquerychanges-function"></a>SccQueryChanges (Función)
 Esta función enumera una lista determinada de archivos y proporciona información sobre los cambios de nombre de cada archivo a través de una función de devolución de llamada.
@@ -25,7 +25,7 @@ Esta función enumera una lista determinada de archivos y proporciona informaci�
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-SCCRTN SccQueryChanges(
+SCCRTN SccQueryChanges(
    LPVOID           pContext,
    LONG             nFiles,
    LPCSTR*          lpFileNames,
@@ -65,7 +65,7 @@ de Valor que se pasará sin modificar a la función de devolución de llamada.
 |SCC_E_ACCESSFAILURE|Hubo un problema al obtener acceso al sistema de control de código fuente, probablemente debido a problemas de red o de contención.|
 |SCC_E_NONSPECIFICERROR|Se produjo un error no especificado o general.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Los cambios que se están consultando son el espacio de nombres: específicamente, el cambio de nombre, la adición y la eliminación de un archivo.
 
 ## <a name="see-also"></a>Vea también

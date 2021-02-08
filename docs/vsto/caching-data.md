@@ -13,15 +13,15 @@ helpviewer_keywords:
 - data caching [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: db22378477daffd4562a9d60c6b30bc7b96e58e2
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: f31556e64ee93a73fb09c27edd095bcd2653dfdc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847876"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836168"
 ---
 # <a name="cache-data"></a>Datos de caché
   Puede almacenar en caché objetos de datos en una personalización de nivel de documento para que se pueda tener acceso a los datos sin conexión o sin abrir Microsoft Office Word o Microsoft Office Excel. Para almacenar en caché un objeto, el objeto debe tener un tipo de datos que cumpla determinados requisitos. Muchos tipos de datos comunes en el .NET Framework cumplen estos requisitos, incluidos <xref:System.String> , <xref:System.Data.DataSet> y <xref:System.Data.DataTable> .

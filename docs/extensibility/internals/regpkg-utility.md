@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 1683ee18-59d1-4bab-a674-dd00dd960de3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad66f963250dfc272506096f8932442a35d11dc7
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 2f0ddf9c707de0b30b18761ba5af1ef42e198231
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877331"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837257"
 ---
 # <a name="regpkg-utility"></a>Utilidad RegPkg
 > [!NOTE]
@@ -56,6 +56,6 @@ RegPkg [/root:<root>] [/regfile:<regfile>] [/rgsfile:<rgsfile> [/rgm]] [/vrgfile
 
  con/regfile o/vrgfile o/rgsfile o/wixfile.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [VSPackages](../../extensibility/internals/vspackages.md)
 - [Solución de problemas del registro de paquete RegPkg](../../extensibility/internals/troubleshooting-regpkg-package-registration.md)

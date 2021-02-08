@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: fe9ef6b6-4690-4c2c-872c-301c980d17fe
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 373536844e3572e2e61b56c1b86f3e00ed47845d
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: e353101c7932e06042b451360b7ca040adcb303f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761249"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839955"
 ---
 # <a name="implementing-single-file-generators"></a>Implementación de generadores de un solo archivo
 Una herramienta personalizada, que a veces se denomina generador de un solo archivo, se puede usar para extender los [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] sistemas de proyectos de y en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Una herramienta personalizada es un componente COM que implementa la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> interfaz. Mediante esta interfaz, una herramienta personalizada transforma un único archivo de entrada en un único archivo de salida. El resultado de la transformación puede ser código fuente o cualquier otro resultado que sea útil. Dos ejemplos de archivos de código generados por la herramienta personalizados son el código generado en respuesta a los cambios en un diseñador visual y los archivos generados con el lenguaje de descripción de servicios web (WSDL).

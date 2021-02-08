@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73bbb1beb30677711b8b517262b48465e7529585
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: c2d67c3d9f998c8dd5192363cf8ff8fae2ce4b57
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205338"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839864"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Dentro de Visual Studio SDK
 
@@ -39,7 +39,7 @@ En esta sección se proporciona información detallada sobre las extensiones de 
 ## <a name="user-experience-guidelines"></a>Directrices de la experiencia de usuario
  Si tiene previsto diseñar nuevas características para Visual Studio, eche un vistazo a estas instrucciones de diseño y sugerencias de facilidad de uso: instrucciones para la [experiencia del usuario de Visual Studio](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).
 
-## <a name="commands"></a>Comandos
+## <a name="commands"></a>Comandos:
  Los comandos son funciones que realizan tareas, como la impresión de un documento, la actualización de una vista o la creación de un archivo nuevo.
 
  Al extender Visual Studio, puede crear comandos y registrarlos con Visual Studio Shell. Puede especificar cómo aparecerán estos comandos en el IDE, por ejemplo, en un menú o una barra de herramientas. Normalmente aparece un comando personalizado en el menú **herramientas** y un comando para mostrar una ventana de herramientas aparecerá en el submenú **otras ventanas** del menú **Ver** .

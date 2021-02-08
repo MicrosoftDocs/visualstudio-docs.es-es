@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b59d739c-7572-427f-a70d-4e5df63d02c1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fef3debcbce3a178c4321114d69c87c627611a07
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 42f85d0d15c46cfdfc2b76130649976d15035d7a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915328"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840722"
 ---
 # <a name="document-position"></a>Posición del documento
 En [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] la depuración, una *posición de documento*:
@@ -28,7 +28,7 @@ En [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] la depuración, 
 
 - Se implementa mediante una interfaz [IDebugDocumentPosition2](../../extensibility/debugger/reference/idebugdocumentposition2.md) .
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Contexto de código](../../extensibility/debugger/code-context.md)
 - [Contexto del documento](../../extensibility/debugger/document-context.md)
 - [Proveedor de símbolos](../../extensibility/debugger/symbol-provider.md)

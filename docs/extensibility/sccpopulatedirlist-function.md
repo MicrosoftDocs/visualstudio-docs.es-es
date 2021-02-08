@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: dfff634b-b155-498b-a356-6eb252ac4fad
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ac1c51ac694acadd2efb0cd7d1c5a3f1d66ebc1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eac3973bf28a14340b720a51fc291b914822f3d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700551"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836922"
 ---
 # <a name="sccpopulatedirlist-function"></a>SccPopulateDirList (Función)
 Esta función determina qué directorios y archivos (opcionalmente) se almacenan en el control de código fuente, dada una lista de directorios que se van a examinar.
@@ -25,7 +25,7 @@ Esta función determina qué directorios y archivos (opcionalmente) se almacenan
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-SCCRTN SccPopulateDirList(
+SCCRTN SccPopulateDirList(
    LPVOID        pContext,
    LONG          nDirs,
    LPCSTR*       lpDirPaths,
@@ -68,7 +68,7 @@ de Combinación de valores que controlan cómo se procesan los directorios (cons
 |SCC_OK|La operación se completó correctamente.|
 |SCC_E_UNKNOWNERROR|Se produjo un error.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Solo los directorios y los nombres de archivo (opcionalmente) que se encuentran en el repositorio de control de código fuente se pasan a la función de devolución de llamada.
 
 ## <a name="see-also"></a>Vea también

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d77b1197-deb6-4144-8d1b-8b09949ccfac
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 13df02cf5870e630c4aecb34e9295d218ba7a0eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4c164fa08f4195d685bf7dd2faa120ff030e44c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727197"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837728"
 ---
 # <a name="idebugmethodfieldenumparameters"></a>IDebugMethodField::EnumParameters
 Crea un enumerador para los parámetros del método.
@@ -28,7 +28,7 @@ Crea un enumerador para los parámetros del método.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT EnumParameters( 
+HRESULT EnumParameters( 
    IEnumDebugFields** ppParams
 );
 ```
@@ -46,7 +46,7 @@ enuncia Devuelve un objeto [IEnumDebugFields](../../../extensibility/debugger/re
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, Devuelve S_OK o devuelve S_FALSE si no hay ningún parámetro. De lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Cada elemento es un objeto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) que representa distintos tipos de parámetros. Llame al método [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) en cada objeto para determinar exactamente qué tipo de parámetro representa el objeto.
 
  Un parámetro incluye el nombre de la variable y su tipo. El primer parámetro de un método de clase suele ser el puntero "this".

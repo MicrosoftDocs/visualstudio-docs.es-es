@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 37067324-2ea6-4a01-8829-a6e9c7a70068
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ddce454e6634d8cc177019e9d30b0ffcc7e7f1cc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cf9cd3cb82e2b14811a8ec52a651248e2990ae27
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724473"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840371"
 ---
 # <a name="idebugportsupplier2"></a>IDebugPortSupplier2
 Esta interfaz proporciona puertos al administrador de depuración de sesión (SDM).
@@ -70,7 +70,7 @@ En la tabla siguiente se muestran los métodos de `IDebugPortSupplier2` .
 |[AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)|Agrega un puerto.|
 |[RemovePort](../../../extensibility/debugger/reference/idebugportsupplier2-removeport.md)|Quita un puerto.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Un proveedor de puertos puede identificarse por el nombre y el identificador, agregar y quitar puertos y enumerar todos los puertos proporcionados por el proveedor del puerto.
 
 ## <a name="requirements"></a>Requisitos

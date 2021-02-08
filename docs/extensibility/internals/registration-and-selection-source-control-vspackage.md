@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 7d21fe48-489a-4f55-acb5-73da64c4e155
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76f0bd737eff52706cf73c9a1105b79e08c556f0
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 0784b16acd00e354c8ecf36f34d6b05c750f6bec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877369"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837208"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Registro y selección (VSPackage de control de código fuente)
 Un VSPackage de control de código fuente debe estar registrado para exponerlo en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Si se registra más de un VSPackage de control de código fuente, el usuario puede seleccionar qué VSPackage cargar en los momentos adecuados. Vea los [VSPackages](../../extensibility/internals/vspackages.md) para obtener más detalles sobre los VSPackages y cómo registrarlos.
@@ -81,7 +81,7 @@ Un VSPackage de control de código fuente debe estar registrado para exponerlo e
 
   A diferencia de las versiones anteriores de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , un reinicio de IDE ya no es la única manera de cambiar los VSPackages de control de código fuente. La selección del VSPackage es automática. El cambio de paquetes requiere privilegios de usuario de Windows (no administrador ni usuario avanzado).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence>
 - [Características](../../extensibility/internals/source-control-vspackage-features.md)
 - [Creación de un complemento de control de código fuente](../../extensibility/internals/creating-a-source-control-plug-in.md)

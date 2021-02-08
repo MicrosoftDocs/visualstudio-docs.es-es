@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: b07e72c7-60d3-4b30-8e3f-6db83454c348
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97fb2c11b94a97a5c7a00083aa61877bb68d377b
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 34367b836e766754ce5e274698eb4f5a5d407760
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915653"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840618"
 ---
 # <a name="evaluate-a-watch-window-expression"></a>Evaluar una expresión de la ventana Inspección
 > [!IMPORTANT]
@@ -57,5 +57,5 @@ ms.locfileid: "96915653"
 ## <a name="related-sections"></a>Secciones relacionadas
  [Contexto de evaluación](../../extensibility/debugger/evaluation-context.md) Proporciona los argumentos que se pasan cuando el motor DE depuración (DE) llama al evaluador de expresiones (EE).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
  [Escribir un evaluador de expresiones CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

@@ -1,20 +1,20 @@
 ---
-title: Usar Cloud Services (compatibilidad ampliada) (versión preliminar)
+title: Uso de Cloud Services (soporte extendido, versión preliminar)
 description: Aprenda a crear e implementar un Cloud Services (soporte extendido) mediante Azure Resource Manager con Visual Studio
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 01/25/2021
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: ff45cf05a6811c02881c26f76193d4c1f5a5e735
-ms.sourcegitcommit: 7d34ab111614ae6bde5fb3c2bb91dd79e29a0a78
+ms.openlocfilehash: 39a76f4c76afb2ed0c738adfc477807eebfdbc61
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98750250"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841138"
 ---
 # <a name="create-and-deploy-to-cloud-services-extended-support-in-visual-studio-preview"></a>Creación e implementación en Cloud Services (soporte extendido) en Visual Studio (versión preliminar)
 
@@ -48,7 +48,7 @@ Antes de publicar un servicio en la nube de Azure clásico en Cloud Services (so
 
 1. **Elija una suscripción**: elija la suscripción que desea usar para la implementación.
 
-1. Elija **siguiente** para ir a la página de **configuración** .
+1. Elija **Siguiente** para ir a la página **Configuración**.
 
    ![Configuración común](./media/cloud-services-extended-support/publish-settings.png)
 
@@ -62,7 +62,7 @@ Antes de publicar un servicio en la nube de Azure clásico en Cloud Services (so
 
 1. **Configuración de servicio**: seleccione **Nube** o **Local**.
 
-1. **Cuenta de almacenamiento** : seleccione la cuenta de almacenamiento que se va a usar para esta implementación o **cree una nueva** para crear una cuenta de almacenamiento. La región se muestra entre paréntesis para cada cuenta de almacenamiento. Se recomienda que la ubicación del centro de datos de la cuenta de almacenamiento sea la misma ubicación del centro de datos del servicio en la nube (Configuración común).
+1. **Cuenta de almacenamiento**: seleccione la cuenta de almacenamiento que desea usar para esta implementación o **Crear nuevo** para crear una nueva. La región aparece entre paréntesis para cada cuenta de almacenamiento. Se recomienda que la ubicación del centro de datos de la cuenta de almacenamiento sea la misma ubicación del centro de datos del servicio en la nube (Configuración común).
 
    La cuenta de almacenamiento de Azure almacena el paquete para la implementación de la aplicación.
 
@@ -72,13 +72,13 @@ Antes de publicar un servicio en la nube de Azure clásico en Cloud Services (so
 
    ![Configuración de escritorio remoto](./media/cloud-services-extended-support/remote-desktop-configuration.png)
 
-1. Elija **siguiente** para ir a la página de **configuración de diagnóstico** .
+1. Elija **Siguiente** para ir a la página **Configuración de diagnóstico**.
 
    ![Configuración de diagnóstico](./media/cloud-services-extended-support/diagnostics-settings.png)
 
    Diagnósticos le permite solucionar problemas de un servicio en la nube de Azure (soporte extendido). Para más información sobre el diagnóstico, consulte [Configuración de Diagnósticos en Azure Cloud Services y Virtual Machines](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md). Para más información sobre Application Insights, consulte [¿Qué es Application Insights?](/azure/application-insights/app-insights-overview).
 
-1. Elija **siguiente** para ir a la página **Resumen** .
+1. Haga clic en **Siguiente** para avanzar a la página de **resumen**.
 
    ![Resumen](./media/cloud-services-extended-support/publish-summary.png)
 
@@ -87,7 +87,7 @@ Antes de publicar un servicio en la nube de Azure clásico en Cloud Services (so
    > [!Note]
    > El perfil de publicación aparece en Explorador de soluciones en Visual Studio y la configuración del perfil se escribe en un archivo con la extensión *. azurePubxml* . La configuración se guarda como atributos de etiquetas XML.
 
-1. Una vez que ajuste toda la configuración de la implementación del proyecto, seleccione **Publicar** en la parte inferior del cuadro de diálogo. Puede supervisar el estado del proceso en la ventana de salida del **registro de actividad de Azure** en Visual Studio. Elija el vínculo **abrir en el portal** para 
+1. Una vez que ajuste toda la configuración de la implementación del proyecto, seleccione **Publicar** en la parte inferior del cuadro de diálogo. Puede supervisar el estado del proceso en la ventana de salida **Registro de actividad de Azure** de Visual Studio. Elija el vínculo **abrir en el portal** para 
 
 Felicidades. Ha publicado el proyecto de servicio en la nube (soporte extendido) en Azure. Para volver a publicar con la misma configuración, puede volver a usar el perfil de publicación o repetir estos pasos para crear uno nuevo. La plantilla de Azure Resource Manager (ARM) y los parámetros que se usan para la implementación se guardan en la carpeta *bin/ \<configuration\> /Publish* .
 
@@ -97,4 +97,4 @@ Para limpiar los recursos de Azure que creó siguiendo este tutorial, vaya al [A
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Configure la integración continua (CI) mediante el botón **configurar** de la pantalla de **publicación** . Para obtener más información, consulte la [documentación de Azure pipelines](/azure/devops/pipelines/?view=azure-devops&preserve-view=true).
+Configure la integración continua (CI) mediante el botón **Configurar** de la pantalla **Publicar**. Para más información, consulte la [documentación de Azure Pipelines](/azure/devops/pipelines/?view=azure-devops&preserve-view=true).

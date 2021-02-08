@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 7b2be4b9-e3fe-4412-874f-ae72ebc84c4b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d99b1b0f5ba0f80af3aadcff0404357b57fbe265
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 4466a180923c85461ede59102b346caf70fd064b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994607"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99842203"
 ---
 # <a name="extend-menus-and-commands"></a>Extender menús y comandos
 Los comandos son la manera de agregar acciones y procesos a Visual Studio. En la mayoría de los casos, los comandos se muestran en menús o barras de herramientas. La plantilla de proyecto VSPackage muestra cómo implementar un comando muy básico. Para una implementación ligeramente más larga pero todavía básica, vea [crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md).

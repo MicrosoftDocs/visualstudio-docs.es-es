@@ -2,18 +2,18 @@
 title: Agregue Aplicación de Azure Insights mediante Servicios conectados | Microsoft Docs
 description: Agregar Aplicación de Azure información a la aplicación mediante el uso de Visual Studio para agregar un servicio conectado
 author: AngelosP
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 1317f41c9463ab645e6dd3ba281f11b9246720a8
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 5b93d5b15cbbd3ffcb1f8afb65afe6e1c2c371b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901939"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841229"
 ---
 # <a name="add-azure-application-insights-by-using-visual-studio-connected-services"></a>Agregue Aplicación de Azure Insights mediante Visual Studio Servicios conectados
 
@@ -82,7 +82,7 @@ La funcionalidad del servicio conectado agrega todo el código de conexión y la
 
    ![Dependencias del servicio](./media/azure-app-insights-add-connected-service/service-dependencies-after.png)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Azure Monitor página del producto](https://azure.microsoft.com/services/monitor/)
 - [Documentación de App de Azure Insights](/azure/azure-monitor/app/app-insights-overview/)

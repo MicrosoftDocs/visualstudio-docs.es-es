@@ -25,15 +25,15 @@ helpviewer_keywords:
 - runtime [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 16431a9ba2fe56b88f9f6b7f2c874c75bfad61c3
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: e5d02d7840f1b16098509a6549816746c0a5bfbd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526274"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838066"
 ---
 # <a name="visual-studio-tools-for-office-runtime-overview"></a>Información general sobre el tiempo de ejecución de Visual Studio Tools para Office
   Para ejecutar soluciones creadas con las herramientas de desarrollo de Microsoft Office en Visual Studio, se debe instalar Visual Studio 2010 Tools para Office Runtime en los equipos de los usuarios finales. Para obtener más información, vea [Cómo: instalar el Visual Studio Tools para Office Runtime Redistributable](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md). El tiempo de ejecución de Visual Studio 2010 Tools para Office consta de dos componentes principales:
@@ -117,7 +117,7 @@ ms.locfileid: "97526274"
 ## <a name="repair-the-visual-studio-2010-tools-for-office-runtime"></a>Reparación del tiempo de ejecución de Visual Studio 2010 Tools para Office
  Si necesita reparar el runtime, abra **Programas y características** o **Agregar o quitar programas** en el Panel de control, seleccione **Runtime de Microsoft Visual Studio 2010 Tools para Office** en la lista de programas y, a continuación, haga clic en **Desinstalar**. El programa de instalación que se ejecuta permite reparar el runtime. Si hace clic en **Cambiar**, no tendrá la opción de reparar el runtime.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Visual Studio Tools para escenarios de instalación en tiempo de ejecución de Office](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md)
 - [Ensamblados en el Visual Studio Tools para Office Runtime](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md)
 - [Arquitectura de las soluciones de Office en Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)

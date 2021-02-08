@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 08a4f609-51a5-4723-b89f-99277fb18871
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 552efae54a3c8346c7a259fb36e0ed0f8084be3e
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 211393ea65f7ca31f80134c48863b0092478b3f3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037730"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836987"
 ---
 # <a name="requiredframeworkversion-element-visual-studio-templates"></a>RequiredFrameworkVersion (elemento, plantillas de Visual Studio)
 
@@ -57,7 +57,7 @@ Especifica la versión mínima del .NET Framework que requiere la plantilla. Hac
 
  El texto debe ser el número de versión mínimo de la .NET Framework que se requiere para la plantilla.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 
 `RequiredFrameworkVersion` es un elemento opcional. Use este elemento solo si la plantilla admite una versión mínima específica (y versiones posteriores, si hay alguna) de la .NET Framework. Si especifica el `RequiredFrameworkVersion` elemento y la plantilla no es compatible con una versión mínima específica del .NET Framework, la lista desplegable versión de la **plataforma de destino** se muestra cuando no es aplicable.
 

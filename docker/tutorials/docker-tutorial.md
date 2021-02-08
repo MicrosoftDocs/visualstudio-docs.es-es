@@ -4,18 +4,18 @@ description: Tutorial de varios pasos en el que se describen los conceptos bási
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
 next_page: app.md
-ms.openlocfilehash: 9961810ad408a384db46439235b0b7acab325062
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 554badf01122b6c41d89c00b740574d28185e35e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89176920"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837975"
 ---
 # <a name="tutorial-get-started-with-docker"></a>Tutorial: Introducción a Docker
 

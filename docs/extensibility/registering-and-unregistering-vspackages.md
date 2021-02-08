@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: e25e7a46-6a55-4726-8def-ca316f553d6b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b60844826387c2807eedcb47fe24c11a58af80f
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: b130c9ceff03fe99151965d5166b056884401855
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97862876"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836974"
 ---
 # <a name="register-and-unregister-vspackages"></a>Registrar y anular el registro de VSPackages
 Los atributos se usan para registrar un VSPackage, pero
@@ -123,5 +123,5 @@ public override void Unregister(RegistrationContext context)
 }
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [VSPackages](../extensibility/internals/vspackages.md)

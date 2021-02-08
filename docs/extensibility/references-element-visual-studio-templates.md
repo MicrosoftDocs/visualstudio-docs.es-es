@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 1969146d-46bf-422d-8d46-0e9493925003
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2576a56bf223fd1b3a1ba4903595cc25144011ec
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 6a9c2cc5d8827f6419472e5fd84add4d9c9f5228
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903750"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837182"
 ---
 # <a name="references-element-visual-studio-templates"></a>References (elemento, plantillas de Visual Studio)
 Agrupa las referencias de ensamblado que la plantilla agrega a los proyectos.
@@ -57,7 +57,7 @@ Agrupa las referencias de ensamblado que la plantilla agrega a los proyectos.
 |-------------|-----------------|
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Especifica el contenido de la plantilla.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  `References` es un elemento secundario opcional de `TemplateContent`.
 
  Los `Reference` `References` elementos y solo se pueden usar en los archivos *. vstemplate* que tienen un `Type` valor de atributo de `Item` .

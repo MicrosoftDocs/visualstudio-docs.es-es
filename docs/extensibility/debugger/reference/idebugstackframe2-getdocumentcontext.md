@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 69e81439-1238-4f18-9028-6fd1c1ba5e4a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 362ee6b98699a32a3bfd6219d11ccf4c80d2a4be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8de85f157995db77653b71f7b25f3106caffb9ed
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719772"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837518"
 ---
 # <a name="idebugstackframe2getdocumentcontext"></a>IDebugStackFrame2::GetDocumentContext
 Obtiene el contexto del documento para este marco de pila.
@@ -28,13 +28,13 @@ Obtiene el contexto del documento para este marco de pila.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT GetDocumentContext ( 
+HRESULT GetDocumentContext ( 
    IDebugDocumentContext2** ppCxt
 );
 ```
 
 ```csharp
-int GetDocumentContext ( 
+int GetDocumentContext ( 
    out IDebugDocumentContext2 ppCxt
 );
 ```
@@ -46,7 +46,7 @@ enuncia Devuelve un objeto [IDebugDocumentContext2](../../../extensibility/debug
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Este método es más rápido que llamar al método [GetCodeContext](../../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md) y, a continuación, llamar al método [GetDocumentContext](../../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md) en el contexto del código. Sin embargo, no se garantiza que todos los motores DE depuración (DE) implementen este método.
 
 ## <a name="see-also"></a>Vea también

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 20830fdc-c0e9-4a5f-bf60-33f28874442f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 17889d50dbdcf68dd4cca161d6703b8b6d69ad47
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 67b0691c3f58ad859051f0018e7b32a5a4e087da
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700453"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836714"
 ---
 # <a name="sccremove-function"></a>SccRemove (Función)
 Esta función elimina archivos del sistema de control de código fuente.
@@ -79,7 +79,7 @@ de Opciones específicas del complemento de control de código fuente.
 |SCC_E_NONSPECIFICERROR|Error no específico; no se quitó el archivo.|
 |SCC_I_OPERATIONCANCELED|La operación se canceló antes de completarse.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Esta función quita los archivos del sistema de control de código fuente, pero no Los elimina del disco duro local del usuario.
 
 ## <a name="see-also"></a>Vea también

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: df0dfe90bd5e3bccbb6bb0f9dab400082f539fbf
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 10e1b158ab62cfedfb6171a0a3874cfe14e89caf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863040"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837013"
 ---
 # <a name="register-verbs-for-file-name-extensions"></a>Registrar verbos para las extensiones de nombre de archivo
 La Asociación de una extensión de nombre de archivo con una aplicación generalmente tiene una acción preferida que se produce cuando un usuario hace doble clic en un archivo. Esta acción preferida está vinculada a un verbo, como Open, que corresponde a la acción.
@@ -113,5 +113,5 @@ La Asociación de una extensión de nombre de archivo con una aplicación genera
 > [!NOTE]
 > Si tiene previsto cambiar el verbo predeterminado de una extensión en una implementación en paralelo, tenga en cuenta el impacto en la instalación y la eliminación. Durante la instalación, se sobrescribe el valor predeterminado original.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Administrar asociaciones de archivos en paralelo](../extensibility/managing-side-by-side-file-associations.md)

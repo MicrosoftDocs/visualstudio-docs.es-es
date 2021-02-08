@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 999b435719113883201b7619daca9a84d095294e
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: cc268236a10ab3f6be660b0e69a82a8f656f8910
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875276"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837260"
 ---
 # <a name="registering-project-and-item-templates"></a>Registro de plantillas para proyectos y elementos
 Los tipos de proyecto deben registrar los directorios donde se encuentran las plantillas de proyecto y de elemento de proyecto. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usa la información de registro asociada a los tipos de proyecto para determinar lo que se va a mostrar en los cuadros de diálogo **Agregar nuevo proyecto** y **Agregar nuevo elemento** .
@@ -39,11 +39,11 @@ Los tipos de proyecto deben registrar los directorios donde se encuentran las pl
 "ProjectTemplatesDir"="C:\\MyProduct\\MyProjectTemplates"
 ```
 
-|Nombre|Tipo|Description|
+|Nombre|Tipo|Descripción|
 |----------|----------|-----------------|
 |@|REG_SZ|Nombre predeterminado de los proyectos de este tipo.|
 |DisplayName|REG_SZ|IDENTIFICADOR de recurso del nombre que se va a recuperar de la DLL satélite registrada en packages.|
-|Package|REG_SZ|IDENTIFICADOR de clase del paquete registrado en paquetes.|
+|Paquete|REG_SZ|IDENTIFICADOR de clase del paquete registrado en paquetes.|
 |ProjectTemplatesDir|REG_SZ|Ruta de acceso predeterminada de los archivos de plantilla de proyecto. La nueva plantilla de **proyecto** muestra los archivos de plantilla de proyecto.|
 
 ### <a name="registering-item-templates"></a>Registrar plantillas de elementos
@@ -57,7 +57,7 @@ Los tipos de proyecto deben registrar los directorios donde se encuentran las pl
 "SortPriority"=dword:00000064
 ```
 
-| Nombre | Tipo | Description |
+| Nombre | Tipo | Descripción |
 |--------------------------|-----------| - |
 | @ | REG_SZ | IDENTIFICADOR de recurso para agregar plantillas de elementos. |
 | TemplatesDir | REG_SZ | Ruta de acceso de los elementos de proyecto mostrados en el cuadro de diálogo para el Asistente para **Agregar nuevo elemento** . |
@@ -84,7 +84,7 @@ Los tipos de proyecto deben registrar los directorios donde se encuentran las pl
 "SortPriority"=dword:00000064
 ```
 
-|Nombre|Tipo|Description|
+|Nombre|Tipo|Descripción|
 |----------|----------|-----------------|
 |CommonFindFilesFilter|REG_DWORD|Hace que el filtro sea uno de los filtros comunes del cuadro de diálogo **Buscar en archivos** . Los filtros comunes se muestran en la lista de filtros antes de que los filtros no estén marcados como comunes.|
 |CommonOpenFilesFilter|REG_DWORD|Hace que el filtro sea uno de los filtros comunes del cuadro de diálogo **Abrir archivo** . Los filtros comunes se muestran en la lista de filtros antes de que los filtros no estén marcados como comunes.|
@@ -118,7 +118,7 @@ Los tipos de proyecto deben registrar los directorios donde se encuentran las pl
 
  \WizardFiles
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Adición de plantillas de proyecto y de elementos de proyecto](../../extensibility/internals/adding-project-and-project-item-templates.md)
 - [Asistentes](../../extensibility/internals/wizards.md)

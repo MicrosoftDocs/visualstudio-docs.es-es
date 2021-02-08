@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3973d336-a9b7-41a2-a4e6-bb8184a96aaf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1efae18f15588f4dacf3409ea95e30af05397c6e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2794e915efe35c2fee593d677ffd228c055a565a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700478"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836740"
 ---
 # <a name="sccqueryinfo-function"></a>SccQueryInfo (Función)
 Esta función obtiene información de estado de un conjunto de archivos seleccionados bajo control de código fuente.
@@ -60,7 +60,7 @@ de Matriz de nombres de los archivos que se van a consultar.
 |SCC_E_PROJNOTOPEN|El proyecto no está abierto bajo control de código fuente.|
 |SCC_E_NONSPECIFICERROR|Error no específico.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Si `lpFileName` es una cadena vacía, actualmente no hay información de estado para actualizar. De lo contrario, es el nombre completo de la ruta de acceso del archivo para el que puede haber cambiado la información de estado.
 
  La matriz devuelta puede ser una máscara de `SCC_STATUS_xxxx` bits. Para obtener más información, consulte el [código de estado de archivo](../extensibility/file-status-code-enumerator.md). Es posible que un sistema de control de código fuente no admita todos los tipos de bits. Por ejemplo, si `SCC_STATUS_OUTOFDATE` no se ofrece, el bit simplemente no se establece.

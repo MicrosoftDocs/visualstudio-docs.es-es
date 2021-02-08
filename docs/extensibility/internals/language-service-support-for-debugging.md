@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 7a44067f-a410-4a6a-84d2-bda5184140bc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c17b11ce3639664a8097abeaa2a2de9a6faaadc7
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: b53eb738b695726cf86859ce83a8ee93440564a0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205169"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839708"
 ---
 # <a name="language-service-support-for-debugging"></a>Compatibilidad del servicio de lenguaje con la depuración
 Un servicio de lenguaje puede proporcionar características que admiten un depurador a través de la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo> interfaz. Estas características incluyen la validación de puntos de interrupción y la especificación de una lista de expresiones en la ventana **automático** .

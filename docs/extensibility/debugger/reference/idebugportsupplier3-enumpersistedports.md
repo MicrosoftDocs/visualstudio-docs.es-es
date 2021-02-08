@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 1c3dead3-5d6c-4067-8418-4015f0b0dd07
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 92b31a6b6898b0031e4a01d5a6433d0ce77e64f4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 09b1fabaeb5bf887eedaa53d57bdeb3604bf2257
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724456"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840332"
 ---
 # <a name="idebugportsupplier3enumpersistedports"></a>IDebugPortSupplier3::EnumPersistedPorts
 Este método recupera un objeto que permite la enumeración de la lista de puertos persistentes.
@@ -28,16 +28,16 @@ Este método recupera un objeto que permite la enumeración de la lista de puert
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT EnumPersistedPorts(
-   BSTR_ARRAY         PortNames,
-   IEnumDebugPorts2** ppEnum
+HRESULT EnumPersistedPorts(
+   BSTR_ARRAY         PortNames,
+   IEnumDebugPorts2** ppEnum
 );
 ```
 
 ```csharp
-int EnumPersistedPorts(
-   BSTR_ARRAY           PortNames,
-   out IEnumDebugPorts2 ppEnum
+int EnumPersistedPorts(
+   BSTR_ARRAY           PortNames,
+   out IEnumDebugPorts2 ppEnum
 );
 ```
 
@@ -51,7 +51,7 @@ enuncia Objeto que implementa la interfaz [IEnumDebugPorts2](../../../extensibil
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Los puertos persistentes se cargan cuando se crea una instancia de un proveedor de puerto y se guardan cuando se destruye el proveedor del puerto.
 
 ## <a name="see-also"></a>Vea también

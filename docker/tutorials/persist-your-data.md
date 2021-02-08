@@ -4,17 +4,17 @@ description: Obtenga información sobre cómo conservar los datos en una base de
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 9a4eb5062f8f1b01e8ad5e5165d7ec9ede636124
-ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.openlocfilehash: 9ee4109c888888d2dee36804a178f7db8d41753f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89485591"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841775"
 ---
 # <a name="persist-your-data"></a> Conservación de los datos
 

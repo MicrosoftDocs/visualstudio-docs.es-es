@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 99947fd4-fb87-4c69-b26c-65634e17d285
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad62a487d38500617999a276aa3ae15a75089736
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 0e5296a77e835ab291bce7a77e3f0cb09eb6bcf5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914132"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840852"
 ---
 # <a name="debug-package"></a>Depurar paquete
 El paquete de depuración se ejecuta en el shell de Visual Studio y controla toda la interfaz de usuario. Consume las interfaces de depuración de Visual Studio y se comunica con el administrador de depuración de sesión (SDM).
@@ -28,7 +28,7 @@ El paquete de depuración se ejecuta en el shell de Visual Studio y controla tod
 
  El paquete de depuración se implementa mediante *vsdebug.dll*.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Administrador de depuración de sesión](../../extensibility/debugger/session-debug-manager.md)
 - [Marcos de pila](../../extensibility/debugger/stack-frames.md)
 - [Subprocesos](../../extensibility/debugger/threads.md)

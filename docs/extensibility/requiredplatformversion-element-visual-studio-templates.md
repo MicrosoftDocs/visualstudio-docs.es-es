@@ -8,15 +8,15 @@ ms.topic: reference
 ms.assetid: 6f0e4986-3157-4bba-aed3-c28413ebe976
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 811cf013c7337e032f9ee5a37f9bc38329dff240
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: d182d308f852dda05f20f4ea30d3536850e20e90
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037743"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837026"
 ---
 # <a name="requiredplatformversion-element-visual-studio-templates"></a>RequiredPlatformVersion (elemento, plantillas de Visual Studio)
 
@@ -56,7 +56,7 @@ Especifica la versión mínima del sistema operativo que la plantilla de proyect
 
  Se requiere un valor de texto.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 
  Este texto especifica la versión mínima del sistema operativo necesaria para la plantilla.
 
@@ -77,7 +77,7 @@ Especifica la versión mínima del sistema operativo que la plantilla de proyect
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [TargetPlatformName (elemento, plantillas de Visual Studio)](../extensibility/targetplatformname-element-visual-studio-templates.md)
 - [Creación de plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)

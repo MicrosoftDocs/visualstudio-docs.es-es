@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5a3600a1-dc20-4e55-b2a4-809736a6ae65
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e19d9090126a13b657f53c20d7ec44a793d5376
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 22ce6497b820e1dcd37315f9d74cb97de4cc34e0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96913898"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837741"
 ---
 # <a name="attach-after-a-launch"></a>Adjuntar después de un inicio
 Una vez que se inicia un programa, la sesión de depuración está lista para adjuntar el motor DE depuración (DE) a dicho programa.
@@ -45,7 +45,7 @@ Una vez que se inicia un programa, la sesión de depuración está lista para ad
 
  El DE ahora se adjunta al programa y está listo para enviar los eventos DE Inicio.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Adjuntar directamente a un programa](../../extensibility/debugger/attaching-directly-to-a-program.md)
 - [Notificación del puerto](../../extensibility/debugger/notifying-the-port.md)
 - [Tareas de depuración](../../extensibility/debugger/debugging-tasks.md)

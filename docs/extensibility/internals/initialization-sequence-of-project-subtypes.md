@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f657f8c3-5e68-4308-9971-e81e3099ba29
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea784eae808cbab3a5991651961d3b150b641c04
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 86173253c947be5de8600e15b68a6f08504803a5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204714"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839851"
 ---
 # <a name="initialization-sequence-of-project-subtypes"></a>Secuencia de inicialización de subtipos de proyecto
 El entorno crea un proyecto mediante una llamada a la implementación del generador de proyectos base de <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> . La construcción de un subtipo de proyecto se inicia cuando el entorno determina que la lista de GUID de tipo de proyecto para la extensión de un archivo de proyecto no está vacía. La extensión de archivo de proyecto y el GUID de proyecto especifican si el proyecto es un [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] tipo de proyecto de o [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] . Por ejemplo, la extensión. vbproj y {F184B08F-C81C-45F6-A57F-5ABD9991F28F} identifican un [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] proyecto.

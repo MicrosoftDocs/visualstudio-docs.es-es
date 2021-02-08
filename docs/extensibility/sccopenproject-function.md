@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d609510b-660a-46d7-b93d-2406df20434d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fbf566e593bb1ddbc31c70de1570d746a14fbdcf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ebc78c73c37a5db3c1808cc3bb4b6715e85bcebe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700568"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836948"
 ---
 # <a name="sccopenproject-function"></a>SccOpenProject (Función)
 Esta función abre un proyecto de control de código fuente existente o crea uno nuevo.
@@ -91,7 +91,7 @@ de Indica si es necesario crear un nuevo proyecto si el proyecto es desconocido 
 |SCC_E_ACCESSFAILURE|Hubo un problema al obtener acceso al sistema de control de código fuente, probablemente debido a problemas de red o de contención. Se recomienda un reintento.|
 |SCC_E_NONSPECFICERROR|Un error no específico; no se inicializó el sistema de control de código fuente.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  El IDE puede pasar un nombre de usuario ( `lpUser` ) o simplemente pasar un puntero a una cadena vacía. Si hay un nombre de usuario, el complemento de control de código fuente debe usarlo como valor predeterminado. Sin embargo, si no se ha pasado ningún nombre, o si se ha producido un error en el inicio de sesión con el nombre especificado, el complemento debería solicitar al usuario que inicie sesión y devolverá el nombre válido en `lpUser` cuando reciba un inicio de sesión válido `.` porque el complemento puede cambiar la cadena de nombre de usuario, el IDE siempre asignará un búfer de tamaño ( `SCC_USER_LEN` + 1 o SCC_USER_SIZE, que
 
 > [!NOTE]

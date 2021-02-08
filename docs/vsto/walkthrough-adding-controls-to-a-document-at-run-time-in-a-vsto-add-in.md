@@ -14,15 +14,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], adding controls at run time
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: dbf6313f4788a0bd224d04639d3ab588a6469842
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 3cc88b5ee48241a15a66144c992936b55fb2acf3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526281"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838092"
 ---
 # <a name="walkthrough-add-controls-to-a-document-at-run-time-in-a-vsto-add-in"></a>Tutorial: agregar controles a un documento en tiempo de ejecución en un complemento de VSTO
   Puede Agregar controles a cualquier documento de Word Microsoft Office abierto mediante un complemento de VSTO. En este tutorial se muestra cómo usar la cinta para permitir a los usuarios agregar un <xref:Microsoft.Office.Tools.Word.Controls.Button> o un <xref:Microsoft.Office.Tools.Word.RichTextContentControl> a un documento.
@@ -184,7 +184,7 @@ ms.locfileid: "97526281"
 
 - Para ver un tutorial que muestra cómo agregar controles a una hoja de cálculo mediante un complemento de VSTO para Excel, vea [Tutorial: agregar controles a una hoja de cálculo en tiempo de ejecución en el proyecto de complemento de VSTO](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Soluciones de Word](../vsto/word-solutions.md)
 - [Agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [Conservar controles dinámicos en documentos de Office](../vsto/persisting-dynamic-controls-in-office-documents.md)

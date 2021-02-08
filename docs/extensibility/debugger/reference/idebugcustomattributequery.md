@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: b804b619-70eb-4c38-80d9-c8b32b65ed3e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 598db5ad711c8b61339e188311c1a437a24d013c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52549ac36ef8bdbf36d8f28c8864a874fc71fb6f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732611"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840476"
 ---
 # <a name="idebugcustomattributequery"></a>IDebugCustomAttributeQuery
 Representa una consulta de atributos personalizados en un método o tipo.

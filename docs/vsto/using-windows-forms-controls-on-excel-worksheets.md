@@ -13,15 +13,15 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], Window Forms controls
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 015fffa51358c3a7a13d98950392d0749560c089
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: f8c79e487e116741c393cef5a6f65b30cc4a8cfb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526517"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838222"
 ---
 # <a name="use-windows-forms-controls-on-excel-worksheets"></a>Usar controles de Windows Forms en hojas de cálculo de Excel
   Puede Agregar controles Windows Forms a los libros de Microsoft Office Excel de la misma manera que agrega controles a Windows Forms. Para obtener información general sobre cómo trabajar con controles en documentos, vea [información general sobre los controles de Windows Forms en documentos de Office](../vsto/windows-forms-controls-on-office-documents-overview.md).
@@ -40,7 +40,7 @@ ms.locfileid: "97526517"
 ### <a name="formula-for-embedding-controls"></a>Fórmula para incrustar controles
  Cuando seleccione un control en Excel, verá **=EMBED("WinForms.Control.Host","")** en la **Barra de fórmulas**. Este texto es necesario y no se debe eliminar.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Cómo: cambiar el tamaño de los controles dentro de las celdas de la hoja de cálculo](../vsto/how-to-resize-controls-within-worksheet-cells.md)
 - [Cómo: ocultar controles en hojas de cálculo al imprimir](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)
 - [Tutorial: cambiar el formato de una hoja de cálculo mediante controles CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)

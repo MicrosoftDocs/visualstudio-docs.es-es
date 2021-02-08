@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4b5e6666-c24c-438a-a9df-9c52f58f8175
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1adcbb47e9fce7037fe8942326e8836ade51e3eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 33ef775f33194a616d93478aecfdcceec446ebe8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700311"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836701"
 ---
 # <a name="sccsetoption-function"></a>SccSetOption (Función)
 Esta función establece las opciones que controlan el comportamiento del complemento de control de código fuente.
@@ -54,7 +54,7 @@ de Configuración de la opción.
 |SCC_I_SHARESUBPROJOK|Se devuelve si `nOption` era `SCC_OPT_SHARESUBPROJ` y el complemento de control de código fuente permite que el IDE establezca la carpeta de destino.|
 |SCC_E_OPNOTSUPPORTED|No se ha establecido la opción y no se debe confiar en ella.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  El IDE llama a esta función para controlar el comportamiento del complemento de control de código fuente. El primer parámetro, `nOption` , indica el valor que se va a establecer, mientras que el segundo, `dwVal` , indica qué hacer con ese valor. El complemento almacena esta información asociada a `pvContext``,` , por lo que el IDE debe llamar a esta función después de llamar a [SccInitialize](../extensibility/sccinitialize-function.md) (pero no necesariamente después de cada llamada a [SccOpenProject](../extensibility/sccopenproject-function.md)).
 
  Resumen de las opciones y sus valores:

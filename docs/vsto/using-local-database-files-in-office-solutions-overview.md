@@ -13,15 +13,15 @@ helpviewer_keywords:
 - local data [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1a3166a88080eaee1042187c171c4938d236058a
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 857038700a29f423250f006e743152bceea43c14
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526557"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838241"
 ---
 # <a name="use-local-database-files-in-office-solutions-overview"></a>Usar archivos de base de datos local en información general sobre soluciones de Office
   Puede incluir un archivo de base de datos, como un archivo SQL Server Express (*. MDF*) o un archivo de acceso Microsoft Office (*. mdb*), en la solución de Office. Esto permite a los usuarios finales mantener una base de datos local en situaciones en las que no es necesario mantener una base de datos centralizada, por ejemplo, en una solución de inventario local que se utiliza en un solo equipo.
@@ -39,7 +39,7 @@ ms.locfileid: "97526557"
 ## <a name="local-database-files-and-caching-the-dataset"></a>Archivos de base de datos local y almacenamiento en caché del conjunto de datos
  En las soluciones de nivel de documento para Microsoft Office Excel y Microsoft Office Word, puede almacenar en caché los conjuntos de valores del documento marcando la instancia de DataSet con el atributo <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> . Al agregar el archivo de base de datos al proyecto mediante el **Asistente para la configuración de orígenes de datos**, se agrega automáticamente un conjunto de datos con tipo al proyecto. Rara vez es necesario aplicar <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> a este conjunto de datos, ya que los datos ya son locales en el equipo del usuario. Para obtener más información, vea [almacenar datos en caché](../vsto/caching-data.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Cómo: rellenar documentos con datos de una base de datos](../vsto/how-to-populate-documents-with-data-from-a-database.md)
 - [Cómo: actualizar un origen de datos con datos de un control host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
