@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, reference for project and tools extensibility
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4599a2c305558f2ef551d19abac210bdf05269f3
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: ec07272ede6c957afb43c29342e8479e67d1dd0e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850395"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851729"
 ---
 # <a name="api-reference-sharepoint-tools-extensibility"></a>Referencia de API (extensibilidad de herramientas de SharePoint)
   Esta sección contiene la documentación de referencia de la API para extender las herramientas de SharePoint en Visual Studio.
@@ -69,7 +69,7 @@ ms.locfileid: "94850395"
 
  Contiene tipos que se usan para personalizar el comportamiento de validación de paquetes y características de un proyecto de SharePoint.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Referencia &#40;extensibilidad de herramientas de SharePoint&#41;](../sharepoint/reference-sharepoint-tools-extensibility.md)
 - [Información general del modelo de programación de extensiones de SharePoint](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)
 - [Extensión del sistema de proyectos de SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)

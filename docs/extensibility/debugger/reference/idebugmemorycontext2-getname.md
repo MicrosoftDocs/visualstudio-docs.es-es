@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 8c212556-7d9e-4d68-b2a9-8212f50d0287
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b8a13c078340eafcff9440e41afd468ba95f9849
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9076e9a1edbc80a1387e83078b97671c3013fe27
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727453"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851184"
 ---
 # <a name="idebugmemorycontext2getname"></a>IDebugMemoryContext2::GetName
 Recupera el nombre de usuario que se pueda mostrar para este contexto.
@@ -29,7 +29,7 @@ Recupera el nombre de usuario que se pueda mostrar para este contexto.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT GetName( 
+HRESULT GetName( 
    BSTR* pbstrName
 );
 ```
@@ -47,7 +47,7 @@ enuncia Devuelve el nombre del contexto de memoria.
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Normalmente no se utiliza el nombre de un contexto de memoria.
 
 ## <a name="see-also"></a>Vea también

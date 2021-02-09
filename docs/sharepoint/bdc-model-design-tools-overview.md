@@ -22,15 +22,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], designer
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b6e78b6809d3136c0db1f558d175706dc0ecd75b
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: b398d9c00caf3a4fa2ca58bafa3273673a305859
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850318"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851691"
 ---
 # <a name="bdc-model-design-tools-overview"></a>Introducción a las herramientas de diseño del modelo BDC
   Puede diseñar un modelo de conectividad a datos profesionales (BDC) mediante el diseñador de BDC, la ventana **detalles del método de BDC** y el explorador de **BDC**.
@@ -75,7 +75,7 @@ ms.locfileid: "94850318"
 
  Para obtener más información, vea [Cómo: definir el descriptor de tipo de un parámetro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Cómo: para crear un modelo BDC](../sharepoint/how-to-create-a-bdc-model.md)
 - [Cómo: agregar una entidad a un modelo](../sharepoint/how-to-add-an-entity-to-a-model.md)
 - [Cómo: agregar un método Finder](../sharepoint/how-to-add-a-finder-method.md)

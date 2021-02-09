@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 09f61652-7e16-4bb0-8055-f61a84bf384e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea477d3d21cd3b7a1a5352c736dc2f78195b99a4
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: a2d4ee971e2c53c9431982ef33483471a50c54bc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915614"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851314"
 ---
 # <a name="event-descriptions"></a>Descripciones de eventos
 Cada tipo de evento tiene un propósito específico.
@@ -46,5 +46,5 @@ Cada tipo de evento tiene un propósito específico.
 |Eventos de cambio de nombre de subproceso|Se envía cuando el usuario cambia el nombre de un subproceso.|
 |Eventos de cambio de nombre de programa|Se envía cuando el usuario cambia el nombre de un programa.|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Envío de eventos](../../extensibility/debugger/sending-events.md)

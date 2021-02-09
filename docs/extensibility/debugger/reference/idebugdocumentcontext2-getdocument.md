@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: c6d46c5d-ade8-4dc8-9862-8fc7876658c4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6bb93fe3efb4bc114cf583e8e2c066c337109d12
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e7cf55175134a570afbb22791bab51602cd49eba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731840"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851288"
 ---
 # <a name="idebugdocumentcontext2getdocument"></a>IDebugDocumentContext2::GetDocument
 Obtiene el documento que contiene este contexto de documento.
@@ -28,13 +28,13 @@ Obtiene el documento que contiene este contexto de documento.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT GetDocument( 
+HRESULT GetDocument( 
    IDebugDocument2** ppDocument
 );
 ```
 
 ```csharp
-int GetDocument( 
+int GetDocument( 
    out IDebugDocument2 ppDocument
 );
 ```
@@ -46,7 +46,7 @@ enuncia Devuelve un objeto [IDebugDocument2](../../../extensibility/debugger/ref
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Este método es para los motores de depuración que proporcionan documentos directamente al IDE. De lo contrario, este método debe devolver `E_NOTIMPL` .
 
 ## <a name="see-also"></a>Vea también

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 81b7f139-d24e-4040-9adc-d664d77563ba
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 81c697c3b2121cb5cc59ebcd51f92f9a15cdc4b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0ac9726874a34049c511616f63a7670035c5637a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80715203"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852861"
 ---
 # <a name="ienumdebugthreads2getcount"></a>IEnumDebugThreads2::GetCount
 Devuelve el número de elementos de la enumeración.
@@ -46,7 +46,7 @@ enuncia Devuelve el número de elementos de la enumeración.
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Este método no forma parte de la interfaz de enumeración com personalizada, que especifica que `Next` solo `Clone` `Skip` `Reset` se deben implementar los métodos,, y.
 
 ## <a name="see-also"></a>Vea también

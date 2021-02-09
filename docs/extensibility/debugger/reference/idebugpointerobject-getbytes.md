@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e986c188-87fb-4b51-86e9-ee6a0035bdab
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 17bc39f65d7c4c42b4f958b559df7c5b7d3bbdf7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1961aaf45478f25ed8eb55d8eda91a5c4eafc4dd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725517"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852952"
 ---
 # <a name="idebugpointerobjectgetbytes"></a>IDebugPointerObject::GetBytes
 Obtiene el valor al que se apunta como una serie de bytes consecutivos.
@@ -28,7 +28,7 @@ Obtiene el valor al que se apunta como una serie de bytes consecutivos.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT GetBytes( 
+HRESULT GetBytes( 
    DWORD  dwStart,
    DWORD  dwCount,
    BYTE*  pBytes,
@@ -61,7 +61,7 @@ enuncia Devuelve el número de bytes recuperados realmente.
 ## <a name="return-value"></a>Valor devuelto
  Si se realiza correctamente, Devuelve S_OK; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Este método se usa si el puntero representado por este [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) apunta a un tipo primitivo o a una matriz simple de tipos primitivos (es decir, una matriz que se puede representar mediante una secuencia simple de bytes).
 
 ## <a name="see-also"></a>Vea también

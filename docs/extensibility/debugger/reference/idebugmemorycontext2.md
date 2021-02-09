@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3a544c8b-11dc-46bb-8549-261e4ac5bbc4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d20a1180e1162e7de3aee1c5d69facf8c193910
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 12016ae7d03913d1880015a6b8cf318b14c94af5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727428"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851080"
 ---
 # <a name="idebugmemorycontext2"></a>IDebugMemoryContext2
 Esta interfaz representa una posición en el espacio de direcciones de la máquina que ejecuta el programa que se está depurando.
@@ -45,7 +45,7 @@ IDebugMemoryContext2 : IUnknown
 |[Restar](../../../extensibility/debugger/reference/idebugmemorycontext2-subtract.md)|Resta un valor especificado de la dirección del contexto actual para crear un nuevo contexto.|
 |[Comparar](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)|Compara dos contextos de la manera indicada por las marcas de comparación.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  La ventana **memoria** de Visual Studio llama a [GetMemoryContext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md) para obtener la `IDebugMemoryContext2` interfaz que contiene la expresión evaluada que se usa para la dirección de memoria. A continuación, este contexto se pasa a [readatum](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md) y [WriteAt](../../../extensibility/debugger/reference/idebugmemorybytes2-writeat.md) para especificar la dirección que se va a leer o escribir.
 
 ## <a name="requirements"></a>Requisitos

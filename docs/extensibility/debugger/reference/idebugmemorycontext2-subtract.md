@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 63df14c7-8d7e-47c1-afa7-5a1ab5d8eaba
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c858beb8c3f9f587633dbae8b3b1fe73fd789663
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 71e3191384a0ee45778cb7ee37b7e55e5f673578
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727437"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851093"
 ---
 # <a name="idebugmemorycontext2subtract"></a>IDebugMemoryContext2::Subtract
 Resta el valor especificado del contexto actual y devuelve un nuevo contexto.
@@ -29,7 +29,7 @@ Resta el valor especificado del contexto actual y devuelve un nuevo contexto.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT Subtract( 
+HRESULT Subtract( 
    UINT64                 dwCount,
    IDebugMemoryContext2** ppMemCxt
 );
@@ -52,7 +52,7 @@ enuncia Devuelve un nuevo objeto [IDebugMemoryContext2](../../../extensibility/d
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Un contexto de memoria es una dirección, por lo que restar un valor de una dirección genera una nueva dirección que requiere una nueva interfaz de contexto.
 
  Este método siempre debe generar un nuevo contexto, incluso si la dirección resultante está fuera del espacio de memoria asociado a este contexto. La única excepción es si no se puede asignar memoria para el nuevo contexto o si `ppMemCxt` es un valor null (que es un error).

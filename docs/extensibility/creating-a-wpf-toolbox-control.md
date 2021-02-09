@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 9cc34db9-b0d1-4951-a02f-7537fbbb51ad
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6dbe9ed00223fa549420537579d39a4c88cf37cb
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 9b401baf1605a869772ba41ce83ad906061f8144
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94973972"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851444"
 ---
 # <a name="create-a-wpf-toolbox-control"></a>Crear un control de cuadro de herramientas de WPF
 
@@ -33,7 +33,7 @@ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el c
 
 1. Cree un proyecto VSIX denominado `MyToolboxControl` . Para buscar la plantilla de Proyecto VSIX en el cuadro de diálogo **nuevo proyecto** , busque "VSIX".
 
-2. Cuando se abra el proyecto, agregue una plantilla de elemento de **control de cuadro de herramientas de WPF** denominada `MyToolboxControl` . En el **Explorador de soluciones**, haga clic con el botón secundario en el nodo del proyecto y seleccione **Agregar**  >  **nuevo elemento**. En el cuadro de diálogo **Agregar nuevo elemento** , vaya a extensibilidad de **Visual C#**  >  **Extensibility** y seleccione **control de cuadro de herramientas de WPF**. En el campo **nombre** situado en la parte inferior de la ventana, cambie el nombre del archivo de comandos a *MyToolboxControl.CS*.
+2. Cuando se abra el proyecto, agregue una plantilla de elemento de **control de cuadro de herramientas de WPF** denominada `MyToolboxControl` . En el **Explorador de soluciones**, haga clic con el botón secundario en el nodo del proyecto y seleccione **Agregar**  >  **nuevo elemento**. En el cuadro de diálogo **Agregar nuevo elemento** , vaya a extensibilidad de **Visual C#**  >   y seleccione **control de cuadro de herramientas de WPF**. En el campo **nombre** situado en la parte inferior de la ventana, cambie el nombre del archivo de comandos a *MyToolboxControl.CS*.
 
     La solución contiene ahora un control de usuario, un `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> que agrega el control al **cuadro de herramientas** y una entrada de recurso **Microsoft. VisualStudio. TOOLBOXCONTROL** en el manifiesto de VSIX para la implementación.
 

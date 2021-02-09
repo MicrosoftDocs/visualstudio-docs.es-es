@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: c51b5128-848e-4d8e-b2e9-1161339763c3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4b2551f8554d96186b90a1eed97a5a48ec5f0405
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e54a2bf7cd37b411dbc2d18d23a3466a4b47ce0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727496"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851210"
 ---
 # <a name="idebugmemorycontext2compare"></a>IDebugMemoryContext2::Compare
 Compara el contexto de memoria con cada contexto de la matriz dada de la manera indicada por las marcas de comparación y devuelve un índice del primer contexto que coincide con.
@@ -29,7 +29,7 @@ Compara el contexto de memoria con cada contexto de la matriz dada de la manera 
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT Compare( 
+HRESULT Compare( 
    CONTEXT_COMPARE        compare,
    IDebugMemoryContext2** rgpMemoryContextSet,
    DWORD                  dwMemoryContextSetLen,
@@ -62,7 +62,7 @@ enuncia Devuelve el índice del primer contexto de memoria que satisface la comp
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error. Devuelve `E_COMPARE_CANNOT_COMPARE` si no se pueden comparar los dos contextos.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Un motor de depuración (de) no tiene que admitir todos los tipos de comparaciones, pero debe admitir al menos `CONTEXT_EQUAL` , `CONTEXT_LESS_THAN` `CONTEXT_GREATER_THAN` y `CONTEXT_SAME_SCOPE` .
 
 ## <a name="see-also"></a>Vea también

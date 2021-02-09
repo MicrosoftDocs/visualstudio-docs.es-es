@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 09b237704a5b42f75c2239bd6d159e3d58e3025e
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 14f6add337ecfae3ab0dc5aa77a72962f2a0a915
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903720"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851600"
 ---
 # <a name="how-to-create-a-sharepoint-web-part-by-using-a-designer"></a>Cómo: crear un elemento Web de SharePoint mediante un diseñador
   Puede crear un elemento Web agregando un elemento de **elemento Web visual** a cualquier proyecto de SharePoint. Se abre el diseñador de Visual Web Developer en Visual Studio donde puede agregar controles y código al elemento web. Los elementos web visuales funcionan de la misma manera que lo hacen los elementos web. La única diferencia es que el usuario diseña los elementos web visuales en el diseñador de Visual Web Developer.
@@ -45,7 +45,7 @@ ms.locfileid: "94903720"
 
 ### <a name="to-add-a-visual-web-part-to-an-existing-sharepoint-project"></a>Para agregar un elemento web visual a un proyecto de SharePoint existente
 
-1. En la barra de menús, elija **proyecto**  >  **Agregar nuevo elemento**.
+1. En la barra de menús, elija **Proyecto** >  **Agregar nuevo elemento**.
 
 2. En el cuadro de diálogo **Agregar nuevo elemento** , elija el nodo **Office/SharePoint** .
 
@@ -53,7 +53,7 @@ ms.locfileid: "94903720"
 
      En **Explorador de soluciones**, aparece el elemento Web. Después de diseñar el elemento Web en el diseñador de Visual Web Developer, lo probará en el sitio que especifique.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Creación de elementos web para SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)
 - [Cómo: para crear un elemento web de SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)
 - [Tutorial: Creación de un elemento web para SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)

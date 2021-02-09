@@ -19,15 +19,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], resource strings
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ecc2bfab37e534e4edc005273ab5fc826b771228
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 49546d11dbf4f19bb2fd826ace2850468f780d13
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304369"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851561"
 ---
 # <a name="how-to-use-a-resource-file-in-a-sharepoint-project"></a>Cómo usar un archivo de recursos en un proyecto de SharePoint
 
@@ -37,7 +37,7 @@ ms.locfileid: "96304369"
 
 1. En **Explorador de soluciones**, expanda la carpeta del proyecto de SharePoint y, a continuación, elija la carpeta que contiene el modelo BDC.
 
-2. En la barra de menús, elija **proyecto**  >  **Agregar nuevo elemento**.
+2. En la barra de menús, elija **Proyecto** >  **Agregar nuevo elemento**.
 
 3. Expanda el nodo **SharePoint** y, a continuación, elija el nodo **2010** .
 
@@ -51,7 +51,7 @@ ms.locfileid: "96304369"
 
      Para obtener información sobre cómo definir estos elementos, vea [archivos de modelo y de recursos](/previous-versions/office/developer/sharepoint-2010/aa674515(v=office.14)).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Cómo: para agregar un archivo de modelo BDC existente a un proyecto de SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)
 - [Creación de un modelo de conectividad a datos profesionales](../sharepoint/creating-a-business-data-connectivity-model.md)
 - [Cómo: para crear un modelo BDC](../sharepoint/how-to-create-a-bdc-model.md)

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: c483eaab-db29-46de-bfdb-5c2a9a9cfb68
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e777e1f8cb67187a81f8f3bb4f79299939bfa31c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b67b28c61624b73787dabe9fd24c4c39ff9b3c9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738071"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853057"
 ---
 # <a name="bp_error_type"></a>BP_ERROR_TYPE
 Especifica el tipo de error de un punto de interrupción.
@@ -94,7 +94,7 @@ Especifica un error de punto de interrupción de estilo de error general.
 `BPET_ALL`\
 Especifica todos los tipos de error de punto de interrupción.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Estos valores se pueden combinar con una operación bit a bit `OR` y utilizarse para el `dwType` miembro de la estructura [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) . Se pasa como un parámetro al método [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) .
 
 Un tipo de error de punto de interrupción se compone de un tipo y una gravedad. Esto significa que un tipo de error de punto de interrupción nunca es simplemente un tipo (por ejemplo, `BPET_TYPE_ERROR` ,) o una gravedad (por ejemplo, `BPET_SEV_GENERAL` ) por sí solo. `BPET_GENERAL_WARNING` y `BPET_GENERAL_ERROR` proporcionan valores predefinidos para los puntos de interrupción generales de advertencia y error.
