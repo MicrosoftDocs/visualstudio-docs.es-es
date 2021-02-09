@@ -8,16 +8,16 @@ dev_langs:
 - CPP
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
 - cplusplus
-ms.openlocfilehash: 36b1fe83cb20aee6d6fc95984a254c9ac9d212bd
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: 4cf316e0d892e8c6ba229a7a46ee0439797d032f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998101"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866351"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Visual Studio Data Tools para C++
 

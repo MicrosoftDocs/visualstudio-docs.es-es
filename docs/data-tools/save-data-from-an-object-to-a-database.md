@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: efd6135a-40cf-4b0d-8f8b-41a5aaea7057
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7ee06ef21be4076a1a0dee6319155144c468bafd
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 52bd4f95160165ee67c0a35816d094238786bc38
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436027"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866572"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Guardar los datos de un objeto en una base de datos
 
@@ -78,6 +78,6 @@ De forma predeterminada, `DBDirect` los métodos se crean en un TableAdapter que
 
 Debe tener permiso para realizar la selección `INSERT` , `UPDATE` o `DELETE` en la tabla de la base de datos.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Guardar los datos de nuevo en la base de datos](../data-tools/save-data-back-to-the-database.md)

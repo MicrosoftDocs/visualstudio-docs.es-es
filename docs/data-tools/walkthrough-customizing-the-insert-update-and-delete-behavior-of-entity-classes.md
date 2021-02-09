@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: 03ff1146-706e-4780-91cb-56a83df63eea
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: cac9f27263fc7d316d308f1f8d906751f419f104
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: 1aba3b1f00ce65b90f61077673a0b88a3bab0f5e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94997932"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866143"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>Tutorial: personalizar el comportamiento de inserción, actualización y eliminación de las clases de entidad
 
@@ -126,7 +126,7 @@ Cree controles enlazados a las clases de entidad arrastrando LINQ to SQL element
 
 ### <a name="to-add-controls-that-are-bound-to-the-entity-classes"></a>Para agregar controles enlazados a las clases de entidad
 
-1. Abra **Form1** en vista de diseño.
+1. Abra **Form1** en vista Diseño.
 
 2. Desde la ventana **Orígenes de datos**, arrastre el nodo **Customer** hasta **Form1**.
 
@@ -163,7 +163,7 @@ De forma predeterminada, el botón Guardar no está habilitado y la funcionalida
 
 ### <a name="to-implement-save-functionality"></a>Para implementar la funcionalidad de guardar
 
-1. Abra **Form1** en vista de diseño.
+1. Abra **Form1** en vista Diseño.
 
 2. Seleccione el botón Guardar en **CustomersBindingNavigator** (el botón con el icono del disquete).
 
@@ -236,7 +236,7 @@ De forma predeterminada, el botón Guardar no está habilitado y la funcionalida
 > [!NOTE]
 > Aunque no se trata de un problema para este tutorial concreto, merece la pena tener en cuenta que LINQ to SQL controla automáticamente los valores generados por la base de datos para la identidad (incremento automático), ROWGUIDCOL (GUID generado por la base de datos) y las columnas de marca de tiempo durante las inserciones y actualizaciones. Los valores generados por la base de datos de otros tipos de columna producirán inesperadamente un valor nulo. Para devolver los valores generados por la base de datos, debe establecer manualmente <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> en `true` y <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> en uno de los siguientes: [AutoSync. Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>), [AutoSync. alinserte](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)o [AutoSync. ALUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>).
 
-## <a name="test-the-application"></a>Probar la aplicación
+## <a name="test-the-application"></a>Prueba de la aplicación
 
 Vuelva a ejecutar la aplicación para comprobar que el procedimiento almacenado **UpdateCustomers** actualiza correctamente el registro de cliente en la base de datos.
 

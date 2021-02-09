@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: e88224ab-ff61-4a3a-b6b8-6f3694546cac
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5915de290a84429878eccb4eae17821f8ac27f70
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: f0b7ab161a252e1d3a89ef856325963bddffdc56
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436418"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866858"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Procedimiento para asignar procedimientos almacenados para realizar actualizaciones, inserciones y eliminaciones (Object Relational Designer)
 
@@ -35,9 +35,9 @@ De forma predeterminada, la lógica para actualizar una base de datos (insercion
 
 ### <a name="to-assign-stored-procedures-to-override-the-default-behavior-of-an-entity-class"></a>Para asignar procedimientos almacenados con el fin de invalidar el comportamiento predeterminado de una clase de entidad
 
-1. Abra el archivo de **LINQ to SQL** en el diseñador. (Haga doble clic en el archivo **.dbml** en el **Explorador de soluciones** ).
+1. Abra el archivo de **LINQ to SQL** en el diseñador. (Haga doble clic en el archivo **.dbml** en el **Explorador de soluciones**).
 
-2. En el **Explorador de servidores** o **Explorador de bases de datos** , expanda **Procedimientos almacenados** y busque los procedimientos almacenados que desee usar para los comandos Insertar, Actualizar y/o Eliminar de la clase de entidad.
+2. En el **Explorador de servidores** o **Explorador de bases de datos**, expanda **Procedimientos almacenados** y busque los procedimientos almacenados que desee usar para los comandos Insertar, Actualizar y/o Eliminar de la clase de entidad.
 
 3. Arrastre el procedimiento almacenado hasta **Object Relational Designer**.
 
@@ -45,7 +45,7 @@ De forma predeterminada, la lógica para actualizar una base de datos (insercion
 
 4. Seleccione la clase de entidad para la que desee usar el procedimiento almacenado para realizar las actualizaciones.
 
-5. En la ventana **Propiedades** , seleccione el comando que desee invalidar ( **Insertar** , **Actualizar** o **Eliminar** ).
+5. En la ventana **Propiedades**, seleccione el comando que desee invalidar (**Insertar**, **Actualizar** o **Eliminar**).
 
 6. Haga clic en los puntos suspensivos (...) junto a **Usar motor en tiempo de ejecución** para abrir el cuadro de diálogo **Configurar comportamiento**.
 
@@ -61,11 +61,11 @@ De forma predeterminada, la lógica para actualizar una base de datos (insercion
 10. Haga clic en **Aceptar** o en **Aplicar**.
 
     > [!NOTE]
-    > Puede seguir configurando el comportamiento de cada combinación de clase y comportamiento siempre que haga clic en **aplicar** después de hacer cada cambio. Si cambia la clase o el comportamiento antes de hacer clic en **aplicar** , aparece un cuadro de diálogo de advertencia que le ofrece la oportunidad de aplicar los cambios.
+    > Puede seguir configurando el comportamiento de cada combinación de clase y comportamiento siempre que haga clic en **aplicar** después de hacer cada cambio. Si cambia la clase o el comportamiento antes de hacer clic en **aplicar**, aparece un cuadro de diálogo de advertencia que le ofrece la oportunidad de aplicar los cambios.
 
-Para revertir a la lógica predeterminada del motor en tiempo de ejecución para las actualizaciones, haga clic en los puntos suspensivos junto a los comandos **Insertar** , **Actualizar** o **Eliminar** en la ventana **Propiedades** y después seleccione **Usar motor en tiempo de ejecución** en el cuadro de diálogo **Configurar comportamiento**.
+Para revertir a la lógica predeterminada del motor en tiempo de ejecución para las actualizaciones, haga clic en los puntos suspensivos junto a los comandos **Insertar**, **Actualizar** o **Eliminar** en la ventana **Propiedades** y después seleccione **Usar motor en tiempo de ejecución** en el cuadro de diálogo **Configurar comportamiento**.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Herramientas de LINQ to SQL en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [DataContext (métodos)](../data-tools/datacontext-methods-o-r-designer.md)

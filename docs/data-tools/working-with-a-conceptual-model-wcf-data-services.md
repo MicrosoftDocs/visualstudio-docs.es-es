@@ -1,6 +1,6 @@
 ---
 title: Trabajar con un modelo conceptual (Servicios de datos de WCF)
-description: Trabajar con un modelo conceptual en WCF Data Services. Consultar los datos a través de objetos en lugar de trasladarlos entre los esquemas de base de datos y los modelos de objetos.
+description: Trabajar con un modelo conceptual en Servicios de datos de WCF. Consultar los datos a través de objetos en lugar de trasladarlos entre los esquemas de base de datos y los modelos de objetos.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 2cd873cf-b010-49f2-a278-bb1277aaa934
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2aa79ca10729b9c36437fe30072328838de5dda4
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: ef5745f974848da75b4dcc0c42b59b38aa61cd0b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94997880"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866117"
 ---
-# <a name="work-with-a-conceptual-model-wcf-data-services"></a>Trabajar con un modelo conceptual (WCF Data Services)
+# <a name="work-with-a-conceptual-model-wcf-data-services"></a>Trabajar con un modelo conceptual (Servicios de datos de WCF)
 
 Cuando se usa un modelo conceptual para describir los datos de una base de datos, se pueden consultar los datos a través de objetos en lugar de tener que traducirlos en ambos sentidos entre un esquema de base de datos y un modelo de objetos.
 
@@ -49,5 +49,5 @@ En los temas siguientes se muestra cómo agregar validación a las aplicaciones 
 
 ## <a name="see-also"></a>Vea también
 
-- [Windows Communication Foundation servicios y WCF Data Services en Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Servicios de Windows Communication Foundation y servicios de datos WCF en Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
 - [Consultar el servicio de datos](/dotnet/framework/data/wcf/querying-the-data-service-wcf-data-services)

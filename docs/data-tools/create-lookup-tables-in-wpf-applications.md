@@ -15,19 +15,19 @@ helpviewer_keywords:
 ms.assetid: 56a1fbff-c7e8-4187-a1c1-ffd17024bc1b
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 293f04ca111fe88c905a288885f7e4763ec1cdc3
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: cc390642155d33f75bf5c4a69236945658845639
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436698"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867105"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Creación de tablas de búsqueda en aplicaciones WPF
 
-La *tabla de búsqueda* de términos (a veces denominada *enlace de búsqueda* ) describe un control que muestra información de una tabla de datos en función del valor de un campo de clave externa de otra tabla. Puede crear una tabla de búsqueda arrastrando el nodo principal de una tabla o un objeto primario en la ventana **orígenes de datos** hasta un control que ya esté enlazado a una columna o propiedad de una tabla secundaria relacionada.
+La *tabla de búsqueda* de términos (a veces denominada *enlace de búsqueda*) describe un control que muestra información de una tabla de datos en función del valor de un campo de clave externa de otra tabla. Puede crear una tabla de búsqueda arrastrando el nodo principal de una tabla o un objeto primario en la ventana **orígenes de datos** hasta un control que ya esté enlazado a una columna o propiedad de una tabla secundaria relacionada.
 
 Por ejemplo, considérese una tabla de `Orders` en una base de datos de ventas. Cada registro de la `Orders` tabla incluye un `CustomerID` que indica qué cliente realizó el pedido. `CustomerID`Es una clave externa que señala a un registro de cliente en la `Customers` tabla. Cuando se muestra una lista de pedidos de la `Orders` tabla, es posible que desee mostrar el nombre real del cliente en lugar del `CustomerID` . Dado que el nombre del cliente está en la `Customers` tabla, debe crear una tabla de búsqueda para mostrar el nombre del cliente. La tabla de búsqueda utiliza el `CustomerID` valor del `Orders` registro para navegar por la relación y devolver el nombre del cliente.
 
@@ -48,7 +48,7 @@ Por ejemplo, considérese una tabla de `Orders` en una base de datos de ventas. 
 
      Para obtener más información sobre los destinos de colocación válidos, vea [enlazar controles WPF a datos en Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
 
-3. En el menú **Datos** , haga clic en **Mostrar orígenes de datos** para abrir la ventana **Orígenes de datos**.
+3. En el menú **Datos**, haga clic en **Mostrar orígenes de datos** para abrir la ventana **Orígenes de datos**.
 
 4. Expanda los nodos en la ventana **orígenes de datos** , hasta que pueda ver la tabla o el objeto primario y el objeto o la tabla secundaria relacionada.
 
@@ -63,7 +63,7 @@ Por ejemplo, considérese una tabla de `Orders` en una base de datos de ventas. 
 
     - **ComboBox**
 
-    - **ListBox**
+    - **Identificación**
 
     - **ListView**
 
@@ -90,7 +90,7 @@ Por ejemplo, considérese una tabla de `Orders` en una base de datos de ventas. 
     |<xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A>|Visual Studio enlaza esta propiedad a la columna o propiedad de los datos secundarios que arrastró al diseñador. Esta es la clave externa para los datos primarios.|
     |<xref:System.Windows.Controls.Primitives.Selector.SelectedValuePath%2A>|Visual Studio establece esta propiedad en la ruta de acceso de la columna o propiedad de los datos secundarios que son la clave externa para los datos primarios.|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Enlace de controles de WPF a datos en Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Mostrar datos relacionados en aplicaciones WPF](../data-tools/display-related-data-in-wpf-applications.md)

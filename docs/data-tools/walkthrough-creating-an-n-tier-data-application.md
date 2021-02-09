@@ -13,22 +13,22 @@ helpviewer_keywords:
 ms.assetid: d15e4d31-2839-48d9-9e0e-2e73404d82a2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 76bf07e99f9965e88804c51663bcc37053bf74d6
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: ed395c60ec16eeff6a5aac88a99698193e8bacbd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998088"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866156"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>Tutorial: crear una aplicación de datos de n niveles
 Las aplicaciones de datos con *n niveles* son aplicaciones que acceden a datos y que están separadas en varias capas lógicas o *niveles*. Al separar los componentes de la aplicación en estos niveles individuales, se aumenta la facilidad de mantenimiento y la escalabilidad de la aplicación. Esto se consigue mediante una integración más sencilla de nuevas tecnologías, que se pueden aplicar a un solo nivel sin necesidad de volver a diseñar la solución completa. Una arquitectura típica con n niveles incluye un nivel de presentación, un nivel intermedio y una capa de datos. El nivel intermedio incluye normalmente una capa de acceso a datos, una capa de la lógica empresarial y componentes compartidos, tales como autenticación y validación. La capa de datos incluye una base de datos relacional. Las aplicaciones con n niveles normalmente almacenan la información confidencial en la capa de acceso a datos del nivel intermedio para aislar esa información de los usuarios finales que obtienen acceso al nivel de presentación. Para obtener más información, vea [información general sobre aplicaciones de datos con N niveles](../data-tools/n-tier-data-applications-overview.md).
 
 Una manera de separar los distintos niveles de una aplicación con n niveles consiste en crear proyectos independientes para cada nivel que se desee incluir en la aplicación. Los conjuntos de datos con tipo contienen una propiedad `DataSet Project` que determina en qué proyectos deben ir el conjunto de datos y el código de `TableAdapter` generados.
 
-Este tutorial muestra cómo separar el código de conjunto de datos y `TableAdapter` en proyectos de bibliotecas de clases individuales mediante el **Diseñador de DataSet**. Después de separar el conjunto de datos y el código de TableAdapter, cree una [Windows Communication Foundation servicios y WCF Data Services en el servicio de Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) para llamar al nivel de acceso a datos. Por último, cree una aplicación Windows Forms como el nivel de presentación. Este nivel obtiene acceso a los datos desde el servicio de datos.
+Este tutorial muestra cómo separar el código de conjunto de datos y `TableAdapter` en proyectos de bibliotecas de clases individuales mediante el **Diseñador de DataSet**. Después de separar el conjunto de datos y el código de TableAdapter, cree una [Windows Communication Foundation servicios y servicios de datos de WCF en el servicio de Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) para llamar al nivel de acceso a datos. Por último, cree una aplicación Windows Forms como el nivel de presentación. Este nivel obtiene acceso a los datos desde el servicio de datos.
 
 Durante este tutorial, realizará los pasos siguientes:
 
@@ -371,7 +371,7 @@ El valor predeterminado de `maxReceivedMessageSize` no es lo suficientemente gra
 
 2. Busque el atributo de tamaño **maxReceivedMessage** y cambie su valor a `6553600`.
 
-## <a name="test-the-application"></a>Probar la aplicación
+## <a name="test-the-application"></a>Prueba de la aplicación
 Ejecute la aplicación presionando **F5**. Los datos de las `Customers` `Orders` tablas y se recuperan del servicio de datos y se muestran en el formulario.
 
 ## <a name="next-steps"></a>Pasos siguientes

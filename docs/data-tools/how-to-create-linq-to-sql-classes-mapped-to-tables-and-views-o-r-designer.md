@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 0fb78bbc-7a78-4ab4-b32f-85ece912e660
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 79e5c529c1aefb4777e174489fc8fd1ca95a4111
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: b440e8c47afdec6e0b04b5f48a35e15fe48e1875
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436351"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866806"
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Cómo: Crear clases de LINQ to SQL asignadas a tablas y vistas (Object Relational Designer)
 
@@ -34,7 +34,7 @@ De forma predeterminada, el motor en tiempo de ejecución de [!INCLUDE[vbtecdlin
 
 ### <a name="to-create-linq-to-sql-classes-that-are-mapped-to-database-tables-or-views"></a>Para crear clases de LINQ to SQL asignadas a tablas o vistas de base de datos
 
-1. En **Servidor** o en **Explorador de bases de datos** , expanda **Tablas** o **Vistas** y busque la tabla o vista de base de datos que desee usar en la aplicación.
+1. En **Servidor** o en **Explorador de bases de datos**, expanda **Tablas** o **Vistas** y busque la tabla o vista de base de datos que desee usar en la aplicación.
 
 2. Arrastre la tabla o vista a Object Relational **Designer**.
 
@@ -42,11 +42,11 @@ De forma predeterminada, el motor en tiempo de ejecución de [!INCLUDE[vbtecdlin
 
 ## <a name="create-an-object-data-source-and-display-the-data-on-a-form"></a>Crear un origen de datos de objeto y mostrar los datos en un formulario
 
-Después de crear las clases de entidad mediante Object Relational **Designer** , puede crear un origen de datos de objeto y rellenar la [ventana orígenes de datos](add-new-data-sources.md#data-sources-window) con las clases de entidad.
+Después de crear las clases de entidad mediante Object Relational **Designer**, puede crear un origen de datos de objeto y rellenar la [ventana orígenes de datos](add-new-data-sources.md#data-sources-window) con las clases de entidad.
 
 ### <a name="to-create-an-object-data-source-based-on-linq-to-sql-entity-classes"></a>Para crear un origen de datos de objeto basándose en las clases de entidad de LINQ to SQL
 
-1. Para compilar el proyecto, en el menú **Compilar** , haga clic en **Compilar solución**.
+1. Para compilar el proyecto, en el menú **Compilar**, haga clic en **Compilar solución**.
 
 2. Para abrir la ventana **orígenes de datos** , en el menú **datos** , haga clic en **Mostrar orígenes de datos**.
 
@@ -63,7 +63,7 @@ Después de crear las clases de entidad mediante Object Relational **Designer** 
 
 7. Arrastre los elementos desde la ventana **Orígenes de datos** a un formulario.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Herramientas de LINQ to SQL en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Walkthrough: Creating LINQ to SQL classes (O-R Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md) (Tutorial: Crear clases de LINQ to SQL [Object Relational Designer])

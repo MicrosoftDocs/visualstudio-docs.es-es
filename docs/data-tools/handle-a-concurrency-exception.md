@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 73ee9759-0a90-48a9-bf7b-9d6fc17bff93
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5fcd8bb06cf9c88466b4dfa3cfaf2dfd8093bd3d
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: c410d9290b7e377654a9cff87f8df7524a1b7149
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436451"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866884"
 ---
 # <a name="handle-a-concurrency-exception"></a>Tratar las excepciones de simultaneidad
 
@@ -51,7 +51,7 @@ Este tutorial le guía a través del proceso siguiente:
 
 En este tutorial se usa SQL Server Express LocalDB y la base de datos de ejemplo Northwind.
 
-1. Si no tiene SQL Server Express LocalDB, instálelo desde la [Página de descarga de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)o a través de la **instalador de Visual Studio**. En el **instalador de Visual Studio** , puede instalar SQL Server Express LocalDB como parte de la carga de trabajo de **procesamiento y almacenamiento de datos** , o como un componente individual.
+1. Si no tiene SQL Server Express LocalDB, instálelo desde la [Página de descarga de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)o a través de la **instalador de Visual Studio**. En el **instalador de Visual Studio**, puede instalar SQL Server Express LocalDB como parte de la carga de trabajo de **procesamiento y almacenamiento de datos** , o como un componente individual.
 
 2. Instale la base de datos de ejemplo Northwind siguiendo estos pasos:
 
@@ -65,11 +65,11 @@ En este tutorial se usa SQL Server Express LocalDB y la base de datos de ejemplo
 
        Tras un breve período de tiempo, la consulta termina de ejecutarse y se crea la base de datos Northwind.
 
-## <a name="create-a-new-project"></a>Crear un proyecto nuevo
+## <a name="create-a-new-project"></a>Creación de un nuevo proyecto
 
 Empiece por crear una nueva aplicación de Windows Forms:
 
-1. En Visual Studio, en el menú **Archivo** , seleccione **Nuevo** > **Proyecto**.
+1. En Visual Studio, en el menú **Archivo**, seleccione **Nuevo** > **Proyecto**.
 
 2. Expanda **Visual C#** o **Visual Basic** en el panel izquierdo y, a continuación, seleccione **escritorio de Windows**.
 
@@ -81,7 +81,7 @@ Empiece por crear una nueva aplicación de Windows Forms:
 
 ## <a name="create-the-northwind-dataset"></a>Crear el conjunto de DataSet Northwind
 
-A continuación, cree un conjunto de DataSet denominado **NorthwindDataSet** :
+A continuación, cree un conjunto de DataSet denominado **NorthwindDataSet**:
 
 1. En el menú **datos** , elija **Agregar nuevo origen de datos**.
 
@@ -114,7 +114,7 @@ En esta sección, creará un <xref:System.Windows.Forms.DataGridView?displayProp
 
 4. Arrastre la tabla hasta un área vacía de su formulario.
 
-     Un <xref:System.Windows.Forms.DataGridView> control denominado **CustomersDataGridView** , y un <xref:System.Windows.Forms.BindingNavigator> **CustomersBindingNavigator** con nombre, se agregan al formulario que está enlazado a <xref:System.Windows.Forms.BindingSource> . Esto, a su vez, está enlazado a la tabla Customers de NorthwindDataSet.
+     Un <xref:System.Windows.Forms.DataGridView> control denominado **CustomersDataGridView**, y un <xref:System.Windows.Forms.BindingNavigator> **CustomersBindingNavigator** con nombre, se agregan al formulario que está enlazado a <xref:System.Windows.Forms.BindingSource> . Esto, a su vez, está enlazado a la tabla Customers de NorthwindDataSet.
 
 ## <a name="test-the-form"></a>Prueba del formulario
 
@@ -124,7 +124,7 @@ Ahora es posible comprobar el formulario para asegurarse de que se comporta de l
 
      El formulario aparece con un <xref:System.Windows.Forms.DataGridView> control que se rellena con los datos de la tabla customers.
 
-2. En el menú **Depurar** , seleccione **Detener depuración**.
+2. En el menú **Depurar**, seleccione **Detener depuración**.
 
 ## <a name="handle-concurrency-errors"></a>Control de errores de simultaneidad
 
@@ -178,7 +178,7 @@ Cree el mensaje agregando el código siguiente en el **Editor de código**. Escr
 
 ### <a name="process-the-users-response"></a>Procesar la respuesta del usuario
 
-También necesita código para procesar la respuesta del usuario al cuadro de mensaje. Las opciones son para sobrescribir el registro actual en la base de datos con el cambio propuesto, o bien abandonar los cambios locales y actualizar la tabla de datos con el registro que se encuentra actualmente en la base de datos. Si el usuario elige **sí** , <xref:System.Data.DataTable.Merge%2A> se llama al método con el argumento *preserveChanges* establecido en **true**. Esto hace que el intento de actualización se realice correctamente, ya que la versión original del registro coincide ahora con el registro de la base de datos.
+También necesita código para procesar la respuesta del usuario al cuadro de mensaje. Las opciones son para sobrescribir el registro actual en la base de datos con el cambio propuesto, o bien abandonar los cambios locales y actualizar la tabla de datos con el registro que se encuentra actualmente en la base de datos. Si el usuario elige **sí**, <xref:System.Data.DataTable.Merge%2A> se llama al método con el argumento *preserveChanges* establecido en **true**. Esto hace que el intento de actualización se realice correctamente, ya que la versión original del registro coincide ahora con el registro de la base de datos.
 
 Agregue el código siguiente debajo del código que se agregó en la sección anterior:
 
@@ -193,20 +193,20 @@ Puede comprobar el formulario para asegurarse de que se comporta de la forma pre
 
 2. Después de que el formulario aparezca, ejecútelo y cambie al IDE de Visual Studio.
 
-3. En el menú **Ver** , elija **Explorador de servidores**.
+3. En el menú **Ver**, elija **Explorador de servidores**.
 
-4. En el **Explorador de servidores** , expanda la conexión que utiliza la aplicación y, a continuación, expanda el nodo **Tablas**.
+4. En el **Explorador de servidores**, expanda la conexión que utiliza la aplicación y, a continuación, expanda el nodo **Tablas**.
 
 5. Haga clic con el botón secundario en la tabla **Customers** y seleccione **Mostrar datos de tabla**.
 
-6. En el primer registro ( **ALFKI** ), cambie **ContactName** a **Maria Anders2**.
+6. En el primer registro (**ALFKI**), cambie **ContactName** a **Maria Anders2**.
 
     > [!NOTE]
     > Navegue hasta una fila diferente para confirmar el cambio.
 
 7. Cambie al formulario de ejecución de ConcurrencyWalkthrough.
 
-8. En el primer registro del formulario ( **ALFKI** ), cambie **ContactName** por **María Anders1**.
+8. En el primer registro del formulario (**ALFKI**), cambie **ContactName** por **María Anders1**.
 
 9. Seleccione el botón **Guardar**.
 
@@ -214,6 +214,6 @@ Puede comprobar el formulario para asegurarse de que se comporta de la forma pre
 
    Al seleccionar **no** se cancela la actualización y se actualiza el conjunto de datos con los valores que se encuentran actualmente en la base de datos. Si selecciona **sí** , se escribe el valor propuesto en la base de datos.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Guardar los datos de nuevo en la base de datos](../data-tools/save-data-back-to-the-database.md)

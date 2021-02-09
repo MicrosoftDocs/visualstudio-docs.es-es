@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: b1488366-6dfb-454e-9751-f42fd3f3ddfb
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4ba2010b33b1defa6ef7dcb601fde9417fa47f70
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 30f6d338b4e27677c14dfa4e5ff8793e67f4c6ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436750"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867118"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Crear un control de usuario de Windows Forms que admita el enlace de datos simple
 
@@ -59,11 +59,11 @@ Durante este tutorial aprenderá a:
 
 En este tutorial se usa SQL Server Express LocalDB y la base de datos de ejemplo Northwind.
 
-1. Si no tiene SQL Server Express LocalDB, instálelo desde la [Página de descarga de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)o a través de la **instalador de Visual Studio**. En el **instalador de Visual Studio** , puede instalar SQL Server Express LocalDB como parte de la carga de trabajo de **procesamiento y almacenamiento de datos** , o como un componente individual.
+1. Si no tiene SQL Server Express LocalDB, instálelo desde la [Página de descarga de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)o a través de la **instalador de Visual Studio**. En el **instalador de Visual Studio**, puede instalar SQL Server Express LocalDB como parte de la carga de trabajo de **procesamiento y almacenamiento de datos** , o como un componente individual.
 
 2. Instale la base de datos de ejemplo Northwind siguiendo estos pasos:
 
-    1. En Visual Studio, abra la ventana **Explorador de objetos de SQL Server** . (Explorador de objetos de SQL Server se instala como parte de la carga de trabajo de **procesamiento y almacenamiento de datos** en el **instalador de Visual Studio** ). Expanda el nodo **SQL Server** . Haga clic con el botón secundario en la instancia de LocalDB y seleccione **nueva consulta**.
+    1. En Visual Studio, abra la ventana **Explorador de objetos de SQL Server** . (Explorador de objetos de SQL Server se instala como parte de la carga de trabajo de **procesamiento y almacenamiento de datos** en el **instalador de Visual Studio**). Expanda el nodo **SQL Server** . Haga clic con el botón secundario en la instancia de LocalDB y seleccione **nueva consulta**.
 
        Se abre una ventana del editor de consultas.
 
@@ -75,9 +75,9 @@ En este tutorial se usa SQL Server Express LocalDB y la base de datos de ejemplo
 
 ## <a name="create-a-windows-forms-application"></a>Crear una aplicación de Windows Forms
 
-El primer paso es crear una **aplicación Windows Forms** :
+El primer paso es crear una **aplicación Windows Forms**:
 
-1. En Visual Studio, en el menú **Archivo** , seleccione **Nuevo** > **Proyecto**.
+1. En Visual Studio, en el menú **Archivo**, seleccione **Nuevo** > **Proyecto**.
 
 2. Expanda **Visual C#** o **Visual Basic** en el panel izquierdo y, a continuación, seleccione **escritorio de Windows**.
 
@@ -91,7 +91,7 @@ El primer paso es crear una **aplicación Windows Forms** :
 
 En este tutorial se crea un control simple enlazable a datos a partir de un **control de usuario**. Agregue un elemento de **control de usuario** al proyecto **tutorialdecontrolsimple** :
 
-1. En el menú **Proyecto** , elija **Agregar control de usuario**.
+1. En el menú **Proyecto**, elija **Agregar control de usuario**.
 
 2. Escriba **PhoneNumberBox** en el área Nombre y haga clic en **Agregar**.
 
@@ -111,7 +111,7 @@ En este tutorial se amplía el existente <xref:System.Windows.Forms.MaskedTextBo
 
 En el caso de los controles simples que admiten enlaces de datos, implemente el <xref:System.ComponentModel.DefaultBindingPropertyAttribute>:
 
-1. Cambie el control **PhoneNumberBox** a la vista de código. (En el menú **Ver** , elija **Código**.)
+1. Cambie el control **PhoneNumberBox** a la vista de código. (En el menú **Ver**, elija **Código**.)
 
 2. Reemplace el código de **PhoneNumberBox** por lo siguiente:
 
@@ -128,7 +128,7 @@ En este paso se usa el Asistente para la **configuración de orígenes de datos*
 
 2. En la ventana **orígenes de datos** , seleccione **Agregar nuevo origen de datos** para iniciar el Asistente para la configuración de orígenes de **datos** .
 
-3. En la página **Elegir un tipo de origen de datos** , seleccione **Base de datos** y después haga clic en **Siguiente**.
+3. En la página **Elegir un tipo de origen de datos**, seleccione **Base de datos** y después haga clic en **Siguiente**.
 
 4. En la página **elegir la conexión de datos** , realice una de las acciones siguientes:
 
@@ -162,7 +162,7 @@ Dentro de la ventana **orígenes de datos** , puede establecer el control que se
 
 6. Haga clic en la flecha de lista desplegable en la columna **Phone** y elija **PhoneNumberBox**.
 
-## <a name="add-controls-to-the-form"></a>Agregar controles al formulario
+## <a name="add-controls-to-the-form"></a>Adición de controles al formulario
 
 Puede crear los controles enlazados a datos arrastrando elementos desde la ventana **Orígenes de datos** al formulario.
 
@@ -182,7 +182,7 @@ Según cuáles sean los requisitos de la aplicación, hay varios pasos que se pu
 
 - Crear controles que admitan escenarios de enlace a datos más complejos. Para obtener más información, vea [crear un control de usuario Windows Forms que admita el enlace de datos complejo](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md) y [crear un control de usuario Windows Forms que admita el enlace de datos de búsqueda](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Enlazar controles de Windows Forms a datos en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Establecer el control que se creará al arrastrar desde la ventana Orígenes de datos](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)

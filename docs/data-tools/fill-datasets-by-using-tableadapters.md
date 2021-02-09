@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 55f3bfbe-db78-4486-add3-c62f49e6b9a0
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: e6a10eb996acbdbf5411688860ce2ec8b00da1f6
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 8037b8d19bad19485e9ed8f7926e6a3e45b8fef1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436464"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866910"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Rellenar conjuntos de datos mediante TableAdapters
 
@@ -54,7 +54,7 @@ Los TableAdapters son componentes generados por el diseñador que se conectan a 
 
 ![Flujo de datos de una aplicación cliente](../data-tools/media/clientdatadiagram.gif)
 
-Aunque los TableAdapters están diseñados con el **Diseñador de DataSet** , las clases de TableAdapter no se generan como clases anidadas de  <xref:System.Data.DataSet> . Se encuentran en espacios de nombres independientes que son específicos de cada conjunto de información. Por ejemplo, si tiene un conjunto de `NorthwindDataSet` objetos denominado, los TableAdapters asociados a  <xref:System.Data.DataTable> s en el `NorthwindDataSet` se encontrarían en el espacio de `NorthwindDataSetTableAdapters` nombres. Para tener acceso a un TableAdapter determinado mediante programación, debe declarar una nueva instancia del TableAdapter. Por ejemplo:
+Aunque los TableAdapters están diseñados con el **Diseñador de DataSet**, las clases de TableAdapter no se generan como clases anidadas de  <xref:System.Data.DataSet> . Se encuentran en espacios de nombres independientes que son específicos de cada conjunto de información. Por ejemplo, si tiene un conjunto de `NorthwindDataSet` objetos denominado, los TableAdapters asociados a  <xref:System.Data.DataTable> s en el `NorthwindDataSet` se encontrarían en el espacio de `NorthwindDataSetTableAdapters` nombres. Para tener acceso a un TableAdapter determinado mediante programación, debe declarar una nueva instancia del TableAdapter. Por ejemplo:
 
 [!code-csharp[VbRaddataTableAdapters#7](../data-tools/codesnippet/CSharp/fill-datasets-by-using-tableadapters_1.cs)]
 [!code-vb[VbRaddataTableAdapters#7](../data-tools/codesnippet/VisualBasic/fill-datasets-by-using-tableadapters_1.vb)]
@@ -139,6 +139,6 @@ A continuación se muestran los métodos y las propiedades de la clase que se us
 
 Al utilizar comandos de datos con una propiedad CommandType establecida en <xref:System.Data.CommandType.Text> , compruebe cuidadosamente la información que se envía desde un cliente antes de pasarla a la base de datos. Usuarios con malas intenciones podrían intentar enviar (inyectar) instrucciones de SQL modificadas o adicionales con el fin de obtener acceso no autorizado o dañar la base de datos. Antes de transferir la entrada del usuario a una base de datos, compruebe siempre que la información es válida. Un procedimiento recomendado es usar siempre consultas con parámetros o procedimientos almacenados cuando sea posible.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Herramientas de conjunto de herramientas](../data-tools/dataset-tools-in-visual-studio.md)

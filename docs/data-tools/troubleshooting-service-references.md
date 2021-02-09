@@ -1,6 +1,6 @@
 ---
 title: Solucionar problemas de referencias de servicio
-description: Revise los problemas comunes que pueden producirse al trabajar con referencias de Windows Communication Foundation (WCF) o WCF Data Services en Visual Studio.
+description: Revise los problemas comunes que pueden producirse al trabajar con referencias de Windows Communication Foundation (WCF) o Servicios de datos de WCF en Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
@@ -15,19 +15,19 @@ helpviewer_keywords:
 ms.assetid: 3b531120-1325-4734-90c6-6e6113bd12ac
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7d1a1f0efc21f1f612d85725358555fcb0cb8245
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: 909291e3f9762593a58df93a9ccc7fe2e82b7952
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998075"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866364"
 ---
 # <a name="troubleshoot-service-references"></a>Solucionar problemas de referencias de servicio
 
-En este tema se enumeran los problemas comunes que pueden producirse cuando se trabaja con referencias de Windows Communication Foundation (WCF) o WCF Data Services en Visual Studio.
+En este tema se enumeran los problemas comunes que pueden producirse cuando se trabaja con referencias de Windows Communication Foundation (WCF) o Servicios de datos de WCF en Visual Studio.
 
 ## <a name="error-returning-data-from-a-service"></a>Error al devolver datos de un servicio
 
@@ -90,7 +90,7 @@ Para corregir este error, tiene que volver a generar manualmente el proyecto de 
 
 7. En el menú **compilar** , haga clic en **recompilar** para recompilar el proyecto de servicio WCF.
 
-## <a name="wcf-data-services-do-not-display-in-the-browser"></a>WCF Data Services no se muestran en el explorador
+## <a name="wcf-data-services-do-not-display-in-the-browser"></a>Servicios de datos de WCF no se muestran en el explorador
 
 Cuando intenta ver una representación XML de los datos en un [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] , Internet Explorer puede interpretar los datos como una fuente RSS. Asegúrese de que la opción para mostrar fuentes RSS está deshabilitada.
 
@@ -106,4 +106,4 @@ Para corregir este error, deshabilite las fuentes RSS:
 
 ## <a name="see-also"></a>Vea también
 
-- [Windows Communication Foundation servicios y WCF Data Services en Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Servicios de Windows Communication Foundation y servicios de datos WCF en Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

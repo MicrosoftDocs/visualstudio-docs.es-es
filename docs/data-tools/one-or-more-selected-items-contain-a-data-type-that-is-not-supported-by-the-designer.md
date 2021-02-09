@@ -7,19 +7,19 @@ ms.topic: error-reference
 ms.assetid: 71dcd4f9-2946-42c5-9ce4-99c819ea2785
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4f678ad9bc6bcfc36baabad8a8d4d64d7bf2f89e
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: c50d47363217a87147275a406d5370cc8736c10b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436138"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866650"
 ---
 # <a name="one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer"></a>Uno o varios elementos seleccionados contienen un tipo de datos que el diseñador no admite
 
-Uno o varios de los elementos arrastrados desde **Explorador de servidores** o **Explorador de bases de datos** hasta **Object** Relational Designer contiene un tipo de datos no admitido por Object Relational **Designer** , por ejemplo, los [tipos definidos por el usuario CLR](/dotnet/framework/data/adonet/sql/clr-user-defined-types).
+Uno o varios de los elementos arrastrados desde **Explorador de servidores** o **Explorador de bases de datos** hasta **Object** Relational Designer contiene un tipo de datos no admitido por Object Relational **Designer**, por ejemplo, los [tipos definidos por el usuario CLR](/dotnet/framework/data/adonet/sql/clr-user-defined-types).
 
 ## <a name="to-correct-this-error"></a>Para corregir este error
 
@@ -27,6 +27,6 @@ Uno o varios de los elementos arrastrados desde **Explorador de servidores** o *
 
 2. Arrastre la vista desde **Explorador de servidores** o **Explorador de bases de datos** al diseñador.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Herramientas de LINQ to SQL en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

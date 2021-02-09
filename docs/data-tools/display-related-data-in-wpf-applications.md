@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 3aa80194-0191-474d-9d28-5ec05654b426
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: a9604ac7c0083bc40edb17b19d4de608eb7366b1
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 3467b2a3c4f49b22ab36b44ff0d3ea47d143e971
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436503"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866962"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>Mostrar datos relacionados en aplicaciones WPF
 
@@ -33,7 +33,7 @@ Puede crear controles enlazados a datos que muestren los datos relacionados arra
 
 ## <a name="to-create-controls-that-display-related-records"></a>Para crear controles que muestren los registros relacionados
 
-1. En el menú **Datos** , haga clic en **Mostrar orígenes de datos** para abrir la ventana **Orígenes de datos**.
+1. En el menú **Datos**, haga clic en **Mostrar orígenes de datos** para abrir la ventana **Orígenes de datos**.
 
 2. Haga clic en **Agregar nuevo origen de datos** y complete el **Asistente para configuración de orígenes de datos**.
 
@@ -57,7 +57,7 @@ Puede crear controles enlazados a datos que muestren los datos relacionados arra
 
      ![Ventana Orígenes de datos que muestra la relación](../data-tools/media/datasources2.gif)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Enlace de controles de WPF a datos en Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Creación de tablas de búsqueda en aplicaciones WPF](../data-tools/create-lookup-tables-in-wpf-applications.md)

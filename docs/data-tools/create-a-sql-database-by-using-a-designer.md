@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 99c2b06f-47aa-414e-8057-a3453712fd23
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: e31be90ff24f110fda66449187d3372976f269a7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ed0df13f1dd281fcf56056809419af5d7ed6d3dc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282727"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867209"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Crear una base de datos y agregar las tablas en Visual Studio
 
@@ -41,7 +41,7 @@ Para completar este tutorial, necesitará las cargas de trabajo **desarrollo de 
 
    ![Cuadro de diálogo Plantillas de elemento](../data-tools/media/raddata-vsitemtemplates.png)
 
-4. Asigne un nombre a la base de datos **SampleDatabase**y haga clic en **Agregar**.
+4. Asigne un nombre a la base de datos **SampleDatabase** y haga clic en **Agregar**.
 
 ### <a name="add-a-data-source"></a>Agregar un origen de datos
 
@@ -67,12 +67,12 @@ Para completar este tutorial, necesitará las cargas de trabajo **desarrollo de 
 
 Puede ver la cadena de conexión para el archivo *SampleDatabase. MDF* ; para ello, abra el ventana Propiedades de la conexión de datos:
 
-- Seleccione **Ver**  >  **Explorador de objetos de SQL Server** para abrir la ventana de **Explorador de objetos de SQL Server** . Expanda **(LocalDB) \MSSQLLocalDB**  >  **bases de datos**y, a continuación, haga clic con el botón derecho en *SampleDatabase. MDF* y seleccione **propiedades**.
+- Seleccione **Ver**  >  **Explorador de objetos de SQL Server** para abrir la ventana de **Explorador de objetos de SQL Server** . Expanda **(LocalDB) \MSSQLLocalDB**  >  **bases de datos** y, a continuación, haga clic con el botón derecho en *SampleDatabase. MDF* y seleccione **propiedades**.
 
-- Como alternativa, puede seleccionar **Ver**  >  **Explorador de servidores**si la ventana no está abierta. Para abrir el ventana Propiedades, expanda el nodo **conexiones de datos** , haga clic con el botón secundario en *SampleDatabase. MDF*y, a continuación, seleccione **propiedades**.
+- Como alternativa, puede seleccionar **Ver**  >  **Explorador de servidores** si la ventana no está abierta. Para abrir el ventana Propiedades, expanda el nodo **conexiones de datos** , haga clic con el botón secundario en *SampleDatabase. MDF* y, a continuación, seleccione **propiedades**.
 
   > [!TIP]
-  > Si no puede expandir el nodo conexiones de datos o no aparece la conexión SampleDatabase. MDF, seleccione el botón **conectar con base** de datos en la barra de herramientas explorador de servidores. En el cuadro de diálogo **Agregar conexión** , asegúrese de que **Microsoft SQL Server archivo de base** de **datos**está seleccionado en origen de datos y, a continuación, busque y seleccione el archivo SampleDatabase. MDF. Termine de agregar la conexión seleccionando **Aceptar**.
+  > Si no puede expandir el nodo conexiones de datos o no aparece la conexión SampleDatabase. MDF, seleccione el botón **conectar con base** de datos en la barra de herramientas explorador de servidores. En el cuadro de diálogo **Agregar conexión** , asegúrese de que **Microsoft SQL Server archivo de base** de **datos** está seleccionado en origen de datos y, a continuación, busque y seleccione el archivo SampleDatabase. MDF. Termine de agregar la conexión seleccionando **Aceptar**.
 
 ## <a name="create-tables-and-keys-by-using-table-designer"></a>Crear tablas y claves mediante Diseñador de tablas
 
@@ -82,7 +82,7 @@ En esta sección, creará dos tablas, una clave principal en cada tabla y alguna
 
 1. En **Explorador de servidores**, expanda el nodo **conexiones de datos** y, a continuación, expanda el nodo **SampleDatabase. MDF** .
 
-   Si no puede expandir el nodo conexiones de datos o no aparece la conexión SampleDatabase. MDF, seleccione el botón **conectar con base** de datos en la barra de herramientas explorador de servidores. En el cuadro de diálogo **Agregar conexión** , asegúrese de que **Microsoft SQL Server archivo de base** de **datos**está seleccionado en origen de datos y, a continuación, busque y seleccione el archivo SampleDatabase. MDF. Termine de agregar la conexión seleccionando **Aceptar**.
+   Si no puede expandir el nodo conexiones de datos o no aparece la conexión SampleDatabase. MDF, seleccione el botón **conectar con base** de datos en la barra de herramientas explorador de servidores. En el cuadro de diálogo **Agregar conexión** , asegúrese de que **Microsoft SQL Server archivo de base** de **datos** está seleccionado en origen de datos y, a continuación, busque y seleccione el archivo SampleDatabase. MDF. Termine de agregar la conexión seleccionando **Aceptar**.
 
 2. Haga clic con el botón derecho en **tablas** y seleccione **Agregar nueva tabla**.
 
@@ -90,7 +90,7 @@ En esta sección, creará dos tablas, una clave principal en cada tabla y alguna
 
 3. En la cuadrícula, agregue una fila para cada una de las entradas siguientes:
 
-   |Nombre de la columna|Tipo de datos|Permitir valores NULL|
+   |Nombre de columna|Tipo de datos|Permitir valores NULL|
    |-----------------|---------------|-----------------|
    |`CustomerID`|`nchar(5)`|False (desactivada)|
    |`CompanyName`|`nvarchar(50)`|False (desactivada)|
@@ -121,7 +121,7 @@ En esta sección, creará dos tablas, una clave principal en cada tabla y alguna
 
 1. Agregue otra tabla y, después, agregue una fila para cada entrada de la tabla siguiente:
 
-   |Nombre de la columna|Tipo de datos|Permitir valores NULL|
+   |Nombre de columna|Tipo de datos|Permitir valores NULL|
    |-----------------|---------------|-----------------|
    |`OrderID`|`int`|False (desactivada)|
    |`CustomerID`|`nchar(5)`|False (desactivada)|
@@ -168,7 +168,7 @@ En esta sección, creará dos tablas, una clave principal en cada tabla y alguna
 
 1. En **Explorador de servidores** o **Explorador de objetos de SQL Server**, expanda el nodo de la base de datos de ejemplo.
 
-2. Abra el menú contextual del nodo **tablas** , seleccione **Actualizar**y, a continuación, expanda el nodo **tablas** .
+2. Abra el menú contextual del nodo **tablas** , seleccione **Actualizar** y, a continuación, expanda el nodo **tablas** .
 
 3. Abra el menú contextual para la tabla Customers y, a continuación, seleccione **Mostrar datos de tabla**.
 
@@ -185,6 +185,6 @@ En esta sección, creará dos tablas, una clave principal en cada tabla y alguna
 
 7. En la barra de menús, seleccione **archivo**  >  **guardar todo**.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
-- [Obtener acceso a datos en Visual Studio](accessing-data-in-visual-studio.md)
+- [Obtener acceso a los datos en Visual Studio](accessing-data-in-visual-studio.md)

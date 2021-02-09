@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 56133e65-81f3-44c3-bc28-ffdd0671a0d2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 96932dca3d7f8799c316e05dc36c3f38a0e8110f
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: a4a13de7c6d9f9627332852be26356f26109c92d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436325"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866845"
 ---
 # <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>Cómo: crear una asociación entre clases LINQ to SQL (Object Relational Designer)
 Las asociaciones entre clases de entidades en [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] son similares a las relaciones entre tablas en una base de datos. Puede crear asociaciones entre clases de entidades mediante el cuadro de diálogo **Editor de asociaciones**.
@@ -23,15 +23,15 @@ Las asociaciones entre clases de entidades en [!INCLUDE[vbtecdlinq](../data-tool
 Si utiliza el **Editor de asociaciones** para crear una asociación, deberá seleccionar una clase primaria y otra secundaria. La clase primaria es la clase de entidad que contiene la clave principal y la clase secundaria es la clase de entidad que contiene la clave externa. Por ejemplo, si se crearon clases de entidad que se asignan a las `Northwind Customers` `Orders` tablas y, la `Customer` clase sería la clase primaria y la clase `Order` sería la clase secundaria.
 
 > [!NOTE]
-> Al arrastrar tablas desde **Explorador de servidores** o **Explorador de bases de datos** al **Object Relational Designer** (Object Relational **Designer** ), las asociaciones se crean automáticamente en función de las relaciones de clave externa existentes en la base de datos.
+> Al arrastrar tablas desde **Explorador de servidores** o **Explorador de bases de datos** al **Object Relational Designer** (Object Relational **Designer**), las asociaciones se crean automáticamente en función de las relaciones de clave externa existentes en la base de datos.
 
 ## <a name="association-properties"></a>Propiedades de la asociación
-Una vez creada una asociación, al seleccionarla en el **Object Relational Designer** , se mostrarán algunas propiedades configurables en la ventana **Propiedades**. (La asociación es la línea entre las clases relacionadas). En la tabla siguiente se proporcionan descripciones de las propiedades de una asociación.
+Una vez creada una asociación, al seleccionarla en el **Object Relational Designer**, se mostrarán algunas propiedades configurables en la ventana **Propiedades**. (La asociación es la línea entre las clases relacionadas). En la tabla siguiente se proporcionan descripciones de las propiedades de una asociación.
 
 |Propiedad|Descripción|
 |--------------|-----------------|
 |**Cardinalidad**|Controla si la asociación es de uno a varios o de uno a uno.|
-|**Child Property**|Especifica si se debe crear una propiedad en el registro primario que es una colección o se debe hacer referencia a los registros secundarios en el lado de las claves externas de la asociación. Por ejemplo, en la asociación entre `Customer` y `Order` , si la **propiedad secundaria** está establecida en **true** , se crea una propiedad denominada `Orders` en la clase primaria.|
+|**Child Property**|Especifica si se debe crear una propiedad en el registro primario que es una colección o se debe hacer referencia a los registros secundarios en el lado de las claves externas de la asociación. Por ejemplo, en la asociación entre `Customer` y `Order` , si la **propiedad secundaria** está establecida en **true**, se crea una propiedad denominada `Orders` en la clase primaria.|
 |**Propiedad primaria**|La propiedad de la clase secundaria que hace referencia a la clase primaria asociada. Por ejemplo, en la asociación entre `Customer` y `Order` , `Customer` se crea en la clase una propiedad denominada que hace referencia al cliente asociado para un pedido `Order` .|
 |**Propiedades de participantes**|Muestra las propiedades de asociación y proporciona un botón de **puntos suspensivos** (...) que abre de nuevo el cuadro de diálogo **Editor de asociaciones**.|
 |**Único**|Especifica si las columnas de destino externas tienen una restricción de unicidad.|
@@ -48,7 +48,7 @@ Una vez creada una asociación, al seleccionarla en el **Object Relational Desig
 
 5. Haga clic en **Aceptar** para crear la asociación.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Herramientas de LINQ to SQL en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Tutorial: crear clases de LINQ to SQL](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)

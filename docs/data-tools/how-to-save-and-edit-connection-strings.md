@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: f8ef3a2c-029c-423b-9d9e-a4f1add4f640
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 18d1da27faed67b90658ea4479f1e2e9a11ead4a
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 1707bbdd458ba6fc57ea3f6897af40e4cb9b4f03
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436294"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866741"
 ---
 # <a name="how-to-save-and-edit-connection-strings"></a>Procedimiento para guardar y editar cadenas de conexión
 Las cadenas de conexión de las aplicaciones de Visual Studio se guardan en el archivo de configuración de la aplicación (también conocido como configuración de la aplicación) o se codifican de forma rígida directamente en la aplicación. Si guarda las cadenas de conexión en el archivo de configuración de la aplicación, se simplifica la tarea de mantenimiento de la aplicación. Si la cadena de conexión debe modificarse, se puede actualizar en el archivo de configuración de la aplicación (cosa que no sucede si hubiera que cambiarla en el código fuente y tener que recompilar la aplicación).
@@ -29,10 +29,10 @@ Para obtener más información, vea [proteger la información de conexión](/dot
 En el **Asistente** para la configuración de orígenes de datos, seleccione la opción para guardar la conexión en la página **guardar la cadena de conexión en el archivo de configuración de la aplicación** .
 
 ## <a name="to-save-a-connection-string-directly-into-application-settings"></a>Para guardar la cadena de conexión directamente en la configuración de la aplicación
-1. En el **Explorador de soluciones** , haga doble clic en el icono **Mi proyecto** (Visual Basic) o en el icono **Propiedades** (C#) para abrir el **Diseñador de proyectos**.
+1. En el **Explorador de soluciones**, haga doble clic en el icono **Mi proyecto** (Visual Basic) o en el icono **Propiedades** (C#) para abrir el **Diseñador de proyectos**.
 1. Seleccione la pestaña **Configuración**.
 1. Escriba un **Nombre** para la cadena de conexión. Haga referencia a este nombre cuando acceda a la cadena de conexión en el código.
-1. Establezca el **Tipo** en ( **Cadena de conexión** ).
+1. Establezca el **Tipo** en (**Cadena de conexión**).
 1. Deje el **Ámbito** establecido en **Aplicación**.
 1. Escriba la cadena de conexión en el campo **valor** o haga clic en el botón de **puntos suspensivos** (...) del campo **valor** para abrir el cuadro de diálogo **propiedades de conexión** para crear la cadena de conexión.
 
@@ -40,7 +40,7 @@ En el **Asistente** para la configuración de orígenes de datos, seleccione la 
 La información de conexión almacenada en la configuración de la aplicación se puede modificar con el **Diseñador de proyectos**.
 
 ### <a name="to-edit-a-connection-string-stored-in-application-settings"></a>Para modificar una cadena de conexión almacenada en la configuración de la aplicación
-1. En el **Explorador de soluciones** , haga doble clic en el icono **Mi proyecto** (Visual Basic) o en el icono **Propiedades** (C#) para abrir el **Diseñador de proyectos**.
+1. En el **Explorador de soluciones**, haga doble clic en el icono **Mi proyecto** (Visual Basic) o en el icono **Propiedades** (C#) para abrir el **Diseñador de proyectos**.
 1. Seleccione la pestaña **Configuración**.
 1. Busque la conexión que desea editar y seleccione el texto en el campo **valor** .
 1. Edite la cadena de conexión en el campo **valor** o haga clic en el botón de **puntos suspensivos** (...) del campo **valor** para editar la conexión con el cuadro de diálogo Propiedades de la **conexión** .
@@ -49,7 +49,7 @@ La información de conexión almacenada en la configuración de la aplicación s
 Puede modificar la información de conexión de cada TableAdapter en un conjunto de datos.
 
 ### <a name="to-edit-a-connection-string-for-a-tableadapter-in-a-dataset"></a>Para editar una cadena de conexión para un TableAdapter en un conjunto de objetos
-1. En **Explorador de soluciones** , haga doble clic en el conjunto de archivos (archivo **. xsd** ) que tenga la conexión que desea editar.
+1. En **Explorador de soluciones**, haga doble clic en el conjunto de archivos (archivo **. xsd** ) que tenga la conexión que desea editar.
 1. Seleccione el **TableAdapter** o la consulta que tiene la conexión que desea editar.
 1. En la ventana **propiedades** , expanda el **nodo conexión**.
 1. Para modificar rápidamente la cadena de conexión, edite la propiedad **ConnectionString** o haga clic en la flecha hacia abajo en la propiedad de **conexión** y elija **nueva conexión**.
@@ -58,6 +58,6 @@ Puede modificar la información de conexión de cada TableAdapter en un conjunto
 Almacenar información confidencial (como una contraseña) en la cadena de conexión puede afectar la seguridad de la aplicación. El uso de la seguridad integrada de Windows es una forma más segura de controlar el acceso a una base de datos.
 Para obtener más información, vea [proteger la información de conexión](/dotnet/framework/data/adonet/protecting-connection-information).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Agregar conexiones](../data-tools/add-new-connections.md)

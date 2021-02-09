@@ -7,22 +7,22 @@ ms.topic: how-to
 ms.assetid: e594af12-e777-434a-bc08-7dd2dac84cdc
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4bc36bca3cc5bd13b3dcfad5ebed66eca7eeb019
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: fee2c42e6ec84280f4090a8ae1dfea83a81ee369
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436338"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866832"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Procedimiento para configurar la herencia mediante Object Relational Designer
-El **Object Relational Designer** ( **Object** Relational Designer) admite el concepto de herencia de tabla única, ya que se suele implementar en sistemas relacionales. En la herencia de tabla única, hay una sola tabla de base de datos que contiene campos tanto para la información de elementos primarios como para la información de elementos secundarios. En el caso de datos relacionales, una columna discriminadora contiene el valor que determina la clase a la que pertenece un registro cualquiera.
+El **Object Relational Designer** (**Object** Relational Designer) admite el concepto de herencia de tabla única, ya que se suele implementar en sistemas relacionales. En la herencia de tabla única, hay una sola tabla de base de datos que contiene campos tanto para la información de elementos primarios como para la información de elementos secundarios. En el caso de datos relacionales, una columna discriminadora contiene el valor que determina la clase a la que pertenece un registro cualquiera.
 
 Por ejemplo, considere una `Persons` tabla que contiene todos los empleados de una empresa. Algunas personas son los empleados y otras son los directores. La `Persons` tabla contiene una columna denominada `EmployeeType` que tiene un valor de 1 para los administradores y un valor de 2 para los empleados; esta es la columna discriminadora. En este escenario, puede crear una subclase de empleados y rellenar la clase únicamente con los registros cuyo `EmployeeType` tiene el valor 2. Puede eliminar también columnas que no se aplican desde cada una de las clases.
 
-La creación de un modelo de objetos que use la herencia (y que corresponda a datos relacionales) puede resultar un poco confusa. En el procedimiento siguiente se describen los pasos necesarios para configurar la herencia con **Object** Relational Designer. Los siguientes pasos genéricos sin hacer referencia a una tabla y columnas existentes pueden resultar difíciles, por lo que se proporciona un tutorial que usa datos. Para obtener instrucciones paso a paso para configurar la herencia mediante el uso de la **Object Relational Designer** , consulte [Tutorial: creación de LINQ to SQL clases mediante la herencia de tabla única (Object Relational Designer)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md).
+La creación de un modelo de objetos que use la herencia (y que corresponda a datos relacionales) puede resultar un poco confusa. En el procedimiento siguiente se describen los pasos necesarios para configurar la herencia con **Object** Relational Designer. Los siguientes pasos genéricos sin hacer referencia a una tabla y columnas existentes pueden resultar difíciles, por lo que se proporciona un tutorial que usa datos. Para obtener instrucciones paso a paso para configurar la herencia mediante el uso de la **Object Relational Designer**, consulte [Tutorial: creación de LINQ to SQL clases mediante la herencia de tabla única (Object Relational Designer)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md).
 
 ## <a name="to-create-inherited-data-classes"></a>Para crear clases de datos heredadas
 
@@ -52,7 +52,7 @@ La creación de un modelo de objetos que use la herencia (y que corresponda a da
 
 10. De manera opcional, también puede establecer la propiedad **Predeterminado de herencia** para designar un tipo en una jerarquía de herencia que se va a usar cuando se carguen filas que no coinciden con ningún código de herencia definido. En otras palabras, si un registro tiene un valor en su columna discriminadora que no coincide con el valor de las propiedades valor de **discriminador de clase derivada** o **valor de discriminador de clase base** , el registro se carga en el tipo designado como **predeterminado de herencia**.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Herramientas de LINQ to SQL en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Walkthrough: Creating LINQ to SQL classes (O-R Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md) (Tutorial: Crear clases de LINQ to SQL [Object Relational Designer])
