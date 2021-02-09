@@ -15,20 +15,20 @@ helpviewer_keywords:
 ms.assetid: f4a3bb83-c800-47d0-9905-9a5ae2486838
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a692d37771070f1835fc791515d5dbc24ce6b1b
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: bc689c80d033c6b92178f020c0d3273f6ec86ca7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383189"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911343"
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-deployment"></a>&lt;assemblyIdentity &gt; (elemento, implementación de ClickOnce)
 Identifica el ensamblado principal de la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ```xml
 
@@ -52,7 +52,7 @@ Identifica el ensamblado principal de la [!INCLUDE[ndptecclick](../deployment/in
 |`processorArchitecture`|Necesario. Especifica el procesador. Los valores válidos son `msil` para todos los procesadores, `x86` para windows de 32 bits, `IA64` para Windows de 64 bits y `Itanium` para procesadores Itanium de Intel 64 bits.|
 |`type`|Necesario. Por compatibilidad con la tecnología de instalación en paralelo de Windows. El único valor permitido es `win32` .|
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Notas
 
 ## <a name="example"></a>Ejemplo
  En el ejemplo de código siguiente se muestra un `assemblyIdentity` elemento en un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifiesto de implementación. Este ejemplo de código forma parte de un ejemplo mayor proporcionado para el tema [manifiesto de implementación de ClickOnce](../deployment/clickonce-deployment-manifest.md) .
@@ -70,4 +70,4 @@ Identifica el ensamblado principal de la [!INCLUDE[ndptecclick](../deployment/in
 
 ## <a name="see-also"></a>Vea también
 - [Manifiesto de implementación de ClickOnce](../deployment/clickonce-deployment-manifest.md)
-- [\<assemblyIdentity> Element](../deployment/assemblyidentity-element-clickonce-application.md)
+- [Elemento \<assemblyIdentity>](../deployment/assemblyidentity-element-clickonce-application.md)

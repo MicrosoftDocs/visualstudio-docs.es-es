@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 42907bcf-4e27-46bd-a8cb-01c2ccd2bde5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6ffa60508eba02a4442bacb63b05abb39202ab9
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 1009df1ce71e5ab46c0e9d100a79562f77460c0f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877447"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911778"
 ---
 # <a name="project-persistence"></a>Persistencia de un proyecto
 La persistencia es una consideración de diseño clave para el proyecto. La mayoría de los proyectos utilizan elementos de proyecto que representan archivos; [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] también admite proyectos cuyos datos no estén basados en archivos. Los archivos que pertenecen al proyecto y el archivo del proyecto deben ser persistentes. El IDE indica al proyecto que se guarde o un elemento de proyecto.
@@ -44,6 +44,6 @@ La persistencia es una consideración de diseño clave para el proyecto. La mayo
 
  Los métodos de la `IVsPersistHierarchyItem2` interfaz se usan para determinar si un elemento se puede volver a cargar y, si el elemento puede ser, para volver a cargarlo. Además, <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IgnoreItemFileChanges%2A> se puede implementar el método para que los elementos modificados se descarten sin guardarse.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Lista de comprobación: Creación de nuevos tipos de proyectos](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Creación de instancias de proyecto mediante generadores de proyecto](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)

@@ -15,20 +15,20 @@ helpviewer_keywords:
 ms.assetid: f48e9531-efac-4d11-8166-f63a5ece1ac5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c86d5d1fd1e25b498405197b68efd9553ed64f16
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 92b5c1d323634bbb242cdccb54890908d5668803
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383214"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911386"
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-application"></a>&lt;assemblyIdentity &gt; (elemento, aplicación ClickOnce)
 Identifica la aplicación implementada en una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación de.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ```xml
 
@@ -71,4 +71,4 @@ Identifica la aplicación implementada en una [!INCLUDE[ndptecclick](../deployme
 
 ## <a name="see-also"></a>Consulte también
 - [Manifiesto de aplicación ClickOnce](../deployment/clickonce-application-manifest.md)
-- [\<assemblyIdentity> Element](../deployment/assemblyidentity-element-clickonce-deployment.md)
+- [Elemento \<assemblyIdentity>](../deployment/assemblyidentity-element-clickonce-deployment.md)

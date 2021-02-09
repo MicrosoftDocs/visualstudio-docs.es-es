@@ -9,15 +9,15 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a04cfc249efa4640df2b2e4b1c5f4b43ed52ace2
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 17f52a469d93a843ef776c125e15a37db22277e8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846121"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910477"
 ---
 # <a name="ensurevstocomponent-function"></a>Ensurevstocomponent (función)
   Esta API es compatible con la infraestructura de Office y no está pensada para usarse directamente desde el código.

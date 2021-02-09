@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d194224e-f0e6-46ab-85d4-9e2639e28946
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 33bc10aadf25eb95414cc5fd334c572b2f270429
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eb0bb520d3a821d777d5deaeaa200c4b7e526f65
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722893"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911959"
 ---
 # <a name="idebugprogram2getdebugproperty"></a>IDebugProgram2::GetDebugProperty
 Obtiene las propiedades del programa.
@@ -28,13 +28,13 @@ Obtiene las propiedades del programa.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT GetDebugProperty( 
+HRESULT GetDebugProperty( 
    IDebugProperty2** ppProperty
 );
 ```
 
 ```csharp
-int GetDebugProperty( 
+int GetDebugProperty( 
    out IDebugProperty2 ppProperty
 );
 ```
@@ -46,7 +46,7 @@ enuncia Devuelve un objeto [IDebugProperty2](../../../extensibility/debugger/ref
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Las propiedades devueltas por este método son específicas del programa. Si el programa necesita devolver más de una propiedad, el objeto [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) devuelto por este método es un contenedor de propiedades adicionales y al llamar al método [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) se devuelve una lista de todas las propiedades.
 
  Un programa puede exponer cualquier número y tipo de propiedades adicionales que se pueden describir a través de la `IDebugProperty2` interfaz. Un IDE puede mostrar las propiedades del programa adicional a través de una interfaz de usuario del explorador de propiedades genérica.

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: ccf9d83f-c7f3-49c7-a31f-e1f22bec004c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2bd457bfb639ff0def2662476e60c8736e14b3ce
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: a90c8de2fca62ef303ce8055993d8e2f6d230493
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903824"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910888"
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>ProjectType (elemento, plantillas de Visual Studio)
 Clasifica la plantilla de proyecto para que aparezca bajo el grupo especificado en el cuadro de diálogo **nuevo proyecto** o **Agregar nuevo elemento** .
@@ -63,7 +63,7 @@ Clasifica la plantilla de proyecto para que aparezca bajo el grupo especificado 
 
 - `Web`: Especifica que la plantilla crea un proyecto o un elemento Web. Si el `ProjectType` elemento contiene este valor, el lenguaje del proyecto o elemento se define en el [elemento ProjectSubType (plantillas de Visual Studio)](../extensibility/projectsubtype-element-visual-studio-templates.md).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  `ProjectType` es un elemento secundario obligatorio de `TemplateData`.
 
  El valor del `ProjectType` elemento especifica dónde se encuentra la plantilla en el cuadro de diálogo **nuevo proyecto** o **Agregar nuevo elemento** . Por ejemplo, una plantilla con un `ProjectType` valor de `CSharp` aparece bajo el nodo **Visual C#** en el cuadro de diálogo **nuevo proyecto** .

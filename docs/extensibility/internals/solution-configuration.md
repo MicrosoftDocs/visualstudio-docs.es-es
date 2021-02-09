@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f22cfc75-3e31-4e0d-88a9-3ca99539203b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ad298a44eedea0681a554add74bd67ed22cad41
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 99a0de44d5e7ac240187c929a8134ab47c7de55c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876033"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910978"
 ---
 # <a name="solution-configuration"></a>Configuración de soluciones
 Las configuraciones de soluciones almacenan propiedades de nivel de solución. Dirigen el comportamiento de la tecla **Inicio** (F5) y los comandos de **compilación** . De forma predeterminada, estos comandos compilan e inician la configuración de depuración. Ambos comandos se ejecutan en el contexto de una configuración de soluciones. Esto significa que el usuario puede esperar F5 para iniciar y compilar la configuración de la solución activa. El entorno está diseñado para optimizar las soluciones en lugar de los proyectos cuando se trata de compilar y ejecutar.
@@ -29,7 +29,7 @@ Las configuraciones de soluciones almacenan propiedades de nivel de solución. D
 
  A continuación se muestra cómo puede implementar las configuraciones de soluciones compatibles con el tipo de proyecto:
 
-- Proyecto
+- Project
 
    Muestra los nombres de los proyectos que se encuentran en la solución actual.
 
@@ -57,7 +57,7 @@ Las configuraciones de soluciones almacenan propiedades de nivel de solución. D
 
   Una vez que se agrega una nueva configuración de soluciones, el usuario puede seleccionarla en el cuadro de lista desplegable Configuración de soluciones de la barra de herramientas estándar para compilar o iniciar esa configuración.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Administración de opciones de configuración](../../extensibility/internals/managing-configuration-options.md)
 - [Configuración del proyecto para la compilación](../../extensibility/internals/project-configuration-for-building.md)
 - [Objeto de configuración del proyecto](../../extensibility/internals/project-configuration-object.md)

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: fa934121-3f58-44dc-9c30-d3f752e44c8b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b3d39c99049c4c4583fbda466712c5b216137316
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7f49a15486551a91538bebe8fa900d165fdbb78b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718664"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911883"
 ---
 # <a name="idebugthread2setthreadname"></a>IDebugThread2::SetThreadName
 Establece el nombre del subproceso.
@@ -28,13 +28,13 @@ Establece el nombre del subproceso.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT SetThreadName ( 
+HRESULT SetThreadName ( 
    LPCOLESTR pszName
 );
 ```
 
 ```csharp
-int SetThreadName ( 
+int SetThreadName ( 
    string pszName
 );
 ```
@@ -46,7 +46,7 @@ de Nombre del subproceso.
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Para obtener el nombre del subproceso, llame al método [GetName](../../../extensibility/debugger/reference/idebugthread2-getname.md) .
 
 ## <a name="see-also"></a>Vea también

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 3a12fbec-7088-4cf9-8f6f-ad8ddec6009a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1298df79bbe34b240d6e7b186f42e20b3d1a89de
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d909694afcec033401b730011633a9da0fafbc18
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738147"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912139"
 ---
 # <a name="address_kind"></a>ADDRESS_KIND
 Especifica los tipos de direcciones.
@@ -84,7 +84,7 @@ Elemento de matriz, representado por la estructura [METADATA_ADDRESS_ARRAYELEM](
 `ADDRESS_KIND_RETVAL`\
 Valor devuelto, representado por la estructura de [METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md) .
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 El método [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) devuelve el [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) estructura que contiene una Unión de estructuras posibles, la estructura de [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) . El `dwKind` campo de la `DEBUG_ADDRESS_UNION` estructura contiene el `ADDRESS_KIND` valor y describe cómo interpretar el campo de Unión.
 
 ## <a name="requirements"></a>Requisitos

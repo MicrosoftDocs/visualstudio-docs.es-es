@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, installing tools
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3658f655c50c9d1a0775a8cc69dd65baf32d1408
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ee8f840aa81d3decfdb96dd2658b758704443347
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847266"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910574"
 ---
 # <a name="configure-a-computer-to-develop-office-solutions"></a>Configurar un equipo para desarrollar soluciones de Office
 
@@ -29,7 +29,7 @@ Para crear complementos y personalizaciones de VSTO para Microsoft Office, insta
 |--------------|------------------------|
 |Visual Studio 2017| Cualquier edición con la carga de trabajo **desarrollo de Office/SharePoint** .|
 |.NET Framework|-El .NET Framework 4 o posterior.|
-|Microsoft Office|<ul><li>Cualquier edición de conjunto de Office, incluidas Microsoft 365 aplicaciones para empresas.</li><li>Cualquiera de las siguientes aplicaciones:<br /><br /> <ul><li>Excel</li><li>InfoPath (solo Office 2013 y Office 2010)</li><li>Outlook</li><li>PowerPoint</li><li>Project</li><li>Visio</li><li>Word</li></ul></li></ul><br /> Visual Basic para Aplicaciones (VBA) debe estar instalado como parte de Office. **Importante:** No se admiten las versiones de hacer clic y ejecutar de Office 2010.|
+|Microsoft Office|<ul><li>Cualquier edición de conjunto de Office, incluidas Microsoft 365 aplicaciones para empresas.</li><li>Cualquiera de las siguientes aplicaciones:<br /><br /> <ul><li>Excel</li><li>InfoPath (solo Office 2013 y Office 2010)</li><li>Outlook</li><li>PowerPoint</li><li>Project</li><li>Visio</li><li>Word</li></ul></li></ul><br /> Visual Basic para Aplicaciones (VBA) debe estar instalado como parte de Office. **Importante:** No se admiten las versiones de hacer clic y ejecutar de Office 2010.|
 
 Para obtener pasos de instalación detallados, consulte [Cómo: configurar un equipo para desarrollar soluciones de Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md).
 

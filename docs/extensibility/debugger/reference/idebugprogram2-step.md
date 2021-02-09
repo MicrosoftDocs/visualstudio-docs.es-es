@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e4c2ffce-9810-4088-8162-eac9ef04f2a9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c6a70a96014ebf18984c75df60cfeb75ba0d0577
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 544ca22d263a3fca47f9484ac126031e83cde4e0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86387244"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911905"
 ---
 # <a name="idebugprogram2step"></a>IDebugProgram2::Step
 Realiza un paso.
@@ -31,7 +31,7 @@ Realiza un paso.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT Step( 
+HRESULT Step( 
    IDebugThread2*  pThread,
    STEPKIND        sk,
    STEPUNIT        step
@@ -39,7 +39,7 @@ HRESULT Step( 
 ```
 
 ```csharp
-int Step( 
+int Step( 
    IDebugThread2  pThread,
    enum_STEPKIND  sk,
    enum_STEPUNIT  step
@@ -59,13 +59,13 @@ de Un valor de la enumeración [STEPUNIT](../../../extensibility/debugger/refere
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  En caso de que haya cualquier sincronización de subprocesos o comunicación entre subprocesos, otros subprocesos del programa deben ejecutarse cuando un subproceso determinado se está ejecutando.
 
 > [!WARNING]
 > No enviar un evento de detención o un evento inmediato (sincrónico) al [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) mientras se controla esta llamada; de lo contrario, es posible que el depurador deje de responder.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)
 - [Evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: a338b767-aa7e-4536-9908-e19a50ab60ac
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8447213b14a3632197ea7ce27677423460315f71
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 95b4c88cc42879bf40278871a0e39de13f63a418
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974120"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911218"
 ---
 # <a name="commandname-element"></a>CommandName (elemento)
 El `CommandName` elemento especifica el texto que aparece en la categoría teclado del cuadro de diálogo **Opciones** y en la lista **comandos** del cuadro de diálogo **personalizar** .
