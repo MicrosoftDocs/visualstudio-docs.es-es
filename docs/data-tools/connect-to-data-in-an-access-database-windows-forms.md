@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 4159e815-d430-4ad0-a234-e4125fcbef18
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 156acfd56789ec13201738e72c6df283e257e94f
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: eeaafdca1a3a4d6fb73ca275c4fc97ce67094d8e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436867"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867274"
 ---
 # <a name="connect-to-data-in-an-access-database"></a>Conectar a datos de una base de datos de Access
 
@@ -35,7 +35,7 @@ Conéctese a las bases de datos creadas con Microsoft 365, Access 2013, Access 2
 
 1. Abra un proyecto de aplicación de Windows Forms o WPF en Visual Studio.
 
-2. Para abrir la ventana **orígenes de datos** , en el menú **Ver** , seleccione otros orígenes de datos de **Windows**  >  **Data Sources**.
+2. Para abrir la ventana **orígenes de datos** , en el menú **Ver** , seleccione otros orígenes de datos de **Windows**  >  .
 
    ![Ver orígenes de datos en Otras ventanas](../data-tools/media/viewdatasources.png)
 
@@ -47,11 +47,11 @@ Conéctese a las bases de datos creadas con Microsoft 365, Access 2013, Access 2
 
 5. Seleccione **conjunto** de datos en la página **elegir un modelo de base de datos** y, a continuación, seleccione **siguiente**.
 
-6. En la página **Elegir la conexión de datos** , seleccione **Nueva conexión** para configurar una nueva conexión de datos.
+6. En la página **Elegir la conexión de datos**, seleccione **Nueva conexión** para configurar una nueva conexión de datos.
 
    Se abrirá el cuadro de diálogo **Agregar conexión**.
 
-7. Si el **origen de datos** no está establecido en el archivo de base de datos de **Microsoft Access** , seleccione el botón **cambiar** .
+7. Si el **origen de datos** no está establecido en el archivo de base de datos de **Microsoft Access**, seleccione el botón **cambiar** .
 
    Se abrirá el cuadro de diálogo **cambiar origen de datos** . En la lista de orígenes de datos, elija Archivo de base de datos de **Microsoft Access**. En el menú desplegable **proveedor de datos** , seleccione **.NET Framework proveedor de datos para OLE DB** y, después, elija **Aceptar**.
 
@@ -89,11 +89,11 @@ Conéctese a las bases de datos creadas con Access 2000-2003 mediante el procedi
 
 5. Seleccione **conjunto** de datos en la página **elegir un modelo de base de datos** y, a continuación, seleccione **siguiente**.
 
-6. En la página **Elegir la conexión de datos** , seleccione **Nueva conexión** para configurar una nueva conexión de datos.
+6. En la página **Elegir la conexión de datos**, seleccione **Nueva conexión** para configurar una nueva conexión de datos.
 
-7. Si el origen de datos no es un archivo de base de datos de **Microsoft Access (OLE DB)** , seleccione **cambiar** para abrir el cuadro de diálogo **cambiar origen de datos** y seleccione Archivo de base de datos de **Microsoft Access** y, a continuación, seleccione **Aceptar**.
+7. Si el origen de datos no es un archivo de base de datos de **Microsoft Access (OLE DB)**, seleccione **cambiar** para abrir el cuadro de diálogo **cambiar origen de datos** y seleccione Archivo de base de datos de **Microsoft Access** y, a continuación, seleccione **Aceptar**.
 
-8. En el **nombre del archivo de base de datos** , especifique la ruta de acceso y el nombre del archivo *. mdb* al que desea conectarse y, a continuación, seleccione **Aceptar**.
+8. En el **nombre del archivo de base de datos**, especifique la ruta de acceso y el nombre del archivo *. mdb* al que desea conectarse y, a continuación, seleccione **Aceptar**.
 
    ![Agregar archivo de base de datos de acceso a la conexión](../data-tools/media/add-connection-access-db.png)
 
@@ -117,8 +117,8 @@ El conjunto de datos que acaba de crear está disponible en la ventana **orígen
 
 - Agregue la lógica de validación <xref:System.Data.DataTable.ColumnChanging> al <xref:System.Data.DataTable.RowChanging> evento o de las tablas de datos en el conjunto de datos (vea [Validate Data in](../data-tools/validate-data-in-datasets.md)datasets).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
-- [Adición de conexiones](../data-tools/add-new-connections.md)
+- [Agregar conexiones](../data-tools/add-new-connections.md)
 - [Información general sobre el enlace de datos de WPF](/dotnet/framework/wpf/data/data-binding-overview)
 - [Windows Forms enlace de datos](/dotnet/framework/winforms/data-binding-and-windows-forms)

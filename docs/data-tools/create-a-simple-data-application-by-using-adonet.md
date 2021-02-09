@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: 2222841f-e443-4a3d-8c70-4506aa905193
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 44205f7f8f12d453a7c1d93ec8fee6ed1a3c1765
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 71e6c03c4ed0319b45c5b6ef0b79f65abbfc9f73
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436802"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867196"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Creación de una aplicación de datos sencilla mediante ADO.NET
 
@@ -124,10 +124,10 @@ Cree la base de datos de ejemplo siguiendo estos pasos:
 ## <a name="store-the-connection-string"></a>Almacenar la cadena de conexión
 Cuando la aplicación intenta abrir una conexión a la base de datos, la aplicación debe tener acceso a la cadena de conexión. Para evitar escribir la cadena manualmente en cada formulario, almacene la cadena en el archivo *App.config* del proyecto y cree un método que devuelva la cadena cuando se llame al método desde cualquier formulario de la aplicación.
 
-Para encontrar la cadena de conexión, haga clic con el botón derecho en la conexión de datos de **ventas** en **Explorador de servidores** y elija **propiedades**. Busque la propiedad **ConnectionString** y, a continuación, use **Ctrl** + **a** , **Ctrl** + **C** para seleccionar y copiar la cadena en el portapapeles.
+Para encontrar la cadena de conexión, haga clic con el botón derecho en la conexión de datos de **ventas** en **Explorador de servidores** y elija **propiedades**. Busque la propiedad **ConnectionString** y, a continuación, use **Ctrl** + **a**, **Ctrl** + **C** para seleccionar y copiar la cadena en el portapapeles.
 
-1. Si usa C#, en **Explorador de soluciones** , expanda el nodo **propiedades** en el proyecto y, a continuación, abra el archivo **Settings. Settings** .
-    Si está utilizando Visual Basic, en **Explorador de soluciones** , haga clic en **Mostrar todos los archivos** , expanda el nodo **mi proyecto** y, a continuación, abra el archivo **Settings. Settings** .
+1. Si usa C#, en **Explorador de soluciones**, expanda el nodo **propiedades** en el proyecto y, a continuación, abra el archivo **Settings. Settings** .
+    Si está utilizando Visual Basic, en **Explorador de soluciones**, haga clic en **Mostrar todos los archivos**, expanda el nodo **mi proyecto** y, a continuación, abra el archivo **Settings. Settings** .
 
 2. En la columna **nombre** , escriba `connString` .
 
@@ -150,9 +150,9 @@ El formulario Navigation se abre cuando se ejecuta la aplicación. El botón **A
 
 #### <a name="make-the-navigation-form-the-startup-form"></a>Hacer que el formulario Navigation sea el formulario de inicio
 
-Si usa C#, en el **Explorador de soluciones** , abra **Program.cs** y, a continuación, cambie la línea `Application.Run` a esta: `Application.Run(new Navigation());`
+Si usa C#, en el **Explorador de soluciones**, abra **Program.cs** y, a continuación, cambie la línea `Application.Run` a esta: `Application.Run(new Navigation());`
 
-Si está utilizando Visual Basic, en **Explorador de soluciones** , abra la ventana **propiedades** , seleccione la pestaña **aplicación** y, a continuación, seleccione **asígnele simpledataapp. Navigation** en la lista **formulario de inicio** .
+Si está utilizando Visual Basic, en **Explorador de soluciones**, abra la ventana **propiedades** , seleccione la pestaña **aplicación** y, a continuación, seleccione **asígnele simpledataapp. Navigation** en la lista **formulario de inicio** .
 
 #### <a name="create-auto-generated-event-handlers"></a>Crear controladores de eventos generados automáticamente
 

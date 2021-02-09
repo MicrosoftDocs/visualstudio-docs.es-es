@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 370c97bf-bb29-4b2f-b9ae-ba125bce7b2d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d2703972658aace438ab235d469eed3e0644c06
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: ba8ecdd3a1aae382d1b74d75e26e614ba07e6a66
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436828"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867612"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>Usar el editor de conjuntos de reglas de análisis de código
 
@@ -31,7 +31,7 @@ En la tabla siguiente se muestran las opciones de gravedad:
 |Error|Genera un error en el **lista de errores** y también en el momento de la compilación.|
 |Información|Genera un mensaje en el **lista de errores**.|
 |Hidden|La infracción no es visible para el usuario. No obstante, el IDE recibe una notificación de la infracción.|
-|Ninguno|Se suprime la regla. El comportamiento es el mismo que si se quitara la regla del conjunto de reglas.|
+|None|Se suprime la regla. El comportamiento es el mismo que si se quitara la regla del conjunto de reglas.|
 
 El editor muestra las reglas en una estructura de árbol que agrupa las reglas por un campo de conjunto de reglas que especifique. Para agregar o quitar reglas de un conjunto de reglas, realice uno o varios de los pasos siguientes:
 
@@ -74,7 +74,7 @@ En la tabla siguiente se describen los campos de un conjunto de reglas:
 |**Id**|El identificador de la regla.|
 |**Categoría**|Además de su pertenencia en conjuntos de reglas, las reglas de análisis de código también se agrupan por categoría. Para obtener más información, vea [advertencias de análisis de código](/dotnet/fundamentals/code-analysis/quality-rules/index).|
 |**Nombre**|Título de la regla.|
-|**Namespace**|Espacio de nombres de la regla.|
+|**Espacio de nombres**|Espacio de nombres de la regla.|
 |**Tipo de destino**|Indica si la regla es para el código nativo, administrado o de base de datos.|
 |**Acción**|Acción que se realiza cuando se infringe la regla en una ejecución de análisis de código. Puede editar el campo de **acción** .|
 |**Conjuntos de reglas de origen**|Conjunto de reglas que contiene la regla.|
@@ -87,6 +87,6 @@ En los encabezados de columna de la cuadrícula del conjunto de reglas, puede or
 
 - Para filtrar los conjuntos de reglas por el valor de un campo, seleccione el botón de filtro en el encabezado de columna del campo por el que desea filtrar. Active las casillas de los valores que desea mostrar y desactive las casillas de los valores que desea ocultar.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Creación de un conjunto de reglas personalizadas](../code-quality/how-to-create-a-custom-rule-set.md)
