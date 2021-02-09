@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 6da944eb-36cd-4a8c-8d71-544c775cfcc1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d7be361d4468584c109db52f487b3de3c1fdff0a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6756d574c36d6381b606be597ca0e54e7945763
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737689"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874361"
 ---
 # <a name="canstop_reason"></a>CANSTOP_REASON
 Se utiliza para determinar si un programa puede detener la ejecución después de alcanzar un punto determinado en la ejecución.
@@ -49,7 +49,7 @@ Especifica el punto de entrada del programa determinado.
 `CANSTOP_STEPIN`\
 Especifica la ejecución paso a paso de una función.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Se pasa como argumento al método [GetReason (](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) para confirmar con el administrador de depuración de sesión (SDM) si es correcto detenerse después de alcanzar el punto de entrada del programa o después de entrar en una función o un método.
 
 ## <a name="requirements"></a>Requisitos

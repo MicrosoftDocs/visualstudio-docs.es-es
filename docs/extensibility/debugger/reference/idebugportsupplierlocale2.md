@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 910e7220-da2a-4339-9fff-9fb1bad3c28c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98444ca60937d40262c92d89b8a6c48ed1a0b7ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2d59f46bdde06addf5454700eb45e64c3b452d78
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724290"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874288"
 ---
 # <a name="idebugportsupplierlocale2"></a>IDebugPortSupplierLocale2
 Proporciona compatibilidad con la configuración regional para un proveedor de puertos.

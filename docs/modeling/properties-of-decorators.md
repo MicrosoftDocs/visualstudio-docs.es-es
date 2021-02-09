@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, decorators
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ef863d0d3dab394c2ca427a27d039c19e5921a51
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: e29dcda43fdbb7b60567ff0aa0627b41ca3ca299
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360838"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873793"
 ---
 # <a name="properties-of-decorators"></a>Propiedades de los decoradores
 Los elementos Decorator son iconos, texto o cheurones de expansión/contracción que pueden aparecer en formas o conectores en el diagrama. En las tablas siguientes se muestran las propiedades de los tres tipos de Decorator. Algunas de las propiedades solo aparecen en los decoradores de forma o solo en los elementos Decorator del conector.
@@ -25,7 +25,7 @@ Los elementos Decorator son iconos, texto o cheurones de expansión/contracción
 
 ## <a name="expandcollapse-decorator"></a>Expandir o contraer Decorator
 
-|Propiedad.|Descripción|Default|
+|Propiedad|Descripción|Valor predeterminado|
 |-|-|-|
 |DisplayName|Nombre del elemento Decorator que se mostrará en el diseñador generado.|Expandir decorador de contracción|
 |Nombre|Nombre del elemento Decorator.|ExpandCollapseDecorator|
@@ -38,7 +38,7 @@ Los elementos Decorator son iconos, texto o cheurones de expansión/contracción
 
 ## <a name="icon-decorator"></a>Icono Decorator
 
-|Propiedad.|Descripción|Default|
+|Propiedad|Descripción|Valor predeterminado|
 |-|-|-|
 |DefaultIcon|Ruta de acceso del archivo de icono o imagen que se va a mostrar.|\<none>|
 |DisplayName|Nombre del elemento Decorator que se va a mostrar en el diseñador generado.|Icono Decorator|
@@ -52,7 +52,7 @@ Los elementos Decorator son iconos, texto o cheurones de expansión/contracción
 
 ## <a name="textdecorator"></a>TextDecorator
 
-|Propiedad.|Descripción|Default|
+|Propiedad|Descripción|Valor predeterminado|
 |-|-|-|
 |DefaultText|Texto predeterminado que se va a mostrar.|Etiqueta|
 |DisplayName|Nombre del elemento Decorator que se va a mostrar en el diseñador generado.|Etiqueta|
@@ -66,6 +66,6 @@ Los elementos Decorator son iconos, texto o cheurones de expansión/contracción
 |OffsetFromShape|Desplazamiento del elemento Decorator a partir de la forma, con respecto a su posición predeterminada, en pulgadas. (Solo en conectores).|0|
 |Posición|Posición predeterminada del elemento Decorator.|TargetBottom|
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [Glosario de las Herramientas del lenguaje específico de dominio](/previous-versions/bb126564(v=vs.100))

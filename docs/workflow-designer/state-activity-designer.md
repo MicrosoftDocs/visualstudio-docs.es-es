@@ -8,16 +8,16 @@ f1_keywords:
 - System.Activities.Statements.State.UI
 ms.assetid: 9455ab37-93a0-4c46-9eb8-b6611ca23167
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: d5dbe0a14b007ad8e916aa9b2d8d765402dbe66b
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: abf4e81ecd258668c93b674410f029e6be0f5bf1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433991"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873520"
 ---
 # <a name="state-activity-designer"></a>Diseñador de actividad State
 
@@ -33,12 +33,12 @@ La tabla siguiente se muestran las propiedades <xref:System.Activities.Statement
 
 |Nombre de propiedad|Obligatorio|Uso|
 |-|--------------|-|
-|<xref:System.Activities.Statements.State.DisplayName%2A>|Falso|Especifica el nombre descriptivo del diseñador de actividades <xref:System.Activities.Statements.State> en el encabezado. El valor predeterminado es **State**. El valor se puede editar en la cuadrícula de propiedades o directamente en el encabezado del diseñador de actividades. <xref:System.Activities.Statements.State.DisplayName%2A> se usa en la ruta de navegación que se muestra en la parte superior del diseñador de flujo de trabajo.<br /><br /> Aunque el valor de la propiedad <xref:System.Activities.Statements.State.DisplayName%2A> no sea obligatorio, el procedimiento recomendado es usar uno.|
-|<xref:System.Activities.Statements.State.Entry%2A>|Falso|Especifica la acción que se produce cuando se entra en este estado. Cuando <xref:System.Activities.Statements.State> se expande la actividad, este valor se puede establecer arrastrando una actividad desde el **cuadro de herramientas** y colocándolo en la sección **entrada** del estado.|
-|<xref:System.Activities.Statements.State.Exit%2A>|Falso|Especifica la acción que se produce cuando se sale de este estado. Cuando <xref:System.Activities.Statements.State> se expande la actividad, este valor se puede establecer arrastrando una actividad desde el **cuadro de herramientas** y colocándolo en la sección de **salida** del estado.|
-|<xref:System.Activities.Statements.State.Transitions%2A>|Falso|Muestra las transiciones posibles que se originan desde <xref:System.Activities.Statements.State>. Cada elemento de la lista tiene un vínculo a la <xref:System.Activities.Statements.Transition> asociada y el <xref:System.Activities.Statements.State> de destino. Haciendo clic en el vínculo cambiará el diseñador a una vista expandida de <xref:System.Activities.Statements.Transition> o de <xref:System.Activities.Statements.State>.|
+|<xref:System.Activities.Statements.State.DisplayName%2A>|False|Especifica el nombre descriptivo del diseñador de actividades <xref:System.Activities.Statements.State> en el encabezado. El valor predeterminado es **State**. El valor se puede editar en la cuadrícula de propiedades o directamente en el encabezado del diseñador de actividades. <xref:System.Activities.Statements.State.DisplayName%2A> se usa en la ruta de navegación que se muestra en la parte superior del diseñador de flujo de trabajo.<br /><br /> Aunque el valor de la propiedad <xref:System.Activities.Statements.State.DisplayName%2A> no sea obligatorio, el procedimiento recomendado es usar uno.|
+|<xref:System.Activities.Statements.State.Entry%2A>|False|Especifica la acción que se produce cuando se entra en este estado. Cuando <xref:System.Activities.Statements.State> se expande la actividad, este valor se puede establecer arrastrando una actividad desde el **cuadro de herramientas** y colocándolo en la sección **entrada** del estado.|
+|<xref:System.Activities.Statements.State.Exit%2A>|False|Especifica la acción que se produce cuando se sale de este estado. Cuando <xref:System.Activities.Statements.State> se expande la actividad, este valor se puede establecer arrastrando una actividad desde el **cuadro de herramientas** y colocándolo en la sección de **salida** del estado.|
+|<xref:System.Activities.Statements.State.Transitions%2A>|False|Muestra las transiciones posibles que se originan desde <xref:System.Activities.Statements.State>. Cada elemento de la lista tiene un vínculo a la <xref:System.Activities.Statements.Transition> asociada y el <xref:System.Activities.Statements.State> de destino. Haciendo clic en el vínculo cambiará el diseñador a una vista expandida de <xref:System.Activities.Statements.Transition> o de <xref:System.Activities.Statements.State>.|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [StateMachine](../workflow-designer/statemachine-activity-designer.md)
 - [FinalState](../workflow-designer/finalstate-activity-designer.md)

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 5c37876b-c83c-4ca1-837b-57cd465a879a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0093e3a79a5a9caf9846c4b418226568e37828f0
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 981e4e4561db7bc7fb8a9f0ce92522d34e4b34fa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994490"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874053"
 ---
 # <a name="file-status-code-enumerator"></a>Enumerador de código de estado de archivo
 El `SccStatus` enumerador contiene valores constantes con nombre que especifican el estado de un archivo en el sistema de control de código fuente. Esta enumeración la usan [SccQueryInfo](../extensibility/sccqueryinfo-function.md) y la `POPLISTFUNC` función de devolución de llamada (vea [POPLISTFUNC](../extensibility/poplistfunc.md) para obtener más información).
@@ -50,7 +50,7 @@ enum SccStatus {
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
  No se pudo obtener el estado de SCC_STATUS_INVALID; no se base en él.
 
  SCC_STATUS_NOTCONTROLLED archivo no está bajo control de código fuente.
@@ -87,7 +87,7 @@ enum SccStatus {
 
  SCC_STATUS_RESERVED_2 reservado para uso interno.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Complementos de control de código fuente](../extensibility/source-control-plug-ins.md)
 - [SccQueryInfo](../extensibility/sccqueryinfo-function.md)
 - [POPLISTFUNC](../extensibility/poplistfunc.md)
