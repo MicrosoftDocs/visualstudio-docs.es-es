@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 4e2bd6d5-f4bd-4c10-a998-3db451c9a0c8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ad95f9273276830b59ebc77214f3920a687d41ed
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c47f51fb0ddc47218b11fe5673e0ede8362ff89
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728575"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921081"
 ---
 # <a name="idebugfunctionobjectcreateobjectnoconstructor"></a>IDebugFunctionObject::CreateObjectNoConstructor
 Crea un objeto sin constructor.
@@ -28,7 +28,7 @@ Crea un objeto sin constructor.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT CreateObjectNoConstructor( 
+HRESULT CreateObjectNoConstructor( 
    IDebugField*   pClassObject,
    IDebugObject** ppObject
 );
@@ -51,7 +51,7 @@ enuncia Devuelve un [IDebugObject](../../../extensibility/debugger/reference/ide
 ## <a name="return-value"></a>Valor devuelto
  Si se realiza correctamente, Devuelve S_OK; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Llame a este método para crear un objeto que represente una instancia de una estructura o un tipo complejo (que no requiere un constructor) que sea un parámetro de la función representada por la interfaz [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) .
 
  Si el parámetro de objeto requiere un constructor, llame al método [CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject-createobject.md) .
@@ -59,4 +59,4 @@ enuncia Devuelve un [IDebugObject](../../../extensibility/debugger/reference/ide
 ## <a name="see-also"></a>Vea también
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)
-- [CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject-createobject.md)
+- [DataSpace](../../../extensibility/debugger/reference/idebugfunctionobject-createobject.md)

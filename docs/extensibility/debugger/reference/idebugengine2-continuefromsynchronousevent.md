@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 9a57dfcd-df8e-4be5-b1fe-bd853e3c6bb2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: da059b6efe137092d46241977a98b22b1eb66c44
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 78485e209c93e0673aa32587b21bb074aac047e1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731149"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921133"
 ---
 # <a name="idebugengine2continuefromsynchronousevent"></a>IDebugEngine2::ContinueFromSynchronousEvent
 Llamado por el administrador de depuración de la sesión (SDM) para indicar que se ha recibido y procesado un evento de depuración sincrónico, enviado anteriormente por el motor DE depuración (DE) al SDM.
@@ -46,7 +46,7 @@ de Un objeto [IDebugEvent2](../../../extensibility/debugger/reference/idebugeven
 ## <a name="return-value"></a>Valor devuelto
 Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 El DE debe comprobar que se trata del origen del evento representado por el `pEvent` parámetro.
 
 ## <a name="example"></a>Ejemplo

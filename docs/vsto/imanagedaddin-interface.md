@@ -9,15 +9,15 @@ helpviewer_keywords:
 - IManagedAddin interface
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b436d76164b1744cffe16593149f64d219d04bf1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 89e705296c6051b8bdec823e523f0a386ff7ff76
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541133"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920441"
 ---
 # <a name="imanagedaddin-interface"></a>interfaz IManagedAddin
   Implemente la interfaz IManagedAddin para crear un componente que cargue complementos de VSTO administrados. Esta interfaz se agregó en el sistema Microsoft Office de 2007.
@@ -48,7 +48,7 @@ interface IManagedAddin : IUnknown
 |[IManagedAddIn::Load](../vsto/imanagedaddin-load.md)|Se llama a este método cuando una aplicación de Microsoft Office carga un complemento de VSTO administrado.|
 |[IManagedAddin::Unload](../vsto/imanagedaddin-unload.md)|Se llama a este método justo antes de que una aplicación de Microsoft Office descargue un complemento de VSTO administrado.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Microsoft Office aplicaciones, a partir del sistema Microsoft Office 2007, use la interfaz IManagedAddin para ayudar a cargar los complementos de VSTO de Office. Puede implementar la interfaz IManagedAddin para crear su propio cargador de complementos de VSTO y tiempo de ejecución para los complementos de VSTO administrados, en lugar de usar el cargador de complementos de VSTO (*VSTOLoader.dll*) y [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . Para obtener más información, consulta [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).
 
 ## <a name="how-managed-add-ins-are-loaded"></a>Cómo se cargan los complementos administrados
@@ -56,13 +56,13 @@ interface IManagedAddin : IUnknown
 
 1. La aplicación detecta los complementos de VSTO buscando las entradas en la siguiente clave del registro:
 
-    **HKEY_CURRENT_USER \Software\Microsoft\Office \\ *\<application name>* \Addins\\**
+    **HKEY_CURRENT_USER\Software\Microsoft\Office\\ *\<application name>* \Addins\\**
 
     Cada entrada de esta clave del Registro es un identificador único del complemento de VSTO. Normalmente, se trata del nombre del ensamblado de complemento de VSTO.
 
 2. La aplicación busca una entrada `Manifest` en la entrada de cada complemento de VSTO.
 
-    Los complementos de VSTO administrados pueden almacenar la ruta de acceso completa de un manifiesto en la `Manifest` entrada en **HKEY_CURRENT_USER \software\microsoft\office \\ _\<application name>_ \Addins \\ _\<add-in ID>_ **. Un manifiesto es un archivo (normalmente un archivo XML) que ofrece información que se usa para cargar el complemento de VSTO.
+    Los complementos de VSTO administrados pueden almacenar la ruta de acceso completa de un manifiesto en la `Manifest` entrada en **HKEY_CURRENT_USER\Software\Microsoft\Office\\ _\<application name>_ \Addins \\ _\<add-in ID>_**. Un manifiesto es un archivo (normalmente un archivo XML) que ofrece información que se usa para cargar el complemento de VSTO.
 
 3. Si la aplicación encuentra una entrada `Manifest` , la aplicación intenta cargar un componente de cargador de complemento de VSTO administrado. Para ello, la aplicación intenta crear un objeto COM que implementa la interfaz IManagedAddin.
 
@@ -84,5 +84,5 @@ interface IManagedAddin : IUnknown
 > [!CAUTION]
 > Este CLSID también se usa en *VSTOLoader.dll* en [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . Por lo tanto, si usa IManagedAddin para crear su propio componente de tiempo de ejecución y cargador de complementos de VSTO, no podrá implementar el componente en equipos que ejecuten complementos de VSTO que se basen en [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] .
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Referencia de la API no administrada &#40;desarrollo de Office en Visual Studio&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)

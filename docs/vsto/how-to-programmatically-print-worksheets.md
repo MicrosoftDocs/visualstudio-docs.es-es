@@ -13,15 +13,15 @@ helpviewer_keywords:
 - print preview, worksheets
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 356c47ec3275c1442082f367dd08fe6901f9c0a3
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 885af73613636b9f6c829393b010c3543f6cea5e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523763"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920477"
 ---
 # <a name="how-to-programmatically-print-worksheets"></a>Cómo: imprimir hojas de cálculo mediante programación
 
@@ -65,7 +65,7 @@ Puede imprimir cualquier hoja de cálculo de un libro.
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#15](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#15)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#15](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#15)]
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Trabajar con hojas de cálculo](../vsto/working-with-worksheets.md)
 - [Cómo: comprobar la ortografía en hojas de cálculo mediante programación](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)

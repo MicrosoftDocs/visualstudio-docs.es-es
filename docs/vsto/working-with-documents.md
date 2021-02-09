@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], document common tasks
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8a8b994ed88c6499d17cc0cf241e60a17f235b97
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: f04cdd246d95a4d5757ff64851a12cdede36f1b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527022"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920213"
 ---
 # <a name="work-with-documents"></a>Trabajar con documentos
   En los temas de esta sección se proporcionan procedimientos detallados y ejemplos de código para usar el modelo de objetos de Microsoft Office Word de modo que funcione con documentos en proyectos de Office.
@@ -44,6 +44,6 @@ ms.locfileid: "97527022"
 |Agregar un encabezado o pie de página a un documento.|[Cómo: agregar encabezados y pies de página a documentos mediante programación](../vsto/how-to-programmatically-add-headers-and-footers-to-documents.md)|
 |Quitar todos los comentarios de un documento.|[Cómo: quitar todos los comentarios de documentos mediante programación](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Información general sobre el modelo de objetos de Word](../vsto/word-object-model-overview.md)
 - [Información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)

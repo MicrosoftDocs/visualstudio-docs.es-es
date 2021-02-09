@@ -14,15 +14,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], text
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8314752b5d1be6d1d86dcf35cf78851bcb45cb3c
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 07b3ed9cc39e4eb23bec587516786cf28a940e40
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523383"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920229"
 ---
 # <a name="work-with-text-in-documents"></a>Trabajar con texto en documentos
   Los temas de esta sección proporcionan procedimientos detallados y ejemplos de código para usar el modelo de objetos de Microsoft Office Word para trabajar con texto en proyectos de Office.
@@ -48,6 +48,6 @@ ms.locfileid: "97523383"
 |Ocultar el texto de un marcador antes de imprimir un documento.|[Cómo: Ocultar texto en documentos mediante programación](../vsto/how-to-programmatically-hide-text-in-documents.md)|
 |Agregar un comentario al texto.|[Cómo: agregar comentarios al texto en documentos mediante programación](../vsto/how-to-programmatically-add-comments-to-text-in-documents.md)|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Información general sobre el modelo de objetos de Word](../vsto/word-object-model-overview.md)
 - [Información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)

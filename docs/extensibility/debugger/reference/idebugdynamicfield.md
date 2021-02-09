@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: caffbd95-7596-4714-84b1-b964e89a78bb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15f0ddf70849377d37ec74839550de6057b3450c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6cd81f393b81adb37059106e2d56fd4a3bf2c461
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731318"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921169"
 ---
 # <a name="idebugdynamicfield"></a>IDebugDynamicField
 Esta interfaz representa un tipo de una variable.

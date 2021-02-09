@@ -14,15 +14,15 @@ helpviewer_keywords:
 - worksheets [Office development in Visual Studio], collecting data
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 58d6f58f732d4a52aade6ff3678842900f1c29cd
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: e8c88bbf529da8e07976c012d40ca59e5f1e5626
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527168"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920371"
 ---
 # <a name="walkthrough-collect-data-by-using-a-windows-form"></a>Tutorial: recopilar datos mediante Windows Forms
   En este tutorial se muestra cómo abrir un formulario de Windows Forms desde una personalización de nivel de documento de Microsoft Office Excel, cómo recopilar la información del usuario y cómo escribir dicha información en una celda de la hoja de cálculo.
@@ -41,7 +41,7 @@ ms.locfileid: "97527168"
 > [!NOTE]
 > Es posible que tu equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="create-a-new-project"></a>Creación de un proyecto
+## <a name="create-a-new-project"></a>Creación de un nuevo proyecto
  En primer lugar, es necesario crear un proyecto de libro de Excel.
 
 ### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto
@@ -138,7 +138,7 @@ ms.locfileid: "97527168"
 
 - Modificar la interfaz de usuario de una aplicación Microsoft Office a partir de una personalización de nivel de documento o un complemento de VSTO. Para obtener más información, consulte [Personalización](../vsto/office-ui-customization.md)de la interfaz de usuario de Office.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Desarrollo de soluciones de Office](../vsto/developing-office-solutions.md)
 - [Escribir código en soluciones de Office](../vsto/writing-code-in-office-solutions.md)
 - [Complementos de VSTO de programa](../vsto/programming-vsto-add-ins.md)

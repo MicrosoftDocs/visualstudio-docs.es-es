@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 97c48c49-3fb2-4778-accd-8585fa4feabf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96000c91d3134bc527ff5651d5a8872fd48c1a66
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bde9c1dee2f380d73ca47de3ab6c3618a7c1b89e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739310"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921650"
 ---
 # <a name="asyncvoidmethodbuilderobjectidfordebugger-property"></a>Propiedad AsyncVoidMethodBuilder. Objectidfordebugger (
 Obtiene un objeto que se puede usar para identificar de forma única este generador en el depurador.

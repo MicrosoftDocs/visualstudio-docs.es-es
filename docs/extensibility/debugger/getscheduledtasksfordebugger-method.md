@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 7c9b4cde-6e4a-4cef-929f-7d02b1da5762
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fca6c8e92cd0b4755bd79b8e142a7e1d283f868d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 318e535d86dcd51f9c9bbfcfae8e228c8d7c20b4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738664"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921340"
 ---
 # <a name="getscheduledtasksfordebugger-method"></a>GetScheduledTasksForDebugger (Método)
 Recupera una matriz de todas las tareas programadas.
@@ -35,7 +35,7 @@ Recupera una matriz de todas las tareas programadas.
 ## <a name="return-value"></a>Valor devuelto
  Una matriz de todas las tareas programadas. Cada tarea se está ejecutando o ha terminado de ejecutarse.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Este método no es seguro para subprocesos y no se debe utilizar simultáneamente con otras instancias de <xref:System.Threading.Tasks.TaskScheduler> . Llame a este método desde un depurador solo cuando el depurador haya suspendido todos los demás subprocesos.
 
 ## <a name="see-also"></a>Vea también

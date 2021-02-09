@@ -11,15 +11,15 @@ helpviewer_keywords:
 - WPF [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e041cda914cbf8aced4b19adfc80c601984c30e0
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 7bc720e6218e4cbb76b14f356d190b738e31ede3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526439"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921904"
 ---
 # <a name="use-wpf-controls-in-office-solutions"></a>Usar controles de WPF en soluciones de Office
 
@@ -118,7 +118,7 @@ Para obtener más información sobre cómo agregar controles de WPF a los contro
 
 - [Tutorial: contenido de WPF de estilo](/dotnet/framework/winforms/advanced/walkthrough-styling-wpf-content)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Personalización de la interfaz de usuario de Office](../vsto/office-ui-customization.md)
 - [Información general sobre los controles de Windows Forms en documentos de Office](../vsto/windows-forms-controls-on-office-documents-overview.md)

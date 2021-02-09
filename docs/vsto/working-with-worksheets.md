@@ -12,15 +12,15 @@ helpviewer_keywords:
 - worksheets [Office development in Visual Studio], common tasks
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d58576c999d11441122bb0b2115d2367b7ce04ce
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 294ff749f338df12cc2ca9edeab28d07786c7018
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97522542"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920178"
 ---
 # <a name="work-with-worksheets"></a>Trabajar con hojas de cálculo
   Las clases <xref:Microsoft.Office.Tools.Excel.Worksheet> y <xref:Microsoft.Office.Interop.Excel.Worksheet> contienen los métodos y las propiedades que se usan para llevar a cabo tareas con hojas de cálculo.
@@ -49,7 +49,7 @@ ms.locfileid: "97522542"
 
  En algunos casos, los métodos con los que lleva a cabo estas tareas en los complementos de VSTO son distintos de los métodos con los que las lleva a cabo en las personalizaciones de nivel de documento.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Automatizar Excel usando objetos extendidos](../vsto/automating-excel-by-using-extended-objects.md)
 - [Trabajar con libros](../vsto/working-with-workbooks.md)
 - [Trabajar con rangos](../vsto/working-with-ranges.md)

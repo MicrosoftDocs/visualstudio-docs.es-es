@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 58aa236a-5ab8-4695-b303-89dffdbcd946
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3b0c8c16b10a4cf2268161d8a2db96c10303b1c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2b9826681d2d322b1b240abb4062de007b564619
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738647"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921266"
 ---
 # <a name="gettaskschedulersfordebugger-method"></a>GetTaskSchedulersForDebugger (Método)
 Recupera una matriz de todos los <xref:System.Threading.Tasks.TaskScheduler> objetos que están activos actualmente.
@@ -35,7 +35,7 @@ Recupera una matriz de todos los <xref:System.Threading.Tasks.TaskScheduler> obj
 ## <a name="return-value"></a>Valor devuelto
  Una matriz de todos los <xref:System.Threading.Tasks.TaskScheduler> objetos que están activos actualmente en este objeto <xref:System.AppDomain> .
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Este método no es seguro para subprocesos y no se debe utilizar simultáneamente con otras instancias de <xref:System.Threading.Tasks.TaskScheduler> . Llame a este método desde un depurador solo cuando el depurador haya suspendido todos los demás subprocesos.
 
 ## <a name="see-also"></a>Vea también

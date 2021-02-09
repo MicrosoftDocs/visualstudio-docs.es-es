@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 745c2337-cfff-4d02-b49c-3ca7c4945c5e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd86d84ba4187df70d2aa02181249336c38dda41
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 1f3ee9c145a4c6275f64d357d87ac1cc284bfac6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560053"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921290"
 ---
 # <a name="get-a-port"></a>Obtener un puerto
 Un puerto representa una conexión a un equipo en el que se ejecutan los procesos. Ese equipo podría ser el equipo local o un equipo remoto (que podría estar ejecutando un sistema operativo no basado en Windows; consulte [puertos](../../extensibility/debugger/ports.md) para obtener más información).
