@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e42f33ed-f29c-4e45-92ce-ab504b72d77c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a16f2c39fa2d53ffc4d113666ef7630557e61861
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b65d8a3171de6ac33526bafadbe04254ce58855
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723569"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926267"
 ---
 # <a name="idebugprocess3sethostingprocesslanguage"></a>IDebugProcess3::SetHostingProcessLanguage
 Este método establece el idioma en el que se hospedará el proceso. El motor DE depuración (DE) puede usar este lenguaje para cargar el evaluador de expresiones adecuado.
@@ -28,8 +28,8 @@ Este método establece el idioma en el que se hospedará el proceso. El motor DE
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT SetHostingProcessLanguage(
-   REFGUID guidLang
+HRESULT SetHostingProcessLanguage(
+   REFGUID guidLang
 );
 ```
 
@@ -46,9 +46,9 @@ int SetHostingProcessLanguage(
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve el código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 - [GetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-gethostingprocesslanguage.md) se puede usar para recuperar la configuración de idioma actual.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)
 - [GetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-gethostingprocesslanguage.md)

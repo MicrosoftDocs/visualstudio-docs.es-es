@@ -15,15 +15,15 @@ helpviewer_keywords:
 - data binding [Office development in Visual Studio], multiple columns
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 988394595e8aa4710a22e1fedf22a921481c7396
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 2dc5708da09074c7d973336958c9e89c16bf9da6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527120"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927670"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Tutorial: enlace de datos complejo en un proyecto de nivel de documento
   En este tutorial se muestran los conceptos básicos del enlace de datos complejo en un proyecto de nivel de documento. Puede enlazar varias celdas de una Microsoft Office hoja de cálculo de Excel a los campos de la base de datos Northwind SQL Server.
@@ -51,7 +51,7 @@ ms.locfileid: "97527120"
 
 - Permisos para leer y escribir en la base de datos de SQL Server.
 
-## <a name="create-a-new-project"></a>Creación de un proyecto
+## <a name="create-a-new-project"></a>Creación de un nuevo proyecto
  El primer paso es crear un proyecto de libro de Excel.
 
 ### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto
@@ -177,17 +177,17 @@ ms.locfileid: "97527120"
 
 1. Seleccione una celda dentro del objeto de lista.
 
-    Aparece una nueva fila en la parte inferior de la lista, con un asterisco (* *\** _) en la primera celda de la nueva fila.
+    Aparece una nueva fila en la parte inferior de la lista, con un asterisco ( **\*** ) en la primera celda de la nueva fila.
 
 2. Agregue la siguiente información en la fila vacía.
 
-   |EmployeeID|Apellidos|Nombre|Title|
+   |EmployeeID|Apellidos|Nombre|Título|
    |----------------|--------------|---------------|-----------|
    |10|Ito|Shu|Jefe de ventas|
 
 ### <a name="to-delete-rows"></a>Eliminación de filas
 
-- Haga clic con el botón secundario en el número 16 (fila 16) en el extremo izquierdo de la hoja de cálculo y, a continuación, haga clic en _ * eliminar * *.
+- Haga clic con el botón secundario en el número 16 (fila 16) en el extremo izquierdo de la hoja de cálculo y, a continuación, haga clic en **eliminar**.
 
 ### <a name="to-sort-the-rows-in-the-list"></a>Para ordenar las filas de la lista
 
@@ -226,7 +226,7 @@ ms.locfileid: "97527120"
 
 - Cree una relación principal-detalle entre un campo y una tabla. Para obtener más información, vea [Tutorial: crear una relación maestra de detalles mediante un conjunto de datos almacenado en memoria caché](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Datos en soluciones de Office](../vsto/data-in-office-solutions.md)
 - [Tutorial: enlace de datos simple en un proyecto de nivel de documento](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)

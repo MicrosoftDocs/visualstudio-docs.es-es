@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: b24a1702-8fbe-45b1-87a0-9618a0708f1d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 96dfb98b468782f771d866b33b94b2c18de6276f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 76f8aec5cec1d06b3c6162524e02ae1bb2faefc0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350509"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927410"
 ---
 # <a name="trusted-application-deployment-overview"></a>Introducción a la implementación de aplicaciones de confianza
 En este tema se proporciona información general sobre cómo implementar aplicaciones [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] que disponen de permisos elevados usando la tecnología de implementación de aplicaciones de confianza.
@@ -79,7 +79,7 @@ Siga estos pasos para aprovechar las ventajas de la implementación de aplicacio
 
 - El espacio de nombres <xref:System.Security.Cryptography?displayProperty=fullName> .
 
-- *CertMgr.exe* , que es un componente de Internet Explorer y, por tanto, existe en Windows 98 y en todas las versiones posteriores. Para obtener más información, vea [Certmgr.exe (herramienta de administración de certificados)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool).
+- *CertMgr.exe*, que es un componente de Internet Explorer y, por tanto, existe en Windows 98 y en todas las versiones posteriores. Para obtener más información, vea [Certmgr.exe (herramienta de administración de certificados)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool).
 
 ### <a name="create-a-clickonce-application"></a>Crear una aplicación ClickOnce
  Una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación es una aplicación cliente de .NET Framework combinada con archivos de manifiesto que describen la aplicación y proporcionan parámetros de instalación. Puede convertir el programa en una aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] con el comando **Publicar** de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Otra opción es generar todos los archivos necesarios para la implementación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] mediante las herramientas incluidas en el [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Para obtener pasos detallados sobre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación, consulte [Tutorial: Implementación manual de una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 96dccf51-2b00-4700-9d28-924b34c21ecd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8da92f721f0f4333ffb32ac5cb080d87e4fc0543
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 51b202db9210fa5c1f3d5b26b5177cc0b5e1e0a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974493"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927319"
 ---
 # <a name="button-element"></a>Elemento Button
 Define un elemento con el que el usuario puede interactuar. Los botones pueden ser de diferentes tipos: Button, MenuButton y SplitDropDown.

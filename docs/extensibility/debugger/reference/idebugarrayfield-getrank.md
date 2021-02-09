@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 2364b876-5be1-4bab-9b8f-3b6121da35c6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 692f2f13d861d9688ba349fbc80cb1ca426582c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 10f42ca10496d89955032bd531651186d0aecf37
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736312"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926352"
 ---
 # <a name="idebugarrayfieldgetrank"></a>IDebugArrayField::GetRank
 Obtiene el rango o el número de dimensiones de la matriz.
@@ -28,7 +28,7 @@ Obtiene el rango o el número de dimensiones de la matriz.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT GetRank( 
+HRESULT GetRank( 
    DWORD* pdwRank
 );
 ```
@@ -46,7 +46,7 @@ enuncia Devuelve el rango.
 ## <a name="return-value"></a>Valor devuelto
  Si se realiza correctamente, Devuelve S_OK; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  El rango de una matriz se corresponde con el número de dimensiones. En C++ y C#, las matrices multidimensionales son realmente matrices de matrices y, por tanto, se pueden considerar solo una matriz unidimensional (y el `GetRank` método siempre devuelve 1). Por [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] otro lado, las matrices multidimensionales se tratan de forma diferente y el rango de una matriz de este tipo refleja el número de dimensiones (y el `GetRank` método siempre devuelve el número de dimensiones).
 
 ## <a name="see-also"></a>Vea también

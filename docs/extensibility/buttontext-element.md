@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 56aba884-0356-4894-ae4e-32d3938f6865
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2db20bb3298a7b849e8bc4a261987c5314a29841
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: b03b5fce58795488f6c379fcf93e5f7fea074e13
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974470"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927176"
 ---
 # <a name="buttontext-element"></a>Elemento ButtonText
 Este campo le permite especificar el texto que aparece en varios menús. De forma predeterminada, el `ButtonText` elemento aparece en los controladores de menús. El `ButtonText` elemento también se convierte en el valor predeterminado si los demás campos de texto están en blanco. El `ButtonText` elemento no puede estar en blanco ni siquiera si se especifican los demás campos de texto.

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 1d7f3aa7-7eff-4cab-bc53-0a566b1a9363
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f13ca62f841525ef91ac7d66b67c09da54cabeb3
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: 368d55db8e52d2797041e420d109960c88d96cb6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606569"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927189"
 ---
 # <a name="ports"></a>Puertos
 En la arquitectura del depurador, un *Puerto*:
@@ -33,7 +33,7 @@ En la arquitectura del depurador, un *Puerto*:
 
   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] proporciona un puerto predeterminado que controla todos los procesos basados en Windows, tanto nativos como administrados. Se debe configurar un puerto personalizado para las conexiones con dispositivos externos que no estén basados en Windows. Para proporcionar estos puertos personalizados, también debe configurar un proveedor de Puerto personalizado.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Servidores](../../extensibility/debugger/servers-visual-studio-sdk.md)
 - [Procesos](../../extensibility/debugger/processes.md)
 - [Conceptos del depurador](../../extensibility/debugger/debugger-concepts.md)

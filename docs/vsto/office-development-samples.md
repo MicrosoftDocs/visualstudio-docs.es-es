@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, samples
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d80598033c834e8567ab58368da73350b3cd9ff3
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: caf3178355697b8dba997dbcb66dfa8ef5569e36
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525162"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926578"
 ---
 # <a name="office-development-samples"></a>Ejemplos de desarrollo de Office
   Visual Studio incluye aplicaciones de ejemplo que muestran cómo usar Microsoft Office Developer Tools para crear soluciones de Office. El código de estos ejemplos muestra la sintaxis, la estructura y las técnicas usadas para compilar soluciones de Office.
@@ -42,5 +42,5 @@ ms.locfileid: "97525162"
 |Ejemplo de administrador de la interfaz de usuario|Muestra cómo crear una personalización de la cinta de opciones, un panel de tareas personalizado y un área de formulario personalizada para Outlook implementando interfaces de extensibilidad en un complemento de VSTO. Todas las instancias de la cinta de opciones, el panel de tareas y el área de formulario pueden comunicarse correctamente entre sí.|
 |Ejemplo de interoperabilidad de VSTO y VBA|Muestra cómo llamar a un método en una personalización de nivel de documento para Excel desde el código de Visual Basic para Aplicaciones (VBA) del libro.<br /><br /> Este ejemplo solo está disponible en línea.|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Tareas comunes en la programación de Office](../vsto/common-tasks-in-office-programming.md)

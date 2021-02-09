@@ -13,15 +13,15 @@ helpviewer_keywords:
 - signing manifests [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7451630570e6d557dc5d2b635d149ebc07cfb388
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 3135962c8476fdb6970fc137e689c638299f8f81
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528124"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927644"
 ---
 # <a name="how-to-sign-office-solutions"></a>Cómo: firmar soluciones de Office
   Si firma una solución, puede conceder confianza a la solución mediante el certificado como evidencia. Puede usar el mismo certificado para varias soluciones y todas las soluciones serán de confianza sin actualizaciones adicionales de la Directiva de seguridad.
@@ -47,7 +47,7 @@ ms.locfileid: "97528124"
 
 5. Para comprobar que se está usando el certificado correcto, haga clic en **más detalles** para ver la información del certificado.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Proteger soluciones de Office](../vsto/securing-office-solutions.md)
 - [Conceder confianza a las soluciones de Office](../vsto/granting-trust-to-office-solutions.md)

@@ -11,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: 66a1bc7e-6540-4164-963d-557196a69d8a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4858a9efdad747293a94563196108d895c40880b
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 9eb06c54caceb2e9329347fb1dd0114749975e7d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351250"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927592"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Cómo: Crear un paquete de arranque localizado
-Después de crear un paquete de programa previo, puede crear versiones localizadas del paquete de programa previo creando dos archivos más para cada configuración regional: un archivo de términos de licencia de software (por ejemplo, un archivo *EULA. rtf* ) y un manifiesto del paquete ( *package.xml* ).
+Después de crear un paquete de programa previo, puede crear versiones localizadas del paquete de programa previo creando dos archivos más para cada configuración regional: un archivo de términos de licencia de software (por ejemplo, un archivo *EULA. rtf*) y un manifiesto del paquete (*package.xml*).
 
  De forma predeterminada, Visual Studio 2010 incluye paquetes de programa previo localizados solo para .NET Framework 4, .NET Framework 4 Client Profile, F# Runtime 2.0 y F# Runtime 4.0. Siga tres pasos para crear paquetes localizados para otros programas previos.
 
@@ -30,7 +30,7 @@ Después de crear un paquete de programa previo, puede crear versiones localizad
 
 2. Cree un archivo que contenga los términos de licencia de software para el paquete de programa previo y colóquelo en la nueva carpeta.
 
-3. Cree un manifiesto de paquete con el nombre *package.xml* , actualice las cadenas y la referencia cultural, y coloque el archivo en la carpeta nueva. Si ya ha creado un programa previo de Visual Studio en el idioma de destino, puede copiar el archivo *package.xml* de Visual Studio y modificarlo en este paso.
+3. Cree un manifiesto de paquete con el nombre *package.xml*, actualice las cadenas y la referencia cultural, y coloque el archivo en la carpeta nueva. Si ya ha creado un programa previo de Visual Studio en el idioma de destino, puede copiar el archivo *package.xml* de Visual Studio y modificarlo en este paso.
 
 > [!NOTE]
 > Si usa un proyecto de instalación para implementar aplicaciones, puede localizar la aplicación cambiando la propiedad **Localización**.
@@ -47,7 +47,7 @@ Después de crear un paquete de programa previo, puede crear versiones localizad
 
      La tabla siguiente muestra los nombres de carpeta que puede usar para cada configuración regional.
 
-    |Configuración regional|Nombre de la carpeta|
+    |Configuración regional|Nombre de carpeta|
     |------------|-----------------|
     |Chino (simplificado)|zh-Hans|
     |Chino (tradicional)|zh-Hant|

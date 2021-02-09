@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 939a327100b1fcf0908c56a4fc67540e646eac7e
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 856f071cbab3156daa6afd0a5282a69636f2fe8f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668916"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927228"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Colores compartidos para Visual Studio
 Al diseñar la interfaz de usuario que usa elementos comunes de Shell de Visual Studio, o si desea que el elemento de la interfaz sea coherente con características similares, use los nombres de token existentes en los archivos de definición de paquete para elegir y asignar colores. Esto garantiza que la interfaz de usuario mantenga la coherencia con el entorno general de Visual Studio y que se actualice automáticamente cuando se agreguen o actualicen temas.

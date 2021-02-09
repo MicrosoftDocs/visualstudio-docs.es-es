@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Developer tab [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4dc38b941d27cab0653b923ddd03ba8b78eeab58
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 081d6740aa31a31173b12e467b1b8e32a074604a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528144"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927722"
 ---
 # <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Cómo: Mostrar la pestaña programador en la cinta de opciones
   Para tener acceso a la pestaña **desarrollador** de la cinta de opciones de una aplicación de Office, debe configurarla para mostrar esa pestaña, ya que no aparece de forma predeterminada. Por ejemplo, debe mostrar esa pestaña si desea agregar un <xref:Microsoft.Office.Tools.Word.GroupContentControl> a una personalización de nivel de documento para Word.
@@ -68,5 +68,5 @@ ms.locfileid: "97528144"
 
 5. Elija el botón **Aceptar** para cerrar el cuadro de diálogo **Opciones** .
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Personalización de la interfaz de usuario de Office](../vsto/office-ui-customization.md)

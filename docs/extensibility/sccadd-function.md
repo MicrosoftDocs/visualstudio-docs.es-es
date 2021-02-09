@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 545268f3-8e83-446a-a398-1a9db9e866e8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 23a6226b0d3cc2441a509c16b2e4672a766f3329
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e7fc3a2a6fbf362d58ddd1bfe25c905354d1ebdb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701310"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926865"
 ---
 # <a name="sccadd-function"></a>SccAdd función)
 Esta función agrega nuevos archivos al sistema de control de código fuente.
@@ -81,7 +81,7 @@ de Opciones específicas del complemento de control de código fuente.
 |SCC_I_RELOADFILE|Es necesario volver a cargar un archivo o proyecto.|
 |SCC_E_FILENOTEXIST|No se encontró el archivo local.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Normalmente, `fOptions` se reemplaza aquí por una matriz, `pfOptions` , con una `LONG` especificación de opción por archivo. Esto se debe a que el tipo de archivo puede variar de un archivo a un archivo.
 
 > [!NOTE]

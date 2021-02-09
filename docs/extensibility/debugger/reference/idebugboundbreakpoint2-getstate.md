@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: a40a8382-295e-4916-aae6-ffe3a9cd3f2d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 30e36880fda8b94eefcbe8b3110685b2114476a3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3a8717dd840836a093325bae40e9dec89e5d0bb8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735474"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927124"
 ---
 # <a name="idebugboundbreakpoint2getstate"></a>IDebugBoundBreakpoint2::GetState
 Obtiene el estado de este punto de interrupción enlazado.
@@ -29,13 +29,13 @@ Obtiene el estado de este punto de interrupción enlazado.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT GetState( 
+HRESULT GetState( 
     BP_STATE* pState
 );
 ```
 
 ```csharp
-int GetState( 
+int GetState( 
     out enum_BP_STATE pState
 );
 ```

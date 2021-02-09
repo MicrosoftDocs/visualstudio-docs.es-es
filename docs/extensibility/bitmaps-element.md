@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 74652e1b-fcfa-421b-aa9f-fbc081d3b476
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd3222e24c6e90380ec9c5836bed583ba95eaa68
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: e71e16f5104423c5cd7301055c9c471b5bf51262
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974571"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927397"
 ---
 # <a name="bitmaps-element"></a>Elemento bitmaps
 Agrupa los elementos de [elemento de mapa de bits](../extensibility/bitmap-element.md) .

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d94c4f60-8796-4848-86ee-186bbaa613f5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d242dcfac7a9c846793a8dcc9cd6684923192a80
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9e43488966017150e5d7e03d7616185e0b619eb4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730024"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927033"
 ---
 # <a name="idebugerrorbreakpointresolution2getresolutioninfo"></a>IDebugErrorBreakpointResolution2::GetResolutionInfo
 Obtiene la información de resolución de errores de punto de interrupción.
@@ -28,14 +28,14 @@ Obtiene la información de resolución de errores de punto de interrupción.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT GetResolutionInfo( 
+HRESULT GetResolutionInfo( 
     BPERESI_FIELDS            dwFields,
     BP_ERROR_RESOLUTION_INFO* pErrorResolutionInfo
 );
 ```
 
 ```csharp
-int GetResolutionInfo( 
+int GetResolutionInfo( 
     enum_BPERESI_FIELDS        dwFields,
     BP_ERROR_RESOLUTION_INFO[] pErrorResolutionInfo
 );

@@ -14,15 +14,15 @@ helpviewer_keywords:
 - casting, object to specific type
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 201b850d8a577f8cc76aff97e2370998b6f885ed
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 455816b2e23a25ad5ef83c726b2a78e4245ed99a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523562"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927657"
 ---
 # <a name="late-binding-in-office-solutions"></a>Enlace en tiempo de ejecución en las soluciones de Office
   Algunos tipos de los modelos de objetos de las aplicaciones de Office proporcionan funcionalidad que está disponible a través de las características de enlace en tiempo de ejecución. Por ejemplo, algunos métodos y propiedades pueden devolver distintos tipos de objetos en función del contexto de la aplicación de Office, y algunos tipos pueden exponer métodos o propiedades diferentes en contextos diferentes.
@@ -63,7 +63,7 @@ ms.locfileid: "97523562"
 
  [!code-vb[Trin_VstcoreWordAutomation#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#102)]
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Escribir código en soluciones de Office](../vsto/writing-code-in-office-solutions.md)
 - [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)
 - [Use la guía de programación de tipo Dynamic &#40;C&#35;&#41;](/dotnet/csharp/programming-guide/types/using-type-dynamic)

@@ -16,15 +16,15 @@ helpviewer_keywords:
 - NamedRange control
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f1881afb0dd718eec3815ab9de3becbeaf070f5d
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 74eb3467c4cfbba5a2cb411a1f0ad439b1a7620b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528098"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926630"
 ---
 # <a name="namedrange-control"></a>NamedRange (control)
   El control <xref:Microsoft.Office.Tools.Excel.NamedRange> es un rango que tiene un nombre único, expone eventos y se puede enlazar a datos. Para obtener más información, vea [información general sobre el modelo de objetos de Excel](../vsto/excel-object-model-overview.md).
@@ -54,7 +54,7 @@ ms.locfileid: "97528098"
 ## <a name="rename-the-control"></a>Cambiar el nombre del control
  Cuando se agrega un control <xref:Microsoft.Office.Tools.Excel.NamedRange> a la hoja de cálculo desde el **Cuadro de herramientas**, Visual Studio genera automáticamente un nombre para el control. Puede cambiar este nombre en la ventana **Propiedades** .
 
-## <a name="events"></a>Eventos
+## <a name="events"></a>Events
  Los eventos siguientes están disponibles para el control <xref:Microsoft.Office.Tools.Excel.NamedRange> :
 
 - <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick>
@@ -73,7 +73,7 @@ ms.locfileid: "97528098"
 
 - <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange>
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Automatizar Excel usando objetos extendidos](../vsto/automating-excel-by-using-extended-objects.md)
 - [Ejemplos y tutoriales de desarrollo de Office](../vsto/office-development-samples-and-walkthroughs.md)
 - [Enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md)
