@@ -7,13 +7,13 @@ ms.topic: reference
 ms.assetid: 40211cc7-294a-4943-85a4-941ad6418dad
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: aed3ed43afcad9cfb38dc427a441512106d9749b
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+manager: jmartens
+ms.openlocfilehash: 0e0bdc7b10eb20b149493c8d9e05a6711eb71bb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93045887"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881339"
 ---
 # <a name="keyboard-shortcuts-for-xaml-designer"></a>Métodos abreviados de teclado para el Diseñador XAML
 
@@ -36,7 +36,7 @@ Esta tabla enumera los métodos abreviados que están disponibles para trabajar 
 |Seleccionar todos los elementos|Presione **Ctrl** + **A**|
 |Desactivar la selección de todos los elementos|Presione **Ctrl** + **MAYÚS** + **A**|
 |Mostrar u ocultar manipuladores de elementos|Presione **F9**|
-|Seleccionar una propiedad de un elemento|Con un elemento seleccionado y el foco en el ventana Propiedades, presione **Tab** . (Usar **Ctrl** + **Para cambiar el foco a la** ventana Propiedades). Puede utilizar las teclas de dirección para seleccionar los valores de propiedad de las listas desplegables.|
+|Seleccionar una propiedad de un elemento|Con un elemento seleccionado y el foco en el ventana Propiedades, presione **Tab**. (Usar **Ctrl** + **Para cambiar el foco a la** ventana Propiedades). Puede utilizar las teclas de dirección para seleccionar los valores de propiedad de las listas desplegables.|
 
 ## <a name="document-outline-window-shortcuts"></a>Métodos abreviados a la ventana Esquema del documento
 
@@ -49,6 +49,6 @@ La tabla siguiente enumera los métodos abreviados disponibles al trabajar con e
 |Bloquear objetos de la mesa de trabajo mientras el foco está en la ventana Esquema del documento|**Ctrl** + **L**|
 |Desbloquear objetos de la mesa de trabajo mientras el foco está en la ventana Esquema del documento|**Desplazamiento** + **Ctrl** + **L**|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Tutorial: Crear una UI usando el Diseñador XAML](../xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

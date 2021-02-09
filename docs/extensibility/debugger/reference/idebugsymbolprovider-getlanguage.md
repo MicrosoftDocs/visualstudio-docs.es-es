@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e4142183-3d8b-418f-907f-4ee4c753d8ce
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 876466d3617131815f6aa48b8b7dfb68b645ecb2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 120434e44819d4c503336dffeaa1c255626270d5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719240"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880234"
 ---
 # <a name="idebugsymbolprovidergetlanguage"></a>IDebugSymbolProvider::GetLanguage
 Este método obtiene el lenguaje que se usó para compilar el código en la dirección de depuración.
@@ -28,7 +28,7 @@ Este método obtiene el lenguaje que se usó para compilar el código en la dire
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT GetLanguage( 
+HRESULT GetLanguage( 
    IDebugAddress* pAddress,
    GUID*          pguidLanguage,
    GUID*          pguidLanguageVendor
@@ -56,7 +56,7 @@ enuncia Devuelve un `GUID` que especifica el proveedor de idioma.
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  El motor de depuración llama a este método para obtener la información que necesita para seleccionar el evaluador de expresiones correcto.
 
 ## <a name="see-also"></a>Vea también

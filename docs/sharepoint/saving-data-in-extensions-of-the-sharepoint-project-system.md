@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint projects, saving string data
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1e3c05b9ad570febcfc28fec367a8d180dd2b222
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 579289a7ba5afa1eb50bdf5f1dbb105fc2a6b01e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440654"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881573"
 ---
 # <a name="save-data-in-extensions-of-the-sharepoint-project-system"></a>Guardar datos en extensiones del sistema de proyectos de SharePoint
   Al extender el sistema de proyectos de SharePoint, puede guardar los datos de cadena que se conservan después de cerrar un proyecto de SharePoint. Los datos suelen estar asociados a un elemento de proyecto concreto o al propio proyecto.

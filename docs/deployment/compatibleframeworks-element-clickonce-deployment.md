@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: f6c3ee55-9e65-403d-8664-3ebde872c7d4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5da9819cd3df667be5e8fa04372684f82762c037
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 6b0a87e36a176a01b8f243c4646e2711220f807f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383071"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881183"
 ---
 # <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;&gt;elemento compatibleFrameworks (implementación ClickOnce)
 Identifica las versiones de .NET Framework en las que se puede instalar y ejecutar esta aplicación.
@@ -29,7 +29,7 @@ Identifica las versiones de .NET Framework en las que se puede instalar y ejecut
 > [!NOTE]
 > [*MageUI.exe*](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client) no admite el `compatibleFrameworks` elemento cuando se guarda un manifiesto de aplicación que ya se ha firmado con un certificado mediante [*MageUI.exe*](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client). En su lugar, debe usar [*Mage.exe*](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ```xml
 <compatibleFrameworks
@@ -60,7 +60,7 @@ Identifica las versiones de .NET Framework en las que se puede instalar y ejecut
 |`profile`|Necesario. Especifica el perfil de la .NET Framework de destino.|
 |`supportedRuntime`|Necesario. Especifica el número de versión del tiempo de ejecución asociado a la .NET Framework de destino.|
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Notas
 
 ## <a name="example"></a>Ejemplo
  En el ejemplo de código siguiente se muestra un `compatibleFrameworks` elemento en un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifiesto de implementación. Esta implementación se puede ejecutar en el [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)] . También se puede ejecutar en el .NET Framework 4 porque es un superconjunto de [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)] .

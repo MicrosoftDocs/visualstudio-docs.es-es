@@ -14,20 +14,20 @@ helpviewer_keywords:
 ms.assetid: e61d5787-fe1f-4ebf-b0cf-0d7909be7ffb
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 65c63d52290962d8c9878edf025bbc05487103da
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 0f53ca683e40be8e3cc428d013d2b8d3c8c5773e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383058"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881235"
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;Elemento Commands &gt; (arranque)
 El `Commands` elemento implementa las pruebas descritas por los elementos situados debajo del `InstallChecks` elemento y declara qué paquete [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] debe instalar el programa previo si se produce un error en la prueba.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ```xml
 <Commands
@@ -74,7 +74,7 @@ El `Commands` elemento implementa las pruebas descritas por los elementos situad
 |---------------|-----------------|
 |`Reboot`|Opcional. Determina si el sistema debe reiniciarse si alguno de los paquetes devuelve un código de salida de reinicio. En la lista siguiente se muestran los valores válidos:<br /><br /> `Defer`. El reinicio se aplaza hasta un momento posterior.<br /><br /> `Immediate`. Provoca un reinicio inmediato si uno de los paquetes devuelve un código de salida de reinicio.<br /><br /> `None`. Hace que se omitan las solicitudes de reinicio.<br /><br /> De manera predeterminada, es `Immediate`.|
 
-## <a name="command"></a>Get-Help
+## <a name="command"></a>Comando
  El elemento `Command` es un elemento secundario del elemento `Commands`. Un `Commands` elemento puede tener uno o más `Command` elementos. El elemento tiene los atributos siguientes.
 
 |Atributo|Descripción|
@@ -207,4 +207,4 @@ El `Commands` elemento implementa las pruebas descritas por los elementos situad
 
 ## <a name="see-also"></a>Vea también
 - [Referencia de esquemas de productos y paquetes](../deployment/product-and-package-schema-reference.md)
-- [\<InstallChecks> Element](../deployment/installchecks-element-bootstrapper.md)
+- [Elemento \<InstallChecks>](../deployment/installchecks-element-bootstrapper.md)

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d725cb68-a565-49d1-a16f-ff0445c587a0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 82796c1d82dc3ca77151abcec3e1dd6ce13ac59d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eeb4a306e7b357c59f8d75a91e2c21c50f1ed16b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713329"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880091"
 ---
 # <a name="type_info"></a>TYPE_INFO
 Esta estructura especifica diversos tipos de información sobre el tipo de un campo.
@@ -46,7 +46,7 @@ public struct TYPE_INFO {
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
  `dwKind`\
  Un valor de la enumeración [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) que determina cómo interpretar la Unión.
 
@@ -68,7 +68,7 @@ public struct TYPE_INFO {
  `unionmember`\
  [Solo C#] Calcular las referencias de este en el tipo de estructura adecuado basado en `dwKind` .
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Esta estructura se pasa al método [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) donde se rellena. El modo en que se interpreta el contenido de la estructura se basa en el `dwKind` campo.
 
 > [!NOTE]

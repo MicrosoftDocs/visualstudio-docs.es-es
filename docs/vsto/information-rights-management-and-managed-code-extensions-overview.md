@@ -17,15 +17,15 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio, restricted permissions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fc300ac83674b8faf2bd4c0fc6128f60c28ee92b
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 8fc6a37a327c26ec46777575c3976c227e2d1de9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523054"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881495"
 ---
 # <a name="information-rights-management-and-managed-code-extensions-overview"></a>Información general sobre Information Rights Management y extensiones de código administrado
   Microsoft Office Word y Microsoft Office Excel proporcionan información Rights Management (IRM), una característica que puede ayudarle a evitar que personas no autorizadas vean o modifiquen información confidencial. Para obtener más información sobre cómo funciona la información Rights Management, vea la ayuda de en la aplicación de Office específica.
@@ -42,7 +42,7 @@ ms.locfileid: "97523054"
 
  Para solucionar el problema, alguien con acceso de control total al documento o libro debe cambiar la configuración de permisos predeterminada para permitir el acceso mediante programación al modelo de objetos. Para obtener más información, vea [Cómo: permitir que el código se ejecute detrás de documentos con permisos restringidos](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Protección de documentos en soluciones de nivel de documento](../vsto/document-protection-in-document-level-solutions.md)
 - [Protección mediante contraseña en documentos de Office](../vsto/password-protection-on-office-documents.md)
 - [Proteger soluciones de Office](../vsto/securing-office-solutions.md)

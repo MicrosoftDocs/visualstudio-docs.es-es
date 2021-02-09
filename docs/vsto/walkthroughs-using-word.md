@@ -12,15 +12,15 @@ helpviewer_keywords:
 - walkthroughs [Office development in Visual Studio], Word
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cd2685b7fee0534e56c55e2c865d1d7f16423de5
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 35d101a1d8db82e366ec706b3d10fdcac0cdcbaf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97522575"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881417"
 ---
 # <a name="walkthroughs-using-word"></a>Tutoriales de uso de Word
   En los siguientes tutoriales se muestran las maneras en las que puede usar las personalizaciones de nivel de documento y los complementos de VSTO para automatizar Microsoft Office Word y personalizar la interfaz de usuario (IU).
@@ -53,7 +53,7 @@ ms.locfileid: "97522575"
 
 - [Tutorial: crear una pestaña personalizada usando XML de la cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md) Muestra cómo crear una pestaña personalizada de la cinta de opciones mediante un archivo de descriptor XML en un complemento de VSTO.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Tutoriales de uso de Excel](../vsto/walkthroughs-using-excel.md)
 - [Datos en los tutoriales de soluciones de Office](../vsto/data-in-office-solutions-walkthroughs.md)
 - [Tutoriales de personalización de la interfaz de usuario de Office](../vsto/office-ui-customization-walkthroughs.md)

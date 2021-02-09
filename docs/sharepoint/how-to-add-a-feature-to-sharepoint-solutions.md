@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, features
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5b31c650beff880340090b7548a18962fa276e36
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: b8418b63b2397da109a11f287bd21321fd2468ed
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915120"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879714"
 ---
 # <a name="how-to-add-a-feature-to-sharepoint-solutions"></a>Cómo: agregar una característica a las soluciones de SharePoint
   Al crear una solución de SharePoint, se agregan una característica y un paquete a la solución. Puede agregar más elementos de características para organizar los distintos tipos de archivos de SharePoint.
@@ -28,5 +28,5 @@ ms.locfileid: "96915120"
 
 1. En **Explorador de soluciones**, abra el menú contextual de **características** y, a continuación, elija **Agregar característica**.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Empaquetado e implementación de soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

@@ -1,5 +1,5 @@
 ---
-title: Accesos directos del teclado
+title: Métodos abreviados de teclado
 titleSuffix: Blend for Visual Studio
 description: Obtenga información sobre los métodos abreviados de teclado en Blend para Visual Studio que tienen acceso a comandos para trabajar con proyectos, documentos, objetos, vistas y áreas de trabajo.
 ms.custom: SEO-VS-2020
@@ -8,23 +8,23 @@ ms.topic: reference
 ms.assetid: 3a1b6830-30c2-4a36-bd14-6961f5edf9cb
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3641edafeed9cf7b5e29f8a967f9dbf26cdd3e8c
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 92c2fd5ed260816ca9b0859d37f125b231c0906e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049241"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881287"
 ---
 # <a name="keyboard-shortcuts-in-blend-for-visual-studio"></a>Métodos abreviados de teclado de Blend para Visual Studio
 
 ## <a name="project-shortcuts"></a>Métodos abreviados del proyecto
 
-|Para|Haga esto|
+|Para hacer esto|Haga esto|
 |----------------|-------------|
-|Crear un proyecto nuevo|**Ctrl** + **Desplazamiento** + **N**|
+|Creación de un nuevo proyecto|**Ctrl** + **Desplazamiento** + **N**|
 |Abrir un proyecto o una solución (no un sitio)|**Ctrl** + **Desplazamiento** + **O**|
 |Cerrar una solución|**Ctrl** + **Desplazamiento** + **C**|
 |Guardar una copia de la solución o el sitio|**Ctrl** + **Desplazamiento** + **P**|
@@ -35,15 +35,15 @@ ms.locfileid: "93049241"
 
 ## <a name="document-shortcuts"></a>Métodos abreviados del documento
 
-|Para|Haga esto|
+|Para hacer esto|Haga esto|
 |----------------|-------------|
 |Cambiar entre los documentos abiertos|**Ctrl**+**Tab**|
 |Guardar el documento activo|**Ctrl** + **S**|
 |Guardar todos los documentos|**Ctrl** + **Desplazamiento** + **S**|
 |Cerrar el documento activo|**Ctrl** + **W**|
 |Cerrar todos los documentos abiertos|**Ctrl** + **Desplazamiento** + **W**|
-|Deshacer la última acción|**Ctrl** + Z|
-|Rehacer la última acción deshecha|**Ctrl** +Y o **Ctrl**+**Mayús**+**Z**|
+|Deshacer la última acción|**Ctrl**+ Z|
+|Rehacer la última acción deshecha|**Ctrl**+Y o **Ctrl**+**Mayús**+**Z**|
 |Crear una anotación en tiempo de diseño|**Ctrl** + **Desplazamiento** + **T**|
 |Cortar|**Ctrl** + **X**|
 |Copiar|**Ctrl** + **C**|
@@ -54,12 +54,12 @@ ms.locfileid: "93049241"
 
 ## <a name="object-shortcuts"></a>Métodos abreviados de objetos
 
-|Para|Haga esto|
+|Para hacer esto|Haga esto|
 |----------------|-------------|
 |Creación de un elemento|**Ctrl** + **N**|
 |Duplicar un objeto|Mantener presionada la tecla **Alt** y arrastrar el objeto|
 |Cambiar el valor primario de un objeto|Arrastrar el objeto sobre un panel de diseño y presionar **Alt**|
-|Modificar el texto de un control|**F2** ( **Esc** para salir)|
+|Modificar el texto de un control|**F2** (**Esc** para salir)|
 |Editar un control (WPF)|**Ctrl**+**E**|
 |Igualar el ancho de los objetos seleccionados|**Ctrl** + **Desplazamiento** + **1**|
 |Igualar el alto de los objetos seleccionados|**Ctrl** + **Desplazamiento** + **2**|
@@ -73,7 +73,7 @@ ms.locfileid: "93049241"
 |Desplazar los objetos seleccionados|Teclas de **Dirección**|
 |Ajustar ancho automáticamente|**Ctrl** + **Desplazamiento** + **5**|
 |Ajustar alto automáticamente|**Ctrl** + **Desplazamiento** + **6**|
-|Agrupar objetos en un panel de diseño|**Ctrl** + **G**|
+|Agrupar objetos en un panel de diseño|**Ctrl**+**G**|
 |Desagrupar objetos|**Ctrl** + **Desplazamiento** + **G**|
 |Traer al frente el objeto seleccionado|**Ctrl** + **Desplazamiento** + **]**|
 |Traer adelante|**Ctrl** + **]**|
@@ -90,14 +90,14 @@ ms.locfileid: "93049241"
 |Desbloquear todos los objetos|**Ctrl** + **Desplazamiento** + **L**|
 |Mostrar selección|**Ctrl**+**T**|
 |Ocultar selección|**Ctrl** + **3**|
-|Seleccionar todos los objetos|**Ctrl** + **Un**|
+|Seleccionar todos los objetos|**Ctrl**+**A**|
 |Desactivar la selección de todos los objetos|**Ctrl** + **Desplazamiento** + **Un**|
 
 ## <a name="view-shortcuts"></a>Métodos abreviados de vistas
 
-|Para|Haga esto|
+|Para hacer esto|Haga esto|
 |----------------|-------------|
-|Cambiar entre las vistas **Diseño** , **Código** y **Dos paneles**|**F11**|
+|Cambiar entre las vistas **Diseño**, **Código** y **Dos paneles**|**F11**|
 |Acercar en la mesa de trabajo|**Ctrl** + **Signo igual** ( **=** )|
 |Alejar en la mesa de trabajo|**Ctrl** + Signo **menos** ( **-** )|
 |Acercar o alejar en la mesa de trabajo|Girar la rueda del mouse|
@@ -107,11 +107,11 @@ ms.locfileid: "93049241"
 |Ver la mesa de trabajo a tamaño real|**Ctrl** + **1**|
 |Mostrar u ocultar manipuladores|**F9**|
 |Mostrar u ocultar los límites de los objetos|**Ctrl**+**Mayús**+**H**|
-|Cambiar entre las vistas **Diseño** , **XAML** y **Dos paneles**|**F11**|
+|Cambiar entre las vistas **Diseño**, **XAML** y **Dos paneles**|**F11**|
 
 ## <a name="workspace-shortcuts"></a>Métodos abreviados del área de trabajo
 
-|Para|Haga esto|
+|Para hacer esto|Haga esto|
 |----------------|-------------|
 |Cambiar entre las áreas de trabajo **Animación** y **Diseño**|**Ctrl** + **F11**|
 |Mostrar u ocultar el panel **Activos**|**Ctrl** + **Período** de|

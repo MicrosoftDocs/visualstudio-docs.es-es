@@ -25,20 +25,20 @@ helpviewer_keywords:
 ms.assetid: 09d6a1e0-60f8-4fbd-843b-8e49ee3115a3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e7896fa2d39bafc793c5fd74f66f4991cf5e8461
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 1e716c0e9ebe88a8007296f1dad870424a0def0b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382954"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881118"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;Dependency &gt; (elemento, aplicación ClickOnce)
 Identifica una dependencia de plataforma o ensamblado necesaria para la aplicación.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ```xml
 
@@ -168,7 +168,7 @@ Identifica una dependencia de plataforma o ensamblado necesaria para la aplicaci
 ### <a name="dsigdigestvalue"></a>dsig:DigestValue
  El `dsig:DigestValue` elemento es un elemento secundario necesario del `hash` elemento. El elemento `dsig:DigestValue` no tiene atributos. Su valor de texto es el hash calculado para el archivo especificado.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Notas
  Todos los ensamblados utilizados por la aplicación deben tener un `dependency` elemento correspondiente. Los ensamblados dependientes no incluyen ensamblados que deben preinstalarse en la caché global de ensamblados como ensamblados de plataforma.
 
 ## <a name="example"></a>Ejemplo
@@ -220,4 +220,4 @@ Identifica una dependencia de plataforma o ensamblado necesaria para la aplicaci
 
 ## <a name="see-also"></a>Vea también
 - [Manifiesto de aplicación ClickOnce](../deployment/clickonce-application-manifest.md)
-- [\<dependency> Element](../deployment/dependency-element-clickonce-deployment.md)
+- [Elemento \<dependency>](../deployment/dependency-element-clickonce-deployment.md)

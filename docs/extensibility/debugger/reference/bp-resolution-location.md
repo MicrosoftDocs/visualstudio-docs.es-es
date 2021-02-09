@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 21dc5246-69c1-43e3-855c-9cd4e596c0e6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4b11d80e90daec19a14ca509e5a4b9bdb2d1ced4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c2032c15430fb4038ecdeab2050b47a59c932c4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737812"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881079"
 ---
 # <a name="bp_resolution_location"></a>BP_RESOLUTION_LOCATION
 Especifica la estructura de la ubicación de resolución del punto de interrupción.
@@ -48,7 +48,7 @@ public struct BP_RESOLUTION_LOCATION {
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 `bpType`\
 Un valor de la enumeración [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) que especifica cómo interpretar la `bpResLocation` Unión o `unionmemberX` los miembros.
 
@@ -73,7 +73,7 @@ Un valor de la enumeración [BP_TYPE](../../../extensibility/debugger/reference/
 `unionmember4`\
 [Solo C#] Vea los comentarios sobre cómo interpretar.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Esta estructura es miembro de las estructuras [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) y [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) .
 
  [Solo C#] Los `unionmemberX` miembros se interpretan según la tabla siguiente. Busque en la columna izquierda el `bpType` valor que se muestra a continuación para determinar lo que `unionmemberX` representa cada miembro y calcular las referencias en `unionmemberX` consecuencia. Vea el ejemplo para obtener una manera de interpretar esta estructura en C#.

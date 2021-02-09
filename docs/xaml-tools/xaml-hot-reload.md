@@ -8,15 +8,15 @@ helpviewer_keywords:
 - xaml hot reload
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 25819d8d691836c12c73d9d76e334e36d50b83b4
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 11257561deecdbce4606207c3d59012a6d7c3d09
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668877"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880325"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Escritura y depuración de código XAML en ejecución con Recarga activa de XAML en Visual Studio
 
@@ -66,7 +66,7 @@ Es posible que se produzcan los siguientes errores al usar la recarga activa de 
 |Error al comprobar el evento|Error indica que está intentando conectar un evento a uno de los controles, lo que no se admite mientras la aplicación se está ejecutando.|
 |Este cambio no es compatible con la recarga activa de XAML y no se aplicará durante la sesión de depuración.|Error indica que el cambio que está intentando no es compatible con la recarga activa de XAML. Detenga la sesión de depuración, realice el cambio y, a continuación, reinicie la sesión de depuración. Si encuentra un escenario no admitido que le gustaría ver como compatible, use la nueva opción "sugerir una característica" de la comunidad de [desarrolladores de Visual Studio](https://aka.ms/feedback/suggest?space=8). |
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 * [Solución de problemas con la recarga activa de XAML](xaml-hot-reload-troubleshooting.md)
 * [Recarga activa de XAML para Xamarin.Forms](/xamarin/xamarin-forms/xaml/hot-reload)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6b1e1863-0c64-4d85-8ab9-aface522fdea
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e1d15936316d08a712e3d6f3fdc7a3a73be613d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7f7b463b2da9c1e2c93568435b73020550802f98
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734624"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881014"
 ---
 # <a name="idebugbreakpointunboundevent2"></a>IDebugBreakpointUnboundEvent2
 Esta interfaz indica al administrador de depuración de la sesión (SDM) que se ha desenlazado un punto de interrupción enlazado de un programa cargado.
@@ -42,7 +42,7 @@ IDebugBreakpointUnboundEvent2 : IUnknown
 |[GetBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getbreakpoint.md)|Obtiene el punto de interrupción que quedó desenlazado.|
 |[GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)|Obtiene el motivo por el que se desenlaza el punto de interrupción.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Cuando se descarga una DLL o una clase del motor de depuración, todos los puntos de interrupción que se enlazaron al código de ese módulo deben estar desenlazados del programa que se está depurando. `IDebugBreakpointUnboundEvent2`Se envía un para cada punto de interrupción sin enlazar.
 
 ## <a name="requirements"></a>Requisitos
