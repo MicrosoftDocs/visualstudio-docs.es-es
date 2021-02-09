@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 6dcec574-a852-49fa-8c2e-2e71cbb5e3c6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1a36c585a09afbd1dec60e1d4399dca258399ae3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ebb3b16504a76c516408f997486279f52256294f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713410"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850718"
 ---
 # <a name="text_position"></a>TEXT_POSITION
 Describe la ubicación de línea y columna en el texto especificado.
@@ -28,20 +28,20 @@ Describe la ubicación de línea y columna en el texto especificado.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-typedef struct _tagTEXT_POSITION { 
+typedef struct _tagTEXT_POSITION { 
    DWORD dwLine;
    DWORD dwColumn;
 } TEXT_POSITION;
 ```
 
 ```csharp
-public struct TEXT_POSITION { 
+public struct TEXT_POSITION { 
    public uint dwLine;
    public uint dwColumn;
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 `dwLine`\
 Índice de la línea del archivo de código fuente.
@@ -49,7 +49,7 @@ public struct TEXT_POSITION { 
 `dwColumn`\
 Desplazamiento de caracteres en la línea.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 
 Esta estructura se usa en las estructuras [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) y [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) .
 
@@ -83,7 +83,7 @@ Esta estructura se pasa como parámetro a los métodos siguientes:
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)

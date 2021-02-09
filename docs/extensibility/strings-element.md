@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 23a42074-a689-481d-824f-b43aa448f266
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f517d350f3383dcaeb99d651872ffb8ed09814fe
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 7951d0c72c3fd6a1897224d9606abdfec9a60053
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715254"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99848017"
 ---
 # <a name="strings-element"></a>Strings (Elemento)
 El elemento Strings debe contener al menos un elemento secundario **ButtonText** . Todos los demás elementos secundarios son opcionales. Los caracteres XML no válidos, como ' & ' y ' < ', deben codificarse como entidades (' &amp; ' y ' ', etc &lt; .).
@@ -62,5 +62,5 @@ El elemento Strings debe contener al menos un elemento secundario **ButtonText**
 |[Menu (Elemento)](../extensibility/menu-element.md)|Define un elemento de menú único.|
 |[Combo (Elemento)](../extensibility/combo-element.md)|Define comandos que aparecen en un cuadro combinado.|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Archivos de tabla de comandos de Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

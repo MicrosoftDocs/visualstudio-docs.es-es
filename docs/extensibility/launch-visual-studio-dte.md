@@ -7,15 +7,15 @@ ms.date: 04/26/2019
 ms.topic: conceptual
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c84d44b3f775f384ed15a0ede1ef9c68ad2fd5a6
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: b2c3703cf0e95b83492f1cb50548d9a90336e34a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97615882"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99848148"
 ---
 # <a name="launch-visual-studio-using-dte"></a>Inicio de Visual Studio con DTE
 
@@ -187,7 +187,7 @@ namespace ConsoleLauncherApp
 }
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Localización de Visual Studio](locating-visual-studio.md)
 - [Tutorial: acceso al objeto DTE desde una extensión de editor](walkthrough-accessing-the-dte-object-from-an-editor-extension.md)

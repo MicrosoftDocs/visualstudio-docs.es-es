@@ -8,16 +8,16 @@ ms.topic: how-to
 ms.assetid: 8ca07b00-a3ff-40ab-b647-c0a93b55e86a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 58d802ad97018a3d84e2b6a9f5e759db3a7cb2e3
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 39efb082f8a551ea016e856ba45c9dbb4e8eed0c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993970"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850705"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Cómo: migrar proyectos de extensibilidad a Visual Studio 2017
 
@@ -173,7 +173,7 @@ Al buscar las dependencias, verá que una dependencia podría asignarse a varios
 
 Para proporcionar más instrucciones, hemos identificado algunos tipos de extensión comunes y sus requisitos previos sugeridos:
 
-Tipo de extensión | Nombre para mostrar | Id.
+Tipo de extensión | Display Name (Nombre para mostrar) | ID
 --- | --- | ---
 Editor | Editor de núcleo de Visual Studio | Microsoft.VisualStudio.Component.CoreEditor
 Roslyn | C# y Visual Basic | Microsoft.VisualStudio.Component.Roslyn.LanguageServices

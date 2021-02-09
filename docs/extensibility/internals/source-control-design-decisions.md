@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5f60ec1a-5a74-4362-8293-817a4dd73872
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98e84167bc9cbbcad41b897c2de69115c6827ca5
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: b7335e3c5b15365680d70486f5f8ec8d19e90af4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875523"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846496"
 ---
 # <a name="source-control-design-decisions"></a>Decisiones de diseño del control de código fuente
 Se deben tener en cuenta las siguientes decisiones de diseño para los proyectos de al implementar el control de código fuente.
@@ -36,7 +36,7 @@ Se deben tener en cuenta las siguientes decisiones de diseño para los proyectos
 
 3. Cuando el proyecto o el editor llama a <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> un archivo, los archivos especiales asociados a ese archivo no se desprotegen automáticamente. Pase los archivos especiales en junto con el archivo primario. El entorno detectará la relación entre todos los archivos que se pasan y ocultan correctamente los archivos especiales en la interfaz de usuario de desprotección.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>

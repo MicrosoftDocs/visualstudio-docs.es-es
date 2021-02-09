@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 0bdb1152-4752-4464-ae7c-6d666dc293b7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f933baed55216054ecfec3b3b4c29f15da652ba4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8ddcab108891526b64a101a471aaff2370d072f6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730054"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846860"
 ---
 # <a name="idebugerrorbreakpointresolution2getbreakpointtype"></a>IDebugErrorBreakpointResolution2::GetBreakpointType
 Obtiene el tipo de punto de interrupción.
@@ -46,7 +46,7 @@ enuncia Devuelve un valor de la enumeración [BP_TYPE](../../../extensibility/de
 ## <a name="return-value"></a>Valor devuelto
 Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Este método devuelve el tipo del punto de interrupción que no se pudo enlazar, lo que requiere un evento de punto de interrupción de error.
 
 ## <a name="example"></a>Ejemplo

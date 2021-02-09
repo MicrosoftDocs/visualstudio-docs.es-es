@@ -2,17 +2,17 @@
 title: Construcción de cadenas de filtro para el diseñador de tablas | Microsoft Docs
 description: Construcción de cadenas de filtro para el Diseñador de tablas
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: 288e4256a472eb7bbc692758ad81df68be507676
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: cdfcacf38239e896687a236624bb167573f4bd1f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901926"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846210"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>Construcción de cadenas de filtro para el Diseñador de tablas
 ## <a name="overview"></a>Información general
@@ -31,9 +31,9 @@ Los siguientes operadores lógicos se admiten para todos los tipos de propiedade
 | lt |Menor que |Precio lt 20 |
 | le |Menor o igual que |Precio le 100 |
 | ne |No igual a |Ciudad ne 'Londres' |
-| y |y |Precio le 200 and Precio gt 3,5 |
+| y |And |Precio le 200 and Precio gt 3,5 |
 | or |Or |Precio 3,5 or Precio gt 200 |
-| not |not |not isAvailable |
+| not |Not |not isAvailable |
 
 Al construir una cadena de filtro, las siguientes reglas son importantes:
 

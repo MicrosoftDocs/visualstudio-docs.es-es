@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Office applications [Office development in Visual Studio], UI customization
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 289b055ab84dd9c2c440b55f3d64fe1fe39b8e1b
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: ed604b1bbbfcd5b217935b541325c121d521e878
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527584"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99849819"
 ---
 # <a name="office-ui-customization"></a>Personalización de la interfaz de usuario de Office
   Puede personalizar la interfaz de usuario (UI) de las aplicaciones de Microsoft Office mediante el uso de las herramientas de desarrollo de Office en Visual Studio. En este tema se describen las características de la interfaz de usuario que se pueden personalizar en las secciones siguientes:
@@ -97,7 +97,7 @@ ms.locfileid: "97527584"
 ## <a name="shortcut-menus"></a><a name="Shortcut"></a> Menús contextuales
  Cuando hace clic en un documento o una ventana de aplicación, se muestra un menú contextual. Puede establecer que aparezca un menú contextual después de que tenga lugar un evento, como, por ejemplo, cuando un usuario hace clic con el botón derecho en un documento, libro o control host. Puede agregar diversos comandos de menú o controles a un menú contextual. Cree menús contextuales mediante XML. Si agrega un elemento **cinta (XML)** al proyecto de Office, puede Agregar XML al archivo XML de la cinta de opciones para crear menús contextuales. Para obtener más información sobre el uso de XML para crear menús contextuales, vea [Cómo: agregar comandos a menús contextuales](../vsto/how-to-add-commands-to-shortcut-menus.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Información general sobre la cinta](../vsto/ribbon-overview.md)
 - [Información general sobre los controles de Windows Forms en documentos de Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
 - [Información general del panel de acciones](../vsto/actions-pane-overview.md)

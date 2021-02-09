@@ -14,15 +14,15 @@ helpviewer_keywords:
 - workbooks, ranges
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 168774f031e992db62b4173bd8d27652aa21b82f
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: ce099c7cf531e4fa9acfe725959023e579577c8a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526910"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847445"
 ---
 # <a name="work-with-ranges"></a>Trabajar con rangos
   Las clases <xref:Microsoft.Office.Tools.Excel.NamedRange> y <xref:Microsoft.Office.Interop.Excel.Range> contienen los métodos y las propiedades que se usan para llevar a cabo tareas con rangos.
@@ -42,7 +42,7 @@ ms.locfileid: "97526910"
 
  En algunos casos, los métodos con los que lleva a cabo estas tareas en los complementos de VSTO son distintos de los métodos con los que las lleva a cabo en las personalizaciones de nivel de documento.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Automatizar Excel usando objetos extendidos](../vsto/automating-excel-by-using-extended-objects.md)
 - [Trabajar con hojas de cálculo](../vsto/working-with-worksheets.md)
 - [Trabajar con libros](../vsto/working-with-workbooks.md)

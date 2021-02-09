@@ -16,15 +16,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, workflow initiation forms
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 62501a23695b81ee0437d3210dced7c81f9b054e
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: cb759b155b119c29f20a39cdbf35338ec5a305b9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95970437"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847744"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Tutorial: Creación de un flujo de trabajo con formularios de asociación e iniciación
   En este tutorial se muestra cómo crear un flujo de trabajo secuencial básico que incorpora el uso de los formularios de asociación e iniciación. Se trata de formularios ASPX que permiten agregar parámetros a un flujo de trabajo cuando el administrador de SharePoint lo asocia primero (el formulario de asociación) y cuando el usuario inicia el flujo de trabajo (el formulario de inicio).
@@ -84,7 +84,7 @@ ms.locfileid: "95970437"
 
 6. En el **Explorador de soluciones**, elija el nodo de proyecto.
 
-7. En la barra de menús, elija **proyecto**  >  **Agregar nuevo elemento**.
+7. En la barra de menús, elija **Proyecto** >  **Agregar nuevo elemento**.
 
 8. En **Visual C#** o **Visual Basic**, expanda el nodo **SharePoint** y, a continuación, elija el nodo **2010** .
 
@@ -448,5 +448,5 @@ ms.locfileid: "95970437"
 - Para obtener más información acerca de los flujos de trabajo de SharePoint, vea [flujos de trabajo en Windows SharePoint Services](/previous-versions/office/developer/sharepoint-2010/ms416312(v=office.14)).
 
 ## <a name="see-also"></a>Vea también
-- [Creación de soluciones de flujo de trabajo de SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)
+- [Soluciones de flujo de trabajo de SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)
 - [Tutorial: Adición de una página de aplicación a un flujo de trabajo](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)

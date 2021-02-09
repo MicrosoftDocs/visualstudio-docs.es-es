@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], designing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cc214e98b2ec0ed6feb31c9aaa6e8170b3ddd2c8
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 02a0eb7c9279aef1fd2821d44a6f3cc4a0008356
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96913989"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847757"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>Tutorial: Creación de un elemento web para SharePoint mediante un diseñador
 
@@ -69,7 +69,7 @@ En primer lugar, cree un proyecto de elemento Web mediante la plantilla de proye
 
 Diseñe el elemento Web agregando controles desde el **cuadro de herramientas** a la superficie del diseñador de Visual Web Developer.
 
-1. En el diseñador de Visual Web Developer, elija la pestaña **diseño** para cambiar a vista de diseño.
+1. En el diseñador de Visual Web Developer, elija la pestaña **diseño** para cambiar a vista Diseño.
 
 2. En la barra de menús, elija **Ver**  >  **cuadro de herramientas**.
 
@@ -187,7 +187,7 @@ En el elemento Web, especifique los calendarios que desee incluir en la vista de
 
 Los eventos de todos los calendarios que especificó aparecen en la vista de calendario mensual.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Crear elementos Web para SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md) 
  [Cómo: crear un elemento](../sharepoint/how-to-create-a-sharepoint-web-part.md) 

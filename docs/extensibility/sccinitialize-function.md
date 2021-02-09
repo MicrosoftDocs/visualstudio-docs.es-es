@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5bc0d28b-2c68-4d43-9e51-541506a8f76e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 661e0a24fa1d222079fd5ee728c5f42a5386c75b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d9fb944cb672249ecb823f48048d12c1b61d9e99
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700640"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846366"
 ---
 # <a name="sccinitialize-function"></a>SccInitialize (Función)
 Esta función inicializa el complemento de control de código fuente y proporciona capacidades y límites al entorno de desarrollo integrado (IDE).
@@ -80,7 +80,7 @@ enuncia Devuelve la longitud máxima permitida para otros comentarios.
 |SCC_E_NOTAUTHORIZED|No se permite al usuario realizar la operación especificada.|
 |SCC_E_NONSPECFICERROR|Error no específico; no se inicializó el sistema de control de código fuente.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  El IDE llama a esta función cuando se carga por primera vez el complemento de control de código fuente. Permite al IDE pasar determinada información, como el nombre del autor de la llamada, al complemento. El IDE también recibe cierta información como la longitud máxima permitida para los comentarios y las capacidades del complemento.
 
  `ppvContext`Apunta a un `NULL` puntero. El complemento de control de código fuente puede asignar una estructura para su propio uso y almacenar un puntero a esa estructura en `ppvContext` . El IDE pasará este puntero a todas las demás funciones de la API de VSSCI, lo que permite que el complemento tenga información de contexto disponible sin tener que recurrir al almacenamiento global y admitir varias instancias del complemento. Esta estructura debe desasignarse cuando se llama a [SccUninitialize](../extensibility/sccuninitialize-function.md) .

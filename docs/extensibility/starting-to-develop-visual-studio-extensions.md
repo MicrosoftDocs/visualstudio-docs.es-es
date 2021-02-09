@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 8fe5e2ab-a424-4173-9d39-dd082c4d58d0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: da8bd850413d32e5453b7dc312e863832e5f5218
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 8c45ff8b0fd2328a6398f844dc1416decc0ea591
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715267"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99848089"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Comienzo del desarrollo de extensiones de Visual Studio
 
@@ -95,7 +95,7 @@ En la práctica, hemos descubierto que las características que la mayoría de l
 
  También puede publicar su extensión en el Visual Studio Marketplace, lo que hace que sea visible para un gran número de clientes de Visual Studio. Para obtener un ejemplo de cómo empaquetar una extensión en Marketplace, vea [Tutorial: publicar una extensión de Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Para obtener más información sobre lo que debe hacer para publicar en Marketplace, consulte [Products and Extensions for Visual Studio](/azure/devops/extend/overview?view=vsts&preserve-view=true).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Extender Visual Studio para Mac](/visualstudio/mac/extending-visual-studio-mac)
 - [Extender Visual Studio Code](https://code.visualstudio.com/api)

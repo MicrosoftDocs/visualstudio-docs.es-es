@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.assetid: d5378c59-e2e5-49f0-91f1-aa82d984a33c
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c29e2a4718a10193a4c86d1485549ded6ae2c0e
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 2e815b3e4959727dab282fcbe0fcd1f82890bf8b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796802"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847354"
 ---
 # <a name="draw-shapes-and-paths"></a>Dibujar formas y trazados
 
@@ -26,7 +26,7 @@ Las formas y los trazados usan gráficos vectoriales, por lo que se adaptan bien
 
 ## <a name="draw-a-shape"></a>Dibujar una forma
 
-Busque formas en la ventana **Recursos** .
+Busque formas en la ventana **Recursos**.
 
 :::image type="content" source="media/blend-shapes.png" alt-text="Captura de pantalla de la categoría formas de la ventana activos en Blend para Visual Studio":::
 
@@ -36,13 +36,13 @@ Arrastre la forma que desee a la mesa de trabajo. Después, use los controladore
 
 ## <a name="draw-a-path"></a>Dibujar un trazado
 
-Un trazado se compone de varias líneas y curvas conectadas. Use un trazado para crear formas interesantes que no están disponibles en la ventana **Recursos** .
+Un trazado se compone de varias líneas y curvas conectadas. Use un trazado para crear formas interesantes que no están disponibles en la ventana **Recursos**.
 
-Los trazados se pueden dibujar con una línea, una pluma o un lápiz, Puede encontrar estas herramientas en la ventana **Herramientas** .
+Los trazados se pueden dibujar con una línea, una pluma o un lápiz, Puede encontrar estas herramientas en la ventana **Herramientas**.
 
 ### <a name="draw-a-straight-line"></a>Dibujar una línea recta
 
-Use la herramienta **Pluma** o la herramienta **Línea** .
+Use la herramienta **Pluma** o la herramienta **Línea**.
 
 **Uso de la herramienta Pluma**
 
@@ -54,7 +54,7 @@ En la mesa de trabajo, arrastre desde el punto en el que desea que empiece la l�
 
 ### <a name="draw-a-curve"></a>Dibujar una curva
 
-Use la herramienta **Pluma** .
+Use la herramienta **Pluma**.
 
 En la mesa de trabajo, haga clic una vez para definir el punto inicial de una línea y, a continuación, haga clic y arrastre el puntero para crear la curva deseada.
 
@@ -62,19 +62,19 @@ Si desea cerrar el trazado, haga clic en el primer punto en la línea.
 
 ### <a name="change-the-shape-of-a-curve"></a>Cambiar la forma de una curva
 
-Use la herramienta **Selección directa** .
+Use la herramienta **Selección directa**.
 
 Haga clic en la forma y después arrastre cualquier punto de la forma para cambiar la curva.
 
 ### <a name="draw-a-free-form-path"></a>Dibujar un trazado de forma libre
 
-Use la herramienta **Lápiz** .
+Use la herramienta **Lápiz**.
 
 En la mesa de trabajo, dibuje un trazado de forma libre como si estuviera usando un lápiz real.
 
 ### <a name="remove-part-of-a-path"></a>Quitar parte de un trazado
 
-Use la herramienta **Selección directa** .
+Use la herramienta **Selección directa**.
 
 Seleccione el trazado que contiene el segmento que desea eliminar y después haga clic en el botón **Eliminar** .
 
@@ -88,7 +88,7 @@ Use la herramienta **Selección** para seleccionar el trazado. Use la herramient
 
 ## <a name="convert-a-shape-to-a-path"></a>Convertir una forma en un trazado
 
-Para modificar una forma de la misma forma que se modifica un trazado, convierta la forma en un trazado. Seleccione la forma y, a continuación, seleccione **Format**  >  **path**  >  **convertir en trazado** .
+Para modificar una forma de la misma forma que se modifica un trazado, convierta la forma en un trazado. Seleccione la forma y, a continuación, seleccione **Format**  >  **path**  >  **convertir en trazado**.
 
 **Vea un vídeo corto:** ![Configurar las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.png) [Trabajar con trazados: convertir una forma en un trazado](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).
 

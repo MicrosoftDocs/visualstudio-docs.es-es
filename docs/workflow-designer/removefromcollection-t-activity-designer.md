@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 6617ba26-c8bc-4aed-b746-112bf490d288
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 069640dccf185f2f2c738efdde6a2311352a04b6
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 9fdaf7172c00d80e5e7615bfcadcc1fb6233c257
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996102"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847367"
 ---
 # <a name="removefromcollectiont-activity-designer"></a>Diseñador de actividad RemoveFromCollection\<T>
 
@@ -38,13 +38,13 @@ En la tabla siguiente se muestran las <xref:System.Activities.Statements.RemoveF
 
 |Nombre de propiedad|Obligatorio|Uso|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|Falso|El nombre descriptivo opcional de la actividad de la clase <xref:System.Activities.Statements.RemoveFromCollection%601>. El valor predeterminado es RemoveFromCollection<Int32 \> .<br /><br /> Aunque el valor de la propiedad <xref:System.Activities.Activity.DisplayName%2A> no sea obligatorio, el procedimiento recomendado es usar uno.|
-|<xref:System.Activities.Statements.RemoveFromCollection%601.Item%2A>|Verdadero|Elemento que se va a quitar de la **colección \<T>**. Este elemento es de tipo *T*, que es de tipo *TypeArgument*. Para especificar el elemento, escriba una expresión de Visual Basic en la cuadrícula de propiedades.|
-|<xref:System.Activities.Statements.RemoveFromCollection%601.Collection%2A>|Verdadero|Colección de la que se debe quitar el elemento. Esta colección es de tipo **ICollection<TypeArgument \> .** Para especificar la colección, escriba una expresión de Visual Basic en la cuadrícula de propiedades.|
-|*TypeArgument*|Verdadero|El tipo T de los elementos que se incluyen en la interfaz <xref:System.Collections.Generic.ICollection%601>. De forma predeterminada, este tipo *TypeArgument* se establece en **Int32**. Para cambiar el tipo, cambie el valor de *TypeArgument* en el cuadro combinado en la cuadrícula de propiedades.|
-|<xref:System.Activities.Activity%601.Result%2A>|Falso|Un valor que indica si el elemento especificado se quitó de la colección. Para especificar una variable que se vaya a enlazar al resultado, escriba una variable en la cuadrícula de propiedades.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|El nombre descriptivo opcional de la actividad de la clase <xref:System.Activities.Statements.RemoveFromCollection%601>. El valor predeterminado es RemoveFromCollection<Int32 \> .<br /><br /> Aunque el valor de la propiedad <xref:System.Activities.Activity.DisplayName%2A> no sea obligatorio, el procedimiento recomendado es usar uno.|
+|<xref:System.Activities.Statements.RemoveFromCollection%601.Item%2A>|True|Elemento que se va a quitar de la **colección \<T>**. Este elemento es de tipo *T*, que es de tipo *TypeArgument*. Para especificar el elemento, escriba una expresión de Visual Basic en la cuadrícula de propiedades.|
+|<xref:System.Activities.Statements.RemoveFromCollection%601.Collection%2A>|True|Colección de la que se debe quitar el elemento. Esta colección es de tipo **ICollection<TypeArgument \> .** Para especificar la colección, escriba una expresión de Visual Basic en la cuadrícula de propiedades.|
+|*TypeArgument*|True|El tipo T de los elementos que se incluyen en la interfaz <xref:System.Collections.Generic.ICollection%601>. De forma predeterminada, este tipo *TypeArgument* se establece en **Int32**. Para cambiar el tipo, cambie el valor de *TypeArgument* en el cuadro combinado en la cuadrícula de propiedades.|
+|<xref:System.Activities.Activity%601.Result%2A>|False|Un valor que indica si el elemento especificado se quitó de la colección. Para especificar una variable que se vaya a enlazar al resultado, escriba una variable en la cuadrícula de propiedades.|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Colección](../workflow-designer/collection-activity-designers.md)
 - [AddToCollection\<T>](../workflow-designer/addtocollection-t-activity-designer.md)

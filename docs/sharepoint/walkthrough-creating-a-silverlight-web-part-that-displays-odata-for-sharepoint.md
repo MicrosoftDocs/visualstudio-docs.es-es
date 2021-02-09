@@ -12,15 +12,15 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fdfd510aaea8d09ac20546344f4bbba18bd5f99b
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: ee35ecc9cfa49f445e93677df9d2917150bc1e74
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914795"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847835"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Tutorial: crear un elemento Web de Silverlight que muestre OData para SharePoint
   SharePoint 2010 expone sus datos de lista por medio de OData. En SharePoint, el servicio de OData se implementa mediante el servicio RESTful ListData. SVC. En este tutorial se muestra cómo crear un elemento Web de SharePoint que hospeda una aplicación de Silverlight. La aplicación de Silverlight muestra información de la lista de anuncios de SharePoint mediante ListData. SVC. Para obtener más información, vea [interfaz de REST de SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ff521587(v=office.14)) y [Open Data Protocol](https://www.odata.org/).
@@ -233,6 +233,6 @@ ms.locfileid: "96914795"
     > [!NOTE]
     > Al tener acceso a los datos de Silverlight entre dominios, Silverlight protege frente a las vulnerabilidades de seguridad que se pueden usar para aprovechar las aplicaciones Web. Si tiene problemas al obtener acceso a datos remotos en Silverlight, consulte [hacer que un servicio esté disponible a través](/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc197955(v=vs.95))de los límites del dominio.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Creación de elementos web para SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)
 - [Implementar, publicar y actualizar paquetes de soluciones de SharePoint](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c1e31f76-42a1-4c3d-afb2-664044ef12fd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a99d64873018885c35c066f05e6a3a8919868d72
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 2e6ded8a5d43226a5c37eef1e0ba5ec32e2720f1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715319"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847939"
 ---
 # <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>Cadenas usadas como claves para buscar un complemento de control de código fuente
 Las siguientes cadenas son las claves para tener acceso al registro para buscar información sobre el complemento de control de código fuente.
@@ -28,7 +28,7 @@ Las siguientes cadenas son las claves para tener acceso al registro para buscar 
 
 ## <a name="string-keys-and-values"></a>Claves y valores de cadena
 
-|Clave|Valor|
+|Key|Value|
 |---------|-----------|
 |`STR_SCC_PROVIDER_REG_LOCATION`|Software\SourceCodeControlProvider|
 |`STR_PROVIDERREGKEY`|ProviderRegKey|

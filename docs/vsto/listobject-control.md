@@ -17,15 +17,15 @@ helpviewer_keywords:
 - ListObject control, improving performance when bound to data
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1a80b56134f59975a39d24e824b6c83b2513b163
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: becc4ab189c0f871cc3ed1284bd26a0411b30184
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526602"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99849806"
 ---
 # <a name="listobject-control"></a>ListObject (control)
   El control <xref:Microsoft.Office.Tools.Excel.ListObject> es una lista que expone eventos y se puede enlazar a datos. Al agregar una lista a una hoja de cálculo, Visual Studio crea un control <xref:Microsoft.Office.Tools.Excel.ListObject> que se puede programar directamente sin tener que recorrer el modelo de objetos de Microsoft Office Excel.
@@ -78,7 +78,7 @@ ms.locfileid: "97526602"
 ## <a name="rename-listobject-controls-in-excel"></a>Cambiar el nombre de los controles ListObject en Excel
  Excel permite a los usuarios cambiar el nombre de las tablas de Excel en tiempo de ejecución mediante la pestaña **diseño** . Sin embargo, el <xref:Microsoft.Office.Tools.Excel.ListObject> control no admite esta característica. Si un usuario intenta cambiar el nombre de una tabla de Excel que corresponde a un <xref:Microsoft.Office.Tools.Excel.ListObject>, el nombre de la tabla de Excel se revertirá automáticamente al nombre original cuando se guarde el libro.
 
-## <a name="events"></a>Eventos
+## <a name="events"></a>Events
  Los eventos siguientes están disponibles para el control <xref:Microsoft.Office.Tools.Excel.ListObject> :
 
 - <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow>
@@ -109,7 +109,7 @@ ms.locfileid: "97526602"
 
 - <xref:Microsoft.Office.Tools.Excel.ListObject.SelectionChange>
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Automatizar Excel usando objetos extendidos](../vsto/automating-excel-by-using-extended-objects.md)
 - [Cómo: agregar controles ListObject a hojas de cálculo](../vsto/how-to-add-listobject-controls-to-worksheets.md)
 - [Cómo: cambiar el tamaño de los controles ListObject](../vsto/how-to-resize-listobject-controls.md)

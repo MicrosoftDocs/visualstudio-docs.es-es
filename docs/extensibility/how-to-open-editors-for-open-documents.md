@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1a0fa49c-efa4-4dcc-bdc0-299b7052acdc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d329ce7b4f4b74b8ff77357393ffe9383a3977e
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 45cd616a58f51a532883eeba37f06c4eb73bd72d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993866"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850679"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>Cómo: abrir editores para documentos abiertos
 Antes de que un proyecto abra una ventana de documento, el proyecto debe determinar primero si el archivo ya está abierto en la ventana de documento de otro editor. El archivo puede estar abierto en un editor específico del proyecto o en uno de los editores estándar registrados con [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
@@ -27,7 +27,7 @@ Antes de que un proyecto abra una ventana de documento, el proyecto debe determi
 
 ### <a name="to-open-a-project-specific-editor-for-an-open-file"></a>Para abrir un editor específico del proyecto para un archivo abierto
 
-1. Llame al método <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>.
+1. Llame al método <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A> .
 
     Esta llamada devuelve punteros a la jerarquía del documento, al elemento de la jerarquía y al marco de la ventana, si procede.
 
@@ -54,7 +54,7 @@ Antes de que un proyecto abra una ventana de documento, el proyecto debe determi
 
 2. Si el documento no está abierto, siga los pasos descritos en [Cómo: abrir editores estándar](../extensibility/how-to-open-standard-editors.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Abrir y guardar elementos de proyecto](../extensibility/internals/opening-and-saving-project-items.md)
 - [Cómo: abrir editores específicos del proyecto](../extensibility/how-to-open-project-specific-editors.md)
 - [Cómo: abrir editores estándar](../extensibility/how-to-open-standard-editors.md)

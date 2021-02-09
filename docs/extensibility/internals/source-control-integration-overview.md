@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3a46e4eb-e677-49c3-8647-d927d035a19a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6bbd385c7089504949d2437091b0a2ea002fafdd
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 7f3b0ddf956c3f5c2ec2fe51163b52f2a7a973aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876017"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846431"
 ---
 # <a name="source-control-integration-overview"></a>Información general de la integración del control de código fuente
 En esta sección se comparan las dos maneras de integrar en el control de código fuente de Visual Studio; Complemento de control de código fuente y VSPackage que proporciona una solución de control de código fuente y resalta las nuevas características de control de código fuente. Visual Studio permite cambiar manualmente entre los paquetes VSPackage de control de código fuente y los complementos de control de código fuente, así como la conmutación automática basada en la solución.
@@ -75,7 +75,7 @@ En esta sección se comparan las dos maneras de integrar en el control de códig
 
 - El VSPackage no se limita a un modelo de control de código fuente determinado.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Control de código fuente](../../extensibility/internals/source-control.md)
 - [Creación de un complemento de control de código fuente](../../extensibility/internals/creating-a-source-control-plug-in.md)
 - [Creación de un VSPackage de control de código fuente](../../extensibility/internals/creating-a-source-control-vspackage.md)
