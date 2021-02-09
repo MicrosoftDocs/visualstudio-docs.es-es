@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: e41b21c9-c061-4358-8e2f-eb5e412864a8
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 88516a4160c5236a5a4ef9f01d7f15620aee5cc3
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 3fa7dc307dfef26bb8ab46f0df62f40bc0f4d5c2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993307"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894158"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>Cómo: establecer puntos de interrupción en flujos de trabajo
 
@@ -27,7 +27,7 @@ Un punto de interrupción tiene tres Estados: *pendiente*, *enlazado* y *error*.
 > No se pueden establecer puntos de interrupción en los flujos de trabajo invocados.
 
 > [!NOTE]
-> Asegúrese de seleccionar la opción **Habilitar solo mi código (solo administrado)** en el menú de **Tools**  >  **Options**  >  **depuración** opciones de herramientas antes de depurar. Si la opción no está seleccionada y tiene dos secuencias anidadas dentro de otra, y establece un punto de interrupción en la primera secuencia interna, al presionar **F11** no se depurará en la segunda secuencia interna.
+> Asegúrese de seleccionar la opción **Habilitar solo mi código (solo administrado)** en el menú de   >    >  **depuración** opciones de herramientas antes de depurar. Si la opción no está seleccionada y tiene dos secuencias anidadas dentro de otra, y establece un punto de interrupción en la primera secuencia interna, al presionar **F11** no se depurará en la segunda secuencia interna.
 
 > [!NOTE]
 > No se alcanzan los puntos de interrupción en un flujo de trabajo si la ruta de acceso completa a la propiedad del archivo XAML no es exacta. La ruta de acceso completa al archivo XAML no es exacta después de mover el proyecto o la solución a otra carpeta o a otra máquina. Seleccione **Ctrl** + **S** para guardar y actualizar la propiedad ruta de acceso completa.
@@ -40,7 +40,7 @@ Un punto de interrupción tiene tres Estados: *pendiente*, *enlazado* y *error*.
 
    Como alternativa, puede presionar **F9** después de seleccionar la actividad, o puede hacer clic con el botón secundario en la actividad y seleccionar **punto**  >  de interrupción **Insertar punto de interrupción** en el menú contextual.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Depurar flujos de trabajo con el Diseñador de flujo de trabajo](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)
 - [Depurar XAML con el Diseñador de flujo de trabajo](../workflow-designer/how-to-debug-xaml-with-the-workflow-designer.md)

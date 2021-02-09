@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 235a125e-ebe7-4a98-bf77-86c8558728fb
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4df3a1b4ead644058147473a4f95cf16fe6fc5cc
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: cf8c0fe0b716cecee19c00bb0b300d4ffdc99355
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438105"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894366"
 ---
 # <a name="workflow-project-templates"></a>Plantillas de proyecto de flujo de trabajo
 
@@ -71,7 +71,7 @@ Para obtener un ejemplo de cómo implementar un diseñador de actividad personal
 > [!NOTE]
 > Los diseñadores de actividad personalizados se pueden usar para las actividades personalizadas y para las actividades .NET predeterminadas.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Usar el Diseñador de flujo de trabajo](developing-applications-with-the-workflow-designer.md)
 - [Diseñar flujos de trabajo (.NET Framework)](/dotnet/framework/windows-workflow-foundation/designing-workflows)

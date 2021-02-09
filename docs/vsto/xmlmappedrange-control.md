@@ -13,15 +13,15 @@ helpviewer_keywords:
 - XMLMappedRange control, events
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f3b3fd140787d44cdd8364ce77d5292dfcd83f54
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 2849b815c38555be6b149544bb9d9953fe85ec4b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525891"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894405"
 ---
 # <a name="xmlmappedrange-control"></a>Control XmlMappedRange (
   El <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> control es un intervalo que solo se crea cuando se asigna un elemento de esquema que no es de repetición a una celda de Microsoft Office Excel. Por ejemplo, cuando el `maxOccurs` atributo de un elemento de esquema es igual a 1. Después de que Visual Studio cree el intervalo asignado XML, puede programar directamente sin tener que recorrer el modelo de objetos de Excel. Solo se puede eliminar un <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> control dentro de Excel cuando se quita la asignación del elemento.
@@ -38,7 +38,7 @@ ms.locfileid: "97525891"
 ## <a name="formatting"></a>Aplicación de formato
  Puede aplicar el mismo formato a un <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> control que puede aplicar a un <xref:Microsoft.Office.Interop.Excel.Range> . Esto incluye bordes, fuentes, formato de número y estilos.
 
-## <a name="events"></a>Eventos
+## <a name="events"></a>Events
  Los eventos disponibles para el <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> control son los siguientes:
 
 - <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.BeforeDoubleClick>
@@ -57,7 +57,7 @@ ms.locfileid: "97525891"
 
 - <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.SelectionChange>
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Automatizar Excel usando objetos extendidos](../vsto/automating-excel-by-using-extended-objects.md)
 - [Cómo: agregar controles XmlMappedRange (a hojas de cálculo](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)
 - [Enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md)

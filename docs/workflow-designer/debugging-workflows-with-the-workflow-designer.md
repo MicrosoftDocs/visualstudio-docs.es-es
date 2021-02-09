@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: d71308cf-d464-4536-8711-0d0a8eadb255
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 45219da52cdd1ff87b7243c3cc742bb4c97a74e7
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 0acc0cb0a37543b1462a4d5241eb63706868d372
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435865"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894340"
 ---
 # <a name="debug-workflows-with-the-workflow-designer"></a>Depurar flujos de trabajo con el Diseñador de flujo de trabajo
 
@@ -47,4 +47,4 @@ Generalmente, los flujos de trabajo se depuran de la misma manera que los progra
 
 ## <a name="debug-with-f5"></a>Depurar con F5
 
-Si va a compilar una aplicación de consola de flujos de trabajo, basta con presionar **F5** para iniciar la depuración en la aplicación y el flujo de trabajo. Si va a crear una biblioteca de actividades por sí misma, debe especificar una aplicación host ejecutable como proyecto de inicio. Para establecer un proyecto de inicio en **Explorador de soluciones** , haga clic con el botón derecho en el nombre del proyecto y seleccione **establecer como proyecto de inicio**.
+Si va a compilar una aplicación de consola de flujos de trabajo, basta con presionar **F5** para iniciar la depuración en la aplicación y el flujo de trabajo. Si va a crear una biblioteca de actividades por sí misma, debe especificar una aplicación host ejecutable como proyecto de inicio. Para establecer un proyecto de inicio en **Explorador de soluciones**, haga clic con el botón derecho en el nombre del proyecto y seleccione **establecer como proyecto de inicio**.

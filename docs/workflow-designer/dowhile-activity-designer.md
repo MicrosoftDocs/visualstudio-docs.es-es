@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 948deb35-d72f-462b-bea6-4b119c10a148
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8385fe376f56738d76e066dc172e7b6b516f9a08
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 6e117fcbea0488c4b6a42125971984b86cf78251
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438066"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894262"
 ---
 # <a name="dowhile-activity-designer"></a>Diseñador de actividades DoWhile
 
@@ -29,10 +29,10 @@ En la tabla siguiente se muestran las <xref:System.Activities.Statements.DoWhile
 
 |Nombre de propiedad|Obligatorio|Uso|
 |-|--------------|-|
-|<xref:System.Activities.Statements.DoWhile.Body%2A>|Falso|La actividad que se va a ejecutar mientras se **cumple** la condición. Para agregar la <xref:System.Activities.Statements.DoWhile.Body%2A> actividad, coloque una actividad del cuadro de herramientas en el cuadro **Body** del **DoWhile** diseñador de actividades de la actividad con el texto de la sugerencia "Coloque la actividad aquí".|
-|<xref:System.Activities.Statements.DoWhile.Condition%2A>|True|La condición que se va a evaluar tras cada una de las iteraciones del bucle. Para establecer la <xref:System.Activities.Statements.DoWhile.Condition%2A> propiedad, escriba una expresión de Visual Basic **Condition** en el cuadro condición **del** diseñador de actividades, o en la cuadrícula de propiedades.|
+|<xref:System.Activities.Statements.DoWhile.Body%2A>|False|La actividad que se va a ejecutar mientras se **cumple** la condición. Para agregar la <xref:System.Activities.Statements.DoWhile.Body%2A> actividad, coloque una actividad del cuadro de herramientas en el cuadro **Body** del  diseñador de actividades de la actividad con el texto de la sugerencia "Coloque la actividad aquí".|
+|<xref:System.Activities.Statements.DoWhile.Condition%2A>|True|La condición que se va a evaluar tras cada una de las iteraciones del bucle. Para establecer la <xref:System.Activities.Statements.DoWhile.Condition%2A> propiedad, escriba una expresión de Visual Basic  en el cuadro condición **del** diseñador de actividades, o en la cuadrícula de propiedades.|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [While](../workflow-designer/while-activity-designer.md)
 - [Flujo de control](../workflow-designer/control-flow-activity-designers.md)
