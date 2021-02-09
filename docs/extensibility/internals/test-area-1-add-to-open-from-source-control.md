@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 5b3b5b08-5e9b-41be-ac72-c63957faed22
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 608d3489f657cf38d310e67a17bdd48a529de3e5
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: dbcbc197a610f7caf2a1641a291db18fcea9dbda
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877746"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898322"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>Área de prueba 1: Incorporación y apertura desde el control de código fuente
 Este área de prueba del complemento de control de código fuente cubre la colocación de soluciones o proyectos bajo control de código fuente y su recuperación desde el control de código fuente.
@@ -85,5 +85,5 @@ Este área de prueba del complemento de control de código fuente cubre la coloc
 |Agregar a la solución con un solo proyecto: proyecto único|1. cree una solución con un solo proyecto.<br />2. Agregue la solución al control de código fuente.<br />3. Cierre la solución.<br />4. cree una segunda solución vacía.<br />5. agregar la solución controlada previamente desde el control de código fuente (**archivo**, **control de código fuente**, **Agregar proyecto desde el control de código fuente**).|El proyecto agregado aparece en **Explorador de soluciones** y está protegido.|
 |Agregar a solución: solución agregada al control de código fuente mediante selección|1. cree una solución con un proyecto.<br />2. Agregue solo la solución al control de código fuente como selección. Si este paso se realiza correctamente, continúe con el paso siguiente.<br />3. Cierre la solución.<br />4. cree una nueva solución.<br />5. agregar la solución controlada previamente desde el control de código fuente (**archivo**, **control de código fuente**, **Agregar proyecto desde el control de código fuente**).|`Result from Step 2:`<br /><br /> El proyecto no está bajo control de código fuente.<br /><br /> `Result from Step 5:`<br /><br /> Si la primera solución tenía elementos de la solución, no se pueden agregar desde el control de código fuente, por lo que no aparecen.<br /><br /> El proyecto de la primera solución aparece como no disponible.|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Guía de pruebas para los complementos de control de código fuente](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

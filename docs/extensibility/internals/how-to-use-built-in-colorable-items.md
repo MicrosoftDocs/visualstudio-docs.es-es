@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 5e5f3436-6bad-4fd2-8823-6a30353ba648
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 926cb77fe9477b7dc78c35c2ab58f9b73530e4fa
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: 64738bfe67ccc53970087100cd6c37a9881e6b2a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761015"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898311"
 ---
 # <a name="how-to-use-built-in-colorable-items"></a>Cómo: usar elementos coloreables integrados
 Antes de usar los elementos coloreables integrados, primero debe indicar al entorno de desarrollo integrado (IDE) que no está proporcionando sus propios elementos coloreables personalizados, que en este caso serían <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> objetos. Para ello, establezca una entrada del registro para el servicio de lenguaje.

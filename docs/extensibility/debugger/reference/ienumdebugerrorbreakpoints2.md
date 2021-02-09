@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ffdad73d-969a-45ef-9ad1-7f5d3b814018
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea841a095964b71e301e966bfd0a10c8f7c0c65d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 33ff6805537327b29b1d43b1bf4009b431452fc1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80716887"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896978"
 ---
 # <a name="ienumdebugerrorbreakpoints2"></a>IEnumDebugErrorBreakpoints2
 Esta interfaz enumera los puntos de interrupción de error asociados a un punto de interrupción pendiente.
@@ -45,7 +45,7 @@ IEnumDebugErrorBreakpoints2 : IUnknown
 |[Clonar](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-clone.md)|Crea un enumerador que contiene el mismo estado de enumeración que el enumerador actual.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-getcount.md)|Obtiene el número de puntos de interrupción de error en un enumerador.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Esta interfaz contiene una lista de interfaces [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) , cada una de las cuales describe un punto de interrupción que no se pudo enlazar y por qué no se pudo enlazar. Visual Studio usa la `IEnumDebugErrorBreakpoint2` interfaz para actualizar los puntos de interrupción que se muestran en el IDE.
 
 ## <a name="requirements"></a>Requisitos

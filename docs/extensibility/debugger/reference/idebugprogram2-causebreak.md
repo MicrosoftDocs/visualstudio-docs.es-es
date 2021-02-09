@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 07d353fc-68ab-4297-a18f-3d3c7a80e121
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e96db32d7ba5a01f89530623c949500a265cdb60
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3593dd8d139bbb23cbb8128378399642bee03fdc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723102"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897342"
 ---
 # <a name="idebugprogram2causebreak"></a>IDebugProgram2::CauseBreak
 Solicita que el programa detenga la ejecución la próxima vez que uno de sus subprocesos intente ejecutarse.
@@ -28,8 +28,8 @@ Solicita que el programa detenga la ejecución la próxima vez que uno de sus su
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT CauseBreak( 
-   void 
+HRESULT CauseBreak( 
+   void 
 );
 ```
 
@@ -40,11 +40,11 @@ int CauseBreak();
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Se envía un evento [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) cuando el programa siguiente intenta ejecutar código después de que se llame a este método.
 
  Este método es asincrónico en que el método vuelve inmediatamente sin esperar a que el programa se detenga.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md)

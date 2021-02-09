@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: ce00c5a5-d472-4f45-8776-d77a1fbe9d37
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6292051e6ddf11e3ce4b56648574e0207bb5a41
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: bb59b0342d67ab9118ffcdba74c177106fcceea0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877694"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898119"
 ---
 # <a name="test-area-3-check-outundo-checkout"></a>Área de prueba 3: Extracción del repositorio y cancelación de la operación
 Este área de prueba del complemento de control de código fuente cubre la edición y reversión de los elementos del almacén de versiones a través de los comandos **Desproteger** y **Deshacer desproteger** .
@@ -139,5 +139,5 @@ Cuando el usuario se vuelve a conectar al almacén de versiones, se sincronizan 
 |Deshacer la desprotección de un proyecto después de agregar archivos al proyecto|1. cree un nuevo proyecto y agréguelo al control de código fuente.<br />2. Desproteja el proyecto.<br />3. Agregue un archivo al proyecto.<br />4. deshacer la desprotección del proyecto.|El archivo agregado se quita del proyecto en Explorador de soluciones.<br /><br /> El proyecto ya no está desprotegido.|
 |Deshacer la desprotección de un proyecto después de eliminar archivos del proyecto|1. cree un nuevo proyecto y agréguelo al control de código fuente.<br />2. Desproteja el proyecto.<br />3. eliminar un archivo del proyecto.<br />4. deshacer la desprotección del proyecto.|El archivo eliminado aparece en el proyecto en Explorador de soluciones.<br /><br /> El proyecto ya no está desprotegido.|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Guía de pruebas para los complementos de control de código fuente](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

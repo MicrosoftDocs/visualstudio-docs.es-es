@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 1ca1736a-f554-42e4-a9c7-fe8c3c1717df
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c51885e593fabffab80d11c930100f3cc719dff8
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 14fc4a44a85171d209ec227f20e47775b34be22d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877759"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898265"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>Coloreado de sintaxis en un servicio de lenguaje heredado
 La coloración de la sintaxis es una característica que hace que los distintos elementos de un lenguaje de programación se muestren en un archivo de código fuente con distintos colores y estilos. Para admitir esta característica, debe proporcionar un analizador o un escáner que pueda identificar los tipos de elementos o tokens léxicos en el archivo. Muchos idiomas distinguen las palabras clave, los delimitadores (como paréntesis o llaves) y los comentarios al colorearlos de maneras diferentes.
@@ -146,7 +146,7 @@ namespace TestLanguagePackage
         }
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Características del servicio de lenguaje heredado](../../extensibility/internals/legacy-language-service-features1.md)
 - [Escáner y analizador del servicio de lenguaje heredado](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)
 - [Registro de un servicio de lenguaje heredado](../../extensibility/internals/registering-a-legacy-language-service1.md)

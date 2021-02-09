@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 641197d5-f724-4c06-bc47-2e22dad3fbfb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b02e4b88b22257e7187e334f8c1064b68c6ef49d
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 79141361253df4e1ccaf29ff15332d534ceade84
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901731"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898097"
 ---
 # <a name="supportslanguagedropdown-element-visual-studio-templates"></a>SupportsLanguageDropDown (Elemento, Plantillas de Visual Studio)
 
@@ -61,7 +61,7 @@ Especifica si la plantilla de elementos Web es idéntica para varios idiomas y s
 
  El texto debe ser `true` o `false` , lo que indica si la opción de **idioma** está disponible en el cuadro de diálogo **Agregar nuevo elemento** .
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 
  `SupportsLanguageDropDown` es un elemento opcional. El valor predeterminado es `false`.
 
@@ -95,7 +95,7 @@ Especifica si la plantilla de elementos Web es idéntica para varios idiomas y s
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Crear plantillas de proyecto y de elemento](../ide/creating-project-and-item-templates.md)

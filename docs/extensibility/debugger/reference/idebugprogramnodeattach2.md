@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 46b37ac9-a026-4ad3-997b-f19e2f8deb73
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d527dfcfcd09e4d70adca86436aa56e1852bee70
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 74a25e4eefe260dd61dc951118cdb6390a61b52d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721824"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898498"
 ---
 # <a name="idebugprogramnodeattach2"></a>IDebugProgramNodeAttach2
 Permite que un nodo de programa reciba una notificación de un intento de asociarse al programa asociado.
@@ -41,7 +41,7 @@ IDebugProgramNodeAttach2 : IUnknown
 |------------|-----------------|
 |[OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)|Se adjunta al programa asociado o pospone el proceso de asociación al método [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) .|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Esta interfaz es la alternativa preferida al método [Attach_V7](../../../extensibility/debugger/reference/idebugprogramnode2-attach-v7.md) obsoleto. Todos los motores de depuración siempre se cargan con la `CoCreateInstance` función, es decir, se crean instancias fuera del espacio de direcciones del programa que se está depurando.
 
  Si una implementación anterior del `IDebugProgramNode2::Attach_V7` método simplemente estaba estableciendo el `GUID` del programa que se está depurando, solo es necesario implementar el método [AutoAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) .

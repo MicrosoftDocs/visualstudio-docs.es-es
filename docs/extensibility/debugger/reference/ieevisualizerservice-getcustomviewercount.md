@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: f7b095c2-e538-4352-8cad-d4c6d4f6bdbc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 90f040c4ca0736a0312829d196d0991788357edc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4d4aa1f082351e84348854457506b5428935a903
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718037"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897161"
 ---
 # <a name="ieevisualizerservicegetcustomviewercount"></a>IEEVisualizerService::GetCustomViewerCount
 Este método obtiene el número de visualizadores de tipo disponibles desde este servicio.
@@ -28,14 +28,14 @@ Este método obtiene el número de visualizadores de tipo disponibles desde este
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT GetCustomViewerCount(
-   ULONG* pcelt
+HRESULT GetCustomViewerCount(
+   ULONG* pcelt
 );
 ```
 
 ```csharp
-int GetCustomViewerCount(
-   out uint pcelt
+int GetCustomViewerCount(
+   out uint pcelt
 );
 ```
 
@@ -46,7 +46,7 @@ enuncia Devuelve el número de visualizadores de tipo disponibles.
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 - [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) pasa la solicitud a este método en su compatibilidad con los visualizadores de tipos.
 
 ## <a name="see-also"></a>Vea también

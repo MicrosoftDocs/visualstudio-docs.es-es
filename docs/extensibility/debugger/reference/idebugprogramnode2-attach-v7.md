@@ -9,18 +9,18 @@ helpviewer_keywords:
 - IDebugProgramNode2::Attach
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bdee5b224ae38c3474009aeaf26e783ebc5dd139
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b143477dc558b20a302a54d5baecc64d02d33ea3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722140"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898636"
 ---
 # <a name="idebugprogramnode2attach_v7"></a>IDebugProgramNode2::Attach_V7
 
@@ -60,7 +60,7 @@ de Un valor de la enumeración [ATTACH_REASON](../../../extensibility/debugger/r
 
 Una implementación siempre debe devolver `E_NOTIMPL` .
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 
 > [!WARNING]
 > A partir de Visual Studio 2005, este método ya no se usa y siempre debe devolver `E_NOTIMPL` . Vea la interfaz [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md) para obtener un enfoque alternativo si el nodo del programa debe indicar que no se puede adjuntar o si el nodo del programa simplemente está estableciendo el programa `GUID` . De lo contrario, implemente el método [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) .

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: cbd345c5-ca43-4630-b7a4-85564f4e2090
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98ed765f78a9e7330e5e1d3864c8a91b63239a3f
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 83b869a91b823a2f14823ab65a745a3ef6c0d883
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877707"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898228"
 ---
 # <a name="test-area-2-get-from-source-control"></a>Área de prueba 2: Obtención desde el control de código fuente
 Este área de prueba cubre los casos de prueba para recuperar elementos del almacén de versiones a través del comando get. Estos casos de prueba se pueden aplicar tanto a proyectos web como locales.
@@ -55,5 +55,5 @@ Este área de prueba cubre los casos de prueba para recuperar elementos del alma
 |Obtener un archivo que existe de forma local, igual que la última versión del almacén de versiones|1. cree un nuevo proyecto.<br />2. agregar un elemento al proyecto.<br />3. Coloque el proyecto bajo control de código fuente.<br />4. obtener el elemento (**archivo**, **control de código fuente**, **obtener** \<item> ).|El archivo local no ha cambiado.|
 |Obtener una solución con un proyecto|1. cree una solución con un proyecto.<br />2. Coloque la solución bajo control de código fuente.<br />3. Elimine todos los archivos de proyecto localmente.<br />4. obtener la solución (**archivo**, **control de código fuente**, **obtener**).|Todos los archivos eliminados se restauran localmente.|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Guía de pruebas para los complementos de control de código fuente](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

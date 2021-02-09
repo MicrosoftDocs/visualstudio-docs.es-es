@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 80e511d8-9b40-4a85-aa5d-952fa5ee6ae7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e6eac7c97b9d375f32e36a372d6f31175c79098
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e6460653795720f10dca7f304035c49e4d8e035
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721917"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898518"
 ---
 # <a name="idebugprogramnode2"></a>IDebugProgramNode2
 Esta interfaz representa un programa que se puede depurar.
@@ -47,7 +47,7 @@ IDebugProgramNode2 : IUnknown
 |[GetEngineInfo](../../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md)|Obtiene el nombre y el identificador de la ejecución de este programa.|
 |[DetachDebugger_V7](../../../extensibility/debugger/reference/idebugprogramnode2-detachdebugger-v7.md)|En desuso. NO USE.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  El administrador de depuración de sesión (SDM) normalmente llama a [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md) para obtener esta interfaz.
 
 ## <a name="requirements"></a>Requisitos

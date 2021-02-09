@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8f9be68d-4490-4eca-8f6b-8a10ed77e226
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2819724c204631112fd1a3e827126c4bc176972
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2f24e7ec1842866011bb4d3735104a043bc77e01
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721040"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897263"
 ---
 # <a name="idebugproperty3"></a>IDebugProperty3
 Esta interfaz proporciona compatibilidad con:
@@ -55,7 +55,7 @@ IDebugProperty3 : IDebugProperty2
 |[GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)|Devuelve la lista de visores personalizados con los que se puede ver esta propiedad.|
 |[SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md)|Establece el valor de esta propiedad y devuelve un mensaje de error si se produjo algún problema.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 - [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md) es el método preferido para que el administrador de depuración de sesión (SDM) establezca el valor de una propiedad.
 
 ## <a name="requirements"></a>Requisitos
