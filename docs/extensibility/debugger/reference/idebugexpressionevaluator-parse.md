@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e6e31b3a-63a7-4293-bcda-267eb78dffb6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d1af9d3f253a9849f54bb5a50d432b98eb4ad7b8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: abcc66eb8a0f1419d447dfbd0081b39583e2941e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729496"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930296"
 ---
 # <a name="idebugexpressionevaluatorparse"></a>IDebugExpressionEvaluator::Parse
 Este método convierte una cadena de expresión en una expresión analizada.
@@ -28,7 +28,7 @@ Este método convierte una cadena de expresión en una expresión analizada.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT Parse( 
+HRESULT Parse( 
    LPCOLESTR                upstrExpression,
    PARSEFLAGS               dwFlags,
    UINT                     nRadix,
@@ -71,7 +71,7 @@ enuncia Devuelve la expresión analizada en un objeto [IDebugParsedExpression](.
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Este método genera una expresión analizada, no un valor real. Una expresión analizada está lista para su evaluación, es decir, se ha convertido en un valor.
 
 ## <a name="see-also"></a>Vea también

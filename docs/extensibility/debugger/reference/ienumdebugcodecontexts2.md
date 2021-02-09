@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 72915146-215f-4c99-a034-131b2b474e0e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6917c44bb3ddc80513e7c45a6aa4ea0207fd46c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7dee04516d8bc8d72859509a9f721455d858a433
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717271"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929399"
 ---
 # <a name="ienumdebugcodecontexts2"></a>IEnumDebugCodeContexts2
 Esta interfaz enumera los contextos de código asociados a la sesión de depuración o con un programa o un documento determinados.
@@ -47,7 +47,7 @@ IEnumDebugCodeContexts2 : IUnknown
 |[Clonar](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-clone.md)|Crea un enumerador que contiene el mismo estado de enumeración que el enumerador actual.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-getcount.md)|Obtiene el número de contextos de código en un enumerador.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Visual Studio llama a [EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md) para rellenar una lista de contextos de código que el usuario puede elegir al establecer la siguiente instrucción o mostrar el desensamblado de un archivo de código fuente. Se pueden producir varios contextos de código, por ejemplo, cuando hay varias instancias de una plantilla de estilo C++.
 
 ## <a name="requirements"></a>Requisitos

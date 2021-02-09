@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ea03e7e1-28d6-40b7-8097-bbb61d3b7caa
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 421d46efbef189fd6ffc86812d2bfdd28f5da5ff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7d52aad69397be315cf9c06b5f49a2c55d2fce28
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717443"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929529"
 ---
 # <a name="ienumdebugboundbreakpoints2"></a>IEnumDebugBoundBreakpoints2
 Esta interfaz enumera los puntos de interrupción enlazados asociados a un punto de interrupción pendiente o a un evento enlazado de punto de interrupción.
@@ -51,7 +51,7 @@ IEnumDebugBoundBreakpoints2 : IUnknown
 |[Clonar](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-clone.md)|Crea un enumerador que contiene el mismo estado de enumeración que el enumerador actual.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-getcount.md)|Obtiene el número de puntos de interrupción enlazados en un enumerador.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Visual Studio usa los puntos de interrupción enlazados que representa esta interfaz para actualizar la presentación de los puntos de interrupción en el IDE.
 
 ## <a name="requirements"></a>Requisitos

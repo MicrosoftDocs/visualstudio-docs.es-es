@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e0c522c4-f759-4c32-ae87-7abcb573e77d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6e0a89b4c1ac4318b6dd070dc086b86b45ad24fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3af65c60654fd23f88892522142548bf5db87a70
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727156"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929802"
 ---
 # <a name="idebugmethodfieldenumstaticlocals"></a>IDebugMethodField::EnumStaticLocals
 Crea un enumerador para las variables locales estáticas del método.
@@ -28,7 +28,7 @@ Crea un enumerador para las variables locales estáticas del método.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT EnumStaticLocals( 
+HRESULT EnumStaticLocals( 
    IEnumDebugFields** ppLocals
 );
 ```
@@ -46,7 +46,7 @@ enuncia Devuelve un objeto [IEnumDebugFields](../../../extensibility/debugger/re
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, Devuelve S_OK o devuelve S_FALSE si no hay variables locales estáticas. De lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Cada elemento es un objeto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) que representa distintos tipos de variables locales estáticas. Llame al método [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) en cada objeto para determinar exactamente qué tipo de local estático representa el objeto.
 
 ## <a name="see-also"></a>Vea también

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: c4c99dd5-609a-4e7c-8f29-eb728f57e995
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: beb00bcf932b19ed4e489456236957c55d909ce4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6085e974f58346eba7b38e76e5588b34fc3ff2c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728596"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929997"
 ---
 # <a name="idebugfunctionobjectcreateobject"></a>IDebugFunctionObject::CreateObject
 Crea un objeto utilizando un constructor.
@@ -28,7 +28,7 @@ Crea un objeto utilizando un constructor.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT CreateObject( 
+HRESULT CreateObject( 
    IDebugFunctionObject* pConstructor,
    DWORD                 dwArgs,
    IDebugObject*         pArgs[],
@@ -61,7 +61,7 @@ enuncia Devuelve un `IDebugObject` que representa el objeto recién creado.
 ## <a name="return-value"></a>Valor devuelto
  Si se realiza correctamente, Devuelve S_OK; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Llame a este método para crear un objeto que represente una instancia de una clase (u otro tipo complejo que requiera un constructor) que sea un parámetro de la función representada por la interfaz [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) .
 
  Si el parámetro de objeto no requiere un constructor, llame al método [CreateObjectNoConstructor](../../../extensibility/debugger/reference/idebugfunctionobject-createobjectnoconstructor.md) .

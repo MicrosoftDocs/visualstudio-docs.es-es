@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 68f8166d-ef64-49ae-ad5e-79604f43bbd4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 09617dda06cf2c3132ba4d8fb26a90f0b7cea08d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c387f44f6e16717ee01d73d633d0cfa791e1325
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726769"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929724"
 ---
 # <a name="idebugmodule3setjustmycodestate"></a>IDebugModule3::SetJustMyCodeState
 Marca el módulo como código de usuario o no.
@@ -28,8 +28,8 @@ Marca el módulo como código de usuario o no.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT SetJustMyCodeState(
-   BOOL fIsUserCode
+HRESULT SetJustMyCodeState(
+   BOOL fIsUserCode
 );
 ```
 

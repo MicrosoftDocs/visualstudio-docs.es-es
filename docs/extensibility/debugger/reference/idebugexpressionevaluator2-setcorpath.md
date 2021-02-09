@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 27b614ff-7325-4f9b-8da4-61ee020c9410
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bea93c3f10a946353c52231d0ac3802f0b2ec8e9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 84a3223464092e9f85af9701b37f946890b05c99
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729276"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930257"
 ---
 # <a name="idebugexpressionevaluator2setcorpath"></a>IDebugExpressionEvaluator2::SetCorPath
 Establece la ruta de acceso al Common Language Runtime (CLR) cargado en el depurador.

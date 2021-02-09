@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: abab6d34-c3c2-45c1-a8b6-43c7d3131e7a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b055928212dd4b094f4bd8987f6ce03960e932f1
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 8bb0bdeae09f22a2b45e3029fbc9097c00911d2a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382682"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930023"
 ---
 # <a name="clickonce-security-and-deployment"></a>Seguridad e implementación ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] es una tecnología de implementación que permite crear aplicaciones basadas en Windows de actualización automática que se pueden instalar y ejecutar con una interacción mínima del usuario. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proporciona compatibilidad completa para publicar y actualizar las aplicaciones implementadas con la tecnología ClickOnce si ha desarrollado sus proyectos con Visual Basic y Visual C#. Para obtener información sobre la implementación de aplicaciones Visual C++, vea [implementación de ClickOnce para aplicaciones de Visual C++](/cpp/windows/clickonce-deployment-for-visual-cpp-applications).
@@ -40,7 +40,7 @@ ms.locfileid: "94382682"
   En el pasado, estos problemas a veces hacían que los desarrolladores decidieran crear aplicaciones web en lugar de aplicaciones basadas en Windows, con lo que se sacrificaba una interfaz de usuario enriquecida para facilitar la instalación. Mediante el uso de aplicaciones implementadas con [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , puede tener las mejores tecnologías.
 
 ## <a name="what-is-a-clickonce-application"></a>¿Qué es una aplicación ClickOnce?
- Una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación es cualquier Windows Presentation Foundation ( *. XBAP* ), Windows Forms ( *. exe* ), una aplicación de consola ( *. exe* ) o una solución de Office ( *. dll* ) publicada mediante [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] tecnología. Puede publicar una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación de tres maneras diferentes: desde una página web, desde un recurso compartido de archivos de red o desde un medio, como un CD-ROM. Una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación se puede instalar en el equipo de un usuario final y ejecutarse localmente incluso cuando el equipo está sin conexión, o bien se puede ejecutar en modo de solo conexión sin tener que instalar nada permanentemente en el equipo del usuario final. Para obtener más información, vea [elegir una estrategia de implementación de ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).
+ Una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación es cualquier Windows Presentation Foundation (*. XBAP*), Windows Forms (*. exe*), una aplicación de consola (*. exe*) o una solución de Office (*. dll*) publicada mediante [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] tecnología. Puede publicar una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación de tres maneras diferentes: desde una página web, desde un recurso compartido de archivos de red o desde un medio, como un CD-ROM. Una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación se puede instalar en el equipo de un usuario final y ejecutarse localmente incluso cuando el equipo está sin conexión, o bien se puede ejecutar en modo de solo conexión sin tener que instalar nada permanentemente en el equipo del usuario final. Para obtener más información, vea [elegir una estrategia de implementación de ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).
 
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] las aplicaciones pueden actualizarse automáticamente. pueden comprobar si hay versiones más recientes a medida que estén disponibles y reemplazar automáticamente los archivos actualizados. El desarrollador puede especificar el comportamiento de actualización, y un administrador de red puede igualmente controlar las estrategias del proceso, por ejemplo, al marcar actualizaciones como obligatorias. El usuario final o un administrador también pueden revertir las actualizaciones a una versión anterior. Para obtener más información, vea [elegir una estrategia de actualización de ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).
 
@@ -53,7 +53,7 @@ ms.locfileid: "94382682"
  Los certificados Authenticode se usan para comprobar la autenticidad del publicador de la aplicación. Mediante el uso de Authenticode para la implementación de aplicaciones, ClickOnce ayuda a impedir que un programa perjudicial se represente como un programa legítimo procedente de un origen establecido y de confianza. Opcionalmente, los certificados también se pueden usar para firmar la aplicación y los manifiestos de implementación para demostrar que los archivos no se han alterado. Para obtener más información, vea [ClickOnce y Authenticode](../deployment/clickonce-and-authenticode.md). Los certificados también se pueden usar para configurar los equipos cliente para que tengan una lista de editores de confianza. Si una aplicación procede de un editor de confianza, se puede instalar sin interacción del usuario. Para más información, vea [Introducción a la implementación de aplicaciones de confianza](../deployment/trusted-application-deployment-overview.md).
 
 ### <a name="code-access-security"></a>Seguridad de acceso del código
- La seguridad de acceso del código ayuda a limitar el acceso que el código tiene a los recursos protegidos. En la mayoría de los casos, puede elegir las zonas de Internet o Intranet local para limitar los permisos. Use la página de **seguridad** de **ProjectDesigner** para solicitar la zona adecuada para la aplicación. También puede depurar aplicaciones con permisos restringidos para emular la experiencia del usuario final. Para obtener más información, vea [seguridad de acceso del código para aplicaciones ClickOnce](../deployment/code-access-security-for-clickonce-applications.md).
+ La seguridad de acceso del código ayuda a limitar el acceso que el código tiene a los recursos protegidos. En la mayoría de los casos, puede elegir las zonas de Internet o Intranet local para limitar los permisos. Use la página de **seguridad** de **ProjectDesigner** para solicitar la zona adecuada para la aplicación. También puede depurar aplicaciones con permisos restringidos para emular la experiencia del usuario final. Para más información, vea [Seguridad de acceso del código para aplicaciones ClickOnce](../deployment/code-access-security-for-clickonce-applications.md).
 
 ### <a name="clickonce-trust-prompt"></a>Solicitud de fiabilidad de ClickOnce
  Si la aplicación solicita más permisos de los que permite la zona, se puede solicitar al usuario final que tome una decisión de confianza. El usuario final puede decidir si las aplicaciones ClickOnce, como Windows Forms aplicaciones, las aplicaciones de Windows Presentation Foundation, las aplicaciones de consola, las aplicaciones de explorador XAML y las soluciones de Office son de confianza para ejecutarse. Para obtener más información, consulte [Cómo: configurar el comportamiento del mensaje de confianza de ClickOnce](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md).
@@ -62,7 +62,7 @@ ms.locfileid: "94382682"
  La [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] arquitectura de implementación principal se basa en dos archivos de manifiesto XML: un manifiesto de aplicación y un manifiesto de implementación. Los archivos se usan para describir el lugar desde el que se instalan las aplicaciones ClickOnce, cómo se actualizan y cuándo se actualizan.
 
 ### <a name="publish-clickonce-applications"></a>Publicación de aplicaciones ClickOnce
- El manifiesto de aplicación describe la propia aplicación. Esto incluye los ensamblados, las dependencias y los archivos que componen la aplicación, los permisos necesarios y la ubicación en la que estarán disponibles las actualizaciones. El desarrollador de aplicaciones crea el manifiesto de aplicación mediante el Asistente para publicación de Visual Studio o el Herramienta de generación y edición de manifiestos ( *Mage.exe* ) en [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] . Para obtener más información, consulte [Cómo: publicar una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+ El manifiesto de aplicación describe la propia aplicación. Esto incluye los ensamblados, las dependencias y los archivos que componen la aplicación, los permisos necesarios y la ubicación en la que estarán disponibles las actualizaciones. El desarrollador de aplicaciones crea el manifiesto de aplicación mediante el Asistente para publicación de Visual Studio o el Herramienta de generación y edición de manifiestos (*Mage.exe*) en [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] . Para obtener más información, consulte [Cómo: publicar una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
  El manifiesto de implementación describe cómo se implementa la aplicación. Esto incluye la ubicación del manifiesto de aplicación y la versión de la aplicación que deben ejecutar los clientes.
 
@@ -106,12 +106,12 @@ ms.locfileid: "94382682"
 
  En la tabla siguiente se muestra la versión .NET Framework necesaria para admitir aplicaciones ClickOnce en estos exploradores.
 
-|Browser|Versión de .NET Framework|
+|Explorador|Versión de .NET Framework|
 |-------------|----------------------------|
 |Internet Explorer|2.0, 3.0, 3.5, 3.5 SP1, 4|
 |Firefox|2.0 SP1, 3.5 SP1, 4|
-|Chrome|3.5|
-|Microsoft Edge|3.5|
+|Chrome|3,5|
+|Microsoft Edge|3,5|
 
 ## <a name="see-also"></a>Vea también
 - [Implementación de ClickOnce en Windows Vista](../deployment/clickonce-deployment-on-windows-vista.md)

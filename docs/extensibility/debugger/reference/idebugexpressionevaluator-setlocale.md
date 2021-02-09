@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d3d2027d-74e2-4ae6-bcc7-59d12f873b7c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 57ddee6e1796159c505b67982f25d1ba09684561
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0d035ac829f689a61b5703fe5d0df62bfe6e598a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729472"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930231"
 ---
 # <a name="idebugexpressionevaluatorsetlocale"></a>IDebugExpressionEvaluator::SetLocale
 Este método establece el idioma que se va a usar para crear resultados imprimibles.
@@ -28,7 +28,7 @@ Este método establece el idioma que se va a usar para crear resultados imprimib
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT SetLocale( 
+HRESULT SetLocale( 
    WORD wLangID
 );
 ```
@@ -46,7 +46,7 @@ de Identificador de idioma.
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Se puede llamar a este método muchas veces mientras se carga el evaluador de expresiones (EE), por lo que el EE debe ser capaz de cambiar de idioma sobre la marcha. El EE usa esta configuración regional para devolver mensajes de error y cadenas en el idioma adecuado.
 
 ## <a name="see-also"></a>Vea también

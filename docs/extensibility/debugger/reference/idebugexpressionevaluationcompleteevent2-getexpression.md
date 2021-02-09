@@ -11,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: faf6b2dd-2afd-4852-b21c-7e8d3130e141
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d938b2081081f0fd3821ebea2e12d39a9ef6a185
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 873fd4236b627d93bce4029ef36861a720c19828
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038535"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930439"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2getexpression"></a>IDebugExpressionEvaluationCompleteEvent2::GetExpression
 Obtiene la expresión original.
@@ -30,13 +30,13 @@ Obtiene la expresión original.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT GetExpression( 
+HRESULT GetExpression( 
    IDebugExpression2** ppExpr
 );
 ```
 
 ```csharp
-int GetExpression( 
+int GetExpression( 
    out IDebugExpression2 ppExpr
 );
 ```
@@ -48,10 +48,10 @@ enuncia Devuelve un objeto [IDebugExpression2](../../../extensibility/debugger/r
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Este método devuelve el objeto que se creó en una llamada al método [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) .
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)
 - [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)
 - [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)

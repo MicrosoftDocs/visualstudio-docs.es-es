@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 24c2a126-f4ab-4891-8509-8ef99b994c08
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbbea1b52133de41dd26f437aeba31a0eff5a50a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a43c7e7ed24da7d73784e20e9e998bdfe69cbd65
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726909"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929759"
 ---
 # <a name="idebugmodule2"></a>IDebugModule2
 Esta interfaz representa un módulo, es decir, una unidad ejecutable de un programa, como un archivo DLL.
@@ -46,7 +46,7 @@ IDebugModule2 : IUnknown
 |[GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)|Obtiene el [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) que describe este módulo.|
 |[ReloadSymbols_Deprecated](../../../extensibility/debugger/reference/idebugmodule2-reloadsymbols-deprecated.md)|OBSOLETO. NO USE. Vuelve a cargar los símbolos para este módulo.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  La información del módulo se puede mostrar en la ventana **módulos** del IDE.
 
 ## <a name="requirements"></a>Requisitos

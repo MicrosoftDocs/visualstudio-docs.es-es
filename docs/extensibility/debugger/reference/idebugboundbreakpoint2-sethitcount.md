@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 8145d875-26b1-4049-a2a2-e7d3d7f4735f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e82f12b12c9afbc24f9416ec2639a4b9768d8fd0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a5daff1f0bd1928633a32021f96addcacd291694
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735405"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930478"
 ---
 # <a name="idebugboundbreakpoint2sethitcount"></a>IDebugBoundBreakpoint2::SetHitCount
 Establece el número de llamadas del punto de interrupción enlazado.
@@ -29,13 +29,13 @@ Establece el número de llamadas del punto de interrupción enlazado.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT SetHitCount( 
+HRESULT SetHitCount( 
    DWORD dwHitCount
 );
 ```
 
 ```csharp
-int SetHitCount( 
+int SetHitCount( 
    uint dwHitCount
 );
 ```
@@ -47,7 +47,7 @@ de Número de llamadas que se van a establecer.
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error. Devuelve `E_BP_DELETED` si el estado del objeto de punto de interrupción enlazado se establece en `BPS_DELETED` (parte de la enumeración [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) ).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  El número de llamadas es el número de veces que se ha desencadenado este punto de interrupción durante la ejecución actual de la sesión.
 
  El motor de depuración llama normalmente a este método para actualizar el número de llamadas actual en este punto de interrupción.

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 52c42a2e-f144-476b-8bef-442464c8fe8e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a6ba87d6c1a1f7370ce5e209440589f362b87035
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13759bc8598c4739fbb9d2263dd8dc7d1b84c16e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729523"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930426"
 ---
 # <a name="idebugexpressionevaluatorgetmethodlocationproperty"></a>IDebugExpressionEvaluator::GetMethodLocationProperty
 Este método convierte una ubicación de método y el desplazamiento en una dirección de memoria.
@@ -28,7 +28,7 @@ Este método convierte una ubicación de método y el desplazamiento en una dire
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT GetMethodLocationProperty( 
+HRESULT GetMethodLocationProperty( 
    LPCOLESTR             upstrFullyQualifiedMethodPlusOffset,
    IDebugSymbolProvider* pSymbolProvider,
    IDebugAddress*        pAddress,
@@ -66,7 +66,7 @@ enuncia Devuelve una interfaz [IDebugProperty2](../../../extensibility/debugger/
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  La dirección devuelta se puede utilizar para establecer un punto de interrupción, por ejemplo.
 
  A pesar del nombre `upstrFullyQualifiedMethodPlusOffset` , este parámetro se puede pasar a un nombre de método parcialmente calificado. En ese caso, el método seleccionado es el que se incluye `pAddress` . La forma en que se interpreta este parámetro depende de la implementación del evaluador de expresiones y del lenguaje que admite.

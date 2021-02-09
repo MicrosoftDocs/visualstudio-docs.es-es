@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 0f9f0133-7d58-4cd9-a6ca-1141e095749d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e776434e17d90cd2c61c926bbf0100a44ecc524b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7d4e484a1557ea99138f31fdc6f9103e6708b803
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726920"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929762"
 ---
 # <a name="idebugmodule2reloadsymbols_deprecated"></a>IDebugModule2::ReloadSymbols_Deprecated
 OBSOLETO. NO USE. Vuelve a cargar los símbolos para este módulo.
@@ -28,14 +28,14 @@ OBSOLETO. NO USE. Vuelve a cargar los símbolos para este módulo.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT ReloadSymbols( 
+HRESULT ReloadSymbols( 
    LPCOLESTR pszUrlToSymbols,
    BSTR*     pbstrDebugMessage
 );
 ```
 
 ```csharp
-int ReloadSymbols( 
+int ReloadSymbols( 
    string     pszUrlToSymbols,
    out string pbstrDebugMessage
 );
@@ -51,7 +51,7 @@ enuncia Devuelve un mensaje informativo, como un estado o un mensaje de error, q
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error. Un motor de depuración siempre debe devolver `E_FAIL` .
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Este método ya no se admite. En su lugar, implemente el método [LoadSymbols](../../../extensibility/debugger/reference/idebugmodule3-loadsymbols.md) .
 
 ## <a name="see-also"></a>Vea también

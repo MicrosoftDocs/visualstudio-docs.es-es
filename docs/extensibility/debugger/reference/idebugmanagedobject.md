@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3ae09d34-112c-4285-80ee-9f7f8dc414d7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6fbd270aa1b65f05f308d41d22f154fb53b8833d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b90540aaf5f7e409c8fc7fa44126f195230317f8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727689"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929815"
 ---
 # <a name="idebugmanagedobject"></a>IDebugManagedObject
 > [!IMPORTANT]
@@ -28,7 +28,7 @@ ms.locfileid: "80727689"
 ## <a name="syntax"></a>Sintaxis
 
 ```
-IDebugManagedObject : IDebugObject
+IDebugManagedObject : IDebugObject
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para los implementadores
@@ -45,7 +45,7 @@ IDebugManagedObject : IDebugObject
 |[GetManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject-getmanagedobject.md)|Devuelve una interfaz que representa el objeto de código administrado y desde el que se puede obtener cualquier interfaz de código administrado adecuada.|
 |[SetFromManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject-setfrommanagedobject.md)|Establece el valor de este objeto en el valor de un objeto de código administrado especificado.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Un evaluador de expresiones utiliza esta interfaz para almacenar un objeto de código administrado en un árbol de análisis.
 
 ## <a name="requirements"></a>Requisitos

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d538fc19-55bf-4231-9595-eb01e84fd1d8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35e57e361b59e76e187617b5e528b219e8e47897
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 74e31339b48e49869ce76ce9a3b20a14dcb0acf5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729560"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930465"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2"></a>IDebugExpressionEvaluationCompleteEvent2
 El motor DE depuración (DE) envía esta interfaz al administrador de depuración de la sesión (SDM) cuando se completa la evaluación de la expresión asincrónica.
@@ -42,7 +42,7 @@ IDebugExpressionEvaluationCompleteEvent2 : IUnknown
 |[GetExpression](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getexpression.md)|Obtiene la expresión original.|
 |[GetResult](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md)|Obtiene el resultado de la evaluación de la expresión.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  El DE debe enviar este evento, independientemente de si la evaluación se realizó correctamente o no.
 
  Si la evaluación no se realizó correctamente, `DEBUG_PROPINFO_VALUE` las `DEBUG_PROPINFO_ATTRIB` marcas y no se establecerán en la estructura [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) devuelta por [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) (el objeto [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) crea el objeto y se devuelve en el `IDebugExpressionEvaluationCompleteEvent2` evento si se produjo un error en la evaluación).
