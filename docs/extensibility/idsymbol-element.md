@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 760cfd20-3c06-422c-9103-98bfa1f387f8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4feb477f8507bc3fe57e6db355538ab98ceeeaa
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 830324e708ff83fbcbbbdb98d261130e92c7ba00
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995543"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883199"
 ---
 # <a name="idsymbol-element"></a>Elemento IDSymbol
 El `IDSymbol` elemento contiene el identificador del par GUID: ID que representa un menú, grupo o comando. El GUID procede del elemento primario `GuidSymbol` . El `IDSymbol` elemento tiene un `name` atributo que proporciona un nombre descriptivo para el identificador, que se encuentra en el `value` atributo.
@@ -36,8 +36,8 @@ El `IDSymbol` elemento contiene el identificador del par GUID: ID que representa
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|name|Obligatorio. Nombre del símbolo de identificador.|
-|valor|Obligatorio. Valor de identificador numérico del símbolo de identificador.|
+|name|Necesario. Nombre del símbolo de identificador.|
+|value|Necesario. Valor de identificador numérico del símbolo de identificador.|
 
 ### <a name="child-elements"></a>Elementos secundarios
  Ninguno.
@@ -51,5 +51,5 @@ El `IDSymbol` elemento contiene el identificador del par GUID: ID que representa
 ## <a name="remarks"></a>Notas
  Cada `IDSymbol` elemento de un `GuidSymbol` elemento determinado debe tener un único `value` . Sin embargo, `IDSymbol` los elementos que tienen valores idénticos pueden existir en un paquete siempre que tengan distintos elementos primarios.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Archivos de tabla de comandos de Visual Studio (. Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

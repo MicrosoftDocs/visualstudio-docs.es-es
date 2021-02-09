@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 51a91963-8a3f-4741-928e-bc90c11473bb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46af48bf8bf9f128103767be1aa5fa64968e68f5
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 59eee84503ed2017c12dfcca3b7acd12c54e59db
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671303"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883446"
 ---
 # <a name="enableeditoflocationfield-element-visual-studio-templates"></a>EnableEditOfLocationField (elemento, plantillas de Visual Studio)
 Especifica si el usuario puede editar el campo de ubicación.
@@ -53,7 +53,7 @@ Especifica si el usuario puede editar el campo de ubicación.
 
  El texto debe ser `true` o `false` , lo que indica si el usuario puede o no editar el cuadro de texto de **Ubicación** en el cuadro de diálogo **nuevo proyecto** .
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Notas
  `EnableEditOfLocationField` es un elemento opcional. El valor predeterminado es `true` , que permite al usuario editar el valor en el cuadro de texto **Ubicación** en el cuadro de diálogo **nuevo proyecto** .
 
  En el cuadro de diálogo **nuevo proyecto** , el cuadro de texto **Ubicación** especifica el directorio donde se guarda un nuevo proyecto.

@@ -11,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: d9cbd1c4-719b-467a-8100-333c1e146d3b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a77f869936531dbc41cc3bd1d9b510bf44c35cec
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: c9706f7c9cd5b25a3644af2f324fda01f448fa17
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994724"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883407"
 ---
 # <a name="error-codes"></a>Códigos de error
 Cuando una función de la API del complemento de control de código fuente devuelve un error, se espera que sea uno de los siguientes códigos de error. Todos los errores son negativos, las advertencias o los códigos de error informativos son positivos y el éxito es 0.
 
-|Código de error|Valor|Descripción|
+|Código de error|Value|Descripción|
 |----------------|-----------|-----------------|
 |`SCC_I_SHARESUBPROJOK`|7|El complemento admite la adición de archivos del control de código fuente en dos pasos. Para obtener más información, vea [SccSetOption](../extensibility/sccsetoption-function.md).|
 |`SCC_I_FILEDIFFERS`|6|El archivo local es diferente del archivo de la base de datos de control de código fuente (por ejemplo, [SccDiff](../extensibility/sccdiff-function.md) puede devolver este valor).|
@@ -81,5 +81,5 @@ IS_SCC_WARNING(rtn) (((rtn) > 0) ? TRUE : FALSE)
 
  El complemento de control de código fuente no debe hacer ninguna suposición con respecto a los privilegios en un archivo de la carpeta de trabajo, aunque el complemento hubiera marcado el archivo como de solo lectura durante alguna operación. Un archivo de la carpeta de trabajo puede moverse, eliminarse y cambiarse fuera del control del complemento.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Complementos de control de código fuente](../extensibility/source-control-plug-ins.md)

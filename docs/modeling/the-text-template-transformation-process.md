@@ -8,15 +8,15 @@ helpviewer_keywords:
 - text templates, transformation process
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f0caadfe9abf38b2d83995da7efa32d618b4bfe0
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 4bf2d8e7d8fc45a45dcb271d867f8f6a39564bab
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362657"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882952"
 ---
 # <a name="the-text-template-transformation-process"></a>El proceso de transformación de las plantillas de texto
 El proceso de transformación de plantillas de texto toma un archivo de plantilla de texto como entrada y genera un nuevo archivo de texto como salida. Por ejemplo, puede usar plantillas de texto para generar Visual Basic o código de C# o puede generar un informe HTML.
@@ -30,7 +30,7 @@ El proceso de transformación de plantillas de texto toma un archivo de plantill
 |Componente|Descripción|Personalizable (sí/no)|
 |-|-|-|
 |Motor|El componente del motor controla el proceso de transformación de plantillas de texto|No.|
-|Host|El host es la interfaz entre el motor y el entorno del usuario. Visual Studio es un host del proceso de transformación de texto.|Sí. Puede escribir un host personalizado.|
+|administrador de flujos de trabajo|El host es la interfaz entre el motor y el entorno del usuario. Visual Studio es un host del proceso de transformación de texto.|Sí. Puede escribir un host personalizado.|
 |Procesadores de directivas|Los procesadores de directivas son clases que controlan directivas en plantillas de texto. Puede utilizar directivas para proporcionar datos a una plantilla de texto desde un origen de entrada.|Sí. Puede escribir procesadores de directivas personalizados.|
 
 ## <a name="the-engine"></a>Motor de

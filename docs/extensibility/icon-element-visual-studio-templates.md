@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: ec01d903-f4c2-4ca2-9cbc-e939ec84016c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 059105b9d188c0e7a81252172aa2d1bf7002420c
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: fced03b190ab46885c5d786b8374a05c3bd043b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672709"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883303"
 ---
 # <a name="icon-element-visual-studio-templates"></a>Icon (elemento, plantillas de Visual Studio)
 Especifica la ruta de acceso y el nombre del archivo de imagen que sirve como icono, que aparece en el cuadro de diálogo **nuevo proyecto** o **Agregar nuevo elemento** de la plantilla.
@@ -64,7 +64,7 @@ Especifica la ruta de acceso y el nombre del archivo de imagen que sirve como ic
 
  El texto proporciona la ruta de acceso y el nombre de archivo del icono de la plantilla que aparecerá en el cuadro de diálogo **nuevo proyecto** .
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Notas
  `Icon` es un elemento secundario obligatorio de `TemplateData`.
 
 ## <a name="example"></a>Ejemplo
