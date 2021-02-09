@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio, restricted permissions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b6beaf85000438846e5d440e48c9722b9660f9bd
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 2cc320baf310af0ec2b4cdd84fabff951b2a9cb2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528064"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885292"
 ---
 # <a name="password-protection-on-office-documents"></a>Protección mediante contraseña en documentos de Office
   Es posible establecer una contraseña en el Microsoft Office documentos de Word y Microsoft Office libros de Excel para que no se puedan abrir por alguien que no conozca la contraseña. Esta opción se denomina **contraseña al abrirse**.
@@ -39,7 +39,7 @@ ms.locfileid: "97528064"
 
  La primera vez que abra un documento de Word en Visual Studio que tenga habilitada la opción **contraseña en abrir** , Word le pedirá la contraseña. Después de escribir correctamente la contraseña, la **contraseña al abrir** se quita del documento y al abrir el documento ya no se necesitará una contraseña. Si desea que el documento de la solución requiera una contraseña antes de que se pueda abrir, debe habilitar la **contraseña al abrirla** después de la compilación final y antes de implementar la solución.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Protección de documentos en soluciones de nivel de documento](../vsto/document-protection-in-document-level-solutions.md)
 - [Información general sobre Information Rights Management y extensiones de código administrado](../vsto/information-rights-management-and-managed-code-extensions-overview.md)
 - [Cómo: permitir que el código se ejecute en documentos con permisos restringidos](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)

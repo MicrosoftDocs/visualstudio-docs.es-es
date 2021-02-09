@@ -19,15 +19,15 @@ helpviewer_keywords:
 - columns [Office development in Visual Studio], ungrouping
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 203ea7d17a02a224c290e5dd3c6070c06a1d26e4
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: eaa0bbcc2c26a36e43e862cbe5a8f117c2a1fb26
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525712"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885422"
 ---
 # <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>Cómo: agrupar filas en una hoja de cálculo mediante programación
   Puede agrupar una o varias filas enteras. Para crear un grupo en una hoja de cálculo, use un <xref:Microsoft.Office.Tools.Excel.NamedRange> control o un objeto de intervalo de Excel nativo.
@@ -60,7 +60,7 @@ ms.locfileid: "97525712"
     > [!NOTE]
     > Para desagrupar filas, llame al <xref:Microsoft.Office.Interop.Excel.Range.Ungroup%2A> método.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Trabajar con hojas de cálculo](../vsto/working-with-worksheets.md)
 - [NamedRange (control)](../vsto/namedrange-control.md)
 - [Cómo: agregar controles NamedRange a hojas de cálculo](../vsto/how-to-add-namedrange-controls-to-worksheets.md)

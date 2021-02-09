@@ -13,15 +13,15 @@ helpviewer_keywords:
 - worksheets, displaying text in cells
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a97534b8ac43c9a05cfb59fb911442a87d51c767
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: a5a89716797ec460b461f79c94df8cea475532a8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523949"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885565"
 ---
 # <a name="how-to-programmatically-display-a-string-in-a-worksheet-cell"></a>Cómo: mostrar una cadena en una celda de una hoja de cálculo mediante programación
   En este ejemplo se muestra cómo mostrar texto en una celda mediante programación. Para mostrar texto en la celda, use un <xref:Microsoft.Office.Tools.Excel.NamedRange> control o un objeto de intervalo de Excel nativo.
@@ -48,7 +48,7 @@ ms.locfileid: "97523949"
      [!code-csharp[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#69)]
      [!code-vb[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#69)]
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Tutorial: recopilar datos con Windows Forms](../vsto/walkthrough-collecting-data-using-a-windows-form.md)
 - [Solucionar problemas de soluciones de Office](../vsto/troubleshooting-office-solutions.md)
 - [NamedRange (control)](../vsto/namedrange-control.md)

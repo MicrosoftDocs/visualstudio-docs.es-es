@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a6a1efdc-b243-40c8-a778-6f69f6b018be
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a707d62443004795824c8bd437c29802635cf41
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: 2fe8d170f6e7b4dcd774773109c4880d4898e0b2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606507"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884837"
 ---
 # <a name="processes"></a>Procesos
 En la arquitectura del depurador, un *proceso*:
@@ -36,7 +36,7 @@ En la arquitectura del depurador, un *proceso*:
 
   El paquete de depuración puede adjuntar un motor de depuración (DE) a un proceso mediante una llamada a [Attach](../../extensibility/debugger/reference/idebugprocess2-attach.md), lo que significa que el se asocia a todos los programas posibles que se ejecutan en el proceso que puede controlar. Por ejemplo, si el Common Language Runtime DE se asocia a un proceso, solo se adjunta a los programas que ejecutan código administrado.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Programs](../../extensibility/debugger/programs.md)
 - [Subprocesos](../../extensibility/debugger/threads.md)
 - [Conceptos del depurador](../../extensibility/debugger/debugger-concepts.md)

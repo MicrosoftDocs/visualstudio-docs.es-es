@@ -16,17 +16,17 @@ helpviewer_keywords:
 - event receivers [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2e94bd1594f94f43c82eed5033d6ec2660905c18
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 1943bd8a652a88d218912ab0fc0f6227bf83bc95
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94849888"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885708"
 ---
-# <a name="how-to-create-an-event-receiver"></a>Cómo: crear un receptor de eventos
+# <a name="how-to-create-an-event-receiver"></a>Cómo: para crear un receptor de eventos
   Al crear *receptores de eventos*, puede responder cuando un usuario interactúa con elementos de SharePoint como listas o elementos de lista. Por ejemplo, el código de un receptor de eventos se puede desencadenar cuando un usuario cambia el calendario o elimina un nombre de una lista de contactos. Siguiendo este tema, puede obtener información sobre cómo agregar un receptor de eventos a una instancia de lista.
 
  Para completar estos pasos, debe tener instaladas [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] y las ediciones compatibles de Windows y SharePoint. Dado que este ejemplo requiere un proyecto de SharePoint, también debe haber completado el procedimiento en el tema [Tutorial: crear una columna de sitio, un tipo de contenido y una lista para SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).
@@ -40,7 +40,7 @@ ms.locfileid: "94849888"
 
 2. En **Explorador de soluciones**, elija el nodo de proyecto de SharePoint, que se denomina **Clinic**.
 
-3. En la barra de menús, elija **proyecto**  >  **Agregar nuevo elemento**.
+3. En la barra de menús, elija **Proyecto** >  **Agregar nuevo elemento**.
 
 4. En **Visual C#** o **Visual Basic**, expanda el nodo **SharePoint** y, a continuación, elija el elemento **2010** .
 

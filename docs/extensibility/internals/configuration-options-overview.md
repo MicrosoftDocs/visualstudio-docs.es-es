@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: df8931066aef5f7163018fba540dd46dcfe5dcc0
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: aa018d340e016ba5c9f424f705599a150ecdc818
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304738"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884694"
 ---
 # <a name="configuration-options-overview"></a>Información general de las opciones de configuración
 Los proyectos de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pueden admitir varias configuraciones que se pueden compilar, depurar, ejecutar o implementar. Una configuración es un tipo de compilación que se describe con un conjunto de propiedades con nombre, normalmente modificadores de compilador y ubicaciones de archivos. De forma predeterminada, las nuevas soluciones contienen dos configuraciones, *Debug* y *Release*. Estas configuraciones se pueden aplicar con su configuración predeterminada o modificarse para satisfacer los requisitos específicos de la solución o el proyecto. Algunos paquetes se pueden crear de dos maneras: como un editor ActiveX o como un componente en contexto. No obstante, no es necesario que los proyectos admitan varias configuraciones. Si solo hay una configuración disponible, esa configuración se asigna a todas las configuraciones de soluciones.
@@ -33,7 +33,7 @@ Los proyectos de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pu
 
 |Nombre de la configuración|Plataforma: Win32|Plataforma: Win64|
 |------------------------|----------------------|----------------------|
-|*Depuración*|\<Debug Win32 settings>|\<Debug Win64 settings>|
+|*Depurar*|\<Debug Win32 settings>|\<Debug Win64 settings>|
 |*Versión*|\<Release Win32 settings>|\<Release Win64 settings>|
 |*MyConfig*|N/D|\<MyConfig Win64 settings>|
 
@@ -70,7 +70,7 @@ Los proyectos de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pu
 
   Para obtener más información sobre las interfaces del objeto de configuración y las interfaces de objeto del proveedor de configuración del diagrama anterior, vea [objeto de configuración del proyecto](../../extensibility/internals/project-configuration-object.md). Además, la [configuración del proyecto para la compilación](../../extensibility/internals/project-configuration-for-building.md) proporciona más información sobre el generador de configuración y las interfaces del objeto de dependencia de compilación, y la [configuración de proyecto para administrar la implementación](../../extensibility/internals/project-configuration-for-managing-deployment.md) describe aún más las interfaces conectadas al implementador de configuración y los objetos de dependencia de implementación. Por último, la [configuración del proyecto para la salida](../../extensibility/internals/project-configuration-for-output.md) describe las interfaces del grupo de salida y del objeto de salida, y el uso de páginas de propiedades para ver y establecer las propiedades dependientes de la configuración.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>
 - [Configuración del proyecto para la compilación](../../extensibility/internals/project-configuration-for-building.md)
 - [Configuración de la solución](../../extensibility/internals/solution-configuration.md)

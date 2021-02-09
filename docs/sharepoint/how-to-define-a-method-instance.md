@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], method
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 751683873d98e6c7aedc7228e0a91fb59117993b
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 055193123f99825027238166d762ce54b288d716
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903629"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885669"
 ---
 # <a name="how-to-define-a-method-instance"></a>Cómo: definir una instancia de método
   Debe definir al menos una instancia de método para cada método del modelo.
@@ -41,7 +41,7 @@ ms.locfileid: "94903629"
 
 4. En la ventana **propiedades** , establezca las propiedades de la instancia de método. Para obtener más información sobre cada propiedad, vea [MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14)).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Introducción a las herramientas de diseño del modelo BDC](../sharepoint/bdc-model-design-tools-overview.md)
 - [Cómo: agregar una entidad a un modelo](../sharepoint/how-to-add-an-entity-to-a-model.md)
 - [Cómo: agregar un parámetro a un método](../sharepoint/how-to-add-a-parameter-to-a-method.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1bc58426-dbf5-4471-9aad-9d66cd80eef0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c959c018dd4da0ff088c4fb52c0420de83b4eac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6e611f6a4daf878042640697dca862015285078d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731995"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884876"
 ---
 # <a name="idebugdocument2"></a>IDebugDocument2
 Esta interfaz representa un documento de origen.
@@ -42,7 +42,7 @@ IDebugDocument2 : IUnknown
 |[GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)|Obtiene el nombre del documento en una de varias formas.|
 |[GetDocumentClassID](../../../extensibility/debugger/reference/idebugdocument2-getdocumentclassid.md)|Obtiene el identificador de clase del documento.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Esta interfaz solo se implementa cuando el DE proporciona el código fuente. Por ejemplo, al depurar un script en una página HTML, el DE proporciona el código fuente porque el origen se descarga o se genera dinámicamente y no existe como archivo de disco. Al depurar lenguajes tradicionales, como C++, no es necesario implementar esta interfaz.
 
 ## <a name="requirements"></a>Requisitos
