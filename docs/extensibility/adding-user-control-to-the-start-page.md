@@ -11,16 +11,16 @@ helpviewer_keywords:
 ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: fa812b477f88b03b8f0d4bdcba6c69f009ec2894
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 735e77868b85bdd8f85fb27957602d6759b5b097
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597553"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879181"
 ---
 # <a name="add-user-control-to-the-start-page"></a>Agregar control de usuario a la página de inicio
 
@@ -185,13 +185,13 @@ Para que este control esté disponible para el proyecto de la página de inicio,
 
 3. En un símbolo del sistema de Visual Studio, escriba **devenv/Rootsuffix exp** para abrir una instancia experimental de Visual Studio.
 
-4. En la instancia experimental, vaya a la **Tools**  >  Página de inicio del entorno **Opciones** de herramientas  >  **Environment**  >  **Startup** y seleccione el archivo XAML en el menú desplegable **Personalizar Página principal** .
+4. En la instancia experimental, vaya a la   >  Página de inicio del entorno **Opciones** de herramientas  >    >   y seleccione el archivo XAML en el menú desplegable **Personalizar Página principal** .
 
 5. En el menú **Vista** , haga clic en **Página de inicio**.
 
     Se debe mostrar la página de inicio personalizada. Si desea cambiar cualquier archivo, debe cerrar la instancia experimental, realizar los cambios, copiar y pegar los archivos modificados y, a continuación, volver a abrir la instancia experimental para ver los cambios.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Controles de contenedor de WPF](/previous-versions/bb675291(v=vs.110))
 - [Tutorial: agregar XAML personalizado a la página de inicio](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

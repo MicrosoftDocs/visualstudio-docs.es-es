@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 165fbe89-802d-4d99-85ca-c10fd6cccc09
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ae5ac703f1d0bd374131a4f5de397f39cf0ba209
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ca4fbf706fb9172aea2ac7a1304f1643a0061dc4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731032"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878960"
 ---
 # <a name="idebugengine2removeallsetexceptions"></a>IDebugEngine2::RemoveAllSetExceptions
 Quita la lista de excepciones que el IDE ha establecido para un idioma o una arquitectura en tiempo de ejecución determinados.
@@ -28,13 +28,13 @@ Quita la lista de excepciones que el IDE ha establecido para un idioma o una arq
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT RemoveAllSetExceptions( 
+HRESULT RemoveAllSetExceptions( 
    REFGUID guidType
 );
 ```
 
 ```csharp
-int RemoveAllSetExceptions( 
+int RemoveAllSetExceptions( 
    ref Guid guidType
 );
 ```
@@ -46,7 +46,7 @@ de El GUID del lenguaje o el GUID del motor de depuración que es específico de
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Las excepciones quitadas por este método se establecieron mediante llamadas anteriores al método [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) .
 
  Para quitar una excepción concreta, llame al método [RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md) .

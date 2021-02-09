@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: bdd25097-0e9d-4218-b417-0497ea48d2e8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0e811ce2e387c299ff3655799bf35185c1d2029b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 29756b3be6d2c46d39b581dd3db0af61bfaa18f3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730922"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878934"
 ---
 # <a name="idebugengine2removesetexception"></a>IDebugEngine2::RemoveSetException
 Quita la excepción especificada para que el motor de depuración ya no la administre.
@@ -28,13 +28,13 @@ Quita la excepción especificada para que el motor de depuración ya no la admin
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT RemoveSetException( 
+HRESULT RemoveSetException( 
    EXCEPTION_INFO* pException
 );
 ```
 
 ```csharp
-int RemoveSetException( 
+int RemoveSetException( 
    EXCEPTION_INFO[] pException
 );
 ```
@@ -46,7 +46,7 @@ de Estructura [EXCEPTION_INFO](../../../extensibility/debugger/reference/excepti
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  La excepción que se va a quitar se debe haber establecido previamente mediante una llamada anterior al método [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) .
 
  Para quitar todas las excepciones set a la vez, llame al método [RemoveAllSetExceptions](../../../extensibility/debugger/reference/idebugengine2-removeallsetexceptions.md) .

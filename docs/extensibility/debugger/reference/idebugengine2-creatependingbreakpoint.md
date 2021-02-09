@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 92e85b90-a931-48d9-89a7-a6edcb83ae5a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f88cae3610487b92fed0d8390d44c55d3f536c4b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 93534a40d523c7b67a769ebea319463cf59e4b7a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731116"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879025"
 ---
 # <a name="idebugengine2creatependingbreakpoint"></a>IDebugEngine2::CreatePendingBreakpoint
 Crea un punto de interrupción pendiente en el motor DE depuración (DE).
@@ -51,7 +51,7 @@ enuncia Devuelve un objeto [IDebugPendingBreakpoint2](../../../extensibility/deb
 ## <a name="return-value"></a>Valor devuelto
 Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error. Normalmente devuelve `E_FAIL` si el `pBPRequest` parámetro no coincide con ningún lenguaje compatible con el de de si el `pBPRequest` parámetro no es válido o está incompleto.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Un punto de interrupción pendiente es esencialmente una colección de toda la información necesaria para enlazar un punto de interrupción al código. El punto de interrupción pendiente devuelto por este método no está enlazado al código hasta que se llama al método [BIND](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) .
 
 Para cada punto de interrupción pendiente que establece el usuario, el administrador de depuración de la sesión (SDM) llama a este método en cada asociado DE. Es el DE para comprobar que el punto de interrupción es válido para los programas que se ejecutan en ese DE.

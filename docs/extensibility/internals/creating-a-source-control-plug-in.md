@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: c7e69fa4-150e-469a-a6fc-fa1260bdbb07
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ae887e8752e1603af173ed569d19a6602ac84f0
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 489aea2ba5b12dafa161ce70a49f81f60b38ba5d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305368"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878765"
 ---
 # <a name="create-a-source-control-plug-in"></a>Crear un complemento de control de código fuente
 El SDK de Visual Studio proporciona recursos que permiten agregar funcionalidad de control de código fuente al [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] entorno de desarrollo integrado (IDE). Permite usar cualquier archivo DLL de complemento que cumpla con la API del complemento de control de código fuente que se describe en esta documentación.

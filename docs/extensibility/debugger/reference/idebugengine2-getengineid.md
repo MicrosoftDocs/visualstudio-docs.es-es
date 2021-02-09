@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 0d5674c8-a9b9-4b72-8211-d2d68695775a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f4071e8279c2c4ab615ff625c1bbedebfd8e64ad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8ec0c294c0d1a1e19942ac86847cad1226041b24
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731079"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878973"
 ---
 # <a name="idebugengine2getengineid"></a>IDebugEngine2::GetEngineID
 Obtiene el GUID del motor de depuración (DE).
@@ -46,7 +46,7 @@ enuncia Devuelve el GUID del de.
 ## <a name="return-value"></a>Valor devuelto
 Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Algunos ejemplos de GUID típicos son `guidScriptEng` , `guidNativeEng` o `guidSQLEng` . Los nuevos motores de depuración crearán su propio GUID para la identificación.
 
 ## <a name="example"></a>Ejemplo
