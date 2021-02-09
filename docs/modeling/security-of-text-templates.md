@@ -8,15 +8,15 @@ helpviewer_keywords:
 - text templates, security
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d54421ea4df9c54fd4ec8c1804a1a292061996ab
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 11352eb33070d3401516948cc01c4b9bd7ab4f95
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363801"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893326"
 ---
 # <a name="security-of-text-templates"></a>Seguridad de las plantillas de texto
 Las plantillas de texto tienen los siguientes problemas de seguridad:

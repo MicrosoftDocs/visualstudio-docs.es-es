@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a636d9d3-47c1-4b48-ac6b-bcfde19d6cf9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 734afefd97e61867076d487acbcf67f10f54e672
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 61ca9071373cd25a4a8bd0d367a97654dfdefb3e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700665"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893573"
 ---
 # <a name="scchistory-function"></a>SccHistory (Función)
 Esta función muestra el historial de los archivos especificados.
@@ -74,7 +74,7 @@ de Opciones específicas del complemento de control de código fuente.
 |SCC_E_PROJNOTOPEN|No se ha abierto el proyecto.|
 |SCC_E_NONSPECIFICERROR|Error no específico. No se pudo obtener el historial de archivos.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  El complemento de control de código fuente puede mostrar su propio cuadro de diálogo para mostrar el historial de cada archivo, usando `hWnd` como ventana primaria. Como alternativa, se puede usar la función de devolución de llamada de salida de texto opcional proporcionada a [SccOpenProject](../extensibility/sccopenproject-function.md) , si es compatible.
 
  Tenga en cuenta que, en determinadas circunstancias, el archivo que se está examinando puede cambiar durante la ejecución de esta llamada. Por ejemplo, el [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] comando de historial ofrece al usuario una oportunidad para obtener una versión anterior del archivo. En tal caso, el complemento de control de código fuente devuelve `SCC_I_RELOAD` para advertir al IDE de que debe volver a cargar el archivo.

@@ -9,21 +9,21 @@ f1_keywords:
 ms.assetid: 61328ab6-9b66-4e12-8630-22e30ee8c9d1
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bdf33227263e8158f956fa8c6509d93e8116e9b
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: fd736c01843d746ee43a82e6bb6f5239da1c660e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437845"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894054"
 ---
 # <a name="how-to-use-the-imports-designer"></a>Utilizar el diseñador de importaciones
 
 El diseñador de importaciones le permite escribir los espacios de nombres para los tipos que utilizará en sus expresiones. Al igual que las **importaciones** o el **uso** de palabras clave en Visual Basic y C#, la especificación de espacios de nombres en el diseñador de importaciones le permite escribir simplemente un nombre de tipo en la expresión en lugar de un nombre de tipo de versión completo.
 
-El diseñador de importaciones reacciona tanto a los cambios en la interfaz de usuario como a los cambios que se efectúan cuando se guarda el flujo de trabajo. Cuando el flujo de trabajo está guardado, los espacios de nombres se pueden agregar automáticamente al diseñador de importaciones. Entre ellas se incluyen las siguientes:
+El diseñador de importaciones reacciona tanto a los cambios en la interfaz de usuario como a los cambios que se efectúan cuando se guarda el flujo de trabajo. Cuando el flujo de trabajo está guardado, los espacios de nombres se pueden agregar automáticamente al diseñador de importaciones. que incluyen la siguiente información:
 
 - Espacios de nombres para cualquier tipo utilizado en declaraciones de variables y de argumentos.
 

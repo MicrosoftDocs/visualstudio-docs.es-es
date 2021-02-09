@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 089baadcb60afcc8b32e287095b10ab30196ce17
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 84e9b08350cf5977269bfbcf28ca5335e17f024d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715982"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893410"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>Actualización de Plantillas de proyecto y elemento para Visual Studio personalizado 2017
 
@@ -35,7 +35,7 @@ En el caso de otras ubicaciones (no de usuario), debe incluir un archivo de mani
 
 ## <a name="how-to-update-a-vsix-extension-with-project-or-item-templates"></a>Cómo actualizar una extensión VSIX con plantillas de proyecto o elemento
 
-1. Abra la solución en Visual Studio 2017. Se le pedirá que actualice el código. Haga clic en **Aceptar**.
+1. Abra la solución en Visual Studio 2017. Se le pedirá que actualice el código. Haga clic en **OK**.
 
 2. Una vez finalizada la actualización, es posible que deba cambiar la versión del destino de instalación. En el Proyecto VSIX, abra el archivo source. Extension. vsixmanifest y seleccione la pestaña **destinos de instalación** . Si el campo **intervalo de versión** es **[14,0]**, haga clic en **Editar** y cámbielo para incluir Visual Studio 2017. Por ejemplo, puede establecerlo en **[14.0, 15.0]** para instalar la extensión en visual Studio 2015 o visual Studio 2017 o en **[15,0]** para instalarlo en solo Visual Studio 2017.
 
@@ -190,7 +190,7 @@ Si la extensión realiza una implementación basada en MSI, debe generar manualm
 
 Cree manifiestos independientes para las plantillas de proyecto y de elemento, y deben apuntar al directorio de plantillas raíz tal y como se especificó anteriormente. Cree un manifiesto por extensión y configuración regional.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Solución de problemas de detección de plantillas](troubleshooting-template-discovery.md)
 - [Crear plantillas de proyecto y de elemento personalizadas](creating-custom-project-and-item-templates.md)

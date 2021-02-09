@@ -8,15 +8,15 @@ helpviewer_keywords:
 - deployment, VSIX
 ms.assetid: 680c3b25-7901-4768-8363-6d1fcd1ea636
 ms.author: heaths
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8935af62b16ed6dd6d0d5d61412f347a95f32f23
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: 175623723b8f7b59a644a439afd10246eab01c95
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97616293"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893599"
 ---
 # <a name="locate-visual-studio"></a>Localización de Visual Studio
 
@@ -27,7 +27,7 @@ Se trata de una API rápida de solo lectura con paquetes NuGet disponibles para 
 | Código | Paquete |
 | ---- | --- |
 | Nativa | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Native |
-| Administrado | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop |
+| Administrados | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop |
 
 Puede buscar una sola instancia dada una ruta de acceso o el proceso actual, o enumerar todas las instancias. Consulte [nuestros ejemplos](https://github.com/Microsoft/vs-setup-samples) para obtener ejemplos completos de cómo encontrar Visual Studio.
 
@@ -41,7 +41,7 @@ Para encontrar Visual Studio y otras herramientas en entornos de compilación, s
 | [Cmdlets de VSSetup](https://github.com/Microsoft/vssetup.powershell) | Los cmdlets de PowerShell admiten 2,0 y versiones más recientes que devuelven información enriquecida como objetos que se pueden usar para buscar instancias en función de los mismos criterios que _vswhere_ y para detectar aún más propiedades sobre las instancias. Vea la [wiki](https://github.com/Microsoft/vssetup.powershell/wiki) para obtener ejemplos. |
 | [VSIXBootstrapper](https://github.com/Microsoft/vsixbootstrapper) | Localiza _VSIXInstaller_ automáticamente y pasa la línea de comandos para instalar un archivo **. vsix* . Esta característica puede ser útil en los instaladores que no son compatibles directamente con las API de consulta. Vea la [wiki](https://github.com/Microsoft/vsixbootstrapper/wiki) para obtener ejemplos. |
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 * [Cambios en el programa de instalación de Visual Studio 2017](https://devblogs.microsoft.com/setup/changes-to-visual-studio-15-setup/)
 * [Inicio de Visual Studio con DTE](launch-visual-studio-dte.md)

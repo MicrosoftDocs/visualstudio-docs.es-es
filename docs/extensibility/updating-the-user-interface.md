@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 376e2f56-e7bf-4e62-89f5-3dada84a404b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fae228b3fab1e25f92c02da2512abdd78edda0db
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: fd088d6887e7c7b60ea5a4101de050149583c5a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97716034"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893456"
 ---
 # <a name="updating-the-user-interface"></a>Actualización de la interfaz de usuario
 Después de implementar un comando, puede agregar código para actualizar la interfaz de usuario con el estado de los nuevos comandos.
@@ -29,7 +29,7 @@ Después de implementar un comando, puede agregar código para actualizar la int
 
 1. Realice uno de estos pasos:
 
-    - Llame al método <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A>.
+    - Llame al método <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> .
 
          Una <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> interfaz se puede obtener del <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> servicio, como se indica a continuación.
 
@@ -52,6 +52,6 @@ Después de implementar un comando, puede agregar código para actualizar la int
 
          Tenga en cuenta que puede obtener la <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> interfaz llamando al `QueryInterface` método en un <xref:Microsoft.VisualStudio.Shell.Interop.IOleComponentUIManager> objeto o obteniendo la interfaz desde el <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> servicio.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Cómo VSPackages agrega elementos de la interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Implementación](../extensibility/internals/command-implementation.md)

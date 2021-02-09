@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 1a4c7f4c-7a41-45f2-9af4-8b1666469b89
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fc6ef0e4d682f0f712eefc4c139895331c31688
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: e2285706f2d15c5497a83d27c95cd613191e0fe4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382928"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893976"
 ---
 # <a name="deploy-com-components-with-clickonce"></a>Implementar componentes COM con ClickOnce
 La implementación de componentes COM heredados tradicionalmente ha sido una tarea difícil. Los componentes deben estar registrados globalmente y, por tanto, pueden producir efectos secundarios no deseados entre las aplicaciones superpuestas. Normalmente, esta situación no es un problema en .NET Framework aplicaciones porque los componentes están completamente aislados en una aplicación o son compatibles en paralelo. Visual Studio le permite implementar componentes COM aislados en el sistema operativo Windows XP o posterior.
@@ -37,7 +37,7 @@ La implementación de componentes COM heredados tradicionalmente ha sido una tar
 ## <a name="registration-free-com"></a>COM sin registro
  El COM sin registro es una nueva tecnología para implementar y activar componentes COM aislados. Funciona colocando toda la información de registro y de biblioteca de tipos del componente que normalmente se instala en el registro del sistema en un archivo XML denominado manifiesto, almacenado en la misma carpeta que la aplicación.
 
- Aislar un componente COM requiere que se registre en el equipo del desarrollador, pero no es necesario que esté registrado en el equipo del usuario final. Para aislar un componente COM, lo único que debe hacer es establecer su propiedad **aislada** de referencia en **true**. De forma predeterminada, esta propiedad se establece en **false** , lo que indica que se debe tratar como una referencia com registrada. Si esta propiedad es **true** , hace que se genere un manifiesto para este componente en tiempo de compilación. También hace que los archivos correspondientes se copien en la carpeta de la aplicación durante la instalación.
+ Aislar un componente COM requiere que se registre en el equipo del desarrollador, pero no es necesario que esté registrado en el equipo del usuario final. Para aislar un componente COM, lo único que debe hacer es establecer su propiedad **aislada** de referencia en **true**. De forma predeterminada, esta propiedad se establece en **false**, lo que indica que se debe tratar como una referencia com registrada. Si esta propiedad es **true**, hace que se genere un manifiesto para este componente en tiempo de compilación. También hace que los archivos correspondientes se copien en la carpeta de la aplicación durante la instalación.
 
  Cuando el generador de manifiestos encuentra una referencia COM aislada, enumera todas las `CoClass` entradas de la biblioteca de tipos del componente, que coincide con cada entrada con sus datos de registro correspondientes y genera definiciones de manifiesto para todas las clases com en el archivo de biblioteca de tipos.
 
@@ -66,7 +66,7 @@ La implementación de componentes COM heredados tradicionalmente ha sido una tar
     > [!NOTE]
     > El archivo DLL de ActiveX y los tipos de proyecto de control ActiveX solo se admiten con COM sin registro; No se admiten los tipos de proyecto ActiveX EXE y documentos ActiveX.
 
-3. En **Explorador de soluciones** , haga doble clic en **Class1. VB** para abrir el editor de texto.
+3. En **Explorador de soluciones**, haga doble clic en **Class1. VB** para abrir el editor de texto.
 
 4. En Class1. VB, agregue el código siguiente después del código generado para el `New` método:
 
@@ -76,7 +76,7 @@ La implementación de componentes COM heredados tradicionalmente ha sido una tar
     End Sub
     ```
 
-5. Compile el componente. En el menú **Compilar** , haga clic en **Compilar solución**.
+5. Compile el componente. En el menú **Compilar**, haga clic en **Compilar solución**.
 
 > [!NOTE]
 > El COM sin registro solo admite los tipos de proyecto archivos dll y controles COM. No se puede utilizar exe con COM sin registro.
@@ -89,7 +89,7 @@ La implementación de componentes COM heredados tradicionalmente ha sido una tar
 
 2. En el cuadro de diálogo **nuevo proyecto** , seleccione el nodo **Visual Basic** y seleccione **aplicación para Windows**. En el cuadro **Nombre** , escriba `RegFreeComDemo`.
 
-3. En **Explorador de soluciones** , haga clic en el botón **Mostrar todos los archivos** para mostrar las referencias del proyecto.
+3. En **Explorador de soluciones**, haga clic en el botón **Mostrar todos los archivos** para mostrar las referencias del proyecto.
 
 4. Haga clic con el botón secundario en el nodo **referencias** y seleccione **Agregar referencia** en el menú contextual.
 
@@ -97,7 +97,7 @@ La implementación de componentes COM heredados tradicionalmente ha sido una tar
 
     Aparece una referencia de **VB6Hello** en la lista de referencias.
 
-6. Seleccione el **cuadro de herramientas** , seleccione un control de **botón** y arrástrelo al formulario **Form1** .
+6. Seleccione el **cuadro de herramientas**, seleccione un control de **botón** y arrástrelo al formulario **Form1** .
 
 7. En la ventana **propiedades** , establezca la propiedad **texto** del botón en **Hello**.
 
@@ -110,7 +110,7 @@ La implementación de componentes COM heredados tradicionalmente ha sido una tar
    End Sub
    ```
 
-9. Ejecute la aplicación. En el menú **Depurar** , haz clic en **Iniciar depuración**.
+9. Ejecute la aplicación. En el menú **Depurar**, haz clic en **Iniciar depuración**.
 
    A continuación, debe aislar el control. Cada componente COM que utiliza la aplicación se representa en el proyecto como una referencia COM. Estas referencias están visibles en el nodo **referencias** de la ventana **Explorador de soluciones** . (Tenga en cuenta que puede Agregar referencias directamente mediante el comando **Agregar referencia** en el menú **proyecto** o directamente arrastrando un control ActiveX al formulario).
 
@@ -118,11 +118,11 @@ La implementación de componentes COM heredados tradicionalmente ha sido una tar
 
 ##### <a name="to-isolate-a-com-component"></a>Para aislar un componente COM
 
-1. En **Explorador de soluciones** , en el nodo **referencias** , seleccione la referencia **VB6Hello** .
+1. En **Explorador de soluciones**, en el nodo **referencias** , seleccione la referencia **VB6Hello** .
 
 2. En la ventana **propiedades** , cambie el valor de la propiedad **aislada** de **false** a **true**.
 
-3. En el menú **Compilar** , haga clic en **Compilar solución**.
+3. En el menú **Compilar**, haga clic en **Compilar solución**.
 
    Ahora, cuando presiona F5, la aplicación funciona según lo previsto, pero ahora se está ejecutando en COM sin registro. Para demostrar esto, intente anular el registro del componente de VB6Hello.dll y ejecutar RegFreeComDemo1.exe fuera del IDE de Visual Studio. Esta vez, cuando se hace clic en el botón, sigue funcionando. Si cambia temporalmente el nombre del manifiesto de aplicación, se producirá un error.
 
@@ -174,4 +174,4 @@ La implementación de componentes COM heredados tradicionalmente ha sido una tar
   Hay varios escenarios en los que es necesario el registro COM en el equipo del desarrollador, aunque la implementación de la aplicación no requiere registro. La `Isolated` propiedad requiere que el componente com esté registrado en el equipo del desarrollador para generar automáticamente el manifiesto durante la compilación. No hay funcionalidades de captura de registros que invoquen el registro automático durante la compilación. Además, las clases no definidas explícitamente en la biblioteca de tipos no se reflejarán en el manifiesto. Cuando se usa un componente COM con un manifiesto preexistente, como una referencia nativa, es posible que no sea necesario registrar el componente en tiempo de desarrollo. Sin embargo, el registro es necesario si el componente es un control ActiveX y desea incluirlo en el **cuadro de herramientas** y en el diseñador de Windows Forms.
 
 ## <a name="see-also"></a>Vea también
-- [Seguridad e implementación de ClickOnce](../deployment/clickonce-security-and-deployment.md)
+- [Seguridad e implementación ClickOnce](../deployment/clickonce-security-and-deployment.md)

@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 4a688056-37dc-406a-9071-be2141e192fe
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a15f44b33e7109b126b091dcbf7102aa86a649a9
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 4e33ea580f46f09ab3bd4d75ba58a35518c3583c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437897"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894145"
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>Utilizar la ruta de navegación
 
@@ -52,4 +52,4 @@ Hay tres formas principales de cambiar el conjunto de actividades que se muestra
     > Si una actividad, como <xref:System.Activities.Statements.Flowchart> , ha optado por expandirse en su lugar, la funcionalidad asociada con los botones **expandir todo** y **contraer todo** está deshabilitada en el diseñador de **diagramas de flujo** . Para obtener más información sobre el diseñador de **diagramas de flujo** , vea el tema [Diagrama de flujo](../workflow-designer/flowchart-activity-designer.md) .
 
     > [!WARNING]
-    > Expandir todo también tiene un efecto especial en los diseñadores de actividad **Switch** y **TryCatch** . Al hacer clic en **expandir todo** , se muestran todos los casos de cambio y todos los bloques try/catch/finally. Al hacer clic en **restaurar** o **contraer todo** , se devuelven estos diseñadores a su estado predeterminado, desde el que puede hacer clic en un caso o bloque individual para ver su contenido.
+    > Expandir todo también tiene un efecto especial en los diseñadores de actividad **Switch** y **TryCatch** . Al hacer clic en **expandir todo**, se muestran todos los casos de cambio y todos los bloques try/catch/finally. Al hacer clic en **restaurar** o **contraer todo** , se devuelven estos diseñadores a su estado predeterminado, desde el que puede hacer clic en un caso o bloque individual para ver su contenido.

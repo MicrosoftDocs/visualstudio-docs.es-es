@@ -15,20 +15,20 @@ helpviewer_keywords:
 ms.assetid: 18f6919e-a3ab-4942-a57d-167fabfac44e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4eb1de8f5692eedc9673f1a22cb448ac8d102ae5
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 8dee33fca027ce47ede8315f7956479ee2394382
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382837"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893092"
 ---
 # <a name="ltdescriptiongt-element-clickonce-deployment"></a>&lt;Description &gt; (elemento, implementación de ClickOnce)
 Identifica la información de la aplicación que se usa para crear una presencia de Shell y un elemento **Agregar o quitar programas** en el panel de control.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ```xml
 
@@ -50,7 +50,7 @@ Identifica la información de la aplicación que se usa para crear una presencia
 |`suiteName`|Opcional. Identifica una subcarpeta de la `publisher` carpeta en el menú **Inicio** de Windows.|
 |`supportUrl`|Opcional. Especifica una dirección URL de soporte que se muestra en el elemento **Agregar o quitar programas** del panel de control. También se crea un acceso directo a esta dirección URL para la compatibilidad con aplicaciones en el menú **Inicio** de Windows, cuando la implementación está configurada para la instalación.|
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Notas
  El elemento Description es obligatorio en todas las configuraciones de implementación.
 
 ## <a name="example"></a>Ejemplo

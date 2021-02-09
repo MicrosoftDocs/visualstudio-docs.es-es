@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 5dd2643e-c20a-470e-9024-2a423eb39856
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e802c17d0a93aabbe5c6c0a8573abc6a551944ae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1afa09abd0e997c47b33953e5321d4c5d1845a25
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730547"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892832"
 ---
 # <a name="idebugenginelaunch2launchsuspended"></a>IDebugEngineLaunch2::LaunchSuspended
 Este método inicia un proceso por medio del motor de depuración (DE).
@@ -28,7 +28,7 @@ Este método inicia un proceso por medio del motor de depuración (DE).
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT LaunchSuspended ( 
+HRESULT LaunchSuspended ( 
    LPCOLESTR             pszMachine,
    IDebugPort2*          pPort,
    LPCOLESTR             pszExe,
@@ -106,7 +106,7 @@ enuncia Devuelve el objeto [IDebugProcess2](../../../extensibility/debugger/refe
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Normalmente, [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] inicia un programa con el método [LaunchSuspended](../../../extensibility/debugger/reference/idebugportex2-launchsuspended.md) y, a continuación, asocia el depurador al programa suspendido. Sin embargo, hay circunstancias en las que el motor de depuración puede necesitar iniciar un programa (por ejemplo, si el motor de depuración forma parte de un intérprete y el programa que se está depurando es un lenguaje interpretado), en cuyo caso [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] usa el `IDebugEngineLaunch2::LaunchSuspended` método.
 
  Se llama al método [ResumeProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md) para iniciar el proceso una vez que el proceso se ha iniciado correctamente en un estado suspendido.

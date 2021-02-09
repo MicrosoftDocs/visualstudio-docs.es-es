@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: bd5940d9-d94d-4944-beda-4ec1ab2bbde5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c322e320e193acd25a011cc85173c1c80e2d29d
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: ebdc1dc529e73e17ba55a0b4766f11dced4addcb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877993"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893651"
 ---
 # <a name="project-configuration-for-managing-deployment"></a>Configuración del proyecto para administrar la implementación
 La implementación es el acto de mover físicamente los elementos de salida de un proceso de compilación a la ubicación esperada para la depuración y la instalación. Por ejemplo, una aplicación web podría estar compilada en un equipo local y, a continuación, colocarse en el servidor.
@@ -39,7 +39,7 @@ La implementación es el acto de mover físicamente los elementos de salida de u
 
   Las configuraciones pueden especificar las dependencias que afectan a las operaciones de compilación o implementación. Las dependencias de compilación o implementación son proyectos que deben compilarse o implementarse antes o después de que se compilen o implementen las propias configuraciones. Las dependencias de compilación entre proyectos se describen con la <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> interfaz e implementan las dependencias con la <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> interfaz. Para obtener más información, vea [configuración del proyecto para la compilación](../../extensibility/internals/project-configuration-for-building.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Administración de opciones de configuración](../../extensibility/internals/managing-configuration-options.md)
 - [Configuración del proyecto para la compilación](../../extensibility/internals/project-configuration-for-building.md)
 - [Configuración del proyecto para la salida](../../extensibility/internals/project-configuration-for-output.md)

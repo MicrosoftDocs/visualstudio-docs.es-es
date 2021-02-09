@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5eaf2ad8-3fbf-446e-b48b-5327ad3f5255
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee77cbd680df2c851d53aac298605023227fa6f8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4485001341399d3830864a30b64fec24a77c5a8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730495"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892728"
 ---
 # <a name="idebugenginelaunch2"></a>IDebugEngineLaunch2
 Lo usa un motor DE depuración (DE) para iniciar y finalizar programas.
@@ -25,7 +25,7 @@ Lo usa un motor DE depuración (DE) para iniciar y finalizar programas.
 ## <a name="syntax"></a>Sintaxis
 
 ```
-IDebugEngineLaunch2 : IDebugEngine2
+IDebugEngineLaunch2 : IDebugEngine2
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para los implementadores

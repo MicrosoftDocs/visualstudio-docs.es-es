@@ -20,20 +20,20 @@ helpviewer_keywords:
 ms.assetid: 4fafa9c2-97a0-4cea-b8fd-9746dca33af4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3252c8f305b97564b8fb19affa83cc7dd837c97d
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 369d48c76ed82825021622af35141ef12ff42c76
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382863"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893924"
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;Deployment &gt; (elemento, implementación de ClickOnce)
 Identifica los atributos utilizados para la implementación de actualizaciones y la exposición del sistema.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ```xml
 
@@ -102,7 +102,7 @@ Identifica los atributos utilizados para la implementación de actualizaciones y
 |------------| - |
 | `codebase` | Necesario. Identifica la ubicación, como un identificador uniforme de recursos (URI), del manifiesto de implementación que se utiliza para actualizar la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación. Este elemento también permite el reenvío de ubicaciones de actualización para instalaciones basadas en CD. Debe ser un URI válido. |
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Notas
  Puede configurar la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación para que busque actualizaciones en el inicio, busque actualizaciones después del inicio o no compruebe nunca si hay actualizaciones. Para buscar actualizaciones en el inicio, asegúrese de que el `beforeApplicationStartup` elemento existe en el `update` elemento. Para buscar actualizaciones después del inicio, asegúrese de que el `expiration` elemento existe en el `update` elemento y que se proporcionan intervalos de actualización.
 
  Para deshabilitar la comprobación de actualizaciones, quite el `subscription` elemento. Cuando se especifica en el manifiesto de implementación para no buscar nunca actualizaciones, todavía puede comprobar manualmente si hay actualizaciones mediante el <xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdate%2A> método.

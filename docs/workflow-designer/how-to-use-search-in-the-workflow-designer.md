@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: f42d3115-2ed2-4941-8f1e-92dac41c30fa
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dadaf6ce4728dfac8d4052804cbed70ee7cefcd
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 6fb30d4846c24638f87989d2a7a716df06b0523b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437910"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894119"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>Usar una búsqueda en el Diseñador de flujo de trabajo
 
@@ -27,7 +27,7 @@ Búsqueda rápida busca lo siguiente en el diseñador:
 
 - Propiedades de los objetos <xref:System.Activities.Activity>, objetos <xref:System.Activities.Statements.FlowNode>, objetos <xref:System.Activities.Statements.State>, transiciones, así como otros elementos de control de flujo personalizados.
 
-- Variables
+- variables
 
 - Argumentos
 

@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 01f21ff9-e8a5-4e5f-9f7b-1b6de8b1432f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 87dfa102916b55c8445ecbf99d7033c0391ec254
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 65b94be12bab00b44f12bc23239de90f5e8c0ddc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733731"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892845"
 ---
 # <a name="idebugcomplussymbolprovidergettypefromaddress"></a>IDebugComPlusSymbolProvider::GetTypeFromAddress
 Recupera un tipo de símbolo a partir de su dirección de depuración.

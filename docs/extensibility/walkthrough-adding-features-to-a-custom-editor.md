@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bfe083b6-3e35-4b9c-ad4f-b30b9ff412a5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c08af63eaf68701f1a6703ac41fec20368d78931
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: c18b73b22d1ce4d4b2a7720d3d80081b4e2c075c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863198"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893417"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>Tutorial: agregar características a un editor personalizado
 Después de crear un editor personalizado, puede agregarle más características.
@@ -154,6 +154,6 @@ Después de crear un editor personalizado, puede agregarle más características
 
   - `Window.Object`
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Contribuir al modelo de automatización](../extensibility/internals/contributing-to-the-automation-model.md)

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 36aad682-b0b9-40a2-b3fc-f0e61d41cdbc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3899dea7c33946588de4308f42b948ede703361a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6156becc782adb054af37cf24efd64915729149c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718677"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893729"
 ---
 # <a name="idebugthread2resume"></a>IDebugThread2::Resume
 Reanuda la ejecución de un subproceso.
@@ -28,13 +28,13 @@ Reanuda la ejecución de un subproceso.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT Resume ( 
+HRESULT Resume ( 
    DWORD *pdwSuspendCount
 );
 ```
 
 ```csharp
-int Resume ( 
+int Resume ( 
    out uint pdwSuspendCount
 );
 ```
@@ -46,7 +46,7 @@ enuncia Devuelve el recuento de suspensión después de la operación de reanuda
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Cada llamada a este método disminuye el recuento de suspensiones hasta que llega a 0 en el momento en el que se reanuda la ejecución. Este recuento de suspensión se muestra en la ventana de depuración de **subprocesos** .
 
  Para cada llamada a este método, debe haber una llamada anterior al método [Suspend](../../../extensibility/debugger/reference/idebugthread2-suspend.md) . El recuento de suspensión determina cuántas veces se ha llamado al método hasta el `IDebugThread2::Suspend` momento.

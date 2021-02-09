@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 304403fd-f4f8-4096-ac2c-bd3b59663aad
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f7f81f4b60dfda21ce59ad73076785a37b767873
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c547ad049fa36231ce108a6cfc406233b972ff2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718688"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893781"
 ---
 # <a name="idebugthread2getthreadproperties"></a>IDebugThread2::GetThreadProperties
 Obtiene las propiedades que describen este subproceso.
@@ -51,7 +51,7 @@ de Combinación de marcas de la enumeración [THREADPROPERTY_FIELDS](../../../ex
 ## <a name="return-value"></a>Valor devuelto
 Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 La información devuelta por este método se muestra normalmente en la ventana depuración de **subprocesos** .
 
 ## <a name="example"></a>Ejemplo
