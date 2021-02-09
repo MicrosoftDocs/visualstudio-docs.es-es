@@ -12,15 +12,15 @@ helpviewer_keywords:
 - searching contacts
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6813a137558a245c66d4b24deac07b1a6a77796a
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: afe17292db70f2d2fdd16e7c7b388343fbf9db9c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524614"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841960"
 ---
 # <a name="how-to-programmatically-search-for-a-specific-contact"></a>Cómo: buscar un contacto específico mediante programación
   En este ejemplo se busca una carpeta de contactos de Outlook para un contacto específico por nombre y apellidos. En el ejemplo se supone que existe un contacto llamado **John Evans** en la carpeta Contactos.
@@ -31,6 +31,6 @@ ms.locfileid: "97524614"
  [!code-csharp[Trin_Outlook_RL_SearchForContact#1](../vsto/codesnippet/CSharp/trin_outlook_rl_searchforcontact/thisaddin.cs#1)]
  [!code-vb[Trin_Outlook_RL_SearchForContact#1](../vsto/codesnippet/VisualBasic/trin_outlook_rl_searchforcontact/thisaddin.vb#1)]
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Trabajar con elementos de contacto](../vsto/working-with-contact-items.md)
 - [Introducción a la programación de complementos de VSTO](../vsto/getting-started-programming-vsto-add-ins.md)

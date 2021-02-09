@@ -13,15 +13,15 @@ helpviewer_keywords:
 - workbooks, saving backup copies
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: dbc228a703d6c9224fda545a93132ccb45c94b0f
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 3a4f46a679e04c921aafd9a7774949d56c0925f2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524616"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99842015"
 ---
 # <a name="how-to-programmatically-save-workbooks"></a>Cómo: guardar libros mediante programación
   Existen varias formas de guardar un libro. Puede guardar un libro sin cambiar la ruta de acceso. Si el libro nunca se guardó, debe guardarlo especificando una ruta de acceso. Sin una ruta de acceso explícita, Microsoft Office Excel guarda el archivo en la carpeta actual con el nombre que se especificó cuando se creó. También puede guardar una copia del libro sin modificar el libro abierto en memoria.
@@ -84,7 +84,7 @@ ms.locfileid: "97524616"
 ## <a name="robust-programming"></a>Programación sólida
  Si se cancela interactivamente cualquiera de los métodos que guardan o copian el libro se produce un error en tiempo de ejecución en el código. Por ejemplo, si el procedimiento llama al <xref:Microsoft.Office.Tools.Excel.Workbook.SaveAs%2A> método, pero no deshabilita los mensajes de Excel, y el usuario hace clic en **Cancelar** cuando se le solicita, Excel genera un error en tiempo de ejecución.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Trabajar con libros](../vsto/working-with-workbooks.md)
 - [Elemento host del libro](../vsto/workbook-host-item.md)
 - [Cómo: cerrar libros mediante programación](../vsto/how-to-programmatically-close-workbooks.md)
