@@ -14,20 +14,20 @@ helpviewer_keywords:
 ms.assetid: 52b414af-ec80-4d2f-ad14-902543cd268e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a46f24adde12415acc20a6afd7298c491a3188c0
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 6424c2280f3f5eaaedadc6a2f1afebfd1109f1c3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349482"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891311"
 ---
 # <a name="ltproductgt-element-bootstrapper"></a>&lt;&gt;Elemento Product (arranque)
 El `Product` elemento es el elemento XML de nivel superior dentro de un archivo de producto.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ```xml
 <Product

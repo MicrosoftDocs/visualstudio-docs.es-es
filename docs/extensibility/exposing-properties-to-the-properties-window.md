@@ -11,21 +11,21 @@ helpviewer_keywords:
 ms.assetid: 47f295b5-1ca5-4e7b-bb52-7b926b136622
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6f2668f8410b6e5f18b23c82202c1d33f8c67b4d
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: bd9f2eb66bd2e1b8edcffd9e1053e4f644ba5e77
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994698"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890765"
 ---
 # <a name="expose-properties-to-the-properties-window"></a>Exponga propiedades a la ventana Propiedades
 
 En este tutorial se exponen las propiedades públicas de un objeto en la ventana **propiedades** . Los cambios que realice en estas propiedades se reflejarán en la ventana **propiedades** .
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
 
 A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS después. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
@@ -274,6 +274,6 @@ En este tutorial, <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer
 
 Las ventanas de herramientas de Visual Studio se conservan entre las sesiones de Visual Studio. Para obtener más información sobre cómo conservar el estado de la ventana de herramientas, vea <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> .
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Extender propiedades y la ventana de propiedades](../extensibility/extending-properties-and-the-property-window.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2c017094-3ba2-4067-83f9-147df1d96bce
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c611eb531bdabb633b11ac2e8ca2d0d11f52005
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba68608e09405265940686bbb235a41c53959943
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725173"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891194"
 ---
 # <a name="idebugportevents2"></a>IDebugPortEvents2
 Esta interfaz notifica a un agente de escucha (normalmente, el administrador de depuración de sesión [SDM] o un motor de depuración) de la creación y destrucción de procesos y programas en un puerto determinado. Esta información se puede usar para presentar una vista en tiempo real de los procesos y programas que se ejecutan en el puerto.
@@ -41,7 +41,7 @@ IDebugPortEvents2 : IUnknown
 |------------|-----------------|
 |[Evento](../../../extensibility/debugger/reference/idebugportevents2-event.md)|Envía eventos que describen la creación y destrucción de procesos y programas en el puerto.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  `IDebugPortEvents2` el SDM también lo usa para depurar programas que se ejecutan en un proceso que ya se está depurando.
 
  Esta interfaz pasa los eventos de puerto al SDM.

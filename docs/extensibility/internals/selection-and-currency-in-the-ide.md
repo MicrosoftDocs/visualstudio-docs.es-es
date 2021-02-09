@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 2f6f18d1-acd8-454d-a856-9a4d81155052
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2d745619be8bff77503bc14a1d7a87d84cc7864
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 0f77afea813158c787978e2ea4dbec1a55e36eca
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875602"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890635"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>Selección y moneda en el IDE
 El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] entorno de desarrollo integrado (IDE) mantiene información acerca de los objetos seleccionados actualmente por los usuarios mediante el *contexto* de selección. Con el contexto de selección, los VSPackages pueden participar en el seguimiento de moneda de dos maneras:
@@ -64,6 +64,6 @@ El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] entorno de desar
 
 - Eventos que cambian los elementos de los que se realiza un seguimiento en el contexto de selección de marcos de ventana. Entre los ejemplos se incluye cambiar la selección dentro de un DocObject o cambiar la selección en una ventana de tipo de proyecto.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Objetos de contexto de selección](../../extensibility/internals/selection-context-objects.md)
 - [Comentarios para el usuario](../../extensibility/internals/feedback-to-the-user.md)

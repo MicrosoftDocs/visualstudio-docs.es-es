@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: cc04fa75-012b-47c9-9347-f4216be23cf2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 68d39bed64ff1392c83d6fc2be0de936ac1b00d2
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 8cb23eeee53990113d779e241adb8dcf1ab0cf16
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350067"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890310"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Procedimientos para configurar el comportamiento del mensaje relativo a la confianza de ClickOnce
 Puede configurar el aviso de confianza de ClickOnce para controlar si los usuarios finales tienen la opción de instalar aplicaciones ClickOnce, como Windows Forms aplicaciones, Windows Presentation Foundation aplicaciones, aplicaciones de consola, aplicaciones de explorador WPF y soluciones de Office. Configure el mensaje de confianza mediante la configuración de las claves del registro en el equipo de cada usuario final.
@@ -40,7 +40,7 @@ Puede configurar el aviso de confianza de ClickOnce para controlar si los usuari
 
  En la tabla siguiente se muestra el comportamiento predeterminado de cada zona. La columna aplicaciones hace referencia a Windows Forms aplicaciones, Windows Presentation Foundation aplicaciones, aplicaciones de explorador WPF y aplicaciones de consola.
 
-|Zona|APLICACIONES|soluciones de Office|
+|Zona|Aplicaciones|soluciones de Office|
 |----------|------------------|----------------------|
 |`MyComputer`|`Enabled`|`Enabled`|
 |`LocalIntranet`|`Enabled`|`Enabled`|
@@ -67,9 +67,9 @@ Puede configurar el aviso de confianza de ClickOnce para controlar si los usuari
 
      Si la clave no existe, créela.
 
-3. Agregue las siguientes subclaves como **valor de cadena** , si aún no existen, con los valores asociados que se muestran en la tabla siguiente.
+3. Agregue las siguientes subclaves como **valor de cadena**, si aún no existen, con los valores asociados que se muestran en la tabla siguiente.
 
-    |Subclave de valor de cadena|Valor|
+    |Subclave de valor de cadena|Value|
     |-------------------------|-----------|
     |`Internet`|`Enabled`|
     |`UntrustedSites`|`Disabled`|
@@ -126,9 +126,9 @@ Puede configurar el aviso de confianza de ClickOnce para controlar si los usuari
 
      Si la clave no existe, créela.
 
-3. Agregue las siguientes subclaves como **valor de cadena** , si aún no existen, con los valores asociados que se muestran en la tabla siguiente.
+3. Agregue las siguientes subclaves como **valor de cadena**, si aún no existen, con los valores asociados que se muestran en la tabla siguiente.
 
-    |Subclave de valor de cadena|Valor|
+    |Subclave de valor de cadena|Value|
     |-------------------------|-----------|
     |`UntrustedSites`|`Disabled`|
     |`Internet`|`AuthenticodeRequired`|
@@ -183,9 +183,9 @@ Puede configurar el aviso de confianza de ClickOnce para controlar si los usuari
 
      Si la clave no existe, créela.
 
-3. Agregue las siguientes subclaves como **valor de cadena** , si aún no existen, con los valores asociados que se muestran en la tabla siguiente.
+3. Agregue las siguientes subclaves como **valor de cadena**, si aún no existen, con los valores asociados que se muestran en la tabla siguiente.
 
-    |Subclave de valor de cadena|Valor|
+    |Subclave de valor de cadena|Value|
     |-------------------------|-----------|
     |`UntrustedSites`|`Disabled`|
     |`Internet`|`Disabled`|
@@ -224,7 +224,7 @@ Puede configurar el aviso de confianza de ClickOnce para controlar si los usuari
 
 3. Compile y ejecute la aplicación.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Protección de las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Seguridad de acceso del código para aplicaciones ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)
 - [ClickOnce y Authenticode](../deployment/clickonce-and-authenticode.md)

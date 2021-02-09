@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 9cbc5db4-03ae-479f-a664-13cad66ad210
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1475652e340ff793dc900ab11563c0c1ad82c9b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f657bdeeb8f4f355bc8a6cafaaf79b1218dbbc9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80716352"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890778"
 ---
 # <a name="ienumdebugobjectsgetcount"></a>IEnumDebugObjects::GetCount
 Este método devuelve el número de elementos de la enumeración.
@@ -46,7 +46,7 @@ enuncia Devuelve el número de elementos de la enumeración.
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Este método no forma parte de la interfaz de enumeración COM personalizada, que especifica que solo se deben implementar los siguientes, clonar, omitir y restablecer.
 
 ## <a name="see-also"></a>Vea también

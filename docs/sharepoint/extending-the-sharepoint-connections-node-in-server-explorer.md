@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint Connections [SharePoint development in Visual Studio], creating a new node type
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 56b635db6a8b0c24e2604940fe7500bb8f769a1b
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 9c10c2bc69086e3c98633ba746c1e6fc8d7f2a20
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672566"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889699"
 ---
 # <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Extensión del nodo Conexiones de SharePoint en el Explorador de servidores
   En Visual Studio, puede conectarse a los sitios locales de SharePoint en el equipo de desarrollo mediante el nodo **conexiones de SharePoint** de la ventana de **Explorador de servidores** . Este nodo muestra muchos de los componentes de los sitios locales de SharePoint en una vista de árbol jerárquica. Por ejemplo, puede ver las listas, las bibliotecas de documentos y los tipos de contenido en los sitios locales. Para obtener más información acerca del uso de **Explorador de servidores** para conectarse a sitios locales de SharePoint, consulte [examinar conexiones de SharePoint mediante explorador de servidores](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md).
@@ -69,7 +69,7 @@ ms.locfileid: "94672566"
 
  Para obtener más información sobre el uso de la <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> propiedad, vea [asociar datos personalizados con extensiones de herramientas de SharePoint](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Tutorial: extender Explorador de servidores para mostrar elementos Web](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
 - [Cómo: extender un nodo de SharePoint en Explorador de servidores](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)
 - [Cómo: agregar un nodo de SharePoint personalizado a Explorador de servidores](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md)

@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packaging
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 16305ed63f48d9f14e35aeb8d37e35f23f40be25
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 8be6adfedeabaea236e4dcb2cd969e6023a7f3ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304238"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889569"
 ---
 # <a name="merge-xml-in-feature-and-package-manifests"></a>Combinar XML en manifiestos de características y paquetes
   Las características y los paquetes se definen mediante [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] archivos de manifiesto. Estos manifiestos empaquetados son una combinación de datos generada a partir de diseñadores y [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] que los usuarios han escrito en la plantilla de manifiesto. En el tiempo de empaquetado, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] combina las [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] instrucciones personalizadas con el diseñador proporcionado [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] para formar el archivo de [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] manifiesto empaquetado. Los elementos similares, con las excepciones que se indican más adelante en las excepciones de combinación, se combinan para evitar [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] errores de validación después de implementar los archivos en SharePoint y para que los archivos de manifiesto sean más pequeños y eficientes.
@@ -50,9 +50,9 @@ ms.locfileid: "96304238"
 |Nombre del elemento|Clave única|
 |------------------|----------------|
 |Característica (todos los atributos)|*Nombre del atributo* (cada nombre de atributo del elemento de característica es una clave única).|
-|ElementFile|Ubicación|
-|ElementManifests/ElementManifest|Ubicación|
-|Propiedades/propiedad|Clave|
+|ElementFile|Location|
+|ElementManifests/ElementManifest|Location|
+|Propiedades/propiedad|Key|
 |CustomUpgradeAction|Nombre|
 |CustomUpgradeActionParameter|Nombre|
 
@@ -65,21 +65,21 @@ ms.locfileid: "96304238"
 |Nombre del elemento|Clave única|
 |------------------|----------------|
 |Solución (todos los atributos)|*Nombre del atributo* (cada nombre de atributo del elemento de solución es una clave única).|
-|ApplicationResourceFiles/ApplicationResourceFile|Ubicación|
-|Ensamblados/ensamblado|Ubicación|
-|ClassResources/ClassResource|Ubicación|
-|DwpFiles/DwpFile|Ubicación|
-|FeatureManifests/FeatureManifest|Ubicación|
-|Recursos/recurso|Ubicación|
-|RootFiles/RootFile|Ubicación|
-|SiteDefinitionManifests/SiteDefinitionManifest|Ubicación|
-|WebTempFile|Ubicación|
-|TemplateFiles/TemplateFile|Ubicación|
+|ApplicationResourceFiles/ApplicationResourceFile|Location|
+|Ensamblados/ensamblado|Location|
+|ClassResources/ClassResource|Location|
+|DwpFiles/DwpFile|Location|
+|FeatureManifests/FeatureManifest|Location|
+|Recursos/recurso|Location|
+|RootFiles/RootFile|Location|
+|SiteDefinitionManifests/SiteDefinitionManifest|Location|
+|WebTempFile|Location|
+|TemplateFiles/TemplateFile|Location|
 |SolutionDependency|SolutionID|
 
 ## <a name="manually-add-deployed-files"></a>Agregar manualmente los archivos implementados
  Algunos elementos del manifiesto, como ApplicationResourceFile y DwpFiles, especifican una ubicación que incluye un nombre de archivo. Sin embargo, si se agrega una entrada de nombre de archivo a la plantilla de manifiesto, no se agrega el archivo subyacente al paquete. Debe agregar el archivo al proyecto para incluirlo en el paquete y establecer su propiedad tipo de implementación en consecuencia.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Empaquetado e implementación de soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
 - [Build and debug SharePoint solutions](../sharepoint/building-and-debugging-sharepoint-solutions.md) (Compilar y depurar las soluciones de SharePoint)

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, defining new project item types
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0b62f41ff6b185469a61681a8845c4e96d044695
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: b8f690b15f843af9337e16ee803509b72e85d7af
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850187"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889673"
 ---
 # <a name="how-to-add-a-property-to-a-custom-sharepoint-project-item-type"></a>Cómo: agregar una propiedad a un tipo de elemento de proyecto personalizado de SharePoint
   Al definir un tipo de elemento de proyecto de SharePoint personalizado, puede Agregar una propiedad al elemento de proyecto. La propiedad aparece en la ventana **propiedades** cuando se selecciona el elemento de proyecto en **Explorador de soluciones**.
@@ -72,7 +72,7 @@ ms.locfileid: "94850187"
 
  Para implementar el elemento de proyecto, cree un [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] paquete de extensión (VSIX) para el ensamblado, la plantilla y cualquier otro archivo que desee distribuir con el elemento de proyecto. Para obtener más información, vea [deploy Extensions for the SharePoint Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Cómo: definir un tipo de elemento de proyecto de SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)
 - [Cómo: agregar un elemento de menú contextual a un tipo de elemento de proyecto personalizado de SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md)
 - [Definir tipos de elementos de proyecto personalizados de SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)

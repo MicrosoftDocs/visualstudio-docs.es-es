@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 85522449-3fd8-4da5-b0fe-a43160e0c33b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6da1a956ac958a95dd0c433283a71af0a9b29d1e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f603b7a1660f9913ce10b2ecf07adb53f9279d48
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714089"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890011"
 ---
 # <a name="pending_bp_state_flags"></a>PENDING_BP_STATE_FLAGS
 Especifica las marcas de estado de punto de interrupción pendientes.
@@ -28,7 +28,7 @@ Especifica las marcas de estado de punto de interrupción pendientes.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-enum enum_PENDING_BP_STATE_FLAGS { 
+enum enum_PENDING_BP_STATE_FLAGS { 
    PBPSF_NONE        = 0x0000,
    PBPSF_VIRTUALIZED = 0x0001
 };
@@ -36,7 +36,7 @@ typedef DWORD PENDING_BP_STATE_FLAGS;
 ```
 
 ```csharp
-public enum enum_PENDING_BP_STATE_FLAGS { 
+public enum enum_PENDING_BP_STATE_FLAGS { 
    PBPSF_NONE        = 0x0000,
    PBPSF_VIRTUALIZED = 0x0001
 };
@@ -47,7 +47,7 @@ public enum enum_PENDING_BP_STATE_FLAGS { 
 
  `PBPSF_VIRTUALIZED` Especifica un punto de interrupción virtualizado pendiente, que se va a enlazar cada vez que se cargue código nuevo.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Se utiliza para el `flags` miembro de la estructura [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) .
 
 ## <a name="requirements"></a>Requisitos

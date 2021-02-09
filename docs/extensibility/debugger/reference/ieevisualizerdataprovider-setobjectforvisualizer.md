@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 40dad2be-57ff-4f74-9d82-c48039c125c4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ab63f1e74e0cd3ac64a4d7e7687a9136075b41a7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 50d68b5cdb7399dc391ef90150f0b6a156783301
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718082"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890843"
 ---
 # <a name="ieevisualizerdataprovidersetobjectforvisualizer"></a>IEEVisualizerDataProvider::SetObjectForVisualizer
 Este método cambia el objeto que representa el visualizador.
@@ -28,18 +28,18 @@ Este método cambia el objeto que representa el visualizador.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT SetObjectForVisualizer(
-   IDebugObject*  pNewObject,
-   BSTR*          error,
-   IDebugObject** pException
+HRESULT SetObjectForVisualizer(
+   IDebugObject*  pNewObject,
+   BSTR*          error,
+   IDebugObject** pException
 );
 ```
 
 ```csharp
-int SetObjectForVisualizer(
-   IDebugObject     pNewObject,
-   out string       error,
-   out IDebugObject pException
+int SetObjectForVisualizer(
+   IDebugObject     pNewObject,
+   out string       error,
+   out IDebugObject pException
 );
 ```
 
@@ -56,7 +56,7 @@ enuncia Si se produjo un error, este objeto contiene la información de la excep
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Depende del implementador determinar cómo se devuelve la información de error. Sin embargo, es posible que algunos autores de llamadas solo tengan que ver si se devolvió un objeto de excepción para saber que se ha producido un error, por lo que este método siempre debería devolver un objeto de excepción si se produjo un error. También se debe proporcionar la cadena de error en caso de que el autor de la llamada quiera usarla.
 
 ## <a name="see-also"></a>Vea también

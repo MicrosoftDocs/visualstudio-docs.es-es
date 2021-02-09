@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: f5de31ca-7b8d-4029-9cf9-ba860ac66af6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 59e611c3ed69528f92a6085cf74aa44efed09144
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2aadf18dbf45f8b10791c69ed4f189c38491636d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734524"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890297"
 ---
 # <a name="idebugcanstopevent2getreason"></a>IDebugCanStopEvent2::GetReason
 Obtiene el motivo por el que el motor DE depuración (DE) desea detenerse.
@@ -28,13 +28,13 @@ Obtiene el motivo por el que el motor DE depuración (DE) desea detenerse.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT GetReason( 
+HRESULT GetReason( 
    CANSTOP_REASON* pcr
 );
 ```
 
 ```csharp
-int GetReason( 
+int GetReason( 
    out enum_CANSTOP_REASON pcr
 );
 ```
@@ -46,7 +46,7 @@ enuncia Devuelve un valor de la enumeración [CANSTOP_REASON](../../../extensibi
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Normalmente, se llama a este método antes que al método [CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md) para que el llamador pueda determinar si pasar a un método distinto de cero ( `TRUE` ) `IDebugCanStopEvent2::CanStop` .
 
  El motivo de la detención puede ser `CANSTOP_ENTRYPOINT` , lo que significa que el de ha alcanzado un punto de entrada, o `CANSTOP_STEPIN` , lo que significa que el de ha escalonado en una función.

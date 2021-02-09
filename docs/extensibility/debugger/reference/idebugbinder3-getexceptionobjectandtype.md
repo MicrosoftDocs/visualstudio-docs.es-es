@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 2a313fe1-4ee1-4f01-af86-382d6c661a8f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e25a0f7b4e1713a072359f1efdd962f36c50b774
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ee86b12b16cc76b8e2c06ede5ec0110322b515ca
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735752"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891233"
 ---
 # <a name="idebugbinder3getexceptionobjectandtype"></a>IDebugBinder3::GetExceptionObjectAndType
 Este método recupera la excepción asociada a un objeto, si existe.
@@ -28,16 +28,16 @@ Este método recupera la excepción asociada a un objeto, si existe.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT GetExceptionObjectAndType(
-   IDebugObject** ppException,
-   IDebugField**  ppField
+HRESULT GetExceptionObjectAndType(
+   IDebugObject** ppException,
+   IDebugField**  ppField
 );
 ```
 
 ```csharp
-int GetExceptionObjectAndType(
-   out IDebugObject ppException,
-   out IDebugField  ppField
+int GetExceptionObjectAndType(
+   out IDebugObject ppException,
+   out IDebugField  ppField
 );
 ```
 

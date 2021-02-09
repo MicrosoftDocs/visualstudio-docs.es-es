@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 1d602485-ebaf-451c-9165-f2e226f20a90
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: aca1842e92e7e1c164a6468e6c1e94a352ef67c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9cd3b6e76a7e675a2228217d9a72c1d004de919c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722783"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891012"
 ---
 # <a name="idebugprogram2getprocess"></a>IDebugProgram2::GetProcess
 Obtiene el proceso en el que se ejecuta este programa.
@@ -46,7 +46,7 @@ enuncia Devuelve la interfaz [IDebugProcess2](../../../extensibility/debugger/re
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  A menos que un motor de depuración (DE) implemente la interfaz [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md) , la implementación de de este método siempre debe devolver `E_NOTIMPL` porque un de no puede determinar en qué proceso se está ejecutando y, por tanto, no puede satisfacer una implementación de este método.
 
  La implementación de la `IDebugEngineLaunch2` interfaz significa que el de debe saber cómo crear un proceso; por lo tanto, la implementación de de la interfaz [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) es capaz de saber en qué proceso se está ejecutando.

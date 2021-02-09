@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SafeControls element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c3423d1b6efd106ef7f947bd8573dcd1aa548a66
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 23e31e3df59d6d580ac94ffcb83f7a17e186a267
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440680"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889452"
 ---
 # <a name="safecontrols-element"></a>SafeControls (elemento)
   Colección de controles ASPX y elementos web que se designan como seguros para que cualquier usuario tenga acceso a cualquier página ASPX del sitio de SharePoint.
@@ -50,7 +50,7 @@ ms.locfileid: "95440680"
 |-------------|-----------------|
 |[ProjectItem](../sharepoint/projectitem-element.md)|Representa un elemento de proyecto de SharePoint. Este elemento es el elemento raíz necesario del archivo *. spdata* .|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Para obtener más información sobre los controles seguros, vea [proporcionar información de empaquetado e implementación en los elementos de proyecto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).
 
 ## <a name="element-information"></a>Información de elemento

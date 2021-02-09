@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 0047aa90-1ed4-40d3-8772-622b2719a4b1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d1309c6fcda2b27efdc78e7b31189d3a58edfb8
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 52b8bf1be57e10790d91d4712e56d707621cc7df
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715631"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889946"
 ---
 # <a name="supporting-multiple-versions-of-visual-studio"></a>Compatibilidad con varias versiones de Visual Studio
 El término en *paralelo* significa que puede instalar y mantener varias versiones de un producto en el mismo equipo. Para VSPackages, eso significa que un usuario puede tener varias versiones de Visual Studio instaladas en el mismo equipo. Sin embargo, no se pueden cargar versiones en paralelo de los VSPackages en una sola versión de Visual Studio.

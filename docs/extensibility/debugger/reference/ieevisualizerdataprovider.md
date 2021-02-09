@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 5fdfe6e3-b94e-4edb-acc5-41d8773d8ca5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a10f306b6c507f6db7add17931b8a38d926a37d9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 726ae6c0f56f177a6baa6f463e843378fdc0acea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718054"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890830"
 ---
 # <a name="ieevisualizerdataprovider"></a>IEEVisualizerDataProvider
 > [!IMPORTANT]
@@ -49,7 +49,7 @@ IEEVisualizerDataProvider : IUnknown
 |[GetObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getobjectforvisualizer.md)|Obtiene un objeto existente para este visualizador (no se realiza ninguna evaluación).|
 |[SetObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-setobjectforvisualizer.md)|Actualiza el objeto para este visualizador, con lo que se cambia el valor que presenta el visualizador.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  El servicio visualizador (tal como se representa mediante la interfaz [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) y devuelto por [CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)) mantiene una referencia al objeto que implementa la `IEEVisualizerDataProvider` interfaz. Como resultado, la `IEEVisualizerDataProvider` interfaz no debe implementarse en el mismo objeto que implementa [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) si ese objeto mantiene una referencia al `IEEVisualizerService` objeto: se producen una referencia circular y se produce un interbloqueo cuando se destruyen los objetos. El enfoque recomendado consiste en implementar `IEEVisualizerDataProvider` en un objeto independiente al que el `IDebugProperty2` objeto delegue sin llamar a `IUnknown::AddRef` en él.
 
 ## <a name="requirements"></a>Requisitos
