@@ -17,18 +17,18 @@ helpviewer_keywords:
 ms.assetid: 0aee5fc1-e966-4bda-9b8f-d9997aeaa779
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5236d73bb965d4f25634ad9e61a52608c9030146
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 918cb7e60f4e3fed2beee024d51b94499b14b632
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350938"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900427"
 ---
 # <a name="how-to-specify-the-clickonce-offline-or-online-install-mode"></a>Cómo: Especificar el modo de instalación en línea y sin conexión de ClickOnce
-El `Install Mode` para una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación determina si la aplicación estará disponible sin conexión o en línea. Cuando elija **la aplicación solo está disponible en línea** , el usuario debe tener acceso a la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Ubicación de publicación (una página web o un recurso compartido de archivos) para poder ejecutar la aplicación. Cuando se elige **la aplicación también está disponible sin conexión** , la aplicación agrega entradas al menú **Inicio** y al cuadro de diálogo **Agregar o quitar programas** . el usuario puede ejecutar la aplicación cuando no está conectada.
+El `Install Mode` para una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación determina si la aplicación estará disponible sin conexión o en línea. Cuando elija **la aplicación solo está disponible en línea**, el usuario debe tener acceso a la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Ubicación de publicación (una página web o un recurso compartido de archivos) para poder ejecutar la aplicación. Cuando se elige **la aplicación también está disponible sin conexión**, la aplicación agrega entradas al menú **Inicio** y al cuadro de diálogo **Agregar o quitar programas** . el usuario puede ejecutar la aplicación cuando no está conectada.
 
 `Install Mode`Se puede establecer en la página **publicar** del diseñador de **proyectos**.
 

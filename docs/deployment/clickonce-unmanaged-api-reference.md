@@ -27,15 +27,15 @@ helpviewer_keywords:
 ms.assetid: ec002138-4054-456d-bcc1-79ac2f4a4fd7
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b5ca8c18c0ed69080a14ba31d4da6d80fa9ae6d4
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 88d8147dded05c6bec54682e76c6a8c1826b43e0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382616"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900800"
 ---
 # <a name="clickonce-unmanaged-api-reference"></a>Referencia de la API no administrada de ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] API públicas no administradas de dfshim.dll.
@@ -46,7 +46,7 @@ ms.locfileid: "94382616"
 ### <a name="return-value"></a>Valor devuelto
  Si se realiza correctamente, Devuelve S_OK; de lo contrario, devuelve un valor HRESULT que representa el error. Si se produce una excepción administrada, devuelve 0x80020009 (DISP_E_EXCEPTION).
 
-### <a name="remarks"></a>Comentarios
+### <a name="remarks"></a>Notas
  Si se llama a CleanOnlineAppCache, se iniciará el [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] servicio si aún no se está ejecutando.
 
 ## <a name="getdeploymentdatafrommanifest"></a>GetDeploymentDataFromManifest
@@ -70,7 +70,7 @@ ms.locfileid: "94382616"
 ### <a name="return-value"></a>Valor devuelto
  Si se realiza correctamente, Devuelve S_OK; de lo contrario, devuelve un valor HRESULT que representa el error. Devuelve HRESULTFROMWIN32 (ERROR_INSUFFICIENT_BUFFER) si un búfer es demasiado pequeño.
 
-### <a name="remarks"></a>Comentarios
+### <a name="remarks"></a>Notas
  Los punteros no deben ser null. `pcwzActivationUrl` y `pcwzPathToDeploymentManifest` no deben estar vacíos.
 
  Es responsabilidad del autor de la llamada limpiar la dirección URL de activación. Por ejemplo, si se agregan caracteres de escape en los que se necesitan o se quita la cadena de consulta.

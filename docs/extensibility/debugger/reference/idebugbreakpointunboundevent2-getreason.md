@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 0f8a4fec-d3eb-417d-8516-4f7b51904033
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9830309f0a40aee37982554e8920a95d289eb74c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 21b1eaf51f9f533fccb5275e0659367a43adb2c3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734724"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900223"
 ---
 # <a name="idebugbreakpointunboundevent2getreason"></a>IDebugBreakpointUnboundEvent2::GetReason
 Obtiene el motivo por el que se desenlaza el punto de interrupción.
@@ -46,7 +46,7 @@ enuncia Devuelve un valor de la enumeración [BP_UNBOUND_REASON](../../../extens
 ## <a name="return-value"></a>Valor devuelto
 Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Entre los motivos se incluye un punto de interrupción que se va a enlazar a una ubicación diferente después de una operación de edición y continuación, o bien una determinación de que un punto de interrupción se ha enlazado con un error.
 
 ## <a name="example"></a>Ejemplo

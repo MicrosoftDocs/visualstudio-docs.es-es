@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e3d11aab-de0d-4109-b5dc-11e07e64382d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ad531ee10914e404459632c98aae4a9bbda8e437
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76fc15389242de1011851492e3a68dc001534582
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737529"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899133"
 ---
 # <a name="debug_address_union"></a>DEBUG_ADDRESS_UNION
 Describe distintos tipos de direcciones.
@@ -52,7 +52,7 @@ public struct DEBUG_ADDRESS_UNION {
 }
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 `dwKind`\
 Un valor de la enumeración [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) , que especifica cómo interpretar la Unión.
 
@@ -92,7 +92,7 @@ Un valor de la enumeración [ADDRESS_KIND](../../../extensibility/debugger/refer
 `unionmember`\
 [Solo C#] Se deben calcular las referencias de este valor en el tipo de estructura apropiado basado en `dwKind` . Vea la sección Comentarios para la asociación entre `dwKind` y la interpretación de la Unión.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Esta estructura forma parte de la estructura [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) y representa una serie de diferentes tipos de direcciones (la `DEBUG_ADDRESS` estructura se rellena mediante una llamada al método [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) ).
 
  [Solo C#] En la tabla siguiente se muestra cómo interpretar el `unionmember` miembro para cada clase de dirección. En el ejemplo se muestra cómo hacerlo para un tipo de dirección.
@@ -141,7 +141,7 @@ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)
 - [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

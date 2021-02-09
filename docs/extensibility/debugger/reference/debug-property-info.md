@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 5a085d18-62c6-4740-b9e9-3f5db6bfdf7f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 34fc1b5103949a767a3ee448618cbb708ea6a48b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98cd4292692fe9d9b965790ce9a0a30d55423454
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737448"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899093"
 ---
 # <a name="debug_property_info"></a>DEBUG_PROPERTY_INFO
 Contiene información sobre una propiedad de depuración.
@@ -51,7 +51,7 @@ public struct DEBUG_PROPERTY_INFO {
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 `dwValidFields`\
 Combinación de marcas de la enumeración [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) que especifica qué campos se rellenan.
 
@@ -73,7 +73,7 @@ Objeto [IDebugProperty2](../../../extensibility/debugger/reference/idebugpropert
 `dwAttrib`\
 Combinación de marcas de la enumeración [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) que describe los atributos de esta propiedad.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Una propiedad es un objeto de una naturaleza jerárquica que tiene un nombre, un tipo y un valor. Por ejemplo, una propiedad puede describir las variables locales, los parámetros, las variables y las expresiones de inspección y los registros.
 
 Esta estructura se pasa al método [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) donde se rellena. Esta estructura también se devuelve como parte de una lista de esta estructura de la interfaz [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) que, a su vez, se devuelve de una llamada a los métodos [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) y [EnumProperties (](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) .

@@ -9,15 +9,15 @@ helpviewer_keywords:
 - UML diagrams, saving
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ecf972974ff2c84cb47cd93d944aced4758d1cb7
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: e12dcd1fcb9119aa65811fc149d86150a8b084e7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363749"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899784"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>Compartir modelos y exportar diagramas
 En Visual Studio, puede compartir modelos y diagramas con sus compañeros de diversas formas.
@@ -51,6 +51,6 @@ En Visual Studio, puede compartir modelos y diagramas con sus compañeros de div
 |[Exportar diagramas como imágenes](../modeling/export-diagrams-as-images.md)|Puede copiar partes de diagramas en aplicaciones como PowerPoint o Word, o bien imprimir un diagrama como un archivo XPS.|
 |[Analizar y modelar la arquitectura](../modeling/analyze-and-model-your-architecture.md)|Información general de modelos y diagramas.|
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [Usar modelos en el proceso de desarrollo](../modeling/use-models-in-your-development-process.md)

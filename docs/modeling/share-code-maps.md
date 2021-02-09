@@ -6,15 +6,15 @@ ms.date: 05/16/2018
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9898b720e51c2750b67054d1f095200372f426da
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 324f8fe7ee34f469d31ad1ce6cf6bd25ab97f225
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363775"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899819"
 ---
 # <a name="share-code-maps"></a>Compartir mapas de código
 
@@ -24,7 +24,7 @@ Puede guardar los mapas de código como parte de un proyecto de Visual Studio, c
 
 Guarde el mapa desde el menú **Archivo** .
 
-O bien
+o bien
 
 Para guardar el mapa como parte de un proyecto específico, en la barra de herramientas del mapa, elija **compartir**  >  **movimiento \<CodeMapName> . DGML en** y, después, elija el proyecto en el que desea guardar el mapa.
 
@@ -59,6 +59,6 @@ Al exportar un mapa de código como un archivo XPS, puede verlo en visores XML o
 
 3. Póngale un nombre al mapa de código. Asegúrese de que la casilla **Guardar como tipo** está establecida en **archivos XPS ( \* . XPS)**. Elija **Guardar**.
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [Asignación de dependencias con mapas de código](../modeling/map-dependencies-across-your-solutions.md)

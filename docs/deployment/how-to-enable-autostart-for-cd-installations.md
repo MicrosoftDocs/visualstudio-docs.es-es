@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: caaec619-900c-4790-90e3-8c91f5347635
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f6ed3df72b98454c4669e7d9bcd21c0612a6fef3
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: b157df8666223e72a1e36d58505a5c087b0351bf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349963"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900684"
 ---
 # <a name="how-to-enable-autostart-for-cd-installations"></a>Cómo: Habilitar AutoStart para instalaciones con CD
 Al implementar una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación mediante medios extraíbles, como un CD-ROM o un DVD-ROM, puede habilitar `AutoStart` para que la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación se inicie automáticamente cuando se inserte el medio.
@@ -32,7 +32,7 @@ Al implementar una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.
 
 ### <a name="to-enable-autostart"></a>Para habilitar AutoStart
 
-1. Con un proyecto seleccionado en **Explorador de soluciones** , en el menú **proyecto** , haga clic en **propiedades**.
+1. Con un proyecto seleccionado en **Explorador de soluciones**, en el menú **proyecto** , haga clic en **propiedades**.
 
 2. Haga clic en la pestaña **Publicar**.
 

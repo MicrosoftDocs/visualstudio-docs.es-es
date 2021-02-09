@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 22c177a2-af81-4234-812b-f9b47be245a2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d82a3b4ceafca7de2277a85b65b9d9ef98c31243
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 19d996f1a040cd07742f23f467e3f25bee1f04d4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80716847"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900034"
 ---
 # <a name="ienumdebugfieldsnext"></a>IEnumDebugFields::Next
 Este método devuelve el siguiente conjunto de elementos de la enumeración.

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 2f13e601-dadc-476e-a8ec-01c4515082e7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1c8b3f52eff80c187d3c43b87cea804ace483169
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e1093ab5252aa14418bebf4129d0c7d050d0e11d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737558"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899160"
 ---
 # <a name="dbg_attrib_flags"></a>DBG_ATTRIB_FLAGS
 Describe varios atributos para una interfaz [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) o [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) . Miembro de la estructura de [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) .
@@ -165,7 +165,7 @@ public const int DBG_ATTRIB_CHILD_ALL            = 0x0000ff0000000000,
 public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
  `DBG_ATTRIB_NONE`\
  Indica que no hay atributos.
 
@@ -298,7 +298,7 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
  `DBG_ATTRIB_MULTI_CUSTOM_VIEWERS`\
  Indica que el objeto tiene varios visores personalizados asociados.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 
 > [!NOTE]
 > Los valores de esta enumeración no se definen realmente en el ensamblado para C#. En su lugar, debe copiar las definiciones en el archivo de código fuente.

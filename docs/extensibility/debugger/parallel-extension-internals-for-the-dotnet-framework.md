@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 93e07cfa-91fa-464c-b866-8bf5570411df
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9625af464e2695c6dd4302f4f7590d20e8f6af7
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: b3c17c36112d383528e97c1eb04c858b89406c36
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606598"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900316"
 ---
 # <a name="parallel-extension-internals-for-the-net-framework"></a>Interna de la extensión paralela para el .NET Framework
 En esta sección se describen los tipos, métodos y campos internos de las clases que le ayudan a implementar un depurador personalizado para las extensiones paralelas en el .NET Framework.
@@ -35,7 +35,7 @@ En esta sección se describen los tipos, métodos y campos internos de las clase
 
  [Estructura AsyncVoidMethodBuilder](../../extensibility/debugger/asyncvoidmethodbuilder-structure-internal-members.md) Describe los miembros internos de la <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder> estructura.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - <xref:System.Threading.Tasks.Task?displayProperty=fullName>
 - <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>
 - [Extensibilidad del depurador de Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

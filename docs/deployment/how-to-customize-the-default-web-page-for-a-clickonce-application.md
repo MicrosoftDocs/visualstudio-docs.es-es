@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 418de18c-bee9-4f24-9cd9-0252d175070d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fbda4558622c2e244071a218d3d5e42196460113
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 0377bdc5fa38c814bb5cd6ff02d12dcec117266d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351211"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900788"
 ---
 # <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>Cómo: Personalizar la página web predeterminada para una aplicación ClickOnce
 Al publicar una aplicación ClickOnce en la web, se genera automáticamente una página web y se publica junto con la aplicación. La página predeterminada contiene el nombre de la aplicación y vínculos para instalar la aplicación, instalar los requisitos previos o tener acceso a la ayuda en MSDN.
@@ -32,7 +32,7 @@ Al publicar una aplicación ClickOnce en la web, se genera automáticamente una 
 > [!NOTE]
 > Los vínculos reales que se ven en la página dependen del equipo en el que se está viendo la página y de los requisitos previos que se incluyen.
 
- El nombre predeterminado de la página web es *Publish.htm* ; puede cambiar el nombre en el **Diseñador de proyectos**. Para obtener más información, vea [Cómo: especificar una página de publicación para una aplicación ClickOnce](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md).
+ El nombre predeterminado de la página web es *Publish.htm*; puede cambiar el nombre en el **Diseñador de proyectos**. Para obtener más información, vea [Cómo: especificar una página de publicación para una aplicación ClickOnce](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md).
 
  La Página Web de *Publish.htm* se publica solo si se detecta una versión más reciente.
 
@@ -50,7 +50,7 @@ Al publicar una aplicación ClickOnce en la web, se genera automáticamente una 
 4. Opcional. Para evitar que Visual Studio sobrescriba la Página Web de publicación personalizada, desactive la casilla **generar automáticamente la Página Web de implementación después de cada publicación** en el cuadro de diálogo **Opciones de publicación** .
 
 ## <a name="see-also"></a>Vea también
-- [Seguridad e implementación de ClickOnce](../deployment/clickonce-security-and-deployment.md)
+- [Seguridad e implementación ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Publicar aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md)
-- [Cómo: Instalar requisitos previos mediante una aplicación ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
-- [Cómo: Especificar una página de publicación para una aplicación ClickOnce](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)
+- [Cómo: instalar los requisitos previos con una aplicación ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
+- [Cómo: especificar una página de publicación para una aplicación ClickOnce](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)

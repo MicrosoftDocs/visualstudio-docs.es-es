@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 2e4aa67c-4445-4f7b-9e03-9acb95829127
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 252d029e7e2e5b9b5dfe27b2fb1cd72e1c09b473
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 7591513bc52807b87e9df2f0fb65364d5aff2db8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349886"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900536"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Cómo: Publicar una aplicación ClickOnce mediante el Asistente para publicación
 Para que una aplicación ClickOnce esté disponible para los usuarios, debe publicarla en un recurso compartido de archivos o ruta de acceso, en un servidor FTP o en un medio extraíble. Puede publicar la aplicación con el Asistente para publicación. En la página **Publicar** del **Diseñador de proyectos** hay disponibles más propiedades relativas a la publicación. Para obtener más información, vea [Publicar aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md).
@@ -32,22 +32,22 @@ Para que una aplicación ClickOnce esté disponible para los usuarios, debe publ
 Antes de ejecutar el Asistente para publicación, debe establecer las propiedades de publicación correctamente. Por ejemplo, si quiere designar una clave para firmar la aplicación ClickOnce, puede hacerlo en la página **Firma** del **Diseñador de proyectos**. Para obtener más información, consulte [Secure ClickOnce Applications](../deployment/securing-clickonce-applications.md).
 
 > [!NOTE]
-> Cuando se instala más de una versión de una aplicación mediante ClickOnce, la instalación mueve las versiones anteriores de la aplicación a una carpeta denominada *Archive* , en la ubicación de publicación que especifique. Al archivar las versiones anteriores de esta manera, el directorio de instalación se mantiene limpio de carpetas de versiones anteriores.
+> Cuando se instala más de una versión de una aplicación mediante ClickOnce, la instalación mueve las versiones anteriores de la aplicación a una carpeta denominada *Archive*, en la ubicación de publicación que especifique. Al archivar las versiones anteriores de esta manera, el directorio de instalación se mantiene limpio de carpetas de versiones anteriores.
 
 > [!NOTE]
 > Los cuadros de diálogo y los comandos de menú que se ven pueden diferir de los descritos en la Ayuda, dependiendo de los valores de configuración o de edición activos. Para cambiar la configuración, haga clic en **Importar y exportar configuraciones** en el menú **Herramientas** . Para obtener más información, vea [Restablecer la configuración](../ide/environment-settings.md#reset-settings).
 
 ## <a name="to-publish-to-a-file-share-or-path"></a>Para publicar en un recurso compartido de archivos o en una ruta de acceso
 
-1. En el **Explorador de soluciones** , seleccione el proyecto de aplicación.
+1. En el **Explorador de soluciones**, seleccione el proyecto de aplicación.
 
 2. En el menú **compilar** , haga clic en **publicar** *nombreDeProyecto*.
 
     Aparece el Asistente para publicación.
 
-3. En la página **¿Dónde desea publicar la aplicación?** , escriba una dirección válida de servidor FTP o una ruta de acceso de archivo válida con uno de los formatos mostrados y después haga clic en **Siguiente**.
+3. En la página **¿Dónde desea publicar la aplicación?**, escriba una dirección válida de servidor FTP o una ruta de acceso de archivo válida con uno de los formatos mostrados y después haga clic en **Siguiente**.
 
-4. En la página **Instalación de la aplicación** , seleccione la ubicación donde los usuarios irán para instalar la aplicación:
+4. En la página **Instalación de la aplicación**, seleccione la ubicación donde los usuarios irán para instalar la aplicación:
 
    - Si los usuarios la instalarán desde un sitio web, haga clic en **Desde un sitio web** y escriba la dirección URL correspondiente a la ruta de acceso al archivo especificada en el paso anterior. Haga clic en **Siguiente**. (Esta opción se usa normalmente cuando se especifica una dirección FTP como ubicación de publicación. No se permite la descarga directa desde FTP. Por lo tanto, tiene que especificar una dirección URL aquí).
 
@@ -55,7 +55,7 @@ Antes de ejecutar el Asistente para publicación, debe establecer las propiedade
 
    - Si los usuarios instalarán desde medios extraíbles, haga clic en **Desde un CD-ROM o un DVD-ROM** y después haga clic en **Siguiente**.
 
-5. En la página **¿La aplicación estará disponible sin conexión?** , haga clic en la opción apropiada:
+5. En la página **¿La aplicación estará disponible sin conexión?**, haga clic en la opción apropiada:
 
    - Si quiere que la aplicación se ejecute cuando el usuario esté desconectado de la red, haga clic en **Sí, esta aplicación está disponible con o sin conexión**. Se creará un acceso directo a la aplicación en el menú **Inicio**.
 
@@ -69,22 +69,22 @@ Antes de ejecutar el Asistente para publicación, debe establecer las propiedade
 
 ## <a name="to-publish-to-a-cd-rom-or-dvd-rom"></a>Para publicar en un CD-ROM o DVD-ROM
 
-1. En el **Explorador de soluciones** , haga clic con el botón derecho en el proyecto de aplicación y después haga clic en **Propiedades**.
+1. En el **Explorador de soluciones**, haga clic con el botón derecho en el proyecto de aplicación y después haga clic en **Propiedades**.
 
-    Aparece el **Diseñador de proyectos** .
+    Aparece el **Diseñador de proyectos**.
 
 2. Haga clic en la pestaña **Publicar** para abrir la página **Publicar** en el **Diseñador de proyectos** y haga clic en el botón **Asistente para publicación**.
 
     Aparece el Asistente para publicación.
 
-3. En la página **¿Dónde desea publicar la aplicación?** , especifique la ruta de acceso del archivo o la ubicación FTP donde se publicará la aplicación, por ejemplo, *d:\deploy*. Haga clic en **Siguiente** para continuar.
+3. En la página **¿Dónde desea publicar la aplicación?**, especifique la ruta de acceso del archivo o la ubicación FTP donde se publicará la aplicación, por ejemplo, *d:\deploy*. Haga clic en **Siguiente** para continuar.
 
-4. En la página **Instalación de la aplicación** , Haga clic en **Desde un CD-ROM o un DVD-ROM** y después haga clic en **Siguiente**.
+4. En la página **Instalación de la aplicación**, Haga clic en **Desde un CD-ROM o un DVD-ROM** y después haga clic en **Siguiente**.
 
    > [!NOTE]
-   > Si quiere que la instalación se ejecute automáticamente cuando se inserte el CD-ROM en la unidad, abra la página **Publicar** en el **Diseñador de proyectos** y haga clic en el botón **Opciones** ; después, en el asistente **Opciones de publicación** , seleccione **En las instalaciones desde CD, el programa de instalación se inicia automáticamente al insertar el CD**.
+   > Si quiere que la instalación se ejecute automáticamente cuando se inserte el CD-ROM en la unidad, abra la página **Publicar** en el **Diseñador de proyectos** y haga clic en el botón **Opciones**; después, en el asistente **Opciones de publicación**, seleccione **En las instalaciones desde CD, el programa de instalación se inicia automáticamente al insertar el CD**.
 
-5. Si distribuye su aplicación en CD-ROM, quizás quiera proporcionar actualizaciones desde un sitio web. En la página **¿Dónde buscará la aplicación las actualizaciones?** , elija una opción de actualización:
+5. Si distribuye su aplicación en CD-ROM, quizás quiera proporcionar actualizaciones desde un sitio web. En la página **¿Dónde buscará la aplicación las actualizaciones?**, elija una opción de actualización:
 
    - Si la aplicación buscará actualizaciones, haga clic en **La aplicación buscará actualizaciones en la siguiente ubicación** y escriba el nombre de la ubicación donde se publicarán las actualizaciones. Puede ser una ubicación de archivos, un sitio web o un servidor FTP.
 
@@ -101,6 +101,6 @@ Antes de ejecutar el Asistente para publicación, debe establecer las propiedade
 
 ## <a name="see-also"></a>Vea también
 
-- [Seguridad e implementación de ClickOnce](../deployment/clickonce-security-and-deployment.md)
+- [Seguridad e implementación ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Protección de las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Implementar una solución de Office mediante ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)

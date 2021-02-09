@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 3ab55488-2437-4ff6-a9ae-78ea6d7b23a8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: adbb1ea4c9172a5f1cee877d04b81aed938bf7a5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6b86fbdb87c0191ea8b43c64a542c37177a8ef1f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727263"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900203"
 ---
 # <a name="idebugmethodfieldenumarguments"></a>IDebugMethodField::EnumArguments
 Crea un enumerador para el tipo de cada argumento necesario para llamar al método.
@@ -28,7 +28,7 @@ Crea un enumerador para el tipo de cada argumento necesario para llamar al méto
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT EnumArguments( 
+HRESULT EnumArguments( 
    IEnumDebugFields** ppParams
 );
 ```
@@ -46,7 +46,7 @@ enuncia Devuelve un objeto [IEnumDebugFields](../../../extensibility/debugger/re
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, Devuelve S_OK o devuelve S_FALSE si no hay ningún argumento. De lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Cada elemento es un objeto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) que representa los tipos de cada parámetro. Llame al método [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) para recuperar información sobre el tipo de cada parámetro.
 
  Si el nombre del parámetro es necesario junto con el tipo, llame al método [EnumParameters](../../../extensibility/debugger/reference/idebugmethodfield-enumparameters.md) .

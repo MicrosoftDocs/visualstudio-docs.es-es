@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 301b7a75-ecfa-46f1-9131-66cf3e4be147
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce15f389f22513e08b06c0d097cdac4aec3c35bf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b09fb8c644adb5464519f0f30bd8deff0be821ba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720906"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900096"
 ---
 # <a name="idebugpropertydestroyevent2"></a>IDebugPropertyDestroyEvent2
 El motor DE depuración (DE) envía esta interfaz al administrador de depuración de sesión (SDM) cuando una propiedad asociada a un documento específico está a punto de ser destruida.
@@ -41,7 +41,7 @@ IDebugPropertyDestroyEvent2 : IUnknown
 |------------|-----------------|
 |[GetDebugProperty](../../../extensibility/debugger/reference/idebugpropertydestroyevent2-getdebugproperty.md)|Obtiene la propiedad que se va a destruir.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Vea los comentarios de [IDebugPropertyCreateEvent2](../../../extensibility/debugger/reference/idebugpropertycreateevent2.md) para más información sobre por qué se usan estos eventos.
 
 ## <a name="requirements"></a>Requisitos

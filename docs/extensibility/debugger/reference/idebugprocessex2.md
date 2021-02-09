@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 44e309ba-1d6f-499b-aa7e-9b34858a6d57
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 743dd1aa72d9b8db6b848618c8a2ad6c8c8ecaaf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9e8966be5c30bf2061fc1e03be6798279afbe8ac
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723327"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900171"
 ---
 # <a name="idebugprocessex2"></a>IDebugProcessEx2
 Esta interfaz permite al administrador de depuración de la sesión (SDM) notificar a un proceso que está adjuntando o desasociando del proceso.
@@ -50,7 +50,7 @@ IDebugProcessEx2 : IUnknown
 |[Separar](../../../extensibility/debugger/reference/idebugprocessex2-detach.md)|Informa al proceso de que una sesión ya no está depurando el proceso.|
 |[AddImplicitProgramNodes](../../../extensibility/debugger/reference/idebugprocessex2-addimplicitprogramnodes.md)|Agrega nodos de programa para una lista de motores de depuración.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Esta interfaz es privada entre el SDM y el proceso.
 
 ## <a name="requirements"></a>Requisitos

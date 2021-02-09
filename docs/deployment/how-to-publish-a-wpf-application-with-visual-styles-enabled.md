@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 73b22b02-fc75-42aa-82d3-51fdcaf8e5c8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e372d3163dcef84d76d77e54c66cf9f7c788e213
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: f090729cdd0d08d39cf97cab9c3899f0b77c80eb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349859"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900475"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Cómo: Publicar una aplicación WPF con estilos visuales habilitados
 
@@ -51,26 +51,26 @@ Los estilos visuales permiten cambiar el aspecto de los controles comunes en fun
 
     **Para abrir el archivo de manifiesto en un proyecto de Visual Basic**
 
-    1. En la barra de menús, elija **proyecto** , *nombreDeProyecto* **propiedades** , donde *projectname* es el nombre del proyecto de WPF.
+    1. En la barra de menús, elija **proyecto**, *nombreDeProyecto* **propiedades**, donde *projectname* es el nombre del proyecto de WPF.
 
          Aparecerán las páginas de propiedades del proyecto de WPF.
 
-    2. En la pestaña **Aplicación** , elija **Ver configuración de Windows**.
+    2. En la pestaña **Aplicación**, elija **Ver configuración de Windows**.
 
          El archivo app.manifest se abrirá en el **Editor de código**.
 
     **Para abrir el archivo de manifiesto en un proyecto de C#**
 
-    1. En la barra de menús, elija **proyecto** , *nombreDeProyecto* **propiedades** , donde *projectname* es el nombre del proyecto de WPF.
+    1. En la barra de menús, elija **proyecto**, *nombreDeProyecto* **propiedades**, donde *projectname* es el nombre del proyecto de WPF.
 
          Aparecerán las páginas de propiedades del proyecto de WPF.
 
-    2. En la pestaña **Aplicación** , anote el nombre que aparece en el campo de manifiesto. Este es el nombre del manifiesto que está asociado al proyecto.
+    2. En la pestaña **Aplicación**, anote el nombre que aparece en el campo de manifiesto. Este es el nombre del manifiesto que está asociado al proyecto.
 
         > [!NOTE]
         > Si aparece **Incrustar manifiesto con configuración predeterminada** o **Crear aplicación sin manifiesto** en el campo de manifiesto, los estilos visuales no están habilitados. Si el nombre de un archivo de manifiesto aparece en el campo de manifiesto, continúe con el paso siguiente de este procedimiento.
 
-    3. En el **Explorador de soluciones** , elija **Mostrar todos los archivos**.
+    3. En el **Explorador de soluciones**, elija **Mostrar todos los archivos**.
 
          Este botón muestra todos los elementos del proyecto, incluidos los que se han excluido y los que normalmente están ocultos. El archivo de manifiesto aparece como un elemento de proyecto.
 
@@ -99,11 +99,11 @@ Los estilos visuales permiten cambiar el aspecto de los controles comunes en fun
 
 2. En el Bloc de notas, haga clic en **Archivo** y, a continuación, haga clic en **Guardar como**.
 
-3. En el cuadro de diálogo **Guardar como** , en la lista desplegable **Guardar como tipo** , seleccione **Todos los archivos**.
+3. En el cuadro de diálogo **Guardar como**, en la lista desplegable **Guardar como tipo**, seleccione **Todos los archivos**.
 
-4. En el cuadro **Nombre de archivo** , asigne un nombre al archivo y anexe *.manifest* al final de dicho nombre. Por ejemplo: *themes.manifest*.
+4. En el cuadro **Nombre de archivo**, asigne un nombre al archivo y anexe *.manifest* al final de dicho nombre. Por ejemplo: *themes.manifest*.
 
-5. Elija el botón **Examinar carpetas** , seleccione una carpeta y después haga clic en **Guardar**.
+5. Elija el botón **Examinar carpetas**, seleccione una carpeta y después haga clic en **Guardar**.
 
     > [!NOTE]
     > Los procedimientos restantes dan por supuesto que el nombre de este archivo es *themes.manifest* y que el archivo se guardará en el directorio de *C:\temp* del equipo.
@@ -112,7 +112,7 @@ Los estilos visuales permiten cambiar el aspecto de los controles comunes en fun
 
 1. Abra el **Símbolo del sistema de Visual Studio**.
 
-    Para obtener más información sobre cómo abrir el **símbolo del sistema de Visual Studio** , vea [símbolos del sistema](/dotnet/framework/tools/developer-command-prompt-for-vs).
+    Para obtener más información sobre cómo abrir el **símbolo del sistema de Visual Studio**, vea [símbolos del sistema](/dotnet/framework/tools/developer-command-prompt-for-vs).
 
    > [!NOTE]
    > Los pasos restantes realizan las suposiciones siguientes sobre la solución:

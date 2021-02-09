@@ -15,15 +15,15 @@ helpviewer_keywords:
 - worksheets [Office development in Visual Studio], XML schemas
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7a7e1a06e644536ce9ce881d9b9f1dc23aae03f1
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 0e6d868655e3f697a7f659064026929568f2e400
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848214"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900849"
 ---
 # <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>Cómo: asignar esquemas a hojas de cálculo en Visual Studio
   Puede asignar un esquema XML a una hoja de cálculo mientras la hoja de cálculo está abierta en Visual Studio. Use la misma Microsoft Office herramientas de Excel que utiliza cuando el libro está abierto fuera de Visual Studio. El proyecto de Office crea los mismos objetos si asigna el esquema a la hoja de cálculo antes o después de crear la solución de Excel.
@@ -56,7 +56,7 @@ ms.locfileid: "96848214"
 
 7. Busque el archivo de esquema, selecciónelo y, a continuación, haga clic en **abrir**.
 
-8. Haga clic en **Aceptar**.
+8. Haga clic en **OK**.
 
      El esquema se representa en la ventana de **código fuente XML** . En el proyecto, <xref:System.Data.DataSet> se genera un tipo basado en el esquema y <xref:System.Windows.Forms.BindingSource> se crea un.
 

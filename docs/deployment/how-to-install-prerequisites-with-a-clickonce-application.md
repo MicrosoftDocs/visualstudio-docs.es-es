@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: e964fca5-fdfd-47cf-a1c9-7fb96b1c88b5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e4a2f2b951881208d3995aeb1f5f1f655b80674f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 09337ee164c8b740e9aa8a044c4a9df385f01016
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349937"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900571"
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Cómo: Instalar requisitos previos mediante una aplicación ClickOnce
 Todas [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] las aplicaciones requieren que se instale la versión correcta del .NET Framework en un equipo antes de poder ejecutarse; muchas aplicaciones tienen también otros requisitos previos. Al publicar una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación, puede elegir un conjunto de componentes de requisitos previos que se van a empaquetar junto con la aplicación. En el momento de la instalación, se realizará una comprobación para cada requisito previo para determinar si ya existe; Si no se instalará antes de instalar la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación.
@@ -40,7 +40,7 @@ Todas [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] las apli
 
 ### <a name="to-specify-prerequisites-to-install-with-a-clickonce-application"></a>Para especificar los requisitos previos para instalar con una aplicación ClickOnce
 
-1. Con un proyecto seleccionado en **Explorador de soluciones** , en el menú **proyecto** , haga clic en **propiedades**.
+1. Con un proyecto seleccionado en **Explorador de soluciones**, en el menú **proyecto** , haga clic en **propiedades**.
 
 2. Seleccione el panel **publicar** .
 
@@ -54,7 +54,7 @@ Todas [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] las apli
 
 ### <a name="to-specify-a-different-download-location-for-prerequisites"></a>Para especificar una ubicación de descarga diferente para los requisitos previos
 
-1. Con un proyecto seleccionado en **Explorador de soluciones** , en el menú **proyecto** , haga clic en **propiedades**.
+1. Con un proyecto seleccionado en **Explorador de soluciones**, en el menú **proyecto** , haga clic en **propiedades**.
 
 2. Seleccione el panel **publicar** .
 
