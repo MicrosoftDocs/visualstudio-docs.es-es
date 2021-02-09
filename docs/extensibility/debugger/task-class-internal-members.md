@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 28e47c3b-9323-424a-80ac-6cc3bf19e09b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f18de66a524fbc652b8153c5b34b4464cda60f5
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 10fbc46ad66ec6265bac0a3f2fc7c9b2994915d9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996024"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883628"
 ---
 # <a name="task-class---internal-members"></a>Clase de tarea: miembros internos
 En este artículo se describen los miembros internos de la <xref:System.Threading.Tasks.Task?displayProperty=fullName> clase que le ayudan a implementar un depurador personalizado. Para obtener información general sobre esta clase, vea el <xref:System.Threading.Tasks.Task> artículo de referencia.
@@ -40,7 +40,7 @@ En este artículo se describen los miembros internos de la <xref:System.Threadin
                   System.Threading.ICancelableOperation
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 ### <a name="methods"></a>Métodos
 
@@ -51,7 +51,7 @@ En este artículo se describen los miembros internos de la <xref:System.Threadin
 
 ### <a name="fields"></a>Campos
 
-|NOMBRE|Descripción|
+|Nombre|Descripción|
 |----------|-----------------|
 |[m_action](../../extensibility/debugger/m-action-field.md)|Delegado que representa el código que se va a ejecutar en el <xref:System.Threading.Tasks.Task> objeto.|
 |[m_contingentProperties](../../extensibility/debugger/m-contingentproperties-field.md)|Almacena propiedades adicionales del <xref:System.Threading.Tasks.Task> objeto.|
@@ -81,6 +81,6 @@ En este artículo se describen los miembros internos de la <xref:System.Threadin
 
 - `InternalWait`
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - <xref:System.Threading.Tasks.Task?displayProperty=fullName>
 - [Interna de la extensión paralela para el .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

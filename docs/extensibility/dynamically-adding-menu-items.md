@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: d281e9c9-b289-4d64-8d0a-094bac6c333c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81fd495c51eff456f66275f33876038d14e43203
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: c3432092bc73ef3a06c807a1b4c4942080b9fce8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994815"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883550"
 ---
 # <a name="dynamically-add-menu-items"></a>Agregar elementos de menú de forma dinámica
 Puede agregar elementos de menú en tiempo de ejecución si especifica la `DynamicItemStart` marca de comando en una definición de botón de marcador de posición en el archivo de tabla de comandos de Visual Studio (*. Vsct*) y, a continuación, define (en el código) el número de elementos de menú que se van a mostrar y controla los comandos. Cuando se carga el VSPackage, el marcador de posición se reemplaza por los elementos de menú dinámicos.
@@ -358,6 +358,6 @@ public sealed class DynamicMenuItemsPackage : Package
 
 4. Cuando se cierra la solución o se abre una solución que solo tiene un proyecto, el icono de la barra de herramientas debe desaparecer.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md)
 - [Cómo agrega VSPackages los elementos de la interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
