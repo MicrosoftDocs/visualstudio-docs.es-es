@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 70d8c9e5-4b0b-4a69-b3b3-90f36debe880
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0adf586831e21c2448931215d4ef4a89d16a63f8
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 377cdd9875ebc2fddd80c673e53ecb318d171e47
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876446"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875567"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>Compatibilidad con herramientas de exploración de símbolos
 Las herramientas **Examinador de objetos**, **vista de clases**, **Explorador de llamadas** y **Buscar resultados de símbolos** proporcionan funciones de exploración de símbolos en Visual Studio. Estas herramientas muestran vistas de árbol jerárquicas de símbolos y muestran las relaciones entre los símbolos del árbol. Los símbolos pueden representar espacios de nombres, objetos, clases, miembros de clase y otros elementos de lenguaje contenidos en varios componentes. Los componentes incluyen proyectos de Visual Studio, componentes de .NET Framework externos y bibliotecas de tipo (. tlb). Para obtener más información, vea [ver la estructura del código](../../ide/viewing-the-structure-of-code.md).
@@ -50,7 +50,7 @@ Las herramientas **Examinador de objetos**, **vista de clases**, **Explorador de
 > [!NOTE]
 > Para implementar un proveedor de símbolos de código nativo, use las <xref:Microsoft.VisualStudio.Shell.Interop.IVsLibrary2> <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> interfaces y.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Registro de una biblioteca con el Administrador de objetos](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)
 - [Exposición de listas de símbolos proporcionadas por la biblioteca al Administrador de objetos](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
 - [Identificación de símbolos en una biblioteca](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)

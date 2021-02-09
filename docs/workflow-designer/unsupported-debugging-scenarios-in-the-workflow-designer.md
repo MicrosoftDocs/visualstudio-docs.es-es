@@ -6,16 +6,16 @@ ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 6adbe379-41d0-4681-9cd0-b91f187c3c2c
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: 4e98e2a75905f4c0a4c007691a99961dbcf1477c
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 70620528bd3e2d50b85d67eef5990d9843ea5178
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996271"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875138"
 ---
 # <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>Escenarios de depuración no admitidos en el Diseñador de flujo de trabajo
 

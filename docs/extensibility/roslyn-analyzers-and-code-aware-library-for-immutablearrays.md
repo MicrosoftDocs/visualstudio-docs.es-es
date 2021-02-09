@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 04b65ae8c81f381ee996da5f20ec15588b9180de
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: c41b70cf9a4e4e5ae4b1d1ddd2d2a6f6876b9a96
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715774"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875528"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analizadores de Roslyn y biblioteca con reconocimiento de código para ImmutableArrays
 
@@ -309,7 +309,7 @@ Puede ver este ejemplo desarrollado y explicado con más detalle en [esta conver
 
 [Aquí](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)puede ver todo el código terminado. Cada una de las subcarpetas *DoNotUseImmutableArrayCollectionInitializer* y *DoNotUseImmutableArrayCtor* tiene un archivo de c# para buscar problemas y un archivo de c# que implementa las correcciones de código que se muestran en la interfaz de usuario de la bombilla de Visual Studio. Tenga en cuenta que el código terminado tiene un poco más de abstracción para evitar que se recupere el objeto de tipo ImmutableArray una \<T> y otra vez. Utiliza acciones registradas anidadas para guardar el objeto de tipo en un contexto que está disponible cada vez que se ejecutan las subacciones (analizar la creación de objetos y analizar inicializaciones de colección).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 * [\\\Build 2015 Talk](https://channel9.msdn.com/events/Build/2015/3-725)
 * [Código completado en GitHub](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)

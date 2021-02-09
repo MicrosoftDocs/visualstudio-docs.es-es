@@ -9,19 +9,19 @@ f1_keywords:
 ms.assetid: 63cdea6b-bca2-4c06-b8b4-c8faabd40726
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e58655f9baf91766fc9b8ff15afe708f1069a565
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: b8f194ee792f2a60df71a78af6f41e45aaac91da
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433679"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875268"
 ---
 # <a name="type-collection-editor-dialog-box"></a>Editor de colección de tipos (cuadro de diálogo)
 
-El cuadro de diálogo Editor de la **colección de tipos** se usa para agregar tipos conocidos a las actividades de **envío** y **recepción** . Este cuadro de diálogo también se usa para agregar argumentos de tipo genérico a la actividad **InvokeMethod** . Cuando se usa para que las actividades de **envío** y **recepción** agreguen tipos conocidos, el cuadro de diálogo Editor de la **colección de tipos** requiere que las adiciones de tipo sean únicas. Si se agrega un tipo duplicado y se confirma el cambio haciendo clic en **Aceptar** , se devuelve un mensaje de error. Cuando se usa para que la actividad **InvokeMethod** agregue argumentos de tipo genérico, el cuadro de diálogo **Editor de colección de tipos** permite agregar tipos duplicados.
+El cuadro de diálogo Editor de la **colección de tipos** se usa para agregar tipos conocidos a las actividades de **envío** y **recepción** . Este cuadro de diálogo también se usa para agregar argumentos de tipo genérico a la actividad **InvokeMethod** . Cuando se usa para que las actividades de **envío** y **recepción** agreguen tipos conocidos, el cuadro de diálogo Editor de la **colección de tipos** requiere que las adiciones de tipo sean únicas. Si se agrega un tipo duplicado y se confirma el cambio haciendo clic en **Aceptar**, se devuelve un mensaje de error. Cuando se usa para que la actividad **InvokeMethod** agregue argumentos de tipo genérico, el cuadro de diálogo **Editor de colección de tipos** permite agregar tipos duplicados.
 
 Para obtener más información, vea [tipos conocidos de contratos de datos](/dotnet/framework/wcf/feature-details/data-contract-known-types).
 
