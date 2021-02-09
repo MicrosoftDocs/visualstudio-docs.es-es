@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: cf34583b-6530-4dcc-89f8-eb27e4e8d594
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 621ebf3949a273e06053ced67209aa052c25bce0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fe0db0267898b54837cd9d05e39b0ddce97d21cb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732802"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928467"
 ---
 # <a name="idebugcustomattributegetattributebytes"></a>IDebugCustomAttribute::GetAttributeBytes
 Obtiene la información del atributo como un BLOB de bytes.
@@ -28,7 +28,7 @@ Obtiene la información del atributo como un BLOB de bytes.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT GetAttributeBytes( 
+HRESULT GetAttributeBytes( 
    BYTE*  ppBlob,
    DWORD* pdwLen
 );
@@ -51,7 +51,7 @@ int GetAttributeBytes(
 ## <a name="return-value"></a>Valor devuelto
  Si se realiza correctamente, Devuelve S_OK; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Establezca el `ppBlob` parámetro en un valor null para devolver el número de atributos bytes disponibles. A continuación, asigne una matriz y pase esa matriz en para el `ppBlob` parámetro.
 
  Los bytes de atributo representan los datos sin procesar del atributo personalizado.

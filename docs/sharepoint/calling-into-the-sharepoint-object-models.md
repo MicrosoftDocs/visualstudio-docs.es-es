@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extensibility features
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 40cd7132888d8b19d8e2a2818ec9a299b465e786
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 14358b5cc84f63227fd5001731c261002a324492
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850057"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928944"
 ---
 # <a name="call-into-the-sharepoint-object-models"></a>Llamar a los modelos de objetos de SharePoint
   Al crear extensiones para las herramientas de SharePoint en Visual Studio, es posible que tenga que llamar a las API de SharePoint para realizar determinadas tareas. Por ejemplo, si crea un paso de implementación personalizado para proyectos de SharePoint, es posible que tenga que llamar a las API de SharePoint para realizar algunas de las tareas de implementación de soluciones.
@@ -56,7 +56,7 @@ ms.locfileid: "94850057"
 ### <a name="understand-how-sharepoint-commands-are-executed"></a>Comprender cómo se ejecutan los comandos de SharePoint
  Los ensamblados que definen los comandos de SharePoint se cargan en un proceso de host de 64 bits denominado *vssphost4.exe*. Después de llamar a un comando de SharePoint en una extensión de herramientas de SharePoint, el comando se ejecuta en *vssphost4.exe* en lugar del proceso de Visual Studio de 32 bits (*devenv.exe*). Puede controlar algunos aspectos de cómo se ejecutan los comandos de SharePoint estableciendo valores en el registro. Para obtener más información, vea [depurar extensiones para las herramientas de SharePoint en Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Cómo: crear un comando de SharePoint](../sharepoint/how-to-create-a-sharepoint-command.md)
 - [Cómo: ejecutar un comando de SharePoint](../sharepoint/how-to-execute-a-sharepoint-command.md)
 - [Información general del modelo de programación de extensiones de SharePoint](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)

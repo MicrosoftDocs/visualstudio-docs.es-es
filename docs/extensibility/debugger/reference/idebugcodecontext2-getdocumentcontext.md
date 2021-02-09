@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d552cc92-963f-43c1-949f-ae6b63a427b8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 46510ce794ea30fdd365a77007b962a1eafd5d31
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eaac527149d3224370f04d9dec46123b59568ac1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734347"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928749"
 ---
 # <a name="idebugcodecontext2getdocumentcontext"></a>IDebugCodeContext2::GetDocumentContext
 Obtiene el contexto del documento que corresponde a este contexto de código. El contexto del documento representa una posición en el archivo de código fuente que corresponde al código fuente que generó esta instrucción.
@@ -28,13 +28,13 @@ Obtiene el contexto del documento que corresponde a este contexto de código. El
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT GetDocumentContext( 
+HRESULT GetDocumentContext( 
    IDebugDocumentContext2** ppSrcCxt
 );
 ```
 
 ```csharp
-int GetDocumentContext( 
+int GetDocumentContext( 
    out IDebugDocumentContext2 ppSrcCxt
 );
 ```
@@ -46,7 +46,7 @@ enuncia Devuelve el objeto [IDebugDocumentContext2](../../../extensibility/debug
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error. Un motor de depuración debe devolver un código de error como `E_FAIL` cuando el `out` parámetro es como `null` cuando el contexto del código no tiene ninguna posición de origen asociada.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Por lo general, el contexto del documento se puede considerar como una posición en un archivo de código fuente mientras que el contexto del código es una posición de una instrucción de código en una secuencia de ejecución.
 
 ## <a name="see-also"></a>Vea también

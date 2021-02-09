@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: e082e494-2255-4d9d-a5a9-6dadd904bea8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8d169f86548e97d4bb745e1ba91f39782de97cbc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ca8fb9bb69e98b907ef48620149a0a3fd16dbe53
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734175"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928710"
 ---
 # <a name="idebugcodecontext3getprocess"></a>IDebugCodeContext3::GetProcess
 Recupera una referencia a la interfaz del proceso de depuración.

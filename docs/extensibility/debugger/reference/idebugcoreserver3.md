@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 51f5f41b-a5a4-4df0-a703-41f3d1811d7f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d110e66e937249fdee34f424d4f68a9b914113d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c6faa47bc107c8d00864307bdb6802908e085652
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732808"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928475"
 ---
 # <a name="idebugcoreserver3"></a>IDebugCoreServer3
 Esta interfaz proporciona acceso a información sobre el servidor en el que se está ejecutando el proceso.
@@ -48,7 +48,7 @@ IDebugCoreServer3 : IDebugCoreServer2
 |[GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)|Recupera un valor que indica el protocolo que se utiliza para comunicarse con el servidor.|
 |[DisableAutoAttach](../../../extensibility/debugger/reference/idebugcoreserver3-disableautoattach.md)|Deshabilita la configuración de adjuntar automáticamente para todos los motores de depuración que este servidor conoce.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Un proveedor de Puerto personalizado recibe la interfaz [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) en una llamada a un [evento](../../../extensibility/debugger/reference/idebugportevents2-event.md). La `IDebugCoreServer3` interfaz se puede obtener a partir de esa interfaz.
 
 ## <a name="requirements"></a>Requisitos

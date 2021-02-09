@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: bbf8707d-f89c-4177-b019-d519f1ec6f4a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 44dceaa8b5cffd3bd81b7e8527368c38a6faaf18
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: df11531cc90081aad45b887066ce0799af771747
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734160"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928723"
 ---
 # <a name="idebugcomplussymbolprovideraresymbolsloaded"></a>IDebugComPlusSymbolProvider::AreSymbolsLoaded
 Determina si los símbolos de depuración se cargan para el módulo especificado dado el identificador del dominio de aplicación.

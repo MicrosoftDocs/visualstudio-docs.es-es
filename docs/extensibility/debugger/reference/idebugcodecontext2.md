@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3670439e-2171-405d-9d77-dedb0f1cba93
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 778602cc29049d855c418fd8fa416feb1ad8e9fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f03bef276d4f4aada1a173c45defd100e4becbf4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734214"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928696"
 ---
 # <a name="idebugcodecontext2"></a>IDebugCodeContext2
 Esta interfaz representa la posición inicial de una instrucción de código. Para la mayoría de las arquitecturas en tiempo de ejecución de hoy en día, un contexto de código puede considerarse una dirección en la secuencia de ejecución de un programa.
@@ -25,7 +25,7 @@ Esta interfaz representa la posición inicial de una instrucción de código. Pa
 ## <a name="syntax"></a>Sintaxis
 
 ```
-IDebugCodeContext2 : IDebugMemoryContext2
+IDebugCodeContext2 : IDebugMemoryContext2
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para los implementadores
@@ -42,7 +42,7 @@ IDebugCodeContext2 : IDebugMemoryContext2
 |[GetDocumentContext](../../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md)|Obtiene el contexto del documento que corresponde al contexto de código activo.|
 |[GetLanguageInfo](../../../extensibility/debugger/reference/idebugcodecontext2-getlanguageinfo.md)|Obtiene la información de lenguaje para este contexto de código.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  La diferencia clave entre una `IDebugCodeContext2` interfaz y una interfaz [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) es que `IDebugCodeContext2` siempre se alinea con la instrucción. Esto significa que `IDebugCodeContext2` siempre apunta al principio de una instrucción, mientras que `IDebugMemoryContext2` puede apuntar a cualquier byte de memoria de la arquitectura en tiempo de ejecución. `IDebugCodeContext2` se incrementa mediante instrucciones en lugar de por el tamaño de almacenamiento básico (normalmente byte).
 
 ## <a name="requirements"></a>Requisitos

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 49358cbc-8973-4862-9dcc-79b1248e6712
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11b0e4cd7c851e65edf299f45ec97273804c25d8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3e8e9ea277ee5e383c6d61528183f43dd01a0040
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734289"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928866"
 ---
 # <a name="idebugclassfield"></a>IDebugClassField
 Esta interfaz representa una clase como un tipo.
@@ -25,7 +25,7 @@ Esta interfaz representa una clase como un tipo.
 ## <a name="syntax"></a>Sintaxis
 
 ```
-IDebugClassField : IDebugContainerField
+IDebugClassField : IDebugContainerField
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para los implementadores

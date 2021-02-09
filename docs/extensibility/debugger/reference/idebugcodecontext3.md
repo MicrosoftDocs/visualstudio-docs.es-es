@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: 524eb882-0ad5-4bfb-95eb-eb3abb3d0237
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e3f81168d9af7fbbb93b5c59f3ab19a17107b56b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 14bcfb7498ad22156ae18998ebe5958aad1b9026
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734188"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928762"
 ---
 # <a name="idebugcodecontext3"></a>IDebugCodeContext3
 Extiende la interfaz [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) para habilitar la recuperación de interfaces de módulo y de proceso.
@@ -40,7 +40,7 @@ IDebugCodeContext3 : IDebugCodeContext2
 |[GetModule](../../../extensibility/debugger/reference/idebugcodecontext3-getmodule.md)|Recupera una referencia a la interfaz del módulo de depuración.|
 |[GetProcess](../../../extensibility/debugger/reference/idebugcodecontext3-getprocess.md)|Recupera una referencia a la interfaz del proceso de depuración.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Se trata de una interfaz opcional que, por lo general, no tiene que implementarse.
 
 ## <a name="requirements"></a>Requisitos

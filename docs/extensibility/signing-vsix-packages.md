@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: e34cfc2c-361c-44f8-9cfe-9f2be229d248
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9152e45b402294dfd0bbb41bfda2c685588f01e
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: a0127b16438191a7d4f10ebf351b697455f72b16
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97716086"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928034"
 ---
 # <a name="signing-vsix-packages"></a>Firma de paquetes VSIX
 No es necesario que los ensamblados de extensión estén firmados antes de que se puedan ejecutar en Visual Studio, pero es recomendable hacerlo.
@@ -48,5 +48,5 @@ No es necesario que los ensamblados de extensión estén firmados antes de que s
 
    VSIXSignTool.exe signo/f \<certfile> /p \<password>\<VSIXfile>
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Suministro de extensiones de Visual Studio](../extensibility/shipping-visual-studio-extensions.md)

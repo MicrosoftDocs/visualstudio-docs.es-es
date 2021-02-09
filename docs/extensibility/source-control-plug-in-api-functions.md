@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4b0536dd-4f92-4ef2-9031-4548281f37aa
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 114862bb3358cc2a5400d6f40031deb030e4e4df
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 8df7a4be9c8a270feebd7e27d25c006eb4dc5817
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715995"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927943"
 ---
 # <a name="source-control-plug-in-api-functions"></a>Funciones de API de complemento de control de código fuente
 La API del complemento de control de código fuente proporciona las siguientes funciones, que debe implementar el complemento de control de código fuente de acuerdo con esta API. Las firmas de cada función y la semántica asociada a las marcas de bits y otros parámetros se describen en detalle en esta referencia.

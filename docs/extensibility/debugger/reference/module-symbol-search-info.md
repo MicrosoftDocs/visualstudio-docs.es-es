@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 432aff03-08a5-4c5a-b2d5-e212090fc70a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5f15587759c4f665d1593d1298c47459a0e64aac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1b296307ff30b045d7bda2db5d3605cf0a63d01e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714250"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928176"
 ---
 # <a name="module_symbol_search_info"></a>MODULE_SYMBOL_SEARCH_INFO
 
@@ -43,7 +43,7 @@ public struct MODULE_SYMBOL_SEARCH_INFO {
 }
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 `dwValidFields`\
 Combinación de marcas de la enumeración [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) que especifica el tipo de información de búsqueda que se describe en esta estructura.
@@ -51,7 +51,7 @@ Combinación de marcas de la enumeración [SYMBOL_SEARCH_INFO_FIELDS](../../../e
 `bstrVerboseSearchInfo`\
 La ruta de búsqueda y los resultados se concatenan en una sola cadena.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 
 Esta estructura se devuelve de una llamada al método [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) .
 

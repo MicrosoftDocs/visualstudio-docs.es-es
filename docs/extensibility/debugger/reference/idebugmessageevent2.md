@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a9ff3d00-e9ac-4cd6-bda9-584a4815aff8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 180162988cbb09f98b7fc2e8f33f6b5d0ed322ae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6796e2d4f3a7fa20e4bcab4088b6687866edf570
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727361"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928268"
 ---
 # <a name="idebugmessageevent2"></a>IDebugMessageEvent2
 El motor DE depuración (DE) usa esta interfaz para enviar un mensaje a Visual Studio que requiere una respuesta del usuario.
@@ -44,7 +44,7 @@ IDebugMessageEvent2 : IUnknown
 |[GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md)|Obtiene el mensaje que se va a mostrar.|
 |[SetResponse](../../../extensibility/debugger/reference/idebugmessageevent2-setresponse.md)|Establece la respuesta, si existe, en el cuadro de mensaje.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  El DE utilizará esta interfaz si requiere una respuesta específica del usuario para un mensaje determinado. Por ejemplo, si el DE obtiene un mensaje "acceso denegado" después de un intento de adjuntar de forma remota a un programa, el DE envía este mensaje determinado a Visual Studio en un `IDebugMessageEvent2` evento con el estilo de cuadro de mensaje `MB_RETRYCANCEL` . Esto permite al usuario Reintentar o cancelar la operación de adjuntar.
 
  El DE especifica cómo debe controlarse este mensaje siguiendo las convenciones de la función de Win32 `MessageBox` (vea [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox) para obtener más información).

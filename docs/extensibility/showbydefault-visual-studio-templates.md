@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 7be783f6-0ef6-42bc-924a-df9a2eba7781
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b17a9a29b55721695509deed6b3d33cc7554aa9
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 5cacf6f6774ad1c0f29ff81407848b23cb3b170d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903980"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928125"
 ---
 # <a name="showbydefault-element-visual-studio-templates"></a>ShowByDefault (elemento, plantillas de Visual Studio)
 Si `false` es, especifica que la plantilla solo se mostrará en el [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)especificado.
@@ -55,7 +55,7 @@ Si `false` es, especifica que la plantilla solo se mostrará en el [TemplateGrou
 
  El texto debe ser `true` o `false`. Si es true, especifica que la plantilla se muestra para todos los tipos de proyecto. Si es false, la plantilla solo se muestra en el `TemplateGroupID` especificado.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  `ShowByDefault` es un elemento opcional. El valor predeterminado es `true`.
 
 ## <a name="example"></a>Ejemplo
@@ -86,7 +86,7 @@ Si `false` es, especifica que la plantilla solo se mostrará en el [TemplateGrou
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Crear plantillas de proyecto y de elemento](../ide/creating-project-and-item-templates.md)
 - [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [TemplateGroupID (Elemento, Plantillas de Visual Studio)](../extensibility/templategroupid-element-visual-studio-templates.md)
