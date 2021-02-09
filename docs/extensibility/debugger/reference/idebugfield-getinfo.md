@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 7d508200-89ce-400f-a8ea-f28e7610cb2b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1b3251db3426f87901ca0768800feaa36fef5373
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 21d80f222bdea8a8e17a9b74eefb7885cab0c289
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728845"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869913"
 ---
 # <a name="idebugfieldgetinfo"></a>IDebugField::GetInfo
 Este método obtiene información que se pueda mostrar sobre el campo.
@@ -28,7 +28,7 @@ Este método obtiene información que se pueda mostrar sobre el campo.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT GetInfo( 
+HRESULT GetInfo( 
    FIELD_INFO_FIELDS dwFields,
    FIELD_INFO* pFieldInfo
 );

@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Roslyn analyzers
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: fc74a556fe6baf21b6270b21951018fc246aa962
-ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
+ms.openlocfilehash: 974de3094c7384f8170a42892a17f0eb49162094
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "97696628"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867794"
 ---
 # <a name="overview"></a>Información general
 
@@ -413,7 +413,7 @@ En un proyecto de .NET Core, si agrega una referencia a un proyecto que tiene an
 <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="5.0.0" PrivateAssets="all" />
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Información general de los analizadores de código en Visual Studio](../code-quality/roslyn-analyzers-overview.md)
 - [Enviar un error del analizador de código](https://github.com/dotnet/roslyn-analyzers/issues)

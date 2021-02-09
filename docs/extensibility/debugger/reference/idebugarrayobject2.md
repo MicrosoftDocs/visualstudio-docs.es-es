@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: be6e504d-4ab3-4141-a61b-0953ee0e038e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8a6580d0cbdead7866bbc6dd106a2aa0ea56f76
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 418ec9bdef9621f7623e254856ae33dec501a9c9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736231"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870030"
 ---
 # <a name="idebugarrayobject2"></a>IDebugArrayObject2
 > [!IMPORTANT]
@@ -40,7 +40,7 @@ IDebugArrayObject2 : IDebugArrayObject
 |[GetBaseIndices](../../../extensibility/debugger/reference/idebugarrayobject2-getbaseindices.md)|Recupera los índices de base (límites inferiores) de cada índice dado el número de dimensiones de la matriz.|
 |[HasBaseIndices](../../../extensibility/debugger/reference/idebugarrayobject2-hasbaseindices.md)|Determina si la matriz tiene definidos índices de base (límites inferiores).|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Un evaluador de expresiones utiliza esta interfaz para representar matrices administradas en un árbol de análisis.
 
 ## <a name="requirements"></a>Requisitos

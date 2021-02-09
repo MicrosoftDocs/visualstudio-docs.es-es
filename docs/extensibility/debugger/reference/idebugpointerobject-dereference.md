@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 196ec2cc-8569-4780-b217-23b24e7f50ca
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fe87d5db40ce663d84c9561e89a84e6fcb1684ed
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b3646df80dc93d3248c698efb172bb12a09925e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725566"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869640"
 ---
 # <a name="idebugpointerobjectdereference"></a>IDebugPointerObject::Dereference
 Obtiene el objeto al que se apunta.
@@ -28,7 +28,7 @@ Obtiene el objeto al que se apunta.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT DeReference( 
+HRESULT DeReference( 
    DWORD          dwIndex,
    IDebugObject** ppObject
 );
@@ -51,7 +51,7 @@ enuncia Devuelve un objeto [IDebugObject](../../../extensibility/debugger/refere
 ## <a name="return-value"></a>Valor devuelto
  Si se realiza correctamente, Devuelve S_OK; de lo contrario, devuelve un código de error. Devuelve E_FAIL si este objeto no apunta a otro objeto.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  El objeto al que se señala puede ser un tipo primitivo o más complejo, como una clase o estructura.
 
 ## <a name="see-also"></a>Vea también

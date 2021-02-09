@@ -1,5 +1,5 @@
 ---
-title: Habilitar o instalar analizadores de .NET propios
+title: Habilitación o instalación de analizadores de .NET propios
 ms.date: 08/03/2018
 description: Obtenga información sobre cómo habilitar analizadores de .NET propios desde el SDK de .NET o instalar estos analizadores como un paquete de NuGet.
 ms.custom: SEO-VS-2020
@@ -8,19 +8,19 @@ helpviewer_keywords:
 - .NET analyzers
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: ea13fde64f6214cf3c219de45c79458b75e1caf8
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: b41615e1826987cb42076ab3195fe7bfad235e7a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97615530"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867898"
 ---
-# <a name="enable-or-install-first-party-net-analyzers"></a>Habilitar o instalar analizadores de .NET propios
+# <a name="enable-or-install-first-party-net-analyzers"></a>Habilitación o instalación de analizadores de .NET propios
 
-## <a name="overview"></a>Introducción
+## <a name="overview"></a>Información general
 
 Los analizadores de .NET Compiler Platform (Roslyn) inspeccionan el código de C# o Visual Basic para supervisar la calidad del código y verificar si contiene problemas de estilo. Los analizadores de .NET propios son **independientes de la plataforma de destino**. Es decir, el proyecto no necesita tener como destino una plataforma .NET específica. Los analizadores funcionan para los proyectos que tienen `net5.0` como destino y versiones anteriores de .net, como `netcoreapp` , `netstandard` y `net472` .
 
@@ -33,7 +33,7 @@ Puede habilitar o instalar los analizadores de .NET propios de una de las siguie
 > [!NOTE]
 > Se recomienda habilitar los analizadores desde el SDK de .NET en lugar de instalar el `Microsoft.CodeAnalysis.NetAnalyzers` [paquete NuGet](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers), siempre que sea posible. La habilitación de los analizadores desde el SDK de .NET garantiza la obtención automática de las correcciones de errores del analizador y los nuevos analizadores en cuanto se actualice el SDK. En el modelo de NuGet, debe actualizar el paquete NuGet cada vez que quiera las correcciones de errores más recientes. El paquete NuGet se actualiza con más frecuencia.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Información general de los analizadores de código en Visual Studio](roslyn-analyzers-overview.md)
 - [Uso de analizadores de código en Visual Studio](use-roslyn-analyzers.md)

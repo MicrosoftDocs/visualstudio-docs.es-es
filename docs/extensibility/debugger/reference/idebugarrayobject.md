@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a1c8e77e-dee1-4748-a516-6ab032a8f54f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 709273b89d89759163acb725220d1092d33ad72f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 83d6a37a5b83cd71123521db70920fd3d454e059
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736215"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870069"
 ---
 # <a name="idebugarrayobject"></a>IDebugArrayObject
 > [!IMPORTANT]
@@ -28,7 +28,7 @@ ms.locfileid: "80736215"
 ## <a name="syntax"></a>Sintaxis
 
 ```
-IDebugArrayObject : IDebugObject
+IDebugArrayObject : IDebugObject
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para los implementadores
@@ -48,7 +48,7 @@ IDebugArrayObject : IDebugObject
 |[GetRank](../../../extensibility/debugger/reference/idebugarrayobject-getrank.md)|Obtiene el rango de la matriz.|
 |[GetDimensions](../../../extensibility/debugger/reference/idebugarrayobject-getdimensions.md)|Obtiene las dimensiones de la matriz.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Un evaluador de expresiones utiliza esta interfaz para representar matrices en un árbol de análisis.
 
 ## <a name="requirements"></a>Requisitos

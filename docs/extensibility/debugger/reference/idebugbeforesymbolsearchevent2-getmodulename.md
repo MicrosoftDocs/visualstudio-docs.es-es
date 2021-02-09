@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 0b4abeac-2eaf-4b2e-a2d5-c9ec303bc869
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0d97e78b3238b0efababb3fd4782743d03595387
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a90baaadae88325754d41c76421a27d57220a533
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736121"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870004"
 ---
 # <a name="idebugbeforesymbolsearchevent2getmodulename"></a>IDebugBeforeSymbolSearchEvent2::GetModuleName
 Recupera el nombre del módulo que se está depurando actualmente.

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 8de988ab-cd79-4287-be72-3c900f2fe407
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 617711a611e6eb1ea162c3abd8ad2b793b4756cb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b502b83ec793733ef642585b6ded260f72aa1be
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725625"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869666"
 ---
 # <a name="idebugpointerfieldgetdereferencedfield"></a>IDebugPointerField::GetDereferencedField
 Este método devuelve el tipo de objeto al que señala este objeto de puntero.
@@ -46,7 +46,7 @@ enuncia Devuelve un [IDebugField](../../../extensibility/debugger/reference/ideb
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Si, por ejemplo, el objeto [IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md) apunta a un entero, el tipo [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) devuelto por este método describe ese tipo entero.
 
 ## <a name="see-also"></a>Vea también

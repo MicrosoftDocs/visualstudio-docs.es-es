@@ -9,17 +9,17 @@ helpviewer_keywords:
 ms.assetid: ab38f7ca-fa01-4cf3-a06c-56cbb7207617
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: 32331a5b628c27dc79d6a2e5919c8d268c96a3aa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 93296770597e8809c5b739b46d8eaefdc8fe5daf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737994"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870290"
 ---
 # <a name="bp_location_code_func_offset"></a>BP_LOCATION_CODE_FUNC_OFFSET
 Describe la ubicación de desplazamiento de un punto de interrupción en una función en el código.
@@ -33,14 +33,14 @@ typedef struct _BP_LOCATION_CODE_FUNC_OFFSET {
 } BP_LOCATION_CODE_FUNC_OFFSET;
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 `bstrContext`\
 Contexto del punto de interrupción, normalmente un nombre de método o función tal y como se ha detectado en una pila de llamadas.
 
 `pFuncPos`\
 El objeto [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md) que describe el nombre de la función y la posición relativa desde el principio de la función.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Esta estructura es miembro de la estructura [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) como parte de una Unión.
 
 El `pFuncPos` miembro indica dónde establecer el punto de interrupción de la función.

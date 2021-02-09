@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9667b0a5-4295-46cc-9388-b75c1350be15
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dab01c1e956ced7e6894b951ab16f4ce68eb778b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64717948f6406d1c6e9a5c1fabfec4b3a16bf116
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736295"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870264"
 ---
 # <a name="idebugarrayfield"></a>IDebugArrayField
 Esta interfaz describe un tipo o símbolo de matriz.
@@ -25,7 +25,7 @@ Esta interfaz describe un tipo o símbolo de matriz.
 ## <a name="syntax"></a>Sintaxis
 
 ```
-IDebugArrayField : IDebugContainerField
+IDebugArrayField : IDebugContainerField
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para los implementadores

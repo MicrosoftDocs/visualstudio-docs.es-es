@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 43e2b364-cbbe-4755-a7e6-a03f3054c965
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fae1f22c6db22cd6cff93cfb1b98a28620a1537c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 54773ee6f770855122992f49bebad44fa1f6129a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737272"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870303"
 ---
 # <a name="disassembly_stream_scope"></a>DISASSEMBLY_STREAM_SCOPE
 Especifica el ámbito de la secuencia de desensamblado.
@@ -59,7 +59,7 @@ Cuando lo devuelve el `IDebugDisassemblyStream2::GetScope` método, especifica q
 `DSS_ALL`\
 Especifica el desensamblado para todo el espacio de direcciones.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Se pasa como argumento al método [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md) y lo devuelve el método [getscope (](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) .
 
 Estos valores se pueden combinar con una operación bit a bit `OR` .

@@ -8,15 +8,15 @@ helpviewer_keywords:
 - code analysis FAQ
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: d581ef60ebfe9ff5aeceae4c16ee4294eae5d850
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 951e9b951f1d90077fe29506e9c288fb19f2d5ff
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96112195"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867768"
 ---
 # <a name="frequently-asked-questions-about-legacy-fxcop-and-net-analyzers"></a>Preguntas más frecuentes sobre los analizadores de FxCop y .NET heredados
 
@@ -60,8 +60,8 @@ Para obtener información sobre qué reglas de análisis heredado se han traslad
 
 Si el proyecto utiliza la opción de compilación para tratar las advertencias como errores, las advertencias del analizador pueden aparecer como errores. Para evitar que las advertencias de análisis de código se traten como errores, siga los pasos descritos en las [preguntas más frecuentes sobre análisis de código](../code-quality/analyzers-faq.md#treat-warnings-as-errors).
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [Introducción a los analizadores de .NET Compiler Platform](roslyn-analyzers-overview.md)
-- [Migrar a analizadores de .NET](migrate-from-legacy-analysis-to-net-analyzers.md)
-- [Instalar analizadores de .NET](install-net-analyzers.md)
+- [Migración a los analizadores de .NET](migrate-from-legacy-analysis-to-net-analyzers.md)
+- [Instalación de los analizadores de .NET](install-net-analyzers.md)
