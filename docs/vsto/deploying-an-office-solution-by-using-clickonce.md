@@ -12,15 +12,15 @@ helpviewer_keywords:
 - ClickOnce deployment [Office development in Visual Studio], deploying solutions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d808348528a64cc184c7a6c50359c057b2325a75
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: da527da4504d4c2d9375aee0209b0e261fe5fd0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845653"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877940"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>Implementar una solución de Office mediante ClickOnce
   Puede implementar su solución de Office en menos pasos si usa ClickOnce. Si publica actualizaciones, la solución las detectará e instalará automáticamente. Sin embargo, ClickOnce requiere que instale la solución por separado para cada usuario de un equipo. Por lo tanto, debería considerar la posibilidad de usar Windows Installer (*. msi*) si más de un usuario ejecuta la solución en el mismo equipo.
@@ -157,7 +157,7 @@ ms.locfileid: "96845653"
 
 2. Elija el nombre del equipo, la carpeta **sitios web** o el sitio web que está configurando.
 
-3. En la barra de menús, elija Propiedades de la **acción**  >  **Properties**.
+3. En la barra de menús, elija Propiedades de la **acción**  >  .
 
 4. En la pestaña **encabezados HTTP** , elija el botón **tipos MIME** .
 
@@ -426,7 +426,7 @@ ms.locfileid: "96845653"
 
      El cuadro **valor** contiene el identificador del manifiesto de implementación.
 
-4. Antes del identificador, escriba la ruta de acceso completa del documento, seguida de una barra, en el identificador de la *ruta de acceso* | *Identifier* (por ejemplo, *File://servername/FolderName/FILENAME|74744e4b-e4d6-41eb-84f7-ad20346fe2d9*.
+4. Antes del identificador, escriba la ruta de acceso completa del documento, seguida de una barra, en el identificador de la *ruta de acceso* |  (por ejemplo, *File://servername/FolderName/FILENAME|74744e4b-e4d6-41eb-84f7-ad20346fe2d9*.
 
      Para obtener más información sobre cómo dar formato a este identificador, vea [información general sobre las propiedades personalizadas del documento](../vsto/custom-document-properties-overview.md).
 

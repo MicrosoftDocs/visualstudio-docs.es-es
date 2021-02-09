@@ -14,15 +14,15 @@ helpviewer_keywords:
 - e-mail [Office development in Visual Studio], sending
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5f31fdb92a5acff16b1d6e8001ea88931a9a22ab
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: c2b702d2986315ce32a9ab489db239f2c784f3e6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525380"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877868"
 ---
 # <a name="how-to-programmatically-send-email"></a>Cómo: enviar correo electrónico mediante programación
   En este ejemplo se envía un mensaje de correo electrónico a los contactos que tienen el nombre de dominio **example.com** en sus direcciones de correo electrónico.
@@ -42,7 +42,7 @@ ms.locfileid: "97525380"
 ## <a name="robust-programming"></a>Programación sólida
  No quite el código de filtro que busca el nombre de dominio **example.com**. La solución enviará mensajes de correo electrónico a todos los contactos si quita el filtro.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Trabajar con elementos de correo](../vsto/working-with-mail-items.md)
 - [Cómo: crear un elemento de correo electrónico mediante programación](../vsto/how-to-programmatically-create-an-e-mail-item.md)
 - [Cómo: obtener acceso a los contactos de Outlook mediante programación](../vsto/how-to-programmatically-access-outlook-contacts.md)
