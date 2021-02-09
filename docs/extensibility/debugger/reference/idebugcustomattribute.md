@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c5ae41e9-00b9-4cca-871d-b8de9ef390d1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a31133139d0104cd29f5d0d0e760bd78ec5783fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a1baa46cd9be53134d42c71e8c2bd88e3e2c38d4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732681"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907955"
 ---
 # <a name="idebugcustomattribute"></a>IDebugCustomAttribute
 Esta interfaz representa un atributo personalizado y puede proporcionar el nombre, el elemento primario y el tipo de clase del atributo.
@@ -25,7 +25,7 @@ Esta interfaz representa un atributo personalizado y puede proporcionar el nombr
 ## <a name="syntax"></a>Sintaxis
 
 ```
-IDebugCustomAttribute : IUnknown
+IDebugCustomAttribute : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para los implementadores
@@ -44,7 +44,7 @@ IDebugCustomAttribute : IUnknown
 |[GetName](../../../extensibility/debugger/reference/idebugcustomattribute-getname.md)|Obtiene el nombre del atributo personalizado.|
 |[GetAttributeBytes](../../../extensibility/debugger/reference/idebugcustomattribute-getattributebytes.md)|Obtiene la información del atributo como un BLOB de bytes.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Un atributo personalizado es una estructura para C# que proporciona metadatos personalizados asociados a una clase o un método determinados.
 
 ## <a name="requirements"></a>Requisitos

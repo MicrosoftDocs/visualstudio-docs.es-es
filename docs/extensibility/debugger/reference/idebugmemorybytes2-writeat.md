@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 61cc3704-47fa-4d9b-aa62-bb4585ac8fb1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ac9113424c6cd5cce230774a6e5335ffa4d4ba77
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8ff77985bca8772d92c3b90e7a727c0077137e24
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727516"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909905"
 ---
 # <a name="idebugmemorybytes2writeat"></a>IDebugMemoryBytes2::WriteAt
 Escribe el número especificado de bytes de memoria, comenzando en la dirección especificada.
@@ -29,7 +29,7 @@ Escribe el número especificado de bytes de memoria, comenzando en la dirección
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT WriteAt( 
+HRESULT WriteAt( 
    IDebugMemoryContext2* pStartContext,
    DWORD                 dwCount,
    BYTE*                 rgbMemory
@@ -57,7 +57,7 @@ de Bytes que se van a escribir. Se supone que la matriz tiene un `dwCount` tama�
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve `S_FALSE` si no se pueden escribir todos los bytes o devuelve un código de error (normalmente `E_FAIL` ).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Si la dirección inicial no está dentro de la ventana memoria representada por este objeto [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) , no se produce ninguna escritura y se devuelve un código de error `E_FAIL` , incluso si la cantidad que se va a escribir se superpone en el espacio de memoria.
 
 ## <a name="see-also"></a>Vea también

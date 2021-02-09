@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 07253b74-7d39-48e0-8e85-ac8dfd919f6e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 15e98884d040cfb2ebf1b33a56c7edea331fbff0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ac8321bc571264d050f5f3559e840c3d169096d7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720616"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909690"
 ---
 # <a name="idebugreference2getderivedmostreference"></a>IDebugReference2::GetDerivedMostReference
 Obtiene la referencia más derivada de una referencia. Reservado para un uso futuro.
@@ -28,13 +28,13 @@ Obtiene la referencia más derivada de una referencia. Reservado para un uso fut
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT GetDerivedMostReference( 
+HRESULT GetDerivedMostReference( 
    IDebugReference2** ppDerivedMost
 );
 ```
 
 ```csharp
-int GetDerivedMostReference( 
+int GetDerivedMostReference( 
    out IDebugReference2 ppDerivedMost
 );
 ```
@@ -46,7 +46,7 @@ enuncia Devuelve un objeto [IDebugReference2](../../../extensibility/debugger/re
 ## <a name="return-value"></a>Valor devuelto
  Siempre devuelve `E_NOTIMPL`.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Por ejemplo, si esta propiedad describe un objeto que implementa `ClassRoot` pero que es realmente una instancia de `ClassDerived` que se deriva de `ClassRoot` , este método devuelve un objeto [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) que representa una referencia al `ClassDerived` objeto.
 
 ## <a name="see-also"></a>Vea también

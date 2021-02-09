@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 368ced5b-c5d9-4090-a5b4-26ff400d1a55
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8d60bb8eb333e117290c710e03faafc51f4e31a7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c8f9ad40c4c4ae61ea676755a6fa97849b6bda6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732899"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907965"
 ---
 # <a name="idebugcoreserver3getconnectionprotocol"></a>IDebugCoreServer3::GetConnectionProtocol
 Devuelve un valor que indica el protocolo que se utiliza para la comunicación entre el servidor y el paquete de depuración.
@@ -28,14 +28,14 @@ Devuelve un valor que indica el protocolo que se utiliza para la comunicación e
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT GetConnectionProtocol(
-   CONNECTION_PROTOCOL* pProtocol
+HRESULT GetConnectionProtocol(
+   CONNECTION_PROTOCOL* pProtocol
 );
 ```
 
 ```csharp
-int GetConnectionProtocol(
-   CONNECTION_PROTOCOL[] pProtocol
+int GetConnectionProtocol(
+   CONNECTION_PROTOCOL[] pProtocol
 );
 ```
 

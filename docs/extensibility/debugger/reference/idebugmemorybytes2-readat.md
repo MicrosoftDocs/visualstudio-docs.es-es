@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: b413684d-4155-4bd4-ae30-ffa512243b5f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f909ac3d2e2993879e4c24140abbf23c2ee8d545
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 81a6ce40457243e5492d5c6a44dd5d9dd590920f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727535"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909925"
 ---
 # <a name="idebugmemorybytes2readat"></a>IDebugMemoryBytes2::ReadAt
 Lee una secuencia de bytes, comenzando en una ubicación determinada.
@@ -29,7 +29,7 @@ Lee una secuencia de bytes, comenzando en una ubicación determinada.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT ReadAt( 
+HRESULT ReadAt( 
    IDebugMemoryContext2* pStartContext,
    DWORD                 dwCount,
    BYTE*                 rgbMemory,
@@ -67,7 +67,7 @@ enuncia Devuelve el número de bytes contiguos leídos realmente.
 ## <a name="return-value"></a>Valor devuelto
  Si se realiza correctamente, Devuelve S_OK; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Si se solicitan 100 bytes y los primeros 50 son legibles, los 20 siguientes no son legibles y los 30 restantes se pueden leer, este método devuelve:
 
  *`pdwRead` = 50

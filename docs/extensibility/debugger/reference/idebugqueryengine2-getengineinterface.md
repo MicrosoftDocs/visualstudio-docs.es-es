@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: ed84aa98-7ec7-48f3-97ae-821090bc3664
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 82f3214783a35e668bf3164c8659f60f863e9a43
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ab1d9be5e4405cea3bb75d7837d4ff3ad9a91e9c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720667"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909788"
 ---
 # <a name="idebugqueryengine2getengineinterface"></a>IDebugQueryEngine2::GetEngineInterface
 Obtiene una interfaz personalizada del motor DE depuración (DE).
@@ -28,13 +28,13 @@ Obtiene una interfaz personalizada del motor DE depuración (DE).
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT GetEngineInterface( 
+HRESULT GetEngineInterface( 
    IUnknown** ppUnk
 );
 ```
 
 ```csharp
-int GetEngineInterface( 
+int GetEngineInterface( 
    out object ppUnk
 );
 ```
@@ -46,7 +46,7 @@ enuncia Devuelve un `IUnknown` objeto que representa el motor de depuración (de
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  La interfaz resultante debe usarse con cuidado, ya que la llamada a través de las interfaces recuperadas de este método evita el procesamiento del administrador de depuración de la sesión y puede dar lugar a un estado incorrecto o a generar errores durante la depuración.
 
 ## <a name="see-also"></a>Vea también

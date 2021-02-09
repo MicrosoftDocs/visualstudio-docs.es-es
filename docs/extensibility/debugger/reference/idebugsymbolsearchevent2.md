@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9b946d55-ff85-44eb-b40a-efbf8282eafd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cbe99422e506fb86b0a7e1d9d3242783f3258e6a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ad5fa763be8929a9122a6fd7517b401f5a874e04
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718788"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909348"
 ---
 # <a name="idebugsymbolsearchevent2"></a>IDebugSymbolSearchEvent2
 El motor de depuración (DE) envía esta interfaz para indicar que se han cargado los símbolos de depuración para un módulo que se está depurando.
@@ -41,7 +41,7 @@ IDebugSymbolSearchEvent2 : IUnknown
 |------------|-----------------|
 |[GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md)|Recupera información sobre los resultados de una búsqueda de símbolos.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Este evento se enviará incluso si los símbolos no se cargaron. La llamada a `IDebugSymbolSearchEvent2::GetSymbolSearchInfo` permite al controlador de este evento determinar si el módulo tiene realmente algún símbolo.
 
  Visual Studio suele usar este evento para actualizar el estado de los símbolos cargados en la ventana **módulos** .

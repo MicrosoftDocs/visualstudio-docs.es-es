@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 2e4653c5-10f1-493c-9973-f31d266c5d48
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3c0f6e66b6585eafde656cd7be88d0c76bbb3f37
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1449141885a51b3557f8c626b309fcc64c7fb268
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720707"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909842"
 ---
 # <a name="idebugproviderprogramnode2unmarshaldebuggeeinterface"></a>IDebugProviderProgramNode2::UnmarshalDebuggeeInterface
 Obtiene una interfaz especificada a través de los límites del proceso.
@@ -28,16 +28,16 @@ Obtiene una interfaz especificada a través de los límites del proceso.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT UnmarshalDebuggeeInterface(
-   REFIID riid,
-   void** ppvObject
+HRESULT UnmarshalDebuggeeInterface(
+   REFIID riid,
+   void** ppvObject
 );
 ```
 
 ```csharp
-int UnmarshalDebuggeeInterface(
-   ref Guid   riid,
-   out IntPtr ppvObject
+int UnmarshalDebuggeeInterface(
+   ref Guid   riid,
+   out IntPtr ppvObject
 );
 ```
 
@@ -51,7 +51,7 @@ enuncia Devuelve el objeto que implementa la interfaz deseada. [C++] Esto se pue
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Este método se usa cuando el motor de depuración se está ejecutando en el [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] espacio de proceso y el programa que se está depurando se ejecuta en su propio espacio de proceso.
 
 ## <a name="see-also"></a>Vea también

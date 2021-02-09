@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a1e9b1f853ad540f65101bffabea922f8fdcef1
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 144e8f965a456c4763a74daa2cedeb8c571e518f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360897"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908964"
 ---
 # <a name="about-domain-specific-languages"></a>Acerca de los lenguajes específicos de dominio
 
@@ -64,7 +64,7 @@ El desarrollo específico del dominio es el proceso de identificar las partes de
 
 Un lenguaje gráfico específico del dominio debe incluir las siguientes características:
 
-- Notación
+- Notation
 
 - Modelo de dominio
 
@@ -74,7 +74,7 @@ Un lenguaje gráfico específico del dominio debe incluir las siguientes caracte
 
 - Integración con Visual Studio
 
-### <a name="notation"></a>Notación
+### <a name="notation"></a>Notation
 
 Un lenguaje específico del dominio debe tener un conjunto razonablemente pequeño de elementos que se pueden definir y ampliar fácilmente para representar construcciones específicas del dominio. Una notación consta de formas, que representan los elementos, y los conectores, que representan las relaciones entre los elementos, en una superficie de diagrama gráfico. En [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] , las formas se pueden extender y refinar para representar los elementos de su lenguaje específico del dominio.
 

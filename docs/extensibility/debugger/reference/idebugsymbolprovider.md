@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: df5f095f-1dee-46f9-84cf-92417c71d5fb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11e180288a9312d9af5a3d3b1bd63d8f2266f581
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8485497f9a5f0c6a04090755e6848bf8ed916ab3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719172"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909563"
 ---
 # <a name="idebugsymbolprovider"></a>IDebugSymbolProvider
 Esta interfaz representa un proveedor de símbolos que proporciona símbolos y tipos y los devuelve como campos.
@@ -54,7 +54,7 @@ En la tabla siguiente se muestran los métodos de `IDebugSymbolProvider` .
 |[GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)|Asigna un nombre de símbolo a un tipo de símbolo.|
 |[GetNextAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnextaddress.md)|Obtiene la dirección de depuración que sigue a una dirección de depuración determinada en un método.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Esta interfaz asigna posiciones de documento en direcciones de depuración y viceversa.
 
 ## <a name="requirements"></a>Requisitos

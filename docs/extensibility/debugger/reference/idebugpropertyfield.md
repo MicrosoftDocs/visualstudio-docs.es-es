@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b50edb2c-fb8d-4def-993d-17d23d2027c1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96a3f3c2dca16cd2c28c9d1727e4ac145c91c482
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 303ff1820d0213766ec5ad186ce7b9a3483c0bfa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720695"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909859"
 ---
 # <a name="idebugpropertyfield"></a>IDebugPropertyField
 Esta interfaz proporciona las funciones que permiten obtener y establecer una propiedad.
@@ -25,7 +25,7 @@ Esta interfaz proporciona las funciones que permiten obtener y establecer una pr
 ## <a name="syntax"></a>Sintaxis
 
 ```
-IDebugPropertyField : IDebugContainerField
+IDebugPropertyField : IDebugContainerField
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para los implementadores
@@ -42,7 +42,7 @@ IDebugPropertyField : IDebugContainerField
 |[GetPropertyGetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md)|Obtiene el método que obtiene la propiedad.|
 |[GetPropertySetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertysetter.md)|Obtiene el método que establece la propiedad.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Una propiedad es un concepto de código administrado y representa un método que se trata como una variable. Las propiedades no existen en C++ no administrado.
 
 ## <a name="requirements"></a>Requisitos
