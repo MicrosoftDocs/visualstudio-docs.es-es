@@ -20,15 +20,15 @@ helpviewer_keywords:
 - Windows Forms controls [Office development in Visual Studio], Toolbox
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 63459f4daf1f9fe717946491a997ba47510fbab8
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: cc507d31f791a3f3d7addbcffc0b9b87963d443f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524457"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888724"
 ---
 # <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Limitaciones de los controles de Windows Forms en documentos de Office
 
@@ -185,7 +185,7 @@ Los siguientes controles y componentes no están disponibles en el **cuadro de h
 
 Si crea un proyecto de Office de nivel de documento que use un documento de Word o un libro de Excel existente que contenga controles ActiveX, no se perderá la funcionalidad de los controles ActiveX. sin embargo, no se admite la adición de nuevos controles ActiveX a los documentos desde Visual Studio. Por ejemplo, si el documento de Word tiene un botón del cuadro de herramientas de **control** que ejecuta una macro Visual Basic para aplicaciones (VBA), seguirá ejecutando la macro después de que el documento se haya usado en un proyecto de Office. Sin embargo, se recomienda que quite los controles ActiveX y las macros VBA y los reemplace por Windows Forms controles y código administrado.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Controles en documentos de Office](../vsto/controls-on-office-documents.md)
 - [Información general sobre los controles de Windows Forms en documentos de Office](../vsto/windows-forms-controls-on-office-documents-overview.md)

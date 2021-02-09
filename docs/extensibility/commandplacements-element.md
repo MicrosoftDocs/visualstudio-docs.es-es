@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 78a5724a-3b9f-4c78-9c0d-8faa3924f81c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 301fe17f3ad12bfd1e150d9bf48180be6cb62adc
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 3c43f2063062d96b8ab635e3d9786aead4b4c150
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974017"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889049"
 ---
 # <a name="commandplacements-element"></a>Elemento CommandPlacements
 El elemento CommandPlacements agrupa los elementos CommandPlacement y otras agrupaciones CommandPlacements.

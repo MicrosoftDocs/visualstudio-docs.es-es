@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Outlook folders [Office development in Visual Studio], moving items
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7b247df68827767a53d8d066f4750dfa9da52ac7
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 770f056dc681e1ee2cd6704f9bd1d42afae4957b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525573"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888867"
 ---
 # <a name="how-to-programmatically-move-items-in-outlook"></a>Cómo: trasladar elementos en Outlook mediante programación
   En este ejemplo se mueven los mensajes de correo electrónico sin leer de la **bandeja de entrada** a una carpeta denominada **Test**. En el ejemplo solo se mueven los mensajes que tienen la palabra **Test** en el `Subject` campo.
@@ -36,7 +36,7 @@ ms.locfileid: "97525573"
 
 - Un mensaje de correo electrónico que llega con la palabra **Test** en el `Subject` campo.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Trabajar con carpetas](../vsto/working-with-folders.md)
 - [Cómo: recuperar una carpeta por nombre mediante programación](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
 - [Cómo: buscar en una carpeta específica mediante programación](../vsto/how-to-programmatically-search-within-a-specific-folder.md)

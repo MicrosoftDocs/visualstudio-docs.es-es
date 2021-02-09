@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Excel [Office development in Visual Studio], opening workbooks
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f7de4072df177bd9a7c6ae23bf59e44e50d56e32
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 5bca39b5536d5717da994808f23ee541856264ba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523894"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888737"
 ---
 # <a name="how-to-programmatically-open-workbooks"></a>Cómo: abrir libros mediante programación
   La <xref:Microsoft.Office.Interop.Excel.Workbooks> colección de Microsoft Office Excel permite trabajar con todos los libros abiertos y abrir los libros.
@@ -39,7 +39,7 @@ ms.locfileid: "97523894"
 
 - Un libro denominado `YourWorkbook.xls` debe existir en un directorio denominado `Test` en la unidad C.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Trabajar con libros](../vsto/working-with-workbooks.md)
 - [Cómo: abrir archivos de texto como libros mediante programación](../vsto/how-to-programmatically-open-text-files-as-workbooks.md)
 - [Cómo: crear nuevos libros mediante programación](../vsto/how-to-programmatically-create-new-workbooks.md)

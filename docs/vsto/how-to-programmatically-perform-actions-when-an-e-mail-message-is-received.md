@@ -15,15 +15,15 @@ helpviewer_keywords:
 - e-mail [Office development in Visual Studio], custom actions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 22dbd3ae72ac8c269de603ce22bbfebef669be08
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: d0909b94f00b344383c2b042ec1e143f9294ee8d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523878"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888711"
 ---
 # <a name="how-to-programmatically-perform-actions-when-an-email-message-is-received"></a>Cómo: realizar acciones al recibir un mensaje de correo electrónico mediante programación
   Este ejemplo realiza acciones personalizadas cuando el usuario recibe un mensaje de correo electrónico.
@@ -34,7 +34,7 @@ ms.locfileid: "97523878"
  [!code-vb[Trin_Outlook_RL_PerformActions#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_PerformActions/thisaddin.vb#1)]
  [!code-csharp[Trin_Outlook_RL_PerformActions#1](../vsto/codesnippet/CSharp/Trin_Outlook_RL_PerformActions/thisaddin.cs#1)]
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Cómo: crear controladores de eventos en proyectos de Office](../vsto/how-to-create-event-handlers-in-office-projects.md)
 - [Trabajar con elementos de correo](../vsto/working-with-mail-items.md)
 - [Introducción a la programación de complementos de VSTO](../vsto/getting-started-programming-vsto-add-ins.md)

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: a7816161-0490-4043-86f5-0f7331ed83b3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01a46f54bfbce6126c16fa418d5c4bef53afd09b
-ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
+ms.openlocfilehash: bda44c0c3f6c4b1986fc45a7c9cbf5c4ffa83043
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98533914"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889010"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>Tutorial: publicar una extensión de Visual Studio
 
@@ -62,7 +62,7 @@ En este artículo se usa una extensión VSPackage predeterminada, pero los pasos
 
 3. En la esquina superior derecha, haga clic en **iniciar sesión**.
 
-4. Para ello, use la cuenta de Microsoft. Si no tiene un cuenta de Microsoft, puede crear uno en este momento.
+4. Para ello, use la cuenta de Microsoft. Si no tiene un cuenta Microsoft, puede crear uno en este momento.
 
 5. Haga clic en **publicar extensiones**. Esta opción le lleva a la página de administración de todas las extensiones. Si no tiene una cuenta de publicador, se le pedirá que cree una en este momento.
 
@@ -118,7 +118,7 @@ Antes de empezar, asegúrese de que ha creado la nueva versión de lanzamiento d
 
 1.  En un explorador Web, vaya a [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs).
 
-1.  En la esquina superior derecha, haga clic en **iniciar sesión** e inicie sesión con el cuenta de Microsoft.
+1.  En la esquina superior derecha, haga clic en **iniciar sesión** e inicie sesión con el cuenta Microsoft.
 
     :::image type="content" source="media/marketplace-upload-extension.png" alt-text="Captura de pantalla que muestra la selección de un archivo de extensión cargado en el explorador de archivos.":::
 
@@ -220,7 +220,7 @@ Puede quitar la extensión de Visual Studio Marketplace y del equipo.
 
 2. En la esquina superior derecha, haga clic en **publicar** extensiones. Elija el publicador que usó para publicar **TestPublish**. Aparece la lista de **TestPublish** .
 
-3. Haga clic con el botón derecho en la entrada de extensión y haga clic en **quitar**. Se le pedirá que confirme si desea quitar la extensión. Haga clic en **Aceptar**.
+3. Haga clic con el botón derecho en la entrada de extensión y haga clic en **quitar**. Se le pedirá que confirme si desea quitar la extensión. Haga clic en **OK**.
 
 ### <a name="to-remove-the-extension-from-your-computer"></a>Para quitar la extensión del equipo
 

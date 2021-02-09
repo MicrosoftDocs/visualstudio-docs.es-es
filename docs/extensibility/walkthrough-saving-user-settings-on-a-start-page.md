@@ -7,16 +7,16 @@ ms.topic: how-to
 ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 17dfb844733a15b1607d2daa2ce24a8f6e0be420
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: e32db6c2aecde61598036b8ba2ed21141e41a4af
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876186"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888945"
 ---
 # <a name="walkthrough-save-user-settings-on-a-start-page"></a>Tutorial: guardar la configuración de usuario en una página de inicio
 
@@ -28,7 +28,7 @@ Cuando se ejecuta en la instancia experimental de Visual Studio, la configuraci�
 
 Para obtener más información sobre cómo conservar la configuración, vea [extender la configuración de usuario y las opciones](../extensibility/extending-user-settings-and-options.md).
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
 
 > [!NOTE]
 > Para seguir este tutorial, debe instalar SDK de Visual Studio. Para obtener más información, vea el [SDK de Visual Studio](../extensibility/visual-studio-sdk.md).
@@ -170,7 +170,7 @@ Para obtener más información sobre cómo conservar la configuración, vea [ext
 
 3. En el nodo **entorno** , haga clic en **Inicio** y, a continuación, en la lista **Personalizar Página de inicio** , seleccione **[extensión instalada] guardar la página de inicio** de la configuración.
 
-     Haga clic en **Aceptar**.
+     Haga clic en **OK**.
 
 4. Cierre la página de inicio si está abierta y, a continuación, en el menú **Ver** , haga clic en **Página de inicio**.
 
@@ -198,7 +198,7 @@ Para obtener más información sobre cómo conservar la configuración, vea [ext
 
 Puede modificar este control de usuario para guardar y recuperar cualquier número de valores de configuración personalizados mediante el uso de diferentes valores de controladores de eventos diferentes para obtener y establecer la `SettingsStore` propiedad. Siempre que use un `propertyName` parámetro diferente para cada llamada a <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore.SetString%2A> , los valores no se sobrescriben entre sí en el registro.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - <xref:EnvDTE80.DTE2?displayProperty=fullName>
 - [Agregar comandos de Visual Studio a una página de inicio](../extensibility/adding-visual-studio-commands-to-a-start-page.md)

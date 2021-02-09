@@ -13,15 +13,15 @@ helpviewer_keywords:
 - text files, opening as workbooks
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5f471161a8563718f69f14ea341ab099fbf138d8
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 47582718128fc9818bb42571e3f33c0190a32d9e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525531"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888750"
 ---
 # <a name="how-to-programmatically-open-text-files-as-workbooks"></a>Cómo: abrir archivos de texto como libros mediante programación
   Puede abrir un archivo de texto como un libro de. Debe pasar el nombre del archivo de texto que desea abrir. Puede especificar varios parámetros opcionales, como el número de fila en el que se va a iniciar el análisis y el formato de columna de los datos del archivo.
@@ -39,7 +39,7 @@ ms.locfileid: "97525531"
 
 - Archivo de texto `Test.txt` que se va a almacenar en la unidad C.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Trabajar con libros](../vsto/working-with-workbooks.md)
 - [Cómo: abrir libros mediante programación](../vsto/how-to-programmatically-open-workbooks.md)
 - [Cómo: crear nuevos libros mediante programación](../vsto/how-to-programmatically-create-new-workbooks.md)

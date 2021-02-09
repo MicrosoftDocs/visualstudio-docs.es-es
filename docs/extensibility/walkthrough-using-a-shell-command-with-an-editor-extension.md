@@ -9,22 +9,22 @@ helpviewer_keywords:
 ms.assetid: 08526848-a442-4cd4-afa1-b2eac2005adb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38d855ebe34c54d06159ecd958a8b1d31ae0131f
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 4e0072d3f39ef037dfaa660d3a297afb59baacf3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877824"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888919"
 ---
 # <a name="walkthrough-use-a-shell-command-with-an-editor-extension"></a>Tutorial: usar un comando de Shell con una extensión de editor
 Desde un VSPackage, puede agregar características como comandos de menú al editor. En este tutorial se muestra cómo agregar un elemento gráfico a una vista de texto en el editor invocando un comando de menú.
 
  En este tutorial se muestra el uso de un VSPackage junto con una parte del componente de Managed Extensibility Framework (MEF). Debe usar un VSPackage para registrar el comando de menú con el shell de Visual Studio. Además, puede usar el comando para tener acceso a la parte del componente MEF.
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
  A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS después. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-an-extension-with-a-menu-command"></a>Crear una extensión con un comando de menú
@@ -693,5 +693,5 @@ Desde un VSPackage, puede agregar características como comandos de menú al edi
 
      Fourscore...
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Tutorial: vincular un tipo de contenido a una extensión de nombre de archivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

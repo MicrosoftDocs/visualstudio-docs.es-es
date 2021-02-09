@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 52794238-6fae-451c-bf1c-99f344c6f173
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 673b08bf5680e04c90376c9eb3d63f6f03df9723
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 7c0aa8550bc402520052003b59cf4ab1deaad7b2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914197"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888971"
 ---
 # <a name="create-a-custom-debug-engine"></a>Crear un motor de depuración personalizado
 Un motor de depuración (DE) es un componente que permite depurar determinadas arquitecturas en tiempo de ejecución. Normalmente solo hay una implementación DE para cada entorno en tiempo de ejecución.
@@ -56,5 +56,5 @@ Un motor de depuración (DE) es un componente que permite depurar determinadas a
 
  [Cómo: depurar un motor de depuración personalizado](../../extensibility/debugger/how-to-debug-a-custom-debug-engine.md) Explica cómo depurar un personalizado DE.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Extensibilidad del depurador de Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md)
