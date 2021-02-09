@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e64f805496d03b42ca70489bab1302ecf58b33bc
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 59354537f0c1f22534395da1e0ed3db3929a14a9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903564"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913651"
 ---
 # <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>Cómo: editar una configuración de implementación de SharePoint
   Puede crear una configuración de implementación o modificar una configuración de implementación existente. Por ejemplo, puede ejecutar un solo paso o cambiar el orden de los pasos en el proceso de implementación. Puede que desee crear o modificar configuraciones de implementación porque las configuraciones integradas y agregadas mediante programación no se pueden cambiar.
@@ -47,11 +47,11 @@ ms.locfileid: "94903564"
 
 #### <a name="to-change-the-active-deployment-configuration"></a>Para cambiar la configuración de implementación activa
 
-1. En **Explorador de soluciones**, elija un proyecto de SharePoint y, a continuación, en la barra de **Project** menús, elija  >  **\<*ProjectName*> propiedades** del proyecto.
+1. En **Explorador de soluciones**, elija un proyecto de SharePoint y, a continuación, en la barra de  menús, elija  >  **\<*ProjectName*> propiedades** del proyecto.
 
 2. Elija la pestaña **SharePoint** .
 
 3. En el cuadro de lista **configuración de implementación activa** , elija el nombre de la configuración de implementación que desee usar.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Empaquetado e implementación de soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2496de5d1139d66e4ae9072b551ada990cf856dd
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: ad5b77176d05c28b3ba938a1255de6e10fcd7094
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761236"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912747"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Cómo: instalar un complemento de control de código fuente
 La creación de un complemento de control de código fuente implica tres pasos:
@@ -37,7 +37,7 @@ La creación de un complemento de control de código fuente implica tres pasos:
 
 #### <a name="to-register-the-source-control-plug-in-dll"></a>Para registrar el archivo DLL del complemento de control de código fuente
 
-1. Agregue dos entradas en la clave **HKEY_LOCAL_MACHINE** en la subclave **software** que especifica la subclave Company Name seguida de la subclave Product Name. El patrón es **\\ \<company name> \\ \<product name>HKEY_LOCAL_MACHINE\SOFTWARE\\ valor \<entry>**  =  *value*. Las dos entradas siempre se denominan **SCCServerName** y **SCCServerPath**. Cada es una cadena normal.
+1. Agregue dos entradas en la clave **HKEY_LOCAL_MACHINE** en la subclave **software** que especifica la subclave Company Name seguida de la subclave Product Name. El patrón es **\\ \<company name> \\ \<product name>HKEY_LOCAL_MACHINE\SOFTWARE\\ valor \<entry>**  =  . Las dos entradas siempre se denominan **SCCServerName** y **SCCServerPath**. Cada es una cadena normal.
 
     Por ejemplo, si el nombre de su empresa es Microsoft y el producto de control de código fuente se denomina SourceSafe, esta ruta de acceso del registro sería **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe**. En esta subclave, la primera entrada, **SCCServerName**, es una cadena legible por el usuario que nombra el producto. La segunda entrada, **SCCServerPath**, es la ruta de acceso completa al archivo DLL del complemento de control de código fuente al que debe conectarse el IDE. A continuación se proporcionan entradas del registro de ejemplo:
 
@@ -55,7 +55,7 @@ La creación de un complemento de control de código fuente implica tres pasos:
 
       **HideInVisualStudio** es un valor DWORD y se establece en *1* para ocultar el complemento o en *0* para que se muestre el complemento. Si no aparece la entrada del registro, el comportamiento predeterminado es mostrar el complemento.
 
-   - La entrada del registro **DisableSccManager** se puede usar para deshabilitar u ocultar la opción de menú **Inicio \<Source Control Server>** que normalmente aparece en el **File**  >  submenú **control de código fuente** del archivo. Al seleccionar esta opción de menú, se llama a la función [SccRunScc](../../extensibility/sccrunscc-function.md) . Es posible que el complemento de control de código fuente no sea compatible con un programa externo y, por tanto, puede que desee deshabilitar o incluso ocultar la opción de menú **iniciar** .
+   - La entrada del registro **DisableSccManager** se puede usar para deshabilitar u ocultar la opción de menú **Inicio \<Source Control Server>** que normalmente aparece en el   >  submenú **control de código fuente** del archivo. Al seleccionar esta opción de menú, se llama a la función [SccRunScc](../../extensibility/sccrunscc-function.md) . Es posible que el complemento de control de código fuente no sea compatible con un programa externo y, por tanto, puede que desee deshabilitar o incluso ocultar la opción de menú **iniciar** .
 
       **DisableSccManager** es un valor DWORD y se establece en *0* para habilitar la opción de menú **iniciar \<Source Control Server>** , establézcalo en *1* para deshabilitar la opción de menú y establezca en *2* para ocultar la opción de menú. Si no aparece esta entrada del registro, el comportamiento predeterminado es mostrar la opción de menú.
 

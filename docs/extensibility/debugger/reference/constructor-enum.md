@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 6d335b2c-66bc-460c-a4a6-4f3f1b697c2c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f9e123399ed2378eaf63944f9a1527ef024c0cd6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3fe47e53b1b95f69c80fd248f59de4cf23bf9c88
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737614"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913014"
 ---
 # <a name="constructor_enum"></a>CONSTRUCTOR_ENUM
 Selecciona distintos tipos de constructores.
@@ -53,7 +53,7 @@ Selecciona constructores no estáticos.
 `crStatic`\
 Selecciona constructores estáticos.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Se pasa como argumento al método [EnumConstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md) .
 
 ## <a name="requirements"></a>Requisitos

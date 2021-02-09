@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: ef436bd3-738e-47e8-828c-8febce752439
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b398e7ee549026750cbdff7b7fede8522116f346
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9c0d67afa2b20e239180848ef1e68d0f0a0c3079
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737591"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912958"
 ---
 # <a name="context_info_fields"></a>CONTEXT_INFO_FIELDS
 Especifica la información que se va a recuperar sobre un contexto de memoria.
@@ -28,7 +28,7 @@ Especifica la información que se va a recuperar sobre un contexto de memoria.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-enum enum_CONTEXT_INFO_FIELDS {
+enum enum_CONTEXT_INFO_FIELDS {
     CIF_MODULEURL =       0x00000001,
     CIF_FUNCTION =        0x00000002,
     CIF_FUNCTIONOFFSET =  0x00000004,
@@ -71,7 +71,7 @@ Inicialice o use el `bstrAddressOffset` campo de la `CONTEXT_INFO` estructura.
 `CIF_ALLFIELDS`\
 Inicializar o utilizar todos los campos de la `CONTEXT_INFO` estructura.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Estos valores pasan un parámetro al método [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) para indicar qué campos de la estructura de [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) se van a inicializar.
 
 Estas marcas también se usan para indicar los campos de la `CONTEXT_INFO` estructura que se usan y son válidos cuando se devuelve la estructura.

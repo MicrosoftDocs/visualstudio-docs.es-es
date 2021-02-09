@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 453125fc-23dc-49b1-8476-94581f05e6c7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c03482ff489c356ddcbe28ccc26c69c5936be6c5
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 1e4de5f46746f79e1c7598e1c2a2a6af6ae1d92a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877681"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912691"
 ---
 # <a name="source-control-vspackage-architecture"></a>Arquitectura de VSPackage de control de código fuente
 Un paquete de control de código fuente es un VSPackage que utiliza los servicios que [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] proporciona el IDE. A cambio, un paquete de control de código fuente proporciona su funcionalidad como servicio de control de código fuente. Además, un paquete de control de código fuente es una alternativa más versátil que un complemento de control de código fuente para integrar el control de código fuente en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
@@ -49,6 +49,6 @@ Un paquete de control de código fuente es un VSPackage que utiliza los servicio
 
   La escritura de un paquete de control de código fuente basado en VSPackage requiere una experiencia de programación más avanzada que escribir un complemento basado en la API del complemento de control de código fuente.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>
 - [Introducción](../../extensibility/internals/getting-started-with-source-control-vspackages.md)

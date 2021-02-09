@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, localizing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3865c11c67fd826e0ce914b6aeb88364da3212b7
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 4a3c427f207f6aac9f6a827eb6c24b799d635b46
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305194"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913599"
 ---
 # <a name="how-to-localize-a-feature"></a>Cómo: para localizar una característica
   De forma predeterminada, los títulos y las descripciones de las características usan valores de cadena codificados de forma rígida. Para localizar el título y la descripción de la característica, reemplace las cadenas por expresiones que hagan referencia a recursos localizados.
@@ -59,7 +59,7 @@ ms.locfileid: "96305194"
 
      El título y la descripción de la característica localizada aparecen en la aplicación. Para mostrar los recursos localizados, el servidor de SharePoint debe tener instalado el paquete de idioma que coincide con la referencia cultural del archivo de recursos.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Localización de soluciones de SharePoint](../sharepoint/localizing-sharepoint-solutions.md)
 - [Cómo: para agregar un archivo de recursos](../sharepoint/how-to-add-a-resource-file.md)
 - [Cómo: para localizar el marcado ASPX](../sharepoint/how-to-localize-aspx-markup.md)

@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 6aaaa155-6ce0-4f7f-aa50-8d63d7a7c992
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f3febc5a47288225d1780ba4579dad243c1ea45
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: cbd0d6ee6ede29be35437125f614512ff3bbeab3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671277"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915183"
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>Locationfield ((elemento, plantillas de proyecto de Visual Studio)
 Especifica si el cuadro de texto **Ubicación** del cuadro de diálogo **nuevo proyecto** está habilitado, deshabilitado u oculto para la plantilla de proyecto.
@@ -61,7 +61,7 @@ Especifica si el cuadro de texto **Ubicación** del cuadro de diálogo **nuevo p
 
 - `Hidden`, que especifica que el cuadro **Ubicación** del cuadro de diálogo **nuevo proyecto** está oculto.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Notas
  El valor predeterminado es `Enabled`.
 
  El cuadro de texto **Ubicación** del cuadro de diálogo **nuevo proyecto** permite a los usuarios cambiar el directorio predeterminado en el que se guardan los nuevos proyectos.

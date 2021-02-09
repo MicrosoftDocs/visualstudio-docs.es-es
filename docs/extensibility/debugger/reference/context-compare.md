@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 701ed61c-a320-4c20-a335-0b840024abc0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1c88b50644d1adda2dd0eaa3b74a828f9739d70b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f273bbab4a85f03a7da0d155d8b9e081693987c7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737608"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912968"
 ---
 # <a name="context_compare"></a>CONTEXT_COMPARE
 Especifica los criterios para comparar dos contextos de memoria.
@@ -84,7 +84,7 @@ Busque el primer contexto de memoria de la lista que se encuentra en el mismo m�
 `CONTEXT_SAME_PROCESS`\
 Busque el primer contexto de memoria de la lista que se encuentre en el mismo proceso que el contexto de memoria de destino.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Se pasa como argumento al método [Compare](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md) .
 
 Estos valores se utilizan para buscar el primer contexto de memoria de una lista que cumpla los criterios de comparación especificados. A un contexto de memoria se le asigna una lista de contextos de memoria que se van a comparar a través del `IDebugMemoryContext2::Compare` método. El primer contexto de memoria de la lista para la que se devuelve el operador de comparación `true` .

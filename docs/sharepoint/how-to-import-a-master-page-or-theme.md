@@ -12,15 +12,15 @@ helpviewer_keywords:
 - importing items [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c17f4e7477a20ea245eaa359a6f9611a8dc4ece6
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 331ae3964de40e6590345aadae59776fe37f467a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903499"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913671"
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>Cómo importar un tema o página maestra
   Puede dar una apariencia coherente a las páginas del sitio de SharePoint creando y usando páginas maestras y temas. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] no proporciona plantillas para estos elementos, pero puede crearlos en SharePoint Designer y, a continuación, importarlos en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Para obtener más información, vea [bloque de creación: páginas e interfaz de usuario](/previous-versions/office/developer/sharepoint-2010/ee539040(v=office.14)) en el sitio web de Microsoft.
@@ -31,7 +31,7 @@ ms.locfileid: "94903499"
 
      Para obtener información sobre cómo crear un proyecto de SharePoint, vea plantillas de proyecto [y de elemento de proyecto de SharePoint](../sharepoint/sharepoint-project-and-project-item-templates.md).
 
-2. En la barra de menús, elija **proyecto**  >  **Agregar nuevo elemento**.
+2. En la barra de menús, elija **Proyecto** >  **Agregar nuevo elemento**.
 
 3. En el cuadro de diálogo **Agregar nuevo elemento** , expanda el nodo **SharePoint** y, a continuación, elija el nodo **2010** .
 
@@ -91,7 +91,7 @@ ms.locfileid: "94903499"
 
      La lista de páginas maestras o temas aparece y contiene la página maestra o el tema que ha importado.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Páginas maestras](/previous-versions/office/developer/sharepoint-2010/ms443795(v=office.14))
 - [Importar elementos de un sitio de SharePoint existente](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
 - [Creación de páginas para SharePoint](../sharepoint/creating-pages-for-sharepoint.md)

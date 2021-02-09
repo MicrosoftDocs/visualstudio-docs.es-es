@@ -12,15 +12,15 @@ helpviewer_keywords:
 - modules [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 381cb529db3f4116a9c42041c26e0e1e242073df
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: e83a1474c7dfe6385c36cc13646bfe40fc897640
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305411"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913618"
 ---
 # <a name="how-to-include-files-by-using-a-module"></a>Cómo: para incluir archivos mediante un módulo
   Los *módulos* (que no se deben confundir con [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] los módulos) son contenedores que permiten implementar archivos como páginas maestras aspx, archivos de texto o imágenes en SharePoint.
@@ -65,6 +65,6 @@ ms.locfileid: "96305411"
 
      Los archivos se copian en las ubicaciones especificadas en SharePoint.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Empaquetado e implementación de soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
 - [Desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md)

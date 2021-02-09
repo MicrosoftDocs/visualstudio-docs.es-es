@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41adcbe97f9d0779fbad465bac673a3f7cf086c7
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 77fdc39ccccb7728749edd55527741c15bb1bcb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993541"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912741"
 ---
 # <a name="image-service-and-catalog"></a>Catálogo y servicio de imágenes
 Este manual contiene instrucciones y procedimientos recomendados para adoptar el servicio de imágenes de Visual Studio y el catálogo de imágenes introducidos en Visual Studio 2015.
@@ -103,11 +103,11 @@ Este manual contiene instrucciones y procedimientos recomendados para adoptar el
 </Symbols>
 ```
 
-|**Subelemento**|**Definición**|
+|**Subelemento**|**Definition**|
 |-|-|
 |Importar|Importa los símbolos del archivo de manifiesto especificado para su uso en el manifiesto actual.|
 |Guid|El símbolo representa un GUID y debe coincidir con el formato de GUID|
-|Id.|El símbolo representa un identificador y debe ser un entero no negativo|
+|ID|El símbolo representa un identificador y debe ser un entero no negativo|
 |String|El símbolo representa un valor de cadena arbitrario|
 
  Los símbolos distinguen mayúsculas de minúsculas y se hace referencia a ellos mediante la sintaxis $ (nombre de símbolo):
@@ -143,10 +143,10 @@ Este manual contiene instrucciones y procedimientos recomendados para adoptar el
 </Image>
 ```
 
-|**Atributo**|**Definición**|
+|**Atributo**|**Definition**|
 |-|-|
 |Guid|Desee Parte del GUID del moniker de la imagen|
-|Id.|Desee La parte de identificador del moniker de imagen|
+|ID|Desee La parte de identificador del moniker de imagen|
 |AllowColorInversion|[Opcional, valor predeterminado True] Indica si la imagen puede tener sus colores inversos mediante programación cuando se usa en un fondo oscuro.|
 
  **Origen**
@@ -159,16 +159,16 @@ Este manual contiene instrucciones y procedimientos recomendados para adoptar el
  </Source>
 ```
 
-|**Atributo**|**Definición**|
+|**Atributo**|**Definition**|
 |-|-|
 |Identificador URI|Desee URI que define dónde se puede cargar la imagen. Puede tener uno de los valores siguientes:<br /><br /> -Un [pack uri](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) mediante la autoridad Application:///<br />-Una referencia de recurso de componente absoluta<br />-Una ruta de acceso a un archivo que contiene un recurso nativo|
 |Información previa|Opta Indica qué tipo de fondo está previsto usar el origen.<br /><br /> Puede tener uno de los valores siguientes:<br /><br /> *Claro:* El origen se puede usar en un fondo claro.<br /><br /> *Oscuro:* El origen se puede usar en un fondo oscuro.<br /><br /> *HighContrast:* El origen se puede usar en cualquier fondo del modo contraste alto.<br /><br /> *HighContrastLight:* El origen se puede usar en un fondo claro en modo de contraste alto.<br /><br /> *HighContrastDark:* El origen se puede usar en un fondo oscuro en modo de contraste alto.<br /><br /> Si se omite el atributo Background, el origen puede usarse en cualquier fondo.<br /><br /> Si background es *Light*, *Dark*, *HighContrastLight* o *HighContrastDark*, los colores del origen nunca se invierten. Si se omite Background o se establece en *HighContrast*, el atributo **AllowColorInversion** de la imagen controla la inversión de los colores del origen.|
 
 Un \<Source> elemento puede tener exactamente uno de los siguientes subelementos opcionales:
 
-|**Element**|**Atributos (todos obligatorios)**|**Definición**|
+|**Element**|**Atributos (todos obligatorios)**|**Definition**|
 |-|-|-|
-|\<Size>|Valor|El origen se usará para las imágenes del tamaño especificado (en unidades de dispositivo). La imagen será cuadrada.|
+|\<Size>|Value|El origen se usará para las imágenes del tamaño especificado (en unidades de dispositivo). La imagen será cuadrada.|
 |\<SizeRange>|MinSize, MaxSize|El origen se usará para las imágenes de MinSize a MaxSize (en unidades de dispositivo) de un solo uso. La imagen será cuadrada.|
 |\<Dimensions>|Ancho, alto|El origen se usará para las imágenes con el ancho y alto especificados (en unidades de dispositivo).|
 |\<DimensionRange>|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|El origen se usará para las imágenes desde el ancho o el alto mínimo hasta el ancho/alto máximo (en unidades de dispositivo), ambos inclusive.|
@@ -179,10 +179,10 @@ Un \<Source> elemento puede tener exactamente uno de los siguientes subelementos
 <NativeResource Type="type" ID="int" />
 ```
 
-|**Atributo**|**Definición**|
+|**Atributo**|**Definition**|
 |-|-|
 |Tipo|Desee El tipo del recurso nativo, ya sea XAML o PNG|
-|Id.|Desee La parte del identificador entero del recurso nativo|
+|ID|Desee La parte del identificador entero del recurso nativo|
 
  **ImageList**
 
@@ -195,10 +195,10 @@ Un \<Source> elemento puede tener exactamente uno de los siguientes subelementos
  </ImageList>
 ```
 
-|**Atributo**|**Definición**|
+|**Atributo**|**Definition**|
 |-|-|
 |Guid|Desee Parte del GUID del moniker de la imagen|
-|Id.|Desee La parte de identificador del moniker de imagen|
+|ID|Desee La parte de identificador del moniker de imagen|
 |Externo|[Opcional, valor predeterminado False] Indica si el moniker de imagen hace referencia a una imagen del manifiesto actual.|
 
  No es necesario que el moniker de la imagen contenida haga referencia a una imagen definida en el manifiesto actual. Si no se encuentra la imagen contenida en la biblioteca de imágenes, se usará una imagen de marcador de posición en blanco en su lugar.
@@ -718,7 +718,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
 ## <a name="additional-resources"></a>Recursos adicionales
 
-### <a name="samples"></a>Ejemplos
+### <a name="samples"></a>Muestras
  Algunos de los ejemplos de Visual Studio en GitHub se han actualizado para mostrar cómo usar el servicio de imágenes como parte de varios puntos de extensibilidad de Visual Studio.
 
  Busque [http://github.com/Microsoft/VSSDK-Extensibility-Samples](https://github.com/Microsoft/VSSDK-Extensibility-Samples) los ejemplos más recientes.
