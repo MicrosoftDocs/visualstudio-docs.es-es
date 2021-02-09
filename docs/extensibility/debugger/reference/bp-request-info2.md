@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 008c87f7-a76e-43d3-8904-11b225d6a9a5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 04d1db2ca8176678d8a72a84ede2bddcbfa2f152
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ad3c5492143f97559770c57d528971ac84f22fb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737877"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903279"
 ---
 # <a name="bp_request_info2"></a>BP_REQUEST_INFO2
 Contiene la información necesaria para implementar un punto de interrupción, incluidos el GUID del proveedor, la restricción y el punto de seguimiento.
@@ -28,7 +28,7 @@ Contiene la información necesaria para implementar un punto de interrupción, i
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-typedef struct _BP_REQUEST_INFO2 {
+typedef struct _BP_REQUEST_INFO2 {
     BPREQI_FIELDS   dwFields;
     GUID            guidLanguage;
     BP_LOCATION     bpLocation;
@@ -42,11 +42,11 @@ typedef struct _BP_REQUEST_INFO2 {
     GUID            guidVendor;
     BSTR            bstrConstraint;
     BSTR            bstrTracepoint;
-} BP_REQUEST_INFO2;
+} BP_REQUEST_INFO2;
 ```
 
 ```csharp
-public struct BP_REQUEST_INFO2 {
+public struct BP_REQUEST_INFO2 {
     public uint           dwFields;
     public Guid           guidLanguage;
     public BP_LOCATION    bpLocation;
@@ -63,7 +63,7 @@ public struct BP_REQUEST_INFO2 {
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 `dwFields`\
 Combinación de marcas de la enumeración [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) que especifica qué campos se rellenan.
 
@@ -103,7 +103,7 @@ Nombre de la restricción de punto de interrupción. Puede ser un valor null.
 `bstrTracepoint`\
 Nombre del punto de seguimiento. Puede ser un valor null.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 El método [GetRequestInfo2](../../../extensibility/debugger/reference/idebugbreakpointrequest3-getrequestinfo2.md) devuelve esta estructura.
 
 ## <a name="requirements"></a>Requisitos

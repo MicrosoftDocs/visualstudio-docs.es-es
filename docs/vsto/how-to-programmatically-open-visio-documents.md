@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Visio [Office development in Visual Studio], opening Visio documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ec46f4fd7be136d16e15e9fa366b7a4cb921b62e
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: cb24851562beec0b40a8e66a38db202745f4771e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523836"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903655"
 ---
 # <a name="how-to-programmatically-open-visio-documents"></a>Cómo: abrir documentos de Visio mediante programación
   Existen dos métodos para abrir documentos de Visio existentes Microsoft Office: Open y OpenEx. El método OpenEx es idéntico al método Open, salvo que proporciona argumentos en los que el llamador puede especificar cómo se abre el documento.
@@ -50,7 +50,7 @@ ms.locfileid: "97523836"
 
 - Un documento de Visio denominado `myDrawing.vsd` debe encontrarse en un directorio denominado `Test` en la carpeta *Mis documentos* (para Windows XP y versiones anteriores) o en la carpeta *documentos* (para Windows Vista).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Soluciones de Visio](../vsto/visio-solutions.md)
 - [Información general sobre el modelo de objetos de Visio](../vsto/visio-object-model-overview.md)
 - [Cómo: crear nuevos documentos de Visio mediante programación](../vsto/how-to-programmatically-create-new-visio-documents.md)

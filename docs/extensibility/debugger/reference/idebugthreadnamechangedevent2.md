@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 34c1652e-f019-48ba-8b26-ace20f8a158c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e218fc2ed99e0f180421aede1fc3aa212dcfa993
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cdb65d73db0e506e5cba89834c0c7e90fdf6e8f9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718459"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901573"
 ---
 # <a name="idebugthreadnamechangedevent2"></a>IDebugThreadNameChangedEvent2
 El motor DE depuración (DE) envía esta interfaz al administrador de depuración de la sesión (SDM) cuando cambia el nombre de un subproceso en el programa que se está depurando.
@@ -25,7 +25,7 @@ El motor DE depuración (DE) envía esta interfaz al administrador de depuració
 ## <a name="syntax"></a>Sintaxis
 
 ```
-IDebugThreadNameChangedEvent2 : IUnknown
+IDebugThreadNameChangedEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para los implementadores

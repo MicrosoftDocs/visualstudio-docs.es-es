@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: ed1e874c-f289-4c31-8b6c-04dde03ad0f5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c98fde516a3e836302cd7eb2c73abd730d5cc8c5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 15f52f9b71bcb18131e03a7d7fbdd9f56ac4fa6b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737933"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902120"
 ---
 # <a name="bp_location"></a>BP_LOCATION
 Especifica el tipo de estructura que se usa para describir la ubicación del punto de interrupción.
@@ -53,7 +53,7 @@ public struct BP_LOCATION {
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 `bpLocationType`\
 Un valor de la enumeración [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md) utilizada para interpretar la `bpLocation` Unión o los `unionmemberX` miembros.
 
@@ -90,7 +90,7 @@ Un valor de la enumeración [BP_LOCATION_TYPE](../../../extensibility/debugger/r
 `unionmember4`\
 [Solo C#] Vea los comentarios sobre cómo interpretar.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Esta estructura es miembro de las estructuras [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) y [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) .
 
  [Solo C#] Los `unionmemberX` miembros se interpretan según la tabla siguiente. Busque el valor en la columna izquierda `bpLocationType` y, a continuación, examine las otras columnas para determinar qué `unionmemberX` representa cada miembro y calcular las referencias de la forma `unionmemberX` adecuada. Vea el ejemplo para obtener una forma de interpretar una parte de esta estructura en C#.

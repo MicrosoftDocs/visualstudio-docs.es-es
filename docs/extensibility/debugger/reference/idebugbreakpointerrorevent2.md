@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: adee79df-8db5-4510-a7df-c50f4dbf5e35
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09cb93f0f16420e56104f371d9caab262873390f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 033c997f3bd1038c2103a6c0ef3ad9ddbd74c249
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735043"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901859"
 ---
 # <a name="idebugbreakpointerrorevent2"></a>IDebugBreakpointErrorEvent2
 Esta interfaz indica al administrador de depuración de la sesión (SDM) que un punto de interrupción pendiente no se pudo enlazar a un programa cargado, ya sea debido a una advertencia o un error.
@@ -41,7 +41,7 @@ IDebugBreakpointErrorEvent2 : IUnknown
 |------------|-----------------|
 |[GetErrorBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md)|Obtiene la interfaz [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) que describe la advertencia o el error.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Siempre que se enlaza un punto de interrupción, se envía un evento al SDM. Si no se puede enlazar el punto de interrupción, `IDebugBreakpointErrorEvent2` se envía un; en caso contrario, se envía un [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) .
 
  Por ejemplo, cuando la condición asociada al punto de interrupción pendiente no se puede analizar o evaluar, se envía una advertencia que indica que no se puede enlazar el punto de interrupción pendiente en este momento. Esto puede ocurrir si aún no se ha cargado el código del punto de interrupción.

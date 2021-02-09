@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Chart control [Office development in Visual Studio], data binding
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 45de5170ca8a8b7e8a71521e18523e73ebc24046
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 3530e0821d4569381f610f44ae541c04b484b469
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847835"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903782"
 ---
 # <a name="chart-control"></a>Chart (control)
   El control <xref:Microsoft.Office.Tools.Excel.Chart> es un objeto de gráfico que expone eventos. Al agregar un gráfico a una hoja de cálculo, Visual Studio crea un objeto <xref:Microsoft.Office.Tools.Excel.Chart> que se puede programar directamente sin tener que recorrer el modelo de objetos de Microsoft Office Excel.
@@ -41,7 +41,7 @@ ms.locfileid: "96847835"
 ## <a name="formatting"></a>Aplicación de formato
  Todo el formato que se puede aplicar a un control <xref:Microsoft.Office.Interop.Excel.Chart> también puede aplicarse a un control <xref:Microsoft.Office.Tools.Excel.Chart>. Esto incluye bordes, fuentes, tipo de gráfico, líneas de cuadrícula, leyenda y etiquetas de datos.
 
-## <a name="events"></a>Eventos
+## <a name="events"></a>Events
  Los eventos siguientes están disponibles para el control <xref:Microsoft.Office.Tools.Excel.Chart> :
 
 - <xref:Microsoft.Office.Tools.Excel.Chart.ActivateEvent>

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 94c90012-8669-459c-af8e-307ac242c8c4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59ad41bda80337fd0adc65d4792adbbbb1cf38f1
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 5e90b12b12589fff89f4df1241eb73504e8bdb74
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328605"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903133"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>Creación de instancias de proyecto mediante el uso de generadores de proyecto
 Los tipos de proyecto de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usan un *generador de proyectos* para crear instancias de objetos de proyecto. Un generador de proyectos es similar a un generador de clases estándar para objetos COM cocreatbles. Sin embargo, los objetos de proyecto no son cocreatable; solo se pueden crear mediante un generador de proyectos.
@@ -46,7 +46,7 @@ Los tipos de proyecto de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md
 
    Un proyecto tampoco puede usar archivos y, en su lugar, almacena su estado del proyecto en un mecanismo de almacenamiento distinto del sistema de archivos, como una base de datos o un servidor Web. En este caso, el parámetro de nombre de archivo pasado al `CreateProject` método no es realmente una ruta de acceso del sistema de archivos, sino una cadena única (una dirección URL) para identificar los datos del proyecto. No es necesario copiar los archivos de plantilla que se pasan a `CreateProject` para desencadenar la secuencia de construcción adecuada que se va a ejecutar.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes>

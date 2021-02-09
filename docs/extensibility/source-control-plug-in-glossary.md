@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: f224bbc9-38fc-4c80-ab09-51dcc8969f8e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5b878efd9d937f532526ed3b49ad41228749b47
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 6aaa8a1d88b946235863776c11fd805fecb0fd89
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715410"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902882"
 ---
 # <a name="source-control-plug-in-glossary"></a>Glosario del complemento de control de código fuente
 Los siguientes términos y definiciones útiles pertenecen a la documentación del SDK del complemento de control de código fuente.

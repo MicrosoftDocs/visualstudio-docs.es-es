@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 961e68ed-2603-4479-a306-330eda2b2efa
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e65da2b50984b0259079a1693dd31d400e1e12e3
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 39e61e3566f848e23fdea7b4fb4d0ea5bc181370
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329944"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903154"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>Crear carpetas de contenedores principales para las soluciones
 En la API del complemento de control de código fuente versión 1,2, un usuario puede especificar un único destino de control de código fuente raíz para todos los proyectos Web de la solución. Esta única raíz se denomina raíz superunificada (SUR).
@@ -66,5 +66,5 @@ En [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , se recomienda 
 
  **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] DoNotCreateSolutionRootFolderInSourceControl**  =  *DWORD: 00000001*
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Novedades de la API del complemento de control de código fuente versión 1,2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

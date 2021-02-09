@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3a793e3d7233eb1b6d0aaaa74fbe16d52cf6f43
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 74e31cb8fddb00e8a6771a6ad3065bce57cc8bc8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974326"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902247"
 ---
 # <a name="create-a-software-development-kit"></a>Crear un kit de desarrollo de software
 
@@ -37,7 +37,7 @@ Los SDK de la plataforma son necesarios para desarrollar aplicaciones para una p
 
 Todos los SDK de la plataforma se instalarán en *HKLM\Software\Microsoft\Microsoft SDK \\ [TPI] \V [TPV] \\ @InstallationFolder = [raíz del SDK]*. En consecuencia, el [!INCLUDE[win81](../debugger/includes/win81_md.md)] SDK se instala en *HKLM\Software\Microsoft\Microsoft SDKs\Windows\v8.1*.
 
-### <a name="layout"></a>Layout
+### <a name="layout"></a>Diseño
 
 Los SDK de la plataforma tienen el siguiente diseño:
 

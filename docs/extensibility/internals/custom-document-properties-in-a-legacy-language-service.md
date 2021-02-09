@@ -11,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: cc714a67-b33e-4440-9203-3c90f648bd9c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d5fa24f3d052ab9122776967607b2c197fb102bf
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 7a9bd5b41d1c04e52d16ecb2fc327e648d9f81aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329918"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902992"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>Propiedades de documento personalizadas en un servicio de lenguaje heredado
 Las propiedades del documento se pueden mostrar en la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ventana **propiedades** . Normalmente, los lenguajes de programación no tienen propiedades asociadas a archivos de código fuente individuales. Sin embargo, XML admite propiedades de documento que afectan a la codificación, el esquema y la hoja de estilos.
 
-## <a name="discussion"></a>Discusión
+## <a name="discussion"></a>Debate
  Si su lenguaje necesita propiedades de documento personalizadas, debe derivar una clase de la <xref:Microsoft.VisualStudio.Package.DocumentProperties> clase e implementar las propiedades necesarias en la clase derivada.
 
  Además, las propiedades de documento normalmente se almacenan en el propio archivo de código fuente. Esto requiere que el servicio de lenguaje analice la información de la propiedad del archivo de código fuente para que se muestre en la ventana **propiedades** y para actualizar el archivo de código fuente cuando se realice un cambio en las propiedades del documento en la ventana **propiedades** .
@@ -399,5 +399,5 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Características del servicio de lenguaje heredado](../../extensibility/internals/legacy-language-service-features1.md)

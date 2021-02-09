@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: b4d0ddee-c04b-48dc-ba82-f6068570cef0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 648a8e45b5b472ccc1a37cd69e2043f0bb5b9aa3
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 7df029be478fef3cf1e9b6138456986016465d5d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328540"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903010"
 ---
 # <a name="custom-colorable-items"></a>Elementos coloreables personalizados
 Puede invalidar la lista de tipos de coloración, como palabras clave y comentarios, mediante la implementación de elementos coloreables personalizados como parte del servicio de lenguaje.
@@ -52,7 +52,7 @@ Puede invalidar la lista de tipos de coloración, como palabras clave y comentar
 
 5. En la misma clase que implementa la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> interfaz, implemente la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> interfaz y sus dos métodos, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> y <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> .
 
-6. Implementar la interfaz <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem>.
+6. Implemente la interfaz <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem>.
 
 7. Si desea admitir valores de color de 24 bits o alto, implemente también la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> interfaz.
 
@@ -66,7 +66,7 @@ Puede invalidar la lista de tipos de coloración, como palabras clave y comentar
 
     Para obtener un ejemplo de cómo implementar las <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> interfaces y, vea <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> .
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Modelo de un servicio de lenguaje heredado](../../extensibility/internals/model-of-a-legacy-language-service.md)
 - [Colores de la sintaxis en editores personalizados](../../extensibility/syntax-coloring-in-custom-editors.md)
 - [Color de la sintaxis en un servicio de lenguaje heredado](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)

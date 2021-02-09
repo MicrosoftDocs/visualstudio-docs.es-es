@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 567adfb8-2f54-499a-a027-e4ecb82277ef
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 32be70e11776177a0e68f09689c2262497703ab1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b8437dd2c98373c770d6f537e0ec9714100e3c4b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732255"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901832"
 ---
 # <a name="idebugdisassemblystream2getcodelocationid"></a>IDebugDisassemblyStream2::GetCodeLocationId
 Devuelve un identificador de ubicación de código para un contexto de código determinado.
@@ -28,14 +28,14 @@ Devuelve un identificador de ubicación de código para un contexto de código d
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT GetCodeLocationId( 
+HRESULT GetCodeLocationId( 
    IDebugCodeContext2* pCodeContext,
    UINT64*             puCodeLocationId
 );
 ```
 
 ```csharp
-int GetCodeLocationId( 
+int GetCodeLocationId( 
    IDebugCodeContext2 pCodeContext,
    out ulong          puCodeLocationId
 );
@@ -50,7 +50,7 @@ de Un objeto [IDebugCodeContext2](../../../extensibility/debugger/reference/ideb
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error. Devuelve `E_CODE_CONTEXT_OUT_OF_SCOPE` si el contexto del código es válido pero está fuera del ámbito.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  El identificador de ubicación del código es específico del motor DE depuración (DE) que admite el desensamblado. La clase usa internamente este identificador de ubicación para realizar el seguimiento de las posiciones en el código y suele ser una dirección o desplazamiento de algún tipo. El único requisito es que si el contexto de código de una ubicación es menor que el contexto de código de otra ubicación, el identificador de ubicación de código correspondiente del primer contexto de código también debe ser menor que el identificador de ubicación de código del segundo contexto de código.
 
  Para recuperar el contexto del código de un identificador de ubicación de código, llame al método [GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md) .

@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 25a0b83d3ac7be95c42ca0c4e53a188569bb5770
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 9299880c2d06cf323351a234239bed71597072a4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361877"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902705"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Generar y configurar la aplicación a partir de modelos
 Puede generar o configurar partes de la aplicación a partir de un modelo.
@@ -72,7 +72,7 @@ Puede generar o configurar partes de la aplicación a partir de un modelo.
 
      Por ejemplo, un diagrama de clases UML es una colección de cuadros y flechas; con esta notación, en teoría, es posible definir cualquier cosa. Tenga en cuenta que no le recomendamos usar el diagrama de clases, excepto para describir un conjunto de tipos. Por ejemplo, puede adaptar los diagramas de clases para describir los distintos tipos de páginas Web.
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [Generar código a partir de lenguajes específicos de dominio](../modeling/generating-code-from-a-domain-specific-language.md)
 - [Cómo: Abrir un modelo desde un archivo en el código del programa](../modeling/how-to-open-a-model-from-file-in-program-code.md)

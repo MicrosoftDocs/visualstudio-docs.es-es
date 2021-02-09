@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 0248430a-3b61-4809-87a9-e9b6bb7d1130
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 50e6bdc0dba8f6bcbdd55c45132dff02735786d6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 735acca4d4b2e2881c49a236dadae44aaa3cc1fd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737941"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902137"
 ---
 # <a name="bp_location_type"></a>BP_LOCATION_TYPE
 Especifica el tipo de ubicación del punto de interrupción para una solicitud de punto de interrupción.
@@ -114,7 +114,7 @@ Especifica una máscara de bits, de modo que el tipo de punto de interrupción s
 `BPLT_LOCATION_TYPE_MASK`\
 Especifica una máscara de bits, de modo que el tipo de ubicación del punto de interrupción se puede extraer del valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Se pasa como un parámetro al método [GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md) .
 
 Un tipo de ubicación de punto de interrupción se compone de un tipo de punto de interrupción y un tipo de ubicación. Esto significa que un tipo de ubicación de punto de interrupción nunca es simplemente un tipo de punto de interrupción (por ejemplo, `BPT_CODE` ) o un tipo de ubicación (por ejemplo, `BPLT_FILE_LINE` ). Las constantes predefinidas para todos los tipos de ubicación de puntos de interrupción admitidos actualmente se incluyen en esta enumeración ( `BPLT_CODE_FILE_LINE` a `BPLT_DATA_STRING` ).

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 42a31412-5b6b-47fe-a762-0c2bc769e1cc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 35a1202f4990f4f6370ad031c896ba85ebb6d816
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c806687b9948be693ca25868aaf7211d9ccf6b97
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737894"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902026"
 ---
 # <a name="bp_request_info"></a>BP_REQUEST_INFO
 Contiene la información necesaria para implementar un punto de interrupción.
@@ -28,7 +28,7 @@ Contiene la información necesaria para implementar un punto de interrupción.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-typedef struct _BP_REQUEST_INFO {
+typedef struct _BP_REQUEST_INFO {
     BPREQI_FIELDS   dwFields;
     GUID            guidLanguage;
     BP_LOCATION     bpLocation;
@@ -39,11 +39,11 @@ typedef struct _BP_REQUEST_INFO {
     BP_CONDITION    bpCondition;
     BP_PASSCOUNT    bpPassCount;
     BP_FLAGS        dwFlags;
-} BP_REQUEST_INFO;
+} BP_REQUEST_INFO;
 ```
 
 ```csharp
-public struct BP_REQUEST_INFO {
+public struct BP_REQUEST_INFO {
     public uint           dwFields;
     public Guid           guidLanguage;
     public BP_LOCATION    bpLocation;
@@ -57,7 +57,7 @@ public struct BP_REQUEST_INFO {
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 `dwFields`\
 Combinación de marcas de la enumeración [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) que especifica qué campos se rellenan.
 
@@ -88,7 +88,7 @@ Nombre del subproceso en el que se produce el punto de interrupción.
 `dwFlags`\
 Combinación de marcas de la enumeración [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) que especifica las marcas del punto de interrupción solicitado.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 El método [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) devuelve esta estructura.
 
 Si necesita obtener el GUID del proveedor del motor de depuración, la restricción de punto de interrupción o el punto de seguimiento, vea la estructura [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) .

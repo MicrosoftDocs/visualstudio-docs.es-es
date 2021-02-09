@@ -9,15 +9,15 @@ helpviewer_keywords:
 - TextTransform.exe
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d849439f3c7b8af310f1f82fc0af8f086139d12b
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 741e7625d301e250daa28a93f18a82193675e068
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363918"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902696"
 ---
 # <a name="generate-files-with-the-texttransform-utility"></a>Generar archivos con la utilidad TextTransform
 
@@ -72,7 +72,7 @@ TextTransform [<options>] <templateName>
 
 |**Opción**|**Descripción**|
 |-|-|
-|**-out**\<filename>|Archivo en el que se escribe la salida de la transformación.|
+|**-out** \<filename>|Archivo en el que se escribe la salida de la transformación.|
 |**-r**\<assembly>|Ensamblado que se usa para compilar y ejecutar la plantilla de texto.|
 |**-u**\<namespace>|Espacio de nombres que se utiliza para compilar la plantilla.|
 |**-I**\<includedirectory>|Directorio que contiene las plantillas de texto incluidas en la plantilla de texto especificada.|

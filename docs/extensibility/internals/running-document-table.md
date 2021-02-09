@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: bbec74f3-dd8e-48ad-99c1-2df503c15f5a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd166626d6043da4ac94658bdd35219efc7a37c2
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 863a9b1cdb68218539045c9154fc18d845495222
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875653"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902888"
 ---
 # <a name="running-document-table"></a>Tabla de documentos en ejecución
 El IDE mantiene la lista de todos los documentos abiertos actualmente en una estructura interna denominada tabla de documentos en ejecución (RDT). Esta lista incluye todos los documentos abiertos en la memoria, independientemente de si estos documentos se están editando en ese momento. Un documento es cualquier elemento que se conserva, incluidos los archivos de un proyecto o el archivo del proyecto principal (por ejemplo, un archivo. vcxproj).
@@ -58,6 +58,6 @@ El IDE mantiene la lista de todos los documentos abiertos actualmente en una est
 
 - Use la jerarquía o el identificador de elemento para solicitar al sistema del proyecto la ruta de acceso completa del documento y, a continuación, busque el elemento en el RDT.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Uso de RDT_ReadLock](../../extensibility/internals/rdt-readlock-usage.md)
 - [Persistencia y tabla de documentos en ejecución](../../extensibility/internals/persistence-and-the-running-document-table.md)

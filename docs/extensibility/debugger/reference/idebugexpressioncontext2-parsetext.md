@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: f58575db-f926-4ac8-83ff-7b3b86ab61e2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a8494c9c90c4cb6e94115c542a25e12e948f7064
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc55cceb8db392d590ff414ac3df5b807d1e52e0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729654"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901648"
 ---
 # <a name="idebugexpressioncontext2parsetext"></a>IDebugExpressionContext2::ParseText
 Analiza una expresión en formato de texto para su posterior evaluación.
@@ -71,7 +71,7 @@ enuncia Devuelve el índice de carácter del error en `pszCode` si la expresión
 ## <a name="return-value"></a>Valor devuelto
 Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Cuando se llama a este método, un motor DE depuración (DE) debe analizar la expresión y validar su exactitud. Los `pbstrError` `pichError` parámetros y se pueden rellenar si la expresión no es válida.
 
 Tenga en cuenta que la expresión no se evalúa, solo se analiza. Una llamada posterior a los métodos [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) o [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) evalúa la expresión analizada.

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d97611e2-def6-45a9-ad7d-eedf2ad4c82b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d0b687a54ddc1ed111b664a819dacfed6709196d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a90b8e9ffdc8009802c7e4c88927f69737eb83e4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737867"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901953"
 ---
 # <a name="bp_res_data_flags"></a>BP_RES_DATA_FLAGS
 Especifica si el punto de interrupción de datos se está emulando o implementando en el hardware.
@@ -44,7 +44,7 @@ public enum enum_BP_RES_DATA_FLAGS {
 `BP_RES_DATA_EMULATED`\
 Especifica que se está emulando el punto de interrupción de datos.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Se utiliza para el `dwFlags` miembro de la estructura [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) .
 
 ## <a name="requirements"></a>Requisitos

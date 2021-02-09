@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 221b4b1b-4a26-466e-bc29-5eff800fab13
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1965ff1b4cfa89e4584c194942dec7ae486473ff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a3eb4710e3073ee49aa9660aa322b4638c4c0d24
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718582"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901623"
 ---
 # <a name="idebugthread2"></a>IDebugThread2
 Esta interfaz representa un subproceso que se ejecuta en un programa.
@@ -55,7 +55,7 @@ IDebugThread2 : IUnknown
 |[GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)|Obtiene las propiedades que describen un subproceso.|
 |[GetLogicalThread](../../../extensibility/debugger/reference/idebugthread2-getlogicalthread.md)|Obtiene el subproceso lógico asociado a este subproceso físico.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Dado que un único subproceso físico puede ejecutarse en varios programas, más de un `IDebugThread2` programa puede representar el mismo subproceso físico.
 
  Cuando se produce un punto de interrupción o una excepción, se envía un evento mediante una llamada al [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md). Uno de los argumentos de este método es una `IDebugThread2` interfaz que representa el subproceso actual. [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) se usa para obtener la interfaz [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) para el marco de pila actual.

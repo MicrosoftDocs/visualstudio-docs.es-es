@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 784bd5b1-4a3f-4455-b313-c4c9a82555a5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0a3710756f02d7c622be94bab6c3056fb051827
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 87306e1373d746479ce59c96b6625fa41ef119fb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734512"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903242"
 ---
 # <a name="idebugcanstopevent2"></a>IDebugCanStopEvent2
 Esta interfaz se usa para solicitar al administrador de depuración de la sesión (SDM) si se debe detener en la ubicación del código actual.
@@ -46,7 +46,7 @@ IDebugCanStopEvent2 : IUknown
 |[GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md)|Obtiene el contexto del documento que describe la ubicación de este evento.|
 |[GetCodeContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md)|Obtiene el contexto de código que describe la ubicación de este evento.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  El DE envía esta interfaz si el usuario realiza un paso en una función y el DE no encuentra ninguna información de depuración o existe información de depuración, pero el DE no sabe si el código fuente se puede mostrar para esa ubicación.
 
 ## <a name="requirements"></a>Requisitos

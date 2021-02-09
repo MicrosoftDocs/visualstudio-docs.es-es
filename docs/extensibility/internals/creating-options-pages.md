@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 1bf11fec-dece-4943-8053-6de1483c43eb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4759b3590fcde116e6f106ac326ff875e9566c43
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: b01133e1f7daada2d9e2778c3966ccd66a81fd94
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328644"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903163"
 ---
 # <a name="create-options-pages"></a>Crear páginas de opciones
 En [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Managed Package Framework, las clases derivadas de <xref:Microsoft.VisualStudio.Shell.DialogPage> extienden el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE agregando páginas de **Opciones** en el menú **herramientas** .

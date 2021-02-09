@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 936a6c4e-30c5-4c7e-9ad5-910cc605a4b5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e3dc5e4bd7144db7fa94425371488bfd8c0e57ed
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 477cc4d83b48e87d63f7ddff5cef53b53f0050ba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734556"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903268"
 ---
 # <a name="idebugcanstopevent2getdocumentcontext"></a>IDebugCanStopEvent2::GetDocumentContext
 Obtiene el contexto del documento que describe la ubicación de este evento.
@@ -28,13 +28,13 @@ Obtiene el contexto del documento que describe la ubicación de este evento.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT GetDocumentContext ( 
+HRESULT GetDocumentContext ( 
    IDebugDocumentContext2** ppDocCxt
 );
 ```
 
 ```csharp
-int GetDocumentContext ( 
+int GetDocumentContext ( 
    out IDebugDocumentContext2 ppDocCxt
 );
 ```
@@ -46,7 +46,7 @@ enuncia Devuelve la interfaz [IDebugDocumentContext2](../../../extensibility/deb
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Por lo general, el contexto del documento puede considerarse como una posición en un archivo de código fuente.
 
  Para obtener el contexto de código, que está orientado hacia instrucciones de código, llame al método [GetCodeContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md) .

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: aee34a14-4f9c-4ad3-845f-c96ee938cefd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1aaa25e719f17701344d821759a0dac06aa88698
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d39b7f1120f2ee4d0548e2c8a0b9a75f2fe0bd56
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718539"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901605"
 ---
 # <a name="idebugthreadcreateevent2"></a>IDebugThreadCreateEvent2
 El motor de depuración (DE) envía esta interfaz al administrador de depuración de la sesión (SDM) cuando se crea un subproceso en un programa que se está depurando.
@@ -25,7 +25,7 @@ El motor de depuración (DE) envía esta interfaz al administrador de depuració
 ## <a name="syntax"></a>Sintaxis
 
 ```
-IDebugThreadCreateEvent2 : IUnknown
+IDebugThreadCreateEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para los implementadores
