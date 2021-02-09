@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: fb222cc5-8aeb-4b94-8c49-b93e342f5f69
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 08b4adbaa7e7e25041f90628695de729aaff0d0d
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 748d9f5932f93261bc991f0d8af43728b8e5ce02
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349209"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917285"
 ---
 # <a name="walkthrough-create-a-custom-installer-for-a-clickonce-application"></a>Tutorial: crear un instalador personalizado para una aplicación ClickOnce
 Cualquier aplicación ClickOnce basada en un archivo *. exe* se puede instalar y actualizar de forma silenciosa mediante un instalador personalizado. Un instalador personalizado puede implementar la experiencia personalizada del usuario durante la instalación, incluidos los cuadros de diálogo personalizados para las operaciones de seguridad y mantenimiento. Para realizar operaciones de instalación, el instalador personalizado utiliza la <xref:System.Deployment.Application.InPlaceHostingManager> clase. En este tutorial se muestra cómo crear un instalador personalizado que instala una aplicación ClickOnce de forma silenciosa.
@@ -79,4 +79,4 @@ Cualquier aplicación ClickOnce basada en un archivo *. exe* se puede instalar y
 
 ## <a name="see-also"></a>Vea también
 - [Manifiesto de aplicación ClickOnce](../deployment/clickonce-application-manifest.md)
-- [\<entryPoint> Element](../deployment/entrypoint-element-clickonce-application.md)
+- [Elemento \<entryPoint>](../deployment/entrypoint-element-clickonce-application.md)

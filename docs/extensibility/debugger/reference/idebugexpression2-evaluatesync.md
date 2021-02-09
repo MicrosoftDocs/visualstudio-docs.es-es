@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 88964915-dce3-4005-b4f3-9f37415e41e4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 306ed6af2a0a0b8fdb4525a112e680e289e6e6df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5adb5d6fc38a06054d6273f5b0493bae5bed77df
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729676"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916211"
 ---
 # <a name="idebugexpression2evaluatesync"></a>IDebugExpression2::EvaluateSync
 Este método evalúa la expresión sincrónicamente.
@@ -66,7 +66,7 @@ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve un código de error.
 |E_EVALUATE_BUSY_WITH_EVALUATION|Otra expresión se está evaluando actualmente y no se admite la evaluación de expresiones simultáneas.|
 |E_EVALUATE_TIMEOUT|Se agotó el tiempo de espera de la evaluación.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 En el caso de la evaluación sincrónica, no es necesario volver a enviar un evento a Visual Studio cuando se completa la evaluación.
 
 ## <a name="example"></a>Ejemplo

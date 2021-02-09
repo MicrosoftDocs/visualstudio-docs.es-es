@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 71d959c7-45df-485f-b0ee-f1c0439d54fb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 154873006091a213e69653d3742b3caa8c25b7e0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3408237de91e822e2ea3cbd95fad40c859267c1d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735720"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916315"
 ---
 # <a name="idebugbinder3getmemoryobject"></a>IDebugBinder3::GetMemoryObject
 Este método recupera un objeto de memoria que representa la memoria a la que está enlazado este objeto.
@@ -28,18 +28,18 @@ Este método recupera un objeto de memoria que representa la memoria a la que es
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT GetMemoryObject(
-   IDebugField*   pField,
-   UINT64         uConstant,
-   IDebugObject** ppObject
+HRESULT GetMemoryObject(
+   IDebugField*   pField,
+   UINT64         uConstant,
+   IDebugObject** ppObject
 );
 ```
 
 ```csharp
-int GetMemoryObject(
-   IDebugField      pField,
-   long             uConstant,
-   out IDebugObject ppObject
+int GetMemoryObject(
+   IDebugField      pField,
+   long             uConstant,
+   out IDebugObject ppObject
 );
 ```
 

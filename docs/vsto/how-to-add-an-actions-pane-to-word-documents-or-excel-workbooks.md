@@ -14,15 +14,15 @@ helpviewer_keywords:
 - actions panes [Office development in Visual Studio], adding controls
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 69d675209f2a3ac47e8681da8fca73c5cd86e95d
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: f9488a15f851446c5779bdb1a4572e69a1cf3053
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848071"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917523"
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>Cómo: Agregar un panel de acciones a documentos de Word o libros de Excel
   Para agregar un panel de acciones a un documento de Microsoft Office Word o a un libro de Microsoft Excel, primero debe crear un control de usuario Windows Forms. A continuación, agregue el control de usuario a la <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> propiedad del `ThisDocument.ActionsPane` campo (Word) o el `ThisWorkbook.ActionsPane` campo (Excel) del proyecto.

@@ -19,15 +19,15 @@ helpviewer_keywords:
 - constraints, architectural
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 265bb31dd95aa3a84bdb497a3306278acfd8838e
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: f173e27588538c806d075e0a6b010fbd848f2690
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360577"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917003"
 ---
 # <a name="dependency-diagrams-reference"></a>Diagramas de dependencia: referencia
 
@@ -63,7 +63,7 @@ En la tabla siguiente se describen los elementos que puede usar en un diagrama d
 |1|**Nivel**|Grupo lógico de artefactos físicos del sistema. Estos artefactos pueden ser espacios de nombres, proyectos, clases, métodos, etc.<br /><br /> Para ver los artefactos que están vinculados a una capa, abra el menú contextual de la capa y, a continuación, elija **ver vínculos** para abrir el **Explorador de capas**.<br /><br /> Para obtener más información, vea [Explorador de capas](#Explorer).<br /><br /> -   **Dependencias de espacios de nombres prohibidos** : especifica que los artefactos asociados a esta capa no pueden depender de los espacios de nombres especificados.<br />-   **Espacios de nombres prohibidos** : especifica que los artefactos asociados a esta capa no deben pertenecer a los espacios de nombres especificados.<br />-   **Espacios de nombres necesarios** : especifica que los artefactos asociados a esta capa deben pertenecer a uno de los espacios de nombres especificados.|
 |2|**Dependencia**|Indica que una capa puede usar la funcionalidad de otra capa, pero no viceversa.<br /><br /> -   **Direction** : especifica la dirección de la dependencia.|
 |3|**Dependencia bidireccional**|Indica que una capa puede usar la funcionalidad de otra capa, y viceversa.<br /><br /> -   **Direction** : especifica la dirección de la dependencia.|
-|4|**Comment**|Use esta opción para agregar notas generales al diagrama o elementos del diagrama.|
+|4|**Comentario**|Use esta opción para agregar notas generales al diagrama o elementos del diagrama.|
 |5|**Vínculo de comentario**|Se usa para vincular comentarios a elementos del diagrama.|
 
 ## <a name="layer-explorer"></a><a name="Explorer"></a> Explorador de capas
@@ -98,6 +98,6 @@ El **Explorador de capas** se abre y muestra los artefactos que están vinculado
 |**Admite validación**|Si **es true**, el proceso de validación de capas puede comprobar que el proyecto se ajusta a las dependencias de este elemento o de este.<br /><br /> Si **es false**, el vínculo no participa en el proceso de validación de capas.<br /><br /> Para obtener más información, vea [diagramas de dependencia: instrucciones](../modeling/layer-diagrams-guidelines.md).|
 |**Identificador**|Referencia al artefacto vinculado|
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [Crear modelos para la aplicación](../modeling/create-models-for-your-app.md)

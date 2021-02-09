@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 32d32ac8-22ff-4de7-af69-bd46ec4ad9bf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 057e2a68e1d9a130f69441d8aec4b6a7fe0249e9
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: f967235eed7e563b01b96cd9ed19d0aa5975b1fa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97862968"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916985"
 ---
 # <a name="walkthrough-customize-the-text-view"></a>Tutorial: personalizar la vista de texto
 Puede personalizar una vista de texto modificando cualquiera de las siguientes propiedades en la asignación de formato del editor:
@@ -34,7 +34,7 @@ Puede personalizar una vista de texto modificando cualquiera de las siguientes p
 
 - Espacio en blanco visible
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
  A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS después. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-mef-project"></a>Creación de un proyecto MEF
@@ -93,5 +93,5 @@ Puede personalizar una vista de texto modificando cualquiera de las siguientes p
 
 5. Active el espacio en blanco visible. (En el menú **edición** , seleccione **avanzadas** y, a continuación, haga clic en **Ver espacio en blanco**). Escriba algunas pestañas en el texto. Deben mostrarse las flechas rojas que representan las pestañas.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Puntos de extensión de editor y servicio de lenguaje](../extensibility/language-service-and-editor-extension-points.md)

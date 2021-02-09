@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 82b85a47-b223-4221-a17c-38a52c3fb6e2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b6b57faf01878dc5aff708f0aca47707bf6e48c
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 74e6641eff7fcaecfab300afe4747bb2ab7b75b2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350340"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917301"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Tutorial: descargar ensamblados satélite a petición con la API de implementación de ClickOnce mediante el diseñador
 Las aplicaciones de Windows Forms pueden configurarse para varias referencias culturales utilizando ensamblados satélite. Un *ensamblado satélite* es un ensamblado que contiene los recursos de aplicación para una referencia cultural que no sea la referencia cultural predeterminada de la aplicación.
@@ -41,7 +41,7 @@ Las aplicaciones de Windows Forms pueden configurarse para varias referencias cu
 
 ### <a name="to-mark-satellite-assemblies-as-optional"></a>Para marcar los ensamblados satélite como opcionales
 
-1. Compile el proyecto. Esto generará los ensamblados satélite para todas las referencias culturales a las que vaya a realizar la localización.
+1. Compilar el proyecto. Esto generará los ensamblados satélite para todas las referencias culturales a las que vaya a realizar la localización.
 
 2. Haga clic con el botón derecho en el nombre del proyecto en el Explorador de soluciones y, a continuación, haga clic en **Propiedades**.
 
@@ -49,7 +49,7 @@ Las aplicaciones de Windows Forms pueden configurarse para varias referencias cu
 
 4. Seleccione la casilla **Mostrar todos los archivos** para que se muestren los ensamblados satélite. De forma predeterminada, todos los ensamblados satélite se incluirán en la implementación y estarán visibles en este cuadro de diálogo.
 
-     Un ensamblado satélite tendrá un nombre con el formato *\<isoCode>\ApplicationName.resources.dll* , donde \<isoCode> es un identificador de idioma en formato RFC 1766.
+     Un ensamblado satélite tendrá un nombre con el formato *\<isoCode>\ApplicationName.resources.dll*, donde \<isoCode> es un identificador de idioma en formato RFC 1766.
 
 5. Haga clic en **Nuevo** en la lista **Grupo de descarga** para cada identificador de idioma. Cuando se le pida un nombre de grupo de descarga, escriba el identificador de idioma. Por ejemplo, para un ensamblado satélite en japonés, debe especificar el nombre del grupo de descarga `ja-JP` .
 

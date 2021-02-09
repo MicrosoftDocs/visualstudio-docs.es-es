@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 0c9c0b2b-7540-4424-adb5-fce7aa37a026
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 34d6cd880ccae520bf000ad01b52223857f4f10f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1bb9fe21b1dc004d5a124a1146e6f7610fbe8699
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721488"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916052"
 ---
 # <a name="idebugproperty2getextendedinfo"></a>IDebugProperty2::GetExtendedInfo
 Obtiene información extendida para la propiedad.
@@ -28,14 +28,14 @@ Obtiene información extendida para la propiedad.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT GetExtendedInfo ( 
+HRESULT GetExtendedInfo ( 
    REFGUID* guidExtendedInfo,
    VARIANT* pExtendedInfo
 );
 ```
 
 ```csharp
-int GetExtendedInfo ( 
+int GetExtendedInfo ( 
    ref Guid guidExtendedInfo,
    out object pExtendedInfo
 );
@@ -51,7 +51,7 @@ enuncia Devuelve un `VARIANT` (C++) o un objeto (C#) que se puede utilizar para 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve el código de error. Devuelve `S_GETEXTENDEDINFO_NO_EXTENDEDINFO` si no hay información extendida para recuperar.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Este método existe con el fin de recuperar información que no se presta para recuperarse llamando al método [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) .
 
  Los siguientes GUID se reconocen normalmente por este método (los valores GUID se especifican para C#, ya que el nombre no está disponible en ningún ensamblado). Se pueden crear GUID adicionales para uso interno.

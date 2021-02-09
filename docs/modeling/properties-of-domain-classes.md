@@ -8,20 +8,20 @@ helpviewer_keywords:
 - Domain-Specific Language, domain class
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fd36973a9c355dcaec32b6da4149e6efd88282da
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: cc86f04841a819423bc45c9220d6de80a5340b2d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360798"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916008"
 ---
 # <a name="properties-of-domain-classes"></a>Propiedades de las clases de dominio
 Las clases de dominio tienen las propiedades de la tabla siguiente. Para obtener información sobre las clases de dominio, vea Descripción de los [modelos, las clases y las relaciones](../modeling/understanding-models-classes-and-relationships.md). Para obtener más información sobre cómo usar estas propiedades, vea [personalizar y extender un lenguaje Domain-Specific](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-|Propiedad.|Descripción|Default|
+|Propiedad|Descripción|Valor predeterminado|
 |-|-|-|
 |Modificador de acceso|Nivel de acceso de la clase de dominio (`public` o `internal`).|`public`|
 |Atributos personalizados|Se utiliza para agregar atributos a la clase de código fuente que se genera a partir de esta clase de dominio.|\<none>|
@@ -33,9 +33,9 @@ Las clases de dominio tienen las propiedades de la tabla siguiente. Para obtener
 |Espacio de nombres|Espacio de nombres de esta clase de dominio.|Espacio de nombres actual|
 |Notas|Notas informales asociadas a esta clase de dominio.|\<none>|
 |Descripción|La descripción que se usa para documentar la interfaz de usuario del diseñador generado.|\<none>|
-|Nombre para mostrar|Nombre que se mostrará en el diseñador generado para esta clase de dominio.|\<none>|
+|Display Name (Nombre para mostrar)|Nombre que se mostrará en el diseñador generado para esta clase de dominio.|\<none>|
 |Help Keyword|Palabra clave opcional que se usa para indizar la ayuda de F1 para esta clase de dominio.|\<none>|
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [Glosario de las Herramientas del lenguaje específico de dominio](/previous-versions/bb126564(v=vs.100))

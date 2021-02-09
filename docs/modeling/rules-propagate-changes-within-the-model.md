@@ -9,15 +9,15 @@ helpviewer_keywords:
 - Domain-Specific Language, rules
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c4ff2273c8c71582c3ef634eeb398b12e29401d0
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 7062feddf00194e4633435655b5e11f5fefd38ee
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363957"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916947"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Las reglas propagan los cambios dentro del modelo
 Puede crear una regla de almacén para propagar un cambio de un elemento a otro en el SDK de visualización y modelado (VMSDK). Cuando se produce un cambio en cualquier elemento del almacén, se programan las reglas para que se ejecuten, normalmente cuando se confirma la transacción más externa. Hay diferentes tipos de reglas para diferentes tipos de eventos, como agregar un elemento o eliminarlo. Puede adjuntar reglas a tipos específicos de elementos, formas o diagramas. Muchas características integradas se definen mediante reglas: por ejemplo, las reglas garantizan que un diagrama se actualice cuando cambie el modelo. Puede personalizar el lenguaje específico de dominio agregando sus propias reglas.
@@ -209,6 +209,6 @@ namespace Company.TaskRuleExample
 }
 ```
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [Los controladores de eventos propagan cambios fuera del modelo](../modeling/event-handlers-propagate-changes-outside-the-model.md)

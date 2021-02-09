@@ -9,17 +9,17 @@ helpviewer_keywords:
 ms.assetid: 3ff32032-d412-44d3-91bf-870cc354a09e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: e338c3b24ade2cf7663b77abea64f58425d3a068
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a94425c86e59e360814df2053f003948af6e674
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738013"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916274"
 ---
 # <a name="bp_location_code_file_line"></a>BP_LOCATION_CODE_FILE_LINE
 Contiene los datos de la ubicación de un punto de interrupción en una línea específica de un archivo de código fuente.
@@ -33,14 +33,14 @@ typedef struct _BP_LOCATION_CODE_FILE_LINE {
 } BP_LOCATION_CODE_FILE_LINE;
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 `bstrContext`\
 Contexto del punto de interrupción, normalmente un nombre de método o función tal y como se ha detectado en una pila de llamadas.
 
 `pDocPos`\
 El objeto [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) que representa la posición del documento del punto de interrupción.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Esta estructura es miembro de la estructura [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) como parte de una Unión.
 
 ## <a name="requirements"></a>Requisitos

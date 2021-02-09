@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 848fe6cb-0759-42f2-890b-d2b551c527d6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2cd1eba56f8e3c5a1a779acc3330790e9ba2bc96
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8af09c2db00b1f24631418c5332811cf4cb9202c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729754"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916263"
 ---
 # <a name="idebugexpression2evaluateasync"></a>IDebugExpression2::EvaluateAsync
 Este método evalúa la expresión de forma asincrónica.
@@ -55,7 +55,7 @@ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve un código de error.
 |-----------|-----------------|
 |E_EVALUATE_BUSY_WITH_EVALUATION|Otra expresión se está evaluando actualmente y no se admite la evaluación de expresiones simultáneas.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Este método debe volver inmediatamente después de que se haya iniciado la evaluación de la expresión. Cuando la expresión se evalúa correctamente, se debe enviar una [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) a la devolución de llamada del evento [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) como se proporciona mediante [Attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md) o [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md).
 
 ## <a name="example"></a>Ejemplo

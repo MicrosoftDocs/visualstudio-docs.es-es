@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: fdaa553f-a27e-44eb-a4e2-08c122105a87
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 54deb51714183497173c7df4e346bb65613366a2
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 59c468e28321c01993cd2f4b119218fb29bc6020
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349300"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917318"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Tutorial: descargar ensamblados satélite a petición con la API de implementación de ClickOnce
 Las aplicaciones de Windows Forms pueden configurarse para varias referencias culturales utilizando ensamblados satélite. Un *ensamblado satélite* es un ensamblado que contiene los recursos de aplicación para una referencia cultural que no sea la referencia cultural predeterminada de la aplicación.
@@ -56,7 +56,7 @@ Las aplicaciones de Windows Forms pueden configurarse para varias referencias cu
 
 4. Haga clic en la ficha **Archivos** .
 
-5. Haga clic en el botón **puntos suspensivos** ( **...** ) y seleccione el directorio que contenga todos los ensamblados y archivos de la aplicación, incluidos los ensamblados satélite generados mediante *Resgen.exe* (Un ensamblado satélite tendrá un nombre con el formato *\<isoCode>\ApplicationName.resources.dll* , donde \<isoCode> es un identificador de idioma en formato RFC 1766).
+5. Haga clic en el botón **puntos suspensivos** (**...**) y seleccione el directorio que contenga todos los ensamblados y archivos de la aplicación, incluidos los ensamblados satélite generados mediante *Resgen.exe* (Un ensamblado satélite tendrá un nombre con el formato *\<isoCode>\ApplicationName.resources.dll*, donde \<isoCode> es un identificador de idioma en formato RFC 1766).
 
 6. Haga clic en **Rellenar** para agregar los archivos a la implementación.
 

@@ -14,15 +14,15 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a6ccf3f5a355cdad682026453691a4203c95a814
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: c5330d4419c065d7209900bfd4fa404663be185d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847473"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917475"
 ---
 # <a name="how-to-add-bookmark-controls-to-word-documents"></a>Cómo: agregar controles Bookmark a documentos de Word
   En proyectos de nivel de documento, puede agregar controles <xref:Microsoft.Office.Tools.Word.Bookmark> al documento en el proyecto en tiempo de diseño o en tiempo de ejecución. En proyectos de complemento VSTO, puede agregar controles <xref:Microsoft.Office.Tools.Word.Bookmark> a cualquier documento abierto en tiempo de ejecución.
@@ -66,7 +66,7 @@ ms.locfileid: "96847473"
 
 3. Seleccione el texto u otros elementos que desee incluir en el marcador.
 
-4. Haga clic en **Aceptar**.
+4. Haga clic en **OK**.
 
      Si no desea conservar el nombre de marcador predeterminado, puede cambiar el nombre en la ventana **Propiedades** .
 

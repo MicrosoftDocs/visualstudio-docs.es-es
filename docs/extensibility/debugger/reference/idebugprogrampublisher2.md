@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b1d17f63-7146-4076-a588-034cfc6858b9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc6f0643066aaca4ba12d9818d449785f6edb752
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 430cd05c66311971ad3cdbf60e170478810899ac
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011871"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916193"
 ---
 # <a name="idebugprogrampublisher2"></a>IDebugProgramPublisher2
 Esta interfaz permite a un motor de depuración (DE) o a proveedores de puertos personalizados registrar programas para la depuración.
@@ -45,7 +45,7 @@ Esta interfaz implementa los métodos siguientes:
 |[UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md)|Quita un programa para que ya no esté disponible.|
 |[SetDebuggerPresent](../../../extensibility/debugger/reference/idebugprogrampublisher2-setdebuggerpresent.md)|Establece una marca que indica que hay un depurador presente.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Esta interfaz permite que los programas y los nodos de programas estén disponibles (es decir, "los publica") para su uso por parte de DEs y el administrador de depuración de sesión (SDM). Para tener acceso a los programas y los nodos de programa publicados, use la interfaz [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) . Esta es la única manera en que Visual Studio puede reconocer que se está depurando un programa.
 
 ## <a name="requirements"></a>Requisitos

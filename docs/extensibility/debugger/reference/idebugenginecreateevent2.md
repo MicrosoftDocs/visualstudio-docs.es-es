@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 37c0a841-1c8d-4802-a990-36b54bca3ef7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41a964f1e08fc2e88ac9a1d211e4b3e36b32c5b8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a6aebd8a27f4eb9962abbcd593c947c04a17854
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730602"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916283"
 ---
 # <a name="idebugenginecreateevent2"></a>IDebugEngineCreateEvent2
 El motor DE depuración (DE) envía esta interfaz al administrador de depuración de la sesión (SDM) cuando se crea una instancia de de.
