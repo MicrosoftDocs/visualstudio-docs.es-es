@@ -40,15 +40,15 @@ helpviewer_keywords:
 - VST.Designer.ExcelVST.Designer.Word
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0e183d5aca3fa856f45f322c2b79a76524b28005
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 88abd7294a96b4fe4989630753253b16f036ab7c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525160"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892013"
 ---
 # <a name="office-projects-in-the-visual-studio-environment"></a>Proyectos de Office en el entorno de Visual Studio
   Los proyectos de Microsoft Office tienen una experiencia de desarrollo que es similar a otros tipos de proyectos en Visual Studio, como los proyectos de Windows Forms. Al crear o abrir un proyecto de Office, los elementos del proyecto aparecen en el **Explorador de soluciones**. Para los proyectos en el nivel de documento, el documento (es decir, el documento de Word o el libro de Excel) se abre en Visual Studio y se comporta como un diseñador visual.
@@ -120,7 +120,7 @@ ms.locfileid: "97525160"
 ## <a name="data-sources-window"></a>Ventana de orígenes de datos
  Puede usar la ventana **Orígenes de datos** en los proyectos de Office de nivel de documento para arrastrar un origen de datos a su documento y crear un control enlazado al origen de datos. Para obtener más información, vea [enlazar controles a datos en Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md)
 - [Información general de plantillas de proyecto de Office](../vsto/office-project-templates-overview.md)

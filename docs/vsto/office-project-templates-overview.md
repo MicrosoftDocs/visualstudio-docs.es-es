@@ -29,15 +29,15 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], project templates
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5e3203eb4bbd7339f5e59ecffea8436b02180b8b
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: af01bf165c823ce34957e4a9eba38ef90c5344a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528082"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892039"
 ---
 # <a name="office-project-templates-overview"></a>Información general de plantillas de proyecto de Office
   Las Microsoft Office Developer Tools en Visual Studio incluye plantillas de proyecto para crear los siguientes tipos de soluciones de Office:
@@ -168,7 +168,7 @@ ms.locfileid: "97528082"
 ## <a name="excel-add-ins-xla-files"></a>Complementos de Excel (archivos. xla)
  No hay ningún proyecto de Office para crear un complemento de VSTO de Excel (archivo *. xla* ). Se pueden guardar libros como archivos .xla, pero no es una operación admitida y no es recomendable hacerlo. Si guarda un libro que tiene extensiones de código administrado como un archivo **Microsoft Office Excel Add-In ( \* . xla)** , puede seleccionarlo en el cuadro de diálogo **Complementos** para aplicarlo a otro libro. En algunos casos, el código se ejecutará en el libro de destino una vez aplicado el complemento de VSTO, pero no se admite dicho uso de la solución de Office.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md)
 - [Desarrollo de soluciones de Office](../vsto/developing-office-solutions.md)
 - [Cómo: crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: b70922a3-1313-409a-b3b7-50c7cd13e394
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cf0474d527b7c6f1d180201a463f52a0b17d18fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8168b0813eb99f4f70c8a5d8ffbdae4f6fce2094
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730359"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892624"
 ---
 # <a name="idebugengineprogram2watchforthreadstep"></a>IDebugEngineProgram2::WatchForThreadStep
 Inspecciona la ejecución (o deja de ver la ejecución) para que se produzca en el subproceso determinado.
@@ -28,7 +28,7 @@ Inspecciona la ejecución (o deja de ver la ejecución) para que se produzca en 
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT WatchForThreadStep( 
+HRESULT WatchForThreadStep( 
    IDebugProgram2* pOriginatingProgram,
    DWORD           dwTid,
    BOOL            fWatch,
@@ -37,7 +37,7 @@ HRESULT WatchForThreadStep( 
 ```
 
 ```csharp
-int WatchForThreadStep( 
+int WatchForThreadStep( 
    IDebugProgram2 pOriginatingProgram,
    uint           dwTid,
    int            fWatch,
@@ -61,7 +61,7 @@ de Especifica un índice de marco que controla el tipo de paso. Cuando este valo
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Cuando el administrador de depuración de sesión (SDM) realiza un programa, identificado por el `pOriginatingProgram` parámetro, notifica a todos los demás programas asociados llamando a este método.
 
  Este método solo es aplicable al recorrido del mismo subproceso.

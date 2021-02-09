@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2108abe89a47fa276da53a14439a52451d936eea
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: d9bf88212ccc6e00dfbca14912eb15e17d106a49
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863065"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892455"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>Tutorial: crear un elemento gráfico de vista, comandos y configuración (guías de columnas)
 Puede extender el editor de texto/código de Visual Studio con los comandos y los efectos de la vista. En este artículo se muestra cómo empezar a trabajar con una característica de extensión popular, guías de columnas. Las guías de columnas son líneas claras visualmente dibujadas en la vista del editor de texto para ayudarle a administrar el código en anchos de columna específicos. En concreto, el código con formato puede ser importante para los ejemplos que se incluyen en documentos, entradas de blog o informes de errores.
@@ -1341,7 +1341,7 @@ Pronto habrá un proyecto de GitHub de ejemplos de extensibilidad de Visual Stud
 
 Puede probar una versión de la característica guías de columnas con esta[extensión](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines)de la galería de Visual Studio.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Dentro del editor](../extensibility/inside-the-editor.md)
 - [Extender el editor y los servicios de lenguaje](../extensibility/extending-the-editor-and-language-services.md)
 - [Puntos de extensión de editor y servicio de lenguaje](../extensibility/language-service-and-editor-extension-points.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 151003a9-2e4d-4acf-9f4d-365dfa6b9596
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e5ccf2327e660a983bcb3032363a92ac8a6f71d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f630614dbe49e87b5a9905ceabbf717269c98ea2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730300"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892611"
 ---
 # <a name="idebugengineprogram2"></a>IDebugEngineProgram2
 Esta interfaz proporciona compatibilidad con la depuración multiproceso.
@@ -43,7 +43,7 @@ IDebugEngineProgram2 : IUnknown
 |[WatchForThreadStep](../../../extensibility/debugger/reference/idebugengineprogram2-watchforthreadstep.md)|Inspecciona la ejecución (o deja de ver la ejecución) para que se produzca en el subproceso determinado.|
 |[WatchForExpressionEvaluationOnThread](../../../extensibility/debugger/reference/idebugengineprogram2-watchforexpressionevaluationonthread.md)|Permite (o no) que se produzca la evaluación de expresiones en el subproceso determinado, incluso si el programa está detenido.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Visual Studio llama a esta interfaz como respuesta a un evento [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) y establece los Estados "inspeccionar paso de subproceso" y "inspeccionar para evaluación de expresiones en el subproceso" del programa. Se llama a [Stop](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) cuando el programa se va a detener; Este método proporciona al programa una oportunidad para finalizar todos los subprocesos.
 
 ## <a name="requirements"></a>Requisitos

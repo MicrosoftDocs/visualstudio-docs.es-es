@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 814185db-24f9-417f-b3b1-7c5aabb42b45
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8a2ac481ebf76fc2b34be841cd20d15b97fcfa9
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: a2a1857edb8032d12cd23da5e2686ad90f15b574
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863084"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892468"
 ---
 # <a name="walkthrough-create-a-margin-glyph"></a>Tutorial: crear un glifo de margen
 Puede personalizar la apariencia de los márgenes del editor mediante extensiones de editor personalizadas. En este tutorial se coloca un glifo personalizado en el margen del indicador siempre que aparece la palabra "todo" en un Comentario de código.
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
  A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS después. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-mef-project"></a>Creación de un proyecto MEF

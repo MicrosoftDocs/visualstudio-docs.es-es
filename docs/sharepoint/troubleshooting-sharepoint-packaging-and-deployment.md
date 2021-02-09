@@ -22,15 +22,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deployment conflict resolution
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 07ce649a22573041768bfc316f65bfcdf7577b98
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: f3ef56ba868700699eaaeb8ec88291fd6f8d8d32
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95969928"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892312"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>Solucionar problemas de empaquetado e implementación de SharePoint
   En este tema se tratan diversos problemas que pueden producirse al empaquetar e implementar soluciones de SharePoint.
@@ -52,7 +52,7 @@ ms.locfileid: "95969928"
 |Value|Descripción|
 |-----------|-----------------|
 |Automático|Detecta las colisiones y resuelve los conflictos automáticamente.|
-|Prompt|Detecta las colisiones y las notifica al desarrollador de software antes de resolver los conflictos.|
+|Solicitud|Detecta las colisiones y las notifica al desarrollador de software antes de resolver los conflictos.|
 |None|No detecta las colisiones.|
 
 ## <a name="differences-between-f5-deployment"></a>Diferencias entre la implementación F5
@@ -72,7 +72,7 @@ ms.locfileid: "95969928"
 ### <a name="error-message"></a>Mensaje de error
  Ninguno.
 
-### <a name="resolution"></a>Resolución
+### <a name="resolution"></a>Solución
  Para evitar este problema, siga estos pasos:
 
 1. Instale Update KB967535 como se describe en el artículo Soporte técnico de Microsoft [corrección: hay disponible una revisión para corregir dos problemas en ASP.net en IIS 7,0 para Windows Vista y Windows Server 2008](https://support.microsoft.com/help/967535).
@@ -89,7 +89,7 @@ ms.locfileid: "95969928"
 ### <a name="error-message"></a>Mensaje de error
  En el paso 'Agregar solución' de la implementación se ha producido el siguiente error: "Error al extraer el archivo cab de la solución".
 
-### <a name="resolution"></a>Resolución
+### <a name="resolution"></a>Solución
  Para evitar este problema, quite los paréntesis de los nombres de elementos de proyecto de SharePoint.
 
 ## <a name="error-appears-when-deploying-a-visual-web-part-to-a-site-on-a-different-web-application"></a>Aparece un error al implementar un elemento Web visual en un sitio en una aplicación web diferente
@@ -98,7 +98,7 @@ ms.locfileid: "95969928"
 ### <a name="error-message"></a>Mensaje de error
  En el paso 'Agregar solución' de la implementación se produce el siguiente error: "Ya se ha instalado una característica con Id. [#] en este conjunto de servidores. Use el atributo fuerza para volver a agregar la característica de modo explícito".
 
-### <a name="resolution"></a>Resolución
+### <a name="resolution"></a>Solución
  Este error se produce debido al modo en que se retractan las características de elementos web visuales en SharePoint. Para implementar correctamente el elemento Web visual, vuelva a implementar la solución eligiendo la tecla **F5** .
 
 ## <a name="warning-appears-when-deploying-nested-user-controls"></a>Aparece una advertencia al implementar controles de usuario anidados
@@ -107,7 +107,7 @@ ms.locfileid: "95969928"
 ### <a name="error-message"></a>Mensaje de error
  ADVERTENCIA 1 el elemento ' [*nombre del control*] ' no es un elemento conocido. Esto se puede producir si hay un error de compilación en el sitio web o no se encuentra el archivo web.config.
 
-### <a name="resolution"></a>Resolución
+### <a name="resolution"></a>Solución
  Si el [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] sistema del proyecto no es consciente de un control de usuario anidado, no puede proporcionar IntelliSense y emite la advertencia. El sistema de proyectos no reconoce un control de usuario anidado si no se ha compilado el proyecto y el diseñador no se ha cerrado y se ha vuelto a abrir, o si está habilitada la opción de retracción automática, que hace que el control de usuario se retire del subárbol de SharePoint después de la depuración.
 
  Para quitar esta advertencia, compile el proyecto y, a continuación, cierre el diseñador y vuelva a abrirlo, o deshabilite la opción de retracción automática en el proyecto. Para ello, desactive la casilla **retraer automáticamente después de depurar** en la pestaña **SharePoint** del cuadro de diálogo Propiedades del proyecto.

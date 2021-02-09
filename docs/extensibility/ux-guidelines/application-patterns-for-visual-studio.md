@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 709daa641e898f9d75f4bab340c8e5fd00d28a88
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 1d647a1dbd3bc6bf99f9803870c7b58ead358b41
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97716125"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892598"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Patrones de aplicaciones para Visual Studio
 ## <a name="window-interactions"></a><a name="BKMK_WindowInteractions"></a> Interacciones de ventanas
@@ -37,7 +37,7 @@ Piense detenidamente en qué tipo de contenedor necesita. En la tabla siguiente 
 | **Position** | Siempre se coloca dentro del área del documento y no se acopla alrededor de los bordes del IDE. Se puede "extraer" para que flote por separado del shell principal. | Normalmente acoplado con tabulación alrededor de los bordes del IDE, pero se puede personalizar para que sea flotante, oculto automáticamente (desanclado) o acoplado dentro del área del documento.|Ventana flotante grande independiente del IDE. |
 | **Modelo de confirmación** | *Confirmación diferida*<br /><br /> Para guardar los datos en un documento, el usuario debe emitir el comando **&gt; Guardar**, **Guardar como** o **guardar todo** . Una ventana de documento tiene el concepto de los datos que contiene y se confirma en uno de los comandos de guardar. Al cerrar una ventana de documento, todo el contenido se guarda en el disco o se pierde. | *Confirmación inmediata*<br /><br /> No hay ningún modelo de guardado. En el caso de las ventanas de herramientas de inspector que ayudan a editar un archivo, el archivo debe estar abierto en el editor o diseñador activo y el editor o el diseñador posee el guardado. | *Confirmación retrasada o inmediata*<br /><br /> A menudo, un cuadro de diálogo no modal de gran tamaño requiere una acción para confirmar los cambios y permite una operación de "cancelación", que revierte los cambios realizados en la sesión de diálogo.  Esto diferencia un cuadro de diálogo no modal de una ventana de herramientas en que las ventanas de herramientas siempre tienen un modelo de confirmación inmediato. |
 | **Visibilidad** | *Abrir/crear (archivo) y cerrar*<br /><br /> Para abrir una ventana de documento, se puede abrir un documento existente o usar una plantilla para crear un nuevo documento. No hay ningún comando "abrir \<specific editor> ". | *Ocultar y mostrar*<br /><br /> Las ventanas de herramientas de una sola instancia se pueden ocultar o mostrar. El contenido y los Estados de la ventana de herramientas se conservarán en la vista u ocultarse. Las ventanas de herramientas de varias instancias se pueden cerrar y ocultar. Cuando se cierra una ventana de herramientas de varias instancias, se descartan el contenido y el estado de la ventana de herramientas. | *Iniciado desde un comando*<br /><br /> Los cuadros de diálogo se inician desde un comando basado en tareas. |
-| **Stance** | *Instancias múltiples*<br /><br /> Varios editores pueden abrirse al mismo tiempo y editar distintos archivos, mientras que algunos editores también permiten que el mismo archivo se abra en más de un editor (mediante el comando **ventana &gt; nueva ventana** ).<br /><br /> Un solo editor puede estar editando uno o varios archivos al mismo tiempo (diseñador de proyectos). | *Una o varias instancias*<br /><br /> Cambio de contenido para reflejar el contexto (como en el explorador de propiedades) o el foco o el contexto de la extracción en otras ventanas (Lista de tareas, Explorador de soluciones).<br /><br /> Las ventanas de herramientas de instancia única y de varias instancias deben estar asociadas a la ventana de documento activa, a menos que haya una buena razón para no hacerlo. | *Instancia única* |
+| **Instancias** | *Instancias múltiples*<br /><br /> Varios editores pueden abrirse al mismo tiempo y editar distintos archivos, mientras que algunos editores también permiten que el mismo archivo se abra en más de un editor (mediante el comando **ventana &gt; nueva ventana** ).<br /><br /> Un solo editor puede estar editando uno o varios archivos al mismo tiempo (diseñador de proyectos). | *Una o varias instancias*<br /><br /> Cambio de contenido para reflejar el contexto (como en el explorador de propiedades) o el foco o el contexto de la extracción en otras ventanas (Lista de tareas, Explorador de soluciones).<br /><br /> Las ventanas de herramientas de instancia única y de varias instancias deben estar asociadas a la ventana de documento activa, a menos que haya una buena razón para no hacerlo. | *Instancia única* |
 | **Ejemplos** | **Editores de texto**, como el editor de código<br /><br /> **Superficies de diseño**, como un diseñador de formularios o una superficie de modelado<br /><br /> **Diseños de controles similares a los cuadros de diálogo**, como el diseñador de manifiestos | El **Explorador de soluciones** proporciona una solución y proyectos incluidos en la solución.<br /><br /> El **Explorador de servidores** proporciona una vista jerárquica de los servidores y las conexiones de datos que el usuario elige abrir en la ventana de. Abrir un objeto de la jerarquía de la base de datos, como una consulta, abre una ventana de documento y permite al usuario editar la consulta.<br /><br /> El **Explorador de propiedades** muestra las propiedades del objeto seleccionado en una ventana de documento o en otra ventana de herramientas. Las propiedades se presentan en una vista de cuadrícula jerárquica o en controles complejos de cuadro de diálogo y permiten que el usuario establezca los valores de esas propiedades. | |
 
 ## <a name="tool-windows"></a><a name="BKMK_ToolWindows"></a> Ventanas de herramientas
@@ -415,9 +415,9 @@ Evite elegir una acción destructiva permanentemente para el comando predetermin
 #### <a name="access-keys"></a>Claves de acceso
 No use teclas de acceso para los botones **Aceptar**, **Cancelar** o **ayuda** . De forma predeterminada, estos botones se asignan a las teclas de método abreviado:
 
-| Nombre del botón | Métodos abreviados de teclado |
+| Nombre del botón | Método abreviado de teclado |
 | --- | --- |
-| Aceptar | Escriba |
+| Aceptar | Entrar |
 | Cancelar | Esc |
 | Ayuda | F1 |
 
@@ -509,7 +509,7 @@ No se admite arrastrar elementos de proyecto entre instancias de Visual Studio (
 
 El usuario siempre debe ser capaz de determinar el efecto de una operación de arrastrar y colocar seleccionando un elemento, arrastrándolo a la ubicación de destino y observando cuál de los siguientes punteros del mouse aparece antes de que se quite el elemento:
 
-| Puntero | Get-Help | Description |
+| Puntero | Comando | Descripción |
 | :---: | --- | --- |
 | ![Icono de mouse "No colocar"](../../extensibility/ux-guidelines/media/0706-01_mousenodrop.png "0706-01_MouseNoDrop") | No eliminar | No se puede quitar el elemento de la ubicación especificada. |
 | ![Icono de mouse "Copiar"](../../extensibility/ux-guidelines/media/0706-02_mousecopy.png "0706-02_MouseCopy") | Copiar | El elemento se copiará en la ubicación de destino. |
@@ -537,7 +537,7 @@ El usuario siempre debe ser capaz de determinar el efecto de una operación de a
 | Ctrl + Mayús + arrastrar | Destino | Agrega una referencia al elemento original | Agrega una referencia al elemento original |
 | Ctrl + Mayús + arrastrar | Source | Conserva la referencia al elemento original | Conserva el elemento original |
 | Ctrl + Mayús + arrastrar | Resultado | `DROPEFFECT_LINK` se devuelve como acción de `::Drop` y el elemento permanece en la ubicación original en el almacenamiento. | `DROPEFFECT_LINK` se devuelve como acción de `::Drop` y el elemento permanece en la ubicación original en el almacenamiento. |
-| Ctrl + Mayús + arrastrar | Nota | Igual que el comportamiento de arrastrar y colocar para los accesos directos en el explorador de Windows. ||
+| Ctrl + Mayús + arrastrar | Nota: | Igual que el comportamiento de arrastrar y colocar para los accesos directos en el explorador de Windows. ||
 | Cortar y pegar | Acción | Move | Link |
 | Cortar y pegar | Destino | Agrega una referencia al elemento original | Agrega una referencia al elemento original |
 | Cortar y pegar | Source | Conserva la referencia al elemento original|Conserva el elemento original |

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, about developing solutions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9bb964e90c44c4e0b41e0f09df8931665426dc70
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 03da1c8052140bbe23ce4d99c12d72baef18898f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527715"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891961"
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Información general sobre el desarrollo de soluciones de Office (VSTO)
   Mediante el uso de Microsoft Office como front-end de soluciones, puede beneficiarse de las conocidas interfaces de usuario y herramientas de Microsoft Office, como las características de procesamiento de texto de Word, las características de análisis de datos de Excel y las características de administración de correo electrónico de Outlook. Puede desarrollar soluciones en Visual Studio para personalizar las aplicaciones de Office y agregar las características específicas que necesite para sus procesos empresariales. Por ejemplo, puede convertir Word en un generador de contratos que ensamble contratos a partir de elementos previamente existentes que se pueden hacer modificables o no modificables. Con Excel puede crear una hoja de cálculo de presupuestos automatizada y personalizada para distintos proyectos. Los usuarios pueden aprovechar las soluciones de Office sin conexión, lo que hace que soluciones complejas resulten más prácticas de lo que serían si utilizase una arquitectura basada en web.
@@ -87,7 +87,7 @@ ms.locfileid: "97527715"
 ### <a name="security"></a>Seguridad
  La seguridad para las soluciones de Office de VSTO se ejecuta mediante una serie de comprobaciones que realiza [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] al instalar y cargar la solución. Estas comprobaciones incluyen comprobar si son de confianza la ubicación del manifiesto de implementación o el certificado que se ha usado para firmar este manifiesto. Para obtener más información, vea [proteger soluciones de Office](../vsto/securing-office-solutions.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Introducción &#40;desarrollo de Office en Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Arquitectura de las personalizaciones de nivel de documento](../vsto/architecture-of-document-level-customizations.md)
 - [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)

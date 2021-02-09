@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 5f95fd0c-fdce-497f-9f54-2ad8749494e9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5de59c573f7e233ea2aacb0dfa38826051c59373
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03c2ab7b701163e22a5cc3ff386f447c5199ff15
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730288"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892572"
 ---
 # <a name="idebugenumfieldgetstringfromvalue"></a>IDebugEnumField::GetStringFromValue
 Este método obtiene el nombre de la constante de enumeración a partir de su valor.
@@ -51,7 +51,7 @@ enuncia Devuelve el nombre de la constante de enumeración.
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve `S_FALSE` si el valor no tiene ningún nombre asociado o devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Si hay más de un nombre asociado al mismo valor, se devolverá el primer nombre definido en la enumeración.
 
 ## <a name="see-also"></a>Vea también

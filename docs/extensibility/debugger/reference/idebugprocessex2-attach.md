@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: f3334ed7-39bf-4d02-a338-36f567b9b287
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d70da2530a1677367a22968436a17eba809fd24a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a9b9e2fa8f636581572b97da58fb9ddefeafd375
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723386"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892546"
 ---
 # <a name="idebugprocessex2attach"></a>IDebugProcessEx2::Attach
 Este método informa al proceso de que una sesión está depurando el proceso.
@@ -28,7 +28,7 @@ Este método informa al proceso de que una sesión está depurando el proceso.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT Attach( 
+HRESULT Attach( 
    IDebugSession2* pSession
 );
 ```
@@ -46,7 +46,7 @@ de Valor que identifica de forma única la sesión que se adjunta a este proceso
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  La interfaz que se pasa `pSession` se trata únicamente como una cookie, un valor que identifica de forma única el administrador de depuración de la sesión que se asocia a este proceso; ninguno de los métodos de la interfaz proporcionada es funcional.
 
 ## <a name="see-also"></a>Vea también

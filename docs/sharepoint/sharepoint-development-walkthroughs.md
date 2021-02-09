@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, walkthroughs
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4d1700958d155801a436cbd00a8a88f7599292a0
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: b12aaade85964eb1c331bd96f2fbea522670bcc8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95970323"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892325"
 ---
 # <a name="sharepoint-development-walkthroughs"></a>Tutoriales de desarrollo de SharePoint
   En los siguientes tutoriales se muestra cómo desarrollar e implementar soluciones de SharePoint mediante [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
@@ -47,7 +47,7 @@ ms.locfileid: "95970323"
 |[Tutorial: Creación de un elemento web para SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)|Muestra cómo crear un elemento Web utilizando la plantilla elemento **Web** de Visual Studio.|
 |[Tutorial: Creación de un elemento web para SharePoint mediante un diseñador](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)|Muestra cómo crear un elemento web visualmente con la plantilla de proyecto de **elemento Web visual** de SharePoint en Visual Studio.|
 
-## <a name="workflows"></a>Flujos de trabajo
+## <a name="workflows"></a>Workflows
 
 |Tema|Descripción|
 |-----------|-----------------|

@@ -22,15 +22,15 @@ helpviewer_keywords:
 - ProjectItem element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bd425111e7e3d69e381e69e60daf914f74cd2d11
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 466bc68ca002914b64698d7cd87f98ff276bfc0e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442552"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892286"
 ---
 # <a name="sharepoint-project-item-schema-reference"></a>Referencia de esquemas de elementos de proyecto de SharePoint
   Visual Studio usa el esquema de elementos de proyecto de SharePoint para validar el contenido de los archivos *. spdata* . Un archivo *. spdata* especifica el contenido y el comportamiento de un elemento de proyecto de SharePoint. Para obtener más información sobre el contenido de los elementos de proyecto de SharePoint, vea [crear plantillas de elemento y plantillas de proyecto para los elementos de proyecto de SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).

@@ -11,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: 01d05e77-8cac-4d1b-b19f-25756767ed27
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4f36431ef7a190e98d35e795ffd8213781553dfc
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: ae9e10da02ab0bbef6be0fed5b9d505bf1b3e268
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036124"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892676"
 ---
 # <a name="idebugengineprogram2watchforexpressionevaluationonthread"></a>IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
 Permite (o no) que se produzca la evaluación de expresiones en el subproceso determinado, incluso si el programa se ha detenido.
@@ -30,7 +30,7 @@ Permite (o no) que se produzca la evaluación de expresiones en el subproceso de
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT WatchForExpressionEvaluationOnThread( 
+HRESULT WatchForExpressionEvaluationOnThread( 
    IDebugProgram2*       pOriginatingProgram,
    DWORD                 dwTid,
    DWORD                 dwEvalFlags,
@@ -40,7 +40,7 @@ HRESULT WatchForExpressionEvaluationOnThread( 
 ```
 
 ```csharp
-int WatchForExpressionEvaluationOnThread( 
+int WatchForExpressionEvaluationOnThread( 
    IDebugProgram2       pOriginatingProgram,
    uint                  dwTid,
    uint                  dwEvalFlags,
@@ -68,12 +68,12 @@ de Si es distinto de cero ( `TRUE` ), permite la evaluación de expresiones en e
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Cuando el administrador de depuración de sesión (SDM) solicita a un programa, identificado por el `pOriginatingProgram` parámetro, que evalúe una expresión, notifica a todos los demás programas asociados mediante una llamada a este método.
 
  La evaluación de expresiones en un programa puede provocar que el código se ejecute en otro, debido a la evaluación de la función o a la evaluación de las `IDispatch` propiedades. Por este motivo, este método permite que la evaluación de expresiones se ejecute y se complete, aunque el subproceso se detenga en este programa.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)
 - [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

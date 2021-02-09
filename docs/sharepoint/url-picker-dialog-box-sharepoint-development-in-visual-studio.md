@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, designer
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 584b77ab714cb692069fadd6c6fad50e20d46f80
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: d04857f0e61e5d9f293d73902cd090f718c65cd0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442539"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892221"
 ---
 # <a name="url-picker-dialog-box-sharepoint-development-in-visual-studio"></a>Selector de URL (cuadro de diálogo) (desarrollo de SharePoint en Visual Studio)
   En el cuadro de diálogo Selector de URL, puede elegir archivos como archivos de la página maestra o archivos de imagen que se encuentran en el proyecto o en el servidor local que ejecuta SharePoint.
