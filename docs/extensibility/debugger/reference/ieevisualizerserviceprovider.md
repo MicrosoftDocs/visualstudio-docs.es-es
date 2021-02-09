@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 859d1a51-1c65-4c8b-ae74-3b74b181ebcd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44d8a73589a4248736ac6c4d73814166056a1f90
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 40e811d33d23b35553ffb23338bed19dc207e1e9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717886"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907798"
 ---
 # <a name="ieevisualizerserviceprovider"></a>IEEVisualizerServiceProvider
 > [!IMPORTANT]
@@ -43,7 +43,7 @@ IEEVisualizerServiceProvider : IUnknown
 |------------|-----------------|
 |[CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)|Crea el servicio del visualizador.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  La `IEEVisualizerServiceProvider` interfaz se obtiene durante la implementación de [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md). El servicio visualizador que crea esta interfaz se usa para proporcionar funcionalidad a una interfaz [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) , que es responsable de la implementación de EE. EE también es responsable de implementar una interfaz [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md) que permita a los visualizadores de tipos ver y modificar el valor de una propiedad.
 
  Vea [visualizar y ver datos](../../../extensibility/debugger/visualizing-and-viewing-data.md) para obtener más información sobre cómo interactúan estas interfaces.

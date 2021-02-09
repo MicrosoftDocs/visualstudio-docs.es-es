@@ -13,15 +13,15 @@ helpviewer_keywords:
 - security [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bedb49a6d5d17e3c9f79a652183c2b4cd748ff6c
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 3576bdc41f25b95b68230e09e07b1a5ed97016c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528477"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906659"
 ---
 # <a name="secure-office-solutions"></a>Proteger soluciones de Office
   El modelo de seguridad para soluciones de Office implica varias tecnologías: [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] , el centro de confianza de Microsoft Office y la zona de sitios restringidos de Internet Explorer. En las secciones siguientes se describe el funcionamiento de las distintas características de seguridad:
@@ -102,7 +102,7 @@ ms.locfileid: "97528477"
 
  ![Seguridad de VSTO: usar el programa de instalación para realizar la instalación](../vsto/media/setup-vstoinstaller.png "Seguridad de VSTO: usar el programa de instalación para realizar la instalación")
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Conceder confianza a las soluciones de Office](../vsto/granting-trust-to-office-solutions.md)
 - [Conceder confianza a los documentos](../vsto/granting-trust-to-documents.md)

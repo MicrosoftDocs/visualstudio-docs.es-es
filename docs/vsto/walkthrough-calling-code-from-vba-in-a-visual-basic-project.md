@@ -19,15 +19,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], calling code
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6016dbf53413f6e55c88edfe930af677472bdaf5
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: bcb13ec0e26b1668a397d56982d049bf9ebcceb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527383"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906546"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>Tutorial: llamar a código desde VBA en un proyecto de Visual Basic
   Este tutorial muestra cómo llamar a un método en una personalización de nivel de documento para Microsoft Office Word desde el código de Visual Basic para Aplicaciones (VBA) del documento. El procedimiento implica tres pasos básicos: agregar un método a la clase de elemento host `ThisDocument` , exponer el método a código VBA y llamar al método desde código VBA del documento.
@@ -218,7 +218,7 @@ ms.locfileid: "97527383"
 
 - Llamar a código en un complemento de VSTO desde VBA. Para obtener más información, vea [Tutorial: llamar a código en un complemento de VSTO desde VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Combinar personalizaciones de VBA y de nivel de documento](../vsto/combining-vba-and-document-level-customizations.md)
 - [Personalizaciones de nivel de documento de programa](../vsto/programming-document-level-customizations.md)
 - [Cómo: exponer código a VBA en un proyecto de Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)

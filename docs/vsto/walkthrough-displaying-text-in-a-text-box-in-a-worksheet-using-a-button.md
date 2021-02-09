@@ -14,15 +14,15 @@ helpviewer_keywords:
 - text [Office development in Visual Studio], text boxes
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c499800efa783ce252dbf925f307bc64e814420f
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 270754005704d91569f014ed2e0be382bc2dd707
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97522643"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906475"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-worksheet-using-a-button"></a>Tutorial: mostrar texto en un cuadro de texto de una hoja de cálculo mediante un botón
   En este tutorial se muestran los aspectos básicos del uso de botones y cuadros de texto en Microsoft Office hojas de cálculo de Excel y cómo crear proyectos de Excel con las herramientas de desarrollo de Office en Visual Studio. Para ver el resultado como un ejemplo completado, vea el ejemplo de controles de Excel en [ejemplos y tutoriales de desarrollo de Office](../vsto/office-development-samples-and-walkthroughs.md).
@@ -112,7 +112,7 @@ ms.locfileid: "97522643"
 
 - Usar casillas para cambiar el formato. Para obtener más información, vea [Tutorial: cambiar el formato de una hoja de cálculo mediante controles de casilla](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Cómo: agregar controles Windows Forms a documentos de Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
 - [Tutoriales de uso de Excel](../vsto/walkthroughs-using-excel.md)
 - [Limitaciones de los controles de Windows Forms en documentos de Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)

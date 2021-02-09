@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 877756c9-4261-43d9-9f32-51bf06b4219f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4d91f640abc4fd91b68341e825b312b8bfb0d6f6
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 49014608907445eb768fd5f0ebe5850e625eefdc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875497"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907722"
 ---
 # <a name="project-configuration-object"></a>Objeto de configuración del proyecto
 El objeto de configuración de proyecto administra la presentación de la información de configuración en la interfaz de usuario.
@@ -49,7 +49,7 @@ El objeto de configuración de proyecto administra la presentación de la inform
 
  `ISpecifyPropertyPages` y `IDispatch` se usan junto con las páginas de propiedades para recuperar y Mostrar información dependiente de la configuración al usuario. Para obtener más información, vea [páginas de propiedades](../../extensibility/internals/property-pages.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Administración de opciones de configuración](../../extensibility/internals/managing-configuration-options.md)
 - [Configuración del proyecto para la compilación](../../extensibility/internals/project-configuration-for-building.md)
 - [Configuración del proyecto para la salida](../../extensibility/internals/project-configuration-for-output.md)

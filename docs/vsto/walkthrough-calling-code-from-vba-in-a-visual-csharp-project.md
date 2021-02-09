@@ -18,15 +18,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], calling code
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: daf25a1e2e80d2c5918d0d11c4b31c75a2e40c87
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: a026732f9b49107b8c113796251e1a2b916cf9a3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527298"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906490"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>Tutorial: llamar a código desde VBA en un proyecto de Visual C#
   Este tutorial muestra cómo llamar a un método en una personalización de nivel de documento para Microsoft Office Excel desde el código de Visual Basic para Aplicaciones (VBA) del libro. El procedimiento implica tres pasos básicos: agregar un método a la clase de elemento host `Sheet1` , exponer el método a código VBA del libro y llamar al método desde código VBA del libro.
@@ -248,7 +248,7 @@ ms.locfileid: "97527298"
 
 - Llamar a código en un complemento de VSTO desde VBA. Para obtener más información, vea [Tutorial: llamar a código en un complemento de VSTO desde VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Combinar personalizaciones de VBA y de nivel de documento](../vsto/combining-vba-and-document-level-customizations.md)
 - [Personalizaciones de nivel de documento de programa](../vsto/programming-document-level-customizations.md)
 - [Cómo: exponer código a VBA en un proyecto de Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)

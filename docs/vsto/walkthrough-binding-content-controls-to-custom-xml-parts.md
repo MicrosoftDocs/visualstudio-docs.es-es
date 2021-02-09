@@ -16,15 +16,15 @@ helpviewer_keywords:
 - DatePickerContentControl, binding to a custom XML part
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a82a8fd98bbf1a735661f3e1cf01e2452eb7ee58
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 8e5e3d58ac858afe905aae38c84e6403b43fb789
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527958"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906632"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>Tutorial: enlazar controles de contenido a elementos XML personalizados
   Este tutorial muestra cómo enlazar controles de contenido en una personalización de nivel de documento para Word a datos XML que se almacenan en el documento.
@@ -318,7 +318,7 @@ ms.locfileid: "97527958"
 
 - Utilice los controles de contenido para proteger elementos de un documento. Para obtener más información, consulte [Cómo: proteger elementos de documentos mediante controles de contenido](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Automatizar Word con objetos extendidos](../vsto/automating-word-by-using-extended-objects.md)
 - [Controles de contenido](../vsto/content-controls.md)
 - [Cómo: agregar controles de contenido a documentos de Word](../vsto/how-to-add-content-controls-to-word-documents.md)

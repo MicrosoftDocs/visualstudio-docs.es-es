@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d1803f4a-24eb-44b0-b5d2-cb40c15534be
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc4234481023592595de2df482d5ff6c2227a95e
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: fdc5550cfde44c71b1b663a30cf1824c6edfcf82
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877668"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907674"
 ---
 # <a name="project-context"></a>Contexto del proyecto
 Cuando el usuario agrega o trabaja con proyectos y elementos de proyecto, el IDE usa la noción de contexto del proyecto para determinar cómo se deben realizar varias operaciones.
@@ -28,6 +28,6 @@ Cuando el usuario agrega o trabaja con proyectos y elementos de proyecto, el IDE
 
  En otras ocasiones, no se especifica explícitamente el contexto del proyecto de un elemento. Por ejemplo, el contexto de un elemento no está disponible cuando el usuario abre un archivo seleccionando el comando **Abrir archivo existente** en el menú **archivo** , cuando el depurador funciona en un archivo o cuando el usuario hace clic en el comando **Buscar en archivos** del cuadro de diálogo **Buscar y reemplazar** . Para controlar estas situaciones, el IDE llama <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument> a para administrar el proceso de búsqueda del mejor proyecto para abrir un documento.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Prioridad del proyecto](../../extensibility/internals/project-priority.md)
 - [Adición de plantillas de proyecto y de elementos de proyecto](../../extensibility/internals/adding-project-and-project-item-templates.md)
