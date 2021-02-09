@@ -10,15 +10,15 @@ helpviewer_keywords:
 - rule sets
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 69af1534740ddec2c804f0b7dafec61d985a4b24
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: dda89e9822e361438346300a2f60c05bcfd64d6f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97667889"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860157"
 ---
 # <a name="customize-a-rule-set"></a>Personalización de un conjunto de reglas
 
@@ -63,7 +63,7 @@ Puede crear un nuevo archivo de conjunto de reglas desde el cuadro de diálogo *
 
 2. En el cuadro de diálogo **nuevo archivo** , seleccione la categoría **General** de la izquierda y, a continuación, seleccione **conjunto de reglas de análisis de código**.
 
-3. Seleccione **Open** (Abrir).
+3. Seleccione **Abrir**.
 
    El nuevo archivo *. ruleset* se abre en el editor de conjuntos de reglas.
 
@@ -147,7 +147,7 @@ Ahora que tiene un conjunto de reglas, el siguiente paso es personalizar las reg
 > [!div class="nextstepaction"]
 > [Modificar reglas en el editor de conjuntos de reglas](../code-quality/working-in-the-code-analysis-rule-set-editor.md)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Cómo: Configurar el análisis de código para un proyecto de código administrado](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
 - [Referencia del conjunto de reglas Análisis de código](../code-quality/rule-set-reference.md)

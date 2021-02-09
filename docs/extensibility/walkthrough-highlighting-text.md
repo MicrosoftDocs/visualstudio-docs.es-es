@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 64b772ad-4392-42e9-a237-5137f0384bf0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 32af7033eb29d223a5ecfafaccb0a3123ab88d06
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 95bc250219c59d4db21fcb086cdf43e0ba7800e3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877135"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838635"
 ---
 # <a name="walkthrough-highlight-text"></a>Tutorial: resaltar texto
 Puede agregar diferentes efectos visuales al editor creando partes de componentes Managed Extensibility Framework (MEF). En este tutorial se muestra cómo resaltar cada aparición de la palabra actual en un archivo de texto. Si una palabra se produce más de una vez en un archivo de texto y coloca el símbolo de intercalación en una aparición, se resalta cada aparición.
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
  A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS después. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-mef-project"></a>Creación de un proyecto MEF
@@ -407,5 +407,5 @@ Puede agregar diferentes efectos visuales al editor creando partes de componente
 
 4. Coloque el cursor en una de las apariciones de "Hello". Cada aparición debe aparecer resaltada en azul.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Tutorial: vincular un tipo de contenido a una extensión de nombre de archivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

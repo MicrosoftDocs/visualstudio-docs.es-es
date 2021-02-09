@@ -10,15 +10,15 @@ helpviewer_keywords:
 - code metrics [Visual Studio]
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 631ce51df5d985e02e8ccabca258c0ef1c1318f4
-ms.sourcegitcommit: b1f7e7d7a0550d5c6f46adff3bddd44bc1d6ee1c
+ms.openlocfilehash: 0387542487b2c24baa129fbb0163dee0140cb413
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98069479"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860051"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Cómo: generar datos de métricas de código
 
@@ -333,7 +333,7 @@ La `LinesOfCode` métrica es más precisa y confiable en la nueva herramienta de
 
 Otras métricas como `CyclomaticComplexity` y `MaintainabilityIndex` usan las mismas fórmulas que las versiones anteriores de *Metrics.exe*, pero la nueva herramienta cuenta el número de `IOperations` (instrucciones de origen lógico) en lugar de las instrucciones de lenguaje intermedio (IL). Los números serán ligeramente diferentes a los generados por el IDE de Visual Studio y por versiones anteriores de *Metrics.exe*.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Usar la ventana Resultados de métricas de código](../code-quality/working-with-code-metrics-data.md)
 - [Valores de las métricas de código](../code-quality/code-metrics-values.md)

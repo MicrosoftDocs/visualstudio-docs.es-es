@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: d8fd9475-ac9b-4085-b5a3-b0c807922cac
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4dccefdb0325cfd96024923c77d03565f904ea49
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 0f5c217e8d043d0363b66a63c84c78829f640065
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348507"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860586"
 ---
 # <a name="code-analysis-application-errors"></a>Errores de la aplicación de análisis de código
 
@@ -42,11 +42,11 @@ Esta sección es una referencia de los mensajes de error generados por la herram
 |[CA0059](ca0059.md)|Error del modificador de la línea de comandos.|
 |[CA0060](ca0060.md)|No se pueden cargar los ensamblados a los que se hace referencia indirectamente.|
 |[CA0061](ca0061.md)|No se encontró la *regla ' ID '.*|
-|[CA0062](ca0062.md)|No se encontró la *regla "ID." a* la que se hace referencia en el conjunto de reglas " *RuleSetName* ".|
+|[CA0062](ca0062.md)|No se encontró la *regla "ID." a* la que se hace referencia en el conjunto de reglas "*RuleSetName*".|
 |[CA0063](ca0063.md)|No se pudo cargar el archivo de conjunto de reglas o uno de sus archivos de conjunto de reglas dependientes.|
 |[CA0064](ca0064.md)|No se realizó ningún análisis porque el conjunto de reglas especificado no contenía ninguna regla de FxCop.|
-|[CA0065](ca0065.md)|Construcción de metadatos no admitida: el tipo ' *TypeName* ' contiene una propiedad y un campo con el mismo nombre ' *PropertyFieldName* '|
-|[CA0066](ca0066.md)|El valor ' *VersionID* ' proporcionado a **/TargetFrameworkVersion** no es una versión reconocida.|
+|[CA0065](ca0065.md)|Construcción de metadatos no admitida: el tipo '*TypeName*' contiene una propiedad y un campo con el mismo nombre '*PropertyFieldName*'|
+|[CA0066](ca0066.md)|El valor '*VersionID*' proporcionado a **/TargetFrameworkVersion** no es una versión reconocida.|
 |[CA0067](ca0067.md)|No se encontró el directorio.|
 |[CA0068](ca0068.md)|No se encontró la información de depuración para el ensamblado de destino *' AssemblyName '*.|
 |[CA0069](ca0069.md)|Usar una plataforma alternativa. No se encontró *FrameworkVersion1* . Usar *FrameworkVersion2* en su lugar. Para obtener los mejores resultados del análisis, asegúrese de que está instalada la versión correcta de Framework.|

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 667e3b4e-beff-48be-b3d1-376e1716a895
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 33a552cfe918ef75257a4d23391535622560661c
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 10466acedcd5c7f5fda835d66e654128a556d0a4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348741"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860105"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Cómo: Personalizar el diccionario de análisis de código
 
@@ -266,13 +266,13 @@ Los términos del nodo Dictionary/acrónimos/CasingExceptions se aplican a las s
 
 ## <a name="to-apply-a-custom-dictionary-to-a-project"></a><a name="BKMK_ToApplyACustomDictionaryToAProject"></a> Para aplicar un diccionario personalizado a un proyecto
 
-1. En **Explorador de soluciones** , use uno de los procedimientos siguientes:
+1. En **Explorador de soluciones**, use uno de los procedimientos siguientes:
 
     - Para agregar un diccionario a un solo proyecto, haga clic con el botón secundario en el nombre del proyecto y, a continuación, haga clic en **Agregar elemento existente**. Especifique el archivo en el cuadro de diálogo **Agregar elemento existente** .
   
     - Para agregar un diccionario compartido entre dos o más proyectos, busque el archivo que desea compartir en el cuadro de diálogo **Agregar elemento existente** , haga clic en la flecha hacia abajo del botón **Agregar** y, a continuación, haga clic en **Agregar como vínculo**.
 
-2. En **Explorador de soluciones** , haga clic con el botón secundario en el nombre de archivo **CustomDictionary.xml** y haga clic en **propiedades**.
+2. En **Explorador de soluciones**, haga clic con el botón secundario en el nombre de archivo **CustomDictionary.xml** y haga clic en **propiedades**.
 
 3. En la lista **acción de compilación** , seleccione **CodeAnalysisDictionary**.
 

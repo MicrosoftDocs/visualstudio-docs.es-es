@@ -9,13 +9,13 @@ helpviewer_keywords:
 - disable code analysis
 author: mikadumont
 ms.author: midumont
-manager: jillfra
-ms.openlocfilehash: e808cb623fa47c9971e1cdceb15a02b5bf46e901
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+manager: jmartens
+ms.openlocfilehash: 6a1f1466caa921d46ce4701f5074b98f3d5ba051
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348559"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860391"
 ---
 # <a name="disable-source-code-analysis-for-net"></a>Deshabilitar análisis de código fuente para .NET
 
@@ -69,7 +69,7 @@ Ejemplos:
 
 ## <a name="source-analysis"></a>Análisis de código fuente
 
-No se puede desactivar el [análisis de código fuente](roslyn-analyzers-overview.md) en Visual Studio 2017. Si desea borrar los errores del analizador del **lista de errores** , puede suprimir todas las infracciones actuales seleccionando **analizar**  >  **Ejecutar Análisis de código y suprimir problemas activos** en la barra de menús. Para obtener más información, vea [suprimir infracciones](use-roslyn-analyzers.md#suppress-violations).
+No se puede desactivar el [análisis de código fuente](roslyn-analyzers-overview.md) en Visual Studio 2017. Si desea borrar los errores del analizador del **lista de errores**, puede suprimir todas las infracciones actuales seleccionando **analizar**  >  **Ejecutar Análisis de código y suprimir problemas activos** en la barra de menús. Para obtener más información, vea [suprimir infracciones](use-roslyn-analyzers.md#suppress-violations).
 
 A partir de la versión 16,3 de Visual Studio 2019, puede desactivar el análisis de código fuente o ejecutarlo a petición. Considere la posibilidad de actualizar a Visual Studio 2019.
 

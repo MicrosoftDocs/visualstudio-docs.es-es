@@ -11,21 +11,21 @@ helpviewer_keywords:
 - full solution analysis
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9690e50ccbe927702ef1b3e7e99545c07cdced41
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 7a6a7253d4104fbcde09b96b86f5f83a864677cf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348468"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860404"
 ---
 # <a name="configure-live-code-analysis-for-net"></a>Configurar el análisis de código activo para .NET
 
-Visual Studio ejecuta una serie de análisis de código activos, también denominado *análisis en segundo plano* , mientras se editan archivos de código fuente en el editor. Algunos de ellos son un análisis mínimo necesario para una experiencia aceptable de edición del IDE de Visual Studio. Algunas de ellas son para mejorar la capacidad de respuesta de las características del IDE. Aunque parte de ellos es habilitar la funcionalidad adicional del IDE, como las correcciones de código y diagnóstico de los analizadores de Roslyn. En función de la funcionalidad, estos análisis se pueden agrupar de la manera siguiente:
+Visual Studio ejecuta una serie de análisis de código activos, también denominado *análisis en segundo plano*, mientras se editan archivos de código fuente en el editor. Algunos de ellos son un análisis mínimo necesario para una experiencia aceptable de edición del IDE de Visual Studio. Algunas de ellas son para mejorar la capacidad de respuesta de las características del IDE. Aunque parte de ellos es habilitar la funcionalidad adicional del IDE, como las correcciones de código y diagnóstico de los analizadores de Roslyn. En función de la funcionalidad, estos análisis se pueden agrupar de la manera siguiente:
 
-- **Cálculo en segundo plano de diagnósticos** : análisis para calcular los errores, las advertencias y las sugerencias en los archivos de código fuente. Estos diagnósticos se muestran como entradas en la lista de errores y como líneas onduladas en el editor. Se pueden clasificar en dos categorías:
+- **Cálculo en segundo plano de diagnósticos**: análisis para calcular los errores, las advertencias y las sugerencias en los archivos de código fuente. Estos diagnósticos se muestran como entradas en la lista de errores y como líneas onduladas en el editor. Se pueden clasificar en dos categorías:
   - Diagnóstico del compilador de C# y Visual Basic
   - Diagnósticos del analizador de Roslyn, que incluye:
 
@@ -33,7 +33,7 @@ Visual Studio ejecuta una serie de análisis de código activos, también denomi
     - Analizadores de CA integrados para sugerencias de calidad de código
     - Paquetes de analizador de terceros [instalados](./install-roslyn-analyzers.md) para los proyectos de la solución actual.
 
-- **Otros análisis en segundo plano** : análisis para mejorar la capacidad de respuesta y la interacción de Visual Studio para las características del IDE. Algunos ejemplos de estos análisis son:
+- **Otros análisis en segundo plano**: análisis para mejorar la capacidad de respuesta y la interacción de Visual Studio para las características del IDE. Algunos ejemplos de estos análisis son:
   - Análisis en segundo plano de archivos abiertos.
   - Compilación en segundo plano de proyectos con archivos abiertos para obtener los símbolos para mejorar la capacidad de respuesta de ciertas características del IDE.
   - Compilar la sintaxis y las memorias caché de símbolos.
@@ -53,9 +53,9 @@ El ámbito predeterminado de cada análisis en segundo plano se ha optimizado pa
 
 A partir de la versión 16,5 de Visual Studio 2019, los usuarios pueden personalizar explícitamente el ámbito de todo el análisis de código activo, incluido el cálculo de diagnósticos, para los proyectos de C# y Visual Basic. Los ámbitos de análisis disponibles son:
 
-- **Documento actual** : minimiza el ámbito de análisis de código activo para que solo se ejecute para el archivo actual o visible en el editor.
-- **Abrir documentos** : el ámbito predeterminado de análisis de código activo, como se describe en la sección anterior.
-- **Solución completa** : maximiza el ámbito de análisis de código activo que se ejecutará para todos los archivos y proyectos de toda la solución.
+- **Documento actual**: minimiza el ámbito de análisis de código activo para que solo se ejecute para el archivo actual o visible en el editor.
+- **Abrir documentos**: el ámbito predeterminado de análisis de código activo, como se describe en la sección anterior.
+- **Solución completa**: maximiza el ámbito de análisis de código activo que se ejecutará para todos los archivos y proyectos de toda la solución.
 
 Puede elegir uno de los ámbitos de análisis personalizado anteriores en el cuadro de diálogo Opciones de herramientas siguiendo estos pasos:
 
@@ -68,7 +68,7 @@ Puede elegir uno de los ámbitos de análisis personalizado anteriores en el cua
 ![Ámbito de análisis.](./media/background-analysis-scope.png)
 
 > [!NOTE]
-> Antes de la versión 16,5 de Visual Studio 2019, los usuarios pueden personalizar el ámbito de análisis para el cálculo de diagnósticos en toda la solución mediante la casilla habilitar el análisis de la **solución completa** en **herramientas**  >  **Opciones**  >  **Editor de texto**  >  **C#** o en la **Basic**  >  pestaña **Opciones avanzadas** básicas. No se admite el minimizar el ámbito de análisis en segundo plano en versiones anteriores de Visual Studio.
+> Antes de la versión 16,5 de Visual Studio 2019, los usuarios pueden personalizar el ámbito de análisis para el cálculo de diagnósticos en toda la solución mediante la casilla habilitar el análisis de la **solución completa** en **herramientas**  >  **Opciones**  >  **Editor de texto**  >  **C#** o en la   >  pestaña **Opciones avanzadas** básicas. No se admite el minimizar el ámbito de análisis en segundo plano en versiones anteriores de Visual Studio.
 
 ## <a name="automatically-minimize-live-code-analysis-scope"></a>Minimizar automáticamente el ámbito de análisis de código activo
 

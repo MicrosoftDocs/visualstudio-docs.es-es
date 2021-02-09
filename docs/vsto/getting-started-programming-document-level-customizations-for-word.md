@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Word projects [Office development in Visual Studio], getting started
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e9420ab02b5f402dd39e5ca1713b911a10932dfb
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ff19fd84b66b9d31ed806589044775e006ef7096
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845185"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860664"
 ---
 # <a name="get-started-programming-document-level-customizations-for-word"></a>Introducción a la programación de personalizaciones de nivel de documento para Word
   Si acaba de empezar a crear personalizaciones de nivel de documento para Microsoft Office Word con Visual Studio, aquí tiene todo lo que necesita saber.

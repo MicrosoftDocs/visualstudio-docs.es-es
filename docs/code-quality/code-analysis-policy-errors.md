@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: d1f221cd-68c0-4277-9397-b76ad0dbae77
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 43dae5ec9ca68c746b914ad0a75b792f2a6e6b43
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 5fdd14b394bca495b38f408be94b46a4b9a68c01
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349105"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860560"
 ---
 # <a name="code-analysis-policy-errors"></a>Code Analysis Policy Errors
 
@@ -31,7 +31,7 @@ No se cumplieron los requisitos de análisis de código en el control de código
 
 - El análisis de código no está habilitado en la compilación para todos los proyectos de la solución.
 
-- El conjunto de reglas local para el proyecto en Visual Studio tiene un valor de **acción** menos restrictivo que el conjunto de reglas del proyecto, por ejemplo, una regla que se establece en **Action** = **error** de acción en el servidor tiene su **acción** establecida en **ADVERTENCIA** o en **ninguna** en el conjunto de reglas que se ejecuta en Visual Studio.
+- El conjunto de reglas local para el proyecto en Visual Studio tiene un valor de **acción** menos restrictivo que el conjunto de reglas del proyecto, por ejemplo, una regla que se establece en  = **error** de acción en el servidor tiene su **acción** establecida en **ADVERTENCIA** o en **ninguna** en el conjunto de reglas que se ejecuta en Visual Studio.
 
 - El conjunto de reglas especificado en Visual Studio no contiene todas las reglas que se especifican en el conjunto de reglas especificado en la Directiva de protección del análisis de código para el proyecto.
 
