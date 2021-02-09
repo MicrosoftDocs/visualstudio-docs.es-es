@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ad2b7db8-821c-440c-ba07-c55c6a395e0f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80ee40d60b5a7511c3f44c22c16e02751d9f1f36
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: f1b23cd7c09f3eeac2bfe85de882ff42affaa652
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96913781"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920080"
 ---
 # <a name="attach-directly-to-a-program"></a>Adjuntar directamente a un programa
 Los usuarios que deseen depurar programas en un proceso que ya se esté ejecutando normalmente siguen este proceso:
@@ -42,6 +42,6 @@ Los usuarios que deseen depurar programas en un proceso que ya se esté ejecutan
 
    La segunda excepción es que los eventos DE inicio que envía un DE adjuntar a un programa que ya se está ejecutando no incluyen normalmente el evento DE punto de entrada.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Envío de eventos de inicio después de un inicio](../../extensibility/debugger/sending-startup-events-after-a-launch.md)
 - [Tareas de depuración](../../extensibility/debugger/debugging-tasks.md)

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 34c0e949-1eb9-4108-9cb8-a3eb87fcf190
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9090c39d85519435d17c940ad21fd55d26904765
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bfafb48aea95cd3ea79997fb2c84621396af210c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724987"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919839"
 ---
 # <a name="idebugportnotify2addprogramnode"></a>IDebugPortNotify2::AddProgramNode
 Registra un programa que se puede depurar con el puerto en el que se está ejecutando.
@@ -28,13 +28,13 @@ Registra un programa que se puede depurar con el puerto en el que se está ejecu
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT AddProgramNode( 
+HRESULT AddProgramNode( 
    IDebugProgramNode2* pProgramNode
 );
 ```
 
 ```csharp
-int AddProgramNode( 
+int AddProgramNode( 
    IDebugProgramNode2 pProgramNode
 );
 ```
@@ -46,7 +46,7 @@ de Objeto [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugp
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Se puede anular el registro de un nodo de programa desde el puerto llamando al método [RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md) .
 
 ## <a name="see-also"></a>Vea también
