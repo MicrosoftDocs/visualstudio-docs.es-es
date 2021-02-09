@@ -21,20 +21,20 @@ helpviewer_keywords:
 ms.assetid: 56e3490c-eed5-4841-b1bf-eefe778b6ac9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a4d09d4a0e141359b066f2af31c158f36c96522
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 8ad19de19176b7c8ee1d2c2872126a19abb93b67
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382746"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895094"
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;file &gt; (elemento, aplicación ClickOnce)
 Identifica todos los archivos no ensamblados descargados y utilizados por la aplicación.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ```xml
 <file
@@ -182,7 +182,7 @@ Identifica todos los archivos no ensamblados descargados y utilizados por la apl
 ## <a name="dsigdigestvalue"></a>dsig:DigestValue
  El `dsig:DigestValue` elemento es un elemento secundario necesario del `hash` elemento. El elemento `dsig:DigestValue` no tiene atributos. Su valor de texto es el hash calculado para el archivo especificado.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Notas
  Este elemento identifica todos los archivos no ensamblados que componen la aplicación y, en particular, los valores hash para la comprobación de archivos. Este elemento también puede incluir datos de aislamiento del modelo de objetos componentes (COM) asociados al archivo. Si un archivo cambia, el archivo de manifiesto de aplicación también debe actualizarse para reflejar el cambio.
 
 ## <a name="example"></a>Ejemplo

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 26c3ffda-22b8-4345-9fb6-2883f37699aa
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8dd887488adc5813ad51c9fa2a25648e25ab4876
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 6a29b1b3af1e92ee6f247ba07e3b4e468401415e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876225"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895432"
 ---
 # <a name="source-control-vspackage-features"></a>Características de VSPackage de control de código fuente
 En esta sección se describen las distintas características de un VSPackage de control de código fuente. Se describen los detalles de registro y selección para este VSPackage y se describen tres de las características principales relacionadas con el control de código fuente: el control de eventos Query-Edit Query-Save (QEQS), el reemplazo de glifos y la interfaz de usuario personalizada (UI) para las funciones de control de código fuente.

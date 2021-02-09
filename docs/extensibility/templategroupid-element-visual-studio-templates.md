@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: bce7b49a-90bc-4691-aff3-a87e209f6d83
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5f7d30036f0f25d1f81b690168675d74fc36bbd
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: d9db0d2744648901a9389bd2d2805d8c6a4073ae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903226"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895367"
 ---
 # <a name="templategroupid-element-visual-studio-templates"></a>TemplateGroupID (Elemento, Plantillas de Visual Studio)
 Especifica en qué tipo de proyecto se mostrará una plantilla de elemento. Este elemento es importante cuando [ShowByDefault (plantillas de Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) está establecido en `false` . Cuando [ShowByDefault (plantillas de Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) está establecido en `true` , una plantilla de elemento está disponible en todos los tipos de proyecto.
@@ -55,7 +55,7 @@ Especifica en qué tipo de proyecto se mostrará una plantilla de elemento. Este
 
  El texto especifica un identificador para una categoría de plantillas de elementos.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  `TemplateGroupID` es un elemento.
 
  El valor del `TemplateGroupID` elemento se utiliza junto con el registro del sistema del proyecto (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<version number>* \projects \\ ) para filtrar las plantillas que aparecen en el cuadro de diálogo **Agregar nuevo elemento** .
@@ -72,6 +72,6 @@ Especifica en qué tipo de proyecto se mostrará una plantilla de elemento. Este
 |WinRT-Native|Utilizado para proyectos de la Tienda Windows 8.0|
 |VC-Android|Utilizado para proyectos Android|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Crear plantillas de proyecto y de elemento](../ide/creating-project-and-item-templates.md)

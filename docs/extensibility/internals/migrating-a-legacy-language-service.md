@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e0f666a0-92a7-4f9c-ba79-d05b13fb7f11
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ced200ff24b17f312e63642c8083f038a6fc6a4d
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 7a0e20c77a1c8a81a29691079ace1e4751135560
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877837"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895692"
 ---
 # <a name="migrating-a-legacy-language-service"></a>Migración de un servicio de lenguaje heredado
 Puede migrar un servicio de lenguaje heredado a una versión posterior de Visual Studio actualizando el proyecto y agregando un archivo source. Extension. vsixmanifest al proyecto. El propio servicio de lenguaje seguirá funcionando como antes, ya que el editor de Visual Studio lo adapta.
@@ -53,7 +53,7 @@ Puede migrar un servicio de lenguaje heredado a una versión posterior de Visual
 
 4. Abra la solución RegExLangServ. sln.
 
-5. Aparece la ventana de **actualización unidireccional** . Haga clic en **Aceptar**.
+5. Aparece la ventana de **actualización unidireccional** . Haga clic en **OK**.
 
 6. Actualice las propiedades del proyecto. Para abrir la ventana **propiedades del proyecto** , seleccione el nodo del proyecto en el **Explorador de soluciones**, haga clic con el botón derecho y seleccione **propiedades**.
 
@@ -109,5 +109,5 @@ Puede migrar un servicio de lenguaje heredado a una versión posterior de Visual
 
 12. Inicie la depuración. Se abre una segunda instancia de Visual Studio.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Extensibilidad de servicio de lenguaje heredado](../../extensibility/internals/legacy-language-service-extensibility.md)

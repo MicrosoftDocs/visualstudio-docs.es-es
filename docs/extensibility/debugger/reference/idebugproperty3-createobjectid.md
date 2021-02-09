@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: f2fa81e7-822f-456e-8729-a96a18eea771
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1d3993d674f029260dbe32d16c576cb239ff8d6d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a9d555d7b0480d910a5cb88397db5bfd7e734fd1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721179"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896128"
 ---
 # <a name="idebugproperty3createobjectid"></a>IDebugProperty3::CreateObjectID
 Crea un identificador único para esta propiedad para asegurarse de que es único entre todas las demás propiedades.
@@ -28,19 +28,19 @@ Crea un identificador único para esta propiedad para asegurarse de que es únic
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT CreateObjectID(
+HRESULT CreateObjectID(
    void
 );
 ```
 
 ```csharp
-int CreateObjectID();
+int CreateObjectID();
 ```
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Se llama a este método cuando el administrador de depuración de la sesión desea asegurarse de que esta propiedad se identifica de forma única entre todas las demás propiedades. El motor DE depuración (DE) admite este método a menos que las propiedades a las que se ocupan ya se identifiquen de forma única. Si DE no admite este método, devuelve `E_NOTIMPL` .
 
  Los IDENTIFICADOres únicos creados con `CreateObjectID` se destruyen cuando se llama al método [DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md) ; esto también indica el final de la necesidad de identificar de forma única esta propiedad.

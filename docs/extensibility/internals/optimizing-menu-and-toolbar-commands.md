@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 8385f1a6-1e98-4dca-83d2-fcbed7177242
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b35f3a87f819885685b54888031883f4c2776d04
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: e9df95efc1021ad5bd75c1d009627c5747152b37
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877603"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895536"
 ---
 # <a name="optimizing-menu-and-toolbar-commands"></a>Optimización de comandos de menú y barra de herramientas
 La adición de VSPackages y sus comandos correspondientes a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pueden provocar una interfaz de usuario abarrotada. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] proporciona maneras de ayudar a minimizar la confusión del comando de la interfaz de usuario.

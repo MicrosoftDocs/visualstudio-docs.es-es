@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 70737387-c52f-4dae-8865-77d4b203bf25
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 606c1f4cb5559722028b78ef4ef21c41c0ba5556
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 0d7da8cfdb2b7995b77364e5a5de62667b13e52c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914717"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895016"
 ---
 # <a name="bind-breakpoints"></a>Enlazar puntos de interrupción
 Si el usuario establece un punto de interrupción, quizás presionando **F9**, el IDE formula la solicitud y solicita la sesión de depuración para crear el punto de interrupción.
@@ -55,5 +55,5 @@ Si el usuario establece un punto de interrupción, quizás presionando **F9**, e
 
  Si un control DE controla un punto de interrupción, no puede enlazarlo, pero otro DE puede enlazarlo, devuelve una advertencia. El IDE responde colocando un glifo de pregunta dentro del glifo de punto de interrupción a la izquierda de la línea de código fuente.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Tareas de depuración](../../extensibility/debugger/debugging-tasks.md)

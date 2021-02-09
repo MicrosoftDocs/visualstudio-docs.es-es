@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: d8b6e7bb-4ea0-47f3-91cd-48580bdceccc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f231f3426821b7f3148d3e6c268234f125f88f0
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: d546b48ffbbb4d44fb5f2ced11f41826370403e3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437609"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895081"
 ---
 # <a name="choose-a-clickonce-update-strategy"></a>Selección de una estrategia de actualización de ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] puede proporcionar actualizaciones automáticas de aplicaciones. Una aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] lee periódicamente su archivo de manifiesto de implementación para ver si hay actualizaciones disponibles para la aplicación. En caso afirmativo, la nueva versión de la aplicación se descarga y se ejecuta. Para una mayor eficiencia, se descargan sólo los archivos que han cambiado.
@@ -82,7 +82,7 @@ ms.locfileid: "94437609"
 > [!NOTE]
 > Aunque es posible obligar a que se efectúen las actualizaciones utilizando las otras estrategias de actualización, comprobar su existencia **Antes de que se inicie la aplicación** es la única manera de garantizar que no se pueda ejecutar una versión antigua. Si la actualización obligatoria se detecta al inicio, el usuario deberá aceptarla o cerrar la aplicación.
 
- Para marcar una actualización como obligatoria, haga clic en **Especifique la versión mínima requerida para esta aplicación** en el cuadro de diálogo **Actualizaciones de la aplicación** y después especifique la versión de publicación ( **Principal** , **Secundaria** , **Compilación** , **Revisión** ), que indica el número más bajo de versión de la aplicación que se puede instalar.
+ Para marcar una actualización como obligatoria, haga clic en **Especifique la versión mínima requerida para esta aplicación** en el cuadro de diálogo **Actualizaciones de la aplicación** y después especifique la versión de publicación (**Principal**, **Secundaria**, **Compilación**, **Revisión**), que indica el número más bajo de versión de la aplicación que se puede instalar.
 
  Es lo mismo que establecer el atributo **minimumRequiredVersion** del elemento **Deployment** del manifiesto de implementación; por ejemplo:
 
@@ -120,9 +120,9 @@ ms.locfileid: "94437609"
 
  Si utiliza la implementación de aplicaciones de confianza, no se realizará ninguna pregunta sobre los niveles de confianza. Para más información, vea [Introducción a la implementación de aplicaciones de confianza](../deployment/trusted-application-deployment-overview.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - <xref:System.Deployment.Application>
-- [Seguridad e implementación de ClickOnce](../deployment/clickonce-security-and-deployment.md)
+- [Seguridad e implementación ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Selección de una estrategia de implementación de ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)
 - [Protección de las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Cómo ClickOnce realiza actualizaciones de aplicaciones](../deployment/how-clickonce-performs-application-updates.md)

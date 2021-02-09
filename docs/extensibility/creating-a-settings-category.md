@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 468b1a44fb4754f86b31992e2c6d96bf6380592d
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: bf089eeaf8c4408a0bc76d2f3982d311ac9c5979
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974547"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896265"
 ---
 # <a name="create-a-settings-category"></a>Crear una categoría de configuración
 
@@ -94,7 +94,7 @@ Para iniciar este tutorial, primero debe completar la primera sección de la [P�
 
 1. Inicie el proyecto en modo de depuración presionando **F5**. Esto inicia la instancia experimental.
 
-2. Abra el **Tools**  >  cuadro de diálogo **Opciones** de herramientas.
+2. Abra el   >  cuadro de diálogo **Opciones** de herramientas.
 
 3. En la vista de árbol del panel izquierdo, expanda **mi categoría** y, a continuación, haga clic en **mi página de cuadrícula**.
 

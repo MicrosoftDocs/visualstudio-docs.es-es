@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: f68671fe-fd7a-4e56-a0b5-330b0f1fedb1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab29fbe79b474aa7b640faf81de812b7571de861
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: d1b051abfede6ec90350878f669ed32e7e26b299
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877802"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896749"
 ---
 # <a name="project-type-design-decisions"></a>Decisiones de diseño del tipo de proyecto
 Antes de crear un nuevo tipo de proyecto, debe tomar varias decisiones de diseño con respecto al tipo de proyecto. Debe decidir qué tipos de elementos contendrán los proyectos, cómo se conservarán los archivos del proyecto y qué modelo de compromiso usará.
@@ -58,7 +58,7 @@ Antes de crear un nuevo tipo de proyecto, debe tomar varias decisiones de diseñ
 
  Cuando los objetos de datos se abren mediante el modo de transacción, los cambios se guardan en una ubicación temporal en la memoria y no se confirman hasta que el usuario elige guardar manualmente el archivo. En ese momento, todos los cambios deben realizarse juntos o no se realizará ningún cambio.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Lista de comprobación: Creación de nuevos tipos de proyectos](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Apertura y guardado de elementos de proyecto](../../extensibility/internals/opening-and-saving-project-items.md)
 - [Persistencia de un proyecto](../../extensibility/internals/project-persistence.md)

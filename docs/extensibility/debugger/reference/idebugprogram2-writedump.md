@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 375afb8c-882d-44db-bfa7-e2c9eb555122
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 333535a727d88f66346ba4c94cb08b4917b8acfd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 265c77acdb15069c1fcd7f33d93d4ff74a528eca
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722740"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896154"
 ---
 # <a name="idebugprogram2writedump"></a>IDebugProgram2::WriteDump
 Escribe un volcado en un archivo.
@@ -28,14 +28,14 @@ Escribe un volcado en un archivo.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT WriteDump( 
+HRESULT WriteDump( 
    DUMPTYPE  DumpType,
    LPCOLESTR pszDumpUrl
 );
 ```
 
 ```csharp
-int WriteDump( 
+int WriteDump( 
    enum_DUMPTYPE  DumpType,
    string         pszDumpUrl
 );
@@ -51,7 +51,7 @@ de Dirección URL en la que se va a escribir el volcado. Normalmente, tiene el f
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Un volcado de programa normalmente incluiría el marco de pila actual, la propia pila, una lista de los subprocesos que se ejecutan en el programa y, posiblemente, cualquier memoria que posea el programa.
 
 ## <a name="see-also"></a>Vea también

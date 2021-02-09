@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6164b2d3-a622-4de8-bef3-a6de985e9ebd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ece2a7df1aeb2ec44f7b21075d2945a93d51838
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 958465fc927464c46befb2422eb1286cda156916
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876694"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895666"
 ---
 # <a name="model-for-source-control-packages"></a>Modelo para paquetes de control de código fuente
 El modelo siguiente representa un ejemplo de una implementación de control de código fuente. En el modelo, verá las interfaces que debe implementar y los servicios de entorno a los que debe llamar. Al igual que todos los servicios, en realidad se llama a los métodos de una interfaz determinada que se obtiene por medio del servicio. Los nombres de las clases se identifican para facilitar la visualización del modo en que se realiza el control de código fuente.
@@ -27,7 +27,7 @@ El modelo siguiente representa un ejemplo de una implementación de control de c
 ## <a name="interfaces"></a>Interfaces
  Puede implementar el control de código fuente para los nuevos tipos de proyecto en Visual Studio mediante la lista de interfaces que se muestran en la tabla siguiente.
 
-|Interfaz|Usar|
+|Interfaz|Uso|
 |---------------|---------|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>|Lo llaman los proyectos y los editores antes de guardar o cambiar los archivos (modificados). Se tiene acceso a esta interfaz mediante el <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> servicio.|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>|Lo llaman los proyectos para solicitar permiso para agregar, quitar o cambiar el nombre de un archivo o directorio. Los proyectos también llaman a esta interfaz para informar al entorno cuando se completa una acción de agregar, quitar o cambiar nombre. Se tiene acceso a él mediante el <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments> servicio.|
@@ -35,7 +35,7 @@ El modelo siguiente representa un ejemplo de una implementación de control de c
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>|Lo llaman los proyectos para registrarse con el paquete de control de código fuente y obtener información sobre el estado del control de código fuente. Se tiene acceso a esta interfaz mediante el <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager> servicio.|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>|Implementado por el proyecto para responder a las solicitudes de control de código fuente para obtener información sobre los archivos y para obtener la configuración de control de código fuente necesaria para el archivo de proyecto.|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: dc5bb3e4-dc85-46e4-98fa-c6be8583b985
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 16cb623f58668362e5e308e1d66dfd6ca7c0fb8c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffdca7e4a556a72c8fb7f3f533e69d47fa289732
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721185"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896095"
 ---
 # <a name="idebugproperty3getcustomviewercount"></a>IDebugProperty3::GetCustomViewerCount
 Obtiene el número de visores personalizados que pueden estar disponibles para esta propiedad.
@@ -46,7 +46,7 @@ enuncia El número de visores personalizados disponibles para esta propiedad.
 ## <a name="return-value"></a>Valor devuelto
 Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Para admitir los visualizadores de tipos, este método reenvía la llamada al método [GetCustomViewerCount](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md) . Si el evaluador de expresiones también admite visores personalizados para el tipo de esta propiedad, este método agrega el número de visores personalizados al valor devuelto.
 
 Para obtener información detallada sobre las diferencias entre los visualizadores de tipos y los visores personalizados, vea [visualizador de tipos y visor personalizado](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md).

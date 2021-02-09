@@ -14,15 +14,15 @@ helpviewer_keywords:
 - user controls [Office development in Visual Studio], actions panes
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5d03ba8968b08fb07eb2cc9c17839af57cf06eca
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 9579de6712b742dde1f9b399ca8a1e4598783679
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844834"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896763"
 ---
 # <a name="actions-pane-overview"></a>Información general del panel de acciones
   Un panel de acciones es un panel de tareas **acciones de documentos** personalizables que se adjunta a un determinado documento de Microsoft Office Word o Microsoft Office libro de Excel. El panel acciones se hospeda dentro del panel de tareas de Office junto con otros paneles de tareas integrados, como el panel de tareas **origen XML** en Excel o el panel de tareas **estilos y formato** de Word. Puede utilizar controles de Windows Forms o WPF para diseñar la interfaz de usuario del panel de acciones.
@@ -114,7 +114,7 @@ ms.locfileid: "96844834"
 |FromLeft|Apilar desde la parte izquierda del panel de acciones.|
 |FromRight|Apilar desde la parte derecha del panel de acciones.|
 |FromTop|Apilar desde la parte superior del panel de acciones.|
-|Ninguno|Sin orden de apilamiento definido; el desarrollador controla el orden.|
+|None|Sin orden de apilamiento definido; el desarrollador controla el orden.|
 
  El código siguiente establece la propiedad <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A> para que apile los controles de usuario desde la parte superior del panel de acciones.
 

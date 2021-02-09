@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: f71898ad-335f-4c43-a177-4da87078afd1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 971fef7939c91bdcdea9098da530c7ecb2daf9ec
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: df851f304cd6c62e1447f791a23618a6de5cb0bc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877642"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895601"
 ---
 # <a name="opening-and-saving-project-items"></a>Apertura y guardado de elementos de proyecto
 Al agregar un nuevo tipo de proyecto, debe administrar la apertura y el guardado de los archivos de proyectos en el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] entorno de desarrollo integrado (IDE). En los temas siguientes se describen los distintos enfoques para abrir y guardar archivos.

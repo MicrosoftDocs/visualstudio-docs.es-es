@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: a8c89d5d-5b78-4435-817f-c5f25ca6d715
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd138638a1f8bb4c0fe8dc73504059f0c9dd4023
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: db722d945ceb4b3d2cab92b9a11b1e689cd7a9bf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97862911"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895198"
 ---
 # <a name="walkthrough-create-an-sdk-using-javascript"></a>Tutorial: crear un SDK mediante JavaScript
 En este tutorial se enseña cómo usar JavaScript para crear un SDK de Math sencillo como extensión de Visual Studio (VSIX).  El tutorial se divide en estas partes:
@@ -26,7 +26,7 @@ En este tutorial se enseña cómo usar JavaScript para crear un SDK de Math senc
 
   En JavaScript, no hay ningún tipo de proyecto de biblioteca de clases. En este tutorial, el archivo de *arithmetic.js* de ejemplo se crea directamente en el Proyecto VSIX. En la práctica, se recomienda compilar y probar primero los archivos JavaScript y CSS como una aplicación de la tienda Windows (por ejemplo, usando la plantilla **aplicación vacía** ) antes de colocarlos en un proyecto VSIX.
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
  Para seguir este tutorial, debe instalar SDK de Visual Studio. Para obtener más información, vea el [SDK de Visual Studio](../extensibility/visual-studio-sdk.md).
 
 ## <a name="to-create-the-simplemathvsix-extension-sdk-project"></a><a name="createSimpleMathVSIX"></a> Para crear el proyecto de SDK de extensión SimpleMathVSIX
@@ -138,7 +138,7 @@ En este tutorial se enseña cómo usar JavaScript para crear un SDK de Math senc
 
 20. Elija el botón **instalar** y deje que se complete la instalación.
 
-21. Reinicie Visual Studio.
+21. Reinicie Visual Studio.
 
 ## <a name="to-create-a-sample-app-that-uses-the-sdk"></a><a name="createSampleApp"></a> Para crear una aplicación de ejemplo que usa el SDK
 
@@ -315,5 +315,5 @@ En este tutorial se enseña cómo usar JavaScript para crear un SDK de Math senc
 
 12. En la interfaz de usuario de la aplicación, escriba dos números cualesquiera, seleccione una operación y, a continuación, elija el **=** botón. Aparece el resultado correcto.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Creación de un kit de desarrollo de software](../extensibility/creating-a-software-development-kit.md)

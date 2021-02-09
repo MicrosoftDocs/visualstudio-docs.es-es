@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e77d06900a17aca4c2630587a45a9b144accde2
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 2e7b2c8d5f194287f0b654184ddd8716f248ca36
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877850"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895757"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>SDK del Visor de Ayuda de Microsoft
 
@@ -362,7 +362,7 @@ En el IDE, en el elemento de menú ayuda, seleccione **depurar contexto de ayuda
 
 En la tabla siguiente, cualquier cadena que aparezca entre corchetes es un marcador de posición que se debe reemplazar por un valor reconocido. Por ejemplo, en \<meta name="Microsoft.Help.Locale" content="[language code]" /> , "[código de idioma]" debe reemplazarse por un valor como "en-US".
 
-| Property (representación HTML) | Description |
+| Property (representación HTML) | Descripción |
 | - | - |
 | \< meta name="Microsoft.Help.Locale" content="[language-code]" /> | Establece una configuración regional para este tema. Si esta etiqueta se usa en un tema, debe usarse una sola vez y debe insertarse encima de cualquier otra etiqueta de ayuda de Microsoft. Si no se utiliza esta etiqueta, el texto del cuerpo del tema se indexa mediante el separador de palabras que está asociado a la configuración regional del producto, si se especifica; de lo contrario, se usa el separador de palabras en-US. Esta etiqueta se ajusta a ISOC RFC 4646. Para asegurarse de que la ayuda de Microsoft funciona correctamente, use esta propiedad en lugar del atributo de lenguaje general. |
 | \< meta name="Microsoft.Help.TopicLocale" content="[language-code]" /> | Establece una configuración regional para este tema cuando también se usan otras configuraciones regionales. Si esta etiqueta se usa en un tema, debe usarse una sola vez. Use esta etiqueta cuando el catálogo contenga contenido en más de un idioma. Varios temas de un catálogo pueden tener el mismo identificador, pero cada uno debe especificar un TopicLocale único. El tema que especifica un TopicLocale que coincide con la configuración regional del catálogo es el tema que se muestra en la tabla de contenido. Sin embargo, todas las versiones de idioma del tema se muestran en los resultados de la búsqueda. |

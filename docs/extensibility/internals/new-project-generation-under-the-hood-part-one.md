@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec16895e71788f160e0ce6025f35b4dff02d7d2f
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 98a305e4e3188131b2ee3c6e2ecb82dc8d4537b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668890"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895783"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>Generación de nuevos proyectos: Aspectos técnicos (parte 1)
 ¿Alguna vez ha pensado en cómo crear su propio tipo de proyecto? ¿Se pregunta qué ocurre realmente cuando se crea un nuevo proyecto? Echemos un vistazo al Capó y veamos lo que está ocurriendo realmente.
@@ -213,5 +213,5 @@ devenv /installvstemplates
 
     **MyProjectNode** aparece como un nodo secundario de Visual C# justo debajo del nodo Windows.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Generación de nuevos proyectos: Aspectos técnicos (parte 2)](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: ca312aa3-f9f1-4572-8553-89bf3a724deb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08b9e88440fcb7b488e479e4188279d82a526e4c
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: d08552683ce61892b0ee233173466a79326e4c6f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875188"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894860"
 ---
 # <a name="registering-a-legacy-language-service-2"></a>Registro de un servicio de lenguaje heredado 2
 En las secciones siguientes se proporcionan listas de entradas del registro para las distintas opciones de servicio de lenguaje disponibles en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
@@ -29,11 +29,11 @@ En las secciones siguientes se proporcionan listas de entradas del registro para
 ## <a name="registry-entries-for-language-service-options"></a>Entradas del registro para las opciones del servicio de lenguaje
  La clave del nombre de idioma de \Languages\Language Services *raíz de vs reg* \\  puede contener los valores siguientes.
 
-|Nombre|Tipo|Intervalo|Description|
+|Nombre|Tipo|Intervalo|Descripción|
 |----------|----------|-----------|-----------------|
 |(Es el valor predeterminado).|REG_SZ|*\<GUID>*|GUID del servicio de lenguaje.|
 |LangResID|REG_DWORD|0X0-0xFFFF|Identificador de recursos de cadena (ResID) para el nombre de texto localizado del idioma.|
-|Package|REG_SZ|*\<GUID>*|GUID del VSPackage.|
+|Paquete|REG_SZ|*\<GUID>*|GUID del VSPackage.|
 |ShowCompletion|REG_DWORD|0-1|Especifica si las opciones de **finalización de instrucciones** del cuadro de diálogo **Opciones** están habilitadas.|
 |ShowSmartIndent|REG_DWORD|0-1|Especifica si está habilitada la opción para seleccionar sangría **inteligente** en el cuadro de diálogo **Opciones** .|
 |RequestStockColors|REG_DWORD|0-1|Especifica si los colores predeterminados o personalizados se utilizan para colorear palabras clave.|
@@ -66,9 +66,9 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-debugger-languages-options"></a>Entradas del registro para las opciones de idiomas del depurador
  La clave de *vs reg root*\Languages\Language Services \\ *Name*\Debugger Languages \\ *GUID*\ Key puede incluir los valores siguientes.
 
-|Nombre|Tipo|Intervalo|Description|
+|Nombre|Tipo|Intervalo|Descripción|
 |----------|----------|-----------|-----------------|
-|(Es el valor predeterminado).|REG_SZ|text|El valor predeterminado se puede usar para documentar el nombre del idioma. El nombre de esta clave es un GUID de un evaluador de expresiones que tiene una entrada correspondiente en el *\<VS Reg Root>* evaluador de \AD7Metrics\Expression.|
+|(Es el valor predeterminado).|REG_SZ|texto|El valor predeterminado se puede usar para documentar el nombre del idioma. El nombre de esta clave es un GUID de un evaluador de expresiones que tiene una entrada correspondiente en el *\<VS Reg Root>* evaluador de \AD7Metrics\Expression.|
 
 ### <a name="example"></a>Ejemplo
 
@@ -85,10 +85,10 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-editor-tools-options"></a>Entradas del registro para las opciones de herramientas del editor
  Puede agregar claves del registro en la clave EditorToolsOptions para las páginas de propiedades y los nodos de propiedad. Estas claves y sus valores identifican las páginas de propiedades en el cuadro de diálogo **Opciones** (en el menú **herramientas** ) que se usan para configurar el servicio de lenguaje. En el ejemplo siguiente, el nombre de la *Página* es el nombre de una página de propiedades y el *nombre del nodo* es el nombre de un nodo en el árbol del cuadro de diálogo **Opciones** . La entrada de la página y la entrada del nodo deben especificarse por separado.
 
-|Nombre|Tipo|Intervalo|Description|
+|Nombre|Tipo|Intervalo|Descripción|
 |----------|----------|-----------|-----------------|
 |(Es el valor predeterminado).|REG_SZ|ResID|El nombre para mostrar localizado de esta página de opciones. El nombre puede ser texto literal, o # `nnn` , donde `nnn` es un identificador de recurso de cadena en el archivo dll satélite del VSPackage especificado.|
-|Package|REG_SZ|*GUID*|GUID del VSPackage que implementa esta página de opciones.|
+|Paquete|REG_SZ|*GUID*|GUID del VSPackage que implementa esta página de opciones.|
 |Página|REG_SZ|*GUID*|GUID de la página de propiedades que se va a solicitar del VSPackage mediante una llamada al <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> método. Si esta entrada del registro no está presente, la clave del registro describe un nodo, no una página.|
 
 ### <a name="example"></a>Ejemplo
@@ -119,7 +119,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-file-name-extension-options"></a>Entradas del registro para las opciones de extensión de nombre de archivo
  La entrada de la extensión de archivo debe incluir el punto inicial, por ejemplo ". myext".
 
-|Nombre|Tipo|Intervalo|Description|
+|Nombre|Tipo|Intervalo|Descripción|
 |----------|----------|-----------|-----------------|
 |(Es el valor predeterminado).|REG_SZ|*GUID*|GUID de servicio del servicio de lenguaje predeterminado para este tipo de extensión de nombre de archivo.|
 
@@ -136,14 +136,14 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-editor-options"></a>Entradas del registro para las opciones del editor
  La clave \Editors de *vs reg raíz* puede contener los siguientes valores:
 
-|Nombre|Tipo|Intervalo|Description|
+|Nombre|Tipo|Intervalo|Descripción|
 |----------|----------|-----------|-----------------|
 |(Es el valor predeterminado).|REG_SZ|""|Sin usar puede poner su nombre aquí para la documentación.|
 |DefaultToolboxTab|REG_SZ|""|Nombre de la pestaña del cuadro de herramientas que se va a establecer como predeterminada cuando el editor está activo.|
 |DisplayName|REG_SZ|ResID|Nombre que se va a mostrar en el cuadro de diálogo **abrir con** . El nombre es el identificador de recurso de cadena o un nombre en formato estándar.|
 |ExcludeDefTextEditor|REG_DWORD|0-1|Se usa para el comando de menú **abrir con** . Si no desea mostrar el editor de texto predeterminado en la lista de editores disponibles para un tipo de archivo específico, establezca este valor en 1.|
 |LinkedEditorGUID|REG_SZ|*\<GUID>*|Se usa para cualquier servicio de lenguaje que pueda abrir un archivo con compatibilidad con la página de códigos. Por ejemplo, al abrir un archivo. txt con el comando **abrir con** , se proporcionan opciones para usar el editor de código fuente con y sin codificación.<br /><br /> El GUID especificado en el nombre de la subclave es para el generador de editores de página de códigos; el GUID vinculado especificado en esta entrada de registro específica es para el generador de editores normal. La finalidad de esta entrada es que si el IDE no abre un archivo con el editor predeterminado, el IDE intentará usar el siguiente editor de la lista. El siguiente editor no debe ser el generador de editores de página de códigos porque este generador de editores es básicamente el mismo que el generador de editores en el que se produjo el error.|
-|Package|REG_SZ|*\<GUID>*|GUID de VSPackage del ResID del nombre para mostrar.|
+|Paquete|REG_SZ|*\<GUID>*|GUID de VSPackage del ResID del nombre para mostrar.|
 
 ### <a name="example"></a>Ejemplo
 
@@ -161,7 +161,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-logical-view-options"></a>Entradas del registro para opciones de vista lógica
  La \Editors de interfaz de>usuario de *vs reg root* \\ *Editor* puede contener los siguientes valores.
 
-|Nombre|Tipo|Intervalo|Description|
+|Nombre|Tipo|Intervalo|Descripción|
 |----------|----------|-----------|-----------------|
 |(Es el valor predeterminado).|REG_SZ||Sin usar.|
 |*\<GUID>*|REG_SZ|""|Clave para las vistas lógicas admitidas. Puede tener tantos como necesite. El nombre de la entrada del registro es lo que es importante, no el valor, que siempre es una cadena vacía.|
@@ -183,7 +183,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-editor-extension-options"></a>Entradas del registro para las opciones de extensión del editor
  La clave \Extensions del GUID del editor \Editors de *vs reg* \\ puede contener los valores siguientes. La extensión de nombre de archivo no incluye el punto inicial.
 
-|Nombre|Tipo|Intervalo|Description|
+|Nombre|Tipo|Intervalo|Descripción|
 |----------|----------|-----------|-----------------|
 |(Es el valor predeterminado).|REG_SZ||Sin usar.|
 |*\<ext>*|REG_DWORD|0-0xFFFFFFFF|Prioridad relativa de las extensiones. Si dos o más idiomas comparten la misma extensión, se elige el idioma de mayor prioridad.|
@@ -209,7 +209,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\
 
  Se tiene acceso a estas entradas del registro a través de la <xref:Microsoft.VisualStudio.Package.LanguagePreferences> clase.
 
-|Nombre|Tipo|Intervalo|Description|
+|Nombre|Tipo|Intervalo|Descripción|
 |----------|----------|-----------|-----------------|
 |CodeSense|REG_DWORD|0-1|Compatibilidad con las operaciones de IntelliSense.|
 |MatchBraces|REG_DWORD|0-1|Compatibilidad con pares de idiomas coincidentes, como llaves, paréntesis y corchetes.|
@@ -239,5 +239,5 @@ ExampleHKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
         MaxRegions            = reg_dword:0x0000000a
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Desarrollo de un servicio de lenguaje heredado](../../extensibility/internals/developing-a-legacy-language-service.md)

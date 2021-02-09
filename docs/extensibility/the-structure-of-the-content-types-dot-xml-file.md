@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 9c399598-b9fa-4da7-84b5-defbf82e9335
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7117845e4756f8b0e09a8fa603e66448e705b903
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 38348661946be3894332d49177f972410563b716
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715228"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895212"
 ---
 # <a name="the-structure-of-the-content_typesxml-file"></a>Estructura del archivo [Content_types].xml
 Contiene información sobre los tipos de contenido de un paquete VSIX. Visual Studio usa el archivo [Content_Types]. XML para instalar el paquete, pero no instala el propio archivo.
@@ -45,7 +45,7 @@ Contiene información sobre los tipos de contenido de un paquete VSIX. Visual St
 
 ### <a name="attribute-name-attribute"></a>{Nombre de atributo} Atribui
 
-| Valor | Descripción |
+| Value | Descripción |
 | - | - |
 | `http://schemas.openformats.org/package/2006/content-types` | La ubicación del esquema de tipos de contenido. |
 

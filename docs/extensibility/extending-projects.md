@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 096d273d-4fe9-4f24-9b00-470bfbdf4bdf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 181acea9a5188ba28a4ef109b5bec0e7c040b5da
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 997f4e32007af641b24ba933d2c891e447382786
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994620"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895835"
 ---
 # <a name="extend-projects"></a>Ampliar proyectos
 Los proyectos y las soluciones son las formas en que Visual Studio organiza los archivos de código y de recursos en unidades de compilación e implementación. Puede encontrar más información sobre los proyectos en [proyectos (Visual Studio SDK)](../extensibility/extending-projects.md).

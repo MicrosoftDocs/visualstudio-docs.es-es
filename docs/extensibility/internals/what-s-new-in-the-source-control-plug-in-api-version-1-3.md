@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 7dfb2227-6e1d-4028-bce9-f8967456a993
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 491c35a1a99af9b3271e8b2036f7d0c6f8f57908
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: a9d6f8f0a21bcffb9c49404647bde2585c28ee2b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487795"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894808"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-13"></a>&#39;novedades de la API del complemento de control de código fuente 1,3
 La API del complemento de control de código fuente versión 1,3 presenta las siguientes funciones nuevas para proporcionar un control más avanzado.
@@ -26,7 +26,7 @@ La API del complemento de control de código fuente versión 1,3 presenta las si
 ## <a name="changes"></a>Cambios
  Las siguientes funciones son nuevas en la API del complemento de control de código fuente versión 1,3:
 
-|Función|Introducción|
+|Función|Información general|
 |--------------|--------------|
 |[SccGetExtendedCapabilities](../../extensibility/sccgetextendedcapabilities-function.md)|Permite que se notifiquen bits de capacidad adicionales.|
 |[SccEnumChangedFiles](../../extensibility/sccenumchangedfiles-function.md)|Permite examinar los archivos que tienen versiones más recientes en la base de datos de control de versiones que en el disco local.|

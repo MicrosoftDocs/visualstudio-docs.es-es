@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: b9d88d3b-8b75-484a-b9cc-dc8c0fbb4bc8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ce4dfab898190eb89c58503e378b410ddfc240de
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 565a202d3b63a8c501864099940f5ca16da96077
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719187"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894873"
 ---
 # <a name="idebugsymbolprovidergettypebyname"></a>IDebugSymbolProvider::GetTypeByName
 Este método asigna un nombre de símbolo a un tipo de símbolo.
@@ -28,7 +28,7 @@ Este método asigna un nombre de símbolo a un tipo de símbolo.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT GetTypeByName( 
+HRESULT GetTypeByName( 
    LPCOLESTR     pszClassName,
    NAME_MATCH    nameMatch,
    IDebugField** ppField
@@ -56,7 +56,7 @@ enuncia Devuelve el tipo de símbolo como un objeto [IDebugField](../../../exten
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Este método es una versión genérica de [GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md).
 
 ## <a name="see-also"></a>Vea también

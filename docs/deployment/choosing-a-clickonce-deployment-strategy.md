@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 98bcab65-ab8b-4ed1-9adc-fdacf92b8106
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d623c47960a3c1a44c184df52488682659d5238d
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: f4c20689c79529edf4a34edca857dedf1420b03f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383175"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895120"
 ---
 # <a name="choose-a-clickonce-deployment-strategy"></a>Selección de una estrategia de implementación de ClickOnce
 Hay tres estrategias distintas para implementar una aplicación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]; la estrategia que elija depende principalmente del tipo de aplicación que vaya a implementar. Las tres estrategias de implementación son las siguientes:
@@ -57,7 +57,7 @@ Hay tres estrategias distintas para implementar una aplicación de [!INCLUDE[ndp
 
  Para habilitar esta estrategia de implementación en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], haga clic en **No instalar la aplicación** en la página **Instalar o ejecutar desde el Web** del Asistente para publicación.
 
- Para habilitar esta estrategia de implementación manualmente, cambie la etiqueta **install** del manifiesto de implementación. Su valor puede ser **true** o **false**. En *Mage.exe* , utilice la opción **Únicamente en línea** de la lista desplegable **Tipo de aplicación**.
+ Para habilitar esta estrategia de implementación manualmente, cambie la etiqueta **install** del manifiesto de implementación. Su valor puede ser **true** o **false**. En *Mage.exe*, utilice la opción **Únicamente en línea** de la lista desplegable **Tipo de aplicación**.
 
 ## <a name="install-from-a-cd"></a>Instalar desde un CD
  Con esta estrategia, su aplicación se implementa en medios extraíbles como un CD-ROM o DVD. Como en la opción anterior, cuando el usuario elige instalar la aplicación, se instala y se inicia, y se agregan elementos al menú **Inicio** y a **Agregar o quitar programas** en el **Panel de control**.
@@ -66,7 +66,7 @@ Hay tres estrategias distintas para implementar una aplicación de [!INCLUDE[ndp
 
  Para habilitar esta estrategia de implementación en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], haga clic en **Desde un CD-ROM o un DVD-ROM** en la página **Instalación** del Asistente para publicación.
 
- Para habilitar esta estrategia de implementación manualmente, cambie la etiqueta **deploymentProvider** del manifiesto de implementación. (En Visual Studio, esta propiedad se expone como **URL de instalación** en la página **Publicar** del Diseñador de proyectos. En *Mage.exe* es **Ubicación inicial** ).
+ Para habilitar esta estrategia de implementación manualmente, cambie la etiqueta **deploymentProvider** del manifiesto de implementación. (En Visual Studio, esta propiedad se expone como **URL de instalación** en la página **Publicar** del Diseñador de proyectos. En *Mage.exe* es **Ubicación inicial**).
 
 ## <a name="web-browser-support"></a>Compatibilidad con exploradores web
  Las aplicaciones orientadas a .NET Framework 3.5 pueden instalarse mediante cualquier explorador.
@@ -74,7 +74,7 @@ Hay tres estrategias distintas para implementar una aplicación de [!INCLUDE[ndp
  Las aplicaciones orientadas a .NET Framework 2.0 requieren Internet Explorer.
 
 ## <a name="see-also"></a>Vea también
-- [Seguridad e implementación de ClickOnce](../deployment/clickonce-security-and-deployment.md)
+- [Seguridad e implementación ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Selección de una estrategia de actualización de ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)
 - [Cómo: publicar una aplicación ClickOnce con el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
 - [Proteger las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)

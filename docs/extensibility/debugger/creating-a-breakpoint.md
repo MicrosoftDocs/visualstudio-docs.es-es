@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6f9f87bb-192e-45e0-9a7a-ffe729e87f7d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba192a0cda2e63453984d3de7d6007744cc401b7
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: dcd81b79fa43d86036a7fd1ac0ad813e6e2ebb78
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914233"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894977"
 ---
 # <a name="create-a-breakpoint"></a>Crear un punto de interrupción
 A continuación se describe el proceso de creación de un punto de interrupción.
@@ -39,5 +39,5 @@ A continuación se describe el proceso de creación de un punto de interrupción
 
 5. [IDebugPendingBreakpoint2::EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Llamar a eventos del depurador](../../extensibility/debugger/calling-debugger-events.md)
