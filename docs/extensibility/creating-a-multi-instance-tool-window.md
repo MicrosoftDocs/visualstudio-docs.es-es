@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 4a7872f1-acc9-4f43-8932-5a526b36adea
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10de60620bcd0b56f251955f478d4d06c984d021
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: d1d332e3c41a55de8f405f028070fa95f97f6717
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94973999"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923270"
 ---
 # <a name="create-a-multi-instance-tool-window"></a>Crear una ventana de herramientas de varias instancias
 Puede programar una ventana de herramientas para que se puedan abrir varias instancias de ella simultáneamente. De forma predeterminada, las ventanas de herramientas solo pueden tener una instancia abierta.

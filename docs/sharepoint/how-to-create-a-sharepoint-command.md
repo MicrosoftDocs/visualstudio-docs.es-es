@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint commands [SharePoint development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 41e4ab0fd70f4993d148cd5c67cb816bdc92e77a
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 51b80124f7cf550843ad346e9d1e1c0b21ccd0f7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850707"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923353"
 ---
 # <a name="how-to-create-a-sharepoint-command"></a>Cómo: crear un comando de SharePoint
   Si desea usar el modelo de objetos de servidor en una extensión de herramientas de SharePoint, debe crear un *comando de SharePoint* personalizado para llamar a la API. El comando de SharePoint se define en un ensamblado que puede llamar directamente al modelo de objetos de servidor.
@@ -79,7 +79,7 @@ ms.locfileid: "94850707"
 ## <a name="deploying-the-command"></a>Implementar el comando
  Para implementar el comando, incluya el ensamblado de comandos en el mismo [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] paquete de extensión (*VSIX*) con el ensamblado de extensión que usa el comando. También debe agregar una entrada para el ensamblado de comandos en el archivo Extension. vsixmanifest. Para obtener más información, vea [deploy Extensions for the SharePoint Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Llamar a los modelos de objetos de SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)
 - [Cómo: ejecutar un comando de SharePoint](../sharepoint/how-to-execute-a-sharepoint-command.md)
 - [Tutorial: extender Explorador de servidores para mostrar elementos Web](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)

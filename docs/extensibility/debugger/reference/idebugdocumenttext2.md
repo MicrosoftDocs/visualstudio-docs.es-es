@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e85f50a3-211c-4220-a9f4-789950ba2782
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b5def7f6cc4ac5ced91ca0a273ce750003dca20
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: af72993a4a02ce7d25858bf3bd4f0690e0d30f5a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731566"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923102"
 ---
 # <a name="idebugdocumenttext2"></a>IDebugDocumentText2
 Esta interfaz representa un documento de texto.
@@ -25,7 +25,7 @@ Esta interfaz representa un documento de texto.
 ## <a name="syntax"></a>Sintaxis
 
 ```
-IDebugDocumentText2 : IDebugDocument2
+IDebugDocumentText2 : IDebugDocument2
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para los implementadores
@@ -39,10 +39,10 @@ IDebugDocumentText2 : IDebugDocument2
 
 |Método|Descripción|
 |------------|-----------------|
-|[GetSize](../../../extensibility/debugger/reference/idebugdocumenttext2-getsize.md)|Recupera el tamaño del texto en esta posición del documento.|
+|[GetSize (](../../../extensibility/debugger/reference/idebugdocumenttext2-getsize.md)|Recupera el tamaño del texto en esta posición del documento.|
 |[GetText](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)|Recupera el texto de la posición especificada en el documento.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Un objeto que implementa esta interfaz también debe implementar la <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> interfaz, que proporciona la <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> interfaz para un objeto [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md) .
 
 ## <a name="requirements"></a>Requisitos

@@ -9,17 +9,17 @@ helpviewer_keywords:
 ms.assetid: a4cd71c6-5052-45fe-907b-ebc6ca1df2e4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: 0fc0d9a053faf69fde500333ab0faafa0e8d3448
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98b85a1b27255902f4cfba9923beda4305ca03d5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737985"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923220"
 ---
 # <a name="bp_location_code_string"></a>BP_LOCATION_CODE_STRING
 Se usa para establecer puntos de interrupción de código basados en una cadena que el usuario puede especificar desde el entorno de desarrollo integrado (IDE).
@@ -33,14 +33,14 @@ typedef struct _BP_LOCATION_CODE_STRING {
 } BP_LOCATION_CODE_STRING;
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 `bstrContext`\
 Contexto del punto de interrupción en el código, normalmente un nombre de método o función tal y como se ha detectado en una pila de llamadas.
 
 `bstrCodeExpr`\
 Cadena en la que el usuario escribe para describir el punto de interrupción de código.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Esta estructura es miembro de la estructura [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) como parte de una Unión.
 
 ## <a name="requirements"></a>Requisitos

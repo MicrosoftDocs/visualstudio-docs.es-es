@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 7035b904-b3d7-4d9b-98d9-65714b8a8b9f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: eec30783041a1240d8f85815c06f4ca60729a484
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06956af7120b81d93a32c11066744c11ad12f30b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732887"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923210"
 ---
 # <a name="idebugcoreserver3getserverfriendlyname"></a>IDebugCoreServer3::GetServerFriendlyName
 Recupera un nombre descriptivo para el servidor.
@@ -28,14 +28,14 @@ Recupera un nombre descriptivo para el servidor.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT GetServerFriendlyName(
-   BSTR* pbstrName
+HRESULT GetServerFriendlyName(
+   BSTR* pbstrName
 );
 ```
 
 ```csharp
-int GetServerFriendlyName(
-   out string pbstrName
+int GetServerFriendlyName(
+   out string pbstrName
 );
 ```
 
@@ -49,7 +49,7 @@ enuncia Devuelve un nombre descriptivo para el servidor.
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve el código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  En el caso de los servidores iniciados por el usuario, el nombre devuelto por este método es el nombre completo del servidor. En el caso de los servidores iniciados automáticamente, el nombre es el del equipo en el que se está ejecutando el servidor.
 
  Para un nombre orientado al equipo, llame al método [GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md) .

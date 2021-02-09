@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 8cbd2312-ed2f-4477-b192-c3f25c6098c3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d2333b62f21aa7b2b2bc70bddb50cbb3983cedf5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 849046b3a365f58785ea23c9801c567bf566ff39
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713818"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922954"
 ---
 # <a name="provider_flags"></a>PROVIDER_FLAGS
 Especifica las propiedades deseadas que se van a obtener de un proveedor de programas.
@@ -28,27 +28,27 @@ Especifica las propiedades deseadas que se van a obtener de un proveedor de prog
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-enum enum_PROVIDER_FLAGS {
-   PFLAG_NONE                    = 0x00,
-   PFLAG_REMOTE_PORT             = 0x01,
-   PFLAG_DEBUGGEE                = 0x02,
-   PFLAG_ATTACHED_TO_DEBUGGEE    = 0x04,
-   PFLAG_REASON_WATCH            = 0x08,
-   PFLAG_GET_PROGRAM_NODES       = 0x10,
-   PFLAG_GET_IS_DEBUGGER_PRESENT = 0x20
+enum enum_PROVIDER_FLAGS {
+   PFLAG_NONE                    = 0x00,
+   PFLAG_REMOTE_PORT             = 0x01,
+   PFLAG_DEBUGGEE                = 0x02,
+   PFLAG_ATTACHED_TO_DEBUGGEE    = 0x04,
+   PFLAG_REASON_WATCH            = 0x08,
+   PFLAG_GET_PROGRAM_NODES       = 0x10,
+   PFLAG_GET_IS_DEBUGGER_PRESENT = 0x20
 };
-typedef DWORD PROVIDER_FLAGS;
+typedef DWORD PROVIDER_FLAGS;
 ```
 
 ```csharp
-public enum enum_PROVIDER_FLAGS {
-   PFLAG_NONE                    = 0x00,
-   PFLAG_REMOTE_PORT             = 0x01,
-   PFLAG_DEBUGGEE                = 0x02,
-   PFLAG_ATTACHED_TO_DEBUGGEE    = 0x04,
-   PFLAG_REASON_WATCH            = 0x08,
-   PFLAG_GET_PROGRAM_NODES       = 0x10,
-   PFLAG_GET_IS_DEBUGGER_PRESENT = 0x20
+public enum enum_PROVIDER_FLAGS {
+   PFLAG_NONE                    = 0x00,
+   PFLAG_REMOTE_PORT             = 0x01,
+   PFLAG_DEBUGGEE                = 0x02,
+   PFLAG_ATTACHED_TO_DEBUGGEE    = 0x04,
+   PFLAG_REASON_WATCH            = 0x08,
+   PFLAG_GET_PROGRAM_NODES       = 0x10,
+   PFLAG_GET_IS_DEBUGGER_PRESENT = 0x20
 };
 ```
 
@@ -74,7 +74,7 @@ public enum enum_PROVIDER_FLAGS {
  `PFLAG_GET_IS_DEBUGGER_PRESENT`\
  El autor de la llamada desea el `fIsTheDebuggerPresent` campo de la `PROVIDER_PROCESS_DATA` estructura.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Estas marcas se pasan a los métodos siguientes:
 
 - [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)

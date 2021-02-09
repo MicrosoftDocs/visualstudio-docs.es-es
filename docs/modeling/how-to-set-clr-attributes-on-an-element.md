@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Domain-Specific Language, custom attrributes
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: df9f8b16edcbe575ebac67f4acde9111a9511b85
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 8e566eafce9b5763830c00659a860e6329671bcd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363853"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922664"
 ---
 # <a name="how-to-set-clr-attributes-on-an-element"></a>Cómo: Establecer atributos de CLR en un elemento
 Los atributos personalizados son atributos especiales que se pueden agregar a elementos de dominio, formas, conectores y diagramas. Puede agregar cualquier atributo que herede de la `System.Attribute` clase.
@@ -37,12 +37,12 @@ Los atributos personalizados son atributos especiales que se pueden agregar a el
 
 5. En la columna de la **propiedad nombre** , escriba un nombre adecuado, por ejemplo, `MyString` .
 
-6. Haga clic en **Aceptar**.
+6. Haga clic en **OK**.
 
      La propiedad **atributos personalizados** ahora muestra el atributo con el siguiente formato:
 
      `[`*AttributeName* `(` *ParameterName* `=` *Tipo* de`)]`
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [Glosario de las Herramientas del lenguaje específico de dominio](/previous-versions/bb126564(v=vs.100))

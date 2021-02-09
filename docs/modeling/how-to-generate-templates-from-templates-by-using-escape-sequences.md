@@ -7,16 +7,16 @@ helpviewer_keywords:
 - text templates, generating templates from templates
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: d7ef983525842023247433e7a3c2b51e206a1cee
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: e3debeeafa55e483e9625c67534694debff6acfa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100766"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922778"
 ---
 # <a name="how-to-generate-templates-from-templates-by-using-escape-sequences"></a>Cómo: Generar plantillas desde otras plantillas mediante secuencias de escape
 Puede crear una plantilla de texto que cree otra plantilla de texto como salida de texto generada. Para ello, debe usar secuencias de escape para delimitar las etiquetas de la plantilla de texto. Si no usa secuencias de escape, la plantilla de texto generada tendrá un significado predefinido. Para obtener más información sobre el uso de secuencias de escape en las plantillas de texto, vea [usar secuencias de escape en las plantillas de texto](../modeling/using-escape-sequences-in-text-templates.md).
