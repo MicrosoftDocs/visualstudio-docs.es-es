@@ -24,15 +24,15 @@ helpviewer_keywords:
 ms.assetid: 5a74878f-b896-4cca-b968-98d00fe78fb0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ac5810fa3bdd6d479c1df4c484960fd923b0ed59
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 1e409ba89a9ca472f0025ddcf81383ed83641db5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350727"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918370"
 ---
 # <a name="product-and-package-schema-reference"></a>Referencia de esquemas de productos y paquetes
 Un *archivo de producto* es un manifiesto XML que describe todas las dependencias externas que requiere una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación. Entre los ejemplos de dependencias externas se incluyen el .NET Framework y Microsoft Data Access Components (MDAC). Un archivo de paquete es similar a un archivo de producto, pero se usa para instalar los componentes dependientes de la referencia cultural de una dependencia, como los ensamblados localizados, los contratos de licencia y la documentación.
@@ -49,8 +49,8 @@ Un *archivo de producto* es un manifiesto XML que describe todas las dependencia
 |[Elemento \<PackageFiles>](../deployment/packagefiles-element-bootstrapper.md)|Elemento necesario. Enumera los paquetes que se pueden instalar con este proceso de instalación.|None|
 |[Elemento \<Strings>](../deployment/strings-element-bootstrapper.md)|Elemento necesario. Almacena las versiones localizadas del nombre del producto y las cadenas de error.|None|
 
-## <a name="remarks"></a>Observaciones
- El esquema del paquete es utilizado por *Setup.exe* , un programa de código auxiliar generado por la tarea de arranque de MS Build que contiene poca lógica codificada de forma rígida. El esquema impulsa cada aspecto del proceso de instalación.
+## <a name="remarks"></a>Notas
+ El esquema del paquete es utilizado por *Setup.exe*, un programa de código auxiliar generado por la tarea de arranque de MS Build que contiene poca lógica codificada de forma rígida. El esquema impulsa cada aspecto del proceso de instalación.
 
  `InstallChecks` las pruebas que setup.exe deben realizar para la existencia de un paquete determinado. `PackageFiles` enumera todos los paquetes que el proceso de instalación puede tener que instalar, si se produce un error en una prueba determinada. Cada entrada de comando en comandos ejecuta una de las pruebas descritas por `InstallChecks` y especifica qué `PackageFile` se va a ejecutar si se produce un error en la prueba. Puede usar el `Strings` elemento para localizar los nombres de producto y los mensajes de error, de modo que pueda usar un único binario de instalación para instalar la aplicación para cualquier número de idiomas.
 
