@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], object model
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f97bbbab4b867f503e5b5befff27844df8a4b4bc
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 6306b13cc40d8b93de734168fe1e6df92c256d21
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527992"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888698"
 ---
 # <a name="ribbon-object-model-overview"></a>Información general del modelo de objetos de la cinta
   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]Expone un modelo de objetos fuertemente tipado que puede usar para obtener y establecer las propiedades de los controles de la cinta de opciones en tiempo de ejecución. Por ejemplo, puede rellenar dinámicamente los controles de menú o mostrar y ocultar controles de forma contextual. También puede Agregar pestañas, grupos y controles a una cinta de opciones, pero solo antes de que la aplicación de Office cargue la cinta de opciones. Para obtener más información, vea [establecer propiedades que pasan a ser de solo lectura](#SettingReadOnlyProperties).
@@ -172,7 +172,7 @@ ms.locfileid: "97527992"
 
 |Evento|Descripción|
 |-----------|-----------------|
-|Haga clic en|Se produce cuando se hace clic en un control.|
+|Haga clic|Se produce cuando se hace clic en un control.|
 |TextChanged|Se produce cuando cambia el texto de un cuadro de edición o un cuadro combinado.|
 |ItemsLoading|Se produce cuando Office solicita la colección de elementos del control. Office almacena en caché la colección de elementos hasta que el código cambia las propiedades del control o se llama al <xref:Microsoft.Office.Core.IRibbonUI.InvalidateControl%2A> método.|
 |ButtonClick|Se produce cuando <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> se hace clic en un botón de un o <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown> .|
@@ -186,7 +186,7 @@ ms.locfileid: "97527992"
 |*remitente*|Objeto <xref:System.Object> que representa el control que provocó el evento.|
 |*e*|Un objeto <xref:Microsoft.Office.Tools.Ribbon.RibbonControlEventArgs> que contiene un control <xref:Microsoft.Office.Core.IRibbonControl>. Utilice este control para tener acceso a cualquier propiedad que no esté disponible en el modelo de objetos de la cinta de opciones proporcionado por [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] .|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Obtener acceso a la cinta de opciones en tiempo de ejecución](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Información general sobre la cinta](../vsto/ribbon-overview.md)
 - [Cómo: Introducción a la personalización de la cinta de opciones](../vsto/how-to-get-started-customizing-the-ribbon.md)

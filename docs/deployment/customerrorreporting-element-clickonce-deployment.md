@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 7d31816e-c692-46b5-9cc9-753284b3bcda
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5576912fb428e15a6f8164e52d558e255e184fe3
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: b168b3bcb90ae758609698de306928eb7e13d909
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382525"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888490"
 ---
 # <a name="ltcustomerrorreportinggt-element-clickonce-deployment"></a>&lt;&gt;elemento customErrorReporting (implementación ClickOnce)
 Especifica un URI que se va a mostrar cuando se produce un error.
@@ -34,7 +34,7 @@ Especifica un URI que se va a mostrar cuando se produce un error.
 />
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
  Este elemento es opcional. Sin ella, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] muestra un cuadro de diálogo de error que muestra la pila de excepciones. Si el `customErrorReporting` elemento está presente, mostrará [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] en su lugar el URI indicado por el `uri` parámetro. El URI de destino incluirá la clase de excepción externa, la clase de excepción interna y el mensaje de excepción interna como parámetros.
 
  Use este elemento para agregar funcionalidad de informes de errores a la aplicación. Puesto que el URI generado incluye información sobre el tipo de error, el sitio web puede analizar la información y mostrar, por ejemplo, una pantalla de solución de problemas adecuada.
