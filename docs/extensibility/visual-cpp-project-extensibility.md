@@ -7,15 +7,15 @@ dev_langs:
 - C++
 author: corob-msft
 ms.author: corob
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ba78ff7d38d993394072aa9dd18a7a8fa8cbb9d
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 1c699c835c6a53ec346dadb8bbbbf787aacc9206
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668708"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926026"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Extensibilidad del sistema de proyectos de Visual Studio C++ y integración del conjunto de herramientas
 

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 6f74a2d5-3811-43d6-8b10-eb5823ad8995
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9402efcc6c08343f1661945ae1701f7be7909bab
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 458f3245517dd874a086932c65806978b5a1cf85
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903421"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925876"
 ---
 # <a name="visual-studio-template-schema-reference"></a>Referencia de esquema de plantillas de Visual Studio
 Esta sección contiene información sobre los elementos XML de los archivos *. vstemplate* , que son archivos que almacenan metadatos de plantillas de proyecto, plantillas de elementos y Starter kits.
@@ -62,7 +62,7 @@ Esta sección contiene información sobre los elementos XML de los archivos *. v
 |[ProjectType](../extensibility/projecttype-element-visual-studio-templates.md)|--|--|
 |[PromptForSaveOnCreation](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md)|--|--|
 |[ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md)|--|--|
-|[Referencia](../extensibility/reference-element-visual-studio-templates.md)|Assembly|--|
+|[Referencia](../extensibility/reference-element-visual-studio-templates.md)|Ensamblado|--|
 |[Referencias](../extensibility/references-element-visual-studio-templates.md)|Referencia|--|
 |[RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md)|--|--|
 |[RequiredPlatformVersion](../extensibility/requiredplatformversion-element-visual-studio-templates.md)|--|Versión|
@@ -80,7 +80,7 @@ Esta sección contiene información sobre los elementos XML de los archivos *. v
 |[TemplateID](../extensibility/templateid-element-visual-studio-templates.md)|--|--|
 |[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|TemplateData<br /><br /> TemplateContent<br /><br /> WizardExtension<br /><br /> WizardData|Tipo<br /><br /> Versión|
 |[WizardData](../extensibility/wizarddata-element-visual-studio-templates.md)|--|Nombre|
-|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Assembly<br /><br /> FullClassName|--|
+|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Ensamblado<br /><br /> FullClassName|--|
 
 ## <a name="see-also"></a>Vea también
 

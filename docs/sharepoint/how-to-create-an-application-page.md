@@ -12,15 +12,15 @@ helpviewer_keywords:
 - application pages [SharePoint development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: df52ca75ef99fe98158cb5f874e59fe4ee0c47b4
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 74e7aab4cbc012afbf045672dbf4af248ada4c61
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94849862"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925625"
 ---
 # <a name="how-to-create-an-application-page"></a>Cómo: para crear una página de aplicación
   Puede crear una página web de ASP.NET para uno o varios sitios de SharePoint. En SharePoint, estas páginas se denominan páginas de aplicación. A diferencia de una página de sitio, una página de aplicación contiene código que se ejecuta detrás de la página. Para obtener más información, vea [crear páginas de aplicación para SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).
@@ -33,7 +33,7 @@ ms.locfileid: "94849862"
 
 2. En el **Explorador de soluciones**, elija el nodo de proyecto.
 
-3. En la barra de menús, elija **proyecto**  >  **Agregar nuevo elemento**.
+3. En la barra de menús, elija **Proyecto** >  **Agregar nuevo elemento**.
 
 4. En el cuadro de diálogo **Agregar nuevo elemento** , expanda el nodo **SharePoint** y, a continuación, elija el elemento **2010** .
 
@@ -49,6 +49,6 @@ ms.locfileid: "94849862"
 
      El archivo de código aparece si expande el nodo del archivo de paginación ASP.NET y tiene una extensión *. CS* o *. VB* , dependiendo del lenguaje del proyecto. Para ver un ejemplo completo de cómo crear una página de aplicación, consulte [Tutorial: crear una página de aplicación de SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Creación de páginas de aplicación para SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)
 - [Tutorial: Creación de una página de aplicación de SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)

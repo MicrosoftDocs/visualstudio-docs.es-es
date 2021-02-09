@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 49e7efae-e713-4762-a824-96fdaf92cdc9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56d6c1309dc5b9a52de0bc0b54a764eceaf37d96
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 9cc50d3914f43be0da2f992f1074dc82cf5178ae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863980"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925743"
 ---
 # <a name="vsct-xml-schema-reference"></a>Referencia del esquema XML de VSCT
 Proporciona una tabla de elementos de esquema de compilador de tabla de comandos, con los atributos y elementos secundarios permitidos para cada uno.
@@ -74,6 +74,6 @@ Proporciona una tabla de elementos de esquema de compilador de tabla de comandos
 
 - [Atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Cómo agrega VSPackages los elementos de la interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Enrutamiento de comandos en VSPackages](../extensibility/internals/command-routing-in-vspackages.md)

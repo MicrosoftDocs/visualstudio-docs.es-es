@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 0a22516f-f60e-4476-ac5b-f41e5ffaaf8b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77b71f95fcc037b2a4bd70770b06f4b130a9ebd1
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: cf12e2f4967a4157a40cb6c1a02e6e7f45859240
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974375"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925344"
 ---
 # <a name="command-line-switches-visual-studio-sdk"></a>Modificadores de la línea de comandos (SDK de Visual Studio)
 *Devenv.exe*, el archivo ejecutable que inicia el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] entorno de desarrollo integrado (IDE), admite modificadores de línea de comandos específicamente para el desarrollo de VSPackages. Los VSPackages también pueden hacer que sus propios modificadores estén disponibles en la línea de comandos de devenv. En los temas siguientes se proporciona información sobre cómo usar los modificadores de la línea de comandos en el IDE.

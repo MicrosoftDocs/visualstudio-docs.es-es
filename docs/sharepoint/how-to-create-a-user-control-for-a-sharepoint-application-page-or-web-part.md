@@ -13,15 +13,15 @@ helpviewer_keywords:
 - user controls [SharePoint development in Visual Studio], adding
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cbaeaff14d365f41bff73c29e678a08130b03dc0
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 43386f3ba450058d6aaf8ab180e331d2f303a235
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903681"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925588"
 ---
 # <a name="how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part"></a>Cómo: para crear un control de usuario para una página de aplicación o elemento web de SharePoint
   Puede crear controles de usuario personalizados que proporcionan funcionalidad personalizada para la solución de SharePoint, y puede reutilizar esa funcionalidad dentro del proyecto. Puede incluir controles de usuario en un elemento web o página de aplicación, agregar más controles ASP.NET y controles de SharePoint, así como definir propiedades y métodos para el control. Para obtener más información sobre los controles de usuario, vea [crear controles reutilizables para elementos Web o páginas de aplicación](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md) , y controles [de usuario y controles de servidor en SharePoint](https://blogs.msdn.microsoft.com/kaevans/2011/04/28/user-controls-and-server-controls-in-sharepoint/).
@@ -34,7 +34,7 @@ ms.locfileid: "94903681"
 
 2. En el **Explorador de soluciones**, elija el nodo de proyecto.
 
-3. En la barra de menús, elija **proyecto**  >  **Agregar nuevo elemento**.
+3. En la barra de menús, elija **Proyecto** >  **Agregar nuevo elemento**.
 
      Se abrirá el cuadro de diálogo **Agregar nuevo elemento**.
 
@@ -55,7 +55,7 @@ ms.locfileid: "94903681"
 
      Este archivo aparece en **Explorador de soluciones** bajo el archivo de control de usuario y tiene una extensión *. CS* o *. VB* , dependiendo del lenguaje del proyecto.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Creación de controles reutilizables para elementos web o páginas de aplicación](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)
 - [Creación de páginas de aplicación para SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)
 - [Creación de elementos web para SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)

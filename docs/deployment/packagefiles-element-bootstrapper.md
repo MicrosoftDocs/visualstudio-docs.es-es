@@ -14,20 +14,20 @@ helpviewer_keywords:
 ms.assetid: 3ea252d7-18a3-47d8-af83-47feebcfe82b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 60d6491101bef33f1d8c91d4f7640be9d7277da0
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 0fbf76fec604819d7944a7b54fa4b2421e37c111
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349547"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925369"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;&gt;Elemento PackageFiles (arranque)
 El `PackageFiles` elemento contiene `PackageFile` elementos, que definen los paquetes de instalación que se ejecutan como resultado del `Command` elemento.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ```xml
 <PackageFiles
@@ -76,6 +76,6 @@ El `PackageFiles` elemento contiene `PackageFile` elementos, que definen los paq
 ```
 
 ## <a name="see-also"></a>Vea también
-- [\<Product> Element](../deployment/product-element-bootstrapper.md)
-- [\<Package> Element](../deployment/package-element-bootstrapper.md)
+- [Elemento \<Product>](../deployment/product-element-bootstrapper.md)
+- [Elemento \<Package>](../deployment/package-element-bootstrapper.md)
 - [Referencia de esquemas de productos y paquetes](../deployment/product-and-package-schema-reference.md)

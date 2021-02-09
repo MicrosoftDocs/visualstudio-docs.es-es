@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d1f31e5b-c6e2-4e02-8959-b3e86041b29c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fcdec19c4667356edaf9e057c86ddc24baf747b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3cf4f418cf02f08f95d0192e99c0b02d0f74e3ad
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735971"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925112"
 ---
 # <a name="idebugbinder"></a>IDebugBinder
 > [!IMPORTANT]
@@ -48,7 +48,7 @@ IDebugBinder : IUnknown
 |[GetFunctionObject](../../../extensibility/debugger/reference/idebugbinder-getfunctionobject.md)|Obtiene un objeto [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) que se usa para crear parámetros de función.|
 |[ResolveDynamicType](../../../extensibility/debugger/reference/idebugbinder-resolvedynamictype.md)|Obtiene el tipo exacto de una variable.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Esta interfaz devuelve objetos utilizados por el evaluador de expresiones en los árboles de análisis. El evaluador de expresiones analiza una expresión utilizando el proveedor de símbolos para convertir los símbolos de la expresión en instancias de [IDebugField](../../../extensibility/debugger/reference/idebugfield.md), que describen cada símbolo en función de su tipo y ubicación en el código fuente. El método [BIND](../../../extensibility/debugger/reference/idebugbinder-bind.md) convierte `IDebugField` objetos en objetos [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) que conectan o enlazan un tipo de símbolo con un valor real de la memoria. Estos `IDebugObject` objetos se almacenan en un árbol de análisis para su posterior evaluación.
 
 ## <a name="requirements"></a>Requisitos

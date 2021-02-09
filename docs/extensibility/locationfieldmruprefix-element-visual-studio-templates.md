@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 03443691-9eb5-46f4-9169-cc2552a04bcb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd3eca6297430e574435f92d4b58cfbb51be805c
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 674773d25e4842aec649fc57daa4972530832f71
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672514"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924979"
 ---
 # <a name="locationfieldmruprefix-element-visual-studio-templates"></a>Locationfieldmruprefix ((elemento, plantillas de Visual Studio)
 
@@ -52,7 +52,7 @@ Especifica las rutas de acceso usadas más recientemente (MRU) en el cuadro de d
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Clasifica la plantilla y define cómo se muestra en el cuadro de diálogo **Nuevo proyecto** o **Agregar nuevo elemento** .|
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Notas
 
  Este elemento solo se debe usar para las plantillas que se producen a través de [!INCLUDE[vsipprvsip](../extensibility/includes/vsipprvsip_md.md)] .
 

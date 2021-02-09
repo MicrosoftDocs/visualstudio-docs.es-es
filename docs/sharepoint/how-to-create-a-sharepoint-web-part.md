@@ -12,17 +12,17 @@ helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 13039520299d52e6f6a704567cf1cdc5ccfd66db
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: f15cd788d19540bdea416b36ab0f8e8d8aa95e3a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903707"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925599"
 ---
-# <a name="how-to-create-a-sharepoint-web-part"></a>Cómo: para crear un elemento web de SharePoint
+# <a name="how-to-create-a-sharepoint-web-part"></a>Cómo: crear un elemento Web de SharePoint
   Puede crear y personalizar un elemento Web agregando un elemento de **elemento Web** a cualquier proyecto de SharePoint y, a continuación, editando el archivo de código para el elemento Web o mediante un diseñador. Para obtener más información, vea [Cómo: crear un elemento Web de SharePoint mediante un diseñador](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).
 
 ### <a name="to-create-a-sharepoint-web-part"></a>Para crear un elemento Web de SharePoint
@@ -49,7 +49,7 @@ ms.locfileid: "94903707"
 
      Para obtener un ejemplo, vea [Tutorial: crear un elemento Web para SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Creación de elementos web para SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)
 - [Cómo: para crear un elemento web de SharePoint con un diseñador](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)
 - [Tutorial: Creación de un elemento web para SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)

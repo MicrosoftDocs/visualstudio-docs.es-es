@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: b87780ec-36a3-4e9a-9ee2-7abdc26db739
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5d69c54117f6e88ef57fc57f7588b2f9b6c72e3
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 519366fabed855c7ef3cb7c62d39a4743d890f1e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863935"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926045"
 ---
 # <a name="verify-subtypes-of-a-project-at-run-time"></a>Comprobar los subtipos de un proyecto en tiempo de ejecución
 Un VSPackage que depende de un subtipo de proyecto personalizado debe incluir lógica para buscar ese subtipo, de modo que se pueda producir un error sin problemas si el subtipo no está presente. En el procedimiento siguiente se muestra cómo comprobar la presencia de un subtipo especificado.
@@ -68,7 +68,7 @@ Un VSPackage que depende de un subtipo de proyecto personalizado debe incluir l�
     }
     ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Subtipos de proyecto](../extensibility/internals/project-subtypes.md)
 - [Diseño de subtipos de proyecto](../extensibility/internals/project-subtypes-design.md)
 - [Propiedades y métodos extendidos por subtipos de proyecto](../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md)
