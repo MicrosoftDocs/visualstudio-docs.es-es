@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: d54313c2-cf0c-420d-b151-99953a95f0bb
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e0177f199f0178e9fe0221a4cb6daa58d36a6f87
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: cdef39a0ab07d4cb9c9f42cf897bd7728934b88d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382673"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915739"
 ---
 # <a name="how-clickonce-performs-application-updates"></a>Cómo ClickOnce realiza actualizaciones de aplicaciones
 ClickOnce usa la información de versión de archivo especificada en el manifiesto de implementación de una aplicación para decidir si se deben actualizar los archivos de la aplicación. Una vez que se inicia una actualización, ClickOnce utiliza una técnica denominada aplicación de *revisión de archivos* para evitar la descarga redundante de archivos de aplicación.

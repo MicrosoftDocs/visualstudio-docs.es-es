@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 98a5d527-8a72-476c-8e92-0bff3d97c195
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 77345cfc3aa1dd95482052893e7c09591ad7cd4e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dce751223c4513733c5cd9ce815155b7f659b54a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723642"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915277"
 ---
 # <a name="idebugprocess3getencavailablestate"></a>IDebugProcess3::GetENCAvailableState
 Este método obtiene el estado actual de edición y continuación del proceso. Un proveedor de Puerto personalizado siempre debe devolver `E_NOTIMPL` .
@@ -28,8 +28,8 @@ Este método obtiene el estado actual de edición y continuación del proceso. U
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT GetENCAvailableState(
-   EncUnavailableReason* pReason
+HRESULT GetENCAvailableState(
+   EncUnavailableReason* pReason
 );
 ```
 
@@ -49,7 +49,7 @@ enuncia Un valor de la enumeración [EncUnavailableReason](../../../extensibilit
 > [!NOTE]
 > Un proveedor de Puerto personalizado siempre debe devolver `E_NOTIMPL` .
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Este estado puede verse afectado por [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md).
 
 ## <a name="see-also"></a>Vea también

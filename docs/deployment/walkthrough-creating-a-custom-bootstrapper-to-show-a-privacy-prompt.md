@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 2f3edd6a-84d1-4864-a1ae-6a13c5732aae
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 06effb313dc2b8a247eeeab99290a289717bc960
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: b2f36ee884beb3b79244e4621ba305c06aafe8ff
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350470"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915756"
 ---
 # <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Tutorial: Creación de un arranque personalizado con un mensaje de privacidad
 Puede configurar las aplicaciones ClickOnce para que se actualicen automáticamente cuando estén disponibles los ensamblados con versiones de archivos y versiones de ensamblado más recientes. Para asegurarse de que los clientes tienen el consentimiento de este comportamiento, puede mostrarles un aviso de privacidad. A continuación, pueden elegir si se debe conceder permiso a la aplicación para que se actualice automáticamente. Si no se permite que la aplicación se actualice automáticamente, no se instala.
@@ -47,13 +47,13 @@ Puede configurar las aplicaciones ClickOnce para que se actualicen automáticame
 
 2. En el cuadro de diálogo **nuevo proyecto** , haga clic en **ventanas** y, a continuación, haga clic en **WindowsFormsApplication**.
 
-3. En el **nombre** , escriba **ConsentDialog** y, a continuación, haga clic en **Aceptar**.
+3. En el **nombre**, escriba **ConsentDialog** y, a continuación, haga clic en **Aceptar**.
 
 4. En el diseñador, haga clic en el formulario.
 
 5. En la ventana **propiedades** , cambie la propiedad **texto** a **cuadro de diálogo Actualizar consentimiento**.
 
-6. En el **cuadro de herramientas** , expanda **todos los Windows Forms** y arrastre un control **etiqueta** al formulario.
+6. En el **cuadro de herramientas**, expanda **todos los Windows Forms** y arrastre un control **etiqueta** al formulario.
 
 7. En el diseñador, haga clic en el control etiqueta.
 
@@ -61,17 +61,17 @@ Puede configurar las aplicaciones ClickOnce para que se actualicen automáticame
 
     La aplicación que va a instalar comprueba las actualizaciones más recientes en la Web. Al hacer clic en "Acepto", autoriza a la aplicación a buscar e instalar actualizaciones automáticamente desde Internet.
 
-9. En el **cuadro de herramientas** , arrastre un control **CheckBox** hasta el centro del formulario.
+9. En el **cuadro de herramientas**, arrastre un control **CheckBox** hasta el centro del formulario.
 
 10. En la ventana **propiedades** , cambie la propiedad **texto** en **diseño** a **acepto**.
 
-11. En el **cuadro de herramientas** , arrastre un control de **botón** a la parte inferior izquierda del formulario.
+11. En el **cuadro de herramientas**, arrastre un control de **botón** a la parte inferior izquierda del formulario.
 
 12. En la ventana **propiedades** , cambie la propiedad **texto** en **diseño** para **continuar**.
 
 13. En la ventana **propiedades** , cambie la propiedad **(Name)** en **diseño** a **ProceedButton**.
 
-14. En el **cuadro de herramientas** , arrastre un control de **botón** hasta la parte inferior derecha del formulario.
+14. En el **cuadro de herramientas**, arrastre un control de **botón** hasta la parte inferior derecha del formulario.
 
 15. En la ventana **propiedades** , cambie la propiedad **texto** en **diseño** a **Cancelar**.
 
@@ -112,7 +112,7 @@ Puede configurar las aplicaciones ClickOnce para que se actualicen automáticame
 
      Solo para desarrolladores de Visual Basic:
 
-    1. En **Explorador de soluciones** , haga clic en **ConsentDialog**.
+    1. En **Explorador de soluciones**, haga clic en **ConsentDialog**.
 
     2. En el menú **proyecto** , haga clic en **Agregar módulo** y, a continuación, haga clic en **Agregar**.
 
@@ -234,7 +234,7 @@ Puede configurar las aplicaciones ClickOnce para que se actualicen automáticame
 
 #### <a name="to-set-the-update-consent-application-as-a-prerequisite"></a>Para establecer la aplicación de consentimiento de actualización como requisito previo
 
-1. En **Explorador de soluciones** , haga clic en el nombre de la aplicación que desea implementar.
+1. En **Explorador de soluciones**, haga clic en el nombre de la aplicación que desea implementar.
 
 2. En el menú **proyecto** , haga clic en **propiedades** de *projectname* .
 
@@ -245,14 +245,14 @@ Puede configurar las aplicaciones ClickOnce para que se actualicen automáticame
     > [!NOTE]
     > Es posible que tenga que cerrar y volver a abrir Visual Studio para ver el cuadro de diálogo de consentimiento de la actualización en el cuadro de diálogo requisitos previos.
 
-5. Haga clic en **Aceptar**.
+5. Haga clic en **OK**.
 
 ## <a name="create-and-test-the-setup-program"></a>Crear y probar el programa de instalación
  Después de establecer la aplicación de consentimiento de actualización como requisito previo, puede generar el instalador y el programa previo para la aplicación.
 
 #### <a name="to-create-and-test-the-setup-program-by-not-clicking-i-agree"></a>Para crear y probar el programa de instalación sin hacer clic en Acepto
 
-1. En **Explorador de soluciones** , haga clic en el nombre de la aplicación que desea implementar.
+1. En **Explorador de soluciones**, haga clic en el nombre de la aplicación que desea implementar.
 
 2. En el menú **proyecto** , haga clic en **propiedades** de *projectname* .
 
@@ -278,7 +278,7 @@ Puede configurar las aplicaciones ClickOnce para que se actualicen automáticame
 
 #### <a name="to-create-and-test-the-setup-program-by-clicking-i-agree"></a>Para crear y probar el programa de instalación, haga clic en Acepto
 
-1. En **Explorador de soluciones** , haga clic en el nombre de la aplicación que desea implementar.
+1. En **Explorador de soluciones**, haga clic en el nombre de la aplicación que desea implementar.
 
 2. En el menú **proyecto** , haga clic en **propiedades** de *projectname* .
 
@@ -294,7 +294,7 @@ Puede configurar las aplicaciones ClickOnce para que se actualicen automáticame
 
      Aparece la aplicación actualizar cuadro de diálogo de consentimiento y muestra el texto siguiente: la aplicación que va a instalar comprueba las actualizaciones más recientes en la Web. Al hacer clic en Acepto, autoriza a la aplicación a buscar actualizaciones automáticamente en Internet.
 
-7. Haga **clic en Acepto y** , a continuación, haga clic en **continuar**.
+7. Haga **clic en Acepto y**, a continuación, haga clic en **continuar**.
 
      Se inicia la instalación de la aplicación.
 
