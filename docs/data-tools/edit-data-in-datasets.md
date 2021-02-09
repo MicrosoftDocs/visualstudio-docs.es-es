@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 50d5c580-fbf7-408f-be70-e63ac4f4d0eb
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: e547d3a6a07a7881c34462138ffbe708b8d74080
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: f212fbd1868ad873f0692a11bae975eade8778a5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435096"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858922"
 ---
 # <a name="edit-data-in-datasets"></a>Editar datos en conjuntos de datos
 Los datos de las tablas de datos se modifican de forma muy similar a como se modifican los datos de una tabla en cualquier base de datos. El proceso puede incluir la inserción, actualización y eliminación de registros en la tabla. En un formulario enlazado a datos, puede especificar qué campos son editables por el usuario. En esos casos, la infraestructura de enlace de datos controla todo el seguimiento de cambios para que los cambios se puedan devolver a la base de datos más adelante. Si realiza modificaciones en los datos mediante programación y pretende enviarlos de nuevo a la base de datos, debe utilizar los objetos y métodos que realizan el seguimiento de cambios.
@@ -109,6 +109,6 @@ Al trabajar con columnas y filas de datos individuales, es posible que se produz
 [!code-csharp[VbRaddataEditing#23](../data-tools/codesnippet/CSharp/edit-data-in-datasets_7.cs)]
 [!code-vb[VbRaddataEditing#23](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_7.vb)]
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Herramientas de conjunto de datos en Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)

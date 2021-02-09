@@ -19,21 +19,21 @@ helpviewer_keywords:
 ms.assetid: fae72958-0893-47d6-b3dd-9d42418418e4
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: d5e0c287565c001870f91f4912afad28864fe2ef
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9fb859d61ab31a554579f72121a18a541b2995a7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434654"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858558"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Leer datos XML en un conjunto de datos
 
 ADO.NET proporciona métodos sencillos para trabajar con datos XML. En este tutorial, creará una aplicación de Windows que carga datos XML en un conjunto de datos. Después, el conjunto de DataSet se muestra en un <xref:System.Windows.Forms.DataGridView> control. Por último, en un cuadro de texto se muestra un esquema XML basado en el contenido del archivo XML.
 
-## <a name="create-a-new-project"></a>Crear un proyecto nuevo
+## <a name="create-a-new-project"></a>Creación de un nuevo proyecto
 
 Cree un nuevo proyecto de **aplicación de Windows Forms** para C# o Visual Basic. Asigne al proyecto el nombre **ReadingXML**.
 
@@ -41,9 +41,9 @@ Cree un nuevo proyecto de **aplicación de Windows Forms** para C# o Visual Basi
 
 Dado que este tutorial se centra en la lectura de datos XML en un conjunto de datos, se proporciona el contenido de un archivo XML.
 
-1. En el menú **Proyecto** , seleccione **Agregar nuevo elemento**.
+1. En el menú **Proyecto**, seleccione **Agregar nuevo elemento**.
 
-2. Seleccione **archivo XML** , asigne un nombre al archivo **authors.xml** y, a continuación, seleccione **Agregar**.
+2. Seleccione **archivo XML**, asigne un nombre al archivo **authors.xml** y, a continuación, seleccione **Agregar**.
 
    El archivo XML se carga en el diseñador y está listo para su edición.
 
@@ -129,7 +129,7 @@ La interfaz de usuario de esta aplicación se compone de lo siguiente:
 
 1. Abra `Form1` en la vista Diseño.
 
-2. En el **cuadro de herramientas** , arrastre los siguientes controles al formulario:
+2. En el **cuadro de herramientas**, arrastre los siguientes controles al formulario:
 
     - Un <xref:System.Windows.Forms.DataGridView> control
 
@@ -152,7 +152,7 @@ La interfaz de usuario de esta aplicación se compone de lo siguiente:
 
 En este paso, creará un nuevo conjunto de nuevos denominado `authors` . Para obtener más información acerca de los conjuntos de datos, vea [herramientas de conjunto de datos en Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
 
-1. En **Explorador de soluciones** , seleccione el archivo de origen de **Form1** y, a continuación, seleccione el botón **Diseñador de vistas** en la barra de herramientas **Explorador de soluciones** .
+1. En **Explorador de soluciones**, seleccione el archivo de origen de **Form1** y, a continuación, seleccione el botón **Diseñador de vistas** en la barra de herramientas **Explorador de soluciones** .
 
 2. En el [cuadro de herramientas, pestaña datos](../ide/reference/toolbox-data-tab.md), arrastre un **conjunto** de datos hasta **Form1**.
 
@@ -166,7 +166,7 @@ En este paso, creará un nuevo conjunto de nuevos denominado `authors` . Para ob
 
 El botón **leer XML** lee el archivo XML en el conjunto de archivos. A continuación, establece las propiedades del <xref:System.Windows.Forms.DataGridView> control que lo enlazan al conjunto de DataSet.
 
-1. En **Explorador de soluciones** , seleccione **Form1** y, a continuación, seleccione el botón **Diseñador de vistas** en la barra de herramientas **Explorador de soluciones** .
+1. En **Explorador de soluciones**, seleccione **Form1** y, a continuación, seleccione el botón **Diseñador de vistas** en la barra de herramientas **Explorador de soluciones** .
 
 2. Seleccione el botón **leer XML** .
 
@@ -183,7 +183,7 @@ El botón **leer XML** lee el archivo XML en el conjunto de archivos. A continua
 
 El botón **Mostrar esquema** crea un <xref:System.IO.StringWriter> objeto que se rellena con el esquema y se muestra en el <xref:System.Windows.Forms.TextBox> control.
 
-1. En **Explorador de soluciones** , seleccione **Form1** y, a continuación, seleccione el botón **Diseñador de vistas** .
+1. En **Explorador de soluciones**, seleccione **Form1** y, a continuación, seleccione el botón **Diseñador de vistas** .
 
 2. Seleccione el botón **Mostrar esquema** .
 

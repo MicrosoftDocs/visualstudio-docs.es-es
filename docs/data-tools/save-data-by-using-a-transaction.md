@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 8b835e8f-34a3-413d-9bb5-ebaeb87f1198
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: c1cd112a1960078c72c575542525a5ecf6571b06
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: c633ed01821f500e958d3c7549febc23cf33c09d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434595"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858493"
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>Procedimiento para guardar datos mediante una transacción
 
@@ -39,7 +39,7 @@ Para revertir la transacción, inicie una excepción antes de llamar al <xref:Sy
 
 ## <a name="to-add-a-reference-to-the-systemtransactionsdll"></a>Para agregar una referencia al System.Transactions.dll
 
-1. En el menú **Proyecto** , seleccione **Agregar referencia**.
+1. En el menú **Proyecto**, seleccione **Agregar referencia**.
 
 2. En la pestaña **.net** (pestaña **SQL Server** para proyectos de SQL Server), seleccione **System. Transactions** y, después, haga clic en **Aceptar**.
 
@@ -52,7 +52,7 @@ Para revertir la transacción, inicie una excepción antes de llamar al <xref:Sy
      [!code-vb[VbRaddataSaving#11](../data-tools/codesnippet/VisualBasic/save-data-by-using-a-transaction_1.vb)]
      [!code-csharp[VbRaddataSaving#11](../data-tools/codesnippet/CSharp/save-data-by-using-a-transaction_1.cs)]
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Guardar los datos de nuevo en la base de datos](../data-tools/save-data-back-to-the-database.md)
 - [Tutorial: Guardar datos en una transacción](../data-tools/save-data-in-a-transaction.md)

@@ -11,15 +11,15 @@ helpviewer_keywords:
 - ADO.NET, data access
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: a5458ffca549026c99c8faedc8f47d3f3285a7ca
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: b5e3d8b8cf0b2c74a5b5a862539bbf3b201b4ffd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518744"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859442"
 ---
 # <a name="work-with-data-in-visual-studio"></a>Trabajo con datos en Visual Studio
 
@@ -72,13 +72,13 @@ La mayoría de los demás productos de base de datos SQL y NoSQL que se enumeran
 
 ::: moniker range="vs-2017"
 
-Muchos proveedores de bases de datos y terceros admiten la integración de Visual Studio mediante paquetes de NuGet. Puede explorar las ofertas en Nuget.org o a través del administrador de paquetes Nuget en Visual Studio ( **herramientas** administrador de paquetes Nuget  >  **NuGet Package Manager**  >  **administrar paquetes Nuget para la solución** ). Otros productos de base de datos se integran con Visual Studio como una extensión. Puede examinar estas ofertas en el [Visual Studio Marketplace](https://marketplace.visualstudio.com/) o desplazándose hasta **herramientas**  >  **extensiones y actualizaciones** y, a continuación, seleccionando en **línea** en el panel izquierdo del cuadro de diálogo. Para obtener más información, vea [sistemas de base de datos compatibles para Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
+Muchos proveedores de bases de datos y terceros admiten la integración de Visual Studio mediante paquetes de NuGet. Puede explorar las ofertas en Nuget.org o a través del administrador de paquetes Nuget en Visual Studio (**herramientas** administrador de paquetes Nuget  >    >  **administrar paquetes Nuget para la solución**). Otros productos de base de datos se integran con Visual Studio como una extensión. Puede examinar estas ofertas en el [Visual Studio Marketplace](https://marketplace.visualstudio.com/) o desplazándose hasta **herramientas**  >  **extensiones y actualizaciones** y, a continuación, seleccionando en **línea** en el panel izquierdo del cuadro de diálogo. Para obtener más información, vea [sistemas de base de datos compatibles para Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Muchos proveedores de bases de datos y terceros admiten la integración de Visual Studio mediante paquetes de NuGet. Puede explorar las ofertas en Nuget.org o a través del administrador de paquetes Nuget en Visual Studio ( **herramientas** administrador de paquetes Nuget  >  **NuGet Package Manager**  >  **administrar paquetes Nuget para la solución** ). Otros productos de base de datos se integran con Visual Studio como una extensión. Puede examinar estas ofertas en el [Visual Studio Marketplace](https://marketplace.visualstudio.com/) o yendo a **extensiones**  >  **administrar extensiones** y seleccionando en **línea** en el panel izquierdo del cuadro de diálogo. Para obtener más información, vea [sistemas de base de datos compatibles para Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
+Muchos proveedores de bases de datos y terceros admiten la integración de Visual Studio mediante paquetes de NuGet. Puede explorar las ofertas en Nuget.org o a través del administrador de paquetes Nuget en Visual Studio (**herramientas** administrador de paquetes Nuget  >    >  **administrar paquetes Nuget para la solución**). Otros productos de base de datos se integran con Visual Studio como una extensión. Puede examinar estas ofertas en el [Visual Studio Marketplace](https://marketplace.visualstudio.com/) o yendo a **extensiones**  >  **administrar extensiones** y seleccionando en **línea** en el panel izquierdo del cuadro de diálogo. Para obtener más información, vea [sistemas de base de datos compatibles para Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ::: moniker-end
 
@@ -151,7 +151,7 @@ Plataforma de inteligencia [artificial de Microsoft](https://azure.microsoft.com
 
 [Entity Framework ADO.net](/ef/ef6/) &mdash; Describe cómo crear aplicaciones de datos que permiten a los programadores programar con un modelo conceptual en lugar de hacerlo directamente en una base de datos relacional.
 
-[WCF Data Services 4,5](/dotnet/framework/data/wcf/index) &mdash; Describe cómo usar [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] para implementar servicios de datos en Internet o en una intranet que implementa el [Open Data Protocol (OData)](https://www.odata.org/).
+[Servicios de datos de WCF 4,5](/dotnet/framework/data/wcf/index) &mdash; Describe cómo usar [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] para implementar servicios de datos en Internet o en una intranet que implementa el [Open Data Protocol (OData)](https://www.odata.org/).
 
 [Datos en soluciones](../vsto/data-in-office-solutions.md) &mdash; de Office Contiene vínculos a temas que explican cómo funcionan los datos en las soluciones de Office. Se incluye información sobre la programación orientada a esquema, el almacenamiento de datos en caché y el acceso a datos en el servidor.
 

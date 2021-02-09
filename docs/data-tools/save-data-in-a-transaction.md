@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 80260118-08bc-4b37-bfe5-9422ee7a1e4e
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1bb0262139e2096cf55ae7581ef854a57c67d22a
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 62175e33949b2c6311fba8e9255b237cd8b43e01
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434550"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858480"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>Tutorial: Guardar datos en una transacción
 
@@ -52,7 +52,7 @@ En este tutorial se usa SQL Server Express LocalDB y la base de datos de ejemplo
 
 El primer paso es crear una **aplicación Windows Forms**.
 
-1. En Visual Studio, en el menú **Archivo** , seleccione **Nuevo** > **Proyecto**.
+1. En Visual Studio, en el menú **Archivo**, seleccione **Nuevo** > **Proyecto**.
 
 2. Expanda **Visual C#** o **Visual Basic** en el panel izquierdo y, a continuación, seleccione **escritorio de Windows**.
 
@@ -68,7 +68,7 @@ En este paso se usa el Asistente para la **configuración de orígenes de datos*
 
 1. Para abrir la ventana **orígenes de datos** , en el menú **datos** , seleccione **Mostrar orígenes de datos**.
 
-2. En la ventana **Orígenes de datos** , seleccione **Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de orígenes de datos**.
+2. En la ventana **Orígenes de datos**, seleccione **Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de orígenes de datos**.
 
 3. En la pantalla **elegir un tipo de origen de datos** , seleccione **base** de datos y, a continuación, seleccione **siguiente**.
 
@@ -90,7 +90,7 @@ En este paso se usa el Asistente para la **configuración de orígenes de datos*
 
      **NorthwindDataSet** se agrega al proyecto y las `Customers` `Orders` tablas y aparecen en la ventana orígenes de **datos** .
 
-## <a name="add-controls-to-the-form"></a>Agregar controles al formulario
+## <a name="add-controls-to-the-form"></a>Adición de controles al formulario
 
 Puede crear los controles enlazados a datos arrastrando elementos desde la ventana **orígenes de datos** hasta el formulario.
 
@@ -98,7 +98,7 @@ Puede crear los controles enlazados a datos arrastrando elementos desde la venta
 
 2. Arrastre el nodo principal **Customers** desde la ventana **Orígenes de datos** hasta **Form1**.
 
-   En el formulario aparecen un control <xref:System.Windows.Forms.DataGridView> y una barra de herramientas (<xref:System.Windows.Forms.BindingNavigator>) para navegar por los registros. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md) `CustomersTableAdapter` <xref:System.Windows.Forms.BindingSource> <xref:System.Windows.Forms.BindingNavigator> En la bandeja de componentes aparecen NorthwindDataSet,, y.
+   En el formulario aparecen un control <xref:System.Windows.Forms.DataGridView> y una barra de herramientas (<xref:System.Windows.Forms.BindingNavigator>) para navegar por los registros. [](../data-tools/dataset-tools-in-visual-studio.md) `CustomersTableAdapter` <xref:System.Windows.Forms.BindingSource> <xref:System.Windows.Forms.BindingNavigator> En la bandeja de componentes aparecen NorthwindDataSet,, y.
 
 3. Arrastre el nodo **Orders** relacionado (no el nodo **Orders** principal, pero el nodo de tabla secundaria relacionado que se encuentra debajo de la columna **fax** ) al formulario situado debajo de **CustomersDataGridView**.
 
@@ -110,7 +110,7 @@ Las transacciones usan el espacio de nombres <xref:System.Transactions>. De form
 
 ### <a name="to-add-a-reference-to-the-systemtransactions-dll-file"></a>Para agregar una referencia al archivo DLL System.Transactions
 
-1. En el menú **Proyecto** , seleccione **Agregar referencia**.
+1. En el menú **Proyecto**, seleccione **Agregar referencia**.
 
 2. Seleccione **System. Transactions** (en la pestaña **.net** ) y, después, haga clic en **Aceptar**.
 
@@ -141,28 +141,28 @@ El orden para conciliar los cambios a los datos relacionados es el siguiente:
 
 ### <a name="to-delete-existing-orders"></a>Para eliminar pedidos existentes
 
-- Agregue el siguiente método `DeleteOrders` a **Form1** :
+- Agregue el siguiente método `DeleteOrders` a **Form1**:
 
      [!code-vb[VbRaddataSaving#5](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_2.vb)]
      [!code-csharp[VbRaddataSaving#5](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_2.cs)]
 
 ### <a name="to-delete-existing-customers"></a>Para eliminar clientes existentes
 
-- Agregue el siguiente método `DeleteCustomers` a **Form1** :
+- Agregue el siguiente método `DeleteCustomers` a **Form1**:
 
      [!code-vb[VbRaddataSaving#6](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_3.vb)]
      [!code-csharp[VbRaddataSaving#6](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_3.cs)]
 
 ### <a name="to-add-new-customers"></a>Para agregar nuevos clientes
 
-- Agregue el siguiente método `AddNewCustomers` a **Form1** :
+- Agregue el siguiente método `AddNewCustomers` a **Form1**:
 
      [!code-vb[VbRaddataSaving#7](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_4.vb)]
      [!code-csharp[VbRaddataSaving#7](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_4.cs)]
 
 ### <a name="to-add-new-orders"></a>Para agregar nuevos pedidos
 
-- Agregue el siguiente método `AddNewOrders` a **Form1** :
+- Agregue el siguiente método `AddNewOrders` a **Form1**:
 
      [!code-vb[VbRaddataSaving#8](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_5.vb)]
      [!code-csharp[VbRaddataSaving#8](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_5.cs)]
@@ -171,7 +171,7 @@ El orden para conciliar los cambios a los datos relacionados es el siguiente:
 
 Presione **F5** para ejecutar la aplicación.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Cómo: guardar datos mediante el uso de una transacción](../data-tools/save-data-by-using-a-transaction.md)
 - [Guardar los datos de nuevo en la base de datos](../data-tools/save-data-back-to-the-database.md)

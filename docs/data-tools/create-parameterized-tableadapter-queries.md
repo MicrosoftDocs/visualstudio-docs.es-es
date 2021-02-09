@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 104d1d19-b5a9-4071-b81e-1b3af08e9c7b
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: e6eb2f6e1358c91a1103615aca67ede4a3561fae
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 373e062ad7f2d8600fd28f098cbc0cae1c8d5a65
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436672"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859013"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Crear consultas parametrizadas de TableAdapter
 
@@ -61,7 +61,7 @@ Cree consultas de TableAdapter parametrizadas en el **Diseñador de DataSet**. T
 2. En el menú **datos** , seleccione **Agregar consulta** o **etiquetas inteligentes de datos**.
 
     > [!NOTE]
-    > Si **Agregar consulta** no está disponible en el menú **Datos** , seleccione un control en el formulario que muestra el origen de datos al que quiere agregar parametrización. Por ejemplo, si el formulario muestra datos en un control <xref:System.Windows.Forms.DataGridView>, selecciónelo. Si el formulario muestra datos en controles individuales, seleccione un control enlazado a datos.
+    > Si **Agregar consulta** no está disponible en el menú **Datos**, seleccione un control en el formulario que muestra el origen de datos al que quiere agregar parametrización. Por ejemplo, si el formulario muestra datos en un control <xref:System.Windows.Forms.DataGridView>, selecciónelo. Si el formulario muestra datos en controles individuales, seleccione un control enlazado a datos.
 
 3. En el área **seleccionar tabla de origen de datos** , seleccione la tabla a la que desea agregar la parametrización.
 
@@ -75,7 +75,7 @@ Cree consultas de TableAdapter parametrizadas en el **Diseñador de DataSet**. T
 
 6. Seleccione **Aceptar**.
 
-     Se agregan al formulario un control para especificar los valores del parámetro y un botón **Cargar** , en un control <xref:System.Windows.Forms.ToolStrip>.
+     Se agregan al formulario un control para especificar los valores del parámetro y un botón **Cargar**, en un control <xref:System.Windows.Forms.ToolStrip>.
 
 ### <a name="query-for-null-values"></a>Consultar valores NULL
 
@@ -94,12 +94,12 @@ Si se tratara de una consulta en un TableAdapter, podría consultar todos los pe
 
 Para permitir que una consulta acepte valores NULL:
 
-1. En el **Diseñador de DataSet** , seleccione la consulta TableAdapter que necesita aceptar valores de parámetro null.
+1. En el **Diseñador de DataSet**, seleccione la consulta TableAdapter que necesita aceptar valores de parámetro null.
 
-2. En la ventana **propiedades** , seleccione **parámetros** y, a continuación, haga clic en el botón de puntos suspensivos ( **...** ) para abrir el editor de la **colección de parámetros**.
+2. En la ventana **propiedades** , seleccione **parámetros** y, a continuación, haga clic en el botón de puntos suspensivos (**...**) para abrir el editor de la **colección de parámetros**.
 
 3. Seleccione el parámetro que permite valores NULL y establezca la propiedad **AllowDBNull** en `true` .
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Rellenar conjuntos de datos mediante TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)

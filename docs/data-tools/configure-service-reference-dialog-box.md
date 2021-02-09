@@ -13,21 +13,21 @@ helpviewer_keywords:
 ms.assetid: 25e4c36b-2db6-4e71-9010-b7068255d09d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1dc1d82b0267e5e0655f3ebef8eb08806ad319a8
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: 9ce4057378db357345869d10e933929ae31ee573
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518731"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859221"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Configurar referencia de servicio (cuadro de diálogo)
 
 El cuadro de diálogo **configurar referencia de servicio** le permite configurar el comportamiento de los servicios de Windows Communication Foundation (WCF).
 
-Para acceder al cuadro de diálogo **Configurar referencia de servicio** , haga clic con el botón derecho en una referencia de servicio en el **Explorador de soluciones** y elija **Configurar referencia de servicio**. También puede acceder al cuadro de diálogo haciendo clic en el botón **Avanzadas** en el **cuadro de diálogo Agregar referencia de servicio**.
+Para acceder al cuadro de diálogo **Configurar referencia de servicio**, haga clic con el botón derecho en una referencia de servicio en el **Explorador de soluciones** y elija **Configurar referencia de servicio**. También puede acceder al cuadro de diálogo haciendo clic en el botón **Avanzadas** en el **cuadro de diálogo Agregar referencia de servicio**.
 
 ## <a name="task-list"></a>Lista de tareas
 
@@ -41,7 +41,7 @@ Para acceder al cuadro de diálogo **Configurar referencia de servicio** , haga 
 
 - Para especificar tipos de colección de lista o diccionario para un cliente de WCF, seleccione los tipos en las listas **Tipo de colección** y **Tipo de colección de diccionario**.
 
-- Para deshabilitar el uso compartido de tipos, desactive la casilla **Volver a usar tipos en ensamblados a los que se hace referencia**. Para habilitar el uso compartido de tipos para un subconjunto de ensamblados a los que se hace referencia, active la casilla **Volver a usar tipos en ensamblados a los que se hace referencia** , seleccione **Volver a usar tipos en los ensamblados especificados** y seleccione las referencias deseadas en la lista **Ensamblados a los que se hace referencia**.
+- Para deshabilitar el uso compartido de tipos, desactive la casilla **Volver a usar tipos en ensamblados a los que se hace referencia**. Para habilitar el uso compartido de tipos para un subconjunto de ensamblados a los que se hace referencia, active la casilla **Volver a usar tipos en ensamblados a los que se hace referencia**, seleccione **Volver a usar tipos en los ensamblados especificados** y seleccione las referencias deseadas en la lista **Ensamblados a los que se hace referencia**.
 
 ## <a name="uielement-list"></a>Lista de UIElement
 
@@ -93,7 +93,7 @@ Cuando se selecciona, solo se reutilizan los tipos seleccionados en la **lista e
 
 **Ensamblados a los que se hace referencia**
 
-Contiene una lista de ensamblados a los que se hace referencia para el proyecto o el sitio Web. Cuando selecciona **volver a usar tipos en ensamblados de referencia especificados** , puede seleccionar o borrar ensamblados individuales.
+Contiene una lista de ensamblados a los que se hace referencia para el proyecto o el sitio Web. Cuando selecciona **volver a usar tipos en ensamblados de referencia especificados**, puede seleccionar o borrar ensamblados individuales.
 
 **Agregar referencia web**
 
@@ -105,7 +105,7 @@ Se abrirá el cuadro de diálogo **Agregar referencia web**.
 > [!NOTE]
 > El botón **Agregar referencia Web** solo está disponible cuando se muestra el cuadro de diálogo **configurar referencia de servicio** en el **cuadro de diálogo Agregar referencia de servicio**.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Cómo: Agregar una referencia a un servicio web XML](how-to-add-update-or-remove-a-wcf-data-service-reference.md)
 - [Servicios de Windows Communication Foundation y WCF Data Services](../data-tools/configure-service-reference-dialog-box.md)

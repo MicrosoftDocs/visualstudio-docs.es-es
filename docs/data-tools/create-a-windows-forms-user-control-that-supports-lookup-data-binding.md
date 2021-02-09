@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: c48b4d75-ccfc-4950-8b14-ff8adbfe4208
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: de89839dd85f0f330356e1ade7d4658428ea3d3e
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 0eeb3e768370066bf93afc766d4d7f67d8d39a1d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435279"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859078"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Crear un control de usuario de Windows Forms que admita el enlace de datos de búsqueda
 
@@ -60,7 +60,7 @@ Durante este tutorial, aprenderá a:
 
 En este tutorial se usa SQL Server Express LocalDB y la base de datos de ejemplo Northwind.
 
-1. Si no tiene SQL Server Express LocalDB, instálelo desde la [Página de descarga de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)o a través de la **instalador de Visual Studio**. En el **instalador de Visual Studio** , puede instalar SQL Server Express LocalDB como parte de la carga de trabajo de **procesamiento y almacenamiento de datos** , o como un componente individual.
+1. Si no tiene SQL Server Express LocalDB, instálelo desde la [Página de descarga de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)o a través de la **instalador de Visual Studio**. En el **instalador de Visual Studio**, puede instalar SQL Server Express LocalDB como parte de la carga de trabajo de **procesamiento y almacenamiento de datos** , o como un componente individual.
 
 2. Instale la base de datos de ejemplo Northwind siguiendo estos pasos:
 
@@ -78,7 +78,7 @@ En este tutorial se usa SQL Server Express LocalDB y la base de datos de ejemplo
 
 El primer paso es crear un proyecto de **aplicación de Windows Forms** .
 
-1. En Visual Studio, en el menú **Archivo** , seleccione **Nuevo** > **Proyecto**.
+1. En Visual Studio, en el menú **Archivo**, seleccione **Nuevo** > **Proyecto**.
 
 2. Expanda **Visual C#** o **Visual Basic** en el panel izquierdo y, a continuación, seleccione **escritorio de Windows**.
 
@@ -90,9 +90,9 @@ El primer paso es crear un proyecto de **aplicación de Windows Forms** .
 
 ## <a name="add-a-user-control-to-the-project"></a>Agregar un control de usuario al proyecto
 
-Este tutorial crea un control de búsqueda a partir de un **Control de usuario** , por lo que debe agregar un elemento **Control de usuario** al proyecto **LookupControlWalkthrough**.
+Este tutorial crea un control de búsqueda a partir de un **Control de usuario**, por lo que debe agregar un elemento **Control de usuario** al proyecto **LookupControlWalkthrough**.
 
-1. En el menú **Proyecto** , elija **Agregar control de usuario**.
+1. En el menú **Proyecto**, elija **Agregar control de usuario**.
 
 2. Escriba `LookupBox` en el área **nombre** y, a continuación, haga clic en **Agregar**.
 
@@ -106,7 +106,7 @@ Para diseñar el control LookupBox, arrastre un control <xref:System.Windows.For
 
 Para controles de búsqueda que admiten el enlace de datos, puede implementar <xref:System.ComponentModel.LookupBindingPropertiesAttribute>.
 
-1. Cambie el control **LookupBox** a vista de código. (En el menú **Ver** , elija **Código**.)
+1. Cambie el control **LookupBox** a vista de código. (En el menú **Ver**, elija **Código**.)
 
 2. Reemplace el código de `LookupBox` por lo siguiente:
 
@@ -149,11 +149,11 @@ Dentro de la ventana **Orígenes de datos** puede establecer el control que se v
 
 2. Expanda el nodo **Customers** en la ventana **Orígenes de datos**.
 
-3. Expanda el nodo **Orders** (incluido en el nodo **Customers** debajo de la columna **Fax** ).
+3. Expanda el nodo **Orders** (incluido en el nodo **Customers** debajo de la columna **Fax**).
 
 4. Haga clic en la flecha de lista desplegable en el nodo **Orders** y elija **Detalles** de la lista de control.
 
-5. Haga clic en la flecha de lista desplegable en la columna **CustomerID** (del nodo **Orders** ) y elija **Personalizar**.
+5. Haga clic en la flecha de lista desplegable en la columna **CustomerID** (del nodo **Orders**) y elija **Personalizar**.
 
 6. Seleccione **LookupBox** de la lista de **Controles asociados** en el cuadro de diálogo **Opciones de personalización de la interfaz de usuario de datos**.
 
@@ -161,7 +161,7 @@ Dentro de la ventana **Orígenes de datos** puede establecer el control que se v
 
 8. Haga clic en la flecha de lista desplegable en la columna **CustomerID** y elija **LookupBox**.
 
-## <a name="add-controls-to-the-form"></a>Agregar controles al formulario
+## <a name="add-controls-to-the-form"></a>Adición de controles al formulario
 
 Puede crear los controles enlazados a datos arrastrando elementos desde la ventana **Orígenes de datos** al **Form1**.
 
@@ -179,6 +179,6 @@ Así configura el enlace de datos para mostrar el valor `CompanyName` de la tabl
 
 - Navegue por algunos registros y compruebe que `CompanyName` aparece en el control `LookupBox`.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Enlazar controles de Windows Forms a datos en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

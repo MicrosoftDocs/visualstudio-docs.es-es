@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 177420b9-568b-4dad-9d16-1b0e98a24d71
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: de0a155d675f85e10cdf38969dd6eb59a3762770
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: 2ebfc2071bdf9f9e9dc40b36744bb34d4a68ac04
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518533"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859286"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Enlazar controles de WPF a un conjunto de datos
 
@@ -44,7 +44,7 @@ En este tutorial se muestran las tareas siguientes:
 
 Necesitará los componentes siguientes para completar este tutorial:
 
-- Visual Studio
+- Programa para la mejora
 
 - Acceso a una instancia en ejecución de SQL Server o SQL Server Express que tiene adjunta la base de datos de ejemplo AdventureWorks Light (AdventureWorksLT). Puede descargar la base de datos AdventureWorksLT del [archivo CodePlex](https://archive.codeplex.com/?p=awlt2008dbscript).
 
@@ -54,7 +54,7 @@ El conocimiento previo de los siguientes conceptos es útil, aunque no necesario
 
 - Enlace a datos de WPF. Para obtener más información, vea [información general sobre el enlace de datos](/dotnet/desktop-wpf/data/data-binding-overview).
 
-## <a name="create-the-project"></a>Crear el proyecto
+## <a name="create-the-project"></a>Creación del proyecto
 
 Cree un nuevo proyecto de WPF para mostrar los registros de productos.
 
@@ -62,7 +62,7 @@ Cree un nuevo proyecto de WPF para mostrar los registros de productos.
 
 1. Abra Visual Studio.
 
-2. En el menú **Archivo** , seleccione **Nuevo** > **Proyecto**.
+2. En el menú **Archivo**, seleccione **Nuevo** > **Proyecto**.
 
 3. Expanda **Visual Basic** o **Visual C#** y después seleccione **Windows**.
 
@@ -96,19 +96,19 @@ Antes de crear controles enlazados a datos, debe definir un modelo de datos para
 
    Se abre el Asistente para la **configuración de orígenes de datos** .
 
-3. En la página **Elegir un tipo de origen de datos** , seleccione **Base de datos** y después haga clic en **Siguiente**.
+3. En la página **Elegir un tipo de origen de datos**, seleccione **Base de datos** y después haga clic en **Siguiente**.
 
-4. En la página **Elegir un modelo de base de datos** , seleccione **Conjunto de datos** y después haga clic en **Siguiente**.
+4. En la página **Elegir un modelo de base de datos**, seleccione **Conjunto de datos** y después haga clic en **Siguiente**.
 
-5. En la página **Elegir la conexión de datos** , seleccione una de estas opciones:
+5. En la página **Elegir la conexión de datos**, seleccione una de estas opciones:
 
    - Si hay disponible una conexión de datos a la base de datos de ejemplo AdventureWorksLT en la lista desplegable, selecciónela y haga clic en **Siguiente**.
 
    - Haga clic en **Nueva conexión** y cree una conexión a la base de datos AdventureWorksLT.
 
-6. En la página **Guardar cadena de conexión en el archivo de configuración de la aplicación** , active la casilla **Sí, guardar la conexión como** y haga clic en **Siguiente**.
+6. En la página **Guardar cadena de conexión en el archivo de configuración de la aplicación**, active la casilla **Sí, guardar la conexión como** y haga clic en **Siguiente**.
 
-7. En la página **Elija los objetos de base de datos** , expanda el nodo **Tablas** y seleccione la tabla **Product (SalesLT)**.
+7. En la página **Elija los objetos de base de datos**, expanda el nodo **Tablas** y seleccione la tabla **Product (SalesLT)**.
 
 8. Haga clic en **Finalizar**
 
@@ -120,15 +120,15 @@ Antes de crear controles enlazados a datos, debe definir un modelo de datos para
 
 Para rellenar con datos el conjunto de datos, use el método `Fill` de `ProductTableAdapter`. De forma predeterminada, el método `Fill` rellena la tabla `ProductDataTable` del `AdventureWorksLTDataSet` con todas las filas de datos de la tabla Product. Puede modificar este método para que devuelva solo un subconjunto de las filas. Para este tutorial, modifique el método `Fill` para que devuelva solo las filas de productos que tengan fotos.
 
-1. En el **Explorador de soluciones** , haga doble clic en el archivo *AdventureWorksLTDataSet.xsd*.
+1. En el **Explorador de soluciones**, haga doble clic en el archivo *AdventureWorksLTDataSet.xsd*.
 
      Se abre el diseñador de DataSet.
 
-2. En el diseñador, haga clic con el botón derecho en la consulta **Fill** , **GetData()** y seleccione **Configurar**.
+2. En el diseñador, haga clic con el botón derecho en la consulta **Fill**, **GetData()** y seleccione **Configurar**.
 
      Se abre el **Asistente para la configuración de TableAdapter**.
 
-3. En la página **Escriba una instrucción SQL** , agregue la siguiente cláusula WHERE después de la instrucción `SELECT` en el cuadro de texto.
+3. En la página **Escriba una instrucción SQL**, agregue la siguiente cláusula WHERE después de la instrucción `SELECT` en el cuadro de texto.
 
     ```sql
     WHERE ThumbnailPhotoFileName <> 'no_image_available_small.gif'
@@ -140,7 +140,7 @@ Para rellenar con datos el conjunto de datos, use el método `Fill` de `ProductT
 
 Agregue varios botones a la ventana modificando el código XAML en WPF Designer. Más adelante en este tutorial, agregará código que permite a los usuarios desplazarse por los registros de productos y guardar cambios usando estos botones.
 
-1. En el **Explorador de soluciones** , haga doble clic en *MainWindow.xaml*.
+1. En el **Explorador de soluciones**, haga doble clic en *MainWindow.xaml*.
 
     La ventana se abre en **WPF Designer**.
 
@@ -162,11 +162,11 @@ Agregue varios botones a la ventana modificando el código XAML en WPF Designer.
 
 Cree controles que muestren los registros de clientes arrastrando la `Product` tabla desde la ventana **orígenes de datos** hasta WPF Designer.
 
-1. En la ventana **Orígenes de datos** , haga clic en el menú desplegable del nodo **Product** y seleccione **Detalles**.
+1. En la ventana **Orígenes de datos**, haga clic en el menú desplegable del nodo **Product** y seleccione **Detalles**.
 
 2. Expanda el nodo **Product**.
 
-3. En este ejemplo no se mostrarán algunos campos; por lo tanto, haga clic en el menú desplegable junto a los siguientes nodos y seleccione **Ninguno** :
+3. En este ejemplo no se mostrarán algunos campos; por lo tanto, haga clic en el menú desplegable junto a los siguientes nodos y seleccione **Ninguno**:
 
     - ProductCategoryID
 
@@ -183,13 +183,13 @@ Cree controles que muestren los registros de clientes arrastrando la `Product` t
     > [!NOTE]
     > De forma predeterminada, los elementos de la ventana **Orígenes de datos** que representan imágenes tienen sus controles predeterminados establecidos en **Ninguno**. Esto se debe a que las imágenes se almacenan como matrices de bytes en las bases de datos, y las matrices de bytes pueden contener desde una matriz de bytes simple al archivo ejecutable de una aplicación grande.
 
-5. Desde la ventana **Orígenes de datos** , arrastre el nodo **Product** a la fila de la cuadrícula situada debajo de la fila que contiene los botones.
+5. Desde la ventana **Orígenes de datos**, arrastre el nodo **Product** a la fila de la cuadrícula situada debajo de la fila que contiene los botones.
 
      Visual Studio genera el código XAML que define un conjunto de controles que están enlazados a los datos de la tabla **Products**. También genera el código que carga los datos. Para obtener más información sobre el código XAML y el código generado, vea [enlazar controles WPF a datos en Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
 
 6. En el diseñador, haga clic en el cuadro de texto junto a la etiqueta **Product ID**.
 
-7. En la ventana **Propiedades** , active la casilla junto a la propiedad **IsReadOnly**.
+7. En la ventana **Propiedades**, active la casilla junto a la propiedad **IsReadOnly**.
 
 ## <a name="navigate-product-records"></a>Navegar por los registros de productos
 
@@ -260,7 +260,7 @@ Después de completar este tutorial, puede probar las siguientes tareas relacion
 
 - Aprenda cómo usar la ventana **Orígenes de datos** en Visual Studio para mostrar datos relacionados (es decir, datos en una relación primario-secundario) en controles WPF. Para obtener más información, vea [Tutorial: Mostrar datos relacionados en una aplicación de WPF](../data-tools/display-related-data-in-wpf-applications.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Enlace de controles de WPF a datos en Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Herramientas de conjunto de datos en Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)

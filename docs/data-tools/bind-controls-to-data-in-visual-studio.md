@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: be8b6623-86a6-493e-ab7a-050de4661fd6
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1b48c2e8b557a47c1ed795b6f9d3c3ced6247a43
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: a237d07af14cd6f31af300eff050c8952fd9840e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518627"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859351"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Enlazar controles a los datos en Visual Studio
 
@@ -30,7 +30,7 @@ En este tema se describen los orígenes de datos que puede utilizar para crear c
 
 ## <a name="data-sources"></a>Orígenes de datos
 
-En el contexto del enlace de datos, un origen de datos representa los datos en memoria que se pueden enlazar a la interfaz de usuario. En términos prácticos, un origen de datos puede ser una clase Entity Framework, un conjunto de datos, un punto de conexión de servicio encapsulado en un objeto proxy .NET, una clase LINQ to SQL o cualquier objeto o colección .NET. Algunos orígenes de datos permiten crear controles enlazados a datos arrastrando los elementos de la ventana **Orígenes de datos** , mientras que otros no lo permiten. En la tabla siguiente se muestran los orígenes de datos que se admiten.
+En el contexto del enlace de datos, un origen de datos representa los datos en memoria que se pueden enlazar a la interfaz de usuario. En términos prácticos, un origen de datos puede ser una clase Entity Framework, un conjunto de datos, un punto de conexión de servicio encapsulado en un objeto proxy .NET, una clase LINQ to SQL o cualquier objeto o colección .NET. Algunos orígenes de datos permiten crear controles enlazados a datos arrastrando los elementos de la ventana **Orígenes de datos**, mientras que otros no lo permiten. En la tabla siguiente se muestran los orígenes de datos que se admiten.
 
 | Origen de datos | Compatibilidad con arrastrar y colocar en el **Diseñador de Windows Forms** | Compatibilidad con arrastrar y colocar en **WPF Designer** | Compatibilidad con arrastrar y colocar en el **Diseñador de Silverlight** |
 | - | - | - | - |
@@ -51,7 +51,7 @@ Los orígenes de datos están disponible para su proyecto como elementos en la v
 
 ![Ventana de orígenes de datos](../data-tools/media/raddata-data-sources-window.png)
 
-Por cada tipo de datos que aparece en la ventana **Orígenes de datos** , se crea un control predeterminado al arrastrar el elemento hasta el diseñador. Antes de arrastrar un elemento desde la ventana **orígenes de datos** , puede cambiar el control que se crea. Para obtener más información, vea [establecer el control que se creará al arrastrar desde la ventana orígenes de datos](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+Por cada tipo de datos que aparece en la ventana **Orígenes de datos**, se crea un control predeterminado al arrastrar el elemento hasta el diseñador. Antes de arrastrar un elemento desde la ventana **orígenes de datos** , puede cambiar el control que se crea. Para obtener más información, vea [establecer el control que se creará al arrastrar desde la ventana orígenes de datos](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
 ## <a name="tasks-involved-in-binding-controls-to-data"></a>Tareas necesarias para enlazar controles a datos
 

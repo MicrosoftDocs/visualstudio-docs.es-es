@@ -12,15 +12,15 @@ helpviewer_keywords:
 - results window, code metrics
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d29109811c3dd5f354b510d046b33b0ba31d60e5
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: c02f5a3b5175be4517a51a6dc477d6e59b38a762
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436815"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859572"
 ---
 # <a name="use-the-code-metrics-results-window"></a>Usar la ventana Resultados de métricas de código
 
@@ -32,7 +32,7 @@ La ventana **resultados de métricas de código** se muestra automáticamente cu
 
 Puede mostrar la ventana Resultados de métricas de código mediante una de las siguientes secuencias de menús:
 
-- En el menú **analizar** , elija **Windows**  >  **resultados de métricas de código** de Windows.
+- En el menú **analizar** , elija   >  **resultados de métricas de código** de Windows.
 
 - En el menú **Ver** , elija **otros**  >  **resultados de métricas de código** de Windows.
 
@@ -52,9 +52,9 @@ El cuadro desplegable **filtro** contiene los nombres de las columnas de resulta
 
 1. En la lista **filtro** , seleccione el nombre de la columna.
 
-2. En **mín** , escriba el valor mínimo que se va a mostrar.
+2. En **mín**, escriba el valor mínimo que se va a mostrar.
 
-3. En **máx** , escriba el valor máximo que se va a mostrar.
+3. En **máx**, escriba el valor máximo que se va a mostrar.
 
 4. Haga clic en el botón **aplicar filtro** .
 
@@ -92,7 +92,7 @@ Para obtener más información sobre los elementos de trabajo de Azure Boards, v
 
 1. Haga clic con el botón secundario en el resultado.
 
-2. Elija **crear elemento de trabajo** y, a continuación, haga clic en el tipo de elemento de trabajo que desea crear ( **error** , **tarea** , etc.).
+2. Elija **crear elemento de trabajo** y, a continuación, haga clic en el tipo de elemento de trabajo que desea crear (**error**, **tarea**, etc.).
 
 3. Rellene todos los campos obligatorios para completar el formulario de elemento de trabajo.
 
@@ -108,7 +108,7 @@ Para obtener más información sobre los elementos de trabajo de Azure Boards, v
 
 4. En el menú **archivo** , haga clic en **guardar todo** para guardar el elemento de trabajo.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Valores de las métricas de código](../code-quality/code-metrics-values.md)
 - [Cómo: generar datos de métricas de código](../code-quality/how-to-generate-code-metrics-data.md)

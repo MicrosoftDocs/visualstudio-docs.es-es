@@ -10,15 +10,15 @@ helpviewer_keywords:
 - code analysis, rule sets
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 49d17e8321aa6567a6ae0936291a73d5cb854b5c
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 980c77067ac237dba13c8c888c358a0adeab6d1f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436893"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859663"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>Usar conjuntos de reglas para agrupar reglas de análisis de código
 
@@ -30,7 +30,7 @@ Los conjuntos de reglas están disponibles para el [análisis de código adminis
 
 ## <a name="rule-set-format"></a>Formato del conjunto de reglas
 
-Un conjunto de reglas se especifica en formato XML en un archivo *. ruleset* . Las reglas, que constan de un identificador y una *acción* , se agrupan por identificador y espacio de nombres del analizador en el archivo.
+Un conjunto de reglas se especifica en formato XML en un archivo *. ruleset* . Las reglas, que constan de un identificador y una *acción*, se agrupan por identificador y espacio de nombres del analizador en el archivo.
 
 El contenido de un archivo *. ruleset* tiene un aspecto similar al de este XML:
 
@@ -69,6 +69,6 @@ La propiedad **CodeAnalysisRuleSet** del archivo de proyecto de Visual Studio es
 </PropertyGroup>
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Referencia del conjunto de reglas Análisis de código](../code-quality/rule-set-reference.md)

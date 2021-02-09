@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 9b02f934-2db6-41ec-aaff-9c31ceec2f04
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 913860538fe7f9da1514d0e51d23bb3ea48c3b66
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: d2908f7ec93d8704b52798121bd0076a7f5fddc1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434693"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859923"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Cómo: sincronizar conjuntos de reglas del proyecto de código con una directiva de inserción en el repositorio del proyecto DevOps de Azure
 
@@ -33,7 +33,7 @@ Puede sincronizar la configuración de análisis de código para los proyectos d
 
 ## <a name="to-specify-a-microsoft-standard-rule-set"></a>Para especificar un conjunto de reglas estándar de Microsoft
 
-1. En **Explorador de soluciones** , haga clic con el botón secundario en el proyecto de código y, a continuación, haga clic en **propiedades**.
+1. En **Explorador de soluciones**, haga clic con el botón secundario en el proyecto de código y, a continuación, haga clic en **propiedades**.
 
 2. Haga clic en **Análisis de código**.
 
@@ -53,7 +53,7 @@ Puede sincronizar la configuración de análisis de código para los proyectos d
 
 1. Si es necesario, realice una operación get en el archivo de conjunto de reglas que especifica la Directiva de inserción en el repositorio.
 
-2. En **Explorador de soluciones** , haga clic con el botón secundario en el proyecto de código y, a continuación, haga clic en **propiedades**.
+2. En **Explorador de soluciones**, haga clic con el botón secundario en el proyecto de código y, a continuación, haga clic en **propiedades**.
 
 3. Haga clic en **Análisis de código**.
 

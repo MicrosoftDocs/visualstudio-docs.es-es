@@ -9,15 +9,15 @@ helpviewer_keywords:
 - managed code, analyzing
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7e862b176ab396999d3504e19c4de9a5c407b266
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: b9895dc8926f1bb5c7d33e792168ca46297c8196
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349027"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859611"
 ---
 # <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>Tutorial: usar el análisis de código estático para buscar defectos de código
 
@@ -65,7 +65,7 @@ Este artículo le guiará a través del proceso de uso del análisis heredado pa
 
 4. Asegúrese de que está seleccionada la opción **Habilitar análisis de código al compilar** .
 
-5. En la lista desplegable **ejecutar este conjunto de reglas** , seleccione **Microsoft All Rules (todas las reglas** ).
+5. En la lista desplegable **ejecutar este conjunto de reglas** , seleccione **Microsoft All Rules (todas las reglas**).
 
 ::: moniker-end
 
@@ -73,7 +73,7 @@ Este artículo le guiará a través del proceso de uso del análisis heredado pa
 
 4. Asegúrese de que la opción **ejecutar al compilar** está seleccionada en la sección **analizadores binarios** .
 
-5. En la lista desplegable **reglas activas** , seleccione **Microsoft All Rules (todas las reglas** ).
+5. En la lista desplegable **reglas activas** , seleccione **Microsoft All Rules (todas las reglas**).
 
 ::: moniker-end
 
@@ -89,7 +89,7 @@ Este artículo le guiará a través del proceso de uso del análisis heredado pa
 
     Según el perfil de desarrollador que elija, puede que tenga que señalar a **otras ventanas** en el menú **Ver** y, a continuación, elegir **lista de errores**.
 
-1. En el **Explorador de soluciones** , elija **Mostrar todos los archivos**.
+1. En el **Explorador de soluciones**, elija **Mostrar todos los archivos**.
 
 1. Expanda el nodo propiedades y, a continuación, abra el archivo *AssemblyInfo.CS* .
 
@@ -129,7 +129,7 @@ Este artículo le guiará a través del proceso de uso del análisis heredado pa
 
       Aparecerá el cuadro de diálogo **Crear clave de nombre seguro**.
 
-   1. En **nombre de archivo de clave** , escriba **TestKey**.
+   1. En **nombre de archivo de clave**, escriba **TestKey**.
 
    1. Escriba una contraseña y, después, elija **Aceptar**.
 

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 20597ff8-0c98-43ec-8fb1-05376804ba48
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8a81ecb35c37dbef6d48227c27ed877c64e6e26f
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 6b4d1782a82a1eb2147d540b1799f5152c4f2308
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434472"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858441"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Establecer el control que se creará al arrastrar desde la ventana Orígenes de datos
 
@@ -28,7 +28,7 @@ Puede crear controles enlazados a datos si arrastra los elementos desde la venta
 
 ## <a name="set-the-controls-to-be-created-for-data-tables-or-objects"></a>Establecimiento de los controles que se van a crear para tablas de datos u objetos
 
-Antes de arrastrar los elementos que representan objetos o tablas de datos a la ventana **Orígenes de datos** , puede decidir mostrar todos los datos en un control o mostrar cada columna o propiedad en un control independiente.
+Antes de arrastrar los elementos que representan objetos o tablas de datos a la ventana **Orígenes de datos**, puede decidir mostrar todos los datos en un control o mostrar cada columna o propiedad en un control independiente.
 
 En este contexto, el término *objeto* hace referencia a un objeto comercial personalizado, una entidad (en un Entity Data Model) o un objeto devuelto por un servicio.
 
@@ -36,7 +36,7 @@ En este contexto, el término *objeto* hace referencia a un objeto comercial per
 
 1. Asegúrese de que **WPF** Designer o el diseñador de **Windows Forms** está abierto.
 
-2. En la ventana **Orígenes de datos** , seleccione el elemento que representa el objeto o la tabla de datos que desea establecer.
+2. En la ventana **Orígenes de datos**, seleccione el elemento que representa el objeto o la tabla de datos que desea establecer.
 
    > [!TIP]
    > Si la ventana **orígenes de datos** no está abierta, puede abrirla seleccionando **Ver**  >  **otros**  >  **orígenes de datos** de Windows.
@@ -53,13 +53,13 @@ En este contexto, el término *objeto* hace referencia a un objeto comercial per
 
 ## <a name="set-the-controls-to-be-created-for-data-columns-or-properties"></a>Establecer los controles que se van a crear para las columnas de datos o propiedades
 
-Antes de arrastrar al diseñador un elemento que representa una columna o la propiedad de un objeto en la ventana **Orígenes de datos** , puede establecer el control que se va a crear.
+Antes de arrastrar al diseñador un elemento que representa una columna o la propiedad de un objeto en la ventana **Orígenes de datos**, puede establecer el control que se va a crear.
 
 ### <a name="to-set-the-controls-to-be-created-for-columns-or-properties"></a>Para establecer los controles que se van a crear para columnas o propiedades
 
 1. Asegúrese de que **WPF** Designer o el diseñador de **Windows Forms** está abierto.
 
-2. En la ventana **Orígenes de datos** , expanda la tabla o el objeto deseado para mostrar sus columnas o propiedades.
+2. En la ventana **Orígenes de datos**, expanda la tabla o el objeto deseado para mostrar sus columnas o propiedades.
 
 3. Seleccione cada columna o propiedad para la que desea establecer el control que se va a crear.
 
@@ -71,6 +71,6 @@ Antes de arrastrar al diseñador un elemento que representa una columna o la pro
 
      Si no desea crear un control para la columna o propiedad, seleccione **ninguno** en el menú desplegable. Esto es útil si desea arrastrar la tabla o el objeto principal al diseñador, pero sin incluir la columna o propiedad concreta.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Enlazar controles a los datos en Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
