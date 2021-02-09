@@ -5,16 +5,16 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: cb5065ed50afe3b9ee31b361be88c1b5c18138af
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: 394fe7b1a368d3d4c6a47fd4350ac6644112aa57
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100792"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924117"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Tutorial: Depurar una plantilla de texto que tiene acceso a un modelo
 Al modificar o agregar plantillas de texto en una solución de lenguaje específico de dominio, es posible que se produzcan errores cuando el motor transforme la plantilla en código fuente o cuando compile el código generado. En el siguiente tutorial se muestran algunas de las cosas que puede hacer para depurar una plantilla de texto.
@@ -22,7 +22,7 @@ Al modificar o agregar plantillas de texto en una solución de lenguaje específ
 > [!NOTE]
 > Para obtener más información sobre las plantillas de texto en general, vea [generación de código y plantillas de texto T4](../modeling/code-generation-and-t4-text-templates.md). Para obtener más información sobre la depuración de plantillas de texto, vea [Tutorial: depurar una plantilla de texto](debugging-a-t4-text-template.md).
 
-## <a name="creating-a-domain-specific-language-solution"></a>Crear una solución de lenguaje específico de dominio
+## <a name="creating-a-domain-specific-language-solution"></a>Crear una solución de lenguaje Domain-Specific
  En este procedimiento, creará una solución de lenguaje específico de dominio que tiene las siguientes características:
 
 - Nombre: DebuggingTestLanguage
@@ -33,14 +33,14 @@ Al modificar o agregar plantillas de texto en una solución de lenguaje específ
 
 - Nombre de la compañía: fabrikam
 
-  Para obtener más información sobre cómo crear una solución de lenguaje específico de dominio, consulte [Cómo: crear una solución de lenguaje específico de dominio](../modeling/how-to-create-a-domain-specific-language-solution.md).
+  Para obtener más información sobre cómo crear una solución de lenguaje específico de dominio, consulte [Cómo: crear una solución de lenguaje Domain-Specific](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
 ## <a name="creating-a-text-template"></a>Crear una plantilla de texto
  Agregue una plantilla de texto a la solución.
 
 #### <a name="to-create-a-text-template"></a>Para crear una plantilla de texto
 
-1. Compile la solución y comience a ejecutarla en el depurador. (En el menú **compilar** , haga clic en **recompilar solución**y, a continuación, en el menú **depurar** , haga clic en **iniciar depuración**). Una nueva instancia de Visual Studio abre el proyecto de depuración.
+1. Compile la solución y comience a ejecutarla en el depurador. (En el menú **compilar** , haga clic en **recompilar solución** y, a continuación, en el menú **depurar** , haga clic en **iniciar depuración**). Una nueva instancia de Visual Studio abre el proyecto de depuración.
 
 2. Agregue un archivo de texto denominado `DebugTest.tt` al proyecto de depuración.
 

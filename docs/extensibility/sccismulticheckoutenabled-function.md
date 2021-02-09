@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6721639d-e475-4766-81b5-ee40a280fc70
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e91eb566a820f4fe11ceb629643e1815dcb87a8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 009bc5ba0bb307d0aaee78076266260aa5bb20ef
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700582"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924815"
 ---
 # <a name="sccismulticheckoutenabled-function"></a>SccIsMultiCheckoutEnabled (Función)
 Esta función comprueba si el complemento de control de código fuente permite varias desprotecciones en un archivo.
@@ -48,7 +48,7 @@ enuncia Especifica si están habilitadas varias desprotecciones para este proyec
 |SCC_OK|La comprobación se realizó correctamente.|
 |SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Error no específico.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  El IDE realiza dos comprobaciones para determinar si más de un usuario puede desproteger los archivos simultáneamente. En primer lugar, el sistema de control de código fuente debe admitir varias desprotecciones. El complemento de control de código fuente puede especificar esta capacidad durante la inicialización especificando `SCC_CAP_MULTICHECKOUT` . Después, como segunda comprobación, el IDE llama a esta función para determinar si el proyecto actual admite o no varias desprotecciones. Si se admiten varias desprotecciones para el proyecto seleccionado, el complemento devuelve un código de éxito y establece `pbMultiCheckout` en un valor distinto de cero ( `TRUE` ) o `FALSE` .
 
 ## <a name="see-also"></a>Vea también

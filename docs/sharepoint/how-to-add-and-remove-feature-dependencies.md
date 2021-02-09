@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, features
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5011db32123e77e9bf60c99459125302b2bf8264
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: ebec7f6b1f6d777ce7b3b914ac5c1d5629190fcc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915367"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923587"
 ---
 # <a name="how-to-add-and-remove-feature-dependencies"></a>Cómo: agregar y quitar dependencias de características
   La característica de SharePoint puede depender de otras características para la funcionalidad o los datos. En estos casos, puede marcar estas otras características como dependencias de la característica. De este modo, el servidor de SharePoint garantiza que las características dependientes se activan antes de que se active la característica.
@@ -66,7 +66,7 @@ ms.locfileid: "96915367"
 
 1. En el diseñador de características, expanda el nodo **dependencias de activación de características** , elija el nombre de la característica que desea quitar y, a continuación, elija el botón **quitar** .
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Crear características de SharePoint](../sharepoint/creating-sharepoint-features.md)
 - [Cómo: personalizar una característica de SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)
 - [Cómo: agregar y quitar elementos de las características de SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - mapping relationships in code
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d935ee5c4341a2d625c6f85226cc649d696d6e6e
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: a39be2e465ebe8b04501f319e89d6f8bc926b4c2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729397"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924463"
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>Usar mapas de código para depurar aplicaciones
 
@@ -142,7 +142,7 @@ Para obtener detalles de los comandos y las acciones que se pueden usar al traba
 
  Ahora ya ha terminado con la investigación. Encontró y corrigió correctamente el problema asignando el código. También tiene un mapa que le ayuda a navegar por el código y a recordar lo que ha aprendido, y le muestra los pasos llevados a cabo para corregir el problema.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Asignar métodos en la pila de llamadas durante la depuración](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
 - [Visualizar el código](../modeling/visualize-code.md)

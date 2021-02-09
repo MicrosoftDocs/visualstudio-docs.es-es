@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, programming
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 31b97b113b763a8f294386d4fa5fe66233a3f980
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 3363857d9a953b61e18eb4b0cb891b20dbed1eb5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360460"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923964"
 ---
 # <a name="write-code-to-customize-a-domain-specific-language"></a>Escribir código para personalizar un lenguaje específico de dominio
 
@@ -74,6 +74,6 @@ mantener los objetos en el almacén (en lugar de los objetos normales) proporcio
 
 - **Serialización**. El almacén proporciona un método estándar para serializar los objetos que contiene en un archivo. Puede personalizar las reglas para la serialización y deserialización. Para obtener más información, vea [personalizar File Storage y serialización XML](../modeling/customizing-file-storage-and-xml-serialization.md).
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [Personalizar y ampliar lenguajes específicos de dominio](../modeling/customizing-and-extending-a-domain-specific-language.md)

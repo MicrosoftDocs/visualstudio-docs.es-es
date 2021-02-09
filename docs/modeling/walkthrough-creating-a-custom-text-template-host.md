@@ -9,18 +9,18 @@ helpviewer_keywords:
 - text templates, custom host walkthrough
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 1cc1681d7c761aca123217cbf28cc33b0dbb584c
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 3e24c46e576ab6125c3152989c568a704a33b2d2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361058"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924147"
 ---
 # <a name="walkthrough-create-a-custom-text-template-host"></a>Tutorial: Crear un host de plantillas de texto personalizadas
 
@@ -823,6 +823,6 @@ Para probar el host personalizado, escriba una plantilla de texto, ejecute el ho
 
 En este tutorial, creó un host de transformación de plantillas de texto que admite la funcionalidad de transformación básica. Puede expandir el host para admitir plantillas de texto que llamen a procesadores de directivas personalizados o generados. Para obtener más información, vea [Tutorial: conectar un host a un procesador de directivas generado](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md).
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))

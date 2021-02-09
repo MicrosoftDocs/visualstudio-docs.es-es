@@ -9,15 +9,15 @@ helpviewer_keywords:
 - walkthroughs [text templates]
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a39630f8a12ad2c1d7d2bc89f6830fc694e89087
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 7e6b824d53c37ef922b8c9580c87a478aef93586
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360993"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924064"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>Tutorial: Generar código mediante plantillas de texto
 
@@ -430,7 +430,7 @@ En este tutorial, el código de programa se genera realmente desde una instancia
 
 Si ve errores de compilación o de transformación de la plantilla en la **Lista de errores**, o si el archivo de salida no se genera correctamente, puede solucionar los problemas de la plantilla de texto con las técnicas descritas en [Generar archivos con la utilidad TextTransform](../modeling/generating-files-with-the-texttransform-utility.md).
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [Generación de código en tiempo de diseño usando las plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 - [Escribir una plantilla de texto T4](../modeling/writing-a-t4-text-template.md)

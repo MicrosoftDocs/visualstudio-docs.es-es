@@ -10,15 +10,15 @@ helpviewer_keywords:
 - code, exploring
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b522ae21de3d0ea115bc83446f0585e1dc9ab1e7
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: a261589af027c76708a70631426d8033eb2ada63
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362514"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924228"
 ---
 # <a name="visualize-code"></a>Visualizar el código
 
@@ -42,7 +42,7 @@ Para saber qué ediciones de Visual Studio admiten cada característica, vea [C
 |**Entender las estructuras de clases:**<br /><br /> Visualice la estructura de las clases de un proyecto mediante la creación de diagramas de clases desde el código.|[Cómo: Agregar diagramas de clases a proyectos (Diseñador de clases)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)|
 |**Describir el diseño de alto nivel del sistema y validar el código con este diseño:**<br /><br /> Describa el diseño del sistema de alto nivel y sus dependencias preparadas mediante la creación de diagramas de dependencia. Valide el código con este diseño para asegurarse de que las dependencias del código siguen siendo coherentes con el diseño.|- [Creación de diagramas de dependencia a partir del código](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramas de dependencia: referencia](../modeling/layer-diagrams-reference.md)<br />- [Diagramas de dependencia: directrices](../modeling/layer-diagrams-guidelines.md)<br />- [Validación de código con diagramas de dependencia](../modeling/validate-code-with-layer-diagrams.md)|
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [Escenario: Cambiar el diseño usando modelado y visualización](../modeling/scenario-change-your-design-using-visualization-and-modeling.md)
 - [Analizar y modelar la arquitectura](../modeling/analyze-and-model-your-architecture.md)

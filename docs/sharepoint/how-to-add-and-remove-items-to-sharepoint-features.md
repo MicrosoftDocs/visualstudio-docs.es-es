@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, features
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: dacfbf715ff37238af5332976313c3b592d21be6
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: f18c46bb7bab2acd1d97e3154b53ab8ca52520e3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914925"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923469"
 ---
 # <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Cómo: agregar y quitar elementos de las características de SharePoint
   Al crear una solución de SharePoint, Visual Studio agrega los elementos de proyecto de SharePoint predeterminados a la característica. Antes de la implementación, puede Agregar y quitar elementos de proyecto de SharePoint para modificar la característica de SharePoint.
@@ -54,6 +54,6 @@ ms.locfileid: "96914925"
 
      Los elementos de proyecto de SharePoint aparecen en los **elementos de la lista de soluciones** .
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Crear características de SharePoint](../sharepoint/creating-sharepoint-features.md)
 - [Empaquetado e implementación de soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

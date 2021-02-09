@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, adding items
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4471f6a593e9349f32e4837da15df2e3e952d227
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 4a32d38b20b93cf215cb53c2c2d2b8767418de24
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850733"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923491"
 ---
 # <a name="how-to-add-items-to-a-sharepoint-project"></a>Cómo: agregar elementos a un proyecto de SharePoint
   Las soluciones de SharePoint contienen uno o varios proyectos, cada uno de los cuales contiene varios elementos de proyecto de SharePoint. Después de abrir o crear una solución de SharePoint, puede agregar elementos nuevos o existentes a estos proyectos. Por ejemplo, los nuevos proyectos de flujo de trabajo tienen un formulario predeterminado denominado Default. aspx, pero puede reemplazar ese formulario por un formulario nuevo o distinto, o agregar otro formulario ASPX.
@@ -48,6 +48,6 @@ ms.locfileid: "94850733"
 
 4. Vaya a la carpeta que contiene el elemento que desea agregar, elíjalo y, a continuación, elija el botón **Agregar** .
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Plantillas de proyecto y de elemento de proyecto de SharePoint](../sharepoint/sharepoint-project-and-project-item-templates.md)
 - [Desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md)

@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending project items
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f5e6b32c418fbbdfbced5e6a6d698ad02358393d
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: eba366ecf777697a0c63999d8addf099fecca976
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94849797"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923603"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension"></a>Cómo: agregar un elemento de menú contextual a una extensión de elemento de proyecto de SharePoint
   Puede Agregar un elemento de menú contextual a un elemento de proyecto de SharePoint existente mediante una extensión de elemento de proyecto. El elemento de menú aparece cuando un usuario hace clic con el botón secundario en el elemento de proyecto en **Explorador de soluciones**.
@@ -55,7 +55,7 @@ ms.locfileid: "94849797"
 ## <a name="deploy-the-extension"></a>Implementar la extensión
  Para implementar la extensión, cree un [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] paquete de extensión (VSIX) para el ensamblado y cualquier otro archivo que desee distribuir con la extensión. Para obtener más información, vea [deploy Extensions for the SharePoint Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Cómo: crear una extensión de elemento de proyecto de SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)
 - [Cómo: agregar una propiedad a una extensión de elemento de proyecto de SharePoint](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)
 - [Extender elementos de proyecto de SharePoint](../sharepoint/extending-sharepoint-project-items.md)

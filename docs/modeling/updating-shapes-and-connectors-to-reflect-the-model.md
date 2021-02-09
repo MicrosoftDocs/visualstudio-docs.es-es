@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e3d16cbc35c468c0101db479799215bcccf64ef6
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 57f3785fe232b20123475bd85be2be7148e5b87e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362605"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924345"
 ---
 # <a name="update-shapes-and-connectors-to-reflect-the-model"></a>Actualizar formas y conectores para reflejar el modelo
 

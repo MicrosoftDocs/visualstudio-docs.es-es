@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint Connections [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b898dd0f9327c7589d0dac3436aec0299009221d
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 57ff132274ba7f720a845078b0424fe235d9c31e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850720"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923453"
 ---
 # <a name="how-to-add-or-remove-sharepoint-connections"></a>Cómo: para agregar o eliminar conexiones de SharePoint
   Explorador de servidores le permite examinar los sitios de SharePoint, así como las conexiones de datos. Sin embargo, antes de poder examinar el contenido de un sitio de SharePoint, debe agregarlo al nodo **conexiones de SharePoint** .
@@ -45,5 +45,5 @@ ms.locfileid: "94850720"
     > [!NOTE]
     > Este paso no elimina el sitio subyacente; solo elimina la conexión de **Explorador de servidores**.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Examen de las conexiones de SharePoint mediante el Explorador de servidores](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)

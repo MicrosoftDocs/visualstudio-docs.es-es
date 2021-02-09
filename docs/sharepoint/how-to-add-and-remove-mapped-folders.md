@@ -14,15 +14,15 @@ helpviewer_keywords:
 - mapped folders [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e4d29be9b008bfaa9ad6694725b03e25bf6847df
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: e6771482925a935d1b6424412d4176db5e9ad6c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914814"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923483"
 ---
 # <a name="how-to-add-and-remove-mapped-folders"></a>Cómo: agregar y quitar carpetas asignadas
   Algunas carpetas de uso común en SharePoint, como imágenes y diseños, se incrustan profundamente en la jerarquía de archivos. Puede asignar estas carpetas a un proyecto de SharePoint para tener acceso a ellas más fácilmente. Las carpetas asignadas son carpetas del proyecto de SharePoint que corresponden a la ubicación física de los archivos en la instalación de SharePoint Server.

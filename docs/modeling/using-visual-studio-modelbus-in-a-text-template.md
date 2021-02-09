@@ -5,15 +5,15 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1025e7d35c20dc18c87942e23cf71b598d85637a
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 0f65ece27122949fec006d73858c8c89483441f1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361370"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924372"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Usar ModelBus de Visual Studio en plantillas de texto
 
@@ -42,7 +42,7 @@ Para resolver una referencia de ModelBus en una plantilla de texto, el DSL de de
 
     3. En el cuadro de diálogo, seleccione **deseo exponer este DSL a ModelBus**. Puede seleccionar ambas opciones si quiere que este DSL exponga sus modelos y consuma referencias a otros DSL.
 
-    4. Haga clic en **Aceptar**. Se agrega un nuevo proyecto "ModelBusAdapter" a la solución de DSL.
+    4. Haga clic en **OK**. Se agrega un nuevo proyecto "ModelBusAdapter" a la solución de DSL.
 
     5. Haga clic en **transformar todas las plantillas**.
 
@@ -397,7 +397,7 @@ Ahora tiene un DSL al que se puede tener acceso a través de plantillas de texto
 
     Si ha establecido el MBR en ese elemento, se abre el modelo al que se hace referencia y se selecciona el elemento al que se hace referencia.
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [Integrar modelos mediante Modelbus de Visual Studio](../modeling/integrating-models-by-using-visual-studio-modelbus.md)
 - [Generación de código y plantillas de texto T4](../modeling/code-generation-and-t4-text-templates.md)

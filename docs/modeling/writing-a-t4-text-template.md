@@ -10,15 +10,15 @@ helpviewer_keywords:
 - text templates, functions that generate text
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 086e7ecf568d043142cdc80f020897ed1793b86c
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: eb988854cb1bc049e024bf204553dd715e652a4e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361227"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923984"
 ---
 # <a name="writing-a-t4-text-template"></a>Escribir una plantilla de texto T4
 Una plantilla de texto contiene el texto que se generará a partir de ella. Por ejemplo, una plantilla que crea una página web contendrá " \<html> ..." y todas las demás partes estándar de una página HTML. Inserted en la plantilla son *bloques de control*, que son fragmentos de código de programa. Los bloques de control proporcionan valores variables y permiten que partes del texto sean condiciones y se repitan.

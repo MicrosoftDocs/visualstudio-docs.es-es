@@ -18,15 +18,15 @@ helpviewer_keywords:
 - MSBuild, validating code
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bc8b36768cbac4249b964b167988119b5700d5c7
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: e330b95d2de6da53d9d1bd0f3d553ab8319bdd04
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362553"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924323"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Validación código con diagramas de dependencia
 
@@ -46,7 +46,7 @@ Para asegurarse de que el código no entra en conflicto con su diseño, valide e
 
 **Requisitos**
 
-- Visual Studio
+- Programa para la mejora
 
   Para crear un diagrama de dependencia para un proyecto de .NET Core, debe tener Visual Studio 2019 versión 16,2 o posterior.
 
@@ -202,7 +202,7 @@ Para administrar los errores en la ventana de Lista de errores, vea [resolver er
 
 En la siguiente tabla se describen problemas de validación de capas y su resolución. Estos problemas difieren de los errores que son resultado de conflictos entre el código y el diseño. Para obtener más información sobre estos errores, vea [solucionar problemas de validación de capas](#troubleshoot-layer-validation-issues).
 
-|**Problema**|**Causa posible**|**Solución**|
+|**Problema**|**Causa posible**|**Resolución**|
 |-|-|-|
 |Los errores de validación no se producen como se espera.|La validación no funciona en diagramas de dependencia que se copian desde otros diagramas de dependencia en Explorador de soluciones y que se encuentran en el mismo proyecto de modelado. los diagramas de dependencia que se copian de esta manera contienen las mismas referencias que el diagrama de dependencias original.|Agregue un nuevo diagrama de dependencia al proyecto de modelado.<br /><br /> Copie los elementos del diagrama de dependencias de origen en el nuevo diagrama.|
 
@@ -236,7 +236,7 @@ En la sección siguiente se describe la sintaxis que se usa en estos errores, se
 | DV3001: **falta un vínculo** | La capa '*LayerName*' está vinculada a '*artefacto*' que no se encuentra. ¿Falta una referencia de ensamblado? |
 | DV9001: el **análisis arquitectónico encontró errores internos** | Puede que los resultados no estén completos. Vea el registro detallado de eventos de compilación o la ventana de salida para obtener más información. |
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [Validación de dependencias dinámicas en Visual Studio](https://devblogs.microsoft.com/devops/live-dependency-validation-in-visual-studio-2017/)
 - [Validar el sistema durante el desarrollo](../modeling/validate-your-system-during-development.md)

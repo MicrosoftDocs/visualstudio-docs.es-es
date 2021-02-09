@@ -8,15 +8,15 @@ helpviewer_keywords:
 - text templates, escape sequences
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b007a9b5ccf41a27cda7d9833064eb60394c4dc
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 126fe3f4e42c9c6cf0b75bf740e1e7e2c4b269ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361331"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924335"
 ---
 # <a name="use-escape-sequences-in-text-templates"></a>Usar secuencias de escape en las plantillas de texto
 
@@ -38,6 +38,6 @@ Si un bloque de texto incluye cadenas usadas para escapar etiquetas de plantilla
 
 - Si \\ aparece un carácter de escape () en cualquier otra secuencia distinta de la que escapa a un carácter de control o a una comilla (solo en C#), el carácter se generará directamente.
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [Cómo: Generar plantillas desde otras plantillas mediante secuencias de escape](../modeling/how-to-generate-templates-from-templates-by-using-escape-sequences.md)

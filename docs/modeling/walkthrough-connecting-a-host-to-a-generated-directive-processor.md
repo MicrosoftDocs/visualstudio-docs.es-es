@@ -9,18 +9,18 @@ helpviewer_keywords:
 - text templates, custom directive hosts
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: a98e432c7eb9508d32f52e51acc1447035b9058b
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: a815718f099b024708b86658e10fc0e85c087b4c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362501"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924130"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>Tutorial: Conectar un host a un procesador de directivas generadas
 
@@ -45,7 +45,7 @@ Para definir un DSL, debe tener instalados los siguientes componentes:
 
 | Componente | Vínculo |
 |-|-|
-| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](https://visualstudio.microsoft.com/) |
+| Programa para la mejora | [http://go.microsoft.com/fwlink/?LinkId=185579](https://visualstudio.microsoft.com/) |
 | [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](/azure/devops/integrate/index) |
 | SDK de Visual Studio de visualización y modelado | |
 
@@ -74,7 +74,7 @@ En este tutorial, utilizará el asistente del diseñador de lenguaje Domain-Spec
    > [!IMPORTANT]
    > Este paso genera el procesador de directivas y agrega la clave para él en el registro.
 
-3. En el menú **Depurar** , haga clic en **Iniciar depuración**.
+3. En el menú **Depurar**, haga clic en **Iniciar depuración**.
 
     Se abre una segunda instancia de Visual Studio.
 
@@ -362,6 +362,6 @@ Para probar el host de plantilla de texto personalizado, primero debe escribir u
     Linked from: ExampleElement1
     ```
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [Tutorial: Crear un host de plantillas de texto personalizadas](../modeling/walkthrough-creating-a-custom-text-template-host.md)
