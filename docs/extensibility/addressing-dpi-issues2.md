@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 455f144a95a41ae482c1f240e1d2f87b888763a5
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 8151748b946d2c1b5ad21359569d6f5f856f9250
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598463"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876165"
 ---
 # <a name="address-dpi-issues"></a>Problemas de PPP de direcciones
 Un número cada vez mayor de dispositivos se envía con pantallas de "alta resolución". Estas pantallas suelen tener más de 200 píxeles por pulgada (PPP). Al trabajar con una aplicación en estos equipos, será necesario que el contenido se escale verticalmente para satisfacer las necesidades de visualización del contenido con una distancia de visualización normal para el dispositivo. A partir de 2014, el destino principal de las pantallas de alta densidad son los dispositivos informáticos móviles (tabletas, portátiles de concha y teléfonos).

@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 58e90012-f68b-4852-8ae9-58e361cbcc32
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ae6f4098edf246a4f84533b37e4f9a684d932456
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: fa16c38f7e2bad03578d51da6db829ae708c4e71
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350506"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876217"
 ---
 # <a name="troubleshoot-clickonce-deployments"></a>Solución de problemas de implementaciones de ClickOnce
 Este tema le ayuda a diagnosticar y resolver los problemas más comunes con las [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementaciones.

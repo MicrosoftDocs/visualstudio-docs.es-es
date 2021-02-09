@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: dd7dd89c-1043-46a1-a929-099cc039c344
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: af2f20e7d3abd79261dc18753a7eb940666fc186
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 287e6750ceaafc705c5d49bd5cd27201f16a692f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737767"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876100"
 ---
 # <a name="bperesi_fields"></a>BPERESI_FIELDS
 Especifica la información que se va a recuperar sobre una resolución errónea de un punto de interrupción.
@@ -69,7 +69,7 @@ Inicialice/use el `dwType` campo (tipo de punto de interrupción) de la `BP_ERRO
 `BPERESI_ALLFIELDS`\
 Inicializar o utilizar todos los campos de la `BP_ERROR_RESOLUTION_INFO` estructura.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Se pasa como un parámetro al método [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) para indicar qué campos de la estructura de [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) se van a inicializar.
 
 Estos valores también se usan para indicar qué campos de la `BP_ERROR_RESOLUTION_INFO` estructura se usan y son válidos cuando se devuelve esa estructura.

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e5523e45-d350-491e-a92c-fe0ca97d2052
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 91d9cac6b695ba2a0d34da776fa79ba62ba2e015
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b7283d8a2996d5ab4dfc52cde446170e7632c27c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734485"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876087"
 ---
 # <a name="idebugclassfieldenuminterfacesimplemented"></a>IDebugClassField::EnumInterfacesImplemented
 Crea un enumerador para las interfaces implementadas por esta clase.
@@ -28,7 +28,7 @@ Crea un enumerador para las interfaces implementadas por esta clase.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT EnumInterfacesImplemented( 
+HRESULT EnumInterfacesImplemented( 
    IEnumDebugFields** ppEnum
 );
 ```
@@ -46,7 +46,7 @@ enuncia Devuelve un objeto [IEnumDebugFields](../../../extensibility/debugger/re
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, Devuelve S_OK o devuelve S_FALSE si no hay interfaces implementadas en esta clase. De lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Cada elemento de la enumeración es un objeto [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) que describe una interfaz. Tenga en cuenta que el código no administrado no [!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)] usa las interfaces como una entidad discreta, por lo que este método siempre devuelve un valor null para el código no administrado [!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)] .
 
 ## <a name="see-also"></a>Vea también

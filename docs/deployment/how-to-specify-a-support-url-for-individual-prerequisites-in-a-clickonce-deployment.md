@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 590742c3-a286-4160-aa75-7a441bb2207b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: af912503ddc1e87f14756a1041e9fa4d8aac505b
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 585ea1a558b91ac733670ad94a9a3e0be33f1348
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350951"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876321"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Cómo: Especificar una dirección URL de soporte para requisitos previos individuales en una implementación de ClickOnce
 Una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación puede probar una serie de requisitos previos que deben estar disponibles en el equipo cliente para que la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación se ejecute. Estas dependencias incluyen la versión mínima necesaria del .NET Framework, la versión del sistema operativo y los ensamblados que deben preinstalarse en la caché de ensamblados global (GAC). [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]sin embargo, no puede instalar ninguno de estos requisitos previos. Si no se encuentra un requisito previo, simplemente detiene la instalación y muestra un cuadro de diálogo que explica por qué se produjo un error en la instalación.
@@ -86,6 +86,6 @@ Una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementa
 ## <a name="see-also"></a>Vea también
 - [Mage.exe (Herramienta de generación y edición de manifiestos)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
 - [Tutorial: Implementación manual de una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
-- [\<compatibleFrameworks> Element](../deployment/compatibleframeworks-element-clickonce-deployment.md)
+- [Elemento \<compatibleFrameworks>](../deployment/compatibleframeworks-element-clickonce-deployment.md)
 - [ClickOnce y Authenticode](../deployment/clickonce-and-authenticode.md)
 - [Requisitos previos para la implementación de aplicaciones](../deployment/application-deployment-prerequisites.md)

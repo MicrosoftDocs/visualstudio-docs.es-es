@@ -11,15 +11,15 @@ helpviewer_keywords:
 - FeatureProperties element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9ee2bddec02263a889fb1f69088a8a50b3d8b57d
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 8756feaf08de9b01904309177f5e19c122da714d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672605"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876724"
 ---
 # <a name="featureproperties-element"></a>FeatureProperties (elemento)
   Colección de valores de propiedad que se incluyen con una característica cuando se implementa en SharePoint. Una vez implementada una característica, puede tener acceso a los valores de propiedad en el código.
@@ -50,14 +50,14 @@ ms.locfileid: "94672605"
 |-------------|-----------------|
 |[ProjectItem](../sharepoint/projectitem-element.md)|Representa un elemento de proyecto de SharePoint. Este elemento es el elemento raíz necesario del `.spdata` archivo.|
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Notas
  Para obtener más información sobre las propiedades de características, vea [proporcionar información de empaquetado e implementación en los elementos de proyecto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).
 
 ## <a name="element-information"></a>Información de elemento
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|**Namespace**|http: \/ \/ schemas.Microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**Espacio de nombres**|http: \/ \/ schemas.Microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
 |**Nombre del esquema**|Esquema de elemento de proyecto de SharePoint|
 |**Archivo de validación**|ProjectItemModelSchema. xsd|
 |**Puede estar vacío**|No|

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 2cbd7ac8-c55a-43d8-a26d-713b3d790016
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2828a32ea837e95be438aafa6ec4b31293a43a7
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 77c7ae72f9c4c776dd8535e54112dc43833705cf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974067"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876113"
 ---
 # <a name="commandplacement-element"></a>Elemento CommandPlacement
 El elemento CommandPlacement permite incluir botones, grupos y menús en más de un grupo o menú. Al usar el elemento CommandPlacement, no es necesario volver a definir completamente estos elementos para modificar el aspecto de una interfaz de usuario.
@@ -49,7 +49,7 @@ El elemento CommandPlacement permite incluir botones, grupos y menús en más de
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|Primario|Necesario. Menú o grupo que hospeda el elemento que se va a colocar.|
+|Parent|Necesario. Menú o grupo que hospeda el elemento que se va a colocar.|
 
 ### <a name="parent-elements"></a>Elementos primarios
 

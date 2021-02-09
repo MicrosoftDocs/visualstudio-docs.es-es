@@ -12,15 +12,15 @@ helpviewer_keywords:
 - workflows [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 52939fe00dcbca1cfd633c81d4b0a00ea6b517b9
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: adf5de014c7921130bd6f3ecd3cf8c5bb5daa92a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915510"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876685"
 ---
 # <a name="form-support-in-workflows"></a>Compatibilidad con formularios en los flujos de trabajo
   En un flujo de trabajo se pueden usar cuatro tipos de formularios: Asociación, Inicio, tarea y modificación. Estos tipos de formulario se pueden basar en un formulario ASPX o en un formulario de InfoPath. El nivel de compatibilidad que [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] proporciona para un determinado formulario depende de varios factores, que se describen en las tablas siguientes. Para obtener más información sobre los tipos de formulario de flujo de trabajo, consulte [información general sobre formularios de flujo de trabajo](/previous-versions/office/developer/sharepoint-2010/ms457061(v=office.14)).
@@ -46,9 +46,9 @@ ms.locfileid: "96915510"
 |Asociación|-Se hace referencia al formulario en el archivo *Elements.xml* del flujo de trabajo.<br />-El archivo de *Elements.xml* del flujo de trabajo se refactoriza cuando se cambia el nombre del formulario o se elimina, o cuando cambia la ruta de implementación.|-El formulario se importa, pero no se hace referencia a él en el *Elements.xml* del flujo de trabajo.<br />-El archivo de *Elements.xml* del flujo de trabajo no se refactoriza.|
 |Iniciación|-El flujo de trabajo hace referencia al formulario en el archivo *Elements.xml* del flujo de trabajo.<br />-El archivo de *Elements.xml* del flujo de trabajo se refactoriza cuando se cambia el nombre del formulario o se elimina, o cuando cambia la ruta de implementación.|-El formulario se importa, pero no se hace referencia a él en el *Elements.xml* del flujo de trabajo.<br />-El archivo de *Elements.xml* del flujo de trabajo no se refactoriza. **Nota:**  Las reglas y propiedades deben agregarse y modificarse para que este escenario funcione.|
 |Tarea|-Se hace referencia al formulario en el archivo *Elements.xml* del flujo de trabajo.<br />-El archivo de *Elements.xml* del flujo de trabajo no se refactoriza.|-El formulario se importa, pero no se hace referencia a él en el *Elements.xml* del flujo de trabajo.<br />-El archivo de *Elements.xml* del flujo de trabajo no se refactoriza. **Nota:**  Las reglas y propiedades deben agregarse y modificarse para que este escenario funcione.|
-|Modificación|No es aplicable. Los formularios de modificación de ASPX no se pueden crear en SharePoint Designer.|No es aplicable. Los formularios de modificación de InfoPath no se pueden crear en SharePoint Designer, salvo el flujo de trabajo de SharePoint Server integrado, que no se incluye en el archivo. wsp cuando se exporta el flujo de trabajo.|
+|Modificación|No aplicable. Los formularios de modificación de ASPX no se pueden crear en SharePoint Designer.|No aplicable. Los formularios de modificación de InfoPath no se pueden crear en SharePoint Designer, salvo el flujo de trabajo de SharePoint Server integrado, que no se incluye en el archivo. wsp cuando se exporta el flujo de trabajo.|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Tutorial: Creación de un flujo de trabajo con formularios de asociación e iniciación](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)
-- [Creación de soluciones de flujo de trabajo de SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)
+- [Soluciones de flujo de trabajo de SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)
 - [Importación de elementos desde un sitio de SharePoint existente](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)

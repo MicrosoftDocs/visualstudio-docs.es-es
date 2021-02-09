@@ -14,15 +14,15 @@ helpviewer_keywords:
 - reusable workflows [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: aab3d3b73fac086c4ff5aee8b5319a76e9aaea15
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: a8fbf218f032c9d580c490f91f6169681dc93cef
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915523"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876711"
 ---
 # <a name="guidelines-for-importing-reusable-workflows"></a>Instrucciones para importar flujos de trabajo reutilizables
   Para importar flujos de trabajo reutilizables creados en SharePoint Designer, use la plantilla de proyecto importar flujo de trabajo de SharePoint 2010 reutilizable de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Esta plantilla importa un *flujo de trabajo* *declarativo* ( [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] solo) y lo convierte en un *flujo de trabajo de código*, que es un flujo de trabajo que se puede mejorar con o mediante [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] código. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Tutorial: importar un flujo de trabajo reutilizable de SharePoint Designer en Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md).
@@ -42,7 +42,7 @@ ms.locfileid: "96915523"
 
 - Dado que el flujo de trabajo es declarativo, no se le puede agregar código. Para convertir el flujo de trabajo en un flujo de trabajo de código, debe importarlo en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] mediante la plantilla de flujo de trabajo importar reutilizable de SharePoint 2010.
 
-- Aunque puede editar el archivo del diseñador de flujo de trabajo (. xoml) en Vista de diseño, se recomienda editarlo en la vista Código fuente, ya que el diseñador de flujo de trabajo muestra los errores falsos.
+- Aunque puede editar el archivo del diseñador de flujo de trabajo (. xoml) en vista Diseño, se recomienda editarlo en la vista Código fuente, ya que el diseñador de flujo de trabajo muestra los errores falsos.
 
 - La depuración en el flujo de trabajo no funciona para el contenido declarativo. No se alcanzan los puntos de interrupción establecidos en [!INCLUDE[wfd2](../sharepoint/includes/wfd2-md.md)] .
 
@@ -53,6 +53,6 @@ ms.locfileid: "96915523"
 
  Para importar el flujo de trabajo reutilizable globalmente sin modificarlo, use la plantilla importar paquete de solución de SharePoint 2010. Si usa este método, el flujo de trabajo no se convierte en un flujo de trabajo de código y sigue siendo un flujo de trabajo declarativo.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Importación de elementos desde un sitio de SharePoint existente](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
 - [Tutorial: Importación de un flujo de trabajo reutilizable de SharePoint Designer a Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)

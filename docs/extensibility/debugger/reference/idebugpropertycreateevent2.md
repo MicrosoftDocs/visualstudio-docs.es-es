@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 33b3082b-a42e-488a-a1e4-dadf506f922c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84d8fcb4375f29820b51752ac3fdebbd04f06f80
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 08ef46275d9c7365cfcc837b8e4dfc73f0b48b41
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720930"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876061"
 ---
 # <a name="idebugpropertycreateevent2"></a>IDebugPropertyCreateEvent2
 El motor DE depuración (DE) envía esta interfaz al administrador de depuración de la sesión (SDM) cuando crea una propiedad que está asociada a un documento específico.
@@ -41,7 +41,7 @@ IDebugPropertyCreateEvent2 : IUnknown
 |------------|-----------------|
 |[GetDebugProperty](../../../extensibility/debugger/reference/idebugpropertycreateevent2-getdebugproperty.md)|Obtiene la nueva propiedad.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Si una propiedad tiene un documento o un script específicos asociados, el DE puede enviar este evento al SDM para actualizar la ventana de documentos de **script** con el nombre del documento. El SDM llamará a [GetExtendedInfo](../../../extensibility/debugger/reference/idebugproperty2-getextendedinfo.md) con el argumento `guidDocument` para recuperar un objeto `VARIANT` que contiene un puntero [IUnknown](/cpp/atl/iunknown) . El SDM llamará a [QueryInterface](/cpp/atl/queryinterface) en este puntero para recuperar la interfaz [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) que se usa para actualizar la ventana de **documentos de script** .
 
 ## <a name="requirements"></a>Requisitos

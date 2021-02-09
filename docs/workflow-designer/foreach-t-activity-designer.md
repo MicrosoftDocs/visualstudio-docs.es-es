@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 67097b3a-fcf5-4a72-beb1-2c7784151a86
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fd81377ca24dfbeaf4a25f2af00fb69f4821d73
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: d4c594e613d1160794e8310695d61bcc97902caa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437988"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876464"
 ---
 # <a name="foreachlttgt-activity-designer"></a>&lt;Diseñador de &gt; actividades foreach T
 
@@ -29,13 +29,13 @@ En la tabla siguiente se muestran las actividades <xref:System.Activities.Statem
 
 |Nombre de propiedad|Obligatorio|Uso|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|Falso|Nombre descriptivo de la actividad <xref:System.Activities.Statements.ForEach%601>. El valor predeterminado es ForEach<Int32 \> . Pese a que el valor <xref:System.Activities.Activity.DisplayName%2A> no es obligatorio, se recomienda usar uno.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Nombre descriptivo de la actividad <xref:System.Activities.Statements.ForEach%601>. El valor predeterminado es ForEach<Int32 \> . Pese a que el valor <xref:System.Activities.Activity.DisplayName%2A> no es obligatorio, se recomienda usar uno.|
 |<xref:System.Activities.Statements.ForEach%601.Values%2A>|True|La colección de elementos en la que se va a iterar. Para establecer <xref:System.Activities.Statements.ForEach%601.Values%2A> , escriba una expresión de Visual Basic en el cuadro **valores** del diseñador de actividades **foreach \><T** o en la cuadrícula de propiedades.|
 |*TypeArgument*|True|Tipo de los elementos de la <xref:System.Activities.Statements.ForEach%601.Values%2A> colección especificada por el parámetro genérico *T*. De forma predeterminada, *TypeArgument* se establece en **Int32**. Para cambiar el tipo, cambie el valor del cuadro combinado *TypeArgument* en la cuadrícula de propiedades.|
 
 De forma predeterminada, el iterador del bucle se denomina **Item**. Puede cambiar el nombre de la variable de iterador en el diseñador de actividades <xref:System.Activities.Statements.ForEach%601>. El iterador del bucle se puede utilizar en expresiones en los elementos secundarios de la actividad <xref:System.Activities.Statements.ForEach%601>.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [ParallelForEach\<T>](../workflow-designer/parallelforeach-t-activity-designer.md)
 - [Flujo de control](../workflow-designer/control-flow-activity-designers.md)

@@ -7,23 +7,23 @@ ms.topic: conceptual
 ms.assetid: 29a37182-2a2c-47e4-a4a9-2d5412738fed
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: 91d1df06d991669b023ede60b8b384ea75af651a
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: e4ba5678d91779f0955147dbc87fd3b57cbe387c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796724"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876411"
 ---
 # <a name="debug-xaml-in-blend"></a>Depurar XAML en Blend
 
-Puede usar las herramientas de Blend para Visual Studio para depurar el XAML en la aplicación. Al compilar un proyecto, los errores se muestran en el panel **Resultados** . Haz doble clic en un error para buscar el marcado relacionado con el error. Si necesita más espacio para trabajar, puede ocultar el panel **resultados** presionando **F12** .
+Puede usar las herramientas de Blend para Visual Studio para depurar el XAML en la aplicación. Al compilar un proyecto, los errores se muestran en el panel **Resultados**. Haz doble clic en un error para buscar el marcado relacionado con el error. Si necesita más espacio para trabajar, puede ocultar el panel **resultados** presionando **F12**.
 
 ## <a name="syntax-errors"></a>Errores de sintaxis
 
-Los errores de sintaxis se producen cuando el código XAML o los archivos de código subyacente no cumplen las reglas de formato del lenguaje. La descripción del error puede ayudarte a solucionarlo. La lista especifica también el nombre del archivo y el número de línea en que se produce el error. Los errores de XAML se muestran en la pestaña **Marcado** en el panel **Resultados** .
+Los errores de sintaxis se producen cuando el código XAML o los archivos de código subyacente no cumplen las reglas de formato del lenguaje. La descripción del error puede ayudarte a solucionarlo. La lista especifica también el nombre del archivo y el número de línea en que se produce el error. Los errores de XAML se muestran en la pestaña **Marcado** en el panel **Resultados**.
 
 > [!TIP]
 > XAML es un lenguaje de marcado basado en XML y sigue las reglas sintácticas de XML.
@@ -48,21 +48,21 @@ En el ejemplo siguiente se le guiará a través de una sesión de depuración XA
 
 #### <a name="to-create-a-project"></a>Para crear un proyecto
 
-1. En Blend, abra el menú **archivo** y, a continuación, haga clic en **nuevo proyecto** .
+1. En Blend, abra el menú **archivo** y, a continuación, haga clic en **nuevo proyecto**.
 
-    En el cuadro de diálogo **Nuevo proyecto** , aparece a la izquierda una lista de tipos de proyecto. Cuando hagas clic en un tipo de proyecto, las plantillas de proyecto asociadas a ese tipo aparecerán a la derecha.
+    En el cuadro de diálogo **Nuevo proyecto**, aparece a la izquierda una lista de tipos de proyecto. Cuando hagas clic en un tipo de proyecto, las plantillas de proyecto asociadas a ese tipo aparecerán a la derecha.
 
-2. En la lista de tipos de proyecto, haga clic en **Windows universal** .
+2. En la lista de tipos de proyecto, haga clic en **Windows universal**.
 
-3. En la lista de plantillas de proyecto, haga clic en **aplicación vacía (Windows universal)** .
+3. En la lista de plantillas de proyecto, haga clic en **aplicación vacía (Windows universal)**.
 
 4. En el cuadro de texto **nombre** , escriba `DebuggingSample` .
 
-5. En el cuadro de texto **Ubicación** , compruebe la ubicación del proyecto.
+5. En el cuadro de texto **Ubicación**, compruebe la ubicación del proyecto.
 
-6. En la lista **Lenguaje** , haga clic en **Visual C#** y después en **Aceptar** para crear el proyecto.
+6. En la lista **Lenguaje**, haga clic en **Visual C#** y después en **Aceptar** para crear el proyecto.
 
-7. Haga clic con el botón derecho en la superficie de diseño y haga clic en **Ver código fuente** para cambiar a la vista **Dos paneles** .
+7. Haga clic con el botón derecho en la superficie de diseño y haga clic en **Ver código fuente** para cambiar a la vista **Dos paneles**.
 
 8. Copie el código siguiente haciendo clic en el vínculo **Copiar** situado en la esquina superior derecha del código.
 
@@ -76,7 +76,7 @@ En el ejemplo siguiente se le guiará a través de una sesión de depuración XA
    </Grid>
    ```
 
-9. Busque la **cuadrícula** predeterminada y pega el código entre las etiquetas de apertura y cierre de la **cuadrícula** . Cuando termines, el código debe tener un aspecto similar al siguiente:
+9. Busque la **cuadrícula** predeterminada y pega el código entre las etiquetas de apertura y cierre de la **cuadrícula**. Cuando termines, el código debe tener un aspecto similar al siguiente:
 
     ```xml
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
@@ -118,7 +118,7 @@ Cuando se detectan errores de XAML, la superficie de diseño muestra una alerta 
 
 ## <a name="debug-in-visual-studio"></a>Depurar en Visual Studio
 
-Puede abrir proyectos de Blend en Visual Studio para depurar más fácilmente el código en la aplicación. Para abrir un proyecto de Blend en Visual Studio, haga clic con el botón derecho en el proyecto en el panel **proyectos** y, después, haga clic en **Editar en Visual Studio** . Una vez finalizada la sesión de depuración en Visual Studio, presione Ctrl + Mayús + S para guardar todos los cambios y, a continuación, cambie de nuevo a Blend. Se te preguntará si deseas recargar el proyecto. Haga clic en **sí a todo** para seguir trabajando en Blend.
+Puede abrir proyectos de Blend en Visual Studio para depurar más fácilmente el código en la aplicación. Para abrir un proyecto de Blend en Visual Studio, haga clic con el botón derecho en el proyecto en el panel **proyectos** y, después, haga clic en **Editar en Visual Studio**. Una vez finalizada la sesión de depuración en Visual Studio, presione Ctrl + Mayús + S para guardar todos los cambios y, a continuación, cambie de nuevo a Blend. Se te preguntará si deseas recargar el proyecto. Haga clic en **sí a todo** para seguir trabajando en Blend.
 
 Para obtener más información sobre cómo depurar la aplicación, vea [depurar aplicaciones para UWP en Visual Studio](../debugger/debugging-windows-store-and-windows-universal-apps.md).
 

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending tools
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a921f45ea151ce7ee3313dba47e81a5acc86063d
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: c074e62b47b926351948e94d78621a8a41c9c3e5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672631"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876854"
 ---
 # <a name="extend-the-sharepoint-tools-in-visual-studio"></a>Extensión de las herramientas de SharePoint en Visual Studio
   Las herramientas de SharePoint en Visual Studio cumplen los requisitos de muchos escenarios de desarrollo de aplicaciones. Pero es posible que descubra casos en los que no proporcionan las funciones que usted u otros desarrolladores necesitan. En estos casos, puede extender las herramientas de SharePoint para crear la funcionalidad que necesita.

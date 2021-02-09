@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5f6f6751-e6d8-4c5a-8e81-414b6e5d8cc5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14b42ec37babe72b47b0e832397d33029c4fc3d1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f9b4b95d805833ffd8b8041292cd18e5db8df9b3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717587"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875801"
 ---
 # <a name="ienumdebugaddresses"></a>IEnumDebugAddresses
 Esta interfaz representa una colección de objetos que implementan la interfaz [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) .
@@ -45,7 +45,7 @@ IEnumDebugAdresses : IUnknown
 |[Clonar](../../../extensibility/debugger/reference/ienumdebugaddresses-clone.md)|Recupera una copia de la enumeración actual.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugaddresses-getcount.md)|Recupera el número de entradas de la enumeración.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Esta interfaz se utiliza normalmente por el motor de depuración para ayudar a determinar la dirección adecuada que se debe proporcionar al evaluador de expresiones.
 
 ## <a name="requirements"></a>Requisitos

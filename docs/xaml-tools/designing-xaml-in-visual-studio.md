@@ -8,13 +8,13 @@ ms.topic: conceptual
 ms.assetid: 288e2415-9fcf-408e-bc35-9848315e14fd
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 5be85715efa3086a5a225da45501697440053cc5
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+manager: jmartens
+ms.openlocfilehash: fc6c05b925c8dac5c488ce3eea79ca683b590b72
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796711"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876425"
 ---
 # <a name="design-xaml-in-visual-studio-and-blend-for-visual-studio"></a>Diseño de XAML en Visual Studio y Blend para Visual Studio
 
@@ -52,7 +52,7 @@ Para realizar las tareas de desarrollo más fundamentales, Visual Studio y Blen
 
 Para aumentar la productividad, considere el uso de Blend para Visual Studio para las siguientes tareas. Estas son las áreas en las que Blend para Visual Studio ofrece más funcionalidad que el diseñador de Visual Studio o el código por sí solos.
 
-| Tarea | Visual Studio | Blend para Visual Studio | Más información |
+| Tarea | Programa para la mejora | Blend para Visual Studio | Más información |
 | - | - | - | - |
 | **Diseñar estados visuales** | No hay ninguna herramienta que lo ayude a diseñar estados visuales, debe crearlos mediante programación. | Use las herramientas de diseño para cambiar la apariencia de un control según su estado. | [Estados visuales](modify-the-style-of-objects-in-blend.md#visual-states) |
 | **Crear animaciones** |No hay ninguna herramienta de diseño para animaciones; debe crearse mediante programación. Esto requiere tener conocimientos del sistema de animación y temporización en WPF y una amplia experiencia en codificación.|Puede crear animaciones visualmente y verlas previamente en Blend para Visual Studio. Esto es más rápido y preciso que la compilación de las animaciones en el código. Puede agregar desencadenadores para controlar la interacción del usuario y puede cambiar al código para agregar controladores de eventos y otras funciones.|[Animar objetos](../xaml-tools/animate-objects-in-xaml-designer.md)|
@@ -62,7 +62,7 @@ Para aumentar la productividad, considere el uso de Blend para Visual Studio par
 
 Para obtener más información sobre el diseño XAML avanzado, vea [Creación de una interfaz de usuario con Blend para Visual Studio](../xaml-tools/creating-a-ui-by-using-blend-for-visual-studio.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Introducción a XAML](xaml-overview.md)
 - [Introducción de Blend para Visual Studio](creating-a-ui-by-using-blend-for-visual-studio.md)

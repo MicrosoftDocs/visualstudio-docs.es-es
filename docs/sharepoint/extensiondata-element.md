@@ -11,15 +11,15 @@ helpviewer_keywords:
 - ExtensionData element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3131aca3664e37198b0a32bdc0ade0499c12a1e6
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: cd82aaec96eff3cf3d20fd9d0607ac5aae6b3472
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672540"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876841"
 ---
 # <a name="extensiondata-element"></a>ExtensionData (elemento)
   Representa una colección de elementos de datos personalizados que están asociados al elemento de proyecto de SharePoint.
@@ -50,7 +50,7 @@ ms.locfileid: "94672540"
 |-------------|-----------------|
 |[ProjectItem](../sharepoint/projectitem-element.md)|Representa un elemento de proyecto de SharePoint. Este elemento es el elemento raíz necesario del `.spdata` archivo.|
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Notas
  Al asociar datos personalizados a un elemento de proyecto de SharePoint mediante la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> propiedad de un <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> objeto, Visual Studio guarda los datos en el elemento **extensiondata (** en el `.spdata` archivo para el elemento de proyecto. Para obtener más información, vea [guardar datos en extensiones del sistema de proyectos de SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).
 
 ## <a name="element-information"></a>Información de elemento

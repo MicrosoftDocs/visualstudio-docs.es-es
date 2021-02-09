@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 7e525d0b-7d7a-4d1c-8b78-e1398fa922f2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c85b54f92970dca5d712b827019300f850b03cc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 696f5eb00781c8f46ef099db1000b36a972a95dc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719941"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875814"
 ---
 # <a name="idebugsettingscallback2"></a>IDebugSettingsCallback2
 Permite a los motores de depuración leer la configuración de métricas de forma remota.

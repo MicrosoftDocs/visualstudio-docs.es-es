@@ -11,15 +11,15 @@ helpviewer_keywords:
 - FeatureProperty element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8e6010ac45d0b760325c73c4bd754fbb0b422a77
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 070866b9dd14d974eb976b22bf7a79907e2c5d9e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672761"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876672"
 ---
 # <a name="featureproperty-element"></a>FeatureProperty (elemento)
   Representa una propiedad personalizada que se incluye con una característica cuando se implementa en SharePoint. Una vez implementada una característica, puede tener acceso a la propiedad en el código.
@@ -38,7 +38,7 @@ ms.locfileid: "94672761"
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|**Key**|Atributo **xs: String** requerido.<br /><br /> La clave que se usa para almacenar y recuperar el valor de propiedad. Cada propiedad debe tener una clave que sea única dentro de la característica.|
+|**Clave**|Atributo **xs: String** requerido.<br /><br /> La clave que se usa para almacenar y recuperar el valor de propiedad. Cada propiedad debe tener una clave que sea única dentro de la característica.|
 |**Valor**|Atributo **xs: String** requerido.<br /><br /> Valor de propiedad.|
 
 ### <a name="child-elements"></a>Elementos secundarios
@@ -50,7 +50,7 @@ ms.locfileid: "94672761"
 |-------------|-----------------|
 |[Featureproperties (](../sharepoint/featureproperties-element.md)|Representa una colección de valores de propiedad que se incluyen con una característica cuando se implementa en SharePoint.|
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Notas
  Para obtener más información sobre las propiedades de las características, vea [proporcionar información de paquete e implementación en los elementos de proyecto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).
 
 ## <a name="element-information"></a>Información de elemento
