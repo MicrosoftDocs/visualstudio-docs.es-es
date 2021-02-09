@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 724eb24b-b87c-4971-a2e7-adee7afc03b2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 53ab3531e67be540f7c66da52b7e5152a510fa27
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: b00eb3e410c7fd3d10d2aef7fcfbf637ea04e41a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204649"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839578"
 ---
 # <a name="list-of-available-services"></a>Lista de servicios disponibles
 
@@ -28,7 +28,7 @@ Use los GUID de servicio enumerados aquí u obtenidos de otro origen (por ejempl
 
 ## <a name="the-services"></a>Los servicios
 
-| Servicio | Interfaz | Visual Studio | Visual Studio 2005 | Descripción |
+| Servicio | Interfaz | Programa para la mejora | Visual Studio 2005 | Descripción |
 | - | - |---------------|--------------------| - |
 | <xref:Microsoft.VisualStudio.OLE.Interop.SBindHost> | <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> | Sí | Sí | Lo usan los VSPackages para obtener una <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> interfaz de un control ActiveX para facilitar las transferencias de datos asincrónicas. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SDTE> | <xref:EnvDTE.DTE> | No | Sí | Obtiene el objeto de extensibilidad en tiempo de diseño (DTE) que se usa para la automatización.<br /><br /> IDENTIFICADOR DE C/C++: SID_SDTE |
@@ -57,7 +57,7 @@ Use los GUID de servicio enumerados aquí u obtenidos de otro origen (por ejempl
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsClassView> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsClassView> | Sí | Sí | Permite a un VSPackage sincronizar el **vista de clases** con un objeto concreto. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsCmdNameMapping> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsCmdNameMapping> | Sí | Sí | Proporciona compatibilidad para asignar nombres de comando a GUID y atrás y determinar los nombres de todos los comandos y nombres disponibles. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsCodeDefView> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsCodeDefView> | No | Sí | Permite a un VSPackage manipular la **vista de definición de código**. |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsCodeShareHandler> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsCodeShareHandler> | Sí | Sí | Servicio interno. No utilizar. |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsCodeShareHandler> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsCodeShareHandler> | Sí | Sí | Servicio interno. No debe usarse. |
 | <xref:Microsoft.VisualStudio.TextManager.Interop.SVsCodeWindow> | <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> | Sí | Sí | Proporciona acceso a una ventana de código que puede contener uno o varios documentos. |
 | <xref:Microsoft.VisualStudio.TextManager.Interop.SVsCodeWindowManager> | <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> | Sí | Sí | Permite que un VSPackage agregue cambios a la ventana de código, como barras desplegables. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsCommandWindow> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsCommandWindow><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsCommandWindow2> | Sí | Sí | Permite que un VSPackage ejecute un comando a través de la **ventana de comandos** y, de lo contrario, interactúe con la **ventana de comandos**. |

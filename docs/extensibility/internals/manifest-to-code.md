@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ca43ac07bbdcec98cd204cb2720ac9f2cdef1f1
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 709867c44456223da129460eb6ea72c413ba5b48
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204558"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839420"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 La herramienta de Manifest to Code es una aplicación de consola que toma un archivo. imagemanifest para el servicio de imágenes de Visual Studio y genera un archivo contenedor o archivos para hacer referencia a los valores del manifiesto de imagen en los archivos de C++, C#, VB o. Vsct para las extensiones de Visual Studio. Esta herramienta genera archivos de contenedor que se pueden usar para solicitar imágenes directamente desde el servicio de imágenes de Visual Studio o para pasar los valores del manifiesto a través de las API si el código no controla ninguna de sus propias interfaces de usuario y representación.
@@ -29,14 +29,14 @@ La herramienta de Manifest to Code es una aplicación de consola que toma un arc
 
 |**Nombre del conmutador**|**Notas**|**Obligatorio u opcional**|
 |-|-|-|
-|/manifest|Ruta de acceso al manifiesto de imagen que se va a usar para crear o actualizar el contenedor de código.|Requerido|
-|/Language|Lenguaje en el que se va a generar el contenedor de código.<br /><br /> Valores válidos: CPP, C++, CS, CSharp, C#, VB o VSCT. los valores no distinguen mayúsculas de minúsculas.<br /><br /> En el caso de la opción de lenguaje VSCT, se omiten las opciones/monikerClass,/classAccess y/Namespace.|Requerido|
-|/imageIdClass|El nombre del imageIdClass y el archivo asociado creados por la herramienta. En la opción del lenguaje C++, solo se generan archivos. h.<br /><br /> Valor predeterminado: \<Manifest Path> \MyImageIds.\<Lang Ext>|Opcionales|
-|/monikerClass|El nombre del monikerClass y el archivo asociado creados por la herramienta. En la opción del lenguaje C++, solo se generan archivos. h. Esto se omite en el lenguaje VSCT.<br /><br /> Valor predeterminado: \<Manifest Path> \MyMonikers.\<Lang Ext>|Opcionales|
-|/classAccess|Modificador de acceso para imageIdClass y monikerClass. Asegúrese de que el modificador de acceso es válido para el idioma especificado. Esto se omite para la opción de lenguaje VSCT.<br /><br /> Valor predeterminado: público|Opcionales|
-|/Namespace|Espacio de nombres definido en el contenedor de código. Esto se omite para la opción de lenguaje VSCT. '. ' O ':: ' son separadores de espacio de nombres válidos, independientemente de la opción de lenguaje elegida.<br /><br /> Valor predeterminado: Mis imágenes|Opcionales|
-|/noLogo|Al establecer esta marca se detiene la impresión del producto y la información de copyright.|Opcionales|
-|/?|Imprime la información de ayuda.|Opcionales|
+|/manifest|Ruta de acceso al manifiesto de imagen que se va a usar para crear o actualizar el contenedor de código.|Obligatorio|
+|/Language|Lenguaje en el que se va a generar el contenedor de código.<br /><br /> Valores válidos: CPP, C++, CS, CSharp, C#, VB o VSCT. los valores no distinguen mayúsculas de minúsculas.<br /><br /> En el caso de la opción de lenguaje VSCT, se omiten las opciones/monikerClass,/classAccess y/Namespace.|Obligatorio|
+|/imageIdClass|El nombre del imageIdClass y el archivo asociado creados por la herramienta. En la opción del lenguaje C++, solo se generan archivos. h.<br /><br /> Valor predeterminado: \<Manifest Path> \MyImageIds.\<Lang Ext>|Opcional|
+|/monikerClass|El nombre del monikerClass y el archivo asociado creados por la herramienta. En la opción del lenguaje C++, solo se generan archivos. h. Esto se omite en el lenguaje VSCT.<br /><br /> Valor predeterminado: \<Manifest Path> \MyMonikers.\<Lang Ext>|Opcional|
+|/classAccess|Modificador de acceso para imageIdClass y monikerClass. Asegúrese de que el modificador de acceso es válido para el idioma especificado. Esto se omite para la opción de lenguaje VSCT.<br /><br /> Valor predeterminado: público|Opcional|
+|/Namespace|Espacio de nombres definido en el contenedor de código. Esto se omite para la opción de lenguaje VSCT. '. ' O ':: ' son separadores de espacio de nombres válidos, independientemente de la opción de lenguaje elegida.<br /><br /> Valor predeterminado: Mis imágenes|Opcional|
+|/noLogo|Al establecer esta marca se detiene la impresión del producto y la información de copyright.|Opcional|
+|/?|Imprime la información de ayuda.|Opcional|
 |/help|Imprime la información de ayuda.|Opcional|
 
  **Ejemplos**

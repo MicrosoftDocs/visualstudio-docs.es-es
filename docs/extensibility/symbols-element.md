@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 1cda43d8-42a5-4b1b-a3c8-cf0401c3202f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e86406c4c10c2f65e8e43d8f3cb67f413ed3c63
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 173da18ca3b38dd64b8a2594c03abd83987f58f5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715566"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839327"
 ---
 # <a name="symbols-element"></a>Symbols (Elemento)
 Define los GUID e identificadores que usan otros elementos VSCT. En el caso de código no administrado, esta información procede normalmente de los archivos de encabezado especificados por el [elemento extern](../extensibility/extern-element.md). El código administrado utiliza los elementos secundarios del elemento Symbols para definir esta información.
@@ -43,7 +43,7 @@ Define los GUID e identificadores que usan otros elementos VSCT. En el caso de c
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|Ninguno||
+|None||
 
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -71,5 +71,5 @@ Define los GUID e identificadores que usan otros elementos VSCT. En el caso de c
 </Symbols>
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Archivos de tabla de comandos de Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
