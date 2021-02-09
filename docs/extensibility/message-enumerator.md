@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 4a4faa0d-d352-40ea-a21d-c09ea286a8e1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a7d4607afd9b46d35db416baed73007c67a7832
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 00d6b3e27b87e4bac8cee196a60e7fc934f6187d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863739"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886748"
 ---
 # <a name="message-enumerator"></a>Enumerador de mensajes
 Las marcas siguientes se usan para la `TEXTOUTPROC` función, que es una función de devolución de llamada que el IDE proporciona cuando llama a [SccOpenProject](../extensibility/sccopenproject-function.md) (vea [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) para obtener más información sobre la función de devolución de llamada).
@@ -41,7 +41,7 @@ enum {
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
  SCC_MSG_RTN_CANCEL devolver de la devolución de llamada para indicar la cancelación.
 
  SCC_MSG_RTN_OK devolver de la devolución de llamada para continuar.
@@ -60,6 +60,6 @@ enum {
 
  SCC_MSG_STOPCANCEL detiene el bucle CANCEL.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Complementos de control de código fuente](../extensibility/source-control-plug-ins.md)
 - [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)

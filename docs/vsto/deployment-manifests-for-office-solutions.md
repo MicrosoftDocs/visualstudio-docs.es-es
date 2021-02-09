@@ -14,22 +14,22 @@ helpviewer_keywords:
 - Office development in Visual Studio, deployment manifests
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 31909d2a6765c357635cd0a8c039132f14b5967d
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 0a6c8cf672c4799a53c9df947f15bca38cb02589
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845510"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887606"
 ---
 # <a name="deployment-manifests-for-office-solutions"></a>Manifiestos de implementación para soluciones de Office
   Un manifiesto de implementación es un archivo XML que describe la configuración de implementación de una solución de Office e identifica la versión de la aplicación actual.
 
  El desarrollo de Office en Visual Studio usa el [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] esquema de manifiesto de implementación definido en la referencia de [manifiesto de implementación de ClickOnce](../deployment/clickonce-deployment-manifest.md) .
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Notas
  El archivo de manifiesto de implementación para las soluciones de Office identifica la versión actual y otras opciones de implementación. Hace referencia al manifiesto de aplicación y describe la versión actual de la solución y todos los archivos de en la solución.
 
 ## <a name="file-name-syntax"></a>Sintaxis de los nombres de archivo

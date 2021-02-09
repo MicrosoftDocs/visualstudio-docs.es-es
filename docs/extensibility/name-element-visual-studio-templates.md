@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 48788dbf-7da0-4443-8061-aab966fc22c8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2aa14005a202b7868f61cd41ffb6ac9e2f872b68
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 109832586483bacb753f96b9a27c0f756ab7a6d7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671186"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886644"
 ---
 # <a name="name-element-visual-studio-templates"></a>Name (elemento, plantillas de Visual Studio)
 Especifica el nombre de la plantilla tal y como aparece en el cuadro de diálogo **nuevo proyecto** o **Agregar nuevo elemento** .
@@ -62,7 +62,7 @@ Especifica el nombre de la plantilla tal y como aparece en el cuadro de diálogo
 
  El texto proporciona el nombre de la plantilla.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Notas
  `Name` es un elemento secundario obligatorio de `TemplateData`.
 
 ## <a name="example"></a>Ejemplo

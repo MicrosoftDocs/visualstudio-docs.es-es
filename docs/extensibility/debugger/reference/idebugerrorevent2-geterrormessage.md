@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 9e3b0d74-a2dd-4eaa-bd95-21b2f9c79409
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1ff1da2f2a2d24b958a613e6fe5cb58c0081ed3e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5fcb5f1f43aa9be16a1b2fe00bdec4eb3dd6014
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730044"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888360"
 ---
 # <a name="idebugerrorevent2geterrormessage"></a>IDebugErrorEvent2::GetErrorMessage
 Devuelve información que permite la creación de un mensaje de error legible.
@@ -28,24 +28,24 @@ Devuelve información que permite la creación de un mensaje de error legible.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT GetErrorMessage(
-   MESSAGETYPE* pMessageType,
-   BSTR*        pbstrErrorFormat,
-   HRESULT*     hrErrorReason,
-   DWORD*       pdwType,
-   BSTR*        pbstrHelpFileName,
-   DWORD*       pdwHelpId
+HRESULT GetErrorMessage(
+   MESSAGETYPE* pMessageType,
+   BSTR*        pbstrErrorFormat,
+   HRESULT*     hrErrorReason,
+   DWORD*       pdwType,
+   BSTR*        pbstrHelpFileName,
+   DWORD*       pdwHelpId
 );
 ```
 
 ```csharp
 int GetErrorMessage(
-   out enum_MESSAGETYPE   pMessageType,
-   out string             pbstrErrorFormat,
-   out int                phrErrorReason,
-   out uint               pdwType,
-   out string             pbstrHelpFileName,
-   out uint               pdwHelpId
+   out enum_MESSAGETYPE   pMessageType,
+   out string             pbstrErrorFormat,
+   out int                phrErrorReason,
+   out uint               pdwType,
+   out string             pbstrHelpFileName,
+   out uint               pdwHelpId
 );
 ```
 
@@ -71,7 +71,7 @@ enuncia IDENTIFICADOR del tema de ayuda que se va a mostrar (establézcalo en 0 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Se debe dar formato al mensaje de error a lo largo de las líneas de `"What I was doing.  %1"` . `"%1"`Entonces, el llamador reemplazaría por el mensaje de error derivado del código de error (que se devuelve en `hrErrorReason` ). El `pMessageType` parámetro indica al llamador cómo debe mostrarse el mensaje de error final.
 
 ## <a name="see-also"></a>Vea también

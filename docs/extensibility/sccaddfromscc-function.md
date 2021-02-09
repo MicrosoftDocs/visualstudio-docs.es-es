@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 902e764d-200e-46e1-8c42-4da7b037f9a0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1dd32e31330cdce958e463a40a4d92f88b09afb2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e35ae460d6ceb505bc7ad64a0e522bf2841260f2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701247"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886618"
 ---
 # <a name="sccaddfromscc-function"></a>SccAddFromScc función)
 Esta función permite al usuario buscar archivos que ya están en el sistema de control de código fuente y, posteriormente, hacer que dichos archivos formen parte del proyecto actual. Por ejemplo, esta función puede obtener un archivo de encabezado común en el proyecto actual sin copiar el archivo. La matriz devuelta de archivos, `lplpFileNames` , contiene la lista de archivos que el usuario desea agregar al proyecto IDE.
@@ -59,7 +59,7 @@ de Identificador de la ventana del IDE que el complemento de control de código 
 |SCC_I_OPERATIONCANCELED|La operación se canceló sin ningún efecto.|
 |SCC_I_RELOADFILE|Es necesario volver a cargar un archivo o proyecto.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  El IDE llama a esta función. Si el complemento de control de código fuente admite la especificación de una carpeta de destino local, el IDE pasa `lpnFiles` = 1 y pasa el nombre de la carpeta local a `lplpFileNames` .
 
  Cuando se devuelve la llamada a la `SccAddFromScc` función, el complemento tiene asignados valores a `lpnFiles` y `lplpFileNames` , asignando la memoria para la matriz de nombres de archivo según sea necesario (tenga en cuenta que esta asignación reemplaza el puntero en `lplpFileNames` ). El complemento de control de código fuente es responsable de colocar todos los archivos en el directorio del usuario o en la carpeta designada. A continuación, el IDE agrega los archivos al proyecto IDE.

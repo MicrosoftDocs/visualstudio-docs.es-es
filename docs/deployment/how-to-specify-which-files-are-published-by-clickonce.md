@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 579c134a-d50f-4e0c-8e05-2a4ff654896a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dca403e2b4b7ac9b572e73db397433b1fae1b1ae
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: d093438dc30bee08abbc45c6cf3c2555fbe208c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350899"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887489"
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Cómo: Especificar los archivos que se van a publicar mediante ClickOnce
 Al publicar una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación, todos los archivos que no son de código del proyecto se implementan junto con la aplicación. En algunos casos, es posible que no desee o necesite publicar determinados archivos, o puede que desee instalar determinados archivos en función de las condiciones. Visual Studio proporciona las capacidades para excluir archivos, marcar archivos como archivos de datos o requisitos previos, y crear grupos de archivos para la instalación condicional.
@@ -37,9 +37,9 @@ Al publicar una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)
 
  Los archivos con la propiedad **acción de compilación** establecida en **contenido** se designan como archivos de aplicación y se marcarán como incluidos de forma predeterminada. Se pueden incluir, excluir o marcar como archivos de datos. Las excepciones son las siguientes:
 
-- De forma predeterminada, los archivos de datos, como los archivos de SQL Database ( *. MDF* y *. mdb* ) y los archivos XML, se marcarán como archivos de datos.
+- De forma predeterminada, los archivos de datos, como los archivos de SQL Database (*. MDF* y *. mdb*) y los archivos XML, se marcarán como archivos de datos.
 
-- Las referencias a los ensamblados (archivos *. dll* ) se designan como se indica a continuación al agregar la referencia: Si **Copy local** es **false** , se marca de forma predeterminada como un ensamblado de requisito previo ( **requisito previo (auto)** ) que debe estar presente en la GAC antes de que se instale la aplicación. Si **Copy local** es **true** , el ensamblado está marcado de forma predeterminada como un ensamblado de aplicación ( **include (auto)** ) y se copiará en la carpeta de la aplicación durante la instalación. Aparecerá una referencia COM en el cuadro de diálogo **archivos de aplicación** (como un archivo *. ocx* ) solo si su propiedad **aislada** está establecida en **true**. De forma predeterminada, se incluirá.
+- Las referencias a los ensamblados (archivos *. dll* ) se designan como se indica a continuación al agregar la referencia: Si **Copy local** es **false**, se marca de forma predeterminada como un ensamblado de requisito previo (**requisito previo (auto)**) que debe estar presente en la GAC antes de que se instale la aplicación. Si **Copy local** es **true**, el ensamblado está marcado de forma predeterminada como un ensamblado de aplicación (**include (auto)**) y se copiará en la carpeta de la aplicación durante la instalación. Aparecerá una referencia COM en el cuadro de diálogo **archivos de aplicación** (como un archivo *. ocx* ) solo si su propiedad **aislada** está establecida en **true**. De forma predeterminada, se incluirá.
 
 ### <a name="to-add-files-to-the-application-files-dialog-box"></a>Para agregar archivos al cuadro de diálogo archivos de aplicación
 

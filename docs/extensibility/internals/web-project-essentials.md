@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ca2f4e43-322c-4431-8680-52da846940bc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bf16582cdc9bba6529d237d74d56ebded299fb9
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: b071631018ef398be481ccf514b33296e55fc2e8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487925"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886878"
 ---
 # <a name="web-project-essentials"></a>Conceptos básicos del proyecto web
 Los proyectos web crean aplicaciones Web. Puede usar un proyecto web para crear una aplicación web que tiene páginas web inteligentes. Una página web inteligente tiene código del lado servidor que representa la página web a petición.

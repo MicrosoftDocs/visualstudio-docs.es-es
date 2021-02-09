@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 43d1e1dca1860faa44d6bb5bc256bb8f0465e8b2
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: c36552c3a10f4ddbf50a7a28978acf27118bbd34
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479539"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887099"
 ---
 # <a name="expose-types-to-visual-designers"></a>Exponer tipos a diseñadores visuales
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debe tener acceso a las definiciones de clase y de tipo en tiempo de diseño para poder mostrar un diseñador visual. Las clases se cargan desde un conjunto predefinido de ensamblados que incluyen el conjunto de dependencias completo del proyecto actual (referencias más sus dependencias). También puede ser necesario que los diseñadores visuales tengan acceso a clases y tipos definidos en archivos generados por herramientas personalizadas.
@@ -45,7 +45,7 @@ ms.locfileid: "96479539"
 
      Cuando se compila un PE temporal, el único archivo de código fuente proporcionado al compilador es la salida de la herramienta personalizada. Por lo tanto, una herramienta personalizada que utiliza un archivo PE temporal debe generar archivos de salida que se pueden compilar de forma independiente de otros archivos del proyecto.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Introducción al objeto BuildManager](/previous-versions/8f9kffa8(v=vs.140))
 - [Implementar generadores de un solo archivo](../../extensibility/internals/implementing-single-file-generators.md)
 - [Registro de generadores de un solo archivo](../../extensibility/internals/registering-single-file-generators.md)

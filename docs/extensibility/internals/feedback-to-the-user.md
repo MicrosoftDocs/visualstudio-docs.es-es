@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 2d472a24-3813-4f5f-9783-b491ad8a71ad
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8f3f79a61729a641ee7c046ddd196a648469fb3
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 33e52a277f621c80773518ae4b9606d7a2c222db
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480530"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886995"
 ---
 # <a name="feedback-to-the-user"></a>Comentarios al usuario
 En el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] entorno de desarrollo integrado (IDE), los comentarios visuales sobre la funcionalidad disponible se basan en la selección actual del usuario y en el contexto de selección global. En la tabla siguiente se enumeran las funciones que están disponibles en diferentes contextos de selección.
@@ -59,7 +59,7 @@ En el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] entorno de de
 
 - La ventana de jerarquía activa, que normalmente se **Explorador de soluciones**, y la actualización de la barra de título para reflejar el contexto actual y los comandos del menú contextual del **proyecto** se aplican ahora al proyecto de aplicación Web activo.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Selección y moneda en el IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)
 - [Objetos de contexto de selección](../../extensibility/internals/selection-context-objects.md)
 - [Jerarquías y selección](../../extensibility/internals/hierarchies-and-selection.md)

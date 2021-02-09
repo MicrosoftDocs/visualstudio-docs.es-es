@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 556e610d-7c4b-44a8-965a-76a9d02b601a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 163718fda344ba5f3f44ef630b4eba3e5613dc61
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 44e0bc66d9f385a41f0f43af7217738e40e69126
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724783"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887125"
 ---
 # <a name="idebugportrequest2"></a>IDebugPortRequest2
 Esta interfaz describe un puerto. Esta descripción se usa para agregar el puerto a un proveedor de puerto.
@@ -41,7 +41,7 @@ IDebugPortRequest2 : IUnknown
 |------------|-----------------|
 |[GetPortName](../../../extensibility/debugger/reference/idebugportrequest2-getportname.md)|Obtiene el nombre del puerto que se va a crear.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Normalmente, un motor de depuración no interactúa con un proveedor de puerto y no tendrá ningún uso para esta interfaz.
 
 ## <a name="requirements"></a>Requisitos

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 8ec17fbf-df93-424a-b2ed-fd1e5ee51256
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9930f8ecf0c2f9b6fff4ce1c9e3edb935c5a7912
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2e706d0fd23bc0c5388ee3bd6bb82323309725c1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730673"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887190"
 ---
 # <a name="idebugengine3setjustmycodestate"></a>IDebugEngine3::SetJustMyCodeState
 Este método indica al motor de depuración sobre la información de estado JustMyCode.
@@ -28,10 +28,10 @@ Este método indica al motor de depuración sobre la información de estado Just
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT SetJustMyCodeState(
-   BOOL           fUpdate,
-   DWORD          dwModules,
-   JMC_CODE_SPEC* rgJMCSpec
+HRESULT SetJustMyCodeState(
+   BOOL           fUpdate,
+   DWORD          dwModules,
+   JMC_CODE_SPEC* rgJMCSpec
 );
 ```
 
@@ -56,7 +56,7 @@ de Matriz de estructuras [JMC_CODE_SPEC](../../../extensibility/debugger/referen
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve el código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  JustMyCode es el concepto de depurar solo el código que pertenece a un usuario y omitir todo el código intermedio, como el código del sistema, incluso si el código fuente está disponible para ese código del sistema.
 
 ## <a name="see-also"></a>Vea también

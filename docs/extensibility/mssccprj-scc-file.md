@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6f2e39d6-b79d-407e-976f-b62a3cedd378
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 253482f840350ae1d3cf7ee83e03a88ace15a6cd
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: f55e99d9df10ef2f96761a9436597d227cf0cd93
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863480"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886696"
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ. Archivo SCC
 Cuando se coloca una solución de Visual Studio o un proyecto bajo control de código fuente mediante el IDE, el IDE recibe dos fragmentos de información clave. La información procede del complemento de control de código fuente en forma de cadenas. Estas cadenas, "AuxPath" y "Nombre_proyecto", son opacas para el IDE, pero las usa el complemento para buscar la solución o el proyecto en el control de versiones. Normalmente, el IDE obtiene estas cadenas la primera vez llamando a [SccGetProjPath](../extensibility/sccgetprojpath-function.md)y, a continuación, las guarda en el archivo de solución o proyecto para futuras llamadas a [SccOpenProject](../extensibility/sccopenproject-function.md). Cuando se insertan en los archivos de proyecto y de solución, las cadenas "AuxPath" y "Nombre_proyecto" no se actualizan automáticamente cuando un usuario bifurca, bifurca o copia archivos de proyecto y de solución que están en el control de versiones. Para asegurarse de que la solución y los archivos del proyecto señalan a su ubicación correcta en el control de versiones, los usuarios deben actualizar manualmente las cadenas. Dado que las cadenas están pensadas para ser opacas, puede que no siempre quede claro cómo deben actualizarse.
@@ -74,6 +74,6 @@ Cuando se coloca una solución de Visual Studio o un proyecto bajo control de c�
 
  No hay ningún delimitador final en esta sección. El nombre del archivo, así como todos los literales que aparecen en el archivo, se definen en el archivo de encabezado SCC. h. Para obtener más información, vea [cadenas usadas como claves para buscar un complemento de control de código fuente](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Complementos de control de código fuente](../extensibility/source-control-plug-ins.md)
 - [Cadenas usadas como claves para buscar un complemento de control de código fuente](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)

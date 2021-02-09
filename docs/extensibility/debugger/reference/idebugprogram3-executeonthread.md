@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: 2f5211e3-7a3f-47bf-9595-dfc8b4895d0d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 201c08352bc5b616298349c52197529ef3f1a7d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8df69c02fb7e78dbb107db906de59d8b7e5881b4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722660"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887073"
 ---
 # <a name="idebugprogram3executeonthread"></a>IDebugProgram3::ExecuteOnThread
 Ejecuta el programa del depurador. El subproceso se devuelve para proporcionar a la información del depurador el subproceso que está viendo el usuario al ejecutar el programa.
@@ -43,7 +43,7 @@ de Objeto [IDebugThread2](../../../extensibility/debugger/reference/idebugthread
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Hay tres formas diferentes de que un depurador pueda reanudar la ejecución después de detenerse:
 
 - Ejecutar: cancele cualquier paso anterior y ejecute hasta el siguiente punto de interrupción, etc.

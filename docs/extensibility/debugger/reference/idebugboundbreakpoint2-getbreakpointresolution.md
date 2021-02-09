@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 4479ac61-18a9-4a30-b213-9921c5af9a26
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ab88009eb1c1bbbd59bbad2dfcbf62567db3941f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 51912fce3bf98502be7ae05f815fce60e595e89c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735577"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887346"
 ---
 # <a name="idebugboundbreakpoint2getbreakpointresolution"></a>IDebugBoundBreakpoint2::GetBreakpointResolution
 Obtiene la resolución del punto de interrupción que describe este punto de interrupción.
@@ -29,13 +29,13 @@ Obtiene la resolución del punto de interrupción que describe este punto de int
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT GetBreakpointResolution( 
+HRESULT GetBreakpointResolution( 
     IDebugBreakpointResolution2** ppBPResolution
 );
 ```
 
 ```csharp
-int GetBreakpointResolution( 
+int GetBreakpointResolution( 
     out IDebugBreakpointResolution2 ppBPResolution
 );
 ```
@@ -51,7 +51,7 @@ enuncia Devuelve la interfaz [IDebugBreakpointResolution2](../../../extensibilit
 ## <a name="return-value"></a>Valor devuelto
 Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error. Devuelve `E_BP_DELETED` si el estado del objeto de punto de interrupción enlazado se establece en `BPS_DELETED` (parte de la enumeración [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) ).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Llame al método [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) para determinar si la resolución del punto de interrupción es para el código o los datos.
 
 ## <a name="example"></a>Ejemplo
