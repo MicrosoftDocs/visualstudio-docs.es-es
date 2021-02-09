@@ -17,15 +17,15 @@ helpviewer_keywords:
 - parameters [Office development in Visual Studio], optional
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7567f43dfa79e6a1e5d92b9ecddbf7918a6edef3
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: d6824d53d552a27a68a49d63497156147283fd29
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527571"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847705"
 ---
 # <a name="optional-parameters-in-office-solutions"></a>Parámetros opcionales en las soluciones de Office
   Muchos de los métodos de los modelos de objetos de las aplicaciones de Microsoft Office aceptan parámetros opcionales. Si utiliza Visual Basic para desarrollar una solución de Office en Visual Studio, no es necesario pasar un valor para los parámetros opcionales, ya que se usan automáticamente los valores predeterminados para cada parámetro que falte. En la mayoría de los casos, también puede omitir los parámetros opcionales en los proyectos de Visual C#. Sin embargo, no puede omitir los parámetros **ref** opcionales de la `ThisDocument` clase en proyectos de Word de nivel de documento.
@@ -70,6 +70,6 @@ ms.locfileid: "97527571"
 
   Para obtener más información sobre los parámetros de tipo de valor y de referencia, vea [pasar argumentos por valor y por referencia &#40;Visual Basic&#41;](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (para Visual Basic) y [pasar parámetros &#40;guía de programación de C&#35;&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Desarrollo de soluciones de Office](../vsto/developing-office-solutions.md)
 - [Escribir código en soluciones de Office](../vsto/writing-code-in-office-solutions.md)

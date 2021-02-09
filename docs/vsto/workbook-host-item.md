@@ -19,15 +19,15 @@ helpviewer_keywords:
 - events [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8d3d5b7efadefd77be7ce25026c8f485ee0ef133
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 24f32f8799d2bac5c23a0f8a2ef92857d2a6f7c7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528347"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847601"
 ---
 # <a name="workbook-host-item"></a>Elemento host del libro
   El elemento host <xref:Microsoft.Office.Tools.Excel.Workbook> es un tipo que extiende el tipo <xref:Microsoft.Office.Interop.Excel.Workbook> del ensamblado de interoperabilidad primario de Excel. El elemento host <xref:Microsoft.Office.Tools.Excel.Workbook> proporciona todas las mismas propiedades, los mismos métodos y eventos que un objeto <xref:Microsoft.Office.Interop.Excel.Workbook> , pero también ofrece características adicionales.
@@ -56,7 +56,7 @@ ms.locfileid: "97528347"
 ## <a name="understand-workbook-host-items-in-vsto-add-in-projects"></a>Descripción de los elementos host de libro en proyectos de complemento de VSTO
  En los proyectos de complemento de VSTO, puede generar un elemento host <xref:Microsoft.Office.Tools.Excel.Workbook> en tiempo de ejecución para cualquier libro que esté abierto en Excel. Para generar un elemento host <xref:Microsoft.Office.Tools.Excel.Workbook>, use el método `GetVstoObject`. Para obtener más información, vea [ampliar documentos de Word y libros de Excel en complementos de VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Ejemplos y tutoriales de desarrollo de Office](../vsto/office-development-samples-and-walkthroughs.md)
 - [Ampliar documentos de Word y libros de Excel en complementos de VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Información general sobre elementos y controles host](../vsto/host-items-and-host-controls-overview.md)

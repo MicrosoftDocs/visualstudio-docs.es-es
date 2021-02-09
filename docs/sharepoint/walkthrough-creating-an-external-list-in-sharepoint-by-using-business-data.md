@@ -18,15 +18,15 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], external list
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a791f94e46e16369392465e075ade92a833e2868
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: dbf996a2d44f94e4571a332fa7a86d861d820d45
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915341"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847718"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Tutorial: crear una lista externa en SharePoint con datos económicos
 
@@ -128,7 +128,7 @@ Agregue una entidad al modelo. Puede Agregar entidades desde el **cuadro de herr
 
      La nueva entidad aparece en el diseñador. Visual Studio agrega un archivo denominado *EntityService. VB* (en Visual Basic) o *EntityService.CS* (en C#) al proyecto.
 
-3. En la barra de menús, elija **Ver**  >  **Properties**  >  **ventana** propiedades.
+3. En la barra de menús, elija **Ver**  >    >  **ventana** propiedades.
 
 4. En la ventana **propiedades** , establezca el valor de la propiedad **Name** en **Contact**.
 
@@ -186,8 +186,8 @@ Agregue un método Finder específico a la entidad Contact mediante la ventana *
 
     |Nombre|Nombre del tipo|
     |----------|---------------|
-    |Nombre|System.String|
-    |Apellidos|System.String|
+    |FirstName|System.String|
+    |LastName|System.String|
     |Teléfono|System.String|
     |EmailAddress|System.String|
     |EmailPromotion|System.Int32|
@@ -276,7 +276,7 @@ Puede obtener más información sobre cómo diseñar modelos para el servicio BD
 - [Cómo: agregar un método Updater](../sharepoint/how-to-add-an-updater-method.md).
 - [Cómo: agregar un método de eliminación](../sharepoint/how-to-add-a-deleter-method.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Diseñar un modelo](../sharepoint/designing-a-business-data-connectivity-model.md) 
  de conectividad a datos profesionales [Crear un modelo](../sharepoint/creating-a-business-data-connectivity-model.md) 
