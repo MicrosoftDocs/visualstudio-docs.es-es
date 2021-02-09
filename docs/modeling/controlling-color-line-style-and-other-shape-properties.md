@@ -5,16 +5,16 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: 759c7def23cf8ac0df33a75d25eb5bcbcf44b209
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: 68eda84ec014dec2931e2c35a04dec1ed878e6c0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100432"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861665"
 ---
 # <a name="controlling-color-line-style-and-other-shape-properties"></a>Controlar el color, el estilo de línea y otras propiedades de forma
 
@@ -23,7 +23,7 @@ Algunas propiedades de forma, como el color, pueden ser ' expuestas '. Es decir,
 ## <a name="exposing-a-property"></a>Exponer una propiedad
  Algunas propiedades de forma, como el color, se pueden vincular al valor de una propiedad de dominio.
 
- En la definición de DSL, seleccione una forma, conector o clase de diagrama. En el menú contextual, elija **Agregar expuesto**y, a continuación, elija la propiedad que desee, como color de relleno.
+ En la definición de DSL, seleccione una forma, conector o clase de diagrama. En el menú contextual, elija **Agregar expuesto** y, a continuación, elija la propiedad que desee, como color de relleno.
 
  La forma ahora tiene una propiedad de dominio que se puede establecer en el código del programa o como usuario.
 

@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, programming domain properties
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c50d205745917b3af7de638a17921f4bcdca509
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 3c0874302a7cae4b7a2a3c02edade3ef88fd402a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363554"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861847"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Propiedades calculadas y de almacenamiento personalizado
 Todas las propiedades de dominio en un lenguaje específico de dominio (DSL) se pueden mostrar al usuario en el diagrama y en el explorador de lenguajes, y se puede tener acceso a ellas mediante el código del programa. Sin embargo, las propiedades se diferencian en la forma en que se almacenan sus valores.
@@ -109,7 +109,7 @@ void SetAgeValue(int value)
 
  Para obtener más información acerca de las transacciones, vea [navegar y actualizar un modelo en el código del programa](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [Navegar y actualizar un modelo en el código del programa](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Propiedades de las propiedades de dominio](../modeling/properties-of-domain-properties.md)

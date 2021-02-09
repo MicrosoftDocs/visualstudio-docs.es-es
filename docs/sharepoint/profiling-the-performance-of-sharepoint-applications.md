@@ -17,15 +17,15 @@ helpviewer_keywords:
 - profiling [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ecdacce58e17c616b22c9a6a8ba6fce9d5cf272c
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: d59f5b472f791f9774515cdb3e92cc4cf7f9f55b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305099"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860742"
 ---
 # <a name="profile-the-performance-of-sharepoint-applications"></a>Generar perfiles del rendimiento de las aplicaciones de SharePoint
 
@@ -68,7 +68,7 @@ Las pruebas de IU codificadas controlan automáticamente la aplicación de Share
 |[Prueba unitaria del código](../test/unit-test-your-code.md)|Describe cómo buscar errores lógicos en el código mediante pruebas unitarias.|
 |[Probar aplicaciones de SharePoint 2010 con pruebas automatizadas de IU](/previous-versions/visualstudio/visual-studio-2015/test/testing-sharepoint-2010-applications-with-coded-ui-tests?preserve-view=true&view=vs-2015)|Describe cómo probar la interfaz de usuario de las aplicaciones de SharePoint.|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Build and debug SharePoint solutions](../sharepoint/building-and-debugging-sharepoint-solutions.md) (Compilar y depurar las soluciones de SharePoint)
 - [Mejorar la calidad del código](../test/improve-code-quality.md)

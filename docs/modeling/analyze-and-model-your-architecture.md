@@ -16,15 +16,15 @@ helpviewer_keywords:
 - application modeling
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 71296b9ccb2e442d1bd9bc13865e0086821bf030
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 7364da54179b742dc3cbfcd94622308f5c13b483
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361162"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861924"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Analizar y modelar la arquitectura
 

@@ -10,20 +10,20 @@ helpviewer_keywords:
 ms.assetid: df976c76-27ec-4f00-ab6d-a26a745dc6c7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cde3377582c3bac0c27371e25f28e5151d641db1
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: dfe2947d60ad5dde6e2f23b9bed59b09e6abe8ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994568"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862127"
 ---
 # <a name="extend-the-solution-explorer-filter"></a>Extender el filtro de Explorador de soluciones
 Puede extender **Explorador de soluciones** funcionalidad de filtro para mostrar u ocultar distintos archivos. Por ejemplo, puede crear un filtro que muestre solo los archivos de generador de clases de C# en el **Explorador de soluciones**, como se muestra en este tutorial.
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
  A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS después. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ### <a name="create-a-visual-studio-package-project"></a>Crear un proyecto de paquete de Visual Studio

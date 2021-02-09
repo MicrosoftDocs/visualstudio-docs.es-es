@@ -7,18 +7,18 @@ ms.topic: how-to
 ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: b9000290b146275ca495b49211c9823422b0a32f
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 1f1ede0e642f14581d13d571acf67a952360bf65
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97862960"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838700"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>Tutorial: crear un SDK mediante C# o Visual Basic
 En este tutorial, aprenderá a crear un sencillo SDK de biblioteca matemática usando Visual C# y, a continuación, empaquetará el SDK como extensión de Visual Studio (VSIX). Completará los siguientes procedimientos:
@@ -28,7 +28,7 @@ En este tutorial, aprenderá a crear un sencillo SDK de biblioteca matemática u
 - [Para crear el proyecto de extensión SimpleMathVSIX](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createVSIX)
 - [Para crear una aplicación de ejemplo que usa la biblioteca de clases](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createSample)
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
  Para seguir este tutorial, debe instalar SDK de Visual Studio. Para obtener más información, vea el [SDK de Visual Studio](../extensibility/visual-studio-sdk.md).
 
 ## <a name="to-create-the-simplemath-windows-runtime-component"></a><a name="createClassLibrary"></a> Para crear el componente Windows Runtime de SimpleMath
@@ -247,7 +247,7 @@ En este tutorial, aprenderá a crear un sencillo SDK de biblioteca matemática u
 
     Ha creado y usado correctamente un SDK de extensión.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Tutorial: crear un SDK con C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)
 - [Tutorial: crear un SDK mediante JavaScript](../extensibility/walkthrough-creating-an-sdk-using-javascript.md)
 - [Creación de un kit de desarrollo de software](../extensibility/creating-a-software-development-kit.md)

@@ -6,15 +6,15 @@ ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
 ms.custom: SEO-VS-2020
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b33e9400926dd7d1f7a2dc5a66a33ec2fb244b1b
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: 9c2aa1e49c0465fcf75917f0d9bd134962794c74
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100445"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861756"
 ---
 # <a name="code-maps-for-c-projects"></a>Mapas de código para proyectos de C++
 
@@ -40,7 +40,7 @@ Estos elementos no se admiten para código de C y C++:
 
 Estos problemas pueden producirse al crear mapas de código para código de C y C++:
 
-|**Problema**|**Causa posible**|**Solución**|
+|**Problema**|**Causa posible**|**Resolución**|
 |-|-|-|
 |El mapa de código no se generó.|No se compiló correctamente ningún proyecto de la solución.|Corrija los errores de compilación que se produjeron y, después, vuelva a generar el mapa.|
 |Visual Studio deja de responder al intentar generar un mapa de código desde el menú **arquitectura** .|El archivo de base de datos de programa (.pdb) podría estar dañado.<br /><br /> Un archivo .pdb almacena la información de depuración, como tipo, método e información del archivo de código fuente.|Recompile la solución y, a continuación, inténtelo de nuevo.|
@@ -51,6 +51,6 @@ Estos problemas pueden producirse al crear mapas de código para código de C y 
 ||Se ha quitado la información de depuración del archivo .pdb.|Si se ha usado la opción **/PDBSTRIPPED** en el vinculador, incluya el archivo .pdb completo en su lugar.|
 ||El llamador no es una función y, o bien es un código thunk en el archivo binario o es un puntero en la sección de datos.|Cuando el llamador es un código thunk, intente usar `_declspec(dllimport)` para evitar el código thunk.|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Asignación de dependencias con mapas de código](../modeling/map-dependencies-across-your-solutions.md)

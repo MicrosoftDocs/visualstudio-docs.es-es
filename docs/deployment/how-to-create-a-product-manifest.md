@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 2d316aaa-8bc0-4ce5-90ab-23b3eac0b5dd
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ab7156635914d46dfc1849717d29ac0416e2d9fa
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 40a620023dad754e3de4fedb9bc4fdbe7b7835a5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351224"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861236"
 ---
 # <a name="how-to-create-a-product-manifest"></a>Cómo: Crear un manifiesto de producto
 Para implementar los requisitos previos de la aplicación, puede crear un paquete de programa previo. Un paquete de programa previo contiene un solo archivo de manifiesto de producto, pero un manifiesto de paquete para cada configuración regional. El manifiesto del paquete contiene aspectos específicos de la localización del paquete. Esto incluye las cadenas, los contratos de licencia para el usuario final y los paquetes de idioma.
@@ -66,7 +66,7 @@ Para implementar los requisitos previos de la aplicación, puede crear un paquet
 
 6. Copie o mueva el archivo de *CorePackage.msi* a la carpeta *C:\package* .
 
-7. Agregue XML para instalar el paquete mediante los comandos de arranque. El programa previo agrega automáticamente la marca **/QN** al archivo *. msi* , que se instalará de forma silenciosa. Si el archivo es un archivo *. exe* , el programa previo ejecuta el archivo *. exe* mediante el shell. El siguiente XML no muestra ningún argumento para *CorePackage.msi* , pero puede colocar el argumento de la línea de comandos en el `Arguments` atributo.
+7. Agregue XML para instalar el paquete mediante los comandos de arranque. El programa previo agrega automáticamente la marca **/QN** al archivo *. msi* , que se instalará de forma silenciosa. Si el archivo es un archivo *. exe*, el programa previo ejecuta el archivo *. exe* mediante el shell. El siguiente XML no muestra ningún argumento para *CorePackage.msi*, pero puede colocar el argumento de la línea de comandos en el `Arguments` atributo.
 
     ```xml
     <Commands>

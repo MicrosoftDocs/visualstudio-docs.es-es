@@ -10,15 +10,15 @@ helpviewer_keywords:
 - walkthroughs [Domain-Specific Language Tools]
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6709ede3de16a78e0042d035a87a715b9ce4c80c
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: c58e01fa5da5608b183827e366c115c214aa483d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361214"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862016"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>Agregar una propiedad de seguimiento a una definición de lenguaje específico de dominio
 
@@ -50,7 +50,7 @@ Para poder iniciar este tutorial, primero debe instalar estos componentes:
 
 | Componente | Vínculo |
 |-|-|
-| Visual Studio | [http://go.microsoft.com/fwlink/?LinkID=185579](https://visualstudio.microsoft.com/) |
+| Programa para la mejora | [http://go.microsoft.com/fwlink/?LinkID=185579](https://visualstudio.microsoft.com/) |
 | [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185580](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts&preserve-view=true) |
 | [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185581](https://code.msdn.microsoft.com/site/search?query=%22Modeling%20SDK%22&f%5B0%5D.Value=%22Modeling%20SDK%22&f%5B0%5D.Type=SearchText&ac=5) |
 
@@ -720,7 +720,7 @@ El paso siguiente consiste en compilar y ejecutar el diseñador de DSL en una nu
 
 1. En el menú **Compilar**, haga clic en **Recompilar solución**.
 
-2. En el menú **Depurar** , haga clic en **Iniciar depuración**.
+2. En el menú **Depurar**, haga clic en **Iniciar depuración**.
 
     La compilación experimental de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] abre la solución de **depuración** , que contiene un archivo de prueba vacío.
 
@@ -756,7 +756,7 @@ El paso siguiente consiste en compilar y ejecutar el diseñador de DSL en una nu
 
 Si piensa usar más de una propiedad de seguimiento o implementar propiedades de seguimiento en más de un DSL, puede crear una plantilla de texto para generar el código común para admitir cada propiedad de seguimiento. Para obtener más información acerca de las plantillas de texto, vea [generación de código y plantillas de texto T4](../modeling/code-generation-and-t4-text-templates.md).
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - <xref:Microsoft.VisualStudio.Modeling.Design.TrackingPropertyDescriptor>
 - <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>

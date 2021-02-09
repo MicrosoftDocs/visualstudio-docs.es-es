@@ -7,16 +7,16 @@ ms.topic: how-to
 ms.assetid: d67e0c53-9f5a-45fb-a929-b9d2125c3c82
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: b7e4c9690e573d2807eb3ad9d842921ee08417d8
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 65415c22da2815650278ac1190e7d19f54b96063
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974555"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853090"
 ---
 # <a name="creating-a-custom-start-page"></a>Crear una página de inicio personalizada
 
@@ -26,7 +26,7 @@ Puede crear una página de inicio personalizada siguiendo los pasos descritos en
 
 En primer lugar, cree una página de inicio en blanco mediante la creación de un archivo *. Xaml* que tenga una estructura de etiqueta que Visual Studio reconozca. A continuación, agregue marcado y código subyacente para generar la apariencia y la funcionalidad que desee.
 
-1. Cree un nuevo proyecto del tipo **aplicación WPF** (escritorio de Windows de **Visual C#**  >  **Windows Desktop**).
+1. Cree un nuevo proyecto del tipo **aplicación WPF** (escritorio de Windows de **Visual C#**  >  ).
 
 2. Agregue una referencia a `Microsoft.VisualStudio.Shell.14.0`.
 
@@ -77,7 +77,7 @@ No establezca la instancia principal de Visual Studio para ejecutar la página d
 
 3. En un símbolo del sistema de Visual Studio, escriba **devenv/Rootsuffix exp** para abrir una instancia experimental de Visual Studio.
 
-4. En la instancia experimental, vaya a la **Tools**  >  Página de inicio del entorno **Opciones** de herramientas  >  **Environment**  >  **Startup** y seleccione el archivo XAML en el menú desplegable **Personalizar Página principal** .
+4. En la instancia experimental, vaya a la   >  Página de inicio del entorno **Opciones** de herramientas  >    >   y seleccione el archivo XAML en el menú desplegable **Personalizar Página principal** .
 
 5. En el menú **Vista** , haga clic en **Página de inicio**.
 

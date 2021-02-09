@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1b8e0528-95bc-48fa-9653-2cea66c8dc3a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d7c93c1e5811ec3aed5d44f3c306de1c09cced9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c194ef3585a8ba3f0a0ab90e5ea39f4ad3a04622
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723449"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861106"
 ---
 # <a name="idebugprocessdestroyevent2"></a>IDebugProcessDestroyEvent2
 Esta interfaz se envía cuando se finaliza un proceso, se cierra de forma atípica o se desasocia de.
@@ -25,7 +25,7 @@ Esta interfaz se envía cuando se finaliza un proceso, se cierra de forma atípi
 ## <a name="syntax"></a>Sintaxis
 
 ```
-IDebugProcessDestroyEvent2 : IUnknown
+IDebugProcessDestroyEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para los implementadores
@@ -41,7 +41,7 @@ IDebugProcessDestroyEvent2 : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

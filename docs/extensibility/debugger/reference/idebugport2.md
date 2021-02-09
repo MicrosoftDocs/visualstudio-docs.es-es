@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8fd87f05-a950-4d14-b925-98be29d4facc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 62912be9fdfecc98a264a58c9713cc12ccaf28f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d50266e792d58be3824e5c14e4936f3af381f0fc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725232"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861145"
 ---
 # <a name="idebugport2"></a>IDebugPort2
 Esta interfaz representa un puerto de depuración en un equipo.
@@ -48,7 +48,7 @@ IDebugPort2 : IUnknown
 |[GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)|Devuelve una interfaz al proceso dado el identificador del proceso.|
 |[EnumProcesses](../../../extensibility/debugger/reference/idebugport2-enumprocesses.md)|Enumera todos los procesos que se ejecutan en un puerto.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  El puerto local proporciona acceso a todos los procesos y programas que se ejecutan en el equipo local. Otros puertos pueden representar una conexión de cable serie a un dispositivo basado en Windows CE o una conexión de red a un equipo no DCOM. La `IDebugPort2` interfaz se utiliza para buscar el nombre y el identificador de un puerto y enumerar todos los procesos que se ejecutan en el puerto. En la interfaz se implementan los recursos para iniciar y terminar los procesos en el puerto `IDebugPortEx2` .
 
 ## <a name="requirements"></a>Requisitos

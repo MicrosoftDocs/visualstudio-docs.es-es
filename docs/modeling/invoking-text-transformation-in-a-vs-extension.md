@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 40e781e08bba5e01b5e453e4545b5dd19e5a4d16
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 4a90ae2a1d5460cd62ff1ccae1542f21c4002433
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360876"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860898"
 ---
 # <a name="invoke-text-transformation-in-a-visual-studio-extension"></a>Invocar la transformación de texto en una extensión de Visual Studio
 

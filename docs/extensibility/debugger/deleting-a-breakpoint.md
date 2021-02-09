@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 75a046cc-d20a-4c79-ad2d-1f18426ac5d0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 061175326a19af1866262421b381eb14267c7efd
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 8ebd2922f48a53c371f4930e5de1fd86ed6852a0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915562"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862180"
 ---
 # <a name="deleting-a-breakpoint"></a>Eliminar un punto de interrupción
 A continuación se describe el proceso al eliminar un punto de interrupción pendiente:
@@ -29,5 +29,5 @@ A continuación se describe el proceso al eliminar un punto de interrupción pen
 > [!NOTE]
 > Un solo punto de interrupción enlazado también puede eliminarse mediante una llamada a [IDebugBoundBreakpoint2::D iminar](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Llamar a eventos del depurador](../../extensibility/debugger/calling-debugger-events.md)
