@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: cadbd6a1-bc7c-4aff-8777-5396b7a23c3e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4926d94e4ba032f3ff10ca8fdf7027ac6f6e751c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aa1401181f844be2e1fa3dfd9e45b627e2daae19
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728246"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904582"
 ---
 # <a name="idebuggenericfielddefinitiongetformaltypeparams"></a>IDebugGenericFieldDefinition::GetFormalTypeParams
 Recupera los parámetros de tipo dados el número de parámetros.
@@ -55,7 +55,7 @@ enuncia Matriz de parámetros de tipo.
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Devuelva los parámetros de tipo en orden de izquierda a derecha. Por ejemplo, Dictionary \<K,V> devuelve IDebugFormalGenericParameters {K, V}.
 
 ## <a name="see-also"></a>Vea también

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2483cce5-321c-4d3c-9c5c-ee8385263f74
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fdd7e23840701981eaea46b44355c34b55b37a33
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 688c7de73c1a935ed6f7a30c6d956c7db97bdc6f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190140"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906119"
 ---
 # <a name="additional-source-control-guidelines-for-projects-and-editors"></a>Instrucciones adicionales de control de código fuente para proyectos y editores
 Hay una serie de instrucciones que se deben cumplir con los proyectos y los editores para admitir el control de código fuente.
@@ -35,5 +35,5 @@ Hay una serie de instrucciones que se deben cumplir con los proyectos y los edit
 |Conservar objetos y propiedades en orden predecible|X|X|Conservar los archivos en un orden predecible, como el orden alfabético, para facilitar la combinación.|
 |Recargar|X|X|Cuando un archivo cambia en el disco, el editor debe poder volver a cargarlo. Al participar en el control de código fuente, el entorno volverá a cargar los datos mediante una llamada a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A> implementación. El caso de recarga más difícil es cuando se produce una desprotección cuando se llama a IVsQueryEditQuerySave:: <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> y se procesa información. Sin embargo, el código de recarga debe ser capaz de ejecutarse en esta situación.<br /><br /> El entorno vuelve a cargar automáticamente los archivos de proyecto. Sin embargo, un proyecto debe implementar <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2> si tiene jerarquías anidadas para admitir la recarga de archivos de proyecto anidados.|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Compatibilidad con el control de código fuente](../../extensibility/internals/supporting-source-control.md)

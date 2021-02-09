@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e0aeb601449ffcc47b7f7786825ee222b8b6ac5b
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 3c484c08b3335d51283f1f6e1a7b29757a2271aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190088"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906071"
 ---
 # <a name="author-vsct-files"></a>Archivos Author. Vsct
 En este documento se muestra cómo crear un archivo *. Vsct* para agregar elementos de menú, barras de herramientas y otros elementos de la interfaz de usuario (IU) al entorno de desarrollo integrado (IDE) de Visual Studio. Siga estos pasos al agregar elementos de interfaz de usuario a un paquete de Visual Studio (VSPackage) que todavía no tiene un archivo *. Vsct* .
@@ -235,7 +235,7 @@ En este documento se muestra cómo crear un archivo *. Vsct* para agregar elemen
 
    - Controlador de menú: un controlador de menú es un botón que tiene una flecha al lado. Al hacer clic en la flecha, se abre una lista. Para agregar un controlador de menú a la interfaz de usuario, cree un `Menu` elemento y establezca su `type` atributo en `MenuController` o `MenuControllerLatched` , según el comportamiento que desee. Para rellenar un controlador de menú, establézcalo como elemento primario de un `Group` elemento. El controlador de menú mostrará todos los elementos secundarios de ese grupo en la lista desplegable.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Extender menús y comandos](../../extensibility/extending-menus-and-commands.md)
 - [Archivos de tabla de comandos de Visual Studio (. Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Referencia del esquema XML de VSCT](../../extensibility/vsct-xml-schema-reference.md)

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 0da81b98-f5e3-40d3-ba9a-94551378d0b4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2edd0349555380f6d98d24f7a40c22e48797d12
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 3fdbd9220ef82102dd66f10ab7f15570118bae9a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863760"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904538"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Referencia del esquema de extensión VSIX 2,0
 Un archivo de manifiesto de implementación de VSIX describe el contenido de un paquete VSIX. El formato de archivo se rige por un esquema. La versión 2,0 de este esquema admite la adición de tipos y atributos personalizados.  El esquema del manifiesto es extensible. El cargador de manifiestos omite los elementos y atributos XML que no comprende.
@@ -221,6 +221,6 @@ Un archivo de manifiesto de implementación de VSIX describe el contenido de un 
 </PackageManifest>
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Envío de extensiones de Visual Studio](../extensibility/shipping-visual-studio-extensions.md)

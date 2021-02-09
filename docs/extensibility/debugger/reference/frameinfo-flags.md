@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 41578062-8455-412a-9d8b-1e1e9dc8d52e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3510726400623c5ddf3e7a4d58a4903763b91245
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9dcdb555e4355d6f22c8218f98899c01b3b3e2e0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736802"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904779"
 ---
 # <a name="frameinfo_flags"></a>FRAMEINFO_FLAGS
 Especifica la información que se va a recuperar sobre un objeto de marco de pila.
@@ -28,7 +28,7 @@ Especifica la información que se va a recuperar sobre un objeto de marco de pil
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-enum enum_FRAMEINFO_FLAGS {
+enum enum_FRAMEINFO_FLAGS {
     FIF_FUNCNAME              = 0x00000001,
     FIF_RETURNTYPE            = 0x00000002,
     FIF_ARGS                  = 0x00000004,
@@ -65,7 +65,7 @@ typedef DWORD FRAMEINFO_FLAGS;
 ```
 
 ```csharp
-public enum enum_FRAMEINFO_FLAGS {
+public enum enum_FRAMEINFO_FLAGS {
     FIF_FUNCNAME              = 0x00000001,
     FIF_RETURNTYPE            = 0x00000002,
     FIF_ARGS                  = 0x00000004,
@@ -194,7 +194,7 @@ No permita la `ToString()` evaluación o el formato de funciones al devolver arg
 `FIF_DESIGN_TIME_EXPR_EVAL`\
 La información del marco debe obtenerse del dominio de aplicación hospedado en lugar del proceso de hospedaje.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Estas marcas se pasan a los métodos [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) y [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) para indicar qué campos se van a inicializar en la estructura o estructuras de [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) .
 
 Estas marcas también se usan para indicar qué campos de la estructura [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) se usan y son válidos cuando se devuelve la estructura. Estos valores se pueden combinar con una operación bit a bit `OR` .

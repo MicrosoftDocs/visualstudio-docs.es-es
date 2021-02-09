@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a10cbb6b-11a8-4056-b42a-2ecebf0e690d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44a1736890ac78e7aaf20b4a639b1794fc63b5ac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc5683e39da2da190468b2cafd0d3accae9b7479
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731365"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904016"
 ---
 # <a name="idebugdocumenttextevents2"></a>IDebugDocumentTextEvents2
 Esta interfaz se utiliza para notificar a Visual Studio los cambios realizados en el documento de origen que proporciona el motor de depuración.
@@ -46,7 +46,7 @@ IDebugDocumentTextEvents2 : IUnknown
 |[onUpdateTextAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatetextattributes.md)|Notifica al paquete de depuración que se han actualizado los atributos de texto en el documento.|
 |[onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md)|Notifica al receptor el evento de que se han actualizado los atributos del documento.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Solo los motores de depuración que proporcionan sus propios documentos aprovecharán la `IDebugDocumentTextEvent2` interfaz. Un ejemplo de esto sería un motor de depuración de scripting. En el proceso de interpretar los scripts, se puede generar código fuente nuevo que no está presente en ningún archivo de disco y solo lo conoce el DE.
 
 ## <a name="requirements"></a>Requisitos

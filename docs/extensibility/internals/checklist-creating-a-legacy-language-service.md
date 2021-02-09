@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 8b73b341-a33a-4ab5-9390-178c9e563d2d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 905d81d49706c3ae5348d71c03189d6e036dd3e5
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 823d46453ac6ad4a1a5a42c1f7d18a079b39d12d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189997"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905859"
 ---
 # <a name="checklist-create-a-legacy-language-service"></a>Lista de comprobación: creación de un servicio de lenguaje heredado
 La siguiente lista de comprobación resume los pasos básicos que debe seguir para crear un servicio de lenguaje para el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Editor básico. Para integrar el servicio de lenguaje en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , debe crear un evaluador de expresiones de depuración. Para obtener más información, vea [escribir un evaluador de expresiones CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) en la [extensibilidad del depurador de Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md).
@@ -125,6 +125,6 @@ La siguiente lista de comprobación resume los pasos básicos que debe seguir pa
 
   - Proporcione el contexto de todos los usuarios implementando la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider> interfaz.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Desarrollo de un servicio de lenguaje heredado](../../extensibility/internals/developing-a-legacy-language-service.md)
 - [Escribir un evaluador de expresiones CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

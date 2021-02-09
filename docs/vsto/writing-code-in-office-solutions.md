@@ -32,15 +32,15 @@ helpviewer_keywords:
 - managed code extensions [Office development in Visual Studio], writing code
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 40ea589cb4406a383876b1f16721f18fc48ebadd
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: b0f72e859e0847b5035e99146ef6c0435ef299d6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526019"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904453"
 ---
 # <a name="write-code-in-office-solutions"></a>Escribir código en soluciones de Office
   Hay algunos aspectos de la escritura de código en proyectos de Office que difieren de otros tipos de proyectos de Visual Studio. Muchas de estas diferencias están relacionadas con la forma en que los modelos de objetos de Office se exponen al código administrado. Otras diferencias están relacionadas con el diseño de los proyectos de Office.
@@ -121,7 +121,7 @@ En la tabla siguiente se muestran las diferencias principales entre Visual Basic
 |-------------|-----------------|-----------------------------------------|
 |Índices de matriz|El límite de matriz inferior de las colecciones de aplicaciones de Microsoft Office comienza por 1. Visual Basic y Visual C# usan matrices basadas en 0. Para obtener más información, vea [matrices &#40;C&#35; guía de programación&#41;](/dotnet/csharp/programming-guide/arrays/index) y [matrices en Visual Basic](/dotnet/visual-basic/programming-guide/language-features/arrays/index).|Para obtener acceso al primer elemento de una colección en el modelo de objetos de una aplicación de Microsoft Office, utilice el índice 1 en lugar de 0.|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)
 - [Acceso global a objetos en proyectos de Office](../vsto/global-access-to-objects-in-office-projects.md)

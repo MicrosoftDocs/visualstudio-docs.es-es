@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 95001b89-dddb-45bb-889d-8327994e38a5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c40361a9739bf468de2038df4325fa1ac98337c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e1d52989d5687e922e0cb0ab306efc5321ffecef
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736782"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904752"
 ---
 # <a name="frameinfo"></a>FRAMEINFO
 Describe un marco de pila.
@@ -63,7 +63,7 @@ public struct FRAMEINFO {
 } FRAMEINFO;
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 `m_dwValidFields`\
 Combinación de marcas de la enumeración [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) que especifica qué campos se rellenan.
 
@@ -103,7 +103,7 @@ Distinto de cero ( `TRUE` ) si el marco de pila está asociado a código que ya 
 `m_fAnnotatedFrame`\
 Distinto de cero ( `TRUE` ) si el administrador de depuración de la sesión (SDM) anota el marco de pila.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Esta estructura se pasa al método [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) que se va a rellenar. Esta estructura también se incluye en una lista incluida en la interfaz [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) que, a su vez, se devuelve desde una llamada al método [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) .
 
 ## <a name="requirements"></a>Requisitos

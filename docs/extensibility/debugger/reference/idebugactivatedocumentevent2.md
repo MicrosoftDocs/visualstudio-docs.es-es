@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6f37edd7-a48c-4b41-b160-dff9be63a284
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f601027ce9e71dff6687bcd6aa1b08f13f5ce0cf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ec3168a7e104e20bbb53607b4bd7a6acd8e79e7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736620"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904657"
 ---
 # <a name="idebugactivatedocumentevent2"></a>IDebugActivateDocumentEvent2
 El motor DE depuración (DE) utiliza esta interfaz para solicitar un documento que se va a cargar.
@@ -42,7 +42,7 @@ IDebugActivateDocumentEvent2 : IUnknown
 |[GetDocument](../../../extensibility/debugger/reference/idebugactivatedocumentevent2-getdocument.md)|Obtiene el documento que se va a activar.|
 |[GetDocumentContext](../../../extensibility/debugger/reference/idebugactivatedocumentevent2-getdocumentcontext.md)|Obtiene el contexto del documento que describe la posición dentro del documento.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Un escenario típico en el que se usa esta interfaz es si se produce un error de análisis en el código de script de una página HTML, el script DE envía esta interfaz al SDM para que se pueda mostrar el documento con el error de análisis.
 
 ## <a name="requirements"></a>Requisitos

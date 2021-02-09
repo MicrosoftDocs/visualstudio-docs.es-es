@@ -16,15 +16,15 @@ helpviewer_keywords:
 - Bookmark control
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 53f68bfd9abd26d9dfcb9e253c412a1ddf3c0e28
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 1da30943eff228aad3c5413c5d8faea337634e9b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848370"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905262"
 ---
 # <a name="bookmark-control"></a>Bookmark (control)
   El control <xref:Microsoft.Office.Tools.Word.Bookmark> es un marcador que tiene un nombre único, expone eventos y se puede enlazar a datos. El marcador se puede usar como marcador de posición para marcar un elemento o una ubicación en un documento de Microsoft Office Word. El control <xref:Microsoft.Office.Tools.Word.Bookmark> s una combinación de un objeto <xref:Microsoft.Office.Interop.Word.Bookmark> y un objeto <xref:Microsoft.Office.Interop.Word.Range> .
@@ -93,7 +93,7 @@ En la tabla siguiente se muestra cómo dos marcadores superpuestos comparten un 
 |Bookmark1|This is replacement.|
 |Bookmark2|*\<empty>*|
 
-## <a name="events"></a>Eventos
+## <a name="events"></a>Events
 
 Los eventos siguientes están disponibles para el control <xref:Microsoft.Office.Tools.Word.Bookmark> :
 

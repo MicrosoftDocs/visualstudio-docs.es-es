@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 4e3d0a70-f22f-49dd-92d8-edf48ab62b52
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d9f93f0081d45e986ab6845cdaee53209b84e13
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 2bfcb9fdd7eff132d02c7d14be729cd871c8dd8e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190010"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905927"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>Coincidencia de llaves en un servicio de lenguaje heredado
 La coincidencia de llaves ayuda al desarrollador a realizar un seguimiento de los elementos del lenguaje que deben aparecer juntos, como paréntesis y llaves. Cuando un desarrollador escribe una llave de cierre, se resalta la llave de apertura.
@@ -137,6 +137,6 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Características del servicio de lenguaje heredado](../../extensibility/internals/legacy-language-service-features1.md)
 - [Analizador y analizador del servicio de lenguaje heredado](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)

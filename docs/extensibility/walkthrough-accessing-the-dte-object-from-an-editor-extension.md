@@ -9,21 +9,21 @@ helpviewer_keywords:
 ms.assetid: c1f40bab-c6ec-45b0-8333-ea5ceb02a39d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a0ee789590bd411fe7955cf739683d016164f49
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 7228165d49c7f11c15d12086933c473699ef6bc8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863704"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905582"
 ---
 # <a name="walkthrough-access-the-dte-object-from-an-editor-extension"></a>Tutorial: acceso al objeto DTE desde una extensión de editor
 
 En VSPackages, puede obtener el objeto DTE llamando al <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> método con el tipo del objeto DTE. En las extensiones de Managed Extensibility Framework (MEF), puede importar <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> y, a continuación, llamar al <xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A> método con un tipo de <xref:EnvDTE.DTE> .
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
 
 Para seguir este tutorial, debe instalar SDK de Visual Studio. Para obtener más información, vea el [SDK de Visual Studio](../extensibility/visual-studio-sdk.md).
 
@@ -92,7 +92,7 @@ Para seguir este tutorial, debe instalar SDK de Visual Studio. Para obtener más
 
 ::: moniker-end
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Puntos de extensión de editor y servicio de lenguaje](../extensibility/language-service-and-editor-extension-points.md)
 - [Inicio de Visual Studio con DTE](launch-visual-studio-dte.md)

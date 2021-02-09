@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 0306dc3b-075a-4091-ac3a-96486fbabed5
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8751c15e40658e7a901550eef3d86050da842cc7
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 3997b72105c22f10500559370d8a23faaa2f24eb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435604"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905166"
 ---
 # <a name="parallel-activity-designer"></a>Diseñador de actividades Parallel
 
@@ -27,7 +27,7 @@ La actividad de la clase <xref:System.Activities.Statements.Parallel> ejecuta un
 
 La actividad de la clase <xref:System.Activities.Statements.Parallel> almacena sus actividades secundarias en una colección de la propiedad <xref:System.Activities.Statements.Parallel.Branches%2A>. Use la actividad de la clase <xref:System.Activities.Statements.Parallel> en vez de la actividad de la clase <xref:System.Activities.Statements.Sequence> si alguna de las actividades secundarias se puede quedar inactiva.
 
-La <xref:System.Activities.Statements.Parallel> actividad tiene una <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> propiedad que contiene una expresión de Visual Basic especificada por el usuario. La actividad <xref:System.Activities.Statements.Parallel> evalúa esta propiedad una vez se complete cada bifurcación. Si se evalúa como **true** , la actividad se <xref:System.Activities.Statements.Parallel> completa sin ejecutar las otras bifurcaciones. Si no <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> se evalúa como **true** , la actividad se <xref:System.Activities.Statements.Parallel> completa cuando se han completado todas sus actividades secundarias.
+La <xref:System.Activities.Statements.Parallel> actividad tiene una <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> propiedad que contiene una expresión de Visual Basic especificada por el usuario. La actividad <xref:System.Activities.Statements.Parallel> evalúa esta propiedad una vez se complete cada bifurcación. Si se evalúa como **true**, la actividad se <xref:System.Activities.Statements.Parallel> completa sin ejecutar las otras bifurcaciones. Si no <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> se evalúa como **true**, la actividad se <xref:System.Activities.Statements.Parallel> completa cuando se han completado todas sus actividades secundarias.
 
 ### <a name="using-the-parallel-activity-designer"></a>Usar el diseñador de actividad Parallel
 
@@ -43,11 +43,11 @@ En la tabla siguiente se muestran las propiedades de la actividad Parallel y se 
 
 |Nombre de propiedad|Obligatorio|Uso|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|Falso|Especifica el nombre para mostrar descriptivo del diseñador de actividades en el encabezado. El valor predeterminado es **Parallel**. El valor se puede editar opcionalmente en la cuadrícula de **propiedades** o directamente en el encabezado del diseñador de actividad.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Especifica el nombre para mostrar descriptivo del diseñador de actividades en el encabezado. El valor predeterminado es **Parallel**. El valor se puede editar opcionalmente en la cuadrícula de **propiedades** o directamente en el encabezado del diseñador de actividad.|
 |<xref:System.Activities.Statements.Parallel.Branches%2A>|True|Contiene la colección de actividades secundarias que se van a ejecutar.|
-|<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|Falso|Se evalúa cuando se completa una bifurcación. Si se evalúa como **true** , se cancelan las bifurcaciones pendientes programadas. Si esta propiedad no se establece o se evalúa como **false** , la actividad se completa cuando se han completado todas sus actividades secundarias. El valor predeterminado es **null**.|
+|<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|False|Se evalúa cuando se completa una bifurcación. Si se evalúa como **true**, se cancelan las bifurcaciones pendientes programadas. Si esta propiedad no se establece o se evalúa como **false**, la actividad se completa cuando se han completado todas sus actividades secundarias. El valor predeterminado es **null**.|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Secuencia](../workflow-designer/sequence-activity-designer.md)
 - [ParallelForEach\<T>](../workflow-designer/parallelforeach-t-activity-designer.md)

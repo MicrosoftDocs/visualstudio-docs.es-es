@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 41f69e0a-e82c-473d-8b7a-0c40fc5730fc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5d0c67d62f57076f29f2c2ef60d456f517ae97fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ebd90baebc859f340bfb06df3fdbdc6012588183
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724750"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904564"
 ---
 # <a name="idebugportsupplier2canaddport"></a>IDebugPortSupplier2::CanAddPort
 Comprueba que un proveedor de puerto puede agregar nuevos puertos.
@@ -28,8 +28,8 @@ Comprueba que un proveedor de puerto puede agregar nuevos puertos.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT CanAddPort( 
-   void 
+HRESULT CanAddPort( 
+   void 
 );
 ```
 
@@ -40,7 +40,7 @@ int CanAddPort();
 ## <a name="return-value"></a>Valor devuelto
  Si se puede Agregar el puerto, devuelve `S_OK` ; de lo contrario, devuelve `S_FALSE` para indicar que no se pueden agregar puertos a este proveedor de puertos.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Llame a este método antes de llamar al método [AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md) , ya que el último método crea el puerto y lo agrega, lo que podría ser una operación que consume mucho tiempo.
 
 ## <a name="see-also"></a>Vea también

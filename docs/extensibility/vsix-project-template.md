@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76e4301843cc318b60940948fee4b618860e7bae
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: d346826c97bfa0ed885579d4816c452dbed9a2d5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863873"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905721"
 ---
 # <a name="vsix-project-template"></a>Plantilla de proyecto de VSIX
 
@@ -84,7 +84,7 @@ Puede empaquetar una extensión existente o una extensión que no tenga compatib
 
     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] compila un archivo *. vsix* que contiene un archivo de manifiesto VSIX, un archivo [Content_Types]*. XML* y todos los recursos de extensión que ha agregado al proyecto.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Referencia del esquema de extensión VSIX 2,0](../extensibility/vsix-extension-schema-2-0-reference.md)
 - [Búsqueda y uso de extensiones de Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)

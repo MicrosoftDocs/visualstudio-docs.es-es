@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Domain-Specific Language, domain properties
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 40dcba1cb83e695f2b02468bdd83a5faa8c25a38
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 440d2f42fb7967ebbcb97433c3faa55e2d91ca0e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363320"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903935"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Cómo: Definir lenguajes específicos de dominio
 Para definir un lenguaje específico de dominio (DSL), se crea una solución de Visual Studio a partir de una plantilla. La parte clave de la solución es el diagrama DSL Definition (Definición de DSL), que se almacena en DslDefinition.dsl. DSL Definition (Definición de DSL) define las clases y las formas del DSL. Después de modificar y agregar estos elementos, puede agregar código de programa para personalizar el DSL con más detalle.
@@ -34,7 +34,7 @@ Si no está familiarizado con los DSL, se recomienda que trabaje en el **laborat
 
 Para definir un DSL, debe tener instalados los siguientes componentes:
 
-- Visual Studio
+- Programa para la mejora
 - Carga de trabajo de desarrollo de extensiones de Visual Studio (incluye el SDK de Visual Studio)
 - SDK de modelado (instálelo como componente individual en Visual Studio)
 
@@ -622,7 +622,7 @@ Para crear un nuevo lenguaje específico de dominio, cree una nueva solución de
 | El cuadro de herramientas de mi DSL no aparece después de cambiar los nombres de ensamblado. | Inspeccione y actualice **DslPackage\GeneratedCode\Package.TT** para obtener más información, consulte [Cómo: cambiar el espacio de nombres de un Domain-Specific idioma](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md). |
 | El cuadro de herramientas de mi DSL no aparece, pero no he cambiado el nombre del ensamblado.<br /><br /> O bien, se muestra un cuadro de mensaje que indica un error al cargar una extensión. | Restablezca la instancia experimental y vuelva a compilar la solución.<br /><br /> 1. en el menú Inicio de Windows, en **todos los programas**, expanda [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)] , **herramientas** y, a continuación, haga clic en **restablecer la Microsoft Visual Studio instancia experimental**.<br />2. en el menú **compilar** , haga clic en **recompilar solución**. |
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [Introducción a los lenguajes específicos de dominio](../modeling/getting-started-with-domain-specific-languages.md)
 - [Crear lenguajes específicos de dominio basados en Windows Forms](../modeling/creating-a-windows-forms-based-domain-specific-language.md)

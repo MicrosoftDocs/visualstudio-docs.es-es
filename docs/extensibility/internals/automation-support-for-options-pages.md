@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 0b25b82c-7432-4e0a-9e84-350269ba8260
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e15b1f8bdd27e013e1ef2060d9867a81e8ddde3
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 532568dc0e4d181dfe3de56151096565bf9ff771
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190036"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905978"
 ---
 # <a name="automation-support-for-options-pages"></a>Compatibilidad de automatización con las páginas de opciones
 Los paquetes VSPackage pueden proporcionar cuadros de diálogo de **Opciones** personalizadas al menú **herramientas** (páginas **Opciones de herramientas** ) en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] y pueden hacer que estén disponibles para el modelo de automatización.
@@ -38,5 +38,5 @@ Los paquetes VSPackage pueden proporcionar cuadros de diálogo de **Opciones** p
 
    Para obtener un ejemplo de implementación de una página de **Opciones de herramientas** personalizadas, vea [ejemplos de VSSDK](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Exponer objetos de proyecto](../../extensibility/internals/exposing-project-objects.md)
