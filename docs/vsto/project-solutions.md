@@ -16,15 +16,15 @@ helpviewer_keywords:
 - solutions [Office development in Visual Studio], Project
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c44e1208daaef11cb7fd9bd22e3e3ae574ca610d
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: b17ff0312574a4e41b283bd3c631977a834c64c2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527512"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971822"
 ---
 # <a name="project-solutions"></a>Soluciones de proyecto
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] incluye plantillas de proyecto que se pueden usar para crear complementos VSTO para Microsoft Office Project. Puede usar los complementos para automatizar Project, ampliar sus características o personalizar la interfaz de usuario.
@@ -64,7 +64,7 @@ ms.locfileid: "97527512"
 
  Para obtener más información sobre cómo personalizar la interfaz de usuario de Project y otras aplicaciones Microsoft Office, consulte [Personalización](../vsto/office-ui-customization.md)de la interfaz de usuario de Office.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Tutorial: crear el primer complemento de VSTO para Project](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)
 - [Introducción a la programación de complementos de VSTO](../vsto/getting-started-programming-vsto-add-ins.md)
 - [Información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)

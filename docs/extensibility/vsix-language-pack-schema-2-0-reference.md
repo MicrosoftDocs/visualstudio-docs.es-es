@@ -12,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 2a2932bc-cdbe-4d32-91fa-a3e0474f9098
 author: acangialosi
 ms.author: anthc
-manager: jillfra
-ms.openlocfilehash: fc9c3c1aa7f8cf77ebf165a3e10a67ccbd5887f7
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+manager: jmartens
+ms.openlocfilehash: 5a12fe1be4030332e804f38cee1e0eb646356d79
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863831"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971874"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>Referencia del esquema del paquete de idioma VSIX 2,0
 
@@ -32,7 +32,7 @@ El elemento raíz del archivo de paquete de idioma es `<PackageLanguagePackManif
 
 Dentro del `<PackageLanguagePackManifest>` elemento debe existir el siguiente elemento:
 
-|Title|Descripción|
+|Título|Descripción|
 |-----------|-----------------|
 |`<Metadata>`| El elemento contenedor para todos los metadatos de paquete localizados
 
@@ -40,7 +40,7 @@ Dentro del `<PackageLanguagePackManifest>` elemento debe existir el siguiente el
 
 Dentro del `<Metadata>` elemento puede tener los elementos siguientes:
 
-|Title|Descripción|
+|Título|Descripción|
 |-----------|-----------------|
 |`<DisplayName>`|Nombre localizado de la extensión que se va a instalar.|
 |`<Description>`|La descripción localizada de la extensión que se va a instalar.|

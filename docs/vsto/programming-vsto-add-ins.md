@@ -31,15 +31,15 @@ helpviewer_keywords:
 - ThisAddIn_Shutdown
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7c3a4b14a1935d1d276f0884234fcd121b838f39
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 83fdc3b6a60c5f8972ff5d955c56476fb13315d9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525121"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971835"
 ---
 # <a name="program-vsto-add-ins"></a>Complementos de VSTO de programa
   Cuando se amplía una aplicación de Microsoft Office mediante la creación de un complemento VSTO, el código se escribe directamente en la clase `ThisAddIn` de su proyecto. Puede usar esta clase para realizar tareas tales como tener acceso al modelo de objetos de la aplicación host de Microsoft Office, personalizar la interfaz de usuario (UI) de la aplicación y exponer objetos del complemento VSTO en otras soluciones de Office.
@@ -145,7 +145,7 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
 
  Para obtener más información, consulte [llamar a código en complementos de VSTO desde otras soluciones de Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Desarrollo de soluciones de Office](../vsto/developing-office-solutions.md)
 - [Ampliar documentos de Word y libros de Excel en complementos de VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Llamar a código en complementos de VSTO desde otras soluciones de Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)
