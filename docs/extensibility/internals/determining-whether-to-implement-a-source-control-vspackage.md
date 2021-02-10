@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 60b3326e-e7e2-4729-95fc-b682e7ad5c99
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c7b6c0e786f13ff526a1b71861c040cb165bc9e4
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 80c86a8ab40b74d1b8f2838e3bf4359af41b0fc5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329827"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963437"
 ---
 # <a name="determine-whether-to-implement-a-source-control-vspackage"></a>Determinar si se va a implementar un VSPackage de control de código fuente
 
@@ -41,6 +41,6 @@ En esta sección se describen las opciones de los complementos de control de có
 
 4. Controlar los eventos de edición de consulta y de guardado de consulta (vea consulta de edición de consultas [Guardar](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Crear un complemento de control de código fuente](../../extensibility/internals/creating-a-source-control-plug-in.md)

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: acbcf4d8-a53a-4727-9043-696a47369479
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9574a3319d3c43c17d7351e462b6956ae899d84
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 48d642c8a3b7883507c06453c0025badc299ce75
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328410"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963424"
 ---
 # <a name="determine-which-editor-opens-a-file-in-a-project"></a>Determinar qué editor abre un archivo en un proyecto
 Cuando un usuario abre un archivo en un proyecto, el entorno pasa por un proceso de sondeo y, finalmente, abre el editor o el diseñador adecuado para ese archivo. El procedimiento inicial empleado por el entorno es el mismo para los editores estándar y personalizados. El entorno utiliza diversos criterios al sondear qué editor se va a usar para abrir un archivo y el VSPackage debe coordinarse con el entorno durante este proceso.
@@ -41,7 +41,7 @@ Cuando un usuario abre un archivo en un proyecto, el entorno pasa por un proceso
 
  Ahora, el entorno comprueba la lista interna de editores registrados para encontrar el generador del editor recién registrado para los archivos *. rtf* . El entorno llama a la implementación del <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> método, pasando el nombre de archivo y el tipo de vista que se van a crear.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>
 - <xref:Microsoft.VisualStudio.OLE.Interop.IPersistStorage>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>
