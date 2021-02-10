@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: b9eb39ee-84af-4ace-9cfe-236b3d48aff5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fd01785fee7ce65296bac940fb19819415139d53
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2ba5456ba3beabb1d5418d739be2aa74838daa41
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736481"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947182"
 ---
 # <a name="idebugaliasgeticordebugvalue"></a>IDebugAlias::GetICorDebugValue
 Recupera una interfaz de código administrado que representa el valor asociado a este alias.
@@ -28,14 +28,14 @@ Recupera una interfaz de código administrado que representa el valor asociado a
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT GetICorDebugValue(
-   IUnknown** ppUnk
+HRESULT GetICorDebugValue(
+   IUnknown** ppUnk
 );
 ```
 
 ```csharp
 int GetICorDebugValue(
-   out object ppUnk
+   out object ppUnk
 );
 ```
 
@@ -46,7 +46,7 @@ int GetICorDebugValue(
 ## <a name="return-value"></a>Valor devuelto
  Si se realiza correctamente, Devuelve S_OK; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Este método solo se aplica a los valores administrados ( `ICorDebugValue` es una interfaz disponible en el .NET Framework y se define en el SDK de .NET Framework en el archivo Cordebug. idl).
 
 ## <a name="see-also"></a>Vea también

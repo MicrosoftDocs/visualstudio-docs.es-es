@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: bc94851a-0ec4-47ea-99c7-0a585e54e726
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 50e521d98f10477d56dfece30e20fd000b87b632
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2a0b37014433b670b24d466374682ee9a3654638
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731772"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947003"
 ---
 # <a name="idebugdocumentcontext2getstatementrange"></a>IDebugDocumentContext2::GetStatementRange
 Obtiene el intervalo de instrucciones de archivo del contexto del documento.
@@ -51,7 +51,7 @@ int GetStatementRange(
 ## <a name="return-value"></a>Valor devuelto
 Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Un intervalo de instrucciones es el intervalo de las líneas que han contribuido al código al que hace referencia este contexto de documento.
 
 Para obtener el intervalo de código fuente (incluidos los comentarios) dentro de este contexto de documento, llame al método [getsourcerange (](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md) .
