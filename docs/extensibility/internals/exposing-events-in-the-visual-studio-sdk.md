@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 70bbc258-c221-44f8-b0d7-94087d83b8fe
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d5eec842f989497fda618482916154aabdcdd406
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 00dd13898204fe322ec0ddd33db10e7ca19db167
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480543"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946649"
 ---
 # <a name="expose-events-in-the-visual-studio-sdk"></a>Exponer eventos en el SDK de Visual Studio
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] permite el origen de eventos mediante la automatización. Se recomienda el origen de eventos para proyectos y elementos de proyecto.
@@ -70,7 +70,7 @@ ms.locfileid: "96480543"
 
  *AutomationEvents. h* y *AutomationEvents. cpp* contienen declaraciones e implementaciones de las clases de la tabla siguiente.
 
-|Clase|Descripción|
+|Class|Descripción|
 |-----------|-----------------|
 |`CAutomationEvents`|Implementa un objeto raíz del evento, recuperado del `DTE.Events` objeto.|
 |`CProjectsEventsContainer` y `CProjectItemsEventsContainer`|Implemente los objetos de origen de eventos que desencadenan los eventos correspondientes.|
@@ -110,5 +110,5 @@ STDMETHODIMP CVsPackage::GetAutomationObject(
 
  Los objetos de evento se recuperan de la misma ubicación central, el `DTE.Events` objeto. De esta manera, todos los objetos de evento se agrupan para que un usuario final no tenga que examinar todo el modelo de objetos para encontrar un evento específico. Esto también le permite proporcionar objetos VSPackage específicos, en lugar de requerir que implemente su propio código para eventos para todo el sistema. Sin embargo, para el usuario final, que debe encontrar un evento para la `ProjectItem` interfaz, no se borra inmediatamente de donde se recupera ese objeto de evento.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>

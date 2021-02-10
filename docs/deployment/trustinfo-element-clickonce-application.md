@@ -21,20 +21,20 @@ helpviewer_keywords:
 ms.assetid: 8a813a74-e158-4308-be78-565937f6af83
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6779471edc25435f14511cc2ebcc34e6247225ee
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 3e91bdb2e842692224564374e3f9f4d23cf71cf8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349222"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945024"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>Elemento &lt;trustInfo&gt; (aplicación ClickOnce)
 Describe los permisos de seguridad mínimos necesarios para que la aplicación se ejecute en el equipo cliente.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ```xml
 
@@ -158,7 +158,7 @@ Describe los permisos de seguridad mínimos necesarios para que la aplicación s
 
    Opcional. Indica si la aplicación requiere acceso a elementos de la interfaz de usuario protegidos. Los valores son `true` o `false`y el predeterminado es false. Solo las aplicaciones firmadas deben tener un valor true.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Notas
  Si una aplicación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] solicita más permisos que los que concede el equipo cliente de forma predeterminada, el Administrador de confianza de Common Language Runtime preguntará al usuario si quiere conceder a la aplicación este nivel elevado de confianza. Si responde que no, no se ejecutará la aplicación; de lo contrario, se ejecutará con los permisos solicitados.
 
  Todos los permisos solicitados con `defaultAssemblyRequest` y `assemblyRequest` se concederán sin preguntar al usuario si el manifiesto de implementación tiene una licencia de confianza válida.

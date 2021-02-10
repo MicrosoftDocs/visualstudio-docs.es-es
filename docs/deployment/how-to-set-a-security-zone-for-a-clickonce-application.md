@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: d3dac454-518a-44d7-a76e-ccb7b9c3a150
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d2e8b49f833b5dd91dc6379d2a015d41a9679afe
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 23174667827e63afb93d82679a51d65512731710
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349781"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946077"
 ---
 # <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>Procedimientos para establecer una zona de seguridad para una aplicación ClickOnce
 Al establecer permisos de seguridad de acceso del código para una aplicación ClickOnce, debe empezar con un conjunto básico de permisos en la página **Seguridad** del **Diseñador de proyectos**.
@@ -32,9 +32,9 @@ Al establecer permisos de seguridad de acceso del código para una aplicación C
 
 ### <a name="to-set-a-security-zone"></a>Para establecer una zona de seguridad
 
-1. Con un proyecto seleccionado en **Explorador de soluciones** , en el menú **proyecto** , haga clic en **propiedades**.
+1. Con un proyecto seleccionado en **Explorador de soluciones**, en el menú **proyecto** , haga clic en **propiedades**.
 
-2. Haga clic en la pestaña **Security** (Seguridad).
+2. Haga clic en la pestaña **Seguridad** .
 
 3. Active la casilla **Habilitar configuración de seguridad de ClickOnce** .
 

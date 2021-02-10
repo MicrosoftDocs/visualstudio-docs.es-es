@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 5bb24967-434a-4ef4-87a0-2f3250c9e22d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d93b1bf414a9e58f8311a1f1d7066a789ef8c6b6
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 86b6151878f4d437013196fe738c457bbd188fc8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479516"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946610"
 ---
 # <a name="expose-project-objects"></a>Exponer objetos de proyecto
 
@@ -93,6 +93,6 @@ Es una Convención común para que los proyectos expongan una colección de proy
 
      El `Projects` objeto de colección personalizada es un punto de entrada útil para la parte restante del modelo de automatización del proyecto. También se puede tener acceso al objeto de proyecto desde la <xref:EnvDTE.Solution> colección de proyectos. Una vez que haya creado el código adecuado y las entradas del registro que proporcionan a los consumidores `Projects` objetos de colección, su implementación debe proporcionar objetos estándar restantes para el modelo de proyecto. Para obtener más información, vea [modelado del proyecto](../../extensibility/internals/project-modeling.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>

@@ -5,15 +5,15 @@ ms.date: 11/13/2017
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 89aa8b9d1b1f288e19252b8a111666f5b4e3e087
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.openlocfilehash: 76230555defd9367800f6c3c4e5ea0fe24a5195d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88238717"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946350"
 ---
 # <a name="work-with-r-in-visual-studio"></a>Trabajar con R en Visual Studio
 

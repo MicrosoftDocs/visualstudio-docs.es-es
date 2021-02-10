@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 69faee18-cbf4-470a-b952-c1919c583df8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0d39d4e4f795ddecab21765db43ba1a2f629dd7
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 0a5520a8a47b4b356a79832b619395f86e8231d9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993859"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945791"
 ---
 # <a name="group-element"></a>Group, elemento
 Define un grupo de comandos de VSPackage.
@@ -38,8 +38,8 @@ Define un grupo de comandos de VSPackage.
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|guid|Obligatorio. GUID del identificador del comando GUID/ID.|
-|id|Obligatorio. IDENTIFICADOR del identificador del comando GUID/ID.|
+|guid|Necesario. GUID del identificador del comando GUID/ID.|
+|id|Necesario. IDENTIFICADOR del identificador del comando GUID/ID.|
 |priority|Opcional. Valor numérico que especifica la prioridad.|
 |Condición|Opcional. Vea [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
@@ -64,5 +64,5 @@ Define un grupo de comandos de VSPackage.
 </Group>
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Archivos de tabla de comandos de Visual Studio (. Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

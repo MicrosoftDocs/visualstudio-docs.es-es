@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: afec3008-b1e0-4803-ad24-195dbfb6497e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4954b3b278b3c7a6b798a4ffda3856ab8bb200c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3223f454fbf775b6aa11512c20fc63f8c224ade7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732086"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944633"
 ---
 # <a name="idebugdisassemblystream2seek"></a>IDebugDisassemblyStream2::Seek
 Mueve el puntero de lectura en el flujo del desensamblado un número determinado de instrucciones relativas a una posición especificada.
@@ -28,7 +28,7 @@ Mueve el puntero de lectura en el flujo del desensamblado un número determinado
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT Seek( 
+HRESULT Seek( 
    SEEK_START          dwSeekStart,
    IDebugCodeContext2* pCodeContext,
    UINT64              uCodeLocationId,
@@ -37,7 +37,7 @@ HRESULT Seek( 
 ```
 
 ```csharp
-int Seek( 
+int Seek( 
    enum_SEEK_START    dwSeekStart,
    IDebugCodeContext2 pCodeContext,
    ulong              uCodeLocationId,
@@ -61,7 +61,7 @@ de Número de instrucciones que se van a mover en relación con la posición esp
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si la posición de búsqueda fue hasta un punto más allá de la lista de instrucciones disponibles. De lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Si la búsqueda estaba en una posición antes del principio de la lista, la posición de lectura se establece en la primera instrucción de la lista. Si la consulta va a una posición después del final de la lista, la posición de lectura se establece en la última instrucción de la lista.
 
 ## <a name="see-also"></a>Vea también

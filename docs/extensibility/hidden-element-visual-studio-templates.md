@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: f37406b0-52e7-4f2c-aacf-bc8d7a4117b3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 04cb966f21bbb501545f1a203297d06f8e852793
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 476e187a0e4c3cefde7f09124fbbd21374e2175c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672706"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945700"
 ---
 # <a name="hidden-element-visual-studio-templates"></a>Hidden (elemento, plantillas de Visual Studio)
 
@@ -63,7 +63,7 @@ Se requiere un valor de texto.
 
 El texto debe ser `true` o `false` , lo que indica si la plantilla aparecerá o no en los cuadros de diálogo **nuevo proyecto** o **Agregar nuevo elemento** .
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Notas
 
 `Hidden` es un elemento opcional.
 
@@ -98,7 +98,7 @@ En el ejemplo siguiente se muestran los metadatos de una plantilla de C#.
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Referencia de esquema de plantillas](../extensibility/visual-studio-template-schema-reference.md)
 - [Creación de plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)

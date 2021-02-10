@@ -15,15 +15,15 @@ helpviewer_keywords:
 - dependency graphs
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 39b34bb124d663d81769c6d3086d6b36803d60eb
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 9723fd44aedf4950b99a49b62d421230b43d55fc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362241"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946532"
 ---
 # <a name="map-dependencies-with-code-maps"></a>Asignación de dependencias con mapas de código
 
@@ -148,7 +148,7 @@ Para ver todas las dependencias de la solución:
 
     ![Seleccionar elementos para ver sus relaciones](../modeling/media/codemapsviewnewrelationships.png)
 
-Consulte también:
+Vea también:
 
 - [Examinar y reorganizar mapas de código](../modeling/browse-and-rearrange-code-maps.md)
 - [Personalizar mapas de código mediante la edición de los archivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
@@ -238,7 +238,7 @@ Supongamos que tiene una revisión de código para realizar en algunos archivos 
 
    ![Utilice el panel Filtro para simplificar la presentación](../modeling/media/almcodemapfilterpane.png)
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [Vídeo: Descripción del diseño de código con mapas de código de Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)
 - [Usar mapas de código para depurar aplicaciones](../modeling/use-code-maps-to-debug-your-applications.md)

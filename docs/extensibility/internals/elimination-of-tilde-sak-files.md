@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 5277b5fa-073b-4bd1-8ba1-9dc913aa3c50
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e846354b2d48b2f7866daa14987e757f41779c8
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 61b446416bc944b53d38b07b3a58358a333744b9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480517"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946688"
 ---
 # <a name="elimination-of-sak-files"></a>Eliminación de archivos ~ SAK
 En la API 1,2 del complemento de control de código fuente, los archivos *~ Sak* se han reemplazado por marcas de funcionalidad y nuevas funciones que detectan si un complemento de control de código fuente admite el archivo *MSSCCPRJ* y las desprotecciones compartidas.
@@ -52,5 +52,5 @@ En el caso de los complementos que admiten funciones avanzadas proporcionadas en
 > [!NOTE]
 > Si esta clave del registro se establece en *DWORD: 00000000*, es equivalente a la clave que no existe y Visual Studio sigue intentando crear los archivos temporales. Sin embargo, si la clave del registro se establece en *DWORD: 00000001*, Visual Studio no intenta crear los archivos temporales. En su lugar, supone que el complemento de control de código fuente no admite el archivo *MSSCCPRJ. SCC* y no admite desprotecciones compartidas.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Novedades de la API del complemento de control de código fuente versión 1,2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

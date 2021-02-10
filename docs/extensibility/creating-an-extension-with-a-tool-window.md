@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 585b0a3a-f85b-4f92-81bb-9ca499bb8a89
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf2bcbce3c97830663b43a94191d84d81418b423
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 1b03b7a4941609462fca27bebf67d8ad2a8f7044
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94973931"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944926"
 ---
 # <a name="create-an-extension-with-a-tool-window"></a>Crear una extensión con una ventana de herramientas
 
@@ -29,7 +29,7 @@ En este procedimiento, aprenderá a usar la plantilla de proyecto de VSIX y la p
 
 1. Cree un proyecto VSIX denominado **FirstWindow**. Para buscar la plantilla de Proyecto VSIX en el cuadro de diálogo **nuevo proyecto** , busque "VSIX".
 
-2. Cuando se abra el proyecto, agregue una plantilla de elemento de ventana de herramientas denominada My **Window**. En el **Explorador de soluciones**, haga clic con el botón secundario en el nodo del proyecto y seleccione **Agregar**  >  **nuevo elemento**. En el cuadro de diálogo **Agregar nuevo elemento** , vaya a extensibilidad de **Visual C#**  >  **Extensibility** y seleccione **ventana de herramientas personalizada**. En el campo **nombre** de la parte inferior de la ventana, cambie el nombre del archivo de la ventana de herramientas a *MyWindow.CS*.
+2. Cuando se abra el proyecto, agregue una plantilla de elemento de ventana de herramientas denominada My **Window**. En el **Explorador de soluciones**, haga clic con el botón secundario en el nodo del proyecto y seleccione **Agregar**  >  **nuevo elemento**. En el cuadro de diálogo **Agregar nuevo elemento** , vaya a extensibilidad de **Visual C#**  >   y seleccione **ventana de herramientas personalizada**. En el campo **nombre** de la parte inferior de la ventana, cambie el nombre del archivo de la ventana de herramientas a *MyWindow.CS*.
 
 3. Compile la solución y comience la depuración.
 

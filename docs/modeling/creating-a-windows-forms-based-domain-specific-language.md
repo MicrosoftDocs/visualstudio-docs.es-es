@@ -5,18 +5,18 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e4c712eed732830da4bc1b158c8ad53a65a45d8
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: 41c3ba299df1e6f9ce0e2848f7ffad59e5b3fbea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100458"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945414"
 ---
-# <a name="create-a-windows-forms-based-domain-specific-language"></a>Crear un lenguaje específico de dominio basado en Windows Forms
+# <a name="create-a-windows-forms-based-domain-specific-language"></a>Crear un lenguaje de Domain-Specific basado en Windows Forms
 
 Puede usar Windows Forms para mostrar el estado de un modelo de lenguaje específico del dominio (DSL), en lugar de utilizar un diagrama DSL. En este tema se explica cómo enlazar un Windows Form a un DSL mediante el SDK de visualización y modelado de Visual Studio.
 
@@ -79,7 +79,7 @@ La imagen siguiente es la definición de DSL que se usa en este tutorial.
 
 3. Cambie el nombre de la clase de dominio **ExampleModel** a `Farm` .
 
-     Proporcione propiedades de dominio adicionales denominadas `Size` de tipo **Int32**y `IsOrganic` de tipo **Boolean**.
+     Proporcione propiedades de dominio adicionales denominadas `Size` de tipo **Int32** y `IsOrganic` de tipo **Boolean**.
 
     > [!NOTE]
     > Si elimina la clase de dominio raíz y, a continuación, crea una nueva raíz, tendrá que restablecer la propiedad de clase raíz del editor. En el **Explorador de DSL**, seleccione **Editor**. A continuación, en el ventana Propiedades, establezca la **clase raíz** en `Farm` .
@@ -123,7 +123,7 @@ Ahora puede crear un nuevo control de usuario que mostrará la información que 
 
 2. Elija **objeto**, **siguiente**.
 
-     Expanda **DSL**, **Company. FarmApp**y seleccione **granja**, que es la clase raíz del modelo. Elija **Finalizar**.
+     Expanda **DSL**, **Company. FarmApp** y seleccione **granja**, que es la clase raíz del modelo. Elija **Finalizar**.
 
      En Explorador de soluciones, el proyecto de la **interfaz de usuario** contiene ahora **Properties\DataSources\Farm.DataSource**
 
@@ -149,14 +149,14 @@ Ahora puede crear un nuevo control de usuario que mostrará la información que 
 
 5. Elimine **farmBindingNavigator**. También se genera automáticamente en el `FarmControl` Diseñador, pero no es útil para esta aplicación.
 
-6. Mediante el cuadro de herramientas, cree dos instancias de **DataGridView**y asígneles un nombre `AnimalGridView` y `FieldGridView` .
+6. Mediante el cuadro de herramientas, cree dos instancias de **DataGridView** y asígneles un nombre `AnimalGridView` y `FieldGridView` .
 
    > [!NOTE]
    > Un paso alternativo es arrastrar los elementos animales y campos desde la ventana orígenes de datos hasta el control. Esta acción crea automáticamente cuadrículas de datos y enlaces entre la vista de cuadrícula y el origen de datos. Sin embargo, este enlace no funciona correctamente para los DSL. Por lo tanto, es mejor crear manualmente las cuadrículas de datos y los enlaces.
 
 7. Si el cuadro de herramientas no contiene la herramienta **ModelingBindingSource** , agréguela. En el menú contextual de la pestaña **datos** , elija **elegir elementos**. En el cuadro de diálogo **elegir elementos del cuadro de herramientas** , seleccione **ModelingBindingSource** en la pestaña **.NET Framework** .
 
-8. Mediante el cuadro de herramientas, cree dos instancias de **ModelingBindingSource**y asígneles un nombre `AnimalBinding` y `FieldBinding` .
+8. Mediante el cuadro de herramientas, cree dos instancias de **ModelingBindingSource** y asígneles un nombre `AnimalBinding` y `FieldBinding` .
 
 9. Establezca la propiedad **DataSource** de cada **ModelingBindingSource** en **farmBindingSource**.
 
@@ -323,8 +323,8 @@ Sin embargo, este código no establece un nombre predeterminado para el nuevo el
 
 Por lo tanto, se recomienda utilizar <xref:Microsoft.VisualStudio.Modeling.ElementOperations> para crear nuevos elementos. Para obtener más información, vea [personalizar la creación y el movimiento](../modeling/customizing-element-creation-and-movement.md)de los elementos.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
-- [Cómo definir lenguajes específicos de dominio](../modeling/how-to-define-a-domain-specific-language.md)
-- [Escribir código para personalizar lenguajes específicos de dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+- [Cómo definir un lenguaje Domain-Specific](../modeling/how-to-define-a-domain-specific-language.md)
+- [Escribir código para personalizar un lenguaje Domain-Specific](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [Modelar el SDK de Visual Studio: lenguajes específicos de dominio](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)

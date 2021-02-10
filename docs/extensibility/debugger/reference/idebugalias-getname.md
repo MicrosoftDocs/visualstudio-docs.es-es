@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: ac2d8891-56b5-40ef-9866-ed74f18bb043
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a8ebb10e5b01d95b6d9437f41b3ccf2b6c8b99d4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 72e6f71384f6e30850527524077df35d49aab3cd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736451"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944776"
 ---
 # <a name="idebugaliasgetname"></a>IDebugAlias::GetName
 Obtiene el nombre de este alias.
@@ -28,14 +28,14 @@ Obtiene el nombre de este alias.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT GetName(
-   BSTR* pbstrName
+HRESULT GetName(
+   BSTR* pbstrName
 );
 ```
 
 ```csharp
-int GetName(
-   out string pbstrName
+int GetName(
+   out string pbstrName
 );
 ```
 

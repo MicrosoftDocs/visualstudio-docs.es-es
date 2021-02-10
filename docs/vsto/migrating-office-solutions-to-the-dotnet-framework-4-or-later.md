@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], migrating to .NET Framework 4
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5b7780b6fccef86dfe4a671c0c468e5899adc36c
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 8c11b2f107414ac5ffb048d7c5e49609ba0b17b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528452"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946142"
 ---
 # <a name="migrate-office-solutions-to-the-net-framework-4-or-later"></a>Migrar soluciones de Office al .NET Framework 4 o posterior
   Si el marco de trabajo de destino de un proyecto de Office se cambia a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o posterior desde una versión anterior del .NET Framework, es posible que se requieran algunos pasos adicionales para seguir ejecutando la solución en los equipos de desarrollo y de usuario final. Para obtener más información, vea [cambios necesarios para ejecutar proyectos de Office migrados al .NET Framework 4 o al .NET Framework 4,5](../vsto/required-changes-to-run-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).
@@ -39,7 +39,7 @@ ms.locfileid: "97528452"
 
   Para obtener más información sobre por qué algunas características de los proyectos de Office tienen un modelo de programación diferente cuando el destino es [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o una versión posterior, consulte [cambios en el diseño de proyectos de Office destinados a los .NET Framework 4 o .NET Framework 4,5](../vsto/changes-to-the-design-of-office-projects-that-target-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md) y [Visual Studio Tools para Office Runtime](../vsto/visual-studio-tools-for-office-runtime-overview.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md)
 - [Procedimiento: Usar una versión de .NET Framework como destino](../ide/visual-studio-multi-targeting-overview.md)
 - [Solucionar errores en soluciones de Office](../vsto/troubleshooting-errors-in-office-solutions.md)
