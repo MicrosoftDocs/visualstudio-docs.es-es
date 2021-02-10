@@ -10,15 +10,15 @@ helpviewer_keywords:
 - debugger
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ac595098d793e44d65312a09fc8857225f150ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c69fe13821f595a137c07d545a4ccfb10fc89b34
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89311396"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904951"
 ---
 # <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>Herramientas y técnicas de depuración para ayudarle a escribir código de mayor calidad
 
@@ -44,7 +44,7 @@ Para crear la aplicación:
 
 1. Debe tener instalado Visual Studio y las cargas de trabajo **Desarrollo multiplataforma de .NET Core** o **Desarrollo de escritorio de .NET**, según el tipo de aplicación que quiera crear.
 
-    Si todavía no ha instalado Visual Studio, vaya a la página de  [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/)  para instalarlo de forma gratuita.
+    Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/) para instalarlo de forma gratuita.
 
     Si tiene que instalar la carga de trabajo pero ya tiene Visual Studio, haga clic en **Herramientas** > **Obtener herramientas y características**. Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo multiplataforma de .NET Core** (o la carga de trabajo **Desarrollo de escritorio de .NET**) y, después, haga clic en **Modificar**.
 

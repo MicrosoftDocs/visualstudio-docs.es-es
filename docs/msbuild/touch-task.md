@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 8a978645-1393-4904-ae69-42afabd8c109
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 82dbd31edfa72368a85361032e9875b234585a07
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: b31beb15ddfd1078d72c247535e2bc835b8c31e3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047016"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902646"
 ---
 # <a name="touch-task"></a>Touch (tarea)
 
@@ -35,7 +35,7 @@ Establece la hora de acceso y de modificación de los archivos.
 
  En la siguiente tabla se describen los parámetros de la tarea `Touch` .
 
-|Parámetro|Description|
+|Parámetro|Descripción|
 |---------------|-----------------|
 |`AlwaysCreate`|Parámetro `Boolean` opcional.<br /><br /> Si es `true`, crea cualquier archivo que todavía no existe.|
 |`Files`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` requerido.<br /><br /> Especifica la colección de archivos que se va a modificar.|

@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 2c128d2a-aaa6-4814-aa95-e07056afe338
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ce87f71a465f9c6452fa713fd8a7bdf523e801a3
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: e73834888009ff547bb4252aaedafb713ce9c2fb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399474"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897467"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Procedimiento Generación de un fragmento XML a partir de un esquema XML
 

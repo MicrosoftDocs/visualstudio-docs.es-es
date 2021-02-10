@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: c4311f38-979e-4324-b524-9e8c1cbdc41a
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ed964c618b59bf02086329715c5b0540039eb16a
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: f2d0e165171cb3619d3690e129e18f778504969e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796763"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901396"
 ---
 # <a name="createitem-task"></a>CreateItem (tarea)
 
@@ -53,7 +53,7 @@ Rellena las colecciones de elementos con los elementos de entrada. Esto permite 
 
  En el ejemplo de código siguiente se crea una nueva colección de elementos denominada `MySourceItemsWithMetadata` a partir de la colección de elementos `MySourceItems`. La tarea `CreateItem` rellena la nueva colección de elementos con los elementos de `MySourceItems`. A continuación, agrega una entrada de metadatos adicional denominada `MyMetadata` con un valor de `Hello` en cada elemento de la nueva colección.
 
- Una vez ejecutada la tarea, la colección de elementos `MySourceItemsWithMetadata` contiene los elementos *file1.resx* y *file2.resx* , ambos con entradas de metadatos para `MyMetadata`. La colección de elementos `MySourceItems` se queda sin modificar.
+ Una vez ejecutada la tarea, la colección de elementos `MySourceItemsWithMetadata` contiene los elementos *file1.resx* y *file2.resx*, ambos con entradas de metadatos para `MyMetadata`. La colección de elementos `MySourceItems` se queda sin modificar.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

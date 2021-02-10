@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: fa035091-1354-4d1c-be44-4fb83860466f
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 886d6d24293af9f630e70defff0d95ec791f0edf
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 9206fa8ced5ae60e58d353a9adae2234860670c8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93133954"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896304"
 ---
 # <a name="work-with-3d-models"></a>Trabajar con modelos en 3D
 
@@ -23,7 +23,7 @@ Puede usar el Editor de modelos en Visual Studio para crear modelos 3D. Puede us
 
 ## <a name="3d-models"></a>Modelos 3D
 
-Los modelos 3D definen la forma de objetos tal y como aparecen en una escena 3D. Los modelos pueden ser objetos solitarios básicos, objetos complejos que están formados por jerarquías de objetos básicos, o incluso escenas 3D completas. Un objeto 3D está formado por puntos en el espacio 3D (conocidos como *vértices* ), índices que definen triángulos, líneas u otras primitivas que se componen de estos puntos, y atributos que se pueden aplicar por vértice o por primitiva (por ejemplo, valores normales de superficie). Además, puede aplicarse cierta información por objeto (por ejemplo, qué sombreador y texturas le darán al objeto su apariencia única).
+Los modelos 3D definen la forma de objetos tal y como aparecen en una escena 3D. Los modelos pueden ser objetos solitarios básicos, objetos complejos que están formados por jerarquías de objetos básicos, o incluso escenas 3D completas. Un objeto 3D está formado por puntos en el espacio 3D (conocidos como *vértices*), índices que definen triángulos, líneas u otras primitivas que se componen de estos puntos, y atributos que se pueden aplicar por vértice o por primitiva (por ejemplo, valores normales de superficie). Además, puede aplicarse cierta información por objeto (por ejemplo, qué sombreador y texturas le darán al objeto su apariencia única).
 
 El Editor de modelos es la única herramienta que necesita para crear modelos 3D básicos (junto con propiedades de materiales, texturas y sombreadores de píxeles) que puede usar en su juego o aplicación. O puede crear modelos de marcador de posición para usarlos para crear prototipos y realizar pruebas antes de que los artistas finalicen los modelos.
 

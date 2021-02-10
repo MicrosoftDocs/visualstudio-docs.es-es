@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: af8eb0f3-bf6a-4d1c-ab47-dcd88ab04efa
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 646522fe5c893508cbe60a0886ba704e6829252f
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: e5469825b8d81a210fdb699dc9afeb7c6689953b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134771"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896454"
 ---
 # <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>Tutorial: Crear una bola de billar en 3D realista
 
@@ -51,7 +51,7 @@ Asegúrese de que se muestran la ventana **Propiedades** y el **Cuadro de herram
 
 1. Cree una textura con la que trabajar. Para obtener información sobre cómo agregar una textura al proyecto, vea la sección Introducción de [Editor de imágenes](../designers/image-editor.md).
 
-2. Establezca el tamaño de la imagen de modo que su ancho sea el doble del alto; esto es necesario debido a la manera en que una textura se asigna a la superficie esférica de la bola de billar. Para cambiar el tamaño de la imagen, en la ventana **Propiedades** , especifique nuevos valores para las propiedades **Ancho** y **Alto**. Por ejemplo, establezca el ancho en 512 y el alto en 256.
+2. Establezca el tamaño de la imagen de modo que su ancho sea el doble del alto; esto es necesario debido a la manera en que una textura se asigna a la superficie esférica de la bola de billar. Para cambiar el tamaño de la imagen, en la ventana **Propiedades**, especifique nuevos valores para las propiedades **Ancho** y **Alto**. Por ejemplo, establezca el ancho en 512 y el alto en 256.
 
 3. Dibuje una textura para la bola de billar, teniendo presente cómo una textura se asigna a una esfera.
 
@@ -121,7 +121,7 @@ El modelo de iluminación de Phong se basa en el modelo de iluminación de Lambe
 
     ![El gráfico del sombreador con luz especular agregada](../designers/media/gfx_shader_demo_billiard_step_3.png)
 
-2. Opcionalmente, puede ajustar la manera en que el resaltado especular se comporta configurando las propiedades especulares ( **MaterialSpecular** y **MaterialSpecularPower** ) del gráfico del sombreador. Para tener acceso a las propiedades del gráfico de presentación, seleccione un área vacía de la superficie de diseño y, en la ventana de **Propiedades** , busque la propiedad a la que quiere obtener acceso.
+2. Opcionalmente, puede ajustar la manera en que el resaltado especular se comporta configurando las propiedades especulares (**MaterialSpecular** y **MaterialSpecularPower**) del gráfico del sombreador. Para tener acceso a las propiedades del gráfico de presentación, seleccione un área vacía de la superficie de diseño y, en la ventana de **Propiedades**, busque la propiedad a la que quiere obtener acceso.
 
    Para obtener más información sobre cómo aplicar resaltados especulares en el sombreador, vea [Cómo: Crear un sombreador Phong básico](../designers/how-to-create-a-basic-phong-shader.md).
 
@@ -135,7 +135,7 @@ Con los reflejos especulares aplicados, la bola de billar tiene una apariencia b
 
 Si examina una bola de billar real de cerca, puede ver que su superficie brillante no refleja simplemente resaltes especulares sino que también refleja débilmente una imagen de su entorno. Puede simular esta reflexión usando una imagen del entorno como textura y combinándola con la propia textura del modelo para determinar el color final de cada píxel. Dependiendo del tipo de acabado que quiera, puede combinar más o menos de la textura de reflexión junto con el resto del sombreador. Por ejemplo, un sombreador que simula una superficie muy brillante como un espejo podría usar solo la textura de reflexión, pero un sombreador que simula una reflexión más sutil, como la de una bola de billar, podría combinar solo una pequeña parte del valor de la textura de reflexión junto con el resto del cálculo del sombreador.
 
-Por supuesto, no puede simplemente aplicar la imagen reflejada al modelo de la misma manera que aplica el mapa de texturas del modelo. Si lo hiciera, la reflexión universal se desplazaría con la bola de billar como si la reflexión estuviera pegada a ella. Dado que una reflexión puede proceder de cualquier dirección, necesita una manera de proporcionar un valor de asignaciones de reflexión para cualquier ángulo y una manera de mantener la asignación de la reflexión orientada según el entorno. Para satisfacer estos requisitos, puede usar una clase especial de mapa de textura, denominada *mapa de cubo* , que proporciona seis texturas organizadas para formar los lados de un cubo. Desde este cubo, puede identificar cualquier dirección para buscar un valor de textura. Si las texturas en cada lado del cubo contienen imágenes del entorno, puede simular cualquier reflexión muestreando la ubicación adecuada en la superficie del cubo. Si se mantiene el cubo alineado con el mundo, se obtendrá una reflexión precisa del entorno. Para determinar dónde se debe muestrear el cubo, simplemente calcule la reflexión del vector de la cámara según sale de la superficie del objeto, y úsela como coordenadas de textura 3D. El uso de mapas de cubo de esta manera es una técnica común que se conoce como *asignación de entorno*.
+Por supuesto, no puede simplemente aplicar la imagen reflejada al modelo de la misma manera que aplica el mapa de texturas del modelo. Si lo hiciera, la reflexión universal se desplazaría con la bola de billar como si la reflexión estuviera pegada a ella. Dado que una reflexión puede proceder de cualquier dirección, necesita una manera de proporcionar un valor de asignaciones de reflexión para cualquier ángulo y una manera de mantener la asignación de la reflexión orientada según el entorno. Para satisfacer estos requisitos, puede usar una clase especial de mapa de textura, denominada *mapa de cubo*, que proporciona seis texturas organizadas para formar los lados de un cubo. Desde este cubo, puede identificar cualquier dirección para buscar un valor de textura. Si las texturas en cada lado del cubo contienen imágenes del entorno, puede simular cualquier reflexión muestreando la ubicación adecuada en la superficie del cubo. Si se mantiene el cubo alineado con el mundo, se obtendrá una reflexión precisa del entorno. Para determinar dónde se debe muestrear el cubo, simplemente calcule la reflexión del vector de la cámara según sale de la superficie del objeto, y úsela como coordenadas de textura 3D. El uso de mapas de cubo de esta manera es una técnica común que se conoce como *asignación de entorno*.
 
 La asignación de entorno proporciona una aproximación eficaz de reflexiones reales como se describe en los párrafos anteriores. Puede mezclar reflexiones asignadas al entorno en el sombreador para dar a la bola de billar un acabado simulado que haga que la bola de billar parezca más integrada en la escena.
 
@@ -145,7 +145,7 @@ El primer paso es crear una textura de mapa de cubo. En muchos tipos de aplicaci
 
 1. Cree una textura con la que trabajar. Para obtener información sobre cómo agregar una textura al proyecto, vea la sección Introducción de [Editor de imágenes](../designers/image-editor.md).
 
-2. Establezca el tamaño de imagen de modo que el ancho sea igual al alto y sea una potencia de dos en tamaño; esto es necesario debido a la manera en que un mapa del cubo se indexa. Para cambiar el tamaño de la imagen, en la ventana **Propiedades** , especifique nuevos valores para las propiedades **Ancho** y **Alto**. Por ejemplo, establezca el valor de las propiedades **Ancho** y **Alto** en 256.
+2. Establezca el tamaño de imagen de modo que el ancho sea igual al alto y sea una potencia de dos en tamaño; esto es necesario debido a la manera en que un mapa del cubo se indexa. Para cambiar el tamaño de la imagen, en la ventana **Propiedades**, especifique nuevos valores para las propiedades **Ancho** y **Alto**. Por ejemplo, establezca el valor de las propiedades **Ancho** y **Alto** en 256.
 
 3. Use un color sólido para rellenar la textura. Esta textura será la parte inferior del mapa de cubo, que corresponde a la superficie de la mesa de billar. Recuerde el color que usó cuenta para la textura siguiente. Recuerde el color que ha usado para la textura siguiente.
 
@@ -165,17 +165,17 @@ El primer paso es crear una textura de mapa de cubo. En muchos tipos de aplicaci
 
 1. En la herramienta de texturas de DirectX, en el menú principal, elija **Archivo** > **Nueva textura**. Aparece el cuadro de diálogo **Nueva textura**.
 
-2. En el grupo **Tipo de textura** , seleccione **Textura del mapa de cubo**.
+2. En el grupo **Tipo de textura**, seleccione **Textura del mapa de cubo**.
 
-3. En el grupo **Dimensiones** , especifique el valor correcto para **Ancho** y **Alto** y, después, seleccione **Aceptar**. Aparece un nuevo documento de texturas. De manera predeterminada, la textura mostrada en primer lugar en el documento de texturas se corresponde con la cara del cubo **Positivo X**.
+3. En el grupo **Dimensiones**, especifique el valor correcto para **Ancho** y **Alto** y, después, seleccione **Aceptar**. Aparece un nuevo documento de texturas. De manera predeterminada, la textura mostrada en primer lugar en el documento de texturas se corresponde con la cara del cubo **Positivo X**.
 
-4. Cargue la textura que ha creado para el lado del cubo de textura sobre la cara del cubo. En el menú principal, elija **Archivo** > **Abrir en esta cara del mapa de cubo** , seleccione la textura que ha creado para el lado del cubo y luego haga clic en **Abrir**.
+4. Cargue la textura que ha creado para el lado del cubo de textura sobre la cara del cubo. En el menú principal, elija **Archivo** > **Abrir en esta cara del mapa de cubo**, seleccione la textura que ha creado para el lado del cubo y luego haga clic en **Abrir**.
 
-5. Repita el paso 4 para las caras del cubo **Negativo X** , **Positivo Z** y **Negativo Z**. Para ello, debe ver la cara que quiere cargar. Para ver otra cara del mapa de cubo, en el menú principal, elija **Ver** > **Cara del mapa de cubo** y luego seleccione la cara que quiere ver.
+5. Repita el paso 4 para las caras del cubo **Negativo X**, **Positivo Z** y **Negativo Z**. Para ello, debe ver la cara que quiere cargar. Para ver otra cara del mapa de cubo, en el menú principal, elija **Ver** > **Cara del mapa de cubo** y luego seleccione la cara que quiere ver.
 
-6. Para la cara del cubo **Positivo Y** , cargue la textura que ha creado para la parte superior del cubo de textura.
+6. Para la cara del cubo **Positivo Y**, cargue la textura que ha creado para la parte superior del cubo de textura.
 
-7. Para la cara del cubo **Negativo Y** , cargue la textura que ha creado para la parte inferior del cubo de textura.
+7. Para la cara del cubo **Negativo Y**, cargue la textura que ha creado para la parte inferior del cubo de textura.
 
 8. Guarde la textura.
 
@@ -201,7 +201,7 @@ El primer paso es crear una textura de mapa de cubo. En muchos tipos de aplicaci
 
 2. Aplique la textura que ha creado en el procedimiento anterior configurando las propiedades de textura del mapa de cubo. Establezca el valor de la propiedad **Textura** del nodo **Muestra de mapa de cubo** en **Textura2** y, después, especifique el archivo de textura usando la propiedad **Nombre de archivo** del grupo de propiedades **Textura2**.
 
-3. Opcionalmente, puede ajustar la reflexión de la bola de billar configurando la propiedad **Resultado** del nodo **Constante**. Para tener acceso a las propiedades del nodo, selecciónelas y después en la ventana **Propiedades** , busque la propiedad a la que quiere obtener acceso.
+3. Opcionalmente, puede ajustar la reflexión de la bola de billar configurando la propiedad **Resultado** del nodo **Constante**. Para tener acceso a las propiedades del nodo, selecciónelas y después en la ventana **Propiedades**, busque la propiedad a la que quiere obtener acceso.
 
    Con la asignación de entorno aplicada, la bola de billar debería ser similar a esta:
 

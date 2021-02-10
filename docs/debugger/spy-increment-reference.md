@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 2cf41bc9-55f3-4bb6-b28d-08c75215debd
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d1738b073c8f271e599c1e14bd852b4ebc654dee
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 37692e752e96cb37a712ebcdfa61f5388131991d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98147979"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903447"
 ---
 # <a name="spy-reference"></a>Referencia de Spy++
 En las secciones siguientes encontrará las descripciones de los menús y los cuadros de diálogo de Spy++:

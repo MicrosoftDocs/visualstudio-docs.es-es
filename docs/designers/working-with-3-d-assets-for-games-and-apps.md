@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 910d673b-c884-4eeb-9928-0e89f3d38cb6
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 11f031aa3e3767af3132e68f92c492dc7e3fae6f
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 8b622200832e42aa3900061125fe08271f5f3458
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134568"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896356"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>Trabajar con recursos en 3D para juegos y aplicaciones
 
@@ -25,7 +25,7 @@ En este artículo, se describen las herramientas de Visual Studio que puede usar
 
 ## <a name="directx-app-development-in-visual-studio"></a>Desarrollo de aplicaciones de DirectX en Visual Studio
 
-Normalmente, una aplicación de DirectX combina lógica de programación, la API de DirectX y programas de lenguaje de sombreado de alto nivel (HLSL), junto con recursos visuales 3D y de audio para presentar una experiencia multimedia enriquecida e interactiva. Visual Studio incluye herramientas para trabajar con imágenes y texturas, modelos 3D y sombreadores sin salir del IDE para usar otra herramienta. Las herramientas de Visual Studio son especialmente adecuadas para crear activos de *marcador de posición* , que sirven para probar el código o compilar prototipos antes de programar activos listos para producción, y para inspeccionar y modificar activos listos para producción cuando depura la aplicación.
+Normalmente, una aplicación de DirectX combina lógica de programación, la API de DirectX y programas de lenguaje de sombreado de alto nivel (HLSL), junto con recursos visuales 3D y de audio para presentar una experiencia multimedia enriquecida e interactiva. Visual Studio incluye herramientas para trabajar con imágenes y texturas, modelos 3D y sombreadores sin salir del IDE para usar otra herramienta. Las herramientas de Visual Studio son especialmente adecuadas para crear activos de *marcador de posición*, que sirven para probar el código o compilar prototipos antes de programar activos listos para producción, y para inspeccionar y modificar activos listos para producción cuando depura la aplicación.
 
 Aquí tiene más información sobre los tipos de recursos con los que puede trabajar en Visual Studio.
 
@@ -37,7 +37,7 @@ Puede usar el Editor de imágenes de Visual Studio para trabajar con imágenes y
 
 ### <a name="3d-models"></a>Modelos 3D
 
-Los modelos 3D crean espacio y forma en juegos y aplicaciones. Como mínimo, los modelos codifican la posición de los puntos en el espacio 3D (que se conocen como *vértices* ), junto con la indexación de datos para definir líneas o triángulos que representan la forma del modelo. Se pueden asociar datos adicionales con estos vértices (por ejemplo, información del color, vectores normales o atributos específicos de la aplicación). Además, cada modelo puede definir atributos de todo el objeto (por ejemplo, qué sombreador se usa para calcular la apariencia de la superficie del objeto o qué textura se le aplica).
+Los modelos 3D crean espacio y forma en juegos y aplicaciones. Como mínimo, los modelos codifican la posición de los puntos en el espacio 3D (que se conocen como *vértices*), junto con la indexación de datos para definir líneas o triángulos que representan la forma del modelo. Se pueden asociar datos adicionales con estos vértices (por ejemplo, información del color, vectores normales o atributos específicos de la aplicación). Además, cada modelo puede definir atributos de todo el objeto (por ejemplo, qué sombreador se usa para calcular la apariencia de la superficie del objeto o qué textura se le aplica).
 
 Puede usar el Editor de modelos de Visual Studio para trabajar con modelos 3D en varios formatos comunes.
 

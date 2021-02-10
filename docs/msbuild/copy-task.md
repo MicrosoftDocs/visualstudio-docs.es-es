@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: a46ba9da-3e4e-4890-b4ea-09a099b6bc40
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 00544b6d1e797a1fd8a7a197197480cae5620f10
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: b83541a98e995a55a38a5d736c97620f15076ead
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796234"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901507"
 ---
 # <a name="copy-task"></a>Copy (tarea)
 
@@ -78,7 +78,7 @@ Además de los parámetros mencionados anteriormente, esta tarea hereda los par�
 
 ## <a name="example-1"></a>Ejemplo 1
 
-En el ejemplo siguiente se copian los elementos de la colección de elementos `MySourceFiles` en la carpeta *c:\MyProject\Destination* .
+En el ejemplo siguiente se copian los elementos de la colección de elementos `MySourceFiles` en la carpeta *c:\MyProject\Destination*.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -99,7 +99,7 @@ En el ejemplo siguiente se copian los elementos de la colección de elementos `M
 
 ## <a name="example-2"></a>Ejemplo 2
 
-En el ejemplo siguiente se muestra cómo hacer una copia recursiva. Este proyecto copia de forma recursiva todos los archivos de *c:\MySourceTree* en *c:\MyDestinationTree* , manteniendo la estructura de directorios.
+En el ejemplo siguiente se muestra cómo hacer una copia recursiva. Este proyecto copia de forma recursiva todos los archivos de *c:\MySourceTree* en *c:\MyDestinationTree*, manteniendo la estructura de directorios.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

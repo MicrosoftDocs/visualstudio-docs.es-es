@@ -7,7 +7,7 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload: multiple
 f1_keywords:
 - Win8ExpressDesktopBlock
@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: ca13ff5263ab43fd6fbdf5764b506091dd9aa3bd
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 8182f8982734bd0089d483c9acefc230c9baaa91
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97667993"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901319"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Referencia de migración y actualización de proyectos para Visual Studio
 

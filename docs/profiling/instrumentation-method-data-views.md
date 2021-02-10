@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: 481f7579-f784-49ef-bb6c-2944e9d6ab42
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 18d7d2266ec21a3eee983474e433d72245658c43
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: a8842e4c9ec2a8513b42a34cb4c4a5c18ffedf31
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98721546"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906730"
 ---
 # <a name="instrumentation-method-data-views"></a>Vistas de datos del método de instrumentación
 Esta sección contiene información de referencia para las vistas y los informes de archivos de datos del generador de perfiles que se generaron mediante el método de instrumentación.

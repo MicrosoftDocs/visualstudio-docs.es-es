@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 9311d754-0ce9-4145-b147-88b6ca77ba63
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1786085e2f68a1d1196158ac56a62b87b80858be
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: 9f7e33ff34357dc0aa258f179f55d379bdf05636
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97761373"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904315"
 ---
 # <a name="how-can-i-debug-a-c-access-violation"></a>Cómo depurar una infracción de acceso de C++
 

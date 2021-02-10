@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 962912ac-8931-49bf-a88c-0200b6e37362
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 61cff0bfa1db43b196d7f6403b5140f9af2947ba
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: a8f53613c71a51ab2e5bd8441cb4605da795e8a7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046132"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897757"
 ---
 # <a name="msbuild-properties"></a>propiedades de MSBuild
 
@@ -66,7 +66,7 @@ Las propiedades son pares nombre-valor que se pueden utilizar para configurar co
 
 ## <a name="registry-properties"></a>Propiedades del Registro
 
- Para leer los valores del Registro del sistema, use la sintaxis siguiente, donde `Hive` es el subárbol del Registro (por ejemplo, **HKEY_LOCAL_MACHINE** ), `MyKey` es el nombre de clave, `MySubKey` es el nombre de subclave y `Value` es el valor de la subclave.
+ Para leer los valores del Registro del sistema, use la sintaxis siguiente, donde `Hive` es el subárbol del Registro (por ejemplo, **HKEY_LOCAL_MACHINE**), `MyKey` es el nombre de clave, `MySubKey` es el nombre de subclave y `Value` es el valor de la subclave.
 
 ```xml
 $(registry:Hive\MyKey\MySubKey@Value)
@@ -90,7 +90,7 @@ $(registry:Hive\MyKey\MySubKey)
 
 ## <a name="global-properties"></a>Propiedades globales
 
- MSBuild permite establecer propiedades en la línea de comandos mediante el modificador **-property** (o **-p** ). Los valores de estas propiedades globales reemplazan los valores de propiedad establecidos en el archivo del proyecto. Esto incluye las propiedades de entorno pero no las propiedades reservadas ya que estas no se pueden cambiar.
+ MSBuild permite establecer propiedades en la línea de comandos mediante el modificador **-property** (o **-p**). Los valores de estas propiedades globales reemplazan los valores de propiedad establecidos en el archivo del proyecto. Esto incluye las propiedades de entorno pero no las propiedades reservadas ya que estas no se pueden cambiar.
 
  En el siguiente ejemplo, se establece la propiedad global `Configuration` en `DEBUG`.
 

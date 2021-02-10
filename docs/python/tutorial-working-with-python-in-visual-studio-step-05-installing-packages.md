@@ -6,17 +6,17 @@ ms.date: 03/09/2020
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 32e85f39c4acf9466def24bcfea59bbfd6807a1b
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: c47eacf0c9977e7342bfda17e03ea53728ee9215
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801664"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901151"
 ---
 # <a name="step-5-install-packages-in-your-python-environment"></a>Paso 5: Instalación de paquetes en el entorno de Python
 

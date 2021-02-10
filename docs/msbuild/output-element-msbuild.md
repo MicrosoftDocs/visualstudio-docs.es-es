@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 34bc7cd1-efd3-4b57-b691-4584eeb6a0e9
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f48f5166e102273651511ceb5a925b5e49e66878
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: d69f1e4960ad2f9e11b8ac0248033e5ff425262d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048925"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905309"
 ---
 # <a name="output-element-msbuild"></a>Elemento Output (MSBuild)
 

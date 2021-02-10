@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4ac1eae8-d6ce-4f05-98f0-a29065f471d4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 66408749688f80b1c49b317336f76ce148f09c74
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 916f886efd25f394483c0b94c6994c364f9ff87b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148668"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904222"
 ---
 # <a name="styles-tab-window-properties-dialog-box"></a>Pestaña Estilos (Cuadro de diálogo Propiedades de la ventana)
 Use la pestaña **Estilos** para mostrar los estilos aplicados a la ventana seleccionada. Para mostrar el [cuadro de diálogo Propiedades de la ventana](../debugger/window-properties-dialog-box.md), mueva el foco a la ventana [Vista Ventanas](../debugger/windows-view.md). Seleccione un nodo de ventana en el árbol y, después, elija **Propiedades** en el menú **Vista**.

@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: bb3d90aa-5f08-4953-9be0-be6cea11633d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fc7d3464fd05b1fe99fcbfa8773e64bca4cb95e7
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: a0b58dfec2d0dd04f146c3a473736fa6911f194c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205507"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901251"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Cuadro de diálogo Configuración avanzada (Visualizador de simultaneidad)
 Mediante el cuadro de diálogo **Opciones avanzadas** del Visualizador de simultaneidad, puede controlar cómo se recopilan los seguimientos.  El cuadro de diálogo tiene pestañas para los símbolos, Solo mi código, almacenamiento en búfer, filtrado, eventos de CLR, marcadores, proveedores y archivos.

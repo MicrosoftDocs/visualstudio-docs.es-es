@@ -10,21 +10,21 @@ helpviewer_keywords:
 ms.assetid: e39f13f7-1e1d-4435-95ca-0c222bca071c
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d7e42452d8ee59142c4f906d928378d1fb44bf67
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: dbf938e61cc1567beb682847821595f5ca6cc026
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904513"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905471"
 ---
 # <a name="msbuild"></a>MSBuild
 
 Microsoft Build Engine es una plataforma para compilar aplicaciones. Este motor, que también se conoce como MSBuild, proporciona un esquema XML para un archivo del proyecto que controla cómo la plataforma de compilación procesa y compila el software. Visual Studio usa MSBuild, pero MSBuild no depende de Visual Studio. Al invocar *msbuild.exe* en el archivo de proyecto o solución, puede orquestar y compilar productos en entornos donde no está instalado Visual Studio.
 
- Visual Studio utiliza MSBuild para cargar y compilar proyectos administrados. Los archivos de proyecto de Visual Studio ( *.csproj* , *.vbproj* , *.vcxproj* , etc.) contienen código XML de MSBuild que se ejecuta cuando se compila un proyecto mediante el IDE. Los proyectos de Visual Studio importan todos los valores y procesos de compilación necesarios para realizar el trabajo de desarrollo típico, pero se pueden extender o modificar dentro de Visual Studio o mediante un editor XML.
+ Visual Studio utiliza MSBuild para cargar y compilar proyectos administrados. Los archivos de proyecto de Visual Studio ( *.csproj*, *.vbproj*, *.vcxproj*, etc.) contienen código XML de MSBuild que se ejecuta cuando se compila un proyecto mediante el IDE. Los proyectos de Visual Studio importan todos los valores y procesos de compilación necesarios para realizar el trabajo de desarrollo típico, pero se pueden extender o modificar dentro de Visual Studio o mediante un editor XML.
 
  Para obtener información sobre MSBuild para C++, consulte [MSBuild (C++)](/cpp/build/msbuild-visual-cpp).
 
@@ -170,7 +170,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
 - Puede usar como destino otros marcos que no sean .NET Framework, por ejemplo, Silverlight.
 
-- Puede tener como destino un *perfil de Framework* , que es un subconjunto predefinido de un marco de trabajo de destino.
+- Puede tener como destino un *perfil de Framework*, que es un subconjunto predefinido de un marco de trabajo de destino.
 
 - Si se publica un Service Pack para la versión actual de .NET Framework, podría usarlo como destino.
 

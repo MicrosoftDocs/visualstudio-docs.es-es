@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: ea172841-7fef-47bf-bd02-e7da4c3c7109
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a5034fe887ba221106055a928e67e11076167286
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: ee1970e46b9789b814029ef0fa7efe9bfbacc3a4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150774"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896691"
 ---
 # <a name="how-to-specify-debugger-settings"></a>Procedimiento Especificación de la configuración del depurador
 En [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], se pueden especificar diversas configuraciones para el comportamiento del depurador, incluidas la forma en que se muestran las variables, si se presentan ciertas advertencias, cómo se establecen los puntos de interrupción y cómo éstos afectan a la ejecución de programas. La configuración del depurador se especifica en el cuadro de diálogo **Opciones**.

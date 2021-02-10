@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9c30390d-dc3c-4c27-ae1a-9d92dc076d2b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f83469d6bd97e493a704282aa1fca1fbec96962d
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 96936a2c60a1ea8ebb91417607061b74d538095a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148993"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896464"
 ---
 # <a name="window-search-dialog-box"></a>Cuadro de diálogo Buscar ventana
 Use este cuadro de diálogo para buscar y seleccionar el nodo de un ventana concreta en la [Vista Ventanas](../debugger/windows-view.md). Para mostrar este cuadro de diálogo, mueva el foco a la ventana de una vista Mensajes. Luego, seleccione **Buscar ventana**, en el menú **Buscar**.

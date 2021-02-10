@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 99333e61-83c9-4804-84e3-eda297c2478d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0480b427b92ca43603deedf84e5fd7cb39e6e065
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: cbf2aff512b98e7a813134c3b376b6972c8cd4f9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049155"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897737"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>Propiedades reservadas y conocidas de MSBuild
 
@@ -62,7 +62,7 @@ En la tabla de esta sección se muestran las propiedades predefinidas de MSBuild
 | `MSBuildProjectFullPath` | Reservada | Ruta de acceso absoluta y nombre de archivo completo del archivo de proyecto, incluida la extensión de nombre de archivo; por ejemplo, *C:\MyCompany\MyProduct\MyApp.proj*. | `c:\Source\Repos\ConsoleApp1\ConsoleApp1\ConsoleApp1.csproj`|
 | `MSBuildProjectName` | Reservada | Nombre de archivo del archivo de proyecto sin la extensión de nombre de archivo; por ejemplo, *MyApp*. | `ConsoleApp1` |
 | `MSBuildRuntimeType` | Reservada | El tipo del runtime que se está ejecutando actualmente. Se presentó en MSBuild 15. El valor puede no estar definido (antes de MSBuild 15): `Full` indica que MSBuild se está ejecutando en la versión de escritorio de .NET Framework, `Core` indica que MSBuild se está ejecutando en .NET Core (por ejemplo, en `dotnet build`) o `Mono` indica que MSBuild se está ejecutando en Mono. | `Full` |
-| `MSBuildStartupDirectory` | Reservada | Ruta de acceso absoluta de la carpeta donde se llama a MSBuild. Con esta propiedad puede compilar todo lo que hay debajo de un punto específico de un árbol de proyecto sin crear archivos *\<dirs>.proj* en cada directorio. En su lugar, tiene solo un proyecto, por ejemplo, *c:\traversal.proj* , como se muestra aquí:<br /><br /> `<Project ...>     <ItemGroup>         <ProjectFiles              Include="$            (MSBuildStartupDirectory)            **\*.csproj"/>     </ItemGroup>     <Target Name="build">         <MSBuild             Projects="@(ProjectFiles)"/>     </Target> </Project>`<br /><br /> Para compilar en cualquier punto del árbol, escriba:<br /><br /> `msbuild c:\traversal.proj`<br /><br /> No incluya la barra diagonal inversa final en esta propiedad. | `c:\Source\Repos\ConsoleApp1` |
+| `MSBuildStartupDirectory` | Reservada | Ruta de acceso absoluta de la carpeta donde se llama a MSBuild. Con esta propiedad puede compilar todo lo que hay debajo de un punto específico de un árbol de proyecto sin crear archivos *\<dirs>.proj* en cada directorio. En su lugar, tiene solo un proyecto, por ejemplo, *c:\traversal.proj*, como se muestra aquí:<br /><br /> `<Project ...>     <ItemGroup>         <ProjectFiles              Include="$            (MSBuildStartupDirectory)            **\*.csproj"/>     </ItemGroup>     <Target Name="build">         <MSBuild             Projects="@(ProjectFiles)"/>     </Target> </Project>`<br /><br /> Para compilar en cualquier punto del árbol, escriba:<br /><br /> `msbuild c:\traversal.proj`<br /><br /> No incluya la barra diagonal inversa final en esta propiedad. | `c:\Source\Repos\ConsoleApp1` |
 | `MSBuildThisFile` | Reservada | Parte de nombre de archivo y extensión de archivo de `MSBuildThisFileFullPath`. | `ConsoleApp1.csproj` |
 | `MSBuildThisFileDirectory` | Reservada | Parte de directorio de `MSBuildThisFileFullPath`.<br /><br /> Incluya la barra diagonal inversa final de la ruta. | `c:\Source\Repos\ConsoleApp1\ConsoleApp1\` |
 | `MSBuildThisFileDirectoryNoRoot` | Reservada | Parte del directorio de `MSBuildThisFileFullPath`, sin incluir la unidad raíz.<br /><br /> Incluya la barra diagonal inversa final de la ruta. | `Source\Repos\ConsoleApp1\ConsoleApp1\` |

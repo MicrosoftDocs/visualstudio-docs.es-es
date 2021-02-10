@@ -24,15 +24,15 @@ helpviewer_keywords:
 - XML documentation comments [JavaScript]
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b4f86d904d98235ee98c54045789751c829b28c
-ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
+ms.openlocfilehash: 5a4120a6038949f172b96bec599f2329b69abcac
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91947835"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903978"
 ---
 # <a name="javascript-intellisense"></a>IntelliSense para JavaScript
 
@@ -134,12 +134,12 @@ A continuación, se muestra un ejemplo sencillo de un archivo de definición de 
 
 En el mundo de TypeScript, las bibliotecas más populares de JavaScript tienen sus API descritas mediante archivos *.d.ts* y el repositorio más común para esas definiciones se encuentra en [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped).
 
-De manera predeterminada, el servicio de lenguaje Salsa intenta detectar qué bibliotecas de JavaScript están en uso. Además, descarga y hace referencia de forma automática al archivo *.d.ts* correspondiente que describe la biblioteca para proporcionar IntelliSense con más funcionalidades. Los archivos se descargan en una caché ubicada en la carpeta de usuario en *%LOCALAPPDATA%\Microsoft\TypeScript* .
+De manera predeterminada, el servicio de lenguaje Salsa intenta detectar qué bibliotecas de JavaScript están en uso. Además, descarga y hace referencia de forma automática al archivo *.d.ts* correspondiente que describe la biblioteca para proporcionar IntelliSense con más funcionalidades. Los archivos se descargan en una caché ubicada en la carpeta de usuario en *%LOCALAPPDATA%\Microsoft\TypeScript*.
 
 > [!NOTE]
-> Esta característica está **deshabilitada** de forma predeterminada si se usa un archivo de configuración *tsconfig.json* , pero se puede habilitar, como se describe más adelante.
+> Esta característica está **deshabilitada** de forma predeterminada si se usa un archivo de configuración *tsconfig.json*, pero se puede habilitar, como se describe más adelante.
 
-Actualmente, la detección automática funciona para las dependencias descargadas desde npm (al leer el archivo *package.json* ), Bower (al leer el archivo *bower.json* ) y para archivos separados del proyecto que coinciden con una lista de aproximadamente las 400 bibliotecas de JavaScript más populares. Por ejemplo, si tiene *jquery-1.10.min.js* en el proyecto, el archivo *jquery.d.ts* se captura y carga para proporcionar una mejor experiencia de edición. Este archivo *.d.ts* no tiene ningún impacto en el proyecto.
+Actualmente, la detección automática funciona para las dependencias descargadas desde npm (al leer el archivo *package.json*), Bower (al leer el archivo *bower.json*) y para archivos separados del proyecto que coinciden con una lista de aproximadamente las 400 bibliotecas de JavaScript más populares. Por ejemplo, si tiene *jquery-1.10.min.js* en el proyecto, el archivo *jquery.d.ts* se captura y carga para proporcionar una mejor experiencia de edición. Este archivo *.d.ts* no tiene ningún impacto en el proyecto.
 
 Si no quiere usar la adquisición automática, puede deshabilitarla mediante la adición de un archivo de configuración como se describe a continuación. Aún puede colocar archivos de definición de forma manual para usarlos directamente en el proyecto.
 

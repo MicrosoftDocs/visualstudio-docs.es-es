@@ -5,17 +5,17 @@ ms.date: 12/06/2018
 ms.topic: quickstart
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5d0363626748588b6f4058e197f0d6796ece51ee
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 55db74b2b2882aac12ac1587c4e972e31f7dfe10
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "64543141"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902399"
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Inicio rápido: Clonar un repositorio de código de Python en Visual Studio
 

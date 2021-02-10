@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 82155004-8d9e-4875-b7db-237a3cffb530
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f5e9caecb6d5ae2023bce9c1ef2ea0d73c66be3
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: b34c661e7a5bd2bd4e2bc24882bf98f00c1e4c5e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148031"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903468"
 ---
 # <a name="spy-help"></a>Ayuda de Spy++
 La documentación de la utilidad Spy++ incluye dos grupos de temas generales sobre el uso de Spy++ y sobre las vistas de Spy++. Van seguidos de la referencia de Spy++, que proporciona más información sobre cada cuadro de diálogo y comando de menú que hay disponibles.
