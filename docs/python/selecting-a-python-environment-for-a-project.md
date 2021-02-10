@@ -5,17 +5,17 @@ ms.date: 03/18/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18, SEO-VS-2020
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 46b0a8005ea76445a1d6205c8635963dbaedd0d4
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: 6521df812d708744a617c0e3fe95285fdbfa0262
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90097039"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970613"
 ---
 # <a name="how-to-select-a-python-environment-for-a-project"></a>Cómo seleccionar un entorno de Python para un proyecto
 

@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 1d6700a9-fd67-4794-8997-399589e99bec
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 18081db7537eab1d14f800e9457821679c0316b8
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: e33a4add7ebc6a3e323331731f3183d7a0dce26f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399527"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970288"
 ---
 # <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Procedimiento Creación de un esquema XML a partir de un documento XML
 

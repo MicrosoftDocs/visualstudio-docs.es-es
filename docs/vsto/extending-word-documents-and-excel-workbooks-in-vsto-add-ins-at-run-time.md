@@ -18,15 +18,15 @@ helpviewer_keywords:
 - HasVstoObject method
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4686b2cd3a3ca5d4be7eefee9881039b9914a9b8
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 465e28ed0c632bba45fac1670dd40cd90ef417f0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847836"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970379"
 ---
 # <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time"></a>Ampliar documentos de Word y libros de Excel en complementos de VSTO en tiempo de ejecución
   Puede utilizar un complemento de VSTO para personalizar documentos de Word y libros de Excel de las maneras siguientes:

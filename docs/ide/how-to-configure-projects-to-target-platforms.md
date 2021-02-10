@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 845302fc-273d-4f81-820a-7296ce91bd76
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 323d118b73649c8c23d9b4a2e3ace2fd2fc6fdea
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: f8a298f19f247c45740e87074804755f6ca691ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136763"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969872"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Procedimiento Configuración de proyectos para plataformas de destino
 
@@ -37,25 +37,25 @@ El **Administrador de configuración** proporciona una forma de agregar rápidam
 
 ### <a name="to-configure-a-project-to-target-a-64-bit-platform"></a>Para configurar un proyecto para una plataforma de destino de 64 bits
 
-1. En la barra de menús, elija **Compilar** > **Administrador de configuración** .
+1. En la barra de menús, elija **Compilar** > **Administrador de configuración**.
 
-2. En la lista **Plataforma de soluciones activas** , elija una plataforma de 64 bits para la solución de destino y luego elija el botón **Cerrar** .
+2. En la lista **Plataforma de soluciones activas**, elija una plataforma de 64 bits para la solución de destino y luego elija el botón **Cerrar**.
 
-    1. Si la plataforma que quiere no aparece en la lista **Plataforma de soluciones activas** , seleccione **Nueva** .
+    1. Si la plataforma que quiere no aparece en la lista **Plataforma de soluciones activas**, seleccione **Nueva**.
 
-         Aparecerá el cuadro de diálogo **Nueva plataforma de solución** .
+         Aparecerá el cuadro de diálogo **Nueva plataforma de solución**.
 
-    2. En la lista **Escriba o seleccione la nueva plataforma** , elija **x64** .
+    2. En la lista **Escriba o seleccione la nueva plataforma**, elija **x64**.
 
         > [!NOTE]
         > Si asigna un nuevo nombre a la configuración, es posible que tenga que modificar la configuración del **Diseñador de proyectos** para seleccionar la plataforma correcta como destino.
 
-    3. Si quiere copiar la configuración de una configuración de plataforma actual, selecciónela y luego elija el botón **Aceptar** .
+    3. Si quiere copiar la configuración de una configuración de plataforma actual, selecciónela y luego elija el botón **Aceptar**.
 
 Se actualizarán las propiedades de todos los proyectos que tienen como destino la plataforma de 64 bits y la próxima compilación del proyecto se optimizará para plataformas de 64 bits.
 
 > [!NOTE]
-> El nombre de la plataforma **Win32** se utiliza para los proyectos de C++, y significa **x86** . Visual Studio tiene en cuenta las plataformas de nivel de proyecto y las plataformas de nivel de solución, y las plataformas de proyecto provienen de los sistemas de proyecto específicos del lenguaje. Los proyectos de C++ utilizan **Win32** y **x64** , pero las plataformas de solución usan **x86** y **x64** . Al elegir **x86** como la configuración de la solución, Visual Studio selecciona la plataforma **Win32** para los proyectos de C++. Para ver la configuración de la plataforma de nivel de proyecto y de la plataforma de nivel de solución, abra **Administrador de configuración** y anote las dos configuraciones de plataforma. La plataforma de nivel de solución se muestra en la lista desplegable **Plataforma de soluciones activas** y en la tabla se muestra la plataforma de nivel de proyecto para cada proyecto.
+> El nombre de la plataforma **Win32** se utiliza para los proyectos de C++, y significa **x86**. Visual Studio tiene en cuenta las plataformas de nivel de proyecto y las plataformas de nivel de solución, y las plataformas de proyecto provienen de los sistemas de proyecto específicos del lenguaje. Los proyectos de C++ utilizan **Win32** y **x64**, pero las plataformas de solución usan **x86** y **x64**. Al elegir **x86** como la configuración de la solución, Visual Studio selecciona la plataforma **Win32** para los proyectos de C++. Para ver la configuración de la plataforma de nivel de proyecto y de la plataforma de nivel de solución, abra **Administrador de configuración** y anote las dos configuraciones de plataforma. La plataforma de nivel de solución se muestra en la lista desplegable **Plataforma de soluciones activas** y en la tabla se muestra la plataforma de nivel de proyecto para cada proyecto.
 > ![Captura de pantalla que muestra la plataforma de solución y la plataforma de proyecto](media/project-platform-win32.png)
 
 ## <a name="target-platforms-in-the-project-designer"></a>Configurar plataformas de destino en el Diseñador de proyectos
@@ -115,7 +115,7 @@ Puede que tenga un ensamblado .NET o DLL que tenga las versiones tanto x86 como 
 
 ::: moniker range="vs-2017"
 > [!NOTE]
-> En Visual Studio 2017, debe descargar el proyecto para poder editar el archivo de proyecto. Para descargar el proyecto, haga clic con el botón derecho en el nodo del proyecto y elija **Descargar proyecto** . Cuando haya terminado de editar, guarde los cambios y vuelva a cargar el proyecto; para ello, haga clic con el botón derecho en el nodo del proyecto y elija **Volver a cargar el proyecto** .
+> En Visual Studio 2017, debe descargar el proyecto para poder editar el archivo de proyecto. Para descargar el proyecto, haga clic con el botón derecho en el nodo del proyecto y elija **Descargar proyecto**. Cuando haya terminado de editar, guarde los cambios y vuelva a cargar el proyecto; para ello, haga clic con el botón derecho en el nodo del proyecto y elija **Volver a cargar el proyecto**.
 ::: moniker-end
 
 Para más información sobre el archivo de proyecto, vea [Referencia de esquemas del archivo del proyecto MSBuild](../msbuild/msbuild-project-file-schema-reference.md).

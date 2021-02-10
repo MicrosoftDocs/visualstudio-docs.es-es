@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 318e41b0-acf5-4842-b85e-421c9d5927c5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 418501ada340614d084e9796a59a46f8612aa743
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 0dd336701fc25497fdecba8b5b9860a02447558d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97878032"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970054"
 ---
 # <a name="properties-display-grid"></a>Cuadrícula de visualización de propiedades
 
@@ -57,6 +57,6 @@ La ventana **propiedades** muestra distintos tipos de campos en función de los 
 
 - Al hacer clic en el botón de puntos suspensivos (...), se muestra una lista de valores de propiedad entre los que el usuario puede seleccionar (por ejemplo, un selector de colores o una lista de fuentes). <xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder> proporciona estos valores.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Propiedades de extensión](../../extensibility/internals/extending-properties.md)

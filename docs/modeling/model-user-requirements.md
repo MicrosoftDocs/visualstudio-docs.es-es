@@ -9,15 +9,15 @@ helpviewer_keywords:
 - stories
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 40418b2d188ac5482a12dd4ffdddd221bf5d2f97
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: d55e549d2dccdc047cbf4449392cc090a569f85c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361969"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970587"
 ---
 # <a name="model-user-requirements"></a>Requisitos del usuario de modelos
 
@@ -98,7 +98,7 @@ Si un restaurante elimina un elemento del menú mientras un cliente pide un men�
 
 Vea [modelar la arquitectura de la aplicación](../modeling/model-your-app-s-architecture.md) para obtener información sobre cómo desarrollar código que cumpla los requisitos de calidad de servicio.
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [Usar modelos en el proceso de desarrollo](../modeling/use-models-in-your-development-process.md)
 - [Modelar la arquitectura de la aplicación](../modeling/model-your-app-s-architecture.md)

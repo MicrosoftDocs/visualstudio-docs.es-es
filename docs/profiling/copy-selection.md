@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 645d9bd3-0a17-4a09-9b25-b37ae3ff484a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: da16256579f414d33434295fc355f368597d868d
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 23f5a3bd275ecd3666ce1a6642b5c3a27072ac60
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720870"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969365"
 ---
 # <a name="copy-selection"></a>Copiar selección
 Para copiar la pila de llamadas completa de la ficha Informes, haga clic en **Copiar**. A continuación, puede pegar la pila de llamadas en cualquier programa que admita esa acción.

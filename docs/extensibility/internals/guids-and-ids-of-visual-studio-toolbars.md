@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: c9cacd57-9225-450f-a9ac-cbf3168ea844
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b44cda401faa0d7e34bf9ce7579aa3cca026fa13
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 7b4df4bac9fcc933cccc1bd54ced89c416b23863
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480387"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970223"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>GUID e identificadores de barras de herramientas de Visual Studio
 En este tema se enumeran los valores de GUID y de identificador de las barras de herramientas que se incluyen en el entorno de desarrollo integrado (IDE) de Visual Studio y de los grupos que contienen. Estos valores se definen en los archivos *. Vsct* que se instalan como parte del SDK de Visual Studio. Para obtener más información, vea [comandos, menús y grupos definidos por el IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -40,10 +40,10 @@ En este tema se enumeran los valores de GUID y de identificador de las barras de
 
  Solo los grupos pueden descender directamente de las barras de herramientas. Para agregar un grupo, establezca su elemento primario en el GUID y el identificador de la barra de herramientas. Para agregar un botón a una barra de herramientas, establezca su elemento primario en un grupo en la barra de herramientas.
 
-|Barra de herramientas|Id.|
+|Barra de herramientas|ID|
 |-------------|--------|
 |Estándar|IDM_VS_TOOL_STANDARD|
-|Build|IDM_VS_TOOL_BUILD|
+|Compilar|IDM_VS_TOOL_BUILD|
 |Editor de texto|IDM_VS_TOOL_TEXTEDITOR|
 |Depurar|guidVSDebugGroup: IDM_DEBUG_TOOLBAR|
 |Ubicación de depuración|guidVSDebugGroup: IDM_DEBUG_CONTEXT_TOOLBAR|
@@ -51,11 +51,11 @@ En este tema se enumeran los valores de GUID y de identificador de las barras de
 ### <a name="special-toolbars"></a>Barras de herramientas especiales
  Estas barras de herramientas están definidas por el IDE de Visual Studio, pero sirven funciones especializadas y no hospedan grupos de comandos.
 
-|Barra de herramientas|Id.|
+|Barra de herramientas|ID|
 |-------------|--------|
 |Add (Comando)|IDM_VS_TOOL_ADDCOMMAND|
 |No definido|IDM_VS_TOOL_UNDEFINED|
-|esquema XML|IDM_VS_TOOL_SCHEMA|
+|Esquema XML|IDM_VS_TOOL_SCHEMA|
 |datos XML|IDM_VS_TOOL_DATA|
 
 ## <a name="groups-on-the-ide-toolbars"></a>Grupos en las barras de herramientas del IDE
@@ -69,11 +69,11 @@ En este tema se enumeran los valores de GUID y de identificador de las barras de
 |Cortar o copiar|IDG_VS_TOOLSB_CUTCOPY|
 |Deshacer/rehacer|IDG_VS_TOOLSB_UNDOREDO|
 |Ejecutar/compilar|IDG_VS_TOOLSB_RUNBUILD|
-|Buscar|IDG_VS_TOOLSB_SEARCH|
+|Search|IDG_VS_TOOLSB_SEARCH|
 |Windows|IDG_VS_TOOLSB_WINDOWS|
 |Nuevas ventanas|IDG_VS_TOOLSB_NEWWINDOWS|
 |Cargar/guardar|IDG_VS_WINDOWUI_LOADSAVE|
-|Indicador|IDG_VS_TOOLSB_GAUGE|
+|Medidor|IDG_VS_TOOLSB_GAUGE|
 
 ### <a name="build-toolbar-groups"></a>Grupos de la barra de herramientas de compilación
 
@@ -97,7 +97,7 @@ En este tema se enumeran los valores de GUID y de identificador de las barras de
 |----------|--------|
 |Ejecución|IDM_DEBUG_TOOLBAR|
 |Recorrido paso a paso|IDG_DEBUG_TOOLBAR_STEPPING|
-|Inspección|IDG_DEBUG_TOOLBAR_WATCH|
+|Watch|IDG_DEBUG_TOOLBAR_WATCH|
 |Windows|IDG_DEBUG_TOOLBAR_WINDOWS|
 
 ### <a name="debug-location-toolbar-groups"></a>Depurar grupos de barras de herramientas de ubicación
@@ -121,7 +121,7 @@ En este tema se enumeran los valores de GUID y de identificador de las barras de
 |Vista de clases|IDM_VS_TOOL_CLASSVIEW_GO|IDG_VS_CLASSVIEW_SEARCH2|
 |Examinador de objetos|IDM_VS_TOOL_OBJBROWSER|IDG_VS_OBJBROWSER_SUBSETS<br /><br /> IDG_VS_OBJBROWSER_SEARCH<br /><br /> IDG_VS_OBJBROWSER_ADDREFERENCE<br /><br /> IDG_VS_OBJBROWSER_BROWSERSETTINGS|
 |Examinador de objetos|IDM_VS_TOOL_OBJECT_BROWSER_GO|IDG_VS_OBJBROWSER_SEARCH2|
-|Output|IDM_VS_TOOL_OUTPUTWINDOW|IDG_VS_OUTPUTWINDOW_SELECT<br /><br /> IDG_VS_OUTPUTWINDOW_GOTO<br /><br /> IDG_VS_OUTPUTWINDOW_NEXTPREV<br /><br /> IDG_VS_OUTPUTWINDOW_CLEAR<br /><br /> IDG_VS_OUTPUTWINDOW_WORDWRAP|
+|Resultados|IDM_VS_TOOL_OUTPUTWINDOW|IDG_VS_OUTPUTWINDOW_SELECT<br /><br /> IDG_VS_OUTPUTWINDOW_GOTO<br /><br /> IDG_VS_OUTPUTWINDOW_NEXTPREV<br /><br /> IDG_VS_OUTPUTWINDOW_CLEAR<br /><br /> IDG_VS_OUTPUTWINDOW_WORDWRAP|
 |Buscar y reemplazar|IDM_VS_TOOL_UNIFIEDFIND|IDG_VS_FINDTAB<br /><br /> IDG_VS_REPLACETAB|
 |Resultados de la búsqueda 1|IDM_VS_TOOL_FINDRESULTS1|IDG_VS_FINDRESULTS1_GOTO<br /><br /> IDG_VS_FINDRESULTS1_NEXTPREV<br /><br /> IDG_VS_FINDRESULTS1_CLEAR<br /><br /> IDG_VS_FINDRESULTS1_STOPFIND|
 |Resultados de búsqueda 2|IDM_VS_TOOL_FINDRESULTS2|IDG_VS_FINDRESULTS2_GOTO<br /><br /> IDG_VS_FINDRESULTS2_NEXTPREV<br /><br /> IDG_VS_FINDRESULTS2_CLEAR<br /><br /> IDG_VS_FINDRESULTS2_STOPFIND|
@@ -136,7 +136,7 @@ En este tema se enumeran los valores de GUID y de identificador de las barras de
 |Memoria 1-4|guidVSDebugGroup: IDM_MEMORY_WINDOW_TOOLBAR1... 4|IDG_MEMORY_EXPRESSION1.. 4<br /><br /> IDG_MEMORY_COLUMNS1.. 4|
 |Procesos|guidVSDebugGroup: IDM_ATTACHED_PROCS_TOOLBAR|IDG_ATTACHED_PROCS_EXECCNTRL IDG_ATTACHED_PROCS_STEPPING<br /><br /> IDG_ATTACHED_PROCS_EXECCNTRL2<br /><br /> IDG_ATTACHED_PROCS_ATTACH<br /><br /> IDG_ATTACHED_PROCS_COLUMNS|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Agregar un controlador de menú a una barra de herramientas](../../extensibility/adding-a-menu-controller-to-a-toolbar.md)
 - [Agregar una barra de herramientas a una ventana de herramientas](../../extensibility/adding-a-toolbar-to-a-tool-window.md)
 - [GUID e identificadores de los menús de Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)

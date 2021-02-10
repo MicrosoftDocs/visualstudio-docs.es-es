@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 5e97c947-be39-4a1f-af04-000e2e09528a
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d836a666c0b09366f5c8f3c9245def63faba462
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: a1ffd0a9dda243e53431e419910b866853cd3932
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433861"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969104"
 ---
 # <a name="throw-activity-designer"></a>Diseñador de actividades Throw
 
@@ -39,10 +39,10 @@ En la tabla siguiente se muestran las propiedades <xref:System.Activities.Statem
 
 |Nombre de propiedad|Obligatorio|Uso|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|Falso|Especifica el nombre opcional descriptivo de la actividad <xref:System.Activities.Statements.Throw>. El valor predeterminado es Throw.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Especifica el nombre opcional descriptivo de la actividad <xref:System.Activities.Statements.Throw>. El valor predeterminado es Throw.|
 |<xref:System.Activities.Statements.Throw.Exception%2A>|True|Excepción que se va a producir. Esta excepción debe derivar de <xref:System.Exception>. Para especificar la excepción, escriba una expresión de Visual Basic en la cuadrícula de propiedades.|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Colección](../workflow-designer/collection-activity-designers.md)
 - [Rethrow](../workflow-designer/rethrow-activity-designer.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 67ae8af6-3752-49e8-8ce3-007aca5f7982
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6a8090a47c275e66272ed3ee3e5d5a1eef1926d
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 68a16d544147ca95512f8b6064d2b9712b26ed64
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189737"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969027"
 ---
 # <a name="add-directories-to-the-add-new-item-dialog-box"></a>Agregar directorios al cuadro de diálogo Agregar nuevo elemento
 En el ejemplo de código siguiente se muestra cómo registrar un nuevo conjunto de directorios para el cuadro de diálogo **Agregar nuevo elemento** . Los directorios del cuadro de diálogo **Agregar nuevo elemento** son diferentes para cada proyecto. Por lo tanto, los directorios se registran en la subclave **Projects** , que se encuentra en **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\Projects**.
@@ -56,7 +56,7 @@ NoRemove Projects
 
  También puede extender un proyecto existente mediante la programación de un subtipo de proyecto. Con un subtipo de proyecto, puede extender un proyecto sin escribir un nuevo tipo de proyecto. Para obtener más información sobre los subtipos de proyecto, vea [subtipos de proyecto](../../extensibility/internals/project-subtypes.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Registrar plantillas de proyecto y elemento](../../extensibility/internals/registering-project-and-item-templates.md)
 - [Agregar elementos al cuadro de diálogo Agregar nuevo elemento](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
 - [Agregar directorios al cuadro de diálogo nuevo proyecto](../../extensibility/internals/adding-directories-to-the-new-project-dialog-box.md)

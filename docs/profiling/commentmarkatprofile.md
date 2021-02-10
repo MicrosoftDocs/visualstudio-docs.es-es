@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: 04294ca3-bf9c-4c76-86f1-898c2140de27
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 43e8f9806c724da414940c92b6609846486a49c0
-ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
+ms.openlocfilehash: b40620388ffb3aefcd77eeb3f60355ed293ea59d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98533529"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970574"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
 El método `CommentMarkAtProfile` inserta un valor de marca de tiempo, una marca numérica y una cadena de comentario en el archivo *.vsp*. El valor de marca de tiempo se puede usar para sincronizar eventos externos. Para que la marca y el comentario se inserten, la generación de perfiles para el subproceso que contiene la función CommentMarkAtProfile debe estar activada.

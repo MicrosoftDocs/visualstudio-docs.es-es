@@ -6,17 +6,17 @@ ms.date: 01/28/2019
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 96c067d4c55a5df4d9343e60360142466e8f218f
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 9767630fc7fee4eafce72e4eb99aa12db8469691
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "62431308"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970548"
 ---
 # <a name="install-python-support-in-visual-studio"></a>Instalación de la compatibilidad con Python en Visual Studio
 

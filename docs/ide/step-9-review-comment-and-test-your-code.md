@@ -12,15 +12,15 @@ dev_langs:
 - VB
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f5be5d8c59d9ef402bd929bd386a7bdaaa9912e
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 0bcf879d2bb6fa592f77d4c94cb2f784d2c53f2b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479308"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969625"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Paso 9: Revisar, comentar y probar el código
 
@@ -74,17 +74,17 @@ Acaba de compilar algo que funciona y, aunque todavía no está terminado, ya es
 1. Antes de ejecutar la aplicación, seleccione el botón **Guardar todo** de la barra de herramientas para guardarla, que debe ser similar a la captura de pantalla siguiente.
 
      ![Botón de la barra de herramientas Guardar todo](../ide/media/express_iconsaveall.png)<br>
-*Botón *_Guardar todo_* __*
+*Botón **Guardar todo** __*
 
      O bien, para guardar la aplicación, elija **Archivo** > **Guardar todo** en la barra de menús (o presione **Ctrl**+**Mayús**+**S**). El procedimiento recomendado consiste en guardar desde el principio y a menudo.
 
      Mientras se ejecuta, el programa debería parecerse a la imagen siguiente.
 
-     ![Visor de imágenes](../ide/media/express_pictureviewerdonerun.png)<br>**_Visor de imágenes_* _
+     ![Visor de imágenes](../ide/media/express_pictureviewerdonerun.png)<br>***Visor de imágenes***
 
 ## <a name="to-test-your-app"></a>Para probar la aplicación
 
-1. Presione la tecla _ *F5** o el botón de la barra de herramientas **Iniciar depuración**.
+1. Elija la tecla **F5** o el botón de la barra de herramientas **Iniciar depuración**.
 
 1. Elija el botón **Show a picture** (Mostrar una imagen) para ejecutar el código que acaba de escribir. Primero, la aplicación abre un cuadro de diálogo **Abrir archivo**. Compruebe que los filtros aparecen en la lista desplegable **Tipo de archivo** en la parte inferior del cuadro de diálogo. A continuación, navegue hasta una imagen y ábrala. Normalmente, encontrará imágenes de ejemplo que se distribuyen con el sistema operativo Windows en la carpeta *Mis documentos*, dentro de la carpeta *Mis imágenes\Imágenes de muestra*.
 

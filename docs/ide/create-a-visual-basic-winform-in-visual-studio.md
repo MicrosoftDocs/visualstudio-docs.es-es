@@ -8,17 +8,17 @@ ms.technology: vs-ide-general
 ms.devlang: vb
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 65c7c3e34778a1bad3eb833c073c530db72b7a36
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 7a5ee86c98a7e66ac43cbcfb1abbcab6bf970b08
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809064"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970925"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Creación de una aplicación de Windows Forms en Visual Studio con Visual Basic
 

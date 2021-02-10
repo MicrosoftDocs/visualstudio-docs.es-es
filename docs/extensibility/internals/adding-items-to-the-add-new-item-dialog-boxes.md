@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99377db0e835de8d84485d0254d84892a360f5f0
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 1dbdb2f04ad5038941eeb9790efa9e05781def3f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190166"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969014"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>Agregar elementos al cuadro de diálogo Agregar nuevo elemento
 El proceso para agregar elementos al cuadro de diálogo **Agregar nuevo elemento** comienza con las claves del registro. Como se muestra en las siguientes entradas del registro, la sección **AddItemTemplates** contiene la ruta de acceso y el nombre del directorio en el que se colocan los elementos disponibles en el cuadro de diálogo **Agregar nuevo elemento** .
@@ -33,7 +33,7 @@ El proceso para agregar elementos al cuadro de diálogo **Agregar nuevo elemento
 
  **@** = #6
 
- **TemplatesDir**  =  \\ TemplatesDir &lt; Ruta de instalación del SDK de Visual Studio &gt; \\ VSIntegration \\ &lt; SomeFolder &gt; \\ &lt; SomePackage &gt; \\ &lt; SomeProject &gt; \\ &lt; SomeProjectItems&gt;
+   =  \\ TemplatesDir &lt; Ruta de instalación del SDK de Visual Studio &gt; \\ VSIntegration \\ &lt; SomeFolder &gt; \\ &lt; SomePackage &gt; \\ &lt; SomeProject &gt; \\ &lt; SomeProjectItems&gt;
 
  **SortPriority** = DWORD: 00000064
 
@@ -79,7 +79,7 @@ El proceso para agregar elementos al cuadro de diálogo **Agregar nuevo elemento
 
   Si implementa esta funcionalidad de filtro, no es necesario asignar una tabla de todos los elementos que deben ocultarse. Simplemente puede clasificar elementos en tipos y colocar las clasificaciones en el archivo *. vsdir* o en los archivos. A continuación, puede ocultar cualquiera de los elementos que tienen una clasificación específica implementando la interfaz. De esta manera, puede hacer que los elementos del cuadro de diálogo **Agregar nuevo elemento** sean dinámicos en función del estado del proyecto.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>
 - [Registrar plantillas de proyecto y elemento](../../extensibility/internals/registering-project-and-item-templates.md)
 - [CATID para los objetos que se utilizan normalmente para ampliar proyectos](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)

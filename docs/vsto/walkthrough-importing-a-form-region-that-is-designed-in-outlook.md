@@ -13,15 +13,15 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], importing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9b65502bbf29f6e0df7435f6a27d3c51e8082e41
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 4b60060f8db2bf2bb1abf42803a8c80333ee5fc0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97522674"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969157"
 ---
 # <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>Tutorial: importar un área de formulario diseñada en Outlook
   En este tutorial se muestra cómo diseñar un área de formulario en Microsoft Office Outlook y cómo importarla a un proyecto de complemento de VSTO para Outlook mediante el asistente para **nueva área de formulario** . Al diseñar el área de formulario en Outlook, se pueden agregar controles nativos de Outlook a dicha área que se enlazan a datos de Outlook. Después de importar el área de formulario, puede controlar los eventos de cada control.
@@ -253,7 +253,7 @@ ms.locfileid: "97522674"
 
 - Para obtener más información sobre cómo agregar un panel de tareas personalizado a Outlook, vea [paneles de tareas personalizados](../vsto/custom-task-panes.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Obtener acceso a un área de formulario en tiempo de ejecución](../vsto/accessing-a-form-region-at-run-time.md)
 - [Crear áreas de formulario de Outlook](../vsto/creating-outlook-form-regions.md)
 - [Instrucciones para crear áreas de formulario de Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)

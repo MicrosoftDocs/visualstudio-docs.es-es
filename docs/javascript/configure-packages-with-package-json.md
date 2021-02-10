@@ -6,17 +6,17 @@ ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 652ff7b0380fc03a3f9c8155a2f8696d9dfee5b9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 891822d0b79cbfd53cf14229f11e003bf740c660
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "67692371"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969495"
 ---
 # <a name="packagejson-configuration"></a>Configuración de package.json
 

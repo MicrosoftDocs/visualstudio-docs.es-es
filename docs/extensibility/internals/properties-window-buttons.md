@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bdd2e3a7-ae6e-4e88-be1a-e0e3b7ddbbcc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e99c362904bc40a2937c030f1ee2bb1c4d32a113
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 601e40762adc665f6241bb00a4b683b81e7fbd80
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97878019"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970028"
 ---
 # <a name="properties-window-buttons"></a>Botones de la ventana Propiedades
 En función del lenguaje de desarrollo y del tipo de producto, se muestran determinados botones de forma predeterminada en la barra de herramientas de la ventana **propiedades** . En todos los casos, se muestran los botones **clasificado**, en **orden alfabético**, **propiedades** y **páginas de propiedades** . En Visual C# y Visual Basic, también se muestra el botón **eventos** . En algunos proyectos de Visual C++, se muestran los botones **mensajes de VC + +** y **VC invalidaciones** . Se pueden mostrar botones adicionales para otros tipos de proyecto. Para obtener más información acerca de los botones de la ventana **propiedades** , vea [ventana Propiedades](../../ide/reference/properties-window.md).
@@ -38,5 +38,5 @@ En función del lenguaje de desarrollo y del tipo de producto, se muestran deter
 > [!NOTE]
 > No se pueden agregar botones de barra de herramientas a la ventana **propiedades** mediante código no administrado. Para agregar un botón de barra de herramientas, debe crear un objeto administrado que se derive de <xref:System.Windows.Forms.Design.PropertyTab> .
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Extensión de propiedades](../../extensibility/internals/extending-properties.md)

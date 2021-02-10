@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 2b9833bf-8551-4ae1-93db-197ba645c65e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cff332d7b573bb2fdff886b4206ea1267c091c48
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 8d5d81135a2571db3c84b67acb2fa08e4f83f57d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97878045"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970067"
 ---
 # <a name="properties-and-methods-extended-by-project-subtypes"></a>Propiedades y métodos ampliados por subtipos de proyecto
 Un subtipo de proyecto tiene una gran capacidad para influir en el comportamiento del proyecto porque se construye como un agregador de un proyecto base. En esta sección se resumen algunas de las características que se pueden mejorar o modificar mediante subtipos de proyecto.
@@ -50,5 +50,5 @@ Un subtipo de proyecto tiene una gran capacidad para influir en el comportamient
 
  El proyecto base proporciona una implementación predeterminada de las propiedades anteriores. El proyecto base los obtiene llamando a `QueryInterface` para <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> en el subtipo de proyecto más externo, lo que permite que el subtipo de proyecto invalide la implementación de las propiedades.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Diseño de subtipos de proyecto](../../extensibility/internals/project-subtypes-design.md)

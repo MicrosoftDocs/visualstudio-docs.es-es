@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: 1a9aa122-2d8f-4a09-b503-92975aa6b648
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0640bc238bc300868d42aedc8905da8ffc97f65e
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: b3a73cec5f05072f0a99940b82a362ccb8e1edde
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723327"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969274"
 ---
 # <a name="modules-view---contention-data"></a>Vista Módulos: datos de contención
 En la vista Módulos de datos de contención se muestran datos de simultaneidad agrupados por los módulos de los que se toman muestras en los datos de generación de perfiles. Cada módulo es la raíz de un árbol jerárquico. Las funciones del módulo en el que se produjeron los eventos de contención se muestran debajo del nodo de módulo.
