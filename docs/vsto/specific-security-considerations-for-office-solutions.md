@@ -17,15 +17,15 @@ helpviewer_keywords:
 - security [Office development in Visual Studio], troubleshooting
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0da77067931d35ee63a9ccc9b0de85752157772b
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 57b330884ef6638e5c853cfb5670e3552aca46cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524295"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940831"
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>Consideraciones de seguridad específicas para las soluciones de Office
   Las características de seguridad proporcionadas por Microsoft .NET Framework y Microsoft Office pueden ayudarle a proteger sus soluciones de Office contra diversas amenazas de seguridad. En este tema le daremos detalles acerca de esas amenazas y le proporcionaremos varias recomendaciones para que pueda protegerse contra ellas. Asimismo, este artículo también incluye información acerca de cómo influye la configuración de seguridad de Microsoft Office en las soluciones de Office.
@@ -117,5 +117,5 @@ ms.locfileid: "97524295"
 
 6. En el panel de detalles, seleccione **Solicitar que los complementos de la aplicación estén suscritos por un editor de confianza** o **Deshabilitar todos los complementos de la aplicación**.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Proteger soluciones de Office](../vsto/securing-office-solutions.md)

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: a7e873cd-dfe1-474f-bda5-fd7532774b15
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d48db7397e2f9a5921315036bea15551fb7baa9
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 593663c4906cc669c52336ffe6689e8de9fcde48
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97488029"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941598"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>Validación de puntos de interrupción en un servicio de lenguaje heredado
 Un punto de interrupción indica que la ejecución del programa se debe detener en un punto determinado mientras se ejecuta en un depurador. Un usuario puede colocar un punto de interrupción en cualquier línea del archivo de código fuente, ya que el editor no tiene ningún conocimiento de lo que constituye una ubicación válida para un punto de interrupción. Cuando se inicia el depurador, todos los puntos de interrupción marcados (denominados puntos de interrupción pendientes) se enlazan a la ubicación adecuada en el programa en ejecución. Al mismo tiempo, los puntos de interrupción se validan para asegurarse de que marcan ubicaciones de código válidas. Por ejemplo, un punto de interrupción en un comentario no es válido, ya que no hay ningún código en esa ubicación en el código fuente. El depurador deshabilita los puntos de interrupción no válidos.

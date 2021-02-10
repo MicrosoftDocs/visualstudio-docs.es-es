@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 57245708-f539-42dc-8963-2754a48f0189
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d655bfb3e6f2206156cd3a6d091ea04f18afe91a
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 9ed9435f4f0618ee0c0f4bc47cdb21e2cbf92f77
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304905"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940134"
 ---
 # <a name="command-contracts-in-interop-assemblies"></a>Contratos de comandos en ensamblados de interoperabilidad
 El contrato básico para controlar los comandos a través de la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaz es que el entorno llama al <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> método para determinar si se admite el comando y, si se admite, para determinar su estado y el texto. A continuación, el entorno llama al <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> método para ejecutar el comando.
@@ -29,7 +29,7 @@ El contrato básico para controlar los comandos a través de la <xref:Microsoft.
 
  En los casos en los que los comandos deben funcionar en una ventana de jerarquía, <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> se debe usar la interfaz. La <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> interfaz tiene un contrato similar con métodos similares: <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> y <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A> .
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Cómo agrega VSPackages los elementos de la interfaz de usuario](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Enrutamiento de comandos en VSPackages](../../extensibility/internals/command-routing-in-vspackages.md)
 - [Implementación de comandos](../../extensibility/internals/command-implementation.md)

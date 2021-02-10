@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 7faacd35-2638-492d-80f6-6b57e5f820de
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 698ca2c97bcc4699d2c836eff9fefa371481c9cc
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: f0832105ccc203dd046461e40d27f8d50efc3009
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349651"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940376"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Cómo: Especificar una ubicación alternativa para las actualizaciones de la implementación
 Puede instalar la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación inicialmente desde un CD o un recurso compartido de archivos, pero la aplicación debe comprobar si hay actualizaciones periódicas en la Web. Puede especificar una ubicación alternativa para las actualizaciones en el manifiesto de implementación para que la aplicación pueda actualizarse desde la web después de la instalación inicial.
@@ -40,7 +40,7 @@ Puede instalar la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.m
 
 3. Seleccione la pestaña **Opciones de implementación**.
 
-4. En el cuadro de texto denominado **Ubicación de inicio** , escriba la dirección URL del directorio que contendrá el manifiesto de implementación para las actualizaciones de la aplicación.
+4. En el cuadro de texto denominado **Ubicación de inicio**, escriba la dirección URL del directorio que contendrá el manifiesto de implementación para las actualizaciones de la aplicación.
 
 5. Guarde el manifiesto de implementación.
 

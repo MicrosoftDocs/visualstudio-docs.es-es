@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: eaab198edae66fc334e854ae1f47dae313dce76b
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 8fe531b127d657228ed68fa79358ef5df69ff17c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363489"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941494"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Introducción a los lenguajes específicos de dominio
 
@@ -45,7 +45,7 @@ Para definir un DSL, debe tener instalados los siguientes componentes:
 
 | Componente | Vínculo |
 |-|-|
-| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](https://visualstudio.microsoft.com/) |
+| Programa para la mejora | [http://go.microsoft.com/fwlink/?LinkId=185579](https://visualstudio.microsoft.com/) |
 | [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](/azure/devops/integrate/index) |
 | SDK de modelado para Visual Studio | |
 
@@ -63,7 +63,7 @@ Para crear un nuevo lenguaje específico de dominio, cree una nueva solución de
 
      ![Cuadro de diálogo para crear solución DSL](../modeling/media/create_dsldialog.png)
 
-4. En el cuadro **nombre** , escriba **familytree**. Haga clic en **Aceptar**.
+4. En el cuadro **nombre** , escriba **familytree**. Haga clic en **OK**.
 
      Se abre el **Asistente para lenguaje específico de dominio** y muestra una lista de las soluciones DSL de plantilla.
 
@@ -409,7 +409,7 @@ Cambiar el nombre de las clases de dominio y las relaciones existentes. Por ejem
 
 2. Vuelva a compilar cualquier DSL experimental u otras extensiones experimentales de Visual Studio que desee usar.
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [Introducción a los modelos, las clases y las relaciones](../modeling/understanding-models-classes-and-relationships.md)
 - [Cómo definir lenguajes específicos de dominio](../modeling/how-to-define-a-domain-specific-language.md)

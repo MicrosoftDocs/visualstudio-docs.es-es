@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 9d70eebb-bdee-4b42-8e7e-7a07e199bdf7
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ecf70f5ffdd81688943892c06fdf98aae73d6c57
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: f58b7d8d4244f7c429c3866bf76c514bf24164ff
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350964"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940454"
 ---
 # <a name="how-to-specify-a-publish-page-for-a-clickonce-application"></a>Cómo: Especificar una página de publicación para una aplicación ClickOnce
 Al publicar una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación, se genera una página web predeterminada (publish.htm) y se publica junto con la aplicación. Esta página contiene el nombre de la aplicación, un vínculo para instalar la aplicación y/o los requisitos previos, y un vínculo a un tema de ayuda que describe [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . La propiedad **publicar página** del proyecto le permite especificar un nombre para la Página Web de la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación.
@@ -35,7 +35,7 @@ Al publicar una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)
 
 ### <a name="to-specify-a-custom-web-page-for-a-clickonce-application"></a>Para especificar una página web personalizada para una aplicación ClickOnce
 
-1. Con un proyecto seleccionado en **Explorador de soluciones** , en el menú **proyecto** , haga clic en **propiedades**.
+1. Con un proyecto seleccionado en **Explorador de soluciones**, en el menú **proyecto** , haga clic en **propiedades**.
 
 2. Seleccione el panel **publicar** .
 
@@ -49,7 +49,7 @@ Al publicar una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)
 
 ### <a name="to-prevent-the-publish-page-from-launching-each-time-you-publish"></a>Para evitar que se inicie la página de publicación cada vez que publique
 
-1. Con un proyecto seleccionado en **Explorador de soluciones** , en el menú **proyecto** , haga clic en **propiedades**.
+1. Con un proyecto seleccionado en **Explorador de soluciones**, en el menú **proyecto** , haga clic en **propiedades**.
 
 2. Seleccione el panel **publicar** .
 

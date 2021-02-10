@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 63b3478e-e08a-420b-a0ec-76767e0cb289
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11a1619eaa625e086ac93bfa0f9e208239f8c844
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 37779a8c790e50e63f70dfd9023d3ba6a84d0170
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305243"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940155"
 ---
 # <a name="command-placement-guidelines"></a>Instrucciones de selección de ubicación de comandos
 Los procedimientos recomendados para colocar comandos en el entorno de desarrollo integrado (IDE) de Visual Studio varían según el tamaño del conjunto de comandos. Los comandos se definen y se colocan según la información de los archivos *. Vsct* .
@@ -57,6 +57,6 @@ Los procedimientos recomendados para colocar comandos en el entorno de desarroll
 
 - En la `CommandPlacements` sección elemento, las entradas que rellenan un menú o grupo determinado deben ser adyacentes entre sí. Esto ayuda a facilitar la lectura y facilita la determinación de las `Priority` clasificaciones.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Cómo agrega VSPackages los elementos de la interfaz de usuario](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Archivos de tabla de comandos de Visual Studio (. Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

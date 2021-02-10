@@ -17,15 +17,15 @@ helpviewer_keywords:
 - custom Ribbon, multiple Ribbons
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ca7f7757cddf89b97f7a374385ea834728f0e975
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 2eff346425dca31cb88342e69701a229de2b80ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527975"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940870"
 ---
 # <a name="ribbon-overview"></a>Información general sobre la cinta
   La cinta de opciones es una manera de organizar comandos relacionados para que sean más fáciles de encontrar. Los comandos aparecen como controles en la cinta de opciones. Los controles se organizan en *grupos* a lo largo de una franja horizontal en el borde superior de una ventana de la aplicación. Los grupos relacionados se organizan en pestañas.

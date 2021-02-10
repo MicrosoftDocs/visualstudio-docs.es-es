@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, domain properties
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 97bfbcf73a950692d5736b7a6e0b529cfe658caa
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: f9cca8468e99d41d879bee02dded8538e5fa9c5c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361526"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941364"
 ---
 # <a name="properties-of-domain-properties"></a>Propiedades de las propiedades de dominio
 Una *propiedad de dominio* es una característica de un elemento de modelo que puede contener un valor. Por ejemplo, la clase de dominio `Person` podría tener las propiedades `Name` y `BirthDate`. En la definición de DSL, las propiedades de dominio se enumeran en el cuadro de clases de dominio en el diagrama, y en la clase de dominio en DSL Explorer (Explorador de DSL). Para obtener más información, consulte [definición de un lenguaje Domain-Specific](../modeling/how-to-define-a-domain-specific-language.md).
@@ -34,7 +34,7 @@ Una *propiedad de dominio* es una característica de un elemento de modelo que p
 
   Cuando selecciona una propiedad de dominio en un diagrama o en DSL Explorer (Explorador de DSL), puede ver los siguientes elementos en la ventana Properties (Propiedades). Para obtener más información sobre cómo usar estos elementos, vea [personalizar y extender un lenguaje Domain-Specific](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-|Propiedad.|Descripción|Valor predeterminado|
+|Propiedad|Descripción|Valor predeterminado|
 |-|-|-|
 |**Descripción**|La descripción que se usa para documentar la interfaz de usuario del diseñador generado.|\<none>|
 |**Nombre para mostrar**|Nombre que se mostrará en el diseñador generado para esta propiedad de dominio. Puede contener espacios y puntuación, por ejemplo "Título de la canción".|\<none>|
@@ -50,6 +50,6 @@ Una *propiedad de dominio* es una característica de un elemento de modelo que p
 |**Setter Access Modifier**|Modificador de acceso del establecedor. Controla el ámbito en el cual el código de programa puede establecer la propiedad.|`public`|
 |**Tipo**|El tipo de propiedad. Para agregar a la lista de tipos disponibles, haga clic con el botón secundario en la raíz del DSL en el explorador de DSL y haga clic en **Agregar tipo externo**.|`String`|
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [Glosario de las Herramientas del lenguaje específico de dominio](/previous-versions/bb126564(v=vs.100))

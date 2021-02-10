@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, creating solutions
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c913f3015c56f7872dfe5ef3471578de7075b7d0
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 5d04366c908494386edc9921129db27df0ead4f7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363281"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941416"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Cómo: Crear soluciones de lenguajes específicos de dominio
 Un lenguaje específico de dominio (DSL) se crea mediante una solución de Visual Studio especializada.
@@ -29,7 +29,7 @@ Un lenguaje específico de dominio (DSL) se crea mediante una solución de Visua
 
 Antes de poder iniciar este procedimiento, Instale estos componentes:
 
-- Visual Studio
+- Programa para la mejora
 - SDK de Visual Studio (instalado como parte de la carga de trabajo **desarrollo de extensiones de Visual Studio** )
 - SDK de modelado (instalado como componente de Visual Studio)
 
@@ -118,7 +118,7 @@ De forma predeterminada, se crea un nombre formado por los nombres de empresa y 
 
  Para obtener más información sobre los nombres seguros, vea [crear y usar ensamblados de Strong-Named](/dotnet/standard/assembly/create-use-strong-named).
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [Cómo definir lenguajes específicos de dominio](../modeling/how-to-define-a-domain-specific-language.md)
 - [Glosario de las Herramientas del lenguaje específico de dominio](/previous-versions/bb126564(v=vs.100))

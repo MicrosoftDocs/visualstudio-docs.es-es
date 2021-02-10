@@ -17,18 +17,18 @@ helpviewer_keywords:
 ms.assetid: 545a4005-d283-4110-9821-c78a9833c250
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d8907018c7f5b131747e802902d88a02ca95c2cc
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: fdfdabf66c48a875f3b4316ac22e1911c141275c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350977"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940532"
 ---
 # <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Cómo: Firmar archivos de instalación con SignTool.exe (ClickOnce)
-Puede usar *SignTool.exe* para firmar un programa de instalación ( *setup.exe* ). Este proceso ayuda a garantizar que no se instalen archivos alterados en los equipos de los usuarios finales.
+Puede usar *SignTool.exe* para firmar un programa de instalación (*setup.exe*). Este proceso ayuda a garantizar que no se instalen archivos alterados en los equipos de los usuarios finales.
 
  De forma predeterminada, ClickOnce tiene manifiestos firmados y un programa de instalación firmado. Sin embargo, si más tarde quiere cambiar los parámetros del programa de instalación, debe firmarlo. Si cambia los parámetros una vez firmado el programa de instalación, la firma se daña.
 
@@ -38,25 +38,25 @@ Puede usar *SignTool.exe* para firmar un programa de instalación ( *setup.exe* 
 
 1. En el equipo de desarrollo, instale el certificado con el que quiere firmar el manifiesto.
 
-2. Seleccione el proyecto en **Explorador de soluciones**.
+2. Seleccione el proyecto en el **Explorador de soluciones**.
 
 3. En el menú **proyecto** , haga clic en **propiedades** de *projectname* .
 
-4. En la página **Firma** , desactive **Firmar los manifiestos de ClickOnce**.
+4. En la página **Firma**, desactive **Firmar los manifiestos de ClickOnce**.
 
-5. En la página **Publicar** , haga clic en **Requisitos previos**.
+5. En la página **Publicar**, haga clic en **Requisitos previos**.
 
 6. Compruebe que se han seleccionado todos los requisitos previos y haga clic en **Aceptar**.
 
-7. En la página **Publicar** , compruebe la configuración de la publicación y haga clic en **Publicar ahora**.
+7. En la página **Publicar**, compruebe la configuración de la publicación y haga clic en **Publicar ahora**.
 
      La solución publica el manifiesto de la aplicación sin firmar, el manifiesto de implementación sin firmar, los archivos específicos de la versión y el programa de instalación sin firmar en la ubicación de la carpeta de publicación.
 
-8. En la página **Publicar** , haga clic en **Requisitos previos**.
+8. En la página **Publicar**, haga clic en **Requisitos previos**.
 
-9. En el cuadro de diálogo **Requisitos previos** , desactive **Crear programa de instalación para instalar los componentes necesarios**.
+9. En el cuadro de diálogo **Requisitos previos**, desactive **Crear programa de instalación para instalar los componentes necesarios**.
 
-10. En la página **Publicar** , compruebe la configuración de la publicación y haga clic en **Publicar ahora**.
+10. En la página **Publicar**, compruebe la configuración de la publicación y haga clic en **Publicar ahora**.
 
      La solución publica el manifiesto de la aplicación firmado, el manifiesto de implementación firmado y los archivos específicos de la versión en la ubicación de la carpeta de publicación. El proceso de publicación no sobrescribe el programa de instalación sin firmar.
 

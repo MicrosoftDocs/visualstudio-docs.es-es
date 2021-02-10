@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 500aebee-545e-4831-a78b-b8671a008015
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c0f0a1c6bda564367497306a572f7e9f4012031
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 335f41abf0ca2914ca603f7adbce7dea98eee028
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349768"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940493"
 ---
 # <a name="how-to-specify-a-link-for-technical-support"></a>Cómo: Especificar un vínculo para soporte técnico
 Al publicar una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación, la propiedad de la **dirección URL de soporte** identifica una página web o un recurso compartido de archivos en el que los usuarios pueden ir para obtener información acerca de la aplicación. Esta propiedad es opcional; Si se proporciona, la dirección URL se mostrará en el cuadro de diálogo **Agregar o quitar programas** de entrada de la aplicación.

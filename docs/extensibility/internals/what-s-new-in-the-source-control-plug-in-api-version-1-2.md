@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 7c5fa471-456e-4f95-8309-5750ec4e5e85
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: eca5afe8ea9bb1404acf342cc7edbe1100888c6e
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 9a7c1b57f509689d103a9f90a49c83a9489ac74f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487808"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941585"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>&#39;novedades de la API del complemento de control de código fuente 1,2
 En esta sección se resalta la funcionalidad avanzada de control de código fuente en la API del complemento de control de código fuente, versión 1,2. A continuación se enumeran las nuevas características de la versión 1,2:

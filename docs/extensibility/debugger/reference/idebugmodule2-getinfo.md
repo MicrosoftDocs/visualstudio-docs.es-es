@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: de337e66-294f-4ac9-b21e-71fac7418e36
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c68c583702d7def5a7bff3ee40a9b8b2c537bb31
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 205a32c0c7c6bb10b8b0a58e62f5d6ba5cdca91f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726964"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941705"
 ---
 # <a name="idebugmodule2getinfo"></a>IDebugModule2::GetInfo
 Obtiene información acerca de este módulo.
@@ -29,14 +29,14 @@ Obtiene información acerca de este módulo.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT GetInfo( 
+HRESULT GetInfo( 
    MODULE_INFO_FIELDS dwFields,
    MODULE_INFO*       pInfo
 );
 ```
 
 ```cpp
-int GetInfo( 
+int GetInfo( 
    enum_MODULE_INFO_FIELDS dwFields,
    MODULE_INFO[]           pInfo
 );
@@ -52,7 +52,7 @@ de Combinación de marcas de la enumeración [MODULE_INFO_FIELDS](../../../exten
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  La estructura [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) contiene el nombre del módulo que se muestra en la ventana **módulos** .
 
 ## <a name="see-also"></a>Vea también

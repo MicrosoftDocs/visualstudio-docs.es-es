@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 4b5183b2-2fd4-4433-9310-4a73bb12c4e3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 12a6ebce0ff3bb7c3040765c1a82f876d0055c4d
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: a9c9dee27ae78375dcb667bba5157ea84c046073
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349677"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940441"
 ---
 # <a name="how-to-specify-a-start-menu-name-for-a-clickonce-application"></a>Cómo: Especificar un nombre en el menú Inicio para una aplicación ClickOnce
 Cuando [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] se instala una aplicación para su uso en línea y sin conexión, se agrega una entrada al menú **Inicio** y a la lista **Agregar o quitar programas** . De forma predeterminada, el nombre para mostrar es el mismo que el nombre del ensamblado de la aplicación, pero puede cambiar el nombre para mostrar estableciendo el **nombre del producto** en el cuadro de diálogo **Opciones de publicación** .

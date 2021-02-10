@@ -8,20 +8,20 @@ helpviewer_keywords:
 - Domain-Specific Language, domain relationships
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 88c5db50432947b99a2667280fe7861e7acd95ac
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 6fb50018dccbe03512c8ab6e5f07c17dbcee307d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362462"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941338"
 ---
 # <a name="properties-of-domain-relationships"></a>Propiedades de las relaciones de dominio
 Las propiedades de la tabla siguiente están asociadas a una relación de dominio. Para obtener información sobre las relaciones de dominio, vea Descripción de los [modelos, las clases y las relaciones](../modeling/understanding-models-classes-and-relationships.md). Para obtener más información sobre cómo usar estas propiedades, vea [personalizar y extender un lenguaje Domain-Specific](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-|Propiedad.|Descripción|Default|
+|Propiedad|Descripción|Valor predeterminado|
 |-|-|-|
 |Modificador de acceso|El nivel de acceso de la relación de dominio ( `public` o `internal` ).|`public`|
 |Atributos personalizados|Se utiliza para agregar atributos a la clase de código fuente que se genera a partir de la relación de dominio.|\<none>|
@@ -35,9 +35,9 @@ Las propiedades de la tabla siguiente están asociadas a una relación de domini
 |Espacio de nombres|El espacio de nombres que está afiliado a la relación de dominio.|Espacio de nombres actual|
 |Notas|Notas informales asociadas a la relación de dominio.|\<none>|
 |Descripción|La descripción que se usa para documentar el código y se usa en la interfaz de usuario del diseñador generado.|\<none>|
-|Nombre para mostrar|Nombre que se muestra en el diseñador generado para la relación de dominio.|\<none>|
+|Display Name (Nombre para mostrar)|Nombre que se muestra en el diseñador generado para la relación de dominio.|\<none>|
 |Help Keyword|Palabra clave opcional que se usa para indizar la ayuda de F1 para la relación de dominio.|\<none>|
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [Glosario de las Herramientas del lenguaje específico de dominio](/previous-versions/bb126564(v=vs.100))

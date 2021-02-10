@@ -14,15 +14,15 @@ helpviewer_keywords:
 - object models [Office development in Visual Studio], threading support
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5d44c86e17b5df79c44f85cd555b3036e925ae61
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 6fd35551c5c40494c169fb569113e3530f633a6f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524191"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940805"
 ---
 # <a name="threading-support-in-office"></a>Compatibilidad de subprocesos en Office
   En este artículo se proporciona información sobre cómo se admiten los subprocesos en el modelo de objetos de Microsoft Office. El modelo de objetos de Office no es seguro para subprocesos, pero es posible trabajar con varios subprocesos en una solución de Office. Las aplicaciones de Office son servidores del modelo de objetos componentes (COM). COM permite que los clientes llamen a los servidores COM en subprocesos arbitrarios. En el caso de los servidores COM que no son seguros para subprocesos, COM proporciona un mecanismo para serializar las llamadas simultáneas de modo que solo se ejecute un subproceso lógico en el servidor en cualquier momento. Este mecanismo se conoce como el modelo de contenedor uniproceso (STA). Dado que las llamadas se serializan, los llamadores pueden bloquearse durante períodos de tiempo mientras el servidor está ocupado o controlando otras llamadas en un subproceso en segundo plano.
@@ -38,7 +38,7 @@ ms.locfileid: "97524191"
 
 - Simultaneidad
 
-- Synchronization
+- Sincronización
 
 - Marshaling
 
@@ -73,7 +73,7 @@ ms.locfileid: "97524191"
 ## <a name="modeless-forms"></a>Formularios no modales
  Un formulario no modal permite algún tipo de interacción con la aplicación mientras se muestra el formulario. El usuario interactúa con el formulario y el formulario interactúa con la aplicación sin cerrarse. El modelo de objetos de Office admite formularios no modales administrados; sin embargo, no se deben usar en un subproceso en segundo plano.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Subprocesamiento (C#)](/dotnet/csharp/programming-guide/concepts/threading/index)
 - [Subprocesamiento (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/threading/index)
 - [Usar subprocesos y subprocesos](/dotnet/standard/threading/using-threads-and-threading)

@@ -25,15 +25,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], shortcut keys
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b72270da75d27ed2837540369f74e9c5e87b417b
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 06211bb22ae071132b4cfad67352daa46182d366
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528003"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940922"
 ---
 # <a name="ribbon-designer"></a>Diseñador de la cinta de opciones
   El diseñador de la cinta de opciones es un lienzo de diseño visual. Use el diseñador de la cinta de opciones para agregar pestañas, grupos y controles personalizados a la cinta de opciones de una aplicación Microsoft Office.
@@ -201,7 +201,7 @@ ms.locfileid: "97528003"
 |Seleccione el primer control del panel desplegable si el panel desplegable está abierto.|**Right**|
 |Cerrar un panel desplegable.|**Esc**|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Información general sobre la cinta](../vsto/ribbon-overview.md)
 - [Ribbon XML](../vsto/ribbon-xml.md)

@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26f78be8708e61370be3256c8cde481d5c61c89d
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: d86f57abdc96e4fc4f2abbb781e9437c74854a7c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598151"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939297"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Adición de una extensión del protocolo de servidor de lenguaje
 
@@ -45,7 +45,7 @@ Para obtener más información sobre cómo crear un servidor de lenguaje de ejem
 
 En las tablas siguientes se muestran las características de LSP que se admiten en Visual Studio:
 
-Mensaje | Tiene compatibilidad con Visual Studio
+Message | Tiene compatibilidad con Visual Studio
 --- | ---
 initialize | sí
 inicializado | sí
@@ -500,6 +500,6 @@ Sí, pero no todas las características funcionarán correctamente. El objetivo 
 
 Vea las instrucciones de Marketplace [aquí](walkthrough-publishing-a-visual-studio-extension.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Agregar compatibilidad con otros lenguajes en el editor de Visual Studio](../ide/adding-visual-studio-editor-support-for-other-languages.md)

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 17914a71-10ea-4b6f-8982-e364f87dca53
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8bd3c6d46a577930cc7a2b87c85cd82a55f8cf66
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a254de60995eb5e7902eda80cf50c4af227a756f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718839"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940285"
 ---
 # <a name="idebugthread2enumframeinfo"></a>IDebugThread2::EnumFrameInfo
 Recupera una lista de los marcos de pila para este subproceso.
@@ -28,7 +28,7 @@ Recupera una lista de los marcos de pila para este subproceso.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT EnumFrameInfo ( 
+HRESULT EnumFrameInfo ( 
    FRAMEINFO_FLAGS        dwFieldSpec,
    UINT                   nRadix,
    IEnumDebugFrameInfo2** ppEnum
@@ -36,7 +36,7 @@ HRESULT EnumFrameInfo ( 
 ```
 
 ```csharp
-int EnumFrameInfo ( 
+int EnumFrameInfo ( 
    enum_FRAMEINFO_FLAGS     dwFieldSpec,
    uint                     nRadix,
    out IEnumDebugFrameInfo2 ppEnum
@@ -56,7 +56,7 @@ enuncia Devuelve un objeto [IEnumDebugFrameInfo2](../../../extensibility/debugge
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Los fotogramas del subproceso se enumeran en orden, con el fotograma actual enumerado primero y el fotograma más antiguo enumerado en último lugar.
 
 ## <a name="see-also"></a>Vea también

@@ -12,15 +12,15 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7257e3940af72f344906642adc51a1dd98cb3f25
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 4c8039fc2a5df197446873f0b2efef82d9a5f662
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524179"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940792"
 ---
 # <a name="the-workbook-contains-activex-controls-that-cannot-be-loaded"></a>El libro contiene controles ActiveX que no se pueden cargar
 
@@ -36,6 +36,6 @@ ms.locfileid: "97524179"
 
 3. Cree una solución en el nivel del documento basada en el documento o en el libro.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Cómo: crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md)

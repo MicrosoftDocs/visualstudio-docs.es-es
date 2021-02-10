@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 337fd73dbe46a97b6f154dfba1714ede834f1e69
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: c9e6960cdd84e518b2d58eb77c25278bd52475d7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363333"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941442"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Cómo: Agregar un controlador para arrastrar y colocar
 
@@ -162,7 +162,7 @@ Las propiedades `Data` y `Prototype` de los argumentos de evento solo contienen 
 
 Haga que el DSL de origen sea accesible para Visual Studio Model bus:
 
-1. Abra el archivo de definición de DSL del DSL de origen en DSL Designer (Diseñador de DSL). Haga clic con el botón secundario en la superficie de diseño y haga clic en **Habilitar Modelbus**. En el cuadro de diálogo, elija una o ambas opciones.  Haga clic en **Aceptar**. Se agrega un nuevo proyecto "ModelBus" a la solución de DSL.
+1. Abra el archivo de definición de DSL del DSL de origen en DSL Designer (Diseñador de DSL). Haga clic con el botón secundario en la superficie de diseño y haga clic en **Habilitar Modelbus**. En el cuadro de diálogo, elija una o ambas opciones.  Haga clic en **OK**. Se agrega un nuevo proyecto "ModelBus" a la solución de DSL.
 
 2. Haga clic en **transformar todas las plantillas** y Recompile la solución.
 
@@ -407,7 +407,7 @@ namespace Company.CompartmentDrag  // EDIT.
 
  /// <summary>
  /// Override some methods of the compartment shape.
- /// **_ GenerateDoubleDerived must be set for this shape in DslDefinition.dsl. _***
+ /// *** GenerateDoubleDerived must be set for this shape in DslDefinition.dsl. ****
  /// </summary>
  public partial class ClassShape
  {
@@ -571,7 +571,7 @@ namespace Company.CompartmentDrag  // EDIT.
 }
 ```
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [Personalizar comportamiento de copia](../modeling/customizing-copy-behavior.md)
 - [Implementar soluciones de lenguajes específicos de dominio](msi-and-vsix-deployment-of-a-dsl.md)

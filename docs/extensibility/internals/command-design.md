@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 097108c3-f758-4b87-89d6-b32d12d9041a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ab06ade9be1ccd0683cd298a5e758ddcfa883f8
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 9b7e0f214f50831392b5f0f5633d7c06ba03f37c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304873"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940141"
 ---
 # <a name="command-design"></a>Diseño de comandos
 Cuando se agrega un comando a un VSPackage, debe especificar dónde va a aparecer, Cuándo está disponible y cómo debe controlarse.

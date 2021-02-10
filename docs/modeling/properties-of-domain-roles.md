@@ -6,20 +6,20 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6dda8e7c5538b0517c181a451072c4f8a9544965
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 9edee5f8128933b2ecb36434a64d39c40d3d799f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362345"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941312"
 ---
 # <a name="properties-of-domain-roles"></a>Propiedades de los roles de dominio
 Las propiedades de la tabla siguiente están asociadas a un rol de dominio. Para obtener información sobre los roles de dominio, vea Descripción de los [modelos, las clases y las relaciones](../modeling/understanding-models-classes-and-relationships.md). Para obtener más información sobre cómo usar estas propiedades, vea [personalizar y extender un lenguaje Domain-Specific](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-|Propiedad.|Descripción|Default|
+|Propiedad|Descripción|Valor predeterminado|
 |-|-|-|
 |Tipo de colección|Si este rol tiene una multiplicidad de 0.. * o 1.. \* , esta propiedad Personaliza el tipo genérico que se utiliza para almacenar la colección de vínculos.|`(none)` - <xref:Microsoft.VisualStudio.Modeling.LinkedElementCollection%601> se usa|
 |Atributos personalizados|Los atributos que especifique aquí se agregarán como atributos a la clase de código generada.|<ninguno\>|
@@ -31,18 +31,18 @@ Las propiedades de la tabla siguiente están asociadas a un rol de dominio. Para
 |Nombre|Nombre del rol de dominio. Esta propiedad no puede contener espacios en blanco.|El nombre de la clase de dominio del encargado de rol para este rol.|
 |Propaga la copia|`DoNotPropagateCopy` -El encargado de rol copiado no tendrá ninguna copia de este vínculo.<br /><br /> `PropagateCopyToLinkOnly` -El vínculo copiado apunta al encargado de rol opuesto existente.<br /><br /> `PropagateCopyToLinkAndOppositeRolePlayer` -El vínculo copiado apunta a una copia del encargado de rol opuesto.|`PropagateCopyToLinkAndOppositeRolePlayer` para los roles de origen de las incrustaciones.<br /><br /> `DoNotPropagateCopy` para otros roles.<br /><br /> Para obtener más información, vea [personalizar el comportamiento de copia](../modeling/customizing-copy-behavior.md)|
 |Propaga la eliminación|`True` para eliminar el elemento que desempeña este rol cuando se elimina el vínculo asociado.|`True` para el destino de un rol de incrustación.<br /><br /> `False` para otros roles.|
-|Nombre de propiedad|Nombre de la propiedad generada en el código del encargado de rol. Este nombre no puede contener espacios en blanco.|Nombre del rol opuesto si este rol tiene una multiplicidad de cero a uno o de uno a uno. de lo contrario, el nombre plural del rol opuesto.|
+|Nombre de la propiedad|Nombre de la propiedad generada en el código del encargado de rol. Este nombre no puede contener espacios en blanco.|Nombre del rol opuesto si este rol tiene una multiplicidad de cero a uno o de uno a uno. de lo contrario, el nombre plural del rol opuesto.|
 |Encargado de rol|Clase de dominio del elemento que puede desempeñar este rol en la relación. Esta propiedad es de sólo lectura.|La clase de dominio del encargado de rol para este rol.|
 |Notas|Notas informales asociadas al rol de dominio.|<ninguno\>|
-|Categoría|La categoría en la que aparece la propiedad generada en la ventana **propiedades** del diseñador generado. Si esta propiedad está vacía, la propiedad generada aparece bajo la categoría **varios** .|<ninguno\>|
+|Category|La categoría en la que aparece la propiedad generada en la ventana **propiedades** del diseñador generado. Si esta propiedad está vacía, la propiedad generada aparece bajo la categoría **varios** .|<ninguno\>|
 |Descripción|La descripción que se usa para documentar el código y se usa en la interfaz de usuario del diseñador generado.<br /><br /> La descripción aparece en la información sobre herramientas de IntelliSense para la propiedad generada en la clase de encargado de rol.|`Description for`*nombre completo del rol* .|
-|Nombre para mostrar|El nombre que se muestra en el diseñador generado para el rol de dominio.|Valor ajustado de la propiedad Name.|
+|Display Name (Nombre para mostrar)|El nombre que se muestra en el diseñador generado para el rol de dominio.|Valor ajustado de la propiedad Name.|
 |Help Keyword|Palabra clave opcional que se usa para indizar la ayuda de F1 para el rol de dominio.|\<none>|
 |Nombre para mostrar de la propiedad|Nombre que se muestra en el diseñador generado para la propiedad de rol generada.|Valor ajustado de la propiedad de nombre de propiedad.|
 
 > [!NOTE]
 > El valor predeterminado de un nombre para mostrar se basa en el valor de propiedad asociado insertando espacios delante de cada carácter en mayúscula que va precedido por un carácter en minúsculas y no seguido de otro carácter en mayúsculas.
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [Propiedades de las relaciones de dominio](../modeling/properties-of-domain-relationships.md)

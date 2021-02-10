@@ -14,20 +14,20 @@ helpviewer_keywords:
 ms.assetid: ecd06658-ad02-4440-bccd-88437b7fb816
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7645731cf5b955601541a122f2fdb3fa3d794cc3
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 2ddb1feb3e5234b26e2ebceb9f899554d55b3015
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350743"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940350"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;&gt;Elemento Package (arranque)
 El `Package` elemento es el elemento XML de nivel superior dentro de un archivo de paquete.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ```xml
 <Package
@@ -149,7 +149,7 @@ El `Package` elemento es el elemento XML de nivel superior dentro de un archivo 
 |--------------------| - |
 | `Culture` | Necesario. Define la referencia cultural para este paquete, que determina el idioma que se va a utilizar. Este atributo es una clave del `Strings` elemento, que enumera las cadenas específicas de la referencia cultural para los nombres de producto y los mensajes de error durante la instalación. |
 | `Name` | Necesario. Nombre del paquete que se muestra al desarrollador dentro de una herramienta como [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Este atributo es una clave en el `Strings` elemento, que debe contener un `String` elemento con las `Name` `Culture` propiedades y establecidas para que coincidan con las `Name` `Culture` propiedades y de `Package` . |
-| `LicenseAgreement` | Opcional. Especifica el nombre del archivo en el paquete de distribución que contiene el contrato de licencia de End-User (EULA).  Este archivo puede ser texto sin formato ( *. txt* ) o formato de texto enriquecido. ( *. rtf* ) |
+| `LicenseAgreement` | Opcional. Especifica el nombre del archivo en el paquete de distribución que contiene el contrato de licencia de End-User (EULA).  Este archivo puede ser texto sin formato (*. txt*) o formato de texto enriquecido. (*. rtf*) |
 
 ## <a name="example"></a>Ejemplo
  En el ejemplo de código siguiente se muestra un archivo de paquete completo para redistribuir el .NET Framework 2,0.
