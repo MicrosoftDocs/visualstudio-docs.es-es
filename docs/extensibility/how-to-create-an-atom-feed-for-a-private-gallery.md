@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 5897f538-9c41-486f-97d9-a1976d20d9fd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 833d75d7dfd18e863664e6d3d17d65a4e08b4d77
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 81167b1e2e9f7959398b30b89796913520c48fac
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994152"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967454"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Cómo: crear una fuente Atom para una galería privada
 Puede crear una fuente Atom (RSS) en una ubicación de la intranet que contenga extensiones y agregar la fuente a **extensiones y actualizaciones** como una galería privada. Para más información, consulte [Private galleries](../extensibility/private-galleries.md) (Galerías privadas).
@@ -74,5 +74,5 @@ Puede crear una fuente Atom (RSS) en una ubicación de la intranet que contenga 
 
  Tenga en cuenta que las dos etiquetas de vínculo hacen referencia a las capturas de pantalla de la carpeta de imágenes generada.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Galerías privadas](../extensibility/private-galleries.md)

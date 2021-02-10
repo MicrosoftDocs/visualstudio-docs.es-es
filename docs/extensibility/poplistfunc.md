@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: b2199fd5-d707-4628-92dd-e2a01e2f507a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 239f1aa5a55c3a5ce3a0f2a3ec9145f3cdb0630e
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: ddf641cf309eb5b5352904da2ac07b64b0886f97
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863157"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967363"
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
 El IDE proporciona esta devolución de llamada al [SccPopulateList](../extensibility/sccpopulatelist-function.md) y la usa el complemento de control de código fuente para actualizar una lista de archivos o directorios (también proporcionados a la `SccPopulateList` función).
@@ -49,18 +49,18 @@ typedef BOOL (*POPLISTFUNC) (
 
 ## <a name="return-value"></a>Valor devuelto
 
-|Valor|Descripción|
+|Value|Descripción|
 |-----------|-----------------|
 |`TRUE`|El complemento puede seguir llamando a esta función.|
 |`FALSE`|Se ha producido un problema en el lado del IDE (por ejemplo, una situación de memoria insuficiente). El complemento debe detener la operación.|
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Notas
  Para cada archivo que el complemento de control de código fuente desea agregar o eliminar de la lista de archivos, llama a esta función, pasando el `lpFileName` . La `fAddRemove` marca indica un nuevo archivo que se va a agregar a la lista o a un archivo anterior que se va a eliminar. El `nStatus` parámetro proporciona el estado del archivo. Cuando el complemento SCC ha terminado de agregar y eliminar archivos, vuelve de la llamada a [SccPopulateList](../extensibility/sccpopulatelist-function.md) .
 
 > [!NOTE]
 > El `SCC_CAP_POPULATELIST` bit de capacidad es necesario para Visual Studio.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Funciones de devolución de llamada implementadas por el IDE](../extensibility/callback-functions-implemented-by-the-ide.md)
 - [Complementos de control de código fuente](../extensibility/source-control-plug-ins.md)
 - [SccPopulateList](../extensibility/sccpopulatelist-function.md)

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 98b9914d-4f32-44da-b422-68830bce44b4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bc6dc6c055f9821c9c7f02312762d3dd0a44bc58
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fca68c1fd6f0c3d59759499c6aa5e4f5a7fe8e22
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80716088"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967792"
 ---
 # <a name="ienumdebugportsuppliers2clone"></a>IEnumDebugPortSuppliers2::Clone
 Devuelve una copia de la enumeración actual como objeto independiente.
@@ -46,7 +46,7 @@ int Clone(
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  La copia de la enumeración tiene el mismo estado que el original en el momento en que se llama a este método. Sin embargo, los Estados de la copia y del original son independientes y se pueden cambiar individualmente.
 
 ## <a name="see-also"></a>Vea también

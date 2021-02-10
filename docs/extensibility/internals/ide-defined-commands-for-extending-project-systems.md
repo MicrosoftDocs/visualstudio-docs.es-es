@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 0e33b8e9-16fa-4400-a941-e92d56120e7e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d5147f4e03b019b083613a77afe95b95e9e033a
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: 4a08d60a52ed970781ceafdb15d0d5c64440f0cd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761171"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968078"
 ---
 # <a name="ide-defined-commands-for-extending-project-systems"></a>Comandos definidos por el IDE para ampliar sistemas del proyecto
 Si desea ampliar los sistemas del proyecto, puede usar comandos y grupos de comandos proporcionados por el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.

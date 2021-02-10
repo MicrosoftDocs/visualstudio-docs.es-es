@@ -7,16 +7,16 @@ ms.topic: how-to
 ms.assetid: 7bce69e2-407c-4342-8516-641586968928
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: f21974ad59951290123a3a89f68b6f326a6e2057
-ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
+ms.openlocfilehash: 328a75b6502cd0e825b6d954a88ef97c8ef48ff1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98533815"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960303"
 ---
 # <a name="collect-net-framework-memory-data-by-using-the-profiler-command-line"></a>Recopilar datos de memoria de .NET Framework mediante la línea de comandos del generador de perfiles
 

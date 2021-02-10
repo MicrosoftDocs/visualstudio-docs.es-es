@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: d7a0f2b0-d427-4d49-9536-54edfb37c0f3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 72de98e08581b105322b07390d85b95c06b1083c
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 63b1a4a7cb6e2d12882794a07e51151effe36716
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97862695"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967428"
 ---
 # <a name="persist-the-property-of-a-project-item"></a>Conservar la propiedad de un elemento de proyecto
 Es posible que desee conservar una propiedad agregada a un elemento de proyecto, como el autor de un archivo de código fuente. Puede hacerlo almacenando la propiedad en el archivo de proyecto.
@@ -134,6 +134,6 @@ Es posible que desee conservar una propiedad agregada a un elemento de proyecto,
    </Compile>
    ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Herramientas personalizadas](../extensibility/internals/custom-tools.md)

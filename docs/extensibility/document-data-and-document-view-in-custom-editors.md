@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 71eea623-f566-4feb-84cd-ca1ba71bc493
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 576b195663f379b1f2fd327ce6a8806ddb43deda
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 89f2903b2ec1308692f629c40af06f89706a427b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994880"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968299"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>Datos de documento y vista de documento en editores personalizados
 Un editor personalizado consta de dos partes: un objeto de datos de documento y un objeto de vista de documento. Como sugieren los nombres, el objeto de datos del documento representa los datos de texto que se van a mostrar. Del mismo modo, el objeto de vista de documento (o "vista") representa una o más ventanas en las que se va a mostrar el objeto de datos del documento.
@@ -38,7 +38,7 @@ Un editor personalizado consta de dos partes: un objeto de datos de documento y 
 
  Hay dos opciones para crear una vista para un editor personalizado. Uno es el modelo de activación en contexto, donde la vista se hospeda en una ventana con un control ActiveX o un objeto de datos de documento. El segundo es el modelo de incrustación simplificado, donde la vista se hospeda en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] y <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> se implementa para controlar los comandos de la ventana. Para obtener información sobre el modelo de activación en contexto, consulte [activación en contexto](/previous-versions/visualstudio/visual-studio-2015/misc/in-place-activation?preserve-view=true&view=vs-2015). Para obtener información sobre el modelo de incrustación simplificado, vea [incrustación simplificada](../extensibility/simplified-embedding.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Compatibilidad con varias vistas de documento](../extensibility/supporting-multiple-document-views.md)
 - [Incrustación simplificada](../extensibility/simplified-embedding.md)

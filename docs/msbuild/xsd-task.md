@@ -19,19 +19,19 @@ helpviewer_keywords:
 ms.assetid: 15c99f5c-7124-4bbc-bc03-70c7bcce8893
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5aef78460197796767ec1429179e5598d0f12dbc
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 7227fff5dd4c58e1bce81ef8cad5c32f854abf55
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047203"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960330"
 ---
 # <a name="xsd-task"></a>XSD (tarea)
 
-Encapsula la herramienta de definición de esquema XML ( *xsd.exe* ), que genera archivos de esquema o clase desde un origen.
+Encapsula la herramienta de definición de esquema XML (*xsd.exe*), que genera archivos de esquema o clase desde un origen.
 
 > [!NOTE]
 > A partir de Visual Studio 2017, el proyecto C++ ya no es compatible con *xsd.exe*. Puede seguir usando la API **Microsoft.VisualC.CppCodeProvider** agregando manualmente *CppCodeProvider.dll* a la GAC.

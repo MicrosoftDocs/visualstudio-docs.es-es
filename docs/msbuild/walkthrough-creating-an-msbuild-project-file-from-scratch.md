@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e3acff7c-cb4e-4ae1-8be2-a871bcff847b
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ebe3c60e4061a66bb77f41bf165fb16e0c427c2
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 2d3d0462382ddcc86a23c7e25162fb429b9f9893
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046065"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967545"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>Tutorial: Crear un archivo de proyecto de MSBuild desde cero
 
@@ -155,7 +155,7 @@ Su archivo del proyecto mínimo debe ser similar al código siguiente:
 Las tareas en el destino Build se ejecutan secuencialmente. En este caso, la tarea `Csc` del compilador de Visual C# es la única tarea. Espera la compilación de una lista de archivos de código fuente y esto se produce mediante el valor del elemento `Compile`. El elemento `Compile` hace referencia a solo un archivo de código fuente, *Helloworld.cs*.
 
 > [!NOTE]
-> En el elemento, puede utilizar el carácter comodín asterisco (\*) para hacer referencia a todos los archivos cuya extensión de nombre de archivo sea *.cs* , del modo siguiente:
+> En el elemento, puede utilizar el carácter comodín asterisco (\*) para hacer referencia a todos los archivos cuya extensión de nombre de archivo sea *.cs*, del modo siguiente:
 >
 > ```xml
 > <Compile Include="*.cs" />
@@ -256,7 +256,7 @@ Su archivo del proyecto debe ser ahora similar al código siguiente:
 
      De este modo se crea la carpeta *\Bin\\* y, a continuación, se llama al compilador de Visual C# para crear la aplicación *MSBuildSample* y colocarla en dicha carpeta.
 
-2. Para comprobar que se ha creado la carpeta *\Bin\\* y que contiene la aplicación *MSBuildSample* , escriba **dir Bin**.
+2. Para comprobar que se ha creado la carpeta *\Bin\\* y que contiene la aplicación *MSBuildSample*, escriba **dir Bin**.
 
 3. Escriba **Bin\MSBuildSample** para probar la aplicación.
 
@@ -331,9 +331,9 @@ Su archivo del proyecto debe ser ahora similar al código siguiente:
 
 1. En el símbolo del sistema, escriba **msbuild helloworld.csproj -p:AssemblyName=Greetings**.
 
-     Como no utilizó el modificador **-t** para establecer el destino explícitamente, MSBuild ejecutará el destino Build predeterminado. El modificador **-p** invalida la propiedad `AssemblyName` y le da el nuevo valor, `Greetings`. Esto hace que se cree una aplicación, *Greetings.exe* , en la carpeta *\Bin\\* .
+     Como no utilizó el modificador **-t** para establecer el destino explícitamente, MSBuild ejecutará el destino Build predeterminado. El modificador **-p** invalida la propiedad `AssemblyName` y le da el nuevo valor, `Greetings`. Esto hace que se cree una aplicación, *Greetings.exe*, en la carpeta *\Bin\\* .
 
-2. Para comprobar que la carpeta *\Bin\\* contiene la aplicación *MSBuildSample* y la nueva aplicación *Greetings* , escriba **dir Bin**.
+2. Para comprobar que la carpeta *\Bin\\* contiene la aplicación *MSBuildSample* y la nueva aplicación *Greetings*, escriba **dir Bin**.
 
 3. Escriba **Bin\Greetings** para probar la aplicación Greetings.
 
@@ -353,7 +353,7 @@ Su archivo del proyecto debe ser ahora similar al código siguiente:
 
      Aunque no se especifica un archivo de proyecto, MSBuild compila el archivo *helloworld.csproj* porque solo hay un archivo de proyecto en la carpeta actual. Esto hace que se cree la aplicación *MSBuildSample* en la carpeta *\Bin\\* .
 
-     Para comprobar que la carpeta *\Bin\\* contiene la aplicación *MSBuildSample* , escriba **dir Bin**.
+     Para comprobar que la carpeta *\Bin\\* contiene la aplicación *MSBuildSample*, escriba **dir Bin**.
 
 ## <a name="build-incrementally"></a>Compilación de forma incremental
 

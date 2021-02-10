@@ -6,17 +6,17 @@ ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ef287616f5b214566a273817c229d9105bf253c5
-ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
+ms.openlocfilehash: c28355e4097dc014f4757788f175ea80850a3f63
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98129489"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960434"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>Tutorial: Crear una aplicación ASP.NET Core con TypeScript en Visual Studio
 

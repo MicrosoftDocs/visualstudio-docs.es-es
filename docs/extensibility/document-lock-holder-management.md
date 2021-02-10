@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: fa1ce513-eb7d-42bc-b6e8-cb2433d051d5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c15696d81be92f0549069bad354e65356f7b2e7c
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 5c80c2969676de25575ec75c6976224f1cd0160e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995907"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968247"
 ---
 # <a name="document-lock-holder-management"></a>Administración de titulares de bloqueo de documentos
 
@@ -45,7 +45,7 @@ Tenga en cuenta que si necesita colocar un bloqueo de edición en un documento p
 
 Muchas veces un diseñador de la interfaz de usuario que modifica los archivos de código mediante programación realiza cambios en más de un archivo. En tales casos, el <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell2.SaveItemsViaDlg%2A> método controla el almacenamiento de uno o más documentos por medio del cuadro de diálogo **¿desea guardar los cambios en los elementos siguientes?** .
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Tabla de documentos en ejecución](../extensibility/internals/running-document-table.md)
 - [Persistencia y la tabla de documentos en ejecución](../extensibility/internals/persistence-and-the-running-document-table.md)

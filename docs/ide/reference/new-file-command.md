@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 767868d6-a525-425b-a43b-2198f636ab6b
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c800ce0ed130ed78f9537584c95a29a717f405fa
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: a75678e8f29a282deef6f3d443a6e1c96d3edd7f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304103"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967272"
 ---
 # <a name="new-file-command"></a>Nuevo archivo (Comando)
 Crea un archivo y lo abre. El archivo aparece en la carpeta Archivos varios.

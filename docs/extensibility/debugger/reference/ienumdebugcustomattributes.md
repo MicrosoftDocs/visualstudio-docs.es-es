@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 11aa768d-1852-44d6-9de3-17f9bafaded2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f8b521432124267d3f0e179d3a889fb599fa99d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0c3e4cfaf35c1fee655eedc49e8a3212c1355390
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717131"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967480"
 ---
 # <a name="ienumdebugcustomattributes"></a>IEnumDebugCustomAttributes
 Enumera los atributos personalizados.

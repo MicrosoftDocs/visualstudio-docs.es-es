@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: 36f5b4de-5686-4f40-9e72-f4aee27d833c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: a5f0e3613dc9b122a6fac915f4683d9f7b859ee3
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 58236bbacfaa262c23400506cb32331719000b81
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150904"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967532"
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>Vista Llamador y destinatario: datos de muestreo de memoria de .NET
 La vista Llamador y destinatario muestra datos de la generación de perfiles de memoria de. NET para una función seleccionada y sus funciones primarias y secundarias. La vista Llamador y destinatario contiene tres cuadrículas.

@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: fbb1928d-dddc-43d1-98a4-e23b0ecbae09
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2c51b1fd345789cabbb9735621626ab7c2db993
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: d67716f78249bda5d316ffde175b80f4ef1c1e45
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845289"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960786"
 ---
 # <a name="session-debug-manager"></a>Administrador de depuración de sesión
 El administrador de depuración de sesión (SDM) administra cualquier número de motores de depuración (DE) que depuren cualquier número de programas en varios procesos en cualquier número de equipos. Además de ser un multiplexor del motor de depuración, el SDM proporciona una vista unificada de la sesión de depuración al IDE.

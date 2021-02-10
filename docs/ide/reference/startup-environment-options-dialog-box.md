@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 9d517203-3c62-4660-b7b4-ea7d032dcb1e
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f8e6cbac9da68a31c345805c1070c4d5b9fd168d
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 62057dcc4b7410e31f5f27dc31976b49ee25a132
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96616309"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967220"
 ---
 # <a name="options-dialog-box-environment--startup"></a>Cuadro de diálogo Opciones: Entorno \> Inicio
 

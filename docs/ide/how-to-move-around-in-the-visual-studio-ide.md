@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 6c36b6eb-c93f-496b-af08-4199f7afd8bd
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b8f2e796ed122bc4dba0c1fb4cfca85c74065fb8
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 384a6252ef17709970f6e902dfdf83a157b0460a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597046"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968052"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Cómo: moverse por el IDE de Visual Studio
 

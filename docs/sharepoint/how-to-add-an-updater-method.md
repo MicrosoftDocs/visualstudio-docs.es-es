@@ -16,15 +16,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], updating entity instances
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9d06737de7df40efa2bc6259cc0ea53bdda17b8c
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: fff7083305d4e19495b81525c8a67a42c5ff6c70
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915380"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967506"
 ---
 # <a name="how-to-add-an-updater-method"></a>Cómo: agregar un método Updater
   Puede permitir que los usuarios actualicen datos empresariales en una lista externa de SharePoint mediante la creación de *un método de actualización.* Para obtener más información, vea [Diseño de un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -66,7 +66,7 @@ ms.locfileid: "96915380"
     [!code-csharp[SP_BDC#5](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#5)]
     [!code-vb[SP_BDC#5](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#5)]
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Diseño de un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [Cómo: agregar un método Finder](../sharepoint/how-to-add-a-finder-method.md)
 - [Cómo: agregar un método Finder específico](../sharepoint/how-to-add-a-specific-finder-method.md)

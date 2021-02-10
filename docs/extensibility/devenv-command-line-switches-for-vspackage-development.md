@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: d65d2c04-dd84-42b0-b956-555b11f5a645
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6e2784066c98f8fac696306e455e7cf26b65907
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 2c6b6260bad412127afe4dd9135ccf66d48e9e3e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996154"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968312"
 ---
 # <a name="devenv-command-line-switches-for-vspackage-development"></a>Modificadores de línea de comandos Devenv para el desarrollo de VSPackage
 
@@ -51,7 +51,7 @@ La documentación de Visual Studio describe los modificadores de línea de coman
 | `/Setup` | Fuerza a Visual Studio a combinar los metadatos de recursos que describen los menús, las barras de herramientas y los grupos de comandos de todos los VSPackages disponibles. Este comando solo se puede ejecutar como administrador. <br /><br /> Este modificador no toma ningún argumento. El comando `devenv /Setup` suele ser el último paso del proceso de instalación. El uso del `/Setup` modificador no inicia el IDE.|
 | `/Splash` | Muestra la pantalla de presentación de Visual Studio, como de costumbre, y muestra un cuadro de mensaje antes de mostrar el IDE principal. El cuadro de mensaje le permite estudiar la pantalla de presentación (por ejemplo, para comprobar si hay un icono de producto de VSPackage).<br /><br /> Este modificador no toma ningún argumento. |
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Agregar modificadores de la línea de comandos](../extensibility/adding-command-line-switches.md)
 - [Modificadores de línea de comandos para Devenv](../ide/reference/devenv-command-line-switches.md)

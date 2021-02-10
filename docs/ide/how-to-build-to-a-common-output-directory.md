@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 1fcc2c48-07cb-4c4f-9556-36945e7dfc4e
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a39dae210c2cb9afe3e4b77962b75ddb3be4baeb
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 2e2abb9a768621477465b753554c111126a5af98
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136971"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967623"
 ---
 # <a name="how-to-build-to-a-common-output-directory"></a>Cómo: Compilar en un directorio de salida común
 
@@ -30,7 +30,7 @@ De manera predeterminada, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.m
 
 1. Haga clic en un proyecto de la solución.
 
-2. En el menú **Proyecto** , haga clic en **Propiedades** .
+2. En el menú **Proyecto** , haga clic en **Propiedades**.
 
 3. Según el tipo de proyecto, haga clic en la pestaña **Compilar** o en la pestaña **Generar** y establezca la **Ruta de acceso de salida** en una carpeta que se utilizará para todos los proyectos de la solución.
 
