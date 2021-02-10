@@ -9,17 +9,17 @@ ms.devlang: javascript
 ms.assetid: b0e4ebed-1a01-41ef-aad1-4d8465ce5322
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 69ddd658eb8ca7015ae2c6868b55d7081da0917c
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: c342018a2331b27a411b5efc23af1438fa18518d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809025"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932623"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>Inicio rápido: usar Visual Studio para crear su primera aplicación de Node.js
 
@@ -30,10 +30,10 @@ En esta introducción al entorno de desarrollo integrado (IDE) de Visual Studio,
 * Debe tener instalado Visual Studio y la carga de trabajo de desarrollo de Node.js.
 
     ::: moniker range=">=vs-2019"
-    Si todavía no ha instalado Visual Studio 2019, vaya a la página de  [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads)  para instalarlo de forma gratuita.
+    Si todavía no ha instalado Visual Studio 2019, vaya a la página [Descargas de Visual Studio](https://visualstudio.microsoft.com/downloads) para instalarlo de forma gratuita.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Si todavía no ha instalado Visual Studio 2017, vaya a la página de  [descargas de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)  para instalarlo de forma gratuita.
+    Si todavía no ha instalado Visual Studio 2017, vaya a la página [Descargas de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) para instalarlo de forma gratuita.
     ::: moniker-end
 
     Si tiene que instalar la carga de trabajo pero ya tiene Visual Studio, vaya a **Herramientas** > **Obtener herramientas y características…** y se abrirá el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de Node.js** y, después, haga clic en **Modificar**.

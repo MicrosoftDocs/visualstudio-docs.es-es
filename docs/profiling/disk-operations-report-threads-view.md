@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: e352f4f3-f654-45eb-96ed-417863487ddc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 44975999c71b1c331d90aa10f709071cef466cb1
-ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
+ms.openlocfilehash: a6b0e15257d67e1d7ff1aaef14c2ebfff3775d6a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98686537"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923728"
 ---
 # <a name="disk-operations-report-threads-view"></a>Informe de operaciones de disco (Vista de subprocesos)
 En el informe de operaciones de disco se muestran las operaciones de E/S de disco en los canales de disco.

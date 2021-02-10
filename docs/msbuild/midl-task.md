@@ -25,15 +25,15 @@ helpviewer_keywords:
 ms.assetid: 727efa8c-3336-40b8-8bef-ae6cbd77a422
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 884cecdcbdbef3320516dd67c43cedd72bc25076
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: a310cd4428232338ed46a8a54502d9956e73be15
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903855"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932018"
 ---
 # <a name="midl-task"></a>MIDL (tarea)
 
@@ -91,7 +91,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.
 
-    |Valor|Opción de la línea de comandos|
+    |Value|Opción de la línea de comandos|
     |-----------|--------------------------|
     |**Signed**|**/char signed**|
     |**Unsigned**|**/char unsigned**|
@@ -115,7 +115,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.
 
-    |Valor|Opción de la línea de comandos|
+    |Value|Opción de la línea de comandos|
     |-----------|--------------------------|
     |**Ninguno**|**/error none**|
     |**EnableCustom**|**/error**|
@@ -171,7 +171,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.
 
-    |Valor|Opción de la línea de comandos|
+    |Value|Opción de la línea de comandos|
     |-----------|--------------------------|
     |**Ninguno**|**/client none**|
     |**Stub**|**/client stub**|
@@ -186,7 +186,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.
 
-    |Valor|Opción de la línea de comandos|
+    |Value|Opción de la línea de comandos|
     |-----------|--------------------------|
     |**Ninguno**|**/server none**|
     |**Stub**|**/server stub**|
@@ -205,7 +205,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Parámetro **Boolean** opcional.
 
-     Si es `true`, no se genera ningún archivo de biblioteca de tipos ( *.tlb* ).
+     Si es `true`, no se genera ningún archivo de biblioteca de tipos ( *.tlb*).
 
      Para obtener más información, vea la opción **/notlb** en [MIDL command-line reference](/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).
 
@@ -261,7 +261,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Parámetro **String[]** opcional.
 
-     Especifica uno o más *defines* ; es decir, un nombre y un valor opcional que se pasará al preprocesador de C como si lo hiciera una directiva de `#define`. El formato de cada define es *name[=value]* .
+     Especifica uno o más *defines*; es decir, un nombre y un valor opcional que se pasará al preprocesador de C como si lo hiciera una directiva de `#define`. El formato de cada define es *name[=value]* .
 
      Para obtener más información, vea la opción **/D** en [MIDL command-line reference](/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL). Consulte también el parámetro **UndefinePreprocessorDefinitions** en esta tabla.
 
@@ -299,11 +299,11 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Parámetro **String** opcional.
 
-     Especifica la alineación ( *el nivel de empaquetado* ) de estructuras en el sistema de destino.
+     Especifica la alineación (*el nivel de empaquetado*) de estructuras en el sistema de destino.
 
      Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.
 
-    |Valor|Opción de línea de comandos|
+    |Value|Opción de línea de comandos|
     |-----------|--------------------------|
     |**NotSet**|*\<none>*|
     |**1**|**/Zp1**|
@@ -337,7 +337,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.
 
-    |Valor|Opción de línea de comandos|
+    |Value|Opción de línea de comandos|
     |-----------|--------------------------|
     |**NotSet**|*\<none>*|
     |**Win32**|**/env win32**|
@@ -360,7 +360,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.
 
-    |Valor|Opción de línea de comandos|
+    |Value|Opción de línea de comandos|
     |-----------|--------------------------|
     |**NewFormat**|**/newtlb**|
     |**OldFormat**|**/oldtlb**|
@@ -397,7 +397,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Si `true`, trata todas las advertencias como errores.
 
-     Si no se especifica el parámetro de la tarea MIDL **WarningLevel** , las advertencias del nivel 1, el nivel predeterminado, se tratan como errores.
+     Si no se especifica el parámetro de la tarea MIDL **WarningLevel**, las advertencias del nivel 1, el nivel predeterminado, se tratan como errores.
 
      Para obtener más información, vea las opciones **/WX** en [MIDL command-line reference](/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL). Consulte también el parámetro **WarningLevel** en esta tabla.
 
@@ -405,11 +405,11 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Parámetro **String** opcional.
 
-     Especifica la gravedad ( *nivel de advertencia* ) de las advertencias que se emiten. Para un valor de 0 no se emite ninguna advertencia. En cambio, se emite una advertencia si su nivel de advertencia es numéricamente menor o igual que el valor especificado.
+     Especifica la gravedad (*nivel de advertencia*) de las advertencias que se emiten. Para un valor de 0 no se emite ninguna advertencia. En cambio, se emite una advertencia si su nivel de advertencia es numéricamente menor o igual que el valor especificado.
 
      Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.
 
-    |Valor|Opción de línea de comandos|
+    |Value|Opción de línea de comandos|
     |-----------|--------------------------|
     |**0**|**/W0**|
     |**1**|**/W1**|

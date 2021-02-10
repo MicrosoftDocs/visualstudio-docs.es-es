@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 481cbab6-73ff-488c-aba5-2c09f9eb1e04
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 269499153c4be228503d6bd5b22e91e63dd5b5dd
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 5bb2a260f0b9903837b6f1bb8ce8a2e4a2fe691e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048680"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931791"
 ---
 # <a name="removeduplicates-task"></a>RemoveDuplicates (tarea)
 
@@ -35,7 +35,7 @@ Quita los elementos duplicados de la colección de elementos especificada.
 
  En la siguiente tabla se describen los parámetros de la tarea `RemoveDuplicates` .
 
-|Parámetro|Description|
+|Parámetro|Descripción|
 |---------------|-----------------|
 |`Filtered`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contiene una colección de elementos sin elementos duplicados. Se conserva el orden de los elementos de entrada, manteniendo la primera instancia de cada elemento duplicado.|
 |`Inputs`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Colección de elementos de la que se van a quitar los elementos duplicados.|
@@ -72,7 +72,7 @@ Quita los elementos duplicados de la colección de elementos especificada.
 </Project>
 ```
 
- En el ejemplo siguiente se muestra que la tarea `RemoveDuplicates` conserva su orden de entrada. Cuando la tarea está completa, la colección de elementos `FilteredItems` contiene los elementos *MyFile2.cs* , *MyFile1.cs* y *MyFile3.cs* , en ese orden.
+ En el ejemplo siguiente se muestra que la tarea `RemoveDuplicates` conserva su orden de entrada. Cuando la tarea está completa, la colección de elementos `FilteredItems` contiene los elementos *MyFile2.cs*, *MyFile1.cs* y *MyFile3.cs*, en ese orden.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

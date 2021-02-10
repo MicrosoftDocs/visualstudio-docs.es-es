@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 96df0370-e50f-4ffc-9771-b12fb8721143
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 395f50db4159e8ace1b317f5926ed676c7462fe3
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 94050565e6c5619781434c7a18307bfbf80b51f9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047522"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933679"
 ---
 # <a name="wpf-msbuild-task-reference"></a>Referencia de tareas de MSBuild para WPF
 
@@ -59,7 +59,7 @@ El proceso de compilación de Windows Presentation Foundation (WPF) amplía Micr
 
 - [ResourcesGenerator](../msbuild/resourcesgenerator-task.md)
 
- Inserta uno o varios recursos ( *.jpg* , *.ico* , *.bmp* , XAML en formato binario y en otros tipos de extensiones) en un archivo *.resources*.
+ Inserta uno o varios recursos ( *.jpg*, *.ico*, *.bmp*, XAML en formato binario y en otros tipos de extensiones) en un archivo *.resources*.
 
 - [UidManager](../msbuild/uidmanager-task.md)
 
@@ -67,7 +67,7 @@ El proceso de compilación de Windows Presentation Foundation (WPF) amplía Micr
 
 - [UpdateManifestForBrowserApplication](../msbuild/updatemanifestforbrowserapplication-task.md)
 
- Agrega el elemento **\<hostInBrowser />** al manifiesto de aplicación ( *\<projectname>.exe.manifest* ) cuando se compila un proyecto de aplicación de explorador XAML (XBAP).
+ Agrega el elemento **\<hostInBrowser />** al manifiesto de aplicación ( *\<projectname>.exe.manifest*) cuando se compila un proyecto de aplicación de explorador XAML (XBAP).
 
 ## <a name="see-also"></a>Vea también
 

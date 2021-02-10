@@ -6,18 +6,18 @@ ms.date: 06/17/2019
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
 monikerRange: vs-2019
-ms.openlocfilehash: 21e13938bcb19306b897501a4aad11d6b4bd15ea
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: d6578100bbdab9413fb70a561c146823ac77c914
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96616920"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927967"
 ---
 # <a name="move-type-to-namespace"></a>Tipo de traslado al espacio de nombres
 

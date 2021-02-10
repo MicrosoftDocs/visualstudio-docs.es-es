@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 0bd48bf4-9792-4456-a545-e462a2be668d
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: da09feffc4d2f804660f02dbda6055bf59099500
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 7f4abcdf5648031be9b76ba3f25e0a8f33d4efba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134307"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930972"
 ---
 # <a name="how-to-export-a-shader"></a>Cómo: Exportar un sombreador
 
@@ -29,9 +29,9 @@ Después de crear a un sombreador mediante el Diseñador de sombras y antes de p
 
      Si no tiene un archivo **Gráfico de sombreador visual (.dgsl)** para abrir, cree uno como se describe en [Cómo: Crear un sombreador de color básico](../designers/how-to-create-a-basic-color-shader.md).
 
-2. En la barra de herramientas del **Diseñador de sombras** , seleccione **Avanzadas** > **Exportar** > **Exportar como**. Se muestra el cuadro de diálogo **Exportar sombreador**.
+2. En la barra de herramientas del **Diseñador de sombras**, seleccione **Avanzadas** > **Exportar** > **Exportar como**. Se muestra el cuadro de diálogo **Exportar sombreador**.
 
-3. En la lista desplegable **Guardar como tipo** , elija el formato que quiere exportar.
+3. En la lista desplegable **Guardar como tipo**, elija el formato que quiere exportar.
 
      Estos son los formatos que puede elegir:
 
@@ -41,7 +41,7 @@ Después de crear a un sombreador mediante el Diseñador de sombras y antes de p
 
      **Encabezado de C++ (\*.h)** Exporta el sombreador como un encabezado de estilo C que define una matriz de bytes que contiene el código de bytes HLSL. Esta opción puede ralentizar la depuración y la revisión del código en función de los problemas del usuario final, dado que es necesario volver a compilar la aplicación para probar la corrección. Pero como esta opción hace que sea difícil, aunque no imposible, modificar el sombreador después de implementarse en una aplicación, presenta la mayor dificultad para un usuario que quiere modificar el sombreador de formas no deseadas.
 
-4. En el cuadro combinado **Nombre de archivo** , especifique un nombre para el sombreador exportado y, después, pulse el botón **Guardar**.
+4. En el cuadro combinado **Nombre de archivo**, especifique un nombre para el sombreador exportado y, después, pulse el botón **Guardar**.
 
 ## <a name="see-also"></a>Consulte también
 

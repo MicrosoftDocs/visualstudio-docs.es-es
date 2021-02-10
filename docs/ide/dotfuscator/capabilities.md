@@ -16,13 +16,13 @@ description: Obtenga información sobre las funcionalidades de la copia gratuita
 ms.assetid: 0ee89c58-c900-48fc-a6a2-65ace00e8bab
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 019acd338ab49dd08255e3dc5d174cf2e371b71e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+manager: jmartens
+ms.openlocfilehash: ad53c99656096fec2393ecbd9f63fbffe1343e9a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75918412"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924810"
 ---
 # <a name="capabilities-of-dotfuscator"></a>Funcionalidades de Dotfuscator
 

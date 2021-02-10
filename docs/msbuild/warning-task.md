@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 96ba5507-8b43-4f54-a1d7-9b15644dd56c
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ce7104c08ce8f18672bf4d2df93debc3c1d19983
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 4f31ad26b6efffa540ecae6a61f0f7ff12115cef
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047822"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933809"
 ---
 # <a name="warning-task"></a>Warning (tarea)
 
@@ -35,7 +35,7 @@ Registra una advertencia durante la compilación basándose en una instrucción 
 
  En la siguiente tabla se describen los parámetros de la tarea `Warning` .
 
-| Parámetro | Description |
+| Parámetro | Descripción |
 |---------------| - |
 | `Code` | Parámetro `String` opcional.<br /><br /> Código de advertencia que se debe asociar a la advertencia. |
 | `File` | Parámetro `String` opcional.<br /><br /> Especifica el archivo correspondiente, si existe. Si no se proporciona ningún archivo, se utiliza el archivo que contiene la tarea Warning. |

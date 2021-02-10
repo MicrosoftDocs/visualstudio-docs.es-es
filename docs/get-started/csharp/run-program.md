@@ -9,18 +9,18 @@ ms.topic: tutorial
 ms.devlang: CSharp
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: ee28bde6de10006ccfdc5175cca629ad9d1590d0
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: bbebcec3f5b2de01bcbfa7839f68e6f7a3e2cc64
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81649647"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922847"
 ---
 # <a name="how-to-run-a-c-program-in-visual-studio"></a>Procedimiento Ejecución de un programa de C# en Visual Studio
 

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - regular expressions
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8648eb48c68e0220b1d36a851619edec2b51ceb7
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: d62d35a296c70462aab75af5a8c6729179d5b34d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96478996"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925771"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Usar expresiones regulares en Visual Studio
 

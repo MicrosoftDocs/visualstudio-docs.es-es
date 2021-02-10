@@ -5,17 +5,17 @@ ms.date: 05/12/2020
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 094305e901624e13df147030899981f8fedb80d1
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: b5a86f600f9145742f6447af54fccb10dbc302a3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86387036"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931778"
 ---
 # <a name="debug-your-python-code"></a>Depurar el código de Python
 

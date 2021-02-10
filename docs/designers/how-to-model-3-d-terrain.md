@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: f779b1fd-82a9-4a11-8ab7-c1c9caabc883
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 54010c46d121fd4221500afb3038013626939a1b
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 969dd229d8d6cd6bdbe9d53eaabd63f1eedd6570
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134810"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930855"
 ---
 # <a name="how-to-model-3d-terrain"></a>Cómo: Modelar un terreno en 3D
 
@@ -33,10 +33,10 @@ Antes de empezar, asegúrese de que se muestran la ventana **Propiedades** y el 
 
 1. Cree un modelo 3D con el que va a trabajar. Para obtener información sobre cómo agregar un modelo al proyecto, vea la sección Introducción de [Editor de modelos](../designers/model-editor.md).
 
-2. Agregue un plano a la escena. En el **Cuadro de herramientas** , en **Formas** , seleccione **Plano** y muévalo a la superficie de diseño.
+2. Agregue un plano a la escena. En el **Cuadro de herramientas**, en **Formas**, seleccione **Plano** y muévalo a la superficie de diseño.
 
     > [!TIP]
-    > Para facilitar el trabajo con el objeto de plano, también puede enmarcarlo en la superficie de diseño. En el modo **Seleccionar** , seleccione el objeto de plano y, después, en la barra de herramientas del Editor de modelos, pulse el botón **Objeto de marco**.
+    > Para facilitar el trabajo con el objeto de plano, también puede enmarcarlo en la superficie de diseño. En el modo **Seleccionar**, seleccione el objeto de plano y, después, en la barra de herramientas del Editor de modelos, pulse el botón **Objeto de marco**.
 
 3. Cambie al modo de selección de caras. En la barra de herramientas del Editor de modelos, elija **Seleccionar cara**.
 

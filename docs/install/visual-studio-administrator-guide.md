@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: 4af353f5-6cfd-4ebe-bcfb-f42306e451a0
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ea12076e41185e9de4ee10afe3056ff97403d6ea
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: ecf1dc0332a023a67f2627d852ee56a092830b7e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190217"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935617"
 ---
 # <a name="visual-studio-administrator-guide"></a>Guía del administrador de Visual Studio
 
@@ -40,11 +40,11 @@ Antes de implementar Visual Studio en la organización, hay algunas decisiones q
 
 * Decida sobre las necesidades de mantenimiento.
 
-  Si la empresa debe conservar durante más tiempo un conjunto de características pero quiere obtener actualizaciones de mantenimiento periódicas, planee el uso de una base de referencia de mantenimiento. Para obtener más información, consulte la sección ***Opciones de soporte técnico para clientes de las versiones Enterprise y Professional** _ de la página [Ciclo de vida y mantenimiento del producto de Visual Studio](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers), así como la página [Actualización de Visual Studio mientras se encuentra en una base de referencia de mantenimiento](update-servicing-baseline.md).
+  Si la empresa debe conservar durante más tiempo un conjunto de características pero quiere obtener actualizaciones de mantenimiento periódicas, planee el uso de una base de referencia de mantenimiento. Para más información, consulte la sección ***Opciones de soporte técnico para clientes de las versiones Enterprise y Professional*** de la página [Ciclo de vida y mantenimiento del producto de Visual Studio](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers), así como la página [Actualización de Visual Studio mientras se encuentra en una base de referencia de mantenimiento](update-servicing-baseline.md).
 
   Si piensa aplicar las actualizaciones de mantenimiento junto con las actualizaciones acumulativas de características, puede elegir las más recientes.
 
-_ Decida sobre el modelo de actualización.
+* Decida sobre el modelo de actualización.
 
   ¿Dónde quiere que los equipos cliente individuales obtengan las actualizaciones? En concreto, decida si quiere obtener actualizaciones desde Internet o desde un recurso compartido local de la empresa. Luego, si opta por usar un recurso compartido local, decida si los usuarios individuales pueden actualizar sus propios clientes o si quiere que un administrador actualice los clientes mediante programación.
 
@@ -66,11 +66,11 @@ _ Decida sobre el modelo de actualización.
 
 * Decida sobre las necesidades de mantenimiento.
 
-  Si la empresa debe conservar durante más tiempo un conjunto de características pero quiere obtener actualizaciones de mantenimiento periódicas, planee el uso de una base de referencia de mantenimiento. Para más información, consulte la sección ***Soporte técnico de versiones anteriores de Visual Studio** _ de la página [Ciclo de vida y mantenimiento del producto de Visual Studio](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio), así como la página [Actualización de Visual Studio mientras se encuentra en una base de referencia de mantenimiento](update-servicing-baseline.md).
+  Si la empresa debe conservar durante más tiempo un conjunto de características pero quiere obtener actualizaciones de mantenimiento periódicas, planee el uso de una base de referencia de mantenimiento. Para más información, consulte la sección ***Soporte técnico de versiones anteriores de Visual Studio*** de la página [Ciclo de vida y mantenimiento del producto de Visual Studio](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio), así como la página [Actualización de Visual Studio mientras se encuentra en una base de referencia de mantenimiento](update-servicing-baseline.md).
 
   Si piensa aplicar las actualizaciones de mantenimiento junto con las actualizaciones acumulativas de características, puede elegir las más recientes.
 
-_ Decida sobre el modelo de actualización.
+* Decida sobre el modelo de actualización.
 
   ¿Dónde quiere que los equipos cliente individuales obtengan las actualizaciones? En concreto, decida si quiere obtener actualizaciones desde Internet o desde un recurso compartido local de la empresa. Luego, si opta por usar un recurso compartido local, decida si los usuarios individuales pueden actualizar sus propios clientes o si quiere que un administrador actualice los clientes mediante programación.
 

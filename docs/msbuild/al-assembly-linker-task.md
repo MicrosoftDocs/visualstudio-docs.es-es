@@ -17,19 +17,19 @@ helpviewer_keywords:
 ms.assetid: 2ddefbf2-5662-4d55-99a6-ac383bf44560
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d59251240abc7ca39b3819adf2324bf5bb9cef0a
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: 3d99c33a74512b380d7b5260d5b7e747c6a39e41
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353361"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923870"
 ---
 # <a name="al-assembly-linker-task"></a>AL (Assembly Linker, Tarea)
 
-La tarea AL contiene *AL.exe* , una herramienta que se distribuye con el kit de desarrollo de software (SDK) de Windows. La herramienta Assembly Linker se utiliza para crear un ensamblado con un manifiesto a partir de uno o varios archivos que pueden ser módulos o archivos de recursos. Los compiladores y los entornos de desarrollo pueden proporcionar estas capacidades, por lo que a menudo no hace falta utilizar esta tarea directamente. Assembly Linker resulta de más utilidad para los programadores que necesitan crear un único ensamblado a partir de varios archivos de componentes, como los que se pueden producir en desarrollos de lenguajes combinados. Esta tarea no combina los módulos en un único archivo de ensamblado; los módulos individuales deben distribuirse y estar disponibles para que el ensamblado resultante se cargue correctamente. Para obtener más información sobre *AL.exe* , vea [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).
+La tarea AL contiene *AL.exe*, una herramienta que se distribuye con el kit de desarrollo de software (SDK) de Windows. La herramienta Assembly Linker se utiliza para crear un ensamblado con un manifiesto a partir de uno o varios archivos que pueden ser módulos o archivos de recursos. Los compiladores y los entornos de desarrollo pueden proporcionar estas capacidades, por lo que a menudo no hace falta utilizar esta tarea directamente. Assembly Linker resulta de más utilidad para los programadores que necesitan crear un único ensamblado a partir de varios archivos de componentes, como los que se pueden producir en desarrollos de lenguajes combinados. Esta tarea no combina los módulos en un único archivo de ensamblado; los módulos individuales deben distribuirse y estar disponibles para que el ensamblado resultante se cargue correctamente. Para obtener más información sobre *AL.exe*, vea [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).
 
 ## <a name="parameters"></a>Parámetros
 
@@ -54,7 +54,7 @@ La tarea AL contiene *AL.exe* , una herramienta que se distribuye con el kit de 
 | `KeyContainer` | Parámetro `String` opcional.<br /><br /> Especifica un contenedor que contiene un par de claves. De este modo, el ensamblado se firmará (recibirá un nombre seguro) mediante la inserción de una clave pública en el manifiesto del ensamblado. La tarea firmará después el ensamblado final con la clave privada. Para obtener más información, consulte la documentación sobre la opción `/keyn[ame]` en [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker). |
 | `KeyFile` | Parámetro `String` opcional.<br /><br /> Especifica un archivo que contiene un par de claves o simplemente una clave pública para firmar un ensamblado. El compilador inserta la clave pública en el manifiesto del ensamblado y firma después el ensamblado final con la clave privada. Para obtener más información, consulte la documentación sobre la opción `/keyf[ile]` en [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker). |
 | `LinkResources` | Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Vincula los archivos de recursos especificados a un ensamblado. El recurso pasa a formar parte del ensamblado, pero el archivo no se copia. Los elementos pasados a este parámetro pueden tener metadatos opcionales adjuntos a los mismos denominados `LogicalName`, `Target` y `Access`. Los metadatos `LogicalName` se utilizan para especificar el identificador interno del recurso. Los metadatos `Target` pueden especificar el nombre de archivo y la ruta de acceso donde la tarea copia el archivo, tras lo cual compila este nuevo archivo en el ensamblado. Los metadatos `Access` se pueden establecer en `private` para que el recurso no sea visible para otros ensamblados. Para obtener más información, consulte la documentación sobre la opción `/link[resource]` en [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker). |
-| `MainEntryPoint` | Parámetro `String` opcional.<br /><br /> Especifica el nombre completo ( *class.method* ) del método que se utilizará como punto de entrada al convertir un módulo en un archivo ejecutable. Este parámetro corresponde a la opción `/main` de [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker). |
+| `MainEntryPoint` | Parámetro `String` opcional.<br /><br /> Especifica el nombre completo (*class.method*) del método que se utilizará como punto de entrada al convertir un módulo en un archivo ejecutable. Este parámetro corresponde a la opción `/main` de [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker). |
 | `OutputAssembly` | Parámetro de salida obligatorio de tipo <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Especifica el nombre del archivo generado por esta tarea. Este parámetro corresponde a la opción `/out` de [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker). |
 | `Platform` | Parámetro `String` opcional.<br /><br /> Limita en qué plataforma se puede ejecutar este código; debe ser `x86`, `Itanium`, `x64` o `anycpu`. De manera predeterminada, es `anycpu`. Este parámetro corresponde a la opción `/platform` de [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker). |
 | `ProductName` | Parámetro `String` opcional.<br /><br /> Especifica una cadena para el campo `Product` del ensamblado. Para obtener más información, consulte la documentación sobre la opción `/prod[uct]` en [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker). |
@@ -68,9 +68,9 @@ La tarea AL contiene *AL.exe* , una herramienta que se distribuye con el kit de 
 | `Title` | Parámetro `String` opcional.<br /><br /> Especifica una cadena para el campo `Title` del ensamblado. Para obtener más información, consulte la documentación sobre la opción `/title` en [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker). |
 | `ToolPath` | Parámetro `String` opcional.<br /><br /> Especifica la ubicación desde donde la tarea cargará el archivo ejecutable subyacente (Al.exe). Si no se especifica este parámetro, la tarea usa la ruta de instalación del SDK que se corresponde con la versión de la plataforma que está ejecutando MSBuild. |
 | `Trademark` | Parámetro `String` opcional.<br /><br /> Especifica una cadena para el campo `Trademark` del ensamblado. Para obtener más información, consulte la documentación sobre la opción `/trade[mark]` en [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker). |
-| `Version` | Parámetro `String` opcional.<br /><br /> Especifica la información de versión de este ensamblado. El formato de la cadena es *principal.secundaria.compilación.revisión* . El valor predeterminado es 0. Para obtener más información, consulte la documentación sobre la opción `/v[ersion]` en [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker). |
+| `Version` | Parámetro `String` opcional.<br /><br /> Especifica la información de versión de este ensamblado. El formato de la cadena es *principal.secundaria.compilación.revisión*. El valor predeterminado es 0. Para obtener más información, consulte la documentación sobre la opción `/v[ersion]` en [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker). |
 | `Win32Icon` | Parámetro `String` opcional.<br /><br /> Inserta un archivo *.ico* en el ensamblado. El archivo *.ico* proporciona al archivo de salida la apariencia deseada en el Explorador de archivos. Este parámetro corresponde a la opción `/win32icon` de [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker). |
-| `Win32Resource` | Parámetro `String` opcional.<br /><br /> Inserta un recurso de Win32 (archivo *.res* ) en el archivo de salida. Para obtener más información, consulte la documentación sobre la opción `/win32res` en [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker). |
+| `Win32Resource` | Parámetro `String` opcional.<br /><br /> Inserta un recurso de Win32 (archivo *.res*) en el archivo de salida. Para obtener más información, consulte la documentación sobre la opción `/win32res` en [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker). |
 
 [!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
 

@@ -7,15 +7,15 @@ helpviewer_keywords:
 - IntelliTrace step-back
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 767181ce917e4cbef69001e07a018e20c89a01f8
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: c21cfce692474c0d729db69f1e72c42ac6a0363e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "65676434"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933016"
 ---
 # <a name="view-snapshots-with-intellitrace-step-back-visual-studio-enterprise-c-visual-basic-c"></a>Consulta de las instantáneas con retroceso de IntelliTrace (Visual Studio Enterprise) (C#, Visual Basic, C++)
 

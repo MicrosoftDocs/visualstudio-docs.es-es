@@ -7,16 +7,16 @@ ms.topic: how-to
 ms.assetid: 36883074-9be8-4e90-a66f-7e87f21fcd30
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0f9deae5372b6fdc22728fbf7df0c678ffb39c45
-ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
+ms.openlocfilehash: 7d63ec7bded9cc19e31ee0d6f8ce7346990bf7aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98883584"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929139"
 ---
 # <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Procedimiento Instrumentar un componente nativo independiente y recopilar datos de control de tiempo con el generador de perfiles desde la línea de comandos
 En este tema se describe cómo utilizar las herramientas de línea de comandos de las Herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para instrumentar un componente nativo, tal como un archivo .*exe* o .*dll* de C++ y para recopilar datos detallados de control de tiempo.

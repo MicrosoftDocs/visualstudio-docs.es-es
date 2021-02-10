@@ -8,15 +8,15 @@ helpviewer_keywords:
 - coded UI tests
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: aeaa2231c62487ec366aa561ea199cf63f3c6792
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 65b55c79dd39b5e8393d22542a2334d84b191293
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441799"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933081"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Anatomía de una prueba automatizada de IU
 

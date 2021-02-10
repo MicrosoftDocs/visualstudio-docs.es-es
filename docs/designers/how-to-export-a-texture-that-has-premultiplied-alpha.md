@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 05348afa-f079-4f53-a05b-ecd91d13adab
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d8dd554ed8f3b1664f889909d5d5ae7a30e9889a
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 56e8d198e55b521b761f8f3a7b54f6c2c0ee2c33
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134823"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930945"
 ---
 # <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>Cómo: Exportar una textura que tiene valores alfa previamente multiplicados
 
@@ -42,9 +42,9 @@ Alfa premultiplicado proporciona varias ventajas en comparación con alfa conven
 
 1. Comience con una textura básica. Cargue un archivo de imagen existente o cree uno como se describe en [Cómo: Crear una textura básica](../designers/how-to-create-a-basic-texture.md).
 
-2. Configure el archivo de textura para que sea procesado por la canalización de contenido de imagen. En el **Explorador de soluciones** , abra el menú contextual del archivo de textura y seleccione **Propiedades**. En la página **Propiedades de configuración** > **General** , establezca la propiedad **Tipo de elemento** en **Canalización de contenido de la imagen**. Asegúrese de que la propiedad **Contenido** esté establecida en **Sí** y **Excluir de la compilación** esté establecido en **No** , y, después, seleccione el botón **Aplicar**. Aparece la página de propiedades de configuración de **Canalización de contenido de la imagen**.
+2. Configure el archivo de textura para que sea procesado por la canalización de contenido de imagen. En el **Explorador de soluciones**, abra el menú contextual del archivo de textura y seleccione **Propiedades**. En la página **Propiedades de configuración** > **General**, establezca la propiedad **Tipo de elemento** en **Canalización de contenido de la imagen**. Asegúrese de que la propiedad **Contenido** esté establecida en **Sí** y **Excluir de la compilación** esté establecido en **No**, y, después, seleccione el botón **Aplicar**. Aparece la página de propiedades de configuración de **Canalización de contenido de la imagen**.
 
-3. Configure la canalización de contenido de la imagen para generar valores alfa premultiplicados. En **Propiedades de configuración** > **Canalización de contenido de la imagen** >  en la página **General** , establezca la propiedad **Convertir en formato alfa premultiplicado** en **Sí (/generatepremultipliedalpha)** .
+3. Configure la canalización de contenido de la imagen para generar valores alfa premultiplicados. En **Propiedades de configuración** > **Canalización de contenido de la imagen** >  en la página **General**, establezca la propiedad **Convertir en formato alfa premultiplicado** en **Sí (/generatepremultipliedalpha)** .
 
 4. Elija el botón **Aceptar** .
 

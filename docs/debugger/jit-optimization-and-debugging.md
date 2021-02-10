@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 19bfabf3-1a2e-49dc-8819-a813982e86fd
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 66f63c7232b52ebe849722147e007ab70527c311
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 558a54f6ddcf4945da4937f75b8aa133949349a7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903927"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931089"
 ---
 # <a name="jit-optimization-and-debugging"></a>Optimización y depuración JIT
 Si intenta depurar código, resulta más fácil cuando ese código **no** está optimizado. Cuando se optimiza el código, el compilador y el tiempo de ejecución realizan cambios en el código de CPU emitido para que se ejecute más rápido, pero tiene una asignación menos directa al código fuente original. Si la asignación es menos directa, los depuradores a menudo no pueden indicarle el valor de las variables locales, y es posible que los puntos de interrupción y la ejecución de código no funcionen como se espera.

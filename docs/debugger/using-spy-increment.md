@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 02769bfa-5679-4ee2-8c6b-27876edb4e8c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f01167f00b3428bab52b4a6f2ab88d909e7b31f
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 2c9bbd89c4b878ff6b5ec9d7ef349f88ad4c96bb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150930"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926503"
 ---
 # <a name="using-spy"></a>Usar Spy++
 Spy++ (SPYXX.EXE) es una utilidad basada en Win32 que le ofrece una vista gráfica de los procesos, los subprocesos, las ventanas y los mensajes de ventana del sistema. Esta sección de la ayuda de Spy++ incluye los siguientes temas:

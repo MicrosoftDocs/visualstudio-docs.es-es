@@ -7,16 +7,16 @@ ms.topic: conceptual
 ms.assetid: 9976b6fd-d052-4017-b848-35b5bf4b2f66
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>=vs-2017'
-ms.openlocfilehash: 3ab22ac92cdf995c56d8244225a45fc350e9d360
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: a7bbf46a1677a31726bdd7f2749f5ef3006e34f5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047804"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933848"
 ---
 # <a name="whats-new-in-msbuild-15"></a>Novedades de MSBuild 15
 
@@ -44,7 +44,7 @@ MSBuild ahora está disponible como parte del [SDK de .NET Core](https://www.mic
 
 - El [elemento Project](../msbuild/project-element-msbuild.md) tiene un nuevo atributo `SDK`. También el atributo `Xmlns` es opcional ahora. Para más información sobre el atributo `SDK`, consulte [Uso de los SDK de proyecto de MSBuild](../msbuild/how-to-use-project-sdk.md), [Paquetes, metapaquetes y marcos de trabajo](/dotnet/core/packages) y [Adiciones al formato csproj para .NET Core](/dotnet/core/tools/csproj).
 - El [elemento Item](../msbuild/item-element-msbuild.md) tiene un nuevo atributo `Update`. Además, la restricción en el atributo `Remove` se ha eliminado.
-- *Directory.Build.props* es un archivo definido por el usuario que proporciona personalizaciones a los proyectos de un directorio. Este archivo se importa automáticamente desde *Microsoft.Common.props* , a menos que la propiedad `ImportDirectoryBuildTargets` esté establecida en **false**. *Directory.Build.targets* lo importa *Microsoft.Common.targets*.
+- *Directory.Build.props* es un archivo definido por el usuario que proporciona personalizaciones a los proyectos de un directorio. Este archivo se importa automáticamente desde *Microsoft.Common.props*, a menos que la propiedad `ImportDirectoryBuildTargets` esté establecida en **false**. *Directory.Build.targets* lo importa *Microsoft.Common.targets*.
 - Los metadatos con un nombre que no entre en conflicto con la lista actual de atributos pueden expresarse opcionalmente como un atributo. Para más información, consulte [Elemento Item](../msbuild/item-element-msbuild.md).
 
 ## <a name="new-property-functions"></a>Nuevas funciones de propiedad

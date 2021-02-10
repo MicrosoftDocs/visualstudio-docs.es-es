@@ -14,15 +14,15 @@ helpviewer_keywords:
 - exporting shortcut keys [Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b551e3f980e962733d2797924331e4cd6dbefa5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 84d78a86c64cd85ea8738ec9038c5e64642ca950
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770856"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935955"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Identificar y personalizar métodos abreviados de teclado en Visual Studio
 
@@ -143,7 +143,7 @@ De forma predeterminada, los accesos directos se guardan en un archivo de la car
 
 6. En **¿Qué configuración desea importar?** , desactive la casilla **Todas las configuraciones**, expanda **Opciones** y, después, expanda **Entorno**.
 
-7. Active la casilla **Teclado** y elija**Finalizar**.
+7. Active la casilla **Teclado** y elija **Finalizar**.
 
    ![Importar solo los métodos abreviados de teclado personalizados](../ide/media/importshortcuts.png)
 

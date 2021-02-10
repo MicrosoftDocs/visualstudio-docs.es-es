@@ -5,16 +5,16 @@ ms.date: 08/06/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f331c794c50d6b6573ad9708da6d153c77f4d77c
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.openlocfilehash: efd75e79d7c015539dfe045f7b0a3b266cfb4756
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352354"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923753"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Creación y administración de entornos de Python en Visual Studio
 

@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: c20b4ec8-29f5-4ca5-bc39-d4548ca6f573
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f52bc260103c1679e6aa9875be15aeeadb7e3bcb
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 4eaa3d671a8c9aeb3ed942e57278160af73dec19
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134797"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930842"
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>Cómo: Modificar el punto de pivote de un modelo en 3D
 
@@ -31,7 +31,7 @@ Asegúrese de que se muestran la ventana **Propiedades** y el **Cuadro de herram
 
 2. Cambie al modo de pivote. En la barra de herramientas **Modo del Editor de modelos** haga clic en el botón **Modo de pivote** para activar este modo. Aparece un cuadro alrededor del botón **Modo de pivote** para indicar que el Editor de modelos está ahora en modo de pivote. En el modo de pivote, operaciones como la traslación afectan al punto de pivote del objeto en lugar de a la estructura del objeto en el espacio global.
 
-3. Modifique el punto de pivote del objeto. En el modo **Seleccionar** , seleccione el objeto y, después, en la barra de herramientas del **Visor de modelos** , seleccione la herramienta **Trasladar**. Aparecerá un cuadro que representa el punto de pivote en la superficie de diseño. Mueva el cuadro para modificar el punto de pivote del objeto.
+3. Modifique el punto de pivote del objeto. En el modo **Seleccionar**, seleccione el objeto y, después, en la barra de herramientas del **Visor de modelos**, seleccione la herramienta **Trasladar**. Aparecerá un cuadro que representa el punto de pivote en la superficie de diseño. Mueva el cuadro para modificar el punto de pivote del objeto.
 
      Al mover el cuadro puede mover el punto de pivote en las tres dimensiones. Para trasladar el punto de pivote a lo largo de un eje, mueva la flecha que se corresponde a ese eje. El cuadro y las flechas cambiarán a un color amarillo para indicar el eje que se ve afectado por la traslación.
 

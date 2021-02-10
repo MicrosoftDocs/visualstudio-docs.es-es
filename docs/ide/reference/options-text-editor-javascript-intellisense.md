@@ -12,19 +12,19 @@ f1_keywords:
 ms.assetid: b4a9816d-cf87-4dc6-a8d4-1591d6a48103
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 41256882433bc95db7af380d27cc8dc63fbcd387
-ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
+ms.openlocfilehash: 051711a9d6dfe861f37e741ae9ecabfbf741012e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91947731"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932363"
 ---
 # <a name="options-dialog-box-text-editor--javascript--intellisense"></a>Cuadro de diálogo Opciones: Editor de texto \> JavaScript \> IntelliSense
 
-Utilice la página **IntelliSense** del cuadro de diálogo **Opciones** para modificar la configuración que afecta al comportamiento de IntelliSense para JavaScript. Puede acceder a la página **IntelliSense** si elige **Herramientas** > **Opciones** , en la barra de menús y, luego, expande **Editor de texto** > **JavaScript/TypeScript** > **IntelliSense** .
+Utilice la página **IntelliSense** del cuadro de diálogo **Opciones** para modificar la configuración que afecta al comportamiento de IntelliSense para JavaScript. Puede acceder a la página **IntelliSense** si elige **Herramientas** > **Opciones**, en la barra de menús y, luego, expande **Editor de texto** > **JavaScript/TypeScript** > **IntelliSense**.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -38,7 +38,7 @@ Puede utilizar estas opciones para cambiar el comportamiento de la finalización
 
 **Usar solo Tab o Entrar para confirmar**
 
-Cuando se activa esta casilla, el editor de código de JavaScript anexa instrucciones con elementos seleccionados en la lista de finalización únicamente después de elegir la tecla **Tab** o **Entrar** . Cuando se desactiva esta casilla, otros caracteres, como un punto, una coma, dos puntos, un paréntesis de apertura y una llave de apertura ({), también puede anexar instrucciones con los elementos seleccionados.
+Cuando se activa esta casilla, el editor de código de JavaScript anexa instrucciones con elementos seleccionados en la lista de finalización únicamente después de elegir la tecla **Tab** o **Entrar**. Cuando se desactiva esta casilla, otros caracteres, como un punto, una coma, dos puntos, un paréntesis de apertura y una llave de apertura ({), también puede anexar instrucciones con los elementos seleccionados.
 
 ## <a name="references"></a>Referencias
 
@@ -62,7 +62,7 @@ Puede usar los grupos de referencias predefinidos para especificar qué archivos
 
 **Archivos incluidos**
 
-Esta opción especifica el orden en que los archivos se cargan en el contexto del servicio de lenguaje. Puede configurar el orden utilizando los botones **Quitar** , **Subir** y **Bajar** . Para que IntelliSense funcione correctamente, un archivo que depende de otro se debe cargar después del otro archivo.
+Esta opción especifica el orden en que los archivos se cargan en el contexto del servicio de lenguaje. Puede configurar el orden utilizando los botones **Quitar**, **Subir** y **Bajar** . Para que IntelliSense funcione correctamente, un archivo que depende de otro se debe cargar después del otro archivo.
 
 > [!CAUTION]
 > Si un objeto se define incondicionalmente en dos o más referencias implícitas, la última referencia de esta lista se utilizará para definir el objeto.

@@ -12,19 +12,19 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Project
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 86ee8f59a91cc772d6a86a9e29268b4465b2c639
-ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
+ms.openlocfilehash: 0b30aaec3087cece63e392cf7170ac85f6be0ad7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91947705"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932337"
 ---
 # <a name="options-text-editor-javascript-project"></a>Opciones, Editor de texto, JavaScript, Proyecto
 
-Use la página **Proyecto** del cuadro de diálogo **Opciones** para especificar opciones de proyecto de JavaScript y TypeScript en el Editor de código. Para acceder a esta página, en la barra de menús, elija **Herramientas** > **Opciones** y expanda **Editor de texto** > **JavaScript/TypeScript** > **Proyecto** .
+Use la página **Proyecto** del cuadro de diálogo **Opciones** para especificar opciones de proyecto de JavaScript y TypeScript en el Editor de código. Para acceder a esta página, en la barra de menús, elija **Herramientas** > **Opciones** y expanda **Editor de texto** > **JavaScript/TypeScript** > **Proyecto**.
 
 ## <a name="project-analysis-options"></a>Opciones de análisis del proyecto
 
@@ -42,7 +42,7 @@ Estas opciones le permiten elegir si mostrar los proyectos virtuales cuando una 
 
 ## <a name="compile-on-save"></a>Compilar al guardar
 
-Estas opciones determinan si los archivos TypeScript que no forman parte del proyecto se compilan automáticamente. Visual Studio compila con la versión más reciente de TypeScript instalada en *C:\Archivos de programa (x86)\Microsoft SDKs\TypeScript* .
+Estas opciones determinan si los archivos TypeScript que no forman parte del proyecto se compilan automáticamente. Visual Studio compila con la versión más reciente de TypeScript instalada en *C:\Archivos de programa (x86)\Microsoft SDKs\TypeScript*.
 
 Active la casilla de verificación y elija el tipo de generación de código que se va a usar.
 
@@ -56,7 +56,7 @@ Active la casilla de verificación y elija el tipo de generación de código que
 
 ## <a name="ecmascript-version-for-files-that-are-not-part-of-a-project"></a>Versión de ECMAScript para los archivos que no forman parte de un proyecto
 
-Estas opciones le permiten seleccionar la versión de ECMAScript para los archivos que no forman parte de un proyecto. Puede elegir entre **ECMAScript 3** , **ECMAScript 5** o **ECMAScript 6** .
+Estas opciones le permiten seleccionar la versión de ECMAScript para los archivos que no forman parte de un proyecto. Puede elegir entre **ECMAScript 3**, **ECMAScript 5** o **ECMAScript 6**.
 
 ## <a name="jsx-emit-for-tsx-files-that-are-not-part-of-a-project"></a>Emisión de JSX para los archivos TSX que no forman parte de un proyecto
 
@@ -66,8 +66,8 @@ Estas opciones determinan cómo el editor trata los archivos TypeScript que no f
 
 |Opción|Descripción|
 |------------|-----------------|
-|**React Framework**|Cuando se selecciona esta opción, el Editor de código emite una extensión de archivo *.js* .|
-|**Preserve**|Cuando se selecciona esta opción, el Editor de código mantiene el archivo JSX como parte de la salida y emite una extensión de archivo *.jsx* .|
+|**React Framework**|Cuando se selecciona esta opción, el Editor de código emite una extensión de archivo *.js*.|
+|**Preserve**|Cuando se selecciona esta opción, el Editor de código mantiene el archivo JSX como parte de la salida y emite una extensión de archivo *.jsx*.|
 
 ## <a name="see-also"></a>Vea también
 

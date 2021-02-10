@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: f64d4369-2307-4175-a39a-2e45506f7fa1
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b97b57adb6fd87fa539e9dae7c37d6c5c8f2ddd6
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: be95611d7d1c931e1b349e7a8c6dc0be75c7c832
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134451"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930985"
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>Cómo: Crear y modificar niveles de MIP
 En este documento se muestra cómo usar el **Editor de imágenes** para generar y modificar *niveles de MIP* con nivel de detalle (LoD) del espacio de textura.
@@ -27,16 +27,16 @@ La *generación de mapas MIP* es una técnica que se usa para aumentar la veloci
 
 1. Comience con una textura básica, como se describe en [Cómo: Crear una textura básica](../designers/how-to-create-a-basic-texture.md). Para obtener mejores resultados, especifique una textura que tenga un ancho y un alto que sean la potencia de dos del tamaño, por ejemplo, 256, 512, 1024, etc.
 
-2. Genere los niveles de MIP. En la barra de herramientas del **modo Editor de imágenes** , elija **Avanzado** > **Herramientas** > **Generar Mips**.
+2. Genere los niveles de MIP. En la barra de herramientas del **modo Editor de imágenes**, elija **Avanzado** > **Herramientas** > **Generar Mips**.
 
-     Observe que los botones para **ir al nivel de MIP siguiente** e **ir al nivel de MIP anterior** aparecen ahora en la barra de herramientas del **modo Editor de imágenes**. Si se muestra la ventana **Propiedades** , observe también que las propiedades de solo lectura **Nivel de Mip** y **Número de niveles de MIP** aparecen ahora en las propiedades de la imagen.
+     Observe que los botones para **ir al nivel de MIP siguiente** e **ir al nivel de MIP anterior** aparecen ahora en la barra de herramientas del **modo Editor de imágenes**. Si se muestra la ventana **Propiedades**, observe también que las propiedades de solo lectura **Nivel de Mip** y **Número de niveles de MIP** aparecen ahora en las propiedades de la imagen.
 
 ## <a name="modifying-mip-levels"></a>Modificar niveles de MIP
 Para lograr efectos especiales o aumentar la calidad de la imagen a niveles de detalle específicos, puede modificar cada nivel de MIP individualmente. Por ejemplo, puede asignar a un objeto con textura una apariencia diferente a distancia (cuanto mayor sea la distancia, menores serán los niveles de MIP), o puede asegurarse de que las texturas que contienen texto o símbolos sigan siendo legibles incluso en niveles de MIP más pequeños.
 
 #### <a name="to-modify-an-individual-mip-level"></a>Para modificar un nivel de MIP individual
 
-1. Seleccione el nivel de MIP que quiere modificar. En la barra de herramientas del **modo Editor de imágenes** , use los botones para **ir al nivel de MIP siguiente** e **ir al nivel de MIP anterior** para moverse entre los niveles.
+1. Seleccione el nivel de MIP que quiere modificar. En la barra de herramientas del **modo Editor de imágenes**, use los botones para **ir al nivel de MIP siguiente** e **ir al nivel de MIP anterior** para moverse entre los niveles.
 
 2. Una vez que haya seleccionado el nivel de MIP que quiere modificar, puede usar las herramientas de dibujo para modificarlo sin cambiar el contenido de otros niveles de MIP. Las herramientas de dibujo están disponibles en la barra de herramientas del **Editor de imágenes**. Después de seleccionar una herramienta, puede cambiar sus propiedades en la ventana **Propiedades**. Para obtener información sobre las herramientas de dibujo y sus propiedades, vea [Editor de imágenes](../designers/image-editor.md).
 

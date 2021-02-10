@@ -5,17 +5,17 @@ ms.date: 03/18/2019
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9031b0107babf3d31b6e3b70bb7952cd83467d7d
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.openlocfilehash: 09203557fd9adcd6580dfafa981d6ed4f80eca16
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88238795"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936462"
 ---
 # <a name="python-projects-in-visual-studio"></a>Proyectos de Python en Visual Studio
 

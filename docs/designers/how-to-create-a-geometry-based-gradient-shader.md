@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 4b204405-ba95-4c5e-bd51-ec033a3ebfb6
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 01d712365cc296c54f0e5d1a58660df1051e2f20
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 4f3814eabb38e205acedd6bd2b00fd98901568c7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134477"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931037"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>Cómo: Crear un sombreador de gradiente basado en geometría
 
@@ -31,15 +31,15 @@ Antes de empezar, asegúrese de que se muestran la ventana **Propiedades** y el 
 
 2. Desconecte el nodo **Color de punto** del nodo **Color final**. Elija el terminal **RGB** del nodo **Color de punto** y, después, elija **Romper vínculos**. Esto hace sitio para el nodo que se agrega en el paso siguiente.
 
-3. Agregue un nodo **Multiplicar** al gráfico. En el **Cuadro de herramientas** , en **Matemáticas** , seleccione **Multiplicar** y muévalo a la superficie de diseño.
+3. Agregue un nodo **Multiplicar** al gráfico. En el **Cuadro de herramientas**, en **Matemáticas**, seleccione **Multiplicar** y muévalo a la superficie de diseño.
 
-4. Agregue un nodo **Vector de máscara** al gráfico. En el **Cuadro de herramientas** , en **Utilidad** , seleccione **Vector de máscara** y muévalo a la superficie de diseño.
+4. Agregue un nodo **Vector de máscara** al gráfico. En el **Cuadro de herramientas**, en **Utilidad**, seleccione **Vector de máscara** y muévalo a la superficie de diseño.
 
-5. Especifique los valores de máscara para el nodo **Vector de máscara**. En el modo **Seleccionar** , seleccione el nodo **Vector de máscara** y, después, en la ventana **Propiedades** , establezca la propiedad **Verde / Y** en **True** y las propiedades **Rojo / X** , **Azul / Z** y **Alfa / W** en **False**. En este ejemplo, las propiedades **Rojo / X** , **Verde / Y** y **Azul / Z** se corresponden a los componentes X, Y y Z del nodo **Posición global** y **Alfa / W** no se usa. Dado que solo **Verde / Y** está establecido en **True** , solo el componente Y del vector de entrada permanece después de que se enmascare.
+5. Especifique los valores de máscara para el nodo **Vector de máscara**. En el modo **Seleccionar**, seleccione el nodo **Vector de máscara** y, después, en la ventana **Propiedades**, establezca la propiedad **Verde / Y** en **True** y las propiedades **Rojo / X**, **Azul / Z** y **Alfa / W** en **False**. En este ejemplo, las propiedades **Rojo / X**, **Verde / Y** y **Azul / Z** se corresponden a los componentes X, Y y Z del nodo **Posición global** y **Alfa / W** no se usa. Dado que solo **Verde / Y** está establecido en **True**, solo el componente Y del vector de entrada permanece después de que se enmascare.
 
-6. Agregue un nodo **Posición global** al gráfico. En el **Cuadro de herramientas** , en **Constantes** , seleccione **Posición global** y muévala a la superficie de diseño.
+6. Agregue un nodo **Posición global** al gráfico. En el **Cuadro de herramientas**, en **Constantes**, seleccione **Posición global** y muévala a la superficie de diseño.
 
-7. Enmascare la posición de espacio global del fragmento. En el modo **Seleccionar** , mueva el terminal **Salida** del nodo **Posición global** al terminal **Vector** del nodo **Vector de máscara**. Esta conexión enmascara la posición del fragmento para ignorar los componentes X y Z.
+7. Enmascare la posición de espacio global del fragmento. En el modo **Seleccionar**, mueva el terminal **Salida** del nodo **Posición global** al terminal **Vector** del nodo **Vector de máscara**. Esta conexión enmascara la posición del fragmento para ignorar los componentes X y Z.
 
 8. Multiplique la constante de color RGB por la posición del espacio de global enmascarada. Mueva el terminal **RGB** del nodo **Color de punto** al terminal **Y** del nodo **Multiplicar** y, después, mueva el terminal **Salida** del nodo **Vector de máscara** al terminal **X** del nodo **Multiplicar**. Esta conexión escala el valor de color según el alto de píxel en el espacio global.
 
