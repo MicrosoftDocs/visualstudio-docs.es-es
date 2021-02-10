@@ -13,15 +13,15 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to worksheets
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 28b9f000c2e8517304387e2b203dfa7888b33d64
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 908660693abce2f2adf07d98e7f2a451a8f3c8e5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527217"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956599"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>Tutorial: cambiar el formato de una hoja de cálculo mediante controles CheckBox
   En este tutorial se muestran los aspectos básicos del uso de las casillas en una Microsoft Office hoja de cálculo de Excel para cambiar el formato. Usará las herramientas de desarrollo de Office en Visual Studio para crear y agregar código al proyecto. Para ver el resultado como un ejemplo completado, vea el ejemplo de controles de Excel en [ejemplos y tutoriales de desarrollo de Office](../vsto/office-development-samples-and-walkthroughs.md).
@@ -162,7 +162,7 @@ ms.locfileid: "97527217"
 - Implementar el proyecto. Para obtener más información, vea [implementar una solución de Office mediante ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).
 - Usar un botón para rellenar un cuadro de texto. Para obtener más información, vea [Tutorial: mostrar texto en un cuadro de texto de una hoja de cálculo mediante un botón](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Tutoriales de uso de Excel](../vsto/walkthroughs-using-excel.md)
 - [NamedRange (control)](../vsto/namedrange-control.md)
 - [Limitaciones de los controles de Windows Forms en documentos de Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)

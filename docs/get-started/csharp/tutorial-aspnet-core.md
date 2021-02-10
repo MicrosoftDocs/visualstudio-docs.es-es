@@ -10,18 +10,18 @@ ms.topic: tutorial
 ms.devlang: CSharp
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 15fcc5981c5711c7c3ddcf7262649a9d3473ee55
-ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
+ms.openlocfilehash: 63db3f62f4e7c763bf02fbfec2dd2f52c32d3264
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "97833330"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956365"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Tutorial: Introducción a C# y ASP.NET Core en Visual Studio
 

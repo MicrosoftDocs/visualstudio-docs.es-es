@@ -8,17 +8,17 @@ ms.technology: vs-ide-general
 ms.devlang: CSharp
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a06a6885c3d0858f60c8de48dd61054534aad40f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 0fcc42b999039abe5d682394e378cb95f12b9283
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809051"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956937"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-c"></a>Creación de una aplicación de Windows Forms en Visual Studio con C\#
 

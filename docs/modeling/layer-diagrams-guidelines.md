@@ -11,15 +11,15 @@ helpviewer_keywords:
 - constraints, architectural
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bfef2f9397fbe8dfeceaa8789cf8d118315b26d
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 06f4baed4851681065f3f7ccafecd3af339398f9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363970"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957379"
 ---
 # <a name="dependency-diagrams-guidelines"></a>Diagramas de dependencia: instrucciones
 
@@ -149,7 +149,7 @@ Para que le resulte más fácil identificar las capas y dependencias o para anal
 
 Una vez editado el diagrama, puede validarlo con el código manualmente en cualquier momento o automáticamente cada vez que se compila.
 
-Consulte:
+Vea:
 
 - [Validación código con diagramas de dependencia](../modeling/validate-code-with-layer-diagrams.md)
 
@@ -174,7 +174,7 @@ Durante el proceso de desarrollo, puede que desee suprimir algunos de los confli
 
 Para asegurarse de que los cambios futuros en el código se ajustan a los diagramas de dependencia, incluya la validación de capas en el proceso de compilación estándar de la solución. Siempre que otros miembros del equipo compilen la solución, cualquier diferencia entre las dependencias del código y el diagrama de dependencia se informará como errores de compilación. Para obtener más información sobre cómo incluir la validación de capas en el proceso de compilación, vea [validar el código con diagramas de dependencia](../modeling/validate-code-with-layer-diagrams.md).
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [Diagramas de dependencia: referencia](../modeling/layer-diagrams-reference.md)
 - [Crear diagramas de dependencia a partir del código](../modeling/create-layer-diagrams-from-your-code.md)

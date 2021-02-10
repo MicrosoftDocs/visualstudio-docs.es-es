@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 15a048c8-5ad3-448e-b6e9-e3c5d7147ed2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b82eaf6ca52b04d39e9f776feca74f5bb223a0d5
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 70b0d85ea161a3f938013c01702dd2ccce73a31d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048181"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956105"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Configuraciones de conjuntos de herramientas estándar y personalizados
 

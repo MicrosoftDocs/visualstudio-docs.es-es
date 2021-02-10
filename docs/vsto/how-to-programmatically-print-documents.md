@@ -12,15 +12,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], printing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e17976c86a519db3c5edcd60c426b5d20e84b526
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: c81e22bbf3af08c150f1e1156ee62f1666f59638
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523914"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956638"
 ---
 # <a name="how-to-programmatically-print-documents"></a>Cómo: imprimir documentos mediante programación
   Puede imprimir la totalidad o parte de un documento de Microsoft Office Word en la impresora predeterminada.
@@ -59,5 +59,5 @@ ms.locfileid: "97523914"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#12](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#12)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#12](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#12)]
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)

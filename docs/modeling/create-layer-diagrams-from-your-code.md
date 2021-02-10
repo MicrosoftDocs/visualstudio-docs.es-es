@@ -11,15 +11,15 @@ helpviewer_keywords:
 - constraints, architectural
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ea19089fe8660b1169d790e25ed7ccf845404238
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 38e357ca4aa715861839f7f5ca168eafdc66f5ed
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363528"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957444"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Crear diagramas de dependencia a partir del código
 
@@ -53,7 +53,7 @@ Antes de crear un diagrama de dependencia, asegúrese de que la solución tiene 
 
 4. En **Agregar a proyecto de modelado**, busque y seleccione un proyecto de modelado existente en la solución.
 
-     O bien
+     o bien
 
      Elija **crear un nuevo proyecto de modelado** para agregar un nuevo proyecto de modelado a la solución.
 
@@ -158,7 +158,7 @@ Antes de crear un diagrama de dependencia, asegúrese de que la solución tiene 
 
 - [Buscar posibles problemas mediante analizadores de mapas de código](../modeling/find-potential-problems-using-code-map-analyzers.md)
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [Compatibilidad de edición con las herramientas de arquitectura y modelado](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools)
 - [Vídeo: Validación de las dependencias de la arquitectura en tiempo real](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)

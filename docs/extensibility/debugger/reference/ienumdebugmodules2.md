@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4fe28074-a960-41ad-b74d-b57f04c0c0ad
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 612285aa4d5a249c0f922ccae88d98a7df83187b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dfcd594ab8764cedb8cbe2ea312675f884ae2338
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80716447"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957158"
 ---
 # <a name="ienumdebugmodules2"></a>IEnumDebugModules2
 Esta interfaz enumera una lista de módulos.
@@ -45,7 +45,7 @@ IEnumDebugModules2 : IUnknown
 |[Clonar](../../../extensibility/debugger/reference/ienumdebugmodules2-clone.md)|Crea un enumerador que contiene el mismo estado de enumeración que el enumerador actual.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugmodules2-getcount.md)|Obtiene el número de módulos.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Visual Studio usa esta interfaz principalmente para actualizar la ventana **módulos** .
 
  En lo que respecta a la depuración en Visual Studio, un programa es una secuencia lógica de instrucciones de código que puede cruzar los límites del módulo, por lo tanto, la necesidad de una lista de módulos para una sola interfaz [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) . El primer módulo de la lista contiene normalmente el punto de entrada inicial para el programa asociado.

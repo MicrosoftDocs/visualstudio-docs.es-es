@@ -14,16 +14,16 @@ helpviewer_keywords:
 ms.assetid: b2dbc033-bf95-4d10-8e51-f9462979133e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 386f8e85c02fe73eab9801b3edf79ec0d0b178fc
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 3ee8f09c502f6125c6ce2e67e504a689c035ffd5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150787"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957353"
 ---
 # <a name="call-tree-view"></a>Vista Árbol de llamadas
 La vista Árbol de llamadas muestra las rutas de acceso de ejecución de funciones que se recorrieron en la aplicación de la que se generaron perfiles. La raíz del árbol es el punto de entrada a la aplicación o el componente. Cada nodo de función muestra todas las funciones a las que ha llamado, así como los datos de rendimiento de esas llamadas a funciones.

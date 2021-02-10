@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 1e016ebd-aadd-411f-a606-03bf69d3f8aa
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b6a5c2f010b60546fe1ece16f66bf437d2dc633
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: cef9475e9336acd5c10cee604d453706ea7321c5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96616590"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957808"
 ---
 # <a name="set-current-process"></a>Establecer el proceso actual
 Establece el proceso especificado como el proceso activo en el depurador.

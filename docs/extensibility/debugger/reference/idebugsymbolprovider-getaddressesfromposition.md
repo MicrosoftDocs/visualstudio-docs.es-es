@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 1b0f02cb-8ace-4614-88f3-0e10239012b3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 27767af36093e9424775074a55bafadac9a4480d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 15838ff1efe9cba6920b98a8b7f00cb62f2fc3b4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719405"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956469"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromposition"></a>IDebugSymbolProvider::GetAddressesFromPosition
 Este método asigna una posición de documento en una matriz de direcciones de depuración.
@@ -28,7 +28,7 @@ Este método asigna una posición de documento en una matriz de direcciones de d
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT GetAddressesFromPosition( 
+HRESULT GetAddressesFromPosition( 
    IDebugDocumentPosition2* pDocPos,
    BOOL                     fStatmentOnly,
    IEnumDebugAddresses**    ppEnumBegAddresses,
@@ -37,7 +37,7 @@ HRESULT GetAddressesFromPosition( 
 ```
 
 ```csharp
-int GetAddressesFromPosition( 
+int GetAddressesFromPosition( 
    IDebugDocumentPosition2  pDocPos,
    bool                     fStatmentOnly,
    out IEnumDebugAddresses  ppEnumBegAddresses,
@@ -61,7 +61,7 @@ enuncia Devuelve un enumerador [IEnumDebugAddresses](../../../extensibility/debu
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Una posición de documento suele indicar un intervalo de líneas de código fuente. Este método proporciona las direcciones de depuración inicial y final asociadas a estas líneas. Algunos lenguajes admiten instrucciones que abarcan varias líneas o líneas que contienen más de una instrucción. Este método proporciona una marca para limitar las direcciones de depuración a una única instrucción.
 
  Es posible que una sola instrucción tenga varias direcciones de depuración, como en el caso de las plantillas.

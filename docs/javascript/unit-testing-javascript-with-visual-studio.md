@@ -6,17 +6,17 @@ ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: cdaff34c7eb2f9eba7c075127647c2eacbb736f9
-ms.sourcegitcommit: bcddb4647815e9ce2e175d9258e8df1b795e3e85
+ms.openlocfilehash: e10f9b628d1d9fbbdb2911977fe7e63b1a7b6d57
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86033356"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957483"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Pruebas unitarias de JavaScript y TypeScript en Visual Studio
 

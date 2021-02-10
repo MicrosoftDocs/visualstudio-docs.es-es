@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 46705c7a614cd67d81c9e55c03e937f72c29a2fe
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: f0c1d076edc09f7978dcc188b167ce953f631068
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360733"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957418"
 ---
 # <a name="integrate-models-by-using-visual-studio-modelbus"></a>Integrar modelos mediante Modelbus de Visual Studio
 
@@ -42,7 +42,7 @@ Para obtener información y ejemplos de código, vea:
 
 2. En el cuadro de diálogo, elija **deseo exponer este DSL a ModelBus**. Puede elegir ambas opciones si quiere que este DSL exponga sus modelos y use referencias a otros DSL.
 
-3. Haga clic en **Aceptar**. Se agrega un nuevo proyecto "ModelBusAdapter" a la solución de DSL.
+3. Haga clic en **OK**. Se agrega un nuevo proyecto "ModelBusAdapter" a la solución de DSL.
 
 4. Si quiere acceder al DSL desde una plantilla de texto, debe modificar AdapterManager.tt en el nuevo proyecto. Omita este paso si quiere acceder al DSL desde otro código, como comandos y controladores de eventos. Para obtener más información, vea [usar Visual Studio ModelBus en una plantilla de texto](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
 
@@ -516,7 +516,7 @@ Al hacer clic con el botón derecho en el diagrama de definición de DSL, haga c
 
 - En **DslPackage\source.extention.TT**, `|ModelBusAdapter|` se agrega como componente MEF.
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [Cómo: Abrir un modelo desde un archivo en el código del programa](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 - [Cómo: Agregar un controlador para arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md)

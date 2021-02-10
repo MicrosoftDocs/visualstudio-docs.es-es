@@ -11,13 +11,13 @@ helpviewer_keywords:
 - project templates [Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: f7ce85818e0cce4a6e78f5e2ec5901452ebd83f9
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+manager: jmartens
+ms.openlocfilehash: e5a3a555a9c0674c70e93ec557416c05d282fbcf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006307"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956820"
 ---
 # <a name="project-and-item-templates"></a>Plantillas de proyecto y elemento
 

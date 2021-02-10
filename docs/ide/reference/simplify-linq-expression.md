@@ -4,17 +4,17 @@ ms.date: 08/12/2020
 ms.topic: reference
 author: m-redding
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 04485d6ce67c822fd0620bd63f3557851db6dbb9
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 006fc0fe84b11573ece98019a4446d83de52d62c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88251362"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957561"
 ---
 # <a name="simplify-linq-expression"></a>Simplificación de la expresión LINQ
 
