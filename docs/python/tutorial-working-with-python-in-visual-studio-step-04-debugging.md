@@ -6,17 +6,17 @@ ms.date: 01/28/2019
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8cb9143057bf0cfda85c835131204c6641199b48
-ms.sourcegitcommit: 10cb0b68f8cef219ea08eff9bc5f0afe1545c825
+ms.openlocfilehash: a66268d5d6bd200eb3ef0e2c8bcf53471e3a735f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98699335"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839168"
 ---
 # <a name="step-4-run-code-in-the-debugger"></a>Paso 4: Ejecución de código en el depurador
 

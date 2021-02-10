@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5375ac252d097234cf81d1802be1ab681f90bbcd
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: bc65fe3b0052dfbf133b861a933dcbcc33e3a371
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995019"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861386"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Tutorial: Captura de información de gráficos mediante programación
 Puede utilizar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para capturar mediante programación información de gráficos desde la aplicación Direct3D.

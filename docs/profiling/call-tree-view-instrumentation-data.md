@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: 306bd176-0ce9-4a10-89ca-20b043d37d4e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c846910da4dec636c073446ae63cffb7cb2a682
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 815c6c0fc3eec3678f878e081d76c95cb7e8fc78
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150800"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860846"
 ---
 # <a name="call-tree-view---instrumentation-data"></a>Vista Árbol de llamadas: datos de instrumentación
 Los valores de una función en la vista Árbol de llamadas indican el tiempo de las instancias de la función a las que llamó la función primaria en el árbol de llamadas. Los valores de porcentaje se calculan comparando el valor de las instancias de la función con el tiempo inclusivo transcurrido total de todas las funciones de la ejecución de generación de perfiles.

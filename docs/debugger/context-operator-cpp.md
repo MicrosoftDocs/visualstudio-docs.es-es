@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: 73cc9afe-f4a4-474e-bb89-5a33fb5e570c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1bc238cc56e1b815e79ba381a7cd4866085d3bef
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 619162bc4237c71c44f960f7ca1e4337a54f3dd5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96559763"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857719"
 ---
 # <a name="context-operator-in-the-visual-studio-debugger-c"></a>Operador de contexto en el depurador de Visual Studio (C++)
 Puede usar el operador de contexto en C++ para calificar una ubicación de punto de interrupción, un nombre de variable o una expresión. El operador de contexto resulta útil para especificar un nombre desde un ámbito externo que se encuentra oculto por un nombre local.

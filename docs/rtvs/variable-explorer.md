@@ -5,15 +5,15 @@ ms.date: 01/24/2018
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 799b7f2789898e0d02d9588f9a3ad7d1e8098a00
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f69e5b61e80d3a00522307dd7481f74418407d99
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62809876"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851808"
 ---
 # <a name="variable-explorer"></a>Explorador de variables
 

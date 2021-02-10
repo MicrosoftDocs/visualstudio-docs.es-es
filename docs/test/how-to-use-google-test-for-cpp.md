@@ -8,12 +8,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: bf4db1c01fc79d32f7e498c265b74dec34f67e48
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6cf29d16432b677c6e83ba4cbaedb39f0a8d1ed2
+ms.sourcegitcommit: 55bc9df751a21656de8cc5b6dbd8a2a1915ec690
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287251"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99572998"
 ---
 # <a name="how-to-use-google-test-for-c-in-visual-studio"></a>Cómo usar Google Test para C++ en Visual Studio
 
@@ -65,7 +65,7 @@ En el archivo *.cpp* de prueba, agregue las directivas `#include` que sean neces
 
 ## <a name="write-and-run-tests"></a>Escribir y ejecutar pruebas
 
-Ya está listo para escribir y ejecutar pruebas de Google Test. Vea [Google Test Primer](https://github.com/google/googletest/blob/master/googletest/docs/primer.md) para obtener más información sobre las macros de prueba. Vea [Ejecutar pruebas unitarias con el Explorador de pruebas](run-unit-tests-with-test-explorer.md) para más información sobre cómo detectar, ejecutar y agrupar las pruebas usando el **Explorador de pruebas**.
+Ya está listo para escribir y ejecutar pruebas de Google Test. Vea [Google Test Primer](https://github.com/google/googletest/blob/master/docs/primer.md) para obtener más información sobre las macros de prueba. Vea [Ejecutar pruebas unitarias con el Explorador de pruebas](run-unit-tests-with-test-explorer.md) para más información sobre cómo detectar, ejecutar y agrupar las pruebas usando el **Explorador de pruebas**.
 
 ## <a name="see-also"></a>Vea también
 

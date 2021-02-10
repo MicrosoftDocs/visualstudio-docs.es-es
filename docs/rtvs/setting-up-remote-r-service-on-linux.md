@@ -6,15 +6,15 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 ms.reviewer: karthiknadig
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: c4d65388db0ef90f807ec85b8c9216d717c2b571
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 586f3038ff4bb091fb99160d7965ad927eda070a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62809562"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851821"
 ---
 # <a name="remote-r-service-for-linux"></a>Servicio R remoto para Linux
 

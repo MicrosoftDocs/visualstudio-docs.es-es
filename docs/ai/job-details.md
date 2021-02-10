@@ -4,25 +4,25 @@ description: Sepa que una vez que los trabajos se envían, puede ver la lista de
 ms.custom: SEO-VS-2020
 author: jillre
 ms.author: jillfra
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: d67ee5810c1776176e1370839f0f7f43b9d0c55e
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 13d78913e0d5d708c5e75a80611ae9cc1c2f7366
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099224"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841437"
 ---
 # <a name="view-recent-job-performance-and-details"></a>Ver el rendimiento y los detalles de trabajos recientes
 
 Una vez que se envían los trabajos, puede ver la lista de trabajos para ver su estado, duración y mucho más.
 
-1. En el **Explorador de servidores** , expanda el contexto de ejecución específico.
-2. Haga doble clic en **Trabajos** .
+1. En el **Explorador de servidores**, expanda el contexto de ejecución específico.
+2. Haga doble clic en **Trabajos**.
 3. Verá la lista de trabajos enviados a ese contexto de ejecución.
 4. Seleccione un **Trabajo** determinado en la lista para ver los detalles.
 

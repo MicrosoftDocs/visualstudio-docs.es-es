@@ -7,15 +7,15 @@ ms.topic: reference
 ms.assetid: 42ab17ca-b8c1-40d7-beda-d033f66fe874
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c5d78196a64ca0ab2067d0df73410c41cbeca35
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 2c26bd749fac3d458a5983380fc09bd40a2a645a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049174"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99849780"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Menús contextuales (Explorador de esquemas XML)
 

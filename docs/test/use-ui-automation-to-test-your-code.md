@@ -15,15 +15,15 @@ helpviewer_keywords:
 - coded UI test
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 68d6d2823a4944ec74aaa477fb7b3913943a7296
-ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
+ms.openlocfilehash: 2aa22bc9997b7c2c6844980974eb042291af2447
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "97833278"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850131"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>Usar pruebas automatizadas de IU para probar el código
 

@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 3a81a7c7-39f9-47a8-ba5a-b351227f380e
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 42b7837dd5253d29ecbd0085ae6159a981fcf15c
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 6ce6bb21e00470203c5a47dbb0f102c43d0ac0bd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136646"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836416"
 ---
 # <a name="build-events-dialog-box-visual-basic"></a>Eventos de compilación (Cuadro de diálogo) (Visual Basic)
 
@@ -39,7 +39,7 @@ Especifica los comandos que se van a ejecutar antes de que empiece la compilaci�
 
 **Línea de comandos del evento posterior a la compilación**
 
-Especifica los comandos que se van a ejecutar después de que finalice la compilación. Para escribir comandos largos, haga clic en **Edición posterior a la compilación** para mostrar el cuadro de diálogo **Línea de comandos del evento anterior a la compilación/Línea de comandos del evento posterior a la compilación** .
+Especifica los comandos que se van a ejecutar después de que finalice la compilación. Para escribir comandos largos, haga clic en **Edición posterior a la compilación** para mostrar el cuadro de diálogo **Línea de comandos del evento anterior a la compilación/Línea de comandos del evento posterior a la compilación**.
 
 > [!NOTE]
 > Agregue una instrucción `call` antes de todos los comandos posteriores a la compilación que ejecutan archivos .bat. Por ejemplo: `call C:\MyFile.bat` o `call C:\MyFile.bat call C:\MyFile2.bat`.

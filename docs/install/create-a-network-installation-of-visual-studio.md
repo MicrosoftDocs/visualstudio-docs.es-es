@@ -10,17 +10,17 @@ helpviewer_keywords:
 ms.assetid: 4CABFD20-962E-482C-8A76-E4012052F701
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0b48f35a9467e1f69a0055ac0859083078f9cf3b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b572a6854d505704accd79cc4da2ac4e52c193d6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88992360"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850184"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Creación de una instalación de red de Visual Studio
 

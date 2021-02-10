@@ -12,16 +12,16 @@ dev_langs:
 ms.assetid: 51893967-98c8-4141-ba40-03646f221760
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 245676d084485ee46647112f5409cdb1854d6913
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 14d071d4ab47efd60aa31ecbffe1d7cb873ac6fd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728916"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865610"
 ---
 # <a name="debug-html-and-css-sample-code"></a>Depurar código de ejemplo HTML y CSS
 

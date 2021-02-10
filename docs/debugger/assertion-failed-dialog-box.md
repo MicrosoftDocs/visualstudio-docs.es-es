@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 64af5bed-e38b-420f-b9ce-d64f35100aae
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: acc8f5abaa0c839232bbcedc63d24387444bd749
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 10f26d61eddb0efb47e22722a039f73fec2b404c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729085"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857973"
 ---
 # <a name="assertion-failed-dialog-box"></a>Error de aserción (cuadro de diálogo)
 Una instrucción de aserción especifica una condición que se espera que sea cierta (valor true) en un determinado punto del programa. Si la condición no es cierta, la aserción produce un error, la ejecución del programa se interrumpe y aparece este cuadro de diálogo.

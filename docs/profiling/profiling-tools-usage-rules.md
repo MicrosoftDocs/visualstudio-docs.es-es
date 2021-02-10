@@ -6,16 +6,16 @@ ms.topic: conceptual
 ms.assetid: afa7db3b-8c1d-473a-81ac-24ede112a17f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8eba05a40e108d2fd1ba5107160088c5c30da299
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 2514d6893c205a1c48c76983c859528be6ad938b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720480"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861626"
 ---
 # <a name="profiling-tools-usage-rules"></a>Reglas de uso de herramientas de generación de perfiles
 Las reglas de rendimiento de la categoría Uso de herramientas de generación de perfiles proporcionan instrucciones para usar el generador de perfiles para recopilar datos de forma más eficaz.

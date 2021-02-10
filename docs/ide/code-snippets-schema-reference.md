@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 58a60621-725f-4763-93b7-62ea5424ef88
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b5030efcfe6fc774a1bb576f6056db7d9f8fd662
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: 22a5d4543548c8ac927487c9f4e2c9d95ea3487e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006476"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99842152"
 ---
 # <a name="code-snippets-schema-reference"></a>Referencia de esquemas de fragmentos de código
 

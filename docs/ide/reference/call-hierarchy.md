@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Call Hierarchy
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 75c330855d3fca1187f88171adb893c3f77c4ccd
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: e7384376b604f2097d68bf8bac06b2af0158e09b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871410"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836480"
 ---
 # <a name="view-call-hierarchy"></a>Visualización de la jerarquía de llamadas
 

@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 8a30168d-8b39-4de1-b094-c7356ba101a3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 85712f2b8971b2b5284dab89d90eecec9010e9b4
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: c7c8d415da1de7be9cafdad6e5dea531dd59a7b4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727755"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99845144"
 ---
 # <a name="graphics-event-call-stack"></a>Pila de llamadas de eventos de gráficos
 La pila de llamadas de eventos gráficos del Analizador de gráficos de Visual Studio le ayuda a establecer la relación entre los eventos de gráficos problemáticos y el código fuente de la aplicación.

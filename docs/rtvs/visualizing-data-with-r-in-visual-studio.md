@@ -5,15 +5,15 @@ ms.date: 06/29/2017
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: dbb3984385e0042c669f8aad1d5bb4a2f64de917
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 64b5ac36edf6c5f506628f9af88ba36bd62c71c8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801625"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851834"
 ---
 # <a name="create-visual-data-plots-with-r"></a>Crear trazados de datos visuales con R
 

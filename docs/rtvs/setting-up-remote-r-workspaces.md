@@ -5,15 +5,15 @@ ms.date: 12/04/2017
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 686f98aaaade035f1632139d255ccff8b37eddf3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 96078d1b2fdb5a54c912cbf214024726ce102e4e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75850065"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851847"
 ---
 # <a name="set-up-remote-workspaces"></a>Configurar áreas de trabajo remotas
 

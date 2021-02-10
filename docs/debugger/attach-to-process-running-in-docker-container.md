@@ -8,16 +8,16 @@ helpviewer_keywords:
 - debugging, Docker container
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: f6e2b851057d924353e6e1e9a211fcbb294353c8
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: 4f39d4ecd69b726c1d549d723fadd324b1edd722
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97761269"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857934"
 ---
 # <a name="attach-to-a-process-running-on-a-docker-container"></a>Asociación a procesos que se ejecutan en contenedores de Docker 
 
@@ -52,13 +52,13 @@ Puede asociar el depurador de Visual Studio a un proceso que se ejecuta en un c
     > [!NOTE]
     > Hay dos opciones para establecer una conexión remota con un proceso en ejecución en un contenedor de Docker. La primera opción, usar SSH, es idónea si no tiene herramientas de Docker instaladas en la máquina local.  Si tiene herramientas de Docker instaladas localmente y tiene un demonio de Docker que está configurado para aceptar solicitudes remotas, pruebe la segunda opción: usar un demonio de Docker.
 
-    1. **_Para conectarse a una máquina remota a través de SSH:_*
-        1. Seleccione *Agregar...* para conectarse a un sistema remoto.<br/>
+    1. ***Para conectarse a un equipo remoto a través de SSH:***
+        1. Seleccione **Agregar...** para conectarse a un sistema remoto.<br/>
         ![Conectar con el sistema remoto](../debugger/media/connect-remote-system.png "Conexión con el sistema remoto")
         1. Seleccione un contenedor en ejecución al que asociarse después de conectarse correctamente al SSH o el demonio y haga clic en **Aceptar**.
 
-    1. **_Para establecer el destino en un contenedor remoto que ejecuta un proceso a través de un [demonio de Docker:](https://docs.docker.com/engine/reference/commandline/dockerd/)_*
-        1. Especifique la dirección del demonio (es decir, a través de TCP, IP, etc.) en *Docker host (Optional)* (Host de Docker [opcional]) y haga clic en el vínculo para actualizar.
+    1. ***Para establecer el destino en un contenedor remoto que ejecuta un proceso a través de un [demonio de Docker](https://docs.docker.com/engine/reference/commandline/dockerd/)***
+        1. Especifique la dirección del demonio (es decir, a través de TCP, IP, etc.) en **Docker host (Optional)** (Host de Docker [opcional]) y haga clic en el vínculo para actualizar.
         1. Seleccione un contenedor en ejecución al que asociarse después de conectarse al demonio correctamente y haga clic en **Aceptar**.
 
 4. Elija el proceso de contenedor correspondiente en la lista **Procesos disponibles** y seleccione **Asociar** para empezar a depurar el proceso de contenedor de C# en Visual Studio.
@@ -86,8 +86,8 @@ Puede asociar el depurador de Visual Studio a un proceso que se ejecuta en un c
 
    El establecimiento del destino en un contenedor remoto a través de SSH no está disponible actualmente y solo puede realizarse mediante un demonio de Docker.
 
-    **_Para establecer el destino en un contenedor remoto que ejecuta un proceso a través de un [demonio de Docker:](https://docs.docker.com/engine/reference/commandline/dockerd/)_*
-    1. Especifique la dirección del demonio (es decir, a través de TCP, IP, etc.) en *Docker host (Optional)* (Host de Docker [opcional]) y haga clic en el vínculo para actualizar.
+    ***Para establecer el destino en un contenedor remoto que ejecuta un proceso a través de un [demonio de Docker](https://docs.docker.com/engine/reference/commandline/dockerd/)***
+    1. Especifique la dirección del demonio (es decir, a través de TCP, IP, etc.) en **Docker host (Optional)** (Host de Docker [opcional]) y haga clic en el vínculo para actualizar.
 
     1. Seleccione un contenedor en ejecución al que asociarse después de conectarse al demonio correctamente y seleccione Aceptar.
 

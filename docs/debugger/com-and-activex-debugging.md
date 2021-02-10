@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 3260b2a7-3239-493d-9271-aedf705c13c7
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1df80e8486cb8f8667494137392fadb0a9754e8b
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: f86f072a32bf9d7ff4af3c77564236fe2997f70a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729007"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865870"
 ---
 # <a name="com-and-activex-debugging"></a>Depurar COM y ActiveX
 Esta sección proporciona sugerencias sobre cómo depurar aplicaciones COM y controles ActiveX.

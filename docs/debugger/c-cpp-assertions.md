@@ -27,15 +27,15 @@ helpviewer_keywords:
 ms.assetid: 2d7b0121-71aa-414b-bbb6-ede1093d0bfc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0b585ce001692ab5b4451acc8d2938741bfacd78
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: bc58d125f82a33f982578f9a186d579d280e89e8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729072"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865961"
 ---
 # <a name="cc-assertions"></a>Aserciones de C/C++
 Una instrucción de aserción especifica una condición que se espera que sea cierta (valor true) en un punto del programa. Si esa condición no es "true", la aserción produce un error, la ejecución del programa se interrumpe y aparece el [cuadro de diálogo Error de aserción](../debugger/assertion-failed-dialog-box.md).

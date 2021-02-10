@@ -6,17 +6,17 @@ ms.date: 01/28/2019
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ed4fdbfe7090a66d955461f2c3a394f6fb661c5a
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 74259a6e15446d8ca0b07f3b694d0285427f8d9f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "62430749"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861561"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>Tutorial: Trabajar con Python en Visual Studio
 

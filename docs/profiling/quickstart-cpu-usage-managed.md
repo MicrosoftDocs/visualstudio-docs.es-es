@@ -9,15 +9,15 @@ helpviewer_keywords:
 - Diagnostics Tools, CPU Usage
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7d3cdb022dce8a9f4b7037e3770cb0ae46c6863c
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: 582a412dbcac043e4a77c1508d385cc8caa4c64c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90074896"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861652"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c-visual-basic"></a>Inicio rápido: Análisis de los datos de uso de CPU en Visual Studio (C#, Visual Basic)
 

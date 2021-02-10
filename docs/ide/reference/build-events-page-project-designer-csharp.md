@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 3fff9ae5-213c-46ea-a660-1d70acb6c922
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5f70557338a48931a3d109f345714d219f428f50
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 51b430a18a3d0934c16de19cbde82177a5f21f12
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136854"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836467"
 ---
 # <a name="build-events-page-project-designer-c"></a>Eventos de compilación (Página, Diseñador de proyectos) (C#)
 
@@ -48,7 +48,7 @@ Especifica los comandos que se van a ejecutar antes de que empiece la compilaci�
 
 **Línea de comandos del evento posterior a la compilación**
 
-Especifica los comandos que se van a ejecutar después de que finalice la compilación. Para escribir comandos largos, haga clic en **Edición posterior a la compilación** para mostrar el cuadro de diálogo **Línea de comandos del evento anterior a la compilación/Línea de comandos del evento posterior a la compilación** .
+Especifica los comandos que se van a ejecutar después de que finalice la compilación. Para escribir comandos largos, haga clic en **Edición posterior a la compilación** para mostrar el cuadro de diálogo **Línea de comandos del evento anterior a la compilación/Línea de comandos del evento posterior a la compilación**.
 
 > [!NOTE]
 > Agregue una instrucción `call` antes de todos los comandos posteriores a la compilación que ejecutan archivos .bat. Por ejemplo: `call C:\MyFile.bat` o `call C:\MyFile.bat call C:\MyFile2.bat`.
@@ -79,7 +79,7 @@ entonces la configuración del archivo del proyecto es:
 </PropertyGroup>
 ```
 
-Para los proyectos de .NET Core, Visual Studio 2019 (y Visual Studio 2017 en las actualizaciones más recientes), agrega un destino de MSBuild denominado `PreBuild` o `PostBuild` para las configuraciones de **PreBuildEvent** y **PostBuildEvent** . Estos destinos usan los atributos **BeforeTargets** y **AfterTargets** , que MSBuild reconoce. Por ejemplo, en el ejemplo anterior, Visual Studio genera ahora el siguiente código:
+Para los proyectos de .NET Core, Visual Studio 2019 (y Visual Studio 2017 en las actualizaciones más recientes), agrega un destino de MSBuild denominado `PreBuild` o `PostBuild` para las configuraciones de **PreBuildEvent** y **PostBuildEvent**. Estos destinos usan los atributos **BeforeTargets** y **AfterTargets**, que MSBuild reconoce. Por ejemplo, en el ejemplo anterior, Visual Studio genera ahora el siguiente código:
 
 ```xml
 <Target Name="PreBuild" BeforeTargets="PreBuildEvent">

@@ -27,15 +27,15 @@ helpviewer_keywords:
 ms.assetid: 464de16b-4215-4787-9bfa-921aaff9d9f4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d145ccd8764e488a5d1270985050b29bcd8987d
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: fe50082f8ff62c4a19b7725facc18f43d672e353
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560569"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865714"
 ---
 # <a name="crt-debug-library-use"></a>Uso de la biblioteca de depuración CRT
 La biblioteca en tiempo de ejecución de C (CRT) proporciona amplias capacidades de depuración. Si quiere usar una de las bibliotecas de depuración de CRT, debe crear un vínculo con [/DEBUG](/cpp/build/reference/debug-generate-debug-info) y compilar con **/MDd**, **/MTd** o **/LDd**.

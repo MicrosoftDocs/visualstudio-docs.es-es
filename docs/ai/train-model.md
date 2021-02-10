@@ -5,18 +5,18 @@ ms.custom: SEO-VS-2020
 keywords: ai, visual studio, entrenar modelo, nube
 author: jillre
 ms.author: jillfra
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - azure
-ms.openlocfilehash: 72f5fa5aab9f9afa6268f8acd737430af0568928
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: e1bb1d0bde1b564fe9a35f3527c7b3803c7e9d78
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727364"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841307"
 ---
 # <a name="train-ai-models-in-azure-batch-ai"></a>Entrenar modelos de AI en Azure Batch AI
 

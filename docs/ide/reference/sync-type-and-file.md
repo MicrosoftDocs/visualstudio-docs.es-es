@@ -6,18 +6,18 @@ ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 020dcedd6b0cb2117984d45548b5c1e099c67aee
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: c02135074ee4a4907bb9c4ee235655fc3908a64c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479828"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838601"
 ---
 # <a name="sync-a-type-to-a-filename-or-a-filename-to-a-type-refactoring"></a>Refactorización de sincronización de un tipo con un nombre de archivo o de un nombre de archivo con un tipo
 
