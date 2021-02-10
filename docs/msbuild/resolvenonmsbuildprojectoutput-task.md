@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: a0b8fcec-8c8d-4867-85ac-5304c5108e5e
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3486788331574aa70874c0deeefa3c553404c166
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 98d8e483b8ad03f02283620f65ec0351d9d64051
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048524"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912459"
 ---
 # <a name="resolvenonmsbuildprojectoutput-task"></a>ResolveNonMSBuildProjectOutput (tarea)
 
@@ -33,7 +33,7 @@ Determina los archivos de salida de las referencias de proyecto que no son de MS
 
  En la siguiente tabla se describen los parámetros de la tarea `ResolveNonMSBuildProjectOutput` .
 
-|Parámetro|Description|
+|Parámetro|Descripción|
 |---------------|-----------------|
 |`PreresolvedProjectOutputs`|Parámetro `String` opcional.<br /><br /> Especifica una cadena XML que contiene resultados del proyecto resuelto.|
 |`ProjectReferences`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` requerido.<br /><br /> Especifica las referencias del proyecto.|

@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: cc5664e0-0b38-40c1-bb65-04ae720c2adb
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c40b8e35cd572c0075bb87f28fa1eda424cb2e8e
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: fd6b1821c10940bdd510ed2b8e866ca8369dce3d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903940"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913215"
 ---
 # <a name="how-to-debug-inline-assembly-code"></a>Procedimiento Depuración del código de ensamblado en línea
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f4cea2e1-08dc-47ac-aba2-3b8c338e607f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - aspnet
-ms.openlocfilehash: bbe3d23301f0853626a930855acf4b595c6a2923
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 882a192a96764356e90d78498ef5ed5ccd29ce25
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75847874"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908347"
 ---
 # <a name="quickstart-debug-aspnet-core-with-the-visual-studio-debugger"></a>Inicio rápido: Depuración de ASP.NET Core con el depurador de Visual Studio
 

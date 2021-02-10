@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: f5ff182f-7b3a-46fb-9335-37df54cfb8eb
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4593fff50feb0176ea81f70dc297bc39d8dd1936
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 2f324fb3999c94d8f26e329859e095f31740c76c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436200"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914229"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Cómo: Seleccionar los archivos que se van a compilar
 
@@ -58,7 +58,7 @@ Para incluir archivos para una compilación, deben estar incluidos en una lista 
 
 También se pueden usar comodines para incluir recursivamente todos los archivos o solo archivos concretos de subdirectorios como entradas para una compilación. Para obtener más información sobre los caracteres comodín, vea [Elementos](../msbuild/msbuild-items.md).
 
-Los ejemplos siguientes están basados en un proyecto que contiene archivos gráficos en los directorios y subdirectorios siguientes, con el archivo de proyecto ubicado en el directorio *Project* :
+Los ejemplos siguientes están basados en un proyecto que contiene archivos gráficos en los directorios y subdirectorios siguientes, con el archivo de proyecto ubicado en el directorio *Project*:
 
 *Project\Images\BestJpgs*
 
@@ -144,7 +144,7 @@ En el ejemplo de código siguiente se muestra un proyecto que incluye todos los 
 
 ## <a name="example-2"></a>Ejemplo 2
 
-En el ejemplo de código siguiente se usa un comodín para incluir todos los archivos *.cs* .
+En el ejemplo de código siguiente se usa un comodín para incluir todos los archivos *.cs*.
 
 ```xml
 <Project DefaultTargets="Compile"

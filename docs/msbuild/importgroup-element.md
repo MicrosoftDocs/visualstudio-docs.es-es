@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: dac3fa2d-6678-4017-af35-93686f53f302
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 865ee2b319cc3cd26f6924110fa2976f526ac4f4
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 2e5ece72d83dd530a855d583ce061a22554d45a5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903944"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914096"
 ---
 # <a name="importgroup-element"></a>Elemento ImportGroup
 

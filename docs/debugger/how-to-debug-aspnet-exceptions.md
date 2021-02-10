@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 1810096e-de8c-435e-be3d-f365d0cd0a6a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - aspnet
-ms.openlocfilehash: 945e289f3da55c8884f4ec2cd115c65dbe3be237
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+ms.openlocfilehash: 00823fd1a5029cb45b91a6beb4168f8a9cbd999a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398654"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913264"
 ---
 # <a name="how-to-debug-aspnet-exceptions"></a>Procedimiento Depuración de excepciones de ASP.NET
 La depuración de excepciones es una parte importante del desarrollo de una aplicación [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] sólida. Encontrará información general sobre cómo depurar excepciones en [Administración de excepciones con el depurador](../debugger/managing-exceptions-with-the-debugger.md).

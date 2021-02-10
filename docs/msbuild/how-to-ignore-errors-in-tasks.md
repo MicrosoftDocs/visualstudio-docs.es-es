@@ -10,13 +10,13 @@ helpviewer_keywords:
 ms.assetid: e2f1ca4f-787b-44bd-bc64-81a036025e96
 author: ghogen
 ms.author: ghogen
-manager: jillfra
-ms.openlocfilehash: 97a2666b32ad7e6bc93865fa36529377652b6453
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+manager: jmartens
+ms.openlocfilehash: f2c0b070868b8dc9fc10c4f493fbb75948485a5e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436254"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914248"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>Cómo: Pasar errores por alto en las tareas
 
@@ -28,9 +28,9 @@ El atributo `ContinueOnError` del elemento `Task` controla si una compilación s
 
 El atributo `ContinueOnError` puede contener uno de los siguientes valores:
 
-- **WarnAndContinue** o **true** . Cuando se produce un error en una tarea, las tareas subsiguientes en el elemento [Target](../msbuild/target-element-msbuild.md) y la compilación continúan ejecutándose, y todos los errores de la tarea se tratan como advertencias.
+- **WarnAndContinue** o **true**. Cuando se produce un error en una tarea, las tareas subsiguientes en el elemento [Target](../msbuild/target-element-msbuild.md) y la compilación continúan ejecutándose, y todos los errores de la tarea se tratan como advertencias.
 
-- **ErrorAndContinue** . Cuando se produce un error en una tarea, las tareas subsiguientes en el elemento `Target` y la compilación continúan ejecutándose, y todos los errores de la tarea se tratan como errores.
+- **ErrorAndContinue**. Cuando se produce un error en una tarea, las tareas subsiguientes en el elemento `Target` y la compilación continúan ejecutándose, y todos los errores de la tarea se tratan como errores.
 
 - **ErrorAndStop** o **false** (valor predeterminado). Cuando se produce un error en una tarea, las tareas restantes en el elemento `Target` y la compilación no se ejecutan, y se considera que se ha producido un error en todo el elemento `Target` y la compilación.
 

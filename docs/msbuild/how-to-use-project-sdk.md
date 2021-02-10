@@ -8,15 +8,15 @@ helpviewer_keywords:
 - MSBuild, SDKs, SDK
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bddf5e46fe066a79beb64570d6bf6ec1fedda68c
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: e6303efce016a9e678e4c9e8aa62c91aa116e44f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436123"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914226"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>Cómo: Usar SDK de proyecto de MSBuild
 
@@ -123,7 +123,7 @@ El solucionador del SDK basado en NuGet admite la especificación de una versió
 }
 ```
 
-Durante una compilación, solo se puede usar una versión de cada SDK de proyecto. Si hace referencia a dos versiones diferentes del mismo SDK de proyecto, MSBuild emite una advertencia. Se recomienda **no** especificar una versión en los proyectos si se ha especificado una versión en el archivo *global.json* .
+Durante una compilación, solo se puede usar una versión de cada SDK de proyecto. Si hace referencia a dos versiones diferentes del mismo SDK de proyecto, MSBuild emite una advertencia. Se recomienda **no** especificar una versión en los proyectos si se ha especificado una versión en el archivo *global.json*.
 
 ## <a name="see-also"></a>Vea también
 

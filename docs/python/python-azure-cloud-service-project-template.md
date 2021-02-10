@@ -5,18 +5,18 @@ ms.date: 11/12/2018
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 4d205ee2bbc0a6e9c44c34f3b0487abb4f22283e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a40745b19bde57f7f0ca52e04a11a89ad1ca69ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72983661"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912427"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Proyectos de servicio en la nube de Azure para Python
 
@@ -93,7 +93,7 @@ pip y sus dependencias, así como los paquetes de *requirements.txt*, se descarg
 
 Si el rol web o de trabajo no se comporta correctamente después de la implementación, compruebe lo siguiente:
 
-- El proyecto de Python incluye una carpeta*bin\\* con (como mínimo):
+- El proyecto de Python incluye una carpeta *bin\\* con (como mínimo):
 
   - *ConfigureCloudService.ps1*
   - *LaunchWorker.ps1* (para roles de trabajo)

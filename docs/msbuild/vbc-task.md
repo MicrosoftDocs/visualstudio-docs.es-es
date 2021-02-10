@@ -17,25 +17,25 @@ helpviewer_keywords:
 ms.assetid: 595278b1-2782-4577-b1ba-b4b5ab5625a3
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0177467677c9aef1f41b006bb9b1ddfaed408e40
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: d6596dd0893d0ab302a738cb12856fc6758df039
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046768"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908860"
 ---
 # <a name="vbc-task"></a>Vbc (tarea)
 
-Incluye *vbc.exe* , que genera ejecutables ( *.exe* ), archivos de biblioteca de vínculos dinámicos ( *.dll* ) o módulos de código ( *.netmodule* ). Para obtener más información sobre *vbc.exe* , vea [Compilador de línea de comandos de Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index).
+Incluye *vbc.exe*, que genera ejecutables ( *.exe*), archivos de biblioteca de vínculos dinámicos ( *.dll*) o módulos de código ( *.netmodule*). Para obtener más información sobre *vbc.exe*, vea [Compilador de línea de comandos de Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index).
 
 ## <a name="parameters"></a>Parámetros
 
  En la siguiente tabla se describen los parámetros de la tarea `Vbc` .
 
-| Parámetro | Description |
+| Parámetro | Descripción |
 |------------------------------| - |
 | `AdditionalLibPaths` | Parámetro `String[]` opcional.<br /><br /> Especifica carpetas adicionales en las que buscar ensamblados especificados en el atributo References. |
 | `AddModules` | Parámetro `String[]` opcional.<br /><br /> Hace que el compilador facilite al proyecto que se está compilando toda la información de tipos presente en los archivos especificados. Este parámetro corresponde al modificador [-addmodule](/dotnet/visual-basic/reference/command-line-compiler/addmodule) del compilador de *vbc.exe*. |
@@ -81,7 +81,7 @@ Incluye *vbc.exe* , que genera ejecutables ( *.exe* ), archivos de biblioteca de
 | `TargetCompactFramework` | Parámetro `Boolean` opcional.<br /><br /> Si `true`, la tarea tiene como destino .NET Compact Framework. Este modificador corresponde al modificador [-netcf](/dotnet/visual-basic/reference/command-line-compiler/netcf) del compilador de *vbc.exe*. |
 | `TargetType` | Parámetro `String` opcional.<br /><br /> Especifica el formato del archivo de salida. Este parámetro puede tener un valor de `library`, que crea una biblioteca de código, `exe`, que crea una aplicación de consola, `module`, que crea un módulo, o `winexe`, que crea un programa de Windows. El valor predeterminado es `library`. Este parámetro corresponde al modificador [-target](/dotnet/visual-basic/reference/command-line-compiler/target) del compilador de *vbc.exe*. |
 | `Timeout` | Parámetro `Int32` opcional.<br /><br /> Especifica el tiempo en milisegundos después del cual se termina la tarea ejecutable. El valor predeterminado es `Int.MaxValue`, que indica que no hay período de tiempo de espera. |
-| `ToolPath` | Parámetro `String` opcional.<br /><br /> Especifica la ubicación desde donde la tarea cargará el archivo ejecutable subyacente ( *vbc.exe* ). Si no se especifica este parámetro, la tarea usa la ruta de instalación del SDK que se corresponde con la versión de la plataforma que está ejecutando MSBuild. |
+| `ToolPath` | Parámetro `String` opcional.<br /><br /> Especifica la ubicación desde donde la tarea cargará el archivo ejecutable subyacente (*vbc.exe*). Si no se especifica este parámetro, la tarea usa la ruta de instalación del SDK que se corresponde con la versión de la plataforma que está ejecutando MSBuild. |
 | `TreatWarningsAsErrors` | Parámetro `Boolean` opcional.<br /><br /> Si es `true`, todas las advertencias se tratan como errores. Para obtener más información, vea [-warnaserror (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror). |
 | `UseHostCompilerIfAvailable` | Parámetro `Boolean` opcional.<br /><br /> Indica a la tarea que utilice el objeto de compilador en proceso, si está disponible. Usado solamente por Visual Studio. |
 | `Utf8Output` | Parámetro `Boolean` opcional.<br /><br /> Registra los resultados del compilador mediante la codificación UTF-8. Este parámetro corresponde al modificador [-utf8output](/dotnet/visual-basic/reference/command-line-compiler/utf8output) del compilador de *vbc.exe*. |
@@ -89,7 +89,7 @@ Incluye *vbc.exe* , que genera ejecutables ( *.exe* ), archivos de biblioteca de
 | `WarningsAsErrors` | Parámetro `String` opcional.<br /><br /> Especifica una lista de advertencias que se tratarán como errores. Para obtener más información, vea [-warnaserror (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror).<br /><br /> Este parámetro invalida el parámetro `TreatWarningsAsErrors`. |
 | `WarningsNotAsErrors` | Parámetro `String` opcional.<br /><br /> Especifica una lista de advertencias que no se tratarán como errores. Para obtener más información, vea [-warnaserror (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror).<br /><br /> Este parámetro solo es útil si el parámetro `TreatWarningsAsErrors` está establecido en `true`. |
 | `Win32Icon` | Parámetro `String` opcional.<br /><br /> Inserta un archivo *.ico* en el ensamblado, lo que proporciona al archivo de salida la apariencia deseada en el **Explorador de archivos**. Este parámetro corresponde al modificador [-win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) del compilador de *vbc.exe*. |
-| `Win32Resources` | Parámetro `String` opcional.<br /><br /> Inserta un recurso de Win32 (archivo *.res* ) en el archivo de salida. Este parámetro corresponde al modificador [-win32resource](/dotnet/visual-basic/reference/command-line-compiler/win32resource) del compilador de *vbc.exe*. |
+| `Win32Resources` | Parámetro `String` opcional.<br /><br /> Inserta un recurso de Win32 (archivo *.res*) en el archivo de salida. Este parámetro corresponde al modificador [-win32resource](/dotnet/visual-basic/reference/command-line-compiler/win32resource) del compilador de *vbc.exe*. |
 
 [!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
 

@@ -14,19 +14,19 @@ helpviewer_keywords:
 ms.assetid: c884976e-c0df-4c6d-8e3a-856ea2bd547c
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c91a016d91addc4f9e4b06acb32614bd6f6a162
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: f3b6d98e715d0c86af6948f2fcc502e94dfde56a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136776"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910830"
 ---
 # <a name="options-dialog-box-projects-and-solutions--build-and-run"></a>Cuadro de diálogo Opciones: Proyectos y soluciones \> Compilar y ejecutar
 
-En este cuadro de diálogo puede especificar el número máximo de proyectos de C++ o C# que se pueden compilar al mismo tiempo, determinados comportamientos de compilación predeterminados y algunos ajustes de registro de compilación. Para acceder a estas opciones, seleccione **Herramientas** > **Opciones** , expanda **Proyectos y soluciones** y seleccione **Build and Run** (Compilar y ejecutar).
+En este cuadro de diálogo puede especificar el número máximo de proyectos de C++ o C# que se pueden compilar al mismo tiempo, determinados comportamientos de compilación predeterminados y algunos ajustes de registro de compilación. Para acceder a estas opciones, seleccione **Herramientas** > **Opciones**, expanda **Proyectos y soluciones** y seleccione **Build and Run** (Compilar y ejecutar).
 
 **Número máximo de compilaciones de proyecto paralelas**
 
@@ -34,19 +34,19 @@ Especifica el número máximo de proyectos de C++ y C# que se pueden compilar al
 
 **Compilar proyectos de inicio y dependencias únicamente al ejecutar**
 
-Compila solo el proyecto de inicio y sus dependencias cuando se usa la tecla **F5** , el comando de menú **Depurar** > **Iniciar depuración** o comandos aplicables en el menú **Compilar** . Si está desactivado, se compilan todos los proyectos y las dependencias.
+Compila solo el proyecto de inicio y sus dependencias cuando se usa la tecla **F5**, el comando de menú **Depurar** > **Iniciar depuración** o comandos aplicables en el menú **Compilar**. Si está desactivado, se compilan todos los proyectos y las dependencias.
 
 **Al ejecutar, cuando los proyectos no estén actualizados**
 
 *Solo se aplica a proyectos de C++* .
 
-Cuando se ejecuta un proyecto con **F5** o el comando **Depurar** > **Iniciar depuración** , la opción predeterminada **Preguntar si se compila** muestra un mensaje si una configuración de proyecto no está actualizada. Seleccione **Compilar siempre** para compilar el proyecto cada vez que se ejecute. Seleccione **No compilar nunca** para suprimir todas las compilaciones automáticas cuando se ejecute un proyecto.
+Cuando se ejecuta un proyecto con **F5** o el comando **Depurar** > **Iniciar depuración**, la opción predeterminada **Preguntar si se compila** muestra un mensaje si una configuración de proyecto no está actualizada. Seleccione **Compilar siempre** para compilar el proyecto cada vez que se ejecute. Seleccione **No compilar nunca** para suprimir todas las compilaciones automáticas cuando se ejecute un proyecto.
 
 **Al ejecutar, cuando se produzcan errores de compilación o implementación**
 
 *Solo se aplica a proyectos de C++* .
 
-Cuando se ejecuta un proyecto con **F5** o el comando **Depurar** > **Iniciar depuración** , la opción predeterminada **Preguntar al iniciar** muestra un mensaje si se debe ejecutar un proyecto incluso si se produjo un error en la compilación. Seleccione **Iniciar versión antigua** para iniciar automáticamente la última compilación correcta, lo que podría dar lugar a discrepancias entre el código en ejecución y el código fuente. Seleccione **No iniciar** para suprimir el mensaje.
+Cuando se ejecuta un proyecto con **F5** o el comando **Depurar** > **Iniciar depuración**, la opción predeterminada **Preguntar al iniciar** muestra un mensaje si se debe ejecutar un proyecto incluso si se produjo un error en la compilación. Seleccione **Iniciar versión antigua** para iniciar automáticamente la última compilación correcta, lo que podría dar lugar a discrepancias entre el código en ejecución y el código fuente. Seleccione **No iniciar** para suprimir el mensaje.
 
 **Para soluciones nuevas, usar el proyecto seleccionado actualmente como proyecto de inicio**
 
@@ -54,13 +54,13 @@ Cuando se establece esta opción, las soluciones nuevas usan el proyecto selecci
 
 **Detalles de la salida de la compilación del proyecto de MSBuild**
 
-Determina la cantidad de información del proceso de compilación que se muestra en la ventana de **salida** .
+Determina la cantidad de información del proceso de compilación que se muestra en la ventana de **salida**.
 
 **Contenido del archivo de registro de compilación del proyecto de MSBuild**
 
 *Solo se aplica a proyectos de C++* .
 
-Determina cuánta información se escribe en el archivo de registro de compilación, que se encuentra en *\\\<ProjectName>\Debug\\\<ProjectName>.log* .
+Determina cuánta información se escribe en el archivo de registro de compilación, que se encuentra en *\\\<ProjectName>\Debug\\\<ProjectName>.log*.
 
 ## <a name="see-also"></a>Vea también
 
