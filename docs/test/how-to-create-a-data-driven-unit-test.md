@@ -12,16 +12,16 @@ helpviewer_keywords:
 - unit tests, data-driven
 - data-driven unit tests
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 31e1fb08d77992e6fb592e286553196928b13ad4
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 94dcc3aed8d41f9ece0f9b51410fc749330b01df
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441201"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966700"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Procedimiento: Creación de una prueba unitaria controlada por datos
 

@@ -29,19 +29,19 @@ helpviewer_keywords:
 ms.assetid: 0a61f168-3113-4fa7-83a3-d9142e2a33f8
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 160d4fa3a1058e0cb81e5d25720d9194d90fdc39
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 99e545cc4ae6a037816fd727d63fce16d3626484
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904063"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966323"
 ---
 # <a name="link-task"></a>Vincular tarea
 
-Incluye la herramienta del enlazador de Microsoft C++, *link.exe*. La herramienta del enlazador vincula bibliotecas y archivos de objeto de formato de archivo de objeto común (COFF) para crear un archivo ejecutable ( *.exe* ) o una biblioteca de vínculos dinámicos (DLL). Para obtener más información, consulte los artículos [Opciones del enlazador](/cpp/build/reference/linker-options), [MSBuild en la línea de comandos](/cpp/build/msbuild-visual-cpp) y [Uso del conjunto de herramientas de Microsoft C++ desde la línea de comandos](/cpp/build/building-on-the-command-line).
+Incluye la herramienta del enlazador de Microsoft C++, *link.exe*. La herramienta del enlazador vincula bibliotecas y archivos de objeto de formato de archivo de objeto común (COFF) para crear un archivo ejecutable ( *.exe*) o una biblioteca de vínculos dinámicos (DLL). Para obtener más información, consulte los artículos [Opciones del enlazador](/cpp/build/reference/linker-options), [MSBuild en la línea de comandos](/cpp/build/msbuild-visual-cpp) y [Uso del conjunto de herramientas de Microsoft C++ desde la línea de comandos](/cpp/build/building-on-the-command-line).
 
 ## <a name="parameters"></a>Parámetros
 
@@ -99,7 +99,7 @@ Incluye la herramienta del enlazador de Microsoft C++, *link.exe*. La herramient
 
   Parámetro **Boolean** opcional.
 
-  Si `true`, emite el atributo **DebuggableAttribute** , junto con el seguimiento de la información de depuración, y desactiva las optimizaciones JIT. Si `false`, emite el atributo **DebuggableAttribute** , pero desactiva el seguimiento de la información de depuración y activa las optimizaciones JIT.
+  Si `true`, emite el atributo **DebuggableAttribute**, junto con el seguimiento de la información de depuración, y desactiva las optimizaciones JIT. Si `false`, emite el atributo **DebuggableAttribute**, pero desactiva el seguimiento de la información de depuración y activa las optimizaciones JIT.
 
   Para obtener más información, consulte [/ASSEMBLYDEBUG (Agregar DebuggableAttribute)](/cpp/build/reference/assemblydebug-add-debuggableattribute).
 

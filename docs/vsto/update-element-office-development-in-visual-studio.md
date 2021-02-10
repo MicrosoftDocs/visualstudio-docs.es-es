@@ -11,15 +11,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <update> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 241bddb8c79a01bb1ba6921486a4dc46d99940cc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5712be9e12ede3338856955e00a34a7565d733ee
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537389"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968767"
 ---
 # <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;&gt;elemento Update (desarrollo de Office en Visual Studio)
   El `update` elemento especifica el intervalo en el que la solución comprobará si hay actualizaciones.
@@ -55,7 +55,7 @@ ms.locfileid: "85537389"
 |Atributo|Descripción|
 |---------------|-----------------|
 |`maximumAge`| Necesario. Establezca este valor en un entero.|
-|`unit`|Necesario. Establezca `unit` en uno de los valores siguientes:<br /><br /> -   **horas**<br />-   **días**<br />-   **próximas**|
+|`unit`|Necesario. Establezca `unit` en uno de los valores siguientes:<br /><br /> -   **después**<br />-   **durante**<br />-   **próximas**|
 
 ## <a name="example-of-always-checking-for-updates"></a>Ejemplo de comprobación de actualizaciones siempre
 

@@ -11,22 +11,22 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fc1da67206e5e5c9fde1b5c595424239d1685ac7
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 72938f316be22cd9b2eab2d7dab893c9370fb0ad
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304390"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965855"
 ---
 # <a name="how-to-set-sharepoint-deployment-commands"></a>Cómo: establecer comandos de implementación de SharePoint
   Puede personalizar el proceso de implementación mediante el establecimiento de comandos previos y posteriores a la implementación. Estos comandos se ejecutan antes y después de otras acciones de implementación al depurar soluciones de SharePoint desde Visual Studio.
 
 ### <a name="to-add-a-pre-deployment-command"></a>Para agregar un comando anterior a la implementación
 
-1. En la barra de menús, **Project** elija  >  **\<*ProjectName*> propiedades** del proyecto.
+1. En la barra de menús,  elija  >  **\<*ProjectName*> propiedades** del proyecto.
 
 2. Elija la pestaña **SharePoint** .
 
@@ -36,7 +36,7 @@ ms.locfileid: "96304390"
 
 ### <a name="to-add-a-post-deployment-command"></a>Para agregar un comando posterior a la implementación
 
-1. En la barra de menús, **Project** elija  >  **\<*ProjectName*> propiedades** del proyecto.
+1. En la barra de menús,  elija  >  **\<*ProjectName*> propiedades** del proyecto.
 
 2. Elija la pestaña **SharePoint** .
 
@@ -44,5 +44,5 @@ ms.locfileid: "96304390"
 
      Por ejemplo, para mostrar el contenido del directorio una vez completada la implementación, escriba **dir**. Para usar una variable de MSBuild para copiar el ensamblado desde el directorio de compilación, escriba **Copy $ (TargetPath) c:\DeploymentDirectory**.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Empaquetado e implementación de soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

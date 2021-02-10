@@ -15,15 +15,15 @@ helpviewer_keywords:
 - MarkupCompilePass2 task [WPF MSBuild], parameters
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e9efcd6fd293352dfa3396bca35953f0a76feb25
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 7425e0342974c3b000486f57227f768aac47b9ff
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903865"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966180"
 ---
 # <a name="markupcompilepass2-task"></a>MarkupCompilePass2 (tarea)
 
@@ -33,22 +33,22 @@ La tarea <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass2> realiza una com
 
 | Parámetro | Description |
 | - | - |
-| `AlwaysCompileMarkupFilesInSeparateDomain` | Parámetro **Boolean** opcional.<br /><br /> Especifica si la tarea se va a ejecutar en un <xref:System.AppDomain> independiente. Si este parámetro devuelve el valor **false** , la tarea se ejecuta en el mismo <xref:System.AppDomain> que MSBuild y su ejecución es más rápida. Si el parámetro devuelve el valor **true** , la tarea se ejecuta en otro <xref:System.AppDomain> que está aislado de MSBuild y su ejecución es más lenta. |
+| `AlwaysCompileMarkupFilesInSeparateDomain` | Parámetro **Boolean** opcional.<br /><br /> Especifica si la tarea se va a ejecutar en un <xref:System.AppDomain> independiente. Si este parámetro devuelve el valor **false**, la tarea se ejecuta en el mismo <xref:System.AppDomain> que MSBuild y su ejecución es más rápida. Si el parámetro devuelve el valor **true**, la tarea se ejecuta en otro <xref:System.AppDomain> que está aislado de MSBuild y su ejecución es más lenta. |
 | `AssembliesGeneratedDuringBuild` | Parámetro **String[]** opcional.<br /><br /> Especifica referencias a los ensamblados que cambian durante el proceso de compilación. Por ejemplo, una solución de Visual Studio puede contener un proyecto que haga referencia al resultado compilado de otro proyecto. En este caso, el resultado compilado del segundo proyecto se puede agregar a **AssembliesGeneratedDuringBuild**.<br /><br /> Nota: **AssembliesGeneratedDuringBuild** debe contener referencias al conjunto completo de ensamblados que genera una solución de compilación. |
-| `AssemblyName` | Parámetro obligatorio de tipo **String**.<br /><br /> Especifica el nombre corto del ensamblado que se genera para un proyecto. Por ejemplo, si un proyecto genera un archivo ejecutable con el nombre *WinExeAssembly.exe* , el parámetro **AssemblyName** tiene el valor **WinExeAssembly**. |
+| `AssemblyName` | Parámetro obligatorio de tipo **String**.<br /><br /> Especifica el nombre corto del ensamblado que se genera para un proyecto. Por ejemplo, si un proyecto genera un archivo ejecutable con el nombre *WinExeAssembly.exe*, el parámetro **AssemblyName** tiene el valor **WinExeAssembly**. |
 | `GeneratedBaml` | Parámetro de salida opcional de tipo **ITaskItem[]**.<br /><br /> Contiene la lista de archivos generados en formato binario XAML. |
 | `KnownReferencePaths` | Parámetro **String[]** opcional.<br /><br /> Especifica referencias a los ensamblados que no cambian nunca durante el proceso de compilación. Incluye los ensamblados que se encuentran en la caché global de ensamblados, en un directorio de instalación de .NET, etc. |
-| `Language` | Parámetro obligatorio de tipo **String**.<br /><br /> Especifica el lenguaje administrado que el compilador admite. Las opciones válidas son **C#** , **VB** , **JScript** y **C++**. |
-| `LocalizationDirectivesToLocFile` | Parámetro **String** opcional.<br /><br /> Especifica cómo generar la información de localización para cada archivo de origen de XAML. Las opciones válidas son **None** , **CommentsOnly** y **All**. |
+| `Language` | Parámetro obligatorio de tipo **String**.<br /><br /> Especifica el lenguaje administrado que el compilador admite. Las opciones válidas son **C#**, **VB**, **JScript** y **C++**. |
+| `LocalizationDirectivesToLocFile` | Parámetro **String** opcional.<br /><br /> Especifica cómo generar la información de localización para cada archivo de origen de XAML. Las opciones válidas son **None**, **CommentsOnly** y **All**. |
 | `OutputPath` | Parámetro obligatorio de tipo **String**.<br /><br /> Especifica el directorio en el que se generan los archivos de formato binario XAML. |
-| `OutputType` | Parámetro obligatorio de tipo **String**.<br /><br /> Especifica el tipo de ensamblado que genera un proyecto. Las opciones válidas son **winexe** , **exe** , **library** y **netmodule**. |
+| `OutputType` | Parámetro obligatorio de tipo **String**.<br /><br /> Especifica el tipo de ensamblado que genera un proyecto. Las opciones válidas son **winexe**, **exe**, **library** y **netmodule**. |
 | `References` | Parámetro opcional de tipo **ITaskItem[]** .<br /><br /> Especifica la lista de referencias de los archivos a los ensamblados que contienen los tipos que se usan en los archivos XAML. Una referencia es para el ensamblado que se ha generado mediante la tarea <xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly>, que debe ejecutarse antes de la tarea <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass2>. |
 | `RootNamespace` | Parámetro **String** opcional.<br /><br /> Especifica el espacio de nombres de la raíz de las clases que están dentro del proyecto. **RootNamespace** también se usa como espacio de nombres predeterminado de un archivo de código administrado generado cuando el archivo XAML correspondiente no incluye el atributo `x:Class`. |
-| `XAMLDebuggingInformation` | Parámetro **Boolean** opcional.<br /><br /> Si el valor es **true** , se genera información de diagnóstico y se incluye en el archivo XAML compilado como ayuda para la depuración. |
+| `XAMLDebuggingInformation` | Parámetro **Boolean** opcional.<br /><br /> Si el valor es **true**, se genera información de diagnóstico y se incluye en el archivo XAML compilado como ayuda para la depuración. |
 
 ## <a name="remarks"></a>Comentarios
 
-Antes de ejecutar **MarkupCompilePass2** , debe generar un ensamblado temporal con los tipos que usan los archivos XAML cuyo paso de compilación de marcado se aplazó. Para generar el ensamblado temporal, ejecute la tarea **GenerateTemporaryTargetAssembly**.
+Antes de ejecutar **MarkupCompilePass2**, debe generar un ensamblado temporal con los tipos que usan los archivos XAML cuyo paso de compilación de marcado se aplazó. Para generar el ensamblado temporal, ejecute la tarea **GenerateTemporaryTargetAssembly**.
 
 Cuando se ejecuta <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass2>, se le proporciona una referencia al ensamblado temporal generado. De esta manera, se pueden compilar en formato binario los archivos XAML cuya compilación se ha aplazado en el primer paso de compilación de marcado.
 

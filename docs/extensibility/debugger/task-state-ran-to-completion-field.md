@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 0f4830af-fe0c-4141-b768-817f4e426b8c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a898ff09ff45ae77da91e54ba22351e9f70978d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f8eedfba005848dbb44d194a6210966ec0fda736
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712621"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968546"
 ---
 # <a name="task_state_ran_to_completion-field"></a>TASK_STATE_RAN_TO_COMPLETION campo
 La tarea terminó de ejecutarse correctamente.
@@ -35,5 +35,5 @@ La tarea terminó de ejecutarse correctamente.
 ## <a name="remarks"></a>Observaciones
  Si el campo [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) contiene este valor, la <xref:System.Threading.Tasks.Task.Status%2A> propiedad devuelve <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> .
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Clase de tarea: miembros internos](../../extensibility/debugger/task-class-internal-members.md)

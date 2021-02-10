@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: dd4dae65-ed04-4883-b48d-59bcb891c4dc
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fe90440e9e9e40312eafef0bda951937ea27ad9
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: d58f9f29d88d7988b4ead3c2d96eadbbf95a8f46
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904377"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966271"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>Registrar en un entorno de varios procesadores
 
@@ -32,7 +32,7 @@ Puede mejorar más la eficacia del registro creando un registrador de reenvío p
 
 ### <a name="central-logging-model"></a>Modelo de registro central
 
-Para compilaciones de varios procesadores, MSBuild utiliza un "modelo de registro central". En el modelo de registro central, una instancia de *MSBuild.exe* actúa como proceso de compilación principal o "nodo central". Las instancias secundarias de *MSBuild.exe* , o "nodos secundarios", se asocian al nodo central. Los registradores basados en ILogger asociados al nodo central se conocen como "registradores centrales" y los registradores asociados a los nodos secundarios se conocen como "registradores secundarios".
+Para compilaciones de varios procesadores, MSBuild utiliza un "modelo de registro central". En el modelo de registro central, una instancia de *MSBuild.exe* actúa como proceso de compilación principal o "nodo central". Las instancias secundarias de *MSBuild.exe*, o "nodos secundarios", se asocian al nodo central. Los registradores basados en ILogger asociados al nodo central se conocen como "registradores centrales" y los registradores asociados a los nodos secundarios se conocen como "registradores secundarios".
 
 Cuando se realiza una compilación, los registradores secundarios enrutan su tráfico de eventos a los registradores centrales. Debido a que los eventos se originan en varios nodos secundarios, los datos llegan al nodo central simultáneamente pero intercalados. Para resolver las referencias entre eventos y proyectos y entre eventos y destinos, los argumentos de evento incluyen la información contextual adicional acerca del evento de compilación.
 

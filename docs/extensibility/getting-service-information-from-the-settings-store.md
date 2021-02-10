@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 7028d440-d16d-4b08-9b94-eb8cc93b25fc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15efb14d2cee36e5f2a8559c3ffa3844251aa982
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 57a273d994e6b8a4b34a139ab98713cc8c6cd83b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994438"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968130"
 ---
 # <a name="get-service-information-from-the-settings-store"></a>Obtención de información del servicio desde el almacén de configuración
 Puede usar el almacén de configuración para buscar todos los servicios disponibles o para determinar si un servicio determinado está instalado. Debe conocer el tipo de la clase de servicio.
