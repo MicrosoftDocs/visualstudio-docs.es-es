@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying extensions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9c8b05b5cb74a28157436f95f01992515c716e6a
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 6a899bcc132b9229c1046dee5793278f79ea9e5d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672683"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948900"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Implementación de extensiones para las herramientas de SharePoint en Visual Studio
 
@@ -267,7 +267,7 @@ En el ejemplo siguiente se muestra el contenido de un archivo Extension. vsixman
 </PackageManifest>
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Extensión del sistema de proyectos de SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)
 - [Extensión del nodo Conexiones de SharePoint en el Explorador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)

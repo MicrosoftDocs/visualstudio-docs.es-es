@@ -12,15 +12,15 @@ helpviewer_keywords:
 - features [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 06a8fdef9c194e9b0f81768f93b675ade77d39ef
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 8fc572f6fc5c0444fda619af5af49c6c2e52ac5d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850590"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949121"
 ---
 # <a name="create-sharepoint-features"></a>Crear características de SharePoint
   Puede usar una característica de SharePoint para agrupar los elementos de proyecto de SharePoint relacionados para facilitar la implementación. Puede crear características, establecer ámbitos y marcar otras características como dependencias mediante el diseñador de características de SharePoint. El diseñador también genera un manifiesto, que es un archivo XML que describe cada característica.
@@ -54,7 +54,7 @@ ms.locfileid: "94850590"
 ## <a name="add-feature-dependencies"></a>Agregar dependencias de características
  Puede configurar el manifiesto de la característica para que el servidor de SharePoint Active ciertas características antes de que se active la característica. Por ejemplo, si la característica de SharePoint depende de otras características para la funcionalidad o los datos, el servidor de SharePoint puede intentar primero activar cualquiera de las características de las que depende la característica. Para obtener más información, consulte [Cómo: agregar y quitar dependencias de características](../sharepoint/how-to-add-and-remove-feature-dependencies.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Cómo: personalizar una característica de SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)
 - [Cómo: agregar y quitar elementos de las características de SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)
 - [Cómo: agregar y quitar dependencias de características](../sharepoint/how-to-add-and-remove-feature-dependencies.md)

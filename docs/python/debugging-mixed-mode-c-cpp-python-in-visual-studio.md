@@ -5,17 +5,17 @@ ms.date: 11/12/2018
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0b55a0bbeee7c5a8c38a0df61db0a1b17ae5e033
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.openlocfilehash: 85118cebfa862a1575762985d41df61ef76b5cc5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88238665"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949329"
 ---
 # <a name="debug-python-and-c-together"></a>Depurar Python y C++ de forma conjunta
 

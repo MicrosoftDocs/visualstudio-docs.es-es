@@ -7,15 +7,15 @@ ms.topic: reference
 ms.assetid: e8db7c7d-31cf-479e-9dcc-299759891795
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a3aee0129516b6c7d377fcfff454f949e199eb5
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 05db6f02f2d00a5c0aca1ff91e15c61cf6bf8d4f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049203"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948601"
 ---
 # <a name="content-model-view"></a>Vista Modelo de contenido
 
@@ -27,13 +27,13 @@ En la siguiente imagen, el panel **Área de trabajo** contiene seis nodos de esq
 
 ## <a name="workspace-panel"></a>Panel Área de trabajo
 
-Después de agregar los nodos al área de trabajo, la lista de nodos aparecerá en el panel **Área de trabajo** de la vista Modelo de contenido. Al seleccionar los nodos en el panel **Área de trabajo** , aparecen en la superficie de diseño de la vista Modelo de contenido. Para eliminar los nodos del área de trabajo, utilice la barra de herramientas de Diseñador XSD, el menú contextual del panel **Área de trabajo** o la tecla **Supr**.
+Después de agregar los nodos al área de trabajo, la lista de nodos aparecerá en el panel **Área de trabajo** de la vista Modelo de contenido. Al seleccionar los nodos en el panel **Área de trabajo**, aparecen en la superficie de diseño de la vista Modelo de contenido. Para eliminar los nodos del área de trabajo, utilice la barra de herramientas de Diseñador XSD, el menú contextual del panel **Área de trabajo** o la tecla **Supr**.
 
 Para obtener información sobre cómo agregar los nodos, vea la sección "Agregar nodos al área de trabajo" en [Área de trabajo del Diseñador de esquemas XML](../xml-tools/xml-schema-designer-workspace.md).
 
 ## <a name="design-surface"></a>Superficie de diseño
 
-Cuando está seleccionado un nodo en el panel **Área de trabajo** , se agrega a la superficie de diseño de la vista Modelo de contenido, donde pueden verse los detalles del nodo.
+Cuando está seleccionado un nodo en el panel **Área de trabajo**, se agrega a la superficie de diseño de la vista Modelo de contenido, donde pueden verse los detalles del nodo.
 
 El modelo de contenido de un nodo se representa con un árbol gráfico que puede expandirse, en el que los elementos y atributos aparecen como nodos del árbol. De forma predeterminada, solo se expande un nivel. Otra información, como los compositores, los nombres de tipo, los grupos y otros contenedores se coloca en una barra vertical (cuando se expande) junto con los elementos y atributos que encierran. Al hacer doble clic en una barra vertical, se vuelve horizontal y el árbol se contrae. Al hacer doble clic en una barra horizontal, se vuelve vertical y el árbol se expande. Al seleccionar la barra vertical, se seleccionan todos los nodos del contenedor. Los expansores aparecen a la derecha de un nodo si un elemento se puede expandir o contraer.
 
@@ -45,7 +45,7 @@ La barra de ruta de navegación situada en la parte inferior de la vista Modelo 
 
 ## <a name="context-menus"></a>Menús contextuales
 
-Al hacer clic con el botón derecho en un elemento de la superficie de diseño o el panel **Área de trabajo** , aparece un menú contextual. En la siguiente tabla se describen las opciones que están disponibles para la superficie de diseño de la vista Modelo de contenido.
+Al hacer clic con el botón derecho en un elemento de la superficie de diseño o el panel **Área de trabajo**, aparece un menú contextual. En la siguiente tabla se describen las opciones que están disponibles para la superficie de diseño de la vista Modelo de contenido.
 
 |Opción|Descripción|
 |-|-----------------|

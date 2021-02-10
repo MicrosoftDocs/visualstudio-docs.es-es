@@ -15,15 +15,15 @@ helpviewer_keywords:
 - application pages [SharePoint development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1228ef551235fd616803d6e05057ee50f0ea7ec4
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 9ecd6573573d76c3e47a2c87a4f455cb9890fb31
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850447"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949186"
 ---
 # <a name="create-application-pages-for-sharepoint"></a>Creación de páginas de aplicación para SharePoint
   Una *Página de aplicación* es una página web de ASP.net diseñada para su uso en un sitio web de SharePoint. Las páginas de aplicación son un tipo especializado de página de ASP.NET. La principal diferencia entre una página de aplicación y una página de ASP.NET estándar es que una página de aplicación contiene contenido que se combina con una página maestra de SharePoint. Una página maestra permite que las páginas de aplicación compartan la misma apariencia y comportamiento que las demás páginas de un sitio.
@@ -73,7 +73,7 @@ ms.locfileid: "94850447"
 
  Puede cambiar explícitamente qué página maestra utiliza la página de aplicación estableciendo el `MasterPageFile` atributo del `Page` elemento Application. (Por ejemplo: `MasterPageFile="~/_layouts/applicationv4.master"` ). De hecho, debe establecer este atributo si las páginas maestras dinámicas no están habilitadas en el servidor de SharePoint. Para obtener más información acerca de las páginas maestras en SharePoint, vea [Master pages](/previous-versions/office/developer/sharepoint-2010/ms443795(v=office.14)).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Desarrollo en SharePoint Foundation en profundidad](/previous-versions/office/developer/sharepoint-2010/ee539092(v=office.14))
 - [Información general de ASP.NET](/aspnet/overview)
 - [ASP.NET Web Pages](/aspnet/web-pages/index) (Más información sobre páginas web de ASP.NET)

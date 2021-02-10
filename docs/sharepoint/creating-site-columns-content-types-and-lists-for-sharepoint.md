@@ -18,15 +18,15 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 29d0ebc33bf3df198f3ee9b3f9d80a747087341c
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: dfdf94f58c0fa7ba40d7c08309f8ea57949310df
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850525"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949030"
 ---
 # <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>Creación de listas, tipos de contenido y columnas de sitio para SharePoint
   Visual Studio proporciona plantillas de elementos de proyecto para muchos elementos fundamentales de SharePoint diferentes, como *listas* y *tipos de contenido*, que pueden incorporar columnas de sitio (o *campos*). Los nuevos diseñadores de tipos de contenido y listas hacen que la creación de estos elementos sea más fácil que nunca.
@@ -51,5 +51,5 @@ ms.locfileid: "94850525"
 |-----------|-----------------|
 |[Tutorial: Creación de una columna, un tipo de contenido y una lista de sitios para SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|Muestra cómo crear columnas de sitio que se usan en un tipo de contenido personalizado. A continuación, se usa el tipo de contenido en una lista personalizada.|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Introducción al desarrollo en SharePoint 2010](/sharepoint/dev/)

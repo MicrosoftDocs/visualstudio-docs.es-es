@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], designing a model
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b574c52b9081cc6640c5611e0759b5559e7a4f6d
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 8fb1aa194688533855b7c5bd1d58a4e3b97ac749
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672657"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948848"
 ---
 # <a name="design-a-business-data-connectivity-model"></a>Diseño de un modelo de conectividad a datos profesionales
   Puede desarrollar un modelo para el servicio de conectividad a datos profesionales (BDC) agregando entidades y métodos a un archivo de modelo. Una entidad describe una colección de campos de datos. Por ejemplo, una entidad puede representar una tabla de una base de datos. Un método realiza una tarea como agregar, eliminar o actualizar los datos representados por las entidades. Para obtener más información, vea [integrar datos profesionales en SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).
@@ -70,7 +70,7 @@ ms.locfileid: "94672657"
 ### <a name="provide-default-values"></a>Proporcionar valores predeterminados
  En algunos casos, es posible que el usuario no proporcione un valor de filtro. Puede proporcionar un valor predeterminado agregando un valor predeterminado a la instancia del método o estableciendo el valor predeterminado en el código del método. Para obtener más información sobre cómo agregar un valor predeterminado a la instancia de método, vea [MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14)). Para obtener un ejemplo de cómo establecer el valor predeterminado de un parámetro de entrada en el código del método, consulte [Cómo: agregar un descriptor de filtro a un método de buscador](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md).
 
-## <a name="validate-the-model"></a>Validar el modelo
+## <a name="validate-the-model"></a>Validación del modelo
  Puede validar el modelo durante el desarrollo. Visual Studio identifica los problemas que pueden impedir que el modelo se comporte según lo esperado. Estos problemas aparecen en el **lista de errores** de Visual Studio.
 
  Para validar un modelo, abra el menú contextual del diseñador de BDC y, a continuación, elija **validar**. Si el modelo contiene errores, aparecen en el **lista de errores**. Puede trasladar rápidamente el cursor al código que contiene un error si hace doble clic en el error en la lista. Como alternativa, puede elegir repetidamente las teclas **F8** o **MAYÚS** + **F8** para ir hacia delante o hacia atrás por los errores de la lista.

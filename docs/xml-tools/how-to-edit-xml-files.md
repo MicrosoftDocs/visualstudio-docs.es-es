@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 07fa3ecf-6345-4d30-9d85-d5ef5b083319
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 933ce2912845b69ceb73584c0599566b0a037fef
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: c538e9a4da3c4bbd08c571818dbaaaca466c2471
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399987"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948549"
 ---
 # <a name="how-to-edit-xml-files"></a>Procedimiento Edición de archivos XML
 

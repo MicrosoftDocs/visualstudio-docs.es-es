@@ -16,15 +16,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ab97efc82575c31c8e05b73063c2b53a09691d2d
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: cd0dfa3a12c675463c46e93aa0d5b25e8b4bd4b2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672670"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948861"
 ---
 # <a name="deploy-publish-and-upgrade-sharepoint-solution-packages"></a>Implementar, publicar y actualizar paquetes de soluciones de SharePoint
   Después de desarrollar una solución de SharePoint en Visual Studio, puede implementar su archivo de paquete (. wsp) en un servidor de SharePoint local o publicarlo en un servidor de SharePoint remoto o local. Si implementa los archivos, puede personalizar cómo se implementan los archivos de paquete (. wsp).
@@ -49,7 +49,7 @@ ms.locfileid: "94672670"
 
 |Configuración de la implementación|Descripción|
 |------------------------------|-----------------|
-|Default|La configuración de implementación predeterminada. Se llevan a cabo los siguientes pasos de implementación:<br /><br /> 1. Ejecute el comando anterior a la implementación.<br />2. reciclar el grupo de aplicaciones de IIS.<br />3. retirar la solución.<br />4. Agregar solución.<br />5. activar las características de.<br />6. ejecutar el comando posterior a la implementación.<br /><br /> Cuando se desinstala un paquete, se llevan a cabo los siguientes pasos de retracción.<br /><br /> 1. recicle el grupo de aplicaciones de IIS.<br />2. retirar la solución.|
+|Valor predeterminado|La configuración de implementación predeterminada. Se llevan a cabo los siguientes pasos de implementación:<br /><br /> 1. Ejecute el comando anterior a la implementación.<br />2. reciclar el grupo de aplicaciones de IIS.<br />3. retirar la solución.<br />4. Agregar solución.<br />5. activar las características de.<br />6. ejecutar el comando posterior a la implementación.<br /><br /> Cuando se desinstala un paquete, se llevan a cabo los siguientes pasos de retracción.<br /><br /> 1. recicle el grupo de aplicaciones de IIS.<br />2. retirar la solución.|
 |Sin activación|Esta configuración de implementación ejecuta los mismos pasos que la configuración predeterminada, pero omite el paso de activación.|
 
  Puede crear sus propias configuraciones de implementación para completar un solo paso o cambiar el orden de los pasos en el proceso de implementación. Para obtener más información, vea [Cómo: para editar una configuración de implementación de SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).
@@ -66,5 +66,5 @@ ms.locfileid: "94672670"
 ### <a name="upgrade-published-packages"></a>Actualizar paquetes publicados
  Si realiza cambios en un proyecto de SharePoint en Visual Studio una vez publicado, el paquete publicado debe actualizarse para incluir los cambios. Para actualizar correctamente, un paquete debe tener un nombre único. Si se encuentra un paquete con el mismo nombre en el sitio de SharePoint, lo que puede producirse al actualizar una aplicación existente, un error le avisará del conflicto de nombres de archivo y le permitirá cambiar el nombre del paquete. Una vez que se ha vuelto a publicar, el nuevo paquete aparece en el sitio de SharePoint y se puede actualizar. Un paquete actualizado actualiza la solución mediante el uso de datos del paquete anterior y, a continuación, activa la solución en SharePoint. Para obtener más información, vea [Cómo: implementar, publicar y actualizar soluciones de SharePoint en un servidor remoto](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Empaquetado e implementación de soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - packages [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bbe458f6ab4de01ffb224ae4e493bf23e3fc6ceb
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 423fcaf54d1d46ddf92352f4ff8bdbb637bbe514
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850564"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949095"
 ---
 # <a name="create-sharepoint-solution-packages"></a>Crear paquetes de soluciones de SharePoint
   Con el Diseñador de paquetes, puede crear y personalizar paquetes de implementación. Por ejemplo, puede agregar elementos y características de proyecto de SharePoint, restablecer el servidor IIS, establecer los ámbitos de activación de las características e identificar las dependencias de las características. El diseñador también genera un manifiesto, un archivo XML en el que se describe cada paquete.
@@ -73,7 +73,7 @@ ms.locfileid: "94850564"
 ## <a name="package-folder-structure"></a>Estructura de carpetas de los paquetes
  Al empaquetar el proyecto de SharePoint, se crea un archivo *. wsp* en la carpeta *SolutionFolder\bin \\ \<BuildConfiguration>* Por ejemplo, si la solución está en *C:\Visual Studio 2013 \ Projects\ListDefinition1* y la configuración de compilación se establece en release, el archivo *. wsp* se encuentra en *C:\Visual Studio 2013 \ Projects\ListDefinition1\bin\Release*.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Cómo: personalizar un paquete de solución de SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)
 - [Cómo: agregar y quitar características y elementos de un paquete mediante el diseñador de paquetes](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)
 - [Cómo: crear un paquete de solución de SharePoint mediante tareas de MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)

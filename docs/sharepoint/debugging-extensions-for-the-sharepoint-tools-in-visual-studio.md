@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, debugging extensions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5ad95ce8b4ab9567f22748453ae59c258f24aa86
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 2b098ac007825745e13481592760be9d2badeb55
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671225"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948913"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Depuración de extensiones para las herramientas de SharePoint en Visual Studio
   Puede depurar las extensiones de las herramientas de SharePoint en la instancia experimental o en la instancia normal de Visual Studio. Si necesita solucionar problemas relacionados con el comportamiento de una extensión, también puede modificar los valores del Registro para mostrar información adicional sobre los errores y configurar el modo en que Visual Studio ejecuta los comandos de SharePoint.
@@ -53,7 +53,7 @@ ms.locfileid: "94671225"
 
 3. En el cuadro de diálogo **instalador de extensiones de Visual Studio** , elija la edición de Visual Studio en la que desea instalar la extensión y, a continuación, elija el botón **instalar** .
 
-     Visual Studio instala los archivos de extensión en el nombre de la extensión de \\ *nombre de autor* de%userprofile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions \\ *extension name* \\ *version*. Las tres últimas carpetas de esta ruta de acceso se construyen a partir de los `Author` `Name` elementos, y `Version` en el archivo *Extension. vsixmanifest* de la extensión.
+     Visual Studio instala los archivos de extensión en el nombre de la extensión de \\ *nombre de autor* de%userprofile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions \\  \\ . Las tres últimas carpetas de esta ruta de acceso se construyen a partir de los `Author` `Name` elementos, y `Version` en el archivo *Extension. vsixmanifest* de la extensión.
 
 4. Una vez que Visual Studio instala la extensión, elija el botón **cerrar** .
 
@@ -116,13 +116,13 @@ ms.locfileid: "94671225"
 
  Para que le resulte más fácil solucionar los problemas relacionados con las extensiones de herramientas de SharePoint, puede crear y establecer el valor EnableDiagnostics. En la siguiente tabla se describe este valor.
 
-|Valor|Descripción|
+|Value|Descripción|
 |-----------|-----------------|
 |EnableDiagnostics|REG_DWORD que especifica si los mensajes de diagnóstico se muestran en la ventana de **salida** .<br /><br /> Para mostrar los mensajes de diagnóstico, establezca este valor en 1. Para dejar de mostrar los mensajes, establezca este valor en 0 o elimínelo.<br /><br /> Para escribir mensajes en la ventana de **salida** desde una extensión de herramientas de SharePoint, use el servicio de proyecto de SharePoint. Para obtener más información, vea [usar el servicio de proyecto de SharePoint](../sharepoint/using-the-sharepoint-project-service.md).|
 
  Si la extensión contiene un comando de SharePoint, puede crear y establecer valores adicionales para que le resulte más fácil solucionar los problemas relacionados con el comando. Estos valores se describen en la siguiente tabla.
 
-|Valor|Descripción|
+|Value|Descripción|
 |-----------|-----------------|
 |AttachDebuggerToHostProcess|REG_DWORD que especifica si se debe mostrar un cuadro de diálogo que permita adjuntar el depurador a *vssphost4.exe* tan pronto como se inicie. Resulta útil si vssphost.exe ejecuta el comando que se desea depurar inmediatamente después de iniciarse y no hay suficiente tiempo para asociar manualmente el depurador antes de que se ejecute el comando. Para mostrar el cuadro de diálogo, *vssphost4.exe* llama al <xref:System.Diagnostics.Debugger.Break%2A> método cuando se inicia.<br /><br /> Para habilitar este comportamiento, establezca este valor en 1. Para deshabilitar este comportamiento, establezca este valor en 0 o elimínelo.<br /><br /> Si establece este valor en 1, es posible que también desee aumentar el valor de HostProcessStartupTimeout para obtener el tiempo suficiente para asociar el depurador antes de que Visual Studio espere *vssphost4.exe* para indicar que se ha iniciado correctamente.|
 |ChannelOperationTimeout|REG_DWORD que especifica el tiempo, en segundos, que Visual Studio espera a que se ejecute un comando de SharePoint. Si el comando no se ejecuta a tiempo, se produce una excepción <xref:Microsoft.VisualStudio.SharePoint.SharePointConnectionException>.<br /><br /> El valor predeterminado es 120 segundos.|
@@ -130,7 +130,7 @@ ms.locfileid: "94671225"
 |MaxReceivedMessageSize|REG_DWORD que especifica el tamaño máximo permitido, en bytes, de los mensajes de WCF que se pasan entre Visual Studio y *vssphost4.exe*.<br /><br /> El valor predeterminado es 1.048.576 (1 MB).|
 |MaxStringContentLength|REG_DWORD que especifica el tamaño máximo permitido, en bytes, de las cadenas que se pasan entre Visual Studio y *vssphost4.exe*.<br /><br /> El valor predeterminado es 1.048.576 (1 MB).|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Extensión de las herramientas de SharePoint en Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
 - [Implementación de extensiones para las herramientas de SharePoint en Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)

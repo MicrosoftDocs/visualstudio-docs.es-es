@@ -14,15 +14,15 @@ f1_keywords:
 ms.assetid: ea587909-e434-46a8-abf8-9b3e95a58b4f
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ee9dff2cd6b762b2f81581963de6186cdd36e3ab
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 18294a9a6b6a0b967748d6a00817e4194e4cc32f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134758"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948536"
 ---
 # <a name="how-to-use-3d-assets-in-your-game-or-app"></a>Procedimiento Usar recursos en 3D en un juego o una aplicación
 
@@ -36,11 +36,11 @@ Para poder implementar los recursos 3D como parte de la compilación, Visual Stu
 
 ### <a name="to-add-the-build-customizations-to-your-project"></a>Para agregar las personalizaciones de compilación al proyecto
 
-1. En el **Explorador de soluciones** , abra el menú contextual del proyecto y luego elija **Dependencias de compilación** > **Compilar personalizaciones**.
+1. En el **Explorador de soluciones**, abra el menú contextual del proyecto y luego elija **Dependencias de compilación** > **Compilar personalizaciones**.
 
    Aparece el cuadro de diálogo **Archivos de personalizaciones de compilación de Visual C++**.
 
-2. En **Archivos de personalizaciones de compilación disponibles** , active las casillas correspondientes a los tipos de recursos que quiere usar en el proyecto, como se describe en la siguiente tabla:
+2. En **Archivos de personalizaciones de compilación disponibles**, active las casillas correspondientes a los tipos de recursos que quiere usar en el proyecto, como se describe en la siguiente tabla:
 
     |Tipo de recurso|Nombre de personalización de compilación|
     |----------------| - |
@@ -56,13 +56,13 @@ Ahora que el proyecto sabe cuáles son las diferentes clases de recursos 3D que 
 
 ### <a name="to-add-an-asset-to-your-build"></a>Para agregar un activo a la compilación
 
-1. En el **Explorador de soluciones** , en el proyecto, abra el menú contextual de un recurso y, después, elija **Propiedades**.
+1. En el **Explorador de soluciones**, en el proyecto, abra el menú contextual de un recurso y, después, elija **Propiedades**.
 
    Aparece el cuadro de diálogo **Página de propiedades** del recurso.
 
 2. Asegúrese de que las propiedades **Configuración** y **Plataforma** estén establecidas en los valores a los que quiere que se apliquen los cambios.
 
-3. En **Propiedades de configuración** , elija **General** y, en la cuadrícula de propiedades, en **General** , establezca la propiedad **Tipo de elemento** en el tipo de elemento de canalización de contenido adecuado. Por ejemplo, para un archivo de imagen o de textura, elija **Canalización de contenido de la imagen**.
+3. En **Propiedades de configuración**, elija **General** y, en la cuadrícula de propiedades, en **General**, establezca la propiedad **Tipo de elemento** en el tipo de elemento de canalización de contenido adecuado. Por ejemplo, para un archivo de imagen o de textura, elija **Canalización de contenido de la imagen**.
 
     > [!IMPORTANT]
     > De forma predeterminada, Visual Studio supone que muchas clases de archivos de imagen se deben categorizar mediante el tipo de elemento **Imagen** que está integrado en Visual Studio. Por tanto, debe cambiar la propiedad **Tipo de elemento** de cada imagen que quiera que procese la canalización de contenido de la imagen. Otros tipos de archivos de código fuente de canalización de contenido para los modelos 3D y los gráficos del sombreador visual toman el valor predeterminado del **Tipo de elemento** correcto.
@@ -73,9 +73,9 @@ Estos son los tres tipos de elemento de canalización de contenido y los tipos d
 
 |Tipo de elemento|Tipos de archivo de código fuente|Formato del archivo de salida|
 |---------------| - | - |
-|**Canalización de contenido de la imagen**|Formato PNG (Portable Network Graphics, *.png* )<br /><br /> JPEG ( *.jpg* , *.jpeg* , *.jpe* , *.jfif* )<br /><br /> DirectDraw Surface ( *.dds* )<br /><br /> Formato de intercambio de gráficos ( *.gif* )<br /><br /> Mapa de bits ( *.bmp* , *.dib* )<br /><br /> Tagged Image File Format ( *.tif* , *.tiff* )<br /><br /> Targa ( *.tga* )|DirectDraw Surface ( *.dds* )|
-|**Canalización de contenido de mallas**|Archivo de intercambio FBX de Autodesk ( *.fbx* )<br /><br /> Archivo DAE de Collada ( *.dae* )<br /><br /> Archivo OBJ de Wavefront ( *.obj* )|Archivo 3D de malla ( *.cmo* )|
-|**Canalización de contenido del sombreador**|Gráfico de sombreador visual ( *.dgsl* )|Resultado del sombreador compilado ( *.cso* )|
+|**Canalización de contenido de la imagen**|Formato PNG (Portable Network Graphics, *.png*)<br /><br /> JPEG (*.jpg*, *.jpeg*, *.jpe*, *.jfif*)<br /><br /> DirectDraw Surface (*.dds*)<br /><br /> Formato de intercambio de gráficos ( *.gif*)<br /><br /> Mapa de bits ( *.bmp*, *.dib*)<br /><br /> Tagged Image File Format ( *.tif*, *.tiff*)<br /><br /> Targa (*.tga*)|DirectDraw Surface ( *.dds*)|
+|**Canalización de contenido de mallas**|Archivo de intercambio FBX de Autodesk (*.fbx*)<br /><br /> Archivo DAE de Collada (*.dae*)<br /><br /> Archivo OBJ de Wavefront (*.obj*)|Archivo 3D de malla ( *.cmo*)|
+|**Canalización de contenido del sombreador**|Gráfico de sombreador visual (*.dgsl*)|Resultado del sombreador compilado (*.cso*)|
 
 ## <a name="configure-asset-content-pipeline-properties"></a>Configurar las propiedades de la canalización de contenido de recursos
 
@@ -83,13 +83,13 @@ Se pueden establecer las propiedades de la canalización de contenido de cada ar
 
 ### <a name="to-configure-content-pipeline-properties"></a>Para configurar las propiedades de la canalización de contenido
 
-1. En el **Explorador de soluciones** , en el proyecto, abra el menú contextual del archivo de recursos y, después, elija **Propiedades**.
+1. En el **Explorador de soluciones**, en el proyecto, abra el menú contextual del archivo de recursos y, después, elija **Propiedades**.
 
    Aparece el cuadro de diálogo **Página de propiedades** del recurso.
 
 2. Asegúrese de que las propiedades **Configuración** y **Plataforma** se establecen en los valores a los que quiere que se apliquen los cambios.
 
-3. En **Propiedades de configuración** , elija el nodo de canalización de contenido (por ejemplo, **Canalización de contenido de la imagen** para los recursos de textura e imagen) y después establezca las propiedades en los valores adecuados en la cuadrícula de propiedades. Por ejemplo, para generar los mapas MIP para un recurso de textura en tiempo de compilación, establezca la propiedad **Generar Mips** en **Sí**.
+3. En **Propiedades de configuración**, elija el nodo de canalización de contenido (por ejemplo, **Canalización de contenido de la imagen** para los recursos de textura e imagen) y después establezca las propiedades en los valores adecuados en la cuadrícula de propiedades. Por ejemplo, para generar los mapas MIP para un recurso de textura en tiempo de compilación, establezca la propiedad **Generar Mips** en **Sí**.
 
 4. Elija el botón **Aceptar** .
 
