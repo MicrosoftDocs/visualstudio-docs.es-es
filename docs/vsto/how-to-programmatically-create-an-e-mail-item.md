@@ -13,15 +13,15 @@ helpviewer_keywords:
 - mail items [Office development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 786526841d5ffc5cdd6241f93043284a4be515fd
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: e5f1746e4eba813427122455867dd8b954d15ae6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527823"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964126"
 ---
 # <a name="how-to-programmatically-create-an-email-item"></a>Cómo: crear un elemento de correo electrónico mediante programación
   En este ejemplo se crea un mensaje de correo electrónico en Microsoft Office Outlook.
@@ -31,6 +31,6 @@ ms.locfileid: "97527823"
 ## <a name="example"></a>Ejemplo
  [!code-csharp[Trin_OL_CreateMailItem#1](../vsto/codesnippet/CSharp/Trin_OL_CreateMailItem/thisaddin.cs#1)]
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Trabajar con elementos de correo](../vsto/working-with-mail-items.md)
 - [Introducción a la programación de complementos de VSTO](../vsto/getting-started-programming-vsto-add-ins.md)

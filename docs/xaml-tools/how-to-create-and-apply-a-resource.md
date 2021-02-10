@@ -10,15 +10,15 @@ f1_keywords:
 ms.assetid: 3ff4006d-659d-4073-9a41-06ff85e6cfdf
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ac8502b3d5058294efe102564453bb23a3eb3b98
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: b6c6c243896370cc97b8a85d5de520c4c033d49b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049230"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971614"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Cómo crear y aplicar un recurso
 
@@ -30,23 +30,23 @@ Siempre que crea un recurso a partir de una propiedad existente, [Style](xref:Wi
 
 1. Con un archivo XAML abierto en el diseñador XAML, cree un elemento o elija uno en la ventana Esquema del documento.
 
-2. En la ventana **Propiedades** , seleccione el marcador de propiedad (aparece como un símbolo de cuadro a la derecha de un valor de propiedad) y, después, pulse **Convertir en nuevo recurso** . Un símbolo de cuadro blanco indica un valor predeterminado y un símbolo de cuadro negro indica normalmente que se ha aplicado un recurso local.
+2. En la ventana **Propiedades**, seleccione el marcador de propiedad (aparece como un símbolo de cuadro a la derecha de un valor de propiedad) y, después, pulse **Convertir en nuevo recurso**. Un símbolo de cuadro blanco indica un valor predeterminado y un símbolo de cuadro negro indica normalmente que se ha aplicado un recurso local.
 
      Aparece el cuadro de diálogo correspondiente para crear un recurso. Este cuadro de diálogo aparece cuando se crea un recurso de pincel:
 
      ![Cuadro de diálogo Crear recurso](../designers/media/xaml_create_resource.png)
 
-3. En el cuadro **Nombre (clave)** , escriba un nombre de clave. Este es el nombre que puede usar si desea que otros elementos hagan referencia al recurso.
+3. En el cuadro **Nombre (clave)**, escriba un nombre de clave. Este es el nombre que puede usar si desea que otros elementos hagan referencia al recurso.
 
-4. En **Definir en** , seleccione la opción en la que quiere definir el recurso:
+4. En **Definir en**, seleccione la opción en la que quiere definir el recurso:
 
-    - Para que el recurso esté disponible en cualquier documento de la aplicación, seleccione **Aplicación** .
+    - Para que el recurso esté disponible en cualquier documento de la aplicación, seleccione **Aplicación**.
 
-    - Para que el recurso esté disponible únicamente en el documento actual, seleccione **Este documento** .
+    - Para que el recurso esté disponible únicamente en el documento actual, seleccione **Este documento**.
 
-    - Para que el recurso esté disponible únicamente en el elemento desde el que creó el recurso o en sus elementos secundarios, seleccione **Este documento** y, en la lista desplegable, seleccione **elemento** : **nombre** .
+    - Para que el recurso esté disponible únicamente en el elemento desde el que creó el recurso o en sus elementos secundarios, seleccione **Este documento** y, en la lista desplegable, seleccione **elemento**: **nombre**.
 
-    - Para definir el recurso en un archivo de [diccionario de recursos](/windows/uwp/design/controls-and-patterns/resourcedictionary-and-xaml-resource-references) que se pueda reutilizar en otros proyectos, haga clic en **Diccionario de recursos** . A continuación, seleccione un archivo de diccionario de recursos existente, como **StandardStyles.xaml** , en la lista desplegable.
+    - Para definir el recurso en un archivo de [diccionario de recursos](/windows/uwp/design/controls-and-patterns/resourcedictionary-and-xaml-resource-references) que se pueda reutilizar en otros proyectos, haga clic en **Diccionario de recursos**. A continuación, seleccione un archivo de diccionario de recursos existente, como **StandardStyles.xaml**, en la lista desplegable.
 
 5. Haga clic en el botón **Aceptar** para crear el recurso y aplicarlo al elemento a partir del cual se ha creado.
 
@@ -56,11 +56,11 @@ Siempre que crea un recurso a partir de una propiedad existente, [Style](xref:Wi
 
 2. Realice una de las siguientes acciones:
 
-   - Aplique un recurso a una propiedad. En la ventana **Propiedades** , seleccione el marcador de propiedad al lado del valor de la propiedad, seleccione **Recurso local** o **Recurso del sistema** , y luego seleccione un recurso de los disponibles en la lista que aparece.
+   - Aplique un recurso a una propiedad. En la ventana **Propiedades**, seleccione el marcador de propiedad al lado del valor de la propiedad, seleccione **Recurso local** o **Recurso del sistema**, y luego seleccione un recurso de los disponibles en la lista que aparece.
 
       Si no ve un recurso que espera ver, es posible que el tipo de ese recurso no coincida con el tipo de la propiedad.
 
-   - Aplique un recurso de plantilla de control o estilo a un control. Abra el menú contextual de un control en la ventana Esquema del documento, seleccione **Editar plantilla** o **Editar plantillas adicionales** , haga clic en **Aplicar recurso** y, después, seleccione el nombre de la plantilla de control en la lista que aparece.
+   - Aplique un recurso de plantilla de control o estilo a un control. Abra el menú contextual de un control en la ventana Esquema del documento, seleccione **Editar plantilla** o **Editar plantillas adicionales**, haga clic en **Aplicar recurso** y, después, seleccione el nombre de la plantilla de control en la lista que aparece.
 
      > [!NOTE]
      > **Editar plantilla** se aplica a las plantillas de control. **Editar plantillas adicionales** se aplica a otros tipos de plantilla.
@@ -71,10 +71,10 @@ Siempre que crea un recurso a partir de una propiedad existente, [Style](xref:Wi
 
 1. Elija un elemento en la mesa de trabajo o en la ventana Esquema del documento.
 
-2. En la ventana **Propiedades** , seleccione el marcador de propiedad predeterminado o local y, después, seleccione **Editar recurso** para abrir el cuadro de diálogo **Editar recurso** .
+2. En la ventana **Propiedades**, seleccione el marcador de propiedad predeterminado o local y, después, seleccione **Editar recurso** para abrir el cuadro de diálogo **Editar recurso**.
 
 3. Modifique las opciones del recurso.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Tutorial: Crear una UI usando el Diseñador XAML](../xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

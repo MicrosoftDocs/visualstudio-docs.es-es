@@ -5,15 +5,15 @@ ms.date: 07/14/2020
 ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b811cc3538e3bbb108e50acf50c2fe7a977fe3d
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 09889839c9e2873810c78a5f0c3425820170b68d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211292"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964386"
 ---
 # <a name="debug-and-analyze-unit-tests-with-test-explorer"></a>Depuración y análisis de pruebas unitarias con el Explorador de pruebas
 

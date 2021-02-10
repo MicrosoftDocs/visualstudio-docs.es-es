@@ -13,15 +13,15 @@ helpviewer_keywords:
 - safe controls [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 024cd50fc36b84addca11dc3c0f23cdc64fa507d
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: bf7e2f2c5b0de59a5f1cac91f0df9cefbf15bda8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304507"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964711"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>Cómo: marcar controles como controles seguros
   Por seguridad, SharePoint diferencia entre los controles Web que están protegidos contra la inyección de scripts y los controles Web que no lo son. Los usuarios que no son de confianza pueden tener acceso a los controles protegidos o a *controles seguros*. Puede marcar los controles como seguros en la propiedad entradas de control seguras de un elemento de proyecto de SharePoint o en el **Diseñador de paquetes** al agregar un ensamblado al paquete. Para obtener más información, vea
@@ -87,7 +87,7 @@ ms.locfileid: "96304507"
 
 12. Escriba los valores de las propiedades de la tabla siguiente.
 
-    |Nombre de propiedad|Value|
+    |Nombre de la propiedad|Value|
     |-------------------|-----------|
     |Espacio de nombres|Espacio de nombres completo para el control, como **BdcModelProject1. VisualWebPart1**.|
     |Nombre del tipo|Button1|
@@ -104,7 +104,7 @@ ms.locfileid: "96304507"
 
 15. Escriba los valores de las propiedades de la tabla siguiente.
 
-    |Nombre de propiedad|Value|
+    |Nombre de la propiedad|Value|
     |-------------------|-----------|
     |Espacio de nombres|Espacio de nombres completo para el control, como **BdcModelProject1. VisualWebPart1**.|
     |Nombre del tipo|TextBox1|
@@ -114,6 +114,6 @@ ms.locfileid: "96304507"
 
 16. Elija la tecla **Tab** y, a continuación, elija el botón **Aceptar** para cerrar el cuadro de diálogo.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Inclusión de información de empaquetado e implementación en los elementos del proyecto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
 - [Empaquetar e implementar soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

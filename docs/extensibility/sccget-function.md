@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2d69308d2f569fc2e0d72dcf64c762687955d4d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 50281ffdd233debd3c10672868e9debd4b1f395f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700900"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965218"
 ---
 # <a name="sccget-function"></a>SccGet función)
 Esta función recupera una copia de uno o más archivos para ver y compilar, pero no para editar. En la mayoría de los sistemas, los archivos se etiquetan como de solo lectura.
@@ -75,7 +75,7 @@ de Opciones específicas del complemento de control de código fuente.
 |SCC_I_OPERATIONCANCELED|Operación cancelada antes de la finalización.|
 |SCC_E_NOTAUTHORIZED|El usuario no está autorizado para realizar esta operación.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Se llama a esta función con un recuento y una matriz de nombres de los archivos que se van a recuperar. Si el IDE pasa la marca `SCC_GET_ALL` , esto significa que los elementos de `lpFileNames` no son archivos sino directorios y que se recuperarán todos los archivos bajo control de código fuente en los directorios especificados.
 
  La `SCC_GET_ALL` marca se puede combinar con la `SCC_GET_RECURSIVE` marca para recuperar también todos los archivos de los directorios especificados y todos los subdirectorios.
@@ -86,7 +86,7 @@ de Opciones específicas del complemento de control de código fuente.
  Por último, incluso si un complemento de control de código fuente especifica la `SCC_CAP_GET_NOUI` marca en la inicialización, lo que indica que no tiene una interfaz de usuario para un comando get, es posible que el IDE siga llamando a esta función para recuperar archivos. La marca simplemente significa que el IDE no muestra un elemento de menú Get y que no se espera que el complemento proporcione ninguna interfaz de usuario.
 
 ## <a name="rename-files-and-sccget"></a>Cambiar el nombre de los archivos y SccGet
- Situación: un usuario desprotege un archivo, por ejemplo, *a.txt*y lo modifica. Antes de que se pueda proteger *a.txt* , un segundo usuario cambia el nombre *a.txt* a *b.txt* en la base de datos de control de código fuente, desprotege *b.txt*, realiza algunas modificaciones en el archivo y comprueba el archivo. El primer usuario desea los cambios realizados por el segundo usuario, por lo que el primer usuario cambia el nombre de su versión local de *a.txt* archivo a *b.txt* y realiza una obtención en el archivo. Sin embargo, la memoria caché local que realiza un seguimiento de los números de versión sigue pensando en que la primera versión de *a.txt* se almacena localmente y, por tanto, el control de código fuente no puede resolver las diferencias.
+ Situación: un usuario desprotege un archivo, por ejemplo, *a.txt* y lo modifica. Antes de que se pueda proteger *a.txt* , un segundo usuario cambia el nombre *a.txt* a *b.txt* en la base de datos de control de código fuente, desprotege *b.txt*, realiza algunas modificaciones en el archivo y comprueba el archivo. El primer usuario desea los cambios realizados por el segundo usuario, por lo que el primer usuario cambia el nombre de su versión local de *a.txt* archivo a *b.txt* y realiza una obtención en el archivo. Sin embargo, la memoria caché local que realiza un seguimiento de los números de versión sigue pensando en que la primera versión de *a.txt* se almacena localmente y, por tanto, el control de código fuente no puede resolver las diferencias.
 
  Hay dos maneras de resolver esta situación en la que la caché local de las versiones de control de código fuente deja de estar sincronizada con la base de datos de control de código fuente:
 

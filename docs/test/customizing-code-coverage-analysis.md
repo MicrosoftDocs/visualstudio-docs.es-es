@@ -5,16 +5,16 @@ ms.custom: SEO-VS-2020
 ms.date: 08/21/2019
 ms.topic: conceptual
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 99eb322e1eebe2d8845b355cd76a9e34a7516348
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 65044baf78e6f49e35f011a4853111063e82a192
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441834"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964412"
 ---
 # <a name="customize-code-coverage-analysis"></a>Personalizar el análisis de cobertura de código
 
@@ -120,9 +120,9 @@ En la tabla siguiente se muestran las distintas formas en las que se pueden hace
 
 Los nodos de inclusión y exclusión usan expresiones regulares, que no son iguales que los caracteres comodín. Ninguna coincidencia distingue entre mayúsculas y minúsculas. Ejemplos:
 
-- * *.\** coincide con una cadena de caracteres cualquiera.
+- **.\*** coincide con una cadena de caracteres cualquiera
 
-- *\\.* coincide con un punto (".").
+- **\\.** coincide con un punto (".")
 
 - **\\(   \\)** coincide con paréntesis "( )"
 

@@ -17,15 +17,15 @@ helpviewer_keywords:
 - Value2 property
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cdc54de3935646e36f9d4f09727037de4c373c92
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 5f7a2ab04e1926a53c3d3aa05023103206c6aa01
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528032"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971770"
 ---
 # <a name="properties-in-office-projects"></a>Propiedades de los proyectos de Office
   Hay varias propiedades importantes que están disponibles para los proyectos de Office en Visual Studio. Se puede obtener acceso a estas propiedades en la ventana **Propiedades** .
@@ -53,7 +53,7 @@ ms.locfileid: "97528032"
 
  Utilice la propiedad **Value2** de la ventana **Propiedades** para enlazar la propiedad <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> del <xref:Microsoft.Office.Tools.Excel.NamedRange> a un campo del origen de datos.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md)
 - [Información general de plantillas de proyecto de Office](../vsto/office-project-templates-overview.md)
 - [Eventos en proyectos de Office](../vsto/events-in-office-projects.md)

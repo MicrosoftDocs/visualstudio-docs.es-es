@@ -14,15 +14,15 @@ helpviewer_keywords:
 - walkthroughs [Office development in Visual Studio], action panes
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5e9cd19687e15cd30c8196183f43709d4ba5149d
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 9ee5d6cbe372b0a7930b867a98136d132ddb0b2c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525107"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959888"
 ---
 # <a name="office-ui-customization-walkthroughs"></a>Tutoriales de personalización de la interfaz de usuario de Office
   En los siguientes tutoriales se muestran mecanismos para personalizar la interfaz de usuario (UI) de las aplicaciones de Microsoft Office mediante personalizaciones de nivel del documento y complementos de VSTO.
@@ -66,7 +66,7 @@ ms.locfileid: "97525107"
 
 - [Tutorial: actualizar un gráfico en una hoja de cálculo mediante botones de radio](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md) Muestra los conceptos básicos del cambio de estilos de gráfico mediante los botones de opción de una hoja de cálculo de Excel.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Tutoriales de uso de Word](../vsto/walkthroughs-using-word.md)
 - [Tutoriales de uso de Excel](../vsto/walkthroughs-using-excel.md)
 - [Datos en los tutoriales de soluciones de Office](../vsto/data-in-office-solutions-walkthroughs.md)

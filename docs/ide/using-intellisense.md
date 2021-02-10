@@ -14,15 +14,15 @@ helpviewer_keywords:
 - IntelliSense [Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c60372d7268dd76bf9bbd967678490998ffa76c3
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 46eae980a1dafc8e9b7f95f5d40593e57045cc01
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479022"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971328"
 ---
 # <a name="intellisense-in-visual-studio"></a>IntelliSense en Visual Studio
 

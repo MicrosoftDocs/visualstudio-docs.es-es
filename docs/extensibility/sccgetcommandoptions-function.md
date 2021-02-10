@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bbe4aa4e-b4b0-403e-b7a0-5dd6eb24e5a9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: eeefa26422476ca40e782df3ff35eee9d429a149
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b1f465e6709932cd89794c5c0558d608fadd2a8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700836"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965205"
 ---
 # <a name="sccgetcommandoptions-function"></a>SccGetCommandOptions función)
 Esta función solicita al usuario opciones avanzadas para un comando determinado.
@@ -63,7 +63,7 @@ de La estructura de la opción (también puede ser `NULL` ).
 |SCC_E_ACCESSFAILURE|Hubo un problema al obtener acceso al sistema de control de código fuente, probablemente debido a problemas de red o de contención. Se recomienda un reintento.|
 |SCC_E_NONSPECIFICERROR|Error no específico.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  El IDE llama a esta función por primera vez con `ppvOptions` = `NULL` para determinar si el complemento de control de código fuente admite la característica opciones avanzadas del comando especificado. Si el complemento admite la característica para ese comando, el IDE llama de nuevo a esta función cuando el usuario solicita opciones avanzadas (normalmente se implementa como un botón **avanzado** en un cuadro de diálogo) y proporciona un puntero no nulo para `ppvOptions` que señala a un `NULL` puntero. El complemento almacena las opciones avanzadas especificadas por el usuario en una estructura privada y devuelve un puntero a esa estructura en `ppvOptions` . A continuación, esta estructura se pasa a todas las demás funciones de la API del complemento de control de código fuente que necesiten conocer información, incluidas las llamadas subsiguientes a la `SccGetCommandOptions` función.
 
  Un ejemplo puede ayudar a aclarar esta situación.

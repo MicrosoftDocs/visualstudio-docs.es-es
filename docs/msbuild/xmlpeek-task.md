@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 19196031-a3bc-41b5-9c4a-f2572630e179
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d9a3c03e1301bddf4cc26c76dac9e0381ec726b
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 9d387d44ba06bb3a5a8ef5e73e2d8900b356996e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047262"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964867"
 ---
 # <a name="xmlpeek-task"></a>XmlPeek (tarea)
 
@@ -33,7 +33,7 @@ Devuelve valores conforme a lo que especifica una consulta XPath de un archivo X
 
  En la siguiente tabla se describen los parámetros de la tarea `XmlPeek` .
 
-|Parámetro|Description|
+|Parámetro|Descripción|
 |---------------|-----------------|
 |`Namespaces`|Parámetro `String` opcional.<br /><br /> Especifica los espacios de nombres para los prefijos de la consulta XPath.|
 |`Query`|Parámetro `String` opcional.<br /><br /> Especifica la consulta XPath.|

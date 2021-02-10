@@ -16,15 +16,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], adding an entity
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0efd7a6fc0d6254dbfd3cbda538ffe0e30585453
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 1d900639463f727a23c4fafab6f077f787c5ca04
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915393"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959979"
 ---
 # <a name="how-to-add-an-entity-to-a-model"></a>Cómo: agregar una entidad a un modelo
   Para crear una entidad, agregue un control de entidad desde el **cuadro de herramientas** de Visual Studio al diseñador de conectividad a datos profesionales (BDC).
@@ -49,7 +49,7 @@ ms.locfileid: "96915393"
      [!code-csharp[SP_BDC_Entity_Data_Class#1](../sharepoint/codesnippet/CSharp/sp_bdc_entity_data_class/bdcmodel1/contact.cs#1)]
      [!code-vb[SP_BDC_Entity_Data_Class#1](../sharepoint/codesnippet/VisualBasic/sp_bdc_entity_data_class/bdcmodel1/contact.vb#1)]
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Cómo: agregar un método Creator](../sharepoint/how-to-add-a-creator-method.md)
 - [Cómo: agregar un método de eliminación](../sharepoint/how-to-add-a-deleter-method.md)
 - [Cómo: agregar un método Updater](../sharepoint/how-to-add-an-updater-method.md)

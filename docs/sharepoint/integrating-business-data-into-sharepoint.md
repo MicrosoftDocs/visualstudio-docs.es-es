@@ -18,15 +18,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], data
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f3156adc286222282ae63f70f70838bc6b7155a8
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 94162e2fca66fd86b2ac8b237c518e391d0a9908
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304352"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964685"
 ---
 # <a name="integrate-business-data-into-sharepoint"></a>Integración de datos profesionales en SharePoint
   Puede integrar datos profesionales en SharePoint. Los datos profesionales pueden proceder de aplicaciones de servidor back-end, como [!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)], Siebel y SAP, o bien un servicio web. Los usuarios pueden ver, agregar, actualizar o eliminar datos profesionales mediante listas externas o elementos web de datos profesionales en SharePoint.  Los usuarios también pueden acceder a estos datos sin conexión en una aplicación de Microsoft Office como Microsoft Outlook. Para obtener más información, vea [¿Dónde se pueden mostrar datos externos?](/previous-versions/office/developer/sharepoint-2010/ee558737(v=office.14)).

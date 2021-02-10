@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 699dd0f5-7569-40b3-ade6-d0fe53e832bc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 856788546e10e69a8bb7e2787558505937f9effd
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 61c2094564ea20c1073a198c3da162862c543e65
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995465"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965361"
 ---
 # <a name="visualizing-and-viewing-data"></a>Visualizar y ver datos
 Los visualizadores de tipos y los visores personalizados presentan datos de una manera que es rápidamente significativa para un desarrollador. El evaluador de expresiones (EE) puede admitir visualizadores de tipo de terceros, así como proporcionar sus propios visores personalizados.
@@ -48,6 +48,6 @@ Los visualizadores de tipos y los visores personalizados presentan datos de una 
 ## <a name="supporting-both-type-visualizers-and-custom-viewers"></a>Compatibilidad con visualizadores de tipos y visores personalizados
  Un EE puede admitir tanto visualizadores de tipos como visores personalizados en los métodos [GetCustomViewerCount](../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) y [GetCustomViewerList](../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) . En primer lugar, el EE agrega el número de visores personalizados que se suministran al valor devuelto por el método [GetCustomViewerCount](../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md) . En segundo lugar, el EE anexa el `CLSID` s de sus propios visores personalizados a la lista devuelta por el método [GetCustomViewerList](../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) .
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Tareas de depuración](../../extensibility/debugger/debugging-tasks.md)
 - [Visualizador de tipos y visor personalizado](../../extensibility/debugger/type-visualizer-and-custom-viewer.md)
