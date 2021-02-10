@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 38265100-4d80-4902-833a-07bb569f9ba8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5460930cbcc528648c2a6c502ef7eb9acbe00d62
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17c2aebe9c1f18a6eb655e4e740b6a7afc628c50
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729162"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938192"
 ---
 # <a name="idebugexpressionevaluator2terminate"></a>IDebugExpressionEvaluator2::Terminate
 Detiene y limpia el evaluador de expresiones.
@@ -39,7 +39,7 @@ int Terminate ();
 ## <a name="return-value"></a>Valor devuelto
 Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Indica al evaluador de expresiones Cuándo se va a limpiar.
 
 ## <a name="example"></a>Ejemplo

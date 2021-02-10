@@ -8,15 +8,15 @@ helpviewer_keywords:
 - roslyn package versions
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c787188fa727692bf11035c00562f7a6e26e81b
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: f76a8dcdbb644fe456c62fca7de6fb7afe96d556
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715748"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935902"
 ---
 # <a name="net-compiler-platform-package-version-reference"></a>Referencia de versión del paquete de .NET Compiler Platform
 
@@ -45,7 +45,7 @@ Por ejemplo, para asegurarse de que el analizador personalizado funciona en toda
 > [!TIP]
 > En el caso de los paquetes de Roslyn en los que la versión mínima admitida de Visual Studio es una versión de Visual Studio 2017, también se admiten todas las versiones de Visual Studio 2019, ya que vienen más adelante.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [SDK de la plataforma del compilador de .NET](/dotnet/csharp/roslyn-sdk/)
 - [Introducción a los analizadores de Roslyn](getting-started-with-roslyn-analyzers.md)

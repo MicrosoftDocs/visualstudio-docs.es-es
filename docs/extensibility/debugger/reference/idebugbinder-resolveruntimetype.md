@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 6456ab3e-1c03-4f3c-91f9-16797ab7f5e7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4bdbff651618365f3b68a142a6cb1e76836876a3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dad51c2741296f9d666a352a5e5a6aa0a3e9cf61
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735957"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938231"
 ---
 # <a name="idebugbinderresolveruntimetype"></a>IDebugBinder::ResolveRuntimeType
 Este método determina el tipo en tiempo de ejecución de un objeto.
@@ -28,7 +28,7 @@ Este método determina el tipo en tiempo de ejecución de un objeto.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT ResolveRuntimeType( 
+HRESULT ResolveRuntimeType( 
    IDebugObject* pObject,
    IDebugField** ppResolved
 );
@@ -51,7 +51,7 @@ enuncia Devuelve el tipo del objeto como [IDebugField](../../../extensibility/de
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  No siempre se conoce el tipo en tiempo de ejecución de un objeto en tiempo de compilación. Por ejemplo, con el polimorfismo, un argumento se puede pasar a una función como su clase base, como una clase de botón. El argumento real puede ser una clase derivada, como una clase de botón de radio.
 
 ## <a name="see-also"></a>Vea también

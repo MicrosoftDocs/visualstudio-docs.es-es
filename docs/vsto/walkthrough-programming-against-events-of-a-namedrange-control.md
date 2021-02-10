@@ -16,15 +16,15 @@ helpviewer_keywords:
 - worksheets, automating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9e311a567d32ee083bcc13f417c248f5f3d3ee5a
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: b3305fdc8f4fbadb3dcdd9775c3a6fe3dac3a1fb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526134"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937399"
 ---
 # <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>Tutorial: programar contra eventos de un control NamedRange
   En este tutorial se muestra cómo agregar un <xref:Microsoft.Office.Tools.Excel.NamedRange> control a una hoja de cálculo de Excel Microsoft Office y programar con sus eventos mediante las herramientas de desarrollo de Office en Visual Studio.
@@ -158,7 +158,7 @@ ms.locfileid: "97526134"
 
 - Implementar el proyecto. Para obtener más información, vea [implementar una solución de Office](../vsto/deploying-an-office-solution.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Información general sobre elementos y controles host](../vsto/host-items-and-host-controls-overview.md)
 - [Automatizar Excel usando objetos extendidos](../vsto/automating-excel-by-using-extended-objects.md)
 - [NamedRange (control)](../vsto/namedrange-control.md)

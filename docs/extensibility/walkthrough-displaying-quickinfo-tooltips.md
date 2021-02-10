@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 23fb8384-4f12-446f-977f-ce7910347947
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 34e1bb2c92cd387e979fdaa5746a34ea8d3995fc
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 3c07dd32b889a9d75222bc8ff5a245f516fab528
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877941"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935929"
 ---
 # <a name="walkthrough-display-quickinfo-tooltips"></a>Tutorial: Mostrar información sobre herramientas de QuickInfo
 QuickInfo es una característica de IntelliSense que muestra las firmas y descripciones de los métodos cuando el usuario mueve el puntero sobre un nombre de método. Puede implementar características basadas en lenguajes como QuickInfo si define los identificadores para los que desea proporcionar descripciones de QuickInfo y, a continuación, crea una información sobre herramientas en la que mostrar el contenido. Puede definir QuickInfo en el contexto de un servicio de lenguaje, o bien puede definir su propia extensión de nombre de archivo y tipo de contenido, y mostrar el QuickInfo solo para ese tipo o puede mostrar QuickInfo para un tipo de contenido existente (como "texto"). En este tutorial se muestra cómo mostrar QuickInfo para el tipo de contenido "texto".
@@ -39,7 +39,7 @@ QuickInfo es una característica de IntelliSense que muestra las firmas y descri
 
   En este ejemplo, el origen de QuickInfo usa una lista codificada de forma rígida de nombres de método y descripciones, pero en implementaciones completas, el servicio de lenguaje y la documentación del lenguaje son responsables de proporcionar ese contenido.
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
  A partir de Visual Studio 2015, no es necesario instalar el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS después. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-mef-project"></a>Creación de un proyecto MEF
@@ -179,5 +179,5 @@ QuickInfo es una característica de IntelliSense que muestra las firmas y descri
 
 4. Mueva el puntero sobre una de las apariciones de "agregar". Se debe mostrar la firma y la descripción del `add` método.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Tutorial: vincular un tipo de contenido a una extensión de nombre de archivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 99f17b1e-3e67-4f85-89d6-5c6cf45c8008
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 837bb7d25ab8dea2b146a98cc65d320b58162685
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0d82650fabf467d44b1bd5eba01599c5cb5e40bb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737723"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938270"
 ---
 # <a name="bpresi_fields"></a>BPRESI_FIELDS
 Especifica la información que se va a recuperar sobre la resolución correcta de un punto de interrupción.
@@ -59,7 +59,7 @@ Inicialice o use el `pThread` campo de la `BP_RESOLUTION_INFO` estructura.
 `BPRESI_ALLFIELDS`\
 Especifica todos los campos.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Se pasa al método [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) para indicar qué campos de la estructura de [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) se van a inicializar.
 
 Estas marcas también se usan para indicar los campos de la `BP_RESOLUTION_INFO` estructura que se usan y son válidos cuando se devuelve esa estructura.

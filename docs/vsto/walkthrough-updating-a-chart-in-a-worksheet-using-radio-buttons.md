@@ -13,15 +13,15 @@ helpviewer_keywords:
 - worksheets, using radio buttons
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4e375f394cd3d8be35ace8e3df07920fb824a07e
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: b1c9da3b1d019c77988ef01e1b3c019dd3f1d775
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526059"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937321"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>Tutorial: Actualizar un gráfico en una hoja de cálculo utilizando botones de radio
   En este tutorial se muestran los aspectos básicos del uso de botones de radio en una hoja de cálculo de Excel Microsoft Office para ofrecer al usuario una manera de cambiar rápidamente entre las opciones. En este caso, las opciones cambian el estilo de un gráfico.
@@ -88,7 +88,7 @@ ms.locfileid: "97526059"
 
 9. Salga de Excel.
 
-## <a name="create-a-new-project"></a>Creación de un proyecto
+## <a name="create-a-new-project"></a>Creación de un nuevo proyecto
  En este paso, creará un proyecto de libro de Excel basado en el libro **ExcelChart** .
 
 ### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto
@@ -251,5 +251,5 @@ ms.locfileid: "97526059"
 
 - Cambiar el formato de una hoja de cálculo mediante las casillas. Para obtener más información, vea [Tutorial: cambiar el formato de una hoja de cálculo mediante controles de casilla](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Tutoriales de uso de Excel](../vsto/walkthroughs-using-excel.md)

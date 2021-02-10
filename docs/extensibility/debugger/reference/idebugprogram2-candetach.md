@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: dcd9ab6c-49e5-447e-aa7c-89f571f4a052
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3d03d942bbc052a7ac6bebc6a89c55ec21a1b4c8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bdaff16923023598793dfdf9200105cc6b158ccb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723127"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936137"
 ---
 # <a name="idebugprogram2candetach"></a>IDebugProgram2::CanDetach
 Determina si un motor de depuración (DE) se puede desasociar del programa.
@@ -40,5 +40,5 @@ int CanDetach();
 ## <a name="return-value"></a>Valor devuelto
  Si puede desasociar, devuelve `S_OK` ; de lo contrario, devuelve un código de error. Devuelve `S_FALSE` si no se puede desasociar del programa.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

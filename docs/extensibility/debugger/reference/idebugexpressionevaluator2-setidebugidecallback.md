@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: f01c40ad-ef4b-477b-8304-602c6972bc88
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 461c0ea446c1fefcc730a95eb856963e5b82cec5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4a3f1acf1921afe81a8874bde6c18081e429ce93
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729222"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938218"
 ---
 # <a name="idebugexpressionevaluator2setidebugidecallback"></a>IDebugExpressionEvaluator2::SetIDebugIDECallback
 Permite a un motor de depuración pasar una devolución de llamada al evaluador de expresiones durante la inicialización.

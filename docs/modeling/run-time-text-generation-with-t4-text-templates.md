@@ -14,15 +14,15 @@ helpviewer_keywords:
 - text templates, generating files at run time
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fcb7048b4319d1edb46911a74e96f440540e4299
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 5c64dd1c8ee25f2e0a3c2b94caa8026438b32286
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363944"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937958"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Generación de texto en tiempo de ejecución con plantillas de texto T4
 
@@ -64,7 +64,7 @@ El uso de una plantilla en la aplicación facilita la visualización de la forma
     > [!NOTE]
     > El nombre del archivo de plantilla se usará como nombre de clase en el código generado. Por lo tanto, no debe contener espacios ni signos de puntuación.
 
-4. Seleccione **Agregar**.
+4. Haga clic en **Agregar**.
 
     Se crea un nuevo archivo que tiene la extensión **. TT**. Su propiedad de **herramienta personalizada** está establecida en **TextTemplatingFilePreprocessor**. Contiene las siguientes líneas:
 
@@ -435,7 +435,7 @@ Plantillas en tiempo de diseño: Si desea usar una plantilla para generar códig
 
 Las plantillas en tiempo de ejecución se pueden usar en cualquier aplicación donde las plantillas y su contenido se determinan en tiempo de compilación. Pero si desea escribir una extensión de Visual Studio que genere texto a partir de plantillas que cambian en tiempo de ejecución, consulte [invocar la transformación de texto en una extensión de vs](../modeling/invoking-text-transformation-in-a-vs-extension.md).
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [Generación de código y plantillas de texto T4](../modeling/code-generation-and-t4-text-templates.md)
 - [Escribir una plantilla de texto T4](../modeling/writing-a-t4-text-template.md)

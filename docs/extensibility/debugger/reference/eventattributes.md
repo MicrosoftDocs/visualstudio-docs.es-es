@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 04db10f7-df31-4464-98e8-b3777428179e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c479058a5e6abb61fb419425706d2a8b26858d04
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9f304921f622245787413a05894096470a96eb30
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737061"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936968"
 ---
 # <a name="eventattributes"></a>EVENTATTRIBUTES
 Especifica los atributos del evento.
@@ -74,7 +74,7 @@ Indica un evento que se envía inmediatamente y de forma sincrónica al IDE. Est
 `EVENT_EXPRESSION_EVALUATION`\
 El evento es el resultado de la evaluación de la expresión.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Estos valores se pasan en el `dwAttrib` parámetro del método de [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) .
 
 Estos valores se pueden combinar con una operación bit a bit `OR` .

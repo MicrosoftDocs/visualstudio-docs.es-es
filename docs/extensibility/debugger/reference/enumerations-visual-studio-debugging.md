@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 557065bf-081f-4d57-8744-bae02b8a5a6e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80ad4db1090857d87e28d90d8478fbdea0905e86
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 45b26a6d5bc2a9bdb32d5a8412458e6a126486d7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737139"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937132"
 ---
 # <a name="enumerations-visual-studio-debugging"></a>Enumeraciones (depuración de Visual Studio)
 A continuación se muestran las enumeraciones para el [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] SDK de depuración.

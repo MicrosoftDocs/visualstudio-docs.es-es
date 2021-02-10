@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: a69487d2-e701-4165-804a-8a011df9a3bd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9a3d2e796d37606c51918d8e49db920161d63f55
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8cec892d65dc4e5d081063fa6b31def06fb7f85c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736907"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936917"
 ---
 # <a name="field_info_fields"></a>FIELD_INFO_FIELDS
 Especifica la información que se va a recuperar sobre un objeto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) .
@@ -28,7 +28,7 @@ Especifica la información que se va a recuperar sobre un objeto [IDebugField](.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-enum enum_FIELD_INFO_FIELDS { 
+enum enum_FIELD_INFO_FIELDS { 
     FIF_FULLNAME  = 0x0001,
     FIF_NAME      = 0x0002,
     FIF_TYPE      = 0x0004,
@@ -63,7 +63,7 @@ Inicializar/usar el `bstrType` campo en la `FIELD_INFO` estructura.
 `FIF_MODIFIERS`\
 Inicializar/usar el `bstrModifiers` campo en la `FIELD_INFO` estructura.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Estos valores también se pasan como argumento al método [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) para especificar qué campos de la estructura de [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) se van a inicializar.
 
 Estos valores también se usan en el `dwFields` miembro de la `FIELD_INFO` estructura para indicar qué campos se usan y son válidos.

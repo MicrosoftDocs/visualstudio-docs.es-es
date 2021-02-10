@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: cc235bea-e909-4d8c-ab54-936736c803fc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b29252d1586d039084ec1d21f1fc4967aea68baf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1893ffac03aba345589274475f81abd44b5b7b5f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727170"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936839"
 ---
 # <a name="idebugmethodfieldgetthis"></a>IDebugMethodField::GetThis
 Obtiene el `this` `Me` puntero (en [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] ) del objeto que contiene el método.
@@ -28,7 +28,7 @@ Obtiene el `this` `Me` puntero (en [!INCLUDE[vbprvb](../../../code-quality/inclu
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT GetThis( 
+HRESULT GetThis( 
    IDebugClassField** ppClass
 );
 ```
@@ -46,7 +46,7 @@ enuncia Devuelve un objeto [IDebugClassField](../../../extensibility/debugger/re
 ## <a name="return-value"></a>Valor devuelto
  Si se realiza correctamente, Devuelve S_OK; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  En los lenguajes orientados a objetos, suele haber un puntero implícito a la creación de instancias actual de una clase. Esto se conoce como `this` en C#/c + + y como `Me` en [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] .
 
 ## <a name="see-also"></a>Vea también

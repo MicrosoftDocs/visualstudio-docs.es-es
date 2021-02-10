@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 7b2cb14a-511a-4fef-9e4f-308139719fba
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4136726e5c8b798121dbd38975d8f2bb935ed04a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 073dac8de37edddc1b748c52258047cd2d85e218
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737112"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937080"
 ---
 # <a name="evalflags"></a>EVALFLAGS
 Especifica las marcas que controlan la evaluación de expresiones.
@@ -28,7 +28,7 @@ Especifica las marcas que controlan la evaluación de expresiones.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-enum enum_EVALFLAGS {
+enum enum_EVALFLAGS {
     EVAL_RETURNVALUE = 0x0002,
     EVAL_NOSIDEEFFECTS = 0x0004,
     EVAL_ALLOWBPS = 0x0008,
@@ -41,7 +41,7 @@ typedef DWORD EVALFLAGS;
 ```
 
 ```csharp
-public enum enum_EVALFLAGS {
+public enum enum_EVALFLAGS {
     EVAL_RETURNVALUE = 0x0002,
     EVAL_NOSIDEEFFECTS = 0x0004,
     EVAL_ALLOWBPS = 0x0008,
@@ -74,7 +74,7 @@ Impide que se evalúe la función. Por ejemplo, considere el `int` token en la e
 `EVAL_NOEVENTS`\
 Marca para indicar que los eventos que se producen durante la evaluación de la expresión no se deben enviar al administrador de depuración de sesión (SDM) o al IDE.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Estas marcas se pasan como un argumento a los métodos [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) y [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) .
 
 Estas marcas se pueden combinar con una operación OR bit a bit.

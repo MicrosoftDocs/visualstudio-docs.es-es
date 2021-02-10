@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: 64fb0139-8b04-4726-b52c-db2e04d65498
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 01951885541ba4acce33f3e4f06f7106116ccc62
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a67f68f8b2e6cf32e2c34702afaabbe476ff1e4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737105"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936963"
 ---
 # <a name="evalflags90"></a>EVALFLAGS90
 Enumera los valores válidos para las marcas que controlan la evaluación de expresiones. Esta enumeración extiende la enumeración [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) .

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 1b496acc-b326-4cdb-bb48-e3b5c6f12e05
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b3c6dee712f79648eba203650cc70f76fcea657
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: f2cd84379ead1cd45296ae370aab215a37cf4b50
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97615621"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935876"
 ---
 # <a name="wizard-support-for-nested-projects"></a>Compatibilidad del asistente con los proyectos anidados
 El IDE ejecuta dos asistentes que puede implementar el proyecto primario para los proyectos anidados: el Asistente para **nuevo proyecto** y el Asistente para **Agregar elementos** .
@@ -30,6 +30,6 @@ El IDE ejecuta dos asistentes que puede implementar el proyecto primario para lo
 
  Para obtener más información acerca de los asistentes, vea [Asistente (. Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md), [parámetros de contexto](../../extensibility/internals/context-parameters.md) y [registro de plantillas de proyecto y de elemento](../../extensibility/internals/registering-project-and-item-templates.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>
 - [Anidamiento de proyectos](../../extensibility/internals/nesting-projects.md)

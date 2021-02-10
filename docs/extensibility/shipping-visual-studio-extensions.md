@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 13cd263d-25f7-488e-9c1a-cff908caedb6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 812fc4f4e2f8dcf54876e2764f0c091f16348496
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 5c1b5787eaecd6b3787d77c7ecab70acae689df8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97716008"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938101"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Suministro de extensiones de Visual Studio
 Una vez que haya terminado de desarrollar la extensión, puede instalarla en otras máquinas, compartirla con sus amigos y compañeros o publicarla en el Visual Studio Marketplace. En esta sección se explican todas las cosas que debe hacer para publicar y mantener la extensión: trabajar con archivos. vsix, publicar, localizar y actualizar.

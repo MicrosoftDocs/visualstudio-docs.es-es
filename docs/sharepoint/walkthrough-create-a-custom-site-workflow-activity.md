@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, site workflows
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 86302a0b8eef4344a909ae3b8fb2c513c86c4ad6
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: f2b722ccef084286287b9825c43fa9069f64dcc4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96913961"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937724"
 ---
 # <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Tutorial: Creación de una actividad de flujo de trabajo de sitio personalizada
   En este tutorial se muestra cómo crear una actividad personalizada para un flujo de trabajo de nivel de sitio mediante [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . (Los flujos de trabajo de nivel de sitio se aplican a todo el sitio, no solo a una lista en el sitio). La actividad personalizada crea una lista de anuncios de copia de seguridad y, a continuación, copia en ella el contenido de la lista de anuncios.
@@ -124,6 +124,6 @@ ms.locfileid: "96913961"
 
 5. En la barra de inicio rápido, elija el vínculo de **copia de seguridad de anuncios** . Observe que todos los anuncios contenidos en la lista de **anuncios** se han copiado en esta nueva lista.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Cómo: para crear un receptor de eventos](../sharepoint/how-to-create-an-event-receiver.md)
 - [Desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md)

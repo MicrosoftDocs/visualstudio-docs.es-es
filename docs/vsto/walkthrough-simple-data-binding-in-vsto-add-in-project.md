@@ -14,15 +14,15 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], simple binding data
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bc0b4f18e0f9a45f19148fde9e3d289ccad9e73f
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: e6162c8cc508c1eaada6c2be90bd28d430779cb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526152"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937373"
 ---
 # <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>Tutorial: enlace de datos simple en un proyecto de complemento de VSTO
 
@@ -54,7 +54,7 @@ Necesitará los componentes siguientes para completar este tutorial:
 
   - Para adjuntar una base de datos mediante la línea de comandos, vea [Cómo: adjuntar un archivo de base de datos a SQL Server Express](/previous-versions/sql/).
 
-## <a name="create-a-new-project"></a>Creación de un proyecto
+## <a name="create-a-new-project"></a>Creación de un nuevo proyecto
 
 El primer paso es crear un proyecto de complemento de VSTO de Word.
 
@@ -153,7 +153,7 @@ Cuando abre Word, el control de contenido muestra los datos del conjunto de dato
 
 2. Haga clic en los botones **Siguiente** y **Anterior** para desplazarse por los registros de la base de datos.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Datos en soluciones de Office](../vsto/data-in-office-solutions.md)
 - [Enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md)

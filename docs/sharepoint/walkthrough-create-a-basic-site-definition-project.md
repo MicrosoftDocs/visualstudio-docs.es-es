@@ -12,15 +12,15 @@ helpviewer_keywords:
 - site definitions [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0411f027b105622d806e123bd80f38c4b05281ca
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: def1ae862a7b9ba4def62cb590260c5a18758929
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96913859"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937711"
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>Tutorial: crear un proyecto de definición de sitio básico
   En este tutorial se muestra cómo crear una definición de sitio básica que contiene un elemento Web visual con algunos controles. Por motivos de claridad, el elemento Web visual que cree tiene solo unos pocos controles. Sin embargo, puede crear definiciones de sitios de SharePoint más sofisticadas que incluyan más funcionalidad.
@@ -183,6 +183,6 @@ ms.locfileid: "96913859"
 
      El texto aparece en la etiqueta del lado derecho del botón.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Cómo: para crear un receptor de eventos](../sharepoint/how-to-create-an-event-receiver.md)
 - [Desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md)
