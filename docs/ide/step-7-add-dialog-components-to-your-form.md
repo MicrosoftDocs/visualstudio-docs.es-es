@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 37cbd2ca1f0207eaf2a41f6a08248bcedcfbe5bb
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: a485433ef73ef853a186a5b441396f6d5a57f679
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479477"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868860"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>Paso 7: Agregar componentes de diálogo al formulario
 
@@ -34,7 +34,7 @@ En algunos sentidos, un componente es como un control. El **cuadro de herramient
 
 1. Para agregar un componente denominado **openFileDialog1** al formulario, haga doble clic en **OpenFileDialog**. Para agregar un componente denominado **colorDialog1** al formulario, haga doble clic en **ColorDialog** en el **cuadro de herramientas**. (Este se utiliza en el siguiente paso del tutorial.) Debería aparecer un área en la parte inferior del **Diseñador de Windows Forms** (bajo el formulario del **Visor de imágenes**), con un icono para cada uno de los dos componentes de cuadro de diálogo agregados, como se muestra en la imagen siguiente.
 
-     ![Componentes de cuadro de diálogo](../ide/media/express_dialogsadded.png)<br>*Componentes de *_cuadro de diálogo_* __*
+     ![Componentes de cuadro de diálogo](../ide/media/express_dialogsadded.png)<br>*Componentes de **cuadro de diálogo** __*
 
 1. Elija el icono **openFileDialog1** del área de la parte inferior del **Diseñador de Windows Forms**. Establezca dos propiedades:
 

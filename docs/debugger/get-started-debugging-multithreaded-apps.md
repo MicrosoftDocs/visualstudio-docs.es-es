@@ -14,15 +14,15 @@ helpviewer_keywords:
 - tutorials, multithreaded debugging
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 30fd29357ab8b42ea6a8baa6412f9ccf7eafed28
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28f9ab13cca4f1d31973f9526063eaa56574dcf4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350516"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870524"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Introducción a la depuración de aplicaciones multiproceso (C#, Visual Basic, C++)
 
@@ -51,19 +51,19 @@ En primer lugar, necesitará un proyecto de aplicación multiproceso. A continua
    Después de aplicar los filtros de lenguaje y plataforma, elija la plantilla **Aplicación de consola (.NET Core)** o, para C++, la plantilla **Aplicación de consola** y después elija **Siguiente**.
 
    > [!NOTE]
-   > Si no ve la plantilla correcta, vaya a **Herramientas** > **Obtener herramientas y características...** , para abrir el instalador de Visual Studio. Seleccione la carga de trabajo **Desarrollo de escritorio de .NET** o **Desarrollo para el escritorio con C++** y, luego, elija **Modificar**.
+   > Si no ve la plantilla correcta, vaya a **Herramientas** > **Obtener herramientas y características...** para abrir el Instalador de Visual Studio. Seleccione la carga de trabajo **Desarrollo de escritorio de .NET** o **Desarrollo para el escritorio con C++** y, luego, elija **Modificar**.
 
    En la ventana **Configurar el nuevo proyecto**, escriba *MyThreadWalkthroughApp* en el cuadro **Nombre del proyecto**. Luego, elija **Crear**.
 
    ::: moniker-end
    ::: moniker range="vs-2017"
-   En la barra de menús superior, elija **Archivo** > **Nuevo** > **Proyecto**. En el panel de la izquierda del cuadro de diálogo **Nuevo proyecto**, elija lo siguiente:
+   En la barra de menús superior, elija **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, elija lo siguiente:
 
    - Para una aplicación de C#, en **Visual C#** , elija **Escritorio de Windows** y, después, en el panel central, **Aplicación de consola (.NET Framework)** .
    - Para una aplicación de Visual Basic, en **Visual Basic**, elija **Escritorio de Windows** y, después, en el panel central, **Aplicación de consola (.NET Framework)** .
    - Para una aplicación de C++, en **Visual C++** , elija **Escritorio de Windows** y después, **Aplicación de consola Windows**.
 
-   Si no ve la plantilla de proyecto **Aplicación de consola (.NET Core)** o, para C++, **Aplicación de consola**, vaya a **Herramientas** > **Obtener herramientas y características…** , para abrir el Instalador de Visual Studio. Seleccione la carga de trabajo **Desarrollo de escritorio de .NET** o **Desarrollo para el escritorio con C++** y, luego, elija **Modificar**.
+   Si no ve la plantilla de proyecto **Aplicación de consola (.NET Core)** o, para C++, **Aplicación de consola**, vaya a **Herramientas** > **Obtener herramientas y características…** para abrir el Instalador de Visual Studio. Seleccione la carga de trabajo **Desarrollo de escritorio de .NET** o **Desarrollo para el escritorio con C++** y, luego, elija **Modificar**.
 
    Luego escriba un nombre como *MyThreadWalkthroughApp* y haga clic en **Aceptar**.
 
@@ -242,7 +242,7 @@ En primer lugar, necesitará un proyecto de aplicación multiproceso. A continua
 
 3. En el editor de código fuente, busque la línea que contiene el punto de interrupción.
 
-### <a name="discover-the-thread-marker"></a><a name="ShowThreadsInSource"></a>Detección del marcador de subproceso  
+### <a name="discover-the-thread-marker"></a><a name="ShowThreadsInSource"></a>Detección del marcador de subproceso  
 
 1. En la barra de herramientas de depuración, seleccione el botón **Mostrar subprocesos en código fuente** ![Show Threads in Source](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker").
 

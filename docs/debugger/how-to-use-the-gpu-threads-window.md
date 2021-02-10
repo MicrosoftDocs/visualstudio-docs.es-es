@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: c647c502-a9f0-48e0-a430-976744a5fa51
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5919ac657d828e87e48b8cfb3f4f643e1187f701
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 04a480daae7f5883cad9fa74e9d51d4df0f4485f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150592"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840969"
 ---
 # <a name="how-to-use-the-gpu-threads-window-c"></a>Procedimiento Uso de la ventana Subprocesos de GPU (C++)
 Desde la ventana Subprocesos de GPU, puede examinar y trabajar con los subprocesos que se ejecutan en la GPU de la aplicación que esté depurando. Para obtener más información sobre las aplicaciones que se ejecutan en la GPU, vea [Información general sobre C++ AMP](/cpp/parallel/amp/cpp-amp-overview).

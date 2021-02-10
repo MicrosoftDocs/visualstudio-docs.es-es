@@ -15,15 +15,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dc34a5f58f8bc3c47526cc8ba8516311e94f0631
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: e333bbe4198dfeda9ceb90ed23263ef1b6e06495
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150839"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870368"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>No se puede conectar al Monitor de depuración remota de Microsoft Visual Studio
 Es posible que este mensaje aparezca debido a que el monitor de depuración remota no está correctamente configurado en el equipo remoto o no es posible acceder a este último debido a problemas de red o a la presencia de un firewall.

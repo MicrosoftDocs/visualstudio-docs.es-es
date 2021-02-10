@@ -8,13 +8,13 @@ keywords: Puente a Kubernetes, Azure Dev Spaces, Dev Spaces, Docker, Kubernetes,
 monikerRange: '>=vs-2019'
 author: ghogen
 ms.author: ghogen
-manager: jillfra
-ms.openlocfilehash: bd28921b7812689554e1dd707c500434bb021c9c
-ms.sourcegitcommit: f9179a3a6d74fbd871f62b72491e70b9e7b05637
+manager: jmartens
+ms.openlocfilehash: b250454fe5e80ec18f75add92c8c2f653893e994
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90845979"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867625"
 ---
 # <a name="configure-bridge-to-kubernetes"></a>Configuración del Puente a Kubernetes
 

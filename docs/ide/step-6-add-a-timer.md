@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 09e7930b-cab6-4a22-9a6f-72e23f489585
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2684b197fc32b33081c8ecdfa8139b3c8f14e752
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 77daa47cdd6336849903202233392d3eecc33c1a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480556"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868899"
 ---
 # <a name="step-6-add-a-timer"></a>Paso 6: Agregar un temporizador
 A continuación, agregará un control <xref:System.Windows.Forms.Timer> al juego de formar parejas. Un temporizador espera un número especificado de milisegundos para desencadenar un evento conocido como *tic*. Esto es útil para iniciar o repetir una acción de forma periódica. En este caso, se usará un temporizador para permitir a los participantes elegir dos iconos y, si no coinciden, ocultarlos de nuevo trascurrido un breve período de tiempo.
@@ -30,12 +30,12 @@ A continuación, agregará un control <xref:System.Windows.Forms.Timer> al juego
 1. En el cuadro de herramientas del **Diseñador de Windows Forms**, pulse **Temporizador** (en la categoría **Componentes**) y, después, la tecla **Entrar** o haga doble clic en el temporizador para agregar un control de temporizador al formulario. El icono del temporizador, denominado **Temporizador1**, debe aparecer en un espacio bajo el formulario, como se muestra en la siguiente imagen.
 
      ![Temporizador](../ide/media/express_timer.png)<br/>
-**_Temporizador_* _
+***Temporizador***
 
     > [!NOTE]
     > Si el cuadro de herramientas está vacío, asegúrese de seleccionar el diseñador de formularios, y no el código subyacente del formulario, antes de abrir el cuadro de herramientas.
 
-2. Pulse el icono _ *Temporizador1** para seleccionar el temporizador. En la ventana **Propiedades**, cambie de la vista de eventos a la de propiedades. Después, establezca la propiedad **Interval** del temporizador en **750**, pero deje la propiedad **Enabled** establecida en **False**. La propiedad **Interval** indica al temporizador cuánto tiempo debe esperar entre los *tics* o cuando se desencadena el evento <xref:System.Windows.Forms.Timer.Tick>. Un valor de 750 indica al temporizador que espere tres cuartos de segundo (750 milisegundos) antes de desencadenar el evento Tick. Llame al método <xref:System.Windows.Forms.Timer.Start> para iniciar el temporizador únicamente después de que el jugador elija la segunda etiqueta.
+2. Pulse el icono **Temporizador1** para seleccionar el temporizador. En la ventana **Propiedades**, cambie de la vista de eventos a la de propiedades. Después, establezca la propiedad **Interval** del temporizador en **750**, pero deje la propiedad **Enabled** establecida en **False**. La propiedad **Interval** indica al temporizador cuánto tiempo debe esperar entre los *tics* o cuando se desencadena el evento <xref:System.Windows.Forms.Timer.Tick>. Un valor de 750 indica al temporizador que espere tres cuartos de segundo (750 milisegundos) antes de desencadenar el evento Tick. Llame al método <xref:System.Windows.Forms.Timer.Start> para iniciar el temporizador únicamente después de que el jugador elija la segunda etiqueta.
 
 3. Pulse el icono del control de temporizador en el **Diseñador de Windows Forms** y pulse la tecla **Entrar**, o haga doble clic en el temporizador, para agregar un controlador de eventos Tic vacío. Reemplace el código por el código siguiente o escriba manualmente el código siguiente en el controlador de eventos.
 

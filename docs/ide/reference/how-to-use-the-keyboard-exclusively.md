@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: d71a4cc1-d352-4164-8538-3f9fa070a331
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 52d6bda98ee01dad4faf4a51412e810e1f5e4fa7
-ms.sourcegitcommit: 4eb8fe6eb7f1dc639f1d213db05a7a3007e8087e
+ms.openlocfilehash: 7daa0bfc6f67bd0dc9fee0775ba8dce591ce8148
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92156566"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852536"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Uso del teclado exclusivamente
 
@@ -37,15 +37,15 @@ Para obtener un listado completo de las teclas de método abreviado de comandos 
 ::: moniker-end
 
 > [!NOTE]
-> En función de los ajustes que haya establecido o la edición de Visual Studio que use, los cuadros de diálogo y comandos de menú que verá pueden diferir de los descritos en la Ayuda. Para cambiar la configuración, seleccione **Importar y exportar configuraciones** en el menú **Herramientas** . Para obtener más información, vea [Restablecer la configuración](../environment-settings.md#reset-settings).
+> En función de los ajustes que haya establecido o la edición de Visual Studio que use, los cuadros de diálogo y comandos de menú que verá pueden diferir de los descritos en la Ayuda. Para cambiar la configuración, seleccione **Importar y exportar configuraciones** en el menú **Herramientas**. Para obtener más información, vea [Restablecer la configuración](../environment-settings.md#reset-settings).
 
 ## <a name="toolbox-controls"></a>Controles del cuadro de herramientas
 
 Para agregar un control en el cuadro de herramientas a un formulario o diseñador sin el mouse, siga estos pasos:
 
-1. En la barra de menús, seleccione **Ver** > **Cuadro de herramientas** .
+1. En la barra de menús, seleccione **Ver** > **Cuadro de herramientas**.
 
-2. Use las teclas **Ctrl**+**Flecha arriba** o **Ctrl**+**Flecha abajo** para moverse por las secciones de la pestaña **Cuadro de herramientas** .
+2. Use las teclas **Ctrl**+**Flecha arriba** o **Ctrl**+**Flecha abajo** para moverse por las secciones de la pestaña **Cuadro de herramientas**.
 
 3. Use la tecla **Flecha arriba** o **Flecha abajo** para moverse por los controles de una sección.
 
@@ -79,9 +79,9 @@ Para moverse entre las opciones de un cuadro de diálogo y cambiar la configurac
 
 1. Vaya a la ventana de herramientas que quiere mover y asígnele el foco.
 
-2. En el menú **Ventana** , seleccione la opción **Acoplable** .
+2. En el menú **Ventana**, seleccione la opción **Acoplable**.
 
-3. Presione **Alt**+**Barra espaciadora** y seleccione **Mover** .
+3. Presione **Alt**+**Barra espaciadora** y seleccione **Mover**.
 
    Aparece el diamante de guía de acoplamiento.
 
@@ -93,7 +93,7 @@ Para moverse entre las opciones de un cuadro de diálogo y cambiar la configurac
 
    Aparece un esquema de la ventana de herramientas en la nueva ubicación de acoplamiento.
 
-6. Presione **ENTRAR** .
+6. Presione **ENTRAR**.
 
    La ventana de herramientas se ajusta en la nueva ubicación de acoplamiento.
 

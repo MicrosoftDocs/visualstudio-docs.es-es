@@ -6,15 +6,15 @@ f1_keywords:
 - vs.debug.error.process_exit_during_func_eval
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 97751ae2cbc44429bc1c0fb363366faa830beb68
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 07891e5bcbcab35a4ec5652676a014b87dd32d43
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852737"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871642"
 ---
 # <a name="error-the-target-process-exited-with-code-39code39-while-evaluating-the-function-39function39"></a>Error: El proceso de destino terminó con el código &#39;code&#39; al evaluar la función &#39;function&#39;
 
@@ -28,7 +28,7 @@ Un motivo común de este problema es que cuando el depurador evalúa una propied
 
 Estas son dos soluciones posibles a este problema.
 
-### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>Solución 1: Impedir que el depurador llame a la propiedad de captador o al método ToString 
+### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>Solución 1: Impedir que el depurador llame a la propiedad de captador o al método ToString 
 
 El mensaje de error le indicará el nombre de la función a la que el depurador intentó llamar. Con el nombre de la función, puede intentar volver a evaluar esa función desde la ventana **Inmediato** para depurar la evaluación. La depuración es posible cuando la evaluación se realiza desde la ventana **Inmediato** porque, a diferencia de las evaluaciones implícitas de las ventanas **Automático/Variables locales/Inspección**, el depurador se interrumpe en las excepciones no controladas.
 

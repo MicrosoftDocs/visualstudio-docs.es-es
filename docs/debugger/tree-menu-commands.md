@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ffc1b893-17b1-477f-92a1-e4a59261ca1a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d93dec46c99c5a4385f254b797a522925d4b945f
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 9dc99ca9652e0df1027b4aeab3519291c8f12034
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148733"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870459"
 ---
 # <a name="tree-menu-commands"></a>Comandos del menú Árbol
 El menú **Árbol** proporciona comandos para expandir o contraer vistas.
