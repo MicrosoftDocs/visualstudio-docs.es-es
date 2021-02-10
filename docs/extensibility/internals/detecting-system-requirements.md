@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 0ba94acf-bf0b-4bb3-8cca-aaac1b5d6737
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4befcf3950c41beba2440e6f023983269137b1f
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 20287ba123c5736c9eb7077622623f4a739bde5c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329814"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963476"
 ---
 # <a name="detect-system-requirements"></a>Detectar requisitos del sistema
 Un VSPackage no puede funcionar a menos que esté instalado Visual Studio. Al usar Microsoft Windows Installer para administrar la instalación del VSPackage, puede configurar el instalador para que detecte si Visual Studio está instalado. También puede configurarlo para comprobar si hay otros requisitos en el sistema, por ejemplo, una versión concreta de Windows o una cantidad determinada de RAM.
@@ -37,7 +37,7 @@ Cuando se instala una edición más reciente, se agregan las claves del registro
 > [!NOTE]
 > En la versión de 64 bits del editor del registro, las claves de 32 bits se muestran **en \\HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node**. Las claves de Visual Studio están **en \\HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing**.
 
-|Producto|Clave|
+|Producto|Key|
 |-------------|---------|
 |Visual Studio Enterprise 2015|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\enterprise|
 |Visual Studio Professional 2015|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\professional|
@@ -47,5 +47,5 @@ Cuando se instala una edición más reciente, se agregan las claves del registro
 ## <a name="detect-when-visual-studio-is-running"></a>Detectar cuándo se está ejecutando Visual Studio
  El VSPackage no se puede registrar correctamente si Visual Studio se está ejecutando cuando se instala el VSPackage. El instalador debe detectar cuándo se está ejecutando Visual Studio y después rechazar la instalación del programa. Windows Installer no permite usar entradas de tabla para habilitar dicha detección. En su lugar, debe crear una acción personalizada, como se indica a continuación: Use la `EnumProcesses` función para detectar el *devenv.exe* proceso y, a continuación, establezca una propiedad de instalador que se use en una condición de inicio o que muestre condicionalmente un cuadro de diálogo que pida al usuario que cierre Visual Studio.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Instale VSPackages con Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

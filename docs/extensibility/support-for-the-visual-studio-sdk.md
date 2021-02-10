@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: d9011f5a-cb53-418f-9d8f-74b15b9fc5f5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40e2ceb39931ce7779a7e13de6d0f13ee68f32b7
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 43d9e228f83261c4df2d4cacc84bb8629a259aac
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715293"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965179"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Soporte técnico para Visual Studio SDK
 Hay varias opciones de soporte técnico disponibles para los clientes que tienen preguntas sobre cómo ampliar el entorno de desarrollo integrado (IDE) de Visual Studio.
@@ -64,6 +64,6 @@ Se pueden enviar preguntas sobre soporte técnico Premier ofertas junto con el p
 
 Puede encontrar información sobre las solicitudes de soporte técnico individuales en cada [solicitud de soporte técnico](https://support.microsoft.com/supportforbusiness/productselection).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Hable con nosotros](../ide/feedback-options.md)

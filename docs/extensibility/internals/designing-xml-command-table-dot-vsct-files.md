@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1ccab1eddf38e2f93cb00f1f5fdea6ce09f2f05
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 13722aa9968e21d4208ad5aa99fefe4c985ffb79
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328436"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963502"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>Diseñar archivos de tabla de comandos XML (. Vsct)
 Un archivo de tabla de comandos XML (*. Vsct*) describe el diseño y la apariencia de los elementos de comando de un VSPackage. Los elementos de comando incluyen botones, cuadros combinados, menús, barras de herramientas y grupos de elementos de comandos. En este artículo se describen los archivos de tabla de comandos XML, cómo afectan a los elementos de comando y menús, y cómo se crean.
@@ -123,5 +123,5 @@ Puede usar el compilador *vsct.exe* para convertir un archivo *. CTO* existente 
 
  Ejecute la herramienta con el comando **CreateExpInstance/RESET**. Recuerde que esta herramienta quita del Hive experimental todos los VSPackages registrados que no se instalan normalmente con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Extender menús y comandos](../../extensibility/extending-menus-and-commands.md)

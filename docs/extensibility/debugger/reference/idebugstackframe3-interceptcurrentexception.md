@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 116c7324-7645-4c15-b484-7a5cdd065ef5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7debd5323e753c6c5fd1476eac3c062fb63393b9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a8e3ef123fb88f1519d398952ed2d27de0fb0b91
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719480"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963554"
 ---
 # <a name="idebugstackframe3interceptcurrentexception"></a>IDebugStackFrame3::InterceptCurrentException
 Lo llama el depurador en el marco de pila actual cuando desea interceptar la excepción actual.
@@ -59,7 +59,7 @@ enuncia Valor único que identifica una excepción determinada.
 |`E_EXCEPTION_CANNOT_UNWIND_ABOVE_CALLBACK`|Todavía no se ha buscado un controlador en el marco de ejecución actual.|
 |`E_INTERCEPT_CURRENT_EXCEPTION_NOT_SUPPORTED`|Este método no es compatible con este marco.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Cuando se produce una excepción, el depurador obtiene el control del tiempo de ejecución en los puntos clave durante el proceso de control de excepciones. Durante estos momentos clave, el depurador puede preguntar al marco de pila actual si el marco desea interceptar la excepción. De esta manera, una excepción interceptada es esencialmente un controlador de excepciones en la marcha para un marco de pila, incluso si ese marco de pila no tiene un controlador de excepciones (por ejemplo, un bloque try/catch en el código del programa).
 
  Cuando el depurador desea saber si se debe interceptar la excepción, llama a este método en el objeto de marco de pila actual. Este método es responsable de controlar todos los detalles de la excepción. Si no se implementa la interfaz [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md) o el `InterceptStackException` método devuelve un error, el depurador continúa procesando la excepción con normalidad.

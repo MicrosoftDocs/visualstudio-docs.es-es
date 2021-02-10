@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bd212a6a-dcc6-4756-a77a-e8dfda38b104
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37acb9f2984c36130de494108ef4b76a59cc74e7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7241c697baf7810d961f4cc3aba71d469bad4582
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719516"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963567"
 ---
 # <a name="idebugstackframe2"></a>IDebugStackFrame2
 Esta interfaz representa un marco de pila único en una pila de llamadas de un subproceso determinado.
@@ -50,7 +50,7 @@ IDebugStackFrame2 : IUnknown
 |[EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)|Crea un enumerador para las propiedades del marco de pila.|
 |[GetThread](../../../extensibility/debugger/reference/idebugstackframe2-getthread.md)|Obtiene el subproceso asociado a un marco de pila.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Esta interfaz se obtiene solo cuando el programa que se está depurando se ha detenido en un punto de interrupción (ya sea debido a un punto de interrupción del conjunto de usuarios o una excepción). Desde esta interfaz, se puede obtener un contexto de expresión para evaluar las expresiones, se puede devolver una lista de registros o se puede obtener y examinar la pila de llamadas.
 
 ## <a name="requirements"></a>Requisitos

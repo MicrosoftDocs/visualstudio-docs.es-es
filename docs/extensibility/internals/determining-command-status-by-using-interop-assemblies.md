@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 2f5104d1-7b4c-4ca0-a626-50530a8f7f5c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e46252cea550a2caaa81c92853220db4fa2b5b1a
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 5473fffa00723735b022412e7f37f184e043df4b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328384"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963450"
 ---
 # <a name="determine-command-status-by-using-interop-assemblies"></a>Determinar el estado del comando mediante ensamblados de interoperabilidad
 Un VSPackage debe realizar un seguimiento del estado de los comandos que puede controlar. El entorno no puede determinar cuándo se habilita o deshabilita un comando controlado en el VSPackage. Es responsabilidad del VSPackage informar al entorno sobre los Estados de comandos, por ejemplo, el estado de comandos generales como **cortar**, **copiar** y **pegar**.
@@ -35,6 +35,6 @@ Un VSPackage debe realizar un seguimiento del estado de los comandos que puede c
 ## <a name="status-notification-failure"></a>Error en la notificación de estado
  Un error en el VSPackage para notificar al entorno de un cambio de estado de comando puede poner la interfaz de usuario en un estado incoherente. Recuerde que el usuario puede colocar en una barra de herramientas cualquiera de los comandos de menú o menú contextual. Por lo tanto, la actualización de la interfaz de usuario solo cuando se abre un menú o menú contextual no es suficiente.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Cómo agrega VSPackages los elementos de la interfaz de usuario](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Implementación](../../extensibility/internals/command-implementation.md)

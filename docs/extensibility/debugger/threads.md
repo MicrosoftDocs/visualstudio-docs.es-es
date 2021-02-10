@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 2243d24a-c3d2-41d1-abbb-6db21a2db9ee
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b259ffd7814b42145489ee5990cee6da891a9d10
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: ec3c427e722739f17984866b8756d606ecb57813
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995959"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965465"
 ---
 # <a name="threads"></a>Subprocesos
 En la arquitectura del depurador, un *subproceso*:
@@ -29,7 +29,7 @@ En la arquitectura del depurador, un *subproceso*:
 
 - Se representa mediante una interfaz [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) , creada normalmente por un motor de depuración (de) o una máquina virtual como consecuencia de la ejecución de un programa.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Programs](../../extensibility/debugger/programs.md)
 - [Marcos de pila](../../extensibility/debugger/stack-frames.md)
 - [Motor de depuración](../../extensibility/debugger/debug-engine.md)

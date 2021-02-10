@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], current item
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 10b8bd8103e80040519b9e3c5546f892da326202
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 720028528c036bf4485ca529f735fd26b1ff6e9e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526798"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963840"
 ---
 # <a name="how-to-programmatically-determine-the-current-outlook-item"></a>Cómo: determinar el elemento actual de Outlook mediante programación
   En este ejemplo se utiliza el `Explorer.SelectionChange` evento para mostrar el nombre de la carpeta actual y alguna información sobre el elemento seleccionado. Después, el código muestra el elemento seleccionado.
@@ -39,7 +39,7 @@ ms.locfileid: "97526798"
 
 - Elementos de citas, contactos y correo electrónico en Microsoft Office Outlook.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Información general del modelo de objetos de Outlook](../vsto/outlook-object-model-overview.md)
 - [Cómo: recuperar una carpeta por nombre mediante programación](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
 - [Cómo: buscar un contacto específico mediante programación](../vsto/how-to-programmatically-search-for-a-specific-contact.md)

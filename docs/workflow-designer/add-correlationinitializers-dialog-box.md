@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: c0517467-d54a-4ee6-aef0-c19b96b6f395
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e5822d1dc79835dd6fdcc3a70c3392dbd3d1aab
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: ca78cea409f559583507fd4b5b7c9fc43f9a5ffc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996362"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963736"
 ---
 # <a name="add-correlationinitializers-dialog-box"></a>Agregar CorrelationInitializers (cuadro de diálogo)
 
@@ -44,6 +44,6 @@ En la tabla siguiente se describen los elementos de la interfaz de usuario (UI) 
 
  El diseñador de actividades **Receive** se puede arrastrar desde el **cuadro de herramientas** y colocarlo en la superficie diseñador de flujo de trabajo cada vez que se colocan las actividades. Al quitar el diseñador de actividad **Receive** , se crea una <xref:System.ServiceModel.Activities.Receive> actividad con un valor predeterminado <xref:System.Activities.Activity.DisplayName%2A> de Receive. Seleccione el diseñador de actividades **Receive** y haga clic en el botón de puntos suspensivos junto al texto (colección) de la propiedad **CorrelationInitializers** en la cuadrícula de propiedades para que aparezca el cuadro de diálogo **Agregar inicializadores de correlación** .
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Cuadro de diálogo Inicializar correlación](../workflow-designer/initialize-correlation-dialog-box.md)
