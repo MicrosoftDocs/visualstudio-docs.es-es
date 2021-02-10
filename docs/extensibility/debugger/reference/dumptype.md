@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: ea8160db-8732-4056-a1d7-892ef72da71e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0d4d42709efdefe097b4c8a78a0b00f45f2e1a2b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 99e7e5a9e092118eb40501e6f2ba3cc580cf7cc7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737205"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953739"
 ---
 # <a name="dumptype"></a>DUMPTYPE
 Especifica la cantidad del estado de un programa (como la ejecución de subprocesos, marcos de pila y dirección de instrucción actual) que se va a volcar.
@@ -49,7 +49,7 @@ Especifica un volcado pequeño y compacto.
 `DUMP_FULLDUMP`\
 Especifica un volcado de memoria completo y grande.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Se pasa como argumento al método [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md) .
 
 ## <a name="requirements"></a>Requisitos

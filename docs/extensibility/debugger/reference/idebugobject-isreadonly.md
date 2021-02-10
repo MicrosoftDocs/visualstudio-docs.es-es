@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: c460f772-d08a-4b36-81f3-dff6a51a93fd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 19546550f916e9d42adf634b0d85958ce9697d28
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e7d27e6a437c46d2ee72eb4fd5f79eaa9e912ac
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726416"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953635"
 ---
 # <a name="idebugobjectisreadonly"></a>IDebugObject::IsReadOnly
 Determina si este objeto es de solo lectura.
@@ -28,7 +28,7 @@ Determina si este objeto es de solo lectura.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT IsReadOnly( 
+HRESULT IsReadOnly( 
    BOOL* pfIsReadOnly
 );
 ```
@@ -46,7 +46,7 @@ enuncia Devuelve un valor distinto de cero ( `TRUE` ) si este objeto es de solo 
 ## <a name="return-value"></a>Valor devuelto
  Si se realiza correctamente, Devuelve S_OK; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  No se puede cambiar el valor de un objeto de solo lectura una vez creado.
 
 ## <a name="see-also"></a>Vea también

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 54a05920-5d13-4f67-962b-d1a7f013dff9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 03564e8b81eb4e11a2cd4f25e1047d326d62b21b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 48badc2f418dec9fd34906b6925db1c2a9dfd490
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726296"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953518"
 ---
 # <a name="idebugobject2createalias"></a>IDebugObject2::CreateAlias
 Crea un identificador único o un alias para este objeto o devuelve un alias existente.
@@ -28,14 +28,14 @@ Crea un identificador único o un alias para este objeto o devuelve un alias exi
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT CreateAlias(
-   IDebugAlias** ppAlias
+HRESULT CreateAlias(
+   IDebugAlias** ppAlias
 );
 ```
 
 ```csharp
-int CreateAlias(
-   out IDebugAlias ppAlias
+int CreateAlias(
+   out IDebugAlias ppAlias
 );
 ```
 
@@ -46,7 +46,7 @@ enuncia Nuevo alias (o existente).
 ## <a name="return-value"></a>Valor devuelto
  Si se realiza correctamente, Devuelve S_OK; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Un alias es una etiqueta que representa un objeto determinado mientras el objeto está en la memoria.
 
 ## <a name="see-also"></a>Vea también

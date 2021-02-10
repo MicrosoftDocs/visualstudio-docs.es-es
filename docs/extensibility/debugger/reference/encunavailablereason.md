@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: c10aa4c0-d7e0-4de1-b8ff-7e050985eb12
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 28863549ab3eac96322530bc85c52697f20448c8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 384d71d6f88e8cd792585bb097594fa7b1e38c64
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737162"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953752"
 ---
 # <a name="encunavailablereason"></a>EncUnavailableReason
 `This is for internal use only!` Representa las razones por las que **Editar y continuar** no está disponible.
@@ -28,7 +28,7 @@ ms.locfileid: "80737162"
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-enum tagEncUnavailableReason {
+enum tagEncUnavailableReason {
     ENCUN_NONE,
     ENCUN_INTEROP,
     ENCUN_SQLCLR,
@@ -37,11 +37,11 @@ enum tagEncUnavailableReason {
     ENCUN_ATTACH,
     ENCUN_WIN64
 };
-typedef enum tagEncUnavailableReason EncUnavailableReason;
+typedef enum tagEncUnavailableReason EncUnavailableReason;
 ```
 
 ```csharp
-public enum EncUnavailableReason {
+public enum EncUnavailableReason {
     ENCUN_NONE,
     ENCUN_INTEROP,
     ENCUN_SQLCLR,
@@ -74,7 +74,7 @@ La función editar y continuar no está disponible porque el depurador ha adjunt
 `ENCUN_WIN64`\
 Editar y continuar no está disponible al procesar el código de Windows de 64 bits.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Esta enumeración solo es para uso interno por parte de [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] . Los métodos [GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md) y [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md) implementados por un proveedor de Puerto personalizado siempre deben devolver `E_NOTIMPL` .
 
 ## <a name="requirements"></a>Requisitos

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 10e70aa7-9381-40d3-bdd1-d2cad78ef16c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9dcf3316ba57bbb25ee171cba7e4edc4923fa270
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 49e8f151aa01037a0bc18161fbe94a00488394db
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737283"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953843"
 ---
 # <a name="disassemblydata"></a>DisassemblyData
 Describe una instrucción de desensamblado para el entorno de desarrollo integrado (IDE) que se va a mostrar.
@@ -46,7 +46,7 @@ typedef struct tagDisassemblyData {
 ```
 
 ```csharp
-public struct DisassemblyData { 
+public struct DisassemblyData { 
     public uint          dwFields;
     public string        bstrAddress;
     public string        bstrAddressOffset;
@@ -63,7 +63,7 @@ public struct DisassemblyData { 
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 `dwFields`\
 La constante [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) que especifica qué campos se rellenan.
 
@@ -104,7 +104,7 @@ Número de bytes de la instrucción desde el principio de la línea de código.
 `dwFlags`\
 La constante [DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md) que especifica qué marcas están activas.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Cada `DisassemblyData` estructura describe una instrucción del desensamblado. Una matriz de estas estructuras se devuelve desde el método [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) .
 
 La estructura de [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) se utiliza solo para documentos basados en texto. El intervalo de código fuente de esta instrucción se rellena solo para la primera instrucción generada a partir de una instrucción o línea, por ejemplo, cuando `dwByteOffset == 0` .

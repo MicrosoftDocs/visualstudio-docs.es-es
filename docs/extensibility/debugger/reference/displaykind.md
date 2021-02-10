@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: 940968c5-6065-4bda-8ee6-c31597db4d71
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f7634ae3ee03b7e577f0621ffc263e4d45bfe194
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 62421ad9bf03c3b8eb21539f2f53fd8a632498ff
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737252"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953778"
 ---
 # <a name="displaykind"></a>DisplayKind
 Enumera los valores válidos que representan los tipos de información que se tomarán de un objeto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) y se mostrarán al usuario.
