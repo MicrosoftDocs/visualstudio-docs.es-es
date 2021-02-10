@@ -12,15 +12,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], managed code extensions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: be32109e2a34df8605c0dbe5ba9f1df4e32cfc55
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: fea8a8f73155875f9a10e9d8138ee4b345d531d4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524460"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942157"
 ---
 # <a name="how-to-remove-managed-code-extensions-from-documents"></a>Cómo: quitar extensiones de código administrado de documentos
   Puede quitar mediante programación el ensamblado de personalización de un documento o un libro que forme parte de una personalización de nivel de documento para Microsoft Office Word o Microsoft Office Excel. A continuación, los usuarios pueden abrir los documentos y ver el contenido, pero cualquier interfaz de usuario personalizada que agregue a los documentos no aparecerá y el código no se ejecutará.
@@ -53,6 +53,6 @@ ms.locfileid: "97524460"
 
 4. Compile el proyecto y ejecute la aplicación en el equipo en el que desea quitar la personalización. El equipo debe tener instalado Visual Studio 2010 Tools para Office Runtime.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Administrar documentos en un servidor mediante la clase ServerDocument](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)
 - [Cómo: adjuntar extensiones de código administrado a documentos](../vsto/how-to-attach-managed-code-extensions-to-documents.md)

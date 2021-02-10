@@ -11,15 +11,15 @@ helpviewer_keywords:
 - text boxes, displaying text in documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1cda1fe3e7430ff30dcc3b3921eb2bcd4d31b699
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 0efea386da2bec0136a8a5399a04b9ce8cabf5c7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97522755"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942105"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>Tutorial: mostrar texto en un cuadro de texto de un documento mediante un botón
   Este tutorial muestra cómo usar los botones y cuadros de texto en una personalización de nivel de documento para Microsoft Office Word.
@@ -111,7 +111,7 @@ ms.locfileid: "97522755"
 
 - Usar botones de radio para seleccionar estilos de gráfico. Para obtener más información, vea [Tutorial: actualizar un gráfico en un documento mediante botones de radio](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Información general sobre los controles de Windows Forms en documentos de Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
 - [Tutoriales de uso de Word](../vsto/walkthroughs-using-word.md)
 - [Ejemplos y tutoriales de desarrollo de Office](../vsto/office-development-samples-and-walkthroughs.md)

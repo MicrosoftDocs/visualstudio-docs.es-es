@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: edcd7891-f4e7-416d-809d-5e2eed9f17e4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd30cb2d09d042e70b5fc142ac220f2356962146
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: fe9002c3da63e9570819588035395780715e1d64
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974583"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941871"
 ---
 # <a name="bitmap-element"></a>Bitmap (elemento)
 Define un mapa de bits. El mapa de bits se carga desde un recurso o desde un archivo.

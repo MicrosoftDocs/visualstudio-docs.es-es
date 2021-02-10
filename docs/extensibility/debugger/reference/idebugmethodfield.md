@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a7dc9030-fc98-4cf1-b943-37a4003300b6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 061035933e57ea4ca8e7857f68ac3d6311bae32c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 95f79062c4ca2452d6ed271660841fccb8adfca3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727065"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941819"
 ---
 # <a name="idebugmethodfield"></a>IDebugMethodField
 Esta interfaz describe un método.
@@ -25,7 +25,7 @@ Esta interfaz describe un método.
 ## <a name="syntax"></a>Sintaxis
 
 ```
-IDebugMethodField : IDebugContainerField
+IDebugMethodField : IDebugContainerField
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para los implementadores
@@ -48,7 +48,7 @@ IDebugMethodField : IDebugContainerField
 |[GetGlobalContainer](../../../extensibility/debugger/reference/idebugmethodfield-getglobalcontainer.md)|Obtiene el contenedor global del método.|
 |[EnumArguments](../../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md)|Crea un enumerador para el tipo de cada argumento necesario para llamar al método.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Un método puede contener parámetros y variables locales.
 
 ## <a name="requirements"></a>Requisitos
