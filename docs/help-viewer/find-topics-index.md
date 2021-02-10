@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: cb071e93-f297-459c-a6fa-8ae0dabc42a4
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 695bcabc195b97551b2943a557d591bdfb85c991
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 34eb02621c42282fdd5ec1656edcb175351a1f5e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91879026"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944229"
 ---
 # <a name="find-topics-by-using-the-help-viewer-index"></a>Búsqueda de temas con el índice del visor de la Ayuda
 
@@ -78,7 +78,7 @@ Si no encuentra una entrada para la palabra o frase que escribió, pruebe lo sig
 
     Por ejemplo, si introdujo el término "compilación", pruebe "creación" en su lugar.
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [Búsqueda de temas en la TDC](../help-viewer/find-topics-toc.md)
 - [Cómo: buscar temas](../help-viewer/find-topics.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 259c2069-d349-4814-810f-1c3151b7fb84
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71df385bc0cf42c2437abfd117c2f84bda5b5432
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a4a54193b23015135b6112655fe48d79d3de74e4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701045"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943158"
 ---
 # <a name="scccloseproject-function"></a>SccCloseProject función)
 Esta función cierra un proyecto y marca el final de una sesión determinada.
@@ -43,7 +43,7 @@ SCCRTN SccCloseProject (
 |SCC_E_NOTAUTHORIZED|El usuario no tiene permiso para realizar esta operación.|
 |SCC_E_NONSPECIFICERROR|Error no específico.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Siempre se llama a [SccOpenProject](../extensibility/sccopenproject-function.md) antes de esta función. Una llamada a esta función va seguida de una llamada a la `SccOpenProject` función o a [SccUninitialize](../extensibility/sccuninitialize-function.md), que finaliza la conexión al sistema de control de código fuente por completo.
 
 ## <a name="see-also"></a>Vea también

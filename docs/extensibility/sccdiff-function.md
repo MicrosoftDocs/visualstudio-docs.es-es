@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d49bc8c5-f631-4153-9d3c-feb3564da305
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b68df68ce7fa4ad5cbc98db256204ddf8623d2c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8ff2b2d5e5a0043cde17fecd2d59c084d2958e32
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701022"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943119"
 ---
 # <a name="sccdiff-function"></a>SccDiff función)
 Esta función muestra (u opcionalmente solo comprueba las diferencias entre el archivo actual (en el disco local) y su última versión protegida en el sistema de control de código fuente.
@@ -69,7 +69,7 @@ de Opciones específicas del complemento de control de código fuente.
 |SCC_E_NONSPECIFICERROR|Error no específico; no se obtuvo la diferencia de archivos.|
 |SCC_E_FILENOTEXIST|No se encontró el archivo local.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Esta función tiene dos fines diferentes. De forma predeterminada, se muestra una lista de cambios en un archivo. El complemento de control de código fuente abre su propia ventana, en el formato que elija, para mostrar las diferencias entre el archivo del usuario en el disco y la versión más reciente del archivo bajo control de código fuente.
 
  Como alternativa, es posible que el IDE simplemente necesite determinar si un archivo ha cambiado. Por ejemplo, es posible que el IDE necesite determinar si es seguro desproteger un archivo sin informar al usuario. En ese caso, el IDE pasa la `SCC_DIFF_CONTENTS` marca. El complemento de control de código fuente debe comprobar el archivo en disco, byte por byte, en el archivo controlado por código fuente y devolver un valor que indique si los dos archivos son diferentes sin mostrar nada al usuario.

@@ -6,15 +6,15 @@ ms.topic: how-to
 ms.assetid: 683f1b0c-1551-4bba-91fe-3855f03fdd69
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 46eb9c21b5bc6f7d0a577b85d043933b48bf60bc
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 4ebf3bbd1fe04b13f31de7ebd8c513de670dd480
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91879000"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944139"
 ---
 # <a name="how-to-search-for-topics"></a>Búsqueda de temas
 
@@ -31,7 +31,7 @@ Para abrir la pestaña **Buscar** , elija la pestaña **Buscar** en la ventana d
     > [!NOTE]
     > En el cuadro de diálogo **Opciones del Visor**, puede especificar preferencias adicionales, como el número máximo de resultados de la búsqueda que se mostrarán en todo momento o si se debe incluir contenido en inglés si la configuración regional principal no es inglés.
 
-3. Elija la tecla **entrar** .
+3. Presione la tecla **ENTRAR**.
 
      De forma predeterminada, una búsqueda devuelve un máximo de 200 aciertos y los muestra en el área de resultados de la búsqueda. Podría aparecer información adicional sobre la versión para cada resultado, en función del contenido.
 
@@ -77,7 +77,7 @@ El algoritmo de búsqueda aplica ciertos criterios para ayudar a situar los resu
 
 Las palabras o números que aparecen más habitualmente, a veces llamadas palabras irrelevantes, se omiten automáticamente durante una búsqueda de texto completo. Por ejemplo, si busca la frase "pasar por", los resultados de la búsqueda mostrarán los temas que contienen la palabra "pasar", pero no "por".
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [Operadores lógicos y avanzados](../help-viewer/logical-operators-search-expressions.md)
 - [Cómo: buscar temas en el índice](../help-viewer/find-topics-index.md)

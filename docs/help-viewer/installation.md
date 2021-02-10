@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Help Viewer, installing
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0161cafe9f9c09f11774da7d6e3e449a9ac4d068
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 8b966ee38298f35b78722d2fe7e43b86773d5e68
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91878987"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944152"
 ---
 # <a name="microsoft-help-viewer-installation"></a>Instalación del Visor de Ayuda de Microsoft
 
@@ -44,7 +44,7 @@ Otra manera de instalar fácilmente el Visor de Ayuda de Microsoft es a través 
 
    ![botón Instalar](media/installation/install.png)
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [Visor de Ayuda de Microsoft](../help-viewer/overview.md)
 - [Visor de ayuda y contenido sin conexión para SQL Server](/sql/sql-server/sql-server-help-installation)

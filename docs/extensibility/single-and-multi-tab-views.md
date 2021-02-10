@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e3611704-349f-4323-b03c-f2b0a445d781
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94081af0bfdb85793c092f76d28758f220f4628b
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: f6cea04557fb0bf3075461b22979cac2168af322
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715215"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942989"
 ---
 # <a name="single-and-multi-tab-views"></a>Vistas de una sola pestaña y varias pestañas
 Un editor puede crear diferentes tipos de vistas. Un ejemplo es una ventana del editor de código, otra es un diseñador de formularios.
@@ -114,7 +114,7 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Compatibilidad con vistas de varios documentos](../extensibility/supporting-multiple-document-views.md)
 - [Anexión de vistas a datos de documentos](../extensibility/how-to-attach-views-to-document-data.md)
 - [Creación de diseñadores y editores personalizados](../extensibility/creating-custom-editors-and-designers.md)

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: c46bf625-0a48-4cbb-8f1f-286356f2c065
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3870f28ffb62239d0a092093d28c83d25e92bd31
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 44b49cbcd52137b31dd456c4cf45bb3fe8ead947
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736332"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944658"
 ---
 # <a name="idebugarrayfieldgetelementtype"></a>IDebugArrayField::GetElementType
 Obtiene el tipo de elemento de la matriz.
@@ -28,7 +28,7 @@ Obtiene el tipo de elemento de la matriz.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT GetElementType( 
+HRESULT GetElementType( 
    IDebugField** ppType
 );
 ```
@@ -46,7 +46,7 @@ enuncia Devuelve un objeto [IDebugField](../../../extensibility/debugger/referen
 ## <a name="return-value"></a>Valor devuelto
  Si se realiza correctamente, Devuelve S_OK; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  El objeto [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md) supone que todos los elementos de la matriz son del mismo tipo.
 
 ## <a name="see-also"></a>Vea también

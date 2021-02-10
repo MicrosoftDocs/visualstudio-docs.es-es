@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: e55a1098-15df-42a9-9f87-e3a99cf437dd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33b2c1638b41afbdae56e0c4374937e7230dfffe
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: 2ce96da36a8c6eff0fda71d8a5d077721876ab8b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97616122"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943353"
 ---
 # <a name="keybinding-element"></a>Elemento KeyBinding
 El elemento KeyBinding especifica los métodos abreviados de teclado para los comandos.
@@ -38,10 +38,10 @@ El elemento KeyBinding especifica los métodos abreviados de teclado para los co
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|guid|Obligatorio.|
-|id|Obligatorio.|
-|editor|Obligatorio. El GUID del editor indica el contexto de edición para el que este método abreviado de teclado estará activo. El valor de ámbito de enlace global es "guidVSStd97".|
-|key1|Obligatorio. Entre los valores válidos se incluyen todos los typable alfanuméricos y los valores hexadecimales de dos dígitos precedidos de 0x y [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|
+|guid|Necesario.|
+|id|Necesario.|
+|editor|Necesario. El GUID del editor indica el contexto de edición para el que este método abreviado de teclado estará activo. El valor de ámbito de enlace global es "guidVSStd97".|
+|key1|Necesario. Entre los valores válidos se incluyen todos los typable alfanuméricos y los valores hexadecimales de dos dígitos precedidos de 0x y [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|
 |mod1|Opcional. Cualquier combinación de **Ctrl**, **Alt** y **MAYÚS** separadas por espacio.|
 |key2|Opcional. Entre los valores válidos se incluyen todos los typable alfanuméricos y los valores hexadecimales de dos dígitos precedidos de 0x y [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|
 |mod2|Opcional. Cualquier combinación de **Ctrl**, **Alt** y **MAYÚS** separadas por espacio.|
@@ -72,6 +72,6 @@ El elemento KeyBinding especifica los métodos abreviados de teclado para los co
 </KeyBindings>
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [KeyBindings (elemento)](../extensibility/keybindings-element.md)
 - [Archivos de tabla de comandos de Visual Studio (. Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

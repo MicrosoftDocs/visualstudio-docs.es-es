@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99e33ae67e0fd18ecd9a1a40a8b8075cd22d4bf7
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: bf32f4cd32ad6e53c1db33f75f68559e84414436
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715670"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942911"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Colores y estilos para Visual Studio
 
@@ -363,7 +363,7 @@ Rellene el registro con dos valores:
 | Nombre | Tipo | data | Descripción |
 | --- | --- | --- | --- |
 | Category | REG_SZ | GUID | GUID creado para identificar la categoría |
-| Package | REG_SZ | GUID | El GUID del servicio VSPackage que admite la categoría |
+| Paquete | REG_SZ | GUID | El GUID del servicio VSPackage que admite la categoría |
 
  El servicio especificado en el registro debe proporcionar una implementación de [IVsFontAndColorDefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults) para la categoría correspondiente.
 
@@ -376,7 +376,7 @@ Rellene el registro con dos valores:
 | Nombre | Tipo | data | Descripción |
 |--- | --- | --- | --- |
 | Category | REG_SZ | GUID | GUID creado para identificar la categoría |
-| Package | REG_SZ | GUID | El GUID del servicio VSPackage que admite la categoría |
+| Paquete | REG_SZ | GUID | El GUID del servicio VSPackage que admite la categoría |
 
 El servicio especificado en el registro debe proporcionar una implementación de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> para el grupo correspondiente.
 

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], migrating to .NET Framework 4
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e92a7fc81f77244664be7285cc6fd414dc4409be
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 4fbe3c311e734cc076ab898544470c3e27e91795
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527489"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943723"
 ---
 # <a name="changes-required-for-office-projects-migrated-to-net-45"></a>Cambios necesarios para los proyectos de Office migrados a .NET 4,5
 
@@ -73,5 +73,5 @@ ms.locfileid: "97527489"
 ## <a name="reinstall-solutions-on-end-user-computers"></a>Reinstalar soluciones en los equipos de los usuarios finales
  Si usa ClickOnce para implementar una solución de Office que tiene como destino .NET Framework 3.5 y redestina el proyecto a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o posterior, los usuarios finales deberán desinstalar la solución y volver a instalarla después de volver a publicarla. Si vuelve a publicar la solución redestinada y la solución se actualiza en los equipos de los usuarios finales, los usuarios finales recibirán una <xref:System.Runtime.InteropServices.COMException> cuando ejecuten la solución actualizada.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Migrar soluciones de Office al .NET Framework 4 o posterior](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)

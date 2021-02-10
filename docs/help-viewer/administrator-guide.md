@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 4340c69f-b96b-4932-bb82-38b16a5ab149
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 312b886ee0becc794f657ecaaba7fb028d4b3cf1
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: e52b03b01f53a8064dc6ec691f751c86266af6a4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91878896"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944308"
 ---
 # <a name="help-viewer-administrator-guide"></a>Guía del administrador del Visor de Ayuda
 
@@ -60,7 +60,7 @@ En el siguiente ejemplo se instala contenido en inglés de Visual Studio en un e
 
 #### <a name="to-install-english-content-from-the-internet"></a>Para instalar contenido en inglés desde Internet
 
-1. Seleccione **Inicio** y **Ejecutar**.
+1. Elija **iniciar** y, a continuación, elija **Ejecutar**.
 
 2. Escriba lo siguiente:
 
@@ -131,7 +131,7 @@ A continuación, debe empaquetar el contenido para poder implementarlo en los eq
 
 1. Cree un recurso compartido de red y copie el contenido de Ayuda en esa ubicación.
 
-     Por ejemplo, copie el contenido de *C:\VSHelp* en * \\ \myserver\VSHelp*.
+     Por ejemplo, copie el contenido de *C:\VSHelp* en *\\ \myserver\VSHelp*.
 
 2. Cree un archivo *.bat* que contendrá el script de implementación para el contenido de Ayuda. Puesto que el cliente podría tener un bloqueo de lectura en cualquiera de los archivos que se estén eliminando como parte de la inserción, debe cerrar el cliente antes de insertar las actualizaciones. Por ejemplo:
 
@@ -143,7 +143,7 @@ A continuación, debe empaquetar el contenido para poder implementarlo en los eq
 
 3. Ejecute el archivo *. bat* en los equipos locales en los que desea instalar el contenido de la ayuda.
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [Argumentos de la línea de comandos para Help Content Manager](../help-viewer/command-line-arguments.md)
 - [Invalidaciones de Help Content Manager](../help-viewer/behavior-overrides.md)

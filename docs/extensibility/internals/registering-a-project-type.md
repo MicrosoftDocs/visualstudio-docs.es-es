@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a34f5c7f1ae3a214a0a72932ae80dbc44845a45
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 893f59aa9e99d990623e0c8383c12bbffbc4a510
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875207"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944516"
 ---
 # <a name="registering-a-project-type"></a>Registro de un tipo de proyecto
 Al crear un nuevo tipo de proyecto, debe crear entradas del registro que habiliten [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para reconocer y trabajar con el tipo de proyecto. Normalmente, estas entradas del registro se crean mediante un archivo de script de registro (. RGS).
@@ -149,7 +149,7 @@ Al crear un nuevo tipo de proyecto, debe crear entradas del registro que habilit
 
  En la tabla siguiente se muestran las opciones de filtros disponibles en el segmento de código anterior.
 
-|Opción de filtro|Description|
+|Opción de filtro|Descripción|
 |-------------------|-----------------|
 |`CommonFindFilesFilter`|Indica que el filtro es uno de los filtros comunes del cuadro de diálogo **Buscar en archivos** . Los filtros comunes se enumeran en la lista de filtros antes de que los filtros no estén marcados como comunes.|
 |`CommonOpenFilesFilter`|Indica que el filtro es uno de los filtros comunes del cuadro de diálogo **Abrir archivo** . Los filtros comunes se enumeran en la lista de filtros antes de que los filtros no estén marcados como comunes.|
@@ -195,7 +195,7 @@ Al crear un nuevo tipo de proyecto, debe crear entradas del registro que habilit
 
 |Nombre|Tipo|data|Descripción|
 |----------|----------|----------|-----------------|
-|`@`|REG_SZ|Ninguno|Valor predeterminado que indica que las siguientes entradas son para las entradas de proyectos de archivos varios.|
+|`@`|REG_SZ|None|Valor predeterminado que indica que las siguientes entradas son para las entradas de proyectos de archivos varios.|
 |`@`|REG_SZ|`#%IDS_ADDITEM_TEMPLATES_ENTRY%`|Valor de identificador de recurso para los archivos de plantilla agregar nuevos elementos.|
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjectItems`|Ruta de acceso predeterminada de los elementos que se mostrarán en el cuadro de diálogo **Agregar nuevo elemento** .|
 |`SortPriority`|REG_DWORD|`100 (vcprx64)`|Establece el criterio de ordenación que se va a mostrar en el nodo de árbol del cuadro de diálogo **Agregar nuevo elemento** .|
@@ -266,7 +266,7 @@ Al crear un nuevo tipo de proyecto, debe crear entradas del registro que habilit
 
  Esto significa que si incluye una entrada PROJECT_TYPE = EF en el archivo. vsz, el entorno busca los archivos. vsz en el directorio ProductDir especificado anteriormente.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Lista de comprobación: Creación de nuevos tipos de proyectos](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Elementos de un modelo de proyecto](../../extensibility/internals/elements-of-a-project-model.md)
 - [Creación de instancias de proyecto mediante generadores de proyecto](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)

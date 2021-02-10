@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 57dfdbc2-4e68-4dbf-9579-006cd6fb1c62
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1af6ce13de529fef5e16b3bc1be7053f0e1347b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 61fb53c1fc83f06c200b50b5fcf55f950a00ead6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735393"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943439"
 ---
 # <a name="idebugbreakevent2"></a>IDebugBreakEvent2
 Esta interfaz indica al administrador de depuración de la sesión (SDM) que una interrupción asincrónica se ha completado correctamente.
@@ -34,7 +34,7 @@ IDebugBreakEvent2 : IUnknown
 ## <a name="notes-for-callers"></a>Notas para llamadores
  El SDM llama a [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md) cuando el usuario ha solicitado que el programa que se está depurando esté en pausa. Cuando el programa se ha pausado correctamente, el DE envía el `IDebugBreakEvent2` evento. Este evento se envía mediante la función de devolución de llamada [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) proporcionada por el SDM cuando se adjunta al programa que se está depurando.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Por ejemplo, un usuario puede seleccionar el comando **interrumpir todo** en el menú **depurar** para salir de un programa que ejecuta un bucle infinito. El SDM indica al programa que se detenga llamando a [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md). El DE envía `IDebugBreakEvent2` cuando finalmente se detiene el programa.
 
 ## <a name="requirements"></a>Requisitos

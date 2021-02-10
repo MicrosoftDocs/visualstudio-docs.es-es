@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 459e2d99-573d-47c4-b834-6d82c5e14162
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 222b5d15a1e2bcd9bd3f27a5cd0e9904642d9786
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d15809623067d9612eb2648d593264d61f08f6e1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700949"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943093"
 ---
 # <a name="sccdirqueryinfo-function"></a>SccDirQueryInfo función)
 Esta función examina una lista de directorios completos para su estado actual.
@@ -60,7 +60,7 @@ de Matriz de rutas de acceso completas de los directorios que se van a consultar
 |SCC_E_ACCESSFAILURE|Hubo un problema al obtener acceso al sistema de control de código fuente, probablemente debido a problemas de red o de contención. Se recomienda un reintento.|
 |SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Error no específico.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  La función rellena la matriz devuelta con una máscara de bits de bits de la `SCC_DIRSTATUS` familia (vea [código de estado de directorio](../extensibility/directory-status-code-enumerator.md)), una entrada para cada directorio proporcionado. El autor de la llamada asigna la matriz de estado.
 
  El IDE usa esta función antes de que se cambie el nombre de un directorio para comprobar si el directorio está bajo control de código fuente consultando si tiene un proyecto correspondiente. Si el directorio no está bajo control de código fuente, el IDE puede proporcionar la advertencia adecuada al usuario.
