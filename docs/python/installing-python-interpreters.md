@@ -5,17 +5,17 @@ ms.date: 06/05/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fb1c657789e232307672d494710f330758780a67
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e2c4cd4c110b55837009ea9d081a95180727d331
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85540730"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916541"
 ---
 # <a name="install-python-interpreters"></a>Instalación de intérpretes de Python
 

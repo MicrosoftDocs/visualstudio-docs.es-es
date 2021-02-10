@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: a0d97966-2df8-449b-a8cf-5a19684dc773
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 924b990e1626842778c0b3577ddb25a53a4eb910
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 5c60c30c593e67f47a620062e2b2f4958120a1a1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134608"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917111"
 ---
 # <a name="how-to-create-a-basic-3d-model"></a>Cómo: Crear un modelo en 3D básico
 
@@ -44,7 +44,7 @@ Antes de empezar, asegúrese de que se muestran la ventana **Propiedades** y el 
 
 1. Cree un modelo 3D con el que va a trabajar. Para obtener información sobre cómo agregar un modelo al proyecto, vea la sección Introducción de [Editor de modelos](../designers/model-editor.md).
 
-2. Agregue un cubo a la escena. En la ventana **Herramientas** , en **Formas** , seleccione **Cubo** y después muévalo a la superficie de diseño.
+2. Agregue un cubo a la escena. En la ventana **Herramientas**, en **Formas**, seleccione **Cubo** y después muévalo a la superficie de diseño.
 
 3. Cambie a selección de cara. En la barra de herramientas del Editor de modelos, elija **Seleccionar cara**.
 
@@ -52,7 +52,7 @@ Antes de empezar, asegúrese de que se muestran la ventana **Propiedades** y el 
 
     ![La parte superior del cubo se ha subdividido](../designers/media/gfx_model_demo_house_subdiv.png)
 
-5. Extruya dos lados adyacentes del cubo, por ejemplo, la parte frontal y derecha del cubo. En el modo de selección de cara, elija el cubo una vez para activarlo para la selección y, después, elija un lado del cubo. Mantenga presionada la tecla **Ctrl** , elija otro lado del cubo que sea adyacente al primero que seleccionó y, después, en la barra de herramientas del Editor de modelos, haga clic en **Extruir cara**.
+5. Extruya dos lados adyacentes del cubo, por ejemplo, la parte frontal y derecha del cubo. En el modo de selección de cara, elija el cubo una vez para activarlo para la selección y, después, elija un lado del cubo. Mantenga presionada la tecla **Ctrl**, elija otro lado del cubo que sea adyacente al primero que seleccionó y, después, en la barra de herramientas del Editor de modelos, haga clic en **Extruir cara**.
 
     ![Los lados del cubo se han extruido.](../designers/media/gfx_model_demo_house_extrude.png)
 

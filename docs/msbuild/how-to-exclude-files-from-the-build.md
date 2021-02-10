@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 1be36e45-01da-451c-972d-f9fc0e7d663c
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 48578edd6c7911e858f32b1961b4ef361748788d
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: e838460f1e42f34e92a99198b9d4a0e34ce71dcd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436366"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914373"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>Cómo: Excluir archivos de la compilación
 
@@ -66,7 +66,7 @@ En un archivo de proyecto puede utilizar comodines para incluir todos los archiv
     <VBFile Include="*.vb" Exclude="Form2.vb;Form3.vb"/>
     ```
 
-#### <a name="to-include-all-jpg-files-in-subdirectories-of-the-images-directory-except-those-in-the-version2-directory"></a>Para incluir todos los archivos *.jpg* de los subdirectorios del directorio *Images* , excepto los del directorio *Version2*
+#### <a name="to-include-all-jpg-files-in-subdirectories-of-the-images-directory-except-those-in-the-version2-directory"></a>Para incluir todos los archivos *.jpg* de los subdirectorios del directorio *Images*, excepto los del directorio *Version2*
 
 - Utilice los siguientes atributos `Include` y `Exclude`:
 
@@ -95,7 +95,7 @@ En un archivo de proyecto puede utilizar comodines para incluir todos los archiv
 
 ## <a name="example"></a>Ejemplo
 
- En el ejemplo de código siguiente se compila un proyecto con todos los archivos *.cs* del directorio, excepto *Form2.cs* .
+ En el ejemplo de código siguiente se compila un proyecto con todos los archivos *.cs* del directorio, excepto *Form2.cs*.
 
 ```xml
 <Project DefaultTargets="Compile"

@@ -6,15 +6,15 @@ ms.topic: how-to
 ms.assetid: 19a45032-f8a7-4137-890e-2ceeec938b8d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 24659a101da59ed3a8ca6389debfde6c08a038ed
-ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
+ms.openlocfilehash: fab15ce9d3782b2ef7e38d5cca0e2b71d77fbc46
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97815612"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920759"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Cómo Usar el SDK de marcadores del Visualizador de simultaneidad
 Este tema muestra cómo usar el SDK del visualizador de simultaneidad para crear intervalos y escribir marcas, mensajes y alertas.

@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: a977e072-37ad-4941-84a6-32a4483be55d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d8e242864ca68e0d84ace5f8ebeefd02881a394f
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 91a155e340f9ab246935f7b8cd6da46f3f364010
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436866"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914721"
 ---
 # <a name="getassemblyidentity-task"></a>GetAssemblyIdentity (tarea)
 

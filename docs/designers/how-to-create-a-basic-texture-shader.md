@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 5af113fb-6415-4be0-8b23-10fddb10e80a
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 93696dfe9fbf3b8db1d4be137ced6798b3a60aae
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 832d8aac861163c0d1c6b56c340502e32b2f555b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134503"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915674"
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>Cómo: Crear un sombreador de textura básico
 
@@ -29,17 +29,17 @@ Antes de empezar, asegúrese de que se muestran la ventana **Propiedades** y el 
 
 1. Cree un sombreador DGSL con el que trabajar. Para obtener información sobre cómo agregar un sombreador DGSL al proyecto, vea la sección Introducción de [Diseñador de sombras](../designers/shader-designer.md).
 
-2. Elimine el nodo **Color de punto**. En el modo **Seleccionar** , seleccione el nodo **Color de punto** y, después, en la barra de menús, elija **Editar** > **Eliminar**. Esto hace sitio para el nodo que se agrega en el paso siguiente.
+2. Elimine el nodo **Color de punto**. En el modo **Seleccionar**, seleccione el nodo **Color de punto** y, después, en la barra de menús, elija **Editar** > **Eliminar**. Esto hace sitio para el nodo que se agrega en el paso siguiente.
 
-3. Agregue un nodo **Muestra de textura** al gráfico. En el **Cuadro de herramientas** , en **Textura** , seleccione **Muestra de textura** y muévala a la superficie de diseño.
+3. Agregue un nodo **Muestra de textura** al gráfico. En el **Cuadro de herramientas**, en **Textura**, seleccione **Muestra de textura** y muévala a la superficie de diseño.
 
-4. Agregue un nodo **Coordenada de textura** al gráfico. En el **Cuadro de herramientas** , en **Textura** , seleccione **Coordenada de textura** y muévala a la superficie de diseño.
+4. Agregue un nodo **Coordenada de textura** al gráfico. En el **Cuadro de herramientas**, en **Textura**, seleccione **Coordenada de textura** y muévala a la superficie de diseño.
 
-5. Elija una textura para aplicar. En el modo **Seleccionar** , seleccione el nodo **Muestra de textura** y, después, en la ventana **Propiedades** , especifique la textura que quiere usar mediante la propiedad **Nombre de archivo**.
+5. Elija una textura para aplicar. En el modo **Seleccionar**, seleccione el nodo **Muestra de textura** y, después, en la ventana **Propiedades**, especifique la textura que quiere usar mediante la propiedad **Nombre de archivo**.
 
-6. Cree la textura públicamente accesible. Seleccione el nodo **Muestra de textura** y, después, en la ventana **Propiedades** , establezca la propiedad **Acceso** en **Público**. Ahora puede configurar la textura desde otra herramienta, como el **Editor de modelos**.
+6. Cree la textura públicamente accesible. Seleccione el nodo **Muestra de textura** y, después, en la ventana **Propiedades**, establezca la propiedad **Acceso** en **Público**. Ahora puede configurar la textura desde otra herramienta, como el **Editor de modelos**.
 
-7. Conecte las coordenadas de textura a la muestra de textura. En el modo **Seleccionar** , mueva el terminal **Salida** del nodo **Coordenada de textura** al terminal **UV** del nodo **Muestra de textura**. Esta conexión muestrea la textura en las coordenadas especificadas.
+7. Conecte las coordenadas de textura a la muestra de textura. En el modo **Seleccionar**, mueva el terminal **Salida** del nodo **Coordenada de textura** al terminal **UV** del nodo **Muestra de textura**. Esta conexión muestrea la textura en las coordenadas especificadas.
 
 8. Conecte la muestra de textura al color final. Mueva el terminal **RGB** del nodo **Muestra de textura** al terminal **RGB** del nodo **Color final** y, después, mueva el terminal **Alfa** del nodo **Muestra de textura** al terminal **Alfa** del nodo **Color final**.
 

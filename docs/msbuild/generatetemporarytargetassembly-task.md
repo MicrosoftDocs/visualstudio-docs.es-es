@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 92b6539c-6897-45e0-8989-0c234bbfe782
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a100ad8a3be57288e49a858d6f87851269df303
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: f4a41a5cbecea69d4843cbd70479a604f91b2218
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436756"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914741"
 ---
 # <a name="generatetemporarytargetassembly-task"></a>GenerateTemporaryTargetAssembly (Tarea)
 
@@ -35,21 +35,21 @@ La tarea <xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly> ge
 
 | Parámetro | Descripción |
 |--------------------------| - |
-| `AssemblyName` | Parámetro obligatorio de tipo **String** .<br /><br /> Especifica el nombre corto del ensamblado que se genera para un proyecto y que también es el nombre del ensamblado de destino que se genera temporalmente. Por ejemplo, si un proyecto genera un archivo ejecutable de Windows con el nombre *WinExeAssembly.exe* , el parámetro **AssemblyName** tiene un valor de **WinExeAssembly** . |
-| `CompileTargetName` | Parámetro obligatorio de tipo **String** .<br /><br /> Especifica el nombre del destino de MSBuild que se usa para generar ensamblados a partir de archivos de código fuente. El valor típico de **CompileTargetName** es **CoreCompile** . |
-| `CompileTypeName` | Parámetro obligatorio de tipo **String** .<br /><br /> Especifica el tipo de compilación que realiza el destino especificado por el parámetro **CompileTargetName** . Para el destino **CoreCompile** , este valor es **Compile** . |
-| `CurrentProject` | Parámetro obligatorio de tipo **String** .<br /><br /> Especifica la ruta de acceso completa del archivo de proyecto de MSBuild para el proyecto que requiere un ensamblado de destino temporal. |
+| `AssemblyName` | Parámetro obligatorio de tipo **String**.<br /><br /> Especifica el nombre corto del ensamblado que se genera para un proyecto y que también es el nombre del ensamblado de destino que se genera temporalmente. Por ejemplo, si un proyecto genera un archivo ejecutable de Windows con el nombre *WinExeAssembly.exe*, el parámetro **AssemblyName** tiene un valor de **WinExeAssembly**. |
+| `CompileTargetName` | Parámetro obligatorio de tipo **String**.<br /><br /> Especifica el nombre del destino de MSBuild que se usa para generar ensamblados a partir de archivos de código fuente. El valor típico de **CompileTargetName** es **CoreCompile**. |
+| `CompileTypeName` | Parámetro obligatorio de tipo **String**.<br /><br /> Especifica el tipo de compilación que realiza el destino especificado por el parámetro **CompileTargetName**. Para el destino **CoreCompile**, este valor es **Compile**. |
+| `CurrentProject` | Parámetro obligatorio de tipo **String**.<br /><br /> Especifica la ruta de acceso completa del archivo de proyecto de MSBuild para el proyecto que requiere un ensamblado de destino temporal. |
 | `GeneratedCodeFiles` | Parámetro opcional de tipo **ITaskItem[]** .<br /><br /> Especifica la lista de archivos de código administrado específicos del lenguaje y generados por la tarea [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md). |
-| `IntermediateOutputPath` | Parámetro obligatorio de tipo **String** .<br /><br /> Especifica el directorio en el que se genera el ensamblado de destino temporal. |
-| `MSBuildBinPath` | Parámetro obligatorio de tipo **String** .<br /><br /> Especifica la ubicación de *MSBuild.exe* , necesario para compilar el ensamblado de destino temporal. |
+| `IntermediateOutputPath` | Parámetro obligatorio de tipo **String**.<br /><br /> Especifica el directorio en el que se genera el ensamblado de destino temporal. |
+| `MSBuildBinPath` | Parámetro obligatorio de tipo **String**.<br /><br /> Especifica la ubicación de *MSBuild.exe*, necesario para compilar el ensamblado de destino temporal. |
 | `ReferencePath` | Parámetro opcional de tipo **ITaskItem[]** .<br /><br /> Especifica una lista de ensamblados, por ruta de acceso y nombre de archivo, a los que hacen referencia los tipos compilados en el ensamblado de destino temporal. |
-| `ReferencePathTypeName` | Parámetro obligatorio de tipo **String** .<br /><br /> Especifica el parámetro que usa el parámetro de destino de compilación ( **CompileTargetName** ) que especifica la lista de referencias del ensamblado ( **ReferencePath** ). El valor correcto es **ReferencePath** . |
+| `ReferencePathTypeName` | Parámetro obligatorio de tipo **String**.<br /><br /> Especifica el parámetro que usa el parámetro de destino de compilación (**CompileTargetName**) que especifica la lista de referencias del ensamblado (**ReferencePath**). El valor correcto es **ReferencePath**. |
 
 ## <a name="remarks"></a>Observaciones
 
 El primer paso de compilación de marcado, que ejecuta [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md), compila los archivos XAML en formato binario. Por consiguiente, el compilador necesita una lista de los ensamblados a los que se hace referencia y que contienen los tipos que usan los archivos XAML. Sin embargo, si un archivo XAML usa un tipo definido en el mismo proyecto, no se crea ningún ensamblado correspondiente para ese proyecto hasta que se compile el proyecto. Por consiguiente, no se puede proporcionar ninguna referencia del ensamblado durante el primer paso de compilación de marcado.
 
-En su lugar, **MarkupCompilePass1** aplaza la conversión de los archivos XAML que contienen referencias a los tipos del mismo proyecto a un segundo paso de compilación de marcado, que ejecuta [MarkupCompilePass2](../msbuild/markupcompilepass2-task.md). Antes de que se ejecute **MarkupCompilePass2** , se genera un ensamblado temporal. Este ensamblado contiene los tipos que usan los archivos XAML cuyo paso de compilación de marcado se aplazó. Cuando se ejecuta **MarkupCompilePass2** se le proporciona una referencia al ensamblado generado para permitir que los archivos XAML de la compilación aplazada se conviertan al formato binario.
+En su lugar, **MarkupCompilePass1** aplaza la conversión de los archivos XAML que contienen referencias a los tipos del mismo proyecto a un segundo paso de compilación de marcado, que ejecuta [MarkupCompilePass2](../msbuild/markupcompilepass2-task.md). Antes de que se ejecute **MarkupCompilePass2**, se genera un ensamblado temporal. Este ensamblado contiene los tipos que usan los archivos XAML cuyo paso de compilación de marcado se aplazó. Cuando se ejecuta **MarkupCompilePass2** se le proporciona una referencia al ensamblado generado para permitir que los archivos XAML de la compilación aplazada se conviertan al formato binario.
 
 ## <a name="example"></a>Ejemplo
 

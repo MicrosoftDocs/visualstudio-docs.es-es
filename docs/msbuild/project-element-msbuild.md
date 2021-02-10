@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: d1cda56a-dbef-4109-9201-39e962e3f653
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 223ccd9e823bef4ee458a7aa1ce2d785788c6238
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: c4aa00df0a1a0b622040a3f808515b9a62fc8f66
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048854"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918842"
 ---
 # <a name="project-element-msbuild"></a>Elemento Project (MSBuild)
 
@@ -64,7 +64,7 @@ Elemento raíz necesario de un archivo de proyecto de MSBuild.
 | `InitialTargets` | Atributo opcional.<br /><br /> Destinos iniciales que se van a ejecutar antes que los destinos especificados en el atributo `DefaultTargets` o en la línea de comandos. Si hay varios destinos, se delimitan con punto y coma (`;`). Si varios archivos importados definen `InitialTargets`, se ejecutarán todos los destinos que se han mencionado, en el orden en el que se encuentran las importaciones. |
 | `Sdk` | Atributo opcional. <br /><br /> El nombre del SDK y la versión opcional se usa para crear instrucciones Import implícitas que se agregan al archivo .proj. Si no se especifica ninguna versión, MSBuild intentará resolver una versión predeterminada.  Por ejemplo, `<Project Sdk="Microsoft.NET.Sdk" />` o `<Project Sdk="My.Custom.Sdk/1.0.0" />`. |
 | `ToolsVersion` | Atributo opcional.<br /><br /> La versión del conjunto de herramientas de MSBuild que se utiliza para determinar los valores de $(MSBuildBinPath) y $(MSBuildToolsPath). |
-| `TreatAsLocalProperty` | Atributo opcional.<br /><br /> Nombres de propiedad que no se consideran globales. Este atributo impide que determinadas propiedades de la línea de comandos invaliden los valores de propiedad que se establecen en un archivo del proyecto o de destinos y todas las importaciones posteriores. Si hay varias propiedades, se delimitan con punto y coma (;).<br /><br /> Normalmente, las propiedades globales invalidan los valores de propiedad que se establecen en el archivo del proyecto o de destinos. Si la propiedad aparece en el valor `TreatAsLocalProperty`, el valor de propiedad global no invalida los valores de propiedad que se establecen en ese archivo ni las importaciones posteriores. Para obtener más información, vea [Cómo: Compilar los mismos archivos de código fuente con diferentes opciones](../msbuild/how-to-build-the-same-source-files-with-different-options.md). **Nota:** Establezca propiedades globales en el símbolo del sistema mediante el modificador **-property** (o **-p** ). También puede establecer o modificar propiedades globales para proyectos secundarios en una compilación de varios proyectos mediante el atributo `Properties` de la tarea de MSBuild. Para más información, consulte [Tarea de MSBuild](../msbuild/msbuild-task.md). |
+| `TreatAsLocalProperty` | Atributo opcional.<br /><br /> Nombres de propiedad que no se consideran globales. Este atributo impide que determinadas propiedades de la línea de comandos invaliden los valores de propiedad que se establecen en un archivo del proyecto o de destinos y todas las importaciones posteriores. Si hay varias propiedades, se delimitan con punto y coma (;).<br /><br /> Normalmente, las propiedades globales invalidan los valores de propiedad que se establecen en el archivo del proyecto o de destinos. Si la propiedad aparece en el valor `TreatAsLocalProperty`, el valor de propiedad global no invalida los valores de propiedad que se establecen en ese archivo ni las importaciones posteriores. Para obtener más información, vea [Cómo: Compilar los mismos archivos de código fuente con diferentes opciones](../msbuild/how-to-build-the-same-source-files-with-different-options.md). **Nota:** Establezca propiedades globales en el símbolo del sistema mediante el modificador **-property** (o **-p**). También puede establecer o modificar propiedades globales para proyectos secundarios en una compilación de varios proyectos mediante el atributo `Properties` de la tarea de MSBuild. Para más información, consulte [Tarea de MSBuild](../msbuild/msbuild-task.md). |
 | `xmlns` | Atributo opcional.<br /><br /> Cuando se especifica, el atributo `xmlns` debe tener el valor de `http://schemas.microsoft.com/developer/msbuild/2003`. |
 
 ### <a name="child-elements"></a>Elementos secundarios

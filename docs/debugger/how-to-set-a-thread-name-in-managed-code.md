@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: c0c4d74a-0314-4b71-81c9-b0b019347ab8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: c52d2ae3407833594049459a489641135bba172c
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 3defa5eaee2aafabcb4cf890516f7c78be47b1e7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148447"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915765"
 ---
 # <a name="how-to-set-a-thread-name-in-managed-code"></a>Procedimiento Establecimiento de un nombre de subproceso en código administrado
 La denominación de los subprocesos es posible en cualquier edición de Visual Studio. La denominación de los subprocesos es útil para hacer el seguimiento en la ventana **Subprocesos**.

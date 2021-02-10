@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: eecbcd65-9fbc-4307-a321-46d3c3b79b12
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 47b4ba2c27e130580af961216739289c6c7e9585
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 9d448adb2ba898eabdbac304c0087176e6ed7119
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046311"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918989"
 ---
 # <a name="msbuild-multitargeting-overview"></a>Introducción a la compatibilidad con múltiples versiones (multi-targeting) de MSBuild
 
@@ -30,7 +30,7 @@ Con MSBuild, puede compilar una aplicación para que se ejecute en cualquiera de
 
 - Puede tener como destino un marco distinto de .NET Framework, por ejemplo, Silverlight.
 
-- Puede tener como destino un *perfil de Framework* , que es un subconjunto predefinido de un marco de trabajo de destino.
+- Puede tener como destino un *perfil de Framework*, que es un subconjunto predefinido de un marco de trabajo de destino.
 
 - Si se publica algún Service Pack para la versión actual de .NET Framework, podría utilizarlo como destino.
 
@@ -42,7 +42,7 @@ Con MSBuild, puede compilar una aplicación para que se ejecute en cualquiera de
 
 ## <a name="toolset-toolsversion"></a>Conjunto de herramientas (ToolsVersion)
 
- Un conjunto de herramientas recopila las herramientas, las tareas y los destinos que se usan para crear la aplicación. Un conjunto de herramientas incluye compiladores como *csc.exe* y *vbc.exe* , el archivo de destinos común ( *microsoft.common.targets* ) y el archivo de tareas común ( *microsoft.common.tasks* ). El conjunto de herramientas de la versión 4.5 se puede usar para crear aplicaciones para las versiones 2.0, 3.0, 3.5, 4 y 4.5 de .NET Framework. En cambio, el conjunto de herramientas de la versión 2.0 solo se puede usar para las aplicaciones de la versión 2.0 de .NET Framework. Para obtener más información, vea [Conjunto de herramientas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).
+ Un conjunto de herramientas recopila las herramientas, las tareas y los destinos que se usan para crear la aplicación. Un conjunto de herramientas incluye compiladores como *csc.exe* y *vbc.exe*, el archivo de destinos común (*microsoft.common.targets*) y el archivo de tareas común (*microsoft.common.tasks*). El conjunto de herramientas de la versión 4.5 se puede usar para crear aplicaciones para las versiones 2.0, 3.0, 3.5, 4 y 4.5 de .NET Framework. En cambio, el conjunto de herramientas de la versión 2.0 solo se puede usar para las aplicaciones de la versión 2.0 de .NET Framework. Para obtener más información, vea [Conjunto de herramientas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).
 
 ## <a name="reference-assemblies"></a>Ensamblados de referencia
 

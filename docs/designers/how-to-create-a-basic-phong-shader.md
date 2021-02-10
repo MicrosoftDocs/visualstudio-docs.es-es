@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: c7c69da8-142b-4d3b-9be9-4be0d5970b25
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c158453421d9e4f899a7cfed7118be8e5871356c
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: b5319526da9aa59951729389749e53f3df65b643
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134137"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915711"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>Cómo: Crear un sombreador Phong básico
 
@@ -33,9 +33,9 @@ Antes de empezar, asegúrese de que se muestran la ventana **Propiedades** y el 
 
 2. Desconecte el nodo **Lambert** del nodo **Color final**. Elija el terminal **RGB** del nodo **Lambert** y, después, elija **Romper vínculos**. Esto hace sitio para el nodo que se agrega en el paso siguiente.
 
-3. Agregue un nodo **Agregar** al gráfico. En el **Cuadro de herramientas** , en **Matemáticas** , seleccione **Agregar** y muévalo a la superficie de diseño.
+3. Agregue un nodo **Agregar** al gráfico. En el **Cuadro de herramientas**, en **Matemáticas**, seleccione **Agregar** y muévalo a la superficie de diseño.
 
-4. Agregue un nodo **Especular** al gráfico. En el **Cuadro de herramientas** , en **Utilidad** , seleccione **Especular** y muévalo a la superficie de diseño.
+4. Agregue un nodo **Especular** al gráfico. En el **Cuadro de herramientas**, en **Utilidad**, seleccione **Especular** y muévalo a la superficie de diseño.
 
 5. Agregue la contribución especular. Mueva el terminal **Salida** del nodo **Especular** al terminal **X** del nodo **Agregar** y, después, mueva el terminal **Salida** del nodo **Lambert** al terminal **Y** del nodo **Agregar**. Estas conexiones combinan las contribuciones de color difuso y especular totales para el píxel.
 

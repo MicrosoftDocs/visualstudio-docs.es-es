@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f34a558a-ebd9-49bd-8510-32a2b581a4af
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 58974778be615f2b0455f5b65a1c392035265425
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: c92a9270198fc7dfb5035afd35a1c92269450133
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903477"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918166"
 ---
 # <a name="msbuild-advanced-concepts"></a>Conceptos avanzados de MSBuild
 

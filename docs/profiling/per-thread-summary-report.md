@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 5a0aa339-03f5-4727-90b3-8950446bbdbe
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 03797190097d3495a315fd0e0343fa9999100147
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 2dcdc05697b3c23a050ee975fd4395a6822db3b6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722794"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922296"
 ---
 # <a name="per-thread-summary-report"></a>Informe de resumen por subproceso
 Este gráfico de barras muestra la proporción de tiempo que cada subproceso no oculto invierte en cada categoría de actividad durante el intervalo de tiempo visible actualmente. "Ejecución" significa que se está ejecutando el subproceso, todas las demás categorías significan que el subproceso está esperando algo.

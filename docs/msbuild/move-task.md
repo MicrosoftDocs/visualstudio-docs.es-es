@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: d1405347-1309-4f18-b565-905408093d59
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8714108f7c537d9a50fda453050a54802f14e335
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 9121c14037ac1bc5740d1f0684f92226a361e6d5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903554"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918192"
 ---
 # <a name="move-task"></a>Move (tarea)
 
@@ -33,7 +33,7 @@ Mueve los archivos a una nueva ubicación.
 
  En la siguiente tabla se describen los parámetros de la tarea `Move`.
 
-|Parámetro|Description|
+|Parámetro|Descripción|
 |---------------|-----------------|
 |`DestinationFiles`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica la lista de archivos en la que se moverán los archivos de código fuente. Se espera que esta lista sea una asignación unívoca a la lista especificada en el parámetro `SourceFiles`. Es decir, el primer archivo especificado en `SourceFiles` se moverá a la primera ubicación especificada en `DestinationFiles`, etc.|
 |`DestinationFolder`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem> opcional.<br /><br /> Especifica el directorio en el que se desea mover los archivos.|

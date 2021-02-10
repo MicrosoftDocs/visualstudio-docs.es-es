@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 042c7d23-f1d8-4e09-9e76-a21c30243790
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 78b2e80611983e69f11465269dcf15dad7d6351e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: afb15ceed45389d1c442c18cf14e8eaf4150631f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329693"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917647"
 ---
 # <a name="marker_seriesmarker_series-constructor"></a>Constructor marker_series::marker_series
 Inicializa una nueva instancia de la clase `marker_series`.

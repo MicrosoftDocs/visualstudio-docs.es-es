@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 601a193e-432a-417b-9406-6fec9e401264
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e66e3e1200e1e08776853f2ac8308537e4b4a17
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 7bdfb59d6232706551534d0b8b395cd476dcf2d3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148915"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918462"
 ---
 # <a name="how-to-open-messages-view-from-find-window"></a>Procedimiento Apertura de la vista Mensajes desde la ventana Buscar
 Es posible que le resulte cómodo usar el cuadro de diálogo **Buscar ventana** para seleccionar una ventana de destino y luego abrir una vista Mensajes de esa ventana.

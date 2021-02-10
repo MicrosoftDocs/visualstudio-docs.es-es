@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 9d7aa308-b667-48ed-b4c9-a61e49eb0a85
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 62031255daca971345b2dd3dbc7c37eb7f4003c9
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: a480c539fc178e5ae672427fe32e9fd34728dc79
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046376"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919161"
 ---
 # <a name="msbuild-conditions"></a>Condiciones de MSBuild
 

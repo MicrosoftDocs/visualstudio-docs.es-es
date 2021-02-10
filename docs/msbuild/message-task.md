@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 2293309d-42b6-46dc-9684-8c146f66bc28
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b7a2854220a7ee85fd680cedd8c8e0c5c3ada89
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: eb2a1837210a5f36577d3bf677a4152033914f49
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903833"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918249"
 ---
 # <a name="message-task"></a>Message (tarea)
 
@@ -35,7 +35,7 @@ Registra un mensaje durante una compilación.
 
  En la siguiente tabla se describen los parámetros de la tarea `Message` .
 
-|Parámetro|Description|
+|Parámetro|Descripción|
 |---------------|-----------------|
 |`Importance`|Parámetro `String` opcional.<br /><br /> Especifica la importancia del mensaje. Este parámetro puede tener un valor de `high`, `normal` o `low`. El valor predeterminado es `normal`.|
 |`Text`|Parámetro `String` opcional.<br /><br /> El texto del error que se va a registrar.|

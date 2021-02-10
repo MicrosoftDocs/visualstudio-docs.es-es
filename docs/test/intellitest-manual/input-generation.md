@@ -7,16 +7,16 @@ ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Dynamic symbolic execution
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 62c06333af1e296c7e9745b70f33577d45ede68b
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 1ae12d6b7465e7b0542c987aae9fb849f232fce3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668773"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916538"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Generación de entradas con la ejecución simbólica dinámica
 

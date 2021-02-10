@@ -4,14 +4,14 @@ description: Aquí se describen las limitaciones del Diseñador de Windows Forms
 ms.date: 09/28/2020
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.topic: conceptual
-ms.openlocfilehash: 08eb15914ad381fd81a838f5e09a1350bedff4fd
-ms.sourcegitcommit: 31f216b5f7491d5558de5b7ea4ebb0eb1faa3b9d
+ms.openlocfilehash: f63d831127951815f28955e72ae29b1a4d7f5a3e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91493314"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917096"
 ---
 # <a name="disable-dpi-awareness-in-visual-studio"></a>Deshabilitación del reconocimiento de PPP en Visual Studio
 

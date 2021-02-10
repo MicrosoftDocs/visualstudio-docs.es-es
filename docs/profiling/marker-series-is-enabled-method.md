@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8ce4dd50-ca29-4c72-98d6-582693f7d501
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ff6b0449c877b5ae925ba2088917d7bacab4c34
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e68ec76737308d9bc9478f4106420626389f5eeb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330672"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917733"
 ---
 # <a name="marker_seriesis_enabled-method"></a>Método marker_series::is_enabled
 Determina si alguna sesión habilitó el proveedor.

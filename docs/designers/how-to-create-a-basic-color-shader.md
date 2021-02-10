@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: c301328a-079a-49e8-b688-4749c01657c0
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d966a8fdc565eae5254d21dba4ab9dfaa440de94
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 0b3c90496050754cc79c8bd774c0faa246e21512
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134111"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917045"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>Cómo: Crear un sombreador de color básico
 
@@ -31,9 +31,9 @@ Antes de empezar, asegúrese de que se muestran la ventana **Propiedades** y el 
 
 2. Elimine el nodo **Color de punto**. Use la herramienta **Seleccionar** para seleccionar el nodo **Color de punto** y, después, en la barra de menús, elija **Editar** > **Eliminar**.
 
-3. Agregue un nodo **Constante de color** al gráfico. En el **Cuadro de herramientas** , en **Constantes** , seleccione **Constante de color** y muévala a la superficie de diseño.
+3. Agregue un nodo **Constante de color** al gráfico. En el **Cuadro de herramientas**, en **Constantes**, seleccione **Constante de color** y muévala a la superficie de diseño.
 
-4. Especifique un valor de color para el nodo **Constante de color**. Use la herramienta **Seleccionar** para seleccionar el nodo **Constante de color** y, después, en la ventana **Propiedades** , en la propiedad **Salida** , especifique un valor de color. Para el color naranja, especifique un valor de (1,0, 0,5, 0,2, 1,0).
+4. Especifique un valor de color para el nodo **Constante de color**. Use la herramienta **Seleccionar** para seleccionar el nodo **Constante de color** y, después, en la ventana **Propiedades**, en la propiedad **Salida**, especifique un valor de color. Para el color naranja, especifique un valor de (1,0, 0,5, 0,2, 1,0).
 
 5. Conecte la constante de color al color final. Para crear las conexiones, mueva el terminal **RGB** del nodo **Constante de color** al terminal **RGB** del nodo **Color final** y, después, mueva el terminal **Alfa** del nodo **Constante de color** al terminal **Alfa** del nodo **Color final**. Estas conexiones establecen el color final en la constante de color definida en el paso anterior.
 

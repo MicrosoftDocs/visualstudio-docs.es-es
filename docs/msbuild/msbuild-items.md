@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: d762eff4-c92a-4b5f-a944-1ca30aa22319
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a28823a1a492cb1e8d5f434f98248fecc5d84e47
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: d4bfc58c9be578514598fce2d447ef921d091177
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904498"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919072"
 ---
 # <a name="msbuild-items"></a>Elementos de MSBuild
 
@@ -35,7 +35,7 @@ Los elementos de MSBuild son entradas del sistema de compilación y suelen repre
 </ItemGroup>
 ```
 
- El elemento *file2.cs* no reemplaza al elemento *file1.cs* , sino que se anexa el nombre de archivo a la lista de valores del tipo del elemento `Compile`.
+ El elemento *file2.cs* no reemplaza al elemento *file1.cs*, sino que se anexa el nombre de archivo a la lista de valores del tipo del elemento `Compile`.
 
  El código XML siguiente crea el mismo tipo de elemento declarando ambos archivos en un atributo `Include`. Observe que los nombres de archivo están separados por un punto y coma.
 
@@ -97,7 +97,7 @@ Para obtener más información sobre los caracteres comodín, vea [Cómo: Selecc
 </ItemGroup>
 ```
 
- El atributo `Exclude` solamente afecta a los elementos agregados por el atributo `Include` en el elemento de elemento que contiene ambos. En el ejemplo siguiente no se excluiría el archivo *Form1.cs* , que se ha agregado en el elemento de elemento anterior.
+ El atributo `Exclude` solamente afecta a los elementos agregados por el atributo `Include` en el elemento de elemento que contiene ambos. En el ejemplo siguiente no se excluiría el archivo *Form1.cs*, que se ha agregado en el elemento de elemento anterior.
 
 ```xml
 <Compile Include="*.cs" />

@@ -5,17 +5,17 @@ ms.date: 09/18/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6b611657db104a4b74e784df8925627ff41f3c33
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd63d927e41a8b360eb7d934693bb3c83a30ea4f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535345"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920663"
 ---
 ## <a name="select-the-test-framework-for-a-python-project"></a>Selección del marco de pruebas de un proyecto de Python
 
