@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b858ed302c7fe89049585edb7cc5c4391a4789b
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 10f021e8f8151216cd2728e1e9723b0edb9b3e1f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480621"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950736"
 ---
 # <a name="step-3-set-your-form-properties"></a>Paso 3: Establecer las propiedades del formulario
 
@@ -35,7 +35,7 @@ Después, se usa la ventana **Propiedades** para cambiar la apariencia del formu
 1. Una vez seleccionado el formulario, busque la propiedad **Texto** en la ventana **Propiedades**. En función del orden de la lista, puede que deba desplazarse hacia abajo. Elija **Texto**, escriba **Visor de imágenes** y elija **Entrar**.  Ahora, el formulario debería tener el texto **Visor de imágenes** en la barra de título y la ventana **Propiedades** debería parecerse a la captura de pantalla siguiente.
 
     ![Ventana Propiedades](../ide/media/express_edittextproperty.png)<br>
-   *Ventana *_Propiedades_* __*
+   *Ventana **Propiedades** __*
 
    > [!NOTE]
    > Las propiedades se pueden ordenar en vistas **por categorías** o **alfabéticamente**. Puede alternar entre estas dos vistas con los botones de la ventana **Propiedades**. En este tutorial, resulta más fácil encontrar las propiedades en la vista **alfabética**.
@@ -58,7 +58,7 @@ Después, se usa la ventana **Propiedades** para cambiar la apariencia del formu
    - En la barra de herramientas, elija el botón **Iniciar depuración**, que es similar al siguiente.
 
       ![Botón de la barra de herramientas Iniciar depuración](../ide/media/express_icondebug.png)<br>
-     *Botón de la barra de herramientas *_Iniciar depuración_* __*
+     *Botón de la barra de herramientas **Iniciar depuración** __*
 
      Como antes, el IDE compila y ejecuta la aplicación, y aparece una ventana.
 

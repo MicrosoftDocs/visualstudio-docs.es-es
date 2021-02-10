@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 159fb70b-a344-4ba6-9115-b7eaa16e228f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ca871d9dac2b6f37018af925eece5c1a6f3d1585
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4baf13945b85cff334aa6392a50f6a80fdf50961
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738128"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950443"
 ---
 # <a name="attach_reason"></a>ATTACH_REASON
 Especifica el motivo por el que el motor de depuración (DE) se debe adjuntar a un nodo de programa.
@@ -54,7 +54,7 @@ Adjunte porque se ha iniciado el proceso.
 `ATTACH_REASON_USER`\
 Adjunte debido a una solicitud de usuario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Estos valores se usan como parámetro para los métodos [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) y [Attach](../../../extensibility/debugger/reference/idebugprogramex2-attach.md) .
 
 ## <a name="requirements"></a>Requisitos

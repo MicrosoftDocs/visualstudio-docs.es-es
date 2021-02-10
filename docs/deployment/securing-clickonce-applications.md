@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: a05b5f2f-d1f2-471a-8096-8b11f7554265
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cb992355378e6e124cadef3383633a52a9111c2
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: aa698fc0ac0e46fa645ede54d6608b79dd031655
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350558"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949667"
 ---
 # <a name="secure-clickonce-applications"></a>Protección de las aplicaciones ClickOnce
 Las aplicaciones[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] están sujetas a las restricciones en materia de seguridad de acceso del código de .NET Framework para ayudar a limitar el acceso del código a los recursos y operaciones protegidos. Por esta razón, es importante que comprenda las implicaciones de la seguridad de acceso del código para que pueda escribir las aplicaciones [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] en consecuencia. Las aplicaciones pueden utilizar Plena confianza o zonas parciales, como las zonas de Internet o intranet, para limitar el acceso.
@@ -79,5 +79,5 @@ Las aplicaciones[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)
  Visual Studio incluye [PreEmptive Protection - Dotfuscator Community](../ide/dotfuscator/index.md) de forma gratuita, que puede usar para proteger las aplicaciones ClickOnce mediante ofuscación de código y medidas de protección activas.  Para obtener más información, vea [la sección de ClickOnce de la guía del usuario de Dotfuscator Community](https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/advanced_clickonce.html).
 
 ## <a name="see-also"></a>Vea también
-- [Seguridad e implementación de ClickOnce](../deployment/clickonce-security-and-deployment.md)
+- [Seguridad e implementación ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Selección de una estrategia de implementación de ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)

@@ -14,15 +14,15 @@ helpviewer_keywords:
 - worksheets [Office development in Visual Studio], scrolling records
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 536a3cca0337e8879e64cbc3ffc15b8411c201b6
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 29e6d4decf3d314654c4417f71bd7a2bad358b95
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528169"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949732"
 ---
 # <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>Cómo: desplazarse por los registros de base de datos de una hoja de cálculo
   En el procedimiento siguiente se muestra cómo usar el diseñador para mostrar un solo campo de una tabla de base de datos en una hoja de cálculo de Excel de Microsoft Office, con controles que permiten al usuario final desplazarse por todos los registros.
@@ -45,5 +45,5 @@ ms.locfileid: "97528169"
 
 6. En la pestaña **Windows Forms** del **cuadro de herramientas**, agregue un <xref:System.Windows.Forms.BindingNavigator> control a la hoja de cálculo y configure los controles que desea usar. Para obtener más información, vea [información general sobre el control BindingNavigator &#40;Windows Forms&#41;](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md)

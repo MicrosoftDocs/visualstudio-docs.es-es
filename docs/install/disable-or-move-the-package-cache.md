@@ -13,17 +13,17 @@ helpviewer_keywords:
 ms.assetid: 2429993A-3F0E-41C5-9562-FEA6AE994440
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3f38757931cb22e9072571d96b015f37882dd500
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e328bf8420f9cc7cf207ede6b6447ed291b77745
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114793"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949459"
 ---
 # <a name="disable-or-move-the-package-cache"></a>Deshabilitación o traslado de la caché de paquetes
 

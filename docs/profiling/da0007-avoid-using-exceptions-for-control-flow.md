@@ -10,16 +10,16 @@ f1_keywords:
 ms.assetid: ee8ba8b5-2313-46c9-b129-3f3a2a232898
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a33d5b8d18f18fb6bf7a2420603d994d845ce8f2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 4796fa1e998e75fcbbebe21df394ed41fe4807df
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85520801"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949394"
 ---
 # <a name="da0007-avoid-using-exceptions-for-control-flow"></a>DA0007: Evite utilizar excepciones para el flujo de control
 

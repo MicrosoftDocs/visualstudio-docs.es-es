@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: 0a3b3a1f-e22b-4ac8-b46e-71694e9b2cf1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a9431f6f7a2adfee06f4fa007eafc109d3c32d0
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 626396e12db59dfa8e85285b486c8db280889328
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722664"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949901"
 ---
 # <a name="summary-view---instrumentation-data"></a>Vista Resumen: datos de instrumentación
 La vista Resumen muestra información acerca de las funciones más exigentes en una generación de perfiles. Para obtener más información, incluida una descripción de los vínculos de notificación y las listas de informes, consulte [Vista Resumen](../profiling/summary-view.md).

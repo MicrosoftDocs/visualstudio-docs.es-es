@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 3c6d58b0-36e8-47aa-bfca-b73dd2045d91
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0afb9ff23e2f2533b7c51b500806a025691a232b
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 82275b14fbda0d63e6235b87b55a0dbb5f2416b0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436747"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949433"
 ---
 # <a name="findunderpath-task"></a>FindUnderPath (tarea)
 
@@ -49,7 +49,7 @@ Además de los parámetros mencionados anteriormente, esta tarea hereda los par�
 
 ## <a name="example"></a>Ejemplo
 
-En el ejemplo siguiente, se usa la tarea `FindUnderPath` para determinar si los archivos que se encuentran en el elemento `MyFiles` tienen rutas de acceso que están en la ruta especificada por la propiedad `SearchPath`. Una vez finalizada la tarea, el elemento `FilesNotFoundInPath` contiene el archivo *File1.txt* y el elemento `FilesFoundInPath` contiene el archivo *File2.txt* .
+En el ejemplo siguiente, se usa la tarea `FindUnderPath` para determinar si los archivos que se encuentran en el elemento `MyFiles` tienen rutas de acceso que están en la ruta especificada por la propiedad `SearchPath`. Una vez finalizada la tarea, el elemento `FilesNotFoundInPath` contiene el archivo *File1.txt* y el elemento `FilesFoundInPath` contiene el archivo *File2.txt*.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

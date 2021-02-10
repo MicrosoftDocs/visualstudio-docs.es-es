@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: ba0c162a-61e8-4a0b-811f-4c1d8a5d82f0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 70e66a936ec1eaf1f818ad249aa4eb14b0b63749
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2d56acb3efecc794e38430511dfeb2a84cd62de0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737829"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949602"
 ---
 # <a name="bp_resolution_info"></a>BP_RESOLUTION_INFO
 Describe la información de punto de interrupción enlazada para un punto de interrupción de código o un punto de interrupción de datos.
@@ -45,7 +45,7 @@ public struct BP_RESOLUTION_INFO {
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 `dwFields`\
 Colección de marcas de [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) enumeraciones que especifica qué campos se rellenan.
 
@@ -58,7 +58,7 @@ El objeto [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogr
 `pThread`\
 El objeto [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) que representa el subproceso en el que se está ejecutando la aplicación que contiene el error de punto de interrupción.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)devuelve esta estructura.
 
 ## <a name="requirements"></a>Requisitos

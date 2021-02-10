@@ -7,17 +7,17 @@ ms.topic: quickstart
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 882c3a148164ab88412a817abd72d0608fadf9b2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ee855700502469783a8eab60bb24a28c2e30a9c8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81744982"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950645"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Inicio rápido: Uso de Visual Studio para crear la primera aplicación Vue.js
 
@@ -31,10 +31,10 @@ En esta introducción de entre cinco y diez minutos al entorno de desarrollo int
 * Debe tener instalado Visual Studio y la carga de trabajo de desarrollo de Node.js.
 
     ::: moniker range=">=vs-2019"
-    Si todavía no ha instalado Visual Studio 2019, vaya a la página de  [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/)  para instalarlo de forma gratuita.
+    Si todavía no ha instalado Visual Studio 2019, vaya a la página [Descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/) para instalarlo de forma gratuita.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Si todavía no ha instalado Visual Studio 2017, vaya a la página de  [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/)  para instalarlo de forma gratuita.
+    Si todavía no ha instalado Visual Studio 2017, vaya a la página [Descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/) para instalarlo de forma gratuita.
     ::: moniker-end
 
     Si tiene que instalar la carga de trabajo pero ya tiene Visual Studio, vaya a **Herramientas** > **Obtener herramientas y características…** y se abrirá el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de Node.js** y, después, haga clic en **Modificar**.

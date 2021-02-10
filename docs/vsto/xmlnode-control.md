@@ -11,15 +11,15 @@ helpviewer_keywords:
 - XMLNode control
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 58f9c5db883f55c00236bc202797dcf2ec3003f6
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 9e86bfbe7af122e2557178f5d70256903d0cc740
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528344"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949719"
 ---
 # <a name="xmlnode-control"></a>XMLNode (control)
   **Importante** La información configurada en este tema con respecto a Microsoft Word se presenta exclusivamente para la ventaja y el uso de las personas y organizaciones que se encuentran fuera del Estados Unidos y de sus territorios, o bien el desarrollo de programas que se ejecutan en, productos de Microsoft Word con licencia de Microsoft antes de la 2010 de enero, cuando Microsoft quitó una implementación de funcionalidad específica relacionada con XML personalizado de Es posible que la información relativa a Microsoft Word no sea leída ni utilizada por personas u organizaciones en el Estados Unidos ni en sus territorios que utilicen o desarrollen programas que se ejecutan en, productos de Microsoft Word con licencia de Microsoft a partir del 10 de enero de 2010; Estos productos no se comportarán igual que los productos con licencia antes de esa fecha o adquiridos y con licencia para usarlos fuera del Estados Unidos.
@@ -36,7 +36,7 @@ ms.locfileid: "97528344"
 ## <a name="formatting"></a>Aplicación de formato
  El formato que se puede aplicar a un <xref:Microsoft.Office.Interop.Word.XMLNode> objeto se puede aplicar a un <xref:Microsoft.Office.Tools.Word.XMLNode> control. Esto incluye las fuentes, los estilos de subrayado y los estilos de carácter.
 
-## <a name="events"></a>Eventos
+## <a name="events"></a>Events
  Los eventos siguientes están disponibles para el control <xref:Microsoft.Office.Tools.Word.XMLNode> :
 
 - <xref:Microsoft.Office.Tools.Word.XMLNode.AfterInsert>
@@ -79,7 +79,7 @@ ms.locfileid: "97528344"
 
  Existen las mismas diferencias entre el <xref:Microsoft.Office.Tools.Word.XMLNode.ContextLeave> evento y el evento <xref:Microsoft.Office.Tools.Word.XMLNode.Deselect> .
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Información general sobre elementos y controles host](../vsto/host-items-and-host-controls-overview.md)
 - [Automatizar Word con objetos extendidos](../vsto/automating-word-by-using-extended-objects.md)
 - [XMLNodes (control)](../vsto/xmlnodes-control.md)

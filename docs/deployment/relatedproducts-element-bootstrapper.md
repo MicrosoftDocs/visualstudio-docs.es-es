@@ -20,20 +20,20 @@ helpviewer_keywords:
 ms.assetid: bf152712-4c1e-48bd-9b7f-311cf0fdb832
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ac9f84fa22526ed03d7a2e9b201cc9afc2f476d
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: a7987306d9f7fc25f9f9b783d5b0966ac5015ce0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350574"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949693"
 ---
 # <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;&gt;Elemento productosrelacionados (arranque)
 El `RelatedProducts` elemento define otros productos que dependen o que están incluidos en el producto actual.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ```xml
 <RelatedProducts>
@@ -85,4 +85,4 @@ El `RelatedProducts` elemento define otros productos que dependen o que están i
 ```
 
 ## <a name="see-also"></a>Vea también
-- [\<Product> Element](../deployment/product-element-bootstrapper.md)
+- [Elemento \<Product>](../deployment/product-element-bootstrapper.md)

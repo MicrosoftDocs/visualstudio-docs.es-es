@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: 5c4e8ec3-d0d3-485a-93bd-9060df4eb739
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fc7493d20d09ebd606e3a6ec8e5271981fb6f62
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: c3a2f54f9cdd576a5c4d90c3a471febe516e6549
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150527"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950278"
 ---
 # <a name="call-tree-view---sampling-data"></a>Vista Árbol de llamadas: datos de muestreo
 La vista Árbol de llamadas muestra las rutas de acceso de ejecución de funciones que se recorrieron en la aplicación de la que se generaron perfiles.
