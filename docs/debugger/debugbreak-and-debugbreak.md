@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 9787c795-df94-4f48-bc8d-3bf899b67421
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 376dd75062dc5a78582a23a12e9e025db60b9f3a
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: f4fb03cf4d45e367f0d7a99dbe26705475652651
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96559776"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873150"
 ---
 # <a name="debugbreak-and-__debugbreak"></a>DebugBreak y __debugbreak
 Es posible llamar a las funciones [DebugBreak](/windows/win32/api/debugapi/nf-debugapi-debugbreak) de Win32 o [__debugbreak](/cpp/intrinsics/debugbreak) intrínseca en cualquier punto del código. `DebugBreak` y `__debugbreak` tienen el mismo efecto que Establecer un punto de interrupción en dicha posición.

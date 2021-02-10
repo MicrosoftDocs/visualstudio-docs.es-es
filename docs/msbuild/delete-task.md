@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 916bb2e3-3017-4828-ae27-c0b5c99bbb48
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 41d5312434f87d75db80095ff01734cd37894a94
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: b49ba26cc1e88ab3241094e1fd92be0907e8dd60
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796490"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877348"
 ---
 # <a name="delete-task"></a>Delete (tarea)
 

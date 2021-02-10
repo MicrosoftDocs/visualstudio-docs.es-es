@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: c9b7525a-b1c9-40fc-8bce-77a5b8f960d8
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 99475ac316112f29a73a85b8ff92249a13867852
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 785d1bcfb8fdce5b09e749dcca17ff476a5d3f48
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436730"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877166"
 ---
 # <a name="exec-task"></a>Exec (tarea)
 
@@ -37,7 +37,7 @@ En la tabla siguiente se describen los parámetros de la tarea `Exec`.
 
 |Parámetro|Descripción|
 |---------------|-----------------|
-|`Command`|Parámetro `String` requerido.<br /><br /> Comandos que se van a ejecutar. Pueden ser comandos del sistema, como attrib, o un ejecutable, como *program.exe* , *runprogram.bat* o *setup.msi* .<br /><br /> Este parámetro puede contener varias líneas de comandos. Alternativamente, puede colocar varios comandos en un archivo por lotes y ejecutarlo utilizando este parámetro.|
+|`Command`|Parámetro `String` requerido.<br /><br /> Comandos que se van a ejecutar. Pueden ser comandos del sistema, como attrib, o un ejecutable, como *program.exe*, *runprogram.bat* o *setup.msi*.<br /><br /> Este parámetro puede contener varias líneas de comandos. Alternativamente, puede colocar varios comandos en un archivo por lotes y ejecutarlo utilizando este parámetro.|
 |`ConsoleOutput`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> La salida de cada elemento es una línea de la salida estándar o de la secuencia de errores estándar que emite la herramienta. Solo se captura si `ConsoleToMsBuild` está establecido en `true`.|
 |`ConsoleToMsBuild`|Parámetro `Boolean` opcional.<br /><br /> Si se establece en `true`, la tarea capturará el error estándar y la salida estándar de la herramienta y hará que estén disponibles en el parámetro de salida `ConsoleOutput`.<br /><br />Predeterminado: `false`.|
 |`CustomErrorRegularExpression`|Parámetro `String` opcional.<br /><br /> Especifica una expresión regular que se utiliza para identificar líneas de error en los resultados de la herramienta. Esto resulta útil para las herramientas que generan resultados con un formato poco común.<br /><br />Predeterminado: `null` (sin procesamiento personalizado).|

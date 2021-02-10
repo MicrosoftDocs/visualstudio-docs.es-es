@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: b3144b27-a426-4259-b8ae-5f7991b202b6
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 58e247dc242fcacd7ea94f9f078af05dd56299e0
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: f26c3c1b8256597c795fa8bcd815fd605f895fa5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049082"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878388"
 ---
 # <a name="msbuild-task-reference"></a>Referencia de tareas de MSBuild
 
@@ -30,7 +30,7 @@ Las tareas proporcionan el código que se ejecuta durante el proceso de compilac
 
 Además de los parámetros mostrados en los temas de esta sección, cada tarea también tiene los parámetros siguientes:
 
-| Parámetro | Description |
+| Parámetro | Descripción |
 |-------------------| - |
 | `Condition` | Parámetro `String` opcional.<br /><br /> Expresión de tipo `Boolean` que el motor de MSBuild emplea para determinar si se ejecutará esta tarea. Para obtener información sobre las condiciones admitidas en MSBuild, vea [Condiciones](../msbuild/msbuild-conditions.md). |
 | `ContinueOnError` | Parámetro opcional. Puede contener uno de los siguientes valores:<br /><br /> -   **WarnAndContinue** o **true**. Cuando se produce un error en una tarea, las tareas subsiguientes en el elemento [Target](../msbuild/target-element-msbuild.md) y la compilación continúan ejecutándose, y todos los errores de la tarea se tratan como advertencias.<br />-   **ErrorAndContinue**. Cuando se produce un error en una tarea, las tareas subsiguientes en el elemento `Target` y la compilación continúan ejecutándose, y todos los errores de la tarea se tratan como errores.<br />-   **ErrorAndStop** o **false** (valor predeterminado). Cuando se produce un error en una tarea, las tareas restantes en el elemento `Target` y la compilación no se ejecutan, y se considera que se ha producido un error en todo el elemento `Target` y la compilación.<br /><br /> Las versiones de .NET Framework anteriores a 4.5 solo admiten los valores `true` y `false`.<br /><br /> Para obtener más información, vea [Cómo: Pasar errores por alto en las tareas](../msbuild/how-to-ignore-errors-in-tasks.md). |
@@ -55,7 +55,7 @@ Además de los parámetros mostrados en los temas de esta sección, cada tarea t
 
 - [AspNetCompiler (tarea)](../msbuild/aspnetcompiler-task.md)
 
- Incluye *aspnet_compiler.exe* , una utilidad para precompilar las aplicaciones ASP.NET.
+ Incluye *aspnet_compiler.exe*, una utilidad para precompilar las aplicaciones ASP.NET.
 
 - [AssignCulture (tarea)](../msbuild/assignculture-task.md)
 
@@ -123,7 +123,7 @@ Además de los parámetros mostrados en los temas de esta sección, cada tarea t
 
 - [FindAppConfigFile (tarea)](../msbuild/findappconfigfile-task.md)
 
- Busca el archivo *app.config* , si hay alguno, en las listas proporcionadas.
+ Busca el archivo *app.config*, si hay alguno, en las listas proporcionadas.
 
 - [FindInList (tarea)](../msbuild/findinlist-task.md)
 

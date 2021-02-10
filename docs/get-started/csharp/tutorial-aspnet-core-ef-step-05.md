@@ -10,18 +10,18 @@ ms.topic: tutorial
 ms.devlang: CSharp
 author: ardalis
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: fc0729eccc6f1392561959dcdac0cf13dfc8e04a
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: d2fdd255e35d23b337ce5eaa9f8de6b856e23b25
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189763"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878791"
 ---
 # <a name="step-5-deploy-your-aspnet-core-app-to-azure"></a>Paso 5: Implementación de la aplicación de ASP.NET Core en Azure
 

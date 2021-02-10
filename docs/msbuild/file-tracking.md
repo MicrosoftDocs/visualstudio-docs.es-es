@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e6c66ac0-3464-451f-9192-3b98dca21b4a
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a2fafae7cce22cc41fdd51a4bc727ac6bfb791b9
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: d61c3478515f2c8fa867666e6ff4ff72a0d4e65b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436632"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877127"
 ---
 # <a name="file-tracking"></a>Seguimiento de archivos
 

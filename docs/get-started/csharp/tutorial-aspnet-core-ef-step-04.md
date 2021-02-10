@@ -10,18 +10,18 @@ ms.topic: tutorial
 ms.devlang: CSharp
 author: ardalis
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 9a2ee576808698e19726cadfea7ba560ce3bdb7c
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: 9625ce43d94158732c2d6af738a1f1abc84f666e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91780943"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878778"
 ---
 # <a name="step-4-expose-a-web-api-from-your-aspnet-core-app"></a>Paso 4: Exposición de una API web desde la aplicación de ASP.NET Core
 

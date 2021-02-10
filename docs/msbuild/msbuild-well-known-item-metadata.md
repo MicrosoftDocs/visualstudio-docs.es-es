@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: b5e791b5-c68f-4978-ad8a-9247d03bb6c0
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 047fe5ef6edc57681b8382a9f2a1069991e0f513
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: d9ca2249e6119e27574791a2cbd9e8b09a9bde63
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049018"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878189"
 ---
 # <a name="msbuild-well-known-item-metadata"></a>Metadatos de los elementos conocidos de MSBuild
 

@@ -17,17 +17,17 @@ f1_keywords:
 ms.assetid: 9c81a777-9c95-4934-b517-c60c6dc78799
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b26e837ec2c4155c1be0b3639368c4315d2aecd3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 751f87075d4e9dcbb7daa94f39a2f38c5083fb3c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85418930"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878453"
 ---
 # <a name="remove-visual-studio"></a>Quitar Visual Studio
 

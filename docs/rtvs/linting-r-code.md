@@ -7,15 +7,15 @@ f1_keywords:
 - vs.toolsoptionspages.text_editor.r.lint
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: aecf9d95fb8a3b2cda659e2694bff145424e150b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1c32bffbd25a39ff2053dea22930365860ed04a7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62970748"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873663"
 ---
 # <a name="lint-r-code-in-visual-studio"></a>Detectar errores de código en Visual Studio
 

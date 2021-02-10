@@ -16,15 +16,15 @@ ms.assetid: 3870a8fd-4afa-4f1e-a811-9fdf41a9e82d
 monikerRange: vs-2019
 author: profexorgeek
 ms.author: jusjohns
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b9f8182646af4facb0f2f86c74f95dff091d55d1
-ms.sourcegitcommit: cea9e5787ff33e0e18aa1942bf4236748e0ef547
+ms.openlocfilehash: 101875b3a600a71c832498d05073187d2cf0b774
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92199711"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873910"
 ---
 # <a name="use-visual-studio-search"></a>Uso de la búsqueda de Visual Studio
 
@@ -43,28 +43,28 @@ A diferencia de otras características de búsqueda, como Buscar en archivos o B
 
 Puede usar el cuadro de búsqueda de Visual Studio para buscar valores, opciones y elementos de configuración similares. Por ejemplo, busque *cambiar tema* para buscar y abrir rápidamente el cuadro de diálogo que permite cambiar el tema de color de Visual Studio, como se muestra en la siguiente captura de pantalla:
 
-:::image type="content" source="media/visual-studio-search-options.png" alt-text="Cuadro de búsqueda de Visual Studio":::
+:::image type="content" source="media/visual-studio-search-options.png" alt-text="Búsqueda de valores y opciones de Visual Studio":::
 
 > [!TIP]
 > En la mayoría de los casos, la búsqueda de Visual Studio también va a recordarle el menú, las teclas de método abreviado y la ubicación de cada elemento de los resultados.
 
 Puede usar el cuadro de búsqueda de Visual Studio para buscar elementos de menú y comandos. Por ejemplo, busque *limpiar sol* para buscar y ejecutar rápidamente el comando Limpiar solución. Los resultados de la búsqueda también ofrecen un recordatorio de dónde encontrar este comando en los menús, como se muestra en la siguiente captura de pantalla:
 
-:::image type="content" source="media/visual-studio-search-menu.png" alt-text="Cuadro de búsqueda de Visual Studio":::
+:::image type="content" source="media/visual-studio-search-menu.png" alt-text="Búsqueda de elementos de menú y comandos de Visual Studio":::
 
 Por último, puede buscar ventanas o paneles que pueda haber cerrado accidentalmente. Por ejemplo, busque *prueba* para buscar y abrir la ventana Explorador de pruebas:
 
-:::image type="content" source="media/visual-studio-search-window.png" alt-text="Cuadro de búsqueda de Visual Studio":::
+:::image type="content" source="media/visual-studio-search-window.png" alt-text="Búsqueda de ventanas y paneles de Visual Studio":::
 
 ## <a name="search-files-and-code"></a>Búsqueda en archivos y código
 
 La búsqueda de Visual Studio también busca en los elementos de la solución por nombre de archivo, código, método y otras coincidencias. En la captura de pantalla siguiente, una búsqueda de *markdown* ha encontrado el archivo MarkdownMetaExtractor.cs, la clase `MarkdownMetaExtractor` y dos métodos dentro de la solución:
 
-:::image type="content" source="media/visual-studio-search-files.png" alt-text="Cuadro de búsqueda de Visual Studio":::
+:::image type="content" source="media/visual-studio-search-files.png" alt-text="Búsqueda en archivos con la búsqueda de Visual Studio":::
 
 También puede realizar una búsqueda de mayúsculas y minúsculas combinadas. En la siguiente captura de pantalla, una búsqueda de *FSS* ha encontrado un archivo **F** older **S** ize **S** canner, una clase y un método:
 
-:::image type="content" source="media/visual-studio-search-camel.png" alt-text="Cuadro de búsqueda de Visual Studio":::
+:::image type="content" source="media/visual-studio-search-camel.png" alt-text="Búsqueda de mayúsculas y minúsculas combinadas con la búsqueda de Visual Studio":::
 
 ## <a name="see-also"></a>Vea también
 

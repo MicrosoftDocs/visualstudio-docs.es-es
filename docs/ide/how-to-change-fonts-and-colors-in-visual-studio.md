@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 60d91ba1-244b-4c43-847f-60b744f1352a
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c52be25c007a16d7e6221663c434767c02d8d50
-ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
+ms.openlocfilehash: 943bc9aa6efbdf5fcec038d469d39a3361315afb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97683900"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875554"
 ---
 # <a name="how-to-change-fonts-colors-and-themes-in-visual-studio"></a>Procedimiento Cambio de fuentes, colores y temas en Visual Studio
 

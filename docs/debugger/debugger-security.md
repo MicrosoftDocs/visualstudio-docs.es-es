@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: d4fc3c43-e844-419c-8dbb-551cc2a9b09e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f6d0c09a7f54157bd2ace9a6be09a357eb436ceb
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 9d204f99dd955609dcc082d5d9bd607cfad75bb1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96559750"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873059"
 ---
 # <a name="debugger-security"></a>Seguridad del depurador
 La posibilidad de depurar otro proceso le confiere amplios poderes que, de otra forma, no tendría, especialmente al depurar de forma remota. Un depurador malintencionado podría infligir daños generalizados en el equipo depurado.

@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 9a497032-cf73-441e-923b-4bbd5d37a6da
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 43c6bf4e817f78867534abdca69c7e975397d287
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 82e384c714b02f02adf105e0d23551ee66caa5df
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726974"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872565"
 ---
 # <a name="debugging-native-code-faqs"></a>Preguntas más frecuentes sobre la depuración de código nativo
 Los siguientes temas contienen repuestas a algunas preguntas frecuentes:

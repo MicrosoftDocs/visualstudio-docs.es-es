@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: ab354047-053e-4f94-8ac1-26e761442b6f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f62425913e65207953554a35054399fb8a6d2af4
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 495468003de9ab848ce3d3ffad134108ea1781b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728478"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872773"
 ---
 # <a name="about-the-registers-window-in-visual-studio-c-c-visual-basic-f"></a>Acerca de la ventana Registros en Visual Studio (C#, C++, Visual Basic y F#)
 

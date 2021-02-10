@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: bf008cdc-03f8-496b-868d-4c2644f1d7ee
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a91f262c34d9bdc69d5ce3319f05cdb3f0b952f
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: ceb349eaa708aa54088174cd9b82b3c8047c28b3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726532"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872073"
 ---
 # <a name="dump-file-summary-extensibility-api"></a>API de extensibilidad de resumen de archivos de volcado de memoria
 Mediante las API de extensibilidad de esta sección, puede ampliar el sistema de proyectos .Exe y la página **Resumen del volcado de memoria** para utilizarlos con su propio motor de depuración.

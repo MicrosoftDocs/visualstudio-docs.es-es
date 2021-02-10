@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 9d175bc2-1d95-4c47-9bc3-9755af968a9c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fed6580219964ab71f5a5010060c1af193375df
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: e7a133b4b59b11525a7f7ba776b3b4a4a1e6a31e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727143"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873215"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Depurar aplicaciones multiproceso en Visual Studio
 Un subproceso es una secuencia de instrucciones a la que el sistema operativo concede tiempo de procesador. Cada proceso que se ejecuta en el sistema operativo contiene al menos un subproceso. Los procesos que tienen más de un subproceso se denominan multiproceso.

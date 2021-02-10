@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 14c2a786-c23a-4b2d-acad-8c32a856c70d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 692902b2d2b612c71c2d1dc0f936c7550f430847
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: e20d3f83d6e68211d1b48f63747bea80ee6b25d9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903408"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876334"
 ---
 # <a name="messages-view"></a>Vista Mensajes
 Cada ventana tiene una secuencia de mensajes asociada. La ventana de vista Mensajes muestra esta secuencia de mensajes. Se muestran el identificador de ventana, el código del mensaje y el mensaje. También puede crear una vista Mensajes para un subproceso o un proceso. Esto permite ver los mensajes enviados a todas las ventanas que pertenecen a un proceso o un subproceso específico, lo que es especialmente útil para capturar los mensajes de inicialización de la ventana.

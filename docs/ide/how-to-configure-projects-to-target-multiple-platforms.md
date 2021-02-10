@@ -11,37 +11,37 @@ helpviewer_keywords:
 ms.assetid: affa2392-7aed-45ac-9ffa-1d8e0496d590
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ce4dfbf2808071d47e1f84eef660d936181227f3
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 3255af161bd37d16eefeb6d41115cf0114059e81
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136711"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875437"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Procedimiento Configuración de proyectos para destinarlos a varias plataformas
 
-Visual Studio proporciona una forma para que una solución tenga como destino varias arquitecturas de CPU diferentes (o plataformas) a la vez. Se tiene acceso a las propiedades que las establecerán a través del cuadro de diálogo **Configuration Manager** .
+Visual Studio proporciona una forma para que una solución tenga como destino varias arquitecturas de CPU diferentes (o plataformas) a la vez. Se tiene acceso a las propiedades que las establecerán a través del cuadro de diálogo **Configuration Manager**.
 
 ## <a name="target-a-platform"></a>Elegir una plataforma
 
 El cuadro de diálogo **Configuration Manager** permite crear y establecer plataformas y configuraciones de nivel de proyecto y solución. Cada combinación de destinos y configuraciones de nivel de solución puede tener un conjunto único de propiedades asociadas, lo que le permite cambiar fácilmente entre, por ejemplo, una configuración de lanzamiento que tiene como destino una plataforma [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)], una configuración de lanzamiento que tiene como destino una plataforma x86 y una configuración de depuración que tiene como destino una plataforma x86.
 
-1. En el menú **Compilar** , haga clic en **Configuration Manager** .
+1. En el menú **Compilar**, haga clic en **Configuration Manager**.
 
-2. En el cuadro **Plataforma de soluciones activas** , seleccione la plataforma que quiere establecer como destino de la solución o seleccione **\<New>** para crear una plataforma. Visual Studio compilará la aplicación para que tenga como destino la plataforma que se establece como la plataforma activa en el cuadro de diálogo **Configuration Manager** .
+2. En el cuadro **Plataforma de soluciones activas**, seleccione la plataforma que quiere establecer como destino de la solución o seleccione **\<New>** para crear una plataforma. Visual Studio compilará la aplicación para que tenga como destino la plataforma que se establece como la plataforma activa en el cuadro de diálogo **Configuration Manager**.
 
 ## <a name="remove-a-platform"></a>Quitar una plataforma
 
-Si se da cuenta de que no necesita una plataforma, puede quitarla mediante el cuadro de diálogo **Configuration Manager** . Esta acción quitará todas las configuraciones de soluciones y proyectos que haya configurado para esa combinación de configuración y destino.
+Si se da cuenta de que no necesita una plataforma, puede quitarla mediante el cuadro de diálogo **Configuration Manager**. Esta acción quitará todas las configuraciones de soluciones y proyectos que haya configurado para esa combinación de configuración y destino.
 
-1. En el menú **Compilar** , haga clic en **Configuration Manager** .
+1. En el menú **Compilar**, haga clic en **Configuration Manager**.
 
-2. En el cuadro **Plataforma de soluciones activas** , seleccione **\<Edit>** . Se abre el cuadro de diálogo **Editar plataformas de solución** .
+2. En el cuadro **Plataforma de soluciones activas**, seleccione **\<Edit>** . Se abre el cuadro de diálogo **Editar plataformas de solución**.
 
-3. Haga clic en la plataforma que quiera quitar y haga clic en **Quitar** .
+3. Haga clic en la plataforma que quiera quitar y haga clic en **Quitar**.
 
 ## <a name="target-multiple-platforms-with-one-solution"></a>Establecer como destino varias plataformas con una solución
 
@@ -51,7 +51,7 @@ Dado que puede cambiar la configuración en función de la combinación de confi
 
 1. Use **Configuration Manager** para agregar al menos dos plataformas de destino para la solución.
 
-2. Seleccione la plataforma que quiera establecer como destino de la lista **Plataforma de soluciones activas** .
+2. Seleccione la plataforma que quiera establecer como destino de la lista **Plataforma de soluciones activas**.
 
 3. Compile la solución.
 

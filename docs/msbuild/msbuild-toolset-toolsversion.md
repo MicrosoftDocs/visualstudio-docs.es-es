@@ -12,19 +12,19 @@ helpviewer_keywords:
 ms.assetid: 40040ee7-4620-4043-a6d8-ccba921421d1
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e0b27a1914d85f5fde8ef6c5c467d73197c084ce
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: b146913365583d49f1d70ebd5ca316f54ca89049
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049021"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878232"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Conjunto de herramientas de MSBuild (ToolsVersion)
 
-MSBuild usa un conjunto de herramientas de tareas, destinos y herramientas para compilar una aplicación. Normalmente, un conjunto de herramientas de MSBuild incluye un archivo *microsoft.common.tasks* , un archivo *microsoft.common.targets* y compiladores como *csc.exe* y *vbc.exe*. La mayoría de los conjuntos de herramientas se pueden usar para compilar aplicaciones correspondientes a más de una versión de .NET Framework y a más de una plataforma de sistema. Sin embargo, el conjunto de herramientas de MSBuild 2.0 solo se puede usar para las aplicaciones de .NET Framework 2.0.
+MSBuild usa un conjunto de herramientas de tareas, destinos y herramientas para compilar una aplicación. Normalmente, un conjunto de herramientas de MSBuild incluye un archivo *microsoft.common.tasks*, un archivo *microsoft.common.targets* y compiladores como *csc.exe* y *vbc.exe*. La mayoría de los conjuntos de herramientas se pueden usar para compilar aplicaciones correspondientes a más de una versión de .NET Framework y a más de una plataforma de sistema. Sin embargo, el conjunto de herramientas de MSBuild 2.0 solo se puede usar para las aplicaciones de .NET Framework 2.0.
 
 ## <a name="toolsversion-attribute"></a>Atributo ToolsVersion
 
@@ -65,7 +65,7 @@ MSBuild usa un conjunto de herramientas de tareas, destinos y herramientas para 
 
  Puede modificar el valor de `MSBuildToolsPath` definiendo un conjunto de herramientas personalizado. Para más información, consulte [Configuraciones de conjuntos de herramientas estándar y personalizados](../msbuild/standard-and-custom-toolset-configurations.md).
 
- Al crear una solución en la línea de comandos y especifique un `ToolsVersion` para *msbuild.exe* , todos los proyectos y sus dependencias proyecto a proyecto se crean según la que `ToolsVersion`, aunque cada proyecto de la solución Especifique su propia `ToolsVersion`. Para definir el valor `ToolsVersion` según el proyecto, consulte [Invalidar la configuración de ToolsVersion](../msbuild/overriding-toolsversion-settings.md).
+ Al crear una solución en la línea de comandos y especifique un `ToolsVersion` para *msbuild.exe*, todos los proyectos y sus dependencias proyecto a proyecto se crean según la que `ToolsVersion`, aunque cada proyecto de la solución Especifique su propia `ToolsVersion`. Para definir el valor `ToolsVersion` según el proyecto, consulte [Invalidar la configuración de ToolsVersion](../msbuild/overriding-toolsversion-settings.md).
 
  El atributo `ToolsVersion` también se usa para la migración del proyecto. Por ejemplo, si abre un proyecto de Visual Studio 2008 en Visual Studio 2010, el archivo de proyecto se actualiza para incluir ToolsVersion="4.0". Si después intenta abrir ese proyecto en Visual Studio 2008, este no reconocerá el atributo `ToolsVersion` actualizado y compilará el proyecto como si dicho atributo todavía estuviese establecido en 3.5.
 

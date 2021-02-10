@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e72e6506-4a11-4edf-ae8d-cfb5a3b9d8a0
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 336c23a5e1357e8e425a74c0954d3c0e28f8a930
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: c033c4d0ee36b9cb01618dd3ac3183e8782c70d7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049130"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878427"
 ---
 # <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>Tareas insertadas de MSBuild con RoslynCodeTaskFactory
 

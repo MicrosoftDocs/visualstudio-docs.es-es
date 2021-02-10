@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: d0bcfc3c-14fa-455e-805c-63ccffa4a3bf
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4eb35554c61c532e0d004e5c974345564e17d4ae
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: ba6a71373026a5a41905efc7c91520a9f6b7c5c3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049004"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878212"
 ---
 # <a name="msbuild-transforms"></a>Transformaciones de MSBuild
 
@@ -34,7 +34,7 @@ En el ejemplo siguiente, una lista de archivos *.resx* se transforma en una list
 @(RESXFile->'%(filename).resources')
 ```
 
-Por ejemplo, si los elementos de la lista de elementos @(RESXFile) son *Form1.resx* , *Form2.resx* y *Form3.resx* , las salidas en la lista transformada serán  *Form1.resources* , *Form2.resources* y *Form3.resources*.
+Por ejemplo, si los elementos de la lista de elementos @(RESXFile) son *Form1.resx*, *Form2.resx* y *Form3.resx*, las salidas en la lista transformada serán  *Form1.resources*, *Form2.resources* y *Form3.resources*.
 
 > [!NOTE]
 > Puede especificar un separador personalizado para obtener una lista de elementos transformada de la misma manera que especifica un separador de una lista de elementos estándar. Por ejemplo, para separar una lista de elementos transformada mediante una coma (,) en lugar del punto y coma predeterminado (;), use el siguiente XML: `@(RESXFile->'Toolset\%(filename)%(extension)', ',')`
@@ -47,7 +47,7 @@ Por ejemplo, si los elementos de la lista de elementos @(RESXFile) son *Form1.re
 @(RESXFile->'Toolset\%(filename)%(extension)')
 ```
 
- Por ejemplo, si los elementos que están contenidos en la lista de elementos `RESXFile` son *Project1\Form1.resx* , *Project1\Form2.resx* y *Project1\Form3.text* , las salidas en la lista transformada serán *Toolset\Form1.resx* , *Toolset\Form2.resx* y *Toolset\Form3.text*.
+ Por ejemplo, si los elementos que están contenidos en la lista de elementos `RESXFile` son *Project1\Form1.resx*, *Project1\Form2.resx* y *Project1\Form3.text*, las salidas en la lista transformada serán *Toolset\Form1.resx*, *Toolset\Form2.resx* y *Toolset\Form3.text*.
 
 ## <a name="dependency-analysis"></a>Análisis de dependencias
 
