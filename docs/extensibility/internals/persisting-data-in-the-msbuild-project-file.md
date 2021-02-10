@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6a920cb7-453d-4ffd-af1c-6f3084bd03f7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 20c6d79e6ea59b4993b4d6bfc5e165bdd952a3f9
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: d2011cd8686f3210ee534fdaefaa26d2f3b4ad5e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97878084"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954454"
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>Conservación de datos en el archivo de proyecto de MSBuild
 Un subtipo de proyecto puede necesitar conservar los datos específicos del subtipo en el archivo de proyecto para su uso posterior. Un subtipo de proyecto usa la persistencia del archivo de proyecto para cumplir los siguientes requisitos:
@@ -78,5 +78,5 @@ Un subtipo de proyecto puede necesitar conservar los datos específicos del subt
       </ProjectExtensions>
     ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Subtipos de proyecto](../../extensibility/internals/project-subtypes.md)

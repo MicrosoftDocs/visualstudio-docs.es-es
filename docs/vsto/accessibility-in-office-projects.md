@@ -14,15 +14,15 @@ helpviewer_keywords:
 - accessibility [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: de877ccc2d2a036bf03b0888a7edf455b17788a4
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 4021517aa296f3c1e6355b82260b00590181f4cb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847369"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955156"
 ---
 # <a name="accessibility-in-office-projects"></a>Accesibilidad en proyectos de Office
 
@@ -50,7 +50,7 @@ En la mayoría de los casos, los proyectos de Office en Visual Studio cumplen co
 
      Aparece un mensaje que indica que debe reiniciar Visual Studio para que el cambio surta efecto.
 
-4. Haga clic en **Aceptar**.
+4. Haga clic en **OK**.
 
 5. Reinicie Visual Studio y vuelva a abrir el proyecto.
 
@@ -76,7 +76,7 @@ En la mayoría de los casos, los proyectos de Office en Visual Studio cumplen co
 
  Para obtener más información sobre los paneles de acciones y los paneles de tareas personalizados, vea [información general del panel de acciones](../vsto/actions-pane-overview.md) y [paneles de tareas personalizados](../vsto/custom-task-panes.md).
 
-### <a name="display-modes"></a>Modos de presentación
+### <a name="display-modes"></a>Modos de pantalla
 
 Visual Studio tiene las siguientes limitaciones relacionadas con los modos de presentación:
 

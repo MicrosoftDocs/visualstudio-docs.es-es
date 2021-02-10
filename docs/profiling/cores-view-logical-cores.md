@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 8a471929-9a26-43e4-adef-d3b40f00f9e3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a9b5d6da7793cc5f472a124cdecde434c35fd62
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 6b18e05213ef36f1dea3011309e1ebd9def0a4ab
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720792"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955403"
 ---
 # <a name="cores-view-logical-cores"></a>Núcleos lógicos de la vista Núcleos
 Cada nombre de canal representa uno de los núcleos lógicos que existen en el sistema para el que se genera el perfil. La nomenclatura cuenta desde 0 hasta el número total de núcleos lógicos. Por ejemplo, un sistema de cuatro núcleos contará desde el núcleo lógico 0 hasta el núcleo lógico 3.

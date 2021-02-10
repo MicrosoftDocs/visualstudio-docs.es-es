@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 7b5578b4-a20a-4b94-ad4c-98687ac133b9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca457c32751fb1f9179a9c09b624c444efab627d
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 8a2f00cc4e968551983a8b943d256b49e33d7d6d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876839"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954643"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>Esquematización en un servicio de lenguaje heredado
 La esquematización permite contraer un programa complejo en una introducción o un esquema. Por ejemplo, en C# todos los métodos se pueden contraer en una sola línea, mostrando solo la firma del método. Además, las estructuras y las clases se pueden contraer para mostrar solo los nombres de las estructuras y las clases. Dentro de un único método, la lógica compleja se puede contraer para mostrar el flujo global mostrando solo la primera línea de instrucciones, como `foreach` , `if` y `while` .
@@ -119,6 +119,6 @@ namespace MyLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Características del servicio de lenguaje heredado](../../extensibility/internals/legacy-language-service-features1.md)
 - [Registro de un servicio de lenguaje heredado](../../extensibility/internals/registering-a-legacy-language-service1.md)

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 66d54c2c-9302-47c8-9975-f30ed988ab29
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7379436ae0da57d7f8c47ce8484c810a53a0a453
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 62ca404442d6bf6080972f03c3e2fd0da2621e20
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723359"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954896"
 ---
 # <a name="idebugprocessex2detach"></a>IDebugProcessEx2::Detach
 Este método informa al proceso de que una sesión ya no está depurando el proceso.
@@ -28,7 +28,7 @@ Este método informa al proceso de que una sesión ya no está depurando el proc
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT Detach( 
+HRESULT Detach( 
    IDebugSession2* pSession
 );
 ```
@@ -46,7 +46,7 @@ de Valor que identifica de forma única la sesión de la que se va a desasociar 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  La interfaz que se pasa `pSession` se trata únicamente como una cookie, un valor que identifica de forma única el administrador de depuración de la sesión que se adjuntó originalmente a este proceso; ninguno de los métodos de la interfaz proporcionada es funcional.
 
 ## <a name="see-also"></a>Vea también

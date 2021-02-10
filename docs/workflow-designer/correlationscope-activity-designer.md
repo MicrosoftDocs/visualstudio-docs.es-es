@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 75f20664-9042-464d-8e2b-148d365a2286
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cc85dbb5c774f6afa956f51852ef15d4c7ccebc0
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: e9edd755465cf812c1572c62f1c6335fc5295281
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438118"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955531"
 ---
 # <a name="correlationscope-activity-designer"></a>Diseñador de actividades CorrelationScope
 
@@ -29,7 +29,7 @@ La propiedad <xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWit
 
 ### <a name="use-the-correlationscope-activity-designer"></a>Usar el diseñador de actividades CorrelationScope
 
-El diseñador de actividades **CorrelationScope** se puede encontrar en la categoría **Mensajería** del **cuadro de herramientas** , al que se tiene acceso al hacer clic en la pestaña **cuadro de herramientas** en el lado izquierdo del diseñador de flujo de trabajo. Como alternativa, seleccione **cuadro de herramientas** en el menú **Ver** o presione **Ctrl** + **Alt** + **X**.
+El diseñador de actividades **CorrelationScope** se puede encontrar en la categoría **Mensajería** del **cuadro de herramientas**, al que se tiene acceso al hacer clic en la pestaña **cuadro de herramientas** en el lado izquierdo del diseñador de flujo de trabajo. Como alternativa, seleccione **cuadro de herramientas** en el menú **Ver** o presione **Ctrl** + **Alt** + **X**.
 
 El diseñador de actividades **CorrelationScope** se puede arrastrar desde el **cuadro de herramientas** y colocarlo en la superficie de diseñador de flujo de trabajo. Esto crea una <xref:System.ServiceModel.Activities.CorrelationScope> actividad con un valor **displayName** predeterminado de CorrelationScope. <xref:System.Activities.Activity.DisplayName%2A>Se puede editar en el encabezado del diseñador de actividades **CorrelationScope** o en el cuadro **displayName** de la ventana **propiedades** .
 
@@ -43,11 +43,11 @@ En la tabla siguiente se muestran las propiedades <xref:System.ServiceModel.Acti
 
 |Nombre de propiedad|Obligatorio|Uso|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|Falso|El nombre descriptivo opcional de la actividad de la clase <xref:System.ServiceModel.Activities.InitializeCorrelation>.|
-|<xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A>|Falso|Especifica la propiedad <xref:System.ServiceModel.Activities.CorrelationHandle> que se utiliza para administrar las actividades de mensajería secundarias. Si no se establece esta propiedad, <xref:System.ServiceModel.Activities.CorrelationScope> crea una propiedad <xref:System.ServiceModel.Activities.CorrelationHandle> implícita automáticamente.|
-|<xref:System.ServiceModel.Activities.CorrelationScope.Body%2A>|Falso|Especifica las actividades dentro del ámbito de la correlación.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|El nombre descriptivo opcional de la actividad de la clase <xref:System.ServiceModel.Activities.InitializeCorrelation>.|
+|<xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A>|False|Especifica la propiedad <xref:System.ServiceModel.Activities.CorrelationHandle> que se utiliza para administrar las actividades de mensajería secundarias. Si no se establece esta propiedad, <xref:System.ServiceModel.Activities.CorrelationScope> crea una propiedad <xref:System.ServiceModel.Activities.CorrelationHandle> implícita automáticamente.|
+|<xref:System.ServiceModel.Activities.CorrelationScope.Body%2A>|False|Especifica las actividades dentro del ámbito de la correlación.|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)
 - [Aparecen](../workflow-designer/receive-activity-designer.md)

@@ -17,15 +17,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], custom XML parts
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9b2f3b4e72f9255099ed7190867faba5585ced4c
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 11202da11cee72ec368ac525fce13fd084ab99be
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847435"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954259"
 ---
 # <a name="how-to-add-custom-xml-parts-to-document-level-customizations"></a>Cómo: agregar elementos XML personalizados a personalizaciones de nivel de documento
   Puede almacenar datos XML en un libro de Microsoft Office Excel o un documento de Microsoft Office Word creando un elemento XML personalizado en una personalización de nivel de documento. Para obtener más información, vea [información general sobre los elementos XML personalizados](../vsto/custom-xml-parts-overview.md).

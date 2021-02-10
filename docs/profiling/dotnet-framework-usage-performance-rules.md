@@ -7,16 +7,16 @@ ms.topic: conceptual
 ms.assetid: ab573755-6370-48aa-853d-a7321c424c79
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cb6bb10f948e7aa9d97491949222c3cb0d15ba66
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: f8ec2756353ac56b3b5d44e2a50c4d4f5b1c7ebf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801296"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955390"
 ---
 # <a name="net-framework-usage-performance-rules"></a>Reglas de rendimiento de uso de .NET Framework
 Las reglas de rendimiento de la categoría de uso de .NET Framework identifican los métodos específicos que se pueden optimizar, así como los patrones de uso más generales, como la recolección de elementos no utilizados y la contención de bloqueo, que se pueden investigar para detectar problemas de rendimiento.

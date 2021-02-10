@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 5b98e908-fd15-49a6-9010-933c9b948085
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 482ea1b2fb2eb7ddad46bd99694e4599e9fd9bbe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d0e168066cc01a9e557bc0b4f301ae6218664552
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733475"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955039"
 ---
 # <a name="idebugcomplussymbolprovider"></a>IDebugComPlusSymbolProvider
 Representa un proveedor de símbolos COM+ con métodos que son específicos del código administrado.

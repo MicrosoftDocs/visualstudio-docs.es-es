@@ -19,15 +19,15 @@ helpviewer_keywords:
 - Microsoft Office Menu
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9f0fa33318e2407b01178971c6965b8ea035dd42
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 830ecea036ee972321d98994ab36924e0c61a09b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848175"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954272"
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>Cómo: agregar controles a la vista backstage
   Puede usar el diseñador de la cinta de opciones para agregar controles al menú que se abre al hacer clic en la pestaña **archivo** . Al ejecutar la aplicación, los controles que se agregan a la pestaña **archivo** muestran un grupo denominado **Complementos**.
@@ -38,7 +38,7 @@ ms.locfileid: "96848175"
 
 ### <a name="to-add-controls-to-backstage-view"></a>Para agregar controles a la vista backstage
 
-1. Abra el elemento de la cinta de opciones en Vista de diseño.
+1. Abra el elemento de la cinta de opciones en vista Diseño.
 
      Para obtener información sobre cómo agregar un elemento **cinta (diseñador visual)** al proyecto, vea [Cómo: Introducción a la personalización de la cinta de opciones](../vsto/how-to-get-started-customizing-the-ribbon.md).
 

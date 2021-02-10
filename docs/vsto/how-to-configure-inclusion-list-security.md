@@ -12,15 +12,15 @@ helpviewer_keywords:
 - inclusion lists [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1f9eca5150e019906805adf40e5c9b6af8a3c14e
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ddbc74c00c1e1f74ce078586d624e2da4dbd8163
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846732"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954025"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>Cómo: configurar la seguridad de la lista de inclusión
   Si tiene permisos de administrador, puede configurar el [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] aviso de confianza para controlar si los usuarios finales tienen la opción de instalar soluciones de Office guardando una decisión de confianza en la lista de inclusión. Para obtener información sobre las listas de inclusión, consulte [confiar en las soluciones de Office mediante listas de inclusión](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).
@@ -54,10 +54,10 @@ ms.locfileid: "96846732"
 
 3. Agregue las siguientes subclaves como **valor de cadena**, si aún no existen, con los valores asociados.
 
-    |Subclave de valor de cadena|Valor|
+    |Subclave de valor de cadena|Value|
     |-------------------------|-----------|
     |**Internet**|**AuthenticodeRequired**|
-    |**UntrustedSites**|**Deshabilitado**|
+    |**UntrustedSites**|**Deshabilitada**|
     |**MyComputer**|**Habilitado**|
     |**LocalIntranet**|**Habilitado**|
     |**TrustedSites**|**Habilitado**|
@@ -113,9 +113,9 @@ ms.locfileid: "96846732"
 
 3. Agregue las siguientes subclaves como **valor de cadena**, si aún no existen, con los valores asociados.
 
-    |Subclave de valor de cadena|Valor|
+    |Subclave de valor de cadena|Value|
     |-------------------------|-----------|
-    |**UntrustedSites**|**Deshabilitado**|
+    |**UntrustedSites**|**Deshabilitada**|
     |**Internet**|**AuthenticodeRequired**|
     |**MyComputer**|**AuthenticodeRequired**|
     |**LocalIntranet**|**AuthenticodeRequired**|
@@ -170,13 +170,13 @@ ms.locfileid: "96846732"
 
 3. Agregue las siguientes subclaves como **valor de cadena**, si aún no existen, con los valores asociados.
 
-    |Subclave de valor de cadena|Valor|
+    |Subclave de valor de cadena|Value|
     |-------------------------|-----------|
-    |**UntrustedSites**|**Deshabilitado**|
-    |**Internet**|**Deshabilitado**|
-    |**MyComputer**|**Deshabilitado**|
-    |**LocalIntranet**|**Deshabilitado**|
-    |**TrustedSites**|**Deshabilitado**|
+    |**UntrustedSites**|**Deshabilitada**|
+    |**Internet**|**Deshabilitada**|
+    |**MyComputer**|**Deshabilitada**|
+    |**LocalIntranet**|**Deshabilitada**|
+    |**TrustedSites**|**Deshabilitada**|
 
 ### <a name="to-disable-the-inclusion-list-programmatically"></a>Para deshabilitar la lista de inclusión mediante programación
 
@@ -209,6 +209,6 @@ ms.locfileid: "96846732"
 
 3. Compile y ejecute la aplicación.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Confiar en soluciones de Office mediante listas de inclusión](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)
 - [Proteger soluciones de Office](../vsto/securing-office-solutions.md)

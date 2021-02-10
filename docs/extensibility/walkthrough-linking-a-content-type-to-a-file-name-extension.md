@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 21ee64ce-9afe-4b08-94a0-8389cc4dc67c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 478ecc6c2238703d1cacc8e649072d669a41c590
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: fb65f581994c6ba90cbb49166612d81bc00de803
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877915"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955507"
 ---
 # <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>Tutorial: vincular un tipo de contenido a una extensión de nombre de archivo
 Puede definir su propio tipo de contenido y vincular una extensión de nombre de archivo a él mediante las extensiones del editor Managed Extensibility Framework (MEF). En algunos casos, la extensión de nombre de archivo ya está definida por un servicio de lenguaje. Sin embargo, para usarlo con MEF, debe vincularlo a un tipo de contenido.
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
  A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS después. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-mef-project"></a>Creación de un proyecto MEF
@@ -103,5 +103,5 @@ Puede definir su propio tipo de contenido y vincular una extensión de nombre de
     [ContentType("hid")]
     ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Puntos de extensión de editor y servicio de lenguaje](../extensibility/language-service-and-editor-extension-points.md)

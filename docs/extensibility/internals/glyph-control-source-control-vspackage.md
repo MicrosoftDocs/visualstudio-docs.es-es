@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: b9413b08-b3c3-4fc3-a6e0-3dc0db3652d7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: eaf7f40224e2f197627bb995dc6cccdf297b46e5
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 3ea9300c96cf63c932d88335c0ca0f9fd4542f72
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480478"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954779"
 ---
 # <a name="glyph-control-source-control-vspackage"></a>Glyph (control, VSPackage de control de código fuente)
 Parte de la integración profunda disponible para los VSPackages de control de código fuente es la capacidad de mostrar sus propios glifos para indicar el estado de los elementos bajo control de código fuente.
@@ -36,7 +36,7 @@ Parte de la integración profunda disponible para los VSPackages de control de c
 
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs.GetCustomGlyphList%2A>Utiliza el método [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para obtener una lista de imágenes que muestran distintos Estados de control de código fuente. El VSPackage de control de código fuente devuelve al IDE un identificador de la lista de imágenes para sus glifos personalizados. El IDE realiza una copia de la lista de imágenes en este momento y la usa más adelante para elegir los glifos que se van a mostrar. Si no se admite la nueva interfaz o el `IVsSccGlyphs::GetCustomGlyphList` método devuelve `E_NOTIMPL` , el IDE obtiene sus glifos de la lista predeterminada de glifos proporcionada por [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs>
 - <xref:Microsoft.VisualStudio.Shell.Interop.VsStateIcon>
 - <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager>

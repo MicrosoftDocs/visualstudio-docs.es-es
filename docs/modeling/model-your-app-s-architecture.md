@@ -8,15 +8,15 @@ helpviewer_keywords:
 - UML, modeling architecture
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c284532a1e7f6407ebea987873665edb4e940019
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: e78e88884801b7aa7fcbcfe1147afd6fad653fd8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361032"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954376"
 ---
 # <a name="model-your-app39s-architecture"></a>Modelar la arquitectura de la aplicación&#39;s
 Para asegurarse de que su sistema de software o aplicación satisface las necesidades de los usuarios, puede crear modelos en Visual Studio como parte de la descripción de la estructura y el comportamiento globales del sistema de software o aplicación. A través de los modelos, también puede describir los patrones que se usan a lo largo de todo el proceso de diseño. Estos modelos le ayudan a entender la arquitectura existente, a analizar los cambios y a comunicar sus intenciones con claridad.

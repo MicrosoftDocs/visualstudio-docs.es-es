@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: e0340d89-d39e-4a52-8557-13e27040d7b5
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d05809b1e370fee2505470be1c06366f76bf9ca
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 9612e1b8e808437122df88ad0bbef3a4cce74c0c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996232"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955117"
 ---
 # <a name="compensableactivity-activity-designer"></a>Diseñador de actividad CompensableActivity Activity
 
@@ -36,14 +36,14 @@ El diseñador de actividades **CompensableActivity** se utiliza para crear y con
 
 |Nombre de propiedad|Obligatorio|Uso|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|Falso|El nombre descriptivo opcional de la actividad de la clase <xref:System.Activities.Statements.CompensableActivity>. El valor predeterminado es CompensableActivity.|
-|<xref:System.Activities.Activity%601.Result%2A>|Falso|Especifica el valor devuelto de la clase <xref:System.Activities.Statements.CompensableActivity>. Esta propiedad se debe editar en la cuadrícula de propiedades.|
-|<xref:System.Activities.Statements.CompensableActivity.Body%2A>|Verdadero|Especifica la actividad para la que se proporciona la lógica de compensación, cancelación y confirmación. Para agregar la <xref:System.Activities.Statements.CompensableActivity.Body%2A> actividad, coloque una actividad del cuadro de **herramientas** en el cuadro **Body** del diseñador de actividades **CompensableActivity** . Agregue el texto de la sugerencia "Coloque la actividad aquí".|
-|<xref:System.Activities.Statements.CompensableActivity.CancellationHandler%2A>|Falso|Especifica la actividad que se ejecuta cuando hay una cancelación. Para agregar la actividad, coloque su diseñador desde el cuadro de **herramientas** en el cuadro **CancellationHandler** del diseñador de actividad **CompensableActivity** . Agregue el texto de la sugerencia "Coloque la actividad aquí".|
-|<xref:System.Activities.Statements.CompensableActivity.CompensationHandler%2A>|Falso|Especifica la actividad que se va a ejecutar al realizar la compensación para la actividad de la propiedad <xref:System.Activities.Statements.CompensableActivity.Body%2A>. Este controlador se puede invocar explícitamente mediante la actividad <xref:System.Activities.Statements.Compensate>.<br /><br /> Para agregar la actividad, coloque su diseñador de actividad del cuadro de **herramientas** en el cuadro **CompensationHandler** del diseñador de actividad **CompensableActivity** . Agregue el texto de la sugerencia "Coloque la actividad aquí".|
-|<xref:System.Activities.Statements.CompensableActivity.ConfirmationHandler%2A>|Falso|Especifica la actividad que se va a ejecutar al confirmar la actividad de la propiedad <xref:System.Activities.Statements.CompensableActivity.Body%2A>. Este controlador se puede invocar explícitamente mediante la actividad <xref:System.Activities.Statements.Confirm>.<br /><br /> Para agregar la actividad, coloque su diseñador de actividad del cuadro de **herramientas** en el cuadro **ConfirmationHandler** del diseñador de actividad **CompensableActivity** . Agregue el texto de la sugerencia "Coloque la actividad aquí".|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|El nombre descriptivo opcional de la actividad de la clase <xref:System.Activities.Statements.CompensableActivity>. El valor predeterminado es CompensableActivity.|
+|<xref:System.Activities.Activity%601.Result%2A>|False|Especifica el valor devuelto de la clase <xref:System.Activities.Statements.CompensableActivity>. Esta propiedad se debe editar en la cuadrícula de propiedades.|
+|<xref:System.Activities.Statements.CompensableActivity.Body%2A>|True|Especifica la actividad para la que se proporciona la lógica de compensación, cancelación y confirmación. Para agregar la <xref:System.Activities.Statements.CompensableActivity.Body%2A> actividad, coloque una actividad del cuadro de **herramientas** en el cuadro **Body** del diseñador de actividades **CompensableActivity** . Agregue el texto de la sugerencia "Coloque la actividad aquí".|
+|<xref:System.Activities.Statements.CompensableActivity.CancellationHandler%2A>|False|Especifica la actividad que se ejecuta cuando hay una cancelación. Para agregar la actividad, coloque su diseñador desde el cuadro de **herramientas** en el cuadro **CancellationHandler** del diseñador de actividad **CompensableActivity** . Agregue el texto de la sugerencia "Coloque la actividad aquí".|
+|<xref:System.Activities.Statements.CompensableActivity.CompensationHandler%2A>|False|Especifica la actividad que se va a ejecutar al realizar la compensación para la actividad de la propiedad <xref:System.Activities.Statements.CompensableActivity.Body%2A>. Este controlador se puede invocar explícitamente mediante la actividad <xref:System.Activities.Statements.Compensate>.<br /><br /> Para agregar la actividad, coloque su diseñador de actividad del cuadro de **herramientas** en el cuadro **CompensationHandler** del diseñador de actividad **CompensableActivity** . Agregue el texto de la sugerencia "Coloque la actividad aquí".|
+|<xref:System.Activities.Statements.CompensableActivity.ConfirmationHandler%2A>|False|Especifica la actividad que se va a ejecutar al confirmar la actividad de la propiedad <xref:System.Activities.Statements.CompensableActivity.Body%2A>. Este controlador se puede invocar explícitamente mediante la actividad <xref:System.Activities.Statements.Confirm>.<br /><br /> Para agregar la actividad, coloque su diseñador de actividad del cuadro de **herramientas** en el cuadro **ConfirmationHandler** del diseñador de actividad **CompensableActivity** . Agregue el texto de la sugerencia "Coloque la actividad aquí".|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Transacción](../workflow-designer/transaction-activity-designers.md)
 - [CancellationScope](../workflow-designer/cancellationscope-activity-designer.md)

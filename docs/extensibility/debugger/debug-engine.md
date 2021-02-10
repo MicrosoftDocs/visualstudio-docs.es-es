@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 148b1efc-ca07-4d8e-bdfc-c723a760c620
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c31d095a3e340bf7e8f7a61a8db5bcbed53f0d5f
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 9e278b83e69a063c88b4cb3ff48d919d2b07ea6a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914236"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955169"
 ---
 # <a name="debug-engine"></a>Motor de depuración
 Un motor DE depuración (DE) funciona con el intérprete o el sistema operativo para proporcionar servicios de depuración, como el control de ejecución, los puntos de interrupción y la evaluación de expresiones. El DE es responsable de supervisar el estado de un programa que se está depurando. Para ello, el método DE usa los métodos que están disponibles en el tiempo de ejecución admitido, ya sea de la CPU o de las API proporcionadas por el tiempo de ejecución.
@@ -39,7 +39,7 @@ Un motor DE depuración (DE) funciona con el intérprete o el sistema operativo 
 
  DE funciona con un componente del evaluador de expresiones para permitir que el de ese tiempo de ejecución concreto comprenda la sintaxis de las expresiones. El DE también trabaja con un componente de controlador de símbolos para tener acceso a la información de depuración simbólica generada por el compilador del lenguaje. Para obtener más información, consulte [evaluador de expresiones](../../extensibility/debugger/expression-evaluator.md) y [proveedor de símbolos](../../extensibility/debugger/symbol-provider.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Componentes del depurador](../../extensibility/debugger/debugger-components.md)
 - [Evaluador de expresiones](../../extensibility/debugger/expression-evaluator.md)
 - [Proveedor de símbolos](../../extensibility/debugger/symbol-provider.md)

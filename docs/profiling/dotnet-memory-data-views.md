@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: 79184d8e-769b-4ace-be2b-521147772081
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a4a6143127a2e55bf5c13cf6606bfe00de5cd9e
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: 1a60b51571d33a619cdc04c534f6b77fafcb584f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801274"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955286"
 ---
 # <a name="net-memory-data-views"></a>Vistas de datos de memoria de .NET
 Esta sección contiene información de referencia acerca de las vistas y los informes de archivos de datos del generador de perfiles que contienen datos de generación de perfiles de memoria de .NET.

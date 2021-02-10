@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: ef76b1a8-6910-48fe-b4af-d9045eefd23f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5e7b85fb8d5b0e3256e172ff78bc3a5f660b69b8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3e2b5c5f96c2c40105f54ba8d775c7ad1cc1c46
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733415"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955026"
 ---
 # <a name="idebugcomplussymbolprovider2gettypesbyname"></a>IDebugComPlusSymbolProvider2::GetTypesByName
 Recupera un tipo a partir de su nombre.
@@ -55,7 +55,7 @@ enuncia Enumerador que contiene el tipo o tipos con el nombre especificado.
 ## <a name="return-value"></a>Valor devuelto
 Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 En el caso de los tipos genéricos, el nombre para buscar "List \<int> " o "List \<int,int> " sería "list". Si en varios módulos aparecen tipos con el mismo nombre, el `ppEnum` parámetro contendrá todas las copias. Tiene que usar [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) y distinguir según el `guidModule` parámetro.
 
 ## <a name="example"></a>Ejemplo

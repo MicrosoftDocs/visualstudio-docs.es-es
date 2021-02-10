@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 4452bc5d-0225-40e0-a467-c472a5c7c4ee
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d2d7d809281ce1ad6e71a3c4afe666c486c53077
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 169ba9d19dead40c866ae100c975870f880dbb2e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733447"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955013"
 ---
 # <a name="idebugcomplussymbolprovider2gettypefromtoken"></a>IDebugComPlusSymbolProvider2::GetTypeFromToken
 Recupera un tipo a partir de su token.

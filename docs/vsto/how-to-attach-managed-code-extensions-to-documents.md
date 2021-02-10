@@ -12,15 +12,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], managed code extensions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1929daaa82dbfec6f58513bf94eefe01f9520601
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 063b66af781ee412e7f7d2ab8014e009bc93bad9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844393"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954116"
 ---
 # <a name="how-to-attach-managed-code-extensions-to-documents"></a>Cómo: adjuntar extensiones de código administrado a documentos
   Puede adjuntar un ensamblado de personalización a un documento de Microsoft Office Word existente o Microsoft Office libro de Excel. El documento o el libro puede tener cualquier formato de archivo compatible con los proyectos de Microsoft Office y las herramientas de desarrollo de Visual Studio. Para obtener más información, vea [arquitectura de las personalizaciones de nivel de documento](../vsto/architecture-of-document-level-customizations.md).

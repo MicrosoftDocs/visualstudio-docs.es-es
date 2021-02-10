@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 44f8e96e-9c59-4ffc-9a08-9c908a0e4de7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84db1b672a9460ef3809162a2a1433f269796046
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fa655c03665c9eed54feabc5af679765b09ac0a6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726736"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955532"
 ---
 # <a name="idebugmodule3"></a>IDebugModule3
 Esta interfaz representa un módulo que admite ubicaciones alternativas de símbolos y Estados JustMyCode.
@@ -44,7 +44,7 @@ IDebugModule3 : IDebugModule2
 |[IsUserCode](../../../extensibility/debugger/reference/idebugmodule3-isusercode.md)|Devuelve una marca que especifica si el módulo representa el código de usuario.|
 |[SetJustMyCodeState](../../../extensibility/debugger/reference/idebugmodule3-setjustmycodestate.md)|Especifica si el módulo se debe considerar o no código de usuario.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Visual Studio es el consumidor típico de esta interfaz.
 
 ## <a name="requirements"></a>Requisitos

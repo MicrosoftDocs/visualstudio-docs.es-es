@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Outlook folders [Office development in Visual Studio], retrieving by name
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c4e615897fedcbfa41ad7958e93354718d9ccfbc
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: c05f8bc0174807a5336a9d9f79ac3dc81e87476e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528578"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953882"
 ---
 # <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>Cómo: recuperar una carpeta por nombre mediante programación
   En este ejemplo se obtiene una referencia a una carpeta personalizada con nombre y, a continuación, se muestra el contenido de la carpeta.
@@ -34,7 +34,7 @@ ms.locfileid: "97528578"
 
 - Una carpeta denominada TestFolder.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Trabajar con carpetas](../vsto/working-with-folders.md)
 - [Cómo: buscar en una carpeta específica mediante programación](../vsto/how-to-programmatically-search-within-a-specific-folder.md)
 - [Cómo: buscar un contacto específico mediante programación](../vsto/how-to-programmatically-search-for-a-specific-contact.md)

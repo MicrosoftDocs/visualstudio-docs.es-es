@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d8ae1c0c-ee3d-4937-a581-ee78d0499793
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2928d3c09a54ea8e9548f7751381279f153643e5
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 26b27bd6bef40a38e32e5b0d6d26e3d147659286
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876745"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954649"
 ---
 # <a name="model-of-a-legacy-language-service"></a>Modelo de un servicio de lenguaje heredado
 Un servicio de lenguaje define los elementos y las características de un lenguaje específico y se usa para proporcionar al editor información específica de ese idioma. Por ejemplo, el editor necesita conocer los elementos y las palabras clave del lenguaje con el fin de admitir el color de la sintaxis.
@@ -49,5 +49,5 @@ Un servicio de lenguaje define los elementos y las características de un lengua
 | Administrador de texto | Administrado por el <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> servicio, desde el que obtiene un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> puntero. | Componente que mantiene la información común compartida por todos los componentes descritos anteriormente. |
 | Servicio de lenguaje | Dependiente de la implementación; implementa <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> | Objeto que proporciona al editor información específica del lenguaje, como el resaltado de sintaxis, la finalización de instrucciones y la coincidencia de llaves. |
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Datos de documento y vista de documento en editores personalizados](../../extensibility/document-data-and-document-view-in-custom-editors.md)

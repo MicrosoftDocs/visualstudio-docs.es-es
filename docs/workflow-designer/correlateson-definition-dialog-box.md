@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 8b2b627a-f236-4479-aa09-525df65e3413
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2be38ba9521762c38c629c2817a7c8e8ca5a709a
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: b4f371da2570d5573ce84c7e29393889202ae940
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438131"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955546"
 ---
 # <a name="correlateson-definition-dialog-box"></a>Definición CorrelatesOn (cuadro de diálogo)
 
@@ -36,7 +36,7 @@ En la tabla siguiente se describen los elementos de la interfaz de usuario (UI) 
 
 El diseñador de actividades **Receive** se puede arrastrar desde el **cuadro de herramientas** y colocarlo en la superficie diseñador de flujo de trabajo, siempre que se coloquen normalmente las actividades. Al quitar el diseñador de actividad, se crea una <xref:System.ServiceModel.Activities.Receive> actividad con un valor predeterminado <xref:System.Activities.Activity.DisplayName%2A> de Receive. Para abrir el cuadro de diálogo **definición de CorrelatesOn** , seleccione el diseñador de actividades **Receive** y, en la cuadrícula de propiedades, seleccione el botón de puntos suspensivos junto al texto de la colección para la propiedad **CorrelatesOn** .
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - <xref:System.ServiceModel.Activities.Receive>
 - [Agregar CorrelationInitializers (cuadro de diálogo)](../workflow-designer/add-correlationinitializers-dialog-box.md)
