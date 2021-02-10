@@ -9,17 +9,17 @@ helpviewer_keywords:
 ms.assetid: 83c9da8b-19d9-4be5-b225-854543654901
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: c215630e522adabdbd285e00d4bcd87cae22a931
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a438e3e30d541b641b0f9ae74160ee4e22b131b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738039"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948405"
 ---
 # <a name="bp_location_code_address"></a>BP_LOCATION_CODE_ADDRESS
 Describe la ubicación de un punto de interrupción en una dirección en el código.
@@ -35,7 +35,7 @@ typedef struct _BP_LOCATION_CODE_ADDRESS {
 } BP_LOCATION_CODE_ADDRESS;
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 `bstrContext`\
 Contexto del punto de interrupción, normalmente un nombre de método o función tal y como se ha detectado en una pila de llamadas.
 
@@ -48,7 +48,7 @@ Nombre de la función que contiene el punto de interrupción.
 `bstrAddress`\
 Dirección del punto de interrupción, que el evaluador de expresiones analiza para enlazarlo a un objeto [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) .
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Esta estructura es miembro de la estructura [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) como parte de una Unión.
 
 ## <a name="requirements"></a>Requisitos

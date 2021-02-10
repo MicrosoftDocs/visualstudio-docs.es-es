@@ -10,22 +10,22 @@ helpviewer_keywords:
 ms.assetid: d0861e0c-b819-490c-9604-5e6d08ac291a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: febf7c6966fcf3f2ac64d62bb46f0aaf398c6bc4
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: 66cc91a544d0d0729593b4be09f82ae0eb2081ee
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606481"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948483"
 ---
 # <a name="process-debug-manager"></a>Procesar el administrador de depuración
 Process Debug Manager (PDM) es un componente de Visual Studio que administra programas y procesos, que los pone a disposición del administrador de depuración de la sesión y los motores de depuración.
 
  PDM administra todos los procesos que se pueden depurar. Para que se pueda depurar, se debe registrar un programa con el PDM. Este registro se realiza en el momento en que se inicia el programa, ya sea mediante un puerto o un motor de depuración.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Procesos](../../extensibility/debugger/processes.md)
 - [Motor de depuración](../../extensibility/debugger/debug-engine.md)
 - [Puertos](../../extensibility/debugger/ports.md)

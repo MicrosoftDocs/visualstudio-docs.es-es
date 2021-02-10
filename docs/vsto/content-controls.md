@@ -37,15 +37,15 @@ helpviewer_keywords:
 - BuildingBlockGalleryContentControl class
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a34211c7fb1fa001719219b7d08baab65340bde5
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ce692bf10c5473c648fd6587b6b6568d369ed496
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848045"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948002"
 ---
 # <a name="content-controls"></a>Controles de contenido
   Los controles de contenido proporcionan un mecanismo para diseñar documentos y plantillas con las siguientes características:
@@ -82,7 +82,7 @@ ms.locfileid: "96848045"
 ### <a name="build-block-gallery"></a>Galería de bloques de compilación
  Una galería de bloques de creación permite a los usuarios seleccionar en una lista de *bloques de creación de documentos* para insertarlos en un documento. Un bloque de creación de documento es un fragmento de contenido que se ha creado para usarse varias veces, como una portada, una tabla con formato o un encabezado común. Para obtener más información, consulte el tipo <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl>. Para obtener más información sobre los bloques de creación, consulte [novedades de los desarrolladores en Word 2007](/previous-versions/office/developer/office-2007/bb266218(v=office.12)).
 
-### <a name="check-box"></a>Casilla de verificación
+### <a name="check-box"></a>Casilla
  Una casilla proporciona una interfaz de usuario que representa un estado binario: activada o desactivada.
 
  A diferencia de los demás tipos de controles de contenido, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] no proporciona ningún tipo específico que represente un control de contenido de casilla. En otras palabras, no existe ningún tipo `CheckBoxContentControl`. Sin embargo, puede crear un control de contenido de casilla agregando un <xref:Microsoft.Office.Tools.Word.ContentControl> genérico a un documento mediante programación. Para obtener más información, vea [controles de contenido de casilla en proyectos de Word](#checkbox).
@@ -96,7 +96,7 @@ ms.locfileid: "96848045"
 ### <a name="drop-down-list"></a>Lista desplegable
  En las listas desplegables se muestra una lista de elementos que los usuarios pueden seleccionar. A diferencia de los cuadros combinados, las listas desplegables no permiten que los usuarios agreguen o modifiquen elementos. Para obtener más información, consulte el tipo <xref:Microsoft.Office.Tools.Word.DropDownListContentControl>.
 
-### <a name="group"></a>Grupo
+### <a name="group"></a>Group (Grupo)
  Un control de grupo define una región protegida de un documento que los usuarios no pueden editar ni eliminar. Un control de grupo puede contener cualquier elemento del documento, como texto, tablas, gráficos y otros controles de contenido. Para obtener más información, consulte el tipo <xref:Microsoft.Office.Tools.Word.GroupContentControl>.
 
 ### <a name="picture"></a>Imagen
@@ -165,7 +165,7 @@ ms.locfileid: "96848045"
 |---------------|-----------------------------|----------------------------------------------------------------|
 |<xref:System.Boolean><br /><br /> <xref:System.Byte><br /><br /> <xref:System.Char><br /><br /> <xref:System.Double><br /><br /> <xref:System.Enum><br /><br /> <xref:System.Guid><br /><br /> <xref:System.Int16><br /><br /> <xref:System.Int32><br /><br /> <xref:System.Int64><br /><br /> <xref:System.SByte><br /><br /> <xref:System.Single><br /><br /> <xref:System.String><br /><br /> <xref:System.TimeSpan><br /><br /> <xref:System.UInt16><br /><br /> <xref:System.UInt32><br /><br /> <xref:System.UInt64>|<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>|<xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.DatePickerContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.RichTextContentControl>|
 |<xref:System.DateTime>|<xref:Microsoft.Office.Tools.Word.DatePickerContentControl>|<xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.PlainTextContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.RichTextContentControl>|
-|<xref:System.Drawing.Image><br /><br /> Matriz <xref:System.Byte>|<xref:Microsoft.Office.Tools.Word.PictureContentControl>|Ninguno|
+|<xref:System.Drawing.Image><br /><br /> Matriz <xref:System.Byte>|<xref:Microsoft.Office.Tools.Word.PictureContentControl>|None|
 
  En los proyectos de nivel de documento y de complemento de VSTO puede enlazar un control de contenido a un origen de datos mediante programación con el método <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> de la propiedad <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> del control. Si lo hace, pase el **texto** de la cadena al parámetro *PropertyName* del <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> método. La propiedad **texto** es la propiedad de enlace de datos predeterminada de los controles de contenido.
 

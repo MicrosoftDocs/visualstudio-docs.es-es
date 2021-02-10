@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 0aab80e9-285a-4697-94ac-c864d42a6aaa
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a88fbe97cede8d343f1a96bc1917a69b8905b02b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 72bca5a909b7a001bf12779e54953d403134995b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738192"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948418"
 ---
 # <a name="ad_process_id_type"></a>AD_PROCESS_ID_TYPE
 Especifica cómo interpretar un identificador de proceso en la estructura de [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) .
@@ -49,7 +49,7 @@ El identificador de proceso es un identificador de sistema. Utilice el `ProcessI
 `AD_PROCESS_ID_GUID`\
 El ID. de proceso es un GUID. Use el `ProcessId.guidProcessId` campo de la `AD_PROCESS_ID` estructura.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Se usa para el `ProcessIdType` miembro de la estructura [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) para identificar el tipo de identificador de proceso contenido en la estructura. Determina cómo se interpreta la `ProcessId` Unión en la estructura.
 
 ## <a name="requirements"></a>Requisitos

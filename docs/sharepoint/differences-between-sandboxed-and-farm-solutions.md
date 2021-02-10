@@ -14,15 +14,15 @@ helpviewer_keywords:
 - farm solutions [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 25c1c9047ba9e38e3e652abcbe92ce6575d7b750
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: cea66f313a8c6c8ad7fc390a3ca126d92139725c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672787"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948783"
 ---
 # <a name="differences-between-sandboxed-and-farm-solutions"></a>Diferencias entre soluciones en espacio aislado y soluciones de granja
   Al compilar una solución de SharePoint, se implementa en el servidor de SharePoint y un depurador se adjunta para depurarla. El proceso usado para depurar la solución depende del valor de la propiedad de la solución en espacio aislado: solución en espacio aislado o solución de granja.
@@ -40,7 +40,7 @@ ms.locfileid: "94672787"
 
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] asocia el depurador solo a los procesos W3WP o SPUCWorkerProcess que se ejecutan en el sitio actual. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] también adjunta los motores de depuración de flujo de trabajo y COM administrados.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Depurar soluciones de SharePoint](../sharepoint/debugging-sharepoint-solutions.md)
 - [Build and debug SharePoint solutions](../sharepoint/building-and-debugging-sharepoint-solutions.md) (Compilar y depurar las soluciones de SharePoint)
 - [Consideraciones sobre las soluciones de espacio aislado](../sharepoint/sandboxed-solution-considerations.md)

@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: bcf9b968-ee14-4a92-88ad-926268a44e03
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: db345fb2936ef7278675407549798ae669487f06
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6998b847d400c9eb5e999a7299f5bedec0982253
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729326"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948301"
 ---
 # <a name="idebugexpressionevaluator2preloadmodules"></a>IDebugExpressionEvaluator2::PreloadModules
 Carga previamente los módulos designados por el proveedor de símbolos especificado.
@@ -45,7 +45,7 @@ de Proveedor de símbolos para el que se cargarán previamente los módulos.
 ## <a name="return-value"></a>Valor devuelto
 Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Este método opcional se usa cuando se realiza una asociación de proceso de hospedaje. Proporciona la oportunidad de EE. "preparación" como parte de la asociación.
 
 ## <a name="example"></a>Ejemplo

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 679e771e-4a79-484e-af37-f962ef4aa245
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4c0e10b6c253c61a9e68e0cf161201f7d2520ae6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52710a9b17bb4e5c1c0b04b44507a466fc538bc2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737750"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948379"
 ---
 # <a name="bpreqi_fields"></a>BPREQI_FIELDS
 Especifica la información que se va a recuperar sobre una solicitud de punto de interrupción.
@@ -109,7 +109,7 @@ Inicializar/usar el `bstrTracepoint` campo de la `BP_REQUEST_INFO2` estructura.
 `BPREQI_ALLFIELDS`\
 Especifica todos los campos de la `BP_REQUEST_INFO2` estructura.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Se pasa como argumento a los métodos [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) y [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) para especificar los campos de las estructuras [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) y [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) que se van a inicializar.
 
 Estas marcas también se usan para indicar los campos de las `BP_REQUEST_INFO` estructuras y que `BP_REQUEST_INFO2` se usan y son válidos cuando se devuelve cada estructura.

@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9f0f9eb6c863a961a527fcb6fb330a2a4f88669e
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: cd4967e38738018f9b30365575a2dcb9e8970963
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672592"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948757"
 ---
 # <a name="extend-sharepoint-packaging-and-deployment"></a>Extender el empaquetado e implementación de SharePoint
   El proceso de empaquetado e implementación de proyectos de SharePoint se puede ampliar.
@@ -54,7 +54,7 @@ ms.locfileid: "94672592"
 ## <a name="customize-validation-rules"></a>Personalizar reglas de validación
  Antes de implementar un paquete de solución (.wsp), puede crear reglas personalizadas de validación de características y paquetes para comprobar la validez de la característica o el paquete. Así, por ejemplo, puede mostrar información, advertencias o errores a los desarrolladores para ayudarles a solucionar problemas de validación. Para obtener más información, vea [Cómo: para crear reglas personalizadas de validación de características y paquetes para soluciones de SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Cómo: ejecutar código cuando se ejecutan los pasos de implementación](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)
 - [Tutorial: crear un paso de implementación personalizado para proyectos de SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)
 - [Cómo: crear reglas personalizadas de validación de características y paquetes para soluciones de SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)

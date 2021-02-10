@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: e1f955d8-95da-493b-837e-e97741a26d7e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf0d3adb174e9b13cb09f9506927217326890c32
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: 5205dba6cddf104d0cb05f01acbc43f6927acaaf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606520"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948431"
 ---
 # <a name="programs"></a>Programas
 En la arquitectura del depurador, un *programa*:
@@ -33,7 +33,7 @@ En la arquitectura del depurador, un *programa*:
 
 - Se representa mediante una interfaz [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) , creada antes de que se adjunte el programa o como parte del proceso de asociación, dependiendo de la implementación. Cuando un puerto enumera los programas de un proceso, cada programa se crea de acuerdo con la interfaz [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) correspondiente que se pasa como argumento a [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md). Aunque los motores de depuración también crean `IDebugProgram2` interfaces para representar programas, estos programas no se crean de acuerdo con un nodo de programa. Las `IDebugProgramNode2` interfaces creadas por un de se utilizan para la depuración real, mientras que las creadas por un puerto se utilizan únicamente para detectar los programas que se ejecutan en un proceso.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Procesos](../../extensibility/debugger/processes.md)
 - [Nodos de programa](../../extensibility/debugger/program-nodes.md)
 - [Módulos](../../extensibility/debugger/modules.md)
