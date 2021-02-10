@@ -5,17 +5,17 @@ description: Uso de identificadores de componente y carga de trabajo de Visual S
 keywords: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.date: 2/12/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: e3dda1867ee4f54588456c668639e51652d7f8e1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 01e339f3f9efc14c68e88fa9e9a422914284f2f9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76159569"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937995"
 ---
 ## <a name="test-agent"></a>Test Agent
 

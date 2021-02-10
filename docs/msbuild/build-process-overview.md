@@ -8,15 +8,15 @@ helpviewer_keywords:
 - MSBuild, build process overview
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4374e6763933e2da3e6a11c5609b76e3341e1050
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: 8a7f8645cd34fe56d7d8d0f6a9efa6bf01bd13d8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353257"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939674"
 ---
 # <a name="how-msbuild-builds-projects"></a>Cómo MSBuild compila proyectos
 
@@ -26,7 +26,7 @@ El proceso de compilación completo consta de las fases de [inicio](#startup), [
 
 ## <a name="startup"></a>Inicio
 
-MSBuild se puede invocar desde Visual Studio a través del modelo de objetos de MSBuild en *Microsoft. Build.dll* . También se puede hacer invocando el archivo ejecutable directamente en la línea de comandos o en un script, como en los sistemas de CI. En cualquier caso, las entradas que afectan al proceso de compilación incluyen el archivo de proyecto (o el objeto de proyecto interno de Visual Studio), posiblemente un archivo de solución, variables de entorno y modificadores de la línea de comandos o sus equivalentes del modelo de objetos. Durante la fase de inicio, las opciones de la línea de comandos o los equivalentes del modelo de objetos se usan para configurar las opciones de MSBuild; por ejemplo, los registradores. Las propiedades establecidas en la línea de comandos mediante el modificador `-property` o `-p` se establecen como propiedades globales, que invalidan cualquier valor que se establezca en los archivos del proyecto, aunque los archivos de proyecto se lean más adelante.
+MSBuild se puede invocar desde Visual Studio a través del modelo de objetos de MSBuild en *Microsoft. Build.dll*. También se puede hacer invocando el archivo ejecutable directamente en la línea de comandos o en un script, como en los sistemas de CI. En cualquier caso, las entradas que afectan al proceso de compilación incluyen el archivo de proyecto (o el objeto de proyecto interno de Visual Studio), posiblemente un archivo de solución, variables de entorno y modificadores de la línea de comandos o sus equivalentes del modelo de objetos. Durante la fase de inicio, las opciones de la línea de comandos o los equivalentes del modelo de objetos se usan para configurar las opciones de MSBuild; por ejemplo, los registradores. Las propiedades establecidas en la línea de comandos mediante el modificador `-property` o `-p` se establecen como propiedades globales, que invalidan cualquier valor que se establezca en los archivos del proyecto, aunque los archivos de proyecto se lean más adelante.
 
 Las secciones siguientes tratan sobre los archivos de entrada, como los de solución o los de proyecto.
 
@@ -40,7 +40,7 @@ Puede averiguar cómo extender la compilación de la solución en [Personalizar 
 
 Hay algunas diferencias importantes entre el momento en que se compilan los proyectos en Visual Studio y en que se invoca MSBuild directamente, ya sea a través del ejecutable de MSBuild o al utilizar el modelo de objetos de MSBuild para iniciar una compilación. Visual Studio administra el orden de compilación del proyecto para las compilaciones de Visual Studio; solo llama a MSBuild en el nivel de proyecto individual y, cuando lo hace, se establecen un par de propiedades booleanas (`BuildingInsideVisualStudio` y `BuildProjectReferences`) que afectan significativamente al trabajo de MSBuild. Dentro de cada proyecto, la ejecución se realiza de la misma forma que cuando se invoca a través de MSBuild, pero la diferencia radica en los proyectos a los que se hace referencia. En MSBuild, cuando se necesitan proyectos a los que hacer referencia, se crea realmente una compilación; es decir, ejecuta tareas y herramientas y genera la salida. Cuando una compilación de Visual Studio encuentra un proyecto al que se hace referencia, MSBuild solo devuelve las salidas esperadas del proyecto al que se hace referencia; permite que Visual Studio controle la compilación de los demás proyectos. Visual Studio determina el orden de compilación y llama a MSBuild por separado (según sea necesario), todo ello bajo el control de Visual Studio.
 
-Otra diferencia se produce cuando se invoca MSBuild con un archivo de solución: MSBuild analiza el archivo de solución, crea un archivo de entrada XML estándar, lo evalúa y lo ejecuta como un proyecto. La compilación de la solución se ejecuta antes que cualquier proyecto. Al realizar la compilación desde Visual Studio, no sucede nada de esto. MSBuild nunca "ve" el archivo de solución. Como consecuencia, la personalización de la compilación de la solución (con *before.SolutionName.sln.targets* y *after.SolutionName.sln.targets* ) solo se aplica a MSBuild.exe o a las compilaciones basadas en el modelo de objetos, pero no a las de Visual Studio.
+Otra diferencia se produce cuando se invoca MSBuild con un archivo de solución: MSBuild analiza el archivo de solución, crea un archivo de entrada XML estándar, lo evalúa y lo ejecuta como un proyecto. La compilación de la solución se ejecuta antes que cualquier proyecto. Al realizar la compilación desde Visual Studio, no sucede nada de esto. MSBuild nunca "ve" el archivo de solución. Como consecuencia, la personalización de la compilación de la solución (con *before.SolutionName.sln.targets* y *after.SolutionName.sln.targets*) solo se aplica a MSBuild.exe o a las compilaciones basadas en el modelo de objetos, pero no a las de Visual Studio.
 
 ### <a name="project-sdks"></a>SDK de proyecto
 
@@ -52,7 +52,7 @@ Los proyectos de .NET Core importan la versión del SDK de .NET adecuada. Vea e
 
 En esta sección se describe cómo se procesan y analizan estos archivos de entrada para generar objetos en memoria que determinan lo que se va a compilar.
 
-El propósito de la fase de evaluación es crear las estructuras de objeto en memoria en función de los archivos XML de entrada y el entorno local. La fase de evaluación consta de seis pasos que procesan los archivos de entrada, como los archivos XML del proyecto y los archivos XML importados, normalmente denominados *.props* o *.targets* , en función de si principalmente establecen propiedades o definen destinos de compilación. Cada paso genera una parte de los objetos en memoria que se usan posteriormente en la fase de ejecución para compilar los proyectos, pero no se realizan acciones de compilación reales durante la fase de evaluación. En cada paso, los elementos se procesan en el orden en que aparecen.
+El propósito de la fase de evaluación es crear las estructuras de objeto en memoria en función de los archivos XML de entrada y el entorno local. La fase de evaluación consta de seis pasos que procesan los archivos de entrada, como los archivos XML del proyecto y los archivos XML importados, normalmente denominados *.props* o *.targets*, en función de si principalmente establecen propiedades o definen destinos de compilación. Cada paso genera una parte de los objetos en memoria que se usan posteriormente en la fase de ejecución para compilar los proyectos, pero no se realizan acciones de compilación reales durante la fase de evaluación. En cada paso, los elementos se procesan en el orden en que aparecen.
 
 Los pasos de la fase de evaluación son los siguientes:
 
@@ -133,13 +133,13 @@ Consulte [Compilación de varios proyectos en paralelo con MSBuild](building-mul
 
 ## <a name="standard-imports"></a>Importaciones estándar
 
-Los archivos de proyecto de .NET importan *Microsoft.Common.props* y *Microsoft.Common.targets* , explícita o implícitamente en proyectos de estilo SDK, y se pueden encontrar en la carpeta *MSBuild\Current\bin* de una instalación de Visual Studio. Los proyectos de C++ tienen su propia jerarquía de importaciones. Consulte [Parámetros internos de MSBuild para proyectos de C++](/cpp/build/reference/msbuild-visual-cpp-overview).
+Los archivos de proyecto de .NET importan *Microsoft.Common.props* y *Microsoft.Common.targets*, explícita o implícitamente en proyectos de estilo SDK, y se pueden encontrar en la carpeta *MSBuild\Current\bin* de una instalación de Visual Studio. Los proyectos de C++ tienen su propia jerarquía de importaciones. Consulte [Parámetros internos de MSBuild para proyectos de C++](/cpp/build/reference/msbuild-visual-cpp-overview).
 
 El archivo *Microsoft.Common.props* establece valores predeterminados que pueden invalidarse. Se importa (explícita o implícitamente) al principio de un archivo de proyecto. Así, la configuración del proyecto aparece después de los valores predeterminados, de modo que se invalidan.
 
 Los archivos *Microsoft.Common.targets* y los archivos de destino que se importan definen el proceso de compilación estándar para los proyectos de .NET. También se proporcionan puntos de extensión que puede usar para personalizar la compilación.
 
-En la implementación, *Microsoft.Common.targets* es un contenedor fino que importa *Microsoft.Common.CurrentVersion.targets* . Este archivo contiene la configuración de las propiedades estándar y define los destinos reales que definen el proceso de compilación. El destino `Build` se define aquí, pero en realidad está vacío. Sin embargo, el destino `Build` contiene el atributo `DependsOn` que especifica los destinos individuales que componen los pasos de compilación reales, que son `BeforeBuild`, `CoreBuild` y `AfterBuild`. El destino `Build` se define de la manera siguiente:
+En la implementación, *Microsoft.Common.targets* es un contenedor fino que importa *Microsoft.Common.CurrentVersion.targets*. Este archivo contiene la configuración de las propiedades estándar y define los destinos reales que definen el proceso de compilación. El destino `Build` se define aquí, pero en realidad está vacío. Sin embargo, el destino `Build` contiene el atributo `DependsOn` que especifica los destinos individuales que componen los pasos de compilación reales, que son `BeforeBuild`, `CoreBuild` y `AfterBuild`. El destino `Build` se define de la manera siguiente:
 
 ```xml
   <PropertyGroup>
@@ -157,7 +157,7 @@ En la implementación, *Microsoft.Common.targets* es un contenedor fino que impo
       Returns="@(TargetPathWithTargetPlatformMoniker)" />
 ```
 
-`BeforeBuild` y `AfterBuild` son puntos de extensión. Están vacíos en el archivo *Microsoft.Common.CurrentVersion.targets* , pero los proyectos pueden proporcionar sus propios destinos `BeforeBuild` y `AfterBuild` con las tareas que deben realizarse antes o después del proceso de compilación principal. `AfterBuild` se ejecuta antes que el destino no operativo, `Build`, porque `AfterBuild` aparece en el atributo `DependsOn` del destino `Build`, pero se realiza después de `CoreBuild`.
+`BeforeBuild` y `AfterBuild` son puntos de extensión. Están vacíos en el archivo *Microsoft.Common.CurrentVersion.targets*, pero los proyectos pueden proporcionar sus propios destinos `BeforeBuild` y `AfterBuild` con las tareas que deben realizarse antes o después del proceso de compilación principal. `AfterBuild` se ejecuta antes que el destino no operativo, `Build`, porque `AfterBuild` aparece en el atributo `DependsOn` del destino `Build`, pero se realiza después de `CoreBuild`.
 
 El destino `CoreBuild` contiene las llamadas a las herramientas de compilación, como se indica a continuación:
 
@@ -217,7 +217,7 @@ En la tabla siguiente se describen estos destinos: algunos destinos solo se pued
 | IncrementalClean | Quita archivos que se generaron en una compilación anterior, pero que no se generaron en la compilación actual. Esto es necesario para que `Clean` funcione en compilaciones incrementales. |
 | PostBuildEvent | Punto de extensión de los proyectos para definir las tareas que se van a ejecutar después de la compilación. |
 
-Muchos de los destinos de la tabla anterior se encuentran en importaciones específicas de lenguajes, como *Microsoft.CSharp.targets* . Este archivo define los pasos en el proceso de compilación estándar específico para proyectos de C# .NET. Por ejemplo, contiene el destino `Compile` que realmente llama al compilador de C#.
+Muchos de los destinos de la tabla anterior se encuentran en importaciones específicas de lenguajes, como *Microsoft.CSharp.targets*. Este archivo define los pasos en el proceso de compilación estándar específico para proyectos de C# .NET. Por ejemplo, contiene el destino `Compile` que realmente llama al compilador de C#.
 
 ## <a name="user-configurable-imports"></a>Importaciones configurables por el usuario
 
@@ -228,11 +228,11 @@ Además de las importaciones estándar, hay varias importaciones que se pueden a
 
 Las importaciones estándar leen estos archivos para cualquier proyecto que se encuentre un nivel por debajo. Por lo general, en el nivel de solución de la configuración para controlar todos los proyectos de la solución, pero también podría estar en niveles superiores del sistema de archivos, hasta la raíz de la unidad.
 
-*Microsoft.Common.props* importa el archivo *Directory.Build.props* , por lo que las propiedades definidas ahí están disponibles en el archivo del proyecto. Se pueden redefinir en el archivo del proyecto para personalizar los valores en cada proyecto. El archivo *Directory.Build.targets* se lee después del archivo del proyecto. Normalmente, contiene destinos, pero aquí también puede definir propiedades que no desea que los proyectos individuales redefinan.
+*Microsoft.Common.props* importa el archivo *Directory.Build.props*, por lo que las propiedades definidas ahí están disponibles en el archivo del proyecto. Se pueden redefinir en el archivo del proyecto para personalizar los valores en cada proyecto. El archivo *Directory.Build.targets* se lee después del archivo del proyecto. Normalmente, contiene destinos, pero aquí también puede definir propiedades que no desea que los proyectos individuales redefinan.
 
 ## <a name="customizations-in-a-project-file"></a>Personalizaciones en un archivo del proyecto
 
-Visual Studio actualiza los archivos del proyecto a medida que realiza cambios en el **Explorador de soluciones** , la ventana **Propiedades** o en **Propiedades del proyecto** , pero el usuario también puede realizar sus propios cambios editando directamente el archivo del proyecto.
+Visual Studio actualiza los archivos del proyecto a medida que realiza cambios en el **Explorador de soluciones**, la ventana **Propiedades** o en **Propiedades del proyecto**, pero el usuario también puede realizar sus propios cambios editando directamente el archivo del proyecto.
 
 Muchos comportamientos de compilación se pueden configurar estableciendo las propiedades de MSBuild, ya sea en el archivo del proyecto de la configuración local de un proyecto, o como se mencionó en la sección anterior, creando un archivo *Directory.Build.props* para establecer las propiedades globalmente para todas las carpetas de proyectos y soluciones. En el caso de las compilaciones ad hoc en la línea de comandos, o scripts, también puede usar la opción `/p` en la línea de comandos para establecer las propiedades de una invocación determinada de MSBuild. Vea [Propiedades comunes de proyectos de MSBuild](common-msbuild-project-properties.md) para obtener información sobre las propiedades que se pueden establecer.
 

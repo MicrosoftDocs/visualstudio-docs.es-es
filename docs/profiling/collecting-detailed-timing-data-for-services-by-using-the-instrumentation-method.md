@@ -7,16 +7,16 @@ ms.topic: how-to
 ms.assetid: 6116e1df-ed3e-4b0d-ac7f-22f7d7ac00ea
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f4560b21213e3f50061e1f9424d634aeb7b52c2
-ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
+ms.openlocfilehash: 5d1ce4a4ef3f64ca5f3c8235d1169eb28aa6a405
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98533828"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938543"
 ---
 # <a name="collect-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line"></a>Recopilación de datos detallados de tiempo para servicios mediante el método de instrumentación desde la línea de comandos del generador de perfiles
 En esta sección, se describen los procedimientos y las opciones para recopilar datos de rendimiento detallados para servicios de Windows mediante el método de instrumentación desde la línea de comandos.

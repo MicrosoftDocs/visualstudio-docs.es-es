@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: e782bbac-9ee6-472b-8171-3ee008c77b4e
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 288d83cd16b9faebc9c6826a08da7c11811663d5
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: a26c8bfc29ca985a725deea6c75b14d68abb9eb4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048477"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937893"
 ---
 # <a name="resourcesgenerator-task"></a>ResourcesGenerator (Tarea)
 
-La tarea <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> inserta uno o varios recursos ( *.jpg* , *.ico* , *.bmp* , XAML en formato binario y en otros tipos de extensiones) en un archivo *.resources*.
+La tarea <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> inserta uno o varios recursos ( *.jpg*, *.ico*, *.bmp*, XAML en formato binario y en otros tipos de extensiones) en un archivo *.resources*.
 
 ## <a name="task-parameters"></a>Parámetros de tareas
 

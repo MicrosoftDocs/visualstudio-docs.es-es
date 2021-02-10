@@ -13,15 +13,15 @@ f1_keywords:
 - vs.startpage
 - VS.StartPage.HowDoI
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 406b02c0453c8e8b6fb353c0a1b021f64cab6181
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: fb8a558485f6855af1411c99d270f1328d62db20
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901458"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944386"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Le damos la bienvenida al IDE de Visual Studio
 

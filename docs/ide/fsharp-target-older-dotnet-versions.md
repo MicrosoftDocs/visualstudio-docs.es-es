@@ -5,16 +5,16 @@ ms.date: 07/11/2018
 ms.topic: troubleshooting
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
 monikerRange: vs-2017
-ms.openlocfilehash: 4b5cf62dadc38802e477c7588416b4003304e852
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fe9d87a5cdea04251d7ab30b6e9e0fed6b0c4b31
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75584587"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945531"
 ---
 # <a name="target-older-versions-of-net-f"></a>Especificar como destino versiones anteriores de .NET (F#)
 

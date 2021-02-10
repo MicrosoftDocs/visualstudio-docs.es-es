@@ -7,16 +7,16 @@ ms.topic: how-to
 ms.assetid: b1361333-8a09-4a65-87a9-4ac94ceb2d9f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: ef6ec36dc9c0fb0e6431dcb92ee292050c5d25f3
-ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
+ms.openlocfilehash: aec34feedeba8f16d9664a029815d52100c58a02
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98533763"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945219"
 ---
 # <a name="collect-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Recopilar datos de memoria de servicios de .NET Framework utilizando la línea de comandos del generador de perfiles
 En esta sección se explican los procedimientos y las opciones para recopilar datos de asignación de memoria y duración de objetos de un servicio de .NET Framework mediante el método de muestreo de la línea de comandos.

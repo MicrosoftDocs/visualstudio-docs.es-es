@@ -7,15 +7,15 @@ helpviewer_keywords:
 - deployment, publish settings
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fff3ded8607f7faf534e6e61a27bd4d3e38d9e38
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 9681e01beaa9fcae3163c607290f5793bfae1cdd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88247567"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945037"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Publicar una aplicación en IIS mediante la importación de la configuración de publicación en Visual Studio
 
@@ -42,14 +42,14 @@ Un archivo de configuración de publicación ( *\*.publishsettings*) es diferent
 
 * Debe tener instalado Visual Studio 2019 y la carga de trabajo **Desarrollo web y ASP.NET**.
 
-    Si todavía no ha instalado Visual Studio, vaya a la página de  [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/)  para instalarlo de forma gratuita.
+    Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/) para instalarlo de forma gratuita.
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
 * Debe tener instalado Visual Studio 2017 y la carga de trabajo **Desarrollo web y ASP.NET**.
 
-    Si todavía no ha instalado Visual Studio, vaya a la página de  [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/)  para instalarlo de forma gratuita.
+    Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/) para instalarlo de forma gratuita.
 ::: moniker-end
 
 * En el servidor, debe ejecutar Windows Server 2012, Windows Server 2016 o Windows Server 2019, y tener el [rol de servidor web de IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) configurado correctamente (es necesario para generar el archivo de configuración de publicación [ *\*.publishsettings*]). También se debe instalar ASP.NET 4.5 o ASP.NET Core en el servidor. Para configurar ASP.NET 4.5, vea [IIS 8.0 Using ASP.NET 3.5 and ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) (IIS 8.0 con ASP.NET 3.5 y ASP.NET 4.5). Para configurar ASP.NET Core, vea [Hospedaje de ASP.NET Core en Windows con IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). En ASP.NET Core, asegúrese de configurar el grupo de aplicaciones para que use **Sin código administrado**, tal y como se describe en el artículo.

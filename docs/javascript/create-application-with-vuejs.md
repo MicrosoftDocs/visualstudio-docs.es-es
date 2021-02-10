@@ -7,17 +7,17 @@ ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: e16b09a165421d36c67dad1fc657fd36846cd382
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52281c403ceb0f2708aa546cbd73559593c419be
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285171"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942833"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Crear una aplicación Vue.js con Herramientas de Node.js para Visual Studio
 
@@ -40,7 +40,7 @@ Las siguientes características nuevas admiten el desarrollo de aplicaciones Vue
     Si aún no está instalada una versión necesaria, instale [Visual Studio 2019](https://visualstudio.microsoft.com/downloads).
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Si todavía no ha instalado Visual Studio, vaya a la página de  [descargas de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)  para instalarlo de forma gratuita.
+    Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) para instalarlo de forma gratuita.
     ::: moniker-end
 
     Si tiene que instalar la carga de trabajo pero ya tiene Visual Studio, vaya a **Herramientas** > **Obtener herramientas y características…** y se abrirá el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de Node.js** y, después, haga clic en **Modificar**.
@@ -171,7 +171,7 @@ Estos pasos requieren vue-cli 3.0, que actualmente se encuentra en versión beta
 
 Un problema desconocido con vue-cli 3.0 puede evitar la automatización del proceso de compilación. Cada vez que se intenta actualizar la carpeta wwwroot, debe ejecutar el comando `npm run build` en la carpeta client-app.
 
-Como alternativa, puede compilar el proyecto de cli-vue 3.0 como un evento anterior a la compilación mediante las propiedades del proyecto de ASP.NET. Haga clic con el botón derecho en el proyecto, elija **Propiedades**e incluya los siguientes comandos en la pestaña **Compilar**, en el cuadro de texto **Línea de comandos del evento anterior a la compilación**.
+Como alternativa, puede compilar el proyecto de cli-vue 3.0 como un evento anterior a la compilación mediante las propiedades del proyecto de ASP.NET. Haga clic con el botón derecho en el proyecto, elija **Propiedades** e incluya los siguientes comandos en la pestaña **Compilar**, en el cuadro de texto **Línea de comandos del evento anterior a la compilación**.
 
 ``` cmd
 cd ./client-app

@@ -25,15 +25,15 @@ helpviewer_keywords:
 ms.assetid: e20ae7be-bfa7-437a-b8c1-fa0f1baa7f83
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 92d6b3bb37937e010bc10a685f958063e7cc3358
-ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
+ms.openlocfilehash: 6e6b3724f3633ce03474ee9915b8d1a4b43a3d46
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98686433"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948132"
 ---
 # <a name="cvwritemessage-function"></a>Función CvWriteMessage
 Escribe un mensaje en el archivo de seguimiento del visualizador de simultaneidad.

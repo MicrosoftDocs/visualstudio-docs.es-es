@@ -8,13 +8,13 @@ helpviewer_keywords:
 - Windows Forms Designer, get started
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: d4d3c0965d638c9e048cef29d7f1b535a54e54a5
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+manager: jmartens
+ms.openlocfilehash: 5803530290988affd6cfbb8342f3b1d545238985
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493483"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947858"
 ---
 # <a name="tutorial-get-started-with-windows-forms-designer"></a>Tutorial: Introducción a Diseñador de Windows Forms
 
@@ -221,9 +221,9 @@ Cuando el control o formulario se rellena con varios controles, puede que le res
 
    - Cambie la propiedad de texto del control sixButton a **6**
 
-   - Cambie la propiedad de texto del control multiplicationButton a * *\** _ (asterisco)
+   - Cambie la propiedad de texto del control multiplicationButton a **\*** (asterisco)
 
-   - Cambie la propiedad de texto del control oneButton _ *1**
+   - Cambie la propiedad de texto del control oneButton a **1**
 
    - Cambie la propiedad de texto del control twoButton a **2**
 
