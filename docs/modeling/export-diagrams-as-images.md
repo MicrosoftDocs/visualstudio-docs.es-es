@@ -10,15 +10,15 @@ helpviewer_keywords:
 - UML diagrams, saving
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 12e0036377ed5b67e092ff0cf4588acc39c23525
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: df0ecb55e72683a09bb68ec61410271b8c6a8774
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361643"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935110"
 ---
 # <a name="export-diagrams-as-images"></a>Exportar diagramas como imágenes
 
@@ -42,7 +42,7 @@ Para ver qué ediciones de Visual Studio admiten esta característica, consulte
 
 3. En el cuadro de diálogo **guardar el archivo como** , guarde el archivo como un archivo de **documento XPS ( \* . XPS)** .
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [Crear modelos para la aplicación](../modeling/create-models-for-your-app.md)
 - [Compartir modelos y exportar diagramas](../modeling/share-models-and-exporting-diagrams.md)

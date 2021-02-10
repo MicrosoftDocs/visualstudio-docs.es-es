@@ -8,15 +8,15 @@ helpviewer_keywords:
 - tests and requirements
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f49b52bece0c1dddc65da919d266c4f21b1bf69
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: e4884ec4eb3e316e22e4ba54cd8defe71d4b8018
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361838"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935175"
 ---
 # <a name="develop-tests-from-a-model"></a>Desarrollar pruebas en un modelo
 Puede usar modelos arquitectónicos y modelos de requisitos que le ayuden a organizar las pruebas del sistema y sus componentes. Con esta práctica, tendrá la certeza de que incluye en la prueba los requisitos que son importantes para los usuarios y otras partes interesadas, y podrá actualizar las pruebas rápidamente cuando cambien los requisitos. Si usa [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], también puede mantener vínculos entre los modelos y las pruebas.
@@ -157,7 +157,7 @@ Assert (countAfter == countBefore = 1);
 
 3. Agregue al conjunto de pruebas casos de prueba que verifiquen el requisito expresado en el elemento de modelo.
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [Crear modelos para la aplicación](../modeling/create-models-for-your-app.md)
 - [Requisitos del usuario de modelos](../modeling/model-user-requirements.md)

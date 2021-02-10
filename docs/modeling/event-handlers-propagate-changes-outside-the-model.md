@@ -9,15 +9,15 @@ helpviewer_keywords:
 - Domain-Specific Language, events
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b0780007361115aa485b91db70cc413029a6f8f
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 0ed45d631697d37db8da49e459e80f1b5a43a373
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361682"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935136"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Los controladores de eventos propagan cambios fuera del modelo
 
@@ -186,7 +186,7 @@ Cada tipo de evento corresponde a una colección en Store. EventManagerDirectory
 |TransactionCommitted||
 |TransactionRolledBack||
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [Responder a los cambios y propagarlos](../modeling/responding-to-and-propagating-changes.md)
 - [Código de ejemplo: diagramas de circuitos](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

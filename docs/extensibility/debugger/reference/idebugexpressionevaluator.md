@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0636d8c3-625a-49fa-94b6-516f22b7e1bc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e8dd910e4edc110abb40dde14b4cb85ff54a70a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c12dc405f08851e55040c3097e5d7f409030f61
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729374"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934336"
 ---
 # <a name="idebugexpressionevaluator"></a>IDebugExpressionEvaluator
 > [!IMPORTANT]
@@ -48,7 +48,7 @@ En la tabla siguiente se muestran los métodos de `IDebugExpressionEvaluator` .
 |[SetLocale](../../../extensibility/debugger/reference/idebugexpressionevaluator-setlocale.md)|Determina el idioma que se va a usar para crear resultados imprimibles.|
 |[SetRegistryRoot](../../../extensibility/debugger/reference/idebugexpressionevaluator-setregistryroot.md)|Establece la raíz del registro. Se usa para la depuración en paralelo.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 En una situación típica, el motor DE depuración (DE) crea instancias del evaluador de expresiones (EE) como resultado de una llamada a [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md). Dado que el DE conoce el lenguaje y el proveedor de EE que quiere usar, el obtiene el CLSID de EE del registro (las [aplicaciones auxiliares de SDK para la función de depuración](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) , `GetEEMetric` , ayuda con esta recuperación).
 
 Una vez creada la instancia de EE, el DE llama a [Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) para analizar la expresión y almacenarla en un objeto [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) . Más adelante, una llamada a [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) evalúa la expresión.

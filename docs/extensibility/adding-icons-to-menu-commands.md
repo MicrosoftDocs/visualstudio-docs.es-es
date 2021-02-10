@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 362a0c7e-5729-4297-a83f-1aba1a37fd44
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: eaf0a089c10c850c14b9ba2f807a69eada5d04b9
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: b9f37bd14ed43ab0e165346f8ce09512c3981177
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597657"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934369"
 ---
 # <a name="add-icons-to-menu-commands"></a>Agregar iconos a comandos de menú
 Los comandos pueden aparecer en los menús y las barras de herramientas. En las barras de herramientas, es habitual que se muestre un comando con solo un icono (para ahorrar espacio) mientras que en los menús aparece normalmente un comando con un icono y texto.
@@ -83,6 +83,6 @@ Los comandos pueden aparecer en los menús y las barras de herramientas. En las 
 
 8. Pruebe el icono. Compile la solución y comience la depuración. En la instancia experimental, busque el comando. Debería mostrar el icono que ha agregado.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Extensión de menús y comandos](../extensibility/extending-menus-and-commands.md)
 - [Referencia del esquema XML de VSCT](../extensibility/vsct-xml-schema-reference.md)

@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Domain-Specific Language, element merge directives
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b84f638876270658be2f08a7e375540f0329a1d6
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 01867bf4c5d3e9c60ad4a2ba0ed76c45eca055c1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729345"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935591"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personalizar la creación y el movimiento de los elementos
 
@@ -318,7 +318,7 @@ Puede crear una directiva de combinación hacia delante en la solución modelo d
 
      No debe ver el puntero no disponible y debe poder quitar el nuevo **Puerto de entrada** en el existente. Seleccione el nuevo **Puerto de entrada** y arrástrelo hasta otro punto del **componente**.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Navegar y actualizar un modelo en el código del programa](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Personalizar las herramientas y el cuadro de herramientas](../modeling/customizing-tools-and-the-toolbox.md)

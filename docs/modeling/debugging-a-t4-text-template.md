@@ -9,15 +9,15 @@ helpviewer_keywords:
 - text templates, debugging
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 26ad1545918a02fbcf530b439e801a656a425864
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: b197fd52972162acbc6e7d6882507f943b2a560c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361474"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935357"
 ---
 # <a name="debugging-a-t4-text-template"></a>Depurar una plantilla de texto T4
 Puede establecer puntos de interrupción en plantillas de texto. Para depurar una plantilla de texto en tiempo de diseño, guarde el archivo de plantilla de texto y, a continuación, elija **depurar plantilla T4** en el menú contextual del archivo en explorador de soluciones. Para depurar una plantilla de texto en tiempo de ejecución, basta con depurar la aplicación a la que pertenece.
@@ -69,7 +69,7 @@ Puede establecer puntos de interrupción en plantillas de texto. Para depurar un
 |{0}No se encontró un parámetro ' ' necesario para la Directiva ' {1} '. Se omitirá la directiva.|Se produce cuando el sistema no proporciona un parámetro de directiva necesario. El mensaje proporciona el nombre del parámetro que falta, el nombre de la directiva y el número de línea.|Proporcione el parámetro que falta.|
 |El procesador denominado ' {0} ' no admite la Directiva denominada ' {1} '. Se omitirá la directiva.|Se produce cuando un procesador de directivas no admite una directiva. El mensaje proporciona el nombre y número de línea de la directiva que provoca el error, junto con el nombre del procesador de directivas.|Corrija el nombre de la directiva.|
 |La directiva Include para el archivo ' {0} ' produce un bucle infinito.|Se muestra si se especifican directivas de inclusión circulares (por ejemplo, el archivo A incluye el archivo B, que incluye el archivo A).|No especifique directivas de inclusión circulares.|
-|Ejecutando transformación:|Antepone esta cadena a todos los errores o advertencias que se generan mientras se ejecuta la transformación.|No es aplicable.|
+|Ejecutando transformación:|Antepone esta cadena a todos los errores o advertencias que se generan mientras se ejecuta la transformación.|No aplicable.|
 |Se encontró una etiqueta inicial o final inesperada dentro de un bloque. Asegúrese de que no escribió una etiqueta inicial o final por error y de que no tiene bloques anidados en la plantilla.|Se muestra cuando se tiene un inesperado \<# or #> . Es decir, si tiene un cuando no hay \<# after another open tag that has not been closed, or you have a #> ninguna etiqueta de apertura sin cerrar delante. El mensaje proporciona el número de línea de la etiqueta no coincidente.|Quite la etiqueta de apertura o de cierre no coincidente, o utilice un carácter de escape.|
 |Se especificó una directiva con formato incorrecto. Se omitirá la directiva. Especifique la Directiva con el formato. `<#@ name [parametername="parametervalue"]*  #>`|Lo muestra el analizador si una directiva no se especifica en el formato correcto. El mensaje proporciona el número de línea de la directiva incorrecta.|Asegúrese de que todas las directivas tienen el formato `<#@ name [parametername="parametervalue"]*  #>` . Para obtener más información, vea [directivas de plantilla de texto T4](../modeling/t4-text-template-directives.md).|
 |No se pudo cargar el ensamblado ' {0} ' para el procesador de directivas registrado ' {1} '<br /><br /> {2}|Se produce cuando el host no puede cargar un procesador de directivas. El mensaje identifica el ensamblado proporcionado para el procesador de directivas y el nombre del procesador de directivas.|Asegúrese de que el procesador de directivas está registrado correctamente y de que el ensamblado existe.|

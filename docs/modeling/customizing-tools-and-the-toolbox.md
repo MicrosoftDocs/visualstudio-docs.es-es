@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Domain-Specific Language, toolbox
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f02254cc1229ab069277b0fe46a6b825393f682f
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 40341a0c74b371c4c84429474e58c7d338bb8059
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361565"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935435"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Personalizar las herramientas y el cuadro de herramientas
 
@@ -234,7 +234,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
  El código personalizado se usa para aplicar restricciones "difíciles", pero se debe considerar si los usuarios deben poder realizar temporalmente conexiones no válidas. En caso de que deban, puede modificar las restricciones para que las conexiones no se validen hasta que los usuarios intenten guardar los cambios.
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [Personalizar la creación y el movimiento de los elementos](../modeling/customizing-element-creation-and-movement.md)
 - [Personalizar comportamiento de copia](../modeling/customizing-copy-behavior.md)

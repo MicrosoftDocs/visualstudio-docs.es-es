@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Domain-Specific Language, serialization
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e889bb81b4c13d003beb15f733d053ef159b197f
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 019f77320e9118d5f3d31e647a59c71bb474d204
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362943"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935540"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>Personalizar el almacenamiento de archivos y la serialización XML
 
@@ -268,14 +268,14 @@ En la tabla siguiente se resumen las opciones que se pueden establecer en esta s
 
 Estos elementos se encuentran en el explorador de DSL, en **serialización XML Behavior\Class Data**.
 
-|Propiedad.|Descripción|
+|Propiedad|Descripción|
 |-|-|
 |Tiene un esquema de elemento personalizado|Si es true, indica que la clase de dominio tiene un esquema de elemento personalizado|
 |Personalizado|Establézcalo en **true** si desea escribir su propio código de serialización y deserialización para esta clase de dominio.<br /><br /> Compile la solución e investigue los errores para detectar instrucciones detalladas.|
 |Clase de dominio|Clase de dominio a la que se aplica este nodo de datos de clase. Solo lectura.|
 |Nombre del elemento|Nombre del nodo XML para los elementos de esta clase. El valor predeterminado es una versión en minúsculas del nombre de la clase de dominio.|
 |Nombre del atributo de moniker|Nombre del atributo que se usa en los elementos de moniker para contener la referencia. Si está en blanco, se usa el nombre de la propiedad de clave o el identificador.<br /><br /> En este ejemplo, es "Name":  `<personMoniker name="/Mike Nash"/>`|
-|Nombre del elemento de moniker|Nombre del elemento XML utilizado para los monikers que hacen referencia a los elementos de esta clase.<br /><br /> El valor predeterminado es una versión en minúsculas del nombre de clase con el sufijo "moniker". Por ejemplo: `personMoniker`.|
+|Nombre del elemento de moniker|Nombre del elemento XML utilizado para los monikers que hacen referencia a los elementos de esta clase.<br /><br /> El valor predeterminado es una versión en minúsculas del nombre de clase con el sufijo "moniker". Por ejemplo, `personMoniker`.|
 |Nombre de tipo de moniker|Nombre del tipo XSD generado para los monikers para los elementos de esta clase. El XSD está en **Dsl\Generated code \\ \* Schema. xsd**|
 |Serializar identificador|Si es true, el GUID del elemento se incluye en el archivo. Debe ser true si no hay ninguna propiedad marcada como clave de **moniker** y el DSL define las relaciones de referencia con esta clase.|
 |Nombre del tipo|Nombre del tipo XML generado en el XSD de la clase de dominio designada.|
@@ -285,7 +285,7 @@ Estos elementos se encuentran en el explorador de DSL, en **serialización XML B
 
 Los nodos de propiedad XML se encuentran en los nodos de clase.
 
-|Propiedad.|Descripción|
+|Propiedad|Descripción|
 |-|-|
 |Propiedad de dominio|Propiedad a la que los datos de configuración de serialización de XML se aplican. Solo lectura.|
 |Clave de moniker|Si es true, la propiedad se utiliza como clave para crear monikers que hacen referencia a las instancias de esta clase de dominio.|
@@ -298,7 +298,7 @@ Los nodos de propiedad XML se encuentran en los nodos de clase.
 
 Los nodos de datos de rol se encuentran en los nodos de clase de origen.
 
-|Propiedad.|Descripción|
+|Propiedad|Descripción|
 |-|-|
 |Tiene un moniker personalizado|Establézcalo en true si desea proporcionar su propio código para generar y resolver monikers que atraviesan esta relación.<br /><br /> Para obtener instrucciones detalladas, compile la solución y, a continuación, haga doble clic en los mensajes de error.|
 |Relación de dominio|Especifica la relación a la que se aplican estas opciones. Solo lectura.|
@@ -306,7 +306,7 @@ Los nodos de datos de rol se encuentran en los nodos de clase de origen.
 |Nombre del elemento role|Especifica el nombre del elemento XML que se deriva del rol de origen. El valor predeterminado es el nombre de la propiedad de rol.|
 |Usar formulario completo|Si es true, cada elemento o moniker de destino se incluye en un nodo XML que representa la relación. Debe establecerse en true si la relación tiene sus propias propiedades de dominio.|
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [Navegar y actualizar un modelo en el código del programa](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Generar código a partir de lenguajes específicos de dominio](../modeling/generating-code-from-a-domain-specific-language.md)

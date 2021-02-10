@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a76ae38b686e1c77acd9561e9c48fd3444565b0a
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: aa7590689b4d7acdb7a7ebe501584ed6a8bd41bf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363203"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935422"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definir una directiva de bloqueo para crear segmentos de solo lectura
 La API de inmutabilidad del SDK de visualización y modelado de Visual Studio permite a un programa bloquear parte o todo un modelo de lenguaje específico de dominio (DSL) para que se pueda leer pero no cambiar. Esta opción de solo lectura se puede usar, por ejemplo, para que un usuario pueda pedir a los compañeros que anoten y revisen un modelo DSL, pero que no puedan cambiar el original.
@@ -79,14 +79,14 @@ partition.SetLocks(Locks.Delete);
 
 |Value|Significado si `IsLocked(Value)` es true|
 |-|-|
-|Ninguno|Sin restricción.|
-|Propiedad.|No se pueden cambiar las propiedades de dominio de los elementos. Esto no se aplica a las propiedades generadas por el rol de una clase de dominio en una relación.|
+|None|Sin restricción.|
+|Propiedad|No se pueden cambiar las propiedades de dominio de los elementos. Esto no se aplica a las propiedades generadas por el rol de una clase de dominio en una relación.|
 |Sumar|No se pueden crear nuevos elementos y vínculos en una partición o almacén.<br /><br /> No es aplicable a `ModelElement` .|
-|Mover|No se puede desplazar el elemento entre particiones si `element.IsLocked(Move)` es true o si `targetPartition.IsLocked(Move)` es true.|
+|Move|No se puede desplazar el elemento entre particiones si `element.IsLocked(Move)` es true o si `targetPartition.IsLocked(Move)` es true.|
 |Eliminar|No se puede eliminar un elemento si este bloqueo se establece en el propio elemento o en cualquiera de los elementos en los que se propagará la eliminación, como elementos y formas incrustados.<br /><br /> Puede utilizar `element.CanDelete()` para detectar si un elemento se puede eliminar.|
 |Reordenar|No se puede cambiar el orden de los vínculos en un roleplayer.|
 |RolePlayer|No se puede cambiar el conjunto de vínculos que se encuentran en este elemento. Por ejemplo, los nuevos elementos no se pueden incrustar en este elemento. Esto no afecta a los vínculos para los que este elemento es el destino.<br /><br /> Si este elemento es un vínculo, su origen y destino no se ven afectados.|
-|Todo|OR bit a bit de los demás valores.|
+|All|OR bit a bit de los demás valores.|
 
 ## <a name="locking-policies"></a>Directivas de bloqueo
  Como autor de un DSL, puede definir una directiva de *bloqueo*. Una directiva de bloqueo modera el funcionamiento de SetLocks (), de modo que se puede evitar que se establezcan bloqueos específicos o se exija que se establezcan bloqueos específicos. Normalmente, se usaría una directiva de bloqueo para evitar que los usuarios o desarrolladores infrinjan accidentalmente el uso previsto de un DSL, de la misma manera que se puede declarar una variable `private` .

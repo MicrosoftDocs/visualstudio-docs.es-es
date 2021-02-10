@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint projects, extending
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 62766b704d140805a3b76dbc3c00acaf6257f5e5
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: cde9235ffb7c692240c8f16ea0e93f49c79f002e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850161"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934876"
 ---
 # <a name="how-to-add-a-property-to-sharepoint-projects"></a>Cómo: agregar una propiedad a proyectos de SharePoint
   Puede usar una extensión de proyecto para agregar una propiedad a cualquier proyecto de SharePoint. La propiedad aparece en la ventana **propiedades** cuando se selecciona el proyecto en **Explorador de soluciones**.
@@ -82,7 +82,7 @@ ms.locfileid: "94850161"
 ## <a name="deploy-the-extension"></a>Implementar la extensión
  Para implementar la extensión, cree un [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] paquete de extensión (VSIX) para el ensamblado y cualquier otro archivo que desee distribuir con la extensión. Para obtener más información, vea [deploy Extensions for the SharePoint Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Extender proyectos de SharePoint](../sharepoint/extending-sharepoint-projects.md)
 - [Cómo: crear una extensión de proyecto de SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)
 - [Cómo: agregar un elemento de menú contextual a los proyectos de SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)

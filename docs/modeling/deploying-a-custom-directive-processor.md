@@ -8,15 +8,15 @@ helpviewer_keywords:
 - text templates, custom directive processors
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 638367f2c3a1238edc257a255280c5197e11d3f0
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: dc839d4d859a8dd1dcc82774c466d6d103e4e7a6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363931"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935344"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Implementar un procesador de directivas personalizadas
 
@@ -109,7 +109,7 @@ Hay varias maneras de crear un archivo .vsix. El siguiente procedimiento describ
 
 3. Haga doble clic en el archivo .vsix. Aparece el instalador de extensiones de Visual Studio.
 
-4. Reinicie Visual Studio. Ahora podrá ejecutar plantillas de texto que contienen directivas que hacen referencia al procesador de directivas personalizado. Cada directiva tiene el formato:
+4. Reinicie Visual Studio. Ahora podrá ejecutar plantillas de texto que contienen directivas que hacen referencia al procesador de directivas personalizado. Cada directiva tiene el formato:
 
      `<#@ CustomDirective Processor="CustomDirectiveProcessorName" parameter1="value1" ... #>`
 
@@ -187,7 +187,7 @@ Hay varias maneras de crear un archivo .vsix. El siguiente procedimiento describ
 |Nombre|Tipo|Datos|
 |-|-|-|
 |(Es el valor predeterminado).|REG_SZ|(valor no establecido)|
-|Clase|REG_SZ|**\<Namespace Name>.\<Class Name>**|
+|Class|REG_SZ|**\<Namespace Name>.\<Class Name>**|
 |CodeBase|REG_SZ|**\<Your Path>\\<el nombre del ensamblado\>**|
 
  Si el ensamblado se encuentra en la GAC, las subclaves del Registro deben ser similares a las que se muestran en la siguiente tabla:
@@ -195,9 +195,9 @@ Hay varias maneras de crear un archivo .vsix. El siguiente procedimiento describ
 |Nombre|Tipo|Datos|
 |-|-|-|
 |(Es el valor predeterminado).|REG_SZ|(valor no establecido)|
-|Clase|REG_SZ|\<**Your Fully Qualified Class Name**>|
+|Class|REG_SZ|\<**Your Fully Qualified Class Name**>|
 |Ensamblado|REG_SZ|\<**Your Assembly Name in the GAC**>|
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [Crear procesadores de directivas personalizadas para las plantillas de texto T4](../modeling/creating-custom-t4-text-template-directive-processors.md)

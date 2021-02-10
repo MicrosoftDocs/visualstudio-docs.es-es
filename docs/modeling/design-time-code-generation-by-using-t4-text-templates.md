@@ -14,15 +14,15 @@ helpviewer_keywords:
 - text templates, generating code for your application
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 698dde24cb66d27a12a0f8785c8ac97e4cfb0eb0
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 11c9384d03971f475abbe680f6731d2757cbb195
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363814"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935305"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generación de código en tiempo de diseño usando las plantillas de texto T4
 
@@ -64,7 +64,7 @@ Una plantilla de texto contiene una mezcla del texto que se desea generar y el c
 
 5. Guarde el archivo.
 
-    Es posible que vea un cuadro de mensaje de **Advertencia de seguridad** que le pide que confirme que desea ejecutar la plantilla. Haga clic en **Aceptar**.
+    Es posible que vea un cuadro de mensaje de **Advertencia de seguridad** que le pide que confirme que desea ejecutar la plantilla. Haga clic en **OK**.
 
 6. En **Explorador de soluciones**, expanda el nodo del archivo de plantilla y encontrará un archivo con la extensión **. txt**. El archivo contiene el texto generado a partir de la plantilla.
 
@@ -355,7 +355,7 @@ Una característica útil de las plantillas es que se parecen mucho a los archiv
    | | |
    |-|-|
    | **Herramienta personalizada =** | **TextTemplatingFileGenerator** |
-   | **Acción de compilación =** | **None** |
+   | **Acción de compilación =** | **Ninguno** |
 
 5. Inserte las siguientes líneas al principio del archivo:
 
@@ -390,6 +390,6 @@ Consulte [las instrucciones para escribir plantillas de texto T4](../modeling/gu
 |Transforme los datos al formato de un lenguaje específico de dominio.|[Generar código a partir de lenguajes específicos de dominio](../modeling/generating-code-from-a-domain-specific-language.md)|
 |Escriba procesadores de directivas para transformar sus propios orígenes de datos.|[Personalizar la transformación de texto T4](../modeling/customizing-t4-text-transformation.md)|
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [Instrucciones para escribir plantillas de texto T4](../modeling/guidelines-for-writing-t4-text-templates.md)

@@ -16,15 +16,15 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], Creator
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 790b4265b232c71ff3e0613cffcb45e710081fa3
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 4079fb5be612421bfa4a0b6dc53c3003a1c65e61
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915458"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934889"
 ---
 # <a name="how-to-add-a-creator-method"></a>Cómo: agregar un método Creator
   Un método Creator agrega nuevos datos al origen de datos de una entidad. El servicio de conectividad a datos profesionales (BDC) llama a este método cuando los usuarios eligen el botón **nuevo elemento** de la **cinta** de opciones de una lista basada en el modelo. Para obtener más información, vea [Diseño de un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -65,7 +65,7 @@ ms.locfileid: "96915458"
     [!code-csharp[SP_BDC#4](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#4)]
     [!code-vb[SP_BDC#4](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#4)]
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Diseño de un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [Cómo: agregar un método Finder](../sharepoint/how-to-add-a-finder-method.md)
 - [Cómo: agregar un método Finder específico](../sharepoint/how-to-add-a-specific-finder-method.md)

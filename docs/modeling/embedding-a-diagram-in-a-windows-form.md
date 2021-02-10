@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4338bfa824b511ee0be40516e1396a75901188a1
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 084de14a9a73e8f9f884c31da1e1ef9a5d8496b3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361708"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935123"
 ---
 # <a name="embed-a-diagram-in-a-windows-form"></a>Insertar un diagrama en Windows Forms
 
@@ -143,7 +143,7 @@ Puede incrustar un diagrama DSL en un control de Windows, que aparece en la vent
 
      Observe que el cuadro de lista muestra una lista de los elementos del modelo y que es correcto después de cualquier adición o eliminación y después de deshacer y rehacer.
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [Navegar y actualizar un modelo en el código del programa](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Escribir código para personalizar lenguajes específicos de dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)

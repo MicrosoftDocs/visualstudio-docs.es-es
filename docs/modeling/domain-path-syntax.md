@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, domain path
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a24e2c9bcbecb095282c0914fa09f93e5c21e699
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: c11776576d00306e4b0f3de5e7ff830037c1fefd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361748"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935162"
 ---
 # <a name="domain-path-syntax"></a>Sintaxis de las rutas de dominio
 Las definiciones de DSL usan una sintaxis del estilo de XPath para ubicar elementos específicos en un modelo.
@@ -37,6 +37,6 @@ Las definiciones de DSL usan una sintaxis del estilo de XPath para ubicar elemen
 
  El nombre que use para el salto elemento-vínculo es el valor de `Property Name` del rol. El nombre que use para el salto vínculo-elemento es el nombre del rol de destino.
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [Introducción a los modelos, las clases y las relaciones](../modeling/understanding-models-classes-and-relationships.md)

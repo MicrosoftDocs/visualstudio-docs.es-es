@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8eee81440c0dda7f193d3e37eab700ada3ff259f
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 93a32ed2bb4f375e8938c9a3b9ff34c7af47e0e2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363112"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935604"
 ---
 # <a name="customizing-copy-behavior"></a>Personalizar comportamiento de copia
 En un lenguaje específico de dominio (DSL) creado con el SDK de visualización y modelado de Visual Studio, puede modificar lo que ocurre cuando el usuario copia y pega elementos.
@@ -554,7 +554,7 @@ namespace Company.MyDsl
 }
 ```
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [Personalizar la creación y el movimiento de los elementos](../modeling/customizing-element-creation-and-movement.md)
 - [Cómo: Agregar un controlador para arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md)
