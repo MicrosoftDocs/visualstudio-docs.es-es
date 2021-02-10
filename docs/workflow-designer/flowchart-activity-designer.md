@@ -11,15 +11,15 @@ f1_keywords:
 ms.assetid: d5af2276-5215-4138-880a-cf2b90bbf3a0
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 08c7957d79d51cab93e45adf8f74899ecc59b76d
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: c9c46ae3dcc0063c7a2664e032fba14ce320af18
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438014"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961305"
 ---
 # <a name="flowchart-activity-designer"></a>Diseñador de actividades Flowchart
 
@@ -31,7 +31,7 @@ La clase <xref:System.Activities.Statements.Flowchart> especifica una propiedad 
 
 ### <a name="using-the-flowchart-activity-designer"></a>Utilizar el diseñador de actividades Flowchart
 
-El diseñador de actividades **Flowchart** se puede encontrar en la categoría **Diagrama de flujo** del **cuadro de herramientas** , al que se tiene acceso al hacer clic en la pestaña cuadro de **herramientas** en el diseñador de flujo de trabajo. Como alternativa, seleccione **cuadro de herramientas** en el menú **Ver** o presione **Ctrl** + **Alt** + **X**.
+El diseñador de actividades **Flowchart** se puede encontrar en la categoría **Diagrama de flujo** del **cuadro de herramientas**, al que se tiene acceso al hacer clic en la pestaña cuadro de **herramientas** en el diseñador de flujo de trabajo. Como alternativa, seleccione **cuadro de herramientas** en el menú **Ver** o presione **Ctrl** + **Alt** + **X**.
 
 El diseñador de actividades **Flowchart** se puede arrastrar desde el **cuadro de herramientas** y colocarlo en la superficie diseñador de flujo de trabajo, donde se coloquen normalmente los diseñadores de actividad, ya sea como una actividad raíz o como el elemento secundario de otra actividad de flujo de control. Si el diseñador de actividades **Flowchart** se coloca en una superficie diseñador de flujo de trabajo en blanco, crea una <xref:System.Activities.Statements.Flowchart> actividad que, de forma predeterminada, se presenta en una vista expandida en la que el nodo de inicio que inicia la ejecución se representa como una bola verde. Si el diseñador de actividades **Flowchart** se coloca en otra actividad de flujo de control, se presenta en una vista minimizada que se puede expandir haciendo doble clic en el diseñador de actividades **Flowchart** . Cualquier actividad del **cuadro de herramientas** se puede arrastrar directamente al diseñador de actividad **Flowchart** , incluidas otras actividades de flujo de control.
 
@@ -43,12 +43,12 @@ En la tabla siguiente se muestran las propiedades <xref:System.Activities.Statem
 
 |Nombre de propiedad|Obligatorio|Uso|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|Falso|Especifica el nombre para mostrar del diseñador de actividades en el encabezado. El valor predeterminado es Flowchart. El valor se puede editar en la ventana **propiedades** o directamente en el encabezado del diseñador de actividad.<br /><br /> Aunque el valor de la propiedad <xref:System.Activities.Activity.DisplayName%2A> no sea obligatorio, el procedimiento recomendado es usar uno.|
-|<xref:System.Activities.Statements.Flowchart.Variables%2A>|Falso|La colección de variables que se aplican a esta clase <xref:System.Activities.Statements.Flowchart> para compartir el estado entre sus actividades secundarias.|
-|<xref:System.Activities.Statements.Flowchart.StartNode%2A>|Falso|La clase <xref:System.Activities.Statements.FlowNode> que se ejecuta cuando se inicia la clase <xref:System.Activities.Statements.Flowchart>.|
-|<xref:System.Activities.Statements.Flowchart.Nodes%2A>|Falso|Contiene la colección de objetos <xref:System.Activities.Statements.FlowNode> en la clase <xref:System.Activities.Statements.Flowchart>.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Especifica el nombre para mostrar del diseñador de actividades en el encabezado. El valor predeterminado es Flowchart. El valor se puede editar en la ventana **propiedades** o directamente en el encabezado del diseñador de actividad.<br /><br /> Aunque el valor de la propiedad <xref:System.Activities.Activity.DisplayName%2A> no sea obligatorio, el procedimiento recomendado es usar uno.|
+|<xref:System.Activities.Statements.Flowchart.Variables%2A>|False|La colección de variables que se aplican a esta clase <xref:System.Activities.Statements.Flowchart> para compartir el estado entre sus actividades secundarias.|
+|<xref:System.Activities.Statements.Flowchart.StartNode%2A>|False|La clase <xref:System.Activities.Statements.FlowNode> que se ejecuta cuando se inicia la clase <xref:System.Activities.Statements.Flowchart>.|
+|<xref:System.Activities.Statements.Flowchart.Nodes%2A>|False|Contiene la colección de objetos <xref:System.Activities.Statements.FlowNode> en la clase <xref:System.Activities.Statements.Flowchart>.|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Diagrama de flujo](../workflow-designer/flowchart-activity-designers.md)
 - [FlowDecision](../workflow-designer/flowdecision-activity-designer.md)

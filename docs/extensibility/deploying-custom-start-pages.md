@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: 4a7eb360-de83-41d5-be53-3cfb160d19f9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 76c2fc23a2b76b48152a4d3d44d687f165abf106
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 3deac1637bb6b4ed054a8a9afc7ab78bf26d0183
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993892"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968416"
 ---
 # <a name="deploy-custom-start-pages"></a>Implementar páginas de inicio personalizadas
 
@@ -97,7 +97,7 @@ Si el paquete de la página de inicio incluye ensamblados, debe agregar el regis
 
 3. En la lista **Personalizar Página de inicio** de la página Opciones de **Inicio** , seleccione la nueva página de inicio. Para obtener más información, consulte [personalizar la página de inicio](../ide/customizing-the-start-page-for-visual-studio.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Personalizar la página de inicio](../ide/customizing-the-start-page-for-visual-studio.md)
 - [Agregar control de usuario a la página de inicio](../extensibility/adding-user-control-to-the-start-page.md)

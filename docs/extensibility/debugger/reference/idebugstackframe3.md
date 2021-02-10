@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 39af2f57-0a01-42b8-b093-b7fbc61e2909
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d86997d11e124fd5a47981314cf383f5cd8aff7d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5511624fb69015351d8cc37d6b27ad142a5956d4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719474"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961188"
 ---
 # <a name="idebugstackframe3"></a>IDebugStackFrame3
 Esta interfaz extiende [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) para controlar las excepciones interceptadas.
@@ -42,7 +42,7 @@ IDebugStackFrame3 : IDebugStackFrame2
 |[InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)|Controla una excepción para el marco de pila actual antes de cualquier control de excepciones regular.|
 |[GetUnwindCodeContext](../../../extensibility/debugger/reference/idebugstackframe3-getunwindcodecontext.md)|Devuelve un contexto de código si se produjera un desenredado de la pila.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Una excepción interceptada significa que un depurador puede procesar una excepción antes de que el tiempo de ejecución llame a las rutinas de control de excepciones normales. La interceptación de una excepción esencialmente significa que el tiempo de ejecución Imagine que hay un controlador de excepciones presente incluso cuando no existe.
 
 - Se llama a [interceptcurrentexception (](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) durante todos los eventos de devolución de llamada de excepción normales (la única excepción es si está depurando código de modo mixto (código administrado y no administrado), en cuyo caso no se puede interceptar la excepción durante la devolución de llamada de última oportunidad). Si el DE no implementa `IDebugStackFrame3` o el de devuelve un error de IDebugStackFrame3:: `InterceptCurrentException` (como `E_NOTIMPL` ), el depurador controlará la excepción con normalidad.

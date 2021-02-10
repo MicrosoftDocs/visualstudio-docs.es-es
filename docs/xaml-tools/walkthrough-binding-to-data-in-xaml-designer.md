@@ -11,13 +11,13 @@ dev_langs:
 - VB
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: e07d4a0872f2e93e568bb540edb89e026d25d935
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+manager: jmartens
+ms.openlocfilehash: 6bf3bd24b4a232899c64f6c0ecd819b0fe0f83a1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047182"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961318"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Tutorial: Enlace a datos en el Diseñador XAML
 
@@ -25,13 +25,13 @@ En el diseñador XAML, puedes establecer las propiedades de enlace de datos con 
 
 ## <a name="to-create-a-class-to-use-as-a-data-source"></a>Para crear una clase con el fin de usarla como origen de datos
 
-1. En el menú **Archivo** , elija **Nuevo** > **Proyecto** .
+1. En el menú **Archivo**, elija **Nuevo** > **Proyecto**.
 
-1. En el cuadro de diálogo **Nuevo proyecto** , elija el nodo de **Visual C#** o **Visual Basic** , expanda el nodo **Escritorio de Windows** y después elija la plantilla **Aplicación WPF** .
+1. En el cuadro de diálogo **Nuevo proyecto**, elija el nodo de **Visual C#** o **Visual Basic**, expanda el nodo **Escritorio de Windows** y después elija la plantilla **Aplicación WPF**.
 
-1. Asigne un nombre al proyecto **BindingTest** y después elija el botón **Aceptar** .
+1. Asigne un nombre al proyecto **BindingTest** y después elija el botón **Aceptar**.
 
-1. Abra el archivo **MainWindow.xaml.cs** (o **MainWindow.xaml.vb** ) y agregue el código siguiente. En C#, agrega el código en el espacio de nombres `BindingTest` (antes del paréntesis de cierre final del archivo). En Visual Basic, simplemente agrega la nueva clase.
+1. Abra el archivo **MainWindow.xaml.cs** (o **MainWindow.xaml.vb**) y agregue el código siguiente. En C#, agrega el código en el espacio de nombres `BindingTest` (antes del paréntesis de cierre final del archivo). En Visual Basic, simplemente agrega la nueva clase.
 
    ```csharp
    public class ShoppingCart : DependencyObject
@@ -67,27 +67,27 @@ En el diseñador XAML, puedes establecer las propiedades de enlace de datos con 
 
    Este código establece un valor de 0 como el número predeterminado de elementos mediante el objeto [PropertyMetadata](xref:Windows.UI.Xaml.PropertyMetadata).
 
-1. En el menú **Archivo** , elija **Compilar** > **Compilar solución** .
+1. En el menú **Archivo**, elija **Compilar** > **Compilar solución**.
 
 ## <a name="to-bind-the-itemcount-property-to-a-textblock-control"></a>Para enlazar la propiedad ItemCount a un control TextBlock
 
-1. En el Explorador de soluciones, abra el menú contextual de **MainWindow.xaml** y elija **Diseñador de vistas** .
+1. En el Explorador de soluciones, abra el menú contextual de **MainWindow.xaml** y elija **Diseñador de vistas**.
 
 1. En el cuadro de herramientas, elija un control [Grid](xref:Windows.UI.Xaml.Controls.Grid) y agréguelo al formulario.
 
-1. Con el control `Grid` seleccionado, en la ventana Propiedades, elija el botón **Nuevo** situado junto a la propiedad **DataContext** .
+1. Con el control `Grid` seleccionado, en la ventana Propiedades, elija el botón **Nuevo** situado junto a la propiedad **DataContext**.
 
-1. En el cuadro de diálogo **Seleccionar objeto** , asegúrese de que la casilla **Mostrar todos los ensamblados** está desactivada, elija **ShoppingCart** en el espacio de nombres **BindingTest** y después elija el botón **Aceptar** .
+1. En el cuadro de diálogo **Seleccionar objeto**, asegúrese de que la casilla **Mostrar todos los ensamblados** está desactivada, elija **ShoppingCart** en el espacio de nombres **BindingTest** y después elija el botón **Aceptar**.
 
      En la siguiente ilustración, se muestra el cuadro de diálogo **Seleccionar objeto** con **ShoppingCart** seleccionado.
 
      ![Cuadro de diálogo Seleccionar objeto](../designers/media/blendselectobject.png)
 
-1. En el **cuadro de herramientas** , elija un control `TextBlock` para agregar al formulario.
+1. En el **cuadro de herramientas**, elija un control `TextBlock` para agregar al formulario.
 
-1. Con el control `TextBlock` seleccionado, en la ventana Propiedades, elija el marcador de propiedad situado a la derecha de la propiedad **Text** y después elija **Crear enlace de datos** . (El marcador de propiedad tiene el aspecto de un cuadro pequeño).
+1. Con el control `TextBlock` seleccionado, en la ventana Propiedades, elija el marcador de propiedad situado a la derecha de la propiedad **Text** y después elija **Crear enlace de datos**. (El marcador de propiedad tiene el aspecto de un cuadro pequeño).
 
-1. En el cuadro de diálogo Crear enlace de datos, en el cuadro **Ruta de acceso** , seleccione la propiedad **ItemCount: (int32)** y después elija el botón **Aceptar** .
+1. En el cuadro de diálogo Crear enlace de datos, en el cuadro **Ruta de acceso**, seleccione la propiedad **ItemCount: (int32)** y después elija el botón **Aceptar**.
 
      En la siguiente ilustración, se muestra el cuadro de diálogo **Crear enlace de datos** con la propiedad **ItemCount** seleccionada.
 
@@ -97,7 +97,7 @@ En el diseñador XAML, puedes establecer las propiedades de enlace de datos con 
 
      El control `TextBlock` debe mostrar el valor predeterminado de 0 como texto.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Crear una IU con el Diseñador XAML](../xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
 - [Agregar convertidor de valores (Cuadro de diálogo)](/previous-versions/hh965588(v=vs.140))

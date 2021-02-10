@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 0acf9a13-caf5-4bb4-ba22-ec37d2b7267a
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9012bb936c2a9a8944639458d4165e08f5e7081e
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 971d6bd028315ae4a8b6f3a88164c97c6f95712b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995413"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961331"
 ---
 # <a name="existsincollectiont-activity-designer"></a>Diseñador de actividad ExistsInCollection\<T>
 
@@ -39,13 +39,13 @@ En la tabla siguiente se muestran las <xref:System.Activities.Statements.ExistsI
 
 |Nombre de propiedad|Obligatorio|Uso|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|Falso|Nombre descriptivo de la actividad <xref:System.Activities.Statements.ExistsInCollection%601>. El valor predeterminado es ExistsInCollection<Int32 \> . Pese a que el valor <xref:System.Activities.Activity.DisplayName%2A> no es obligatorio, se recomienda usar uno.|
-|<xref:System.Activities.Statements.ExistsInCollection%601.Item%2A>|Verdadero|Elemento que se va a buscar en la colección \<T> . Este elemento es de tipo *T*, que es de tipo *TypeArgument*. Para especificar el elemento, escriba una expresión Visual Basic en la cuadrícula de propiedades.|
-|<xref:System.Activities.Statements.ExistsInCollection%601.Collection%2A>|Verdadero|Colección en la que se va a comprobar si el elemento existe. Esta colección es de tipo **ICollection<TypeArgument \> .** Para especificar la colección, escriba una expresión de Visual Basic en la cuadrícula de propiedades.|
-|*TypeArgument*|Verdadero|El tipo T de los elementos que se incluyen en la interfaz <xref:System.Collections.Generic.ICollection%601>. De forma predeterminada, este tipo *TypeArgument* se establece en **Int32**. Para cambiar el tipo, cambie el valor de *TypeArgument* en el cuadro combinado en la cuadrícula de propiedades.|
-|<xref:System.Activities.Activity%601.Result%2A>|Falso|Un valor que indica si el elemento especificado existe en la colección. Para especificar una variable a enlazar con el resultado, escriba una variable de Visual Basic en la cuadrícula de propiedades.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Nombre descriptivo de la actividad <xref:System.Activities.Statements.ExistsInCollection%601>. El valor predeterminado es ExistsInCollection<Int32 \> . Pese a que el valor <xref:System.Activities.Activity.DisplayName%2A> no es obligatorio, se recomienda usar uno.|
+|<xref:System.Activities.Statements.ExistsInCollection%601.Item%2A>|True|Elemento que se va a buscar en la colección \<T> . Este elemento es de tipo *T*, que es de tipo *TypeArgument*. Para especificar el elemento, escriba una expresión Visual Basic en la cuadrícula de propiedades.|
+|<xref:System.Activities.Statements.ExistsInCollection%601.Collection%2A>|True|Colección en la que se va a comprobar si el elemento existe. Esta colección es de tipo **ICollection<TypeArgument \> .** Para especificar la colección, escriba una expresión de Visual Basic en la cuadrícula de propiedades.|
+|*TypeArgument*|True|El tipo T de los elementos que se incluyen en la interfaz <xref:System.Collections.Generic.ICollection%601>. De forma predeterminada, este tipo *TypeArgument* se establece en **Int32**. Para cambiar el tipo, cambie el valor de *TypeArgument* en el cuadro combinado en la cuadrícula de propiedades.|
+|<xref:System.Activities.Activity%601.Result%2A>|False|Un valor que indica si el elemento especificado existe en la colección. Para especificar una variable a enlazar con el resultado, escriba una variable de Visual Basic en la cuadrícula de propiedades.|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Colección](../workflow-designer/collection-activity-designers.md)
 - [AddToCollection\<T>](../workflow-designer/addtocollection-t-activity-designer.md)

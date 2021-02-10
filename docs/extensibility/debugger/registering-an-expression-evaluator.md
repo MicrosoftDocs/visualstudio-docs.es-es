@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 236be234-e05f-4ad8-9200-24ce51768ecf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f26eddf7191ee4393dd2ca986fe7a1d2c3af9e2
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 1074e8dea5dfdb05571d3b1aa04e5c411530bb1f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847148"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961110"
 ---
 # <a name="register-an-expression-evaluator"></a>Registrar un evaluador de expresiones
 > [!IMPORTANT]

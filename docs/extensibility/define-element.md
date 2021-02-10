@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 5aee74e3-de41-4dc6-9618-93e158af56dd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a427371afe55b6ea4ee20f658e683b9dcdb8fbe2
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 2a2686abd8e8c703d8fb85009b3ba56070f166f0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996245"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968455"
 ---
 # <a name="define-element"></a>Elemento define
 Define un par de nombre y valor de símbolo. Este símbolo puede ser evaluado por atributos condicionales. Para obtener más información, vea [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md). Vea también el [elemento Symbols](../extensibility/symbols-element.md).
@@ -36,8 +36,8 @@ Define un par de nombre y valor de símbolo. Este símbolo puede ser evaluado po
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|name|Obligatorio. El nombre del símbolo:<br /><br /> Name = "MODE"|
-|valor|Obligatorio. El valor del símbolo:<br /><br /> valor = "estándar"|
+|name|Necesario. El nombre del símbolo:<br /><br /> Name = "MODE"|
+|value|Necesario. El valor del símbolo:<br /><br /> valor = "estándar"|
 |Condición|Opcional. Para obtener más información, vea [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementos secundarios
@@ -56,5 +56,5 @@ Define un par de nombre y valor de símbolo. Este símbolo puede ser evaluado po
 <Define name="MODE" value="Standard"/>
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Archivos de tabla de comandos de Visual Studio (. Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
