@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 89a8676b-6da9-4358-91c2-039bf33f99e4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c1a2eb62ab748562acd8f0a894a3675f79981ccc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d3189a7c84ed36827ab48b27c8f727314eb34983
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721129"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963125"
 ---
 # <a name="idebugproperty3getstringcharlength"></a>IDebugProperty3::GetStringCharLength
 Devuelve el número de caracteres de la cadena de la propiedad asociada.
@@ -48,7 +48,7 @@ int GetStringCharLength(
 ## <a name="return-value"></a>Valor devuelto
 Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve el código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Normalmente, este método se usa como preparativo para asignar un búfer para una llamada al método [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) .
 
 ## <a name="example"></a>Ejemplo

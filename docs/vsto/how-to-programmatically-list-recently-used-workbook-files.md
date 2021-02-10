@@ -15,15 +15,15 @@ helpviewer_keywords:
 - recent file list, Excel
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bbcad553ade6234d3a688c8f718a0dd6e6cda509
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 75405c7a2e02189e205edf6615c5d95a8f1d023c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525641"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963151"
 ---
 # <a name="how-to-programmatically-list-recently-used-workbook-files"></a>Cómo: mostrar los archivos de libro usados recientemente mediante programación
   La <xref:Microsoft.Office.Interop.Excel._Application.RecentFiles%2A> propiedad devuelve una colección que contiene los nombres de todos los archivos que aparecen en la Microsoft Office lista de Excel de archivos usados recientemente. La longitud de la lista varía en función del número de archivos que el usuario haya seleccionado para conservar. Puede mostrar los resultados en un intervalo.
@@ -37,7 +37,7 @@ ms.locfileid: "97525641"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#9](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#9)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#9](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#9)]
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Trabajar con libros](../vsto/working-with-workbooks.md)
 - [NamedRange (control)](../vsto/namedrange-control.md)
 - [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)

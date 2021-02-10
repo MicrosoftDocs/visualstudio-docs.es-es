@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 52e9f7fc-6fe0-4d23-890b-5673dca8c3cb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f71d993c7f99cade5b866e67298132a325986e3a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f6082b06e6235a93b0e198d973b40efb728bd815
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714797"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962137"
 ---
 # <a name="ipropertyproxyprovider"></a>IPropertyProxyProvider
 Esta interfaz proporciona una interfaz de proxy para ver y cambiar los datos de un objeto.
@@ -41,7 +41,7 @@ IPropertyProxyProvider : IUnknown
 |------------|-----------------|
 |[GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)|Recupera una interfaz de proxy de propiedad para ver los datos de un objeto.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Aunque el EE implementa esta interfaz, [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md)controla normalmente la implementación de [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) . Vea [visualizar y ver datos](../../../extensibility/debugger/visualizing-and-viewing-data.md) para obtener más información sobre cómo obtener la interfaz IEEVisualizerService.
 
 ## <a name="requirements"></a>Requisitos

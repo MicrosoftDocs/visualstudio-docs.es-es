@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b02fa88c-f92a-4ff6-ba5f-2eb4d48a643a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39ee69f934a9962d2beefb83b1ada08b920ce53d
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 91c59737d269af4eb91df402f38346cf41e3146e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994672"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961773"
 ---
 # <a name="extend-the-output-window"></a>Extender la ventana de salida
 La ventana de **salida** es un conjunto de paneles de texto de lectura y escritura. Visual Studio tiene estos paneles integrados: **compilar**, en el que los proyectos comunican mensajes sobre compilaciones y **General**, en el que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] comunica mensajes sobre el IDE. Los proyectos obtienen una referencia al panel **compilar** automáticamente a través de los <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> métodos de interfaz y Visual Studio ofrece acceso directo al panel **General** a través del <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> servicio. Además de los paneles integrados, puede crear y administrar sus propios paneles personalizados.

@@ -6,16 +6,16 @@ ms.topic: conceptual
 ms.assetid: 1971868e-89fa-4452-8ee7-76e4daf31b66
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 908685b49a08b3084c31e768675e64bc087bc727
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 3aeffc3be3fee5d3460ddea340d8c4a216829e08
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722443"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963164"
 ---
 # <a name="timer"></a>Temporizador
 La opción **Timer** de *VSPerfCmd.exe* establece el evento de generación de perfiles que se muestrea en ciclos de reloj del procesador, y cambia opcionalmente el número de ciclos en un intervalo de muestreo respecto al valor predeterminado de 10 000 000. En un procesador de 1 GH (un giga), 10.000.000 ciclos de reloj representan aproximadamente 100 muestras por segundo. El número mínimo de ciclos que se puede especificar es 50.000.

@@ -5,15 +5,15 @@ ms.date: 01/24/2018
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 97ce4f226c39a20ad41c5977f800aa178450c69c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3627a8944941fc77bb9b19fe3dd0a1549f41892a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89314945"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961591"
 ---
 # <a name="control-where-r-code-runs-with-workspaces"></a>Controlar dónde se ejecuta el código de R con áreas de trabajo
 

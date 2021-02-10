@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: be00d4a3-d5b8-4159-b632-64577f534883
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c2ddb00e2cf70055c34335d8f2123004eb031a05
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5b7d144658065c32fd15b4b2b21ed0f53fe02a08
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713839"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962956"
 ---
 # <a name="program_destroy_flags"></a>PROGRAM_DESTROY_FLAGS
 Enumera los valores válidos de las marcas de destrucción de programas.
@@ -44,7 +44,7 @@ public enum enum_PPROGRAM_DESTROY_FLAGS
  `PROGRAM_DESTROY_CONTINUE_DEBUGGING`\
  Destruya el programa, pero continúe con la depuración.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  El método [GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md) devuelve la enumeración.
 
 ## <a name="requirements"></a>Requisitos

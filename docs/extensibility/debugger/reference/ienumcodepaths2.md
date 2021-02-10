@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 17ec9f9e-dc06-4532-b5db-da52efcc8630
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89c8cac9a7c2baa020002fe852330639d7081982
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 69a65488d38fe2562392be152e448369ff081915
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717719"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962163"
 ---
 # <a name="ienumcodepaths2"></a>IEnumCodePaths2
 Esta interfaz representa una lista de rutas de acceso de código.
@@ -45,7 +45,7 @@ IEnumCodePaths2 : IUnknown
 |[Clonar](../../../extensibility/debugger/reference/ienumcodepaths2-clone.md)|Crea un enumerador que contiene el mismo estado de enumeración que el enumerador actual.|
 |[GetCount](../../../extensibility/debugger/reference/ienumcodepaths2-getcount.md)|Obtiene el número de rutas de acceso de código en un enumerador.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Una ruta de acceso de código representa una llamada de función o punto de bifurcación en un programa. Una lista de rutas de código representa la ruta de acceso en la que se ha realizado la ejecución del código.
 
 ## <a name="requirements"></a>Requisitos

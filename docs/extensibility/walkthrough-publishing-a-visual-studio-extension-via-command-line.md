@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6ff9efc4-919d-4071-a80d-6dbdd2ceb2f8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4132d878ff1ec7689be890446a1849577fafd30
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 98c73da67e607346138d7d6fae124a86b7a34618
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877928"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961851"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>Tutorial: publicar una extensión de Visual Studio mediante la línea de comandos
 
@@ -26,13 +26,13 @@ En este tutorial se muestra cómo publicar una extensión de Visual Studio en el
 
 VsixPublisher.exe es la herramienta de línea de comandos para publicar extensiones de Visual Studio en Marketplace. Se puede tener acceso a ella desde $ {VSInstallDir} \VSSDK\VisualStudioIntegration\Tools\Bin\VsixPublisher.exe. Los comandos disponibles en esta herramienta son: **Publish**, **createPublisher**, **deletePublisher**, **deleteExtension**, **login**, **Logout**.
 
-## <a name="commands"></a>Comandos
+## <a name="commands"></a>Comandos:
 
 ### <a name="publish"></a>Publicar
 
 Publica una extensión en Marketplace. La extensión puede ser VSIX, un archivo exe o MSI, o un vínculo. Si la extensión ya existe con la misma versión, sobrescribirá la extensión. Si la extensión no existe, se creará una nueva extensión.
 
-|Opciones de comando |Description |
+|Opciones de comando |Descripción |
 |---------|---------|
 |carga útil (obligatorio) | Una ruta de acceso a la carga que se va a publicar o un vínculo que se usará como "más información URL". |
 |publishManifest (obligatorio) | Ruta de acceso al archivo de manifiesto de publicación que se va a usar. |
@@ -47,7 +47,7 @@ VsixPublisher.exe publish -payload "{path to vsix}" -publishManifest "{path to v
 
 Crea un publicador en Marketplace. También registra el publicador en el equipo para las siguientes acciones (por ejemplo, eliminar o publicar una extensión).
 
-|Opciones de comando |Description |
+|Opciones de comando |Descripción |
 |---------|---------|
 |displayName (obligatorio) | Nombre para mostrar del publicador. |
 |publisherName (obligatorio) | Nombre del publicador (por ejemplo, el identificador). |
@@ -63,7 +63,7 @@ VsixPublisher.exe createPublisher -publisherName "{Publisher Name}" -displayName
 
 Elimina un publicador en Marketplace.
 
-|Opciones de comando |Description |
+|Opciones de comando |Descripción |
 |---------|---------|
 |publisherName (obligatorio) | Nombre del publicador (por ejemplo, el identificador). |
 |personalAccessToken (obligatorio) | Token de acceso personal que se usa para autenticar el publicador. |
@@ -76,7 +76,7 @@ VsixPublisher.exe deletePublisher -publisherName "{Publisher Name}" -personalAcc
 
 Elimina una extensión de Marketplace.
 
-|Opciones de comando |Description |
+|Opciones de comando |Descripción |
 |---------|---------|
 |extensionName (obligatorio) | Nombre de la extensión que se va a eliminar. |
 |publisherName (obligatorio) | Nombre del publicador (por ejemplo, el identificador). |
@@ -90,11 +90,11 @@ VsixPublisher.exe deleteExtension -extensionName "{Extension Name}" -publisherNa
 
 Registra un publicador en la máquina.
 
-|Opciones de comando |Description |
+|Opciones de comando |Descripción |
 |---------|---------|
 |personalAccessToken (obligatorio | Token de acceso personal que se usa para autenticar el publicador. |
 |publisherName (obligatorio) | Nombre del publicador (por ejemplo, el identificador). |
-|overwrite | Especifica que cualquier publicador existente debe sobrescribirse con el nuevo token de acceso personal. |
+|sobrescribir | Especifica que cualquier publicador existente debe sobrescribirse con el nuevo token de acceso personal. |
 
 ```
 VsixPublisher.exe login -personalAccessToken "{Personal Access Token}" -publisherName "{Publisher Name}"
@@ -104,7 +104,7 @@ VsixPublisher.exe login -personalAccessToken "{Personal Access Token}" -publishe
 
 Registra un publicador fuera de la máquina.
 
-|Opciones de comando |Description |
+|Opciones de comando |Descripción |
 |---------|---------|
 |publisherName (obligatorio) | Nombre del publicador (por ejemplo, el identificador). |
 |ignoreMissingPublisher | Especifica que la herramienta no debe ser un error si el publicador especificado todavía no tiene una sesión iniciada. |
@@ -194,7 +194,7 @@ Con el fin de resolver "images/testlogo.png" en el ejemplo anterior, un usuario 
 
 ## <a name="publishing-walkthrough"></a>Tutorial de publicación
 
-### <a name="prerequisites"></a>Prerrequisitos
+### <a name="prerequisites"></a>Requisitos previos
 
 Para seguir este tutorial, debe instalar SDK de Visual Studio. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 

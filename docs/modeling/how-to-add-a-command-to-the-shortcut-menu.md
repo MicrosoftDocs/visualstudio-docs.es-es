@@ -9,15 +9,15 @@ helpviewer_keywords:
 - walkthroughs [Domain-Specific Language Tools]
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7dc51de28162471262d8c4bd35ddd09bc156896e
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 063c0a5cfcf5136e53750e4405e8619bf3154ee2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363346"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963307"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Cómo: agregar un comando al menú contextual
 
@@ -331,7 +331,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 4. Haga clic con el botón secundario en varios elementos del diagrama para comprobar que el comando aparece correctamente habilitado o deshabilitado, y que se muestra o se oculta correctamente según el elemento seleccionado.
 
-## <a name="troubleshoot"></a>Solución de problemas
+## <a name="troubleshoot"></a>Solucionar problemas
 
 **El comando no aparece en el menú:**
 
@@ -359,7 +359,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 - Asegúrese de que ha desinstalado las versiones anteriores del paquete.
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [Escribir código para personalizar lenguajes específicos de dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [Cómo: modificar un comando de menú estándar](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)

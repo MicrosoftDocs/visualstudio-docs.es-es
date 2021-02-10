@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 7d7ef539-2e4b-4637-b853-8ec7626609df
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 903b33d72d3a97eb4ed3f7ad0bc865999bee54cf
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 97071500b8f3bc6cb4d6c21d264646cac2e7fdb6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877512"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962930"
 ---
 # <a name="solution-sln-file"></a>Archivo de solución (. sln)
 
@@ -162,7 +162,7 @@ Cada VSPackage cargado se enumera para ver si tiene algo que guardar en el archi
 
 Solo el archivo. sln contiene entradas en las `preSolution` `postSolution` secciones y. No hay secciones similares en el archivo. suo, ya que la solución necesita esta información para cargar correctamente. El archivo. suo contiene opciones específicas del usuario, como notas privadas, que no están diseñadas para ser compartidas o colocadas bajo control de código fuente.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps>
 - [Archivo de opciones de usuario de la solución (.Suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md)

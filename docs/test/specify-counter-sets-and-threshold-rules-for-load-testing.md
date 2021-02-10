@@ -14,13 +14,13 @@ helpviewer_keywords:
 ms.assetid: 9e14d955-f3a4-4717-bbfe-7f08cdda5678
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 04348eb2d88c560e9687c687486e6b44d8394371
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+manager: jmartens
+ms.openlocfilehash: fda390640d627a91d4ab534192cba9bd9e30f00f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328956"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962644"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>Especificar conjuntos de contadores y reglas de umbral para equipos en una prueba de carga
 

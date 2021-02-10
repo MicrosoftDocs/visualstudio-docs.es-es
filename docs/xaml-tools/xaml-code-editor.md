@@ -6,13 +6,13 @@ ms.topic: overview
 monikerRange: vs-2019
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 29fa854ab00764fc0166a53d8b48989f2c74f036
-ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
+manager: jmartens
+ms.openlocfilehash: df2c257caed24e85569ca41f3cc83dd9d47d5b03
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "97833304"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962319"
 ---
 # <a name="xaml-code-editor"></a>Editor de código XAML
 

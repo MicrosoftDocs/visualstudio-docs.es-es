@@ -15,15 +15,15 @@ helpviewer_keywords:
 - application development [Office development in Visual Studio], automating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 81c2852a92124a7cf9fb6078b196982d22100be7
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 11a0db0e23cf5512a6568ba5b66e0c18e563bd12
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528108"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962384"
 ---
 # <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Cómo: dirigirse a aplicaciones de Office a través de ensamblados de interoperabilidad primarios
   Cuando se crea un nuevo proyecto de Office, Visual Studio agrega automáticamente las referencias a los ensamblados de interoperabilidad primarios (PIA) de Microsoft Office necesarios para compilar el proyecto. Debe agregar referencias a otros PIA en los escenarios siguientes:
@@ -53,7 +53,7 @@ ms.locfileid: "97528108"
 
      El nombre del ensamblado aparece en la carpeta **referencias** de **Explorador de soluciones**.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Ensamblados de interoperabilidad primarios de Office](../vsto/office-primary-interop-assemblies.md)
 - [Escribir código en soluciones de Office](../vsto/writing-code-in-office-solutions.md)
 - [Desarrollo de soluciones de Office](../vsto/developing-office-solutions.md)

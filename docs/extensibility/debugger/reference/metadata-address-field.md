@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 15ab45fe-6b3b-4e09-880b-31b34f523607
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fe9901ac9dab4a1ec4b5e8467f3063845dfb74f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 686eeff2012c02442d166966fff32abc0b1cdf32
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714531"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961981"
 ---
 # <a name="metadata_address_field"></a>METADATA_ADDRESS_FIELD
 
@@ -40,14 +40,14 @@ public struct METADATA_ADDRESS_FIELD {
 }
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 `tokField`\
 IDENTIFICADOR del símbolo (token) del campo.
 
 [C++] `_mdToken` es un `typedef` para un 32 bits `int` .
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 
 Esta estructura forma parte de la Unión de la estructura [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) cuando el `dwKind` campo de la `DEBUG_ADDRESS_UNION` estructura se establece en `ADDRESS_KIND_FIELD` (un valor de la enumeración [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) ).
 

@@ -6,21 +6,21 @@ ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 8b2bbbdf478f27f936d4897f2ff773baa4cca1d6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9f13128bc552ffdb31b3f4a9315a3f9aa3543b0f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285009"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962696"
 ---
 # <a name="work-with-the-nodejs-interactive-window"></a>Trabajar con la ventana interactiva de Node.js
 
-Herramientas de Node.js para Visual Studio incluye una ventana interactiva para el tiempo de ejecución de Node.js instalado. En esta ventana se puede escribir código JavaScript y ver los resultados inmediatamente, así como ejecutar comandos npm para interactuar con el proyecto actual. La ventana interactiva también se conoce como REPL (**R**ead/**E**valuate/**P**rint **L**oop, es decir, bucle de lectura, evaluación e impresión).
+Herramientas de Node.js para Visual Studio incluye una ventana interactiva para el tiempo de ejecución de Node.js instalado. En esta ventana se puede escribir código JavaScript y ver los resultados inmediatamente, así como ejecutar comandos npm para interactuar con el proyecto actual. La ventana interactiva también se conoce como REPL (**R** ead/**E** valuate/**P** rint **L** oop, es decir, bucle de lectura, evaluación e impresión).
 
 ## <a name="open-the-interactive-window"></a>Abrir la ventana interactiva
 

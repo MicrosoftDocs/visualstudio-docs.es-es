@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: b6b3dee7-91c5-4556-9f69-0d56b675e83b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ec7390acf753af20bc0edbe20194ba17c2d9d80
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: d5b58c5885f4fc9bd3765c818ea414bee0dbf3c4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863503"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961864"
 ---
 # <a name="private-galleries"></a>Galerías privadas
 Puede compartir los controles, las plantillas y las herramientas que desarrolle mediante su publicación en una *galería privada* de la intranet de la organización, como se indica a continuación:
@@ -91,6 +91,6 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 
 3. En el panel derecho, seleccione una extensión y, a continuación, elija el botón **Actualizar** .
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Búsqueda y uso de extensiones de Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)
 - [Envío de extensiones de Visual Studio](../extensibility/shipping-visual-studio-extensions.md)

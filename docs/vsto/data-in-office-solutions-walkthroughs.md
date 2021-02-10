@@ -12,15 +12,15 @@ helpviewer_keywords:
 - walkthroughs [Office development in Visual Studio], data
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 25bf42015dcc60014012faf0254d4b6d02c30d56
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 4736b357017f5ff5244af8f078457b0289994e98
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845588"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962423"
 ---
 # <a name="data-in-office-solutions-walkthroughs"></a>Datos en los tutoriales de soluciones de Office
   En los siguientes tutoriales se muestra cómo trabajar con los datos de las personalizaciones de nivel de documento y de los complementos VSTO de Microsoft Office Word y Microsoft Office Excel.

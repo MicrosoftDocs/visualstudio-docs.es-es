@@ -16,15 +16,15 @@ helpviewer_keywords:
 - Office applications [Office development in Visual Studio], globalization
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6b6771b202515148b757e811fdfc63fc0d5052e9
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 245b257140cd0b1f54719ec7a132bf2297fc2dd3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526624"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962347"
 ---
 # <a name="how-to-target-the-office-multilingual-user-interface"></a>Cómo: elegir como destino la interfaz de usuario multilingüe de Office
   La interfaz de usuario multilingüe (MUI) es una característica Microsoft Office que proporciona al usuario final la capacidad de cambiar el idioma de la interfaz de usuario (UI). Por ejemplo, un usuario final que trabaja con una interfaz de usuario en inglés puede cambiar el idioma de la interfaz de usuario a español.
@@ -40,6 +40,6 @@ ms.locfileid: "97526624"
      [!code-vb[Trin_VstcoreCreatingExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb#10)]
      [!code-csharp[Trin_VstcoreCreatingExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#10)]
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Cómo: dirigirse a aplicaciones de Office a través de ensamblados de interoperabilidad primarios](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
 - [Enlace en tiempo de ejecución en las soluciones de Office](../vsto/late-binding-in-office-solutions.md)

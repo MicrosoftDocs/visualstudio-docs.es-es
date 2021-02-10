@@ -13,15 +13,15 @@ helpviewer_keywords:
 - datasets [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4ce6d73a7c70101c0fe364ac5dafba8cbe47f5c8
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: c9f0f057873b6810b7616893646c3c770cc43331
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845553"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962410"
 ---
 # <a name="data-in-office-solutions"></a>Datos en soluciones de Office
   Muchas soluciones de Office permiten a los usuarios recuperar o modificar datos. Al crear soluciones de Office con Visual Studio, hay varias maneras de trabajar con los datos.

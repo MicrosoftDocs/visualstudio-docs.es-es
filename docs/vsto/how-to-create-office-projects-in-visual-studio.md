@@ -21,15 +21,15 @@ helpviewer_keywords:
 - application-level add-ins [Office development in Visual Studio], creating projects
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 652b7676ddf5d7e095010e711ab0dabc5b5f2ab7
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 1d0bd242f3a57031442cb0b39e62a28c01ad1a6b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844379"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962397"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>Cómo: crear proyectos de Office en Visual Studio
   Puede usar [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] para crear complementos de VSTO y personalizaciones de nivel de documento para aplicaciones Microsoft Office. Para obtener más información acerca de estos tipos de proyectos, vea [información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).

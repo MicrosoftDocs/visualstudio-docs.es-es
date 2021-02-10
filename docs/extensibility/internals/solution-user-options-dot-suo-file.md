@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 75258e0d-600d-4a3d-94f4-3d7ac12cb47c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b2a5386e8329bb3ca51ca88a2449e223bb8d73d
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: a978986ed6ef32dbad3ad06eafcba11d7f4782ff
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876759"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962917"
 ---
 # <a name="solution-user-options-suo-file"></a>Archivo de opciones de usuario de la solución (.Suo)
 El archivo de opciones de usuario de la solución (. suo) contiene opciones de solución por usuario. Este archivo no se debe proteger en el control de código fuente.
@@ -38,6 +38,6 @@ El archivo de opciones de usuario de la solución (. suo) contiene opciones de s
 
  Estos dos métodos, `SaveUserOptions` y `WriteUserOptions` , se llaman de forma recursiva para cada flujo de información que se va a guardar en el archivo. suo, pasando el puntero a `IVsSolutionPersistence` . Se llaman de forma recursiva para permitir la escritura de varias secuencias en el archivo. suo. De este modo, la información de usuario se conserva con la solución y se garantiza que estará ahí la próxima vez que se abra la solución.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>
 - [Soluciones](../../extensibility/internals/solutions-overview.md)

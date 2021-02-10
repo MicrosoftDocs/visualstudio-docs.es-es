@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a7d5c70f-a1a5-4120-9f70-184e01c25bff
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b04abdac135143ccbbd1b8e5632bf85c974f29d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8c5cec0d93919058eae725a9e49198f1704d8bfc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721225"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962202"
 ---
 # <a name="idebugproperty2"></a>IDebugProperty2
 Esta interfaz representa una propiedad de marco de pila, una propiedad de documento de programa u otra propiedad. La propiedad suele ser el resultado de una evaluación de expresión.
@@ -58,11 +58,11 @@ IDebugProperty2 : IUnknown
 |[GetDerivedMostProperty](../../../extensibility/debugger/reference/idebugproperty2-getderivedmostproperty.md)|Devuelve la propiedad que describe la propiedad más derivada de una propiedad.|
 |[GetMemoryBytes](../../../extensibility/debugger/reference/idebugproperty2-getmemorybytes.md)|Devuelve los bytes de memoria que componen el valor de una propiedad.|
 |[GetMemoryContext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md)|Devuelve el contexto de memoria para un valor de propiedad.|
-|[GetSize](../../../extensibility/debugger/reference/idebugproperty2-getsize.md)|Devuelve el tamaño, en bytes, del valor de propiedad.|
+|[GetSize (](../../../extensibility/debugger/reference/idebugproperty2-getsize.md)|Devuelve el tamaño, en bytes, del valor de propiedad.|
 |[GetReference](../../../extensibility/debugger/reference/idebugproperty2-getreference.md)|Devuelve una referencia al valor de esta propiedad.|
 |[GetExtendedInfo](../../../extensibility/debugger/reference/idebugproperty2-getextendedinfo.md)|Devuelve la información extendida de una propiedad.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Una propiedad, como se representa mediante una `IDebugProperty2` interfaz, puede considerarse como un valor con un nombre, un tipo y una dirección. En términos más generales, `IDebugProperty2` puede representar cualquier elemento que tenga una estructura jerárquica, con nodos primarios y secundarios.
 
  Una propiedad suele ser transitoria y dura solo mientras el marco de pila actual, por ejemplo. Por otro lado, una referencia, como se representa mediante una interfaz [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) , dura siempre que el valor permanezca en la memoria.
