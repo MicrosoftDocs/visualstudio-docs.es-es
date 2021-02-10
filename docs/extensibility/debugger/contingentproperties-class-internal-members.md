@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: c49d1362-ab1c-4b6d-9950-fcae40e0e66b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6441cafcc34a06464061b41691ea5faa32fc359
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f332c715c8a182b30191cd96c8f1d1438cbdefd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739100"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930491"
 ---
 # <a name="contingentproperties-class---internal-members"></a>Clase ContingentProperties: miembros internos
 Contiene propiedades adicionales para un <xref:System.Threading.Tasks.Task> objeto.
@@ -34,7 +34,7 @@ Contiene propiedades adicionales para un <xref:System.Threading.Tasks.Task> obje
        extends System.Object
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 ### <a name="fields"></a>Campos
 
@@ -42,7 +42,7 @@ Contiene propiedades adicionales para un <xref:System.Threading.Tasks.Task> obje
 |----------|-----------------|
 |[m_children](../../extensibility/debugger/m-children-field.md)|La lista de tareas secundarias que se registran con esta tarea.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  El .NET Framework inicializa los campos de esta clase solo cuando son necesarios.
 
 ## <a name="see-also"></a>Vea también

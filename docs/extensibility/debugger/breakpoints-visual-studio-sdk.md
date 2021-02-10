@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: acfcabed-9f2f-436c-ad18-7ca2f45d631b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d266bb97b6d3086a8f5b74100f5821a5cfca3af
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: fa9f244ec60e336e9a7596ff839842211d516b7d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914457"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930816"
 ---
 # <a name="breakpoints-visual-studio-sdk"></a>Puntos de interrupción (Visual Studio SDK)
 Hay tres tipos de puntos de interrupción: pendiente, enlazado y error.
@@ -46,7 +46,7 @@ Hay tres tipos de puntos de interrupción: pendiente, enlazado y error.
 
 - Se representa mediante una interfaz [IDebugErrorBreakpoint2](../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) .
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Programs](../../extensibility/debugger/programs.md)
 - [Conceptos del depurador](../../extensibility/debugger/debugger-concepts.md)
 - [Contexto de código](../../extensibility/debugger/code-context.md)

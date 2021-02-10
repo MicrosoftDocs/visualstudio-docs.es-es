@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 2a0a1cd3-7b9e-493e-9264-fcf85289ffcf
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a35911fef39315580f402e174b0f32d443a33cf
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: a41511f9bfb381eeb422cc9cf7ec015d55ceff70
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437806"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931518"
 ---
 # <a name="initialize-correlation-dialog-box"></a>Inicializar correlación (cuadro de diálogo)
 
@@ -34,6 +34,6 @@ En la tabla siguiente se describen los elementos de la interfaz de usuario (IU) 
 
 Haga clic en **Ver** en el diseñador de actividades **InitializeCorrelation** o seleccione una <xref:System.ServiceModel.Activities.InitializeCorrelation> actividad en diseñador de flujo de trabajo. A continuación, haga clic en el botón de puntos suspensivos junto a la <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> propiedad en la cuadrícula de propiedades.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)

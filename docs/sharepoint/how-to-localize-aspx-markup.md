@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, localizing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0a4fcf724a8ae1586354f620a68b32e9f281b545
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 1876e06348d60f8a960b352525fd72ad06795101
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304657"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931739"
 ---
 # <a name="how-to-localize-aspx-markup"></a>Cómo: para localizar el marcado ASPX
   [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] las páginas de (. aspx) suelen usar valores de cadena codificados de forma rígida. Para localizar estas cadenas, reemplácelas por expresiones que hagan referencia a recursos localizados.
@@ -62,7 +62,7 @@ ms.locfileid: "96304657"
     </asp:Content>
     ```
 
-     to
+     en
 
     ```aspx-csharp
     <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">
@@ -76,7 +76,7 @@ ms.locfileid: "96304657"
 
      Las cadenas localizadas aparecen en la aplicación. Para mostrar los recursos localizados, el servidor de SharePoint debe tener instalado el paquete de idioma que coincide con la referencia cultural del archivo de recursos.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Localización de soluciones de SharePoint](../sharepoint/localizing-sharepoint-solutions.md)
 - [Cómo: para localizar una característica](../sharepoint/how-to-localize-a-feature.md)
 - [Cómo: para agregar un archivo de recursos](../sharepoint/how-to-add-a-resource-file.md)

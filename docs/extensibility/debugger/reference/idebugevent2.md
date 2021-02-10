@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: de3d714d-96fb-4e12-b66b-a75391472153
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6341f8003b962a7f45420b076b23623ebdaf861
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6ff87d79d45c90a3307d5f28a2aa6109033f4a59
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729913"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933341"
 ---
 # <a name="idebugevent2"></a>IDebugEvent2
 Esta interfaz se usa para comunicar la información de depuración crítica, como la detención en un punto de interrupción, y la información no crítica, como un mensaje de depuración.
@@ -41,7 +41,7 @@ IDebugEvent2 : IUnknown
 |------------|-----------------|
 |[GetAttributes](../../../extensibility/debugger/reference/idebugevent2-getattributes.md)|Obtiene los atributos para este evento de depuración.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Las interfaces de eventos más específicas, como [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md), no se derivan de la interfaz IDebugEvent2, sino que se implementan como una interfaz independiente en el mismo objeto que `IDebugEvent2` .
 
 ## <a name="requirements"></a>Requisitos

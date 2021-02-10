@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: b3440ac3-80af-40c6-bef4-cbf00fa67885
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 832b42e62731a087048b4aa50e19b74c408343c5
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 7ef1aad17caae12b046ac483808f847a6e186792
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914393"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930712"
 ---
 # <a name="call-debugger-events"></a>Llamar a eventos del depurador
 Los eventos de las sesiones de depuración se producen en un orden específico.
 
-## <a name="discussion"></a>Discusión
+## <a name="discussion"></a>Debate
  Para entender el patrón de llamadas entre el motor de depuración (DE) y el administrador de depuración de sesión (SDM), lo siguiente representa el orden de llamada de los eventos que se producen en una sesión de depuración típica:
 
 1. [Adjuntar y desasociar a un programa](../../extensibility/debugger/attaching-and-detaching-to-a-program.md)
@@ -49,5 +49,5 @@ Los eventos de las sesiones de depuración se producen en un orden específico.
 
 12. [Control de excepciones](../../extensibility/debugger/exception-handling-visual-studio-sdk.md)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Crear un motor de depuración personalizado](../../extensibility/debugger/creating-a-custom-debug-engine.md)

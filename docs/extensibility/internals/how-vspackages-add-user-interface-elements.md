@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3e2fe51c365e3e6936a73aef9d4de9d52024d47
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: fc9e80f549a5bf8cbf151ee224a9f503470a90de
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761093"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934134"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Cómo agrega VSPackages los elementos de la interfaz de usuario
 Un VSPackage puede agregar elementos de interfaz de usuario (IU), por ejemplo, menús, barras de herramientas y ventanas de herramientas, a Visual Studio por medio del archivo *. Vsct* .
@@ -131,7 +131,7 @@ Dado que forma parte de un menú, este grupo normalmente contendría comandos. S
 </Menu>
 ```
 
-#### <a name="commands"></a>Comandos
+#### <a name="commands"></a>Comandos:
 Un comando que se proporciona al IDE se define como un elemento de [botón](../../extensibility/button-element.md) o como un [elemento combinado](../../extensibility/combo-element.md). Para que aparezca en un menú o una barra de herramientas, el comando debe tener un grupo como su elemento primario.
 
 ##### <a name="buttons"></a>Botones
@@ -187,7 +187,7 @@ Las siguientes reglas rigen el modo en que un elemento puede llamar a otro eleme
 
 |Elemento|Definido en esta sección de la tabla de comandos|Puede estar contenido (como un elemento primario o por la selección de ubicación en la `CommandPlacements` sección, o ambos).|Puede contener (conocido como primario)|
 |-------------| - | - | - |
-|Grupo|[Elemento Groups](../../extensibility/groups-element.md), IDE, otros VSPackages|Un menú, un grupo, el propio elemento|Menús, grupos y comandos|
+|Group (Grupo)|[Elemento Groups](../../extensibility/groups-element.md), IDE, otros VSPackages|Un menú, un grupo, el propio elemento|Menús, grupos y comandos|
 |Menú|[Menus (elemento](../../extensibility/menus-element.md)), IDE, otros VSPackages|de 1 a *n* grupos|de 0 a *n* grupos|
 |Barra de herramientas|[Menus (elemento](../../extensibility/menus-element.md)), IDE, otros VSPackages|El propio elemento|de 0 a *n* grupos|
 |Elemento de menú|[Buttons, elemento](../../extensibility/buttons-element.md), el IDE, otros VSPackages|de 1 a *n* grupos, el propio elemento|de-0 a *n* grupos|

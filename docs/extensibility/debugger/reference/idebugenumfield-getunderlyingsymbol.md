@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: c3b8a117-6708-4cfd-8ffc-5f007d706bc5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 14cac9d3f761e95b821179137f2efc23ef61b91b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c812117e59ca50e64fa6e987ebbe1d30d8d552c8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730269"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933536"
 ---
 # <a name="idebugenumfieldgetunderlyingsymbol"></a>IDebugEnumField::GetUnderlyingSymbol
 Este método devuelve un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) que representa el nombre de la enumeración.
@@ -46,7 +46,7 @@ enuncia Devuelve el [IDebugField](../../../extensibility/debugger/reference/ideb
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  El nombre de la enumeración también contiene el tipo de la enumeración, que está enlazado a una ubicación de memoria mediante el uso de [BIND](../../../extensibility/debugger/reference/idebugbinder-bind.md).
 
 ## <a name="see-also"></a>Vea también

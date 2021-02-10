@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: c74e3ccf-d771-48c8-a2f9-df323b166784
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1da4d48b41b4b42a3c3f049f64ca76e1d9eba6eb
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 38ad456c6c946964f3038a712274003bae5732fa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189945"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932741"
 ---
 # <a name="command-availability"></a>Disponibilidad de comandos
 
@@ -55,7 +55,7 @@ Si aún no se ha definido un GUID de contexto de comando adecuado, puede definir
 > [!CAUTION]
 > Asegúrese de que el VSPackage no afecte a ningún GUID de contexto existente, ya que otros VSPackages pueden depender de ellos.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Objetos de contexto de selección](../../extensibility/internals/selection-context-objects.md)
 - [Cómo agrega VSPackages los elementos de la interfaz de usuario](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

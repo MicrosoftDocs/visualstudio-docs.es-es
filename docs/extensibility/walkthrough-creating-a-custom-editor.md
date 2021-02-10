@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: d090abb6-d99f-4083-a3db-cd16bf81ce7d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 188c02471e8921e66faefe9668ec3f54c935b50b
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 0a4ebcf99634012943ed0a7fd1a72b5d4852729e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863125"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931388"
 ---
 # <a name="walkthrough-create-a-custom-editor"></a>Tutorial: crear un editor personalizado
 La plantilla de proyecto VSPackage puede crear un editor personalizado simple en C++. La plantilla de proyecto de VSPackage ya no es compatible con proyectos de C# o Visual Basic. Para obtener más información, vea el [SDK de Visual Studio](../extensibility/visual-studio-sdk.md).
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
  Para seguir este tutorial, debe instalar SDK de Visual Studio. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="the-visual-studio-package-project-template"></a>La plantilla de proyecto de paquete de Visual Studio
@@ -48,5 +48,5 @@ La plantilla de proyecto VSPackage puede crear un editor personalizado simple en
 
      El editor admite operaciones de cortar y pegar, buscar y reemplazar, y operaciones de apertura y carga.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [VSPackages](../extensibility/internals/vspackages.md)

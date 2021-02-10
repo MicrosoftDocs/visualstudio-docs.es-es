@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 42f685bf-0f39-47f4-98b0-6022efe2bf97
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7885f36a113809e81279498a769e257af4f1cde2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a67c660ec8457191e688fdd430c3f7a07b5d75c3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730173"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933328"
 ---
 # <a name="idebugenumfield"></a>IDebugEnumField
 Esta interfaz representa un tipo de enumeración.
@@ -44,7 +44,7 @@ IDebugEnumField : IDebugContainerField
 |[GetValueFromString](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstring.md)|Devuelve el valor asociado al nombre de constante de la enumeración especificado.|
 |[GetValueFromStringCaseInsensitive](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstringcaseinsensitive.md)|Devuelve el valor asociado al nombre de constante de la enumeración especificado, pero se omite Case.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Es el símbolo subyacente que está enlazado realmente a una ubicación con [BIND](../../../extensibility/debugger/reference/idebugbinder-bind.md).
 
 ## <a name="requirements"></a>Requisitos

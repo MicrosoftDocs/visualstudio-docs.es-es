@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 13b74765-0b7c-418e-8cd9-5f2e8db51ae5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a288beb618b0b539f53270928366349f47aee9e9
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 951b83f425f1e7171c519fced3fa3a4644279621
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487730"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934147"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Guía de pruebas para los complementos de control de código fuente
 En esta sección se proporcionan instrucciones para probar el complemento de control de código fuente con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Se proporciona una amplia introducción a las áreas de pruebas más comunes, así como algunas de las más complicadas que pueden ser problemáticas. Esta introducción no pretende ser una lista exhaustiva de casos de prueba.

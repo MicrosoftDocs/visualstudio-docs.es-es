@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: 63ec1ae8-27da-4574-aa15-1c986fe9fe58
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e03ccbb7761802401239768c54f4ea5b36ab86bf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fa3f2c02610b5fbe99335ccea6d7c566a0fe58df
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723199"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931466"
 ---
 # <a name="idebugprocesssecurityquerycansafelyattach"></a>IDebugProcessSecurity::QueryCanSafelyAttach
 Este método permite al proveedor del puerto mostrar una advertencia antes de que el usuario se adjunte a un proceso no seguro.
@@ -42,5 +42,5 @@ int QueryCanSafelyAttach();
 
 - `FAILURE`: No se puede asociar al proceso.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [IDebugProcessSecurity](../../../extensibility/debugger/reference/idebugprocesssecurity.md)

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, localizing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2cbe38c55b92514954cc3487544fed89d68cc4dc
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: e76b8cfb2e9fcb513905918bd4ae87524078f6c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304578"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931648"
 ---
 # <a name="how-to-localize-code"></a>Cómo: para localizar código
   El código sin localizar usa valores de cadena codificados de forma rígida. Para localizar cadenas de código, sustitúyalas por llamadas a <xref:System.Web.HttpContext.GetGlobalResourceObject%2A>, que es un método que hace referencia a los recursos localizados.
@@ -70,7 +70,7 @@ ms.locfileid: "96304578"
 
      Las cadenas localizadas aparecen en la aplicación. Para mostrar los recursos localizados, el servidor de SharePoint debe tener instalado el paquete de idioma que coincide con la referencia cultural del archivo de recursos.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Localización de soluciones de SharePoint](../sharepoint/localizing-sharepoint-solutions.md)
 - [Cómo: para localizar una característica](../sharepoint/how-to-localize-a-feature.md)
 - [Cómo: para localizar el marcado ASPX](../sharepoint/how-to-localize-aspx-markup.md)

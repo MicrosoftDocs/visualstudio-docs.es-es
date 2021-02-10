@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 104c4c55-78b8-42f4-b6b0-9a334101aaea
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 939de72d672b750d2f2fc61a6c412368df5523d8
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 4d5a0bd912dadf6b8f90aabd846c6ac44534c917
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875406"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934082"
 ---
 # <a name="providing-automation-for-vspackages"></a>Provisión de automatización de VSPackages
 Hay dos formas principales de proporcionar automatización para los VSPackages: mediante la implementación de objetos específicos de VSPackage y la implementación de objetos de automatización estándar. Por lo general, se usan conjuntamente para ampliar el modelo de automatización del entorno.
@@ -31,7 +31,7 @@ Hay dos formas principales de proporcionar automatización para los VSPackages: 
 #### <a name="projects"></a>Proyectos
  Los VSPackages pueden extender el modelo de automatización para los nuevos tipos de proyecto a través de sus propios objetos específicos del VSPackage. El objetivo principal de proporcionar nuevos objetos de automatización para el VSPackage es diferenciar los objetos de proyecto únicos de un <xref:Microsoft.VisualStudio.VCProjectEngine.VCProject> <xref:VSLangProj80.VSProject2> objeto o. Esta diferenciación resulta útil cuando se desea proporcionar una manera de desplazarse o recorrer el tipo de proyecto de forma independiente con respecto a otros tipos de proyecto, en caso de que aparezcan en paralelo en una solución. Para obtener más información, vea [exponer objetos de proyecto](../../extensibility/internals/exposing-project-objects.md).
 
-#### <a name="events"></a>Eventos
+#### <a name="events"></a>Events
  La arquitectura de eventos del entorno ofrece otro lugar para que anexe sus propios objetos específicos del VSPackage. Por ejemplo, mediante la creación de sus propios objetos de evento únicos, puede extender el modelo de eventos del entorno para los proyectos de. Es posible que desee proporcionar sus propios eventos cuando se agregue un nuevo elemento a su propio tipo de proyecto. Para obtener más información, vea [exponer eventos](../../extensibility/internals/exposing-events-in-the-visual-studio-sdk.md).
 
 #### <a name="window-objects"></a>Window (Objetos)

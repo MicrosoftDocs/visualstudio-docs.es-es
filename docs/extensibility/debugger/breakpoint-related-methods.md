@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: a6f77bf0-bf81-443f-8683-5f12075bbe10
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9472f1ff4105790951ddd687d7e71c3e57fa39da
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: c20a92e847f120850d7cbd424cc073018903911d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914470"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930829"
 ---
 # <a name="breakpoint-related-methods"></a>Métodos relacionados con los puntos de interrupción
 Un motor de depuración (DE) debe admitir la configuración de puntos de interrupción. La depuración de Visual Studio admite los siguientes tipos de puntos de interrupción:
@@ -31,7 +31,7 @@ Un motor de depuración (DE) debe admitir la configuración de puntos de interru
 
      Solicitado a través de la interfaz de usuario, pero que aún no se ha enlazado a instrucciones reales
 
-## <a name="discussion"></a>Discusión
+## <a name="discussion"></a>Debate
  Por ejemplo, se produce un punto de interrupción pendiente cuando las instrucciones aún no se han cargado. Cuando se carga el código, los puntos de interrupción pendientes intentan enlazarse con el código en la ubicación indicada, es decir, para insertar instrucciones de salto en el código. Los eventos se envían al administrador de depuración de la sesión (SDM) para indicar que el enlace se ha realizado correctamente o para notificar que hubo errores de enlace.
 
  Un punto de interrupción pendiente también administra su propia lista interna de puntos de interrupción enlazados correspondientes. Un punto de interrupción pendiente puede producir la inserción de muchos puntos de interrupción en el código. La interfaz de usuario de depuración de Visual Studio muestra una vista de árbol de los puntos de interrupción pendientes y sus puntos de interrupción enlazados correspondientes.
@@ -44,7 +44,7 @@ Un motor de depuración (DE) debe admitir la configuración de puntos de interru
 |[Volver](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|Enlaza un punto de interrupción pendiente especificado a una o varias ubicaciones de código.|
 |[GetState](../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md)|Obtiene el estado de un punto de interrupción pendiente.|
 |[GetBreakpointRequest](../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md)|Obtiene la solicitud de punto de interrupción utilizada para crear un punto de interrupción pendiente.|
-|[Habilitar](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)|Alterna el estado habilitado de un punto de interrupción pendiente.|
+|[Habilitación](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)|Alterna el estado habilitado de un punto de interrupción pendiente.|
 |[EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)|Enumera todos los puntos de interrupción enlazados desde un punto de interrupción pendiente.|
 |[EnumErrorBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)|Enumera todos los puntos de interrupción de error resultantes de un punto de interrupción pendiente.|
 |[Eliminar](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)|Elimina un punto de interrupción pendiente y todos los puntos de interrupción enlazados a él.|
@@ -58,7 +58,7 @@ Un motor de depuración (DE) debe admitir la configuración de puntos de interru
 |[GetPendingBreakpoint](../../extensibility/debugger/reference/idebugboundbreakpoint2-getpendingbreakpoint.md)|Obtiene el punto de interrupción pendiente que contiene un punto de interrupción.|
 |[GetState](../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)|Obtiene el estado de un punto de interrupción enlazado.|
 |[GetBreakpointResolution](../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md)|Obtiene la resolución del punto de interrupción que describe un punto de interrupción.|
-|[Habilitar](../../extensibility/debugger/reference/idebugboundbreakpoint2-enable.md)|Habilita o deshabilita un punto de interrupción.|
+|[Habilitación](../../extensibility/debugger/reference/idebugboundbreakpoint2-enable.md)|Habilita o deshabilita un punto de interrupción.|
 |[Eliminar](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md)|Elimina un punto de interrupción enlazado.|
 
  La información de resolución y solicitud requiere la implementación de los siguientes métodos de [IDebugBreakpointResolution2](../../extensibility/debugger/reference/idebugbreakpointresolution2.md) .
@@ -84,5 +84,5 @@ Un motor de depuración (DE) debe admitir la configuración de puntos de interru
 
  La visualización del código fuente en un punto de interrupción requiere la implementación de los métodos de [IDebugStackFrame2:: GetDocumentContext](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md) y/o los métodos de [IDebugStackFrame2:: GetCodeContext](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Control de ejecución y evaluación del estado](../../extensibility/debugger/execution-control-and-state-evaluation.md)

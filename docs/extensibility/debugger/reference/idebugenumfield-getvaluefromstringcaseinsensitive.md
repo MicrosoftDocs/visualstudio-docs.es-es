@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: ef95b38e-d9b2-4fb5-a166-7c2e14641dc7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 551945ded9d1ba3e973f18c21463a896cbd478c8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c0eb781cd9e7a9073a45418c3793dc6ba026ec45
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730246"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933354"
 ---
 # <a name="idebugenumfieldgetvaluefromstringcaseinsensitive"></a>IDebugEnumField::GetValueFromStringCaseInsensitive
 Este método usa una búsqueda que no distingue entre mayúsculas y minúsculas para devolver el valor asociado al nombre de una constante de enumeración.
@@ -51,7 +51,7 @@ enuncia Devuelve el valor numérico asociado.
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve `S_FALSE` si el nombre no forma parte de la enumeración, o un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Este método no distingue entre mayúsculas y minúsculas. Si se necesita una búsqueda que distinga entre mayúsculas y minúsculas (por ejemplo, en un lenguaje como C++ en el que los nombres distinguen mayúsculas de minúsculas), use [GetValueFromString](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstring.md).
 
 ## <a name="see-also"></a>Vea también

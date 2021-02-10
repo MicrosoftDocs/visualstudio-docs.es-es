@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 446773a9-e6f7-4c0c-8dbc-9e303bf32eb1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c86b033986511100415989e76f4f1e6ef7702f10
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: a7e8ea6514f29b99975b9e291d6a09ed2a0ad54e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715956"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934017"
 ---
 # <a name="animations-for-visual-studio"></a>Animaciones para Visual Studio
 ## <a name="animation-fundamentals"></a>Aspectos básicos de la animación
@@ -120,7 +120,7 @@ Mostrar información compleja y variable:
 
 - Un elemento anclado a otro
 
-##### <a name="state"></a>State
+##### <a name="state"></a>Estado
 
 - Actualizaciones de contenido
 
@@ -144,7 +144,7 @@ Mostrar información compleja y variable:
 
 - Voltear imágenes
 
-##### <a name="time"></a>Hora
+##### <a name="time"></a>Time
 
 - Mostrar cambio con el tiempo, lapso de tiempo y screencast
 

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - icons [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: aaf6b96548a9856833fcd1768764ed914da30a07
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: a3a2fab671d6302583f1207f5756118c548bd8a9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848097"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933614"
 ---
 # <a name="guidelines-to-create-outlook-form-regions"></a>Instrucciones para crear áreas de formulario de Outlook
   La siguiente información puede ayudarle a optimizar las áreas del formulario y a evitar posibles problemas:
@@ -86,7 +86,7 @@ ms.locfileid: "96848097"
 
   El icono **Página** aparecerá en la cinta de opciones de un inspector, en aquellos elementos que tengan áreas de formulario de tipo Independiente, Reemplazo o Reemplazo total.
 
-  El icono de **ventana** aparece en el área de notificación y en el cuadro de diálogo de la **Alt** + **pestaña** Alt para los elementos abiertos que muestran las áreas de formulario de reemplazo o de reemplazo completo.
+  El icono de **ventana** aparece en el área de notificación y en el cuadro de diálogo de la  + **pestaña** Alt para los elementos abiertos que muestran las áreas de formulario de reemplazo o de reemplazo completo.
 
 ## <a name="see-also"></a>Vea también
 - [Obtener acceso a un área de formulario en tiempo de ejecución](../vsto/accessing-a-form-region-at-run-time.md)

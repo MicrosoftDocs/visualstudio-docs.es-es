@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 08aa6a3f-3e5f-4c83-8eca-7b7b5f8e208d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2721028c0635af274174574e4a264546c1909778
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d2aad05751a1e8abe89caaf2c2f6627e01e4f825
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737805"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931479"
 ---
 # <a name="bp_state"></a>BP_STATE
 Especifica la existencia de un punto de interrupción enlazado y también especifica si está habilitado.
@@ -59,7 +59,7 @@ Especifica que el punto de interrupción está deshabilitado.
 `BPS_ENABLED`\
 Especifica que el punto de interrupción está habilitado.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Se devuelve desde el método [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md) .
 
 ## <a name="requirements"></a>Requisitos

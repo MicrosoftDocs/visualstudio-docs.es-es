@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 627af69c-5cce-4e1d-8233-5f4d8dbc62e5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1a12e0ebbbf5c964da69c6bf6b1e7233487d6528
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 089122a4a4d7ff3d6a8828ba0c251efd3729c101
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731849"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933549"
 ---
 # <a name="idebugdocumentcontext2enumcodecontexts"></a>IDebugDocumentContext2::EnumCodeContexts
 Recupera una lista de todos los contextos de código asociados a este contexto de documento.
@@ -45,7 +45,7 @@ int EnumCodeContexts(
 ## <a name="return-value"></a>Valor devuelto
 Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Un único contexto de documento puede generar varios contextos de código cuando el documento usa plantillas o archivos de inclusión.
 
 ## <a name="example"></a>Ejemplo

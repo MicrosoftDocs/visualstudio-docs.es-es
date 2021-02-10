@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e80a6960-9456-4764-9320-e7b1bd57fe5d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0fdbd8e409208c28fbfc1ce728df3591be655c75
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2cbe4c0951d116500a94e1bce0fb905ea5bc501d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725025"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933055"
 ---
 # <a name="idebugportex2resumeprocess"></a>IDebugPortEx2::ResumeProcess
 Reanuda la ejecución de un proceso.
@@ -28,13 +28,13 @@ Reanuda la ejecución de un proceso.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT ResumeProcess( 
+HRESULT ResumeProcess( 
    IDebugProcess2* pPortProcess
 );
 ```
 
 ```cpp
-int ResumeProcess( 
+int ResumeProcess( 
    IDebugProcess2 pPortProcess
 );
 ```

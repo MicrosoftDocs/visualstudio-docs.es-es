@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: b25f7e7d-2b24-48e4-93b3-829e61d73ebf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 488f675c39bb01c87aca13a9bef8cc4a715ecf18
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3cb8d468971a578f68ba64fe754ed788493400a8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719496"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934056"
 ---
 # <a name="idebugstackframe3getunwindcodecontext"></a>IDebugStackFrame3::GetUnwindCodeContext
 Devuelve el contexto de código que representa una ubicación si se ha producido una operación de desenredo de pila.
@@ -46,7 +46,7 @@ enuncia Devuelve un objeto [IDebugCodeContext2](../../../extensibility/debugger/
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Aunque este método puede devolver un contexto de código para la ubicación después de un desenredado de la pila, no significa necesariamente que el desenredado de la pila pueda producirse realmente en el marco de pila actual.
 
 ## <a name="see-also"></a>Vea también

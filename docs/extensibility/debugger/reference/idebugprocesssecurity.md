@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 8a52ddca-bd99-49c0-9778-469dce7abd44
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36c81cda3a27cfe1ef0fecfefc9bbb790d4d5217
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7c6807ff64d8acf44551fa12fcb79199d3817373
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723194"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933029"
 ---
 # <a name="idebugprocesssecurity"></a>IDebugProcessSecurity
 `IDebugProcessSecurity` lo implementa un proveedor de puerto para advertir al usuario de que la asociación al proceso no es segura.
@@ -34,7 +34,7 @@ IDebugProcessSecurity : IUnknown
 |[GetUserName](../../../extensibility/debugger/reference/idebugprocesssecurity-getusername.md)|Obtiene el nombre de usuario del proveedor del puerto.|
 |[QueryCanSafelyAttach](../../../extensibility/debugger/reference/idebugprocesssecurity-querycansafelyattach.md)|Advierte que un usuario que se asocia al proceso de depuración no es seguro.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Implemente esta interfaz para mostrar una advertencia y permitir que el usuario cancele si el proceso al que se va a adjuntar se puede considerar no seguro.
 
 ## <a name="requirements"></a>Requisitos
@@ -44,7 +44,7 @@ IDebugProcessSecurity : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Puertos](../../../extensibility/debugger/ports.md)
 - [Proveedores de puertos](../../../extensibility/debugger/port-suppliers.md)
 - [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)

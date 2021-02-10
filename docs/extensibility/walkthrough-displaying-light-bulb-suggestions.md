@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d8d498c1d9a5e5142672bcd561ac0749bbf8d75
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: e1c906b96f3bd20b72cf2b5eca92190e0ad42916
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877967"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931297"
 ---
 # <a name="walkthrough-display-light-bulb-suggestions"></a>Tutorial: Mostrar sugerencias de bombillas
 Las bombillas son iconos en el editor de Visual Studio que se expanden para mostrar un conjunto de acciones, por ejemplo, correcciones de problemas identificados por los analizadores de código integrados o la refactorización de código.
@@ -38,7 +38,7 @@ Las bombillas son iconos en el editor de Visual Studio que se expanden para most
 
   Puede usar bombillas para proporcionar sus propias acciones sugeridas. Por ejemplo, puede proporcionar acciones para mover las llaves de apertura a una nueva línea o moverlas al final de la línea anterior. En el siguiente tutorial se muestra cómo crear una bombilla que aparece en la palabra actual y tiene dos acciones sugeridas: **convertir a** mayúsculas y **convertir a** minúsculas.
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
  A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS después. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-managed-extensibility-framework-mef-project"></a>Crear un proyecto Managed Extensibility Framework (MEF)

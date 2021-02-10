@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e5a3345b-d460-4e40-8f5b-3111c56a2ed9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0b60c09b21d531326e343dddd2f1cc69cfb0e5d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 54f53132f0a1f4769386874118d24f7e77a95f71
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729897"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933315"
 ---
 # <a name="idebugeventcallback2event"></a>IDebugEventCallback2::Event
 Envía la notificación de eventos de depuración.
@@ -28,7 +28,7 @@ Envía la notificación de eventos de depuración.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT Event( 
+HRESULT Event( 
    IDebugEngine2*  pEngine,
    IDebugProcess2* pProcess,
    IDebugProgram2* pProgram,
@@ -40,7 +40,7 @@ HRESULT Event( 
 ```
 
 ```csharp
-int Event( 
+int Event( 
    IDebugEngine2  pEngine,
    IDebugProcess2 pProcess,
    IDebugProgram2 pProgram,
@@ -76,7 +76,7 @@ de Combinación de marcas de la enumeración [EVENTATTRIBUTES](../../../extensib
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Al llamar a este método, el `dwAttrib` parámetro debe coincidir con el valor devuelto desde el método [GetAttributes](../../../extensibility/debugger/reference/idebugevent2-getattributes.md) como se llama en el objeto de evento pasado en el `pEvent` parámetro.
 
  Todos los eventos de depuración se publican de forma asincrónica, independientemente de si un evento es asincrónico o no. Cuando un DE llama a este método, el valor devuelto no indica si se ha procesado el evento, solo si se ha recibido el evento. De hecho, en la mayoría de los casos, el evento no se ha procesado cuando este método devuelve.
