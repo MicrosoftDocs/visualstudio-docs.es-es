@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 1c7fe777-615e-4929-9ed4-970d9fe0eb81
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fa7e4a498188dc91f2a47b3ccf27f367f15ec77b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 745ecf4efa661c31e230a25d23cfd66cb5d5bb51
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737394"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939128"
 ---
 # <a name="debugprop_info_flags"></a>DEBUGPROP_INFO_FLAGS
 Especifica qué información se va a recuperar sobre un objeto de propiedad de depuración.
@@ -110,7 +110,7 @@ Inicialice o use los `dwAttrib` `bstrName` campos,, `bstrType` y `bstrValue` .
 `DEBUGPROP_INFO_All`\
 Indica una máscara de todas las marcas.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Estos valores se pasan a los métodos [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md), [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)y [EnumProperties (](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) para indicar los campos que se van a inicializar en la estructura [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) .
 
 Estos valores también se usan para que el `dwFields` miembro de la `DEBUG_PROPERTY_INFO` estructura indique qué campos de la estructura se usan y son válidos cuando se devuelve la estructura.

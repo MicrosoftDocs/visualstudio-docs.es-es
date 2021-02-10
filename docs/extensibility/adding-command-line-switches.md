@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 8bbbd87e-76fe-4fb5-8ef9-65f5e31967cf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0eefb532380badcf917f6d512bc5b41ebb96b1d1
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: fa38e508c087d61ad5ea1762e3e3cc33d6d4f538
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597735"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939232"
 ---
 # <a name="add-command-line-switches"></a>Agregar modificadores de la línea de comandos
 Puede agregar modificadores de la línea de comandos que se aplican a su VSPackage cuando se ejecuta *devenv.exe* . Use <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> para declarar el nombre del modificador y sus propiedades. En este ejemplo, se agrega el modificador mySwitch para una subclase de VSPackage denominada **AddCommandSwitchPackage** sin argumentos y el VSPackage se carga automáticamente.
@@ -36,7 +36,7 @@ Puede agregar modificadores de la línea de comandos que se aplican a su VSPacka
 | Argumentos | El número de argumentos para el modificador. Puede ser "*", o una lista de argumentos. |
 | DemandLoad | Cargue el VSPackage automáticamente si se establece en 1; de lo contrario, establézcalo en 0. |
 | HelpString | Cadena de ayuda o identificador de recurso de la cadena que se va a mostrar con **devenv/?**. |
-| Name | Modificador. |
+| Nombre | Modificador. |
 | PackageGuid | Identificador único global (GUID) del paquete. |
 
  El primer valor de arguments es normalmente 0 o 1. Se puede usar un valor especial de ' * ' para indicar que todo el resto de la línea de comandos es el argumento. Esto puede ser útil para depurar escenarios en los que un usuario debe pasar una cadena de comandos del depurador.
@@ -74,4 +74,4 @@ cmdline.GetOption("MySwitch", out isPresent, out optionValue);
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>
 - [Modificadores de línea de comandos para Devenv](../ide/reference/devenv-command-line-switches.md)
 - [Utilidad CreatePkgDef](../extensibility/internals/createpkgdef-utility.md)
-- [. Pkgdef (archivos)](https://devblogs.microsoft.com/visualstudio/whats-a-pkgdef-and-why/)
+- [. Archivos Pkgdef](https://devblogs.microsoft.com/visualstudio/whats-a-pkgdef-and-why/)

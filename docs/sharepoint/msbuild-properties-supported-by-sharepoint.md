@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, MSBuild properties
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f1eab3832121f1e0c926257797ddbc79695546a5
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 20458cc7047e913e13f4594380d4b4946b44ec17
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305141"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938517"
 ---
 # <a name="msbuild-properties-supported-by-sharepoint"></a>Propiedades de MsBuild compatibles con SharePoint
   Cualquier [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] propiedad definida en el archivo Microsoft. VisualStudio. SharePoint. targets, el archivo de proyecto o el archivo de usuario de proyecto se puede utilizar en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] proyectos de SharePoint. Además de las propiedades comunes [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] que proporciona el proyecto, SharePoint define propiedades adicionales que son específicas de los proyectos de SharePoint.
@@ -29,7 +29,7 @@ ms.locfileid: "96305141"
 ## <a name="msbuild-properties-specific-to-sharepoint"></a>Propiedades de MsBuild específicas de SharePoint
  En la tabla siguiente [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] se enumeran las propiedades que se aplican específicamente a los proyectos de SharePoint en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Existen otras propiedades, pero son para uso interno.
 
-|Nombre de propiedad|Descripción|
+|Nombre de la propiedad|Descripción|
 |-------------------|-----------------|
 |SharePointSiteUrl|Cadena que representa el [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] en el sitio de SharePoint.|
 |SandboxedSolution|Un valor booleano que indica si la solución es una solución en espacio aislado.|
@@ -53,6 +53,6 @@ ms.locfileid: "96305141"
 > [!NOTE]
 > Puede usar la sintaxis de [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] variable `$(` *PropertyName* `)` o la variable de entorno `%` *PropertyName* `%` para especificar una propiedad.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Referencia de MSBuild](../msbuild/msbuild-reference.md)

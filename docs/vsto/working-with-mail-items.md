@@ -14,15 +14,15 @@ helpviewer_keywords:
 - mail items [Office development in Visual Studio], about mail items
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ce91f9773bf4fc212a47bf64d76c8f1131457c38
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 033dece28bad4471560646cdd086b342b3e1357b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526879"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939245"
 ---
 # <a name="work-with-mail-items"></a>Trabajar con elementos de correo
   La <xref:Microsoft.Office.Interop.Outlook.MailItem> clase contiene los métodos y las propiedades que se usan para realizar tareas con mensajes de correo electrónico.
@@ -38,7 +38,7 @@ ms.locfileid: "97526879"
 
  Para obtener más información sobre las tareas de Outlook y el modelo de objetos de Outlook, vea [Introducción al modelo de objetos](../vsto/outlook-object-model-overview.md)de Outlook.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Trabajar con elementos de contacto](../vsto/working-with-contact-items.md)
 - [Trabajar con carpetas](../vsto/working-with-folders.md)
 - [Trabajar con elementos de calendario](../vsto/working-with-calendar-items.md)

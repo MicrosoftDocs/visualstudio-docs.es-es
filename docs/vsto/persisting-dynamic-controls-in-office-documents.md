@@ -17,15 +17,15 @@ helpviewer_keywords:
 - host controls [Office development in Visual Studio], persisting in the document
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b6efb00571a9f594de6045860621fb840076e8f5
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: e833a480713e3c04215c03a3dc4a549c92e0f772
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527528"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938478"
 ---
 # <a name="persist-dynamic-controls-in-office-documents"></a>Conservar controles dinámicos en documentos de Office
 
@@ -110,6 +110,6 @@ En el ejemplo de código siguiente se muestra cómo quitar todos los controles d
 [!code-vb[Trin_WordAddInDynamicControls#10](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#10)]
 [!code-csharp[Trin_WordAddInDynamicControls#10](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#10)]
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md)

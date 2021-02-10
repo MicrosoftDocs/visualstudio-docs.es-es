@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: c92b193b-054d-4923-834b-d4226a4c7a1a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 97c4fe8d72cc8e2216ee8f5057d032c071974bf3
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 8a8e1dea5fb3716d593ca9b28f52ca0cd59a054f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350834"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938504"
 ---
 # <a name="localize-clickonce-applications"></a>Localización de aplicaciones ClickOnce
 La localización es el proceso de adaptar una aplicación a una referencia cultural concreta. Este proceso implica traducir el texto de la interfaz de usuario a un idioma específico de la región, usar el formato correcto de fecha y moneda, ajustar el tamaño de los controles en un formulario y reflejar los controles de derecha a izquierda si es necesario.
@@ -48,7 +48,7 @@ La localización es el proceso de adaptar una aplicación a una referencia cultu
 
  Este es el método predeterminado en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Para usar este método en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], no es necesario realizar ningún trabajo adicional.
 
- Para usar este método con *MageUI.exe* , establezca la referencia cultural de la aplicación en **neutro** en *MageUI.exe*. A continuación, incluya manualmente todos los ensamblados satélite en su implementación. En *MageUI.exe* puede agregar los ensamblados satélite mediante el botón **Rellenar** situado en la pestaña **Archivos** del manifiesto de su aplicación.
+ Para usar este método con *MageUI.exe*, establezca la referencia cultural de la aplicación en **neutro** en *MageUI.exe*. A continuación, incluya manualmente todos los ensamblados satélite en su implementación. En *MageUI.exe* puede agregar los ensamblados satélite mediante el botón **Rellenar** situado en la pestaña **Archivos** del manifiesto de su aplicación.
 
  La ventaja de este enfoque es que crea una sola implementación y simplifica el proceso de implementación localizada. En tiempo de ejecución se usará el ensamblado satélite apropiado para la referencia cultural predeterminada del sistema operativo Windows del usuario. El inconveniente de este enfoque es que se descargan todos los ensamblados satélite cada vez que la aplicación se instala o actualiza en un equipo cliente. Si la aplicación tiene un gran número de cadenas o los clientes tienen una conexión de red lenta, este proceso puede afectar al rendimiento durante la actualización de la aplicación.
 
@@ -81,6 +81,6 @@ La localización es el proceso de adaptar una aplicación a una referencia cultu
 - Puede establecer la propiedad <xref:System.Threading.Thread.CurrentUICulture%2A> mediante programación en la aplicación. (Esta propiedad debe establecerse antes de llamar al método <xref:System.Windows.Forms.Application.Run%2A>).
 
 ## <a name="see-also"></a>Vea también
-- [\<assemblyIdentity> Element](../deployment/assemblyidentity-element-clickonce-deployment.md)
+- [Elemento \<assemblyIdentity>](../deployment/assemblyidentity-element-clickonce-deployment.md)
 - [Seguridad e implementación ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Globalizar Windows Forms](/dotnet/framework/winforms/advanced/globalizing-windows-forms)

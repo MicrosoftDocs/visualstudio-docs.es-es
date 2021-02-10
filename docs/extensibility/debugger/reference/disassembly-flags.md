@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: c1ec5a4d-5d42-4660-932c-7348550140cb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ba6d9db3ad2cb1f9bbc9e3cea27aba939c6dd499
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6fe1515616d6781613961fa11d87005a479c70fd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737376"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939024"
 ---
 # <a name="disassembly_flags"></a>DISASSEMBLY_FLAGS
 Especifica las marcas del desensamblado.
@@ -69,7 +69,7 @@ Indica que esta instrucción tiene el origen. Algunas instrucciones, como la gen
 `DF_DOCUMENT_CHECKSUM`\
 Indica que `bstrDocumentUrl` el campo contiene datos de suma de comprobación después de la dirección URL del documento. Vea la sección Comentarios de la estructura [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) para saber cómo se almacenan los datos de la suma de comprobación.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Se usa como `dwFlags` miembro de la estructura [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) .
 
 Estas marcas se pueden combinar con una operación bit a bit `OR` .

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 635f6bc5-c486-4e0e-83db-36f15e543843
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e3adf9ca5f679c7a526f10b1ee6c91d50dac52d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5d4e9ee9808c25bb0df570ac451c061067904c2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714486"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938763"
 ---
 # <a name="metadata_address_local"></a>METADATA_ADDRESS_LOCAL
 
@@ -44,7 +44,7 @@ public struct METADATA_ADDRESS_LOCAL {
 }
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 `tokMethod`\
 IDENTIFICADOR del método o función del que forma parte la variable local.
@@ -57,7 +57,7 @@ Token cuya dirección representa esta estructura.
 `dwIndex`\
 Puede ser el índice de esta variable local en el método o la función, o algún otro valor (específico del idioma).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 
 Esta estructura forma parte de la Unión de la estructura [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) cuando el `dwKind` campo de la `DEBUG_ADDRESS_UNION` estructura se establece en `ADDRESS_KIND_LOCAL` (un valor de la enumeración [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) ).
 

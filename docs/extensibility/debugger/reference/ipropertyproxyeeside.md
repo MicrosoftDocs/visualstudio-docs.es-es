@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cf227cf8-39d9-4758-8f7e-a697aebb1926
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c89cecbf22091a45e31c307c5b523ac8aa4c924e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f0331365716c8399c1b2a565fc8046482df5d80f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714857"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938907"
 ---
 # <a name="ipropertyproxyeeside"></a>IPropertyProxyEESide
 Esta interfaz proporciona métodos para ver los datos en el objeto asociado. Esta interfaz forma parte de la compatibilidad con los visualizadores de tipo.
@@ -46,7 +46,7 @@ IPropertyProxyEESide : IUnknown
 |[InPlaceUpdateObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-inplaceupdateobject.md)|Crea una referencia a un almacenamiento de datos existente.|
 |[ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md)|Recupera información sobre un ensamblado específico en el contexto del ensamblado que contiene este objeto.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Un visualizador de tipos usa esta interfaz para tener acceso a los valores asociados al objeto del que forma parte esta interfaz. Se obtiene acceso a los datos a través de la interfaz [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) , que proporciona una vista de solo lectura de los datos.
 
 ## <a name="requirements"></a>Requisitos

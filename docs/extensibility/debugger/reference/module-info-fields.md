@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 8bed85f4-235f-4192-b58f-5fad7a4d7a78
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fa64147738a916d44b6924f193860f74bd10a855
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 116eb36cf96284698a6d93730db39bb38d22b93e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714328"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938712"
 ---
 # <a name="module_info_fields"></a>MODULE_INFO_FIELDS
 Especifica las marcas para la información del módulo de depuración.
@@ -28,7 +28,7 @@ Especifica las marcas para la información del módulo de depuración.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-enum enum_MODULE_INFO_FIELDS { 
+enum enum_MODULE_INFO_FIELDS { 
    MIF_NONE              = 0x0000,
    MIF_NAME              = 0x0001,
    MIF_URL               = 0x0002,
@@ -47,7 +47,7 @@ typedef DWORD MODULE_INFO_FIELDS;
 ```
 
 ```csharp
-public enum enum_MODULE_INFO_FIELDS { 
+public enum enum_MODULE_INFO_FIELDS { 
    MIF_NONE              = 0x0000,
    MIF_NAME              = 0x0001,
    MIF_URL               = 0x0002,
@@ -104,7 +104,7 @@ public enum enum_MODULE_INFO_FIELDS { 
  `MIF_ALLFIELDS`\
  Inicialice o utilice todos los campos de la `MODULE_INFO` estructura.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Estos valores se pasan como un argumento al método [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) para indicar qué campos de la estructura de [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) se van a inicializar.
 
  Estos valores también se usan en la `MODULE_INFO` estructura para indicar qué campos se usan y son válidos.
