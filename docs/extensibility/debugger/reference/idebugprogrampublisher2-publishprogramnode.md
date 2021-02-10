@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d4b72e04-f726-46cf-8e56-5203ff205b12
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: df68e72ee8597805bf02cb9c6e1c3a0bcaf8a449
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c93ce91b664a1d0ccb13534eb6109538df46f35b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721664"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959550"
 ---
 # <a name="idebugprogrampublisher2publishprogramnode"></a>IDebugProgramPublisher2::PublishProgramNode
 Hace que un nodo de programa esté disponible para que lo usen los motores de depuración (DEs) y el administrador de depuración de sesión (SDM).
@@ -28,14 +28,14 @@ Hace que un nodo de programa esté disponible para que lo usen los motores de de
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT PublishProgramNode(
+HRESULT PublishProgramNode(
    IDebugProgramNode2 *pProgramNode
 );
 ```
 
 ```csharp
-int PublishProgramNode(
-   IDebugProgramNode2 pProgramNode
+int PublishProgramNode(
+   IDebugProgramNode2 pProgramNode
 );
 ```
 
@@ -46,7 +46,7 @@ de Un objeto [IDebugProgramNode2](../../../extensibility/debugger/reference/ideb
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Este método permite consultar los programas para obtener información antes de seleccionarlos y iniciarlos para la depuración.
 
  Para quitar un nodo de programa de la disponibilidad, llame al método [UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md) .

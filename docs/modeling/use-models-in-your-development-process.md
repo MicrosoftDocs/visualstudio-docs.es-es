@@ -8,15 +8,15 @@ helpviewer_keywords:
 - UML, using models
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dbc817ca7bdf08c4e5ceee79a1e1113b4dd26e0c
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 73b0d46e1e293d0713cf7e71706fa0188aaea269
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361435"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959069"
 ---
 # <a name="use-models-in-your-development-process"></a>Usar modelos en el proceso de desarrollo
 
@@ -138,7 +138,7 @@ Los distintos tipos de diagramas resultan útiles para describir el diseño con 
 |**Blogs**|[Microsoft DevOps](https://devblogs.microsoft.com/devops/)|
 |**Artículos y diarios técnicos**|[Centro de arquitectura - MSDN](/previous-versions/dn630665(v=msdn.10))<br /><br /> [Visual Studio Architecture Tooling Guidance](../modeling/visual-studio-architecture-tooling-guidance.md)|
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [Usar modelos en Agile Development](/previous-versions/ff398061(v=vs.140))
 - [Crear modelos para la aplicación](../modeling/create-models-for-your-app.md)

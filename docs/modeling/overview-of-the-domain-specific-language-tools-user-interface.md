@@ -9,16 +9,16 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, user interface
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: 62dee3372f9d0c667c138e72c2ad58c886388f7a
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: fa47b10edc3804468f6ca0766872849ae9e8a949
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808108"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959134"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Información general sobre la interfaz de usuario de las herramientas de los lenguajes específicos de dominio
 La primera vez que se abre una solución de Herramientas del lenguaje específico de dominio (Herramientas DSL) en Visual Studio, la interfaz de usuario será similar a la imagen siguiente.

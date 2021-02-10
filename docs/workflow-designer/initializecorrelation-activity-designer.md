@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 4c54f34c-ee84-42a6-abb0-ec260c1ccb76
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ef70cb452c01917f65619d400c21ed18ed11721
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 9591ef604fcf9374e9aa498e74c5a7761459589f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993203"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959797"
 ---
 # <a name="initializecorrelation-activity-designer"></a>Diseñador de actividades InitializeCorrelation
 
@@ -43,14 +43,14 @@ En la tabla siguiente se muestran las <xref:System.ServiceModel.Activities.Initi
 
 |Nombre de propiedad|Obligatorio|Uso|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|Falso|Nombre descriptivo de la actividad <xref:System.ServiceModel.Activities.InitializeCorrelation>. El valor predeterminado es InitializeCorrelation.<br /><br /> Aunque el uso de un valor no predeterminado para el descriptivo <xref:System.Activities.Activity.DisplayName%2A> no es estrictamente necesario, se recomienda.|
-|<xref:System.ServiceModel.Activities.InitializeCorrelation.Correlation%2A>|Falso|<xref:System.ServiceModel.Activities.CorrelationHandle> se utiliza para asociar las actividades de flujo de trabajo en la correlación.|
-|<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>|Falso|Un diccionario de datos de correlación que relaciona los mensajes con la instancia de flujo de trabajo.<br /><br /> Utilice el cuadro de diálogo **inicializar correlación** para configurar <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> . Para obtener más información sobre el uso de este cuadro de diálogo, vea el artículo [cuadro de diálogo Editor de colección de tipos](../workflow-designer/type-collection-editor-dialog-box.md) .|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Nombre descriptivo de la actividad <xref:System.ServiceModel.Activities.InitializeCorrelation>. El valor predeterminado es InitializeCorrelation.<br /><br /> Aunque el uso de un valor no predeterminado para el descriptivo <xref:System.Activities.Activity.DisplayName%2A> no es estrictamente necesario, se recomienda.|
+|<xref:System.ServiceModel.Activities.InitializeCorrelation.Correlation%2A>|False|<xref:System.ServiceModel.Activities.CorrelationHandle> se utiliza para asociar las actividades de flujo de trabajo en la correlación.|
+|<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>|False|Un diccionario de datos de correlación que relaciona los mensajes con la instancia de flujo de trabajo.<br /><br /> Utilice el cuadro de diálogo **inicializar correlación** para configurar <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> . Para obtener más información sobre el uso de este cuadro de diálogo, vea el artículo [cuadro de diálogo Editor de colección de tipos](../workflow-designer/type-collection-editor-dialog-box.md) .|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
-- [Recepción](../workflow-designer/receive-activity-designer.md)
+- [Aparecen](../workflow-designer/receive-activity-designer.md)
 - [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)
 - [Envío](../workflow-designer/send-activity-designer.md)
 - [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)

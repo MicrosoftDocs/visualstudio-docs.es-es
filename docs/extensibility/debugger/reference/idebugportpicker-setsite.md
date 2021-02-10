@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: 7319e187-adfe-4b3f-aec9-521356fb5a8a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 07dac3f407b6869dad90f06d778911fdd9cfed41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7c361291532a79e7e4dd466d07359f0fe9faf2be
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724871"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958640"
 ---
 # <a name="idebugportpickersetsite"></a>IDebugPortPicker::SetSite
 Establece el proveedor de servicios.
@@ -44,7 +44,7 @@ de Referencia a la interfaz del proveedor de servicios.
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Se llamará a este método antes de llamar a otros métodos.
 
 ## <a name="see-also"></a>Vea también

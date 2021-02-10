@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 876ac9da-3b7c-4156-b79a-8f340e9fcea6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 967b9b4a06f382e5da2ee2422dd48209184e474b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: da3f3dcd150d35199458e9952074f76931969175
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723017"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958588"
 ---
 # <a name="idebugprogram2enummodules"></a>IDebugProgram2::EnumModules
 Recupera una lista de los módulos que este programa ha cargado y se está ejecutando.
@@ -28,13 +28,13 @@ Recupera una lista de los módulos que este programa ha cargado y se está ejecu
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT EnumModules( 
+HRESULT EnumModules( 
    IEnumDebugModules2** ppEnum
 );
 ```
 
 ```csharp
-int EnumModules( 
+int EnumModules( 
    out IEnumDebugModules2 ppEnum
 );
 ```
@@ -46,7 +46,7 @@ enuncia Devuelve un objeto [IEnumDebugModules2](../../../extensibility/debugger/
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Un módulo es un archivo DLL o un ensamblado y, por lo general, se muestra en la ventana de depuración de **módulos** .
 
 ## <a name="see-also"></a>Vea también

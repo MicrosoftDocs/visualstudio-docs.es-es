@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a9ec7b3e-a59c-4069-b2ee-6f45916eeb78
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 43557e5d81e5140967a1189e57a350595d0f7220
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 788c4add42b70107ea2960ae5682a2e2cc815d59
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721698"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959628"
 ---
 # <a name="idebugprogramprovider2"></a>IDebugProgramProvider2
 Esta interfaz registrada permite que el administrador de depuración de la sesión (SDM) Obtenga información acerca de los programas que se han "publicado" a través de la interfaz [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md) .
@@ -43,7 +43,7 @@ Llame a la `CoCreateInstance` función de com con el `CLSID` del proveedor de pr
 |[WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)|Establece una devolución de llamada para inspeccionar los eventos de proveedor asociados a determinados tipos de procesos.|
 |[SetLocale](../../../extensibility/debugger/reference/idebugprogramprovider2-setlocale.md)|Establece una configuración regional para los recursos específicos del idioma que necesita el DE.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Normalmente, un proceso utiliza esta interfaz para obtener información acerca de los programas que se ejecutan en ese proceso.
 
 ## <a name="requirements"></a>Requisitos

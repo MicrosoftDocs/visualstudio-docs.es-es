@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 040b36d6-1f0a-4579-971c-40fbb46ade1d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2d2aa249d6944e33ab9556000c483efdec78f20
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: a3be218565feb26d66f623a281fc9277b7fa8fb7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875684"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958523"
 ---
 # <a name="saving-a-custom-document"></a>Guardado de un documento personalizado
 El entorno controla los comandos **Guardar**, **Guardar como** y **guardar todo** . Cuando un usuario hace clic en **Guardar**, **Guardar como** **o guardar todo** en el menú **archivo** o cierra la solución, lo que da lugar a guardar todo, se produce el siguiente proceso.
@@ -43,6 +43,6 @@ El entorno controla los comandos **Guardar**, **Guardar como** y **guardar todo*
     > [!NOTE]
     > Si implementa su propia persistencia, asegúrese de llamar al <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A> método para ahorrar tiempo. Este método realiza una comprobación para asegurarse de que es seguro guardar el archivo (por ejemplo, el archivo no es de solo lectura).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - [Apertura y guardado de elementos de proyecto](../../extensibility/internals/opening-and-saving-project-items.md)

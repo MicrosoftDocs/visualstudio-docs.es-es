@@ -26,15 +26,15 @@ helpviewer_keywords:
 - application development [Office development in Visual Studio], document-level customizations
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 58dd8e1803fc0bd06f5c2295b29e9586e1f8eb68
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 24a4318400f808c57c041e09877e5aef9a2c3c36
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527526"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958718"
 ---
 # <a name="program-document-level-customizations"></a>Personalizaciones de nivel de documento de programa
   Al ampliar Microsoft Office Word o Microsoft Office Excel mediante una personalización de nivel de documento, puede realizar las siguientes tareas:
@@ -169,7 +169,7 @@ Globals.ThisDocument.Save();
 ## <a name="use-the-getvstoobject-and-hasvstoobject-methods"></a>Usar los métodos GetVstoObject y HasVstoObject
  Para llamar al `HasVstoObject` `GetVstoObject` método y, use el `Globals.Factory.GetVstoObject` `Globals.Factory.HasVstoObject` método o y pase el objeto nativo de Word o Excel (como <xref:Microsoft.Office.Interop.Word.Document> o <xref:Microsoft.Office.Interop.Excel.Worksheet> ) que desee probar.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Controles en documentos de Office](../vsto/controls-on-office-documents.md)
 - [Combinar personalizaciones de VBA y de nivel de documento](../vsto/combining-vba-and-document-level-customizations.md)
 - [Administrar documentos en un servidor mediante la clase ServerDocument](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)

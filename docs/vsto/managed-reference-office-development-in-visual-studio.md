@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, reference
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 044ba7e4858a87dea1894f647f110d62b840aa42
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 9364b191886408e509aa09a83bde70ce8240707e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528509"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958757"
 ---
 # <a name="managed-reference-office-development-in-visual-studio"></a>Referencia administrada (desarrollo de Office en Visual Studio)
   Esta sección contiene documentación de referencia de API para los espacios de nombres y los tipos que se utilizan en los proyectos de Office que abordan [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o [!INCLUDE[net_v45](includes/net-v45-md.md)]. Para obtener documentación de referencia de API sobre los espacios de nombres y los tipos que se usan en los proyectos de Office destinados a la .NET Framework 3,5, vea la siguiente sección de referencia en la documentación de Visual Studio: [referencia administrada (desarrollo de Office en Visual Studio)](managed-reference-office-development-in-visual-studio.md).
@@ -73,7 +73,7 @@ ms.locfileid: "97528509"
 
  Contiene las clases de la tarea MSBuild que se usan para crear proyectos de Office.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Información general de Visual Studio Tools para Office Runtime](visual-studio-tools-for-office-runtime-overview.md)
 - [Introducción &#40;desarrollo de Office en Visual Studio&#41;](getting-started-office-development-in-visual-studio.md)
 - [Ejemplos y tutoriales de desarrollo de Office](office-development-samples-and-walkthroughs.md)

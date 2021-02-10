@@ -15,15 +15,15 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 931e9554a10e0e1525d9ee4a10505633b211610b
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 4d83fb8fad6de0c932d371f7f874cea0ff9a8f80
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527244"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958666"
 ---
 # <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>Tutorial: cambiar el formato de un documento mediante controles CheckBox
   En este tutorial se muestra cómo usar los controles Windows Forms en una personalización de nivel de documento para Microsoft Office Word para cambiar el formato del texto.
@@ -50,7 +50,7 @@ ms.locfileid: "97527244"
 ## <a name="create-the-project"></a>Creación del proyecto
  El primer paso es crear un proyecto de tipo Documento de Word.
 
-### <a name="create-a-new-project"></a>Creación de un proyecto
+### <a name="create-a-new-project"></a>Creación de un nuevo proyecto
 
 1. Cree un proyecto de documento de Word con el nombre **mi formato de Word**. En el asistente, seleccione **crear un nuevo documento**.
 
@@ -158,7 +158,7 @@ ms.locfileid: "97527244"
 
 - Usar botones de radio para seleccionar estilos de gráfico. Para obtener más información, vea [Tutorial: actualizar un gráfico en un documento mediante botones de radio](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Tutoriales de uso de Word](../vsto/walkthroughs-using-word.md)
 - [Ejemplos y tutoriales de desarrollo de Office](../vsto/office-development-samples-and-walkthroughs.md)
 - [NamedRange (control)](../vsto/namedrange-control.md)

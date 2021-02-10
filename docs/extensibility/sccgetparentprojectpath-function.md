@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 62a71579-36b3-48b9-a1c8-04ab100efa08
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f258558207f86ff76746d18aa432fe4c5850290
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 825586ed29152bddf0f5dd909f71f96c96db8624
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700712"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958406"
 ---
 # <a name="sccgetparentprojectpath-function"></a>SccGetParentProjectPath función)
 Esta función determina la ruta de acceso del proyecto principal de un proyecto especificado. Se llama a esta función cuando el usuario está agregando un proyecto de Visual Studio al control de código fuente.
@@ -76,7 +76,7 @@ de Cadena que identifica la ruta de acceso del proyecto (hasta SCC_PRJPATH_SIZE,
 |SCC_E_CONNECTIONFAILURE|Problema de la conexión del almacén.|
 |SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Error no específico.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Esta función devuelve un código de éxito o error y, si se realiza correctamente, rellena la variable `lpParentProjPath` con la ruta de acceso completa del proyecto al proyecto especificado.
 
  Esta función devuelve la ruta de acceso del proyecto principal de un proyecto existente. En el caso del proyecto raíz, la función devuelve la ruta de acceso del proyecto que se pasó (es decir, la misma ruta de acceso del proyecto raíz). Tenga en cuenta que una ruta de acceso del proyecto es una cadena que solo es significativa para el complemento de control de código fuente.
@@ -92,7 +92,7 @@ de Cadena que identifica la ruta de acceso del proyecto (hasta SCC_PRJPATH_SIZE,
 ## <a name="technical-notes-for-scccreatesubproject-and-sccgetparentprojectpath"></a>Notas técnicas de SccCreateSubProject y SccGetParentProjectPath
  Agregar soluciones y proyectos al control de código fuente se ha simplificado en Visual Studio para minimizar el número de veces que se solicita al usuario que seleccione ubicaciones en el sistema de control de código fuente. Estos cambios se activan mediante Visual Studio si un complemento de control de código fuente admite las nuevas funciones, [SccCreateSubProject](../extensibility/scccreatesubproject-function.md) y la `SccGetParentProjectPath` función. Sin embargo, se puede usar la siguiente entrada del registro para deshabilitar estos cambios y volver al comportamiento anterior de Visual Studio (API de complemento de control de código fuente, versión 1,1):
 
- **[HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateSolutionRootFolderInSourceControl" = dword: 00000001**
+ **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateSolutionRootFolderInSourceControl" = dword: 00000001**
 
  Si esta entrada del registro no existe o está establecida en DWORD: 00000000, Visual Studio intenta usar las nuevas funciones, `SccCreateSubProject` y `SccGetParentProjectPath` .
 

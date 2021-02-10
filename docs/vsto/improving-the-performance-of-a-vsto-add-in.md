@@ -9,15 +9,15 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 83ba2e9cc2cd55b3e3f6362250ffc1e9489b1626
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 5c965c911977f657fe8c5252eabc1739564cf8c0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524434"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958744"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>Mejorar el rendimiento de un complemento de VSTO
   Puede ofrecer a los usuarios una mejor experiencia si optimiza los complementos de VSTO que cree para las aplicaciones de Office, de modo que se inicien, se cierren, abran elementos y realicen otras tareas rápidamente. Si el complemento de VSTO es para Outlook, también puede reducir la posibilidad de que se deshabilite debido a un bajo rendimiento. Puede aumentar el rendimiento del complemento de VSTO si implementa las estrategias siguientes:
@@ -115,7 +115,7 @@ ms.locfileid: "97524434"
 > [!NOTE]
 > Todo el código que llame al modelo de objetos de Office debe ejecutarse en el subproceso principal.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Carga de complementos de VSTO a petición](/archive/blogs/andreww/demand-loading-vsto-add-ins)
 - [Retraso de la carga del CLR en los complementos de Office](/archive/blogs/andreww/delay-loading-the-clr-in-office-add-ins)

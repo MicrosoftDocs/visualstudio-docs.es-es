@@ -10,17 +10,17 @@ helpviewer_keywords:
 ms.assetid: 1AF69C0E-0AC9-451B-845D-AE4EDBCEA65C
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: f54ee1191dd998d34e46a442debafc175ce98c8b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 6829bac79f747d4f9bacfe5e71f57352fcad0970
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85545436"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959160"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Actualización de una instalación basada en red de Visual Studio
 

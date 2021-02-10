@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: efd27f00-7fe5-45f8-9b97-371af732be97
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55e17693bee1ced0354b21ee5cc736961a994c6f
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: f022023ec03ddb280424f3c47944c91e8fa696de
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876927"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958393"
 ---
 # <a name="writing-to-the-user-settings-store"></a>Escritura en el almacén de configuración de usuario
 La configuración de usuario se pueden escribir como las del cuadro de diálogo **herramientas/opciones** , las ventanas de propiedades y otros cuadros de diálogo. Las extensiones de Visual Studio pueden usarlas para almacenar pequeñas cantidades de datos. En este tutorial se muestra cómo agregar el Bloc de notas a Visual Studio como una herramienta externa mediante la lectura y la escritura en el almacén de configuración de usuario.

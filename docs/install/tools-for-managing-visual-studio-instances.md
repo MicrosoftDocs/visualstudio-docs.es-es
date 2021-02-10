@@ -11,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 85686707-14C0-4860-9B7A-66485D43D241
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d6e46c95584cb3732d6339a02f6098976f2bab85
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: efd4091407d228a15cc80971d759e5371bddd3ff
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76115036"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959264"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Herramientas para detectar y administrar instancias de Visual Studio
 

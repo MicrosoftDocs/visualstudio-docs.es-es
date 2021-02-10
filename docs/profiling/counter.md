@@ -7,16 +7,16 @@ ms.topic: reference
 ms.assetid: aa4b4cdb-e6ea-433a-9579-56f3785e1385
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 85ed799cac54d630dfff1b285d3f2257e5eb99b5
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: c465e85337be017679d1a4994d84f911564cb66e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720701"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958991"
 ---
 # <a name="counter"></a>Contador
 La opción **Counter** recopila datos de los contadores de rendimiento del procesador (hardware).
