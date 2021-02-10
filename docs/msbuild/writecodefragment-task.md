@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 1d2514b4-5bef-43bb-bebe-496da8ef063c
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fc96f804541f780da38776d19b19393eb249a4ec
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 1bdab6066ce93475a2f6bb193c67da87c4fcaddd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047470"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888087"
 ---
 # <a name="writecodefragment-task"></a>WriteCodeFragment (tarea)
 

@@ -6,15 +6,15 @@ ms.date: 05/24/2018
 ms.topic: conceptual
 author: jillre
 ms.author: michma
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 93f450eab5879991f45f4a924338d4a277d13544
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: 7a6df4a90d8ddb31db88bb91ff4e874cadd3c589
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95005930"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894665"
 ---
 # <a name="system-generated-logs-collected-by-visual-studio"></a>Registros generados por el sistema recopilados por Visual Studio
 

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: fe6c9d32-4b81-4dc4-a307-848d23af66ce
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: abf4e8c6d1e61441459b0b48adfda4fa8728f44a
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.openlocfilehash: c0036067bd2d7e45d50db0a8d4207851aa75b296
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975113"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891531"
 ---
 # <a name="process-properties-dialog-box"></a>Cuadro de diálogo Propiedades del proceso
 Use este cuadro de diálogo para obtener más información sobre un proceso determinado. Para mostrar este cuadro de diálogo, mueva el foco a la ventana [Vista Procesos](../debugger/processes-view.md). Seleccione cualquier nodo de proceso en el árbol y, después, elija **Propiedades** en el menú **Vista**.

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: fb9fa211-e82c-40a5-9e4b-ba8de07313c0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: de50e6fe997ce10266cbb51f2fd91c318ab2bd1f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2c0a97a5b42e27c6db770e0c74a64e214561cea9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905537"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891610"
 ---
 # <a name="messages-tab-message-options-dialog-box"></a>Pestaña Mensajes (Cuadro de diálogo Opciones de mensaje)
 Use la pestaña **Mensajes** para seleccionar los tipos de mensaje que se van a mostrar en la [vista Mensajes](../debugger/messages-view.md) y para especificar los criterios de búsqueda de mensajes. Para mostrar el [cuadro de diálogo Opciones de mensaje](../debugger/message-options-dialog-box.md), elija **Mensajes de registro** en el menú de **Spy**.

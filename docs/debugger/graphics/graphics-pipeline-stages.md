@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 2bf5c12e-2a00-401c-8163-4e373d08ad3f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 150c61e271e7951332848a601aaddc619a1c37e5
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 61cc2737fbe6bdbcb331da4e1d27a77d356735aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993931"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888659"
 ---
 # <a name="graphics-pipeline-stages"></a>Etapas de canalización de gráficos
 La ventana Etapas de canalización de gráficos ayuda a entender cómo cada etapa de la canalización de gráficos Direct3D transforma una llamada a draw individual.

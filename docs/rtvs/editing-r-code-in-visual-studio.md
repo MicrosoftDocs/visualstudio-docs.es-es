@@ -5,15 +5,15 @@ ms.date: 11/05/2018
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 7ecfd8f1cf50e94991ce2fd94ad94ac9815c92ca
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4aea7f5371dc425a77e10b64a9389571b06f80b4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315101"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885864"
 ---
 # <a name="edit-r-code-in-visual-studio"></a>Editar código de R en Visual Studio
 

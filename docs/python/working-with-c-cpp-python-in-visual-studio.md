@@ -5,17 +5,17 @@ ms.date: 11/19/2018
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d79c9d0d1b9c62d5afd78696ee2654c4eecdbe57
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 461e68979de6c3b711c05cc4be3ef9d5bd761397
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86972366"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885942"
 ---
 # <a name="create-a-c-extension-for-python"></a>Creación de una extensión de C++ para Python
 

@@ -6,17 +6,17 @@ ms.date: 06/05/2019
 ms.topic: overview
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a913fa6abdcf59a64d8514f17656b8f8531d476d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0283cb4332e9137550b74a85c38d7963f3c77a70
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315270"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890479"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Trabajar con Python en Visual Studio en Windows
 
@@ -81,7 +81,7 @@ Para cada entorno de Python que Visual Studio conozca, puede abrir fácilmente e
 
 ![Ventana interactiva de Python en Visual Studio](media/interactive-window.png)
 
-Visual Studio también proporciona una estrecha integración entre el editor de código de Python y la ventana **interactiva**. Mediante el método abreviado de teclado**Ctrl**+**Entrar**, la línea (o el bloque) de código actual presente en el editor se envía cómodamente a la ventana **interactiva** y, a continuación, se pasa a la línea (o bloque) siguiente. El método abreviado **Ctrl**+**Entrar** le permite revisar fácilmente el código sin tener que ejecutar el depurador. Puede también enviar código seleccionado a la ventana **interactiva** con la misma pulsación de tecla y pegar fácilmente el código desde la ventana **interactiva** en el editor. Juntas, estas capacidades le permiten determinar los detalles de un segmento de código en la ventana **interactiva** y guardar fácilmente los resultados en un archivo en el editor.
+Visual Studio también proporciona una estrecha integración entre el editor de código de Python y la ventana **interactiva**. Mediante el método abreviado de teclado **Ctrl**+**Entrar**, la línea (o el bloque) de código actual presente en el editor se envía cómodamente a la ventana **interactiva** y, a continuación, se pasa a la línea (o bloque) siguiente. El método abreviado **Ctrl**+**Entrar** le permite revisar fácilmente el código sin tener que ejecutar el depurador. Puede también enviar código seleccionado a la ventana **interactiva** con la misma pulsación de tecla y pegar fácilmente el código desde la ventana **interactiva** en el editor. Juntas, estas capacidades le permiten determinar los detalles de un segmento de código en la ventana **interactiva** y guardar fácilmente los resultados en un archivo en el editor.
 
 Visual Studio también es compatible con IPython o Jupyter en REPL, incluidos gráficos en línea, .NET y Windows Presentation Foundation (WPF).
 

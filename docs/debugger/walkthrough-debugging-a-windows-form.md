@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: 529db1e2-d9ea-482a-b6a0-7c543d17f114
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 31c1bc9e65eb63877d8f8a42902d8ec47a61fd22
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: e9293956e2ca47e68ff5bf22502251b22115a827
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148102"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884135"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Tutorial: Depurar un formulario Windows Form
 Un Windows Form es una de las aplicaciones administradas más comunes. Con un Windows Form se crean aplicaciones estándar de Windows. Puede completar este tutorial utilizando Visual Basic, C# o C++.

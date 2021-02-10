@@ -4,7 +4,7 @@ titleSuffix: ''
 description: Uso de identificadores de componente y carga de trabajo de Visual Studio para proporcionar herramientas de pruebas integradas para evaluadores generalistas
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.date: 03/16/2020
 ms.topic: reference
 helpviewer_keywords:
@@ -16,12 +16,12 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 monikerRange: vs-2017
 open_to_public_contributors: false
-ms.openlocfilehash: 61a52d98f695a6420dd6081117b8c6c4e83ae0a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ee8d3d91f5079e23d5a0342c58b2db5a70e45f64
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81276219"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886475"
 ---
 # <a name="visual-studio-test-professional-component-directory"></a>Directorio de componentes de Visual Studio Test Professional
 

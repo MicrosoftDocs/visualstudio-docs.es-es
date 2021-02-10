@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 81114b67-520f-43b5-8891-224f68a78516
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e38a0f1aea6999e30d2ab2493873f66cd907878
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: a9a05ce16289c012b067faa5bc302a3921cbe1c7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436885"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888100"
 ---
 # <a name="formaturl-task"></a>FormatUrl (tarea)
 

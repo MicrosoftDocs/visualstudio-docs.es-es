@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: 44803aad-dd39-4c2e-9209-d35185d44983
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a760980b16fab17fed7180b0bc74e0271c61e1d
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: 222ba8cd5eb8e45be368d70c204a7c7c76b1a3e0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801071"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886267"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>Procedimiento Recopilar datos de muestreo en el nivel de línea
 El muestreo en el nivel de línea es la capacidad del generador de perfiles para determinar en qué punto del código de una función de uso intensivo del procesador, como una función con muestras muy exclusivas, el procesador tiene que dedicar más tiempo.

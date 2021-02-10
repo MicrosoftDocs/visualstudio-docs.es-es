@@ -16,15 +16,15 @@ dev_langs:
 ms.assetid: 476e3d98-cf35-4338-b124-cd0f3010d854
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a528709769f599219a7b3df2b8157b0ee3a605b1
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: bfb5099bd0fab17cd983af4e16a435fd192a1668
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149318"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883875"
 ---
 # <a name="when-breakpoint-is-hit-dialog-box"></a>Al visitar un punto de interrupción (Cuadro de diálogo)
 Con este cuadro de diálogo, es posible personalizar la acción que ocurre cuando se visita un punto de interrupción.

@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Live Unit Testing
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: ce2376f2dc3cb6abeb11b328452defb891949558
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: ea87135b1f60c7ae65a8bc25399604151ab2fcee
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329502"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887814"
 ---
 # <a name="get-started-with-live-unit-testing"></a>Introducción a Live Unit Testing
 

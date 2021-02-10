@@ -5,17 +5,17 @@ ms.date: 11/12/2018
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6e9e7fe418528bb888672b1b73d421d811b9e69e
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 43270ee1ec956f45b76d23a6b649ad2d870638c5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86386990"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887931"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Definir comandos personalizados para proyectos de Python
 

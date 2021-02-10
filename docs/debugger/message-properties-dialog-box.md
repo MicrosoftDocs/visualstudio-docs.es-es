@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 58e9dc24-baf6-4ab8-916c-aea28b72e3b0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f58ad7344c7de9a9486fcb3ccefbf263688926f
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: eee5d21e013dd43a361a229a3189cc44d6294e70
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903069"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891753"
 ---
 # <a name="message-properties-dialog-box"></a>Cuadro de diálogo Propiedades del mensaje
 Use este cuadro de diálogo para saber más sobre un mensaje específico. Para mostrar este cuadro de diálogo, mueva el foco a la ventana de la [vista Mensajes](../debugger/messages-view.md). Seleccione un nodo de mensaje en el árbol y, después, elija **Propiedades** en el menú **Vista**.

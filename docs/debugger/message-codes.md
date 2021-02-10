@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9f91f4e2-c1f1-4349-9f11-2fbbf59654be
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e4b836a5d4c1faad6b4c0375e2ec51d759816889
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 92562dda3e8a705d2cdf9b00561aa13cbd9d75e5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903615"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891779"
 ---
 # <a name="message-codes"></a>Códigos de mensaje
 Cada línea de mensaje que se muestra en la [vista Mensajes](../debugger/messages-view.md) contiene un código "P", "S", "s" o "R". Estos códigos tienen los siguientes significados:

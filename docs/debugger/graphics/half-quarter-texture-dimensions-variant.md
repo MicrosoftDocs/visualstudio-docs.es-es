@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 282e9bbb-51aa-4cd0-8e5c-0901268c29e5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bd3cc5d5517818934a20c9064e718cf65f9d3a65
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 87add3c771fdc79e4b41658a68ef7e77e2c18b21
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995153"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888529"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>MItad/cuarto (Variante de dimensiones de textura)
 Reduce las dimensiones de la textura en texturas que no son objetivos de presentación.

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: be3c6859-06e1-459e-9fd0-46375b5f55ef
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e4800c2ca44c2c52b2059685d9c5bc4fe38ed08
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 30ef82565c6ab78efa0d11f8d4b0751e28c04ac6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903979"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884473"
 ---
 # <a name="how-to-display-wpf-trace-information"></a>Procedimiento Presentación de información de seguimiento de WPF
 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] puede recibir información de seguimiento de la depuración de las aplicaciones WPF y mostrar esa información en la ventana **Salida**. Para mostrar la información de seguimiento de depuración, debe estar habilitada la traza de WPF.
