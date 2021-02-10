@@ -5,17 +5,17 @@ description: Uso de identificadores de componente y carga de trabajo para instal
 keywords: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.date: 11/10/2020
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: eb817e15ebffbe75f9b003abe1fe0560a5236293
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: cecadf43e7f54f5ad0954acfc725f5e48a2a69cf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437462"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881857"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-enterprise-2019"></a>Editor principal de Visual Studio (incluido con Visual Studio Enterprise 2019)
 
@@ -142,7 +142,7 @@ Microsoft.Net.Component.4.8.SDK | SDK de .NET Framework 4.8 | 16.4.29313.120 | S
 Microsoft.Net.Component.4.TargetingPack | Paquete de compatibilidad de .NET Framework 4 | 16.0.28517.75 | Se recomienda
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Herramientas de desarrollo para .NET Framework 4.7.2 | 16.3.29207.166 | Se recomienda
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | Herramientas de desarrollo de .NET Framework 4 – 4.6 | 16.0.28516.191 | Se recomienda
-Microsoft.NetCore.Component.Runtime.3.1 | Entorno de ejecución de .NET Core 3.1 (LTS) | 16.8.30703.189 | Se recomienda
+Microsoft.NetCore.Component.Runtime.3.1 | Entorno de ejecución de .NET Core 3.1 (LTS) | 16.8.30703.189 | Recomendado
 Microsoft.NetCore.Component.Runtime.5.0 | Entorno de ejecución de .NET 5.0 | 16.8.30703.189 | Se recomienda
 Microsoft.NetCore.Component.SDK | .NET SDK | 16.8.30703.189 | Se recomienda
 Microsoft.VisualStudio.Component.Azure.AuthoringTools | Herramientas de creación de Azure | 16.0.28625.61 | Se recomienda
@@ -195,7 +195,7 @@ Microsoft.VisualStudio.Component.FSharp.Desktop | Compatibilidad con el lenguaje
 Microsoft.VisualStudio.Component.JavaScript.TypeScript | Compatibilidad con lenguaje JavaScript y TypeScript | 16.8.30509.167 | Se recomienda
 Microsoft.VisualStudio.Component.NuGet | Administrador de paquetes de NuGet | 16.1.28829.92 | Se recomienda
 Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores de C# y Visual Basic Roslyn | 16.0.28714.129 | Se recomienda
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# y Visual Basic | 16.8.30509.167 | Se recomienda
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# y Visual Basic | 16.8.30509.167 | Recomendado
 Microsoft.VisualStudio.Component.TypeScript.4.0 | SDK de TypeScript 4.0 | 16.0.30509.167 | Se recomienda
 Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 16.0.28517.75 | Se recomienda
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | Desarrollo web y ASP.NET | 16.8.30509.167 | Se recomienda
@@ -767,7 +767,7 @@ Microsoft.Net.Component.4.5.TargetingPack | Paquete de compatibilidad de .NET Fr
 Microsoft.Net.Component.4.7.2.TargetingPack | Paquete de compatibilidad de .NET Framework 4.7.2 | 16.8.30509.167 | Optional
 Microsoft.Net.Component.4.8.SDK | SDK de .NET Framework 4.8 | 16.4.29313.120 | Optional
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Herramientas de desarrollo para .NET Framework 4.7.2 | 16.3.29207.166 | Optional
-Microsoft.NetCore.Component.Runtime.3.1 | Entorno de ejecución de .NET Core 3.1 (LTS) | 16.8.30703.189 | Optional
+Microsoft.NetCore.Component.Runtime.3.1 | Entorno de ejecución de .NET Core 3.1 (LTS) | 16.8.30703.189 | Opcionales
 Microsoft.NetCore.Component.Runtime.5.0 | Entorno de ejecución de .NET 5.0 | 16.8.30703.189 | Optional
 Microsoft.NetCore.Component.SDK | .NET SDK | 16.8.30703.189 | Optional
 Microsoft.VisualStudio.Component.Azure.AuthoringTools | Herramientas de creación de Azure | 16.0.28625.61 | Optional

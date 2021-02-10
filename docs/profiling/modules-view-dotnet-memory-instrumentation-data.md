@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: 26516139-0981-41de-917d-ad5769391b8d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: e6a0a42fdc83891b96bb3fe036ebf7515e3d6a42
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 4ffa80d938556c33dc8eafec3068aef257219071
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723314"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879818"
 ---
 # <a name="modules-view---net-memory-instrumentation-data"></a>Vista Módulos: datos de instrumentación de memoria de .NET
 La vista Módulos de los datos de asignación de memoria de .NET recopilados con el método de instrumentación agrupa los datos de tiempo y memoria por los módulos que se ejecutaron durante la generación de perfiles. Los datos de generación de perfiles de las funciones del módulo se enumeran bajo el nodo de módulo.

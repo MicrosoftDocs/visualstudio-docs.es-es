@@ -9,7 +9,7 @@ helpviewer_keywords:
 - msbuild logs"
 author: corob-msft
 ms.author: corob
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
@@ -17,12 +17,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Generate build logs for msbuild projects to collect helpful information when troubleshooting issues.
-ms.openlocfilehash: c6b08b243a5b4eec3119ceedbaf2177670aa3e83
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: d9308bff68a5a5377c025bba5861ac344dcb0326
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136581"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880494"
 ---
 # <a name="troubleshoot-and-create-logs-for-msbuild-problems"></a>Solución de problemas y creación de registros para MSBuild
 
@@ -118,8 +118,8 @@ Se creará un archivo Msbuild.binlog en el directorio desde el que ejecutó MSBu
 
 ## <a name="create-a-detailed-log"></a>Creación de un registro detallado
 
-1. En el menú principal de Visual Studio, vaya a **Herramientas** > **Opciones** > **Proyectos y soluciones** >**Compilar y ejecutar** .
-1. Establezca el **nivel de detalle de la compilación del proyecto de Msbuild** en **Detallado** en los dos cuadros combinados. El primero controla el nivel de detalle de la compilación en la **Ventana de salida** , mientras que el segundo controla el nivel de detalle de la compilación en el archivo \<projectname\>.log que se crea en el directorio intermedio de cada proyecto durante la compilación.
+1. En el menú principal de Visual Studio, vaya a **Herramientas** > **Opciones** > **Proyectos y soluciones** >**Compilar y ejecutar**.
+1. Establezca el **nivel de detalle de la compilación del proyecto de Msbuild** en **Detallado** en los dos cuadros combinados. El primero controla el nivel de detalle de la compilación en la **Ventana de salida**, mientras que el segundo controla el nivel de detalle de la compilación en el archivo \<projectname\>.log que se crea en el directorio intermedio de cada proyecto durante la compilación.
 2. Desde un símbolo del sistema para desarrolladores de Visual Studio, escriba uno de estos comandos, sustituyendo sus valores reales de ruta de acceso y configuración:
 
     ```cmd

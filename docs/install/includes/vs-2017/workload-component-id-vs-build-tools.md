@@ -4,17 +4,17 @@ titleSuffix: ''
 description: Uso de identificadores de componente y carga de trabajo de Visual Studio para crear aplicaciones clásicas basadas en Windows
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.date: 2/12/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 2f2092143a79dae17c5c0138e51c10fc5d164cbd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d38a5dac5ae23b048e9faf4142cec630b77f9be
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76159627"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881947"
 ---
 ## <a name="azure-development-build-tools"></a>Herramientas de compilación de desarrollo para Azure
 
@@ -119,7 +119,7 @@ Microsoft.Net.Component.4.7.TargetingPack | Paquete de compatibilidad de .NET Fr
 Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | Herramientas de desarrollo de .NET Framework 4.6.2 | 15.6.27406.0 | Optional
 Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | Herramientas de desarrollo para .NET Framework 4.7.1 | 15.6.27406.0 | Optional
 Microsoft.Net.ComponentGroup.4.7.2.DeveloperTools | Herramientas de desarrollo para .NET Framework 4.7.2 | 15.8.27825.0 | Optional
-Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Herramientas de desarrollo para .NET Framework 4.7 | 15.6.27406.0 | Opcional
+Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Herramientas de desarrollo para .NET Framework 4.7 | 15.6.27406.0 | Optional
 Microsoft.Net.Core.Component.SDK.1x | Herramientas de desarrollo de .NET Core 1.0 - 1.1 | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.FSharp.MSBuild | compilador de F# | 15.8.27825.0 | Optional
 
@@ -150,8 +150,8 @@ Id. de componente | NOMBRE | Versión | Tipo de dependencia
 Microsoft.Net.Core.Component.SDK.2.1 | Herramientas de desarrollo de .NET Core 2.1 | 15.8.27924.0 | Obligatorio
 Microsoft.NetCore.BuildTools.ComponentGroup | Herramientas de compilación de .NET Core | 15.8.27906.1 | Obligatorio
 Microsoft.VisualStudio.Component.NuGet.BuildTools | Destinos y tareas de compilación de NuGet | 15.9.28016.0 | Obligatorio
-Microsoft.Net.Core.Component.SDK | Herramientas de desarrollo de .NET Core 2.0 | 15.6.27406.0 | Opcional
-Microsoft.Net.Core.Component.SDK.1x | Herramientas de desarrollo de .NET Core 1.0 - 1.1 | 15.6.27406.0 | Opcional
+Microsoft.Net.Core.Component.SDK | Herramientas de desarrollo de .NET Core 2.0 | 15.6.27406.0 | Optional
+Microsoft.Net.Core.Component.SDK.1x | Herramientas de desarrollo de .NET Core 1.0 - 1.1 | 15.6.27406.0 | Optional
 
 ## <a name="nodejs-build-tools"></a>Herramientas de compilación de Node.js
 
@@ -192,7 +192,7 @@ Microsoft.VisualStudio.Component.Workflow.BuildTools | Herramientas de compilaci
 Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | Herramientas de compilación de desarrollo de WCF | 15.6.27309.0 | Obligatorio
 Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | Herramientas de compilación de desarrollo web | 15.8.27729.1 | Obligatorio
 Microsoft.VisualStudio.Component.TeamOffice.BuildTools | Herramientas de compilación de Visual Studio Tools para Office (VSTO) | 15.7.27617.1 | Se recomienda
-Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 15.8.27729.1 | Recomendado
+Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 15.8.27729.1 | Se recomienda
 Microsoft.Net.Component.4.6.2.SDK | SDK de .NET Framework 4.6.2 | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.6.2.TargetingPack | Paquete de compatibilidad de .NET Framework 4.6.2 | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.7.1.SDK | SDK de .NET Framework 4.7.1 | 15.6.27406.0 | Optional
@@ -202,7 +202,7 @@ Microsoft.Net.Component.4.7.2.TargetingPack | Paquete de compatibilidad de .NET 
 Microsoft.Net.Component.4.7.SDK | SDK de .NET Framework 4.7 | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.7.TargetingPack | Paquete de compatibilidad de .NET Framework 4.7 | 15.6.27406.0 | Optional
 Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | Herramientas de desarrollo de .NET Framework 4.6.2 | 15.6.27406.0 | Optional
-Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | Herramientas de desarrollo para .NET Framework 4.7.1 | 15.6.27406.0 | Opcional
+Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | Herramientas de desarrollo para .NET Framework 4.7.1 | 15.6.27406.0 | Optional
 Microsoft.Net.ComponentGroup.4.7.2.DeveloperTools | Herramientas de desarrollo para .NET Framework 4.7.2 | 15.8.27825.0 | Optional
 Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Herramientas de desarrollo para .NET Framework 4.7 | 15.6.27406.0 | Optional
 
@@ -226,20 +226,20 @@ Microsoft.VisualStudio.Component.Static.Analysis.Tools | Herramientas de anális
 Microsoft.VisualStudio.Component.VC.Tools.ARM | Bibliotecas y compiladores de Visual Studio C++ para ARM | 15.8.27825.0 | Obligatorio
 Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Últimas herramientas v141 de VC++ 2017 versión 15.9 v14.16 | 15.9.28230.55 | Obligatorio
 Microsoft.VisualStudio.ComponentGroup.UWP.BuildTools | Requisitos previos de compilación de la Plataforma universal de Windows | 15.8.27705.0 | Obligatorio
-Microsoft.VisualStudio.Component.Windows10SDK.17763 | SDK de Windows 10 (10.0.17763.0) | 15.9.28307.102 | Recomendado
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | SDK de Windows 10 (10.0.17763.0) | 15.9.28307.102 | Se recomienda
 Microsoft.VisualStudio.Component.Windows10SDK.10240 | SDK de Windows 10 (10.0.10240.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.10586 | SDK de Windows 10 (10.0.10586.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.14393 | SDK de Windows 10 (10.0.14393.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | SDK de Windows 10 (10.0.15063.0) para escritorio C++ [x86 y x64] | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | SDK de Windows 10 (10.0.15063.0) para UWP: C#, VB, JS | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | SDK de Windows 10 (10.0.15063.0) para UWP: C++ | 15.6.27406.0 | Opcional
-Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | SDK de Windows 10 (10.0.16299.0) para escritorio C++ [x86 and x64] | 15.6.27406.0 | Opcional
-Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | SDK de Windows 10 SDK (10.0.16299.0) para escritorio C++ [ARM y ARM64] | 15.6.27406.0 | Opcional
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | SDK de Windows 10 (10.0.16299.0) para UWP: C#, VB, JS | 15.6.27406.0 | Opcional
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | SDK de Windows 10 (10.0.15063.0) para UWP: C++ | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | SDK de Windows 10 (10.0.16299.0) para escritorio C++ [x86 and x64] | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | SDK de Windows 10 SDK (10.0.16299.0) para escritorio C++ [ARM y ARM64] | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | SDK de Windows 10 (10.0.16299.0) para UWP: C#, VB, JS | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | SDK de Windows 10 (10.0.16299.0) para UWP: C++ | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | SDK de Windows 10 (10.0.17134.0) | 15.9.28307.102 | Opcional
-Microsoft.VisualStudio.ComponentGroup.Windows10SDK.15063 | SDK de Windows 10 (10.0.15063.0) | 15.8.27825.0 | Opcional
-Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | SDK de Windows 10 (10.0.16299.0) | 15.8.27825.0 | Opcional
+Microsoft.VisualStudio.Component.Windows10SDK.17134 | SDK de Windows 10 (10.0.17134.0) | 15.9.28307.102 | Optional
+Microsoft.VisualStudio.ComponentGroup.Windows10SDK.15063 | SDK de Windows 10 (10.0.15063.0) | 15.8.27825.0 | Optional
+Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | SDK de Windows 10 (10.0.16299.0) | 15.8.27825.0 | Optional
 
 ## <a name="visual-c-build-tools"></a>Herramientas de compilación de Visual C++
 
@@ -257,7 +257,7 @@ Microsoft.VisualStudio.Component.VC.Redist.14.Latest | Actualización de Visual 
 Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Últimas herramientas v141 de VC++ 2017 versión 15.9 v14.16 | 15.9.28230.55 | Obligatorio
 Microsoft.VisualStudio.Component.Windows10SDK | Entorno de tiempo de ejecución de C de Windows Universal | 15.6.27406.0 | Obligatorio
 Microsoft.VisualStudio.Component.TestTools.BuildTools | Características principales de las herramientas de pruebas - herramientas de compilación | 15.7.27625.0 | Se recomienda
-Microsoft.VisualStudio.Component.VC.CMake.Project | Herramientas de Visual C++ para CMake | 15.9.28307.102 | Recomendado
+Microsoft.VisualStudio.Component.VC.CMake.Project | Herramientas de Visual C++ para CMake | 15.9.28307.102 | Se recomienda
 Microsoft.VisualStudio.Component.Windows10SDK.17763 | SDK de Windows 10 (10.0.17763.0) | 15.9.28307.102 | Se recomienda
 Microsoft.Component.VC.Runtime.UCRTSDK | SDK de Windows Universal CRT | 15.6.27309.0 | Optional
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | Optional
@@ -268,23 +268,23 @@ Microsoft.VisualStudio.Component.VC.ATLMFC | MFC de Visual C++ para x86 y x64 | 
 Microsoft.VisualStudio.Component.VC.CLI.Support | Compatibilidad con C++/CLI | 15.6.27309.0 | Optional
 Microsoft.VisualStudio.Component.VC.Modules.x86.x64 | Módulos para biblioteca estándar (experimental) | 15.6.27309.0 | Optional
 Microsoft.VisualStudio.Component.VC.Tools.ARM | Bibliotecas y compiladores de Visual Studio C++ para ARM | 15.8.27825.0 | Optional
-Microsoft.VisualStudio.Component.VC.Tools.ARM64 | Bibliotecas y compiladores de Visual C++ para ARM64 | 15.9.28230.55 | Opcional
-Microsoft.VisualStudio.Component.Windows10SDK.10240 | SDK de Windows 10 (10.0.10240.0) | 15.6.27406.0 | Opcional
-Microsoft.VisualStudio.Component.Windows10SDK.10586 | SDK de Windows 10 (10.0.10586.0) | 15.6.27406.0 | Opcional
-Microsoft.VisualStudio.Component.Windows10SDK.14393 | SDK de Windows 10 (10.0.14393.0) | 15.6.27406.0 | Opcional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | SDK de Windows 10 (10.0.15063.0) para escritorio C++ [x86 y x64] | 15.6.27406.0 | Opcional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | SDK de Windows 10 (10.0.15063.0) para UWP: C#, VB, JS | 15.6.27406.0 | Opcional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | SDK de Windows 10 (10.0.15063.0) para UWP: C++ | 15.6.27406.0 | Opcional
-Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | SDK de Windows 10 (10.0.16299.0) para escritorio C++ [x86 and x64] | 15.6.27406.0 | Opcional
-Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | SDK de Windows 10 SDK (10.0.16299.0) para escritorio C++ [ARM y ARM64] | 15.6.27406.0 | Opcional
+Microsoft.VisualStudio.Component.VC.Tools.ARM64 | Bibliotecas y compiladores de Visual C++ para ARM64 | 15.9.28230.55 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.10240 | SDK de Windows 10 (10.0.10240.0) | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.10586 | SDK de Windows 10 (10.0.10586.0) | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.14393 | SDK de Windows 10 (10.0.14393.0) | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | SDK de Windows 10 (10.0.15063.0) para escritorio C++ [x86 y x64] | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | SDK de Windows 10 (10.0.15063.0) para UWP: C#, VB, JS | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | SDK de Windows 10 (10.0.15063.0) para UWP: C++ | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | SDK de Windows 10 (10.0.16299.0) para escritorio C++ [x86 and x64] | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | SDK de Windows 10 SDK (10.0.16299.0) para escritorio C++ [ARM y ARM64] | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | SDK de Windows 10 (10.0.16299.0) para UWP: C#, VB, JS | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | SDK de Windows 10 (10.0.16299.0) para UWP: C++ | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.17134 | SDK de Windows 10 (10.0.17134.0) | 15.9.28307.102 | Optional
 Microsoft.VisualStudio.Component.Windows81SDK | SDK de Windows 8.1 | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.WinXP | Soporte de Windows XP para C++ | 15.8.27924.0 | Optional
-Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 | SDK de Windows 8.1 y SDK de UCRT | 15.6.27406.0 | Opcional
-Microsoft.VisualStudio.ComponentGroup.NativeDesktop.WinXP | Soporte de Windows XP para C++ | 15.8.27705.0 | Opcional
-Microsoft.VisualStudio.ComponentGroup.Windows10SDK.15063 | SDK de Windows 10 (10.0.15063.0) | 15.8.27825.0 | Opcional
+Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 | SDK de Windows 8.1 y SDK de UCRT | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.ComponentGroup.NativeDesktop.WinXP | Soporte de Windows XP para C++ | 15.8.27705.0 | Opcionales
+Microsoft.VisualStudio.ComponentGroup.Windows10SDK.15063 | SDK de Windows 10 (10.0.15063.0) | 15.8.27825.0 | Optional
 Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | SDK de Windows 10 (10.0.16299.0) | 15.8.27825.0 | Optional
 
 ## <a name="visual-studio-extension-development"></a>Desarrollo de extensiones de Visual Studio
@@ -307,7 +307,7 @@ Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores de C# y Visual B
 Microsoft.VisualStudio.Component.VSSDKBuildTools | SDK de Visual Studio Build Tools Core | 15.8.27924.0 | Obligatorio
 Microsoft.VisualStudio.ComponentGroup.VisualStudioExtensionBuildTools.Prerequisites | Requisitos previos para el desarrollo de extensiones de Visual Studio | 15.8.27729.1 | Obligatorio
 Component.Dotfuscator | PreEmptive Protection - Dotfuscator | 15.0.26208.0 | Optional
-Microsoft.Component.VC.Runtime.OSSupport | Tiempo de ejecución de Visual C++ para UWP | 15.6.27406.0 | Opcional
+Microsoft.Component.VC.Runtime.OSSupport | Tiempo de ejecución de Visual C++ para UWP | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Herramientas de análisis estático | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.VC.ATL | ATL de Visual C++ para x86 y x64 | 15.7.27625.0 | Optional
 Microsoft.VisualStudio.Component.VC.ATLMFC | MFC de Visual C++ para x86 y x64 | 15.7.27625.0 | Optional
@@ -344,18 +344,18 @@ Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 15.8.27729.1 | Se reco
 Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | Herramientas de compilación de desarrollo de WCF | 15.6.27309.0 | Se recomienda
 Microsoft.Net.Component.3.5.DeveloperTools | Herramientas de desarrollo para .NET Framework 3.5 | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.6.2.SDK | SDK de .NET Framework 4.6.2 | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.6.2.TargetingPack | Paquete de compatibilidad de .NET Framework 4.6.2 | 15.6.27406.0 | Opcional
+Microsoft.Net.Component.4.6.2.TargetingPack | Paquete de compatibilidad de .NET Framework 4.6.2 | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.7.1.SDK | SDK de .NET Framework 4.7.1 | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.7.1.TargetingPack | Paquete de compatibilidad de .NET Framework 4.7.1 | 15.6.27406.0 | Opcional
+Microsoft.Net.Component.4.7.1.TargetingPack | Paquete de compatibilidad de .NET Framework 4.7.1 | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.7.2.SDK | SDK de .NET Framework 4.7.2 | 15.8.27825.0 | Optional
-Microsoft.Net.Component.4.7.2.TargetingPack | Paquete de compatibilidad de .NET Framework 4.7.2 | 15.8.27825.0 | Opcional
+Microsoft.Net.Component.4.7.2.TargetingPack | Paquete de compatibilidad de .NET Framework 4.7.2 | 15.8.27825.0 | Optional
 Microsoft.Net.Component.4.7.SDK | SDK de .NET Framework 4.7 | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.7.TargetingPack | Paquete de compatibilidad de .NET Framework 4.7 | 15.6.27406.0 | Optional
 Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | Herramientas de desarrollo de .NET Framework 4.6.2 | 15.6.27406.0 | Optional
-Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | Herramientas de desarrollo para .NET Framework 4.7.1 | 15.6.27406.0 | Opcional
+Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | Herramientas de desarrollo para .NET Framework 4.7.1 | 15.6.27406.0 | Optional
 Microsoft.Net.ComponentGroup.4.7.2.DeveloperTools | Herramientas de desarrollo para .NET Framework 4.7.2 | 15.8.27825.0 | Optional
-Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Herramientas de desarrollo para .NET Framework 4.7 | 15.6.27406.0 | Opcional
-Microsoft.Net.Core.Component.SDK | Herramientas de desarrollo de .NET Core 2.0 | 15.6.27406.0 | Opcional
+Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Herramientas de desarrollo para .NET Framework 4.7 | 15.6.27406.0 | Optional
+Microsoft.Net.Core.Component.SDK | Herramientas de desarrollo de .NET Core 2.0 | 15.6.27406.0 | Optional
 Microsoft.Net.Core.Component.SDK.1x | Herramientas de desarrollo de .NET Core 1.0 - 1.1 | 15.6.27406.0 | Optional
 
 ## <a name="mobile-development-with-net"></a>Desarrollo móvil con .NET

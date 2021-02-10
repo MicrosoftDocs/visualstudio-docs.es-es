@@ -5,7 +5,7 @@ description: Uso de identificadores de componente y carga de trabajo de Visual S
 keywords: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.date: 11/10/2020
 ms.topic: reference
 helpviewer_keywords:
@@ -16,12 +16,12 @@ ms.assetid: b99298df-0280-47fc-af73-44cd7a8ac553
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: a23f67a56f4f134a82d28072cda2f7d9fcebb925
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 60baf9fbbda5713e0e647e38caafaa2a0575099a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437419"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881946"
 ---
 # <a name="visual-studio-build-tools-component-directory"></a>Directorio de componentes de Visual Studio Build Tools
 

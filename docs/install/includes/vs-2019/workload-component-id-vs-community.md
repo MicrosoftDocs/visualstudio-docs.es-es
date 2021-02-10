@@ -5,17 +5,17 @@ description: Uso de identificadores de componente y carga de trabajo para instal
 keywords: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.date: 11/10/2020
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: dd5930911c44ac0f0ffa15d164a5d7a90b15a5fa
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 0af20eab0c2124cb25e935598d8b3f16cd64121e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437397"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881909"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-community-2019"></a>Editor principal de Visual Studio (incluido con Visual Studio Community 2019)
 
@@ -52,7 +52,7 @@ Microsoft.Net.Component.4.7.2.TargetingPack | Paquete de compatibilidad de .NET 
 Microsoft.Net.Component.4.8.SDK | SDK de .NET Framework 4.8 | 16.4.29313.120 | Obligatorio
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Herramientas de desarrollo para .NET Framework 4.7.2 | 16.3.29207.166 | Obligatorio
 Microsoft.NetCore.Component.DevelopmentTools | Herramientas de desarrollo de .NET Core | 16.8.30607.99 | Obligatorio
-Microsoft.NetCore.Component.Runtime.3.1 | Entorno de ejecución de .NET Core 3.1 (LTS) | 16.8.30703.189 | Requerido
+Microsoft.NetCore.Component.Runtime.3.1 | Entorno de ejecución de .NET Core 3.1 (LTS) | 16.8.30703.189 | Obligatorio
 Microsoft.NetCore.Component.Runtime.5.0 | Entorno de ejecución de .NET 5.0 | 16.8.30703.189 | Obligatorio
 Microsoft.NetCore.Component.SDK | .NET SDK | 16.8.30703.189 | Obligatorio
 Microsoft.NetCore.Component.Web | Herramientas de desarrollo de .NET Core | 16.5.29721.120 | Obligatorio
@@ -218,7 +218,7 @@ Microsoft.Component.MSBuild | MSBuild | 16.5.29515.121 | Obligatorio
 Microsoft.Net.Component.4.7.2.TargetingPack | Paquete de compatibilidad de .NET Framework 4.7.2 | 16.8.30509.167 | Obligatorio
 Microsoft.Net.Component.4.8.SDK | SDK de .NET Framework 4.8 | 16.4.29313.120 | Obligatorio
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Herramientas de desarrollo para .NET Framework 4.7.2 | 16.3.29207.166 | Obligatorio
-Microsoft.NetCore.Component.Runtime.3.1 | Entorno de ejecución de .NET Core 3.1 (LTS) | 16.8.30703.189 | Requerido
+Microsoft.NetCore.Component.Runtime.3.1 | Entorno de ejecución de .NET Core 3.1 (LTS) | 16.8.30703.189 | Obligatorio
 Microsoft.NetCore.Component.Runtime.5.0 | Entorno de ejecución de .NET 5.0 | 16.8.30703.189 | Obligatorio
 Microsoft.NetCore.Component.SDK | .NET SDK | 16.8.30703.189 | Obligatorio
 Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0,3 | Obligatorio
@@ -454,7 +454,7 @@ Microsoft.Net.Component.4.7.2.TargetingPack | Paquete de compatibilidad de .NET 
 Microsoft.Net.Component.4.8.SDK | SDK de .NET Framework 4.8 | 16.4.29313.120 | Obligatorio
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Herramientas de desarrollo para .NET Framework 4.7.2 | 16.3.29207.166 | Obligatorio
 Microsoft.NetCore.Component.DevelopmentTools | Herramientas de desarrollo de .NET Core | 16.8.30607.99 | Obligatorio
-Microsoft.NetCore.Component.Runtime.3.1 | Entorno de ejecución de .NET Core 3.1 (LTS) | 16.8.30703.189 | Requerido
+Microsoft.NetCore.Component.Runtime.3.1 | Entorno de ejecución de .NET Core 3.1 (LTS) | 16.8.30703.189 | Obligatorio
 Microsoft.NetCore.Component.Runtime.5.0 | Entorno de ejecución de .NET 5.0 | 16.8.30703.189 | Obligatorio
 Microsoft.NetCore.Component.SDK | .NET SDK | 16.8.30703.189 | Obligatorio
 Microsoft.NetCore.Component.Web | Herramientas de desarrollo de .NET Core | 16.5.29721.120 | Obligatorio
@@ -520,7 +520,7 @@ Microsoft.Net.Component.4.7.2.TargetingPack | Paquete de compatibilidad de .NET 
 Microsoft.Net.Component.4.8.SDK | SDK de .NET Framework 4.8 | 16.4.29313.120 | Obligatorio
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Herramientas de desarrollo para .NET Framework 4.7.2 | 16.3.29207.166 | Obligatorio
 Microsoft.NetCore.Component.DevelopmentTools | Herramientas de desarrollo de .NET Core | 16.8.30607.99 | Obligatorio
-Microsoft.NetCore.Component.Runtime.3.1 | Entorno de ejecución de .NET Core 3.1 (LTS) | 16.8.30703.189 | Requerido
+Microsoft.NetCore.Component.Runtime.3.1 | Entorno de ejecución de .NET Core 3.1 (LTS) | 16.8.30703.189 | Obligatorio
 Microsoft.NetCore.Component.Runtime.5.0 | Entorno de ejecución de .NET 5.0 | 16.8.30703.189 | Obligatorio
 Microsoft.NetCore.Component.SDK | .NET SDK | 16.8.30703.189 | Obligatorio
 Microsoft.VisualStudio.Component.FSharp | Compatibilidad con el idioma F# | 16.0.28315.86 | Obligatorio
@@ -554,7 +554,7 @@ Microsoft.Net.Component.4.7.2.TargetingPack | Paquete de compatibilidad de .NET 
 Microsoft.Net.Component.4.8.SDK | SDK de .NET Framework 4.8 | 16.4.29313.120 | Obligatorio
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Herramientas de desarrollo para .NET Framework 4.7.2 | 16.3.29207.166 | Obligatorio
 Microsoft.NetCore.Component.DevelopmentTools | Herramientas de desarrollo de .NET Core | 16.8.30607.99 | Obligatorio
-Microsoft.NetCore.Component.Runtime.3.1 | Entorno de ejecución de .NET Core 3.1 (LTS) | 16.8.30703.189 | Requerido
+Microsoft.NetCore.Component.Runtime.3.1 | Entorno de ejecución de .NET Core 3.1 (LTS) | 16.8.30703.189 | Obligatorio
 Microsoft.NetCore.Component.Runtime.5.0 | Entorno de ejecución de .NET 5.0 | 16.8.30703.189 | Obligatorio
 Microsoft.NetCore.Component.SDK | .NET SDK | 16.8.30703.189 | Obligatorio
 Microsoft.NetCore.Component.Web | Herramientas de desarrollo de .NET Core | 16.5.29721.120 | Obligatorio
@@ -658,7 +658,7 @@ Microsoft.Net.Component.4.7.2.TargetingPack | Paquete de compatibilidad de .NET 
 Microsoft.Net.Component.4.8.SDK | SDK de .NET Framework 4.8 | 16.4.29313.120 | Obligatorio
 Microsoft.Net.Component.4.TargetingPack | Paquete de compatibilidad de .NET Framework 4 | 16.0.28517.75 | Obligatorio
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Herramientas de desarrollo para .NET Framework 4.7.2 | 16.3.29207.166 | Obligatorio
-Microsoft.NetCore.Component.Runtime.3.1 | Entorno de ejecución de .NET Core 3.1 (LTS) | 16.8.30703.189 | Requerido
+Microsoft.NetCore.Component.Runtime.3.1 | Entorno de ejecución de .NET Core 3.1 (LTS) | 16.8.30703.189 | Obligatorio
 Microsoft.NetCore.Component.Runtime.5.0 | Entorno de ejecución de .NET 5.0 | 16.8.30703.189 | Obligatorio
 Microsoft.NetCore.Component.SDK | .NET SDK | 16.8.30703.189 | Obligatorio
 Microsoft.VisualStudio.Component.AppInsights.Tools | Developer Analytics Tools | 16.5.29515.121 | Obligatorio
@@ -779,7 +779,7 @@ Id. de componente | NOMBRE | Versión | Tipo de dependencia
 Microsoft.Component.NetFX.Native | .NET Native | 16.5.29515.121 | Obligatorio
 Microsoft.ComponentGroup.Blend | Blend para Visual Studio | 16.0.28315.86 | Obligatorio
 Microsoft.Net.Component.4.5.TargetingPack | Paquete de compatibilidad de .NET Framework 4.5 | 16.0.28517.75 | Obligatorio
-Microsoft.NetCore.Component.Runtime.3.1 | Entorno de ejecución de .NET Core 3.1 (LTS) | 16.8.30703.189 | Requerido
+Microsoft.NetCore.Component.Runtime.3.1 | Entorno de ejecución de .NET Core 3.1 (LTS) | 16.8.30703.189 | Obligatorio
 Microsoft.NetCore.Component.Runtime.5.0 | Entorno de ejecución de .NET 5.0 | 16.8.30703.189 | Obligatorio
 Microsoft.NetCore.Component.SDK | .NET SDK | 16.8.30703.189 | Obligatorio
 Microsoft.VisualStudio.Component.AppInsights.Tools | Developer Analytics Tools | 16.5.29515.121 | Obligatorio

@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 94458c31-28bc-40e2-9737-85868788a0e5
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ac6e59f4dc6fa68962ac061132e3fab90ec8e955
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 6102d5252564834f1de7c533e763d7b08a8f9fb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901445"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880546"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Cómo: Crear tipos con el Diseñador de clases
 

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 10f0c666-ac2f-4ac5-9fb5-a88f660ab840
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 64012be03c08f3737f4e57a05217bf46082daeb6
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: de09394bfc071cbe3dd1fedad52d1e5a511b62c7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720753"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882900"
 ---
 # <a name="cores-view-timeline"></a>Escala de tiempo de la vista Núcleos
 Cada fila de la escala de tiempo representa un núcleo de procesador lógico del sistema para el que se genera el perfil. Para cada fila, el eje horizontal muestra qué subproceso se estaba ejecutando en un núcleo lógico en un momento dado. Puede desplazar el puntero sobre un color de interés en una escala de tiempo para devolver información que identifica el subproceso. Para facilitar la identificación del subproceso, la leyenda en la parte inferior de la ventana muestra qué representa cada color. Utilice la herramienta Zoom para acercar y alejar; para ello, haga clic y arrastre o presione la tecla Ctrl y mueva la rueda del mouse. La coherencia de zoom se mantiene al cambiar entre la vista de núcleos y subprocesos.

@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: 816f5633-65d7-41e5-aee1-033628d4e2df
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0de246e5ecdc51ff6471eeed242d638fee261c8c
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 2b498279b085f19cd6ea218b4300301184da8e0c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722963"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879753"
 ---
 # <a name="modules-view---sampling-data"></a>Vista Módulos: datos de muestreo
 La vista Módulos de datos de muestro muestra datos de rendimiento agrupados por los módulos de los que se toman muestras en los datos de generación de perfiles. Cada módulo es la raíz de un árbol jerárquico. Las funciones del módulo de las que se toman muestras se enumeran bajo el nodo de módulo.

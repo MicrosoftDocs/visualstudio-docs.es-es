@@ -5,7 +5,7 @@ description: Use identificadores de componente y carga de trabajo de Visual Stu
 keywords: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.date: 05/19/2020
 ms.topic: reference
 helpviewer_keywords:
@@ -16,12 +16,12 @@ ms.assetid: 5719032b-2c2e-416e-a281-a4573ec74e38
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 6274396d35756682ad929b051d155897bcafb8e7
-ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
+ms.openlocfilehash: cdb15d60649f63d2725fd80befe50123c4152531
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97846994"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881712"
 ---
 # <a name="visual-studio-professional-component-directory"></a>Directorio de componentes de Visual Studio Professional
 

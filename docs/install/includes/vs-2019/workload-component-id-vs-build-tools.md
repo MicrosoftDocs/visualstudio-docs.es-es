@@ -5,17 +5,17 @@ description: Uso de identificadores de componente y carga de trabajo de Visual S
 keywords: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.date: 11/10/2020
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 8b99b3e92ace96fcf87f7fb5a4e575cb0ca15ee5
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: fcf85223bbec03594fc64e221b23b5f99c704abf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437423"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881948"
 ---
 ## <a name="azure-development-build-tools"></a>Herramientas de compilación de desarrollo para Azure
 
@@ -147,7 +147,7 @@ Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores de C# y Visual B
 Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.NetCore.BuildTools.ComponentGroup | Herramientas de compilación de .NET Core | 16.3.29102.218 | Obligatorio
-Microsoft.NetCore.Component.Runtime.3.1 | Entorno de ejecución de .NET Core 3.1 (LTS) | 16.8.30703.189 | Requerido
+Microsoft.NetCore.Component.Runtime.3.1 | Entorno de ejecución de .NET Core 3.1 (LTS) | 16.8.30703.189 | Obligatorio
 Microsoft.NetCore.Component.Runtime.5.0 | Entorno de ejecución de .NET 5.0 | 16.8.30703.189 | Obligatorio
 Microsoft.NetCore.Component.SDK | .NET SDK | 16.8.30703.189 | Obligatorio
 Microsoft.VisualStudio.Component.NuGet.BuildTools | Destinos y tareas de compilación de NuGet | 16.1.28829.92 | Obligatorio
