@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 01ac4013-96f9-4235-b289-f55f9e99558f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f30f9698c9c81322edd6935b40c16cad6f46024c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d31b7cfe2480fa3b16a4d3c8c08185194fec6b79
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734913"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951204"
 ---
 # <a name="idebugbreakpointrequest2"></a>IDebugBreakpointRequest2
 Esta interfaz representa la información necesaria para crear y enlazar cualquier tipo de punto de interrupción.
@@ -42,7 +42,7 @@ IDebugBreakpointRequest2 : IUnknown
 |[GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md)|Obtiene el tipo de ubicación del punto de interrupción de esta solicitud de punto de interrupción.|
 |[GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)|Obtiene la información de solicitud de punto de interrupción que describe esta solicitud de punto de interrupción.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Una vez cargado el programa que se está depurando, una llamada a [BIND](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) enlaza un punto de interrupción pendiente a la ubicación solicitada en el programa.
 
 ## <a name="requirements"></a>Requisitos

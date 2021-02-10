@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ddc016df63a7bb6ffbe3923de72c4f23cb32739c
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 4939e7a307e39f0548a72feeed7537efdcbd7f2c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480660"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950853"
 ---
 # <a name="step-2-run-your-picture-viewer-app"></a>Paso 2: Ejecución de la aplicación de visor de imágenes
 
@@ -34,12 +34,12 @@ Aquí se muestra cómo ejecutar la aplicación.
     - En la barra de herramientas, elija el botón **Iniciar depuración**, que aparece de esta forma:
 
       ![Botón de la barra de herramientas Iniciar depuración](../ide/media/express_icondebug.png)<br>
-      *Botón de la barra de herramientas *_Iniciar depuración_* __*
+      *Botón de la barra de herramientas **Iniciar depuración** __*
 
 1. Visual Studio ejecuta la aplicación y aparece una ventana denominada **Form1**. En la captura de pantalla siguiente se muestra la aplicación que acaba de crear. La aplicación está en ejecución y pronto la ampliará.
 
      ![Aplicación de Windows Forms en ejecución](../ide/media/express_firstrun.png)<br>
-**_Aplicación de Windows Forms_* _, _en ejecución*
+***Aplicación de Windows Forms** _, _en ejecución*
 
 1. Vuelva al entorno de desarrollo integrado (IDE) de Visual Studio y examine la nueva barra de herramientas. Al ejecutar una aplicación, aparecen botones adicionales en la barra de herramientas. Estos botones permiten hacer cosas como detener e iniciar la aplicación, y ayudan a realizar el seguimiento de los errores que pueda haber. En este ejemplo, se usa para iniciar y detener la aplicación.
 

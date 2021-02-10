@@ -6,15 +6,15 @@ ms.date: 4/29/2020
 ms.topic: conceptual
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bee392ddc4e7a0d185bdcc2d0e31dbd17832c733
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 01367d821ffc74de0e9d087bfe52680508fad9e3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95870877"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951165"
 ---
 # <a name="productivity-guide-for-visual-studio"></a>Guía de productividad para Visual Studio
 

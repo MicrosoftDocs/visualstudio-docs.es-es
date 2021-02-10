@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 76225685a9f68ca6f6cb05f902922f8fa208015d
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 04168d6f648a9219c40f81aa042cbc778429ca0e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480400"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951009"
 ---
 # <a name="step-1-create-a-windows-forms-app-project"></a>Paso 1: Crear un proyecto de aplicación de Windows Forms
 
@@ -29,7 +29,7 @@ Al crear un visor de imagen, el primer paso consiste en crear un proyecto de apl
 
 1. En la barra de menús, elija **Archivo** > **Nuevo** > **Proyecto**. El cuadro de diálogo debe ser similar a la de la siguiente captura de pantalla:
 
-     ![Cuadro de diálogo Nuevo proyecto](../ide/media/newprojectdialogcallouts.png)<br/>*Cuadro de diálogo *_Nuevo proyecto_* __*
+     ![Cuadro de diálogo Nuevo proyecto](../ide/media/newprojectdialogcallouts.png)<br/>*Cuadro de diálogo **Nuevo proyecto** __*
 
 2. En la parte izquierda del cuadro de diálogo **Nuevo proyecto** elija **Visual C#** o **Visual Basic**, y después **Escritorio de Windows**.
 
@@ -107,7 +107,7 @@ Visual Studio crea una solución para la aplicación. Una solución actúa como 
      Como alternativa, seleccione el botón **Guardar todo** de la barra de herramientas que se muestra en la imagen siguiente.
 
      ![Botón de la barra de herramientas Guardar todo](../ide/media/express_iconsaveall.png)<br/>
-     *Botón de la barra de herramientas *_Guardar todo_* __*
+     *Botón de la barra de herramientas **Guardar todo** __*
 
      Visual Studio rellena automáticamente el nombre de la carpeta y el nombre del proyecto, y después guarda el proyecto en la carpeta de proyectos.
 

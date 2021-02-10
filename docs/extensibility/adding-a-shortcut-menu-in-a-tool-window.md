@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 50234537-9e95-4b7e-9cb7-e5cf26d6e9d2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e14d948bf5d4b637002ca1f2ec8be37b64dc22b
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: a35652c0eacf22a46eed3f3fc64c3bcc0d6d10ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597878"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951542"
 ---
 # <a name="add-a-shortcut-menu-in-a-tool-window"></a>Agregar un menú contextual en una ventana de herramientas
 En este tutorial se coloca un menú contextual en una ventana de herramientas. Un menú contextual es un menú que aparece cuando un usuario hace clic con el botón secundario en un botón, un cuadro de texto o un fondo de la ventana. Los comandos de un menú contextual se comportan igual que los comandos de otros menús o barras de herramientas. Para admitir un menú contextual, especifíquelo en el archivo *. Vsct* y mostrarlo como respuesta al clic con el botón secundario del mouse.
@@ -278,6 +278,6 @@ Un menú contextual como el que se muestra en este tutorial permite al usuario s
 
 4. Haga clic en un color en el menú contextual. El color de fondo de la ventana de herramientas debe cambiarse al color seleccionado.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md)
 - [Uso y suministro de servicios](../extensibility/using-and-providing-services.md)

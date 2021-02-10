@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 9cfdbca5-052c-48e9-8411-e2e9e4065d00
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 632c3611f6c03a47a7d46e985eb6aa2685864a7f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1004b8139617e370c6eef1c78f372d1e3a6db611
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735130"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951269"
 ---
 # <a name="idebugbreakpointchecksumrequest2"></a>IDebugBreakpointChecksumRequest2
 Representa una suma de comprobación de documento para una solicitud de punto de interrupción.
