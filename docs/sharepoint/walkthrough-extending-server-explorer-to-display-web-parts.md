@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint Connections [SharePoint development in Visual Studio], creating a new node type
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 55950d8498b436d38d2145c2692556330718883e
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: aa190ea6d5376c00584cc5936d1074d245b9509e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95970212"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952673"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Tutorial: extender Explorador de servidores para mostrar elementos Web
   En Visual Studio, puede usar el nodo **conexiones de SharePoint** de **Explorador de servidores** para ver los componentes de los sitios de SharePoint. Sin embargo, **Explorador de servidores** no muestra algunos componentes de forma predeterminada. En este tutorial, extenderá **Explorador de servidores** para que muestre la galería de elementos Web en cada sitio de SharePoint conectado.
@@ -45,7 +45,7 @@ ms.locfileid: "95970212"
 > [!NOTE]
 > Para obtener una versión alternativa de este tutorial que usa el modelo de objetos de cliente para SharePoint en lugar de su modelo de objetos de servidor, vea [Tutorial: llamar al modelo de objetos de cliente de SharePoint en una extensión de explorador de servidores](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
  Necesitará los componentes siguientes en el equipo de desarrollo para completar este tutorial:
 
 - Ediciones compatibles de Windows, SharePoint y Visual Studio.

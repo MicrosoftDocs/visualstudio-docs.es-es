@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 0bcfe85c-5f37-4a9d-bf2b-141acd96ad67
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cbd015408cbefd1861f6e795447a5302efabb0dc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e2611828f1e9bb2aec740e392db18ce60839d19a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738139"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952400"
 ---
 # <a name="assemblylocresolution"></a>ASSEMBLYLOCRESOLUTION
 Especifica dónde se encuentra un ensamblado.
@@ -28,21 +28,21 @@ Especifica dónde se encuentra un ensamblado.
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-enum enum_ASSEMBLYLOCRESOLUTION {
-    ALR_NAME      = 0x0,
-    ALR_USERDIR   = 0x1,
-    ALR_SHAREDDIR = 0x2,
-    ALR_REMOTEDIR = 0x4,
+enum enum_ASSEMBLYLOCRESOLUTION {
+    ALR_NAME      = 0x0,
+    ALR_USERDIR   = 0x1,
+    ALR_SHAREDDIR = 0x2,
+    ALR_REMOTEDIR = 0x4,
 };
-typedef DWORD ASSEMBLYLOCRESOLUTION;
+typedef DWORD ASSEMBLYLOCRESOLUTION;
 ```
 
 ```csharp
-public enum enum_ASSEMBLYLOCRESOLUTION {
-    ALR_NAME      = 0x0,
-    ALR_USERDIR   = 0x1,
-    ALR_SHAREDDIR = 0x2,
-    ALR_REMOTEDIR = 0x4,
+public enum enum_ASSEMBLYLOCRESOLUTION {
+    ALR_NAME      = 0x0,
+    ALR_USERDIR   = 0x1,
+    ALR_SHAREDDIR = 0x2,
+    ALR_REMOTEDIR = 0x4,
 };
 ```
 
@@ -59,7 +59,7 @@ El ensamblado se encuentra en el directorio compartido.
 `ALR_REMOTEDIR`\
 El ensamblado se encuentra en un directorio remoto.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Los métodos [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) y [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md) devuelven estos valores.
 
 Estos valores se pueden combinar con la `OR` operación.

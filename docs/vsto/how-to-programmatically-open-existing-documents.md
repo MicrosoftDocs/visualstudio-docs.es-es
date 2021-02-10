@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], opening documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 994afc6f0d8d9bb76aff56097d0a18b8c3f940d9
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 81d134c88d93b3da3b0f0e6c3ded3cbe0d6d3f89
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525558"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951685"
 ---
 # <a name="how-to-programmatically-open-existing-documents"></a>Cómo: abrir documentos existentes mediante programación
   El <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> método abre el documento de Word Microsoft Office existente especificado por una ruta de acceso completa y un nombre de archivo. Este método devuelve un <xref:Microsoft.Office.Interop.Word.Document> que representa el documento abierto.
@@ -46,7 +46,7 @@ ms.locfileid: "97525558"
 
 - Un documento denominado *NewDocument.doc* debe existir en un directorio denominado *Test* en la unidad C.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Cómo: crear nuevos documentos mediante programación](../vsto/how-to-programmatically-create-new-documents.md)
 - [Cómo: cerrar documentos mediante programación](../vsto/how-to-programmatically-close-documents.md)
 - [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)

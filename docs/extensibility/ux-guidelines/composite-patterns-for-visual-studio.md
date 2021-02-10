@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 719ce0ac88761599fbed7da90643fd8a9d79db69
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: c8ac314a2ec49b805fc87badf6b63a719b8511e8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715826"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952101"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Patrones compuestos para Visual Studio
 Los patrones compuestos combinan elementos de interacción y diseño en configuraciones distintas. Algunos de los patrones compuestos más importantes en Visual Studio con respecto a la coherencia incluyen:
@@ -350,7 +350,7 @@ Los patrones compuestos combinan elementos de interacción y diseño en configur
 |CTRL + ALT + signo menos|Reduce el factor de zoom en un nivel.|
 |CTRL + ALT + signo más|Aumenta el factor de zoom en un nivel.|
 |Mayús o Ctrl|Agrega el objeto al grupo de selección. Ctrl también permite quitar objetos individualmente del grupo de selección.|
-|Escriba|Ejecuta el comando predeterminado para el objeto (normalmente, abrir o editar).|
+|Entrar|Ejecuta el comando predeterminado para el objeto (normalmente, abrir o editar).|
 |F2|Activa la edición en contexto para el objeto.|
 |Teclas de dirección|Mueve los objetos seleccionados en la dirección de la tecla de dirección presionada, en incrementos pequeños (por ejemplo, 1 píxel a la vez)|
 |Ctrl + teclas de dirección|Mueve los objetos seleccionados en la dirección de la tecla de dirección presionada, en incrementos mayores (por ejemplo, 10 píxeles a la vez)|
@@ -395,7 +395,7 @@ Los patrones compuestos combinan elementos de interacción y diseño en configur
 #### <a name="graphical-object-selection-appearance"></a><a name="BKMK_GraphicalObjectSelectionAppearance"></a> Apariencia de selección de objetos gráficos
  Los controladores de selección son los cuadrados dibujados en un patrón rectangular alrededor del rectángulo de selección del objeto. En el gráfico siguiente se muestran ejemplos de los distintos Estados que un objeto gráfico puede tener con el control, el ajuste de tamaño y la apariencia de edición en contexto. El tamaño de los identificadores debe estar vinculado a las métricas de borde y borde de la ventana mediante la API de **GetSystemMetrics** .
 
-| State | Aspecto | Detalles visuales |
+| Estado | Aspecto | Detalles visuales |
 |-------------------------|---------------| - |
 | **No seleccionado** | Valor predeterminado | ![Estado de botón predeterminado](../../extensibility/ux-guidelines/media/0713-10_defaultstate.png "0713-10_DefaultState") |
 | **Selección principal** | Tamaño | ![Selección primaria con controladores de tamaño](../../extensibility/ux-guidelines/media/0713-11_primaryresize.png "0713-11_PrimaryResize") |
@@ -439,9 +439,9 @@ Los patrones compuestos combinan elementos de interacción y diseño en configur
 
 | Object | Selección |
 |--------|------------|
-| Lista | Contiguo |
-| Lista | Separado |
-| Lista | Region |
+| List | Contiguo |
+| List | Separado |
+| List | Region |
 
  Al hacer clic en una vez en una lista, se selecciona la fila en la que se hizo clic. Si el usuario hace clic en una celda de la lista que admite la edición en contexto, la celda también se activa inmediatamente para la edición en contexto. De lo contrario, se selecciona la fila completa de inmediato y se muestra un resaltado.
 
@@ -484,7 +484,7 @@ Los patrones compuestos combinan elementos de interacción y diseño en configur
 |Diálogo|Ubicación del cuadro de diálogo, si se ha cambiado.<br /><br /> La vista que el usuario utilizó por última vez en el cuadro de diálogo|Cuando se cierre el cuadro de diálogo<br /><br /> Cuando finaliza la sesión de Visual Studio|En memoria<br /><br /> Registro en **HKEY_Current_User**|
 |Periodo|El tamaño y la ubicación de la ventana|Cuando se cierra la ventana<br /><br /> Cuando cambia el modo de Visual Studio<br /><br /> Cuando finaliza la sesión de Visual Studio|El archivo de **Opciones de usuario (. suo)** del proyecto<br /><br /> Archivo de opciones personalizadas para la configuración de la ventana|
 |Documento|La selección actual en el documento<br /><br /> Vista del documento<br /><br /> Los últimos puntos visitados por el usuario|Cuando se guarda el documento|El archivo de **Opciones de usuario (. suo)** del proyecto|
-|Proyecto|Referencias a archivos<br /><br /> Referencias a directorios en disco<br /><br /> Referencias a otro software<br /><br /> Componentes<br /><br /> Información de estado sobre el propio proyecto|Cuando se guarda el proyecto|El archivo del proyecto|
+|Project|Referencias a archivos<br /><br /> Referencias a directorios en disco<br /><br /> Referencias a otro software<br /><br /> Componentes<br /><br /> Información de estado sobre el propio proyecto|Cuando se guarda el proyecto|El archivo del proyecto|
 |Solución|Referencias a proyectos<br /><br /> Referencias a archivos|Cuando se guarda el proyecto o la solución|El archivo de **solución (. sln)**|
 |Configuración en **herramientas > opciones**|Personalizaciones de teclado<br /><br /> Personalizaciones de la barra de herramientas<br /><br /> Esquemas de colores|Cuando se cierra el cuadro de diálogo **herramientas > opciones**<br /><br /> Cuando finaliza la sesión de Visual Studio|Registro en **HKEY_Current_User**|
 

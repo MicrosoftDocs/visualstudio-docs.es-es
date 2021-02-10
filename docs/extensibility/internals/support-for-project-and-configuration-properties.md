@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 9fcfaa0f-7b41-4b68-82ec-7a151dca5d7e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd5f15f16894faf6d47700e34db4d99a1fa3cb5a
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 8d7e0065cf66f0d46680ab725537dbe4176928b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876602"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953076"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Compatibilidad con las propiedades de proyecto y configuración
 La ventana **propiedades** del [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] entorno de desarrollo integrado (IDE) puede mostrar las propiedades de configuración y del proyecto. Puede proporcionar una página de propiedades para su propio tipo de proyecto, de modo que el usuario pueda establecer las propiedades de la aplicación.
@@ -92,7 +92,7 @@ La ventana **propiedades** del [!INCLUDE[vsprvs](../../code-quality/includes/vsp
 
  La `MyConfigProp` propiedad configuración aparece en la página de propiedades de configuración como **mi propiedad config** en la categoría **My Category**. Si la opción está seleccionada, la descripción, **mi Descripción**, aparece en el panel Descripción.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Adición y eliminación de páginas de propiedades](../../extensibility/adding-and-removing-property-pages.md)
 - [Proyectos](../../extensibility/internals/projects.md)
 - [Archivos de descripción del directorio de plantilla (.Vsdir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)

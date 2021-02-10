@@ -15,15 +15,15 @@ helpviewer_keywords:
 - reusable workflows [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1421b061c50277177b5a30f0357725e9a042f3bd
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: d4c12626550e36acc1a135258750f2d96ac5e81d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95970185"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952595"
 ---
 # <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow"></a>Tutorial: importar un flujo de trabajo reutilizable de SharePoint Designer
 
@@ -190,7 +190,7 @@ ms.locfileid: "95970185"
 
      Esto muestra la lista inmediatamente al depurar el proyecto.
 
-11. Dado que la plantilla de **flujo de trabajo importar reutilizable de SharePoint 2010** no importa los valores de propiedad de Asociación para el flujo de trabajo importado, debe escribirlos. Para hacerlo:
+11. Dado que la plantilla de **flujo de trabajo importar reutilizable de SharePoint 2010** no importa los valores de propiedad de Asociación para el flujo de trabajo importado, debe escribirlos. Para ello, siga estos pasos:
 
     1. En **Explorador de soluciones**, elija el nodo **SPD_Workflow_TestFT** .
 
@@ -198,7 +198,7 @@ ms.locfileid: "95970185"
 
     3. Rellene los valores que faltan en el Asistente para la personalización de SharePoint y, a continuación, elija el botón **Finalizar** .
 
-12. Elija el archivo. xoml y, a continuación, en la barra de menús, elija Diseñador de **vistas**  >  **Designer** para ver el flujo de trabajo importado en el diseñador de flujo de trabajo.
+12. Elija el archivo. xoml y, a continuación, en la barra de menús, elija Diseñador de **vistas**  >   para ver el flujo de trabajo importado en el diseñador de flujo de trabajo.
 
 13. En el nodo **Windows Workflow v 3.0** del **cuadro de herramientas**, realice uno de los pasos siguientes:
 

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - workflows [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3c8d5ca5b941a7ae6e6ebada21f1eafaef2b6f43
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 637d46eaa9ac9306d63befed1c011c278b46af24
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915315"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952725"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>Tutorial: Creación y depuración de una solución de flujo de trabajo de SharePoint
   En este tutorial se muestra cómo crear una plantilla de flujo de trabajo secuencial básica. El flujo de trabajo comprueba una propiedad de una biblioteca de documentos compartidos para determinar si se ha revisado un documento. Si el documento se ha revisado, el flujo de trabajo finaliza.
@@ -289,7 +289,7 @@ ms.locfileid: "96915315"
 
 - Para obtener más información sobre las actividades de Windows Workflow Foundation, vea [espacio de nombres System. Workflow. Activities](/dotnet/api/system.windows.media.color).
 
-## <a name="see-also"></a>Consulte también
-- [Creación de soluciones de flujo de trabajo de SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)
+## <a name="see-also"></a>Vea también
+- [Soluciones de flujo de trabajo de SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)
 - [Plantillas de proyecto y de elemento de proyecto de SharePoint](../sharepoint/sharepoint-project-and-project-item-templates.md)
 - [Build and debug SharePoint solutions](../sharepoint/building-and-debugging-sharepoint-solutions.md) (Compilar y depurar las soluciones de SharePoint)

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: bcd4355d-3fbe-483f-bb23-a44348323c6a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1d52701b916650bc142038ffd96dcab8b05ec6da
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 127028e7de34198b2d4cb141e4fc3c73f3a3931b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726119"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953453"
 ---
 # <a name="idebugobject2geticordebugvalue"></a>IDebugObject2::GetICorDebugValue
 Obtiene un objeto de código administrado que representa el valor asociado a este objeto.
@@ -28,14 +28,14 @@ Obtiene un objeto de código administrado que representa el valor asociado a est
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT GetICorDebugValue(
-   IUnknown** ppUnk
+HRESULT GetICorDebugValue(
+   IUnknown** ppUnk
 );
 ```
 
 ```csharp
-int GetICorDebugValue(
-   out object ppUnk
+int GetICorDebugValue(
+   out object ppUnk
 );
 ```
 
@@ -46,7 +46,7 @@ int GetICorDebugValue(
 ## <a name="return-value"></a>Valor devuelto
  Si se realiza correctamente, Devuelve S_OK; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  El `ICorDebugValue` objeto es una interfaz de Common Language Runtime que representa un valor.
 
 ## <a name="see-also"></a>Vea también

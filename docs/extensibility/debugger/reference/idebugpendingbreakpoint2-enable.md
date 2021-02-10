@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 09e32d05-464b-40a6-a41d-76f2759cf2cd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f796aef9533e3861a870b0a0543ae6b4aeb11de1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d2da595754066adefb397bf90085b7d2e58ab49d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725893"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953115"
 ---
 # <a name="idebugpendingbreakpoint2enable"></a>IDebugPendingBreakpoint2::Enable
 Alterna el estado habilitado del punto de interrupción pendiente.
@@ -47,7 +47,7 @@ de Se establece en un valor distinto de cero ( `TRUE` ) para habilitar un punto 
 ## <a name="return-value"></a>Valor devuelto
 Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error. Devuelve `E_BP_DELETED` si se ha eliminado el punto de interrupción.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
 Cuando un punto de interrupción pendiente está habilitado o deshabilitado, todos los puntos de interrupción enlazados a él se establecen en el mismo estado.
 
 Este método se puede llamar tantas veces como sea necesario, incluso si el punto de interrupción ya está habilitado o deshabilitado.

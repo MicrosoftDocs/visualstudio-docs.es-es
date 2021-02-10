@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 86596fd1-cecc-4813-8add-dc3d70068f9b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c47a920e99ece3fb0853e4e6a26dba3c8d0c45c2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8fa51311bb7548889cccdd2eb91e70a4679fb5de
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726020"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953310"
 ---
 # <a name="idebugoutputstringevent2"></a>IDebugOutputStringEvent2
 El motor DE depuración (DE) envía esta interfaz al administrador de depuración de la sesión (SDM) para generar una cadena.
@@ -41,7 +41,7 @@ IDebugOutputStringEvent2 : IUnknown
 |------------|-----------------|
 |[GetString](../../../extensibility/debugger/reference/idebugoutputstringevent2-getstring.md)|Obtiene el mensaje que se va a mostrar.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Por ejemplo, en código no administrado, la cadena que se va a generar puede originarse cuando el programa que se está depurando envía una cadena a la función de Win32 `OutputDebugString` . Esta cadena la intercepta el DE y se envía al SDM como el `IDebugOutputStringEvent2` evento.
 
  Use [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md) para enviar un mensaje que requiere una respuesta de usuario.

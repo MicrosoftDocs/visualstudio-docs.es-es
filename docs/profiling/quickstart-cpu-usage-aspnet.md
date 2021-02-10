@@ -9,15 +9,15 @@ helpviewer_keywords:
 - Diagnostics Tools, CPU Usage
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - aspnet
-ms.openlocfilehash: f79a9f5178959b9a1ec79dc3c22d8da9c0f6735e
-ms.sourcegitcommit: 0ba0cbff77eac15feab1a73eeee3667006794b29
+ms.openlocfilehash: 7170983732ff1350061629e1e8aa4ec88fad3fa1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80411985"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952842"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet-core"></a>Inicio rápido: Análisis de los datos de uso de la CPU en Visual Studio (ASP.NET Core)
 

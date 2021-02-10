@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 2025c969-e3c7-4cf4-a5c5-099d342895ea
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a04f47a6500c0cd2174d0567029a4f5c86d9f62d
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: ef05b65b1a018772f4354062aa1be285c40b0d90
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97615732"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952179"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 
@@ -142,6 +142,6 @@ LONG SendStatusMessage(
 }
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Funciones de devolución de llamada implementadas por el IDE](../extensibility/callback-functions-implemented-by-the-ide.md)
 - [Complementos de control de código fuente](../extensibility/source-control-plug-ins.md)

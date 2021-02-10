@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 12bc1f12-47b1-44f6-b8db-862aa88d50d1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac89984539b0870d3921918a5a96b821297c009f
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 7f16e05ecbd211652dbf5fb511211627a09137df
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993736"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952270"
 ---
 # <a name="how-to-provide-a-service"></a>Cómo: proporcionar un servicio
 Un VSPackage puede proporcionar servicios que otros VSPackages pueden utilizar. Para proporcionar un servicio, un VSPackage debe registrar el servicio con Visual Studio y agregar el servicio.
@@ -140,7 +140,7 @@ Un VSPackage puede proporcionar servicios que otros VSPackages pueden utilizar. 
 
      El valor de `helloString` debe ser "Hello".
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Cómo: obtener un servicio](../extensibility/how-to-get-a-service.md)
 - [Usar y proporcionar servicios](../extensibility/using-and-providing-services.md)
 - [Aspectos básicos del servicio](../extensibility/internals/service-essentials.md)

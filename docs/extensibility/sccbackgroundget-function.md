@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 69817e52-b9ac-4f4d-820b-2cc9c384f0dc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1c07076b6e257bd5519d19f841797fbc652f0c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6d081389124b8703958f82cb97fc877f9f812290
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701227"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952127"
 ---
 # <a name="sccbackgroundget-function"></a>SccBackgroundGet función)
 Esta función recupera del control de código fuente de cada uno de los archivos especificados sin interacción del usuario.
@@ -67,7 +67,7 @@ de Un valor único asociado a esta operación.
 |SCC_E_BACKGROUNDGETINPROGRESS|Ya hay una recuperación en segundo plano en curso (el complemento de control de código fuente solo debe devolver este valor si no admite operaciones por lotes simultáneas).|
 |SCC_I_OPERATIONCANCELED|La operación se canceló antes de completarse.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Siempre se llama a esta función en un subproceso distinto del que cargó el complemento de control de código fuente. No se espera que esta función devuelva hasta que se haya hecho; sin embargo, se puede llamar varias veces con varias listas de archivos al mismo tiempo.
 
  El uso del `dwFlags` argumento es el mismo que el de [SccGet](../extensibility/sccget-function.md).

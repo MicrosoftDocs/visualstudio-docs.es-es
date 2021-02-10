@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 8f20177b-dab9-43a3-b959-81a591b451d6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7ef19bafd0788ed15094979141679625e4e992f
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: cb035f9174085667eb229ab5003d8f997eaae84a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993840"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953037"
 ---
 # <a name="how-to-add-a-dependency-to-a-vsix-package"></a>Cómo: agregar una dependencia a un paquete VSIX
 
@@ -48,7 +48,7 @@ Si la extensión requiere 15,3 o superior, declararía la **versión de admitir*
 
 El VSIXInstaller detectará versiones anteriores de Visual Studio e informará al usuario de que se requiere una actualización posterior.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Referencia del esquema de extensión VSIX 1,0](/previous-versions/dd393700(v=vs.110))
 - [Anatomía de un paquete VSIX](../extensibility/anatomy-of-a-vsix-package.md)

@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 36ea793b-3832-41a1-b906-69e680ad5e1d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9cc65fe72ed631a4bb3c0b22efb74aae9160e1cb
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: f3f9b9efc625b435f304b192d3ca52f514e682e8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97862936"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951919"
 ---
 # <a name="walkthrough-create-an-sdk-using-c"></a>Tutorial: crear un SDK con C++
 En este tutorial se muestra cómo crear un SDK de la biblioteca matemática de C++ nativo, empaquetar el SDK como extensión de Visual Studio (VSIX) y usarlo para crear una aplicación. El tutorial se divide en estos pasos:
@@ -26,7 +26,7 @@ En este tutorial se muestra cómo crear un SDK de la biblioteca matemática de C
 
 - [Para crear una aplicación de ejemplo que usa la biblioteca de clases](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createSample)
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
  Para seguir este tutorial, debe instalar SDK de Visual Studio. Para obtener más información, vea el [SDK de Visual Studio](../extensibility/visual-studio-sdk.md).
 
 ## <a name="to-create-the-native-and-windows-runtime-libraries"></a><a name="createClassLibrary"></a> Para crear las bibliotecas nativas y de Windows Runtime

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: ddc96c4c-0600-46c1-8267-7dce4c44ad24
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ac857d961b1ae736645ba2cfda3f1ef5755d0fa1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4d7cc99747571feb5b443f10355d867da7c22f44
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770288"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952920"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Procedimiento Establecimiento de opciones de accesibilidad de IDE
 

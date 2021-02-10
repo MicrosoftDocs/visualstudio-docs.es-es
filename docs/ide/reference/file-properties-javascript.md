@@ -25,21 +25,21 @@ f1_keywords:
 ms.assetid: 085913b8-a97b-45f7-85fa-bbb0902f3ee9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: efe1486cf8ac2b64965ed157abbb47dc2d8c7b6c
-ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
+ms.openlocfilehash: c54ce24025f9ec15bc03d02825e961f9a03f3715
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91947796"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952959"
 ---
 # <a name="file-properties-javascript"></a>Propiedades de archivo, JavaScript
 
 Puede usar propiedades de archivo para indicar qué acciones debe realizar el sistema del proyecto en los archivos. Por ejemplo, puede establecer propiedades de archivo para indicar si un archivo debe agregarse al paquete como un archivo de recursos.
 
-Puede seleccionar cualquier archivo del Explorador de soluciones y, después, examinar sus propiedades en la ventana Propiedades. Los archivos de JavaScript tienen cuatro propiedades: **Copiar en el directorio de salida** , **Acción del paquete** , **Nombre de archivo** y **Ruta de acceso del archivo** .
+Puede seleccionar cualquier archivo del Explorador de soluciones y, después, examinar sus propiedades en la ventana Propiedades. Los archivos de JavaScript tienen cuatro propiedades: **Copiar en el directorio de salida**, **Acción del paquete**, **Nombre de archivo** y **Ruta de acceso del archivo**.
 
 ## <a name="file-properties"></a>Propiedades del archivo
 En esta sección se describen propiedades comunes de los archivos de JavaScript.
@@ -50,18 +50,18 @@ Esta propiedad especifica las condiciones en las que el archivo de origen selecc
 ### <a name="package-action"></a>Acción del paquete
 La propiedad **Acción del paquete** indica lo que Visual Studio realiza con un archivo cuando se ejecuta una compilación. **Acción del paquete** puede tener uno de varios valores:
 
-- **Ninguno** : el archivo no está incluido en el manifiesto de paquete. Un ejemplo es un archivo de texto que contiene documentación, como un archivo Léame.
+- **Ninguno**: el archivo no está incluido en el manifiesto de paquete. Un ejemplo es un archivo de texto que contiene documentación, como un archivo Léame.
 
-- **Contenido** : el archivo está incluido en el manifiesto de paquete. Por ejemplo, esta opción es el valor predeterminado para un archivo de vídeo, audio, imagen, .htm, .js o.css.
+- **Contenido**: el archivo está incluido en el manifiesto de paquete. Por ejemplo, esta opción es el valor predeterminado para un archivo de vídeo, audio, imagen, .htm, .js o.css.
 
-- **Manifiesto** : el archivo no está incluido en el manifiesto de paquete. En su lugar, el archivo se usa para la entrada al generar el manifiesto de paquete. Este es el valor predeterminado para el archivo package.appxmanifest.
+- **Manifiesto**: el archivo no está incluido en el manifiesto de paquete. En su lugar, el archivo se usa para la entrada al generar el manifiesto de paquete. Este es el valor predeterminado para el archivo package.appxmanifest.
 
-- **Recurso** : el archivo no está incluido en el manifiesto de paquete. En su lugar, el contenido del archivo se indexa en el Índice de recursos del paquete (PRI) que se incluye en el manifiesto de paquete. Normalmente se usa para los archivos de recursos.
+- **Recurso**: el archivo no está incluido en el manifiesto de paquete. En su lugar, el contenido del archivo se indexa en el Índice de recursos del paquete (PRI) que se incluye en el manifiesto de paquete. Normalmente se usa para los archivos de recursos.
 
 El valor predeterminado para **Acción del paquete** depende de la extensión del archivo que agregue a la solución.
 
 ### <a name="file-name-property"></a>Propiedad Nombre de archivo
-Muestra el nombre de archivo como un valor de solo lectura. Para cambiar el nombre del archivo, debe hacer clic con el botón derecho en el Explorador de soluciones y seleccionar **Cambiar nombre** .
+Muestra el nombre de archivo como un valor de solo lectura. Para cambiar el nombre del archivo, debe hacer clic con el botón derecho en el Explorador de soluciones y seleccionar **Cambiar nombre**.
 
 ### <a name="full-path-property"></a>Propiedad Ruta de acceso completa
 Muestra la ruta de acceso completa del archivo como un valor de solo lectura. Para cambiar la ruta de acceso del archivo, puede arrastrar y colocar el archivo en el Explorador de soluciones.

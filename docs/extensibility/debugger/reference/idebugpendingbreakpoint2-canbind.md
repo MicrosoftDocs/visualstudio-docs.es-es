@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 84a2b189-ccf1-467e-8fab-0c0da68f0b91
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 07625f7249092e2de3d3dccaaef31a2869755e36
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 89781298dc9134f80f8f57cc0e008068fa47bad3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725970"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953206"
 ---
 # <a name="idebugpendingbreakpoint2canbind"></a>IDebugPendingBreakpoint2::CanBind
 Determina si este punto de interrupción pendiente puede enlazarse a una ubicación de código.
@@ -29,13 +29,13 @@ Determina si este punto de interrupción pendiente puede enlazarse a una ubicaci
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT CanBind ( 
+HRESULT CanBind ( 
    IEnumDebugErrorBreakpoints2** ppErrorEnum
 );
 ```
 
 ```csharp
-int CanBind ( 
+int CanBind ( 
    out IEnumDebugErrorBreakpoints2 ppErrorEnum
 );
 ```
@@ -47,7 +47,7 @@ enuncia Devuelve un objeto [IEnumDebugErrorBreakpoints2](../../../extensibility/
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK.` devuelve `S_FALSE` si el punto de interrupción no se puede enlazar, en cuyo caso el parámetro devuelve los errores `ppErrorEnum` . De lo contrario, devuelve un código de error. Devuelve `E_BP_DELETED` si se ha eliminado el punto de interrupción.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  Se llama a este método para determinar lo que sucedería si se enlazara este punto de interrupción pendiente. Llame al método [BIND](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) para enlazar realmente el punto de interrupción pendiente.
 
 ## <a name="example"></a>Ejemplo

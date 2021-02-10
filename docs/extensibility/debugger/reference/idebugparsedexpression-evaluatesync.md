@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 0ea04cfa-de87-4b6c-897e-4572c1a28942
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1f00b209ff5f91d160e89f5f55ad966fbe9e6414
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ff14c10f5563053ce704982455eee6d9dc81b742
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726013"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953258"
 ---
 # <a name="idebugparsedexpressionevaluatesync"></a>IDebugParsedExpression::EvaluateSync
 Este método evalúa la expresión analizada y, opcionalmente, convierte el resultado en otro tipo de datos.
@@ -28,7 +28,7 @@ Este método evalúa la expresión analizada y, opcionalmente, convierte el resu
 ## <a name="syntax"></a>Sintaxis
 
 ```cpp
-HRESULT EvaluateSync( 
+HRESULT EvaluateSync( 
    DWORD                 dwEvalFlags,
    DWORD                 dwTimeout,
    IDebugSymbolProvider* pSymbolProvider,
@@ -76,7 +76,7 @@ enuncia Devuelve la interfaz [IDebugProperty2](../../../extensibility/debugger/r
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Notas
  El contexto de evaluación de expresión lo proporciona `pAddress` , lo que permite determinar el método contenedor y, a continuación, usar reglas de ámbito de lenguaje para determinar el valor de los símbolos en la expresión.
 
 ## <a name="see-also"></a>Vea también
