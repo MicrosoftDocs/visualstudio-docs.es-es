@@ -6,20 +6,20 @@ author: jmatthiesen
 ms.author: jomatthi
 ms.date: 11/16/2018
 ms.assetid: 1C7AC52E-754E-473F-A5B5-00C3A40DAACD
-ms.openlocfilehash: 3513f4e120db3bab61348f0ee1f0f452d09ded15
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0b474e39f03663a38bf84c3fb82ed2a3006a4e60
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66501006"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668695"
 ---
 # <a name="how-to-report-a-problem-in-visual-studio-for-mac"></a>Cómo notificar un problema en Visual Studio para Mac
 
-Si experimenta un problema con Visual Studio para Mac, nos gustaría que nos lo comunicara. Aquí le mostramos cómo notificar un problema a la [Comunidad de desarrolladores](https://developercommunity.visualstudio.com/spaces/41/index.html) para que podamos diagnosticarlo y corregirlo.
+Si experimenta un problema con Visual Studio para Mac, nos gustaría que nos lo comunicara. Aquí le mostramos cómo notificar un problema a la [Comunidad de desarrolladores](https://aka.ms/feedback/report?space=41) para que podamos diagnosticarlo y corregirlo.
 
 ## <a name="how-to-report-a-problem"></a>Cómo notificar un problema
 
-La mejor opción para notificar un problema de Visual Studio para Mac es iniciar el informe en Visual Studio para Mac. La generación de informes mediante Visual Studio para Mac permite incluir información de diagnóstico automáticamente en el informe. Si no puede usar Visual Studio para Mac (debido a un bloqueo, por ejemplo), puede notificar el problema directamente en el sitio de la [Comunidad de desarrolladores](https://developercommunity.visualstudio.com/content/problem/post.html?space=41).
+La mejor opción para notificar un problema de Visual Studio para Mac es iniciar el informe en Visual Studio para Mac. La generación de informes mediante Visual Studio para Mac permite incluir información de diagnóstico automáticamente en el informe. Si no puede usar Visual Studio para Mac (debido a un bloqueo, por ejemplo), puede notificar el problema directamente en el sitio de la [Comunidad de desarrolladores](https://aka.ms/feedback/report?space=41).
 
 Para notificar un problema con Visual Studio para Mac, seleccione **Ayuda > Notificar un problema** desde la barra de menús:
 
@@ -44,7 +44,7 @@ Para notificar un problema con Visual Studio para Mac, seleccione **Ayuda > Noti
 1. Si no encuentra el problema que ha detectado, haga clic en **Informar de un problema nuevo** en el lateral de la pantalla.
 
    > [!NOTE]
-   > El botón **Informar de un problema nuevo** solo aparece en la interfaz de Visual Studio para Mac correspondiente a la Comunidad de desarrolladores. No se puede notificar un problema directamente en el sitio web de la [Comunidad de desarrolladores](https://developercommunity.visualstudio.com/).
+   > El botón **Informar de un problema nuevo** solo aparece en la interfaz de Visual Studio para Mac correspondiente a la Comunidad de desarrolladores. No se puede notificar un problema directamente en el sitio web de la [Comunidad de desarrolladores](https://aka.ms/feedback/report?space=41/).
 
 1. Asigne un título descriptivo al problema que nos ayude a dirigirlo al equipo de Visual Studio para Mac correcto.
 
@@ -62,9 +62,9 @@ Para notificar un problema con Visual Studio para Mac, seleccione **Ayuda > Noti
 
 ## <a name="search-for-solutions-or-provide-feedback"></a>Búsqueda de soluciones o envío de comentarios
 
-Si no quiere o no puede notificar un problema mediante Visual Studio para Mac, es posible que ese problema ya se haya notificado y que se haya publicado una solución en la página [Comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/).
+Si no quiere o no puede notificar un problema mediante Visual Studio para Mac, es posible que ese problema ya se haya notificado y que se haya publicado una solución en la página [Comunidad de desarrolladores de Visual Studio](https://aka.ms/feedback/report?space=41/).
 
-Si no tiene ningún problema que notificar pero quiere sugerir una característica, también hay un lugar para eso. Para obtener más información, vea la página [Sugerir una característica](https://developercommunity.visualstudio.com/content/idea/post.html?space=41).
+Si no tiene ningún problema que notificar pero quiere sugerir una característica, también hay un lugar para eso. Para obtener más información, vea la página [Sugerir una característica](https://aka.ms/feedback/suggest?space=41).
 
 ## <a name="see-also"></a>Vea también
 

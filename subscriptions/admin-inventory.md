@@ -7,12 +7,12 @@ ms.assetid: 7d74e113-8fb2-490e-8502-48cce7b1327a
 ms.date: 01/14/2021
 ms.topic: conceptual
 description: Obtenga información sobre la responsabilidad de los administradores de realizar inventarios de preproducción
-ms.openlocfilehash: abcb3c8c1213885b5e543b05cf912c418acaa3f5
-ms.sourcegitcommit: 4ee20054afe7bcf5c0aed504dec01e18059fbbd0
+ms.openlocfilehash: da8146b9f7d2b758ac2d249534d43bd98beae385
+ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98226492"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99511311"
 ---
 # <a name="inventory-of-pre-production-environment"></a>Inventario de entorno de preproducción
 Las suscripciones de Visual Studio simplifican la administración de activos realizando un recuento de los usuarios en lugar de los dispositivos.
@@ -30,7 +30,7 @@ Estas son algunas maneras de simplificar el inventariado del entorno de preprodu
 
 ## <a name="resources"></a>Recursos
 - [Notas sobre la concesión de licencias de Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
-- [Soporte técnico para suscripciones y administración de Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
+- [Soporte técnico para suscripciones de Visual Studio](https://my.visualstudio.com/gethelp)
 - [Términos de las licencias por volumen](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
 ## <a name="see-also"></a>Consulte también

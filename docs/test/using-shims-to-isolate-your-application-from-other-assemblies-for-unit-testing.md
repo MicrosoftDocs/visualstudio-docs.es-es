@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 0ce89246d227d747fee2d3a02484855257f016f8
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: f15af6958c7f5855b5005fc0a6aa4c821346ccb5
+ms.sourcegitcommit: e262f4c2a147c3fa2d27de666aae3a0497317867
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598216"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "100006396"
 ---
 # <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>Uso de correcciones de compatibilidad (shim) para aislar la aplicación para pruebas unitarias
 
@@ -30,7 +30,7 @@ Para obtener una visión general y una guía de inicio rápido, vea [Aislar el c
 - Visual Studio Enterprise
 - Un proyecto de .NET Framework
 ::: moniker range=">=vs-2019"
-- La compatibilidad con proyectos de estilo SDK y .NET Core, que se encontraba en versión preliminar en Visual Studio 2019 Update 6, ya está habilitada de forma predeterminada en Update 8. Para obtener más información, vea [Microsoft Fakes para .NET Core y proyectos de tipo SDK](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects).
+- La compatibilidad con proyectos de estilo .NET Core, .NET 5.0 y SDK, que se encontraba en versión preliminar en Visual Studio 2019 Update 6, ya está habilitada de forma predeterminada en Update 8. Para obtener más información, vea [Microsoft Fakes para .NET Core y proyectos de tipo SDK](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects).
 ::: moniker-end
 
 ## <a name="example-the-y2k-bug"></a>Ejemplo: El error Y2K
@@ -71,7 +71,7 @@ Primero, agregue un ensamblado de Fakes:
 1. En el **Explorador de soluciones**: 
     - Para un proyecto de .NET Framework anterior (que no sea de estilo SDK), expanda el nodo **Referencias** del proyecto de pruebas unitarias.
     ::: moniker range=">=vs-2019"
-    - Para un proyecto de estilo SDK que tenga como destino .NET Framework o .NET Core, expanda el nodo **Dependencias** para buscar el ensamblado que desea imitar en **Ensamblados**, **Proyectos** o **Paquetes**.
+    - Para un proyecto de estilo SDK que tenga como destino .NET Framework, .NET Core o .NET 5.0, expanda el nodo **Dependencias** para buscar el ensamblado que quiere imitar en **Ensamblados**, **Proyectos** o **Paquetes**.
     ::: moniker-end
     - Si está trabajando en Visual Basic, seleccione **Mostrar todos los archivos** en la barra de herramientas del **Explorador de soluciones** para ver el nodo **Referencias**.
 
@@ -524,7 +524,7 @@ System.Fakes.ShimEnvironment.GetCommandLineArgsGet = ...
 
 ## <a name="limitations"></a>Limitaciones
 
-Las correcciones de compatibilidad (shim) no se pueden usar en todos los tipos de las bibliotecas de clases base de .NET **mscorlib** y **System** en .NET Framework, y en **System.Runtime**, en .NET Core.
+Las correcciones de compatibilidad (shim) no se pueden usar en todos los tipos de las bibliotecas de clases base de .NET **mscorlib** y **System** en .NET Framework, y en **System.Runtime** en .NET Core o .NET 5.0.
 
 ## <a name="see-also"></a>Vea también
 

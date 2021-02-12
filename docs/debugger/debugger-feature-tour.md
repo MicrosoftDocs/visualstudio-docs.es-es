@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c763d706-3213-494f-b4d2-990b6e1ec456
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c6d451735042374f0e3c6fb2154cd54520a069fc
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: 5bfa190f3bbc2a4f8b34d42d62b0ccc9b293674a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97761438"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873137"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Primer vistazo al depurador de Visual Studio
 
@@ -93,7 +93,7 @@ Este comando reanuda la ejecución de la aplicación (y hace avanzar el depurado
 
 ## <a name="run-to-cursor"></a>Ejecutar hasta el cursor
 
-Cuando edite código (en lugar de estar en pausa en el depurador), haga clic con el botón derecho en una línea de código de la aplicación y elija **Ejecutar hasta el cursor**. Este comando inicia la depuración y establece un punto de interrupción temporal en la línea de código actual.
+Cuando edite código (en lugar de estar en pausa en el depurador), haga clic con el botón derecho en una línea de código de la aplicación y elija **Ejecutar hasta el cursor** (o presione **CTRL**+**F10**). Este comando inicia la depuración y establece un punto de interrupción temporal en la línea de código actual.
 
 ![Ejecutar hasta el cursor](../debugger/media/dbg-tour-run-to-cursor.png "Ejecutar hasta el cursor")
 
@@ -108,7 +108,7 @@ Este comando resulta útil cuando se edita código y se quiere establecer rápid
 
 ## <a name="restart-your-app-quickly"></a>Reiniciar la aplicación rápidamente
 
-Haga clic en el botón **Reiniciar** ![Reiniciar aplicación](../debugger/media/dbg-tour-restart.png "Reiniciar aplicación") de la barra de herramientas de depuración (**Ctrl+Mayús+F5**).
+Haga clic en el botón **Reiniciar** ![Reiniciar aplicación](../debugger/media/dbg-tour-restart.png "Reiniciar aplicación") de la barra de herramientas de depuración (o presione **CTRL+Mayús+F5**).
 
 El botón **Reiniciar** permite ahorrar tiempo, ya que hace que no sea necesario detener la aplicación y reiniciar el depurador. El depurador se detiene en el primer punto de interrupción que se alcanza al ejecutar el código.
 

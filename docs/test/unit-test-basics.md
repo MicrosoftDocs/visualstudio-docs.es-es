@@ -8,15 +8,15 @@ f1_keywords:
 - vs.UnitTest.CreateUnitTest
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5660d67ac2c8c3bff589c34dd4303d36a3e20cff
-ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
+ms.openlocfilehash: 755affbf52aa31539b35af4520f5a8d17254f776
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "97833317"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962735"
 ---
 # <a name="unit-test-basics"></a>Conceptos básicos de las pruebas unitarias
 
@@ -236,7 +236,7 @@ public void My_Test ()
 
 ## <a name="run-tests-in-test-explorer"></a>Ejecutar pruebas en Explorador de pruebas
 
-Al compilar el proyecto de prueba, las pruebas aparecen en el **Explorador de pruebas**. Si el **Explorador de pruebas** no está visible, elija **Prueba** en el menú de Visual Studio, elija **Ventanas** y, después, **Explorador de pruebas**.
+Al compilar el proyecto de prueba, las pruebas aparecen en el **Explorador de pruebas**. Si el **Explorador de pruebas** no está visible, elija **Prueba** en el menú de Visual Studio, **Ventanas** y, después, **Explorador de pruebas** (o presione **CTRL** + **E**, **T**).
 
 ::: moniker range="vs-2017"
 ![Explorador de pruebas unitarias](../test/media/ute_failedpassednotrunsummary.png)
@@ -260,7 +260,7 @@ La barra de herramientas del **Explorador de pruebas** le ayuda a detectar, orga
 ![Ejecutar pruebas desde la barra de herramientas del Explorador de pruebas](../test/media/vs-2019/test-explorer-toolbar-diagram-16-2.png)
 ::: moniker-end
 
-Se puede elegir **Ejecutar todas** para ejecutar todas las pruebas o bien **Ejecutar** para elegir un subconjunto de pruebas que se desea ejecutar. Seleccione una prueba para ver sus detalles correspondientes en el panel Detalles de la prueba. Seleccione **Abrir prueba** en el menú contextual (teclado: **F12**) para mostrar el código fuente de la prueba seleccionada.
+Puede elegir **Ejecutar todas** para ejecutar todas las pruebas (o presione **CTRL** + **R**, **V**), o bien **Ejecutar** para seleccionar el subconjunto de pruebas que quiere ejecutar (**CTRL** + **R**, **T**). Seleccione una prueba para ver sus detalles correspondientes en el panel Detalles de la prueba. Seleccione **Abrir prueba** en el menú contextual (teclado: **F12**) para mostrar el código fuente de la prueba seleccionada.
 
 ::: moniker range="vs-2017"
 

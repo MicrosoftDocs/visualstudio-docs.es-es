@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
-ms.date: 10/21/2020
+ms.date: 02/04/2021
 ms.topic: conceptual
 description: Preguntas sobre facturación para suscripciones de nube.
-ms.openlocfilehash: 0140a6250f2c04ad33fec962283e035393a03aae
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: a812965a549f2e6e6d6c58366d943f3129d951cd
+ms.sourcegitcommit: 55bc9df751a21656de8cc5b6dbd8a2a1915ec690
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353426"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99572881"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Preguntas más frecuentes sobre facturación relativas a suscripciones de nube de Visual Studio
 [Coteje los precios y ventajas de las distintas suscripciones de nube](https://visualstudio.microsoft.com/vs/pricing/) para conocer las ventajas de cada suscripción de Visual Studio; compare las suscripciones de nube con las suscripciones estándar de Visual Studio y estudie los detalles de las ventajas de suscriptor, entre otras muchas cosas.
@@ -29,6 +29,9 @@ No se pueden usar algunos tipos de suscripciones de Azure, incluida la [evaluaci
 ### <a name="q-am-i-required-to-buy-other-azure-services"></a>P: ¿Es necesario adquirir otros servicios de Azure?
 R: No, en absoluto. Si solamente quiere adquirir suscripciones de nube de Visual Studio a través de Azure, puede hacerlo.
 
+### <a name="q-where-can-i-view-my-billing-and-usage-data"></a>P: ¿Dónde puedo ver los datos de facturación y de uso?
+R:  Obtenga información sobre cómo [ver la factura y el uso](https://docs.microsoft.com/azure/cost-management-billing/manage/download-azure-invoice-daily-usage-date).
+
 ## <a name="enterprise-agreement-ea-customers"></a>Clientes de Contrato Enterprise
 ### <a name="q-can-i-use-an-enterprise-agreement-to-buy-visual-studio-cloud-subscriptions"></a>P: ¿Puedo usar un Contrato Enterprise para adquirir suscripciones de nube de Visual Studio?
 R: Sí, puede hacerlo. Deberá ser colaborador o tener un rol superior en una suscripción de Azure que se creó para EA. Asegúrese de realizar cualquier compra relacionada con las suscripciones de nube de Visual Studio directamente en Visual Studio Marketplace. No se pueden adquirir suscripciones de nube de Visual Studio con un pedido de compra.
@@ -44,13 +47,13 @@ Otro método consiste en intentar tener acceso a [Azure Enterprise Portal](https
 R: No, estos fondos de prepago no son aptos para adquirir suscripciones de nube de Visual Studio. Cuando se usa una suscripción de Azure creada para un Contrato Enterprise para comprar suscripciones de nube de Visual Studio, estos cargos aparecerán reflejados en su próxima factura de uso por encima del límite. Esto suele suceder mensualmente, pero según la experiencia previa de algunos clientes de Contrato Enterprise, es posible que no se emita una factura de uso por encima del límite durante varios meses. Acuda a un especialista en licencias de Contrato Enterprise si necesita saber qué cantidad de compras extra (compras que no son viables con el crédito del compromiso monetario de Azure) van a desembocar en una factura de uso por encima del límite.
 
 ## <a name="how-charges-are-processed"></a>Cómo se procesan los cargos
-### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>P: ¿Cómo se procesan los cargos de las suscripciones de nube **mensuales** ?
+### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>P: ¿Cómo se procesan los cargos de las suscripciones de nube **mensuales**?
 R: En la primera compra, facturaremos una cantidad prorrateada para cubrir los días restantes del mes actual. Por ejemplo, si se compran 10 suscripciones de nube mensuales de Visual Studio Professional el 15 de abril, cobraríamos solo cinco unidades, porque sigue quedando por delante el 50 % del mes en curso (15 días de un mes de 30 días).
 A partir del 1 de mayo, y así cada mes en adelante hasta que se cancele, se facturarán las 10 unidades por completo.
 
 Si, más adelante, la cantidad de pago se incrementa, también prorratearemos la diferencia en las unidades para cubrir los días restantes del mes en curso. Así, si el 10 de mayo se adquiere una suscripción de nube de Visual Studio Professional mensual más, facturaríamos aproximadamente 0,677 unidades (21 días restantes del mes de mayo, que tiene 31 días).
 
-### <a name="q-how-are-annual-cloud-subscription-charges-processed"></a>P: ¿Cómo se procesan los cargos de las suscripciones de nube **anuales** ?
+### <a name="q-how-are-annual-cloud-subscription-charges-processed"></a>P: ¿Cómo se procesan los cargos de las suscripciones de nube **anuales**?
 R: En cada compra, facturaremos inmediatamente la cantidad total adquirida. Los cargos no se distribuyen a lo largo del año y no hay ningún prorrateo. Si se adquieren suscripciones de nube anuales en distintos momentos del año, tendrá suscripciones que se renueven en distintos meses. En este sentido, no consideramos que todas las suscripciones de nube anuales de un cliente sean inseparables, como suele suceder con las adquisiciones de contratos de licencias por volumen de Microsoft.
 
 ### <a name="q-how-do-cancelations-work"></a>P: ¿Cómo funcionan las cancelaciones?

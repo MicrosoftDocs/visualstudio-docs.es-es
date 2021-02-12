@@ -26,15 +26,15 @@ helpviewer_keywords:
 ms.assetid: 1105e169-5272-4e7c-b3e7-cda1b7798a6b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: eceffab5b8c179734b1abb5f1005c240912115f1
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 496994c0f9d546efe8804481230081090309d47e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "89599594"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903571"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Definición de archivos de código fuente y símbolos (.pdb) en el depurador de Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -218,7 +218,7 @@ Durante la depuración, la ventana **Módulos** muestra los módulos de código 
 
 **Para supervisar o cambiar ubicaciones de símbolos u opciones de símbolo durante la depuración:**
 
-1. Para abrir la ventana **Módulos**, seleccione **Depurar** > **Ventanas** > **Módulos** durante la depuración.
+1. Para abrir la ventana **Módulos** mientras realiza la depuración, seleccione **Depurar** > **Ventanas** > **Módulos** (o bien, presione **CTRL** + **Alt** + **U**).
 1. En la ventana **Módulos**, haga clic con el botón derecho en los encabezados **Estado del símbolo** o **Archivo de símbolo** o en cualquier módulo.
 1. En el menú contextual, seleccione una de las siguientes opciones:
 

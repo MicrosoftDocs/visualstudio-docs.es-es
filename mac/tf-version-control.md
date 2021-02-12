@@ -7,12 +7,12 @@ ms.date: 09/02/2019
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
 ms.topic: troubleshooting
-ms.openlocfilehash: 0808f86f8571210a9048faf2e825b483120e73ca
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 11b0788317cd0a20dd27159aa241db32e3818daf
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584209"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722131"
 ---
 # <a name="does-visual-studio-for-mac-support-team-foundation-version-control"></a>¿Es compatible Visual Studio para Mac con Control de versiones de Team Foundation?
 
@@ -68,7 +68,7 @@ Para **instalar la TEE-CLC manualmente**:
 
 Una vez instalada la TEE-CLC, puede ejecutar el comando `tf eula` para ver y aceptar el contrato de licencia del cliente.
 
-Por último, para autenticarse en su entorno de TFS/Azure DevOps, deberá crear un token de acceso personal en el servidor. Obtenga más información sobre la [autenticación con tokens de acceso personal](/azure/devops/integrate/get-started/authentication/pats?view=azure-devops). Al crear un token de acceso personal para usarlo con TFVC, asegúrese de proporcionar acceso total al configurar el token.
+Por último, para autenticarse en su entorno de TFS/Azure DevOps, deberá crear un token de acceso personal en el servidor. Obtenga más información sobre la [autenticación con tokens de acceso personal](/azure/devops/integrate/get-started/authentication/pats?view=azure-devops&preserve-view=true). Al crear un token de acceso personal para usarlo con TFVC, asegúrese de proporcionar acceso total al configurar el token.
 
 #### <a name="using-the-tee-clc-to-connect-to-your-repo"></a>Uso de la TEE-CLC para conectarse a su repositorio
 

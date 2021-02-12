@@ -5,19 +5,19 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: eeb7b981dcaec97d52c24ea40476f0bec84e608e
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 7d5e4d8fb598434bfaa2a8a699c546cdc84febb0
+ms.sourcegitcommit: e262f4c2a147c3fa2d27de666aae3a0497317867
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598567"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "100006432"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Usar código auxiliar para aislar partes de la aplicación entre sí para las pruebas unitarias
 
@@ -152,7 +152,7 @@ Para utilizar código auxiliar, primero debe generar tipos de código auxiliar a
 1. En el **Explorador de soluciones**: 
     - Para un proyecto de .NET Framework anterior (que no sea de estilo SDK), expanda el nodo **Referencias** del proyecto de pruebas unitarias.
     ::: moniker range=">=vs-2019"
-    - Para un proyecto de estilo SDK que tenga como destino .NET Framework o .NET Core, expanda el nodo **Dependencias** para buscar el ensamblado que desea imitar en **Ensamblados**, **Proyectos** o **Paquetes**.
+    - Para un proyecto de estilo SDK que tenga como destino .NET Framework, .NET Core o .NET 5.0, expanda el nodo **Dependencias** para buscar el ensamblado que quiere imitar en **Ensamblados**, **Proyectos** o **Paquetes**.
     ::: moniker-end
     - Si está trabajando en Visual Basic, seleccione **Mostrar todos los archivos** en la barra de herramientas del **Explorador de soluciones** para ver el nodo **Referencias**.
 

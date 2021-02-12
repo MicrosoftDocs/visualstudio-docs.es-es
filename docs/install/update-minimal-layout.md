@@ -7,17 +7,17 @@ ms.topic: how-to
 ms.assetid: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2b9c86c17b89258145613e867ba6a91b2219fe0d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 199771b1cda2049d6508832d7d2264558104a566
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88168754"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935708"
 ---
 # <a name="update-visual-studio-using-a-minimal-offline-layout"></a>Actualización de Visual Studio con un diseño sin conexión mínimo
 
@@ -67,6 +67,8 @@ Esta herramienta permite crear diseños de actualización para Visual Studio 2
 * **Comprobar**: use este comando para determinar si la carpeta de diseño está dañada.
 * **Corregir**: use este comando para corregir una carpeta de diseño dañada, lo cual incluye el reemplazo de los paquetes que falten en la carpeta del diseño.
 
+::: moniker range="vs-2019"
+
 #### <a name="options"></a>Opciones 
 
 |Opciones    |Descripción    |Obligatorio/opcional |Ejemplo |
@@ -81,6 +83,26 @@ Esta herramienta permite crear diseños de actualización para Visual Studio 2
 |--includeRecommended    |incluye los componentes recomendados para cualquier carga de trabajo que se instale, pero no los componentes recomendados.    |Optional    |Para una carga de trabajo específica: <br> --add Microsoft.VisualStudio.Workload. ManagedDesktop;includeRecommended <br><br> Para la aplicación a todas las cargas de trabajo: --includeRecommended |
 |--includeOptional |Incluye los componentes opcionales para cualquier carga de trabajo que se instale, pero no los componentes recomendados.    |Optional    |Para una carga de trabajo específica: <br>--add Microsoft.VisualStudio.Workload. ManagedDesktop;includeOptional <br><br> Para la aplicación a todas las cargas de trabajo: --includeOptional |
 
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+#### <a name="options"></a>Opciones 
+
+|Opciones    |Descripción    |Obligatorio/opcional |Ejemplo |
+|:----------|:-----------|:------------|:--------------|
+|--targetLocation &lt;dir&gt; |Especifica un directorio en el que se creará un diseño sin conexión mínimo.       |Obligatorio        |--targetLocation c:\VSLayout\ |
+|--baseVersion &lt;version&gt;|El diseño mínimo sin conexión se generará a partir de esta versión.   |Obligatorio|--baseVersion 15.0.0 |
+|--targetVersion &lt;version&gt;|El diseño mínimo sin conexión se generará hasta esta versión (incluida).|Obligatorio|--targetVersion 15.9.31|
+|--languages    |Especifica los idiomas que se incluirán en el diseño mínimo sin conexión. Se pueden especificar varios valores separados por espacios.    |Obligatorio    |--languages en-US fr-FR |
+|--productId &lt;id&gt;    |Identificador del producto a partir del que se generará el diseño mínimo sin conexión. <br> <ul><li>Microsoft.VisualStudio.Product.Enterprise</li><li>Microsoft.VisualStudio.Product.Professional</li><li>Microsoft.VisualStudio.Product.BuildTools</li><li>Microsoft.VisualStudio.Product.TestAgent</li><li>Microsoft.VisualStudio.Product.TestController</li><li>Microsoft.VisualStudio.Product.TeamExplorer</li></ul>|Obligatorio|--productId Microsoft.VisualStudio.Product.Enterprise |
+|--filePath    |Ruta de acceso del archivo MinimalLayout.json de un diseño ya creado. Esta opción solo se utiliza con el comando Regenerar.     |Obligatorio para el comando Regenerar    |--filePath C:\VSLayout\minimalLayout.json <br><br> **Tenga en cuenta que el comando Regenerar solo toma --filePath como opción.** |
+|--add &lt;(al menos un id. de componente o carga de trabajo)&gt;    |Especifica al menos un identificador de componente o carga de trabajo para agregar. Puede agregar componentes adicionales de forma global usando --includeRecommended o <br> --includeOptional. Se pueden especificar varios id. de componente o carga de trabajo separados por un espacio.    |Optional    |--add Microsoft.VisualStudio.Workload.ManagedDesktop Microsoft.VisualStudio.Workload.NetWeb Component.GitHub.VisualStudio |
+|--includeRecommended    |incluye los componentes recomendados para cualquier carga de trabajo que se instale, pero no los componentes recomendados.    |Optional    |Para una carga de trabajo específica: <br> --add Microsoft.VisualStudio.Workload. ManagedDesktop;includeRecommended <br><br> Para la aplicación a todas las cargas de trabajo: --includeRecommended |
+|--includeOptional |Incluye los componentes opcionales para cualquier carga de trabajo que se instale, pero no los componentes recomendados.    |Optional    |Para una carga de trabajo específica: <br>--add Microsoft.VisualStudio.Workload. ManagedDesktop;includeOptional <br><br> Para la aplicación a todas las cargas de trabajo: --includeOptional |
+
+::: moniker-end
+
 ### <a name="generating-a-minimal-layout"></a>Generación de un diseño mínimo
 
 > [!IMPORTANT]
@@ -91,6 +113,8 @@ Cree un diseño mínimo para el intervalo de versiones especificado mediante el 
 Antes de crear el diseño, puede averiguar el tamaño total de la descarga y el número de paquetes incluidos mediante el comando **Vista previa**. Este comando toma las mismas opciones que el comando **Regenerar**, y los detalles se escriben en la consola.
 
 Veamos algunos ejemplos de cómo obtener una vista previa de un diseño mínimo, además de cómo generarlo y volver a generarlo:
+
+::: moniker range="vs-2019"
 
 - En primer lugar, a continuación se muestra un ejemplo de cómo obtener una vista previa de un diseño para Visual Studio Enterprise en las versiones de 16.4.0 a 16.4.4 (solo para inglés).
 
@@ -123,6 +147,44 @@ Un par de otros ejemplos usando el comando **Regenerar**:
     ```cmd
     MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 16.4.0 --targetVersion 16.4.4 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US fr-FR
     ```
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+- En primer lugar, a continuación se muestra un ejemplo de cómo obtener una vista previa de un diseño para Visual Studio Enterprise en las versiones de 15.0.0 a 15.9.31 (solo para inglés).
+
+    ```cmd
+    MinimalLayout.exe preview --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 15.0.0 --targetVersion 15.9.31 --languages en-US
+    ```
+
+- Aquí se muestra cómo generar el mismo diseño con una carga de trabajo.
+
+    ```cmd
+    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 15.0.0 --targetVersion 15.9.31 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US
+    ```
+
+- Y aquí se muestra cómo volver a generar un diseño sin conexión mínimo mediante un archivo de respuesta existente. 
+
+    ```cmd
+    MinimalLayout.exe regenerate -filepath c:\VSLayout\MinimalLayout.json
+    ```
+
+Un par de otros ejemplos usando el comando **Regenerar**:
+
+- Aquí se muestra cómo agregar una carga de trabajo adicional e incluir solo los paquetes recomendados. 
+
+    ```cmd
+    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Professional --baseVersion 15.0.0 --targetVersion 15.9.31 --add Microsoft.VisualStudio.Workload.ManagedDesktop Microsoft.VisualStudio.Workload.NetWeb;includeRecommended --languages en-US
+    ```
+
+- Y, por último, aquí se muestra cómo incluir varios idiomas en el diseño mínimo. 
+
+    ```cmd
+    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 15.0.0 --targetVersion 15.9.31 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US fr-FR
+    ```
+
+::: moniker-end
 
 ### <a name="how-to-maintain-a-minimal-layout"></a>Procedimiento para mantener un diseño mínimo
 
@@ -180,7 +242,7 @@ La actualización se aplica a una instancia de Visual Studio en dos pasos. Empi
 
 ## <a name="see-also"></a>Vea también
 
-* [Instalar Visual Studio](install-visual-studio.md)
+* [Instalación de Visual Studio](install-visual-studio.md)
 * [Guía del administrador de Visual Studio](visual-studio-administrator-guide.md)
 * [Usar parámetros de la línea de comandos para instalar Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Herramientas para detectar y administrar instancias de Visual Studio](tools-for-managing-visual-studio-instances.md)

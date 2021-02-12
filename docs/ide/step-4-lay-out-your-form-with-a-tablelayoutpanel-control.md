@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a0035040c3cce0c40b8462225c48aa5225b40d1
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 06918ccdefdd18109b4e34c373bda75defa2a81b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036982"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950697"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Paso 4: Diseñar un formulario con un control TableLayoutPanel
 
@@ -30,12 +30,12 @@ En este paso, agregará un control <xref:System.Windows.Forms.TableLayoutPanel> 
 1. Seleccione el símbolo del triángulo pequeño que se encuentra junto al grupo **Contenedores** para abrirlo, como se muestra en la captura de pantalla siguiente.
 
      ![Grupo de contenedores](../ide/media/express_toolbox.png)<br>
-***Grupo de *** *contenedores*
+*Grupo de **contenedores** _ _*
 
 1. Puede agregar controles como botones, casillas y etiquetas al formulario. Haga doble clic en el control TableLayoutPanel del **cuadro de herramientas**. (También puede arrastrar el control desde el Cuadro de herramientas hasta el formulario). Al hacerlo, el IDE agrega un control TableLayoutPanel al formulario, como se muestra en la captura de pantalla siguiente.
 
      ![Control TableLayoutPanel](../ide/media/express_formtablelayout.png)<br>
-***Control *** *TableLayoutPanel*
+*Control **TableLayoutPanel** _ _*
 
     > [!NOTE]
     > Si, después de agregar el control TableLayoutPanel, aparece una ventana dentro del formulario con el título **Tareas de TableLayoutPanel**, haga clic en cualquier parte del formulario para cerrarla. Más adelante en el tutorial obtendrá más información sobre esta ventana.
@@ -43,12 +43,12 @@ En este paso, agregará un control <xref:System.Windows.Forms.TableLayoutPanel> 
      Observe que el **cuadro de herramientas** se expande para abarcar el formulario cuando se elige su pestaña, y se cierra cuando se hace clic fuera de él. Se trata de la característica Ocultar automáticamente del IDE. Puede activarla o desactivarla en cualquiera de las ventanas si selecciona la chincheta de la esquina superior derecha de la ventana para alternar Ocultar automáticamente y dejarlo bloqueado. El icono del pin tiene este aspecto.
 
      ![Icono de pin](../ide/media/express_pushpintoolbox.png)<br>
-***Icono de *** *pin*
+*Icono de **pin** _ _*
 
 1. Pulse TableLayoutPanel para asegurarse de que está seleccionado. Puede comprobar qué control está seleccionado si examina la lista desplegable de la parte superior de la ventana **Propiedades**, como se muestra en la captura de pantalla siguiente.
 
      ![Ventana Propiedades mostrando el control TableLayoutPanel](../ide/media/express_controlspropwin.png)<br>
-***Ventana Propiedades*** * mostrando el* ***control *** *TableLayoutPanel*
+*Ventana **Propiedades** _ _con* el control ***TableLayoutPanel**_ _*
 
 1. Pulse el botón **Alfabético** en la barra de herramientas de la ventana **Propiedades**. Esto ordena la lista de propiedades de la ventana **Propiedades** en orden alfabético, lo que facilita la localización de propiedades en este tutorial.
 
@@ -57,7 +57,7 @@ En este paso, agregará un control <xref:System.Windows.Forms.TableLayoutPanel> 
    Ahora que TableLayoutPanel está seleccionado, busque la propiedad **Dock** y elija **Dock**, que debería estar establecida en **None**. Observe que aparece una flecha de lista desplegable al lado del valor. Seleccione la flecha y, después, seleccione el botón **Rellenar** (el botón grande del centro), como se muestra en la captura de pantalla siguiente.
 
      ![Ventana Propiedades con la opción Rellenar seleccionada](../ide/media/express_docktable.png)<br>
-***Ventana Propiedades*** * con la opción* ***Rellenar*** * seleccionada*
+*Ventana **Propiedades** _ _con* *la opción **Rellenar**_ _seleccionada*
 
      *Acoplar* en Visual Studio hace referencia a cuando una ventana está asociada a otra ventana o área en el IDE. Por ejemplo, la ventana **Propiedades** puede estar desacoplada, es decir, estar desasociada y flotar libremente en Visual Studio, o puede estar acoplada en el **Explorador de soluciones**.
 
@@ -69,26 +69,26 @@ En este paso, agregará un control <xref:System.Windows.Forms.TableLayoutPanel> 
 1. Actualmente, TableLayoutPanel tiene dos filas del mismo tamaño y dos columnas del mismo tamaño. Se cambiarán de tamaño para que la fila superior y la columna derecha sean mucho mayores. En el **Diseñador de Windows Forms**, seleccione TableLayoutPanel. En la esquina superior derecha, hay un botoncito triangular de color negro, con el siguiente aspecto.
 
      ![Botón Triángulo](../ide/media/express_iconblacktriangle.gif)<br>
-***Botón *** *Triángulo*
+*Botón **Triángulo** _ _*
 
      Este botón indica que el control tiene tareas que le ayudan a establecer sus propiedades automáticamente.
 
 1. Elija el triángulo para mostrar la lista de tareas del control, como se muestra en la captura de pantalla siguiente.
 
      ![Tareas de TableLayoutPanel](../ide/media/express_tablepanel.png)<br>
-***Tareas de *** *TableLayoutPanel*
+*Tareas de **TableLayoutPanel** _ _*
 
 1. Pulse la tarea **Editar filas y columnas** para abrir la ventana **Estilos de columna y fila**. Elija **Column1** y establezca su tamaño en el 15 por ciento; para ello, asegúrese de que el botón **Porcentaje** está seleccionado y escriba **15** en el cuadro **Porcentaje**. (Se trata de un control <xref:System.Windows.Forms.NumericUpDown>, que usará en un tutorial posterior). Pulse **Column2** y establézcala en el 85 por ciento. No pulse todavía el botón **Aceptar**, ya que se cerraría la ventana. (Si lo hace, puede volver a abrirla mediante la lista de tareas).
 
      ![Estilos de columna y fila de TableLayoutPanel](../ide/media/vs_tablelayoutpanel_setup.png)<br>
-***Estilos de columna y fila de*** *TableLayoutPanel*
+*Estilos de columna y fila de **TableLayoutPanel** _ _*
 
 1. En la lista desplegable **Mostrar** de la parte superior de la ventana **Estilos de columna y fila**, seleccione **Filas**. Establezca **Row1** en el 90 por ciento y **Row2** en el 10 por ciento.
 
 1. Elija el botón **Aceptar** . TableLayoutPanel debería tener ahora una fila superior grande, una fila inferior pequeña, una columna izquierda pequeña y una columna derecha grande. (Puede cambiar el tamaño de las filas y columnas de TableLayoutPanel si elige **tableLayoutPanel1** en el formulario y arrastra sus bordes de fila y columna).
 
      ![Form1 con TableLayoutPanel cambiado de tamaño](../ide/media/vs_formafterlayoutpanel.png)<br>
-***Form1 (visor de imágenes) con *** *TableLayoutPanel* ***cambiado de tamaño***
+***Form1** _ _(visor de imágenes) con* ***TableLayoutPanel*** cambiado de tamaño
 
 ## <a name="next-steps"></a>Pasos siguientes
 

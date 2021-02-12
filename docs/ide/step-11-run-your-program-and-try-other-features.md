@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f7ac5967d13aa6572b36989150561363555a9705
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 1a4488c212cabe95d73f75246fb297c17ce073b4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809203"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950905"
 ---
 # <a name="step-11-run-your-picture-viewer-app-and-try-other-features"></a>Paso 11: Ejecutar el visor de imágenes y probar otras características
 
@@ -30,7 +30,7 @@ La aplicación de visor de imágenes está finalizada y lista para ejecutarse. P
 1. Antes de abrir una imagen, pulse el botón **Establecer el color de fondo**. Se abrirá el cuadro de diálogo **Color**.
 
      ![Cuadro de diálogo Color](../ide/media/express_colordialog.png)<br/>
-*Cuadro de diálogo* ***Color***
+*Cuadro de diálogo **Color** _ _*
 
 1. Elija un color para establecer el color de fondo de PictureBox. Fíjese con atención en el método `backgroundButton_Click()` (o `BackgroundButton_Click()`) para entender cómo funciona.
 

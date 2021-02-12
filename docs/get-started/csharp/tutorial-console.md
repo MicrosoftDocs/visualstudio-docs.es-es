@@ -9,18 +9,18 @@ ms.topic: tutorial
 ms.devlang: CSharp
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 484cb82a3659e306bd4c6bd14a3133c4677160db
-ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
+ms.openlocfilehash: ff5e23a92409a3169add19c8810bec44fa4db9ad
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "97833343"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909358"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Tutorial: Creación de una aplicación de consola de C# sencilla en Visual Studio
 
@@ -49,13 +49,13 @@ Para empezar, crearemos un proyecto de aplicación de C#. En el tipo de proyecto
 2. En la barra de menús superior, elija **Archivo** > **Nuevo** > **Proyecto**.
    (Como alternativa, presione **Ctrl**+**Mayús**+**N**).
 
-3. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, expanda **C#** y elija **.NET Core**. En el panel central, elija **Aplicación de consola (.NET Core)** . Después, asigne el nombre *_Calculadora al archivo_*.
+3. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, expanda **C#** y elija **.NET Core**. En el panel central, elija **Aplicación de consola (.NET Core)** . Después, asigne al archivo el nombre **_Calculator_**.
 
    ![Plantilla de proyecto Aplicación de consola (.NET Core) en el cuadro de diálogo Nuevo proyecto en el IDE de Visual Studio](./media/new-project-csharp-calculator-console-app.png)
 
 ### <a name="add-a-workload-optional"></a>Agregar una carga de trabajo (opcional)
 
-Si no ve la plantilla de proyecto *Aplicación de consola (.NET Core)* , puede obtenerla si agrega la carga de trabajo **Desarrollo multiplataforma de .NET Core**. Esta es la manera de hacerlo.
+Si no ve la plantilla de proyecto **Aplicación de consola (.NET Core)** , puede obtenerla si agrega la carga de trabajo **Desarrollo multiplataforma de .NET Core**. Esta es la manera de hacerlo.
 
 #### <a name="option-1-use-the-new-project-dialog-box"></a>Opción 1: Uso del cuadro de diálogo Nuevo proyecto
 

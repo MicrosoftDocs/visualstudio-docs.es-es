@@ -11,16 +11,16 @@ helpviewer_keywords:
 - unit tests, running
 - unit tests, authoring
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: ed2e7f11a6e36c797bb6c506c19b0fff11fb5ad1
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 264744d7fe39c77da625c778d1bfea51f55e1f2d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598554"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948015"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Tutorial: Crear y ejecutar pruebas unitarias en código administrado
 
@@ -138,7 +138,7 @@ En este artículo se recorre paso a paso la creación, ejecución y personalizac
 
 6. Cambie el nombre del archivo a *BankAccount.cs* al hacer clic con el botón derecho y elegir **Cambiar nombre** en el **Explorador de soluciones**.
 
-7. En el menú **Compilar** , haga clic en **Compilar solución**.
+7. En el menú **Compilación**, haga clic en **Compilar solución** (o presione **CTRL** + **Mayús** + **B**).
 
 Ahora tiene un proyecto con métodos que puede probar. En este artículo, las pruebas se centran en el método `Debit`. Se llama al método `Debit` cuando se retira dinero de una cuenta.
 
@@ -187,7 +187,7 @@ Cree una clase de prueba para comprobar la clase `BankAccount`. Puede utilizar e
 
 ### <a name="rename-a-file-and-class"></a>Cambio de nombre de un archivo y una clase
 
-1. Para cambiar el nombre del archivo, en el **Explorador de soluciones**, seleccione el archivo *UnitTest1.cs* del proyecto BankTests. En el menú contextual, seleccione **Cambiar nombre** y, después, cambie el nombre del archivo a *BankAccountTests.cs*.
+1. Para cambiar el nombre del archivo, en el **Explorador de soluciones**, seleccione el archivo *UnitTest1.cs* del proyecto BankTests. En el menú contextual, seleccione **Cambiar nombre** (o presione **F2**) y cambie el nombre del archivo a *BankAccountTests.cs*.
 
 ::: moniker range="vs-2017"
 
@@ -197,7 +197,7 @@ Cree una clase de prueba para comprobar la clase `BankAccount`. Puede utilizar e
 
 ::: moniker range=">=vs-2019"
 
-2. Para cambiar el nombre de la clase, sitúe el cursor sobre `UnitTest1` en el editor de código, haga clic con el botón derecho y seleccione **Cambiar nombre**. Escriba **BankAccountTests** y presione **Entrar**.
+2. Para cambiar el nombre de la clase, sitúe el cursor sobre `UnitTest1` en el editor de código, haga clic con el botón derecho y seleccione **Cambiar nombre** (o presione **F2**). Escriba **BankAccountTests** y presione **Entrar**.
 
 ::: moniker-end
 
@@ -289,11 +289,11 @@ Un método de prueba debe cumplir los siguientes requisitos:
 
 ## <a name="build-and-run-the-test"></a>Compilar y ejecutar la prueba
 
-1. En el menú **Compilar** , elija **Compilar solución**.
+1. En el menú **Compilación**, elija **Compilar solución** (o presione **CTRL** + **Mayús** + **B**).
 
-2. Si el **Explorador de pruebas** no está abierto, ábralo al seleccionar **Prueba** > **Windows** > **Explorador de pruebas** en la barra de menús superior.
+2. Si el **Explorador de pruebas** no está abierto, seleccione **Prueba** > **Windows** > **Explorador de pruebas** en la barra de menús superior para abrirlo (o presione **CTRL** + **E**, **T**).
 
-3. Elija **Ejecutar todas** para ejecutar la prueba.
+3. Elija **Ejecutar todas** para ejecutar la prueba (o presione **CTRL** + **R**, **V**).
 
    Mientras se ejecuta la prueba, la barra de estado de la parte superior de la ventana **Explorador de pruebas** está animada. Al final de la serie de pruebas, la barra se vuelve verde si todos los métodos de prueba se completan correctamente o roja si no alguna de las prueba no lo hace.
 
@@ -323,7 +323,7 @@ m_balance -= amount;
 
 ### <a name="rerun-the-test"></a>Vuelva a ejecutar la prueba
 
-En el **Explorador de pruebas**, elija **Ejecutar todas** para volver a ejecutar la prueba. La barra de color rojo o verde se vuelve verde para indicar que se ha superado la prueba.
+En el **Explorador de pruebas**, elija **Ejecutar todas** para volver a ejecutar la prueba (o presione **CTRL** + **R**, **V**). La barra de color rojo o verde se vuelve verde para indicar que se ha superado la prueba.
 
 ![Explorador de pruebas de Visual Studio 2019 que muestra una prueba superada](media/test-explorer-banktests-passed.png)
 

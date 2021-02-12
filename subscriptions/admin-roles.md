@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 6601c395-f778-48c1-ab76-cf454b9193e4
-ms.date: 10/22/2020
+ms.date: 02/02/2021
 ms.topic: conceptual
 description: Obtenga información sobre los roles de administrador y superadministrador y sobre cómo asignar los administradores.
-ms.openlocfilehash: 491a8de27477f68b4344ad17b860b80b4ca96aa9
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 2d9abf5a3079320011cb979a8109278c878321e3
+ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92467380"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99511337"
 ---
 # <a name="super-admins-and-admins-for-visual-studio-subscription-agreements"></a>Administradores y superadministradores para contratos de suscripción de Visual Studio
 
@@ -42,13 +42,14 @@ Para asignar administradores nuevos (administradores):
 5. Cuando haga clic en **Agregar** para asignar el nuevo administrador, este recibirá un correo electrónico en el que se le invitará a iniciar sesión en el portal.  
 
 ## <a name="resources"></a>Recursos
-- [Soporte técnico para suscripciones y administración de Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
+- [Soporte técnico para suscripciones y administración de Visual Studio](https://my.visualstudio.com/gethelp)
 
 ## <a name="see-also"></a>Vea también
 - [Documentación de Visual Studio](/visualstudio/)
 - [Documentación de Azure DevOps](/azure/devops/)
 - [Documentación de Azure](/azure/)
 - [Documentación de Microsoft 365](/microsoft-365/)
+
 
 
 ## <a name="next-steps"></a>Pasos siguientes

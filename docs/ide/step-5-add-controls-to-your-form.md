@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ff3e132087b97339bc710555428ba7488fa2e06
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 58f46f80a90cce116b985def0377ef80f5a671c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480582"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950671"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>Paso 5: Agregar controles al formulario
 
@@ -45,7 +45,7 @@ En este paso, se agregan controles, como un control <xref:System.Windows.Forms.P
 
 1. Seleccione el control **TableLayoutPanel** del formulario y, después, agregue un control CheckBox al formulario. Haga doble clic en el elemento **CheckBox** del **cuadro de herramientas** para agregar un nuevo control CheckBox a la siguiente celda libre de la tabla. Como el control PictureBox ocupa las dos primeras celdas del control TableLayoutPanel, el control CheckBox se agrega en la celda inferior izquierda. Seleccione la propiedad **Text** y escriba la palabra **Stretch**, como se muestra en la imagen siguiente.
 
-    ![Control TextBox con la propiedad Stretch](../ide/media/express_pictureviewercheckbox.png)<br/>*Control *_TextBox_* _ _con la propiedad* ***Stretch**_ _*
+    ![Control TextBox con la propiedad Stretch](../ide/media/express_pictureviewercheckbox.png)<br/>*Control **TextBox** _ _con la propiedad* ***Stretch**_ _*
 
 1. Seleccione el control **TableLayoutPanel** del formulario, vaya al grupo **Contenedores** del **Cuadro de herramientas** (donde ha obtenido el control TableLayoutPanel) y haga doble clic en el elemento **FlowLayoutPanel** para agregar un nuevo control a la última celda (en la parte inferior derecha). Después, acople el control FlowLayoutPanel en TableLayoutPanel. Para ello, seleccione **Acoplar en contenedor primario** en la lista de tareas del triángulo negro de FlowLayoutPanel, o bien establezca la propiedad **Dock** de FlowLayoutPanel en **Relleno**.
 
@@ -76,7 +76,7 @@ En este paso, se agregan controles, como un control <xref:System.Windows.Forms.P
 
    Ahora, los botones deberían tener el tamaño y orden correctos. (Si los cuatro botones están seleccionados, puede cambiar las cuatro propiedades **AutoSize** al mismo tiempo). En la imagen siguiente se muestran los cuatro botones.
 
-    ![Visor de imágenes con cuatro botones](../ide/media/express_autosize.png)<br/>**_Visor de imágenes_* _ _con cuatro botones*
+    ![Visor de imágenes con cuatro botones](../ide/media/express_autosize.png)<br/>***Visor de imágenes** _ _con cuatro botones*
 
 1. Ahora vuelva a ejecutar el programa para ver los cambios.
 

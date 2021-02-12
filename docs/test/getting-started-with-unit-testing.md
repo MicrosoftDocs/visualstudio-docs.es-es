@@ -8,15 +8,15 @@ helpviewer_keywords:
 - unit testing, create unit test plans
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 31314a669815d38ed408a28e033e4943df0f75d3
-ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
+ms.openlocfilehash: c83b13b852b9ae53bd2218a62b6681478369df1b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97756661"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970522"
 ---
 # <a name="get-started-with-unit-testing"></a>Introducción a las pruebas unitarias
 
@@ -180,13 +180,13 @@ En esta sección se describe cómo crear un proyecto de prueba unitaria.
 1. Abra el [Explorador de pruebas](../test/run-unit-tests-with-test-explorer.md).
 
    ::: moniker range=">=vs-2019"
-   Para abrir el Explorador de pruebas, elija **Probar** > **Explorador de pruebas** en la barra de menús superior.
+   Para abrir el Explorador de pruebas, elija **Probar** > **Explorador de pruebas** en la barra de menús superior (o presione **CTRL** + **E**, **T**).
    ::: moniker-end
    ::: moniker range="vs-2017"
    Para abrir el Explorador de pruebas, elija **Probar** > **Windows** > **Explorador de pruebas** en la barra de menús superior.
    ::: moniker-end
 
-1. Ejecute las pruebas unitarias haciendo clic en **Ejecutar todo**.
+1. Haga clic en **Ejecutar todas** (o presione **CTRL** + **R**, **V**) para ejecutar las pruebas unitarias.
 
    ![Ejecutar pruebas unitarias en el Explorador de pruebas](media/vs-2019/test-explorer-run-all.png)
 
@@ -274,7 +274,7 @@ Para agregar un proyecto de prueba unitaria:
 
    ![Adición de código al archivo de prueba unitaria](media/vs-2019/unit-test-method.png)
 
-6. Ejecute la prueba desde el **Explorador de pruebas** o haciendo clic con el botón derecho en el código de prueba y eligiendo **Run Test(s)** (Ejecutar pruebas).
+6. Ejecute la prueba desde el **Explorador de pruebas** o haga clic con el botón derecho en el código de prueba y elija **Ejecutar pruebas** (o presione **CTRL** + **R**, **T**).
 
 ## <a name="next-steps"></a>Pasos siguientes
 

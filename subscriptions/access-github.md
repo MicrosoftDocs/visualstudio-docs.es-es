@@ -7,12 +7,12 @@ ms.assetid: 2249b32a-46d7-4e29-b543-4769c71ceda6
 ms.date: 10/22/2020
 ms.topic: conceptual
 description: Obtenga información sobre el acceso a GitHub Enterprise como parte de las suscripciones de Visual Studio
-ms.openlocfilehash: 59b665b1da7d46732f1f4e967ae2a98ec54875ff
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 7ad60b1c1a177353cad13e3dbcbc50c67b5500ac
+ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537908"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99511363"
 ---
 # <a name="visual-studio-subscriptions-with-github-enterprise"></a>Suscripciones de Visual Studio con GitHub Enterprise 
 
@@ -85,7 +85,7 @@ R:  Junto con GitHub Enterprise, recibe todas las ventajas de una suscripción e
 - Encuentre respuestas a preguntas sobre una amplia variedad de temas de GitHub en la [Ayuda de GitHub](https://help.github.com).
 - ¿Necesita ayuda?  Póngase en contacto con [Soporte técnico de GitHub](https://support.github.com/)
 - Obtenga ayuda de otros usuarios de GitHub en el [Foro de la comunidad de GitHub](https://github.community/).
-- Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación de Suscripciones de Visual Studio, póngase en contacto con [Soporte técnico de Suscripciones de Visual Studio](https://visualstudio.microsoft.com/subscriptions/support/).
+- Si necesita ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, visite nuestra página [Obtener ayuda](https://my.visualstudio.com/GetHelp).
 - ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
 - Obtenga [soporte técnico](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) para GitHub Enterprise.   
 

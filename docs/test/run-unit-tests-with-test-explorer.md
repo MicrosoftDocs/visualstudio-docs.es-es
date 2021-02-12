@@ -7,15 +7,15 @@ f1_keywords:
 - vs.unittesting.testexplorer.overview
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c992a1a4fca536f219a69b9ab629f6f602b4dfb0
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 05a850b0c88a39366805ff892fb698f637b3bbe1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150514"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836337"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Ejecutar pruebas unitarias con el Explorador de pruebas
 
@@ -34,7 +34,7 @@ Visual Studio incluye los marcos de pruebas unitarias de Microsoft para código 
 
 ## <a name="run-tests-in-test-explorer"></a>Ejecutar pruebas en Explorador de pruebas
 
-Al compilar el proyecto de prueba, las pruebas aparecen en el Explorador de pruebas. Si el Explorador de pruebas no está visible, elija **Prueba** en el menú de Visual Studio, elija **Ventanas** y, después, **Explorador de pruebas**.
+Al compilar el proyecto de prueba, las pruebas aparecen en el Explorador de pruebas. Si el Explorador de pruebas no está visible, elija **Prueba** en el menú de Visual Studio, **Ventanas** y, después, **Explorador de pruebas** (o presione **CTRL** + **E**, **T**).
 
 ::: moniker range="vs-2017"
 ![Explorador de pruebas unitarias](../test/media/ute_failedpassednotrunsummary.png)
@@ -64,11 +64,11 @@ Desde la barra de herramientas del **Explorador de pruebas** puede realizar gran
 ::: moniker range="vs-2017"
 Puede ejecutar todas las pruebas de la solución, todas las pruebas de un grupo o un conjunto de pruebas seleccionado. Realice una de las siguientes acciones:
 
-- Para ejecutar todas las pruebas de una solución, elija **Ejecutar todas**.
+- Para ejecutar todas las pruebas de una solución, elija **Ejecutar todas** (o presione **CTRL** + **R**, **V**).
 
 - Para ejecutar todas las pruebas de un grupo predeterminado, elija **Ejecutar** y el grupo en el menú.
 
-- Seleccione las pruebas individuales que quiera ejecutar, abra el menú contextual de la prueba seleccionada y seleccione **Ejecutar pruebas seleccionadas**.
+- Seleccione las pruebas individuales que quiera ejecutar, abra el menú contextual de la prueba elegida y seleccione **Ejecutar pruebas seleccionadas** (o presione **CTRL** + **R**, **T**).
 
 - Si las pruebas individuales no tienen ninguna dependencia que impida que se ejecuten en cualquier orden, active la ejecución de pruebas paralelas con el botón de alternancia ![Captura de pantalla del botón de alternancia Ejecución de pruebas paralelas en la barra de herramientas del Explorador de pruebas de Visual Studio. Cuando se selecciona este botón, las pruebas se ejecutan en paralelo.](../test/media/ute_parallelicon-small.png) en la barra de herramientas. Esto puede reducir considerablemente el tiempo necesario para ejecutar todas las pruebas.
 
@@ -77,11 +77,11 @@ Según se vayan ejecutando las pruebas, se animará la **barra de superado o no 
 ::: moniker range=">=vs-2019"
 Puede ejecutar todas las pruebas de la solución, todas las pruebas de un grupo o un conjunto de pruebas seleccionado. Realice una de las siguientes acciones:
 
-- Para ejecutar todas las pruebas de una solución, elija el icono **Ejecutar todas**.
+- Para ejecutar todas las pruebas de una solución, elija el icono **Ejecutar todas** (o presione **CTRL** + **R**, **V**).
 
 - Para ejecutar todas las pruebas de un grupo predeterminado, elija el icono **Ejecutar** y el grupo en el menú.
 
-- Seleccione las pruebas individuales que quiera ejecutar, abra el menú contextual de la prueba seleccionada y seleccione **Ejecutar pruebas seleccionadas**.
+- Seleccione las pruebas individuales que quiera ejecutar, abra el menú contextual de la prueba elegida y seleccione **Ejecutar pruebas seleccionadas** (o presione **CTRL** + **R**, **T**).
 
 - Si las pruebas individuales no tienen ninguna dependencia que impida que se ejecuten en cualquier orden, active la ejecución de pruebas paralelas en el menú de configuración de la barra de herramientas. Esto puede reducir considerablemente el tiempo necesario para ejecutar todas las pruebas.
 ::: moniker-end
@@ -130,7 +130,7 @@ Si la prueba no se supera, en el panel de detalles se mostrará también:
 
 ### <a name="view-the-source-code-of-a-test-method"></a>Ver el código fuente de un método de prueba
 
-Para mostrar el código fuente de un método de prueba en el editor de Visual Studio, seleccione la prueba y haga clic en **Abrir prueba** en el menú contextual (teclado: **F12**).
+Para mostrar el código fuente de un método de prueba en el editor de Visual Studio, seleccione la prueba y haga clic en **Abrir prueba** en el menú contextual (o presione **F12**).
 
 ## <a name="group-and-filter-the-test-list"></a>Agrupar y filtrar la lista de pruebas
 

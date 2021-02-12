@@ -32,15 +32,15 @@ helpviewer_keywords:
 ms.assetid: 020b2e97-3b3e-4b2c-872d-b5c6025e120e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c8487482b1d87ba87dfc3a8b1e07be1360227a2f
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: cdc0231b7c42dbdb4aca86040347ec5bfd57607d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150449"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940675"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Uso de puntos de interrupción en el depurador de Visual Studio
 
@@ -85,7 +85,7 @@ La definición de condiciones le permite controlar cuándo y dónde se ejecuta u
 
 **Para establecer una condición de punto de interrupción:**
 
-1. Haga clic con el botón derecho en el símbolo del punto de interrupción y seleccione **Condiciones**. También puede mantener el ratón sobre el símbolo del punto de interrupción, seleccionar el icono **Configuración** y, después, seleccionar **Condiciones** en la ventana **Configuración del punto de interrupción**.
+1. Haga clic con el botón derecho en el símbolo del punto de interrupción y seleccione **Condiciones** (o presione **Alt** + **F9**, **C**). También puede mantener el ratón sobre el símbolo del punto de interrupción, seleccionar el icono **Configuración** y, después, seleccionar **Condiciones** en la ventana **Configuración del punto de interrupción**.
 
    Las condiciones también se pueden establecer en la ventana **Puntos de interrupción**; para ello, haga clic con el botón derecho en un punto de interrupción, seleccione **Configuración** y, tras ello, seleccione **Condiciones**.
 
@@ -124,7 +124,7 @@ Si se establece una condición de punto de interrupción con una sintaxis no vá
 
 1. Establezca un punto de interrupción en alguna parte del código después de que se haya creado el objeto.
 
-2. Inicie la depuración y, cuando la ejecución se detenga en el punto de interrupción, seleccione **Depurar** > **Ventanas** > **Variables locales** o **Alt**+**4** para abrir la ventana **Variables locales**.
+2. Inicie la depuración y, cuando la ejecución se detenga en el punto de interrupción, seleccione **Depurar** > **Ventanas** > **Variables locales** (o presione **CTRL** + **Alt** + **V**, **L**) para abrir la ventana **Variables locales**.
 
    Busque la instancia de objeto específica en la ventana **Variables locales**, haga clic con el botón derecho en ella y seleccione **Crear el identificador del objeto**.
 
@@ -169,7 +169,7 @@ La ejecución se puede interrumpir cuando se llame a una función. Esto resulta 
 
 **Para establecer un punto de interrupción de función:**
 
-1. Seleccione **Depurar** > **Nuevo punto de interrupción** > **Punto de interrupción de función** o presione **Alt**+**F9** > **Ctrl**+**B**.
+1. Seleccione **Depurar** > **Nuevo punto de interrupción** > **Punto de interrupción de función** o presione **CTRL** + **K**, **B**.
 
    También puede seleccionar **Nuevo** > **Punto de interrupción de función** en la ventana **Puntos de interrupción**.
 
@@ -206,7 +206,7 @@ La ejecución se puede interrumpir cuando se llame a una función. Esto resulta 
 
 2. Busque la dirección de la instancia (por ejemplo, `0xcccccccc`).
 
-3. Seleccione **Depurar** > **Nuevo punto de interrupción** > **Punto de interrupción de función** o presione **Alt**+**F9** > **Ctrl**+**B**.
+3. Seleccione **Depurar** > **Nuevo punto de interrupción** > **Punto de interrupción de función** o presione **CTRL** + **K**, **B**.
 
 4. Agregue lo siguiente al cuadro **Nombre de la función** y seleccione el lenguaje **C++** .
 
@@ -268,7 +268,7 @@ Los puntos de interrupción de datos no funcionan en las siguientes condiciones:
 
 En la ventana **Puntos de interrupción** se pueden buscar, ordenar, filtrar, habilitar/deshabilitar o eliminar puntos de interrupción. También se pueden establecer condiciones y acciones, o agregar una nueva función o un punto de interrupción de datos.
 
-Para abrir la ventana **Puntos de interrupción**, seleccione **Depurar** > **Ventanas** > **Puntos de interrupción**, o bien presione **Alt**+**F9** o **Ctrl**+**Alt**+**B**.
+Para abrir la ventana **Puntos de interrupción**, seleccione **Depurar** > **Ventanas** > **Puntos de interrupción**, o bien presione **CTRL**+**Alt**+**B**.
 
 ![Ventana Puntos de interrupción](../debugger/media/breakpointswindow.png "ventana Puntos de interrupción")
 
@@ -314,7 +314,7 @@ Si quiere realizar un seguimiento visual de los puntos de interrupción durante 
 
 ### <a name="set-a-breakpoint-in-the-disassembly-window"></a>Establecer un punto de interrupción en la ventana Desensamblado
 
-1. Para abrir la ventana **Desensamblado**, la depuración debe estar en pausa. Seleccione **Depurar** > **Ventanas** > **Desensamblado** o presione **Alt**+**8**.
+1. Para abrir la ventana **Desensamblado**, la depuración debe estar en pausa. Seleccione **Depurar** > **Ventanas** > **Desensamblado** o presione **CTRL**+**Alt**+**D**.
 
 2. En la ventana **Desensamblado**, haga clic en el margen izquierdo de la instrucción que quiera interrumpir. También puede seleccionarlo y presionar **F9**, o bien hacer clic con el botón derecho y seleccionar **Punto de interrupción** > **Insertar punto de interrupción**.
 

@@ -12,15 +12,15 @@ dev_langs:
 - VB
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bfa5b69cc106aeae18012a7116fd511263423b2c
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 0f6612806f8bf1453cf28f9d75c78588c2074bb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480322"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868886"
 ---
 # <a name="step-6-name-your-button-controls"></a>Paso 6: Asignar un nombre a los controles de botón
 
@@ -35,7 +35,7 @@ Hay cuatro botones en el formulario, que el IDE ha denominado **button1**, **but
 
 1. En el formulario, elija el botón **Cerrar** . (Si todavía están seleccionados todos los botones, elija la tecla **Esc** para cancelar la selección). Desplácese en la ventana **Propiedades** hasta que vea la propiedad **(Name)** . (La propiedad **(Name)** se encuentra cerca de la parte superior cuando las propiedades están por orden alfabético). Cambie el nombre a **closeButton**, como se muestra en la captura de pantalla siguiente.
 
-    ![Ventana Propiedades mostrando el nombre closeButton](../ide/media/express_setnameproperty.png)<br>*Ventana *_Propiedades_* _ _mostrando el nombre* ***closeButton**_ _*
+    ![Ventana Propiedades mostrando el nombre closeButton](../ide/media/express_setnameproperty.png)<br>*Ventana **Propiedades** _ _con el nombre* ***closeButton**_ _*
 
     > [!NOTE]
     > Intente cambiar el nombre del botón por **close Button**, con un espacio entre las palabras "close" (cerrar) y "Button" (botón). Al hacerlo, el IDE muestra un mensaje de error: "El valor de la propiedad no es válido". En los nombres de los controles no se permiten espacios (ni algunos otros caracteres).
@@ -48,7 +48,7 @@ Puede comprobar los nombres eligiendo la lista desplegable de selección de cont
    En esta pestaña se muestra el archivo de código subyacente del formulario, como se muestra en la captura de pantalla siguiente.
 
     ![Pestaña Form1.cs con código de Visual C&#35;](../ide/media/express_showbuttoncode.png)<br>
-*Pestaña *_Form1.cs_* _ _con código de C#*
+*Pestaña **Form1.cs** _ _con código de C#*
 
     > [!NOTE]
     > En su lugar, es posible que la pestaña Form1.cs o Form1.vb muestre **showButton** como **ShowButton**.

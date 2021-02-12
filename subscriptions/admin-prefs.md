@@ -7,12 +7,12 @@ ms.assetid: 0fe9eaa4-f589-429e-a443-13bf86637d5a
 ms.date: 10/22/2020
 ms.topic: conceptual
 description: Aprenda a establecer las preferencias de idioma, contactos, nivel de suscripción y demás en el portal de administración.
-ms.openlocfilehash: e044db92a318114cd2f159b859843db354fac6c7
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: bdb6a5bc1160c75830fe9f1473222155d8fad781
+ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467445"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99511350"
 ---
 # <a name="set-preferences-for-your-agreements-in-the-administration-portal"></a>Establecimiento de las preferencias de los contratos en el portal de administración
 Los superadministradores pueden establecer determinadas preferencias en el portal de administración que se aplicarán globalmente para cada contrato.  Estas preferencias rellenarán automáticamente los detalles de suscripción para los administradores al agregar suscriptores. Solo las pueden modificar de forma global los propios superadministradores.  
@@ -70,10 +70,10 @@ R:  Dado que la respuesta procederá del cliente de correo electrónico que empl
 R:  Consulte nuestro artículo sobre [cómo ponerse en contacto con el administrador](contact-my-admin.md). 
 
 ### <a name="q-if-we-dont-complete-the-contact-email-address-and-a-subscriber-uses-the-contact-my-admin-feature-who-receives-their-request"></a>P: Si no completamos la **dirección de correo electrónico de contacto** y un suscriptor usa la característica **Contact my Admin** (Contacto con el administrador), ¿quién recibe la solicitud?
-R:  Si no se establece ninguna dirección de correo electrónico específica en la preferencia **Dirección de correo electrónico de contacto** , todos los administradores del contrato recibirán la solicitud. 
+R:  Si no se establece ninguna dirección de correo electrónico específica en la preferencia **Dirección de correo electrónico de contacto**, todos los administradores del contrato recibirán la solicitud. 
 
 ## <a name="resources"></a>Recursos
-- [Soporte técnico para suscripciones y administración de Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
+- [Soporte técnico para suscripciones y administración de Visual Studio](https://my.visualstudio.com/gethelp)
 
 ## <a name="see-also"></a>Vea también
 - [Documentación de Visual Studio](/visualstudio/)

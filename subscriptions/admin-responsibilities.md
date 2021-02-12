@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: b26b31dc-1eeb-4871-9ce6-2c980e703f1e
-ms.date: 10/22/2020
+ms.date: 02/02/2021
 ms.topic: conceptual
 description: Conozca cuáles son las responsabilidades de los administradores de suscripciones.
-ms.openlocfilehash: 183209e5e1fa873ae9af6ff2d9b32caf94c5461e
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: 9d2c724fafb41ee44e531a1eec41d76d7e888686
+ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467471"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99511298"
 ---
 # <a name="overview-of-admin-responsibilities"></a>Introducción a las responsabilidades del administrador
 Como administrador, puede administrar las suscripciones de la organización.  El rol de administrador también conlleva responsabilidades para asegurarse de que las suscripciones se administran de acuerdo con los términos de licencia. En este artículo se describen las responsabilidades, ventajas y limitaciones del rol de administrador.
@@ -41,6 +41,7 @@ Las suscripciones de Visual Studio permiten a los desarrolladores instalar y us
 - [Documentación de Azure DevOps](/azure/devops/)
 - [Documentación de Azure](/azure/)
 - [Documentación de Microsoft 365](/microsoft-365/)
+- [Soporte técnico para suscripciones y administración de Visual Studio](https://my.visualstudio.com/gethelp)
 
 ## <a name="next-steps"></a>Pasos siguientes
 Obtenga más información sobre las responsabilidades de los administradores:

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
-ms.date: 10/22/2020
+ms.date: 02/02/2021
 ms.topic: how-to
 description: Obtenga información sobre cómo los administradores pueden asignar licencias a varios suscriptores mediante la característica de adición masiva o los grupos de Microsoft Azure Active Directory.
-ms.openlocfilehash: e9d4cd5c7e73cdc3b71768a498a7c02546d3e1fc
-ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
+ms.openlocfilehash: 995859dce259b3a4edf968fac98723e226cf59d5
+ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "97696611"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99511376"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Asignación de suscripciones a varios usuarios
 El Portal de administración de suscripciones permite agregar usuarios de uno en uno o en grupos grandes.  Para agregar usuarios individuales, consulte [Agregar usuarios individuales](assign-license.md).
@@ -137,7 +137,7 @@ R: Actualmente, esta característica solo está disponible para organizaciones c
    > ![Haga clic en el botón Detalles.](_img/assign-license-bulk/bulk-add-agreement.png "Haga clic en el botón Detalles para ver el tipo de acuerdo que tiene.")
 
 ### <a name="q-i-added-someone-to-my-azure-ad-security-group-but-i-dont-see-them-added-in-the-subscriptions-administration-portal-and-they-dont-have-a-subscription-why-not"></a>P: He agregado a alguien al grupo de seguridad de Azure AD, pero no lo veo en el Portal de administración de suscripciones ni tiene una suscripción. ¿Por qué no?  
-R: En función de cómo haya configurado la organización Azure AD, pueden producirse retrasos de hasta 24 horas antes de que se agregue el usuario. Si han pasado más de 24 horas, [póngase en contacto con el servicio de soporte técnico](https://visualstudio.microsoft.com/support/support-overview-vs).  
+R: En función de cómo haya configurado la organización Azure AD, pueden producirse retrasos de hasta 24 horas antes de que se agregue el usuario. Si han pasado más de 24 horas, visite [Soporte técnico para suscripciones y administración de Visual Studio](https://my.visualstudio.com/gethelp).  
 
 ## <a name="see-also"></a>Vea también
 - [Documentación de Visual Studio](/visualstudio/)
