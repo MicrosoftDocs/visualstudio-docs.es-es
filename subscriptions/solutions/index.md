@@ -7,12 +7,12 @@ robots: noindex, nofollow
 author: evanwindom
 ms.author: v-evwin
 ms.date: 12/07/2020
-ms.openlocfilehash: 381561e324184fc07ed322d0348404d1de0d898e
-ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
+ms.openlocfilehash: 2185ca3a887c4ac0061ceeb02d58a290b7b912d3
+ms.sourcegitcommit: 04954be0c4373f82f79181e1a5e7812be4d3e1f7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98883713"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100496303"
 ---
 # <a name="visual-studio-subscriptions-support-widget-content-includes-files"></a>Archivos INCLUDES para el contenido de widget compatible con las suscripciones de Visual Studio
 
@@ -72,7 +72,10 @@ ms.locfileid: "98883713"
 
 ### <a name="use-product-features"></a>Uso de características de producto
 [!INCLUDE [Cannot find IDE feature](downloading-activating-or-using-software/using-product-features/includes/cannot-find-ide-feature.md)]
+
 [!INCLUDE [Visual Studio IDE technical support](downloading-activating-or-using-software/using-product-features/includes/visual-studio-ide-technical-support.md)]
+
+[!INCLUDE [Azure DevOps technical support](downloading-activating-or-using-software/using-product-features/includes/azure-devops-technical-support.md)]
 
 ## <a name="license-terms"></a>Términos de licencia
 
