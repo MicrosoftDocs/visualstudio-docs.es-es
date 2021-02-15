@@ -8,12 +8,12 @@ ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: f971237ecc829fcc4ab660263a1b66c701f86f62
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 5155c37a89f566841fc342bbd8213f5a38eb399d
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583962"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727572"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Instalación de Visual Studio 2019 para Mac
 
@@ -49,7 +49,7 @@ Para compilar aplicaciones Xamarin para iOS o macOS, también necesitará lo sig
 
 6. Se mostrará una lista de las cargas de trabajo disponibles. Seleccione los componentes que quiere usar:
 
-    [![Elija las características de carga de trabajo opcionales que quiera instalar.](media/install-selection.png)](media/install-selection.png#lightbox)
+    [![Captura de pantalla de la pantalla "What would you like to install?" (¿Qué quiere instalar?) en el instalador de Visual Studio para Mac en la que se muestra una lista de componentes disponibles para la instalación.](media/install-selection.png)](media/install-selection.png#lightbox)
 
    Si no desea instalar todas las plataformas, utilice la guía siguiente para ayudarle a elegirlas:
 
@@ -67,7 +67,7 @@ Para compilar aplicaciones Xamarin para iOS o macOS, también necesitará lo sig
 7. Después de haber realizado las selecciones, presione el botón **Instalar**.
 8. El instalador mostrará el progreso a medida que se realice la descarga y la instalación de Visual Studio para Mac, así como de las cargas de trabajo seleccionadas. Se le solicitará que indique la contraseña para conceder los privilegios necesarios para la instalación.
 
-    [![Elija las características de carga de trabajo opcionales que quiera instalar.](media/installation-progress.png)](media/installation-progress.png#lightbox)
+    [![Captura de pantalla del instalador de Visual Studio para Mac en la que se muestra la pantalla de progreso de instalación del kit de herramientas para desarrolladores de .NET para Mac.](media/installation-progress.png)](media/installation-progress.png#lightbox)
 
 9. Una vez instalado, Visual Studio para Mac le pedirá que personalice su instalación, para lo que deberá iniciar sesión y seleccionar los enlaces de teclado que le gustaría usar:
 

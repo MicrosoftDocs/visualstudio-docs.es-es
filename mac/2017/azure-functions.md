@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
 ms.topic: how-to
-ms.openlocfilehash: 009df6525696405914aeeb224e3817bbfbe27155
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 63793548bd3ea1098cc1113724cd9a3b513adbf5
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189802"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727468"
 ---
 # <a name="introduction-to-azure-functions"></a>Introducción a Azure Functions
 
@@ -91,12 +91,12 @@ Puede usar el procedimiento anterior para agregar más funciones a su proyecto d
 
 ## <a name="publish-to-azure"></a>Publicar en Azure
 
-1. Haga clic con el botón derecho en el nombre del proyecto y seleccione **Publicar > Publicar en Azure** :  ![Opción de menú Publicar en Azure](media/azure-functions-image5.png)
+1. Haga clic con el botón derecho en el nombre del proyecto y seleccione **Publicar > Publicar en Azure** :  ![Captura de pantalla de Azure Functions en la que se muestra el proyecto AF-httptrigger seleccionado y los comandos Publicar y Publicar en Azure resaltados en el menú contextual](media/azure-functions-image5.png).
 2. Si ya ha conectado su cuenta de Azure para Visual Studio para Mac, se mostrará una lista de servicios de aplicaciones disponibles. Si aún no ha iniciado sesión, se le pedirá que lo haga.
 3. En el cuadro de diálogo **Publicar en Azure App Service**, puede seleccionar un servicio de aplicación existente o crear uno nuevo haciendo clic en **Nuevo**.
-4. En el cuadro de diálogo **Crear instancia de App Service**, especifique la configuración:  ![Opción de menú Publicar en Azure](media/azure-functions-image7.png)
+4. En el cuadro de diálogo **Crear instancia de App Service**, especifique la configuración:  ![Captura de pantalla de la ventana Nuevo App Service en Azure Functions en la que se muestra la configuración para crear una instancia nueva de App Service en Azure](media/azure-functions-image7.png).
 
-    |Parámetro  |Descripción  |
+    |Setting  |Descripción  |
     |---------|---------|
     |**Nombre de App Service**|Un nombre único global que identifica la nueva instancia de Function App.|
     |**Suscripción**|La suscripción de Azure que se va a usar.|
@@ -108,13 +108,13 @@ Puede usar el procedimiento anterior para agregar más funciones a su proyecto d
 
 5. Haga clic en **Siguiente** para crear una cuenta de almacenamiento. El runtime de Functions necesita una cuenta de almacenamiento de Azure. Haga clic en **Personalizado** para crear una cuenta de almacenamiento de propósito general o usar una existente:
 
-    ![Opción de menú Publicar en Azure](media/azure-functions-image8.png)
+    ![Captura de la pantalla Configurar la cuenta de Storage en Azure Functions. Para Cuenta de almacenamiento, se selecciona la opción personalizada; los campos Nombre de cuenta y Tipo de cuenta se rellenan.](media/azure-functions-image8.png)
 
 6. Haga clic en **Crear** para crear una instancia de Function App y los recursos relacionados en Azure con esta configuración e implementar el código del proyecto de función.
 
 7. Puede que se muestre un cuadro de diálogo durante la publicación que indique "Actualizar versión de Functions en Azure". Haga clic en **Sí**:
 
-    ![Opción de menú Publicar en Azure](media/azure-functions-image12.png)
+    ![Captura de pantalla de la opción Actualizar la versión de Functions en el símbolo de cuadro de diálogo de Azure; se solicita que se actualice la configuración de la aplicación de Azure para que coincida con las versiones locales de Functions.](media/azure-functions-image12.png)
 
 > [!CAUTION]
 > Hay un error en la versión 7.6 de Visual Studio para Mac donde `FUNCTIONS_EXTENSION_VERSION` no está correctamente configurado en "beta", lo que significa que no se puede ejecutar la función. Para solucionar este problema, vaya a [Configuración de Function App](#function-app-settings) y establezca `FUNCTIONS_EXTENSION_VERSION` de "-1" a "beta".

@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
 ms.custom: video
-ms.openlocfilehash: 33148c5202251525504864f26177da4497b5fabe
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 31e38d728eb3c336b1d3160a920ef18055de1b1f
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74983573"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616306"
 ---
 # <a name="working-with-git"></a>Trabajo con Git
 
@@ -59,9 +59,9 @@ Estas permiten las acciones siguientes:
 
 ## <a name="switching-branches"></a>Cambio de ramas
 
-De forma predeterminada, la primera rama creada en un repositorio se conoce como rama **maestra**. Técnicamente no hay diferencias entre la rama maestra y las demás, aunque la maestra es la que en los equipos de desarrollo se suele considerar como la rama "activa" o de "producción".
+De forma predeterminada, la primera rama creada en un repositorio se conoce como rama **principal**. Técnicamente no hay diferencias entre la rama principal y las demás, aunque la principal es la que en los equipos de desarrollo se suele considerar como la rama "activa" o de "producción".
 
-Se puede crear una línea independiente de desarrollo al ramificar la rama maestra (o cualquier otra rama, de hecho). Esto proporciona una nueva versión de la rama maestra en un momento dado, lo que permite el desarrollo independientemente de lo que está "activo". El empleo de ramas de este modo se suele usar para características de desarrollo de software
+Se puede crear una línea independiente de desarrollo al ramificar la rama principal (o cualquier otra rama, de hecho). Esto proporciona una nueva versión de la rama principal en un momento dado, lo que permite el desarrollo independientemente de lo que está "activo". El empleo de ramas de este modo se suele usar para características de desarrollo de software
 
 Los usuarios pueden crear tantas ramas como quieran de cada repositorio, pero se recomienda que una vez que hayan terminado de usar una, se elimine para mantener el repositorio organizado.
 

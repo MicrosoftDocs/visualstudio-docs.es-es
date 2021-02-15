@@ -7,12 +7,12 @@ ms.date: 06/25/2019
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
 ms.topic: troubleshooting
-ms.openlocfilehash: d2ba7f5d044b82c44d719b251a7d803212cf7b07
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: b9aa9b718ad4618502a58185c27333d689c74300
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860557"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729384"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Conectarse a Control de versiones de Team Foundation
 
@@ -21,7 +21,7 @@ ms.locfileid: "91860557"
 >
 > Si anteriormente utilizaba la versión preliminar de la extensión TFVC para Visual Studio para Mac, ya no se admite al actualizar a Visual Studio 2019 para Mac.
 
-Azure Repos ofrece dos modelos de control de versiones: [Git](/azure/devops/repos/git/?view=azure-devops), un sistema de control de versiones distribuido, y el [Control de versiones de Team Foundation](/azure/devops/repos/tfvc/index?view=azure-devops) (TFVC), un sistema de control de versiones centralizado.
+Azure Repos ofrece dos modelos de control de versiones: [Git](/azure/devops/repos/git/?view=azure-devops&preserve-view=true), un sistema de control de versiones distribuido, y el [Control de versiones de Team Foundation](/azure/devops/repos/tfvc/index?view=azure-devops&preserve-view=true) (TFVC), un sistema de control de versiones centralizado.
 
 Visual Studio para Mac proporciona compatibilidad total con repositorios Git, pero requiere algunas soluciones alternativas para trabajar con TFVC. Si usa TFVC para el control de versiones hoy en día, estas son algunas soluciones que puede usar para acceder al código fuente hospedado en TFVC:
 
@@ -69,7 +69,7 @@ Para **instalar la TEE-CLC manualmente**:
 
 Una vez instalada la TEE-CLC, puede ejecutar el comando `tf eula` para ver y aceptar el contrato de licencia del cliente.
 
-Por último, para autenticarse en su entorno de TFS/Azure DevOps, deberá crear un token de acceso personal en el servidor. Obtenga más información sobre la [autenticación con tokens de acceso personal](/azure/devops/integrate/get-started/authentication/pats?view=azure-devops). Al crear un token de acceso personal para usarlo con TFVC, asegúrese de proporcionar acceso total al configurar el token.
+Por último, para autenticarse en su entorno de TFS/Azure DevOps, deberá crear un token de acceso personal en el servidor. Obtenga más información sobre la [autenticación con tokens de acceso personal](/azure/devops/integrate/get-started/authentication/pats?view=azure-devops&preserve-view=true). Al crear un token de acceso personal para usarlo con TFVC, asegúrese de proporcionar acceso total al configurar el token.
 
 ### <a name="using-the-tee-clc-to-connect-to-your-repo"></a>Uso de la TEE-CLC para conectarse a su repositorio
 
@@ -247,11 +247,11 @@ Para poder usar la autenticación básica, es necesario habilitar **credenciales
 
 2. En la barra de herramientas de la organización, haga clic en el icono de engranaje y seleccione **Directiva**:
 
-    ![Opción de configuración de directiva seleccionada](media/tfvc-auth2.png)
+    ![Captura de pantalla de la barra de herramientas de organización de Azure DevOps con el icono de engranaje seleccionado y la opción Directiva seleccionada en el menú desplegable.](media/tfvc-auth2.png)
 
 3. Revise la configuración de conexión de la aplicación. Cambie esta configuración en función de sus directivas de seguridad:
 
-    ![Opción de configuración de directiva seleccionada](media/tfvc-auth.png)
+    ![Captura de la pantalla Directiva en Azure DevOps Services en la que se muestra la configuración de Directivas de conexión entre aplicaciones.](media/tfvc-auth.png)
 
 #### <a name="i-do-not-see-anything-in-tfvc"></a>No veo nada en TFVC
 

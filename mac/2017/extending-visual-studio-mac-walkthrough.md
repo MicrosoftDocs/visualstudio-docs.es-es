@@ -1,16 +1,18 @@
 ---
 title: 'Tutorial: Extender Visual Studio para Mac'
+description: Obtenga información sobre cómo compilar un paquete de extensión sencillo para Visual Studio para Mac, con el que se crea un nuevo comando en el menú Editar.
+ms.custom: SEO-VS-2020
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: 7D00512B-9688-4D8D-87A7-F04F207E3D02
-ms.openlocfilehash: c5b3b759b32acfc86b4b584b3f3d52298c138a2c
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 9274f86e8ade5b49b5db0c7f4773cf6fd57ea353
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74985026"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876199"
 ---
 # <a name="extending-visual-studio-for-mac-walkthrough"></a>Tutorial: Extender Visual Studio para Mac
 
@@ -22,7 +24,7 @@ En este ejemplo se usa el complemento Add-in Maker. Add-in Maker crea una nueva 
 
    ![Captura de pantalla de Visual Studio para Mac](media/extending-visual-studio-mac-addin3.png)
 
-2. Instale el _paquete de extensión Add-in Maker_ mediante el Administrador de extensiones. En el menú de Visual Studio, elija **Extensiones...** :
+2. Instale el _paquete de extensión Add-in Maker_ mediante el Administrador de extensiones. En el menú de Visual Studio, elija **Extensiones...**:
 
    ![Pestaña Administrador de complementos](media/extending-visual-studio-mac-addin4.png)
 
@@ -134,8 +136,8 @@ En este ejemplo se usa el complemento Add-in Maker. Add-in Maker crea una nueva 
 
 15. Por último, ejecute el paquete de extensión para probarlo. En la nueva instancia de Visual Studio para Mac, seleccione **Editar > Insertar fecha**. La fecha y la hora actuales se insertan en el símbolo de intercalación, como se muestra en la captura de pantalla siguiente:
 
-    ![Captura de pantalla de Insertar fecha](media/extending-visual-studio-mac-addin12.png)
+    ![Captura de pantalla de insertar fecha](media/extending-visual-studio-mac-addin12.png)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Create your first extension (Visual Studio on Windows)](/visualstudio/extensibility/extensibility-hello-world) (Crear la primera extensión [Visual Studio en Windows])

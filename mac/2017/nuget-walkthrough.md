@@ -7,12 +7,12 @@ ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: 58d749a1d014288754dcd9eb7e620730933d742a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 274e8defe25fa78c30aee72834e486b302a9af4e
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950405"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729436"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>Incluir un paquete NuGet en el proyecto
 
@@ -24,7 +24,7 @@ En este artículo se explica cómo incluir un paquete NuGet en un proyecto y se 
 
 Para mostrar la funcionalidad de los paquetes NuGet, primero se va a crear una nueva aplicación y se le va a agregar un paquete. Luego se tratan las características del IDE que ayudan a administrar paquetes.
 
-## <a name="create-a-new-project"></a>Crear un proyecto nuevo
+## <a name="create-a-new-project"></a>Creación de un nuevo proyecto
 
 En primer lugar, cree un proyecto denominado `HelloNuget` como se muestra a continuación. Este ejemplo muestra la plantilla de aplicación de vista única de iOS, aunque cualquier tipo de proyecto compatible funcionaría:
 
@@ -46,7 +46,7 @@ Cuando la ventana se abre, carga una lista de paquetes del origen de paquetes pr
 
 Use el cuadro de búsqueda de la esquina superior derecha para buscar un paquete determinado, por ejemplo `azure`. Cuando encuentre un paquete que quiera usar, selecciónelo y haga clic en el botón **Agregar paquete** para iniciar la instalación.
 
-[Adición del paquete NuGet Azure](media/nuget-walkthrough-AddPackages2.png)
+[Adición de paquete NuGet de Azure](media/nuget-walkthrough-AddPackages2.png)
 
 Una vez que el paquete se ha descargado, se agrega al proyecto. La solución cambia de este modo:
 
@@ -76,7 +76,7 @@ Las actualizaciones de paquetes se pueden hacer todas a la vez, al hacer clic co
 
 Haga clic con el botón derecho en **Paquetes** para acceder al menú contextual:
 
-![Menú Paquetes](media/nuget-walkthrough-PackagesMenu.png)
+![Captura de pantalla en la que se muestra el nodo Paquetes seleccionado y el menú contextual que se abre al hacer clic con el botón derecho, con los comandos Agregar paquetes, Actualizar, Restaurar y Actualizar.](media/nuget-walkthrough-PackagesMenu.png)
 
 * **Agregar paquetes**: abre la ventana para agregar más paquetes al proyecto.
 * **Actualizar**: comprueba el servidor de origen de cada paquete y descarga las versiones más recientes.
@@ -86,7 +86,7 @@ Las opciones Actualizar y Restaurar también están disponibles en el nivel de s
 
 También puede hacer clic con el botón derecho en paquetes individuales para acceder a un menú contextual:
 
-![Menú Paquetes](media/nuget-walkthrough-PackageMenu.png)
+![Captura de pantalla en la que se muestra un paquete individual y en el menú contextual que se abre al hacer clic con el botón derecho con los comandos Actualizar, Quitar y Actualizar.](media/nuget-walkthrough-PackageMenu.png)
 
 * **Número de versión**: el número de versión es un elemento de menú deshabilitado que solo se proporciona con fines informativos.
 * **Actualizar**: comprueba el servidor de origen y descarga una versión más reciente (si la hubiera).
@@ -102,11 +102,11 @@ En Visual Studio para Mac, vaya a **Visual Studio > Preferencias > NuGet > Oríg
 
 Haga clic en **Agregar** para configurar un nuevo origen. Escriba un nombre descriptivo y la dirección URL (o ruta de acceso de archivo) al origen del paquete. Si el origen es un servidor web seguro, escriba también el nombre de usuario y la contraseña, de lo contrario, deje en blanco estas entradas:
 
-![Adición de orígenes de paquetes](media/nuget-walkthrough-PackageSource2.png)
+![Captura de pantalla del cuadro de diálogo Agregar origen del paquete, con los campos Nombre, Ubicación, Nombre de usuario y Contraseña.](media/nuget-walkthrough-PackageSource2.png)
 
 Al buscar paquetes se pueden seleccionar orígenes diferentes:
 
-![Adición de orígenes de paquetes](media/nuget-walkthrough-PackageSource3.png)
+![Captura de pantalla de la pantalla Agregar paquetes en la que se muestra una lista desplegable de los orígenes que se pueden seleccionar al buscar paquetes.](media/nuget-walkthrough-PackageSource3.png)
 
 ## <a name="version-control"></a>Control de versiones
 

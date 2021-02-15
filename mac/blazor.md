@@ -10,18 +10,18 @@ no-loc:
 - Blazor
 - Blazor WebAssembly
 ms.topic: how-to
-ms.openlocfilehash: 3280e63ae92a99cfa076b79e499a7b18952285c4
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 30e9a62e8bf0364a76cbd43995cbb77c1a5bd0c4
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584040"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729423"
 ---
-# <a name="create-no-locblazor-web-apps"></a>Creación de aplicaciones web de Blazor
+# <a name="create-blazor-web-apps"></a>Creación de aplicaciones web de Blazor
 
 Esta guía proporciona una introducción a la creación de su primera aplicación web de Blazor. Para obtener instrucciones más detalladas, vea [Introducción a ASP.NET Core Blazor](/aspnet/core/blazor/index).
 
-Blazor en ASP.NET Core admite dos opciones de hospedaje diferentes: Blazor WebAssembly (WASM) o Blazor Server. Visual Studio para Mac admite ambos modelos de hospedaje. Visual Studio para Mac 8.4+ admite Blazor Server, mientras que Visual Studio para Mac 8.6+ admite ambas opciones. Para más información sobre los modelos de hospedaje de Blazor, vea [Modelos de hospedaje Blazor en ASP.NET Core](/aspnet/core/blazor/hosting-models?view=aspnetcore-3.1). La compatibilidad con la depuración de proyectos de Blazor WebAssembly en Visual Studio para Mac está disponible en la versión preliminar de la versión 8.8 (disponible a través del canal de actualización de la versión preliminar en el menú **Visual Studio > Buscar actualizaciones...** ).
+Blazor en ASP.NET Core admite dos opciones de hospedaje diferentes: Blazor WebAssembly (WASM) o Blazor Server. Visual Studio para Mac admite ambos modelos de hospedaje. Visual Studio para Mac 8.4+ admite Blazor Server, mientras que Visual Studio para Mac 8.6+ admite ambas opciones. Para más información sobre los modelos de hospedaje de Blazor, vea [Modelos de hospedaje Blazor en ASP.NET Core](/aspnet/core/blazor/hosting-models?view=aspnetcore-3.1&preserve-view=true). La compatibilidad con la depuración de proyectos de Blazor WebAssembly en Visual Studio para Mac está disponible en la versión preliminar de la versión 8.8 (disponible a través del canal de actualización de la versión preliminar en el menú **Visual Studio > Buscar actualizaciones...** ).
 
 ¿Qué es Blazor? Blazor es un marco de compilación de la interfaz de usuario web del lado cliente interactiva con .NET que ofrece las siguientes ventajas a los desarrolladores web:
 
@@ -32,12 +32,12 @@ Blazor en ASP.NET Core admite dos opciones de hospedaje diferentes: Blazor WebAs
 * Mantenga la productividad con Visual Studio en PC, Linux y macOS.
 * Compile sobre un conjunto común de lenguajes, marcos y herramientas que son estables, completos y fáciles de usar.
 
-## <a name="create-a-new-no-locblazor-webassembly-project"></a>Creación de un proyecto de Blazor WebAssembly
+## <a name="create-a-new-blazor-webassembly-project"></a>Creación de un proyecto de Blazor WebAssembly
 1. En la **ventana de inicio**, seleccione **Nuevo** para crear un nuevo proyecto:
 
    ![Ventana de inicio de Visual Studio para Mac con la selección de Nuevo resaltada](media/blazor-new-project.png)
 
-1. En el cuadro de diálogo **Nuevo proyecto**, seleccione **.NET Core** > **Aplicación** > **Aplicación Blazor WebAssembly** y seleccione **Siguiente**: ![Cuadro de diálogo Elija una plantilla para el nuevo proyecto con la plantilla Aplicación de servidor Blazor seleccionada](media/blazor-wasm-project-template.png)
+1. En el cuadro de diálogo **Nuevo proyecto**, seleccione **.NET Core** > **Aplicación** > **Aplicación Blazor WebAssembly** y seleccione **Siguiente**: ![Captura de pantalla del cuadro de diálogo Nuevo proyecto con la aplicación Blazor WebAssembly resaltada en el panel de aplicación de ASP.NET Core y el botón Siguiente seleccionado](media/blazor-wasm-project-template.png).
 
 1. Seleccione .NET Core 3.1 como marco de destino y, a continuación, seleccione **Siguiente**. 
    ![Cuadro de diálogo Configure su nueva aplicación Blazor WebAssembly abierto con .NET Core 3.1 seleccionado como plataforma de destino](media/blazor-wasm-select-target-framework.png)
@@ -53,12 +53,12 @@ Blazor en ASP.NET Core admite dos opciones de hospedaje diferentes: Blazor WebAs
 
    ![Aplicación web Blazor en Microsoft Edge](media/blazor-new-app-in-edge.png)
 
-## <a name="creating-a-new-no-locblazor-server-project"></a>Creación de un proyecto de Blazor Server
+## <a name="creating-a-new-blazor-server-project"></a>Creación de un proyecto de Blazor Server
 
 1. En la **ventana de inicio**, seleccione **Nuevo** para crear un nuevo proyecto:
 
    ![Ventana de inicio de Visual Studio para Mac con la selección de Nuevo resaltada](media/blazor-new-project.png)
-1. En el cuadro de diálogo **Nuevo proyecto**, seleccione **.NET Core** > **Aplicación** > **Aplicación de servidor Blazor** y seleccione **Siguiente**: ![Cuadro de diálogo Elija una plantilla para el nuevo proyecto con la plantilla Aplicación de servidor Blazor seleccionada](media/blazor-project-template.png)
+1. En el cuadro de diálogo **Nuevo proyecto**, seleccione **.NET Core** > **Aplicación** > **Aplicación de servidor Blazor** y seleccione **Siguiente**: ![Captura de pantalla del cuadro de diálogo Nuevo proyecto con la aplicación de servidor Blazor resaltada en el panel de aplicación de ASP.NET Core y el botón Siguiente seleccionado](media/blazor-project-template.png).
 
 1. Seleccione .NET Core 3.1 como marco de destino y, a continuación, seleccione **Siguiente**. 
    ![Cuadro de diálogo Configure su nueva aplicación de servidor Blazor abierto con .NET Core 3.1 seleccionado como marco de destino](media/blazor-select-target-framework.png)
@@ -73,7 +73,7 @@ Blazor en ASP.NET Core admite dos opciones de hospedaje diferentes: Blazor WebAs
 
    ![Aplicación web Blazor en Microsoft Edge](media/blazor-new-app-in-edge.png)
 
-## <a name="no-locblazor-support-in-visual-studio-for-mac"></a>Compatibilidad con Blazor en Visual Studio para Mac
+## <a name="blazor-support-in-visual-studio-for-mac"></a>Compatibilidad con Blazor en Visual Studio para Mac
 
 Visual Studio para Mac (a partir de la versión 8.4) incluye nuevas características que le ayudarán a crear proyectos de servidor Blazor. Además, proporciona el soporte técnico Standard que cabría esperar, como la compilación, ejecución y depuración de proyectos de Blazor. En Visual Studio para Mac 8.6, se agregó compatibilidad con la creación, compilación y ejecución de proyectos de Blazor WebAssembly.
 
@@ -84,7 +84,7 @@ Visual Studio para Mac incluye compatibilidad con la edición de archivos .razo
 
 ![Ventana del editor de Visual Studio para Mac en la que se muestra IntelliSense para Blazor](media/blazor-intellisense.png)
 
-### <a name="publishing-no-locblazor-applications-to-azure-app-service"></a>Publicación de aplicaciones Blazor en Azure App Service
+### <a name="publishing-blazor-applications-to-azure-app-service"></a>Publicación de aplicaciones Blazor en Azure App Service
 Las aplicaciones Blazor también se pueden publicar directamente en Azure App Service. Si no tiene una cuenta de Azure para ejecutar su aplicación Blazor en Azure, siempre puede [suscribirse a una cuenta gratuita aquí](https://azure.microsoft.com/free) que también incluya 12 meses de servicios populares gratuitos, 200 USD de créditos de Azure gratuitos y más de 25 servicios gratuitos para siempre.
 
 ![Visual Studio para Mac que muestra la experiencia de publicación de Azure](media/blazor-azure-publish.png)
@@ -115,7 +115,7 @@ Esta carpeta contiene archivos estáticos, como los archivos HTML, JavaScript y 
 
 Este archivo contiene el punto de entrada del programa. Para obtener más información, consulte [Host web de ASP.NET Core](/aspnet/core/fundamentals/host/web-host).
 
-### <a name="no-locblazor-server-app-specific-files"></a>Archivos específicos de la aplicación Blazor Server
+### <a name="blazor-server-app-specific-files"></a>Archivos específicos de la aplicación Blazor Server
 #### <a name="app-settings"></a>Configuración de la aplicación
 
 El archivo *appSettings.json* contiene datos de configuración, como las cadenas de conexión.
