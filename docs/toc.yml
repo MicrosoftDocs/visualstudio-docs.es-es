@@ -190,8 +190,8 @@
           href: ide/creating-solutions-and-projects.md
         - name: "Apertura de un proyecto desde un repositorio en Visual\_Studio\_2017"
           href: get-started/tutorial-open-project-from-repo-visual-studio-2017.md
-        - name: "Apertura de un proyecto desde un repositorio en Visual\_Studio"
-          href: get-started/tutorial-open-project-from-repo.md
+        - name: "Apertura de un proyecto desde un repositorio en Visual\_Studio\_2019"
+          href: get-started/tutorial-open-project-from-repo-visual-studio-2019.md
         - name: 'Portar, migrar y actualizar proyectos'
           href: porting/port-migrate-and-upgrade-visual-studio-projects.md
         - name: Administrar propiedades de soluciones y proyectos
