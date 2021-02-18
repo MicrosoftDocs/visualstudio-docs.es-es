@@ -1,18 +1,18 @@
 ---
-title: Uso del Portal del suscriptor de las suscripciones de Visual Studio (my.visualstudio.com)
+title: Uso del Portal del suscriptor de Visual Studio (my.visualstudio.com)
 description: Lista de preguntas más frecuentes sobre el uso del Portal del suscriptor (my.visualstudio.com).
 ms.topic: conceptual
 ms.assetid: c4ce41f2-a5b2-475f-b1ac-cca28ee17fc2
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 4/3/2020
+ms.date: 02/15/2021
 ms.faqid: Section1
-ms.openlocfilehash: fc850b4f76eb2c0ac4f54d09ae2f47d6182f0a9a
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 3188757186d2a0d4f65cf9f87d14d978b89d37b5
+ms.sourcegitcommit: 51e4426889ae5f49c69b122e37b3f48aa7a3925d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "81385994"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100543021"
 ---
 # <a name="using-the-subscriber-portal"></a>Uso del portal del suscriptor
 

@@ -4,21 +4,24 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
-ms.date: 12/02/2020
+ms.date: 02/09/2021
 ms.topic: how-to
 description: Obtenga información sobre la cuenta de desarrollador de Windows que se incluye con la suscripción de Visual Studio.
-ms.openlocfilehash: 4b8d2190792f942f808c1fda62a7020fefdca866
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: a988dabb5849d13733c72ebb5976be489f67dd95
+ms.sourcegitcommit: 0f3606917cf5451e8c4e0b2e0c3fbb9113429645
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537726"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100089598"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Cuenta de desarrollador de Windows en suscripciones de Visual Studio
 Su cuenta de desarrollador de Windows, incluida con algunas suscripciones de Visual Studio, permite enviar a Microsoft Store aplicaciones Windows tanto gratuitas como de pago.
 
 ## <a name="activation-steps"></a>Pasos para la activación
 Para usar la cuenta de desarrollador de Windows, será necesario configurar una cuenta o iniciar sesión con una ya existente.
+
+> [!IMPORTANT]
+> Para crear una cuenta de desarrollador de Windows, se necesita una de Microsoft (MSA).  No se permite el uso de cuentas de Azure Active Directory.  
 
 Se recomienda crear una ventana "privada" del explorador para este proceso.  Por ejemplo, en Google Chrome, cree una ventana "de incógnito".  En Internet Explorer, cree una ventana "InPrivate".
 
