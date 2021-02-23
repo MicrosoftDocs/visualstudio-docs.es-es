@@ -1,19 +1,19 @@
 ---
 title: Usar el marco de pruebas unitarias de Microsoft para C++
 description: Use la plataforma de pruebas unitarias de Microsoft para C++ para crear pruebas unitarias para el código C++.
-ms.date: 01/08/2020
+ms.date: 02/16/2021
 ms.topic: how-to
 ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: a9393fd248f4e6520c261d405bc624a75d8cf69f
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: a76c6ac83956cd1e6514ff958278d0b4cbcf0d2f
+ms.sourcegitcommit: cc8547eb211c43b67b8123d1211b80b5642e3b18
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85287121"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100563439"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Usar el marco de pruebas unitarias de Microsoft para C++ en Visual Studio
 
@@ -33,7 +33,7 @@ En algunos casos (por ejemplo, al probar funciones no exportadas en una DLL), pu
 
    1. En el cuadro de diálogo Páginas de propiedades, seleccione **Propiedades de configuración** > **Directorios de VC++** .
 
-   1. Haga clic en la flecha abajo en las siguientes filas y elija **\<Edit>** . Agregue estas rutas de acceso:
+   1. Seleccione la flecha abajo en las siguientes filas y elija **\<Edit>** . Agregue estas rutas de acceso:
 
       | Directorio | Propiedad. |
       |-| - |
@@ -42,21 +42,23 @@ En algunos casos (por ejemplo, al probar funciones no exportadas en una DLL), pu
 
 1. Agregue el archivo de prueba unitaria de C++:
 
-   - Haga clic con el botón derecho en el nodo del proyecto en el **Explorador de soluciones** y seleccione **Agregar** > **Nuevo elemento** > **Archivo de C++ (.cpp)** .
+   1. Haga clic con el botón derecho en el nodo del proyecto en el **Explorador de soluciones** y seleccione **Agregar** > **Nuevo elemento**.
+
+   1. En el cuadro de diálogo **Agregar nuevo elemento**, seleccione **Archivo C++ (.cpp)** , escriba un nombre adecuado para este y elija **Agregar**.
 
 ## <a name="to-link-the-tests-to-the-object-or-library-files"></a><a name="object_files"></a> Para vincular las pruebas a los archivos de biblioteca u objeto
 
-Si el código en pruebas no exporta las funciones que quiere probar, puede agregar el archivo de salida **.obj** o **.lib** a las dependencias del proyecto de prueba. Modifique las propiedades del proyecto de prueba para incluir los encabezados y los archivos objeto o de biblioteca que sean necesarios para las pruebas unitarias.
+Si el código en pruebas no exporta las funciones que quiere probar, puede agregar el archivo de salida *.obj* o *.lib* a las dependencias del proyecto de prueba. Modifique las propiedades del proyecto de prueba para incluir los encabezados y los archivos objeto o de biblioteca que sean necesarios para las pruebas unitarias.
 
 1. En el Explorador de soluciones, en el menú contextual del proyecto de prueba, seleccione **Propiedades**. Se abrirá la ventana de propiedades del proyecto.
 
 1. Seleccione la página **Propiedades de configuración** > **Enlazador** > **Entrada** y, a continuación, seleccione **Dependencias adicionales**.
 
-   Seleccione **Editar** y agregue los nombres de los archivos **.obj** o **.lib**. No utilice nombres de ruta de acceso completa.
+   Seleccione **Editar** y agregue los nombres de los archivos *.obj* o *.lib*. No utilice nombres de ruta de acceso completa.
 
 1. Seleccione la página **Propiedades de configuración** > **Enlazador** > **General** y, a continuación, seleccione **Directorios de bibliotecas adicionales**.
 
-   Seleccione **Editar** y agregue la ruta del directorio de los archivos **.obj** o **.lib**. La ruta de acceso está normalmente dentro de la carpeta de compilación del proyecto en pruebas.
+   Seleccione **Editar** y agregue la ruta del directorio de los archivos *.obj* o *.lib*. La ruta de acceso está normalmente dentro de la carpeta de compilación del proyecto en pruebas.
 
 1. Seleccione la página **Propiedades de configuración** > **Directorios de VC++** y, a continuación, seleccione **Directorios de inclusión**.
 
@@ -108,7 +110,7 @@ TEST_METHOD(Method1)
 
 ### <a name="c-trait-attribute-macros"></a>Macros de atributo de rasgo de C++
 
-Encontrará los siguientes rasgos predefinidos en `CppUnitTest.h`. Para obtener más información, vea la [referencia de API del marco de pruebas unitarias de Microsoft para C++](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md).
+Encontrará los rasgos predefinidos siguientes en *`CppUnitTest.h`* . Para obtener más información, vea la [referencia de API del marco de pruebas unitarias de Microsoft para C++](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md).
 
 |Macro|Descripción|
 |-|-----------------|

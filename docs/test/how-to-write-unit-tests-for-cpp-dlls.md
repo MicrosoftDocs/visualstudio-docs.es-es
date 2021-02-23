@@ -2,19 +2,19 @@
 title: Escritura de pruebas unitarias para archivos DLL de C++
 description: Obtenga información sobre las diversas maneras de probar código de DLL, dependiendo de si el archivo DLL exporta las funciones que quiere probar.
 ms.custom: SEO-VS-2020
-ms.date: 05/01/2019
+ms.date: 02/16/2021
 ms.topic: how-to
 ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: b7eb7b7be524e20ca87c70c3f1f771f4f8a01141
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 06ad7bd437fca98c7be92a1e12ce31234d876b28
+ms.sourcegitcommit: cc8547eb211c43b67b8123d1211b80b5642e3b18
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328631"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100563428"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Escribir pruebas unitarias para DLL de C/C++ en Visual Studio
 
@@ -34,7 +34,7 @@ Este método tiene la ventaja de permitir que las pruebas usen miembros no expor
 
 Vaya al procedimiento [Para cambiar la DLL a una biblioteca estática](#staticLink).
 
-**Las pruebas unitarias deben llamar a funciones que no son miembro y que no se han exportado, y el código debe compilarse como una biblioteca de vínculos dinámicos (DLL):** agregue pruebas unitarias en el mismo proyecto que el código de producto.
+**Las pruebas unitarias deben llamar a funciones que no son miembro y que no se exportan, y el código debe compilarse como una biblioteca de vínculos dinámicos (DLL):** agregue pruebas unitarias en el mismo proyecto que el código de producto.
 
 Vaya al procedimiento [Para agregar pruebas unitarias en el mismo proyecto](#sameProject).
 
@@ -42,7 +42,7 @@ Vaya al procedimiento [Para agregar pruebas unitarias en el mismo proyecto](#sam
 
 ### <a name="to-change-the-dll-to-a-static-library"></a><a name="staticLink"></a> Para cambiar la DLL a una biblioteca estática
 
-- Si las pruebas deben usar miembros que el proyecto DLL no ha exportado y el proyecto se compila como una biblioteca dinámica, considere convertirla en una biblioteca estática.
+- Si las pruebas deben usar miembros que el proyecto DLL no exporta y el proyecto se compila como una biblioteca dinámica, considere la posibilidad de convertirla en una biblioteca estática.
 
   1. En el **Explorador de soluciones**, en el menú contextual del proyecto en pruebas, seleccione **Propiedades**. Se abrirá la ventana de **propiedades** del proyecto.
 
@@ -102,17 +102,17 @@ Vaya al procedimiento [Para agregar pruebas unitarias en el mismo proyecto](#sam
 
       ::: moniker-end
 
-  2. En el **Explorador de soluciones**, en el menú contextual del proyecto de prueba, seleccione **Propiedades**.
+  1. En el **Explorador de soluciones**, en el menú contextual del proyecto de prueba, seleccione **Propiedades**.
 
-  3. Elija **Propiedades de configuración** > **Vinculador** > **Entrada** > **Dependencias adicionales**.
+  1. Elija **Propiedades de configuración** > **Vinculador** > **Entrada** > **Dependencias adicionales**.
 
        Seleccione **Editar** y agregue los nombres de los archivos **.obj** o **.lib**. No utilice nombres de ruta de acceso completa.
 
-  4. Elija **Propiedades de configuración** > **Enlazador** > **General** > **Directorios de bibliotecas adicionales**.
+  1. Elija **Propiedades de configuración** > **Enlazador** > **General** > **Directorios de bibliotecas adicionales**.
 
        Seleccione **Editar** y agregue la ruta del directorio de los archivos **.obj** o **.lib**. La ruta de acceso está normalmente dentro de la carpeta de compilación del proyecto en pruebas.
 
-  5. Seleccione **Propiedades de configuración** > **Directorios de VC++**  > **Directorios de archivos de inclusión**.
+  1. Seleccione **Propiedades de configuración** > **Directorios de VC++**  > **Directorios de archivos de inclusión**.
 
        Elija **Editar** y agregue el directorio del encabezado del proyecto en pruebas.
 
@@ -124,18 +124,20 @@ Vaya al procedimiento [Para agregar pruebas unitarias en el mismo proyecto](#sam
 
    1. En el **Explorador de soluciones**, en el menú contextual del proyecto en pruebas, seleccione **Propiedades**. Se abrirá la ventana de **propiedades** del proyecto.
 
-   2. Elija **Propiedades de configuración** > **Directorios de VC++** .
+   1. Elija **Propiedades de configuración** > **Directorios de VC++** .
 
-   3. Edite los directorios de inclusión y de biblioteca:
+   1. Edite los directorios de inclusión y de biblioteca:
 
        |Directorio|Propiedad.|
        |-|-|
-       |**Directorios de archivos de inclusión** | **$(VCInstallDir)UnitTest\include;$(IncludePath)**|
-       |**Directorios de archivos de bibliotecas** | **$(VCInstallDir)UnitTest\lib;$(LibraryPath)**|
+       |**Directorios de archivos de inclusión** | **$(VCInstallDir)Auxiliary\VS\UnitTest\include** |
+       |**Directorios de archivos de bibliotecas** | **$(VCInstallDir)Auxiliary\VS\UnitTest\lib** |
 
-2. Agregue el archivo de prueba unitaria de C++:
+1. Agregue el archivo de prueba unitaria de C++:
 
-   - En el **Explorador de soluciones**, en el menú contextual del proyecto, elija **Agregar** > **Nuevo elemento** > **Pruebas unitarias de C++**.
+   1. Haga clic con el botón derecho en el nodo del proyecto en el **Explorador de soluciones** y seleccione **Agregar** > **Nuevo elemento**.
+
+   1. En el cuadro de diálogo **Agregar nuevo elemento**, seleccione **Archivo C++ (.cpp)** , escriba un nombre adecuado para este y elija **Agregar**.
 
    Vaya a [Escribir las pruebas unitarias](#addTests).
 
@@ -143,7 +145,7 @@ Vaya al procedimiento [Para agregar pruebas unitarias en el mismo proyecto](#sam
 
 1. En cada archivo de código de prueba unitaria, agregue un fragmento `#include` para los encabezados de proyecto en pruebas.
 
-2. Agregue las clases y los métodos de prueba a los archivos de código de prueba unitaria. Por ejemplo:
+1. Agregue las clases y los métodos de prueba a los archivos de código de prueba unitaria. Por ejemplo:
 
     ```cpp
     #include "stdafx.h"
@@ -167,7 +169,7 @@ Vaya al procedimiento [Para agregar pruebas unitarias en el mismo proyecto](#sam
 
 1. En el menú **Prueba**, elija **Windows** > **Explorador de pruebas**.
 
-1. Si ninguna de las pruebas está visible en la ventana, compile el proyecto de prueba haciendo clic con el botón derecho en el nodo correspondiente en el **Explorador de soluciones** y eligiendo **Compilar** o **Recompilar**.
+1. Si no todas las pruebas son visibles en la ventana, compile el proyecto de prueba; para ello, haga clic con el botón derecho en el nodo correspondiente en el **Explorador de soluciones** y elija **Compilar** o **Recompilar**.
 
 1. En el **Explorador de pruebas**, elija **Ejecutar todas** o seleccione las pruebas concretas que quiera ejecutar. Haga clic con el botón derecho en una prueba para ver otras opciones, como la ejecución en modo de depuración con puntos de interrupción habilitados.
 

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9915fdab1d4d0976a199a09a11c815e4966192a5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d7723a87471b8f76b9496fe8e7b01e56d1440ee2
+ms.sourcegitcommit: 15109ead7991f52092502518a6f4d9061cc22cd2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934655"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "100335267"
 ---
 # <a name="remote-debugging-a-c-project-in-visual-studio"></a>Depuración remota de un proyecto de C++ en Visual Studio
 Para depurar una aplicación de Visual Studio en otro equipo, instale y ejecute las herramientas remotas en el equipo donde va a implementar la aplicación, configure el proyecto que va a conectar al equipo remoto desde Visual Studio y, a continuación, implemente y ejecute la aplicación.
@@ -99,7 +99,7 @@ El depurador remoto es compatible con Windows 7 y versiones posteriores (no par
     > [!TIP]
     > De manera alternativa, puede implementar los archivos como un paso independiente. En el **Explorador de soluciones**, haga clic con el botón derecho en el nodo **mymfc** y después elija **Implementar**.
 
-    Si tiene archivos que no son de código necesarios para la aplicación, puede especificarlos en **Archivos adicionales para implementar** en la página **Depurador remoto de Windows**.
+    Si tiene archivos que no son de código necesarios para la aplicación, puede especificarlos en una lista separada por caracteres de punto y coma en **Archivos adicionales para implementar** en la página **Depurador remoto de Windows**.
 
     Como alternativa, puede incluir los archivos en el proyecto y establecer la propiedad **Contenido** en **Sí** en la página **Propiedades** de cada archivo. Estos archivos se copian en el **Directorio de implementación** especificado en la página **Depurador remoto de Windows**. También puede cambiar el **Tipo de elemento** a **Copiar archivo** y especificar propiedades adicionales si necesita que los archivos se copien en una subcarpeta del **Directorio de implementación**.
 

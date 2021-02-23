@@ -5,19 +5,19 @@ description: Una lista de las versiones de lanzamiento y los números de compila
 author: ornellaalt
 ms.author: ornella
 manager: jmartens
-ms.date: 1/21/2021
+ms.date: 2/10/2021
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 263a8bd8e2452944920a664e7dc70295e9cbf011
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 21c74207df3026922d54837882c496f5f13f6530
+ms.sourcegitcommit: 15109ead7991f52092502518a6f4d9061cc22cd2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939778"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "100335239"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Números de compilación y fechas de lanzamiento de Visual Studio
 
@@ -29,6 +29,12 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de v
 
 | **Versión**| **Canal** | **Fecha de lanzamiento** | **Versión de compilación** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.4.19 | Release | 10 de febrero de 2021 | 16.4.31009.304 |
+| 16.7.12 | Release | 10 de febrero de 2021 | 16.7.31009.191 |
+| 16.8.5 | Release | 9 de febrero de 2021 | 16.8.31005.135 |
+| 16.9.0 | Versión preliminar 4 | 9 de febrero de 2021 | 16.9.31004.235 | 
+| 16.7.11 | Release | 9 de febrero de 2021 | 16.7.30928.143 |
+| 16.4.18 | Release | 9 de febrero de 2021 | 16.4.30928.142 |
 | 16.9.0 | Versión preliminar 3 | 21 de enero de 2021 | 16.9.30914.41 |
 | 16.8.4 | Release | 12 de enero de 2021 | 16.8.30907.101 |
 | 16.7.10 | Release | 12 de enero de 2021 | 16.7.30816.78 |
@@ -204,6 +210,8 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de l
 
 | **Versión**| **Canal** | **Fecha de lanzamiento** | **Versión de compilación** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.33 | Release | 10 de febrero de 2021 | 15.9.28307.1401 |
+| 15.9.32 | Release | 9 de febrero de 2021 | 15.9.28307.1382 |
 | 15.9.31 | Release | 12 de enero de 2021 | 15.9.28307.1342 |
 | 15.9.30 | Release | 8 de diciembre de 2020 | 15.9.28307.1321 |
 | 15.9.29 | Release | 10 de noviembre de 2020 | 15.9.28307.1300 |
