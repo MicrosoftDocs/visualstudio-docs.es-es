@@ -13,12 +13,12 @@ ms.author: midumont
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 974de3094c7384f8170a42892a17f0eb49162094
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 956e63384619a82b7f0abb7dd3771ed2db9cba01
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99867794"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684372"
 ---
 # <a name="overview"></a>Información general
 
@@ -413,9 +413,10 @@ En un proyecto de .NET Core, si agrega una referencia a un proyecto que tiene an
 <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="5.0.0" PrivateAssets="all" />
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Información general de los analizadores de código en Visual Studio](../code-quality/roslyn-analyzers-overview.md)
 - [Enviar un error del analizador de código](https://github.com/dotnet/roslyn-analyzers/issues)
 - [Usar conjuntos de reglas](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
 - [Suprimir advertencias de análisis de código](../code-quality/in-source-suppression-overview.md)
+- [Opciones de configuración para el análisis de código (.NET)](/dotnet/fundamentals/code-analysis/configuration-options)

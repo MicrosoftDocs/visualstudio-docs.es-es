@@ -9,21 +9,23 @@ ms.topic: how-to
 ms.date: 12/11/2020
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: a0db2f2e4993fcc3c986686322b8915615758e13
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 250b89c983da039717982b31873a470172bde0f5
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727299"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683298"
 ---
 # <a name="adding-azure-app-configuration-by-using-visual-studio-connected-services"></a>Agregar App de Azure configuración mediante Visual Studio Servicios conectados
 
-En este tutorial, aprenderá a agregar fácilmente todo lo que necesita para empezar a usar App de Azure configuración para administrar la configuración y las marcas de características para proyectos web en Visual Studio, independientemente de que use ASP.NET Core o cualquier tipo de proyecto ASP.NET. Mediante el uso de la característica Servicios conectados de Visual Studio, puede hacer que Visual Studio agregue automáticamente todo el código, los paquetes NuGet y los valores de configuración que necesita para conectarse al recurso de configuración de la aplicación en Azure. Para usar esta característica, debe usar Visual Studio 2019 versión 16,9 o posterior.
+En este tutorial, aprenderá a agregar fácilmente todo lo que necesita para empezar a usar App de Azure configuración para administrar la configuración y las marcas de características de los proyectos web en Visual Studio. Mediante el uso de la característica Servicios conectados de Visual Studio, puede hacer que Visual Studio agregue automáticamente todo el código, los paquetes NuGet y los valores de configuración que necesita para conectarse al recurso de configuración de la aplicación en Azure. Para usar esta característica, debe usar Visual Studio 2019 versión 16,9 o posterior.
+
+Puede usar la característica Servicios conectados de configuración de aplicaciones en ASP.NET Core, en la consola de .NET Core y en proyectos de .NET Framework.
 
 > [!NOTE]
 > Este tema se aplica a Visual Studio para Windows. En Visual Studio para Mac, vea [Servicios conectados en Visual Studio para Mac](/visualstudio/mac/connected-services).
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
 
 - Visual Studio con la carga de trabajo de Azure instalada.
 - Proyecto de uno de los tipos admitidos

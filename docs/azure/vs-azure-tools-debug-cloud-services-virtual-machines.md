@@ -8,12 +8,12 @@ ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: c7a95c43435cf78f169ce363b3e8fe301e9d0cbe
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 39d151528c5fda1bd4700fecd0d5c8843ced50a1
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844338"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683237"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Depuración de una máquina virtual o un servicio en la nube de Azure en Visual Studio
 
@@ -21,7 +21,7 @@ Visual Studio proporciona distintas opciones para la depuración de servicios en
 
 ## <a name="debug-your-cloud-service-on-your-local-computer"></a>Depuración del servicio en la nube en el equipo local
 
-Puede ahorrar tiempo y dinero si utiliza el emulador de proceso de Azure para depurar su servicio en la nube en un equipo local. La depuración de un servicio localmente antes de su implementación puede mejorar la fiabilidad y el rendimiento sin pagar por tiempo de proceso. No obstante, pueden producirse algunos errores solo al ejecutar un servicio en la nube en el propio Azure. Puede depurar estos errores si habilita la depuración remota al publicar el servicio y luego adjuntar el depurador a una instancia de rol.
+Puede ahorrar tiempo y dinero mediante el emulador de proceso de Azure para depurar el servicio en la nube en un equipo local. La depuración de un servicio localmente antes de su implementación puede mejorar la fiabilidad y el rendimiento sin pagar por tiempo de proceso. No obstante, pueden producirse algunos errores solo al ejecutar un servicio en la nube en el propio Azure. Puede depurar estos errores si habilita la depuración remota al publicar el servicio y luego adjuntar el depurador a una instancia de rol.
 
 El emulador simula el servicio Azure Compute y se ejecuta en el entorno local para que pueda probar y depurar el servicio en la nube antes de implementarlo. El emulador administra el ciclo de vida de sus instancias de rol y proporciona acceso a recursos simulados, tales como el almacenamiento local. Al depurar o ejecutar el servicio desde Visual Studio, este entorno inicia automáticamente el emulador como una aplicación en segundo plano y después implementa el servicio en el emulador. Puede utilizar el emulador para ver su servicio cuando se ejecuta en el entorno local. Puede ejecutar la versión completa o la versión Express del emulador. (A partir de Azure 2,3, la versión Express del emulador es el valor predeterminado). Vea [uso de Emulator Express para ejecutar y depurar localmente un servicio en la nube](vs-azure-tools-emulator-express-debug-run.md).
 

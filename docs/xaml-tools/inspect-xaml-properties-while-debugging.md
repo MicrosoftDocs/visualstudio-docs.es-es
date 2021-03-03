@@ -2,7 +2,7 @@
 title: Inspeccionar las propiedades XAML durante la depuración | Microsoft Docs
 description: Obtenga información sobre cómo usar las herramientas Live Visual Tree y Live Property Explorer durante la depuración para inspeccionar las propiedades XAML y obtener una vista de árbol de los elementos de la interfaz de usuario.
 ms.custom: SEO-VS-2020
-ms.date: 11/12/2019
+ms.date: 03/02/2021
 ms.topic: how-to
 ms.assetid: 390edde4-7b8d-4c89-8d69-55106b7e6b11
 author: TerryGLee
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: d9033921c9e9863e5210721fb2c1244c326802d4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 76edf9f1af414a67abd83cec3c2f597c6cdf8707
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881378"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683452"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Inspeccionar las propiedades XAML durante la depuración
 
@@ -34,7 +34,17 @@ Comencemos con una aplicación WPF muy sencilla que tiene una vista de lista y u
 
 ### <a name="create-the-project"></a>Creación del proyecto
 
-1. Cree una nueva aplicación WPF de c# (**archivo**  >  **nuevo**  >  **proyecto**, escriba "WPF de c#" y elija **aplicación WPF (.net Core)** o **aplicación WPF (.NET Framework)**). Asígnele el nombre **TestXAML**.
+::: moniker range="vs-2019"
+
+1. Cree una nueva aplicación WPF de c# (**archivo** > **nuevo** > **proyecto**, escriba "C# WPF", elija la plantilla de proyecto **aplicación WPF** , asigne al proyecto el nombre **TestXAML** y, a continuación, compruebe que **.net Core 3,1** aparece en la lista desplegable **plataforma de destino** .
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+1. Cree una nueva aplicación WPF de c# (**archivo**  >  **nuevo**  >  **proyecto**, escriba "WPF de c#" y elija **aplicación WPF (.NET Framework)**). Asígnele el nombre **TestXAML**.
+
+::: moniker-end
 
 1. Cambie el archivo MainWindow.xaml por lo siguiente:
 
@@ -152,6 +162,6 @@ Puede usar estas herramientas XAML, aunque no disponga del código fuente. Al ad
 
 4. En la segunda instancia de Visual Studio, abra **Live Visual Tree** (**Depurar > Ventanas > Live Visual Tree**). Debería ver los elementos de interfaz de usuario **TestXaml** y debería poder manipularlos como lo hizo al depurar directamente la aplicación.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Escribir y depurar código XAML en ejecución con recarga activa de XAML](xaml-hot-reload.md)
