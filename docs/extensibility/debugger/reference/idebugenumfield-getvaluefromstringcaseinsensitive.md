@@ -1,4 +1,5 @@
 ---
+description: Este método usa una búsqueda que no distingue entre mayúsculas y minúsculas para devolver el valor asociado al nombre de una constante de enumeración.
 title: 'IDebugEnumField:: GetValueFromStringCaseInsensitive | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c0eb781cd9e7a9073a45418c3793dc6ba026ec45
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f853598c5d3c9b293c806e1db475c5053a1a208e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933354"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153227"
 ---
 # <a name="idebugenumfieldgetvaluefromstringcaseinsensitive"></a>IDebugEnumField::GetValueFromStringCaseInsensitive
 Este método usa una búsqueda que no distingue entre mayúsculas y minúsculas para devolver el valor asociado al nombre de una constante de enumeración.
@@ -51,9 +52,9 @@ enuncia Devuelve el valor numérico asociado.
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve `S_FALSE` si el nombre no forma parte de la enumeración, o un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Este método no distingue entre mayúsculas y minúsculas. Si se necesita una búsqueda que distinga entre mayúsculas y minúsculas (por ejemplo, en un lenguaje como C++ en el que los nombres distinguen mayúsculas de minúsculas), use [GetValueFromString](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstring.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)
 - [GetValueFromString](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstring.md)
