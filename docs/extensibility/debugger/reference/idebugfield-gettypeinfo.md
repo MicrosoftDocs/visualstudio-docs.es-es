@@ -1,4 +1,5 @@
 ---
+description: Este método obtiene información independiente del tipo sobre el símbolo o tipo.
 title: 'IDebugField:: GetTypeInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0f74cc24d7698c3d83991c7f338bd2ef155ee1ce
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e908fb4eec16ec9891eda5127c753616419fc176
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869796"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151875"
 ---
 # <a name="idebugfieldgettypeinfo"></a>IDebugField::GetTypeInfo
 Este método obtiene información independiente del tipo sobre el símbolo o tipo.
@@ -46,10 +47,10 @@ enuncia Devuelve información de tipo en la estructura de [TYPE_INFO](../../../e
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  La información independiente del tipo incluiría, por ejemplo, el AppDomain, el módulo y la clase que contiene el símbolo.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [GetType](../../../extensibility/debugger/reference/idebugfield-gettype.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)

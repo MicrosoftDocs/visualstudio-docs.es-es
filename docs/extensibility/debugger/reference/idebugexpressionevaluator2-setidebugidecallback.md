@@ -1,4 +1,5 @@
 ---
+description: Permite a un motor de depuración pasar una devolución de llamada al evaluador de expresiones durante la inicialización.
 title: 'IDebugExpressionEvaluator2:: SetIDebugIDECallback | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4a3f1acf1921afe81a8874bde6c18081e429ce93
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 827e8a2096b0ac79720e5306cce83c55267269c6
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938218"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152265"
 ---
 # <a name="idebugexpressionevaluator2setidebugidecallback"></a>IDebugExpressionEvaluator2::SetIDebugIDECallback
 Permite a un motor de depuración pasar una devolución de llamada al evaluador de expresiones durante la inicialización.
@@ -45,5 +46,5 @@ de Interfaz para la devolución de llamada.
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

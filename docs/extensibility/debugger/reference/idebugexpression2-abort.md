@@ -1,4 +1,5 @@
 ---
+description: Este método cancela la evaluación de expresiones asincrónicas tal como la inició una llamada al método EvaluateAsync).
 title: 'IDebugExpression2:: ABORT | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 18e0e4b810e76bd5c5de7b0f8d77e7cd72ceb565
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 37591b245a4bf47ba956a17e19b7d6c3f1608cae
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901697"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152784"
 ---
 # <a name="idebugexpression2abort"></a>IDebugExpression2::Abort
 Este método cancela la evaluación de expresiones asincrónicas tal como la inició una llamada al método [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) .
@@ -40,10 +41,10 @@ int Abort();
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Cuando se cancela la evaluación de expresiones asincrónicas, no se envía un evento [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) a la devolución de llamada de evento que se pasa a los métodos [Attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md) o [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)
 - [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)
 - [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)

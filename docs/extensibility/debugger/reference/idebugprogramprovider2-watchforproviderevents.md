@@ -1,4 +1,5 @@
 ---
+description: Permite que el proceso reciba notificaciones de eventos de puerto.
 title: 'IDebugProgramProvider2:: WatchForProviderEvents | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f105bdb8cd73812c4c6f5efdf6b2a102df490a39
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fb00d177cfdb5fe8451b914926f29f591d8f924d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959654"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151485"
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
 Permite que el proceso reciba notificaciones de eventos de puerto.
@@ -78,7 +79,7 @@ de Un objeto [IDebugPortNotify2](../../../extensibility/debugger/reference/idebu
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Cuando un autor de llamada desea quitar un controlador de eventos que se estableció con una llamada anterior a este método, el autor de la llamada pasa los mismos parámetros que en la primera vez pero abandona la `PFLAG_REASON_WATCH` marca.
 
 ## <a name="example"></a>Ejemplo
@@ -210,7 +211,7 @@ STDMETHODIMP CDebugEngine::WatchForProviderEvents(
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)
 - [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)
 - [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)

@@ -1,4 +1,5 @@
 ---
+description: Este método obtiene el contenedor de un campo.
 title: 'IDebugField:: GetContainer | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d9d14a5666db03c9ebd701d5e1145c3f14465e37
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 39be9de82e6356b16562ca4b45ea67bb40e3764f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915408"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152005"
 ---
 # <a name="idebugfieldgetcontainer"></a>IDebugField::GetContainer
 Este método obtiene el contenedor de un campo.
@@ -46,9 +47,9 @@ enuncia Devuelve el contenedor tal como lo representa la interfaz [IDebugContain
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Si este campo no tiene un contenedor, el devuelto será `ppContainerField` un valor null.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)

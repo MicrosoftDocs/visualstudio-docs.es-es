@@ -1,4 +1,5 @@
 ---
+description: Envía la notificación de eventos de depuración.
 title: 'IDebugEventCallback2:: Event | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 54f53132f0a1f4769386874118d24f7e77a95f71
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: afa0cfd8f96d21a510370a4fc526a3cae053c77b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933315"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152928"
 ---
 # <a name="idebugeventcallback2event"></a>IDebugEventCallback2::Event
 Envía la notificación de eventos de depuración.
@@ -76,12 +77,12 @@ de Combinación de marcas de la enumeración [EVENTATTRIBUTES](../../../extensib
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Al llamar a este método, el `dwAttrib` parámetro debe coincidir con el valor devuelto desde el método [GetAttributes](../../../extensibility/debugger/reference/idebugevent2-getattributes.md) como se llama en el objeto de evento pasado en el `pEvent` parámetro.
 
  Todos los eventos de depuración se publican de forma asincrónica, independientemente de si un evento es asincrónico o no. Cuando un DE llama a este método, el valor devuelto no indica si se ha procesado el evento, solo si se ha recibido el evento. De hecho, en la mayoría de los casos, el evento no se ha procesado cuando este método devuelve.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

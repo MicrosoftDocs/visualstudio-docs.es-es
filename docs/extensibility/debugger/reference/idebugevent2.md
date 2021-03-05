@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz se usa para comunicar la información de depuración crítica, como la detención en un punto de interrupción, y la información no crítica, como un mensaje de depuración.
 title: IDebugEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ff87d79d45c90a3307d5f28a2aa6109033f4a59
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e162e276fc93c9e2c0d4333ac0f5c2630f75618e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933341"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152954"
 ---
 # <a name="idebugevent2"></a>IDebugEvent2
 Esta interfaz se usa para comunicar la información de depuración crítica, como la detención en un punto de interrupción, y la información no crítica, como un mensaje de depuración.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugEvent2 : IUnknown
@@ -41,7 +42,7 @@ IDebugEvent2 : IUnknown
 |------------|-----------------|
 |[GetAttributes](../../../extensibility/debugger/reference/idebugevent2-getattributes.md)|Obtiene los atributos para este evento de depuración.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Las interfaces de eventos más específicas, como [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md), no se derivan de la interfaz IDebugEvent2, sino que se implementan como una interfaz independiente en el mismo objeto que `IDebugEvent2` .
 
 ## <a name="requirements"></a>Requisitos
@@ -51,7 +52,7 @@ IDebugEvent2 : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
 - [Evento](../../../extensibility/debugger/reference/idebugportevents2-event.md)
 - [Evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

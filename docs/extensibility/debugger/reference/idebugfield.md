@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz representa un campo, es decir, una descripción de un símbolo o un tipo.
 title: IDebugField | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67a5bfe92547738a672cb6881234ae80f76aeda8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 175f9a329a93587873db7c76b53757ba715ace67
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869770"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151849"
 ---
 # <a name="idebugfield"></a>IDebugField
 Esta interfaz representa un campo, es decir, una descripción de un símbolo o un tipo.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugField : IUnknown
@@ -49,7 +50,7 @@ IDebugField : IUnknown
 |[Igual](../../../extensibility/debugger/reference/idebugfield-equal.md)|Compara dos campos.|
 |[GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)|Obtiene información independiente del tipo sobre el símbolo o tipo.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Un tipo es equivalente a un lenguaje C `typedef` .
 
  En el siguiente ejemplo del lenguaje C++, `weather` es un tipo de clase, y `sunny` y `stormy` son símbolos:
@@ -69,5 +70,5 @@ weather stormy;
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces de proveedor de símbolos](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)

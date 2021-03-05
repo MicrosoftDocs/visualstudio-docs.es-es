@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz especifica un mensaje de error que se va a informar al usuario.
 title: IDebugErrorEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1af67a00b9a692e5156ec7a6a14ef3fadcc3ac32
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bf249e8568c3ae70bc8d881d72b491cf7fa3576b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888347"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153045"
 ---
 # <a name="idebugerrorevent2"></a>IDebugErrorEvent2
 Esta interfaz especifica un mensaje de error que se va a informar al usuario.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugErrorEvent2 : IUnknown
@@ -41,7 +42,7 @@ IDebugErrorEvent2 : IUnknown
 |------------|-----------------|
 |`GetErrorMessage`|Devuelve un error como una cadena legible para el usuario.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Si el motor de depuración encuentra un error, puede utilizar esta interfaz para notificar el mensaje a través de Visual Studio al usuario.
 
 ## <a name="requirements"></a>Requisitos
@@ -51,6 +52,6 @@ IDebugErrorEvent2 : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz permite que el administrador de depuración de la sesión (SDM) recupere una interfaz que representa el motor DE depuración (DE).
 title: IDebugQueryEngine2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b555ac218ceee1d376c9f7cf3c9df87f7c2e2da0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f8e4cd9358cf63188ec88f4ec4a613aebf9d4f79
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909773"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151407"
 ---
 # <a name="idebugqueryengine2"></a>IDebugQueryEngine2
 Esta interfaz permite que el administrador de depuración de la sesión (SDM) recupere una interfaz que representa el motor DE depuración (DE).
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugQueryEngine2 : IUnknown
@@ -41,7 +42,7 @@ IDebugQueryEngine2 : IUnknown
 |------------|-----------------|
 |[GetEngineInterface](../../../extensibility/debugger/reference/idebugqueryengine2-getengineinterface.md)|Obtiene una interfaz personalizada del motor DE depuración (DE).|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Esta interfaz se implementa normalmente en el objeto que implementa la interfaz [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) para admitir la ejecución de paso a través de las funciones con orden de causalidad. es decir, cuando el depurador está saliendo de una función, es posible que la función siguiente que se va a ejecutar no sea la función anterior en la pila, sino que una función de otro subproceso esté totalmente. Para obtener una definición de "causalidad", vea el [Glosario del depurador de Visual Studio](../../../extensibility/debugger/reference/visual-studio-debugger-glossary.md).
 
 ## <a name="requirements"></a>Requisitos
@@ -51,7 +52,7 @@ IDebugQueryEngine2 : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

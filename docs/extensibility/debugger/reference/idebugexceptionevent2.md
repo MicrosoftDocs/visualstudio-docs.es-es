@@ -1,4 +1,5 @@
 ---
+description: El motor DE depuración (DE) envía esta interfaz al administrador de depuración de la sesión (SDM) cuando se produce una excepción en el programa que se está ejecutando actualmente.
 title: IDebugExceptionEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c09b81a6a3eb56734e7d3a95dc5d1a8d1717fba
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e171154d933ac533f6a63469321b5a0d22e8651b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933120"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152773"
 ---
 # <a name="idebugexceptionevent2"></a>IDebugExceptionEvent2
 El motor DE depuración (DE) envía esta interfaz al administrador de depuración de la sesión (SDM) cuando se produce una excepción en el programa que se está ejecutando actualmente.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugExceptionEvent2 : IUnknown
@@ -51,10 +52,10 @@ IDebugExceptionEvent2 : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Antes DE enviar el evento, el método DE realiza una comprobación para ver si este evento de excepción se ha designado como una excepción de primera o segunda oportunidad mediante una llamada anterior a [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md). Si se ha designado como una excepción de primera oportunidad, el `IDebugExceptionEvent2` evento se envía al SDM. DE lo contrario, el DE proporciona a la aplicación una oportunidad para controlar la excepción. Si no se proporciona ningún controlador de excepciones y la excepción se ha designado como una excepción de segunda oportunidad, el `IDebugExceptionEvent2` evento se envía al SDM. De lo contrario, el DE reanuda la ejecución del programa y el sistema operativo o el tiempo DE ejecución controla la excepción.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
 - [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)

@@ -1,4 +1,5 @@
 ---
+description: El motor DE depuración (DE) utiliza esta interfaz para enviar eventos de depuración al administrador de depuración de sesión (SDM).
 title: IDebugEventCallback2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe81a7d8a07a80f38e771e2cfbac3ec23da54b62
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cb33bcbdff14b0f95aab5d8f300473c13d4c342f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933367"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152915"
 ---
 # <a name="idebugeventcallback2"></a>IDebugEventCallback2
 El motor DE depuración (DE) utiliza esta interfaz para enviar eventos de depuración al administrador de depuración de sesión (SDM).
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugEventCallback2 : IUnknown
@@ -41,7 +42,7 @@ IDebugEventCallback2 : IUnknown
 |------------|-----------------|
 |[Evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)|Envía la notificación de eventos de depuración al SDM.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Aunque [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) y [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) especifican que toman una `IDebugEventCallback2` interfaz, este no es el caso y el puntero de interfaz siempre será un valor null. En su lugar, el motor de depuración debe usar la `IDebugEventCallback2` interfaz recibida en la llamada para [adjuntar](../../../extensibility/debugger/reference/idebugprogram2-attach.md), [adjuntar](../../../extensibility/debugger/reference/idebugengine2-attach.md)o [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md).
 
  Si un paquete implementa [IDebugEventCallback](../../../extensibility/debugger/reference/idebugeventcallback2.md) en código administrado, se recomienda que <xref:System.Runtime.InteropServices.Marshal.ReleaseComObject%2A> se invoque en las diversas interfaces que se pasan al [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md).
@@ -53,7 +54,7 @@ IDebugEventCallback2 : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
 - [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)
 - [Adjuntar](../../../extensibility/debugger/reference/idebugprogram2-attach.md)

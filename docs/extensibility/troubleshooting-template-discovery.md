@@ -9,12 +9,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 23e30ddb5f43a755fc2dc0206509e403e802c3e7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1ea99c1d74c06ab42ff86f07de4cf5c76e95de43
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893495"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151329"
 ---
 # <a name="troubleshooting-template-installation"></a>Solución de problemas de instalación de plantillas
 
@@ -39,7 +39,7 @@ Si surgen problemas al implementar las plantillas de proyecto o elemento, puede 
     "EnableTemplateDiscoveryLog"=dword:00000001
     ```
 
-3. Abra una [símbolo del sistema para desarrolladores](/dotnet/framework/tools/developer-command-prompt-for-vs) para su instalación y ejecute `devenv /updateConfiguration` .
+3. Abra una [símbolo del sistema para desarrolladores](../ide/reference/command-prompt-powershell.md) para su instalación y ejecute `devenv /updateConfiguration` .
 
 ::: moniker range="vs-2017"
 
@@ -72,7 +72,7 @@ El archivo de registro contiene las siguientes columnas:
 > [!NOTE]
 > Para deshabilitar el registro, quite el archivo pkgdef o cambie el valor de `EnableTemplateDiscoveryLog` a `dword:00000000` y, a continuación, vuelva a ejecutar `devenv /updateConfiguration` .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Crear plantillas de proyecto y de elemento personalizadas](creating-custom-project-and-item-templates.md)
 - [Solucionar problemas de Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

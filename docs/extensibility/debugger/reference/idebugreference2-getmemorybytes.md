@@ -1,4 +1,5 @@
 ---
+description: Obtiene los bytes de memoria que contienen físicamente el valor de una referencia.
 title: 'IDebugReference2:: GetMemoryBytes | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0088bc80d53b450db2e2c0f73ff9dadd6b8e51e3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f8d5e12b5c26bb5216fdba173dcc4cbb284f27d7
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909676"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151368"
 ---
 # <a name="idebugreference2getmemorybytes"></a>IDebugReference2::GetMemoryBytes
 Obtiene los bytes de memoria que contienen físicamente el valor de una referencia. Reservado para un uso futuro.
@@ -46,6 +47,6 @@ enuncia Devuelve un objeto [IDebugMemoryBytes2](../../../extensibility/debugger/
 ## <a name="return-value"></a>Valor devuelto
  Siempre devuelve `E_NOTIMPL`.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
 - [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)

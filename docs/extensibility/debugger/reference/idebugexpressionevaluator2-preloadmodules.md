@@ -1,4 +1,5 @@
 ---
+description: Carga previamente los módulos designados por el proveedor de símbolos especificado.
 title: IDebugExpressionEvaluator2::P reloadModules | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6998b847d400c9eb5e999a7299f5bedec0982253
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9e341843350abd218f2b9fb33cdb5ad489e62951
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948301"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152382"
 ---
 # <a name="idebugexpressionevaluator2preloadmodules"></a>IDebugExpressionEvaluator2::PreloadModules
 Carga previamente los módulos designados por el proveedor de símbolos especificado.
@@ -45,7 +46,7 @@ de Proveedor de símbolos para el que se cargarán previamente los módulos.
 ## <a name="return-value"></a>Valor devuelto
 Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Este método opcional se usa cuando se realiza una asociación de proceso de hospedaje. Proporciona la oportunidad de EE. "preparación" como parte de la asociación.
 
 ## <a name="example"></a>Ejemplo
@@ -77,5 +78,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

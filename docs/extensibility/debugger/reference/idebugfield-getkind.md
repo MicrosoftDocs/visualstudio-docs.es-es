@@ -1,4 +1,5 @@
 ---
+description: Este método obtiene el tipo de campo.
 title: 'IDebugField:: GetKind | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4d0f69d95aaf5313e2d2140b90339e23852ba1a9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cac900e35dd6de8a58a9daaadfe1ad8e5a638ed8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869887"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151914"
 ---
 # <a name="idebugfieldgetkind"></a>IDebugField::GetKind
 Este método obtiene el tipo de campo.
@@ -46,6 +47,6 @@ enuncia Devuelve el tipo de campo como una combinación de constantes de [FIELD_
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)

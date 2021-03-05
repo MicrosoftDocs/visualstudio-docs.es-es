@@ -1,4 +1,5 @@
 ---
+description: Recupera el nombre del contexto de evaluación.
 title: 'IDebugExpressionContext2:: GetName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8529e83de0f5de3d5d202885cf37b29d21fa3e59
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d43af7eeb733aca978a4c3b09fd4f97ca828fe5a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949537"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152654"
 ---
 # <a name="idebugexpressioncontext2getname"></a>IDebugExpressionContext2::GetName
 Recupera el nombre del contexto de evaluación.
@@ -46,12 +47,12 @@ enuncia Devuelve el nombre del contexto de evaluación.
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  El nombre es la descripción de este contexto de evaluación. Normalmente es algo que un evaluador de expresiones que hace referencia a este contexto de evaluación exacto puede analizarlo. Por ejemplo, en C++, el nombre es el siguiente:
 
 ```
 "{ function-name, source-file-name, module-file-name }"
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)
