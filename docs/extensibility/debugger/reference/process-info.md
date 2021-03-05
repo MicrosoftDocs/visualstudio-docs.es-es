@@ -1,4 +1,5 @@
 ---
+description: Contiene información sobre un proceso.
 title: PROCESS_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 76b8e36b6a6792b51552cb4203adebdc101cd808
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f5557e4171bdeb51ae1ac954870a85227a8c4c92
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963021"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222099"
 ---
 # <a name="process_info"></a>PROCESS_INFO
 Contiene información sobre un proceso.
@@ -83,7 +84,7 @@ public struct PROCESS_INFO {
  `Flags`\
  Combinación de marcas de la enumeración [PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md) que especifican las propiedades del proceso.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Esta estructura se pasa al método [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) en el que se rellena.
 
 ## <a name="requirements"></a>Requisitos
@@ -93,7 +94,7 @@ public struct PROCESS_INFO {
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md)
 - [PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md)

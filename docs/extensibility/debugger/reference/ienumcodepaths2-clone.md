@@ -1,4 +1,5 @@
 ---
+description: Devuelve una copia de la enumeración de rutas de acceso de código actual como un objeto independiente.
 title: 'IEnumCodePaths2:: Clone | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5b31a5c0ef8a5aee53d34b110f0568d30980a2db
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ad896e6613c6e9d39165725e9e18996e0fd06848
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967493"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222762"
 ---
 # <a name="ienumcodepaths2clone"></a>IEnumCodePaths2::Clone
 Devuelve una copia de la enumeración actual como objeto independiente.
@@ -46,8 +47,8 @@ int Clone(
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  La copia de la enumeración tiene el mismo estado que el original en el momento en que se llama a este método. Sin embargo, los Estados de la copia y del original son independientes y se pueden cambiar individualmente.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)

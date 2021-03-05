@@ -1,4 +1,5 @@
 ---
+description: Especifica el estado de un punto de interrupción pendiente (un punto de interrupción que todavía no se ha enlazado).
 title: PENDING_BP_STATE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 12a1dfd610c86966aa22444924098051c4b50d21
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ce0ceedd50fbdf6345b49143c4634f49dec308f7
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934095"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222125"
 ---
 # <a name="pending_bp_state"></a>PENDING_BP_STATE
 Especifica el estado de un punto de interrupción pendiente (un punto de interrupción que todavía no se ha enlazado).
@@ -46,7 +47,7 @@ public enum enum_PENDING_BP_STATE {
 };
 ```
 
-## <a name="fields"></a>Campos
+## <a name="fields"></a>Fields
  `PBPS_NONE`\
  Marcador de posición para cero. Nunca se devuelve este valor.
 
@@ -59,7 +60,7 @@ public enum enum_PENDING_BP_STATE {
  `PBPS_ENABLED`\
  Indica que el punto de interrupción pendiente está habilitado.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Use como `state` miembro de la estructura [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) .
 
 ## <a name="requirements"></a>Requisitos

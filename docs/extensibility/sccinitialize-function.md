@@ -1,4 +1,5 @@
 ---
+description: Esta función inicializa el complemento de control de código fuente y proporciona capacidades y límites al entorno de desarrollo integrado (IDE).
 title: Función SccInitialize | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9fb944cb672249ecb823f48048d12c1b61d9e99
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 986e3624b1716c782102f0f214283a7fa7020a08
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99846366"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220591"
 ---
 # <a name="sccinitialize-function"></a>SccInitialize (Función)
 Esta función inicializa el complemento de control de código fuente y proporciona capacidades y límites al entorno de desarrollo integrado (IDE).
@@ -73,14 +74,14 @@ enuncia Devuelve la longitud máxima permitida para otros comentarios.
 ## <a name="return-value"></a>Valor devuelto
  Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:
 
-|Value|Descripción|
+|Valor|Descripción|
 |-----------|-----------------|
 |SCC_OK|Inicialización del control de código fuente correcta.|
 |SCC_E_INITIALIZEFAILED|No se pudo inicializar el sistema.|
 |SCC_E_NOTAUTHORIZED|No se permite al usuario realizar la operación especificada.|
 |SCC_E_NONSPECFICERROR|Error no específico; no se inicializó el sistema de control de código fuente.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  El IDE llama a esta función cuando se carga por primera vez el complemento de control de código fuente. Permite al IDE pasar determinada información, como el nombre del autor de la llamada, al complemento. El IDE también recibe cierta información como la longitud máxima permitida para los comentarios y las capacidades del complemento.
 
  `ppvContext`Apunta a un `NULL` puntero. El complemento de control de código fuente puede asignar una estructura para su propio uso y almacenar un puntero a esa estructura en `ppvContext` . El IDE pasará este puntero a todas las demás funciones de la API de VSSCI, lo que permite que el complemento tenga información de contexto disponible sin tener que recurrir al almacenamiento global y admitir varias instancias del complemento. Esta estructura debe desasignarse cuando se llama a [SccUninitialize](../extensibility/sccuninitialize-function.md) .
@@ -91,7 +92,7 @@ enuncia Devuelve la longitud máxima permitida para otros comentarios.
 
  El `lpSccCaps` parámetro proporciona al complemento de control de código fuente un lugar donde almacenar marcadores que indica las capacidades del complemento. (Para obtener una lista completa de las marcadores de capacidad, consulte [marcas de capacidad](../extensibility/capability-flags.md)). Por ejemplo, si el complemento planea escribir los resultados en una función de devolución de llamada proporcionada por el llamador, el complemento establecería el bit de funcionalidad SCC_CAP_TEXTOUT. Esto indicaría al IDE que creara una ventana para los resultados del control de versiones.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Funciones de API de complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)
 - [SccUninitialize](../extensibility/sccuninitialize-function.md)
 - [SccOpenProject](../extensibility/sccopenproject-function.md)

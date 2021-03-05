@@ -1,4 +1,5 @@
 ---
+description: Esta función determina la ruta de acceso del proyecto principal de un proyecto especificado.
 title: Función SccGetParentProjectPath | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 825586ed29152bddf0f5dd909f71f96c96db8624
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e624d8765da65dc6231c0128e87ffd9d6cdf848d
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958406"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220617"
 ---
 # <a name="sccgetparentprojectpath-function"></a>SccGetParentProjectPath función)
 Esta función determina la ruta de acceso del proyecto principal de un proyecto especificado. Se llama a esta función cuando el usuario está agregando un proyecto de Visual Studio al control de código fuente.
@@ -63,7 +64,7 @@ de Cadena que identifica la ruta de acceso del proyecto (hasta SCC_PRJPATH_SIZE,
 ## <a name="return-value"></a>Valor devuelto
  Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:
 
-|Value|Descripción|
+|Valor|Descripción|
 |-----------|-----------------|
 |SCC_OK|La ruta de acceso del proyecto principal se obtuvo correctamente.|
 |SCC_E_INITIALIZEFAILED|No se pudo inicializar el proyecto.|
@@ -76,7 +77,7 @@ de Cadena que identifica la ruta de acceso del proyecto (hasta SCC_PRJPATH_SIZE,
 |SCC_E_CONNECTIONFAILURE|Problema de la conexión del almacén.|
 |SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Error no específico.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Esta función devuelve un código de éxito o error y, si se realiza correctamente, rellena la variable `lpParentProjPath` con la ruta de acceso completa del proyecto al proyecto especificado.
 
  Esta función devuelve la ruta de acceso del proyecto principal de un proyecto existente. En el caso del proyecto raíz, la función devuelve la ruta de acceso del proyecto que se pasó (es decir, la misma ruta de acceso del proyecto raíz). Tenga en cuenta que una ruta de acceso del proyecto es una cadena que solo es significativa para el complemento de control de código fuente.
@@ -98,7 +99,7 @@ de Cadena que identifica la ruta de acceso del proyecto (hasta SCC_PRJPATH_SIZE,
 
  Si la entrada del registro se establece en DWORD: 00000001, Visual Studio no intenta usar estas nuevas funciones y las operaciones de agregar a control de código fuente funcionan como en versiones anteriores de Visual Studio.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Funciones de la API del complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)
 - [SccCreateSubProject](../extensibility/scccreatesubproject-function.md)
 - [SccGetProjPath](../extensibility/sccgetprojpath-function.md)

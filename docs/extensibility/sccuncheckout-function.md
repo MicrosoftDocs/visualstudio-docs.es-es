@@ -1,4 +1,5 @@
 ---
+description: Esta función deshace una operación de desprotección anterior, con lo que se restaura el contenido del archivo o archivos seleccionados al estado anterior a la desprotección.
 title: Función SccUncheckout | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3fdcd8cd94914763d103a6232c4f87c3ec93f216
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 33e0c4904a92d71e000d8c911d551eb8d0aab621
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836675"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221358"
 ---
 # <a name="sccuncheckout-function"></a>SccUncheckout (Función)
 Esta función deshace una operación de desprotección anterior, con lo que se restaura el contenido del archivo o archivos seleccionados al estado anterior a la desprotección. Se pierden todos los cambios realizados en el archivo desde la desprotección.
@@ -63,7 +64,7 @@ de Opciones específicas del complemento de control de código fuente.
 ## <a name="return-value"></a>Valor devuelto
  Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:
 
-|Value|Descripción|
+|Valor|Descripción|
 |-----------|-----------------|
 |SCC_OK|Deshacer desprotección realizada correctamente.|
 |SCC_E_FILENOTCONTROLLED|El archivo seleccionado no está bajo el control de código fuente.|
@@ -74,8 +75,8 @@ de Opciones específicas del complemento de control de código fuente.
 |SCC_E_PROJNOTOPEN|El proyecto no se ha abierto desde el control de código fuente.|
 |SCC_I_OPERATIONCANCELED|La operación se canceló antes de completarse.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Después de esta operación, `SCC_STATUS_CHECKEDOUT` se `SCC_STATUS_MODIFIED` borrarán las marcas y para los archivos en los que se realizó la desprotección de deshacer.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Funciones de API de complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)

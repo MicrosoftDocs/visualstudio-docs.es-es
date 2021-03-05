@@ -1,4 +1,5 @@
 ---
+description: Devuelve el siguiente conjunto de elementos de la enumeración de rutas de código.
 title: 'IEnumCodePaths2:: Next | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1f082a1318132623e1aaab738d99e700d30c913c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7782a2b962786b191849dbdc1a9a7f3f7c727e9f
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912878"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222697"
 ---
 # <a name="ienumcodepaths2next"></a>IEnumCodePaths2::Next
 Devuelve el conjunto de elementos siguiente de la enumeración.
@@ -56,6 +57,6 @@ enuncia Devuelve el número de elementos realmente devueltos en `rgelt` .
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si se puede devolver menos que el número solicitado de elementos; de lo contrario, devuelve un código de error.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)
 - [CODE_PATH](../../../extensibility/debugger/reference/code-path.md)

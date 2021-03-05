@@ -1,4 +1,5 @@
 ---
+description: Esta función agrega nuevos archivos al sistema de control de código fuente.
 title: Función SccAdd | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e7fc3a2a6fbf362d58ddd1bfe25c905354d1ebdb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f654429f8c3faefe05a6410a3c732a6a4b1d083b
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926865"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221734"
 ---
 # <a name="sccadd-function"></a>SccAdd función)
 Esta función agrega nuevos archivos al sistema de control de código fuente.
@@ -68,7 +69,7 @@ de Opciones específicas del complemento de control de código fuente.
 ## <a name="return-value"></a>Valor devuelto
  Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:
 
-|Value|Descripción|
+|Valor|Descripción|
 |-----------|-----------------|
 |SCC_OK|La operación de agregar se realizó correctamente.|
 |SCC_E_FILEALREADYEXISTS|El archivo seleccionado ya está bajo control de código fuente.|
@@ -81,7 +82,7 @@ de Opciones específicas del complemento de control de código fuente.
 |SCC_I_RELOADFILE|Es necesario volver a cargar un archivo o proyecto.|
 |SCC_E_FILENOTEXIST|No se encontró el archivo local.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Normalmente, `fOptions` se reemplaza aquí por una matriz, `pfOptions` , con una `LONG` especificación de opción por archivo. Esto se debe a que el tipo de archivo puede variar de un archivo a un archivo.
 
 > [!NOTE]
@@ -89,7 +90,7 @@ de Opciones específicas del complemento de control de código fuente.
 
  A continuación se muestra la lista de marcas usadas en la `pfOptions` matriz:
 
-|Opción|Value|Significado|
+|Opción|Valor|Significado|
 |------------|-----------|-------------|
 |SCC_FILETYPE_AUTO|0x00|El complemento de control de código fuente debe detectar el tipo de archivo.|
 |SCC_FILETYPE_TEXT|0x01|Indica un archivo de texto ASCII.|
@@ -100,5 +101,5 @@ de Opciones específicas del complemento de control de código fuente.
 |SCC_FILETYPE_UTF16LE|0x20|Trata el archivo como texto Unicode en formato UTF16 Little Endian.|
 |SCC_FILETYPE_UTF16BE|0x40|Trata el archivo como texto Unicode en formato UTF16 Big Endian.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Funciones de la API del complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)

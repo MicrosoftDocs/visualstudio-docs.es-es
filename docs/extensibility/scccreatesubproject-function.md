@@ -1,4 +1,5 @@
 ---
+description: Esta función crea un subproyecto con el nombre especificado en un proyecto primario existente especificado por el argumento lpParentProjPath.
 title: Función SccCreateSubProject | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ed763635d5629400c70c53497c7a798e0ac38f2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 38fb6a18954b0a2f976fad4b24819a08ed868ab6
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943132"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221618"
 ---
 # <a name="scccreatesubproject-function"></a>SccCreateSubProject función)
 Esta función crea un subproyecto con el nombre especificado en un proyecto primario existente especificado por el `lpParentProjPath` argumento.
@@ -68,7 +69,7 @@ de Nombre sugerido del subproyecto (hasta SCC_PRJPATH_SIZE, incluido el terminad
 ## <a name="return-value"></a>Valor devuelto
  Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:
 
-|Value|Descripción|
+|Valor|Descripción|
 |-----------|-----------------|
 |SCC_OK|El subproyecto se creó correctamente.|
 |SCC_E_INITIALIZEFAILED|No se pudo inicializar el proyecto primario.|
@@ -82,7 +83,7 @@ de Nombre sugerido del subproyecto (hasta SCC_PRJPATH_SIZE, incluido el terminad
 |SCC_E_CONNECTIONFAILURE|Se produjo un problema de conexión del complemento de control de código fuente.|
 |SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Error no específico.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Si ya existe un subproyecto con el nombre, la función puede cambiar el nombre predeterminado para crear uno único, por ejemplo, agregando "_ \<number> " a él. El autor de la llamada debe estar preparado para aceptar los cambios en `lpUser` , `lpSubProjPath` y `lpAuxProjPath` . Los `lpSubProjPath` `lpAuxProjPath` argumentos y se utilizan después en una llamada a [SccOpenProject](../extensibility/sccopenproject-function.md). No deben ser modificados por el autor de la llamada después de la devolución. Estas cadenas proporcionan una manera para que el complemento de control de código fuente realice el seguimiento de la información que necesita para asociarse a un proyecto. El IDE del llamador no mostrará estos dos parámetros en la devolución, porque el complemento puede utilizar una cadena con formato que podría no ser adecuada para la visualización. La función devuelve un código de éxito o error y, si se realiza correctamente, rellena la variable `lpSubProjPath` con la ruta de acceso completa del proyecto al nuevo proyecto.
 
  Esta función es similar a [SccGetProjPath](../extensibility/sccgetprojpath-function.md), con la salvedad de que crea de forma silenciosa un proyecto en lugar de solicitar al usuario que seleccione uno. Cuando `SccCreateSubProject` se llama a la función, `lpParentProjName` y no estará `lpAuxProjPath` vacía y se corresponderá con un proyecto válido. Normalmente, el IDE recibe estas cadenas desde una llamada anterior a la `SccGetProjPath` función o a [SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md).
@@ -98,7 +99,7 @@ de Nombre sugerido del subproyecto (hasta SCC_PRJPATH_SIZE, incluido el terminad
 
  Si la entrada del registro se establece en DWORD: 00000001, Visual Studio no intenta usar estas nuevas funciones y las operaciones de agregar a control de código fuente funcionan como en versiones anteriores de Visual Studio.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Funciones de la API del complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)
 - [SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md)
 - [SccGetProjPath](../extensibility/sccgetprojpath-function.md)

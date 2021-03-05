@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz enumera los programas que se ejecutan en la sesión de depuración actual.
 title: IEnumDebugPrograms2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 04566b4a8dae7f25f799d08780c93936009adef8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2b0a593d6168b7d34f97802a0b3b1b0a5c141821
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890752"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224231"
 ---
 # <a name="ienumdebugprograms2"></a>IEnumDebugPrograms2
 Esta interfaz enumera los programas que se ejecutan en la sesión de depuración actual.
@@ -45,7 +46,7 @@ IEnumDebugPrograms2 : IUnknown
 |[Clonar](../../../extensibility/debugger/reference/ienumdebugprograms2-clone.md)|Crea un enumerador que contiene el mismo estado de enumeración que el enumerador actual.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugprograms2-getcount.md)|Obtiene el número de programas de un enumerador.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Visual Studio usa esta interfaz para:
 
 - Rellene la ventana **módulos** (llamando a [EnumPrograms](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md) y llamando a [EnumModules (](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md) en cada programa).
@@ -63,7 +64,7 @@ IEnumDebugPrograms2 : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
 - [EnumPrograms](../../../extensibility/debugger/reference/idebugengine2-enumprograms.md)
 - [EnumPrograms](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md)

@@ -1,4 +1,5 @@
 ---
+description: Este método devuelve una copia de la enumeración Fields actual como un objeto independiente.
 title: 'IEnumDebugFields:: Clone | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b2a9cc66e0e3b56d27c71147bd1b77ee3e559b6b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 965bc201646c7e068c58f9238dccba9a9e587d26
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896953"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224907"
 ---
 # <a name="ienumdebugfieldsclone"></a>IEnumDebugFields::Clone
 Este método devuelve una copia de la enumeración actual como un objeto independiente.
@@ -46,8 +47,8 @@ int Clone(
 ## <a name="property-valuereturn-value"></a>Valor de propiedad y valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  La copia de la enumeración tiene el mismo estado que el original en el momento en que se llama a este método. Sin embargo, los Estados de la copia y del original son independientes y se pueden cambiar individualmente.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

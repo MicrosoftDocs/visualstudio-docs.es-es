@@ -1,4 +1,5 @@
 ---
+description: Esta función cambia el nombre de un archivo en el sistema de control de código fuente.
 title: Función SccRename | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b4579644b04002ae9da3361ba35c63472eef637
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dcfb68518f42e969b7c9d52acfb37723e9774f97
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836753"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221345"
 ---
 # <a name="sccrename-function"></a>SccRename (Función)
 Esta función cambia el nombre de un archivo en el sistema de control de código fuente.
@@ -53,7 +54,7 @@ de Nombre de archivo completo del archivo cuyo nombre se va a cambiar.
 ## <a name="return-value"></a>Valor devuelto
  Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:
 
-|Value|Descripción|
+|Valor|Descripción|
 |-----------|-----------------|
 |SCC_OK|Operación de cambio de nombre completada correctamente.|
 |SCC_E_PROJNOTOPEN|El proyecto no está abierto bajo control de código fuente.|
@@ -64,8 +65,8 @@ de Nombre de archivo completo del archivo cuyo nombre se va a cambiar.
 |SCC_E_OPNOTPERFORMED|No se realizó la operación.|
 |SCC_E_NONSPECIFICERROR|Se produjo un error no especificado o general.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Esta función se puede usar para cambiar el nombre de un archivo o moverlo de una ubicación a otra en el sistema de control de código fuente. El complemento de control de código fuente no debe intentar tener acceso al archivo en el disco. Es responsabilidad del IDE cambiar el nombre del archivo local.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Funciones de API de complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)

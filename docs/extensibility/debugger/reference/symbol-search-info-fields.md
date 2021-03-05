@@ -1,4 +1,5 @@
 ---
+description: Especifica el tipo de información de símbolos que se va a recuperar.
 title: SYMBOL_SEARCH_INFO_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 38d3c7fe6333783dde092674657ea78d146d53aa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6bce694110c76fb831dea14026e1810c7c318edd
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99846600"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221878"
 ---
 # <a name="symbol_search_info_fields"></a>SYMBOL_SEARCH_INFO_FIELDS
 Especifica el tipo de información de símbolos que se va a recuperar.
@@ -45,14 +46,14 @@ public enum enum_SYMBOL_SEARCH_INFO_FIELDS
 
 ```
 
-## <a name="fields"></a>Campos
+## <a name="fields"></a>Fields
  `SSIF_NONE`\
  Indica que no hay marcas
 
  `SSIF_VERBOSE_SEARCH_INFO`\
  Devuelve todas las rutas de acceso de búsqueda usadas para buscar símbolos
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Estas marcas se pasan como un parámetro al método [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) para determinar la cantidad de información devuelta.
 
 > [!NOTE]

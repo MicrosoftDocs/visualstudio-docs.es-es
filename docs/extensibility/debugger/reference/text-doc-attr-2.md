@@ -1,4 +1,5 @@
 ---
+description: Describe los atributos de un documento.
 title: TEXT_DOC_ATTR_2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e7113cfead52348a1d1a85973b90014ca53226ed
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c8351753c5e8da9a320bd93c17e8138dedaff03d
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850731"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221865"
 ---
 # <a name="text_doc_attr_2"></a>TEXT_DOC_ATTR_2
 Describe los atributos de un documento.
@@ -40,7 +41,7 @@ public const uint TEXT_DOC_ATTR_READONLY_2 = 0x00000001;
  `TEXT_DOC_ATTR_READONLY_2`\
  Indica que el documento es de solo lectura.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 
 > [!NOTE]
 > En realidad, este valor no está definido en el ensamblado para C#. En su lugar, debe copiar la definición en el archivo de código fuente.

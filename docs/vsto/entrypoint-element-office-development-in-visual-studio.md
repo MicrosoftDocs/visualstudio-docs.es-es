@@ -1,4 +1,5 @@
 ---
+description: Cada elemento entryPoint del espacio de nombres vstav3 identifica un ensamblado de personalización que se debe ejecutar cuando se instala esta aplicación ClickOnce.
 title: '&lt;entryPoint &gt; (elemento, desarrollo de Office en Visual Studio)'
 titleSuffix: ''
 ms.custom: seodec18
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a75729d4be4aa96c3c118fed126af3ff84c18bcb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 581274ea58dafa8021cb456a0c7cb1e6bf98da32
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910454"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223724"
 ---
 # <a name="ltentrypointgt-element-office-development-in-visual-studio"></a>&lt;entryPoint &gt; (elemento, desarrollo de Office en Visual Studio)
   Cada elemento `entryPoint` del espacio de nombres `vstav3` identifica un ensamblado de personalización que se debe ejecutar cuando esta aplicación [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] se instala.
@@ -43,12 +44,12 @@ ms.locfileid: "99910454"
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|`class`|Necesario. Identifica un ensamblado de personalización que se va a ejecutar. La sintaxis de este atributo es *NamespaceName.ClassName*.|
+|`class`|Obligatorio. Identifica un ensamblado de personalización que se va a ejecutar. La sintaxis de este atributo es *NamespaceName.ClassName*.|
 
  `entryPoint` tiene el siguiente elemento.
 
 ### <a name="assemblyidentity"></a>assemblyIdentity
- Necesario. El elemento `assemblyIdentity` en el espacio de nombres `vstav3` hace referencia a un elemento `assemblyIdentity` en el manifiesto de aplicación [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] .
+ Obligatorio. El elemento `assemblyIdentity` en el espacio de nombres `vstav3` hace referencia a un elemento `assemblyIdentity` en el manifiesto de aplicación [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] .
 
  El rol de `assemblyIdentity` y sus atributos se define en [&#60;assemblyIdentity&#62; elemento &#40;ClickOnce Application&#41;](../deployment/assemblyidentity-element-clickonce-application.md).
 

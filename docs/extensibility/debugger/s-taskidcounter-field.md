@@ -1,4 +1,5 @@
 ---
+description: Siguiente identificador disponible para un objeto System. Threading. Tasks. Task.
 title: s_taskIdCounter campo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c7ee7c76e02d08f0893fedee2530a74ef235e66a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7f57a69061912297bb1c09b02828d3cbba75a808
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961032"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223361"
 ---
 # <a name="s_taskidcounter-field"></a>s_taskIdCounter (Campo)
 Siguiente identificador disponible para un <xref:System.Threading.Tasks.Task> objeto.
@@ -34,5 +35,5 @@ Siguiente identificador disponible para un <xref:System.Threading.Tasks.Task> ob
 
 ## <a name="remarks"></a>Observaciones
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Clase de tarea: miembros internos](../../extensibility/debugger/task-class-internal-members.md)

@@ -1,4 +1,5 @@
 ---
+description: Esta función permite al usuario buscar archivos que ya están en el sistema de control de código fuente y, posteriormente, hacer que dichos archivos formen parte del proyecto actual.
 title: Función SccAddFromScc | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e35ae460d6ceb505bc7ad64a0e522bf2841260f2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2bbc321d7ff7e335b28f6bc7430fb0f8dce3d57c
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99886618"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221709"
 ---
 # <a name="sccaddfromscc-function"></a>SccAddFromScc función)
 Esta función permite al usuario buscar archivos que ya están en el sistema de control de código fuente y, posteriormente, hacer que dichos archivos formen parte del proyecto actual. Por ejemplo, esta función puede obtener un archivo de encabezado común en el proyecto actual sin copiar el archivo. La matriz devuelta de archivos, `lplpFileNames` , contiene la lista de archivos que el usuario desea agregar al proyecto IDE.
@@ -53,13 +54,13 @@ de Identificador de la ventana del IDE que el complemento de control de código 
 ## <a name="return-value"></a>Valor devuelto
  Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:
 
-|Value|Descripción|
+|Valor|Descripción|
 |-----------|-----------------|
 |SCC_OK|Los archivos se han encontrado y agregado correctamente al proyecto.|
 |SCC_I_OPERATIONCANCELED|La operación se canceló sin ningún efecto.|
 |SCC_I_RELOADFILE|Es necesario volver a cargar un archivo o proyecto.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  El IDE llama a esta función. Si el complemento de control de código fuente admite la especificación de una carpeta de destino local, el IDE pasa `lpnFiles` = 1 y pasa el nombre de la carpeta local a `lplpFileNames` .
 
  Cuando se devuelve la llamada a la `SccAddFromScc` función, el complemento tiene asignados valores a `lpnFiles` y `lplpFileNames` , asignando la memoria para la matriz de nombres de archivo según sea necesario (tenga en cuenta que esta asignación reemplaza el puntero en `lplpFileNames` ). El complemento de control de código fuente es responsable de colocar todos los archivos en el directorio del usuario o en la carpeta designada. A continuación, el IDE agrega los archivos al proyecto IDE.
@@ -71,6 +72,6 @@ de Identificador de la ventana del IDE que el complemento de control de código 
 > [!NOTE]
 > Las versiones iniciales de la API de VSSCI no proporcionaban una manera de indicar el proyecto de destino para los archivos agregados. Para dar cabida a esto, se ha mejorado la semántica del `lplpFIleNames` parámetro para convertirlo en un parámetro in/out en lugar de un parámetro de salida. Si solo se especifica un archivo, es decir, el valor al que apunta `lpnFiles` = 1, el primer elemento de `lplpFileNames` contiene la carpeta de destino. Para usar estas nuevas semánticas, el IDE llama `SccSetOption` a la función con el `nOption` parámetro establecido en `SCC_OPT_SHARESUBPROJ` . Si un complemento de control de código fuente no admite la semántica, devuelve `SCC_E_OPTNOTSUPPORTED` . Al hacerlo, se deshabilita el uso de la característica **Agregar desde el control de código fuente** . Si un complemento admite la característica **Agregar de control de código fuente** ( `SCC_CAP_ADDFROMSCC` ), debe admitir la nueva semántica y devolver `SCC_I_SHARESUBPROJOK` .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Funciones de la API del complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)
 - [SccSetOption](../extensibility/sccsetoption-function.md)

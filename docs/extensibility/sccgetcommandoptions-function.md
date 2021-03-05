@@ -1,4 +1,5 @@
 ---
+description: Esta función solicita al usuario opciones avanzadas para un comando determinado.
 title: Función SccGetCommandOptions | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b1f465e6709932cd89794c5c0558d608fadd2a8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 400b778cf5e26b0cabad0fb19c548b2faa0a803f
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965205"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220812"
 ---
 # <a name="sccgetcommandoptions-function"></a>SccGetCommandOptions función)
 Esta función solicita al usuario opciones avanzadas para un comando determinado.
@@ -53,7 +54,7 @@ de La estructura de la opción (también puede ser `NULL` ).
 ## <a name="return-value"></a>Valor devuelto
  Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:
 
-|Value|Descripción|
+|Valor|Descripción|
 |-----------|-----------------|
 |SCC_OK|Correcto.|
 |SCC_I_ADV_SUPPORT|El complemento de control de código fuente admite opciones avanzadas para el comando.|
@@ -63,7 +64,7 @@ de La estructura de la opción (también puede ser `NULL` ).
 |SCC_E_ACCESSFAILURE|Hubo un problema al obtener acceso al sistema de control de código fuente, probablemente debido a problemas de red o de contención. Se recomienda un reintento.|
 |SCC_E_NONSPECIFICERROR|Error no específico.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  El IDE llama a esta función por primera vez con `ppvOptions` = `NULL` para determinar si el complemento de control de código fuente admite la característica opciones avanzadas del comando especificado. Si el complemento admite la característica para ese comando, el IDE llama de nuevo a esta función cuando el usuario solicita opciones avanzadas (normalmente se implementa como un botón **avanzado** en un cuadro de diálogo) y proporciona un puntero no nulo para `ppvOptions` que señala a un `NULL` puntero. El complemento almacena las opciones avanzadas especificadas por el usuario en una estructura privada y devuelve un puntero a esa estructura en `ppvOptions` . A continuación, esta estructura se pasa a todas las demás funciones de la API del complemento de control de código fuente que necesiten conocer información, incluidas las llamadas subsiguientes a la `SccGetCommandOptions` función.
 
  Un ejemplo puede ayudar a aclarar esta situación.
@@ -79,6 +80,6 @@ de La estructura de la opción (también puede ser `NULL` ).
 > [!NOTE]
 > El comando `SCC_COMMAND_OPTIONS` se usa cuando el IDE muestra un cuadro de diálogo de **Opciones** que permite al usuario establecer las preferencias que controlan el funcionamiento de la integración. Si el complemento de control de código fuente desea proporcionar su propio cuadro de diálogo Preferencias, puede mostrarlo desde un botón **avanzado** del cuadro de diálogo Preferencias del IDE. El complemento es el único responsable de obtener y conservar esta información; el IDE no lo utiliza ni lo modifica.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Funciones de la API del complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)
 - [Código de comando](../extensibility/command-code-enumerator.md)

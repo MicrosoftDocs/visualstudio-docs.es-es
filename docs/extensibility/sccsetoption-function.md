@@ -1,4 +1,5 @@
 ---
+description: Esta función establece las opciones que controlan el comportamiento del complemento de control de código fuente.
 title: Función SccSetOption | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33ef775f33194a616d93478aecfdcceec446ebe8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e25647eb8d2e5796665f072af6df43b2f585c7b0
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836701"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221384"
 ---
 # <a name="sccsetoption-function"></a>SccSetOption (Función)
 Esta función establece las opciones que controlan el comportamiento del complemento de control de código fuente.
@@ -48,13 +49,13 @@ de Configuración de la opción.
 ## <a name="return-value"></a>Valor devuelto
  Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:
 
-|Value|Descripción|
+|Valor|Descripción|
 |-----------|-----------------|
 |SCC_OK|La opción se estableció correctamente.|
 |SCC_I_SHARESUBPROJOK|Se devuelve si `nOption` era `SCC_OPT_SHARESUBPROJ` y el complemento de control de código fuente permite que el IDE establezca la carpeta de destino.|
 |SCC_E_OPNOTSUPPORTED|No se ha establecido la opción y no se debe confiar en ella.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  El IDE llama a esta función para controlar el comportamiento del complemento de control de código fuente. El primer parámetro, `nOption` , indica el valor que se va a establecer, mientras que el segundo, `dwVal` , indica qué hacer con ese valor. El complemento almacena esta información asociada a `pvContext``,` , por lo que el IDE debe llamar a esta función después de llamar a [SccInitialize](../extensibility/sccinitialize-function.md) (pero no necesariamente después de cada llamada a [SccOpenProject](../extensibility/sccopenproject-function.md)).
 
  Resumen de las opciones y sus valores:
@@ -83,7 +84,7 @@ de Configuración de la opción.
 ## <a name="scc_opt_sharesubproj"></a>SCC_OPT_SHARESUBPROJ
  Si `nOption` se establece en `SCC_OPT_SHARESUBPROJ` , el IDE está probando si el complemento de control de código fuente puede utilizar una carpeta local especificada al agregar archivos desde el control de código fuente. En este caso, el valor del parámetro no es `dwVal` relevante. Si el complemento permite al IDE especificar la carpeta de destino local a la que se agregarán los archivos desde el control de código fuente cuando se llama a [SccAddFromScc](../extensibility/sccaddfromscc-function.md) , el complemento debe devolver `SCC_I_SHARESUBPROJOK` cuando `SccSetOption` se llame a la función. A continuación, el IDE utiliza el `lplpFileNames` parámetro de la `SccAddFromScc` función que se va a pasar a la carpeta de destino. El complemento utiliza esa carpeta de destino para colocar los archivos agregados desde el control de código fuente. Si el complemento no devuelve `SCC_I_SHARESUBPROJOK` cuando `SCC_OPT_SHARESUBPROJ` se establece la opción, el IDE supone que el complemento solo puede Agregar archivos en la carpeta local actual.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Funciones de API de complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)
 - [SccInitialize](../extensibility/sccinitialize-function.md)
 - [SccOpenProject](../extensibility/sccopenproject-function.md)

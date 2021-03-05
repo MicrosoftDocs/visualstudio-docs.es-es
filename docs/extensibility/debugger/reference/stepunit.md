@@ -1,4 +1,5 @@
 ---
+description: Especifica la unidad de paso para la ejecución paso a paso.
 title: STEPUNIT | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f42c6af308770132343e18b95a9f839717f6d401
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f628039cdd9715d9463b0def9912da8f78ef6b84
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840098"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221891"
 ---
 # <a name="stepunit"></a>STEPUNIT
 Especifica la unidad de paso para la ejecución paso a paso.
@@ -44,7 +45,7 @@ enum enum_STEPUNIT {
 };
 ```
 
-## <a name="fields"></a>Campos
+## <a name="fields"></a>Fields
  `STEP_STATEMENT`\
  Pasos por instrucción.
 
@@ -54,7 +55,7 @@ enum enum_STEPUNIT {
  `STEP_INSTRUCTION`\
  Pasos por instrucción.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Se pasa como argumento al método [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md) .
 
 ## <a name="requirements"></a>Requisitos

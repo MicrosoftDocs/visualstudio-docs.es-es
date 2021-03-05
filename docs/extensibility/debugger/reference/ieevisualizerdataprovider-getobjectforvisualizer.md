@@ -1,4 +1,5 @@
 ---
+description: Este método obtiene el objeto que este visualizador representa.
 title: 'IEEVisualizerDataProvider:: GetObjectForVisualizer | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f7ac35b3bd3757e804840478c586100a3f56e656
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ec4cef6cf7a0715ee31ce5a88736581a0abd610b
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890934"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222918"
 ---
 # <a name="ieevisualizerdataprovidergetobjectforvisualizer"></a>IEEVisualizerDataProvider::GetObjectForVisualizer
 Este método obtiene el objeto que este visualizador representa.
@@ -46,10 +47,10 @@ enuncia Objeto que representa este visualizador.
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  `GetObjectForVisualizer` puede devolver una versión almacenada en caché del objeto. Si el llamador desea asegurarse de que el objeto está actualizado, llamará a [GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)
 - [GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

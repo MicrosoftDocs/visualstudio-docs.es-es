@@ -1,4 +1,5 @@
 ---
+description: Especifica el tipo de información que se va a recuperar para un proceso.
 title: PROCESS_INFO_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 451a6ea5334006bb23e8961595f4de85c985b8ca
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5869ede1e43cc6b47f271691de51b948d72a7849
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895952"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222112"
 ---
 # <a name="process_info_fields"></a>PROCESS_INFO_FIELDS
 Especifica el tipo de información que se va a recuperar para un proceso.
@@ -56,7 +57,7 @@ public enum enum_PROCESS_INFO_FIELDS {
 };
 ```
 
-## <a name="fields"></a>Campos
+## <a name="fields"></a>Fields
  `PIF_FILE_NAME`\
  Inicialice o utilice el `bstrFileName` campo de la estructura de [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) .
 
@@ -84,7 +85,7 @@ public enum enum_PROCESS_INFO_FIELDS {
  `PIF_ALL`\
  Rellena todos los campos.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Se pasa al método [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) para indicar qué campos de la estructura de [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) se van a inicializar.
 
  También se utiliza en `Fields` el campo de la `PROCESS_INFO` estructura para indicar qué campos se usan y son válidos.

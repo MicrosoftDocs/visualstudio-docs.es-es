@@ -1,4 +1,5 @@
 ---
+description: Especifica la versión mínima del .NET Framework que requiere la plantilla.
 title: RequiredFrameworkVersion (Elemento, Plantillas de Visual Studio)
 titleSuffix: ''
 ms.custom: SEO-VS-2020
@@ -14,12 +15,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 211393ea65f7ca31f80134c48863b0092478b3f3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3700735f987da7320d569b2cee020f0d8a072bdc
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836987"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221801"
 ---
 # <a name="requiredframeworkversion-element-visual-studio-templates"></a>RequiredFrameworkVersion (elemento, plantillas de Visual Studio)
 
@@ -57,7 +58,7 @@ Especifica la versión mínima del .NET Framework que requiere la plantilla. Hac
 
  El texto debe ser el número de versión mínimo de la .NET Framework que se requiere para la plantilla.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 
 `RequiredFrameworkVersion` es un elemento opcional. Use este elemento solo si la plantilla admite una versión mínima específica (y versiones posteriores, si hay alguna) de la .NET Framework. Si especifica el `RequiredFrameworkVersion` elemento y la plantilla no es compatible con una versión mínima específica del .NET Framework, la lista desplegable versión de la **plataforma de destino** se muestra cuando no es aplicable.
 

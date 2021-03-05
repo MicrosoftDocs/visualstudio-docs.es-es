@@ -1,4 +1,5 @@
 ---
+description: Esta estructura especifica información sobre un tipo de campo tomado de un símbolo PDB.
 title: PDB_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: df6a41801f4cce272d896776745ac0cc507d0e38
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ced96c1241c64abc764a052046e5ecab1a986bdc
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890024"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222138"
 ---
 # <a name="pdb_type"></a>PDB_TYPE
 
@@ -55,7 +56,7 @@ GUID del módulo que contiene este campo.
 `symid`\
 IDENTIFICADOR del símbolo que corresponde a este campo.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 
 Esta estructura aparece como parte de la Unión en la estructura [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) cuando el `dwKind` campo de la `TYPE_INFO` estructura se establece en `TYPE_KIND_PDB` (un valor de la enumeración [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) ).
 
@@ -67,7 +68,7 @@ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)

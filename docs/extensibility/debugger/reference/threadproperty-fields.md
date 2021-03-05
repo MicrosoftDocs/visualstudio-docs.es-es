@@ -1,4 +1,5 @@
 ---
+description: Especifica la información de un subproceso que se va a recuperar.
 title: THREADPROPERTY_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3efe97518b0952c1207eac97fe9151f36c686f43
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 698c803304cf5efd3375b6d49e4dedbc4622f4c1
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99846561"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221839"
 ---
 # <a name="threadproperty_fields"></a>THREADPROPERTY_FIELDS
 Especifica la información de un subproceso que se va a recuperar.
@@ -52,7 +53,7 @@ public enum enum_THREADPROPERTY_FIELDS {
 };
 ```
 
-## <a name="fields"></a>Campos
+## <a name="fields"></a>Fields
  `TPF_ID`\
  Inicialice/use el `dwThreadId` campo de la estructura [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) .
 
@@ -74,7 +75,7 @@ public enum enum_THREADPROPERTY_FIELDS {
  `TPF_ALLFIELDS`\
  Especifica todos los campos.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Estos valores se pasan como argumento al método [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) para indicar qué campos de la estructura [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) se van a inicializar.
 
  Estos valores también se usan en `dwFields` el miembro de la `THREADPROPERTIES` estructura para indicar qué campos se usan y son válidos.

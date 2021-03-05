@@ -1,4 +1,5 @@
 ---
+description: Esta función solicita al usuario una ruta de acceso del proyecto, que es una cadena que solo es significativa para el complemento de control de código fuente.
 title: Función SccGetProjPath | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bad1cae248c0fe3babd920e0773825d9d36b7042
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e3a08c09e1b04cf5e5f826520efcf64ead9113be
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844572"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220708"
 ---
 # <a name="sccgetprojpath-function"></a>SccGetProjPath función)
 Esta función solicita al usuario una ruta de acceso del proyecto, que es una cadena que solo es significativa para el complemento de control de código fuente. Se llama cuando el usuario es:
@@ -78,18 +79,18 @@ de Si es `TRUE` , el complemento de control de código fuente puede solicitar y 
 
 |Entrante|Interpretación|
 |--------------|--------------------|
-|true|El usuario puede crear un nuevo proyecto.|
-|FALSE|Es posible que el usuario no cree un nuevo proyecto.|
+|TRUE|El usuario puede crear un nuevo proyecto.|
+|false|Es posible que el usuario no cree un nuevo proyecto.|
 
 |Saliente|Interpretación|
 |--------------|--------------------|
-|true|Se creó un nuevo proyecto.|
-|FALSE|Se seleccionó un proyecto existente.|
+|TRUE|Se creó un nuevo proyecto.|
+|false|Se seleccionó un proyecto existente.|
 
 ## <a name="return-value"></a>Valor devuelto
  Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:
 
-|Value|Descripción|
+|Valor|Descripción|
 |-----------|-----------------|
 |SCC_OK|El proyecto se creó o recuperó correctamente.|
 |SCC_I_OPERATIONCANCELED|Operación cancelada.|
@@ -97,7 +98,7 @@ de Si es `TRUE` , el complemento de control de código fuente puede solicitar y 
 |SCC_E_CONNECTIONFAILURE|Hubo un problema al intentar conectarse al sistema de control de código fuente.|
 |SCC_E_NONSPECIFICERROR|Se ha producido un error no especificado.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  El propósito de esta función es que el IDE adquiera los parámetros `lpProjName` y `lpAuxProjPath` . Después de que el complemento de control de código fuente pida esta información al usuario, vuelve a pasar estas dos cadenas al IDE. El IDE conserva estas cadenas en su archivo de solución y las pasa a [SccOpenProject](../extensibility/sccopenproject-function.md) cada vez que el usuario abre este proyecto. Estas cadenas permiten que el complemento realice un seguimiento de la información asociada a un proyecto.
 
  Cuando se llama a la función por primera vez, `lpAuxProjPath` se establece en una cadena vacía. `lProjName` también puede estar vacío o puede contener el nombre del proyecto IDE, que el complemento de control de código fuente puede utilizar u omitir. Cuando la función devuelve correctamente, el complemento devuelve las dos cadenas correspondientes. El IDE no realiza suposiciones sobre estas cadenas, no las usará y no permitirá al usuario modificarlas. Si el usuario desea cambiar la configuración, el IDE llamará `SccGetProjPath` de nuevo y pasará los mismos valores que había recibido la hora anterior. Esto proporciona al complemento un control completo sobre estas dos cadenas.
@@ -113,6 +114,6 @@ de Si es `TRUE` , el complemento de control de código fuente puede solicitar y 
 
  Por ejemplo, si un usuario del Asistente para **nuevo proyecto** de Visual Studio agrega su proyecto al control de código fuente, Visual Studio llama a esta función y el complemento determina si es correcto crear un nuevo proyecto en el sistema de control de código fuente para que contenga el proyecto de Visual Studio. Si el usuario hace clic en **Cancelar** antes de completar el asistente, el proyecto nunca se crea. Si el usuario hace clic en **Aceptar**, Visual Studio llama a `SccOpenProject` , pasando `SCC_OPT_CREATEIFNEW` y el proyecto controlado por código fuente se crea en ese momento.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Funciones de la API del complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)
 - [SccOpenProject](../extensibility/sccopenproject-function.md)

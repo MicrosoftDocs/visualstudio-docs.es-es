@@ -1,4 +1,5 @@
 ---
+description: La tarea se canceló antes de alcanzar el estado de ejecución, o confirmó su cancelación y se completó sin excepción.
 title: TASK_STATE_CANCELED campo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76de853cfa1fbd524c87384da38a9438c6ac66bf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8e99148c223f86a0307a0588e7803a5fadf52d6a
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883576"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223334"
 ---
 # <a name="task_state_canceled-field"></a>TASK_STATE_CANCELED campo
 La tarea se canceló antes de alcanzar el estado de ejecución, o confirmó su cancelación y se completó sin excepción.
@@ -35,5 +36,5 @@ La tarea se canceló antes de alcanzar el estado de ejecución, o confirmó su c
 ## <a name="remarks"></a>Observaciones
  Si el campo [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) contiene este valor, la <xref:System.Threading.Tasks.Task.Status%2A> propiedad devuelve <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Clase de tarea: miembros internos](../../extensibility/debugger/task-class-internal-members.md)

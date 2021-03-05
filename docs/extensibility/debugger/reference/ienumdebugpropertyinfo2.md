@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz enumera DEBUG_PROPERTY_INFO estructuras.
 title: IEnumDebugPropertyInfo2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ecbb7db381261e1c836b48994eb0f208b619b3a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fea2dc5cf958f87463af9dfca9f29bec5d01a82b
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99842217"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224192"
 ---
 # <a name="ienumdebugpropertyinfo2"></a>IEnumDebugPropertyInfo2
 Esta interfaz enumera [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) estructuras.
@@ -45,7 +46,7 @@ IEnumDebugPropertyInfo2 : IUnknown
 |[Clonar](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-clone.md)|Crea un enumerador que contiene el mismo estado de enumeración que el enumerador actual.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-getcount.md)|Obtiene el número de estructuras de [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) en un enumerador.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  En general, una propiedad es una jerarquía de información que puede incluir un nombre, valor, dirección y tipo, así como cualquier otra información adecuada para el objeto de propiedad o el marco de pila asociados. Consulte [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) para obtener más información.
 
 ## <a name="requirements"></a>Requisitos
@@ -55,7 +56,7 @@ IEnumDebugPropertyInfo2 : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
 - [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
