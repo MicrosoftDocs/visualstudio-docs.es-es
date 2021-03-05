@@ -1,4 +1,5 @@
 ---
+description: El motor de depuración (DE) envía esta interfaz al administrador de depuración de la sesión (SDM) cuando el DE ha completado el control de un evento interceptado.
 title: IDebugInterceptExceptionCompleteEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d98f8653d851eb338a96f969d73a2514b555f400
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 93440facf13a230cd746400832afcb48971cd557
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890284"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165298"
 ---
 # <a name="idebuginterceptexceptioncompleteevent2"></a>IDebugInterceptExceptionCompleteEvent2
 El motor de depuración (DE) envía esta interfaz al administrador de depuración de la sesión (SDM) cuando el DE ha completado el control de un evento interceptado.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugInterceptExceptionCompleteEvent2 : IUnknown
@@ -41,7 +42,7 @@ IDebugInterceptExceptionCompleteEvent2 : IUnknown
 |------------|-----------------|
 |[GetInterceptCookie](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2-getinterceptcookie.md)|Devuelve el valor único asociado a la excepción controlada.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  [Interceptcurrentexception (](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) enviará este evento cuando el método haya completado correctamente el control de una excepción interceptada.
 
 ## <a name="requirements"></a>Requisitos
@@ -51,6 +52,6 @@ IDebugInterceptExceptionCompleteEvent2 : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
 - [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)

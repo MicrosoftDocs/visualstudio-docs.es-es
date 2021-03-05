@@ -1,4 +1,5 @@
 ---
+description: Determina si los símbolos de depuración se cargan para el módulo especificado dado el identificador del dominio de aplicación.
 title: 'IDebugComPlusSymbolProvider:: AreSymbolsLoaded | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: df11531cc90081aad45b887066ce0799af771747
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4e071f18442f66711b59c1063e7c2770ed772c60
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928723"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163985"
 ---
 # <a name="idebugcomplussymbolprovideraresymbolsloaded"></a>IDebugComPlusSymbolProvider::AreSymbolsLoaded
 Determina si los símbolos de depuración se cargan para el módulo especificado dado el identificador del dominio de aplicación.
@@ -73,5 +74,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

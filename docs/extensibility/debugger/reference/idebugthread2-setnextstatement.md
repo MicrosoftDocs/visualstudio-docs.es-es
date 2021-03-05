@@ -1,4 +1,5 @@
 ---
+description: Establece el puntero de instrucción actual en el contexto de código especificado.
 title: 'IDebugThread2:: SetNextStatement | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7c8a7aff8c6e902b20c5569e2553aececae835ad
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d29b351662ce5cb8aeda9a1f65e278349a0a3b18
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893716"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164479"
 ---
 # <a name="idebugthread2setnextstatement"></a>IDebugThread2::SetNextStatement
 Establece el puntero de instrucción actual en el contexto de código especificado.
@@ -51,16 +52,16 @@ de Un objeto [IDebugCodeContext2](../../../extensibility/debugger/reference/ideb
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error. En la tabla siguiente se muestran otros valores posibles.
 
-|Value|Descripción|
+|Valor|Descripción|
 |-----------|-----------------|
 |E_CANNOT_SET_NEXT_STATEMENT_ON_NONLEAF_FRAME|La siguiente instrucción no puede estar en un marco de pila más profundo en la pila de Marcos.|
 |E_CANNOT_SETIP_TO_DIFFERENT_FUNCTION|La siguiente instrucción no está asociada a ningún fotograma de la pila.|
 |E_CANNOT_SET_NEXT_STATEMENT_ON_EXCEPTION|Algunos motores de depuración no pueden establecer la siguiente instrucción después de una excepción.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  El puntero de instrucción indica la siguiente instrucción o instrucción que se va a ejecutar. Este método se usa para reintentar una línea de código fuente o para forzar la ejecución para que continúe en otra función, por ejemplo.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

@@ -1,4 +1,5 @@
 ---
+description: El motor de depuración (DE) envía esta interfaz al administrador de depuración de la sesión (SDM) cuando se crea un subproceso en un programa que se está depurando.
 title: IDebugThreadCreateEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d39b7f1120f2ee4d0548e2c8a0b9a75f2fe0bd56
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e6c792c3a3eff151bdbc035c8dbbaf6eaacb7bcf
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901605"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164388"
 ---
 # <a name="idebugthreadcreateevent2"></a>IDebugThreadCreateEvent2
 El motor de depuración (DE) envía esta interfaz al administrador de depuración de la sesión (SDM) cuando se crea un subproceso en un programa que se está depurando.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugThreadCreateEvent2 : IUnknown
@@ -41,7 +42,7 @@ IDebugThreadCreateEvent2 : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

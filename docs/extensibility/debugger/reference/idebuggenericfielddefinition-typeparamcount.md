@@ -1,4 +1,5 @@
 ---
+description: Recupera el número de parámetros de tipo que están asociados al campo genérico.
 title: 'IDebugGenericFieldDefinition:: TypeParamCount | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d006e55d9ca00ff828c59beb698441807f70c6e3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6ca50847ca5eb6538cfb4852a4543e02ab4c1fc0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903210"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165467"
 ---
 # <a name="idebuggenericfielddefinitiontypeparamcount"></a>IDebugGenericFieldDefinition::TypeParamCount
 Recupera el número de parámetros de tipo que están asociados al campo genérico.
@@ -45,8 +46,8 @@ int TypeParamCount(
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Si List \<T> , este método devuelve 1 y, si List \<T1,T2> , este método devuelve 2. Este método devuelve 0 si no hay ningún parámetro de tipo.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugGenericFieldDefinition](../../../extensibility/debugger/reference/idebuggenericfielddefinition.md)

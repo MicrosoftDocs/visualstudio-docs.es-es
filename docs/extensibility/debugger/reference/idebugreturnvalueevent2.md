@@ -1,4 +1,5 @@
 ---
+description: El motor de depuración (DE) envía esta interfaz al administrador de depuración de la sesión (SDM) después de salir de una función o de ella.
 title: IDebugReturnValueEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2bc76d7e7aaf9e443fc1dec08d83b3eb9e343e0d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0b0566453d5ce34f829f43fab465b4310942e44e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963060"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165844"
 ---
 # <a name="idebugreturnvalueevent2"></a>IDebugReturnValueEvent2
 El motor de depuración (DE) envía esta interfaz al administrador de depuración de la sesión (SDM) después de salir de una función o de ella.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugReturnValueEvent2 : IUnknown
@@ -41,7 +42,7 @@ IDebugReturnValueEvent2 : IUnknown
 |------------|-----------------|
 |[GetReturnValue](../../../extensibility/debugger/reference/idebugreturnvalueevent2-getreturnvalue.md)|Obtiene el valor devuelto al salir de una función.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  El valor devuelto por una función se puede obtener llamando a [GetReturnValue](../../../extensibility/debugger/reference/idebugreturnvalueevent2-getreturnvalue.md). El valor devuelto aparece en la ventana **automático** .
 
 ## <a name="requirements"></a>Requisitos
@@ -51,6 +52,6 @@ IDebugReturnValueEvent2 : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)

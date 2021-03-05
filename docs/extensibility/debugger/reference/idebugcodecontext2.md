@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz representa la posición inicial de una instrucción de código.
 title: IDebugCodeContext2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f03bef276d4f4aada1a173c45defd100e4becbf4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 228b6e84ca2f85803c4a248b966698b822bb572f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928696"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164102"
 ---
 # <a name="idebugcodecontext2"></a>IDebugCodeContext2
 Esta interfaz representa la posición inicial de una instrucción de código. Para la mayoría de las arquitecturas en tiempo de ejecución de hoy en día, un contexto de código puede considerarse una dirección en la secuencia de ejecución de un programa.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugCodeContext2 : IDebugMemoryContext2
@@ -42,7 +43,7 @@ IDebugCodeContext2 : IDebugMemoryContext2
 |[GetDocumentContext](../../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md)|Obtiene el contexto del documento que corresponde al contexto de código activo.|
 |[GetLanguageInfo](../../../extensibility/debugger/reference/idebugcodecontext2-getlanguageinfo.md)|Obtiene la información de lenguaje para este contexto de código.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  La diferencia clave entre una `IDebugCodeContext2` interfaz y una interfaz [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) es que `IDebugCodeContext2` siempre se alinea con la instrucción. Esto significa que `IDebugCodeContext2` siempre apunta al principio de una instrucción, mientras que `IDebugMemoryContext2` puede apuntar a cualquier byte de memoria de la arquitectura en tiempo de ejecución. `IDebugCodeContext2` se incrementa mediante instrucciones en lugar de por el tamaño de almacenamiento básico (normalmente byte).
 
 ## <a name="requirements"></a>Requisitos
@@ -52,7 +53,7 @@ IDebugCodeContext2 : IDebugMemoryContext2
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)
 - [CanSetNextStatement](../../../extensibility/debugger/reference/idebugthread2-cansetnextstatement.md)
 - [SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md)

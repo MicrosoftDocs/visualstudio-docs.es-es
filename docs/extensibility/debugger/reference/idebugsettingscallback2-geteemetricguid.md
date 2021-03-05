@@ -1,4 +1,5 @@
 ---
+description: Recupera el identificador único para una métrica del evaluador de expresiones a partir de su nombre.
 title: 'IDebugSettingsCallback2:: GetEEMetricGuid | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 49da8564ef5544c3c633dc7285b4357b8312182f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 16bc9671ee9f982eaf924d8966f2fc39a274eb6e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875879"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165779"
 ---
 # <a name="idebugsettingscallback2geteemetricguid"></a>IDebugSettingsCallback2::GetEEMetricGuid
 Recupera el identificador único para una métrica del evaluador de expresiones a partir de su nombre.
@@ -59,5 +60,5 @@ enuncia Devuelve el identificador único de la métrica.
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

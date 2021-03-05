@@ -1,4 +1,5 @@
 ---
+description: Crea un enumerador para los parámetros del método.
 title: 'IDebugMethodField:: EnumParameters | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4c164fa08f4195d685bf7dd2faa120ff030e44c6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 51b0ca4d799bc5943a1effd612947b5822730d37
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837728"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164999"
 ---
 # <a name="idebugmethodfieldenumparameters"></a>IDebugMethodField::EnumParameters
 Crea un enumerador para los parámetros del método.
@@ -46,14 +47,14 @@ enuncia Devuelve un objeto [IEnumDebugFields](../../../extensibility/debugger/re
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, Devuelve S_OK o devuelve S_FALSE si no hay ningún parámetro. De lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Cada elemento es un objeto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) que representa distintos tipos de parámetros. Llame al método [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) en cada objeto para determinar exactamente qué tipo de parámetro representa el objeto.
 
  Un parámetro incluye el nombre de la variable y su tipo. El primer parámetro de un método de clase suele ser el puntero "this".
 
  Si solo se necesitan los tipos de los parámetros, llame al método [EnumArguments](../../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md) .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

@@ -1,4 +1,5 @@
 ---
+description: Recupera los parámetros de tipo dados el número de parámetros.
 title: 'IDebugGenericFieldDefinition:: GetFormalTypeParams | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: aa1401181f844be2e1fa3dfd9e45b627e2daae19
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 593e54c67e762d5ad1643f0481554fe98b5ba019
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904582"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165480"
 ---
 # <a name="idebuggenericfielddefinitiongetformaltypeparams"></a>IDebugGenericFieldDefinition::GetFormalTypeParams
 Recupera los parámetros de tipo dados el número de parámetros.
@@ -55,8 +56,8 @@ enuncia Matriz de parámetros de tipo.
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Devuelva los parámetros de tipo en orden de izquierda a derecha. Por ejemplo, Dictionary \<K,V> devuelve IDebugFormalGenericParameters {K, V}.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugGenericFieldDefinition](../../../extensibility/debugger/reference/idebuggenericfielddefinition.md)

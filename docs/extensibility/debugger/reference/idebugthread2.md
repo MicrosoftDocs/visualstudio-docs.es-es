@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz representa un subproceso que se ejecuta en un programa.
 title: IDebugThread2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3eb4710e3073ee49aa9660aa322b4638c4c0d24
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d8b09aa546e4711b1c11623a3596ba0e385b2a14
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901623"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164427"
 ---
 # <a name="idebugthread2"></a>IDebugThread2
 Esta interfaz representa un subproceso que se ejecuta en un programa.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugThread2 : IUnknown
@@ -55,7 +56,7 @@ IDebugThread2 : IUnknown
 |[GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)|Obtiene las propiedades que describen un subproceso.|
 |[GetLogicalThread](../../../extensibility/debugger/reference/idebugthread2-getlogicalthread.md)|Obtiene el subproceso lógico asociado a este subproceso físico.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Dado que un único subproceso físico puede ejecutarse en varios programas, más de un `IDebugThread2` programa puede representar el mismo subproceso físico.
 
  Cuando se produce un punto de interrupción o una excepción, se envía un evento mediante una llamada al [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md). Uno de los argumentos de este método es una `IDebugThread2` interfaz que representa el subproceso actual. [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) se usa para obtener la interfaz [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) para el marco de pila actual.
@@ -67,7 +68,7 @@ IDebugThread2 : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
 - [Evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
 - [GetThread](../../../extensibility/debugger/reference/idebugstackframe2-getthread.md)

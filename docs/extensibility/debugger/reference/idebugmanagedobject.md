@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz permite al evaluador de expresiones (EE) llamar a propiedades o métodos en instancias de clase de valor (por ejemplo, System. decimal) y establecer su valor sin llamar a Evaluate en el programa que se está depurando.
 title: IDebugManagedObject | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b90540aaf5f7e409c8fc7fa44126f195230317f8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7cb90893ab39a95dd3bd8046d8ba61a32064ccf7
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929815"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165232"
 ---
 # <a name="idebugmanagedobject"></a>IDebugManagedObject
 > [!IMPORTANT]
@@ -25,7 +26,7 @@ ms.locfileid: "99929815"
 
  Esta interfaz permite al evaluador de expresiones (EE) llamar a propiedades o métodos en instancias de clase de valor (por ejemplo, `System.Decimal` ) y establecer su valor sin llamar a [Evaluate](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md) en el programa que se está depurando.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugManagedObject : IDebugObject
@@ -45,7 +46,7 @@ IDebugManagedObject : IDebugObject
 |[GetManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject-getmanagedobject.md)|Devuelve una interfaz que representa el objeto de código administrado y desde el que se puede obtener cualquier interfaz de código administrado adecuada.|
 |[SetFromManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject-setfrommanagedobject.md)|Establece el valor de este objeto en el valor de un objeto de código administrado especificado.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Un evaluador de expresiones utiliza esta interfaz para almacenar un objeto de código administrado en un árbol de análisis.
 
 ## <a name="requirements"></a>Requisitos
@@ -55,6 +56,6 @@ IDebugManagedObject : IDebugObject
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces de evaluación de expresiones](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [Evaluate](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md)

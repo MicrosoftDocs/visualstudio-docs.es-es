@@ -1,4 +1,5 @@
 ---
+description: Extiende la interfaz IDebugCodeContext2 para habilitar la recuperación de interfaces de módulo y de proceso.
 title: IDebugCodeContext3 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,17 +14,17 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 14bcfb7498ad22156ae18998ebe5958aad1b9026
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: db806a4b45e855533e4ded1419f2d2117fb4f912
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928762"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164024"
 ---
 # <a name="idebugcodecontext3"></a>IDebugCodeContext3
 Extiende la interfaz [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) para habilitar la recuperación de interfaces de módulo y de proceso.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugCodeContext3 : IDebugCodeContext2
@@ -40,7 +41,7 @@ IDebugCodeContext3 : IDebugCodeContext2
 |[GetModule](../../../extensibility/debugger/reference/idebugcodecontext3-getmodule.md)|Recupera una referencia a la interfaz del módulo de depuración.|
 |[GetProcess](../../../extensibility/debugger/reference/idebugcodecontext3-getprocess.md)|Recupera una referencia a la interfaz del proceso de depuración.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Se trata de una interfaz opcional que, por lo general, no tiene que implementarse.
 
 ## <a name="requirements"></a>Requisitos

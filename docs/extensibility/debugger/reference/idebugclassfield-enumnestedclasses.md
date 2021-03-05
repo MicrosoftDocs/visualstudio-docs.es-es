@@ -1,4 +1,5 @@
 ---
+description: Crea un enumerador para las clases anidadas en esta clase.
 title: 'IDebugClassField:: EnumNestedClasses | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 63b42df8181ca12da1be2aca6faf1346406b621f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 87538db39df590fd3885f545e5442c7dafecb9a1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877439"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164271"
 ---
 # <a name="idebugclassfieldenumnestedclasses"></a>IDebugClassField::EnumNestedClasses
 Crea un enumerador para las clases anidadas en esta clase.
@@ -46,7 +47,7 @@ enuncia Devuelve un objeto [IEnumDebugFields](../../../extensibility/debugger/re
 ## <a name="return-value"></a>Valor devuelto
 Si es correcto, Devuelve S_OK o devuelve S_FALSE si no hay ninguna clase anidada. De lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Cada elemento de la enumeración es un objeto [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) que describe una clase anidada.
 
 Una clase anidada es una clase definida dentro de otra clase. Por ejemplo:
@@ -59,6 +60,6 @@ class RootClass {
 
 La enumeración [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) contiene un objeto que representa la `NestedClass` clase.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

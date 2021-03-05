@@ -1,4 +1,5 @@
 ---
+description: Proporciona marcas opcionales que se pueden usar para especificar información adicional al establecer un punto de interrupción.
 title: BP_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,17 +16,17 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ff3730d3903b71db78c8ecbc025bfe44d6e37f7f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b0a3ccb96aecf00943bc637b78fb5219c3273281
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853037"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165675"
 ---
 # <a name="bp_flags"></a>BP_FLAGS
 Proporciona marcas opcionales que se pueden usar para especificar información adicional al establecer un punto de interrupción.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_BP_FLAGS {
@@ -54,7 +55,7 @@ Especifica que el motor DE depuración (DE) debe asignar el punto de interrupci�
 `BP_FLAG_DONT_STOP`\
 Especifica que el punto de interrupción debe ser procesado por el motor de depuración, pero que el motor de depuración no debe detenerse en última instancia (es decir, no se debe enviar un objeto de evento [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) ). Esta marca está diseñada para usarse principalmente con puntos de seguimiento.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Se utiliza para el `dwFlags` miembro de las estructuras [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) y [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) .
 
 Estos valores se pueden combinar con una operación bit a bit `OR` .

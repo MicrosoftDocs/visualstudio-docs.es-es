@@ -1,4 +1,5 @@
 ---
+description: Obtiene el nombre del indizador predeterminado.
 title: 'IDebugClassField:: GetDefaultIndexer | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b223f85ff7453eba5777b3a6bde85350d7864e1e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 29ebdcab870ba18d38fa6957d37f09abb65db000
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948353"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164219"
 ---
 # <a name="idebugclassfieldgetdefaultindexer"></a>IDebugClassField::GetDefaultIndexer
 Obtiene el nombre del indizador predeterminado.
@@ -45,7 +46,7 @@ int GetDefaultIndexer(
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, Devuelve S_OK o devuelve S_FALSE si no hay ningún indizador predeterminado. De lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  El indizador predeterminado de una clase es la propiedad que se marca como la `Default` propiedad para los accesos de matriz. Esto es específico de [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] . A continuación se muestra un ejemplo de un indizador predeterminado declarado en [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] y cómo se usa.
 
 ```vb
@@ -78,5 +79,5 @@ Function GetItem(Index as Integer) as Integer
 End Function
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

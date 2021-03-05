@@ -1,4 +1,5 @@
 ---
+description: Obtiene el contexto del documento que corresponde a este contexto de código.
 title: 'IDebugCodeContext2:: GetDocumentContext | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: eaac527149d3224370f04d9dec46123b59568ac1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d99b67e76c8cc8719c77c88c8b93ca667c3a025a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928749"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164167"
 ---
 # <a name="idebugcodecontext2getdocumentcontext"></a>IDebugCodeContext2::GetDocumentContext
 Obtiene el contexto del documento que corresponde a este contexto de código. El contexto del documento representa una posición en el archivo de código fuente que corresponde al código fuente que generó esta instrucción.
@@ -46,9 +47,9 @@ enuncia Devuelve el objeto [IDebugDocumentContext2](../../../extensibility/debug
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error. Un motor de depuración debe devolver un código de error como `E_FAIL` cuando el `out` parámetro es como `null` cuando el contexto del código no tiene ninguna posición de origen asociada.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Por lo general, el contexto del documento se puede considerar como una posición en un archivo de código fuente mientras que el contexto del código es una posición de una instrucción de código en una secuencia de ejecución.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

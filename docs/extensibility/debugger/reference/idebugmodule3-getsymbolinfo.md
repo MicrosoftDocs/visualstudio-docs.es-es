@@ -1,4 +1,5 @@
 ---
+description: Recupera una lista de rutas de acceso en las que se buscan símbolos, así como los resultados de buscar en cada ruta.
 title: 'IDebugModule3:: GetSymbolInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 63803b84e3d00bddef2238a627300522a4e7c294
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d2793c9b6d9d88997ce2e4e84c147f87183555cd
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929789"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164856"
 ---
 # <a name="idebugmodule3getsymbolinfo"></a>IDebugModule3::GetSymbolInfo
 Recupera una lista de rutas de acceso en las que se buscan símbolos, así como los resultados de buscar en cada ruta.
@@ -55,7 +56,7 @@ Si el método se ejecuta correctamente, devuelve `S_OK` ; de lo contrario, devue
 > [!NOTE]
 > La cadena devuelta (en la `MODULE_SYMBOL_SEARCH_INFO` estructura) puede estar vacía aunque `S_OK` se devuelva. En este caso, no había información de búsqueda para devolver.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Si el `bstrVerboseSearchInfo` campo de la `MODULE_SYMBOL_SEARCH_INFO` estructura no está vacío, contiene una lista de rutas de acceso de búsqueda y los resultados de esa búsqueda. Se da formato a la lista con una ruta de acceso, seguida de un botón de puntos suspensivos ("..."), seguido del resultado. Si hay más de un par de resultados de ruta de acceso, cada par está separado por un par "\r\n" (retorno de carro/avance de bits). El patrón tiene el siguiente aspecto:
 
 \<path>...\<result> \r\n \<path> ... \<result> \r\n \<path> ...\<result>
@@ -88,7 +89,7 @@ void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)
  **c:\winnt\symbols\user32.pdb... La versión no coincide.** 
  **\\\symbols\symbols\user32.dll \0a8sd0ad8ad\user32.pdb... Símbolos cargados.**
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md)
 - [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md)

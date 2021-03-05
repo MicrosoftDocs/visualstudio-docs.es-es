@@ -1,4 +1,5 @@
 ---
+description: Obtiene las propiedades que describen este subproceso.
 title: 'IDebugThread2:: GetThreadProperties | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5c547ad049fa36231ce108a6cfc406233b972ff2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 293607e30fa8c5d1f4367b23a1f4904f94aa0bed
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893781"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164531"
 ---
 # <a name="idebugthread2getthreadproperties"></a>IDebugThread2::GetThreadProperties
 Obtiene las propiedades que describen este subproceso.
@@ -51,7 +52,7 @@ de Combinación de marcas de la enumeración [THREADPROPERTY_FIELDS](../../../ex
 ## <a name="return-value"></a>Valor devuelto
 Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 La información devuelta por este método se muestra normalmente en la ventana depuración de **subprocesos** .
 
 ## <a name="example"></a>Ejemplo
@@ -93,7 +94,7 @@ HRESULT CProgram::GetThreadProperties(THREADPROPERTY_FIELDS dwFields,
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)
 - [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)

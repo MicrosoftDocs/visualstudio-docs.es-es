@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz representa una posición abstracta de una función en un documento de origen.
 title: IDebugFunctionPosition2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e05cc09d2c252ddeaadc3cfa1b40e1a5797b6d79
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6a5717023eea18060834d1beade25199d5b0c3f3
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920899"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165532"
 ---
 # <a name="idebugfunctionposition2"></a>IDebugFunctionPosition2
 Esta interfaz representa una posición abstracta de una función en un documento de origen.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugFunctionPosition2 : IUnknown
@@ -42,7 +43,7 @@ IDebugFunctionPosition2 : IUnknown
 |[GetFunctionName](../../../extensibility/debugger/reference/idebugfunctionposition2-getfunctionname.md)|Obtiene el nombre de la función a la que esta posición es relativa.|
 |[GetOffset](../../../extensibility/debugger/reference/idebugfunctionposition2-getoffset.md)|Obtiene el desplazamiento desde el principio de la función.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  La posición representada por esta interfaz está basada en texto, en concreto, una estructura de [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) .
 
 ## <a name="requirements"></a>Requisitos
@@ -52,7 +53,7 @@ IDebugFunctionPosition2 : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
 - [BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md)
 - [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)

@@ -1,4 +1,5 @@
 ---
+description: Obtiene la información de lenguaje para este contexto de código.
 title: 'IDebugCodeContext2:: GetLanguageInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6719968d2e828340b16f84f3195f722803d8d9d8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dccf0c34b6483ad85cc7bfd9cff7078cc20524f3
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928736"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164128"
 ---
 # <a name="idebugcodecontext2getlanguageinfo"></a>IDebugCodeContext2::GetLanguageInfo
 Obtiene la información de lenguaje para este contexto de código.
@@ -51,8 +52,8 @@ int GetLanguageInfo(
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Al menos uno de los parámetros debe devolver un valor distinto de NULL.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

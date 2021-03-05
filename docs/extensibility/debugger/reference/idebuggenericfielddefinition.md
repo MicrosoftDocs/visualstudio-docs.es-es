@@ -1,4 +1,5 @@
 ---
+description: Representa la definición de un campo para un tipo genérico de código administrado.
 title: IDebugGenericFieldDefinition | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,17 +11,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff7c28a30ccab43629636f7dcd9391a669a376ae
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ae277a6f0523adfc0c9afb0e0cac8765df2d5758
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884798"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165415"
 ---
 # <a name="idebuggenericfielddefinition"></a>IDebugGenericFieldDefinition
 Representa la definición de un campo para un tipo genérico de código administrado.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugGenericFieldDefinition : IUnknown

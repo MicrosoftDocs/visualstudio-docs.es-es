@@ -1,4 +1,5 @@
 ---
+description: Obtiene el nodo de programa asociado a un programa.
 title: 'IDebugProgramEx2:: GetProgramNode | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 203992c6ab5ca094b091ece56e810d4fef462456
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d84669b9f4c05690827675435fdc60143a0814af
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898873"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164688"
 ---
 # <a name="idebugprogramex2getprogramnode"></a>IDebugProgramEx2::GetProgramNode
 Obtiene el nodo de programa asociado a un programa.
@@ -46,6 +47,6 @@ enuncia Devuelve un objeto [IDebugProgramNode2](../../../extensibility/debugger/
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

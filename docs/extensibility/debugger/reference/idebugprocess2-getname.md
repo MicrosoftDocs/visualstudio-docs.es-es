@@ -1,4 +1,5 @@
 ---
+description: Obtiene el título, el nombre descriptivo o el nombre de archivo del proceso.
 title: 'IDebugProcess2:: GetName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dd0876a12c964ee3014e30abfb38a5c763669eba
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 418da1be71b0299c93f2813397c28144425f81a4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911135"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164777"
 ---
 # <a name="idebugprocess2getname"></a>IDebugProcess2::GetName
 Obtiene el título, el nombre descriptivo o el nombre de archivo del proceso.
@@ -51,6 +52,6 @@ enuncia Devuelve el nombre del proceso.
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
 - [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)

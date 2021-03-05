@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz representa una referencia a una propiedad de marco de pila o alguna otra propiedad.
 title: IDebugReference2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f1ae87cc9d0926d7afc22d819dddf672a89afd3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 04d9795388b2a079d0eb7ac1d787bf92de6cdff4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883810"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165857"
 ---
 # <a name="idebugreference2"></a>IDebugReference2
 Esta interfaz representa una referencia a una propiedad de marco de pila o alguna otra propiedad.
@@ -25,7 +26,7 @@ Esta interfaz representa una referencia a una propiedad de marco de pila o algun
 > [!NOTE]
 > `IDebugReference2` está reservado para un uso futuro y todos sus métodos deben devolver `E_NOTIMPL` .
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugReference2 : IUnknown
@@ -54,7 +55,7 @@ IDebugReference2 : IUnknown
 |[SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md)|Establece este tipo de referencia.|
 |[Comparar](../../../extensibility/debugger/reference/idebugreference2-compare.md)|Compara esta referencia con otra.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 
 > [!NOTE]
 > Este uso de "propiedad" no se debe confundir con, lo que significa una variable miembro de una clase, aunque un `IDebugReference2` puede representar tal entidad.
@@ -72,7 +73,7 @@ IDebugReference2 : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
 - [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
