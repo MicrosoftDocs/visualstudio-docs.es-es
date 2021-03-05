@@ -1,4 +1,5 @@
 ---
+description: Establece el valor de esta propiedad y devuelve un mensaje de error, si es necesario.
 title: 'IDebugProperty3:: SetValueAsStringWithError | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4139d3c254c6d824c28e7ceb7fd5fe29b47a3737
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bd789561a85f23cff2ec794d4877662441f9149e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99897300"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168106"
 ---
 # <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
 Establece el valor de esta propiedad y devuelve un mensaje de error, si es necesario.
@@ -61,7 +62,7 @@ enuncia Si se produjo un error al establecer el valor, esto contiene la razón d
 ## <a name="return-value"></a>Valor devuelto
 Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 El valor de entrada puede ser una expresión que se va a evaluar.
 
 ## <a name="example"></a>Ejemplo
@@ -169,5 +170,5 @@ HRESULT CProperty::SetValueAsStringWithError(
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

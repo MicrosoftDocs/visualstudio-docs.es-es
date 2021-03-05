@@ -1,4 +1,5 @@
 ---
+description: Agrega un puerto.
 title: 'IDebugPortSupplier2:: AddPort | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9e126612ed8b081e5ba0b703d14399ac74d78a9a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 14232ac49b3862c635a41c25e79c7ab166fa24ef
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906313"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169241"
 ---
 # <a name="idebugportsupplier2addport"></a>IDebugPortSupplier2::AddPort
 Agrega un puerto.
@@ -51,10 +52,10 @@ enuncia Devuelve un objeto [IDebugPort2](../../../extensibility/debugger/referen
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Este método crea realmente el puerto solicitado y lo agrega a la lista interna de puertos activos del proveedor del puerto. Se puede llamar primero al método [CanAddPort](../../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) para evitar posibles retrasos que requieran mucho tiempo.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)
 - [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz representa un proveedor de símbolos que proporciona símbolos y tipos y los devuelve como campos.
 title: IDebugSymbolProvider | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8485497f9a5f0c6a04090755e6848bf8ed916ab3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e0488520f8bde0ccd2638636810cb0055a7f3f4b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909563"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168431"
 ---
 # <a name="idebugsymbolprovider"></a>IDebugSymbolProvider
 Esta interfaz representa un proveedor de símbolos que proporciona símbolos y tipos y los devuelve como campos.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugSymbolProvider : IUnknown
@@ -54,7 +55,7 @@ En la tabla siguiente se muestran los métodos de `IDebugSymbolProvider` .
 |[GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)|Asigna un nombre de símbolo a un tipo de símbolo.|
 |[GetNextAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnextaddress.md)|Obtiene la dirección de depuración que sigue a una dirección de depuración determinada en un método.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Esta interfaz asigna posiciones de documento en direcciones de depuración y viceversa.
 
 ## <a name="requirements"></a>Requisitos
@@ -103,5 +104,5 @@ IDebugSymbolProvider *GetSymbolProvider(GUID *pSymbolProviderGuid)
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces de proveedor de símbolos](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)

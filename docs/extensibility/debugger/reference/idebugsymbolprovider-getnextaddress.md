@@ -1,4 +1,5 @@
 ---
+description: Obtiene la dirección de depuración que sigue a una dirección de depuración determinada en un método.
 title: 'IDebugSymbolProvider:: GetNextAddress | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a370cf4591146a31627b80f6358a3d3f9202e306
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d177d03daef4f8d3344941658b85f71551af126b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888230"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168418"
 ---
 # <a name="idebugsymbolprovidergetnextaddress"></a>IDebugSymbolProvider::GetNextAddress
 Obtiene la dirección de depuración que sigue a una dirección de depuración determinada en un método.
@@ -56,5 +57,5 @@ enuncia Devuelve la siguiente dirección de depuración.
 ## <a name="return-value"></a>Valor devuelto
  Devuelve un válido `HRESULT` , normalmente S_OK.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

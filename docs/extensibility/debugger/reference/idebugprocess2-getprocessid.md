@@ -1,4 +1,5 @@
 ---
+description: Obtiene el GUID para este proceso.
 title: 'IDebugProcess2:: Getprocessid (| Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: df7b90d4096f651e0f055f9c92343df2a2712fe9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0d93225a676efe2a5af6a6064f4251c1a9cb02b2
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99894899"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168171"
 ---
 # <a name="idebugprocess2getprocessid"></a>IDebugProcess2::GetProcessId
 Obtiene el GUID para este proceso.
@@ -46,8 +47,8 @@ enuncia Devuelve el GUID para este proceso.
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  El identificador único global (GUID) identifica este proceso de todos los demás procesos que se ejecutan en el sistema.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

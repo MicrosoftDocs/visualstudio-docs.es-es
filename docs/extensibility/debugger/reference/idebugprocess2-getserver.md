@@ -1,4 +1,5 @@
 ---
+description: Obtiene el servidor en el que se está ejecutando este proceso.
 title: 'IDebugProcess2:: GetServer | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f3e8a1553d374f7eaddaace3e3a2ad4a0c882b20
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fba7af19093d853d227241187242a24bf9bd8cdb
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890076"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169202"
 ---
 # <a name="idebugprocess2getserver"></a>IDebugProcess2::GetServer
 Obtiene el servidor en el que se está ejecutando este proceso.
@@ -46,9 +47,9 @@ enuncia Devuelve un objeto [IDebugCoreServer2](../../../extensibility/debugger/r
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Se puede ejecutar más de un servidor en un solo equipo.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
 - [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)

@@ -1,4 +1,5 @@
 ---
+description: Obtiene el objeto al que se apunta.
 title: IDebugPointerObject::D ereference | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9b3646df80dc93d3248c698efb172bb12a09925e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e4aa96f726ec18e84aceba159fe9be6128456ce0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869640"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169696"
 ---
 # <a name="idebugpointerobjectdereference"></a>IDebugPointerObject::Dereference
 Obtiene el objeto al que se apunta.
@@ -51,8 +52,8 @@ enuncia Devuelve un objeto [IDebugObject](../../../extensibility/debugger/refere
 ## <a name="return-value"></a>Valor devuelto
  Si se realiza correctamente, Devuelve S_OK; de lo contrario, devuelve un código de error. Devuelve E_FAIL si este objeto no apunta a otro objeto.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  El objeto al que se señala puede ser un tipo primitivo o más complejo, como una clase o estructura.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)

@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz notifica a un agente de escucha (normalmente, el administrador de depuración de sesión [SDM] o un motor de depuración) de la creación y destrucción de procesos y programas en un puerto determinado.
 title: IDebugPortEvents2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba68608e09405265940686bbb235a41c53959943
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 50dadee6ac2e1d1a441796aac7ca49614b84bcdf
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99891194"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169475"
 ---
 # <a name="idebugportevents2"></a>IDebugPortEvents2
 Esta interfaz notifica a un agente de escucha (normalmente, el administrador de depuración de sesión [SDM] o un motor de depuración) de la creación y destrucción de procesos y programas en un puerto determinado. Esta información se puede usar para presentar una vista en tiempo real de los procesos y programas que se ejecutan en el puerto.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugPortEvents2 : IUnknown
@@ -41,7 +42,7 @@ IDebugPortEvents2 : IUnknown
 |------------|-----------------|
 |[Evento](../../../extensibility/debugger/reference/idebugportevents2-event.md)|Envía eventos que describen la creación y destrucción de procesos y programas en el puerto.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  `IDebugPortEvents2` el SDM también lo usa para depurar programas que se ejecutan en un proceso que ya se está depurando.
 
  Esta interfaz pasa los eventos de puerto al SDM.
@@ -53,6 +54,6 @@ IDebugPortEvents2 : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

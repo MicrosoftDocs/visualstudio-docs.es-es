@@ -1,4 +1,5 @@
 ---
+description: Este método obtiene el lenguaje que se usó para compilar el código en la dirección de depuración.
 title: 'IDebugSymbolProvider:: GetLanguage | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 120434e44819d4c503336dffeaa1c255626270d5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 86387e86261a91b77793e9a31ae4b415983e2c5c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880234"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168561"
 ---
 # <a name="idebugsymbolprovidergetlanguage"></a>IDebugSymbolProvider::GetLanguage
 Este método obtiene el lenguaje que se usó para compilar el código en la dirección de depuración.
@@ -56,9 +57,9 @@ enuncia Devuelve un `GUID` que especifica el proveedor de idioma.
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  El motor de depuración llama a este método para obtener la información que necesita para seleccionar el evaluador de expresiones correcto.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)

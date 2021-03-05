@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz registra o anula el registro de un programa que se puede depurar con el puerto en el que se está ejecutando.
 title: IDebugPortNotify2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74b9e62b2e442bbab01942f155647f16eae29b09
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 759be0ff57da7c6bb65ed6ca8191720f835b894a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941663"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169345"
 ---
 # <a name="idebugportnotify2"></a>IDebugPortNotify2
 Esta interfaz registra o anula el registro de un programa que se puede depurar con el puerto en el que se está ejecutando.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugPortNotify2 : IUnknown
@@ -42,7 +43,7 @@ IDebugPortNotify2 : IUnknown
 |[AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)|Registra un programa que se puede depurar con el puerto en el que se está ejecutando.|
 |[RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md)|Anula el registro de un programa que se puede depurar desde el puerto en el que se está ejecutando.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  A menos que un puerto de depuración tenga una manera de saber cuándo se cargan o descargan programas, un proveedor de Puerto personalizado debe implementar esta interfaz. Se realiza un seguimiento de todos los programas que se cargan para la depuración a través de un puerto determinado mediante esta interfaz.
 
 ## <a name="requirements"></a>Requisitos
@@ -52,6 +53,6 @@ IDebugPortNotify2 : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz representa un proceso en ejecución y sus programas.
 title: IDebugProcess3 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6199c959a7186a1c10d6efdc30bb0763941c347a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a2303dfef18a1abccc728d80def0de25b4e7eadd
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926118"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169189"
 ---
 # <a name="idebugprocess3"></a>IDebugProcess3
 Esta interfaz representa un proceso en ejecución y sus programas. Esta interfaz existe como sustituto de varios métodos de la interfaz [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) . Proporciona control sobre todos los programas del proceso.
@@ -25,7 +26,7 @@ Esta interfaz representa un proceso en ejecución y sus programas. Esta interfaz
 > [!NOTE]
 > Los métodos [continue](../../../extensibility/debugger/reference/idebugprogram2-continue.md), [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md)y [Step](../../../extensibility/debugger/reference/idebugprogram2-step.md) están desusados y ya no deben usarse. Use en su lugar los métodos correspondientes en la `IDebugProcess3` interfaz.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugProcess3 : IDebugProcess2
@@ -61,7 +62,7 @@ IDebugProcess3 : IDebugProcess2
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

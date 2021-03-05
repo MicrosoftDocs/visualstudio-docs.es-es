@@ -1,4 +1,5 @@
 ---
+description: Recupera el valor de una métrica dado su nombre.
 title: 'IDebugSettingsCallback2:: GetMetricDword | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2c0db9bfd870921de151d5fb9eda2f2a06f50dc8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c67dccee1c59856ef295aa4fd815f2eb6b4ae758
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875853"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168691"
 ---
 # <a name="idebugsettingscallback2getmetricdword"></a>IDebugSettingsCallback2::GetMetricDword
 Recupera el valor de una métrica dado su nombre.
@@ -59,5 +60,5 @@ enuncia Devuelve el valor de la métrica.
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

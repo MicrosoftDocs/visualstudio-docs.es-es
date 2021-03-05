@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz proporciona información de host (proceso) sobre un programa.
 title: IDebugProgramHost2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0680e0a174716dc79a9819386901d8687422906
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 109cca0cc3d12d8bf14da848774042fe346f0f1e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898774"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168119"
 ---
 # <a name="idebugprogramhost2"></a>IDebugProgramHost2
 Esta interfaz proporciona información de host (proceso) sobre un programa.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugProgramHost2 : IUnknown
@@ -50,6 +51,6 @@ IDebugProgramHost2 : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

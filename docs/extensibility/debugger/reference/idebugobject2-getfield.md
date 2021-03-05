@@ -1,4 +1,5 @@
 ---
+description: Obtiene el tipo de este objeto.
 title: 'IDebugObject2:: GetField | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 54f692fa85cfd8fa290a7f5c697a91e0366f8224
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6a35974f637583663b82c3f0af726a7dd7a54345
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953466"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170073"
 ---
 # <a name="idebugobject2getfield"></a>IDebugObject2::GetField
 Obtiene el tipo de este objeto.
@@ -46,9 +47,9 @@ enuncia Devuelve un objeto [IDebugField](../../../extensibility/debugger/referen
 ## <a name="return-value"></a>Valor devuelto
  Si se realiza correctamente, Devuelve S_OK; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Un campo describe el tipo del objeto.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

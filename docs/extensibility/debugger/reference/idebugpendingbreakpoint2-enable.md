@@ -1,4 +1,5 @@
 ---
+description: Alterna el estado habilitado del punto de interrupción pendiente.
 title: 'IDebugPendingBreakpoint2:: enable | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d2da595754066adefb397bf90085b7d2e58ab49d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f3d0e92cf469a48e2ace84861a36cb256835d4cf
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953115"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169930"
 ---
 # <a name="idebugpendingbreakpoint2enable"></a>IDebugPendingBreakpoint2::Enable
 Alterna el estado habilitado del punto de interrupción pendiente.
@@ -47,7 +48,7 @@ de Se establece en un valor distinto de cero ( `TRUE` ) para habilitar un punto 
 ## <a name="return-value"></a>Valor devuelto
 Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error. Devuelve `E_BP_DELETED` si se ha eliminado el punto de interrupción.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Cuando un punto de interrupción pendiente está habilitado o deshabilitado, todos los puntos de interrupción enlazados a él se establecen en el mismo estado.
 
 Este método se puede llamar tantas veces como sea necesario, incluso si el punto de interrupción ya está habilitado o deshabilitado.
@@ -85,5 +86,5 @@ HRESULT CPendingBreakpoint::Enable(BOOL fEnable)
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

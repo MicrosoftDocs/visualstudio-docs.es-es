@@ -1,4 +1,5 @@
 ---
+description: Alterna el estado virtualizado de este punto de interrupción pendiente.
 title: 'IDebugPendingBreakpoint2:: virtualizate | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 242caf91b8f25f8bea6ff9c17820ed84c5fc98f2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2ea6d6231a99f730969c44e7ced83cb48d0db4b4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869679"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169761"
 ---
 # <a name="idebugpendingbreakpoint2virtualize"></a>IDebugPendingBreakpoint2::Virtualize
 Alterna el estado virtualizado de este punto de interrupción pendiente. Cuando se virtualiza un punto de interrupción pendiente, el motor de depuración intentará enlazarlo cada vez que se cargue código nuevo en el programa.
@@ -47,7 +48,7 @@ de Se establece en un valor distinto de cero ( `TRUE` ) para virtualizar el punt
 ## <a name="return-value"></a>Valor devuelto
 Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error. Devuelve `E_BP_DELETED` si se ha eliminado el punto de interrupción.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Un punto de interrupción virtualizado se enlaza cada vez que se carga el código.
 
 ## <a name="example"></a>Ejemplo
@@ -85,5 +86,5 @@ HRESULT CPendingBreakpoint::Virtualize(BOOL fVirtualize)
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

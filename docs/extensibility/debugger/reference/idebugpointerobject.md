@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz representa un objeto de puntero.
 title: IDebugPointerObject | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 134c1edabb7df7a5cb7f26ce1b7b7487daa78e37
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e5275116ae16c03c4784cda7f227c46f57681120
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890206"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169618"
 ---
 # <a name="idebugpointerobject"></a>IDebugPointerObject
 > [!IMPORTANT]
@@ -25,7 +26,7 @@ ms.locfileid: "99890206"
 
  Esta interfaz representa un objeto de puntero.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugPointerObject : IDebugObject
@@ -46,7 +47,7 @@ IDebugPointerObject : IDebugObject
 |[GetBytes](../../../extensibility/debugger/reference/idebugpointerobject-getbytes.md)|Obtiene el valor al que apunta la interfaz como una serie de bytes consecutivos.|
 |[SetBytes](../../../extensibility/debugger/reference/idebugpointerobject-setbytes.md)|Establece el valor al que apunta la interfaz a partir de una serie de bytes consecutivos.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Un evaluador de expresiones utiliza esta interfaz para representar un puntero en un árbol de análisis.
 
 ## <a name="requirements"></a>Requisitos
@@ -56,6 +57,6 @@ IDebugPointerObject : IDebugObject
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces de evaluación de expresiones](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

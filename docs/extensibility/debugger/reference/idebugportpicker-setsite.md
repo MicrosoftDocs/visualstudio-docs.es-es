@@ -1,4 +1,5 @@
 ---
+description: Establece el proveedor de servicios.
 title: 'IDebugPortPicker:: SetSite | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7c361291532a79e7e4dd466d07359f0fe9faf2be
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d1c222bd06a974e7f2b1a57096a120399b554b82
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958640"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169280"
 ---
 # <a name="idebugportpickersetsite"></a>IDebugPortPicker::SetSite
 Establece el proveedor de servicios.
@@ -44,8 +45,8 @@ de Referencia a la interfaz del proveedor de servicios.
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Se llamará a este método antes de llamar a otros métodos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugPortPicker](../../../extensibility/debugger/reference/idebugportpicker.md)

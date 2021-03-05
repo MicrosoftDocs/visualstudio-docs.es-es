@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz proporciona información adicional sobre un objeto.
 title: IDebugObject2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: be1ef047e01baaffe66e38503f0f7979fea74829
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6eaa31be631de64339ece62f392f3d0b795b9d46
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953375"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170008"
 ---
 # <a name="idebugobject2"></a>IDebugObject2
 > [!IMPORTANT]
@@ -25,7 +26,7 @@ ms.locfileid: "99953375"
 
  Esta interfaz proporciona información adicional sobre un objeto.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugObject2 : IDebugObject
@@ -50,7 +51,7 @@ IDebugObject2 : IDebugObject
 |[IsUserData](../../../extensibility/debugger/reference/idebugobject2-isuserdata.md)|Determina si este objeto representa datos de usuario.|
 |[IsEncOutdated](../../../extensibility/debugger/reference/idebugobject2-isencoutdated.md)|Determina si el estado de edición y continuación ya no es válido.<br /><br /> Un evaluador de expresiones personalizado no implementa este método (siempre debe devolver `E_NOTIMPL` ).|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Consulte [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) para obtener una descripción de los alias.
 
 ## <a name="requirements"></a>Requisitos
@@ -60,7 +61,7 @@ IDebugObject2 : IDebugObject
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces de evaluación de expresiones](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

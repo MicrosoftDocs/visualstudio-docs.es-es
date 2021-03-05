@@ -1,4 +1,5 @@
 ---
+description: Obtiene una descripción del proceso.
 title: 'IDebugProcess2:: GetInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cf4b8d933729c95eaffa3a0caa44961bb5c87baa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a6e6b8e0c14cee960d1991ae4f5a482f66e89465
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99894925"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169215"
 ---
 # <a name="idebugprocess2getinfo"></a>IDebugProcess2::GetInfo
 Obtiene una descripción del proceso.
@@ -51,7 +52,7 @@ enuncia [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
 - [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md)
 - [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)

@@ -1,4 +1,5 @@
 ---
+description: Obtiene el nombre del puerto.
 title: 'IDebugPortRequest2:: GetPortName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 574ea2ecb69c944bdb47ff80d7b4e26db51933da
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ee0d0199a87dff6f29e82b691ed0a396f6d0162a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887164"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169254"
 ---
 # <a name="idebugportrequest2getportname"></a>IDebugPortRequest2::GetPortName
 Obtiene el nombre del puerto.
@@ -46,8 +47,8 @@ enuncia Devuelve el nombre del puerto.
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  La interfaz [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) normalmente se pasa desde un paquete de depuración (el cliente) a un proveedor de puerto (el servidor) para obtener una conexión a un puerto. Tanto el paquete de depuración como el proveedor del puerto reconocen las posibles opciones para el puerto. Si una cadena simple puede describir el puerto, el `IDebugPortRequest2::GetPortName` método tiene información suficiente para establecer la conexión. De lo contrario, el cliente puede proporcionar otras interfaces, que puede obtener el servidor mediante `IDebugPortRequest2::QueryInterface` .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)
