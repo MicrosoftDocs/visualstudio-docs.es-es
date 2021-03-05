@@ -1,4 +1,5 @@
 ---
+description: Determina si el objeto es un proxy transparente.
 title: 'IDebugObject:: IsProxy | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 216d1e0e007376b88b8befd2bf654a65192b13c7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c9cc2bc45a1e4cfe3e71f07bd2305aa0c7f1fde8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953648"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161496"
 ---
 # <a name="idebugobjectisproxy"></a>IDebugObject::IsProxy
 Determina si el objeto es un proxy transparente.
@@ -45,8 +46,8 @@ int IsProxy (
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Este método lo implementa el motor de depuración de C++ predeterminado.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

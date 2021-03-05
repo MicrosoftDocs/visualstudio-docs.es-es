@@ -1,4 +1,5 @@
 ---
+description: Solicita que el siguiente programa que ejecuta código en este proceso detenga y envíe un objeto de evento IDebugBreakEvent2.
 title: 'IDebugProcess2:: CauseBreak | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1094b3a214629c027f2574127d74cff7f0ea119c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 28a4da4c0f7e4f8770478a47a73f7567506d5ae2
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874118"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161403"
 ---
 # <a name="idebugprocess2causebreak"></a>IDebugProcess2::CauseBreak
 Solicita que el siguiente programa que ejecuta código en este proceso detenga y envíe un objeto de evento [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) .
@@ -40,5 +41,5 @@ int CauseBreak();
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

@@ -1,4 +1,5 @@
 ---
+description: Obtiene el lenguaje asociado a este contexto de documento.
 title: 'IDebugDocumentContext2:: GetLanguageInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4ce260e172e8f09ffac38fa8c267c286af15c32f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cd7bc00a0be242f66ff47ac5318753d81237c63a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99947091"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160217"
 ---
 # <a name="idebugdocumentcontext2getlanguageinfo"></a>IDebugDocumentContext2::GetLanguageInfo
 Obtiene el lenguaje asociado a este contexto de documento.
@@ -46,7 +47,7 @@ int GetLanguageInfo(
 enuncia Devuelve el nombre del lenguaje que implementa el código en este contexto de documento.
 
 `pguidLanguage`\
-enuncia Devuelve el GUID del lenguaje que implementa el código en este contexto de documento. Por ejemplo, `guidVBScriptLang` o `guidCPPLang`. Este GUID no se limita a los idiomas proporcionados por [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] .
+enuncia Devuelve el GUID del lenguaje que implementa el código en este contexto de documento.  Por ejemplo, `guidVBScriptLang` o `guidCPPLang`. Este GUID no se limita a los idiomas proporcionados por [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] .
 
 ## <a name="return-value"></a>Valor devuelto
 Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
@@ -83,5 +84,5 @@ HRESULT CDebugContext::GetLanguageInfo(BSTR* pbstrLanguage, GUID* pguidLanguage)
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

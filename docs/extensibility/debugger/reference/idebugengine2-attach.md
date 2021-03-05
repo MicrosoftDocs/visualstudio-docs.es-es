@@ -1,4 +1,5 @@
 ---
+description: Adjunta un motor de depuración (DE) a un programa o programas.
 title: 'IDebugEngine2:: Attach | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9c045c68af91896323e4cb6422108de77ae76352
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a780ab04e693fd2868579efbf015aef25e0cca32
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948314"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160153"
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
 Adjunta un motor de depuración (DE) a un programa o programas. Llamado por el administrador de depuración de sesión (SDM) cuando el DE se ejecuta en proceso para el SDM.
@@ -66,7 +67,7 @@ de Un valor de la enumeración [ATTACH_REASON](../../../extensibility/debugger/r
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Hay tres razones para asociar a un programa, como se indica a continuación:
 
 - `ATTACH_REASON_LAUNCH` indica que el DE está adjuntando al programa porque el usuario inició el proceso que lo contiene.
@@ -89,7 +90,7 @@ de Un valor de la enumeración [ATTACH_REASON](../../../extensibility/debugger/r
 
    Antes de llamar a los métodos de un nodo de programa en la matriz proporcionada por `pProgram` o `rgpProgramNodes` , la suplantación, si es necesario, debe estar habilitada en la `IDebugProgram2` interfaz que representa el nodo del programa. Sin embargo, normalmente, este paso no es necesario. Para obtener más información, vea [problemas de seguridad](../../../extensibility/debugger/security-issues.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

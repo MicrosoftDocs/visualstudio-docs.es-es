@@ -1,4 +1,5 @@
 ---
+description: Este método obtiene el tipo de campo de clase que representa un nombre de clase completo.
 title: 'IDebugSymbolProvider:: GetClassTypeByName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f6843eee8e6de7ec3e8cfd52362ee4463dea7da4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 58b7002abf622992dacde4797f41a272177c280e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956430"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159671"
 ---
 # <a name="idebugsymbolprovidergetclasstypebyname"></a>IDebugSymbolProvider::GetClassTypeByName
 Este método obtiene el tipo de campo de clase que representa un nombre de clase completo.
@@ -56,7 +57,7 @@ enuncia Devuelve el tipo de clase tal y como se representa en la interfaz [IDebu
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

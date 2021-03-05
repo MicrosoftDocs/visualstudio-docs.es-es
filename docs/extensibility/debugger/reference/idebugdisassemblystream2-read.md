@@ -1,4 +1,5 @@
 ---
+description: Lee instrucciones a partir de la posición actual en la secuencia de desensamblado.
 title: 'IDebugDisassemblyStream2:: Read | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 720850096e7099ed95cbc5fa914bebb2bee580ec
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b963bddc9d1ee04a6955b1110d73934b30196b21
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944672"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160204"
 ---
 # <a name="idebugdisassemblystream2read"></a>IDebugDisassemblyStream2::Read
 Lee instrucciones a partir de la posición actual en la secuencia de desensamblado.
@@ -61,14 +62,14 @@ enuncia Una matriz de estructuras [DisassemblyData](../../../extensibility/debug
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  El número máximo de instrucciones disponibles en el ámbito actual se puede obtener llamando [al métodoful](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md) .
 
  La posición actual en la que se lee la siguiente instrucción de se puede cambiar llamando al método [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) .
 
  La `DSF_OPERANDS_SYMBOLS` marca se puede Agregar a la `DSF_OPERANDS` marca del `dwFields` parámetro para indicar que se deben usar nombres de símbolos al desensamblar instrucciones.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)
 - [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)
 - [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)

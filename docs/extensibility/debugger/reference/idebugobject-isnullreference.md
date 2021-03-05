@@ -1,4 +1,5 @@
 ---
+description: Comprueba si este objeto es una referencia nula.
 title: 'IDebugObject:: IsNullReference | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3fd50f81a75ce3ca189c47db12f1f4024b244856
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 844e6c92385c1aa719d3c9d0ff399db9104dccc0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953713"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161516"
 ---
 # <a name="idebugobjectisnullreference"></a>IDebugObject::IsNullReference
 Comprueba si este objeto es una referencia nula.
@@ -46,8 +47,8 @@ enuncia Devuelve un valor distinto de cero ( `TRUE` ) si este objeto es una refe
 ## <a name="return-value"></a>Valor devuelto
  Si se realiza correctamente, Devuelve S_OK; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Una referencia nula significa un objeto vacío o un objeto que no se ha asignado a.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

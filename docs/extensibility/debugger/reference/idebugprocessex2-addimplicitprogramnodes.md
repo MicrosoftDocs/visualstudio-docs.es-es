@@ -1,4 +1,5 @@
 ---
+description: Este método agrega un nodo de programa para cada motor de depuración (DE) especificado.
 title: 'IDebugProcessEx2:: AddImplicitProgramNodes | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8ef9379edc9e02e8bed6761abf0aa4a2830fc415
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e3a4c6446c2106d79dd14fc0378fc848eac3df18
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861093"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159996"
 ---
 # <a name="idebugprocessex2addimplicitprogramnodes"></a>IDebugProcessEx2::AddImplicitProgramNodes
 Este método agrega un nodo de programa para cada motor de depuración (DE) especificado.
@@ -56,9 +57,9 @@ de Número de `GUID` s de la `rgguidSpecificEngines` matriz.
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 - Los [nodos de programa](../../../extensibility/debugger/program-nodes.md) se agregarán para cada uno de los enumerados en `rgguidSpecificEngines` , excluido el motor de inicio (como se indica en `guidLaunchingEngine` ), que se supone que agrega su propio nodo de programa cuando inicia un programa.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)
 - [Nodos de programa](../../../extensibility/debugger/program-nodes.md)

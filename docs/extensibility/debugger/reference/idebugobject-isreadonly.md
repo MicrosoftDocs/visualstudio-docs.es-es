@@ -1,4 +1,5 @@
 ---
+description: Determina si este objeto es de solo lectura.
 title: 'IDebugObject:: IsReadOnly | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4e7d27e6a437c46d2ee72eb4fd5f79eaa9e912ac
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d99cf51ba5415631b2e8e66c36b459297a8fcb6e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953635"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161483"
 ---
 # <a name="idebugobjectisreadonly"></a>IDebugObject::IsReadOnly
 Determina si este objeto es de solo lectura.
@@ -46,8 +47,8 @@ enuncia Devuelve un valor distinto de cero ( `TRUE` ) si este objeto es de solo 
 ## <a name="return-value"></a>Valor devuelto
  Si se realiza correctamente, Devuelve S_OK; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  No se puede cambiar el valor de un objeto de solo lectura una vez creado.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

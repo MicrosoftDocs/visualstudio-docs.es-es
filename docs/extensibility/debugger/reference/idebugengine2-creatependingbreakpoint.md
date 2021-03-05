@@ -1,4 +1,5 @@
 ---
+description: Crea un punto de interrupción pendiente en el motor DE depuración (DE).
 title: 'IDebugEngine2:: CreatePendingBreakpoint | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 93534a40d523c7b67a769ebea319463cf59e4b7a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c364778fa857049139c058f144651edc28bb4692
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99879025"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160166"
 ---
 # <a name="idebugengine2creatependingbreakpoint"></a>IDebugEngine2::CreatePendingBreakpoint
 Crea un punto de interrupción pendiente en el motor DE depuración (DE).
@@ -51,7 +52,7 @@ enuncia Devuelve un objeto [IDebugPendingBreakpoint2](../../../extensibility/deb
 ## <a name="return-value"></a>Valor devuelto
 Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error. Normalmente devuelve `E_FAIL` si el `pBPRequest` parámetro no coincide con ningún lenguaje compatible con el de de si el `pBPRequest` parámetro no es válido o está incompleto.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Un punto de interrupción pendiente es esencialmente una colección de toda la información necesaria para enlazar un punto de interrupción al código. El punto de interrupción pendiente devuelto por este método no está enlazado al código hasta que se llama al método [BIND](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) .
 
 Para cada punto de interrupción pendiente que establece el usuario, el administrador de depuración de la sesión (SDM) llama a este método en cada asociado DE. Es el DE para comprobar que el punto de interrupción es válido para los programas que se ejecutan en ese DE.
@@ -72,7 +73,7 @@ HRESULT CProgram::CreatePendingBreakpoint(IDebugBreakpointRequest2* pBPRequest, 
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [Volver](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)
 - [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)

@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz extiende IDebugStackFrame2 para controlar las excepciones interceptadas.
 title: IDebugStackFrame3 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5511624fb69015351d8cc37d6b27ad142a5956d4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d70095db80b8bbd349509de2858b641c520b0623
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961188"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159775"
 ---
 # <a name="idebugstackframe3"></a>IDebugStackFrame3
 Esta interfaz extiende [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) para controlar las excepciones interceptadas.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugStackFrame3 : IDebugStackFrame2
@@ -42,7 +43,7 @@ IDebugStackFrame3 : IDebugStackFrame2
 |[InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)|Controla una excepción para el marco de pila actual antes de cualquier control de excepciones regular.|
 |[GetUnwindCodeContext](../../../extensibility/debugger/reference/idebugstackframe3-getunwindcodecontext.md)|Devuelve un contexto de código si se produjera un desenredado de la pila.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Una excepción interceptada significa que un depurador puede procesar una excepción antes de que el tiempo de ejecución llame a las rutinas de control de excepciones normales. La interceptación de una excepción esencialmente significa que el tiempo de ejecución Imagine que hay un controlador de excepciones presente incluso cuando no existe.
 
 - Se llama a [interceptcurrentexception (](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) durante todos los eventos de devolución de llamada de excepción normales (la única excepción es si está depurando código de modo mixto (código administrado y no administrado), en cuyo caso no se puede interceptar la excepción durante la devolución de llamada de última oportunidad). Si el DE no implementa `IDebugStackFrame3` o el de devuelve un error de IDebugStackFrame3:: `InterceptCurrentException` (como `E_NOTIMPL` ), el depurador controlará la excepción con normalidad.
@@ -61,7 +62,7 @@ IDebugStackFrame3 : IDebugStackFrame2
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
 - [Asistentes de SDK para la depuración](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)

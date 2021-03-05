@@ -1,4 +1,5 @@
 ---
+description: 'IDebugProgramNode2:: GetProgramName obtiene el nombre del programa.'
 title: 'IDebugProgramNode2:: GetProgramName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2b8c84f90373743fb94fa0fe7115656642e0384a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 88a4bc58f5d91cdb52482f4dc862446cfc9e7eb1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898510"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161390"
 ---
 # <a name="idebugprogramnode2getprogramname"></a>IDebugProgramNode2::GetProgramName
 Obtiene el nombre del programa.
@@ -46,7 +47,7 @@ enuncia Devuelve el nombre del programa.
 ## <a name="return-value"></a>Valor devuelto
 Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 El nombre de un programa no es lo mismo que la ruta de acceso al programa, aunque el nombre del programa puede formar parte de dicha ruta de acceso.
 
 ## <a name="example"></a>Ejemplo
@@ -63,5 +64,5 @@ HRESULT CProgram::GetProgramName(BSTR* pbstrProgramName) {
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

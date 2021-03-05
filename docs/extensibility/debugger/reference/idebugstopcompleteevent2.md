@@ -1,4 +1,5 @@
 ---
+description: El motor DE depuración (DE) puede enviar este evento opcional al administrador de depuración de sesión (SDM) cuando se ha detenido un programa.
 title: IDebugStopCompleteEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -9,18 +10,18 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bee46a1f097d1bee98354acb792f75ea9431f301
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4d96aa335c8951b9dfc80517bf797338cd590b48
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99897203"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159750"
 ---
 # <a name="idebugstopcompleteevent2"></a>IDebugStopCompleteEvent2
 
 El motor DE depuración (DE) puede enviar este evento opcional al administrador de depuración de sesión (SDM) cuando se ha detenido un programa.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugStopCompleteEvent2 : IUnknown

@@ -1,4 +1,5 @@
 ---
+description: Este método obtiene el campo que contiene la dirección de depuración.
 title: 'IDebugSymbolProvider:: GetContainerField | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9893ab7e4c6546f2cf1d762ea5abc691647c620c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6c86f3c7ce085b44b3b853736b6fed0f4363e59d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954870"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159658"
 ---
 # <a name="idebugsymbolprovidergetcontainerfield"></a>IDebugSymbolProvider::GetContainerField
 Este método obtiene el campo que contiene la dirección de depuración.
@@ -51,7 +52,7 @@ enuncia Devuelve un campo contenedor representado por una interfaz [IDebugContai
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)
 - [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)

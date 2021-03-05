@@ -1,4 +1,5 @@
 ---
+description: Recupera una lista de las rutas de acceso de código para una posición determinada en un archivo de código fuente.
 title: 'IDebugProgram2:: EnumCodePaths | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8e71085da547b87389a8d787f24580a7610fd33f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c647379d0b72832a4068d720846f8a9331f9b939
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844754"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159970"
 ---
 # <a name="idebugprogram2enumcodepaths"></a>IDebugProgram2::EnumCodePaths
 Recupera una lista de las rutas de acceso de código para una posición determinada en un archivo de código fuente.
@@ -71,10 +72,10 @@ enuncia Devuelve un objeto [IDebugCodeContext2](../../../extensibility/debugger/
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Una ruta de acceso de código describe el nombre de un método o función que se llamó para llegar al punto actual en la ejecución del programa. Una lista de rutas de acceso de código representa la pila de llamadas.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

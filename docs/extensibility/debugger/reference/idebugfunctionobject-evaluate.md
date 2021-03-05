@@ -1,4 +1,5 @@
 ---
+description: 'IDebugFunctionObject:: Evaluate llama a la función y devuelve el valor resultante como un objeto.'
 title: 'IDebugFunctionObject:: Evaluate | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 94285bc0ca36d4a55c3cd3a3483f6e20f6914271
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d15cdb09de32edcdf6159567db12e05cffd06e7e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920988"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160113"
 ---
 # <a name="idebugfunctionobjectevaluate"></a>IDebugFunctionObject::Evaluate
 Llama a la función y devuelve el valor resultante como un objeto.
@@ -61,8 +62,8 @@ enuncia Devuelve un [IDebugObject](../../../extensibility/debugger/reference/ide
 ## <a name="return-value"></a>Valor devuelto
  Si se realiza correctamente, Devuelve S_OK; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Este método configura y ejecuta una llamada a la función representada por el objeto [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

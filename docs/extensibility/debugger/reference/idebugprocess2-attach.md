@@ -1,4 +1,5 @@
 ---
+description: Adjunta el administrador de depuración de la sesión (SDM) al proceso.
 title: 'IDebugProcess2:: Attach | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 462b2299a658359e81fc3641e590b95ab183a24e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 73dbe76a32e67794736fd26595378485879b00b8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874183"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161449"
 ---
 # <a name="idebugprocess2attach"></a>IDebugProcess2::Attach
 Adjunta el administrador de depuración de la sesión (SDM) al proceso.
@@ -61,17 +62,17 @@ de El número de motores de depuración en la `rgguidSpecificEngines` matriz y e
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error. En la tabla siguiente se muestran otros valores posibles.
 
-|Value|Descripción|
+|Valor|Descripción|
 |-----------|-----------------|
 |`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`|El proceso especificado ya está asociado al depurador.|
 |`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|Se ha producido una infracción de seguridad durante el procedimiento de asociación.|
 |`E_ATTACH_CANNOT_ATTACH_TO_DESKTOP`|No se puede adjuntar un proceso de escritorio al depurador.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Al asociar a un proceso, se adjunta el SDM a todos los programas que se ejecutan en ese proceso y que se pueden depurar mediante los motores de depuración (DE) especificados en la `rgguidSpecificEngines` matriz. Establezca el `rgguidSpecificEngines` parámetro en un valor nulo o inclúyalo `GUID_NULL` en la matriz para adjuntar todos los programas del proceso.
 
  Todos los eventos de depuración que se producen en el proceso se envían al objeto [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) especificado. Este `IDebugEventCallback2` objeto se proporciona cuando el SDM llama a este método.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

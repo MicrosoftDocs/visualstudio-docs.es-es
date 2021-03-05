@@ -1,4 +1,5 @@
 ---
+description: Este método asigna una posición de documento en una matriz de direcciones de depuración.
 title: 'IDebugSymbolProvider:: GetAddressesFromPosition | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 15838ff1efe9cba6920b98a8b7f00cb62f2fc3b4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d4437055ccd693b40fe4f1f7d6364d9601c827a3
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956469"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159684"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromposition"></a>IDebugSymbolProvider::GetAddressesFromPosition
 Este método asigna una posición de documento en una matriz de direcciones de depuración.
@@ -61,12 +62,12 @@ enuncia Devuelve un enumerador [IEnumDebugAddresses](../../../extensibility/debu
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Una posición de documento suele indicar un intervalo de líneas de código fuente. Este método proporciona las direcciones de depuración inicial y final asociadas a estas líneas. Algunos lenguajes admiten instrucciones que abarcan varias líneas o líneas que contienen más de una instrucción. Este método proporciona una marca para limitar las direcciones de depuración a una única instrucción.
 
  Es posible que una sola instrucción tenga varias direcciones de depuración, como en el caso de las plantillas.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md)
 - [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)
