@@ -1,4 +1,5 @@
 ---
+description: Especifica dónde se encuentra un ensamblado.
 title: ASSEMBLYLOCRESOLUTION | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,17 +16,17 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e2611828f1e9bb2aec740e392db18ce60839d19a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6756d3c0ee996c0fca2eb35ff92c552f750f2817
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952400"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144629"
 ---
 # <a name="assemblylocresolution"></a>ASSEMBLYLOCRESOLUTION
 Especifica dónde se encuentra un ensamblado.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_ASSEMBLYLOCRESOLUTION {
@@ -59,7 +60,7 @@ El ensamblado se encuentra en el directorio compartido.
 `ALR_REMOTEDIR`\
 El ensamblado se encuentra en un directorio remoto.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Los métodos [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) y [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md) devuelven estos valores.
 
 Estos valores se pueden combinar con la `OR` operación.

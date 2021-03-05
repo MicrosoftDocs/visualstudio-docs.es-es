@@ -1,4 +1,5 @@
 ---
+description: Se envía desde el motor de depuración (DE) al administrador de depuración de la sesión (SDM) cuando cambia el nombre de un programa.
 title: IDebugProgramNameChangedEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,17 +11,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0640fa06b821c6679bc52c9f92a757cee6f0a580
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 408d564efe6b0cbd76d5bf6993fcc0113a299cb7
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898740"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145227"
 ---
 # <a name="idebugprogramnamechangedevent2"></a>IDebugProgramNameChangedEvent2
 Se envía desde el motor de depuración (DE) al administrador de depuración de la sesión (SDM) cuando cambia el nombre de un programa.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugProgramNameChangedEvent2 : IUnknown

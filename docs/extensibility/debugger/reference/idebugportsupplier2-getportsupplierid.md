@@ -1,4 +1,5 @@
 ---
+description: Obtiene el identificador del proveedor del puerto.
 title: 'IDebugPortSupplier2:: GetPortSupplierId | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fcfafa5d104ded3ace847ac659171f423b07128a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bbed2ba8dfa46477770815376046083a8f7c92f1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840397"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145396"
 ---
 # <a name="idebugportsupplier2getportsupplierid"></a>IDebugPortSupplier2::GetPortSupplierId
 Obtiene el identificador del proveedor del puerto.
@@ -46,5 +47,5 @@ enuncia Devuelve el GUID del proveedor del puerto.
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)

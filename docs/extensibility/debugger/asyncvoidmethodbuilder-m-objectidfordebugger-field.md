@@ -1,4 +1,5 @@
 ---
+description: Representa el objeto inicializado de forma diferida que usa el depurador para identificar de forma exclusiva a este generador.
 title: AsyncVoidMethodBuilder.m_objectIdForDebugger campo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5d3ac36df42fb3e375d79424c38c46a3194ef44
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6c85b3d0c56becd88231d6f16559dda104c50243
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921659"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145539"
 ---
 # <a name="asyncvoidmethodbuilderm_objectidfordebugger-field"></a>AsyncVoidMethodBuilder.m_objectIdForDebugger campo
 Representa el objeto inicializado de forma diferida que usa el depurador para identificar de forma exclusiva a este generador.
@@ -32,6 +33,6 @@ Representa el objeto inicializado de forma diferida que usa el depurador para id
 .field private object m_objectIdForDebugger
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>
 - [Interna de la extensión paralela para el .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

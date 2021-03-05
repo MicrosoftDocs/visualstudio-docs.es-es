@@ -1,4 +1,5 @@
 ---
+description: Obtiene el identificador de proceso del sistema para el proceso que hospeda el programa.
 title: 'IDebugProgramNode2:: GetHostPid | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5dc11dbbe8845bac125942bc3825ecdf5dacdb00
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f826c30e90f95686e375d176ba41b24deab4491c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898602"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145955"
 ---
 # <a name="idebugprogramnode2gethostpid"></a>IDebugProgramNode2::GetHostPid
 Obtiene el identificador de proceso del sistema para el proceso que hospeda el programa.
@@ -62,5 +63,5 @@ HRESULT CProgram::GetHostPid(AD_PROCESS_ID* pdwHostPid) {
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

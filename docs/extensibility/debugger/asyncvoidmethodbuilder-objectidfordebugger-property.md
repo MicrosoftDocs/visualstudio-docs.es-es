@@ -1,4 +1,5 @@
 ---
+description: Obtiene un objeto que se puede usar para identificar de forma única este generador en el depurador.
 title: Propiedad AsyncVoidMethodBuilder. Objectidfordebugger (| Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bde9c1dee2f380d73ca47de3ab6c3618a7c1b89e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b66c40bd7c2cb289c4d17a719260b1098c24133f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921650"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145513"
 ---
 # <a name="asyncvoidmethodbuilderobjectidfordebugger-property"></a>Propiedad AsyncVoidMethodBuilder. Objectidfordebugger (
 Obtiene un objeto que se puede usar para identificar de forma única este generador en el depurador.
@@ -32,6 +33,6 @@ Obtiene un objeto que se puede usar para identificar de forma única este genera
 private object ObjectIdForDebugger
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>
 - [Interna de la extensión paralela para el .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

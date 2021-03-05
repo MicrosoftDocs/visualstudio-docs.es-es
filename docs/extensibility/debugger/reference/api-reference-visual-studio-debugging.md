@@ -1,4 +1,5 @@
 ---
+description: La sección de referencia incluye información general conceptual de la API, una guía que muestra la sintaxis y el uso de todos los elementos de la API, así como una serie de ejemplos de código.
 title: Referencia de API (depuración de Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,19 +11,19 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24e7c8892798d9192aa59c946e1c978899b4d173
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 47c6697945c6c588a8b4e57ab03d573d45c4d4cf
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912032"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144642"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>Referencia de API (depuración de Visual Studio)
 La sección de referencia incluye información general conceptual de la API, una guía que muestra la sintaxis y el uso de todos los elementos de la API, así como una serie de ejemplos de código. Todas las referencias se enumeran alfabéticamente por categoría.
 
  En la tabla siguiente se muestran los `HRESULT` valores comunes devueltos por los métodos.
 
-|Nombre|Descripción|Value|
+|Nombre|Descripción|Valor|
 |----------|-----------------|-----------|
 |S_OK|Correcto.|0x00000000|
 |E_UNEXPECTED|Error inesperado.|0x8000FFFF|
@@ -42,7 +43,7 @@ La sección de referencia incluye información general conceptual de la API, una
 > [!NOTE]
 > Los parámetros no válidos o `NULL` [out] pueden hacer que el IDE se bloquee.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces](../../../extensibility/debugger/reference/interfaces-visual-studio-debugging.md)
 - [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)

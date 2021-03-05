@@ -1,4 +1,5 @@
 ---
+description: Obtiene el nombre y el identificador del motor de depuración (DE) que ejecuta un programa.
 title: 'IDebugProgramNode2:: GetEngineInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b337d9c6742c1c3b0379a757761955151cc6dc6c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d09ec8b7503047a9dcece353c859c607289a005b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898656"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145994"
 ---
 # <a name="idebugprogramnode2getengineinfo"></a>IDebugProgramNode2::GetEngineInfo
 Obtiene el nombre y el identificador del motor de depuración (DE) que ejecuta un programa.
@@ -51,5 +52,5 @@ enuncia Devuelve el identificador único global de de la ejecución del programa
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

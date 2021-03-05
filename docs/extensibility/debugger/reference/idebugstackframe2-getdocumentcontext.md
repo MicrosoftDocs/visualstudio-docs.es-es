@@ -1,4 +1,5 @@
 ---
+description: Obtiene el contexto del documento para este marco de pila.
 title: 'IDebugStackFrame2:: GetDocumentContext | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8de85f157995db77653b71f7b25f3106caffb9ed
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9e1645cb7daebb9dc344085d13a2fecb87fc0106
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837518"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145981"
 ---
 # <a name="idebugstackframe2getdocumentcontext"></a>IDebugStackFrame2::GetDocumentContext
 Obtiene el contexto del documento para este marco de pila.
@@ -46,10 +47,10 @@ enuncia Devuelve un objeto [IDebugDocumentContext2](../../../extensibility/debug
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Este método es más rápido que llamar al método [GetCodeContext](../../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md) y, a continuación, llamar al método [GetDocumentContext](../../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md) en el contexto del código. Sin embargo, no se garantiza que todos los motores DE depuración (DE) implementen este método.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
 - [GetDocumentContext](../../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md)

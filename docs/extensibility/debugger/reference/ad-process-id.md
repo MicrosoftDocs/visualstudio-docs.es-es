@@ -1,4 +1,5 @@
 ---
+description: Especifica el identificador de proceso, que puede ser un identificador del sistema o un GUID.
 title: AD_PROCESS_ID | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 303c05b241347922a4253ef3654e06bed8e824ef
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c56bc1941bcff5d70dbcf0cb3a126c1f434d3f24
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952426"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144681"
 ---
 # <a name="ad_process_id"></a>AD_PROCESS_ID
 Especifica el identificador de proceso, que puede ser un identificador del sistema o un GUID.
@@ -59,7 +60,7 @@ El identificador de proceso como un GUID.
 
 Relleno de dwUnused.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Esta estructura se pasa a los métodos siguientes:
 
 - [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)
@@ -83,7 +84,7 @@ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)
 - [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)

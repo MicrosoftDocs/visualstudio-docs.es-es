@@ -1,4 +1,5 @@
 ---
+description: Obtiene el nombre que se va a mostrar del documento que contiene este contexto de documento.
 title: 'IDebugDocumentContext2:: GetName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b7619f15e995aeb8d70897d74686a0e79d2532da
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b4e75cd6b963965a245055ff8fa0849e39339af1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99947052"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146215"
 ---
 # <a name="idebugdocumentcontext2getname"></a>IDebugDocumentContext2::GetName
 Obtiene el nombre que se va a mostrar del documento que contiene este contexto de documento.
@@ -51,7 +52,7 @@ de Un valor de la enumeración [GETNAME_TYPE](../../../extensibility/debugger/re
 ## <a name="return-value"></a>Valor devuelto
 Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Normalmente, este método reenvía la llamada al método [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md) , a menos que se escriba el contexto del documento para almacenar el nombre del documento en sí (como se muestra en el ejemplo).
 
 ## <a name="example"></a>Ejemplo
@@ -94,6 +95,6 @@ HRESULT CDebugContext::GetName(GETNAME_TYPE gnType, BSTR* pbstrFileName)
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
 - [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)

@@ -1,4 +1,5 @@
 ---
+description: Lo llama el depurador en el marco de pila actual cuando desea interceptar la excepción actual.
 title: 'IDebugStackFrame3:: Interceptcurrentexception (| Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a8e3ef123fb88f1519d398952ed2d27de0fb0b91
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 93fa7f73b3e13c655716ecbb16ff420605f76c90
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963554"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145786"
 ---
 # <a name="idebugstackframe3interceptcurrentexception"></a>IDebugStackFrame3::InterceptCurrentException
 Lo llama el depurador en el marco de pila actual cuando desea interceptar la excepción actual.
@@ -59,7 +60,7 @@ enuncia Valor único que identifica una excepción determinada.
 |`E_EXCEPTION_CANNOT_UNWIND_ABOVE_CALLBACK`|Todavía no se ha buscado un controlador en el marco de ejecución actual.|
 |`E_INTERCEPT_CURRENT_EXCEPTION_NOT_SUPPORTED`|Este método no es compatible con este marco.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Cuando se produce una excepción, el depurador obtiene el control del tiempo de ejecución en los puntos clave durante el proceso de control de excepciones. Durante estos momentos clave, el depurador puede preguntar al marco de pila actual si el marco desea interceptar la excepción. De esta manera, una excepción interceptada es esencialmente un controlador de excepciones en la marcha para un marco de pila, incluso si ese marco de pila no tiene un controlador de excepciones (por ejemplo, un bloque try/catch en el código del programa).
 
  Cuando el depurador desea saber si se debe interceptar la excepción, llama a este método en el objeto de marco de pila actual. Este método es responsable de controlar todos los detalles de la excepción. Si no se implementa la interfaz [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md) o el `InterceptStackException` método devuelve un error, el depurador continúa procesando la excepción con normalidad.
@@ -69,7 +70,7 @@ enuncia Valor único que identifica una excepción determinada.
 
  Una vez completada la intercepción, se señala un [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md) .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)
 - [INTERCEPT_EXCEPTION_ACTION](../../../extensibility/debugger/reference/intercept-exception-action.md)
 - [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md)

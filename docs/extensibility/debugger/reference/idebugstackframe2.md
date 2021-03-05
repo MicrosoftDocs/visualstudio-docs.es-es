@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz representa un marco de pila único en una pila de llamadas de un subproceso determinado.
 title: IDebugStackFrame2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7241c697baf7810d961f4cc3aba71d469bad4582
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b5ec53e89afb43187c641058620df53c4a61d6cc
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963567"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145916"
 ---
 # <a name="idebugstackframe2"></a>IDebugStackFrame2
 Esta interfaz representa un marco de pila único en una pila de llamadas de un subproceso determinado.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugStackFrame2 : IUnknown
@@ -50,7 +51,7 @@ IDebugStackFrame2 : IUnknown
 |[EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)|Crea un enumerador para las propiedades del marco de pila.|
 |[GetThread](../../../extensibility/debugger/reference/idebugstackframe2-getthread.md)|Obtiene el subproceso asociado a un marco de pila.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Esta interfaz se obtiene solo cuando el programa que se está depurando se ha detenido en un punto de interrupción (ya sea debido a un punto de interrupción del conjunto de usuarios o una excepción). Desde esta interfaz, se puede obtener un contexto de expresión para evaluar las expresiones, se puede devolver una lista de registros o se puede obtener y examinar la pila de llamadas.
 
 ## <a name="requirements"></a>Requisitos
@@ -60,5 +61,5 @@ IDebugStackFrame2 : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
