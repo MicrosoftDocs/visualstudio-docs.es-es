@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz representa una lista de rutas de acceso de código.
 title: IEnumCodePaths2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 69a65488d38fe2562392be152e448369ff081915
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f9758bacf6dc22ad65dc4d8db9b21d0f6728efaf
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962163"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102227091"
 ---
 # <a name="ienumcodepaths2"></a>IEnumCodePaths2
 Esta interfaz representa una lista de rutas de acceso de código.
@@ -45,7 +46,7 @@ IEnumCodePaths2 : IUnknown
 |[Clonar](../../../extensibility/debugger/reference/ienumcodepaths2-clone.md)|Crea un enumerador que contiene el mismo estado de enumeración que el enumerador actual.|
 |[GetCount](../../../extensibility/debugger/reference/ienumcodepaths2-getcount.md)|Obtiene el número de rutas de acceso de código en un enumerador.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Una ruta de acceso de código representa una llamada de función o punto de bifurcación en un programa. Una lista de rutas de código representa la ruta de acceso en la que se ha realizado la ejecución del código.
 
 ## <a name="requirements"></a>Requisitos
@@ -55,5 +56,5 @@ IEnumCodePaths2 : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)

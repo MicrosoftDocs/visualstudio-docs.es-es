@@ -1,4 +1,5 @@
 ---
+description: Recupera el número especificado de bytes del objeto.
 title: 'IEEDataStorage:: GetData | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c0ff27438ad4a7d0106c1b452f55966dda3f7e07
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f28533ad07bc7626f1576ef4422d6d20725b9450
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965569"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102227312"
 ---
 # <a name="ieedatastoragegetdata"></a>IEEDataStorage::GetData
 Recupera el número especificado de bytes del objeto.
@@ -56,9 +57,9 @@ enuncia Devuelve el número de bytes recuperados realmente.
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  El uso recomendado de este método es recuperar todos los bytes de datos en una matriz local, ya que no hay ninguna manera de omitir los bytes en el proceso de recuperación. En este caso, el parámetro `dataSize` debe ser el valor devuelto por el método se [obtiene](../../../extensibility/debugger/reference/ieedatastorage-getsize.md) .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)
 - [GetSize (](../../../extensibility/debugger/reference/ieedatastorage-getsize.md)

@@ -1,4 +1,5 @@
 ---
+description: Este método devuelve el siguiente conjunto de elementos de la enumeración addresses.
 title: 'IEnumDebugAddresses:: Next | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f5faba8562363d5f84cdf5cbe6dafff2aa71a0a9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f73c38837a8db38c81adf5c79dc726252da071ef
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99897105"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225037"
 ---
 # <a name="ienumdebugaddressesnext"></a>IEnumDebugAddresses::Next
 Este método devuelve el siguiente conjunto de elementos de la enumeración.
@@ -56,6 +57,6 @@ enuncia Devuelve el número de elementos realmente devueltos en `rgelt` .
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si se puede devolver menos que el número solicitado de elementos; de lo contrario, devuelve un código de error.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)
 - [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)

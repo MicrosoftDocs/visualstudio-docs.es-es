@@ -1,4 +1,5 @@
 ---
+description: Especifica las marcas de estado de punto de interrupción pendientes.
 title: PENDING_BP_STATE_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f603b7a1660f9913ce10b2ecf07adb53f9279d48
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2a6da9349a033478ab024d719ef796e7bf71c72a
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890011"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225466"
 ---
 # <a name="pending_bp_state_flags"></a>PENDING_BP_STATE_FLAGS
 Especifica las marcas de estado de punto de interrupción pendientes.
@@ -42,12 +43,12 @@ public enum enum_PENDING_BP_STATE_FLAGS {
 };
 ```
 
-## <a name="fields"></a>Campos
+## <a name="fields"></a>Fields
  `PBPSF_NONE` Falso.
 
  `PBPSF_VIRTUALIZED` Especifica un punto de interrupción virtualizado pendiente, que se va a enlazar cada vez que se cargue código nuevo.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Se utiliza para el `flags` miembro de la estructura [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) .
 
 ## <a name="requirements"></a>Requisitos

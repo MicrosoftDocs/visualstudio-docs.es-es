@@ -1,4 +1,5 @@
 ---
+description: Describe o especifica las propiedades de un proceso.
 title: PROCESS_INFO_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cd20b194623a02ff3852d0f0734f3dc7d7e1cfc6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e192a51c2c371754778ecbe697d280d1b254f224
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923091"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225336"
 ---
 # <a name="process_info_flags"></a>PROCESS_INFO_FLAGS
 
@@ -46,7 +47,7 @@ enum enum_PROCESS_INFO_FLAGS {
 };
 ```
 
-## <a name="fields"></a>Campos
+## <a name="fields"></a>Fields
 
 `PIFLAG_SYSTEM_PROCESS`\
 Indica que el proceso es un proceso del sistema.
@@ -60,7 +61,7 @@ Indica que el proceso está detenido. Solo es válido si `PIFLAG_DEBUGGER_ATTACH
 `PIFLAG_PROCESS_RUNNING`\
 Indica que el proceso se está ejecutando. Solo es válido si `PIFLAG_DEBUGGER_ATTACHED` también se especifica. Disponible en Visual Studio 2005 y versiones posteriores.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 
 Se utiliza para el `Flags` miembro de la estructura [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) .
 

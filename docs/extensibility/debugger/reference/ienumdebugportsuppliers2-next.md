@@ -1,4 +1,5 @@
 ---
+description: Devuelve el siguiente conjunto de elementos de la enumeración de los proveedores de puertos.
 title: 'IEnumDebugPortSuppliers2:: Next | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 04f1b428f76198c0bb06ae6d12c58d5f779a0e79
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 29badfc9c42875b981f99fbfe215c7a336dc1535
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99846743"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226259"
 ---
 # <a name="ienumdebugportsuppliers2next"></a>IEnumDebugPortSuppliers2::Next
 Devuelve el conjunto de elementos siguiente de la enumeración.
@@ -56,6 +57,6 @@ enuncia Devuelve el número de elementos realmente devueltos en `rgelt` .
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si se puede devolver menos que el número solicitado de elementos; de lo contrario, devuelve un código de error.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)

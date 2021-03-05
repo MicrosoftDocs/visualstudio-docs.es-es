@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz enumera las estructuras FRAMEINFO.
 title: IEnumDebugFrameInfo2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fdc2006b45a664496615988251081f1000cdb428
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c347b7cebd9b1417cd0a8e772cd8a247e975ea97
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956298"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226389"
 ---
 # <a name="ienumdebugframeinfo2"></a>IEnumDebugFrameInfo2
 Esta interfaz enumera las estructuras [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) .
@@ -45,7 +46,7 @@ IEnumDebugFrameInfo2 : IUnknown
 |[Clonar](../../../extensibility/debugger/reference/ienumdebugframeinfo2-clone.md)|Crea un enumerador que contiene el mismo estado de enumeración que el enumerador actual.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugframeinfo2-getcount.md)|Obtiene el número de estructuras [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) en un enumerador.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Visual Studio obtiene esta interfaz como el primer paso para controlar un punto de interrupción, una excepción o una pausa generada por el usuario en el programa que se está depurando. La lista de estructuras [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) representa la pila de llamadas actual, con la llamada de función actual al principio de la lista y la llamada de función más antigua al final de la lista. Cada `FRAMEINFO` representa un marco de pila, un contexto en el que se pueden evaluar las expresiones y las variables locales.
 
 ## <a name="requirements"></a>Requisitos
@@ -55,7 +56,7 @@ IEnumDebugFrameInfo2 : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
 - [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)
 - [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)

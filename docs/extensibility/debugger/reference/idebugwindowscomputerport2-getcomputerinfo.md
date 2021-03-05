@@ -1,4 +1,5 @@
 ---
+description: Recupera información sobre el equipo en el que se ejecuta el depurador.
 title: 'IDebugWindowsComputerPort2:: GetComputerInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d0292a520b414c2ca96cb9077af938d692dd57bb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 279de593e79629546f0a3a10fe8e329b4b6ec6af
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965621"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102227325"
 ---
 # <a name="idebugwindowscomputerport2getcomputerinfo"></a>IDebugWindowsComputerPort2::GetComputerInfo
 Recupera información sobre el equipo en el que se ejecuta el depurador.
@@ -45,6 +46,6 @@ enuncia Referencia a una estructura que contiene la información del equipo.
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugWindowsComputerPort2](../../../extensibility/debugger/reference/idebugwindowscomputerport2.md)
 - [COMPUTER_INFO](../../../extensibility/debugger/reference/computer-info.md)

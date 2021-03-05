@@ -1,4 +1,5 @@
 ---
+description: Especifica el estado del subproceso.
 title: THREADSTATE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 21b683e8f7797743d5ae78f932edfa5c862dbb8b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 36c44eaf3b5ab8d3515b2c3e2128e8ac9562492e
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967688"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225268"
 ---
 # <a name="threadstate"></a>THREADSTATE
 Especifica el estado del subproceso.
@@ -48,7 +49,7 @@ public enum enum_THREADSTATE {
 };
 ```
 
-## <a name="fields"></a>Campos
+## <a name="fields"></a>Fields
  `THREADSTATE_RUNNING`\
  Indica que el subproceso se está ejecutando.
 
@@ -64,7 +65,7 @@ public enum enum_THREADSTATE {
  `THREADSTATE_FROZEN`\
  Indica que el subproceso está inmovilizado (no se puede realizar ninguna ejecución).
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Se usa para el `dwThreadState` campo de la estructura [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) .
 
 ## <a name="requirements"></a>Requisitos
