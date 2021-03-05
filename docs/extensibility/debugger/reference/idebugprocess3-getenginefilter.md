@@ -1,4 +1,5 @@
 ---
+description: Recupera una matriz de identificadores únicos para los motores de depuración disponibles.
 title: 'IDebugProcess3:: GetEngineFilter | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8a36066ef14ceb10160067f146574e1495f856f5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 77ad90af772bb210402cfd43449350ccf0f02058
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915292"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158467"
 ---
 # <a name="idebugprocess3getenginefilter"></a>IDebugProcess3::GetEngineFilter
 Recupera una matriz de identificadores únicos para los motores de depuración disponibles.
@@ -45,6 +46,6 @@ enuncia Referencia a una estructura que contiene identificadores únicos para lo
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)
 - [GUID_ARRAY](../../../extensibility/debugger/reference/guid-array.md)

@@ -1,4 +1,5 @@
 ---
+description: Especifica el estado de excepción.
 title: EXCEPTION_STATE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,17 +16,17 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f804f9a47314bfd239e6904286122776977e92e7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8ff9edf1ef12d219b865815585035151e664e67a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936930"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158753"
 ---
 # <a name="exception_state"></a>EXCEPTION_STATE
 Especifica el estado de excepción.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_EXCEPTION_STATE {
@@ -122,7 +123,7 @@ OBSOLETO, NO USAR.
 `EXCEPTION_STOP_USER_SECOND_CHANCE_USE_PARENT`\
 OBSOLETO, NO USAR.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Se usa como `dwState` miembro de la estructura [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) para indicar el estado de la excepción y lo que se puede hacer sobre ella.
 
 Estos valores también se pasan al método [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) para establecer el estado de todas las excepciones.

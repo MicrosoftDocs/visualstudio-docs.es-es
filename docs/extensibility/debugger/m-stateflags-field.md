@@ -1,4 +1,5 @@
 ---
+description: Almacena información sobre el estado actual del objeto System. Threading. Tasks. Task.
 title: m_stateFlags campo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6e49ad2965ef99d5ceaafc3cb5f4de3589321d1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 322e739d84f54f1aa3fd215ba902f0b11a060bcd
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925239"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158779"
 ---
 # <a name="m_stateflags-field"></a>m_stateFlags campo
 Almacena información sobre el estado actual del <xref:System.Threading.Tasks.Task> objeto.
@@ -47,5 +48,5 @@ Almacena información sobre el estado actual del <xref:System.Threading.Tasks.Ta
 
 - [TASK_STATE_RAN_TO_COMPLETION](../../extensibility/debugger/task-state-ran-to-completion-field.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Clase de tarea: miembros internos](../../extensibility/debugger/task-class-internal-members.md)

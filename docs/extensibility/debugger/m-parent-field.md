@@ -1,4 +1,5 @@
 ---
+description: El campo de respaldo de System. Threading. Tasks. Task primario de la tarea.
 title: m_parent campo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3faec0c07af34de9dde796a2b49965a136f1af2d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c73fb01d5e1eb440fbc1add908881d4768d0abf4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925253"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158792"
 ---
 # <a name="m_parent-field"></a>m_parent campo
 
@@ -33,6 +34,6 @@ Dado que no puede tener acceso a este miembro interno desde el .NET Framework, s
 .field private initonly class System.Threading.Tasks.Task m_parent
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Clase de tarea: miembros internos](../../extensibility/debugger/task-class-internal-members.md)

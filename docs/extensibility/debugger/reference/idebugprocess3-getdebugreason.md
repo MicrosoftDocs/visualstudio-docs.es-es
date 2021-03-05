@@ -1,4 +1,5 @@
 ---
+description: Este método devuelve la razón por la que se inició el proceso para la depuración.
 title: 'IDebugProcess3:: GetDebugReason | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 45b51d90ec1d1c67ea722d2877e06c2a8d0d2745
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3ab36134f8085ba13279332e3c1b8dc2fe65c200
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915388"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158480"
 ---
 # <a name="idebugprocess3getdebugreason"></a>IDebugProcess3::GetDebugReason
 Este método devuelve la razón por la que se inició el proceso para la depuración.
@@ -46,6 +47,6 @@ enuncia Devuelve un valor de la enumeración [DEBUG_REASON](../../../extensibili
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve el código de error.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)
 - [DEBUG_REASON](../../../extensibility/debugger/reference/debug-reason.md)

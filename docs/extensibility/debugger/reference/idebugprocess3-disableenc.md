@@ -1,4 +1,5 @@
 ---
+description: Este método deshabilita explícitamente editar y continuar en este proceso (y todos los programas que contiene).
 title: IDebugProcess3::D isableENC | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5cfd425e6b992d8d933edd45f27d6fb4c8161a1a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ffedebd14f720e006c0bec2044afe80901762b52
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99891051"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158493"
 ---
 # <a name="idebugprocess3disableenc"></a>IDebugProcess3::DisableENC
 Este método deshabilita explícitamente editar y continuar en este proceso (y todos los programas que contiene). Un proveedor de Puerto personalizado siempre debe devolver `E_NOTIMPL` .
@@ -48,9 +49,9 @@ de Un valor de la enumeración [EncUnavailableReason](../../../extensibility/deb
 > [!NOTE]
 > Un proveedor de Puerto personalizado siempre debe devolver `E_NOTIMPL` .
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Una vez que editar y continuar está deshabilitado para un proceso, solo se puede volver a habilitar reiniciando el proceso.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)
 - [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md)

@@ -1,4 +1,5 @@
 ---
+description: Obtiene el tipo del punto de interrupción representado por esta resolución.
 title: 'IDebugBreakpointResolution2:: GetBreakpointType | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5410cbf6147e0c8c6f4cba97b0214c4503f9790b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cca069871c99c623119853f37d1c422125b985ff
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893001"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158519"
 ---
 # <a name="idebugbreakpointresolution2getbreakpointtype"></a>IDebugBreakpointResolution2::GetBreakpointType
 Obtiene el tipo del punto de interrupción representado por esta resolución.
@@ -46,7 +47,7 @@ enuncia Devuelve un valor de la enumeración [BP_TYPE](../../../extensibility/de
 ## <a name="return-value"></a>Valor devuelto
 Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve un código de error. Devuelve E_FAIL si el `bpResLocation` campo de la estructura de [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) asociada no es válido.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 El punto de interrupción puede ser un código o un punto de interrupción de datos, por ejemplo.
 
 ## <a name="example"></a>Ejemplo
@@ -83,7 +84,7 @@ HRESULT CDebugBreakpointResolution::GetBreakpointType(BP_TYPE* pBPType)
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)
 - [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)
 - [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)

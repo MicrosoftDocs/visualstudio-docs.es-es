@@ -1,4 +1,5 @@
 ---
+description: A continuación se muestran las interfaces de evaluación de expresiones para el SDK de depuración de Visual Studio.
 title: Interfaces de evaluación de expresiones | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a048d11b09ee873a2f5a11e35db78f68df6ad680
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d380fcce087fad3dc6b101e78cbc514ba19b1052
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936943"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158740"
 ---
 # <a name="expression-evaluation-interfaces"></a>Interfaces de evaluación de expresiones
 > [!IMPORTANT]
@@ -59,7 +60,7 @@ ms.locfileid: "99936943"
 |[IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)|VS|Proporciona la capacidad de crear un objeto [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) .|
 |[IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md)|EE|Representa una colección de objetos [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) .|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Referencia de API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)
 - [Escritura de un evaluador de expresiones CLR](../../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
 - [Visualizador de tipo y visor personalizado](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)
