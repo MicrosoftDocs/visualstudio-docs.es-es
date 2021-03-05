@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz representa un atributo personalizado y puede proporcionar el nombre, el elemento primario y el tipo de clase del atributo.
 title: IDebugCustomAttribute | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1baa46cd9be53134d42c71e8c2bd88e3e2c38d4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 724aedb41a11607f89193b51f41e403a6da7dd45
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99907955"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154501"
 ---
 # <a name="idebugcustomattribute"></a>IDebugCustomAttribute
 Esta interfaz representa un atributo personalizado y puede proporcionar el nombre, el elemento primario y el tipo de clase del atributo.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugCustomAttribute : IUnknown
@@ -44,7 +45,7 @@ IDebugCustomAttribute : IUnknown
 |[GetName](../../../extensibility/debugger/reference/idebugcustomattribute-getname.md)|Obtiene el nombre del atributo personalizado.|
 |[GetAttributeBytes](../../../extensibility/debugger/reference/idebugcustomattribute-getattributebytes.md)|Obtiene la información del atributo como un BLOB de bytes.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Un atributo personalizado es una estructura para C# que proporciona metadatos personalizados asociados a una clase o un método determinados.
 
 ## <a name="requirements"></a>Requisitos
@@ -54,7 +55,7 @@ IDebugCustomAttribute : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces de proveedor de símbolos](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)

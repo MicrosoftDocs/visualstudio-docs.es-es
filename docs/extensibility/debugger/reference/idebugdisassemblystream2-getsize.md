@@ -1,4 +1,5 @@
 ---
+description: Obtiene el tamaño en las instrucciones de esta secuencia de desensamblado.
 title: 'IDebugDisassemblyStream2:: se obtiene | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e6d97c41023f0bc8ca80c36a5bfaf33735f48d07
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 94207c8e14306049068e838971aa778290de2ba6
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901712"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154371"
 ---
 # <a name="idebugdisassemblystream2getsize"></a>IDebugDisassemblyStream2::GetSize
 Obtiene el tamaño en las instrucciones de esta secuencia de desensamblado.
@@ -46,10 +47,10 @@ enuncia Devuelve el tamaño, en instrucciones.
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  El valor devuelto por este método se puede usar para asignar una matriz de estructuras [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) que se pasa a continuación al método [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)
 - [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)
 - [Lectura](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)

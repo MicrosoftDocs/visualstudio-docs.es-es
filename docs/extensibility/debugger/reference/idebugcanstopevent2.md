@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz se usa para solicitar al administrador de depuración de la sesión (SDM) si se debe detener en la ubicación del código actual.
 title: IDebugCanStopEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 87306e1373d746479ce59c96b6625fa41ef119fb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d46f4aacdc886e455771f5a30ba82b941b29c957
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903242"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154852"
 ---
 # <a name="idebugcanstopevent2"></a>IDebugCanStopEvent2
 Esta interfaz se usa para solicitar al administrador de depuración de la sesión (SDM) si se debe detener en la ubicación del código actual.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugCanStopEvent2 : IUknown
@@ -46,7 +47,7 @@ IDebugCanStopEvent2 : IUknown
 |[GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md)|Obtiene el contexto del documento que describe la ubicación de este evento.|
 |[GetCodeContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md)|Obtiene el contexto de código que describe la ubicación de este evento.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  El DE envía esta interfaz si el usuario realiza un paso en una función y el DE no encuentra ninguna información de depuración o existe información de depuración, pero el DE no sabe si el código fuente se puede mostrar para esa ubicación.
 
 ## <a name="requirements"></a>Requisitos
@@ -56,6 +57,6 @@ IDebugCanStopEvent2 : IUknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugStepCompleteEvent2](../../../extensibility/debugger/reference/idebugstepcompleteevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

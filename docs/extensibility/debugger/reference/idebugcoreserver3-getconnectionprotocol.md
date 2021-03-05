@@ -1,4 +1,5 @@
 ---
+description: Devuelve un valor que indica el protocolo que se utiliza para la comunicación entre el servidor y el paquete de depuración.
 title: 'IDebugCoreServer3:: GetConnectionProtocol | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2c8f9ad40c4c4ae61ea676755a6fa97849b6bda6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1ddea336fb77691459ef3e58a7724d4e242c3be2
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99907965"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154735"
 ---
 # <a name="idebugcoreserver3getconnectionprotocol"></a>IDebugCoreServer3::GetConnectionProtocol
 Devuelve un valor que indica el protocolo que se utiliza para la comunicación entre el servidor y el paquete de depuración.
@@ -46,6 +47,6 @@ enuncia Devuelve uno de los valores de la enumeración [CONNECTION_PROTOCOL](../
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve el código de error.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)
 - [CONNECTION_PROTOCOL](../../../extensibility/debugger/reference/connection-protocol.md)

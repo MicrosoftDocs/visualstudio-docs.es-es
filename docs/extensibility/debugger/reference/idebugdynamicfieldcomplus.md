@@ -1,4 +1,5 @@
 ---
+description: Representa un campo dinámico para un objeto IDebugBinder.
 title: IDebugDynamicFieldCOMPlus | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,17 +11,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 768031d75537befb73a54166f5792b49574798a2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 27fc3fb25b738db20d480a7a4542884dcb76123a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99919922"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154035"
 ---
 # <a name="idebugdynamicfieldcomplus"></a>IDebugDynamicFieldCOMPlus
 Representa un campo dinámico para un objeto [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) .
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugDynamicFieldCOMPlus : IDebugDynamicField

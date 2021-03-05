@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz proporciona compatibilidad con la depuración multiproceso.
 title: IDebugEngineProgram2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f630614dbe49e87b5a9905ceabbf717269c98ea2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ea46ccad8f357cb868a445a8836280abf7c224e0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99892611"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153383"
 ---
 # <a name="idebugengineprogram2"></a>IDebugEngineProgram2
 Esta interfaz proporciona compatibilidad con la depuración multiproceso.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugEngineProgram2 : IUnknown
@@ -43,7 +44,7 @@ IDebugEngineProgram2 : IUnknown
 |[WatchForThreadStep](../../../extensibility/debugger/reference/idebugengineprogram2-watchforthreadstep.md)|Inspecciona la ejecución (o deja de ver la ejecución) para que se produzca en el subproceso determinado.|
 |[WatchForExpressionEvaluationOnThread](../../../extensibility/debugger/reference/idebugengineprogram2-watchforexpressionevaluationonthread.md)|Permite (o no) que se produzca la evaluación de expresiones en el subproceso determinado, incluso si el programa está detenido.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Visual Studio llama a esta interfaz como respuesta a un evento [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) y establece los Estados "inspeccionar paso de subproceso" y "inspeccionar para evaluación de expresiones en el subproceso" del programa. Se llama a [Stop](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) cuando el programa se va a detener; Este método proporciona al programa una oportunidad para finalizar todos los subprocesos.
 
 ## <a name="requirements"></a>Requisitos
@@ -53,5 +54,5 @@ IDebugEngineProgram2 : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz representa una posición abstracta en un archivo de código fuente.
 title: IDebugDocumentPosition2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7dc8537fc943e84e37d47dc02cf6264b16dd7fb3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a6ebbe0a1101c146bf5d7e8c5fe7a096777f372c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874314"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154254"
 ---
 # <a name="idebugdocumentposition2"></a>IDebugDocumentPosition2
 Esta interfaz representa una posición abstracta en un archivo de código fuente.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugDocumentPosition2 : IUnknown
@@ -51,7 +52,7 @@ IDebugDocumentPosition2 : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md)

@@ -1,4 +1,5 @@
 ---
+description: Determina si la posición del documento está contenida en el documento especificado.
 title: 'IDebugDocumentPosition2:: IsPositionInDocument | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 17a3623ab0a674b49d96d6eb77f04ec0de9a2fb2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a4800f3735e2d015e3638a642e8c0d54829ddd4c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99842264"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154293"
 ---
 # <a name="idebugdocumentposition2ispositionindocument"></a>IDebugDocumentPosition2::IsPositionInDocument
 Determina si la posición del documento está contenida en el documento especificado.
@@ -46,9 +47,9 @@ de El objeto [IDebugDocument2](../../../extensibility/debugger/reference/idebugd
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Este método se utiliza principalmente en el establecimiento de puntos de interrupción en interfaces [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) . A medida que se cargan los documentos, se llama a la posición del punto de interrupción para determinar si el documento contiene esta posición.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)
 - [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

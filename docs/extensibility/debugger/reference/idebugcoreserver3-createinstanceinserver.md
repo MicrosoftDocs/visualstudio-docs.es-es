@@ -1,4 +1,5 @@
 ---
+description: Crea una instancia de un motor de depuración en el servidor.
 title: 'IDebugCoreServer3:: CreateInstanceInServer | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b76c37d767ae38a33d537a96f9ad8f7087503ed2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dc3a24e28c378bda34034822aedf4d35e5a6313e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909957"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154683"
 ---
 # <a name="idebugcoreserver3createinstanceinserver"></a>IDebugCoreServer3::CreateInstanceInServer
 Crea una instancia de un motor de depuración en el servidor.
@@ -66,6 +67,6 @@ de IDENTIFICADOR de interfaz de la interfaz específica que se va a recuperar de
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)
 - [SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md)

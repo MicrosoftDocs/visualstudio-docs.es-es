@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz proporciona acceso a información sobre el servidor en el que se está ejecutando el proceso.
 title: IDebugCoreServer3 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6faa47bc107c8d00864307bdb6802908e085652
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1328a97742a4672cdc71805c4c674d66fe05e817
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928475"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154618"
 ---
 # <a name="idebugcoreserver3"></a>IDebugCoreServer3
 Esta interfaz proporciona acceso a información sobre el servidor en el que se está ejecutando el proceso.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugCoreServer3 : IDebugCoreServer2
@@ -48,7 +49,7 @@ IDebugCoreServer3 : IDebugCoreServer2
 |[GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)|Recupera un valor que indica el protocolo que se utiliza para comunicarse con el servidor.|
 |[DisableAutoAttach](../../../extensibility/debugger/reference/idebugcoreserver3-disableautoattach.md)|Deshabilita la configuración de adjuntar automáticamente para todos los motores de depuración que este servidor conoce.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Un proveedor de Puerto personalizado recibe la interfaz [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) en una llamada a un [evento](../../../extensibility/debugger/reference/idebugportevents2-event.md). La `IDebugCoreServer3` interfaz se puede obtener a partir de esa interfaz.
 
 ## <a name="requirements"></a>Requisitos
@@ -58,6 +59,6 @@ IDebugCoreServer3 : IDebugCoreServer2
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)
 - [GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md)

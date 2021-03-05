@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz proporciona varios métodos para tener acceso a los servicios de notificación y el servidor de un puerto.
 title: IDebugDefaultPort2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fca0b999f4c5878debbdee556431d56b7977c719
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a5ec637daa197574710978af7cb22195c969f48b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901857"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154423"
 ---
 # <a name="idebugdefaultport2"></a>IDebugDefaultPort2
 Esta interfaz proporciona varios métodos para tener acceso a los servicios de notificación y el servidor de un puerto.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugDefaultPort2 : IDebugPort2
@@ -43,7 +44,7 @@ IDebugDefaultPort2 : IDebugPort2
 |[GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md)|Obtiene la interfaz para el servidor que hospeda este puerto.|
 |[QueryIsLocal](../../../extensibility/debugger/reference/idebugdefaultport2-queryislocal.md)|Determina si este puerto se está ejecutando en el equipo local.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  El nombre " `IDebugDefaultPort2` " es un bit de un nombre poco apropiado, ya que no representa un puerto predeterminado. Podría denominarse "IDebugPort3".
 
 ## <a name="requirements"></a>Requisitos
@@ -53,6 +54,6 @@ IDebugDefaultPort2 : IDebugPort2
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)
 - [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)

@@ -1,4 +1,5 @@
 ---
+description: Recupera un proveedor de puerto específico.
 title: 'IDebugCoreServer2:: GetPortSupplier | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 426cb86f14fcce8d41ded575c3cc621ccf38a402
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ae0e60f1ff54c257ff3a71f694362152182454bc
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904031"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154748"
 ---
 # <a name="idebugcoreserver2getportsupplier"></a>IDebugCoreServer2::GetPortSupplier
 Recupera un proveedor de puerto específico.
@@ -51,6 +52,6 @@ enuncia Devuelve un objeto [IDebugPortSupplier2](../../../extensibility/debugger
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)

@@ -1,4 +1,5 @@
 ---
+description: Este método indica al motor de depuración sobre la información de estado JustMyCode.
 title: 'IDebugEngine3:: SetJustMyCodeState | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2e706d0fd23bc0c5388ee3bd6bb82323309725c1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a81fa4bda506cf1be27f658b071910e7c8ccd8a7
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887190"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153708"
 ---
 # <a name="idebugengine3setjustmycodestate"></a>IDebugEngine3::SetJustMyCodeState
 Este método indica al motor de depuración sobre la información de estado JustMyCode.
@@ -56,9 +57,9 @@ de Matriz de estructuras [JMC_CODE_SPEC](../../../extensibility/debugger/referen
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve el código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  JustMyCode es el concepto de depurar solo el código que pertenece a un usuario y omitir todo el código intermedio, como el código del sistema, incluso si el código fuente está disponible para ese código del sistema.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)
 - [JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md)

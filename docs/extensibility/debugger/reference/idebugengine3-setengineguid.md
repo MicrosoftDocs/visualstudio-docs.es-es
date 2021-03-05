@@ -1,4 +1,5 @@
 ---
+description: Este método establece el GUID del motor de depuración (DE).
 title: 'IDebugEngine3:: SetEngineGuid | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2aaf50076978d5a6d4562eddf54de4651b3c6410
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5b1f614de2349d7bfae8339d516c991b2906ffe4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887216"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153721"
 ---
 # <a name="idebugengine3setengineguid"></a>IDebugEngine3::SetEngineGuid
 Este método establece el del motor de depuración (DE) `GUID` .
@@ -46,5 +47,5 @@ int SetEngineGuid(
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve el código de error.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)

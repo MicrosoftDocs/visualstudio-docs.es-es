@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz representa la dirección de un elemento.
 title: IDebugAddress | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e069a822cc2394769d256c93a1decf01b451b643
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4f49107e4d06fa828d059ebd9916ca254882ff0a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944861"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154969"
 ---
 # <a name="idebugaddress"></a>IDebugAddress
 Esta interfaz representa la dirección de un elemento. Lo devuelve el controlador de símbolos.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugAddress : IUnknown
@@ -41,7 +42,7 @@ IDebugAddress : IUnknown
 |------------|-----------------|
 |[GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)|Recupera una estructura de [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) que describe un objeto y su ubicación.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  El proveedor de símbolos devuelve esta interfaz para representar un objeto y su ubicación dentro de un ámbito determinado (por ejemplo, función, método o clase). Esta interfaz se devuelve desde y se pasa a varios métodos del proveedor de símbolos y del evaluador de expresiones. Normalmente, el proveedor de símbolos es la única entidad que necesita interpretar el contenido de esta interfaz.
 
 ## <a name="requirements"></a>Requisitos
@@ -51,6 +52,6 @@ IDebugAddress : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces de proveedor de símbolos](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)

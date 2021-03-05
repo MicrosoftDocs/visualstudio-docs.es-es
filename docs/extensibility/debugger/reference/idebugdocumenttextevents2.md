@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz se utiliza para notificar a Visual Studio los cambios realizados en el documento de origen que proporciona el motor de depuración.
 title: IDebugDocumentTextEvents2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc5683e39da2da190468b2cafd0d3accae9b7479
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bcbe6e44923172c3eac4da605848e972216837cc
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904016"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154189"
 ---
 # <a name="idebugdocumenttextevents2"></a>IDebugDocumentTextEvents2
 Esta interfaz se utiliza para notificar a Visual Studio los cambios realizados en el documento de origen que proporciona el motor de depuración.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugDocumentTextEvents2 : IUnknown
@@ -46,7 +47,7 @@ IDebugDocumentTextEvents2 : IUnknown
 |[onUpdateTextAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatetextattributes.md)|Notifica al paquete de depuración que se han actualizado los atributos de texto en el documento.|
 |[onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md)|Notifica al receptor el evento de que se han actualizado los atributos del documento.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Solo los motores de depuración que proporcionan sus propios documentos aprovecharán la `IDebugDocumentTextEvent2` interfaz. Un ejemplo de esto sería un motor de depuración de scripting. En el proceso de interpretar los scripts, se puede generar código fuente nuevo que no está presente en ningún archivo de disco y solo lo conoce el DE.
 
 ## <a name="requirements"></a>Requisitos
@@ -56,6 +57,6 @@ IDebugDocumentTextEvents2 : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)
 - [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

@@ -1,4 +1,5 @@
 ---
+description: Quita la excepción especificada para que el motor de depuración ya no la administre.
 title: 'IDebugEngine2:: RemoveSetException | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 29756b3be6d2c46d39b581dd3db0af61bfaa18f3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 588037ef9dcf495f8fbbb210acc3154c31558a32
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878934"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153954"
 ---
 # <a name="idebugengine2removesetexception"></a>IDebugEngine2::RemoveSetException
 Quita la excepción especificada para que el motor de depuración ya no la administre.
@@ -46,11 +47,11 @@ de Estructura [EXCEPTION_INFO](../../../extensibility/debugger/reference/excepti
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  La excepción que se va a quitar se debe haber establecido previamente mediante una llamada anterior al método [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) .
 
  Para quitar todas las excepciones set a la vez, llame al método [RemoveAllSetExceptions](../../../extensibility/debugger/reference/idebugengine2-removeallsetexceptions.md) .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)

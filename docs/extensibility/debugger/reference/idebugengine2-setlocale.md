@@ -1,4 +1,5 @@
 ---
+description: Establece la configuración regional del motor de depuración (DE).
 title: 'IDebugEngine2:: SetLocale | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3e43d8d13f34b8477ab870c80842ff33eef72a7f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 54cfd2d9d51cbad414cfb481b88f1e3277500efa
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878921"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153916"
 ---
 # <a name="idebugengine2setlocale"></a>IDebugEngine2::SetLocale
 Establece la configuración regional del motor de depuración (DE).
@@ -46,8 +47,8 @@ de Especifica la configuración regional del idioma. Por ejemplo, 1033 para ingl
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  El administrador de depuración de la sesión (SDM) llama a este método para propagar la configuración regional del IDE de modo que las cadenas devueltas por el DE estén adaptadas correctamente.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

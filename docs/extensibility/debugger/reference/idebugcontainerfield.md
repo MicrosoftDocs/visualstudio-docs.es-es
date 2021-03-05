@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz representa un símbolo o tipo que es un contenedor para otros símbolos o tipos.
 title: IDebugContainerField | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e7ed9e573236f0bdeff9c9a8433af322a5a5f79
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 752eb7d77035a25ad1d0ddc8aec45afe95d898c7
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928502"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154787"
 ---
 # <a name="idebugcontainerfield"></a>IDebugContainerField
 Esta interfaz representa un símbolo o tipo que es un contenedor para otros símbolos o tipos.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugContainerField : IDebugField
@@ -41,7 +42,7 @@ IDebugContainerField : IDebugField
 |------------|-----------------|
 |[EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md)|Crea un enumerador para los campos del contenedor.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Las matrices (contenedores para variables), las clases (contenedores de métodos y variables) y los métodos (contenedores para parámetros y variables locales) son ejemplos de contenedores.
 
 ## <a name="requirements"></a>Requisitos
@@ -51,6 +52,6 @@ IDebugContainerField : IDebugField
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces de proveedor de símbolos](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

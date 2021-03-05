@@ -1,4 +1,5 @@
 ---
+description: Especifica cómo el motor DE depuración (DE) debe controlar una excepción determinada.
 title: 'IDebugEngine2:: SetException | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1e2a6dbd5d5700d4d64625490c016da2d04af6d6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 543cccbbefd12accd75213f255f8e3b677cdea38
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878947"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153943"
 ---
 # <a name="idebugengine2setexception"></a>IDebugEngine2::SetException
 Especifica cómo el motor DE depuración (DE) debe controlar una excepción determinada.
@@ -46,9 +47,9 @@ de [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Se puede indicar a un DE que detenga el programa generando una excepción en la primera oportunidad, segunda oportunidad o no en absoluto.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)

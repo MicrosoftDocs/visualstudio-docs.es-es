@@ -1,4 +1,5 @@
 ---
+description: Obtiene el contexto del documento que describe la posición en el documento que el paquete de depuración va a activar.
 title: 'IDebugActivateDocumentEvent2:: GetDocumentContext | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 32bc4715438c7197628b4df66203aadb753bec25
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 680382e43feee9298a2de99933847ea633982a15
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904687"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154943"
 ---
 # <a name="idebugactivatedocumentevent2getdocumentcontext"></a>IDebugActivateDocumentEvent2::GetDocumentContext
 Obtiene el contexto del documento que describe la posición en el documento que el paquete de depuración va a activar.
@@ -44,12 +45,12 @@ int GetDocumentContext (
 `ppDocContext`\
 enuncia Devuelve un objeto [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) que representa una posición en un documento de archivo de código fuente.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Esta posición podría usarse para mostrar el símbolo de intercalación, por ejemplo.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

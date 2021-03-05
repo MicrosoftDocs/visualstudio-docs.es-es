@@ -1,4 +1,5 @@
 ---
+description: Intenta determinar por qué se produjo un error en la Asociación automática.
 title: IDebugCoreServer3::D iagnoseWebDebuggingError | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a6c95c3953b70235daa739e48b5de50b4a815b13
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 95e54add3616fa0ec97f4114b4cd628213e752f9
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99908064"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154696"
 ---
 # <a name="idebugcoreserver3diagnosewebdebuggingerror"></a>IDebugCoreServer3::DiagnoseWebDebuggingError
 Intenta determinar por qué se produjo un error en la Asociación automática.
@@ -52,5 +53,5 @@ de No se usa actualmente; siempre se debe establecer en un valor null.
 |`S_WEBDBG_DEBUG_VERB_BLOCKED`|No se puede depurar en el servidor remoto, posiblemente debido a permisos insuficientes o a que el verbo DEBUG no está habilitado.|
 |`E_WEBDBG_DEBUG_VERB_BLOCKED`|El servidor Web se ha bloqueado y está bloqueando el verbo DEBUG, que es necesario para habilitar la depuración.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

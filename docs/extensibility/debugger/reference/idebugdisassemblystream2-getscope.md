@@ -1,4 +1,5 @@
 ---
+description: Obtiene el ámbito de la secuencia de desensamblado.
 title: 'IDebugDisassemblyStream2:: Getscope (| Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 28c0d07dd389814c0aa06792f4509ed9da1b4ef9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8b112975649ec477a036826e3dc938ba756615c0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901678"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154462"
 ---
 # <a name="idebugdisassemblystream2getscope"></a>IDebugDisassemblyStream2::GetScope
 Obtiene el ámbito de la secuencia de desensamblado.
@@ -46,9 +47,9 @@ enuncia Devuelve un valor de la enumeración [DISASSEMBLY_STREAM_SCOPE](../../..
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  El ámbito de un desensamblado podría ser una función o todo el módulo, por ejemplo.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)
 - [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md)

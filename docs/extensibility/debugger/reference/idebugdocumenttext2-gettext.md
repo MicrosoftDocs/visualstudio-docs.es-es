@@ -1,4 +1,5 @@
 ---
+description: Recupera el texto de la posición especificada en el documento.
 title: 'IDebugDocumentText2:: GetText | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0fb2281c9086baee87df6ac7e214b2911e2fc354
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 53ee0ff735cfbec4835e762dfa95e293c95885b5
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923168"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154228"
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
 Recupera el texto de la posición especificada en el documento.
@@ -100,6 +101,6 @@ namespace Mynamespace
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)
 - [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

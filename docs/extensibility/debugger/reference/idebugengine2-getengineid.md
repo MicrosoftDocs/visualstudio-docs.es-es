@@ -1,4 +1,5 @@
 ---
+description: Obtiene el GUID del motor de depuración (DE).
 title: 'IDebugEngine2:: GetEngineID | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8ec0c294c0d1a1e19942ac86847cad1226041b24
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bf785c906303bab677adadfd081ae6af276a754c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878973"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153981"
 ---
 # <a name="idebugengine2getengineid"></a>IDebugEngine2::GetEngineID
 Obtiene el GUID del motor de depuración (DE).
@@ -46,7 +47,7 @@ enuncia Devuelve el GUID del de.
 ## <a name="return-value"></a>Valor devuelto
 Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Algunos ejemplos de GUID típicos son `guidScriptEng` , `guidNativeEng` o `guidSQLEng` . Los nuevos motores de depuración crearán su propio GUID para la identificación.
 
 ## <a name="example"></a>Ejemplo
@@ -66,5 +67,5 @@ HRESULT CEngine::GetEngineId(GUID *pguidEngine) {
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

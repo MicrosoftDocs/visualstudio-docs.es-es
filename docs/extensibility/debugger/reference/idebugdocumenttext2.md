@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz representa un documento de texto.
 title: IDebugDocumentText2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: af72993a4a02ce7d25858bf3bd4f0690e0d30f5a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: eb1c5928362616466985a6f88102ffcbf4377444
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923102"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154215"
 ---
 # <a name="idebugdocumenttext2"></a>IDebugDocumentText2
 Esta interfaz representa un documento de texto.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugDocumentText2 : IDebugDocument2
@@ -42,7 +43,7 @@ IDebugDocumentText2 : IDebugDocument2
 |[GetSize (](../../../extensibility/debugger/reference/idebugdocumenttext2-getsize.md)|Recupera el tamaño del texto en esta posición del documento.|
 |[GetText](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)|Recupera el texto de la posición especificada en el documento.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Un objeto que implementa esta interfaz también debe implementar la <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> interfaz, que proporciona la <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> interfaz para un objeto [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md) .
 
 ## <a name="requirements"></a>Requisitos
@@ -52,6 +53,6 @@ IDebugDocumentText2 : IDebugDocument2
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)
 - [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)

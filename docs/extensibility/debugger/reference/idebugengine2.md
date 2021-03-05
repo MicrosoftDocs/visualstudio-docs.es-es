@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz representa un motor DE depuración (DE).
 title: IDebugEngine2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c38dc023c44e0c1743fd9d35dbe65befda405f4e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ce76ccdc444dafc4b6b8ee6afb3c9ded8adcf3d0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99919934"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153838"
 ---
 # <a name="idebugengine2"></a>IDebugEngine2
 Esta interfaz representa un motor DE depuración (DE). Se utiliza para administrar diversos aspectos de una sesión de depuración, desde la creación de puntos de interrupción hasta la configuración y el borrado de excepciones.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugEngine2 : IUnknown
@@ -60,6 +61,6 @@ IDebugEngine2 : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
 - [GetEngine](../../../extensibility/debugger/reference/idebugenginecreateevent2-getengine.md)

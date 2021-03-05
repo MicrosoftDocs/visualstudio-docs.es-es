@@ -1,4 +1,5 @@
 ---
+description: Obtiene el tipo de clase de atributo personalizado.
 title: 'IDebugCustomAttribute:: GetAttributeTypeField | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3fa72b6dfc02f29e5efd8d3e04f98f078cba66a2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f9ea62b012cd58aac44e5a2d37d4dc6e3b35ca92
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928450"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154527"
 ---
 # <a name="idebugcustomattributegetattributetypefield"></a>IDebugCustomAttribute::GetAttributeTypeField
 Obtiene el tipo de clase de atributo personalizado.
@@ -46,9 +47,9 @@ enuncia Devuelve el objeto [IDebugClassField](../../../extensibility/debugger/re
 ## <a name="return-value"></a>Valor devuelto
  Si se realiza correctamente, Devuelve S_OK; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Un atributo personalizado siempre es una clase. Este método proporciona acceso a un objeto [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) que describe esa clase.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

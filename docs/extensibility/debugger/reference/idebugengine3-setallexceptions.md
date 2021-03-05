@@ -1,4 +1,5 @@
 ---
+description: Este método establece el estado de todas las excepciones pendientes.
 title: 'IDebugEngine3:: SetAllExceptions | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 63af55f55dbeb43bfa30aaca5354c4d4fa8afc06
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 734a227bbd9387f591314c65be1124d1b2593fd2
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887242"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153760"
 ---
 # <a name="idebugengine3setallexceptions"></a>IDebugEngine3::SetAllExceptions
 Este método establece el estado de todas las excepciones pendientes.
@@ -46,6 +47,6 @@ de Uno de los valores de [EXCEPTION_STATE](../../../extensibility/debugger/refer
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve el código de error.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)
 - [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md)

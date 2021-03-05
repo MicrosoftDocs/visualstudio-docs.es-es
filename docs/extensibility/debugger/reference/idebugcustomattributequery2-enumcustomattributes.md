@@ -1,4 +1,5 @@
 ---
+description: Obtiene un enumerador para todos los atributos personalizados asociados a este campo.
 title: 'IDebugCustomAttributeQuery2:: Enumcustomattributes (| Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 97476647c42dc66d3998aecf2c717fa3bbb08cf4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 348d5e753702e523f09bef8cbd5f374294c197e4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99842464"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154449"
 ---
 # <a name="idebugcustomattributequery2enumcustomattributes"></a>IDebugCustomAttributeQuery2::EnumCustomAttributes
 Obtiene un enumerador para todos los atributos personalizados asociados a este campo.
@@ -46,9 +47,9 @@ enuncia Devuelve un objeto [IEnumDebugCustomAttributes](../../../extensibility/d
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, Devuelve S_OK o S_FALSE si no hay ningún atributo personalizado en este campo. De lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Un campo puede tener varios atributos personalizados.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)
 - [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)
