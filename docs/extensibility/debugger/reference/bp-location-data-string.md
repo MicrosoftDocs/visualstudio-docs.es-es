@@ -1,4 +1,5 @@
 ---
+description: Se usa para establecer puntos de interrupción de datos que se basan en una cadena que el usuario puede especificar desde el entorno de desarrollo integrado (IDE).
 title: BP_LOCATION_DATA_STRING | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: ce47dc9a3fac9ee56b801e4d2681668f4467f532
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1e4a250843ebbb6ab7680040e3aa296699e184ee
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902169"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144356"
 ---
 # <a name="bp_location_data_string"></a>BP_LOCATION_DATA_STRING
 Se usa para establecer puntos de interrupción de datos que se basan en una cadena que el usuario puede especificar desde el entorno de desarrollo integrado (IDE).
@@ -48,7 +49,7 @@ Cadena de datos que especifica el usuario para establecer el punto de interrupci
 `dwNumElements`\
 El número de elementos de la cadena de datos en los que se produce el punto de interrupción.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Esta estructura es miembro de la estructura [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) como parte de una Unión.
 
 ## <a name="requirements"></a>Requisitos
@@ -58,7 +59,7 @@ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

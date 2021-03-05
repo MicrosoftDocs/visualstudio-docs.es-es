@@ -1,4 +1,5 @@
 ---
+description: Recupera una lista de todos los subprocesos que se ejecutan en el proceso.
 title: 'IDebugProcess2:: Enumthreads (| Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9c766ab8f12d9cda4348b9916d41b6182ccf67e0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 13d348376429bafaf113e6fb7dbd181bed4dab8f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890193"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102142614"
 ---
 # <a name="idebugprocess2enumthreads"></a>IDebugProcess2::EnumThreads
 Recupera una lista de todos los subprocesos que se ejecutan en el proceso.
@@ -46,12 +47,12 @@ enuncia Devuelve un objeto [IEnumDebugThreads2](../../../extensibility/debugger/
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Este método enumera los subprocesos que se ejecutan en cada programa y, a continuación, los combina en una vista de proceso de los subprocesos. Un único subproceso puede ejecutarse en varios programas; Este método enumera el subproceso solo una vez.
 
  Este método presenta una lista de los subprocesos del proceso sin duplicados. De lo contrario, para enumerar los subprocesos que se ejecutan en un programa determinado, use el método [enumthreads (](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
 - [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

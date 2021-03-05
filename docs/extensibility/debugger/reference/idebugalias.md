@@ -1,4 +1,5 @@
 ---
+description: Representa un alias numérico para una variable.
 title: IDebugAlias | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ad298d83efd16112a0cf1be3171601b93342a55
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6fd5639c510ba5a4a346c7a6f2630e7f14ddf036
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944724"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143888"
 ---
 # <a name="idebugalias"></a>IDebugAlias
 > [!IMPORTANT]
@@ -25,7 +26,7 @@ ms.locfileid: "99944724"
 
  Representa un alias numérico para una variable. Un alias es simplemente un nombre diferente para una variable.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugAlias : IUnknown
@@ -47,7 +48,7 @@ IDebugAlias : IUnknown
 |[GetICorDebugValue](../../../extensibility/debugger/reference/idebugalias-geticordebugvalue.md)|Recupera una `ICorDebugValue` interfaz que proporciona acceso a la información de código administrado sobre este objeto (solo código administrado).|
 |[Dispose](../../../extensibility/debugger/reference/idebugalias-dispose.md)|Marca este alias como que ya no se usa.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Un alias es un número decimal en forma de cadena seguido del carácter #, por ejemplo, 1001 #.
 
 ## <a name="requirements"></a>Requisitos
@@ -57,7 +58,7 @@ IDebugAlias : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces de evaluación de expresiones](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [CreateAlias](../../../extensibility/debugger/reference/idebugobject2-createalias.md)
 - [FindAlias](../../../extensibility/debugger/reference/idebugbinder3-findalias.md)

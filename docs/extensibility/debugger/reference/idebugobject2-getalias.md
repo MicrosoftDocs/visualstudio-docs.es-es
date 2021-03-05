@@ -1,4 +1,5 @@
 ---
+description: Obtiene el alias asociado a este objeto, si existe.
 title: 'IDebugObject2:: GetAlias | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2f2fa330b98a37f3946ef19bc2f5641b5b525d88
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8c2ac683a5fb4d694b7cf3ab84849b9d7c7df7a3
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953492"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143134"
 ---
 # <a name="idebugobject2getalias"></a>IDebugObject2::GetAlias
 Obtiene el alias asociado a este objeto, si existe.
@@ -46,9 +47,9 @@ enuncia Devuelve un objeto [IDebugAlias](../../../extensibility/debugger/referen
 ## <a name="return-value"></a>Valor devuelto
  Si se realiza correctamente, Devuelve S_OK; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Se crea un alias para un objeto con una llamada al método [CreateAlias](../../../extensibility/debugger/reference/idebugobject2-createalias.md) .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

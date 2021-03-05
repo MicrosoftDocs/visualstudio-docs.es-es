@@ -1,4 +1,5 @@
 ---
+description: Recupera una interfaz de código administrado que representa el valor asociado a este alias.
 title: 'IDebugAlias:: GetICorDebugValue | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2ba5456ba3beabb1d5418d739be2aa74838daa41
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b809e16fefb9306da842f39d93bdb3dd0f7b404f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99947182"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143940"
 ---
 # <a name="idebugaliasgeticordebugvalue"></a>IDebugAlias::GetICorDebugValue
 Recupera una interfaz de código administrado que representa el valor asociado a este alias.
@@ -46,8 +47,8 @@ int GetICorDebugValue(
 ## <a name="return-value"></a>Valor devuelto
  Si se realiza correctamente, Devuelve S_OK; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Este método solo se aplica a los valores administrados ( `ICorDebugValue` es una interfaz disponible en el .NET Framework y se define en el SDK de .NET Framework en el archivo Cordebug. idl).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

@@ -1,4 +1,5 @@
 ---
+description: Obtiene la descripción de un puerto que se usó anteriormente para crear el puerto (si está disponible).
 title: 'IDebugPort2:: GetPortRequest | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2694a0ee6e134a5f822c0f84284d96b7ce57ef93
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 084e8bb94356ea4e2cff1fa83e83e7e08b35134e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99907894"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102142874"
 ---
 # <a name="idebugport2getportrequest"></a>IDebugPort2::GetPortRequest
 Obtiene la descripción de un puerto que se usó anteriormente para crear el puerto (si está disponible).
@@ -46,7 +47,7 @@ enuncia Devuelve un objeto [IDebugPortRequest2](../../../extensibility/debugger/
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  Devuelve `E_PORT_NO_REQUEST` si no se creó un puerto mediante una solicitud de puerto [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)
 - [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)
 - [AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)

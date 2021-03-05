@@ -1,4 +1,5 @@
 ---
+description: Representa una interfaz de usuario personalizada para seleccionar el puerto.
 title: IDebugPortPicker | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,17 +11,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8dd4f85bfdfb58baff3301c2d858f52933f16d1f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 335a954603505d064f32e8f901ce428d6cb8dfa1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958601"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102142641"
 ---
 # <a name="idebugportpicker"></a>IDebugPortPicker
 Representa una interfaz de usuario personalizada para seleccionar el puerto.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugPortPicker : IUnknown

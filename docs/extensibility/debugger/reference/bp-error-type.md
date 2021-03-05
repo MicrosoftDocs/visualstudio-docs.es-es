@@ -1,4 +1,5 @@
 ---
+description: Especifica el tipo de error de un punto de interrupción.
 title: BP_ERROR_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,17 +16,17 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9b67b28c61624b73787dabe9fd24c4c39ff9b3c9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ced08f5bf4cd51a1f89f139fd19971e21e2225e6
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853057"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144434"
 ---
 # <a name="bp_error_type"></a>BP_ERROR_TYPE
 Especifica el tipo de error de un punto de interrupción.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_BP_ERROR_TYPE {
@@ -94,7 +95,7 @@ Especifica un error de punto de interrupción de estilo de error general.
 `BPET_ALL`\
 Especifica todos los tipos de error de punto de interrupción.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Estos valores se pueden combinar con una operación bit a bit `OR` y utilizarse para el `dwType` miembro de la estructura [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) . Se pasa como un parámetro al método [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) .
 
 Un tipo de error de punto de interrupción se compone de un tipo y una gravedad. Esto significa que un tipo de error de punto de interrupción nunca es simplemente un tipo (por ejemplo, `BPET_TYPE_ERROR` ,) o una gravedad (por ejemplo, `BPET_SEV_GENERAL` ) por sí solo. `BPET_GENERAL_WARNING` y `BPET_GENERAL_ERROR` proporcionan valores predefinidos para los puntos de interrupción generales de advertencia y error.

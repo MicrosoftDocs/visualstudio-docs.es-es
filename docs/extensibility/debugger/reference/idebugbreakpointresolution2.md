@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz representa la información que describe un punto de interrupción enlazado.
 title: IDebugBreakpointResolution2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6ebb698fc839a93547d15828b250bd436260e33
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 31543b574006609cb22e6cf505771840678a97fa
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881040"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143329"
 ---
 # <a name="idebugbreakpointresolution2"></a>IDebugBreakpointResolution2
 Esta interfaz representa la información que describe un punto de interrupción enlazado.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugBreakpointResolution2 : IUnknown
@@ -49,5 +50,5 @@ IDebugBreakpointResolution2 : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [GetBreakpointResolution](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md)

@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz indica al administrador de depuración de la sesión (SDM) que un punto de interrupción pendiente se ha enlazado correctamente a un programa cargado.
 title: IDebugBreakpointBoundEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 149b3f4d474c0304fab26f9ff3f772440ae761ca
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3969010a59e66a8931c7f99d337b6f2ad373ccc4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948340"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143576"
 ---
 # <a name="idebugbreakpointboundevent2"></a>IDebugBreakpointBoundEvent2
 Esta interfaz indica al administrador de depuración de la sesión (SDM) que un punto de interrupción pendiente se ha enlazado correctamente a un programa cargado.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugBreakpointBoundEvent2 : IUnknown
@@ -42,7 +43,7 @@ IDebugBreakpointBoundEvent2 : IUnknown
 |[GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md)|Obtiene el punto de interrupción pendiente que se está enlazando.|
 |[EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md)|Crea un enumerador de puntos de interrupción enlazados a este evento.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Siempre que se enlaza un punto de interrupción, se envía un evento al SDM. Si no se puede enlazar el punto de interrupción, se envía un [IDebugBreakpointErrorEvent2](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md) ; de lo contrario, `IDebugBreakpointBoundEvent2` se envía un.
 
 ## <a name="requirements"></a>Requisitos
@@ -52,7 +53,7 @@ IDebugBreakpointBoundEvent2 : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

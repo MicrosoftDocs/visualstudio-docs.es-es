@@ -1,4 +1,5 @@
 ---
+description: Crea un objeto que usa un constructor con valores de marca de evaluación determinados y un valor de tiempo de espera.
 title: 'IDebugFunctionObject2:: CreateObject | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 424599d322c2c8dd4db8ff4e19bab60eceaefc08
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4cd5eb81972af35b84c688e34b8cbc285c4723c2
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920998"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143147"
 ---
 # <a name="idebugfunctionobject2createobject"></a>IDebugFunctionObject2::CreateObject
 Crea un objeto que usa un constructor con valores de marca de evaluación determinados y un valor de tiempo de espera.
@@ -70,8 +71,8 @@ enuncia Devuelve un **IDebugObject** que representa el objeto recién creado.
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Llame a este método para crear un objeto que represente una instancia de una clase u otro tipo complejo que requiera un constructor, que es un parámetro.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)

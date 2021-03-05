@@ -1,4 +1,5 @@
 ---
+description: Especifica el tipo de ubicación del punto de interrupción para una solicitud de punto de interrupción.
 title: BP_LOCATION_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,17 +16,17 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 735acca4d4b2e2881c49a236dadae44aaa3cc1fd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e1ccf81393e42cc79b0ef93703b4a2327207baf6
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902137"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144200"
 ---
 # <a name="bp_location_type"></a>BP_LOCATION_TYPE
 Especifica el tipo de ubicación del punto de interrupción para una solicitud de punto de interrupción.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_BP_LOCATION_TYPE {
@@ -114,7 +115,7 @@ Especifica una máscara de bits, de modo que el tipo de punto de interrupción s
 `BPLT_LOCATION_TYPE_MASK`\
 Especifica una máscara de bits, de modo que el tipo de ubicación del punto de interrupción se puede extraer del valor.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Se pasa como un parámetro al método [GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md) .
 
 Un tipo de ubicación de punto de interrupción se compone de un tipo de punto de interrupción y un tipo de ubicación. Esto significa que un tipo de ubicación de punto de interrupción nunca es simplemente un tipo de punto de interrupción (por ejemplo, `BPT_CODE` ) o un tipo de ubicación (por ejemplo, `BPLT_FILE_LINE` ). Las constantes predefinidas para todos los tipos de ubicación de puntos de interrupción admitidos actualmente se incluyen en esta enumeración ( `BPLT_CODE_FILE_LINE` a `BPLT_DATA_STRING` ).

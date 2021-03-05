@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz describe un puerto.
 title: IDebugPortRequest2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44e0bc66d9f385a41f0f43af7217738e40e69126
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2ca2d1d59c66c87c2dbb0fc256481d35ad590dbe
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887125"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102142627"
 ---
 # <a name="idebugportrequest2"></a>IDebugPortRequest2
 Esta interfaz describe un puerto. Esta descripción se usa para agregar el puerto a un proveedor de puerto.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugPortRequest2 : IUnknown
@@ -41,7 +42,7 @@ IDebugPortRequest2 : IUnknown
 |------------|-----------------|
 |[GetPortName](../../../extensibility/debugger/reference/idebugportrequest2-getportname.md)|Obtiene el nombre del puerto que se va a crear.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Normalmente, un motor de depuración no interactúa con un proveedor de puerto y no tendrá ningún uso para esta interfaz.
 
 ## <a name="requirements"></a>Requisitos
@@ -51,7 +52,7 @@ IDebugPortRequest2 : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
 - [AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)
 - [GetPortRequest](../../../extensibility/debugger/reference/idebugport2-getportrequest.md)

@@ -1,4 +1,5 @@
 ---
+description: Inicia un archivo ejecutable.
 title: 'IDebugPortEx2:: LaunchSuspended | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3cfaf6dd332f17bd934a55f700e4d28096fba8b8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b5982ad665333aa4d11e2098d3b148db88e77c32
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844780"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102142834"
 ---
 # <a name="idebugportex2launchsuspended"></a>IDebugPortEx2::LaunchSuspended
 Inicia un archivo ejecutable.
@@ -81,12 +82,12 @@ enuncia Devuelve un objeto [IDebugPendingBreakpoint2](../../../extensibility/deb
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Este método debe iniciar el proceso para que se suspenda y no se ejecute ningún código. Se llama al método [ResumeProcess](../../../extensibility/debugger/reference/idebugportex2-resumeprocess.md) para reanudar el proceso.
 
  Un programa también se puede iniciar desde un motor de depuración. Para obtener más información, vea [iniciar un programa](../../../extensibility/debugger/launching-a-program.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
 - [ResumeProcess](../../../extensibility/debugger/reference/idebugportex2-resumeprocess.md)

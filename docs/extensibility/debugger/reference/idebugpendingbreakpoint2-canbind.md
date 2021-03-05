@@ -1,4 +1,5 @@
 ---
+description: Determina si este punto de interrupción pendiente puede enlazarse a una ubicación de código.
 title: 'IDebugPendingBreakpoint2:: CanBind | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 89781298dc9134f80f8f57cc0e008068fa47bad3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 55b51049929941e868803242af8ef12bca368dd8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953206"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143095"
 ---
 # <a name="idebugpendingbreakpoint2canbind"></a>IDebugPendingBreakpoint2::CanBind
 Determina si este punto de interrupción pendiente puede enlazarse a una ubicación de código.
@@ -47,7 +48,7 @@ enuncia Devuelve un objeto [IEnumDebugErrorBreakpoints2](../../../extensibility/
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK.` devuelve `S_FALSE` si el punto de interrupción no se puede enlazar, en cuyo caso el parámetro devuelve los errores `ppErrorEnum` . De lo contrario, devuelve un código de error. Devuelve `E_BP_DELETED` si se ha eliminado el punto de interrupción.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Se llama a este método para determinar lo que sucedería si se enlazara este punto de interrupción pendiente. Llame al método [BIND](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) para enlazar realmente el punto de interrupción pendiente.
 
 ## <a name="example"></a>Ejemplo
@@ -138,7 +139,7 @@ HRESULT CPendingBreakpoint::CanBind(IEnumDebugErrorBreakpoints2** ppErrorEnum)
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
 - [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)
 - [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)

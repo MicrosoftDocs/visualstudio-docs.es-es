@@ -1,4 +1,5 @@
 ---
+description: Especifica si el punto de interrupción de datos se está emulando o implementando en el hardware.
 title: BP_RES_DATA_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,17 +16,17 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a90b8e9ffdc8009802c7e4c88927f69737eb83e4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bf1d27e876da5fdc0f95ecea0e9ba96c0a687bb1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901953"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144109"
 ---
 # <a name="bp_res_data_flags"></a>BP_RES_DATA_FLAGS
 Especifica si el punto de interrupción de datos se está emulando o implementando en el hardware.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_BP_RES_DATA_FLAGS {
@@ -44,7 +45,7 @@ public enum enum_BP_RES_DATA_FLAGS {
 `BP_RES_DATA_EMULATED`\
 Especifica que se está emulando el punto de interrupción de datos.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Se utiliza para el `dwFlags` miembro de la estructura [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) .
 
 ## <a name="requirements"></a>Requisitos

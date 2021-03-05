@@ -1,4 +1,5 @@
 ---
+description: Especifica el tipo de estructura que se usa para describir la ubicación del punto de interrupción.
 title: BP_LOCATION | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 15f52f9b71bcb18131e03a7d7fbdd9f56ac4fa6b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 472dc7b2e642608691ea2adb2ad1a7dce170729f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902120"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144187"
 ---
 # <a name="bp_location"></a>BP_LOCATION
 Especifica el tipo de estructura que se usa para describir la ubicación del punto de interrupción.
@@ -90,7 +91,7 @@ Un valor de la enumeración [BP_LOCATION_TYPE](../../../extensibility/debugger/r
 `unionmember4`\
 [Solo C#] Vea los comentarios sobre cómo interpretar.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Esta estructura es miembro de las estructuras [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) y [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) .
 
  [Solo C#] Los `unionmemberX` miembros se interpretan según la tabla siguiente. Busque el valor en la columna izquierda `bpLocationType` y, a continuación, examine las otras columnas para determinar qué `unionmemberX` representa cada miembro y calcular las referencias de la forma `unionmemberX` adecuada. Vea el ejemplo para obtener una forma de interpretar una parte de esta estructura en C#.
@@ -138,7 +139,7 @@ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)
 - [BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md)

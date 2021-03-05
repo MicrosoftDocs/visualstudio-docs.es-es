@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz proporciona acceso a los tipos, alias y servicios del visualizador personalizado.
 title: IDebugBinder3 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 673e4a4f18488b973984319310c139e104524a47
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2f6be3b149450ec84158acc533230102fce5a67e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901888"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143615"
 ---
 # <a name="idebugbinder3"></a>IDebugBinder3
 > [!IMPORTANT]
@@ -25,7 +26,7 @@ ms.locfileid: "99901888"
 
  Esta interfaz proporciona acceso a los tipos, alias y servicios del visualizador personalizado.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugBinder3 : IDebugBinder
@@ -58,6 +59,6 @@ IDebugBinder3 : IDebugBinder
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces de evaluación de expresiones](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)

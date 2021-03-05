@@ -1,4 +1,5 @@
 ---
+description: Este método obtiene el contexto de memoria o el objeto que contiene el valor actual del símbolo.
 title: 'IDebugBinder:: Bind | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8ee9f303223da15bc75adbf31d533848fb017bb1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c373fbdae030de30544c67c1509eb812b746b7f1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901900"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143665"
 ---
 # <a name="idebugbinderbind"></a>IDebugBinder::Bind
 Este método obtiene el contexto de memoria o el objeto que contiene el valor actual del símbolo.
@@ -56,7 +57,7 @@ enuncia Devuelve el `IDebugObject` que representa la instancia del símbolo.
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

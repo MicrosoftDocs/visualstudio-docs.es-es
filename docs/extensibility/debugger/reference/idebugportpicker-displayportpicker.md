@@ -1,4 +1,5 @@
 ---
+description: Muestra el cuadro de diálogo especificado que permite al usuario seleccionar un puerto.
 title: IDebugPortPicker::D isplayPortPicker | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 49cc4500e887a3fbfcd8f6da8a62c42c75ef56aa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9c07e95343521692d41d045a89a4038f5ff64e7b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929542"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102142562"
 ---
 # <a name="idebugportpickerdisplayportpicker"></a>IDebugPortPicker::DisplayPortPicker
 Muestra el cuadro de diálogo especificado que permite al usuario seleccionar un puerto.
@@ -50,5 +51,5 @@ enuncia Cadena de identificador de puerto.
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error. Un valor devuelto de `S_FALSE` (o un valor devuelto de `S_OK` con el `BSTR` establecido en `NULL` ) indica que el usuario hizo clic en **Cancelar**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugPortPicker](../../../extensibility/debugger/reference/idebugportpicker.md)

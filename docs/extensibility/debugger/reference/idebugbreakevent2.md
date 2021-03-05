@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz indica al administrador de depuración de la sesión (SDM) que una interrupción asincrónica se ha completado correctamente.
 title: IDebugBreakEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61fb53c1fc83f06c200b50b5fcf55f950a00ead6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dddf2c69cf7ccf221c00e88fc159b762284483ff
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943439"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143589"
 ---
 # <a name="idebugbreakevent2"></a>IDebugBreakEvent2
 Esta interfaz indica al administrador de depuración de la sesión (SDM) que una interrupción asincrónica se ha completado correctamente.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugBreakEvent2 : IUnknown
@@ -34,7 +35,7 @@ IDebugBreakEvent2 : IUnknown
 ## <a name="notes-for-callers"></a>Notas para llamadores
  El SDM llama a [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md) cuando el usuario ha solicitado que el programa que se está depurando esté en pausa. Cuando el programa se ha pausado correctamente, el DE envía el `IDebugBreakEvent2` evento. Este evento se envía mediante la función de devolución de llamada [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) proporcionada por el SDM cuando se adjunta al programa que se está depurando.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Por ejemplo, un usuario puede seleccionar el comando **interrumpir todo** en el menú **depurar** para salir de un programa que ejecuta un bucle infinito. El SDM indica al programa que se detenga llamando a [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md). El DE envía `IDebugBreakEvent2` cuando finalmente se detiene el programa.
 
 ## <a name="requirements"></a>Requisitos
@@ -44,7 +45,7 @@ IDebugBreakEvent2 : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

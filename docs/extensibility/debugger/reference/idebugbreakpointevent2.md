@@ -1,4 +1,5 @@
 ---
+description: El motor DE depuración (DE) envía esta interfaz al administrador de depuración de la sesión (SDM) cuando un programa se detiene en un punto de interrupción.
 title: IDebugBreakpointEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2076f4c98748d33542b4457f236711c38936aea
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e3ff9d1f83baeec275f285caa4aaca692e20958d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952309"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143344"
 ---
 # <a name="idebugbreakpointevent2"></a>IDebugBreakpointEvent2
 El motor DE depuración (DE) envía esta interfaz al administrador de depuración de la sesión (SDM) cuando un programa se detiene en un punto de interrupción.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugBreakpointEvent2 : IUnknown
@@ -48,6 +49,6 @@ IDebugBreakpointEvent2 : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

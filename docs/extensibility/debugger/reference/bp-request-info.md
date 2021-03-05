@@ -1,4 +1,5 @@
 ---
+description: Contiene la información necesaria para implementar un punto de interrupción.
 title: BP_REQUEST_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c806687b9948be693ca25868aaf7211d9ccf6b97
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 941c8302fa52d579c2fbefc62ccd962d26e2cf13
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902026"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144136"
 ---
 # <a name="bp_request_info"></a>BP_REQUEST_INFO
 Contiene la información necesaria para implementar un punto de interrupción.
@@ -88,7 +89,7 @@ Nombre del subproceso en el que se produce el punto de interrupción.
 `dwFlags`\
 Combinación de marcas de la enumeración [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) que especifica las marcas del punto de interrupción solicitado.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 El método [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) devuelve esta estructura.
 
 Si necesita obtener el GUID del proveedor del motor de depuración, la restricción de punto de interrupción o el punto de seguimiento, vea la estructura [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) .
@@ -100,7 +101,7 @@ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)
 - [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)
