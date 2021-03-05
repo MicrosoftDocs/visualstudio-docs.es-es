@@ -1,4 +1,5 @@
 ---
+description: Hace que el proceso procese una instrucción o instrucción.
 title: 'IDebugProcess3:: Step | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 69f7c1736f786b2c59678826b71f7f9349629057
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b85df970c073fa2203873733073c5b6b85cabe06
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926243"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150138"
 ---
 # <a name="idebugprocess3step"></a>IDebugProcess3::Step
 Hace que el proceso procese una instrucción o instrucción.
@@ -59,12 +60,12 @@ de Uno de los valores de [STEPUNIT](../../../extensibility/debugger/reference/st
 ## <a name="return-value"></a>Valor devuelto
  Si se realiza correctamente, Devuelve S_OK; de lo contrario, devuelve el código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  En caso de que haya cualquier sincronización de subprocesos o comunicación entre subprocesos, otros subprocesos del proceso deben ejecutarse cuando un subproceso determinado se está ejecutando.
 
  **ADVERTENCIA** de No enviar un evento de detención o un evento inmediato (sincrónico) al [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) mientras se controla esta llamada; de lo contrario, es posible que el depurador deje de responder.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [STEPKIND](../../../extensibility/debugger/reference/stepkind.md)

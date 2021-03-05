@@ -1,4 +1,5 @@
 ---
+description: Enumera los valores válidos que representan los tipos de información que se tomarán de un objeto IDebugField y se mostrarán al usuario.
 title: DisplayKind | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,17 +14,17 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 62421ad9bf03c3b8eb21539f2f53fd8a632498ff
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5632c6844a38f1891070311fe3c7c65a0220def5
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953778"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151029"
 ---
 # <a name="displaykind"></a>DisplayKind
 Enumera los valores válidos que representan los tipos de información que se tomarán de un objeto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) y se mostrarán al usuario.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_DisplayKind

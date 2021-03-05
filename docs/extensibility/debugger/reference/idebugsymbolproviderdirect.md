@@ -1,4 +1,5 @@
 ---
+description: Representa un proveedor de símbolos que tiene acceso directo a los metadatos y a las interfaces de símbolos principales.
 title: IDebugSymbolProviderDirect | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,17 +11,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 29f0e7e3d2fefe0f47dc971ebff273bf2745a5ef
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0d60af5be925341e5421badb4c3e6e3dae97903b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909424"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149319"
 ---
 # <a name="idebugsymbolproviderdirect"></a>IDebugSymbolProviderDirect
 Representa un proveedor de símbolos que tiene acceso directo a los metadatos y a las interfaces de símbolos principales.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugSymbolProviderDirect: IUnknown
@@ -38,7 +39,7 @@ IDebugSymbolProviderDirect: IUnknown
 |[GetMethodFromAddress](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getmethodfromaddress.md)|Recupera información sobre el método en la dirección de depuración especificada.|
 |[GetSymUnmanagedReader](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getsymunmanagedreader.md)|Recupera un lector de símbolos para el código no administrado.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Esta interfaz se puede usar en lugar de la mayoría de las demás interfaces de proveedor de símbolos. Proporciona acceso directo a los metadatos e `CorSym` interfaces.
 
 ## <a name="requirements"></a>Requisitos

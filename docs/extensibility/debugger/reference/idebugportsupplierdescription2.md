@@ -1,4 +1,5 @@
 ---
+description: Permite que la interfaz de usuario de Visual Studio muestre texto dentro de la sección información de transporte del cuadro de diálogo asociar al proceso.
 title: IDebugPortSupplierDescription2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,17 +11,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3db59d4938911d0c47f0122a8727be8f1c8acd67
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8c3cd8d6fbeaf020ea772c9bd5cae783b6e8d127
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840202"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150385"
 ---
 # <a name="idebugportsupplierdescription2"></a>IDebugPortSupplierDescription2
 Permite [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] que la interfaz de usuario muestre texto dentro de la sección **información de transporte** del cuadro de diálogo **asociar al proceso** .
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugPortSupplierDescription2 : IUnknown

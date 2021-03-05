@@ -1,4 +1,5 @@
 ---
+description: Especifica la información que se va a recuperar sobre un objeto de marco de pila.
 title: FRAMEINFO_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,17 +16,17 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9dcdb555e4355d6f22c8218f98899c01b3b3e2e0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4029212aae6d4557e17c42a0c0e024a83c94b0a1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904779"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150827"
 ---
 # <a name="frameinfo_flags"></a>FRAMEINFO_FLAGS
 Especifica la información que se va a recuperar sobre un objeto de marco de pila.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_FRAMEINFO_FLAGS {
@@ -194,7 +195,7 @@ No permita la `ToString()` evaluación o el formato de funciones al devolver arg
 `FIF_DESIGN_TIME_EXPR_EVAL`\
 La información del marco debe obtenerse del dominio de aplicación hospedado en lugar del proceso de hospedaje.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Estas marcas se pasan a los métodos [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) y [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) para indicar qué campos se van a inicializar en la estructura o estructuras de [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) .
 
 Estas marcas también se usan para indicar qué campos de la estructura [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) se usan y son válidos cuando se devuelve la estructura. Estos valores se pueden combinar con una operación bit a bit `OR` .

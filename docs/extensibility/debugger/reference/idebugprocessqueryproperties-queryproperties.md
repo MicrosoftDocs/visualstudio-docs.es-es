@@ -1,4 +1,5 @@
 ---
+description: Este método consulta los valores de propiedad especificados del proceso de depuración.
 title: 'IDebugProcessQueryProperties:: QueryProperties | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3b7a1bb22b163c06b24db57b15824b82243af4b5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 215606f12eb14c4a4b8db8313356a363dea5247e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900158"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149618"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperties"></a>IDebugProcessQueryProperties::QueryProperties
 Este método consulta los valores de propiedad especificados del proceso de depuración.
@@ -58,8 +59,8 @@ enuncia Una matriz que contiene los valores de propiedad.
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Rara vez se usa este método.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugProcessQueryProperties](../../../extensibility/debugger/reference/idebugprocessqueryproperties.md)

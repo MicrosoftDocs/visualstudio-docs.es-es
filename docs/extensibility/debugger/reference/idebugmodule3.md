@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz representa un módulo que admite ubicaciones alternativas de símbolos y Estados JustMyCode.
 title: IDebugModule3 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa655c03665c9eed54feabc5af679765b09ac0a6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 38ced8edcc97ad4ab8ff4db430cea57a2533cb30
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99955532"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149890"
 ---
 # <a name="idebugmodule3"></a>IDebugModule3
 Esta interfaz representa un módulo que admite ubicaciones alternativas de símbolos y Estados JustMyCode.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugModule3 : IDebugModule2
@@ -44,7 +45,7 @@ IDebugModule3 : IDebugModule2
 |[IsUserCode](../../../extensibility/debugger/reference/idebugmodule3-isusercode.md)|Devuelve una marca que especifica si el módulo representa el código de usuario.|
 |[SetJustMyCodeState](../../../extensibility/debugger/reference/idebugmodule3-setjustmycodestate.md)|Especifica si el módulo se debe considerar o no código de usuario.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Visual Studio es el consumidor típico de esta interfaz.
 
 ## <a name="requirements"></a>Requisitos
@@ -54,7 +55,7 @@ IDebugModule3 : IDebugModule2
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)
 - [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md)

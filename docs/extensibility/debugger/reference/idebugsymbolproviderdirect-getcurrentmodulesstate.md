@@ -1,4 +1,5 @@
 ---
+description: Recupera información sobre el grupo de símbolos del que es miembro el proveedor de símbolos.
 title: 'IDebugSymbolProviderDirect:: GetCurrentModulesState | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e089973061df779ca7f4e40765625897142efbcf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fcc127bd3450f06a51ab0b04d61d52f4ee08e092
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909483"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149488"
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesstate"></a>IDebugSymbolProviderDirect::GetCurrentModulesState
 Recupera información sobre el grupo de símbolos del que es miembro el proveedor de símbolos.
@@ -50,8 +51,8 @@ enuncia Número de módulos del grupo.
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  El estado cambia siempre que se agrega o quita un módulo en el grupo de símbolos. Por consiguiente, este método se puede utilizar para detectar si se ha modificado un grupo de símbolos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

@@ -1,4 +1,5 @@
 ---
+description: Recupera una lista de todos los contextos de código asociados a este contexto de documento.
 title: 'IDebugDocumentContext2:: EnumCodeContexts | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 089122a4a4d7ff3d6a8828ba0c251efd3729c101
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d361a0cee6a5c54a11e5497366fe1d82bf30af45
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933549"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150606"
 ---
 # <a name="idebugdocumentcontext2enumcodecontexts"></a>IDebugDocumentContext2::EnumCodeContexts
 Recupera una lista de todos los contextos de código asociados a este contexto de documento.
@@ -45,7 +46,7 @@ int EnumCodeContexts(
 ## <a name="return-value"></a>Valor devuelto
 Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Un único contexto de documento puede generar varios contextos de código cuando el documento usa plantillas o archivos de inclusión.
 
 ## <a name="example"></a>Ejemplo
@@ -107,6 +108,6 @@ HRESULT CDebugContext::EnumCodeContexts(IEnumDebugCodeContexts2 **ppEnumCodeCxts
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
 - [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)

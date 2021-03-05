@@ -1,4 +1,5 @@
 ---
+description: Devuelve un objeto de contexto de código correspondiente a un identificador de ubicación de código especificado.
 title: 'IDebugDisassemblyStream2:: GetCodeContext | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9bd0c78853a41c7efa7907fd1004277862721dc4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0a8662fdadfbd2c41d193ddced158a956cb8c6fc
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928424"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150632"
 ---
 # <a name="idebugdisassemblystream2getcodecontext"></a>IDebugDisassemblyStream2::GetCodeContext
 Devuelve un objeto de contexto de código correspondiente a un identificador de ubicación de código especificado.
@@ -51,12 +52,12 @@ enuncia Devuelve un objeto [IDebugCodeContext2](../../../extensibility/debugger/
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  El identificador de ubicación del código se puede devolver desde una llamada al método [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md) y puede aparecer en la estructura [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) .
 
  Para convertir un contexto de código en un identificador de ubicación de código, llame al método [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md) .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)
 - [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)

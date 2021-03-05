@@ -1,4 +1,5 @@
 ---
+description: Especifica el tipo de nombre de host.
 title: GETHOSTNAME_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,17 +16,17 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 13fdcea11aa579109f74f4404d0985aed4d0aa99
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3354bdbceeac796e2761bb83a5d860ca8a716315
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99894938"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150788"
 ---
 # <a name="gethostname_type"></a>GETHOSTNAME_TYPE
 Especifica el tipo de nombre de host.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_GETHOSTNAME_TYPE {
@@ -49,7 +50,7 @@ Especifica un nombre descriptivo del host.
 `GHN_FILE_NAME`\
 Especifica un nombre de archivo del host.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Estos valores se pasan como argumento al método [GetHostName (](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) para recuperar un nombre de host en formatos diferentes.
 
 ## <a name="requirements"></a>Requisitos

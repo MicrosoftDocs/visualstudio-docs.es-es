@@ -1,4 +1,5 @@
 ---
+description: OBSOLETO. Vuelve a cargar los símbolos para este módulo.
 title: 'IDebugModule2:: ReloadSymbols_Deprecated | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7d4e484a1557ea99138f31fdc6f9103e6708b803
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d07f80a3dccef666c0608d79505816f73ff52013
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929762"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150528"
 ---
 # <a name="idebugmodule2reloadsymbols_deprecated"></a>IDebugModule2::ReloadSymbols_Deprecated
 OBSOLETO. NO USE. Vuelve a cargar los símbolos para este módulo.
@@ -51,9 +52,9 @@ enuncia Devuelve un mensaje informativo, como un estado o un mensaje de error, q
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error. Un motor de depuración siempre debe devolver `E_FAIL` .
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Este método ya no se admite. En su lugar, implemente el método [LoadSymbols](../../../extensibility/debugger/reference/idebugmodule3-loadsymbols.md) .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)
 - [LoadSymbols](../../../extensibility/debugger/reference/idebugmodule3-loadsymbols.md)

@@ -1,4 +1,5 @@
 ---
+description: Sigue ejecutando este proceso desde un estado detenido. Cualquier estado de ejecución anterior (como un paso) se borra y el proceso empieza a ejecutarse de nuevo.
 title: 'IDebugProcess3:: Execute | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f4a697a4677b6bedef376e602c4327dff66ead53
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 149497bcee5c37813e9d1134237ddb991d5893da
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915412"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150255"
 ---
 # <a name="idebugprocess3execute"></a>IDebugProcess3::Execute
 Sigue ejecutando este proceso desde un estado detenido. Cualquier estado de ejecución anterior (como un paso) se borra y el proceso empieza a ejecutarse de nuevo.
@@ -49,13 +50,13 @@ de Objeto [IDebugThread2](../../../extensibility/debugger/reference/idebugthread
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve el código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Cuando el usuario inicia la ejecución desde un estado detenido en otro subproceso del proceso, se llama a este método en este proceso. También se llama a este método cuando el usuario selecciona el comando **iniciar** en el menú **depurar** del IDE. La implementación de este método puede ser tan simple como llamar al método [resume](../../../extensibility/debugger/reference/idebugthread2-resume.md) en el subproceso actual del proceso.
 
 > [!WARNING]
 > No enviar un evento de detención o un evento inmediato (sincrónico) al [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) mientras se controla esta llamada; de lo contrario, es posible que el depurador deje de responder.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [Reanudar](../../../extensibility/debugger/reference/idebugthread2-resume.md)

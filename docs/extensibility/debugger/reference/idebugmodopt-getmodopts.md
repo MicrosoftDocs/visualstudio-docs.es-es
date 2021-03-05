@@ -1,4 +1,5 @@
 ---
+description: Recupera una lista de modificadores opcionales.
 title: 'IDebugModOpt:: GetModOpts | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 78ddcaa6a062b844c3f60c04f7a08aa673c69f67
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 971d04662042afed1afe8e1861d0080b513ca74d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941793"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149943"
 ---
 # <a name="idebugmodoptgetmodopts"></a>IDebugModOpt::GetModOpts
 Recupera una lista de modificadores opcionales.
@@ -55,5 +56,5 @@ enuncia Devuelve una matriz que contiene las opciones.
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugModOpt](../../../extensibility/debugger/reference/idebugmodopt.md)

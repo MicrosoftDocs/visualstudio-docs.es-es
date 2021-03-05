@@ -1,4 +1,5 @@
 ---
+description: Describe una excepción o un error en tiempo de ejecución producido por el programa que se está depurando.
 title: EXCEPTION_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3f6ecbd791297f4c186d22d9ed14c627cf7be43f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fa78aeea8a3c20aa5b7f5d17cf444bd4184903d5
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941858"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150905"
 ---
 # <a name="exception_info"></a>EXCEPTION_INFO
 Describe una excepción o un error en tiempo de ejecución producido por el programa que se está depurando.
@@ -68,7 +69,7 @@ Un valor de la enumeración [EXCEPTION_STATE](../../../extensibility/debugger/re
 `guidType`\
 Identificador de idioma GUID, ya sea `guidLang` o `guidEng` .
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Esta estructura se pasa como parámetro a los métodos [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) y [RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md) . Esta estructura también se pasa al método [GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md) que se va a rellenar.
 
 ## <a name="requirements"></a>Requisitos
@@ -78,7 +79,7 @@ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

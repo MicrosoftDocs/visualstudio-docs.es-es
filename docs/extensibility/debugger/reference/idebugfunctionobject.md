@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz representa una función.
 title: IDebugFunctionObject | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab1462c30f1012eb1002f692672fc470cac3b39a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e9a579212a34a10fc9999867d88dfbd277a9c3fe
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921014"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150593"
 ---
 # <a name="idebugfunctionobject"></a>IDebugFunctionObject
 > [!IMPORTANT]
@@ -25,7 +26,7 @@ ms.locfileid: "99921014"
 
  Esta interfaz representa una función.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugFunctionObject : IDebugObject
@@ -49,7 +50,7 @@ IDebugFunctionObject : IDebugObject
 |[CreateStringObject](../../../extensibility/debugger/reference/idebugfunctionobject-createstringobject.md)|Crea un objeto de cadena.|
 |[Evaluate](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md)|Llama a la función y devuelve el valor resultante como un objeto.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Esta interfaz permite al evaluador de expresiones representar funciones en un árbol de análisis. Los `Create` métodos de esta interfaz se usan para construir objetos que representan los parámetros de entrada para el método. La función se puede ejecutar después llamando al método [Evaluate](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md) , que devuelve un objeto que representa el valor devuelto de la función.
 
 ## <a name="requirements"></a>Requisitos
@@ -59,6 +60,6 @@ IDebugFunctionObject : IDebugObject
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces de evaluación de expresiones](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

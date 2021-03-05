@@ -1,4 +1,5 @@
 ---
+description: Este método recupera un objeto que permite la enumeración de la lista de puertos persistentes.
 title: 'IDebugPortSupplier3:: EnumPersistedPorts | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 09b1fabaeb5bf887eedaa53d57bdeb3604bf2257
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 582849f0dd859d5155b4d3ee5653cefff6396780
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840332"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150424"
 ---
 # <a name="idebugportsupplier3enumpersistedports"></a>IDebugPortSupplier3::EnumPersistedPorts
 Este método recupera un objeto que permite la enumeración de la lista de puertos persistentes.
@@ -51,10 +52,10 @@ enuncia Objeto que implementa la interfaz [IEnumDebugPorts2](../../../extensibil
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Los puertos persistentes se cargan cuando se crea una instancia de un proveedor de puerto y se guardan cuando se destruye el proveedor del puerto.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)
 - [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)
 - [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md)

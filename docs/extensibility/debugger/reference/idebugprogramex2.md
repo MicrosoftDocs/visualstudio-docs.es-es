@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz permite al administrador de depuración de sesión (SDM) asociar a un programa y obtener el nodo de programa asociado a un programa.
 title: IDebugProgramEx2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f206de825d021d8daa2977a839f96fabd5e9db7f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f3efe419eaf037602ce1148c898c6c30dd86d23b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898865"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149579"
 ---
 # <a name="idebugprogramex2"></a>IDebugProgramEx2
 Esta interfaz permite al administrador de depuración de sesión (SDM) asociar a un programa y obtener el nodo de programa asociado a un programa.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugProgramEx2 : IUnknown
@@ -42,7 +43,7 @@ IDebugProgramEx2 : IUnknown
 |[Adjuntar](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)|Adjunta un programa a una sesión.|
 |[GetProgramNode](../../../extensibility/debugger/reference/idebugprogramex2-getprogramnode.md)|Obtiene el nodo de programa asociado a un programa.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Esta interfaz es privada entre el SDM y el programa.
 
 ## <a name="requirements"></a>Requisitos
@@ -52,6 +53,6 @@ IDebugProgramEx2 : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

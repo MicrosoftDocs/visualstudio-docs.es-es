@@ -1,4 +1,5 @@
 ---
+description: Representa un modificador opcional Debug.
 title: IDebugModOpt | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,17 +11,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0aff72199b6b79f2cca30e99533311ac617816b9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 047c01f78931e1b13110640952c67c11a68bc8a2
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941780"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149865"
 ---
 # <a name="idebugmodopt"></a>IDebugModOpt
 Representa un modificador opcional Debug.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugModOpt : IUnknown

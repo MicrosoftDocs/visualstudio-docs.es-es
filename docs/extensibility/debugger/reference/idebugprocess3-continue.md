@@ -1,4 +1,5 @@
 ---
+description: Sigue ejecutando este proceso desde un estado detenido. Se conserva cualquier estado de ejecución anterior (como un paso) y el proceso empieza a ejecutarse de nuevo.
 title: 'IDebugProcess3:: Continue | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 60ac7109b9f92a4ed7eecf57095c44fc4208b9f0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5e003193a189017b9aeacf6a983756d219b10195
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99891064"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149785"
 ---
 # <a name="idebugprocess3continue"></a>IDebugProcess3::Continue
 Sigue ejecutando este proceso desde un estado detenido. Se conserva cualquier estado de ejecución anterior (como un paso) y el proceso empieza a ejecutarse de nuevo.
@@ -49,12 +50,12 @@ de Objeto [IDebugThread2](../../../extensibility/debugger/reference/idebugthread
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve el código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Este método se llama en este proceso, independientemente del número de procesos que se están depurando o del proceso que generó el evento de detención. La implementación debe conservar el estado de ejecución anterior (por ejemplo, un paso) y continuar con la ejecución como si nunca se hubiera detenido antes de completar su ejecución anterior. Es decir, si un subproceso de este proceso estaba realizando una operación de paso a través y se detuvo porque se detuvo algún otro proceso y, a continuación, `Continue` se llamó a, el subproceso especificado debe completar la operación de paso a través original.
 
  **ADVERTENCIA** de No enviar un evento de detención o un evento inmediato (sincrónico) al [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) mientras se controla esta llamada; de lo contrario, es posible que el depurador deje de responder.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [Evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

@@ -1,4 +1,5 @@
 ---
+description: Especifica la cantidad del estado de un programa (como la ejecución de subprocesos, marcos de pila y dirección de instrucción actual) que se va a volcar.
 title: DUMPTYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,17 +16,17 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 99e7e5a9e092118eb40501e6f2ba3cc580cf7cc7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cef9f90c1f08dac742a6f01a4dd48f6bff76848b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953739"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150983"
 ---
 # <a name="dumptype"></a>DUMPTYPE
 Especifica la cantidad del estado de un programa (como la ejecución de subprocesos, marcos de pila y dirección de instrucción actual) que se va a volcar.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_DUMPTYPE {
@@ -49,7 +50,7 @@ Especifica un volcado pequeño y compacto.
 `DUMP_FULLDUMP`\
 Especifica un volcado de memoria completo y grande.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Se pasa como argumento al método [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md) .
 
 ## <a name="requirements"></a>Requisitos

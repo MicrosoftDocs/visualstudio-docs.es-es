@@ -1,4 +1,5 @@
 ---
+description: Obtiene información acerca de este módulo.
 title: 'IDebugModule2:: GetInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 205a32c0c7c6bb10b8b0a58e62f5d6ba5cdca91f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a31c6e40f18e3b405449179e3e5a3ea1a42acc6f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941705"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150568"
 ---
 # <a name="idebugmodule2getinfo"></a>IDebugModule2::GetInfo
 Obtiene información acerca de este módulo.
@@ -52,10 +53,10 @@ de Combinación de marcas de la enumeración [MODULE_INFO_FIELDS](../../../exten
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  La estructura [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) contiene el nombre del módulo que se muestra en la ventana **módulos** .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)
 - [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)
 - [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)

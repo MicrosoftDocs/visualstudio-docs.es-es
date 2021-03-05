@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz se envía mediante el motor de depuración (DE) al administrador de depuración de la sesión (SDM) cuando el programa que se está depurando completa paso a paso por instrucciones, paso a paso por procedimientos o paso a paso para salir de una línea de código fuente, instrucción o instrucción.
 title: IDebugStepCompleteEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71e9089dc2f0e4f6eec78e904987fc1d865ed90f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f366b9eb1d9406ba5207016ca97ea40d1fd48529
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99897223"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149540"
 ---
 # <a name="idebugstepcompleteevent2"></a>IDebugStepCompleteEvent2
 Esta interfaz se envía mediante el motor de depuración (DE) al administrador de depuración de la sesión (SDM) cuando el programa que se está depurando completa paso a paso por instrucciones, paso a paso por procedimientos o paso a paso para salir de una línea de código fuente, instrucción o instrucción.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugStepCompleteEvent2 : IUnknown
@@ -34,7 +35,7 @@ IDebugStepCompleteEvent2 : IUnknown
 ## <a name="notes-for-callers"></a>Notas para llamadores
  El DE crea y envía este objeto de evento para notificar la finalización de una operación de paso. El evento se envía mediante la función de devolución de llamada [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) proporcionada por el SDM cuando se adjunta al programa que se está depurando.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Una vez completado el paso, el programa que se está depurando se pausa una vez más y el IDE actualiza todas sus ventanas.
 
 ## <a name="requirements"></a>Requisitos
@@ -44,7 +45,7 @@ IDebugStepCompleteEvent2 : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

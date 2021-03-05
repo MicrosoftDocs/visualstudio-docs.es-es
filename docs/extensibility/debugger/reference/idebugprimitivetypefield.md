@@ -1,4 +1,5 @@
 ---
+description: Representa un valor de enumeración de tipo primitivo de una interfaz IDebugField.
 title: IDebugPrimitiveTypeField | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,17 +11,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65ebc0a4c029cdb748ebfadff41f83d0cbb2ab75
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7ba0fd92098d8089f6d80573c1db53e0b7e003b8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874196"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150307"
 ---
 # <a name="idebugprimitivetypefield"></a>IDebugPrimitiveTypeField
 Representa un valor de enumeración de tipo primitivo de una interfaz [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) .
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugPrimitiveTypeField : IDebugField

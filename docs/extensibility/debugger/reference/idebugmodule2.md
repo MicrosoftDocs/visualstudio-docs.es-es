@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz representa un módulo, es decir, una unidad ejecutable de un programa, como un archivo DLL.
 title: IDebugModule2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a43c7e7ed24da7d73784e20e9e998bdfe69cbd65
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b7cc14d4f33924a04b25344c4c624a633b97ff7b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929759"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150489"
 ---
 # <a name="idebugmodule2"></a>IDebugModule2
 Esta interfaz representa un módulo, es decir, una unidad ejecutable de un programa, como un archivo DLL.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugModule2 : IUnknown
@@ -46,7 +47,7 @@ IDebugModule2 : IUnknown
 |[GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)|Obtiene el [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) que describe este módulo.|
 |[ReloadSymbols_Deprecated](../../../extensibility/debugger/reference/idebugmodule2-reloadsymbols-deprecated.md)|OBSOLETO. NO USE. Vuelve a cargar los símbolos para este módulo.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  La información del módulo se puede mostrar en la ventana **módulos** del IDE.
 
 ## <a name="requirements"></a>Requisitos
@@ -56,7 +57,7 @@ IDebugModule2 : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
 - [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)
 - [GetModule](../../../extensibility/debugger/reference/idebugmoduleloadevent2-getmodule.md)

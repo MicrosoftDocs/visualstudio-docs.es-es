@@ -1,4 +1,5 @@
 ---
+description: El motor DE depuración (DE) envía esta interfaz al administrador de depuración de sesión (SDM) cuando se carga o descarga un módulo.
 title: IDebugModuleLoadEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0dbc1cda72aa868bc5bcf68215e4c3815f520d1d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 59b5e9e7619434b9ff4d914fc7b955ebbab4ace2
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929646"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149852"
 ---
 # <a name="idebugmoduleloadevent2"></a>IDebugModuleLoadEvent2
 El motor DE depuración (DE) envía esta interfaz al administrador de depuración de sesión (SDM) cuando se carga o descarga un módulo.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugModuleLoadEvent2 : IUnknown
@@ -41,7 +42,7 @@ IDebugModuleLoadEvent2 : IUnknown
 |------------|-----------------|
 |[GetModule](../../../extensibility/debugger/reference/idebugmoduleloadevent2-getmodule.md)|Obtiene el módulo que se está cargando o descargando.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Visual Studio usa este evento para mantener actualizada la ventana **módulos** .
 
 ## <a name="requirements"></a>Requisitos
@@ -51,7 +52,7 @@ IDebugModuleLoadEvent2 : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

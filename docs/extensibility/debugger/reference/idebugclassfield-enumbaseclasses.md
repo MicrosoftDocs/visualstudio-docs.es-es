@@ -1,4 +1,5 @@
 ---
+description: Crea un enumerador para las clases base de esta clase.
 title: 'IDebugClassField:: EnumBaseClasses | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b8648890e030799b985a4e917be8caf85292528a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2d5ef86e5f4fea89b376404703000c8bd7e861a0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99947104"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150723"
 ---
 # <a name="idebugclassfieldenumbaseclasses"></a>IDebugClassField::EnumBaseClasses
 Crea un enumerador para las clases base de esta clase.
@@ -47,7 +48,7 @@ enuncia Devuelve un objeto [IEnumDebugFields](../../../extensibility/debugger/re
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, Devuelve S_OK, devuelve S_SH_NO_BASE_CLASSES si no hay ninguna clase base (y el `ppEnum` parámetro se establece en un valor null); de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Las clases base del objeto de enumerador se especifican en orden de la clase base más inmediata (o más derivada) a la clase base más remota. Por ejemplo, dadas las clases de C++:
 
 ```
@@ -59,6 +60,6 @@ class MyClass : Level2 { }
 
  La enumeración devolvería las clases base en el orden `Level2` , `Level1` , `Root` .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz permite a un evaluador de expresiones (EE) Mostrar el valor de una propiedad en el formato que sea necesario.
 title: IDebugCustomViewer | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 17ca1bb92f5db821b1d581f1a573032fea004fb3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8d262869d24c50c543159952506a40be753b4be4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934323"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150697"
 ---
 # <a name="idebugcustomviewer"></a>IDebugCustomViewer
 Esta interfaz permite a un evaluador de expresiones (EE) Mostrar el valor de una propiedad en el formato que sea necesario.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugCustomViewer : IUknown
@@ -41,7 +42,7 @@ Esta interfaz implementa el método siguiente:
 |------------|-----------------|
 |[DisplayValue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md)|Hace todo lo necesario para mostrar un valor determinado.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Esta interfaz se utiliza cuando el valor de una propiedad no se puede mostrar por medios normales, por ejemplo, con una tabla de datos u otro tipo de propiedad complejo. Un visor personalizado, tal y como se representa en la `IDebugCustomViewer` interfaz, es diferente de un visualizador de tipos, que es un programa externo para mostrar los datos de un tipo específico, independientemente de EE. El EE implementa un visor personalizado que es específico de ese EE. Un usuario selecciona el tipo de visualizador que se va a usar, ya sea un visualizador de tipos o un visor personalizado. Vea [visualizar y ver datos](../../../extensibility/debugger/visualizing-and-viewing-data.md) para obtener más información sobre este proceso.
 
 Un visor personalizado se registra de la misma manera que en EE y, por lo tanto, requiere un GUID de idioma y un GUID de proveedor. La métrica exacta (o el nombre de la entrada del registro) solo se conoce en EE. Esta métrica se devuelve en la estructura de [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) , que a su vez se devuelve mediante una llamada a [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md). El valor almacenado en la métrica es el `CLSID` que se pasa a la función de com `CoCreateInstance` (vea el ejemplo).
@@ -104,7 +105,7 @@ IDebugCustomViewer *GetFirstCustomViewer(IDebugProperty2 *pProperty)
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
 - [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)
 - [Asistentes de SDK para la depuración](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)

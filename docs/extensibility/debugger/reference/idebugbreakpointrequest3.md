@@ -1,4 +1,5 @@
 ---
+description: La interfaz IDebugBreakpointRequest3 representa la información necesaria para crear y enlazar cualquier tipo de punto de interrupción.
 title: IDebugBreakpointRequest3 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6e42111ca0c8b357a7f8841511cf935694a30b3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 628a68cf6712e6863550d85a5f876afbe1b6bdb5
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893066"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150749"
 ---
 # <a name="idebugbreakpointrequest3"></a>IDebugBreakpointRequest3
 Esta interfaz representa la información necesaria para crear y enlazar cualquier tipo de punto de interrupción. Es una extensión de [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md).
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugBreakpointRequest3 : IDebugBreakpointRequest2
@@ -41,7 +42,7 @@ IDebugBreakpointRequest3 : IDebugBreakpointRequest2
 |------------|-----------------|
 |[GetRequestInfo2](../../../extensibility/debugger/reference/idebugbreakpointrequest3-getrequestinfo2.md)|Obtiene la información de solicitud de punto de interrupción que describe esta solicitud de punto de interrupción.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Esta interfaz se utiliza para proporcionar información adicional al DE a través de la estructura DE [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) . Esta información adicional incluye el identificador de proveedor DE DE (en forma de un GUID), el nombre de un punto de seguimiento y el nombre de una restricción de punto de interrupción.
 
 ## <a name="requirements"></a>Requisitos
@@ -51,6 +52,6 @@ IDebugBreakpointRequest3 : IDebugBreakpointRequest2
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)
 - [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)

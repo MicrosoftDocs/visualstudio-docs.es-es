@@ -1,4 +1,5 @@
 ---
+description: Recupera información sobre los módulos del grupo de símbolos.
 title: 'IDebugSymbolProviderDirect:: GetCurrentModulesInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dabc19c8d748b869621ae05d53cdf5c551a6a74c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7e4dca03595f4b52ed5842b4901bdd37e1ce2c37
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909530"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149514"
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesinfo"></a>IDebugSymbolProviderDirect::GetCurrentModulesInfo
 Recupera información sobre los módulos del grupo de símbolos.
@@ -65,5 +66,5 @@ enuncia Devuelve un objeto que contiene los módulos del grupo de símbolos.
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

@@ -1,4 +1,5 @@
 ---
+description: Representa las razones por las que editar y continuar no está disponible.
 title: EncUnavailableReason | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,17 +16,17 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 384d71d6f88e8cd792585bb097594fa7b1e38c64
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e1f80dc1454cb1c15feddd099411bcb339dbc58c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953752"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151009"
 ---
 # <a name="encunavailablereason"></a>EncUnavailableReason
 `This is for internal use only!` Representa las razones por las que **Editar y continuar** no está disponible.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum tagEncUnavailableReason {
@@ -74,7 +75,7 @@ La función editar y continuar no está disponible porque el depurador ha adjunt
 `ENCUN_WIN64`\
 Editar y continuar no está disponible al procesar el código de Windows de 64 bits.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Esta enumeración solo es para uso interno por parte de [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] . Los métodos [GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md) y [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md) implementados por un proveedor de Puerto personalizado siempre deben devolver `E_NOTIMPL` .
 
 ## <a name="requirements"></a>Requisitos

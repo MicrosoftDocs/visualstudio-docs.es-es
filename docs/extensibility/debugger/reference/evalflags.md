@@ -1,4 +1,5 @@
 ---
+description: Especifica las marcas que controlan la evaluación de expresiones.
 title: EVALFLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,17 +16,17 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 073dac8de37edddc1b748c52258047cd2d85e218
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 531d155104475b84d881358711a6aa3f1d0bf2ce
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937080"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150944"
 ---
 # <a name="evalflags"></a>EVALFLAGS
 Especifica las marcas que controlan la evaluación de expresiones.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_EVALFLAGS {
@@ -74,7 +75,7 @@ Impide que se evalúe la función. Por ejemplo, considere el `int` token en la e
 `EVAL_NOEVENTS`\
 Marca para indicar que los eventos que se producen durante la evaluación de la expresión no se deben enviar al administrador de depuración de sesión (SDM) o al IDE.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Estas marcas se pasan como un argumento a los métodos [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) y [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) .
 
 Estas marcas se pueden combinar con una operación OR bit a bit.

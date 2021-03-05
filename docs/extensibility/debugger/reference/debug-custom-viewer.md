@@ -1,4 +1,5 @@
 ---
+description: Estructura que identifica un visor personalizado o un visualizador de tipos.
 title: DEBUG_CUSTOM_VIEWER | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6fa8e8d9e07510a10b1b32534f3323dab4c84a22
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 46133d2b2800977b0819835f578b04569c4f5ce8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899107"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151062"
 ---
 # <a name="debug_custom_viewer"></a>DEBUG_CUSTOM_VIEWER
 Estructura que identifica un visor personalizado o un visualizador de tipos.
@@ -68,7 +69,7 @@ Proveedor del evaluador de expresiones que proporciona.
 `bstrMetric`\
 Métrica en la que se almacena el visualizador personalizado o el visualizador de tipos `CLSID` .
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Una llamada al método [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) devuelve una lista de esta estructura (y, por extensión, el método [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) ).
 
 ## <a name="requirements"></a>Requisitos
@@ -78,7 +79,7 @@ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)
 - [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)

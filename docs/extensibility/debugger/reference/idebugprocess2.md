@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz representa un proceso que se ejecuta en un puerto.
 title: IDebugProcess2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd644a728f049cf8b94f22ef961464b8bfcb5816
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 131eacba321bac70c75b77faf33b18aae0135e55
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99891077"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150268"
 ---
 # <a name="idebugprocess2"></a>IDebugProcess2
 Esta interfaz representa un proceso que se ejecuta en un puerto. Si el puerto es el local, `IDebugProcess2` normalmente representa un proceso físico en el equipo local.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugProcess2 : IUnknown
@@ -58,7 +59,7 @@ IDebugProcess2 : IUnknown
 |[CauseBreak](../../../extensibility/debugger/reference/idebugprocess2-causebreak.md)|Solicita que se detenga el siguiente programa que ejecuta código en este proceso.|
 |[GetPort](../../../extensibility/debugger/reference/idebugprocess2-getport.md)|Obtiene el puerto en el que se está ejecutando este proceso.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Un `IDebugProcess2` contiene una o más interfaces [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) .
 
 ## <a name="requirements"></a>Requisitos
@@ -68,7 +69,7 @@ IDebugProcess2 : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
 - [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)
 - [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)

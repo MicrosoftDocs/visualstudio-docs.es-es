@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz representa un programa que se ejecuta en un proceso y extiende la ejecución proporcionando información de subprocesos.
 title: IDebugProgram3 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,17 +11,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d22a58021a744cc71b8df3acb8e577d853aa2829
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1c16184a017e5e97f81afbab5d4d2579796e4217
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99889998"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149605"
 ---
 # <a name="idebugprogram3"></a>IDebugProgram3
 Esta interfaz representa un programa que se ejecuta en un proceso y extiende la [ejecución](../../../extensibility/debugger/reference/idebugprogram2-execute.md) proporcionando información de subprocesos.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugProgram3 : IDebugProgram3
@@ -46,10 +47,10 @@ IDebugProgram3 : IDebugProgram3
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Un programa es un contenedor de subprocesos que se ejecuta en una arquitectura en tiempo de ejecución determinada, mientras que un proceso se compone de uno o varios programas.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [GetProgram](../../../extensibility/debugger/reference/idebugthread2-getprogram.md)

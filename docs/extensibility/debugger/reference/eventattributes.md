@@ -1,4 +1,5 @@
 ---
+description: Especifica los atributos del evento.
 title: EVENTATTRIBUTES | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,17 +16,17 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9f304921f622245787413a05894096470a96eb30
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e6b56e815d8145e3f870468751a0978475245c86
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936968"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150892"
 ---
 # <a name="eventattributes"></a>EVENTATTRIBUTES
 Especifica los atributos del evento.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_EVENTATTRIBUTES {
@@ -74,7 +75,7 @@ Indica un evento que se envía inmediatamente y de forma sincrónica al IDE. Est
 `EVENT_EXPRESSION_EVALUATION`\
 El evento es el resultado de la evaluación de la expresión.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Estos valores se pasan en el `dwAttrib` parámetro del método de [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) .
 
 Estos valores se pueden combinar con una operación bit a bit `OR` .

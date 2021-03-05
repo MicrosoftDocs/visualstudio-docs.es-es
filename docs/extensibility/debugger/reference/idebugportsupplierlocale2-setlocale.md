@@ -1,4 +1,5 @@
 ---
+description: Establece la configuración regional del proveedor del puerto.
 title: 'IDebugPortSupplierLocale2:: SetLocale | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 28ba94e40e475527b586c3e9da33bbf1a893295a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 351cd82388731d52620d376f9d943c0b8afab8b7
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840111"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150346"
 ---
 # <a name="idebugportsupplierlocale2setlocale"></a>IDebugPortSupplierLocale2::SetLocale
 Establece la configuración regional del proveedor del puerto.
@@ -44,5 +45,5 @@ Identificador de la configuración regional que se va a establecer.
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugPortSupplierLocale2](../../../extensibility/debugger/reference/idebugportsupplierlocale2.md)
