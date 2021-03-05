@@ -1,4 +1,5 @@
 ---
+description: Especifica el tipo de nombre de los archivos que se van a recuperar.
 title: GETNAME_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,17 +16,17 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 541f8b51d4ce56b167abd3ecdb28d08bec0c02c0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9811312188e63017e074d12be6dfa67ab6929aa6
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99891272"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162451"
 ---
 # <a name="getname_type"></a>GETNAME_TYPE
 Especifica el tipo de nombre de los archivos que se van a recuperar.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_GETNAME_TYPE {
@@ -74,7 +75,7 @@ Especifica el título del documento, si existe.
 `GN_STARTPAGEURL`\
 Obtiene la dirección URL de la página de inicio de los procesos.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Estos valores se pasan como parámetros a los métodos [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md), [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)y [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) para especificar el tipo de nombre que se va a devolver.
 
 ## <a name="requirements"></a>Requisitos

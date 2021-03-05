@@ -1,4 +1,5 @@
 ---
+description: Especifica la información que se va a recuperar sobre una solicitud de punto de interrupción.
 title: BPREQI_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,17 +16,17 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 52710a9b17bb4e5c1c0b04b44507a466fc538bc2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1f7ee5d8dbf48ad8d1b07512727b1b91635ab990
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948379"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162464"
 ---
 # <a name="bpreqi_fields"></a>BPREQI_FIELDS
 Especifica la información que se va a recuperar sobre una solicitud de punto de interrupción.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_BPREQI_FIELDS {
@@ -109,7 +110,7 @@ Inicializar/usar el `bstrTracepoint` campo de la `BP_REQUEST_INFO2` estructura.
 `BPREQI_ALLFIELDS`\
 Especifica todos los campos de la `BP_REQUEST_INFO2` estructura.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Se pasa como argumento a los métodos [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) y [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) para especificar los campos de las estructuras [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) y [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) que se van a inicializar.
 
 Estas marcas también se usan para indicar los campos de las `BP_REQUEST_INFO` estructuras y que `BP_REQUEST_INFO2` se usan y son válidos cuando se devuelve cada estructura.

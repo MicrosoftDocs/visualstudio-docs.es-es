@@ -1,4 +1,5 @@
 ---
+description: Reemplaza los símbolos de depuración actuales por los del flujo de datos especificado.
 title: 'IDebugComPlusSymbolProvider:: ReplaceSymbols | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 10c2b8b7154e5286d295df2c87398c57277325ba
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5c6a7ec5ce2345a78920f210d2d84f5284cfd4d3
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99842529"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163582"
 ---
 # <a name="idebugcomplussymbolproviderreplacesymbols"></a>IDebugComPlusSymbolProvider::ReplaceSymbols
 Reemplaza los símbolos de depuración actuales por los del flujo de datos especificado.
@@ -81,5 +82,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

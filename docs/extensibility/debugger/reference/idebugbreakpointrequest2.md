@@ -1,4 +1,5 @@
 ---
+description: La interfaz IDebugBreakPointRequest2 representa la información necesaria para crear y enlazar cualquier tipo de punto de interrupción.
 title: IDebugBreakpointRequest2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d31b7cfe2480fa3b16a4d3c8c08185194fec6b79
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7e7d13c945de1358265a5eb92769192ce736be49
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951204"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162360"
 ---
 # <a name="idebugbreakpointrequest2"></a>IDebugBreakpointRequest2
 Esta interfaz representa la información necesaria para crear y enlazar cualquier tipo de punto de interrupción.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugBreakpointRequest2 : IUnknown
@@ -42,7 +43,7 @@ IDebugBreakpointRequest2 : IUnknown
 |[GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md)|Obtiene el tipo de ubicación del punto de interrupción de esta solicitud de punto de interrupción.|
 |[GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)|Obtiene la información de solicitud de punto de interrupción que describe esta solicitud de punto de interrupción.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Una vez cargado el programa que se está depurando, una llamada a [BIND](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) enlaza un punto de interrupción pendiente a la ubicación solicitada en el programa.
 
 ## <a name="requirements"></a>Requisitos
@@ -52,7 +53,7 @@ IDebugBreakpointRequest2 : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)
 - [GetBreakpointRequest](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md)
 - [Volver](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)

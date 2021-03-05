@@ -1,4 +1,5 @@
 ---
+description: Recupera una descripción del equipo en el que se ejecuta el servidor principal.
 title: 'IDebugCoreServer2:: GetMachineInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f90e8f97b020f746f6caa4807fe8ed063d613001
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9fd7f42816ce477af4ae259adca49e8aac20137d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904160"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163218"
 ---
 # <a name="idebugcoreserver2getmachineinfo"></a>IDebugCoreServer2::GetMachineInfo
 Recupera una descripción del equipo en el que se ejecuta el servidor principal.
@@ -52,7 +53,7 @@ de Combinación de marcas de la enumeración [MACHINE_INFO_FIELDS](../../../exte
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)
 - [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md)
 - [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md)

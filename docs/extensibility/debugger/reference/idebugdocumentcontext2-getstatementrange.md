@@ -1,4 +1,5 @@
 ---
+description: Obtiene el intervalo de instrucciones de archivo del contexto del documento.
 title: 'IDebugDocumentContext2:: GetStatementRange | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2a0b37014433b670b24d466374682ee9a3654638
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c23de6f76ac4aa205ac50636775ee019da34137a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99947003"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162880"
 ---
 # <a name="idebugdocumentcontext2getstatementrange"></a>IDebugDocumentContext2::GetStatementRange
 Obtiene el intervalo de instrucciones de archivo del contexto del documento.
@@ -51,7 +52,7 @@ int GetStatementRange(
 ## <a name="return-value"></a>Valor devuelto
 Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Un intervalo de instrucciones es el intervalo de las líneas que han contribuido al código al que hace referencia este contexto de documento.
 
 Para obtener el intervalo de código fuente (incluidos los comentarios) dentro de este contexto de documento, llame al método [getsourcerange (](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md) .
@@ -88,7 +89,7 @@ HRESULT CDebugContext::GetStatementRange(TEXT_POSITION* pBegPosition,
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
 - [GetSourceRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md)
 - [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

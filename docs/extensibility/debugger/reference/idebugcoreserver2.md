@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz se usa para representar y obtener información de un servidor en un equipo de la red.
 title: IDebugCoreServer2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba05cb5a933c5b3caaf080c9098c83451a20e484
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 871f7ea5671fa4f3c615d84e0591bd331f945ccc
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909995"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163140"
 ---
 # <a name="idebugcoreserver2"></a>IDebugCoreServer2
 Esta interfaz se usa para representar y obtener información de un servidor en un equipo de la red.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugCoreServer2 : IUknown
@@ -49,7 +50,7 @@ IDebugCoreServer2 : IUknown
 |[EnumPortSuppliers](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md)|Crea un enumerador para todos los proveedores de puertos en un equipo.|
 |[GetMachineUtilities_V7](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineutilities-v7.md)|Obtiene las utilidades del equipo para un equipo.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Visual Studio también usa esta interfaz para examinar los procesos que se ejecutan en los equipos de la red.
 
 ## <a name="requirements"></a>Requisitos
@@ -59,7 +60,7 @@ IDebugCoreServer2 : IUknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)
 - [Evento](../../../extensibility/debugger/reference/idebugportevents2-event.md)
 - [GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md)

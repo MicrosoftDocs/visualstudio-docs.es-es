@@ -1,4 +1,5 @@
 ---
+description: Obtiene el documento de origen asociado a este flujo de entrada.
 title: 'IDebugDisassemblyStream2:: GetDocument | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6ad0b4d4fcb316447ca836fbc5ac15170a71270e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7c8b71a1c8b12aecf8346f1e035269da722d59ad
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901760"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162945"
 ---
 # <a name="idebugdisassemblystream2getdocument"></a>IDebugDisassemblyStream2::GetDocument
 Obtiene el documento de origen asociado a este flujo de entrada.
@@ -51,9 +52,9 @@ enuncia Devuelve un objeto [IDebugDocument2](../../../extensibility/debugger/ref
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Este método lo implementan los motores de depuración que tienen documentos de texto que no se almacenan en un archivo real.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)
 - [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

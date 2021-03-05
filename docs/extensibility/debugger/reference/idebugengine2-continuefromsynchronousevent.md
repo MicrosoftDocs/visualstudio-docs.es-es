@@ -1,4 +1,5 @@
 ---
+description: Llamado por el administrador de depuración de la sesión (SDM) para indicar que se ha recibido y procesado un evento de depuración sincrónico, enviado anteriormente por el motor DE depuración (DE) al SDM.
 title: 'IDebugEngine2:: ContinueFromSynchronousEvent | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 78485e209c93e0673aa32587b21bb074aac047e1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8e7d92e4d49b6a9e409ee30cf04d131645d287fd
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921133"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162672"
 ---
 # <a name="idebugengine2continuefromsynchronousevent"></a>IDebugEngine2::ContinueFromSynchronousEvent
 Llamado por el administrador de depuración de la sesión (SDM) para indicar que se ha recibido y procesado un evento de depuración sincrónico, enviado anteriormente por el motor DE depuración (DE) al SDM.
@@ -46,7 +47,7 @@ de Un objeto [IDebugEvent2](../../../extensibility/debugger/reference/idebugeven
 ## <a name="return-value"></a>Valor devuelto
 Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 El DE debe comprobar que se trata del origen del evento representado por el `pEvent` parámetro.
 
 ## <a name="example"></a>Ejemplo
@@ -88,6 +89,6 @@ HRESULT CEngine::ContinueFromSynchronousEvent(IDebugEvent2* pEvent)
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)

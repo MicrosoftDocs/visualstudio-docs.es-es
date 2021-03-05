@@ -1,4 +1,5 @@
 ---
+description: Devuelve un identificador de ubicación de código para un contexto de código determinado.
 title: 'IDebugDisassemblyStream2:: GetCodeLocationId | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b8437dd2c98373c770d6f537e0ec9714100e3c4b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8c1c3a6f7a9f2e2a0617f1322d17073a9dcc7c32
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901832"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162932"
 ---
 # <a name="idebugdisassemblystream2getcodelocationid"></a>IDebugDisassemblyStream2::GetCodeLocationId
 Devuelve un identificador de ubicación de código para un contexto de código determinado.
@@ -50,12 +51,12 @@ de Un objeto [IDebugCodeContext2](../../../extensibility/debugger/reference/ideb
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error. Devuelve `E_CODE_CONTEXT_OUT_OF_SCOPE` si el contexto del código es válido pero está fuera del ámbito.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  El identificador de ubicación del código es específico del motor DE depuración (DE) que admite el desensamblado. La clase usa internamente este identificador de ubicación para realizar el seguimiento de las posiciones en el código y suele ser una dirección o desplazamiento de algún tipo. El único requisito es que si el contexto de código de una ubicación es menor que el contexto de código de otra ubicación, el identificador de ubicación de código correspondiente del primer contexto de código también debe ser menor que el identificador de ubicación de código del segundo contexto de código.
 
  Para recuperar el contexto del código de un identificador de ubicación de código, llame al método [GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md) .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)
 - [GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md)

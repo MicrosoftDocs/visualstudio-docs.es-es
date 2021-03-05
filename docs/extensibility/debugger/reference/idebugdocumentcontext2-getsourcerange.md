@@ -1,4 +1,5 @@
 ---
+description: Obtiene el intervalo de código fuente de este contexto de documento.
 title: 'IDebugDocumentContext2:: Getsourcerange (| Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 58318ebde2446a32cc515d09b7a1d848222b554b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6d02dfbd93002bedadd4c82168d498f89050ddc0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99947012"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162906"
 ---
 # <a name="idebugdocumentcontext2getsourcerange"></a>IDebugDocumentContext2::GetSourceRange
 Obtiene el intervalo de código fuente de este contexto de documento.
@@ -51,12 +52,12 @@ int GetSourceRange(
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Un intervalo de origen es todo el intervalo de código fuente, desde la instrucción actual hasta justo después de la instrucción anterior que ha contribuido al código. El intervalo de origen se usa normalmente para mezclar instrucciones de código fuente, incluidos los comentarios, con código en la ventana Desensamblado.
 
  Para obtener el intervalo solo para las instrucciones de código contenidas en este contexto de documento, llame al método [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md) .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
 - [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)
 - [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

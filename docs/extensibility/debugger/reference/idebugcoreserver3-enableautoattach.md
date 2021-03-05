@@ -1,4 +1,5 @@
 ---
+description: Habilita la Asociación automática para los motores de depuración especificados.
 title: 'IDebugCoreServer3:: EnableAutoAttach | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7873480c979bba4f52203c02864d24aa88cf06cb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 644d238db11c117b9068de8f7903361b9712f3aa
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99907995"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163153"
 ---
 # <a name="idebugcoreserver3enableautoattach"></a>IDebugCoreServer3::EnableAutoAttach
 Habilita la Asociación automática para los motores de depuración especificados.
@@ -61,8 +62,8 @@ enuncia IDENTIFICADOR de la sesión que se adjuntó automáticamente.
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve el código de error. Un código de error es `E_AUTO_ATTACH_NOT_REGISTERED` , que indica que el generador de clases de asociación automática no se ha registrado.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Cuando se inicia un programa asociado a la dirección URL especificada, los motores de depuración especificados se inician y adjuntan automáticamente.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

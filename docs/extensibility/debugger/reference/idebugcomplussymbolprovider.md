@@ -1,4 +1,5 @@
 ---
+description: Representa un proveedor de símbolos COM+ con métodos que son específicos del código administrado.
 title: IDebugComPlusSymbolProvider | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,17 +11,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0e168066cc01a9e557bc0b4f301ae6218664552
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 20ede060901a9aeec591fb17d1f632cb5d228963
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99955039"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163478"
 ---
 # <a name="idebugcomplussymbolprovider"></a>IDebugComPlusSymbolProvider
 Representa un proveedor de símbolos COM+ con métodos que son específicos del código administrado.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugComPlusSymbolProvider : IDebugSymbolProvider

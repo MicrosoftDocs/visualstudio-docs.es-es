@@ -1,4 +1,5 @@
 ---
+description: Especifica la estructura de la ubicación de resolución del punto de interrupción.
 title: BP_RESOLUTION_LOCATION | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2c2032c15430fb4038ecdeab2050b47a59c932c4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 87fef44d02911e84952f6eb8ab09dd9a1360dea6
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881079"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162568"
 ---
 # <a name="bp_resolution_location"></a>BP_RESOLUTION_LOCATION
 Especifica la estructura de la ubicación de resolución del punto de interrupción.
@@ -73,7 +74,7 @@ Un valor de la enumeración [BP_TYPE](../../../extensibility/debugger/reference/
 `unionmember4`\
 [Solo C#] Vea los comentarios sobre cómo interpretar.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Esta estructura es miembro de las estructuras [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) y [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) .
 
  [Solo C#] Los `unionmemberX` miembros se interpretan según la tabla siguiente. Busque en la columna izquierda el `bpType` valor que se muestra a continuación para determinar lo que `unionmemberX` representa cada miembro y calcular las referencias en `unionmemberX` consecuencia. Vea el ejemplo para obtener una manera de interpretar esta estructura en C#.
@@ -120,7 +121,7 @@ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)
 - [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)

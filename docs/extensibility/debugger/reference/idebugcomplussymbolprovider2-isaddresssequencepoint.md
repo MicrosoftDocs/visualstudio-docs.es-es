@@ -1,4 +1,5 @@
 ---
+description: Determina si la dirección de depuración especificada es un punto de secuencia.
 title: 'IDebugComPlusSymbolProvider2:: IsAddressSequencePoint | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 99d16ebd2802bb31b7568f7f8b862543b4083a67
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 50e14f7e91457e2a7a0bd4719730e96d4019e82d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99955000"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163387"
 ---
 # <a name="idebugcomplussymbolprovider2isaddresssequencepoint"></a>IDebugComPlusSymbolProvider2::IsAddressSequencePoint
 Determina si la dirección de depuración especificada es un punto de secuencia.
@@ -86,5 +87,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

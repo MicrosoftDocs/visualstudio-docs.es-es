@@ -1,4 +1,5 @@
 ---
+description: Mueve el contexto del documento en función de un número determinado de instrucciones o líneas.
 title: 'IDebugDocumentContext2:: Seek | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5be12a180368e668e944e0df822d5be6189f6ae0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a70b8fac8e084a78b1a29ae941f1d03d6552f860
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946987"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162854"
 ---
 # <a name="idebugdocumentcontext2seek"></a>IDebugDocumentContext2::Seek
 Mueve el contexto del documento en función de un número determinado de instrucciones o líneas.
@@ -51,5 +52,5 @@ enuncia Devuelve un nuevo objeto [IDebugDocumentContext2](../../../extensibility
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

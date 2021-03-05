@@ -1,4 +1,5 @@
 ---
+description: Esta estructura describe una variable, un parámetro o un campo local.
 title: FIELD_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f358c6c9a192ddd4d71f26a0f2f795ae012bc2c7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 47b7c7cb3a77d0ad925b044130901dd481b99943
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941845"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162438"
 ---
 # <a name="field_info"></a>FIELD_INFO
 Esta estructura describe una variable, un parámetro o un campo local.
@@ -63,7 +64,7 @@ Tipo del campo.
 `dwModifiers`\
 Combinación de marcas de la enumeración [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) que describe el campo.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Esta estructura se pasa al método [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) en el que se rellena.
 
 ## <a name="requirements"></a>Requisitos
@@ -73,7 +74,7 @@ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md)
 - [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)

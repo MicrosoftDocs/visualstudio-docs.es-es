@@ -1,4 +1,5 @@
 ---
+description: Recupera un tipo de símbolo a partir de su dirección de depuración.
 title: 'IDebugComPlusSymbolProvider:: GetTypeFromAddress | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 65b94be12bab00b44f12bc23239de90f5e8c0ddc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1dfcc7987c672ebf9647f33281b64d6d446a383e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99892845"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163724"
 ---
 # <a name="idebugcomplussymbolprovidergettypefromaddress"></a>IDebugComPlusSymbolProvider::GetTypeFromAddress
 Recupera un tipo de símbolo a partir de su dirección de depuración.
@@ -118,5 +119,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

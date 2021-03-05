@@ -1,4 +1,5 @@
 ---
+description: Actualiza los símbolos de depuración en memoria con los de la secuencia de datos especificada.
 title: 'IDebugComPlusSymbolProvider:: UpdateSymbols | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2421ff73ed94b275288d9a1aed6ff4a382f45048
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2d849ec9359055e6ff469ef49a50cf6c724eb4ca
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99842503"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163517"
 ---
 # <a name="idebugcomplussymbolproviderupdatesymbols"></a>IDebugComPlusSymbolProvider::UpdateSymbols
 Actualiza los símbolos de depuración en memoria con los de la secuencia de datos especificada.
@@ -94,5 +95,5 @@ Error:
 ## <a name="return-value"></a>Valor devuelto
 Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

@@ -1,4 +1,5 @@
 ---
+description: Este método obtiene la información de solicitud de punto de interrupción que describe esta solicitud de punto de interrupción.
 title: 'IDebugBreakpointRequest3:: GetRequestInfo2 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a11a317b4f14d94670a454a97be321b3097cffeb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a0d62b684fd171857870f59b2f3eec2e034cab11
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852991"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162334"
 ---
 # <a name="idebugbreakpointrequest3getrequestinfo2"></a>IDebugBreakpointRequest3::GetRequestInfo2
 Este método obtiene la información de solicitud de punto de interrupción que describe esta solicitud de punto de interrupción.
@@ -51,10 +52,10 @@ enuncia Estructura de [BP_REQUEST_INFO2](../../../extensibility/debugger/referen
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve el código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Hay más información en esta solicitud que la que devuelve el método [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugBreakpointRequest3](../../../extensibility/debugger/reference/idebugbreakpointrequest3.md)
 - [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)
 - [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)

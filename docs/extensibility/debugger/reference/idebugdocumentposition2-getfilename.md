@@ -1,4 +1,5 @@
 ---
+description: Obtiene el nombre de archivo del archivo de código fuente que contiene la posición del documento.
 title: 'IDebugDocumentPosition2:: GetFileName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fde4f0eea0d873a22bde5771bfce9afa247e524f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9bf6eb084c8122c940e49a006a09aa53e12cd8a8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946883"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162763"
 ---
 # <a name="idebugdocumentposition2getfilename"></a>IDebugDocumentPosition2::GetFileName
 Obtiene el nombre de archivo del archivo de código fuente que contiene la posición del documento.
@@ -46,8 +47,8 @@ enuncia Devuelve el nombre de archivo del archivo de código fuente.
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Es posible que un archivo de código fuente no tenga siempre un nombre de archivo (por ejemplo, es posible que el archivo de origen no exista en el disco).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)

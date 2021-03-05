@@ -1,4 +1,5 @@
 ---
+description: Informa a un motor de depuración (DE) que el programa especificado ha finalizado de forma atípica y que el DE debe limpiar todas las referencias al programa y enviar un evento DE destrucción de programas.
 title: IDebugEngine2::D estroyProgram | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 485875f2ca4cd54c41d959ffaf769368db265243
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7ee646b48a36a2b2c5d707eab6c5a32145d55439
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99879051"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162685"
 ---
 # <a name="idebugengine2destroyprogram"></a>IDebugEngine2::DestroyProgram
 Informa a un motor de depuración (DE) que el programa especificado ha finalizado de forma atípica y que el DE debe limpiar todas las referencias al programa y enviar un evento DE destrucción de programas.
@@ -46,12 +47,12 @@ de Un objeto [IDebugProgram2](../../../extensibility/debugger/reference/idebugpr
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Después DE llamar a este método, DE vuelve a enviar un evento [IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) al administrador de depuración de la sesión (SDM).
 
  Este método no está implementado (devuelve `E_NOTIMPL` ) si el de se ejecuta en el mismo proceso que el programa que se está depurando. Este método solo se implementa si el DE se ejecuta en el mismo proceso que el SDM.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

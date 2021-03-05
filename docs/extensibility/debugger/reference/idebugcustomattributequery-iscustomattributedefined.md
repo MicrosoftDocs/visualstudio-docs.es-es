@@ -1,4 +1,5 @@
 ---
+description: Determina si se define el atributo personalizado especificado.
 title: 'IDebugCustomAttributeQuery:: IsCustomAttributeDefined | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a9e27c17f4acc27c170d5e1d5ae83e93ffd76e22
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b4ffd03313896db1a6bf5cb719adf2ecf5858243
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99907920"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162971"
 ---
 # <a name="idebugcustomattributequeryiscustomattributedefined"></a>IDebugCustomAttributeQuery::IsCustomAttributeDefined
 Determina si se define el atributo personalizado especificado.
@@ -85,5 +86,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)
