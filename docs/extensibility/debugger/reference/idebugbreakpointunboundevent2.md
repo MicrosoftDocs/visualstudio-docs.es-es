@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz indica al administrador de depuración de la sesión (SDM) que se ha desenlazado un punto de interrupción enlazado de un programa cargado.
 title: IDebugBreakpointUnboundEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f7b463b2da9c1e2c93568435b73020550802f98
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8c23c060883ca3d2682659112bdc55de001e80e4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881014"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170229"
 ---
 # <a name="idebugbreakpointunboundevent2"></a>IDebugBreakpointUnboundEvent2
 Esta interfaz indica al administrador de depuración de la sesión (SDM) que se ha desenlazado un punto de interrupción enlazado de un programa cargado.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugBreakpointUnboundEvent2 : IUnknown
@@ -42,7 +43,7 @@ IDebugBreakpointUnboundEvent2 : IUnknown
 |[GetBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getbreakpoint.md)|Obtiene el punto de interrupción que quedó desenlazado.|
 |[GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)|Obtiene el motivo por el que se desenlaza el punto de interrupción.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Cuando se descarga una DLL o una clase del motor de depuración, todos los puntos de interrupción que se enlazaron al código de ese módulo deben estar desenlazados del programa que se está depurando. `IDebugBreakpointUnboundEvent2`Se envía un para cada punto de interrupción sin enlazar.
 
 ## <a name="requirements"></a>Requisitos
@@ -52,7 +53,7 @@ IDebugBreakpointUnboundEvent2 : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

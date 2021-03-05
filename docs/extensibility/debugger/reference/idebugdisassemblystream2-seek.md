@@ -1,4 +1,5 @@
 ---
+description: Mueve el puntero de lectura en el flujo del desensamblado un número determinado de instrucciones relativas a una posición especificada.
 title: 'IDebugDisassemblyStream2:: Seek | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3223f454fbf775b6aa11512c20fc63f8c224ade7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1799e2fd0fb992a2b60f57e668937a927a14e7bc
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944633"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170216"
 ---
 # <a name="idebugdisassemblystream2seek"></a>IDebugDisassemblyStream2::Seek
 Mueve el puntero de lectura en el flujo del desensamblado un número determinado de instrucciones relativas a una posición especificada.
@@ -61,10 +62,10 @@ de Número de instrucciones que se van a mover en relación con la posición esp
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si la posición de búsqueda fue hasta un punto más allá de la lista de instrucciones disponibles. De lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Si la búsqueda estaba en una posición antes del principio de la lista, la posición de lectura se establece en la primera instrucción de la lista. Si la consulta va a una posición después del final de la lista, la posición de lectura se establece en la última instrucción de la lista.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)
 - [SEEK_START](../../../extensibility/debugger/reference/seek-start.md)
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

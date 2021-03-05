@@ -1,4 +1,5 @@
 ---
+description: Enumera los tipos adicionales de campos que puede contener un objeto IDebugField.
 title: FIELD_KIND_EX | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,17 +14,17 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d3742e60c1bc8a0e490ca83ba14eadc4b879d3e1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 211cc83587a48b4e77afd9094f0227cacb4394c2
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936904"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170281"
 ---
 # <a name="field_kind_ex"></a>FIELD_KIND_EX
 Enumera los tipos adicionales de campos que puede contener un objeto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) . Esta enumeración extiende la enumeración de [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) .
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_FIELD_KIND_EX

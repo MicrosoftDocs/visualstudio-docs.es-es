@@ -1,4 +1,5 @@
 ---
+description: Especifica los criterios para comparar dos contextos de documento.
 title: DOCCONTEXT_COMPARE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,17 +16,17 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: db66748a1665d5ab965f20295258efd65ec43d38
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f64e2e8ec365daa84cbd1d4f7e3e9bdc43391d5e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953726"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170437"
 ---
 # <a name="doccontext_compare"></a>DOCCONTEXT_COMPARE
 Especifica los criterios para comparar dos contextos de documento.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_DOCCONTEXT_COMPARE {
@@ -59,7 +60,7 @@ Busque el primer contexto de documento en la lista que sea mayor que el contexto
 `DOCCONTEXT_SAME_DOCUMENT`\
 Busque el primer contexto del documento en la lista que se encuentra en el mismo documento que el contexto del documento de destino.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Se pasa como argumento al método [Compare](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md) .
 
 Estos valores se usan para especificar un criterio de comparación para buscar el primer contexto de documento en una lista. A un contexto de documento se le asigna una lista de contextos de documento para compararlos a través del `IDebugDocumentContext2::Compare` método. A continuación, se devuelve el primer contexto del documento en la lista para el que se devuelve el operador de comparación `true` .

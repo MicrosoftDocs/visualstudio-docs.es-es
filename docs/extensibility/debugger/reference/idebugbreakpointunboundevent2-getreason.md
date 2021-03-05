@@ -1,4 +1,5 @@
 ---
+description: Obtiene el motivo por el que se desenlaza el punto de interrupción.
 title: 'IDebugBreakpointUnboundEvent2:: GetReason (| Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 21b1eaf51f9f533fccb5275e0659367a43adb2c3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6d230a9228ff59a90224030f050761a05858c8c1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900223"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170255"
 ---
 # <a name="idebugbreakpointunboundevent2getreason"></a>IDebugBreakpointUnboundEvent2::GetReason
 Obtiene el motivo por el que se desenlaza el punto de interrupción.
@@ -46,7 +47,7 @@ enuncia Devuelve un valor de la enumeración [BP_UNBOUND_REASON](../../../extens
 ## <a name="return-value"></a>Valor devuelto
 Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Entre los motivos se incluye un punto de interrupción que se va a enlazar a una ubicación diferente después de una operación de edición y continuación, o bien una determinación de que un punto de interrupción se ha enlazado con un error.
 
 ## <a name="example"></a>Ejemplo
@@ -71,5 +72,5 @@ STDMETHODIMP CBreakpointUnboundDebugEventBase::GetReason(
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)

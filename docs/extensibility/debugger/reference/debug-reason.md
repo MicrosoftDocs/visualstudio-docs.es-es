@@ -1,4 +1,5 @@
 ---
+description: Especifica la razón por la que se inició el proceso para la depuración.
 title: DEBUG_REASON | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,17 +16,17 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8d2ce7eeb28627f7cb0a1dfbe399bd55f04ff7be
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9404e4b5cfdd1f1690b0fe76d0cd5e98cc90d2a4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921227"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170554"
 ---
 # <a name="debug_reason"></a>DEBUG_REASON
 Especifica la razón por la que se inició el proceso para la depuración.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_DEBUG_REASON {
@@ -64,7 +65,7 @@ El proceso se adjuntó automáticamente al iniciarse.
 `DEBUG_REASON_CAUSALITY`\
 El proceso se ha iniciado debido a un evento de depuración *Just-in-Time* (JIT).
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Se devuelve desde el método [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) .
 
 ## <a name="requirements"></a>Requisitos

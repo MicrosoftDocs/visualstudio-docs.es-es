@@ -1,4 +1,5 @@
 ---
+description: Especifica qué información se va a recuperar sobre un objeto de referencia de depuración.
 title: DEBUGREF_INFO_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,17 +16,17 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 01a26b6e10fae095bcf7284a6b5dbc12394d2541
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: da408e159f654f9eb707e71710a178d22881d715
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938998"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170515"
 ---
 # <a name="debugref_info_flags"></a>DEBUGREF_INFO_FLAGS
 Especifica qué información se va a recuperar sobre un objeto de referencia de depuración.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_DEBUGREF_INFO_FLAGS {
@@ -84,7 +85,7 @@ Indica que no se ha establecido ninguna marca.
 `DEBUGREF_INFO_ALL`\
 Indica una máscara de las marcas.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Estas marcas se pasan a los métodos [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) y [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) para indicar qué campos de la estructura de [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) se van a inicializar.
 
 Se utiliza para que el `dwFields` miembro de la `DEBUG_REFERENCE_INFO` estructura indique qué campos se usan y son válidos cuando se devuelve la estructura.

@@ -1,4 +1,5 @@
 ---
+description: Contiene información sobre una propiedad de depuración.
 title: DEBUG_PROPERTY_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 98cd4292692fe9d9b965790ce9a0a30d55423454
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d0b02ca1f8c85f81096954fb416cc73ee400b9ba
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899093"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170593"
 ---
 # <a name="debug_property_info"></a>DEBUG_PROPERTY_INFO
 Contiene información sobre una propiedad de depuración.
@@ -73,7 +74,7 @@ Objeto [IDebugProperty2](../../../extensibility/debugger/reference/idebugpropert
 `dwAttrib`\
 Combinación de marcas de la enumeración [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) que describe los atributos de esta propiedad.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Una propiedad es un objeto de una naturaleza jerárquica que tiene un nombre, un tipo y un valor. Por ejemplo, una propiedad puede describir las variables locales, los parámetros, las variables y las expresiones de inspección y los registros.
 
 Esta estructura se pasa al método [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) donde se rellena. Esta estructura también se devuelve como parte de una lista de esta estructura de la interfaz [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) que, a su vez, se devuelve de una llamada a los métodos [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) y [EnumProperties (](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) .
@@ -85,7 +86,7 @@ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)
 - [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)

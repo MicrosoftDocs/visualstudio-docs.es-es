@@ -1,4 +1,5 @@
 ---
+description: Especifica cómo interpretar el tipo de un objeto IDebugField.
 title: dwTYPE_KIND | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,17 +16,17 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e13d02cb08f957636a81bf4a985f1d7006b6c2ec
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f51a84951cdfe09e13454035c3219324e9a68368
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99908092"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170333"
 ---
 # <a name="dwtype_kind"></a>dwTYPE_KIND
 Especifica cómo interpretar el tipo de un objeto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) .
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_dwTYPE_KIND {
@@ -55,7 +56,7 @@ La `TYPE_INFO` Unión debe interpretarse como una estructura de [PDB_TYPE](../..
 `TYPE_KIND_BUILT`\
 La `TYPE_INFO` Unión debe interpretarse como una estructura de [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md) .
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Los valores de esta enumeración aparecen en el `dwKind` campo de la estructura [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) y se usan para determinar cómo interpretar el `type` miembro de Unión. La `TYPE_INFO` estructura es devuelta por una llamada al método [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) .
 
 ## <a name="requirements"></a>Requisitos

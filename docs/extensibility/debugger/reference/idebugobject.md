@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz representa un objeto que el enlazador crea para encapsular los valores de símbolos y expresiones.
 title: IDebugObject | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc6fc188537799a8a3eeab66dd4af1d92ffb67db
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 14c405c9dbe3d1cbfdf61c606b995a686e063661
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953583"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170202"
 ---
 # <a name="idebugobject"></a>IDebugObject
 > [!IMPORTANT]
@@ -25,7 +26,7 @@ ms.locfileid: "99953583"
 
  Esta interfaz representa un objeto que el enlazador crea para encapsular los valores de símbolos y expresiones.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugObject : IUnknown
@@ -53,7 +54,7 @@ IDebugObject : IUnknown
 |[IsReadOnly](../../../extensibility/debugger/reference/idebugobject-isreadonly.md)|Determina si este objeto es de solo lectura.|
 |[IsProxy](../../../extensibility/debugger/reference/idebugobject-isproxy.md)|Determina si el objeto es un proxy transparente.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  El evaluador de expresiones utiliza esta interfaz como la clase base para representar objetos en un árbol de análisis.
 
 ## <a name="requirements"></a>Requisitos
@@ -63,7 +64,7 @@ IDebugObject : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces de evaluación de expresiones](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md)
 - [Volver](../../../extensibility/debugger/reference/idebugbinder-bind.md)

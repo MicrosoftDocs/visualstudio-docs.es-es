@@ -1,4 +1,5 @@
 ---
+description: Describe una instrucción de desensamblado para el entorno de desarrollo integrado (IDE) que se va a mostrar.
 title: DisassemblyData | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 49e8f151aa01037a0bc18161fbe94a00488394db
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b6053647d43563e7369793982c72683002ae0df5
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953843"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170463"
 ---
 # <a name="disassemblydata"></a>DisassemblyData
 Describe una instrucción de desensamblado para el entorno de desarrollo integrado (IDE) que se va a mostrar.
@@ -104,7 +105,7 @@ Número de bytes de la instrucción desde el principio de la línea de código.
 `dwFlags`\
 La constante [DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md) que especifica qué marcas están activas.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Cada `DisassemblyData` estructura describe una instrucción del desensamblado. Una matriz de estas estructuras se devuelve desde el método [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) .
 
 La estructura de [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) se utiliza solo para documentos basados en texto. El intervalo de código fuente de esta instrucción se rellena solo para la primera instrucción generada a partir de una instrucción o línea, por ejemplo, cuando `dwByteOffset == 0` .
@@ -226,7 +227,7 @@ namespace MyNamespace
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [Lectura](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)
 - [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)
