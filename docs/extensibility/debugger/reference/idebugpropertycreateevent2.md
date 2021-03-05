@@ -1,4 +1,5 @@
 ---
+description: El motor DE depuración (DE) envía esta interfaz al administrador de depuración de la sesión (SDM) cuando crea una propiedad que está asociada a un documento específico.
 title: IDebugPropertyCreateEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08ef46275d9c7365cfcc837b8e4dfc73f0b48b41
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0a8a4317ec3e1c2c83becf0bffb5274ae5a44cf4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99876061"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168054"
 ---
 # <a name="idebugpropertycreateevent2"></a>IDebugPropertyCreateEvent2
 El motor DE depuración (DE) envía esta interfaz al administrador de depuración de la sesión (SDM) cuando crea una propiedad que está asociada a un documento específico.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugPropertyCreateEvent2 : IUnknown
@@ -41,7 +42,7 @@ IDebugPropertyCreateEvent2 : IUnknown
 |------------|-----------------|
 |[GetDebugProperty](../../../extensibility/debugger/reference/idebugpropertycreateevent2-getdebugproperty.md)|Obtiene la nueva propiedad.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Si una propiedad tiene un documento o un script específicos asociados, el DE puede enviar este evento al SDM para actualizar la ventana de documentos de **script** con el nombre del documento. El SDM llamará a [GetExtendedInfo](../../../extensibility/debugger/reference/idebugproperty2-getextendedinfo.md) con el argumento `guidDocument` para recuperar un objeto `VARIANT` que contiene un puntero [IUnknown](/cpp/atl/iunknown) . El SDM llamará a [QueryInterface](/cpp/atl/queryinterface) en este puntero para recuperar la interfaz [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) que se usa para actualizar la ventana de **documentos de script** .
 
 ## <a name="requirements"></a>Requisitos
@@ -51,7 +52,7 @@ IDebugPropertyCreateEvent2 : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

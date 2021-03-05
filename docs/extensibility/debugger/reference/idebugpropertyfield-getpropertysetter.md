@@ -1,4 +1,5 @@
 ---
+description: Obtiene el método que establece la propiedad.
 title: 'IDebugPropertyField:: GetPropertySetter | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ab2c0b27d8befa13e68e6b28c6aee1f763138cba
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bd787b88ae0e45de7afe944a79fdd0a788aa1449
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900057"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167937"
 ---
 # <a name="idebugpropertyfieldgetpropertysetter"></a>IDebugPropertyField::GetPropertySetter
 Obtiene el método que establece la propiedad.
@@ -46,10 +47,10 @@ enuncia Devuelve un objeto [IDebugMethodField](../../../extensibility/debugger/r
 ## <a name="return-value"></a>Valor devuelto
  Si se realiza correctamente, Devuelve S_OK; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Para obtener el método que obtiene la propiedad, llame al método [GetPropertyGetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md) .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md)
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)
 - [GetPropertyGetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md)
