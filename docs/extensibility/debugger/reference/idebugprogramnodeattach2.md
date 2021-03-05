@@ -1,4 +1,5 @@
 ---
+description: Permite que un nodo de programa reciba una notificación de un intento de asociarse al programa asociado.
 title: IDebugProgramNodeAttach2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74a25e4eefe260dd61dc951118cdb6390a61b52d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: aa623097224afc4f3a6b93d6b98ece0e14149ca5
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898498"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171739"
 ---
 # <a name="idebugprogramnodeattach2"></a>IDebugProgramNodeAttach2
 Permite que un nodo de programa reciba una notificación de un intento de asociarse al programa asociado.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugProgramNodeAttach2 : IUnknown
@@ -41,7 +42,7 @@ IDebugProgramNodeAttach2 : IUnknown
 |------------|-----------------|
 |[OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)|Se adjunta al programa asociado o pospone el proceso de asociación al método [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) .|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Esta interfaz es la alternativa preferida al método [Attach_V7](../../../extensibility/debugger/reference/idebugprogramnode2-attach-v7.md) obsoleto. Todos los motores de depuración siempre se cargan con la `CoCreateInstance` función, es decir, se crean instancias fuera del espacio de direcciones del programa que se está depurando.
 
  Si una implementación anterior del `IDebugProgramNode2::Attach_V7` método simplemente estaba estableciendo el `GUID` del programa que se está depurando, solo es necesario implementar el método [AutoAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) .
@@ -55,7 +56,7 @@ IDebugProgramNodeAttach2 : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
 - [Adjuntar](../../../extensibility/debugger/reference/idebugengine2-attach.md)

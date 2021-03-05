@@ -1,4 +1,5 @@
 ---
+description: Devuelve el número de caracteres de la cadena de la propiedad asociada.
 title: 'IDebugProperty3:: GetStringCharLength | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d3189a7c84ed36827ab48b27c8f727314eb34983
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: eaf0792b6e0c2311b7eeb01f12b01a485739c6c9
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963125"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171388"
 ---
 # <a name="idebugproperty3getstringcharlength"></a>IDebugProperty3::GetStringCharLength
 Devuelve el número de caracteres de la cadena de la propiedad asociada.
@@ -48,7 +49,7 @@ int GetStringCharLength(
 ## <a name="return-value"></a>Valor devuelto
 Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve el código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Normalmente, este método se usa como preparativo para asignar un búfer para una llamada al método [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) .
 
 ## <a name="example"></a>Ejemplo
@@ -94,6 +95,6 @@ STDMETHODIMP CProperty::GetStringCharLength(ULONG *pLen)
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md)
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

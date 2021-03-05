@@ -1,4 +1,5 @@
 ---
+description: Crea un enumerador para todas las variables locales del método, incluidos los generados internamente por un compilador.
 title: 'IDebugMethodField:: EnumAllLocals | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c10de4db63a7706326ff6f387366c75f860408bf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 38f14ba2d520974b9f8f567c7840737ed2763080
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928166"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102172173"
 ---
 # <a name="idebugmethodfieldenumalllocals"></a>IDebugMethodField::EnumAllLocals
 Crea un enumerador para todas las variables locales del método, incluidos los generados internamente por un compilador.
@@ -51,12 +52,12 @@ enuncia Devuelve un objeto [IEnumDebugFields](../../../extensibility/debugger/re
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, Devuelve S_OK o devuelve S_FALSE si no hay variables locales. De lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Solo se enumeran las variables definidas dentro del bloque que contiene la dirección de depuración especificada. Este método incluye cualquier variables locales generadas por el compilador. Si lo único que se necesita son las variables locales definidas explícitamente en el origen, llame al método [EnumLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md) .
 
  Un método puede contener varios contextos de ámbito o bloques.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)
 - [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

@@ -1,4 +1,5 @@
 ---
+description: Representa un parámetro para un tipo genérico de código administrado.
 title: IDebugGenericParamField | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,17 +11,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ad01730f7f1d1e8e155cd1df44f75fbf88c73a4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c4ab1cd79826e2f9f07a4f325d701be4e9eb9c9d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99838648"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102172576"
 ---
 # <a name="idebuggenericparamfield"></a>IDebugGenericParamField
 Representa un parámetro para un tipo genérico de código administrado.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugGenericParamField : IDebugField

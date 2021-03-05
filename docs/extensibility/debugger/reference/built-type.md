@@ -1,4 +1,5 @@
 ---
+description: Esta estructura especifica información sobre un tipo de campo tomado de los metadatos.
 title: BUILT_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 35ae5661127c0e19e87c96a47a2985161beae7c5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dd9f5984861b0f56e4a46b4f793a38bbb3bafa60
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874387"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170990"
 ---
 # <a name="built_type"></a>BUILT_TYPE
 Esta estructura especifica información sobre un tipo de campo tomado de los metadatos.
@@ -53,7 +54,7 @@ GUID del módulo que contiene este campo.
 `pUnderlyingField`\
 Un objeto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) que identifica el campo subyacente asociado a este campo compilado.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Esta estructura aparece como parte de la Unión en la estructura [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) cuando el `dwKind` campo de la `TYPE_INFO` estructura se establece en `TYPE_KIND_BUILT` (un valor de la enumeración [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) ).
 
 ## <a name="requirements"></a>Requisitos
@@ -63,7 +64,7 @@ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)
 - [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)

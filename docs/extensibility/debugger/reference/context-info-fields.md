@@ -1,4 +1,5 @@
 ---
+description: Especifica la información que se va a recuperar sobre un contexto de memoria.
 title: CONTEXT_INFO_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,17 +16,17 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9c0d67afa2b20e239180848ef1e68d0f0a0c3079
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 401195d5b03f87ba1ea5c66811570a720e53bdae
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912958"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170775"
 ---
 # <a name="context_info_fields"></a>CONTEXT_INFO_FIELDS
 Especifica la información que se va a recuperar sobre un contexto de memoria.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_CONTEXT_INFO_FIELDS {
@@ -71,7 +72,7 @@ Inicialice o use el `bstrAddressOffset` campo de la `CONTEXT_INFO` estructura.
 `CIF_ALLFIELDS`\
 Inicializar o utilizar todos los campos de la `CONTEXT_INFO` estructura.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Estos valores pasan un parámetro al método [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) para indicar qué campos de la estructura de [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) se van a inicializar.
 
 Estas marcas también se usan para indicar los campos de la `CONTEXT_INFO` estructura que se usan y son válidos cuando se devuelve la estructura.

@@ -1,4 +1,5 @@
 ---
+description: Las siguientes interfaces son las interfaces principales para extender el depurador mediante el SDK de VS.
 title: Interfaces principales | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee2f44e5d75d44cfc1c903d462e7a1df360eeefa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4f24dd16656144fa155d0473d7f722487c0edd03
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899177"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170762"
 ---
 # <a name="core-interfaces"></a>Interfaces básicas
 Las siguientes interfaces son las interfaces principales para extender el depurador mediante [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)] .
@@ -303,6 +304,6 @@ Las siguientes interfaces son las interfaces principales para extender el depura
 |[IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)|EE|Proporciona métodos para obtener acceso a los datos que se van a pasar a un visualizador de tipos.|
 |[IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md)|EE|Representa una propiedad que proporciona acceso a las implementaciones de [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) .|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Referencia de API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)
 - [Creación de un motor de depuración personalizado](../../../extensibility/debugger/creating-a-custom-debug-engine.md)

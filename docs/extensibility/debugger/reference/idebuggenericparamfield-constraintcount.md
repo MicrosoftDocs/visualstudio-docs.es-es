@@ -1,4 +1,5 @@
 ---
+description: Devuelve el número de restricciones que están asociadas a este parámetro genérico.
 title: 'IDebugGenericParamField:: ConstraintCount | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 89c538d758b96ee8c5a5240189e6bd518ff2681c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e77530033e4c8ae11e0eb690a25c7970ea1f458a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934297"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102172909"
 ---
 # <a name="idebuggenericparamfieldconstraintcount"></a>IDebugGenericParamField::ConstraintCount
 Devuelve el número de restricciones que están asociadas a este parámetro genérico.
@@ -81,5 +82,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

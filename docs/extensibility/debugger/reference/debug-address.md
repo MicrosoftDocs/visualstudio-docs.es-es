@@ -1,4 +1,5 @@
 ---
+description: Esta estructura representa una dirección.
 title: DEBUG_ADDRESS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e02f78e82c87bceb10b71bcb303a78f25a9a623e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a13a83b5622053593702409c44b6481ba76d17d8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899115"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170684"
 ---
 # <a name="debug_address"></a>DEBUG_ADDRESS
 Esta estructura representa una dirección.
@@ -61,7 +62,7 @@ Token que identifica la clase o el tipo de esta dirección.
 `addr`\
 Estructura de [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) , que contiene una Unión de estructuras que describen los tipos de direcciones individuales. El valor `addr` .`dwKind` procede de la enumeración [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) , que explica cómo interpretar la Unión.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Esta estructura se pasa al método [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) que se va a rellenar.
 
 **ADVERTENCIA [solo C++]**
@@ -82,7 +83,7 @@ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)
 - [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)

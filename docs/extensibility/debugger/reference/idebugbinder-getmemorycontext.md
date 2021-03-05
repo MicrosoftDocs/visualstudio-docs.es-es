@@ -1,4 +1,5 @@
 ---
+description: Este método convierte una ubicación de objeto o una dirección de memoria en un contexto de memoria.
 title: 'IDebugBinder:: GetMemoryContext | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1c203e83a595562e604d8c32b09056c8544bfd1d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7e31df905c35fa81e3e56e32ef969f9663054dc5
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938983"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102174099"
 ---
 # <a name="idebugbindergetmemorycontext"></a>IDebugBinder::GetMemoryContext
 Este método convierte una ubicación de objeto o una dirección de memoria en un contexto de memoria.
@@ -56,7 +57,7 @@ enuncia Devuelve la interfaz [IDebugMemoryContext2](../../../extensibility/debug
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

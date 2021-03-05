@@ -1,4 +1,5 @@
 ---
+description: Estructura que contiene una lista de GUID.
 title: CONST_GUID_ARRAY | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a2893b6a1e977b84fba3161a33a5342f94ccc030
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3caa4518872abbb2164e523b30679621d2bf319c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900287"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170814"
 ---
 # <a name="const_guid_array"></a>CONST_GUID_ARRAY
 Estructura que contiene una lista de `GUID` s.
@@ -48,7 +49,7 @@ Número de `GUID` s en la `Members` matriz.
 `Members`\
 Matriz de `GUID` s.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Esta estructura se pasa al método [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) y se devuelve desde los métodos [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) y [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md) .
 
 El propietario de una instancia de esta estructura es responsable de liberar cualquier memoria asignada.
@@ -60,7 +61,7 @@ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)
 - [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)

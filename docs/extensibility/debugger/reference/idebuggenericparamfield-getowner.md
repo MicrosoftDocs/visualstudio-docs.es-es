@@ -1,4 +1,5 @@
 ---
+description: Recupera el tipo o el propietario del método de este parámetro genérico.
 title: 'IDebugGenericParamField:: GetOwner | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4914a61430d5f64b5e7b590749317c2cfe721b96
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 42198767ec7bb04cef6e65ecd08c9d46c010ffb2
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99838969"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102172602"
 ---
 # <a name="idebuggenericparamfieldgetowner"></a>IDebugGenericParamField::GetOwner
 Recupera el tipo o el propietario del método de este parámetro genérico.
@@ -95,5 +96,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

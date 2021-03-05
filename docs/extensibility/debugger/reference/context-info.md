@@ -1,4 +1,5 @@
 ---
+description: Esta estructura describe un contexto de memoria o de código.
 title: CONTEXT_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5a95808383d4d75810f17b4da121a11025b6f894
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fc0636334cfde4452f427285bfe21141bc7614e1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912988"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170736"
 ---
 # <a name="context_info"></a>CONTEXT_INFO
 Esta estructura describe un contexto de memoria o de código.
@@ -73,7 +74,7 @@ Desplazamiento de la dirección en el código donde se encuentra el contexto esp
 `bstrAddressAbsolute`\
 Dirección absoluta en memoria donde se encuentra el contexto especificado.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Esta estructura se devuelve desde una llamada al método [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) .
 
 Un uso típico de esta estructura es la compatibilidad de una ventana de depuración de **memoria** .
@@ -85,7 +86,7 @@ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)
 - [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)

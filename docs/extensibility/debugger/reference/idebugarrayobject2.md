@@ -1,4 +1,5 @@
 ---
+description: Representa un objeto de matriz administrado y permite que un evaluador de expresiones (EE) determine el índice base (límites inferiores) de la matriz.
 title: IDebugArrayObject2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 418ec9bdef9621f7623e254856ae33dec501a9c9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0e6bb73834f53e22df63682663539b5f01685b30
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870030"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102174129"
 ---
 # <a name="idebugarrayobject2"></a>IDebugArrayObject2
 > [!IMPORTANT]
@@ -23,7 +24,7 @@ ms.locfileid: "99870030"
 
  Representa un objeto de matriz administrado y permite que un evaluador de expresiones (EE) determine el índice base (límites inferiores) de la matriz.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugArrayObject2 : IDebugArrayObject
@@ -40,7 +41,7 @@ IDebugArrayObject2 : IDebugArrayObject
 |[GetBaseIndices](../../../extensibility/debugger/reference/idebugarrayobject2-getbaseindices.md)|Recupera los índices de base (límites inferiores) de cada índice dado el número de dimensiones de la matriz.|
 |[HasBaseIndices](../../../extensibility/debugger/reference/idebugarrayobject2-hasbaseindices.md)|Determina si la matriz tiene definidos índices de base (límites inferiores).|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Un evaluador de expresiones utiliza esta interfaz para representar matrices administradas en un árbol de análisis.
 
 ## <a name="requirements"></a>Requisitos

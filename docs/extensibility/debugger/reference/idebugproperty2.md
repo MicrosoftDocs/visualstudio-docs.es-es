@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz representa una propiedad de marco de pila, una propiedad de documento de programa u otra propiedad.
 title: IDebugProperty2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c5cec0d93919058eae725a9e49198f1704d8bfc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 42cdd3f9e5fd1d92e007bb9a15cf9e1fa5e44e83
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962202"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171457"
 ---
 # <a name="idebugproperty2"></a>IDebugProperty2
 Esta interfaz representa una propiedad de marco de pila, una propiedad de documento de programa u otra propiedad. La propiedad suele ser el resultado de una evaluación de expresión.
@@ -25,7 +26,7 @@ Esta interfaz representa una propiedad de marco de pila, una propiedad de docume
 > [!NOTE]
 > Este uso de "propiedad" no se debe confundir con, lo que significa una variable miembro de una clase, aunque un `IDebugProperty2` puede representar tal entidad.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugProperty2 : IUnknown
@@ -62,7 +63,7 @@ IDebugProperty2 : IUnknown
 |[GetReference](../../../extensibility/debugger/reference/idebugproperty2-getreference.md)|Devuelve una referencia al valor de esta propiedad.|
 |[GetExtendedInfo](../../../extensibility/debugger/reference/idebugproperty2-getextendedinfo.md)|Devuelve la información extendida de una propiedad.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Una propiedad, como se representa mediante una `IDebugProperty2` interfaz, puede considerarse como un valor con un nombre, un tipo y una dirección. En términos más generales, `IDebugProperty2` puede representar cualquier elemento que tenga una estructura jerárquica, con nodos primarios y secundarios.
 
  Una propiedad suele ser transitoria y dura solo mientras el marco de pila actual, por ejemplo. Por otro lado, una referencia, como se representa mediante una interfaz [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) , dura siempre que el valor permanezca en la memoria.
@@ -76,7 +77,7 @@ IDebugProperty2 : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
 - [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

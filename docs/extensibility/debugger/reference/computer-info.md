@@ -1,4 +1,5 @@
 ---
+description: Describe el equipo en el que se ejecuta el depurador.
 title: COMPUTER_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 548306e1c9ef488025fd88132a27bb841194375a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 81dee41b0ffc45ae6e0403e732c27d030026fb07
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900277"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170912"
 ---
 # <a name="computer_info"></a>COMPUTER_INFO
 Describe el equipo en el que se ejecuta el depurador.
@@ -53,7 +54,7 @@ Identifica la máscara del conjunto.
 `dwOperatingSystemVersion`\
 Número de versión del sistema operativo.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 El método [GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md) devuelve esta estructura.
 
 ## <a name="requirements"></a>Requisitos
@@ -63,6 +64,6 @@ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)

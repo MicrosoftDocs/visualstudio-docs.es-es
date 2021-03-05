@@ -1,4 +1,5 @@
 ---
+description: Se utiliza para determinar si un programa puede detener la ejecución después de alcanzar un punto determinado en la ejecución.
 title: CANSTOP_REASON | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,17 +16,17 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b6756d574c36d6381b606be597ca0e54e7945763
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: def5bdbb6433f6a154eb6f84a88fb39004bc41ae
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874361"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171003"
 ---
 # <a name="canstop_reason"></a>CANSTOP_REASON
 Se utiliza para determinar si un programa puede detener la ejecución después de alcanzar un punto determinado en la ejecución.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_CANSTOP_REASON {
@@ -49,7 +50,7 @@ Especifica el punto de entrada del programa determinado.
 `CANSTOP_STEPIN`\
 Especifica la ejecución paso a paso de una función.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Se pasa como argumento al método [GetReason (](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) para confirmar con el administrador de depuración de sesión (SDM) si es correcto detenerse después de alcanzar el punto de entrada del programa o después de entrar en una función o un método.
 
 ## <a name="requirements"></a>Requisitos

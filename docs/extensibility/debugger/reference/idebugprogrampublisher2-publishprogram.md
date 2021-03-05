@@ -1,4 +1,5 @@
 ---
+description: Este método hace que un programa esté disponible para los motores de depuración (DEs) y el administrador de depuración de la sesión.
 title: IDebugProgramPublisher2::P ublishProgram | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1d13154f172fdd92ea4a3d4c96321e884516a74c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2904376efa1a6798cbba967b93ad1c93d395b919
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959563"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171594"
 ---
 # <a name="idebugprogrampublisher2publishprogram"></a>IDebugProgramPublisher2::PublishProgram
 Este método hace que un programa esté disponible para los motores de depuración (DEs) y el administrador de depuración de la sesión.
@@ -56,9 +57,9 @@ de Nombre descriptivo para el programa (aparece en los menús o cuadros de diál
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Para que un programa deje de estar disponible para la depuración, llame a [UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)
 - [UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md)

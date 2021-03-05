@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz proporciona puertos al administrador de depuración de sesión (SDM).
 title: IDebugPortSupplier2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf9cd3cb82e2b14811a8ec52a651248e2990ae27
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5e9523212ea83182e69e83b4f8353f1a9ba7dd8c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840371"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102172044"
 ---
 # <a name="idebugportsupplier2"></a>IDebugPortSupplier2
 Esta interfaz proporciona puertos al administrador de depuración de sesión (SDM).
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugPortSupplier2 : IUnknown
@@ -70,7 +71,7 @@ En la tabla siguiente se muestran los métodos de `IDebugPortSupplier2` .
 |[AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)|Agrega un puerto.|
 |[RemovePort](../../../extensibility/debugger/reference/idebugportsupplier2-removeport.md)|Quita un puerto.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Un proveedor de puertos puede identificarse por el nombre y el identificador, agregar y quitar puertos y enumerar todos los puertos proporcionados por el proveedor del puerto.
 
 ## <a name="requirements"></a>Requisitos
@@ -80,7 +81,7 @@ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
 - [GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md)
 - [GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md)

@@ -1,4 +1,5 @@
 ---
+description: Obtiene la propiedad más derivada de una propiedad.
 title: 'IDebugProperty2:: GetDerivedMostProperty | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2f91b00d2f448aea2f187e37813782ce568ad859
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6069091295371ea017547cdac6540e68ba2885e8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916041"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171534"
 ---
 # <a name="idebugproperty2getderivedmostproperty"></a>IDebugProperty2::GetDerivedMostProperty
 Obtiene la propiedad más derivada de una propiedad.
@@ -46,8 +47,8 @@ enuncia Devuelve un objeto [IDebugProperty2](../../../extensibility/debugger/ref
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve el código de error. Devuelve `S_GETDERIVEDMOST_NO_DERIVED_MOST` si no hay ninguna propiedad derivada que se pueda recuperar.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Por ejemplo, si esta propiedad describe un objeto que implementa `ClassRoot` pero que es realmente una instancia de `ClassDerived` que se deriva de `ClassRoot` , este método devuelve un objeto [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) que describe el `ClassDerived` objeto.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

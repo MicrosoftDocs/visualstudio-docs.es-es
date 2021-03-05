@@ -1,4 +1,5 @@
 ---
+description: Este método recupera un objeto de memoria que representa la memoria a la que está enlazado este objeto.
 title: 'IDebugBinder3:: GetMemoryObject | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3408237de91e822e2ea3cbd95fad40c859267c1d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6ca708c9a6fd80a7a04d8202a73f0bce99102ff1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916315"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102173979"
 ---
 # <a name="idebugbinder3getmemoryobject"></a>IDebugBinder3::GetMemoryObject
 Este método recupera un objeto de memoria que representa la memoria a la que está enlazado este objeto.
@@ -56,7 +57,7 @@ enuncia [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

@@ -1,4 +1,5 @@
 ---
+description: Describe varios atributos para una interfaz IDebugProperty2 o IDebugReference2.
 title: DBG_ATTRIB_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e1093ab5252aa14418bebf4129d0c7d050d0e11d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f467c9ac66bc249974f919a48a1527bebb26f361
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899160"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170723"
 ---
 # <a name="dbg_attrib_flags"></a>DBG_ATTRIB_FLAGS
 Describe varios atributos para una interfaz [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) o [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) . Miembro de la estructura de [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) .
@@ -298,7 +299,7 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
  `DBG_ATTRIB_MULTI_CUSTOM_VIEWERS`\
  Indica que el objeto tiene varios visores personalizados asociados.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 
 > [!NOTE]
 > Los valores de esta enumeración no se definen realmente en el ensamblado para C#. En su lugar, debe copiar las definiciones en el archivo de código fuente.

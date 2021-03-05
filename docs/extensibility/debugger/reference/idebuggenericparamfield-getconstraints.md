@@ -1,4 +1,5 @@
 ---
+description: Recupera las restricciones que están asociadas a este parámetro genérico.
 title: 'IDebugGenericParamField:: GetConstraints | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b32fcb5beae3ca00324f2b2606b5eebae51af5fa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 51c3dcbeda334953ef09f8bcfbf1789450201a0c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869744"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102172791"
 ---
 # <a name="idebuggenericparamfieldgetconstraints"></a>IDebugGenericParamField::GetConstraints
 Recupera las restricciones que están asociadas a este parámetro genérico.
@@ -151,5 +152,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

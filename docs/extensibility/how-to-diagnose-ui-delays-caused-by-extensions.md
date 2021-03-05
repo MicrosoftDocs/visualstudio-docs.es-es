@@ -4,16 +4,16 @@ description: Visual Studio le notifica si los retrasos de la interfaz de usuario
 ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: conceptual
-author: PooyaZv
-ms.author: pozandev
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload: multiple
-ms.openlocfilehash: 508fdd44a1c73f66d88317b7ec304e810f5f12e3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7bc43d806595c7653421daec6efabb087cc1071c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890804"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171362"
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Cómo: Diagnosticar retrasos de la interfaz de usuario causados por las extensiones
 

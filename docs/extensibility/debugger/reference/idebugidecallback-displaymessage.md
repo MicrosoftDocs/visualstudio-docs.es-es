@@ -1,4 +1,5 @@
 ---
+description: Envía la cadena de mensaje especificada a la ventana de salida del depurador.
 title: IDebugIDECallback::D isplayMessage | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 74fc337137ac6ddd523e0584333865661abf3427
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ab7223d065df0bb77c2782ef7f66d14843a23f62
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99838687"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102172550"
 ---
 # <a name="idebugidecallbackdisplaymessage"></a>IDebugIDECallback::DisplayMessage
 Envía la cadena de mensaje especificada a la ventana de salida del depurador.
@@ -44,5 +45,5 @@ de Cadena de mensaje que se va a mostrar en la ventana de salida del depurador.
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugIDECallback](../../../extensibility/debugger/reference/idebugidecallback.md)

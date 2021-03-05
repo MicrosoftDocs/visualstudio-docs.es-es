@@ -1,4 +1,5 @@
 ---
+description: El motor DE depuración (DE) usa esta interfaz para enviar un mensaje a Visual Studio que requiere una respuesta del usuario.
 title: IDebugMessageEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6796e2d4f3a7fa20e4bcab4088b6687866edf570
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9c84bf93a50ce9a5e530ebb7143d7b1c69f50360
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928268"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102172278"
 ---
 # <a name="idebugmessageevent2"></a>IDebugMessageEvent2
 El motor DE depuración (DE) usa esta interfaz para enviar un mensaje a Visual Studio que requiere una respuesta del usuario.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugMessageEvent2 : IUnknown
@@ -44,7 +45,7 @@ IDebugMessageEvent2 : IUnknown
 |[GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md)|Obtiene el mensaje que se va a mostrar.|
 |[SetResponse](../../../extensibility/debugger/reference/idebugmessageevent2-setresponse.md)|Establece la respuesta, si existe, en el cuadro de mensaje.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  El DE utilizará esta interfaz si requiere una respuesta específica del usuario para un mensaje determinado. Por ejemplo, si el DE obtiene un mensaje "acceso denegado" después de un intento de adjuntar de forma remota a un programa, el DE envía este mensaje determinado a Visual Studio en un `IDebugMessageEvent2` evento con el estilo de cuadro de mensaje `MB_RETRYCANCEL` . Esto permite al usuario Reintentar o cancelar la operación de adjuntar.
 
  El DE especifica cómo debe controlarse este mensaje siguiendo las convenciones de la función de Win32 `MessageBox` (vea [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox) para obtener más información).
@@ -58,7 +59,7 @@ IDebugMessageEvent2 : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

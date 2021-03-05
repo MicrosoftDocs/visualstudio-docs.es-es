@@ -1,4 +1,5 @@
 ---
+description: Obtiene información extendida para la propiedad.
 title: 'IDebugProperty2:: GetExtendedInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1bb9fe21b1dc004d5a124a1146e6f7610fbe8699
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 004c7d545dbaaa20016fd94febe999420305fc7a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916052"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171504"
 ---
 # <a name="idebugproperty2getextendedinfo"></a>IDebugProperty2::GetExtendedInfo
 Obtiene información extendida para la propiedad.
@@ -51,12 +52,12 @@ enuncia Devuelve un `VARIANT` (C++) o un objeto (C#) que se puede utilizar para 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve el código de error. Devuelve `S_GETEXTENDEDINFO_NO_EXTENDEDINFO` si no hay información extendida para recuperar.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Este método existe con el fin de recuperar información que no se presta para recuperarse llamando al método [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) .
 
  Los siguientes GUID se reconocen normalmente por este método (los valores GUID se especifican para C#, ya que el nombre no está disponible en ningún ensamblado). Se pueden crear GUID adicionales para uso interno.
 
-|Nombre|GUID|Descripción|
+|nombre|GUID|Descripción|
 |----------|----------|-----------------|
 |guidDocument|{3f98de84-fee9-11d0-b47f-00a0244a1dd2}|Devuelve una `IUnknown` interfaz al documento. Normalmente, la interfaz [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) se puede obtener desde esta `IUnknown` interfaz.|
 |guidCodeContext|{e2fc65e-56ce-11d1-b528-00aax004a8797}|Devuelve una `IUnknown` interfaz al contexto del documento. Normalmente, la interfaz [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) se puede obtener desde esta `IUnknown` interfaz.|
@@ -64,7 +65,7 @@ enuncia Devuelve un `VARIANT` (C++) o un objeto (C#) que se puede utilizar para 
 |guidExtendedInfoSlot|{6df235ad-82c6-4292-9c97-7389770bc42f}|Devuelve un número de 32 bits que representa el número de ranura deseado si esta propiedad representa una dirección local de código administrado.|
 |guidExtendedInfoSignature|{b5fb6d46-f805-417f-96a3-8ba737073ffd}|Devuelve una cadena que contiene la firma de la variable asociada al objeto de propiedad.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
 - [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

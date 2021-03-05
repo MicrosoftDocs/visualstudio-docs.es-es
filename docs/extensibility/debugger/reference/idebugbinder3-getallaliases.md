@@ -1,4 +1,5 @@
 ---
+description: Este método recupera una lista de alias del programa.
 title: 'IDebugBinder3:: GetAllAliases | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ea8de97a82959b1135866988aeeeb14cf464e8b1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 16a9d41280a9ff97072390a0cd2e687ee24e1d83
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925078"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102174052"
 ---
 # <a name="idebugbinder3getallaliases"></a>IDebugBinder3::GetAllAliases
 Este método recupera una lista de alias del programa.
@@ -56,5 +57,5 @@ enuncia Devuelve el número de alias obtenidos.
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

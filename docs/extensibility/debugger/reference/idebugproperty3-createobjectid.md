@@ -1,4 +1,5 @@
 ---
+description: Crea un identificador único para esta propiedad para asegurarse de que es único entre todas las demás propiedades.
 title: 'IDebugProperty3:: CreateObjectID | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a9d555d7b0480d910a5cb88397db5bfd7e734fd1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9e82e11d83c77131e47d815529813484d2869cdc
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896128"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171444"
 ---
 # <a name="idebugproperty3createobjectid"></a>IDebugProperty3::CreateObjectID
 Crea un identificador único para esta propiedad para asegurarse de que es único entre todas las demás propiedades.
@@ -40,7 +41,7 @@ int CreateObjectID();
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Se llama a este método cuando el administrador de depuración de la sesión desea asegurarse de que esta propiedad se identifica de forma única entre todas las demás propiedades. El motor DE depuración (DE) admite este método a menos que las propiedades a las que se ocupan ya se identifiquen de forma única. Si DE no admite este método, devuelve `E_NOTIMPL` .
 
  Los IDENTIFICADOres únicos creados con `CreateObjectID` se destruyen cuando se llama al método [DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md) ; esto también indica el final de la necesidad de identificar de forma única esta propiedad.
@@ -48,6 +49,6 @@ int CreateObjectID();
 > [!NOTE]
 > No hay ningún método para recuperar este identificador único, por lo que el DE puede hacer todo lo que desee para los identificadores únicos cuando `CreateObjectID` se llama al método.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
 - [DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md)

@@ -1,4 +1,5 @@
 ---
+description: Obtiene la resolución del punto de interrupción que describe este punto de interrupción.
 title: 'IDebugBoundBreakpoint2:: GetBreakpointResolution | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 51912fce3bf98502be7ae05f815fce60e595e89c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: aa5f5e9aabbf96bc0dffb13e99b404c906384324
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887346"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102173730"
 ---
 # <a name="idebugboundbreakpoint2getbreakpointresolution"></a>IDebugBoundBreakpoint2::GetBreakpointResolution
 Obtiene la resolución del punto de interrupción que describe este punto de interrupción.
@@ -51,7 +52,7 @@ enuncia Devuelve la interfaz [IDebugBreakpointResolution2](../../../extensibilit
 ## <a name="return-value"></a>Valor devuelto
 Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error. Devuelve `E_BP_DELETED` si el estado del objeto de punto de interrupción enlazado se establece en `BPS_DELETED` (parte de la enumeración [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) ).
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Llame al método [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) para determinar si la resolución del punto de interrupción es para el código o los datos.
 
 ## <a name="example"></a>Ejemplo
@@ -88,7 +89,7 @@ HRESULT CBoundBreakpoint::GetBreakpointResolution(
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 - [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)
 - [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)

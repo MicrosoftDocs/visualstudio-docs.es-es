@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f090729cdd0d08d39cf97cab9c3899f0b77c80eb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 285d624debed6dc498e3d274af2839137b5094d1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900475"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171284"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Cómo: Publicar una aplicación WPF con estilos visuales habilitados
 
@@ -110,9 +110,9 @@ Los estilos visuales permiten cambiar el aspecto de los controles comunes en fun
 
 ## <a name="embed-the-manifest-file-into-the-executable-file-of-the-published-solution"></a>Incrustar el archivo de manifiesto en el archivo ejecutable de la solución publicada
 
-1. Abra el **Símbolo del sistema de Visual Studio**.
+1. Abra **símbolo del sistema para desarrolladores para Visual Studio**.
 
-    Para obtener más información sobre cómo abrir el **símbolo del sistema de Visual Studio**, vea [símbolos del sistema](/dotnet/framework/tools/developer-command-prompt-for-vs).
+    Para obtener más información sobre cómo abrir Símbolo del sistema para desarrolladores para Visual Studio, consulte [símbolo del sistema para desarrolladores y Developer PowerShell](../ide/reference/command-prompt-powershell.md).
 
    > [!NOTE]
    > Los pasos restantes realizan las suposiciones siguientes sobre la solución:
@@ -177,9 +177,9 @@ Los estilos visuales permiten cambiar el aspecto de los controles comunes en fun
 
    Después de realizar estos pasos, puede mover los archivos publicados a la ubicación desde la que desea que los usuarios finales instalen la aplicación. Si tiene intención de actualizar la solución con frecuencia, puede mover estos comandos a un script y ejecutar este cada vez que publique una nueva versión.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
--[Solucionar errores específicos en implementaciones de ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
+- [Solucionar problemas de errores específicos de las implementaciones ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
 - [Información general sobre los estilos visuales](/windows/desktop/Controls/visual-styles-overview)
 - [Habilitar los estilos visuales](/windows/desktop/Controls/cookbook-overview)
-- [Símbolos del sistema](/dotnet/framework/tools/developer-command-prompt-for-vs)
+- [Símbolo del sistema para desarrolladores y Developer PowerShell](../ide/reference/command-prompt-powershell.md)
