@@ -1,4 +1,5 @@
 ---
+description: Establece o cambia el número de pasos asociado a este punto de interrupción enlazado.
 title: 'IDebugBoundBreakpoint2:: SetPassCount | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8f02d74b1c826b9e9ef7fa7406ca9a61d19b7311
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ccefd1e3b120ac52801a1163ea8bda814626a0b9
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951308"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167495"
 ---
 # <a name="idebugboundbreakpoint2setpasscount"></a>IDebugBoundBreakpoint2::SetPassCount
 Establece o cambia el número de pasos asociado a este punto de interrupción enlazado.
@@ -47,12 +48,12 @@ de Estructura [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passco
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error. Devuelve `E_BP_DELETED` si el estado del objeto de punto de interrupción enlazado se establece en `BPS_DELETED` (parte de la enumeración [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) ).
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  El número de pasos determina cuándo se activa el punto de interrupción. El número de llamadas o el paso actual se puede obtener llamando al método [GetHitCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-gethitcount.md) .
 
  Se pierde cualquier recuento de pasos que se asoció previamente con este punto de interrupción.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 - [GetHitCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-gethitcount.md)
 - [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)

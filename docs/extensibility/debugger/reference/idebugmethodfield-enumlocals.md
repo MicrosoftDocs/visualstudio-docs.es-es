@@ -1,4 +1,5 @@
 ---
+description: Crea un enumerador para las variables locales seleccionadas del método.
 title: 'IDebugMethodField:: EnumLocals | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 98d6d7c4d9f1df0c7c4346792d841de574859619
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d99b6e4b3cf30cccd4a2785f3712b34d9471bdd8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861158"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166338"
 ---
 # <a name="idebugmethodfieldenumlocals"></a>IDebugMethodField::EnumLocals
 Crea un enumerador para las variables locales seleccionadas del método.
@@ -51,7 +52,7 @@ enuncia Devuelve un objeto [IEnumDebugFields](../../../extensibility/debugger/re
 ## <a name="return-value"></a>Valor devuelto
 Si es correcto, Devuelve S_OK o devuelve S_FALSE si no hay variables locales. De lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Solo se enumeran las variables definidas dentro del bloque que contiene la dirección de depuración especificada. Si se necesitan todas las variables locales, incluidas las variables locales generadas por el compilador, llame al método [EnumAllLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumalllocals.md) .
 
 Un método puede contener varios contextos de ámbito o bloques. Por ejemplo, el siguiente método inventado contiene tres ámbitos, los dos bloques internos y el propio cuerpo del método.
@@ -76,7 +77,7 @@ public void func(int index)
 
 El objeto [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) representa el `func` propio método. La llamada al `EnumLocals` método con un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) establecido en la `Inner Scope 1` Dirección devuelve una enumeración que contiene la `temp1` variable, por ejemplo.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)
 - [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

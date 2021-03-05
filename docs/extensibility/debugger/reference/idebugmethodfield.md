@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz describe un método.
 title: IDebugMethodField | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95f79062c4ca2452d6ed271660841fccb8adfca3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 05a90252241dd51e1c567847891cf681c88d8fba
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941819"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166312"
 ---
 # <a name="idebugmethodfield"></a>IDebugMethodField
 Esta interfaz describe un método.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugMethodField : IDebugContainerField
@@ -48,7 +49,7 @@ IDebugMethodField : IDebugContainerField
 |[GetGlobalContainer](../../../extensibility/debugger/reference/idebugmethodfield-getglobalcontainer.md)|Obtiene el contenedor global del método.|
 |[EnumArguments](../../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md)|Crea un enumerador para el tipo de cada argumento necesario para llamar al método.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Un método puede contener parámetros y variables locales.
 
 ## <a name="requirements"></a>Requisitos
@@ -58,7 +59,7 @@ IDebugMethodField : IDebugContainerField
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces de proveedor de símbolos](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

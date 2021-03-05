@@ -1,4 +1,5 @@
 ---
+description: Desasocia el depurador de este proceso desasociando todos los programas del proceso.
 title: IDebugProcess2::D Etach | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6418a7f628eef4e00ea0555c07122555eb6d600c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5775ee9ffc3fa3c4151df999b64ba1160da6f7c3
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874092"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166286"
 ---
 # <a name="idebugprocess2detach"></a>IDebugProcess2::Detach
 Desasocia el depurador de este proceso desasociando todos los programas del proceso.
@@ -40,8 +41,8 @@ int Detach();
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Todos los programas y el proceso continúan ejecutándose, pero ya no forman parte de la sesión de depuración. Una vez completada la operación de desasociación, no se enviarán más eventos de depuración para este proceso (y sus programas).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

@@ -1,4 +1,5 @@
 ---
+description: Notifica al paquete de depuración que el texto se ha reemplazado en el documento.
 title: 'IDebugDocumentTextEvents2:: onReplaceText | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 407bdffbe3a9fd60699692e2c2977159a3724bc9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 14b90f0ca28447e9e987767026165b0ff615f88c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99919951"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167274"
 ---
 # <a name="idebugdocumenttextevents2onreplacetext"></a>IDebugDocumentTextEvents2::onReplaceText
 Notifica al paquete de depuración que el texto se ha reemplazado en el documento.
@@ -51,6 +52,6 @@ de Especifica el número de caracteres de texto que se reemplazaron.
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)
 - [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

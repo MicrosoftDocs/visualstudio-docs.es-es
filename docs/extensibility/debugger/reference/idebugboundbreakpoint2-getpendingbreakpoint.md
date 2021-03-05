@@ -1,4 +1,5 @@
 ---
+description: Obtiene el punto de interrupción pendiente en el que se creó el punto de interrupción enlazado especificado.
 title: 'IDebugBoundBreakpoint2:: GetPendingBreakpoint | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 717081905d55a4df50601bbbfc7336265cef60d5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 18b6ab7f9c520511d2abe57e3864e71bc7534b4c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927163"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167586"
 ---
 # <a name="idebugboundbreakpoint2getpendingbreakpoint"></a>IDebugBoundBreakpoint2::GetPendingBreakpoint
 Obtiene el punto de interrupción pendiente en el que se creó el punto de interrupción enlazado especificado.
@@ -47,7 +48,7 @@ enuncia Devuelve el objeto [IDebugPendingBreakpoint2](../../../extensibility/deb
 ## <a name="return-value"></a>Valor devuelto
 Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Un punto de interrupción pendiente puede considerarse como una colección de toda la información necesaria para enlazar un punto de interrupción al código que se puede aplicar a uno o varios programas.
 
 ## <a name="example"></a>Ejemplo
@@ -84,6 +85,6 @@ HRESULT CBoundBreakpoint::GetPendingBreakpoint(
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

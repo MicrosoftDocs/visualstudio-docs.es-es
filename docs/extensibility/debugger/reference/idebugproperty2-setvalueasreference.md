@@ -1,4 +1,5 @@
 ---
+description: Establece el valor de esta propiedad en el valor de la referencia especificada.
 title: 'IDebugProperty2:: SetValueAsReference | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b2ed6cbf32d807734714f25453e33fe8bdd7fac0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b5b9529a4e4cd56a2b354eaa7f847db4d9d82be1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961799"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166754"
 ---
 # <a name="idebugproperty2setvalueasreference"></a>IDebugProperty2::SetValueAsReference
 Establece el valor de esta propiedad en el valor de la referencia especificada.
@@ -68,6 +69,6 @@ de Cuánto tiempo se debe llevar a cabo para establecer el valor, en milisegundo
 |`E_SETVALUE_VALUE_IS_READONLY`|El valor es de solo lectura y no se puede establecer.|
 |`E_NOTIMPL`|El método no está implementado.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

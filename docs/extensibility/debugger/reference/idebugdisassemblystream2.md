@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz representa una secuencia de instrucciones.
 title: IDebugDisassemblyStream2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d561c8eaa9f7b4fc08f71c241fd052fd366ca80d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 760d77ced3cc07da2dd02c21cf3ed0200df14231
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944653"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166572"
 ---
 # <a name="idebugdisassemblystream2"></a>IDebugDisassemblyStream2
 Esta interfaz representa una secuencia de instrucciones.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugDisassemblyStream2 : IUnknown
@@ -48,7 +49,7 @@ IDebugDisassemblyStream2 : IUnknown
 |[GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)|Obtiene el ámbito de esta secuencia de desensamblado.|
 |[GetSize (](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md)|Obtiene el tamaño de esta secuencia de desensamblado.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  La secuencia de desensamblado se puede crear para representar todo el espacio de direcciones o simplemente una función o un módulo dentro del espacio. Cada instrucción se representa mediante una estructura [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) devuelta por una llamada al método [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) .
 
 ## <a name="requirements"></a>Requisitos
@@ -58,7 +59,7 @@ IDebugDisassemblyStream2 : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
 - [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)
 - [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)

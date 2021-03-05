@@ -1,4 +1,5 @@
 ---
+description: Obtiene el contenedor global del método.
 title: 'IDebugMethodField:: GetGlobalContainer | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 197490cde12e0c7dd9cee14d11c3ec2f0b165d86
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: eb20551d39f3e876a836ac42906ad9c50e3c6419
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936878"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166299"
 ---
 # <a name="idebugmethodfieldgetglobalcontainer"></a>IDebugMethodField::GetGlobalContainer
 Obtiene el contenedor global del método.
@@ -46,9 +47,9 @@ enuncia Devuelve un [IDebugClassField](../../../extensibility/debugger/reference
 ## <a name="return-value"></a>Valor devuelto
  Si se realiza correctamente, Devuelve S_OK; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  El objeto [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) devuelto representa todo el módulo y es un objeto artificial, es decir, el propio módulo no tiene una clase real, pero se puede representar mediante un `IDebugClassField` objeto, lo que permite enumerar y detectar los distintos elementos del módulo.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

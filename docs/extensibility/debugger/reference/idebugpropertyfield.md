@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz proporciona las funciones que permiten obtener y establecer una propiedad.
 title: IDebugPropertyField | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 303ff1820d0213766ec5ad186ce7b9a3483c0bfa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 097d73485773052afa1e9852293211084a225099
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909859"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167911"
 ---
 # <a name="idebugpropertyfield"></a>IDebugPropertyField
 Esta interfaz proporciona las funciones que permiten obtener y establecer una propiedad.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugPropertyField : IDebugContainerField
@@ -42,7 +43,7 @@ IDebugPropertyField : IDebugContainerField
 |[GetPropertyGetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md)|Obtiene el método que obtiene la propiedad.|
 |[GetPropertySetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertysetter.md)|Obtiene el método que establece la propiedad.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Una propiedad es un concepto de código administrado y representa un método que se trata como una variable. Las propiedades no existen en C++ no administrado.
 
 ## <a name="requirements"></a>Requisitos
@@ -52,6 +53,6 @@ IDebugPropertyField : IDebugContainerField
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces de proveedor de símbolos](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)

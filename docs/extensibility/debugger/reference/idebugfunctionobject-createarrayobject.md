@@ -1,4 +1,5 @@
 ---
+description: Crea un objeto de matriz.
 title: 'IDebugFunctionObject:: CreateArrayObject | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 44d60c2f0573bf60d827737b2a54ff16b49d610c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: aee0617364321e5a18f0ea83ef7f19f1388209df
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930008"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166494"
 ---
 # <a name="idebugfunctionobjectcreatearrayobject"></a>IDebugFunctionObject::CreateArrayObject
 Crea un objeto de matriz. Esta matriz puede contener valores primitivos o de instancia de objeto.
@@ -71,8 +72,8 @@ enuncia Devuelve un objeto [IDebugObject](../../../extensibility/debugger/refere
 ## <a name="return-value"></a>Valor devuelto
  Si se realiza correctamente, Devuelve S_OK; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Llame a este método para crear un objeto que represente un parámetro de matriz a la función representada por la interfaz [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

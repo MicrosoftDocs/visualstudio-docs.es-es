@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz calcula las referencias de las interfaces relacionadas con el programa a través de los límites del proceso.
 title: IDebugProviderProgramNode2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e11472c2c883705c36ab71a37b1af10eb1cb5b10
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a615c076fd34d7bc230efb0f36683b7167b66566
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909810"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167859"
 ---
 # <a name="idebugproviderprogramnode2"></a>IDebugProviderProgramNode2
 Esta interfaz calcula las referencias de las interfaces relacionadas con el programa a través de los límites del proceso.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugProviderProgramNode2 : IUnknown
@@ -41,7 +42,7 @@ IDebugProviderProgramNode2 : IUnknown
 |------------|-----------------|
 |[UnmarshalDebuggeeInterface](../../../extensibility/debugger/reference/idebugproviderprogramnode2-unmarshaldebuggeeinterface.md)|Obtiene una interfaz especificada a través de los límites del proceso.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Esta interfaz se implementa cuando el DE se ejecuta en un espacio de proceso independiente desde el programa que se está depurando: por ejemplo, cuando el DE se está ejecutando en el espacio de proceso de Visual Studio en lugar de en el espacio de proceso del programa que se está depurando.
 
 ## <a name="requirements"></a>Requisitos
@@ -51,6 +52,6 @@ IDebugProviderProgramNode2 : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

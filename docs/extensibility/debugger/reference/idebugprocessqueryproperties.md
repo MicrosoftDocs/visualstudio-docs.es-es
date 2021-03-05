@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz es una interfaz de extensión implementada por implementadores de IDebugProcess2.
 title: IDebugProcessQueryProperties | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,17 +14,17 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ae588724f19f9722244ce69f77b64fad07552f9c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8205b96723a1b48da46e6e19162c50139c9fe71d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938179"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166221"
 ---
 # <a name="idebugprocessqueryproperties"></a>IDebugProcessQueryProperties
 Esta interfaz es una interfaz de extensión implementada por implementadores de [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) . Permite al implementador obtener información sobre el entorno de proceso de depuración.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugProcessQueryProperties: IUnknown
@@ -40,7 +41,7 @@ IDebugProcessQueryProperties: IUnknown
 |[QueryProperty](../../../extensibility/debugger/reference/idebugprocessqueryproperties-queryproperty.md)|Consulta un valor de propiedad.|
 |[QueryProperties](../../../extensibility/debugger/reference/idebugprocessqueryproperties-queryproperties.md)|Consulta los valores de propiedad.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Rara vez se implementa esta interfaz.
 
 ## <a name="requirements"></a>Requisitos
@@ -50,6 +51,6 @@ IDebugProcessQueryProperties: IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

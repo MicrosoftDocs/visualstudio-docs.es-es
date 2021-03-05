@@ -1,4 +1,5 @@
 ---
+description: Obtiene la propiedad primaria de una propiedad.
 title: 'IDebugProperty2:: GetParent | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9855ff168152ed68117569aab939e62da990f81b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9ae5557734ab59a2e71a67404a50519d72ca1ec0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850976"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166832"
 ---
 # <a name="idebugproperty2getparent"></a>IDebugProperty2::GetParent
 Obtiene la propiedad primaria de una propiedad.
@@ -46,5 +47,5 @@ enuncia Devuelve un objeto [IDebugProperty2](../../../extensibility/debugger/ref
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve el código de error. Devuelve `S_GETPARENT_NO_PARENT` si no hay ningún primario.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

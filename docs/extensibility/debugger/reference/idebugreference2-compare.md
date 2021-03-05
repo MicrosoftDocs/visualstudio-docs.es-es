@@ -1,4 +1,5 @@
 ---
+description: Compara una referencia con otra.
 title: 'IDebugReference2:: Compare | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6cebc34bdd1515ad632a0165fcdc900999b383fd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ef006cba574e0cc5f51d2ec45eb6187b1076543a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909738"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166012"
 ---
 # <a name="idebugreference2compare"></a>IDebugReference2::Compare
 Compara una referencia con otra. Reservado para un uso futuro.
@@ -51,6 +52,6 @@ de Objeto [IDebugReference2](../../../extensibility/debugger/reference/idebugref
 ## <a name="return-value"></a>Valor devuelto
  Siempre devuelve `E_NOTIMPL`.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
 - [REFERENCE_COMPARE](../../../extensibility/debugger/reference/reference-compare.md)

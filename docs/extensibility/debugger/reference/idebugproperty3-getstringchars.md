@@ -1,4 +1,5 @@
 ---
+description: Recupera la cadena asociada a esta propiedad y la almacena en un búfer proporcionado por el usuario.
 title: 'IDebugProperty3:: GetStringChars | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8b188b386dea7279530e186073847e26915af63d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d3b220fa02809015d1fa699c5e9eb5edac8cf2f3
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99897286"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166689"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
 Recupera la cadena asociada a esta propiedad y la almacena en un búfer proporcionado por el usuario.
@@ -58,7 +59,7 @@ enuncia Donde se devuelve el número de caracteres almacenados realmente en el b
 ## <a name="return-value"></a>Valor devuelto
 Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 En C++, se debe tener cuidado para asegurarse de que el búfer tiene al menos `buflen` caracteres Unicode. Tenga en cuenta que un carácter Unicode tiene una longitud de 2 bytes.
 
 > [!NOTE]
@@ -87,7 +88,7 @@ CStringW RetrievePropertyString(IDebugProperty2 *pPropInfo)
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [GetStringCharLength](../../../extensibility/debugger/reference/idebugproperty3-getstringcharlength.md)
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
