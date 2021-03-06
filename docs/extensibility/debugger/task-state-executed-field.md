@@ -1,4 +1,5 @@
 ---
+description: La tarea se está ejecutando pero aún no se ha completado.
 title: TASK_STATE_EXECUTED campo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 551ac7af1e331f9c1e57b078be4924994ebe8a3c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6bdc6344c3257611664fc792658dcf6508e91bfd
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968559"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223295"
 ---
 # <a name="task_state_executed-field"></a>TASK_STATE_EXECUTED campo
 La tarea se está ejecutando pero aún no se ha completado.
@@ -35,5 +36,5 @@ La tarea se está ejecutando pero aún no se ha completado.
 ## <a name="remarks"></a>Observaciones
  Si el campo [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) contiene este valor, la <xref:System.Threading.Tasks.Task.Status%2A> propiedad devuelve <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Clase de tarea: miembros internos](../../extensibility/debugger/task-class-internal-members.md)

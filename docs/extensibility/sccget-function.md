@@ -1,4 +1,5 @@
 ---
+description: Esta función recupera una copia de uno o más archivos para ver y compilar, pero no para editar.
 title: Función SccGet | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50281ffdd233debd3c10672868e9debd4b1f395f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 799d51c607ce720502c269cf82fe5a857ec7a826
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965218"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220838"
 ---
 # <a name="sccget-function"></a>SccGet función)
 Esta función recupera una copia de uno o más archivos para ver y compilar, pero no para editar. En la mayoría de los sistemas, los archivos se etiquetan como de solo lectura.
@@ -63,7 +64,7 @@ de Opciones específicas del complemento de control de código fuente.
 ## <a name="return-value"></a>Valor devuelto
  Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:
 
-|Value|Descripción|
+|Valor|Descripción|
 |-----------|-----------------|
 |SCC_OK|Operación Get correcta.|
 |SCC_E_FILENOTCONTROLLED|El archivo no está bajo control de código fuente.|
@@ -75,7 +76,7 @@ de Opciones específicas del complemento de control de código fuente.
 |SCC_I_OPERATIONCANCELED|Operación cancelada antes de la finalización.|
 |SCC_E_NOTAUTHORIZED|El usuario no está autorizado para realizar esta operación.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Se llama a esta función con un recuento y una matriz de nombres de los archivos que se van a recuperar. Si el IDE pasa la marca `SCC_GET_ALL` , esto significa que los elementos de `lpFileNames` no son archivos sino directorios y que se recuperarán todos los archivos bajo control de código fuente en los directorios especificados.
 
  La `SCC_GET_ALL` marca se puede combinar con la `SCC_GET_RECURSIVE` marca para recuperar también todos los archivos de los directorios especificados y todos los subdirectorios.
@@ -106,6 +107,6 @@ de Opciones específicas del complemento de control de código fuente.
 
     6. Ahora se puede proteger el archivo de *b.txt* actualizado.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Funciones de la API del complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)
 - [Marcadores usado por comandos específicos](../extensibility/bitflags-used-by-specific-commands.md)

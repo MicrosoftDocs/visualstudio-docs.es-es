@@ -1,4 +1,5 @@
 ---
+description: Dada una lista de archivos locales, esta función determina qué archivos son diferentes de las versiones correspondientes en la base de datos de control de código fuente.
 title: Función SccEnumChangedFiles | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e871f244082374bcf24ea49062cdcefd6e08d888
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9349172ac60f1e02f82327424cdbc3a3b1d4f865
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943002"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221540"
 ---
 # <a name="sccenumchangedfiles-function"></a>SccEnumChangedFiles función)
 Dada una lista de archivos locales, esta función determina qué archivos son diferentes de las versiones correspondientes en la base de datos de control de código fuente.
@@ -58,10 +59,10 @@ de Matriz de nombres de archivo local que se va a comprobar.
 ## <a name="return-value"></a>Valor devuelto
  Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:
 
-|Value|Descripción|
+|Valor|Descripción|
 |-----------|-----------------|
 |SCC_OK|Operación completada correctamente.|
 |SCC_UNSPECIFIEDERROR|Error genérico.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Funciones de la API del complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)

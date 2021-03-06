@@ -1,4 +1,5 @@
 ---
+description: Describe un módulo determinado (DLL, EXE o Assembly).
 title: MODULE_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a0fba00357fcb328000b904d3977bf03e5bc3885
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7d3fd390ca5491aa9dd3e97a0d820c8e02fd0147
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888178"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222359"
 ---
 # <a name="module_info"></a>MODULE_INFO
 Describe un módulo determinado (DLL, EXE o Assembly).
@@ -98,7 +99,7 @@ public struct MODULE_INFO {
  `m_dwModuleFlags`\
  Combinación de marcas de la enumeración [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) que describe el módulo.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Esta estructura se pasa al método [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) en el que se rellena.
 
  Esta estructura corresponde a cada módulo que se muestra en la ventana **módulos** .
@@ -110,7 +111,7 @@ public struct MODULE_INFO {
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)
 - [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md)

@@ -1,4 +1,5 @@
 ---
+description: El elemento friendlyName del espacio de nombres vstov4 almacena el nombre que aparece en la lista de programas instalados.
 title: '&lt;&gt;elemento friendlyName (desarrollo de Office en Visual Studio)'
 titleSuffix: ''
 ms.custom: seodec18
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c04a7a90f32051cc211fece4f27f1f46f8fb92f4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: adcf46a2c232176026181283549c0c59fc713603
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939271"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223451"
 ---
 # <a name="ltfriendlynamegt-element-office-development-in-visual-studio"></a>&lt;&gt;elemento friendlyName (desarrollo de Office en Visual Studio)
   El elemento `friendlyName` del espacio de nombres `vstov4` almacena el nombre que aparece en la lista de programas instalados.

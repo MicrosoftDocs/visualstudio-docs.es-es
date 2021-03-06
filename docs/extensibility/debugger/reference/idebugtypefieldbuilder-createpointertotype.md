@@ -1,4 +1,5 @@
 ---
+description: Crea un puntero al tipo especificado.
 title: 'IDebugTypeFieldBuilder:: CreatePointerToType | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ee3beb4bd79c438430ddfc2aac0fc0a5894404b9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b5cc642ae4d9d4030abcf32c1e51360c8cb4a84f
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940194"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223152"
 ---
 # <a name="idebugtypefieldbuildercreatepointertotype"></a>IDebugTypeFieldBuilder::CreatePointerToType
 Crea un puntero al tipo especificado.
@@ -50,5 +51,5 @@ enuncia Devuelve el puntero representado por un nuevo objeto **IDebugField** .
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugTypeFieldBuilder](../../../extensibility/debugger/reference/idebugtypefieldbuilder.md)

@@ -1,4 +1,5 @@
 ---
+description: Selecciona la opción de mayúsculas y minúsculas para los nombres coincidentes.
 title: NAME_MATCH | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c20c98ef423ca9bc94b7a1e0e175280d77a7b9b5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d6c3818318ea65cb2f5262ac4ec6dd9042d6f8c5
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956248"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222242"
 ---
 # <a name="name_match"></a>NAME_MATCH
 Selecciona la opción de mayúsculas y minúsculas para los nombres coincidentes.
@@ -43,7 +44,7 @@ public enum NameMatchOptions {
 }
 ```
 
-## <a name="fields"></a>Campos
+## <a name="fields"></a>Fields
  `nmNone`\
  No se especifican opciones.
 
@@ -53,7 +54,7 @@ public enum NameMatchOptions {
  `nmCaseInsensitive`\
  Indica que los nombres que se van a comparar no distinguen mayúsculas de minúsculas.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Se pasa como argumento a los métodos siguientes:
 
 - [GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)

@@ -1,4 +1,5 @@
 ---
+description: El motor DE depuración (DE) envía esta interfaz al administrador de depuración de la sesión (SDM) cuando un subproceso se ha ejecutado hasta su finalización.
 title: IDebugThreadDestroyEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d8c349ab867fda76ffbade0c92aa31489321061
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 48390b220a1398e712af494a6d0f21024f659f49
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888191"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223126"
 ---
 # <a name="idebugthreaddestroyevent2"></a>IDebugThreadDestroyEvent2
 El motor DE depuración (DE) envía esta interfaz al administrador de depuración de la sesión (SDM) cuando un subproceso se ha ejecutado hasta su finalización.
@@ -41,7 +42,7 @@ IDebugThreadDestroyEvent2 : IUnknown
 |------------|-----------------|
 |[GetExitCode](../../../extensibility/debugger/reference/idebugthreaddestroyevent2-getexitcode.md)|Obtiene el código de salida del subproceso.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Visual Studio usa este evento para actualizar la ventana **subprocesos** .
 
 ## <a name="requirements"></a>Requisitos
@@ -51,7 +52,7 @@ IDebugThreadDestroyEvent2 : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)

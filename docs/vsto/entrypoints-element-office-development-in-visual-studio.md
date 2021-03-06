@@ -1,4 +1,5 @@
 ---
+description: El elemento entryPoints del espacio de nombres vstav3 contiene todos los elementos entryPoint asociados a una solución de Office.
 title: '&lt;&gt;elemento entryPoints (desarrollo de Office en Visual Studio)'
 titleSuffix: ''
 ms.custom: seodec18
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0cd5b49183bc4754e894caf898f6ca6a0c0e5440
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 481c67302c84ce08f60c571eb17084b96c0322bd
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910459"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223178"
 ---
 # <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;&gt;elemento entryPoints (desarrollo de Office en Visual Studio)
   El elemento `entryPoints` del espacio de nombres `vstav3` contiene todos los elementos `entryPoint` asociados a una solución de Office.
@@ -49,7 +50,7 @@ ms.locfileid: "99910459"
  `entryPoints` tiene los siguientes elementos.
 
 ### <a name="entrypoint"></a>entryPoint
- Necesario. El rol del `entryPoint` elemento en el `vstav3` espacio de nombres se define en [&#60;elemento EntryPoint&#62; &#40;el desarrollo de Office en Visual Studio&#41;](../vsto/entrypoint-element-office-development-in-visual-studio.md).
+ Obligatorio. El rol del `entryPoint` elemento en el `vstav3` espacio de nombres se define en [&#60;elemento EntryPoint&#62; &#40;el desarrollo de Office en Visual Studio&#41;](../vsto/entrypoint-element-office-development-in-visual-studio.md).
 
 ## <a name="document-level-customization-example"></a>Ejemplo de personalización de nivel de documento
 

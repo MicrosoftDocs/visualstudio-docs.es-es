@@ -1,4 +1,5 @@
 ---
+description: Especifica el tipo de un objeto del evaluador de expresiones.
 title: OBJECT_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ad51e8db72cba874d35f66c9759fb970ffff2716
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3add4d46a258eb7e6c107f8d2eb16f7cd84ba919
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911714"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222164"
 ---
 # <a name="object_type"></a>Object_Type
 Especifica el tipo de un objeto del evaluador de expresiones.
@@ -68,7 +69,7 @@ public enum enum_OBJECT_TYPE {
 };
 ```
 
-## <a name="fields"></a>Campos
+## <a name="fields"></a>Fields
  `OBJECT_TYPE_BOOLEAN`\
  Indica que el objeto es un valor booleano.
 
@@ -114,7 +115,7 @@ public enum enum_OBJECT_TYPE {
  `OBJECT_TYPE_CLASS`\
  Indica que el objeto es una clase.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Se pasa como argumento a los métodos [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) y [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md) .
 
 ## <a name="requirements"></a>Requisitos

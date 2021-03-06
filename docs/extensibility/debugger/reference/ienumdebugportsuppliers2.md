@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz enumera los proveedores de puertos.
 title: IEnumDebugPortSuppliers2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: edff2cad101a6a6f0f19a4b384b8f2398b98b2e4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 893135291be3126055fa139dacaf3cc12141d8f4
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883745"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224491"
 ---
 # <a name="ienumdebugportsuppliers2"></a>IEnumDebugPortSuppliers2
 Esta interfaz enumera los proveedores de puertos.
@@ -45,7 +46,7 @@ IEnumDebugPortSuppliers2 : IUnknown
 |[Clonar](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-clone.md)|Crea un enumerador que contiene el mismo estado de enumeración que el enumerador actual.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-getcount.md)|Obtiene el número de proveedores de puertos en un enumerador.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Por lo general, un motor de depuración no necesita obtener esta interfaz.
 
 ## <a name="requirements"></a>Requisitos
@@ -55,6 +56,6 @@ IEnumDebugPortSuppliers2 : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
 - [EnumPortSuppliers](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md)

@@ -1,4 +1,5 @@
 ---
+description: Esta función muestra las diferencias entre el directorio local actual en el disco del cliente y el proyecto correspondiente bajo control de código fuente.
 title: Función SccDirDiff | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b7f045669a0d4b7e4e206c6ad8e85db55edc4ef
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 98a843c061941765404397186af74ab71923a9da
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929217"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221605"
 ---
 # <a name="sccdirdiff-function"></a>SccDirDiff función)
 Esta función muestra las diferencias entre el directorio local actual en el disco del cliente y el proyecto correspondiente bajo control de código fuente.
@@ -58,7 +59,7 @@ de Opciones específicas del complemento de control de código fuente.
 ## <a name="return-value"></a>Valor devuelto
  Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:
 
-|Value|Descripción|
+|Valor|Descripción|
 |-----------|-----------------|
 |SCC_OK|El directorio del disco es el mismo que el del proyecto en el control de código fuente.|
 |SCC_I_FILESDIFFER|El directorio del disco es diferente del proyecto en el control de código fuente.|
@@ -69,7 +70,7 @@ de Opciones específicas del complemento de control de código fuente.
 |SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Error no específico.|
 |SCC_E_FILENOTEXIST|No se encontró el directorio local.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Esta función se usa para indicar al complemento de control de código fuente que muestre al usuario una lista de cambios en un directorio especificado. El complemento abre su propia ventana, en el formato que elija, para mostrar las diferencias entre el directorio del usuario en el disco y el proyecto correspondiente bajo control de versiones.
 
  Si un complemento admite la comparación de directorios, debe admitir la comparación de directorios en función del nombre de archivo, incluso si no se admiten las opciones de "comparación rápida".
@@ -85,5 +86,5 @@ de Opciones específicas del complemento de control de código fuente.
 > [!NOTE]
 > Esta función utiliza las mismas marcas de comando que [SccDiff](../extensibility/sccdiff-function.md). Sin embargo, un complemento de control de código fuente puede optar por no admitir la operación "comparación rápida" para los directorios.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Funciones de la API del complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)

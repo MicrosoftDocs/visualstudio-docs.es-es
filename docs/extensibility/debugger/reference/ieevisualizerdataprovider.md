@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz proporciona la capacidad de cambiar el valor de un objeto a través de un visualizador de tipos.
 title: IEEVisualizerDataProvider | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 726ae6c0f56f177a6baa6f463e843378fdc0acea
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9c2bea2a99b259ac255a4244501ee246fd83e8b5
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890830"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222892"
 ---
 # <a name="ieevisualizerdataprovider"></a>IEEVisualizerDataProvider
 > [!IMPORTANT]
@@ -49,7 +50,7 @@ IEEVisualizerDataProvider : IUnknown
 |[GetObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getobjectforvisualizer.md)|Obtiene un objeto existente para este visualizador (no se realiza ninguna evaluación).|
 |[SetObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-setobjectforvisualizer.md)|Actualiza el objeto para este visualizador, con lo que se cambia el valor que presenta el visualizador.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  El servicio visualizador (tal como se representa mediante la interfaz [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) y devuelto por [CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)) mantiene una referencia al objeto que implementa la `IEEVisualizerDataProvider` interfaz. Como resultado, la `IEEVisualizerDataProvider` interfaz no debe implementarse en el mismo objeto que implementa [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) si ese objeto mantiene una referencia al `IEEVisualizerService` objeto: se producen una referencia circular y se produce un interbloqueo cuando se destruyen los objetos. El enfoque recomendado consiste en implementar `IEEVisualizerDataProvider` en un objeto independiente al que el `IDebugProperty2` objeto delegue sin llamar a `IUnknown::AddRef` en él.
 
 ## <a name="requirements"></a>Requisitos
@@ -59,7 +60,7 @@ IEEVisualizerDataProvider : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces de evaluación de expresiones](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
 - [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)

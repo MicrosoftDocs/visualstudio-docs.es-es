@@ -1,4 +1,5 @@
 ---
+description: Esta estructura representa un parámetro de un método o una función.
 title: METADATA_ADDRESS_PARAM | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dbb6e709ab1b6ee92ad9a27ed3061642665c7f39
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3317981def12a72cf98dad850d5509bd3e64520a
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938726"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222385"
 ---
 # <a name="metadata_address_param"></a>METADATA_ADDRESS_PARAM
 Esta estructura representa un parámetro de un método o una función.
@@ -53,7 +54,7 @@ public struct METADATA_ADDRESS_PARAM {
  `dwIndex`\
  Índice del parámetro en una lista de parámetros.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Esta estructura forma parte de la Unión de la estructura [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) cuando el `dwKind` campo de la `DEBUG_ADDRESS_UNION` estructura se establece en `ADDRESS_KIND_PARAM` (un valor de la enumeración [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) ).
 
 ## <a name="requirements"></a>Requisitos
@@ -63,7 +64,7 @@ public struct METADATA_ADDRESS_PARAM {
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)
 - [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

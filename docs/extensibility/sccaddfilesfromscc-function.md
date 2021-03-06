@@ -1,4 +1,5 @@
 ---
+description: Esta función agrega una lista de archivos del control de código fuente al proyecto actualmente abierto.
 title: Función SccAddFilesFromSCC | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c230d1dae4b6ff9552a8ff464d3128eac9be1482
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 27b695b2777aa32f77d49ced7b74436ce870df80
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926851"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220981"
 ---
 # <a name="sccaddfilesfromscc-function"></a>SccAddFilesFromSCC función)
 Esta función agrega una lista de archivos del control de código fuente al proyecto actualmente abierto.
@@ -78,7 +79,7 @@ de Comentario que se va a aplicar a cada uno de los archivos que se van a agrega
 ## <a name="return-value"></a>Valor devuelto
  Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:
 
-|Value|Descripción|
+|Valor|Descripción|
 |-----------|-----------------|
 |SCC_E_PROJNOTOPEN|El proyecto no está abierto.|
 |SCC_E_OPNOTPERFORMED|La conexión no está en el mismo proyecto que especifica `lpAuxProjPath.`|
@@ -86,5 +87,5 @@ de Comentario que se va a aplicar a cada uno de los archivos que se van a agrega
 |SCC_E_NONSPECIFICERROR|Error desconocido.|
 |SCC_I_RELOADFILE|Es necesario volver a cargar un archivo o proyecto.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Funciones de la API del complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)

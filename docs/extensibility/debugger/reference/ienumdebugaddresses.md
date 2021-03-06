@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz representa una colección de objetos que implementan la interfaz IDebugAddress.
 title: IEnumDebugAddresses | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9b4b95d805833ffd8b8041292cd18e5db8df9b3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ea9e4115c1664e1dcd05041f7ece056b5de01dae
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875801"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222645"
 ---
 # <a name="ienumdebugaddresses"></a>IEnumDebugAddresses
 Esta interfaz representa una colección de objetos que implementan la interfaz [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) .
@@ -45,7 +46,7 @@ IEnumDebugAdresses : IUnknown
 |[Clonar](../../../extensibility/debugger/reference/ienumdebugaddresses-clone.md)|Recupera una copia de la enumeración actual.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugaddresses-getcount.md)|Recupera el número de entradas de la enumeración.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Esta interfaz se utiliza normalmente por el motor de depuración para ayudar a determinar la dirección adecuada que se debe proporcionar al evaluador de expresiones.
 
 ## <a name="requirements"></a>Requisitos
@@ -55,7 +56,7 @@ IEnumDebugAdresses : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces de proveedor de símbolos](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)
 - [GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md)

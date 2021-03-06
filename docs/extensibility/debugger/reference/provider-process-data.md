@@ -1,4 +1,5 @@
 ---
+description: Esta estructura proporciona información sobre los procesos que se ejecutan en un equipo.
 title: PROVIDER_PROCESS_DATA | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5845ce7f512a24d341f73afa9f9905339dda87cb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f49ef1c2990fe578738356cbe5db19cbc1c159ab
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99922970"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221995"
 ---
 # <a name="provider_process_data"></a>PROVIDER_PROCESS_DATA
 Esta estructura proporciona información sobre los procesos que se ejecutan en un equipo.
@@ -53,7 +54,7 @@ public struct PROVIDER_PROCESS_DATA {
  `fIsDebuggerPresent`\
  Distinto de cero ( `TRUE` ) si el [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] depurador se está ejecutando, cero ( `FALSE` ) si no lo está.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Esta estructura se pasa al método [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) donde se rellena.
 
 ## <a name="requirements"></a>Requisitos
@@ -63,7 +64,7 @@ public struct PROVIDER_PROCESS_DATA {
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md)
 - [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md)

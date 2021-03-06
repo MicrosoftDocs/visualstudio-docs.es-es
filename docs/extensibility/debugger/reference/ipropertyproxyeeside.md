@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz proporciona métodos para ver los datos en el objeto asociado.
 title: IPropertyProxyEESide | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0331365716c8399c1b2a565fc8046482df5d80f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 80a295ad68341cfa4675d36b22d5de042078a0a3
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938907"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222613"
 ---
 # <a name="ipropertyproxyeeside"></a>IPropertyProxyEESide
 Esta interfaz proporciona métodos para ver los datos en el objeto asociado. Esta interfaz forma parte de la compatibilidad con los visualizadores de tipo.
@@ -46,7 +47,7 @@ IPropertyProxyEESide : IUnknown
 |[InPlaceUpdateObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-inplaceupdateobject.md)|Crea una referencia a un almacenamiento de datos existente.|
 |[ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md)|Recupera información sobre un ensamblado específico en el contexto del ensamblado que contiene este objeto.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Un visualizador de tipos usa esta interfaz para tener acceso a los valores asociados al objeto del que forma parte esta interfaz. Se obtiene acceso a los datos a través de la interfaz [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) , que proporciona una vista de solo lectura de los datos.
 
 ## <a name="requirements"></a>Requisitos
@@ -56,7 +57,7 @@ IPropertyProxyEESide : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
 - [Visualizador de tipo y visor personalizado](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)
 - [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)

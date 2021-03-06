@@ -1,4 +1,5 @@
 ---
+description: Restablece la enumeración de puertos en el primer elemento.
 title: 'IEnumDebugPorts2:: RESET | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f257ae62f08f7afdfae91a56570cb8a12a3d8fff
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e19f16ff5cba901141e93ee67816bfaf96596f97
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956924"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224517"
 ---
 # <a name="ienumdebugports2reset"></a>IEnumDebugPorts2::Reset
 Restablece la enumeración al primer elemento.
@@ -40,8 +41,8 @@ int Reset();
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Después de llamar a este método, la siguiente llamada al método [siguiente](../../../extensibility/debugger/reference/ienumdebugports2-next.md) devuelve el primer elemento de la enumeración.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)

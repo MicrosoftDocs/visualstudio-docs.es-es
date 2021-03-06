@@ -1,4 +1,5 @@
 ---
+description: Especifica qué tipo de información se va a recuperar para un equipo determinado.
 title: MACHINE_INFO_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 70d289315219fd6e49f528a5ec95d560191b5cc4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bb07f679027c37ebc74343ba17051a7e7980c1c7
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962072"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222567"
 ---
 # <a name="machine_info_fields"></a>MACHINE_INFO_FIELDS
 Especifica qué tipo de información se va a recuperar para un equipo determinado.
@@ -44,7 +45,7 @@ public enum enum_MACHINE_INFO_FIELDS {
 };
 ```
 
-## <a name="fields"></a>Campos
+## <a name="fields"></a>Fields
  `MCIF_NAME`\
  Inicializar/usar el `bstrName` campo en la estructura.
 
@@ -54,7 +55,7 @@ public enum enum_MACHINE_INFO_FIELDS {
  `MIF_ALL`\
  Inicialice o utilice todos los campos de la estructura.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Estos valores se pasan al método [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) para indicar qué miembros de la estructura de [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) se van a inicializar.
 
  También se usa en el `Fields` miembro de la `MACHINE_INFO` estructura para indicar qué campos se usan y son válidos.

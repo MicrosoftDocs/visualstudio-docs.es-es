@@ -1,4 +1,5 @@
 ---
+description: La tarea se completó debido a una excepción no controlada.
 title: TASK_STATE_FAULTED campo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 139893c7bb993180fd35aec1e02559f317ef8156
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a5a8113f6145706d2863a4f0060a8627952eb0b3
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968533"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223191"
 ---
 # <a name="task_state_faulted-field"></a>TASK_STATE_FAULTED campo
 La tarea se completó debido a una excepción no controlada.
@@ -35,5 +36,5 @@ La tarea se completó debido a una excepción no controlada.
 ## <a name="remarks"></a>Observaciones
  Si el campo [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) contiene este valor, la <xref:System.Threading.Tasks.Task.Status%2A> propiedad devuelve <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Clase de tarea: miembros internos](../../extensibility/debugger/task-class-internal-members.md)

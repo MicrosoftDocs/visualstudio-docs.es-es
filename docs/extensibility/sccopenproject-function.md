@@ -1,4 +1,5 @@
 ---
+description: Esta función abre un proyecto de control de código fuente existente o crea uno nuevo.
 title: Función SccOpenProject | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ebc78c73c37a5db3c1808cc3bb4b6715e85bcebe
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ff0aa402f3c3ba264524d6d4082c4a9fbf57c8ad
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836948"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221553"
 ---
 # <a name="sccopenproject-function"></a>SccOpenProject (Función)
 Esta función abre un proyecto de control de código fuente existente o crea uno nuevo.
@@ -78,7 +79,7 @@ de Indica si es necesario crear un nuevo proyecto si el proyecto es desconocido 
 ## <a name="return-value"></a>Valor devuelto
  Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:
 
-|Value|Descripción|
+|Valor|Descripción|
 |-----------|-----------------|
 |SCC_OK|Éxito al abrir el proyecto.|
 |SCC_E_INITIALIZEFAILED|No se pudo inicializar el proyecto.|
@@ -91,7 +92,7 @@ de Indica si es necesario crear un nuevo proyecto si el proyecto es desconocido 
 |SCC_E_ACCESSFAILURE|Hubo un problema al obtener acceso al sistema de control de código fuente, probablemente debido a problemas de red o de contención. Se recomienda un reintento.|
 |SCC_E_NONSPECFICERROR|Un error no específico; no se inicializó el sistema de control de código fuente.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  El IDE puede pasar un nombre de usuario ( `lpUser` ) o simplemente pasar un puntero a una cadena vacía. Si hay un nombre de usuario, el complemento de control de código fuente debe usarlo como valor predeterminado. Sin embargo, si no se ha pasado ningún nombre, o si se ha producido un error en el inicio de sesión con el nombre especificado, el complemento debería solicitar al usuario que inicie sesión y devolverá el nombre válido en `lpUser` cuando reciba un inicio de sesión válido `.` porque el complemento puede cambiar la cadena de nombre de usuario, el IDE siempre asignará un búfer de tamaño ( `SCC_USER_LEN` + 1 o SCC_USER_SIZE, que
 
 > [!NOTE]
@@ -114,7 +115,7 @@ de Indica si es necesario crear un nuevo proyecto si el proyecto es desconocido 
 > [!NOTE]
 > El `SCC_CAP_REENTRANT` bit se presentó en la versión 1,1 de la API del complemento de control de código fuente. No se establece o se omite en la versión 1,0, y se supone que todos los complementos de control de código fuente de la versión 1,0 son nonreentrant.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Funciones de API de complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)
 - [SccCloseProject](../extensibility/scccloseproject-function.md)
 - [SccGetProjPath](../extensibility/sccgetprojpath-function.md)

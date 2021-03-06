@@ -1,4 +1,5 @@
 ---
+description: Esta estructura especifica diversos tipos de información sobre el tipo de un campo.
 title: TYPE_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: eeb4a306e7b357c59f8d75a91e2c21c50f1ed16b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0e6b37fbc4d2d812bfa10d8f05455050bb5a239d
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880091"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223425"
 ---
 # <a name="type_info"></a>TYPE_INFO
 Esta estructura especifica diversos tipos de información sobre el tipo de un campo.
@@ -68,7 +69,7 @@ public struct TYPE_INFO {
  `unionmember`\
  [Solo C#] Calcular las referencias de este en el tipo de estructura adecuado basado en `dwKind` .
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Esta estructura se pasa al método [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) donde se rellena. El modo en que se interpreta el contenido de la estructura se basa en el `dwKind` campo.
 
 > [!NOTE]
@@ -113,7 +114,7 @@ namespace MyPackage
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)
 - [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)

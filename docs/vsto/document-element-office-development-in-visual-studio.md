@@ -1,4 +1,5 @@
 ---
+description: El elemento Document del espacio de nombres vstov4 almacena información específica de la personalización para las personalizaciones de nivel de documento.
 title: '&lt;Document &gt; (elemento, desarrollo de Office en Visual Studio)'
 titleSuffix: ''
 ms.custom: seodec18
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e92c17d71b1c0959cb1918ce6fbad0e2cd44d5ec
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3563169bd9b567cd974248bf4185cb9bc8a7b022
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949836"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221046"
 ---
 # <a name="ltdocumentgt-element-office-development-in-visual-studio"></a>&lt;Document &gt; (elemento, desarrollo de Office en Visual Studio)
   El `document` elemento del `vstov4` espacio de nombres almacena información específica de la personalización para las personalizaciones de nivel de documento.
@@ -37,7 +38,7 @@ ms.locfileid: "99949836"
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|`solutionId`|Necesario. GUID que usa el Visual Studio Tools para Office Runtime para identificar de forma única una solución de nivel de documento. Este valor se almacena como _AssemblyLocation propiedad de documento personalizada. Para obtener más información, vea [información general sobre las propiedades personalizadas del documento](../vsto/custom-document-properties-overview.md).|
+|`solutionId`|Obligatorio. GUID que usa el Visual Studio Tools para Office Runtime para identificar de forma única una solución de nivel de documento. Este valor se almacena como _AssemblyLocation propiedad de documento personalizada. Para obtener más información, vea [información general sobre las propiedades personalizadas del documento](../vsto/custom-document-properties-overview.md).|
 
  `document` no tiene elementos secundarios.
 

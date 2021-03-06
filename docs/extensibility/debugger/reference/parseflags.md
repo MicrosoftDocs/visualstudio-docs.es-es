@@ -1,4 +1,5 @@
 ---
+description: Especifica cómo analizar una expresión.
 title: PARSEFLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 78890f088646842435198fa839c0f88cba5483b9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 192e4de399540ce189bbf52cbb0f615b2b9bc855
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880195"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222151"
 ---
 # <a name="parseflags"></a>PARSEFLAGS
 Especifica cómo analizar una expresión.
@@ -44,7 +45,7 @@ public enum enum_PARSEFLAGS {
 };
 ```
 
-## <a name="fields"></a>Campos
+## <a name="fields"></a>Fields
  `PARSE_EXPRESSION`\
  Indica que la expresión no es una instrucción.
 
@@ -54,7 +55,7 @@ public enum enum_PARSEFLAGS {
  `PARSE_DESIGN_TIME_EXPR_EVAL`\
  Indica que se está analizando la expresión durante el tiempo de diseño (es decir, cuando un diseñador está abierto).
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Se pasa como parámetro a los métodos [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) y [Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) .
 
 ## <a name="requirements"></a>Requisitos

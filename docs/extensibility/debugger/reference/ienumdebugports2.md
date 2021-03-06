@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz enumera los puertos de un proveedor de equipo o puerto.
 title: IEnumDebugPorts2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 638b17490ba875f8ecab7bf6dcdff7fef161b66e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4b93aa34870d05b9a4ec0a9a0aa92f681735dfe3
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967805"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224465"
 ---
 # <a name="ienumdebugports2"></a>IEnumDebugPorts2
 Esta interfaz enumera los puertos de un proveedor de equipo o puerto.
@@ -45,7 +46,7 @@ IEnumDebugPorts2 : IUnknown
 |[Clonar](../../../extensibility/debugger/reference/ienumdebugports2-clone.md)|Crea un enumerador que contiene el mismo estado de enumeración que el enumerador actual.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugports2-getcount.md)|Obtiene el número de puertos en un enumerador.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Visual Studio usa esta interfaz para ayudar a rellenar una lista de puertos que se usan para asociar a procesos.
 
  Normalmente, un motor de depuración no usa esta interfaz.
@@ -57,7 +58,7 @@ IEnumDebugPorts2 : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
 - [EnumPorts](../../../extensibility/debugger/reference/idebugcoreserver2-enumports.md)
 - [EnumPorts](../../../extensibility/debugger/reference/idebugportsupplier2-enumports.md)

@@ -1,4 +1,5 @@
 ---
+description: Dada una lista de nombres de archivo completos, esta función los desprotege en la unidad local.
 title: Función SccCheckout | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4112190e145242da591fa3d8e4db7d054bd07466
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5ed6b494957374244d98f0cca59a063e5a6648c4
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943145"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221632"
 ---
 # <a name="scccheckout-function"></a>SccCheckout función)
 Dada una lista de nombres de archivo completos, esta función los desprotege en la unidad local. El comentario se aplica a todos los archivos que se van a desproteger. El argumento comment puede ser una `null` cadena.
@@ -68,7 +69,7 @@ de Opciones específicas del complemento de control de código fuente.
 ## <a name="return-value"></a>Valor devuelto
  Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:
 
-|Value|Descripción|
+|Valor|Descripción|
 |-----------|-----------------|
 |SCC_OK|La desprotección fue correcta.|
 |SCC_E_FILENOTCONTROLLED|El archivo seleccionado no está bajo el control de código fuente.|
@@ -80,6 +81,6 @@ de Opciones específicas del complemento de control de código fuente.
 |SCC_E_FILEOUTEXCLUSIVE|Otro usuario ha realizado una desprotección exclusiva en este archivo.|
 |SCC_I_OPERATIONCANCELED|La operación se canceló antes de completarse.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Funciones de la API del complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)
 - [Marcadores usado por comandos específicos](../extensibility/bitflags-used-by-specific-commands.md)
