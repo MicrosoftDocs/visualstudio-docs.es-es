@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz enumera una lista de módulos.
 title: IEnumDebugModules2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dfcd594ab8764cedb8cbe2ea312675f884ae2338
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 33853804078d5f32aba6fda6dac409cf2a24de0a
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957158"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224764"
 ---
 # <a name="ienumdebugmodules2"></a>IEnumDebugModules2
 Esta interfaz enumera una lista de módulos.
@@ -45,7 +46,7 @@ IEnumDebugModules2 : IUnknown
 |[Clonar](../../../extensibility/debugger/reference/ienumdebugmodules2-clone.md)|Crea un enumerador que contiene el mismo estado de enumeración que el enumerador actual.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugmodules2-getcount.md)|Obtiene el número de módulos.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Visual Studio usa esta interfaz principalmente para actualizar la ventana **módulos** .
 
  En lo que respecta a la depuración en Visual Studio, un programa es una secuencia lógica de instrucciones de código que puede cruzar los límites del módulo, por lo tanto, la necesidad de una lista de módulos para una sola interfaz [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) . El primer módulo de la lista contiene normalmente el punto de entrada inicial para el programa asociado.
@@ -57,7 +58,7 @@ IEnumDebugModules2 : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md)

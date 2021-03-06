@@ -1,4 +1,5 @@
 ---
+description: Actualiza los datos del objeto con el objeto de datos especificado y devuelve un nuevo objeto de datos que representa los datos nuevos del objeto.
 title: 'IPropertyProxyEESide:: InPlaceUpdateObject | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 89f8185734c8c2ee15728328a510236bbbc50a21
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2119db579863bea2ad0b9fa5834996d658308549
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895978"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225596"
 ---
 # <a name="ipropertyproxyeesideinplaceupdateobject"></a>IPropertyProxyEESide::InPlaceUpdateObject
 Actualiza los datos del objeto con el objeto de datos especificado y devuelve un nuevo objeto de datos que representa los datos nuevos del objeto.
@@ -51,14 +52,14 @@ enuncia Devuelve un nuevo `IEEDataStorage` objeto que contiene los datos reempla
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  En realidad, este método actualiza los datos del objeto. No es necesario que los datos del objeto [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) devuelto sean los mismos que los datos del objeto entrante `IEEDataStorage` , pero el objeto devuelto debe reflejar el valor actual de la propiedad.
 
  El objeto de datos de entrada no suele ser implementado por EE. Sin embargo, el objeto devuelto por este método siempre se implementa mediante el, que permite a EE implementar la `IEEDataStorage` interfaz en cualquier clase deseada.
 
  El método [CreateReplacementObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md) crea un objeto de datos basado en el objeto de datos de entrada, pero no afecta a los datos originales de la propiedad.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
 - [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)
 - [CreateReplacementObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md)

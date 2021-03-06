@@ -1,4 +1,5 @@
 ---
+description: Determina la ubicación de la referencia de ensamblado administrado especificada.
 title: 'IPropertyProxyEESide:: ResolveAssemblyRef | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fc14d3aff5116f7bfb18244f39d14ec2dbbd37f1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 687ca5922cc59322c37b7b391a9b5f40d52c14ad
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895965"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225583"
 ---
 # <a name="ipropertyproxyeesideresolveassemblyref"></a>IPropertyProxyEESide::ResolveAssemblyRef
 Determina la ubicación de la referencia de ensamblado administrado especificada.
@@ -66,10 +67,10 @@ enuncia Devuelve un valor de la enumeración [ASSEMBLYLOCRESOLUTION](../../../ex
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Normalmente, el evaluador de expresiones personalizadas no implementa este método.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
 - [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)
 - [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)

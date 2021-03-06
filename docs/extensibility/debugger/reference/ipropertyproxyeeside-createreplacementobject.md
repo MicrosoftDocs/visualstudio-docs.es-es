@@ -1,4 +1,5 @@
 ---
+description: Crea una copia de un objeto de datos específico del evaluador de expresiones (EE).
 title: 'IPropertyProxyEESide:: CreateReplacementObject | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 30e2b8037059824bd514024e6fb86561406895c5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 341ca3d00a433c4bb36bc22ab2d598d7b454842a
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852835"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225713"
 ---
 # <a name="ipropertyproxyeesidecreatereplacementobject"></a>IPropertyProxyEESide::CreateReplacementObject
 Crea una copia de un objeto de datos específico del evaluador de expresiones (EE).
@@ -51,11 +52,11 @@ de Un objeto [IEEDataStorage](../../../extensibility/debugger/reference/ieedatas
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  A este método se le asigna un objeto [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) que representa una matriz de bytes. Este objeto de datos de entrada no suele ser implementado por EE. Sin embargo, el objeto devuelto por este método siempre se implementa mediante el, que permite a EE implementar la `IEEDataStorage` interfaz en cualquier clase deseada.
 
  Tenga en cuenta que los datos proporcionados por el objeto de entrada `IEEDataStorage` deben ser los mismos en el objeto de salida `IEEDataStorage` .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
 - [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)

@@ -1,4 +1,5 @@
 ---
+description: Este método obtiene un nuevo objeto para el visualizador.
 title: 'IEEVisualizerDataProvider:: GetNewObjectForVisualizer | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 98566507b3fdc3f519cc645991807c1d437bbcfe
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 07bc02adc9dc3e6675c7bfbbcafd21a350b3a94f
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890973"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102227299"
 ---
 # <a name="ieevisualizerdataprovidergetnewobjectforvisualizer"></a>IEEVisualizerDataProvider::GetNewObjectForVisualizer
 Este método obtiene un nuevo objeto para el visualizador. Este método creará siempre un nuevo objeto a partir del objeto existente.
@@ -46,9 +47,9 @@ enuncia El nuevo objeto.
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  `This method` vuelve a evaluar el objeto que representa actualmente y devuelve el resultado como un nuevo objeto. El objeto existente se actualizará como resultado de la evaluación.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

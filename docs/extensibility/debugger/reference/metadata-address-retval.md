@@ -1,4 +1,5 @@
 ---
+description: Esta estructura representa un valor devuelto de un método o una función.
 title: METADATA_ADDRESS_RETVAL | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ec357bcc21cb3f7cd8f4f9eaa8318c4b0deb1d42
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d727771128e161eed77bf78091c8e0dadcc20ee6
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961903"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225556"
 ---
 # <a name="metadata_address_retval"></a>METADATA_ADDRESS_RETVAL
 Esta estructura representa un valor devuelto de un método o una función.
@@ -58,7 +59,7 @@ public struct METADATA_ADDRESS_RETVAL {
  `rgSig`\
  Matriz de bytes que forman la firma del valor devuelto.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Esta estructura forma parte de la Unión de la estructura [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) cuando el `dwKind` campo de la `DEBUG_ADDRESS_UNION` estructura se establece en `ADDRESS_KIND_RETVAL` (un valor de la enumeración [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) ).
 
 ## <a name="requirements"></a>Requisitos
@@ -68,7 +69,7 @@ public struct METADATA_ADDRESS_RETVAL {
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)
 - [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

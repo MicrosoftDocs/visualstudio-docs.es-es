@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz representa una colección de objetos que implementan la interfaz IDebugField.
 title: IEnumDebugFields | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cce45c926700779906881bc4a4607b05f0732be3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ad912c7225cb1a8c3d6ca294a4031c19bcd47e9a
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956404"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226558"
 ---
 # <a name="ienumdebugfields"></a>IEnumDebugFields
 Esta interfaz representa una colección de objetos que implementan la interfaz [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) .
@@ -54,7 +55,7 @@ IEnumDebugFields : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces de proveedor de símbolos](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)

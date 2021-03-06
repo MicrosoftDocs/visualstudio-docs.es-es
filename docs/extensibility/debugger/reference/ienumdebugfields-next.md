@@ -1,4 +1,5 @@
 ---
+description: Este método devuelve el siguiente conjunto de elementos de la enumeración Fields.
 title: 'IEnumDebugFields:: Next | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 19d996f1a040cd07742f23f467e3f25bee1f04d4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cb60dcf991c1a3002612b6779ef179c1571f3244
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900034"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226662"
 ---
 # <a name="ienumdebugfieldsnext"></a>IEnumDebugFields::Next
 Este método devuelve el siguiente conjunto de elementos de la enumeración.
@@ -56,6 +57,6 @@ enuncia Devuelve el número de elementos realmente devueltos en `rgelt` .
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si se puede devolver menos que el número solicitado de elementos; de lo contrario, devuelve un código de error.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

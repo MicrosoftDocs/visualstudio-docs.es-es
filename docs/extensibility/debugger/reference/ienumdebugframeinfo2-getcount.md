@@ -1,4 +1,5 @@
 ---
+description: Devuelve el número de elementos de la enumeración FRAMEINFO.
 title: 'IEnumDebugFrameInfo2:: GetCount | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 04f57b59d72f996513a8be54e0f6b249e79a4fb0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7d6d0e7172f75a822d8a626aaa0445164b73a573
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956391"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226519"
 ---
 # <a name="ienumdebugframeinfo2getcount"></a>IEnumDebugFrameInfo2::GetCount
 Devuelve el número de elementos de la enumeración.
@@ -46,8 +47,8 @@ enuncia Devuelve el número de elementos de la enumeración.
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Este método no forma parte de la interfaz de enumeración com personalizada, que especifica que `Next` solo `Clone` `Skip` `Reset` se deben implementar los métodos,, y.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)

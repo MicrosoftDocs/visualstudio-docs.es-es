@@ -1,4 +1,5 @@
 ---
+description: Restablece la enumeración al primer elemento DEBUG_REFERENCE_INFO.
 title: 'IEnumDebugReferenceInfo2:: RESET | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4e1465d3007896e0361612c8bdc60a9f53282c25
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b2cdb977b66fb4be8dd6c378c77cfeefd5e19f18
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926929"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225817"
 ---
 # <a name="ienumdebugreferenceinfo2reset"></a>IEnumDebugReferenceInfo2::Reset
 Restablece la enumeración al primer elemento.
@@ -40,8 +41,8 @@ int Reset();
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Después de llamar a este método, la siguiente llamada al método [siguiente](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-next.md) devuelve el primer elemento de la enumeración.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)

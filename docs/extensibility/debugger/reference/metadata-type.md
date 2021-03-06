@@ -1,4 +1,5 @@
 ---
+description: Esta estructura especifica información sobre un tipo de campo tomado de los metadatos.
 title: METADATA_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d41716dcbc1aefba52f6507bb624973f36025af0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c8f0c8341213dfbe15dcf9a6f5a5fc421c0ebab3
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938737"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225492"
 ---
 # <a name="metadata_type"></a>METADATA_TYPE
 Esta estructura especifica información sobre un tipo de campo tomado de los metadatos.
@@ -55,7 +56,7 @@ public struct METADATA_TYPE {
 
  [C++] `_mdToken` es un `typedef` para un 32 bits `int` .
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Esta estructura aparece como parte de la Unión en la estructura [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) cuando el `dwKind` campo de la `TYPE_INFO` estructura se establece en `TYPE_KIND_METADATA` (un valor de la enumeración [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) ).
 
  El `tokClass` valor es un token de metadatos que identifica un tipo de forma única. Para obtener más información sobre cómo interpretar los bits superiores del identificador del token de metadatos, consulte la `CorTokenType` enumeración en el archivo CorHdr. h en el SDK de .NET Framework.
@@ -67,7 +68,7 @@ public struct METADATA_TYPE {
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)
 - [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)

@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz enumera los subprocesos que se ejecutan en la sesión de depuración actual.
 title: IEnumDebugThreads2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e3771545d4a5fe545382344d17ed5ea929999d1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3706b9ff004dbe283952dbc3740f8ec4bcb056b2
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852783"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225739"
 ---
 # <a name="ienumdebugthreads2"></a>IEnumDebugThreads2
 Esta interfaz enumera los subprocesos que se ejecutan en la sesión de depuración actual.
@@ -45,7 +46,7 @@ IEnumDebugThreads2 : IUnknown
 |[Clonar](../../../extensibility/debugger/reference/ienumdebugthreads2-clone.md)|Crea un enumerador que contiene el mismo estado de enumeración que el actual.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugthreads2-getcount.md)|Obtiene el número de subprocesos de un enumerador.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Normalmente, Visual Studio obtiene esta interfaz para actualizar la ventana **subprocesos** , así como para obtener el primer subproceso de la lista, con el fin de llamar a [Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md), [continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md)y [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md).
 
 ## <a name="requirements"></a>Requisitos
@@ -55,7 +56,7 @@ IEnumDebugThreads2 : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
 - [EnumThreads](../../../extensibility/debugger/reference/idebugprocess2-enumthreads.md)
 - [EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)

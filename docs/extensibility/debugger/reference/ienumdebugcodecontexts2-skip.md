@@ -1,4 +1,5 @@
 ---
+description: Omite el número especificado de elementos de la enumeración de contextos de código.
 title: 'IEnumDebugCodeContexts2:: Skip | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e6fecf3b8bf4b96834a19d6dc13ce63d7a72ea7a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e3d6dba22758860df17ea6ce16da8ae888b0829c
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929412"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224933"
 ---
 # <a name="ienumdebugcodecontexts2skip"></a>IEnumDebugCodeContexts2::Skip
 Omite el número de elementos especificado.
@@ -46,8 +47,8 @@ int Skip(
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si `celt` es mayor que el número de elementos restantes; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Si `celt` especifica un valor mayor que el número de elementos restantes, la enumeración se establece en el final y `S_FALSE` se devuelve.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)

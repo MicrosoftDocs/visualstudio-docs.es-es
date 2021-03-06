@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz proporciona una interfaz de proxy para ver y cambiar los datos de un objeto.
 title: IPropertyProxyProvider | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6082b06e6235a93b0e198d973b40efb728bd815
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3d8d92f6d616d86b82a9f4efa443f459a082256e
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962137"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225545"
 ---
 # <a name="ipropertyproxyprovider"></a>IPropertyProxyProvider
 Esta interfaz proporciona una interfaz de proxy para ver y cambiar los datos de un objeto.
@@ -41,7 +42,7 @@ IPropertyProxyProvider : IUnknown
 |------------|-----------------|
 |[GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)|Recupera una interfaz de proxy de propiedad para ver los datos de un objeto.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Aunque el EE implementa esta interfaz, [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md)controla normalmente la implementación de [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) . Vea [visualizar y ver datos](../../../extensibility/debugger/visualizing-and-viewing-data.md) para obtener más información sobre cómo obtener la interfaz IEEVisualizerService.
 
 ## <a name="requirements"></a>Requisitos
@@ -51,7 +52,7 @@ IPropertyProxyProvider : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
 - [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md)
 - [Visualizador de tipo y visor personalizado](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)

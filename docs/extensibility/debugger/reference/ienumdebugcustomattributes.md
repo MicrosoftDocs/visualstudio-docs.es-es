@@ -1,4 +1,5 @@
 ---
+description: Enumera los atributos personalizados.
 title: IEnumDebugCustomAttributes | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c3e4cfaf35c1fee655eedc49e8a3212c1355390
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bffa799ba14738daea480a1677f1b1a820e98767
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967480"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226844"
 ---
 # <a name="ienumdebugcustomattributes"></a>IEnumDebugCustomAttributes
 Enumera los atributos personalizados.
@@ -52,7 +53,7 @@ IEnumCustomAttributes : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces de proveedor de símbolos](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [EnumCustomAttributes](../../../extensibility/debugger/reference/idebugcustomattributequery2-enumcustomattributes.md)
 - [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

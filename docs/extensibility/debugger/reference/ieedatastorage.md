@@ -1,4 +1,5 @@
 ---
+description: Esta interfaz representa una matriz de bytes.
 title: IEEDataStorage | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbec27d262e43cb0fcdf8317725ad3c77a1817eb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9434138114f2b4b0615e20c1b556ff6387c715de
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966440"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102227338"
 ---
 # <a name="ieedatastorage"></a>IEEDataStorage
 Esta interfaz representa una matriz de bytes.
@@ -42,7 +43,7 @@ IEEDataStorage : IUnknown
 |[GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md)|Recupera el número especificado de bytes de datos en un búfer proporcionado.|
 |[GetSize (](../../../extensibility/debugger/reference/ieedatastorage-getsize.md)|Recupera el número de bytes de datos disponibles.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Un visualizador de tipos usa esta interfaz para tener acceso a los datos que mantiene un objeto concreto. Los datos se tratan como una matriz de bytes, lo que permite al visualizador de tipos manipularlo de la manera que sea necesario para presentarlo al usuario.
 
  Un visor personalizado también puede utilizar esta interfaz, si lo desea, aunque más normalmente, un visor personalizado usaría una interfaz personalizada, [GetMemoryBytes](../../../extensibility/debugger/reference/idebugproperty2-getmemorybytes.md) o [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) (para los datos orientados a cadenas).
@@ -54,7 +55,7 @@ IEEDataStorage : IUnknown
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
 - [Visualizador de tipo y visor personalizado](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)

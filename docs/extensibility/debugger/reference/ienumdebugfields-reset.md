@@ -1,4 +1,5 @@
 ---
+description: Este método restablece la enumeración de campos al primer elemento.
 title: 'IEnumDebugFields:: RESET | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1cbe3ecaf681a0fb88dab46b9c2dac2110b7beb4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fedc24c3f51a2a4cbdfae9464f13791f9d8ec1d1
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99919681"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226610"
 ---
 # <a name="ienumdebugfieldsreset"></a>IEnumDebugFields::Reset
 Este método restablece la enumeración al primer elemento.
@@ -36,14 +37,14 @@ int Reset();
 ```
 
 #### <a name="parameters"></a>Parámetros
- None
+ Ninguno
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Después de llamar a este método, la siguiente llamada a [Next](../../../extensibility/debugger/reference/ienumdebugfields-next.md) devuelve el primer elemento de la enumeración.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)
 - [Siguiente](../../../extensibility/debugger/reference/ienumdebugfields-next.md)

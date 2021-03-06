@@ -1,4 +1,5 @@
 ---
+description: Se usa para describir un módulo.
 title: MODULE_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 41201194ee76f92b4faa101c4811c35b44a0d890
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e671b3e578a78665a6a816582e0290119f77ea58
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961890"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225479"
 ---
 # <a name="module_flags"></a>MODULE_FLAGS
 Se usa para describir un módulo.
@@ -50,7 +51,7 @@ public enum enum_MODULE_FLAGS {
 };
 ```
 
-## <a name="fields"></a>Campos
+## <a name="fields"></a>Fields
  `MODULE_FLAG_NONE`\
  No especifica ningún módulo.
 
@@ -69,7 +70,7 @@ public enum enum_MODULE_FLAGS {
  `MODULE_FLAG_UNOPTIMIZED`\
  Especifica que el módulo no se ha optimizado. Este estado se refleja en la ventana **módulos** . Este es el estado predeterminado.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Se utiliza para el `m_dwModuleFlags` miembro de la estructura [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) .
 
  Estas marcas se pueden combinar con una operación bit a bit `OR` .

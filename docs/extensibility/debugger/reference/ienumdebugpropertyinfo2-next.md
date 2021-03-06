@@ -1,4 +1,5 @@
 ---
+description: Devuelve el siguiente conjunto de elementos DEBUG_PROPERTY_INFO de la enumeración.
 title: 'IEnumDebugPropertyInfo2:: Next | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d4ce9e9a434ac32d63199ae5af8524c6c9a752b4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d14d77ca07a73ee1981609624a7d93465252719d
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890739"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226012"
 ---
 # <a name="ienumdebugpropertyinfo2next"></a>IEnumDebugPropertyInfo2::Next
 Devuelve el conjunto de elementos siguiente de la enumeración.
@@ -56,6 +57,6 @@ enuncia Devuelve el número de elementos realmente devueltos en `rgelt` .
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si se puede devolver menos que el número solicitado de elementos; de lo contrario, devuelve un código de error.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)
 - [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)

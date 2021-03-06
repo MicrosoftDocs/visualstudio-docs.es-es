@@ -1,4 +1,5 @@
 ---
+description: Esta estructura se usa para establecer la información de JustMyCode para un módulo.
 title: JMC_CODE_SPEC | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e0ca5fd553d94fdf866424b4cd0dc2b2a5fdb094
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6c862a2897b45d89f95963ce7adfe2da8d4d350f
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962111"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225570"
 ---
 # <a name="jmc_code_spec"></a>JMC_CODE_SPEC
 Esta estructura se usa para establecer la información de JustMyCode para un módulo.
@@ -48,7 +49,7 @@ Es distinto de cero ( `TRUE` ) si el módulo se va a considerar código de usuar
 `bstrModuleName`\
 Nombre del módulo en cuestión.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Esta estructura se pasa como una lista de estas estructuras al método [SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md) .
 
 ## <a name="requirements"></a>Requisitos
@@ -58,6 +59,6 @@ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md)
