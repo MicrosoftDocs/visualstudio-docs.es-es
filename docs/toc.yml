@@ -1070,6 +1070,8 @@
       items:
         - name: Jerarquía de llamadas
           href: ide/reference/call-hierarchy.md
+        - name: Símbolo del sistema para desarrolladores y PowerShell para desarrolladores
+          href: ide/reference/command-prompt-powershell.md
         - name: Vista previa de cambios
           href: ide/preview-changes.md
         - name: 'Elegir elementos del Cuadro de herramientas, componentes de WPF'
