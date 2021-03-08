@@ -9,12 +9,12 @@ manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 56bfe2b00efc4af71ca562672ad01423778edecd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 294c99081668baa2ed19df00989ceac768979481
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943736"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683944"
 ---
 # <a name="walkthrough-test-driven-development-using-test-explorer"></a>Tutorial: Desarrollo controlado por pruebas con el Explorador de pruebas
 
@@ -26,7 +26,11 @@ En este tutorial se muestra cómo desarrollar un método probado en C# con el ma
 
 1. Cree un proyecto de **biblioteca de clases .NET Standard** en C#. Este proyecto contendrá el código que quiere probar. Asigne al proyecto el nombre **MyMath**.
 
-2. En la misma solución, agregue un nuevo **proyecto de prueba de MSTest (.NET Core)**. Asigne al proyecto de prueba el nombre **MathTests**.
+2. En la misma solución, agregue un nuevo proyecto de prueba MSTest.
+
+   A partir de la versión 16.9 de Visual Studio 2019, el nombre de la plantilla de proyecto MSTest cambió de **Proyecto de prueba de MSTest (.NET Core)** a **Proyecto de prueba unitaria**.
+
+   Asigne al proyecto de prueba el nombre **MathTests**.
 
    ![Nuevo código y proyectos de prueba](../test/media/test-driven-development-ide.png)
 

@@ -2,19 +2,19 @@
 title: Consejos para mejorar el rendimiento
 description: Descubra cómo puede optimizar ciertas características de Visual Studio que puede que no esté usando para mejorar el rendimiento.
 ms.custom: SEO-VS-2020
-ms.date: 12/14/2020
+ms.date: 03/02/2021
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e53a2e3b1a65e496b4ead3d3bca0e8b0254c39e0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5e2187426fbd2e8892d41672c1cf682ed0b93592
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873871"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683763"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Sugerencias y trucos de rendimiento de Visual Studio
 
@@ -142,6 +142,10 @@ Para más información sobre las consideraciones de rendimiento de .NET Compiler
 - **Quite cargas de trabajo**
 
     Puede usar el instalador de Visual Studio para quitar las cargas de trabajo que ya no se usen. Esta acción puede simplificar el costo de inicio y en tiempo de ejecución al omitir paquetes y ensamblados que ya no se necesitan.
+
+- **Agregue archivos sin seguimiento a .gitignore local**
+
+    Visual Studio ejecuta el comando Git `git status` con archivos sin seguimiento para proporcionar una experiencia perfecta cuando se agreguen nuevos archivos a un repositorio. Cuando hay un gran número de archivos sin seguimiento, `git status` puede consumir memoria adicional. Para omitir estos archivos y mejorar el rendimiento de `git status`, puede agregar estos archivos o carpetas al archivo .gitignore local. Para acceder al archivo, vaya a **Git** > **Configuración** > **Configuración de repositorios de Git**. A continuación, en la sección **Archivos de Git**, haga clic en **Agregar** para crear un archivo .gitignore o haga clic en **Editar** si ya tiene uno.
 
 ## <a name="force-a-garbage-collection"></a>Aplicación de recolección de elementos no utilizados
 

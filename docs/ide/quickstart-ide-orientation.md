@@ -3,19 +3,19 @@ title: 'Inicio rápido: Un paseo por el IDE de Visual Studio'
 description: Conozca algunas de las ventanas, menús y otras características de la interfaz de usuario del entorno de desarrollo integrado (IDE) de Visual Studio.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
-ms.date: 02/21/2019
+ms.date: 03/02/2021
 ms.topic: quickstart
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e0199319bc0c647f42e87d4003dd2fabe4544a0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 237b3384d6bec010a760c4bc193b9a95f33febeb
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945505"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683974"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Guía de inicio rápido: primer vistazo al IDE de Visual Studio
 
@@ -83,15 +83,25 @@ Para seguir examinando las características de Visual Studio, se va a crear un n
 
 1. En la ventana de inicio, elija **Crear un proyecto nuevo**.
 
-   Se abre un cuadro de diálogo de nombre **Crear un proyecto**. Aquí, puede buscar, filtrar y seleccionar una plantilla de proyecto. También muestra una lista de las plantillas de proyecto recientemente usadas.
+    :::image type="content" source="../get-started/media/vs-2019/start-window-create-new-project.png" alt-text="Captura de pantalla de la ventana &quot;Crear un nuevo proyecto&quot; en Visual Studio 2019.":::
 
-1. En el cuadro de búsqueda superior, escriba **consola** para filtrar la lista de tipos de proyecto a solo los que incluyen "consola" en el nombre. Para refinar los resultados de la búsqueda, elija **C#** (u otro lenguaje que prefiera) en el selector de **Lenguaje**.
+   La ventana **Crear un nuevo proyecto** se abre y muestra varias *plantillas* de proyecto. Una plantilla contiene los archivos básicos y la configuración necesarios para un tipo de proyecto concreto.
 
-   ![Cuadro de diálogo Nuevo proyecto de Visual Studio 2019](media/vs-2019/create-a-new-project.png)
+   Aquí, puede buscar, filtrar y seleccionar una plantilla de proyecto. También muestra una lista de las plantillas de proyecto recientemente usadas.
 
-1. Si seleccionó C#, Visual Basic o F# como lenguaje, seleccione la plantilla **Aplicación de consola (.NET Framework)** y, luego, elija **Siguiente**. (Si seleccionó otro lenguaje, elija cualquier plantilla. La interfaz de usuario que se muestra es similar para todos los lenguajes de programación).
+1. En el cuadro de búsqueda superior, escriba **consola** para filtrar la lista de tipos de proyecto a solo los que incluyen "consola" en el nombre. Para refinar los resultados de la búsqueda, elija **C#** (u otro lenguaje que prefiera) en la lista desplegable **Todos los lenguajes**.
 
-1. En la página **Configure su nuevo proyecto**, acepte el nombre y la ubicación predeterminados del proyecto y haga clic en **Crear**.
+    :::image type="content" source="media/vs-2019/create-new-project.png" alt-text="Captura de pantalla de la ventana &quot;Crear un nuevo proyecto&quot; en Visual Studio 2019, donde puede seleccionar la plantilla que desee.":::
+
+1. Si seleccionó C#, Visual Basic o F# como lenguaje, seleccione la plantilla **Aplicación de consola** y, luego, elija **Siguiente**. (Si seleccionó otro lenguaje, elija cualquier plantilla. La interfaz de usuario que se muestra es similar para todos los lenguajes de programación).
+
+1. En la ventana **Configure su nuevo proyecto**, acepte el nombre y la ubicación predeterminados del proyecto y haga clic en **Siguiente**.
+
+    :::image type="content" source="media/vs-2019/configure-new-project-console.png" alt-text="Captura de pantalla de la ventana &quot;Configure su nuevo proyecto&quot; en Visual Studio 2019, donde escribe el nombre del proyecto.":::
+
+1. En la ventana **información adicional**, compruebe que **.NET Core 3.1** aparece en el menú desplegable **Plataforma de destino** y luego haga clic en **Crear**.
+
+    :::image type="content" source="../get-started/media/vs-2019/create-project-additional-info.png" alt-text="Captura de pantalla de la ventana &quot;Información adicional&quot; en Visual Studio 2019, donde se selecciona la versión de .NET Core Framework que se desea.":::
 
 ::: moniker-end
 
@@ -129,7 +139,7 @@ En la **Lista de errores** se muestran los errores, las advertencias y los mensa
 
 ![Lista de errores en Visual Studio](media/quickstart-IDE-error-list.png)
 
-## <a name="output-window"></a>Ventana de salida
+## <a name="output-window"></a>Resultados (ventana)
 
 En la ventana **Resultados** se muestran los mensajes de resultados de la compilación del proyecto y del proveedor de control de código fuente.
 

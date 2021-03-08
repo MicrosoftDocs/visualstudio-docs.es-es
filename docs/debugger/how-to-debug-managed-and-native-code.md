@@ -15,12 +15,12 @@ manager: jmartens
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 4b1d250ed5306ce101fd7482b740ad57514e4f0a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4d001e89993b90f6e8b7b33f43a5c06a1ffd7cd1
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899425"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683325"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Tutorial: Depuración de C# y C++ en la misma sesión de depuración
 
@@ -126,9 +126,11 @@ Si tiene Visual Studio instalado, pero no las cargas de trabajo que necesita, se
 1. Abra Visual Studio y cree un nuevo proyecto.
 
     ::: moniker range=">=vs-2019"
-    Presione **Esc** para cerrar la ventana de inicio. Presione **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **consola**, elija **Plantillas** y, luego, **Aplicación de consola (.NET Core)** o **Aplicación de consola (.NET Framework)** para C#. En el cuadro de diálogo que se abre, elija **Crear**.
+    Presione **Esc** para cerrar la ventana de inicio. Presione **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **consola**, elija **Plantillas** y, luego, **Aplicación de consola** para .NET Core o **Aplicación de consola (.NET Framework)** para C#. En el cuadro de diálogo que aparece, elija **Siguiente**.
 
-    Luego, escriba un nombre como **Mixed_Mode_Calling_App** y haga clic en **Crear**.
+    A continuación, escriba un nombre como **Mixed_Mode_Calling_App** y haga clic en **Siguiente** o **Crear**, independientemente de la opción que esté disponible.
+
+    Para .NET Core, elija la plataforma de destino recomendada (.NET Core 3.1) o .NET 5 y luego elija **Crear**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     En la barra de menús superior, elija **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, en **Visual C#** , elija **Escritorio de Windows** y luego, en el panel central, **Aplicación de consola (.NET Framework)** o **Aplicación de consola (.NET Core)** .
@@ -136,7 +138,7 @@ Si tiene Visual Studio instalado, pero no las cargas de trabajo que necesita, se
     Luego, escriba un nombre como **Mixed_Mode_Calling_App** y haga clic en **Aceptar**.
     ::: moniker-end
 
-    Si no ve la plantilla de proyecto **Aplicación de consola**, vaya a **Herramientas** > **Obtener herramientas y características…** y se abrirá el instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de escritorio de .NET** y, luego, seleccione **Modificar**.
+    Si no ve la plantilla de proyecto correcta, vaya a **Herramientas** > **Obtener herramientas y características...** para abrir el Instalador de Visual Studio. Elija **Desarrollo multiplataforma de .NET Core** o la carga de trabajo de **Desarrollo de escritorio de .NET**, dependiendo de la plataforma de destino y, a continuación, elija **Modificar**.
 
     > [!NOTE]
     > También puede agregar el nuevo proyecto administrado a la solución existente de C++. Estamos creando el proyecto en una nueva solución para que la tarea de depuración en modo mixto sea más difícil.

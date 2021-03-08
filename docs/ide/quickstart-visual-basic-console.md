@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 24e34bbd72810932f385d53a25ca1670fa059c1f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 34b412d254d0775b57f2c9befaae71ce25c6ae75
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939934"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683859"
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Inicio rápido: Crear la primera aplicación de consola en Visual Studio con Visual Basic
 
@@ -47,7 +47,7 @@ En primer lugar, crearemos un proyecto de aplicación de Visual Basic. En el tip
 
 2. En la barra de menús superior, elija **Archivo** > **Nuevo** > **Proyecto**.
 
-3. En el panel de la izquierda del cuadro de diálogo **Nuevo proyecto**, expanda **Visual Basic** y seleccione **.NET Core**. En el panel central, elija **Aplicación de consola (.NET Core)**. Luego, asigne el nombre *HelloWorld* al proyecto.
+3. En el panel de la izquierda del cuadro de diálogo **Nuevo proyecto**, expanda **Visual Basic** y seleccione **.NET Core**. En el panel central, elija **Aplicación de consola (.NET Core)** . Luego, asigne el nombre *HelloWorld* al proyecto.
 
    ![Plantilla de proyecto Aplicación de consola (.NET Core) en el cuadro de diálogo Nuevo proyecto en el IDE de Visual Studio](../ide/media/new-project-vb-dotnetcore-helloworld-console-app.png)
 
@@ -57,7 +57,7 @@ En primer lugar, crearemos un proyecto de aplicación de Visual Basic. En el tip
 
      Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo multiplataforma de .NET Core** y, después, elija **Modificar**.
 
-     ![Carga de trabajo de desarrollo multiplataforma de .NET Core en el Instalador de Visual Studio](../ide/media/dot-net-core-xplat-dev-workload.png)
+     ![Carga de trabajo Desarrollo multiplataforma de .NET Core en el instalador de Visual Studio](../ide/media/dot-net-core-xplat-dev-workload.png)
 
 ::: moniker-end
 
@@ -72,32 +72,36 @@ En primer lugar, crearemos un proyecto de aplicación de Visual Basic. En el tip
 
    ![Visualización de la ventana "Crear un proyecto"](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. En el cuadro de búsqueda de la ventana **Crear un proyecto**, escriba *consola*. Seguidamente, elija **Visual Basic** en la lista de lenguajes y luego, **Windows** en la lista de plataformas. 
+1. En la ventana **Crear un nuevo proyecto**, elija **Visual Basic** en la lista Idioma. A continuación, seleccione **Windows** en la lista Plataforma y **Consola** en la lista Tipos de proyecto.
 
-   Después de aplicar los filtros de lenguaje y plataforma, elija la plantilla **Aplicación de consola (.NET Core)** y luego, **Siguiente**.
+   Después de aplicar los filtros de lenguaje, plataforma y tipo de proyecto, elija la plantilla **Aplicación de consola** y, luego, **Siguiente**.
 
-   ![Elija la plantilla Visual Basic para la Aplicación de consola (.NET Framework).](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-console-net-core-filtered.png)
+   :::image type="content" source="../get-started/visual-basic/media/vs-2019/vb-create-new-project-console-net-core.png" alt-text="Elección de la plantilla Visual Basic para Aplicación de consola":::
 
    > [!NOTE]
-   > Si no ve la plantilla **Aplicación de consola (.NET Core)**, puede instalarla desde la ventana **Crear un proyecto**. En el mensaje **¿No encuentra lo que busca?**, elija el vínculo **Instalar más herramientas y características**.
+   > Si no ve la plantilla **Aplicación de consola**, puede instalarla desde la ventana **Crear un nuevo proyecto**. En el mensaje **¿No encuentra lo que busca?** , elija el vínculo **Instalar más herramientas y características**.
    >
    > ![Vínculo "Instalar más herramientas y características" del mensaje "¿No encuentra lo que busca?" que aparece en la ventana "Crear proyecto"](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
    > 
    > Luego, en el Instalador de Visual Studio, elija la carga de trabajo **Desarrollo multiplataforma de .NET Core**.
    >
-   > ![Carga de trabajo de desarrollo multiplataforma de .NET Core en el Instalador de Visual Studio](../get-started/media/dot-net-core-xplat-dev-workload.png)
+   > ![Carga de trabajo Desarrollo multiplataforma de .NET Core en el instalador de Visual Studio](../get-started/media/dot-net-core-xplat-dev-workload.png)
    >
    > Después, elija el botón **Modificar** en el Instalador de Visual Studio. Es posible que se le pida que guarde su trabajo; si es así, hágalo. Seguidamente, elija **Continuar** para instalar la carga de trabajo. Luego, vuelva al paso 2 de este procedimiento "[Crear un proyecto](#create-a-project)".
 
-1. En la ventana **Configurar el nuevo proyecto**, escriba *WhatIsYourName* en el cuadro **Nombre del proyecto**. Luego, elija **Crear**.
+1. En la ventana **Configurar el nuevo proyecto**, escriba *WhatIsYourName* en el cuadro **Nombre del proyecto**. Después, elija **Siguiente**.
 
-   ![En la ventana "Configurar el nuevo proyecto", asigne al proyecto el nombre "WhatIsYourName".](../get-started/visual-basic/media/vs-2019/vb-name-your-project-whatname.png)
+   :::image type="content" source="../get-started/visual-basic/media/vs-2019/vb-name-your-project-whatname.png" alt-text="En la ventana &quot;Configurar el nuevo proyecto&quot;, asigne al proyecto el nombre &quot;WhatIsYourName&quot;.":::
+
+1. En la ventana **Información adicional**, **.NET Core 3.1** ya debe estar seleccionado para la plataforma de destino. Si no es así, seleccione **.NET Core 3.1**. Luego, elija **Crear**.
+
+   :::image type="content" source="../get-started/visual-basic/media/vs-2019/vb-target-framework.png" alt-text="En la ventana &quot;Información adicional&quot;, asegúrese de que está seleccionado .NET Core 3.1":::
 
    Visual Studio se abre en el nuevo proyecto.
 
 ::: moniker-end
 
-## <a name="create-the-application"></a>Creación de la aplicación
+## <a name="create-the-application"></a>Crear la aplicación
 
 Tras seleccionar la plantilla de proyecto de Visual Basic y asignar un nombre al proyecto, Visual Studio crea automáticamente una sencilla aplicación llamada "Hello World". Llama al método <xref:System.Console.WriteLine%2A> para mostrar la cadena literal "Hola mundo" en la ventana de la consola.
 
@@ -126,13 +130,13 @@ Vamos a agregar código para pausar la aplicación y solicitar una entrada de us
 
    De esta forma, el programa se compila en un lenguaje intermedio (IL) que se convierte en código binario mediante un compilador Just-In-Time (JIT).
 
-## <a name="run-the-application"></a>Ejecución de la aplicación
+## <a name="run-the-application"></a>Ejecutar la aplicación
 
 1. Haga clic en el botón **HelloWorld** de la barra de herramientas.
 
    ![Clic en el botón Hello World para ejecutar el programa desde la barra de herramientas](../ide/media/vb-console-hello-world-button.png)
 
-2. Presione cualquier tecla para cerrar la ventana de la consola.
+2. Presione cualquier tecla para cerrar la ventana de consola.
 
    ![Ventana de consola que muestra "Hello World" y "Press any key to continue"](../ide/media/vb-console-hello-world-press-any-key.png)
 

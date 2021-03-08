@@ -7,14 +7,14 @@ manager: jmartens
 ms.technology: vs-azure
 ms.devlang: dotnet
 ms.topic: how-to
-ms.date: 01/27/2020
+ms.date: 02/21/2021
 ms.author: ghogen
-ms.openlocfilehash: 2e23658cfde1154f5b4df7ae7dade71b1569e35c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f9a4f26227d2cd3bd065fab88ba294f7341ea4ed
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859650"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684320"
 ---
 # <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>Implementación de un contenedor de ASP.NET Core en Azure App Service mediante Visual Studio
 
@@ -49,9 +49,9 @@ Los siguientes pasos le guían en el proceso de creación de una aplicación ASP
 ::: moniker-end
 ::: moniker range=">= vs-2019"
 1. En la ventana de inicio de Visual Studio, seleccione **Crear un nuevo proyecto**.
-1. Seleccione **Aplicación web ASP.NET Core** y luego **Siguiente**.
-1. Asigne un nombre a la nueva aplicación (o use el predeterminado) y seleccione **Crear**.
-1. Seleccione **Aplicación web**.
+1. Elija **Aplicación web ASP.NET Core** y luego **Siguiente**.
+1. Asigne un nombre a la nueva aplicación (o use el predeterminado) y seleccione **Siguiente**.
+1. Elija la versión .NET que desee establecer como destino. Si no está seguro, elija la versión de compatibilidad a largo plazo (LTS).
 1. Decida si quiere o no compatibilidad de SSL mediante la casilla **Configure for HTTPS** (Configurar para HTTPS).
 1. Marque la casilla **Enable Docker Support** (Habilitar compatibilidad con Docker).
 1. Seleccione el tipo de contenedor y haga clic en **Crear**.
@@ -65,13 +65,13 @@ Los siguientes pasos le guían en el proceso de creación de una aplicación ASP
 1. En el cuadro de diálogo de destino de publicación, seleccione **App Service Linux** o **App Service**. Este es el sistema operativo que hospedará el servidor web.
 1. Puede publicar solo en App Service o en App Service y Azure Container Registry (ACR). Para publicar el contenedor en Azure Container Registry (ACR), seleccione **Create new App Service for containers** (Crear App Service para contenedores) y haga clic en **Publicar**.
 
-   ![Captura de pantalla del cuadro de diálogo de publicación](media/deploy-app-service/publish-app-service-linux.PNG)
+   ![Captura de pantalla del cuadro de diálogo de publicación](media/deploy-app-service/publish-app-service-linux-1.png)
 
    Para publicar solo en Azure App Service sin usar Azure Container Registry, seleccione **Crear nuevo** y haga clic en **Publicar**.
 
 1. Compruebe que ha iniciado sesión con la cuenta asociada a la suscripción de Azure y seleccione un nombre único, una suscripción, un grupo de recursos, un plan de hospedaje y un registro de contenedor (si procede) o acepte los valores predeterminados.
 
-   ![Captura de pantalla de la configuración de publicación](media/deploy-app-service/publish-app-service-linux2.png)
+   ![Captura de pantalla de la configuración de publicación](media/deploy-app-service/publish-app-service-linux-2.png)
 
 1. Seleccione **Create**. El contenedor se implementa en Azure en el grupo de recursos y el registro de contenedor seleccionados. Este proceso tarda un poco. Cuando haya finalizado, la pestaña **Publicar** muestra información sobre lo que se ha publicado, incluida la dirección URL del sitio.
 

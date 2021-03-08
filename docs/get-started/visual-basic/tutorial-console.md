@@ -2,7 +2,7 @@
 title: 'Tutorial: Introducción a Visual Basic'
 description: Aprenda a crear aplicaciones de consola de Visual Basic en Visual Studio mediante un procedimiento paso a paso.
 ms.custom: seodec18, get-started
-ms.date: 09/11/2019
+ms.date: 02/10/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: a08e955d8446ebcd376f81773b5996146241486e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 70782687b6220adf1c61c5b2bb6487d68fde70f4
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915028"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101682616"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Tutorial: Introducción a Visual Basic en Visual Studio
 
@@ -84,14 +84,14 @@ Si no ve la plantilla de proyecto **Aplicación de consola (.NET Core)** , puede
 
    ![Visualización de la ventana "Crear un proyecto"](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. En el cuadro de búsqueda de la ventana **Crear un proyecto**, escriba *consola*. Seguidamente, elija **Visual Basic** en la lista de lenguajes y luego, **Windows** en la lista de plataformas. 
+1. En la ventana **Crear un nuevo proyecto**, elija **Visual Basic** en la lista Idioma. A continuación, seleccione **Windows** en la lista Plataforma y **Consola** en la lista Tipos de proyecto.
 
-   Después de aplicar los filtros de lenguaje y plataforma, elija la plantilla **Aplicación de consola (.NET Core)** y luego, **Siguiente**.
+   Después de aplicar los filtros de lenguaje, plataforma y tipo de proyecto, elija la plantilla **Aplicación de consola** y, luego, **Siguiente**.
 
-   ![Elija la plantilla Visual Basic para la Aplicación de consola (.NET Framework).](./media/vs-2019/vb-create-new-project-search-console-net-core-filtered.png)
+   :::image type="content" source="./media/vs-2019/vb-create-new-project-console-net-core.png" alt-text="Elección de la plantilla Visual Basic para Aplicación de consola":::
 
    > [!NOTE]
-   > Si no ve la plantilla **Aplicación de consola (.NET Core)** , puede instalarla desde la ventana **Crear un proyecto**. En el mensaje **¿No encuentra lo que busca?** , elija el vínculo **Instalar más herramientas y características**.
+   > Si no ve la plantilla **Aplicación de consola**, puede instalarla desde la ventana **Crear un nuevo proyecto**. En el mensaje **¿No encuentra lo que busca?** , elija el vínculo **Instalar más herramientas y características**.
    >
    > ![Vínculo "Instalar más herramientas y características" del mensaje "¿No encuentra lo que busca?" que aparece en la ventana "Crear proyecto"](../../get-started/media/vs-2019/not-finding-what-looking-for.png) 
    > 
@@ -101,9 +101,13 @@ Si no ve la plantilla de proyecto **Aplicación de consola (.NET Core)** , puede
    >
    > Después, elija el botón **Modificar** en el Instalador de Visual Studio. Es posible que se le pida que guarde su trabajo; si es así, hágalo. Seguidamente, elija **Continuar** para instalar la carga de trabajo. Luego, vuelva al paso 2 de este procedimiento "[Crear un proyecto](#create-a-project)".
 
-1. En la ventana **Configurar el nuevo proyecto**, escriba *WhatIsYourName* en el cuadro **Nombre del proyecto**. Luego, elija **Crear**.
+1. En la ventana **Configurar el nuevo proyecto**, escriba *WhatIsYourName* en el cuadro **Nombre del proyecto**. Después, elija **Siguiente**.
 
-   ![En la ventana "Configurar el nuevo proyecto", asigne al proyecto el nombre "WhatIsYourName".](./media/vs-2019/vb-name-your-project-whatname.png)
+   :::image type="content" source="./media/vs-2019/vb-name-your-project-whatname.png" alt-text="En la ventana &quot;Configurar el nuevo proyecto&quot;, asigne al proyecto el nombre &quot;WhatIsYourName&quot;.":::
+
+1. En la ventana **Información adicional**, **.NET Core 3.1** ya debe estar seleccionado para la plataforma de destino. Si no es así, seleccione **.NET Core 3.1**. Luego, elija **Crear**.
+
+   :::image type="content" source="./media/vs-2019/vb-target-framework.png" alt-text="En la ventana &quot;Información adicional&quot;, asegúrese de que está seleccionado .NET Core 3.1":::
 
    Visual Studio se abre en el nuevo proyecto.
 
@@ -208,11 +212,13 @@ Vamos a crear una aplicación que le solicita el nombre y, después, lo muestra 
 
 1. En la ventana de inicio, elija **Crear un proyecto nuevo**. 
 
-1. En el cuadro de búsqueda de la ventana **Crear un proyecto**, escriba *consola*. Seguidamente, elija **Visual Basic** en la lista de lenguajes y luego, **Windows** en la lista de plataformas. 
+1. En la ventana **Crear un nuevo proyecto**, elija **Visual Basic** en la lista Idioma. A continuación, seleccione **Windows** en la lista Plataforma y **Consola** en la lista Tipos de proyecto.
 
-1. Después de aplicar los filtros de lenguaje y plataforma, elija la plantilla **Aplicación de consola (.NET Core)** y luego, **Siguiente**.
+1. Después de aplicar los filtros de lenguaje, plataforma y tipo de proyecto, elija la plantilla **Aplicación de consola** y, luego, **Siguiente**.
 
-   Después, en la ventana **Configurar el nuevo proyecto**, escriba *CalculateThis* en el cuadro **Nombre del proyecto**. Seguidamente, elija **Crear**.
+   Después, en la ventana **Configurar el nuevo proyecto**, escriba *CalculateThis* en el cuadro **Nombre del proyecto**. Después, elija **Siguiente**.
+
+1. En la ventana **Información adicional**, **.NET Core 3.1** ya debe estar seleccionado para la plataforma de destino. Si no es así, seleccione **.NET Core 3.1**. Luego, elija **Crear**.
 
 1. Escriba el código siguiente entre las líneas `Module Program` y `End Module`:
 

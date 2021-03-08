@@ -12,12 +12,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 3ce27c692e96423bbec89914caeab3afd3e62ba4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d41beea47e8173170ea2d428b40bd7c7ed8ff67e
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99947924"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684156"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>Depuración remota de ASP.NET Core en IIS en Azure en Visual Studio
 
@@ -58,10 +58,12 @@ No se admite la depuración entre dos equipos conectados a través de un proxy. 
 
 ## <a name="create-the-aspnet-core-application-on-the-visual-studio-computer"></a>Creación de la aplicación de ASP.NET Core en el equipo de Visual Studio
 
-1. Cree una aplicación de ASP.NET Core.
+1. Cree una aplicación web de ASP.NET Core.
 
     ::: moniker range=">=vs-2019"
-    En Visual Studio 2019, presione **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **asp.net**, elija **Plantillas** y luego, **Crear una aplicación web ASP.NET Core**. En el cuadro de diálogo que se muestra, asigne el nombre **MyASPApp** al proyecto y después elija **Crear**. Después, elija **Aplicación web (Modelo-Vista-Controlador)** y luego **Crear**.
+    En Visual Studio 2019, elija **Crear un nuevo proyecto** en la ventana de inicio. Si la ventana de inicio no está abierta, elija **Archivo** > **Ventana de inicio**. Escriba **aplicación web**, elija **C#** como lenguaje y luego elija **Aplicación web ASP.NET Core (Modelo-Vista-Controlador)** . Por último, elija **Siguiente**. En la siguiente pantalla, asigne el nombre **MyASPApp** al proyecto y luego elija **Siguiente**.
+
+    Elija la plataforma de destino recomendada (.NET Core 3.1) o .NET 5 y, a continuación, elija **Crear**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     En Visual Studio 2017, seleccione **Archivo > Nuevo > Proyecto** y después **Visual C# > Web > Aplicación web ASP.NET Core**. En la sección Plantillas de ASP.NET Core, seleccione **Aplicación web (Modelo-Vista-Controlador)** . Asegúrese de que se ha seleccionado ASP.NET Core 2.1, que **Habilitar compatibilidad con Docker** no está seleccionado y que la opción **Autenticación** está establecida en **Sin autenticación**. Asigne el nombre **MyASPApp** al proyecto.

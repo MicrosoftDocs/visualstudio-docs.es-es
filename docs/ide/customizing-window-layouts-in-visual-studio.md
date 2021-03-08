@@ -2,7 +2,7 @@
 title: Personalizar los diseños de ventana
 description: Aprenda a personalizar las características que Windows exhibe para crear diseños que funcionen mejor con varios flujos de trabajo de desarrollo.
 ms.custom: SEO-VS-2020
-ms.date: 07/31/2020
+ms.date: 03/02/2021
 ms.topic: conceptual
 f1_keywords:
 - vs.windows
@@ -25,12 +25,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f6983f9a4b16cc9ed6ece5779cfc44cd7ffa9259
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bd8859b98e54aa9692beaa98dd0f2c2ca70e2796
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910855"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101682580"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Personalizar los diseños de ventana de Visual Studio
 
@@ -163,7 +163,17 @@ Primero, vamos a crear una solución de prueba que tiene dos proyectos, cada uno
 
 #### <a name="create-a-ui-project-and-customize-the-layout"></a>Crear un proyecto de UI y personalizar el diseño
 
+::: moniker range="vs-2017"
+
 1. Cree un proyecto **Aplicación WPF** de C#. Imagine que, en este proyecto, va a desarrollar una interfaz de usuario. Desea maximizar el espacio de la ventana del diseñador y quitar otras ventanas de herramientas de la vista.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Cree un proyecto **Aplicación WPF** de C#. Imagine que, en este proyecto, va a desarrollar una interfaz de usuario. Desea maximizar el espacio de la ventana del diseñador y quitar otras ventanas de herramientas de la vista.
+
+::: moniker-end
 
 2. Si tiene varios monitores, coloque la ventana **Explorador de soluciones** y la ventana **Propiedades** en el segundo monitor. En un solo sistema de monitor, cierre todas las ventanas menos el diseñador.
 

@@ -19,16 +19,16 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e39cb7df53a12b97d297ee739338c42a3201089f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 66610eef4419b71cd41c8a7708b43b30bff4cc80
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99872526"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683034"
 ---
 # <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>Preparación de la depuración: Proyectos de consola (C#, C++, Visual Basic, F#)
 
-La preparación de la depuración de un proyecto de consola es similar a la de la depuración de un proyecto para Windows, con algunas consideraciones adicionales, como la configuración de argumentos de la línea de comandos y la manera de poner en pausa la aplicación para depurarla. Para obtener más información, consulte [Aplicaciones de Windows Forms](../debugger/debugging-preparation-windows-forms-applications.md) y [Preparación de la depuración: aplicaciones de Windows Forms (.NET)](/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100)). Debido a la similitud de todas las aplicaciones de consola, este tema cubre los tipos de proyecto siguientes:
+La preparación de la depuración de un proyecto de consola es similar a la de la depuración de un proyecto para Windows, con algunas consideraciones adicionales, como la configuración de argumentos de la línea de comandos y la manera de poner en pausa la aplicación para depurarla. Para más información, vea [Preparación de la depuración: aplicaciones de Windows Forms](../debugger/debugging-preparation-windows-forms-applications.md). Debido a la similitud de todas las aplicaciones de consola, este tema cubre los tipos de proyecto siguientes:
 
 - Aplicación de consola de C#, Visual Basic y F#
 

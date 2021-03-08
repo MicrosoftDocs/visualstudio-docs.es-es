@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - aspnet
-ms.openlocfilehash: 7170983732ff1350061629e1e8aa4ec88fad3fa1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fa8601b6fe625c5cab2aa1f5de8a69f2d550ee2a
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952842"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683620"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet-core"></a>Inicio rápido: Análisis de los datos de uso de la CPU en Visual Studio (ASP.NET Core)
 
@@ -42,24 +42,17 @@ Para ejecutar las herramientas de generación de perfiles con el depurador se re
    En el cuadro de diálogo que aparece, seleccione **MVC** en el panel central y, después, haga clic en **Aceptar**.
    ::: moniker-end
    ::: moniker range="vs-2019"
-   Si la ventana de inicio no está abierta, elija **Archivo** > **Ventana Inicio**.
+   En Visual Studio 2019, elija **Crear un nuevo proyecto** en la ventana de inicio. Si la ventana de inicio no está abierta, elija **Archivo**  >  **Ventana de inicio** y, luego, elija **Crear un nuevo proyecto**.
 
-   En la ventana de inicio, elija **Crear un proyecto nuevo**.
+   Escriba **Aplicación web** en el cuadro de búsqueda, elija **C#** como lenguaje y seleccione **Aplicación web ASP.NET Core (Modelo-Vista-Controlador)** . Por último, elija **Siguiente**. En la siguiente pantalla, asigne al proyecto el nombre *MyProfilingApp_MVC* y elija **Siguiente**.
 
-   En el cuadro de búsqueda de la ventana **Crear un proyecto**, escriba *asp.net*. Seguidamente, elija **C#** en la lista de lenguajes y luego, **Windows** en la lista de plataformas.
-
-   Después de aplicar los filtros de lenguaje y plataforma, elija la plantilla **Aplicación web de ASP.NET (.NET Core)** y, luego, **Siguiente**.
+   Elija la plataforma de destino recomendada (.NET Core 3.1) o .NET 5 y, a continuación, elija **Crear**.
 
    > [!NOTE]
    > Si no ve la plantilla **Aplicación web de ASP.NET (.NET Core)** , puede instalarla desde la ventana **Crear un proyecto**. En el mensaje **¿No encuentra lo que busca?** , elija el vínculo **Instalar más herramientas y características**. Luego, en el Instalador de Visual Studio, elija la carga de trabajo **Desarrollo de ASP.NET y web**.
-
-   En la ventana **Configurar el nuevo proyecto**, escriba *MyProfilingApp_MVC* en el cuadro **Nombre del proyecto**. Luego, elija **Crear**.
-
-   En la ventana que aparece, elija **Aplicación web (Modelo-Vista-Controlador)** y, después, **Crear**.
-
    ::: moniker-end
 
-   Visual Studio se abre en el nuevo proyecto.
+   Visual Studio crea y abre el nuevo proyecto.
 
 1. En el Explorador de soluciones, haga clic con el botón derecho en la carpeta de modelos y elija **Agregar** > **Clase**.
 

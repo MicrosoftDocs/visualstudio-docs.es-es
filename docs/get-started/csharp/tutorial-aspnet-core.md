@@ -3,7 +3,7 @@ title: 'Tutorial: Introducción a C# y ASP.NET Core'
 titleSuffix: ''
 description: Obtenga información sobre cómo crear una aplicación web ASP.NET Core en Visual Studio con C#, paso a paso.
 ms.custom: seodec18, get-started
-ms.date: 05/29/2019
+ms.date: 02/12/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 63db3f62f4e7c763bf02fbfec2dd2f52c32d3264
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 026f6f2902b537312c0714b7eeb61d10e0fb980d
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956365"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683140"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Tutorial: Introducción a C# y ASP.NET Core en Visual Studio
 
@@ -104,18 +104,18 @@ Si no ve la plantilla de proyecto **Aplicación web ASP.NET Core**, puede obtene
 
 ::: moniker range="vs-2019"
 
-1. En la ventana de inicio, elija **Crear un proyecto nuevo**.
+1. En la ventana de inicio, elija **Crear un nuevo proyecto**.
 
-   ![Visualización de la ventana "Crear un proyecto"](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
+   :::image type="content" source="../../get-started/media/vs-2019/create-new-project-dark-theme.png" alt-text="Visualización de la ventana &quot;Crear un proyecto&quot;":::
 
-1. En el cuadro de búsqueda de la ventana **Crear un proyecto**, escriba *ASP.NET*. Seguidamente, elija **C#** en la lista de lenguajes y luego, **Windows** en la lista de plataformas.
+1. En la ventana **Crear un nuevo proyecto**, elija **C#** en la lista Idioma. A continuación, seleccione **Windows** en la lista Plataforma y **Web** en la lista Tipos de proyecto.
 
-   Después de aplicar los filtros de lenguaje y plataforma, elija la plantilla **Aplicación web ASP.NET Core** y, luego, **Siguiente**.
+      Después de aplicar los filtros de lenguaje, plataforma y tipo de proyecto, elija la plantilla **Aplicación web ASP.NET Core** y, luego, **Siguiente**.
 
-   ![Seleccionar la plantilla C# para Aplicación web ASP.NET Core](./media/vs-2019/csharp-create-new-project-search-aspnet-core-filtered.png)
+   :::image type="content" source="./media/vs-2019/csharp-create-new-project-aspnet-core.png" alt-text="Elección de la plantilla de C# para Aplicación web ASP.NET Core":::
 
    > [!NOTE]
-   > Si no ve la plantilla **Aplicación web ASP.NET Core**, puede instalarla desde la ventana **Crear un proyecto**. En el mensaje **¿No encuentra lo que busca?** , elija el vínculo **Instalar más herramientas y características**.
+   > Si no ve la plantilla **Aplicación web ASP.NET Core**, puede instalarla desde la ventana **Crear un nuevo proyecto**. En el mensaje **¿No encuentra lo que busca?** , elija el vínculo **Instalar más herramientas y características**.
    >
    > ![Vínculo "Instalar más herramientas y características" del mensaje "¿No encuentra lo que busca?" que aparece en la ventana "Crear proyecto"](../../get-started/media/vs-2019/not-finding-what-looking-for.png)
    >
@@ -125,15 +125,21 @@ Si no ve la plantilla de proyecto **Aplicación web ASP.NET Core**, puede obtene
    >
    > Después, elija el botón **Modificar** en el Instalador de Visual Studio. Si se le pide que guarde su trabajo, hágalo. Seguidamente, elija **Continuar** para instalar la carga de trabajo. Luego, vuelva al paso 2 de este procedimiento "[Crear un proyecto](#create-a-project)".
 
-1. En la ventana **Configurar el nuevo proyecto**, escriba *MyCoreApp* en el cuadro **Nombre del proyecto**. Luego, elija **Crear**.
+1. En la ventana **Configurar el nuevo proyecto**, escriba *MyCoreApp* en el cuadro **Nombre del proyecto**. Después, elija **Siguiente**.
 
-   ![En la ventana "Configurar el nuevo proyecto", asigne al proyecto el nombre "MyCoreApp".](./media/vs-2019/csharp-name-your-aspnet-mycoreapp-project.png)
+   :::image type="content" source="./media/vs-2019/csharp-name-your-aspnet-app.png" alt-text="En la ventana &quot;Configurar el nuevo proyecto&quot;, asigne al proyecto el nombre &quot;MyCoreApp&quot;.":::
 
-1. En la ventana **Crear una aplicación web ASP.NET Core**, compruebe que **ASP.NET Core 3.0** aparece en el menú desplegable de la parte superior. Luego, elija **Aplicación Web**, que incluye Razor Pages de ejemplo. Seguidamente, elija **Crear**.
+1. En la ventana **Información adicional**, compruebe que **.NET Core 3.1** aparece en el menú desplegable superior. Tenga en cuenta que puede habilitar la compatibilidad con Docker activando la casilla. También puede agregar compatibilidad con la autenticación, para lo que debe hacer clic en el botón Cambiar autenticación. Ahí, puede elegir entre las siguientes opciones:
+    - Ninguna: sin autenticación.
+    - Cuentas individuales: se almacenan en una base de datos local o basada en Azure.
+    - Plataforma de identidad de Microsoft: esta opción usa Active Directory, Azure AD o Microsoft 365 para la autenticación.
+    - Windows: conveniente para las aplicaciones de intranet.
+    
+    Deje desactivada la casilla **Habilitar Docker** y seleccione **Ninguno** en Tipo de autenticación. Seleccione **Crear**.
 
-   ![Ventana "Crear una aplicación web ASP.NET Core"](./media/vs-2019/csharp-create-aspnet-razor-pages-app.png)
+   :::image type="content" source="./media/vs-2019/aspnet-core-additional-information.png" alt-text="En la ventana &quot;Información adicional&quot;, asegúrese de que está seleccionado .NET Core 3.1 y deje todos los valores predeterminados":::
 
-   Visual Studio se abre en el nuevo proyecto.
+   Visual Studio abrirá el nuevo proyecto.
 
 ::: moniker-end
 
@@ -370,4 +376,4 @@ Enhorabuena por completar este tutorial. Esperamos que haya aprendido un poco so
 
 ## <a name="see-also"></a>Vea también
 
-[Publicar una aplicación web en Azure App Service mediante Visual Studio](../../deployment/quickstart-deploy-to-azure.md)
+[Publicar una aplicación web en Azure App Service mediante Visual Studio](../../deployment/quickstart-deploy-to-azure.md)

@@ -2,19 +2,19 @@
 title: Trabajar con varias cuentas de usuario
 description: Obtenga información sobre cómo agregar todas las cuentas de Microsoft a Visual Studio para poder acceder a los recursos desde cualquier cuenta sin tener que iniciar sesión por separado.
 ms.custom: SEO-VS-2020
-ms.date: 11/16/2020
+ms.date: 03/02/2021
 ms.topic: conceptual
 author: ornellaalt
 ms.author: ornella
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 169415537460dae94ca844c426bb3770449161b5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6740eb4c23d739f439103b2ecdd0e8882018204d
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960460"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683797"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Trabajar con varias cuentas de usuario
 
@@ -65,7 +65,7 @@ Para ver cómo funciona, cree un proyecto de **Aplicación web ASP.NET Core**. E
 
 ::: moniker range=">=vs-2019"
 
-Para ver cómo funciona, cree un proyecto de **Aplicación web ASP.NET Core**. En la página **Crear una aplicación web ASP.NET Core**, elija la plantilla **Aplicación web** y, luego, elija **Cambiar** en **Autenticación**.
+Para ver cómo funciona, cree un proyecto **Aplicación web ASP.NET Core**. En la página **Crear una aplicación web ASP.NET Core**, elija **ASP.NET Core 3.1** en la lista desplegable, elija la plantilla **Aplicación web** y, luego, elija **Cambiar** en **Autenticación**.
 
 ::: moniker-end
 

@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7172ca8c5341dbaee59ae5b2635da9c5585793cc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fe3eaf3c5efcc8341613e9f223d22410111a548f
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99838739"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101682591"
 ---
 # <a name="introduction-to-projects-and-solutions"></a>Introducción a proyectos y soluciones
 
@@ -189,9 +189,14 @@ Vamos a agregar un proyecto de prueba unitaria a la solución. Esta vez se empie
 
 2. En el cuadro de diálogo **Agregar un nuevo proyecto**, escriba el texto **prueba unitaria** en el cuadro de búsqueda de la parte superior y luego seleccione **C#** en **Lenguaje**.
 
-3. Seleccione la plantilla de proyecto **MSTest Test Project (.NET Core)** [Proyecto de prueba MSTest (.NET Core)] y luego **Siguiente**.
+3. Seleccione la plantilla de proyecto **Proyecto de prueba unitaria** para .NET Core y luego seleccione **Siguiente**.
 
-4. Asigne el nombre **QuickTest** al proyecto y seleccione **Crear**.
+   > [!NOTE]
+   > A partir de la versión 16.9 de Visual Studio 2019, el nombre de la plantilla de proyecto MSTest cambió de **Proyecto de prueba unitaria de MSTest (.NET Core)** a **Proyecto de prueba unitaria**. En esta actualización se han modificado varios pasos de la creación del proyecto.
+
+4. Asigne el nombre **QuickTest** al proyecto y seleccione **Siguiente**.
+
+5. Elija la plataforma de destino recomendada (.NET Core 3.1) o .NET 5 y, a continuación, elija **Crear**.
 
    Se agregará un segundo proyecto al **Explorador de soluciones**, mientras que un archivo denominado *UnitTest1.cs* se abre en el editor.
 

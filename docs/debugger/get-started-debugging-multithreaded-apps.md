@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 28f9ab13cca4f1d31973f9526063eaa56574dcf4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bc5232d616466ec5aa0916d5d1ad9e7bd5b1247c
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870524"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684117"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Introducción a la depuración de aplicaciones multiproceso (C#, Visual Basic, C++)
 
@@ -48,12 +48,14 @@ En primer lugar, necesitará un proyecto de aplicación multiproceso. A continua
 
    En el cuadro de búsqueda de la ventana **Crear un proyecto**, escriba *consola*. Seguidamente, elija **C#** , **C++** o **Visual Basic** en la lista Lenguajes y, luego, **Windows** en la lista Plataformas. 
 
-   Después de aplicar los filtros de lenguaje y plataforma, elija la plantilla **Aplicación de consola (.NET Core)** o, para C++, la plantilla **Aplicación de consola** y después elija **Siguiente**.
+   Después de aplicar los filtros de lenguaje y plataforma, elija la plantilla **Aplicación de consola** para .NET Core o C++ y luego elija **Siguiente**.
 
    > [!NOTE]
-   > Si no ve la plantilla correcta, vaya a **Herramientas** > **Obtener herramientas y características...** para abrir el Instalador de Visual Studio. Seleccione la carga de trabajo **Desarrollo de escritorio de .NET** o **Desarrollo para el escritorio con C++** y, luego, elija **Modificar**.
+   > Si no ve la plantilla correcta, vaya a **Herramientas** > **Obtener herramientas y características...** para abrir el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo multiplataforma de .NET Core** o **Desarrollo para el escritorio con C++** y, después, elija **Modificar**.
 
-   En la ventana **Configurar el nuevo proyecto**, escriba *MyThreadWalkthroughApp* en el cuadro **Nombre del proyecto**. Luego, elija **Crear**.
+   En la ventana **Configurar el nuevo proyecto**, escriba *MyThreadWalkthroughApp* en el cuadro **Nombre del proyecto**. A continuación, elija **Siguiente** o **Crear**, sea cual sea la opción que esté disponible.
+
+   Para un proyecto .NET Core, elija la plataforma de destino recomendada (.NET Core 3.1) o .NET 5 y luego elija **Crear**.
 
    ::: moniker-end
    ::: moniker range="vs-2017"
@@ -63,7 +65,7 @@ En primer lugar, necesitará un proyecto de aplicación multiproceso. A continua
    - Para una aplicación de Visual Basic, en **Visual Basic**, elija **Escritorio de Windows** y, después, en el panel central, **Aplicación de consola (.NET Framework)** .
    - Para una aplicación de C++, en **Visual C++** , elija **Escritorio de Windows** y después, **Aplicación de consola Windows**.
 
-   Si no ve la plantilla de proyecto **Aplicación de consola (.NET Core)** o, para C++, **Aplicación de consola**, vaya a **Herramientas** > **Obtener herramientas y características…** para abrir el Instalador de Visual Studio. Seleccione la carga de trabajo **Desarrollo de escritorio de .NET** o **Desarrollo para el escritorio con C++** y, luego, elija **Modificar**.
+   Si no ve la plantilla de proyecto **Aplicación de consola (.NET Framework)** o, para C++, **Aplicación de consola**, vaya a **Herramientas** > **Obtener herramientas y características…** para abrir el Instalador de Visual Studio. Seleccione la carga de trabajo **Desarrollo de escritorio de .NET** o **Desarrollo para el escritorio con C++** y, luego, elija **Modificar**.
 
    Luego escriba un nombre como *MyThreadWalkthroughApp* y haga clic en **Aceptar**.
 

@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: c28355e4097dc014f4757788f175ea80850a3f63
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 411fbd757eb063202136eba5c1e5fbec27f56523
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960434"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683639"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>Tutorial: Crear una aplicación ASP.NET Core con TypeScript en Visual Studio
 
@@ -69,18 +69,18 @@ En este tutorial, empezará con un proyecto simple que contiene el código de un
 1. Cree un nuevo proyecto.
 
     ::: moniker range=">=vs-2019"
-    Si la ventana de inicio no está abierta, elija **Archivo** > **Ventana de inicio**. En la ventana de inicio, elija **Crear un proyecto nuevo**. En la lista desplegable Lenguaje, elija **C#** . En el cuadro de búsqueda, escriba **ASP.NET** y, luego, elija **Aplicación web ASP.NET Core**. Seleccione **Siguiente**.
+    En Visual Studio 2019, elija **Crear un nuevo proyecto** en la ventana de inicio. Si la ventana de inicio no está abierta, elija **Archivo** > **Ventana de inicio**. Escriba **aplicación web**, elija **C#** como lenguaje y luego elija **Aplicación web ASP.NET Core (Modelo-Vista-Controlador)** . Por último, elija **Siguiente**. En la siguiente pantalla, asigne un nombre al proyecto y luego elija **Siguiente**.
 
-    Escriba un nombre para el proyecto y elija **Crear**.
+    Elija la plataforma de destino recomendada (.NET Core 3.1) o .NET 5 y, a continuación, elija **Crear**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     En la barra de menús superior, elija **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, expanda **Visual C#** y luego elija **.NET Core**. En el panel central, elija **Aplicación web ASP.NET Core: C#** y después elija **Aceptar**.
+
+    En el cuadro de diálogo que aparece, seleccione **Aplicación web (Modelo-Vista-Controlador)** y, después, elija **Crear** (o **Aceptar**).
+
+    ![Elección de la plantilla de MVC](../javascript/media/aspnet-core-ts-mvc-template.png)
     ::: moniker-end
     Si no ve la plantilla de proyecto **Aplicación web ASP.NET Core**, debe agregar la carga de trabajo **Desarrollo de ASP.NET y web**. Para instrucciones detalladas, consulte los [Requisitos previos](#prerequisites).
-
-1. En el cuadro de diálogo que aparece, seleccione **Aplicación web (Modelo-Vista-Controlador)** y, después, elija **Crear** (o **Aceptar**).
-
-   ![Elección de la plantilla de MVC](../javascript/media/aspnet-core-ts-mvc-template.png)
 
     Visual Studio crea la solución y abre el proyecto en el panel derecho.
 

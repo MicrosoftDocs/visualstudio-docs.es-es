@@ -15,12 +15,12 @@ manager: jmartens
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: 264744d7fe39c77da625c778d1bfea51f55e1f2d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a6ab205b7f651f8bb5954bee4998602c79fd78e7
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948015"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683922"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Tutorial: Crear y ejecutar pruebas unitarias en código administrado
 
@@ -55,9 +55,14 @@ En este artículo se recorre paso a paso la creación, ejecución y personalizac
 
 2. En la ventana de inicio, elija **Crear un proyecto nuevo**.
 
-3. Busque y seleccione la plantilla de proyecto de C# **Aplicación de consola (.NET Core)** y haga clic en **Siguiente**.
+3. Busque y seleccione la plantilla de proyecto de C# **Aplicación de consola** para .NET Core y haga clic en **Siguiente**.
 
-4. Asigne al proyecto el nombre **Bank** y haga clic en **Crear**.
+   > [!NOTE]
+   > Si no ve la plantilla **Aplicación de consola**, puede instalarla desde la ventana **Crear un proyecto**. En el mensaje **¿No encuentra lo que busca?** , elija el vínculo **Instalar más herramientas y características**. Luego, en el Instalador de Visual Studio, elija la carga de trabajo **Desarrollo multiplataforma de .NET Core**.
+
+4. Asigne al proyecto el nombre **Bank** y haga clic en **Siguiente**.
+
+   Elija la plataforma de destino recomendada (.NET Core 3.1) o .NET 5 y, a continuación, elija **Crear**.
 
    Se crea el proyecto Bank y se muestra en el **Explorador de soluciones** con el archivo *Program.cs* abierto en el editor de código.
 
@@ -163,11 +168,14 @@ Ahora tiene un proyecto con métodos que puede probar. En este artículo, las pr
 
 ::: moniker range=">=vs-2019"
 
-2. Busque y seleccione la plantilla de proyecto **Proyecto de prueba de MSTest (.NET Core)** de C# y haga clic en **Siguiente**.
+2. Escriba **prueba unitaria** en el cuadro de búsqueda, seleccione **C#** como lenguaje y luego seleccione **Proyecto de prueba unitaria** para C# para la plantilla de .NET Core. Por último, haga clic en **Siguiente**.
 
-3. Ponga al proyecto el nombre **BankTests**.
+   > [!NOTE]
+   > A partir de la versión 16.9 de Visual Studio 2019, el nombre de la plantilla de proyecto MSTest cambió de **Proyecto de prueba unitaria de MSTest (.NET Core)** a **Proyecto de prueba unitaria**.
 
-4. Haga clic en **Crear**.
+3. Asigne al proyecto el nombre **BankTests** y haga clic en **Siguiente**.
+
+4. Elija la plataforma de destino recomendada (.NET Core 3.1) o .NET 5 y, a continuación, elija **Crear**.
 
    El proyecto **BankTests** se agrega a la solución **Bank**.
 

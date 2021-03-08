@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 49560ac3293c416719b9addc1cbadf1b0c04f438
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 626f86c2a1d370a7f31e47f86d8adafc3f905672
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99866091"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684238"
 ---
 # <a name="assertions-in-managed-code"></a>Aserciones en el código administrado
 Una aserción, o instrucción `Assert`, prueba una condición especificada como un argumento de dicha instrucción `Assert`. Si la condición se evalúa como true, no se produce ninguna acción. Si la condición se evalúa como false, se produce un error en la aserción. Si se ejecuta con una compilación de depuración, el programa entra en modo de interrupción.
@@ -173,7 +173,7 @@ Debug.Assert ( stacksize > 0 );
 Trace.Assert ( stacksize > 0 );
 ```
 
- El segundo y tercer argumento, si existen, deben ser cadenas. Si llama a <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> o <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> con dos o tres argumentos, el primer argumento es una condición. El método comprueba la condición y, si el resultado es false, genera la segunda y tercera cadena. En el ejemplo siguiente se muestran <xref:System.Diagnostics.Debug.Assert(System.Boolean,System.String)?displayProperty=fullName> y <xref:System.Diagnostics.Trace.Assert(System.Boolean,System.String)?displayProperty=fullName> utilizados con dos argumentos:
+  El segundo y tercer argumento, si existen, deben ser cadenas. Si llama a <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> o <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> con dos o tres argumentos, el primer argumento es una condición. El método comprueba la condición y, si el resultado es false, genera la segunda y tercera cadena. En el ejemplo siguiente se muestran <xref:System.Diagnostics.Debug.Assert(System.Boolean,System.String)?displayProperty=fullName> y <xref:System.Diagnostics.Trace.Assert(System.Boolean,System.String)?displayProperty=fullName> utilizados con dos argumentos:
 
 ```VB
 Debug.Assert(stacksize > 0, "Out of stack space")
@@ -185,7 +185,7 @@ Debug.Assert ( stacksize > 0, "Out of stack space" );
 Trace.Assert ( stacksize > 0, "Out of stack space" );
 ```
 
- En el ejemplo siguiente se muestran <xref:System.Diagnostics.Debug.Assert%2A> y <xref:System.Diagnostics.Trace.Assert%2A>.
+  En el ejemplo siguiente se muestran <xref:System.Diagnostics.Debug.Assert(System.Boolean,System.String,System.String)?displayProperty=fullName> y <xref:System.Diagnostics.Trace.Assert(System.Boolean,System.String,System.String)?displayProperty=fullName> utilizados con tres argumentos:
 
 ```VB
 Debug.Assert(stacksize > 0, "Out of stack space. Bytes left:" , Format(size, "G"))

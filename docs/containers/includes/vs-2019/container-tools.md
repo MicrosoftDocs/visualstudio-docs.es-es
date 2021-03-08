@@ -3,16 +3,16 @@ title: Visual Studio Tools para Docker con ASP.NET
 author: ghogen
 description: Aprenda a usar las herramientas de Visual Studio 2019 y Docker para Windows
 ms.author: ghogen
-ms.date: 02/01/2019
+ms.date: 02/22/2021
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: fc549951e9c6b6d208c478f37126238e91f6f039
-ms.sourcegitcommit: 2c26d6e6f2a5c56ae5102cdded7b02f2d0fd686c
+ms.openlocfilehash: 3a2c0d9ac31857fb2389455b0262373414981c5b
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88186269"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101750277"
 ---
 Con Visual Studio es muy fácil compilar, depurar y ejecutar aplicaciones .NET, ASP.NET y ASP.NET Core en contenedores y publicarlas en Azure Container Registry (ACR), Docker Hub, Azure App Service o un registro de contenedor propio. En este artículo se va a publicar una aplicación ASP.NET Core en ACR.
 
@@ -30,9 +30,9 @@ Para instalar Docker, primero revise la información de [Docker Desktop for Wind
 ## <a name="add-a-project-to-a-docker-container"></a>Agregar un proyecto a un contenedor de Docker
 
 1. Cree un proyecto con la plantilla **Aplicación web ASP.NET Core**, o bien, si quiere usar .NET Framework en lugar de .NET Core, elija **Aplicación web ASP.NET (.NET Framework)** .
-1. Seleccione **Aplicación web** y asegúrese de que la casilla **Habilitar compatibilidad con Docker** esté activada.
+1. En la pantalla **Información adicional**, asegúrese de que la casilla **Habilitar compatibilidad con Docker** está activada.
 
-   ![Casilla Habilitar compatibilidad con Docker](../../media/container-tools/vs-2019/create-new-web-application.PNG)
+   ![Casilla Habilitar compatibilidad con Docker](../../media/container-tools/vs-2019/webapp-additional-information-31-docker.png)
 
    En la captura de pantalla se muestra .NET Core; si usa .NET Framework, tendrá un aspecto distinto.
 

@@ -2,7 +2,7 @@
 title: Aplicación Hola mundo con WPF en C#
 description: Cree una aplicación sencilla de .NET de escritorio de Windows en C# con Visual Studio mediante el marco de interfaz de usuario de Windows Presentation Foundation (WPF).
 ms.custom: seodec18, get-started
-ms.date: 08/09/2019
+ms.date: 02/10/2021
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.topic: tutorial
@@ -14,12 +14,12 @@ ms.author: ornella
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4384a724b57de565e03637057e16fc26e8213e5e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1f3232ad0a8b7cc34abbe6d49c05944c066226da
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924880"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101682845"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Tutorial: Crear una aplicación sencilla con C\#
 
@@ -80,16 +80,17 @@ Cuando cree una aplicación en Visual Studio, primero creará un proyecto y una 
 
    ![Visualización de la ventana "Crear un proyecto"](../../get-started/media/vs-2019/start-window-create-new-project.png "Captura de pantalla de la ventana "Crear un proyecto"")
 
-1. En la pantalla **Crear un proyecto nuevo**, busque "WPF", elija **Aplicación WPF (.NET Core)** y después seleccione **Siguiente**.
+1. En la pantalla **Crear un nuevo proyecto nuevo**, busque "WPF", elija **Aplicación WPF** y después seleccione **Siguiente**.
 
-   ![Plantilla de aplicación de WPF en el cuadro de diálogo "Crear un proyecto"](media/vs-2019/exploreide-newprojectcsharp-vs2019.png "Captura de pantalla de la plantilla de aplicación de WPF en el cuadro de diálogo "Crear un proyecto"")
+   :::image type="content" source="media/vs-2019/explore-ide-new-project-csharp-vs-2019.png" alt-text="Plantilla de aplicación de WPF en el cuadro de diálogo &quot;Crear un nuevo proyecto&quot;":::
 
-   > [!NOTE]
-   > Es posible que encuentre dos plantillas de escritorio de WPF, una para .NET Framework y otra para .NET Core. La plantilla de .NET Core está disponible en la versión 16.3 de Visual Studio 2019 y versiones posteriores. Puede usar cualquiera de ellas para este tutorial, pero se recomienda .NET Core para el desarrollo nuevo.
+1. En la pantalla siguiente, asígnele al proyecto el nombre **HelloWPFApp** y haga clic en **Siguiente**.
 
-1. En la pantalla siguiente, asígnele al proyecto el nombre **HelloWPFApp** y haga clic en **Crear**.
+   :::image type="content" source="./media/vs-2019/explore-ide-name-project.png" alt-text="Proyecto denominado &quot;HelloWPFApp&quot;":::
 
-   ![Proyecto denominado "HelloWPFApp"](./media/vs-2019/exploreide-nameproject.png "Captura de pantalla de la ventana donde se asigna nombre al proyecto")
+1. En la ventana **Información adicional**, **.NET Core 3.1** ya debe estar seleccionado para la plataforma de destino. Si no es así, seleccione **.NET Core 3.1**. Luego, elija **Crear**.
+
+   :::image type="content" source="./media/vs-2019/wpf-target-framework.png" alt-text="En la ventana &quot;Información adicional&quot;, asegúrese de que está seleccionado .NET Core 3.1":::
 
 ::: moniker-end
 

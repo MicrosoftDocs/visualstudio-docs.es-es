@@ -12,29 +12,37 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 061e667196ce1577206ad76939e20daf3db131c0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f790d30dc97d5549737c3c1cd003086477ce984f
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840891"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683007"
 ---
 # <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Inicio rápido: Depurar con C# o Visual Basic mediante el depurador de Visual Studio
 
 El depurador de Visual Studio proporciona muchas características de gran eficacia para ayudar a depurar aplicaciones. En este tema se proporciona una forma rápida de obtener información sobre las características básicas.
 
-## <a name="create-a-new-project"></a>Crear un proyecto nuevo
+## <a name="create-a-new-project"></a>Creación de un nuevo proyecto
 
 1. Abra Visual Studio y cree un nuevo proyecto.
 
     ::: moniker range=">=vs-2019"
-    Presione **Esc** para cerrar la ventana de inicio. Presione **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **consola**, elija **Plantillas** y luego, **Create new Console App (.NET Core) project** (Crear proyecto de aplicación de consola [.NET Core]). En el cuadro de diálogo que se abre, elija **Crear**.
+    Si la ventana de inicio no está abierta, elija **Archivo** > **Ventana de inicio**. En la ventana de inicio, elija **Crear un proyecto nuevo**.
+
+    En el cuadro de búsqueda de la ventana **Crear un proyecto**, escriba *consola*. Seguidamente, elija **C#** en la lista de lenguajes y luego, **Windows** en la lista de plataformas.
+
+    Después de aplicar los filtros de lenguaje y plataforma, elija la plantilla **Aplicación de consola** para .NET Core y luego elija **Siguiente**.
+
+    Elija la plataforma de destino recomendada (.NET Core 3.1) o .NET 5 y, a continuación, elija **Crear**.
+
+    Si no ve la plantilla de proyecto **Aplicación de consola** para .NET Core, vaya a **Herramientas** > **Obtener herramientas y características…** y se abrirá el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo multiplataforma de .NET Core** y, después, **Modificar**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    En la barra de menús superior, elija **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, en **Visual C#** , elija **.NET Core** y luego, en el panel central, **Aplicación de consola (.NET Core)** . Luego escriba un nombre como **MyDbgApp** y haga clic en **Aceptar**.
-    ::: moniker-end
+    En la barra de menús superior, elija **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, en **Visual C#**, elija **.NET Core** y luego, en el panel central, **Aplicación de consola (.NET Core)**. Luego escriba un nombre como **MyDbgApp** y haga clic en **Aceptar**.
 
-     Si no ve la plantilla de proyecto **Aplicación de consola (.NET Core)** , vaya a **Herramientas** > **Obtener herramientas y características…** y se abrirá el instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de escritorio de .NET** y **.NET Core** y luego **Modificar**.
+    Si no ve la plantilla de proyecto **Aplicación de consola (.NET Core)**, vaya a **Herramientas** > **Obtener herramientas y características…** y se abrirá el instalador de Visual Studio. Elija la carga de trabajo **Desarrollo multiplataforma de .NET Core** y, después, **Modificar**.
+    ::: moniker-end
 
     Visual Studio crea el proyecto.
 
@@ -56,7 +64,7 @@ El depurador de Visual Studio proporciona muchas características de gran eficac
     End Module
     ```
 
-    con este código:
+    por este otro:
 
     ```csharp
     class Program
@@ -136,7 +144,7 @@ Un *punto de interrupción* es un marcador que indica en qué punto debe Visual 
 
 2. Ahora presione **F5** (o elija **Depurar > Iniciar depuración**).
 
-    ![Alcanzar un punto de interrupción](../debugger/media/dbg-qs-hit-breakpoint-csharp.png "Llegar a un punto de interrupción")
+    ![Llegar a un punto de interrupción](../debugger/media/dbg-qs-hit-breakpoint-csharp.png "Llegar a un punto de interrupción")
 
     El depurador se detiene donde se ha establecido el punto de interrupción. La instrucción donde se ha detenido la ejecución del depurador y la aplicación se indica mediante la flecha amarilla. La línea con la llamada a la función `doWork` aún no se ha ejecutado.
 
@@ -155,11 +163,11 @@ La aplicación se sigue ejecutando, llama a `doWork` y se detiene en la línea d
 
 Los comandos de teclado habituales usados para ejecutar el código paso a paso son **F10** y **F11**. Para obtener instrucciones más detalladas, vea [Primer vistazo al depurador](../debugger/debugger-feature-tour.md).
 
-## <a name="inspect-variables-in-a-datatip"></a>Inspeccionar las variables de una información sobre datos
+## <a name="inspect-variables-in-a-data-tip"></a>Inspección de las variables de una información sobre datos
 
 1. En la línea de código actual (marcada con el puntero de ejecución amarillo), mantenga el puntero sobre el objeto `c1` para mostrar una información sobre datos.
 
-    ![Visualización de información sobre datos](../debugger/media/dbg-qs-data-tip-csharp.png "Visualización de información sobre datos")
+    ![Visualización de una sugerencia de datos](../debugger/media/dbg-qs-data-tip-csharp.png "Visualización de una sugerencia de datos")
 
     La información sobre datos muestra el valor actual de la variable `c1` y permite inspeccionar sus propiedades. Al depurar, si ve un valor que no esperaba, probablemente tenga un error en las líneas de código anteriores o de llamada.
 

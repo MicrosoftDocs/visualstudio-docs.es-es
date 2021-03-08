@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: ea87135b1f60c7ae65a8bc25399604151ab2fcee
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d411465869cc960631063d09752d38536af94119
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887814"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683610"
 ---
 # <a name="get-started-with-live-unit-testing"></a>Introducción a Live Unit Testing
 
@@ -113,20 +113,26 @@ El paso siguiente consiste en crear el proyecto de prueba unitaria para probar l
 
 4. Seleccione **Aceptar** para crear el proyecto.
 
+   > [!NOTE]
+   > En este tutorial de introducción, Live Unit Testing se utiliza con el marco de pruebas de MSTest. También puede usar los marcos de pruebas de xUnit y NUnit.
+
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. Escriba **prueba unitaria** en el cuadro de búsqueda de plantillas y seleccione la plantilla **Proyecto de prueba de MSTest (.NET Core)** . Haga clic en **Siguiente**.
+2. Escriba **prueba unitaria** en el cuadro de búsqueda de plantillas, seleccione **C#** como lenguaje y luego seleccione **Proyecto de prueba unitaria** para la plantilla de .NET Core. Haga clic en **Next**.
 
-3. Asigne al proyecto el nombre **StringLibraryTests**.
+   > [!NOTE]
+   > A partir de la versión 16.9 de Visual Studio 2019, el nombre de la plantilla de proyecto MSTest cambió de **Proyecto de prueba unitaria de MSTest (.NET Core)** a **Proyecto de prueba unitaria**.
 
-4. Haga clic en **Crear** para crear el proyecto.
+3. Asigne al proyecto el nombre **StringLibraryTests** y haga clic en **Siguiente**.
 
-::: moniker-end
+4. Elija la plataforma de destino recomendada (.NET Core 3.1) o .NET 5 y, a continuación, elija **Crear**.
 
    > [!NOTE]
    > En este tutorial de introducción, Live Unit Testing se utiliza con el marco de pruebas de MSTest. También puede usar los marcos de pruebas de xUnit y NUnit.
+
+::: moniker-end
 
 5. El proyecto de prueba unitaria no puede acceder automáticamente a la biblioteca de clases que está probando. Para conceder acceso a la biblioteca de prueba, agregue una referencia al proyecto de biblioteca de clases. Para ello, haga clic con el botón derecho en el proyecto `StringLibraryTests` y seleccione **Agregar** > **Referencia**. En el cuadro de diálogo **Administrador de referencias**, asegúrese de que la pestaña **Solución** esté seleccionada y elija el proyecto StringLibrary, como se muestra en la ilustración siguiente.
 
