@@ -1,5 +1,6 @@
 ---
 title: IDebugProperty3 | Microsoft Docs
+description: Esta interfaz proporciona compatibilidad para recuperar una cadena arbitrariamente larga asociada a la propiedad, asociar un identificador único a la propiedad, recuperar una lista de visores personalizados para la propiedad, establecer el valor de una propiedad con la capacidad de notificar los errores resultantes.
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f24e7ec1842866011bb4d3735104a043bc77e01
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 65da477c47e88699cc479f632843f839b3d02f9d
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99897263"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102469780"
 ---
 # <a name="idebugproperty3"></a>IDebugProperty3
 Esta interfaz proporciona compatibilidad con:
@@ -55,7 +56,7 @@ IDebugProperty3 : IDebugProperty2
 |[GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)|Devuelve la lista de visores personalizados con los que se puede ver esta propiedad.|
 |[SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md)|Establece el valor de esta propiedad y devuelve un mensaje de error si se produjo algún problema.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 - [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md) es el método preferido para que el administrador de depuración de sesión (SDM) establezca el valor de una propiedad.
 
 ## <a name="requirements"></a>Requisitos

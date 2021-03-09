@@ -1,5 +1,6 @@
 ---
 title: '&lt;elemento postactions &gt; (desarrollo de Office)'
+description: El elemento postactions del espacio de nombres vstav3 contiene todos los elementos postaction que describen las acciones posteriores a la implementación, que se ejecutan una vez instaladas las soluciones de Office.
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: da0c3ee640d7ae4ec1b61df7a60893a7e1428cd2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5c4a66e270cd446996884262d380df0f7384f54f
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99879441"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102470045"
 ---
 # <a name="ltpostactionsgt-element-office-development"></a>&lt;elemento postactions &gt; (desarrollo de Office)
   El elemento `postActions` del espacio de nombres `vstav3` , contiene todos los elementos `postAction` que describen las acciones posteriores a la implementación y que se ejecutan una vez instaladas las soluciones de Office.

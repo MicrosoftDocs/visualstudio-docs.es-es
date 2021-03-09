@@ -1,5 +1,6 @@
 ---
 title: interfaz IManagedAddin
+description: Implemente la interfaz IManagedAddin para crear un componente que cargue complementos de VSTO administrados.
 ms.date: 02/02/2017
 ms.topic: interface
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 89e705296c6051b8bdec823e523f0a386ff7ff76
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 614cf7e8d0e682d894328fb764c6d64b855d2834
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920441"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102469793"
 ---
 # <a name="imanagedaddin-interface"></a>interfaz IManagedAddin
   Implemente la interfaz IManagedAddin para crear un componente que cargue complementos de VSTO administrados. Esta interfaz se agregó en el sistema Microsoft Office de 2007.
@@ -43,12 +44,12 @@ interface IManagedAddin : IUnknown
 ## <a name="methods"></a>Métodos
  En la tabla siguiente se enumeran los métodos definidos por la interfaz IManagedAddin.
 
-|Nombre|Descripción|
+|NOMBRE|Descripción|
 |----------|-----------------|
 |[IManagedAddIn::Load](../vsto/imanagedaddin-load.md)|Se llama a este método cuando una aplicación de Microsoft Office carga un complemento de VSTO administrado.|
 |[IManagedAddin::Unload](../vsto/imanagedaddin-unload.md)|Se llama a este método justo antes de que una aplicación de Microsoft Office descargue un complemento de VSTO administrado.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Microsoft Office aplicaciones, a partir del sistema Microsoft Office 2007, use la interfaz IManagedAddin para ayudar a cargar los complementos de VSTO de Office. Puede implementar la interfaz IManagedAddin para crear su propio cargador de complementos de VSTO y tiempo de ejecución para los complementos de VSTO administrados, en lugar de usar el cargador de complementos de VSTO (*VSTOLoader.dll*) y [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . Para obtener más información, consulta [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).
 
 ## <a name="how-managed-add-ins-are-loaded"></a>Cómo se cargan los complementos administrados
