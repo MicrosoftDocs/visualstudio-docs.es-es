@@ -1,4 +1,5 @@
 ---
+description: Define por su presencia si el archivo de registro de gráficos se guarda en el directorio de archivos temporales del usuario.
 title: DONT_SAVE_VSGLOG_TO_TEMP | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f94b287f6ed9d4cda0696252ba32d493879ed5c1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 06152c79859a34e604ffc4e5227e2dd11ebbeaca
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880273"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146202"
 ---
 # <a name="dont_save_vsglog_to_temp"></a>DONT_SAVE_VSGLOG_TO_TEMP
 Define por su presencia si el archivo de registro de gráficos se guarda en el directorio de archivos temporales del usuario.

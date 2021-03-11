@@ -1,4 +1,5 @@
 ---
+description: El procedimiento almacenado sp_enable_sql_debug no se pudo ejecutar en el servidor.
 title: El usuario no pudo ejecutar el procedimiento almacenado sp_enable_sql_debug | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 41576d83ecff9f501b56ecc3fef3878f7c8a00b6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8c7597acb201aa810d34fe0df0f0aebbbd2f70fe
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870914"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146293"
 ---
 # <a name="error-user-could-not-execute-stored-procedure-sp_enable_sql_debug"></a>Error: El usuario no pudo ejecutar el procedimiento almacenado sp_enable_sql_debug
 

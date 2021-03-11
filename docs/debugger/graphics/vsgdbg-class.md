@@ -1,4 +1,5 @@
 ---
+description: Representa una interfaz para el control mediante programación del componente de aplicación de diagnóstico de gráficos.
 title: VsgDbg (clase) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 67bce62612a85e0bcff5e51cd07d4c374e13b01e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 24a4847e0d6c72d4de611edc47481477d2862a55
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861405"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160465"
 ---
 # <a name="vsgdbg-class"></a>VsgDbg (clase)
 Representa una interfaz para el control mediante programación del componente de aplicación de diagnóstico de gráficos.

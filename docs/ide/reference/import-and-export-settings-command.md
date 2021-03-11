@@ -1,4 +1,5 @@
 ---
+description: Importa, exporta o restablece la configuración de Visual Studio.
 title: comando para importar y exportar configuraciones
 ms.date: 11/21/2018
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 587cabb19105041b73c4767e26ab20fd074d148f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0f2ea4811af2c44277b9a6dc285972c5267b28d7
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852458"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223683"
 ---
 # <a name="import-and-export-settings-command"></a>comando para importar y exportar configuraciones
 
@@ -30,7 +31,7 @@ Importa, exporta o restablece la configuración de Visual Studio.
 Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
 ```
 
-## <a name="switches"></a>Modificadores
+## <a name="switches"></a>Conmutadores
 
 /export:`filename`
 
@@ -44,7 +45,7 @@ Opcional. Importa la configuración al archivo especificado.
 
 Opcional. Restablece la configuración actual.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Al ejecutar este comando sin modificadores se abre el Asistente **Importar y exportar configuraciones**. Para obtener más información, vea [Sincronizar la configuración](../synchronized-settings-in-visual-studio.md) y [Configuración del entorno](../environment-settings.md).
 
@@ -56,7 +57,7 @@ El comando siguiente exporta la configuración actual al archivo `MyFile.vssetti
 Tools.ImportandExportSettings /export:"c:\Files\MyFile.vssettings"
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Configuración del entorno](../../ide/environment-settings.md)
 - [Sincronizar la configuración](../../ide/synchronized-settings-in-visual-studio.md)

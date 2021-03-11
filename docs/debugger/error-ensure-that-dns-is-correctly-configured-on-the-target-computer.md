@@ -1,5 +1,6 @@
 ---
 title: Asegúrese de que DNS está bien configurado en el equipo de destino | Microsoft Docs
+description: Este error se produce cuando el equipo de destino no puede resolver el nombre del equipo host del depurador de Visual Studio.
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -14,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cc16217b20d08e9ad2d3b43d3b074652fdffec95
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cf61e50cc1a6a831625d9cb7c0b12a286e20239f
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871687"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102466256"
 ---
 # <a name="error-ensure-that-dns-is-correctly-configured-on-the-target-computer"></a>Error: Asegúrese de que DNS está bien configurado en el equipo de destino
 Al intentar realizar una depuración remota, es posible recibir el siguiente mensaje de error:

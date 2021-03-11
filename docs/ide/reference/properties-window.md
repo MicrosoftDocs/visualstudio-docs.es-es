@@ -1,4 +1,5 @@
 ---
+description: Use esta ventana para ver y cambiar las propiedades de tiempo de diseño y los eventos de los objetos seleccionados que se encuentran en editores y diseñadores.
 title: Ventana Propiedades
 ms.date: 11/04/2016
 ms.topic: reference
@@ -20,29 +21,29 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ff6435aa006de851a14f4f04570d086a86a5999
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ddbfb4d001f73e30296a35c2cff4aae0e0c527f9
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967987"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221124"
 ---
 # <a name="properties-window"></a>Propiedades (ventana)
 
 Use esta ventana para ver y cambiar las propiedades de tiempo de diseño y los eventos de los objetos seleccionados que se encuentran en editores y diseñadores. También puede usar la ventana **Propiedades** para editar y ver archivos, proyectos y propiedades de la solución. Puede ver la ventana **Propiedades** en el menú **Ver**. También puede abrirla si presiona **F4** o escribe **Propiedades** en el cuadro de búsqueda.
 
-En la ventana **Propiedades** se muestran distintos tipos de campos de edición, según las necesidades de una propiedad determinada. Estos campos de edición incluyen cuadros de edición, listas desplegables y vínculos a cuadros de diálogo del editor personalizado. Las propiedades atenuadas son de solo lectura.
+La ventana **Propiedades** muestra distintos tipos de campos de edición, dependiendo de los requisitos de cada propiedad. Estos campos de edición incluyen cuadros de edición, listas desplegables y vínculos a cuadros de diálogo del editor personalizado. Las propiedades atenuadas son de solo lectura.
 
 ## <a name="uielement-list"></a>Lista de UIElement
 
 Object name\
-Muestra el objeto o los objetos seleccionados actualmente. Solo se pueden ver los objetos del editor o diseñador activo. Si selecciona varios objetos, solo aparecen propiedades comunes a todos los objetos seleccionados.
+Muestra el objeto o los objetos seleccionados actualmente. Solo están visibles los objetos del editor o diseñador activo. Si selecciona varios objetos, solo aparecen propiedades comunes a todos los objetos seleccionados.
 
 Categorized\
-Muestra todas las propiedades y valores de propiedad del objeto seleccionado, por categoría. Puede contraer una categoría para reducir el número de propiedades visibles. Al expandir o contraer una categoría, aparece un signo más (+) o menos (-) a la izquierda del nombre de la categoría. Las categorías se muestran ordenadas alfabéticamente.
+Muestra, por categoría, todas las propiedades y los valores de las propiedades del objeto seleccionado. Una categoría se puede contraer para reducir el número de propiedades visibles. Cuando se contrae o expande una categoría, aparece un signo más (+) o un signo menos (-) a la izquierda del nombre de la categoría. Las categorías se muestran por orden alfabético.
 
 Alphabetical\
-Ordena alfabéticamente todas las propiedades de tiempo de diseño y los eventos de los objetos seleccionados. Para editar una propiedad no atenuada, haga clic en la celda a su derecha y escriba los cambios.
+Ordena alfabéticamente todas las propiedades y los eventos de tiempo de diseño para los objetos seleccionados. Para editar una propiedad no atenuada, haga clic en la celda a su derecha y escriba los cambios.
 
 Property Pages\
 Muestra el cuadro de diálogo **Páginas de propiedades** o el **Diseñador de proyectos** del elemento seleccionado. En Páginas de propiedades, se muestra un subconjunto, el mismo o un superconjunto de las propiedades disponibles en la ventana **Propiedades**. Use este botón para ver y editar propiedades relacionadas con la configuración activa del proyecto.

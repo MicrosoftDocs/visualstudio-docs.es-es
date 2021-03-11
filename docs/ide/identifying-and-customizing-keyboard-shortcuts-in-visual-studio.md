@@ -1,4 +1,5 @@
 ---
+description: Puede identificar los métodos abreviados de teclado de los comandos de Visual Studio, personalizarlos y exportarlos para que los usen otras personas.
 title: Identificar y personalizar métodos abreviados de teclado
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -17,12 +18,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 84d78a86c64cd85ea8738ec9038c5e64642ca950
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4686a6459f62fceeebe202cf52d7c30cf99f6fc3
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935955"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221254"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Identificar y personalizar métodos abreviados de teclado en Visual Studio
 
@@ -43,7 +44,7 @@ Si un método abreviado se asigna a un comando en el contexto *Global* y no a ot
 
 ## <a name="identify-a-keyboard-shortcut"></a>Identificar un método abreviado de teclado
 
-1. En la barra de menús, elija **Herramientas** > **Opciones**.
+1. En la barra de menús, seleccione **Herramientas** > **Opciones**.
 
 2. Expanda **Entorno** y elija **Teclado**.
 
@@ -63,7 +64,7 @@ Si un método abreviado se asigna a un comando en el contexto *Global* y no a ot
 
 ## <a name="customize-a-keyboard-shortcut"></a>Personalizar un método abreviado de teclado
 
-1. En la barra de menús, elija **Herramientas** > **Opciones**.
+1. En la barra de menús, seleccione **Herramientas** > **Opciones**.
 
 2. Expanda **Entorno** y elija **Teclado**.
 
@@ -109,7 +110,7 @@ Puede compartir los métodos abreviados de teclado personalizados exportándolos
 
 2. Seleccione **Exportar la configuración de entorno seleccionada** y elija el botón **Siguiente**.
 
-3. En **¿Qué configuración desea exportar?** , desactive la casilla **Todas las configuraciones**, expanda **Opciones** y, después, expanda **Entorno**.
+3. En **¿Qué configuración desea exportar?**, desactive la casilla **Todas las configuraciones**, expanda **Opciones** y, después, expanda **Entorno**.
 
 4. Active la casilla **Teclado** y elija el botón **Siguiente**.
 
@@ -139,14 +140,14 @@ De forma predeterminada, los accesos directos se guardan en un archivo de la car
 
 4. En **Mi configuración**, elija el archivo que contiene los métodos abreviados que quiere importar o elija el botón **Examinar** para buscar el archivo correcto.
 
-5. Seleccione **Siguiente**.
+5. Elija **Siguiente**.
 
-6. En **¿Qué configuración desea importar?** , desactive la casilla **Todas las configuraciones**, expanda **Opciones** y, después, expanda **Entorno**.
+6. En **¿Qué configuración desea importar?**, desactive la casilla **Todas las configuraciones**, expanda **Opciones** y, después, expanda **Entorno**.
 
 7. Active la casilla **Teclado** y elija **Finalizar**.
 
    ![Importar solo los métodos abreviados de teclado personalizados](../ide/media/importshortcuts.png)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Características de accesibilidad de Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)

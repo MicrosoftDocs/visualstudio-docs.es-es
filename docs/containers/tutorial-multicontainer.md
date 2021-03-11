@@ -7,12 +7,12 @@ ms.author: ghogen
 ms.date: 01/10/2020
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 1dd5e237e99333e9c2fb9414b3d32ff19b70dd9b
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: e5bd7673bc600d0ae84b0a343a071e2a8621e4b9
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101684268"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150215"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>Tutorial: Creación de una aplicación de varios contenedores con Docker Compose
 
@@ -62,7 +62,7 @@ Agregue un proyecto a la misma solución y asígnele el nombre *MyWebAPI*. Selec
    ![Captura de pantalla de la creación del proyecto de API web](./media/tutorial-multicontainer/docker-tutorial-mywebapi.png)
 ::: moniker-end
 ::: moniker range="vs-2019"
-   ![Captura de pantalla de la creación del proyecto de API web](./media/tutorial-multicontainer/vs-2019/create-web-api-project.png)
+   ![Captura de pantalla de la creación del proyecto de API web](./media/tutorial-multicontainer/vs-2019/create-webapi-project.png)
 ::: moniker-end
 
 ## <a name="add-code-to-call-the-web-api"></a>Adición de código para llamar a la API web

@@ -1,4 +1,5 @@
 ---
+description: Visual Studio Snapshot Debugger ahora está conectado a su servicio y puede empezar a recopilar instantáneas que le ayuden con la depuración.
 title: Página de inicio de Snapshot Debugger
 ms.date: 07/14/2018
 robots: noindex, nofollow
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f237f121d0bd0a5eaa57cd2b198024d22951622
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 96e0c6196d99b8a2b7ac9b4187dbd1397111abbd
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942001"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160347"
 ---
 # <a name="getting-started-with-the-snapshot-debugger"></a>Introducción a Snapshot Debugger
 

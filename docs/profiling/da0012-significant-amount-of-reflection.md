@@ -1,5 +1,6 @@
 ---
 title: 'DA0012: Cantidad significativa de reflexión | Microsoft Docs'
+description: Las llamadas a métodos System.Reflection, como InvokeMember y GetMember, o a métodos Type, como MemberInvoke, constituyen una proporción considerable de los datos de generación de perfiles.
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +15,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d69b0fca82984c4aa2d9fe80f0dc4e66b7ddc2d3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 733f9d6c38b93005c0344de2f3d5b1d43093c12e
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916802"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102469967"
 ---
 # <a name="da0012-significant-amount-of-reflection"></a>DA0012: Cantidad considerable de reflexión
 

@@ -1,4 +1,5 @@
 ---
+description: Escribe un mensaje en el archivo de seguimiento del visualizador de simultaneidad.
 title: marker_series::write_message (Método) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c5610cc623476fa395fae7bf68c2ffa127c96e2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 71a7e1783e470ee5ca1b7f1f18cd3d06cf1b5f49
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927904"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223880"
 ---
 # <a name="marker_serieswrite_message-method"></a>Método marker_series::write_message
 Escribe un mensaje en el archivo de seguimiento del visualizador de simultaneidad.
@@ -57,7 +58,7 @@ void write_message(
 ## <a name="requirements"></a>Requisitos
  **Encabezado:** *cvmarkersobj.h*
 
- **Espacio de nombres**: Concurrency::diagnostic
+ **Espacio de nombres:** Concurrency::diagnostic
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Clase marker_series](../profiling/marker-series-class.md)

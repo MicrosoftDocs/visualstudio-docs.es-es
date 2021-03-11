@@ -1,5 +1,6 @@
 ---
 title: Error de inicio de sesión del grupo de trabajo de forma remota | Microsoft Docs
+description: Este error se produce cuando se está depurando en un equipo de un grupo de trabajo y se intenta conectar con el equipo remoto.
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -18,12 +19,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f56c8d8e0113b400e9d9cd072ba16f304cd6192
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 582b38b7a4115a140f6031b2d4c9227edfd438d1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870849"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146241"
 ---
 # <a name="error-workgroup-remote-logon-failure"></a>Error: Error de inicio de sesión del grupo de trabajo de forma remota
 Este error reza como sigue:

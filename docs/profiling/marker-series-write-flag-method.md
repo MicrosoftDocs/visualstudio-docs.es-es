@@ -1,4 +1,5 @@
 ---
+description: Escribe una marca en el archivo de seguimiento del visualizador de simultaneidad.
 title: marker_series::write_flag (Método) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 99601d34a3ad996d8e9e7cd4baf02e51423d8b3c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5223c466674ba0d7d623cc33a3989d359bbabea2
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923718"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223893"
 ---
 # <a name="marker_serieswrite_flag-method"></a>Método marker_series::write_flag
 Escribe una marca en el archivo de seguimiento del visualizador de simultaneidad.
@@ -57,7 +58,7 @@ void write_flag(
 ## <a name="requirements"></a>Requisitos
  **Encabezado:** *cvmarkersobj.h*
 
- **Espacio de nombres**: Concurrency::diagnostic
+ **Espacio de nombres:** Concurrency::diagnostic
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Clase marker_series](../profiling/marker-series-class.md)

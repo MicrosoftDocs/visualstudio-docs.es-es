@@ -1,5 +1,6 @@
 ---
 title: 'DA0505: Promedio de bytes privados asignados al proceso del que se va a generar el perfil | Microsoft Docs'
+description: Este mensaje indica la cantidad media de memoria virtual que el proceso ha asignado actualmente en bytes (bytes privados).
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ff2ab87ab783ea58ffa060c0c6d29a8ca0dd8468
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f141ce40c22fbd6ee9445dc676b49f0d601f2a74
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918061"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102465821"
 ---
 # <a name="da0505-average-private-bytes-allocated-for-the-process-being-profiled"></a>DA0505: Promedio de bytes privados asignados al proceso que se va a perfilar
 

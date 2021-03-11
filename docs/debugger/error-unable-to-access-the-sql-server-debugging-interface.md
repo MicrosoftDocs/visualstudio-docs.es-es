@@ -1,4 +1,5 @@
 ---
+description: Este mensaje aparece cuando intenta la depuración de SQL en un equipo donde no está habilitada la depuración de SQL.
 title: No se puede obtener acceso a la interfaz de depuración de SQL Server | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -15,12 +16,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f14143052ed3eb65e74e284e0877d9b32cb17bf7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f73ca5586b80cd72c952c8ab511061d877ed7b37
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871096"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146474"
 ---
 # <a name="error-unable-to-access-the-sql-server-debugging-interface"></a>Error: No se puede obtener acceso a la interfaz de depuración de SQL Server
 Este mensaje aparece cuando intenta la depuración de SQL en un equipo donde no está habilitada la depuración de SQL.

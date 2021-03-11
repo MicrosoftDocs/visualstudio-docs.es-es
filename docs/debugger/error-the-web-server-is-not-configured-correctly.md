@@ -1,4 +1,5 @@
 ---
+description: Después de seguir los pasos detallados aquí para resolver la incidencia y, antes de volver a intentar la depuración, es posible que también necesite restablecer IIS.
 title: El servidor web no está configurado correctamente | Microsoft Docs
 ms.date: 09/20/2017
 ms.topic: error-reference
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a5c50822b516b73206791e3d8538bd174cfc8f6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 82af476e51e8fe016e5966847c8c6a7b3e45b0ce
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871239"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146527"
 ---
 # <a name="error-the-web-server-is-not-configured-correctly"></a>Error: El servidor Web no está configurado correctamente
 

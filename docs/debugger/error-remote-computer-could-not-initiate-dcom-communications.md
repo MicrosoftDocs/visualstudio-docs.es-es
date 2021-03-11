@@ -1,4 +1,5 @@
 ---
+description: Se ha producido un error de DCOM cuando el equipo remoto ha intentado comunicarse con el equipo local.
 title: El equipo remoto no ha podido iniciar comunicaciones DCOM | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -14,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ecc23af6335aa29adcad6dbe9e7869ab26cc0bc6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 86d6c46f338d789d6b113551ac9d99c681290526
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871486"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146787"
 ---
 # <a name="error-remote-computer-could-not-initiate-dcom-communications"></a>Error: El equipo remoto no ha podido iniciar comunicaciones DCOM
 Se ha producido un error de DCOM cuando el equipo remoto ha intentado comunicarse con el equipo local. El equipo local es el equipo que está
