@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 6255b6a3-f101-4b2c-b7fa-851eccc944b2
-ms.date: 12/02/2020
+ms.date: 02/19/2021
 ms.topic: conceptual
 description: Obtenga información sobre la ventaja de CloudPilot disponible en las suscripciones de Visual Studio.
-ms.openlocfilehash: 505e4caad5ee6d9b70fc50769c8a008469aa1345
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 4d9b7bea4b2165b8efc9f57396b078c42a5fc8eb
+ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96538155"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102473366"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Ventaja de CloudPilot para suscripciones de Visual Studio
 Transfiera las aplicaciones a Microsoft Azure fácilmente y en pocos pasos. Identifique todos los cambios de código necesarios en cuestión de minutos debajo de la línea de código. Así, podrá efectuar una migración correcta a contenedores, máquinas virtuales, App Services, SQL Azure o una instancia administrada de SQL. A continuación, migre las aplicaciones a Azure mediante asistentes que utilicen ASR, DMA y DMS.
@@ -81,7 +81,7 @@ CloudPilot, de UnifyCloud, está diseñado para ayudar a los desarrolladores a t
   - [Manual del usuario de CloudPilot](https://www.cloudatlasinc.com/cloudpilot/doc/CloudPilot-User-Manual.pdf )
   - [Enviar una solicitud de soporte técnico](https://support.datacamp.com/hc/requests/new)
 
-- Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
+- Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación de Suscripciones de Visual Studio, consulte [Soporte técnico de Suscripciones](https://aka.ms/vssubscriberhelp) de Visual Studio.
 - ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Vea también

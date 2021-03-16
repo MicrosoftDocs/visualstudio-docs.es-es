@@ -12,12 +12,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: d41beea47e8173170ea2d428b40bd7c7ed8ff67e
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 619f1f1cc99cbab425bc1bcb2bac181e09db8fc4
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101684156"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102250065"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>Depuración remota de ASP.NET Core en IIS en Azure en Visual Studio
 
@@ -79,13 +79,23 @@ Desde Visual Studio puede publicar y depurar rápidamente la aplicación en una 
 
 1. En Visual Studio, haga clic con el botón derecho en el nodo del proyecto y elija **Publicar**.
 
-    Si previamente ha configurado algún perfil de publicación, aparece el panel **Publicar**. Haga clic en **Nuevo perfil**.
+    Si previamente ha configurado algún perfil de publicación, aparece el panel **Publicar**. Seleccione **Nuevo** o **Nuevo perfil**.
 
-1. Elija **Azure App Service** en el cuadro de diálogo **Publicar**, seleccione **Crear nuevo** y siga las indicaciones para crear un perfil.
+1. Cree un perfil de publicación.
 
-    Para obtener instrucciones detalladas, vea [Publicar una aplicación de ASP.NET Core en Azure con Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
+    ::: moniker range=">=vs-2019"
+    Elija **Azure** en el cuadro de diálogo **Publicar** y seleccione **Siguiente**. A continuación, elija **Azure App Service (Windows)** , seleccione **Siguiente** y siga las indicaciones para crear un perfil.
+
+    :::image type="content" source="../debugger/media/vs-2019/remotedbg-azure-app-service-profile.png" alt-text="Implementación de una aplicación web de ASP.NET Core en Azure con Visual Studio":::
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+
+    Elija **Azure App Service** en el cuadro de diálogo **Publicar**, seleccione **Crear nuevo** y siga las indicaciones para crear un perfil.
 
     ![Publicación en Azure App Service](../debugger/media/remotedbg_azure_app_service_profile.png)
+    ::: moniker-end
+
+    Para obtener instrucciones más detalladas, vea [Publicar una aplicación de ASP.NET Core en Azure con Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)
 
 1. En la ventana Publicar, elija **Editar configuración** y cambie a una configuración de depuración; a continuación, elija **Publicar**.
 
@@ -106,6 +116,7 @@ Desde Visual Studio puede publicar y depurar rápidamente la aplicación en una 
 Puede crear una máquina virtual de Azure para Windows Server y, a continuación, instalar y configurar IIS y los demás componentes de software necesarios. Esto supone más tiempo que la implementación en Azure App Service e implica seguir los pasos restantes de este tutorial.
 
 Estos procedimientos se han probado en estas configuraciones de servidor:
+
 * Windows Server 2012 R2 e IIS 8
 * Windows Server 2016 e IIS 10
 * Windows Server 2019 e IIS 10
@@ -143,7 +154,7 @@ Al descargar el software, es posible que reciba solicitudes para conceder permis
     > [!NOTE]
     > Si el sistema no tiene conexión a Internet, obtenga e instale *[Microsoft Visual C++ 2015 Redistributable](https://www.microsoft.com/download/details.aspx?id=53840)* antes de instalar el lote de hospedaje .NET Core Windows Server.
 
-3. Reinicie el sistema (o ejecute **net stop was /y** seguido de **net start w3svc** desde un símbolo del sistema para obtener un cambio en la ruta de acceso del sistema).
+2. Reinicie el sistema (o ejecute **net stop was /y** seguido de **net start w3svc** desde un símbolo del sistema para obtener un cambio en la ruta de acceso del sistema).
 
 ## <a name="choose-a-deployment-option"></a>Elección de una opción de implementación
 

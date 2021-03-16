@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: a335ed23-34ee-40cb-83c6-6c93dee57424
-ms.date: 10/26/2020
+ms.date: 02/18/2021
 ms.topic: how-to
 description: Conozca cómo para aprovechar los precios especiales de Azure DevTest disponibles para los clientes con Contrato Enterprise.
-ms.openlocfilehash: a4da6356c250b3c07cb19fb8bf4c5e260e9d3e29
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 9043a2d8f3ab069bcc02375089780d16d1e8a18b
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904469"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249476"
 ---
 # <a name="azure-enterprise-agreement-devtest-offer"></a>Oferta de Contrato Enterprise de Azure DevTest
 
@@ -32,7 +32,7 @@ Para habilitar las ofertas:
 0. Mantenga el puntero sobre el nombre de la cuenta. 
 0. Haga clic en el icono **Editar** (lápiz) situado en el extremo derecho. 
 0. Haga clic en la casilla **Desarrollo/pruebas**.
-0. Haga clic en **Save** (Guardar).
+0. Haga clic en **Save**(Guardar).
 
 ## <a name="create-individual-subscriptions-within-the-account"></a>Creación de suscripciones individuales en la cuenta
 Cada suscriptor de la cuenta puede crear una suscripción siguiendo estos pasos:
@@ -40,6 +40,9 @@ Cada suscriptor de la cuenta puede crear una suscripción siguiendo estos pasos:
 0. Seleccione la oferta **Desarrollo/pruebas - Enterprise**.
 0. Haga clic en la casilla para confirmar que la suscripción se rige por el Contrato Enterprise. 
 0. Haga clic en **Comprar**.  (Con esta oferta, en realidad no está comprando nada).
+
+## <a name="resources"></a>Recursos
+- ¿Necesita ayuda?  Póngase en contacto con [Soporte de la suscripción de Visual Studio](https://visualstudio.microsoft.com/subscriptions/support/).
 
 ## <a name="see-also"></a>Consulte también
 - [Documentación de Visual Studio](/visualstudio/)

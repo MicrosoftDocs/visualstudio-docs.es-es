@@ -2,7 +2,7 @@
 title: Administrar paquetes de npm
 description: Visual Studio ayuda a administrar paquetes mediante el administrador de paquetes de Node.js (npm)
 ms.custom: seodec18
-ms.date: 04/16/2020
+ms.date: 02/23/2021
 ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 26c750a11c2910a6c6f91e1207d731024af64a5f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b017495d12d654be3e11da7153310b5bcba367d5
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962722"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165818"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Administrar paquetes de npm en Visual Studio
 
@@ -179,5 +179,7 @@ La instalación de un paquete puede tardar varios minutos. Para comprobar el pro
 * Para los proyectos de Node.js, deberá tener instalada la carga de trabajo **Desarrollo de Node.js** con el fin de obtener compatibilidad con npm.
 
 * En algunos escenarios, es posible que el Explorador de soluciones no muestre el estado correcto de los paquetes de npm instalados. Esto se debe a un error conocido que se describe [aquí](https://github.com/aspnet/Tooling/issues/479). Por ejemplo, es posible que el paquete aparezca como no instalado cuando sí que lo está. En la mayoría de los casos, se puede actualizar el Explorador de soluciones eliminando *package.json*, reiniciando Visual Studio y agregando de nuevo el archivo *package.json*, tal como se ha descrito anteriormente en este artículo. También puede usar la ventana de salida de npm para comprobar el estado de instalación al instalar paquetes.
+
+* En algunos escenarios ASP.NET Core, es posible que el nodo npm de Explorador de soluciones no esté visible después de que compile el proyecto. Para que el nodo esté visible de nuevo, haga clic con el botón derecho en el nodo del proyecto y elija **Descargar el proyecto**. Haz clic con el botón derecho en el nodo de proyecto y elige **Volver a cargar el proyecto**.
 
 * Si ve algún error al compilar la aplicación o al transpilar el código TypeScript, compruebe las incompatibilidades del paquete de npm como posible fuente de errores. Para poder identificar los errores, compruebe la ventana de salida de npm al instalar los paquetes, tal y como se describe anteriormente en este artículo. Por ejemplo, si una o varias de las versiones del paquete de npm están en desuso y generan un error, deberá instalar una versión más reciente para corregir los errores. Para obtener información sobre cómo usar *package.json* para controlar las versiones del paquete de npm, consulte [package.json configuration](../javascript/configure-packages-with-package-json.md) (Configuración de package.json).

@@ -2,7 +2,7 @@
 title: Introducción a las herramientas de generación de perfiles
 description: Eche un vistazo breve a las distintas herramientas de diagnóstico disponibles en Visual Studio.
 ms.custom: ''
-ms.date: 09/08/2020
+ms.date: 02/18/2021
 ms.topic: overview
 f1_keywords:
 - vs.diagnosticshub.overview
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bfd7055303fed2c18501d5eea3b49b34c68ec248
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 855a04fae1d5b406019e758c6d6f931d6657bb4e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929113"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145383"
 ---
 # <a name="first-look-at-profiling-tools"></a>Un primer vistazo a las herramientas de generación de perfiles
 
@@ -162,6 +162,14 @@ La herramienta muestra cada consulta en una vista de lista. Puede ver informaci�
 
 ![Asignación](./media/db-gotosource.png "Asignación")
 
+## <a name="visualize-net-counters-net-core"></a>Visualización de contadores de .NET (.NET Core)
+
+A partir de la versión 16.7 de Visual Studio 2019, puede usar la [herramienta contadores de .NET](../profiling/dotnet-counters-tool.md) en Visual Studio para visualizar los contadores de rendimiento. Puede visualizar los contadores creados mediante los [contadores de dotnet](/dotnet/core/diagnostics/dotnet-counters). Los contadores de dotnet admiten muchos contadores, como el uso de CPU y el tamaño del montón del recolector de elementos no utilizados.
+
+La herramienta muestra los valores activos de cada contador en una vista de lista.
+
+:::image type="content" source="../profiling/media/dotnet-counters-tool-collecting.png" alt-text="Herramienta .NET Counters recopilando datos.":::
+
 ::: moniker-end
 
 ## <a name="examine-ui-performance-and-accessibility-events-uwp"></a>Examinar eventos de accesibilidad y rendimiento de la interfaz de usuario (UWP)
@@ -235,6 +243,7 @@ En esta tabla se muestra una lista de las distintas herramientas que ofrece Visu
 |[Escala de tiempo de la aplicación](../profiling/application-timeline.md)|sí (XAML)|sí|No|
 |[Visor de eventos](../profiling/events-viewer.md)|sí|sí|sí|
 |[.NET Async](../profiling/analyze-async.md)|sí (solo .NET)|sí|sí|
+|[Contadores de .NET](../profiling/dotnet-counters-tool.md)|sí (solo .NET Core)|No|sí (solo ASP.NET Core)|
 |[Base de datos](../profiling/analyze-database.md)|sí (solo .NET Core)|No|sí (solo ASP.NET Core)|
 |[Explorador de rendimiento](#analyze-performance-legacy-tools)|No|no|No|
 |[IntelliTrace](../debugger/intellitrace.md)|Solo .NET con Visual Studio Enterprise|Solo .NET con Visual Studio Enterprise|Solo .NET con Visual Studio Enterprise|

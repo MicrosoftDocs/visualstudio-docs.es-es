@@ -1,4 +1,5 @@
 ---
+description: Inicializa una nueva instancia de la clase marker_series.
 title: marker_series::marker_series (Constructor) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: afb15ceed45389d1c442c18cf14e8eaf4150631f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 88d82c78bc6126f6b3d96b77b39c729c4f452a28
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917647"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223984"
 ---
 # <a name="marker_seriesmarker_series-constructor"></a>Constructor marker_series::marker_series
 Inicializa una nueva instancia de la clase `marker_series`.
@@ -46,7 +47,7 @@ marker_series(
 ## <a name="requirements"></a>Requisitos
  **Encabezado:** *cvmarkersobj.h*
 
- **Espacio de nombres**: Concurrency::diagnostic
+ **Espacio de nombres:** Concurrency::diagnostic
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Clase marker_series](../profiling/marker-series-class.md)

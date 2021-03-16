@@ -1,4 +1,5 @@
 ---
+description: Inicializa una nueva instancia de la clase span.
 title: span::span (Constructor) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a813506e64242d1effdb9ed64d35c9ee5d31239
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fdffdc59b31f5f04817536769d9a712484e6cdd7
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949979"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223867"
 ---
 # <a name="spanspan-constructor"></a>span::span (Constructor)
 
@@ -66,8 +67,8 @@ span(
 
 **Encabezado:** *cvmarkersobj.h*
 
-**Espacio de nombres**: Concurrency::diagnostic
+**Espacio de nombres:** Concurrency::diagnostic
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Clase span](../profiling/span-class.md)

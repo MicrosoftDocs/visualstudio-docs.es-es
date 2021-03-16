@@ -4,18 +4,18 @@ author: evanwindom
 ms.author: lank
 manager: cabuschl
 ms.assetid: da8df006-4896-4ff9-b487-698d78deabc3
-ms.date: 07/30/2020
+ms.date: 02/18/2021
 ms.topic: conceptual
 description: Aprenda a buscar, reclamar y exportar claves de producto en suscripciones de Visual Studio
-ms.openlocfilehash: a246f66e429b78647f217468c7c19b703b419062
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 5e055295e76ee91dbaf641256b8b7e93a530fcfb
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "91004972"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249266"
 ---
 # <a name="finding-and-claiming-product-keys-in-visual-studio-subscriptions"></a>Búsqueda y reclamación de claves de producto en suscripciones de Visual Studio
-En este artículo se explica cómo buscar, reclamar y exportar claves de producto desde https://my.visualstudio.com/productkeys.  Para obtener más información sobre la activación de un producto con una clave, las versiones de licencia de minorista y por volumen de claves y los límites diarios de reclamación de claves de producto, visite la [introducción a las claves de producto](product-keys.md).
+En este artículo se explica cómo buscar, reclamar y exportar claves de producto desde https://my.visualstudio.com/productkeys.  Para obtener más información sobre la activación de un producto con una clave, las versiones de licencia de minorista y por volumen de claves y los límites diarios de reclamación de claves de producto, consulte la [introducción a las claves de producto](product-keys.md).
 
 ## <a name="locating-and-claiming-product-keys"></a>Búsqueda y reclamación de claves de producto
 Debe iniciar sesión en su suscripción de Visual Studio para ver las claves de producto. Encontrará las claves de producto individuales si selecciona el vínculo azul **Obtener clave** de un determinado producto en la página [Descargas](https://my.visualstudio.com/downloads).  Todas las claves también se encuentran disponibles en la página [Claves de producto](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs). Si hay varias claves para un solo producto, en la columna Notas de la descarga aparecerán unas notas para ayudarle a identificar qué clave se debe usar.
@@ -36,11 +36,11 @@ Según cuál sea el producto, hay disponibles diversos tipos de clave.
 |    Activación múltiple        |    Una clave de activación múltiple (MAK) le permite activar varias instalaciones de un producto con la misma clave. Por lo general, las MAK se usan con versiones de productos para licencias por volumen. Normalmente, se proporciona una sola clave MAK por suscripción.    |
 |    Clave de activación estática    |    Las claves de activación estática se proporcionan para los productos que no necesitan activación. Se pueden usar para un número variado de instalaciones.                                                                                                                  |
 |    Clave personalizada                 |    Las claves personalizadas proporcionan acciones o información especial para activar o instalar el producto.                                                                                                                                                                |
-|    VA 1.0                     |    Son varias claves de activación, similares a MAK.                                                                                                                                                                                                 |
-|    Clave OEM                    |    Son claves para Fabricante de equipo original, que permiten varias activaciones.                                                                                                                                                                       |
-|    Clave comercial DreamSpark    |    Estas claves comerciales son para DreamSpark y permiten solo una activación. Las claves comerciales DreamSpark se emiten por lotes y están pensadas principalmente para los estudiantes.                                                                                     |
-|    Clave de laboratorio DreamSpark         |    Estas claves de uso de laboratorio son para los programas DreamSpark y permiten varias activaciones. Las claves para laboratorio DreamSpark están diseñadas para su uso en escenarios de laboratorios informáticos universitarios.                                                                                       |
-|    Clave MAK DreamSpark         |    Son claves MAK para los clientes de programas DreamSpark.                                                                                                                                                                                                  |
+|    VA 1.0                     |    Varias claves de activación, similares a MAK.                                                                                                                                                                                                 |
+|    Clave OEM                    |    Claves del fabricante de equipo original, que permiten varias activaciones.                                                                                                                                                                       |
+|    Clave comercial DreamSpark    |    Claves comerciales para DreamSpark, que permiten solo una activación. Las claves comerciales DreamSpark se emiten por lotes y están pensadas principalmente para los estudiantes.                                                                                     |
+|    Clave de laboratorio DreamSpark         |    Claves de uso de laboratorio, para los programas DreamSpark que permiten varias activaciones. Las claves para laboratorio DreamSpark están diseñadas para su uso en escenarios de laboratorios informáticos universitarios.                                                                                       |
+|    Clave MAK DreamSpark         |    Claves MAK, para los clientes de programas DreamSpark.                                                                                                                                                                                                  |
 |
 
 Puede reclamar una clave en la página de descarga del producto, o bien buscar la clave que necesita en la página [Claves de producto](https://my.visualstudio.com/productkeys).
@@ -56,21 +56,24 @@ Para reclamar una clave de producto:
 > ![Búsqueda de la clave de producto](_img/product-keys/search-keys.png "Desplácese hasta el producto deseado o use el cuadro de búsqueda para localizar rápidamente cualquier producto.")
    
 En este ejemplo se ha usado la barra de búsqueda para encontrar una clave de producto de Visual Studio Enterprise 2019.
-Como puede ver, aparecen varias versiones.  Una clave ya se ha reclamado para Visual Studio Enterprise 2019 versiones 16.0 y 16.1.  Todavía hay otras claves de tipos diferentes disponibles para ambas versiones. Observe que en la columna **Notas** puede incluir una breve nota sobre las claves reclamadas.  Puede usar esta información junto con la fecha reflejada en la columna **Reclamado** para llevar un seguimiento de las claves reclamadas.  Por ejemplo, en las notas puede dejar constancia de cuándo ha activado una instalación del producto con la clave.
+Como puede ver, aparecen varias versiones.  Una clave ya se ha reclamado para Visual Studio Enterprise 2019 versiones 16.0 y 16.1.  Todavía hay otras claves de tipos diferentes disponibles para ambas versiones. Observe que en la columna **Notas** puede incluir una breve nota sobre las claves reclamadas.  Puede usar esta información con la fecha reflejada en la columna **Reclamado** para llevar un seguimiento de las claves reclamadas.  Por ejemplo, en las notas puede dejar constancia de cuándo ha activado una instalación del producto con la clave.
 
 ### <a name="exporting-your-claimed-keys"></a>Exportación de claves reclamadas
-Puede exportar una lista de todas las claves que ha reclamado, junto con una amplia selección de claves estáticas y de otro tipo que se marcan automáticamente como "reclamadas".
+Puede exportar una lista de las claves que ha reclamado.  Esto incluye una gran selección de claves estáticas y otras que se marcan automáticamente como "reclamadas".
 
 > [!IMPORTANT]
 > Si la suscripción expira, ya no podrá reclamar claves nuevas ni exportar las claves que ya haya reclamado.
 
-Para exportar las claves, basta con seleccionar el vínculo **Exportar todas las claves** situado en el extremo derecho de la página Claves de producto.  Se creará un archivo .xml llamado KeysExport.xml y podrá optar entre abrirlo o guardarlo.  Debe abrir el archivo con una aplicación capaz de administrar archivos .xml.  Por ejemplo, puede abrir el archivo como libro de solo lectura en Excel.
+Para exportar las claves, seleccione el vínculo **Exportar todas las claves** situado en el extremo derecho de la página Claves de producto.  Se creará un archivo .xml llamado KeysExport.xml y podrá optar entre abrirlo o guardarlo.  Debe abrir el archivo con una aplicación capaz de administrar archivos .xml.  Por ejemplo, puede abrir el archivo como libro de solo lectura en Excel.
 
-## <a name="see-also"></a>Vea también
+## <a name="resources"></a>Recursos
+- [Soporte técnico para suscripciones de Visual Studio](https://my.visualstudio.com/gethelp)
+
+## <a name="see-also"></a>Consulte también
 - [Documentación de Visual Studio](/visualstudio/)
 - [Documentación de Azure DevOps](/azure/devops/)
 - [Documentación de Azure](/azure/)
 - [Documentación de Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Pasos siguientes
-Cuando esté listo para descargar software y usar claves, visite https://my.visualstudio.com/downloads.  Para obtener más información sobre la descarga de software, vea la [introducción a la descarga](download-software.md).
+Cuando esté listo para descargar software y usar claves, visite https://my.visualstudio.com/downloads.  Para obtener más información sobre la descarga de software, consulte la [introducción a la descarga](download-software.md).

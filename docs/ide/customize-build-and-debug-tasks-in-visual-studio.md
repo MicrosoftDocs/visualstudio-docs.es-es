@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1088cae031dc3498d2c5cdcd33db8d42f721b7d7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 659e0f4e46d6960a2a1350c605e55357a84ec115
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954428"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161305"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Personalización de las tareas de compilación y depuración para el desarrollo de "Abrir carpeta"
 
@@ -217,7 +217,7 @@ Puede crear tareas para cualquier archivo o carpeta si especifica su nombre en e
 
 |Macro|Descripción|
 |-|-|
-|`${env.<VARIABLE>}`| Especifica cualquier variable de entorno (por ejemplo, ${env.PATH}, ${env.COMSPEC}, etc.) que esté establecida para el símbolo del sistema para desarrolladores. Para obtener más información, vea [Símbolo del sistema para desarrolladores de Visual Studio](/dotnet/framework/tools/developer-command-prompt-for-vs).|
+|`${env.<VARIABLE>}`| Especifica cualquier variable de entorno (por ejemplo, ${env.PATH}, ${env.COMSPEC}, etc.) que esté establecida para el símbolo del sistema para desarrolladores. Para más información, consulte [Símbolo del sistema para desarrolladores y PowerShell para desarrolladores](../ide/reference/command-prompt-powershell.md).|
 |`${workspaceRoot}`| La ruta de acceso completa a la carpeta del área de trabajo (por ejemplo, *C:\sources\hello*)|
 |`${file}`| La ruta de acceso completa del archivo o la carpeta seleccionados para la ejecución de esta tarea (por ejemplo, *C:\sources\hello\src\hello.js*)|
 |`${relativeFile}`| La ruta de acceso relativa al archivo o la carpeta (por ejemplo, *src\hello.js*)|

@@ -277,8 +277,6 @@
     - name: Conexión a proyectos en Team Explorer
       displayName: Azure DevOps VSTS
       href: ide/connect-team-project.md
-    - name: "Nueva experiencia de Git en Visual\_Studio"
-      href: ide/git-with-visual-studio.md
     - name: Editor
       items:
         - name: Usar el editor
@@ -903,6 +901,12 @@
       href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
 - name: Depurar >>
   href: debugger/index.yml
+- name: Control de versiones
+  items:
+    - name: "Nueva experiencia de Git en Visual\_Studio"
+      href: ide/git-with-visual-studio.md
+    - name: Comparación de Git y Team Explorer en paralelo
+      href: ide/git-team-explorer-feature-comparison.md
 - name: Probar >>
   displayName: Unit testing
   href: test/index.yml

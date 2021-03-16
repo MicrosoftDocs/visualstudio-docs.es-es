@@ -1,4 +1,5 @@
 ---
+description: Este error se produce si ASP.NET no está correctamente instalado en el equipo en el que intenta depurar.
 title: ASP.NET no está instalado
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -19,12 +20,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - aspnet
-ms.openlocfilehash: 2388e59ae760e28c8f778ab8ccb15265414174b7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 205f0fb3948414ec87b735af9b1b97917872a950
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871759"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147060"
 ---
 # <a name="error-aspnet-not-installed"></a>Error: ASP.NET no está instalado
 Este error se produce si [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] no está correctamente instalado en el equipo en el que intenta depurar. Esto puede significar que nunca se instaló [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] o que se instaló [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] antes que IIS.

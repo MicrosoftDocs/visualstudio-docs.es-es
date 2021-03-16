@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 959d015bd23c91ec2ba6215c7a5b42d13b37ee29
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 52264580e428fa6a2c33d80ea8fb9fb8e07f0c59
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865831"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149332"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>Configuración del Firewall de Windows para la depuración remota
 
@@ -49,6 +49,16 @@ Visual Studio y el depurador remoto intentan abrir los puertos correctos durant
 1. Agregue un nombre para la regla (por ejemplo, **msvsmon**, **IIS** o **Web Deploy**) y, después, seleccione **Finalizar**.
 
    Aparecerá la nueva regla, que podrá seleccionar en la lista **Reglas de entrada** o **Reglas de salida**.
+
+**Para abrir un puerto mediante PowerShell:**
+
+En el caso de Firewall de Windows, puede usar comandos de PowerShell como [New-NetFirewallRule](/powershell/module/netsecurity/new-netfirewallrule?view=win10-ps).
+
+En el siguiente ejemplo se abre el puerto 4024 para el depurador remoto en el equipo remoto. La ruta de acceso que necesita usar puede ser diferente.
+
+```ps
+New-NetFirewallRule -DisplayName "msvsmon" -Direction Inbound -Program "Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe" -LocalPort 4024 -Protocol TCP -Authentication Required -Action Allow
+```
 
 ### <a name="ports-on-the-remote-computer-that-enable-remote-debugging"></a>Puertos en el equipo remoto que habilitan la depuración remota
 

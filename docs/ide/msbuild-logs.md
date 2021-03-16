@@ -2,7 +2,7 @@
 title: Solución de problemas y creación de registros para MSBuild
 description: Aprenda a diagnosticar problemas de compilación en el proyecto de Visual Studio y, en caso necesario, a crear un registro para enviarlo a Microsoft para su investigación.
 ms.custom: SEO-VS-2020
-ms.date: 06/27/2019
+ms.date: 02/08/2021
 ms.technology: vs-ide-compile
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -17,12 +17,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Generate build logs for msbuild projects to collect helpful information when troubleshooting issues.
-ms.openlocfilehash: d9308bff68a5a5377c025bba5861ac344dcb0326
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3496eb5a0e8f699a994037ccc853a76e4f93e4ee
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880494"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225226"
 ---
 # <a name="troubleshoot-and-create-logs-for-msbuild-problems"></a>Solución de problemas y creación de registros para MSBuild
 
@@ -99,22 +99,41 @@ Si va a compilar en el IDE de Visual Studio (con información detallada sobre l
 1>Project is not up-to-date: build input 'f:\test\project1\project1\project1.h' was modified after the last build finished.
 ```
 
-## <a name="create-a-binary-msbuild-log"></a>Creación de un registro de msbuild binario
+## <a name="create-a-binary-msbuild-log-at-the-command-prompt"></a>Creación de un registro de MSBuild binario en el símbolo del sistema
 
 1. Abra el símbolo del sistema para desarrolladores de su versión de Visual Studio.
+
 1. En el símbolo del sistema, ejecute uno de los comandos siguientes (no olvide usar los valores reales del proyecto y la configuración):
 
-    ```cmd
-    Msbuild /p:Configuration="MyConfiguration";Platform="x86" /bl MySolution.sln
-    ```
+   ```cmd
+   Msbuild /p:Configuration="MyConfiguration";Platform="x86" /bl MySolution.sln
+   ```
 
-    o
+   o
 
-    ```cmd
-    Msbuild /p:/p:SolutionDir="c:\MySolutionDir\";Configuration="MyConfiguration";Platform="Win32" /bl MyProject.vcxproj
-    ```
+   ```cmd
+   Msbuild /p:SolutionDir="c:\MySolutionDir\";Configuration="MyConfiguration";Platform="Win32" /bl MyProject.vcxproj
+   ```
 
-Se creará un archivo Msbuild.binlog en el directorio desde el que ejecutó MSBuild. Puede verlo y buscar en él por medio del [visor de registros estructurado de Msbuild](http://www.msbuildlog.com/).
+Se obtiene un archivo *msbuild.binlog* en el directorio desde el que ejecutó MSBuild.
+
+## <a name="create-a-binary-msbuild-log-by-using-the-project-system-tools-extension"></a>Creación de un registro de MSBuild binario mediante la extensión de herramientas del sistema del proyecto
+
+1. Descargue e instale la [extensión de herramientas del sistema del proyecto](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ProjectSystemTools).
+
+1. Una vez instalada la extensión, algunos elementos nuevos aparecen en el menú **Ver** > **Otras ventanas**.
+
+   ![Menú Otras ventanas](../ide/media/view-menu.png)
+
+1. Seleccione **Ver** > **Otras ventanas** > **Build Logging** (Registro de compilación) para mostrar la ventana **Registro de compilación** en Visual Studio. Elija el primer icono de la barra de herramientas para iniciar la grabación de compilaciones normales y en tiempo de diseño en el sistema del proyecto.
+
+   ![Ventana Registro de compilación](../ide/media/build-logging-click-to-record.png)
+
+1. Una vez que se registra una compilación, aparece en la ventana Registro de compilación. Haga clic con el botón derecho en el elemento y seleccione **Guardar registros** en el menú contextual para guardar el archivo *.binlog*.
+
+   ![Menú contextual Registro de compilación](../ide/media/build-logging-context-menu.png)
+
+Puede verlo y buscar los archivos *.binlog* por medio del [visor de registros estructurado de Msbuild](http://www.msbuildlog.com/).
 
 ## <a name="create-a-detailed-log"></a>Creación de un registro detallado
 

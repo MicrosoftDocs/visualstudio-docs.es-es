@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
-ms.date: 02/04/2021
+ms.date: 03/05/2021
 ms.topic: conceptual
 description: Preguntas sobre facturación para suscripciones de nube.
-ms.openlocfilehash: a812965a549f2e6e6d6c58366d943f3129d951cd
-ms.sourcegitcommit: 55bc9df751a21656de8cc5b6dbd8a2a1915ec690
+ms.openlocfilehash: d3c370eecab49de5f4ea5001e6052c18ff83e00b
+ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99572881"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102473418"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Preguntas más frecuentes sobre facturación relativas a suscripciones de nube de Visual Studio
 [Coteje los precios y ventajas de las distintas suscripciones de nube](https://visualstudio.microsoft.com/vs/pricing/) para conocer las ventajas de cada suscripción de Visual Studio; compare las suscripciones de nube con las suscripciones estándar de Visual Studio y estudie los detalles de las ventajas de suscriptor, entre otras muchas cosas.
@@ -56,7 +56,7 @@ Si, más adelante, la cantidad de pago se incrementa, también prorratearemos la
 ### <a name="q-how-are-annual-cloud-subscription-charges-processed"></a>P: ¿Cómo se procesan los cargos de las suscripciones de nube **anuales**?
 R: En cada compra, facturaremos inmediatamente la cantidad total adquirida. Los cargos no se distribuyen a lo largo del año y no hay ningún prorrateo. Si se adquieren suscripciones de nube anuales en distintos momentos del año, tendrá suscripciones que se renueven en distintos meses. En este sentido, no consideramos que todas las suscripciones de nube anuales de un cliente sean inseparables, como suele suceder con las adquisiciones de contratos de licencias por volumen de Microsoft.
 
-### <a name="q-how-do-cancelations-work"></a>P: ¿Cómo funcionan las cancelaciones?
+### <a name="q-how-do-cancellations-work"></a>P: ¿Cómo funcionan las cancelaciones?
 R: Cuando una suscripción de nube de Visual Studio se cancela, se cancela la renovación automática. La suscripción prosigue hasta la fecha de renovación normal y, tras ello, sencillamente expira.
 Al expirar, el suscriptor de Visual Studio ya no puede usar Visual Studio ni disfrutar de ninguna otra ventaja de la suscripción.
 
@@ -94,12 +94,15 @@ R:  Sí. A medida que vayan surgiendo nuevas versiones, se podrán ir descargand
 ### <a name="q-can-i-buy-visual-studio-cloud-subscriptions-from-my-software-reseller"></a>P: ¿Puedo adquirir suscripciones de nube de Visual Studio de mi distribuidor de software?
 R:  Sí, puede, siempre y cuando el distribuidor de software participe en el programa Proveedor de soluciones en la nube (CSP). Pregúntele.
 
+### <a name="q-where-can-i-find-information-about-azure-invoices"></a>P: ¿Dónde puedo encontrar información acerca de las facturas de Azure?
+R: Consulte el artículo [Descripción de los términos en su factura de Microsoft Azure](https://docs.microsoft.com/azure/cost-management-billing/understand/understand-invoice) en la [documentación de Azure](/azure/).
+
 ## <a name="related-resources"></a>Recursos relacionados
 - [Portal de administradores de Suscripciones de Visual Studio](https://manage.visualstudio.com/)
-- [Soporte de la suscripción de Visual Studio](https://visualstudio.microsoft.com/vs/support/)
 - [Adquisición de suscripciones de nube de Visual Studio para CSP](vscloud-csp.md)
+- Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación de Suscripciones de Visual Studio, consulte [Soporte técnico de Suscripciones](https://aka.ms/vssubscriberhelp) de Visual Studio.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Documentación de Visual Studio](/visualstudio/)
 - [Documentación de Azure DevOps](/azure/devops/)
 - [Documentación de Azure](/azure/)

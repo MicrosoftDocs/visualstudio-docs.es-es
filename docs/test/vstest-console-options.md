@@ -12,12 +12,12 @@ author: mikejo5000
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6256343efbc9b81c14b03753fab2fa478df1e4f5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 86544ad36874ec2a99fac0f8505b24548e83c7c0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946194"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168366"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Opciones de la línea de comandos para VSTest.Console.exe
 
@@ -28,7 +28,7 @@ ms.locfileid: "99946194"
 >
 > Para ejecutar pruebas automatizadas en un equipo basado en la arquitectura ARM, debe usar *VSTest.Console.exe*.
 
-Abra un [Símbolo del sistema para desarrolladores](/dotnet/framework/tools/developer-command-prompt-for-vs) para usar la herramienta de línea de comandos. También encontrará la herramienta en *%Archivos de programa(x86)%\Microsoft Visual Studio\\<versión\>\\<edición\>\common7\ide\CommonExtensions\\<Plataforma | Microsoft>* .
+Abra el [Símbolo del sistema para desarrolladores](../ide/reference/command-prompt-powershell.md) para usar la herramienta de línea de comandos. También encontrará la herramienta en *%Archivos de programa(x86)%\Microsoft Visual Studio\\<versión\>\\<edición\>\common7\ide\CommonExtensions\\<Plataforma | Microsoft>* .
 
 ## <a name="general-command-line-options"></a>Opciones generales de la línea de comandos
 

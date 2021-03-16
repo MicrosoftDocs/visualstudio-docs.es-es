@@ -1,5 +1,6 @@
 ---
 title: 'DA0029: Versión de CLR no admitida | Microsoft Docs'
+description: Está intentando generar perfiles de una aplicación que usa .NET Framework 1.1, que no es compatible con Herramientas de generación de perfiles.
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,12 +17,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 18cf60804e65f2cb67f74c5739a879a633043778
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b3f5e5129bed479273e141af70121d5a344972e2
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936618"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102465847"
 ---
 # <a name="da0029-unsupported-clr-version"></a>DA0029: Versión de CLR no admitida
 

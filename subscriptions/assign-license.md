@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 4e529a43-7aed-4eee-895d-862a631952df
-ms.date: 09/21/2020
+ms.date: 02/18/2021
 ms.topic: conceptual
 description: Obtenga información sobre la manera en que los administradores pueden asignar licencias a los suscriptores.
-ms.openlocfilehash: dd80a14a3ff57100f210fd7ae1b882c0ab7a9faf
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 3bfa1174a8655de27496c3138e1eab21e32c2f8d
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915419"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249548"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Asignación de licencias en el Portal de administración de suscripciones de Visual Studio
 Como administrador de suscripciones de Visual Studio, puede usar el Portal de administradores para asignar suscripciones a usuarios y grupos de usuarios.
@@ -67,14 +67,14 @@ El uso de una dirección de correo electrónico de notificación le proporciona 
 Después de agregar un suscriptor, se envía automáticamente un correo electrónico de asignación al nuevo suscriptor con más instrucciones. Puede volver a enviar el correo electrónico de asignación en cualquier momento. Para ello, seleccione el suscriptor y el botón **Reenviar** en el menú superior.  Para reenviar correos electrónicos a varios usuarios, mantenga presionada la tecla **Ctrl** mientras selecciona los suscriptores.  Al seleccionar **Reenviar**, verá un cuadro de diálogo que le pedirá que confirme que quiere volver a enviar a los suscriptores.  
 
 
+## <a name="resources"></a>Recursos
+- ¿Necesita ayuda?  Póngase en contacto con [Soporte de la suscripción de Visual Studio](https://visualstudio.microsoft.com/subscriptions/support/).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Documentación de Visual Studio](/visualstudio/)
 - [Documentación de Azure DevOps](/azure/devops/)
 - [Documentación de Azure](/azure/)
 - [Documentación de Microsoft 365](/microsoft-365/)
 
-
 ## <a name="next-steps"></a>Pasos siguientes
 - ¿Tiene que agregar muchos usuarios?  Aprenda a asignar suscripciones a [varios suscriptores](assign-license-bulk.md).
-- ¿Necesita ayuda?  Póngase en contacto con el [soporte técnico de administración y suscripciones de Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).
