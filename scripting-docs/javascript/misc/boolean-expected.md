@@ -1,4 +1,5 @@
 ---
+description: Intentó invocar el método Boolean. prototype. toString o Boolean. prototype. typeof en un objeto de un tipo que no sea booleano.
 title: Se esperaba un valor booleano | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,12 +15,12 @@ ms.assetid: 35d71b7f-53fd-44c4-a7c7-b1550c65cfd4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b6d88815a33187e209bcba248d3c363afdd91227
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 1ceaddc9341d67ac60326fa7121c32655ab6a3f6
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862657"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103571446"
 ---
 # <a name="boolean-expected"></a>Se esperaba un booleano
 Intentó invocar el método **Boolean. prototype. ToString** o **Boolean. prototype. valueto** en un objeto de un tipo distinto de `Boolean` . El objeto de este tipo de invocación debe ser de tipo `Boolean` . Por ejemplo:
@@ -34,7 +35,7 @@ o.f();
 
 - Solo se invocan los métodos **Boolean. prototype. ToString** o **Boolean. prototype. valueto** en objetos de tipo **Boolean.**
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Boolean (Objeto)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
 - [Tipo de datos](https://developer.mozilla.org/docs/Web/JavaScript/Data_structures)

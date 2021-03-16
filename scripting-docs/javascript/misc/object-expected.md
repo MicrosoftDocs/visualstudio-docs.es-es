@@ -1,4 +1,5 @@
 ---
+description: Se intentó invocar un método o una propiedad en un objeto de un tipo que no es Object, o bien se pasó un argumento de un tipo que no sea Object cuando se requería un objeto.
 title: Objeto esperado | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,12 +15,12 @@ ms.assetid: 5d88c93d-e5b5-4b11-9bb5-bf1a5e41ccc3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2a3b8510c92e15a5b1bf5e15bb774ba031f7181f
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: a62a68b8dd5289794086dad6858238db6cc4f449
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862117"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103572070"
 ---
 # <a name="object-expected"></a>Se esperaba un objeto
 Se intentó invocar un método o propiedad en un objeto de un tipo distinto de `Object`, o se pasó un argumento de un tipo distinto de `Object` cuando se requería `Object`.  
@@ -46,6 +47,6 @@ Se intentó invocar un método o propiedad en un objeto de un tipo distinto de `
     }  
     ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Objeto de objeto](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)   
  [Objetos y matrices](https://developer.mozilla.org/docs/Learn/JavaScript/Objects)

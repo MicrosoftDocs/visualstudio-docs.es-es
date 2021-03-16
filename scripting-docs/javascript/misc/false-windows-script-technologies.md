@@ -1,4 +1,5 @@
 ---
+description: La palabra clave false tiene un valor igual a 0.
 title: False (tecnologías de Windows Script) | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -17,12 +18,12 @@ ms.assetid: e14a2503-e1aa-4afd-b8eb-8d819b6988e9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d97ecad48c8daa9613ea4035c07e82a07c72c077
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41ca036a19a85519bd8c2780a4bd42698dd41c46
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817338"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103570913"
 ---
 # <a name="false-windows-script-technologies"></a>False (Windows Script Technologies)
 La palabra clave **false** tiene un valor igual a 0.  

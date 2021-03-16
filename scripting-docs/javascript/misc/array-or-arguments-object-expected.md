@@ -1,4 +1,5 @@
 ---
+description: No proporcionó una matriz como argumento.
 title: Se esperaba un objeto Array o arguments | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,12 +15,12 @@ ms.assetid: 22b83e2f-8916-46db-8d8c-50c8481b7c90
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2e4b3eaee0a244f9d14d88d1393742ab6d31a509
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: c363335909db25a985797063381f4a189ed328cf
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862672"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103572135"
 ---
 # <a name="array-or-arguments-object-expected"></a>Se esperaba un objeto de argumentos o matriz
 No proporcionó una matriz como argumento. Este error solo se aplica al método **function. prototype. Apply** . Si se especifica, el segundo argumento de esta función debe ser un objeto `Array` o un objeto **arguments** .  
@@ -28,7 +29,7 @@ No proporcionó una matriz como argumento. Este error solo se aplica al método 
   
 - Especifique un `Array` objeto de **argumentos** o como el segundo argumento.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Usar matrices](https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/Arrays)   
  [Apply (método, Function)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/apply)   
  [Funciones](https://developer.mozilla.org/docs/Learn/JavaScript/Building_blocks/Functions)

@@ -1,4 +1,5 @@
 ---
+description: Ha especificado una propiedad o un método que no existe para este objeto.
 title: El objeto no admite esta propiedad o método | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,12 +15,12 @@ ms.assetid: 35f7a9b4-74fa-4ddb-b9f2-1a92345cb2ff
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bf4afa6e3a9dc26b40ddbc8fbd2dbcedb92a74c3
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 7e3f9ea821a27d345832d94ceceb173392c6513b
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91861445"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103570887"
 ---
 # <a name="object-doesnt-support-this-property-or-method"></a>El objeto no es compatible con esta propiedad ni con este método
 Ha especificado una propiedad o un método que no existe para este objeto. Hay objetos que no son compatibles con todas las propiedades y todos los métodos.  
@@ -32,6 +33,6 @@ Ha especificado una propiedad o un método que no existe para este objeto. Hay o
   
 - Consulte la documentación del objeto para obtener más información.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Objeto de objeto](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)   
  [Objetos de JavaScript](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects)

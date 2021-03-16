@@ -1,5 +1,6 @@
 ---
 title: El uso de una palabra clave para un identificador no es válido | Microsoft Docs
+description: No se puede usar una palabra clave como nombre de una variable, función u otro identificador definido por el usuario.
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,12 +15,12 @@ ms.assetid: 04951b3b-a8b5-4d36-94f8-d2daee1ce0f8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9ae4fd36d78ee2d9e17d3fe22c6013a338e85a21
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: ed4a27b735bfec34aa0bb7e9b09bc8f4e4e829c6
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862719"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103571537"
 ---
 # <a name="the-use-of-a-keyword-for-an-identifier-is-invalid"></a>El uso de una palabra clave para un identificador no es válido
 1048: el uso de una palabra clave para un identificador no es válido  

@@ -1,4 +1,5 @@
 ---
+description: Ha intentado codificar una cadena como un URI, pero contiene caracteres no válidos.
 title: El URI que se va a codificar contiene un carácter no válido | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,12 +15,12 @@ ms.assetid: a3f0fdbb-8d4b-41ae-a396-43dfc9483760
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 310db785041de0beb0ebbba0cdd9b7c356397bc4
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 73ed9a814c5d608df1a9686c2b61166d664115f7
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862383"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103570666"
 ---
 # <a name="the-uri-to-be-encoded-contains-an-invalid-character"></a>El URI que se desea codificar contiene un carácter no válido
 Ha intentado codificar una cadena como un URI (identificador uniforme de recursos), pero contiene caracteres no válidos. Aunque la mayoría de los caracteres son válidos dentro de las cadenas que se van a convertir en URI, algunas secuencias de caracteres Unicode no son válidas.  
@@ -32,6 +33,6 @@ Ha intentado codificar una cadena como un URI (identificador uniforme de recurso
     <Scheme>:<first>/<second>;<third>?<fourth>  
     ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [encodeURI (función)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/encodeuri)   
  [encodeURIComponent (Función)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/encodeuricomponent)

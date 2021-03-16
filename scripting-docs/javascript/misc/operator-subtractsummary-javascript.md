@@ -1,4 +1,5 @@
 ---
+description: En las tablas siguientes se enumeran los operadores de JavaScript en sus categorías respectivas.
 title: Resumen de operadores (JavaScript) | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -12,21 +13,21 @@ ms.assetid: 3bc55336-912f-4ff8-8d28-1e26e0144840
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: de5d26f810fc1ab46c5ef09112fd62fada5d7d9b
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 47f14b0d8ee87877dc8f4305eb19679ea19fb9e3
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862090"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103571693"
 ---
 # <a name="operator-summary-javascript"></a>Resumen de operadores (JavaScript)
 En las tablas siguientes se enumeran los [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] operadores de sus categorías respectivas.  
   
 ## <a name="computational-operators"></a>Operadores de cálculo  
   
-|Operador|Símbolo|  
+|Operator|Símbolo|  
 |--------------|------------|  
-|[Agregado](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|+|  
+|[Suma](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|+|  
 |[Decremento](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators#Increment)|--|  
 |[División](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|/|  
 |[Incremento](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators#Increment)|++|  
@@ -37,7 +38,7 @@ En las tablas siguientes se enumeran los [!INCLUDE[javascript](../../javascript/
   
 ## <a name="logical-operators"></a>Operadores lógicos  
   
-|Operador|Símbolo|  
+|Operator|Símbolo|  
 |--------------|------------|  
 |[Coma](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Comma_Operatorhttps://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Comma_Operator)|,|  
 |[Condicional (ternario)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)|?:|  
@@ -55,7 +56,7 @@ En las tablas siguientes se enumeran los [!INCLUDE[javascript](../../javascript/
   
 ## <a name="bitwise-operators"></a>Operadores bit a bit  
   
-|Operador|Símbolo|  
+|Operator|Símbolo|  
 |--------------|------------|  
 |[AND bit a bit](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators#Bitwise_AND)|&|  
 |[Desplazamiento a la izquierda bit a bit](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators#Left_shift)|<\<|  
@@ -75,7 +76,7 @@ En las tablas siguientes se enumeran los [!INCLUDE[javascript](../../javascript/
   
  [instanceof](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/instanceof)  
   
- [new](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/new)  
+ [New](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/new)  
   
  [typeof](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/typeof)  
   

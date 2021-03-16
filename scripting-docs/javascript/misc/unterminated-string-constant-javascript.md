@@ -1,4 +1,5 @@
 ---
+description: No finalizó la constante de cadena con una comilla de cierre.
 title: Constante de cadena no terminada (JavaScript) | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,12 +15,12 @@ ms.assetid: 5083809e-9828-4aea-b9b0-80f46d6f3812
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7555aa3413b2c3e5b384f92a0f2c295548d8930a
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 59ce392220b8c3e9fa82384c514e0baf762ee29a
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862713"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103571160"
 ---
 # <a name="unterminated-string-constant-javascript"></a>Constante de cadena sin terminar (JavaScript)
 No finalizó la constante de cadena con una comilla de cierre. Las constantes de cadena se deben incluir entre comillas.  
@@ -31,6 +32,6 @@ No finalizó la constante de cadena con una comilla de cierre. Las constantes de
   
 - Agregue la comilla de cierre al final de la cadena.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [String (objeto)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)   
  [toString (Método, Object)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/tostring)

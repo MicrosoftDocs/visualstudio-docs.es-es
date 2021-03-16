@@ -1,4 +1,5 @@
 ---
+description: Un script intentó acceder a datos desde un origen diferente del host de la página actual.
 title: Acceso denegado | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -13,12 +14,12 @@ dev_langs:
 ms.assetid: 8a512060-d744-47af-a83e-4ba42ea2c5b2
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 874f7c0e5dcfaf4881c059a77f1c5e930d8c0578
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6be3bce0643a5892973235871191766cac140962
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85814842"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103571940"
 ---
 # <a name="access-is-denied"></a>Acceso denegado
 Un script intentó acceder a datos desde un origen diferente del host de la página actual. La Directiva de mismo origen que siguen Internet Explorer y otros exploradores permite a los scripts acceder a datos únicamente de orígenes con el mismo esquema, host y puerto de la dirección URL de la página actual.  
