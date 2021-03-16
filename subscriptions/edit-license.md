@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
-ms.date: 11/09/2020
+ms.date: 02/18/2021
 ms.topic: how-to
 description: Obtenga información sobre cómo los administradores pueden editar asignaciones de suscripciones.
-ms.openlocfilehash: 0f1ec9c9aa63b5bd877e13f112964f7d74a4b5af
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: f24c949224d895f4cc2926ab30db637835e7886c
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433562"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249798"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>Edición de asignaciones de suscripciones de Visual Studio
 Como administrador de suscripciones, puede hacer cambios en las suscripciones asignadas a las personas de su organización.  En este artículo se describen los tipos de cambios que puede realizar y se proporcionan los pasos necesarios.
@@ -30,7 +30,6 @@ Para editar un suscriptor, seleccione los puntos suspensivos (...) que aparecen 
 Puede actualizar el nombre del suscriptor, el apellido, el nivel de suscripción, la dirección de correo electrónico, el país o región, el idioma, las descargas y el campo de referencia. Edite la información del suscriptor y haga clic en **Guardar**.
 
 ## <a name="edit-multiple-subscribers-using-bulk-edit"></a>Edición en masa de varios suscriptores
-
 
 Puede editar varios suscriptores a la vez mediante el proceso de edición en masa. Esta característica se usa principalmente en organizaciones que están efectuando cambios en la dirección de correo electrónico corporativa o cuando una organización ha decidido restringir el acceso a las descargas.
 
@@ -56,7 +55,10 @@ Vea este vídeo o siga leyendo saber cómo editar varios suscriptores mediante l
 
 5. Cuando haya cargado el archivo, verá una notificación en la que se le indicará que se ha realizado correctamente. En este momento, los cambios se reflejarán en la información del suscriptor.
 
-## <a name="see-also"></a>Vea también
+## <a name="resources"></a>Recursos
+- [Soporte de la suscripción de Visual Studio](https://visualstudio.microsoft.com/subscriptions/support/)
+
+## <a name="see-also"></a>Consulte también
 - [Documentación de Visual Studio](/visualstudio/)
 - [Documentación de Azure DevOps](/azure/devops/)
 - [Documentación de Azure](/azure/)

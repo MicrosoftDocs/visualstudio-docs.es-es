@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: e10f9b628d1d9fbbdb2911977fe7e63b1a7b6d57
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 04ef9834fdc66256b601ecdcf156e4d290447ce3
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957483"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171323"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Pruebas unitarias de JavaScript y TypeScript en Visual Studio
 
@@ -97,7 +97,7 @@ Para TypeScript, las pruebas unitarias se ejecutan en el código JavaScript gene
 
 ### <a name="run-tests-from-the-command-line"></a>Ejecutar pruebas desde la línea de comandos
 
-Puede ejecutar las pruebas desde el [Símbolo del sistema para desarrolladores](/dotnet/framework/tools/developer-command-prompt-for-vs) de Visual Studio mediante el siguiente comando:
+Puede ejecutar las pruebas desde [Símbolo del sistema para desarrolladores](../ide/reference/command-prompt-powershell.md) de Visual Studio mediante el siguiente comando:
 
 ```
 vstest.console.exe <path to project file>\NodejsConsoleApp23.njsproj /TestAdapterPath:<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter
@@ -152,11 +152,12 @@ Para obtener un buen ejemplo de las implementaciones `find_tests` y `run_tests`,
 La detección de marcos de pruebas disponibles se produce al inicio de Visual Studio. Si se agrega un marco mientras se está ejecutando Visual Studio, reinicie Visual Studio para detectar el marco. Pero no es necesario reiniciar al realizar cambios en la implementación.
 
 ## <a name="unit-tests-in-other-project-types"></a>Pruebas unitarias en otros tipos de proyecto
+
 No está limitado a escribir pruebas unitarias solo en proyectos de Node.js. Al agregar las propiedades TestFramework y TestRoot a cualquier proyecto de C# o Visual Basic, esas pruebas se enumerarán y puede ejecutarlas mediante la ventana Explorador de pruebas.
 
 Para habilitar esta opción, haga clic con el botón derecho en el nodo del proyecto en el Explorador de soluciones, elija **Descargar el proyecto** y después elija **Editar proyecto**. Después, en el archivo del proyecto, agregue los siguientes dos elementos a un grupo de propiedades.
 
-> [!NOTE]
+> [!IMPORTANT]
 > Asegúrese de que el grupo de propiedades al que está agregando los elementos no tiene ninguna condición especificada.
 > Esto puede causar un comportamiento inesperado.
 
@@ -170,6 +171,7 @@ Para habilitar esta opción, haga clic con el botón derecho en el nodo del proy
 Luego, agregue sus pruebas a la carpeta raíz de prueba que ha especificado y estarán disponibles para ejecutarse en la ventana Explorador de pruebas. Si no aparecen al principio, puede que tenga que recompilar el proyecto.
 
 ### <a name="unit-test-net-core-and-net-standard"></a>Pruebas unitaria en .NET Core y .NET Standard
+
 Además de las propiedades mencionadas, también deberá instalar el paquete [Microsoft.JavaScript.UnitTest](https://www.nuget.org/packages/Microsoft.JavaScript.UnitTest/) de NuGet y establecer la propiedad:
 
 ```xml

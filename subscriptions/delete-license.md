@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: e49242bc-e9f2-49e8-8caa-f574d508aba6
-ms.date: 10/26/2020
+ms.date: 02/18/2021
 ms.topic: how-to
 description: Obtenga información sobre la forma en que los administradores pueden eliminar asignaciones de suscripciones en el Portal de administración de Suscripciones de Visual Studio.
-ms.openlocfilehash: 22a1c55bcaef436d1a29eb84b93a57f407114a1e
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 4eedc767e6397b371256c7957662147964782f75
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904479"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102250012"
 ---
 # <a name="delete-assignments-in-visual-studio-subscriptions"></a>Eliminación de asignaciones de suscripciones de Visual Studio
 Cuando un suscriptor ya no requiera una suscripción de Visual Studio, por ejemplo, cuando deje la empresa, complete un proyecto o cambie a una nueva función, puede quitar su suscripción y asignarla a otra persona. Tenga en cuenta que al reasignar una suscripción, no todas las ventajas del suscriptor se restablecerán.  El nuevo usuario podrá solicitar cualquier clave no solicitada y ver las claves solicitadas previamente, pero los límites de solicitud **no** se restablecen.  Para las organizaciones que tengan Contratos Enterprise (EA), se restablecerá cualquier ventaja que el usuario original haya usado, como el aprendizaje de Pluralsight. 
@@ -32,6 +32,9 @@ Vea este vídeo o siga leyendo para saber cómo eliminar asignaciones.
    > La eliminación masiva con una plantilla no está disponible. 
    >
    > Si agregó asignaciones de suscripciones a través de los grupos de seguridad de Azure Active Directory, la actualización de la eliminación en el portal de administradores puede tardar hasta 24 horas.  Consulte [nuestro artículo](assign-license-bulk.md#use-azure-active-directory-groups-to-assign-subscriptions) para más información sobre cómo usar los grupos de Azure Active Directory para administrar las suscripciones. 
+
+## <a name="resources"></a>Recursos
+- [Soporte de la suscripción de Visual Studio](https://visualstudio.microsoft.com/subscriptions/support/)
 
 ## <a name="see-also"></a>Consulte también
 - [Documentación de Visual Studio](/visualstudio/)

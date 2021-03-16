@@ -1,5 +1,6 @@
 ---
 title: 'DA0030: Recopilación de las medidas de interacción de capas para los proyectos de base de datos | Microsoft Docs'
+description: Las llamadas a los métodos System.Data constituyen una proporción considerable de los datos de generación de perfiles; además, no ha recopilado datos de interacción de capas en la ejecución de generación de perfiles. Considere la opción de volver a generar los perfiles y agregar los datos de interacción de capas.
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: bfce545cd3e7eb5e13e28ec7d22aaba4f7cbecfd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 44720e086fa0c9201fba319e445a44835faa9c2e
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99908752"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102465886"
 ---
 # <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030: Recopilar medidas de interacción de capas para proyectos de base de datos
 

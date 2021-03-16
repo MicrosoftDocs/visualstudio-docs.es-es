@@ -11,12 +11,12 @@ manager: jmartens
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 1b4eabfe35671b3cda0e2df71163b7c91695b264
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: a364289ded27879c74767f03e89b9ea7b9f604fc
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683084"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249844"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio"></a>Depuración remota de ASP.NET Core en un equipo remoto de IIS en Visual Studio
 
@@ -129,10 +129,17 @@ Puede usar esta opción para crear un archivo de configuración de publicación 
 
 Después de que se implemente la aplicación correctamente, debería iniciarse automáticamente. Si la aplicación no se inicia desde Visual Studio, iníciela en IIS para comprobar que se ejecuta correctamente. En ASP.NET Core, tiene que asegurarse también de que el campo Grupo de aplicaciones correspondiente a **DefaultAppPool** está establecido en **Sin código administrado**.
 
-1. En el cuadro de diálogo **Configuración**, haga clic en **Siguiente** para habilitar la depuración, elija una configuración de **Depuración** y, después, en **Quitar archivos adicionales en destino** en las **Opciones de publicación de archivos**.
+1. Cambie a una configuración de depuración.
 
-    > [!IMPORTANT]
-    > Si elige una configuración de versión, deshabilite la depuración en el archivo *web.config* al realizar la publicación.
+   ::: moniker range=">=vs-2019"
+   Elija **Editar** para editar el perfil y, a continuación, seleccione **Configuración**. Elija una configuración de **depuración** y, después, en **Quitar archivos adicionales en destino** en las **Opciones de publicación de archivos**.
+   ::: moniker-end
+   ::: moniker range="vs-2017"
+   En el cuadro de diálogo **Configuración**, haga clic en **Siguiente** para habilitar la depuración, elija una configuración de **Depuración** y, después, en **Quitar archivos adicionales en destino** en las **Opciones de publicación de archivos**.
+   ::: moniker-end
+
+   > [!IMPORTANT]
+   > Si elige una configuración de versión, deshabilite la depuración en el archivo *web.config* al realizar la publicación.
 
 1. Haga clic en **Guardar** y, después, vuelva a publicar la aplicación.
 
@@ -150,13 +157,13 @@ Puede usar esta opción para implementar la aplicación si desea copiarla en IIS
 
 4. Seleccione **Sitio web predeterminado**, elija **Configuración básica** y establezca la **Ruta de acceso física** en **C:\Publish**.
 
-4. Haga clic con el botón secundario en el nodo **Sitio web predeterminado** y seleccione **Agregar aplicación**.
+5. Haga clic con el botón secundario en el nodo **Sitio web predeterminado** y seleccione **Agregar aplicación**.
 
-5. Establezca el campo **Alias** en **MyASPApp**, acepte el grupo de aplicaciones predeterminado (**DefaultAppPool**) y establezca la **Ruta de acceso física** en **C:\Publish**.
+6. Establezca el campo **Alias** en **MyASPApp**, acepte el grupo de aplicaciones predeterminado (**DefaultAppPool**) y establezca la **Ruta de acceso física** en **C:\Publish**.
 
-6. En **Conexiones**, seleccione **Grupos de aplicaciones**. Abra **DefaultAppPool** y establezca el campo Grupo de aplicaciones en **Sin código administrado**.
+7. En **Conexiones**, seleccione **Grupos de aplicaciones**. Abra **DefaultAppPool** y establezca el campo Grupo de aplicaciones en **Sin código administrado**.
 
-7. Haga clic con el botón derecho en el nuevo sitio en el Administrador de IIS, elija **Editar permisos** y asegúrese de que IUSR, IIS_IUSRS o el usuario configurado para el acceso a la aplicación web sea un usuario autorizado con derechos Leer y ejecutar.
+8. Haga clic con el botón derecho en el nuevo sitio en el Administrador de IIS, elija **Editar permisos** y asegúrese de que IUSR, IIS_IUSRS o el usuario configurado para el acceso a la aplicación web sea un usuario autorizado con derechos Leer y ejecutar.
 
     Si no ve uno de estos usuarios con acceso, siga los pasos para agregar IUSR como usuario con derechos Leer y ejecutar.
 

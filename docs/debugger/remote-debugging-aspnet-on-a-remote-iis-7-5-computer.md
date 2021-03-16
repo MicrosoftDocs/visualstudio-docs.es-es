@@ -12,14 +12,15 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - aspnet
-ms.openlocfilehash: 854d3e23252e63d6330abd9f1704890d3b90ae36
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 104927d42f7ec68e43686278042c0712bb3c875e
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99908310"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102250082"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Depuración remota de ASP.NET en un equipo remoto de IIS
+
 Para depurar una aplicación de ASP.NET que se ha implementado en IIS, instale y ejecute las herramientas remotas en el equipo donde ha implementado la aplicación y, a continuación, asócielas a la aplicación en ejecución desde Visual Studio.
 
 ![Componentes del depurador remoto](../debugger/media/remote-debugger-aspnet.png "Remote_debugger_components")
@@ -39,6 +40,7 @@ Se necesita Visual Studio 2017 para seguir los pasos que se muestran en este a
 ::: moniker-end
 
 Estos procedimientos se han probado en estas configuraciones de servidor:
+
 * Windows Server 2012 R2 e IIS 8 (para Windows Server 2008 R2, los pasos del servidor son diferentes)
 
 ## <a name="network-requirements"></a>Requisitos de red
@@ -130,16 +132,23 @@ Puede usar esta opción para crear un archivo de configuración de publicación 
 
 Después de que se implemente la aplicación correctamente, debería iniciarse automáticamente. Si la aplicación no se inicia desde Visual Studio, iníciela en IIS.
 
-1. En el cuadro de diálogo **Configuración**, haga clic en **Siguiente** para habilitar la depuración, elija una configuración de **Depuración** y, luego, **Quitar archivos adicionales en destino** en las **Opciones de publicación de archivos**.
+1. Cambie a una configuración de depuración.
 
-    > [!IMPORTANT]
-    > Si elige una configuración de versión, deshabilite la depuración en el archivo *web.config* al realizar la publicación.
+   ::: moniker range=">=vs-2019"
+   Elija **Editar** para editar el perfil y, a continuación, seleccione **Configuración**. Elija una configuración de **depuración** y, después, en **Quitar archivos adicionales en destino** en las **Opciones de publicación de archivos**.
+   ::: moniker-end
+   ::: moniker range="vs-2017"
+   En el cuadro de diálogo **Configuración**, haga clic en **Siguiente** para habilitar la depuración, elija una configuración de **Depuración** y, después, en **Quitar archivos adicionales en destino** en las **Opciones de publicación de archivos**.
+   ::: moniker-end
+
+   > [!IMPORTANT]
+   > Si elige una configuración de versión, deshabilite la depuración en el archivo *web.config* al realizar la publicación.
 
 1. Haga clic en **Guardar** y, después, vuelva a publicar la aplicación.
 
 ## <a name="optional-deploy-by-publishing-to-a-local-folder"></a>(Opcional) Implementación mediante la publicación en una carpeta local
 
-Puede usar esta opción para implementar la aplicación si quiere copiarla en IIS con PowerShell o RoboCopy, o si quiere copiar manualmente los archivos.
+Puede usar esta opción para implementar la aplicación si desea copiarla en IIS con PowerShell, RoboCopy o si desea copiar manualmente los archivos.
 
 ### <a name="configure-the-aspnet-web-site-on-the-windows-server-computer"></a><a name="BKMK_deploy_asp_net"></a> Configuración del sitio web de ASP.NET Core en el equipo con Windows Server
 

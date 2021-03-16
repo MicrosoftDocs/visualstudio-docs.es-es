@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: d2ab13ed-ef79-4ef0-8736-eccd04bc6020
-ms.date: 10/21/2020
+ms.date: 02/19/2021
 ms.topic: conceptual
 description: Información para proveedores de soluciones en la nube sobre cómo comprar y administrar suscripciones de nube de Visual Studio para sus clientes.
-ms.openlocfilehash: 632e407aa4455b7c2a87299cc8811bc996c8d5b6
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: 78d4f39eef4b3daabc5bcbfbf47e969dd6213d36
+ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353270"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102473301"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Adquirir y administrar suscripciones de nube de Visual Studio para los clientes
 Los partners que participen en el programa [Proveedor de soluciones en la nube (CSP)](https://partner.microsoft.com/cloud-solution-provider) pueden adquirir suscripciones de nube de Visual Studio Enterprise y de Professional de Visual Studio para sus clientes.
@@ -34,27 +34,27 @@ Cualquier persona con [acceso de propietario o de colaborador](https://na01.safe
 
 1. Inicie sesión en el [Centro de partners de Microsoft](https://partnercenter.microsoft.com).
 0. Seleccione **Clientes** y seleccione el cliente para el que vaya a realizar la compra.
-0. Seleccione **Administración de servicios** .
-0. Elija **Visual Studio Marketplace** .
+0. Seleccione **Administración de servicios**.
+0. Elija **Visual Studio Marketplace**.
 0. Constate que el nombre de su cliente aparece en la esquina superior derecha.
-0. Seleccione **Suscripciones** .
+0. Seleccione **Suscripciones**.
 0. Seleccione Enterprise o Professional para Visual Studio.
-0. Elija **Comprar** .
+0. Elija **Comprar**.
 0. Escoja la suscripción de Azure a la que se va a facturar la compra.
 0. Escriba el número de usuarios que el cliente necesita.
-0. Revise el pedido y **confírmelo** .
+0. Revise el pedido y **confírmelo**.
 
 >[!NOTE]
 > Hay que seguir estos pasos cada vez que se adquieran suscripciones de Visual Studio como CSP. En este momento, no existe ninguna API que automatice esta compra.
 
-Tras confirmar la compra, puede elegir **Administrar** para asignar suscripciones a los usuarios finales del cliente.  También puede tener acceso al portal de administración de suscripciones desde el Centro de partners; para ello, seleccione **Administración de servicios** .  Una vez allí, consulte los siguientes pasos o vea el siguiente vídeo.
+Tras confirmar la compra, puede elegir **Administrar** para asignar suscripciones a los usuarios finales del cliente.  También puede tener acceso al portal de administración de suscripciones desde el Centro de partners; para ello, seleccione **Administración de servicios**.  Una vez allí, consulte los siguientes pasos o vea el siguiente vídeo.
 
 ## <a name="how-to-manage-visual-studio-cloud-subscriptions-for-your-customer"></a>Cómo administrar suscripciones de nube de Visual Studio para los clientes
 
 1. Inicie sesión en el [Centro de partners de Microsoft](https://partnercenter.microsoft.com).
 0. Elija **Clientes** y el nombre del cliente.
-0. Seleccione **Administración de servicios** .
-0. Elija **Administrar suscripciones de Visual Studio** .
+0. Seleccione **Administración de servicios**.
+0. Elija **Administrar suscripciones de Visual Studio**.
 
 Si tiene más de una suscripción de Azure con este cliente, use el menú desplegable para elegir aquella con la que haya realizado las compras.  En **Resumen de licencias** se muestra el número de suscripciones que hay asignadas y cuántas de ellas están disponibles para cada opción de suscripción de nube de Visual Studio.  A través de este resumen también se pueden adquirir más suscripciones o reducir el número de suscripciones.
 
@@ -65,7 +65,7 @@ Para reasignar una suscripción de Visual Studio a otro usuario, puede eliminar 
 Si un suscriptor no ha activado su suscripción de Visual Studio, puede deberse a que no haya recibido el correo electrónico de invitación.  Puede solicitar que se reenvíe la invitación de activación al usuario también desde el portal de administración de Visual Studio.
 
 ## <a name="view-visual-studio-pricing-for-csp-partners"></a>Ver precios de Visual Studio para partners CSP
-Para ver los precios de Visual Studio para partners CSP, inicie sesión en el [Centro de partners](https://partnercenter.microsoft.com).  Elija **Precios y ofertas** a la izquierda.  Elija el archivo de precios del mes en curso en **servicios basados en el uso** , en la esquina superior derecha. Cuando se descargue la hoja de cálculo de Excel, vaya a la hoja **Lista de precios de Azure** y filtre la columna **Categoría de medición** por **Visual Studio** .
+Para ver los precios de Visual Studio para partners CSP, inicie sesión en el [Centro de partners](https://partnercenter.microsoft.com).  Elija **Precios y ofertas** a la izquierda.  Elija el archivo de precios del mes en curso en **servicios basados en el uso**, en la esquina superior derecha. Cuando se descargue la hoja de cálculo de Excel, vaya a la hoja **Lista de precios de Azure** y filtre la columna **Categoría de medición** por **Visual Studio**.
 
 Así es como hay que interpretar lo que aparece en esta hoja de cálculo:
 
@@ -77,7 +77,7 @@ Así es como hay que interpretar lo que aparece en esta hoja de cálculo:
 Ofrecemos un descuento del 5 % por la sexta unidad que se adquiera (para un mismo cliente) cada mes de cada suscripción de Visual Studio. Es por eso que aparecen dos filas por cada opción de suscripción. Una fila muestra un "valor mínimo" de 0, lo que debe interpretarse como el precio base de las primeras cinco unidades. La otra fila muestra un "valor mínimo" de 5, por lo que este es el precio con el 5 % de descuento que se aplica desde la sexta unidad en adelante.
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
-### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>P: ¿Cómo se procesan los cargos de las suscripciones de nube **mensuales** ?
+### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>P: ¿Cómo se procesan los cargos de las suscripciones de nube **mensuales**?
 R: En la primera compra, facturaremos una cantidad prorrateada para cubrir los días restantes del mes actual. Por ejemplo, si se compran 10 suscripciones de nube mensuales de Visual Studio Professional el 15 de abril, cobraríamos solo cinco unidades (porque siguen quedando por delante 15 de los 30 días del mes en curso), o bien el 50 % y prorratearíamos las unidades facturadas al 50 %. A partir del 1 de mayo, y así cada mes en adelante hasta que se cancele, se facturarán las 10 unidades por completo.
 
 Si, más adelante, la cantidad de pago se incrementa, también prorratearemos la diferencia en las unidades para cubrir los días restantes del mes en curso. Así, si el 10 de mayo se adquiere una suscripción de nube de Visual Studio Professional mensual más, facturaríamos aproximadamente 0,677 unidades (21 días restantes del mes de mayo, que tiene 31 días).
@@ -106,7 +106,10 @@ R:  No, los precios de las suscripciones de Visual Studio son fijos. El precio e
 ### <a name="q-are-there-azure-devtest-pricing-options-for-csps"></a>P: ¿Existen opciones de precios de desarrollo/pruebas de Azure para CSP?
 R: No en este momento. Los clientes pueden sacar partido de las ventajas de [precios de desarrollo y pruebas de Azure](https://azure.microsoft.com/pricing/dev-test/), pero no tenemos algo que sea específico para CSP.
 
-## <a name="see-also"></a>Vea también
+## <a name="resources"></a>Recursos
+- Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación de Suscripciones de Visual Studio, consulte [Soporte técnico de Suscripciones](https://aka.ms/vssubscriberhelp) de Visual Studio.
+
+## <a name="see-also"></a>Consulte también
 - [Documentación de Visual Studio](/visualstudio/)
 - [Documentación de Azure DevOps](/azure/devops/)
 - [Documentación de Azure](/azure/)

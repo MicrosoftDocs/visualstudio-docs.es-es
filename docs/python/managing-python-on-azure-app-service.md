@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: b76bc008c30efdee0185e6f122abaff8457acef6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f7c874a5cd2742f795c6d8b04db88b98b19a556d
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882796"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102470019"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>Configuración de un entorno de Python en Azure App Service (Windows)
 
@@ -46,7 +46,7 @@ La compatibilidad de Python personalizable para Azure App Service se proporciona
 
 ## <a name="choose-a-python-version-through-the-azure-resource-manager"></a>Elección de una versión de Python a través de Azure Resource Manager
 
-Si va a implementar App Service con una plantilla de Azure Resource Manager, agregue la extensión de sitio como un recurso. Particularmente, la extensión aparece como un recurso anidado (un objeto `resources` en `resources`) con el tipo `siteextensions` y el nombre de [siteextensions.net](https://www.siteextensions.net/packages?q=Tags%3A%22python%22).
+Si va a implementar App Service con una plantilla de Azure Resource Manager, agregue la extensión de sitio como un recurso. Particularmente, la extensión aparece como un recurso anidado (un objeto `resources` en `resources`) con el tipo `siteextensions`.
 
 Por ejemplo, después de agregar una referencia a `python361x64` (Python 3.6.1 x64), la plantilla puede tener el siguiente aspecto (algunas propiedades no se incluyen):
 

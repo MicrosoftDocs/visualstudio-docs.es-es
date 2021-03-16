@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b16c10d13f63be43ad2e8c3e16d24c0f9fd5e38
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 23ef2036af7b93ee6eeaaa14cb8733a4e0ced638
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927436"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249511"
 ---
 # <a name="deploy-an-app-to-a-folder-using-visual-studio"></a>Implementación de una aplicación en una carpeta con Visual Studio
 
@@ -46,25 +46,34 @@ Puede usar la herramienta **Publicar** para publicar aplicaciones ASP.NET, ASP.N
 
 1. En la ventana **Publicar**, seleccione **Carpeta**.
 
-    ![Selección de una carpeta como destino de publicación](../deployment/media/quickstart-publish-folder-new.png "Elección de carpeta")
+   ![Selección de una carpeta como destino de publicación](../deployment/media/quickstart-publish-folder-new.png "Elección de carpeta")
 
-::: moniker range=">=vs-2019"
+   ::: moniker range=">=vs-2019"
 
-4. Si va a implementar una aplicación Windows de.NET Core 3.1 o más reciente, es posible que tenga que seleccionar **Carpeta** en la ventana **Destino específico**.
+   Si va a implementar una aplicación Windows de.NET Core 3.1 o más reciente, es posible que tenga que seleccionar **Carpeta** en la ventana **Destino específico**.
 
-![Selección de una carpeta como destino específico](../deployment/media/quickstart-publish-folder-targets.png "Elección de Destino específico")
+   ![Selección de una carpeta como destino específico](../deployment/media/quickstart-publish-folder-targets.png "Elección de Destino específico")
 
-5. Si quiere publicar una aplicación Windows de .NET Core 3.1 o más reciente con ClickOnce, vea [Implementación de una aplicación Windows de .NET con ClickOnce](quickstart-deploy-using-clickonce-folder.md).
+   Si quiere publicar una aplicación Windows de .NET Core 3.1 o más reciente con ClickOnce, vea [Implementación de una aplicación Windows de .NET con ClickOnce](quickstart-deploy-using-clickonce-folder.md).
+   ::: moniker-end
 
- ::: moniker-end
+1. Especifique una ruta de acceso o seleccione **Examinar** para especificar una carpeta.
 
-4. Especifique una ruta de acceso o seleccione **Examinar** para especificar una carpeta.
+   ![Especificación de la ruta de acceso a la carpeta](../deployment/media/quickstart-publish-folder-path.png "Elección de carpeta")
 
-    ![Especificación de la ruta de acceso a la carpeta](../deployment/media/quickstart-publish-folder-path.png "Elección de carpeta")
+   ::: moniker range=">=vs-2019"
+   Haga clic en **Finalizar** para guardar el perfil.
 
-1. Seleccione **Publicar**. Visual Studio compila el proyecto y lo publica en la carpeta especificada. Aparece el panel de propiedades del proyecto **Publicar**, que muestra un resumen de perfil.
+   ![Panel de propiedades Publicar que muestra un resumen de perfil](../deployment/media/quickstart-publish-folder-summary.png)
+   ::: moniker-end
 
-    ![Panel de propiedades Publicar que muestra un resumen de perfil](../deployment/media/quickstart-publish-folder-summary.png)
+1. Seleccione **Publicar**. Visual Studio compila el proyecto y lo publica en la carpeta especificada.
+
+   ::: moniker range="vs-2017"
+   Aparece el panel de propiedades del proyecto **Publicar**, que muestra un resumen de perfil.
+
+   ![Panel de propiedades Publicar que muestra un resumen de perfil](../deployment/media/quickstart-publish-folder-summary.png)
+   ::: moniker-end
 
 1. Para configurar las opciones de implementación, seleccione **Editar** en el resumen de perfil y elija la pestaña **Configuración**.
 

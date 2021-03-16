@@ -9,12 +9,12 @@ manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 10bfed2a9a2a0ce466e1b3276a487695d40fb580
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 65785384746fa3f16dd25f0405e5ead45c553c21
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964568"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221163"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configuración de pruebas unitarias con un archivo *.runsettings*
 
@@ -82,6 +82,9 @@ Hay tres formas de especificar un archivo de parámetros de ejecución en la ver
 
 #### <a name="autodetect-the-run-settings-file"></a>Detección automática del archivo de parámetros de ejecución
 
+> [!NOTE]
+> Esto solo funcionará para un archivo denominado `.runsettings`.
+
 Para detectar automáticamente el archivo de parámetros de ejecución, colóquelo en la raíz de la solución.
 
 Si está habilitada la detección automática de archivos de parámetros de ejecución, la configuración de este archivo se aplica a todas las pruebas ejecutadas. Puede activar la detección automática de los archivos runsettings siguiendo uno de estos dos métodos:
@@ -135,7 +138,7 @@ El archivo aparece en el menú Prueba, y puede seleccionarlo o anular su selecci
 
 Para ejecutar pruebas desde la línea de comandos, utilice *vstest.console.exe* y especifique el archivo de configuración mediante el parámetro **/Settings**.
 
-1. Abra el [Símbolo del sistema para desarrolladores](/dotnet/framework/tools/developer-command-prompt-for-vs) de Visual Studio.
+1. Abra [Símbolo del sistema para desarrolladores de Visual Studio](../ide/reference/command-prompt-powershell.md).
 
 2. Escriba un comando similar a:
 

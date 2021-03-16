@@ -1,4 +1,5 @@
 ---
+description: 'Cuando se intenta depurar una aplicación de ASP.NET que se ejecuta en un servidor web, puede obtener este mensaje de error: No se puede iniciar la depuración en el servidor web.'
 title: No es posible iniciar la depuración en el servidor web | Microsoft Docs
 ms.date: 05/23/2018
 ms.topic: error-reference
@@ -26,12 +27,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 94dcfdc05f2d852e1a433067b0a574444632195d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 91fa3f74c5dd0f5f6a036d5da7a779e68462c426
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870888"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146371"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Error: No es posible iniciar la depuración en el servidor web
 
