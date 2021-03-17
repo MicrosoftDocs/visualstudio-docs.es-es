@@ -9,12 +9,12 @@ monikerRange: '>=vs-2019'
 manager: jmartens
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: d44dc484da904d2692b90e23d10db6edc6f6e7b8
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 49c3081e68baf4f2bf1d0975bcdae7ea25ab90b3
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102223165"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103571550"
 ---
 # <a name="how-bridge-to-kubernetes-works"></a>Funcionamiento del Puente a Kubernetes
 
@@ -142,10 +142,8 @@ kubectl -n <namespace> apply -f <yaml file name>
 
 Puente a Kubernetes tiene las siguientes limitaciones:
 
-* Un servicio debe estar respaldado por un único pod para poder conectarse a ese servicio. No se puede conectar a un servicio con varios pods, como un servicio con réplicas.
-* Un pod solo puede tener un único contenedor en ejecución en ese pod para que el Puente a Kubernetes se conecte correctamente. Puente a Kubernetes no se puede conectar a los servicios con pods que tienen contenedores adicionales, como los contenedores sidecar inyectados por las mallas de servicios.
+* Un pod solo puede tener un único contenedor en ejecución en ese pod para que el Puente a Kubernetes se conecte correctamente.
 * Actualmente, los pods de Bridge to Kubernetes deben ser contenedores de Linux. No se admiten los contenedores de Windows.
-* No se puede utilizar el aislamiento con HTTPS cuando se usa Bridge to Kubernetes con Visual Studio. HTTPS solo se admite en modo de aislamiento cuando se usa Visual Studio Code.
 * Puente a Kubernetes necesita permisos elevados para ejecutarse en el equipo de desarrollo con el fin de editar el archivo hosts.
 * Puente a Kubernetes no se puede usar en clústeres que tengan habilitado Azure Dev Spaces.
 

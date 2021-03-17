@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: c2878e28-eb5d-4adb-8d7d-a95ffea703a9
-ms.date: 03/11/2020
+ms.date: 02/19/2021
 ms.topic: how-to
 description: Busque una lista de las descargas de software incluidas con la suscripción de Visual Studio.
-ms.openlocfilehash: 390f33591afa6dfceebddbbe5f7f08b413be5e77
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 54e018420233072f99caa84bb3e1e3858b6ed633
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903457"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607280"
 ---
 # <a name="what-software-is-available-for-download"></a>Software disponible para descargar
 
@@ -29,6 +29,9 @@ Para buscar rápidamente los productos, use las funciones de búsqueda de la par
 > Si quiere obtener las claves de producto, seleccione la pestaña **Claves de producto** en la parte superior de la página.
 
 También puede descargar una hoja de cálculo de Excel que contiene una lista completa de [títulos de software disponibles](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx) para cada tipo de suscripción.
+
+## <a name="resources"></a>Recursos 
+- Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación de Suscripciones de Visual Studio, consulte [Soporte técnico de Suscripciones](https://aka.ms/vssubscriberhelp) de Visual Studio. 
 
 ## <a name="see-also"></a>Consulte también
 - [Documentación de Visual Studio](/visualstudio/)

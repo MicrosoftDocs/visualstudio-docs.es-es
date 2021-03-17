@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: f39a2672-c283-4755-93d3-31c7c7a032d0
-ms.date: 10/28/2020
+ms.date: 02/19/2021
 ms.topic: how-to
 description: Aprenda a iniciar sesión en las suscripciones de Visual Studio con la cuenta profesional o educativa.
-ms.openlocfilehash: 3ac4e9fedae66656d4dee2155c8a8dcbe9325970
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: effec7889199d4eddc3c149bdd4ded296a50e0b1
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903385"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607267"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-work-or-school-account"></a>Inicio de sesión en las suscripciones de Visual Studio con la cuenta profesional o educativa 
 
@@ -69,9 +69,10 @@ R:  Muchos usuarios tienen más de una suscripción.  Si puede iniciar sesión e
 1. Ha iniciado sesión con otra cuenta Microsoft.  Es posible que tenga varias suscripciones, como una suscripción Professional o Enterprise y una de Visual Studio Dev Essentials, y que estén asociadas a diferentes direcciones de correo electrónico. Para ver las otras suscripciones, cierre la sesión y vuelva a iniciarla con la otra MSA.
 2. Tiene varias suscripciones asociadas a la misma dirección de correo electrónico.  Para ver todas las suscripciones asociadas a la dirección de correo electrónico, visite https://my.visualstudio.com/subscriptions y seleccione la suscripción que quiere usar. 
 
-Si sigue teniendo problemas, puede ponerse en contacto con el equipo de [soporte técnico de suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) para obtener ayuda.  
+## <a name="resources"></a>Recursos 
+- Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación de Suscripciones de Visual Studio, consulte [Soporte técnico de Suscripciones](https://aka.ms/vssubscriberhelp) de Visual Studio.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Documentación de Visual Studio](/visualstudio/)
 - [Documentación de Azure DevOps](/azure/devops/)
 - [Documentación de Azure](/azure/)

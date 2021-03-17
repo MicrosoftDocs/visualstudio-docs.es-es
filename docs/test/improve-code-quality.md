@@ -12,12 +12,12 @@ manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 0c3f40900c30ca3632b3e82c4b197f28f9d108bd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7efc8e5955f4d11004d8408cadf312e6cbcb43eb
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99969248"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607410"
 ---
 # <a name="first-look-at-testing-tools-in-visual-studio"></a>Primer vistazo a las herramientas de prueba de Visual Studio
 
@@ -79,7 +79,7 @@ El análisis de cobertura de código puede aplicarse al código administrado y n
 La cobertura de código es una opción al ejecutar métodos de prueba mediante el Explorador de pruebas. La tabla de salida muestra el porcentaje de código que se ejecuta en cada ensamblado, clase y método. Además, el editor de código fuente muestra qué código se ha probado.
 
 * [Utilizar cobertura de código para determinar la cantidad de código que se está probando](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
-* [Pruebas unitarias, cobertura de código y análisis de clon de código con Visual Studio (Lab)](https://www.boost.org/doc/libs/1_71_0/libs/test/doc/html/index.html)
+* [Pruebas unitarias, cobertura de código y análisis de clon de código con Visual Studio (Lab)](https://azuredevopslabs.com/labs/devopsserver/liveunittesting)
 * [Personalizar el análisis de cobertura de código](customizing-code-coverage-analysis.md)
 
 ## <a name="microsoft-fakes"></a>Microsoft Fakes
@@ -103,7 +103,7 @@ Tanto si elige las pruebas de IU codificadas más convenientes como las pruebas 
 * [Usar la automatización de la interfaz de usuario para probar el código](use-ui-automation-to-test-your-code.md)
 * [Comenzar a crear, modificar y mantener una prueba de UI codificada](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 * [Comprobación de aplicaciones para UWP con pruebas automatizadas de IU](test-uwp-app-with-coded-ui-test.md)
-* [Introducción a las pruebas de UI codificadas con Visual Studio Enterprise (Lab)](https://www.boost.org/doc/libs/1_71_0/libs/test/doc/html/index.html)
+* [Introducción a las pruebas de UI codificadas con Visual Studio Enterprise (Lab)](https://azuredevopslabs.com/labs/tfs/codedui)
 
 ## <a name="related-scenarios"></a>Escenarios relacionados
 

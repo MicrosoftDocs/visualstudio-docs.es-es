@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 8470f035-2a82-4052-9a12-6f24ce796861
-ms.date: 10/28/2020
+ms.date: 02/19/2021
 ms.topic: overview
 description: Obtenga información sobre toda la gama de ventajas disponibles en el portal de suscripciones de Visual Studio
-ms.openlocfilehash: d4f65f4c430d585485c388f22664726c848e6d1e
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 6ce759b3ef6a73980e7bd477e36479d65a61b3c8
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904583"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607149"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>Uso del Portal de suscriptor: my.visualstudio.com
 
@@ -47,7 +47,7 @@ La página Suscripciones le permite ver sus suscripciones, cambiar entre ellas, 
 
 ## <a name="support"></a>Soporte técnico
 
-Además de las ventajas particulares que se encuentran en la categoría Soporte técnico de la página Beneficios, la página Soporte técnico proporciona acceso a recursos que le ayudarán a sacar el máximo partido de su suscripción de Visual Studio. Acceda a los [recursos de soporte técnico](https://visualstudio.microsoft.com/subscriptions/support/) para resolver problemas técnicos o preguntas relacionadas con las ventas de suscripciones, cuentas y facturación.
+Además de las ventajas particulares que se encuentran en la categoría Soporte técnico de la página Beneficios, la página Soporte técnico proporciona acceso a recursos que le ayudarán a sacar el máximo partido de su suscripción de Visual Studio. Acceda a los [recursos de soporte técnico](https://aka.ms/vssubscriberhelp) para resolver problemas técnicos o preguntas relacionadas con las ventas de suscripciones, cuentas y facturación.
 
 ## <a name="marketplace"></a>[Marketplace](https://marketplace.visualstudio.com/)
 

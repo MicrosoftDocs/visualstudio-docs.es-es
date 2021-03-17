@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: b6fbfa3e-654a-462f-8e22-e313b6ea617f
-ms.date: 10/30/2020
+ms.date: 02/19/2021
 ms.topic: conceptual
 description: Información sobre lo que ocurre cuando expira la suscripción de Visual Studio
-ms.openlocfilehash: 3bab529f4a45a57e6cc21260fdde2d5e18bc5217
-ms.sourcegitcommit: f81984aec5341a84b87c2466461656c38d8ff681
+ms.openlocfilehash: 26659cf70ace2ffb6eaa8f02146ed965c03df48a
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93245007"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607140"
 ---
 # <a name="what-happens-when-your-subscription-expires"></a>¿Qué ocurre cuando expira la suscripción?
 Las suscripciones de Visual Studio tienen duraciones específicas y, a menos que se renueven, expirarán.  Cuando una suscripción expira, las ventajas proporcionadas en la suscripción se ven afectadas de maneras diferentes.  En este artículo se explica cómo la expiración afecta a distintos aspectos de una suscripción de Visual Studio. 
@@ -39,6 +39,9 @@ La cobertura mensual de créditos de Azure continuará durante un tiempo limitad
 
 ### <a name="other-benefits"></a>Otras ventajas 
 Muchas de las ventajas incluidas en las suscripciones de Visual Studio tienen duraciones específicas.  Las ventajas proporcionadas por los asociados de Microsoft, como Pluralsight, DataCamp o WhiteSource, tienen límites de tiempo una vez que se activan.  Las ventajas que se han activado anteriormente seguirán estando disponibles durante el tiempo restante.  Por ejemplo, si ha activado una suscripción de Aprendizaje de LinkedIn de seis meses y todavía quedan cuatro meses para que expire la suscripción de Visual Studio, seguirá teniendo cuatro meses de acceso a la suscripción de Aprendizaje de LinkedIn.  
+
+## <a name="resources"></a>Recursos
+- Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación de Suscripciones de Visual Studio, consulte [Soporte técnico de Suscripciones](https://aka.ms/vssubscriberhelp) de Visual Studio.
 
 ## <a name="see-also"></a>Consulte también
 - [Documentación de Visual Studio](/visualstudio/)

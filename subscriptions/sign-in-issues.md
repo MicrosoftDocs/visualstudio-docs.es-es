@@ -1,18 +1,18 @@
 ---
 title: Problemas al iniciar sesión en suscripciones de Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 176c7f11-b19d-49e9-a6dd-b2e5da5e8480
-ms.date: 10/28/2020
+ms.date: 02/19/2021
 ms.topic: conceptual
 description: Obtenga información sobre los problemas que pueden surgir al iniciar sesión en suscripciones de Visual Studio
-ms.openlocfilehash: cf89d2deff2a5e9e81d065fbb7efda8097102d03
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 5735e0c4178e6866539fff2edac6155642a1ba73
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903453"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607202"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>Problemas al iniciar sesión en las suscripciones de Visual Studio
 Para usar su suscripción de Visual Studio, primero debe iniciar sesión.  Según la suscripción, es posible que la configurase con una cuenta Microsoft (MSA) o una identidad de Azure Active Directory (AAD).  En este artículo se describen algunos de los problemas que pueden surgir al iniciar sesión en su suscripción.
@@ -61,7 +61,10 @@ El concepto "uso de alias" hace referencia a los usuarios que tienen diferentes 
 Esta situación puede darse cuando una empresa emplea un servicio en línea de Microsoft para el inicio de sesión en su directorio, como JohnD@contoso.com, pero los usuarios acceden a sus cuentas de correo electrónico con alias o nombres descriptivos, como John.Doe@contoso.com. Muchos usuarios que administran sus suscripciones a través de Microsoft Business Center podrían experimentar un inicio de sesión incorrecto dado que la dirección de correo electrónico proporcionada (John.Doe@contoso.com) no coincide con la dirección de directorio (JohnD@contoso.com) requerida para la autenticación correcta mediante la opción "Cuenta profesional o educativa".
 
 ### <a name="what-options-do-i-have"></a>¿De qué opciones dispongo?
-Desde la perspectiva del suscriptor, es importante tratarlo primero con el administrador para conocer la configuración de la identidad de la empresa. Si es necesario, es posible que el administrador tenga que actualizar la configuración de la cuenta desde el portal de administración, o bien que necesite crear una cuenta de Microsoft (MSA) con la dirección de correo electrónico corporativa. Antes de llevar a cabo los pasos para crear una MSA, hable con el administrador con respecto a las directivas o los problemas relacionados con esta acción. 
+Desde la perspectiva del suscriptor, es importante tratarlo primero con el administrador para conocer la configuración de la identidad de la empresa. Si es necesario, es posible que el administrador tenga que actualizar la configuración de la cuenta desde el portal de administración, o bien que necesite crear una cuenta de Microsoft (MSA) con la dirección de correo electrónico corporativa. Antes de llevar a cabo los pasos para crear una MSA, hable con el administrador con respecto a las directivas o los problemas relacionados con esta acción.
+
+## <a name="resources"></a>Recursos
+- Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación de Suscripciones de Visual Studio, consulte [Soporte técnico de Suscripciones](https://aka.ms/vssubscriberhelp) de Visual Studio. 
 
 ## <a name="see-also"></a>Consulte también
 - [Documentación de Visual Studio](/visualstudio/)

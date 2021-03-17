@@ -9,12 +9,12 @@ manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 65785384746fa3f16dd25f0405e5ead45c553c21
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: ff92d7c53b2b7e5f5c89fbc37226135d5331acbb
+ms.sourcegitcommit: 99b66b0f4ced46ead0b2506a103f974f40cc0076
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221163"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103295767"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configuración de pruebas unitarias con un archivo *.runsettings*
 
@@ -306,7 +306,7 @@ Estos valores son específicos del adaptador de pruebas que ejecuta métodos de 
     <DeleteDeploymentDirectoryAfterTestRunIsComplete>False</DeleteDeploymentDirectoryAfterTestRunIsComplete>
     <DeploymentEnabled>False</DeploymentEnabled>
     <AssemblyResolution>
-      <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/>
+      <Directory path="D:\myfolder\bin\" includeSubDirectories="false"/>
     </AssemblyResolution>
 </MSTest>
 ```
@@ -322,7 +322,7 @@ Estos valores son específicos del adaptador de pruebas que ejecuta métodos de 
 |**DeleteDeploymentDirectoryAfterTestRunIsComplete**|true|Para conservar el directorio de implementación después de una serie de pruebas, establezca este valor en **false**.|
 |**MapInconclusiveToFailed**|False|Si una prueba finaliza un estado no concluyente, se le asigna el estado Omitido en el **Explorador de pruebas**. Si quiere que las pruebas no concluyentes se muestren como Error, establezca el valor en **true**.|
 |**InProcMode**|False|Si quiere que las pruebas se ejecuten en el mismo proceso que el adaptador MSTest, establezca este valor en **true**. Este valor proporciona una pequeña mejora del rendimiento. Pero si una prueba finaliza con una excepción, el resto de pruebas no se ejecutarán.|
-|**AssemblyResolution**|False|Puede especificar rutas de acceso a ensamblados adicionales cuando busque y ejecute pruebas unitarias. Por ejemplo, puede utilizar estas rutas de acceso para los ensamblados de dependencias que no estén en el mismo directorio que el ensamblado de pruebas. Para especificar una ruta de acceso, use un elemento **Directory Path**. Las rutas de acceso pueden incluir variables de entorno.<br /><br />`<AssemblyResolution>  <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|
+|**AssemblyResolution**|False|Puede especificar rutas de acceso a ensamblados adicionales cuando busque y ejecute pruebas unitarias. Por ejemplo, puede utilizar estas rutas de acceso para los ensamblados de dependencias que no estén en el mismo directorio que el ensamblado de pruebas. Para especificar una ruta de acceso, use un elemento **Directory Path**. Las rutas de acceso pueden incluir variables de entorno.<br /><br />`<AssemblyResolution>  <Directory path="D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|
 
 ## <a name="example-runsettings-file"></a>Archivo de ejemplo *.runsettings*
 

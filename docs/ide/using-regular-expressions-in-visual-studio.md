@@ -18,12 +18,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d62d35a296c70462aab75af5a8c6729179d5b34d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e2314bb8fdb44d769a5067a39b01b40b0a74734f
+ms.sourcegitcommit: 99b66b0f4ced46ead0b2506a103f974f40cc0076
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925771"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103295761"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Usar expresiones regulares en Visual Studio
 
@@ -60,7 +60,7 @@ La siguiente tabla contiene algunos ejemplos de caracteres de expresión regular
 |Coincidencia con cualquier [carácter de espacio en blanco](/dotnet/standard/base-types/character-classes-in-regular-expressions#whitespace-character-s).|\s|`Public\sInterface` coincide con la frase "Public Interface"|
 |Coincidencia con cualquier [carácter de dígito decimal](/dotnet/standard/base-types/character-classes-in-regular-expressions#decimal-digit-character-d).|\d|`\d` coincide con "4" y "0" en "wd40".|
 
-`\b0[xX]([0-9a-fA-F]+\)\b` es un ejemplo de expresión regular que combina algunos de los operadores y construcciones para que coincida con un número hexadecimal. Esta expresión coincide con "0xc67f", pero no con "0xc67g".
+`\b0[xX]([0-9a-fA-F]+)\b` es un ejemplo de expresión regular que combina algunos de los operadores y construcciones para que coincida con un número hexadecimal. Esta expresión coincide con "0xc67f", pero no con "0xc67g".
 
 > [!TIP]
 > En sistemas operativos Windows, la mayoría de las líneas terminan en "\r\n" (un retorno de carro seguido de una nueva línea). Estos caracteres no se ven, pero están presentes en el editor y se pasan al servicio de expresiones regulares de .NET.

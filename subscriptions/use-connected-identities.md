@@ -4,16 +4,16 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 50ce0445-ef1a-4e92-b9d0-aebb2155a111
-ms.date: 10/28/2020
+ms.date: 02/19/2021
 ms.topic: conceptual
 robots: noindex, nofollow
 description: Aprenda a trabajar con identidades conectadas de la cuenta Microsoft y Azure Active Directory.
-ms.openlocfilehash: a4c7b72c91c4c1180a5fd888e3afd0a33fa2d81b
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 9625774cbf5338750034f1f288bd2ada0aa9fc33
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904032"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607124"
 ---
 # <a name="how-to-use-connected-identities-in-visual-studio-subscriptions"></a>Uso de identidades conectadas en suscripciones de Visual Studio
 Si recibe una suscripción a Visual Studio por medio de su trabajo o escuela, y usa la cuenta Microsoft (MSA) para iniciar sesión, el administrador de suscripciones puede conectar su MSA a su identidad en la instancia de Azure Active Directory de la organización (Azure AD).  Esto cambiará el modo de acceder a algunas de las ventajas que se incluyen en la suscripción. 
@@ -42,7 +42,10 @@ R:  Para obtener información sobre cómo ponerse en contacto con el administrad
 ### <a name="q-im-an-admin--how-do-i-use-this"></a>P: Soy administración.  ¿Cómo se usa esto?
 R:  La implementación de identidades conectadas es sencilla.  Consulta [este artículo](personal-email-sign-ins.md) para obtener más información. 
 
-## <a name="see-also"></a>Vea también
+## <a name="resources"></a>Recursos
+- Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación de Suscripciones de Visual Studio, consulte [Soporte técnico de Suscripciones](https://aka.ms/vssubscriberhelp) de Visual Studio.
+
+## <a name="see-also"></a>Consulte también
 - [Documentación de Visual Studio](/visualstudio/)
 - [Documentación de Azure DevOps](/azure/devops/)
 - [Documentación de Azure](/azure/)
