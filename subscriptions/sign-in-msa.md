@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 19038bb0-2858-49df-9624-cbf8bfbb5d39
-ms.date: 09/08/2020
+ms.date: 02/19/2021
 ms.topic: how-to
 description: Cómo iniciar sesión en la instancia de Visual Studio Subscription con la cuenta Microsoft (MSA)
-ms.openlocfilehash: 52882fcf50a784812752dbf606b21db1ddc5c3ea
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 7e0ef2e9adedc62be7c2c7ca709496d1f075f03c
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005942"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607163"
 ---
 # <a name="signing-in-to-your-visual-studio-subscriptions-with-your-microsoft-account-msa"></a>Inicio de sesión en las suscripciones de Visual Studio con la cuenta Microsoft (MSA)
 
@@ -40,9 +40,10 @@ R:  Muchos usuarios tienen más de una suscripción.  Si puede iniciar sesión e
 - Ha iniciado sesión con otra cuenta Microsoft.  Es posible que tenga varias suscripciones, como una suscripción Professional o Enterprise y una de Visual Studio Dev Essentials, y que estén asociadas a diferentes direcciones de correo electrónico. Para ver las otras suscripciones, cierre la sesión y vuelva a iniciarla con la otra MSA.
 - Tiene varias suscripciones asociadas a la misma MSA.  Para ver todas las suscripciones asociadas a la MSA, visite https://my.visualstudio.com/subscriptions y seleccione la suscripción que quiere usar. 
 
-Si sigue teniendo problemas, puede ponerse en contacto con el equipo de [soporte técnico de suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) para obtener ayuda.  
+## <a name="resources"></a>Recursos 
+- Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación de Suscripciones de Visual Studio, consulte [Soporte técnico de Suscripciones](https://aka.ms/vssubscriberhelp) de Visual Studio.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Documentación de Visual Studio](/visualstudio/)
 - [Documentación de Azure DevOps](/azure/devops/)
 - [Documentación de Azure](/azure/)
