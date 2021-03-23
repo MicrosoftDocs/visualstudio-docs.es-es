@@ -17,12 +17,12 @@ ms.author: joshuapa
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 11c9384d03971f475abbe680f6731d2757cbb195
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ec309be7fbeb81951af73517412f36f7b28bc82f
+ms.sourcegitcommit: 20f546a0b13b56e7b0da21abab291d42a5ba5928
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935305"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104884153"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generación de código en tiempo de diseño usando las plantillas de texto T4
 
@@ -352,10 +352,10 @@ Una característica útil de las plantillas es que se parecen mucho a los archiv
 
 4. Compruebe las siguientes propiedades del archivo **. TT** :
 
-   | | |
+   |Propiedad. |Parámetro |
    |-|-|
    | **Herramienta personalizada =** | **TextTemplatingFileGenerator** |
-   | **Acción de compilación =** | **Ninguno** |
+   | **Acción de compilación =** | **None** |
 
 5. Inserte las siguientes líneas al principio del archivo:
 
@@ -390,6 +390,6 @@ Consulte [las instrucciones para escribir plantillas de texto T4](../modeling/gu
 |Transforme los datos al formato de un lenguaje específico de dominio.|[Generar código a partir de lenguajes específicos de dominio](../modeling/generating-code-from-a-domain-specific-language.md)|
 |Escriba procesadores de directivas para transformar sus propios orígenes de datos.|[Personalizar la transformación de texto T4](../modeling/customizing-t4-text-transformation.md)|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Instrucciones para escribir plantillas de texto T4](../modeling/guidelines-for-writing-t4-text-templates.md)
