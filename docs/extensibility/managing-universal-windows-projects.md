@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03d4fbd509cbbb408bdcd0465ba4460f8c3b1e9f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8af418d8ffcaad18aca4497078f4e24f9bb679fd
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943249"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090647"
 ---
 # <a name="manage-universal-windows-projects"></a>Administrar proyectos universales de Windows
 
@@ -31,7 +31,7 @@ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el c
 
 2. Agregue una referencia a *Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll* y *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll* (en la sección de **extensiones** ).
 
-3. Abra *TestUniversalProject.CS* y agregue las siguientes `using` directivas:
+3. Abra *TestUniversalProject. CS* y agregue las siguientes `using` directivas:
 
     ```csharp
     using EnvDTE;
@@ -235,7 +235,7 @@ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el c
     ```
 
     > [!IMPORTANT]
-    > Si el usuario ha abierto un proyecto de aplicación universal de Windows de C++ en la instancia experimental, el código anterior produce una excepción. Este es un problema conocido. Para evitar la excepción, reemplace el `foreach` bloque anterior por lo siguiente:
+    > Si el usuario ha abierto un proyecto de aplicación universal de Windows de C++ en la instancia experimental, el código anterior produce una excepción. Se trata de un problema conocido. Para evitar la excepción, reemplace el `foreach` bloque anterior por lo siguiente:
 
     ```csharp
     var importingProjects = sharedAssetsProject.EnumImportingProjects();
@@ -425,9 +425,9 @@ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el c
 
       En este procedimiento, agregará un agente de escucha de eventos a un proyecto compartido y un proyecto de plataforma. Después, al cambiar el nombre de un archivo en un proyecto compartido y en otro archivo en un proyecto de plataforma, puede ver los eventos que se desencadenan para cada operación de cambio de nombre.
 
-2. Agregue un agente de escucha de eventos. Agregue un nuevo archivo de clase al proyecto y llámelo *HierarchyEventListener.CS*.
+2. Agregue un agente de escucha de eventos. Agregue un nuevo archivo de clase al proyecto y llámelo *HierarchyEventListener. CS*.
 
-3. Abra el archivo *HierarchyEventListener.CS* y agregue las siguientes directivas Using:
+3. Abra el archivo *HierarchyEventListener. CS* y agregue las siguientes directivas Using:
 
    ```csharp
    using Microsoft.VisualStudio.Shell.Interop;
@@ -551,7 +551,7 @@ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el c
     this.ModifyFileNameInProject(sharedHier, fullPath);
     ```
 
-11. Compile y ejecute el proyecto. Cree una aplicación de C# universal Hub en la instancia experimental, vaya al menú **herramientas** y haga clic en **invocar TestUniversalProject** y compruebe el texto en el panel de salida general. El nombre del primer elemento del proyecto compartido (esperamos que sea el archivo *app. Xaml* ) debe cambiarse y debería ver que se <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed> ha desencadenado el evento. En este caso, puesto que el cambio de nombre de *app. Xaml* hace que también se cambie el nombre de *app.Xaml.CS* , debería ver cuatro eventos (dos para cada proyecto de plataforma). (Los eventos DTE no realizan el seguimiento de los elementos del proyecto compartido). Debería ver dos <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> eventos (uno para cada uno de los proyectos de plataforma), pero no <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> los eventos.
+11. Compile y ejecute el proyecto. Cree una aplicación de C# universal Hub en la instancia experimental, vaya al menú **herramientas** y haga clic en **invocar TestUniversalProject** y compruebe el texto en el panel de salida general. El nombre del primer elemento del proyecto compartido (esperamos que sea el archivo *app. Xaml* ) debe cambiarse y debería ver que se <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed> ha desencadenado el evento. En este caso, puesto que el cambio de nombre de *app. Xaml* hace que se cambie también el nombre de *app. Xaml. CS* , debería ver cuatro eventos (dos para cada proyecto de plataforma). (Los eventos DTE no realizan el seguimiento de los elementos del proyecto compartido). Debería ver dos <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> eventos (uno para cada uno de los proyectos de plataforma), pero no <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> los eventos.
 
 12. Ahora intente cambiar el nombre de un archivo en un proyecto de plataforma y puede ver la diferencia en los eventos que se desencadenan. Agregue el código siguiente en `ShowMessageBox` después de la llamada a `ModifyFileName` .
 

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - <MaxFrameworkVersion> Element (Visual Studio Templates)
 - MaxFrameworkVersion Element (Visual Studio Templates)
 ms.assetid: f732a9d3-fc29-405b-9298-01ea83fc58b8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09ddccece8261a331277d1c143054305f0d08d7e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 05d61e298c666d22df1af8d426cb0671feb8b9c5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943210"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090621"
 ---
 # <a name="maxframeworkversion-element-visual-studio-templates"></a>MaxFrameworkVersion (elemento, plantillas de Visual Studio)
 
@@ -57,7 +57,7 @@ Especifica la versión máxima del .NET Framework que requiere la plantilla. Det
 
  El texto debe ser el número de versión más alto del .NET Framework permitido por la plantilla.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 
 `MaxFrameworkVersion` es un elemento opcional. Se `MaxFrameworkVersion` debe omitir el elemento a menos que sea necesario, por lo que no se puede limitar accidentalmente el intervalo admitido de versiones de .NET Framework para la plantilla. También se debe omitir si .NET Framework no es aplicable a la plantilla.
 

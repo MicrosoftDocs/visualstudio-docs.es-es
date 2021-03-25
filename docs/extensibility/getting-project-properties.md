@@ -8,17 +8,17 @@ helpviewer_keywords:
 - project properties, displaying in tool window
 - tool windows, displaying project properties
 ms.assetid: 96ba07ca-0811-4013-8602-12550ac4ba79
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e89a19ee51a62e8d92c0ec8984e912703e2b92b5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8de3f32951cb70b8115781ce067950c7e518b102
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968195"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057668"
 ---
 # <a name="get-project-properties"></a>Obtener propiedades del proyecto
 
@@ -38,7 +38,7 @@ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el c
 
 ### <a name="to-display-project-properties-in-a-tool-window"></a>Para mostrar las propiedades del proyecto en una ventana de herramientas
 
-1. En el archivo ProjectPropertiesToolWindowCommand.cs, agregue las siguientes directivas using.
+1. En el archivo ProjectPropertiesToolWindowCommand. CS, agregue las siguientes directivas using.
 
     ```csharp
     using EnvDTE;
@@ -46,9 +46,9 @@ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el c
 
     ```
 
-2. En *ProjectPropertiesToolWindowControl. Xaml*, quite el botón existente y agregue una vista de árbol desde el cuadro de herramientas. También puede quitar el controlador de eventos Click del archivo *ProjectPropertiesToolWindowControl.Xaml.CS* .
+2. En *ProjectPropertiesToolWindowControl. Xaml*, quite el botón existente y agregue una vista de árbol desde el cuadro de herramientas. También puede quitar el controlador de eventos Click del archivo *ProjectPropertiesToolWindowControl. Xaml. CS* .
 
-3. En *ProjectPropertiesToolWindowCommand.CS*, use el `ShowToolWindow()` método para abrir el proyecto y leer sus propiedades y, a continuación, agregue las propiedades a la vista de árbol. El código de ShowToolWindow debe tener un aspecto similar al siguiente:
+3. En *ProjectPropertiesToolWindowCommand. CS*, use el `ShowToolWindow()` método para abrir el proyecto y leer sus propiedades y, a continuación, agregue las propiedades a la vista de árbol. El código de ShowToolWindow debe tener un aspecto similar al siguiente:
 
     ```csharp
     private void ShowToolWindow(object sender, EventArgs e)

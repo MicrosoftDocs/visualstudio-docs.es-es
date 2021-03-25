@@ -8,17 +8,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], custom viewer
 - debugging [Debugging SDK], type visualizer
 ms.assetid: fd3691e6-9c78-4767-846f-43f85ada4375
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3fe647d8a5a4bf3485b1d7b9f7b9699997bf3da6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 869f0997ee166b9b7eb29c1a313854437d670ee4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965439"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057824"
 ---
 # <a name="type-visualizer-and-custom-viewer"></a>Visualizador de tipos y visor personalizado
 Un visualizador de tipos es un componente que muestra un fragmento de datos en un formato específico. El formato es completamente el que implementa el visualizador, ya sea el usuario final o un proveedor de visualizadores de terceros.
@@ -31,7 +31,7 @@ Un visualizador de tipos es un componente que muestra un fragmento de datos en u
 ## <a name="support-for-custom-viewers-in-an-expression-evaluator"></a>Compatibilidad con visores personalizados en un evaluador de expresiones
  EE también puede admitir visores personalizados en los que el propio EE proporciona el código para ver el tipo de datos. Un visor personalizado implementa la interfaz [IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md) , que controla todas las tareas de mostrar los datos en el formato que se desee; el visor tiene control total sobre la pantalla e incluso puede permitir que se modifiquen los datos. Los visores personalizados proporcionados por EE vienen a la hora de enviar el producto.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Componentes del depurador](../../extensibility/debugger/debugger-components.md)
 - [Evaluador de expresiones](../../extensibility/debugger/expression-evaluator.md)
 - [Motor de depuración](../../extensibility/debugger/debug-engine.md)

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - source control [Visual Studio SDK], switching plug-ins
 - source control plug-ins, switching
 ms.assetid: 01370792-b5da-4e46-9ce2-7dd326587141
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50cbf92b8214e605976aec58aaea984276ca8cc6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2dbc6b9646bcdec8cbdfae9d262397eb0ff74bdc
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99848213"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090777"
 ---
 # <a name="test-area-8-plug-in-switching"></a>Área de prueba 8: Cambio de los complementos
 El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] entorno de desarrollo integrado (IDE) tiene la interfaz de usuario (UI) para cambiar el complemento de control de código fuente actual. Esta área de prueba proporciona casos de prueba para el proceso de selección del complemento que se va a usar para el control de código fuente de la solución.
@@ -54,5 +54,5 @@ El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] entorno de desar
 |----------------------------------| - | - |
 | Cambio de complemento para una solución | 1. Seleccione el complemento en prueba como actual (**herramientas**  ->  **Opciones**  ->  selección complemento de **control de código fuente**  ->  ).<br />2. cree un nuevo proyecto y una solución.<br />3. agregar la solución al control de código fuente.<br />4. desenlazar la solución del control de código fuente (mediante el cuadro de diálogo **Cambiar control de código fuente** ).<br />5. Seleccione otro complemento (por ejemplo, [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] ).<br />6. Vuelva a cargar la solución desde el disco si se ha descargado.<br />7. agregar la solución al control de código fuente.<br />8. desenlazar la solución del control de código fuente (mediante el cuadro de diálogo **Cambiar control de código fuente** ).<br />9. Seleccione el complemento en prueba de nuevo.<br />10. Vuelva a cargar la solución desde el disco si se ha descargado.<br />11. enlazar la solución a la ubicación original (mediante el cuadro de diálogo **Cambiar control de código fuente** ). | La solución se agrega al control de código fuente mediante el complemento seleccionado. |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Guía de pruebas para los complementos de control de código fuente](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

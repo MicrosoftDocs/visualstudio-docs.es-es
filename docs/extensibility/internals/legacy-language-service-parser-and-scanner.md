@@ -8,17 +8,17 @@ helpviewer_keywords:
 - parsers, language services [managed package framework]
 - language services [managed package framework], Parsers
 ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4c9ee6cfec35804d7e60675342f3961dfb90c6c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9c57bd9f8b71f861fd5be4176211af6907b27e74
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839565"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090842"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Escáner y analizador del servicio de lenguaje heredado
 El analizador es el corazón del servicio de lenguaje. Las clases de lenguaje de Managed Package Framework (MPF) requieren un analizador de lenguaje para seleccionar información sobre el código que se muestra. Un analizador separa el texto en tokens léxicos y, a continuación, identifica esos tokens por tipo y funcionalidad.
@@ -47,10 +47,10 @@ namespace MyNamespace
 |=|operator|
 |{ } ( ) ;|delimiter|
 |MyNameSpace, MyClass, myFunction, arg1, Var1|identificador|
-|MyNamespace|espacio de nombres|
-|MyClass|class|
+|MyNamespace|namespace|
+|MyClass|clase|
 |MyFunction|method|
-|arg1|parameter|
+|arg1|parámetro|
 |Var1|variable local|
 
  El rol del analizador es identificar los tokens. Algunos tokens pueden tener más de un tipo. Una vez que el analizador ha identificado los tokens, el servicio de lenguaje puede utilizar la información para proporcionar características útiles, como el resaltado de sintaxis, la coincidencia de llaves y las operaciones de IntelliSense.
@@ -133,7 +133,7 @@ namespace MyNamespace
 
  El <xref:Microsoft.VisualStudio.Package.AuthoringSink> objeto se pasa al analizador como parte del <xref:Microsoft.VisualStudio.Package.ParseRequest> objeto y <xref:Microsoft.VisualStudio.Package.AuthoringSink> se crea un nuevo objeto cada vez que <xref:Microsoft.VisualStudio.Package.ParseRequest> se crea un nuevo objeto. Además, el <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método debe devolver un <xref:Microsoft.VisualStudio.Package.AuthoringScope> objeto, que se utiliza para controlar varias operaciones de IntelliSense. El <xref:Microsoft.VisualStudio.Package.AuthoringScope> objeto mantiene una lista para las declaraciones y una lista de los métodos, que se rellenan, en función del motivo del análisis. <xref:Microsoft.VisualStudio.Package.AuthoringScope>Se debe implementar la clase.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Implementación de un servicio de lenguaje heredado](../../extensibility/internals/implementing-a-legacy-language-service1.md)
 - [Información general del servicio de lenguaje heredado](../../extensibility/internals/legacy-language-service-overview.md)
 - [Coloreado de sintaxis en un servicio de lenguaje heredado](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)

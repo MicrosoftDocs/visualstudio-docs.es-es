@@ -8,17 +8,17 @@ helpviewer_keywords:
 - commands, routing
 - command routing
 ms.assetid: 998b616b-bd08-45cb-845f-808efb8c33bc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47991a3d1140893c4695e4edb7b76b808ab2917a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0e02493cbb2f872806ade33d77609d45d1938ccd
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99907728"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057317"
 ---
 # <a name="command-routing-algorithm"></a>Algoritmo de enrutamiento de comandos
 En Visual Studio, los comandos se controlan mediante una serie de componentes diferentes. Los comandos se enrutan desde el contexto más interno, que se basa en la selección actual, al contexto externo (también conocido como global). Para obtener más información, vea [disponibilidad de comandos](../../extensibility/internals/command-availability.md).
@@ -44,5 +44,5 @@ En Visual Studio, los comandos se controlan mediante una serie de componentes di
 
 8. Global: si los contextos mencionados anteriormente no han controlado un comando, Visual Studio intenta enrutarlo al VSPackage que posee un comando que implementa la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaz. Si el VSPackage no se ha cargado ya, no se carga cuando Visual Studio llama al <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> método. El VSPackage solo se carga cuando <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> se llama al método.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Diseño de comandos](../../extensibility/internals/command-design.md)

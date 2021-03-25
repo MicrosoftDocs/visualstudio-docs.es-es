@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/09/2016
 ms.topic: conceptual
 ms.assetid: 1472e884-c74e-4c23-9d4a-6d8bdcac043b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc674fbc8930415584eb5bed64f8c9cc67e0a8a2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0f8de3b662875a4af0423930eecfdd77e4e05b08
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99886657"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090595"
 ---
 # <a name="ngen-support-in-vsix-v3"></a>Compatibilidad con Ngen en VSIX v3
 
@@ -39,7 +39,7 @@ Hay 4 propiedades que se pueden establecer:
 
 1. **Ngen** (booleano): si es true, el instalador de Visual Studio "Ngen" el ensamblado.
 2. **Aplicación Ngen** (cadena): Ngen proporciona la oportunidad de usar el archivo de *app.config* de una aplicación para resolver las dependencias de ensamblado. Este valor debe establecerse en una aplicación cuyo *app.config* desee usar (en relación con el directorio de instalación de Visual Studio).
-3. **Arquitectura Ngen** (enum): la arquitectura para compilar el ensamblado de forma nativa. Las opciones son: a. NotSpecified b. C x86. X64 d. All
+3. **Arquitectura Ngen** (enum): la arquitectura para compilar el ensamblado de forma nativa. Las opciones son: a. NotSpecified b. C x86. X64 d. Todo
 4. **Prioridad Ngen** (entero entre 1 y 3): el nivel de prioridad de Ngen se documenta en [Ngen.exe niveles de prioridad](/dotnet/framework/tools/ngen-exe-native-image-generator#priority-levels).
 
 A continuación se muestra la ventana **propiedades** en acción:

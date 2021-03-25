@@ -9,17 +9,17 @@ helpviewer_keywords:
 - MSBuild, extensibility
 - packages, compiling with MSBuild
 ms.assetid: 9d38c388-1f64-430e-8f6c-e88bc99a4260
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92c423254c2e2e0a605ab3f7ff2238db41f4b45a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8891d9674a952f0272855c8b9203109ad2e22468
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883134"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090699"
 ---
 # <a name="using-msbuild"></a>Uso de MSBuild
 MSBuild proporciona un formato XML bien definido y extensible para crear archivos de proyecto que describen por completo los elementos de proyecto que se van a compilar, las tareas de compilación y las configuraciones de compilación.
@@ -42,7 +42,7 @@ MSBuild proporciona un formato XML bien definido y extensible para crear archivo
 
  Las clases MPF específicas del proyecto son las siguientes:
 
-|Class|Implementación|
+|Clase|Implementación|
 |-----------|--------------------|
 |`Microsoft.VisualStudio.Package.ProjectNode`|<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents>|
 |`Microsoft.VisualStudio.Package.ProjectFactory`|<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>|
@@ -55,7 +55,7 @@ MSBuild proporciona un formato XML bien definido y extensible para crear archivo
 #### <a name="single-file-generators-vs-msbuild-tasks"></a>Generadores de un solo archivo frente a tareas de MSBuild
  Solo se puede tener acceso a los generadores de un solo archivo en tiempo de diseño, pero las tareas de MSBuild se pueden usar en tiempo de diseño y en tiempo de compilación. Para obtener la máxima flexibilidad, por lo tanto, use tareas de MSBuild para transformar y generar código. Para obtener más información, vea [herramientas personalizadas](../../extensibility/internals/custom-tools.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Referencia de MSBuild](../../msbuild/msbuild-reference.md)
 - [MSBuild](../../msbuild/msbuild.md)
 - [Herramientas personalizadas](../../extensibility/internals/custom-tools.md)
