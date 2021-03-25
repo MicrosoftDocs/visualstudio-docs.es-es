@@ -9,20 +9,20 @@ helpviewer_keywords:
 - Virtualize method
 - IDebugPendingBreakpoint2::Virtualize method
 ms.assetid: 58c8e9a5-4494-47c2-bddb-56f628da6a2d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2ea6d6231a99f730969c44e7ced83cb48d0db4b4
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: fa2d3dcab7e5e71140b308dc825417c03e79d356
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102169761"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105084524"
 ---
 # <a name="idebugpendingbreakpoint2virtualize"></a>IDebugPendingBreakpoint2::Virtualize
 Alterna el estado virtualizado de este punto de interrupción pendiente. Cuando se virtualiza un punto de interrupción pendiente, el motor de depuración intentará enlazarlo cada vez que se cargue código nuevo en el programa.

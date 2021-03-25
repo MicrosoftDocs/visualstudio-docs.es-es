@@ -7,17 +7,17 @@ ms.topic: overview
 helpviewer_keywords:
 - debugging [Debugging SDK], tasks
 ms.assetid: 5d60e9e8-305e-4a48-829f-b9440fc8af7b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f27bc3f261e66791f41034923989b2cd61e09db6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 69cc1d40b2a0e61c0cf7ad32cb8187d0dad16994
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904762"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094775"
 ---
 # <a name="debug-tasks"></a>Tareas de depuración
 Para depurar un programa, se debe iniciar y se le debe adjuntar un motor de depuración (DE), o bien el motor de depuración se debe adjuntar a un programa iniciado previamente. Después de adjuntarlo, el DE debe generar determinados eventos de inicio. Como respuesta, el paquete de depuración intenta enlazar los puntos de interrupción establecidos en el IDE. Cuando el programa llega a un punto de interrupción enlazado, se detiene y espera la entrada del usuario.

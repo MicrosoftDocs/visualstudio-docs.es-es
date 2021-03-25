@@ -10,17 +10,17 @@ helpviewer_keywords:
 - cascading submenus
 - menus, creating cascading submenus
 ms.assetid: 692600cb-d052-40e2-bdae-4354ae7c6c84
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b784cae836f1a5cae520a9650c8f396ccc960a72
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cc6d521e699beb2345ba76e2e617ff749886eee9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951516"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094905"
 ---
 # <a name="add-a-submenu-to-a-menu"></a>Agregar un submenú a un menú
 Este tutorial se basa en la demostración de [Agregar un menú a la barra de menús de Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) mostrando cómo agregar un submenú al menú **TestMenu** .
@@ -85,7 +85,7 @@ Este tutorial se basa en la demostración de [Agregar un menú a la barra de men
 
 ## <a name="add-a-command"></a>Agregar un comando
 
-1. Abra *TestCommand.CS* y agregue el siguiente identificador de comando después del identificador de comando existente.
+1. Abra *prueba. CS* y agregue el siguiente identificador de comando después del identificador de comando existente.
 
     ```csharp
     public const int cmdidTestSubCmd = 0x0105;
@@ -155,7 +155,7 @@ Este tutorial se basa en la demostración de [Agregar un menú a la barra de men
 
 5. En el menú **TestMenu** , haga clic en **submenú** y, a continuación, haga clic en **probar subcomando**. Debe aparecer un cuadro de mensaje y mostrar el texto "comando de prueba dentro de prueba. SubItemCallback ()".
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Agregar un menú a la barra de menús de Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)
 - [Comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md)

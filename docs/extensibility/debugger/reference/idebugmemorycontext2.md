@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugMemoryContext2 interface
 ms.assetid: 3a544c8b-11dc-46bb-8549-261e4ac5bbc4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 20750397eafa392ee7ad8bd742b0126b1fb9deeb
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 5a967c992fc55065c50dbbe173495e7c1199df59
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102166351"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105058487"
 ---
 # <a name="idebugmemorycontext2"></a>IDebugMemoryContext2
 Esta interfaz representa una posición en el espacio de direcciones de la máquina que ejecuta el programa que se está depurando.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ```
 IDebugMemoryContext2 : IUnknown
@@ -57,7 +57,7 @@ IDebugMemoryContext2 : IUnknown
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Consulte también
-- [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
+- [Interfaces principales](../../../extensibility/debugger/reference/core-interfaces.md)
 - [GetMemoryContext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md)
 - [GetMemoryContext](../../../extensibility/debugger/reference/idebugreference2-getmemorycontext.md)
 - [ReadAt](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md)

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - expression evaluators, architecture
 - debugging [Debugging SDK], expression evaluators
 ms.assetid: aad7c4c6-1dc1-4d32-b975-f1fdf76bdeda
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac81d386f0e1104879701faba230d5384259fa25
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 31b382f4765a115657fb213f39530e88e4008c95
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921408"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094736"
 ---
 # <a name="expression-evaluator-architecture"></a>Arquitectura del evaluador de expresiones
 > [!IMPORTANT]
@@ -53,7 +53,7 @@ ms.locfileid: "99921408"
 
  [Interfaces del evaluador de expresiones clave](../../extensibility/debugger/key-expression-evaluator-interfaces.md) Describe las interfaces cruciales necesarias al escribir un EE, junto con el contexto de evaluación.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Escribir un evaluador de expresiones CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
 - [Mostrar variables locales](../../extensibility/debugger/displaying-locals.md)
 - [Cambiar el valor de una variable local](../../extensibility/debugger/changing-the-value-of-a-local.md)

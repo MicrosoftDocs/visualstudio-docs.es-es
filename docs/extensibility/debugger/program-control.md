@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], control of execution
 ms.assetid: 6be80904-e66c-4cae-8891-1113b799fb01
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9378dd2aa1ed52408e3aa4d0e9027a34d833dab
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d2d869094eff3713a3c9e7ec63a8003bb12a018c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948457"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094684"
 ---
 # <a name="program-control"></a>Control de programas
 En la depuración de Visual Studio, todas las siguientes rutinas de paso y continuo se producen en el nivel de programa:
@@ -48,5 +48,5 @@ En la depuración de Visual Studio, todas las siguientes rutinas de paso y conti
 
  En el caso de los programas multiproceso, también debe implementar el método [IDebugProgram2:: enumthreads (](../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) y todos los métodos de la interfaz [IEnumDebugThreads2](../../extensibility/debugger/reference/ienumdebugthreads2.md) .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Control de ejecución y evaluación del estado](../../extensibility/debugger/execution-control-and-state-evaluation.md)

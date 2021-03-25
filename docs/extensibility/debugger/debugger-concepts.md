@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK]
 ms.assetid: 2d371d38-f1a0-4a9a-8ea3-100e8c0149b7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5202ebdb621121e63adbdf5118cb0848689adde6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 94249a6ff7c50fb054a3fc460708a8e36181bff8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952413"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094892"
 ---
 # <a name="debugger-concepts"></a>Conceptos del depurador
 Para compilar en el paquete de depuración de Visual Studio, debe estar familiarizado con los conceptos de arquitectura utilizados en el diseño del paquete.

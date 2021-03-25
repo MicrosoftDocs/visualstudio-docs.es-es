@@ -8,25 +8,25 @@ f1_keywords:
 helpviewer_keywords:
 - BP_PASSCOUNT_STYLE structure
 ms.assetid: 0a647047-e2d5-4724-a0b8-68108425ecad
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e216b61d6fed41571baa7f68201d96f84532fc3a
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 39a0dba08aa74386c442a7732b6522d8ee27652c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102144174"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094476"
 ---
 # <a name="bp_passcount_style"></a>BP_PASSCOUNT_STYLE
 Especifica la condición asociada al recuento de pasos de punto de interrupción que hace que se active el punto de interrupción.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ```cpp
 enum enum_BP_PASSCOUNT_STYLE {
