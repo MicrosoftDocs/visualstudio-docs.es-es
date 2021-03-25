@@ -8,17 +8,17 @@ helpviewer_keywords:
 - persistence, projects
 - projects [Visual Studio SDK], persistance
 ms.assetid: 42907bcf-4e27-46bd-a8cb-01c2ccd2bde5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1009df1ce71e5ab46c0e9d100a79562f77460c0f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2ffaeb6d43597e93586db79c305b654b42bf6dbb
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911778"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062803"
 ---
 # <a name="project-persistence"></a>Persistencia de un proyecto
 La persistencia es una consideración de diseño clave para el proyecto. La mayoría de los proyectos utilizan elementos de proyecto que representan archivos; [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] también admite proyectos cuyos datos no estén basados en archivos. Los archivos que pertenecen al proyecto y el archivo del proyecto deben ser persistentes. El IDE indica al proyecto que se guarde o un elemento de proyecto.
@@ -44,6 +44,6 @@ La persistencia es una consideración de diseño clave para el proyecto. La mayo
 
  Los métodos de la `IVsPersistHierarchyItem2` interfaz se usan para determinar si un elemento se puede volver a cargar y, si el elemento puede ser, para volver a cargarlo. Además, <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IgnoreItemFileChanges%2A> se puede implementar el método para que los elementos modificados se descarten sin guardarse.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Lista de comprobación: Creación de nuevos tipos de proyectos](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Creación de instancias de proyecto mediante generadores de proyecto](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)

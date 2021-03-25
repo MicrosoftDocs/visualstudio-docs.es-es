@@ -9,17 +9,17 @@ helpviewer_keywords:
 - registry, new project types
 - registration, new project types
 ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 893f59aa9e99d990623e0c8383c12bbffbc4a510
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e54f62a90ece61fc2dd8f3cc2b242957f249ed33
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944516"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062777"
 ---
 # <a name="registering-a-project-type"></a>Registro de un tipo de proyecto
 Al crear un nuevo tipo de proyecto, debe crear entradas del registro que habiliten [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para reconocer y trabajar con el tipo de proyecto. Normalmente, estas entradas del registro se crean mediante un archivo de script de registro (. RGS).
@@ -266,7 +266,7 @@ Al crear un nuevo tipo de proyecto, debe crear entradas del registro que habilit
 
  Esto significa que si incluye una entrada PROJECT_TYPE = EF en el archivo. vsz, el entorno busca los archivos. vsz en el directorio ProductDir especificado anteriormente.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Lista de comprobación: Creación de nuevos tipos de proyectos](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Elementos de un modelo de proyecto](../../extensibility/internals/elements-of-a-project-model.md)
 - [Creación de instancias de proyecto mediante generadores de proyecto](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)

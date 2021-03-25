@@ -8,17 +8,17 @@ helpviewer_keywords:
 - IDSymbol element (VSCT XML schema)
 - VSCT XML schema elements, IDSymbol
 ms.assetid: 760cfd20-3c06-422c-9103-98bfa1f387f8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 830324e708ff83fbcbbbdb98d261130e92c7ba00
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f59089ab981bc97100386b3e1907ef903ede3bd0
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883199"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069847"
 ---
 # <a name="idsymbol-element"></a>Elemento IDSymbol
 El `IDSymbol` elemento contiene el identificador del par GUID: ID que representa un menú, grupo o comando. El GUID procede del elemento primario `GuidSymbol` . El `IDSymbol` elemento tiene un `name` atributo que proporciona un nombre descriptivo para el identificador, que se encuentra en el `value` atributo.
@@ -48,8 +48,8 @@ El `IDSymbol` elemento contiene el identificador del par GUID: ID que representa
 |-------------|-----------------|
 |[Elemento GuidSymbol](../extensibility/guidsymbol-element.md)|Contiene el GUID del par GUID: ID que representa un menú, grupo o comando. Agrupa los elementos `IDSymbol`.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Cada `IDSymbol` elemento de un `GuidSymbol` elemento determinado debe tener un único `value` . Sin embargo, `IDSymbol` los elementos que tienen valores idénticos pueden existir en un paquete siempre que tengan distintos elementos primarios.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Archivos de tabla de comandos de Visual Studio (. Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

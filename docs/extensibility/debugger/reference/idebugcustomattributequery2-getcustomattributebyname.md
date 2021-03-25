@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomAttributeQuery2::GetCustomAttributeByName
 ms.assetid: 7428dfeb-8929-41b2-9b99-cb343a86c02d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8c65abff050af7b7c34161cbca2594431cb119b5
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: dd8b1793bad585dd808ebd812b610cd68aabc129
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102150086"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105077608"
 ---
 # <a name="idebugcustomattributequery2getcustomattributebyname"></a>IDebugCustomAttributeQuery2::GetCustomAttributeByName
 Obtiene los atributos personalizados bytes dado el nombre del atributo personalizado.

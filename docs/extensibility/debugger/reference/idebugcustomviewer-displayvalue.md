@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomViewer::DisplayValue
 ms.assetid: 7a538248-5ced-450e-97cd-13fabe35fb1c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 238bb4f9b453513f2fdcccb628eacdfc9ef4ae2b
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 11a93ba7a3367a9ff61debfe338c349549ee429d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102173486"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105077582"
 ---
 # <a name="idebugcustomviewerdisplayvalue"></a>IDebugCustomViewer::DisplayValue
 Se llama a este método para mostrar el valor especificado.

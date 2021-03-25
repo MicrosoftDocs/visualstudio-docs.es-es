@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::Attach
 ms.assetid: 173dcbda-5019-4c5e-bca9-a071838b5739
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a780ab04e693fd2868579efbf015aef25e0cca32
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 38275cc623fcb8b30646c9d84ef194f584369ef2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102160153"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105093917"
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
 Adjunta un motor de depuración (DE) a un programa o programas. Llamado por el administrador de depuración de sesión (SDM) cuando el DE se ejecuta en proceso para el SDM.

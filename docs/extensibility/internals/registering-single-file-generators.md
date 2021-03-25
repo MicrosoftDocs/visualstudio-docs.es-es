@@ -8,17 +8,17 @@ helpviewer_keywords:
 - registration, custom tools
 - custom tools, defining registry settings
 ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b2cb27baaca465096a14c836b0dfc7ebc43d42e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ee110defb06d308c017230a36cebc2b04b3c63b9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837254"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062686"
 ---
 # <a name="registering-single-file-generators"></a>Registro de generadores de un solo archivo
 Para que una herramienta personalizada esté disponible en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , debe registrarla de modo que [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pueda crear una instancia de ella y asociarla a un tipo de proyecto determinado.
@@ -69,7 +69,7 @@ Para que una herramienta personalizada esté disponible en [!INCLUDE[vsprvs](../
    "GeneratesDesignTimeSource"=dword:00000001
    ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>
 - [Implementación de generadores de un solo archivo](../../extensibility/internals/implementing-single-file-generators.md)
 - [Exposición de tipos a diseñadores visuales](../../extensibility/internals/exposing-types-to-visual-designers.md)

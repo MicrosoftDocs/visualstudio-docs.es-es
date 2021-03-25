@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Add New Project dialog box
 - registry, Add New Project dialog box
 ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc268236a10ab3f6be660b0e69a82a8f656f8910
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d6f4abe3a8632f4fe9208922aee1ccd92da3dab5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837260"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062699"
 ---
 # <a name="registering-project-and-item-templates"></a>Registro de plantillas para proyectos y elementos
 Los tipos de proyecto deben registrar los directorios donde se encuentran las plantillas de proyecto y de elemento de proyecto. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usa la información de registro asociada a los tipos de proyecto para determinar lo que se va a mostrar en los cuadros de diálogo **Agregar nuevo proyecto** y **Agregar nuevo elemento** .
@@ -118,7 +118,7 @@ Los tipos de proyecto deben registrar los directorios donde se encuentran las pl
 
  \WizardFiles
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Adición de plantillas de proyecto y de elementos de proyecto](../../extensibility/internals/adding-project-and-project-item-templates.md)
 - [Asistentes](../../extensibility/internals/wizards.md)

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - project models, objects and interfaces
 - project models, services
 ms.assetid: b2f572d3-b26d-4846-92d1-84055fac141a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7d7e664f0c39a46e1d84df0c5a0842c7270c942
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ae01d149611afe5bf75a6952f19baff7d70f6210
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896896"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062816"
 ---
 # <a name="project-model-core-components"></a>Componentes principales del modelo de proyecto
 Las tablas siguientes se expanden en el modelo de proyecto. Las tablas presentan breves descripciones de las interfaces y los servicios identificados en el modelo, así como las interfaces y servicios asociados a objetos específicos. Además, las tablas detallan otras interfaces que son opcionales en la creación y el mantenimiento del proyecto en función de los requisitos de su tipo de proyecto específico.
@@ -101,7 +101,7 @@ Las tablas siguientes se expanden en el modelo de proyecto. Las tablas presentan
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibility3>|Se utiliza para implementar el modelo de automatización. En el modelo de proyecto, devolverá un objeto de propiedades que le permite crear una instancia de ese objeto.|
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIHierWinClipboardHelper>|Se utiliza para implementar eventos del portapapeles en el objeto de proyecto en la jerarquía. `SVsUIHierWinClipboardHelper` permite controlar correctamente las operaciones de cortar, copiar y pegar.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - [Lista de comprobación: Creación de nuevos tipos de proyectos](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [No está en la compilación: usar clases de proyecto de HierUtil7 para implementar un tipo de proyecto (C++)](/previous-versions/bb166212(v=vs.100))

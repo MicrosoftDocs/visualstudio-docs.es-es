@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExceptionEvent2::GetExceptionDescription
 ms.assetid: d07d458f-5729-47e4-9b77-1bd59c61a75a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 398b03161a00d14c21367a05607f611d1fc1b9c8
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: f4dc62be4dd7ec4a1db00d8a11dff73b671f8112
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102152876"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105084797"
 ---
 # <a name="idebugexceptionevent2getexceptiondescription"></a>IDebugExceptionEvent2::GetExceptionDescription
 Obtiene una descripción de la excepción que se pueda mostrar.

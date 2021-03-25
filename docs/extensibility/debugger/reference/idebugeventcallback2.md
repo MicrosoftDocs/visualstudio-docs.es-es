@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEventCallback2
 ms.assetid: 2c935ee0-2e22-4be0-a852-73736f33c8c9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb33bcbdff14b0f95aab5d8f300473c13d4c342f
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: d00c970c522adf232f9a18b762c7d6cf3cf3b794
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102152915"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105084901"
 ---
 # <a name="idebugeventcallback2"></a>IDebugEventCallback2
 El motor DE depuración (DE) utiliza esta interfaz para enviar eventos de depuración al administrador de depuración de sesión (SDM).
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ```
 IDebugEventCallback2 : IUnknown
@@ -55,7 +55,7 @@ IDebugEventCallback2 : IUnknown
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Consulte también
-- [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
+- [Interfaces principales](../../../extensibility/debugger/reference/core-interfaces.md)
 - [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)
 - [Adjuntar](../../../extensibility/debugger/reference/idebugprogram2-attach.md)
 - [Adjuntar](../../../extensibility/debugger/reference/idebugengine2-attach.md)

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Open With command
 - persistence, supporting Open With command
 ms.assetid: 53794bc3-1b73-4d40-954e-cfade1abddcf
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9426b60013ae17eec872a665666a60d1fdfc1bc8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e45e2c601873641b5ac79c54fd6709eb3f45f95d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946727"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069821"
 ---
 # <a name="display-files-by-using-the-open-with-command"></a>Mostrar archivos mediante el comando abrir con
 Un proyecto puede pedir al IDE que muestre el cuadro de diálogo **abrir con** . Esta solicitud solicita al usuario que abra un archivo que tenga una selección de editores estándar. En los pasos siguientes se describe este proceso:
@@ -33,7 +33,7 @@ Un proyecto puede pedir al IDE que muestre el cuadro de diálogo **abrir con** .
 
 3. En cuanto el usuario selecciona un elemento en el cuadro de diálogo **abrir con** , el IDE abre el documento mediante una llamada al <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> método. Para obtener más información, consulte [Cómo: abrir editores estándar](../../extensibility/how-to-open-standard-editors.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Abrir y guardar elementos de proyecto](../../extensibility/internals/opening-and-saving-project-items.md)
 - [Mostrar archivos mediante el comando Abrir archivo](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md)
 - [Cómo: abrir editores estándar](../../extensibility/how-to-open-standard-editors.md)

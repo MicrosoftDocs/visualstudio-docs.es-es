@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointRequest2 interface
 ms.assetid: 784bd5b1-4a3f-4455-b313-c4c9a82555a5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d46f4aacdc886e455771f5a30ba82b941b29c957
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: e73d881b1aef09d13d7b7138348d5198c8322694
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102154852"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085018"
 ---
 # <a name="idebugcanstopevent2"></a>IDebugCanStopEvent2
 Esta interfaz se usa para solicitar al administrador de depuración de la sesión (SDM) si se debe detener en la ubicación del código actual.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ```
 IDebugCanStopEvent2 : IUknown

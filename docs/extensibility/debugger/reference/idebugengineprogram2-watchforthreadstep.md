@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngineProgram2::WatchForThreadStep
 ms.assetid: b70922a3-1313-409a-b3b7-50c7cd13e394
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: eaf02e07bebbbfd711d99ef7605befbdce1f9376
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 9ddf7de557a5059a83aabdbfad7045e8dacbc71b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102153422"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105093839"
 ---
 # <a name="idebugengineprogram2watchforthreadstep"></a>IDebugEngineProgram2::WatchForThreadStep
 Inspecciona la ejecución (o deja de ver la ejecución) para que se produzca en el subproceso determinado.

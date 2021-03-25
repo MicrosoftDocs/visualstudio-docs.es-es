@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 676668b1247377597bed55b293efb8ad8b5cd253
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ad9f7d329bf00e3fadd665cefea22a2301fdf695
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841710"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061789"
 ---
 # <a name="share-your-app"></a>Compartición de la aplicación
 
@@ -24,7 +24,7 @@ Ahora que ha creado una imagen, tendrá que compartirla. Para compartir imágene
 
 Para insertar una imagen, primero debe crear un repositorio en Docker Hub.
 
-1. Vaya a [Docker Hub](https://hub.docker.com) e inicie sesión si es necesario.
+1. Vaya a [Docker Hub](https://hub.docker.com/signup/msftedge?utm_source=msftedge) e inicie sesión si es necesario.
 
 1. Haga clic en el botón **Create Repository** (Crear repositorio).
 
