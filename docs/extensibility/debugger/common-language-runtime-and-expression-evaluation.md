@@ -8,17 +8,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation, and common language runtime
 ms.assetid: b36c1eb5-1aaf-48a6-b287-ee7a273d2b1c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cddf09eac5f887e0c5615af76e6956b590576786
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 35ddc218d0e9499253269a12687fa89122cfe007
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930673"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055016"
 ---
 # <a name="common-language-runtime-and-expression-evaluation"></a>Common Language Runtime y evaluación de expresiones
 > [!IMPORTANT]
@@ -37,5 +37,5 @@ ms.locfileid: "99930673"
 
  Cuando el CLR DE llama a la propiedad de EE para evaluar una expresión, el método DE proporciona interfaces de EE a un SP y un objeto de enlazador. Por lo tanto, la escritura de un motor de depuración basado en CLR significa que solo es necesario implementar las interfaces apropiadas del evaluador de expresiones. el CLR se encarga del enlace y el control de los símbolos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Escribir un evaluador de expresiones CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

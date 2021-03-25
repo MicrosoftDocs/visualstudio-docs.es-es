@@ -8,17 +8,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], call stack evaluation
 - call stacks, evaluation
 ms.assetid: 373d6b49-0459-4cce-816e-05745a44fe49
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 223b1fff75c8fefdfed5bce5765d82fc5309738d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c7e7180301965e43e6757340019c3506fe1a5e1f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930738"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055094"
 ---
 # <a name="call-stack-evaluation"></a>Evaluación de la pila de llamadas
 Para ver los marcos de pila de la pila de llamadas durante el modo de interrupción, debe implementar el método [EnumFrameInfo](../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) .
@@ -39,5 +39,5 @@ Para ver los marcos de pila de la pila de llamadas durante el modo de interrupci
 
  Para enumerar los contextos de código, debe implementar todos los métodos de [IEnumDebugCodeContexts2](../../extensibility/debugger/reference/ienumdebugcodecontexts2.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Control de ejecución y evaluación del estado](../../extensibility/debugger/execution-control-and-state-evaluation.md)

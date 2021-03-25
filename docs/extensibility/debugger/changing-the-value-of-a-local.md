@@ -8,17 +8,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation, changing values programmatically
 ms.assetid: 8407d3df-d38a-4328-82d1-98084bef43ec
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f11be641cb77b6b27b735b7a4f66d45e11d7a193
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d8baac2f0e288e9bde1288ed72e43d7f1d150d04
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930686"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055081"
 ---
 # <a name="change-the-value-of-a-local"></a>Cambiar el valor de una variable local
 > [!IMPORTANT]
@@ -30,7 +30,7 @@ ms.locfileid: "99930686"
 
 1. Después de que el usuario especifique el nuevo valor, Visual Studio llama a [SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) en el objeto [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) asociado a la clase local.
 
-2. `IDebugProperty2::SetValueAsString` realiza las siguientes tareas:
+2. `IDebugProperty2::SetValueAsString` realiza las tareas siguientes:
 
    1. Evalúa la cadena para generar un valor.
 
@@ -47,6 +47,6 @@ ms.locfileid: "99930686"
 ## <a name="in-this-section"></a>En esta sección
  [Implementación de ejemplo de cambios de valores](../../extensibility/debugger/sample-implementation-of-changing-values.md) Usa el ejemplo MyCEE para recorrer el proceso de cambiar los valores.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Escribir un evaluador de expresiones CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
 - [Mostrar variables locales](../../extensibility/debugger/displaying-locals.md)

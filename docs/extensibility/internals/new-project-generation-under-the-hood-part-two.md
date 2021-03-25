@@ -7,17 +7,17 @@ helpviewer_keywords:
 - projects [Visual Studio], new project dialog
 - projects [Visual Studio], new project generation
 ms.assetid: 73ce91d8-0ab1-4a1f-bf12-4d3c49c01e13
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7891cb6a40e6b7de48ba11871688881625b9c68d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e391ad66c9925dc68997ff610dc5d1556ddf09b2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895614"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063089"
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>Generación de nuevos proyectos: Aspectos técnicos (parte 2)
 
@@ -31,7 +31,7 @@ En [nueva generación de proyectos: en el capó, la primera parte](../../extensi
 ### <a name="template-parameter-replacement"></a>Reemplazo de parámetros de plantilla
  Cuando la plantilla copia una plantilla de elemento en un nuevo proyecto, reemplaza los parámetros de plantilla por cadenas para personalizar el archivo. Un parámetro de plantilla es un token especial precedido y seguido de un signo de dólar, por ejemplo, $date $.
 
- Echemos un vistazo a una plantilla de elemento de proyecto típica. Extraiga y examine Program.cs en la carpeta archivos de Programa\microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip.
+ Echemos un vistazo a una plantilla de elemento de proyecto típica. Extraiga y examine Program. CS en la carpeta archivos de Programa\microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip.
 
 ```csharp
 using System;
@@ -130,7 +130,7 @@ namespace Simple
  Esto indica a la nueva plantilla de proyecto que cree el archivo de proyecto. csproj simple copiando y personalizando el elemento de plantilla archivo WindowsApplication. csproj.
 
 ### <a name="designers-and-references"></a>Diseñadores y referencias
- Puede ver en el Explorador de soluciones que la carpeta propiedades está presente y contiene los archivos esperados. Pero ¿qué ocurre con las referencias de proyecto y las dependencias de archivo de diseñador, como Resources.Designer.cs a Resources. resx y Form1.Designer.cs a Form1.cs?  Estos se configuran en el archivo. csproj simple cuando se genera.
+ Puede ver en el Explorador de soluciones que la carpeta propiedades está presente y contiene los archivos esperados. Pero, ¿qué ocurre con las referencias de proyecto y las dependencias de archivo de diseñador, como Resources. Designer. CS a Resources. resx y Form1. Designer. CS a Form1. CS?  Estos se configuran en el archivo. csproj simple cuando se genera.
 
  Este es el \<ItemGroup> de simple. csproj que crea las referencias del proyecto:
 
@@ -145,7 +145,7 @@ namespace Simple
 </ItemGroup>
 ```
 
- Puede ver que estas son las seis referencias de proyecto que aparecen en el Explorador de soluciones. Esta es una sección de otra \<ItemGroup> . Se han eliminado muchas líneas de código para mayor claridad. En esta sección se hace que Settings.Designer.cs dependa de Settings. Settings:
+ Puede ver que estas son las seis referencias de proyecto que aparecen en el Explorador de soluciones. Esta es una sección de otra \<ItemGroup> . Se han eliminado muchas líneas de código para mayor claridad. En esta sección, Settings. Designer. CS depende de Settings. Settings:
 
 ```xml
 <ItemGroup>
@@ -155,7 +155,7 @@ namespace Simple
 </ItemGroup>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Generación de nuevos proyectos: Aspectos técnicos (parte 1)](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)
 - [MSBuild](../../msbuild/msbuild.md)

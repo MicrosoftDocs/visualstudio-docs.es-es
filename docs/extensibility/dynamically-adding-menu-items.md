@@ -9,17 +9,17 @@ helpviewer_keywords:
 - menu items, adding dynamically
 - menus, adding dynamic items
 ms.assetid: d281e9c9-b289-4d64-8d0a-094bac6c333c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3432092bc73ef3a06c807a1b4c4942080b9fce8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fa85d5b5cf4b99840e181fb24b5913ff72a3fee0
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883550"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070341"
 ---
 # <a name="dynamically-add-menu-items"></a>Agregar elementos de menú de forma dinámica
 Puede agregar elementos de menú en tiempo de ejecución si especifica la `DynamicItemStart` marca de comando en una definición de botón de marcador de posición en el archivo de tabla de comandos de Visual Studio (*. Vsct*) y, a continuación, define (en el código) el número de elementos de menú que se van a mostrar y controla los comandos. Cuando se carga el VSPackage, el marcador de posición se reemplaza por los elementos de menú dinámicos.
@@ -144,7 +144,7 @@ Puede agregar elementos de menú en tiempo de ejecución si especifica la `Dynam
 ## <a name="implement-the-dynamic-menu-command"></a>Implementar el comando de menú dinámico
  Cree una clase de comando de menú dinámico que herede de <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> . En esta implementación, el constructor especifica un predicado que se va a usar para los comandos coincidentes. Debe invalidar el <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.DynamicItemMatch%2A> método para utilizar este predicado con el fin de establecer la <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.MatchedCommandId%2A> propiedad, que identifica el comando que se va a invocar.
 
-1. Cree un nuevo archivo de clase de C# denominado *DynamicItemMenuCommand.CS* y agregue una clase denominada **DynamicItemMenuCommand** que herede de <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> :
+1. Cree un nuevo archivo de clase de C# denominado *DynamicItemMenuCommand. CS* y agregue una clase denominada **DynamicItemMenuCommand** que herede de <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> :
 
     ```csharp
     class DynamicItemMenuCommand : OleMenuCommand
@@ -207,14 +207,14 @@ Puede agregar elementos de menú en tiempo de ejecución si especifica la `Dynam
 ## <a name="add-the-command"></a>Agregar el comando
  El constructor DynamicMenu es donde se configuran los comandos de menú, incluidos los menús dinámicos y los elementos de menú.
 
-1. En *DynamicMenuPackage.CS*, agregue el GUID del conjunto de comandos y el identificador de comando:
+1. En *DynamicMenuPackage. CS*, agregue el GUID del conjunto de comandos y el identificador de comando:
 
     ```csharp
     public const string guidDynamicMenuPackageCmdSet = "00000000-0000-0000-0000-00000000";  // get the GUID from the .vsct file
     public const uint cmdidMyCommand = 0x104;
     ```
 
-2. En el archivo *DynamicMenu.CS* , agregue las siguientes directivas Using:
+2. En el archivo *DynamicMenu. CS* , agregue las siguientes directivas Using:
 
     ```csharp
     using EnvDTE;
@@ -333,7 +333,7 @@ private bool IsValidDynamicItem(int commandId)
 ```
 
 ## <a name="set-the-vspackage-to-load-only-when-a-solution-has-multiple-projects"></a>Establecer el VSPackage para cargar solo cuando una solución tiene varios proyectos
- Dado que el comando **establecer proyecto de inicio** no tiene sentido a menos que la solución activa tenga más de un proyecto, puede establecer el VSPackage en carga automática solo en ese caso. Se usa <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> junto con el contexto de la interfaz de usuario <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids.SolutionHasMultipleProjects> . En el archivo *DynamicMenuPackage.CS* , agregue los siguientes atributos a la clase DynamicMenuPackage:
+ Dado que el comando **establecer proyecto de inicio** no tiene sentido a menos que la solución activa tenga más de un proyecto, puede establecer el VSPackage en carga automática solo en ese caso. Se usa <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> junto con el contexto de la interfaz de usuario <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids.SolutionHasMultipleProjects> . En el archivo *DynamicMenuPackage. CS* , agregue los siguientes atributos a la clase DynamicMenuPackage:
 
 ```csharp
 [PackageRegistration(UseManagedResourcesOnly = true)]
@@ -358,6 +358,6 @@ public sealed class DynamicMenuItemsPackage : Package
 
 4. Cuando se cierra la solución o se abre una solución que solo tiene un proyecto, el icono de la barra de herramientas debe desaparecer.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md)
 - [Cómo agrega VSPackages los elementos de la interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation
 ms.assetid: f9381b2f-99aa-426c-aea0-d9c15f3c859b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4addc7b1f62c7528e845b34842c0fd85ba66148a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6876bea4174df7f5ac293ea0d470f5922d7492d8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921393"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055029"
 ---
 # <a name="expression-evaluator"></a>Evaluador de expresiones
 Los evaluadores de expresiones (EE) examinan la sintaxis de un lenguaje para analizar y evaluar variables y expresiones en tiempo de ejecución, lo que permite que el usuario la vea cuando el IDE está en modo de interrupción.
@@ -42,5 +42,5 @@ Los evaluadores de expresiones (EE) examinan la sintaxis de un lenguaje para ana
 ## <a name="implementation-notes"></a>Notas de implementación
  Los [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] motores de depuración esperan comunicarse con el evaluador de expresiones mediante interfaces de Common Language Runtime (CLR). Como resultado, un evaluador de expresiones que funciona con los [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] motores de depuración debe admitir CLR (se puede encontrar una lista completa de todas las interfaces de depuración de CLR en debugref.doc, que forma parte del [!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)] ).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Componentes del depurador](../../extensibility/debugger/debugger-components.md)

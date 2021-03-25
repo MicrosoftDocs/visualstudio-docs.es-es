@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], contexts
 ms.assetid: 65e4d37a-086b-426e-9394-a3534967fd59
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 685650e0e97c3f9851f051fdaa78f86252597ff8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c668cd1fa80efe24fa596cc4e9f311e2db519246
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930725"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055042"
 ---
 # <a name="code-context"></a>Contexto de código
 En [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] la depuración, un **contexto de código**:
@@ -32,6 +32,6 @@ En [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] la depuración, 
 
 - Se implementa mediante una interfaz [IDebugCodeContext2](../../extensibility/debugger/reference/idebugcodecontext2.md) .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Contexto del documento](../../extensibility/debugger/document-context.md)
 - [Contextos del depurador](../../extensibility/debugger/debugger-contexts.md)

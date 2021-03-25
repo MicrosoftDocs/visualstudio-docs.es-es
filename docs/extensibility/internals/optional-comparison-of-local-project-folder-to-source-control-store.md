@@ -8,17 +8,17 @@ helpviewer_keywords:
 - source control plug-ins, comparing versions
 - source control plug-ins, local project folders
 ms.assetid: 65217e8b-15a6-4446-92b0-4cff1c6220f5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61a23eb1fcb3cbae9e478f35b3ac1fdb6abaf407
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f7b334bb6e1b73dd31060020378e91b74e5af102
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895484"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063050"
 ---
 # <a name="optional-comparison-of-local-project-folder-to-source-control-store"></a>Comparación opcional de la carpeta de proyecto local con el almacén de control de código fuente
 En la API de complemento de control de código fuente 1,2, la comparación entre la carpeta de proyecto local y el control de código fuente se realiza mediante las funciones [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md) y [SccDirDiff](../../extensibility/sccdirdiff-function.md).
@@ -40,5 +40,5 @@ En la API de complemento de control de código fuente 1,2, la comparación entre
 > [!NOTE]
 > Esta función utiliza las mismas marcas de comando que [SccDiff](../../extensibility/sccdiff-function.md). Como proveedor de complementos de control de código fuente, puede optar por no admitir la operación "diferencia rápida" en los directorios.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Novedades de la API del complemento de control de código fuente, versión 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - debugging [Debugging SDK], events
 ms.assetid: b3440ac3-80af-40c6-bef4-cbf00fa67885
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ef1aad17caae12b046ac483808f847a6e186792
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5b0c3169039115432758cfdcd3f0612c3578b74c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930712"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055056"
 ---
 # <a name="call-debugger-events"></a>Llamar a eventos del depurador
 Los eventos de las sesiones de depuración se producen en un orden específico.
@@ -49,5 +49,5 @@ Los eventos de las sesiones de depuración se producen en un orden específico.
 
 12. [Control de excepciones](../../extensibility/debugger/exception-handling-visual-studio-sdk.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Crear un motor de depuración personalizado](../../extensibility/debugger/creating-a-custom-debug-engine.md)
