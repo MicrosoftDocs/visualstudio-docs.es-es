@@ -11,12 +11,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: ab5ddea8ddb3fdd741f4df3b3b53f4239d016049
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 81311e9dea2c5367b44cdf2cc8e2327a8aff5617
+ms.sourcegitcommit: 20f546a0b13b56e7b0da21abab291d42a5ba5928
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928992"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104884114"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>Procedimiento Iniciar una aplicación de .NET Framework independiente con el generador de perfiles para recopilar datos de simultaneidad mediante la línea de comandos
 En este tema se describe cómo utilizar las herramientas de línea de comandos de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para iniciar una aplicación independiente (cliente) de .NET Framework y recopilar datos de simultaneidad de procesos y de subprocesos.
@@ -39,7 +39,7 @@ En este tema se describe cómo utilizar las herramientas de línea de comandos d
 
    - La opción [/start](../profiling/start.md) inicializa Profiler.
 
-     | | |
+     | Get-Help | Descripción |
      |-------------------------------------| - |
      | **/start:concurrency** | Habilita la recolección tanto de datos de contención de recursos como de ejecución de subprocesos. |
      | **/start:concurrency,resourceonly** | Habilita únicamente la recolección de datos de contención de recursos. |

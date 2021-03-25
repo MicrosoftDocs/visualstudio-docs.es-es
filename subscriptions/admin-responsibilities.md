@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: b26b31dc-1eeb-4871-9ce6-2c980e703f1e
-ms.date: 02/02/2021
+ms.date: 03/19/2021
 ms.topic: conceptual
 description: Conozca cuáles son las responsabilidades de los administradores de suscripciones.
-ms.openlocfilehash: 9d2c724fafb41ee44e531a1eec41d76d7e888686
-ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
+ms.openlocfilehash: 817330093ce0a2e9df6379db42420057ded30486
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99511298"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757690"
 ---
 # <a name="overview-of-admin-responsibilities"></a>Introducción a las responsabilidades del administrador
 Como administrador, puede administrar las suscripciones de la organización.  El rol de administrador también conlleva responsabilidades para asegurarse de que las suscripciones se administran de acuerdo con los términos de licencia. En este artículo se describen las responsabilidades, ventajas y limitaciones del rol de administrador.
@@ -33,7 +33,7 @@ Las suscripciones de Visual Studio permiten a los desarrolladores instalar y us
 | Licencias por usuario                     | Las licencias de Plataformas de MSDN y de todos los niveles de suscripciones de Visual Studio se conceden por usuario. Cada miembro del equipo de desarrollo que interaccione (instale, configure o acceda) con el software incluido con estos productos y servicios necesitará su propia suscripción de Visual Studio.                                                                                                                                                                                                                                                                                                                                  |
 | Instalaciones ilimitadas                  | Cada usuario con licencia podrá instalar y usar el software en cualquier número de dispositivos para diseñar, desarrollar, probar, evaluar y demostrar el software. La excepción es Microsoft Office, cuya licencia se otorga para un escritorio. El software de Visual Studio con licencia se puede instalar y usar en el trabajo, el hogar, el centro educativo y en dispositivos de la oficina de un cliente o en un hardware dedicado hospedado por terceros.                                                                                                                                                                                                                                  |
 | No está diseñado para entornos de producción | No se otorgan licencias de software mediante suscripciones de Visual Studio para entornos de producción, incluido cualquier entorno al que accedan usuarios finales para otras acciones además de pruebas de aceptación o envío de comentarios, entornos que se conecten a una base de datos de producción, que permitan la recuperación ante desastres o la copia de seguridad de producción, o que se usen para producción durante períodos de actividad punta. Entre las excepciones a lo anterior se incluyen beneficios específicos para determinados niveles de suscripción, tal y como se describe en las [Notas del producto de licencias de Visual Studio](https://aka.ms/vslicensing).                                                                                            |
-| Reasignación de licencias                     | Cuando un usuario abandona un equipo y ya no requiere una licencia, puede volver a asignar esa licencia transcurridos 90 días. Al reasignar una licencia, las claves de producto que ya se hayan usado seguirán estando disponibles y no se reemplazarán. Para las organizaciones que tengan Contratos Enterprise (EA), se restablecerá cualquier ventaja que el usuario original haya usado, como el aprendizaje de Pluralsight.                                                                                                                                                                                                                                                 |
+| Reasignación de licencias                     | Si un usuario deja un equipo y ya no necesita una licencia, puede reasignarla a otro usuario si han transcurrido al menos 90 días desde que se asignó al usuario anterior. Al reasignar una licencia, las claves de producto que ya se hayan usado seguirán estando disponibles y no se reemplazarán. Para las organizaciones que tengan Contratos Enterprise (EA), se restablecerá cualquier ventaja que el usuario original haya usado, como el aprendizaje de Pluralsight.                                                                                                                                                                                                                                                 |
 | Excepción para usuarios finales                  | Al final de un proyecto de desarrollo de software, los usuarios finales normalmente revisan una aplicación y determinan si cumple los criterios necesarios para su lanzamiento. Este proceso se denomina pruebas de aceptación de usuario (UAT). Los miembros del equipo, como un patrocinador o un jefe de producto o de negocio, pueden actuar como representantes de los usuarios finales. Los usuarios finales que no tienen una suscripción de Visual Studio podrían acceder al software para UAT si el uso del software cumple en todo caso con los términos de licencia de Visual Studio. Es raro que un usuario cuyo rol principal es diseñar, desarrollar o probar el software se califique también como “usuario final”. |
 
 ## <a name="see-also"></a>Vea también
@@ -41,7 +41,7 @@ Las suscripciones de Visual Studio permiten a los desarrolladores instalar y us
 - [Documentación de Azure DevOps](/azure/devops/)
 - [Documentación de Azure](/azure/)
 - [Documentación de Microsoft 365](/microsoft-365/)
-- [Soporte técnico para suscripciones y administración de Visual Studio](https://my.visualstudio.com/gethelp)
+- [Soporte técnico para suscripciones y administración de Visual Studio](https://aka.ms/vsadminhelp)
 
 ## <a name="next-steps"></a>Pasos siguientes
 Obtenga más información sobre las responsabilidades de los administradores:

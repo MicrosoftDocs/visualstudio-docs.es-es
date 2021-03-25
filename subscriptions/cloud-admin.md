@@ -1,18 +1,18 @@
 ---
 title: Configuración de los administradores de suscripciones de Visual Studio mensuales | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 8b30e2bc-2ac3-4fcc-b296-128731471032
-ms.date: 02/18/2021
+ms.date: 03/21/2021
 ms.topic: how-to
 description: Configuración de los administradores de suscripciones mensuales
-ms.openlocfilehash: c018dbc3437c03c6d029a98c84e0b6cceaef9e2c
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: 220f5986bb06b638504379b63e911f9bb62926b5
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249538"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776953"
 ---
 # <a name="set-up-admins-for-visual-studio-monthly-subscriptions"></a>Configuración de los administradores de suscripciones mensuales de Visual Studio
 
@@ -60,8 +60,7 @@ Ahora, el administrador nuevo puede iniciar sesión en el [portal de administrac
 Para obtener información sobre las suscripciones mensuales de Visual Studio, vea [Introducción](vscloud-overview.md) en Compra de suscripciones. Para comprar suscripciones mensuales de Visual Studio, visite Visual Studio Marketplace en [https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscription).
 
 ## <a name="resources"></a>Recursos
-- [Soporte de la suscripción de Visual Studio](https://visualstudio.microsoft.com/subscriptions/support/)
-
+- [Soporte de la suscripción de Visual Studio](https://aka.ms/vsadminhelp)
 
 ## <a name="see-also"></a>Consulte también
 - [Documentación de Visual Studio](/visualstudio/)

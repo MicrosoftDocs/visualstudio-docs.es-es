@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b3626d09d790ca6f15ded3745801eae1ca426bab
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 44af5c5a00e1ca26eb545b0973090486f6d320ea
+ms.sourcegitcommit: 99b66b0f4ced46ead0b2506a103f974f40cc0076
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970665"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103295709"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalación y uso de Visual Studio y de servicios de Azure detrás de un firewall o servidor proxy
 
@@ -141,6 +141,7 @@ Para asegurarse de que tiene acceso a todo lo que quiere cuando usa Visual Stud
 | instantáneas | 1. <br>vsdebugger.blob.core.windows.net <br>vsdebugger.azureedge.net <br><br>2. <br>download.visualstudio.com/\*/<br/>onecore.msvsmon.\*.zip<br><br> 3. referencesource.microsoft.com/symbols <br><br> 4. <br>symbols.nuget.org/download/symbols<br><br> 5. visualstudio.com<br><br>6. msdl.microsoft.com/download/symbols | https/443 | 1. <br>Se usa para descargar bits del depurador para la depuración de .NET Core en Unix o macOS a través de SSH. <br><br>2. <br>Se usa para descargar bits del depurador para la depuración remota de contenedores de Docker de Windows.<br><br> 3. Se usa para la ejecución paso a paso de código fuente de .NET Framework. <br><br> 4. <br>(Si el usuario opta por participar) Se usa para descargar símbolos publicados en el servidor de símbolos de nuget.org.<br><br> 5. (Si el usuario opta por participar) Se usa para descargar símbolos y archivos binarios de MS; es posible que también se necesite para depurar código administrado en volcados de memoria. |
 | GitHub Codespaces| \*.online.visualstudio.com | https/443 | Se usa para llamar a las API de GitHub Codespaces |
 | Publicación de aplicaciones de Xamarin Android | \*.googleapis.com <br/> play.google.com <br/>accounts.google.com | https/443 | Se usa para interactuar con el servicio Google Play Store para publicar o cargar aplicaciones de Xamarin Android directamente desde Visual Studio. |
+| Servicio de búsqueda de Visual Studio | data-ai.microsoft.com/search | https/443 | Se usa para proporcionar el servicio de búsqueda de Visual Studio con IA habilitada en el cuadro de búsqueda de `Ctrl+Q`. |
 | Azure Container Registry | *.azurecr.io | https/443 | Acceso a los registros de contenedores hospedados en Azure, para la configuración de canalizaciones de CI/CD |
 | | | | |
 

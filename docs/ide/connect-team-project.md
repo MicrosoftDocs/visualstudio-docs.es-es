@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
-ms.openlocfilehash: fd482bd2225025b5cd8a14f0387e938626fad6d5
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: 58603b72128af1c6dd9caae93f92c435f0851ada
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006320"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104673000"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>Conexión a proyectos en Team Explorer
 
@@ -63,6 +63,7 @@ Para conectarse a un proyecto:
 
 ## <a name="see-also"></a>Vea también
 
+- [Comparación de Git y Team Explorer en paralelo](git-team-explorer-feature-comparison.md)
 - [Nueva experiencia de Git en Visual Studio](git-with-visual-studio.md)
 - [Tutorial: Abrir un proyecto desde un repositorio](../get-started/tutorial-open-project-from-repo.md)
 - [Referencia de Team Explorer](reference/team-explorer-reference.md)

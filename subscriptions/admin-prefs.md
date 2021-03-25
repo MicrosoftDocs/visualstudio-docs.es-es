@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 0fe9eaa4-f589-429e-a443-13bf86637d5a
-ms.date: 10/22/2020
+ms.date: 03/19/2021
 ms.topic: conceptual
 description: Aprenda a establecer las preferencias de idioma, contactos, nivel de suscripción y demás en el portal de administración.
-ms.openlocfilehash: bdb6a5bc1160c75830fe9f1473222155d8fad781
-ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
+ms.openlocfilehash: 93a9417a88d07dcc841c6a59a7353b0ffb5e7565
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99511350"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757625"
 ---
 # <a name="set-preferences-for-your-agreements-in-the-administration-portal"></a>Establecimiento de las preferencias de los contratos en el portal de administración
 Los superadministradores pueden establecer determinadas preferencias en el portal de administración que se aplicarán globalmente para cada contrato.  Estas preferencias rellenarán automáticamente los detalles de suscripción para los administradores al agregar suscriptores. Solo las pueden modificar de forma global los propios superadministradores.  
@@ -73,7 +73,7 @@ R:  Consulte nuestro artículo sobre [cómo ponerse en contacto con el administr
 R:  Si no se establece ninguna dirección de correo electrónico específica en la preferencia **Dirección de correo electrónico de contacto**, todos los administradores del contrato recibirán la solicitud. 
 
 ## <a name="resources"></a>Recursos
-- [Soporte técnico para suscripciones y administración de Visual Studio](https://my.visualstudio.com/gethelp)
+- [Soporte técnico para suscripciones y administración de Visual Studio](https://aka.ms/vsadminhelp)
 
 ## <a name="see-also"></a>Vea también
 - [Documentación de Visual Studio](/visualstudio/)

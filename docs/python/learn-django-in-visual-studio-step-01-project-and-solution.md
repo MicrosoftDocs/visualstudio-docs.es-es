@@ -11,26 +11,35 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: afde24347237ed3fc87d7a00ebdf21787d78909c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c6bf427f7597b59fc5bb6fb32766134daa5b22bf
+ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942666"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104806074"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Tutorial: Introducción al marco web de Django en Visual Studio
 
 [Django](https://www.djangoproject.com/) es un marco de Python de alto nivel diseñado para el desarrollo web rápido, seguro y escalable. En este tutorial se explora la plataforma de Django en el contexto de las plantillas de proyecto que proporciona Visual Studio para simplificar la creación de aplicaciones web basadas en Django.
 
-En este tutorial, aprenderá a:
+En este tutorial aprenderá a:
 
-> [!div class="checklist"]
-> - Crear un proyecto básico de Django en un repositorio de Git con la plantilla "Proyecto web de Django en blanco" (paso 1)
-> - Crear una aplicación de Django con una página y representar esa página con una plantilla (paso 2)
-> - Atender archivos estáticos, agregar páginas y usar la herencia de plantilla (paso 3)
-> - Utilizar la plantilla Proyecto web de Django para crear una aplicación con varias páginas y diseño con capacidad de respuesta (paso 4)
-> - Autenticar usuarios (paso 5)
-> - Usar la plantilla Proyecto web de Django de sondeos para crear una aplicación que use modelos, migraciones de base de datos y personalizaciones para la interfaz administrativa (paso 6)
+::: moniker range="vs-2017"
+- Crear un proyecto básico de Django en un repositorio de Git con la plantilla "Proyecto web de Django en blanco" (paso 1)
+- Crear una aplicación de Django con una página y representar esa página con una plantilla (paso 2)
+- Atender archivos estáticos, agregar páginas y usar la herencia de plantilla (paso 3)
+- Utilizar la plantilla Proyecto web de Django para crear una aplicación con varias páginas y diseño con capacidad de respuesta (paso 4)
+- Autenticar usuarios (paso 5)
+- Usar la plantilla Proyecto web de Django de sondeos para crear una aplicación que use modelos, migraciones de base de datos y personalizaciones para la interfaz administrativa (paso 6)
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+- Crear un proyecto básico de Django en un repositorio de Git con la plantilla "Proyecto web de Django en blanco" (paso 1)
+- Crear una aplicación de Django con una página y representar esa página con una plantilla (paso 2)
+- Atender archivos estáticos, agregar páginas y usar la herencia de plantilla (paso 3)
+- Utilizar la plantilla Proyecto web de Django para crear una aplicación con varias páginas y diseño con capacidad de respuesta (paso 4)
+- Autenticar usuarios (paso 5)
+::: moniker-end
 
 ## <a name="prerequisites"></a>Prerequisites
 
@@ -166,7 +175,7 @@ Una vez que finalice la creación del proyecto, examine el código del proyecto 
 2. En el proyecto se encuentra una carpeta que tiene el mismo nombre que el proyecto. Contiene los archivos de proyecto Django básicos:
 
    - *__init.py*: un archivo vacío que indica a Python que esta carpeta es un paquete de Python.
-   - *wsgi.py*: un punto de entrada para los servidores web compatibles con WSGI que van a servir al proyecto. Normalmente dejará los archivos tal cual, puesto que sirven de enlace a los servidores web de producción.
+   - *wsgi.py*: un punto de entrada para los servidores web compatibles con WSGI que van a servir al proyecto. Normalmente, deberás dejar los archivos tal cual, ya que sirven de enlace para los servidores web de producción.
    - *settings.py*: contiene la configuración del proyecto de Django, que se modifica durante el desarrollo de una aplicación web.
    - *urls.py*: contiene una tabla de contenido para el proyecto de Django, que también se modifica durante el desarrollo.
 
@@ -194,7 +203,7 @@ Respuesta : Sí. Expanda el nodo **Entornos de Python**, haga clic con el botón
 
 ### <a name="question-is-django-a-web-server-as-well-as-a-framework"></a>Pregunta: ¿Django es un servidor web además de una plataforma?
 
-Respuesta: Sí y no. Django tiene un servidor web integrado que se usa para fines de desarrollo. Este servidor web es lo que se usa al ejecutar la aplicación web localmente, como al depurar en Visual Studio. Cuando se implementa en un host web, sin embargo, lo que Django utiliza es el servidor web. El módulo *wsgi.py* del proyecto de Django se ocupa de enlazar con los servidores de producción.
+Respuesta: Sí y no. Django tiene un servidor web integrado que se usa para fines de desarrollo. Este servidor web es lo que se usa al ejecutar la aplicación web localmente, como al depurar en Visual Studio. Sin embargo, cuando realiza una implementación en un host web, Django utiliza el servidor web del host en su lugar. El módulo *wsgi.py* del proyecto de Django se ocupa de enlazar con los servidores de producción.
 
 ### <a name="question-whats-the-difference-between-using-the-debug-menu-commands-and-the-server-commands-on-the-projects-python-submenu"></a>Pregunta: ¿Cuál es la diferencia entre el uso de los comandos de menú de depuración y los comandos de servidor en el submenú de Python del proyecto?
 

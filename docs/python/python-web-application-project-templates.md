@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1f6376978826afc2946cfac25ab635d0b7533dc4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a309ba898c22836fb5c0cebfc390b6c8d7c116c5
+ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939544"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104805996"
 ---
 # <a name="python-web-application-project-templates"></a>Plantillas de proyecto de aplicación web para Python
 
@@ -56,6 +56,7 @@ Todas las plantillas **Proyecto web de \<Framework>** crean una aplicación web 
 | **Proyecto web de Flask** | Genera una aplicación cuyos archivos estáticos se encuentran en la carpeta *static*. El código de *views.py* controla el enrutamiento y las plantillas de página que usan el motor de Jinja están incluidas en la carpeta *templates*. El archivo *runserver.py* proporciona el código de inicio. Vea [Paso 4. Usar la plantilla de proyecto web completa de Flask](learn-flask-visual-studio-step-04-full-flask-project-template.md). |
 | **Proyecto web de Flask/Jade** | Genera la misma aplicación que con la plantilla **Proyecto web de Flask**, pero con la extensión Jade para el motor de plantillas de Jinja. |
 
+::: moniker range="vs-2017"
 ### <a name="polls-group"></a>Grupo de sondeos
 
 Las plantillas **Proyecto web de \<framework> de sondeos** crean una aplicación web de inicio con la que los usuarios pueden votar sobre distintas preguntas de sondeo. Cada aplicación se basa en la estructura de las plantillas de proyecto **web** para usar una base de datos para administrar los sondeos y las respuestas de los usuarios. Las aplicaciones incluyen modelos de datos apropiados y una página de aplicación especial (/seed) que carga los sondeos desde un archivo *samples.json*.
@@ -66,6 +67,7 @@ Las plantillas **Proyecto web de \<framework> de sondeos** crean una aplicación
 | **Proyecto web de Django de sondeos** | Genera un proyecto de Django y una aplicación de Django con tres páginas y una base de datos de SQLite. Incluye las personalizaciones de la interfaz administrativa de Django para permitir que un administrador autenticado cree y administre los sondeos. Para obtener más información, vea [Plantilla de proyecto web de Django](python-django-web-application-project-template.md) y [Paso 6. Usar la plantilla de proyecto web de Django de sondeos](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md). |
 | **Proyecto web de Flask de sondeos** | Genera una aplicación que se puede ejecutar en una base de datos en memoria, MongoDB o Azure Table Storage, que se configura mediante la variable de entorno `REPOSITORY_NAME`. Los modelos de datos y el código de almacén de datos se encuentran en la carpeta *models* y el archivo *settings.py* contiene código para determinar qué almacén de datos se usa. La aplicación utiliza el motor de Jinja para las plantillas de página. Vea [Paso 5. Usar la plantilla de proyecto web de Flask de sondeos](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md). |
 | **Proyecto web de Flask/Jade de sondeos** | Genera la misma aplicación que con la plantilla **Proyecto web de Flask de sondeos**, pero con la extensión Jade para el motor de plantillas de Jinja. |
+::: moniker-end
 
 ## <a name="install-project-requirements"></a>Instalar requisitos de proyecto
 

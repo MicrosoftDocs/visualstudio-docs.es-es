@@ -5,19 +5,19 @@ description: Una lista de las versiones de lanzamiento y los números de compila
 author: ornellaalt
 ms.author: ornella
 manager: jmartens
-ms.date: 03/02/2021
+ms.date: 03/16/2021
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 1577edce6db3f62df5e57d15aab1f0328a1950a6
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 90d28d2658bba70ffc45a0b52beaee06f2ba97da
+ms.sourcegitcommit: 3a855d3513407ea78336386dc3be0b75142614b0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221111"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "103622626"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Números de compilación y fechas de lanzamiento de Visual Studio
 
@@ -29,6 +29,10 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de v
 
 | **Versión**| **Canal** | **Fecha de lanzamiento** | **Versión de compilación** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.9.2 | Release | 16 de marzo de 2021 | 16.9.31112.23 |
+| 16.4.20 | Release | 9 de marzo de 2021 | 16.4.31026.101 |
+| 16.7.13 | Release | 9 de marzo de 2021 | 16.7.31026.100 |
+| 16.9.1 | Release | 9 de marzo de 2021 | 16.9.31105.61 |
 | 16.10.0 | Versión preliminar 1 | 2 de marzo de 2021 | 16.10.31025.218 |
 | 16.9.0 | Release | 2 de marzo de 2021 | 16.9.31025.194 |
 | 16.9.0 | Versión preliminar 5 | 23 de febrero de 2021 | 16.9.31019.194 |
@@ -36,7 +40,7 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de v
 | 16.4.19 | Release | 10 de febrero de 2021 | 16.4.31009.304 |
 | 16.7.12 | Release | 10 de febrero de 2021 | 16.7.31009.191 |
 | 16.8.5 | Release | 9 de febrero de 2021 | 16.8.31005.135 |
-| 16.9.0 | Versión preliminar 4 | 9 de febrero de 2021 | 16.9.31004.235 | 
+| 16.9.0 | Versión preliminar 4 | 9 de febrero de 2021 | 16.9.31004.235 |
 | 16.7.11 | Release | 9 de febrero de 2021 | 16.7.30928.143 |
 | 16.4.18 | Release | 9 de febrero de 2021 | 16.4.30928.142 |
 | 16.9.0 | Versión preliminar 3 | 21 de enero de 2021 | 16.9.30914.41 |
@@ -214,6 +218,7 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de l
 
 | **Versión**| **Canal** | **Fecha de lanzamiento** | **Versión de compilación** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.34 | Release | 9 de marzo de 2021 | 15.9.28307.1440 |
 | 15.9.33 | Release | 10 de febrero de 2021 | 15.9.28307.1401 |
 | 15.9.32 | Release | 9 de febrero de 2021 | 15.9.28307.1382 |
 | 15.9.31 | Release | 12 de enero de 2021 | 15.9.28307.1342 |

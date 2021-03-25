@@ -6,16 +6,16 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
 ms.topic: how-to
-ms.openlocfilehash: 4bfa6bdfbb4b27a849b4807c99ae9dc8b9bd6764
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.openlocfilehash: 43032addcfbb54b6a239d465de76f85c241d562e
+ms.sourcegitcommit: 08ee19f260164271e18bdbafe624301508f554ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85950388"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104999594"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Iniciar sesión en Visual Studio para Mac
 
-Al iniciar Visual Studio para Mac por primera vez, deberá iniciar sesión con una cuenta Microsoft. Use una cuenta Microsoft que esté conectada a la licencia que quiere usar. Si no tiene una cuenta Microsoft, vea [Registrarse para obtener una cuenta Microsoft](https://support.microsoft.com/instantanswers/d18cc497-d839-cf50-dea8-f99c95f2bd16/sign-up-for-a-microsoft-account).
+Al iniciar Visual Studio para Mac por primera vez, deberá iniciar sesión con una cuenta Microsoft. Use una cuenta Microsoft que esté conectada a la licencia que quiere usar. Si no tiene una cuenta Microsoft, vea [Registrarse para obtener una cuenta Microsoft](https://support.microsoft.com/account-billing/how-to-create-a-new-microsoft-account-a84675c3-3e9e-17cf-2911-3d56b15c0aaf).
 
 Si decide no iniciar sesión inmediatamente, podrá usar una copia de evaluación de 30 días. Transcurridos 30 días, tiene que iniciar sesión para seguir usando la copia de Visual Studio para Mac.
 

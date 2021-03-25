@@ -4,18 +4,17 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 1bdcb3c9-bba1-4e25-a609-9d7e539d78e0
-ms.date: 03/05/2021
+ms.date: 03/08/2021
 ms.topic: conceptual
 description: Aprenda a iniciar sesión en las suscripciones de Visual Studio con la cuenta de GitHub.
-ms.openlocfilehash: 41966fb4468832b3e1a320e898164989d1fb5c3b
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: 99352f4f25d4dd6da42dc0a8d51a093c7c4c216e
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249731"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607189"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-github-account"></a>Inicio de sesión en las suscripciones de Visual Studio con la cuenta de GitHub 
-
 Los pasos para iniciar sesión en su suscripción de Visual Studio dependen del tipo de cuenta que esté usando. Por ejemplo, puede que esté usando una cuenta Microsoft (MSA) o una dirección de correo electrónico proporcionada por su empresa o centro educativo. A partir de enero de 2019, también puede usar la cuenta de GitHub para iniciar sesión en algunas suscripciones. 
 
 En este artículo se proporcionan los pasos necesarios para iniciar sesión con la cuenta de GitHub.
@@ -26,7 +25,7 @@ La compatibilidad de identidad de GitHub permite usar la cuenta existente de Git
 
 Cuando se inicia sesión con GitHub, Microsoft comprueba si alguna dirección de correo electrónico asociada a la cuenta de GitHub coincide con una cuenta Microsoft personal o de empresa existente. Si la dirección coincide con la cuenta de empresa, se le pide que inicie sesión en esa cuenta en su lugar. Si la dirección coincide con una cuenta personal, se agrega la cuenta de GitHub como método de inicio de sesión a esa cuenta personal.
 
-Después de vincular las credenciales de cuenta de GitHub y Microsoft, puede usar ese inicio de sesión único en cualquier lugar en que se pueda emplear una cuenta Microsoft personal, como sitios de Azure, aplicaciones de Office y Xbox. Estas cuentas también se pueden usar para inicios de sesión de invitado de Azure Active Directory como una cuenta Microsoft, siempre que la dirección de correo electrónico coincida con la de la invitación.
+Después de vincular las credenciales de las cuentas de GitHub y Microsoft, puede usar ese inicio de sesión único en cualquier lugar en el que se pueda emplear una cuenta de Microsoft personal, como los sitios de Azure, las aplicaciones de Office y Xbox. Estas cuentas también se pueden usar para inicios de sesión de invitado de Azure Active Directory como una cuenta de Microsoft, siempre que la dirección de correo electrónico coincida con la de la invitación.
 
 > [!NOTE]
 > La vinculación de una identidad de GitHub a una cuenta Microsoft no proporciona a Microsoft ningún acceso de código. Cuando aplicaciones como Azure DevOps y Visual Studio necesitan acceso a los repositorios de código, se le pide que conceda consentimiento específico para este acceso. 
@@ -38,7 +37,7 @@ Las siguientes preguntas más frecuentes tratan cuestiones relacionadas con el u
 R:  Puede recuperar la cuenta de GitHub si va a [Restablecer la contraseña](https://github.com/password_reset). También puede recuperar la cuenta Microsoft vinculada a GitHub si escribe la dirección de correo electrónico de la cuenta de GitHub en [Recupera tu cuenta](https://account.live.com/password/reset).
 
 #### <a name="q-i-deleted-my-github-account--how-can-i-access-my-microsoft-account-msa-now"></a>P: He eliminado mi cuenta de GitHub.  ¿Cómo pudo acceder a mi cuenta Microsoft (MSA) ahora?
-R: Si no tiene otras credenciales en la MSA (por ejemplo, una contraseña, una aplicación Authenticator o una clave de seguridad), puede recuperar la cuenta Microsoft mediante la dirección de correo electrónico asociada a ella. Para empezar, vaya a [Recupera tu cuenta](https://account.live.com/password/reset). Tiene que agregar una contraseña a la cuenta para que sepamos cómo va a iniciar sesión más adelante. 
+R: Si no tiene otras credenciales en su MSA, como una contraseña, una aplicación de autenticación o una clave de seguridad, puede recuperar la cuenta de Microsoft mediante la dirección de correo electrónico asociada a ella. Para empezar, vaya a [Recupera tu cuenta](https://account.live.com/password/reset). Tiene que agregar una contraseña a la cuenta para que sepamos cómo va a iniciar sesión más adelante. 
 
 #### <a name="q-theres-no-sign-in-with-github-option-on-the-sign-in-page--how-can-i-use-my-github-credentials-to-sign-in"></a>P: No hay ninguna opción "Iniciar sesión con GitHub" en la página de inicio de sesión.  ¿Cómo puedo usar mis credenciales de GitHub para iniciar sesión?
 R:  Escriba la dirección de correo electrónico de la cuenta de GitHub que eligió al crear la cuenta Microsoft vinculada a GitHub. Se le busca y envía a GitHub para el inicio de sesión. O bien, si hay un vínculo de opciones de inicio de sesión en la página de inicio de sesión, use el botón **Iniciar sesión con GitHub** que se muestra al hacer clic en ese vínculo. 
@@ -62,9 +61,12 @@ R:  Cada vez que inicia sesión mediante su alias de cuenta (dirección de corre
 R: Vaya a la [pestaña Seguridad](https://account.microsoft.com/security) de account.microsoft.com y haga clic en **Advanced security options** (Opciones avanzadas de seguridad) para desvincular la cuenta de GitHub. Al desvincular la cuenta de GitHub, la quita como método de inicio de sesión y elimina el acceso a los repositorios de GitHub en Visual Studio. Es posible que otros productos de Microsoft hayan solicitado acceso a la cuenta de GitHub por separado, así que quitar el acceso aquí no quita el acceso de todos los productos. Vaya a la página [Permisos de la aplicación](https://github.com/settings/applications) del perfil de GitHub para revocar el consentimiento de las aplicaciones que aparecen en la lista.
 
 #### <a name="q--i-try-to-use-my-github-account-to-sign-in-but-im-prompted-that-i-already-have-a-microsoft-identity-that-i-should-use-instead--whats-happening"></a>P:  Intento usar mi cuenta de GitHub para iniciar sesión, pero se me indica que ya tengo una identidad de Microsoft que debo usar en su lugar.  ¿Qué sucede?
-R:  Si tiene una dirección de correo electrónico de Azure Active Directory en la cuenta de GitHub, esto significa que ya tiene una identidad de Microsoft que puede acceder a Azure y ejecutar canalizaciones de CI con el código de GitHub. El empleo de esa cuenta garantiza que los recursos de Azure y las canalizaciones de compilación permanezcan dentro de los límites organizativos. Pero si está realizando trabajo personal, se recomienda usar una dirección de correo electrónico personal en la cuenta de GitHub para tener siempre acceso a ella. Una vez hecho esto, intente volver a iniciar sesión y seleccione **Usar otra dirección de correo electrónico** cuando se le pida iniciar sesión en la cuenta profesional o educativa. Esto le permite crear una nueva cuenta Microsoft con esa dirección de correo electrónico personal.
+R: Si tiene una dirección de correo electrónico de Azure Active Directory en la cuenta de GitHub, ya tiene una identidad de Microsoft que puede acceder a Azure y ejecutar canalizaciones de CI con el código de GitHub. El empleo de esa cuenta garantiza que los recursos de Azure y las canalizaciones de compilación permanezcan dentro de los límites organizativos. Pero si está realizando trabajo personal, se recomienda usar una dirección de correo electrónico personal en la cuenta de GitHub para tener siempre acceso a ella. Una vez hecho esto, intente volver a iniciar sesión y seleccione **Usar otra dirección de correo electrónico** cuando se le pida iniciar sesión en la cuenta profesional o educativa. Esto le permite crear una nueva cuenta Microsoft con esa dirección de correo electrónico personal.
 
-## <a name="see-also"></a>Vea también
+## <a name="resources"></a>Recursos
+- Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación de Suscripciones de Visual Studio, consulte la página de [soporte técnico para las suscripciones](https://aka.ms/vssubscriberhelp) de Visual Studio.
+
+## <a name="see-also"></a>Consulte también
 - [Documentación de Visual Studio](/visualstudio/)
 - [Documentación de Azure DevOps](/azure/devops/)
 - [Documentación de Azure](/azure/)

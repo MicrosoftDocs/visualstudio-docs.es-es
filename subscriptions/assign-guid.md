@@ -3,15 +3,15 @@ title: Asignación de GUID específicos a suscriptores de Visual Studio | Micro
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
-ms.date: 02/18/2021
+ms.date: 03/19/2021
 ms.topic: conceptual
 description: Obtenga información sobre cómo los administradores pueden asignar GUID de suscripción específicos a los suscriptores.
-ms.openlocfilehash: 3c92a3e6cc35230f6bcf10320e92a50dc5ffb85b
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: a0721029186605c6b9a277c9eb95a370a086d7d2
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249682"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776655"
 ---
 # <a name="assign-specific-subscriptions-in-the-visual-studio-subscriptions-administration-portal"></a>Asignación de suscripciones específicas en el Portal de administración de suscripciones de Visual Studio
 
@@ -63,7 +63,7 @@ El paso final es descargar la plantilla **Agregar en masa**, rellenar la informa
 R: Si quiere cambiar el GUID asignado a un usuario, primero deberá eliminar la suscripción para ese usuario.  Para más información, consulte el artículo [Eliminar suscripciones](delete-license.md).  Después de eliminar la suscripción para ese usuario, siga el proceso descrito anteriormente para exportar la lista y cargar la información de la nueva suscripción.  
 
 ## <a name="resources"></a>Recursos
-- [Soporte de la suscripción de Visual Studio](https://visualstudio.microsoft.com/subscriptions/support/)
+- [Soporte de la suscripción de Visual Studio](https://aka.ms/vsadminhelp)
 
 ## <a name="see-also"></a>Consulte también
 - [Documentación de Visual Studio](/visualstudio/)
@@ -78,5 +78,3 @@ Ahora que ha asignado las suscripciones a los usuarios, descubra cómo realizar 
 - [Editar suscripciones](edit-license.md)
 - [Eliminar suscripciones](delete-license.md)
 - [Determinación del uso máximo](maximum-usage.md)
-
-

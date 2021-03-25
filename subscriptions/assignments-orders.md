@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 83a9162a-b9e7-43a4-b07f-6c1fd8580f78
-ms.date: 02/18/2021
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: Obtenga información sobre la responsabilidad de los administradores de realizar un seguimiento de las asignaciones de usuarios y las tramitaciones de pedidos.
-ms.openlocfilehash: 3da446dad534a6a76413a66de2b9ad52e937e253
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: 9ba54d13f4481f68d13e43a2e21f62036d23cab3
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249484"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776992"
 ---
 # <a name="track-user-assignment-and-process-orders"></a>Seguimiento de la asignación de usuarios y tramitación de pedidos
 Los administradores de suscripciones de Visual Studio deberán realizar un seguimiento del uso de Visual Studio y tramitar pedidos para cualquier incremento en el uso según la programación de su Contrato de licencia por volumen o en el Contrato de productos y servicios de Microsoft. El nuevo Portal de administración de suscripciones de Visual Studio ha simplificado esta tarea con una útil herramienta de seguimiento que muestra las licencias disponibles y las usadas.
@@ -38,7 +38,7 @@ Puede asignar suscripciones a través de programas como Open License y Open Valu
 Los contratos Enterprise de Microsoft (EA), MPSA y Select Plus ofrecen flexibilidad en cuanto al uso del software y las licencias de Visual Studio con el paso del tiempo. Los administradores de Visual Studio deben realizar un pedido "true up" anual para llevar sus licencias de software hasta el nivel máximo de uso establecido durante el periodo del contrato.
 
 ## <a name="resources"></a>Recursos
-- ¿Necesita ayuda?  Póngase en contacto con [Soporte de la suscripción de Visual Studio](https://visualstudio.microsoft.com/subscriptions/support/).
+- ¿Necesita ayuda?  Póngase en contacto con [Soporte de la suscripción de Visual Studio](https://aka.ms/vsadminhelp).
 
 ## <a name="see-also"></a>Consulte también
 - [Documentación de Visual Studio](/visualstudio/)

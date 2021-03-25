@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 14e4cffb-a695-436c-b269-7820f7411f4e
-ms.date: 02/18/2021
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: Obtenga información sobre cómo exportar una lista de suscriptores y los detalles de sus asignaciones de suscripciones.
-ms.openlocfilehash: afd30470b5d9171f803c14b0d604eca626b70342
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: 991128fc0f45b0caa0727c8ab418ba632d90e60c
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102250033"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776823"
 ---
 # <a name="export-subscription-information"></a>Información sobre la exportación de suscripciones
 En el [Portal de administración](https://manage.visualstudio.com) de Suscripciones de Visual Studio, puede exportar una lista de los suscriptores y detalles sobre sus asignaciones. Esta información incluye su nombre, dirección de correo electrónico, dirección de correo electrónico alternativa, nivel de suscripción, fecha de asignación, estado de activación, fecha de expiración, campo de referencia, si están habilitadas las descargas, país, idioma, estado de la suscripción y GUID de la suscripción.  La lista se exporta como un archivo CSV, que se puede abrir fácilmente en Microsoft Excel para la creación de gráficos, tablas dinámicas y otros artefactos.
@@ -33,7 +33,7 @@ Para realizar la exportación, siga estos pasos:
 > ![Exportar suscriptores](_img/exporting-subscriptions/exporting-subscriptions.png "Haga clic en Exportar para descargar una lista completa de las suscripciones asignadas.")
 
 ## <a name="resources"></a>Recursos
-- [Soporte de la suscripción de Visual Studio](https://visualstudio.microsoft.com/subscriptions/support/)
+- [Soporte de la suscripción de Visual Studio](https://aka.ms/vsadminhelp)
 
 ## <a name="see-also"></a>Consulte también
 - [Documentación de Visual Studio](/visualstudio/)

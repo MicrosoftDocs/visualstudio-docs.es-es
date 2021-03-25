@@ -2,18 +2,18 @@
 title: La experiencia Git en Visual Studio
 titleSuffix: ''
 description: Obtenga información sobre cómo la nueva experiencia integrada de Git en Visual Studio 2019 puede ayudarle a ser más productivo.
-ms.date: 01/15/2021
+ms.date: 03/16/2021
 ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 5f93d8c29bcf7e85df04dd364868e65f70482b72
-ms.sourcegitcommit: 59b63039982bb5894eb35d8b544657688731614f
+ms.openlocfilehash: e33b91088022a4588773737b2820677c84a65807
+ms.sourcegitcommit: 3a855d3513407ea78336386dc3be0b75142614b0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98597417"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "103622652"
 ---
 # <a name="git-experience-in-visual-studio"></a>Experiencia de Git en Visual Studio
 
@@ -48,7 +48,7 @@ El cuadro de diálogo **Crear un repositorio GIT** facilita la inserción del nu
 > [!TIP]
 > Tanto si el repositorio es público como privado, es mejor tener una copia de seguridad remota del código almacenada de forma segura en GitHub, aunque no esté trabajando con un equipo. Así también tendrá el código a su disposición independientemente de la máquina que use.
 
-Puede optar por crear un repositorio de Git solo local mediante la opción **Solo locales**. También puede vincular el repositorio con un repositorio remoto vacío existente en cualquier otro proveedor de Git mediante la opción **Existing remote** (Remoto existente).
+Puede optar por crear un repositorio de Git solo local mediante la opción **Solo locales**. También puede vincular el proyecto local a un repositorio remoto vacío existente en Azure DevOps o cualquier otro proveedor de Git mediante la opción **Repositorio remoto existente**.
 
 ## <a name="clone-an-existing-git-repository"></a>Clonación de un repositorio de Git existente
 
@@ -117,7 +117,7 @@ En ambas ubicaciones, puede alternar entre las ramas existentes.
 
 ### <a name="create-a-new-branch"></a>Creación de una rama
 
-También puede crear una rama. El comando equivalente para esta acción es `git checkout <branchname>`.
+También puede crear una rama. El comando equivalente para esta acción es `git checkout -b <branchname>`.
 
 La creación de una rama es tan sencillo como escribir el nombre de la rama y basarla en una rama existente.
 
@@ -202,6 +202,7 @@ Aunque la nueva experiencia de Git ya está activada de forma predeterminada en 
 
 ## <a name="see-also"></a>Consulte también
 
+- Vídeo [Introducción a Git en Visual Studio](https://www.youtube.com/watch?v=GCZ9x3yqkyc) en YouTube
 - Entrada de blog [Anuncio de la publicación de la experiencia de Git en Visual Studio](https://devblogs.microsoft.com/visualstudio/announcing-the-release-of-the-git-experience-in-visual-studio/)
 - [El lanzamiento de la nueva experiencia de Git](https://www.youtube.com/watch?v=UHrAg3iKoe0&t) en YouTube
 - [La serie Visual Studio Toolbox presenta: El vídeo The new Git experience (La nueva experiencia de Git)](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/The-New-Git-Experience) en Channel 9 y en [YouTube](https://www.youtube.com/watch?v=ZiQ2LXtAJ6I&feature=youtu.be)

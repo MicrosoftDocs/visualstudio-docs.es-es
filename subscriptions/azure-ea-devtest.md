@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: a335ed23-34ee-40cb-83c6-6c93dee57424
-ms.date: 02/18/2021
+ms.date: 03/21/2021
 ms.topic: how-to
 description: Conozca cómo para aprovechar los precios especiales de Azure DevTest disponibles para los clientes con Contrato Enterprise.
-ms.openlocfilehash: 9043a2d8f3ab069bcc02375089780d16d1e8a18b
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: 157d094ef02864578ce4bf626d11457506817418
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249476"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776979"
 ---
 # <a name="azure-enterprise-agreement-devtest-offer"></a>Oferta de Contrato Enterprise de Azure DevTest
 
@@ -42,7 +42,7 @@ Cada suscriptor de la cuenta puede crear una suscripción siguiendo estos pasos:
 0. Haga clic en **Comprar**.  (Con esta oferta, en realidad no está comprando nada).
 
 ## <a name="resources"></a>Recursos
-- ¿Necesita ayuda?  Póngase en contacto con [Soporte de la suscripción de Visual Studio](https://visualstudio.microsoft.com/subscriptions/support/).
+- ¿Necesita ayuda?  Póngase en contacto con [Soporte de la suscripción de Visual Studio](https://aka.ms/vsadminhelp).
 
 ## <a name="see-also"></a>Consulte también
 - [Documentación de Visual Studio](/visualstudio/)

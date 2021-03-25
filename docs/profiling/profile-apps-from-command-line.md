@@ -14,12 +14,12 @@ manager: jmartens
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b1d5906213b148605e35c483b377280dc942515
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e1c8c20d350561eec520038dec521ab7bc5f5311
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936553"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103570691"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>Medir el rendimiento de la aplicación desde la línea de comandos
 
@@ -79,7 +79,7 @@ La generación de perfiles mediante las herramientas de la CLI de diagnósticos 
 
 Los agentes recopiladores son componentes intercambiables que recopilan diferentes tipos de datos en función de lo que se intente medir.
 
-Por comodidad, puede almacenar esa información en un archivo de configuración de agente. El archivo de configuración es un archivo *.json* que contiene como mínimo el nombre de la *.dll* y su CLSID COM. Estos son los archivos de configuración de ejemplo que se pueden encontrar en la siguiente carpeta:
+Por comodidad, se recomienda almacenar esa información en un archivo de configuración del agente. El archivo de configuración es un archivo *.json* que contiene como mínimo el nombre de la *.dll* y su CLSID COM. Estos son los archivos de configuración de ejemplo que se pueden encontrar en la siguiente carpeta:
 
 ```<Visual Studio installation folder>Team Tools\DiagnosticsHub\Collector\AgentConfigs\```
 
@@ -99,11 +99,7 @@ Las configuraciones de DotNetObjectAlloc (Base/Baja) corresponden a los datos re
 
 Las configuraciones Base/Baja/Alta hacen referencia a la velocidad de muestreo. Por ejemplo, Baja es 100 muestras por segundo y Alta es 4000 muestras por segundo.
 
-Para que la herramienta *VSDiagnostics.exe* funcione con un agente recopilador, requiere un archivo DLL y un CLSID COM para el agente adecuado; además, el agente podría tener opciones de configuración adicionales. Si usa a un agente sin un archivo de configuración, use el formato del siguiente comando.
-
-```cmd
-VSDiagnostics.exe start <id> /attach:<pid> /loadAgent:<agentCLSID>;<agentName>[;<config>]
-```
+Para que la herramienta *VSDiagnostics.exe* funcione con un agente de recopilación, se necesita un archivo DLL y un CLSID COM para el agente adecuado. El agente también puede tener opciones de configuración adicionales, que serían las que se especifican en el archivo de configuración, en formato JSON y con la secuencia de escape correcta.
 
 ## <a name="permissions"></a>Permisos
 

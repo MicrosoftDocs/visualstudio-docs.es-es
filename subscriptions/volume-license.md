@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 7aaa4727-00ef-41dc-937d-8d46973aaf56
-ms.date: 10/28/2020
+ms.date: 03/08/2021
 ms.topic: conceptual
 description: Obtenga información sobre cómo los administradores de contratos de licencias por volumen pueden acceder al portal de administración de suscripciones de Visual Studio.
-ms.openlocfilehash: 85e82eed6b8810e7e6a2f8622aead9d50323841d
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 4704b3258eedf8fd1639804a8792a1c18fafce77
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904212"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607293"
 ---
 # <a name="accessing-the-admin-portal-as-an-admin-on-a-volume-license-agreement"></a>Acceso al portal de administradores como administrador de un contrato de licencia por volumen
 
@@ -23,12 +23,12 @@ Si es el contacto principal o al que se dirigen los avisos en el contrato de la 
 
 Cuando haya iniciado sesión, se le configurará automáticamente como superadministrador y podrá empezar a administrar suscripciones y otros administradores. Para obtener información sobre las diferencias entre los superadministradores y los administradores, consulte el artículo sobre los [roles de administrador](admin-roles.md).
 
-Esto se aplica a todos los tipos de contratos de licencias por volumen, entre los que se incluyen los siguientes: contratos Enterprise, suscripciones Enterprise, Select, Select Plus, Open, Open License, y contratos Govt. y Academic. 
+Esto se aplica a todos los tipos de contratos de licencias por volumen, entre los que se incluyen los siguientes: contratos Enterprise, suscripciones Enterprise, Select, Select Plus, Open y Open License, y contratos Government y Academic. 
 
 ## <a name="resources"></a>Recursos
-- [Soporte técnico para suscripciones y administradores de Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
+- Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación de Suscripciones de Visual Studio, consulte [Soporte técnico de Suscripciones](https://aka.ms/vssubscriberhelp) de Visual Studio.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Documentación de Visual Studio](/visualstudio/)
 - [Documentación de Azure DevOps](/azure/devops/)
 - [Documentación de Azure](/azure/)

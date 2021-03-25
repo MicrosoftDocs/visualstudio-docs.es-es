@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 4e529a43-7aed-4eee-895d-862a631952df
-ms.date: 02/18/2021
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: Obtenga información sobre la manera en que los administradores pueden asignar licencias a los suscriptores.
-ms.openlocfilehash: 3bfa1174a8655de27496c3138e1eab21e32c2f8d
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: a1b68a45754e0fb466ae12b59d63fa14d50e9a3e
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249548"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776524"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Asignación de licencias en el Portal de administración de suscripciones de Visual Studio
 Como administrador de suscripciones de Visual Studio, puede usar el Portal de administradores para asignar suscripciones a usuarios y grupos de usuarios.
@@ -68,7 +68,7 @@ Después de agregar un suscriptor, se envía automáticamente un correo electró
 
 
 ## <a name="resources"></a>Recursos
-- ¿Necesita ayuda?  Póngase en contacto con [Soporte de la suscripción de Visual Studio](https://visualstudio.microsoft.com/subscriptions/support/).
+- ¿Necesita ayuda?  Póngase en contacto con [Soporte de la suscripción de Visual Studio](https://aka.ms/vsadminhelp).
 
 ## <a name="see-also"></a>Consulte también
 - [Documentación de Visual Studio](/visualstudio/)

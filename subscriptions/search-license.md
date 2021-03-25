@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 9c0b9a4f-b9a3-491c-a68f-6e4bac7f7b3d
-ms.date: 09/21/2020
+ms.date: 03/21/2021
 ms.topic: how-to
 description: Obtenga información sobre cómo los administradores pueden encontrar suscriptores o grupos individuales en el portal de administración.
-ms.openlocfilehash: e1fd5ea959043cbea58d0eb9a14649044f5d556e
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: df94b32dfcc5e2672282c0d18859cba42b490437
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92904539"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776693"
 ---
 # <a name="search-and-filter-subscribers-in-visual-studio-subscriptions"></a>Búsqueda y filtrado de suscriptores en suscripciones de Visual Studio
 El Portal de administradores de suscripciones de Visual Studio permite encontrar un subconjunto concreto de suscriptores según diversos criterios. Puede filtrar la lista de suscriptores por nombre, dirección de correo electrónico, nivel de suscripción y otra información.
@@ -36,14 +36,12 @@ El Portal de administradores de suscripciones de Visual Studio permite encontrar
    > [!div class="mx-imgBorder"]
    > ![Borrar el filtro de la lista de suscriptores](_img/search-filter/clear-filter.png "Haga clic en Borrar filtro para quitar el filtro y reanudar la visualización de todas las suscripciones asignadas.")
 
-
 ## <a name="see-also"></a>Consulte también
 - [Documentación de Visual Studio](/visualstudio/)
 - [Documentación de Azure DevOps](/azure/devops/)
 - [Documentación de Azure](/azure/)
 - [Documentación de Microsoft 365](/microsoft-365/)
 
-
 ## <a name="next-steps"></a>Pasos siguientes
 - Ahora que sabe cómo buscar un suscriptor, aprenda a [editar](edit-license.md) su suscripción.
-- ¿Necesita ayuda para usar el Portal de administración?  Póngase en contacto con el [soporte técnico de administración y suscripciones de Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).
+- ¿Necesita ayuda para usar el Portal de administración?  Póngase en contacto con el [soporte técnico de administración y suscripciones de Visual Studio](https://aka.ms/vsadminhelp).

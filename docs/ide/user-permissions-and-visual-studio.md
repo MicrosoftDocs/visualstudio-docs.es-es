@@ -1,7 +1,7 @@
 ---
 title: Ejecutar como administrador
 description: Obtenga información sobre cómo ejecutar Visual Studio como administrador.
-ms.date: 01/06/2020
+ms.date: 03/09/2021
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, user permissions
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 63787b394d9e8988759cd141540785e34324f8c6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b3d2a22533137bf2c1f2e7cfeb3802f5824c3926
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971302"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607254"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Permisos de usuario y Visual Studio
 
@@ -72,7 +72,17 @@ Si tiene que ejecutar Visual Studio como administrador, siga estos pasos para ab
 
 ::: moniker-end
 
-También puede modificar el acceso directo a la aplicación para ejecutarla siempre con permisos administrativos.
+También puede modificar el acceso directo a la aplicación para ejecutarla siempre con permisos administrativos:
+
+1. Abra el menú **Inicio**, desplácese a la versión de Visual Studio que esté usando y, a continuación, seleccione **Más** > **Abrir ubicación de archivo**.
+
+1. En el **Explorador de archivos**, busque el acceso directo de **Visual Studio** correspondiente a la versión que esté usando. A continuación, haga clic con el botón derecho en el acceso directo y seleccione **Enviar a** > **Escritorio (crear acceso directo)** .
+
+1. En el escritorio de **Windows**, haga clic con el botón derecho en el acceso directo de **Visual Studio** y seleccione **Propiedades**.
+
+1. Seleccione el botón **Opciones avanzadas** y, a continuación, active la casilla **Ejecutar como administrador**.
+
+1. Seleccione **Aceptar** y, después, otra vez **Aceptar**.
 
 ## <a name="see-also"></a>Consulte también
 
