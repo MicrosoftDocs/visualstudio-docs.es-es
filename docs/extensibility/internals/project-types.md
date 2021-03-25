@@ -8,17 +8,17 @@ helpviewer_keywords:
 - project types, adding
 - projects [Visual Studio SDK], adding new types
 ms.assetid: 263a084f-f97a-4e09-add7-f0e8a6a27daf
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1825d526fd9026100abcf68a1381d1be47dd44b6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 05db128709fcd0e99b3d0a3a6b26acbc372212c7
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970119"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105064283"
 ---
 # <a name="project-types"></a>Tipos de proyecto
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] incluye varios tipos de proyecto para lenguajes como [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] y [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] . [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] también le permite crear sus propios tipos de proyecto.
@@ -60,7 +60,7 @@ ms.locfileid: "99970119"
 
  Describe cómo puede participar el tipo de proyecto en el Asistente para actualización para actualizar archivos de proyecto de una versión anterior de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
-- [Architecture](../../extensibility/internals/project-types-architecture.md)
+- [Arquitectura](../../extensibility/internals/project-types-architecture.md)
 
  Proporciona información técnica detallada acerca de los tipos de proyecto.
 

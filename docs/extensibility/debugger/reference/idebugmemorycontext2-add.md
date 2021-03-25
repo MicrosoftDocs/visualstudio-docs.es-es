@@ -9,20 +9,20 @@ helpviewer_keywords:
 - IDebugMemoryContext2::Add method
 - Add method
 ms.assetid: 3c47e646-ce9e-4dd3-8f1a-6dbd3827d407
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 59daddd38daff2f04f12bc0d1be4e06ec90cf723
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 48847a65a1c5b6f514a96e702b9d8e666ad09630
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102166429"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105076802"
 ---
 # <a name="idebugmemorycontext2add"></a>IDebugMemoryContext2::Add
 Agrega el valor especificado al contexto actual y devuelve un nuevo contexto.

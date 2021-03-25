@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, architecture
 ms.assetid: 35351d4c-9414-409b-98fc-f2023e2426b7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 669ef527e65e56612199b8303f7cc99e8b993b50
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3fe51878603996044535b0abfb70302ef9027c03
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99846405"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105064259"
 ---
 # <a name="source-control-plug-in-architecture"></a>Arquitectura de complemento de control de código fuente
 Puede Agregar compatibilidad con el control de código fuente al [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] entorno de desarrollo integrado (IDE) implementando y adjuntando un complemento de control de código fuente. El IDE se conecta al complemento de control de código fuente a través del control de código fuente bien definido Plug-In API. El IDE expone las características de control de versiones del sistema de control de código fuente proporcionando una interfaz de usuario (IU) que consta de barras de herramientas y comandos de menú. El complemento de control de código fuente implementa la funcionalidad de control de código fuente.

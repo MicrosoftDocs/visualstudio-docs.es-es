@@ -9,17 +9,17 @@ f1_keywords:
 helpviewer_keywords:
 - POPDIRLISTFUNC callback function
 ms.assetid: 0ee90fd2-5467-4154-ab4c-7eb02ac3a14c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: da499ee9bbdcdff95456a4e4d5f5dc63f2acfb2c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0f8cde3e6835a7d3262bbb89fed13e0dbc8e540e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967402"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090257"
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
 Se trata de una función de devolución de llamada proporcionada a la función [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) para actualizar una colección de directorios y (opcionalmente) nombres de archivo para averiguar cuáles están bajo control de código fuente.
@@ -58,10 +58,10 @@ de Ruta de acceso local completa a un directorio o nombre de archivo que se encu
 |SCC_I_OPERATIONCANCELED|Detiene el procesamiento.|
 |SCC_E_xxx|Cualquier error de control de código fuente adecuado debe detener el procesamiento.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Si el `fOptions` parámetro de la `SccPopulateDirList` función contiene la `SCC_PDL_INCLUDEFILES` marca, la lista posiblemente contendrá nombres de archivo y nombres de directorio.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Funciones de devolución de llamada implementadas por el IDE](../extensibility/callback-functions-implemented-by-the-ide.md)
 - [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)
 - [Códigos de error](../extensibility/error-codes.md)

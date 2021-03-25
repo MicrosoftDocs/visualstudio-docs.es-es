@@ -8,17 +8,17 @@ helpviewer_keywords:
 - programs, registration
 - debugging [Debugging SDK], program registration
 ms.assetid: d726a161-7db3-4ef4-b258-9f6a5be68418
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8326bb2c3938ce76d777c73d0d0f24da145d8ef5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4fda27bd0572713e16311e6feae8ff74870cb006
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961071"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070640"
 ---
 # <a name="register-the-program"></a>Registrar el programa
 Una vez que el motor de depuración ha adquirido un puerto, representado por una interfaz [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) , el siguiente paso para habilitar el programa que se va a depurar es registrarlo con el puerto. Una vez registrado, el programa está disponible para la depuración en uno de los siguientes medios:
@@ -106,6 +106,6 @@ Una vez que el motor de depuración ha adquirido un puerto, representado por una
 
     ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Obtención de un puerto](../../extensibility/debugger/getting-a-port.md)
 - [Habilitar la depuración de un programa](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

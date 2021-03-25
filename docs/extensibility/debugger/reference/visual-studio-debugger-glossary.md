@@ -8,17 +8,17 @@ helpviewer_keywords:
 - glossary [Debugging SDK]
 - debugging [Debugging SDK], glossary
 ms.assetid: 4a2cfaab-1fbd-4a23-bd00-9ac4cc50d7fd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0cc5a8b75fd089318434cadea185f8070616cd8a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1871a395e87177c89f8af2bfce640a63c2cba324
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961201"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070692"
 ---
 # <a name="visual-studio-debugger-glossary"></a>Glosario del depurador de Visual Studio
 A continuación se muestran los términos que se usan en el [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] SDK de depuración.
@@ -68,5 +68,5 @@ A continuación se muestran los términos que se usan en el [!INCLUDE[vsprvs](..
 
   punto de interrupción de advertencia una abstracción para describir una advertencia en un punto de interrupción pendiente. Un punto de interrupción de advertencia describe el motivo por el que el punto de interrupción pendiente todavía no se ha enlazado a una ubicación de código. Esto puede deberse a que el código aún no se ha cargado para la ubicación descrita por el punto de interrupción pendiente o por algún otro motivo.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Extensibilidad del depurador de Visual Studio](../../../extensibility/debugger/visual-studio-debugger-extensibility.md)

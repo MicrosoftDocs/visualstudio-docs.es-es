@@ -8,17 +8,17 @@ helpviewer_keywords:
 - port suppliers, required interfaces
 - debugging [Debugging SDK], port suppliers
 ms.assetid: 0c2cdd40-9f6f-425e-b305-858f7734161e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 930166d84e6203b0d1d62ef661e768f0f14e60f9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1f5755ce47a2b76c9a0d38b1f7eed3b38d64c876
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961058"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070614"
 ---
 # <a name="required-port-supplier-interfaces"></a>Interfaces de proveedor de Puerto requeridas
 Un proveedor de puerto debe implementar la interfaz [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) . [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)
@@ -82,5 +82,5 @@ Un proveedor de puerto debe implementar la interfaz [IDebugPortSupplier2](../../
 
   Proporciona una manera para que el SDM se adjunte a este programa.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Implementación de un proveedor de Puerto](../../extensibility/debugger/implementing-a-port-supplier.md)

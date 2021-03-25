@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - project subtypes, design
 ms.assetid: 405488bb-1362-40ed-b0f1-04a57fc98c56
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea4132f098658b3757d999ded537268cd9121e1f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bfc689705d4d42016f184a25b70564591aa5c04d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896848"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105064506"
 ---
 # <a name="project-subtypes-design"></a>Diseño de subtipos de proyecto
 
@@ -94,7 +94,7 @@ El proyecto base delega las llamadas a las interfaces auxiliares agregadas por u
 |<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>|Permite que el subtipo de proyecto conserve los datos estructurados XML arbitrarios en el archivo de proyecto (. vbproj o. csproj). Estos datos no son visibles para MSBuild.|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>|Permite que el subtipo de proyecto:<br /><br /> -Agregue las nuevas propiedades de MSBuild que se van a conservar.<br />-Quitar propiedades innecesarias de MSBuild.<br />: Consulta para obtener un valor actual de una propiedad de MSBuild.<br />-Cambiar el valor actual de una propiedad de MSBuild.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>
 - <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>

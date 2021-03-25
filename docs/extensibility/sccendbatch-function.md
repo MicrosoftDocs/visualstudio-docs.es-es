@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccEndBatch function
 ms.assetid: 100e7833-fe0a-45c0-9fca-3e61fd1165b7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4ea8ec19fcfe55da0666383408c2addbd42f2e6
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: b3bad3604c57661d0e0e091299cef127d9215d56
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221579"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090218"
 ---
 # <a name="sccendbatch-function"></a>SccEndBatch función)
 Esta función finaliza un lote de operaciones de control de código fuente. Estos lotes no se pueden anidar.
@@ -35,7 +35,7 @@ SCCRTN SccEndBatch(void);
 ## <a name="return-value"></a>Valor devuelto
  Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:
 
-|Valor|Descripción|
+|Value|Descripción|
 |-----------|-----------------|
 |SCC_OK|Lote de operaciones concluido correctamente.|
 |SCC_E_UNKNOWNERROR|Error no específico.|

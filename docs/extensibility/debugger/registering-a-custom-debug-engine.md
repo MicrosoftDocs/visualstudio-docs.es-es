@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, registering
 ms.assetid: 9984cd3d-d34f-4662-9ace-31766499abf5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4581411a2601bf598762a7157f9df0e006995230
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 04e4e8de875cb66ed285e610950baa1c5bf4ef3f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961123"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070666"
 ---
 # <a name="register-a-custom-debug-engine"></a>Registrar un motor de depuración personalizado
 El motor de depuración debe registrarse como un generador de clases, siguiendo las convenciones de COM y registrarse con Visual Studio a través de la subclave del registro de Visual Studio.
@@ -50,7 +50,7 @@ HRESULT CTextInterpreterModule::RegisterServer(BOOL bRegTypeLib, const CLSID * p
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Crear un motor de depuración personalizado](../../extensibility/debugger/creating-a-custom-debug-engine.md)
 - [Aplicaciones auxiliares de SDK para depuración](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
 - [Tutorial: crear un motor de depuración mediante ATL COM](/previous-versions/bb147024(v=vs.90))

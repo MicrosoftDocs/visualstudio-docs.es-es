@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - vsix msi
 ms.assetid: 5ee2d1ba-478a-4cb7-898f-c3b4b2ee834e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba25698cd1efc6aebf030638e191f139a14f99a6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6436d05d3b15be1c1fe8d7c7bb9c8592dee091dc
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967298"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090283"
 ---
 # <a name="prepare-extensions-for-windows-installer-deployment"></a>Preparar las extensiones para la implementación de Windows Installer
 No se puede usar un paquete de Windows Installer (MSI) para implementar un paquete VSIX. Sin embargo, puede extraer el contenido de un paquete VSIX para la implementación de MSI. En este documento se muestra cómo preparar un proyecto cuya salida predeterminada es un paquete VSIX para su inclusión en un proyecto de instalación.
@@ -56,6 +56,6 @@ No se puede usar un paquete de Windows Installer (MSI) para implementar un paque
 
 5. Agregue los archivos restantes al proyecto de instalación.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Implementación del instalador de Visual Studio](/previous-versions/2kt85ked(v=vs.120))
 - [Tutorial: crear una acción personalizada](/previous-versions/visualstudio/visual-studio-2010/d9k65z2d(v=vs.100))
