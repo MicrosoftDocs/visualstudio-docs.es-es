@@ -4,17 +4,17 @@ description: Aprenda a usar elementos y temas comunes de Visual Studio Shell par
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 856f071cbab3156daa6afd0a5282a69636f2fe8f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8edd16744a6c094ece00ee5e4b8239f3d4f5a92e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927228"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105054041"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Colores compartidos para Visual Studio
 Al diseñar la interfaz de usuario que usa elementos comunes de Shell de Visual Studio, o si desea que el elemento de la interfaz sea coherente con características similares, use los nombres de token existentes en los archivos de definición de paquete para elegir y asignar colores. Esto garantiza que la interfaz de usuario mantenga la coherencia con el entorno general de Visual Studio y que se actualice automáticamente cuando se agreguen o actualicen temas.

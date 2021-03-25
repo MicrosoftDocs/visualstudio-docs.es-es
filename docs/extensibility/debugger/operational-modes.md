@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, modes
 ms.assetid: f69972d0-809d-40df-9da3-04738791391c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e0187a02dd14966ee9354d8865991531f1d66ae6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 563db644069731c5d74088dadf296933c36b0cc1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884902"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105067847"
 ---
 # <a name="operational-modes"></a>Modos operativos
 Hay tres modos en los que el IDE puede funcionar, como se indica a continuación:
@@ -56,5 +56,5 @@ Hay tres modos en los que el IDE puede funcionar, como se indica a continuación
 
  Cuando el programa se recorre correctamente en la siguiente línea de código o en una función, o se ejecuta hasta el cursor o hasta un punto de interrupción establecido, el DE realiza la transición automáticamente al modo DE interrupción.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Control de la ejecución](../../extensibility/debugger/control-of-execution.md)

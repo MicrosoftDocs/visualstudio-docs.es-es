@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder::GetFunctionObject method
 ms.assetid: 8fb789df-8f30-420d-8ca5-bb496a6738f1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9868edafb18a129d119a818d9e51363d4964afa2
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 7bbcb8dba1593de824a5a0bb2d4d31f7602eb879
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102143666"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105067470"
 ---
 # <a name="idebugbindergetfunctionobject"></a>IDebugBinder::GetFunctionObject
 Este método obtiene un objeto [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) que se usa para crear parámetros de función.

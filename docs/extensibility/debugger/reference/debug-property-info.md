@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUG_PROPERTY_INFO structure
 ms.assetid: 5a085d18-62c6-4740-b9e9-3f5db6bfdf7f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d0b02ca1f8c85f81096954fb416cc73ee400b9ba
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 13e780dd5d6825515673547aae8f3dc16edd885c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102170593"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096296"
 ---
 # <a name="debug_property_info"></a>DEBUG_PROPERTY_INFO
 Contiene información sobre una propiedad de depuración.
@@ -52,7 +52,7 @@ public struct DEBUG_PROPERTY_INFO {
 };
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
 `dwValidFields`\
 Combinación de marcas de la enumeración [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) que especifica qué campos se rellenan.
 

@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThreadDestroyEvent2
 ms.assetid: fca3f603-9432-457b-9ddd-8b0ec17da046
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 48390b220a1398e712af494a6d0f21024f659f49
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: e97ad58a74c260703769dae83882d627c36c1d46
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102223126"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105086877"
 ---
 # <a name="idebugthreaddestroyevent2"></a>IDebugThreadDestroyEvent2
 El motor DE depuración (DE) envía esta interfaz al administrador de depuración de la sesión (SDM) cuando un subproceso se ha ejecutado hasta su finalización.
@@ -53,7 +53,7 @@ IDebugThreadDestroyEvent2 : IUnknown
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Consulte también
-- [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
+- [Interfaces principales](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

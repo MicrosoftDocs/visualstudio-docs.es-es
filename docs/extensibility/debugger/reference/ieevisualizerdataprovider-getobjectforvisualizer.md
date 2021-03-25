@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEEVisualizerDataProvider::GetObjectForVisualizer method
 ms.assetid: bd5376fc-13b4-40b7-9a5d-7ba8289f1b24
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ec4cef6cf7a0715ee31ce5a88736581a0abd610b
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 5cbcf437e4d507ca7e6803012358a71b0bd6b170
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102222918"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105086864"
 ---
 # <a name="ieevisualizerdataprovidergetobjectforvisualizer"></a>IEEVisualizerDataProvider::GetObjectForVisualizer
 Este método obtiene el objeto que este visualizador representa.

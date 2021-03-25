@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject2::GetBackingFieldForProperty method
 ms.assetid: e72c6338-5573-4fad-8075-f3ade3435424
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6f7a5427193aafe8a4aa35fdf331f62bb08e3fe6
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 210381e034ccae8ab9662b77c47970af2affa095
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102170177"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105053807"
 ---
 # <a name="idebugobject2getbackingfieldforproperty"></a>IDebugObject2::GetBackingFieldForProperty
 Obtiene el campo o la variable (si existe) que puede estar respaldando la propiedad representada por este objeto.

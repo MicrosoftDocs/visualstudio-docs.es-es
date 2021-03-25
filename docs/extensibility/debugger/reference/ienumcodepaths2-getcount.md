@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumCodePaths2::GetCount
 ms.assetid: 988c5092-fcc5-43a1-a94c-c261edd56ebf
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3b3f0016f98b1e6993a1646908a25c7e774e94e4
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 9b2b91673b850d7c9db184798a89f805feddb54b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102227208"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080222"
 ---
 # <a name="ienumcodepaths2getcount"></a>IEnumCodePaths2::GetCount
 Devuelve el número de elementos de la enumeración.

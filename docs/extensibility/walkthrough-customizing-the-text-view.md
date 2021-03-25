@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - customizing the view
 ms.assetid: 32d32ac8-22ff-4de7-af69-bd46ec4ad9bf
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f967235eed7e563b01b96cd9ed19d0aa5975b1fa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 17aa8644fc4823df5b68378e9045fa190980306d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916985"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080312"
 ---
 # <a name="walkthrough-customize-the-text-view"></a>Tutorial: personalizar la vista de texto
 Puede personalizar una vista de texto modificando cualquiera de las siguientes propiedades en la asignación de formato del editor:
@@ -93,5 +93,5 @@ Puede personalizar una vista de texto modificando cualquiera de las siguientes p
 
 5. Active el espacio en blanco visible. (En el menú **edición** , seleccione **avanzadas** y, a continuación, haga clic en **Ver espacio en blanco**). Escriba algunas pestañas en el texto. Deben mostrarse las flechas rojas que representan las pestañas.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Puntos de extensión de editor y servicio de lenguaje](../extensibility/language-service-and-editor-extension-points.md)

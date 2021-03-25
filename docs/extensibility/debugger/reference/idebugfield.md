@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField interface
 ms.assetid: adecdd1c-b1b9-4027-92da-74cbe910636f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 175f9a329a93587873db7c76b53757ba715ace67
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: c519ccfe70ba5685dec8230bf3e4fcb0eb768921
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102151849"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073682"
 ---
 # <a name="idebugfield"></a>IDebugField
 Esta interfaz representa un campo, es decir, una descripción de un símbolo o un tipo.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ```
 IDebugField : IUnknown

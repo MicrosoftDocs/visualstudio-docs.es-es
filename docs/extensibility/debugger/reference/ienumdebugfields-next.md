@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugFields::Next method
 ms.assetid: 22c177a2-af81-4234-812b-f9b47be245a2
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cb60dcf991c1a3002612b6779ef179c1571f3244
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 6b1705c1f07ce17df0d09c8b3036c639b6fe829a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102226662"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073474"
 ---
 # <a name="ienumdebugfieldsnext"></a>IEnumDebugFields::Next
 Este método devuelve el siguiente conjunto de elementos de la enumeración.

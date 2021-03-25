@@ -6,22 +6,22 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugFirewallConfigurationCallback2 interface
 ms.assetid: 0827361c-b97c-4851-9898-ab6d88c81811
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf8659a1bc4af55a9809a3c85548b971a7193b26
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: c67cc1ab9335cfeb197ca67937510b3137d6432c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102166533"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073617"
 ---
 # <a name="idebugfirewallconfigurationcallback2"></a>IDebugFirewallConfigurationCallback2
 Habilita un motor de depuración que usa DCOM para solicitar [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] a la interfaz de usuario que se asegure de que el Firewall no bloqueará la depuración remota.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ```
 IDebugFirewallConfigurationCallback2 : IUnknown

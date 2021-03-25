@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - CONTEXT_INFO structure
 ms.assetid: 6b513f4e-e7b0-4969-adf0-2205ccc1e09b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fc0636334cfde4452f427285bfe21141bc7614e1
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 58b524de5d2d230e240ae7338190568ccfe6fb2a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102170736"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096491"
 ---
 # <a name="context_info"></a>CONTEXT_INFO
 Esta estructura describe un contexto de memoria o de código.
@@ -52,7 +52,7 @@ public struct CONTEXT_INFO {
 };
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
 `dwFields`\
 Una combinación de marcas de la enumeración [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) que especifica qué campos se rellenan<strong>.</strong>
 

@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - METADATA_ADDRESS_LOCAL structure
 ms.assetid: 635f6bc5-c486-4e0e-83db-36f15e543843
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6fba3b02fde05655413f5826fa2a32645b5dc95f
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: c265f8312b9a23b3b10f06595240dae20894f001
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102222411"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061555"
 ---
 # <a name="metadata_address_local"></a>METADATA_ADDRESS_LOCAL
 
@@ -45,7 +45,7 @@ public struct METADATA_ADDRESS_LOCAL {
 }
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
 
 `tokMethod`\
 IDENTIFICADOR del método o función del que forma parte la variable local.

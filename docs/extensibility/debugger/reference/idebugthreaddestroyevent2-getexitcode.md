@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThreadDestroyEvent2::GetExitCode
 ms.assetid: 8bf47a17-f811-4d9b-bcea-7488908830ff
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 693f44ededcaa081d72ef44d60d31473f0b70e1d
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: b569d526ace8b178d3758e62e36895f5ec0262c5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102227377"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105086838"
 ---
 # <a name="idebugthreaddestroyevent2getexitcode"></a>IDebugThreadDestroyEvent2::GetExitCode
 Obtiene el código de salida de un subproceso.

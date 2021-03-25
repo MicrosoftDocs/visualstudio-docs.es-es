@@ -11,17 +11,17 @@ helpviewer_keywords:
 - dbgmetric.h
 - metrics [Debugging SDK]
 ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b98914d4e7fc2d63fd6cc9f79789c389e19b784
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4f5a34513130ea112393ffbb4935093bcea6e797
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936007"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061542"
 ---
 # <a name="sdk-helpers-for-debugging"></a>Asistentes de SDK para la depuración
 Estas funciones y declaraciones son funciones auxiliares globales para implementar motores de depuración, evaluadores de expresiones y proveedores de símbolos en C++.
@@ -426,5 +426,5 @@ HRESULT EnumMetricSections(
 
  Biblioteca: libs\ad2de.lib, libs\dbgmetric.lib
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Referencia de API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugCodeContexts2::Clone
 ms.assetid: 22c98975-4294-4fbd-a345-16f65fe1200d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bbbfe0436cbe9234d4e5b21a1de242ea823c0aa7
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: d26f6b96d4ea73fecd7446625a049b5ac7755f97
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102224972"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080156"
 ---
 # <a name="ienumdebugcodecontexts2clone"></a>IEnumDebugCodeContexts2::Clone
 Devuelve una copia de la enumeración actual como objeto independiente.

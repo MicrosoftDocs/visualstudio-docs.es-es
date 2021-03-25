@@ -8,17 +8,17 @@ helpviewer_keywords:
 - port suppliers
 - debugging [Debugging SDK], port suppliers
 ms.assetid: a8f3db96-1a13-4e93-9ef6-0861880369e0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b543770e5fcc920b05e5d19a15e312174ddad3dd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7ace9a7072287fa26aee3fa2abd083cc9f7f1314
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934395"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105067808"
 ---
 # <a name="port-suppliers"></a>Proveedores de puertos
 En la arquitectura del depurador, un *proveedor de Puerto*:
@@ -33,7 +33,7 @@ En la arquitectura del depurador, un *proveedor de Puerto*:
 
   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] proporciona un proveedor de puerto predeterminado y un puerto predeterminado. Si es necesario implementar un puerto personalizado, también debe implementarse un proveedor de Puerto personalizado para proporcionar esos puertos personalizados.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Servidores](../../extensibility/debugger/servers-visual-studio-sdk.md)
 - [Puertos](../../extensibility/debugger/ports.md)
 - [Conceptos del depurador](../../extensibility/debugger/debugger-concepts.md)
