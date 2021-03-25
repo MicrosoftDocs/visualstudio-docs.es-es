@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - verbs, registering
 ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10e1b158ab62cfedfb6171a0a3874cfe14e89caf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9936efc2e01c0d82d5cc9fce140d543eb95247ad
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837013"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068484"
 ---
 # <a name="register-verbs-for-file-name-extensions"></a>Registrar verbos para las extensiones de nombre de archivo
 La Asociación de una extensión de nombre de archivo con una aplicación generalmente tiene una acción preferida que se produce cuando un usuario hace doble clic en un archivo. Esta acción preferida está vinculada a un verbo, como Open, que corresponde a la acción.
@@ -33,9 +33,9 @@ La Asociación de una extensión de nombre de archivo con una aplicación genera
 
 - Reproducir
 
-- Imprimir
+- Impresión
 
-- Vista previa
+- Versión preliminar
 
   Siempre que sea posible, registre un verbo estándar. La opción más común es el verbo abierto. Utilice el verbo Edit solo si hay una diferencia clara entre abrir el archivo y editar el archivo. Por ejemplo, al abrir un archivo *. htm* , se muestra en el explorador, mientras que al editar un archivo *. htm* se inicia un editor HTML. Los verbos estándar se localizan con la configuración regional del sistema operativo.
 
@@ -113,5 +113,5 @@ La Asociación de una extensión de nombre de archivo con una aplicación genera
 > [!NOTE]
 > Si tiene previsto cambiar el verbo predeterminado de una extensión en una implementación en paralelo, tenga en cuenta el impacto en la instalación y la eliminación. Durante la instalación, se sobrescribe el valor predeterminado original.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Administrar asociaciones de archivos en paralelo](../extensibility/managing-side-by-side-file-associations.md)

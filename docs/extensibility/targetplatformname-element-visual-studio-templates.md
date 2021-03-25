@@ -6,17 +6,17 @@ ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
 ms.assetid: 3a6b1f45-b5d6-418e-add1-87ee8f15033d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f2b8903c99e5bd2f62587b7921be855e4ed6323
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5045a5fc2f29d00c08996fc71acedb228e4f98ae
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938777"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068406"
 ---
 # <a name="targetplatformname-element-visual-studio-templates"></a>TargetPlatformName (Elemento, Plantillas de Visual Studio)
 Especifica la plataforma a la que está orientada la plantilla del proyecto. Este elemento se usa para especificar que se usará una plantilla de proyecto para crear aplicaciones de [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] .
@@ -50,7 +50,7 @@ Especifica la plataforma a la que está orientada la plantilla del proyecto. Est
 ## <a name="text-value"></a>Valor de texto
  Se requiere un valor de texto.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  El texto debe ser **Windows**.
 
 ## <a name="example"></a>Ejemplo
@@ -66,6 +66,6 @@ Especifica la plataforma a la que está orientada la plantilla del proyecto. Est
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Crear plantillas de proyecto y de elemento](../ide/creating-project-and-item-templates.md)
 - [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

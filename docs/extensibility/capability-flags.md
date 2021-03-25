@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, capability flags
 ms.assetid: a3f6071c-eac8-4bcd-8ffd-8d0a2d24a252
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d626f2390138c7e4e6e2471d285bcda940d7f30
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 12acefb99de787d55bc0f932757dde5ea928c6cb
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882289"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094931"
 ---
 # <a name="capability-flags"></a>Marcas de capacidad
 Las marcas SCC_CAP_ *XXX* son marcas de bits utilizadas para indicar las capacidades de un complemento de control de código fuente. Las marcas SCC_EXCAP_ *XXX* son marcas incrementales que indican funcionalidades extendidas y se resuelven en valores enteros.
@@ -79,5 +79,5 @@ Las marcas SCC_CAP_ *XXX* son marcas de bits utilizadas para indicar las capacid
 |`SCC_EXCAP_DELETE_CHECKEDOUT`|10|Puede eliminar archivos desprotegidos.|
 |`SCC_EXCAP_RENAME_CHECKEDOUT`|11|Puede cambiar el nombre de los archivos desprotegidos.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Complementos de control de código fuente](../extensibility/source-control-plug-ins.md)

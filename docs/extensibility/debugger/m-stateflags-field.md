@@ -6,17 +6,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - m_stateFlags field, Task class [.NET Framework debug engines]
 ms.assetid: 82b20efc-08f2-4cd2-91f6-4e01e3da906b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 322e739d84f54f1aa3fd215ba902f0b11a060bcd
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 5df101d0c75ad7bd2a12393c4440c7dcd5484656
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102158779"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105059670"
 ---
 # <a name="m_stateflags-field"></a>m_stateFlags campo
 Almacena información sobre el estado actual del <xref:System.Threading.Tasks.Task> objeto.

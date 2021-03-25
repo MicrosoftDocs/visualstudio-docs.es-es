@@ -9,17 +9,17 @@ helpviewer_keywords:
 - source control packages, interfaces
 - interfaces, source control packages
 ms.assetid: 3e96e838-5675-46bb-99cf-40d420086038
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3cb7811816c4ad7a7ca6f6f0220f185799ee8b77
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f35a11c801a8535c2b903909e2514b9879d3347c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837195"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105095035"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Interfaces y servicios relacionados (VSPackage de control de código fuente)
 
@@ -66,5 +66,5 @@ En esta sección se enumeran todas las interfaces relacionadas con VSPackage de 
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> | Esta interfaz se usa para guardar la configuración del control de código fuente en el archivo de opciones de solución (. suo). Esto puede incluir la configuración de control de código fuente específica del usuario, como la ubicación de inscripción del usuario actual. | VSPackage de control de código fuente | Recomendado |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> | Esta interfaz se usa para supervisar eventos a fin de realizar operaciones como la protección de archivos de proyecto antes de cerrar soluciones u obtener nuevos archivos del control de código fuente al abrir un proyecto. | VSPackage de control de código fuente | Recomendado |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Elementos de diseño](../../extensibility/internals/source-control-vspackage-design-elements.md)

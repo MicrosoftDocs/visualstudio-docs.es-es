@@ -8,17 +8,17 @@ helpviewer_keywords:
 - VSCT XML schema elements, Bitmaps
 - Bitmaps element (VSCT XML schema)
 ms.assetid: 74652e1b-fcfa-421b-aa9f-fbc081d3b476
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e71e16f5104423c5cd7301055c9c471b5bf51262
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cc17162c8d66df99eefe721589863ee4221c8602
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927397"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068211"
 ---
 # <a name="bitmaps-element"></a>Elemento bitmaps
 Agrupa los elementos de [elemento de mapa de bits](../extensibility/bitmap-element.md) .
@@ -64,6 +64,6 @@ Agrupa los elementos de [elemento de mapa de bits](../extensibility/bitmap-eleme
 </Bitmaps>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Cómo agrega VSPackages los elementos de la interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md)

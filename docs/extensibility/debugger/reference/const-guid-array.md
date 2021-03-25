@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - CONST_GUID_ARRAY structure
 ms.assetid: bd55e7d8-372c-4c3e-9eed-28f6b415a5db
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3caa4518872abbb2164e523b30679621d2bf319c
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: d6bcaff422702b9c1c381c1d4e9199bb4578a0f7
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102170814"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105059514"
 ---
 # <a name="const_guid_array"></a>CONST_GUID_ARRAY
 Estructura que contiene una lista de `GUID` s.
@@ -42,7 +42,7 @@ public struct CONST_GUID_ARRAY {
 }
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
 `dwCount`\
 Número de `GUID` s en la `Members` matriz.
 

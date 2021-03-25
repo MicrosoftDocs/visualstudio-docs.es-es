@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccGetCommandOptions function
 ms.assetid: bbe4aa4e-b4b0-403e-b7a0-5dd6eb24e5a9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 400b778cf5e26b0cabad0fb19c548b2faa0a803f
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: b6fc53f806989062a306260840a8f324a26d4669
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102220812"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068380"
 ---
 # <a name="sccgetcommandoptions-function"></a>SccGetCommandOptions función)
 Esta función solicita al usuario opciones avanzadas para un comando determinado.
@@ -54,7 +54,7 @@ de La estructura de la opción (también puede ser `NULL` ).
 ## <a name="return-value"></a>Valor devuelto
  Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:
 
-|Valor|Descripción|
+|Value|Descripción|
 |-----------|-----------------|
 |SCC_OK|Correcto.|
 |SCC_I_ADV_SUPPORT|El complemento de control de código fuente admite opciones avanzadas para el comando.|

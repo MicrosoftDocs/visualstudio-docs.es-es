@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - EXCEPTION_INFO structure
 ms.assetid: d046957a-b97d-420b-b46b-c67cbaef709e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fa78aeea8a3c20aa5b7f5d17cf444bd4184903d5
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 1ec97b56cc7fca8c2185d7180a8d34e87b084b11
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102150905"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105059475"
 ---
 # <a name="exception_info"></a>EXCEPTION_INFO
 Describe una excepción o un error en tiempo de ejecución producido por el programa que se está depurando.
@@ -50,7 +50,7 @@ public struct EXCEPTION_INFO {
 };
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
 `pProgram`\
 Objeto [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) que representa el programa en el que se produjo la excepción.
 

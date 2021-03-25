@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_REQUEST_INFO structure
 ms.assetid: 42a31412-5b6b-47fe-a762-0c2bc769e1cc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 941c8302fa52d579c2fbefc62ccd962d26e2cf13
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 40c88d1c07d3610ff6d098fbbf8517476cc07103
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102144136"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105059657"
 ---
 # <a name="bp_request_info"></a>BP_REQUEST_INFO
 Contiene la información necesaria para implementar un punto de interrupción.
@@ -58,7 +58,7 @@ public struct BP_REQUEST_INFO {
 };
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
 `dwFields`\
 Combinación de marcas de la enumeración [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) que especifica qué campos se rellenan.
 
