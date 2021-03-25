@@ -1,5 +1,6 @@
 ---
 title: 'IDebugProgramNode2:: Attach_V7 | Microsoft Docs'
+description: Este método de interfaz es un método de asociación antiguo y en desuso usado antes de Visual Studio 2005.
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramNode2::Attach_V7
 - IDebugProgramNode2::Attach
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b143477dc558b20a302a54d5baecc64d02d33ea3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c949bba45457917e4dd00bdc05bc300f3a38eb7e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898636"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105053599"
 ---
 # <a name="idebugprogramnode2attach_v7"></a>IDebugProgramNode2::Attach_V7
 
@@ -60,7 +61,7 @@ de Un valor de la enumeración [ATTACH_REASON](../../../extensibility/debugger/r
 
 Una implementación siempre debe devolver `E_NOTIMPL` .
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 
 > [!WARNING]
 > A partir de Visual Studio 2005, este método ya no se usa y siempre debe devolver `E_NOTIMPL` . Vea la interfaz [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md) para obtener un enfoque alternativo si el nodo del programa debe indicar que no se puede adjuntar o si el nodo del programa simplemente está estableciendo el programa `GUID` . De lo contrario, implemente el método [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) .
@@ -73,7 +74,7 @@ Cuando se llama a este método, la DE debe enviar el objeto DE evento [IDebugEng
 
 El parámetro DE debe llamar al método [GetProgramId](../../../extensibility/debugger/reference/idebugprogram2-getprogramid.md) en el objeto [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) proporcionado por el objeto de evento [IDEBUGPROGRAMCREATEEVENT2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) y debe almacenar el GUID de ese programa en los datos de instancia para el `IDebugProgram2` objeto implementado por el parámetro de.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
 - [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md)

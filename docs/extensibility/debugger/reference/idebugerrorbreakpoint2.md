@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugErrorBreakpoint2 interface
 ms.assetid: 1f2a4b94-3713-46e9-8272-3917187792bd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91697ebad462f3d1e953aa42d74bf5a96757886a
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 9c2ceedbf0fad2141f978420909d31be2260818c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102153162"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105065936"
 ---
 # <a name="idebugerrorbreakpoint2"></a>IDebugErrorBreakpoint2
 Esta interfaz representa un punto de interrupción de error o de advertencia, como una ubicación no válida, una expresión no válida o los motivos por los que no se ha enlazado el punto de interrupción pendiente (no se ha cargado el código todavía, etc.).
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ```
 IDebugErrorBreakpoint2 : IUnknown

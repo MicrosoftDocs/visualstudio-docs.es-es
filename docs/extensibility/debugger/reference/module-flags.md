@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - MODULE_FLAGS enumeration
 ms.assetid: 0e555b42-b846-4dbb-812e-8e3d11c85b2d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e671b3e578a78665a6a816582e0290119f77ea58
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: b78e0ec9f720307a60485283b98939dee954ff29
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102225479"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105079792"
 ---
 # <a name="module_flags"></a>MODULE_FLAGS
 Se usa para describir un módulo.
@@ -51,7 +51,7 @@ public enum enum_MODULE_FLAGS {
 };
 ```
 
-## <a name="fields"></a>Fields
+## <a name="fields"></a>Campos
  `MODULE_FLAG_NONE`\
  No especifica ningún módulo.
 

@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - PROCESS_INFO structure
 ms.assetid: 260c33cc-a05e-4645-84b6-536d0b3b0537
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f5557e4171bdeb51ae1ac954870a85227a8c4c92
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: b6fe223d67b876dca1604b2617a33a888ec8180c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102222099"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105079649"
 ---
 # <a name="process_info"></a>PROCESS_INFO
 Contiene información sobre un proceso.
@@ -56,7 +56,7 @@ public struct PROCESS_INFO {
 };
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
  `Fields`\
  Combinación de marcas de la enumeración [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) que especifican qué campos se rellenan.
 

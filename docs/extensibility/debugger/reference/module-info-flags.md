@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - MODULE_INFO_FLAGS enumeration
 ms.assetid: e22d3723-b4d4-4524-8a2f-3adb55bbd273
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 158cc849e32fc0177b784c8898ec83fe58008f60
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: bfe1639ea187c6f03327a2278aaa9f849309a2af
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102222346"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105079714"
 ---
 # <a name="module_info_flags"></a>MODULE_INFO_FLAGS
 Especifica el estado de los símbolos de un módulo.
@@ -41,7 +41,7 @@ public enum enum_MODULE_INFO_FLAGS {
 };
 ```
 
-## <a name="fields"></a>Fields
+## <a name="fields"></a>Campos
  `MIF_SYMBOLS_LOADED`\
  El módulo cargó al menos un conjunto de símbolos (de lo contrario, no se cargó ningún símbolo).
 

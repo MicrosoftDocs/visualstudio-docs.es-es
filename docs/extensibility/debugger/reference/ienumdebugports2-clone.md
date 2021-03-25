@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugPorts2::Clone
 ms.assetid: d5ce77e8-bb99-409a-98fa-20fe5a0de25e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c67f5db40ceae230e11c7aa3f3868553aa60b49b
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: e0ecda929ecf6b0e9c712474f132dbb852a30cd7
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102226337"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105052884"
 ---
 # <a name="ienumdebugports2clone"></a>IEnumDebugPorts2::Clone
 Devuelve una copia de la enumeración actual como objeto independiente.
