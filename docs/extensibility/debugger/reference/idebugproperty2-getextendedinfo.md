@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty2::GetExtendedInfo
 ms.assetid: 0c9c0b2b-7540-4424-adb5-fce7aa37a026
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 004c7d545dbaaa20016fd94febe999420305fc7a
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: ad540166ff769aaa894ad4142843553951217234
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102171504"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105065039"
 ---
 # <a name="idebugproperty2getextendedinfo"></a>IDebugProperty2::GetExtendedInfo
 Obtiene información extendida para la propiedad.
@@ -57,7 +57,7 @@ enuncia Devuelve un `VARIANT` (C++) o un objeto (C#) que se puede utilizar para 
 
  Los siguientes GUID se reconocen normalmente por este método (los valores GUID se especifican para C#, ya que el nombre no está disponible en ningún ensamblado). Se pueden crear GUID adicionales para uso interno.
 
-|nombre|GUID|Descripción|
+|Nombre|GUID|Descripción|
 |----------|----------|-----------------|
 |guidDocument|{3f98de84-fee9-11d0-b47f-00a0244a1dd2}|Devuelve una `IUnknown` interfaz al documento. Normalmente, la interfaz [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) se puede obtener desde esta `IUnknown` interfaz.|
 |guidCodeContext|{e2fc65e-56ce-11d1-b528-00aax004a8797}|Devuelve una `IUnknown` interfaz al contexto del documento. Normalmente, la interfaz [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) se puede obtener desde esta `IUnknown` interfaz.|

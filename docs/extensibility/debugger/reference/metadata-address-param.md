@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - METADATA_ADDRESS_PARAM structure
 ms.assetid: 90904f19-0e71-4cb3-a56e-6a2e92f66dfc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3317981def12a72cf98dad850d5509bd3e64520a
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 0171fd59ec034c2015843732cdd361228166e74f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102222385"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057928"
 ---
 # <a name="metadata_address_param"></a>METADATA_ADDRESS_PARAM
 Esta estructura representa un parámetro de un método o una función.
@@ -44,7 +44,7 @@ public struct METADATA_ADDRESS_PARAM {
 }
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
  `tokMethod`\
  IDENTIFICADOR del método del que forma parte el parámetro.
 

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - user interface, source control packages
 - source control packages, user interface
 ms.assetid: f35ddb24-53bf-461e-b34f-7414f657c082
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97c82254516c78a3aff9884e91e44adc45b95981
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1239b11e814ba08e4e481358f5e7fdd0e5dc666b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902988"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105091037"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>Interfaz de usuario personalizada (VSPackage de control de código fuente)
 Un VSPackage declara sus elementos de menú y sus Estados predeterminados a través del archivo de tabla de comandos de Visual Studio (*. Vsct*). El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] entorno de desarrollo integrado (IDE) muestra los elementos de menú en sus Estados predeterminados hasta que se carga el VSPackage. Posteriormente, <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> se llama al método para habilitar o deshabilitar elementos de menú.
@@ -57,7 +57,7 @@ Un VSPackage declara sus elementos de menú y sus Estados predeterminados a trav
 | Ventanas de herramientas | El VSPackage de control de código fuente oculta las ventanas de herramientas que posee cuando se convierte en inactivas. |
 | Páginas de opciones específicas del VSPackage de control de código fuente | La clave del registro **HKLM\SOFTWARE\Microsoft\VisualStudio\X.Y\ToolsOptionsPages\VisibilityCmdUIContexts** permite que un paquete VSPackage establezca los contextos en los que es necesario que se muestren sus páginas de opciones. Una entrada del registro con esta clave tendría que crearse mediante el identificador de servicio (SID) del servicio de control de código fuente y asignarle un valor DWORD de 1. Siempre que se produce un evento de interfaz de usuario en un contexto con el que se registra el VSPackage de control de código fuente, se llamará al VSPackage si está activo. |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>

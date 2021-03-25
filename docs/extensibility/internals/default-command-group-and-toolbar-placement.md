@@ -12,17 +12,17 @@ helpviewer_keywords:
 - commands [Visual Studio], default IDE
 - commands [Visual Studio], default product
 ms.assetid: 35342110-d639-4577-8367-00b21dcc6f07
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c38abc09b0d5c8996cde44d33f4778a54a0cd62
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 07e93db9ffe79c3c49072b3379def14a3be2852c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902963"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105091011"
 ---
 # <a name="default-command-group-and-toolbar-placement"></a>Ubicación predeterminada del comando, el grupo y la barra de herramientas
 En cuanto a la uniformidad y la estabilidad del producto, la interfaz de usuario muestra determinados grupos de comandos de forma predeterminada y [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] proporciona definiciones para los comandos y los grupos de comandos. Los VSPackages también pueden usar los comandos y grupos de comandos estándar.
@@ -42,6 +42,6 @@ En cuanto a la uniformidad y la estabilidad del producto, la interfaz de usuario
 
  Las barras de herramientas del editor deben colocarse debajo del IDE y de las barras de herramientas del producto.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Comandos, menús y grupos definidos por el IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)
 - [Cómo agrega VSPackages los elementos de la interfaz de usuario](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

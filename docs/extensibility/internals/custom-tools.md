@@ -9,17 +9,17 @@ helpviewer_keywords:
 - tools [Visual Studio], custom
 - custom tools
 ms.assetid: d669f154-9b23-48b6-b9f6-7419c8dd61a6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7fdadad602a256b4740b4c4204704ca73864d612
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d714822605178382ec2ef3574db617f7986cf888
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903026"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105091050"
 ---
 # <a name="custom-tools"></a>Herramientas personalizadas
 *Las herramientas personalizadas* permiten asociar una herramienta a un elemento de un proyecto y ejecutar esa herramienta cada vez que se guarda el archivo. Ciertas herramientas personalizadas, que a veces se denominan *generadores de un solo archivo*, se usan con frecuencia para implementar traductores que generan código a partir de datos y viceversa. Por ejemplo, los generadores de un solo archivo crean [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] y [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] código fuente de los archivos *. Settings* y *. resx* . El código fuente generado proporciona acceso fuertemente tipado a los datos de los archivos *. Settings* y *. resx* . Los [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] tipos de proyecto y admiten herramientas personalizadas; los [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] tipos de proyecto no. Sus propios tipos de proyecto también pueden admitir herramientas personalizadas.
