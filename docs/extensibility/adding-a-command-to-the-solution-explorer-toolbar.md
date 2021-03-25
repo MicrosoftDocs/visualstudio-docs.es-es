@@ -9,17 +9,17 @@ helpviewer_keywords:
 - buttons [Visual Studio], adding to Solution Explorer
 - Solution Explorer, adding buttons
 ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 305966a4cd4ec67994ac3dbd6c7ba0e25a14172f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cf6ffcded95d142578ed118ab26b57914eb36c37
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951698"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060099"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>Agregar un comando a la barra de herramientas Explorador de soluciones
 En este tutorial se muestra cómo agregar un botón a la barra de herramientas **Explorador de soluciones** .
@@ -118,5 +118,5 @@ En este tutorial se muestra cómo agregar un botón a la barra de herramientas *
 
    Controla la visibilidad del botón [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] hasta que se carga el VSPackage. Una vez cargado el VSPackage, el VSPackage controla la visibilidad del botón.  Para obtener más información, consulte [MenuCommands frente a OleMenuCommands](/previous-versions/visualstudio/visual-studio-2015/misc/menucommands-vs-olemenucommands?preserve-view=true&view=vs-2015).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md)

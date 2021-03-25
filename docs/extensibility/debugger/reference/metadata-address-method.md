@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - METADATA_ADDRESS_METHOD structure
 ms.assetid: fc0e5370-1b4f-4867-837f-0d63c4b9dd09
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4c79aa9e7592417ba3f42d86137908c350681eb8
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 40047dbdb35ad5958e923bb9a3ec18faa0d69be6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102222398"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105075476"
 ---
 # <a name="metadata_address_method"></a>METADATA_ADDRESS_METHOD
 Esta estructura representa la dirección de un método de una clase.
@@ -44,7 +44,7 @@ public struct METADATA_ADDRESS_METHOD {
 }
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
  `tokMethod`\
  IDENTIFICADOR del método.
 

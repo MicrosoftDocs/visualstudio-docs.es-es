@@ -8,17 +8,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], registering port suppliers
 - port suppliers, registering
 ms.assetid: fb057052-ee16-4272-8e16-a4da5dda0ad4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d5639c45fd6dff6702ebc197d46c2eafe482e1d0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 16c1738d4059468384df7ee2e882c20c8b5a0537
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926361"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105059839"
 ---
 # <a name="implement-and-register-a-port-supplier"></a>Implementar y registrar un proveedor de Puerto
 El rol de un proveedor de puerto es realizar un seguimiento de los puertos y proporcionarlos, que a su vez administran los procesos. Cuando es necesario crear un puerto, se crea una instancia del proveedor del puerto usando CoCreate con el GUID del proveedor del puerto (el administrador de depuración de la sesión [SDM] usará el proveedor del puerto que el usuario seleccionó o el proveedor del puerto especificado por el sistema del proyecto). Después, el SDM llama a [CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) para ver si se pueden agregar puertos. Si se puede Agregar un puerto, se solicita un nuevo puerto llamando a [AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) y pasándole un [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) que describa el puerto. `AddPort` Devuelve un nuevo puerto representado por una interfaz [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) .
@@ -61,7 +61,7 @@ RemoveMetric(metrictypePortSupplier,
 
  Un proveedor de puertos puede proporcionar su nombre y GUID a través de los métodos [GetPortSupplierName](../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md) y [GetPortSupplierId](../../extensibility/debugger/reference/idebugportsupplier2-getportsupplierid.md), respectivamente.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Implementación de un proveedor de Puerto](../../extensibility/debugger/implementing-a-port-supplier.md)
 - [Aplicaciones auxiliares de SDK para depuración](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
 - [Proveedores de puertos](../../extensibility/debugger/port-suppliers.md)

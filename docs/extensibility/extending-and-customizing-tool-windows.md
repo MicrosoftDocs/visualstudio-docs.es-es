@@ -8,17 +8,17 @@ helpviewer_keywords:
 - user interfaces, essentials
 - tool windows, standard
 ms.assetid: 46b2892e-7b2b-4b3f-83a7-b884f1e114ee
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9f17c16d051bdb42750d91971d2be0d3c09b47f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6e5b5615b8b004dcbdfe860ba4d775a3ace177ed
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953089"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105075229"
 ---
 # <a name="extend-and-customize-tool-windows"></a>Extender y personalizar ventanas de herramientas
 Visual Studio proporciona varios tipos diferentes de ventanas, por ejemplo, ventanas de herramientas, ventanas de documentos y ventanas de cuadro de diálogo. Otras ventanas, como la ventana **propiedades** , la ventana **resultados** y la ventana **lista de tareas** , son tipos de ventanas de herramientas.
@@ -48,7 +48,7 @@ Visual Studio proporciona varios tipos diferentes de ventanas, por ejemplo, vent
 ## <a name="modal-dialog-boxes"></a>Cuadros de diálogo modales
  En una extensión de Visual Studio, debe crear cuadros de diálogo modales derivándolo de <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow?displayProperty=fullName> , lo que le permite controlarlos y el resto de la interfaz de usuario. Para obtener más información, vea [crear y administrar cuadros de diálogo modales](../extensibility/creating-and-managing-modal-dialog-boxes.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Crear una extensión con una ventana de herramientas](../extensibility/creating-an-extension-with-a-tool-window.md)
 - [Ampliar proyectos](../extensibility/extending-projects.md)
 - [Extender soluciones](../extensibility/extending-solutions.md)

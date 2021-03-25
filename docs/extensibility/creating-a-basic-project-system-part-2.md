@@ -9,17 +9,17 @@ helpviewer_keywords:
 - project system
 - tutorial
 ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ceef95f90d2f54ad7b527ccc8c00322c77491fb7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a60bdc7a6cbd73e85248f6ea5897ad3e56337113
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853157"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089425"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>Creación de un sistema de proyectos básico, parte 2
 En el primer tutorial de esta serie, [crear un sistema de proyectos básico, parte 1](../extensibility/creating-a-basic-project-system-part-1.md), se muestra cómo crear un sistema de proyectos básico. Este tutorial se basa en el sistema de proyectos básico agregando una plantilla de Visual Studio, una página de propiedades y otras características. Debe completar el primer tutorial antes de iniciar este.
@@ -48,7 +48,7 @@ Mediante el uso de una plantilla de Visual Studio (archivo *. vstemplate* ) en l
 
 1. En [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , abra la solución SimpleProject que creó mediante la [creación de un sistema de proyectos básico, parte 1](../extensibility/creating-a-basic-project-system-part-1.md).
 
-2. En el archivo *SimpleProjectPackage.CS* , busque el atributo ProvideProjectFactory. Reemplace el segundo parámetro (el nombre del proyecto) por NULL y el cuarto parámetro (la ruta de acceso a la carpeta de plantillas de proyecto) por ". \\ \NullPath ", como se indica a continuación.
+2. En el archivo *SimpleProjectPackage. CS* , busque el atributo ProvideProjectFactory. Reemplace el segundo parámetro (el nombre del proyecto) por NULL y el cuarto parámetro (la ruta de acceso a la carpeta de plantillas de proyecto) por ". \\ \NullPath ", como se indica a continuación.
 
     ```
     [ProvideProjectFactory(typeof(SimpleProjectFactory), null,
@@ -100,7 +100,7 @@ Mediante el uso de una plantilla de Visual Studio (archivo *. vstemplate* ) en l
 - El \<ProjectType> elemento denomina el tipo de proyecto en el cuadro de diálogo **nuevo proyecto** . Este nombre reemplaza el parámetro de nombre de proyecto del atributo ProvideProjectFactory.
 
   > [!NOTE]
-  > El \<ProjectType> elemento debe coincidir con el `LanguageVsTemplate` argumento del `ProvideProjectFactory` atributo en el archivo SimpleProjectPackage.cs.
+  > El \<ProjectType> elemento debe coincidir con el `LanguageVsTemplate` argumento del `ProvideProjectFactory` atributo en el archivo SimpleProjectPackage. cs.
 
   En la \<TemplateContent> sección se describen estos archivos que se generan cuando se crea un nuevo proyecto:
 
@@ -110,7 +110,7 @@ Mediante el uso de una plantilla de Visual Studio (archivo *. vstemplate* ) en l
 
 - *AssemblyInfo.cs*
 
-  Los tres archivos tienen `ReplaceParameters` establecido en true, lo que permite la sustitución de parámetros. El archivo *Program.CS* tiene `OpenInEditor` establecido en true, lo que hace que el archivo se abra en el editor de código cuando se crea un proyecto.
+  Los tres archivos tienen `ReplaceParameters` establecido en true, lo que permite la sustitución de parámetros. El archivo *Program. CS* tiene `OpenInEditor` establecido en true, lo que hace que el archivo se abra en el editor de código cuando se crea un proyecto.
 
   Para obtener más información sobre los elementos del esquema de plantilla de Visual Studio, vea [referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md).
 
@@ -285,7 +285,7 @@ Cuando se crea un proyecto mediante una plantilla de Visual Studio en el cuadro 
 
 ### <a name="to-substitute-project-template-parameters"></a>Para sustituir los parámetros de la plantilla de proyecto
 
-1. En el archivo *SimpleProjectNode.CS* , quite el `AddFileFromTemplate` método.
+1. En el archivo *SimpleProjectNode. CS* , quite el `AddFileFromTemplate` método.
 
 2. En el archivo *\\ Templates\Projects\ConsoleApp\SimpleProject.MyProj* , busque la \<RootNamespace> propiedad y cambie su valor a $safeprojectname $.
 
@@ -319,7 +319,7 @@ Cuando se crea un proyecto mediante una plantilla de Visual Studio en el cuadro 
 
 5. Cree una nueva aplicación de consola de SimpleProject. (En el panel **tipos de proyecto** , seleccione **SimpleProject**. En **plantillas instaladas de Visual Studio**, seleccione **aplicación de consola**).
 
-6. En el proyecto creado recientemente, Abra *Program.CS*. Debe tener un aspecto similar al siguiente (los valores GUID en el archivo serán distintos):
+6. En el proyecto recién creado, Abra *Program. CS*. Debe tener un aspecto similar al siguiente (los valores GUID en el archivo serán distintos):
 
     ```csharp
     using System;
@@ -354,7 +354,7 @@ La página de propiedades que se crea en esta sección le permite modificar y gu
 
 - RootNamespace.
 
-1. En el archivo *SimpleProjectPackage.CS* , agregue este `ProvideObject` atributo a la `SimpleProjectPackage` clase:
+1. En el archivo *SimpleProjectPackage. CS* , agregue este `ProvideObject` atributo a la `SimpleProjectPackage` clase:
 
     ```
     [ProvideObject(typeof(GeneralPropertyPage))]
@@ -363,7 +363,7 @@ La página de propiedades que se crea en esta sección le permite modificar y gu
 
     Esto registra la clase `GeneralPropertyPage` de página de propiedades con com.
 
-2. En el archivo *SimpleProjectNode.CS* , agregue estos dos métodos invalidados a la `SimpleProjectNode` clase:
+2. En el archivo *SimpleProjectNode. CS* , agregue estos dos métodos invalidados a la `SimpleProjectNode` clase:
 
     ```csharp
     protected override Guid[] GetConfigurationIndependentPropertyPages()
@@ -382,7 +382,7 @@ La página de propiedades que se crea en esta sección le permite modificar y gu
 
     Ambos métodos devuelven una matriz de GUID de página de propiedades. El GUID de GeneralPropertyPage es el único elemento de la matriz, por lo que el cuadro de diálogo **páginas de propiedades** solo mostrará una página.
 
-3. Agregue un archivo de clase denominado *GeneralPropertyPage.CS* al proyecto SimpleProject.
+3. Agregue un archivo de clase denominado *GeneralPropertyPage. CS* al proyecto SimpleProject.
 
 4. Reemplace el contenido de este archivo mediante el código siguiente:
 
@@ -462,7 +462,7 @@ La página de propiedades que se crea en esta sección le permite modificar y gu
 
 6. En la instancia experimental, cree una nueva aplicación SimpleProject.
 
-7. Visual Studio llama al generador de proyectos para crear un proyecto mediante la plantilla de Visual Studio. El nuevo archivo *Program.CS* se abre en el editor de código.
+7. Visual Studio llama al generador de proyectos para crear un proyecto mediante la plantilla de Visual Studio. El nuevo archivo *Program. CS* se abre en el editor de código.
 
 8. Haga clic con el botón secundario en el nodo del proyecto en **Explorador de soluciones** y, a continuación, haga clic en **propiedades**. Aparece el cuadro de diálogo **Páginas de propiedades**.
 

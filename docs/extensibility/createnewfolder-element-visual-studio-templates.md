@@ -10,17 +10,17 @@ f1_keywords:
 helpviewer_keywords:
 - CreateNewFolder element [Visual Studio project templates]
 ms.assetid: acef2016-4140-45d6-ace8-b8160eabd676
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9169d90eb10c0595b7dc7fe940463f57354dfffa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3c2d8da615c350fc53b81532972cef65f6cd6ed7
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870316"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089477"
 ---
 # <a name="createnewfolder-element-visual-studio-templates"></a>Createnewfolder ((elemento, plantillas de Visual Studio)
 Determina si hay que comprobar que el directorio de destino donde se va a crear el proyecto no existe. Si el directorio existe, se puede crear un directorio nuevo para el proyecto. Esta configuración se suele sobrescribir por medio de la marca del Registro `NewProjectRequiresNewFolder(VsTemplate)` (`HKEY_LOCAL_MACHINE/SOFTWARE(/Wow6432Node)/Microsoft/VisualStudio/<version number>/Projects/<project GUID>`) que usan todos los tipos de proyecto comunes para determinar si un proyecto nuevo se creará en un directorio nuevo.
@@ -59,7 +59,7 @@ Determina si hay que comprobar que el directorio de destino donde se va a crear 
 
  El texto debe ser `true` o `false`, e indica si se debe crear o no una nueva carpeta contenedora cuando se cree un proyecto a partir de la plantilla.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  `CreateNewFolder` es un elemento opcional. El valor predeterminado es `true`.
 
  El valor especificado en el elemento `CreateNewFolder` solo se admite en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] si el sistema de proyectos subyacente lo admite.

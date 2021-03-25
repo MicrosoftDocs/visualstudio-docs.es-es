@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], sessions
 ms.assetid: 18d82199-b2d4-47a9-924f-ab64faf60ca1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 69634d322dca0992609d907bf58f1f315479dc04
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 67501de3de3b88b9548238705ee8e075f31410e6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952517"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105067899"
 ---
 # <a name="debug-session"></a>Sesión de depuración
 En cuanto a la arquitectura del depurador, una *sesión*:
@@ -26,6 +26,6 @@ En cuanto a la arquitectura del depurador, una *sesión*:
 
 - Está implementado por un administrador de depuración de sesión (SDM). Para obtener más información, vea [Session Debug Manager](../../extensibility/debugger/session-debug-manager.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Administrador de depuración de sesión](../../extensibility/debugger/session-debug-manager.md)
 - [Conceptos del depurador](../../extensibility/debugger/debugger-concepts.md)

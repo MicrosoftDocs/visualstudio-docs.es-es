@@ -6,17 +6,17 @@ ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
 ms.assetid: b07d3074-0fc9-45e1-baf5-da6bd4f3f1c0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e2a1f542e89851cb430f8d80934933351e9349e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f9d50d33824be70a7df09cee878d516ddaaf9f8d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882276"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068172"
 ---
 # <a name="buildprojectonload-element-visual-studio-templates"></a>BuildProjectOnload (elemento, plantillas de Visual Studio)
 Compila solo los proyectos nuevos a medida que se crean y se agregan a una solución. No se compila toda la solución.
@@ -55,7 +55,7 @@ Jerarquía de elementos:
 
  El texto debe ser `true` o `false` para indicar si se va a compilar solo el nuevo proyecto cuando se crea a partir de la plantilla.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  `BuildProjectOnLoad` es un elemento opcional. El valor predeterminado es `false`.
 
 ## <a name="example"></a>Ejemplo
@@ -86,7 +86,7 @@ Jerarquía de elementos:
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Atributo y elemento BuildOnLoad](buildonload-visual-studio-templates.md)
 - [Crear plantillas para proyectos y elementos](../ide/creating-project-and-item-templates.md)

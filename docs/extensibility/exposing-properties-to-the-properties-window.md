@@ -9,17 +9,17 @@ helpviewer_keywords:
 - properties [Visual Studio SDK]
 - Property Browser, exposing properties
 ms.assetid: 47f295b5-1ca5-4e7b-bb52-7b926b136622
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd9f2eb66bd2e1b8edcffd9e1053e4f644ba5e77
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b9de86e956fe6a4d7841d519d7252b75ae216229
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890765"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105075255"
 ---
 # <a name="expose-properties-to-the-properties-window"></a>Exponga propiedades a la ventana Propiedades
 
@@ -37,9 +37,9 @@ En esta sección, creará una ventana de herramientas personalizada y mostrará 
 
 1. Cada extensión de Visual Studio comienza con un proyecto de implementación de VSIX, que contendrá los recursos de la extensión. Cree un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Proyecto VSIX denominado `MyObjectPropertiesExtension` . Para buscar la plantilla de Proyecto VSIX en el cuadro de diálogo **nuevo proyecto** , busque "VSIX".
 
-2. Agregue una ventana de herramientas agregando una plantilla de elemento de ventana de herramientas personalizada denominada `MyToolWindow` . En el **Explorador de soluciones**, haga clic con el botón secundario en el nodo del proyecto y seleccione **Agregar**  >  **nuevo elemento**. En el **cuadro de diálogo Agregar nuevo elemento**, vaya a la extensibilidad de **elementos de Visual C#**  >   y seleccione **ventana de herramientas personalizada**. En el campo **nombre** situado en la parte inferior del cuadro de diálogo, cambie el nombre del archivo a *MyToolWindow.CS*. Para obtener más información sobre cómo crear una ventana de herramientas personalizada, vea [crear una extensión con una ventana de herramientas](../extensibility/creating-an-extension-with-a-tool-window.md).
+2. Agregue una ventana de herramientas agregando una plantilla de elemento de ventana de herramientas personalizada denominada `MyToolWindow` . En el **Explorador de soluciones**, haga clic con el botón secundario en el nodo del proyecto y seleccione **Agregar**  >  **nuevo elemento**. En el **cuadro de diálogo Agregar nuevo elemento**, vaya a la extensibilidad de **elementos de Visual C#**  >   y seleccione **ventana de herramientas personalizada**. En el campo **nombre** situado en la parte inferior del cuadro de diálogo, cambie el nombre del archivo a *MyToolWindow. CS*. Para obtener más información sobre cómo crear una ventana de herramientas personalizada, vea [crear una extensión con una ventana de herramientas](../extensibility/creating-an-extension-with-a-tool-window.md).
 
-3. Abra *MyToolWindow.CS* y agregue la siguiente instrucción using:
+3. Abra *MyToolWindow. CS* y agregue la siguiente instrucción using:
 
    ```csharp
    using System.Collections;
@@ -112,7 +112,7 @@ En esta sección, agregará una ventana de herramientas y expondrá sus propieda
 
 ### <a name="to-expose-tool-window-properties"></a>Para exponer las propiedades de la ventana de herramientas
 
-1. Abra *MyToolWindow.CS* y agregue la propiedad booleana pública isChecked a la `MyToolWindow` clase.
+1. Abra *MyToolWindow. CS* y agregue la propiedad booleana pública isChecked a la `MyToolWindow` clase.
 
     ```csharp
     [Category("My Properties")]
@@ -131,7 +131,7 @@ En esta sección, agregará una ventana de herramientas y expondrá sus propieda
 
      Esta propiedad obtiene su estado de la casilla de WPF que se creará más adelante.
 
-2. Abra *MyToolWindowControl.Xaml.CS* y reemplace el constructor MyToolWindowControl por el código siguiente.
+2. Abra *MyToolWindowControl. Xaml. CS* y reemplace el constructor MyToolWindowControl por el código siguiente.
 
     ```vb
     private MyToolWindow pane;
@@ -145,7 +145,7 @@ En esta sección, agregará una ventana de herramientas y expondrá sus propieda
 
      Esto proporciona `MyToolWindowControl` acceso al `MyToolWindow` panel.
 
-3. En *MyToolWindow.CS*, cambie el `MyToolWindow` constructor de la siguiente manera:
+3. En *MyToolWindow. CS*, cambie el `MyToolWindow` constructor de la siguiente manera:
 
     ```csharp
     base.Content = new MyToolWindowControl(this);
@@ -189,7 +189,7 @@ En esta sección, agregará una ventana de herramientas y expondrá sus propieda
 
 ### <a name="to-change-selection-lists"></a>Para cambiar las listas de selección
 
-1. Abra *MyToolWindow.CS* y agregue una clase pública denominada `Simple` .
+1. Abra *MyToolWindow. CS* y agregue una clase pública denominada `Simple` .
 
     ```csharp
     public class Simple
@@ -242,7 +242,7 @@ En esta sección, agregará una ventana de herramientas y expondrá sus propieda
     }
     ```
 
-3. En *MyToolWindowControl.CS*, reemplace los controladores de casilla por estas líneas de código:
+3. En *MyToolWindowControl. CS*, reemplace los controladores de casilla por estas líneas de código:
 
     ```csharp
     private void checkbox_Checked(object sender, RoutedEventArgs e)
@@ -274,6 +274,6 @@ En este tutorial, <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer
 
 Las ventanas de herramientas de Visual Studio se conservan entre las sesiones de Visual Studio. Para obtener más información sobre cómo conservar el estado de la ventana de herramientas, vea <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Extender propiedades y la ventana de propiedades](../extensibility/extending-properties-and-the-property-window.md)

@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer3::QueryIsLocal
 ms.assetid: cca030de-f853-4ed7-b2fb-395f08a6b884
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 61cb67fd350fe74f12b69596675e009b01794ef4
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: e18074c92bdd63c1c378d71d3c84c4dde1745536
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102163075"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105054314"
 ---
 # <a name="idebugcoreserver3queryislocal"></a>IDebugCoreServer3::QueryIsLocal
 Determina si el servidor es local para el autor de la llamada.

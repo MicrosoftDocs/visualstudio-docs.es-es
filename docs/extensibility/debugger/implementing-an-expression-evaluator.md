@@ -8,17 +8,17 @@ helpviewer_keywords:
 - expression evaluators
 - debugging [Debugging SDK], expression evaluators
 ms.assetid: e9ada7be-845e-4baa-bf8f-e4890e7ba490
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 121bd17e2343cfbba509e85d78ba37b57964f895
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7caee7b58f77f1b4e3f120f27ae076b438bedc63
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99947676"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105059878"
 ---
 # <a name="implement-an-expression-evaluator"></a>Implementar un evaluador de expresiones
 > [!IMPORTANT]
@@ -63,5 +63,5 @@ ms.locfileid: "99947676"
 ## <a name="in-this-section"></a>En esta sección
  [Estrategia de implementación del evaluador de expresiones](../../extensibility/debugger/expression-evaluator-implementation-strategy.md) Define un proceso de tres pasos para la estrategia de implementación del evaluador de expresiones (EE).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Escribir un evaluador de expresiones CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

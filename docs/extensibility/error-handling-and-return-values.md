@@ -9,17 +9,17 @@ helpviewer_keywords:
 - error handling
 - return values
 ms.assetid: b2d9079d-39a6-438a-8010-290056694b5c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 530430852d621ea4aaf62bf2c86365609f26cf8b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ac9c027623b34afa532f62b4b4c9443f219343e9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883381"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105075268"
 ---
 # <a name="error-handling-and-return-values"></a>Control de errores y valores devueltos
 Los VSPackages y COM usan la misma arquitectura para los errores. Las `SetErrorInfo` `GetErrorInfo` funciones y forman parte de la interfaz de programación de aplicaciones (API) de Win32. Cualquier VSPackage en el entorno de desarrollo integrado (IDE) puede llamar a estas API de Win32 globales para registrar información de error enriquecida cuando se recibe una notificación de error. [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]Proporciona ensamblados de interoperabilidad para administrar la información de error.
@@ -55,7 +55,7 @@ Los VSPackages y COM usan la misma arquitectura para los errores. Las `SetErrorI
 
 - Todas las funciones que devuelven un error originado por otra llamada deben pasar la información recibida de la llamada con error en el `HRESULT` sin modificar el `ErrorInfo` objeto.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - [SetErrorInfo (automatización de componentes)](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-seterrorinfo)
 - [GetErrorInfo](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-geterrorinfo)

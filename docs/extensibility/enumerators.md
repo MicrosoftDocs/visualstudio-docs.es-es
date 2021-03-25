@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, enumerators
 ms.assetid: a60030c5-e1d1-47e1-84bb-cbfe838ab479
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28de569ea19feff0a81a81d072575dfb89610e98
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0bdc42901cbdad3b30bb6739ec93b8979b0d56ad
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880754"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105075281"
 ---
 # <a name="enumerators"></a>Enumerators
 En esta sección se enumeran los tipos de datos de enumerador de la API del complemento de control de código fuente que debe conocer el complemento de control de código fuente.

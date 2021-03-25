@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], control of execution
 ms.assetid: 97071846-007e-450f-95a6-f072d0f5e61e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b00e0529c1d2ac7224881067628618251ba03898
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 55edea88c5983920b382672d160498b9901ba5ca
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930517"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068029"
 ---
 # <a name="control-of-execution"></a>Control de la ejecución
 El motor DE depuración (DE) envía normalmente uno de los siguientes eventos como el último evento de Inicio:
@@ -41,11 +41,11 @@ El motor DE depuración (DE) envía normalmente uno de los siguientes eventos co
 
 5. Si el usuario elige depurar paso a paso por instrucciones, sobre o fuera de una función, el IDE solicitará a la sesión de depuración que llame al método del programa `Step` . A continuación, el IDE pasa la unidad de paso (instrucción, instrucción o línea) y el tipo de paso (si se va a depurar paso a paso por, sobre o fuera de la función). Una vez completado el paso, el DE envía un evento Step complete a la sesión de depuración, que es un evento DE detención.
 
-    o bien
+    O bien
 
     Si el usuario decide continuar la ejecución desde el puntero de instrucción actual, el IDE solicitará a la sesión de depuración que llame al método **Execute** del programa. El programa reanuda la ejecución hasta que encuentra la siguiente condición de detención.
 
-    o bien
+    O bien
 
     Si la sesión de depuración es omitir un evento de detención determinado, la sesión de depuración llama al método **continue** del programa. Si el programa se detuvo paso a paso, sobre o fuera de una función cuando se produjo la condición de detención, continúa con el paso.
 
@@ -61,5 +61,5 @@ El motor DE depuración (DE) envía normalmente uno de los siguientes eventos co
 
    Las llamadas que el SDM realiza a `Step` , **ejecutan** y **continúan** son asincrónicas, lo que significa que el SDM espera que la llamada se devuelva rápidamente. Si el DE envía a un evento de detención de SDM en el mismo subproceso antes `Step` de, **Execute** o **continue** devuelve, el SDM deja de responder.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Tareas de depuración](../../extensibility/debugger/debugging-tasks.md)

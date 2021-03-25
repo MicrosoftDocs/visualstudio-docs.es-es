@@ -6,22 +6,22 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugBeforeSymbolSearchEvent2 interface
 ms.assetid: 679fd7b1-765a-41a8-a046-63240c09a499
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fdf292a309e514f5b437b129bbfc6ee125df8269
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: e3e7c0428a96b8841a598e7b91986aa1555ea5c2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102167742"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105067483"
 ---
 # <a name="idebugbeforesymbolsearchevent2"></a>IDebugBeforeSymbolSearchEvent2
 El motor DE depuración (DE) envía esta interfaz al administrador de depuración de la sesión (SDM) para establecer el mensaje de la barra de estado durante las cargas de símbolos.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ```
 IDebugBeforeSymbolSearchEvent2 : IUnknown

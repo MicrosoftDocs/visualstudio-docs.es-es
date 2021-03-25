@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74e31cb8fddb00e8a6771a6ad3065bce57cc8bc8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bc762912abdc58b33e49406dd46cadd152f732b6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902247"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089373"
 ---
 # <a name="create-a-software-development-kit"></a>Crear un kit de desarrollo de software
 
@@ -37,7 +37,7 @@ Los SDK de la plataforma son necesarios para desarrollar aplicaciones para una p
 
 Todos los SDK de la plataforma se instalarán en *HKLM\Software\Microsoft\Microsoft SDK \\ [TPI] \V [TPV] \\ @InstallationFolder = [raíz del SDK]*. En consecuencia, el [!INCLUDE[win81](../debugger/includes/win81_md.md)] SDK se instala en *HKLM\Software\Microsoft\Microsoft SDKs\Windows\v8.1*.
 
-### <a name="layout"></a>Diseño
+### <a name="layout"></a>Layout
 
 Los SDK de la plataforma tienen el siguiente diseño:
 
@@ -269,7 +269,7 @@ El elemento **ToolBoxItems** del esquema *SDKManifest.xml* especifica la categor
     </File>
     ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Tutorial: crear un SDK con C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)
 - [Tutorial: crear un SDK mediante C# o Visual Basic](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)

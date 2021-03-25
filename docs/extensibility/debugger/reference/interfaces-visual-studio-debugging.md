@@ -7,23 +7,23 @@ ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], interfaces
 ms.assetid: 79875cbb-f946-49d4-94eb-941d0e1a40b2
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b7fad96ddd62767b67b65b83121498079a81b07
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 185781d17e1b80aab5267902031bf3d1ede1231c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852848"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082613"
 ---
 # <a name="interfaces-visual-studio-debugging"></a>Interfaces (depuración de Visual Studio)
 Los métodos se muestran en orden alfabético en cada interfaz de la tabla de contenido y en la página de la interfaz en orden vtable.
 
 ## <a name="in-this-section"></a>En esta sección
-- [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
+- [Interfaces principales](../../../extensibility/debugger/reference/core-interfaces.md)
 
  Describe las interfaces utilizadas en el motor de depuración.
 
@@ -40,5 +40,5 @@ Los métodos se muestran en orden alfabético en cada interfaz de la tabla de co
 
  Contiene documentación sobre las interfaces, los enumeradores y las estructuras del [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] SDK de depuración.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Referencia de API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

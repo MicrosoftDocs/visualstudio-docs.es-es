@@ -9,17 +9,17 @@ helpviewer_keywords:
 - menus, creating MRU list
 - most recently used
 ms.assetid: 27d4bbcf-99b1-498f-8b66-40002e3db0f8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdff50655f846ced91e59a93a2d264bb06641ed1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bb238afb0f583f1b913fbd87f4f50e43679ebd7d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951555"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060021"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>Agregar una lista de usados más recientemente a un submenú
 Este tutorial se basa en las demostraciones de [Agregar un submenú a un menú](../extensibility/adding-a-submenu-to-a-menu.md)y muestra cómo agregar una lista dinámica a un submenú. La lista dinámica constituye la base para crear una lista de elementos usados más recientemente (MRU).
@@ -83,14 +83,14 @@ Para seguir este tutorial, debe instalar SDK de Visual Studio. Para obtener más
 
 ## <a name="filling-the-mru-list"></a>Rellenar la lista MRU
 
-1. En *TestCommandPackageGuids.CS*, agregue las siguientes líneas después de los identificadores de comando existentes en la `TestCommandPackageGuids` definición de clase.
+1. En *TestCommandPackageGuids. CS*, agregue las siguientes líneas después de los identificadores de comando existentes en la `TestCommandPackageGuids` definición de clase.
 
     ```csharp
     public const string guidTestCommandPackageCmdSet = "00000000-0000-0000-0000-00000000"; // get the GUID from the .vsct file
     public const uint cmdidMRUList = 0x200;
     ```
 
-2. En *TestCommand.CS* , agregue la siguiente instrucción using.
+2. En *prueba. CS* , agregue la siguiente instrucción using.
 
     ```csharp
     using System.Collections;
@@ -201,5 +201,5 @@ Para seguir este tutorial, debe instalar SDK de Visual Studio. Para obtener más
 
 4. Vuelva a abrir el submenú. Observe que el **elemento 3** está ahora en la parte superior de la lista y que los demás elementos se han insertado una posición hacia abajo. Vuelva a hacer clic en el **elemento 3** y observe que el cuadro de mensaje todavía muestra el **elemento seleccionado 3**, lo que indica que el texto se ha pasado correctamente a la nueva posición junto con la etiqueta del comando.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Agregar elementos de menú de forma dinámica](../extensibility/dynamically-adding-menu-items.md)

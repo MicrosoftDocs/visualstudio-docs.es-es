@@ -5,18 +5,18 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: d67e0c53-9f5a-45fb-a929-b9d2125c3c82
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 65415c22da2815650278ac1190e7d19f54b96063
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f76451ca2a650283125cc7659d0053ef984115fc
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853090"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089386"
 ---
 # <a name="creating-a-custom-start-page"></a>Crear una página de inicio personalizada
 
@@ -87,7 +87,7 @@ No establezca la instancia principal de Visual Studio para ejecutar la página d
 
 - Después de probar la página de inicio y de que se encuentre estable, use la opción **personalizar la página de inicio** del cuadro de diálogo **Opciones** para seleccionarla como página de inicio en la instancia principal de Visual Studio.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Tutorial: agregar XAML personalizado a la página de inicio](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
 - [Agregar control de usuario a la página de inicio](../extensibility/adding-user-control-to-the-start-page.md)

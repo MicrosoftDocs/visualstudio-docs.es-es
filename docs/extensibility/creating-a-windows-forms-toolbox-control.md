@@ -8,17 +8,17 @@ helpviewer_keywords:
 - toolbox
 - windows forms
 ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4bb9505ab475da7919a39eb03e7c84b92857db4e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 42dcf30e7c31880357bb95e3858a2c70aa59f174
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902186"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089334"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Crear un control de cuadro de herramientas de Windows Forms
 
@@ -46,7 +46,7 @@ El `Counter` control requiere dos controles secundarios: un <xref:System.Windows
 
 #### <a name="to-build-the-user-interface"></a>Para crear la interfaz de usuario
 
-1. En **Explorador de soluciones**, haga doble clic en *Counter.CS* para abrirlo en el diseñador.
+1. En **Explorador de soluciones**, haga doble clic en *Counter. CS* para abrirlo en el diseñador.
 
 2. Quite el **clic aquí.** que se incluye de forma predeterminada al agregar la plantilla de elemento de control de cuadro de herramientas Windows Forms.
 
@@ -163,7 +163,7 @@ El `Counter` control expondrá un método para incrementar el contador, un event
 
 2. En la instancia experimental de Visual Studio, cree un proyecto de **aplicación de Windows Forms** .
 
-3. En **Explorador de soluciones**, haga doble clic en *Form1.CS* para abrirlo en el diseñador si aún no está abierto.
+3. En **Explorador de soluciones**, haga doble clic en *Form1. CS* para abrirlo en el diseñador si aún no está abierto.
 
 4. En el **cuadro de herramientas**, el `Counter` control debe mostrarse en la sección **General** .
 
@@ -173,7 +173,7 @@ El `Counter` control expondrá un método para incrementar el contador, un event
 
 7. Arrastre un <xref:System.Windows.Forms.Button> control al formulario y, a continuación, establezca las propiedades de nombre y texto del botón en `Test` .
 
-8. Haga doble clic en el botón para abrir *Form1.CS* en la vista de código y crear un controlador de clic.
+8. Haga doble clic en el botón para abrir *Form1. CS* en la vista de código y crear un controlador de clic.
 
 9. En el controlador de clics, llame a `counter1.Increment()` .
 
@@ -216,7 +216,7 @@ El `Counter` control expondrá un método para incrementar el contador, un event
 
 Al compilar un control de **cuadro de herramientas** , Visual Studio crea un archivo denominado *projectname. vsix* en la carpeta \bin\debug\ del proyecto. Puede implementar el control cargando el archivo *. vsix* en una red o en un sitio Web. Cuando un usuario abre el archivo *. vsix* , el control se instala y se agrega al cuadro de **herramientas** de Visual Studio en el equipo del usuario. Como alternativa, puede cargar el archivo *. vsix* en [Visual Studio Marketplace](https://marketplace.visualstudio.com/) para que los usuarios puedan encontrarlo examinando el cuadro de diálogo **herramientas**  >  **extensiones y actualizaciones** .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Extender otras partes de Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)
 - [Crear un control de cuadro de herramientas de WPF](../extensibility/creating-a-wpf-toolbox-control.md)

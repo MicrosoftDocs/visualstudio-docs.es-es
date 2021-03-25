@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugFrameInfo2::GetCount
 ms.assetid: d02a08e3-f34f-461e-8195-5157e154c481
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7d6d0e7172f75a822d8a626aaa0445164b73a573
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 81bd7a658f566c75655b131baacd04c6b117fa8e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102226519"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105075502"
 ---
 # <a name="ienumdebugframeinfo2getcount"></a>IEnumDebugFrameInfo2::GetCount
 Devuelve el número de elementos de la enumeración.

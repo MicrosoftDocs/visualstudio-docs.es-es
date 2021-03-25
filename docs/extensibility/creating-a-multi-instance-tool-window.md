@@ -8,17 +8,17 @@ helpviewer_keywords:
 - multi
 - tool windows
 ms.assetid: 4a7872f1-acc9-4f43-8932-5a526b36adea
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1d332e3c41a55de8f405f028070fa95f97f6717
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ce6122cbf4d6f85ab50e067fbbd643053ac4e4dd
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923270"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089360"
 ---
 # <a name="create-a-multi-instance-tool-window"></a>Crear una ventana de herramientas de varias instancias
 Puede programar una ventana de herramientas para que se puedan abrir varias instancias de ella simultáneamente. De forma predeterminada, las ventanas de herramientas solo pueden tener una instancia abierta.
@@ -34,7 +34,7 @@ Cuando se usa una ventana de herramientas de varias instancias, se pueden mostra
 
 ## <a name="make-a-tool-window-multi-instance"></a>Crear una ventana de herramientas de varias instancias
 
-1. Abra el archivo *MIToolWindowPackage.CS* y busque el `ProvideToolWindow` atributo. y el `MultiInstances=true` parámetro, como se muestra en el ejemplo siguiente:
+1. Abra el archivo *MIToolWindowPackage. CS* y busque el `ProvideToolWindow` atributo. y el `MultiInstances=true` parámetro, como se muestra en el ejemplo siguiente:
 
     ```csharp
     [PackageRegistration(UseManagedResourcesOnly = true)]
@@ -46,7 +46,7 @@ Cuando se usa una ventana de herramientas de varias instancias, se pueden mostra
     {. . .}
     ```
 
-2. En el archivo *MIToolWindowCommand.CS* , busque el `ShowToolWindos()` método. En este método, llame al <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> método y establezca su `create` marca en para `false` que recorra en iteración las instancias existentes de la ventana de herramientas hasta que encuentre un disponible `id` .
+2. En el archivo *MIToolWindowCommand. CS* , busque el `ShowToolWindos()` método. En este método, llame al <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> método y establezca su `create` marca en para `false` que recorra en iteración las instancias existentes de la ventana de herramientas hasta que encuentre un disponible `id` .
 
 3. Para crear una instancia de la ventana de herramientas, llame al <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> método y establezca su `id` en un valor disponible y su `create` marca en `true` .
 

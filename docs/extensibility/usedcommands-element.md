@@ -10,17 +10,17 @@ helpviewer_keywords:
 - UsedCommands element (VSCT XML schema)
 - VSCT XML schema elements, UsedCommands
 ms.assetid: 5e000ee0-a919-46e9-9277-2a0659f1eb78
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89ecd1d0f7697a38ef7318ddf93a91a4397b5d72
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b05c9571c0ca8252789f0e07ebfce66926fb19ff
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934069"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060216"
 ---
 # <a name="usedcommands-element"></a>UsedCommands (Elemento)
 El elemento UsedCommands agrupa los elementos UsedCommand y otras agrupaciones UsedCommands.
@@ -66,6 +66,6 @@ El elemento UsedCommands agrupa los elementos UsedCommand y otras agrupaciones U
 </UsedCommands>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [UsedCommand (Elemento)](../extensibility/usedcommand-element.md)
 - [Archivos de tabla de comandos de Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

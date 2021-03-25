@@ -8,17 +8,17 @@ helpviewer_keywords:
 - debug engines, debugging
 - debugging [Debugging SDK], custom debug engines
 ms.assetid: df27a8d6-3938-45ff-b47f-b684e80b38a0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46e9b18f7bb34433ff86fe6a5bede436228d3ff1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ffd21fb08e920209d47ff66feb436f8a83aab53e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99947702"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105059930"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>Cómo: depurar un motor de depuración personalizado
 Un tipo de proyecto inicia el motor de depuración (DE) desde el <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> método. Esto significa que el DE se inicia bajo el control de la instancia de que [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] controla el tipo de proyecto. Sin embargo, esa instancia de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] no puede depurar de. A continuación se indican los pasos que le permiten depurar su personalizado DE.
@@ -75,5 +75,5 @@ Un tipo de proyecto inicia el motor de depuración (DE) desde el <xref:Microsoft
 
 9. Si decide depurar el proceso de inicio de, puede realizar los pasos descritos en el procedimiento "depurar un motor de depuración personalizado" para adjuntar a su desde después DE iniciarlo. Esto le proporciona tres instancias de en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ejecución: una para el origen de tipo de proyecto, una segunda para el tipo de proyecto con instancias y una tercera asociada a su de.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Crear un motor de depuración personalizado](../../extensibility/debugger/creating-a-custom-debug-engine.md)

@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IPropertyProxyEESide::GetInitialData
 ms.assetid: 36cceb19-2604-4ef9-b42b-5dd30cbe24b1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 433354dc4dd5c62ffb544e2e05a1ceae76d0335e
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 96129d254ad153b6a0ad754931cd18abba803849
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102225726"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082535"
 ---
 # <a name="ipropertyproxyeesidegetinitialdata"></a>IPropertyProxyEESide::GetInitialData
 Devuelve los datos iniciales de este objeto.

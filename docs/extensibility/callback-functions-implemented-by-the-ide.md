@@ -8,17 +8,17 @@ helpviewer_keywords:
 - source control plug-ins, callback functions
 - callback functions, source control plug-ins
 ms.assetid: 4a8833f0-6ac0-4ea7-9400-8275aa991468
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42d7c02f2beb24aa92c0a3319c44cce3c8b325b6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7e2e361551fbe03b7f0ef41b19c5d4136aa50472
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911261"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068107"
 ---
 # <a name="callback-functions-implemented-by-the-ide"></a>Funciones de devolución de llamada implementadas por el IDE
 Para que la integración con el entorno de desarrollo integrado (IDE) sea lo más fluida posible y proporcionar una experiencia de usuario final unificada, el complemento de control de código fuente puede usar funciones de devolución de llamada implementadas por el IDE. El complemento puede llamar a estas funciones en los momentos adecuados durante una operación de control de código fuente para pasar información al IDE; después, el IDE puede mostrar esta información como elementos incrustados en su interfaz de usuario nativa. El usuario tiene una experiencia menos fragmentada en este escenario que si el complemento empleó su propia interfaz de usuario.

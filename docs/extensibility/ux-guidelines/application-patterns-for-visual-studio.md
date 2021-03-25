@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d647a1dbd3bc6bf99f9803870c7b58ead358b41
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7b19d60294431a08fa26f11bf58606893f392cd1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99892598"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060242"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Patrones de aplicaciones para Visual Studio
 ## <a name="window-interactions"></a><a name="BKMK_WindowInteractions"></a> Interacciones de ventanas
@@ -104,7 +104,7 @@ Ejemplos de ventanas de herramientas de lista navegables son los Explorador de s
 | Explorador de soluciones | Árbol jerárquico que muestra una lista de los documentos contenidos en proyectos, archivos varios y elementos de la solución. La presentación de los elementos dentro de los proyectos se define mediante el paquete que posee el tipo de proyecto (por ejemplo, tipos basados en referencia, basados en directorios o en modo mixto). |
 | Vista de clases | Árbol jerárquico de las clases y varios elementos del espacio de trabajo de documentos, independientemente de los propios archivos. |
 | Explorador de servidores | Árbol jerárquico que muestra todos los servidores y las conexiones de datos de la solución. |
-| Esquema del documento | Estructura jerárquica del documento activo. |
+| Esquema de documento | Estructura jerárquica del documento activo. |
 
 **Ventanas de herramientas de cuadrícula**
 
@@ -153,7 +153,7 @@ Ejemplos de ventanas de herramientas de lista navegables son los Explorador de s
 | --- | --- |
 | Autos ||
 | Inmediata ||
-| Resultados | La ventana de salida se puede usar siempre que se tenga el estado o los eventos de texto que se van a declarar. |
+| Output | La ventana de salida se puede usar siempre que se tenga el estado o los eventos de texto que se van a declarar. |
 | Memoria ||
 | Puntos de interrupción ||
 | En ejecución ||
@@ -509,7 +509,7 @@ No se admite arrastrar elementos de proyecto entre instancias de Visual Studio (
 
 El usuario siempre debe ser capaz de determinar el efecto de una operación de arrastrar y colocar seleccionando un elemento, arrastrándolo a la ubicación de destino y observando cuál de los siguientes punteros del mouse aparece antes de que se quite el elemento:
 
-| Puntero | Comando | Descripción |
+| Puntero del mouse | Get-Help | Descripción |
 | :---: | --- | --- |
 | ![Icono de mouse "No colocar"](../../extensibility/ux-guidelines/media/0706-01_mousenodrop.png "0706-01_MouseNoDrop") | No eliminar | No se puede quitar el elemento de la ubicación especificada. |
 | ![Icono de mouse "Copiar"](../../extensibility/ux-guidelines/media/0706-02_mousecopy.png "0706-02_MouseCopy") | Copiar | El elemento se copiará en la ubicación de destino. |
@@ -521,7 +521,7 @@ El usuario siempre debe ser capaz de determinar el efecto de una operación de a
 
 | Modificador | Category | Elemento de origen: referencia/vínculo | Elemento de origen: elemento físico o sistema de archivos ( `CF_HDROP` ) |
 | --- | --- | --- | --- |
-| Sin modificador | Acción | Move | Link |
+| Sin modificador | Acción | Move | Vínculo |
 | Sin modificador | Destino | Agrega una referencia al elemento original | Agrega una referencia al elemento original |
 | Sin modificador | Source | Elimina la referencia al elemento original | Conserva el elemento original |
 | Sin modificador | Resultado | `DROPEFFECT_MOVE` se devuelve como acción de `::Drop` y el elemento permanece en la ubicación original en el almacenamiento. | `DROPEFFECT_LINK` se devuelve como acción de `::Drop` y el elemento permanece en la ubicación original en el almacenamiento. |
@@ -533,16 +533,16 @@ El usuario siempre debe ser capaz de determinar el efecto de una operación de a
 | Ctrl + arrastrar | Destino | Agrega una referencia al elemento original | No eliminar |
 | Ctrl + arrastrar | Source | Conserva la referencia al elemento original | No eliminar |
 | Ctrl + arrastrar | Resultado | `DROPEFFECT_COPY` se devuelve como acción de `::Drop` y el elemento permanece en la ubicación original en el almacenamiento. | No eliminar |
-| Ctrl + Mayús + arrastrar | Acción | Link | Link |
+| Ctrl + Mayús + arrastrar | Acción | Vínculo | Vínculo |
 | Ctrl + Mayús + arrastrar | Destino | Agrega una referencia al elemento original | Agrega una referencia al elemento original |
 | Ctrl + Mayús + arrastrar | Source | Conserva la referencia al elemento original | Conserva el elemento original |
 | Ctrl + Mayús + arrastrar | Resultado | `DROPEFFECT_LINK` se devuelve como acción de `::Drop` y el elemento permanece en la ubicación original en el almacenamiento. | `DROPEFFECT_LINK` se devuelve como acción de `::Drop` y el elemento permanece en la ubicación original en el almacenamiento. |
-| Ctrl + Mayús + arrastrar | Nota: | Igual que el comportamiento de arrastrar y colocar para los accesos directos en el explorador de Windows. ||
-| Cortar y pegar | Acción | Move | Link |
+| Ctrl + Mayús + arrastrar | Nota | Igual que el comportamiento de arrastrar y colocar para los accesos directos en el explorador de Windows. ||
+| Cortar y pegar | Acción | Move | Vínculo |
 | Cortar y pegar | Destino | Agrega una referencia al elemento original | Agrega una referencia al elemento original |
 | Cortar y pegar | Source | Conserva la referencia al elemento original|Conserva el elemento original |
 | Cortar y pegar | Resultado | El elemento permanece en la ubicación original en el almacenamiento | El elemento permanece en la ubicación original en el almacenamiento |
-| Copiar y pegar | Acción | Copiar | Link |
+| Copiar y pegar | Acción | Copiar | Vínculo |
 | Copiar y pegar | Source | Agrega una referencia al elemento original | Agrega una referencia al elemento original |
 | Copiar y pegar | Resultado | Conserva la referencia al elemento original | Conserva el elemento original |
 | Copiar y pegar | Acción | El elemento permanece en la ubicación original en el almacenamiento | El elemento permanece en la ubicación original en el almacenamiento |
@@ -590,7 +590,7 @@ En la tabla siguiente se resumen las operaciones de arrastrar y colocar (así co
 | Ctrl + arrastrar | Destino | Agrega una referencia al elemento original | Copia el elemento en la ubicación de destino |
 | Ctrl + arrastrar | Source | Conserva la referencia al elemento original | Conserva el elemento original |
 | Ctrl + arrastrar | Resultado | `DROPEFFECT_ COPY` se devuelve como acción de `::Drop` y el elemento permanece en la ubicación original en el almacenamiento. | `DROPEFFECT_ COPY` se devuelve como acción de `::Drop` y el elemento permanece en la ubicación original en el almacenamiento. |
-| Ctrl + Mayús + arrastrar | Acción | Link | Link |
+| Ctrl + Mayús + arrastrar | Acción | Vínculo | Vínculo |
 | Ctrl + Mayús + arrastrar | Destino | Agrega una referencia al elemento original | Agrega una referencia al elemento de origen original. |
 | Ctrl + Mayús + arrastrar | Source | Conserva la referencia al elemento original | Conserva el elemento original |
 | Ctrl + Mayús + arrastrar | Resultado | `DROPEFFECT_ LINK` se devuelve como acción de `::Drop` y el elemento permanece en la ubicación original en el almacenamiento. | `DROPEFFECT_ LINK` se devuelve como acción de `::Drop` y el elemento permanece en la ubicación original en el almacenamiento. |

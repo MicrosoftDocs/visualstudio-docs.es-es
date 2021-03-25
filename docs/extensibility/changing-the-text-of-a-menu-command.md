@@ -9,17 +9,17 @@ helpviewer_keywords:
 - text, menus
 - commands, changing text
 ms.assetid: 5cb676a0-c6e2-47e5-bd2b-133dc8842e46
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2d812dbee833358f682b5227785c78322efe44a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 47389352e0491c20b7eb6409c36091179bf967d1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911246"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068068"
 ---
 # <a name="change-the-text-of-a-menu-command"></a>Cambiar el texto de un comando de menú
 En los pasos siguientes se muestra cómo cambiar la etiqueta de texto de un comando de menú mediante el <xref:System.ComponentModel.Design.IMenuCommandService> servicio.
@@ -41,7 +41,7 @@ En los pasos siguientes se muestra cómo cambiar la etiqueta de texto de un coma
     </Button>
     ```
 
-3. En el archivo *ChangeMenuText.CS* , cree un controlador de eventos al que se llamará antes de que se muestre el comando de menú.
+3. En el archivo *ChangeMenuText. CS* , cree un controlador de eventos al que se llamará antes de que se muestre el comando de menú.
 
     ```csharp
     private void OnBeforeQueryStatus(object sender, EventArgs e)

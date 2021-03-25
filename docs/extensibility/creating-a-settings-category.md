@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - profile settings, creating categories
 ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf089eeaf8c4408a0bc76d2f3982d311ac9c5979
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1e3ef6dbfc58c67ce8e4dd7ff26634e4dbce2218
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896265"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089347"
 ---
 # <a name="create-a-settings-category"></a>Crear una categoría de configuración
 
@@ -50,7 +50,7 @@ Para iniciar este tutorial, primero debe completar la primera sección de la [P�
     > [!NOTE]
     > De estos tres, solo el nombre de categoría no aparece en el Asistente para **importar y exportar configuraciones** .
 
-3. En *MyToolsOptionsPackage.CS*, agregue una `float` propiedad denominada `OptionFloat` a la `OptionPageGrid` clase, tal y como se muestra en el ejemplo siguiente.
+3. En *MyToolsOptionsPackage. CS*, agregue una `float` propiedad denominada `OptionFloat` a la `OptionPageGrid` clase, tal y como se muestra en el ejemplo siguiente.
 
     ```csharp
     public class OptionPageGrid : DialogPage
@@ -149,7 +149,7 @@ Para iniciar este tutorial, primero debe completar la primera sección de la [P�
 
      Aparece la página **Elija una colección de configuraciones para importar** .
 
-15. Seleccione el archivo *Configurations. vssettings* en el nodo **mi configuración** de la vista de árbol. Si el archivo no aparece en la vista de árbol, haga clic en **examinar** y búsquelo. Haga clic en **Siguiente**.
+15. Seleccione el archivo *Configurations. vssettings* en el nodo **mi configuración** de la vista de árbol. Si el archivo no aparece en la vista de árbol, haga clic en **examinar** y búsquelo. Haga clic en **Next**.
 
      Aparece el cuadro de diálogo **elegir la configuración que se va a importar** .
 
