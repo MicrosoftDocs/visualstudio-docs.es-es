@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - ports, notification
 ms.assetid: f9fce48e-7d4e-4627-a0fb-77b75428146a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1fdf09859c8b943eb71a403f49b29dc8b315503
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7793dddb1a6bdd448b2b5a912f59b625bdca733e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884915"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105054756"
 ---
 # <a name="notify-the-port"></a>Notificar el puerto
 Después de iniciar un programa, el puerto debe recibir una notificación, como se indica a continuación:
@@ -46,7 +46,7 @@ Después de iniciar un programa, el puerto debe recibir una notificación, como 
 
  Una vez que se conoce la identidad de de, el SDM está listo para adjuntarlo al programa.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Iniciar un programa](../../extensibility/debugger/launching-a-program.md)
 - [Adjuntar después de un inicio](../../extensibility/debugger/attaching-after-a-launch.md)
 - [Tareas de depuración](../../extensibility/debugger/debugging-tasks.md)

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - ports, getting
 - debugging [Debugging SDK], ports
 ms.assetid: 745c2337-cfff-4d02-b49c-3ca7c4945c5e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f3ee9c145a4c6275f64d357d87ac1cc284bfac6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7b2d9c58f9a2e58e58fce44cb06827e9039e48c9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921290"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105054873"
 ---
 # <a name="get-a-port"></a>Obtener un puerto
 Un puerto representa una conexión a un equipo en el que se ejecutan los procesos. Ese equipo podría ser el equipo local o un equipo remoto (que podría estar ejecutando un sistema operativo no basado en Windows; consulte [puertos](../../extensibility/debugger/ports.md) para obtener más información).
@@ -98,7 +98,7 @@ HRESULT CDebugEngine::ResumeProcess(IDebugProcess2 *pDebugProcess)
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Registrar el programa](../../extensibility/debugger/registering-the-program.md)
 - [Habilitar la depuración de un programa](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
 - [Proveedores de puertos](../../extensibility/debugger/port-suppliers.md)

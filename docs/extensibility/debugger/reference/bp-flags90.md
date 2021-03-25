@@ -6,25 +6,25 @@ ms.topic: reference
 helpviewer_keywords:
 - BP_FLAGS90 enumeration
 ms.assetid: 3e5a06c5-fb30-4b8a-b2d5-4a0570fc80bd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2203a6fa2a5f84f422eafd28706c54065f752e2e
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 9267e45c5aa8254323fee461899ad99caf14f868
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102165623"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085252"
 ---
 # <a name="bp_flags90"></a>BP_FLAGS90
 Enumera los valores válidos para las marcas opcionales. Las marcas opcionales se pueden usar para especificar información adicional al establecer un punto de interrupción. Esta enumeración extiende la enumeración de [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) .
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ```cpp
 enum enum_BP_FLAGS90

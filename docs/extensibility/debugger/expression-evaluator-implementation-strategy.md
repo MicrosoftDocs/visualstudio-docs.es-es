@@ -8,17 +8,17 @@ helpviewer_keywords:
 - expression evaluation, implementation strategy
 - debug engines, implementation strategies
 ms.assetid: 1bccaeb3-8109-4128-ae79-16fd8fbbaaa2
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7527c361a889d5aa1f19ec7a211f8aeb8dcbd15
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d10ce818e9df370b4484a0250525dbe9482b8b2c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921388"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105054990"
 ---
 # <a name="expression-evaluator-implementation-strategy"></a>Estrategia de implementación del evaluador de expresiones
 > [!IMPORTANT]
@@ -31,6 +31,6 @@ ms.locfileid: "99921388"
 
  El método [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) debe implementarse a continuación. El motor de depuración (DE) llama a este método para obtener una lista de variables locales y argumentos pasando `IDebugProperty2::EnumChildren` un `guidFilter` argumento de `guidFilterLocalsPlusArgs` . `IDebugProperty2::EnumChildren` llama a [EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md) y [EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md), combinando los resultados en una sola enumeración. Consulte [Mostrar variables locales](../../extensibility/debugger/displaying-locals.md) para obtener más detalles.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Implementar un evaluador de expresiones](../../extensibility/debugger/implementing-an-expression-evaluator.md)
 - [Mostrar variables locales](../../extensibility/debugger/displaying-locals.md)
