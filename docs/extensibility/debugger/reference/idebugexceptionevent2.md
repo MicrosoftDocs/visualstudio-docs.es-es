@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExceptionEvent2 interface
 ms.assetid: 53d32e59-a84b-4710-833e-c5ab08100516
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e171154d933ac533f6a63469321b5a0d22e8651b
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 58a6b0beab4312b0622501e72a5d2c87ef84ccff
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102152773"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105087878"
 ---
 # <a name="idebugexceptionevent2"></a>IDebugExceptionEvent2
 El motor DE depuración (DE) envía esta interfaz al administrador de depuración de la sesión (SDM) cuando se produce una excepción en el programa que se está ejecutando actualmente.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ```
 IDebugExceptionEvent2 : IUnknown
@@ -56,7 +56,7 @@ IDebugExceptionEvent2 : IUnknown
  Antes DE enviar el evento, el método DE realiza una comprobación para ver si este evento de excepción se ha designado como una excepción de primera o segunda oportunidad mediante una llamada anterior a [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md). Si se ha designado como una excepción de primera oportunidad, el `IDebugExceptionEvent2` evento se envía al SDM. DE lo contrario, el DE proporciona a la aplicación una oportunidad para controlar la excepción. Si no se proporciona ningún controlador de excepciones y la excepción se ha designado como una excepción de segunda oportunidad, el `IDebugExceptionEvent2` evento se envía al SDM. De lo contrario, el DE reanuda la ejecución del programa y el sistema operativo o el tiempo DE ejecución controla la excepción.
 
 ## <a name="see-also"></a>Consulte también
-- [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
+- [Interfaces principales](../../../extensibility/debugger/reference/core-interfaces.md)
 - [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - property pages
 - property pages, changing configuration options
 ms.assetid: b9b3e6e8-1e30-4c89-9862-330265dcf38c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd7d1ce463377daa2800d5c3e635adc71935d9d0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f3e36960b35119434e56f075f622ae2513454dd6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883173"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061022"
 ---
 # <a name="property-pages"></a>Páginas de propiedades
 Los usuarios pueden ver y cambiar las propiedades dependientes e independientes de la configuración del proyecto mediante páginas de propiedades. Un botón **páginas de propiedades** está habilitado en la ventana **propiedades** o en explorador de soluciones barra de herramientas para los objetos que proporcionan una vista de página de propiedades del objeto seleccionado. El entorno crea las páginas de propiedades y están disponibles para las soluciones y los proyectos. Sin embargo, también pueden estar disponibles para los elementos de proyecto que hacen uso de las propiedades dependientes de la configuración. Esta capacidad se puede usar cuando los archivos de un proyecto requieren una configuración de conmutador de compilador diferente para compilar correctamente.
@@ -79,7 +79,7 @@ Los usuarios pueden ver y cambiar las propiedades dependientes e independientes 
 
    Implemente el <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCurrentSelection%2A> método para recuperar la jerarquía del proyecto y el elemento o elementos de proyecto seleccionados. En DTE, usaría los `SelectedItems.SelectedItem.Project` `SelectedItems.SelectedItem.ProjectItem` métodos y. Hay código de ejemplo en los encabezados de los documentos principales [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPropertyPage>
 - [Administración de opciones de configuración](../../extensibility/internals/managing-configuration-options.md)
 - [Objeto de configuración del proyecto](../../extensibility/internals/project-configuration-object.md)

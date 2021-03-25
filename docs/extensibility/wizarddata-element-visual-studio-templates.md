@@ -11,17 +11,17 @@ helpviewer_keywords:
 - WizardData element [Visual Studio Templates]
 - <WizardData> element [Visual Studio Templates]
 ms.assetid: d0403a16-5d07-4fe5-b474-19ae3d9fd3ab
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6839a4ac8e53ec70fc88d23525985e8d1b7cccd7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bd7b85433b4e02491852589d32eea9a4f223da14
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904524"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061893"
 ---
 # <a name="wizarddata-element-visual-studio-templates"></a>WizardData (Elemento, Plantillas de Visual Studio)
 
@@ -65,7 +65,7 @@ El valor de texto es opcional.
 
 Este texto especifica el XML personalizado que se va a pasar a la extensión del Asistente personalizado especificada en el elemento [WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md) .
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 
 Se puede especificar cualquier XML en este elemento. El XML se pasará como un parámetro a la extensión del Asistente personalizado, lo que permite que la extensión use el contenido de este elemento. No se realiza ninguna validación en estos datos.
 
@@ -106,7 +106,7 @@ En el ejemplo siguiente se muestran los metadatos de la plantilla de proyecto es
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Crear plantillas de proyecto y de elemento](../ide/creating-project-and-item-templates.md)

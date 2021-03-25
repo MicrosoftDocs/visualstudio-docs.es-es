@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider interface
 ms.assetid: df5f095f-1dee-46f9-84cf-92417c71d5fb
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e0488520f8bde0ccd2638636810cb0055a7f3f4b
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: bda1ec3c65e2f3fdc811b6bde636e78f5a787f32
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102168431"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105053170"
 ---
 # <a name="idebugsymbolprovider"></a>IDebugSymbolProvider
 Esta interfaz representa un proveedor de símbolos que proporciona símbolos y tipos y los devuelve como campos.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ```
 IDebugSymbolProvider : IUnknown

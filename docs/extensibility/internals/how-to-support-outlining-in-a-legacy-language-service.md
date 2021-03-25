@@ -9,17 +9,17 @@ helpviewer_keywords:
 - language services, supporting Collapse to Definitions command
 - hidden text, Collapse to Definitions command
 ms.assetid: bb6e74c3-93e4-4ef7-afc7-1c9b342f083b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a7d2dc2b12ee20b96cad27cb56bf0e4552e3f7c4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0c275a6a466cc58187293f6ebd84a39fdf8064e6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844598"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078690"
 ---
 # <a name="how-to-support-outlining-in-a-legacy-language-service"></a>Cómo: admitir la esquematización en un servicio de lenguaje heredado
 La esquematización se usa para expandir o contraer diferentes regiones de texto. La forma en que se usa la esquematización se puede definir de forma diferente en distintos lenguajes. Para obtener más información, vea [Esquematización](../../ide/outlining.md).
@@ -47,6 +47,6 @@ La esquematización se usa para expandir o contraer diferentes regiones de texto
 > [!NOTE]
 > Tenga cuidado al ocultar los caracteres de nueva línea. El texto oculto debe extenderse desde el principio de la primera línea hasta el último carácter de la última línea de una sección, quedando visible el carácter de nueva línea final.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Cómo: proporcionar compatibilidad de texto oculto en un servicio de lenguaje heredado](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)
 - [Cómo: proporcionar compatibilidad de esquematización ampliada en un servicio de lenguaje heredado](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)

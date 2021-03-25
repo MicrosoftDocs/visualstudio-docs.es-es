@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - architecture
 ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c0d9d20000781980535259c0a739e03a47ae53e1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0bd45bb0a47de7283d75c083edc46b6fc38fe7d3
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869549"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105079207"
 ---
 # <a name="inside-the-editor"></a>Dentro del editor
 
@@ -320,7 +320,7 @@ IntelliSense admite la finalización de instrucciones, la ayuda para las firmas 
 
 La finalización de instrucciones proporciona listas emergentes de posibles finalizaciones para los nombres de método, los elementos XML y otros elementos de código o de marcado. En general, un gesto de usuario invoca una sesión de finalización. La sesión muestra la lista de posibles finalizaciones y el usuario puede seleccionar una o descartar la lista. El <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker> es responsable de crear y desencadenar el <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSession> . <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>Calcula el de los <xref:Microsoft.VisualStudio.Language.Intellisense.CompletionSet> elementos de finalización de la sesión.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Puntos de extensión de editor y servicio de lenguaje](../extensibility/language-service-and-editor-extension-points.md)
 - [Importaciones del editor](../extensibility/editor-imports.md)

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - language services, supporting outlining
 - outlining, supporting
 ms.assetid: df759e89-8193-418c-8038-6626304d387b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3db7c4f886a071b4b759072a1b141690f4e4b097
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 11d04af2afac04d4ec9ab197c3d3f7b5a15ad28c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890726"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078791"
 ---
 # <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>Cómo: proporcionar compatibilidad de esquematización ampliada en un servicio de lenguaje heredado
 Hay dos opciones para ampliar la compatibilidad con la esquematización del lenguaje más allá del comando **contraer a definiciones** . Puede Agregar regiones de esquema controladas por el editor y agregar regiones de esquema controladas por el cliente.

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - source control [Visual Studio SDK], deleting items
 - source control plug-ins, deleting items
 ms.assetid: 6f2e872c-5ba2-4303-9f50-a90cef9a6225
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd0e7ba0c1841ea054739cbae85b74245807b324
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e405df704dfbba14413bd3787a9fb9f959c62a46
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884486"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078596"
 ---
 # <a name="test-area-6-delete"></a>Área de prueba 6: Eliminar
 Este área de prueba del complemento de control de código fuente cubre las acciones de eliminación.
@@ -27,7 +27,7 @@ Este área de prueba del complemento de control de código fuente cubre las acci
 
  A continuación se muestra una lista de los elementos que se pueden eliminar:
 
-- Files
+- Archivos
 
 - Carpetas
 
@@ -54,5 +54,5 @@ Este área de prueba del complemento de control de código fuente cubre las acci
 |Eliminar un proyecto web del sistema de archivos|1. crear un proyecto Web de sistema de archivos (use el botón Examinar para especificar una ruta de acceso UNC).<br />2. Agregue la solución al control de código fuente.<br />3. Quite todo el proyecto de la solución.<br />4. Repita los pasos 1 a 3 para un proyecto Web local (ejercita diferentes rutas de acceso a través del código, pero tiene la misma interfaz externa y el mismo comportamiento).|Comportamiento esperado común.|
 |Eliminar un archivo de un proyecto web del sistema de archivos|1. cree un proyecto Web de sistema de archivos.<br />2. Agregue la solución al control de código fuente.<br />3. eliminar un archivo del proyecto.<br />4. Repita los pasos 1 a 3 para un proyecto Web local (ejercita diferentes rutas de acceso a través del código, pero tiene la misma interfaz externa y el mismo comportamiento).|Comportamiento esperado común.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Guía de pruebas para los complementos de control de código fuente](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

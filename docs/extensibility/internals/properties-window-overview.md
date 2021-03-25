@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Properties window
 ms.assetid: 289ed4f2-02ac-4899-855e-42dfe57ee05f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a33d393cfd904bdae890f4ead9a4c25a6451460
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c5f378200072df603817a445a9c3406cf62233c8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837299"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061009"
 ---
 # <a name="properties-window-overview"></a>Información general sobre la ventana Propiedades
 La ventana **propiedades** se utiliza para mostrar las propiedades de los objetos seleccionados en los dos tipos principales de ventanas disponibles en el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] entorno de desarrollo integrado (IDE). Estos dos tipos de ventanas son:
@@ -50,6 +50,6 @@ La ventana **propiedades** se utiliza para mostrar las propiedades de los objeto
 
  Para obtener más información sobre `IDispatch` , vea MSDN Library.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Extensión de propiedades](../../extensibility/internals/extending-properties.md)
 - [Interfaces y campos de la ventana Propiedades](../../extensibility/internals/properties-window-fields-and-interfaces.md)

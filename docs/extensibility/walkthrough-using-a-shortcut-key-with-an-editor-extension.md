@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link keystrokes to commands
 ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0f6cb0d3cc0bef03539428bafeff5ae3da64964
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c2d49fa9e858d65529e466f6ed960835ab8c2324
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931271"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061958"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>Tutorial: usar una tecla de método abreviado con una extensión de editor
 Puede responder a las teclas de método abreviado en la extensión del editor. En el siguiente tutorial se muestra cómo agregar un elemento gráfico de vista a una vista de texto mediante una tecla de método abreviado. Este tutorial se basa en la plantilla del editor de elementos gráficos de la ventanilla y permite agregar el elemento gráfico mediante el carácter +.
@@ -47,7 +47,7 @@ Puede responder a las teclas de método abreviado en la extensión del editor. E
 this.layer = view.GetAdornmentLayer("PurpleCornerBox");
 ```
 
-En el archivo de clase KeyBindingTestTextViewCreationListener.cs, cambie el nombre de AdornmentLayer de **KeyBindingTest** a **PurpleCornerBox**:
+En el archivo de clase KeyBindingTestTextViewCreationListener. CS, cambie el nombre de AdornmentLayer de **KeyBindingTest** a **PurpleCornerBox**:
 
 ```csharp
 [Export(typeof(AdornmentLayerDefinition))]
@@ -259,7 +259,7 @@ El controlador de comandos es una implementación de <xref:Microsoft.VisualStudi
    }
    ```
 
-   7. Copie la definición de la capa de adornos del archivo *KeyBindingTestTextViewCreationListener.CS* en *KeyBindingCommandHandler.CS* y, a continuación, elimine el archivo *KeyBindingTestTextViewCreationListener.CS* :
+   7. Copie la definición de la capa de adornos del archivo *KeyBindingTestTextViewCreationListener. CS* en *KeyBindingCommandHandler. CS* y, a continuación, elimine el archivo *KeyBindingTestTextViewCreationListener. CS* :
 
    ```csharp
    /// <summary>
@@ -276,7 +276,7 @@ El controlador de comandos es una implementación de <xref:Microsoft.VisualStudi
 
 El elemento gráfico original aparecía en cada carácter "a" en un archivo de texto. Ahora que hemos cambiado el código para agregar el elemento gráfico en respuesta al **+** carácter, agrega el elemento gráfico solo en la línea donde **+** se escribe el carácter. Podemos cambiar el código de elemento gráfico para que el elemento gráfico aparezca una vez más en cada ' a '.
 
-En el archivo *KeyBindingTest.CS* , cambie el `CreateVisuals()` método para recorrer en iteración todas las líneas de la vista para decorar el carácter "a".
+En el archivo *KeyBindingTest. CS* , cambie el `CreateVisuals()` método para recorrer en iteración todas las líneas de la vista para decorar el carácter "a".
 
 ```csharp
 private void CreateVisuals(ITextViewLine line)

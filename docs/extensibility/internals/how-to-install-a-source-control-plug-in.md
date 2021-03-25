@@ -8,17 +8,17 @@ helpviewer_keywords:
 - installation [Visual Studio SDK], source control plug-ins
 - source control plug-ins, installing
 ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad5b77176d05c28b3ba938a1255de6e10fcd7094
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4a0798cb7763ff2766d2de2bb00a80759be8fd3e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912747"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078817"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Cómo: instalar un complemento de control de código fuente
 La creación de un complemento de control de código fuente implica tres pasos:
@@ -118,5 +118,5 @@ La creación de un complemento de control de código fuente implica tres pasos:
 
  Si se cumplen estas dos condiciones, se puede llamar a las nuevas funciones admitidas en las versiones 1,2 y 1,3.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Introducción a los complementos de control de código fuente](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)
