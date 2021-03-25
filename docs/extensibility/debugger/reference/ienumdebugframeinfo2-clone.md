@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugFrameInfo2::Clone
 ms.assetid: cdd10489-1772-47e3-815f-a6cfd32a3c60
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8854316e7bef9973f985f577ff1a00aeeba50426
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: bfd98e66bd498799c33009064b0a48a25fad2b94
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102226532"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080091"
 ---
 # <a name="ienumdebugframeinfo2clone"></a>IEnumDebugFrameInfo2::Clone
 Devuelve una copia de la enumeración actual como objeto independiente.

@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentText2::GetText
 ms.assetid: f8c15a58-da77-473e-a721-7a094e306c63
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 53ee0ff735cfbec4835e762dfa95e293c95885b5
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 0e353643a193b999343c762cc0ba813f652ee2a6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102154228"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105066313"
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
 Recupera el texto de la posición especificada en el documento.

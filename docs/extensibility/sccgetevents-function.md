@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccGetEvents function
 ms.assetid: 32f8147d-6dcc-465e-b07b-42da5824f9b0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 069e9399a91a39d8005d9137bd19f4032773b24a
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: e7611a3f71b5fa6205708aca6b957f3921a71517
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102220799"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105072993"
 ---
 # <a name="sccgetevents-function"></a>SccGetEvents función)
 Esta función recupera un evento de estado en cola.
@@ -54,7 +54,7 @@ de Estructura de contexto del complemento de control de código fuente.
 ## <a name="return-value"></a>Valor devuelto
  Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:
 
-|Valor|Descripción|
+|Value|Descripción|
 |-----------|-----------------|
 |SCC_OK|Los eventos se obtienen correctamente.|
 |SCC_E_OPNOTSUPPORTED|Esta función no se admite.|

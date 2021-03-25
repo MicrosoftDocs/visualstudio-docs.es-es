@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngineCreateEvent2::GetEngine
 ms.assetid: 187d24ed-9f9a-4418-a0ef-b8a19f54652c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3aaabac0b9ee0e6fb2e8982d673e8e55e1cede4e
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 66e58c94f21eb29b7cb85066001e5c4472730f76
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102153681"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105066092"
 ---
 # <a name="idebugenginecreateevent2getengine"></a>IDebugEngineCreateEvent2::GetEngine
 Recupera el objeto que representa el motor DE depuración recién creado (DE).

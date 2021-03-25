@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - MODULE_INFO structure
 ms.assetid: f2e06180-1ab3-4eb5-a428-7994cceb61b6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7d3fd390ca5491aa9dd3e97a0d820c8e02fd0147
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 0b432e0373e81124d18e3bf9cc5f8ed3a4707ab6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102222359"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105079727"
 ---
 # <a name="module_info"></a>MODULE_INFO
 Describe un módulo determinado (DLL, EXE o Assembly).
@@ -62,7 +62,7 @@ public struct MODULE_INFO {
 };
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
  `dwValidFields`\
  Combinación de marcas de la enumeración [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) que especifica qué campos se rellenan.
 

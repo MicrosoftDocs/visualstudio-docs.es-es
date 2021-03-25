@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentText2 interface
 ms.assetid: e85f50a3-211c-4220-a9f4-789950ba2782
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb1c5928362616466985a6f88102ffcbf4377444
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 557ae68e63280348ab315c3240e05dbfc38a8d4d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102154215"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105066287"
 ---
 # <a name="idebugdocumenttext2"></a>IDebugDocumentText2
 Esta interfaz representa un documento de texto.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ```
 IDebugDocumentText2 : IDebugDocument2

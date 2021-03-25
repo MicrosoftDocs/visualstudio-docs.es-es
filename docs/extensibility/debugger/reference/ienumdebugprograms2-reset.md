@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugPrograms2::Reset
 ms.assetid: b289242b-24ea-4df3-a811-20b0c8a903d6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4f5376324afaac61d157f5f627d7f4d778c129e8
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: a54961b40f4bde286d2adfd0b8bb791a9750583e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102224244"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105079961"
 ---
 # <a name="ienumdebugprograms2reset"></a>IEnumDebugPrograms2::Reset
 Restablece la enumeración al primer elemento.

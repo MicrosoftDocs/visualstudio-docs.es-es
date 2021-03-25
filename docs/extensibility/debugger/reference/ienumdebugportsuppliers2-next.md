@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugPortSuppliers2::Next
 ms.assetid: e2a2d226-e70b-42c2-bf00-a936517940c8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 29badfc9c42875b981f99fbfe215c7a336dc1535
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: f60e058c9ccff2a1dc9d6b59714a15a8900c9a33
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102226259"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105095334"
 ---
 # <a name="ienumdebugportsuppliers2next"></a>IEnumDebugPortSuppliers2::Next
 Devuelve el conjunto de elementos siguiente de la enumeración.

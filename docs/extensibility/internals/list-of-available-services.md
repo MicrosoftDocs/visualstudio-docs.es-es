@@ -8,17 +8,17 @@ helpviewer_keywords:
 - services, Visual Studio
 - Visual Studio, services
 ms.assetid: 724eb24b-b87c-4971-a2e7-adee7afc03b2
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b00eb3e410c7fd3d10d2aef7fcfbf637ea04e41a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a5a875a913f57d3b700728542162e996449dc964
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839578"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105095230"
 ---
 # <a name="list-of-available-services"></a>Lista de servicios disponibles
 
@@ -28,7 +28,7 @@ Use los GUID de servicio enumerados aquí u obtenidos de otro origen (por ejempl
 
 ## <a name="the-services"></a>Los servicios
 
-| Servicio | Interfaz | Programa para la mejora | Visual Studio 2005 | Descripción |
+| Servicio | Interfaz | Visual Studio | Visual Studio 2005 | Descripción |
 | - | - |---------------|--------------------| - |
 | <xref:Microsoft.VisualStudio.OLE.Interop.SBindHost> | <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> | Sí | Sí | Lo usan los VSPackages para obtener una <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> interfaz de un control ActiveX para facilitar las transferencias de datos asincrónicas. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SDTE> | <xref:EnvDTE.DTE> | No | Sí | Obtiene el objeto de extensibilidad en tiempo de diseño (DTE) que se usa para la automatización.<br /><br /> IDENTIFICADOR DE C/C++: SID_SDTE |
@@ -160,6 +160,6 @@ Use los GUID de servicio enumerados aquí u obtenidos de otro origen (por ejempl
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsWindowFrame> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> | Sí | Sí | Permite que un VSPackage obtenga el marco de ventana en el que se puede ubicar el paquete o parte del paquete. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsXMLMemberIndexService> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsXMLMemberIndexService> | Sí | Sí | Proporciona acceso a los archivos de documentación con formato XML asociados a un archivo de metadatos determinado. |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Uso y prestación de servicios](../../extensibility/using-and-providing-services.md)

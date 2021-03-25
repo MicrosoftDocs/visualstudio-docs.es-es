@@ -4,17 +4,17 @@ description: Obtenga información sobre cómo habilitar el registro de diagnóst
 ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: troubleshooting
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ea99c1d74c06ab42ff86f07de4cf5c76e95de43
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 82b7b3f5eced4c8e24830fba34e47d224186949d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102151329"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105072954"
 ---
 # <a name="troubleshooting-template-installation"></a>Solución de problemas de instalación de plantillas
 

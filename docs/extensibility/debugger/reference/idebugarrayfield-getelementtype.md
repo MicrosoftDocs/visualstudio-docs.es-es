@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugArrayField::GetElementType method
 ms.assetid: c46bf625-0a48-4cbb-8f1f-286356f2c065
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9624a04ae70c8d29abd9b8af5b597b583efb7834
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: a4c6e5eb14d3fa320cb8b86c20c6d336466c42cc
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102143849"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105058968"
 ---
 # <a name="idebugarrayfieldgetelementtype"></a>IDebugArrayField::GetElementType
 Obtiene el tipo de elemento de la matriz.

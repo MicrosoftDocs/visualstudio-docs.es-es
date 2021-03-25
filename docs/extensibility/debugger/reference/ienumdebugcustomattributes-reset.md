@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugCustomAttributes::Reset
 ms.assetid: e0db6518-5a71-4adb-a407-4d2ac7a3e369
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d3393f2b87043345156337976ed12d10928572d2
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: b48e541f1f75f3ce7f0ef69e1e838cd54ffa19fa
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102226896"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080130"
 ---
 # <a name="ienumdebugcustomattributesreset"></a>IEnumDebugCustomAttributes::Reset
 Restablece la secuencia de enumeración al principio.

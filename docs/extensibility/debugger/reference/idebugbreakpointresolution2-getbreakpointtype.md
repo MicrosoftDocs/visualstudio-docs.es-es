@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointResolution2::GetBreakpointType
 ms.assetid: 2b707fb9-f703-4c78-91bf-7434f57790a0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cca069871c99c623119853f37d1c422125b985ff
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 1cc7eed63a2eed3a3fd1f526e01e60ed1f1d41a8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102158519"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105095750"
 ---
 # <a name="idebugbreakpointresolution2getbreakpointtype"></a>IDebugBreakpointResolution2::GetBreakpointType
 Obtiene el tipo del punto de interrupción representado por esta resolución.

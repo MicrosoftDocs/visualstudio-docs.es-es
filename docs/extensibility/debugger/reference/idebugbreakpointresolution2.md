@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointRequest2 interface
 ms.assetid: 451d5bce-b9c1-48ff-beaa-2b4c3e1ceea0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31543b574006609cb22e6cf505771840678a97fa
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 107309fb92a6d180e3b2ae99c72e23e2923f1bb4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102143329"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105095698"
 ---
 # <a name="idebugbreakpointresolution2"></a>IDebugBreakpointResolution2
 Esta interfaz representa la información que describe un punto de interrupción enlazado.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ```
 IDebugBreakpointResolution2 : IUnknown

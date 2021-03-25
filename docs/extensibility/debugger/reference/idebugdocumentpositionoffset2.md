@@ -6,22 +6,22 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugDocumentPositionOffset2 interface
 ms.assetid: f1b05db3-50d8-453f-a72f-e68b239236a4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1dee28d7f19f6398863476afbab8eb9b3cdbbb60
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 01815a7dcae5a469db20b9288918b4e2aaf9ffed
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102167326"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105066326"
 ---
 # <a name="idebugdocumentpositionoffset2"></a>IDebugDocumentPositionOffset2
 Representa una posición en un archivo de código fuente como desplazamiento de caracteres.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ```
 IDebugDocumentPositionOffset2 : IUnknown

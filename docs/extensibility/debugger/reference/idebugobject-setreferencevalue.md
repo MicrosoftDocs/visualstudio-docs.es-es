@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject::SetReferenceValue method
 ms.assetid: 08c78a4e-98eb-41cb-8b75-02a6a43d49f7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bb376e4399157f9f9fe393086cca8fcf94c3b9de
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 5a65c14d4122ac6d877573822b4fa8be1cb6cdd1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102161429"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105054119"
 ---
 # <a name="idebugobjectsetreferencevalue"></a>IDebugObject::SetReferenceValue
 Establece el valor de referencia de este objeto.
