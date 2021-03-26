@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Windows Installer, VSPackages
 - VSPackages, Windows Installer basics
 ms.assetid: 497e479b-add8-4644-870a-917f15306b97
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4081c79b7492e369e19187a099bf975275cb371c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fe009fa3ee8c8b9f2d15d3de4ee1fd067647c925
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869497"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074293"
 ---
 # <a name="windows-installer-basics"></a>Datos básicos de Windows Installer
 En el Windows Installer se instalan y desinstalan aplicaciones o productos de software en el equipo de un usuario, lo que realiza estas tareas en unidades denominadas Windows Installer componentes (a veces denominados WICs o simplemente componentes). Un GUID identifica cada WIC, que es la unidad básica de instalación y el recuento de referencias para las configuraciones mediante Windows Installer.
@@ -69,5 +69,5 @@ En el Windows Installer se instalan y desinstalan aplicaciones o productos de so
 
 - Ningún recurso con versión debe distribuirse en más de un WIC.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [¿Qué ocurre si se interrumpen las reglas de componentes?](/windows/desktop/Msi/what-happens-if-the-component-rules-are-broken)

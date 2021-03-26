@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugPrograms2
 ms.assetid: 7fbb8fb7-db64-4546-a364-dc668430c8af
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b0a593d6168b7d34f97802a0b3b1b0a5c141821
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: d7f9a981146d5e024333f17557f4fdbc3d35bc05
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102224231"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082938"
 ---
 # <a name="ienumdebugprograms2"></a>IEnumDebugPrograms2
 Esta interfaz enumera los programas que se ejecutan en la sesión de depuración actual.
@@ -65,6 +65,6 @@ IEnumDebugPrograms2 : IUnknown
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Consulte también
-- [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
+- [Interfaces principales](../../../extensibility/debugger/reference/core-interfaces.md)
 - [EnumPrograms](../../../extensibility/debugger/reference/idebugengine2-enumprograms.md)
 - [EnumPrograms](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md)

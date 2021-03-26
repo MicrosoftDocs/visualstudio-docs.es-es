@@ -8,25 +8,25 @@ f1_keywords:
 helpviewer_keywords:
 - BP_TYPE enumeration
 ms.assetid: ef07191e-7966-43ab-96fb-1a0b1db3115d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3e310154bc62cdea1fb9069cc868cf9e20335d06
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 23f7b6c42b1c4736ba0eb76a451bb91e74ca5ff5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102151111"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089100"
 ---
 # <a name="bp_type"></a>BP_TYPE
 Especifica si el punto de interrupción está en una ubicación de código, es una ubicación de datos o es otro tipo de punto de interrupción.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ```cpp
 enum enum_BP_TYPE {

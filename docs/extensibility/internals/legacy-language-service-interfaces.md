@@ -8,17 +8,17 @@ helpviewer_keywords:
 - IVsLanguageInfo interface
 - language services, objects
 ms.assetid: 03b2d507-f463-417e-bc22-bdac68eeda52
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f6010ffdf6873073eded63c75475115391a3964
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 77647daeae2cf6e3bc76f9b0f2a58608b5bb28a4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839604"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074523"
 ---
 # <a name="legacy-language-service-interfaces"></a>Interfaces de servicio de lenguaje heredado
 Para cualquier lenguaje de programación determinado, solo puede haber una instancia de un servicio de lenguaje a la vez. Sin embargo, un servicio de lenguaje único puede atender a más de un editor.
@@ -52,6 +52,6 @@ Para cualquier lenguaje de programación determinado, solo puede haber una insta
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>|Permite modificar la vista de texto mediante el controlador de comandos. La clase en la que se implementa la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> interfaz también debe implementar la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaz. La vista de texto recupera el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> objeto consultando el <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> objeto que se pasa al <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> método. Debe haber un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> objeto para cada vista.|
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|Intercepta los comandos que el usuario escribe en la ventana de código. Supervisar la salida de la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> implementación para proporcionar información de finalización personalizada y ver la modificación<br /><br /> Para pasar el <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> objeto a la vista de texto, llame a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> .|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Desarrollo de un servicio de lenguaje heredado](../../extensibility/internals/developing-a-legacy-language-service.md)
 - [Lista de comprobación: Creación de un servicio de lenguaje heredado](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)

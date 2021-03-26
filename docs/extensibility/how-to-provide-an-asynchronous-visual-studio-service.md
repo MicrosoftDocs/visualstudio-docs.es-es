@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 0448274c-d3d2-4e12-9d11-8aca78a1f3f5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4cbdd539437bce6f160dfa8661f514bf9f40b134
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f9973bb86296442f4b936ddb54ff645d74d7ab74
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965335"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074943"
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Cómo: proporcionar un servicio de Visual Studio asincrónico
 Si desea obtener un servicio sin bloquear el subproceso de la interfaz de usuario, debe crear un servicio asincrónico y cargar el paquete en un subproceso en segundo plano. Para este propósito, puede usar un <xref:Microsoft.VisualStudio.Shell.AsyncPackage> en lugar de un <xref:Microsoft.VisualStudio.Shell.Package> y agregar el servicio con los métodos asincrónicos especiales del paquete asincrónico.
@@ -26,9 +26,9 @@ Si desea obtener un servicio sin bloquear el subproceso de la interfaz de usuari
 
 1. Cree un proyecto VSIX (**archivo**  >  **nuevo**  >  **proyecto**  >  **Visual C#**  >  **usaría**  >  **VSIX Project**). Asigne al proyecto el nombre **TestAsync**.
 
-2. Agregue un VSPackage al proyecto. Seleccione el nodo del proyecto en el **Explorador de soluciones** y haga clic en **Agregar**  >  **nuevo elemento**  >  **Visual C# elementos** de  >  **extensibilidad**  >  **Visual Studio Package**. Asigne a este archivo el nombre *TestAsyncPackage.CS*.
+2. Agregue un VSPackage al proyecto. Seleccione el nodo del proyecto en el **Explorador de soluciones** y haga clic en **Agregar**  >  **nuevo elemento**  >  **Visual C# elementos** de  >  **extensibilidad**  >  **Visual Studio Package**. Asigne a este archivo el nombre *TestAsyncPackage. CS*.
 
-3. En *TestAsyncPackage.CS*, cambie el paquete para que herede de en `AsyncPackage` lugar de `Package` :
+3. En *TestAsyncPackage. CS*, cambie el paquete para que herede de `AsyncPackage` `Package` :
 
     ```csharp
     public sealed class TestAsyncPackage : AsyncPackage
@@ -122,7 +122,7 @@ public sealed class TestAsyncPackage : AsyncPackage
 
 ## <a name="add-a-service"></a>Agregar un servicio
 
-1. En *TestAsyncPackage.CS*, quite el `Initialize()` método e invalide el `InitializeAsync()` método. Agregue el servicio y agregue un método de devolución de llamada para crear los servicios. Este es un ejemplo del inicializador asincrónico que agrega un servicio:
+1. En *TestAsyncPackage. CS*, quite el `Initialize()` método e invalide el `InitializeAsync()` método. Agregue el servicio y agregue un método de devolución de llamada para crear los servicios. Este es un ejemplo del inicializador asincrónico que agrega un servicio:
 
     ```csharp
     protected override async Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)
@@ -173,15 +173,15 @@ public sealed class TestAsyncPackage : AsyncPackage
 ## <a name="use-an-asynchronous-service-in-a-command-handler"></a>Usar un servicio asincrónico en un controlador de comandos
  A continuación se muestra un ejemplo de cómo usar un servicio asincrónico en un comando de menú. Puede usar el procedimiento que se muestra aquí para usar el servicio en otros métodos no asincrónicos.
 
-1. Agregue un comando de menú al proyecto. (En el **Explorador de soluciones**, seleccione el nodo del proyecto, haga clic con el botón derecho y seleccione **Agregar**  >  . **Nuevo elemento**  >  **Extensibilidad**  >  **Comando personalizado**). Asigne al archivo de comandos el nombre *TestAsyncCommand.CS*.
+1. Agregue un comando de menú al proyecto. (En el **Explorador de soluciones**, seleccione el nodo del proyecto, haga clic con el botón derecho y seleccione **Agregar**  >  . **Nuevo elemento**  >  **Extensibilidad**  >  **Comando personalizado**). Asigne al archivo de comandos el nombre *TestAsyncCommand. CS*.
 
-2. La plantilla de comandos personalizada vuelve a agregar el `Initialize()` método al archivo *TestAsyncPackage.CS* para inicializar el comando. En el `Initialize()` método, copie la línea que inicializa el comando. Debería ser parecido a este:
+2. La plantilla de comandos personalizada vuelve a agregar el `Initialize()` método al archivo *TestAsyncPackage. CS* para inicializar el comando. En el `Initialize()` método, copie la línea que inicializa el comando. Debería ser parecido a este:
 
     ```csharp
     TestAsyncCommand.Initialize(this);
     ```
 
-     Mueva esta línea al `InitializeAsync()` método en el archivo *AsyncPackageForService.CS* . Dado que se trata de una inicialización asincrónica, debe cambiar al subproceso principal antes de inicializar el comando mediante <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A> . Debería ser parecido a este:
+     Mueva esta línea al `InitializeAsync()` método en el archivo *AsyncPackageForService. CS* . Dado que se trata de una inicialización asincrónica, debe cambiar al subproceso principal antes de inicializar el comando mediante <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A> . Debería ser parecido a este:
 
     ```csharp
 
@@ -204,7 +204,7 @@ public sealed class TestAsyncPackage : AsyncPackage
 
 3. Elimine el `Initialize()` método.
 
-4. En el archivo *TestAsyncCommand.CS* , busque el `MenuItemCallback()` método. Elimine el cuerpo del método.
+4. En el archivo *TestAsyncCommand. CS* , busque el `MenuItemCallback()` método. Elimine el cuerpo del método.
 
 5. Agregue una directiva using:
 
@@ -240,5 +240,5 @@ public sealed class TestAsyncPackage : AsyncPackage
 
 8. Compile la solución y comience la depuración. Cuando aparezca la instancia experimental de Visual Studio, vaya al menú **herramientas** y busque el elemento de menú **invocar TestAsyncCommand** . Al hacer clic en él, el TextWriterService escribe en el archivo especificado. (No es necesario abrir una solución, ya que al invocar el comando también se carga el paquete).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Usar y proporcionar servicios](../extensibility/using-and-providing-services.md)

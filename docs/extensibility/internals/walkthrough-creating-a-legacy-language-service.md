@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - language services [managed package framework], creating
 ms.assetid: 6a5dd2c2-261b-4efd-a3f4-8fb90b73dc82
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61f4dfd8068cc44fca97eb5e07ddbf62b21ee1f2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ded5624aed40ac2e878c44fd8dabc7d35c4d1ac8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899918"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074280"
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>Tutorial: Creación de un servicio de lenguaje heredado
 El uso de las clases de lenguaje de Managed Package Framework (MPF) para implementar un servicio de lenguaje en [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] es sencillo. Necesita un VSPackage para hospedar el servicio de lenguaje, el propio servicio de lenguaje y un analizador para su lenguaje.
@@ -44,11 +44,11 @@ El uso de las clases de lenguaje de Managed Package Framework (MPF) para impleme
 
     Puede usar cualquier nombre que desee. Estos procedimientos detallados aquí suponen MyLanguagePackage como nombre.
 
-3. Seleccione [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] como lenguaje y la opción para generar un nuevo archivo de clave. Haga clic en **Siguiente**.
+3. Seleccione [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] como lenguaje y la opción para generar un nuevo archivo de clave. Haga clic en **Next**.
 
-4. Escriba la información de la compañía y del paquete adecuada. Haga clic en **Siguiente**.
+4. Escriba la información de la compañía y del paquete adecuada. Haga clic en **Next**.
 
-5. Seleccione el **comando de menú**. Haga clic en **Siguiente**.
+5. Seleccione el **comando de menú**. Haga clic en **Next**.
 
     Si no tiene previsto admitir fragmentos de código, puede hacer clic en finalizar y omitir el paso siguiente.
 
@@ -68,11 +68,11 @@ El uso de las clases de lenguaje de Managed Package Framework (MPF) para impleme
 
 4. Asegúrese de que la **clase** está seleccionada en la lista de plantillas.
 
-5. Escriba **MyLanguageService.CS** para el nombre del archivo de clase y haga clic en **Agregar**.
+5. Escriba **MyLanguageService. CS** como nombre del archivo de clase y haga clic en **Agregar**.
 
      Puede usar cualquier nombre que desee. Estos procedimientos detallados aquí suponen `MyLanguageService` como nombre.
 
-6. En el archivo MyLanguageService.cs, agregue las siguientes `using` directivas.
+6. En el archivo MyLanguageService. CS, agregue las siguientes `using` directivas.
 
      [!code-csharp[CreatingALanguageService(ManagedPackageFramework)#1](../../extensibility/internals/codesnippet/CSharp/walkthrough-creating-a-legacy-language-service_1.cs)]
      [!code-vb[CreatingALanguageService(ManagedPackageFramework)#1](../../extensibility/internals/codesnippet/VisualBasic/walkthrough-creating-a-legacy-language-service_1.vb)]
@@ -88,7 +88,7 @@ El uso de las clases de lenguaje de Managed Package Framework (MPF) para impleme
 
 ### <a name="register-the-language-service"></a>Registrar el servicio de lenguaje
 
-1. Abra el archivo MyLanguagePackagePackage.cs y agregue las siguientes `using` directivas:
+1. Abra el archivo MyLanguagePackagePackage. CS y agregue las siguientes `using` directivas:
 
      [!code-vb[CreatingALanguageService(ManagedPackageFramework)#3](../../extensibility/internals/codesnippet/VisualBasic/walkthrough-creating-a-legacy-language-service_3.vb)]
      [!code-csharp[CreatingALanguageService(ManagedPackageFramework)#3](../../extensibility/internals/codesnippet/CSharp/walkthrough-creating-a-legacy-language-service_3.cs)]
@@ -132,5 +132,5 @@ El uso de las clases de lenguaje de Managed Package Framework (MPF) para impleme
 
      Por ejemplo, escriba `public override` para ver una lista de todos los métodos que se pueden invalidar en esa clase.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Implementación de un servicio de lenguaje heredado](../../extensibility/internals/implementing-a-legacy-language-service1.md)

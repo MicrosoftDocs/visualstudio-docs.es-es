@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugAddresses::Reset method
 ms.assetid: 3a9d7f20-5bc6-4e13-8e91-5af4092e092f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 90ccbb3be28f676133756d5d07fcaca7e0aca3ec
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 385e650e908947288eafa6f3f2812db45f9721a3
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102222671"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105083146"
 ---
 # <a name="ienumdebugaddressesreset"></a>IEnumDebugAddresses::Reset
 Este método restablece la enumeración al primer elemento.
@@ -37,7 +37,7 @@ int Reset();
 ```
 
 ## <a name="parameters"></a>Parámetros
- Ninguno
+ None
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.

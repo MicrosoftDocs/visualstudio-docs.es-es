@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_RESOLUTION_LOCATION structure
 ms.assetid: 21dc5246-69c1-43e3-855c-9cd4e596c0e6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 87fef44d02911e84952f6eb8ab09dd9a1360dea6
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: aefbb27a7eb693ceef3bd64afb610607697ac23e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102162568"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089126"
 ---
 # <a name="bp_resolution_location"></a>BP_RESOLUTION_LOCATION
 Especifica la estructura de la ubicación de resolución del punto de interrupción.
@@ -49,7 +49,7 @@ public struct BP_RESOLUTION_LOCATION {
 };
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
 `bpType`\
 Un valor de la enumeración [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) que especifica cómo interpretar la `bpResLocation` Unión o `unionmemberX` los miembros.
 

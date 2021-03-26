@@ -9,20 +9,20 @@ helpviewer_keywords:
 - SetCondition method
 - IDebugBoundBreakpoint2::SetCondition method
 ms.assetid: 5d366876-efed-43d0-8ea1-dfdb009cbfac
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7aa29d84c182cfc315d344b9d7b87b76148b929c
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 792c0464b6c1beced9903e3dc21783d1841ab455
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102167534"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105088879"
 ---
 # <a name="idebugboundbreakpoint2setcondition"></a>IDebugBoundBreakpoint2::SetCondition
 Establece o cambia la condición asociada a este punto de interrupción enlazado.

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - commands, context
 - menu items, visibility contexts
 ms.assetid: c74e3ccf-d771-48c8-a2f9-df323b166784
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38ad456c6c946964f3038a712274003bae5732fa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 738e326c0e6300520d66d64fda4bb5040f231c75
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932741"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074748"
 ---
 # <a name="command-availability"></a>Disponibilidad de comandos
 
@@ -55,7 +55,7 @@ Si aún no se ha definido un GUID de contexto de comando adecuado, puede definir
 > [!CAUTION]
 > Asegúrese de que el VSPackage no afecte a ningún GUID de contexto existente, ya que otros VSPackages pueden depender de ellos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Objetos de contexto de selección](../../extensibility/internals/selection-context-objects.md)
 - [Cómo agrega VSPackages los elementos de la interfaz de usuario](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - source control [Visual Studio SDK], sharing items
 - source control plug-ins, sharing items
 ms.assetid: 6ec4780a-bda4-4327-bb3e-c6c9e7eabf35
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c006c5f4746f83e571475d93bedc452c7c23c75
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: facfb48fbe02ff374c594f1ddadf0710c1f989d6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888139"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074358"
 ---
 # <a name="test-area-7-share"></a>Área de prueba 7: Compartir
 En este área de prueba se trata el uso compartido de elementos entre ubicaciones a través del comando **compartir** .
@@ -60,5 +60,5 @@ En este área de prueba se trata el uso compartido de elementos entre ubicacione
 |Compartir una carpeta en el proyecto cargado: recursivo|1. cree un nuevo proyecto.<br />2. Agregue la solución al control de código fuente.<br />3. Seleccione el proyecto.<br />4. Abra el cuadro de diálogo **compartir** (  ->  recurso compartido de **control de código fuente** de archivo  ->  ).<br />5. Seleccione una carpeta.<br />6. comparta la carpeta de forma recursiva en el proyecto.|Comportamiento esperado común.|
 |Compartir varios archivos de un proyecto a otro|1. cree un nuevo proyecto con varios archivos en él.<br />2. Agregue la solución al control de código fuente.<br />3. Cierre la solución.<br />4. cree un nuevo proyecto en una nueva solución.<br />5. agregar la solución al control de código fuente.<br />6. Seleccione el proyecto.<br />7. Abra el cuadro de diálogo **compartir** (  ->  recurso compartido de **control de código fuente** de archivo  ->  ).<br />8. comparta varios archivos del proyecto creado anteriormente con el proyecto actualmente abierto.|Comportamiento esperado común.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Guía de pruebas para los complementos de control de código fuente](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

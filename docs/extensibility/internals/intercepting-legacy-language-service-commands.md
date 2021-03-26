@@ -8,17 +8,17 @@ helpviewer_keywords:
 - commands, intercepting language service
 - language services, intercepting commands
 ms.assetid: eea69f03-349c-44bb-bd4f-4925c0dc3e55
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6a759f0cef7329d14d7d1472d38f662c0206448
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8d7af9ff4a8f04382cff4999b8c57549f3da3db7
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839799"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074696"
 ---
 # <a name="intercepting-legacy-language-service-commands"></a>Intercepción de comandos del servicio de lenguaje heredado
 Con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , puede hacer que el servicio de lenguaje intercepte los comandos que la vista de texto controlaría de otro modo. Esto resulta útil para el comportamiento específico del lenguaje que no administra la vista de texto. Puede interceptar estos comandos agregando uno o más filtros de comandos a la vista de texto desde el servicio de lenguaje.

@@ -5,16 +5,16 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: dedf0173-197e-4258-ae5a-807eb3abc952
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8b5917a42e7083f7357ce76762bf8b51a1b60f9
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 516b6797d622a3f88ed1fcd37b87ecd117d4e8a8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993489"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074826"
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Cómo: usar AsyncPackage para cargar VSPackages en segundo plano
 La carga e inicialización de un paquete de VS puede dar lugar a e/s de disco. Si dicha e/s se produce en el subproceso de la interfaz de usuario, puede provocar problemas de capacidad de respuesta. Para solucionar este tema, Visual Studio 2015 presentó la  <xref:Microsoft.VisualStudio.Shell.AsyncPackage> clase que habilita la carga de paquetes en un subproceso en segundo plano.

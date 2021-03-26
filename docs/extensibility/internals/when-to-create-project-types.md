@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - project types, conditions for creating
 ms.assetid: 26adc860-ee4a-4f5c-95e1-e41b207dd7e6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 161be2b157c079312cdbbee0b6913c92c3c61578
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 427c35a03f9d0cb11667ca9eaf88f144d018f620
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869523"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074306"
 ---
 # <a name="when-to-create-project-types"></a>Momento para la creación de tipos de proyecto
 La creación de un nuevo tipo de proyecto proporciona una base para la personalización [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para los usuarios. Sin embargo, no es necesario crear un nuevo tipo de proyecto para todas las [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] personalizaciones. Las instrucciones siguientes le ayudarán a determinar si es necesario un nuevo tipo de proyecto para su escenario.
@@ -59,7 +59,7 @@ La creación de un nuevo tipo de proyecto proporciona una base para la personali
 ## <a name="create-a-project-subtype"></a>Crear un subtipo de proyecto
  Puede usar subtipos de proyecto para extender un tipo de proyecto administrado sin tener que crear un nuevo tipo de proyecto. Los subtipos de proyecto utilizan la agregación COM para extender los proyectos administrados escritos en Microsoft [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] o [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] . Con la agregación COM, puede volver a usar gran parte de la implementación del sistema de proyectos administrados y seguir personalizando para un escenario concreto a través de la agregación y el uso de interfaces auxiliares. Para obtener más información sobre los subtipos de proyecto, vea [subtipos de proyecto](../../extensibility/internals/project-subtypes.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Ventanas de documento y editores](/previous-versions/bb165691(v=vs.100))
 - [Lista de comprobación: Creación de nuevos tipos de proyectos](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Jerarquías en Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - project configurations, managing deployment
 - projects [Visual Studio SDK], configuration for managing deployment
 ms.assetid: bd5940d9-d94d-4944-beda-4ec1ab2bbde5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ebdc1dc529e73e17ba55a0b4766f11dced4addcb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 589403f126a4fd614911c1deb99e9acd32d1ec7d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893651"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074423"
 ---
 # <a name="project-configuration-for-managing-deployment"></a>Configuración del proyecto para administrar la implementación
 La implementación es el acto de mover físicamente los elementos de salida de un proceso de compilación a la ubicación esperada para la depuración y la instalación. Por ejemplo, una aplicación web podría estar compilada en un equipo local y, a continuación, colocarse en el servidor.
@@ -39,7 +39,7 @@ La implementación es el acto de mover físicamente los elementos de salida de u
 
   Las configuraciones pueden especificar las dependencias que afectan a las operaciones de compilación o implementación. Las dependencias de compilación o implementación son proyectos que deben compilarse o implementarse antes o después de que se compilen o implementen las propias configuraciones. Las dependencias de compilación entre proyectos se describen con la <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> interfaz e implementan las dependencias con la <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> interfaz. Para obtener más información, vea [configuración del proyecto para la compilación](../../extensibility/internals/project-configuration-for-building.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Administración de opciones de configuración](../../extensibility/internals/managing-configuration-options.md)
 - [Configuración del proyecto para la compilación](../../extensibility/internals/project-configuration-for-building.md)
 - [Configuración del proyecto para la salida](../../extensibility/internals/project-configuration-for-output.md)

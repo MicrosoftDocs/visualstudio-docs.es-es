@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBoundBreakpoint2 interface
 ms.assetid: df33c52e-ded2-48a0-951d-1f36c8fc922e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2726a2422c49335d9c95e7d500381ad1fdc0108
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: b8a48ffcb3c0409839ec9323679e396a7e23b8f3
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102167482"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105088827"
 ---
 # <a name="idebugboundbreakpoint2"></a>IDebugBoundBreakpoint2
 Esta interfaz representa un punto de interrupción que está enlazado a una ubicación de código.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ```
 IDebugBoundBreakpoint2 : IUnknown

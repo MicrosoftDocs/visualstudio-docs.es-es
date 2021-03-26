@@ -8,17 +8,17 @@ helpviewer_keywords:
 - IDTWizard interface
 - wizards, interface
 ms.assetid: 09618d9d-d115-45b6-bccc-de328994b39c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc33d2fb37db7e021ce1752c642492a80956b61f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b8dc88341bc72755ae0f5011d18182c5b78bb483
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935942"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074202"
 ---
 # <a name="wizard-interface-idtwizard"></a>Interfaz de asistente (IDTWizard)
 El entorno de desarrollo integrado (IDE) utiliza la <xref:EnvDTE.IDTWizard> interfaz para comunicarse con los asistentes. Los asistentes deben implementar esta interfaz para poder instalarse en el IDE.
@@ -65,7 +65,7 @@ STDMETHOD(Execute)(THIS_
     wizardResultBackout = 2
     ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Parámetros de contexto](../../extensibility/internals/context-parameters.md)
 - [Parámetros personalizados](../../extensibility/internals/custom-parameters.md)
 - [Asistentes](../../extensibility/internals/wizards.md)

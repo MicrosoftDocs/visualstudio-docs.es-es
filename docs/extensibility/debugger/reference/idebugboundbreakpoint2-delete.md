@@ -9,20 +9,20 @@ helpviewer_keywords:
 - Delete method
 - IDebugBoundBreakpoint2::Delete method
 ms.assetid: 7088dc66-f24a-446f-a52a-397d02457a41
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0298609fec3e30a3b7aa4e92e10e1e03e26ad741
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: a6dbe1877144813ab36c437f8163dc64fcdcc78d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102143602"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105088970"
 ---
 # <a name="idebugboundbreakpoint2delete"></a>IDebugBoundBreakpoint2::Delete
 Elimina el punto de interrupción.

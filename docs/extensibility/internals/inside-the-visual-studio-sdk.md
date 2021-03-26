@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Visual Studio integration SDK roadmap
 - integration roadmap, Visual Studio SDK
 ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2d67c3d9f998c8dd5192363cf8ff8fae2ce4b57
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e11ee862f43ead3605d8e07dc159e18da13413b8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839864"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074709"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Dentro de Visual Studio SDK
 
@@ -39,7 +39,7 @@ En esta sección se proporciona información detallada sobre las extensiones de 
 ## <a name="user-experience-guidelines"></a>Directrices de la experiencia de usuario
  Si tiene previsto diseñar nuevas características para Visual Studio, eche un vistazo a estas instrucciones de diseño y sugerencias de facilidad de uso: instrucciones para la [experiencia del usuario de Visual Studio](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).
 
-## <a name="commands"></a>Comandos:
+## <a name="commands"></a>Comandos
  Los comandos son funciones que realizan tareas, como la impresión de un documento, la actualización de una vista o la creación de un archivo nuevo.
 
  Al extender Visual Studio, puede crear comandos y registrarlos con Visual Studio Shell. Puede especificar cómo aparecerán estos comandos en el IDE, por ejemplo, en un menú o una barra de herramientas. Normalmente aparece un comando personalizado en el menú **herramientas** y un comando para mostrar una ventana de herramientas aparecerá en el submenú **otras ventanas** del menú **Ver** .
@@ -64,7 +64,7 @@ En esta sección se proporciona información detallada sobre las extensiones de 
 
  Algunas de las ventanas de herramientas están acopladas juntas en un solo panel que muestra la ventana de herramientas de Explorador de soluciones y oculta las demás ventanas de herramientas, pero hace que estén disponibles haciendo clic en pestañas. La imagen muestra otras dos ventanas de herramientas, la **lista de errores** y la ventana de **salida** , acopladas juntas en un solo panel.
 
- También se muestra el panel principal del documento, que muestra varias ventanas del editor. Aunque las ventanas de herramientas normalmente solo tienen una instancia (por ejemplo, solo puede abrir una **Explorador de soluciones**), las ventanas del editor pueden tener varias instancias, cada una de las cuales se usa para editar un documento independiente, pero todas están acopladas en el mismo panel. La imagen muestra un panel de documento con dos ventanas de editor, una ventana del diseñador de formularios. Todas las ventanas del panel documento están disponibles haciendo clic en pestañas, pero la ventana del editor que contiene el archivo EditorPane.cs es visible y activa.
+ También se muestra el panel principal del documento, que muestra varias ventanas del editor. Aunque las ventanas de herramientas normalmente solo tienen una instancia (por ejemplo, solo puede abrir una **Explorador de soluciones**), las ventanas del editor pueden tener varias instancias, cada una de las cuales se usa para editar un documento independiente, pero todas están acopladas en el mismo panel. La imagen muestra un panel de documento con dos ventanas de editor, una ventana del diseñador de formularios. Todas las ventanas del panel documento están disponibles haciendo clic en pestañas, pero la ventana del editor que contiene el archivo EditorPane. CS es visible y activa.
 
  Al extender Visual Studio, puede crear ventanas de herramientas que permitan a los usuarios de Visual Studio interactuar con la extensión. También puede crear sus propios editores que permitan a los usuarios de Visual Studio editar documentos. Dado que las ventanas de herramientas y los editores se integrarán en Visual Studio, no es necesario programarlos para acoplarlos o aparecer en una pestaña correctamente. Cuando se registran correctamente en Visual Studio, tendrán automáticamente las características típicas de las ventanas de herramientas y de documentos en Visual Studio. Para obtener más información, vea [extender y personalizar ventanas de herramientas](../../extensibility/extending-and-customizing-tool-windows.md).
 
