@@ -8,17 +8,17 @@ helpviewer_keywords:
 - source control [Visual Studio SDK], checking items in
 - source control plug-ins, checking items in
 ms.assetid: d0329fa8-7a8d-4d30-b67b-6f2a97b75a30
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef2baf2158403e8243632bc7ab77e58ea311b67b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b8de88b75b7013b75a35c9e92dc662598185e92b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898101"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080559"
 ---
 # <a name="test-area-4-check-in"></a>Área de prueba 4: Inserción en el repositorio
 Este área de prueba del complemento de control de código fuente cubre el envío de elementos actualizados al almacén de versiones a través del comando **de inserción en el repositorio** .
@@ -68,5 +68,5 @@ Este área de prueba del complemento de control de código fuente cubre el enví
 |Agregar un proyecto a una solución en blanco bajo control de código fuente (cuadro **de diálogo proteger** )|1. cree una solución en blanco.<br />2. Agregue la solución al control de código fuente.<br />3. Agregue un nuevo proyecto.<br />4. acepte la desprotección de la solución si se le solicita.<br />5. Proteja desde el cuadro de diálogo **proteger** .|Comportamiento esperado común.|
 |Agregar un proyecto a una solución en blanco en el control de código fuente (ventana **protecciones pendientes** )|1. cree una solución en blanco.<br />2. Agregue la solución al control de código fuente.<br />3. Agregue un nuevo proyecto.<br />4. acepte la desprotección de la solución si se le solicita.<br />5. Proteja la solución desde la ventana **protecciones pendientes** .|Comportamiento esperado común.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Guía de pruebas para los complementos de control de código fuente](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

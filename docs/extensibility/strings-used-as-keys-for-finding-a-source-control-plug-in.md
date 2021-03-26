@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, strings used for finding
 ms.assetid: c1e31f76-42a1-4c3d-afb2-664044ef12fd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e6ded8a5d43226a5c37eef1e0ba5ec32e2720f1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b61c13973ac6668814fbc3ba076b373d6e0b1e44
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99847939"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056303"
 ---
 # <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>Cadenas usadas como claves para buscar un complemento de control de código fuente
 Las siguientes cadenas son las claves para tener acceso al registro para buscar información sobre el complemento de control de código fuente.
@@ -28,7 +28,7 @@ Las siguientes cadenas son las claves para tener acceso al registro para buscar 
 
 ## <a name="string-keys-and-values"></a>Claves y valores de cadena
 
-|Key|Value|
+|Clave|Value|
 |---------|-----------|
 |`STR_SCC_PROVIDER_REG_LOCATION`|Software\SourceCodeControlProvider|
 |`STR_PROVIDERREGKEY`|ProviderRegKey|

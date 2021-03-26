@@ -6,18 +6,18 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 84e9b08350cf5977269bfbcf28ca5335e17f024d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8442e24bf971b8a2a0bcf5baeeb397e4646ba766
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893410"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060281"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>Actualización de Plantillas de proyecto y elemento para Visual Studio personalizado 2017
 
@@ -190,7 +190,7 @@ Si la extensión realiza una implementación basada en MSI, debe generar manualm
 
 Cree manifiestos independientes para las plantillas de proyecto y de elemento, y deben apuntar al directorio de plantillas raíz tal y como se especificó anteriormente. Cree un manifiesto por extensión y configuración regional.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Solución de problemas de detección de plantillas](troubleshooting-template-discovery.md)
 - [Crear plantillas de proyecto y de elemento personalizadas](creating-custom-project-and-item-templates.md)

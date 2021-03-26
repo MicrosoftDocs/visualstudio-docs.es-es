@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - VSCT files, creating
 ms.assetid: b955f51c-f9f9-49c3-a8e4-63b6eb0e0341
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66174d5de1abb4f5bdd23eeab0155a795cf0b634
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7fe1d92a9117193a72f579a01f264f1a13be6b6e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99879987"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056615"
 ---
 # <a name="how-to-create-a-vsct-file"></a>Cómo: crear un archivo. Vsct
 
@@ -140,7 +140,7 @@ Puede crear un archivo *. Vsct* basado en XML a partir de un archivo *. CTO* bin
 
      Este marcado debe ir dentro del `ItemGroup` elemento que contiene recursos incrustados.
 
-4. Abra el archivo de paquete, normalmente denominado *\<ProjectName\> Package.CS* o *\<ProjectName\> Package. VB*, en el editor.
+4. Abra el archivo de paquete, normalmente denominado *\<ProjectName\> Package. CS* o *\<ProjectName\> Package. VB*, en el editor.
 
 5. Agregue un `ProvideMenuResource` atributo a la clase de paquete, como se muestra en el ejemplo siguiente.
 
@@ -150,7 +150,7 @@ Puede crear un archivo *. Vsct* basado en XML a partir de un archivo *. CTO* bin
 
      El primer valor de parámetro debe coincidir con el valor del `ResourceName` atributo definido en el archivo de proyecto.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Archivos Author. Vsct](../../extensibility/internals/authoring-dot-vsct-files.md)
 - [Archivos de tabla de comandos de Visual Studio (. Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Referencia del esquema XML de VSCT](../../extensibility/vsct-xml-schema-reference.md)

@@ -5,20 +5,20 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 1f1ede0e642f14581d13d571acf67a952360bf65
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6ce834a2c949c55a6deeb6b7c7d0a9751771e316
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99838700"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080403"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>Tutorial: crear un SDK mediante C# o Visual Basic
 En este tutorial, aprenderá a crear un sencillo SDK de biblioteca matemática usando Visual C# y, a continuación, empaquetará el SDK como extensión de Visual Studio (VSIX). Completará los siguientes procedimientos:
@@ -41,7 +41,7 @@ En este tutorial, aprenderá a crear un sencillo SDK de biblioteca matemática u
 
 4. En **Explorador de soluciones**, abra el menú contextual del nodo de proyecto **SimpleMath** y, a continuación, elija **propiedades**.
 
-5. Cambie el nombre de **Class1.CS** a **Arithmetic.CS** y actualícelo para que coincida con el código siguiente:
+5. Cambie el nombre de **Class1. CS** a **aritmético. CS** y actualícelo para que coincida con el código siguiente:
 
     [!code-csharp[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/CSharp/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.cs)]
     [!code-vb[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/VisualBasic/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.vb)]
@@ -234,7 +234,7 @@ En este tutorial, aprenderá a crear un sencillo SDK de biblioteca matemática u
     </Page>
     ```
 
-11. Actualice **mainpage.Xaml.CS** para que coincida con el código siguiente:
+11. Actualice **mainpage. Xaml. CS** para que coincida con el código siguiente:
 
      [!code-csharp[CreatingAnSDKUsingWinRTDemoApp#2](../extensibility/codesnippet/CSharp/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_5.cs)]
      [!code-vb[CreatingAnSDKUsingWinRTDemoApp#2](../extensibility/codesnippet/VisualBasic/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_5.vb)]
@@ -247,7 +247,7 @@ En este tutorial, aprenderá a crear un sencillo SDK de biblioteca matemática u
 
     Ha creado y usado correctamente un SDK de extensión.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Tutorial: crear un SDK con C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)
 - [Tutorial: crear un SDK mediante JavaScript](../extensibility/walkthrough-creating-an-sdk-using-javascript.md)
 - [Creación de un kit de desarrollo de software](../extensibility/creating-a-software-development-kit.md)

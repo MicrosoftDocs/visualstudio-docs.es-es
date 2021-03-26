@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - single and multi-tab views
 ms.assetid: e3611704-349f-4323-b03c-f2b0a445d781
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6cea04557fb0bf3075461b22979cac2168af322
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7c23693b5ae622912695c139714c7e818ed0e868
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942989"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056329"
 ---
 # <a name="single-and-multi-tab-views"></a>Vistas de una sola pestaña y varias pestañas
 Un editor puede crear diferentes tipos de vistas. Un ejemplo es una ventana del editor de código, otra es un diseñador de formularios.
@@ -114,7 +114,7 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Compatibilidad con vistas de varios documentos](../extensibility/supporting-multiple-document-views.md)
 - [Anexión de vistas a datos de documentos](../extensibility/how-to-attach-views-to-document-data.md)
 - [Creación de diseñadores y editores personalizados](../extensibility/creating-custom-editors-and-designers.md)

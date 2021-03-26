@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - multiple document views
 ms.assetid: c7ec2366-91c4-477f-908d-e89068bdb3e3
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5360f67714e1da4f7372ee51eb4f75cc8835c1fd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e54ee028c6a7db2d5d2ea1ab609be6c2887c9829
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965127"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056212"
 ---
 # <a name="supporting-multiple-document-views"></a>Compatibilidad con vistas de varios documentos
 Puede proporcionar más de una vista de un documento creando datos de documento independientes y objetos de vista de documento para el editor. Algunos casos en los que una vista de documento adicional sería útil son:
@@ -26,7 +26,7 @@ Puede proporcionar más de una vista de un documento creando datos de documento 
 
 - Compatibilidad con formularios y vistas de código: desea que el editor proporcione vistas de tipos diferentes. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], por ejemplo, proporciona una vista de formulario y una vista de código.
 
-  Para obtener más información, vea el procedimiento CreateEditorInstance en el archivo EditorFactory.cs en el proyecto de editor personalizado creado por la plantilla de paquete de Visual Studio. Para obtener más información sobre este proyecto, vea [Tutorial: crear un editor personalizado](../extensibility/walkthrough-creating-a-custom-editor.md).
+  Para obtener más información sobre esto, vea el procedimiento CreateEditorInstance en el archivo EditorFactory. CS en el proyecto de editor personalizado creado por la plantilla de paquete de Visual Studio. Para obtener más información sobre este proyecto, vea [Tutorial: crear un editor personalizado](../extensibility/walkthrough-creating-a-custom-editor.md).
 
 ## <a name="synchronizing-views"></a>Sincronizar vistas
  Cuando se implementan varias vistas, el objeto de datos del documento es responsable de mantener todas las vistas sincronizadas con los datos. Puede utilizar las interfaces de control de eventos en <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> para sincronizar varias vistas con los datos.

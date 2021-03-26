@@ -8,23 +8,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::EnumChildren
 ms.assetid: 35b3c2f3-69f4-4013-b555-f847221f62e8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1481e58dd36e330bf9c4cff1644629bd93de55ac
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 92f55f511a68cca6685579eeb6d686108bf70799
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102151381"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105071459"
 ---
 # <a name="idebugreference2enumchildren"></a>IDebugReference2::EnumChildren
-Obtiene una lista de los elementos secundarios seleccionados de una referencia. Reservado para un uso futuro.
+Obtiene una lista de los elementos secundarios seleccionados de una referencia. Reservado para uso futuro.
 
 ## <a name="syntax"></a>Sintaxis
 

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - VSDIR files
 - template directory description files
 ms.assetid: 9df51800-190e-4662-b685-fdaafcff1400
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e2b56c061ce6e3124a7ed5a5dc00e41c3964204
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bdd21dfa9fe5aae11553bb0268017690aba46fe9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898248"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080507"
 ---
 # <a name="template-directory-description-vsdir-files"></a>Archivos de descripción del directorio de plantilla (.Vsdir)
 Un archivo de Descripción del directorio de plantillas (. vsdir) es un archivo de texto que permite al entorno de desarrollo integrado (IDE) Mostrar carpetas, archivos. vsz del asistente y archivos de plantilla asociados al proyecto en los cuadros de diálogo. El contenido incluye un registro por archivo o carpeta. Se combinan todos los archivos. vsdir en una ubicación a la que se hace referencia, aunque en general solo se proporciona un archivo. vsdir para describir varias carpetas, asistentes o archivos de plantilla.
@@ -64,6 +64,6 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 
 - Si elimina los archivos. vsz, las carpetas o los archivos de plantilla, también debe quitar los registros asociados del archivo. vsdir.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Asistentes](../../extensibility/internals/wizards.md)
 - [Archivo de asistente (.Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)
