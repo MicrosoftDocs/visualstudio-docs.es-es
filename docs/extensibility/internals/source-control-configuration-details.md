@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], configuration details
 ms.assetid: adbee9fc-7a2e-4abe-a3b8-e6615bcd797f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9a3a2f33fcbb94d1e863daf69b8561f7bad4f2a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a5c93e690922057116b395bed3881627e8a37847
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99846509"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069353"
 ---
 # <a name="source-control-configuration-details"></a>Detalles de configuración del control de código fuente
 Para implementar el control de código fuente, debe configurar correctamente el sistema del proyecto o el editor para hacer lo siguiente:
@@ -52,7 +52,7 @@ Para implementar el control de código fuente, debe configurar correctamente el 
 
  Para cada acción de agregar, cambiar nombre y quitar, hay un `OnQuery*` método y un `OnAfter*` método. Llame al `OnQuery*` método para solicitar permiso para agregar, cambiar el nombre o quitar el archivo o directorio. Llame al `OnAfter*` método una vez agregado, cambiado de nombre o quitado el archivo o directorio y el estado del proyecto refleja el nuevo estado.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A>

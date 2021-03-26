@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Project element [Visual Studio Templates]
 - <Project> element [Visual Studio Templates]
 ms.assetid: 1da15ea6-26e2-462b-a03e-584ef4996579
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b8373501f324882c541784c6786b6b9f04a76069
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 52bfb5f65aa9d42c46eece619a21152c51e8fa28
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959459"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068809"
 ---
 # <a name="project-element-visual-studio-templates"></a>Project (elemento, plantillas de Visual Studio)
 Especifica los archivos o directorios que se van a agregar al proyecto.
@@ -66,7 +66,7 @@ Especifica los archivos o directorios que se van a agregar al proyecto.
 |-------------|-----------------|
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Elemento necesario.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  `Project` es un elemento secundario opcional de `TemplateContent`.
 
  El `Project` elemento se usa para especificar un proyecto y, por lo tanto, solo es válido en las plantillas de proyecto.

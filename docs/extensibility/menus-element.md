@@ -8,17 +8,17 @@ helpviewer_keywords:
 - VSCT XML schema elements, Menus
 - Menus element (VSCT XML schema)
 ms.assetid: d825a99b-e05c-4dd9-8933-a180216d667a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e45fa38b5c5709de34b70dc311421acf76ca92d0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c5b6010945bd176f0663c7b0d57c3991470fff07
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99886787"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105064012"
 ---
 # <a name="menus-element"></a>Menus (elemento)
 Define todos los menús y las barras de herramientas que implementa un VSPackage.
@@ -79,6 +79,6 @@ Define todos los menús y las barras de herramientas que implementa un VSPackage
 <Commands>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Cómo agrega VSPackages los elementos de la interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md)

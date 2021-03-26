@@ -8,17 +8,17 @@ helpviewer_keywords:
 - events [Visual Studio], exposing
 - automation [Visual Studio SDK], exposing events
 ms.assetid: 70bbc258-c221-44f8-b0d7-94087d83b8fe
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00dd13898204fe322ec0ddd33db10e7ca19db167
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 019efb11d7a31af875425888a1f70423bca76ca9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946649"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069808"
 ---
 # <a name="expose-events-in-the-visual-studio-sdk"></a>Exponer eventos en el SDK de Visual Studio
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] permite el origen de eventos mediante la automatización. Se recomienda el origen de eventos para proyectos y elementos de proyecto.
@@ -70,7 +70,7 @@ ms.locfileid: "99946649"
 
  *AutomationEvents. h* y *AutomationEvents. cpp* contienen declaraciones e implementaciones de las clases de la tabla siguiente.
 
-|Class|Descripción|
+|Clase|Descripción|
 |-----------|-----------------|
 |`CAutomationEvents`|Implementa un objeto raíz del evento, recuperado del `DTE.Events` objeto.|
 |`CProjectsEventsContainer` y `CProjectItemsEventsContainer`|Implemente los objetos de origen de eventos que desencadenan los eventos correspondientes.|
@@ -110,5 +110,5 @@ STDMETHODIMP CVsPackage::GetAutomationObject(
 
  Los objetos de evento se recuperan de la misma ubicación central, el `DTE.Events` objeto. De esta manera, todos los objetos de evento se agrupan para que un usuario final no tenga que examinar todo el modelo de objetos para encontrar un evento específico. Esto también le permite proporcionar objetos VSPackage específicos, en lugar de requerir que implemente su propio código para eventos para todo el sistema. Sin embargo, para el usuario final, que debe encontrar un evento para la `ProjectItem` interfaz, no se borra inmediatamente de donde se recupera ese objeto de evento.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>

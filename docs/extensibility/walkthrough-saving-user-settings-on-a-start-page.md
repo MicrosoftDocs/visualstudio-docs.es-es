@@ -5,18 +5,18 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: e32db6c2aecde61598036b8ba2ed21141e41a4af
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: be270fe8b76b6cd07bd27350eabceb5eecbc446b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888945"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078336"
 ---
 # <a name="walkthrough-save-user-settings-on-a-start-page"></a>Tutorial: guardar la configuración de usuario en una página de inicio
 
@@ -79,7 +79,7 @@ Para obtener más información sobre cómo conservar la configuración, vea [ext
 
 1. En el panel XAML, haga clic con el botón secundario en el `Click` atributo del <xref:System.Windows.Controls.Button> elemento y, a continuación, haga clic en **navegar hasta el controlador de eventos**.
 
-     Este paso abre *myControl.Xaml.CS* y crea un controlador de código auxiliar para el `Button_Click` evento.
+     Este paso abre *DataControl. Xaml. CS* y crea un controlador de código auxiliar para el `Button_Click` evento.
 
 2. Agregue las siguientes `using` directivas a la parte superior del archivo.
 
@@ -198,7 +198,7 @@ Para obtener más información sobre cómo conservar la configuración, vea [ext
 
 Puede modificar este control de usuario para guardar y recuperar cualquier número de valores de configuración personalizados mediante el uso de diferentes valores de controladores de eventos diferentes para obtener y establecer la `SettingsStore` propiedad. Siempre que use un `propertyName` parámetro diferente para cada llamada a <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore.SetString%2A> , los valores no se sobrescriben entre sí en el registro.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - <xref:EnvDTE80.DTE2?displayProperty=fullName>
 - [Agregar comandos de Visual Studio a una página de inicio](../extensibility/adding-visual-studio-commands-to-a-start-page.md)

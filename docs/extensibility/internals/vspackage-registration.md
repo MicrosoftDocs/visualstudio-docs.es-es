@@ -8,17 +8,17 @@ helpviewer_keywords:
 - registration, VSPackages
 - VSPackages, registering
 ms.assetid: ecd20da8-b04b-4141-a8f4-a2ef91dd597a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ed2dfccb47c980852bcdda423871f7517ef785a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: afa2ac0f8608e7cafe8c465ea5ff0b8c0031dd58
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900048"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069158"
 ---
 # <a name="vspackage-registration"></a>Registro de VSPackage
 Los VSPackages deben informar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] de que están instalados y deben cargarse. Este proceso se consigue escribiendo información en el registro. Es un trabajo típico de un instalador.
@@ -57,6 +57,6 @@ Los VSPackages deben informar [!INCLUDE[vsprvs](../../code-quality/includes/vspr
 
 - El código de registro automático puede denegar el acceso a los recursos de red, como las bibliotecas de tipos, si un componente se especifica como Run-from-Source y se muestra en la tabla SelfReg. Esto puede hacer que se produzca un error en la instalación del componente durante una instalación administrativa.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Windows Installer](/windows/desktop/Msi/windows-installer-portal)
 - [Registro de paquetes administrados](/previous-versions/bb166783(v=vs.100))

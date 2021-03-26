@@ -7,20 +7,20 @@ ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - outlining
 ms.assetid: d75a44aa-265a-44d4-9c28-457f59c4ff9f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: aa66d3b32f6992cb3a5db13bc2b7ee4d5cd9294c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 48454af0c4bb27a1c66cae9fa2d469622856dcc3
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951191"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078427"
 ---
 # <a name="walkthrough-outlining"></a>Tutorial: Esquematización
 Configure características basadas en lenguajes como la esquematización definiendo los tipos de regiones de texto que desea expandir o contraer. Puede definir regiones en el contexto de un servicio de lenguaje o definir su propia extensión de nombre de archivo y tipo de contenido, y aplicar la definición de región solo a ese tipo o aplicar las definiciones de región a un tipo de contenido existente (como "texto"). En este tutorial se muestra cómo definir y mostrar las regiones de esquematización.
@@ -136,5 +136,5 @@ Configure características basadas en lenguajes como la esquematización definie
 
 4. Debe haber una región de esquematización que incluya ambos corchetes. Debe poder hacer clic en el signo menos situado a la izquierda del corchete de apertura para contraer la región de esquematización. Cuando se contrae la región, el símbolo de puntos suspensivos (*...*) debe aparecer a la izquierda de la región contraída y debe aparecer un elemento emergente que contiene el **texto de desplazamiento** del texto cuando se mueve el puntero sobre los puntos suspensivos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Tutorial: vincular un tipo de contenido a una extensión de nombre de archivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

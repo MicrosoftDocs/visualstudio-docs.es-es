@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - we site projects, templates
 ms.assetid: 37173c97-486b-4b3c-8ed3-cf5890c4de23
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 988b81e72ff7714cb8a0983655de551b54c9150c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8c39e900bbdddd1d558bd0604f16924d2536cb98
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940038"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069107"
 ---
 # <a name="web-site-support-templates"></a>Plantillas de compatibilidad del sitio web
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Las plantillas de elementos y proyectos de sitio web proporcionan códigos auxiliares reutilizables y personalizables de los elementos y del proyecto de sitio web que aceleran el proceso de desarrollo mediante la eliminación de la necesidad de crear nuevos proyectos y elementos de sitios web desde cero. Para obtener más información sobre [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] las plantillas, vea [crear plantillas de proyecto y de elemento](../../ide/creating-project-and-item-templates.md).
@@ -65,7 +65,7 @@ ms.locfileid: "99940038"
 
 - web.config
 
-     El archivo de configuración Web. site raíz.
+     El archivo de configuración web.site raíz.
 
 - WebApplication. vstemplate
 
@@ -88,7 +88,7 @@ ms.locfileid: "99940038"
 
 - web.config
 
-- El archivo de configuración Web. site raíz.
+- El archivo de configuración web.site raíz.
 
 - WebService. vstemplate
 
@@ -186,5 +186,5 @@ ms.locfileid: "99940038"
 
      El archivo de plantilla que determina el contenido de la nueva página maestra y su archivo dependiente, si existe.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Compatibilidad del sitio web](../../extensibility/internals/web-site-support.md)

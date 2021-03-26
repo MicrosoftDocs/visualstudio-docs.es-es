@@ -8,17 +8,17 @@ helpviewer_keywords:
 - VSIX galleries, private
 - private galleries, VSIX
 ms.assetid: b6b3dee7-91c5-4556-9f69-0d56b675e83b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d5b58c5885f4fc9bd3765c818ea414bee0dbf3c4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c64c5880fcdb1d6a1fb3d6fc7c71f55abf7cbbc1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961864"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069041"
 ---
 # <a name="private-galleries"></a>Galerías privadas
 Puede compartir los controles, las plantillas y las herramientas que desarrolle mediante su publicación en una *galería privada* de la intranet de la organización, como se indica a continuación:
@@ -91,6 +91,6 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 
 3. En el panel derecho, seleccione una extensión y, a continuación, elija el botón **Actualizar** .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Búsqueda y uso de extensiones de Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)
 - [Envío de extensiones de Visual Studio](../extensibility/shipping-visual-studio-extensions.md)

@@ -11,17 +11,17 @@ helpviewer_keywords:
 - ProjectItem element [Visual Studio project templates]
 - <ProjectItem> element [Visual Studio project templates]
 ms.assetid: 82879fbe-7756-42cd-9a07-c10edf5b4673
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e0cf60b260204ac3b97a222591946765cf8bb80
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bb7513a37f73bfd4dfc1cb8060c772d375a57329
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910967"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068757"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem (elemento, plantillas de proyecto de Visual Studio)
 Especifica un archivo que se incluye en la plantilla de proyecto.
@@ -75,7 +75,7 @@ Especifica un archivo que se incluye en la plantilla de proyecto.
 
  Un `string` que representa el nombre o la ruta de acceso a un archivo en el archivo *. zip* de la plantilla.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  `ProjectItem` es un elemento secundario opcional de `Project` .
 
  El `TargetFileName` atributo se puede usar para crear una estructura de directorios diferente de la estructura de directorios del archivo *. zip* de la plantilla. Por ejemplo, si el archivo *. VB* existe en la raíz del archivo *. zip* de plantilla, pero desea que el archivo se coloque en un directorio denominado *CustomFiles* en todos los proyectos creados a partir de la plantilla, usaría el siguiente código XML:

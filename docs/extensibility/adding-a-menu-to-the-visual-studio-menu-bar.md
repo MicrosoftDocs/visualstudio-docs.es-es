@@ -8,17 +8,17 @@ helpviewer_keywords:
 - menus, creating top level
 - top-level menus
 ms.assetid: 58fc1a31-2aeb-441c-8e48-c7d5cbcfe501
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6bd568e53c3a74819f642f0593524b314e065afb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 22ce9bc00f24278fd2c0533052d7bd5e944b1ebf
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951568"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078349"
 ---
 # <a name="add-a-menu-to-the-visual-studio-menu-bar"></a>Agregar un menú a la barra de menús de Visual Studio
 
@@ -45,13 +45,13 @@ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el c
 
 ::: moniker range="vs-2017"
 
-2. Cuando se abra el proyecto, agregue una plantilla de elemento de comando personalizada denominada **prueba**. En el **Explorador de soluciones**, haga clic con el botón secundario en el nodo del proyecto y seleccione **Agregar**  >   **nuevo elemento**. En el cuadro de diálogo **Agregar nuevo elemento** , vaya a **Visual C#/extensibilidad** y seleccione **comando personalizado**. En el campo **nombre** situado en la parte inferior de la ventana, cambie el nombre del archivo de comandos a *TestCommand.CS*.
+2. Cuando se abra el proyecto, agregue una plantilla de elemento de comando personalizada denominada **prueba**. En el **Explorador de soluciones**, haga clic con el botón secundario en el nodo del proyecto y seleccione **Agregar**  >   **nuevo elemento**. En el cuadro de diálogo **Agregar nuevo elemento** , vaya a **Visual C#/extensibilidad** y seleccione **comando personalizado**. En el campo **nombre** situado en la parte inferior de la ventana, cambie el nombre del archivo de comandos a *prueba. CS*.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. Cuando se abra el proyecto, agregue una plantilla de elemento de comando personalizada denominada **prueba**. En el **Explorador de soluciones**, haga clic con el botón secundario en el nodo del proyecto y seleccione **Agregar**  >   **nuevo elemento**. En el cuadro de diálogo **Agregar nuevo elemento** , vaya a **Visual C#/extensibilidad** y seleccione **comando**. En el campo **nombre** situado en la parte inferior de la ventana, cambie el nombre del archivo de comandos a *TestCommand.CS*.
+2. Cuando se abra el proyecto, agregue una plantilla de elemento de comando personalizada denominada **prueba**. En el **Explorador de soluciones**, haga clic con el botón secundario en el nodo del proyecto y seleccione **Agregar**  >   **nuevo elemento**. En el cuadro de diálogo **Agregar nuevo elemento** , vaya a **Visual C#/extensibilidad** y seleccione **comando**. En el campo **nombre** situado en la parte inferior de la ventana, cambie el nombre del archivo de comandos a *prueba. CS*.
 
 ::: moniker-end
 
@@ -169,6 +169,6 @@ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el c
 
     Debería aparecer un cuadro de mensaje y mostrar el mensaje "prueba Inside TopLevelMenu. prueba. MenuItemCallback ()".
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md)

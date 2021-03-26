@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - solutions, about solutions
 ms.assetid: 3b21e3a1-170a-4485-941e-6b04b7b27886
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91903954f490e5845e01ddbf4b7aa4767f2ceacc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 914f1744accc10eb55cfb0b321a04560c27bca05
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99846548"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069379"
 ---
 # <a name="solutions-overview"></a>Introducción a soluciones
 
@@ -47,7 +47,7 @@ Cuando se abre una solución, se produce el siguiente proceso.
 > [!NOTE]
 > Si desea crear una nueva configuración de soluciones formada por dos configuraciones de proyectos y excluida una tercera de la compilación, debe usar la interfaz de usuario de las páginas de propiedades o la automatización. No puede cambiar las configuraciones del administrador de compilación de soluciones y sus propiedades directamente, pero puede manipular el administrador de compilación de soluciones mediante la `SolutionBuild` clase de dte en el modelo de automatización. Para obtener más información sobre la configuración de soluciones, vea [configuración de soluciones](../../extensibility/internals/solution-configuration.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>
