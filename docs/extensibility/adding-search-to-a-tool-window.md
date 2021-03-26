@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - tool windows, adding search
 ms.assetid: f78c4892-8060-49c4-8ecd-4360f1b4d133
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71c2f0be2377ea391595b02f5b1e94465cffcf68
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 82176afaacae3b9f4553c8b1b5b41b9a4f10dace
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937106"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105097557"
 ---
 # <a name="add-search-to-a-tool-window"></a>Agregar búsqueda a una ventana de herramientas
 Al crear o actualizar una ventana de herramientas en la extensión, puede Agregar la misma funcionalidad de búsqueda que aparece en otra parte de Visual Studio. Esta funcionalidad incluye las siguientes características:
@@ -67,7 +67,7 @@ Al seguir este tutorial, aprenderá a realizar las siguientes tareas:
     </StackPanel>
     ```
 
-3. En el archivo *TestSearchControl.Xaml.CS* , agregue la siguiente directiva using:
+3. En el archivo *TestSearchControl. Xaml. CS* , agregue la siguiente directiva using:
 
     ```csharp
     using System.Text;
@@ -90,7 +90,7 @@ Al seguir este tutorial, aprenderá a realizar las siguientes tareas:
 
 ## <a name="to-add-a-search-box-to-the-tool-window"></a>Para agregar un cuadro de búsqueda a la ventana de herramientas
 
-1. En el archivo *TestSearch.CS* , agregue el código siguiente a la `TestSearch` clase. El código invalida la <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.SearchEnabled%2A> propiedad para que el descriptor de acceso get devuelva `true` .
+1. En el archivo *TestSearch. CS* , agregue el siguiente código a la `TestSearch` clase. El código invalida la <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.SearchEnabled%2A> propiedad para que el descriptor de acceso get devuelva `true` .
 
      Para habilitar la búsqueda, debe invalidar la <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.SearchEnabled%2A> propiedad. La <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> clase implementa <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch> y proporciona una implementación predeterminada que no habilita la búsqueda.
 
@@ -110,7 +110,7 @@ Al seguir este tutorial, aprenderá a realizar las siguientes tareas:
 ## <a name="to-add-the-search-implementation"></a>Para agregar la implementación de búsqueda
  Cuando se habilita la búsqueda en <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> , como en el procedimiento anterior, la ventana de herramientas crea un host de búsqueda. Este host configura y administra los procesos de búsqueda, que siempre se producen en un subproceso en segundo plano. Dado <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> que la clase administra la creación del host de búsqueda y la configuración de la búsqueda, solo necesita crear una tarea de búsqueda y proporcionar el método de búsqueda. El proceso de búsqueda se produce en un subproceso en segundo plano y las llamadas al control de la ventana de herramientas se producen en el subproceso de la interfaz de usuario. Por lo tanto, debe usar el método [ThreadHelper. Invoke *](https://msdn.microsoft.com/data/ee197798(v=vs.85)) para administrar las llamadas que realice para tratar con el control.
 
-1. En el archivo *TestSearch.CS* , agregue las siguientes `using` directivas:
+1. En el archivo *TestSearch. CS* , agregue las siguientes `using` directivas:
 
     ```csharp
     using System;
@@ -241,7 +241,7 @@ Al seguir este tutorial, aprenderá a realizar las siguientes tareas:
 ## <a name="to-customize-the-search-behavior"></a>Para personalizar el comportamiento de búsqueda
  Al cambiar la configuración de búsqueda, puede realizar una serie de cambios en el modo en que aparece el control de búsqueda y cómo se lleva a cabo la búsqueda. Por ejemplo, puede cambiar la marca de agua (el texto predeterminado que aparece en el cuadro de búsqueda), el ancho mínimo y máximo del control de búsqueda y si desea mostrar una barra de progreso. También puede cambiar el punto en el que los resultados de la búsqueda empiezan a aparecer (a petición o búsqueda instantánea) y si se muestra una lista de términos para los que se ha buscado recientemente. Puede encontrar la lista completa de valores de configuración en la <xref:Microsoft.VisualStudio.PlatformUI.SearchSettingsDataSource> clase.
 
-1. En el archivo * TestSearch.cs *, agregue el siguiente código a la `TestSearch` clase. Este código habilita la búsqueda instantánea en lugar de la búsqueda a petición (lo que significa que el usuario no tiene que hacer clic en **entrar**). El código invalida el `ProvideSearchSettings` método en la `TestSearch` clase, que es necesario para cambiar la configuración predeterminada.
+1. En el archivo * TestSearch. CS *, agregue el siguiente código a la `TestSearch` clase. Este código habilita la búsqueda instantánea en lugar de la búsqueda a petición (lo que significa que el usuario no tiene que hacer clic en **entrar**). El código invalida el `ProvideSearchSettings` método en la `TestSearch` clase, que es necesario para cambiar la configuración predeterminada.
 
     ```csharp
     public override void ProvideSearchSettings(IVsUIDataSource pSearchSettings)
@@ -288,7 +288,7 @@ Al seguir este tutorial, aprenderá a realizar las siguientes tareas:
 ## <a name="to-enable-users-to-refine-their-searches"></a>Para permitir que los usuarios definan sus búsquedas
  Puede permitir que los usuarios definan sus búsquedas por medio de opciones como **coincidencia de mayúsculas y minúsculas** o **palabras completas**. Las opciones pueden ser booleanas, que aparecen como casillas de verificación o comandos, que aparecen como botones. En este tutorial, creará una opción booleana.
 
-1. En el archivo *TestSearch.CS* , agregue el código siguiente a la `TestSearch` clase. El código invalida el `SearchOptionsEnum` método, que permite a la implementación de búsqueda detectar si una opción determinada está activada o desactivada. El código de `SearchOptionsEnum` agrega una opción para buscar coincidencias de mayúsculas y minúsculas en un <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumWindowSearchOptions> enumerador. La opción de coincidencia de mayúsculas y minúsculas también está disponible como la `MatchCaseOption` propiedad.
+1. En el archivo *TestSearch. CS* , agregue el siguiente código a la `TestSearch` clase. El código invalida el `SearchOptionsEnum` método, que permite a la implementación de búsqueda detectar si una opción determinada está activada o desactivada. El código de `SearchOptionsEnum` agrega una opción para buscar coincidencias de mayúsculas y minúsculas en un <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumWindowSearchOptions> enumerador. La opción de coincidencia de mayúsculas y minúsculas también está disponible como la `MatchCaseOption` propiedad.
 
     ```csharp
     private IVsEnumWindowSearchOptions m_optionsEnum;
@@ -341,7 +341,7 @@ Al seguir este tutorial, aprenderá a realizar las siguientes tareas:
 ## <a name="to-add-a-search-filter"></a>Para agregar un filtro de búsqueda
  Puede Agregar filtros de búsqueda que permitan a los usuarios restringir el conjunto de destinos de búsqueda. Por ejemplo, puede filtrar los archivos en el explorador de archivos por las fechas en las que se modificaron más recientemente y sus extensiones de nombre de archivo. En este tutorial, agregará un filtro solo para las líneas pares. Cuando el usuario elige ese filtro, el host de búsqueda agrega las cadenas que especifique a la consulta de búsqueda. A continuación, puede identificar estas cadenas dentro del método de búsqueda y filtrar los destinos de búsqueda en consecuencia.
 
-1. En el archivo *TestSearch.CS* , agregue el código siguiente a la `TestSearch` clase. El código implementa `SearchFiltersEnum` agregando un <xref:Microsoft.VisualStudio.PlatformUI.WindowSearchSimpleFilter> objeto que especifica que se filtren los resultados de la búsqueda para que solo aparezcan las líneas pares.
+1. En el archivo *TestSearch. CS* , agregue el siguiente código a la `TestSearch` clase. El código implementa `SearchFiltersEnum` agregando un <xref:Microsoft.VisualStudio.PlatformUI.WindowSearchSimpleFilter> objeto que especifica que se filtren los resultados de la búsqueda para que solo aparezcan las líneas pares.
 
     ```csharp
     public override IVsEnumWindowSearchFilters SearchFiltersEnum
@@ -358,7 +358,7 @@ Al seguir este tutorial, aprenderá a realizar las siguientes tareas:
 
      Ahora, el control de búsqueda muestra el filtro de búsqueda `Search even lines only` . Cuando el usuario elige el filtro, la cadena `lines:"even"` aparece en el cuadro de búsqueda. Otros criterios de búsqueda pueden aparecer al mismo tiempo que el filtro. Las cadenas de búsqueda pueden aparecer antes del filtro, después del filtro o ambos.
 
-2. En el archivo *TestSearch.CS* , agregue los siguientes métodos a la `TestSearchTask` clase, que se encuentra en la `TestSearch` clase. Estos métodos admiten el `OnStartSearch` método, que se modificará en el paso siguiente.
+2. En el archivo *TestSearch. CS* , agregue los siguientes métodos a la `TestSearchTask` clase, que se encuentra en la `TestSearch` clase. Estos métodos admiten el `OnStartSearch` método, que se modificará en el paso siguiente.
 
     ```csharp
     private string RemoveFromString(string origString, string stringToRemove)

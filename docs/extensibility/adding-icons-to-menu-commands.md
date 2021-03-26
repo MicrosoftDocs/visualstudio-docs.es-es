@@ -9,17 +9,17 @@ helpviewer_keywords:
 - toolbars [Visual Studio], adding icons to commands
 - commands [Visual Studio], adding icons
 ms.assetid: 362a0c7e-5729-4297-a83f-1aba1a37fd44
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9f37bd14ed43ab0e165346f8ce09512c3981177
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 01f159b9f07cd0d530039e0d5707cf38d51610ef
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934369"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105097595"
 ---
 # <a name="add-icons-to-menu-commands"></a>Agregar iconos a comandos de menú
 Los comandos pueden aparecer en los menús y las barras de herramientas. En las barras de herramientas, es habitual que se muestre un comando con solo un icono (para ahorrar espacio) mientras que en los menús aparece normalmente un comando con un icono y texto.
@@ -83,6 +83,6 @@ Los comandos pueden aparecer en los menús y las barras de herramientas. En las 
 
 8. Pruebe el icono. Compile la solución y comience la depuración. En la instancia experimental, busque el comando. Debería mostrar el icono que ha agregado.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Extensión de menús y comandos](../extensibility/extending-menus-and-commands.md)
 - [Referencia del esquema XML de VSCT](../extensibility/vsct-xml-schema-reference.md)

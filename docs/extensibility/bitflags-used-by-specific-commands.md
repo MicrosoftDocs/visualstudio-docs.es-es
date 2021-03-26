@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, bitflags used by specific commands
 ms.assetid: 37969977-6f7d-45c9-ba03-1306ae71f5d1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e018631e24cf7e678072b6b54183fd3c619dc4a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 41f070d61e547724b3067a9f4a1980d658fc30be
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890336"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105097297"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Marcadores usado por comandos específicos
 El comportamiento de una serie de funciones de la API del complemento de control de código fuente se puede modificar estableciendo uno o varios bits en un solo valor. Estos valores se conocen como marcadores. Los distintos marcadores que usa la API del complemento de control de código fuente se detallan aquí, agrupados por la función que los utiliza.
@@ -107,5 +107,5 @@ El comportamiento de una serie de funciones de la API del complemento de control
 |`SCC_OPT_SCO_NO`|0L|Predeterminada Aceptar para desproteger de la interfaz de usuario del complemento; el directorio de trabajo está establecido.|`SCC_OPT_SCCCHECKOUTONLY`|
 |`SCC_OPT_SCO_YES`|1 L|No hay ninguna desprotección de la interfaz de usuario del complemento, ningún directorio de trabajo.|`SCC_OPT_SCCCHECKOUTONLY`|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Complementos de control de código fuente](../extensibility/source-control-plug-ins.md)

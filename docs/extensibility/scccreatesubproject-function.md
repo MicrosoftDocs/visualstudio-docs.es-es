@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccCreateSubProject function
 ms.assetid: 08154aed-ae5c-463c-8694-745d0e332965
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38fb6a18954b0a2f976fad4b24819a08ed868ab6
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 70568c27afb4bdb5794db64322113dffbd824452
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221618"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074007"
 ---
 # <a name="scccreatesubproject-function"></a>SccCreateSubProject función)
 Esta función crea un subproyecto con el nombre especificado en un proyecto primario existente especificado por el `lpParentProjPath` argumento.
@@ -69,7 +69,7 @@ de Nombre sugerido del subproyecto (hasta SCC_PRJPATH_SIZE, incluido el terminad
 ## <a name="return-value"></a>Valor devuelto
  Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:
 
-|Valor|Descripción|
+|Value|Descripción|
 |-----------|-----------------|
 |SCC_OK|El subproyecto se creó correctamente.|
 |SCC_E_INITIALIZEFAILED|No se pudo inicializar el proyecto primario.|

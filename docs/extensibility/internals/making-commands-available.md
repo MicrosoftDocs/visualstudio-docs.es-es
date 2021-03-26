@@ -10,17 +10,17 @@ helpviewer_keywords:
 - toolbars [Visual Studio], best practices
 - menu commands, best practices
 ms.assetid: 3ffc4312-c6db-4759-a946-a4bb85f4a17a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4bb44fbb263bb12aba04c06f1248ae25aa9d546f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 29f5e5c634c1bf360409e35c87684282a26e8a07
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839550"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105095217"
 ---
 # <a name="making-commands-available"></a>Crear comandos disponibles
 
@@ -149,7 +149,7 @@ Observe también que todos los contextos de la interfaz de usuario deben proporc
 </VisibilityConstraints>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Agregar un comando a la barra de herramientas Explorador de soluciones](../../extensibility/adding-a-command-to-the-solution-explorer-toolbar.md)
 - [Cómo VSPackages agrega elementos de la interfaz de usuario](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

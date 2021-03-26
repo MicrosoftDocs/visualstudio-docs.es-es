@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccQueryChanges function
 ms.assetid: 4cd58eb3-6952-49b1-9620-8682e3eaa604
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e34c37ca999b05e7148d910032fe90c33470ce50
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: c821453642a3632c98fac153a367e8ba41495adc
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102220526"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073942"
 ---
 # <a name="sccquerychanges-function"></a>SccQueryChanges (Función)
 Esta función enumera una lista determinada de archivos y proporciona información sobre los cambios de nombre de cada archivo a través de una función de devolución de llamada.
@@ -59,7 +59,7 @@ de Valor que se pasará sin modificar a la función de devolución de llamada.
 ## <a name="return-value"></a>Valor devuelto
  Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:
 
-|Valor|Descripción|
+|Value|Descripción|
 |-----------|-----------------|
 |SCC_OK|El proceso de consulta se completó correctamente.|
 |SCC_E_PROJNOTOPEN|El proyecto no se ha abierto en el control de código fuente.|

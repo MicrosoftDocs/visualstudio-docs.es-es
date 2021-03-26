@@ -9,17 +9,17 @@ helpviewer_keywords:
 - upgrading applications, strategies
 - VSPackages, upgrade support
 ms.assetid: e01cb44a-8105-4cf4-8223-dfae65f8597a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b399feb80da56ef70b18a1b11b05c7f6cc3795f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a1da17c4bca485bd32aa6604b350b8af80277670
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883160"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073357"
 ---
 # <a name="upgrading-projects"></a>Actualización de proyectos
 
@@ -181,6 +181,6 @@ Normalmente, los implementadores de elementos de proyecto quieren aprovechar un 
 
 2. En el momento en que el elemento de proyecto recibe una notificación de la actualización del proyecto, se sigue mostrando el **Asistente para conversión de Visual Studio** . Por lo tanto, debe utilizar los métodos de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger> interfaz para proporcionar mensajes de actualización a la interfaz de usuario del asistente.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Proyectos](../../extensibility/internals/projects.md)

@@ -11,17 +11,17 @@ helpviewer_keywords:
 - SortOrder element [Visual Studio Templates]
 - <SortOrder> element [Visual Studio Templates]
 ms.assetid: 151932c1-f08a-4f78-a8d0-bd2f32211a9c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2a086f2ae678541ce28e9ede874c4198e349f438
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a195e3801ce505d2c1f069c07ff4457e1c1042b3
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942924"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073799"
 ---
 # <a name="sortorder-element-visual-studio-templates"></a>SortOrder (Elemento, Plantillas de Visual Studio)
 Especifica un valor que se usa para organizar la plantilla, entre otras plantillas de la misma categoría, tal y como aparece en el cuadro de diálogo **nuevo proyecto** o **Agregar nuevo elemento** .
@@ -55,7 +55,7 @@ Especifica un valor que se usa para organizar la plantilla, entre otras plantill
 
  `integer`Que representa el valor del criterio de ordenación.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  `SortOrder` es un elemento opcional. El valor predeterminado es 100 y todos los valores deben ser múltiplos de 10.
 
  El `SortOrder` elemento se omite para las plantillas creadas por el usuario. Todas las plantillas creadas por el usuario se ordenan alfabéticamente.
@@ -84,6 +84,6 @@ Especifica un valor que se usa para organizar la plantilla, entre otras plantill
 
  En este ejemplo, el `SortOrder` elemento es relativamente alto. Es probable que otras [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] plantillas de elementos tengan un `SortOrder` valor inferior a `290` y aparecerán delante de esta plantilla en el cuadro de diálogo **nuevo elemento** .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Crear plantillas de proyecto y de elemento](../ide/creating-project-and-item-templates.md)

@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccRunScc function
 ms.assetid: bbe7c931-b17a-4779-9cf6-59e5f9f0c172
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca492c35ba061072dc9e4b3d0eabc42476bcd8ed
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: e78e58eafebd06d1ce7c710a31ce295b49f26340
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221371"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073825"
 ---
 # <a name="sccrunscc-function"></a>SccRunScc (Función)
 Esta función invoca la herramienta de administración del control de código fuente.
@@ -54,7 +54,7 @@ de Matriz de nombres de archivo seleccionados.
 ## <a name="return-value"></a>Valor devuelto
  Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:
 
-|Valor|Descripción|
+|Value|Descripción|
 |-----------|-----------------|
 |SCC_OK|Se invocó correctamente la herramienta de administración del control de código fuente.|
 |SCC_I_OPERATIONCANCELED|La operación se canceló.|

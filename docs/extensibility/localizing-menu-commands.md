@@ -12,17 +12,17 @@ helpviewer_keywords:
 - localize visual studio
 - localize vsct
 ms.assetid: b04ee0f6-82ea-47e6-853a-72382267d6da
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: af86f64935d4e99d4c1245669505fcef8ce7ec1f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 141fb0d8ba6746e7d299984461fb3ca739d931d4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893625"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073266"
 ---
 # <a name="localize-menu-commands"></a>Localizar comandos de menú
 
@@ -112,9 +112,9 @@ Los recursos de texto que no sean nombres de comando se definen en archivos de r
 
 ## <a name="incorporate-localized-resources-into-the-project"></a>Incorporar recursos localizados en el proyecto
 
-Debe modificar el archivo *AssemblyInfo.CS* y el archivo de proyecto para incorporar los recursos localizados.
+Debe modificar el archivo *AssemblyInfo. CS* y el archivo de proyecto para incorporar los recursos localizados.
 
-1. En el nodo **propiedades** de **Explorador de soluciones**, Abra *AssemblyInfo.CS* o *AssemblyInfo. VB* en el editor.
+1. En el nodo **propiedades** de **Explorador de soluciones**, Abra *AssemblyInfo. CS* o *AssemblyInfo. VB* en el editor.
 
 2. Agregue la siguiente entrada.
 
@@ -167,7 +167,7 @@ Debe modificar el archivo *AssemblyInfo.CS* y el archivo de proyecto para incorp
 
      Esto crea un ensamblado principal y ensamblados de recursos para cada idioma. Para obtener información sobre la localización del proceso de implementación, consulte [localizar paquetes VSIX](../extensibility/localizing-vsix-packages.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Extender menús y comandos](../extensibility/extending-menus-and-commands.md)
 - [Globalizar y localizar aplicaciones](../ide/globalizing-and-localizing-applications.md)

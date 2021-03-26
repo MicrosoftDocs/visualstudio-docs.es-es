@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccDiff function
 ms.assetid: d49bc8c5-f631-4153-9d3c-feb3564da305
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f7573cafd8ea06537a7655897f3cc5907448cfa
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 151620a81af515bd8cd74938a1006d4a98959dd9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102220851"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073994"
 ---
 # <a name="sccdiff-function"></a>SccDiff función)
 Esta función muestra (u opcionalmente solo comprueba las diferencias entre el archivo actual (en el disco local) y su última versión protegida en el sistema de control de código fuente.
@@ -59,7 +59,7 @@ de Opciones específicas del complemento de control de código fuente.
 ## <a name="return-value"></a>Valor devuelto
  Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:
 
-|Valor|Descripción|
+|Value|Descripción|
 |-----------|-----------------|
 |SCC_OK|La copia de trabajo y la versión del servidor son idénticas.|
 |SCC_I_FILESDIFFERS|La copia de trabajo difiere de la versión bajo control de código fuente.|

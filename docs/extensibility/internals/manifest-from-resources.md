@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65e4b16beefdef765fe52afd9d84e64a767999fa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 42bd932b093ae805e8885bc9fc61324c3cadbe30
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839433"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105095178"
 ---
 # <a name="manifest-from-resources"></a>Manifest from Resources
 La herramienta Manifest from Resources es una aplicación de consola que toma una lista de recursos de imagen (archivos. png o. xaml) y genera un archivo. imagemanifest que permite usar esas imágenes con el servicio de imágenes de Visual Studio. Además, esta herramienta se puede usar para agregar imágenes a un imagemanifest existente. Esta herramienta es útil para agregar la compatibilidad con las imágenes y los elementos de gran nivel en una extensión de Visual Studio. El archivo. imagemanifest generado debe incluirse en e implementarse como parte de una extensión de Visual Studio (. vsix).

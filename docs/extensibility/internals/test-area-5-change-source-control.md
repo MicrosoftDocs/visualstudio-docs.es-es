@@ -8,17 +8,17 @@ helpviewer_keywords:
 - source control [Visual Studio SDK], changing
 - source control plug-ins, changing source control
 ms.assetid: fdf09e00-108c-4d51-bbd5-72452d52a490
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88dcc8e86da43f330c50ea478aaee572c1c3a060
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 44647781b8f7605a59fba5d9249b6a7165c0e27e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898138"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073409"
 ---
 # <a name="test-area-5-change-source-control"></a>Área de prueba 5: Cambio del control de código fuente
 Este área de prueba del complemento de control de código fuente cubre el cambio del control de código fuente mediante el comando **Cambiar control de código fuente** .
@@ -74,5 +74,5 @@ Este área de prueba del complemento de control de código fuente cubre el cambi
 |Reenlazar solución solo sin cerrar **Cambiar control de código fuente** (cuadro de diálogo)|1. cree un proyecto.<br />2. Agregue solo la solución al control de código fuente mediante (**archivo**, **control de código fuente**, **Agregar proyectos seleccionados al control de código fuente**.<br />3. Abra el cuadro de diálogo **Cambiar control de código fuente** .<br />4. Desenlazar solo la solución (no cierre el cuadro de diálogo **Cambiar control de código fuente** ).<br />5. enlazar solo la solución.<br />6. Haga clic en **Aceptar** para cerrar el cuadro de diálogo.<br />7. Consulte los elementos de la solución y la solución (si los hay).|La solución permanece controlada.<br /><br /> El proyecto permanece sin control.|
 |Reenlazar solución/proyecto solo cuando está en el mismo directorio|1. cree un proyecto.<br />2. Agregue solo el proyecto al control de código fuente mediante (**archivo**, **control de código fuente**, **Agregar proyectos seleccionados al control de código fuente**.<br />3. Cierre la solución.<br />4. cree una nueva solución con al menos dos proyectos.<br />5. agregar la solución al control de código fuente.<br />6. Agregue el proyecto creado en el paso 1 desde el control de código fuente.<br />7. acepte la desprotección de la solución si se le solicita.<br />8. Proteja toda la solución.<br />9. Abra el cuadro de diálogo **Cambiar control de código fuente** .<br />10. Seleccione el proyecto agregado (del paso 6) y haga clic en **Desenlazar**.<br />11. Haga clic en **Aceptar** para cerrar el cuadro de diálogo.<br />12. acepte la desprotección si se le solicita.<br />13. Vuelva a abrir el cuadro de diálogo **Cambiar control de código fuente** .<br />14. Seleccione el proyecto agregado (del paso 6) y haga clic en **enlazar**.<br />15. Seleccione la ubicación original.|La solución y los proyectos permanecen controlados.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Guía de pruebas para los complementos de control de código fuente](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

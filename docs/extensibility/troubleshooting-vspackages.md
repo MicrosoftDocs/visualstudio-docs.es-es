@@ -8,17 +8,17 @@ helpviewer_keywords:
 - VSPackages, troubleshooting
 - debugging, VSPackages
 ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 957488adb36c54355b4fe47577a7cd5b2407864f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e1a52e6e659a3841214db5da7a44431b68ea98e7
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893521"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073760"
 ---
 # <a name="troubleshooting-vspackages"></a>Solución de problemas de VSPackages
 A continuación se indican los problemas comunes que podría tener con el VSPackage y sugerencias para resolverlos.
@@ -78,7 +78,7 @@ A continuación se indican los problemas comunes que podría tener con el VSPack
 
      Los buenos puntos de partida para la depuración son el constructor y el método de inicialización. También puede establecer puntos de interrupción en el área que desea evaluar, como un comando de menú. Para habilitar los puntos de interrupción, debe ejecutar en el depurador.
 
-    1. En el menú **Proyecto** , haga clic en **Propiedades**.
+    1. En el menú **Proyecto**, haga clic en **Propiedades**.
 
     2. En el cuadro de diálogo **páginas de propiedades** , seleccione la pestaña **depurar** .
 
@@ -113,7 +113,7 @@ A continuación se indican los problemas comunes que podría tener con el VSPack
 
 1. En el caso de código administrado, asegúrese de que las rutas de acceso de referencia son correctas.
 
-   1. En el menú **Proyecto** , haga clic en **Propiedades**.
+   1. En el menú **Proyecto**, haga clic en **Propiedades**.
 
    2. Seleccione la pestaña **referencias** en el cuadro de diálogo **páginas de propiedades** y asegúrese de que todas las rutas de acceso son correctas. Como alternativa, puede usar la **Examinador de objetos** para buscar los objetos a los que se hace referencia.
 
@@ -125,6 +125,6 @@ A continuación se indican los problemas comunes que podría tener con el VSPack
 
    Asegúrese de que la entrada InprocServer32 tiene la ruta de acceso correcta del archivo dll de VSPackage.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [VSPackages](../extensibility/internals/vspackages.md)
 - [Solucionar problemas de Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)
