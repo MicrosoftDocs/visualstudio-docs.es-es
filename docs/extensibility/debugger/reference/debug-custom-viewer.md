@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUG_CUSTOM_VIEWER structure
 ms.assetid: 8e0ef3f0-0107-48e8-a037-6e52b4c4ed9d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 46133d2b2800977b0819835f578b04569c4f5ce8
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 76c02956acd9277f203c67bede7369d6bb7a603a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102151062"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096283"
 ---
 # <a name="debug_custom_viewer"></a>DEBUG_CUSTOM_VIEWER
 Estructura que identifica un visor personalizado o un visualizador de tipos.
@@ -50,7 +50,7 @@ public struct DEBUG_CUSTOM_VIEWER {
 };
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
 `dwID`\
 IDENTIFICADOR para diferenciar varios visores o visualizadores implementados por uno `GUID` .
 

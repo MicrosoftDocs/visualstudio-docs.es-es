@@ -8,19 +8,19 @@ f1_keywords:
 helpviewer_keywords:
 - BP_LOCATION_CODE_CONTEXT structure
 ms.assetid: 37412896-021a-4f73-9bb7-4125502c2e18
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: 8b84e71c3102071dcdd0bcb5be9b539144c19047
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: a792f19162cdcf41f86d52782dad31c21062cd55
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102144408"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078219"
 ---
 # <a name="bp_location_code_context"></a>BP_LOCATION_CODE_CONTEXT
 Describe la ubicación de un punto de interrupción que está enlazado directamente a una dirección en el programa que se está depurando.
@@ -33,7 +33,7 @@ typedef struct _BP_LOCATION_CODE_CONTEXT {
 } BP_LOCATION_CODE_CONTEXT;
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
 `pCodeContext`\
 El objeto [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) que identifica la posición del punto de interrupción en el código.
 

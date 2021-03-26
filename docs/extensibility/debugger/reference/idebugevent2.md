@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEvent2 interface
 ms.assetid: de3d714d-96fb-4e12-b66b-a75391472153
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e162e276fc93c9e2c0d4333ac0f5c2630f75618e
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: f5406c70703b594236dba47539e5cc76bbe67a73
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102152954"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105065767"
 ---
 # <a name="idebugevent2"></a>IDebugEvent2
 Esta interfaz se usa para comunicar la información de depuración crítica, como la detención en un punto de interrupción, y la información no crítica, como un mensaje de depuración.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ```
 IDebugEvent2 : IUnknown
@@ -53,6 +53,6 @@ IDebugEvent2 : IUnknown
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Consulte también
-- [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
+- [Interfaces principales](../../../extensibility/debugger/reference/core-interfaces.md)
 - [Evento](../../../extensibility/debugger/reference/idebugportevents2-event.md)
 - [Evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

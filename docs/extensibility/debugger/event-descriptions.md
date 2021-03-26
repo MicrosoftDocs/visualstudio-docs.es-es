@@ -7,24 +7,24 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], events
 ms.assetid: 09f61652-7e16-4bb0-8055-f61a84bf384e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2d4ee971e2c53c9431982ef33483471a50c54bc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cd8c6dbb4eddfcffa779b70b17819bf5e92c0c45
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851314"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096972"
 ---
 # <a name="event-descriptions"></a>Descripciones de eventos
 Cada tipo de evento tiene un propósito específico.
 
 ## <a name="events-and-the-reasons-for-their-use"></a>Eventos y motivos para su uso
 
-|Evento|Descripción|
+|evento|Descripción|
 |-----------|-----------------|
 |Activar eventos de documento|Se produce cuando el motor DE depuración (DE) desea que el IDE abra o ponga un documento en primer plano.|
 |Eventos de error de punto de interrupción o de punto de interrupción|Se envía cuando se enlaza un punto de interrupción o cuando no se puede enlazar un punto de interrupción y se devuelve un error.|
@@ -46,5 +46,5 @@ Cada tipo de evento tiene un propósito específico.
 |Eventos de cambio de nombre de subproceso|Se envía cuando el usuario cambia el nombre de un subproceso.|
 |Eventos de cambio de nombre de programa|Se envía cuando el usuario cambia el nombre de un programa.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Envío de eventos](../../extensibility/debugger/sending-events.md)

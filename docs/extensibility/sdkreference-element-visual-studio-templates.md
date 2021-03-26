@@ -6,17 +6,17 @@ ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
 ms.assetid: 72c8b352-0b7a-42b3-ba5d-2a2d1e90c34b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ab748a309bf57af79753596ede11b371589faa8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5ea070cf466782a1da09e1ba48d08a6965fd041a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941569"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063713"
 ---
 # <a name="sdkreference-element-visual-studio-templates"></a>SDKReference (Elemento, Plantillas de Visual Studio)
 Especifica que la plantilla del elemento usa una referencia de SDK.
@@ -49,7 +49,7 @@ Especifica que la plantilla del elemento usa una referencia de SDK.
 ## <a name="text-value"></a>Valor de texto
  Se requiere un valor de texto.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  Este texto especifica la referencia SDK que se debe agregar a un proyecto cuando se crea una instancia de la plantilla de elemento.
 
 ```xml
@@ -62,7 +62,7 @@ Especifica que la plantilla del elemento usa una referencia de SDK.
 ...
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [References (Elemento, Plantillas de Visual Studio)](../extensibility/references-element-visual-studio-templates.md)
 - [Reference (Elemento, Plantillas de Visual Studio)](../extensibility/reference-element-visual-studio-templates.md)
 - [Crear plantillas de proyecto y de elemento](../ide/creating-project-and-item-templates.md)

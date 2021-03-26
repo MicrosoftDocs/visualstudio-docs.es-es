@@ -1,5 +1,5 @@
 ---
-description: Esta estructura especifica información sobre un tipo de campo tomado de los metadatos.
+description: La estructura BUILT_TYPE especifica información sobre un tipo de campo tomado de los metadatos.
 title: BUILT_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - BUILT_TYPE structure
 ms.assetid: cc02c32c-0f65-4210-ad25-a9b1899066e8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dd9f5984861b0f56e4a46b4f793a38bbb3bafa60
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 00a031d02bba7ffcc1dca6f2cf73cfceeed04838
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102170990"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096582"
 ---
 # <a name="built_type"></a>BUILT_TYPE
 Esta estructura especifica información sobre un tipo de campo tomado de los metadatos.
@@ -44,7 +44,7 @@ public struct BUILT_TYPE {
 };
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
 `ulAppDomainID`\
 IDENTIFICADOR de la aplicación de la que procede el símbolo. Se utiliza para identificar de forma única una instancia de la aplicación.
 

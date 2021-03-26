@@ -8,19 +8,19 @@ f1_keywords:
 helpviewer_keywords:
 - BP_LOCATION_DATA_STRING structure
 ms.assetid: 445d6f3f-95b0-47ac-85e2-51b778240687
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: 1e4a250843ebbb6ab7680040e3aa296699e184ee
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 98cfb12649fe85ce9e5f6b6a51a8c61243b5e9da
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102144356"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096764"
 ---
 # <a name="bp_location_data_string"></a>BP_LOCATION_DATA_STRING
 Se usa para establecer puntos de interrupción de datos que se basan en una cadena que el usuario puede especificar desde el entorno de desarrollo integrado (IDE).
@@ -36,7 +36,7 @@ typedef struct _BP_LOCATION_DATA_STRING {
 } BP_LOCATION_DATA_STRING;
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
 `pThread`\
 El objeto [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) que representa el subproceso en el que se produce el punto de interrupción.
 

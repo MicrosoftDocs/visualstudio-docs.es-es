@@ -7,24 +7,24 @@ ms.topic: conceptual
 helpviewer_keywords:
 - web projects, essentials
 ms.assetid: ca2f4e43-322c-4431-8680-52da846940bc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b071631018ef398be481ccf514b33296e55fc2e8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9442dcdd460e1213c3c07ee87a5ea2e0d7099072
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99886878"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085707"
 ---
 # <a name="web-project-essentials"></a>Conceptos básicos del proyecto web
 Los proyectos web crean aplicaciones Web. Puede usar un proyecto web para crear una aplicación web que tiene páginas web inteligentes. Una página web inteligente tiene código del lado servidor que representa la página web a petición.
 
  Mediante el uso de lenguajes de programación tradicionales, como [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] o [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] , puede crear páginas web inteligentes para recopilar y procesar información de un usuario, almacenarla en una base de datos, etc.
 
-- El modelo de código subyacente asocia los archivos de código fuente dependientes con páginas web que tienen la extensión de archivo. aspx o. asmx. Por ejemplo, Hello. aspx podría tener el archivo de código fuente dependiente hello.aspx.cs.
+- El modelo de código subyacente asocia los archivos de código fuente dependientes con páginas web que tienen la extensión de archivo. aspx o. asmx. Por ejemplo, Hello. aspx podría tener el archivo de código fuente dependiente Hello. aspx. cs.
 
 - El código del lado servidor asociado a una página web inteligente se compila en un archivo ejecutable que se encuentra en la carpeta del sitio web/bin.
 
@@ -59,5 +59,5 @@ Los proyectos web crean aplicaciones Web. Puede usar un proyecto web para crear 
 
   - Los marcadores de error (detectores rojos) siempre deben crearse en el búfer primario del editor de código.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Proyectos web](../../extensibility/internals/web-projects.md)

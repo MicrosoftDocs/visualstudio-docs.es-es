@@ -9,17 +9,17 @@ helpviewer_keywords:
 - side-by-side installation
 - installation [Visual Studio SDK], side-by-side
 ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 90acdde2c365effd189efe4437b5e41c39f494b0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 257158ec3c8d4364e1aa52133c457e24fd98cff3
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949641"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078245"
 ---
 # <a name="choose-between-shared-and-versioned-vspackages"></a>Elegir entre VSPackages compartidos y con control de versiones
 Las distintas versiones de Visual Studio pueden coexistir en el mismo equipo. Los VSPackages pueden admitir cualquier combinación de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] versiones.
@@ -63,6 +63,6 @@ Las distintas versiones de Visual Studio pueden coexistir en el mismo equipo. Lo
 
   Además de planear la compatibilidad binaria con los archivos binarios de VSPackage, también debe tener en cuenta los formatos de archivo de proyecto y de solución. Si el VSPackage crea un nuevo tipo de proyecto, debe decidir si puede ejecutarse en una sola versión o en varias versiones de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Para obtener más información, vea [actualizar proyectos personalizados](../extensibility/internals/upgrading-projects.md#upgrading-custom-projects).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Instalar VSPackages con Windows Installer](../extensibility/internals/installing-vspackages-with-windows-installer.md)
 - [Administración de componentes](../extensibility/internals/component-management.md)

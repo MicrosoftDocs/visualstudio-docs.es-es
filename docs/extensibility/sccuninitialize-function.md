@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccUninitialize function
 ms.assetid: 17cf5337-d251-4422-bc96-93fe7d48f2ae
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 187451aba5151c95d8947bd4f5a1419894cc65e7
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 7d387167e2032cbb253e86f8d67da38f99fc1076
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221332"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063778"
 ---
 # <a name="sccuninitialize-function"></a>SccUninitialize (Función)
 Esta función limpia las asignaciones o conexiones abiertas creadas por una llamada anterior a [SccInitialize](../extensibility/sccinitialize-function.md) como preparación para cerrar el complemento de control de código fuente.
@@ -39,7 +39,7 @@ de Puntero a la estructura de contexto del complemento de control de código fue
 ## <a name="return-value"></a>Valor devuelto
  Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:
 
-|Valor|Descripción|
+|Value|Descripción|
 |-----------|-----------------|
 |SCC_OK|La limpieza se completó correctamente.|
 

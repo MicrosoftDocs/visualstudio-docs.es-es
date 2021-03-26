@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluation, context
 ms.assetid: a2fd3758-09bd-45ae-8ecc-2d276c0036ba
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 127746b06ef09496ef8f50aa874ff32e2f983f65
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 249510349d831f4f00578e36200f0d236d83ef59
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921542"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096842"
 ---
 # <a name="expression-evaluation-context"></a>Contexto de evaluación de expresiones
 En la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depuración, un **contexto de evaluación de expresión**:
@@ -30,6 +30,6 @@ En la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depuración, 
 
      Dado un `BSTR` y una interfaz [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) , un motor de depuración (de) puede crear una interfaz [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) mediante el análisis de una expresión. Dada una `IDebugExpression2` interfaz, el de puede obtener un valor a través de la evaluación de expresiones sincrónicas o asincrónicas. Este valor, junto con el nombre y el tipo de la variable o argumento, se envía al IDE para su presentación.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces de evaluación de expresiones](../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [Contextos del depurador](../../extensibility/debugger/debugger-contexts.md)

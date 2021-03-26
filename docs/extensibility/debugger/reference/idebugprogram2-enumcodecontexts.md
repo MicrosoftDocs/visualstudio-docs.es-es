@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::EnumCodeContexts
 ms.assetid: 478e06a2-07bb-4841-8887-deab0f42ebd0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fd26ee9fe0c6e28695eeca5a77a5b90fbbb25213
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 2dbcc3f967f0569efcfc1287ba2b215760ce0b34
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102164739"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105076061"
 ---
 # <a name="idebugprogram2enumcodecontexts"></a>IDebugProgram2::EnumCodeContexts
 Recupera una lista de contextos de código para una posición determinada en un archivo de código fuente.

@@ -8,25 +8,25 @@ f1_keywords:
 helpviewer_keywords:
 - GETHOSTNAME_TYPE enumeration
 ms.assetid: 2be92bea-8133-412b-9015-1833baf16e1b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3354bdbceeac796e2761bb83a5d860ca8a716315
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: a333c112db08935896b40e41389284436d7ec6a7
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102150788"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105059228"
 ---
 # <a name="gethostname_type"></a>GETHOSTNAME_TYPE
 Especifica el tipo de nombre de host.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ```cpp
 enum enum_GETHOSTNAME_TYPE {

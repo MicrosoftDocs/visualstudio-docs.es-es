@@ -7,20 +7,20 @@ helpviewer_keywords:
 - IDebugFunctionObject2::CreateObject
 - CreateObject
 ms.assetid: 148de615-941e-4b64-ab11-75b692aae465
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4cd5eb81972af35b84c688e34b8cbc285c4723c2
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: b75cd2fae72d0ce8901445c3271a955100391d75
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102143147"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063570"
 ---
 # <a name="idebugfunctionobject2createobject"></a>IDebugFunctionObject2::CreateObject
 Crea un objeto que usa un constructor con valores de marca de evaluación determinados y un valor de tiempo de espera.

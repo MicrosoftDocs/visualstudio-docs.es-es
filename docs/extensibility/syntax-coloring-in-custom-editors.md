@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - syntax coloring
 ms.assetid: 74900b9a-baef-432a-8231-4568fb5e19ad
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bedfdffd91c4e15de556609a030f7e0238a7e7d3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 06cd4ae1db1187cc650a4fd9486f4b1686c6b015
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880715"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063700"
 ---
 # <a name="syntax-coloring-in-custom-editors"></a>Colores de sintaxis en editores personalizados
 Los editores del SDK del entorno de Visual Studio, incluido el editor principal, usan servicios de lenguaje para identificar elementos sintácticos específicos y mostrarlos con los colores especificados para una vista de documento determinada.
@@ -56,7 +56,7 @@ Los editores del SDK del entorno de Visual Studio, incluido el editor principal,
 > [!NOTE]
 > Además de usar el coloreador de un servicio de lenguaje, un VSPackage puede elegir usar el mecanismo de color de texto del SDK de entorno de Visual Studio de uso general. Para obtener más información sobre este mecanismo, vea [usar fuentes y colores](/previous-versions/visualstudio/visual-studio-2015/extensibility/using-fonts-and-colors?preserve-view=true&view=vs-2015).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Colores de la sintaxis en un servicio de lenguaje heredado](../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
 - [Implementación de colores de la sintaxis](../extensibility/internals/implementing-syntax-coloring.md)

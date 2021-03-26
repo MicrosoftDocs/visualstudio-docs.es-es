@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccAdd function
 ms.assetid: 545268f3-8e83-446a-a398-1a9db9e866e8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f654429f8c3faefe05a6410a3c732a6a4b1d083b
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 7c577bd865a7534a5c4e13253e921ef188e7f0ac
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221734"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085694"
 ---
 # <a name="sccadd-function"></a>SccAdd función)
 Esta función agrega nuevos archivos al sistema de control de código fuente.
@@ -69,7 +69,7 @@ de Opciones específicas del complemento de control de código fuente.
 ## <a name="return-value"></a>Valor devuelto
  Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:
 
-|Valor|Descripción|
+|Value|Descripción|
 |-----------|-----------------|
 |SCC_OK|La operación de agregar se realizó correctamente.|
 |SCC_E_FILEALREADYEXISTS|El archivo seleccionado ya está bajo control de código fuente.|
@@ -90,7 +90,7 @@ de Opciones específicas del complemento de control de código fuente.
 
  A continuación se muestra la lista de marcas usadas en la `pfOptions` matriz:
 
-|Opción|Valor|Significado|
+|Opción|Value|Significado|
 |------------|-----------|-------------|
 |SCC_FILETYPE_AUTO|0x00|El complemento de control de código fuente debe detectar el tipo de archivo.|
 |SCC_FILETYPE_TEXT|0x01|Indica un archivo de texto ASCII.|

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - comments, supporting in language services [managed package framework]
 - language services [managed package framework], commenting code
 ms.assetid: 9600d6f0-e2b6-4fe0-b935-fb32affb97a4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d53117456318039837a371f68745b4688cbbd087
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c712f1458aa182abcf9e10bee6c6cf90e11b194d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884707"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057109"
 ---
 # <a name="comment-code-in-a-legacy-language-service"></a>Código de comentario en un servicio de lenguaje heredado
 Los lenguajes de programación proporcionan normalmente un medio para anotar o comentar el código. Un comentario es una sección de texto que proporciona información adicional sobre el código, pero que se omite durante la compilación o la interpretación.
@@ -63,6 +63,6 @@ namespace MyLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Características del servicio de lenguaje heredado](../../extensibility/internals/legacy-language-service-features1.md)
 - [Registro de un servicio de lenguaje heredado](../../extensibility/internals/registering-a-legacy-language-service1.md)

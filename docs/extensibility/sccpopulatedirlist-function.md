@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccPopulateDirList function
 ms.assetid: dfff634b-b155-498b-a356-6eb252ac4fad
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 991803511e48e72012c868eaa4b0afbd889b2380
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 5d04fc7796db57dedcf8af495c67876cd4974ab1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221514"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063752"
 ---
 # <a name="sccpopulatedirlist-function"></a>SccPopulateDirList (Función)
 Esta función determina qué directorios y archivos (opcionalmente) se almacenan en el control de código fuente, dada una lista de directorios que se van a examinar.
@@ -64,7 +64,7 @@ de Combinación de valores que controlan cómo se procesan los directorios (cons
 ## <a name="return-value"></a>Valor devuelto
  Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:
 
-|Valor|Descripción|
+|Value|Descripción|
 |-----------|-----------------|
 |SCC_OK|La operación se completó correctamente.|
 |SCC_E_UNKNOWNERROR|Se produjo un error.|

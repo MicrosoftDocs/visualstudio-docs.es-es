@@ -8,17 +8,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation
 ms.assetid: 5044ced5-c18c-4534-b0bf-cc3e50cd57ac
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 772d38b328eca1e0afb6ff48a5ad580d01939527
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9e6a79a3268f0bd4acebde795109d39466032a2f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921481"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096803"
 ---
 # <a name="expression-evaluation-visual-studio-debugging-sdk"></a>Evaluación de expresiones (SDK de depuración de Visual Studio)
 Durante el modo de interrupción, el IDE debe evaluar expresiones simples que impliquen varias variables de programa. Para realizar su evaluación, el motor de depuración (DE) debe analizar y evaluar una expresión que se especifica en una de las ventanas del IDE.
@@ -35,10 +35,10 @@ Durante el modo de interrupción, el IDE debe evaluar expresiones simples que im
 |Método|Descripción|
 |------------|-----------------|
 |[EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)|Evalúa una expresión de forma asincrónica.|
-|[Abort](../../extensibility/debugger/reference/idebugexpression2-abort.md)|Finaliza la evaluación de expresiones asincrónicas.|
+|[Aborta](../../extensibility/debugger/reference/idebugexpression2-abort.md)|Finaliza la evaluación de expresiones asincrónicas.|
 |[EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)|Evalúa una expresión sincrónicamente.|
 
  La evaluación sincrónica y asincrónica requiere la implementación del método [IDebugProperty2:: GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) . La evaluación de expresiones asincrónicas requiere la implementación de [IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Control de ejecución y evaluación del estado](../../extensibility/debugger/execution-control-and-state-evaluation.md)

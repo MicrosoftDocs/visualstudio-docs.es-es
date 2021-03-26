@@ -8,17 +8,17 @@ helpviewer_keywords:
 - project factories
 - projects [Visual Studio SDK], project factories
 ms.assetid: 94c90012-8669-459c-af8e-307ac242c8c4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5e90b12b12589fff89f4df1241eb73504e8bdb74
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 40b7c3fbe5b5b7fd59fe0e57376290181f3e9a20
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903133"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056809"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>Creación de instancias de proyecto mediante el uso de generadores de proyecto
 Los tipos de proyecto de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usan un *generador de proyectos* para crear instancias de objetos de proyecto. Un generador de proyectos es similar a un generador de clases estándar para objetos COM cocreatbles. Sin embargo, los objetos de proyecto no son cocreatable; solo se pueden crear mediante un generador de proyectos.
@@ -46,7 +46,7 @@ Los tipos de proyecto de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md
 
    Un proyecto tampoco puede usar archivos y, en su lugar, almacena su estado del proyecto en un mecanismo de almacenamiento distinto del sistema de archivos, como una base de datos o un servidor Web. En este caso, el parámetro de nombre de archivo pasado al `CreateProject` método no es realmente una ruta de acceso del sistema de archivos, sino una cadena única (una dirección URL) para identificar los datos del proyecto. No es necesario copiar los archivos de plantilla que se pasan a `CreateProject` para desencadenar la secuencia de construcción adecuada que se va a ejecutar.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes>

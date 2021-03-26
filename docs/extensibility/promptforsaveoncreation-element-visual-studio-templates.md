@@ -11,18 +11,18 @@ f1_keywords:
 helpviewer_keywords:
 - PromptForSaveOnCreation element [Visual Studio project templates]
 ms.assetid: 75174674-0c3c-4b57-b2fd-6ea8e817b67d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: c95f643c11919d19f3cb4fd827bca98a4f7b50b5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5bc3c28bcfa35dac23c96d9a566b9767f8db9c1c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915137"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068648"
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation ((elemento, plantillas de Visual Studio)
 
@@ -60,7 +60,7 @@ Especifica si se solicita al usuario una ubicación de guardado del proyecto a t
 
  El texto debe ser `true` o `false` , lo que `true` indica que se solicitará al usuario una ubicación de almacenamiento al crear un nuevo proyecto.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  `PromptForSaveOnCreation` es un elemento opcional. El valor predeterminado es `false`.
 
  Los proyectos temporales son proyectos que puede crear y modificar sin guardar el contenido de ese proyecto en el disco.

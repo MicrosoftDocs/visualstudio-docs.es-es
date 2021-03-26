@@ -6,20 +6,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2::GetEELocalObject
 ms.assetid: e69a3469-a049-420c-b918-c48a1e7b9baf
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 72ff072cdb6c0431a7b04e644f71186c91763efa
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: f8dc96d8eaabbae8b9cea155cf72f2958b6b942b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102168769"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105075658"
 ---
 # <a name="idebugsettingscallback2geteelocalobject"></a>IDebugSettingsCallback2::GetEELocalObject
 Recupera un objeto local del evaluador de expresiones según el nombre de la métrica.

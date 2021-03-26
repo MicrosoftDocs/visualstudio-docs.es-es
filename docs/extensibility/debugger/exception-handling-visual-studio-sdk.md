@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], exception handling
 ms.assetid: 7279dc16-db14-482c-86b8-7b3da5a581d2
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed8db28a7196551e2f1c8236d71e0f2291fce934
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f74337964b73683a71b180699da626121a4d3067
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921511"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105097024"
 ---
 # <a name="exception-handling-visual-studio-sdk"></a>Control de excepciones (SDK de Visual Studio)
 A continuación se describe el proceso que se produce cuando se producen excepciones.
@@ -36,7 +36,7 @@ A continuación se describe el proceso que se produce cuando se producen excepci
 
     - Si el método devuelve S_OK, llama a [IDebugExceptionEvent2::P asstodebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-passtodebuggee.md).
 
-         o bien
+         O bien
 
          Si el método devuelve S_FALSE, el programa que se está depurando recibe una segunda oportunidad para controlar la excepción.
 
@@ -50,5 +50,5 @@ A continuación se describe el proceso que se produce cuando se producen excepci
 
 10. Si el método devuelve S_OK, llama a `IDebugExceptionEvent2::PassToDebuggee` .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Llamar a eventos del depurador](../../extensibility/debugger/calling-debugger-events.md)

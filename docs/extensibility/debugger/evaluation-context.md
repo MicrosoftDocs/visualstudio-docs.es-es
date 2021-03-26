@@ -8,17 +8,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation, context
 ms.assetid: 008a20c7-1b27-4013-bf96-d6a3f510da02
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0957a204a83ab72aabe14fe4a70d8e758e83a08f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 35ccfc921f8175a92b0a082798ce8ccc44990d2e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840592"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096986"
 ---
 # <a name="evaluation-context"></a>Contexto de evaluación
 > [!IMPORTANT]
@@ -36,7 +36,7 @@ ms.locfileid: "99840592"
 
  `IDebugParsedExpression::EvaluateSync` Devuelve una interfaz [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) que representa el valor resultante y su tipo.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Interfaces del evaluador de expresiones clave](../../extensibility/debugger/key-expression-evaluator-interfaces.md)
 - [Mostrar variables locales](../../extensibility/debugger/displaying-locals.md)
 - [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)

@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccAddFilesFromSCC function
 ms.assetid: f21a3500-ade8-4dd8-8647-10e2179be9c1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 27b695b2777aa32f77d49ced7b74436ce870df80
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 056e918642e75bbd74c310499544cb2500428646
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102220981"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060476"
 ---
 # <a name="sccaddfilesfromscc-function"></a>SccAddFilesFromSCC función)
 Esta función agrega una lista de archivos del control de código fuente al proyecto actualmente abierto.
@@ -79,7 +79,7 @@ de Comentario que se va a aplicar a cada uno de los archivos que se van a agrega
 ## <a name="return-value"></a>Valor devuelto
  Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:
 
-|Valor|Descripción|
+|Value|Descripción|
 |-----------|-----------------|
 |SCC_E_PROJNOTOPEN|El proyecto no está abierto.|
 |SCC_E_OPNOTPERFORMED|La conexión no está en el mismo proyecto que especifica `lpAuxProjPath.`|

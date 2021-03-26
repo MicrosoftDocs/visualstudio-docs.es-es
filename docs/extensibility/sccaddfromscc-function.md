@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccAddFromScc function
 ms.assetid: 902e764d-200e-46e1-8c42-4da7b037f9a0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2bbc321d7ff7e335b28f6bc7430fb0f8dce3d57c
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: be67fd18c6cac7217da0d79aaef766e942e15fb9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221709"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085681"
 ---
 # <a name="sccaddfromscc-function"></a>SccAddFromScc función)
 Esta función permite al usuario buscar archivos que ya están en el sistema de control de código fuente y, posteriormente, hacer que dichos archivos formen parte del proyecto actual. Por ejemplo, esta función puede obtener un archivo de encabezado común en el proyecto actual sin copiar el archivo. La matriz devuelta de archivos, `lplpFileNames` , contiene la lista de archivos que el usuario desea agregar al proyecto IDE.
@@ -54,7 +54,7 @@ de Identificador de la ventana del IDE que el complemento de control de código 
 ## <a name="return-value"></a>Valor devuelto
  Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:
 
-|Valor|Descripción|
+|Value|Descripción|
 |-----------|-----------------|
 |SCC_OK|Los archivos se han encontrado y agregado correctamente al proyecto.|
 |SCC_I_OPERATIONCANCELED|La operación se canceló sin ningún efecto.|

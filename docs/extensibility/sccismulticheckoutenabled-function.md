@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccIsMultiCheckoutEnabled function
 ms.assetid: 6721639d-e475-4766-81b5-ee40a280fc70
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 648b68f1575e31e81b6f12ca09abcb8e7305a985
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: f3ff3943524c37d2150adb0607f62be9b8ddef95
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102220565"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063804"
 ---
 # <a name="sccismulticheckoutenabled-function"></a>SccIsMultiCheckoutEnabled (Función)
 Esta función comprueba si el complemento de control de código fuente permite varias desprotecciones en un archivo.
@@ -44,7 +44,7 @@ enuncia Especifica si están habilitadas varias desprotecciones para este proyec
 ## <a name="return-value"></a>Valor devuelto
  Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:
 
-|Valor|Descripción|
+|Value|Descripción|
 |-----------|-----------------|
 |SCC_OK|La comprobación se realizó correctamente.|
 |SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Error no específico.|

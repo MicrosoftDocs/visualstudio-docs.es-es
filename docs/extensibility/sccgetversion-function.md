@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccGetVersion function
 ms.assetid: a6e786bf-744e-4272-9e21-0be44d23b1a1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a71d3374ffd65e0e7b9a7b2e654885d84e370a9d
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 42273951768591dc89f4c9e4b9a27de1d646e209
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102220604"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063817"
 ---
 # <a name="sccgetversion-function"></a>SccGetVersion (Función)
 Esta función obtiene el número de versión de la API del complemento de control de código fuente compatible con el complemento de control de código fuente.

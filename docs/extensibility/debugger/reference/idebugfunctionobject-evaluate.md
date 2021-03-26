@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugFunctionObject::Evaluate method
 ms.assetid: 29349ea3-d5c1-4135-aa76-ced073ab9683
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d15cdb09de32edcdf6159567db12e05cffd06e7e
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: b9770878040422d96c31fab8d57df468af614e8e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102160113"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063596"
 ---
 # <a name="idebugfunctionobjectevaluate"></a>IDebugFunctionObject::Evaluate
 Llama a la función y devuelve el valor resultante como un objeto.

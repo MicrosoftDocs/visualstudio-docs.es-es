@@ -10,17 +10,17 @@ f1_keywords:
 helpviewer_keywords:
 - TemplateData element [Visual Studio project templates]
 ms.assetid: db17ec9b-bfdf-46b1-bbe7-5ccc140056e2
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 423bcc7b3d902488f268b2d0706cb5126125f37d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b5bc7f9b94553bda2bd2fcf020264ddb0d850c32
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895393"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085577"
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>TemplateData (Elemento, Plantillas de Visual Studio)
 Clasifica la plantilla y define cómo se muestra en el cuadro de diálogo **Nuevo proyecto** o **Agregar nuevo elemento** .
@@ -78,7 +78,7 @@ Clasifica la plantilla y define cómo se muestra en el cuadro de diálogo **Nuev
 |-------------|-----------------|
 |[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Contiene todos los metadatos de la plantilla de proyecto, la plantilla de elemento o Starter Kit.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  `TemplateData` es un elemento necesario.
 
  Si no incluye un elemento opcional, se utiliza el valor predeterminado de ese elemento.
@@ -110,6 +110,6 @@ Clasifica la plantilla y define cómo se muestra en el cuadro de diálogo **Nuev
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Crear plantillas de proyecto y de elemento](../ide/creating-project-and-item-templates.md)

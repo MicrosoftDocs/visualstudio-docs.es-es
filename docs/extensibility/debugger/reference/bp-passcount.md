@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_PASSCOUNT structure
 ms.assetid: 791ac175-b897-4c70-873e-240da7e0ac89
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9c1e44ede0f39b3d1b33967311365508da6a701d
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: afb94436897224bc9c6896a601447e9d9a1c8b6f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102144161"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096738"
 ---
 # <a name="bp_passcount"></a>BP_PASSCOUNT
 Describe el recuento y las condiciones en las que se desencadena un punto de interrupción condicional.
@@ -42,7 +42,7 @@ public struct BP_PASSCOUNT {
 };
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
 `dwPassCount`\
 Número de veces que se va a pasar el punto de interrupción antes de activarlo.
 

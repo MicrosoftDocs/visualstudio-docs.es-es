@@ -8,17 +8,17 @@ helpviewer_keywords:
 - wizards, context parameters
 - context parameters
 ms.assetid: 1a062dcb-8a8f-40dd-bea9-3d10f9448966
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 72d2c6ded39564b91ba4f7b74fe2985aab14a7ce
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 14d60aa31fb586651ea6e2b00a8f8038bfaa42b9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852640"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057083"
 ---
 # <a name="context-parameters"></a>Parámetros de contexto
 En el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] entorno de desarrollo integrado (IDE), puede agregar asistentes a los cuadros de diálogo **nuevo proyecto**, **Agregar nuevo elemento** o **Agregar subproyecto** . Los asistentes agregados están disponibles en el menú **archivo** o haciendo clic con el botón secundario en un proyecto de **Explorador de soluciones**. El IDE pasa los parámetros de contexto a la implementación del asistente. Los parámetros de contexto definen el estado del proyecto cuando el IDE llama al asistente.
@@ -60,7 +60,7 @@ En el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] entorno de de
 | `InstallationDirectory` | Ruta de acceso del directorio de la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] instalación. |
 | `Silent` | Valor booleano que indica si el asistente se debe ejecutar en modo silencioso como si se hubiera hecho clic en **Finalizar** ( `TRUE` ). |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject2>
 - [Parámetros personalizados](../../extensibility/internals/custom-parameters.md)

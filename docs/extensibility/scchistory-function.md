@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccHistory function
 ms.assetid: a636d9d3-47c1-4b48-ac6b-bcfde19d6cf9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b7e1cd6fa6d5b9b3a5ab42cd1b4cafec215deca
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 11a3056e34d15e2e04b687a518e86041dc270997
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102220578"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063856"
 ---
 # <a name="scchistory-function"></a>SccHistory (Función)
 Esta función muestra el historial de los archivos especificados.
@@ -64,7 +64,7 @@ de Opciones específicas del complemento de control de código fuente.
 ## <a name="return-value"></a>Valor devuelto
  Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:
 
-|Valor|Descripción|
+|Value|Descripción|
 |-----------|-----------------|
 |SCC_OK|El historial de versiones se obtuvo correctamente.|
 |SCC_I_RELOADFILE|El sistema de control de código fuente modificó realmente el archivo en el disco mientras se recuperaba el historial (por ejemplo, al obtener una versión anterior), por lo que el IDE debe volver a cargar este archivo.|

@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccInitialize function
 ms.assetid: 5bc0d28b-2c68-4d43-9e51-541506a8f76e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 986e3624b1716c782102f0f214283a7fa7020a08
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 9f266fbe27cb509d2d6dca47a913261eea7f937c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102220591"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063830"
 ---
 # <a name="sccinitialize-function"></a>SccInitialize (Función)
 Esta función inicializa el complemento de control de código fuente y proporciona capacidades y límites al entorno de desarrollo integrado (IDE).
@@ -74,7 +74,7 @@ enuncia Devuelve la longitud máxima permitida para otros comentarios.
 ## <a name="return-value"></a>Valor devuelto
  Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:
 
-|Valor|Descripción|
+|Value|Descripción|
 |-----------|-----------------|
 |SCC_OK|Inicialización del control de código fuente correcta.|
 |SCC_E_INITIALIZEFAILED|No se pudo inicializar el sistema.|

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation
 ms.assetid: 5ccfcc80-dea5-48a1-8bae-6a26f8d3bc56
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a9b8db832207eff93e08f123db57b4beef4eb7f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4c79d27c01035f83b506ffad4ec138c8c68f98d2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840605"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105097037"
 ---
 # <a name="evaluate-expressions"></a>Evaluar expresiones
 Las expresiones se crean a partir de las cadenas que se pasan de las ventanas **automático**, **inspección**, **Inspección rápida** o **inmediata** . Cuando se evalúa una expresión, genera una cadena imprimible que contiene el nombre y el tipo de variable o argumento y su valor. Esta cadena se muestra en la ventana del IDE correspondiente.
@@ -33,7 +33,7 @@ Las expresiones se crean a partir de las cadenas que se pasan de las ventanas **
 
  Para habilitar la evaluación DE expresiones, un DE debe implementar las interfaces [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) y [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) . La evaluación sincrónica y asincrónica requiere la implementación del método [IDebugProperty2:: GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Marcos de pila](../../extensibility/debugger/stack-frames.md)
 - [Contexto de evaluación de expresiones](../../extensibility/debugger/expression-evaluation-context.md)
 - [Tareas de depuración](../../extensibility/debugger/debugging-tasks.md)

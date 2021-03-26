@@ -8,17 +8,17 @@ helpviewer_keywords:
 - expression evaluation, watch expressions
 - watch expressions
 ms.assetid: 8317cd52-6fea-4e8f-a739-774dc06bd44b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84e3b020da8d7fc6e4d7f3be89eaa50cd59c704e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 21a173a8c041bbaf12cb67bf90e1c4407ac5e4a7
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851340"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105097063"
 ---
 # <a name="evaluate-a-watch-expression"></a>Evaluación de una expresión de inspección
 > [!IMPORTANT]
@@ -173,6 +173,6 @@ STDMETHODIMP CParsedExpression::EvaluateSync(
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Evaluar una expresión de la ventana Inspección](../../extensibility/debugger/evaluating-a-watch-window-expression.md)
 - [Implementación de ejemplo de evaluación de expresiones](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md)

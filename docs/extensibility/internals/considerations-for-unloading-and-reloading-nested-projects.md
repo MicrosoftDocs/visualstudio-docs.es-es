@@ -8,17 +8,17 @@ helpviewer_keywords:
 - nested projects, unloading and reloading
 - projects [Visual Studio SDK], unloading and reloading nested
 ms.assetid: 06c3427e-c874-45b1-b9af-f68610ed016c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed91ac56929682205937122a4521ad7233af675f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9852454d487ab2a7ee08218c9712aa0afc1467ad
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884655"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057076"
 ---
 # <a name="considerations-for-unloading-and-reloading-nested-projects"></a>Consideraciones para descargar y volver a cargar proyectos anidados
 
@@ -36,7 +36,7 @@ Normalmente, cuando se recarga un proyecto, el IDE genera los <xref:Microsoft.Vi
 
 Para controlar este proceso, el proyecto primario llama a `QueryInterface` en la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents> interfaz. `IVsFireSolutionEvents` tiene funciones que indican al IDE que genere el `OnBeforeUnloadProject` evento para descargar el proyecto anidado y, a continuación, genere el `OnAfterLoadProject` evento para volver a cargar el mismo proyecto.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3>
 - [Anidar proyectos](../../extensibility/internals/nesting-projects.md)

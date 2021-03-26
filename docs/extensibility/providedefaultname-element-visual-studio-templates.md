@@ -10,17 +10,17 @@ f1_keywords:
 helpviewer_keywords:
 - ProvideDefaultName element [Visual Studio project templates]
 ms.assetid: 7b0e7b20-fd6b-42e2-81d0-e5100cea0528
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f207a4c86a9c76f009341f96a7d562da1e8fb33
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d29ca3075ee6e5ef031bb360ecfd10d6cb341c26
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910954"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068652"
 ---
 # <a name="providedefaultname-element-visual-studio-templates"></a>Providedefaultname ((elemento, plantillas de Visual Studio)
 Especifica si el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sistema del proyecto generará un nombre predeterminado para la plantilla en el cuadro de diálogo **Agregar nuevo elemento** o **nuevo proyecto** .
@@ -54,7 +54,7 @@ Especifica si el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] siste
 
  El texto debe ser `true` o `false` , lo que indica si se va a generar un nombre predeterminado para la plantilla en el cuadro de diálogo **Agregar nuevo elemento** o **nuevo proyecto** .
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  `ProvideDefaultName` es un elemento opcional. El valor predeterminado es `true`.
 
  Si el `ProvideDefaultName` elemento es `false` , los cuadros de **nombre** de los cuadros de diálogo **Agregar nuevo elemento** y **nuevo proyecto** contienen el valor `<Enter_name>` .

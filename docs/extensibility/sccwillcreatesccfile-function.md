@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccWillCreateSccFile function
 ms.assetid: 0d7542f0-4351-41b3-b24c-960ab99c05a1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee01478858615aad135d07a5c10d5d6c58280926
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 00988afe980a29a7176c8632d95514813efaad37
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221293"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063726"
 ---
 # <a name="sccwillcreatesccfile-function"></a>SccWillCreateSccFile (Función)
 Esta función determina si el complemento de control de código fuente admite la creación de MSSCCPRJ. Archivo SCC para cada uno de los archivos especificados.
@@ -54,7 +54,7 @@ de Una matriz de nombres de archivo completos que se van a comprobar (el llamado
 ## <a name="return-value"></a>Valor devuelto
  Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:
 
-|Valor|Descripción|
+|Value|Descripción|
 |-----------|-----------------|
 |SCC_OK|Correcto.|
 |SCC_E_INVALIDFILEPATH|Una de las rutas de acceso de la matriz no es válida.|
