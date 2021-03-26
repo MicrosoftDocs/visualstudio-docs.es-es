@@ -9,17 +9,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], stack frames
 - stack frames
 ms.assetid: b5e439d4-1e9d-4e13-9cad-bb8b136d4ca8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97adb5d453e147c45ae1f268a20a2d3091286508
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b0c54292d79b119fc36c9eff3f0f3519c92a4205
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960733"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105079400"
 ---
 # <a name="stack-frames"></a>Marcos de pila
 En la arquitectura del depurador, un *marco de pila*:
@@ -32,7 +32,7 @@ En la arquitectura del depurador, un *marco de pila*:
 
 - Se representa mediante una interfaz [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md) , creada normalmente por un motor de depuración (de) o una máquina virtual como consecuencia de la ejecución de un subproceso.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Contextos del depurador](../../extensibility/debugger/debugger-contexts.md)
 - [Conceptos del depurador](../../extensibility/debugger/debugger-concepts.md)
 - [Motor de depuración](../../extensibility/debugger/debug-engine.md)

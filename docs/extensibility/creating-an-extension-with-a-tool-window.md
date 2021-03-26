@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 ms.assetid: 585b0a3a-f85b-4f92-81bb-9ca499bb8a89
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b03b7a4941609462fca27bebf67d8ad2a8f7044
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f956aa520bca79a84fe203093c225cfeb8389ba1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944926"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089204"
 ---
 # <a name="create-an-extension-with-a-tool-window"></a>Crear una extensión con una ventana de herramientas
 
@@ -29,7 +29,7 @@ En este procedimiento, aprenderá a usar la plantilla de proyecto de VSIX y la p
 
 1. Cree un proyecto VSIX denominado **FirstWindow**. Para buscar la plantilla de Proyecto VSIX en el cuadro de diálogo **nuevo proyecto** , busque "VSIX".
 
-2. Cuando se abra el proyecto, agregue una plantilla de elemento de ventana de herramientas denominada My **Window**. En el **Explorador de soluciones**, haga clic con el botón secundario en el nodo del proyecto y seleccione **Agregar**  >  **nuevo elemento**. En el cuadro de diálogo **Agregar nuevo elemento** , vaya a extensibilidad de **Visual C#**  >   y seleccione **ventana de herramientas personalizada**. En el campo **nombre** de la parte inferior de la ventana, cambie el nombre del archivo de la ventana de herramientas a *MyWindow.CS*.
+2. Cuando se abra el proyecto, agregue una plantilla de elemento de ventana de herramientas denominada My **Window**. En el **Explorador de soluciones**, haga clic con el botón secundario en el nodo del proyecto y seleccione **Agregar**  >  **nuevo elemento**. En el cuadro de diálogo **Agregar nuevo elemento** , vaya a extensibilidad de **Visual C#**  >   y seleccione **ventana de herramientas personalizada**. En el campo **nombre** situado en la parte inferior de la ventana, cambie el nombre del archivo de la ventana de herramientas a mi *. CS*.
 
 3. Compile la solución y comience la depuración.
 

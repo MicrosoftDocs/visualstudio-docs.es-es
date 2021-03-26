@@ -12,17 +12,17 @@ helpviewer_keywords:
 - session debug manager, debug engine multiplexing
 - session debug manager, delegating
 ms.assetid: fbb1928d-dddc-43d1-98a4-e23b0ecbae09
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d67716f78249bda5d316ffde175b80f4ef1c1e45
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2e5a206b8ece21b14758dfeb02563d4d323dcf60
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960786"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105079467"
 ---
 # <a name="session-debug-manager"></a>Administrador de depuración de sesión
 El administrador de depuración de sesión (SDM) administra cualquier número de motores de depuración (DE) que depuren cualquier número de programas en varios procesos en cualquier número de equipos. Además de ser un multiplexor del motor de depuración, el SDM proporciona una vista unificada de la sesión de depuración al IDE.
@@ -38,7 +38,7 @@ El administrador de depuración de sesión (SDM) administra cualquier número de
 
  El SDM no realiza el seguimiento del programa, el subproceso o el marco de pila actual. El proceso, el programa y la información de subprocesos se envían al SDM junto con eventos de depuración específicos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Motor de depuración](../../extensibility/debugger/debug-engine.md)
 - [Componentes del depurador](../../extensibility/debugger/debugger-components.md)
 - [Contextos del depurador](../../extensibility/debugger/debugger-contexts.md)

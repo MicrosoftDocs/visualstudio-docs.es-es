@@ -9,17 +9,17 @@ helpviewer_keywords:
 - projects [Visual Studio SDK], saving standard documents
 - persistence, saving standard documents
 ms.assetid: d692fedf-b46e-4d60-84bd-578635042235
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18e7fcb73a5ce89fae0936189eada9e3b959a55f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a1864ec689c1068b97775ca1a8bddbd390e7b43a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958458"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080897"
 ---
 # <a name="saving-a-standard-document"></a>Guardado de un documento estándar
 El entorno controla los comandos guardar, guardar como y guardar todo. Cuando un usuario selecciona **Guardar**, **Guardar como** o **guardar todo** en el menú **archivo** o cierra la solución, lo que da lugar a **guardar todo**, se produce el siguiente proceso.
@@ -58,6 +58,6 @@ El entorno controla los comandos guardar, guardar como y guardar todo. Cuando un
 
 2. Llame al <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A> `pszMkDocumentNew` método (, `punkWindowFrame` ) para transferir el documento a la nueva jerarquía. La jerarquía que realiza el comando Guardar como llama a este método.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - [Apertura y guardado de elementos de proyecto](../../extensibility/internals/opening-and-saving-project-items.md)

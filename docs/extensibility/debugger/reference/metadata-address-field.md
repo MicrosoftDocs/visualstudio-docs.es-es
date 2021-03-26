@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - METADATA_ADDRESS_FIELD structure
 ms.assetid: 15ab45fe-6b3b-4e09-880b-31b34f523607
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 96171b41f8788da0772ac2657c9a10d84af96b94
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 32e5db3a4ad197d66d530487eb50dd1b47ac0199
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102222424"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105091518"
 ---
 # <a name="metadata_address_field"></a>METADATA_ADDRESS_FIELD
 
@@ -41,7 +41,7 @@ public struct METADATA_ADDRESS_FIELD {
 }
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
 
 `tokField`\
 IDENTIFICADOR del símbolo (token) del campo.

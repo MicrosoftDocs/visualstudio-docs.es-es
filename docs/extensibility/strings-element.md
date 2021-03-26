@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Strings element (VSCT XML schema)
 - VSCT XML schema elements, Strings
 ms.assetid: 23a42074-a689-481d-824f-b43aa448f266
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7951d0c72c3fd6a1897224d9606abdfec9a60053
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a0bd9ad9b8059eb7fd566c1e0c26a938af6d18b2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99848017"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089906"
 ---
 # <a name="strings-element"></a>Strings (Elemento)
 El elemento Strings debe contener al menos un elemento secundario **ButtonText** . Todos los demás elementos secundarios son opcionales. Los caracteres XML no válidos, como ' & ' y ' < ', deben codificarse como entidades (' &amp; ' y ' ', etc &lt; .).
@@ -62,5 +62,5 @@ El elemento Strings debe contener al menos un elemento secundario **ButtonText**
 |[Menu (Elemento)](../extensibility/menu-element.md)|Define un elemento de menú único.|
 |[Combo (Elemento)](../extensibility/combo-element.md)|Define comandos que aparecen en un cuadro combinado.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Archivos de tabla de comandos de Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

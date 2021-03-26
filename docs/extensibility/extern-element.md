@@ -10,17 +10,17 @@ helpviewer_keywords:
 - VSCT XML schema elements, Extern
 - Extern element (VSCT XML schema)
 ms.assetid: db6c3ddd-a1ba-450a-897a-bb568a5377fc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8892de377d2383e5aed3ec7824616d626bc5164f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5771dbc1c6b17b0f488d42c30a036ff1d90a5a18
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862101"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074995"
 ---
 # <a name="extern-element"></a>Extern (elemento)
 El elemento extern hace referencia a los archivos de encabezado (*. h*) externos que se van a combinar con el archivo *. Vsct* en tiempo de compilación. Los archivos que se van a combinar deben estar en la ruta de acceso de inclusión que se proporciona al compilador VSCT o a los que hace referencia un [elemento include](../extensibility/include-element.md). Los archivos pueden ser otros archivos *. Vsct* o archivos de encabezado de C++.
@@ -70,7 +70,7 @@ El elemento extern hace referencia a los archivos de encabezado (*. h*) externos
 </CommandTable>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Archivos de tabla de comandos de Visual Studio (. Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Cómo agrega VSPackages los elementos de la interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md)

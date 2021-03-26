@@ -8,17 +8,17 @@ helpviewer_keywords:
 - designers [Visual Studio SDK], initializing
 - designers [Visual Studio SDK], configuring metadata
 ms.assetid: f7fe9a7e-f669-4642-ad5d-186b2e6e6ec9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 57e335839905e828d3587ce82b1e23b0d62ddf65
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 13c65913fe54b9c22eb8fa374b7a16de84438e33
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968325"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105091284"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Inicialización del diseñador y configuración de metadatos
 
@@ -99,7 +99,7 @@ Si la marca global se estableció en `false` , el cambio de metadatos es local e
 > [!NOTE]
 > La superficie de diseño solo admite la creación de componentes y, por lo tanto, solo los componentes pueden tener metadatos locales. En el ejemplo anterior, estábamos intentando modificar una propiedad, como la `Color` propiedad de un objeto. Si `false` se pasó para la marca global, `CustomBrowser` nunca aparecería porque el diseñador nunca crea realmente una instancia de `Color` . Establecer la marca global en `false` es útil para los componentes, como los controles, los temporizadores y los cuadros de diálogo.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>
 - <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>

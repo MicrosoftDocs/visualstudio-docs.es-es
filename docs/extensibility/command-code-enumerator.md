@@ -8,17 +8,17 @@ helpviewer_keywords:
 - command code enumerator
 - source control plug-ins, command code enumeration
 ms.assetid: 5d2c360c-59e4-4da8-bcb4-dd07c7441e40
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2911a39c15fa259057e0b7b48d79e142cda34094
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e2df7ca11d5e93a3ae43d2a6bd1d7ccf8dfe5aa6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938256"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089711"
 ---
 # <a name="command-code-enumerator"></a>Enumerador de código de comando
 Este enumerador se usa en las opciones de [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) y [SccPopulateList](../extensibility/sccpopulatelist-function.md)para indicar el comando para el que se especifican las opciones.
@@ -41,7 +41,7 @@ enum SCCCOMMAND {
 };
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
 SCC_COMMAND_GET corresponde a [SccGet](../extensibility/sccget-function.md).
 
 SCC_COMMAND_CHECKOUT corresponde a [SccCheckout](../extensibility/scccheckout-function.md).
@@ -64,7 +64,7 @@ SCC_COMMAND_PROPERTIES corresponde a [SccProperties](../extensibility/sccpropert
 
 SCC_COMMAND_OPTIONS corresponde a [SccSetOption](../extensibility/sccsetoption-function.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Complementos de control de código fuente](../extensibility/source-control-plug-ins.md)
 - [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)
 - [SccPopulateList](../extensibility/sccpopulatelist-function.md)

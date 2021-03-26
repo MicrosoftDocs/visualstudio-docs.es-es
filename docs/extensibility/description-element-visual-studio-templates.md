@@ -8,17 +8,17 @@ ms.topic: reference
 helpviewer_keywords:
 - Description element [Visual Studio project templates]
 ms.assetid: 6e12be73-081f-4c7d-898f-027c307a9fe1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a88535f4d41772c8d3b6ebc8a62e5c8aaea866ae
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8a48e80800480a6e6fa1d9576b83112fd7cdcff4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968338"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105091297"
 ---
 # <a name="description-element-visual-studio-templates"></a>Description (elemento, plantillas de Visual Studio)
 Especifica la descripción de la plantilla tal y como aparece en el cuadro de diálogo **nuevo proyecto** o **Agregar nuevo elemento** .
@@ -62,7 +62,7 @@ Especifica la descripción de la plantilla tal y como aparece en el cuadro de di
 
  En el texto se proporciona una descripción de la plantilla.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  `Description` es un elemento secundario necesario del `TemplateData` elemento.
 
 ## <a name="example"></a>Ejemplo

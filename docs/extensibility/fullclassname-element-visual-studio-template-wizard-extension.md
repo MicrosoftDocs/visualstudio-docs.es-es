@@ -10,17 +10,17 @@ f1_keywords:
 helpviewer_keywords:
 - FullClassName element [Visual Studio project template]
 ms.assetid: 651e1010-d529-4856-85ff-c77ceca5d2ed
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d23bb194dfadd202cf2899b1834f3b6ceeaa2b3f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 75be4f32abd5ab0bdf945ad250b73a6f060cae25
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968208"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074969"
 ---
 # <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>FullClassName (elemento, extensión del Asistente para plantillas de Visual Studio)
 Nombre completo de la clase que implementa la `IWizard` interfaz.
@@ -54,7 +54,7 @@ Nombre completo de la clase que implementa la `IWizard` interfaz.
 
  Este texto especifica la clase que implementa la `IWizard` interfaz. La clase especificada debe existir en el ensamblado especificado por el elemento [Assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md) .
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  `FullClassName` es un elemento secundario obligatorio de `WizardExtension`.
 
 ## <a name="example"></a>Ejemplo

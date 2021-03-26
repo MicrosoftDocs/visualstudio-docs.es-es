@@ -8,17 +8,17 @@ helpviewer_keywords:
 - directory status code enumerator
 - source control plug-ins, directory status enumeration
 ms.assetid: 616026b5-f529-40ef-90c1-1836e116d797
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6d5eb64cf4883c2e977b41e77fc2243aca2ee34
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3e995fb1dcb879645f59d6d8750852a790c99e90
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968260"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105091258"
 ---
 # <a name="directory-status-code-enumerator"></a>Enumerador de código de estado de directorio
 El `SccDirStatus` enumerador contiene valores constantes con nombre que especifican el estado de un directorio en el sistema de control de código fuente. Esta enumeración la usa [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md). Esto se presentó en la versión 1,2 de la API del complemento de control de código fuente.
@@ -34,7 +34,7 @@ enum SccDirStatus {
 };
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
  No se pudo obtener el estado de SCC_DIRSTATUS_INVALID; no se base en él.
 
  SCC_DIRSTATUS_NOTCONTROLLED directorio no está bajo control de código fuente.
@@ -43,6 +43,6 @@ enum SccDirStatus {
 
  SCC_DIRSTATUS_EMPTYPROJ proyecto correspondiente a este directorio está vacío.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Complementos de control de código fuente](../extensibility/source-control-plug-ins.md)
 - [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md)

@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - MESSAGETYPE enumeration
 ms.assetid: 800cc77d-3c27-4763-a9df-552a9384bd49
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dd7b10217313be30dd795a8ff108c3c30e214490
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: b85933896dfff38c2d346fd18144710e2e6fc127
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102222437"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105091531"
 ---
 # <a name="messagetype"></a>MESSAGETYPE
 Especifica el tipo de mensaje y el motivo.
@@ -51,7 +51,7 @@ public enum enum_MESSAGETYPE {
 };
 ```
 
-## <a name="fields"></a>Fields
+## <a name="fields"></a>Campos
  `MT_OUTPUTSTRING`\
  Indica que el mensaje se debe enviar a la ventana de salida. Esto es mutuamente excluyente de `MT_MESSAGEBOX` .
 

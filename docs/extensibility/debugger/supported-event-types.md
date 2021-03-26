@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], supported events
 ms.assetid: a3c0386d-551e-4734-9a0c-368d1c2e6671
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9bf2e154d5803324161e073edbd74e049c0897ca
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 883c9fd51cc4dfc4f2cc2f996d24c0722478505f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960694"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105079415"
 ---
 # <a name="supported-event-types"></a>Tipos de eventos admitidos
 La depuración de Visual Studio admite actualmente los siguientes tipos de eventos:
@@ -55,7 +55,7 @@ La depuración de Visual Studio admite actualmente los siguientes tipos de event
 > [!NOTE]
 > La interfaz [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md) es necesaria para todos los eventos.
 
-|Evento|IDebugProgram2|IDebugThread2|Detener eventos|
+|evento|IDebugProgram2|IDebugThread2|Detener eventos|
 |-----------|--------------------|-------------------|---------------------|
 |[IDebugActivateDocumentEvent2](../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)|Permitido, pero no obligatorio|Permitido, pero no obligatorio|No|
 |[IDebugBreakEvent2](../../extensibility/debugger/reference/idebugbreakevent2.md)|Obligatorio|Obligatorio|Sí|
