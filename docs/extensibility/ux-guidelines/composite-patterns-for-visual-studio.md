@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c8ac314a2ec49b805fc87badf6b63a719b8511e8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0c6f609842f2531fe39158e871a330e136603433
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952101"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090062"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Patrones compuestos para Visual Studio
 Los patrones compuestos combinan elementos de interacción y diseño en configuraciones distintas. Algunos de los patrones compuestos más importantes en Visual Studio con respecto a la coherencia incluyen:
@@ -395,7 +395,7 @@ Los patrones compuestos combinan elementos de interacción y diseño en configur
 #### <a name="graphical-object-selection-appearance"></a><a name="BKMK_GraphicalObjectSelectionAppearance"></a> Apariencia de selección de objetos gráficos
  Los controladores de selección son los cuadrados dibujados en un patrón rectangular alrededor del rectángulo de selección del objeto. En el gráfico siguiente se muestran ejemplos de los distintos Estados que un objeto gráfico puede tener con el control, el ajuste de tamaño y la apariencia de edición en contexto. El tamaño de los identificadores debe estar vinculado a las métricas de borde y borde de la ventana mediante la API de **GetSystemMetrics** .
 
-| Estado | Aspecto | Detalles visuales |
+| State | Aspecto | Detalles visuales |
 |-------------------------|---------------| - |
 | **No seleccionado** | Valor predeterminado | ![Estado de botón predeterminado](../../extensibility/ux-guidelines/media/0713-10_defaultstate.png "0713-10_DefaultState") |
 | **Selección principal** | Tamaño | ![Selección primaria con controladores de tamaño](../../extensibility/ux-guidelines/media/0713-11_primaryresize.png "0713-11_PrimaryResize") |

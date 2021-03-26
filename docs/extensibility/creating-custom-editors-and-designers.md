@@ -8,17 +8,17 @@ helpviewer_keywords:
 - designers [Visual Studio SDK]
 - editors [Visual Studio SDK], custom
 ms.assetid: b6a5e8b2-0ae1-4fc3-812d-09d40051b435
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb0c688e40df5247574e7ba87b4e04d5cfaba2ce
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c2882cfa103627672e5c96a0e3d4b2a23b4b4ba9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99846899"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055783"
 ---
 # <a name="create-custom-editors-and-designers"></a>Crear editores y diseñadores personalizados
 
@@ -104,6 +104,6 @@ Explica cómo implementar un servicio de lenguaje.
 [Extender otras partes de Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)\
 Explica cómo crear elementos de interfaz de usuario que coincidan con el resto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>

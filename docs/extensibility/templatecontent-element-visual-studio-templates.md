@@ -10,17 +10,17 @@ f1_keywords:
 helpviewer_keywords:
 - TemplateContent element [Visual Studio project templates]
 ms.assetid: 90ae401c-b294-49ac-98da-e0d274f5bebb
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a19ec1d5c615e31e62961707ad8f76f1386eb3f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 389f8e0ab6c6c7254b34721d20da40cc2d33df59
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880663"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056030"
 ---
 # <a name="templatecontent-element-visual-studio-templates"></a>TemplateContent (Elemento, Plantillas de Visual Studio)
 
@@ -66,7 +66,7 @@ Jerarquía de elementos:
 |-------------|-----------------|
 |[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Contiene todos los metadatos de la plantilla de proyecto, la plantilla de elemento o Starter Kit.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  `TemplateContent` es un elemento necesario.
 
 ## <a name="example"></a>Ejemplo
@@ -96,7 +96,7 @@ Jerarquía de elementos:
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Crear plantillas de proyecto y de elemento](../ide/creating-project-and-item-templates.md)

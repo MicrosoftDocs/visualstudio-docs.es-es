@@ -10,17 +10,17 @@ f1_keywords:
 helpviewer_keywords:
 - CustomParameters element [Visual Studio project templates]
 ms.assetid: cf3efc91-1532-4022-bbb8-a18658424fee
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a899790890bd299dcb77558d31499b0a61bcefe4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cabb3d04276f95d48fa6ecae14acd46246537762
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927137"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055575"
 ---
 # <a name="customparameters-element-visual-studio-templates"></a>CustomParameters ((elemento, plantillas de Visual Studio)
 Agrupa los parámetros personalizados que se van a pasar al Asistente para plantillas cuando el asistente realiza reemplazos de parámetros.
@@ -52,7 +52,7 @@ Agrupa los parámetros personalizados que se van a pasar al Asistente para plant
 |-------------|-----------------|
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Especifica el contenido de la plantilla.|
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 ## <a name="example"></a>Ejemplo
  En el ejemplo siguiente se muestra cómo usar varios parámetros personalizados en una plantilla. Cuando se crea un proyecto o un elemento a partir de una plantilla con los siguientes parámetros personalizados, todas las instancias de `$color1$` y `$color2$` de los archivos de plantilla se reemplazarán por `Red` y `Blue` , respectivamente.
@@ -64,7 +64,7 @@ Agrupa los parámetros personalizados que se van a pasar al Asistente para plant
 </CustomParameters>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [CustomParameter ((elemento, plantillas de Visual Studio)](../extensibility/customparameter-element-visual-studio-templates.md)
 - [Parámetros de plantilla](../ide/template-parameters.md)
 - [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - OBJECT_TYPE enumeration
 ms.assetid: c4d246f9-8a98-44ec-b2bb-ff5c684f668e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3add4d46a258eb7e6c107f8d2eb16f7cd84ba919
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 80ef6cce37967d61611ac48f60aaf5b2a1d184f1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102222164"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082396"
 ---
 # <a name="object_type"></a>Object_Type
 Especifica el tipo de un objeto del evaluador de expresiones.
@@ -69,7 +69,7 @@ public enum enum_OBJECT_TYPE {
 };
 ```
 
-## <a name="fields"></a>Fields
+## <a name="fields"></a>Campos
  `OBJECT_TYPE_BOOLEAN`\
  Indica que el objeto es un valor booleano.
 

@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Include element (VSCT XML schema)
 - VSCT XML schema elements, Include
 ms.assetid: c923dfe6-084a-4105-aec1-f0a3f8399c54
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d718178bf7490d29c0668d892add4c302b8925a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fd64f897dc2a089a2e94f5e0c53e3ef116f7b385
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893638"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082106"
 ---
 # <a name="include-element"></a>Elemento include
 El elemento include especifica un archivo que se puede encontrar en la ruta de inclusión proporcionada para la inserción en el archivo actual.  Todos los símbolos y tipos definidos se convertirán en parte del resultado compilado.
@@ -59,5 +59,5 @@ El elemento include especifica un archivo que se puede encontrar en la ruta de i
 <Include href="PackagePlacements.vsct"/>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Archivos de tabla de comandos de Visual Studio (. Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

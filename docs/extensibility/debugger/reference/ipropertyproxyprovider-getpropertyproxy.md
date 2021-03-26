@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IPropertyProxyProvider::GetPropertyProxy
 ms.assetid: 3ebb7515-5bfe-48f4-9b8d-721b8f664eb6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a9212e9c7d0392bf9c4d6229ba76e40ea21f0686
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: a1e18001b0db7c254f7e69bcb5adfc1a35a513b5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102222593"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082366"
 ---
 # <a name="ipropertyproxyprovidergetpropertyproxy"></a>IPropertyProxyProvider::GetPropertyProxy
 Recupera la interfaz de proxy de propiedad para el identificador de proxy especificado.

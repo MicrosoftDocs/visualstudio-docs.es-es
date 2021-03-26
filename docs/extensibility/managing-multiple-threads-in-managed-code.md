@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 59730063-cc29-4dae-baff-2234ad8d0c8f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5486d5faa4f994883d2a32d152ceec59c65629ab
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7b301770a54baf0416aa9fcc838a9a6633252fbe
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924961"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073136"
 ---
 # <a name="how-to-manage-multiple-threads-in-managed-code"></a>Cómo: administrar varios subprocesos en código administrado
 Si tiene una extensión VSPackage administrada que llama a métodos asincrónicos o tiene operaciones que se ejecutan en subprocesos distintos del subproceso de interfaz de usuario de Visual Studio, debe seguir las instrucciones que se indican a continuación. Puede mantener la capacidad de respuesta del subproceso de la interfaz de usuario porque no es necesario esperar a que se complete el trabajo en otro subproceso. Puede hacer que el código sea más eficaz, ya que no tiene subprocesos adicionales que ocupen espacio de pila, y puede hacer que sea más confiable y más fácil de depurar, ya que evita los interbloqueos y el código que no responde.

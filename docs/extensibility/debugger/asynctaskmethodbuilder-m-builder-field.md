@@ -6,17 +6,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - m_builder field, AsyncTaskMethodBuilder structure [.NET Framework debug engines]
 ms.assetid: bfaf25a2-0f08-413f-b474-9ce0d97c0eeb
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 75c2bfafffd20f32db5d49c5938f25bb693f297d
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 2f870b6c2544c57aeced28692d7be8728b641d9c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102145708"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055562"
 ---
 # <a name="asynctaskmethodbuilderm_builder-field"></a>AsyncTaskMethodBuilder.m_builder campo
 Representa el objeto de generador genérico en el que esta instancia no genérica delega.

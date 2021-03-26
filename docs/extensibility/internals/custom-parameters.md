@@ -8,17 +8,17 @@ helpviewer_keywords:
 - wizards, custom parameters
 - custom parameters
 ms.assetid: ba5c364b-66e6-47ea-9760-a0b70de8f0a0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b4927e63bec93fbe7b6730e131a0893372aa70d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3e5d8d9bf78f06dd55a88a2fbd47749224be3949
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902967"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105091102"
 ---
 # <a name="custom-parameters"></a>Parámetros personalizados
 Los parámetros personalizados controlan el funcionamiento de un asistente después de que se haya iniciado un asistente. Un archivo *. vsz* relacionado proporciona una matriz de parámetros definidos por el usuario que se empaquetan en el entorno de desarrollo integrado (IDE) y se pasan al asistente como una matriz de cadenas cuando se inicia el asistente. A continuación, el asistente analiza la matriz de cadenas y usa la información para controlar la operación real del asistente. De esta manera, un asistente puede personalizar la funcionalidad en función del contenido del archivo *. vsz* .
@@ -43,7 +43,7 @@ Param="PROJECT_TYPE = CSPROJ"
 
  Para obtener más información, consulte [archivo de asistente (. vsz)](../../extensibility/internals/wizard-dot-vsz-file.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>
 - [Parámetros de contexto](../../extensibility/internals/context-parameters.md)
 - [Asistentes](../../extensibility/internals/wizards.md)

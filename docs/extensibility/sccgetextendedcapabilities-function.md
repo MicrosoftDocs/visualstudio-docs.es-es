@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccGetExtendedCapabilities function
 ms.assetid: 588c6a92-2147-4d8b-a357-96ca7da0a092
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e1409753559088c0f8129ebacd17387bfb7d111e
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: ca2f2f77c586c5c71658a8f0cab32385eb3f73d3
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102220786"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073006"
 ---
 # <a name="sccgetextendedcapabilities-function"></a>SccGetExtendedCapabilities función)
 Esta función devuelve capacidades adicionales que admite el complemento de control de código fuente.
@@ -49,7 +49,7 @@ enuncia Devuelve un valor distinto de cero ( `TRUE` ) si se admite la capacidad 
 ## <a name="return-value"></a>Valor devuelto
  Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:
 
-|Valor|Descripción|
+|Value|Descripción|
 |-----------|-----------------|
 |SCC_OK|La operación de obtención de capacidad se completó correctamente.|
 |SCC_E_UNKNOWNERROR<br /><br /> SCC_E_NONSPECIFICERROR|Se produjo un error desconocido o no especificado.|

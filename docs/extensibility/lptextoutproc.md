@@ -13,17 +13,17 @@ helpviewer_keywords:
 - LPTEXTOUTPROC callback function
 - SccMsgDataOnAfterGetFile structure
 ms.assetid: 2025c969-e3c7-4cf4-a5c5-099d342895ea
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef05b65b1a018772f4354062aa1be285c40b0d90
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e014d72fb3ae2b691f4a6eed28f14ff21656ef64
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952179"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073188"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 
@@ -142,6 +142,6 @@ LONG SendStatusMessage(
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Funciones de devolución de llamada implementadas por el IDE](../extensibility/callback-functions-implemented-by-the-ide.md)
 - [Complementos de control de código fuente](../extensibility/source-control-plug-ins.md)

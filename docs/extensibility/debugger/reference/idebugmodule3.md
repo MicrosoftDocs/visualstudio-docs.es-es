@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugModule3 interface
 ms.assetid: 44f8e96e-9c59-4ffc-9a08-9c908a0e4de7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38ced8edcc97ad4ab8ff4db430cea57a2533cb30
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 0ccac9c260619b21079c6a277d842d322750cbc1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102149890"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105065494"
 ---
 # <a name="idebugmodule3"></a>IDebugModule3
 Esta interfaz representa un módulo que admite ubicaciones alternativas de símbolos y Estados JustMyCode.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ```
 IDebugModule3 : IDebugModule2
@@ -56,7 +56,7 @@ IDebugModule3 : IDebugModule2
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Consulte también
-- [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
+- [Interfaces principales](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)
 - [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md)
 - [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md)

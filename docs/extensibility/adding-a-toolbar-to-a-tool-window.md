@@ -8,17 +8,17 @@ helpviewer_keywords:
 - tool windows, adding toolbars
 - toolbars [Visual Studio], adding to tool windows
 ms.assetid: 172f64b3-87f8-4292-9c1c-65bffa2b0970
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c0152de94eb74fff902ced4d61c749f7cca3a277
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1847801ed9dcbb1b7c7145c86b1998b54e2bb5d9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951347"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055796"
 ---
 # <a name="add-a-toolbar-to-a-tool-window"></a>Agregar una barra de herramientas a una ventana de herramientas
 En este tutorial se muestra cómo agregar una barra de herramientas a una ventana de herramientas.
@@ -86,14 +86,14 @@ En este tutorial se muestra cómo agregar una barra de herramientas a una ventan
 
 ## <a name="add-the-toolbar-to-the-tool-window"></a>Agregar la barra de herramientas a la ventana de herramientas
 
-1. En *TWTestCommandPackageGuids.CS* , agregue las líneas siguientes.
+1. En *TWTestCommandPackageGuids. CS* , agregue las líneas siguientes.
 
     ```csharp
     public const string guidTWTestCommandPackageCmdSet = "00000000-0000-0000-0000-0000";  // get the GUID from the .vsct file
     public const int TWToolbar = 0x1000;
     ```
 
-2. En *TestToolWindow.CS* , agregue la siguiente instrucción using.
+2. En *TestToolWindow. CS* , agregue la siguiente instrucción using.
 
     ```csharp
     using System.ComponentModel.Design;
@@ -115,5 +115,5 @@ En este tutorial se muestra cómo agregar una barra de herramientas a una ventan
 
 3. En la barra de herramientas, haga clic en el icono para mostrar el mensaje **TWTestCommandPackage dentro de TWToolbar. TWTestCommand. MenuItemCallback ()**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Agregar una barra de herramientas](../extensibility/adding-a-toolbar.md)

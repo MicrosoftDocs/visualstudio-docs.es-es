@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramProvider2::WatchForProviderEvents
 ms.assetid: 2eb93653-b5fb-45b6-b136-56008c5d25ef
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fb00d177cfdb5fe8451b914926f29f591d8f924d
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: e6695e3fd3a9603c9f8b3700ef1e361ec383fea4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102151485"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105065260"
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
 Permite que el proceso reciba notificaciones de eventos de puerto.
@@ -54,7 +54,7 @@ int WatchForProviderEvents(
 `Flags`\
 de Combinación de marcas de la enumeración [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) . Las marcas siguientes son típicas para esta llamada:
 
-|Marcar|Descripción|
+|Marca|Descripción|
 |----------|-----------------|
 |`PFLAG_REMOTE_PORT`|El autor de la llamada se está ejecutando en la máquina remota.|
 |`PFLAG_DEBUGGEE`|El autor de la llamada se está depurando actualmente (se devuelve información adicional sobre el cálculo de referencias para cada nodo).|

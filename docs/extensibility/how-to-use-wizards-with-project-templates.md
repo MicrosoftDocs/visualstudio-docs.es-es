@@ -11,17 +11,17 @@ helpviewer_keywords:
 - templates [Visual Studio], wizards
 - IWizard interface
 ms.assetid: 47ee26cf-67b7-4ff1-8a9d-ab11a725405c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb70931f2c26c248b2e2d41348fa26958d5348b3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 41290f946c198ed854cad9a7eb2af088f6fe228a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883316"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082288"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Cómo: usar asistentes con plantillas de proyecto
 
@@ -74,7 +74,7 @@ En este procedimiento se muestra cómo crear un asistente personalizado que abra
 
 5. Agregue una clase para la implementación del asistente al Proyecto VSIX. (En **Explorador de soluciones**, haga clic con el botón secundario en el nodo del Proyecto VSIX y seleccione **Agregar**, **nuevo elemento** y, a continuación, **clase**). Asigne a la clase el nombre **WizardImplementation**.
 
-6. Reemplace el código del archivo *WizardImplementationClass.CS* por el código siguiente:
+6. Reemplace el código del archivo *WizardImplementationClass. CS* con el código siguiente:
 
    ```csharp
    using System;
@@ -161,7 +161,7 @@ En este procedimiento se muestra cómo crear un asistente personalizado que abra
 
      Este ejemplo agrega un valor de parámetro del formulario de entrada de datos al parámetro <xref:System.Collections.Generic.Dictionary%602>. Cada instancia del parámetro `$custommessage$` del proyecto se reemplazará por el texto escrito por el usuario.
 
-7. Ahora cree el **UserInputForm**. En el archivo *WizardImplementation.CS* , agregue el código siguiente después del final de la `WizardImplementation` clase.
+7. Ahora cree el **UserInputForm**. En el archivo *WizardImplementation. CS* , agregue el código siguiente después del final de la `WizardImplementation` clase.
 
    ```csharp
    public partial class UserInputForm : Form
@@ -265,7 +265,7 @@ Para que la plantilla de proyecto personalizada use el Asistente personalizado, 
 
 En este ejemplo, el proyecto que se usa como plantilla muestra el mensaje especificado en el formulario de datos proporcionados por el usuario del Asistente personalizado.
 
-1. En el **Explorador de soluciones**, vaya al proyecto **MyProjectTemplate** y Abra *Class1.CS*.
+1. En el **Explorador de soluciones**, vaya al proyecto **MyProjectTemplate** y Abra *Class1. CS*.
 
 2. En el método `Main` de la aplicación, agregue la siguiente línea de código.
 

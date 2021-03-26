@@ -6,17 +6,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - m_task field, AsyncTaskMethodBuilder<TResult> structure [.NET Framework debug engines]
 ms.assetid: 649abf0e-0fec-49d9-93b2-8953521f7ba5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51935b1c66dda161a040655e0276dd91b9391b28
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 9975d7b06267c14545dff26293ac4213ae719f9e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102145682"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055500"
 ---
 # <a name="asynctaskmethodbuilderlttresultgtm_task-field"></a>AsyncTaskMethodBuilder &lt; TResult &gt; .m_task campo
 Representa la tarea compilada que se ha inicializado de forma diferida.

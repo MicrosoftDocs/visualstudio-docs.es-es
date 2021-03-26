@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab8f04ff885f4b57d24cb3bc0eb449859fca6271
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e55bb5f4473971f99ce04f9e48b7e05ec13f94c6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952192"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090114"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Patrones de control comunes para Visual Studio
 ## <a name="common-controls"></a><a name="BKMK_CommonControls"></a> Controles comunes
@@ -85,7 +85,7 @@ Para un comportamiento de interacción típico, siga las [directrices de escrito
 
 - En la interfaz de usuario con la misma, los cuadros combinados y las listas desplegables siguen las áreas estándar de los controles.
 
-#### <a name="layout"></a>Diseño
+#### <a name="layout"></a>Layout
 Los cuadros combinados y las listas desplegables deben ajustarse al contenido, no ajustarse al ancho de la ventana en la que se muestran ni coincidir arbitrariamente con la longitud de un campo largo, como una ruta de acceso.
 
 ![Incorrecto: el ancho desplegable es demasiado largo para el contenido que se va a mostrar.](../../extensibility/ux-guidelines/media/0707-03_incorrectdropdownlayout.png "0707-03_IncorrectDropDownLayout")<br />Incorrecto: el ancho desplegable es demasiado largo para el contenido que se va a mostrar.
@@ -126,7 +126,7 @@ Para un comportamiento de interacción típico, siga las [directrices de escrito
 #### <a name="visual-style"></a>Estilo visual
 En los cuadros de diálogo de la utilidad, no se estilo tramas de grupo. Use el estilo básico intrínseco para el control.
 
-#### <a name="layout"></a>Diseño
+#### <a name="layout"></a>Layout
 
 - No es necesario usar un marco de grupo para incluir las opciones de radio, a menos que necesite mantener la distinción de grupo en un diseño estrecho.
 

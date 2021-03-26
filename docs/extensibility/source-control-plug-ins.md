@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, reference
 ms.assetid: 964980ca-21c5-4706-8535-6ea23e1c9cc9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab076cef7aaab96779e303ee7b85c8047eb6b52e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a6788d738d37ac62156958acb15c1bcd5d536515
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99848122"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089958"
 ---
 # <a name="source-control-plug-ins"></a>Complementos de control de código fuente
 La sección de referencia del SDK del complemento de control de código fuente contiene la especificación completa de la interfaz que permite integrar los sistemas de control de código fuente con [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Especifica la sintaxis y la semántica de las distintas funciones y tipos de datos que el complemento de control de código fuente debe implementar para interactuar con el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] entorno de desarrollo integrado (IDE).

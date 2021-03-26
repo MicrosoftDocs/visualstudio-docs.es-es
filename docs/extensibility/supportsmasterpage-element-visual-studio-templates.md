@@ -11,17 +11,17 @@ helpviewer_keywords:
 - <SupportsMasterPage> element [Visual Studio Templates]
 - SupportsMasterPage element [Visual Studio Templates]
 ms.assetid: ce877a6a-9bba-4fd9-92fb-0a8dfec9e75b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9509d7bc0f8141b01ed1a0a600fa5d77a6d6916
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c3b779b3626c4ff47fe798fa9f4ff2e7bc9c7ac8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839381"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056043"
 ---
 # <a name="supportsmasterpage-element-visual-studio-templates"></a>SupportsMasterPage (Elemento, Plantillas de Visual Studio)
 Especifica si está habilitada o no la casilla **seleccionar página maestra** en el cuadro de diálogo **Agregar nuevo elemento** .
@@ -55,7 +55,7 @@ Especifica si está habilitada o no la casilla **seleccionar página maestra** e
 
  El texto debe ser `true` o `false` , lo que indica si la casilla **seleccionar página maestra** está habilitada o no en el cuadro de diálogo **Agregar nuevo elemento** .
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  `SupportsMasterPage` es un elemento opcional. El valor predeterminado es `false`.
 
  El `SupportsMasterPage` elemento solo está disponible para las plantillas de elementos Web.
@@ -85,6 +85,6 @@ Especifica si está habilitada o no la casilla **seleccionar página maestra** e
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Crear plantillas de proyecto y de elemento](../ide/creating-project-and-item-templates.md)

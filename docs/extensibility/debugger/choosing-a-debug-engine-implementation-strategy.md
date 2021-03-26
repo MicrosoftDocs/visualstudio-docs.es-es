@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, implementation strategies
 ms.assetid: 90458fdd-2d34-4f10-82dc-6d8f31b66d8b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e544e4cebaa4e2e1691f6c175dfa750a1f951abc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6126df3e4adb1e0d942669b561801be4449036df
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930699"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055067"
 ---
 # <a name="choose-a-debug-engine-implementation-strategy"></a>Elegir una estrategia de implementación del motor de depuración
 Use la arquitectura en tiempo de ejecución para determinar la estrategia DE implementación del motor DE depuración (DE). Puede crear el motor de depuración en proceso para el programa que está depurando. Cree el motor de depuración en proceso para el administrador de depuración de sesión (SDM) de Visual Studio. O bien, cree el motor de depuración fuera de proceso en ambos. Las siguientes directrices le ayudarán a elegir entre estas tres estrategias.
@@ -33,5 +33,5 @@ Use la arquitectura en tiempo de ejecución para determinar la estrategia DE imp
 
 - Si el método DE debe llamar al programa para tener acceso al almacén de símbolos, cree el DE en proceso con el programa. En este caso, el programa crea la instancia de de.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Extensibilidad del depurador de Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

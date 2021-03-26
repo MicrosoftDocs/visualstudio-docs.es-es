@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramPublisher2::PublishProgramNode
 ms.assetid: d4b72e04-f726-46cf-8e56-5203ff205b12
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 56d407e22aabb396b331c14047f5a1753a5adf09
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 62de2e91d9331d33e40e6364893850d40f8e8eca
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102161331"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105065156"
 ---
 # <a name="idebugprogrampublisher2publishprogramnode"></a>IDebugProgramPublisher2::PublishProgramNode
 Hace que un nodo de programa esté disponible para que lo usen los motores de depuración (DEs) y el administrador de depuración de sesión (SDM).

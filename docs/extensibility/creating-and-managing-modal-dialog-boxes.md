@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - dialog boxes, managing in Visual Studio
 ms.assetid: 491bc0de-7dba-478c-a76b-923440e090f3
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 949f136913a30848ba13185bc699fa0bc51ac456
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 96ac3c9ee92cd9124485dde29814f4a1e5c942c8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884980"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055757"
 ---
 # <a name="create-and-manage-modal-dialog-boxes"></a>Crear y administrar cuadros de diálogo modales
 Al crear un cuadro de diálogo modal dentro de Visual Studio, debe asegurarse de que la ventana primaria del cuadro de diálogo está deshabilitada mientras se muestra el cuadro de diálogo y, a continuación, volver a habilitar la ventana primaria después de cerrar el cuadro de diálogo. Si no lo hace, es posible que reciba el siguiente error: *Microsoft Visual Studio no se puede cerrar porque un cuadro de diálogo modal está activo. Cierre el cuadro de diálogo activo e inténtelo de nuevo.*
@@ -40,7 +40,7 @@ Si el cuadro de diálogo no es WPF, o por algún otro motivo por el que no puede
 
     - *System.Xaml*
 
-3. En *openDialog.CS*, agregue la siguiente `using` instrucción:
+3. En *openDialog. CS*, agregue la siguiente `using` instrucción:
 
     ```csharp
     using Microsoft.VisualStudio.PlatformUI;

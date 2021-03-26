@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], creating
 ms.assetid: 9f4e210c-4b47-4daa-91fa-1c301c4587f9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1069109cbda6b0385c9409a12f9f9c674ddec14c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: eb94554b4ac1af30d8187a8ab75aa83f65dccc72
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877491"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055809"
 ---
 # <a name="create-an-options-page"></a>Crear una página de opciones
 
@@ -166,7 +166,7 @@ En este tutorial se crea una página de herramientas/opciones simple que utiliza
 
 7. Agregue un control de **cuadro de texto** al control de usuario.
 
-     En la ventana **propiedades** , en la barra de herramientas, haga clic en el botón **eventos** y, a continuación, haga doble clic en el evento **leave** . El nuevo controlador de eventos aparece en el código *MyUserControl.CS* .
+     En la ventana **propiedades** , en la barra de herramientas, haga clic en el botón **eventos** y, a continuación, haga doble clic en el evento **leave** . El nuevo controlador de eventos aparece en el código *MyUserControl. CS* .
 
 8. Agregue un `OptionsPage` campo público, un `Initialize` método a la clase de control y actualice el controlador de eventos para establecer el valor de la opción en el contenido del cuadro de texto:
 
@@ -249,7 +249,7 @@ En este tutorial se crea una página de herramientas/opciones simple que utiliza
 
      Este código llama <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> a para crear o recuperar una `OptionPageGrid` instancia. `OptionPageGrid` llama <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A> a para cargar sus opciones, que son propiedades públicas.
 
-2. Ahora, agregue una plantilla de elemento de comando personalizada denominada **MyToolsOptionsCommand** para mostrar el valor. En el cuadro de diálogo **Agregar nuevo elemento** , vaya a extensibilidad de **Visual C#**  >   y seleccione **comando personalizado**. En el campo **nombre** situado en la parte inferior de la ventana, cambie el nombre del archivo de comandos a *MyToolsOptionsCommand.CS*.
+2. Ahora, agregue una plantilla de elemento de comando personalizada denominada **MyToolsOptionsCommand** para mostrar el valor. En el cuadro de diálogo **Agregar nuevo elemento** , vaya a extensibilidad de **Visual C#**  >   y seleccione **comando personalizado**. En el campo **nombre** situado en la parte inferior de la ventana, cambie el nombre del archivo de comandos a *MyToolsOptionsCommand. CS*.
 
 3. En el archivo *MyToolsOptionsCommand* , reemplace el cuerpo del método del comando `ShowMessageBox` por lo siguiente:
 
@@ -268,6 +268,6 @@ En este tutorial se crea una página de herramientas/opciones simple que utiliza
 
      Un cuadro de mensaje muestra el valor actual de `OptionInteger` .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Opciones y páginas de opciones](../extensibility/internals/options-and-options-pages.md)

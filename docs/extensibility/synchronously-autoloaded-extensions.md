@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 12/11/2019
 ms.topic: conceptual
 ms.assetid: 822e3cf8-f723-4ff1-8467-e0fb42358a1f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 460227b1eb5a1e12ca698f649700586b53bc7254
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 35b63f8e84e6879d09fda4c35924b5b9d1d60ccd
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839340"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056069"
 ---
 # <a name="synchronously-autoloaded-extensions"></a>Extensiones cargadas automáticamente y sincrónicamente
 
@@ -55,5 +55,5 @@ Valor = (DWORD)
 ## <a name="extension-authors"></a>Autores de extensiones
 Los autores de extensiones pueden encontrar instrucciones para migrar paquetes a la carga asincrónica asincrónica en [migrar a AsyncPackage](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/AsyncPackageMigration).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 Para obtener más información sobre la configuración de la carga asincrónica sincrónica en Visual Studio 2019, vea la página [comportamiento de carga asincrónica sincrónica](https://devblogs.microsoft.com/visualstudio/updates-to-synchronous-autoload-of-extensions-in-visual-studio-2019/) .

@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::GetProcess
 ms.assetid: 1d602485-ebaf-451c-9165-f2e226f20a90
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 233bd9bbb41f64b375e899dba9c0be9a9fba3d97
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 1d87d863b954a9865ff3960f2f2cdd45ac40ce58
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102168994"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105065403"
 ---
 # <a name="idebugprogram2getprocess"></a>IDebugProgram2::GetProcess
 Obtiene el proceso en el que se ejecuta este programa.

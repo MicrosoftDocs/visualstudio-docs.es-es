@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugModule2 interface
 ms.assetid: 24c2a126-f4ab-4891-8509-8ef99b994c08
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7cc14d4f33924a04b25344c4c624a633b97ff7b
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 848aa60ad7b8343d84489f460cfcb5fb6ec2d77d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102150489"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105065559"
 ---
 # <a name="idebugmodule2"></a>IDebugModule2
 Esta interfaz representa un módulo, es decir, una unidad ejecutable de un programa, como un archivo DLL.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ```
 IDebugModule2 : IUnknown
@@ -58,7 +58,7 @@ IDebugModule2 : IUnknown
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Consulte también
-- [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
+- [Interfaces principales](../../../extensibility/debugger/reference/core-interfaces.md)
 - [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)
 - [GetModule](../../../extensibility/debugger/reference/idebugmoduleloadevent2-getmodule.md)
 - [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)
