@@ -9,22 +9,22 @@ helpviewer_keywords:
 - projects [Visual Studio SDK], saving custom documents
 - editors [Visual Studio SDK], saving custom documents
 ms.assetid: 040b36d6-1f0a-4579-971c-40fbb46ade1d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3be218565feb26d66f623a281fc9277b7fa8fb7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a536a5f0f2b1cac09c65079974c661e09e9139ab
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958523"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080923"
 ---
 # <a name="saving-a-custom-document"></a>Guardado de un documento personalizado
 El entorno controla los comandos **Guardar**, **Guardar como** y **guardar todo** . Cuando un usuario hace clic en **Guardar**, **Guardar como** **o guardar todo** en el menú **archivo** o cierra la solución, lo que da lugar a guardar todo, se produce el siguiente proceso.
 
- ![Guardado del editor del cliente](../../extensibility/internals/media/private.gif "Privada") Guardar, guardar como y guardar todo el control de comandos para un editor personalizado
+ ![Guardado del editor del cliente](../../extensibility/internals/media/private.gif "Private") Guardar, guardar como y guardar todo el control de comandos para un editor personalizado
 
  Este proceso se describe en los pasos siguientes:
 
@@ -43,6 +43,6 @@ El entorno controla los comandos **Guardar**, **Guardar como** y **guardar todo*
     > [!NOTE]
     > Si implementa su propia persistencia, asegúrese de llamar al <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A> método para ahorrar tiempo. Este método realiza una comprobación para asegurarse de que es seguro guardar el archivo (por ejemplo, el archivo no es de solo lectura).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - [Apertura y guardado de elementos de proyecto](../../extensibility/internals/opening-and-saving-project-items.md)

@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e6e4a07a023be398c4106984fe4dc33eddd2706
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9486f1cd3e931d134c6fe2842f8704926de70966
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929204"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060710"
 ---
 # <a name="vsix-color-compiler"></a>Compilador de colores de VSIX
 La herramienta de compilador de color de extensión de Visual Studio es una aplicación de consola que toma un archivo. XML que representa los colores de los temas existentes de Visual Studio y los incluye en un archivo. pkgdef para que esos colores se puedan usar en Visual Studio. Dado que es fácil comparar las diferencias entre los archivos. XML, esta herramienta es útil para administrar los colores personalizados en el control de código fuente. También se puede enlazar a entornos de compilación para que la salida de la compilación sea un archivo. pkgdef válido.
@@ -52,7 +52,7 @@ La herramienta de compilador de color de extensión de Visual Studio es una apli
 </Theme>
 ```
 
-|**Atributo**|**Definition**|
+|**Atributo**|**Definición**|
 |-|-|
 |Nombre|Desee Nombre del tema.|
 |GUID|Desee GUID del tema (debe coincidir con el formato de GUID)|
@@ -76,7 +76,7 @@ La herramienta de compilador de color de extensión de Visual Studio es una apli
  </Category>
 ```
 
-|**Atributo**|**Definition**|
+|**Atributo**|**Definición**|
 |-|-|
 |Nombre|Desee El nombre de la categoría.|
 |GUID|Desee GUID de la categoría (debe coincidir con el formato de GUID)|
@@ -92,7 +92,7 @@ La herramienta de compilador de color de extensión de Visual Studio es una apli
  </Color>
 ```
 
-|**Atributo**|**Definition**|
+|**Atributo**|**Definición**|
 |-|-|
 |Nombre|Desee Nombre del color.|
 
@@ -105,7 +105,7 @@ La herramienta de compilador de color de extensión de Visual Studio es una apli
 <Foreground Type="type" Source="int" />
 ```
 
-|**Atributo**|**Definition**|
+|**Atributo**|**Definición**|
 |-|-|
 |Tipo|Desee Tipo del color. Puede tener uno de los valores siguientes:<br /><br /> *CT_INVALID:* El color no es válido o no está establecido.<br /><br /> *CT_RAW:* Valor ARGB sin formato.<br /><br /> *CT_COLORINDEX:* NO USE.<br /><br /> *CT_SYSCOLOR:* Un color del sistema Windows de SysColor.<br /><br /> *CT_VSCOLOR:* Un color de Visual Studio de __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC:* Color automático.<br /><br /> *CT_TRACK_FOREGROUND:* NO USE.<br /><br /> *CT_TRACK_BACKGROUND:* NO USE.|
 |Source|Desee Valor del color representado en hexadecimal.|

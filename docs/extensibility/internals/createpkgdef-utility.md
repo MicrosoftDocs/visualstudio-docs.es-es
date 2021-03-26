@@ -10,17 +10,17 @@ helpviewer_keywords:
 - pkgdef
 - createpkgdef
 ms.assetid: c745cb76-47a6-49ff-9eed-16af0f748e35
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9822319a74d1374ef2a88d4f9231e6fd86b1e5f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 519cc251a245e1eeb65ddb1fcd34b0fa1af8f686
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884538"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056888"
 ---
 # <a name="createpkgdef-utility"></a>Utilidad CreatePkgDef
 Toma un archivo. dll para una extensión de Visual Studio como parámetro y crea un archivo *. pkgdef* para acompañar el archivo *. dll* . El archivo *. pkgdef* contiene toda la información que, de lo contrario, se escribiría en el registro del sistema cuando se instala la extensión.
@@ -47,7 +47,7 @@ Fuerza el registro con la utilidad de **ensamblado** .
 **&lt;AssemblyPath&gt;**\
 La ruta de acceso del archivo *. dll* desde el que desea generar el archivo *. pkgdef*.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 La implementación de extensiones mediante archivos *. pkgdef* reemplaza los requisitos del registro de versiones anteriores de Visual Studio.
 
 ::: moniker range=">=vs-2019"
@@ -84,5 +84,5 @@ Si la carpeta de instalación *es \\ %VSInstallDir%\Common7\IDE\Extensions*, la 
 
 ::: moniker-end
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Utilidad CreateExpInstance](../../extensibility/internals/createexpinstance-utility.md)

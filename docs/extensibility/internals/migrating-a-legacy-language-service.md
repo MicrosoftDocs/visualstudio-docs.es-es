@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - language services, migrating
 ms.assetid: e0f666a0-92a7-4f9c-ba79-d05b13fb7f11
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a0e20c77a1c8a81a29691079ace1e4751135560
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: afe98f2d96618999aa02dd01f03f55395af46e19
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895692"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063271"
 ---
 # <a name="migrating-a-legacy-language-service"></a>Migración de un servicio de lenguaje heredado
 Puede migrar un servicio de lenguaje heredado a una versión posterior de Visual Studio actualizando el proyecto y agregando un archivo source. Extension. vsixmanifest al proyecto. El propio servicio de lenguaje seguirá funcionando como antes, ya que el editor de Visual Studio lo adapta.
@@ -71,13 +71,13 @@ Puede migrar un servicio de lenguaje heredado a una versión posterior de Visual
 
     - Agregue una referencia a Microsoft.VisualStudio.Shell.Interop.10.0.dll.
 
-8. Abra el archivo VsPkg.cs y cambie el valor del `DefaultRegistryRoot` atributo a
+8. Abra el archivo VsPkg. CS y cambie el valor del `DefaultRegistryRoot` atributo a
 
     ```
     "Software\\Microsoft\\VisualStudio\\14.0Exp"
     ```
 
-9. El ejemplo original no registra su servicio de lenguaje, por lo que debe agregar el atributo siguiente a VsPkg.cs.
+9. El ejemplo original no registra su servicio de lenguaje, por lo que debe agregar el atributo siguiente a VsPkg. cs.
 
     ```
     [ProvideLanguageService(typeof(RegularExpressionLanguageService), "RegularExpressionLanguage", 0, RequestStockColors=true)]
@@ -109,5 +109,5 @@ Puede migrar un servicio de lenguaje heredado a una versión posterior de Visual
 
 12. Inicie la depuración. Se abre una segunda instancia de Visual Studio.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Extensibilidad de servicio de lenguaje heredado](../../extensibility/internals/legacy-language-service-extensibility.md)

@@ -6,17 +6,17 @@ titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c41b70cf9a4e4e5ae4b1d1ddd2d2a6f6876b9a96
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e3bdcc9c35f5acaf9937bd18b0160f9e5a58161c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875528"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060592"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analizadores de Roslyn y biblioteca con reconocimiento de código para ImmutableArrays
 
@@ -66,7 +66,7 @@ Coloque el símbolo de intercalación del editor en la línea que declara `b1` .
 
 En el menú principal, elija **archivo**  >  **nuevo**  >  **proyecto**. En el cuadro de diálogo **nuevo proyecto** , en proyectos de **C#** en la barra de navegación de la izquierda, elija **extensibilidad** y, en el panel derecho, elija la plantilla de proyecto **analizador con corrección de código** . Escriba un nombre y confirme el cuadro de diálogo.
 
-La plantilla abre un archivo *DiagnosticAnalyzer.CS* . Elija la pestaña búfer del editor. Este archivo tiene una clase de analizador (formada a partir del nombre que asignó al proyecto) que deriva de `DiagnosticAnalyzer` (un tipo de API Roslyn). La nueva clase tiene una `DiagnosticAnalyzerAttribute` declaración el analizador es relevante para el lenguaje C#, de modo que el compilador detecta y carga el analizador.
+La plantilla abre un archivo *DiagnosticAnalyzer. CS* . Elija la pestaña búfer del editor. Este archivo tiene una clase de analizador (formada a partir del nombre que asignó al proyecto) que deriva de `DiagnosticAnalyzer` (un tipo de API Roslyn). La nueva clase tiene una `DiagnosticAnalyzerAttribute` declaración el analizador es relevante para el lenguaje C#, de modo que el compilador detecta y carga el analizador.
 
 ```csharp
 [DiagnosticAnalyzer(LanguageNames.CSharp)]
@@ -309,7 +309,7 @@ Puede ver este ejemplo desarrollado y explicado con más detalle en [esta conver
 
 [Aquí](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)puede ver todo el código terminado. Cada una de las subcarpetas *DoNotUseImmutableArrayCollectionInitializer* y *DoNotUseImmutableArrayCtor* tiene un archivo de c# para buscar problemas y un archivo de c# que implementa las correcciones de código que se muestran en la interfaz de usuario de la bombilla de Visual Studio. Tenga en cuenta que el código terminado tiene un poco más de abstracción para evitar que se recupere el objeto de tipo ImmutableArray una \<T> y otra vez. Utiliza acciones registradas anidadas para guardar el objeto de tipo en un contexto que está disponible cada vez que se ejecutan las subacciones (analizar la creación de objetos y analizar inicializaciones de colección).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 * [\\\Build 2015 Talk](https://channel9.msdn.com/events/Build/2015/3-725)
 * [Código completado en GitHub](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)

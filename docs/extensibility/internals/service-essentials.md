@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - services, essentials
 ms.assetid: fbe84ad9-efe1-48b1-aba3-b50b90424d47
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 145097b9e012d8c09df1424747d04148df3cae8f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 69e7e1c5b18019c4ff063ec504fc702f47f7e023
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911011"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080832"
 ---
 # <a name="service-essentials"></a>Conceptos básicos del servicio
 Un servicio es un contrato entre dos VSPackages. Un VSPackage proporciona un conjunto específico de interfaces para que lo consuma otro VSPackage. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] es en sí misma una colección de VSPackages que proporciona servicios a otros VSPackages.
@@ -94,7 +94,7 @@ Afortunadamente, <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>
 
     Este código obtiene un servicio SVsActivityLog y lo convierte en una interfaz IVsActivityLog, que se puede usar para escribir en el registro de actividad. Para obtener un ejemplo, consulte [Cómo: usar el registro de actividad](../../extensibility/how-to-use-the-activity-log.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Lista de servicios disponibles](../../extensibility/internals/list-of-available-services.md)
 - [Uso y prestación de servicios](../../extensibility/using-and-providing-services.md)

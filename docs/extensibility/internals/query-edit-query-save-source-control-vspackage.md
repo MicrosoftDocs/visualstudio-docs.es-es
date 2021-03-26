@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Query Edit Query Save events
 - source control packages, Query Edit Query Save events
 ms.assetid: c360d2ad-fe42-4d65-899d-d1588cc8a322
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e320d6f7b6126736719eb2a428d47a39a61730ae
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9295644a07a1840cd4874b8bfff298ad9d46c928
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837280"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060918"
 ---
 # <a name="query-edit-query-save-source-control-vspackage"></a>Editar/guardar consulta (VSPackage de control de código fuente)
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] los editores pueden difundir eventos de modificación de consultas de edición de consulta (QEQS). [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] El código auxiliar de control de código fuente implementa el servicio QEQS, de modo que es el destinatario de los eventos QEQS. A continuación, estos eventos se delegan en el VSPackage de control de código fuente activo actualmente. El VSPackage de control de código fuente activo implementa <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> y sus métodos. `IVsQueryEditQuerySave2`Normalmente se llama a los métodos de la interfaz inmediatamente antes de que un documento se edite por primera vez y inmediatamente antes de que se guarde un documento.
@@ -37,5 +37,5 @@ ms.locfileid: "99837280"
 
  Este método debe comportarse de manera transaccional; es decir, si se cancela la guardado en un único archivo, se cancela la guardado de todos los archivos. Por el contrario, si se permite el guardado, debe permitirse para todos los archivos. Como con el `IVsQueryEditQuerySave2::QueryEditFiles` método, los casos que se deben tener en cuenta al implementar el `IVsQueryEditQuerySave2::QuerySaveFiles` método incluyen varios archivos, archivos especiales, cancelación del usuario y ediciones en memoria.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>

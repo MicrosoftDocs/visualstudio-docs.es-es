@@ -8,17 +8,17 @@ helpviewer_keywords:
 - VSPackages, structure
 - source control packages, VSPackage overview
 ms.assetid: 92722be7-b397-48c3-a7a7-0b931a341961
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 886ff7112a5e455bfc07e51b30f4ac60eb10136a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ae037e3bda4ca09ee11969325b67ff0f8323722d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899955"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060697"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>Estructura de VSPackage (VSPackage de control de código fuente)
 
@@ -74,7 +74,7 @@ El VSPackage de control de código fuente implementa <xref:Microsoft.VisualStudi
 
 Para obtener una lista completa de las interfaces que debe tener en cuenta un VSPackage de control de código fuente, vea [servicios e interfaces relacionados](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Elementos de diseño](../../extensibility/internals/source-control-vspackage-design-elements.md)
 - [Interfaces y servicios relacionados](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md)

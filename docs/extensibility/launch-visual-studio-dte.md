@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 04/26/2019
 ms.topic: conceptual
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2c3703cf0e95b83492f1cb50548d9a90336e34a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 549575d85de9fc1c37ebc4aa34c05e29837885df
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99848148"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060587"
 ---
 # <a name="launch-visual-studio-using-dte"></a>Inicio de Visual Studio con DTE
 
@@ -33,7 +33,7 @@ Para ver el código de inicio en acción, cree un proyecto siguiendo estos pasos
 
 3. Agregue una referencia a EnvDTE.
 
-4. Pegue el [código de ejemplo](#example-code) que aparece a continuación en el archivo *Program.CS* .
+4. Pegue el [código de ejemplo](#example-code) que aparece a continuación en el archivo *Program. CS* .
 
 5. Presione **F5** para ejecutar el programa. Debería ver Visual Studio 2019 abierto antes de que se cierre el programa.
 
@@ -187,7 +187,7 @@ namespace ConsoleLauncherApp
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Localización de Visual Studio](locating-visual-studio.md)
 - [Tutorial: acceso al objeto DTE desde una extensión de editor](walkthrough-accessing-the-dte-object-from-an-editor-extension.md)

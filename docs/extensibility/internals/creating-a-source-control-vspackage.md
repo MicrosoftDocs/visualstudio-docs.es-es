@@ -8,17 +8,17 @@ helpviewer_keywords:
 - source control [Visual Studio SDK], creating source control packages
 - source control packages
 ms.assetid: cca0a9ed-48ff-409f-8036-ed8db0f7533e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9be8b97b3e37a224b12781e66543f7ab126f2c6f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1085275427aeb02a767a66088ee58ced890dcb05
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958536"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056862"
 ---
 # <a name="create-a-source-control-vspackage"></a>Crear un VSPackage de control de código fuente
 En esta documentación se incluyen vínculos a información general sobre la arquitectura de un paquete de control de código fuente integrado con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , la API que se define en las interfaces que se van a implementar y los servicios que se van a consumir, y un ejemplo que muestra una implementación simple de un paquete de control de código fuente.
@@ -30,7 +30,7 @@ En esta documentación se incluyen vínculos a información general sobre la arq
 
  Describe el paquete de control de código fuente, que es una alternativa más avanzada al complemento de control de código fuente para implementar características de control de código fuente en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
-- [Architecture](../../extensibility/internals/source-control-vspackage-architecture.md)
+- [Arquitectura](../../extensibility/internals/source-control-vspackage-architecture.md)
 
  Presenta un diagrama y explica los componentes de un paquete de control de código fuente.
 
