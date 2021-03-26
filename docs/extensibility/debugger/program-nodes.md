@@ -10,17 +10,17 @@ helpviewer_keywords:
 - program nodes, adding
 - program nodes, superceding
 ms.assetid: 1c5a5c13-c14d-42c3-af11-4c63f1032c8d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65a97a32baab159ad2c0bd1ac189dedbf09fe98e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5658026b60006a58ba168ca713028b9876a3c57d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948444"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094632"
 ---
 # <a name="program-nodes"></a>Nodos de programa
 En la arquitectura del depurador, un *nodo de programa*:
@@ -35,7 +35,7 @@ En la arquitectura del depurador, un *nodo de programa*:
 
   Antes de asociar un programa a, el IDE solo necesita una descripción ligera del programa. Esta información se puede obtener del nodo del programa. Una vez que el programa está asociado, el IDE muestra información más detallada, como una lista de todos los subprocesos que se ejecutan en el programa. Esta información se obtiene del propio programa.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Programs](../../extensibility/debugger/programs.md)
 - [Procesos](../../extensibility/debugger/processes.md)
 - [Motor de depuración](../../extensibility/debugger/debug-engine.md)

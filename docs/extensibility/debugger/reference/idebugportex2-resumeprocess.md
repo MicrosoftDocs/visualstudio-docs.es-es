@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortEx2::ResumeProcess
 ms.assetid: e80a6960-9456-4764-9320-e7b1bd57fe5d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b4f0a1b5384631c1c36bb4fca8213b33b8697409
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 47d09ea3aa8c16b6cc4d27fe5ee1eea3fbecf9ba
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102169449"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105072486"
 ---
 # <a name="idebugportex2resumeprocess"></a>IDebugPortEx2::ResumeProcess
 Reanuda la ejecución de un proceso.

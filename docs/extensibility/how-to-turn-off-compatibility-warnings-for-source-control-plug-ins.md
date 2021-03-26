@@ -8,17 +8,17 @@ helpviewer_keywords:
 - source control plug-ins, turning off compatibility warnings
 - compatibility warnings, turning off
 ms.assetid: ba318e12-921b-4b7a-a8c2-12c712be1dbf
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae293f92d8de3aec2137f26999a3315bb5dc5c08
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e7bbf2f01b2fb82e3bbb640eba5c44f99f2b7a53
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880741"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074904"
 ---
 # <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>Desactivar advertencias de compatibilidad para complementos de control de código fuente
 
@@ -44,6 +44,6 @@ Un usuario puede ver varias advertencias de compatibilidad al utilizar el contro
 
      Es mejor admitir la reentrada ( `SCC_CAP_REENTRANT` capacidad); si lo hace, se quitará esta advertencia. Sin embargo, si esta compatibilidad no es posible, se pueden establecer estas entradas del registro.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Marcas de capacidad](../extensibility/capability-flags.md)

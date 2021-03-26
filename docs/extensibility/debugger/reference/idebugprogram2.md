@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2 interface
 ms.assetid: 8d73df73-cfff-4b8b-b426-d6051edb1939
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4854150d6581d80804b4c29246bf6db016b5acb
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 2f6effa250749f448ed1a02c4b7a699d50b7388e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102159918"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105084407"
 ---
 # <a name="idebugprogram2"></a>IDebugProgram2
 Esta interfaz representa un programa que se ejecuta en un proceso.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ```
 IDebugProgram2 : IUnknown
@@ -73,7 +73,7 @@ IDebugProgram2 : IUnknown
  Un programa es un contenedor de subprocesos que se ejecuta en una arquitectura en tiempo de ejecución determinada, mientras que un proceso se compone de uno o varios programas.
 
 ## <a name="see-also"></a>Consulte también
-- [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
+- [Interfaces principales](../../../extensibility/debugger/reference/core-interfaces.md)
 - [GetProgram](../../../extensibility/debugger/reference/idebugthread2-getprogram.md)
 - [Siguiente](../../../extensibility/debugger/reference/ienumdebugprograms2-next.md)
 - [Evento](../../../extensibility/debugger/reference/idebugportevents2-event.md)

@@ -9,20 +9,20 @@ helpviewer_keywords:
 - GetHitCount method
 - IDebugBoundBreakpoint2::GetHitCount method
 ms.assetid: 23481f37-047c-41d2-8286-4da1f4084961
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: eec08d34f74ad1f91b7c9cbabd4b3982f270bf09
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: ca015a814956a0b6073e090d17751e623b557429
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102167612"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105088865"
 ---
 # <a name="idebugboundbreakpoint2gethitcount"></a>IDebugBoundBreakpoint2::GetHitCount
 Obtiene el número de llamadas actual para este punto de interrupción enlazado.
