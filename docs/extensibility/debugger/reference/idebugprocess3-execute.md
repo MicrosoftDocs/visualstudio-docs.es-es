@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess3::Execute
 ms.assetid: d831cd81-d7bf-4172-8517-aa699867791f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 149497bcee5c37813e9d1134237ddb991d5893da
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: e81efa2bec718899dba01181ccc691040cd4cf2b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102150255"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105081599"
 ---
 # <a name="idebugprocess3execute"></a>IDebugProcess3::Execute
 Sigue ejecutando este proceso desde un estado detenido. Cualquier estado de ejecución anterior (como un paso) se borra y el proceso empieza a ejecutarse de nuevo.

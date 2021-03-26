@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Solution Explorer, extending
 - extensibility [Visual Studio], projects and solutions
 ms.assetid: df976c76-27ec-4f00-ab6d-a26a745dc6c7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dfe2947d60ad5dde6e2f23b9bed59b09e6abe8ea
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d1256b807d67f95aa8ca1e952a4dca7bd550e0fc
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862127"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105075021"
 ---
 # <a name="extend-the-solution-explorer-filter"></a>Extender el filtro de Explorador de soluciones
 Puede extender **Explorador de soluciones** funcionalidad de filtro para mostrar u ocultar distintos archivos. Por ejemplo, puede crear un filtro que muestre solo los archivos de generador de clases de C# en el **Explorador de soluciones**, como se muestra en este tutorial.
@@ -60,14 +60,14 @@ Puede extender **Explorador de soluciones** funcionalidad de filtro para mostrar
 
 ### <a name="add-the-filter-code"></a>Agregar el código de filtro
 
-1. Agregue algunos GUID al archivo *FileFilterPackageGuids.CS* :
+1. Agregue algunos GUID al archivo *FileFilterPackageGuids. CS* :
 
     ```csharp
     public const string guidFileFilterPackageCmdSetString = "00000000-0000-0000-0000-00000000"; // get your GUID from the .vsct file
     public const int FileFilterId = 0x100;
     ```
 
-2. Agregue un archivo de clase al proyecto FileFilter denominado *FileNameFilter.CS*.
+2. Agregue un archivo de clase al proyecto FileFilter denominado *FileNameFilter. CS*.
 
 3. Reemplace el espacio de nombres vacío y la clase vacía por el código siguiente.
 
@@ -160,7 +160,7 @@ Puede extender **Explorador de soluciones** funcionalidad de filtro para mostrar
 
     ```
 
-4. En *FileFilter.CS*, quite la colocación del comando y el código de control del constructor FileFilter. El resultado debería ser similar al siguiente:
+4. En *FileFilter. CS*, quite la colocación del comando y el código de control del constructor FileFilter. El resultado debería ser similar al siguiente:
 
     ```csharp
     private FileFilter(Package package)
@@ -176,7 +176,7 @@ Puede extender **Explorador de soluciones** funcionalidad de filtro para mostrar
 
      Quite `ShowMessageBox()` también el método.
 
-5. En *FileFilterPackage.CS*, reemplace el código del `Initialize()` método por lo siguiente:
+5. En *FileFilterPackage. CS*, reemplace el código del `Initialize()` método por lo siguiente:
 
     ```csharp
     protected override void Initialize()
@@ -186,7 +186,7 @@ Puede extender **Explorador de soluciones** funcionalidad de filtro para mostrar
     }
     ```
 
-### <a name="test-your-code"></a>Prueba del código
+### <a name="test-your-code"></a>Probar el código
 
 1. Compile y ejecute el proyecto. Se muestra una segunda instancia de Visual Studio. Esto se denomina instancia experimental.
 

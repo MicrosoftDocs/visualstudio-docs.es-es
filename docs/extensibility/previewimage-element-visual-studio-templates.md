@@ -9,17 +9,17 @@ helpviewer_keywords:
 - <PreviewImage> Element (Visual Studio Templates)
 - PreviewImage Element (Visual Studio Templates)
 ms.assetid: d1796f20-523b-4e0d-8ac3-ca87f3b5a9b6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e306f6453ca3abbc2ad881821254ca88a160d01b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6fc7a370885d24a586262bebd4182daacd84a9b2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967285"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090231"
 ---
 # <a name="previewimage-element-visual-studio-templates"></a>PreviewImage (elemento, plantillas de Visual Studio)
 Especifica la imagen de vista previa, como un nombre de archivo, para la imagen de vista previa que aparecerá en el cuadro de diálogo **nuevo proyecto** o **Agregar nuevo elemento** .
@@ -53,7 +53,7 @@ Especifica la imagen de vista previa, como un nombre de archivo, para la imagen 
 
  El texto debe ser una cadena que represente un nombre de archivo.
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
  `PreviewImage` es un elemento opcional.
 
 ## <a name="see-also"></a>Vea también

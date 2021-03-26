@@ -8,17 +8,17 @@ helpviewer_keywords:
 - statement completion
 - language services, statement completion
 ms.assetid: 617439dc-3f0e-4e5f-b346-3e4e7fcf3c1b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 815b47a700e87852596d7a65e341953f65b66cf9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 63a784c850f4c88ecf17a978a2943577eb988a7b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99894834"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080780"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>Finalización de instrucciones en un servicio de lenguaje heredado
 La finalización de instrucciones es el proceso por el que el servicio de lenguaje ayuda a los usuarios a finalizar una palabra clave o un elemento del lenguaje que han empezado a escribir en el editor básico. En este tema se describe cómo funciona la finalización de instrucciones y cómo implementarla en el servicio de lenguaje.
@@ -38,5 +38,5 @@ La finalización de instrucciones es el proceso por el que el servicio de lengua
 
  Cuando el desencadenador se especifica en el editor, en concreto, el búfer de texto, el servicio de lenguaje llama entonces al <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> método. Esto hace que el editor muestre la interfaz de usuario para que el usuario pueda elegir entre los candidatos para completar la instrucción. Este método requiere la implementación de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> y las <xref:Microsoft.VisualStudio.TextManager.Interop.UpdateCompletionFlags> marcas como parámetros. La lista de elementos de finalización aparece en un cuadro de lista desplazable. A medida que el usuario sigue escribiendo, la selección en el cuadro de lista se actualiza para reflejar la coincidencia más cercana a los caracteres más recientes escritos. El editor principal implementa la interfaz de usuario para la finalización de instrucciones, pero el servicio de lenguaje debe implementar la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> interfaz para definir un conjunto de elementos de finalización candidata para la instrucción.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Intercepción de comandos del servicio de lenguaje heredado](../../extensibility/internals/intercepting-legacy-language-service-commands.md)

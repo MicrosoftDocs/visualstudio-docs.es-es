@@ -12,17 +12,17 @@ helpviewer_keywords:
 - guid
 - menus
 ms.assetid: 84639d86-dd21-4b35-9988-6bb654162488
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd2bdc047ddd5a568aca01ed99b6148b0f288faa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d9f5066c5ae5c9fa57517406b8eca388747979c4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970275"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082093"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>GUID e identificadores de los menús de Visual Studio
 En este artículo se enumeran los valores de GUID y de identificador de los menús y grupos en la barra de menús de Visual Studio. Estos valores se definen en los archivos *. Vsct* que se instalan como parte del SDK de Visual Studio. Para obtener más información, vea [comandos, menús y grupos definidos por el IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -34,12 +34,12 @@ En este artículo se enumeran los valores de GUID y de identificador de los men�
 ## <a name="groups-on-the-visual-studio-menu-bar"></a>Grupos en la barra de menús de Visual Studio
  Para agregar un menú a la barra de menús, establezca uno de estos grupos como su elemento primario.
 
-|Group (Grupo)|ID|
+|Grupo|ID|
 |-----------|--------|
 |Archivo/edición/ver|IDG_VS_MM_FILEEDITVIEW|
 |Refactorización|IDG_VS_MM_REFACTORING:|
 |Project|IDG_VS_MM_PROJECT|
-|Compilar|IDG_VS_MM_BUILDDEBUGRUN|
+|Build|IDG_VS_MM_BUILDDEBUGRUN|
 |Formato/herramientas|IDG_VS_MM_TOOLSADDINS|
 |Ventana/ayuda/comunidad|IDG_VS_MM_WINDOWHELP|
 |Complementos|IDG_VS_MM_MACROS|
@@ -55,7 +55,7 @@ En este artículo se enumeran los valores de GUID y de identificador de los men�
 |Ver|IDM_VS_MENU_VIEW|
 |Refactorización|IDM_VS_MENU_REFACTORING|
 |Project|IDM_VS_MENU_PROJECT|
-|Compilar|IDM_VS_MENU_BUILD|
+|Build|IDM_VS_MENU_BUILD|
 |Formato|IDM_VS_MENU_FORMAT|
 |Herramientas|IDM_VS_MENU_TOOLS|
 |Extensiones|IDM_VS_MENU_EXTENSIONS|
@@ -69,7 +69,7 @@ En este artículo se enumeran los valores de GUID y de identificador de los men�
 
 ### <a name="file-menu-groups"></a>Grupos de menús de archivos
 
-|Group (Grupo)|ID|
+|Grupo|ID|
 |-----------|--------|
 |Nuevo/abrir|IDG_VS_FILE_FILE|
 |Sumar|IDG_VS_FILE_ADD|
@@ -77,15 +77,15 @@ En este artículo se enumeran los valores de GUID y de identificador de los men�
 |Varios|IDG_VS_FILE_MISC|
 |Guardar|IDG_VS_FILE_SAVE|
 |Cambiar nombre|IDG_VS_FILE_RENAME|
-|Explorador|IDG_VS_FILE_BROWSER|
-|Imprimir|IDG_VS_FILE_PRINT|
+|Browser|IDG_VS_FILE_BROWSER|
+|Impresión|IDG_VS_FILE_PRINT|
 |Usados más recientemente|IDG_VS_FILE_MRU|
 |Move|IDG_VS_FILE_MOVE|
 |Salir|IDG_VS_FILE_EXIT|
 
 ### <a name="edit-menu-groups"></a>Editar grupos de menús
 
-|Group (Grupo)|ID|
+|Grupo|ID|
 |-----------|--------|
 |Deshacer/rehacer|IDG_VS_EDIT_UNDOREDO|
 |Cortar/copiar/pegar|IDG_VS_EDIT_CUTCOPY|
@@ -98,17 +98,17 @@ En este artículo se enumeran los valores de GUID y de identificador de los men�
 
 ### <a name="refactor-menu-groups"></a>Refactorizar grupos de menús
 
-|Group (Grupo)|ID|
+|Grupo|ID|
 |-----------|--------|
 |Comunes|IDG_REFACTORING_COMMON|
-|Avanzadas|IDG_REFACTORING_ADVANCED|
+|Avanzado|IDG_REFACTORING_ADVANCED|
 
 ### <a name="view-menu-groups"></a>Ver grupos de menús
 
-|Group (Grupo)|ID|
+|Grupo|ID|
 |-----------|--------|
 |Código de formulario|IDG_VS_VIEW_FORMCODE|
-|Explorador|IDG_VS_VIEW_BROWSER|
+|Browser|IDG_VS_VIEW_BROWSER|
 |Definir vistas|IDG_VS_VIEW_DEFINEVIEWS|
 |Windows|IDG_VS_VIEW_WINDOWS|
 |Arquitectura de Windows|IDG_VS_VIEW_ARCH_WINDOWS|
@@ -126,7 +126,7 @@ En este artículo se enumeran los valores de GUID y de identificador de los men�
 
 ### <a name="project-menu-groups"></a>Grupos de menús del proyecto
 
-|Group (Grupo)|ID|
+|Grupo|ID|
 |-----------|--------|
 |Agregar varios|IDG_VS_PROJ_MISCADD|
 |Sumar|IDG_VS_PROJ_ADD|
@@ -138,7 +138,7 @@ En este artículo se enumeran los valores de GUID y de identificador de los men�
 
 ### <a name="build-menu-groups"></a>Grupos de menús de compilación
 
-|Group (Grupo)|ID|
+|Grupo|ID|
 |-----------|--------|
 |Solución|IDG_VS_BUILD_SOLUTION|
 |Selección|IDG_VS_BUILD_SELECTION|
@@ -148,7 +148,7 @@ En este artículo se enumeran los valores de GUID y de identificador de los men�
 
 ### <a name="tools-menu-groups"></a>Grupos de menús de herramientas
 
-|Group (Grupo)|ID|
+|Grupo|ID|
 |-----------|--------|
 |Línea de comandos|IDG_VS_TOOLS_CMDLINE|
 |Fragmentos de código|IDG_VS_TOOLS_SNIPPETS|
@@ -160,7 +160,7 @@ En este artículo se enumeran los valores de GUID y de identificador de los men�
 
 ### <a name="window-menu-groups"></a>Grupos de menús de ventana
 
-|Group (Grupo)|ID|
+|Grupo|ID|
 |-----------|--------|
 |Nuevo|IDG_VS_WINDOW_NEW|
 |Acoplar/cerrar|IDG_VS_DOCKCLOSE|
@@ -171,9 +171,9 @@ En este artículo se enumeran los valores de GUID y de identificador de los men�
 
 ### <a name="help-menu-groups"></a>Grupos de menús de ayuda
 
-|Group (Grupo)|ID|
+|Grupo|ID|
 |-----------|--------|
-|Muestras|IDG_VS_HELP_SAMPLES|
+|Ejemplos|IDG_VS_HELP_SAMPLES|
 |Soporte técnico|IDG_VS_HELP_SUPPORT|
 |Acerca de|IDG_VS_HELP_ABOUT|
 
@@ -215,7 +215,7 @@ En este artículo se enumeran los valores de GUID y de identificador de los men�
 |IDG_VS_PGO_SELECTION|IDM_VS_CSCD_PGO_BUILD|IDG_VS_PGO_BUILD_CASCADE_BUILD|
 |||IDG_VS_PGO_BUILD_CASCADE_RUN|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [GUID e identificadores de barras de herramientas de Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)
 - [GUID e identificadores de comandos de Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md)
 - [Archivos de tabla de comandos de Visual Studio (. Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
