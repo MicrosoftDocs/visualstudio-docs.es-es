@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 36f0d9f1-fe28-469f-a54c-dc46638270a8
-ms.date: 09/03/2020
+ms.date: 03/19/2021
 ms.topic: how-to
 description: Obtenga información sobre cómo agregar suscripciones mensuales de Visual Studio recién compradas al Portal de administración de suscripciones
-ms.openlocfilehash: f6b835969fff3a8316a2b46c6e15217ebe3e33b1
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 931f297a650926e4da5c13271a58091c9f00ddd3
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92467601"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757651"
 ---
 # <a name="add-new-monthly-visual-studio-subscriptions-to-the-subscriptions-administration-portal"></a>Incorporación de suscripciones mensuales nuevas a Visual Studio en el Portal de administración de suscripciones
 Al comprar suscripciones mensuales nuevas de Visual Studio con una suscripción de Azure, es posible que deba agregarlas al Portal de administración de suscripciones para asignarlas a los usuarios.  
@@ -40,6 +40,9 @@ Los pasos para agregar suscripciones mensuales dependen de qué tipos de suscrip
 ## <a name="things-to-keep-in-mind"></a>Aspectos que debe tener en cuenta
 - La opción de agregar suscripciones mensuales nuevas solo estará disponible la primera vez que las compre.  Una vez que haya agregado las suscripciones mensuales, buscaremos suscripciones nuevas cada vez que inicie sesión en el portal. 
 - Cuando se encuentran suscripciones nuevas, puede ver que ya están asignadas a los suscriptores.  Esto se debe a que hay otros administradores con acceso a la suscripción de Azure y ya han asignado las suscripciones nuevas de Visual Studio a los usuarios.  Ahora que también agregó esas suscripciones a su portal, puede administrarlas. 
+
+## <a name="support-resources"></a>Recursos de soporte técnico
+- Para obtener ayuda con la administración de suscripciones de Visual Studio, póngase en contacto el [soporte técnico de suscripciones de Visual Studio](https://aka.ms/vsadminhelp).
 
 ## <a name="next-steps"></a>Pasos siguientes
 Ahora que agregó suscripciones, está listo para asignarlas a los usuarios.  Existen varias maneras de hacerlo:

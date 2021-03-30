@@ -11,14 +11,18 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 1a94915748f6c7cedb19a0b27c67eb67d6086963
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ebd64a314f1c4d6afd7b6e6fcc3b38148ff68225
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971146"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672974"
 ---
 # <a name="supported-visual-studio-features-preview"></a>Características de Visual Studio compatibles (Preview)
+
+> [!Important] 
+> A partir del 12 de abril de 2021, ya no se admitirá la conexión a GitHub Codespaces desde Visual Studio 2019, y esta versión preliminar privada habrá concluido. Nos centramos en experiencias en evolución para un bucle interno con tecnología de nube y soluciones de VDI optimizadas para un amplio conjunto de cargas de trabajo de Visual Studio. Le recomendamos que participe en nuestro [foro de la comunidad de desarrolladores](https://developercommunity.visualstudio.com/home) de Visual Studio para obtener detalles sobre las futuras versiones preliminares e información sobre la hoja de ruta. 
+
 
 Visual Studio proporciona una experiencia de desarrollo enriquecida al conectarse a un codespace. Conseguirá las herramientas de bucle interno de Visual Studio con las que está familiarizado para editar, depurar, probar y crear versiones del código fuente, además de características de productividad, como plantillas de proyecto, navegación por el código enriquecida e IntelliSense.
 

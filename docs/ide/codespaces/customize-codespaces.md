@@ -11,14 +11,17 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 15efee817e41f928e5ca1162e9ace20276bd20d2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0e23ca3255761f4d93f89251d00c12c14aecf7b9
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971159"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672356"
 ---
 # <a name="how-to-customize-a-codespace-preview"></a>Personalización de un codespace (versión preliminar)
+
+> [!Important] 
+> A partir del 12 de abril de 2021, ya no se admitirá la conexión a GitHub Codespaces desde Visual Studio 2019, y esta versión preliminar privada habrá concluido. Nos centramos en experiencias en evolución para un bucle interno con tecnología de nube y soluciones de VDI optimizadas para un amplio conjunto de cargas de trabajo de Visual Studio. Le recomendamos que participe en nuestro [foro de la comunidad de desarrolladores](https://developercommunity.visualstudio.com/home) de Visual Studio para obtener detalles sobre las futuras versiones preliminares e información sobre la hoja de ruta. 
 
 GitHub Codespaces ofrece un entorno de desarrollo completo en la nube. Para el desarrollo basado en Windows con Visual Studio 2019, las instancias predeterminadas de GitHub Codespaces proporcionan un excelente punto de partida, pero también se puede personalizar el entorno para el proyecto específico.
 

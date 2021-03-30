@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 92e8957f-c690-46bd-a812-3efd06a2bc6b
-ms.date: 02/19/2021
+ms.date: 03/18/2021
 ms.topic: how-to
 description: Obtenga información sobre la ventaja de CAST Highlight disponible en las suscripciones de Visual Studio.
-ms.openlocfilehash: 0acc7b62dbac66d25e61dcddfeee0c9124d66694
-ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
+ms.openlocfilehash: e8f218db14340171cc056075699dd80d3fb7ef55
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102473327"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672059"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Ventaja de CAST Highlight para suscripciones de Visual Studio
 Los desarrolladores necesitan información clave sobre su software al realizar la migración a la nube. Con CAST Highlight, los suscriptores de Visual Studio pueden examinar rápidamente su código fuente de aplicación para identificar la preparación de la nube de sus aplicaciones para la migración a Azure y supervisar el progreso de su aplicación tanto durante una migración como después.
@@ -86,7 +86,7 @@ Tras la aprobación de su solicitud, recibirá un segundo correo electrónico en
 | Visual Studio Enterprise (estándar)  | NFR<sup>1</sup> |No disponible  | N/D |
 | Visual Studio Enterprise, Visual Studio Professional (de nube mensual) | Azure | No disponible | N/D |
 
-<sup>1</sup>  *Incluye:  No para reventa (NFR), FTE, Most Valuable Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
+<sup>1</sup> *Incluye No para reventa (NFR), Empleado a tiempo completo (FTE), Profesional mejor valorado (MVP), Director regional (RD), Microsoft Partner Network (MPN), programa Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine y NFR básico.*
 
 > [!NOTE]
 > Microsoft ya no ofrece suscripciones anuales ni de Visual Studio Professional ni de Visual Studio Enterprise en las suscripciones de nube. Esto no supone cambio alguno en la experiencia actual de los clientes y ni en su capacidad para renovar, aumentar, reducir o cancelar las suscripciones. Conviene que los clientes nuevos vayan a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar las diferentes opciones de compra de Visual Studio.

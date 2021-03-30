@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 3f4b0528-03f0-4a02-b3c3-a39292a9bbe1
-ms.date: 10/28/2020
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: 'Suscripciones de Visual Studio: ¿por qué aparecen direcciones de Hotmail o Gmail para mis suscriptores?'
-ms.openlocfilehash: fda7dab50c2151049e0feffa50609bf4c38e38cc
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 99c22d74a9a6fb57e79f699e548de928ef1ebcb6
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189048"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104777005"
 ---
 # <a name="visual-studio-subscriptions--why-do-i-see-personal-accounts-for-my-subscribers"></a>Suscripciones de Visual Studio: ¿por qué mis suscriptores tienen cuentas personales?
 A medida que las empresas se migran del Centro de servicios de licencias por volumen (VLSC) al nuevo [Portal de administración de suscripciones](https://manage.visualstudio.com) de Visual Studio, los administradores pueden sorprenderse de ver que la "dirección de correo electrónico de inicio de sesión" de algunos suscriptores es una dirección de correo electrónico personal, como Hotmail o Outlook.  
@@ -50,7 +50,10 @@ A continuación, haga clic en **Continue** (Continuar) para ir a una lista de lo
 > [!NOTE]
 > Al editar la dirección de correo electrónico de inicio de sesión, solo se actualiza la dirección que usa el suscriptor para iniciar sesión en su suscripción en https://my.visualstudio.com. Si el suscriptor ha usado las otras direcciones de correo electrónico para activar beneficios como Azure o Pluralsight, deberá seguir usando esas direcciones de correo electrónico para acceder a ellos. Si acceden a nuevas ventajas, deberán usar la nueva dirección de correo electrónico. 
 
-## <a name="see-also"></a>Vea también
+## <a name="support-resources"></a>Recursos de soporte técnico
+- Para obtener ayuda con la administración de suscripciones de Visual Studio, póngase en contacto el [soporte técnico de suscripciones de Visual Studio](https://aka.ms/vsadminhelp).
+
+## <a name="see-also"></a>Consulte también
 - [Documentación de Visual Studio](/visualstudio/)
 - [Documentación de Azure DevOps](/azure/devops/)
 - [Documentación de Azure](/azure/)

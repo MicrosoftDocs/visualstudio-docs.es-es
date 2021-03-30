@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 196c6d04-9a33-47d5-b0f1-038e7c3a7ac9
-ms.date: 03/09/2020
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: Obtener información sobre cómo sacar el máximo partido de las suscripciones de Visual Studio
-ms.openlocfilehash: a865bfa5cf7d55504e022efb1b134bddde7d231c
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: fce096a0999fefe16abc009c04f87cf4eff35748
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92904690"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776837"
 ---
 # <a name="managing-subscriptions"></a>Administrar las suscripciones
 
@@ -113,7 +113,10 @@ R: En función del canal de compra, Microsoft mantiene los datos de cliente dura
 > - Si decide cerrar la cuenta de Microsoft o de Azure AD, sus datos personales se anonimizan de forma inmediata.
 > - No se quitarán completamente todos los datos personales si tiene suscripciones activas.
 
-## <a name="see-also"></a>Vea también
+## <a name="support-resources"></a>Recursos de soporte técnico
+- Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación de suscripciones de Visual Studio, póngase en contacto con el [soporte técnico de suscripciones de Visual Studio](https://aka.ms/vssubscriberhelp).
+
+## <a name="see-also"></a>Consulte también
 - [Documentación de Visual Studio](/visualstudio/)
 - [Documentación de Azure DevOps](/azure/devops/)
 - [Documentación de Azure](/azure/)

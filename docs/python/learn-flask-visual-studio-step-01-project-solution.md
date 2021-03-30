@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e77d4ea1d46914962f0791af91ad6c1efe21825c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ca82beef26f897b2f5d3a145c968c11efaabc294
+ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942521"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104806061"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Tutorial: Introducción al marco web de Flask en Visual Studio
 
@@ -24,16 +24,27 @@ ms.locfileid: "99942521"
 
 Flask es un "micromarco" porque no proporciona de forma directa características como la validación de formularios, la abstracción de bases de datos, la autenticación, etc. Dichas características se proporcionan en paquetes especiales de Python llamados *extensiones* de Flask. Las extensiones se integran perfectamente con Flask para que aparezcan como si formaran parte del mismo Flask. Por ejemplo, Flask por sí solo no proporciona un motor de plantillas de página. La creación de plantillas se proporciona mediante extensiones como Jinja y Jade, como se muestra en este tutorial.
 
+::: moniker range="vs-2017"
 En este tutorial, aprenderá a:
-
-> [!div class="checklist"]
-> - Crear un proyecto básico de Flask en un repositorio de Git con la plantilla "Proyecto web de Flask en blanco" (paso 1)
-> - Crear una aplicación de Flask con una página y representar esa página con una plantilla (paso 2)
-> - Atender archivos estáticos, agregar páginas y usar la herencia de plantilla (paso 3)
-> - Usar la plantilla Proyecto web de Flask para crear una aplicación con varias páginas y diseño con capacidad de respuesta (paso 4)
-> - Use la plantilla Proyecto web de Flask de sondeos para crear una aplicación de sondeos que use una serie de opciones de almacenamiento (Azure Storage, MongoDB o memoria).
+- Crear un proyecto básico de Flask en un repositorio de Git con la plantilla "Proyecto web de Flask en blanco" (paso 1)
+- Crear una aplicación de Flask con una página y representar esa página con una plantilla (paso 2)
+- Atender archivos estáticos, agregar páginas y usar la herencia de plantilla (paso 3)
+- Usar la plantilla Proyecto web de Flask para crear una aplicación con varias páginas y diseño con capacidad de respuesta (paso 4)
+- Use la plantilla Proyecto web de Flask de sondeos para crear una aplicación de sondeos que use una serie de opciones de almacenamiento (Azure Storage, MongoDB o memoria).
 
 En el transcurso de estos pasos creará una única solución de Visual Studio que contendrá tres proyectos independientes. Creará el proyecto mediante distintas plantillas de proyecto de Flask que se incluyen con Visual Studio. Al mantener los proyectos en la misma solución, puede cambiar fácilmente entre distintos archivos para compararlos.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+En este tutorial, aprenderá a:
+- Crear un proyecto básico de Flask en un repositorio de Git con la plantilla "Proyecto web de Flask en blanco" (paso 1)
+- Crear una aplicación de Flask con una página y representar esa página con una plantilla (paso 2)
+- Atender archivos estáticos, agregar páginas y usar la herencia de plantilla (paso 3)
+- Usar la plantilla Proyecto web de Flask para crear una aplicación con varias páginas y diseño con capacidad de respuesta (paso 4)
+
+Al seguir estos pasos, creará una única solución de Visual Studio que contendrá dos proyectos independientes. Creará el proyecto mediante distintas plantillas de proyecto de Flask que se incluyen con Visual Studio. Al mantener los proyectos en la misma solución, puede cambiar fácilmente entre distintos archivos para compararlos.
+::: moniker-end
 
 > [!Note]
 > Este tutorial difiere del [inicio rápido de Flask](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json) en el sentido de que obtendrá más información sobre Flask y sobre cómo usar las distintas plantillas de proyecto de Flask que proporcionan un punto de partida más amplio para sus propios proyectos. Por ejemplo, las plantillas de proyecto instalan automáticamente el paquete de Flask al crear un proyecto, en lugar de tener que instalarlo manualmente, como se muestra en el inicio rápido.

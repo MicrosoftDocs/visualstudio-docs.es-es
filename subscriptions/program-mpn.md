@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 7f4399d8-41da-41e5-a666-acc34958b8c0
-ms.date: 03/09/2020
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: Información detallada sobre qué suscripciones se ofrecen, las reglas que se aplican y cuántas suscripciones se ofrecen en MPN.
-ms.openlocfilehash: 47b13147e87880ea90c07ee4746d5359571719b0
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: eab7779c7aedbbe7116a6227b16b6b3f4f15471c
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005838"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776758"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Suscripciones de Visual Studio ofrecidas a partners de Microsoft Partner Network (MPN)
 
@@ -71,11 +71,10 @@ Esta restricción de solo para uso interno significa básicamente que los partne
 En una suscripción de Visual Studio ofrecida a través de MPN, es preciso que el usuario con licencia inicie sesión en Visual Studio con la misma identidad/nombre de usuario que se usó para activar la suscripción de Visual Studio. Al no proporcionarse claves del producto para desbloquear el producto, el inicio de sesión es la única opción para ejecutar Visual Studio. El suscriptor de Visual Studio puede operar sin conexión durante 30 días, transcurridos los cuales Visual Studio dejará de funcionar. Mientras funciona en línea, Visual Studio actualiza regularmente el estado de licencia del usuario en modo silencioso para procurar que la suscripción siga siendo válida.
 
 ## <a name="resources"></a>Recursos
-
 - [Guía de programas de Microsoft Partner Network](https://assets.microsoft.com/MPN-MAPS-Product-Usage-Guide.pdf?tpqid=300-000121)
 - [Administración de las suscripciones a Visual Studio incluidas con los programas de Microsoft Partner Network (MPN)](manage-mpn-subscriptions.md)
 - [Condiciones de uso](https://www.microsoft.com/useterms/): las suscripciones de Visual Studio ofrecidas a través de MPN están sujetas al EULA de las suscripciones de Visual Studio no para reventa (NFR).
-
+- Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación de suscripciones de Visual Studio, póngase en contacto con el [soporte técnico de suscripciones de Visual Studio](https://aka.ms/vssubscriberhelp).
 
 ## <a name="see-also"></a>Vea también
 - [Documentación de Visual Studio](/visualstudio/)

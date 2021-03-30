@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: c15f7e18-b280-4902-a60d-2c2598653207
-ms.date: 02/19/2021
+ms.date: 03/18/2021
 ms.topic: conceptual
 description: Obtenga información sobre la ventaja Soporte técnico de la Comunidad de Azure incluida en las suscripciones de Visual Studio.
-ms.openlocfilehash: 57190bce0625108c332e307051cf28aec192f556
-ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
+ms.openlocfilehash: 43633e20bbf10988092a2d98d7d0a5ddd9b08601
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102473340"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672112"
 ---
 # <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Foro de soporte técnico de la Comunidad de Azure en las suscripciones de Visual Studio
 Obtenga ayuda directamente del equipo de Azure en los foros de soporte seleccionados a través de la Comunidad Azure.  El beneficio de la Comunidad Azure proporciona acceso a una colección de foros que se centran en los temas relacionados con Azure.
@@ -78,7 +78,7 @@ La disponibilidad de la ventaja Comunidad Azure depende del nivel de suscripció
 |                                       Plataformas MSDN (estándar)                                       |    Licencia por volumen, venta directa     |   Disponible    |    Sí     |
 | Visual Studio Enterprise (nube mensual) Visual Studio Professional (nube mensual)|        Todas        | No disponible |     No     |
 
-<sup>1</sup>  *Incluye:  No para reventa (NFR), Microsoft FTE, Most Valuable Professional (MVP), Regional Director (RD), Visual Studio Industry Partner (VSIP), BizSpark, Imagine, Microsoft Certified Trainer (MCT)*
+<sup>1</sup> *Incluye No para reventa (NFR), Empleado a tiempo completo (FTE) de Microsoft, Profesional mejor valorado (MVP), Director regional (RD), programa Visual Studio Industry Partner (VSIP), BizSpark, Imagine y Microsoft Certified Trainer (MCT). Excluye NFR básico.*
 
 > [!NOTE]
 > Microsoft ya no ofrece suscripciones anuales ni de Visual Studio Professional ni de Visual Studio Enterprise en las suscripciones de nube. Esto no supone cambio alguno en la experiencia actual de los clientes y ni en su capacidad para renovar, aumentar, reducir o cancelar las suscripciones. Conviene que los clientes nuevos vayan a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar las diferentes opciones de compra de Visual Studio.

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
-ms.date: 12/02/2020
+ms.date: 03/17/2021
 ms.topic: how-to
 description: Obtenga información sobre la suscripción de aprendizaje de Pluralsight incluida en la suscripción de Visual Studio.
-ms.openlocfilehash: c5503c2adad075bdf6f186567fc372705f1ab55f
-ms.sourcegitcommit: 51e4426889ae5f49c69b122e37b3f48aa7a3925d
+ms.openlocfilehash: 6d12fcf49184d8e8293d4f4e3a3c552e859d3afe
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "100542995"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104671705"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Ventajas de aprendizaje de Pluralsight en las suscripciones de Visual Studio
 
@@ -82,7 +82,7 @@ Cuando expire la suscripción a Pluralsight, el estado cambiará a "Quedan 0 dí
 |             Visual Studio Enterprise (NFR<sup>1</sup>)              |      Programa      | No disponible |       NA       |
 ||
 
-<sup>1</sup>  *Incluye:  No para reventa (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer, MCT Software & Service, Most Valuable Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), FTE, Imagine.*
+<sup>1</sup> *Incluye No para reventa (NFR), el programa Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer, MCT Software & Services, Profesional mejor valorado (MVP), Director regional (RD), Microsoft Partner Network (MPN), Empleado a tiempo completo (FTE) e Imagine. Excluye NFR básico.*
 
 <sup>2</sup>  *La ventaja de Pluralsight en determinadas suscripciones de Visual Studio se renueva al renovar la suscripción. Por ejemplo, si tiene una suscripción anual que se renueva cada año, tiene a su disposición la ventaja cada año que renueve. Si tiene una suscripción de varios años, tiene a su disposición la ventaja de Pluralsight una vez durante la vigencia de la suscripción.  Si renueva una suscripción de varios años, la ventaja estará disponible de nuevo tras la renovación.*
 
@@ -110,7 +110,7 @@ R:  Al final de su suscripción gratuita de Pluralsight, puede comprar una suscr
 
 ## <a name="support-resources"></a>Recursos de soporte técnico
 - El [centro de ayuda de Pluralsight](https://help.pluralsight.com/help) proporciona asistencia para la realización de los cursos de Pluralsight o el uso del sitio web de Pluralsight.
-- Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
+- Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación de suscripciones de Visual Studio, póngase en contacto con el [soporte técnico de suscripciones de Visual Studio](https://my.visualstudio.com/gethelp).
 - ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Vea también

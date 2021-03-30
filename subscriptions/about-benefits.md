@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 0a02232c-437f-4c48-85c1-93ca7887236b
-ms.date: 10/26/2020
+ms.date: 03/19/2021
 ms.topic: how-to
 description: Conozca las ventajas incluidas en las suscripciones y cómo activarlas.
-ms.openlocfilehash: 351d81f29d01ec8322fcd6602d3ac4afccdb8ca1
-ms.sourcegitcommit: 8efe6b45d65f9db23f5575c15155fe363fa12cdb
+ms.openlocfilehash: 13c0633c7d775b082bf10cf21421ec843092231d
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92750151"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757638"
 ---
 # <a name="about-your-subscription-benefits"></a>Información sobre las ventajas de las suscripciones
 Como suscriptor de Visual Studio, tiene acceso a una variedad de ventajas en función de su nivel de suscripción. Hay varios aspectos importantes que se deben tener en cuenta sobre las ventajas.
@@ -43,7 +43,10 @@ Nuestros asociados proporcionan algunas de las ventajas que se incluyen con las 
 ## <a name="benefits-that-become-temporarily-unavailable"></a>Ventajas que dejarán de estar disponibles de manera temporal
 Aunque es poco frecuente, a veces hay problemas técnicos que pueden hacer que una ventaja no esté disponible durante un breve período de tiempo. En esos casos, cambiaremos el icono de la ventaja en el [portal de Suscripciones de Visual Studio](https://my.visualstudio.com/benefits) para indicar que no está disponible de manera temporal hasta solucionar el problema, momento en el que restauraremos el icono y la ventaja volverá a estar disponible.
 
-## <a name="see-also"></a>Consulte también
+## <a name="support-resources"></a>Recursos de soporte técnico
+- Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación de suscripciones de Visual Studio, póngase en contacto con el [soporte técnico de suscripciones de Visual Studio](https://aka.ms/vssubscriberhelp).
+
+## <a name="see-also"></a>Vea también
 - [Documentación de Visual Studio](/visualstudio/)
 - [Documentación de Azure DevOps](/azure/devops/)
 - [Documentación de Azure](/azure/)

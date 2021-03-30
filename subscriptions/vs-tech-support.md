@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
-ms.date: 12/02/2020
+ms.date: 03/17/2021
 ms.topic: how-to
 description: Vea cómo activar la ventaja de soporte técnico que se incluye con la suscripción de Visual Studio.
-ms.openlocfilehash: ea67dde54dd66af6d20b7f9af84d2bfe80211444
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 77856cf8a1f3497f66e89110e7b951c768da8c28
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537973"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672138"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Activación y uso de la ventaja de soporte técnico en suscripciones de Visual Studio
 La ventaja de soporte técnico en suscripciones de Visual Studio sirve para resolver problemas break-fix en **entornos de no producción** para productos que siguen en la fase de soporte técnico general del [ciclo de vida de soporte](https://support.microsoft.com/lifecycle/search). Las suscripciones de nube anuales y estándar de Visual Studio Enterprise reciben cuatro incidentes, mientras que las suscripciones de nube anuales y estándar de Visual Studio Professional reciben dos, con validez de un año a partir de la activación de la ventaja. La activación de la ventaja debe producirse mientras la suscripción está activa.
@@ -116,12 +116,15 @@ Para usar la ventaja de soporte técnico de la suscripción de Visual Studio en 
 | Visual Studio Enterprise, Visual Studio Professional (de nube mensual) | Azure                                       | No disponible                                                           |NA|
 ||
 
-<sup>1</sup> *Incluye: Imagine Premium, BizSpark. Excluye: No para reventa (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, Imagine Standard, Most Valuable Professional (MVP), Regional Director (RD), MCT Software & Services.*
+<sup>1</sup> *Incluye Imagine Premium y BizSpark. Excluye No para reventa (NFR), programa Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), Empleado a tiempo completo (FTE), MCT Software & Services Developer, Imagine Standard, Profesional mejor valorado (MVP), Director regional (RD) y MCT Software & Services. Excluye NFR básico.*
 
 <sup>2</sup> *Incluye: Imagine Standard.*
 
 ¿No sabe con seguridad qué suscripción usa?  Conéctese a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas las suscripciones asignadas a su dirección de correo electrónico. Si no ve todas las suscripciones, es posible que haya una o varias asignadas a una dirección de correo electrónico diferente.  Debe iniciar sesión con esa dirección de correo electrónico para ver esas suscripciones.
 
+## <a name="support-resources"></a>Recursos de soporte técnico
+- Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación de suscripciones de Visual Studio, póngase en contacto con el [soporte técnico de suscripciones de Visual Studio](https://my.visualstudio.com/gethelp).
+- 
 ## <a name="see-also"></a>Vea también
 - [Documentación de Visual Studio](/visualstudio/)
 - [Documentación de Azure DevOps](/azure/devops/)

@@ -7,12 +7,12 @@ ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
 ms.date: 02/19/2021
 ms.topic: overview
 description: Consiga Visual Studio Professional o Visual Studio Enterprise mes a mes o de forma anual sin contrato a largo plazo.
-ms.openlocfilehash: 6aa17046726e19086f511c7ab59ab19228142e20
-ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
+ms.openlocfilehash: 56988001272fb11252b85cb60bdcae109edf8e29
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102473392"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672548"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Adquirir suscripciones de nube de Visual Studio Professional y Visual Studio Enterprise
 Puede adquirir [suscripciones](https://visualstudio.microsoft.com/subscriptions/) de Visual Studio Professional y Visual Studio Enterprise en [Visual Studio Marketplace](https://marketplace.visualstudio.com). Estas suscripciones se denominan **"suscripciones en la nube"** .
@@ -127,9 +127,9 @@ R:  Aunque no puedan adquirir otra suscripción de nube anual, existen otras muc
 - [Portal de administradores de Suscripciones de Visual Studio](https://manage.visualstudio.com/)
 - [Preguntas más frecuentes sobre facturación relativas a suscripciones de nube de Visual Studio](vscloud-billing-faq.md)
 - [Adquisición de suscripciones de nube de Visual Studio para CSP](vscloud-csp.md)
-- - Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación de Suscripciones de Visual Studio, consulte [Soporte técnico de Suscripciones](https://aka.ms/vssubscriberhelp) de Visual Studio.
+- - Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación de suscripciones de Visual Studio, consulte la página de [soporte técnico para las suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Documentación de Visual Studio](/visualstudio/)
 - [Documentación de Azure DevOps](/azure/devops/)
 - [Documentación de Azure](/azure/)

@@ -10,17 +10,20 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0193256edb4a55285e8017a56fe7249ef5d60362
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 462c66229b6f28d281bf03650e4d22d0d1dab64f
+ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912407"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104806048"
 ---
 # <a name="django-web-project-template"></a>Plantilla de proyecto web de Django
-
+::: moniker range="vs-2017"
 [Django](https://www.djangoproject.com/) es un marco de Python de alto nivel diseñado para el desarrollo web rápido, seguro y escalable. La compatibilidad de Python en Visual Studio proporciona varias plantillas de proyecto para configurar la estructura de una aplicación web basada en Django. Para usar una plantilla en Visual Studio, seleccione **Archivo** > **Nuevo** > **Proyecto**, busque "Django" y seleccione alguna de las plantillas **Proyecto web de Django en blanco**, **Proyecto web de Django** y **Proyecto web de Django de sondeos**. Vea el [tutorial de aprendizaje de Django](learn-django-in-visual-studio-step-01-project-and-solution.md) para obtener una guía detallada de todas las plantillas.
-
+::: moniker-end
+::: moniker range=">=vs-2019"
+[Django](https://www.djangoproject.com/) es un marco de Python de alto nivel diseñado para el desarrollo web rápido, seguro y escalable. La compatibilidad de Python en Visual Studio proporciona varias plantillas de proyecto para configurar la estructura de una aplicación web basada en Django. Para usar una plantilla en Visual Studio, seleccione **Archivo** > **Nuevo** > **Proyecto**, busque "Django" y seleccione alguna de las plantillas del **proyecto web de Django en blanco** y del **proyecto web de Django**. Vea el [tutorial de aprendizaje de Django](learn-django-in-visual-studio-step-01-project-and-solution.md) para obtener una guía detallada de todas las plantillas.
+::: moniker-end
 Visual Studio proporciona IntelliSense al completo para proyectos de Django:
 
 - Variables de contexto que se pasan en la plantilla:

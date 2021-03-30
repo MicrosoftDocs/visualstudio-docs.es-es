@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 12/02/2020
+ms.date: 03/17/2021
 ms.topic: conceptual
 description: Obtenga información sobre cómo puede aprovechar Microsoft Windows Virtual Desktop a través de la suscripción de Visual Studio
-ms.openlocfilehash: 9198f4180a2f98b89540f1eedc0dab4be59558ab
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 2e7aad5d3f8214d39e5671e4bf5c4d5d357cd930
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537960"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104671744"
 ---
 # <a name="access-windows-virtual-desktop-in-subscriptions"></a>Acceso a Windows Virtual Desktop en las suscripciones 
 Ahora los suscriptores de Visual Studio pueden usar sus créditos individuales de desarrollo y pruebas de Azure para los servicios de Microsoft Windows Virtual Desktop.  
@@ -55,7 +55,7 @@ Cuando estén implementados todos los requisitos previos, le interesará complet
 | Visual Studio Enterprise (estándar)  | NFR<sup>1</sup> |No disponible  | N/D |
 | Visual Studio Enterprise, Visual Studio Professional (de nube mensual) | Azure | No disponible | N/D |
 
-<sup>1</sup>  *Incluye:  No para reventa (NFR), FTE, Most Valuable Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
+<sup>1</sup> *Incluye No para reventa (NFR), Empleado a tiempo completo (FTE), Profesional mejor valorado (MVP), Director regional (RD), Microsoft Partner Network (MPN), programa Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine y NFR básico.*
 
 > [!NOTE]
 > Microsoft ya no ofrece suscripciones anuales ni de Visual Studio Professional ni de Visual Studio Enterprise en las suscripciones de nube. Esto no supone cambio alguno en la experiencia actual de los clientes y ni en su capacidad para renovar, aumentar, reducir o cancelar las suscripciones. Conviene que los clientes nuevos vayan a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar las diferentes opciones de compra de Visual Studio.
@@ -65,6 +65,7 @@ Cuando estén implementados todos los requisitos previos, le interesará complet
 ## <a name="see-also"></a>Vea también
 - [Documentación de Azure](/azure/)
 - [Documentación sobre Windows Virtual Desktop](/azure/virtual-desktop/)
+- [Soporte técnico para suscripciones de Visual Studio](https://my.visualstudio.com/gethelp)
 
 ## <a name="next-steps"></a>Pasos siguientes
 -   Si tiene que comprar suscripciones de Visual Studio, consulte lo siguiente:

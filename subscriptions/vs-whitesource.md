@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 5e5d3f1a-533d-42eb-960e-01bb6bc7ca16
-ms.date: 12/02/2020
+ms.date: 03/17/2021
 ms.topic: how-to
 description: Obtenga más información sobre cómo activar la suscripción de WhiteSource Bolt que se incluye con la suscripción a Visual Studio.
-ms.openlocfilehash: dffa4645795e771b2f947426907ed3e03caedf80
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: def7e206fee75dcc76212df2163e41a8b1a96a83
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537687"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104671812"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>WhiteSource Bolt en las suscripciones de Visual Studio
 
@@ -51,14 +51,14 @@ Descubra y corrija vulnerabilidades del código abierto y genere informes comple
 | Visual Studio Enterprise, Visual Studio Professional (de nube mensual) | Azure                                       | No disponible                                                           |NA|
 ||
 
-<sup>1</sup>  *Incluye: Microsoft Partner Network (Enterprise).  Excluye:  No para reventa (NFR), Visual Studio Industry Partner (VSIP), FTE, MCT Software & Services Developer, BizSpark, Imagine, Most Valuable Professional (MVP), Regional Director (RD).  MCT Software & Services.*
+<sup>1</sup> *Incluye Microsoft Partner Network (Enterprise).  Excluye No para reventa (NFR), el programa Visual Studio Industry Partner (VSIP), Empleado a tiempo completo (FTE), MCT Software & Services Developer, BizSpark, Imagine, Profesional mejor valorado (MVP) y Director regional (RD).  MCT Software & Services y NFR básico.*
 
 > [!NOTE]
 > Microsoft ya no ofrece suscripciones anuales ni de Visual Studio Professional ni de Visual Studio Enterprise en las suscripciones de nube. Esto no supone cambio alguno en la experiencia actual de los clientes y ni en su capacidad para renovar, aumentar, reducir o cancelar las suscripciones. Conviene que los clientes nuevos vayan a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar las diferentes opciones de compra de Visual Studio.
 
 ## <a name="support-resources"></a>Recursos de soporte técnico
 - ¿Necesita ayuda con WhiteSource Bolt?  Hable con un representante de WhiteSource Bolt en vivo en https://www.whitesourcesoftware.com/vse_whitesource_bolt/.
-- Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
+- Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación de suscripciones de Visual Studio, póngase en contacto con el[soporte técnico de suscripciones de Visual Studio](https://my.visualstudio.com/gethelp).
 - ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Vea también

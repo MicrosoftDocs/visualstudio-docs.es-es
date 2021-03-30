@@ -1,6 +1,6 @@
 ---
 title: Shells de línea de comandos para desarrolladores
-description: Obtenga información sobre cómo buscar y usar el Símbolo del sistema para desarrolladores para Visual Studio, PowerShell para desarrolladores y el terminal de Visual Studio, que le permiten usar las herramientas de .NET y C++ más fácilmente.
+description: Obtenga información sobre cómo buscar y usar el símbolo del sistema para desarrolladores de Visual Studio, PowerShell para desarrolladores de Visual Studio y el terminal de Visual Studio, que le permiten usar las herramientas de .NET y C++ más fácilmente.
 ms.date: 03/04/2021
 ms.custom: contperf-fy21q3
 helpviewer_keywords:
@@ -11,19 +11,19 @@ helpviewer_keywords:
 - Visual Studio terminal
 ms.assetid: 94fcf524-9045-4993-bfb2-e2d8bad44219
 no-loc: cmdlet
-ms.openlocfilehash: 406ef4e7d475df82a0e36732dd5e777959ea3b96
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: fb2c99037577528b77ab5c1b0c74bf7af9e73d1b
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249743"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672330"
 ---
 # <a name="developer-command-prompt-and-developer-powershell"></a>Símbolo del sistema para desarrolladores y PowerShell para desarrolladores
 
 Visual Studio 2019 incluye dos shells de línea de comandos para desarrolladores:
 
-- **Símbolo del sistema para desarrolladores para Visual Studio**: un símbolo del sistema estándar con ciertas variables de entorno establecidas para facilitar el uso de las herramientas de desarrollo de línea de comandos.
-- **PowerShell para desarrolladores**: más eficaz que un símbolo del sistema. Por ejemplo, puede pasar la salida de un comando (denominado *cmdlet* ) a otro cmdlet. Este shell tiene las mismas variables de entorno establecidas que el Símbolo del sistema para desarrolladores.
+- **Símbolo del sistema para desarrolladores de Visual Studio**: se trata de un símbolo del sistema estándar con ciertas variables de entorno establecidas para facilitar el uso de las herramientas de desarrollo de línea de comandos. Está disponible desde Visual Studio 2015.
+- **PowerShell de Visual Studio para desarrolladores**: es más eficaz que un símbolo del sistema. Por ejemplo, puede pasar la salida de un comando (denominado *cmdlet* ) a otro cmdlet. Este shell tiene las mismas variables de entorno establecidas que el Símbolo del sistema para desarrolladores. Está disponible desde Visual Studio 2019.
 
 Ambos shells tienen conjuntos de variables de entorno específicas que le permiten usar las herramientas de desarrollo de línea de comandos más fácilmente. Después de abrir uno de estos shells, puede escribir los comandos para diferentes utilidades sin tener que saber dónde se encuentran. Los comandos que se pueden ejecutar son:
 
@@ -40,10 +40,6 @@ A partir de la versión 16.5 de Visual Studio 2019, Visual Studio incluye un
 :::image type="content" source="media/developer-command-prompt-for-vs/vs-terminal.png" alt-text="Terminal de Visual Studio que muestra varias pestañas":::
 
 Al abrir uno de los shells de desarrollador desde Visual Studio, como una aplicación independiente o en la ventana de terminal, se abre en el directorio de la solución actual (si tiene una solución cargada). Este comportamiento facilita la ejecución de comandos en la solución o en sus proyectos.
-
-## <a name="prerequisites"></a>Requisitos previos
-
-- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)
 
 ## <a name="start-the-shell-from-inside-visual-studio"></a>Inicio del símbolo del sistema desde Visual Studio
 

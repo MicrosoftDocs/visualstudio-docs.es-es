@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: dcd99e32-c9f3-4e19-8428-319dfa220463
-ms.date: 12/02/2020
+ms.date: 03/18/2021
 ms.topic: how-to
 description: Obtenga información sobre la ventaja Chat de soporte técnico incluida en las suscripciones de Visual Studio.
-ms.openlocfilehash: 4f5f188ee7b6662549e5ade80a97c57f24bce64c
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 468433ba6cc378fd422f1fee6c806c6a701a9e65
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96538103"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672033"
 ---
 # <a name="concierge-chat-in-visual-studio-subscriptions"></a>Chat de soporte técnico en las suscripciones de Visual Studio.
 El servicio Chat de soporte técnico proporciona asistencia en la búsqueda de información de productos y documentación técnica, y además le ayuda a utilizar las ventajas de la suscripción de Visual Studio.
@@ -46,7 +46,7 @@ Obtener ayuda a través del servicio de chat de soporte técnico es un proceso m
 | Plataformas MSDN (estándar)                                          | Licencia por volumen, venta directa                                              | Disponible                                              |  Sí          |
 | Visual Studio Enterprise, Visual Studio Professional (de nube mensual) | Azure | No disponible | N/D |
 
-<sup>1</sup>  *Incluye:  No para reventa (NFR), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark.  Excluye:  FTE, Most Valuable Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), Imagine.*
+<sup>1</sup> *Incluye No para reventa (NFR), programa Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer y BizSpark.  Excluye Empleado a tiempo completo (FTE), Profesional mejor valorado (MVP), Director regional (RD), Microsoft Partner Network (MPN) e Imagine.  Excluye NFR básico.*
 
 > [!NOTE]
 > Microsoft ya no ofrece suscripciones anuales ni de Visual Studio Professional ni de Visual Studio Enterprise en las suscripciones de nube. Esto no supone cambio alguno en la experiencia actual de los clientes y ni en su capacidad para renovar, aumentar, reducir o cancelar las suscripciones. Conviene que los clientes nuevos vayan a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar las diferentes opciones de compra de Visual Studio.
@@ -58,7 +58,7 @@ Obtener ayuda a través del servicio de chat de soporte técnico es un proceso m
    R: La asistencia con problemas de cuentas, suscripciones y facturación está disponible en varios idiomas.  La asistencia con la búsqueda de información de productos y documentación técnica está disponible en inglés.
 
 ## <a name="support-resources"></a>Recursos de soporte técnico
-- Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
+- Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación de suscripciones de Visual Studio, póngase en contacto con el [soporte técnico de suscripciones de Visual Studio](https://my.visualstudio.com/gethelp).
 - ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Vea también

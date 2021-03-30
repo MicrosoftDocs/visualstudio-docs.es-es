@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: b331c837-3524-42b7-820e-b4fdd5e12793
-ms.date: 03/05/2021
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: Obtenga información sobre la administración de las suscripciones de Visual Studio en un Contrato de servicios y productos de Microsoft (MPSA)
-ms.openlocfilehash: 49f18b540d27678b46a5fa111c76a069b705309d
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: 63124e8853184fde04db7bc202e5acea3cfbe89f
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249460"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776537"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Suscripciones de Visual Studio en un Contrato de servicios y productos de Microsoft (MPSA)
 Si ha comprado suscripciones de Visual Studio a través del programa MPSA, debe tener en cuenta algunos aspectos antes de poder convertirse en un administrador de suscripciones de Visual Studio y asignarlas a los usuarios. Si ya lo han configurado como administrador, puede ir directamente al [portal de administración de suscripciones de Visual Studio](https://manage.visualstudio.com/).
@@ -56,6 +56,9 @@ Para obtener una explicación más detallada de este proceso, puede consultar la
 
 > [!NOTE]
 > Cuando haya completado el proceso de aceptación de dominio, debe atenerse a los criterios de los cinco pasos indicados en la sección Asociación previa al inquilino (administrado). Después de cumplirse los criterios, solo será necesario ponerse en contacto con el servicio de soporte técnico de MPSA para aprovisionar más administradores de suscripciones de Visual Studio.
+
+## <a name="support-resources"></a>Recursos de soporte técnico
+- Para obtener ayuda con la administración de suscripciones de Visual Studio, póngase en contacto el [soporte técnico de suscripciones de Visual Studio](https://aka.ms/vsadminhelp).
 
 ## <a name="see-also"></a>Consulte también
 - [Documentación de Visual Studio](/visualstudio/)

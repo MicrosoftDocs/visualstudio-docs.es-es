@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 11/20/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 004427ced7d18d9a5af5c863172416fd8637aa69
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 07ecc9a171cf6c0ca254ddbf284f116545ddd0f0
+ms.sourcegitcommit: 20f546a0b13b56e7b0da21abab291d42a5ba5928
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85536869"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104884088"
 ---
 # <a name="how-visual-studio-builds-containerized-apps"></a>Compilación de aplicaciones en contenedores con Visual Studio
 
@@ -107,7 +107,7 @@ Para que la depuración funcione en contenedores, Visual Studio usa la asignaci�
 
 |Volumen|Descripción|
 |-|-|
-| **Depurador remoto** | Contiene los bits necesarios para ejecutar el depurador en el contenedor en función del tipo de proyecto. Esto se explica más |detalladamente en la sección [Depuración](#debugging).
+| **Depurador remoto** | Contiene los bits necesarios para ejecutar el depurador en el contenedor en función del tipo de proyecto. Esto se explica con más detalle en la sección [Depuración](#debugging).|
 | **Carpeta de la aplicación** | Contiene la carpeta del proyecto donde se encuentra el Dockerfile.|
 | **Carpeta de origen** | Contiene el contexto de compilación que se pasa a los comandos de Docker.|
 | **Carpetas de paquetes NuGet** | Contienen los paquetes NuGet y las carpetas de reserva que se leen desde el archivo *obj\{project}.csproj.nuget.g.props* del proyecto. |

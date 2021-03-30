@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 7aaa4727-00ef-41dc-937d-8d46973aaf56
-ms.date: 03/08/2021
+ms.date: 03/18/2021
 ms.topic: conceptual
 description: Obtenga información sobre cómo los administradores de contratos de licencias por volumen pueden acceder al portal de administración de suscripciones de Visual Studio.
-ms.openlocfilehash: 4704b3258eedf8fd1639804a8792a1c18fafce77
-ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
+ms.openlocfilehash: 0ab0ca532c1c2cdb848a3f6df9862c1d80518248
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102607293"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672535"
 ---
 # <a name="accessing-the-admin-portal-as-an-admin-on-a-volume-license-agreement"></a>Acceso al portal de administradores como administrador de un contrato de licencia por volumen
 
@@ -26,9 +26,9 @@ Cuando haya iniciado sesión, se le configurará automáticamente como superadmi
 Esto se aplica a todos los tipos de contratos de licencias por volumen, entre los que se incluyen los siguientes: contratos Enterprise, suscripciones Enterprise, Select, Select Plus, Open y Open License, y contratos Government y Academic. 
 
 ## <a name="resources"></a>Recursos
-- Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación de Suscripciones de Visual Studio, consulte [Soporte técnico de Suscripciones](https://aka.ms/vssubscriberhelp) de Visual Studio.
+- Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación de suscripciones de Visual Studio, consulte la página de [soporte técnico para las suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Documentación de Visual Studio](/visualstudio/)
 - [Documentación de Azure DevOps](/azure/devops/)
 - [Documentación de Azure](/azure/)

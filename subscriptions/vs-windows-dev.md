@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
-ms.date: 02/09/2021
+ms.date: 03/17/2021
 ms.topic: how-to
 description: Obtenga información sobre la cuenta de desarrollador de Windows que se incluye con la suscripción de Visual Studio.
-ms.openlocfilehash: a988dabb5849d13733c72ebb5976be489f67dd95
-ms.sourcegitcommit: 0f3606917cf5451e8c4e0b2e0c3fbb9113429645
+ms.openlocfilehash: 4ea61f0bdb131c20412c0b99bbd09cbc44777fb7
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100089598"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672766"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Cuenta de desarrollador de Windows en suscripciones de Visual Studio
 Su cuenta de desarrollador de Windows, incluida con algunas suscripciones de Visual Studio, permite enviar a Microsoft Store aplicaciones Windows tanto gratuitas como de pago.
@@ -55,7 +55,7 @@ Se recomienda crear una ventana "privada" del explorador para este proceso.  Por
 | Visual Studio Enterprise, Visual Studio Professional (de nube mensual) | Azure                                       | No disponible                                                           |NA|
 ||
 
-<sup>1</sup>  *Incluye:  No para reventa (NFR), FTE, Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer, Most Valuable Professional (MVP) y Regional Director (RD). Excluye:  Microsoft Partner Network (MPN), Imagine y MCT Software & Services.*
+<sup>1</sup> *Incluye No para reventa (NFR), Empleado a tiempo completo (FTE), programa Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer, Profesional mejor valorado (MVP) y Director regional (RD). Excluye Microsoft Partner Network (MPN), Imagine y MCT Software & Services y NFR Basic.*
 
 > [!NOTE]
 > Microsoft ya no ofrece suscripciones anuales ni de Visual Studio Professional ni de Visual Studio Enterprise en las suscripciones de nube. Esto no supone cambio alguno en la experiencia actual de los clientes y ni en su capacidad para renovar, aumentar, reducir o cancelar las suscripciones. Conviene que los clientes nuevos vayan a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar las diferentes opciones de compra de Visual Studio.
@@ -65,7 +65,7 @@ Se recomienda crear una ventana "privada" del explorador para este proceso.  Por
 ## <a name="support-resources"></a>Recursos de soporte técnico
 - ¿Necesita ayuda con el uso de la cuenta de desarrollador de Windows?  Consulte los recursos de [soporte técnico](https://developer.microsoft.com/windows/support) del [centro de desarrollo de Windows](https://developer.microsoft.com/windows).
 - [Desarrollo de Windows](/windows/)
-- Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
+- Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación de suscripciones de Visual Studio, póngase en contacto con el[soporte técnico de suscripciones de Visual Studio](https://my.visualstudio.com/gethelp).
 - ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Vea también

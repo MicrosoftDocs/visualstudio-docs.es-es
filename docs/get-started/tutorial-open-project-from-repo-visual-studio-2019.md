@@ -2,7 +2,7 @@
 title: 'Tutorial: Apertura de un proyecto desde un repositorio en Visual Studio 2019'
 description: Obtenga información sobre cómo abrir un proyecto en un repositorio de Git o de Azure DevOps mediante Visual Studio 2019.
 ms.custom: get-started
-ms.date: 02/11/2021
+ms.date: 03/18/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -15,12 +15,12 @@ ms.workload:
 - dotnet
 - dotnetcore
 monikerRange: vs-2019
-ms.openlocfilehash: 5a637b2536c05e8f5678989f47dba61cd6ec7381
-ms.sourcegitcommit: 15109ead7991f52092502518a6f4d9061cc22cd2
+ms.openlocfilehash: 76dcd5061e2e12688f5119598071c3235e620967
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "100335476"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104671718"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>Tutorial: Abrir un proyecto desde un repositorio
 
@@ -53,6 +53,9 @@ De todas formas, independientemente de la versión que tenga instalada, siempre 
    ![Captura de pantalla del cuadro de diálogo "Información de usuario de GIT", donde se debe escribir o editar la información de la cuenta en Visual Studio 2019, versión 16.8 y posteriores](../ide/media/vs-2019/git-user-information-dialog.png)
 
     Seleccione **Guardar** para agregar la información al archivo global .gitconfig, o bien, seleccione **Cancelar** para agregarla más adelante.
+
+    > [!TIP]
+    > Para obtener más información sobre cómo iniciar sesión en Visual Studio, consulte la página [Iniciar sesión en Visual Studio](../ide/signing-in-to-visual-studio.md). Asimismo, para obtener información específica sobre cómo usar su cuenta de GitHub para iniciar sesión, consulte la página [Trabajar con cuentas de GitHub en Visual Studio](../ide/work-with-github-accounts.md).
 
     Después de esto, Visual Studio carga automáticamente la solución y la abre desde el repositorio.
 
@@ -207,5 +210,6 @@ Si está listo para codificar con Visual Studio, explore en profundidad cualquie
 
 - [Apertura de un proyecto desde un repositorio en Visual Studio 2017](tutorial-open-project-from-repo-visual-studio-2017.md)
 - [Nueva experiencia de Git en Visual Studio 2019](../ide/git-with-visual-studio.md)
+- [Comparación de Git y Team Explorer en paralelo](../ide/git-team-explorer-feature-comparison.md)
 - [Azure DevOps Services: Get started with Azure Repos and Visual Studio](/azure/devops/repos/git/gitquickstart/) (Azure DevOps Services: Introducción a Azure Repos y Visual Studio)
 - [Microsoft Learn: Introducción a Azure DevOps](/learn/modules/get-started-with-devops/)

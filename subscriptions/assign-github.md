@@ -7,12 +7,12 @@ ms.assetid: f271d623-dcde-442a-865c-4dca5ad8a9c5
 ms.date: 03/03/2021
 ms.topic: conceptual
 description: Administración de suscripciones en suscripciones de Visual Studio con GitHub Enterprise
-ms.openlocfilehash: 5837ec33e6f17f0970178a0f1b306960e9c42668
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: c66932d9f0da5e7dbca6dccb8efc911b1453bb8e
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249695"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757664"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>Administración de suscripciones de Visual Studio con GitHub Enterprise
 Los clientes que tengan contratos Enterprise (EA) con Microsoft pueden comprar una nueva oferta de suscripciones que junta las suscripciones estándar de Visual Studio y GitHub Enterprise. Es la forma fácil y económica para los suscriptores de Visual Studio de adquirir GitHub Enterprise. 
@@ -68,23 +68,20 @@ Puesto que este proceso es más complejo, pueden pasar varios días tras la comp
 GitHub está disponible como GitHub.com basado en la nube o como el servidor de GitHub Enterprise de instalación local.  Los procesos para administrar las dos versiones son diferentes.  GitHub ofrece una variedad de temas de ayuda y guías del administrador que le ayudarán a administrar las suscripciones de GitHub Enterprise.  A continuación, hemos incluido vínculos a temas seleccionados.  
 
 ## <a name="support-resources"></a>Recursos de soporte técnico
-
 - Obtenga más información sobre la asignación de GitHub en la [documentación de GitHub](https://docs.github.com/en/github/setting-up-and-managing-your-enterprise-account/managing-licenses-for-the-github-enterprise-and-visual-studio-bundle).
 - Encuentre respuestas a preguntas sobre una amplia variedad de temas de GitHub en la [Ayuda de GitHub](https://help.github.com/en).
 - Obtenga ayuda de otros usuarios de GitHub en el [Foro de la comunidad de GitHub](https://github.community/).
-- Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación de Suscripciones de Visual Studio, póngase en contacto con el [Soporte técnico de suscripciones](https://visualstudio.microsoft.com/subscriptions/support/).
+- Para obtener ayuda con la administración de suscripciones de Visual Studio, póngase en contacto el [soporte técnico de suscripciones de Visual Studio](https://aka.ms/vsadminhelp).
 - ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
 - Obtenga [soporte técnico](https://support.microsoft.com/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) para GitHub Enterprise.   
 
 ## <a name="see-also"></a>Vea también
-
 - [Documentación de Visual Studio](/visualstudio/)
 - [Documentación de Azure DevOps](/azure/devops/)
 - [Documentación de Azure](/azure/)
 - [Documentación de Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Pasos siguientes
-
 Obtenga más información sobre la administración de suscripciones de Visual Studio.
 - [Asignación de suscripciones individuales](assign-license.md)
 - [Asignación de varias suscripciones](assign-license-bulk.md)

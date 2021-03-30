@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: abf271b5-7547-4695-a46f-72b2878ba8d4
-ms.date: 03/09/2020
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: Obtenga más información sobre la disponibilidad de productos en descargas de software para suscripciones de Visual Studio
-ms.openlocfilehash: e223946aabd9a0b789f51e80e522c24d8a85dd4c
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 8188395c236ae116c36da7f60f0afb8042cb81b3
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005864"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776628"
 ---
 # <a name="product-availability-for-software-downloads-in-visual-studio-subscriptions"></a>Disponibilidad de productos para descargas de software en suscripciones de Visual Studio
 Una de sus prestaciones como suscriptor es el acceso a un amplio abanico de descargas de software.
@@ -37,6 +37,9 @@ El número y tipo de descargas dependen del nivel de la suscripción y las inscr
 > Si tiene varias suscripciones asociadas a la misma dirección de correo electrónico, los títulos de software disponibles vienen determinados por el nivel de suscripción **más alto** que tenga.  Por ejemplo, si tiene una suscripción de Visual Studio Enterprise y otra de Visual Studio Test Professional, tiene acceso a los títulos de software incluidos con la suscripción de Visual Studio Enterprise, independientemente de qué suscripción esté usando actualmente en el portal de suscripciones. 
 
 ¿No sabe con seguridad qué suscripción usa?  Conéctese a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas las suscripciones asignadas a su dirección de correo electrónico. Si no ve todas las suscripciones, es posible que haya una o varias asignadas a una dirección de correo electrónico diferente.  Debe iniciar sesión con esa dirección de correo electrónico para ver esas suscripciones.
+
+## <a name="support-resources"></a>Recursos de soporte técnico
+- Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación de suscripciones de Visual Studio, póngase en contacto con el [soporte técnico de suscripciones de Visual Studio](https://aka.ms/vssubscriberhelp).
 
 ## <a name="see-also"></a>Vea también
 - [Documentación de Visual Studio](/visualstudio/)

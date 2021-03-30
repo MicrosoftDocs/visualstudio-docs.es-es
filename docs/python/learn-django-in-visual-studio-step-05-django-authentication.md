@@ -11,18 +11,24 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ea708c1721d85468d99a0ccc327f378042579f85
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3f589aed953a852cb57570988d914f77b2fa10b2
+ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942495"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104806022"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>Paso 5: Autenticación de usuarios en Django
 
 **Paso anterior: [Uso de la plantilla completa de Proyecto web de Django](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
 
+::: moniker range="vs-2017"
 Dado que la autenticación es una necesidad común para las aplicaciones web, la plantilla "Proyecto web de Django" incluye un flujo de autenticación básica. (La plantilla "Proyecto web de Django de sondeos", que se describe en el paso 6 de este tutorial, también incluye el mismo flujo). Al usar cualquiera de las plantillas de proyecto de Django, Visual Studio incluye todos los módulos necesarios para la autenticación en el archivo *settings.py* del proyecto de Django.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+Dado que la autenticación es una necesidad común para las aplicaciones web, la plantilla "Proyecto web de Django" incluye un flujo de autenticación básica. Al usar cualquiera de las plantillas de proyecto de Django, Visual Studio incluye todos los módulos necesarios para la autenticación en el archivo *settings.py* del proyecto de Django.
+::: moniker-end
 
 En este paso, aprenderá lo siguiente:
 
@@ -210,9 +216,28 @@ Respuesta: La etiqueta `{% csrf_token %}` incluye la [protección de falsificaci
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-> [!div class="nextstepaction"]
-> [Usar la plantilla de proyecto web de Django de sondeos](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md)
+::: moniker range="vs-2017"
+- [Usar la plantilla de proyecto web de Django de sondeos](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md)
+::: moniker-end
 
+::: moniker range=">=vs-2019"
+> [!Note]
+> Si ha estado confirmando la solución de Visual Studio en el control de código fuente en el transcurso de este tutorial, ahora es un buen momento de hacer otra confirmación. La solución debe coincidir con el código fuente del tutorial en GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django).
+
+Ya ha explorado por completo las plantillas "Proyecto web de Django en blanco" y "Proyecto web de Django" en Visual Studio. Ha aprendido todos los elementos básicos de Django, como el uso de vistas y plantillas, y ha explorado el enrutamiento, la autenticación y el uso de modelos de base de datos. Ahora podrá crear una aplicación web propia con las vistas y los modelos que necesite.
+
+La ejecución de una aplicación web en el equipo de desarrollo es solamente un paso en el proceso de poner la aplicación a disposición de sus clientes. Los pasos siguientes pueden incluir las siguientes tareas:
+
+- Implementar la aplicación web en un servidor de producción, como Azure App Service. Consulte [Publicación en Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md).
+
+- Personalice la página 404 mediante la creación de una plantilla denominada *templates/404.html*. Cuando está presente, Django utiliza esta plantilla en lugar de la predeterminada. Para obtener más información, consulte [Error views](https://docs.djangoproject.com/en/2.0/ref/views/#error-views) (Vistas de error) en la documentación de Django.
+
+- Escriba pruebas unitarias en *tests.py*; las plantillas de proyecto de Visual Studio proporcionan puntos de inicio para eso; además, puede encontrar más información en [Writing your first Django app, part 5 - testing](https://docs.djangoproject.com/en/2.0/intro/tutorial05/) (Escribir la primera aplicación de Django, parte 5: pruebas) y [Testing in Django](https://docs.djangoproject.com/en/2.0/topics/testing/) (Pruebas en Django) en la documentación de Django.
+
+- Cambiar la aplicación de SQLite a un almacén de datos a nivel de producción como PostgreSQL, MySQL y SQL Server (todos se pueden hospedar en Azure). Como se describe en [When to use SQLite](https://www.sqlite.org/whentouse.html) (Cuándo usar SQLite) (sqlite.org), SQLite funciona perfectamente en sitios de tráfico bajo a medio, con menos de 100.000 visitas al día, pero no se recomienda en volúmenes más elevados. También está limitado a un único equipo, por lo tanto no se puede usar en escenarios de varios servidores, como el equilibrio de carga y la replicación geográfica. Para obtener información sobre la compatibilidad con Django otras bases de datos, vea [Configuración de la base de datos](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup). También puede usar el [SDK de Azure para Python](/azure/python/) para trabajar con los servicios de almacenamiento de Azure, como tablas y blobs.
+
+- Configurar una canalización de implementación continua/integración continua en un servicio como Azure DevOps. Además de funcionar con el control de código fuente (en Azure Repos, GitHub u otro servicio), puede configurar un proyecto de Azure DevOps para que ejecute automáticamente pruebas unitarias como requisito previo para la publicación y también configurar la canalización para implementar en un servidor de ensayo para pruebas adicionales antes de implementar en producción. Azure DevOps, además, se integra con soluciones de supervisión como App Insights y cierra todo el ciclo con herramientas de planeación de Ágil. Para obtener más información, consulte [Creación de una canalización de CI/CD para Python con Azure DevOps Projects](/azure/devops-project/azure-devops-project-python?view=vsts&preserve-view=true) y también la [Azure DevOps Documentation](/azure/devops/?view=vsts&preserve-view=true) (Documentación de Azure DevOps) general.
+::: moniker-end
 ## <a name="go-deeper"></a>Profundizar un poco más
 
 - [User authentication in Django](https://docs.djangoproject.com/en/2.0/topics/auth/) (Autenticación de usuarios en Django) (docs.djangoproject.com)

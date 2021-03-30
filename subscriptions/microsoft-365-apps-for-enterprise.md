@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: d1257931-392a-4a65-bf26-177737505122
-ms.date: 06/24/2020
+ms.date: 03/21/2021
 ms.topic: how-to
 description: Más información e instalación de Aplicaciones de Microsoft 365 para empresas
-ms.openlocfilehash: d23f8cccd284972d05d7085aea7e0b1cab0f275d
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: e1d629aae2d3c9e5d906a5593c287bd0b3250446
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537830"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776719"
 ---
 # <a name="microsoft-365-apps-for-enterprise-in-visual-studio-subscriptions"></a>Aplicaciones de Microsoft 365 para empresas en suscripciones de Visual Studio
 Aplicaciones de Microsoft 365 para empresas (anteriormente, Office 365 Pro Plus) está disponible en suscripciones concretas de Visual Studio. 
@@ -74,7 +74,7 @@ El proceso de activación de la suscripción de Aplicaciones de Microsoft 365 p
 
 ## <a name="support-resources"></a>Recursos de soporte técnico
 - Para obtener soporte técnico con cualquier componente de Aplicaciones de Microsoft 365 para empresas, visite https://support.microsoft.com/allproducts y seleccione el producto.
-- Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
+- Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://aka.ms/vssubscriberhelp) de Visual Studio.
 - ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Vea también

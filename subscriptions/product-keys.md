@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 89e3fcf9-fe5d-4266-8dd7-5567d05fe869
-ms.date: 10/28/2020
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: Sepa cómo obtener y administrar las claves de producto en las suscripciones de Visual Studio.
-ms.openlocfilehash: a5da818a059709d311b87572f71b78a51dbb7deb
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: ad9672d089c6e50aa879b38841c468f235347963
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92903998"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776771"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Uso de claves de producto en suscripciones de Visual Studio
 
@@ -78,6 +78,9 @@ Según cuál sea el producto, hay disponibles diversos tipos de clave.
 |
 
 Puede reclamar una clave en la página de descarga del producto, o bien buscar la clave que necesita en la página [Claves de producto](https://my.visualstudio.com/productkeys).
+
+## <a name="support-resources"></a>Recursos de soporte técnico
+- Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación de suscripciones de Visual Studio, póngase en contacto con el [soporte técnico de suscripciones de Visual Studio](https://aka.ms/vssubscriberhelp).
 
 ## <a name="see-also"></a>Vea también
 - [Documentación de Visual Studio](/visualstudio/)

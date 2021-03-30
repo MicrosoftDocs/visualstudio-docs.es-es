@@ -9,12 +9,12 @@ manager: jmartens
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 52eb7535430248f519654c09924541a6900336cc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d6820b9d94e8b4849c646c16075614aed17a4dd3
+ms.sourcegitcommit: 20f546a0b13b56e7b0da21abab291d42a5ba5928
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933094"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104884140"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>Instalación de símbolos de depuración para intérpretes de Python
 
@@ -35,7 +35,7 @@ Es posible que Visual Studio le solicite los símbolos cuando los necesite, norm
 
     ![Instalador de Python 3.x que incluye símbolos de depuración](media/mixed-mode-debugging-symbols-installer35.png)
 
-    Los archivos de símbolos ( *.pdb*) se encuentran en la carpeta raíz de la instalación (los archivos de símbolos para módulos individuales también se encuentran en la carpeta *DLL*). Por este motivo, Visual Studio los encontrará automáticamente y no se necesita realizar ningún paso adicional.
+    Los archivos de símbolos (*.pdb*) se encuentran en la carpeta raíz de la instalación (los archivos de símbolos para módulos individuales también se encuentran en la carpeta *DLL*). Por este motivo, Visual Studio los encontrará automáticamente y no se necesita realizar ningún paso adicional.
 
 - Python 3.4.x y versiones anteriores: los símbolos están disponibles como archivos *.zip* que se pueden descargar desde las [distribuciones oficiales](#official-distributions) o [Enthought Canopy](#enthought-canopy). Después de descargarlos, extraiga los archivos en una carpeta local para continuar, como una carpeta *Símbolos* dentro de la carpeta de Python.
 
@@ -75,6 +75,9 @@ Si ha descargado los símbolos por separado, siga estos pasos para hacer que Vis
 | 3.3.2 | [32 bits](https://www.python.org/ftp/python/3.3.2/python-3.3.2-pdb.zip) - [64 bits](https://www.python.org/ftp/python/3.3.2/python-3.3.2.amd64-pdb.zip) |
 | 3.3.1 | [32 bits](https://www.python.org/ftp/python/3.3.1/python-3.3.1-pdb.zip) - [64 bits](https://www.python.org/ftp/python/3.3.1/python-3.3.1.amd64-pdb.zip) |
 | 3.3.0 | [32 bits](https://www.python.org/ftp/python/3.3.0/python-3.3.0-pdb.zip) - [64 bits](https://www.python.org/ftp/python/3.3.0/python-3.3.0.amd64-pdb.zip) |
+| 2.7.18 | [32 bits](https://www.python.org/ftp/python/2.7.18/python-2.7.18-pdb.zip) - [64 bits](https://www.python.org/ftp/python/2.7.18/python-2.7.18.amd64-pdb.zip) |
+| 2.7.17 | [32 bits](https://www.python.org/ftp/python/2.7.17/python-2.7.17-pdb.zip) - [64 bits](https://www.python.org/ftp/python/2.7.17/python-2.7.17.amd64-pdb.zip) |
+| 2.7.16 | [32 bits](https://www.python.org/ftp/python/2.7.16/python-2.7.16-pdb.zip) - [64 bits](https://www.python.org/ftp/python/2.7.16/python-2.7.16.amd64-pdb.zip) |
 | 2.7.15 | [32 bits](https://www.python.org/ftp/python/2.7.15/python-2.7.15-pdb.zip) - [64 bits](https://www.python.org/ftp/python/2.7.15/python-2.7.15.amd64-pdb.zip) |
 | 2.7.14 | [32 bits](https://www.python.org/ftp/python/2.7.14/python-2.7.14-pdb.zip) - [64 bits](https://www.python.org/ftp/python/2.7.14/python-2.7.14.amd64-pdb.zip) |
 | 2.7.13 | [32 bits](https://www.python.org/ftp/python/2.7.13/python-2.7.13-pdb.zip) - [64 bits](https://www.python.org/ftp/python/2.7.13/python-2.7.13.amd64-pdb.zip) |

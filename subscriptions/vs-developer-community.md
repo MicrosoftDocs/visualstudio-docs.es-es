@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 44a790d1-f37e-4be0-9023-af1b3fdfcd35
-ms.date: 12/02/2020
+ms.date: 03/17/2021
 ms.topic: conceptual
 description: Aprenda sobre la ventaja de soporte técnico de Developer Community que se incluye en determinadas suscripciones de Visual Studio.
-ms.openlocfilehash: 1b90a18c251e96f3c815129d81b3b09611594e99
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 68629db57397d42f91c778ee075f3a51ce2a9c78
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96538051"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104671994"
 ---
 # <a name="developer-community-support-forum-in-visual-studio-subscriptions"></a>Foro de soporte técnico de Developer Community en las suscripciones de Visual Studio
 Publique preguntas, encuentre respuestas y comparta sus conocimientos en los foros de Developer Community.
@@ -49,7 +49,7 @@ La disponibilidad de la ventaja Comunidad Azure depende del nivel de suscripció
 |                                       Plataformas MSDN (estándar)                                       |    Licencia por volumen, venta directa     |   Disponible    |    Sí     |
 | Visual Studio Enterprise (nube mensual) Visual Studio Professional (nube mensual)|        Todas        | No disponible |     No     |
 
-<sup>1</sup>  *Incluye:  No para reventa (NFR), Microsoft FTE, Most Valuable Professional (MVP), Regional Director (RD), Visual Studio Industry Partner (VSIP), BizSpark, Imagine, Microsoft Certified Trainer (MCT)*
+<sup>1</sup> *Incluye No para reventa (NFR), Empleado a tiempo completo (FTE) de Microsoft, Profesional mejor valorado (MVP), Director regional (RD), programa Visual Studio Industry Partner (VSIP), BizSpark, Imagine y Microsoft Certified Trainer (MCT).  Excluye NFR básico.*
 
 > [!NOTE]
 > Microsoft ya no ofrece suscripciones anuales ni de Visual Studio Professional ni de Visual Studio Enterprise en las suscripciones de nube. Esto no supone cambio alguno en la experiencia actual de los clientes y ni en su capacidad para renovar, aumentar, reducir o cancelar las suscripciones. Conviene que los clientes nuevos vayan a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar las diferentes opciones de compra de Visual Studio.
@@ -57,7 +57,7 @@ La disponibilidad de la ventaja Comunidad Azure depende del nivel de suscripció
 ¿No sabe con seguridad qué suscripción usa?  Conéctese a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas las suscripciones asignadas a su dirección de correo electrónico. Si no ve todas las suscripciones, es posible que haya una o varias asignadas a una dirección de correo electrónico diferente.  Debe iniciar sesión con esa dirección de correo electrónico para ver esas suscripciones.
 
 ## <a name="support-resources"></a>Recursos de soporte técnico
-- ¿Necesita ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio?  Póngase en contacto con el [soporte técnico de suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
+- ¿Necesita ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio?  Póngase en contacto con el [soporte técnico de suscripciones](https://my.visualstudio.com/gethelp) de Visual Studio.
 - ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Vea también

@@ -4,23 +4,23 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 2249b32a-46d7-4e29-b543-4769c71ceda6
-ms.date: 10/22/2020
+ms.date: 03/19/2021
 ms.topic: conceptual
 description: Obtenga información sobre el acceso a GitHub Enterprise como parte de las suscripciones de Visual Studio
-ms.openlocfilehash: 7ad60b1c1a177353cad13e3dbcbc50c67b5500ac
-ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
+ms.openlocfilehash: 41cf3779f5572ecd63d11907eb80837e05e176c8
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99511363"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757716"
 ---
 # <a name="visual-studio-subscriptions-with-github-enterprise"></a>Suscripciones de Visual Studio con GitHub Enterprise 
 
 Los clientes que tengan contratos Enterprise (EA) con Microsoft pueden comprar una nueva oferta de suscripciones que junta las suscripciones estándar de Visual Studio y GitHub Enterprise. Es una forma fácil y económica para los suscriptores de Visual Studio de adquirir GitHub Enterprise. 
 
-- Ahora puede innovar a escala con Visual Studio y GitHub e introducir de manera segura código abierto, comunidad y procedimientos recomendados en su entorno de desarrollo integrado y sus flujos de trabajo.
-- Use los mejores servicios y herramientas de desarrollo para desarrolladores con el conjunto más completo de recursos para crear, implementar y administrar aplicaciones excelentes. 
-- Colabore, administre las solicitudes de incorporación de GitHub Enterprise y revise el código fuente donde se ha escrito: en el editor. 
+- Ahora puede innovar a escala con Visual Studio y GitHub, al incorporar el código abierto, la comunidad y los procedimientos recomendados a su IDE y sus flujos de trabajo de manera segura.
+- Use los mejores servicios y herramientas de desarrollo para desarrolladores con el conjunto de recursos más completo para crear, implementar y administrar aplicaciones excelentes. 
+- Colabore y administre las solicitudes de incorporación de cambios de GitHub Enterprise y revise el código fuente donde se haya escrito, es decir, en el editor. 
 
 ## <a name="whats-available"></a>¿Qué está disponible? 
 
@@ -78,14 +78,14 @@ Si no está familiarizado con GitHub, aquí tiene algunos recursos de utilidad:
 R:  El proceso para configurar una cuenta de GitHub Enterprise puede llevar bastante tiempo.  Si lleva tiempo esperando y no ha ocurrido nada, puede ponerse en contacto con el administrador de GitHub.  Es posible que el administrador todavía esté trabajando en ello o haya optado por no crear una cuenta de GitHub Enterprise. 
 
 ### <a name="q-do-i-get-the-full-visual-studio-subscription-benefits"></a>P: ¿Voy a obtener todas las ventajas de la suscripción de Visual Studio?
-R:  Junto con GitHub Enterprise, recibe todas las ventajas de una suscripción estándar de Visual Studio, lo que incluye las descargas de software, los servicios en la nube, el soporte técnico y las ventajas para asociados, igual que si hubiera adquirido la suscripción por separado.
+Respuesta: Junto con GitHub Enterprise, recibirá todas las ventajas de una suscripción estándar de Visual Studio, lo que incluye las descargas de software, los servicios en la nube, el soporte técnico y las ventajas para asociados, igual que si hubiera adquirido la suscripción por separado.
 
 ## <a name="support-resources"></a>Recursos de soporte técnico
 - Obtenga más información sobre la asignación de GitHub en la [documentación de GitHub](https://docs.github.com/github/setting-up-and-managing-your-enterprise-account/managing-licenses-for-the-github-enterprise-and-visual-studio-bundle).
 - Encuentre respuestas a preguntas sobre una amplia variedad de temas de GitHub en la [Ayuda de GitHub](https://help.github.com).
 - ¿Necesita ayuda?  Póngase en contacto con [Soporte técnico de GitHub](https://support.github.com/)
 - Obtenga ayuda de otros usuarios de GitHub en el [Foro de la comunidad de GitHub](https://github.community/).
-- Si necesita ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, visite nuestra página [Obtener ayuda](https://my.visualstudio.com/GetHelp).
+- Si necesita ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, visite nuestra página [Obtener ayuda](https://aka.ms/vssubscriberhelp).
 - ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
 - Obtenga [soporte técnico](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) para GitHub Enterprise.   
 

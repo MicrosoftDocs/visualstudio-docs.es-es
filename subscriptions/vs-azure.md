@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 02/10/2021
+ms.date: 03/18/2021
 ms.topic: how-to
 description: Vea cómo activar el beneficio de crédito individual de Azure DevTest que se incluye con la suscripción de Visual Studio.
-ms.openlocfilehash: 85306286e5a6522d8a073c88ce7e11281d5f1aef
-ms.sourcegitcommit: 15109ead7991f52092502518a6f4d9061cc22cd2
+ms.openlocfilehash: 1fb85c64ec49d906ba843ac944d550ef1e41fd4d
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "100335218"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672262"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Usar Microsoft Azure en suscripciones de Visual Studio
 Como suscriptor de Visual Studio, puede usar Microsoft Azure sin cargo adicional.  Gracias a su [crédito individual mensual de Azure DevTest](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/), dispone de Azure como espacio aislado personal para desarrollo y pruebas.  Puede aprovisionar máquinas virtuales, servicios en la nube y otros recursos de Azure.  La cantidad de crédito varía según el nivel de suscripción.
@@ -80,7 +80,7 @@ Si tiene preguntas sobre la transferencia de recursos, la eliminación de límit
 |              Visual Studio Professional mensual              |        No disponible        |                                                             |
 |                    Visual Studio Test Pro                    |     Crédito mensual de 50 USD      |                             Sí                             |
 |                        Plataformas de MSDN                        |     Crédito mensual de 100 USD     |                             Sí                             |
-|               Visual Studio Enterprise - NFR\*               |     Crédito mensual de 150 USD     |                             Sí                             |
+|               Visual Studio Enterprise - NFR<sup>1</sup>                 |     Crédito mensual de 150 USD     |                             Sí                             |
 |                Visual Studio Enterprise - FTE                |     Crédito mensual de 150 USD     |                             Sí                             |
 |     Visual Studio Enterprise - Microsoft Partner Network     |     Crédito mensual de 150 USD     |                             Sí                             |
 |    Visual Studio Professional - Microsoft Partner Network    |        No disponible        |                                                             |
@@ -90,7 +90,7 @@ Si tiene preguntas sobre la transferencia de recursos, la eliminación de límit
 |      Visual Studio Enterprise – MCT Software & Services      |     Crédito mensual de 100 USD     |                             Sí                             |
 | Visual Studio Enterprise – MCT Software & Services Developer |     Crédito mensual de 150 USD     |                             Sí                             |
 
-*Incluye No para reventa (NFR), Most Valuable Professional (MVP), Regional Director (RD), Visual Studio Industry Partner (VSIP)
+<sup>1</sup> *Incluye No para reventa (NFR), Profesional mejor valorado (MVP), Director regional (RD) y el programa Visual Studio Industry Partner (VSIP). Excluye NFR básico.*
 
 > [!NOTE]
 > Microsoft ya no ofrece suscripciones anuales ni de Visual Studio Professional ni de Visual Studio Enterprise en las suscripciones de nube. Esto no supone cambio alguno en la experiencia actual de los clientes y ni en su capacidad para renovar, aumentar, reducir o cancelar las suscripciones. Conviene que los clientes nuevos vayan a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar las diferentes opciones de compra de Visual Studio.
@@ -113,7 +113,7 @@ R:  La propiedad intelectual producida por un empleado que se crea sobre los rec
 - ¿Necesita ayuda con Azure?  Consulte estos recursos:
   - Soporte técnico: [https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
   - [Recomendaciones y sugerencias de Azure](https://microsoft.github.io/AzureTipsAndTricks/ "Recomendaciones y sugerencias de Azure") 
-- Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
+- Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://aka.ms/vssubscriberhelp) de Visual Studio.
 - ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Vea también

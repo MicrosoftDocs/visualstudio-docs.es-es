@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 97bf7474-c6c2-49b3-b2c9-f1b2808eed1a
-ms.date: 10/22/2020
+ms.date: 03/19/2021
 ms.topic: conceptual
 description: Puede producirse un error en el inicio de sesión si se utilizan alias o nombres descriptivos
-ms.openlocfilehash: 4d9b3194cf7636106740e35b230cc02aaab7eded
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: d3a3cd962bafcf6a3e0c5aa20c98128233ace988
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467614"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757703"
 ---
 # <a name="signing-into-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Posible error en el inicio de sesión en suscripciones de Visual Studio al utilizar alias
 Según el tipo de cuenta utilizada para iniciar sesión, es posible que las suscripciones disponibles no se muestren correctamente al iniciar sesión en [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs). Una posible causa es el uso de "alias" o "nombres descriptivos" en lugar de la identidad de inicio de sesión a la que está asignada la suscripción. Esto se denomina "uso de alias".
@@ -64,7 +64,7 @@ Las cuentas de suscripción personal también pueden experimentar problemas si l
 
 La plataforma de Visual Studio da prioridad al alias principal para mostrar los detalles de la suscripción. 
 
-1. Vaya a **Administrar el modo de iniciar sesión en Microsoft** . Inicie sesión en su cuenta Microsoft si se le solicita que lo haga. 
+1. Vaya a **Administrar el modo de iniciar sesión en Microsoft**. Inicie sesión en su cuenta Microsoft si se le solicita que lo haga. 
 
 2. En Alias de cuenta, seleccione **Convertir en principal** junto a la dirección de correo electrónico utilizada para asignar la suscripción. 
 
@@ -91,12 +91,14 @@ Ambas opciones se configuran en el portal de administración completando los pas
 > [!NOTE]
 > Tanto para los cambios individuales como para los masivos, los suscriptores recibirán un correo electrónico con instrucciones informando de que su dirección de correo electrónico de inicio de sesión ha cambiado y tendrán que iniciar sesión con la dirección de correo electrónico actualizada. También es importante tener en cuenta que, si el suscriptor activó previamente los beneficios en la otra dirección de inicio de sesión, tendrá que seguir usando la otra dirección de inicio de sesión para acceder a ellos.  
 
-## <a name="see-also"></a>Vea también
+## <a name="support-resources"></a>Recursos de soporte técnico
+- Para obtener ayuda con la administración de suscripciones de Visual Studio, póngase en contacto el [soporte técnico de suscripciones de Visual Studio](https://aka.ms/vsadminhelp).
+
+## <a name="see-also"></a>Consulte también
 - [Documentación de Visual Studio](/visualstudio/)
 - [Documentación de Azure DevOps](/azure/devops/)
 - [Documentación de Azure](/azure/)
 - [Documentación de Microsoft 365](/microsoft-365/)
-
 
 ## <a name="next-steps"></a>Pasos siguientes
 Obtenga más información sobre la administración de suscripciones de Visual Studio.

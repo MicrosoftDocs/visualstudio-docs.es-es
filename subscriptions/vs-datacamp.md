@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: fc33d419-78cf-485e-b558-5b7efa900f14
-ms.date: 12/02/2020
+ms.date: 03/17/2021
 ms.topic: how-to
 description: Obtenga información sobre la suscripción de aprendizaje de DataCamp incluida en la suscripción de Visual Studio seleccionada.
-ms.openlocfilehash: c675d49f1a099c53dfdabe08a71f1c5545010f97
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 270dffd75a0b442e5f275d0840033e54be5fe883
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96538090"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672020"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Beneficio de aprendizaje de DataCamp en suscripciones de Visual Studio
 Entre las suscripciones de Visual Studio válidas se incluyen las suscripciones a DataCamp.  Con DataCamp, puede obtener información sobre todas las aptitudes ciencia de datos que necesita cómodamente desde el explorador. Puede elegir cuándo y qué aprender. Al no tener que instalar ningún software ni cumplir ningún requisito de hardware en particular, ahora el aprendizaje de ciencia de datos es más fácil que nunca.
@@ -68,7 +68,7 @@ Puede parar en cualquier momento y reanudar el curso en la siguiente sesión.  S
 | Visual Studio Enterprise (estándar)  | NFR<sup>1</sup> |No disponible  | N/D |
 | Visual Studio Enterprise, Visual Studio Professional (de nube mensual) | Azure | No disponible | N/D |
 
-<sup>1</sup>  *Incluye:  No para reventa (NFR), FTE, Most Valuable Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
+<sup>1</sup> *Incluye No para reventa (NFR), Empleado a tiempo completo (FTE), Profesional mejor valorado (MVP), Director regional (RD), Microsoft Partner Network (MPN), programa Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark e Imagine.  Excluye NFR básico.*
 
 > [!NOTE]
 > Microsoft ya no ofrece suscripciones anuales ni de Visual Studio Professional ni de Visual Studio Enterprise en las suscripciones de nube. Esto no supone cambio alguno en la experiencia actual de los clientes y ni en su capacidad para renovar, aumentar, reducir o cancelar las suscripciones. Conviene que los clientes nuevos vayan a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar las diferentes opciones de compra de Visual Studio.
@@ -80,7 +80,7 @@ Puede parar en cualquier momento y reanudar el curso en la siguiente sesión.  S
   - [Comunidad de DataCamp](https://www.datacamp.com/community/tutorials), que incluye tutoriales y foros.
   - [Centro de ayuda de DataCamp](https://support.datacamp.com/hc), donde puede buscar temas de soporte técnico y consultar preguntas de usuarios de solicitudes.
   - [Enviar una solicitud de soporte técnico](https://support.datacamp.com/hc/requests/new)
-- Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
+- Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación de suscripciones de Visual Studio, póngase en contacto con el [soporte técnico de suscripciones de Visual Studio](https://my.visualstudio.com/gethelp).
 - ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Vea también
