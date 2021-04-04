@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 52bd4f95160165ee67c0a35816d094238786bc38
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 50debf24fa691ba74d082543b1c0bb1a27b5786e
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99866572"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215791"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Guardar los datos de un objeto en una base de datos
 
@@ -47,8 +47,8 @@ De forma predeterminada, `DBDirect` los métodos se crean en un TableAdapter que
 
      En el ejemplo siguiente se crea un nuevo registro de cliente en la `Customers` tabla pasando los valores del `currentCustomer` objeto al `TableAdapter.Insert` método.
 
-     [!code-csharp[VbRaddataSaving#23](../data-tools/codesnippet/CSharp/save-data-from-an-object-to-a-database_1.cs)]
-     [!code-vb[VbRaddataSaving#23](../data-tools/codesnippet/VisualBasic/save-data-from-an-object-to-a-database_1.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form3.cs" id="Snippet23":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form3.vb" id="Snippet23":::
 
 ## <a name="to-update-existing-records-from-an-object-to-a-database"></a>Para actualizar los registros existentes de un objeto a una base de datos
 
@@ -59,8 +59,8 @@ De forma predeterminada, `DBDirect` los métodos se crean en un TableAdapter que
 
      En el siguiente ejemplo se actualiza un registro existente en la `Customers` tabla pasando los valores nuevos y originales del `Customer` objeto al `TableAdapter.Update` método.
 
-     [!code-csharp[VbRaddataSaving#24](../data-tools/codesnippet/CSharp/save-data-from-an-object-to-a-database_2.cs)]
-     [!code-vb[VbRaddataSaving#24](../data-tools/codesnippet/VisualBasic/save-data-from-an-object-to-a-database_2.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form3.cs" id="Snippet24":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form3.vb" id="Snippet24":::
 
 ## <a name="to-delete-existing-records-from-a-database"></a>Para eliminar los registros existentes de una base de datos
 
@@ -71,13 +71,13 @@ De forma predeterminada, `DBDirect` los métodos se crean en un TableAdapter que
 
      En el ejemplo siguiente se elimina un registro de la `Customers` tabla pasando los valores originales del `Customer` objeto al `TableAdapter.Delete` método.
 
-     [!code-csharp[VbRaddataSaving#25](../data-tools/codesnippet/CSharp/save-data-from-an-object-to-a-database_3.cs)]
-     [!code-vb[VbRaddataSaving#25](../data-tools/codesnippet/VisualBasic/save-data-from-an-object-to-a-database_3.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form3.cs" id="Snippet25":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form3.vb" id="Snippet25":::
 
 ## <a name="net-security"></a>Seguridad de .NET
 
 Debe tener permiso para realizar la selección `INSERT` , `UPDATE` o `DELETE` en la tabla de la base de datos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Guardar los datos de nuevo en la base de datos](../data-tools/save-data-back-to-the-database.md)

@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0eeb3e768370066bf93afc766d4d7f67d8d39a1d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 796fc389a7cd7d0c587f955792a96d0f2f07a20c
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859078"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215973"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Crear un control de usuario de Windows Forms que admita el enlace de datos de búsqueda
 
@@ -56,7 +56,7 @@ Durante este tutorial, aprenderá a:
 
 - Cree un formulario para mostrar los datos en el nuevo control.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
 
 En este tutorial se usa SQL Server Express LocalDB y la base de datos de ejemplo Northwind.
 
@@ -110,8 +110,8 @@ Para controles de búsqueda que admiten el enlace de datos, puede implementar <x
 
 2. Reemplace el código de `LookupBox` por lo siguiente:
 
-     [!code-vb[VbRaddataDisplaying#5](../data-tools/codesnippet/VisualBasic/create-a-windows-forms-user-control-that-supports-lookup-data-binding_1.vb)]
-     [!code-csharp[VbRaddataDisplaying#5](../data-tools/codesnippet/CSharp/create-a-windows-forms-user-control-that-supports-lookup-data-binding_1.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDisplaying/VB/LookupBox.vb" id="Snippet5":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDisplaying/CS/LookupBox.cs" id="Snippet5":::
 
 3. En el menú **Compilar** , elija **Compilar solución**.
 
@@ -179,6 +179,6 @@ Así configura el enlace de datos para mostrar el valor `CompanyName` de la tabl
 
 - Navegue por algunos registros y compruebe que `CompanyName` aparece en el control `LookupBox`.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Enlazar controles de Windows Forms a datos en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

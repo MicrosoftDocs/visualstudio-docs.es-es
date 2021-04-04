@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: f212fbd1868ad873f0692a11bae975eade8778a5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 38ceec2cafd3476342d9319d9b5d034564759fad
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99858922"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215908"
 ---
 # <a name="edit-data-in-datasets"></a>Editar datos en conjuntos de datos
 Los datos de las tablas de datos se modifican de forma muy similar a como se modifican los datos de una tabla en cualquier base de datos. El proceso puede incluir la inserción, actualización y eliminación de registros en la tabla. En un formulario enlazado a datos, puede especificar qué campos son editables por el usuario. En esos casos, la infraestructura de enlace de datos controla todo el seguimiento de cambios para que los cambios se puedan devolver a la base de datos más adelante. Si realiza modificaciones en los datos mediante programación y pretende enviarlos de nuevo a la base de datos, debe utilizar los objetos y métodos que realizan el seguimiento de cambios.
@@ -33,21 +33,21 @@ Para editar una fila existente en una <xref:System.Data.DataTable> , debe buscar
 
 Si no conoce el índice de la fila que desea editar, use el `FindBy` método para buscar por la clave principal:
 
-[!code-csharp[VbRaddataEditing#3](../data-tools/codesnippet/CSharp/edit-data-in-datasets_1.cs)]
-[!code-vb[VbRaddataEditing#3](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_1.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet3":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet3":::
 
 Si conoce el índice de fila, puede tener acceso a las filas y modificarlas de la manera siguiente:
 
-[!code-csharp[VbRaddataEditing#5](../data-tools/codesnippet/CSharp/edit-data-in-datasets_2.cs)]
-[!code-vb[VbRaddataEditing#5](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_2.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet5":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet5":::
 
 ## <a name="to-insert-new-rows-into-a-dataset"></a>Para insertar nuevas filas en un conjunto de filas
 Las aplicaciones que usan controles enlazados a datos normalmente agregan nuevos registros a través del botón **Agregar nuevo** en un [control BindingNavigator](/dotnet/framework/winforms/controls/bindingnavigator-control-windows-forms).
 
 Para agregar manualmente nuevos registros a un conjunto de datos, cree una nueva fila de datos llamando al método en DataTable. A continuación, agregue la fila a la <xref:System.Data.DataRow> colección ( <xref:System.Data.DataTable.Rows%2A> ) de <xref:System.Data.DataTable> :
 
-[!code-csharp[VbRaddataEditing#1](../data-tools/codesnippet/CSharp/edit-data-in-datasets_3.cs)]
-[!code-vb[VbRaddataEditing#1](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_3.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet1":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet1":::
 
 Para conservar la información que el conjunto de datos necesita para enviar actualizaciones al origen de datos, utilice el <xref:System.Data.DataRow.Delete%2A> método para quitar las filas de una tabla de datos. Por ejemplo, si la aplicación utiliza un TableAdapter (o <xref:System.Data.Common.DataAdapter> ), el método del TableAdapter `Update` elimina las filas de la base de datos que tienen un <xref:System.Data.DataRow.RowState%2A> de <xref:System.Data.DataRowState.Deleted> .
 
@@ -64,8 +64,8 @@ Si la aplicación no necesita volver a enviar las actualizaciones a un origen de
 
 En el ejemplo siguiente se muestra cómo llamar al <xref:System.Data.DataRow.Delete%2A> método para marcar la primera fila de la `Customers` tabla como eliminada:
 
-[!code-csharp[VbRaddataEditing#8](../data-tools/codesnippet/CSharp/edit-data-in-datasets_4.cs)]
-[!code-vb[VbRaddataEditing#8](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_4.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet8":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet8":::
 
 ## <a name="determine-if-there-are-changed-rows"></a>Determinar si hay filas modificadas
 Cuando se realizan cambios en los registros de un conjunto de datos, se almacena información sobre dichos cambios hasta que los confirme Los cambios se confirman cuando se llama al `AcceptChanges` método de un conjunto de datos o una tabla de datos, o cuando se llama al `Update` método de un TableAdapter o adaptador de datos.
@@ -84,8 +84,8 @@ El método <xref:System.Data.DataSet.HasChanges%2A> de un conjunto de datos devu
 
 En el ejemplo siguiente, se muestra cómo comprobar el valor devuelto del método <xref:System.Data.DataSet.HasChanges%2A> para detectar si hay filas modificadas en un conjunto de datos denominado `NorthwindDataset1`:
 
-[!code-csharp[VbRaddataEditing#12](../data-tools/codesnippet/CSharp/edit-data-in-datasets_5.cs)]
-[!code-vb[VbRaddataEditing#12](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_5.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet12":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet12":::
 
 ## <a name="determine-the-type-of-changes"></a>Determinar el tipo de cambios
 También puede comprobar qué tipo de cambios se realizaron en un conjunto de elementos pasando un valor de la <xref:System.Data.DataRowState> enumeración al <xref:System.Data.DataSet.HasChanges%2A> método.
@@ -96,8 +96,8 @@ También puede comprobar qué tipo de cambios se realizaron en un conjunto de el
 
 En el ejemplo siguiente se muestra cómo comprobar un conjunto de `NorthwindDataset1` filas denominado para determinar si se ha agregado alguna fila nueva:
 
-[!code-csharp[VbRaddataEditing#13](../data-tools/codesnippet/CSharp/edit-data-in-datasets_6.cs)]
-[!code-vb[VbRaddataEditing#13](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_6.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet13":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet13":::
 
 ## <a name="to-locate-rows-that-have-errors"></a>Para buscar las filas que tienen errores
 Al trabajar con columnas y filas de datos individuales, es posible que se produzcan errores. Puede comprobar la `HasErrors` propiedad para determinar si existen errores en <xref:System.Data.DataSet> , <xref:System.Data.DataTable> o <xref:System.Data.DataRow> .
@@ -106,9 +106,9 @@ Al trabajar con columnas y filas de datos individuales, es posible que se produz
 
 2. Si la `HasErrors` propiedad es `true` , recorra en iteración las colecciones de tablas y, a continuación, a través de las filas, para buscar la fila con el error.
 
-[!code-csharp[VbRaddataEditing#23](../data-tools/codesnippet/CSharp/edit-data-in-datasets_7.cs)]
-[!code-vb[VbRaddataEditing#23](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_7.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet23":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet23":::
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Herramientas de conjunto de datos en Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)

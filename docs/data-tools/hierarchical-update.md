@@ -23,12 +23,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 05575e6cc75468a85a3dd410ea59bebca79eee0f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d43d4267ce0e180a525e990e372b7a6773a9cc51
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99858844"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215817"
 ---
 # <a name="hierarchical-update"></a>Actualización jerárquica
 
@@ -93,8 +93,8 @@ El código de guardado generado también contiene una línea de código que llam
 
 2. Agregue una línea de código para llamar al método `OrdersBindingSource.EndEdit` después de la línea que llama al método `CustomersBindingSource.EndEdit`. El código del evento de clic del botón **Guardar** debe tener un aspecto similar al siguiente:
 
-     [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/VisualBasic/hierarchical-update_1.vb)]
-     [!code-csharp[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/CSharp/hierarchical-update_1.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/VB/Form1.vb" id="Snippet1":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/CS/Form1.cs" id="Snippet1":::
 
 Además de confirmar los cambios en una tabla secundaria relacionada antes de guardar los datos en una base de datos, quizás también tenga que confirmar los registros primarios recién creados antes de agregar nuevos registros secundarios a un conjunto de datos. En otras palabras, puede que tenga que agregar el nuevo registro primario ( `Customer` ) al conjunto de registros antes de que las restricciones Foreign Key permitan que `Orders` se agreguen nuevos registros secundarios () al conjunto de elementos. Para ello, puede usar el evento `BindingSource.AddingNew` secundario.
 
@@ -109,8 +109,8 @@ Además de confirmar los cambios en una tabla secundaria relacionada antes de gu
 
 2. Agregue una línea de código al controlador de eventos que llama al `CustomersBindingSource.EndEdit` método. El código del controlador de evento `OrdersBindingSource_AddingNew` debe tener un aspecto similar al siguiente:
 
-     [!code-vb[VSProDataOrcasHierarchicalUpdate#2](../data-tools/codesnippet/VisualBasic/hierarchical-update_2.vb)]
-     [!code-csharp[VSProDataOrcasHierarchicalUpdate#2](../data-tools/codesnippet/CSharp/hierarchical-update_2.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/VB/Form1.vb" id="Snippet2":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/CS/Form1.cs" id="Snippet2":::
 
 ## <a name="tableadaptermanager-reference"></a>Referencia de TableAdapterManager
 
@@ -127,6 +127,6 @@ A continuación se muestran los métodos y las propiedades de la clase que se us
 |*TableName* `TableAdapter` propiedad|Representa un `TableAdapter` . El generado `TableAdapterManager` contiene una propiedad para cada `TableAdapter` que administra. Por ejemplo, un conjunto de DataSet con una tabla Customers y Orders se genera con un objeto `TableAdapterManager` que contiene `CustomersTableAdapter` `OrdersTableAdapter` las propiedades y.|
 |Propiedad`UpdateOrder`|Controla el orden de los comandos de inserción, actualización y eliminación individuales. Establézcalo en uno de los valores de la `TableAdapterManager.UpdateOrderOption` enumeración.<br /><br /> De forma predeterminada, `UpdateOrder` se establece en **InsertUpdateDelete**. Esto significa que las inserciones, las actualizaciones y las eliminaciones se realizan para todas las tablas del conjunto de DataSet.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Guardar los datos de nuevo en la base de datos](../data-tools/save-data-back-to-the-database.md)

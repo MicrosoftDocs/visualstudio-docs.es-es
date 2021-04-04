@@ -906,6 +906,7 @@
 - name: Depurar >>
   href: debugger/index.yml
 - name: Control de versiones
+  expanded: true
   items:
     - name: "Nueva experiencia de Git en Visual\_Studio"
       href: ide/git-with-visual-studio.md

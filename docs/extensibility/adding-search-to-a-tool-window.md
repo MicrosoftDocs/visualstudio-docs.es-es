@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82176afaacae3b9f4553c8b1b5b41b9a4f10dace
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ca1998b5ca3ad78b269c50244ddf51796c9e4005
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105097557"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215531"
 ---
 # <a name="add-search-to-a-tool-window"></a>Agregar búsqueda a una ventana de herramientas
 Al crear o actualizar una ventana de herramientas en la extensión, puede Agregar la misma funcionalidad de búsqueda que aparece en otra parte de Visual Studio. Esta funcionalidad incluye las siguientes características:
@@ -79,8 +79,8 @@ Al seguir este tutorial, aprenderá a realizar las siguientes tareas:
 
      Este código agrega una <xref:System.Windows.Controls.TextBox> propiedad pública denominada **SearchResultsTextBox** y una propiedad de cadena pública denominada **SearchContent**. En el constructor, SearchResultsTextBox se establece en el cuadro de texto y SearchContent se inicializa en un conjunto de cadenas delimitadas por nueva línea. El contenido del cuadro de texto también se inicializa en el conjunto de cadenas.
 
-     [!code-csharp[ToolWindowSearch#1](../extensibility/codesnippet/CSharp/adding-search-to-a-tool-window_1.cs)]
-     [!code-vb[ToolWindowSearch#1](../extensibility/codesnippet/VisualBasic/adding-search-to-a-tool-window_1.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/toolwindowsearch/cs/mycontrol.xaml.cs" id="Snippet1":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/toolwindowsearch/vb/mycontrol.xaml.vb" id="Snippet1":::
 
 5. Compile la solución y comience la depuración. Aparece la instancia experimental de Visual Studio.
 

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0b3037c0ec983b9f496947feba41938111fafc38
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 74db1b73dded52ba15ea860873c49c0264f7fea7
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851587"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106214413"
 ---
 # <a name="how-to-run-code-when-deployment-steps-are-executed"></a>Cómo: ejecutar código cuando se ejecutan los pasos de implementación
   Si desea realizar tareas adicionales para un paso de implementación en un proyecto de SharePoint, puede controlar los eventos generados por los elementos de proyecto de SharePoint antes y después de que Visual Studio ejecute cada paso de implementación. Para obtener más información, vea [extender el empaquetado e implementación de SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md).
@@ -41,8 +41,8 @@ ms.locfileid: "99851587"
 ## <a name="example"></a>Ejemplo
  En el ejemplo de código siguiente se muestra cómo controlar los <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepCompleted> eventos y en una extensión del elemento de proyecto de instancia de lista. Esta extensión escribe un mensaje adicional en la ventana de **salida** cuando Visual Studio recicla el grupo de aplicaciones al implementar y retirar la solución.
 
- [!code-vb[SPExtensibility.ProjectSystemExtension.General#4](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/handledeploymentstepevents.vb#4)]
- [!code-csharp[SPExtensibility.ProjectSystemExtension.General#4](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/handledeploymentstepevents.cs#4)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/handledeploymentstepevents.vb" id="Snippet4":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/handledeploymentstepevents.cs" id="Snippet4":::
 
 ## <a name="compile-the-code"></a>Compilar el código
  Este ejemplo requiere referencias a los ensamblados siguientes:
@@ -54,7 +54,7 @@ ms.locfileid: "99851587"
 ## <a name="deploy-the-extension"></a>Implementar la extensión
  Para implementar la extensión, cree un [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] paquete de extensión (VSIX) para el ensamblado y cualquier otro archivo que desee distribuir con la extensión. Para obtener más información, vea [deploy Extensions for the SharePoint Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Extender el empaquetado e implementación de SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md)
 - [Tutorial: crear un paso de implementación personalizado para proyectos de SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)
 - [Cómo: ejecutar código cuando se implementa o retracta un proyecto de SharePoint](../sharepoint/how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted.md)

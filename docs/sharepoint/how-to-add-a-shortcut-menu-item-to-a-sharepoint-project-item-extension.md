@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: eba366ecf777697a0c63999d8addf099fecca976
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bac5ff10ea59ba422a9dc33855919eb999a996ee
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923603"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215401"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension"></a>Cómo: agregar un elemento de menú contextual a una extensión de elemento de proyecto de SharePoint
   Puede Agregar un elemento de menú contextual a un elemento de proyecto de SharePoint existente mediante una extensión de elemento de proyecto. El elemento de menú aparece cuando un usuario hace clic con el botón secundario en el elemento de proyecto en **Explorador de soluciones**.
@@ -40,8 +40,8 @@ ms.locfileid: "99923603"
 ## <a name="example"></a>Ejemplo
  En el ejemplo de código siguiente se muestra cómo agregar un elemento de menú contextual al elemento de proyecto del receptor de eventos. Cuando el usuario hace clic con el botón secundario en el elemento de proyecto de **Explorador de soluciones** y hace clic en el elemento de menú **escribir mensaje para ventana de salida** , Visual Studio muestra un mensaje en la ventana de **salida** .
 
- [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#1](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemextensionmenu.vb#1)]
- [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#1](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemextensionmenu.cs#1)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemextensionmenu.vb" id="Snippet1":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemextensionmenu.cs" id="Snippet1":::
 
  En este ejemplo se usa el servicio de proyecto de SharePoint para escribir el mensaje en la ventana de **salida** . Para obtener más información, vea [usar el servicio de proyecto de SharePoint](../sharepoint/using-the-sharepoint-project-service.md).
 
@@ -55,7 +55,7 @@ ms.locfileid: "99923603"
 ## <a name="deploy-the-extension"></a>Implementar la extensión
  Para implementar la extensión, cree un [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] paquete de extensión (VSIX) para el ensamblado y cualquier otro archivo que desee distribuir con la extensión. Para obtener más información, vea [deploy Extensions for the SharePoint Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Cómo: crear una extensión de elemento de proyecto de SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)
 - [Cómo: agregar una propiedad a una extensión de elemento de proyecto de SharePoint](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)
 - [Extender elementos de proyecto de SharePoint](../sharepoint/extending-sharepoint-project-items.md)

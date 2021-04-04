@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ee855700502469783a8eab60bb24a28c2e30a9c8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ad2892ab7c605ba25902ac2c4c24e68236a5d740
+ms.sourcegitcommit: 00e16b9afe6b22ba0591e4d0d92690544e6d4357
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99950645"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105616979"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Inicio rápido: Uso de Visual Studio para crear la primera aplicación Vue.js
 
@@ -140,6 +140,8 @@ En la plantilla de proyecto Vue.js de JavaScript (y las versiones anteriores de 
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-- Consultar el artículo sobre [Vue.js](create-application-with-vuejs.md)
-- Repasar el [Tutorial para Node.js y Express](tutorial-nodejs.md)
-- [Deploy the app to Linux App Service](../javascript/publish-nodejs-app-azure.md) (Implementar la aplicación en App Service de Linux)
+> [!div class="nextstepaction"]
+> [Creación de una aplicación Vue.js](create-application-with-vuejs.md)
+
+> [!div class="nextstepaction"]
+> [Deploy the app to Linux App Service](../javascript/publish-nodejs-app-azure.md) (Implementar la aplicación en App Service de Linux)

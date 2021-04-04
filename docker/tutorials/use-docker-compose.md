@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: f95a4f130e8ad662b3f0eca8f6f7d2162e2d1c7e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3bcf3a69dcf8053851e3d8519a25f61fe23ae7e3
+ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841723"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106082570"
 ---
 # <a name="use-docker-compose"></a>Uso de Docker Compose
 
@@ -168,7 +168,7 @@ docker run -d \
         image: mysql:5.7
     ```
 
-1. A continuación, defina la asignación de volúmenes. Cuando ha ejecutado el contenedor con `docker run`, se ha creado automáticamente el volumen con nombre. Pero esto no sucede cuando se ejecuta con Compose. Tendrá que definir el volumen en la sección `volumes:` de nivel superior y, después, especificar el punto de montaje en la configuración del servicio. Para que se usen las opciones predeterminadas, solo tiene que proporcionar el nombre del volumen. Pero hay [muchas más opciones disponibles](https://docs.docker.com/compose/compose-file/#volume-configuration-reference).
+1. A continuación, defina la asignación de volúmenes. Cuando ha ejecutado el contenedor con `docker run`, se ha creado automáticamente el volumen con nombre. Pero esto no sucede cuando se ejecuta con Compose. Tendrá que definir el volumen en la sección `volumes:` de nivel superior y, después, especificar el punto de montaje en la configuración del servicio. Para que se usen las opciones predeterminadas, solo tiene que proporcionar el nombre del volumen. Pero hay [muchas más opciones disponibles](https://github.com/compose-spec/compose-spec/blob/master/spec.md#volumes-top-level-element).
 
     ```yaml hl_lines="8 9 10 11 12"
     version: "3.7"
