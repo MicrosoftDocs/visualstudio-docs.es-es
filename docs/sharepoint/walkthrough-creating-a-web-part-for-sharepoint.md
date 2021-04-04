@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0f2d14bfd069fcf5064c9d8643393e28e52570be
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3e018085bd9900a9ee04f838b7c802afd2acc4fe
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918630"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217715"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Tutorial: Creación de un elemento web para SharePoint
 
@@ -82,14 +82,14 @@ Agregue un elemento de elemento **Web** al proyecto. El elemento **Web** agrega 
 
 Puede especificar los controles que desea que aparezcan en el elemento web agregándolos a la colección de controles de la clase Web Part.
 
-1. En **Explorador de soluciones**, Abra *WebPart1. vb* (en Visual Basic) o *WebPart1.CS* (en C#).
+1. En **Explorador de soluciones**, Abra *WebPart1. vb* (en Visual Basic) o *WebPart1. CS* (en C#).
 
      Se abre el archivo de código del elemento web en el editor de código.
 
 2. Agregue las siguientes directivas a la parte superior del archivo de código del elemento Web.
 
-     [!code-csharp[SP_WebPart#1](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#1)]
-     [!code-vb[SP_WebPart#1](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#1)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs" id="Snippet1":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb" id="Snippet1":::
 
 3. Agregue el siguiente código a la clase `WebPart1` . Este código declara los siguientes campos:
 
@@ -101,13 +101,13 @@ Puede especificar los controles que desea que aparezcan en el elemento web agreg
 
    - Una cadena que contiene la ruta del archivo de datos de los empleados.
 
-     [!code-csharp[SP_WebPart#2](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#2)]
-     [!code-vb[SP_WebPart#2](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#2)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs" id="Snippet2":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb" id="Snippet2":::
 
 4. Agregue el siguiente código a la clase `WebPart1` . Este código agrega una propiedad personalizada denominada `DataFilePath` al elemento web. Una propiedad personalizada es una propiedad que el usuario puede establecer en SharePoint. Esta propiedad obtiene y establece la ubicación de un archivo de datos XML que se utiliza para rellenar la cuadrícula de datos.
 
-     [!code-csharp[SP_WebPart#3](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#3)]
-     [!code-vb[SP_WebPart#3](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#3)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs" id="Snippet3":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb" id="Snippet3":::
 
 5. Reemplace el método `CreateChildControls` por el código siguiente. Este código realiza las tareas siguientes:
 
@@ -115,8 +115,8 @@ Puede especificar los controles que desea que aparezcan en el elemento web agreg
 
    - Enlaza la cuadrícula de datos a un archivo XML que contiene los datos de los empleados.
 
-     [!code-csharp[SP_WebPart#4](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#4)]
-     [!code-vb[SP_WebPart#4](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#4)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs" id="Snippet4":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb" id="Snippet4":::
 
 6. Agrega el método siguiente a la clase `WebPart1`: Este código realiza las tareas siguientes:
 
@@ -124,8 +124,8 @@ Puede especificar los controles que desea que aparezcan en el elemento web agreg
 
    - Controla el evento que se genera cuando el usuario elige el verbo del menú de verbos. Este código filtra la lista de empleados que aparece en la cuadrícula de datos.
 
-     [!code-csharp[SP_WebPart#5](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#5)]
-     [!code-vb[SP_WebPart#5](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#5)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs" id="Snippet5":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb" id="Snippet5":::
 
 ## <a name="test-the-web-part"></a>Probar el elemento Web
 
@@ -216,7 +216,7 @@ Muestre y oculte los empleados que no son administradores seleccionando un eleme
 
      Todos los empleados aparecen en el elemento web.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Crear elementos Web para SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md) 
  [Cómo: crear un elemento](../sharepoint/how-to-create-a-sharepoint-web-part.md) 

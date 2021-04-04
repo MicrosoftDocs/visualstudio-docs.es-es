@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c9d50de6630a813a9c8c7a075af6f921608fcd93
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 305220a8206cc84e55ed7319b5ce6ce1c8058b3c
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851535"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217039"
 ---
 # <a name="walkthrough-add-feature-event-receivers"></a>Tutorial: agregar receptores de eventos de características
 Los receptores de eventos de características son métodos que se ejecutan cuando se produce uno de los siguientes eventos relacionados con características en SharePoint:
@@ -85,16 +85,16 @@ En este tutorial se muestra cómo agregar un receptor de eventos a una caracter�
 
 2. En el nodo **características** , abra el menú contextual de **Feature1** y, a continuación, elija **Agregar receptor de eventos** para agregar un receptor de eventos a la característica.
 
-     Esto agrega un archivo de código en Feature1. En este caso, se denomina *Feature1.EventReceiver.CS* o *Feature1. EventReceiver. VB*, dependiendo del lenguaje de desarrollo del proyecto.
+     Esto agrega un archivo de código en Feature1. En este caso, se denomina *Feature1. EventReceiver. CS* o *Feature1. EventReceiver. VB*, dependiendo del lenguaje de desarrollo del proyecto.
 
 3. Si el proyecto está escrito en [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] , agregue el código siguiente en la parte superior del receptor de eventos si aún no está ahí:
 
-     [!code-csharp[SP_FeatureEvt#1](../sharepoint/codesnippet/CSharp/featureevttest2/features/feature1/feature1.eventreceiver.cs#1)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/featureevttest2/features/feature1/feature1.eventreceiver.cs" id="Snippet1":::
 
 4. La clase del receptor de eventos contiene varios métodos con comentarios que actúan como eventos. Reemplace el método **FeatureDeactivating** por lo siguiente:
 
-     [!code-vb[SP_FeatureEvt#2](../sharepoint/codesnippet/VisualBasic/featureevt2vb/features/feature1/feature1.eventreceiver.vb#2)]
-     [!code-csharp[SP_FeatureEvt#2](../sharepoint/codesnippet/CSharp/featureevttest2/features/feature1/feature1.eventreceiver.cs#2)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/featureevt2vb/features/feature1/feature1.eventreceiver.vb" id="Snippet2":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/featureevttest2/features/feature1/feature1.eventreceiver.cs" id="Snippet2":::
 
 ## <a name="test-the-feature-event-receiver"></a>Prueba del receptor de eventos de características
  A continuación, desactive la característica para probar si el método **FeatureDeactivating** envía un anuncio a la lista de anuncios de SharePoint.
@@ -119,7 +119,7 @@ En este tutorial se muestra cómo agregar un receptor de eventos a una caracter�
 
      Observe que aparece un anuncio en la lista **anuncios** después de desactivar la característica.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Cómo: para crear un receptor de eventos](../sharepoint/how-to-create-an-event-receiver.md)
 - [Desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md)

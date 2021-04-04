@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 748d9f5932f93261bc991f0d8af43728b8e5ce02
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e7ae131026a94fa368d55bad1d8cd2164b6f960b
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917285"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216935"
 ---
 # <a name="walkthrough-create-a-custom-installer-for-a-clickonce-application"></a>Tutorial: crear un instalador personalizado para una aplicación ClickOnce
 Cualquier aplicación ClickOnce basada en un archivo *. exe* se puede instalar y actualizar de forma silenciosa mediante un instalador personalizado. Un instalador personalizado puede implementar la experiencia personalizada del usuario durante la instalación, incluidos los cuadros de diálogo personalizados para las operaciones de seguridad y mantenimiento. Para realizar operaciones de instalación, el instalador personalizado utiliza la <xref:System.Deployment.Application.InPlaceHostingManager> clase. En este tutorial se muestra cómo crear un instalador personalizado que instala una aplicación ClickOnce de forma silenciosa.
@@ -57,8 +57,8 @@ Cualquier aplicación ClickOnce basada en un archivo *. exe* se puede instalar y
     > [!NOTE]
     > Los permisos asignados por la preconfianza no pueden superar los permisos del código del instalador personalizado.
 
-     [!code-vb[System.Deployment.Application.InPlaceHostingManager#1](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-installer-for-a-clickonce-application_1.vb)]
-     [!code-csharp[System.Deployment.Application.InPlaceHostingManager#1](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-installer-for-a-clickonce-application_1.cs)]
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/VB/Form1.vb" id="Snippet1":::
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/CS/Form1.cs" id="Snippet1":::
 
 5. Para intentar la instalación desde el código, llame al `InstallApplication` método. Por ejemplo, si se llama a la clase `MyInstaller` , podría llamar a `InstallApplication` de la siguiente manera.
 
@@ -75,8 +75,8 @@ Cualquier aplicación ClickOnce basada en un archivo *. exe* se puede instalar y
     ```
 
 ## <a name="next-steps"></a>Pasos siguientes
- Una aplicación ClickOnce también puede agregar lógica de actualización personalizada, incluida una interfaz de usuario personalizada para mostrar durante el proceso de actualización. Para obtener más información, vea <xref:System.Deployment.Application.UpdateCheckInfo>. Una aplicación ClickOnce también puede suprimir la entrada del menú de inicio estándar, el acceso directo, y agregar o quitar programas mediante un `<customUX>` elemento. Para obtener más información, vea el [ \<entryPoint> elemento](../deployment/entrypoint-element-clickonce-application.md) y <xref:System.Deployment.Application.DownloadApplicationCompletedEventArgs.ShortcutAppId%2A> .
+ Una aplicación ClickOnce también puede agregar lógica de actualización personalizada, incluida una interfaz de usuario personalizada para mostrar durante el proceso de actualización. Para más información, consulte <xref:System.Deployment.Application.UpdateCheckInfo>. Una aplicación ClickOnce también puede suprimir la entrada del menú de inicio estándar, el acceso directo, y agregar o quitar programas mediante un `<customUX>` elemento. Para obtener más información, vea el [ \<entryPoint> elemento](../deployment/entrypoint-element-clickonce-application.md) y <xref:System.Deployment.Application.DownloadApplicationCompletedEventArgs.ShortcutAppId%2A> .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Manifiesto de aplicación ClickOnce](../deployment/clickonce-application-manifest.md)
 - [Elemento \<entryPoint>](../deployment/entrypoint-element-clickonce-application.md)

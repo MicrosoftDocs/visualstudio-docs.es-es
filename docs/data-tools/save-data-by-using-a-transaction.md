@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: c633ed01821f500e958d3c7549febc23cf33c09d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c22a0cc9b0b9d37a4d725aa8ce494646e7779f0f
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99858493"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216077"
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>Procedimiento para guardar datos mediante una transacción
 
@@ -49,10 +49,10 @@ Para revertir la transacción, inicie una excepción antes de llamar al <xref:Sy
 
 - Agregue código para guardar los datos en la instrucción using que contiene la transacción. En el código siguiente se muestra cómo crear y crear instancias <xref:System.Transactions.TransactionScope> de un objeto en una instrucción using:
 
-     [!code-vb[VbRaddataSaving#11](../data-tools/codesnippet/VisualBasic/save-data-by-using-a-transaction_1.vb)]
-     [!code-csharp[VbRaddataSaving#11](../data-tools/codesnippet/CSharp/save-data-by-using-a-transaction_1.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb" id="Snippet11":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs" id="Snippet11":::
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Guardar los datos de nuevo en la base de datos](../data-tools/save-data-back-to-the-database.md)
 - [Tutorial: Guardar datos en una transacción](../data-tools/save-data-in-a-transaction.md)

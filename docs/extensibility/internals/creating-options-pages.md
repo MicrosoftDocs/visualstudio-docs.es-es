@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e7513617ab4ee4a051dd48cd110ecb2c5e22495
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f7b1b8b92f978739bfa4e540013347e216781cd4
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105056845"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217247"
 ---
 # <a name="create-options-pages"></a>Crear páginas de opciones
 En [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Managed Package Framework, las clases derivadas de <xref:Microsoft.VisualStudio.Shell.DialogPage> extienden el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE agregando páginas de **Opciones** en el menú **herramientas** .
@@ -65,15 +65,15 @@ En [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Managed Package 
  La siguiente clase define una página de opciones de "Hola mundo" mínima. Cuando se abre, el usuario puede establecer la `HelloWorld` propiedad pública en una cuadrícula de propiedades.
 
 ### <a name="code"></a>Código
- [!code-csharp[UI_UserSettings_ToolsOptionPages#11](../../extensibility/internals/codesnippet/CSharp/creating-options-pages_1.cs)]
- [!code-vb[UI_UserSettings_ToolsOptionPages#11](../../extensibility/internals/codesnippet/VisualBasic/creating-options-pages_1.vb)]
+:::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/cs/class1.cs" id="Snippet11":::
+:::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/vb/class1.vb" id="Snippet11":::
 
 ### <a name="description"></a>Descripción
  Al aplicar el siguiente atributo a la clase de paquete, la página Opciones estará disponible cuando se cargue el paquete. Los números son identificadores de recursos arbitrarios para la categoría y la página, y el valor booleano al final especifica si la página admite la automatización.
 
 ### <a name="code"></a>Código
- [!code-csharp[UI_UserSettings_ToolsOptionPages#07](../../extensibility/internals/codesnippet/CSharp/creating-options-pages_2.cs)]
- [!code-vb[UI_UserSettings_ToolsOptionPages#07](../../extensibility/internals/codesnippet/VisualBasic/creating-options-pages_2.vb)]
+:::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/cs/uiusersettingstoolsoptionspagespackage.cs" id="Snippet07":::
+:::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/vb/uiusersettingstoolsoptionspagespackage.vb" id="Snippet07":::
 
 ### <a name="description"></a>Descripción
  El siguiente controlador de eventos muestra un resultado en función del valor de la propiedad establecida en la página Opciones. Utiliza el <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> método con el resultado convertido explícitamente en el tipo de página de la opción personalizada para tener acceso a las propiedades expuestas por la página.
@@ -81,8 +81,8 @@ En [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Managed Package 
  En el caso de un proyecto generado por la plantilla de paquete, llame a esta función desde la `MenuItemCallback` función para adjuntarla al comando predeterminado agregado al menú **herramientas** .
 
 ### <a name="code"></a>Código
- [!code-csharp[UI_UserSettings_ToolsOptionPages#08](../../extensibility/internals/codesnippet/CSharp/creating-options-pages_3.cs)]
- [!code-vb[UI_UserSettings_ToolsOptionPages#08](../../extensibility/internals/codesnippet/VisualBasic/creating-options-pages_3.vb)]
+:::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/cs/uiusersettingstoolsoptionspagespackage.cs" id="Snippet08":::
+:::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/vb/uiusersettingstoolsoptionspagespackage.vb" id="Snippet08":::
 
 ## <a name="see-also"></a>Consulte también
 - [Extender la configuración de usuario y las opciones](../../extensibility/extending-user-settings-and-options.md)

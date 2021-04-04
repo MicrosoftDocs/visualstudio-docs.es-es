@@ -19,12 +19,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9aad1bff0b70f87ff271f6d09cc7f8d34179136d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b22c555b961809d84778df5996455f186efc01f1
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99858571"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216220"
 ---
 # <a name="pass-data-between-forms"></a>Pasar datos de un formulario a otro
 
@@ -49,7 +49,7 @@ Las tareas ilustradas en este tutorial incluyen:
 
 - Pasar datos de un formulario a otro.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
 
 En este tutorial se usa SQL Server Express LocalDB y la base de datos de ejemplo Northwind.
 
@@ -79,7 +79,7 @@ En este tutorial se usa SQL Server Express LocalDB y la base de datos de ejemplo
 
      El proyecto **PassingDataBetweenForms** se crea y se agrega al **Explorador de soluciones**.
 
-## <a name="create-the-data-source"></a>Crear el origen de datos
+## <a name="create-the-data-source"></a>Creación del origen de datos
 
 1. Para abrir la ventana **orígenes de datos** , en el menú **datos** , haga clic en **Mostrar orígenes de datos**.
 
@@ -154,7 +154,7 @@ Agregue una consulta de TableAdapter a Form2 para cargar los pedidos del cliente
     > [!NOTE]
     > Compruebe que la sintaxis de los parámetros sea correcta para su base de datos. Por ejemplo, en Microsoft Access, la cláusula WHERE tendría el siguiente aspecto: `WHERE CustomerID = ?`.
 
-6. Haga clic en **Siguiente**.
+6. Haga clic en **Next**.
 
 7. En **rellenar un nombre de DataTableMethod**, escriba `FillByCustomerID` .
 
@@ -168,8 +168,8 @@ Agregue una consulta de TableAdapter a Form2 para cargar los pedidos del cliente
 
 2. Agregue el código siguiente a **Form2** después del método `Form2_Load`:
 
-     [!code-vb[VbRaddataDisplaying#1](../data-tools/codesnippet/VisualBasic/pass-data-between-forms_1.vb)]
-     [!code-csharp[VbRaddataDisplaying#1](../data-tools/codesnippet/CSharp/pass-data-between-forms_1.cs)]
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDisplaying/VB/Form2.vb" id="Snippet1":::
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDisplaying/CS/Form2.cs" id="Snippet1":::
 
 ## <a name="create-a-method-on-form1-to-pass-data-and-display-form2"></a>Crear un método en Form1 para pasar datos y mostrar Form2
 
@@ -183,8 +183,8 @@ Agregue una consulta de TableAdapter a Form2 para cargar los pedidos del cliente
 
 4. Actualice la definición del método para que coincida con el ejemplo siguiente:
 
-     [!code-csharp[VbRaddataDisplaying#2](../data-tools/codesnippet/CSharp/pass-data-between-forms_2.cs)]
-     [!code-vb[VbRaddataDisplaying#2](../data-tools/codesnippet/VisualBasic/pass-data-between-forms_2.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDisplaying/CS/Form1.cs" id="Snippet2":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDisplaying/VB/Form1.vb" id="Snippet2":::
 
 ## <a name="run-the-app"></a>Ejecución de la aplicación
 
@@ -200,6 +200,6 @@ Dependiendo de los requisitos de la aplicación, existen varios pasos que se pue
 
 - Agregar funcionalidad para guardar los datos de nuevo en la base de datos. Para obtener más información, vea [guardar datos en la base de datos](../data-tools/save-data-back-to-the-database.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Enlazar controles de Windows Forms a datos en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

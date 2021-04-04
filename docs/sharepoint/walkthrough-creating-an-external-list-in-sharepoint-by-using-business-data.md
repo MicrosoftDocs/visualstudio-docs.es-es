@@ -21,12 +21,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: dbf996a2d44f94e4571a332fa7a86d861d820d45
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0811b029bf7e4705bc0c3689eff73f38280c3b3d
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99847718"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217689"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Tutorial: crear una lista externa en SharePoint con datos económicos
 
@@ -114,9 +114,9 @@ El proyecto **modelo de conectividad a datos profesionales** agrega una entidad 
 
 3. En el diseñador, abra el menú contextual de **Entity1** y, a continuación, elija **eliminar**.
 
-4. En **Explorador de soluciones**, abra el menú contextual de *Entity1. vb* (en Visual Basic) o *Entity1.CS* (en C#) y, a continuación, elija **eliminar**.
+4. En **Explorador de soluciones**, abra el menú contextual de *Entity1. vb* (en Visual Basic) o *Entity1. CS* (en C#) y, a continuación, elija **eliminar**.
 
-5. Abra el menú contextual de *Entity1Service. VB* (en Visual Basic) o *Entity1Service.CS* (en C#) y, a continuación, elija **eliminar**.
+5. Abra el menú contextual de *Entity1Service. VB* (en Visual Basic) o *Entity1Service. CS* (en C#) y, a continuación, elija **eliminar**.
 
 ## <a name="add-an-entity-to-the-model"></a>Agregar una entidad al modelo
 
@@ -126,7 +126,7 @@ Agregue una entidad al modelo. Puede Agregar entidades desde el **cuadro de herr
 
 2. En la pestaña **BusinessDataConnectivity** del **cuadro de herramientas**, agregue una **entidad** al diseñador de BDC.
 
-     La nueva entidad aparece en el diseñador. Visual Studio agrega un archivo denominado *EntityService. VB* (en Visual Basic) o *EntityService.CS* (en C#) al proyecto.
+     La nueva entidad aparece en el diseñador. Visual Studio agrega un archivo denominado *EntityService. VB* (en Visual Basic) o *EntityService. CS* (en C#) al proyecto.
 
 3. En la barra de menús, elija **Ver**  >    >  **ventana** propiedades.
 
@@ -186,8 +186,8 @@ Agregue un método Finder específico a la entidad Contact mediante la ventana *
 
     |Nombre|Nombre del tipo|
     |----------|---------------|
-    |FirstName|System.String|
-    |LastName|System.String|
+    |Nombre|System.String|
+    |Apellidos|System.String|
     |Teléfono|System.String|
     |EmailAddress|System.String|
     |EmailPromotion|System.Int32|
@@ -208,8 +208,8 @@ Agregue un método Finder específico a la entidad Contact mediante la ventana *
     > [!NOTE]
     > Reemplace el valor del `ServerName` campo por el nombre del servidor.
 
-     [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
-     [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs" id="Snippet3":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb" id="Snippet3":::
 
 ## <a name="add-a-finder-method"></a>Agregar un método Finder
 
@@ -236,8 +236,8 @@ Para permitir que el servicio BDC muestre los contactos en una lista, debe agreg
      > [!NOTE]
      > Reemplace el valor del `ServerName` campo por el nombre del servidor.
 
-     [!code-csharp[SP_BDC#2](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#2)]
-     [!code-vb[SP_BDC#2](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#2)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs" id="Snippet2":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb" id="Snippet2":::
 
 ## <a name="test-the-project"></a>Prueba del proyecto
 
@@ -276,7 +276,7 @@ Puede obtener más información sobre cómo diseñar modelos para el servicio BD
 - [Cómo: agregar un método Updater](../sharepoint/how-to-add-an-updater-method.md).
 - [Cómo: agregar un método de eliminación](../sharepoint/how-to-add-a-deleter-method.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Diseñar un modelo](../sharepoint/designing-a-business-data-connectivity-model.md) 
  de conectividad a datos profesionales [Crear un modelo](../sharepoint/creating-a-business-data-connectivity-model.md) 

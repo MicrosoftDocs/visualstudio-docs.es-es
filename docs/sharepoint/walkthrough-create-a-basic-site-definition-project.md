@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: def1ae862a7b9ba4def62cb590260c5a18758929
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a505ff059b347c6adbef15a8fe8bcfe7b274eaa4
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937711"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106218027"
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>Tutorial: crear un proyecto de definición de sitio básico
   En este tutorial se muestra cómo crear una definición de sitio básica que contiene un elemento Web visual con algunos controles. Por motivos de claridad, el elemento Web visual que cree tiene solo unos pocos controles. Sin embargo, puede crear definiciones de sitios de SharePoint más sofisticadas que incluyan más funcionalidad.
@@ -112,10 +112,10 @@ ms.locfileid: "99937711"
     </table>
     ```
 
-6. En *VisualWebPart1. ascx*, abra el archivo *VisualWebPart1.ascx.CS* (para [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] ) o *VisualWebPart1. ascx. VB* (para [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] ) y, a continuación, agregue el código siguiente:
+6. En *VisualWebPart1. ascx*, abra el archivo *VisualWebPart1. ascx. CS* (para [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] ) o *VisualWebPart1. ascx. VB* (para [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] ) y, a continuación, agregue el código siguiente:
 
-     [!code-vb[SP_SimpleSiteDef#1](../sharepoint/codesnippet/VisualBasic/testsitedefvb/sitedefinition/visualwebpart1/visualwebpart1usercontrol.ascx.vb#1)]
-     [!code-csharp[SP_SimpleSiteDef#1](../sharepoint/codesnippet/CSharp/testsitedef/sitedefinition/visualwebpart1/visualwebpart1usercontrol.ascx.cs#1)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/testsitedefvb/sitedefinition/visualwebpart1/visualwebpart1usercontrol.ascx.vb" id="Snippet1":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/testsitedef/sitedefinition/visualwebpart1/visualwebpart1usercontrol.ascx.cs" id="Snippet1":::
 
      Este código agrega funcionalidad para hacer clic en el botón del elemento Web.
 
@@ -183,6 +183,6 @@ ms.locfileid: "99937711"
 
      El texto aparece en la etiqueta del lado derecho del botón.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Cómo: para crear un receptor de eventos](../sharepoint/how-to-create-an-event-receiver.md)
 - [Desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md)

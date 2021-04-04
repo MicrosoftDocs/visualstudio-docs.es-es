@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 51b80124f7cf550843ad346e9d1e1c0b21ccd0f7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7cc3d29d4991b6cfb712e4754f066edbb66f0b71
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923353"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216688"
 ---
 # <a name="how-to-create-a-sharepoint-command"></a>Cómo: crear un comando de SharePoint
   Si desea usar el modelo de objetos de servidor en una extensión de herramientas de SharePoint, debe crear un *comando de SharePoint* personalizado para llamar a la API. El comando de SharePoint se define en un ensamblado que puede llamar directamente al modelo de objetos de servidor.
@@ -64,8 +64,8 @@ ms.locfileid: "99923353"
 ## <a name="example"></a>Ejemplo
  En el ejemplo de código siguiente se muestra un comando de SharePoint con el identificador `Contoso.Commands.UpgradeSolution` . Este comando usa las API del modelo de objetos de servidor para actualizar a una solución implementada.
 
- [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#5](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/SharePointCommands/Commands.cs#5)]
- [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#5](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/sharepointcommands/commands.vb#5)]
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/SharePointCommands/Commands.cs" id="Snippet5":::
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/sharepointcommands/commands.vb" id="Snippet5":::
 
  Además del primer <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> parámetro implícito, este comando también tiene un parámetro de cadena personalizado que contiene la ruta de acceso completa del archivo. wsp que se está actualizando al sitio de SharePoint. Para ver este código en el contexto de un ejemplo más grande, vea [Tutorial: crear un paso de implementación personalizado para proyectos de SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).
 
@@ -79,7 +79,7 @@ ms.locfileid: "99923353"
 ## <a name="deploying-the-command"></a>Implementar el comando
  Para implementar el comando, incluya el ensamblado de comandos en el mismo [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] paquete de extensión (*VSIX*) con el ensamblado de extensión que usa el comando. También debe agregar una entrada para el ensamblado de comandos en el archivo Extension. vsixmanifest. Para obtener más información, vea [deploy Extensions for the SharePoint Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Llamar a los modelos de objetos de SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)
 - [Cómo: ejecutar un comando de SharePoint](../sharepoint/how-to-execute-a-sharepoint-command.md)
 - [Tutorial: extender Explorador de servidores para mostrar elementos Web](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)

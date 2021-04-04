@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a87bcd8b51bc393921d21d838943d5e1fe8f02a2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 316be1f0a8fa881f781d983cfe9ed663e5907749
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917343"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216909"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Tutorial: descargar ensamblados a petición con la API de implementación de ClickOnce
 De forma predeterminada, todos los ensamblados incluidos en una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación se descargan cuando se ejecuta la aplicación por primera vez. Sin embargo, puede tener partes de la aplicación que se usan en un pequeño conjunto de usuarios. En tal caso, es probable que quiera descargar un ensamblado solo cuando cree uno de sus tipos. En el siguiente tutorial se muestra cómo marcar determinados ensamblados en la aplicación como “opcionales” y cómo descargarlos usando clases en el espacio de nombres <xref:System.Deployment.Application> cuando los solicita Common Language Runtime (CLR).
@@ -56,10 +56,10 @@ De forma predeterminada, todos los ensamblados incluidos en una [!INCLUDE[ndptec
 
 5. Con el Bloc de notas u otro editor de texto, defina una clase denominada `DynamicClass` con una sola propiedad denominada `Message` .
 
-    [!code-vb[ClickOnceLibrary#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.vb)]
-    [!code-csharp[ClickOnceLibrary#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.cs)]
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceLibrary/VB/Class1.vb" id="Snippet1":::
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_Winforms/ClickOnceLibrary/CS/Class1.cs" id="Snippet1":::
 
-6. Guarde el texto como un archivo denominado *ClickOnceLibrary.CS* o *ClickOnceLibrary. VB*, según el lenguaje que use, en el directorio *ClickOnceOnDemand* .
+6. Guarde el texto como un archivo denominado *ClickOnceLibrary. CS* o *ClickOnceLibrary. VB*, según el lenguaje que use, en el directorio *ClickOnceOnDemand* .
 
 7. Compile el archivo en un ensamblado.
 
@@ -79,14 +79,14 @@ De forma predeterminada, todos los ensamblados incluidos en una [!INCLUDE[ndptec
 
 9. Cree un nuevo archivo con el editor de texto y escriba el código siguiente. Este código crea una aplicación Windows Forms que descarga el ensamblado ClickOnceLibrary cuando es necesario.
 
-     [!code-csharp[ClickOnceOnDemandCmdLine#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_2.cs)]
-     [!code-vb[ClickOnceOnDemandCmdLine#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_2.vb)]
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_Winforms/ClickOnceOnDemandCmdLine/CS/Form1.cs" id="Snippet1":::
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceOnDemandCmdLine/VB/Form1.vb" id="Snippet1":::
 
 10. En el código, busque la llamada a <xref:System.Reflection.Assembly.LoadFile%2A> .
 
 11. Establezca `PublicKeyToken` en el valor que recuperó anteriormente.
 
-12. Guarde el archivo como *Form1.CS* o *Form1. VB*.
+12. Guarde el archivo como *Form1. CS* o *Form1. VB*.
 
 13. Compílelo en un archivo ejecutable mediante el siguiente comando.
 
@@ -128,5 +128,5 @@ De forma predeterminada, todos los ensamblados incluidos en una [!INCLUDE[ndptec
 
 3. Cuando aparezca el formulario principal, pulse el <xref:System.Windows.Forms.Button>. Debería ver una cadena en una ventana de cuadro de mensaje que dice “Hello, World!”.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - <xref:System.Deployment.Application.ApplicationDeployment>

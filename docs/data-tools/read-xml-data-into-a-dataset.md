@@ -22,12 +22,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9fb859d61ab31a554579f72121a18a541b2995a7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b3a238bf325819b340b983618b5aac8f723184f4
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99858558"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216194"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Leer datos XML en un conjunto de datos
 
@@ -174,8 +174,8 @@ El botón **leer XML** lee el archivo XML en el conjunto de archivos. A continua
 
 3. Escriba el código siguiente en el `ReadXmlButton_Click` controlador de eventos:
 
-     [!code-csharp[VbRaddataFillingAndExecuting#2](../data-tools/codesnippet/CSharp/read-xml-data-into-a-dataset_1.cs)]
-     [!code-vb[VbRaddataFillingAndExecuting#2](../data-tools/codesnippet/VisualBasic/read-xml-data-into-a-dataset_1.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataFillingAndExecuting/CS/Form1.cs" id="Snippet2":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataFillingAndExecuting/VB/Form1.vb" id="Snippet2":::
 
 4. En el `ReadXMLButton_Click` código del controlador de eventos, cambie la `filepath =` entrada a la ruta de acceso correcta.
 
@@ -191,8 +191,8 @@ El botón **Mostrar esquema** crea un <xref:System.IO.StringWriter> objeto que s
 
 3. Pegue el código siguiente en el controlador de eventos `ShowSchemaButton_Click`.
 
-     [!code-csharp[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/CSharp/read-xml-data-into-a-dataset_2.cs)]
-     [!code-vb[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/VisualBasic/read-xml-data-into-a-dataset_2.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataFillingAndExecuting/CS/Form1.cs" id="Snippet3":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataFillingAndExecuting/VB/Form1.vb" id="Snippet3":::
 
 ## <a name="test-the-form"></a>Prueba del formulario
 
@@ -212,7 +212,7 @@ Puede comprobar el formulario para asegurarse de que se comporta de la forma pre
 
 Este tutorial le enseña los aspectos básicos de la lectura de un archivo XML en un conjunto de datos, así como la creación de un esquema basado en el contenido del archivo XML. Estas son algunas de las tareas que puede realizar a continuación:
 
-- Edite los datos del conjunto de datos y vuelva a escribirlos como XML. Para obtener más información, vea <xref:System.Data.DataSet.WriteXml%2A>.
+- Edite los datos del conjunto de datos y vuelva a escribirlos como XML. Para más información, consulte <xref:System.Data.DataSet.WriteXml%2A>.
 
 - Edite los datos del conjunto de datos y escríbalos en una base de datos.
 
