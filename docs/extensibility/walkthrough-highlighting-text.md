@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a500d63eb497ce6d2b23860cd3793cbc2632b819
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f9e69f635b18d4ed67b78751ac6179cad04f002c
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105078466"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217533"
 ---
 # <a name="walkthrough-highlight-text"></a>Tutorial: resaltar texto
 Puede agregar diferentes efectos visuales al editor creando partes de componentes Managed Extensibility Framework (MEF). En este tutorial se muestra cómo resaltar cada aparición de la palabra actual en un archivo de texto. Si una palabra se produce más de una vez en un archivo de texto y coloca el símbolo de intercalación en una aparición, se resalta cada aparición.
@@ -201,8 +201,9 @@ Puede agregar diferentes efectos visuales al editor creando partes de componente
 
 5. También debe agregar un `TagsChanged` evento llamado por el método Update.
 
-     [!code-csharp[VSSDKHighlightWordTest#10](../extensibility/codesnippet/CSharp/walkthrough-highlighting-text_1.cs)]
-     [!code-vb[VSSDKHighlightWordTest#10](../extensibility/codesnippet/VisualBasic/walkthrough-highlighting-text_1.vb)]
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkhighlightwordtest/cs/highlightwordtag.cs" id="Snippet10":::
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkhighlightwordtest/vb/highlightwordtag.vb" id="Snippet10":::
+
 
 6. El `UpdateAtCaretPosition()` método encuentra cada palabra en el búfer de texto que es idéntica a la palabra en la que se coloca el cursor y construye una lista de <xref:Microsoft.VisualStudio.Text.SnapshotSpan> objetos que corresponden a las apariciones de la palabra. A continuación, llama a `SynchronousUpdate` , que genera el `TagsChanged` evento.
 

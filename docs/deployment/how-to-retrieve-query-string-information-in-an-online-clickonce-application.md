@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 49fd3ca9b625b9dec179ec37603e875cfdd296c0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6f53d2d005ad9b706f318ec82d48898f73ce0f07
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99885136"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106213932"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Cómo: Recuperar información de la cadena de consulta de una aplicación ClickOnce en línea
 La *cadena de consulta* es la parte de una dirección URL que empieza con un signo de interrogación de cierre (?) y que contiene información arbitraria con el formato *nombre=valor*. Supongamos que tiene una aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] denominada `WindowsApp1` que hospeda en `servername`, y quiere pasar un valor para la variable `username` cuando se inicia la aplicación. La dirección URL podría tener el aspecto siguiente:
@@ -50,8 +50,9 @@ La *cadena de consulta* es la parte de una dirección URL que empieza con un sig
 
 1. Coloque el código siguiente en su proyecto. Para que este código funcione, deberá tener una referencia a System. Web y agregar las `using` `Imports` directivas o para System. Web, System. Collections. Specialized y System. Deployment. Application.
 
-     [!code-csharp[ClickOnceQueryString#1](../deployment/codesnippet/CSharp/how-to-retrieve-query-string-information-in-an-online-clickonce-application_1.cs)]
-     [!code-vb[ClickOnceQueryString#1](../deployment/codesnippet/VisualBasic/how-to-retrieve-query-string-information-in-an-online-clickonce-application_1.vb)]
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_Winforms/ClickOnceQueryString/CS/Form1.cs" id="Snippet1":::
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceQueryString/VB/Form1.vb" id="Snippet1":::
+
 
 2. Llame a la función definida previamente para recuperar una propiedad <xref:System.Collections.DictionaryBase.Dictionary%2A> de los parámetros de cadena de consulta, indexados por nombre.
 
@@ -80,5 +81,5 @@ La *cadena de consulta* es la parte de una dirección URL que empieza con un sig
 ## <a name="net-framework-security"></a>seguridad en .NET Framework
  Permita que se pasen parámetros de la dirección URL a la aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] únicamente si prevé limpiar los posibles caracteres malintencionados de la entrada antes de usarla. Las cadenas en las que haya incrustadas, por ejemplo, comillas, barras o caracteres de punto y coma pueden realizar operaciones de datos arbitrarios si se usan sin filtrar en una consulta SQL en una base de datos. Para obtener más información sobre la seguridad de las cadenas de consulta, consulte [información general sobre las vulnerabilidades](/previous-versions/w1sw53ds(v=vs.140))de seguridad.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Protección de las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)
