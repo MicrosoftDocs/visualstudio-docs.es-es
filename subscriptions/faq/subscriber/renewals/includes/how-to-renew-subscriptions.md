@@ -6,14 +6,14 @@ ms.assetid: 00b82d16-6a80-42d1-8b71-e12047c6b50c
 ms.technology: ''
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 01/29/2021
+ms.date: 04/02/2021
 ms.faqid: q4_2
-ms.openlocfilehash: d59b972d13bd61a25fab6d783224eeb5c38144d7
-ms.sourcegitcommit: cfeffe2364275a347db0ba2dce36d8e80001c081
+ms.openlocfilehash: 8d8b516a7572688314d043dc7ca052d30d26dcf4
+ms.sourcegitcommit: 4bf7d82eb3a837ad5d1ae5c110039cbf74258f18
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99104530"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "106273405"
 ---
 ## <a name="how-do-i-renew-visual-studio-subscriptions"></a>¿Cómo se renuevan las suscripciones de Visual Studio? 
 
@@ -27,12 +27,14 @@ Si actualmente tiene una suscripción comercial, hay dos maneras de renovarla:
 - Visite  [Microsoft Store](https://www.microsoft.com/store) y busque "Suscripción de Visual Studio" para ver las oportunidades de renovación disponibles. Estos son algunos vínculos rápidos: 
 
 
-    [Visual Studio Enterprise](https://www.microsoft.com/p/visual-studio-enterprise-subscription/dg7gmgf0dst4?activetab=pivot%3aoverviewtab) 
+    - [Visual Studio Enterprise](https://www.microsoft.com/p/visual-studio-enterprise-subscription/dg7gmgf0dst4?activetab=pivot%3aoverviewtab) 
 
-    [Visual Studio Professional](https://www.microsoft.com/p/visual-studio-professional-subscription/dg7gmgf0dst3?activetab=pivot%3aoverviewtab)
+    - [Visual Studio Professional](https://www.microsoft.com/p/visual-studio-professional-subscription/dg7gmgf0dst3?activetab=pivot%3aoverviewtab)
 
-    [Visual Studio Test Professional](https://www.microsoft.com/p/visual-studio-test-professional-subscription/dg7gmgf0dst6?activetab=pivot%3aoverviewtab) 
+    - [Visual Studio Test Professional](https://www.microsoft.com/p/visual-studio-test-professional-subscription/dg7gmgf0dst6?activetab=pivot%3aoverviewtab) 
 
+> [!Note]
+> Debe renovar la suscripción en un plazo de 30 días a partir de la fecha de expiración para poder optar a los precios de renovación.
 
 ### <a name="how-to-renew-cloud-subscriptions"></a>Procedimiento para renovar suscripciones de nube
 Las suscripciones de nube son las que se han comprado a través de [Visual Studio Marketplace](https://marketplace.visualstudio.com/).  Las suscripciones de nube mensuales y anuales se renuevan hasta que las cancele, por lo que no es necesario realizar ninguna acción para renovarlas.
