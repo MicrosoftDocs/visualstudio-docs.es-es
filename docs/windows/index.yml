@@ -1,209 +1,203 @@
 ### YamlMime:Hub
 title: Documentación de Visual Studio
-summary: Aprenda a usar Visual Studio para desarrollar aplicaciones, servicios y herramientas en el idioma de su elección para sus dispositivos y plataformas.
+summary: 'Aprenda a usar Visual Studio para desarrollar aplicaciones, servicios y herramientas en el idioma de su elección para sus dispositivos y plataformas.'
 brand: visual-studio
 metadata:
   title: Documentación de Visual Studio | Microsoft Docs
   titleSuffix: ''
-  description: Aprenda a usar Visual Studio para desarrollar aplicaciones, servicios y herramientas en el idioma de su elección para cualquier dispositivo y plataforma.
+  description: 'Aprenda a usar Visual Studio para desarrollar aplicaciones, servicios y herramientas en el idioma de su elección para cualquier dispositivo y plataforma.'
   ms.topic: hub-page
   ms.custom: contperf-fy21q1
-  ms.date: 03/23/2021
+  ms.date: 03/30/2021
   monikerRange: '>=vs-2017'
   f1_keywords:
-  - MSDNSTART
-  ms.openlocfilehash: 9ea356f29ed511dc5e968dd0947f614277d497f0
-  ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
-  ms.translationtype: HT
-  ms.contentlocale: es-ES
-  ms.lasthandoff: 03/25/2021
-  ms.locfileid: "105080286"
+    - MSDNSTART
 highlightedContent:
   items:
-  - title: Configuración e instalación
-    itemType: download
-    url: ../install/install-visual-studio.md
-  - title: Le damos la bienvenida al IDE de Visual Studio
-    itemType: overview
-    url: ../get-started/visual-studio-ide.md
-  - title: Notas de la versión de Visual Studio 2019
-    itemType: whats-new
-    url: /visualstudio/releases/2019/release-notes/
-  - title: Mejora de las habilidades en Visual Studio
-    itemType: learn
-    url: /learn/browse/?products=vs
+    - title: Configuración e instalación
+      itemType: download
+      url: ../install/install-visual-studio.md
+    - title: Le damos la bienvenida al IDE de Visual Studio
+      itemType: overview
+      url: ../get-started/visual-studio-ide.md
+    - title: Notas de la versión de Visual Studio 2019
+      itemType: whats-new
+      url: /visualstudio/releases/2019/release-notes/
+    - title: "Mejora de las habilidades en Visual\_Studio"
+      itemType: learn
+      url: /learn/browse/?products=vs
 conceptualContent:
   title: Primeros pasos
   items:
-  - title: Aprenda a usar Visual Studio
-    links:
-    - text: Escribir y editar código
-      url: ../ide/index-writing-code.yml
-      itemType: tutorial
-    - text: Compilar el código
-      url: ../ide/compiling-and-building-in-visual-studio.md
-      itemType: tutorial
-    - text: Depurar el código
-      itemType: tutorial
-      url: ../debugger/debugger-feature-tour.md
-    - text: Probar el código
-      itemType: tutorial
-      url: ../test/getting-started-with-unit-testing.md
-    - text: Abrir código desde un repositorio
-      url: ../get-started/tutorial-open-project-from-repo.md
-      itemType: tutorial
-  - title: Seguir un tutorial
-    links:
-    - text: Creación de una aplicación de consola de C# sencilla
-      url: ../get-started/csharp/tutorial-console.md
-      itemType: get-started
-    - text: Creación de una calculadora de consola de C++
-      url: /cpp/get-started/tutorial-console-cpp
-      itemType: get-started
-    - text: Creación de una aplicación de consola de Visual Basic
-      url: ../get-started/visual-basic/tutorial-console.md
-      itemType: get-started
-    - text: Introducción a Python
-      url: ../python/tutorial-working-with-python-in-visual-studio-step-00-installation.md
-      itemType: get-started
-    - text: Creación de una aplicación Node.js y Express
-      url: ../javascript/tutorial-nodejs.md
-      itemType: get-started
-    - text: Creación de un servicio web de F#
-      url: ../ide/quickstart-fsharp.md
-      itemType: get-started
-  - title: Guía del lenguaje de Visual Studio
-    links:
-    - text: C#
-      itemType: get-started
-      url: ../get-started/csharp/index.yml
-    - text: C++
-      itemType: get-started
-      url: /cpp/overview/visual-cpp-in-visual-studio
-    - text: Visual Basic
-      itemType: get-started
-      url: ../get-started/visual-basic/index.yml
-    - text: Python
-      itemType: get-started
-      url: ../python/index.yml
-    - text: JavaScript
-      url: ../javascript/index.yml
-      itemType: get-started
-    - text: F#
-      itemType: get-started
-      url: /dotnet/fsharp/get-started/get-started-visual-studio
+    - title: Aprenda a usar Visual Studio
+      links:
+        - text: Escribir y editar código
+          url: ../ide/index-writing-code.yml
+          itemType: tutorial
+        - text: Compilar el código
+          url: ../ide/compiling-and-building-in-visual-studio.md
+          itemType: tutorial
+        - text: Depurar el código
+          itemType: tutorial
+          url: ../debugger/debugger-feature-tour.md
+        - text: Probar el código
+          itemType: tutorial
+          url: ../test/getting-started-with-unit-testing.md
+        - text: Abrir código desde un repositorio
+          url: ../get-started/tutorial-open-project-from-repo.md
+          itemType: tutorial
+    - title: Seguir un tutorial
+      links:
+        - text: Creación de una aplicación de consola de C# sencilla
+          url: ../get-started/csharp/tutorial-console.md
+          itemType: get-started
+        - text: Creación de una calculadora de consola de C++
+          url: /cpp/get-started/tutorial-console-cpp
+          itemType: get-started
+        - text: Creación de una aplicación de consola de Visual Basic
+          url: ../get-started/visual-basic/tutorial-console.md
+          itemType: get-started
+        - text: Introducción a Python
+          url: ../python/tutorial-working-with-python-in-visual-studio-step-00-installation.md
+          itemType: get-started
+        - text: Creación de una aplicación Node.js y Express
+          url: ../javascript/tutorial-nodejs.md
+          itemType: get-started
+        - text: Creación de un servicio web de F#
+          url: ../ide/quickstart-fsharp.md
+          itemType: get-started
+    - title: "Guía del lenguaje de Visual\_Studio"
+      links:
+        - text: C#
+          itemType: get-started
+          url: ../get-started/csharp/index.yml
+        - text: C++
+          itemType: get-started
+          url: /cpp/overview/visual-cpp-in-visual-studio
+        - text: Visual Basic
+          itemType: get-started
+          url: ../get-started/visual-basic/index.yml
+        - text: Python
+          itemType: get-started
+          url: ../python/index.yml
+        - text: JavaScript
+          url: ../javascript/index.yml
+          itemType: get-started
+        - text: F#
+          itemType: get-started
+          url: /dotnet/fsharp/get-started/get-started-visual-studio
 tools:
   title: Documentación de lenguaje
   items:
-  - title: C++
-    imageSrc: https://docs.microsoft.com/media/logos/logo_Cplusplus.svg
-    url: /cpp/
-  - title: C#
-    imageSrc: https://docs.microsoft.com/media/logos/logo_Csharp.svg
-    url: /dotnet/csharp
-  - title: F#
-    imageSrc: https://docs.microsoft.com/media/logos/logo_Fsharp.svg
-    url: /dotnet/fsharp
-  - title: Visual Basic
-    imageSrc: https://docs.microsoft.com/media/logos/logo_VB.svg
-    url: /dotnet/visual-basic
-  - title: Python
-    imageSrc: https://docs.microsoft.com/media/logos/logo_python.svg
-    url: ../python/index.yml
-  - title: JavaScript
-    imageSrc: https://docs.microsoft.com/media/logos/logo_js.svg
-    url: ../javascript/index.yml
-  - title: TypeScript
-    imageSrc: https://docs.microsoft.com/media/logos/logo_TS.svg
-    url: http://www.typescriptlang.org/docs/tutorial.html
-  - title: R
-    imageSrc: https://docs.microsoft.com/media/logos/logo_R.svg
-    url: ../rtvs/index.md?view=vs-2017&preserve-view=true
+    - title: C++
+      imageSrc: 'https://docs.microsoft.com/media/logos/logo_Cplusplus.svg'
+      url: /cpp/
+    - title: C#
+      imageSrc: 'https://docs.microsoft.com/media/logos/logo_Csharp.svg'
+      url: /dotnet/csharp
+    - title: F#
+      imageSrc: 'https://docs.microsoft.com/media/logos/logo_Fsharp.svg'
+      url: /dotnet/fsharp
+    - title: Visual Basic
+      imageSrc: 'https://docs.microsoft.com/media/logos/logo_VB.svg'
+      url: /dotnet/visual-basic
+    - title: Python
+      imageSrc: 'https://docs.microsoft.com/media/logos/logo_python.svg'
+      url: ../python/index.yml
+    - title: JavaScript
+      imageSrc: 'https://docs.microsoft.com/media/logos/logo_js.svg'
+      url: ../javascript/index.yml
+    - title: TypeScript
+      imageSrc: 'https://docs.microsoft.com/media/logos/logo_TS.svg'
+      url: 'http://www.typescriptlang.org/docs/tutorial.html'
+    - title: R
+      imageSrc: 'https://docs.microsoft.com/media/logos/logo_R.svg'
+      url: ../rtvs/index.md?view=vs-2017&preserve-view=true
 additionalContent:
   sections:
-  - title: Desarrollo con Visual Studio
-    items:
-    - title: Web y nube
-      links:
-      - text: Desarrollo web
-        url: /aspnet/
-      - text: Administración y desarrollo de Azure
-        url: ../azure/index.yml
-      - text: Python
-        url: ../python/index.yml
-      - text: Node.js
-        url: ../javascript/index.yml
-      - text: Almacenamiento y procesamiento de datos
-        url: ../data-tools/index.yml
-      - text: Ciencia de datos
-        url: ../python/data-science-and-analytical-applications-workload.md
-      - text: Desarrollo de Office/SharePoint
-        url: https://developer.microsoft.com/office/docs
-    - title: Escritorio y móviles
-      links:
-      - text: Desarrollo de aplicaciones para Windows
-        url: /windows/apps/
-      - text: Desarrollo de escritorio de .NET
-        url: /dotnet/framework/develop-client-apps
-      - text: Desarrollo de Windows con C++
-        url: /cpp/windows/desktop-applications-visual-cpp
-      - text: Desarrollo para dispositivos móviles con .NET (Xamarin)
-        url: /xamarin/
-      - text: Desarrollo móvil con C++
-        url: /visualstudio/cross-platform/
-      - text: Desarrollo móvil con JavaScript
-        url: /visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017&preserve-view=true
-        note: (Solo Visual Studio 2017 y 2015)
-    - title: Juegos
-      links:
-      - text: Desarrollo de juegos con Unity
-        url: /visualstudio/gamedev/unity/get-started/visual-studio-tools-for-unity
-      - text: Desarrollo de juegos con C++
-        url: /windows/uwp/gaming/e2e
-    - title: Otros conjuntos de herramientas
-      links:
-      - text: Desarrollo de extensiones de Visual Studio
-        url: ../extensibility/index.yml
-      - text: Desarrollo para Linux con C++
-        url: /cpp/linux/
-      - text: Desarrollo multiplataforma de .NET Core
-        url: /dotnet/core/
-  - title: Tareas
-    items:
-    - title: Desarrollar
-      summary: Escriba y administre el código con el editor de código.
-      url: ../ide/index-writing-code.yml
-    - title: Compilar
-      summary: Compile y genere el código fuente.
-      url: ../ide/compiling-and-building-in-visual-studio.md
-    - title: Depuración
-      summary: Investigue y corrija los errores en el código.
-      url: ../debugger/index.yml
-    - title: Prueba
-      summary: Ejecute pruebas en sus proyectos.
-      url: ../test/improve-code-quality.md
-    - title: Implementar
-      summary: Comparta sus aplicaciones y su código mediante Web Deploy, InstallShield, NuGet, Integración continua y más medios.
-      url: ../deployment/index.yml
-    - title: Control de versiones
-      summary: Comparta código mediante tecnologías de control de versiones como Git y TFVC.
-      url: /azure/devops/repos/index
-    - title: DevOps
-      summary: Compile y lance continuamente las aplicaciones en la nube e implemente prácticas de Agile con Azure DevOps Services.
-      url: /azure/devops
-    - title: Medición del rendimiento
-      summary: Identifique los cuellos de botella y optimice el rendimiento del código mediante las herramientas de diagnóstico.
-      url: ../profiling/index.yml
-    - title: Ampliar
-      summary: Agregue características propias al IDE de Visual Studio para mejorar la experiencia de desarrollo.
-      url: ../extensibility/index.yml
-    - title: Datos
-      summary: Cree aplicaciones de datos que conecten con cualquier base de datos o servicio, y en cualquier parte, tanto local como en la nube.
-      url: ../data-tools/accessing-data-in-visual-studio.md
-    - title: Colaborar
-      summary: Comparta, edite y depure el código en un entorno de colaboración y en tiempo real.
-      url: /visualstudio/liveshare/
-    - title: Desarrollo con contenedores de Docker
-      summary: Use contenedores de Docker para aislar componentes modulares y mejorar la escalabilidad.
-      url: ../containers/index.yml
+    - title: "Desarrollo con Visual\_Studio"
+      items:
+        - title: Web y nube
+          links:
+            - text: Desarrollo web
+              url: /aspnet/
+            - text: Administración y desarrollo de Azure
+              url: ../azure/index.yml
+            - text: Python
+              url: ../python/index.yml
+            - text: Node.js
+              url: ../javascript/index.yml
+            - text: Almacenamiento y procesamiento de datos
+              url: ../data-tools/index.yml
+            - text: Ciencia de datos
+              url: ../python/data-science-and-analytical-applications-workload.md
+            - text: Desarrollo de Office/SharePoint
+              url: 'https://developer.microsoft.com/office/docs'
+        - title: Escritorio y móviles
+          links:
+            - text: Desarrollo de aplicaciones para Windows
+              url: /windows/apps/
+            - text: Desarrollo de escritorio de .NET
+              url: /dotnet/framework/develop-client-apps
+            - text: Desarrollo de Windows con C++
+              url: /cpp/windows/desktop-applications-visual-cpp
+            - text: Desarrollo para dispositivos móviles con .NET (Xamarin)
+              url: /xamarin/
+            - text: Desarrollo móvil con C++
+              url: /visualstudio/cross-platform/
+            - text: Desarrollo móvil con JavaScript
+              url: /visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017&preserve-view=true
+              note: "(Solo Visual Studio\_2017 y 2015)"
+        - title: Juegos
+          links:
+            - text: Desarrollo de juegos con Unity
+              url: /visualstudio/gamedev/unity/get-started/visual-studio-tools-for-unity
+            - text: Desarrollo de juegos con C++
+              url: /windows/uwp/gaming/e2e
+        - title: Otros conjuntos de herramientas
+          links:
+            - text: Desarrollo de extensiones de Visual Studio
+              url: ../extensibility/index.yml
+            - text: Desarrollo para Linux con C++
+              url: /cpp/linux/
+            - text: Desarrollo multiplataforma de .NET Core
+              url: /dotnet/core/
+    - title: Tareas
+      items:
+        - title: Desarrollar
+          summary: Escriba y administre el código con el editor de código.
+          url: ../ide/index-writing-code.yml
+        - title: Compilar
+          summary: Compile y genere el código fuente.
+          url: ../ide/compiling-and-building-in-visual-studio.md
+        - title: Depuración
+          summary: Investigue y corrija los errores en el código.
+          url: ../debugger/index.yml
+        - title: Prueba
+          summary: Ejecute pruebas en sus proyectos.
+          url: ../test/improve-code-quality.md
+        - title: Implementar
+          summary: 'Comparta sus aplicaciones y su código mediante Web Deploy, InstallShield, NuGet, Integración continua y más medios.'
+          url: ../deployment/index.yml
+        - title: Control de versiones
+          summary: Comparta código mediante tecnologías de control de versiones como Git y GitHub.
+          url: ../ide/git-with-visual-studio.md
+        - title: DevOps
+          summary: Compile y lance continuamente las aplicaciones en la nube e implemente prácticas de Agile con Azure DevOps Services.
+          url: /azure/devops
+        - title: Medición del rendimiento
+          summary: Identifique los cuellos de botella y optimice el rendimiento del código mediante las herramientas de diagnóstico.
+          url: ../profiling/index.yml
+        - title: Ampliar
+          summary: Agregue características propias al IDE de Visual Studio para mejorar la experiencia de desarrollo.
+          url: ../extensibility/index.yml
+        - title: Datos
+          summary: 'Cree aplicaciones de datos que conecten con cualquier base de datos o servicio, y en cualquier parte, tanto local como en la nube.'
+          url: ../data-tools/accessing-data-in-visual-studio.md
+        - title: Colaborar
+          summary: 'Comparta, edite y depure el código en un entorno de colaboración y en tiempo real.'
+          url: /visualstudio/liveshare/
+        - title: Desarrollo con contenedores de Docker
+          summary: Use contenedores de Docker para aislar componentes modulares y mejorar la escalabilidad.
+          url: ../containers/index.yml
   footer: '[Blogs](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/VisualStudio) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio) - [Informe de incidencias](../ide/feedback-options.md) - [Comunidad de desarrolladores](https://aka.ms/feedback/suggest?space=8) - [Solución de problemas](/troubleshoot/visualstudio/welcome-visual-studio)'

@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a7f8645cd34fe56d7d8d0f6a9efa6bf01bd13d8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9bc7fe3898bec19b4eb0130e7279974823669e7f
+ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939674"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106082544"
 ---
 # <a name="how-msbuild-builds-projects"></a>Cómo MSBuild compila proyectos
 
@@ -139,7 +139,7 @@ El archivo *Microsoft.Common.props* establece valores predeterminados que pueden
 
 Los archivos *Microsoft.Common.targets* y los archivos de destino que se importan definen el proceso de compilación estándar para los proyectos de .NET. También se proporcionan puntos de extensión que puede usar para personalizar la compilación.
 
-En la implementación, *Microsoft.Common.targets* es un contenedor fino que importa *Microsoft.Common.CurrentVersion.targets*. Este archivo contiene la configuración de las propiedades estándar y define los destinos reales que definen el proceso de compilación. El destino `Build` se define aquí, pero en realidad está vacío. Sin embargo, el destino `Build` contiene el atributo `DependsOn` que especifica los destinos individuales que componen los pasos de compilación reales, que son `BeforeBuild`, `CoreBuild` y `AfterBuild`. El destino `Build` se define de la manera siguiente:
+En la implementación, *Microsoft.Common.targets* es un contenedor fino que importa *Microsoft.Common.CurrentVersion.targets*. Este archivo contiene la configuración de las propiedades estándar y define los destinos reales que definen el proceso de compilación. El destino `Build` se define aquí, pero en realidad está vacío. Sin embargo, el destino `Build` contiene el atributo `DependsOnTargets` que especifica los destinos individuales que componen los pasos de compilación reales, que son `BeforeBuild`, `CoreBuild` y `AfterBuild`. El destino `Build` se define de la manera siguiente:
 
 ```xml
   <PropertyGroup>
@@ -157,7 +157,7 @@ En la implementación, *Microsoft.Common.targets* es un contenedor fino que impo
       Returns="@(TargetPathWithTargetPlatformMoniker)" />
 ```
 
-`BeforeBuild` y `AfterBuild` son puntos de extensión. Están vacíos en el archivo *Microsoft.Common.CurrentVersion.targets*, pero los proyectos pueden proporcionar sus propios destinos `BeforeBuild` y `AfterBuild` con las tareas que deben realizarse antes o después del proceso de compilación principal. `AfterBuild` se ejecuta antes que el destino no operativo, `Build`, porque `AfterBuild` aparece en el atributo `DependsOn` del destino `Build`, pero se realiza después de `CoreBuild`.
+`BeforeBuild` y `AfterBuild` son puntos de extensión. Están vacíos en el archivo *Microsoft.Common.CurrentVersion.targets*, pero los proyectos pueden proporcionar sus propios destinos `BeforeBuild` y `AfterBuild` con las tareas que deben realizarse antes o después del proceso de compilación principal. `AfterBuild` se ejecuta antes que el destino no operativo, `Build`, porque `AfterBuild` aparece en el atributo `DependsOnTargets` del destino `Build`, pero se realiza después de `CoreBuild`.
 
 El destino `CoreBuild` contiene las llamadas a las herramientas de compilación, como se indica a continuación:
 

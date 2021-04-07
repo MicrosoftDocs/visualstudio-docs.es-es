@@ -1,7 +1,7 @@
 ---
 title: Actualización de una instalación basada en red
 description: Más información sobre cómo actualizar una instalación de Visual Studio basada en red con el comando --layout
-ms.date: 06/29/2020
+ms.date: 04/06/2021
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 6829bac79f747d4f9bacfe5e71f57352fcad0970
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d5ad0231c2dc21acc4a8d954456921dbe2838e39
+ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959160"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106547406"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Actualización de una instalación basada en red de Visual Studio
 
@@ -33,17 +33,7 @@ Se puede actualizar un diseño de instalación de red de Visual Studio con las a
 
 Para actualizar el recurso compartido de instalación de red de forma que incluya las actualizaciones más recientes, ejecute el comando `--layout` para descargar paquetes actualizados de forma incremental.
 
-::: moniker range="vs-2017"
-
-**Novedad de la versión 15.3**: Si ha seleccionado un diseño parcial al [crear el diseño de red](create-a-network-installation-of-visual-studio.md), esas opciones se guardan. Cualquier comando de diseño futuro usa las opciones anteriores además de las nuevas que especifique. Pero, si está usando un diseño de una versión anterior, debe usar los mismos parámetros de la línea de comandos que utilizó cuando creó el diseño de instalación de red por primera vez (en otras palabras, las mismas cargas de trabajo y los mismos lenguajes) para actualizar su contenido.
-
-::: moniker-end
-
-::: moniker range="vs-2019"
-
 Si ha seleccionado un diseño parcial al [crear el diseño de red](create-a-network-installation-of-visual-studio.md), esas opciones se guardan. Cualquier comando de diseño futuro usa las opciones anteriores además de las nuevas que especifique.
-
-::: moniker-end
 
 Si hospeda un diseño en un recurso compartido, debe actualizar una copia privada del diseño (por ejemplo, c:\VSLayout) y, después de descargar todo el contenido actualizado, copiarla en el recurso compartido (por ejemplo,\\server\products\VS). Si no lo hace, existe una mayor probabilidad de que los usuarios que ejecutan el programa de instalación mientras se actualiza el diseño no puedan obtener todo el contenido del diseño ya que todavía no está completamente actualizado.
 
@@ -178,7 +168,7 @@ Tenemos también otras opciones de soporte técnico disponibles. Para obtener un
 
 ## <a name="see-also"></a>Vea también
 
-* [Instalar Visual Studio](install-visual-studio.md)
+* [Instalación de Visual Studio](install-visual-studio.md)
 * [Guía del administrador de Visual Studio](visual-studio-administrator-guide.md)
 * [Usar parámetros de la línea de comandos para instalar Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Herramientas para detectar y administrar instancias de Visual Studio](tools-for-managing-visual-studio-instances.md)

@@ -15,12 +15,12 @@ ms.author: ornella
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 238f6a2b6492fdd4ac04e0b596bbfbc304529786
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f64189cbde62ea70ae51fcdcbb8869377dd865f1
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99950840"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106214309"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>Paso 3: Agregar un temporizador de cuenta atrás
 
@@ -33,8 +33,8 @@ En la tercera parte de este tutorial, agregará un temporizador de cuenta atrás
 
 1. Agregue una variable de entero denominada **timeLeft**, como hizo en el procedimiento anterior. El código debe tener un aspecto parecido al siguiente.
 
-     [!code-vb[VbExpressTutorial3Step3#5](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_1.vb)]
-     [!code-csharp[VbExpressTutorial3Step3#5](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_1.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step3/vb/form1.vb" id="Snippet5":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step3/cs/form1.cs" id="Snippet5":::
 
      [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
@@ -54,8 +54,8 @@ En la tercera parte de este tutorial, agregará un temporizador de cuenta atrás
 
 5. Agregue las siguientes instrucciones al nuevo método de control de eventos.
 
-     [!code-vb[VbExpressTutorial3Step3#6](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_2.vb)]
-     [!code-csharp[VbExpressTutorial3Step3#6](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_2.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step3/vb/form1.vb" id="Snippet6":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step3/cs/form1.cs" id="Snippet6":::
 
      En función de lo que haya agregado, el temporizador comprobará cada segundo si se ha agotado el tiempo, determinando si la variable de entero **timeLeft** es mayor que 0. Si es así, todavía queda tiempo. En primer lugar, el temporizador resta 1 a timeLeft y, a continuación, actualiza la propiedad **Text** del control **timeLabel** para mostrar al jugador cuántos segundos quedan.
 
@@ -91,8 +91,8 @@ En la tercera parte de este tutorial, agregará un temporizador de cuenta atrás
 
      Vamos a fijarnos con más atención en la instrucción que hemos agregado en el bloque `else` para mostrar la respuesta al problema de suma.
 
-     [!code-vb[VbExpressTutorial3Step3#24](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_3.vb)]
-     [!code-csharp[VbExpressTutorial3Step3#24](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_3.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step3/vb/form1.vb" id="Snippet24":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step3/cs/form1.cs" id="Snippet24":::
 
      La instrucción `addend1 + addend2` suma los valores de las dos variables. La primera parte (`sum.Value`) utiliza la propiedad **Value** del control NumericUpDown de la suma para mostrar la respuesta correcta. Utilizará la misma propiedad más adelante para comprobar las respuestas de la prueba.
 
@@ -100,8 +100,8 @@ En la tercera parte de este tutorial, agregará un temporizador de cuenta atrás
 
 6. Agregue tres líneas al final de método `StartTheQuiz()`, de modo que el código tenga este aspecto.
 
-     [!code-vb[VbExpressTutorial3Step3#7](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_4.vb)]
-     [!code-csharp[VbExpressTutorial3Step3#7](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_4.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step3/vb/form1.vb" id="Snippet7":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step3/cs/form1.cs" id="Snippet7":::
 
      Ahora, al empezar la prueba, la variable **timeLeft** se establece en 30 y la propiedad **Text** del control **timeLabel** se establece en 30 segundos. A continuación, el método <xref:System.Windows.Forms.Timer.Start> del control Timer inicia la cuenta atrás. (La prueba no comprueba la respuesta todavía, esto viene después).
 
