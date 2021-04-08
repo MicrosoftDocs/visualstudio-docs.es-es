@@ -28,12 +28,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a310cd4428232338ed46a8a54502d9956e73be15
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: eadec17e7c5221f0b169d38b15b9601cec746fa4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932018"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094983"
 ---
 # <a name="midl-task"></a>MIDL (tarea)
 
@@ -79,7 +79,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Parámetro **String** opcional.
 
-     Especifica las opciones que se deben pasar al preprocesador de C/C#. Especifique una lista delimitada por espacios de opciones de preprocesador.
+     Especifica las opciones que se deben pasar al preprocesador de C/C#. Especifique una lista delimitada por espacios de opciones de preprocesador. Debe contener la opción `/E`.
 
      Para obtener más información, vea la opción **/cpp_opt** en [MIDL command-line reference](/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).
 

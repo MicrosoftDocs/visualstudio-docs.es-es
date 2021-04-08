@@ -2,20 +2,20 @@
 title: Uso del Puente a Kubernetes con Visual Studio
 titleSuffix: ''
 ms.technology: vs-azure
-ms.date: 06/02/2020
-ms.topic: how-to
+ms.date: 03/24/2021
+ms.topic: quickstart
 description: Más información sobre cómo usar Puente a Kubernetes con Visual Studio para conectar el equipo de desarrollo a un clúster de Kubernetes
 keywords: Puente a Kubernetes, Azure Dev Spaces, Dev Spaces, Docker, Kubernetes, Azure, contenedores
 monikerRange: '>=vs-2019'
 ms.author: ghogen
 author: ghogen
 manager: jmartens
-ms.openlocfilehash: 23d060489a13aa8e02316e253d9367e9e3372bbe
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fdcf31d062fe2be72709979f0892e6a7f535024a
+ms.sourcegitcommit: 2049ec99f1439ec91d002853226934b067b1ee70
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859637"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105635047"
 ---
 # <a name="use-bridge-to-kubernetes"></a>Uso de Puente a Kubernetes
 
@@ -23,96 +23,95 @@ Puede usar Puente a Kubernetes para redirigir el tráfico entre el clúster de K
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-En esta guía se usa la [aplicación de ejemplo Bike Sharing][bike-sharing-github] para mostrar la conexión del equipo de desarrollo a un clúster de Kubernetes. Si ya tiene una aplicación que se ejecuta en un clúster de Kubernetes, puede seguir los pasos que se indican a continuación y usar los nombres de sus servicios.
+En esta guía se usa la [aplicación de ejemplo TODO][todo-app-github] para mostrar la conexión del equipo de desarrollo a un clúster de Kubernetes. Si ya tiene una aplicación que se ejecuta en un clúster de Kubernetes, puede seguir los pasos que se indican a continuación y usar los nombres de sus servicios.
 
-### <a name="prerequisites"></a>Requisitos previos
+En este ejemplo se muestra cómo se puede usar Bridge to Kubernetes para desarrollar una versión de microservicio de una aplicación TODO simple en cualquier clúster de Kubernetes. Este ejemplo, con Visual Studio, se ha adaptado del código proporcionado por [TodoMVC](http://todomvc.com). Estos pasos deben funcionar con cualquier clúster de Kubernetes.
 
-* Suscripción a Azure. Si no tiene una suscripción a Azure, puede crear una [cuenta gratuita](https://azure.microsoft.com/free).
-* [La CLI de Azure instalada][azure-cli].
-* Versión preliminar 4 de [Visual Studio 2019][visual-studio], versión 16.7, o una posterior que se ejecute en Windows 10 con la carga de trabajo *Desarrollo de Azure* instalada.
-* [Extensión Puente a Kubernetes instalada][btk-extension].
+El ejemplo de aplicación TODO se compone de un front-end y un back-end que proporciona almacenamiento persistente. Este ejemplo extendido agrega un componente de estadísticas y divide la aplicación en varios microservicios, en concreto:
 
-Además, para las aplicaciones de consola .NET, instale paquete NuGet *Microsoft.VisualStudio.Azure.Kubernetes.Tools.Targets*.
+- El front-end llama a la API de base de datos para conservar y actualizar los elementos de TODO.
+- El servicio de API de base de datos se basa en una base de datos Mongo para conservar los elementos de TODO.
+- El front-end escribe eventos de adición, finalización y eliminación en una cola RabbitMQ.
+- Un trabajo de estadísticas recibe eventos de la cola RabbitMQ y actualiza una caché Redis.
+- Una API de estadísticas expone las estadísticas almacenadas en caché para que las muestre el front-end.
 
-## <a name="create-a-kubernetes-cluster"></a>Creación de un clúster de Kubernetes
+En total, esta aplicación TODO extendida contiene seis componentes interrelacionados.
 
-Cree un clúster de AKS en una [región admitida][supported-regions]. Los siguientes comandos permiten crear un grupo de recursos llamado *MyResourceGroup* y un clúster de AKS denominado *MyAKS*.
+### <a name="prerequisites"></a>Prerrequisitos
 
-```azurecli-interactive
-az group create \
-    --name MyResourceGroup \
-    --location eastus
+- Un clúster de Kubernetes.
+- [Visual Studio 2019][visual-studio], versión 16.7 Preview 4 o posterior ejecutándose en Windows 10.
+- [Extensión Puente a Kubernetes instalada][btk-extension].
 
-az aks create \
-    --resource-group MyResourceGroup \
-    --name MyAKS \
-    --location eastus \
-    --node-count 3 \
-    --generate-ssh-keys
+## <a name="check-the-cluster"></a>Comprobación del clúster
+
+Abra un símbolo del sistema y compruebe que kubectl esté instalado y en la ruta de acceso y que el clúster que quiere usar esté disponible y listo, y establezca el contexto en dicho clúster.
+
+```cmd
+kubectl cluster-info
+kubectl config use-context {context-name}
 ```
 
-## <a name="install-the-sample-application"></a>Instale la aplicación de ejemplo.
+donde {context-name} es el nombre del contexto del clúster que quiere usar para el ejemplo de la aplicación TODO.
 
-Instale la aplicación de ejemplo en el clúster con el script proporcionado. Puede ejecutar este script con [Azure Cloud Shell][azure-cloud-shell].
+## <a name="deploy-the-application"></a>Implementación de la aplicación
 
-```azurecli-interactive
-git clone https://github.com/Microsoft/mindaro
-cd mindaro
-chmod +x ./bridge-quickstart.sh
-./bridge-quickstart.sh -g MyResourceGroup -n MyAKS
+Clone el [repositorio de mindaro](https://github.com/Microsoft/mindaro) y abra una ventana de comandos con la carpeta de trabajo actual en *samples/todo-app*.
+
+Cree un espacio de nombres para el ejemplo.
+
+```cmd
+kubectl create namespace todo-app
 ```
 
-Navegue hasta la aplicación de ejemplo en la que se ejecuta el clúster. Para ello, abra su URL pública, que se muestra en la salida del script de instalación.
+A continuación, aplique el manifiesto de implementación:
 
-```console
-$ ./bridge-quickstart.sh -g MyResourceGroup -n MyAKS
-Defaulting Dev spaces repository root to current directory : ~/mindaro
-Setting the Kube context
-...
-To try out the app, open the url:
-bikeapp.bikesharingweb.EXTERNAL_IP.nip.io
+```cmd
+kubectl apply -n todo-app -f deployment.yaml
 ```
 
-En el ejemplo anterior, la URL pública es `bikeapp.bikesharingweb.EXTERNAL_IP.nip.io`.
+Se trata de una implementación sencilla que expone el front-end mediante un servicio de tipo `LoadBalancer`. Espere a que se ejecuten todos los pods y a que la dirección IP externa del servicio `frontend` esté disponible.
+
+Si está probando con MiniKube, deberá usar `minikube tunnel` para resolver una dirección IP externa. Si usa AKS u otro proveedor de Kubernetes basado en la nube, se asigna automáticamente una dirección IP externa. Use el siguiente comando para supervisar el servicio `frontend` de forma que espere hasta que esté en funcionamiento:
+
+```output
+kubectl get service -n todo-app frontend --watch
+
+NAME       TYPE           CLUSTER-IP    EXTERNAL-IP     PORT(S)        AGE
+frontend   LoadBalancer   10.0.245.78   20.73.226.228   80:31910/TCP   6m26s
+```
+
+Vaya a la aplicación mediante la dirección IP externa y el puerto local (el primer número de la columna de puertos).
+
+```
+http://{external-ip}:{local-port}
+```
+
+Pruebe la aplicación en ejecución en el explorador. Al agregar, completar y eliminar elementos de la aplicación TODO, tenga en cuenta que la página de estadísticas se actualiza con las métricas esperadas.
 
 ## <a name="connect-to-your-cluster-and-debug-a-service"></a>Conexión al clúster y depuración de un servicio
 
-En el equipo de desarrollo, descargue y configure la CLI de Kubernetes para conectarse al clúster de Kubernetes mediante [az aks get-credentials][az-aks-get-credentials].
-
-```azurecli
-az aks get-credentials --resource-group MyResourceGroup --name MyAKS
-```
-
-En el repositorio de la [aplicación de ejemplo Bike Sharing][bike-sharing-github] de GitHub, utilice la lista desplegable del botón verde **Code** (Código) y elija **Abrir en Visual Studio** para clonar el repositorio localmente y abrir la carpeta en Visual Studio. Después, use **Archivo** > **Abrir proyecto** para abrir el proyecto **app.csproj** en la carpeta *samples/BikeSharingApp/ReservationEngine*.
-
-En el proyecto, seleccione **Puente a Kubernetes** en el menú desplegable de configuración de inicio, tal y como se muestra a continuación.
+Abra *samples\todo-app\database-api\database-api.csproj* en Visual Studio. En el proyecto, seleccione **Bridge to Kubernetes** en el menú desplegable de configuración de inicio, tal y como se muestra a continuación.
 
 ![Elección de Puente a Kubernetes](media/bridge-to-kubernetes/choose-bridge-to-kubernetes.png)
 
 Haga clic en el botón Inicio junto a *Puente a Kubernetes*. En el cuadro de diálogo **Crear perfil para Puente a Kubernetes**:
 
-* Seleccione su suscripción.
-* Seleccione *MyAKS* para el clúster.
-* Seleccione *bikeapp* como su espacio de nombres.
-* Seleccione *reservationengine* para el servicio que se va a redirigir.
-* Seleccione *app* para el perfil de inicio.
-* Seleccione `http://bikeapp.bikesharingweb.EXTERNAL_IP.nip.io` para la dirección URL que debe iniciar el explorador.
+- Seleccione el nombre del clúster.
+- Seleccione *todo-app* como su espacio de nombres.
+- Seleccione *database-api* para el servicio que se va a redirigir.
+- Seleccione la misma dirección URL que usó anteriormente para iniciar el explorador, http://{external-ip}:{local-port}.
 
-![Elección del clúster de Puente a Kubernetes](media/bridge-to-kubernetes/choose-bridge-cluster2.png)
-
-> [!IMPORTANT]
-> Solo puede redirigir servicios que tengan un único pod.
+![Elección del clúster de Puente a Kubernetes](media/bridge-to-kubernetes/configure-bridge-debugging.png)
 
 Elija si quiere ejecutar de forma aislada, lo que significa que otros usuarios que utilicen el clúster no se verán afectados por los cambios. Este modo de aislamiento se consigue enrutando las solicitudes a la copia de cada servicio afectado, pero enrutando el resto de tráfico con normalidad. Puede encontrar más información sobre cómo hacerlo en [Funcionamiento del Puente a Kubernetes][btk-overview-routing].
 
-Haga clic en **Guardar e iniciar la depuración**.
-
-Todo el tráfico del clúster de Kubernetes se redirige para el servicio *reservationengine* a la versión de la aplicación que se ejecuta en el equipo de desarrollo. Puente a Kubernetes también enruta todo el tráfico saliente desde la aplicación al clúster de Kubernetes.
+Haga clic en **OK**. Todo el tráfico del clúster de Kubernetes se redirige para el servicio *database-api* a la versión de la aplicación que se ejecuta en el equipo de desarrollo. Puente a Kubernetes también enruta todo el tráfico saliente desde la aplicación al clúster de Kubernetes.
 
 > [!NOTE]
 > Se le pedirá que permita que *EndpointManager* se ejecute con privilegios elevados y modifique el archivo hosts.
 
-El equipo de desarrollo está conectado cuando la barra de estado muestra que está conectado en el servicio `reservationengine`.
+El equipo de desarrollo está conectado cuando la barra de estado muestra que está conectado en el servicio `database-api`.
 
 ![Equipo de desarrollo conectado](media/bridge-to-kubernetes/development-computer-connected.png)
 
@@ -121,16 +120,21 @@ El equipo de desarrollo está conectado cuando la barra de estado muestra que es
 
 Una vez que el equipo de desarrollo está conectado, el tráfico comienza a redirigirse a dicho equipo para el servicio que está reemplazando.
 
+> [!NOTE]
+> Para editar el perfil de depuración más adelante, por ejemplo, si desea probar con otro servicio de Kubernetes, elija **Depurar** > **Propiedades de depuración** y haga clic en el botón **Cambiar**.
+
 ## <a name="set-a-break-point"></a>Establecer un punto de interrupción
 
-Abra [BikesHelper.cs][bikeshelper-cs-breakpoint] y haga clic en cualquier lugar de la línea 26 para colocar ahí el cursor. Para establecer un punto de interrupción, pulse *F9* o seleccione **Depurar** > **Alternar punto de interrupción**.
+Abra MongoHelper.cs y haga clic en algún lugar de la línea 68 del método CreateTask para poner el cursor allí. Para establecer un punto de interrupción, pulse *F9* o seleccione **Depurar** > **Alternar punto de interrupción**.
 
-Abra la dirección URL pública para navegar a la aplicación de ejemplo. Seleccione **Aurelia Briggs (customer)** (Aurelia Briggs [cliente]) como usuario y, después, seleccione una bicicleta para alquilar. Elija **Rent Bike** (Alquilar bicicleta). Vuelva a Visual Studio y observe que la línea 26 está resaltada. El punto de interrupción que estableció puso en pausa el servicio en la línea 26. Para reanudar el servicio, pulse **F5** o haga clic en **Depurar** > **Continuar**. Vuelva al explorador y verifique que la página muestra que ha alquilado la bicicleta.
+Navegue hasta la aplicación de ejemplo abriendo la dirección URL pública (la dirección IP externa para el servicio de front-end). Para reanudar el servicio, pulse **F5** o haga clic en **Depurar** > **Continuar**.
 
-Quite el punto de interrupción colocando el cursor en la línea 26 en `BikesHelper.cs` y pulsando **F9**.
+Quite el punto de interrupción colocando el cursor en la línea con el punto de interrupción y presionando **F9**.
 
 > [!NOTE]
-> De forma predeterminada, al detener la tarea de depuración también se desconecta el equipo de desarrollo del clúster de Kubernetes. Para cambiar este comportamiento, puede cambiar el valor **Disconnect after debugging** (Desconectarse después de la depuración) a `false` en la sección **Kubernetes Debugging Tools** (Herramientas de depuración de Kubernetes) de las opciones de depuración. Después de actualizar esta configuración, el equipo de desarrollo permanecerá conectado cuando detenga e inicie la depuración. Para desconectar el equipo de desarrollo del clúster, haga clic en el botón **Desconectar** de la barra de herramientas.
+> De forma predeterminada, al detener la tarea de depuración también se desconecta el equipo de desarrollo del clúster de Kubernetes. Para cambiar este comportamiento, puede cambiar el valor **Disconnect after debugging** (Desconectarse después de la depuración) a `false` en la sección **Kubernetes Debugging Tools** (Herramientas de depuración de Kubernetes) del cuadro de diálogo **Herramientas** > **Opciones**. Después de actualizar esta configuración, el equipo de desarrollo permanecerá conectado cuando detenga e inicie la depuración. Para desconectar el equipo de desarrollo del clúster, haga clic en el botón **Desconectar** de la barra de herramientas.
+>
+>![Captura de pantalla de las opciones de depuración de Kubernetes](media/bridge-to-kubernetes/kubernetes-debugging-options.png)
 
 ## <a name="additional-configuration"></a>Configuración adicional
 
@@ -138,15 +142,7 @@ Puente a Kubernetes puede controlar el tráfico de enrutamiento y las variables 
 
 ## <a name="using-logging-and-diagnostics"></a>Uso de registro y diagnóstico
 
-Puede encontrar los registros de diagnóstico en el directorio `Bridge to Kubernetes` del directorio *TEMP* del equipo de desarrollo. 
-
-## <a name="remove-the-sample-application-from-your-cluster"></a>Eliminación de la aplicación de ejemplo del clúster
-
-Use el script proporcionado para eliminar aplicación de ejemplo del clúster.
-
-```azurecli-interactive
-./bridge-quickstart.sh -c -g MyResourceGroup -n MyAKS
-```
+Puede encontrar los registros de diagnóstico en el directorio `Bridge to Kubernetes` del directorio *TEMP* del equipo de desarrollo.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
@@ -155,15 +151,7 @@ Conozca el funcionamiento del Puente a Kubernetes.
 > [!div class="nextstepaction"]
 > [Funcionamiento del Puente a Kubernetes](overview-bridge-to-kubernetes.md)
 
-[azds-cli]: /azure/dev-spaces/how-to/install-dev-spaces#install-the-client-side-tools
-[azds-vs-code]: https://marketplace.visualstudio.com/items?itemName=azuredevspaces.azds
-[azure-cli]: /cli/azure/install-azure-cli?view=azure-cli-lates&preserve-view=true
-[azure-cloud-shell]: /azure/cloud-shell/overview.md
-[az-aks-get-credentials]: /cli/azure/aks?view=azure-cli-latest&preserve-view=true#az-aks-get-credentials
-[az-aks-vs-code]: https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.vscode-aks-tools
-[bike-sharing-github]: https://github.com/Microsoft/mindaro
-[preview-terms]: https://azure.microsoft.com/support/legal/preview-supplemental-terms/
-[bikeshelper-cs-breakpoint]: https://github.com/Microsoft/mindaro/blob/master/samples/BikeSharingApp/ReservationEngine/BikesHelper.cs#L26
+[todo-app-github]: https://github.com/Microsoft/mindaro
 [supported-regions]: https://azure.microsoft.com/global-infrastructure/services/?products=kubernetes-service
 [troubleshooting]: /azure/dev-spaces/troubleshooting#fail-to-restore-original-configuration-of-deployment-on-cluster
 [visual-studio]: https://www.visualstudio.com/vs/

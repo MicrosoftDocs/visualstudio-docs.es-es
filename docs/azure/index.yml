@@ -10,12 +10,12 @@ metadata:
   ms.topic: landing-page
   ms.date: 12/05/2019
   ms.author: ghogen
-  ms.openlocfilehash: e2a545d1b9165a158f7d1913668e983386127874
-  ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+  ms.openlocfilehash: 7a7740ad4fffd80bc4b96ef7096b3bdd7c7a31bd
+  ms.sourcegitcommit: 2a50f4c1705baeee5c05580f04e3f468550f44e3
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 10/09/2020
-  ms.locfileid: "91860538"
+  ms.lasthandoff: 04/05/2021
+  ms.locfileid: "106381586"
 landingContent:
 - title: Implementación en Azure App Service
   linkLists:
@@ -89,6 +89,8 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
+    - text: Creación e implementación de Cloud Services (soporte extendido)
+      url: cloud-services-extended-support.md
     - text: Creación y configuración de proyectos de servicio en la nube de Azure
       url: vs-azure-tools-azure-project-create.md
     - text: Depuración de servicios en la nube localmente y en Azure

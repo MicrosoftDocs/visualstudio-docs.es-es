@@ -1,7 +1,7 @@
 ---
 title: Introducción a la edición para desarrolladores de JavaScript
 description: En esta introducción al editor de código de Visual Studio se describen algunas de las formas en que Visual Studio hace que escribir y comprender el código JavaScript (así como desplazarse por él) sea más fácil.
-ms.date: 12/13/2018
+ms.date: 03/25/2021
 ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: cec6a19d525f89b5ca8873344d3dce9c830fd4c3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b1d9fb7cdc850bc54298cd3d82d52786a9e6a639
+ms.sourcegitcommit: 00e16b9afe6b22ba0591e4d0d92690544e6d4357
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935695"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105616966"
 ---
 # <a name="learn-to-use-the-code-editor-for-javascript"></a>Información sobre cómo usar el editor de código para JavaScript
 
@@ -48,7 +48,7 @@ IntelliSense puede servir también para completar una palabra después de escrib
 
 IntelliSense también puede mostrar información sobre los tipos cuando se mantiene el puntero sobre elementos de programación.
 
-Para proporcionar información de IntelliSense, el servicio de lenguaje puede usar archivos *d.ts* de TypeScript y comentarios de JSDoc. En las bibliotecas de JavaScript más comunes, los archivos *d.ts* se obtienen automáticamente. Para más información sobre cómo se obtiene la información de IntelliSense, vea [IntelliSense para JavaScript](../ide/javascript-intellisense.md?toc=/visualstudio/javascript/toc.json).
+Para proporcionar información de IntelliSense, el servicio de lenguaje puede usar archivos *d.ts* de TypeScript y comentarios de JSDoc. En las bibliotecas de JavaScript más comunes, los archivos *d.ts* se obtienen automáticamente. Para más información sobre cómo se obtiene la información de IntelliSense, vea [IntelliSense para JavaScript](../ide/javascript-intellisense.md?toc=/visualstudio/javascript/toc.json). Si está interesado en la programación de AngularJS en Visual Studio, puede utilizar la [extensión de servicio del lenguaje AngularJS](https://devblogs.microsoft.com/visualstudio/angular-language-service-for-visual-studio) para Visual Studio para obtener IntelliSense.
 
 ## <a name="check-syntax"></a>Comprobar la sintaxis
 

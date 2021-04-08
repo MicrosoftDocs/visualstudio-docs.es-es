@@ -1,45 +1,46 @@
 ---
 title: Página predeterminada de ayuda F1 para el editor de texto
 description: Solicitudes de la página predeterminada para obtener ayuda F1 para el editor de texto de Visual Studio
-ms.date: 08/20/2020
+ms.date: 03/25/2021
 ms.topic: troubleshooting
-ms.custom: contperf-fy21q1
+ms.custom: contperf-fy21q3
 robots: noindex,nofollow
 f1_keywords:
 - vs.texteditor
 manager: jmartens
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 6d30a7bf02202b8114e594c94f7564a1d8683e32
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6d22a07e29b45362324074329aabfddf2b247a6b
+ms.sourcegitcommit: 00e16b9afe6b22ba0591e4d0d92690544e6d4357
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961656"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105616914"
 ---
-# <a name="f1-help-for-the-text-editor"></a>Ayuda F1 para el editor de texto
+# <a name="code-editor-f1-help"></a>Ayuda F1 del editor de código
 
 Parece que no pudimos encontrar lo que buscaba y lo sentimos. Para ayudarnos a mejorar, puede dejar comentarios con los botones al final de esta página o intente una de las sugerencias siguientes.
 
-## <a name="cursor-position"></a>Posición del cursor
+## <a name="get-help-for-your-programming-language"></a>¿Obtener ayuda sobre el lenguaje de programación?
 
-Si está buscando ayuda de F1 sobre una palabra clave o el nombre de una API, asegúrese de colocar el cursor dentro de la palabra o justo a la derecha antes de presionar **F1**. Si eso no soluciona el problema, pruebe una de las sugerencias siguientes.
+- [Guía de programación C#](/dotnet/csharp/programming-guide/) o [referencia del lenguaje](/dotnet/csharp/language-reference/).
+- [Características del lenguaje Visual Basic](/dotnet/visual-basic/programming-guide/language-features/) o [referencia del lenguaje](/dotnet/visual-basic/language-reference/).
+- [Documentación de Python](https://docs.python.org/).
+- [Referencia del lenguaje C/C++ y las bibliotecas estándar](/cpp/cpp/c-cpp-language-and-standard-libraries).
+- [Guía de F#](/dotnet/fsharp/).
+- [Documentación de TypeScript](https://www.typescriptlang.org/docs).
 
-## <a name="find-help-on-a-keyword-or-api"></a>Búsqueda de ayuda sobre una palabra clave o API
-
-- Para ayuda de C#, consulte la [guía de programación de C#](/dotnet/csharp/programming-guide/) o la [referencia del lenguaje](/dotnet/csharp/language-reference/).
-- Para ayuda de Visual Basic, consulte las [características del lenguaje Visual Basic](/dotnet/visual-basic/programming-guide/language-features/) o la [referencia del lenguaje](/dotnet/visual-basic/language-reference/).
-- Para ayuda de Python, consulte la [documentación de Python](https://docs.python.org/).
-- Para ayuda de C++, consulte [la referencia de bibliotecas estándar y del lenguaje C/C++](/cpp/cpp/c-cpp-language-and-standard-libraries).
-- Para obtener ayuda de F#, vea la [Guía de F#](/dotnet/fsharp/).
-- Para ayuda de TypeScript, consulte la [documentación de TypeScript](https://www.typescriptlang.org/docs).
-
-## <a name="search-for-help-on-a-keyword-or-api-name"></a>Búsqueda de ayuda sobre un nombre de API o una palabra clave
+## <a name="search-for-help-on-keyword-api-name-file-type-or-ui-settings"></a>Búsqueda de ayuda por palabra clave, nombre de la API, tipo de archivo o configuración de la interfaz de usuario
 
 Si busca ayuda F1 sobre un nombre de API o una palabra clave:
+
 - Intente buscar en [docs.microsoft.com](/)
 - Intente buscar con un motor de búsqueda.
 - Busque documentación de referencia en el [Explorador de API de .NET](/dotnet/api/).
+
+## <a name="cursor-position"></a>Posición del cursor
+
+Si está buscando ayuda de F1 sobre una palabra clave o el nombre de una API, asegúrese de colocar el cursor dentro de la palabra o justo a la derecha antes de presionar **F1**.
 
 ## <a name="find-the-source-code-for-an-api"></a>Búsqueda del código fuente de una API
 

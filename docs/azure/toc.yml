@@ -40,7 +40,7 @@
   items:
     - name: Trabajo con proyectos de servicio en la nube
       items:
-        - name: 'Uso de Cloud Services (soporte extendido, versión preliminar)'
+        - name: Uso de Cloud Services (soporte extendido)
           href: cloud-services-extended-support.md
         - name: Creación de un proyecto de servicio en la nube de Azure
           href: vs-azure-tools-azure-project-create.md
