@@ -1,7 +1,7 @@
 ---
 title: Instalación de los certificados para la instalación sin conexión
 description: Obtenga información sobre cómo instalar certificados para una instalación sin conexión de Visual Studio.
-ms.date: 08/08/2019
+ms.date: 03/29/2021
 ms.custom: seodec18, SEO-VS-2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -15,18 +15,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 54ab09809b99c18977125a124bc53d50d3d6c90c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0d8441b0a4b8acba3f24f60d5ea8dc7030b79253
+ms.sourcegitcommit: 22789927ec8e877b7d2b67a555d6df97d84103e0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941571"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105981295"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Instalar los certificados necesarios para la instalación sin conexión de Visual Studio
 
 Visual Studio está diseñado principalmente para su instalación desde una máquina conectada a Internet, dado que muchos componentes se actualizan periódicamente. Sin embargo, con algunos pasos adicionales, es posible implementar Visual Studio en un entorno donde no se encuentre disponible una conexión a Internet en funcionamiento.
 
-El motor de instalación de Visual Studio solo instala el contenido que sea de confianza. Para ello, comprueba las firmas Authenticode del contenido que se descarga y confirma que todo el contenido es de confianza antes de instalarlo. Esto conserva su entorno seguro de los ataques donde la ubicación de descarga está en peligro. Por lo tanto, la instalación de Visual Studio necesita que varios certificados estándar intermedios y de raíz de Microsoft estén instalados y actualizados en un equipo de usuario. Si la máquina está actualizada con Windows Update, los certificados de firma suelen estar actualizados. Si la máquina está conectada a Internet, durante la instalación de Visual Studio se pueden actualizar los certificados según sea necesario para comprobar las firmas de archivo. Si la máquina está sin conexión, los certificados deberán actualizarse de otra forma.
+El motor de instalación de Visual Studio solo instala el contenido que sea de confianza. Para ello, comprueba las firmas Authenticode del contenido que se descarga y confirma que todo el contenido es de confianza antes de instalarlo. Esto conserva su entorno seguro de los ataques donde la ubicación de descarga está en peligro. Por lo tanto, la instalación de Visual Studio precisa que varios certificados estándar intermedios y raíz de Microsoft estén instalados y actualizados en la máquina de un usuario. Si la máquina está actualizada con Windows Update, los certificados de firma suelen estar actualizados. Si la máquina está conectada a Internet, durante la instalación de Visual Studio se pueden actualizar los certificados según sea necesario para comprobar las firmas de archivo. Si la máquina está sin conexión, los certificados deberán actualizarse de otra forma.
 
 ## <a name="how-to-refresh-certificates-when-offline"></a>Cómo actualizar los certificados sin conexión
 
@@ -36,7 +36,7 @@ Hay tres opciones para instalar o actualizar los certificados en un entorno sin 
 
 ::: moniker range="vs-2017"
 
-Al crear un diseño de red, los certificados necesarios se descargan en la carpeta Certificados. Después, puede instalar manualmente los certificados haciendo doble clic en todos los archivos de certificado y recorriendo el asistente del Administrador de certificados. Si se le solicita una contraseña, déjela en blanco.
+Al crear un [diseño de red](../install/create-a-network-installation-of-visual-studio.md) o una [caché sin conexión local](../install/create-an-offline-installation-of-visual-studio.md), los certificados necesarios se descargan en la carpeta Certificados. Después, puede instalar manualmente los certificados haciendo doble clic en todos los archivos de certificado y recorriendo el asistente del Administrador de certificados. Si se le solicita una contraseña, déjela en blanco.
 
 **Actualización**: para Visual Studio 2017 versión 15.8 Preview 2 o versiones posteriores, puede instalar manualmente los certificados haciendo clic con el botón derecho en cada uno de los archivos de certificado, seleccionando Instalar certificado y, por último, haciendo clic en los sucesivos pasos del asistente Administrador de certificados.
 
@@ -44,7 +44,7 @@ Al crear un diseño de red, los certificados necesarios se descargan en la carpe
 
 ::: moniker range="vs-2019"
 
-Al crear un diseño de red, los certificados necesarios se descargan en la carpeta Certificados. Puede instalar manualmente los certificados si hace clic con el botón derecho en cada uno de los archivos de certificado, selecciona Instalar certificado y, por último, hace clic en los sucesivos pasos del asistente Administrador de certificados. Si se le solicita una contraseña, déjela en blanco.
+Al crear un [diseño de red](../install/create-a-network-installation-of-visual-studio.md) o una [caché sin conexión local](../install/create-an-offline-installation-of-visual-studio.md), los certificados necesarios se descargan en la carpeta Certificados. Puede instalar manualmente los certificados si hace clic con el botón derecho en cada uno de los archivos de certificado, selecciona Instalar certificado y, por último, hace clic en los sucesivos pasos del asistente Administrador de certificados. Si se le solicita una contraseña, déjela en blanco.
 
 ::: moniker-end
 
@@ -56,34 +56,16 @@ Para las empresas con equipos sin conexión que no tienen los últimos certifica
 
 Si está creando el script de la implementación de Visual Studio en un entorno sin conexión en las áreas de trabajo del cliente, debe seguir estos pasos:
 
-::: moniker range="vs-2017"
-
-1. Copie la [herramienta del Administrador de certificados](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool) (certmgr.exe) en el recurso compartido de la instalación (por ejemplo, \\server\share\vs2017). Certmgr.exe no está incluido como parte de Windows, pero está disponible como parte de [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
+1. Copie la [herramienta Administrador de certificados](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool) (certmgr.exe) en la ubicación de instalación de la caché local o del diseño de red. Certmgr.exe no está incluido como parte de Windows, pero está disponible como parte de [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
 
 2. Cree un archivo por lotes con los siguientes comandos:
-
-   ```cmd
-   certmgr.exe -add -c certificates\manifestSignCertificates.p12 -n "Microsoft Code Signing PCA 2011" -s -r LocalMachine CA
-
-   certmgr.exe -add -c certificates\manifestSignCertificates.p12 -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
-
-   certmgr.exe -add -c certificates\manifestCounterSignCertificates.p12 -n "Microsoft Time-Stamp PCA 2010" -s -r LocalMachine CA
-
-   certmgr.exe -add -c certificates\manifestCounterSignCertificates.p12 -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
-
-   certmgr.exe -add -c certificates\vs_installer_opc.SignCertificates.p12 -n "Microsoft Code Signing PCA" -s -r LocalMachine CA
-
-   certmgr.exe -add -c certificates\vs_installer_opc.SignCertificates.p12 -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
-   ```
-
-   **Actualización**: para Visual Studio 2017 versión 15.8 Preview 2 o versiones posteriores, cree el archivo por lotes con los siguientes comandos:
 
    ```cmd
    certmgr.exe -add [layout path]\certificates\manifestRootCertificate.cer -n "Microsoft Root Certificate Authority 2011" -s -r LocalMachine root
 
    certmgr.exe -add [layout path]\certificates\manifestCounterSignRootCertificate.cer -n "Microsoft Root Certificate Authority 2010" -s -r LocalMachine root
 
-   certmgr.exe -add [layout path]\certificates\vs_installer_opc.RootCertificate.cer -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
+   certmgr.exe -add [layout path]\certificates\vs_installer_opc.RootCertificate.cer -n "Microsoft Root Certificate Authority 2010" -s -r LocalMachine root
    ```
    
    Como alternativa, cree un archivo por lotes que utilice certutil.exe, distribuido con Windows, con los siguientes comandos:
@@ -97,78 +79,15 @@ Si está creando el script de la implementación de Visual Studio en un entorno 
    ```
 
 3. Implemente el archivo por lotes en el cliente. Este comando debe ejecutarse desde un proceso elevado.
-
-::: moniker-end
-
-::: moniker range="vs-2019"
-
-1. Copie la [herramienta Administrador de certificados](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool) (certmgr.exe) en el recurso compartido de la instalación (por ejemplo, \\server\share\vs2019). Certmgr.exe no está incluido como parte de Windows, pero está disponible como parte de [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
-
-2. Cree un archivo por lotes con los siguientes comandos:
-
-   ```cmd
-   certmgr.exe -add [layout path]\certificates\manifestRootCertificate.cer -n "Microsoft Root Certificate Authority 2011" -s -r LocalMachine root
-
-   certmgr.exe -add [layout path]\certificates\manifestCounterSignRootCertificate.cer -n "Microsoft Root Certificate Authority 2010" -s -r LocalMachine root
-
-   certmgr.exe -add [layout path]\certificates\vs_installer_opc.RootCertificate.cer -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
-   ```
-   
-   Como alternativa, cree un archivo por lotes que utilice certutil.exe, distribuido con Windows, con los siguientes comandos:
-   
-      ```cmd
-   certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestRootCertificate.cer"
-
-   certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestCounterSignRootCertificate.cer"
-
-   certutil.exe -addstore -f "Root" "[layout path]\certificates\vs_installer_opc.RootCertificate.cer"
-   ```
-
-3. Implemente el archivo por lotes en el cliente. Este comando debe ejecutarse desde un proceso elevado.
-
-::: moniker-end
 
 ## <a name="what-are-the-certificates-files-in-the-certificates-folder"></a>¿Cuáles son los archivos de certificado de la carpeta Certificados?
 
-::: moniker range="vs-2017"
-
-Los tres archivos .P12 de esta carpeta contienen un certificado intermedio y un certificado raíz. La mayoría de los sistemas que están actualizados con Windows Update tienen estos certificados ya instalados.
-
-* **ManifestSignCertificates.p12** contiene:
-  * Certificado intermedio: **Firma de código de Microsoft PCA 2011**
-    * No es necesario. Mejora el rendimiento en algunos escenarios si está presente.
+* **manifestRootCertificate.cer** contiene:
   * Certificado raíz: **Entidad de certificación raíz de Microsoft de 2011**
-    * Necesario en sistemas de Windows 7 Service Pack 1 que no tienen las últimas actualizaciones de Windows instaladas.
-* **ManifestCounterSignCertificates.p12** contiene:
-  * Certificado intermedio: **Marca de tiempo de Microsoft PCA 2010**
-    * No es necesario. Mejora el rendimiento en algunos escenarios si está presente.
+* **manifestCounterSignRootCertificate.cer** y **vs_installer_opc.RootCertificate.cer** contienen:
   * Certificado raíz: **Entidad de certificación raíz de Microsoft de 2010**
-    * Necesario en sistemas de Windows 7 Service Pack 1 que no tienen las últimas actualizaciones de Windows instaladas.
-* **Vs_installer_opc.SignCertificates.p12** contiene:
-  * Certificado intermedio: **Firma de código de Microsoft PCA**
-    * Necesario en todos los sistemas. Tenga en cuenta que los sistemas con todas las actualizaciones aplicadas de Windows Update puede que no tengan este certificado.
-  * Certificado raíz: **Entidad de certificación raíz de Microsoft**
-    * Obligatorio. Este certificado se proporciona con sistemas que ejecutan Windows 7 o versiones posteriores.
-
-**Actualización**: para Visual Studio 2017 versión 15.8 Preview 2 o versiones posteriores, el Instalador de Visual Studio solo requiere los certificados raíz para instalarse en el sistema. Estos certificados se almacenan en archivos .cer en lugar de .p12.
-
-::: moniker-end
-
-::: moniker range="vs-2019"
-
-* **ManifestSignCertificates.cer** contiene:
-  * Certificado raíz: **Entidad de certificación raíz de Microsoft de 2011**
-    * Necesario en sistemas de Windows 7 Service Pack 1 que no tienen las últimas actualizaciones de Windows instaladas.
-* **ManifestCounterSignCertificates.cer** contiene:
-  * Certificado raíz: **Entidad de certificación raíz de Microsoft de 2010**
-    * Necesario en sistemas de Windows 7 Service Pack 1 que no tienen las últimas actualizaciones de Windows instaladas.
-* **Vs_installer_opc.SignCertificates.cer** contiene:
-  * Certificado raíz: **Entidad de certificación raíz de Microsoft**
-    * Obligatorio. Este certificado se proporciona con sistemas que ejecutan Windows 7 o versiones posteriores.
-
-El Instalador de Visual Studio solo requiere que se instalen en el sistema los certificados raíz.
-
-::: moniker-end
+ 
+El Instalador de Visual Studio solo requiere que se instalen en el sistema los certificados raíz. Todos estos certificados son necesarios en sistemas Windows 7 Service Pack 1 que no tienen instaladas las últimas actualizaciones de Windows.
 
 ## <a name="why-are-the-certificates-from-the-certificates-folder-not-installed-automatically"></a>¿Por qué los certificados de la carpeta Certificados no se instalan automáticamente?
 
@@ -199,13 +118,14 @@ Si los nombres de los certificados no estaban en las columnas **Emitido para**, 
 
 ## <a name="install-visual-studio"></a>Instalar Visual Studio
 
-Después de instalar los certificados, la implementación de Visual Studio puede continuar siguiendo las instrucciones de la sección [Implementación de una instalación de red](create-a-network-installation-of-visual-studio.md#deploy-from-a-network-installation) de la página "Creación de una instalación de red de Visual Studio".
+Después de instalar los certificados en la máquina cliente, está listo para [instalar Visual Studio desde la caché local](../install/create-an-offline-installation-of-visual-studio.md#step-3---install-visual-studio-from-the-local-cache) o para [implementar Visual Studio desde el recurso compartido de diseño de red](create-a-network-installation-of-visual-studio.md#deploy-from-a-network-installation) en la máquina cliente.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-* [Instalación de Visual Studio](install-visual-studio.md)
+* [Creación de una instalación de red de Visual Studio](../install/create-a-network-installation-of-visual-studio.md)
+* [Crear una instalación sin conexión de Visual Studio](../install/create-an-offline-installation-of-visual-studio.md)
 * [Guía del administrador de Visual Studio](visual-studio-administrator-guide.md)
 * [Usar parámetros de la línea de comandos para instalar Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
-* [Identificadores de cargas de trabajo y componentes de Visual Studio](workload-and-component-ids.md)
+

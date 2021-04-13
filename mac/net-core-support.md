@@ -5,12 +5,12 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 01/08/2020
 ms.assetid: 8B8CEBE8-00DA-4AD1-8193-77F58B57F244
-ms.openlocfilehash: 4009e6c139ef33bcd4caa01a9313695628757884
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: a04d15fc2fc768c2d6896396df5dc0f134d1720b
+ms.sourcegitcommit: 67f3bdeee583a4fb41cacc7f38839a737bfecc6b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583936"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "105735530"
 ---
 # <a name="net-core-support"></a>Compatibilidad de .NET Core
 
@@ -24,7 +24,7 @@ En la tabla siguiente se describen las versiones de .NET Core que admiten las ve
 |v2.2.200 + |✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|
 |v3.0 | | |✔︎|✔︎|✔︎|✔︎|
 |v3.1 | | | |✔︎|✔︎|✔︎|
-|v5.0 (versión preliminar) | | | | | |✔︎|
+|v5.0 | | | | | |✔︎|
 
 > [!IMPORTANT]
 > No se admiten las versiones preliminares del SDK de .NET Core. Actualice a la versión más reciente. Al instalar Visual Studio para Mac 8.4, se instalará la versión más reciente de .NET Core v3.1.

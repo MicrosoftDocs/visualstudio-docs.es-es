@@ -1,8 +1,8 @@
 ---
 title: Personalización de plantillas de proyecto y de elemento
 description: Aprenda a personalizar las plantillas de proyecto y elemento después de que se han creado.
-ms.custom: SEO-VS-2020
-ms.date: 01/02/2018
+ms.custom: SEO-VS-2021
+ms.date: 03/29/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - customizing templates [Visual Studio]
@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: 332e894372c05361ec162a3e046bd675a54b04a0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4229b0dcaf1c1cdacd7dd5a44cbb56afdfe9707d
+ms.sourcegitcommit: 9c831a7f39e5b3e3c5db000b2545715bf12225f3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954415"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105933789"
 ---
 # <a name="customize-project-and-item-templates"></a>Personalización de plantillas de proyectos y elementos
 
@@ -45,3 +45,5 @@ Por ejemplo, puede realizar las tareas siguientes:
 - [Cómo: Crear plantillas de elemento](../ide/how-to-create-item-templates.md)
 - [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>
+- [Personalización de plantillas mediante el comando `dotnet new`](/dotnet/core/tools/custom-templates/)
+- [Enumeración o modificación de proyectos de un archivo de solución .NET mediante el comando `dotnet sln`](/dotnet/core/tools/dotnet-sln/)

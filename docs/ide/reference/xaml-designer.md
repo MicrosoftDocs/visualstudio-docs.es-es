@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: 15bfae190ba2960c291dca635bfff1188ac64ab5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b0418c8f3928ae2004055db7dfa70be123719377
+ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836194"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106082531"
 ---
 # <a name="xaml-designer-options-page"></a>Página de opciones del Diseñador XAML
 
@@ -64,7 +64,18 @@ Use esta configuración para determinar cómo funciona el zoom al editar un docu
 
 Esta configuración determina el comportamiento del diseñador al editar un documento XAML.
 
-|NOMBRE|Descripción|
+## <a name="default-zoom-setting"></a>Configuración de zoom predeterminada
+
+Use esta opción para determinar el valor de zoom predeterminado para ver el documento XAML.
+
+|Nombre|Descripción|
+|-|-|
+|**Último uso**|Use el último valor de zoom empleado en todos los documentos XAML de forma predeterminada. Cuando se abre un documento XAML por primera vez, se usará la configuración "Ajustar todo" solo en esta ocasión.|
+|**Ajustar todo**|Use esta opción para establecer el valor de zoom del diseñador XAML en "Ajustar todo". Cuando se cierra y se vuelve a abrir un documento XAML, se conserva el último valor establecido en esa sesión, pero en las otras sesiones se usará de forma predeterminada "Ajustar todo".|
+
+Esta configuración determina el comportamiento del diseñador al editar un documento XAML.
+
+|Nombre|Descripción|
 |-|-|
 |**Asignar nombre automáticamente a los elementos interactivos cuando se creen**|Especifica si se proporciona un nombre predeterminado para un nuevo elemento interactivo cuando agrega uno al diseñador.|
 |**Insertar automáticamente las propiedades de diseño en la creación del elemento**|Especifica si se proporcionan propiedades de diseño para un nuevo elemento cuando agrega uno al diseñador. Las propiedades de diseño son las que afectan al diseño de un control (por ejemplo, Margin y VerticalAlignment). En el siguiente XAML, se muestra cómo se crea un botón con esta opción seleccionada y sin tenerla:<br />`<Button Content="Button" HorizontalAlignment="Left" Margin="245,56,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>`<br />`<Button Content="Button" Grid.Row="1"/>`|

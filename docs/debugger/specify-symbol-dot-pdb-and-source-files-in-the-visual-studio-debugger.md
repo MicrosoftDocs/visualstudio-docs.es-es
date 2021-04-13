@@ -2,7 +2,7 @@
 title: Definición de archivos de código fuente y símbolos (.pdb) en el depurador
 description: Más información sobre cómo configurar y administrar archivos de código fuente y símbolos en Visual Studio
 ms.custom: ''
-ms.date: 10/31/2019
+ms.date: 3/31/2021
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Debugger.Native
@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 496994c0f9d546efe8804481230081090309d47e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7ad72d2aa659f3d43bfca99c359d5db94e2d1045
+ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903571"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106083696"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Definición de archivos de código fuente y símbolos (.pdb) en el depurador de Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -246,9 +246,10 @@ Cuando esto sucede, el depurador muestra la página **No se cargaron símbolos**
 
 - Para cambiar la ruta de búsqueda, seleccione una ruta de acceso no seleccionada o seleccione **Nueva ruta de acceso** o **Nueva ruta de acceso de VSTS** y escriba o seleccione una nueva ruta de acceso. Seleccione **Cargar** para buscar de nuevo las rutas de acceso y cargar el archivo de símbolos si se encuentra.
 - Para invalidar cualquier opción de símbolo y reintentar las rutas de acceso de búsqueda, seleccione **Examinar y buscar \<executable-name>** . Se carga el archivo de símbolos, si se encuentra, o se abre el **Explorador de archivos** para que pueda seleccionar manualmente el archivo de símbolos.
-- Para abrir la página **Opciones** > **Depuración** > **Símbolos**, seleccione **Cambiar configuración de símbolos**.
-- Para mostrar el desensamblado una vez en una nueva ventana, seleccione **ver desensamblado** o elija **Cuadro de diálogo Opciones** para establecer la opción de mostrar siempre el desensamblado cuando no se encuentren archivos de código fuente o de símbolos.
+- Para abrir la página de configuración de símbolos para configurar el comportamiento, seleccione **Cambiar configuración de símbolos** (o elija **Opciones** > **Depuración** > **Símbolos**).
+- (Avanzado) Para mostrar el desensamblado en una nueva ventana una vez, seleccione **ver desensamblado** o elija **Cuadro de diálogo Opciones** para establecer la opción de mostrar siempre el desensamblado cuando no se encuentren archivos de código fuente o de símbolos. Para más información, consulte [Visualización del código de desensamblado](../debugger/how-to-use-the-disassembly-window.md).
 - Para mostrar las ubicaciones en las que se buscó y el resultado, expanda **Información de carga de símbolos**.
+- En el código de C#, también puede elegir [descompilar el código fuente](../debugger/decompilation.md) de las páginas **No se cargaron símbolos** o **No se cargaron orígenes**.
 
 Si, después de ejecutar una de las opciones, el depurador encuentra el archivo *.pdb* y puede recuperar el archivo de código fuente mediante la información del archivo *.pdb*, muestra el código fuente. En caso contrario, se muestra una página **No se cargaron orígenes** que describe el problema, con vínculos a acciones que podrían resolver el problema.
 
@@ -259,6 +260,8 @@ Puede especificar las ubicaciones en las que el depurador busca archivos de cód
 1. Seleccione la solución en el **Explorador de soluciones** y luego elija el icono **Propiedades**, presione **Alt**+**Entrar** o haga clic con el botón derecho y seleccione **Propiedades**.
 
 1. Seleccione **Depurar archivos de código fuente**.
+
+   ![Depuración de archivos de código fuente](../debugger/media/dbg-source-files.png)
 
 1. En **Directorios que contienen código fuente**, escriba o seleccione las ubicaciones del código fuente que va a buscar. Use el icono **Nueva línea** para agregar más ubicaciones, los iconos de flecha **arriba** and **abajo** para reordenarlas, o el icono **X** para eliminarlas.
 

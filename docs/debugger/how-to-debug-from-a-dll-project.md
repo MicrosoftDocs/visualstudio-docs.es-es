@@ -2,7 +2,7 @@
 title: para depurar desde un proyecto DLL | Microsoft Docs
 description: Puede iniciar la depuración de un proyecto de DLL desde el propio proyecto, especificando la aplicación que realiza la llamada en las propiedades del proyecto. Consulta este artículo para obtener más información.
 ms.custom: SEO-VS-2020
-ms.date: 10/10/2018
+ms.date: 3/30/2021
 ms.topic: how-to
 dev_langs:
 - CSharp
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f6063c5a0343951bb098c6937ce13dac7100d4a
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 7846cc3fd17b46365da59f6fe1a744032cb8ba14
+ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102160441"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106083647"
 ---
 # <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>Procedimiento para depurar desde un proyecto DLL en Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -81,7 +81,13 @@ Los proyectos de archivos DLL nativos y administrados tienen otra configuración
 
 1. Asegúrese de que el campo **Configuración de soluciones** está establecido en **Depuración**. Presione **F5**, haga clic en la flecha **Iniciar** de color verde o seleccione **Depurar** > **Iniciar depuración**.
 
-Si la depuración no alcanza los puntos de interrupción, asegúrese de que la salida del archivo DLL (de forma predeterminada, la carpeta *\<project>\Debug*) es la ubicación a la que llama la aplicación que realiza la llamada.
+Sugerencias adicionales:
+
+- Si la depuración no alcanza los puntos de interrupción, asegúrese de que la salida del archivo DLL (de forma predeterminada, la carpeta *\<project>\Debug*) es la ubicación a la que llama la aplicación que realiza la llamada.
+
+- Si quiere interrumpir el código en una aplicación de llamada administrada desde un archivo DLL nativo, o viceversa, habilite la [depuración en modo mixto](../debugger/how-to-debug-in-mixed-mode.md).
+
+- En algunos escenarios, puede que tenga que indicar al depurador dónde encontrar el código fuente. Para más información, consulte [Uso de las páginas No se cargaron símbolos o No se cargaron orígenes](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md#use-the-no-symbols-loadedno-source-loaded-pages).
 
 ## <a name="see-also"></a>Vea también
 - [Depuración de proyectos DLL](../debugger/debugging-dll-projects.md)

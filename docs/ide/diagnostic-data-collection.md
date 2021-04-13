@@ -4,17 +4,17 @@ description: Aprenda sobre los registros generados por el sistema de Visual Stu
 ms.custom: SEO-VS-2020
 ms.date: 05/24/2018
 ms.topic: conceptual
-author: jillre
-ms.author: michma
+author: TerryGLee
+ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a6df4a90d8ddb31db88bb91ff4e874cadd3c589
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d357b5e21ca86d7ccf11f576a15bbd0e7a90e466
+ms.sourcegitcommit: a339547aa2f4e0f64b7afbcc3e1ade0a4f9287d2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99894665"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106171841"
 ---
 # <a name="system-generated-logs-collected-by-visual-studio"></a>Registros generados por el sistema recopilados por Visual Studio
 
@@ -70,7 +70,7 @@ Para limitar la exposición de información personal, los creadores de extension
 
 ## <a name="opt-out-of-data-collection"></a>No participar en la recopilación de datos
 
-Dada la finalidad de los datos que recopilamos y las restricciones en cuanto a acceso y retención, se recomienda usar la configuración de privacidad predeterminada de Visual Studio y Windows. No obstante, puede [dejar de participar](../ide/visual-studio-experience-improvement-program.md#opt-in-or-out) en el Programa para la mejora de la experiencia de Visual Studio. Para no participar en la recopilación de registros generados por el sistema en todos los programas, consulte [Diagnósticos, comentarios y privacidad en Windows 10](https://privacy.microsoft.com/windows-10-feedback-diagnostics-and-privacy). Las opciones pueden variar según la versión de Windows que se utilice.
+Dada la finalidad de los datos que recopilamos y las restricciones en cuanto a acceso y retención, se recomienda usar la configuración de privacidad predeterminada de Visual Studio y Windows. No obstante, puede [dejar de participar](../ide/visual-studio-experience-improvement-program.md#opt-in-or-out) en el Programa para la mejora de la experiencia de Visual Studio. Cuando se deja de participar, no se puede optar a la recopilación de datos de diagnóstico **opcional**. Para que Visual Studio sea seguro, esté actualizado y funcione según lo esperado, es **necesario** recopilar algunos datos de diagnóstico. La recopilación de datos de diagnóstico necesaria no se verá afectada por su decisión de no participar en VSCEIP. Para no participar en la recopilación de registros generados por el sistema en todos los programas, consulte [Diagnósticos, comentarios y privacidad en Windows 10](https://privacy.microsoft.com/windows-10-feedback-diagnostics-and-privacy). Las opciones pueden variar según la versión de Windows que se utilice.
 
 ## <a name="see-also"></a>Vea también
 

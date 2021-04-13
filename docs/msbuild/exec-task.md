@@ -20,12 +20,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 785d1bcfb8fdce5b09e749dcca17ff476a5d3f48
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c3b89e074a4c67e8d16a07eb48431ebe1ade694f
+ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877166"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106083573"
 ---
 # <a name="exec-task"></a>Exec (tarea)
 
@@ -49,6 +49,7 @@ En la tabla siguiente se describen los parámetros de la tarea `Exec`.
 |`Outputs`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contiene los elementos de salida de la tarea. La tarea `Exec` no los establece por sí misma. En cambio, puede proporcionarlos como si los estableciera, para que se puedan utilizar después en el proyecto.|
 |`StdErrEncoding`|Parámetro de salida `String` opcional.<br /><br /> Especifica la codificación del flujo de error estándar de la tarea capturada. El valor predeterminado es la codificación generada de la consola actual.|
 |`StdOutEncoding`|Parámetro de salida `String` opcional.<br /><br /> Especifica la codificación del flujo de salida estándar de la tarea capturada. El valor predeterminado es la codificación generada de la consola actual.|
+|`UseUtf8Encoding`|Parámetro `String` opcional.<br /><br /> Especifica si se debe usar la página de códigos UTF8 al procesar la línea de comandos de los comandos ejecutados. Los valores válidos son `Always`, `Never` o `Detect`. El valor predeterminado es `Detect`, lo que significa que solo se usa la página de códigos UTF8 cuando hay caracteres que no son ANSI.|
 |`WorkingDirectory`|Parámetro `String` opcional.<br /><br /> Especifica el directorio en el que se ejecutará el comando.<br /><br />Predeterminado: Directorio de trabajo actual del proyecto.|
 
 [!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
