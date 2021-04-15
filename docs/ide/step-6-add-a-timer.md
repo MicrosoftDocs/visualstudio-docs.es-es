@@ -10,17 +10,17 @@ dev_langs:
 - CSharp
 - VB
 ms.assetid: 09e7930b-cab6-4a22-9a6f-72e23f489585
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f59375e9e64e6a7302d65b8c940d82b63adef54f
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: 2b983108793b07e1752b88afed90346cd5ff017f
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106214205"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107297111"
 ---
 # <a name="step-6-add-a-timer"></a>Paso 6: Agregar un temporizador
 A continuación, agregará un control <xref:System.Windows.Forms.Timer> al juego de formar parejas. Un temporizador espera un número especificado de milisegundos para desencadenar un evento conocido como *tic*. Esto es útil para iniciar o repetir una acción de forma periódica. En este caso, se usará un temporizador para permitir a los participantes elegir dos iconos y, si no coinciden, ocultarlos de nuevo trascurrido un breve período de tiempo.

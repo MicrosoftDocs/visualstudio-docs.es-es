@@ -10,17 +10,17 @@ dev_langs:
 - CSharp
 - VB
 ms.assetid: 42e1d08c-7b2e-4efd-9f47-85d6206afe35
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 341d0e54af991390a3ff5146a29d9e66ad7c737e
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: 68da08d84ea05c999a1678df4591737eb793daa6
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106214153"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107297020"
 ---
 # <a name="step-7-keep-pairs-visible"></a>Paso 7: Mantener visibles los pares
 El juego funciona bien siempre y cuando el jugador elija únicamente parejas de iconos que no coinciden. Sin embargo, piense qué sucedería si el jugador elige una pareja coincidente. En lugar de hacer que los iconos desaparezcan activando el temporizador (con el método <xref:System.Windows.Forms.Timer.Start>), el juego se debería restablecer automáticamente para dejar de realizar el seguimiento de las etiquetas mediante las variables de referencia `firstClicked` y `secondClicked`, sin restablecer los colores de las dos etiquetas elegidas.

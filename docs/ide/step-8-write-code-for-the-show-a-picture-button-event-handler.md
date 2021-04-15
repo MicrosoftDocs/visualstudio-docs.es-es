@@ -10,17 +10,17 @@ ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ed9e315bc4373fc2de9e31f0cbdd98ea274b404
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5529df07cc086ed80fad291b268e6a1a28f1d06a
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99969677"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107295421"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Paso 8: Escribir código para el controlador de eventos del botón Mostrar una imagen
 
@@ -97,9 +97,8 @@ A continuación, use IntelliSense para escribir más código y abrir un cuadro d
 
     [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
-    [!code-csharp[VbExpressTutorial1Step8#1](../ide/codesnippet/CSharp/step-8-write-code-for-the-show-a-picture-button-event-handler_1.cs)]
-
-    [!code-vb[VbExpressTutorial1Step8#1](../ide/codesnippet/VisualBasic/step-8-write-code-for-the-show-a-picture-button-event-handler_1.vb)]
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial1step8/cs/form1.cs" id="Snippet1":::
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial1step8/vb/form1.vb" id="Snippet1":::
 
 ## <a name="next-steps"></a>Pasos siguientes
 

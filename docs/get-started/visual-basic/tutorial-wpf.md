@@ -9,17 +9,17 @@ ms.topic: tutorial
 dev_langs:
 - VB
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 00b8488682674b2531bac561e9f2536e616800fb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f337551c16aa63b606c10492bab9956a92cbe141
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944373"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107295434"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Tutorial: Creación de una aplicación sencilla con Visual Basic
 
@@ -259,13 +259,13 @@ Vuelva a iniciar el depurador (presione **F5**). Debería ver la ventana **Greet
 
  Ahora, cierre la ventana de la aplicación para detener la depuración.
 
-### <a name="debug-with-breakpoints"></a>Depurar con puntos de interrupción
+### <a name="debug-with-breakpoints&quot;></a>Depurar con puntos de interrupción
 
 Puede probar el código durante la depuración. Para ello, agregue algunos puntos de interrupción. Para agregar puntos de interrupción, puede elegir **Depurar** > **Alternar puntos de interrupción**, hacer clic en el margen izquierdo del editor junto a la línea de código donde quiere que se produzca la interrupción o bien presionar **F9**.
 
-#### <a name="add-breakpoints"></a>Agregar puntos de interrupción
+#### <a name=&quot;add-breakpoints&quot;></a>Agregar puntos de interrupción
 
-1. Abra *Greetings.xaml.vb* y seleccione la línea siguiente: `MessageBox.Show("Hello.")`
+1. Abra *Greetings.xaml.vb* y seleccione la línea siguiente: `MessageBox.Show(&quot;Hello.")`
 
 2. Para agregar un punto de interrupción, presione **F9** o seleccione **Depurar** en el menú y, luego, **Alternar punto de interrupción**.
 
@@ -283,13 +283,13 @@ Puede probar el código durante la depuración. Para ello, agregue algunos punto
 
 6. En la barra de menús, elija **Depurar** > **Paso a paso para salir**.
 
-     La aplicación reanuda la ejecución y aparece un cuadro de mensaje con la palabra "Hello".
+     La aplicación reanuda la ejecución y aparece un cuadro de mensaje con la palabra "Hello&quot;.
 
 7. Elija el botón **Aceptar** en el cuadro de mensaje para cerrarlo.
 
 8. En la ventana **Greetings** , elija el botón de radio **Goodbye** y después elija el botón **Mostrar** .
 
-     La línea `MessageBox.Show("Goodbye.")` se resalta en amarillo.
+     La línea `MessageBox.Show(&quot;Goodbye.")` se resalta en amarillo.
 
 9. Presione la tecla **F5** para continuar con la depuración. Cuando aparezca el cuadro de mensaje, elija el botón **Aceptar** en el cuadro de mensaje para cerrarlo.
 

@@ -8,19 +8,19 @@ ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: quickstart
 ms.devlang: vb
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: e3c6646fca0f0b20f7fb5d5d018c297d1ece920d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0f51e3e6617578236d31090b23e8cb7c661d6043
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945557"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107296799"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>Inicio rápido: Uso de Visual Studio para crear la primera aplicación de consola de C#
 
@@ -48,17 +48,17 @@ En primer lugar, se creará un proyecto de aplicación C#. En el tipo de proyect
 
 2. En la barra de menús superior, elija **Archivo** > **Nuevo** > **Proyecto**.
 
-3. En el cuadro de diálogo **Nuevo proyecto** del panel de la izquierda, expanda **C#** y seleccione **.NET Core**. En el panel central, elija **Aplicación de consola (.NET Core)**. Luego, asigne el nombre *HelloWorld* al proyecto.
+3. En el cuadro de diálogo **Nuevo proyecto** del panel de la izquierda, expanda **C#** y seleccione **.NET Core**. En el panel central, elija **Aplicación de consola (.NET Core)** . Luego, asigne el nombre *HelloWorld* al proyecto.
 
    ![Plantilla de proyecto Aplicación de consola (.NET Core) en el cuadro de diálogo Nuevo proyecto en el IDE de Visual Studio](../ide/media/new-project-csharp-dotnetcore-helloworld-console-app.png)
 
-     Si no ve la plantilla de proyecto **Aplicación de consola (.NET Core)**, elija en el vínculo **Abrir el instalador de Visual Studio** en el panel izquierdo del cuadro de diálogo **Nuevo proyecto**.
+     Si no ve la plantilla de proyecto **Aplicación de consola (.NET Core)** , elija en el vínculo **Abrir el instalador de Visual Studio** en el panel izquierdo del cuadro de diálogo **Nuevo proyecto**.
 
    ![Elija el vínculo Abrir el Instalador de Visual Studio del cuadro de diálogo Nuevo proyecto](../ide/media/csharp-open-visual-studio-installer-hello-world.png)
 
      Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo multiplataforma de .NET Core** y, después, elija **Modificar**.
 
-     ![Carga de trabajo de desarrollo multiplataforma de .NET Core en el Instalador de Visual Studio](../ide/media/dot-net-core-xplat-dev-workload.png)
+     ![Carga de trabajo Desarrollo multiplataforma de .NET Core en el instalador de Visual Studio](../ide/media/dot-net-core-xplat-dev-workload.png)
 
 ::: moniker-end
 
@@ -77,25 +77,25 @@ En primer lugar, se creará un proyecto de aplicación C#. En el tipo de proyect
    ![Elija la plantilla C# para Aplicación de consola (.NET Framework).](../get-started/csharp/media/vs-2019/csharp-create-new-project-search-console-net-core-filtered.png)
 
    > [!NOTE]
-   > Si no ve la plantilla **Aplicación de consola (.NET Core)**, puede instalarla desde la ventana **Crear un proyecto**. En el mensaje **¿No encuentra lo que busca?**, elija el vínculo **Instalar más herramientas y características**.
+   > Si no ve la plantilla **Aplicación de consola (.NET Core)** , puede instalarla desde la ventana **Crear un proyecto**. En el mensaje **¿No encuentra lo que busca?** , elija el vínculo **Instalar más herramientas y características**.
    >
    > ![Vínculo "Instalar más herramientas y características" del mensaje "¿No encuentra lo que busca?" que aparece en la ventana "Crear proyecto"](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
    > 
    > Luego, en el Instalador de Visual Studio, elija la carga de trabajo **Desarrollo multiplataforma de .NET Core**.
    >
-   > ![Carga de trabajo de desarrollo multiplataforma de .NET Core en el Instalador de Visual Studio](./media/dot-net-core-xplat-dev-workload.png)
+   > ![Carga de trabajo Desarrollo multiplataforma de .NET Core en el instalador de Visual Studio](./media/dot-net-core-xplat-dev-workload.png)
    >
    > Después, elija el botón **Modificar** en el Instalador de Visual Studio. Es posible que se le pida que guarde su trabajo; si es así, hágalo. Seguidamente, elija **Continuar** para instalar la carga de trabajo. Luego, vuelva al paso 2 de este procedimiento "[Crear un proyecto](#create-a-project)".
 
 1. En la ventana **Configurar el nuevo proyecto**, escriba *HelloWorld* en el cuadro **Nombre del proyecto**. Luego, elija **Crear**.
 
-   ![En la ventana "Configurar el nuevo proyecto", asigne al proyecto el nombre "HelloWorld"](../get-started/csharp/media/vs-2019/csharp-name-your-helloworld-project.png)
+   ![En la ventana "Configurar el nuevo proyecto", asigne al proyecto el nombre "HelloWorld".](../get-started/csharp/media/vs-2019/csharp-name-your-helloworld-project.png)
 
    Visual Studio se abre en el nuevo proyecto.
    
 ::: moniker-end
 
-## <a name="create-the-application"></a>Creación de la aplicación
+## <a name="create-the-application"></a>Crear la aplicación
 
 ::: moniker range="vs-2017"
 

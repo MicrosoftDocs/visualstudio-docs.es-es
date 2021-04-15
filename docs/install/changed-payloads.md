@@ -3,19 +3,19 @@ title: Cuándo cambian las cargas de paquetes después de una publicación
 description: Al crear un diseño, aprenda cómo determinar si las cargas del paquete cambiaron después de la publicación de una versión.
 ms.date: 05/22/2019
 ms.topic: how-to
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: bd0013df051def28c57552c0aeb733888d55e9b6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e773ddf85df1d7f71b1ed929b8f942a5f3b36421
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99905543"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107295302"
 ---
 # <a name="package-payload-changes"></a>Cambios de carga de paquete
 
@@ -37,7 +37,7 @@ Aquí le mostramos cómo determinar si el diseño que se creó anteriormente ha 
 
     `END: Downloading [url] to [path]`
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 * [Creación de una instalación de red de Visual Studio](create-a-network-installation-of-visual-studio.md)
 * [Actualizar una instalación basada en red de Visual Studio](update-a-network-installation-of-visual-studio.md)

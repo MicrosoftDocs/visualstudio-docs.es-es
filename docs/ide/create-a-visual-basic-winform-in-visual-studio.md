@@ -6,19 +6,19 @@ ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.devlang: vb
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a5ee86c98a7e66ac43cbcfb1abbcab6bf970b08
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 974696d1ff7f8e82dab8ef2024710ce645b56c72
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970925"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107297137"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Creación de una aplicación de Windows Forms en Visual Studio con Visual Basic
 
@@ -133,7 +133,7 @@ Ya hemos agregado un control de botón para crear una acción, así que ahora va
 
 ### <a name="add-code-to-the-form"></a>Agregar código al formulario
 
-1. En la ventana **Form1.vb &#91;Diseño&#93;** , haga doble clic en el botón **Click this** para abrir la ventana **Form1.vb**.
+1. En la ventana **Form1.vb &#91;Diseño&#93;**, haga doble clic en el botón **Click this** para abrir la ventana **Form1.vb**.
 
       (También puede expandir **Form1.vb** en el **Explorador de soluciones** y luego hacer clic en **Form1**).
 

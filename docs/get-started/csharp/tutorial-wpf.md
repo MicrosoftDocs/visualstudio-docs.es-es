@@ -9,17 +9,17 @@ ms.topic: tutorial
 dev_langs:
 - CSharp
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1f3232ad0a8b7cc34abbe6d49c05944c066226da
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 419fa05ae510f3dc22ce82c3805f9f54b4e53b27
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101682845"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107295577"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Tutorial: Crear una aplicación sencilla con C\#
 
@@ -78,7 +78,7 @@ Cuando cree una aplicación en Visual Studio, primero creará un proyecto y una 
 
 1. En la ventana de inicio, elija **Crear proyecto**.
 
-   ![Visualización de la ventana "Crear un proyecto"](../../get-started/media/vs-2019/start-window-create-new-project.png "Captura de pantalla de la ventana "Crear un proyecto"")
+   ![Visualización de la ventana "Crear un proyecto"](../../get-started/media/vs-2019/start-window-create-new-project.png "Captura de pantalla de la ventana &quot;Crear un proyecto&quot;")
 
 1. En la pantalla **Crear un nuevo proyecto nuevo**, busque "WPF", elija **Aplicación WPF** y después seleccione **Siguiente**.
 
@@ -293,13 +293,13 @@ Vuelva a iniciar el depurador (presione **F5**). Debería ver la ventana **Greet
 
 Ahora, cierre la ventana de la aplicación para detener la depuración.
 
-### <a name="debug-with-breakpoints"></a>Depurar con puntos de interrupción
+### <a name="debug-with-breakpoints&quot;></a>Depurar con puntos de interrupción
 
 Puede probar el código durante la depuración. Para ello, agregue algunos puntos de interrupción. Para agregar puntos de interrupción, puede elegir **Depurar** > **Alternar puntos de interrupción**, hacer clic en el margen izquierdo del editor junto a la línea de código donde quiere que se produzca la interrupción o bien presionar **F9**.
 
-#### <a name="add-breakpoints"></a>Agregar puntos de interrupción
+#### <a name=&quot;add-breakpoints&quot;></a>Agregar puntos de interrupción
 
-1. Abra *Greetings.xaml.cs* y seleccione la línea siguiente: `MessageBox.Show("Hello.")`
+1. Abra *Greetings.xaml.cs* y seleccione la línea siguiente: `MessageBox.Show(&quot;Hello.")`
 
 1. Agregue un punto de interrupción en el menú seleccionando **Depurar** y después **Alternar puntos de interrupción**.
 

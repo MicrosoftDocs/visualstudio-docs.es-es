@@ -14,12 +14,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 75c06082a34f5dd3248024f1707cb188107863c6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b676fe015f5f513a069ffaf6ae4fac59c1a5fa68
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964893"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106213906"
 ---
 # <a name="build-loggers"></a>Registradores de compilación
 
@@ -36,19 +36,19 @@ Existen dos métodos que se pueden utilizar al implementar un registrador:
 
 El propósito de un registrador consiste en recopilar información relacionada con la progresión del proceso de compilación atendiendo a la notificación del motor de compilación y, a continuación, elaborar informes con dicha información para que resulte útil. Todos los registradores deben invalidar el método <xref:Microsoft.Build.Utilities.Logger.Initialize%2A>, que es donde se registra el registrador de eventos. En este ejemplo, el registrador se registra para los eventos <xref:Microsoft.Build.Framework.IEventSource.TargetStarted>, <xref:Microsoft.Build.Framework.IEventSource.ProjectStarted> y <xref:Microsoft.Build.Framework.IEventSource.ProjectFinished>.
 
-[!code-csharp[msbuild_SimpleConsoleLogger#2](../msbuild/codesnippet/CSharp/build-loggers_1.cs)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_Misc/msbuild_SimpleConsoleLogger/CS/msbuild_SimpleConsoleLogger.cs" id="Snippet2":::
 
 ## <a name="respond-to-events"></a>Respuesta a eventos
 
 Ahora que el registrador está registrado para eventos concretos, es necesario controlar dichos eventos cuando se producen. Para los eventos <xref:Microsoft.Build.Framework.IEventSource.ProjectStarted> y <xref:Microsoft.Build.Framework.IEventSource.ProjectFinished> eventos, el registrador simplemente escribe una frase corta y el nombre del archivo del proyecto implicado en el evento. Todos los mensajes del registrador se escriben en la ventana de la consola.
 
-[!code-csharp[msbuild_SimpleConsoleLogger#3](../msbuild/codesnippet/CSharp/build-loggers_2.cs)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_Misc/msbuild_SimpleConsoleLogger/CS/msbuild_SimpleConsoleLogger.cs" id="Snippet3":::
 
 ## <a name="respond-to-logger-verbosity-values"></a>Responder a valores de detalle del registrador
 
 En algunos casos, es posible que solo se desee registrar información de un evento si el modificador **-verbosity** de MSBuild.exe contiene un determinado valor. En este ejemplo, el controlador de eventos <xref:Microsoft.Build.Framework.IEventSource.TargetStarted> solo registra un mensaje si la propiedad <xref:Microsoft.Build.Utilities.Logger.Verbosity%2A>, que se establece mediante el modificador **-verbosity**, es igual a <xref:Microsoft.Build.Framework.LoggerVerbosity>`Detailed`.
 
-[!code-csharp[msbuild_SimpleConsoleLogger#4](../msbuild/codesnippet/CSharp/build-loggers_3.cs)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_Misc/msbuild_SimpleConsoleLogger/CS/msbuild_SimpleConsoleLogger.cs" id="Snippet4":::
 
 ## <a name="specify-a-logger"></a>Especificar un registrador
 
@@ -74,7 +74,7 @@ El ejemplo siguiente contiene el código completo del registrador.
 
 ### <a name="code"></a>Código
 
-[!code-csharp[msbuild_SimpleConsoleLogger#1](../msbuild/codesnippet/CSharp/build-loggers_4.cs)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_Misc/msbuild_SimpleConsoleLogger/CS/msbuild_SimpleConsoleLogger.cs" id="Snippet1":::
 
 ## <a name="example-2"></a>Ejemplo 2
 
@@ -84,7 +84,7 @@ El ejemplo siguiente muestra cómo implementar un registrador que escribe el reg
 
 ### <a name="code"></a>Código
 
-[!code-csharp[msbuild_BasicLogger#1](../msbuild/codesnippet/CSharp/build-loggers_5.cs)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_Misc/msbuild_BasicLogger/CS/msbuild_BasicLogger.cs" id="Snippet1":::
 
 ## <a name="see-also"></a>Consulte también
 
