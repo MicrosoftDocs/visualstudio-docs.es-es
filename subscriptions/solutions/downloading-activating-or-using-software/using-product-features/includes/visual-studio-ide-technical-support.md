@@ -10,18 +10,18 @@ user.type: subscriber
 tags: download, activate, licensing
 subscription.type: vl, cloud, retail, partner
 sap.id: af210210-e3e1-2b2e-8d79-9bd20e851241
-ms.openlocfilehash: ac57b500685ae885d5cd68c5901a6ee2617462d0
-ms.sourcegitcommit: bbf532e50b9140724c1a0f66f9a35862bf6e4a97
+ms.openlocfilehash: 755574a0ae60b078a2ea5414e43e16c80c91fa67
+ms.sourcegitcommit: f6aa84e34c2f41877b84c01e7ead956a1b4c24f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "107291308"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "107511683"
 ---
 ## <a name="visual-studio-ide-technical-support"></a>Soporte técnico del IDE de Visual Studio  
 
 El soporte técnico para las suscripciones de Visual Studio ofrece ayuda con las ventas, las suscripciones, las cuentas y la facturación. Si tiene alguna pregunta o problema técnico con el IDE de Visual Studio, deberá dirigirse al [servicio de soporte técnico de Visual Studio](https://visualstudio.microsoft.com/vs/support/). Antes de usar los [incidentes de soporte técnico limitados Visual Studio](https://docs.microsoft.com/visualstudio/subscriptions/vs-tech-support) que pueden incluirse en la suscripción de Visual Studio, se recomienda probar otros recursos en línea.
 
-En relación con los errores en la instalación de Visual Studio, vea [Solución de problemas de instalación y actualización de Visual Studio](https://docs.microsoft.com/visualstudio/install/troubleshooting-installation-issues?view=vs-2019) para obtener instrucciones paso a paso. También puede probar la opción de soporte técnico de [chat de instalación](https://visualstudio.microsoft.com/vs/support/#talktous) para incidencias relacionadas con la instalación (solo en inglés).
+En relación con los errores en la instalación de Visual Studio, vea [Solución de problemas de instalación y actualización de Visual Studio](https://docs.microsoft.com/visualstudio/install/troubleshooting-installation-issues) para obtener instrucciones paso a paso. También puede probar la opción de soporte técnico de [chat de instalación](https://visualstudio.microsoft.com/vs/support/#talktous) para incidencias relacionadas con la instalación (solo en inglés).
 
 
 ## <a name="developer-community--visual-studio-ide"></a>Comunidad de desarrolladores | IDE de Visual Studio
