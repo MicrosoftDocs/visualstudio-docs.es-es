@@ -1,8 +1,8 @@
 ---
-title: Shells de línea de comandos para desarrolladores
-description: Obtenga información sobre cómo buscar y usar el símbolo del sistema para desarrolladores de Visual Studio, PowerShell para desarrolladores de Visual Studio y el terminal de Visual Studio, que le permiten usar las herramientas de .NET y C++ más fácilmente.
-ms.date: 03/04/2021
-ms.custom: contperf-fy21q3
+title: Shells de línea de comandos y símbolo del sistema para desarrolladores
+description: Inicio desde el menú Herramientas > Línea de comandos. Símbolo del sistema para desarrolladores de Visual Studio, PowerShell para desarrolladores y un terminal le permiten usar las herramientas de .NET y C++ con más facilidad.
+ms.date: 04/11/2021
+ms.custom: contperf-fy21q4
 helpviewer_keywords:
 - Visual Studio command prompt
 - command prompt, Visual Studio
@@ -11,27 +11,21 @@ helpviewer_keywords:
 - Visual Studio terminal
 ms.assetid: 94fcf524-9045-4993-bfb2-e2d8bad44219
 no-loc: cmdlet
-ms.openlocfilehash: fb2c99037577528b77ab5c1b0c74bf7af9e73d1b
-ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
+ms.openlocfilehash: 57cbc93f4b6e8cf64dd5149462788e0cde833350
+ms.sourcegitcommit: 52b093e000334f53d87c6165d1418347e4f45dec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104672330"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "107221736"
 ---
-# <a name="developer-command-prompt-and-developer-powershell"></a>Símbolo del sistema para desarrolladores y PowerShell para desarrolladores
+# <a name="visual-studio-developer-command-prompt-and-developer-powershell"></a>Símbolo del sistema para desarrolladores de Visual Studio y PowerShell para desarrolladores
 
 Visual Studio 2019 incluye dos shells de línea de comandos para desarrolladores:
 
 - **Símbolo del sistema para desarrolladores de Visual Studio**: se trata de un símbolo del sistema estándar con ciertas variables de entorno establecidas para facilitar el uso de las herramientas de desarrollo de línea de comandos. Está disponible desde Visual Studio 2015.
+
 - **PowerShell de Visual Studio para desarrolladores**: es más eficaz que un símbolo del sistema. Por ejemplo, puede pasar la salida de un comando (denominado *cmdlet* ) a otro cmdlet. Este shell tiene las mismas variables de entorno establecidas que el Símbolo del sistema para desarrolladores. Está disponible desde Visual Studio 2019.
 
-Ambos shells tienen conjuntos de variables de entorno específicas que le permiten usar las herramientas de desarrollo de línea de comandos más fácilmente. Después de abrir uno de estos shells, puede escribir los comandos para diferentes utilidades sin tener que saber dónde se encuentran. Los comandos que se pueden ejecutar son:
-
-- [`MSBuild`](../../msbuild/msbuild-command-line-reference.md), para crear un proyecto o una solución.
-- [Herramientas de .NET Framework](/dotnet/framework/tools/index), como [`clrver`](/dotnet/framework/tools/clrver-exe-clr-version-tool) y [`ildasm`](/dotnet/framework/tools/ildasm-exe-il-disassembler).
-- Herramientas de compilación de C/C++, como [`CL`](/cpp/build/reference/compiler-command-line-syntax) y [`NMAKE`](/cpp/build/reference/running-nmake).
-- Otras herramientas de compilación de C/C++, como [`LIB`](/cpp/build/reference/lib-reference) y [`DUMPBIN`](/cpp/build/reference/dumpbin-reference).
-- [Comandos de la CLI de .NET](/dotnet/core/tools/index), como [`dotnet`](/dotnet/core/tools/dotnet) y [`dotnet run`](/dotnet/core/tools/dotnet-run). (Estos comandos están disponibles también desde un símbolo del sistema normal).
 
 :::image type="content" source="media/developer-command-prompt-for-vs/command-prompt.png" alt-text="Símbolo del sistema para desarrolladores para Visual Studio que muestra la herramienta clrver":::
 
@@ -41,7 +35,22 @@ A partir de la versión 16.5 de Visual Studio 2019, Visual Studio incluye un
 
 Al abrir uno de los shells de desarrollador desde Visual Studio, como una aplicación independiente o en la ventana de terminal, se abre en el directorio de la solución actual (si tiene una solución cargada). Este comportamiento facilita la ejecución de comandos en la solución o en sus proyectos.
 
-## <a name="start-the-shell-from-inside-visual-studio"></a>Inicio del símbolo del sistema desde Visual Studio
+Ambos shells tienen conjuntos de variables de entorno específicas que le permiten usar las herramientas de desarrollo de línea de comandos más fácilmente. Después de abrir uno de estos shells, puede escribir los comandos para diferentes utilidades sin tener que saber dónde se encuentran. 
+
+|Comandos más usados|Descripción|
+|--|--|
+|[`MSBuild`](../../msbuild/msbuild-command-line-reference.md)|Creación de un proyecto o una solución|
+|[`clrver`](/dotnet/framework/tools/clrver-exe-clr-version-tool)| [Herramientas de .NET Framework](/dotnet/framework/tools/index) para CLR.|
+|[`ildasm`](/dotnet/framework/tools/ildasm-exe-il-disassembler)|Una [herramienta de .NET Framework](/dotnet/framework/tools/index) para desensamblador.|
+|[`dotnet`](/dotnet/core/tools/dotnet)|Un [comando de la CLI de .NET](/dotnet/core/tools/index)|
+|[`dotnet run`](/dotnet/core/tools/dotnet-run)|Un [comando de la CLI de .NET](/dotnet/core/tools/index)|
+|[`CL`](/cpp/build/reference/compiler-command-line-syntax)|Herramienta de compilación de C/C++|
+|[`NMAKE`](/cpp/build/reference/running-nmake)|Herramienta de compilación de C/C++|
+|[`LIB`](/cpp/build/reference/lib-reference)| Herramienta de compilación de C/C++|
+|[`DUMPBIN`](/cpp/build/reference/dumpbin-reference)| Herramienta de compilación de C/C++|
+
+
+## <a name="start-in-visual-studio"></a>Inicio en Visual Studio
 
 Siga estos pasos para abrir Símbolo del sistema para desarrolladores o PowerShell para desarrolladores desde Visual Studio:
 
@@ -51,9 +60,9 @@ Siga estos pasos para abrir Símbolo del sistema para desarrolladores o PowerShe
 
    ![Elemento de menú del símbolo del sistema en Visual Studio](./media/developer-command-prompt-for-vs/vs-menu.png)
 
-## <a name="use-the-windows-start-menu"></a>Uso del menú Inicio de Windows
+## <a name="start-from-windows-menu"></a>Inicio desde el menú de Windows
 
-Es posible que tenga varios símbolos del sistema, en función de la versión de Visual Studio y de los SDK y las cargas de trabajo adicionales que haya instalado. Si los pasos siguientes no sirven, puede intentar [buscar manualmente los archivos en la máquina](#manually-locate-the-file) o [ejecutar el shell desde Visual Studio](#start-the-shell-from-inside-visual-studio).
+Otra manera de iniciar los shells es desde el menú Inicio. Es posible que tenga varios símbolos del sistema, en función de la versión de Visual Studio y de los SDK y las cargas de trabajo adicionales que haya instalado. 
 
 ### <a name="windows-10"></a>Windows 10
 
@@ -85,7 +94,7 @@ Es posible que tenga varios símbolos del sistema, en función de la versión de
 
 Si tiene instalados otros SDK, como el [SDK de Windows 10](https://developer.microsoft.com/windows/downloads/windows-10-sdk) o [versiones anteriores](https://developer.microsoft.com/windows/downloads/sdk-archive), es posible que vea símbolos del sistema adicionales. Consulte la documentación de cada herramienta para conocer la versión del símbolo del sistema que debe utilizar.
 
-## <a name="manually-locate-the-file"></a>Localización manual del archivo
+## <a name="start-from-file-browser"></a>Inicio desde el explorador de archivos 
 
 Normalmente, los accesos directos de los shells que haya instalado se colocan en la carpeta **Menú Inicio** en Visual Studio; por ejemplo, en *%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2019\Visual Studio Tools*. Pero si la búsqueda del símbolo del sistema no produce los resultados esperados, puede intentar buscar manualmente los archivos en el equipo.
 

@@ -17,12 +17,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 46eae980a1dafc8e9b7f95f5d40593e57045cc01
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0e6b984a9f885f137cf387837a242cc1207e45ae
+ms.sourcegitcommit: 52b093e000334f53d87c6165d1418347e4f45dec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971328"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "107221723"
 ---
 # <a name="intellisense-in-visual-studio"></a>IntelliSense en Visual Studio
 
@@ -68,7 +68,7 @@ Cuando se selecciona un miembro en el cuadro **Lista de miembros**, también apa
 
 ![Información de parámetros en un archivo de código de C&#35;](../ide/media/vs2015_paraminfo.png)
 
-Para invocar manualmente la información rápida, elija **Edición** > **IntelliSense** > **Información rápida**, presione **CTRL**+**I** o seleccione el botón **Información rápida** de la barra de herramientas del editor.
+Para invocar manualmente la información rápida, elija **Edición** > **IntelliSense** > **Información rápida**, presione **CTRL**+**K**, **CTRL**+**I** o seleccione el botón **Información rápida** de la barra de herramientas del editor.
 
 Si una función está sobrecargada, es posible que IntelliSense no muestre información para todas las formas de la sobrecarga.
 
@@ -93,7 +93,7 @@ Los iconos de IntelliSense pueden transmitir un significado adicional con los mo
 | ![Modificador de icono interno](../ide/media/intellisenseInternalModifier.png)       |    Clase interna    |    El acceso está limitado al ensamblado actual.    |
 |![Modificador de icono privado](../ide/media/intellisensePrivateModifier.png)        |    Clase privada    |    El acceso está limitado a la clase contenedora o a los tipos derivados de la clase contenedora que hay en el ensamblado actual. (Disponible desde C# 7.2.)    |
 
-## <a name="troubleshoot-intellisense"></a>Solución de problemas de IntelliSense
+## <a name="troubleshoot-intellisense&quot;></a>Solución de problemas de IntelliSense
 
 En algunos casos, es posible que las opciones de IntelliSense no funcionen como esperaba.
 
@@ -104,7 +104,7 @@ En algunos casos, es posible que las opciones de IntelliSense no funcionen como 
 **El cursor está en un literal de cadena.** No puede usar IntelliSense si el cursor está en las comillas de un literal de cadena, como en el siguiente ejemplo:
 
 ```cpp
-MessageBox( hWnd, "String literal|")
+MessageBox( hWnd, &quot;String literal|")
 ```
 
 **Las opciones automáticas están desactivadas.** De forma predeterminada, IntelliSense funciona automáticamente, pero puede deshabilitarlo. También puede invocar una característica IntelliSense incluso cuando la finalización de instrucciones automática se encuentre deshabilitada.
