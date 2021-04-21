@@ -1,6 +1,6 @@
 ---
-title: 'Cómo: cerrar documentos mediante programación'
-description: Obtenga información acerca de cómo puede cerrar el documento activo o puede especificar un Microsoft Office documento de Word para cerrarlo.
+title: 'Cómo: Cerrar documentos mediante programación'
+description: Obtenga información sobre cómo puede cerrar el documento activo o puede especificar un Microsoft Office word para cerrarlo.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 96a18245e477000e1d4969a3e1e597443c6f3372
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1b31a35ac1fa452f526d109dd93ca8264f78947b
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903723"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825360"
 ---
-# <a name="how-to-programmatically-close-documents"></a>Cómo: cerrar documentos mediante programación
+# <a name="how-to-programmatically-close-documents"></a>Cómo: Cerrar documentos mediante programación
   Puede cerrar el documento activo o especificar el documento que se va a cerrar.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
@@ -37,8 +37,8 @@ ms.locfileid: "99903723"
     > [!NOTE]
     > Este ejemplo pasa el valor <xref:Microsoft.Office.Interop.Word.WdSaveOptions.wdDoNotSaveChanges> al parámetro *SaveChanges* para cerrar sin guardar los cambios ni preguntar al usuario.
 
-     [!code-vb[Trin_VstcoreWordAutomation#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#3)]
-     [!code-csharp[Trin_VstcoreWordAutomation#3](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#3)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet3":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet3":::
 
 ### <a name="to-close-the-active-document-in-a-vsto-add-in"></a>Para cerrar el documento activo en un complemento de VSTO
 
@@ -47,10 +47,10 @@ ms.locfileid: "99903723"
     > [!NOTE]
     > Este ejemplo pasa el valor <xref:Microsoft.Office.Interop.Word.WdSaveOptions.wdDoNotSaveChanges> al parámetro *SaveChanges* para cerrar sin guardar los cambios ni preguntar al usuario.
 
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#3)]
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#3](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#3)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb" id="Snippet3":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs" id="Snippet3":::
 
-## <a name="close-a-document-that-you-specify-by-name"></a>Cerrar un documento que se especifica por nombre
+## <a name="close-a-document-that-you-specify-by-name"></a>Cierre un documento que especifique por nombre.
  La manera en que se cierra un documento que se especifica por nombre es el mismo para las personalizaciones de nivel de documento y las de complemento de VSTO.
 
 ### <a name="to-close-a-document-that-you-specify-by-name"></a>Para cerrar un documento que se especifica por el nombre
@@ -60,12 +60,12 @@ ms.locfileid: "99903723"
     > [!NOTE]
     > Este ejemplo pasa el valor <xref:Microsoft.Office.Interop.Word.WdSaveOptions.wdDoNotSaveChanges> al parámetro *SaveChanges* para cerrar sin guardar los cambios ni preguntar al usuario.
 
-     [!code-vb[Trin_VstcoreWordAutomation#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#4)]
-     [!code-csharp[Trin_VstcoreWordAutomation#4](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#4)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet4":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet4":::
 
-## <a name="see-also"></a>Vea también
-- [Cómo: abrir documentos existentes mediante programación](../vsto/how-to-programmatically-open-existing-documents.md)
-- [Cómo: guardar documentos mediante programación](../vsto/how-to-programmatically-save-documents.md)
-- [Información general sobre elementos y controles host](../vsto/host-items-and-host-controls-overview.md)
-- [Limitaciones de programación de elementos y controles host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
-- [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)
+## <a name="see-also"></a>Consulte también
+- [Cómo: Abrir documentos existentes mediante programación](../vsto/how-to-programmatically-open-existing-documents.md)
+- [Cómo: Guardar documentos mediante programación](../vsto/how-to-programmatically-save-documents.md)
+- [Introducción a los elementos host y los controles host](../vsto/host-items-and-host-controls-overview.md)
+- [Limitaciones mediante programación de elementos host y controles host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [Parámetros opcionales en soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)

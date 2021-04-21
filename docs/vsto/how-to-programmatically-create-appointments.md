@@ -1,6 +1,6 @@
 ---
-title: 'Cómo: crear citas mediante programación'
-description: Obtenga información sobre cómo puede crear citas mediante programación y, a continuación, agregar destinatarios a la solicitud de reunión de cita en Microsoft Outlook.
+title: 'Cómo: Crear citas mediante programación'
+description: Obtenga información sobre cómo puede crear citas mediante programación y, a continuación, agregar destinatarios a la solicitud de reunión de citas en Microsoft Outlook.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,22 +15,22 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2d9e9ccd2d69c1f0956a3160589ab2204059d83e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8b2125291331de76605c0bcad449b97f36a640cf
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964100"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827635"
 ---
-# <a name="how-to-programmatically-create-appointments"></a>Cómo: crear citas mediante programación
+# <a name="how-to-programmatically-create-appointments"></a>Cómo: Crear citas mediante programación
   En este ejemplo se crea una cita y se agregan destinatarios a la solicitud de reunión de cita.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="example"></a>Ejemplo
- [!code-csharp[Trin_OL_CreateAppts#1](../vsto/codesnippet/CSharp/Trin_OL_CreateAppts/thisaddin.cs#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OL_CreateAppts/thisaddin.cs" id="Snippet1":::
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Trabajar con elementos de calendario](../vsto/working-with-calendar-items.md)
-- [Cómo: crear un calendario personalizado mediante programación](../vsto/how-to-programmatically-create-a-custom-calendar.md)
-- [Cómo: agregar una entrada a contactos de Outlook mediante programación](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)
+- [Cómo: Crear un calendario personalizado mediante programación](../vsto/how-to-programmatically-create-a-custom-calendar.md)
+- [Cómo: Agregar mediante programación una entrada a contactos de Outlook](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)

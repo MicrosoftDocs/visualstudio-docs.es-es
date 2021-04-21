@@ -1,6 +1,6 @@
 ---
 title: Eventos en proyectos de Office
-description: Obtenga información sobre cómo cada plantilla de proyecto de Office genera varios controladores de eventos y cómo esos controladores de eventos son ligeramente diferentes de los controladores de eventos de los complementos de VSTO.
+description: Obtenga información sobre cómo cada plantilla de proyecto de Office genera varios controladores de eventos y cómo esos controladores de eventos son ligeramente diferentes de los controladores de eventos para los complementos de VSTO.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -34,12 +34,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7bf4da3f0b2dd9cbab960a779690aa752744cdae
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: be1625be3d8c3fce409562be948c83a34d40d7b1
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910322"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825685"
 ---
 # <a name="events-in-office-projects"></a>Eventos en proyectos de Office
   Cada plantilla de proyecto de Office genera automáticamente varios controladores de eventos. Los controladores de eventos de las personalizaciones de nivel de documento son ligeramente diferentes de los controladores de eventos de los complementos de VSTO.
@@ -50,7 +50,7 @@ ms.locfileid: "99910322"
  Visual Studio proporciona código generado subyacente en documentos nuevos o existentes o en hojas de cálculo para las personalizaciones de nivel de documento. Este código genera dos eventos diferentes: **Startup** y **Shutdown**.
 
 ### <a name="startup-event"></a>Startup (evento)
- El evento **Startup** se desencadena para cada uno de los elementos host (documento, libro u hoja de cálculo) cuando el documento está en ejecución y ya se ha ejecutado todo el código de inicialización del ensamblado. Es lo último que se ejecuta en el constructor de la clase en la que se ejecuta el código. Para obtener más información sobre los elementos host, vea [información general sobre elementos y controles](../vsto/host-items-and-host-controls-overview.md)host.
+ El evento **Startup** se desencadena para cada uno de los elementos host (documento, libro u hoja de cálculo) cuando el documento está en ejecución y ya se ha ejecutado todo el código de inicialización del ensamblado. Es lo último que se ejecuta en el constructor de la clase en la que se ejecuta el código. Para obtener más información sobre los elementos host, vea [Host items and host controls overview (Introducción a](../vsto/host-items-and-host-controls-overview.md)los controles host y elementos host).
 
  Cuando se crea un proyecto de nivel de documento, Visual Studio crea controladores de eventos para el evento **Startup** en los archivos de código generado:
 
@@ -86,21 +86,21 @@ ms.locfileid: "99910322"
 > [!NOTE]
 > No quite controles mediante programación durante el controlador de eventos **Shutdown** del documento. Los elementos de la interfaz de usuario del documento ya no están disponibles cuando se produce el evento **Shutdown** . Si desea quitar controles antes de que se cierre la aplicación, agregue el código a otro controlador de eventos, como **BeforeClose** o **BeforeSave**.
 
-### <a name="event-handler-method-declarations"></a>Declaraciones de método de controlador de eventos
+### <a name="event-handler-method-declarations"></a>Declaraciones del método de controlador de eventos
  Todas las declaraciones del método de controlador de eventos reciben los mismos argumentos que se les pasan: *sender* y *e*. En Excel, el argumento *sender* hace referencia a la hoja, como `Sheet1` o `Sheet2`; en Word, el argumento *sender* hace referencia al documento. El argumento *e* hace referencia a los argumentos estándar de un evento, que no se usan en este caso.
 
  El ejemplo de código siguiente muestra los controladores de eventos predeterminados en los proyectos de nivel de documento para Word.
 
- [!code-vb[Trin_VstcoreWordAutomation#121](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#121)]
- [!code-csharp[Trin_VstcoreWordAutomation#121](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#121)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet121":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet121":::
 
  El ejemplo de código siguiente muestra los controladores de eventos predeterminados en los proyectos de nivel de documento para Excel.
 
 > [!NOTE]
 > En el ejemplo de código siguiente se muestran los controladores de eventos de la clase `Sheet1` . Los nombres de los controladores de eventos de otras clases del elemento host corresponden al nombre de la clase. Por ejemplo, en la clase `Sheet2` , el controlador de eventos **Startup** se denomina `Sheet2_Startup`. En la clase `ThisWorkbook` , el controlador de eventos **Startup** se denomina `ThisWorkbook_Startup`.
 
- [!code-csharp[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#83)]
- [!code-vb[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#83)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet83":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet83":::
 
 ### <a name="order-of-events-in-document-level-excel-projects"></a>Orden de eventos en proyectos de Excel de nivel de documento
  Los controladores de eventos **Startup** en proyectos de Excel se llaman en este orden:
@@ -130,21 +130,21 @@ ms.locfileid: "99910322"
     El orden se determina cuando se compila el proyecto. Si el usuario reorganiza las hojas en tiempo de ejecución, no cambia el orden en que los eventos se desencadenan la siguiente vez que se abre o cierra el libro.
 
 ## <a name="vsto-add-in-projects"></a>Proyectos de complemento de VSTO
- Visual Studio proporciona código generado en los complementos de VSTO. Este código genera dos eventos diferentes: <xref:Microsoft.Office.Tools.AddInBase.Startup> y <xref:Microsoft.Office.Tools.AddInBase.Shutdown> .
+ Visual Studio proporciona código generado en complementos de VSTO. Este código genera dos eventos diferentes: <xref:Microsoft.Office.Tools.AddInBase.Startup> y <xref:Microsoft.Office.Tools.AddInBase.Shutdown> .
 
 ### <a name="startup-event"></a>Startup (evento)
  El evento <xref:Microsoft.Office.Tools.AddIn.Startup> se desencadena cuando se ha cargado el complemento de VSTO y se ha ejecutado todo el código de inicialización del ensamblado. Este evento está controlado por el método `ThisAddIn_Startup` en el archivo de código generado.
 
  El código del controlador de eventos `ThisAddIn_Startup` es el primer código de usuario que se ejecuta, a menos que el complemento de VSTO invalide el método <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> . En ese caso, se llama al controlador de eventos `ThisAddIn_Startup` después de <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A>.
 
- No agregue código en el `ThisAdd-In_Startup` controlador de eventos si el código requiere que un documento esté abierto. En su lugar, agregue ese código a un evento que sea generado por la aplicación de Office cuando un usuario cree o abra un documento. Para obtener más información, vea [acceso a un documento cuando se inicia la aplicación de Office](../vsto/programming-vsto-add-ins.md#AccessingDocuments).
+ No agregue código en el controlador `ThisAdd-In_Startup` de eventos si el código requiere que se abra un documento. En su lugar, agregue ese código a un evento que sea generado por la aplicación de Office cuando un usuario cree o abra un documento. Para obtener más información, vea [Acceso a un documento cuando se inicia la aplicación de Office.](../vsto/programming-vsto-add-ins.md#AccessingDocuments)
 
- Para obtener más información sobre la secuencia de inicio de los complementos de VSTO, consulte arquitectura de los complementos [de VSTO](../vsto/architecture-of-vsto-add-ins.md).
+ Para obtener más información sobre la secuencia de inicio de complementos de VSTO, vea Arquitectura de complementos de [VSTO.](../vsto/architecture-of-vsto-add-ins.md)
 
 ### <a name="shutdown-event"></a>Shutdown (evento)
  El evento <xref:Microsoft.Office.Tools.AddInBase.Shutdown> se desencadena cuando el dominio de aplicación en el que se ha cargado el código está a punto de descargarse. Este evento está controlado por el método `ThisAddIn_Shutdown` en el archivo de código generado. Este controlador de eventos es el último código de usuario que se ejecuta cuando se descarga el complemento de VSTO.
 
-#### <a name="shutdown-event-in-outlook-vsto-add-ins"></a>Evento shutdown en los complementos de VSTO de Outlook
+#### <a name="shutdown-event-in-outlook-vsto-add-ins"></a>Evento de apagado en complementos vsTO de Outlook
  El evento <xref:Microsoft.Office.Tools.AddInBase.Shutdown> solo se desencadena cuando el usuario deshabilita el complemento de VSTO mediante el cuadro de diálogo Complementos COM de Outlook. No se desencadena cuando se cierra Outlook. Si tiene código que se debe ejecutar cuando Outlook se cierra, controle uno de los siguientes eventos:
 
 - El evento <xref:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event.Quit> del objeto <xref:Microsoft.Office.Interop.Outlook.Application> .
@@ -152,11 +152,11 @@ ms.locfileid: "99910322"
 - El evento <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> del objeto <xref:Microsoft.Office.Interop.Outlook.Explorer> .
 
 > [!NOTE]
-> Puede modificar el Registro para forzar a Outlook a desencadenar el evento <xref:Microsoft.Office.Tools.AddInBase.Shutdown> cuando salga. Sin embargo, si un administrador cambia esta configuración, cualquier código que agregue al método `ThisAddIn_Shutdown` dejará de ejecutarse al salir de Outlook. Para obtener más información, consulte [cambios de apagado para Outlook 2010](/previous-versions/office/developer/office-2010/ee720183(v=office.14)).
+> Puede modificar el Registro para forzar a Outlook a desencadenar el evento <xref:Microsoft.Office.Tools.AddInBase.Shutdown> cuando salga. Sin embargo, si un administrador cambia esta configuración, cualquier código que agregue al método `ThisAddIn_Shutdown` dejará de ejecutarse al salir de Outlook. Para obtener más información, vea [Shutdown changes for Outlook 2010 ( Cambios de apagado para Outlook 2010).](/previous-versions/office/developer/office-2010/ee720183(v=office.14))
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Desarrollo de soluciones de Office](../vsto/developing-office-solutions.md)
-- [Cómo: crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
-- [Personalizaciones de nivel de documento de programa](../vsto/programming-document-level-customizations.md)
-- [Complementos de VSTO de programa](../vsto/programming-vsto-add-ins.md)
-- [Información general de plantillas de proyecto de Office](../vsto/office-project-templates-overview.md)
+- [Cómo: Crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
+- [Personalizaciones de nivel de documento del programa](../vsto/programming-document-level-customizations.md)
+- [Programación de complementos VSTO](../vsto/programming-vsto-add-ins.md)
+- [Introducción a las plantillas de proyecto de Office](../vsto/office-project-templates-overview.md)

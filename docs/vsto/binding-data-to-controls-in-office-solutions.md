@@ -1,6 +1,6 @@
 ---
-title: Enlazar datos a controles en soluciones de Office
-description: Obtenga información sobre cómo puede enlazar controles de Windows Forms y controles host en un documento de Microsoft Office Word o en una hoja de cálculo de Excel a un origen de datos.
+title: Enlace de datos a controles en soluciones de Office
+description: Obtenga información sobre cómo puede enlazar controles Windows Forms host en un documento de Microsoft Office Word o una hoja de cálculo de Excel a un origen de datos.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -20,21 +20,21 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 459c50b5f8135756f85de852a62de44b3878148d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ccc45e9ec389e265e69c81baaf569aa3eb3c978b
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882484"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825633"
 ---
-# <a name="bind-data-to-controls-in-office-solutions"></a>Enlazar datos a controles en soluciones de Office
+# <a name="bind-data-to-controls-in-office-solutions"></a>Enlace de datos a controles en soluciones de Office
   Puede enlazar controles de Windows Forms y *controles host* en un documento de Microsoft Office Word o una hoja de cálculo de Microsoft Office Excel a un origen de datos, de forma que los controles de muestren automáticamente los datos. Puede enlazar datos a controles en proyectos de nivel de aplicación y de nivel de documento.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
- Los controles host extienden objetos que están en los modelos de objetos de Word y Excel, como los controles de contenido de Word y los intervalos con nombre en Excel. Para obtener más información, vea [información general sobre elementos y controles host](../vsto/host-items-and-host-controls-overview.md).
+ Los controles host extienden objetos que están en los modelos de objetos de Word y Excel, como los controles de contenido de Word y los intervalos con nombre en Excel. Para obtener más información, vea [Introducción a los controles host y elementos host.](../vsto/host-items-and-host-controls-overview.md)
 
- Los controles de Windows Forms y host utilizan el modelo de enlace de datos de Windows Forms, que admite tanto *enlace de datos simple* como *enlace de datos complejo* a orígenes de datos como conjuntos de datos y tablas de datos. Para obtener información completa sobre el modelo de enlace de datos en Windows Forms, vea [Data BIND and Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).
+ Los controles de Windows Forms y host utilizan el modelo de enlace de datos de Windows Forms, que admite tanto *enlace de datos simple* como *enlace de datos complejo* a orígenes de datos como conjuntos de datos y tablas de datos. Para obtener información completa sobre el modelo de enlace de datos Windows Forms, vea [Enlace de datos y Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).
 
 ## <a name="simple-data-binding"></a>Enlace de datos simple
  Un enlace de datos simple existe si un control de propiedad se enlaza a un único elemento de datos, como un valor de una tabla de datos. Por ejemplo, el control <xref:Microsoft.Office.Tools.Excel.NamedRange> tiene una propiedad <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> que se puede enlazar a un campo de un conjunto de datos. Cuando se cambia el campo del conjunto de datos, también cambia el valor del intervalo con nombre. Todos los controles host, excepto el control <xref:Microsoft.Office.Tools.Word.XMLNodes> , admiten el enlace de datos simple. El control <xref:Microsoft.Office.Tools.Word.XMLNodes> es una colección y, por tanto, no admite el enlace de datos.
@@ -43,27 +43,27 @@ ms.locfileid: "99882484"
 
  En el ejemplo siguiente se muestra cómo enlazar la propiedad <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> a un elemento de datos en un proyecto de nivel de documento.
 
- [!code-vb[Trin_BindableComponent#4](../vsto/codesnippet/VisualBasic/Trin_BindableComponent/Sheet1.vb#4)]
- [!code-csharp[Trin_BindableComponent#4](../vsto/codesnippet/CSharp/Trin_BindableComponent/Sheet1.cs#4)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_BindableComponent/Sheet1.vb" id="Snippet4":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_BindableComponent/Sheet1.cs" id="Snippet4":::
 
- Para ver los tutoriales que muestran el enlace de datos simple, vea [Tutorial: enlace de datos simple en un proyecto de nivel](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md) de documento para un proyecto de nivel de documento y [Tutorial: enlace de datos simple en](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md) un proyecto de complemento de VSTO para un proyecto de complemento de VSTO.
+ Para ver tutoriales que muestran un enlace de datos simple, vea [Tutorial:](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md) Enlace de datos simple en un proyecto de nivel de documento para un proyecto de nivel de documento y Tutorial: Enlace de datos simple en un proyecto de complemento de VSTO para un proyecto de complemento de [VSTO.](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)
 
 ## <a name="complex-data-binding"></a>Enlace de datos complejo
  El enlace de datos complejo existe cuando una propiedad de control está enlazada a más de un elemento de datos, como varias columnas de una tabla de datos. El control <xref:Microsoft.Office.Tools.Excel.ListObject> para Excel es el único control host que admite enlace de datos complejo. También hay muchos controles de Windows Forms que admiten enlace de datos complejo, como el control <xref:System.Windows.Forms.DataGridView> .
 
- Para realizar el enlace de datos complejo, establezca la propiedad `DataSource` del control a un objeto de origen de datos que sea compatible con el enlace de datos complejo. Por ejemplo, la propiedad <xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A> del control <xref:Microsoft.Office.Tools.Excel.ListObject> puede estar enlazada a varias columnas de una tabla de datos. Todos los datos de la tabla de datos aparecen en el control <xref:Microsoft.Office.Tools.Excel.ListObject> y, como los datos de la tabla de datos cambian, el elemento <xref:Microsoft.Office.Tools.Excel.ListObject> también cambia. Para obtener una lista de los orígenes de datos que puede usar para el enlace de datos complejo, vea [orígenes de datos compatibles con Windows Forms](/dotnet/framework/winforms/data-sources-supported-by-windows-forms).
+ Para realizar el enlace de datos complejo, establezca la propiedad `DataSource` del control a un objeto de origen de datos que sea compatible con el enlace de datos complejo. Por ejemplo, la propiedad <xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A> del control <xref:Microsoft.Office.Tools.Excel.ListObject> puede estar enlazada a varias columnas de una tabla de datos. Todos los datos de la tabla de datos aparecen en el control <xref:Microsoft.Office.Tools.Excel.ListObject> y, como los datos de la tabla de datos cambian, el elemento <xref:Microsoft.Office.Tools.Excel.ListObject> también cambia. Para obtener una lista de los orígenes de datos que puede usar para el enlace de datos complejo, vea Orígenes de [datos admitidos por Windows Forms](/dotnet/framework/winforms/data-sources-supported-by-windows-forms).
 
  En el ejemplo de código siguiente se crea un elemento <xref:System.Data.DataSet> con dos objetos <xref:System.Data.DataTable> y se rellena una de las tablas con datos. El código enlaza después el elemento <xref:Microsoft.Office.Tools.Excel.ListObject> a la tabla que contiene datos. Este ejemplo es para un proyecto de nivel de documento de Excel.
 
- [!code-csharp[Trin_ExcelListObject#18](../vsto/codesnippet/CSharp/Trin_ExcelListObject/Trin_ExcelListObject.cs#18)]
- [!code-vb[Trin_ExcelListObject#18](../vsto/codesnippet/VisualBasic/Trin_ExcelListObject/Sheet1.vb#18)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_ExcelListObject/Trin_ExcelListObject.cs" id="Snippet18":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_ExcelListObject/Sheet1.vb" id="Snippet18":::
 
- Para ver los tutoriales que muestran el enlace de datos complejo, vea [Tutorial: enlace de datos complejo en un proyecto de nivel de documento](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md) para un proyecto de nivel de documento y [Tutorial: enlace de datos complejo en](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md) un proyecto de complemento de VSTO para un proyecto de complemento de VSTO.
+ Para ver tutoriales que muestran un enlace de datos complejo, vea [Tutorial:](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md) Enlace de datos complejo en un proyecto de nivel de documento para un proyecto de nivel de documento y Tutorial: Enlace de datos complejo en un proyecto de complemento [de VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md) para un proyecto de complemento de VSTO.
 
 ## <a name="display-data-in-documents-and-workbooks"></a>Mostrar datos en documentos y libros
- En los proyectos de nivel de documento, puede utilizar la ventana **Orígenes de datos** para agregar controles enlazados a datos a los documentos o libros con facilidad, del mismo modo que los usa para Windows Forms. Para obtener más información sobre cómo usar la ventana **orígenes de datos** , vea [enlazar controles de Windows Forms a datos en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md) y [agregar nuevos orígenes de datos](../data-tools/add-new-data-sources.md).
+ En los proyectos de nivel de documento, puede utilizar la ventana **Orígenes de datos** para agregar controles enlazados a datos a los documentos o libros con facilidad, del mismo modo que los usa para Windows Forms. Para obtener más información sobre el uso de **la** ventana Orígenes de datos, vea Enlazar controles Windows Forms a datos [en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md) y Agregar nuevos orígenes [de datos](../data-tools/add-new-data-sources.md).
 
-### <a name="drag-controls-from-the-data-sources-window"></a>Arrastrar controles desde la ventana orígenes de datos
+### <a name="drag-controls-from-the-data-sources-window"></a>Arrastrar controles desde la ventana Orígenes de datos
  Cuando se arrastra un objeto a un documento desde la ventana **Orígenes de datos** , se crea un control en el documento . El tipo de control que se crea depende de si se enlaza una única columna de datos o varias.
 
  Para Excel, se crea un control <xref:Microsoft.Office.Tools.Excel.NamedRange> en la hoja de cálculo para cada campo individual y un control <xref:Microsoft.Office.Tools.Excel.ListObject> para cada intervalo de datos que incluye varias filas y columnas. Puede cambiar este comportamiento predeterminado si selecciona la tabla o el campo en la ventana **Orígenes de datos** y elige un control diferente de la lista desplegable.
@@ -73,22 +73,22 @@ ms.locfileid: "99882484"
 ### <a name="bind-data-in-document-level-projects-at-design-time"></a>Enlazar datos en proyectos de nivel de documento en tiempo de diseño
  En los temas siguientes se muestran ejemplos de enlace de datos en tiempo de diseño:
 
-- [Cómo: rellenar hojas de cálculo con datos de una base de datos](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [Cómo: Rellenar hojas de cálculo con datos de una base de datos](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
 
-- [Cómo: rellenar documentos con datos de una base de datos](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [Cómo: Rellenar documentos con datos de una base de datos](../vsto/how-to-populate-documents-with-data-from-a-database.md)
 
-- [Cómo: rellenar documentos con datos de objetos](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [Cómo: Rellenar documentos con datos de objetos](../vsto/how-to-populate-documents-with-data-from-objects.md)
 
-- [Cómo: rellenar documentos con datos de servicios](../vsto/how-to-populate-documents-with-data-from-services.md)
+- [Cómo: Rellenar documentos con datos de servicios](../vsto/how-to-populate-documents-with-data-from-services.md)
 
-- [Cómo: desplazarse por los registros de base de datos de una hoja de cálculo](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
+- [Cómo: Desplazarse por los registros de base de datos de una hoja de cálculo](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
 
-### <a name="bind-data-in-vsto-add-in-projects"></a>Enlazar datos en proyectos de complementos de VSTO
+### <a name="bind-data-in-vsto-add-in-projects"></a>Enlace de datos en proyectos de complemento de VSTO
  En proyectos de complemento de VSTO, solo puede agregar controles en tiempo de ejecución. En los temas siguientes se muestran ejemplos de enlace de datos en tiempo de ejecución:
 
-- [Tutorial: enlace de datos simple en un proyecto de complemento de VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)
+- [Tutorial: Enlace de datos simple en el proyecto de complemento de VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)
 
-- [Tutorial: enlace de datos complejo en un proyecto de complemento de VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)
+- [Tutorial: Enlace de datos complejo en el proyecto de complemento de VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)
 
 ## <a name="update-data-that-is-bound-to-host-controls"></a>Actualizar datos enlazados a controles host
  El enlace de datos entre un origen de datos y un control host implica una actualización de datos bidireccional. En el enlace de datos simple, los cambios en el origen de datos se reflejan automáticamente en el control host, pero los cambios en el control host necesitan una llamada explícita para actualizar el origen de datos. La razón es que en algunos casos, los cambios en un campo enlazado a datos no se aceptan a menos que vayan acompañados de los cambios en otro campo enlazado a datos. Por ejemplo, podría tener dos campos, uno para la edad y otro para años de experiencia. La experiencia no puede superar la edad. Un usuario no puede actualizar la edad de 50 a 25 y, después, la experiencia de 30 a 10, a menos que realice los cambios al mismo tiempo. Para solucionar este problema, los campos con enlaces de datos simples no se actualizan hasta que las actualizaciones se envíen explícitamente mediante código.
@@ -97,11 +97,11 @@ ms.locfileid: "99882484"
 
  No es necesario actualizar explícitamente el origen de datos en memoria cuando se realiza el enlace de datos complejo mediante el control <xref:Microsoft.Office.Tools.Excel.ListObject> . En ese caso, los cambios se envían automáticamente al origen de datos en memoria sin nada de código adicional.
 
- Para obtener más información, vea [Cómo: actualizar un origen de datos con datos de un control host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
+ Para obtener más información, [vea Cómo: Actualizar un origen de datos con datos de un control host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Enlace de datos y Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms)
-- [Cómo: crear un control con enlace simple en Windows Forms](/dotnet/framework/winforms/how-to-create-a-simple-bound-control-on-a-windows-form)
+- [Cómo: Crear un control enlazado simple en un formulario Windows Form](/dotnet/framework/winforms/how-to-create-a-simple-bound-control-on-a-windows-form)
 - [Enlazar controles de Windows Forms a datos en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Guardar los datos de nuevo en la base de datos](../data-tools/save-data-back-to-the-database.md)
 - [Actualizar datos mediante un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)

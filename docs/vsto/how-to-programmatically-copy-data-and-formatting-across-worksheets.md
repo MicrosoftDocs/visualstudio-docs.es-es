@@ -1,6 +1,6 @@
 ---
-title: Copiar datos y formato en hojas de cálculo mediante programación
-description: Obtenga información sobre cómo copiar datos de un rango de una hoja a todas las demás hojas de un libro mediante el método FillAcrossSheets.
+title: Copia de datos y formato entre hojas de cálculo mediante programación
+description: Obtenga información sobre cómo copiar datos de un intervalo de una hoja a todas las demás hojas de un libro mediante el método FillAcrossSheets.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -18,27 +18,27 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d768eb086707af2eeddeb18a77bad1ef1f101839
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0696c99e78ee1b6a7acd174e5463bbdc514fe160
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964243"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828571"
 ---
-# <a name="how-to-programmatically-copy-data-and-formatting-across-worksheets"></a>Cómo: copiar datos y formato en hojas de cálculo mediante programación
-  Puede copiar los datos de un rango de una hoja a todas las demás hojas de un libro mediante el <xref:Microsoft.Office.Interop.Excel.Worksheets.FillAcrossSheets%2A> método. Especifique un intervalo y si desea copiar los datos, el formato o ambos.
+# <a name="how-to-programmatically-copy-data-and-formatting-across-worksheets"></a>Cómo: Copiar datos y aplicar formato mediante programación entre hojas de cálculo
+  Puede copiar datos de un intervalo de una hoja a todas las demás hojas de un libro mediante el <xref:Microsoft.Office.Interop.Excel.Worksheets.FillAcrossSheets%2A> método . Especifique un intervalo y si desea copiar datos, formato o ambos.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
 ## <a name="example"></a>Ejemplo
- [!code-csharp[Trin_VstcoreExcelAutomation#44](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#44)]
- [!code-vb[Trin_VstcoreExcelAutomation#44](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#44)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet44":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet44":::
 
 ## <a name="compile-the-code"></a>Compilar el código
- Este ejemplo requiere un intervalo denominado `rangeData` en una hoja de cálculo.
+ En este ejemplo se requiere un intervalo denominado `rangeData` en una hoja de cálculo.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Trabajar con hojas de cálculo](../vsto/working-with-worksheets.md)
-- [Cómo: agregar nuevas hojas de cálculo a libros mediante programación](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)
-- [Cómo: cambiar el formato en filas de hojas de cálculo que contienen celdas seleccionadas mediante programación](../vsto/how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells.md)
-- [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)
+- [Cómo: Agregar nuevas hojas de cálculo a libros mediante programación](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)
+- [Cómo: Cambiar el formato de las filas de hoja de cálculo que contienen celdas seleccionadas mediante programación](../vsto/how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells.md)
+- [Parámetros opcionales en soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)

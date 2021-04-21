@@ -1,6 +1,6 @@
 ---
-title: Obtener acceso a un área de formulario en tiempo de ejecución
-description: Obtenga información sobre cómo obtener acceso a un área de formulario en varios tipos de proyectos y versiones de Microsoft Office en tiempo de ejecución.
+title: Acceso a un área de formulario en tiempo de ejecución
+description: Obtenga información sobre cómo acceder a un área de formulario en varios tipos de proyecto y versiones de Microsoft Office en tiempo de ejecución.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -16,71 +16,71 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 62d8236b987afbb7dc9d5e4462b79ffb4fe00bc5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dbd60f5773392af2066e4693751dd6fff99128b9
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928879"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827973"
 ---
-# <a name="access-a-form-region-at-run-time"></a>Obtener acceso a un área de formulario en tiempo de ejecución
+# <a name="access-a-form-region-at-run-time"></a>Acceso a un área de formulario en tiempo de ejecución
 
 |Se aplica a|
 |----------------|
-|La información de este tema solamente se aplica a los siguientes tipos de proyectos y versiones de Microsoft Office. Para obtener más información, consulte [características disponibles por aplicación y tipo de proyecto de Office](../vsto/features-available-by-office-application-and-project-type.md).<br /><br /> **Tipo de proyecto**<br /><br /> -Proyectos de complemento de VSTO<br /><br /> **Versión de Microsoft Office**<br /><br /> -   [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)]|
+|La información de este tema solamente se aplica a los siguientes tipos de proyectos y versiones de Microsoft Office. Para obtener más información, vea [Características disponibles por aplicación de Office y tipo de proyecto](../vsto/features-available-by-office-application-and-project-type.md).<br /><br /> **Tipo de proyecto**<br /><br /> - Proyectos de complemento de VSTO<br /><br /> **Versión de Microsoft Office**<br /><br /> -   [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)]|
 
- Utilice la clase `Globals` para acceder a áreas del formulario desde cualquier lugar dentro del proyecto de Outlook. Para obtener más información sobre la `Globals` clase, vea [acceso global a objetos en los proyectos de Office](../vsto/global-access-to-objects-in-office-projects.md).
+ Utilice la clase `Globals` para acceder a áreas del formulario desde cualquier lugar dentro del proyecto de Outlook. Para obtener más información sobre la `Globals` clase , vea Acceso global a objetos en proyectos de [Office.](../vsto/global-access-to-objects-in-office-projects.md)
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
-## <a name="access-form-regions-that-appear-in-a-specific-outlook-inspector-window"></a>Acceder a las áreas de formulario que aparecen en una ventana específica del inspector de Outlook
+## <a name="access-form-regions-that-appear-in-a-specific-outlook-inspector-window"></a>Áreas de formulario de acceso que aparecen en una ventana específica de Outlook Inspector
  Para acceder a todas las áreas del formulario que aparecen en un Inspector de Outlook concreto, llame a la propiedad `FormRegions` de la clase `Globals` y pase un objeto <xref:Microsoft.Office.Interop.Outlook.Inspector> que represente el Inspector.
 
  El ejemplo siguiente obtiene la colección de áreas del formulario que aparecen en el Inspector que tiene actualmente el foco. Después, este ejemplo accede a un área del formulario de la colección denominada `formRegion1` y establece el texto que aparece en un cuadro de texto como `Hello World`.
 
- [!code-vb[Trin_Outlook_FR_Access#2](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb#2)]
- [!code-csharp[Trin_Outlook_FR_Access#2](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs#2)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb" id="Snippet2":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs" id="Snippet2":::
 
-## <a name="access-form-regions-that-appear-in-a-specific-outlook-explorer-window"></a>Acceder a las áreas de formulario que aparecen en una ventana específica del explorador de Outlook
+## <a name="access-form-regions-that-appear-in-a-specific-outlook-explorer-window"></a>Áreas de formulario de acceso que aparecen en una ventana específica del Explorador de Outlook
  Para acceder a todas las áreas del formulario que aparecen en un Explorador de Outlook concreto, llame a la propiedad `FormRegions` de la clase `Globals` y pase un objeto <xref:Microsoft.Office.Interop.Outlook.Explorer> que represente el explorador.
 
  El ejemplo siguiente obtiene la colección de áreas del formulario que aparecen en el explorador que tiene actualmente el foco. Después, este ejemplo accede a un área del formulario de la colección denominada `formRegion1` y establece el texto que aparece en un cuadro de texto como `Hello World`.
 
- [!code-vb[Trin_Outlook_FR_Access#3](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb#3)]
- [!code-csharp[Trin_Outlook_FR_Access#3](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs#3)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb" id="Snippet3":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs" id="Snippet3":::
 
-## <a name="access-all-form-regions"></a>Acceder a todas las áreas del formulario
+## <a name="access-all-form-regions"></a>Acceso a todas las regiones de formulario
  Para acceder a todas las áreas del formulario que aparecen en todos los exploradores e inspectores, llame a la propiedad `FormRegions` de la clase `Globals` .
 
  El ejemplo siguiente obtiene la colección de áreas del formulario que aparecen en todos los exploradores e inspectores. En este ejemplo accede entonces a un área del formulario denominada `formRegion1` y establece el texto que aparece en un cuadro de texto como `Hello World`.
 
- [!code-vb[Trin_Outlook_FR_Access#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb#1)]
- [!code-csharp[Trin_Outlook_FR_Access#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs#1)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb" id="Snippet1":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs" id="Snippet1":::
 
-## <a name="access-controls-on-a-form-region"></a>Obtener acceso a controles en un área de formulario
+## <a name="access-controls-on-a-form-region"></a>Controles de acceso en un área de formulario
  Para acceder a los controles en un área de formulario mediante la clase `Globals` , debe conseguir que los controles sean accesibles para el código de fuera del archivo de código del área del formulario.
 
-### <a name="form-regions-designed-in-the-form-region-designer"></a>Áreas de formulario diseñadas en el diseñador de áreas de formulario
+### <a name="form-regions-designed-in-the-form-region-designer"></a>Regiones de formulario diseñadas en el diseñador de área de formulario
  En C#, cambie el modificador de cada control al que quiera tener acceso. Para ello, seleccione cada uno de los controles en el diseñador de áreas del formulario y cambie la propiedad **Modificadores** a **Internos** o **Públicos** en la ventana **Propiedades** . Por ejemplo, si cambia la propiedad **Modificador** de `textBox1` a **Interno**, puede acceder a `textBox1` si escribe `Globals.FormRegions.FormRegion1.textBox1`.
 
  En Visual Basic no es necesario cambiar el modificador.
 
-### <a name="imported-form-regions"></a>Áreas del formulario importadas
+### <a name="imported-form-regions"></a>Regiones de formulario importadas
  Al importar un área del formulario que se diseñó en Outlook, el modificador de acceso de cada control en el área del formulario pasa a ser privado. Como no se puede usar el diseñador de áreas del formulario para modificar un área del formulario importada, no hay ninguna manera de cambiar el modificador de un control en la ventana **Propiedades** .
 
  Para habilitar el acceso a un control desde fuera del archivo de código del área del formulario, cree una propiedad en el archivo de código del área del formulario que devuelva dicho control.
 
- Para obtener más información sobre cómo crear propiedades en C#, vea [Cómo: declarar y usar propiedades de lectura y escritura &#40;C&#35; guía de programación&#41;](/dotnet/csharp/programming-guide/classes-and-structs/how-to-declare-and-use-read-write-properties).
+ Para obtener más información sobre cómo crear propiedades en C#, vea [Cómo: ](/dotnet/csharp/programming-guide/classes-and-structs/how-to-declare-and-use-read-write-properties)Declarar y usar propiedades de escritura de lectura &#40;guía de programación de C&#35;&#41;.
 
- Para obtener más información sobre cómo crear propiedades en Visual Basic, vea [Cómo: crear una propiedad (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/procedures/how-to-create-a-property).
+ Para obtener más información sobre cómo crear propiedades en Visual Basic, vea Cómo: Crear una propiedad [(Visual Basic).](/dotnet/visual-basic/programming-guide/language-features/procedures/how-to-create-a-property)
 
-## <a name="see-also"></a>Vea también
-- [Instrucciones para crear áreas de formulario de Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)
-- [Tutorial: diseñar un área de formulario de Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
-- [Cómo: agregar un área de formulario a un proyecto de complemento de Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
-- [Acciones personalizadas en áreas de formulario de Outlook](../vsto/custom-actions-in-outlook-form-regions.md)
-- [Asociar un área de formulario a una clase de mensaje de Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)
-- [Tutorial: importar un área de formulario diseñada en Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)
-- [Cómo: impedir que Outlook muestre un área de formulario](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)
-- [Crear áreas de formulario de Outlook](../vsto/creating-outlook-form-regions.md)
-- [Obtener acceso a la cinta de opciones en tiempo de ejecución](../vsto/accessing-the-ribbon-at-run-time.md)
+## <a name="see-also"></a>Consulte también
+- [Directrices para crear regiones de formulario de Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)
+- [Tutorial: Diseño de un área de formulario de Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
+- [Cómo: Agregar un área de formulario a un proyecto de complemento de Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
+- [Acciones personalizadas en las regiones de formulario de Outlook](../vsto/custom-actions-in-outlook-form-regions.md)
+- [Asociación de un área de formulario a una clase de mensaje de Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)
+- [Tutorial: Importar un área de formulario diseñada en Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)
+- [Cómo: Impedir que Outlook muestre un área de formulario](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)
+- [Creación de regiones de formulario de Outlook](../vsto/creating-outlook-form-regions.md)
+- [Acceso a la cinta de opciones en tiempo de ejecución](../vsto/accessing-the-ribbon-at-run-time.md)
