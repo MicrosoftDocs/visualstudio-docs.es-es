@@ -1,6 +1,6 @@
 ---
-title: 'Cómo: crear y modificar propiedades de documento personalizadas'
-description: Obtenga información acerca de cómo puede crear y modificar propiedades de documento personalizadas si hay información adicional que desea almacenar con el documento.
+title: 'Cómo: Crear y modificar propiedades de documento personalizadas'
+description: Obtenga información sobre cómo crear y modificar propiedades de documento personalizadas si hay información adicional que desea almacenar con el documento.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,14 +16,14 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0080c9b0ddd7ffba4730a8cfb305bc34b6ba1690
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cd89cb1e2991f48fefd9984eaa6d5894d9b506c1
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964321"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826582"
 ---
-# <a name="how-to-create-and-modify-custom-document-properties"></a>Cómo: crear y modificar propiedades de documento personalizadas
+# <a name="how-to-create-and-modify-custom-document-properties"></a>Cómo: Crear y modificar propiedades de documento personalizadas
   Las aplicaciones de Microsoft Office enumeradas anteriormente proporcionan propiedades integradas que se almacenan con los documentos. Además, puede crear y modificar propiedades de documento personalizadas si hay información adicional que desea almacenar con el documento.
 
  [!INCLUDE[appliesto_docprops](../vsto/includes/appliesto-docprops-md.md)]
@@ -33,13 +33,13 @@ ms.locfileid: "99964321"
  En el ejemplo siguiente se muestra cómo agregar una propiedad personalizada en una personalización de nivel de documento para Excel y asignarle un valor.
 
 ## <a name="example"></a>Ejemplo
- [!code-vb[Trin_VstcoreProgramming#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/ThisWorkbook.vb#6)]
- [!code-csharp[Trin_VstcoreProgramming#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/ThisWorkbook.cs#6)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/ThisWorkbook.vb" id="Snippet6":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/ThisWorkbook.cs" id="Snippet6":::
 
 ## <a name="robust-programming"></a>Programación sólida
  Si se intenta acceder a la propiedad `Value` para propiedades sin definir, se produce una excepción.
 
-## <a name="see-also"></a>Vea también
-- [Complementos de VSTO de programa](../vsto/programming-vsto-add-ins.md)
-- [Personalizaciones de nivel de documento de programa](../vsto/programming-document-level-customizations.md)
-- [Cómo: leer y escribir en propiedades de documento](../vsto/how-to-read-from-and-write-to-document-properties.md)
+## <a name="see-also"></a>Consulte también
+- [Programas de complementos VSTO](../vsto/programming-vsto-add-ins.md)
+- [Personalizaciones de nivel de documento del programa](../vsto/programming-document-level-customizations.md)
+- [Cómo: Leer y escribir en las propiedades del documento](../vsto/how-to-read-from-and-write-to-document-properties.md)

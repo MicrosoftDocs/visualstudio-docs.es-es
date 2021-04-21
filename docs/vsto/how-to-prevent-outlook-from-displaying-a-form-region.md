@@ -1,6 +1,6 @@
 ---
-title: 'Cómo: impedir que Outlook muestre un área de formulario'
-description: Obtenga información acerca de cómo impedir que Microsoft Office Outlook muestre un área de formulario para un elemento determinado.
+title: 'Cómo: Impedir que Outlook muestre un área de formulario'
+description: Obtenga información sobre cómo evitar que Microsoft Office Outlook muestre un área de formulario para un elemento determinado.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,35 +15,36 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f6e6b00e8e26d261aac18dd48af1d912bd6ffad1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1dc9322dd2ad3c3a2111222d7491f9e1a82cd6c4
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899554"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825854"
 ---
-# <a name="how-to-prevent-outlook-from-displaying-a-form-region"></a>Cómo: impedir que Outlook muestre un área de formulario
-  Puede haber situaciones en las que no desee que Microsoft Office Outlook muestre un área de formulario para un elemento determinado. Por ejemplo, si un elemento de contacto no contiene una dirección de negocio, puede impedir que aparezca un área de formulario que muestre la ubicación de la empresa en un mapa.
+# <a name="how-to-prevent-outlook-from-displaying-a-form-region"></a>Cómo: Impedir que Outlook muestre un área de formulario
+  Puede haber situaciones en las que no desee que Microsoft Office Outlook muestre un área de formulario para un elemento determinado. Por ejemplo, si un elemento de contacto no contiene una dirección de negocio, puede evitar que aparezca un área de formulario que muestre la ubicación de la empresa en un mapa.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
-## <a name="to-prevent-outlook-from-displaying-a-form-region"></a>Para impedir que Outlook muestre un área de formulario
+## <a name="to-prevent-outlook-from-displaying-a-form-region"></a>Para evitar que Outlook muestre un área de formulario
 
-1. Abra el archivo de código del área de formulario que desea modificar.
+1. Abra el archivo de código para el área de formulario que desea modificar.
 
-2. Expanda la región de código **generador de áreas de formulario** .
+2. Expanda la región **de código Generador de regiones** de formulario.
 
-3. Agregue código al `FormRegionInitializing` controlador de eventos que establezca la <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> propiedad de la <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> clase en **true**.
+3. Agregue código al controlador `FormRegionInitializing` de eventos que establece la propiedad de la clase en <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> **true.**
 
-   En este ejemplo, si el elemento Contact no contiene una dirección, la <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> propiedad se establece en **true** y el área de formulario no aparece.
+   En este ejemplo, si el elemento de contacto no contiene una dirección, la propiedad se establece en true y el área <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> de formulario no aparece. 
 
 ## <a name="example"></a>Ejemplo
- [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]
- [!code-vb[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs" id="Snippet1":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb" id="Snippet1":::
 
-## <a name="see-also"></a>Vea también
-- [Crear áreas de formulario de Outlook](../vsto/creating-outlook-form-regions.md)
-- [Tutorial: diseñar un área de formulario de Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
-- [Cómo: agregar un área de formulario a un proyecto de complemento de Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
-- [Tutorial: diseñar un área de formulario de Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
-- [Tutorial: importar un área de formulario diseñada en Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)
+
+## <a name="see-also"></a>Consulte también
+- [Creación de regiones de formulario de Outlook](../vsto/creating-outlook-form-regions.md)
+- [Tutorial: Diseño de un área de formulario de Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
+- [Cómo: Agregar un área de formulario a un proyecto de complemento de Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
+- [Tutorial: Diseño de un área de formulario de Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
+- [Tutorial: Importar un área de formulario diseñada en Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)

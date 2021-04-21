@@ -1,6 +1,6 @@
 ---
-title: 'Cómo: trasladar elementos en Outlook mediante programación'
-description: Obtenga información sobre cómo puede trasladar elementos en Microsoft Outlook mediante programación. En este ejemplo se mueven los mensajes de correo electrónico sin leer de la bandeja de entrada a una carpeta denominada test.
+title: 'Cómo: Mover elementos mediante programación en Outlook'
+description: Obtenga información sobre cómo puede mover elementos mediante programación en Microsoft Outlook. En este ejemplo se mueven mensajes de correo electrónico no leídos de la Bandeja de entrada a una carpeta denominada Prueba.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,30 +14,30 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 770f056dc681e1ee2cd6704f9bd1d42afae4957b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b8e951ab393d09506ad4f2d593962ea1826eff09
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888867"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826738"
 ---
-# <a name="how-to-programmatically-move-items-in-outlook"></a>Cómo: trasladar elementos en Outlook mediante programación
-  En este ejemplo se mueven los mensajes de correo electrónico sin leer de la **bandeja de entrada** a una carpeta denominada **Test**. En el ejemplo solo se mueven los mensajes que tienen la palabra **Test** en el `Subject` campo.
+# <a name="how-to-programmatically-move-items-in-outlook"></a>Cómo: Mover elementos mediante programación en Outlook
+  En este ejemplo se mueven mensajes de correo electrónico no leídos de la **Bandeja de entrada** a una carpeta denominada **Test**. En el ejemplo solo se mueven los mensajes que tienen la palabra **Test** en el `Subject` campo .
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="example"></a>Ejemplo
- [!code-csharp[Trin_OL_MoveItems#1](../vsto/codesnippet/CSharp/Trin_OL_MoveItems/thisaddin.cs#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OL_MoveItems/thisaddin.cs" id="Snippet1":::
 
 ## <a name="compile-the-code"></a>Compilar el código
  Para este ejemplo se necesita:
 
 - Una carpeta de correo de Outlook denominada **Test**.
 
-- Un mensaje de correo electrónico que llega con la palabra **Test** en el `Subject` campo.
+- Mensaje de correo electrónico que llega con la palabra **Prueba** en el `Subject` campo.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Trabajar con carpetas](../vsto/working-with-folders.md)
-- [Cómo: recuperar una carpeta por nombre mediante programación](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
-- [Cómo: buscar en una carpeta específica mediante programación](../vsto/how-to-programmatically-search-within-a-specific-folder.md)
-- [Cómo: realizar acciones al recibir un mensaje de correo electrónico mediante programación](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)
+- [Cómo: Recuperar mediante programación una carpeta por nombre](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
+- [Cómo: Buscar mediante programación dentro de una carpeta específica](../vsto/how-to-programmatically-search-within-a-specific-folder.md)
+- [Cómo: Realizar acciones mediante programación cuando se recibe un mensaje de correo electrónico](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)
