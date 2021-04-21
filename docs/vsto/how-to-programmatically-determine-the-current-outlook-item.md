@@ -1,6 +1,6 @@
 ---
-title: 'Cómo: determinar el elemento actual de Outlook mediante programación'
-description: Obtenga información sobre cómo puede determinar mediante programación el elemento actual de Microsoft Outlook. En este ejemplo se usa el evento Explorer. SelectionChange.
+title: 'Cómo: Determinar mediante programación el elemento actual de Outlook'
+description: Obtenga información sobre cómo puede determinar mediante programación el elemento actual de Microsoft Outlook. En este ejemplo se usa el evento Explorer.SelectionChange.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -18,28 +18,28 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 720028528c036bf4485ca529f735fd26b1ff6e9e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9cddc4bdc99e97c12a04e57639f990a1484c6581
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963840"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107823936"
 ---
-# <a name="how-to-programmatically-determine-the-current-outlook-item"></a>Cómo: determinar el elemento actual de Outlook mediante programación
-  En este ejemplo se utiliza el `Explorer.SelectionChange` evento para mostrar el nombre de la carpeta actual y alguna información sobre el elemento seleccionado. Después, el código muestra el elemento seleccionado.
+# <a name="how-to-programmatically-determine-the-current-outlook-item"></a>Cómo: Determinar mediante programación el elemento actual de Outlook
+  En este ejemplo se `Explorer.SelectionChange` usa el evento para mostrar el nombre de la carpeta actual y cierta información sobre el elemento seleccionado. A continuación, el código muestra el elemento seleccionado.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="example"></a>Ejemplo
- [!code-vb[Trin_OL_CurrentItem#1](../vsto/codesnippet/VisualBasic/Trin_OL_CurrentItem/thisaddin.vb#1)]
- [!code-csharp[Trin_OL_CurrentItem#1](../vsto/codesnippet/CSharp/Trin_OL_CurrentItem/thisaddin.cs#1)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_OL_CurrentItem/thisaddin.vb" id="Snippet1":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OL_CurrentItem/thisaddin.cs" id="Snippet1":::
 
 ## <a name="compile-the-code"></a>Compilar el código
  Para este ejemplo se necesita:
 
-- Elementos de citas, contactos y correo electrónico en Microsoft Office Outlook.
+- Citas, contactos y elementos de correo electrónico en Microsoft Office Outlook.
 
-## <a name="see-also"></a>Vea también
-- [Información general del modelo de objetos de Outlook](../vsto/outlook-object-model-overview.md)
-- [Cómo: recuperar una carpeta por nombre mediante programación](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
-- [Cómo: buscar un contacto específico mediante programación](../vsto/how-to-programmatically-search-for-a-specific-contact.md)
+## <a name="see-also"></a>Consulte también
+- [Introducción al modelo de objetos de Outlook](../vsto/outlook-object-model-overview.md)
+- [Cómo: Recuperar mediante programación una carpeta por nombre](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
+- [Cómo: Buscar mediante programación un contacto específico](../vsto/how-to-programmatically-search-for-a-specific-contact.md)

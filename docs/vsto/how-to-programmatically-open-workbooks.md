@@ -1,6 +1,6 @@
 ---
-title: 'Cómo: abrir libros mediante programación'
-description: Obtenga información sobre cómo puede usar Visual Studio para abrir mediante programación un libro de Microsoft Excel o trabajar con un libro existente.
+title: 'Cómo: Abrir libros mediante programación'
+description: Obtenga información sobre cómo puede Visual Studio para abrir un libro de Microsoft Excel mediante programación o trabajar con un libro existente.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,36 +15,36 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5bca39b5536d5717da994808f23ee541856264ba
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4dba79b1b0eea03ca3aae23e98fb93e6ef776d80
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888737"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824788"
 ---
-# <a name="how-to-programmatically-open-workbooks"></a>Cómo: abrir libros mediante programación
-  La <xref:Microsoft.Office.Interop.Excel.Workbooks> colección de Microsoft Office Excel permite trabajar con todos los libros abiertos y abrir los libros.
+# <a name="how-to-programmatically-open-workbooks"></a>Cómo: Abrir libros mediante programación
+  La colección de Microsoft Office Excel permite trabajar con todos los libros abiertos <xref:Microsoft.Office.Interop.Excel.Workbooks> y abrir libros.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
 ## <a name="to-open-an-existing-workbook"></a>Para abrir un libro existente
 
-1. Use el <xref:Microsoft.Office.Interop.Excel.Workbooks.Open%2A> método de la <xref:Microsoft.Office.Interop.Excel.Workbooks> colección, pasando la ruta de acceso al libro.
+1. Use el <xref:Microsoft.Office.Interop.Excel.Workbooks.Open%2A> método de la colección y pase la ruta de acceso al <xref:Microsoft.Office.Interop.Excel.Workbooks> libro.
 
-     [!code-csharp[Trin_VstcoreExcelAutomation#2](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#2)]
-     [!code-vb[Trin_VstcoreExcelAutomation#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet2":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet2":::
 
 ## <a name="compile-the-code"></a>Compilar el código
  Para este ejemplo de código se necesita lo siguiente:
 
-- Un libro denominado `YourWorkbook.xls` debe existir en un directorio denominado `Test` en la unidad C.
+- Un libro denominado `YourWorkbook.xls` debe existir en un directorio denominado en la unidad `Test` C.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Trabajar con libros](../vsto/working-with-workbooks.md)
-- [Cómo: abrir archivos de texto como libros mediante programación](../vsto/how-to-programmatically-open-text-files-as-workbooks.md)
-- [Cómo: crear nuevos libros mediante programación](../vsto/how-to-programmatically-create-new-workbooks.md)
-- [Cómo: guardar libros mediante programación](../vsto/how-to-programmatically-save-workbooks.md)
-- [Cómo: cerrar libros mediante programación](../vsto/how-to-programmatically-close-workbooks.md)
-- [Limitaciones de programación de elementos y controles host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
-- [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)
-- [Información general sobre elementos y controles host](../vsto/host-items-and-host-controls-overview.md)
+- [Cómo: Abrir archivos de texto como libros mediante programación](../vsto/how-to-programmatically-open-text-files-as-workbooks.md)
+- [Cómo: Crear nuevos libros mediante programación](../vsto/how-to-programmatically-create-new-workbooks.md)
+- [Cómo: Guardar libros mediante programación](../vsto/how-to-programmatically-save-workbooks.md)
+- [Cómo: Cerrar libros mediante programación](../vsto/how-to-programmatically-close-workbooks.md)
+- [Limitaciones de programación de los elementos host y los controles host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [Parámetros opcionales en soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)
+- [Introducción a los elementos host y los controles host](../vsto/host-items-and-host-controls-overview.md)
