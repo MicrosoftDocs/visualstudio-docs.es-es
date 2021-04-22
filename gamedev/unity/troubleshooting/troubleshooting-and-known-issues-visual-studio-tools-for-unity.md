@@ -2,7 +2,7 @@
 title: Solución de problemas y problemas conocidos (VS Tools for Unity)
 description: Lea sobre la solución de problemas de Visual Studio Tools para Unity. Vea descripciones de problemas conocidos y obtenga información sobre las soluciones de esos problemas.
 ms.custom: ''
-ms.date: 07/03/2018
+ms.date: 04/15/2021
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: troubleshooting
@@ -12,12 +12,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: e447c8cb94e536aeed9e01d00098fe4a98c6c006
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 37ee35fa66d37f9b85af01f5012e8ede76e877de
+ms.sourcegitcommit: 3e1ff87fba290f9e60fb4049d011bb8661255d58
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "94341385"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107879374"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Solución de problemas y problemas conocidos (Visual Studio Tools para Unity)
 
@@ -25,9 +25,15 @@ En esta sección encontrará soluciones a problemas comunes con Visual Studio To
 
 ## <a name="troubleshooting-the-connection-between-unity-and-visual-studio"></a>Solución de problemas de conexión entre Unity y Visual Studio
 
-### <a name="confirm-editor-attaching-is-enabled"></a>Confirmar que Editor Attaching está habilitado
+### <a name="confirm-editor-attaching-is-enabled-or-code-optimization-on-startup-is-set-to-debug"></a>Confirme `Editor Attaching` que está habilitado o está establecido `Code Optimization On Startup` en `Debug`
 
-En el menú de Unity, seleccione **Edit > Preferences** (Edit > Preferencias) y luego seleccione la pestaña **External Tools** (Herramientas externas). Confirme que la casilla **Editor Attaching** esté habilitada. Para más información, consulte la [documentación sobre las preferencias de Unity](https://docs.unity3d.com/Manual/Preferences.html).
+En el menú de Unity, seleccione `Edit / Preferences` .
+
+En función de la versión de Unity usada:
+- Confirme que `Code Optimization On Startup` está establecido en `Debug` .
+- O bien, seleccione `External Tools` la pestaña. Confirme que `Editor Attaching` la casilla está habilitada. 
+
+Para más información, consulte la [documentación sobre las preferencias de Unity](https://docs.unity3d.com/Manual/Preferences.html).
 
 ### <a name="unable-to-attach"></a>Imposibilidad de efectuar la asociación
 
@@ -60,11 +66,22 @@ En el caso de FMOD hay una solución alternativa, puede pasar la [marca](https:/
 
 ## <a name="incompatible-project-in-visual-studio"></a>Proyecto no compatible en Visual Studio
 
-En primer lugar, compruebe que Visual Studio está establecido como editor de scripts externo en Unity (Editar/Preferencias/Herramientas externas). Después, compruebe que el complemento de Visual Studio está instalado en Unity ("Ayuda/Acerca de" debe mostrar en la parte inferior un mensaje como Microsoft Visual Studio Tools para Unity está habilitado). Después, compruebe que la extensión está instalada correctamente en Visual Studio (Ayuda/Acerca de).
+Lo muy importante que hay que saber es que Visual Studio está guardando el estado "Incompatible" en la configuración del proyecto y no intentará volver a cargar un proyecto hasta que use explícitamente `Reload Project` . Por lo tanto, después de cada paso de solución de problemas, asegúrese de intentar volver a abrir la solución e intente hacer clic con el botón derecho en todos los proyectos incompatibles y elija `Reload Project` .
+
+1. Compruebe que Visual Studio está establecido como editor de scripts externos en Unity mediante `Edit / Preferences / External Tools` .
+2. En función de la versión de Unity:
+   - Compruebe que el Visual Studio complemento está instalado en Unity. `Help / About` debe mostrar un mensaje como Microsoft Visual Studio Tools for Unity está habilitado en la parte inferior.
+   - Unity 2020.x+: compruebe que usa la versión más reciente Visual Studio Editor en `Window / Package Manager` .
+3. Pruebe a eliminar todos los proyectos o archivos de solución y `.vs` la carpeta del proyecto.
+4. Pruebe a volver a crear proyectos o soluciones `Open C# Project` mediante o `Edit / Preferences / External tools / Regenerate Project files` .
+5. Asegúrese de que ha instalado la carga de trabajo de Game/Unity en Visual Studio.
+6. Intente limpiar la caché de MEF como se explica [aquí.](#visual-studio-crashes)
+7. Intente volver a instalar el Visual Studio (con la carga de trabajo Game/Unity solo para iniciar).
+8. Intente deshabilitar las extensiones de terceros en caso de que puedan interferir con la extensión de Unity en `Tools / Extensions` .
 
 ## <a name="extra-reloads-or-visual-studio-losing-all-open-windows"></a>Recargas adicionales o pérdida de todas las ventanas abiertas de Visual Studio
 
-No toque nunca los archivos de proyecto directamente desde un procesador de recursos o cualquier otra herramienta. Si realmente necesita manipular el archivo de proyecto, hay una API para hacerlo. Consulte la [sección Problemas de referencias de ensamblado](#assembly-reference-issues).
+No toque nunca los archivos de proyecto directamente desde un procesador de recursos o cualquier otra herramienta. Si realmente necesita manipular el archivo de proyecto, hay una API para hacerlo. Consulte la [sección Problemas de referencias de ensamblado](#assembly-reference-or-project-property-issues).
 
 Si se producen recargas adicionales o si Visual Studio pierde todas las ventanas abiertas al realizar una recarga, asegúrese de que dispone de los paquetes de compatibilidad de .NET apropiados. Consulte la sección siguiente sobre marcos de trabajo para más información.
 
@@ -78,13 +95,15 @@ En la ventana Configuración de excepciones (Depurar > Ventanas > Configuración
 
 ## <a name="on-windows-visual-studio-asks-to-download-the-unity-target-framework"></a>En Windows, Visual Studio le pide que descargue la plataforma de destino Unity
 
-Visual Studio Tools para Unity requiere .NET Framework 3.5, que no está instalado de forma predeterminada en Windows 8 ni 10. Para corregir este problema, siga las instrucciones para descargar e instalar .NET Framework 3.5.
+Al usar el entorno de ejecución de Unity heredado (equivalente a .NET 3.5), Visual Studio Tools para Unity requiere .NET Framework 3.5, que no está instalado de forma predeterminada en Windows 8 o 10. Para corregir este problema, siga las instrucciones para descargar e instalar .NET Framework 3.5.
 
-Cuando se utiliza el nuevo runtime de Unity, también son necesarios los paquetes de compatibilidad de .NET en sus versiones 4.6 y 4.7.1. Es posible usar el programa de instalación de VS2017 para instalarlos rápidamente (modifique la instalación de VS2017, busque los componentes individuales, categoría. NET, y seleccione todos los paquetes de compatibilidad 4.x).
+Cuando se usa el nuevo entorno de ejecución de Unity, los paquetes de destino de .NET versión 4.6 o 4.7.1 también son necesarios en función de la versión de Unity. Es posible usar el instalador de Visual Studio para instalarlos rápidamente (modificar la instalación, los componentes individuales, la categoría de .NET, seleccionar todos los paquetes de destino de 4.x).
 
-## <a name="assembly-reference-issues"></a>Problemas de referencias de ensamblado
+## <a name="assembly-reference-or-project-property-issues"></a>Problemas de propiedades de proyecto o referencia de ensamblados
 
-Si el proyecto incluye referencias complejas o si se quiere controlar mejor este paso de generación, se puede usar nuestra [API](/cross-platform/customize-project-files-created-by-vstu.md) para manipular el contenido de la solución o el proyecto que se genera. También puede usar [archivos de respuesta](https://docs.unity3d.com/Manual/PlatformDependentCompilation.html) en el proyecto de Unity y los procesaremos.
+Si el proyecto incluye referencias complejas o si se quiere controlar mejor este paso de generación, se puede usar nuestra [API](../extensibility/customize-project-files-created-by-vstu.md) para manipular el contenido de la solución o el proyecto que se genera. También puede usar [archivos de respuesta](https://docs.unity3d.com/Manual/PlatformDependentCompilation.html) en el proyecto de Unity y los procesaremos.
+
+Con las Visual Studio y las versiones de Unity recientes, el mejor enfoque parece usar un archivo `Directory.Build.props` personalizado junto con los proyectos generados. A continuación, podrá contribuir a la estructura del proyecto sin interferir con el proceso de generación. Puede encontrar más información [aquí](https://docs.microsoft.com/visualstudio/msbuild/customize-your-build#directorybuildprops-and-directorybuildtargets):
 
 ## <a name="breakpoints-with-a-warning"></a>Puntos de interrupción con advertencia
 
@@ -92,7 +111,7 @@ Si Visual Studio no encuentra una ubicación de origen para un punto de interrup
 
 ## <a name="breakpoints-not-hit"></a>Puntos de interrupción no ejecutados
 
-Compruebe que el script que usa está cargado y se emplea correctamente en la escena actual de Unity. Salga de Visual Studio y Unity y elimine todos los archivos generados (\*.csproj, \*.sln) y la carpeta Library completa.
+Compruebe que el script que usa está cargado y se emplea correctamente en la escena actual de Unity. Salga de Visual Studio Unity y, a continuación, elimine todos los archivos \* generados (.csproj, .sln), la carpeta y \* `.vs` toda la carpeta Library. Puede encontrar más información sobre la depuración de C# en el sitio [web](https://docs.unity3d.com/Manual/ManagedCodeDebugging.html)de Unity.
 
 ## <a name="unable-to-debug-android-players"></a>Imposibilidad de depurar reproductores de Android
 
@@ -102,13 +121,13 @@ Wi-Fi es versátil, pero no ofrece la misma velocidad en comparación con USB de
 
 Con USB se agiliza mucho la depuración, y Visual Studio Tools para Unity es ahora capaz de detectar dispositivos USB y comunicarse con el servidor adb para reenviar correctamente los puertos en la depuración.
 
-## <a name="issues-with-visual-studio-2015-and-intellisense-or-code-coloration"></a>Problemas de Visual Studio 2015 e IntelliSense, o de colores de código
+## <a name="issues-with-intellisense-or-code-coloration"></a>Problemas con IntelliSense o la coloración de código
 
-Intente actualizar Visual Studio 2015 a Update 3.
+Intente actualizar el Visual Studio a la versión más reciente. Pruebe los mismos pasos de solución de problemas que para proyectos [incompatibles.](#incompatible-project-in-visual-studio)
 
 ## <a name="known-issues"></a>Problemas conocidos
 
- Existen problemas conocidos en Visual Studio Tools para Unity que se deben a cómo interactúa el depurador con la antigua versión de Unity del compilador de C#. Estamos trabajando para ayudar a solucionar estos problemas, pero mientras tanto podría experimentar los siguientes problemas:
+Existen problemas conocidos en Visual Studio Tools para Unity que se deben a cómo interactúa el depurador con la antigua versión de Unity del compilador de C#. Estamos trabajando para ayudar a solucionar estos problemas, pero mientras tanto podría experimentar los siguientes problemas:
 
 - A veces, al depurar, Unity se bloquea.
 
@@ -118,11 +137,11 @@ Intente actualizar Visual Studio 2015 a Update 3.
 
 ## <a name="report-errors"></a>Errores de informes
 
- Ayúdenos a mejorar la calidad de Visual Studio Tools para Unity mediante el envío de informes de errores cuando experimente bloqueos, inmovilizaciones u otro tipo de errores. Esto nos ayudará a investigar y solucionar problemas en Visual Studio Tools para Unity. ¡Gracias!
+Ayúdenos a mejorar la calidad de Visual Studio Tools para Unity mediante el envío de informes de errores cuando experimente bloqueos, inmovilizaciones u otro tipo de errores. Esto nos ayudará a investigar y solucionar problemas en Visual Studio Tools para Unity. ¡Gracias!
 
 ### <a name="how-to-report-an-error-when-visual-studio-freezes"></a>Cómo informar de un error cuando Visual Studio se inmoviliza
 
- Hay informes que indican que a veces Visual Studio se inmoviliza al depurar con Visual Studio Tools para Unity, pero necesitamos más datos para comprender este problema. Puede ayudarnos a investigarlo siguiendo los pasos indicados a continuación.
+Hay informes que indican que a veces Visual Studio se inmoviliza al depurar con Visual Studio Tools para Unity, pero necesitamos más datos para comprender este problema. Puede ayudarnos a investigarlo siguiendo los pasos indicados a continuación.
 
 ##### <a name="to-report-that-visual-studio-freezes-while-debugging-with-visual-studio-tools-for-unity"></a>Para informar de que Visual Studio se inmoviliza durante la depuración con Visual Studio Tools para Unity
 
@@ -130,19 +149,19 @@ Intente actualizar Visual Studio 2015 a Update 3.
 
 1. Abra una nueva instancia de Visual Studio.
 
-1. Abra el diálogo Asociar al proceso. En la nueva instancia de Visual Studio, en el menú principal, elija **Depurar** , **Asociar al proceso**.
+1. Abra el diálogo Asociar al proceso. En la nueva instancia de Visual Studio, en el menú principal, elija **Depurar**, **Asociar al proceso**.
 
 1. Asocie el depurador a la instancia inmovilizada de Visual Studio. En el diálogo **Asociar al proceso** , seleccione la instancia inmovilizada de Visual Studio en la tabla **Procesos disponibles** y, a continuación, elija el botón **Asociar** .
 
-1. Pause el Depurador. En el menú principal de la nueva instancia de Visual Studio, elija **Depurar** , **Interrumpir todo** o simplemente presione **Ctrl+Alt+Interrumpir**.
+1. Pause el Depurador. En el menú principal de la nueva instancia de Visual Studio, elija **Depurar**, **Interrumpir todo** o simplemente presione **Ctrl+Alt+Interrumpir**.
 
-1. Cree un volcado del subproceso. En la ventana Comandos, escriba el siguiente comando y presione **Entrar** :
+1. Cree un volcado del subproceso. En la ventana Comandos, escriba el siguiente comando y presione **Entrar**:
 
     ```powershell
     Debug.ListCallStack /AllThreads /ShowExternalCode
     ```
 
-    Puede que primero tenga que hacer visible la ventana **Comando** . En el menú principal de Visual Studio elija **Vista** , **Otras ventanas** , **Ventana Comandos**.
+    Puede que primero tenga que hacer visible la ventana **Comando** . En el menú principal de Visual Studio elija **Vista**, **Otras ventanas**, **Ventana Comandos**.
 
 *En Mac:*
 

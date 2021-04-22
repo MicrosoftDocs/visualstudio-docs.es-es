@@ -3,16 +3,19 @@ title: Editor de código XAML
 description: Un paseo por el editor de código XAML de Visual Studio
 ms.date: 06/16/2020
 ms.topic: overview
+f1_keywords:
+- VS.XamlEditor
 monikerRange: vs-2019
+ms.custom: contperf-fy21q4
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: df2c257caed24e85569ca41f3cc83dd9d47d5b03
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 672bfa6b28e364351f262cb2a2c6e2258ecd9746
+ms.sourcegitcommit: 3e1ff87fba290f9e60fb4049d011bb8661255d58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962319"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107879400"
 ---
 # <a name="xaml-code-editor"></a>Editor de código XAML
 
@@ -270,7 +273,7 @@ Puede usar el cuadro de diálogo [Opciones](../ide/reference/options-dialog-box-
 
 > [!NOTE]
 > También puede usar métodos abreviados de teclado para acceder al cuadro de diálogo Opciones. Esta es la manera de hacerlo: Presione **Ctrl**+**Q** para buscar en el IDE, escriba **Opciones** y, después, presione **Entrar**. A continuación, presione **Ctrl**+**E** para buscar en el cuadro de diálogo Opciones, escriba **Editor de texto**, presione **Entrar**, escriba **XAML** y, después, presione **Entrar**.
->  
+>
 > Para obtener más información sobre los métodos abreviados de teclado, vea [Sugerencias de accesos directos para Visual Studio](../ide/productivity-shortcuts.md#code-editor).
 
 ### <a name="universal-text-editor-options"></a>Opciones universales del editor de texto

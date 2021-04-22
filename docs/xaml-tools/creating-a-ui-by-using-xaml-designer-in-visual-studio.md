@@ -1,13 +1,12 @@
 ---
 title: Información general del Diseñador XAML
-description: Obtenga información sobre la interfaz de usuario del área de trabajo y las características de la Diseñador XAML en Blend para Visual Studio que proporciona una interfaz visual para ayudarle a diseñar aplicaciones basadas en XAML.
-ms.custom: SEO-VS-2020
+description: Obtenga información sobre la interfaz de usuario del área de trabajo y las características de Diseñador XAML en Blend para Visual Studio que proporciona una interfaz visual para ayudarle a diseñar aplicaciones basadas en XAML.
 ms.date: 03/03/2020
 ms.topic: conceptual
+ms.custom: contperf-fy21q4; SEO-VS-2020
 f1_keywords:
 - VS.XamlDesigner
 - VS.DevicePanel
-- VS.XamlEditor
 - VS.DocumentOutline
 - Blend.Start.Dev12
 ms.devlang: CSharp
@@ -15,12 +14,12 @@ ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: 132a5aef33b501ad17a2a089684cfe927321b2e5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3d5584380b78bba05f1596a99aa2298789df018f
+ms.sourcegitcommit: 3e1ff87fba290f9e60fb4049d011bb8661255d58
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966492"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107879361"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>Crear una IU con el Diseñador XAML
 
@@ -29,7 +28,7 @@ El Diseñador XAML en Visual Studio y Blend para Visual Studio proporciona una i
 En el caso de los usuarios avanzados, incluso es posible [personalizar el Diseñador XAML](https://github.com/microsoft/xaml-designer-extensibility/blob/master/documents/xaml-designer-extensibility-migration.md).
 
 > [!NOTE]
-> Xamarin. Forms no admite un diseñador XAML. Para ver las IUs de XAML de Xamarin. Forms y editarlas mientras la aplicación se está ejecutando, use la recarga activa de XAML para Xamarin. Forms. Para obtener más información, consulte la página de [recarga activa de XAML para Xamarin. Forms (versión preliminar)](/xamarin/xamarin-forms/xaml/hot-reload/) .
+> Xamarin.Forms no admite un diseñador XAML. Para ver las uri de XAML de Xamarin.Forms y editarlas mientras se ejecuta la aplicación, use Recarga activa de XAML para Xamarin.Forms. Para obtener más información, vea [la página Recarga activa de XAML para Xamarin.Forms (versión preliminar).](/xamarin/xamarin-forms/xaml/hot-reload/)
 
 ## <a name="xaml-designer-workspace"></a>Área de trabajo del Diseñador XAML
 
@@ -93,7 +92,7 @@ Muestra u oculta la cuadrícula de ajuste que hace visibles las líneas de cuadr
 
 **Activar o desactivar el ajuste a las líneas de cuadrícula**
 
-Si está habilitado el **ajuste a las líneas de cuadrícula** , un elemento tiende a alinearse con la línea de cuadrícula vertical y horizontal más cercana al arrastrarla a la mesa de la mesa.
+Si **el ajuste a las líneas** de cuadrícula está habilitado, un elemento tiende a alinearse con las líneas de cuadrícula horizontales y verticales más cercanas al arrastrarlo a la mesa de trabajo.
 
 **Alternar el fondo de la mesa de trabajo**
 
@@ -119,26 +118,26 @@ La ventana Esquema del documento de Visual Studio es similar a la ventana [Obje
 
 - Ver la estructura jerárquica de todos los elementos de la mesa de trabajo.
 
-- Seleccione los elementos para poder modificarlos. Por ejemplo, puede moverlos por la jerarquía o establecer sus propiedades en el ventana Propiedades. Para más información, consulte [Trabajar con elementos en el Diseñador XAML](../xaml-tools/working-with-elements-in-xaml-designer.md).
+- Seleccione elementos para poder modificarlos. Por ejemplo, puede moverlas por la jerarquía o establecer sus propiedades en el ventana Propiedades. Para más información, consulte [Trabajar con elementos en el Diseñador XAML](../xaml-tools/working-with-elements-in-xaml-designer.md).
 
 - Crear y modificar plantillas para elementos que son controles.
 
 - [Crear animaciones](animate-objects-in-xaml-designer.md) (solo en Blend para Visual Studio).
 
-Para ver la ventana esquema del documento en Visual Studio, en la barra de menús, seleccione **Ver**  >  **otro**  >  **esquema del documento** de Windows.
-Para ver la ventana de objetos y escala de tiempo en Blend para Visual Studio, en la barra de menús, seleccione **Ver**  >  **esquema del documento**.
+Para ver la ventana Esquema del documento en Visual Studio, en la barra de menús, seleccione **Ver otro**  >  esquema de documento de **Windows.**  >  
+Para ver la ventana Objetos y escala de tiempo en Blend para Visual Studio, en la barra de menús, seleccione **Ver esquema**  >  **del documento.**
 
 ![Ventana Esquema del documento en Visual Studio](media/document-outline-window.png)
 
-La vista principal de la ventana Esquema del documento/Objetos y escala de tiempo muestra la jerarquía de un documento en una estructura de árbol. Puede usar la naturaleza jerárquica del esquema del documento para examinar el documento en los distintos niveles de detalle y para bloquear y ocultar elementos individualmente o en grupos. Las siguientes opciones están disponibles en la ventana esquema/Objetos y escala de tiempo del documento:
+La vista principal de la ventana Esquema del documento/Objetos y escala de tiempo muestra la jerarquía de un documento en una estructura de árbol. Puede usar la naturaleza jerárquica del esquema del documento para examinar el documento en los distintos niveles de detalle y para bloquear y ocultar elementos individualmente o en grupos. Las siguientes opciones están disponibles en la ventana Esquema del documento/Objetos y escala de tiempo documento:
 
 **Mostrar u ocultar**
 
-Muestra u oculta los elementos de la mesa de trabajo. Cuando se muestra, aparece como el símbolo de un ojo. También puede presionar **Ctrl** + **h** para ocultar un elemento y **desplazar** + **Ctrl** + **h** para mostrarlo.
+Muestra u oculta los elementos de la mesa de trabajo. Cuando se muestra, aparece como el símbolo de un ojo. También puede presionar **Ctrl** + **H** para ocultar un elemento y + **Mayús Ctrl** + **H** para mostrarlo.
 
 **Bloquear o desbloquear**
 
-Bloquea o desbloquea los elementos de la mesa de trabajo. Los elementos bloqueados no se pueden modificar. Cuando se bloquea un elemento, aparece un símbolo de candado. También puede presionar **Ctrl** + **l** para bloquear un elemento y **MAYÚS** + **Ctrl** + **l** para desbloquearlo.
+Bloquea o desbloquea los elementos de la mesa de trabajo. Los elementos bloqueados no se pueden modificar. Cuando se bloquea un elemento, aparece un símbolo de candado. También puede presionar **Ctrl** + **L** para bloquear un elemento y + **Mayús Ctrl** + **L** para desbloquearlo.
 
 **Devolver ámbito a pageRoot**
 
@@ -164,7 +163,7 @@ A la derecha de cada propiedad de valor se encuentra un *marcador de propiedad* 
 
 Para más información sobre cómo usar las propiedades y controlar los eventos, consulte [Introducción a los controles y patrones](/windows/uwp/design/controls-and-patterns/controls-and-events-intro).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Trabajo con elementos en el Diseñador XAML](../xaml-tools/working-with-elements-in-xaml-designer.md)
 - [Cómo crear y aplicar un recurso](../xaml-tools/how-to-create-and-apply-a-resource.md)

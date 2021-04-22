@@ -1,8 +1,8 @@
 ---
 title: Programación de Visual Studio Tools para Unity | Microsoft Docs
-description: Vea ejemplos de programación con la API de Visual Studio Tools para Unity (VSTU). Personalice archivos del proyecto creados mediante VSTU. Comparta la devolución de llamada de registro de Unity con VSTU.
+description: Vea ejemplos de programación con la API de Visual Studio Tools para Unity (VSTU). Personalice archivos del proyecto creados mediante VSTU.
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 04/19/2021
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: c98a3cdbcece87ad5e8fbe0e91ae76f677494477
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 4d81284faba4d75eb00c5905c868a4b4b69a82a4
+ms.sourcegitcommit: 3e1ff87fba290f9e60fb4049d011bb8661255d58
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "94341410"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107879296"
 ---
 # <a name="program-visual-studio-tools-for-unity"></a>Programa Visual Studio Tools para Unity
 En esta sección encontrará ejemplos de uso de la API de Visual Studio Tools para Unity.
@@ -26,7 +26,4 @@ En esta sección encontrará ejemplos de uso de la API de Visual Studio Tools pa
  Estos son algunos ejemplos que muestran cómo se puede utilizar la API de Visual Studio Tools para Unity.
 
 ### <a name="customize-project-files-created-by-vstu"></a>Personalizar archivos de proyecto creados por VSTU
- Visual Studio Tools para Unity ofrece una devolución de llamada al estilo de Unity durante la generación del archivo de proyecto. Para obtener más información sobre cómo modificar el archivo del proyecto cada vez que se regenere, vea [Ejemplo: generación de archivos de proyecto](./customize-project-files-created-by-vstu.md).
-
-### <a name="share-the-unity-log-callback-with-vstu"></a>Compartir la devolución de llamada de registro de Unity con VSTU
- Visual Studio Tools para Unity registra una devolución de llamada de registro con Unity para poder transmitir su consola a Visual Studio. Si los scripts del editor también registran una devolución de llamada de registro con Unity, la devolución de llamada de VSTU puede interferir con la devolución de llamada. Para obtener más información sobre cómo compartir la devolución de llamada de registro de Unity con VSTU, vea [Ejemplo: devolución de llamada de registro](./share-the-unity-log-callback-with-vstu.md).
+ Unity proporciona devoluciones de llamada durante la generación de archivos de proyecto. Para obtener información sobre cómo puede modificar archivos de proyecto o solución cada vez que se vuelve a generar, vea [Ejemplo: Generación de archivos de proyecto.](./customize-project-files-created-by-vstu.md)

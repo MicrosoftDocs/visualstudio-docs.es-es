@@ -12,53 +12,53 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 12a6e122d6193b7aa98cf27668dab201bbb86ce4
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: a03d0fc896fcbc971bc62cd9391c4f38d0aad06c
+ms.sourcegitcommit: 3e1ff87fba290f9e60fb4049d011bb8661255d58
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683482"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107879387"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Registro de cambios (Visual Studio Tools para Unity, Windows)
 
 Registro de cambios de Visual Studio Tools para Unity.
 
 ## <a name="4910"></a>4.9.1.0
-Publicado el 2 de marzo de 2021
+Fecha de lanzamiento: 2 de marzo de 2021
 
 ### <a name="new-features"></a>Características nuevas
 
 - **Evaluación:**
 
-  - Agregado `Active Scene` a variables locales, mostrando objetos de juego raíz.
+  - Se ha agregado `Active Scene` a las variables locales, mostrando objetos de juego raíz.
 
-  - Agregado `this.gameObject` a variables locales, dado que se usa ampliamente en proyectos de Unity.
+  - Se ha agregado `this.gameObject` a las variables locales, dado que se usa ampliamente en proyectos de Unity.
 
-  - Se han agregado `Children` `Components` grupos y a todas `GameObject` las instancias para que pueda mostrar fácilmente toda la jerarquía de objetos.
+  - Se han agregado grupos `Children` y `Components` a todas las instancias de `GameObject` para que pueda mostrar fácilmente toda la jerarquía de objetos.
 
-  - Se agrega `Scene Path` a todas `GameObject` las instancias para mostrar la ubicación en la escena.
+  - Se ha agregado `Scene Path` a todas las instancias de `GameObject` para mostrar la ubicación en la escena.
 
-  - Se agregó compatibilidad con `JobEntityBatch` /lambdas al usar entidades con generadores de origen.
+  - Se ha agregado compatibilidad con `JobEntityBatch`/Lambdas al usar entidades con generadores de código fuente.
 
-  - Compatibilidad mejorada para mostrar matrices de gran tamaño (mediante el uso de cubos de índices).
+  - Se ha mejorado la compatibilidad para la visualización de matrices de gran tamaño mediante el uso de cubos de índices.
   
-  - Se han agregado mensajes de Unity que faltan para la API 2019,4.
+  - Se han agregado mensajes de Unity que faltan para la API 2019.4.
 
 ### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Integración:**
 
-  - Se han corregido varios problemas de interfaz de usuario para lenguajes no ENU.
+  - Se han corregido varios problemas de interfaz de usuario para lenguajes distintos de ENU.
 
-  - Se han corregido problemas de estabilidad con el [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md) diagnóstico.
+  - Se han corregido problemas de estabilidad con diagnóstico [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md).
   
 - **Debugging:** (Depuración)
 
-  - Se han corregido problemas de desconexión de máquinas virtuales al usar `Trace` métodos.
+  - Se han corregido problemas de desconexión de máquinas virtuales al usar métodos `Trace`.
 
 - **Evaluación:**
 
-  - Filtrado fijo de propiedades obsoletas que producen excepciones.
+  - Se ha corregido el filtrado de propiedades obsoletas que lanzaban excepciones.
 
 ## <a name="4900"></a>4.9.0.0
 Publicado el 20 de enero de 2021
@@ -67,61 +67,61 @@ Publicado el 20 de enero de 2021
 
 - **Integración:**
 
-  - Se ha agregado compatibilidad con `raytrace shaders` `UXML` `USS` los archivos y.
+  - Se ha agregado compatibilidad para archivos `raytrace shaders`, `UXML` y `USS`.
 
-  - `.vsconfig`Compatibilidad con la generación agregada. Visual Studio ahora debe detectar qué componentes faltan y pedirle que los instale al usar proyectos de Unity.
+  - Se ha agregado `.vsconfig` compatibilidad de generación. Visual Studio detectar qué componentes faltan y solicitar que los instale al usar proyectos de Unity.
 
-  - API de mensajes de Unity actualizada (para todos los métodos usados como corrutinas).
+  - Se ha actualizado la API de mensajes de Unity (para todos los métodos utilizados como corrutinas).
 
-  - Detección de Android SDK actualizada.
+  - Se ha actualizado la detección del Android SDK.
 
 ### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Integración:**
 
-  - Actualización de proceso fija al usar el cuadro de diálogo de selección de instancia.
+  - Se ha corregido la actualización del proceso al usar el cuadro de diálogo de selección de instancia.
 
-  - [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0006.md)Diagnóstico fijo, que emite advertencias equivocadas para las corutinas y `AssetPostprocessor.OnAssignMaterialModel` .
+  - Se ha corregido el diagnóstico [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0006.md), que daba avisos erróneos para corrutinas y `AssetPostprocessor.OnAssignMaterialModel`.
 
 ## <a name="4820"></a>4.8.2.0
-Publicado el 10 de noviembre de 2020
+Fecha de lanzamiento: 10 de noviembre de 2020
 
 ### <a name="new-features"></a>Características nuevas
 
 - **Integración:**
 
-  - [`UNT0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0010.md)Diagnóstico mejorado que se aplica a todo lo que se hereda de `Component` , no solo `MonoBehaviour` .
+  - Diagnóstico mejorado [`UNT0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0010.md) para aplicar a todo lo que hereda de , no solo a `Component` `MonoBehaviour` .
 
 ### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Integración:**
 
-  - Se corrigió la invalidación del mensaje codelens.
+  - Se ha corregido la invalidación del mensaje de CodeLens.
 
 ## <a name="4810"></a>4.8.1.0
-Publicado el 13 de octubre de 2020
+Fecha de lanzamiento: 13 de octubre de 2020
 
 ### <a name="new-features"></a>Características nuevas
 
 - **Evaluación:**
 
-  - Compatibilidad agregada para la conversión implícita con las invocaciones. Anteriormente, el evaluador aplicó una comprobación estricta de tipos, lo que generaba `Failed to find a match for method([parameters...])` mensajes de advertencia.
+  - Se ha agregado compatibilidad para la conversión implícita con invocaciones. Anteriormente, el evaluador aplicaba la comprobación de tipos estricta, lo que generaba mensajes `Failed to find a match for method([parameters...])` de advertencia.
 
 - **Integración:**
 
-  - Se ha agregado el diagnóstico [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md). No debe utilizar `System.Reflection` características en mensajes críticos para el rendimiento como `Update` , `FixedUpdate` , `LateUpdate` o `OnGUI` .
+  - Se ha agregado el diagnóstico [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md). No debe usar características `System.Reflection` en mensajes críticos para el rendimiento `Update` como , , o `FixedUpdate` `LateUpdate` `OnGUI` .
 
-  - Mejoras [`USP0003`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0003.md) y [`USP0005`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0005.md) supresiones, con compatibilidad para todos los `AssetPostprocessor` métodos estáticos.
+  - [`USP0003`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0003.md) [`USP0005`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0005.md) Supresores y mejorados, con compatibilidad con todos los `AssetPostprocessor` métodos estáticos.
 
-  - Se ha agregado el supresor [`USP0016`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0016.md) para `CS8618`. `C# 8.0` introduce tipos de referencia que aceptan valores NULL y tipos de referencia que no aceptan valores NULL. No se admite la detección de inicialización de tipos que heredan de `UnityEngine.Object` y se producirán errores.
+  - Se ha agregado el supresor [`USP0016`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0016.md) para `CS8618`. `C# 8.0` introduce tipos de referencia que aceptan valores NULL y tipos de referencia que no aceptan valores NULL. No se admite la detección de inicialización de tipos que heredan de `UnityEngine.Object` y provocará errores.
 
-  - Ahora con el mismo reproductor y el mismo mecanismo de generación de proyectos de asmdef para Unity 2019. x y 2020. x +.
+  - Ahora usa el mismo reproductor y el mismo mecanismo de generación de proyectos asmdef para Unity 2019.x y 2020.x+.
 
 ### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Integración:**
 
-  - Se corrigió una finalización inesperada de mensajes en Comentarios.
+  - Se ha corregido la finalización inesperada de los mensajes en los comentarios.
 
 ## <a name="4800"></a>4.8.0.0 
 Publicado el 14 de septiembre de 2020
@@ -130,7 +130,7 @@ Publicado el 14 de septiembre de 2020
 
 - **Integración:**
 
-  - Se ha corregido la generación de proyectos de reproductor con Unity 2019. x.
+  - Se ha corregido la generación de proyectos de reproductor con Unity 2019.x.
 
 ## <a name="4710"></a>4.7.1.0
 Publicado el 5 de agosto de 2020
@@ -1879,9 +1879,9 @@ Publicado el 28 de noviembre de 2012
 
 - Se analiza el mensaje de la consola de información, para que al hacer clic en la Lista de errores, acceda a la primera stackframe que tenga símbolos.
 
-- Se ha agregado una [API](extensibility/customize-project-files-created-by-vstu.md) para dejar al usuario participar en la generación del proyecto.
+- Se ha agregado una API para dejar al usuario participar en la generación del proyecto.
 
-- Se ha agregado una [API](extensibility/share-the-unity-log-callback-with-vstu.md) para dejar al usuario participar en la LogCallback.
+- Se ha agregado una API para dejar al usuario participar en la LogCallback.
 
 ### <a name="bug-fixes"></a>Correcciones de errores
 
