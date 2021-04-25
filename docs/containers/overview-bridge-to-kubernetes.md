@@ -9,12 +9,12 @@ monikerRange: '>=vs-2019'
 manager: jmartens
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: 49c3081e68baf4f2bf1d0975bcdae7ea25ab90b3
-ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
+ms.openlocfilehash: 1709785c63bd4fbcd702fbcacfe59dddcb71d1b3
+ms.sourcegitcommit: 0135fc6ffa38995cc9e6ab05fa265758890d2e15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103571550"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107526156"
 ---
 # <a name="how-bridge-to-kubernetes-works"></a>Funcionamiento del Puente a Kubernetes
 
@@ -26,6 +26,8 @@ Puente a Kubernetes redirige el tráfico entre el clúster de Kubernetes conecta
 
 > [!WARNING]
 > Puente a Kubernetes está pensado únicamente para su uso en escenarios de desarrollo y pruebas. No está pensado ni se admite para su uso con clústeres de producción o servicios en vivo que se utilizan de forma activa.
+
+Puede encontrar información sobre las características admitidas actualmente y un plan de desarrollo futuro para Bridge to Kubernetes en [Plan de desarrollo de Bridge to Kubernetes](https://github.com/microsoft/mindaro/projects/1).
 
 ## <a name="using-bridge-to-kubernetes"></a>Uso de Puente a Kubernetes
 
@@ -53,7 +55,7 @@ Además, Puente a Kubernetes proporciona una manera de replicar variables de ent
 
 ## <a name="additional-configuration-with-kuberneteslocalprocessconfigyaml"></a>Configuración adicional con KubernetesLocalProcessConfig.yaml
 
-El archivo `KubernetesLocalProcessConfig.yaml` le permite replicar variables de entorno y archivos montados disponibles para los pods en el clúster. Para más información sobre las opciones de configuración adicionales, consulte [Configuración de Puente a Kubernetes][using-config-yaml].
+El archivo `KubernetesLocalProcessConfig.yaml` le permite replicar variables de entorno y archivos montados disponibles para los pods en el clúster. Al usar Visual Studio para el desarrollo de Bridge to Kubernetes, el archivo KubernetesLocalConfig.yaml se debe encontrar en el mismo directorio que el archivo del proyecto para el servicio que se redirige. Para más información sobre las opciones de configuración adicionales, consulte [Configuración de Puente a Kubernetes][using-config-yaml].
 
 ## <a name="using-routing-capabilities-for-developing-in-isolation"></a>Uso de funciones de enrutamiento para desarrollar de forma aislada
 

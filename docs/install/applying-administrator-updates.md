@@ -2,31 +2,31 @@
 title: Aplicación de actualizaciones de administrador a Visual Studio con Microsoft Endpoint Configuration Manager
 titleSuffix: ''
 description: Obtenga información sobre cómo aplicar actualizaciones de administrador a Visual Studio.
-ms.date: 04/06/2021
+ms.date: 04/16/2021
 ms.custom: ''
 ms.topic: overview
 ms.assetid: 9a3fdb28-db3d-4970-bc17-7417a985f0fb
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d316fc35df8c571a9112d7a653737e099df80559
-ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
+ms.openlocfilehash: d7d2950b9495846693d5edee7790b8611cbca170
+ms.sourcegitcommit: 367a2d9df789aa617abaa09b0cd0a18db7357d0c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "106547458"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107800788"
 ---
 # <a name="applying-administrator-updates-that-use-microsoft-endpoint-configuration-manager"></a>Aplicación de actualizaciones de administrador que usan Microsoft Endpoint Configuration Manager
 
-En este documento se describen los distintos tipos y características de las actualizaciones de administrador de Visual Studio. A continuación, encontrará información sobre cómo y cuándo deben distribuirse en toda la organización, qué opciones de configuración están disponibles y cómo ver informes y solucionar problemas. Para obtener más información acerca de los requisitos previos para el uso de actualizaciones de administrador, consulte [Habilitación de las actualizaciones de administrador](../install/enabling-administrator-updates.md).
+En este documento se describen los distintos tipos y características de las actualizaciones de administrador de Visual Studio. A continuación, encontrará información sobre cómo y cuándo deben distribuirse en toda la organización, qué opciones de configuración están disponibles y cómo ver informes y solucionar problemas. Para obtener más información acerca de los requisitos previos para el uso de actualizaciones de administrador, consulte [Habilitación de las actualizaciones de administrador](../install/enabling-administrator-updates.md). Las actualizaciones de administrador asumen que Visual Studio ya está instalado en el equipo. La aplicación de actualizaciones de administrador no iniciará una instalación completamente nueva.
 
 ## <a name="understanding-visual-studio-administrator-updates"></a>Descripción de las actualizaciones de administrador de Visual Studio 
 
-El paquete de actualizaciones del administrador de Visual Studio que se publica en Microsoft Update para su uso por el catálogo de Microsoft y WSUS contiene la información que necesita Configuration Manager para poder descargar y distribuir la actualización de Visual Studio a los equipos cliente. También contiene información que necesita un administrador de TI para decidir qué actualizaciones distribuir en toda la organización, y facilita el mantenimiento de los diseños de red. Los paquetes de actualización del administrador de Visual Studio no contienen suficiente información para realizar una instalación nueva del producto, ni contienen ninguno de los archivos binarios reales del producto que se publican en Content Delivery Network. Las actualizaciones del administrador de Visual Studio son acumulativas, al igual que las actualizaciones habituales de Visual Studio. Puede suponer que cualquier actualización de Visual Studio que tenga un número de versión de producto superior y una fecha de lanzamiento posterior es un superconjunto de una versión anterior más antigua. 
+El paquete de actualizaciones de administrador de Visual Studio que se publica en Microsoft Update para su uso por el catálogo de Microsoft y WSUS contiene la información que necesita Configuration Manager para poder descargar y distribuir la actualización de Visual Studio a las máquinas cliente. También contiene la información que necesita un administrador de TI para decidir qué actualizaciones distribuir en toda la organización. Además, se puede usar para facilitar el mantenimiento de los diseños de red. Los paquetes de actualización del administrador de Visual Studio no contienen suficiente información para realizar una instalación nueva del producto, ni contienen ninguno de los archivos binarios reales del producto que se publican en Content Delivery Network. Las actualizaciones del administrador de Visual Studio son acumulativas, al igual que las actualizaciones habituales de Visual Studio. Puede suponer que cualquier actualización de Visual Studio que tenga un número de versión de producto superior y una fecha de lanzamiento posterior es un superconjunto de una versión anterior más antigua. 
 
 Las actualizaciones de administrador de Visual Studio se aplican a las versiones de servicio de Visual Studio que se encuentran en servicio de soporte técnico. Para obtener más información sobre qué líneas de base de servicio de Visual Studio todavía se admiten durante un período de tiempo determinado, consulte [Ciclo de vida y mantenimiento del producto de Visual Studio](https://docs.microsoft.com/visualstudio/productinfo/vs-servicing-vs). Todas las líneas de base de servicio de Visual Studio compatibles se mantendrán seguras.  
 
@@ -83,9 +83,9 @@ Hay algunas opciones de configuración que se pueden usar para personalizar las 
 
 ::: moniker range="vs-2019"
 
-* **Adherencia a la línea de base de servicio**: como se describió anteriormente, las actualizaciones de administrador que son actualizaciones de características adelantan una instalación de Visual Studio a una versión secundaria más actual del producto. A veces, sin embargo, a los equipos de desarrollo les gusta permanecer en un determinado nivel de línea de base de servicio estable y seguro, y les gusta controlar cuándo sus clientes avanzan a una versión secundaria más actual. Para configurar un equipo cliente para que permanezca en una línea de base de servicio e ignore las actualizaciones de características de administrador no deseadas que se le envían, deberá crear y establecer el valor de datos **BaselineStickinessVersions2019** Reg_SZ a una cadena que represente las líneas de base permitidas en las que el equipo cliente pueda ajustarse y permanecer.  La cadena puede contener una secuencia de versiones de línea de base de servicio separadas por comas, como **16.4.0,16.7.0**. Se puede incluir cualquier número de versiones de línea de base de servicio en la cadena, y también se admite la palabra **All**, que es una abreviatura para hacer referencia a todas las líneas de base de servicio admitidas. 
+* **Adherencia a la línea de base de servicio**: como se ha descrito antes, las actualizaciones de características de administrador adelantan una instalación de Visual Studio a una versión secundaria más actual del producto. Pero en ocasiones, los usuarios de Visual Studio tienen que permanecer en un determinado nivel de línea de base de servicio estable y segura, y quieren controlar cuándo sus máquinas avanzan a una versión secundaria más actual. A fin de configurar una máquina cliente para que permanezca en una línea de base de servicio e ignore las actualizaciones de características de administrador no deseadas que se le envían, tendrá que crear y establecer el valor de datos **BaselineStickinessVersions2019** de Reg_SZ en una cadena que represente las líneas de base permitidas en las que la máquina cliente se pueda ajustar y permanecer. La cadena puede contener una versión de línea base de servicio permitida, como **16.7.0**.  
 
-     Si el valor del Registro `BaselineStickinessVersions2019` tiene un formato incorrecto, se bloqueará la instalación de todas las actualizaciones de características en el equipo. Además, preste atención a los [períodos de tiempo admitidos para las actualizaciones de características de Visual Studio](https://docs.microsoft.com/visualstudio/productinfo/vs-servicing-vs). Aunque es técnicamente posible aplicar actualizaciones de características que han alcanzado el final de su ciclo de vida, no se recomienda porque estarán fuera del soporte técnico y, por lo tanto, serán potencialmente inseguras.
+     Si el valor del Registro `BaselineStickinessVersions2019` tiene un formato incorrecto, se bloqueará la instalación de todas las actualizaciones de características de administrador en la máquina. Asegúrese de prestar atención a los [períodos de tiempo admitidos para las actualizaciones de características de Visual Studio](https://docs.microsoft.com/visualstudio/productinfo/vs-servicing-vs). Además, con independencia de la presencia o el valor de la clave `BaselineStickinessVersions2019`, aunque técnicamente es posible aplicar actualizaciones de características de administrador que han alcanzado el final de su ciclo de vida, no se recomienda porque estarán fuera del soporte técnico y, por tanto, serán potencialmente inseguras.
 
 ::: moniker-end
 

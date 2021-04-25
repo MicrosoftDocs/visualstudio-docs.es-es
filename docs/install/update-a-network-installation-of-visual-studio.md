@@ -1,7 +1,7 @@
 ---
 title: Actualización de una instalación basada en red
 description: Más información sobre cómo actualizar una instalación de Visual Studio basada en red con el comando --layout
-ms.date: 04/06/2021
+ms.date: 04/16/2021
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0f6e13333b6cab86f6485ddc18516039c712455a
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 0400f4be06afab2326ac738e1ac15f9d93a6ecee
+ms.sourcegitcommit: 367a2d9df789aa617abaa09b0cd0a18db7357d0c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107295954"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107800778"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Actualización de una instalación basada en red de Visual Studio
 
@@ -29,9 +29,9 @@ Se puede actualizar un diseño de instalación de red de Visual Studio con las a
 ## <a name="how-to-update-a-network-layout"></a>Actualización de un diseño de red
 
 > [!IMPORTANT]
-> En estas instrucciones se da por hecho que ya se ha creado previamente un diseño de instalación de red. Para más información sobre cómo hacerlo, vea la página [Creación de una instalación de red de Visual Studio](create-a-network-installation-of-visual-studio.md).
+> En estas instrucciones se supone que ha creado previamente un diseño de instalación de red y ha tomado algunas decisiones sobre cómo debe obtener el cliente las actualizaciones. Para obtener más información sobre cómo hacerlo, vea la página [Creación de una instalación de red de Visual Studio](create-a-network-installation-of-visual-studio.md) y [Control de actualizaciones a implementaciones de Visual Studio basadas en red](../install/controlling-updates-to-visual-studio-deployments.md).
 
-Para actualizar el recurso compartido de instalación de red de forma que incluya las actualizaciones más recientes, ejecute el comando `--layout` para descargar paquetes actualizados de forma incremental.
+Para actualizar el recurso compartido de instalación de red de forma que incluya las actualizaciones más recientes, ejecute el programa previo mediante el comando `--layout` para descargar los paquetes actualizados.
 
 Si ha seleccionado un diseño parcial al [crear el diseño de red](create-a-network-installation-of-visual-studio.md), esas opciones se guardan. Cualquier comando de diseño futuro usa las opciones anteriores además de las nuevas que especifique.
 

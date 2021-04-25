@@ -2,19 +2,19 @@
 title: Personalizar el IDE
 description: Aprenda a personalizar el IDE de Visual Studio de las maneras que mejor se adapten a sus propios requisitos y estilo de desarrollo.
 ms.custom: SEO-VS-2020
-ms.date: 11/20/2017
+ms.date: 04/12/2021
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 550ab6449cc74d3d0d81d60a41b11f0273003c51
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9a1bcfdc9489ee59f5697f1d96de21e31a71fb17
+ms.sourcegitcommit: 5035ccb32fb5e06451337cbf9a150687082ae2af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909016"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107373172"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Personalizar el IDE de Visual Studio
 
@@ -40,7 +40,7 @@ Muchas opciones de personalización se exponen en el cuadro de diálogo [Opcione
 
 ## <a name="environment-color-themes"></a>Temas de color de entorno
 
-Para cambiar el tema de color entre claro, oscuro y azul, escriba **entorno** en el cuadro de búsqueda y elija **Entorno > General**. En el cuadro de diálogo **Opciones**, cambie la opción **Tema de color**.
+Para cambiar el tema de color entre Claro, Oscuro, Azul y Azul (contraste adicional), escriba **tema** en el cuadro de búsqueda y, después, seleccione **Entorno > General**. En el cuadro de diálogo **Opciones**, cambie la opción **Tema de color**.
 
 Para cambiar las opciones de color en el editor, escriba **entorno** en el cuadro de búsqueda y elija **Entorno > Fuentes y colores**. Consulte [Cómo: Cambiar fuentes y colores](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
 
