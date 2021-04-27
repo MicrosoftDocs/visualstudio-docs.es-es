@@ -688,6 +688,8 @@
       items:
         - name: Usar archivos de volcado de memoria
           href: using-dump-files.md
+        - name: Depuración de un volcado de memoria administrada
+          href: how-to-debug-managed-memory-dump.md
         - name: API de extensibilidad de resumen de archivos de volcado de memoria
           href: dump-file-summary-extensibility-api.md
     - name: Seguridad del depurador
