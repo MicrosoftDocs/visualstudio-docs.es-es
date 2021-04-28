@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 60e1aca5e0f561539f3e27cf36dac67bb92c4ddf
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9e4c432afb1a4341dbe30f023d95bfccb4689094
+ms.sourcegitcommit: 5fb684ff8729eb118aa91ce9f049c79eeb9747b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105082028"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "107913103"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Novedades de Visual Studio 2019
 
@@ -146,7 +146,7 @@ Para más información, vea la entrada de blog [Get to code: How we designed the
 
 **Novedades en 16.8**: Ahora Git es la experiencia de control de versiones predeterminada en Visual Studio 2019. Hemos creado el conjunto de características y lo hemos iterado según los comentarios recibidos durante las dos últimas versiones. Ahora, la nueva experiencia está activada de forma predeterminada para todos los usuarios. En el nuevo menú de Git puede clonar, crear o abrir repositorios. Use las ventanas de herramientas de Git integradas para confirmar y enviar cambios en el código, administrar ramas, conocer las últimas novedades relativas a los repositorios remotos y resolver conflictos de fusión mediante combinación.
 
-Para más información, consulte la página [Experiencia de Git en Visual Studio](git-with-visual-studio.md).
+Para más información, consulte la página [Experiencia de Git en Visual Studio](../version-control/git-with-visual-studio.md).
 
 ### <a name="live-share"></a>Live Share
 
@@ -228,7 +228,7 @@ Mientras tanto, aquí hay una nueva característica que se está preparando.
 
    Aunque la nueva experiencia de control de versiones de Git ya está activada de forma predeterminada en la [versión 16.8](/visualstudio/releases/2019/release-notes/) de Visual Studio 2019, seguimos agregando características para mejorar la experiencia en la versión preliminar más reciente.
 
-   Para más información, consulte la página [Experiencia de Git en Visual Studio](git-with-visual-studio.md).
+   Para más información, consulte la página [Experiencia de Git en Visual Studio](../version-control/git-with-visual-studio.md).
 
 Para más información sobre la versión preliminar&mdash;y un vínculo de descarga si quiere probarla&mdash;consulte la página **[Visual Studio Preview](https://aka.ms/vspreview/)** .
 

@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: e6e7dfd0d677412ded44459c7850fa9028142c42
-ms.sourcegitcommit: be14ae4b95e289f16e9444293bb2ec997d4b4d72
+ms.openlocfilehash: 863ba91f88ee953ce7d62179ff3b50aca5500c83
+ms.sourcegitcommit: 5fb684ff8729eb118aa91ce9f049c79eeb9747b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "107031585"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "107913064"
 ---
 # <a name="visual-studio-docs-whats-new-for-march-2021"></a>Documentación de Visual Studio: Novedades de marzo de 2021
 
@@ -85,9 +85,9 @@ Le damos la bienvenida a las novedades de la documentación de Visual Studio de
 ## <a name="ide"></a>IDE
 
 **Artículos nuevos**
-- [Control del código fuente de forma sencilla con Visual Studio](./git-visual-studio-source-control.md): creación de un nuevo tema sobre el control de código fuente de Visual Studio
+- [Control del código fuente de forma sencilla con Visual Studio](../version-control/git-visual-studio-source-control.md): creación de un nuevo tema sobre el control de código fuente de Visual Studio
 - [Símbolo del sistema para desarrolladores y PowerShell para desarrolladores](./reference/command-prompt-powershell.md): Símbolo del sistema para desarrolladores y PowerShell para desarrolladores
-- [Comparación en paralelo de Git y Team Explorer](./git-team-explorer-feature-comparison.md): incorporación de nueva página de comparación en paralelo de Team Explorer y nuevas características de Git
+- [Comparación en paralelo de Git y Team Explorer](../version-control/git-team-explorer-feature-comparison.md): incorporación de nueva página de comparación en paralelo de Team Explorer y nuevas características de Git
 
 **Artículos actualizados**
 

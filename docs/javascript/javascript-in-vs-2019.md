@@ -14,12 +14,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 0fe13030478f62f759b3eabc8e897c09a4295bad
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 267bd8567b60a66bcf9d78c3aef8f02bbc942e0d
+ms.sourcegitcommit: e12d6cdaeb37564f05361965db2ec8ad0d4f21ad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936761"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "108025883"
 ---
 # <a name="javascript-and-typescript-in-visual-studio-2019"></a>JavaScript y TypeScript en Visual Studio 2019
 
@@ -46,4 +46,4 @@ Visual Studio 2019 ofrece varias opciones para la integración de la compilació
 
 ## <a name="projects"></a>Proyectos
 
-Las aplicaciones de JavaScript para UWP ya no se admiten en Visual Studio 2019. No puede crear ni abrir proyectos de JavaScript para UWP (archivos con extensión *.jsproj*). Para más información, consulte nuestra documentación sobre la [creación de aplicaciones web progresivas (PWA) que se ejecuten correctamente en Windows](/microsoft-edge/progressive-web-apps/get-started).
+Las aplicaciones de JavaScript para UWP ya no se admiten en Visual Studio 2019. No puede crear ni abrir proyectos de JavaScript para UWP (archivos con extensión *.jsproj*). Para más información, consulte nuestra documentación sobre la [creación de aplicaciones web progresivas (PWA) que se ejecuten correctamente en Windows](/microsoft-edge/progressive-web-apps-chromium).
