@@ -3,21 +3,20 @@ title: Carga de un subconjunto de proyectos
 description: Aprenda sobre el filtrado de soluciones y cómo le permite cargar rápidamente un subconjunto de proyectos de una solución.
 ms.custom: SEO-VS-2020
 ms.date: 04/22/2019
-ms.prod: visual-studio-dev16
 ms.topic: conceptual
 helpviewer_keywords:
 - filtered solution
 - solution filtering
-author: jillre
+author: TerryGLee
 ms.author: stsu
 manager: jmartens
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: eae0d02e1fff3f9ad5b35384e6ccab599805372b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ea30edbaac7248af8e1a58b76aebd66cf44befba
+ms.sourcegitcommit: a667ce8394a800906d633737f4fcbc77f0fcba7b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869393"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "108298735"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Soluciones filtradas en Visual Studio
 
@@ -30,6 +29,9 @@ Las siguientes características están disponibles:
 - Cuando vuelva a abrir una solución, Visual Studio recordará los proyectos que haya cargado en la sesión anterior y solo cargará dichos proyectos.
 
 - Puede crear un archivo de filtro de soluciones para guardar una o varias configuraciones de carga de proyectos, o bien compartirlas con sus compañeros.
+
+> [!NOTE]
+> Este tema se aplica a Visual Studio para Windows.
 
 ## <a name="open-a-filtered-solution"></a>Apertura de una solución filtrada
 
