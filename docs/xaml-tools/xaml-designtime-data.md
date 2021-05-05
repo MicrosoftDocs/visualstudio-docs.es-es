@@ -7,12 +7,12 @@ author: alihamie
 ms.author: tglee
 manager: jmartens
 monikerRange: vs-2019
-ms.openlocfilehash: 4bd059fa82f8a959d6e3b8a843f19cbec636fb7e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 915fe38da63f0b3994a809b20515fdc18e0790ce
+ms.sourcegitcommit: 5fb684ff8729eb118aa91ce9f049c79eeb9747b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880416"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "107913077"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>Uso de datos de tiempo de diseño con el Diseñador XAML en Visual Studio
 
@@ -66,7 +66,10 @@ Puede establecer un origen de tiempo de diseño para las imágenes enlazadas a l
 
 ## <a name="design-time-data-for-listviews"></a>Datos en tiempo de diseño para ListView
 
-Los controles ListView son una manera popular de mostrar los datos en la aplicación de escritorio, pero son difíciles de visualizar sin datos. Puede usar esta característica para crear un ItemSource de datos en tiempo de diseño en línea. En el diseñador XAML se muestra lo que hay en esa matriz en el objeto ListView en tiempo de diseño. Este es un ejemplo de .NET Core para WPF. Para usar el tipo system:String, asegúrese de incluir `xmlns:system="clr-namespace:System;assembly=mscorlib` en el encabezado XAML.
+Los controles ListView son una manera popular de mostrar los datos en la aplicación de escritorio, pero son difíciles de visualizar sin datos. Puede usar esta característica para crear elementos o un ItemSource de datos en tiempo de diseño en línea. En el diseñador XAML se muestra lo que hay en esa matriz en el objeto ListView en tiempo de diseño.
+
+### <a name="wpf-net-core--example"></a>Ejemplo de .NET Core para WPF
+Para usar el tipo system:String, asegúrese de incluir `xmlns:system="clr-namespace:System;assembly=mscorlib` en el encabezado XAML.
 
 ```xml
 <StackPanel>
@@ -135,6 +138,22 @@ xmlns:models="clr-namespace:Cities.Models"
 [![Modelo real de datos en tiempo de diseño con un control ListView](media\xaml-design-time-listview-models.png "Modelo real de datos en tiempo de diseño con un control ListView")](media\xaml-design-time-listview-models.png#lightbox)
 
 La ventaja es que puede enlazar los controles a una versión estática en tiempo de diseño del modelo.
+
+### <a name="uwp-example"></a>Ejemplo de UWP 
+
+x:Array no se admite en UWP. Por lo tanto, podemos usar `<d:ListView.Items>` en su lugar. Para usar el tipo system:String, asegúrese de incluir `http://schemas.microsoft.com/winfx/2009/xaml` en el encabezado XAML.
+
+```xml
+    <StackPanel>
+        <ListView>
+            <d:ListView.Items>
+                <system:String>Item One</system:String>
+                <system:String>Item Two</system:String>
+                <system:String>Item Three</system:String>
+            </d:ListView.Items>
+        </ListView>
+    </StackPanel>
+```
 
 ## <a name="use-design-time-data-with-custom-types-and-properties"></a>Uso de datos en tiempo de diseño con tipos y propiedades personalizados
 

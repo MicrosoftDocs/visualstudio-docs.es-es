@@ -1439,9 +1439,9 @@
       href: ide/whats-new-visual-studio-2017.md
     - name: Novedades de Visual Studio 2019
       href: ide/whats-new-visual-studio-2019.md
-    - name: Novedades de la documentación de Visual Studio
+    - name: Novedades en la documentación
       href: ide/whats-new-visual-studio-docs.md
-    - name: "Historial de novedades en la documentación de Visual\_Studio"
+    - name: Historial de las novedades de la documentación
       href: ide/whats-new-visual-studio-docs-history.md
     - name: Notas de la versión y requisitos del sistema
       items:

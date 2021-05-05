@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 461e68979de6c3b711c05cc4be3ef9d5bd761397
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: df3d32bfedfc730b8fae0837ce0e48f50e6496f4
+ms.sourcegitcommit: 925db7adb9cb554b081c7e727d09680d4863feed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99885942"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107941154"
 ---
 # <a name="create-a-c-extension-for-python"></a>Creación de una extensión de C++ para Python
 
@@ -109,7 +109,7 @@ Siga las instrucciones de esta sección para crear dos proyectos de C++ idéntic
     > [!Tip]
     > Con las **herramientas de desarrollo nativo de Python** instaladas en Visual Studio, puede comenzar con la plantilla **Módulo de extensión de Python**, que incluye gran parte de lo que se describe a continuación. En este tutorial partiremos de un proyecto vacío para mostrar la compilación del módulo de extensión paso a paso. Una vez que comprenda el proceso, la plantilla le permite ahorrar tiempo al escribir sus propias extensiones.
 
-1. Cree un archivo de C++ en el nuevo proyecto. Para ello, haga clic con el botón derecho en el nodo **Archivos de código fuente**, seleccione **Agregar** > **Nuevo elemento**, seleccione **Archivo de C++** , asígnele el nombre `module.cpp` y seleccione **Aceptar**.
+1. Cree un archivo de C++ en el nuevo proyecto. Para ello, haga clic con el botón derecho en el nodo **Archivos de código fuente**, seleccione **Agregar** > **Nuevo elemento**, seleccione **Archivo de C++**, asígnele el nombre `module.cpp` y seleccione **Aceptar**.
 
     > [!Important]
     > Para activar las páginas de propiedades de C++ en los pasos siguientes, es necesario un archivo con la extensión *.cpp*.
@@ -120,9 +120,9 @@ Siga las instrucciones de esta sección para crear dos proyectos de C++ idéntic
 
 1. Establezca las propiedades específicas tal y como se describe en la tabla siguiente y, luego, seleccione **Aceptar**.
 
-    | Tab | Propiedad. | Valor |
+    | Pestaña | Propiedad | Valor |
     | --- | --- | --- |
-    | **General** | **General** > **Nombre de destino** | Especifique el nombre del módulo tal y como quiera referirse a él desde Python en las instrucciones `from...import`. Use este mismo nombre en C++ al definir el módulo para Python. Si quiere utilizar el nombre del proyecto como nombre del módulo, deje el valor predeterminado de **$(ProjectName)** . |
+    | **General** | **General** > **Nombre de destino** | Especifique el nombre del módulo tal y como quiera referirse a él desde Python en las instrucciones `from...import`. Use este mismo nombre en C++ al definir el módulo para Python. Si quiere utilizar el nombre del proyecto como nombre del módulo, deje el valor predeterminado de **$(ProjectName)**. |
     | | **General** > **Extensión de destino** | **.pyd** |
     | | **Valores predeterminados del proyecto** > **Tipo de configuración** | **Biblioteca dinámica (.dll)** |
     | **C/C++**  > **General** | **Directorios de inclusión adicionales** | Agregue la carpeta *include* de Python según sea necesario para la instalación; por ejemplo, `c:\Python36\include`.  |
@@ -131,10 +131,10 @@ Siga las instrucciones de esta sección para crear dos proyectos de C++ idéntic
     | **Vinculador** > **General** | **Directorios de bibliotecas adicionales** | Agregue la carpeta *libs* de Python que contiene archivos *.lib* según sea necesario para la instalación, por ejemplo, `c:\Python36\libs`. (Asegúrese de apuntar a la carpeta *libs* que contiene archivos *.lib*, y *no* a la carpeta *Lib* que contiene archivos *.py*). |
 
     > [!Tip]
-    > Si no ve la pestaña C/C++ en las propiedades del proyecto, esto se debe a que este no contiene archivos identificados como archivos de código fuente de C/C++. Esta condición puede producirse si crea un archivo de código fuente sin una extensión *.c* o *.cpp*. Por ejemplo, si ha escrito accidentalmente `module.coo` en lugar de `module.cpp` en el anterior cuadro de diálogo Nuevo elemento, Visual Studio creará el archivo pero no establecerá el tipo de archivo en "Código C/C++", que es lo que activa la pestaña de propiedades de C/C++. Este error de identificación se mantiene incluso si cambia el nombre del archivo con la extensión `.cpp`. Para establecer el tipo de archivo correctamente, haga clic con el botón derecho en el archivo en el **Explorador de soluciones**, seleccione **Propiedades** y establezca **Tipo de archivo** en **Código C/C++** .
+    > Si no ve la pestaña C/C++ en las propiedades del proyecto, esto se debe a que este no contiene archivos identificados como archivos de código fuente de C/C++. Esta condición puede producirse si crea un archivo de código fuente sin una extensión *.c* o *.cpp*. Por ejemplo, si ha escrito accidentalmente `module.coo` en lugar de `module.cpp` en el anterior cuadro de diálogo Nuevo elemento, Visual Studio creará el archivo pero no establecerá el tipo de archivo en "Código C/C++", que es lo que activa la pestaña de propiedades de C/C++. Este error de identificación se mantiene incluso si cambia el nombre del archivo con la extensión `.cpp`. Para establecer el tipo de archivo correctamente, haga clic con el botón derecho en el archivo en el **Explorador de soluciones**, seleccione **Propiedades** y establezca **Tipo de archivo** en **Código C/C++** .
 
     > [!Warning]
-    > Establezca siempre la opción **C/C ++**  > **Generación de código** > **Biblioteca en tiempo de ejecución** como **DLL multiproceso (/MD)** , incluso para una configuración de depuración, ya que esta es la configuración con la que se compilan los archivos binarios de Python. Con CPython, si se establece la opción **DLL de depuración multiproceso (/MDd)** , al compilar la configuración **Depurar**, se produce el error **C1189: Py_LIMITED_API no es compatible con Py_DEBUG, Py_TRACE_REFS y Py_REF_DEBUG**. Además, si quita `Py_LIMITED_API` (que es necesario con CPython, pero no para PyBind11) para evitar el error de compilación, Python se bloqueará al intentar importar el módulo. (El bloqueo se produce en la llamada del archivo DLL a `PyModule_Create`, como se describe más adelante, con el mensaje de salida **Fatal Python error: PyThreadState_Get: no current thread** [Error irrecuperable Python: PyThreadState_Get: ningún subproceso actual]).
+    > Establezca siempre la opción **C/C ++**  > **Generación de código** > **Biblioteca en tiempo de ejecución** como **DLL multiproceso (/MD)** , incluso para una configuración de depuración, ya que esta es la configuración con la que se compilan los archivos binarios de Python. Con CPython, si, por error, establece la opción **DLL de depuración multiproceso (/MDd)** , al compilar una configuración de **depuración**, se producirá el error **C1189: Py_LIMITED_API no es compatible con Py_DEBUG, Py_TRACE_REFS ni Py_REF_DEBUG**. Además, si quita `Py_LIMITED_API` (que es necesario con CPython, pero no para PyBind11) para evitar el error de compilación, Python se bloqueará al intentar importar el módulo. (El bloqueo se produce en la llamada del archivo DLL a `PyModule_Create`, como se describe más adelante, con el mensaje de salida **Fatal Python error: PyThreadState_Get: no current thread** [Error irrecuperable Python: PyThreadState_Get: ningún subproceso actual]).
     >
     > La opción /MDd se usa para compilar los binarios de depuración de Python (como *python_d.exe*), pero, si se selecciona para un archivo DLL de extensión, también se producirá el error de compilación con `Py_LIMITED_API`.
 
@@ -206,7 +206,7 @@ Si está trabajando con Python 2.7, consulte en su lugar [Extending Python 2.7 w
     };
     ```
 
-1. Agregue una estructura que defina el módulo como quiere que se haga referencia a él en el código de Python, concretamente cuando se usa la instrucción `from...import`. (Hágalo coincidir con el valor de las propiedades del proyecto en **Propiedades de configuración** > **General** > **Nombre de destino**). En el ejemplo siguiente, el nombre de módulo "superfastcode" significa que puede usar `from superfastcode import fast_tanh` en Python, porque `fast_tanh` se define en `superfastcode_methods`. (Los nombres de archivo internos del proyecto de C++, como *module.cpp*, no tienen importancia).
+1. Agregue una estructura que defina el módulo como quiere que se haga referencia a él en el código de Python, concretamente cuando se usa la instrucción `from...import`. (Hágalo coincidir con el valor de las propiedades del proyecto en **Propiedades de configuración** > **General** > **Nombre de destino**). En el ejemplo siguiente, el nombre de módulo "superfastcode" significa que puede usar `from superfastcode import fast_tanh` en Python, porque se define `fast_tanh` en `superfastcode_methods`. (Los nombres de archivo internos del proyecto de C++, como *module.cpp*, no tienen importancia).
 
     ```cpp
     static PyModuleDef superfastcode_module = {
@@ -264,7 +264,7 @@ Si ha completado los pasos descritos en la sección anterior, sin duda ha observ
 
 El módulo de C++ puede producir un error al compilar por las razones siguientes:
 
-- No se puede encontrar *Python.h* (**E1696: no se puede abrir el archivo de origen "Python.h"** o **C1083: No se puede abrir el archivo de inclusión: "Python.h": No existe ese archivo o directorio**): compruebe que la ruta de acceso de **C/C++**  > **General** > **Directorios de inclusión adicionales** de las propiedades del proyecto apunta a la carpeta *include* de la instalación de Python. Consulte el paso 6 en [Crear el proyecto de C++ principal](#create-the-core-c-projects).
+- No se puede localizar *Python.h* (**E1696: no se puede abrir el archivo de origen "Python.h"** o **C1083: no se puede abrir el archivo de inclusión "Python.h": no existe tal archivo o directorio**): verifique que la ruta de acceso en **C/C ++** > **General** > **Directorios de inclusión adicionales** de las propiedades del proyecto apunta a la carpeta *include* de la instalación de Python. Consulte el paso 6 en [Crear el proyecto de C++ principal](#create-the-core-c-projects).
 
 - No se pueden encontrar las bibliotecas de Python: compruebe que la ruta de acceso de **Enlazador** > **General** > **Directorios de bibliotecas adicionales** de las propiedades del proyecto apunta a la carpeta *libs* de instalación de Python. Consulte el paso 6 en [Crear el proyecto de C++ principal](#create-the-core-c-projects).
 
@@ -286,7 +286,7 @@ El método alternativo, que se describe en los pasos siguientes, instala el mód
 
 1. Si usa Visual Studio 2017 o versiones posteriores, ejecute el instalador de Visual Studio, seleccione **Modificar**, seleccione **Componentes individuales** > **Compiladores, herramientas de compilación y entornos de ejecución** > **Conjunto de herramientas de Visual C++ 2015.3 v140**. Este paso es necesario porque que Python (para Windows) se compila con Visual Studio 2015 (versión 14.0) y espera que esas herramientas estén disponibles al compilar una extensión mediante el método descrito aquí. (tenga en cuenta que puede que necesite instalar una versión de 32 bits de Python y establecer el DLL como Win32 y no como x64).
 
-1. Cree un archivo denominado *setup.py* en el proyecto de C++; para ello, haga clic con el botón derecho en el proyecto y seleccione **Agregar** > **Nuevo elemento**. Luego, seleccione **Archivo C++ (.cpp)** , asigne el nombre `setup.py` al archivo y seleccione **Aceptar** (al nombrar el archivo con la extensión *.py*, Visual Studio lo reconoce como Python aunque use la plantilla de archivos de C++). Cuando aparezca el archivo en el editor, pegue el código siguiente en él tal y como sea adecuado para el método de extensión:
+1. Cree un archivo denominado *setup.py* en el proyecto de C++; para ello, haga clic con el botón derecho en el proyecto y seleccione **Agregar** > **Nuevo elemento**. Luego, seleccione **Archivo C++ (.cpp)**, asigne el nombre `setup.py` al archivo y seleccione **Aceptar** (al nombrar el archivo con la extensión *.py*, Visual Studio lo reconoce como Python aunque use la plantilla de archivos de C++). Cuando aparezca el archivo en el editor, pegue el código siguiente en él tal y como sea adecuado para el método de extensión:
 
     **Extensiones de CPython (proyecto superfastcode):**
 
@@ -399,17 +399,17 @@ Visual Studio admite la depuración de código Python y C++ de forma conjunta. E
 
 Existen diversos métodos para crear extensiones de Python, como se describe en la tabla siguiente. Las dos primeras entradas de CPython y PyBind11 son lo que ya se ha tratado en este artículo.
 
-| Enfoque | Año | Usuarios representativos | Ventajas | Inconvenientes |
-| --- | --- | --- | --- | --- |
-| Módulos de extensión de C/C++ para CPython | 1991 | biblioteca estándar | [Amplia documentación y tutoriales](https://docs.python.org/3/c-api/). Control total. | Compilación, portabilidad, administración de referencias. Extensos conocimientos de C. |
-| [PyBind11](https://github.com/pybind/pybind11) (recomendado para C++) | 2015 |  | Biblioteca ligera de solo encabezados para crear los enlaces de Python de código de C++ existente. Pocas dependencias. Compatibilidad con PyPy. | Más reciente, menos maduro. Uso intensivo de características de C++11. Lista reducida de compiladores compatibles (incluye Visual Studio). |
-| Cython (recomendado para C) | 2007 | [gevent](https://www.gevent.org/), [kivy](https://kivy.org/) | Semejante a Python. Muy maduro. Alto rendimiento. | Compilación, nueva sintaxis y nueva cadena de herramientas. |
-| [Boost.Python](https://www.boost.org/doc/libs/1_66_0/libs/python/doc/html/index.html) | 2002 | | Funciona con casi todos los compiladores de C++. | Conjunto grande y complejo de bibliotecas; contiene muchas soluciones alternativas para los compiladores anteriores. |
-| ctypes | 2003 | [oscrypto](https://github.com/wbond/oscrypto) | Sin compilación, amplia disponibilidad. | El acceso y la mutación de estructuras de C son complicados y propensos a errores. |
-| SWIG | 1996 | [crfsuite](http://www.chokkan.org/software/crfsuite/) | Generar enlaces para muchos lenguajes a la vez. | Sobrecarga excesiva si Python es el único destino. |
-| cffi | 2013 | [cryptography](https://cryptography.io/en/latest/), [pypy](https://pypy.org/) | Facilidad de integración, compatibilidad con PyPy. | Más reciente, menos maduro. |
-| [cppyy](https://cppyy.readthedocs.io/en/latest/) | 2017 | | Similar a cffi con C++. | Más reciente, puede tener algunos problemas con Visual Studio 2017. |
+| Enfoque | Vintage | Usuarios representativos | 
+| --- | --- | --- |
+| Módulos de extensión de C/C++ para CPython | 1991 | biblioteca estándar | 
+| [PyBind11](https://github.com/pybind/pybind11) (recomendado para C++) | 2015 |  |
+| Cython (recomendado para C) | 2007 | [gevent](https://www.gevent.org/), [kivy](https://kivy.org/) |
+| [Boost.Python](https://www.boost.org/doc/libs/1_66_0/libs/python/doc/html/index.html) | 2002 | |
+| ctypes | 2003 | [oscrypto](https://github.com/wbond/oscrypto) | 
+| SWIG | 1996 | [crfsuite](http://www.chokkan.org/software/crfsuite/) | 
+| cffi | 2013 | [cryptography](https://cryptography.io/en/latest/), [pypy](https://pypy.org/) |
+| [cppyy](https://cppyy.readthedocs.io/en/latest/) | 2017 | |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 El ejemplo completo de este tutorial se puede encontrar en [python-samples-vs-cpp-extension](https://github.com/Microsoft/python-sample-vs-cpp-extension) (GitHub).

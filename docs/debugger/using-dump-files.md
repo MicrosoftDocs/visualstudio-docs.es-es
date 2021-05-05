@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 993b5f61d8517d5638cb785fa2d79b47f80d1caf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f3b72db232e5e83a0d83fbab1d1223da507054d9
+ms.sourcegitcommit: 925db7adb9cb554b081c7e727d09680d4863feed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940558"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107941128"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Archivos de volcado de memoria en el depurador de Visual Studio.
 
@@ -43,6 +43,10 @@ El depurador de Visual Studio puede guardar archivos de volcado de memoria de c�
 ## <a name="requirements-and-limitations"></a><a name="BKMK_Requirements_and_limitations"></a> Requisitos y limitaciones
 
 - Para depurar archivos de volcado de memoria de máquinas de 64 bits, Visual Studio debe ejecutarse en una máquina de 64 bits.
+
+::: moniker range=">= vs-2019"
+- Visual Studio puede depurar archivos de volcado de aplicaciones administradas desde el sistema operativo Linux. 
+::: moniker-end
 
 - Visual Studio puede depurar archivos de volcado de memoria de aplicaciones nativas desde dispositivos ARM. También puede depurar volcados de memoria de aplicaciones administradas desde dispositivos ARM, pero solo en el depurador nativo.
 
@@ -116,6 +120,7 @@ Si Visual Studio no puede encontrar los archivos necesarios para depurar un mó
 
 ## <a name="see-also"></a>Vea también
 
+- [Depuración de un volcado de memoria administrada con analizadores de diagnóstico de .NET](../debugger/how-to-debug-managed-memory-dump.md)
 - [Depuración Just-In-Time](../debugger/just-in-time-debugging-in-visual-studio.md)
 - [Especificación de archivos de código fuente y símbolos (.pdb)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 - [IntelliTrace](../debugger/intellitrace.md)

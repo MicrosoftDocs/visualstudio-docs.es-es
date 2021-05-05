@@ -2,7 +2,7 @@
 title: Página predeterminada para obtener ayuda de F1
 description: Solicitudes de la página predeterminada para obtener ayuda F1 para Visual Studio
 ms.date: 03/25/2021
-ms.topic: troubleshooting
+ms.topic: error-reference
 ms.custom: contperf-fy21q3
 robots: noindex,nofollow
 f1_keywords:
@@ -10,40 +10,41 @@ f1_keywords:
 manager: jmartens
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 3e6af978a080e0c75e439f1ee29a90fc0d40a653
-ms.sourcegitcommit: 00e16b9afe6b22ba0591e4d0d92690544e6d4357
+ms.openlocfilehash: 9f91a145bc0847eca4303717bbf4602b243f6a3c
+ms.sourcegitcommit: 5fb684ff8729eb118aa91ce9f049c79eeb9747b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "105616927"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "107913051"
 ---
-# <a name="f1-help"></a>Ayuda de F1
+# <a name="f1-help-match-not-found"></a>F1 Ayuda: No se encontró ninguna coincidencia
 
-Parece que no pudimos encontrar lo que buscaba y lo sentimos. Para ayudarnos a mejorar, puede dejar comentarios con los botones al final de esta página o intente una de las sugerencias siguientes.
+Parece que no pudimos encontrar lo que buscaba y lo sentimos. 
 
-## <a name="search-for-help"></a>Búsqueda de ayuda
+## <a name="now-what"></a>¿Y ahora qué?
 
-Si busca ayuda F1 sobre una ventana, una palabra clave o un nombre de API:
+- Busque de nuevo con estas herramientas. Si busca ayuda F1 sobre una ventana, una palabra clave o un nombre de API:
+  - Intente buscar con su motor de búsqueda favorito.
+  - Intente buscar en [docs.microsoft.com](/)
 
-- Intente buscar en [docs.microsoft.com](/)
-- Intente buscar con un motor de búsqueda.
+- Deje comentarios con los botones de la parte inferior de esta página sobre lo que estaba buscando.
 
-## <a name="get-help-for-your-programming-language"></a>¿Obtener ayuda sobre el lenguaje de programación?
+- [Nueva asignación o deshabilitación de la tecla de ayuda F1](../not-in-toc/change-f1-help-key.md)
 
-- [Guía de programación C#](/dotnet/csharp/programming-guide/) o [referencia del lenguaje](/dotnet/csharp/language-reference/).
-- [Características del lenguaje Visual Basic](/dotnet/visual-basic/programming-guide/language-features/) o [referencia del lenguaje](/dotnet/visual-basic/language-reference/).
-- [Documentación de Python](https://docs.python.org/).
-- [Referencia del lenguaje C/C++ y las bibliotecas estándar](/cpp/cpp/c-cpp-language-and-standard-libraries).
-- [Guía de F#](/dotnet/fsharp/).
-- [Documentación de TypeScript](https://www.typescriptlang.org/docs).
 
-## <a name="re-map-or-disable-the-f1-help-key"></a>Nueva asignación o deshabilitación de la tecla de ayuda F1
+## <a name="next-steps"></a>Pasos siguientes
 
-Si quiere cambiar la asignación de la tecla F1, consulte [Cambio de la tecla de ayuda F1](../not-in-toc/change-f1-help-key.md).
+Puede encontrar documentación adicional aquí o en la tabla de contenido: 
+- Consulte nuestra documentación de referencia en el [Explorador de API de .NET](/dotnet/api/).
+- Obtenga ayuda sobre el [editor de código de texto de Visual Studio](../../ide/writing-code-in-the-code-and-text-editor.md).
+- Examine Knowledge Base para [solucionar problemas de Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/).
+- Lea la [información general de Visual Studio](../../get-started/visual-studio-ide.md).
 
-## <a name="useful-links"></a>Vínculos útiles
+Guías de programación:
+- [Guía de programación de C#](/dotnet/csharp/programming-guide/) o [referencia del lenguaje](/dotnet/csharp/language-reference/)
+- [Características del lenguaje Visual Basic](/dotnet/visual-basic/programming-guide/language-features/) o [referencia del lenguaje](/dotnet/visual-basic/language-reference/)
+- [Documentación de Python](https://docs.python.org/)
+- [Referencia sobre el lenguaje C/C++ y las bibliotecas estándar](/cpp/cpp/c-cpp-language-and-standard-libraries)
+- [Guía de F#](/dotnet/fsharp/)
+- [Documentación de TypeScript](https://www.typescriptlang.org/docs)
 
-- Busque documentación de referencia en el [Explorador de API de .NET](/dotnet/api/).
-- Para obtener ayuda sobre el editor de texto de Visual Studio, vea [Características del editor de código](../../ide/writing-code-in-the-code-and-text-editor.md).
-- Examine una lista de artículos de Knowledge Base en la página de [solución de problemas de Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/).
-- Para obtener información sobre Visual Studio, vea [Introducción a Visual Studio](../../get-started/visual-studio-ide.md).

@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c4ae447976798372e049df46552f8383389f7b3e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e82073b77231f84452ba51402f407904142bbf8e
+ms.sourcegitcommit: 925db7adb9cb554b081c7e727d09680d4863feed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920773"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107941102"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>Paso 3: Usar la ventana interactiva de REPL
 
@@ -40,7 +40,7 @@ La ventana **interactiva** de Visual Studio para Python proporciona una experien
 
     ![Resultados inmediatos de la ventana interactiva de Python](media/vs-getting-started-python-12-interactive2.png)
 
-1. Al empezar a escribir una instrucción multilínea, como una definición de función, en la ventana **interactiva** se muestra el símbolo **...** de Python para las líneas siguientes que, a diferencia de la línea de comandos de REPL, proporciona sangría automática:
+1. Al empezar a escribir una instrucción multilínea, como una definición de función, en la ventana **interactiva** se muestra el símbolo **...** de Python para las líneas siguientes que, a diferencia de la línea de comandos de REPL, proporciona una sangría automática. Para agregar una línea nueva **...** , presione `Shift+Enter`:
 
     ![Ventana interactiva de Python con la continuación de la instrucción](media/vs-getting-started-python-13-interactive3.png)
 
