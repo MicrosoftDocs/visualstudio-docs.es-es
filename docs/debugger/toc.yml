@@ -415,7 +415,7 @@
         - name: Depuración de una aplicación de Azure Kubernetes en directo
           href: debug-live-azure-kubernetes.md
         - name: Preguntas frecuentes sobre depuración de instantáneas
-          href: debug-live-azure-apps-faq.md
+          href: debug-live-azure-apps-faq.yml
         - name: Solución de problemas de depuración de instantáneas
           href: debug-live-azure-apps-troubleshooting.md
         - name: Depuración de viaje en el tiempo de aplicaciones de máquina virtual de Azure en ejecución
@@ -949,6 +949,6 @@
 - name: Recursos
   items:
     - name: 'Preguntas frecuentes: búsqueda de una característica de depuración'
-      href: find-your-debugging-task.md
+      href: find-your-debugging-task.yml
     - name: Novedades del depurador de Visual Studio
       href: what-s-new-for-the-debugger-in-visual-studio.md
