@@ -3,25 +3,25 @@ title: Información general de GitHub Codespaces (versión preliminar)
 description: Obtenga más información sobre GitHub Codespaces con Visual Studio y cómo puede ayudar a ampliar su entorno de desarrollo a la nube.
 ms.topic: overview
 ms.date: 09/04/2020
-author: TerryGLee
-ms.author: tglee
+author: gregvanl
+ms.author: gregvanl
 manager: jmartens
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: a4bf2cf948b6df65ee0407c1cc736e8056820a54
-ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
+ms.openlocfilehash: ab50c3c2df2cfad6d489d800f47624503844dc9d
+ms.sourcegitcommit: a667ce8394a800906d633737f4fcbc77f0fcba7b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104672792"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "108298748"
 ---
 # <a name="what-is-github-codespaces-preview"></a>¿Qué es GitHub Codespaces? (versión preliminar)
 
-> [!Important] 
-> A partir del 12 de abril de 2021, ya no se admitirá la conexión a GitHub Codespaces desde Visual Studio 2019, y esta versión preliminar privada habrá concluido. Nos centramos en experiencias en evolución para un bucle interno con tecnología de nube y soluciones de VDI optimizadas para un amplio conjunto de cargas de trabajo de Visual Studio. Le recomendamos que participe en nuestro [foro de la comunidad de desarrolladores](https://developercommunity.visualstudio.com/home) de Visual Studio para obtener detalles sobre las futuras versiones preliminares e información sobre la hoja de ruta. 
+> [!Important]
+> A partir del 12 de abril de 2021, ya no se admitirá la conexión a GitHub Codespaces desde Visual Studio 2019, y esta versión preliminar privada habrá concluido. Nos centramos en experiencias en evolución para un bucle interno con tecnología de nube y soluciones de VDI optimizadas para un amplio conjunto de cargas de trabajo de Visual Studio. Le recomendamos que participe en nuestro [foro de la comunidad de desarrolladores](https://developercommunity.visualstudio.com/home) de Visual Studio para obtener detalles sobre las futuras versiones preliminares e información sobre la hoja de ruta.
 
 Le damos la bienvenida a Codespaces. Nos complace estar aquí.
 
@@ -39,9 +39,9 @@ Las características de GitHub Codespaces se basan en algunos conceptos fundamen
 
 Hoy en día, muchos desarrolladores intentan codificar en configuraciones remotas o máquinas virtuales que están configuradas con pilas específicas de desarrollo y tiempo de ejecución. Lo hacen porque es demasiado difícil, demasiado problemático y, en algunos casos, casi imposible configurar estos entornos de desarrollo de forma local. Además, los usuarios quieren probar nuevas tecnologías o nuevos marcos sin el temor de "estropear" las máquinas que necesitan para su trabajo diario.
 
-Aunque el uso de entornos remotos y herramientas compatibles con el sistema remoto aumenta las posibilidades de los desarrolladores, a menudo agrega la sobrecarga de la administración de máquinas. La configuración del entorno suele complicar la incorporación y el cambio de contexto. GitHub Codespaces elimina las barreras para la incorporación rápida y el cambio de contexto al permitir la coexistencia de muchos entornos al mismo tiempo. 
+Aunque el uso de entornos remotos y herramientas compatibles con el sistema remoto aumenta las posibilidades de los desarrolladores, a menudo agrega la sobrecarga de la administración de máquinas. La configuración del entorno suele complicar la incorporación y el cambio de contexto. GitHub Codespaces elimina las barreras para la incorporación rápida y el cambio de contexto al permitir la coexistencia de muchos entornos al mismo tiempo.
 
-GitHub Codespaces proporciona soluciones administradas que le permiten centrarse en la productividad a través de la configuración. GitHub Codespaces amplía conceptual y técnicamente Visual Studio 2019 para el desarrollo remoto. 
+GitHub Codespaces proporciona soluciones administradas que le permiten centrarse en la productividad a través de la configuración. GitHub Codespaces amplía conceptual y técnicamente Visual Studio 2019 para el desarrollo remoto.
 
 ### <a name="about-codespaces"></a>Acerca de los codespaces
 

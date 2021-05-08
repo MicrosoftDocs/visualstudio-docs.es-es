@@ -1,18 +1,18 @@
 ---
 title: Uso de datos de tiempo de diseño con el Diseñador XAML en Visual Studio
 description: Aprenda a usar los datos en tiempo de diseño en XAML.
-ms.date: 11/17/2020
+ms.date: 04/22/2021
 ms.topic: overview
 author: alihamie
 ms.author: tglee
 manager: jmartens
 monikerRange: vs-2019
-ms.openlocfilehash: 915fe38da63f0b3994a809b20515fdc18e0790ce
-ms.sourcegitcommit: 5fb684ff8729eb118aa91ce9f049c79eeb9747b1
+ms.openlocfilehash: a9f7f23625bb01c227158f720260f14347d39f9d
+ms.sourcegitcommit: 60b7a6159045a44293043a519c8ea6d915bf2c31
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "107913077"
+ms.lasthandoff: 05/01/2021
+ms.locfileid: "108334946"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>Uso de datos de tiempo de diseño con el Diseñador XAML en Visual Studio
 
@@ -68,7 +68,7 @@ Puede establecer un origen de tiempo de diseño para las imágenes enlazadas a l
 
 Los controles ListView son una manera popular de mostrar los datos en la aplicación de escritorio, pero son difíciles de visualizar sin datos. Puede usar esta característica para crear elementos o un ItemSource de datos en tiempo de diseño en línea. En el diseñador XAML se muestra lo que hay en esa matriz en el objeto ListView en tiempo de diseño.
 
-### <a name="wpf-net-core--example"></a>Ejemplo de .NET Core para WPF
+### <a name="wpf-net-core-example"></a>Ejemplo de .NET Core para WPF
 Para usar el tipo system:String, asegúrese de incluir `xmlns:system="clr-namespace:System;assembly=mscorlib` en el encabezado XAML.
 
 ```xml
@@ -139,7 +139,7 @@ xmlns:models="clr-namespace:Cities.Models"
 
 La ventaja es que puede enlazar los controles a una versión estática en tiempo de diseño del modelo.
 
-### <a name="uwp-example"></a>Ejemplo de UWP 
+### <a name="uwp-example"></a>Ejemplo de UWP
 
 x:Array no se admite en UWP. Por lo tanto, podemos usar `<d:ListView.Items>` en su lugar. Para usar el tipo system:String, asegúrese de incluir `http://schemas.microsoft.com/winfx/2009/xaml` en el encabezado XAML.
 
