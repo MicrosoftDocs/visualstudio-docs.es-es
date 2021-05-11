@@ -459,6 +459,10 @@
               href: code-metrics-maintainability-index-range-and-meaning.md
             - name: Acoplamiento de clases
               href: code-metrics-class-coupling.md
+            - name: Complejidad ciclomática
+              href: code-metrics-cyclomatic-complexity.md
+            - name: Profundidad de herencia
+              href: code-metrics-depth-of-inheritance.md
 - name: Análisis de código de C++
   items:
     - name: Análisis del código de C y C++
