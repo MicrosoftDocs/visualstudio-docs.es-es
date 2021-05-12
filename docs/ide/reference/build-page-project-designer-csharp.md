@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 95404beb5c2be5363c9ef91e770237b453970429
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 91b254f4c075693e23d8f650356cd97e86a4c746
+ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836454"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108798562"
 ---
 # <a name="build-page-project-designer-c"></a>Compilar (Página, Diseñador de proyectos) (C#)
 
@@ -119,7 +119,7 @@ Las siguientes opciones se usan para especificar qué advertencias se tratan com
 **Advertencias específicas**: las advertencias especificadas se tratan como errores. Separe varios números de advertencia con una coma o un punto y coma.
 
 > [!TIP]
-> Si no quiere que las advertencias de análisis de código se traten como errores, vea [Preguntas más frecuentes sobre análisis de código](../../code-quality/analyzers-faq.md#treat-warnings-as-errors).
+> Si no quiere que las advertencias de análisis de código se traten como errores, vea [Preguntas más frecuentes sobre análisis de código](/visualstudio/code-quality/analyzers-faq#treat-warnings-as-errors).
 
 ## <a name="output"></a>Resultados
 

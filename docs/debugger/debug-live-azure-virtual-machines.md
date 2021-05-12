@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 9ed85616080859cd69c44c66b442f3f46d81f51a
-ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
+ms.openlocfilehash: bdab6b3f559628506dd301d6ced449f1e69152a6
+ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97846958"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108798497"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>Depuración de aplicaciones de ASP.NET en vivo en Azure Virtual Machines y Azure Virtual Machines Scale Sets con Snapshot Debugger
 
@@ -92,7 +92,7 @@ En este tutorial va a:
 
 ## <a name="take-a-snapshot"></a>Tomar una instantánea
 
-Una vez que se establece un punto de instantánea, puede generar manualmente una instantánea yendo a la vista de explorador del sitio web y ejecutado la línea de código marcada o esperar a que los usuarios generen una a partir de su uso del sitio.
+Una vez que se establece un punto de instantánea, puede generar manualmente una instantánea yendo a la vista de explorador del sitio web y ejecutando la línea de código marcada o esperar a que los usuarios generen una a partir de su uso del sitio.
 
 ## <a name="inspect-snapshot-data"></a>Inspección de los datos de instantánea
 
@@ -110,11 +110,11 @@ Una vez que se establece un punto de instantánea, puede generar manualmente una
 
 También puede agregar más puntos de instantánea a la aplicación y activarlos con el botón **Actualizar colección**.
 
-**¿Necesita ayuda?** Consulte las páginas [Solución de problemas y problemas conocidos](../debugger/debug-live-azure-apps-troubleshooting.md) y [Preguntas frecuentes sobre depuración de instantáneas](../debugger/debug-live-azure-apps-faq.md).
+**¿Necesita ayuda?** Consulte las páginas [Solución de problemas y problemas conocidos](../debugger/debug-live-azure-apps-troubleshooting.md) y [Preguntas frecuentes sobre depuración de instantáneas](../debugger/debug-live-azure-apps-faq.yml).
 
 ## <a name="set-a-conditional-snappoint"></a>Definición de un punto de instantánea condicional
 
-Si es difícil volver a crear un estado determinado en la aplicación, considere la posibilidad de utilizar un punto de instantánea condicional. Los puntos de instantánea condicionales evitan controlan cuándo hacer una instantánea, por ejemplo, cuando una variable contiene un valor concreto que desea inspeccionar. Puede establecer las condiciones con expresiones, filtros o números de llamadas.
+Si es difícil volver a crear un estado determinado en la aplicación, considere la posibilidad de utilizar un punto de instantánea condicional. Los puntos de instantánea condicionales ayudan a controlar cuándo hacer una instantánea, por ejemplo, cuando una variable contiene un valor concreto que desea inspeccionar. Puede establecer las condiciones con expresiones, filtros o números de llamadas.
 
 #### <a name="to-create-a-conditional-snappoint"></a>Para crear un punto de instantánea condicional
 
@@ -153,4 +153,4 @@ Además de realizar una instantánea cuando se alcanza un punto de instantánea,
 En este tutorial, ha aprendido cómo utilizar Snapshot Debugger para Azure Virtual Machines y Azure Virtual Machine Scale Sets. Es posible que desee obtener más información sobre esta característica.
 
 > [!div class="nextstepaction"]
-> [P+F sobre depuración de instantáneas](../debugger/debug-live-azure-apps-faq.md)
+> [P+F sobre depuración de instantáneas](../debugger/debug-live-azure-apps-faq.yml)

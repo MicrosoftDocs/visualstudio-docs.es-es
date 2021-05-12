@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 823da6da0a842766739cb50c700bb723a47d0309
-ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
+ms.openlocfilehash: c1c8a593d147b8ba38393aabd89b293e0fbd5d26
+ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97846966"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108798471"
 ---
 # <a name="debug-live-aspnet-azure-kubernetes-services-using-the-snapshot-debugger"></a>Depuración de Azure Kubernetes Service de ASP.NET en vivo con Snapshot Debugger
 
@@ -104,7 +104,7 @@ Una vez que se establece un punto de instantánea, puede generar manualmente una
 
 También puede agregar más puntos de instantánea a la aplicación y activarlos con el botón **Actualizar colección**.
 
-**¿Necesita ayuda?** Consulte las páginas [Solución de problemas y problemas conocidos](../debugger/debug-live-azure-apps-troubleshooting.md) y [Preguntas frecuentes sobre depuración de instantáneas](../debugger/debug-live-azure-apps-faq.md).
+**¿Necesita ayuda?** Consulte las páginas [Solución de problemas y problemas conocidos](../debugger/debug-live-azure-apps-troubleshooting.md) y [Preguntas frecuentes sobre depuración de instantáneas](../debugger/debug-live-azure-apps-faq.yml).
 
 ## <a name="set-a-conditional-snappoint"></a>Definición de un punto de instantánea condicional
 
@@ -147,4 +147,4 @@ Además de realizar una instantánea cuando se alcanza un punto de instantánea,
 En este tutorial, ha aprendido cómo utilizar Snapshot Debugger para Azure Kubernetes. Es posible que desee obtener más información sobre esta característica.
 
 > [!div class="nextstepaction"]
-> [P+F sobre depuración de instantáneas](../debugger/debug-live-azure-apps-faq.md)
+> [P+F sobre depuración de instantáneas](../debugger/debug-live-azure-apps-faq.yml)

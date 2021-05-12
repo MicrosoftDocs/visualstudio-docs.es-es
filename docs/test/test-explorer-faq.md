@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jmartens
-ms.openlocfilehash: a1e0f998b5fff45a8fee9ac6f9cc6a0ce2268907
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 22ac969ba2ad918fcbeb7c53e04cd3f2b03a0431
+ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99894470"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108798575"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Preguntas frecuentes del Explorador de pruebas de Visual Studio
 
@@ -171,4 +171,4 @@ vsregedit set “C:\Program Files (x86)\Microsoft Visual Studio\Preview\Enterpri
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting?displayProperty=fullName>
 - [Create and run unit tests for existing code](/previous-versions/dd293546(v=vs.110)) (Crear y ejecutar pruebas unitarias en código existente)
 - [Haga una prueba unitaria de su código](unit-test-your-code.md)
-- [Preguntas más frecuentes sobre Live Unit Testing](live-unit-testing-faq.md)
+- [Preguntas más frecuentes sobre Live Unit Testing](live-unit-testing-faq.yml)

@@ -8,19 +8,19 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 35C7AB05-07D5-4B38-BCAC-AB88444E7368
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 8360c48e9868f6ed5d81fffc748d050404211228
-ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
+ms.openlocfilehash: 3504e866a7f89de8fa38f92a8bfea501ddd952c9
+ms.sourcegitcommit: cc66c898ce82f9f1159bd505647f315792cac9fc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "106547497"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "109666801"
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>Control de actualizaciones a implementaciones de Visual Studio basadas en red
 
@@ -82,7 +82,7 @@ Cualquier actualización de la instalación iniciada desde el cliente instalará
 
 **Escenario 3: El cliente se instaló originalmente desde la web, pero ahora solo debería recibir actualizaciones de un diseño de red**
 
-En algunos casos, es posible que la máquina cliente ya haya instalado Visual Studio desde la web, pero ahora el administrador quiere que todas las actualizaciones futuras provengan de un diseño administrado. La única manera admitida de hacerlo es crear un diseño de red con la versión deseada del producto y, luego, ejecutar el programa previo en la máquina cliente _desde la ubicación de diseño_ (por ejemplo, `\\network\share\vs_enterprise.exe`). Lo ideal es que la instalación del cliente original haya sucedido usando el programa previo desde el diseño de red con el valor de ChannelURI configurado correctamente, pero la ejecución del programa previo actualizado desde la ubicación del diseño de red también funcionará. Cualquiera de estas acciones insertaría en la máquina cliente una conexión con esa ubicación de diseño concreta. La único que hay que tener en cuenta para que este escenario funcione correctamente es que el valor de "ChannelURI" en el archivo `response.json` del diseño sea el mismo que el que se estableció en la máquina del cliente cuando se produjo la instalación original. Lo más probable es que este valor se haya establecido originalmente en el [canal de versiones](https://aka.ms/vs/16/release/channel) de Internet. 
+En algunos casos, es posible que la máquina cliente ya haya instalado Visual Studio desde la web, pero ahora el administrador quiere que todas las actualizaciones futuras provengan de un diseño administrado. La única manera admitida de hacerlo es crear un diseño de red con la versión deseada del producto y, luego, ejecutar el programa previo en la máquina cliente _desde la ubicación de diseño_ (por ejemplo, `\\server\share\vs_enterprise.exe`). Lo ideal es que la instalación del cliente original haya sucedido usando el programa previo desde el diseño de red con el valor de ChannelURI configurado correctamente, pero la ejecución del programa previo actualizado desde la ubicación del diseño de red también funcionará. Cualquiera de estas acciones insertaría en la máquina cliente una conexión con esa ubicación de diseño concreta. La único que hay que tener en cuenta para que este escenario funcione correctamente es que el valor de "ChannelURI" en el archivo `response.json` del diseño sea el mismo que el que se estableció en la máquina del cliente cuando se produjo la instalación original. Lo más probable es que este valor se haya establecido originalmente en el [canal de versiones](https://aka.ms/vs/16/release/channel) de Internet. 
 
 
 ## <a name="controlling-notifications-in-the-visual-studio-ide"></a>Control de notificaciones en el IDE de Visual Studio

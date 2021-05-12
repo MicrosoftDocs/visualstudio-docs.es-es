@@ -10,12 +10,12 @@ author: mikejo5000
 ms.author: mikejo
 ms.workload:
 - dotnet
-ms.openlocfilehash: 82ed41514109887d32f38faf4f965c923864ae32
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: b9b78771c36dce26744ba74af63922cf1efa48e2
+ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329359"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108798627"
 ---
 # <a name="how-to-configure-and-use-live-unit-testing"></a>Configuración y uso de Live Unit Testing
 
@@ -185,18 +185,18 @@ Si la solución tiene 10 o más proyectos, Visual Studio muestra el siguiente c
 
 El cuadro de diálogo le advierte de que la ejecución dinámica de un gran número de pruebas en proyectos grandes puede afectar gravemente al rendimiento. Si hace clic en **Aceptar**, Live Unit Testing ejecuta todas las pruebas de la solución. Si selecciona **Cancelar**, puede seleccionar las pruebas que desea ejecutar. En la siguiente sección se explica cómo hacerlo.
 
-## <a name="include-and-exclude-test-projects-and-test-methods"></a>Incluir y excluir proyectos de prueba y métodos de prueba
+## <a name="include-and-exclude-test-projects-and-test-methods&quot;></a>Incluir y excluir proyectos de prueba y métodos de prueba
 
 Para soluciones con muchos proyectos de prueba, puede controlar qué proyectos y qué métodos individuales de un proyecto participan en Live Unit Testing. Por ejemplo, si tiene una solución con cientos de proyectos de prueba, puede seleccionar un conjunto de proyectos de prueba de destino para participar en Live Unit Testing. Existen varias maneras de llevar esto a cabo, en función de si desea excluir todas las pruebas en el proyecto o la solución, incluir o excluir la mayoría de las pruebas o excluir pruebas de forma individual. Live Unit Testing guarda el estado de inclusión o exclusión como una configuración de usuario y lo recuerda cuando una solución se cierra y se vuelve a abrir.
 
-### <a name="exclude-all-tests-in-a-project-or-solution"></a>Exclusión de todas las pruebas en un proyecto o solución
+### <a name=&quot;exclude-all-tests-in-a-project-or-solution&quot;></a>Exclusión de todas las pruebas en un proyecto o solución
 
 Para seleccionar proyectos individuales en pruebas unitarias, haga lo siguiente después de iniciar Live Unit Testing:
 
 1. Haga clic con el botón derecho en la solución en el **Explorador de soluciones** y elija **Live Unit Testing** > **Excluir** para excluir toda la solución.
 1. Haga clic con el botón derecho en cada proyecto de prueba que le gustaría incluir en las pruebas y elija **Live Unit Testing** > **Incluir**.
 
-### <a name="exclude-individual-tests-from-the-code-editor-window"></a>Exclusión de pruebas individuales de la ventana del editor de código
+### <a name=&quot;exclude-individual-tests-from-the-code-editor-window&quot;></a>Exclusión de pruebas individuales de la ventana del editor de código
 
 Puede usar la ventana del editor de código para incluir o excluir métodos de prueba individuales. Haga clic con el botón derecho en la firma del método de prueba en la ventana del editor de código y seleccione una de las opciones siguientes:
 
@@ -204,13 +204,13 @@ Puede usar la ventana del editor de código para incluir o excluir métodos de p
 - **Live Unit Testing** > **Excluir\<selected method>**
 - **Live Unit Testing** > **Excluir todas menos\<selected method>**
 
-### <a name="exclude-tests-programmatically"></a>Exclusión de pruebas mediante programación
+### <a name=&quot;exclude-tests-programmatically&quot;></a>Exclusión de pruebas mediante programación
 
 Puede aplicar el atributo <xref:System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute> para, mediante programación, excluir los métodos, las clases o las estructuras y evitar que informen de su cobertura en Live Unit Testing.
 
 Use los atributos siguientes para excluir los métodos individuales de Live Unit Testing:
 
-- Para xUnit: `[Trait("Category", "SkipWhenLiveUnitTesting")]`
+- Para xUnit: `[Trait(&quot;Category&quot;, &quot;SkipWhenLiveUnitTesting")]`
 - Para NUnit: `[Category("SkipWhenLiveUnitTesting")]`
 - Para MSTest: `[TestCategory("SkipWhenLiveUnitTesting")]`
 
@@ -224,5 +224,5 @@ Use los atributos siguientes para excluir un conjunto entero de pruebas de Live 
 
 - [Herramientas de pruebas de código](https://visualstudio.microsoft.com/vs/testing-tools/)
 - [Blog de Live Unit Testing](https://devblogs.microsoft.com/visualstudio/live-unit-testing-in-visual-studio-2017-enterprise/)
-- [Preguntas más frecuentes de Live Unit Testing](live-unit-testing-faq.md)
+- [Preguntas más frecuentes de Live Unit Testing](live-unit-testing-faq.yml)
 - [Vídeo de Channel 9: Live Unit Testing en Visual Studio](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)

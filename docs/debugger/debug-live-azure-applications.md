@@ -13,12 +13,12 @@ manager: jmartens
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 53a7d00548e6d273e2afa2da48669b3d1f3cf827
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 94c65814572c99f95d7a6edc6769e5af0ea6e748
+ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873329"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108798380"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Depuración de aplicaciones de Azure de ASP.NET en vivo con Snapshot Debugger
 
@@ -127,7 +127,7 @@ Una vez que se establece un punto de instantánea, puede generar manualmente una
 
 También puede agregar más puntos de instantánea a la aplicación y activarlos con el botón **Actualizar colección**.
 
-**¿Necesita ayuda?** Consulte las páginas [Solución de problemas y problemas conocidos](../debugger/debug-live-azure-apps-troubleshooting.md) y [Preguntas frecuentes sobre depuración de instantáneas](../debugger/debug-live-azure-apps-faq.md).
+**¿Necesita ayuda?** Consulte las páginas [Solución de problemas y problemas conocidos](../debugger/debug-live-azure-apps-troubleshooting.md) y [Preguntas frecuentes sobre depuración de instantáneas](../debugger/debug-live-azure-apps-faq.yml).
 
 ## <a name="set-a-conditional-snappoint"></a>Definición de un punto de instantánea condicional
 
@@ -170,4 +170,4 @@ Además de realizar una instantánea cuando se alcanza un punto de instantánea,
 En este tutorial, ha aprendido cómo utilizar Snapshot Debugger para App Services. Es posible que desee obtener más información sobre esta característica.
 
 > [!div class="nextstepaction"]
-> [P+F sobre depuración de instantáneas](../debugger/debug-live-azure-apps-faq.md)
+> [P+F sobre depuración de instantáneas](../debugger/debug-live-azure-apps-faq.yml)

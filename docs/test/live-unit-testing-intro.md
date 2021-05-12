@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6c3e8220857a454dc7ab5c7cb6308650075f9577
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2c4da809455a859479d0421bffaa1b257a18c4b5
+ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887749"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108798523"
 ---
 # <a name="live-unit-testing-overview"></a>Información general de Live Unit Testing
 
@@ -34,7 +34,7 @@ Para obtener más información sobre Live Unit Testing:
 
 - Lea la documentación detallada: [Uso de Live Unit Testing con Visual Studio Enterprise Edition](live-unit-testing.md).
 
-- Lea las [preguntas más frecuentes sobre Live Unit Testing](live-unit-testing-faq.md) para conocer las novedades de Live Unit Testing, así como sugerencias y técnicas.
+- Lea las [preguntas más frecuentes sobre Live Unit Testing](live-unit-testing-faq.yml) para conocer las novedades de Live Unit Testing, así como sugerencias y técnicas.
 
 - Vea el vídeo de Channel 9 para información general sobre Live Unit Testing y sus características.</p>
 

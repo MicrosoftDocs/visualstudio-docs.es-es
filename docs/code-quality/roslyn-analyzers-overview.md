@@ -14,12 +14,12 @@ ms.author: midumont
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: d6a295e4abc62a7591c98b92cad4c173c5ff507b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c3a7192ac55dc4138746e3e1e1abe4eaa6928395
+ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859806"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108798341"
 ---
 # <a name="overview-of-source-code-analysis"></a>Información general sobre el análisis de código fuente
 
@@ -101,6 +101,6 @@ No se puede configurar la gravedad de las reglas de los analizadores que se han 
 
 ## <a name="see-also"></a>Vea también
 
-- [Preguntas más frecuentes sobre analizadores](analyzers-faq.md)
+- [Preguntas más frecuentes sobre analizadores](analyzers-faq.yml)
 - [Escritura de analizadores de código propios](../extensibility/getting-started-with-roslyn-analyzers.md)
 - [SDK de la plataforma del compilador de .NET](/dotnet/csharp/roslyn-sdk/)

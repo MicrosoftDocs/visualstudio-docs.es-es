@@ -35,19 +35,19 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cdc0231b7c42dbdb4aca86040347ec5bfd57607d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0865c71d2893203ca3af925da1d76946d882c4c4
+ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940675"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108798588"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Uso de puntos de interrupción en el depurador de Visual Studio
 
 Los puntos de interrupción constituyen una de las técnicas de depuración más importantes en los cuadros de herramientas de los desarrolladores. Los puntos de interrupción se establecen donde se quiere pausar la ejecución del depurador. Por ejemplo, puede que quiera ver el estado de las variables de código o echar un vistazo a la pila de llamadas de un punto de interrupción determinado.  Si está intentando resolver una advertencia o un problema mientras usa puntos de interrupción, vea [Solución de problemas de puntos de interrupción en el depurador de Visual Studio](../debugger/troubleshooting-breakpoints.md).
 
 > [!NOTE]
-> Si conoce la tarea o el problema que está intentando resolver, pero necesita saber qué tipo de punto de interrupción usar, vea el artículo [Búsqueda de su tarea de depuración en Visual Studio](../debugger/find-your-debugging-task.md#pause-running-code).
+> Si conoce la tarea o el problema que está intentando resolver, pero necesita saber qué tipo de punto de interrupción usar, vea el artículo [Búsqueda de su tarea de depuración en Visual Studio](../debugger/find-your-debugging-task.yml#pause-running-code).
 
 ## <a name="set-breakpoints-in-source-code"></a><a name="BKMK_Overview"></a>Establecer puntos de interrupción en el código fuente
 

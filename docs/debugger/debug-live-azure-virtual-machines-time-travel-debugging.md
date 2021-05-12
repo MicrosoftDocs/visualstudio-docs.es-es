@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: eb0db0bab5295925f71a81645e64fdeb5f2077df
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: f8aabb109de02a1beec326407472a841fe16425a
+ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809575"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108798458"
 ---
 # <a name="record-and-replay-live-aspnet-apps-on-azure-virtual-machines-using-the-snapshot-debugger"></a>Grabar y reproducir aplicaciones de ASP.NET en vivo en máquinas virtuales de Azure con Snapshot Debugger
 
@@ -105,7 +105,7 @@ Cuando se activa un punto de instantánea, este captura una instantánea cada ve
 
     El propio sitio web está todavía activo y los usuarios finales no se ve afectados por ninguna actividad de TTD posterior. Solo se captura una instantánea por cada punto de instantánea de forma predeterminada: una vez que se captura una instantánea, se desactiva el punto de instantánea. Si desea capturar otra instantánea en el punto de instantánea, puede volver a activar el punto de instantánea si hace clic en **Actualizar colección**.
 
-**¿Necesita ayuda?** Consulte las páginas [Solución de problemas y problemas conocidos](../debugger/debug-live-azure-apps-troubleshooting.md) y [Preguntas frecuentes sobre depuración de instantáneas](../debugger/debug-live-azure-apps-faq.md).
+**¿Necesita ayuda?** Consulte las páginas [Solución de problemas y problemas conocidos](../debugger/debug-live-azure-apps-troubleshooting.md) y [Preguntas frecuentes sobre depuración de instantáneas](../debugger/debug-live-azure-apps-faq.yml).
 
 ## <a name="set-a-conditional-snappoint"></a>Definición de un punto de instantánea condicional
 
@@ -116,4 +116,4 @@ Si es difícil volver a crear un estado determinado en la aplicación, considere
 En este tutorial, ha aprendido a recopilar una grabación de viaje en el tiempo para Azure Virtual Machines. Es posible que desee obtener más información sobre Snapshot Debugger.
 
 > [!div class="nextstepaction"]
-> [P+F sobre depuración de instantáneas](../debugger/debug-live-azure-apps-faq.md)
+> [P+F sobre depuración de instantáneas](../debugger/debug-live-azure-apps-faq.yml)
