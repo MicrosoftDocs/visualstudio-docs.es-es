@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: b017495d12d654be3e11da7153310b5bcba367d5
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 2fcf1bd9e9ef5c3ff0663cf12684e6e638d1e5e4
+ms.sourcegitcommit: a0f5e7188838c5989c9cc78d99fb29bb2813501e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102165818"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "109729291"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Administrar paquetes de npm en Visual Studio
 
@@ -62,7 +62,7 @@ En esta ventana puede buscar un paquete, especificar opciones e instalar.
 * **Versión seleccionada**: seleccione la versión del paquete que quiere instalar.
 * **Otros argumentos de NPM**: especifique otros argumentos estándar de npm. Por ejemplo, puede escribir un valor de versión como `@~0.8` para instalar una versión determinada que no esté disponible en la lista de versiones.
 
-Se puede ver el progreso de la instalación en la salida de **npm** de la ventana **Resultados**. Esto puede llevar algo de tiempo.
+Se puede ver el progreso de la instalación en la salida de **npm** de la ventana **Resultados** (para abrir la ventana, elija **Ver** > **Salida** o presione **Ctrl** + **Alt** + **O**). Esto puede llevar algo de tiempo.
 
 ![Salida de npm](../javascript/media/npm-output.png)
 
@@ -106,7 +106,7 @@ Haga clic con el botón derecho en el nodo de un paquete o en el nodo **npm** pa
 
 ### <a name="use-the-npm-command-in-the-nodejs-interactive-window-nodejs"></a><a name="interactive"></a>Uso del comando .npm en la ventana interactiva de Node.js (Node.js)
 
-También puede usar el comando `.npm` en la ventana interactiva de Node.js para ejecutar comandos de npm. Para abrir la ventana, haga clic con el botón derecho en el Explorador de soluciones y elija **Abrir la ventana interactiva de Node.js**.
+También puede usar el comando `.npm` en la ventana interactiva de Node.js para ejecutar comandos de npm. Para abrir la ventana, haga clic con el botón derecho en el Explorador de soluciones y elija **Abrir la ventana interactiva de Node.js** (o presione **Ctrl** + **K**, **N**).
 
 En la ventana, puede usar comandos como los siguientes para instalar un paquete:
 
@@ -136,7 +136,7 @@ Si el proyecto aún no incluye un archivo *package.json*, se puede agregar compa
 
    npm requiere Node.js.
 
-1. Para agregar el archivo *package.json*, haga clic con el botón derecho en el proyecto en el Explorador de soluciones y elija **Agregar** > **Nuevo elemento**. Elija el **Archivo de configuración de npm**, use el nombre predeterminado y haga clic en **Agregar**.
+1. Para agregar el archivo *package.json*, haga clic con el botón derecho en el proyecto en el Explorador de soluciones y elija **Agregar** > **Nuevo elemento** (o presione **Ctrl** + **MAYÚS** + **A**). Elija el **Archivo de configuración de npm**, use el nombre predeterminado y haga clic en **Agregar**.
 
    ![Incorporación de package.json al proyecto](../javascript/media/npm-add-package-json.png)
 

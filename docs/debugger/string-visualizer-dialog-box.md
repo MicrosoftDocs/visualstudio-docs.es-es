@@ -2,7 +2,7 @@
 title: Visualizador de cadenas (cuadro de diálogo) | Microsoft Docs
 description: Vea cadenas con el cuadro de diálogo integrado Visualizador de cadenas durante la depuración en Visual Studio.
 ms.date: 10/10/2018
-ms.custom: seoapril2019, SEO-VS-2020
+ms.custom: contperf-fy21q4
 ms.topic: reference
 f1_keywords:
 - vs.debug.stringviewer
@@ -21,18 +21,18 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3084db99226ab268bb6ce70611628dcafcf1753b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 85092f6a339fdaaa3ddaa56112cc351d8b8e9bdc
+ms.sourcegitcommit: dd2fc6e03a789c044f8438096b8f112e4dba5557
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904283"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108640853"
 ---
 # <a name="string-visualizer-dialog-box"></a>Visualizador de cadenas (cuadro de diálogo)
 
 Durante la depuración en Visual Studio, puede ver las cadenas con el visualizador de cadenas integrado. En el visualizador de cadenas se muestran cadenas demasiado largas para una sugerencia de datos o una ventana del depurador. También puede ayudarle a identificar cadenas con un formato incorrecto.
 
-El visualizador de cadenas integrado incluye opciones de texto sin formato, XML, HTML y JSON. También puede abrir visualizadores integrados para otros tipos, como los objetos [DataSet, DataTable y DataView](../debugger/dataset-visualizer-dialog-box.md), desde la ventana **Automático** u otras del depurador.
+Los visualizadores de cadenas integrados incluyen las opciones [Texto](#text-string-data), [XML](#xml-string-data), [HTML](#html-string-data) y [JSON](#json-string-data). También puede abrir visualizadores integrados para otros tipos, como los objetos [DataSet, DataTable y DataView](../debugger/dataset-visualizer-dialog-box.md), desde la ventana **Automático** u otras del depurador.
 
 > [!NOTE]
 > Si tiene que inspeccionar elementos de interfaz de usuario de WPF o XAML en un visualizador, vea [Inspección de las propiedades XAML durante la depuración](../xaml-tools/inspect-xaml-properties-while-debugging.md) o [Procedimiento para usar el visualizador de árboles de WPF](../debugger/how-to-use-the-wpf-tree-visualizer.md).
@@ -44,6 +44,12 @@ Para abrir el visualizador de cadenas, la depuración debe estar en pausa. Mante
 En el campo **Expresión** se muestra la variable o expresión en la que se mantiene el mouse.
 
 En el campo **Valor** se muestra el valor de la cadena. Un **valor** en blanco significa que el visualizador elegido no puede reconocer la cadena. Por ejemplo, el **Visualizador XML** muestra un **valor** en blanco para una cadena de texto sin etiquetas XML, o una cadena JSON. Para ver las cadenas que el visualizador seleccionado no puede reconocer, elija el **Visualizador de texto** en su lugar. En el **Visualizador de texto** se muestra el texto sin formato.
+
+### <a name="text-string-data"></a>Datos de cadena de texto
+
+En el **Visualizador de texto** se muestra el texto sin formato. Si necesita formato personalizado para una cadena de C++, cree una [visualización de Natvis](../debugger/create-custom-views-of-native-objects.md).
+
+![Visualizador de cadena de texto](../debugger/media/dbg-string-visualizer-text.png "Visualizador de cadena de texto")
 
 ### <a name="json-string-data"></a>Datos de cadena JSON
 

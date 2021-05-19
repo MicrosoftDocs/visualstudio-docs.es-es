@@ -4,14 +4,14 @@ description: En este artículo se explica cómo compilar y generar proyectos y s
 ms.topic: overview
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 08/29/2019
+ms.date: 05/03/2021
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
-ms.openlocfilehash: b4f1cfc3dfdffcc3dd4cb90cd7d29d4333578b9a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a24c57907afedb4f02068a071d2c9f81eb8962bb
+ms.sourcegitcommit: dd2fc6e03a789c044f8438096b8f112e4dba5557
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71128420"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108640979"
 ---
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>Compilar y generar en Visual Studio para Mac
 
@@ -27,7 +27,7 @@ En el equipo Mac, puede usar cualquiera de los métodos siguientes para compilar
 | Línea de comandos de MSBuild| - Compilar proyectos sin instalar Visual Studio para Mac.<br />- Ejecutar compilaciones multiprocesador para todos los tipos de proyecto.<br />- Personalizar la mayoría de las áreas del sistema de compilación.|
 | Azure Pipelines | - Automatizar el proceso de compilación como parte de una canalización de integración continua o entrega continua.<br />- Aplicar pruebas automatizadas con cada compilación.<br />- Emplear recursos basados en la nube prácticamente ilimitados para los procesos de compilación.<br />- Modificar el flujo de trabajo de compilación y crear actividades de compilación para realizar tareas muy personalizadas.|
 
-La documentación de esta sección analiza en detalle el proceso de compilación basado en el IDE. Para más información sobre la creación de aplicaciones mediante la línea de comandos, consulte [MSBuild](/visualstudio/msbuild/msbuild). Para más información sobre la creación de aplicaciones con Azure Pipelines, consulte [Azure Pipelines](/azure/devops/pipelines).
+La documentación de esta sección analiza en detalle el proceso de compilación basado en el IDE. Para compilar aplicaciones desde la línea de comandos sin instalar Visual Studio para Mac, puede instalar la versión más reciente del [SDK de .NET Core](https://dotnet.microsoft.com/download). Para más información sobre la creación de aplicaciones mediante la línea de comandos, consulte [MSBuild](/visualstudio/msbuild/msbuild). Para más información sobre la creación de aplicaciones con Azure Pipelines, consulte [Azure Pipelines](/azure/devops/pipelines).
 
 
 > [!NOTE]

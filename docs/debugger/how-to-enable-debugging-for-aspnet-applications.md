@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - aspnet
-ms.openlocfilehash: 8ef65fbd9452aef52d807210f84928a4eef14100
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1fd620a0c7f4860421b6f8b1a15c0b708c1ba860
+ms.sourcegitcommit: a0f5e7188838c5989c9cc78d99fb29bb2813501e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877751"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "109729265"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Depuración de aplicaciones de ASP.NET o ASP.NET Core en Visual Studio
 
@@ -51,7 +51,7 @@ También puede depurar una aplicación de ASP.NET o ASP.NET Core en un servidor 
 
 IIS Express es el valor predeterminado y está preconfigurado. Si realiza la depuración en IIS local, asegúrese de que cumple los [requisitos para la depuración de IIS local](#iis).
 
-1. Seleccione el proyecto de ASP.NET en el **Explorador de soluciones** de Visual Studio, haga clic en el icono **Propiedades** y presione **Alt**+**Entrar**, o haga clic con el botón derecho y seleccione **Propiedades**.
+1. Seleccione el proyecto de ASP.NET en el **Explorador de soluciones** de Visual Studio y haga clic en el icono **Propiedades**, presione **Alt**+**Entrar** o haga clic con el botón derecho y seleccione **Propiedades**.
 
 1. Seleccione la pestaña **Web**.
 
@@ -65,7 +65,7 @@ IIS Express es el valor predeterminado y está preconfigurado. Si realiza la dep
 
    ![Configuración del depurador de ASP.NET](media/dbg-aspnet-enable-debugging2.png "Configuración del depurador de ASP.NET")
 
-1. Use **Archivo** > **Guardar elementos seleccionados** o presione **Ctrl**+**S** para guardar los cambios.
+1. Elija **Archivo** > **Guardar los elementos seleccionados** (o presione **Ctrl**+**S**) para guardar los cambios.
 
 1. Para depurar la aplicación, en el proyecto, establezca puntos de interrupción en algunas secciones del código. En la barra de herramientas de Visual Studio, asegúrese de que la configuración esté establecida en **Depurar** y el explorador que quiera aparezca en **IIS Express (\<Browser name>)** o **IIS local (\<Browser name>)** en el campo del emulador.
 
@@ -75,7 +75,7 @@ IIS Express es el valor predeterminado y está preconfigurado. Si realiza la dep
 
 IIS Express es el valor predeterminado y está preconfigurado. Si realiza la depuración en IIS local, asegúrese de que cumple los [requisitos para la depuración de IIS local](#iis).
 
-1. Seleccione el proyecto de ASP.NET Core en el **Explorador de soluciones** de Visual Studio, haga clic en el icono **Propiedades** y presione **Alt**+**Entrar**, o haga clic con el botón derecho y seleccione **Propiedades**.
+1. Seleccione el proyecto de ASP.NET Core en el **Explorador de soluciones** de Visual Studio y haga clic en el icono **Propiedades**, presione **Alt**+**Entrar** o haga clic con el botón derecho y seleccione **Propiedades**.
 
 1. Seleccione la pestaña **Depurar**.
 

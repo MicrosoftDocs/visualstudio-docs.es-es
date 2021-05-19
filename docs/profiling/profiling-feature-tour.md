@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 855a04fae1d5b406019e758c6d6f931d6657bb4e
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: b5fb35c1cd30f872d2a58504f73596357cc60025
+ms.sourcegitcommit: a0f5e7188838c5989c9cc78d99fb29bb2813501e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102145383"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "109729330"
 ---
 # <a name="first-look-at-profiling-tools"></a>Un primer vistazo a las herramientas de generación de perfiles
 
@@ -31,7 +31,7 @@ Para ver la compatibilidad de la herramienta de generación de perfiles con los 
 
 ## <a name="measure-performance-while-debugging"></a>Medición del rendimiento durante la depuración
 
-Las herramientas de generación de perfiles a las que puede obtener acceso durante una sesión de depuración están disponibles en la ventana Herramientas de diagnóstico. La ventana Herramientas de diagnóstico aparece automáticamente a menos que la desactive. Para mostrar la ventana, haga clic en **Depurar / Windows / Mostrar herramientas de diagnóstico**. Con la ventana abierta, puede seleccionar las herramientas para las que se van a recopilar datos.
+Las herramientas de generación de perfiles a las que puede obtener acceso durante una sesión de depuración están disponibles en la ventana Herramientas de diagnóstico. La ventana Herramientas de diagnóstico aparece automáticamente a menos que la desactive. Para abrir la ventana, haga clic en **Depurar/Ventanas /Mostrar herramientas de diagnóstico** (o presione **Ctrl** + **Alt** + **F2**). Con la ventana abierta, puede seleccionar las herramientas para las que se van a recopilar datos.
 
 ![Ventana Herramientas de diagnóstico](../profiling/media/prof-tour-diagnostic-tools.png "Herramientas de diagnóstico")
 

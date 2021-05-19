@@ -1,5 +1,5 @@
 ---
-title: Modificar Visual Studio
+title: Modificación de cargas de trabajo, componentes y paquetes de idioma de Visual Studio
 titleSuffix: ''
 description: Obtenga información sobre cómo modificar Visual Studio, paso a paso.
 ms.date: 10/12/2020
@@ -11,21 +11,21 @@ helpviewer_keywords:
 - changing Visual Studio
 - customize Visual Studio
 ms.assetid: 3399ea7b-a291-4a9e-80a1-b861a21afa1d
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ba8f9ff3bc0aca36aa42582e5c76504aae757c0c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 30b28af562e5dbaa8c05624f6cc9d531cf652419
+ms.sourcegitcommit: 8d3d51042261df603487169a7a008fe8f71404ec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99897876"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "109501777"
 ---
-# <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>Modificación de Visual Studio mediante la incorporación o la eliminación de cargas de trabajo y componentes
+# <a name="modify-visual-studio-workloads-components-and-language-packs"></a>Modificación de cargas de trabajo, componentes y paquetes de idioma de Visual Studio
 
 ::: moniker range="vs-2019"
 
@@ -39,17 +39,15 @@ No solo le hemos facilitado la personalización de Visual Studio para que se ada
 
 ::: moniker-end
 
-Esta es la manera de hacerlo.
+## <a name="prerequisites"></a>Requisitos previos
 
->[!IMPORTANT]
->Para instalar, actualizar o modificar Visual Studio, debe iniciar sesión con una cuenta que tenga permisos administrativos. Para obtener más información, consulte [Permisos de usuario y Visual Studio](../ide/user-permissions-and-visual-studio.md).
++ Para instalar, actualizar o modificar Visual Studio, debe iniciar sesión con una cuenta que tenga permisos administrativos. Para obtener más información, consulte [Permisos de usuario y Visual Studio](../ide/user-permissions-and-visual-studio.md).
 
->[!NOTE]
-> En los siguientes procedimientos se da por hecho que tiene una conexión a Internet.
->
-> Para obtener más información sobre cómo modificar una [instalación sin conexión](create-an-offline-installation-of-visual-studio.md) creada anteriormente de Visual Studio, consulte las páginas [Actualización de una instalación basada en red de Visual Studio](update-a-network-installation-of-visual-studio.md) y [Control de actualizaciones a implementaciones de Visual Studio basadas en red](controlling-updates-to-visual-studio-deployments.md).
++ En los siguientes procedimientos se da por hecho que tiene una conexión a Internet. Para obtener más información sobre cómo modificar una [instalación sin conexión](create-an-offline-installation-of-visual-studio.md) creada anteriormente de Visual Studio, consulte las páginas [Actualización de una instalación basada en red de Visual Studio](update-a-network-installation-of-visual-studio.md) y [Control de actualizaciones a implementaciones de Visual Studio basadas en red](controlling-updates-to-visual-studio-deployments.md).
 
-## <a name="open-the-visual-studio-installer"></a>Apertura del Instalador de Visual Studio
+## <a name="launch-the-installer"></a>Inicie el programa de instalación.
+
+Para realizar modificaciones en la instalación, debe iniciar el programa de instalación de Visual Studio.
 
 ::: moniker range="vs-2017"
 
@@ -99,13 +97,15 @@ Esta es la manera de hacerlo.
 
 ::: moniker-end
 
-## <a name="modify-workloads"></a>Modificar cargas de trabajo
+## <a name="change-workloads-or-individual-components"></a>Cambio de cargas de trabajo o componentes individuales
 
 ::: moniker range="vs-2017"
 
  Las [cargas de trabajo](https://visualstudio.microsoft.com/vs/support/selecting-workloads-visual-studio-2017/) contienen las características que necesita para el lenguaje de programación o la plataforma que está usando. Use cargas de trabajo para modificar Visual Studio de manera que admita el trabajo que quiere realizar, cuando quiera.
 
 1. En el Instalador de Visual Studio, elija la pestaña **Cargas de trabajo** y, a continuación, seleccione o anule la selección de las cargas de trabajo que desee.
+
+   Alternativamente, si no quiere usar cargas de trabajo para personalizar la instalación de Visual Studio, elija la pestaña **Componentes individuales** del Instalador de Visual Studio y seleccione los componentes que quiera. Después, siga las indicaciones.
 
     ![Cuadro de diálogo del programa de instalación de Visual Studio 2017](media/modify-workloads.png "Elección de una carga de trabajo en Visual Studio 2019")
 
@@ -116,6 +116,9 @@ Esta es la manera de hacerlo.
     La opción "Descargar e instalar todo" resulta útil si quiere realizar la descarga en primer lugar e instalar el producto más adelante.
 
 1. Elija **Modificar**.
+
+1. Si lo desea, elija la pestaña **Cargas de trabajo** y, a continuación, seleccione o anule la selección de las cargas de trabajo que desee.
+
 
 1. Cuando se hayan instalado las nuevas cargas de trabajo, elija **Iniciar** en el Instalador de Visual Studio para abrir Visual Studio.
 
@@ -128,7 +131,7 @@ Esta es la manera de hacerlo.
  > [!TIP]
 >Para más información sobre qué herramientas y paquetes de componentes necesita para el desarrollo, consulte [Cargas de trabajo de Visual Studio](https://visualstudio.microsoft.com/vs/#workloads).
 
-1. En el Instalador de Visual Studio, elija la pestaña **Cargas de trabajo** y, a continuación, seleccione o anule la selección de las cargas de trabajo que desee.
+1. En el Instalador de Visual Studio, elija la pestaña **Cargas de trabajo** y, a continuación, seleccione o anule la selección de las cargas de trabajo que desee.
 
     ![Cuadro de diálogo del programa de instalación de Visual Studio 2019](media/vs-2019/vs-installer-modify-workloads.png "Elección de una carga de trabajo en Visual Studio 2019")
 
@@ -144,16 +147,18 @@ Esta es la manera de hacerlo.
 
 ::: moniker-end
 
-## <a name="modify-individual-components"></a>Modificar componentes individuales
-
-Si no quiere usar cargas de trabajo para personalizar la instalación de Visual Studio, elija la pestaña **Componentes individuales** del Instalador de Visual Studio, seleccione los componentes que quiera y, después, siga las indicaciones.
 
 >[!TIP]
 > Para más información sobre SQL Server Data Tools (SSDT), vea [Descarga e instalación de SQL Server Data Tools (SSDT) para Visual Studio](/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver15&preserve-view=true).
 
 ## <a name="modify-language-packs"></a>Modificación de paquetes de idioma
 
-De manera predeterminada, el programa instalador hace coincidir el idioma del sistema operativo cuando se ejecuta por primera vez. Sin embargo, puede cambiar el idioma siempre que lo desee. Para ello, elija la pestaña **Paquetes de idioma** en el Instalador de Visual Studio, seleccione el idioma que prefiera y, a continuación, siga las indicaciones.
+De manera predeterminada, el programa instalador hace coincidir el idioma del sistema operativo cuando se ejecuta por primera vez. Sin embargo, puede cambiar el idioma siempre que lo desee. 
+
+Para ello:
+1. Elija la pestaña **Paquetes de idioma** en el instalador de Visual Studio.
+2. Seleccione el idioma que prefiera.
+3. Siga las instrucciones.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
@@ -162,6 +167,4 @@ De manera predeterminada, el programa instalador hace coincidir el idioma del si
 * [Lista de identificadores de cargas de trabajo y componentes de Visual Studio](workload-and-component-ids.md)
 * [Actualizar Visual Studio](update-visual-studio.md)
 * [Actualizar una instalación basada en red de Visual Studio](update-a-network-installation-of-visual-studio.md)
-* [Actualización de Visual Studio mientras se encuentra en una base de referencia de mantenimiento](update-servicing-baseline.md)
-* [Control updates to network-based Visual Studio deployments](controlling-updates-to-visual-studio-deployments.md) (Control de actualizaciones de implementaciones de Visual Studio basadas en red)
 * [Desinstalar Visual Studio](uninstall-visual-studio.md)

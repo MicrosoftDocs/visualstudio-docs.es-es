@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e082f5346d22fd574b7f9b725f8ec88b8a3b08f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3bdd35056706491ace6e5e6b2f7c3f6a45464d2e
+ms.sourcegitcommit: a0f5e7188838c5989c9cc78d99fb29bb2813501e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873202"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "109729252"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Depuración con el depurador Just-In-Time en Visual Studio
 
@@ -177,7 +177,7 @@ Es posible que vea los siguientes mensajes de error durante la depuración Just-
 
     El depurador intentó asociarse a un proceso que se ejecuta en otro usuario.
 
-    Para solucionar este problema, en Visual Studio, abra **Depurar** > **Asociar al proceso** y busque el proceso que desea depurar en la lista de **procesos disponibles**. Si desconoce el nombre del proceso, busque el identificador del proceso en el cuadro de diálogo **Depurador Just-in-Time de Visual Studio**. Seleccione el proceso en la lista de **procesos disponibles** y seleccione **Asociar**. Seleccione **No** para descartar el cuadro de diálogo del depurador Just-in-Time.
+    Para solucionar este problema, en Visual Studio, abra **Depurar** > **Asociar al proceso** (o presione **Ctrl** + **Alt** + **P**) y busque el proceso que desea depurar en la lista **Procesos disponibles**. Si desconoce el nombre del proceso, busque el identificador del proceso en el cuadro de diálogo **Depurador Just-in-Time de Visual Studio**. Seleccione el proceso en la lista de **procesos disponibles** y seleccione **Asociar**. Seleccione **No** para descartar el cuadro de diálogo del depurador Just-in-Time.
 
 - **No se pudo iniciar el depurador porque no hay usuarios conectados.**
 
