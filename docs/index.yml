@@ -4,9 +4,9 @@ summary: Explore la documentación de la familia de productos de Visual Studio.
 brand: visual-studio
 metadata:
   title: Documentación de la familia de productos de Visual Studio
-  description: Explore la documentación de la familia de productos de Visual Studio, incluidos los IDE de Visual Studio para Windows y Mac, Visual Studio Code, Visual Studio App Center, Codespaces de GitHub y Suscripciones de Visual Studio.
+  description: "Explore la documentación de la familia de productos de Visual\_Studio, incluidos los IDE de Visual\_Studio para Windows y Mac, Visual\_Studio Code, Visual\_Studio App Center, Codespaces de GitHub y Suscripciones de Visual Studio."
   ms.topic: hub-page
-  ms.custom: contperf-fy21q1, contperf-fy21q3
+  ms.custom: 'contperf-fy21q1, contperf-fy21q3'
   ms.date: 03/23/2021
   searchScope: []
   titleSuffix: ''
@@ -15,73 +15,65 @@ metadata:
   ms.manager: jillfra
   monikerRange: '>=vs-2017'
   hide_bc: true
-  ms.openlocfilehash: d9aa5ff71a4dc24b32827f24e0df219db3674df2
-  ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
-  ms.translationtype: HT
-  ms.contentlocale: es-ES
-  ms.lasthandoff: 03/25/2021
-  ms.locfileid: "105073747"
 productDirectory:
   items:
-  - title: Programa para la mejora
-    imageSrc: ./media/vs-ide-2019.svg
-    links:
-    - url: ./windows/index.yml?view=vs-2019&preserve-view=true
-      text: Visual Studio 2019 (actual)
-    - url: ./windows/index.yml?view=vs-2017&preserve-view=true
-      text: Visual Studio 2017
-    - url: /previous-versions/visualstudio/
-      text: Versiones anteriores
-    - url: /visualstudio/releases/2019/release-notes
-      text: Notas de la versión
-    - url: https://visualstudio.microsoft.com/
-      text: Página del producto
-  - title: Visual Studio para Mac
-    imageSrc: ./media/vs-mac-2019.svg
-    links:
-    - url: /visualstudio/mac
-      text: Visual Studio 2019 para Mac (actual)
-    - url: /visualstudio/mac/?view=vsmac-2017&preserve-view=true
-      text: Visual Studio 2017 para Mac
-    - url: /visualstudio/releasenotes/vs2019-mac-relnotes
-      text: Notas de la versión
-    - url: https://visualstudio.microsoft.com/vs/mac/
-      text: Página del producto
-  - title: Visual Studio Code
-    imageSrc: ./media/vs-code-logo.svg
-    links:
-    - url: https://code.visualstudio.com/docs
-      text: Documentación
-    - url: https://code.visualstudio.com/updates
-      text: Notas de la versión
-    - url: https://code.visualstudio.com
-      text: Página del producto
-  - title: GitHub Codespaces
-    imageSrc: https://docs.microsoft.com/media/logos/logo_octokitty.svg
-    links:
-    - url: https://docs.github.com/github/developing-online-with-codespaces/
-      text: Documentación
-    - url: https://code.visualstudio.com/docs/remote/codespaces/
-      text: Uso con Visual Studio Code
-    - url: ./ide/codespaces/use-visual-studio-with-codespaces.md
-      text: Uso con Visual Studio
-    - url: https://github.com/features/codespaces/
-      text: Página del producto
-  - title: Centro de aplicaciones de Visual Studio
-    imageSrc: ./media/vs-mobile-center.svg
-    links:
-    - url: /appcenter
-      text: Documentación
-    - url: https://visualstudio.microsoft.com/app-center/
-      text: Portal
-  - title: Suscripciones de Visual Studio
-    imageSrc: ./media/vs-subscription-temp.svg
-    links:
-    - url: /visualstudio/subscriptions
-      text: Documentación
-    - url: https://visualstudio.microsoft.com/subscriptions
-      text: 'Más información: visualstudio.com'
-    - url: https://my.visualstudio.com
-      text: Portal del suscriptores
-    - url: https://manage.visualstudio.com
-      text: Administrator Portal
+    - title: Programa para la mejora
+      imageSrc: ./media/vs-ide-2019.svg
+      links:
+        - url: ./windows/index.yml?view=vs-2019&preserve-view=true
+          text: "Visual\_Studio\_2019 (actual)"
+        - url: ./windows/index.yml?view=vs-2017&preserve-view=true
+          text: Visual Studio 2017
+        - url: /previous-versions/visualstudio/
+          text: Versiones anteriores
+        - url: /visualstudio/releases/2019/release-notes
+          text: Notas de la versión
+        - url: 'https://visualstudio.microsoft.com/'
+          text: Página del producto
+    - title: Visual Studio para Mac
+      imageSrc: ./media/vs-mac-2019.svg
+      links:
+        - url: /visualstudio/mac
+          text: "Visual\_Studio\_2019 para Mac (actual)"
+        - url: /visualstudio/mac/?view=vsmac-2017&preserve-view=true
+          text: Visual Studio 2017 para Mac
+        - url: /visualstudio/releasenotes/vs2019-mac-relnotes
+          text: Notas de la versión
+        - url: 'https://visualstudio.microsoft.com/vs/mac/'
+          text: Página del producto
+    - title: Visual Studio Code
+      imageSrc: ./media/vs-code-logo.svg
+      links:
+        - url: 'https://code.visualstudio.com/docs'
+          text: Documentación
+        - url: 'https://code.visualstudio.com/updates'
+          text: Notas de la versión
+        - url: 'https://code.visualstudio.com'
+          text: Página del producto
+    - title: GitHub Codespaces
+      imageSrc: 'https://docs.microsoft.com/media/logos/logo_octokitty.svg'
+      links:
+        - url: 'https://docs.github.com/github/developing-online-with-codespaces/'
+          text: Documentación
+        - url: 'https://code.visualstudio.com/docs/remote/codespaces/'
+          text: Uso con Visual Studio Code
+        - url: 'https://github.com/features/codespaces/'
+          text: Página del producto
+    - title: Centro de aplicaciones de Visual Studio
+      imageSrc: ./media/vs-mobile-center.svg
+      links:
+        - url: /appcenter
+          text: Documentación
+        - url: 'https://visualstudio.microsoft.com/app-center/'
+          text: Portal
+    - title: Suscripciones de Visual Studio
+      imageSrc: ./media/vs-subscription-temp.svg
+      links:
+        - url: /visualstudio/subscriptions
+          text: Documentación
+        - url: 'https://visualstudio.microsoft.com/subscriptions'
+          text: 'Más información: visualstudio.com'
+        - url: 'https://my.visualstudio.com'
+          text: Portal del suscriptores
+        - url: 'https://manage.visualstudio.com'
+          text: Administrator Portal

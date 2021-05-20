@@ -147,7 +147,7 @@ additionalContent:
               url: /visualstudio/cross-platform/
             - text: Desarrollo móvil con JavaScript
               url: /visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017&preserve-view=true
-              note: "(Solo Visual Studio\_2017 y 2015)"
+              note: (Visual Studio 2017 and 2015 only)
         - title: Juegos
           links:
             - text: Desarrollo de juegos con Unity
@@ -181,7 +181,7 @@ additionalContent:
           url: ../deployment/index.yml
         - title: Control de versiones
           summary: Comparta código mediante tecnologías de control de versiones como Git y GitHub.
-          url: ../ide/git-with-visual-studio.md
+          url: ../version-control/index.yml
         - title: DevOps
           summary: Compile y lance continuamente las aplicaciones en la nube e implemente prácticas de Agile con Azure DevOps Services.
           url: /azure/devops
@@ -200,4 +200,4 @@ additionalContent:
         - title: Desarrollo con contenedores de Docker
           summary: Use contenedores de Docker para aislar componentes modulares y mejorar la escalabilidad.
           url: ../containers/index.yml
-  footer: '[Blogs](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/VisualStudio) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio) - [Informe de incidencias](../ide/feedback-options.md) - [Comunidad de desarrolladores](https://aka.ms/feedback/suggest?space=8) - [Solución de problemas](/troubleshoot/visualstudio/welcome-visual-studio)'
+  footer: '[Blogs](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/VisualStudio) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio) - [Issue Reporting](../ide/feedback-options.md) - [Developer Community](https://aka.ms/feedback/suggest?space=8) - [Troubleshooting](/troubleshoot/visualstudio/welcome-visual-studio)'
