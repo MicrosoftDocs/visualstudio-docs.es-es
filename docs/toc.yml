@@ -16,6 +16,7 @@
   items:
     - name: Instalar Visual Studio
       href: install/install-visual-studio.md
+      displayName: system requirements
     - name: Instalación sin conexión
       items:
         - name: Crear una instalación sin conexión de Visual Studio
@@ -268,16 +269,6 @@
         - name: Personalizar las tareas de compilación y depuración
           displayName: makefile tasks.vs.json
           href: ide/customize-build-and-debug-tasks-in-visual-studio.md
-    - name: Desarrollo con Codespaces (versión preliminar)
-      items:
-        - name: Información general
-          href: ide/codespaces/codespaces-overview.md
-        - name: "Uso de Visual\_Studio con un codespace"
-          href: ide/codespaces/use-visual-studio-with-codespaces.md
-        - name: Personalización de un codespace
-          href: ide/codespaces/customize-codespaces.md
-        - name: "Características de Visual\_Studio compatibles"
-          href: ide/codespaces/supported-features-codespaces.md
     - name: Conexión a proyectos en Team Explorer
       displayName: Azure DevOps VSTS
       href: ide/connect-team-project.md
@@ -1443,38 +1434,16 @@
       href: ide/whats-new-visual-studio-docs.md
     - name: Historial de las novedades de la documentación
       href: ide/whats-new-visual-studio-docs-history.md
-    - name: Notas de la versión y requisitos del sistema
+    - name: Notas de la versión
       items:
         - name: Progresión de versiones
           href: /visualstudio/productinfo/release-rhythm/
-        - name: Visual Studio 2017
-          items:
-            - name: Notas de la versión actual
-              href: /visualstudio/releasenotes/vs2017-relnotes/
-            - name: Notas de la versión preliminar
-              href: /visualstudio/releasenotes/vs2017-preview-relnotes/
-            - name: Historial de notas de versiones
-              href: /visualstudio/releasenotes/vs2017-relnotes-history/
-            - name: Código distribuible
-              href: /visualstudio/productinfo/2017-redistribution-vs/
-            - name: Compatibilidad de plataformas
-              href: /visualstudio/productinfo/vs2017-compatibility-vs/
-            - name: Requisitos del sistema
-              href: /visualstudio/productinfo/vs2017-system-requirements-vs/
-        - name: Visual Studio 2019
-          items:
-            - name: Notas de la versión actual
-              href: /visualstudio/releases/2019/release-notes/
-            - name: Notas de la versión preliminar
-              href: /visualstudio/releases/2019/release-notes-preview/
-            - name: Historial de notas de versiones
-              href: /visualstudio/releases/2019/release-notes-history/
-            - name: Código distribuible
-              href: /visualstudio/releases/2019/redistribution/
-            - name: Compatibilidad de plataformas
-              href: /visualstudio/releases/2019/compatibility/
-            - name: Requisitos del sistema
-              href: /visualstudio/releases/2019/system-requirements/
+        - name: "Notas de Visual\_Studio\_2019"
+          href: /visualstudio/releases/2019/release-notes/
+        - name: "Notas de Visual\_Studio\_2017"
+          href: /visualstudio/releasenotes/vs2017-relnotes/
+        - name: "Documentación de Visual\_Studio\_2015"
+          href: vs-2015-archive.md
         - name: Términos de licencia
           href: 'https://visualstudio.microsoft.com/license-terms/'
         - name: Ciclo de vida de soporte técnico y servicio
@@ -1512,8 +1481,3 @@
       href: ide/developer-community-guidelines.md
     - name: Privacidad de datos de la Comunidad de desarrolladores
       href: ide/developer-community-privacy.md
-- name: Visual Studio 2015
-  expanded: true
-  items:
-    - name: "Documentación de Visual\_Studio\_2015"
-      href: vs-2015-archive.md

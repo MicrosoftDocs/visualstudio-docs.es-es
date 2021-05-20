@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 286d5f2c316379316b1a1cf55334cab39cdc247c
-ms.sourcegitcommit: 69256dc47489853dc66a037f5b0c1275977540c0
+ms.openlocfilehash: 866b588b8b46477b397cda92076780d1955cfa83
+ms.sourcegitcommit: 9cb0097c33755a3e5cbadde3b0a6e9e76cee727d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109782639"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "109848310"
 ---
 # <a name="create-a-c-extension-for-python"></a>Creación de una extensión de C++ para Python
 
@@ -120,12 +120,12 @@ Siga las instrucciones de esta sección para crear dos proyectos de C++ idéntic
     ::: moniker range=">=vs-2019"
     | Pestaña | Propiedad | Valor |
     | --- | --- | --- |
-    | **General** | **Nombre de destino** | Especifique el nombre del módulo tal y como quiera referirse a él desde Python en las instrucciones `from...import`. Use este mismo nombre en C++ al definir el módulo para Python. Si quiere utilizar el nombre del proyecto como nombre del módulo, deje el valor predeterminado de **$(ProjectName)**. Para `python_d.exe`, agregue `_d` al final del nombre. |
-    | | **Tipo de configuración** | **Biblioteca dinámica (.dll)** |
-    | **Avanzadas** | **Extensión de archivo de destino** | **.pyd** |
+    | **General** | **General** > **Nombre de destino** | Especifique el nombre del módulo tal y como quiera referirse a él desde Python en las instrucciones `from...import`. Use este mismo nombre en C++ al definir el módulo para Python. Si quiere utilizar el nombre del proyecto como nombre del módulo, deje el valor predeterminado de **$(ProjectName)**. |
+    | | **Opciones avanzadas** > **Extensión de archivo de destino** | **.pyd** |
+    | | **Valores predeterminados del proyecto** > **Tipo de configuración** | **Biblioteca dinámica (.dll)** |
     | **C/C++** > **General** | **Directorios de inclusión adicionales** | Agregue la carpeta *include* de Python según sea necesario para la instalación; por ejemplo, `c:\Python36\include`.  |
-    | **C/C++** > **Preprocesador** | **Definiciones de preprocesador** | Si está presente, cambie el valor **_DEBUG** a **NDEBUG** para que coincida con la versión que no es de depuración de `CPython`. (Al usar `python_d.exe`, deje esta opción sin cambios). |
-    | **C/C++** > **Generación de código** | **Biblioteca en tiempo de ejecución** | **DLL multiproceso (/MD)** para que coincida con la versión que no es de depuración de `CPython`. (Al usar `python_d.exe`, deje esta opción sin cambios). |
+    | **C/C++** > **Preprocesador** | **Definiciones de preprocesador** | **Solo CPython**: agregue `Py_LIMITED_API;` al principio de la cadena (incluido el punto y coma). Esta definición restringe algunas de las funciones a las que se puede llamar desde Python y hace que el código pueda moverse con mayor facilidad entre versiones diferentes de Python. Si usa PyBind11, no agregue esta definición, ya que causará errores de compilación. |
+    | **C/C++** > **Generación de código** | **Biblioteca en tiempo de ejecución** | **DLL multiproceso (/MD)** (vea la advertencia siguiente) |
     | **Enlazador** > **General** | **Directorios de bibliotecas adicionales** | Agregue la carpeta *libs* de Python que contiene archivos *.lib* según sea necesario para la instalación, por ejemplo, `c:\Python36\libs`. (Asegúrese de apuntar a la carpeta *libs* que contiene archivos *.lib*, y *no* a la carpeta *Lib* que contiene archivos *.py*). |
     ::: moniker-end
     ::: moniker range="=vs-2017"
@@ -385,7 +385,7 @@ En la salida, puede ver que la extensión de PyBind11 no es tan rápida como la 
 
 Podríamos reducir aún más la sobrecarga moviendo el bucle `for` al código nativo. Esto implicaría usar el [protocolo de iterador](https://docs.python.org/c-api/iter.html) (o el tipo `py::iterable` de PyBind11 para el [parámetro de función](https://pybind11.readthedocs.io/en/stable/advanced/functions.html#python-objects-as-args)) para procesar cada elemento. Quitar las transiciones repetidas entre Python y C++ es una manera eficaz de reducir el tiempo que se necesita para procesar la secuencia.
 
-### <a name="troubleshooting"></a>Solución de problemas
+### <a name="troubleshooting"></a>Solucionar problemas
 
 Si recibe un `ImportError` al intentar importar el módulo, es probable que uno de los siguientes problemas sea la causa:
 
