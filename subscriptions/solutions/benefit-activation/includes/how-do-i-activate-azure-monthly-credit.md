@@ -10,12 +10,12 @@ user.type: subscriber
 tags: benefit, azure
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: 7f1978f0d0679d94bbde3b565ff5680ce89f9063
-ms.sourcegitcommit: 54aac5044a9853a435577acc5a134cb254494ffb
+ms.openlocfilehash: bb387f9a359b6f645dd6a160ffb281375cd747a9
+ms.sourcegitcommit: beb16d5cc31b3565ec0c8d69f819a4ec67b45aae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "107590094"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110349794"
 ---
 ## <a name="how-to-activate-the-monthly-azure-devtest-individual-credit-benefit"></a>Activación de la ventaja de crédito individual de desarrollo/pruebas mensual de Azure
 
@@ -30,7 +30,7 @@ Las suscripciones de Azure creadas mediante la ventaja Suscripciones de Visual 
 
 ## <a name="azure-credit-benefit-activation-errors"></a>Errores de activación de la ventaja de crédito de Azure
 
-Si tiene una nueva suscripción de Visual Studio y recibe el error "You can't activate this Visual Studio benefit more than once" (No puede activar esta ventaja de Visual Studio más de una vez.) al intentar activar la ventaja de crédito de Azure mensual, haga clic en el botón "Crear una incidencia de soporte técnico" en la parte inferior de esta solución para ponerse en contacto con el servicio de soporte técnico de Suscripciones de Visual Studio. 
+Si tiene una nueva suscripción de Visual Studio y recibe el error "You can't activate this Visual Studio benefit more than once" (No puede activar esta ventaja de Visual Studio más de una vez) al intentar activar la ventaja de crédito de Azure mensual, haga clic en el botón "Online request" (Solicitud en línea) en la parte inferior de esta solución para ponerse en contacto con el servicio de soporte técnico de Suscripciones de Visual Studio. 
 
 Si lleva un tiempo con la suscripción asignada, estas son algunas de las cosas que debe comprobar primero:
 - Confirme que aún no ha activado esta ventaja; para ello, compruebe el icono de crédito de Azure mensual en la [página Beneficios](https://my.visualstudio.com/benefits) del portal de suscripciones. 

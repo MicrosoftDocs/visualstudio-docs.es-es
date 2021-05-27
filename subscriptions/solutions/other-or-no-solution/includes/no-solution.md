@@ -10,16 +10,16 @@ user.type: subscriber, admin
 tags: no-solution
 subscription.type: vl, cloud, retail, partner
 sap.id: 34fccc61-0a31-cc35-22dd-016a1ebf1134
-ms.openlocfilehash: 47df65df2b139fa910843da3659d5a520e787d17
-ms.sourcegitcommit: 54aac5044a9853a435577acc5a134cb254494ffb
+ms.openlocfilehash: d26b75015c427d771ab91526802d9b58e3ddb5e8
+ms.sourcegitcommit: beb16d5cc31b3565ec0c8d69f819a4ec67b45aae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "107590155"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110350025"
 ---
 ## <a name="sorry-we-couldnt-find-a-solution-for-you"></a>Lo sentimos, no hemos podido encontrar una solución. 
 
-Nuestro equipo estará encantado de poder ayudarle. El equipo de soporte técnico de Suscripciones de Visual Studio ofrece ayuda con las ventas, las suscripciones, las cuentas y la facturación. Para crear una incidencia en línea, haga clic en el botón Crear una incidencia de soporte técnico siguiente y nuestro equipo se pondrá en contacto con usted en un plazo de 1 día laborable. 
+Nuestro equipo estará encantado de poder ayudarle. El equipo de soporte técnico de Suscripciones de Visual Studio ofrece ayuda con las ventas, las suscripciones, las cuentas y la facturación. Haga clic en el botón "Online request" (Solicitud en línea) en la parte inferior de esta solución para crear una incidencia en línea. Nuestro equipo se pondrá en contacto con usted en el plazo de un día laborable. 
 
 ## <a name="visual-studio-ide-technical-support-resources"></a>Recursos de soporte técnico del IDE de Visual Studio  
 
@@ -29,7 +29,7 @@ Las incidencias técnicas y las preguntas del IDE de Visual Studio deben dirigi
 
 - Consulte tutoriales, guías de solución de problemas y recursos útiles en la [documentación del IDE de Visual Studio](https://docs.microsoft.com/visualstudio/ide/). 
 
-- Busque en la [comunidad de desarrolladores](https://developercommunity.visualstudio.com/) en línea y obtenga respuestas de expertos desde un foro de soporte técnico de la comunidad. Puede buscar palabras clave y leer, votar o comentar: todo sin iniciar sesión.  
+- Busque en la [comunidad de desarrolladores](https://developercommunity.visualstudio.com/) en línea y obtenga respuestas de expertos desde un foro de soporte técnico de la comunidad. Puede buscar palabras clave, leer, votar y comentar, y todo ello sin iniciar sesión.  
 
 - Busque en [las preguntas y respuestas públicas etiquetadas con visual-studio](https://stackoverflow.com/questions/tagged/visual-studio?tab=Newest) de Stack Overflow para obtener respuestas a las preguntas ya formuladas o regístrese para obtener una cuenta y formular una pregunta nueva.  
 
