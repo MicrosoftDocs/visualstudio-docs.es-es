@@ -1,6 +1,6 @@
 ---
 title: Crear una categoría de configuración | Microsoft Docs
-description: Obtenga información sobre cómo crear una categoría de configuración de Visual Studio y usarla para guardar y restaurar valores de un archivo de configuración.
+description: Obtenga información sobre cómo crear una Visual Studio de configuración y usarla para guardar y restaurar valores desde un archivo de configuración.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,32 +12,32 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e3ef6dbfc58c67ce8e4dd7ff26634e4dbce2218
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: fe46ea835a119978fd3decd26949db3d59944e5e
+ms.sourcegitcommit: 63cb90e8cea112aa2ce8741101b309dbc709e393
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105089347"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "110687610"
 ---
-# <a name="create-a-settings-category"></a>Crear una categoría de configuración
+# <a name="create-a-settings-category"></a>Creación de una categoría de configuración
 
-En este tutorial, creará una categoría de configuración de Visual Studio y la usará para guardar valores y restaurar los valores de un archivo de configuración. Una categoría de configuración es un grupo de propiedades relacionadas que aparecen como "punto de configuración personalizada". es decir, como una casilla en el Asistente para **importar y exportar configuraciones** . (Puede encontrarla en el menú **herramientas** ). La configuración se guarda o se restaura como una categoría y la configuración individual no se muestra en el asistente. Para obtener más información, vea [Configuración del entorno](../ide/environment-settings.md).
+En este tutorial, creará una categoría Visual Studio configuración y la usará para guardar valores en un archivo de configuración y restaurarlos. Una categoría de configuración es un grupo de propiedades relacionadas que aparecen como un "punto de configuración personalizado"; es decir, como una casilla del Asistente **para importar y exportar configuraciones.** (Puede encontrarlo en el **menú** Herramientas). La configuración se guarda o restaura como una categoría y la configuración individual no se muestra en el asistente. Para obtener más información, vea [Configuración del entorno](../ide/environment-settings.md).
 
-Para crear una categoría de configuración, debe derivarla de la <xref:Microsoft.VisualStudio.Shell.DialogPage> clase.
+Para crear una categoría de configuración, debe derivarla de la <xref:Microsoft.VisualStudio.Shell.DialogPage> clase .
 
-Para iniciar este tutorial, primero debe completar la primera sección de la [Página crear una opción](../extensibility/creating-an-options-page.md). La cuadrícula de propiedades opciones resultantes permite examinar y cambiar las propiedades de la categoría. Después de guardar la categoría de propiedad en un archivo de configuración, examine el archivo para ver cómo se almacenan los valores de propiedad.
+Para iniciar este tutorial, primero debe completar la primera sección de [la página Crear una opción](../extensibility/creating-an-options-page.md). La cuadrícula de propiedades Options resultante permite examinar y cambiar las propiedades de la categoría. Después de guardar la categoría de propiedad en un archivo de configuración, examine el archivo para ver cómo se almacenan los valores de propiedad.
 
-## <a name="prerequisites"></a>Requisitos previos
- A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS después. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+## <a name="prerequisites"></a>Prerrequisitos
+ A partir Visual Studio 2015, no se instala el SDK Visual Studio desde el centro de descarga. Se incluye como una característica opcional en Visual Studio configuración. También puede instalar el SDK de VS después. Para más información, consulte [Instalación del SDK Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
-## <a name="create-a-settings-category"></a>Crear una categoría de configuración
- En esta sección, se usa un punto de configuración personalizado para guardar y restaurar los valores de la categoría de configuración.
+## <a name="create-a-settings-category"></a>Creación de una categoría de configuración
+ En esta sección, usará un punto de configuración personalizado para guardar y restaurar los valores de la categoría de configuración.
 
 ### <a name="to-create-a-settings-category"></a>Para crear una categoría de configuración
 
-1. Complete la [Página crear una opción](../extensibility/creating-an-options-page.md).
+1. Complete la [página Crear una opción](../extensibility/creating-an-options-page.md).
 
-2. Abra el archivo *VSPackage. resx* y agregue estos tres recursos de cadena:
+2. Abra el *archivo VSPackage.resx* y agregue estos tres recursos de cadena:
 
     |Nombre|Value|
     |----------|-----------|
@@ -45,12 +45,12 @@ Para iniciar este tutorial, primero debe completar la primera sección de la [P�
     |107|Mi configuración|
     |108|OptionInteger y OptionFloat|
 
-     Esto crea recursos que denominan la categoría "My Category", el objeto "My Settings" y la categoría Description "OptionInteger and OptionFloat".
+     Esto crea recursos que nominan la categoría "Mi categoría", el objeto "Mi configuración" y la descripción de categoría "OptionInteger y OptionFloat".
 
     > [!NOTE]
-    > De estos tres, solo el nombre de categoría no aparece en el Asistente para **importar y exportar configuraciones** .
+    > De estos tres, solo el nombre de categoría no aparece en el Asistente **para importar y exportar configuraciones.**
 
-3. En *MyToolsOptionsPackage. CS*, agregue una `float` propiedad denominada `OptionFloat` a la `OptionPageGrid` clase, tal y como se muestra en el ejemplo siguiente.
+3. En *MyToolsOptionsPackage.cs,* agregue una propiedad denominada a `float` la clase , como se muestra en el ejemplo `OptionFloat` `OptionPageGrid` siguiente.
 
     ```csharp
     public class OptionPageGrid : DialogPage
@@ -78,51 +78,53 @@ Para iniciar este tutorial, primero debe completar la primera sección de la [P�
     ```
 
     > [!NOTE]
-    > La `OptionPageGrid` categoría denominada "My Category" ahora se compone de las dos propiedades, `OptionInteger` y `OptionFloat` .
+    > La `OptionPageGrid` categoría denominada "Mi categoría" ahora consta de las dos propiedades, `OptionInteger` y `OptionFloat` .
 
-4. Agregue un <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> a la `MyToolsOptionsPackage` clase y asígnele el valor de CategoryName "My Category", asígnele el nombreObjeto "My Settings" y establezca isToolsOptionPage en true. Establezca categoryResourceID, objectNameResourceID y DescriptionResourceID en los identificadores de recurso de cadena correspondientes creados anteriormente.
+4. Agregue un objeto a la clase y asíégrele el valor de CategoryName "My Category", asíégrele el valor de <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> `MyToolsOptionsPackage` ObjectName "My Settings" y establezca isToolsOptionPage en true. Establezca categoryResourceID, objectNameResourceID y DescriptionResourceID en los identificadores de recurso de cadena correspondientes creados anteriormente.
 
     ```csharp
     [ProvideProfileAttribute(typeof(OptionPageGrid),
         "My Category", "My Settings", 106, 107, isToolsOptionPage:true, DescriptionResourceID = 108)]
     ```
 
-5. Compile la solución y comience la depuración. En la instancia experimental, debería ver que **la página de cuadrícula** tiene ahora valores enteros y flotantes.
+5. Compile la solución y comience la depuración. En la instancia experimental, debería ver que **Mi página de cuadrícula** ahora tiene valores enteros y flotantes.
 
-## <a name="examine-the-settings-file"></a>Examinar el archivo de configuración
- En esta sección, exportará los valores de categoría de propiedad a un archivo de configuración. Examine el archivo y, a continuación, importe los valores de nuevo en la categoría de la propiedad.
+## <a name="examine-the-settings-file"></a>Examen del archivo de configuración
+ En esta sección, exportará los valores de categoría de propiedad a un archivo de configuración. Examine el archivo y, a continuación, vuelva a importar los valores en la categoría de propiedades.
 
 1. Inicie el proyecto en modo de depuración presionando **F5**. Esto inicia la instancia experimental.
 
-2. Abra el   >  cuadro de diálogo **Opciones** de herramientas.
+2. Abra el **cuadro de diálogo** Opciones  >  **de** herramientas.
 
-3. En la vista de árbol del panel izquierdo, expanda **mi categoría** y, a continuación, haga clic en **mi página de cuadrícula**.
+3. En la vista de árbol del panel izquierdo, expanda **Mi categoría** y, a continuación, haga clic en Mi página **de cuadrícula**.
 
-4. Cambie el valor de **OptionFloat** a 3,1416 y **OptionInteger** a 12. Haga clic en **OK**.
+4. Cambie el valor de **OptionFloat** a 3.1416 y **OptionInteger** a 12. Haga clic en **Aceptar**.
 
 5. En el menú **Herramientas**, haga clic en **Importar y exportar configuraciones**.
 
-     Aparece el Asistente para **importar y exportar configuraciones** .
+     Aparece **el Asistente para importar y exportar** configuraciones.
 
-6. Asegúrese de que la **opción exportar configuración de entorno seleccionada** está seleccionada y, a continuación, haga clic en **siguiente**.
+6. Asegúrese de que **la opción Exportar configuración de entorno seleccionada** está seleccionada y, a continuación, haga clic en **Siguiente.**
 
-     Aparece la página **elegir la configuración que se va a exportar** .
+     Aparece **la página Elegir configuración para** exportar.
 
-7. Haga clic en **mi configuración**.
+7. Haga clic **en My Settings (Mi configuración).**
 
-     La **Descripción** cambia a **OptionInteger y OptionFloat**.
+     La **descripción** cambia a **OptionInteger y OptionFloat.**
 
-8. Asegúrese de que **mi configuración** sea la única categoría seleccionada y, a continuación, haga clic en **siguiente**.
+8. Asegúrese de que **Mi configuración** es la única categoría seleccionada y, a continuación, haga clic **en Siguiente.**
 
-     Aparece la página **nombre del archivo de configuración** .
+     Aparece **la página Nombre del archivo** de configuración.
 
-9. Asigne al nuevo archivo de configuración el nombre *Configurations. vssettings* y guárdelo en un directorio adecuado. Haga clic en **Finalizar**
+9. Asigne al nuevo archivo de configuración el nombre *MySettings.vssettings* y guárdelo en un directorio adecuado. Haga clic en **Finalizar**
 
-     La página **exportar completada** indica que la configuración se ha exportado correctamente.
+   El `.vssettings` archivo es el archivo Visual Studio configuración. El esquema del archivo está abierto. Normalmente, el esquema sigue una estructura XML donde cada categoría es una etiqueta, que puede contener etiquetas de subcategoría. Estas etiquetas de subcategoría pueden contener etiquetas de valor de propiedad. Aunque la mayoría de los paquetes usan la estructura común, cualquier paquete de Visual Studio puede contribuir xml arbitrario al archivo con el esquema que elija.
 
-10. En el menú **Archivo** , seleccione **Abrir** y haga clic en **Archivo**. Busque el *parámetro Settings. vssettings* y ábralo.
+   La **página Exportar completado** informa de que la configuración se exportó correctamente.
 
-     Puede encontrar la categoría de propiedades que exportó en la sección siguiente del archivo (los GUID serán distintos).
+10. En el menú **Archivo** , seleccione **Abrir** y haga clic en **Archivo**. Busque *MySettings.vssettings* y ábralo.
+
+     Puede encontrar la categoría de propiedad que exportó en la siguiente sección del archivo (los GUID variarán).
 
     ```
     <Category name="My Category_My Settings"
@@ -135,24 +137,24 @@ Para iniciar este tutorial, primero debe completar la primera sección de la [P�
     </Category>
     ```
 
-     Tenga en cuenta que el nombre completo de la categoría se forma mediante la adición de un carácter de subrayado al nombre de la categoría, seguido del nombre del objeto. OptionFloat y OptionInteger aparecen en la categoría, junto con sus valores exportados.
+     Observe que el nombre de categoría completo se forma mediante la adición de un carácter de subrayado al nombre de categoría seguido del nombre del objeto. OptionFloat y OptionInteger aparecen en la categoría, junto con sus valores exportados.
 
 11. Cierre el archivo de configuración sin cambiarlo.
 
-12. En el menú **herramientas** , haga clic en **Opciones**, expanda **mi categoría**, haga clic en **mi página de cuadrícula** y, a continuación, cambie el valor de **OptionFloat** a 1,0 y **OptionInteger** a 1. Haga clic en **OK**.
+12. En  el **menú** Herramientas, haga clic en Opciones , expanda Mi categoría , haga clic en Mi página de cuadrícula y, a continuación, cambie el valor de **OptionFloat** a 1.0 y  **OptionInteger** a 1.  Haga clic en **Aceptar**.
 
-13. En el menú **herramientas** , haga clic en **importar y exportar configuraciones**, seleccione **importar la configuración de entorno seleccionada** y, a continuación, haga clic en **siguiente**.
+13. En el **menú Herramientas,** haga clic **en Importar y exportar configuración,** seleccione Importar configuración de **entorno seleccionada** y, a continuación, haga clic **en Siguiente.**
 
-     Aparece la página **Guardar configuración actual** .
+     Aparece **la página Guardar configuración** actual.
 
-14. Seleccione **no, solo importar la nueva configuración** y, a continuación, haga clic en **siguiente**.
+14. Seleccione **No, solo tiene que importar la nueva configuración y,** a continuación, haga clic **en Siguiente.**
 
-     Aparece la página **Elija una colección de configuraciones para importar** .
+     Aparece **la página Elegir una colección de** valores para importar.
 
-15. Seleccione el archivo *Configurations. vssettings* en el nodo **mi configuración** de la vista de árbol. Si el archivo no aparece en la vista de árbol, haga clic en **examinar** y búsquelo. Haga clic en **Next**.
+15. Seleccione el *archivo MySettings.vssettings* en el **nodo Mi** configuración de la vista de árbol. Si el archivo no aparece en la vista de árbol, haga clic **en Examinar** y bájelo. Haga clic en **Next**.
 
-     Aparece el cuadro de diálogo **elegir la configuración que se va a importar** .
+     Aparece **el cuadro de diálogo Elegir configuración** para importar.
 
-16. Asegúrese de que **la opción mi configuración** está seleccionada y, a continuación, haga clic en **Finalizar**. Cuando aparezca la página **importación completada** , haga clic en **cerrar**.
+16. Asegúrese de que **My Settings (Mi** configuración) está seleccionado y, a continuación, haga clic **en Finish (Finalizar).** Cuando aparezca **la página Importar completado,** haga clic **en Cerrar.**
 
-17. En el menú **herramientas** , haga clic en **Opciones**, expanda **mi categoría**, haga clic en **mi página de cuadrícula** y compruebe que se han restaurado los valores de categoría de propiedad.
+17. En el **menú Herramientas** , haga clic en **Opciones**, expanda **Mi categoría**, haga clic en Mi página **de** cuadrícula y compruebe que se han restaurado los valores de categoría de propiedad.
