@@ -2,7 +2,7 @@
 title: Registro de cambios (Visual Studio Tools para Unity, Mac) | Microsoft Docs
 description: Vea el registro de cambios de Visual Studio Tools para Unity, Mac. Vea los cambios de la versión 1.0.0.0 a la 2.7.0.0 y más allá.
 ms.custom: ''
-ms.date: 3/1/2021
+ms.date: 6/3/2021
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
@@ -12,31 +12,102 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: f11c5c1407d16d7a82a9d8d24e6a8dd3a04e57eb
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 2d3faf8e5231ca5d2e99bcf80dc18b6d4f4607cd
+ms.sourcegitcommit: f430d014f912aa7874e1db65026dc72688b973e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683373"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111448303"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Registro de cambios (Visual Studio Tools para Unity, Mac)
 
 Registro de cambios de Visual Studio Tools para Unity.
 
-## <a name="2920"></a>2.9.2.0
-Publicado el 2 de marzo de 2021
+## <a name="21020"></a>2.10.2.0
+Publicado el 2 de junio de 2021
+
+### <a name="new-features"></a>Características nuevas
+
+- **Integración:**
+
+  - Se ha agregado el diagnóstico [`UNT0024`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0024.md). Dé prioridad a los cálculos escalares sobre los cálculos vectoriales.
+
+- **Evaluación:**
+
+  - Se ha agregado compatibilidad con el uso de símbolos pdb portátiles para filtrar correctamente las locales visibles.
 
 ### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Integración:**
 
-  - Resaltado de búsqueda fijo en el cuadro de diálogo de mensajes de Unity.
+  - Se ha corregido el anuncio del reproductor de análisis con versiones recientes de Unity.
 
-  - Se corrigieron problemas de estabilidad con la vista de árbol del proyecto de Unity.
+## <a name="21010"></a>2.10.1.0
+Publicado el 11 de mayo de 2021
+
+### <a name="bug-fixes"></a>Correcciones de errores
+
+- **Integración:**
+
+  - Se han corregido problemas de estabilidad [`UNT0008`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0008.md) con corrección rápida.
+
+  - Se han corregido problemas de rendimiento con subprocesos.
+
+  - Se ha corregido el filtrado de advertencias y errores suprimidos en la lista de errores.
+
+  - Se ha corregido el filtrado de procesos en segundo plano de Unity.
+
+## <a name="21000"></a>2.10.0.0
+Fecha de lanzamiento: 13 de abril de 2021
+
+### <a name="new-features"></a>Características nuevas
+
+- **Integración:**
+
+  - Se ha agregado el diagnóstico [`UNT0019`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0019.md). Llamada de direccionamiento indirecto innecesario para `GameObject.gameObject` .
+
+  - Se ha agregado el diagnóstico [`UNT0020`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0020.md). `MenuItem` Atributo utilizado en el método no estático.
+
+  - Se ha agregado el diagnóstico [`UNT0021`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0021.md). El mensaje de Unity debe estar protegido (participar).
+
+  - Se ha agregado el diagnóstico [`UNT0022`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0022.md). Método ineficaz para establecer la posición y la rotación.
+
+  - Se ha agregado el diagnóstico [`UNT0023`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0023.md). Asignación de uso de coalescing en objetos de Unity.
+
+  - Se ha agregado el supresor [`USP0017`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0017.md) para `IDE0074`. Los objetos de Unity no deben usar la asignación de uso de coalescing.
+
+## <a name="2940"></a>2.9.4.0
+Publicado el 6 de abril de 2021
+
+### <a name="bug-fixes"></a>Correcciones de errores
+
+- **Integración:**
+
+  - Corrección de problemas con la enumeración de pruebas
+
+## <a name="2930"></a>2.9.3.0
+Fecha de lanzamiento: 30 de marzo de 2021
+
+### <a name="bug-fixes"></a>Correcciones de errores
+
+- **Integración:**
+
+  - Corrección de problemas con el ejecutor de pruebas 
+
+## <a name="2920"></a>2.9.2.0
+Fecha de lanzamiento: 2 de marzo de 2021
+
+### <a name="bug-fixes"></a>Correcciones de errores
+
+- **Integración:**
+
+  - Se ha corregido el resaltado de la búsqueda en el cuadro de diálogo de mensajes de Unity.
+
+  - Se han corregido problemas de estabilidad con la vista de árbol del proyecto de Unity.
 
 - **Debugging:** (Depuración)
 
-  - Se corrigió el control de los puntos de interrupción condicionales.
+  - Se ha corregido el control de los puntos de interrupción condicionales.
 
 ## <a name="2910"></a>2.9.1.0
 Publicado el 9 de febrero de 2021
@@ -45,41 +116,41 @@ Publicado el 9 de febrero de 2021
 
 - **Integración:**
 
-  - Compatibilidad agregada para ejecutar y depurar pruebas de Unity desde el IDE
+  - Se ha agregado compatibilidad para ejecutar y depurar pruebas de Unity desde el IDE.
 
 - **Evaluación:**
 
-  - Agregado `Active Scene` a variables locales, mostrando objetos de juego raíz.
+  - Se ha agregado `Active Scene` a las variables locales, mostrando objetos de juego raíz.
 
-  - Agregado `this.gameObject` a variables locales, dado que se usa ampliamente en proyectos de Unity.
+  - Se ha agregado `this.gameObject` a las variables locales, dado que se usa ampliamente en proyectos de Unity.
 
-  - Se han agregado `Children` `Components` grupos y a todas `GameObject` las instancias para que pueda mostrar fácilmente toda la jerarquía de objetos.
+  - Se han agregado grupos `Children` y `Components` a todas las instancias de `GameObject` para que pueda mostrar fácilmente toda la jerarquía de objetos.
 
-  - Se agrega `Scene Path` a todas `GameObject` las instancias para mostrar la ubicación en la escena.
+  - Se ha agregado `Scene Path` a todas las instancias de `GameObject` para mostrar la ubicación en la escena.
 
-  - Se agregó compatibilidad con `JobEntityBatch` /lambdas al usar entidades con generadores de origen.
+  - Se ha agregado compatibilidad con `JobEntityBatch`/Lambdas al usar entidades con generadores de código fuente.
 
-  - Compatibilidad mejorada para mostrar matrices de gran tamaño (mediante el uso de cubos de índices).
+  - Se ha mejorado la compatibilidad para la visualización de matrices de gran tamaño mediante el uso de cubos de índices.
 
-  - Se han agregado mensajes de Unity que faltan para la API 2019,4.
+  - Se han agregado mensajes de Unity que faltan para la API 2019.4.
 
 ### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Integración:**
 
-  - Problemas de estabilidad corregidos con el cuadro de diálogo de mensajes de Unity
+  - Se han corregido problemas de estabilidad con el cuadro de diálogo de mensajes de Unity.
 
-  - Se han corregido varios problemas de interfaz de usuario para lenguajes no ENU.
+  - Se han corregido varios problemas de interfaz de usuario para lenguajes distintos de ENU.
 
-  - Se han corregido problemas de estabilidad con el [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md) diagnóstico.
+  - Se han corregido problemas de estabilidad con diagnóstico [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md).
 
 - **Debugging:** (Depuración)
 
-  - Se han corregido problemas de desconexión de máquinas virtuales al usar `Trace` métodos.
+  - Se han corregido problemas de desconexión de máquinas virtuales al usar métodos `Trace`.
 
 - **Evaluación:**
 
-  - Filtrado fijo de propiedades obsoletas que producen excepciones.
+  - Se ha corregido el filtrado de propiedades obsoletas que lanzaban excepciones.
 
 ## <a name="2900"></a>2.9.0.0
 Publicado el 20 de enero de 2021
@@ -88,26 +159,26 @@ Publicado el 20 de enero de 2021
 
 - **Integración:**
 
-  - Se ha agregado compatibilidad con `raytrace shaders` `UXML` `USS` los archivos y.
+  - Se ha agregado compatibilidad para archivos `raytrace shaders`, `UXML` y `USS`.
 
-  - API de mensajes de Unity actualizada (para todos los métodos usados como corrutinas).
+  - Se ha actualizado la API de mensajes de Unity (para todos los métodos utilizados como corrutinas).
 
-  - Detección de Android SDK actualizada.
+  - Se ha actualizado la detección del Android SDK.
 
 ### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Integración:**
 
-  - [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0006.md)Diagnóstico fijo, que emite advertencias equivocadas para las corutinas y `AssetPostprocessor.OnAssignMaterialModel` .
+  - Se ha corregido el diagnóstico [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0006.md), que daba avisos erróneos para corrutinas y `AssetPostprocessor.OnAssignMaterialModel`.
 
 ## <a name="2840"></a>2.8.4.0
-Publicado el 15 de diciembre de 2020
+Fecha de lanzamiento: 15 de diciembre de 2020
 
 ### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Integración:**
 
-  - Se corrigió un problema de confiabilidad al cerrar el Asistente para creación de eventos de Unity.
+  - Se ha corregido un problema de confiabilidad al cerrar el Asistente para creación de eventos de Unity.
 
 ## <a name="2830"></a>2.8.3.0
 Publicado el 10 de noviembre de 2020
@@ -116,43 +187,43 @@ Publicado el 10 de noviembre de 2020
 
 - **Depurador:**
 
-  - Se ha corregido la asociación a Unity aunque no haya ningún proyecto VSTU en la solución.
+  - Se ha corregido la asociación a Unity incluso si no hay ningún proyecto de VSTU en la solución.
 
 ## <a name="2820"></a>2.8.2.0
-Publicado el 27 de octubre de 2020
+Fecha de lanzamiento: 27 de octubre de 2020
 
 ### <a name="new-features"></a>Características nuevas
 
 - **Integración:**
 
-  - [`UNT0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0010.md)Diagnóstico mejorado que se aplica a todo lo que se hereda de `Component` , no solo `MonoBehaviour` .
+  - Se ha mejorado el diagnóstico para aplicarlo a [`UNT0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0010.md) todo lo que hereda de , no `Component` solo a `MonoBehaviour` .
 
 ## <a name="2810"></a>2.8.1.0
-Publicado el 13 de octubre de 2020
+Fecha de lanzamiento: 13 de octubre de 2020
 
 ### <a name="new-features"></a>Características nuevas
 
 - **Evaluación:**
 
-  - Compatibilidad agregada para la conversión implícita con las invocaciones. Anteriormente, el evaluador aplicó una comprobación estricta de tipos, lo que generaba `Failed to find a match for method([parameters...])` mensajes de advertencia.
+  - Se ha agregado compatibilidad para la conversión implícita con invocaciones. Anteriormente, el evaluador aplicaba una comprobación de tipos estricta, lo que generaba mensajes `Failed to find a match for method([parameters...])` de advertencia.
 
 - **Integración:**
 
-  - Se ha agregado el diagnóstico [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md). No debe utilizar `System.Reflection` características en mensajes críticos para el rendimiento como `Update` , `FixedUpdate` , `LateUpdate` o `OnGUI` .
+  - Se ha agregado el diagnóstico [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md). No debe usar características `System.Reflection` en mensajes críticos para el rendimiento `Update` como , , o `FixedUpdate` `LateUpdate` `OnGUI` .
 
-  - Mejoras [`USP0003`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0003.md) y [`USP0005`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0005.md) supresiones, con compatibilidad para todos los `AssetPostprocessor` métodos estáticos.
+  - [`USP0003`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0003.md)Supresores [`USP0005`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0005.md) y mejorados, con compatibilidad con todos los `AssetPostprocessor` métodos estáticos.
 
-  - Se ha agregado el supresor [`USP0016`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0016.md) para `CS8618`. `C# 8.0` introduce tipos de referencia que aceptan valores NULL y tipos de referencia que no aceptan valores NULL. No se admite la detección de inicialización de tipos que heredan de `UnityEngine.Object` y se producirán errores.
+  - Se ha agregado el supresor [`USP0016`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0016.md) para `CS8618`. `C# 8.0` introduce tipos de referencia que aceptan valores NULL y tipos de referencia que no aceptan valores NULL. No se admite la detección de inicialización de tipos heredados de `UnityEngine.Object` y provocará errores.
 
-  - Ahora con el mismo reproductor y el mismo mecanismo de generación de proyectos de asmdef para Unity 2019. x y 2020. x +.
+  - Ahora usa el mismo reproductor y el mismo mecanismo de generación de proyectos asmdef para Unity 2019.x y 2020.x+.
   
-  - Mejora en la experiencia del usuario al generar mensajes de Unity con un asistente.
+  - Experiencia de usuario mejorada al generar mensajes de Unity con un asistente.
 
 ### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Integración:**
 
-  - Se corrigió una finalización inesperada de mensajes en Comentarios.
+  - Se ha corregido la finalización inesperada de los mensajes en los comentarios.
 
 ## <a name="2800"></a>2.8.0.0 
 Publicado el 14 de septiembre de 2020
@@ -161,7 +232,7 @@ Publicado el 14 de septiembre de 2020
 
 - **Integración:**
 
-  - Se ha corregido la generación de proyectos de reproductor con Unity 2019. x.
+  - Se ha corregido la generación de proyectos de reproductor con Unity 2019.x.
 
 ## <a name="2710"></a>2.7.1.0
 Publicado el 5 de agosto de 2020

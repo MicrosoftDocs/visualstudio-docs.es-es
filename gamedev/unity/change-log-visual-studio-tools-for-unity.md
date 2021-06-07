@@ -2,7 +2,7 @@
 title: Registro de cambios (Visual Studio Tools para Unity, Windows) | Microsoft Docs
 description: Vea el registro de cambios de Visual Studio Tools para Unity, Windows. Vea los cambios de la versión 1.0.0.0 a la 4.7.0.0 y más allá.
 ms.custom: ''
-ms.date: 3/1/2021
+ms.date: 6/2/2021
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
@@ -12,16 +12,71 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: a03d0fc896fcbc971bc62cd9391c4f38d0aad06c
-ms.sourcegitcommit: 3e1ff87fba290f9e60fb4049d011bb8661255d58
+ms.openlocfilehash: 2ff13b017ffe0d310ddfd1b302c6436e9d708a36
+ms.sourcegitcommit: f430d014f912aa7874e1db65026dc72688b973e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107879387"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111448316"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Registro de cambios (Visual Studio Tools para Unity, Windows)
 
 Registro de cambios de Visual Studio Tools para Unity.
+
+## <a name="41020"></a>4.10.2.0
+Publicado el 25 de mayo de 2021
+
+### <a name="new-features"></a>Características nuevas
+
+- **Integración:**
+
+  - Se ha agregado el diagnóstico [`UNT0024`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0024.md). Dé prioridad a los cálculos escalares sobre los cálculos vectoriales.
+
+- **Evaluación:**
+
+  - Se ha agregado compatibilidad con el uso de símbolos pdb portátiles para filtrar correctamente las locales visibles.
+
+### <a name="bug-fixes"></a>Correcciones de errores
+
+- **Integración:**
+
+  - Estabilidad fija de la búsqueda de referencia de recursos.
+
+  - Se ha corregido el anuncio del reproductor de análisis con versiones recientes de Unity.
+
+## <a name="41010"></a>4.10.1.0
+Publicado el 11 de mayo de 2021
+
+### <a name="bug-fixes"></a>Correcciones de errores
+
+- **Integración:**
+
+  - Se han corregido problemas de estabilidad [`UNT0008`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0008.md) con corrección rápida.
+
+  - Se han corregido problemas de rendimiento con subprocesos.
+
+## <a name="41000"></a>4.10.0.0
+Fecha de lanzamiento: 13 de abril de 2021
+
+### <a name="new-features"></a>Características nuevas
+
+- **Integración:**
+
+  - Se ha agregado el diagnóstico [`UNT0019`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0019.md). Llamada de direccionamiento indirecto innecesario para `GameObject.gameObject` .
+
+  - Se ha agregado el diagnóstico [`UNT0020`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0020.md). `MenuItem` Atributo utilizado en el método no estático.
+
+  - Se ha agregado el diagnóstico [`UNT0021`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0021.md). El mensaje de Unity debe estar protegido (participar).
+
+  - Se ha agregado el diagnóstico [`UNT0022`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0022.md). Método ineficaz para establecer la posición y la rotación.
+
+  - Se ha agregado el diagnóstico [`UNT0023`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0023.md). Asignación de uso de coalescing en objetos de Unity.
+
+  - Se ha agregado el supresor [`USP0017`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0017.md) para `IDE0074`. Los objetos de Unity no deben usar la asignación de uso de coalescing.
+
+  - Se ha agregado la detección de proyectos de C# noflador destinados a Unity.
+
+  - Se ha agregado la búsqueda de referencia de recursos de Unity en CodeLens.
 
 ## <a name="4910"></a>4.9.1.0
 Fecha de lanzamiento: 2 de marzo de 2021
@@ -69,7 +124,7 @@ Publicado el 20 de enero de 2021
 
   - Se ha agregado compatibilidad para archivos `raytrace shaders`, `UXML` y `USS`.
 
-  - Se ha agregado `.vsconfig` compatibilidad de generación. Visual Studio detectar qué componentes faltan y solicitar que los instale al usar proyectos de Unity.
+  - Se ha agregado `.vsconfig` compatibilidad con la generación. Visual Studio detectar qué componentes faltan y pedirte que los instales al usar proyectos de Unity.
 
   - Se ha actualizado la API de mensajes de Unity (para todos los métodos utilizados como corrutinas).
 
@@ -84,19 +139,19 @@ Publicado el 20 de enero de 2021
   - Se ha corregido el diagnóstico [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0006.md), que daba avisos erróneos para corrutinas y `AssetPostprocessor.OnAssignMaterialModel`.
 
 ## <a name="4820"></a>4.8.2.0
-Fecha de lanzamiento: 10 de noviembre de 2020
+Publicado el 10 de noviembre de 2020
 
 ### <a name="new-features"></a>Características nuevas
 
 - **Integración:**
 
-  - Diagnóstico mejorado [`UNT0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0010.md) para aplicar a todo lo que hereda de , no solo a `Component` `MonoBehaviour` .
+  - Se ha mejorado el diagnóstico para aplicarlo a [`UNT0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0010.md) todo lo que hereda de , no `Component` solo a `MonoBehaviour` .
 
 ### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Integración:**
 
-  - Se ha corregido la invalidación del mensaje de CodeLens.
+  - Se ha corregido la invalidación de mensajes de CodeLens.
 
 ## <a name="4810"></a>4.8.1.0
 Fecha de lanzamiento: 13 de octubre de 2020
@@ -105,15 +160,15 @@ Fecha de lanzamiento: 13 de octubre de 2020
 
 - **Evaluación:**
 
-  - Se ha agregado compatibilidad para la conversión implícita con invocaciones. Anteriormente, el evaluador aplicaba la comprobación de tipos estricta, lo que generaba mensajes `Failed to find a match for method([parameters...])` de advertencia.
+  - Se ha agregado compatibilidad para la conversión implícita con invocaciones. Anteriormente, el evaluador aplicaba una comprobación de tipos estricta, lo que generaba mensajes `Failed to find a match for method([parameters...])` de advertencia.
 
 - **Integración:**
 
   - Se ha agregado el diagnóstico [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md). No debe usar características `System.Reflection` en mensajes críticos para el rendimiento `Update` como , , o `FixedUpdate` `LateUpdate` `OnGUI` .
 
-  - [`USP0003`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0003.md) [`USP0005`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0005.md) Supresores y mejorados, con compatibilidad con todos los `AssetPostprocessor` métodos estáticos.
+  - [`USP0003`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0003.md)Supresores [`USP0005`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0005.md) y mejorados, con compatibilidad con todos los `AssetPostprocessor` métodos estáticos.
 
-  - Se ha agregado el supresor [`USP0016`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0016.md) para `CS8618`. `C# 8.0` introduce tipos de referencia que aceptan valores NULL y tipos de referencia que no aceptan valores NULL. No se admite la detección de inicialización de tipos que heredan de `UnityEngine.Object` y provocará errores.
+  - Se ha agregado el supresor [`USP0016`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0016.md) para `CS8618`. `C# 8.0` introduce tipos de referencia que aceptan valores NULL y tipos de referencia que no aceptan valores NULL. No se admite la detección de inicialización de tipos heredados de `UnityEngine.Object` y provocará errores.
 
   - Ahora usa el mismo reproductor y el mismo mecanismo de generación de proyectos asmdef para Unity 2019.x y 2020.x+.
 
