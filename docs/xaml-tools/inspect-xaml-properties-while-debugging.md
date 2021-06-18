@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: 76edf9f1af414a67abd83cec3c2f597c6cdf8707
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 86310346566e8c937c2769a9fcc9f0d4e98b3ae2
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683452"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308446"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Inspeccionar las propiedades XAML durante la depuración
 
@@ -26,23 +26,23 @@ Puede usar estas herramientas en las siguientes configuraciones:
 |Tipo de aplicación|Sistema operativo y herramientas|
 |-----------------|--------------------------------|
 |Aplicaciones de Windows Presentation Foundation (4.0 y versiones posteriores)|Windows 7 y versiones posteriores|
-|Aplicaciones Windows universales|Windows 10 y versiones posteriores, con el [SDK de Windows 10](https://dev.windows.com/downloads/windows-10-sdk)|
+|Aplicaciones universales de Windows|Windows 10 y posteriores, con el [SDK de Windows 10](https://dev.windows.com/downloads/windows-10-sdk)|
 
-## <a name="look-at-elements-in-the-live-visual-tree"></a>Buscar elementos en el árbol visual dinámico
+## <a name="look-at-elements-in-the-live-visual-tree"></a>Buscar elementos en el árbol visual en directo
 
 Comencemos con una aplicación WPF muy sencilla que tiene una vista de lista y un botón. Al hacer clic en el botón, se agrega otro elemento a la lista. Los elementos con números pares se muestran en color gris, mientras que los elementos con números impares se muestran de color amarillo.
 
 ### <a name="create-the-project"></a>Creación del proyecto
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
-1. Cree una nueva aplicación WPF de c# (**archivo** > **nuevo** > **proyecto**, escriba "C# WPF", elija la plantilla de proyecto **aplicación WPF** , asigne al proyecto el nombre **TestXAML** y, a continuación, compruebe que **.net Core 3,1** aparece en la lista desplegable **plataforma de destino** .
+1. Cree una nueva aplicación WPF de C#**(** Archivo nuevo proyecto, escriba "C# WPF", elija la plantilla de proyecto Aplicación WPF, asigne al proyecto el nombre TestXAML y compruebe que >  >  **.NET Core 3.1**    aparece en la lista desplegable Plataforma de destino.
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-1. Cree una nueva aplicación WPF de c# (**archivo**  >  **nuevo**  >  **proyecto**, escriba "WPF de c#" y elija **aplicación WPF (.NET Framework)**). Asígnele el nombre **TestXAML**.
+1. Cree una nueva aplicación WPF de C#**(** Archivo nuevo proyecto , escriba "WPF de C# " y elija  >    >  Aplicación **WPF (.NET Framework).** Asígnele el nombre **TestXAML**.
 
 ::: moniker-end
 
@@ -85,9 +85,9 @@ Comencemos con una aplicación WPF muy sencilla que tiene una vista de lista y u
    }
    ```
 
-1. Compile la solución y comience la depuración. La configuración de compilación debe ser Depurar, no Liberar. Para obtener más información sobre las configuraciones de compilación, vea Descripción de las [configuraciones de compilación](../ide/understanding-build-configurations.md)).
+1. Compile la solución y comience la depuración. La configuración de compilación debe ser Depurar, no Liberar. Para obtener más información sobre las configuraciones de compilación, vea [Descripción de las configuraciones de compilación).](../ide/understanding-build-configurations.md)
 
-   Cuando aparezca la ventana, debería ver que la barra de herramientas de la aplicación aparece dentro de la aplicación en ejecución.
+   Cuando aparezca la ventana, debería ver que la barra de herramientas en la aplicación aparece dentro de la aplicación en ejecución.
 
    ::: moniker range=">= vs-2019"
    ![Ventana principal de la aplicación](../debugger/media/vs-2019/livevisualtree-app.png "LiveVIsualTree-App")
@@ -96,16 +96,16 @@ Comencemos con una aplicación WPF muy sencilla que tiene una vista de lista y u
    ![Ventana principal de la aplicación](../debugger/media/livevisualtree-app.png "LiveVIsualTree-App")
    ::: moniker-end
 
-1. Ahora, haga clic en el botón **Agregar elemento** varias veces para agregar nuevos elementos a la lista.
+1. Ahora, haga clic varias **veces en el botón Agregar** elemento para agregar nuevos elementos a la lista.
 
 ### <a name="inspect-xaml-properties"></a>Inspección de propiedades XAML
 
-1. A continuación, abra la ventana del **árbol visual activo** haciendo clic en el botón de la izquierda de la barra de herramientas en la aplicación (o vaya a **depurar > árbol Visual de Windows > Live**). Una vez abierta, arrástrela fuera de su posición de acoplamiento para que podamos ver esta ventana y la ventana **propiedades dinámicas** en paralelo.
+1. A continuación, abra la **ventana Árbol visual** en directo; para ello, haga clic en el botón izquierdo de la barra de herramientas de la aplicación (o vaya a Depurar > Windows > Live Visual **Tree**). Una vez abierto, arrástrelo fuera de su posición de acoplamiento para que podamos ver esta ventana y la ventana **Propiedades** activas en paralelo.
 
 1. En la ventana **Árbol visual dinámico**, expanda el nodo **ContentPresenter**. Debe contener nodos para el botón y el cuadro de lista. Expanda el cuadro de lista (y luego **ScrollContentPresenter** e **ItemsPresenter**) para buscar los elementos del cuadro de lista.
 
    ::: moniker range=">= vs-2019"
-   Si no ve el nodo **ContentPresenter** , alterne el icono **Mostrar solo mi XAML** en la barra de herramientas. A partir de la versión 16,4 de Visual Studio 2019, la vista de los elementos XAML se simplifica de forma predeterminada mediante la característica solo mi XAML. También puede [deshabilitar esta opción](../debugger/general-debugging-options-dialog-box.md) en opciones para mostrar siempre todos los elementos XAML.
+   Si no ve el nodo **ContentPresenter,** alterne el icono **Mostrar solo mi XAML** en la barra de herramientas. A partir Visual Studio versión 16.4 de 2019, la vista de elementos XAML se simplifica de forma predeterminada mediante la característica XAML Just My. También puede deshabilitar [esta configuración en opciones](../debugger/general-debugging-options-dialog-box.md) para mostrar siempre todos los elementos XAML.
    ::: moniker-end
 
    La ventana debe ser similar a la que se muestra a continuación:
@@ -121,23 +121,23 @@ Comencemos con una aplicación WPF muy sencilla que tiene una vista de lista y u
 
 1. Ahora, echemos un vistazo a las propiedades de uno de los elementos del cuadro de lista.
 
-   Seleccione el primer elemento del cuadro de lista de **Live Visual Tree** y haga clic en el icono **Mostrar propiedades** de la barra de herramientas. Debería aparecer **Live Property Explorer**. Tenga en cuenta que el campo de **contenido** es "Item1" y el campo de color de **fondo**  >   es **#FFFFFFE0**.
+   Seleccione el primer elemento del cuadro de lista de **Live Visual Tree** y haga clic en el icono **Mostrar propiedades** de la barra de herramientas. Debería aparecer **Live Property Explorer**. Tenga en cuenta **que el campo** Contenido es "Item1" y que el campo **Color**  >  **de** **fondo #FFFFFFE0**.
 
-1. Vuelva a **Live Visual Tree** y seleccione el segundo elemento del cuadro de lista. El **Explorador de propiedades activo** debe mostrar que el campo de **contenido** es "Item2" y el campo de color de **fondo**  >   es **#FFD3D3D3** (dependiendo del tema).
+1. Vuelva a **Live Visual Tree** y seleccione el segundo elemento del cuadro de lista. El **Explorador de propiedades en** directo debe mostrar que el campo **Contenido** es "Item2" y que el campo **Color** de  >   **fondo #FFD3D3D3** (según el tema).
 
    > [!NOTE]
-   > Un borde amarillo alrededor de una propiedad en el **Explorador de propiedades activo** significa que el valor de la propiedad se establece a través de un enlace, como `Color = {BindingExpression}` . Un borde verde significa que el valor se establece mediante un recurso, como `Color = {StaticResource MyBrush}` .
+   > Un borde amarillo alrededor de una propiedad en **el Explorador de propiedades live** significa que el valor de propiedad se establece a través de un enlace, como `Color = {BindingExpression}` . Un borde verde significa que el valor se establece mediante un recurso, como `Color = {StaticResource MyBrush}` .
 
    La estructura real del XAML tiene muchos elementos que probablemente no le interesen, y si no conoce bien el código tal vez tenga que perder bastante tiempo navegando por el árbol para encontrar lo que está buscando. **Live Visual Tree** tiene un par de maneras que le permiten usar la interfaz de usuario de la aplicación para poder encontrar el elemento que desea examinar.
 
    ::: moniker range=">= vs-2019"
-   **Seleccione el elemento en la aplicación en ejecución**. Puede habilitar este modo al seleccionar el botón situado más a la izquierda de la barra de herramientas de **Live Visual Tree**. Con este modo activado puede seleccionar un elemento de interfaz de usuario en la aplicación; **Live Visual Tree** (y **Live Property Viewer**) se actualiza automáticamente para mostrar el nodo en el árbol correspondiente a dicho elemento y sus propiedades. A partir de la versión 16,4 de Visual Studio 2019, puede [configurar el comportamiento de la selección de elementos](../debugger/general-debugging-options-dialog-box.md).
+   **Seleccione el elemento en la aplicación en ejecución.** Puede habilitar este modo al seleccionar el botón situado más a la izquierda de la barra de herramientas de **Live Visual Tree**. Con este modo activado puede seleccionar un elemento de interfaz de usuario en la aplicación; **Live Visual Tree** (y **Live Property Viewer**) se actualiza automáticamente para mostrar el nodo en el árbol correspondiente a dicho elemento y sus propiedades. A partir Visual Studio versión 16.4 de 2019, puede configurar el comportamiento de [la selección de elementos](../debugger/general-debugging-options-dialog-box.md).
 
-   **Mostrar adornos de diseño en la aplicación en ejecución**. Puede habilitar este modo al seleccionar el botón que está justo a la derecha del botón Habilitar selección. Cuando la opción **Mostrar adornos de diseño** está activada, la ventana de la aplicación muestra líneas horizontales y verticales a lo largo de los límites del objeto seleccionado para que pueda ver lo que alinea, así como rectángulos que muestran los márgenes. Por ejemplo, active la **opción Seleccionar elemento** y **Mostrar diseño** en y seleccione el bloque de texto **Agregar elemento** en la aplicación. Debería ver el nodo del bloque de texto en **Live Visual Tree** y las propiedades del bloque de texto en **Live Property Viewer**, así como las líneas horizontales y verticales en los límites del bloque de texto.
+   **Mostrar adornos de diseño en la aplicación en ejecución**. Puede habilitar este modo al seleccionar el botón que está justo a la derecha del botón Habilitar selección. Cuando la opción **Mostrar adornos de diseño** está activada, la ventana de la aplicación muestra líneas horizontales y verticales a lo largo de los límites del objeto seleccionado para que pueda ver lo que alinea, así como rectángulos que muestran los márgenes. Por ejemplo, active **el elemento Seleccionar y** mostrar **diseño** y seleccione el bloque de texto **Agregar** elemento en la aplicación. Debería ver el nodo del bloque de texto en **Live Visual Tree** y las propiedades del bloque de texto en **Live Property Viewer**, así como las líneas horizontales y verticales en los límites del bloque de texto.
 
    ![LivePropertyViewer en DisplayLayout](../debugger/media/vs-2019/livevisualtreelivepropertyviewer-displaylayout.png "LiveVisualTreeLivePropertyViewer-DisplayLayout")
 
-   **Obtener una vista previa de la selección**. Puede habilitar este modo seleccionando el tercer botón de la izquierda en la barra de herramientas de Live Visual Tree. Este modo muestra el XAML donde se ha declarado el elemento, siempre y cuando tenga acceso al código fuente de la aplicación. Seleccione **Seleccionar elemento** y **vista previa** y, a continuación, seleccione el botón en nuestra aplicación de prueba. Se abre el archivo MainWindow.xaml en Visual Studio y se coloca el cursor en la línea en la que se define el botón.
+   **Obtener una vista previa de la selección**. Puede habilitar este modo seleccionando el tercer botón de la izquierda en la barra de herramientas de Live Visual Tree. Este modo muestra el XAML donde se ha declarado el elemento, siempre y cuando tenga acceso al código fuente de la aplicación. Seleccione **Select element (Seleccionar** **elemento) y Preview selection**(Vista previa) y, a continuación, seleccione el botón en nuestra aplicación de prueba. Se abre el archivo MainWindow.xaml en Visual Studio y se coloca el cursor en la línea en la que se define el botón.
    ::: moniker-end
 
    ::: moniker range="vs-2017"
@@ -150,7 +150,7 @@ Comencemos con una aplicación WPF muy sencilla que tiene una vista de lista y u
    **Obtener una vista previa de la selección**. Puede habilitar este modo seleccionando el tercer botón de la izquierda en la barra de herramientas de Live Visual Tree. Este modo muestra el XAML donde se ha declarado el elemento, siempre y cuando tenga acceso al código fuente de la aplicación. Seleccione **Habilitar selección** y **Obtener una vista previa de la selección** y, luego, seleccione el botón de nuestra aplicación de prueba. Se abre el archivo MainWindow.xaml en Visual Studio y se coloca el cursor en la línea en la que se define el botón.
    ::: moniker-end
 
-## <a name="use-xaml-tools-with-running-applications"></a>Usar herramientas XAML con aplicaciones en ejecución
+## <a name="use-xaml-tools-with-running-applications"></a>Uso de herramientas XAML con aplicaciones en ejecución
 
 Puede usar estas herramientas XAML, aunque no disponga del código fuente. Al adjuntar a una aplicación XAML en ejecución, también puede usar **Live Visual Tree** en los elementos de interfaz de usuario de la aplicación. Esto es un ejemplo, en el que se ha usado la misma aplicación de prueba WPF que hemos usado antes.
 
@@ -162,6 +162,6 @@ Puede usar estas herramientas XAML, aunque no disponga del código fuente. Al ad
 
 4. En la segunda instancia de Visual Studio, abra **Live Visual Tree** (**Depurar > Ventanas > Live Visual Tree**). Debería ver los elementos de interfaz de usuario **TestXaml** y debería poder manipularlos como lo hizo al depurar directamente la aplicación.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
-[Escribir y depurar código XAML en ejecución con recarga activa de XAML](xaml-hot-reload.md)
+[Escritura y depuración de código XAML en ejecución con Recarga activa de XAML](xaml-hot-reload.md)
