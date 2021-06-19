@@ -1,30 +1,30 @@
 ---
 title: Directiva de salida T4
-description: Aprenda que en las plantillas de texto de Visual Studio, la Directiva de salida se usa para definir la extensión de nombre de archivo y la codificación del archivo transformado.
+description: Obtenga información sobre Visual Studio plantillas de texto, la directiva de salida se usa para definir la extensión de nombre de archivo y la codificación del archivo transformado.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 58e7c255d767e9b35764e03a76f9cda516dbe606
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8105edc57e68aa7cedcb612ec4f6bcd0ef367d2f
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899599"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386116"
 ---
 # <a name="t4-output-directive"></a>Directiva de salida T4
 
-En las plantillas de texto de Visual Studio, la `output` Directiva se usa para definir la extensión de nombre de archivo y la codificación del archivo transformado.
+En Visual Studio de texto, la directiva se usa para definir la extensión de nombre de archivo y `output` la codificación del archivo transformado.
 
- Por ejemplo, si el proyecto de Visual Studio incluye un archivo de plantilla denominado **MyTemplate.TT** que contiene la siguiente directiva:
+ Por ejemplo, si el proyecto Visual Studio incluye un archivo de plantilla **denominado MyTemplate.tt** que contiene la directiva siguiente:
 
  `<#@output extension=".cs"#>`
 
- después, Visual Studio generará un archivo denominado **MyTemplate.CS**
+ a Visual Studio generará un archivo denominado **MyTemplate.cs**
 
  La directiva de `output` no es necesaria en una plantilla de texto en tiempo de ejecución (preprocesada), ya que, en su lugar, la aplicación obtiene la cadena generada llamando a `TextTransform()`. Para obtener más información, vea [Generación de texto en tiempo de ejecución con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
@@ -39,7 +39,7 @@ En las plantillas de texto de Visual Studio, la `output` Directiva se usa para d
 ## <a name="extension-attribute"></a>atributo de extensión
  Especifica la extensión de nombre del archivo de salida de texto generado.
 
- El valor predeterminado es **. CS**
+ El valor predeterminado es **.cs**
 
  Ejemplos: `<#@ output extension=".txt" #>`
 
@@ -51,7 +51,7 @@ En las plantillas de texto de Visual Studio, la `output` Directiva se usa para d
 
  Valores aceptables: cualquier extensión de nombre de archivo válida.
 
-## <a name="encoding-attribute"></a>atributo Encoding
+## <a name="encoding-attribute"></a>atributo de codificación
  Especifica la codificación que se va a usar cuando el archivo de salida se genera. Por ejemplo:
 
  `<#@ output encoding="utf-8"#>`

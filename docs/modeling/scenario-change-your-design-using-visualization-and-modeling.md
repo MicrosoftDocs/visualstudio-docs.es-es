@@ -11,25 +11,25 @@ helpviewer_keywords:
 - walkthrough [Visual Studio ALM], visualizing code
 - walkthrough [Visual Studio ALM], modeling software
 - walkthroughs [Visual Studio ALM], modeling software
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 ms.custom: SEO-VS-2020
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 79f131276172a9df91dd8408149fae66a2f28ca9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 05cdd769a59c4101fbc05a7e51893752e2532f42
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938049"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385830"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Escenario: Cambiar el diseño usando modelado y visualización
 
 Asegúrese de que su sistema de software cumple las necesidades de los usuarios mediante las herramientas de visualización y modelado de Visual Studio.
 Use herramientas como mapas de código, diagramas de dependencia y diagramas de clases para:
 
-Para ver qué versiones de Visual Studio admite cada herramienta, vea [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Para ver qué versiones de Visual Studio admite cada herramienta, vea [Version support for architecture and modeling tools](../modeling/analyze-and-model-your-architecture.md#VersionSupport).
 
 - Aclarar los requisitos y procesos de negocio de los usuarios.
 
@@ -112,7 +112,7 @@ Ambos equipos también usan la validación de dependencia para asegurarse de que
 - [Validación código con diagramas de dependencia](../modeling/validate-code-with-layer-diagrams.md)
 
 > [!NOTE]
-> Algunas versiones de Visual Studio admiten validación de dependencia, versiones de solo lectura de mapas de código para visualización y modelado. Para ver qué ediciones de Visual Studio admiten esta característica, consulte [Compatibilidad de ediciones con las herramientas de arquitectura y modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+> Algunas versiones de Visual Studio admiten validación de dependencia, versiones de solo lectura de mapas de código para visualización y modelado. Para ver qué ediciones de Visual Studio admiten esta característica, consulte [Compatibilidad de ediciones con las herramientas de arquitectura y modelado](../modeling/analyze-and-model-your-architecture.md#VersionSupport).
 
 ## <a name="understand-and-communicate-information-about-the-system"></a>Comprensión y comunicación de información sobre el sistema
 

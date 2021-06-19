@@ -1,38 +1,38 @@
 ---
-title: 'Cómo: agregar un comando al menú contextual'
-description: Obtenga información acerca de cómo puede Agregar comandos de menú a un lenguaje específico de dominio (DSL) para que los usuarios puedan realizar tareas específicas de su DSL.
+title: 'Cómo: Agregar un comando al menú contextual'
+description: Obtenga información sobre cómo puede agregar comandos de menú a su lenguaje específico de dominio (DSL) para que los usuarios puedan realizar tareas específicas del DSL.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
 - Domain-Specific Language Tools, walkthroughs
 - walkthroughs [Domain-Specific Language Tools]
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 063c0a5cfcf5136e53750e4405e8619bf3154ee2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4b578c949b3b5121eb90b2c034766ea15ae6d096
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963307"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386571"
 ---
-# <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Cómo: agregar un comando al menú contextual
+# <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Cómo: Agregar un comando al menú contextual
 
 Puede agregar comandos de menú a su lenguaje específico de dominio (DSL) para que sus usuarios puedan realizar tareas específicas de su DSL. Los comandos aparecen en el menú contextual cuando los usuarios hacen clic con el botón secundario en el diagrama. Puede definir un comando para que solo aparezca en el menú en circunstancias específicas. Por ejemplo, puede hacer que el comando sea visible solo cuando el usuario haga clic en tipos específicos de elementos, o en elementos con unos estados determinados.
 
-En Resumen, los pasos se realizan en el proyecto DslPackage de la siguiente manera:
+En resumen, los pasos se realizan en el proyecto DslPackage como se muestra a continuación:
 
-1. [Declare el comando en Commands. Vsct](#VSCT)
+1. [Declare el comando en Commands.vsct.](#VSCT)
 
-2. [Actualice el número de versión del paquete en package.TT](#version). Tiene que hacerlo siempre que cambie Commands.vsct
+2. [Actualice el número de versión del paquete en Package.tt](#version). Tiene que hacerlo siempre que cambie Commands.vsct
 
-3. [Escriba los métodos en la clase CommandSet](#CommandSet) para que el comando sea visible y para definir lo que desea que haga el comando.
+3. [Escriba métodos en la clase CommandSet](#CommandSet) para que el comando sea visible y para definir lo que quiere que haga el comando.
 
 > [!NOTE]
-> También puede modificar el comportamiento de algunos comandos existentes, como Cortar, Pegar, Seleccionar todo e Imprimir invalidando los métodos en CommandSet.cs. Para obtener más información, vea [Cómo: modificar un comando de menú estándar](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
+> También puede modificar el comportamiento de algunos comandos existentes, como Cortar, Pegar, Seleccionar todo e Imprimir invalidando los métodos en CommandSet.cs. Para obtener más información, [vea Cómo: Modificar un comando de menú estándar](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
 ## <a name="define-a-command-using-mef"></a>Definición de un comando mediante MEF
 
@@ -48,20 +48,20 @@ Use el método de este tema si:
 
 4. Solo quiere definir un comando.
 
-   En otros casos, considere usar el método MEF para definir comandos. Para obtener más información, consulte [extensión de DSL mediante MEF](../modeling/extend-your-dsl-by-using-mef.md).
+   En otros casos, considere usar el método MEF para definir comandos. Para obtener más información, [vea Extend your DSL by using MEF (Extensión del DSL mediante MEF).](../modeling/extend-your-dsl-by-using-mef.md)
 
-## <a name="declare-the-command-in-commandsvsct"></a><a name="VSCT"></a> Declare el comando en Commands. Vsct
+## <a name="declare-the-command-in-commandsvsct"></a><a name="VSCT"></a> Declarar el comando en Commands.Vsct
  Los comandos de menú se declaran en DslPackage\Commands.vsct. Estas definiciones especifican las etiquetas de los elementos de menú y dónde aparecen en los menús.
 
- El archivo que se edita, Commands. Vsct, importa definiciones de varios archivos. h, que se encuentran en la ruta de instalación de directorio de *Visual Studio SDK*\VisualStudioIntegration\Common\Inc. También incluye GeneratedVsct. Vsct, que se genera a partir de la definición de DSL.
+ El archivo que edite, Commands.vsct, importa definiciones de varios archivos .h, que se encuentran en la ruta de instalación del SDK de *Visual Studio*\VisualStudioIntegration\Common\Inc. También incluye GeneratedVsct.vsct, que se genera a partir de la definición de DSL.
 
- Para obtener más información acerca de los archivos. Vsct, consulte [tabla de comandos de Visual Studio (. Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
+ Para obtener más información sobre los archivos .vsct, [vea Visual Studio tabla de comandos (. Vsct) Archivos](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
 ### <a name="to-add-the-command"></a>Para agregar el comando
 
-1. En **Explorador de soluciones**, en el proyecto **DslPackage** , abra Commands. Vsct.
+1. En **Explorador de soluciones**, en el **proyecto DslPackage,** abra Commands.vsct.
 
-2. En el elemento `Commands`, defina uno o varios botones y un grupo. Un *botón* es un elemento del menú. Un *Grupo* es una sección del menú. Para definir estos elementos, agregue lo siguiente:
+2. En el elemento `Commands`, defina uno o varios botones y un grupo. Un *botón* es un elemento del menú. Un *grupo* es una sección del menú. Para definir estos elementos, agregue lo siguiente:
 
     ```xml
     <!-- Define a group - a section in the menu -->
@@ -88,9 +88,9 @@ Use el método de este tema si:
     ```
 
     > [!NOTE]
-    > Cada botón o grupo se identifica por un GUID y un identificador entero. Puede crear varios grupos y botones con el mismo GUID. Sin embargo, sus identificadores deben ser diferentes. Los nombres de GUID y los nombres de identificador se traducen a los GUID reales y a los identificadores numéricos en el `<Symbols>` nodo.
+    > Cada botón o grupo se identifica por un GUID y un identificador entero. Puede crear varios grupos y botones con el mismo GUID. Sin embargo, sus identificadores deben ser diferentes. Los nombres guid y los nombres de identificador se traducen a GUID reales e identificadores numéricos en el `<Symbols>` nodo.
 
-3. Agregue una restricción de visibilidad para el comando de manera que se cargue solo en el contexto de su lenguaje específico de dominio. Para obtener más información, consulte [elemento VisibilityConstraints](../extensibility/visibilityconstraints-element.md).
+3. Agregue una restricción de visibilidad para el comando de manera que se cargue solo en el contexto de su lenguaje específico de dominio. Para obtener más información, [vea Elemento VisibilityConstraints](../extensibility/visibilityconstraints-element.md).
 
      Para ello, agregue los siguientes elementos en el elemento `CommandTable`, después del elemento `Commands`.
 
@@ -102,7 +102,7 @@ Use el método de este tema si:
     </VisibilityConstraints>
     ```
 
-4. Defina los nombres que usó para los GUID e identificadores. Para ello, agregue un elemento `Symbols` en el elemento `CommandTable`, después del elemento `Commands`.
+4. Defina los nombres que usó para los GUID y los ID. Para ello, agregue un elemento `Symbols` en el elemento `CommandTable`, después del elemento `Commands`.
 
     ```xml
     <Symbols>
@@ -115,7 +115,7 @@ Use el método de este tema si:
     </Symbols>
     ```
 
-5. Reemplace `{000...000}` por un GUID que identifique los grupos y elementos de menú. Para obtener un nuevo GUID, use la herramienta **crear GUID** en el menú **herramientas** .
+5. Reemplace `{000...000}` por un GUID que identifique los grupos y elementos de menú. Para obtener un nuevo GUID, use la **herramienta Crear GUID** en el **menú** Herramientas.
 
     > [!NOTE]
     > Para agregar más grupos o elementos de menú, puede usar el mismo GUID. Sin embargo, debe usar nuevos valores para `IDSymbols`.
@@ -137,7 +137,7 @@ Use el método de este tema si:
 
 ### <a name="to-update-the-packagett-file"></a>Para actualizar el archivo Package.tt
 
-1. En **Explorador de soluciones**, en el proyecto **DslPackage** , en la carpeta **GeneratedCode** , abra el archivo package.TT.
+1. En **Explorador de soluciones**, en el **proyecto DslPackage,** en la **carpeta GeneratedCode,** abra el Package.tt archivo .
 
 2. Busque el atributo `ProvideMenuResource`.
 
@@ -147,7 +147,7 @@ Use el método de este tema si:
 
 ## <a name="define-the-behavior-of-the-command"></a><a name="CommandSet"></a> Definir el comportamiento del comando
 
-Su DSL ya tiene algunos comandos que se implementan en una clase parcial que se declara en DslPackage\GeneratedCode\CommandSet.cs. Para agregar nuevos comandos, debe extender esta clase creando un nuevo archivo que contenga una declaración parcial de la misma clase. Normalmente, el nombre de la clase es *\<YourDslName>* `CommandSet` . Es útil comenzar comprobando el nombre de la clase e inspeccionando su contenido.
+Su DSL ya tiene algunos comandos que se implementan en una clase parcial que se declara en DslPackage\GeneratedCode\CommandSet.cs. Para agregar nuevos comandos, debe extender esta clase creando un nuevo archivo que contenga una declaración parcial de la misma clase. El nombre de la clase suele ser *\<YourDslName>* `CommandSet` . Es útil comenzar comprobando el nombre de la clase e inspeccionando su contenido.
 
 La clase de conjunto de comandos deriva de <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.
 
@@ -159,7 +159,7 @@ La clase de conjunto de comandos deriva de <xref:Microsoft.VisualStudio.Modeling
 
      `{ ...  internal partial class Language1CommandSet : ...`
 
-2. En **DslPackage**, cree una carpeta denominada **código personalizado**. En esta carpeta, cree un nuevo archivo de clase denominado `CommandSet.cs` .
+2. En **DslPackage**, cree una carpeta denominada **Código personalizado**. En esta carpeta, cree un nuevo archivo de clase denominado `CommandSet.cs` .
 
 3. En el nuevo archivo, escriba una declaración parcial que tenga el mismo espacio de nombres y nombre que la clase parcial generada. Por ejemplo:
 
@@ -192,10 +192,10 @@ namespace Company.Language1 /* Make sure this is correct */
   {
 ```
 
-Debe definir dos métodos, uno para determinar cuándo estará visible el comando en el menú contextual (contexto) y el otro para ejecutar el comando. Estos métodos no son invalidaciones; se registran en una lista de comandos.
+Debe definir dos métodos, uno para determinar cuándo estará visible el comando en el menú contextual y el otro para realizar el comando. Estos métodos no son invalidaciones; se registran en una lista de comandos.
 
 ### <a name="define-when-the-command-will-be-visible"></a>Definir cuándo será visible el comando
- Para cada comando, defina un `OnStatus...` método que determine si el comando aparecerá en el menú y si se habilitará o se atenuará. Establezca las `Visible` `Enabled` propiedades y de `MenuCommand` , como se muestra en el ejemplo siguiente. Se llama a este método para construir el menú contextual cada vez que el usuario hace clic con el botón secundario en el diagrama, por lo que debe trabajar rápidamente.
+ Para cada comando, defina un método que determine si el comando aparecerá en el menú y si se habilitará o `OnStatus...` aparecerá en gris. Establezca las `Visible` propiedades y de , como se muestra en el ejemplo `Enabled` `MenuCommand` siguiente. Se llama a este método para construir el menú contextual cada vez que el usuario hace clic con el botón secundario en el diagrama, por lo que debe trabajar rápidamente.
 
  En este ejemplo, el comando solo está visible cuando el usuario ha seleccionado un tipo de forma determinado, y solo se habilita cuando al menos uno de los elementos seleccionados está en un estado determinado. El ejemplo se basa en la plantilla de diagrama de clases de DSL, y ClassShape y ModelClass son tipos que se definen en el DSL:
 
@@ -224,15 +224,15 @@ Los siguientes fragmentos suelen resultar útiles en los métodos OnStatus:
 
 - `this.CurrentSelection`. La forma en la que el usuario hizo clic con el botón secundario se incluye siempre en esta lista. Si el usuario hace clic en una parte en blanco del diagrama, el diagrama es el único miembro de la lista.
 
-- `this.IsDiagramSelected()` - `true` Si el usuario hizo clic en una parte en blanco del diagrama.
+- `this.IsDiagramSelected()` - `true` si el usuario hizo clic en una parte en blanco del diagrama.
 
 - `this.IsCurrentDiagramEmpty()`
 
-- `this.IsSingleSelection()` -el usuario no seleccionó varios objetos
+- `this.IsSingleSelection()` : el usuario no ha seleccionado varios objetos
 
-- `this.SingleSelection` -la forma o el diagrama en el que el usuario hizo clic con el botón secundario
+- `this.SingleSelection` : la forma o diagrama en el que el usuario hizo clic con el botón derecho
 
-- `shape.ModelElement as MyLanguageElement` : elemento de modelo representado por una forma.
+- `shape.ModelElement as MyLanguageElement` : el elemento de modelo representado por una forma.
 
 Como regla general, haga que la propiedad `Visible` dependa de lo que se ha seleccionado y haga que la propiedad `Enabled` dependa del estado de los elementos seleccionados.
 
@@ -241,7 +241,7 @@ Un método OnStatus no debería cambiar el estado del almacén.
 ### <a name="define-what-the-command-does"></a>Definir la acción del comando
  Para cada comando, defina un método `OnMenu...` que realice la acción necesaria cuando el usuario haga clic en el comando de menú.
 
- Si realiza cambios en los elementos de modelo, debe hacerlo dentro de una transacción. Para obtener más información, vea [Cómo: modificar un comando de menú estándar](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
+ Si realiza cambios en los elementos de modelo, debe hacerlo dentro de una transacción. Para obtener más información, [vea Cómo: Modificar un comando de menú estándar](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
  En este ejemplo, `ClassShape`, `ModelClass` y `Comment` son tipos que se definen en el DSL, y derivan de la plantilla de diagrama de clases de DSL.
 
@@ -282,7 +282,7 @@ private void OnMenuMyContextMenuCommand(object sender, EventArgs e)
 }
 ```
 
- Para obtener más información sobre Cómo desplazarse de un objeto a otro en el modelo y sobre cómo crear objetos y vínculos, vea [Cómo: modificar un comando de menú estándar](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
+ Para obtener más información sobre cómo navegar de un objeto a un objeto en el modelo y sobre cómo crear objetos y vínculos, vea [Cómo:](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)Modificar un comando de menú estándar .
 
 ### <a name="register-the-command"></a>Registrar el comando
  Repita en C# las declaraciones de los valores de los GUID e identificadores que realizó en la sección Symbols de CommandSet.vsct:
@@ -294,12 +294,12 @@ private const int grpidMyMenuGroup = 0x01001;
 private const int cmdidMyContextMenuCommand = 1;
 ```
 
- Use el mismo valor de GUID que insertó en **Commands. Vsct**.
+ Use el mismo valor GUID que insertó en **Commands.vsct.**
 
 > [!NOTE]
 > Si cambia la sección Symbols del archivo VSCT, debe cambiar también estas declaraciones para que coincidan. También debe incrementar el número de versión en Package.tt
 
- Registre los comandos de menú como parte de este conjunto de comandos. `GetMenuCommands()` se llama una vez cuando se inicializa el diagrama:
+ Registre los comandos de menú como parte de este conjunto de comandos. `GetMenuCommands()` Se llama a una vez cuando se inicializa el diagrama:
 
 ```csharp
 protected override IList<MenuCommand> GetMenuCommands()
@@ -323,15 +323,15 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 ### <a name="to-exercise-the-command"></a>Para probar el comando
 
-1. En la barra de herramientas **Explorador de soluciones** , haga clic en **transformar todas las plantillas**.
+1. En la barra **Explorador de soluciones** herramientas, haga clic **en Transformar todas las plantillas.**
 
-2. Presione **F5** para volver a compilar la solución e iniciar la depuración del lenguaje específico de dominio en la compilación experimental.
+2. Presione **F5** para recompilar la solución e iniciar la depuración del lenguaje específico del dominio en la compilación experimental.
 
 3. En la compilación experimental, abra un diagrama de muestra.
 
 4. Haga clic con el botón secundario en varios elementos del diagrama para comprobar que el comando aparece correctamente habilitado o deshabilitado, y que se muestra o se oculta correctamente según el elemento seleccionado.
 
-## <a name="troubleshoot"></a>Solucionar problemas
+## <a name="troubleshoot"></a>Solución de problemas
 
 **El comando no aparece en el menú:**
 
@@ -339,11 +339,11 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 - Asegúrese de que la muestra experimental tiene la extensión de nombre de archivo correcta para este DSL. Para comprobar la extensión de nombre de archivo, abra DslDefinition.dsl en la instancia principal de Visual Studio. Después, en DSL Explorer (Explorador de DSL), haga clic en el nodo Editor y en Properties (Propiedades). En la ventana Properties (Propiedades), haga clic en la propiedad FileExtension.
 
-- ¿Ha [aumentado el número de versión del paquete](#version)?
+- ¿Ha [incrementado el número de versión del paquete?](#version)
 
 - Establezca un punto de interrupción al principio del método OnStatus. Debería interrumpirse al hacer clic con el botón secundario en cualquier parte del diagrama.
 
-**No se llama al método de estado**:
+**El método OnStatus no se denomina**:
 
 - Asegúrese de que los GUID e identificadores de su código de CommandSet coinciden con los de la sección Symbols de Commands.vsct.
 
@@ -353,7 +353,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 - Recorra el método OnStatus para comprobar que el valor de command.Visible y command.Enabled es True.
 
-**Aparece un texto de menú incorrecto o el comando aparece en el lugar equivocado**:
+**Aparece un texto de menú incorrecto o el comando aparece en el lugar incorrecto:**
 
 - Asegúrese de que la combinación de GUID e identificador sea única para este comando.
 
@@ -361,9 +361,9 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 ## <a name="see-also"></a>Vea también
 
-- [Escribir código para personalizar lenguajes específicos de dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-- [Cómo: modificar un comando de menú estándar](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
-- [Implementación de soluciones de lenguajes específicos de dominio](msi-and-vsix-deployment-of-a-dsl.md)
-- [Código de ejemplo: diagramas de circuitos](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+- [Escritura de código para personalizar un lenguaje específico del dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+- [Cómo: Modificar un comando de menú estándar](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
+- [Implementación de soluciones de lenguaje específicas del dominio](msi-and-vsix-deployment-of-a-dsl.md)
+- [Código de ejemplo: Diagramas de circuito](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

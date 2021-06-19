@@ -1,7 +1,7 @@
 ---
 title: Introducción a Visual Studio Tools para Unity | Microsoft Docs
 description: Obtenga información sobre cómo instalar y configurar Visual Studio desarrollo de Unity.
-ms.custom: ''
+ms.custom: acquisition
 ms.date: 01/27/2021
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
@@ -13,12 +13,12 @@ manager: crdun
 ms.workload:
 - unity
 zone_pivot_groups: platform
-ms.openlocfilehash: 791f25b61c86f0115c225d505bdb1edb07869961
-ms.sourcegitcommit: 69256dc47489853dc66a037f5b0c1275977540c0
+ms.openlocfilehash: 8eea998731c4d29e533d1e6bf21d4a2870a81ff5
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109782613"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386701"
 ---
 # <a name="get-started-with-visual-studio-and-unity"></a>Introducción a Visual Studio y Unity
 
@@ -32,7 +32,7 @@ Visual Studio Tools para Unity es una extensión gratuita que proporciona compat
 :::zone pivot="windows"
 
 > [!NOTE]
-> Esta guía de instalación es para Visual Studio. Si usa Visual Studio Code, visite la documentación de [desarrollo de Unity con VS Code .](https://code.visualstudio.com/docs/other/unity)
+> Esta guía de instalación es para Visual Studio. Si usa Visual Studio Code, visite desarrollo de [Unity con VS Code documentación](https://code.visualstudio.com/docs/other/unity).
 
 1. [Descargue el Visual Studio o](/visualstudio/install/install-visual-studio.md)ejecute si ya está instalado.
 2. Haga clic en **Modificar** (si ya está instalado) o en **Instalar** (si es una nueva instalación) para la versión de Visual Studio que prefiera.
@@ -44,7 +44,7 @@ Visual Studio Tools para Unity es una extensión gratuita que proporciona compat
 :::zone pivot="macos"
 
 > [!NOTE]
-> Esta guía de instalación es para Visual Studio para Mac. Si usa Visual Studio Code, visite la documentación de [desarrollo de Unity con VS Code .](https://code.visualstudio.com/docs/other/unity)
+> Esta guía de instalación es para Visual Studio para Mac. Si usa Visual Studio Code, visite desarrollo de [Unity con VS Code documentación](https://code.visualstudio.com/docs/other/unity).
 
 Las herramientas para Unity se incluyen con la instalación de Visual Studio para Mac y no se requieren pasos de instalación independientes. Puede comprobarlo en el menú **Visual Studio para Mac > Extensiones > game development (Desarrollo de juegos).** **Visual Studio para Mac Tools for Unity** debe estar habilitado.
 
@@ -58,7 +58,7 @@ Se recomienda mantener actualizados Visual Studio y Visual Studio para Mac para 
 
 :::zone pivot="windows"
 
-1. Haga clic **en el menú > Buscar** actualizaciones.
+1. Haga clic en **el menú > Buscar** actualizaciones.
 
     ![El menú Buscar actualizaciones de Visual Studio 2019](../media/vs/check-for-updates.png)
 
@@ -79,10 +79,10 @@ De forma predeterminada, Unity ya debe estar configurado para usar Visual Studio
 :::zone pivot="windows"
 
 1. En el Editor de Unity, seleccione el **menú Editar > preferencias.**
-2. Seleccione la **pestaña Herramientas** externas de la izquierda.
+2. Seleccione la **pestaña Herramientas externas** de la izquierda.
 3. La **lista desplegable Editor de scripts** externos proporciona una manera de elegir diferentes instalaciones de Visual Studio. También puede hacer clic en **Examinar...** en la lista desplegable para agregar una versión no enumerada.
 
-    ![Menú de preferencias herramientas externas en el Editor de Unity en Windows](../media/vs/preferences-external-tools.png)
+    ![El menú de preferencias Herramientas externas del Editor de Unity en Windows](../media/vs/preferences-external-tools.png)
 
 4. Si **Examinar...** estaba seleccionado, vaya al directorio **Common7/IDE** dentro del directorio de instalación de Visual Studio y seleccione **devenv.exe**. A continuación, haga clic **en Abrir**.
 5. Después de que Visual Studio se ha seleccionado en la lista **External Script Editor** (Editor de scripts externo), confirme que la casilla **Editor Attaching** (Asociación de editor) está activada.
@@ -92,7 +92,7 @@ De forma predeterminada, Unity ya debe estar configurado para usar Visual Studio
 :::zone pivot="macos"
 
 1. En el Editor de Unity, seleccione el menú **> preferencias de Unity.**
-2. Seleccione la **pestaña Herramientas** externas de la izquierda.
+2. Seleccione la **pestaña Herramientas externas** de la izquierda.
 3. La **lista desplegable Editor de scripts** externos proporciona una manera de elegir diferentes instalaciones de Visual Studio. También puede hacer clic en **Examinar...** en la lista desplegable para agregar una versión no enumerada.
 
     ![El menú de preferencias Herramientas externas del Editor de Unity en macOS](../media/vsm/preferences-external-tools.png)

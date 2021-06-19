@@ -1,36 +1,36 @@
 ---
 title: Directiva de parámetro T4
-description: Aprenda que en Visual Studio, la Directiva de parámetros declara propiedades en el código de plantilla que se inicializan a partir de los valores que se pasan desde el contexto externo.
+description: Obtenga información sobre Visual Studio, la directiva de parámetros declara propiedades en el código de plantilla que se inicializan a partir de los valores pasados desde el contexto externo.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fe68d31d214ae4be8fca35f1e90e63690f3ad581
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8ef80179d43996669b9d883fd2ca9163208d18d7
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924604"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386103"
 ---
 # <a name="t4-parameter-directive"></a>Directiva de parámetro T4
 
-En una plantilla de texto de Visual Studio, la `parameter` directiva declara propiedades en el código de plantilla que se inicializan a partir de los valores que se pasan desde el contexto externo. Puede establecer estos valores si escribe código que invoca la transformación de texto.
+En una Visual Studio de texto, la directiva declara propiedades en el código de plantilla que se inicializan a partir de los valores `parameter` pasados desde el contexto externo. Puede establecer estos valores si escribe código que invoca la transformación de texto.
 
-## <a name="using-the-parameter-directive"></a>Usar la Directiva de parámetros
+## <a name="using-the-parameter-directive"></a>Uso de la directiva Parameter
 
 ```
 <#@ parameter type="Full.TypeName" name="ParameterName" #>
 ```
 
- La `parameter` directiva declara propiedades en el código de plantilla que se inicializan a partir de los valores que se pasan desde el contexto externo. Puede establecer estos valores si escribe código que invoca la transformación de texto. Los valores se pueden pasar en el `Session` Diccionario o en <xref:System.Runtime.Remoting.Messaging.CallContext> .
+ La directiva declara propiedades en el código de plantilla que se inicializan a partir `parameter` de valores pasados desde el contexto externo. Puede establecer estos valores si escribe código que invoca la transformación de texto. Los valores se pueden pasar en el `Session` diccionario o en <xref:System.Runtime.Remoting.Messaging.CallContext> .
 
- Puede declarar parámetros de cualquier tipo utilizable de forma remota. Es decir, el tipo se debe declarar con <xref:System.SerializableAttribute> o debe derivarse de <xref:System.MarshalByRefObject> . Esto permite pasar los valores de parámetro al AppDomain en el que se procesa la plantilla.
+ Puede declarar parámetros de cualquier tipo remotable. Es decir, el tipo debe declararse con <xref:System.SerializableAttribute> o debe derivarse de <xref:System.MarshalByRefObject> . Esto permite que los valores de parámetro se pasen al AppDomain en el que se procesa la plantilla.
 
- Por ejemplo, puede escribir una plantilla de texto con el siguiente contenido:
+ Por ejemplo, podría escribir una plantilla de texto con el siguiente contenido:
 
 ```
 <#@ template language="C#" #>
@@ -43,7 +43,7 @@ Line <#= i #>
 ```
 
 ## <a name="passing-parameter-values-to-a-template"></a>Pasar valores de parámetro a una plantilla
- Si está escribiendo una extensión de Visual Studio, como un comando de menú o un controlador de eventos, puede procesar una plantilla mediante el servicio de plantillas de texto:
+ Si está escribiendo una extensión Visual Studio, como un comando de menú o un controlador de eventos, puede procesar una plantilla mediante el servicio de plantillas de texto:
 
 ```csharp
 // Get a service provider - how you do this depends on the context:
@@ -84,10 +84,10 @@ string result = t4.ProcessTemplate("",
 //     Test 32 test
 ```
 
-## <a name="passing-values-to-a-run-time-preprocessed-text-template"></a>Pasar valores a una plantilla de texto Run-Time (preprocesada)
- Normalmente no es necesario usar la `<#@parameter#>` Directiva con plantillas de texto en tiempo de ejecución (preprocesadas). En su lugar, puede definir un constructor adicional o una propiedad configurable para el código generado, a través del cual se pasan los valores de parámetro. Para obtener más información, vea [Generación de texto en tiempo de ejecución con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+## <a name="passing-values-to-a-run-time-preprocessed-text-template"></a>Pasar valores a una plantilla Run-Time texto (preprocesado)
+ Normalmente no es necesario usar la directiva con plantillas de texto en tiempo de ejecución `<#@parameter#>` (preprocesado). En su lugar, puede definir un constructor adicional o una propiedad configurable para el código generado, a través del cual se pasan los valores de parámetro. Para obtener más información, vea [Generación de texto en tiempo de ejecución con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
- Sin embargo, si desea usar `<#@parameter>` en una plantilla en tiempo de ejecución, puede pasar valores a ella mediante el Diccionario de sesión. Por ejemplo, supongamos que ha creado el archivo como una plantilla preprocesada denominada `PreTextTemplate1` . Puede invocar la plantilla en el programa mediante el código siguiente.
+ Sin embargo, si desea usar en una plantilla en tiempo de ejecución, puede pasar valores a ella `<#@parameter>` mediante el diccionario session. Por ejemplo, supongamos que ha creado el archivo como una plantilla preprocesada denominada `PreTextTemplate1` . Puede invocar la plantilla en el programa mediante el código siguiente.
 
 ```csharp
 PreTextTemplate1 t = new PreTextTemplate1();
@@ -98,7 +98,7 @@ t.Initialize(); // Must call this to transfer values.
 string resultText = t.TransformText();
 ```
 
-## <a name="obtaining-arguments-from-texttemplateexe"></a>Obtener argumentos de TextTemplate.exe
+## <a name="obtaining-arguments-from-texttemplateexe"></a>Obtención de argumentos de TextTemplate.exe
 
 > [!IMPORTANT]
-> La `parameter` Directiva no recupera los valores establecidos en el `-a` parámetro de la `TextTransform.exe` utilidad. Para obtener esos valores, establezca `hostSpecific="true"` en la `template` Directiva y use `this.Host.ResolveParameterValue("","","argName")` .
+> La `parameter` directiva no recupera los valores establecidos en el parámetro de la utilidad `-a` `TextTransform.exe` . Para obtener esos valores, establezca `hostSpecific="true"` en la directiva y use `template` `this.Host.ResolveParameterValue("","","argName")` .

@@ -25,17 +25,17 @@ helpviewer_keywords:
 - Call Stack window, show on code map
 - debugging [Visual Studio], tracing the call stack visually
 - debugging [Visual Studio], visualizing the call stack
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: faeee42f179351649ba73e06d25e5e948538392e
-ms.sourcegitcommit: 398b4d4e5ce0f978720f11990db05b209766aedc
+ms.openlocfilehash: 08fa0ff028140ebad421dd43fdfa53cc36b77804
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "112016325"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387494"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Asignar métodos en la pila de llamadas durante la depuración en Visual Studio
 
@@ -146,7 +146,7 @@ Cree un mapa de código para hacer un seguimiento visual de la pila de llamadas 
 
 - **No todas las llamadas aparecen en el mapa. ¿por qué?**
 
-   De forma predeterminada, en el mapa solo se muestra su código. Para ver el código externo, active en la ventana **Pila de** llamadas:
+   De forma predeterminada, en el mapa solo se muestra su código. Para ver el código externo, encándalo en la ventana **Pila de** llamadas:
 
    ![Mostrar código externo mediante la ventana Pila de llamadas](../debugger/media/debuggermap_callstackmenu.png)
 
@@ -180,7 +180,7 @@ Cree un mapa de código para hacer un seguimiento visual de la pila de llamadas 
 
 - **¿Cómo se detiene la agregación automática de nuevas pilas de llamadas al mapa?**
 
-   Elija Botón &#45; Mostrar pila de llamadas en el mapa ![ de código automáticamente en la barra de herramientas del ](../debugger/media/debuggermap_automaticupdateicon.gif) mapa. Para agregar manualmente la pila de llamadas actual al mapa, presione **Ctrl** + **Mayús** +  **`** .
+   Elija ![ Botón &#45; Mostrar pila de llamadas en el mapa de código automáticamente en la barra de herramientas del ](../debugger/media/debuggermap_automaticupdateicon.gif) mapa. Para agregar manualmente la pila de llamadas actual al mapa, presione **Ctrl** + **Mayús** +  **`** .
 
    El mapa seguirá resaltando las pilas de llamadas existentes en el mapa durante la depuración.
 

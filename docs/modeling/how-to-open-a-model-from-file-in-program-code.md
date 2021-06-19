@@ -1,65 +1,65 @@
 ---
 title: 'Cómo: Abrir un modelo desde un archivo en el código del programa'
-description: Obtenga información sobre que ModelBus proporciona un mecanismo estándar para hacer referencia a un modelo o elementos de un modelo, y para buscar el modelo si se ha deshecho.
+description: Obtenga información sobre que ModelBus proporciona un mecanismo estándar para hacer referencia a un modelo o elementos de un modelo y para buscar el modelo si se ha movido.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dcc1c74f7c4c787a3d6b70b6fd6c7d9d67ad37db
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 97de2d7e79dc44ff785663c4d04dc65851430472
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99922668"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387065"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Cómo: Abrir un modelo desde un archivo en el código del programa
 
 Puede abrir modelos DSL en cualquier aplicación.
 
-En una extensión de Visual Studio, puede usar ModelBus para este propósito. ModelBus proporciona un mecanismo estándar para hacer referencia a un modelo o elementos de un modelo, y para buscar el modelo si se ha deshecho. Para obtener más información, vea [integrar modelos mediante Modelbus de Visual Studio](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
+Desde una Visual Studio, puede usar ModelBus para este propósito. ModelBus proporciona un mecanismo estándar para hacer referencia a un modelo o elementos de un modelo y para buscar el modelo si se ha movido. Para obtener más información, vea [Integración de modelos mediante Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
 
 ## <a name="target-framework"></a>Marco de destino
 
 Establezca la **plataforma de destino** del proyecto de aplicación en .NET Framework 4 o posterior.
 
-1. Abra el proyecto de Visual Studio para la aplicación en la que desea leer un modelo DSL.
+1. Abra el Visual Studio proyecto para la aplicación en la que desea leer un modelo DSL.
 
-2. En **Explorador de soluciones**, haga clic con el botón secundario en el proyecto y, a continuación, haga clic en **propiedades**.
+2. En **Explorador de soluciones**, haga clic con el botón derecho en el proyecto y, a continuación, haga clic en **Propiedades**.
 
-3. En la ventana Propiedades del proyecto, en la pestaña **aplicación** , establezca el campo **plataforma de destino** en **.NET Framework 4** (o posterior).
+3. En la ventana de propiedades del proyecto, en la **pestaña** Aplicación, establezca el campo **Marco** de destino **en .NET Framework 4** (o posterior).
 
 > [!NOTE]
-> La versión de .NET Framework de destino no debe ser **.NET Framework 4 Client Profile**.
+> La plataforma de destino no debe .NET Framework **perfil de cliente 4**.
 
 ## <a name="references"></a>Referencias
 
-Agregue estas referencias al proyecto de aplicación de Visual Studio:
+Agregue estas referencias al proyecto Visual Studio aplicación:
 
 - `Microsoft.VisualStudio.Modeling.Sdk.11.0`
 
-  - Si no lo ve en la pestaña **.net** del cuadro de diálogo **Agregar referencias** , haga clic en la pestaña **examinar** y vaya a `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\` .
+  - Si no lo ve en la pestaña **.NET** del cuadro de **diálogo** Agregar referencias, haga clic en la pestaña **Examinar** y vaya a `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\` .
 
-- El ensamblado DSL, que encontrará en la carpeta bin del proyecto DSL. Su nombre tiene normalmente el siguiente formato: *suempresa*. *YourProject* `.Dsl.dll` .
+- El ensamblado DSL, que encontrará en la carpeta bin, el proyecto DSL. Su nombre suele tener el formato: *YourCompany*. *YourProject* `.Dsl.dll` .
 
-## <a name="important-classes-in-the-dsl"></a>Clases importantes en DSL
+## <a name="important-classes-in-the-dsl"></a>Clases importantes en el DSL
 
-Antes de poder escribir el código que lee el DSL, debe conocer los nombres de algunas de las clases generadas por el DSL. En la solución DSL, abra el proyecto **DSL** y mire en la carpeta **GeneratedCode** También puede hacer doble clic en el ensamblado DSL en las **referencias** del proyecto y abrir el espacio de nombres dsl en **Examinador de objetos**.
+Para poder escribir el código que lee el DSL, debe conocer los nombres de algunas de las clases generadas por el DSL. En la solución DSL, abra el **proyecto Dsl** y busque en la **carpeta GeneratedCode.** Como alternativa, haga doble clic en el ensamblado DSL del proyecto **Referencias** y abra el espacio de nombres DSL en **el Explorador de objetos**.
 
 Estas son las clases que debe identificar:
 
-- *YourDslRootClass* : es el nombre de la clase raíz en su `DslDefinition.dsl` .
+- *YourDslRootClass:* este es el nombre de la clase raíz en `DslDefinition.dsl` .
 
-- *Sunombrededsl* `SerializationHelper` : Esta clase se define en `SerializationHelper.cs` en el proyecto DSL.
+- *YourDslName* `SerializationHelper` - Esta clase se define en en `SerializationHelper.cs` el proyecto DSL.
 
-- *Sunombrededsl* `DomainModel` : Esta clase se define en `DomainModel.cs` en el proyecto DSL.
+- *YourDslName* `DomainModel` - Esta clase se define en en `DomainModel.cs` el proyecto DSL.
 
 ## <a name="read-from-a-file"></a>Leer de un archivo
 
-El siguiente ejemplo está diseñado para leer un DSL en el que las clases importantes son las siguientes:
+El ejemplo siguiente está diseñado para leer un DSL en el que las clases importantes son las siguientes:
 
 - FamilyTreeModel
 
@@ -67,7 +67,7 @@ El siguiente ejemplo está diseñado para leer un DSL en el que las clases impor
 
 - FamilyTreeDomainModel
 
-La otra clase de dominio de este DSL es person.
+La otra clase de dominio de este DSL es Person.
 
 ```csharp
 using System;

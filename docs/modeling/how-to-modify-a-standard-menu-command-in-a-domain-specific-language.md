@@ -1,38 +1,38 @@
 ---
-title: Comando de menú modificar estándar en DSL
-description: Obtenga información acerca de cómo modificar el comportamiento de algunos de los comandos estándar que se definen automáticamente en DSL.
+title: Modificación del comando de menú estándar en DSL
+description: Obtenga información sobre cómo puede modificar el comportamiento de algunos de los comandos estándar que se definen automáticamente en el DSL.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
 - .vsct files, adding commands to a domain-specific language
 - Domain-Specific Language, adding custom commands
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a8b44631971db277adcb0292f43a8592775fb3a8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ccbc82801c3570c74e96010d5f9fc0e0e7940937
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99922681"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387104"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Cómo: Modificar comandos de menú estándar en lenguajes específicos de dominio
 
-Puede modificar el comportamiento de algunos de los comandos estándar que se definen automáticamente en su DSL. Por ejemplo, puede modificar **CUT** para que excluya la información confidencial. Para ello, se invalidan los métodos en una clase de conjunto de comandos. Estas clases se definen en el archivo CommandSet.cs, en el proyecto DslPackage, y derivan de <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.
+Puede modificar el comportamiento de algunos de los comandos estándar que se definen automáticamente en su DSL. Por ejemplo, podría modificar **Cortar para** que excluya información confidencial. Para ello, se invalidan los métodos en una clase de conjunto de comandos. Estas clases se definen en el archivo CommandSet.cs, en el proyecto DslPackage, y derivan de <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.
 
 > [!NOTE]
-> Si desea crear sus propios comandos de menú, consulte [Cómo: agregar un comando al menú contextual](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
+> Si desea crear sus propios comandos de menú, [vea Cómo: Agregar un comando al menú contextual.](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)
 
 ## <a name="what-commands-can-you-modify"></a>¿Qué comandos puede modificar?
 
 ### <a name="to-discover-what-commands-you-can-modify"></a>Para averiguar qué comandos puede modificar
 
-1. En el proyecto `DslPackage`, abra `GeneratedCode\CommandSet.cs`. Este archivo de C# se puede encontrar en Explorador de soluciones como una filial de `CommandSet.tt` .
+1. En el proyecto `DslPackage`, abra `GeneratedCode\CommandSet.cs`. Este archivo de C# se puede encontrar en Explorador de soluciones como una subsidiaria de `CommandSet.tt` .
 
-2. Busque las clases de este archivo cuyos nombres terminen en " `CommandSet` ", por ejemplo, `Language1CommandSet` y `Language1ClipboardCommandSet` .
+2. Busque clases en este archivo cuyos nombres terminen con " `CommandSet` ", por `Language1CommandSet` ejemplo, y `Language1ClipboardCommandSet` .
 
 3. En cada clase de conjunto de comandos, escriba "`override`" seguido de un espacio. IntelliSense mostrará una lista de los métodos que puede invalidar. Cada comando tiene un par de métodos cuyos nombres comienzan por "`ProcessOnStatus`" y "`ProcessOnMenu`".
 
@@ -55,7 +55,7 @@ Cree un nuevo archivo que contiene una declaración parcial de la clase de conju
 
      `{ ...  internal partial class Language1CommandSet : ...`
 
-2. En **DslPackage**, cree una carpeta denominada **código personalizado**. En esta carpeta, cree un nuevo archivo de clase denominado `CommandSet.cs` .
+2. En **DslPackage**, cree una carpeta denominada **Código personalizado**. En esta carpeta, cree un nuevo archivo de clase denominado `CommandSet.cs` .
 
 3. En el nuevo archivo, escriba una declaración parcial que tenga el mismo espacio de nombres y nombre que la clase parcial generada. Por ejemplo:
 
@@ -72,11 +72,11 @@ Cree un nuevo archivo que contiene una declaración parcial de la clase de conju
 
 ## <a name="override-the-command-methods"></a>Invalidar los métodos de comando
 
-La mayoría de los comandos tienen dos métodos asociados: el método con un nombre como `ProcessOnStatus` ... determina si el comando debe estar visible y habilitado. Se llama siempre que el usuario hace clic con el botón secundario en el diagrama, debe ejecutarse rápidamente y no realiza cambios. `ProcessOnMenu`... se llama a cuando el usuario hace clic en el comando y debe realizar la función del comando. Quizás quiera invalidar uno o los dos métodos.
+La mayoría de los comandos tienen dos métodos asociados: el método con un nombre como `ProcessOnStatus` ... determina si el comando debe estar visible y habilitado. Se llama siempre que el usuario hace clic con el botón secundario en el diagrama, debe ejecutarse rápidamente y no realiza cambios. `ProcessOnMenu`... Se llama a cuando el usuario hace clic en el comando y debe realizar la función del comando. Quizás quiera invalidar uno o los dos métodos.
 
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>Para cambiar cuándo aparece el comando en un menú
 
-Invalide el ProcessOnStatus... forma. Este método debe establecer las propiedades Visible y Enabled de su parámetro MenuCommand. Normalmente, el comando busca en this.CurrentSelection para determinar si se aplica a los elementos seleccionados, y también podría buscar en sus propiedades para determinar si se puede aplicar en el estado actual de las mismas.
+Invalide processOnStatus... Método. Este método debe establecer las propiedades Visible y Enabled de su parámetro MenuCommand. Normalmente, el comando busca en this.CurrentSelection para determinar si se aplica a los elementos seleccionados, y también podría buscar en sus propiedades para determinar si se puede aplicar en el estado actual de las mismas.
 
 Como regla general, la propiedad Visible se debe determinar en función de qué elementos están seleccionados. La propiedad Enabled, que determina si el comando aparece en negro o en gris en el comando, dependerá del estado actual de la selección.
 
@@ -108,7 +108,7 @@ El método ProcessOnStatus no debe crear, eliminar ni actualizar elementos en el
 
 ### <a name="to-change-the-behavior-of-the-command"></a>Para cambiar el comportamiento del comando
 
-Invalide el ProcessOnMenu... forma. En el ejemplo siguiente se impide que el usuario elimine más de un elemento al mismo tiempo, aunque presione la tecla Suprimir.
+Invalidar ProcessOnMenu... Método. En el ejemplo siguiente se impide que el usuario elimine más de un elemento al mismo tiempo, aunque presione la tecla Suprimir.
 
 ```csharp
 /// <summary>
@@ -125,7 +125,7 @@ protected override void ProcessOnMenuDeleteCommand()
 }
 ```
 
-Si el código realiza cambios en el almacén, como crear, eliminar o actualizar elementos o vínculos, debe hacerlo dentro de una transacción. Para obtener más información, vea [Cómo crear y actualizar elementos de modelo](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
+Si el código realiza cambios en el almacén, como crear, eliminar o actualizar elementos o vínculos, debe hacerlo dentro de una transacción. Para obtener más información, [vea How to Create and Update model elements](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
 ### <a name="write-the-code-of-the-methods"></a>Escribir el código de los métodos
 
@@ -133,17 +133,17 @@ Los siguientes fragmentos suelen resultar útiles dentro de estos métodos:
 
 - `this.CurrentSelection`. La forma en la que el usuario hizo clic con el botón secundario se incluye en esta lista de formas y conectores. Si el usuario hace clic en una parte en blanco del diagrama, el diagrama es el único miembro de la lista.
 
-- `this.IsDiagramSelected()` - `true` Si el usuario hizo clic en una parte en blanco del diagrama.
+- `this.IsDiagramSelected()` - `true` si el usuario hizo clic en una parte en blanco del diagrama.
 
 - `this.IsCurrentDiagramEmpty()`
 
-- `this.IsSingleSelection()` -el usuario no seleccionó varias formas
+- `this.IsSingleSelection()` : el usuario no ha seleccionado varias formas.
 
-- `this.SingleSelection` -la forma o el diagrama en el que el usuario hizo clic con el botón secundario
+- `this.SingleSelection` : la forma o diagrama en el que el usuario hizo clic con el botón derecho
 
-- `shape.ModelElement as MyLanguageElement` : elemento de modelo representado por una forma.
+- `shape.ModelElement as MyLanguageElement` : el elemento de modelo representado por una forma.
 
-Para obtener más información sobre cómo navegar de un elemento a otro y sobre cómo crear objetos y vínculos, vea [navegar y actualizar un modelo en el código del programa](../modeling/navigating-and-updating-a-model-in-program-code.md).
+Para obtener más información sobre cómo navegar de un elemento a un elemento y sobre cómo crear objetos y vínculos, vea Navegar y actualizar un modelo en [el código del programa](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
 ## <a name="see-also"></a>Vea también
 
