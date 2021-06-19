@@ -1,46 +1,46 @@
 ---
 title: Agregar propiedades personalizadas a diagramas de dependencia
-description: Obtenga información sobre cómo puede almacenar valores con cualquier elemento de un diagrama de dependencia al escribir código de extensión para diagramas de dependencia.
+description: Obtenga información sobre cómo almacenar valores con cualquier elemento en un diagrama de dependencias al escribir código de extensión para diagramas de dependencias.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
 - dependency diagrams, adding custom properties
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d63c6793290786499dd75ffd139f9905f46e7ab1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 70588a2d472a1170b58911eece4fa70831064f72
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946467"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389857"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Agregar propiedades personalizadas a diagramas de dependencia
 
-Al escribir código de extensión para diagramas de dependencia, puede almacenar valores con cualquier elemento de un diagrama de dependencia. Los valores se conservarán cuando el diagrama se guarde y se vuelva a abrir. También puede hacer que estas propiedades aparezcan en la ventana **propiedades** para que los usuarios puedan verlas y editarlas. Por ejemplo, puede permitir que los usuarios especifiquen una expresión regular para cada capa y escriban código de validación para comprobar que los nombres de las clases de cada capa se ajustan al patrón especificado por el usuario.
+Al escribir código de extensión para diagramas de dependencias, puede almacenar valores con cualquier elemento en un diagrama de dependencias. Los valores se conservarán cuando el diagrama se guarde y se vuelva a abrir. También puede hacer que estas propiedades aparezcan en la **ventana Propiedades** para que los usuarios puedan verlas y editarlas. Por ejemplo, puede permitir que los usuarios especifiquen una expresión regular para cada capa y escriban código de validación para comprobar que los nombres de las clases de cada capa se ajustan al patrón especificado por el usuario.
 
 ## <a name="non-visible-properties"></a>Propiedades no visibles
 
-Si solo desea que el código adjunte valores a cualquier elemento de un diagrama de dependencia, no es necesario definir un componente MEF. Hay un diccionario denominado `Properties` en [ILayerElement](/previous-versions/ff644511(v=vs.140)). Solo tiene que agregar valores que calculan referencias al diccionario de cualquier elemento de capa. Se guardarán como parte del diagrama de dependencia.
+Si solo desea que el código adjunte valores a cualquier elemento de un diagrama de dependencias, no es necesario definir un componente MEF. Hay un diccionario denominado `Properties` en [ILayerElement](/previous-versions/ff644511(v=vs.140)). Solo tiene que agregar valores que calculan referencias al diccionario de cualquier elemento de capa. Se guardarán como parte del diagrama de dependencias.
 
 ## <a name="editable-properties"></a>Propiedades editables
 
 **Preparación inicial**
 
 > [!IMPORTANT]
-> Para que aparezcan las propiedades, realice el cambio siguiente en cada equipo donde desee que las propiedades de capa estén visibles:
+> Para que aparezcan las propiedades, realice el siguiente cambio en cada equipo en el que desee que las propiedades de capa sean visibles:
 >
-> 1. Ejecute el Bloc de notas con **Ejecutar como administrador**. Abra *%ProgramFiles%\Microsoft Visual Studio [versión] \Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest*.
-> 2. En el elemento **Content** , agregue:
+> 1. Ejecute el Bloc de notas mediante **Ejecutar como administrador.** Abra *%ProgramFiles%\Microsoft Visual Studio [versión]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest*.
+> 2. Dentro del **elemento Content,** agregue:
 >
 >     ```xml
 >     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>
 >     ```
 >
-> 3. En la sección **Visual Studio Tools** del menú Inicio de la aplicación de Visual Studio, Abra **símbolo del sistema para desarrolladores**. Especifique:
+> 3. En la **Visual Studio Tools** del menú inicio Visual Studio aplicación, **abra Símbolo del sistema para desarrolladores**. Especifique:
 >
 >      `devenv /rootSuffix /updateConfiguration`
 >
@@ -49,7 +49,7 @@ Si solo desea que el código adjunte valores a cualquier elemento de un diagrama
 
 **Asegurarse de que el código está en un proyecto VSIX**
 
-Si la propiedad forma parte de un comando, un gesto o un proyecto de validación, no es necesario agregar nada. El código de la propiedad personalizada debe definirse en un proyecto de extensibilidad de Visual Studio definido como componente MEF. Para obtener más información, vea [Agregar comandos y gestos a diagramas de dependencia](../modeling/add-commands-and-gestures-to-layer-diagrams.md) o [agregar validación de arquitectura personalizada a diagramas de dependencia](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
+Si la propiedad forma parte de un proyecto de comando, gesto o validación, no es necesario agregar nada. El código de la propiedad personalizada debe definirse en un proyecto de extensibilidad de Visual Studio definido como componente MEF. Para obtener más información, vea [Agregar comandos y gestos](../modeling/add-commands-and-gestures-to-layer-diagrams.md) a diagramas de dependencias o Agregar validación de arquitectura personalizada a [diagramas de dependencias.](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)
 
 **Definir la propiedad personalizada**
 
@@ -65,9 +65,9 @@ public class MyProperty : PropertyExtension<ILayerElement>
 
 Puede definir propiedades en [ILayerElement](/previous-versions/ff644511(v=vs.140)) o en cualquiera de sus clases derivadas, entre las que se incluyen:
 
-- `ILayerModel` -el modelo
+- `ILayerModel` : el modelo
 
-- `ILayer` -cada capa
+- `ILayer` - cada capa
 
 - `ILayerDependencyLink`: los vínculos entre las capas
 

@@ -4,27 +4,27 @@ description: Obtenga información sobre cómo puede empaquetar varios lenguajes 
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 10eeee4d36e6a28bb6cd872573c500bbdf6dca14
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 11baf6439062e28c7361e2fabb4dea4a3430f237
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99950351"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390924"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Varios DSL en una solución
 
 Puede empaquetar varios DSL como parte de una única solución para que se instalen juntos.
 
-Puede usar varias técnicas para integrar varios DSL. Para obtener más información, vea [integrar modelos mediante Modelbus de Visual Studio](../modeling/integrating-models-by-using-visual-studio-modelbus.md) y [Cómo: agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md) y [personalizar el comportamiento de copia](../modeling/customizing-copy-behavior.md).
+Puede usar varias técnicas para integrar varios DSL. Para obtener más información, vea Integración de modelos mediante [Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md) y [Cómo:](../modeling/how-to-add-a-drag-and-drop-handler.md) Agregar un controlador de arrastrar y colocar y [Personalizar el comportamiento de copia](../modeling/customizing-copy-behavior.md).
 
-## <a name="build-more-than-one-dsl-in-the-same-solution"></a>Crear más de un DSL en la misma solución
+## <a name="build-more-than-one-dsl-in-the-same-solution"></a>Compilación de más de un DSL en la misma solución
 
-1. Cree un nuevo proyecto de **Proyecto VSIX** .
+1. Cree un nuevo **proyecto de proyecto VSIX.**
 
 2. Cree dos o más proyectos DSL en el directorio de la solución VSIX.
 
@@ -32,29 +32,29 @@ Puede usar varias técnicas para integrar varios DSL. Para obtener más informac
 
    - Asegúrese de crear cada DSL con una extensión de nombre de archivo diferente.
 
-   - Cambie los nombres de los proyectos **DSL** y **DslPackage** para que sean distintos. Por ejemplo: `Dsl1`, `DslPackage1`, `Dsl2`, `DslPackage2`.
+   - Cambie los nombres de los **proyectos Dsl** y **DslPackage** para que todos sean diferentes. Por ejemplo: `Dsl1`, `DslPackage1`, `Dsl2`, `DslPackage2`.
 
-   - En cada **DslPackage \* \ Source.Extension.TT**, actualice esta línea al nombre del proyecto DSL correcto:
+   - En cada **DslPackage \* \source.extension.tt**, actualice esta línea al nombre de proyecto dsl correcto:
 
       `string dslProjectName = "Dsl2";`
 
-   - En la solución VSIX, agregue los proyectos DSL * y DslPackage \* . Quizás quiera coloca cada par en su propia carpeta de solución.
+   - En la solución VSIX, agregue los proyectos Dsl* y \* DslPackage. Quizás quiera coloca cada par en su propia carpeta de solución.
 
 2. Combine los manifiestos VSIX de los DSL:
 
-   1. Abra _suproyectovsix_**\source.Extension.manifest**.
+   1. Abra _YourVsixProject_**\source.extension.manifest**.
 
-   2. Para cada DSL, elija **agregar contenido** y agregar:
+   2. Para cada DSL, elija **Agregar contenido** y agregue:
 
-       - `Dsl*` proyecto como **componente MEF**
+       - `Dsl*` proyecto como componente **mef**
 
-       - `DslPackage*` proyecto como **componente MEF**
+       - `DslPackage*` proyecto como componente **mef**
 
-       - `DslPackage*` proyecto como **paquete de vs**
+       - `DslPackage*` proyecto como un **paquete de VS**
 
 3. Compile la solución.
 
-   El VSIX resultante instalará ambos DSL. Puede probarla mediante F5 o implementar _suproyectovsix_**\bin\debug \\ \* . vsix**.
+   El VSIX resultante instalará ambos DSL. Puede probarlos mediante F5 o implementar _YourVsixProject_**\bin\Debug \\ \* .vsix**.
 
 ## <a name="see-also"></a>Vea también
 

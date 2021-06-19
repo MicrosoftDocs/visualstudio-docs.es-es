@@ -1,29 +1,29 @@
 ---
 title: Requisitos del usuario de modelos
-description: Obtenga información sobre cómo Visual Studio le ayuda a entender, analizar y comunicar las necesidades de los usuarios mediante el dibujo de diagramas sobre sus actividades.
+description: Obtenga información Visual Studio ayuda a comprender, analizar y comunicar las necesidades de los usuarios mediante diagramas sobre sus actividades.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - requirements
 - stories
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d55e549d2dccdc047cbf4449392cc090a569f85c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 381395eb0b9dabde0e94c479cb43033bc8443c8f
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970587"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390156"
 ---
 # <a name="model-user-requirements"></a>Requisitos del usuario de modelos
 
 Con Visual Studio, es más fácil entender, analizar y comunicar las necesidades de los usuarios a través de diagramas sobre sus actividades, así como la importancia del sistema para ayudarles a lograr sus objetivos. Un modelo de requisitos es un conjunto de estos diagramas, cada uno de los cuales se centra en un aspecto diferente de las necesidades de los usuarios. Para ver una demostración en vídeo, consulte [Modeling the Business Domain](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain)(Crear modelos del ámbito empresarial).
 
-Para ver qué versiones de Visual Studio admite cada tipo de modelo, consulte [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Para ver qué versiones de Visual Studio admite cada tipo de modelo, consulte [Version support for architecture and modeling tools](../modeling/analyze-and-model-your-architecture.md#VersionSupport).
 
 Un modelo de requisitos le ayuda a:
 
@@ -41,7 +41,7 @@ Un modelo de requisitos le ayuda a:
 
 - Usar los modelos como base para las pruebas del sistema, estableciendo una relación inequívoca entre las pruebas y los requisitos. Si cambian los requisitos, esta relación le ayudará a actualizar las pruebas correctamente. Esto garantiza que el sistema cumple los requisitos nuevos.
 
-Un modelo de requisitos proporciona el máximo beneficio si lo usa para centrar las conversaciones con los usuarios o sus representantes y vuelve a visitarlo al principio de cada iteración. No es necesario completarlo detalladamente antes de escribir el código. Una aplicación parcialmente operativa, aunque esté muy simplificada, suele constituir la base más estimulante para tratar los requisitos con los usuarios. El modelo es un método eficaz para resumir los resultados de estas conversaciones. Para obtener más información, vea [usar modelos en el proceso de desarrollo](../modeling/use-models-in-your-development-process.md).
+Un modelo de requisitos proporciona el máximo beneficio si lo usa para centrar las conversaciones con los usuarios o sus representantes y vuelve a visitarlo al principio de cada iteración. No es necesario completarlo detalladamente antes de escribir el código. Una aplicación parcialmente operativa, aunque esté muy simplificada, suele constituir la base más estimulante para tratar los requisitos con los usuarios. El modelo es un método eficaz para resumir los resultados de estas conversaciones. Para más información, consulte [Uso de modelos en el proceso de desarrollo.](../modeling/use-models-in-your-development-process.md)
 
 > [!NOTE]
 > En estos temas, "sistema" hace referencia al sistema o la aplicación que está desarrollando. Podría ser una colección grande de muchos componentes de hardware y software, una sola aplicación o un componente de software incluido en un sistema de mayor tamaño. En cada caso, el modelo de requisitos describe el comportamiento que es visible desde fuera del sistema, ya sea a través de una API o interfaz de usuario.
@@ -53,16 +53,16 @@ Puede crear varias vistas diferentes de los requisitos de los usuarios.  Cada vi
 |Diagrama o documento|Qué se describe en un modelo de requisitos|Sección|
 |-|-|-|
 |Diagrama de clases conceptuales|Glosario de los tipos que se usan para describir los requisitos; los tipos visibles en la interfaz del sistema.||
-|Otros documentos o elementos de trabajo|Criterios de rendimiento, seguridad, facilidad de uso y confiabilidad.|[Describir los requisitos de calidad de servicio](#QoSRequirements)|
+|Otros documentos o elementos de trabajo|Criterios de rendimiento, seguridad, facilidad de uso y confiabilidad.|[Descripción de los requisitos de calidad de servicio](#QoSRequirements)|
 |Otros documentos o elementos de trabajo|Restricciones y reglas no específicas para un determinado caso de uso|[Mostrar reglas de negocios](#BusinessRules)|
 
-Observe que la mayoría de los tipos de diagramas se pueden usar para otros fines. Para obtener información general sobre los tipos de diagramas, vea [crear modelos para la aplicación](../modeling/create-models-for-your-app.md).
+Observe que la mayoría de los tipos de diagramas se pueden usar para otros fines. Para obtener información general sobre los tipos de diagrama, [consulte Creación de modelos para la aplicación.](../modeling/create-models-for-your-app.md)
 
 ## <a name="showing-business-rules"></a><a name="BusinessRules"></a> Showing Business Rules
 
 Una regla de negocio es un requisito que no está asociado a ningún caso de uso determinado y que se debe observar en todo el sistema.
 
-Muchas reglas de negocio son restricciones en las relaciones entre las clases conceptuales. Puede escribir estas *reglas de negocios estáticas* como comentarios asociados a las clases pertinentes en un diagrama de clases conceptuales. Por ejemplo:
+Muchas reglas de negocio son restricciones en las relaciones entre las clases conceptuales. Puede escribir estas reglas *de negocios estáticas* como comentarios asociados a las clases pertinentes en un diagrama de clases conceptuales. Por ejemplo:
 
 ![Regla en comentario adjunto a una clase de pedido.](../modeling/media/uml_reqmcd2.png)
 
@@ -96,7 +96,7 @@ Puede incluir algunos de estos requisitos en las descripciones de casos de uso c
 
 Si un restaurante elimina un elemento del menú mientras un cliente pide un menú, cualquier elemento del pedido que haga referencia a ese elemento del menú se mostrará de color rojo.
 
-Vea [modelar la arquitectura de la aplicación](../modeling/model-your-app-s-architecture.md) para obtener información sobre cómo desarrollar código que cumpla los requisitos de calidad de servicio.
+Consulte [Modelar la arquitectura de la aplicación](../modeling/model-your-app-s-architecture.md) para aprender a desarrollar código que cumpla los requisitos de calidad de servicio.
 
 ## <a name="see-also"></a>Vea también
 

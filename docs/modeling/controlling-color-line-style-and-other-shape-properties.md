@@ -1,34 +1,34 @@
 ---
 title: Controlar el color, el estilo de línea y otras propiedades de forma
-description: Proporciona información sobre cómo controlar las propiedades de la forma, como el color y el estilo de línea.
+description: Proporciona información sobre cómo controlar las propiedades de forma, como el color y el estilo de línea.
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: 68eda84ec014dec2931e2c35a04dec1ed878e6c0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 836c77f3651b7686e9366fe75ea7922a248fd28f
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861665"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389636"
 ---
 # <a name="controlling-color-line-style-and-other-shape-properties"></a>Controlar el color, el estilo de línea y otras propiedades de forma
 
-Algunas propiedades de forma, como el color, pueden ser ' expuestas '. Es decir, las propiedades se pueden vincular a una propiedad de dominio de la forma. Otros deben controlarse directamente.
+Algunas propiedades de forma, como el color, se pueden "exponer". Es decir, las propiedades se pueden vincular a una propiedad de dominio de la forma . Otros tienen que controlarse directamente.
 
-## <a name="exposing-a-property"></a>Exponer una propiedad
+## <a name="exposing-a-property"></a>Exposición de una propiedad
  Algunas propiedades de forma, como el color, se pueden vincular al valor de una propiedad de dominio.
 
- En la definición de DSL, seleccione una forma, conector o clase de diagrama. En el menú contextual, elija **Agregar expuesto** y, a continuación, elija la propiedad que desee, como color de relleno.
+ En definición de DSL, seleccione una forma, un conector o una clase de diagrama. En el menú contextual, elija **Agregar** expuesto y, a continuación, elija la propiedad que desee, como Color de relleno.
 
- La forma ahora tiene una propiedad de dominio que se puede establecer en el código del programa o como usuario.
+ La forma ahora tiene una propiedad de dominio que puede establecer en el código del programa o como usuario.
 
-## <a name="dynamically-updating-an-exposed-property"></a>Actualizar dinámicamente una propiedad expuesta
- Normalmente, desea que la propiedad expuesta dependa de otra propiedad. Por ejemplo, puede que desee que una forma se convierta en rojo siempre que una propiedad de dominio determinada sea menor que cero. Para hacer esta dependencia, cree una [regla](../modeling/rules-propagate-changes-within-the-model.md). Por ejemplo:
+## <a name="dynamically-updating-an-exposed-property"></a>Actualización dinámica de una propiedad expuesta
+ Normalmente, quiere que la propiedad expuesta dependa de otra propiedad. Por ejemplo, puede que desee que una forma se vuelva roja siempre que una propiedad de dominio determinada sea menor que cero. Para crear esta dependencia, cree una [regla](../modeling/rules-propagate-changes-within-the-model.md). Por ejemplo:
 
 ```csharp
 using System;
