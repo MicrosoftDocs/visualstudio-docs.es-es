@@ -1,41 +1,41 @@
 ---
-title: Conectar host a procesador de directivas generadas
-description: Obtenga información sobre cómo puede expandir su host personalizado para que admita plantillas de texto que llamen a procesadores de directivas.
+title: Conexión del host al procesador de directivas generado
+description: Obtenga información sobre cómo puede expandir el host personalizado para que admita plantillas de texto que llamen a procesadores de directivas.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
 - walkthroughs [text templates], connecting host to processor
 - text templates, custom directive hosts
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: a815718f099b024708b86658e10fc0e85c087b4c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ed51688e5b65e34d7067963dbf7b839b1f022768
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924130"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388326"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>Tutorial: Conectar un host a un procesador de directivas generadas
 
-Puede escribir su propio host que procesa plantillas de texto. En [Tutorial: crear un host de plantilla de texto personalizado](../modeling/walkthrough-creating-a-custom-text-template-host.md)se muestra un host personalizado básico. Podría extender ese host para agregar funciones como la generación de varios archivos de salida.
+Puede escribir su propio host que procese plantillas de texto. Un host personalizado básico se muestra en [Tutorial: Crear un host de plantilla de texto personalizado](../modeling/walkthrough-creating-a-custom-text-template-host.md). Podría ampliar ese host para agregar funciones como generar varios archivos de salida.
 
-En este tutorial, expandirá el host personalizado para que admita plantillas de texto que llamen a procesadores de directivas. Cuando se define un lenguaje específico de dominio, se genera un *procesador de directivas* para el modelo de dominio. El procesador de directivas facilita a los usuarios la escritura de plantillas que tienen acceso al modelo, lo que reduce la necesidad de escribir directivas de ensamblado e importación en las plantillas.
+En este tutorial, expandirá el host personalizado para que admita plantillas de texto que llamen a procesadores de directivas. Al definir un lenguaje específico del dominio, genera un procesador *de directivas* para el modelo de dominio. El procesador de directivas facilita a los usuarios la escritura de plantillas que acceden al modelo, lo que reduce la necesidad de escribir directivas de ensamblado e importación en las plantillas.
 
 > [!NOTE]
-> Este tutorial se basa en el [Tutorial: crear un host de plantilla de texto personalizado](../modeling/walkthrough-creating-a-custom-text-template-host.md). Realice ese tutorial primero.
+> Este tutorial se basa en [Tutorial: Crear un host de plantilla de texto personalizado.](../modeling/walkthrough-creating-a-custom-text-template-host.md) Realice primero ese tutorial.
 
 En este tutorial se incluyen las tareas siguientes:
 
 - Usar [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] para generar un procesador de directivas basado en un modelo de dominio.
 
-- Conectar un host de plantilla de texto personalizado al procesador de directivas generado.
+- Conexión de un host de plantilla de texto personalizado al procesador de directivas generado.
 
 - Probar el host personalizado con el procesador de directivas generado.
 
@@ -51,66 +51,66 @@ Para definir un DSL, debe tener instalados los siguientes componentes:
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-Además, debe tener la transformación de plantilla de texto personalizado creada en [Tutorial: crear un host de plantilla de texto personalizado](../modeling/walkthrough-creating-a-custom-text-template-host.md).
+Además, debe tener la transformación de plantilla de texto personalizado creada en [Tutorial: Crear un host de plantilla de texto personalizado.](../modeling/walkthrough-creating-a-custom-text-template-host.md)
 
-## <a name="use-domain-specific-language-tools-to-generate-a-directive-processor"></a>Usar herramientas de lenguaje Domain-Specific para generar un procesador de directivas
+## <a name="use-domain-specific-language-tools-to-generate-a-directive-processor"></a>Usar Domain-Specific Language Tools para generar un procesador de directivas
 
-En este tutorial, utilizará el asistente del diseñador de lenguaje Domain-Specific para crear un lenguaje específico de dominio para la solución DSLMinimalTest.
+En este tutorial, usará el Asistente Domain-Specific diseñador de lenguaje para crear un lenguaje específico del dominio para la solución DSLMinimalTest.
 
 1. Cree una solución de lenguaje específico de dominio que tenga las siguientes características:
 
    - Nombre: DSLMinimalTest
 
-   - Plantilla de solución: idioma mínimo
+   - Plantilla de solución: lenguaje mínimo
 
    - Extensión de archivo: min
 
-   - Nombre de la compañía: fabrikam
+   - Nombre de la empresa: Fabrikam
 
-   Para obtener más información sobre cómo crear una solución de lenguaje específico de dominio, consulte [Cómo: crear una solución de lenguaje Domain-Specific](../modeling/how-to-create-a-domain-specific-language-solution.md).
+   Para obtener más información sobre cómo crear una solución de lenguaje específico de dominio, [vea Cómo: Crear una solución Domain-Specific language](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
 2. En el menú **Compilar** , haga clic en **Compilar solución**.
 
    > [!IMPORTANT]
-   > Este paso genera el procesador de directivas y agrega la clave para él en el registro.
+   > Este paso genera el procesador de directivas y agrega la clave para él en el Registro.
 
 3. En el menú **Depurar**, haga clic en **Iniciar depuración**.
 
-    Se abre una segunda instancia de Visual Studio.
+    Se abre una segunda instancia Visual Studio.
 
-4. En la compilación experimental, en **Explorador de soluciones**, haga doble clic en el archivo **sample. min**.
+4. En la compilación experimental, en **Explorador de soluciones**, haga doble clic en el **archivo sample.min**.
 
     El archivo se abre en el diseñador. Observe que el modelo tiene dos elementos, ExampleElement1 y ExampleElement2, y un vínculo entre ellos.
 
 5. Cierre la segunda instancia de Visual Studio.
 
-6. Guarde la solución y, a continuación, cierre el diseñador de lenguaje Domain-Specific.
+6. Guarde la solución y, a continuación, cierre el diseñador Domain-Specific lenguaje.
 
-## <a name="connect-a-custom-text-template-host-to-a-directive-processor"></a>Conectar un host de plantilla de texto personalizado a un procesador de directivas
+## <a name="connect-a-custom-text-template-host-to-a-directive-processor"></a>Conexión de un host de plantilla de texto personalizado a un procesador de directivas
 
-Después de generar el procesador de directivas, conecte el procesador de directivas y el host de plantilla de texto personalizado que creó en [Tutorial: crear un host de plantilla de texto personalizado](../modeling/walkthrough-creating-a-custom-text-template-host.md).
+Después de generar el procesador de directivas, conecte el procesador de directivas y el host de plantilla de texto personalizado que creó en [Tutorial: Crear](../modeling/walkthrough-creating-a-custom-text-template-host.md)un host de plantilla de texto personalizado .
 
 1. Abra la solución CustomHost.
 
 2. En el menú **Proyecto**, haga clic en **Agregar referencia**.
 
-     Se abrirá el cuadro de diálogo **Agregar referencia** con la pestaña **.net** mostrada.
+     Se **abre el cuadro** de diálogo Agregar referencia con la pestaña **.NET** mostrada.
 
 3. Agregue las siguientes referencias:
 
-    - Microsoft. VisualStudio. Modeling. SDK. 11.0
+    - Microsoft.VisualStudio.Modeling.Sdk.11.0
 
-    - Microsoft. VisualStudio. Modeling. SDK. Diagrams. 11.0
+    - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0
 
     - Microsoft.VisualStudio.TextTemplating.11.0
 
     - Microsoft.VisualStudio.TextTemplating.Interfaces.11.0
 
-    - Microsoft. VisualStudio. TextTemplating. Modeling. 11.0
+    - Microsoft.VisualStudio.TextTemplating.Modeling.11.0
 
-    - Microsoft. VisualStudio. TextTemplating. VSHost. 11.0
+    - Microsoft.VisualStudio.TextTemplating.VSHost.11.0
 
-4. En la parte superior de Program.cs o Module1. VB, agregue la siguiente línea de código:
+4. En la parte superior de Program.cs o Module1.vb, agregue la siguiente línea de código:
 
     ```csharp
     using Microsoft.Win32;
@@ -120,10 +120,10 @@ Después de generar el procesador de directivas, conecte el procesador de direct
     Imports Microsoft.Win32
     ```
 
-5. Busque el código de la propiedad `StandardAssemblyReferences` y reemplácelo por el código siguiente:
+5. Busque el código de la propiedad `StandardAssemblyReferences` y reemplázquelo por el código siguiente:
 
     > [!NOTE]
-    > En este paso, agregará referencias a los ensamblados necesarios para el procesador de directivas generado que el host admitirá.
+    > En este paso, agregará referencias a los ensamblados necesarios para el procesador de directivas generado que admitirá el host.
 
     ```csharp
     //the host can provide standard assembly references
@@ -156,10 +156,10 @@ Después de generar el procesador de directivas, conecte el procesador de direct
     }
     ```
 
-6. Busque el código de la función `ResolveDirectiveProcessor` y reemplácelo por el código siguiente:
+6. Busque el código de la función `ResolveDirectiveProcessor` y reemplázquelo por el código siguiente:
 
     > [!IMPORTANT]
-    > Este código contiene referencias codificadas de forma rígida al nombre del procesador de directivas generado al que desea conectarse. Podría hacerlo con facilidad, en cuyo caso busca todos los procesadores de directivas que aparecen en el registro e intenta encontrar una coincidencia. En ese caso, el host funcionaría con cualquier procesador de directivas generado.
+    > Este código contiene referencias codificadas de forma fuerte al nombre del procesador de directivas generado al que desea conectarse. Puede hacerlo más general fácilmente, en cuyo caso busca todos los procesadores de directivas enumerados en el registro e intenta encontrar una coincidencia. En ese caso, el host funcionaría con cualquier procesador de directivas generado.
 
     ```csharp
     //the engine calls this method based on the directives the user has
@@ -234,18 +234,18 @@ Después de generar el procesador de directivas, conecte el procesador de direct
 
 8. En el menú **Compilar**, haga clic en **Compilar solución**.
 
-## <a name="test-the-custom-host-with-the-directive-processor"></a>Probar el host personalizado con el procesador de directivas
+## <a name="test-the-custom-host-with-the-directive-processor"></a>Prueba del host personalizado con el procesador de directivas
 
-Para probar el host de plantilla de texto personalizado, primero debe escribir una plantilla de texto que llame al procesador de directivas generado. Después, ejecute el host personalizado, pásele el nombre de la plantilla de texto y compruebe que la Directiva se procesa correctamente.
+Para probar el host de plantilla de texto personalizado, primero debe escribir una plantilla de texto que llame al procesador de directivas generado. A continuación, ejecute el host personalizado, pase a él el nombre de la plantilla de texto y compruebe que la directiva se procesa correctamente.
 
-### <a name="create-a-text-template-to-test-the-custom-host"></a>Crear una plantilla de texto para probar el host personalizado
+### <a name="create-a-text-template-to-test-the-custom-host"></a>Creación de una plantilla de texto para probar el host personalizado
 
-1. Cree un archivo de texto y asígnele el nombre `TestTemplateWithDP.tt` . Puede usar cualquier editor de texto, como el Bloc de notas, para crear el archivo.
+1. Cree un archivo de texto y asígámoslo `TestTemplateWithDP.tt` . Puede usar cualquier editor de texto, como el Bloc de notas, para crear el archivo.
 
 2. Agregue lo siguiente al archivo de texto:
 
     > [!NOTE]
-    > No es necesario que el lenguaje de programación de la plantilla de texto coincida con el del host personalizado.
+    > El lenguaje de programación de la plantilla de texto no necesita coincidir con el del host personalizado.
 
     ```csharp
     Text Template Host Test
@@ -314,11 +314,11 @@ Para probar el host de plantilla de texto personalizado, primero debe escribir u
     #>
     ```
 
-3. En el código, reemplace \<YOUR PATH> por la ruta de acceso del archivo Sample. min del lenguaje específico del diseño que creó en el primer procedimiento.
+3. En el código, reemplace por la ruta de acceso del archivo Sample.min del lenguaje específico \<YOUR PATH> del diseño que creó en el primer procedimiento.
 
 4. Guarde y cierre el archivo.
 
-### <a name="test-the-custom-host"></a>Probar el host personalizado
+### <a name="test-the-custom-host"></a>Prueba del host personalizado
 
 1. Abra una ventana de símbolo del sistema.
 
@@ -329,7 +329,7 @@ Para probar el host de plantilla de texto personalizado, primero debe escribir u
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`
 
     > [!NOTE]
-    > En lugar de escribir la dirección, puede ir al archivo CustomHost.exe en el **Explorador de Windows** y, a continuación, arrastrar el archivo a la ventana del símbolo del sistema.
+    > En lugar de escribir la dirección, puede ir al archivo CustomHost.exe en Explorador de Windows y, **a** continuación, arrastrar el archivo a la ventana del símbolo del sistema.
 
 3. Escriba un espacio.
 
@@ -340,11 +340,11 @@ Para probar el host de plantilla de texto personalizado, primero debe escribir u
      `<YOUR PATH>TestTemplateWithDP.txt`
 
     > [!NOTE]
-    > En lugar de escribir la dirección, puede ir al archivo TestTemplateWithDP.txt en el **Explorador de Windows** y, a continuación, arrastrar el archivo a la ventana del símbolo del sistema.
+    > En lugar de escribir la dirección, puede ir al archivo TestTemplateWithDP.txt en Explorador de Windows y, **a** continuación, arrastrar el archivo a la ventana del símbolo del sistema.
 
-     La aplicación host personalizada se ejecuta e inicia el proceso de transformación de plantillas de texto.
+     La aplicación host personalizada se ejecuta e inicia el proceso de transformación de la plantilla de texto.
 
-5. En el **Explorador de Windows**, vaya a la carpeta que contiene el archivo TestTemplateWithDP.txt.
+5. En **Explorador de Windows**, vaya a la carpeta que contiene el archivo TestTemplateWithDP.txt.
 
      La carpeta también contiene el archivo TestTemplateWithDP1.txt.
 

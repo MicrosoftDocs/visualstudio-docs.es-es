@@ -1,42 +1,42 @@
 ---
 title: Usar secuencias de escape en las plantillas de texto
-description: Obtenga información sobre cómo puede usar secuencias de escape en las plantillas de texto para generar etiquetas de plantilla de texto y caracteres de control de escape y Comillas solo en el código de C#.
+description: Obtenga información sobre cómo puede usar secuencias de escape en plantillas de texto para generar etiquetas de plantilla de texto y para escapar caracteres de control y comillas solo en código de C#.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, escape sequences
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 126fe3f4e42c9c6cf0b75bf740e1e7e2c4b269ea
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2a3cdabd38f2bf4ef38a31807fabed3ac837b26b
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924335"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388456"
 ---
-# <a name="use-escape-sequences-in-text-templates"></a>Usar secuencias de escape en las plantillas de texto
+# <a name="use-escape-sequences-in-text-templates"></a>Uso de secuencias de escape en plantillas de texto
 
-Puede usar secuencias de escape en las plantillas de texto para generar etiquetas de plantilla de texto y (solo en código C#) para caracteres de control de escape y Comillas.
+Puede usar secuencias de escape en plantillas de texto para generar etiquetas de plantilla de texto y (solo en código de C#) para caracteres de control de escape y comillas.
 
-Para imprimir etiquetas de apertura y cierre para un bloque de código estándar en el archivo de salida, escape de las etiquetas como se indica a continuación:
+Para imprimir las etiquetas de apertura y cierre de un bloque de código estándar en el archivo de salida, etiquete las etiquetas como se muestra a continuación:
 
 ```
 \<# ... \#>
 ```
 
-Puede hacer lo mismo con otras directivas de plantilla de texto y etiquetas de bloque de código.
+Puede hacer lo mismo con otra directiva de plantilla de texto y etiquetas de bloque de código.
 
-Si un bloque de texto incluye cadenas usadas para escapar etiquetas de plantilla de texto, puede usar las siguientes secuencias de escape:
+Si un bloque de texto incluye cadenas que se usan para escapar etiquetas de plantilla de texto, puede usar las siguientes secuencias de escape:
 
-- Si una etiqueta de plantilla de texto está precedida por un número par de caracteres de escape ( \\ ), el analizador de la plantilla incluirá la mitad de los caracteres de escape e incluirá la secuencia como una etiqueta de plantilla de texto. Por ejemplo, si hay cuatro caracteres de escape en la plantilla de texto, habrá dos caracteres " \\ " en el archivo generado.
+- Si una etiqueta de plantilla de texto va precedida de un número par de caracteres de escape ( ), el analizador de plantillas incluirá la mitad de los caracteres de escape e incluirá la secuencia como una etiqueta de \\ plantilla de texto. Por ejemplo, si hay cuatro caracteres de escape en la plantilla de texto, habrá dos caracteres \\ "" en el archivo generado.
 
-- Si la etiqueta de la plantilla de texto está precedida por un número impar de caracteres de escape ( \\ ), el analizador de la plantilla incluirá la mitad de los \\ caracteres "" más la propia etiqueta ( \<# or #> ). La etiqueta no se considera una etiqueta de plantilla de texto.
+- Si la etiqueta de plantilla de texto va precedida de un número impar de caracteres de escape ( ), el analizador de plantillas incluirá la mitad de los caracteres " " más la \\ \\ propia etiqueta ( \<# or #> ). La etiqueta no se considera una etiqueta de plantilla de texto.
 
-- Si \\ aparece un carácter de escape () en cualquier otra secuencia distinta de la que escapa a un carácter de control o a una comilla (solo en C#), el carácter se generará directamente.
+- Si aparece un carácter de escape ( ) en cualquier otra secuencia que no sea donde se escape un carácter de control o una comilla (solo en C#), el carácter se mostrará \\ directamente.
 
 ## <a name="see-also"></a>Vea también
 

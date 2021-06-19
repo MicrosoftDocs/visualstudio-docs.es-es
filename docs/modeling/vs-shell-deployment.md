@@ -1,33 +1,33 @@
 ---
 title: Implementación de VS Shell
-description: Obtenga información sobre cómo un shell aislado le permite determinar qué funcionalidad de Visual Studio necesita para interactuar con el DSL y cómo debe aparecer esa solución.
+description: Obtenga información sobre cómo un shell aislado le permite determinar Visual Studio funcionalidad que necesita para interactuar con el DSL y cómo debe aparecer esa solución.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1293593e71aa57d8e74b9035320b3da5108aba09
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 946cbf99fa7836fa8d7ec5aa1d921e7cda93bf46
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924220"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388313"
 ---
 # <a name="vs-shell-deployment"></a>Implementación de VS Shell
 
-Un shell aislado le permite determinar qué funcionalidad de Visual Studio necesita para interactuar con el lenguaje específico del dominio y cómo debe aparecer esa solución. Para obtener más información sobre el shell aislado de Visual Studio, vea [personalizar el shell aislado](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/).
+Un shell aislado le permite determinar qué funcionalidad Visual Studio necesita para interactuar con el lenguaje específico del dominio y cómo debe aparecer esa solución. Para obtener más información sobre Visual Studio shell aislado, vea [Personalización del shell aislado.](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/)
 
-Para establecer un shell de Visual Studio como destino de implementación:
+Para establecer un Visual Studio Shell como destino de implementación:
 
-1. En el proyecto **DslPackage** , Abra **source.Extension.TT**.
+1. En el **proyecto DslPackage,** abra **source.extension.tt**.
 
-2. En `<SupportedProducts>` Insertar:
+2. En `<SupportedProducts>` insertar:
 
    ```xml
    <IsolatedShell Version="1.0">MyIsolatedShell</IsolatedShell>
    ```
 
-   Reemplace *MyIsolatedShell* por el nombre del paquete de Shell aislado.
+   Reemplace *MyIsolatedShell* por el nombre del paquete de shell aislado.

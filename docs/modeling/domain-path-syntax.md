@@ -1,22 +1,22 @@
 ---
 title: Sintaxis de las rutas de dominio
-description: Obtenga información sobre la sintaxis de la ruta de acceso del dominio y cómo las definiciones de DSL usan una sintaxis similar a la de XPath para buscar elementos específicos en un modelo.
+description: Obtenga información sobre la sintaxis de ruta de acceso de dominio y cómo las definiciones de DSL usan una sintaxis similar a XPath para buscar elementos específicos en un modelo.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, domain path
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c11776576d00306e4b0f3de5e7ff830037c1fefd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 69dfd02dca5ead65d4f36303e547aaeba04cde98
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935162"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389103"
 ---
 # <a name="domain-path-syntax"></a>Sintaxis de las rutas de dominio
 Las definiciones de DSL usan una sintaxis del estilo de XPath para ubicar elementos específicos en un modelo.
@@ -29,9 +29,9 @@ Las definiciones de DSL usan una sintaxis del estilo de XPath para ubicar elemen
 
  ![Relación de referencia CommentReferencesSubjects](../modeling/media/dsl_reference.png)
 
- La sintaxis atraviesa el árbol del modelo. Por ejemplo, la relación de dominio **CommentReferencesSubjects** de la ilustración anterior tiene un rol **asuntos** . La ruta de acceso Segment **/! Subjectt** especifica que la ruta de acceso finaliza en los elementos a los que se accede a través del rol de **sujetos** .
+ La sintaxis atraviesa el árbol del modelo. Por ejemplo, la relación de dominio **CommentReferencesSubjects** de la ilustración anterior tiene un **rol Subjects.** Segmento de ruta **de acceso /! Subjectt** especifica que la ruta de acceso finaliza en los elementos a los que se accede a través del **rol Subjects.**
 
- Cada segmento comienza con el nombre de una relación de dominio. Si el recorrido proviene de un elemento a una relación, el segmento de ruta de acceso aparece como *Relationship. PropertyName*. Si el salto es de un vínculo a un elemento, el segmento de ruta de acceso aparece como *Relationship/! RoleName*.
+ Cada segmento comienza con el nombre de una relación de dominio. Si el recorrido es de un elemento a una relación, el segmento de ruta de acceso aparece *como Relationship.PropertyName*. Si el salto es de un vínculo a un elemento, el segmento de ruta de acceso aparece *como Relationship/! RoleName*.
 
  La sintaxis de una ruta se separa con barras inclinadas. Cada segmento de ruta es un salto desde un elemento a un vínculo (una instancia de una relación) o desde un vínculo a un elemento. Los segmentos de ruta suelen aparecer en parejas. Un segmento de ruta representa un salto desde un elemento a un vínculo, y el siguiente representa un salto desde el vínculo al elemento del otro extremo. (Un vínculo puede ser también origen o destino de una relación).
 

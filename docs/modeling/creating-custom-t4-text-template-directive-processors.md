@@ -6,67 +6,67 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, custom directive processors
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bf17d2a7e3b38e267f0353f71c7cd83826b141bf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 59644275f17eac197074351a777959bb1826a5de
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945336"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389506"
 ---
 # <a name="create-custom-t4-text-template-directive-processors"></a>Crear procesadores de directivas personalizadas para las plantillas de texto T4
 
-El *proceso de transformación de plantillas de texto* toma un archivo de *plantilla de texto* como entrada y genera un archivo de texto como salida. El *motor de transformación de plantillas de texto* controla el proceso y el motor interactúa con un host de transformación de plantillas de texto y uno o varios *procesadores de directivas* de plantilla de texto para completar el proceso. Para obtener más información, vea [el proceso de transformación de plantillas de texto](../modeling/the-text-template-transformation-process.md).
+El *proceso de transformación de plantilla de* texto toma un archivo de plantilla *de* texto como entrada y genera un archivo de texto como salida. El *motor de transformación de* plantilla de texto controla el proceso y el  motor interactúa con un host de transformación de plantilla de texto y uno o varios procesadores de directivas de plantilla de texto para completar el proceso. Para obtener más información, vea [El proceso de transformación Plantilla de texto](../modeling/the-text-template-transformation-process.md).
 
 Para crear un procesador de directivas personalizado, crea una clase que herede de <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> o <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>.
 
-La diferencia entre estos dos es que <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> implementa la interfaz mínima necesaria para obtener los parámetros del usuario y generar el código que genera el archivo de salida de la plantilla. <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> implementa el modelo de diseño requiere/proporciona. <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> controla dos parámetros especiales, `requires` y `provides` .  Por ejemplo, un procesador de directivas personalizado podría aceptar un nombre de archivo del usuario, abrir y leer el archivo y, a continuación, almacenar el texto del archivo en una variable denominada `fileText` . Una subclase de la <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> clase podría tomar un nombre de archivo del usuario como el valor del `requires` parámetro y el nombre de la variable en la que se almacenará el texto como el valor del `provides` parámetro. Este procesador abriría y leyó el archivo y, a continuación, almacena el texto del archivo en la variable especificada.
+La diferencia entre estos dos es que implementa la interfaz mínima necesaria para obtener parámetros del usuario y generar el código que genera el archivo de salida <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> de plantilla. <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> implementa el patrón de diseño requires/provides. <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> controla dos parámetros especiales, `requires` y `provides` .  Por ejemplo, un procesador de directivas personalizado podría aceptar un nombre de archivo del usuario, abrir y leer el archivo y, a continuación, almacenar el texto del archivo en una variable denominada `fileText` . Una subclase de la clase podría tomar un nombre de archivo del usuario como valor del parámetro y el nombre de la variable en la que se almacenará el texto como valor <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> `requires` del `provides` parámetro. Este procesador abriría y leería el archivo y, a continuación, almacenaría el texto del archivo en la variable especificada.
 
-Antes de llamar a un procesador de directivas personalizado desde una plantilla de texto en Visual Studio, debe registrarlo.
+Antes de llamar a un procesador de directivas personalizado desde una plantilla de Visual Studio, debe registrarlo.
 
-Para obtener más información sobre cómo agregar la clave del registro, vea [implementar un procesador de directivas personalizado](../modeling/deploying-a-custom-directive-processor.md).
+Para obtener más información sobre cómo agregar la clave del Registro, vea [Deploying a Custom Directive Processor](../modeling/deploying-a-custom-directive-processor.md).
 
 ## <a name="custom-directives"></a>Directivas personalizadas
 
-Una directiva personalizada tiene el siguiente aspecto:
+Una directiva personalizada tiene este aspecto:
 
 `<#@ MyDirective Processor="MyDirectiveProcessor" parameter1="value1" ... #>`
 
-Puede usar un procesador de directivas personalizado si desea tener acceso a los datos externos o a los recursos de una plantilla de texto.
+Puede usar un procesador de directivas personalizado cuando desee acceder a recursos o datos externos desde una plantilla de texto.
 
-Las distintas plantillas de texto pueden compartir la funcionalidad que proporciona un procesador de directivas único, por lo que los procesadores de directivas proporcionan una manera de factorizar el código para reutilizarlo. La `include` Directiva integrada es similar, porque se puede usar para factorizar código y compartirla entre distintas plantillas de texto. La diferencia es que cualquier funcionalidad que `include` proporciona la Directiva es fija y no acepta parámetros. Si desea proporcionar una funcionalidad común a una plantilla de texto y permitir que la plantilla pase parámetros, debe crear un procesador de directivas personalizado.
+Diferentes plantillas de texto pueden compartir la funcionalidad que proporciona un procesador de directivas única, por lo que los procesadores de directivas proporcionan una manera de factorar el código para su reutilización. La directiva integrada es similar, ya que se puede usar para factormente el código y `include` compartirlo entre diferentes plantillas de texto. La diferencia es que cualquier funcionalidad que proporciona `include` la directiva es fija y no acepta parámetros. Si desea proporcionar funcionalidad común a una plantilla de texto y permitir que la plantilla pase parámetros, debe crear un procesador de directivas personalizado.
 
-Algunos ejemplos de procesadores de directivas personalizados podrían ser:
+Algunos ejemplos de procesadores de directivas personalizadas podrían ser:
 
 - Procesador de directivas para devolver datos de una base de datos que acepta un nombre de usuario y una contraseña como parámetros.
 
-- Un procesador de directivas para abrir y leer un archivo que acepta el nombre del archivo como parámetro.
+- Procesador de directivas para abrir y leer un archivo que acepta el nombre del archivo como parámetro.
 
 ### <a name="principal-parts-of-a-custom-directive-processor"></a>Partes principales de un procesador de directivas personalizado
 
 Para desarrollar un procesador de directivas, debe crear una clase que herede de <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> o <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> .
 
-Los métodos más importantes `DirectiveProcessor` que debe implementar son los siguientes.
+Los métodos `DirectiveProcessor` más importantes que debe implementar son los siguientes.
 
-- `bool IsDirectiveSupported(string directiveName)` -Devuelve `true` si el procesador de directivas puede tratar con la Directiva con nombre.
+- `bool IsDirectiveSupported(string directiveName)` - Devuelve `true` si el procesador de directivas puede tratar con la directiva con nombre.
 
-- `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)` -El motor de plantilla llama a este método para cada aparición de una directiva en la plantilla. El procesador debe guardar los resultados.
+- `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)` - El motor de plantillas llama a este método para cada aparición de una directiva en la plantilla. El procesador debe guardar los resultados.
 
-Después de todas las llamadas a ProcessDirective (), el motor de plantillas llamará a estos métodos:
+Después de todas las llamadas a ProcessDirective(), el motor de creación de temporales llamará a estos métodos:
 
-- `string[] GetReferencesForProcessingRun()` -Devuelve los nombres de los ensamblados que requiere el código de plantilla.
+- `string[] GetReferencesForProcessingRun()` : devuelve los nombres de ensamblados que requiere el código de plantilla.
 
-- `string[] GetImportsForProcessingRun()` -Devuelve los espacios de nombres que se pueden usar en el código de plantilla.
+- `string[] GetImportsForProcessingRun()` : devuelve los espacios de nombres que se pueden usar en el código de plantilla.
 
-- `string GetClassCodeForProcessingRun()` -Devuelve el código de los métodos, las propiedades y otras declaraciones que puede usar el código de plantilla. La forma más fácil de hacerlo es crear una cadena que contenga el código de C# o Visual Basic. Para hacer que el procesador de directivas sea capaz de ser llamado desde una plantilla que usa cualquier lenguaje CLR, puede construir las instrucciones como un árbol CodeDom y devolver después el resultado de serializar el árbol en el lenguaje usado por la plantilla.
+- `string GetClassCodeForProcessingRun()` : devuelve el código de métodos, propiedades y otras declaraciones que el código de plantilla puede usar. La manera más fácil de hacerlo es compilar una cadena que contenga el código de C# Visual Basic código. Para que el procesador de directivas sea capaz de llamarse desde una plantilla que usa cualquier lenguaje CLR, puede construir las instrucciones como un árbol CodeDom y, a continuación, devolver el resultado de serializar el árbol en el lenguaje utilizado por la plantilla.
 
-- Para obtener más información, vea [Tutorial: crear un procesador de directivas personalizado](../modeling/walkthrough-creating-a-custom-directive-processor.md).
+- Para obtener más información, [vea Tutorial: Crear un procesador de directivas personalizado.](../modeling/walkthrough-creating-a-custom-directive-processor.md)
 
 ## <a name="see-also"></a>Vea también
 
-- [Implementar un procesador de directivas personalizado](../modeling/deploying-a-custom-directive-processor.md) explica cómo registrar un procesador de directivas personalizado.
-- [Tutorial: crear un procesador de directivas personalizado](../modeling/walkthrough-creating-a-custom-directive-processor.md) describe cómo crear un procesador de directivas personalizado, cómo registrar y probar el procesador de directivas y cómo dar formato al archivo de salida como HTML.
+- [Implementar un procesador de directivas personalizadas](../modeling/deploying-a-custom-directive-processor.md) explica cómo registrar un procesador de directivas personalizado.
+- [Tutorial: Crear un procesador](../modeling/walkthrough-creating-a-custom-directive-processor.md) de directivas personalizadas describe cómo crear un procesador de directivas personalizado, cómo registrar y probar el procesador de directivas y cómo dar formato HTML al archivo de salida.

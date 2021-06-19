@@ -1,22 +1,22 @@
 ---
 title: Bloques de control de las plantillas de texto
-description: Obtenga información sobre los bloques de control de plantillas de texto y cómo los bloques de control permiten escribir código en la plantilla de texto para modificar la salida.
+description: Obtenga información sobre los bloques de control de plantilla de texto y cómo los bloques de control le permiten escribir código en la plantilla de texto para variar la salida.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, template code
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ff6d09cae433cab0a5411350970325c6ec659184
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 90a4efea7d37b83d3d5ff7a085abcf3439d99263
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924577"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388729"
 ---
 # <a name="text-template-control-blocks"></a>Bloques de control de las plantillas de texto
 Bloques de control le permite escribir código en su plantilla de texto para variar el resultado. Hay tres tipos de bloques de control, que se distinguen por los corchetes de apertura:
@@ -64,7 +64,7 @@ Found another one!
 ```
 
 > [!WARNING]
-> Usar siempre {...} para delimitar instrucciones anidadas que contengan texto sin formato incrustado. El siguiente ejemplo podría no funcionar correctamente:
+> Use siempre {...} para delimitar instrucciones anidadas que contienen texto sin formato incrustado. El siguiente ejemplo podría no funcionar correctamente:
 >
 > `<# if (ShouldPrint) #> Some text. -- WRONG`
 >
@@ -143,11 +143,11 @@ Some text.
 ```
 
 ## <a name="how-to-use-control-blocks"></a>Cómo usar los bloques de control
- Todo el código de todos los bloques de control estándar y de expresiones de una única plantilla (incluido el código de las plantillas incluidas) se combina para formar el método `TransformText()` del código generado. (Para obtener más información sobre cómo incluir otras plantillas de texto con la `include` Directiva, vea [directivas de plantilla de texto T4](../modeling/t4-text-template-directives.md)).
+ Todo el código de todos los bloques de control estándar y de expresiones de una única plantilla (incluido el código de las plantillas incluidas) se combina para formar el método `TransformText()` del código generado. (Para obtener más información sobre cómo incluir otras plantillas de texto con la directiva `include` , vea Directivas de plantilla de texto [T4).](../modeling/t4-text-template-directives.md)
 
  Cuando utilice bloques de control, debe tener en cuenta las siguientes consideraciones:
 
-- **Idioma**. En una plantilla de texto puede utilizar el código C# o Visual Basic. El lenguaje predeterminado es C#, pero puede especificar Visual Basic con el parámetro `language` de la directiva `template`. (Para obtener más información acerca de la `template` Directiva, vea [directivas de plantilla de texto T4](../modeling/t4-text-template-directives.md)).
+- **Idioma**. En una plantilla de texto puede utilizar el código C# o Visual Basic. El lenguaje predeterminado es C#, pero puede especificar Visual Basic con el parámetro `language` de la directiva `template`. (Para obtener más información sobre la `template` directiva , vea Directivas de plantilla de texto [T4).](../modeling/t4-text-template-directives.md)
 
      El lenguaje que usa en los bloques de control no tiene nada que ver con el lenguaje o el formato del texto que genera en una plantilla de texto. Puede generar C# usando el código Visual Basic o viceversa.
 

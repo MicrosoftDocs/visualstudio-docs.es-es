@@ -1,23 +1,23 @@
 ---
 title: 'Tutorial: Generar código mediante plantillas de texto'
-description: Obtenga información sobre la generación de código que le permite generar código de programa fuertemente tipado, pero que se puede cambiar fácilmente cuando cambia el modelo de origen.
+description: Obtenga información sobre que la generación de código permite generar código de programa fuertemente con tipo y que, sin embargo, se puede cambiar fácilmente cuando cambia el modelo de origen.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
 - walkthroughs [text templates], generating application code
 - walkthroughs [text templates]
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e6b824d53c37ef922b8c9580c87a478aef93586
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 22940fb86ab0cfd7262a3ca7845521847add2dff
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924064"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388131"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>Tutorial: Generar código mediante plantillas de texto
 
@@ -30,7 +30,7 @@ El espacio de nombres System.Xml proporciona herramientas completas para cargar 
 En este proyecto de ejemplo, una plantilla lee un archivo XML de ejemplo y genera clases que corresponden a cada tipo de nodo. En el código escrito a mano, puede usar estas clases para navegar por el archivo XML. También puede ejecutar la aplicación en otros archivos que usen los mismos tipos de nodo. El propósito del archivo XML de ejemplo es proporcionar ejemplos de todos los tipos de nodo con los que quiere que trate su aplicación.
 
 > [!NOTE]
-> El [xsd.exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe)de la aplicación, que se incluye con Visual Studio, puede generar clases fuertemente tipadas a partir de archivos XML. La plantilla que se muestra aquí se proporciona como ejemplo.
+> La aplicación [xsd.exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe), que se incluye con Visual Studio, puede generar clases fuertemente con tipo a partir de archivos XML. La plantilla que se muestra aquí se proporciona como ejemplo.
 
 Este es el archivo de ejemplo:
 
@@ -75,17 +75,17 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 }
 ```
 
-En la versión fuertemente tipada, un cambio en el esquema XML produce cambios en las clases. El compilador resalta las partes del código de aplicación que se deben cambiar. En la versión sin tipo que usa código XML genérico, no existe esa posibilidad.
+En la versión fuertemente con tipo, un cambio en el esquema XML produce cambios en las clases. El compilador resalta las partes del código de la aplicación que se deben cambiar. En la versión sin tipo que usa código XML genérico, no existe esa posibilidad.
 
 En este proyecto, se usa un solo archivo de plantilla para generar las clases que hacen posible la versión con tipo.
 
-## <a name="set-up-the-project"></a>Configurar el proyecto
+## <a name="set-up-the-project"></a>Configuración del proyecto
 
 ### <a name="create-or-open-a-c-project"></a>Crear o abrir un proyecto en C#
 
 Puede aplicar esta técnica a cualquier proyecto de código. En este tutorial se usa un proyecto de C#, mientras que para la realización de las pruebas se usa una aplicación de consola.
 
-1. En el menú **archivo** , haga clic en **nuevo** y luego haga clic en **proyecto**.
+1. En el menú **Archivo ,** haga clic **en Nuevo** y, a continuación, haga clic **en Proyecto.**
 
 2. Haga clic en el nodo **Visual C#** y, en el panel **Plantillas** , haga clic en **Aplicación de consola**.
 
@@ -95,7 +95,7 @@ El propósito de este archivo es proporcionar ejemplos de los tipos de nodo XML 
 
 El archivo debe formar parte del proyecto para que la plantilla pueda leerlo, pero no se integrará en la aplicación compilada.
 
-1. En **Explorador de soluciones**, haga clic con el botón secundario en el proyecto, haga clic en **Agregar** y, a continuación, en **nuevo elemento**.
+1. En Explorador de soluciones , **haga** clic con el botón derecho en el proyecto, haga clic **en Agregar** y, a continuación, haga clic en Nuevo **elemento**.
 
 2. En el cuadro de diálogo **Agregar nuevo elemento** , seleccione **Archivo XML** en el panel **Plantillas** .
 
@@ -131,7 +131,7 @@ Una prueba más completa podría comprobar la salida de esta función de prueba 
 
 ### <a name="add-a-text-template-file"></a>Agregar un archivo de plantilla de texto
 
-Agregue un archivo de plantilla de texto y establezca la extensión de salida en *. CS*.
+Agregue un archivo de plantilla de texto y establezca la extensión de salida en *.cs.*
 
 1. En el **Explorador de soluciones**, haga clic con el botón derecho en el proyecto, haga clic en **Agregar** y después en **Nuevo elemento**.
 
@@ -142,7 +142,7 @@ Agregue un archivo de plantilla de texto y establezca la extensión de salida en
 
 3. En la directiva de plantilla del archivo, cambie el atributo `hostspecific` a `true`.
 
-     Este cambio permitirá que el código de plantilla obtenga acceso a los servicios de Visual Studio.
+     Este cambio permitirá que el código de plantilla obtenga acceso a los Visual Studio servicios.
 
 4. En la directiva de salida, cambie el atributo de extensión a ".cs" para que la plantilla genere un archivo de C#. En un proyecto de Visual Basic, lo cambiaría a ".vb".
 
@@ -260,7 +260,7 @@ Si prefiere que los nombres de clase empiecen con una letra mayúscula, puede re
 #>
 ```
 
-En esta fase, el archivo *. CS* generado contiene las declaraciones siguientes:
+En esta fase, el *archivo .cs* generado contiene las siguientes declaraciones:
 
 ```csharp
 public partial class Catalog {}
@@ -270,9 +270,9 @@ public partial class Song {}
 
 Usando este mismo enfoque se pueden agregar más detalles, como propiedades de los nodos secundarios, atributos y texto interno.
 
-### <a name="access-the-visual-studio-api"></a>Acceso a la API de Visual Studio
+### <a name="access-the-visual-studio-api"></a>Acceso a Visual Studio API
 
-Al establecer el `hostspecific` atributo de la `<#@template#>` Directiva, la plantilla puede obtener acceso a la API de Visual Studio. De este modo, la plantilla puede obtener la ubicación de los archivos de proyecto para evitar el uso de una ruta de acceso a archivo absoluta en el código de plantilla.
+Establecer el `hostspecific` atributo de la directiva permite que la plantilla obtenga acceso a la API `<#@template#>` Visual Studio. De este modo, la plantilla puede obtener la ubicación de los archivos de proyecto para evitar el uso de una ruta de acceso a archivo absoluta en el código de plantilla.
 
 ```
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -382,7 +382,7 @@ using System;using System.Collections.Generic;using System.Linq;using System.Xml
 #>
 ```
 
-### <a name="run-the-test-program"></a>Ejecutar el programa de prueba
+### <a name="run-the-test-program"></a>Ejecución del programa de prueba
 
 En la ventana principal de la aplicación de consola, las siguientes líneas ejecutarán el método de prueba. Pulse F5 para ejecutar el programa en modo de depuración:
 
@@ -402,13 +402,13 @@ namespace MyProject
 }
 ```
 
-### <a name="write-and-update-the-application"></a>Escribir y actualizar la aplicación
+### <a name="write-and-update-the-application"></a>Escritura y actualización de la aplicación
 
 Ahora la aplicación se puede escribir en un estilo fuertemente tipado usando las clases generadas en lugar de código XML genérico.
 
 Cuando el esquema XML cambie, se podrán generar fácilmente clases nuevas. El compilador le indicará al desarrollador dónde es necesario actualizar el código de aplicación.
 
-Para volver a generar las clases cuando se cambie el archivo XML de ejemplo, haga clic en **transformar todas las plantillas** en la barra de herramientas **Explorador de soluciones** .
+Para volver a generar las clases cuando se cambia el archivo XML de ejemplo, haga clic en **Transformar** todas las plantillas en la barra **Explorador de soluciones** herramientas.
 
 ## <a name="conclusion"></a>Conclusión
 
@@ -426,7 +426,7 @@ En este tutorial se muestran varias técnicas y ventajas de la generación de c�
 
 En este tutorial, el código de programa se genera realmente desde una instancia del modelo, que es un ejemplo representativo de los archivos XML que la aplicación va a procesar. Siguiendo un enfoque más formal, el esquema XML sería la entrada a la plantilla, en forma de archivo .xsd o definición de lenguaje específico de dominio. Este enfoque puede facilitar que la plantilla determine características como la multiplicidad de una relación.
 
-## <a name="troubleshoot-the-text-template"></a>Solucionar problemas de la plantilla de texto
+## <a name="troubleshoot-the-text-template"></a>Solución de problemas de la plantilla de texto
 
 Si ve errores de compilación o de transformación de la plantilla en la **Lista de errores**, o si el archivo de salida no se genera correctamente, puede solucionar los problemas de la plantilla de texto con las técnicas descritas en [Generar archivos con la utilidad TextTransform](../modeling/generating-files-with-the-texttransform-utility.md).
 

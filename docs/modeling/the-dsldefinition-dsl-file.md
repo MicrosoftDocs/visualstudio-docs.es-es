@@ -1,34 +1,34 @@
 ---
 title: El archivo DslDefinition.dsl
-description: Obtenga información sobre la estructura del archivo DslDefinition. DSL en el proyecto DSL de una solución DSL tools, que define un lenguaje específico de dominio.
+description: Obtenga información sobre la estructura del archivo DslDefinition.dsl en el proyecto Dsl de una solución de herramientas dsl, que define un lenguaje específico del dominio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - Domain-Specific Language, definition file
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c1a9e633bf832021ee2f6262afed108b1515808
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3f2e2ae6e406b8967cb7de49573ce5b26377806e
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924491"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388638"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>El archivo DslDefinition.dsl
 
-En este tema se describe la estructura del archivo DslDefinition. DSL en el proyecto DSL de una [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] solución, que define un *lenguaje específico de dominio*. El archivo DslDefinition. DSL describe las clases y relaciones de un lenguaje específico de dominio, junto con el diagrama, las formas, los conectores, el formato de serialización y el **cuadro de herramientas** del lenguaje específico del dominio y sus herramientas de edición. En una solución de lenguaje específico de dominio, el código que define esas herramientas se genera conforme a la información del archivo DslDefinition.dsl.
+En este tema se describe la estructura del archivo DslDefinition.dsl en el proyecto Dsl de una solución, que define un lenguaje [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] *específico del dominio*. El archivo DslDefinition.dsl describe las clases y relaciones de un lenguaje específico del dominio, junto con  el diagrama, las formas, los conectores, el formato de serialización y el cuadro de herramientas del lenguaje específico del dominio y sus herramientas de edición. En una solución de lenguaje específico de dominio, el código que define esas herramientas se genera conforme a la información del archivo DslDefinition.dsl.
 
-Por lo general, se usa el *Diseñador de lenguaje específico de dominio* para editar el archivo DslDefinition. DSL. Sin embargo, el formato sin procesar es XML por lo que puede abrir un archivo DslDefinition.dsl en un editor XML. Para fines de depuración y extensión, quizás le resulte útil comprender qué información contiene el archivo y cómo está organizada.
+Por lo general, se usa *el Diseñador de lenguaje específico de dominio* para editar el archivo DslDefinition.dsl. Sin embargo, el formato sin procesar es XML por lo que puede abrir un archivo DslDefinition.dsl en un editor XML. Para fines de depuración y extensión, quizás le resulte útil comprender qué información contiene el archivo y cómo está organizada.
 
-Los ejemplos de este tema se toman de la plantilla de solución Diagrama de componentes. Para ver un ejemplo, cree una solución de lenguaje específico de dominio basada en la plantilla de solución Component Models (Modelos de componentes). Después de crear la solución, el archivo DslDefinition.dsl aparece en el diseñador de lenguaje específico de dominio. Cierre el archivo, haga clic con el botón secundario en **Explorador de soluciones**, seleccione **abrir con**, haga clic en **Editor XML** y, a continuación, haga clic en **Aceptar**.
+Los ejemplos de este tema se toman de la plantilla de solución Diagrama de componentes. Para ver un ejemplo, cree una solución de lenguaje específico de dominio basada en la plantilla de solución Component Models (Modelos de componentes). Después de crear la solución, el archivo DslDefinition.dsl aparece en el diseñador de lenguaje específico de dominio. Cierre el archivo, haga clic con el botón derecho **en Explorador de soluciones**, seleccione Abrir con **,** haga clic en **Editor XML** y, a continuación, haga clic **en Aceptar.**
 
 ## <a name="sections-of-the-dsldefinitiondsl-file"></a>Secciones del archivo DslDefinition.dsl
 
-El elemento raíz es \<Dsl> , y sus atributos identifican el nombre del lenguaje específico de dominio, el espacio de nombres y los números de versión principal y secundaria para el control de versiones. El esquema `DslDefinitionModel` define el contenido y la estructura de un archivo DslDefinition.dsl válido.
+El elemento raíz es y sus atributos identifican el nombre del lenguaje específico del dominio, el espacio de nombres y los números de versión principal y secundaria \<Dsl> para el control de versiones. El esquema `DslDefinitionModel` define el contenido y la estructura de un archivo DslDefinition.dsl válido.
 
 Los elementos secundarios del \<Dsl> elemento raíz son los siguientes:
 
@@ -42,7 +42,7 @@ En esta sección se define cada relación del modelo. El origen y el destino rep
 
 ### <a name="types"></a>Tipos
 
-En esta sección se define cada tipo y su espacio de nombres. Las propiedades de dominio tienen dos tipos. `DomainEnumerations` se definen en el modelo y generan tipos en DomainModel.cs. `ExternalTypes` Consulte los tipos que se definen en otra parte (como `String` o `Int32` ) y no generan nada.
+En esta sección se define cada tipo y su espacio de nombres. Las propiedades de dominio tienen dos tipos. `DomainEnumerations` se definen en el modelo y generan tipos en DomainModel.cs. `ExternalTypes` consulte los tipos que se definen en otra parte (como `String` o ) y no generan `Int32` nada.
 
 ### <a name="shapes"></a>Formas
 
@@ -58,7 +58,7 @@ En esta sección se define un esquema de serialización y se proporciona informa
 
 ### <a name="explorerbehavior"></a>ExplorerBehavior
 
-En esta sección se define el modo en que aparece la ventana **Explorador de DSL** cuando el usuario edita un modelo.
+En esta sección se define cómo **aparece la ventana del Explorador** DSL cuando el usuario está editando un modelo.
 
 ### <a name="connectionbuilders"></a>ConnectionBuilders
 
@@ -66,15 +66,15 @@ En esta sección se define un generador de conexiones para cada herramienta de c
 
 ### <a name="diagram"></a>Diagrama
 
-En esta sección se define un diagrama y se usa para especificar propiedades, como el color de fondo, y la clase raíz. (La clase raíz es la clase de dominio representada por el diagrama en conjunto). La sección Diagram también contiene elementos ShapeMap y ConnectorMap, que especifican la forma o el conector que representa cada clase o relación de dominio.
+En esta sección se define un diagrama y se usa para especificar propiedades, como el color de fondo, y la clase raíz. (La clase raíz es la clase de dominio representada por el diagrama como un todo). La sección Diagrama también contiene los elementos ShapeMap y ConnectorMap, que especifican la forma o el conector que representa cada clase o relación de dominio.
 
 ### <a name="designer"></a>Diseñador
 
-En esta sección se define un diseñador (editor), que reúne un **cuadro de herramientas**, la configuración de validación, un diagrama y un esquema de serialización. En la sección Designer también se define la clase raíz del modelo, que normalmente es también la clase raíz del diagrama.
+En esta sección se define un diseñador (editor), que reúne un cuadro de **herramientas,** la configuración de validación, un diagrama y un esquema de serialización. En la sección Designer también se define la clase raíz del modelo, que normalmente es también la clase raíz del diagrama.
 
 ### <a name="explorer"></a>Explorador
 
-En esta sección se identifica el comportamiento del **Explorador de DSL** (definido en la sección XmlSerializationBehavior).
+En esta sección se identifica el **comportamiento del Explorador DSL** (definido en la sección XmlSerializationBehavior).
 
 ## <a name="monikers-in-the-dsldefinitiondsl-file"></a>Monikers en el archivo DslDefinition.dsl
 
@@ -97,11 +97,11 @@ Normalmente, el espacio de nombres del elemento referenciado (en este ejemplo, l
 
 El sistema de moniker requiere que los elementos del mismo nivel en el árbol XML tengan nombres distintos. Por este motivo, se producen errores de validación si intenta guardar una definición específica de dominio que tenga, por ejemplo, dos clases con el mismo nombre. Debe corregir siempre estos errores de nombres duplicados antes de guardar el archivo DslDefinition.dsl para que pueda volver a cargarlo correctamente más adelante.
 
-Cada tipo tiene su propio tipo de moniker: DomainClassMoniker, DomainRelationshipMoniker, etc.
+Cada tipo tiene su propio tipo de moniker: DomainClassMoniker, DomainRelationshipMoniker, y así sucesivamente.
 
 ## <a name="types"></a>Tipos
 
-En la sección Types se especifican todos los tipos que el archivo DslDefinition.dsl contiene como tipos de propiedades. Estos tipos se dividen en dos tipos: tipos externos, como System. String y tipos enumerados.
+En la sección Types se especifican todos los tipos que el archivo DslDefinition.dsl contiene como tipos de propiedades. Estos tipos se divide en dos tipos: tipos externos, como System.String y tipos enumerados.
 
 ### <a name="external-types"></a>Tipos externos
 
@@ -150,7 +150,7 @@ Cada clase tiene un conjunto de propiedades y podría tener una clase base. En e
 </DomainClass>
 ```
 
-`NamedElement` es la base de varias de las otras clases, como `Component` , que tiene sus propias propiedades además de la `Name` propiedad, que hereda de `NamedElement` . El nodo secundario BaseClass contiene una referencia de moniker. Como la clase referenciada está en el mismo espacio de nombres, en el moniker solo se necesita su nombre.
+`NamedElement` es la base de varias de las otras clases, como , que tiene sus propias propiedades además de la propiedad , que `Component` `Name` heredó de `NamedElement` . El nodo secundario BaseClass contiene una referencia de moniker. Como la clase referenciada está en el mismo espacio de nombres, en el moniker solo se necesita su nombre.
 
 ```xml
 <DomainClass Name="Component" Namespace="Fabrikam.CmptDsl5"              DisplayName="Component">
@@ -168,13 +168,13 @@ Cada clase tiene un conjunto de propiedades y podría tener una clase base. En e
 
 Todas las clases de dominio (incluidas relaciones, formas, conectores y diagramas) pueden tener estos atributos y nodos secundarios:
 
-- **ID.** Este atributo es un GUID. Si no proporciona un valor en el archivo, el diseñador de lenguaje específico de dominio creará un valor. (En las ilustraciones de este documento, este atributo se suele omitir para ahorrar espacio).
+- **Id.** Este atributo es un GUID. Si no proporciona un valor en el archivo, el diseñador de lenguaje específico de dominio creará un valor. (En las ilustraciones de este documento, este atributo se suele omitir para ahorrar espacio).
 
 - **Name y Namespace.**  Estos atributos especifican el nombre y el espacio de nombres de la clase en el código generado. Juntos deben ser únicos en el lenguaje específico de dominio.
 
 - **InheritanceModifier.** Este atributo es "abstract", "sealed" o "none".
 
-- **Mostrar.** Este atributo es el nombre que aparece en la ventana **propiedades** . El atributo DisplayName puede contener espacios y otros signos de puntuación.
+- **Displayname.** Este atributo es el nombre que aparece en la **ventana** Propiedades. El atributo DisplayName puede contener espacios y otros signos de puntuación.
 
 - **GeneratesDoubleDerived.**  Si este atributo se establece en True, se generan dos clases y una es una subclase de la otra. Todos los métodos generados están en la clase base y los constructores están en la subclase. Al establecer este atributo puede invalidar los métodos generados en el código personalizado.
 
@@ -206,9 +206,9 @@ El tipo debe ser uno de los que se enumeran en la sección `Types`. Por lo gener
 
 Cada propiedad de dominio puede tener también estos atributos:
 
-- **IsBrowsable**. Este atributo determina si la propiedad aparece en la ventana **propiedades** cuando el usuario hace clic en un objeto de la clase primaria.
+- **IsBrowsable**. Este atributo determina si la propiedad aparece en la ventana **Propiedades** cuando el usuario hace clic en un objeto de la clase primaria.
 
-- **IsUIReadOnly**. Este atributo determina si el usuario puede cambiar la propiedad en la ventana **propiedades** o a través de un elemento Decorator en el que se presenta la propiedad.
+- **IsUIReadOnly**. Este atributo determina si el usuario puede cambiar la propiedad en la ventana **Propiedades** o a través de un decorador en el que se presenta la propiedad.
 
 - **Tipo**. Este atributo se puede establecer en Normal, Calculated o CustomStorage. Si establece este atributo en Calculated, debe proporcionar código personalizado que determine el valor, y la propiedad será de solo lectura. Si establece este atributo en CustomStorage, debe proporcionar código que obtenga y establezca los valores.
 
@@ -216,7 +216,7 @@ Cada propiedad de dominio puede tener también estos atributos:
 
 - `DefaultValue`. Si ha especificado este atributo, el valor que especificó se asigna a este atributo para las nuevas instancias de esta clase. Si `IsElementName` está establecido, el atributo DefaultValue especifica la parte inicial de la nueva cadena.
 
-- **Categoría** es el encabezado en el que la propiedad aparecerá en la ventana **propiedades** .
+- **Categoría** es el encabezado bajo el que aparecerá la propiedad en la **ventana** Propiedades.
 
 ## <a name="relationships"></a>Relaciones
 
@@ -228,7 +228,7 @@ Por ejemplo, la relación Connection vincula miembros de la clase OutPort con mi
 
 Cada relación contiene roles de origen y de destino que tienen los siguientes atributos:
 
-- El `RolePlayer` atributo hace referencia a la clase de dominio de las instancias vinculadas: Outport para el origen, inport para el destino.
+- El atributo hace referencia a la clase de dominio de las instancias `RolePlayer` vinculadas: OutPort para el origen, InPort para el destino.
 
 - El atributo `Multiplicity` tiene cuatro valores posibles (ZeroMany, ZeroOne, One y OneMany). Este atributo hace referencia al número de vínculos de esta relación que se pueden asociar con un encargado de rol.
 
@@ -263,13 +263,13 @@ Cada relación contiene roles de origen y de destino que tienen los siguientes a
 
 Además de los atributos y nodos secundarios de que disponen todas las clases, cada relación tiene estos atributos:
 
-- **IsEmbedding**. Este atributo booleano especifica si la relación forma parte del árbol de incrustación. Cada modelo debe formar un árbol con sus relaciones de incrustación. Por lo tanto, cada clase de dominio debe ser el destino de, al menos, una relación de incrustación, a menos que sea la raíz del modelo.
+- **IsEneo de .** Este atributo booleano especifica si la relación forma parte del árbol de incrustación. Cada modelo debe formar un árbol con sus relaciones de incrustación. Por lo tanto, cada clase de dominio debe ser el destino de, al menos, una relación de incrustación, a menos que sea la raíz del modelo.
 
 - **AllowsDuplicates**. Este atributo booleano, cuyo valor es False de forma predeterminada, se aplica solo a relaciones que tienen una multiplicidad "Many" en el origen y el destino. Determina si los usuarios del lenguaje pueden conectar un único par de elementos de origen y destino con más de un vínculo de la misma relación.
 
 ## <a name="designer-and-toolbox-tabs"></a>Pestañas del diseñador y del cuadro de herramientas
 
-La parte principal de la sección del **Diseñador** del archivo DslDefinition. DSL son los elementos **ToolboxTab** . Un diseñador puede tener varios de estos elementos, cada uno de los cuales representa una sección con una punta en el **cuadro de herramientas** del diseñador generado. Cada elemento **ToolboxTab** puede contener uno o más elementos **ElementTool** , elementos **ConnectionTool** o ambos.
+La parte principal de la **sección Diseñador** del archivo DslDefinition.dsl son los **elementos ToolboxTab.** Un diseñador puede tener varios de estos elementos, cada uno de los cuales representa una sección con encabezado en el cuadro de herramientas del **diseñador generado.** Cada **elemento ToolboxTab** puede contener uno o varios **elementos ElementTool,** **elementos ConnectionTool** o ambos.
 
 Las herramientas de elemento pueden crear instancias de una clase de dominio específica. Cuando el usuario arrastra una herramienta de elemento al diagrama, el resultado está determinado por las directivas de combinación de elementos, tal y como se describe en la sección sobre las directivas de combinación de elementos más adelante en este tema.
 
@@ -285,7 +285,7 @@ Las rutas aparecen en el archivo DslDefinition.dsl en las etiquetas `<DomainPath
 
 Una ruta está compuesta por una secuencia de segmentos. Cada segmento es un salto desde un objeto a un vínculo o desde un vínculo a un objeto. Por lo tanto, los saltos suelen alternarse en una ruta larga. El primer salto se realiza desde un objeto a un vínculo, el segundo salto desde el objeto al otro extremo del vínculo, el tercer salto hacia el siguiente vínculo, etc. La excepción ocasional a esta secuencia es cuando una relación es ella misma el origen o el destino de otra relación.
 
-Cada segmento comienza por un nombre de relación. En un salto de objeto a vínculo, la relación precede a un punto y el nombre de la propiedad: " `Relationship . Property` ". En un salto de vínculo a objeto, la relación precede a un signo de exclamación y el nombre de rol: " `Relationship ! Role` ".
+Cada segmento comienza por un nombre de relación. En un salto de objeto a vínculo, la relación precede a un punto y el nombre de propiedad: " `Relationship . Property` ". En un salto de vínculo a objeto, la relación precede a un signo de exclamación y al nombre del rol: " `Relationship ! Role` ".
 
 El ejemplo Component Diagram (Diagrama de componentes) contiene una ruta en la ParentElementPath del ShapeMap para InPort. Esta ruta comienza de la siguiente manera:
 
@@ -311,7 +311,7 @@ Sin embargo, debe hacer ambos saltos explícitamente en la sintaxis de la ruta. 
 
 ## <a name="element-merge-directives"></a>Directivas de combinación de elementos
 
-Cuando el usuario del lenguaje arrastra un elemento desde el **cuadro de herramientas** hasta el diagrama, se construye una instancia de la clase de la herramienta. Además, se crean vínculos entre esa instancia y los elementos de modelo existentes. Algunos elementos, como los componentes o los comentarios, se crean cuando el usuario del lenguaje los arrastra desde el **cuadro de herramientas** hasta una parte en blanco del diagrama. Otros elementos se crean cuando el usuario del lenguaje los arrastra a otros elementos de host. Por ejemplo, se crea un OutPort o un InPort cuando el usuario del lenguaje lo arrastra a un componente.
+Cuando el usuario del lenguaje  arrastra un elemento desde el Cuadro de herramientas al diagrama, se construye una instancia de la clase de la herramienta. Además, se crean vínculos entre esa instancia y los elementos de modelo existentes. Algunos elementos, como componentes o comentarios, se crean cuando  el usuario de lenguaje los arrastra desde el Cuadro de herramientas a una parte en blanco del diagrama. Otros elementos se crean cuando el usuario del lenguaje los arrastra a otros elementos de host. Por ejemplo, se crea un OutPort o un InPort cuando el usuario del lenguaje lo arrastra a un componente.
 
 Una posible clase host, como Component, aceptará un nuevo elemento solo si la clase host tiene una directiva de combinación de elementos para la clase del nuevo elemento. Por ejemplo, el nodo DomainClass con Name="Component" contiene:
 
@@ -366,21 +366,21 @@ Cada nodo `XmlClassData` incluye estos nodos secundarios y atributos:
 
 - Un nodo moniker, que hace referencia a la clase a la que se aplican los datos.
 
-- **XmlPropertyData** para cada propiedad que se define en la clase.
+- **XmlPropertyData** para cada propiedad definida en la clase .
 
-- **XmlRelationshipData** para cada relación que se encuentra en el origen de la clase. (Las relaciones también tienen sus propios nodos XmlClassData).
+- **XmlRelationshipData para** cada relación que tiene como origen la clase . (Las relaciones también tienen sus propios nodos XmlClassData).
 
-- Atributo de cadena **TypeName** , que determina el nombre de la clase auxiliar de serialización en el código generado.
+- Atributo de cadena **TypeName,** que determina el nombre de la clase auxiliar de serialización en el código generado.
 
-- Cadena **ElementName** , que determina la etiqueta XML de las instancias serializadas de esta clase. Por convención, ElementName suele ser igual que el nombre de la clase, excepto que la primera letra es minúscula. Por ejemplo, un archivo de modelo de muestra comienza con lo siguiente:
+- **Cadena ElementName,** que determina la etiqueta XML de instancias serializadas de esta clase. Por convención, ElementName suele ser igual que el nombre de la clase, excepto que la primera letra es minúscula. Por ejemplo, un archivo de modelo de muestra comienza con lo siguiente:
 
     ```xml
     <componentModel ...
     ```
 
-- **MonikerElementName** en los archivos de modelo serializados del usuario. Este atributo incorpora un moniker que hace referencia a esta clase.
+- **MonikerElementName en** los archivos de modelo serializados del usuario. Este atributo incorpora un moniker que hace referencia a esta clase.
 
-- **MonikerAttributeName**, que identifica el nombre del atributo XML dentro de un moniker. En este fragmento del archivo serializado de un usuario, el autor del lenguaje específico del dominio definía **MonikerElementName** como "inPortMoniker" y **MonikerAttributeName** como "path":
+- **MonikerAttributeName**, que identifica el nombre del atributo XML dentro de un moniker. En este fragmento del archivo serializado de un usuario, el autor del lenguaje específico del dominio definió **MonikerElementName** como "inPortMoniker" y **MonikerAttributeName** como "ruta de acceso":
 
     ```xml
     <inPortMoniker path="//Component2/InPort1" />
@@ -392,13 +392,13 @@ Para cada herramienta de conexión se define un generador de conexiones. Cada ge
 
 ### <a name="xmlpropertydata"></a>XmlPropertyData
 
-Un atributo **DomainPropertyMoniker** identifica la propiedad a la que hacen referencia los datos. Este atributo debe ser una propiedad de la clase de ClassData contenedora.
+Un **atributo DomainPropertyMoniker** identifica la propiedad a la que hace referencia los datos. Este atributo debe ser una propiedad de la clase de ClassData contenedora.
 
-El atributo **XmlName** proporciona el nombre de atributo correspondiente tal como debería aparecer en el XML. Por convención, esta cadena es igual que el nombre de la propiedad, excepto que la primera letra es minúscula.
+El **atributo XmlName** proporciona el nombre de atributo correspondiente tal como debe aparecer en el XML. Por convención, esta cadena es igual que el nombre de la propiedad, excepto que la primera letra es minúscula.
 
-De forma predeterminada, el atributo de **representación** está establecido en atributo. Si la **representación** está establecida en elemento, se crea un nodo secundario en el XML. Si la **representación** está establecida en omitir, no se serializa la propiedad.
+De forma predeterminada, el **atributo Representación** se establece en Atributo. Si **Representación** se establece en Elemento, se crea un nodo secundario en el XML. Si **Representación** se establece en Omitir, la propiedad no se serializa.
 
-Los atributos **IsMonikerKey** y **IsMonikerQualifier** proporcionan a una propiedad un rol en la identificación de las instancias de la clase primaria. Puede establecer **IsMonikerKey** en true para una propiedad definida en o heredada por una clase. Este atributo identifica una instancia individual de la clase primaria. La propiedad que establece en `IsMonikerKey` suele ser un nombre u otro identificador clave. Por ejemplo, la propiedad de cadena `Name` es la clave de moniker de NamedElement y sus clases derivadas. Cuando el usuario guarda un modelo en un archivo, este atributo debe contener valores únicos para cada instancia, entre sus elementos del mismo nivel en el árbol de relaciones de incrustación.
+Los **atributos IsMonikerKey** e **IsMonikerQualifier** dan a una propiedad un rol para identificar instancias de la clase primaria. Puede establecer **IsMonikerKey en** true para una propiedad definida en o heredada por una clase. Este atributo identifica una instancia individual de la clase primaria. La propiedad que establece en `IsMonikerKey` suele ser un nombre u otro identificador clave. Por ejemplo, la propiedad de cadena `Name` es la clave de moniker de NamedElement y sus clases derivadas. Cuando el usuario guarda un modelo en un archivo, este atributo debe contener valores únicos para cada instancia, entre sus elementos del mismo nivel en el árbol de relaciones de incrustación.
 
 En el archivo de modelo serializado, el moniker completo de un elemento es una ruta desde la raíz del modelo hacia abajo en el árbol de relaciones de incrustación, y cita la clave de moniker en cada punto. Por ejemplo, InPorts se incrustan en Components que, a su vez, se incrustan en la raíz del modelo. Por lo tanto, un moniker válido es:
 
@@ -406,17 +406,17 @@ En el archivo de modelo serializado, el moniker completo de un elemento es una r
 <inPortMoniker name="//Component2/InPort1" />
 ```
 
-Puede establecer el atributo **IsMonikerQualifier** para una propiedad de cadena y proporcionar una manera adicional de construir el nombre completo de un elemento. Por ejemplo, en el archivo DslDefinition. DSL, el **espacio de nombres** es un calificador de moniker.
+Puede establecer el **atributo IsMonikerQualifier** para una propiedad de cadena y proporcionar una manera adicional de construir el nombre completo de un elemento. Por ejemplo, en el archivo DslDefinition.dsl, **Namespace** es un calificador de moniker.
 
 ### <a name="xmlrelationshipdata"></a>XmlRelationshipData
 
 Dentro de un archivo de modelo serializado, los vínculos (tanto de relaciones de incrustación como de referencia) se representan mediante nodos secundarios del extremo de origen de la relación. En el caso de las relaciones de incrustación, el nodo secundario contiene un subárbol. En las relaciones de referencia, el nodo secundario contiene un moniker que hace referencia a otra parte del árbol.
 
-El atributo **XmlRelationshipData** de un atributo **XmlClassData** define exactamente cómo se anidan los nodos secundarios dentro del elemento de origen. Cada relación que es un origen en la clase de dominio tiene un atributo **XmlRelationshipData** .
+El **atributo XmlRelationshipData de** un atributo **XmlClassData** define exactamente cómo se anidan los nodos secundarios dentro del elemento de origen. Cada relación que es un origen de la clase Domain tiene un **atributo XmlRelationshipData.**
 
-El atributo **DomainRelationshipMoniker** identifica una de las relaciones con origen en la clase.
+El **atributo DomainRelationshipMoniker** identifica una de las relaciones con origen en la clase .
 
-El atributo **RoleElementName** proporciona el nombre de la etiqueta XML que incluye el nodo secundario en los datos serializados.
+El **atributo RoleElementName** proporciona el nombre de etiqueta XML que incluye el nodo secundario en los datos serializados.
 
 Por ejemplo, el archivo DslDefinition.dsl contiene:
 
@@ -440,7 +440,7 @@ Por lo tanto, el archivo serializado contiene:
    </ports> ...
 ```
 
-Si el atributo **UseFullForm** está establecido en true, se introduce una capa adicional de anidamiento. Este nivel representa la propia relación. El atributo se debe establecer en True si la relación tiene propiedades.
+Si el **atributo UseFullForm** está establecido en true, se introduce una capa adicional de anidamiento. Este nivel representa la propia relación. El atributo se debe establecer en True si la relación tiene propiedades.
 
 ```xml
 <XmlClassData ElementName="outPort">
@@ -467,7 +467,7 @@ El archivo serializado contiene:
 
 (La relación de conexión tiene su propios datos de clase XML, que proporcionan los nombres de elementos y atributos).
 
-Si el atributo **OmitElement** está establecido en true, se omite el nombre del rol de relación, que abrevia el archivo serializado y no es ambiguo si las dos clases no tienen más de una relación. Por ejemplo:
+Si el **atributo OmitElement** se establece en true, se omite el nombre del rol de relación, lo que abrevia el archivo serializado y no es ambiguo si las dos clases no tienen más de una relación. Por ejemplo:
 
 ```xml
 <component name="Component3">
@@ -480,9 +480,9 @@ Si el atributo **OmitElement** está establecido en true, se omite el nombre del
 
 El archivo DslDefinition.dsl es un archivo serializado conforme a la definición de lenguaje específico de dominio. Los siguientes son algunos ejemplos de definiciones de serialización XML:
 
-- **DSL** es el nodo RootClass y la clase del diagrama. DomainClass, DomainRelationship y otros elementos están incrustados en `Dsl`.
+- **Dsl** es el nodo RootClass y la clase del diagrama. DomainClass, DomainRelationship y otros elementos están incrustados en `Dsl`.
 
-- **Classes** es el **RoleElementName** de la relación entre Domain-Specific Language y DomainClass.
+- **Las** clases son **roleelementname** de la relación entre Domain-Specific Language y DomainClass.
 
 ```xml
 <Dsl Name="CmptDsl5" ...>
@@ -490,7 +490,7 @@ El archivo DslDefinition.dsl es un archivo serializado conforme a la definición
     <DomainClass Name="NamedElement" InheritanceModifier="Abstract" ...
 ```
 
-- El atributo **XmlSerializationBehavior** está incrustado en el `Dsl` atributo, pero el atributo **OmitElement** se ha establecido en la relación de incrustación. Por lo tanto, no interviene ningún atributo `RoleElementName`. Por el contrario, un atributo **ClassData** es el `RoleElementName` atributo de la relación de incrustación entre un atributo **XmlSerializationBehavior** y un atributo **XmlClassData** .
+- El **atributo XmlSerializationBehavior** se incrusta en el atributo , pero el atributo OmitElement se ha establecido `Dsl` en la relación de inserción.  Por lo tanto, no interviene ningún atributo `RoleElementName`. Por el contrario, un **atributo ClassData** es el atributo de la relación de inserción entre un `RoleElementName` atributo **XmlSerializationBehavior** y un **atributo XmlClassData.**
 
 ```xml
 <Dsl Name="CmptDsl5" ...> ...
@@ -500,7 +500,7 @@ El archivo DslDefinition.dsl es un archivo serializado conforme a la definición
       <XmlClassData ...>...</XmlClassData>
 ```
 
-- ConnectorHasDecorators es la relación de incrustación entre `Connector` y `Decorator`. `UseFullForm` se ha establecido para que el nombre de la relación aparezca con la lista de propiedades de cada vínculo del objeto de conector. Sin embargo, `OmitElement` también se ha establecido para ningún `RoleElementName` contenga varios vínculos que están incrustados dentro de `Connector`:
+- ConnectorHasDecorators es la relación de incrustación entre `Connector` y `Decorator`. `UseFullForm` se ha establecido para que el nombre de la relación aparezca con su lista de propiedades para cada vínculo del objeto Connector. Sin embargo, `OmitElement` también se ha establecido para ningún `RoleElementName` contenga varios vínculos que están incrustados dentro de `Connector`:
 
 ```xml
 <Connector Name="AssociationLink" ...>
@@ -519,7 +519,7 @@ Las definiciones de formas y conectores heredan los atributos y nodos secundario
 
 - Atributos `Color` y `Line``Style`.
 
-- **ExposesFillColorAsProperty** y varios atributos similares. Estos atributos booleanos hacen que la propiedad correspondiente sea variable para el usuario. Normalmente, cuando un usuario del lenguaje hace clic en una forma del diagrama, las propiedades que aparecen en la ventana **propiedades** son las de la instancia de clase de dominio a la que se asigna la forma. Si `ExposesFillColorAsProperty` se establece en True, también se muestra una propiedad de la propia forma.
+- **ExponeFillColorAsProperty y** varios atributos similares. Estos atributos booleanos hacen que la propiedad correspondiente sea variable para el usuario. Por lo general, cuando un usuario de lenguaje hace clic  en una forma del diagrama, las propiedades que aparecen en la ventana Propiedades son las de la instancia de clase de dominio a la que está asignada la forma. Si `ExposesFillColorAsProperty` se establece en True, también se muestra una propiedad de la propia forma.
 
 - **ShapeHasDecorators**. Se crea una instancia de este atributo para cada texto, icono o elemento Decorator de expansión/contracción. (En el archivo DslDefinition.dsl, `ShapeHasDecorators` es una relación con `UseFullForm` establecido en True).
 

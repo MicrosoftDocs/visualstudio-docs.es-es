@@ -1,27 +1,27 @@
 ---
 title: Ampliar diagramas de dependencia
-description: Obtenga información sobre cómo escribir código para crear y actualizar diagramas de dependencia, y cómo validar la estructura del código del programa con diagramas de dependencia en Visual Studio.
+description: Obtenga información sobre cómo escribir código para crear y actualizar diagramas de dependencias y cómo validar la estructura del código del programa con los diagramas de dependencias de Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams, creating extensions
 - layer models
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 10e0e07b6a8ee4245e19628e03bfdf484f94d34c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c2ed8700cfb18aacf41464bfdfacaedac557bb00
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935149"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388911"
 ---
 # <a name="extend-dependency-diagrams"></a>Ampliar diagramas de dependencia
 
-Puede escribir código para crear y actualizar diagramas de dependencia y para validar la estructura del código del programa con diagramas de dependencia en Visual Studio. Puede agregar los comandos que aparecen en el menú contextual de los diagramas, personalizar gestos de arrastrar y colocar, así como obtener acceso al modelo de capas desde las plantillas de texto. Puede empaquetar estas extensiones en una extensión de integración de Visual Studio (VSIX) y distribuirla a otros usuarios de Visual Studio.
+Puede escribir código para crear y actualizar diagramas de dependencias y para validar la estructura del código del programa con los diagramas de dependencias de Visual Studio. Puede agregar los comandos que aparecen en el menú contextual de los diagramas, personalizar gestos de arrastrar y colocar, así como obtener acceso al modelo de capas desde las plantillas de texto. Puede empaquetar estas extensiones en una extensión de integración de Visual Studio (VSIX) y distribuirla a otros usuarios de Visual Studio.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,7 +35,7 @@ Necesita tener instalado lo siguiente en el equipo donde desea desarrollar las e
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-Debe tener una edición adecuada de Visual Studio instalada en el equipo en el que desea ejecutar las extensiones de capa. Para ver qué ediciones de Visual Studio admiten diagramas de dependencia, vea [compatibilidad de la edición con las herramientas de arquitectura y modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Debe tener una edición adecuada de Visual Studio instalado en el equipo donde desea ejecutar las extensiones de capa. Para ver qué ediciones de Visual Studio admiten diagramas de dependencias, consulte Compatibilidad de edición [con herramientas de arquitectura y modelado.](../modeling/analyze-and-model-your-architecture.md#VersionSupport)
 
 ## <a name="see-also"></a>Vea también
 

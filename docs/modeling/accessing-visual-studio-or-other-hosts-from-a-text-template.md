@@ -5,30 +5,30 @@ ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ce008d0a14cbd75cf8a46599ff67bd9e799ee8ce
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3cde4b2afe6d09c3958bbabe7a5669a13f8de8f2
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99908883"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389129"
 ---
-# <a name="access-visual-studio-or-other-hosts-from-a-text-template"></a>Acceso a Visual Studio u otros hosts desde una plantilla de texto
+# <a name="access-visual-studio-or-other-hosts-from-a-text-template"></a>Acceso Visual Studio u otros hosts desde una plantilla de texto
 
-En una plantilla de texto, puede utilizar los métodos y las propiedades que expone el host que ejecuta la plantilla. Visual Studio es un ejemplo de un host.
+En una plantilla de texto, puede usar métodos y propiedades expuestos por el host que ejecuta la plantilla. Visual Studio es un ejemplo de un host.
 
 > [!NOTE]
-> Puede usar métodos y propiedades de host en las plantillas de texto normales, pero no en las plantillas de texto *preprocesadas* .
+> Puede usar métodos host y propiedades en plantillas de texto normales, pero no en plantillas *de texto preprocesado.*
 
-## <a name="obtain-access-to-the-host"></a>Obtención de acceso al host
+## <a name="obtain-access-to-the-host"></a>Obtener acceso al host
 
-Para tener acceso al host, establezca `hostspecific="true"` en la `template` Directiva. Ahora puede usar `this.Host` , que tiene el tipo [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). El tipo [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) tiene miembros que se pueden usar para resolver nombres de archivo y registrar errores, por ejemplo.
+Para acceder al host, establezca `hostspecific="true"` en la `template` directiva . Ahora puede usar `this.Host` , que tiene el tipo [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). El [tipo ITextTemplatingEngineHost tiene](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) miembros que puede usar para resolver errores de registro y nombres de archivo, por ejemplo.
 
-### <a name="resolve-file-names"></a>Resolución de nombres de archivo
+### <a name="resolve-file-names"></a>Resolver nombres de archivo
 
 Para buscar la ruta de acceso completa de un archivo con respecto a la plantilla de texto, use `this.Host.ResolvePath()` .
 
@@ -46,7 +46,7 @@ Content of myFile is:
 
 ### <a name="display-error-messages"></a>Mostrar mensajes de error
 
-En este ejemplo se registran mensajes al transformar la plantilla. Si el host es Visual Studio, los errores se agregan a la **lista de errores**.
+Este ejemplo registra mensajes al transformar la plantilla. Si el host está Visual Studio, los errores se agregan a la **lista de errores**.
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>
@@ -62,13 +62,13 @@ En este ejemplo se registran mensajes al transformar la plantilla. Si el host es
 #>
 ```
 
-## <a name="use-the-visual-studio-api"></a>Uso de la API de Visual Studio
+## <a name="use-the-visual-studio-api"></a>Uso de Visual Studio API
 
-Si está ejecutando una plantilla de texto en Visual Studio, puede usar `this.Host` para obtener acceso a los servicios proporcionados por Visual Studio y los paquetes o extensiones que se cargan.
+Si ejecuta una plantilla de texto en Visual Studio, puede usar para acceder a los servicios proporcionados por Visual Studio y los paquetes o extensiones que `this.Host` se cargan.
 
-Establezca HostSpecific = "true" y conviértalo `this.Host` en <xref:System.IServiceProvider> .
+Establezca hostspecific="true" y `this.Host` consítelo en <xref:System.IServiceProvider> .
 
-En este ejemplo se obtiene la API de Visual Studio, <xref:EnvDTE.DTE> , como un servicio:
+En este ejemplo se obtiene Visual Studio API, <xref:EnvDTE.DTE> , como servicio:
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>
@@ -84,4 +84,4 @@ Number of projects in this solution: <#=  dte.Solution.Projects.Count #>
 
 ## <a name="use-hostspecific-with-template-inheritance"></a>Uso de hostSpecific con la herencia de plantillas
 
-Especifique `hostspecific="trueFromBase"` si también utiliza el `inherits` atributo y si hereda de una plantilla que especifica `hostspecific="true"` . Si no lo hace, es posible que obtenga una advertencia del compilador que indica que la propiedad se ha `Host` declarado dos veces.
+Especifique `hostspecific="trueFromBase"` si también usa el atributo y si `inherits` hereda de una plantilla que especifica `hostspecific="true"` . Si no lo hace, es posible que reciba una advertencia del compilador de que la propiedad `Host` se ha declarado dos veces.

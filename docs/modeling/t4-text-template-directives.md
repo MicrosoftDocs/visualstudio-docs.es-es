@@ -1,6 +1,6 @@
 ---
 title: Directivas de plantilla de texto T4
-description: Obtenga información sobre las directivas de plantilla de prueba de T4 y cómo proporcionan instrucciones al motor de transformación de plantillas de texto.
+description: Obtenga información sobre las directivas de plantilla de prueba T4 y cómo proporcionan instrucciones al motor de transformación de plantillas de texto.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,17 +11,17 @@ helpviewer_keywords:
 - text templates, output directive
 - text templates, directives
 - text templates, template directive
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ba13cbd31d41e656533aa5b13cf2a09503e58e8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0d9b7ca189ced11eea57e175a06b81161090070b
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924598"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388742"
 ---
 # <a name="t4-text-template-directives"></a>Directivas de plantilla de texto T4
 
@@ -79,4 +79,4 @@ Normalmente, las directivas son los primeros elementos en un archivo de plantill
 <#@ CleanupBehavior processor="T4VSHost" CleanupAfterProcessingtemplate="true" #>
 ```
 
-También puede crear sus propias directivas. Para obtener más información, vea [crear procesadores de directivas de plantillas de texto T4 personalizadas](../modeling/creating-custom-t4-text-template-directive-processors.md). Si utiliza el SDK de visualización y modelado para crear un lenguaje específico del dominio (ADSL), se generará un procesador de directivas como parte del ADSL.
+También puede crear sus propias directivas. Para obtener más información, vea [Creating Custom T4 Text Template Directive Processors](../modeling/creating-custom-t4-text-template-directive-processors.md). Si utiliza el SDK de visualización y modelado para crear un lenguaje específico del dominio (ADSL), se generará un procesador de directivas como parte del ADSL.

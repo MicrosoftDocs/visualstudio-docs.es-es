@@ -1,26 +1,26 @@
 ---
 title: Invocar la transformación de texto en una extensión de VS
-description: Obtenga información acerca de cómo puede usar el servicio de plantillas de texto para transformar las plantillas de texto. Obtenga también información sobre cómo obtener el servicio STextTemplating y convertirlo en ITextTemplating.
+description: Obtenga información sobre cómo puede usar el servicio de plantillas de texto para transformar plantillas de texto. Obtenga también información sobre cómo obtener el servicio STextTemplating y convertirlo en ITextTemplating.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a90ae2a1d5460cd62ff1ccae1542f21c4002433
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 71f376cbe0ffd6c2716802977f1570aa5036fcdb
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99860898"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386779"
 ---
-# <a name="invoke-text-transformation-in-a-visual-studio-extension"></a>Invocar la transformación de texto en una extensión de Visual Studio
+# <a name="invoke-text-transformation-in-a-visual-studio-extension"></a>Invocación de la transformación de texto en Visual Studio extensión
 
-Si está escribiendo una extensión de Visual Studio, como un comando de menú o un [lenguaje específico de dominio](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md), puede utilizar el servicio de plantillas de texto para transformar las plantillas de texto. Obtiene el servicio [STextTemplating](/previous-versions/visualstudio/visual-studio-2012/bb932394(v=vs.110)) y lo convierte en [ITextTemplating](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110)).
+Si está escribiendo una extensión Visual Studio, como un comando de menú o un lenguaje específico del [dominio,](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)puede usar el servicio de plantillas de texto para transformar plantillas de texto. Obtenga el [servicio STextTemplating](/previous-versions/visualstudio/visual-studio-2012/bb932394(v=vs.110)) y conéctelo a [ITextTemplating](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110)).
 
-## <a name="get-the-text-templating-service"></a>Obtener el servicio de plantillas de texto
+## <a name="get-the-text-templating-service"></a>Obtener el servicio de templación de texto
 
 ```csharp
 using Microsoft.VisualStudio.TextTemplating;
@@ -40,7 +40,7 @@ string result = t4.ProcessTemplate(filePath, System.IO.File.ReadAllText(filePath
 
  Puede pasar parámetros en la plantilla. Dentro de la plantilla, puede obtener los valores de parámetro mediante la directiva `<#@parameter#>`.
 
- Para el tipo de parámetro, debe utilizar un tipo que sea serializable o que pueda calcular las referencias. Es decir, el tipo se debe declarar con <xref:System.SerializableAttribute> o se debe derivar desde <xref:System.MarshalByRefObject>. Esta restricción es necesaria porque la plantilla de texto se ejecuta en un AppDomain independiente. Todos los tipos integrados, como **System. String** y **System. Int32** , son serializables.
+ Para el tipo de parámetro, debe utilizar un tipo que sea serializable o que pueda calcular las referencias. Es decir, el tipo se debe declarar con <xref:System.SerializableAttribute> o se debe derivar desde <xref:System.MarshalByRefObject>. Esta restricción es necesaria porque la plantilla de texto se ejecuta en un AppDomain independiente. Todos los tipos integrados, **como System.String** y **System.Int32,** son serializables.
 
  Para pasar valores de parámetro, el código de llamada puede colocar los valores en el diccionario `Session` o en el <xref:System.Runtime.Remoting.Messaging.CallContext>.
 
@@ -77,11 +77,11 @@ string result = t4.ProcessTemplate("",
 //     Test: Hello    07/06/2010 12:37:45    42
 ```
 
-## <a name="error-reporting-and-the-output-directive"></a>Informes de errores y la Directiva de salida
+## <a name="error-reporting-and-the-output-directive"></a>Informes de errores y la directiva de salida
 
-Cualquier error que se produzca durante el procesamiento se mostrará en la ventana de error de Visual Studio. Además, se puede notificar los errores especificando una devolución de llamada que implemente [ITextTemplatingCallback](/previous-versions/visualstudio/visual-studio-2012/bb932397(v=vs.110)).
+Los errores que surjan durante el procesamiento se mostrarán en la ventana Visual Studio error. Además, puede recibir una notificación de errores especificando una devolución de llamada que implemente [ITextTemplatingCallback](/previous-versions/visualstudio/visual-studio-2012/bb932397(v=vs.110)).
 
-Si desea escribir la cadena de resultado a un archivo, puede que desee conocer la extensión de archivo y codificación que se han especificado en la directiva `<#@output#>` de la plantilla. Esta información también se pasará a la devolución de llamada. Para obtener más información, consulte [la Directiva de salida T4](../modeling/t4-output-directive.md).
+Si desea escribir la cadena de resultado a un archivo, puede que desee conocer la extensión de archivo y codificación que se han especificado en la directiva `<#@output#>` de la plantilla. Esta información también se pasará a la devolución de llamada. Para obtener más información, vea [Directiva de salida T4](../modeling/t4-output-directive.md).
 
 ```csharp
 void ProcessMyTemplate(string MyTemplateFile)
@@ -132,7 +132,7 @@ El código se puede probar con un archivo de plantilla similar al siguiente:
 Sample text.
 ```
 
-La advertencia del compilador aparecerá en la ventana de error de Visual Studio y también generará una llamada a `ErrorCallback` .
+La advertencia del compilador aparecerá en Visual Studio ventana de error y también generará una llamada a `ErrorCallback` .
 
 ## <a name="reference-parameters"></a>Parámetros de referencia
 
@@ -140,8 +140,8 @@ Puede pasar valores de una plantilla de texto mediante una clase de parámetro q
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-Para generar texto desde una plantilla de texto preprocesada: llame al `TransformText()` método de la clase generada. Para obtener más información, vea [Generación de texto en tiempo de ejecución con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+Para generar texto a partir de una plantilla de texto preprocesado: llame al `TransformText()` método de la clase generada. Para obtener más información, vea [Generación de texto en tiempo de ejecución con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
-Para generar texto fuera de una extensión de Visual Studio: defina un host personalizado. Para obtener más información, consulte [procesar plantillas de texto mediante un host personalizado](../modeling/processing-text-templates-by-using-a-custom-host.md).
+Para generar texto fuera de una extensión Visual Studio: defina un host personalizado. Para obtener más información, vea [Procesamiento de plantillas de texto mediante un host personalizado.](../modeling/processing-text-templates-by-using-a-custom-host.md)
 
-Para generar el código fuente que se puede compilar y ejecutar más adelante: llame al método [PreprocessTemplate](/previous-versions/visualstudio/visual-studio-2012/ee844321(v=vs.110)) de [ITextTemplating](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110)).
+Para generar código fuente que se pueda compilar y ejecutar más adelante: llame al [método PreprocessTemplate](/previous-versions/visualstudio/visual-studio-2012/ee844321(v=vs.110)) [de ITextTemplating](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110)).
