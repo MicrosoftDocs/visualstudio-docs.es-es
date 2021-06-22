@@ -9,14 +9,19 @@ manager: jmartens
 monikerRange: vs-2022
 ms.workload:
 - vssdk
-ms.openlocfilehash: 514c9654a741e4e1e565f0cb2becdbe3157fab0c
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 6e7c4990d513bfb276984611b2d38f3e35a825eb
+ms.sourcegitcommit: a7a4c5545a269ca74a7291966ff77afb3b57f5ce
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112308628"
+ms.lasthandoff: 06/21/2021
+ms.locfileid: "112424658"
 ---
 # <a name="update-a-visual-studio-extension-for-visual-studio-2022"></a>Actualización de Visual Studio extensión para Visual Studio 2022
+
+> [!IMPORTANT]
+> Los consejos de esta guía están pensados para guiar a los desarrolladores en la migración de extensiones que requieren cambios importantes para funcionar tanto en Visual Studio 2019 como en 2022. En esos casos, se recomienda tener dos proyectos VSIX y una compilación condicional.
+> Muchas extensiones podrán funcionar en Visual Studio 2019 y 2022 con cambios menores que no requerirán seguir los consejos sobre la modernización de la extensión en esta guía.
+> Pruebe la extensión en Visual Studio 2022 y evalúe qué opción es mejor para la extensión.
 
 Puede actualizar la extensión para que funcione con Visual Studio versión preliminar de 2022 siguiendo esta guía. Visual Studio versión preliminar de 2022 es una aplicación de 64 bits y presenta algunos cambios importantes en el SDK de VS. Esta guía le guía por los pasos necesarios para que la extensión funcione con la versión preliminar actual de Visual Studio 2022, de modo que la extensión pueda estar lista para que los usuarios puedan instalarla antes de que Visual Studio 2022 llegue a la versión general.
 
@@ -205,31 +210,31 @@ Continúe para agregar Visual Studio compatibilidad con 2022 a la extensión con
 
    | Elemento | Value | Descripción |
    | - | - | - |
-   | ProductArchitecture | X86, AMD64 | Las plataformas compatibles con este VSIX. No distingue mayúsculas de minúsculas. Una plataforma por elemento y un elemento por InstallTarget. Para las versiones de producto inferiores a 17.0, el valor predeterminado es x86 y se puede omitir.  Para las versiones de producto 17.0 y posteriores, este elemento es necesario y no hay ningún valor predeterminado. Para Visual Studio 2022, el único contenido válido para este elemento es "amd64". |
+   | ProductArchitecture | X86, AMD64 | Las plataformas compatibles con este VSIX. No distingue mayúsculas de minúsculas. Una plataforma por elemento y un elemento por InstallTarget. Para las versiones de producto inferiores a 17.0, el valor predeterminado es x86 y se puede omitir.  Para las versiones 17.0 y posteriores del producto, este elemento es necesario y no hay ningún valor predeterminado. Para Visual Studio 2022, el único contenido válido para este elemento es "amd64". |
 
-1. Realice cualquier otro ajuste necesario en source.extension.vsixmanifest para que coincida con el que tiene como destino Visual Studio 2019 (si lo hubiera). Es fundamental que el identificador de VSIX, en el elemento `Identity` del manifiesto, sea idéntico para ambas extensiones.
+1. Realice cualquier otro ajuste necesario en source.extension.vsixmanifest para que coincida con el que tiene como destino Visual Studio 2019 (si hay alguno). Es fundamental que el identificador de VSIX, en el elemento `Identity` del manifiesto, sea idéntico para ambas extensiones.
 
-En este momento, tiene una extensión Visual Studio VSIX de destino de 2022. Debe compilar el proyecto VSIX Visual Studio de destino de 2022 y trabajar con los saltos de [compilación que aparezcan.](#handle-breaking-api-changes) Si no tiene interrupciones de compilación en el proyecto VSIX de Visual Studio de destino 2022, enhorabuena: ya está listo para las pruebas.
+En este momento, tiene una extensión Visual Studio VSIX de destino 2022. Debe compilar su Visual Studio VSIX dirigido a 2022 y trabajar con los saltos de compilación [que aparezcan.](#handle-breaking-api-changes) Si no tiene saltos de compilación en el proyecto VSIX Visual Studio 2022-targeted, enhorabuena: ya está listo para las pruebas.
 
 ## <a name="handle-breaking-api-changes"></a>Control de cambios importantes en la API
 
 Hay cambios [importantes en la API](breaking-api-list.md) Visual Studio 2022 que pueden requerir cambios en el código desde que se ejecutó en versiones anteriores. Revise ese documento para obtener sugerencias sobre cómo actualizar el código para cada uno de ellos.
 
-Al adaptar el código, se [](#use-conditional-compilation-symbols) recomienda usar la compilación condicional para que el código pueda seguir siendo compatible con la versión anterior a la Visual Studio 2022, al tiempo que se agrega compatibilidad con Visual Studio 2022.
+Al adaptar el código, se [](#use-conditional-compilation-symbols) recomienda usar la compilación condicional para que el código pueda seguir siendo compatible con la versión anterior a Visual Studio 2022, al tiempo que se agrega compatibilidad con Visual Studio 2022.
 
-Cuando obtenga la extensión de Visual Studio de destino de 2022, continúe [con](#test-your-extension)la prueba de .
+Cuando obtenga la extensión Visual Studio de destino de 2022, continúe con la [prueba](#test-your-extension).
 
 ## <a name="use-conditional-compilation-symbols"></a>Uso de símbolos de compilación condicional
 
-Si desea usar el mismo código fuente, incluso el mismo archivo, para Visual Studio 2022 y versiones anteriores, es posible que tenga que usar la compilación condicional para poder bifurcar el código para adaptarlo a los cambios importantes. La compilación condicional es una característica de los lenguajes C#, Visual Basic y C++ que se puede usar para compartir la mayoría del código a la vez que se mantienen las API divergentes en lugares específicos.
+Si desea usar el mismo código fuente, incluso el mismo archivo, para Visual Studio 2022 y versiones anteriores, es posible que tenga que usar la compilación condicional para poder bifurcar el código para adaptarse a los cambios importantes. La compilación condicional es una característica de los lenguajes C#, Visual Basic y C++ que se puede usar para compartir la mayoría del código a la vez que se mantienen las API divergentes en lugares específicos.
 
 Puede encontrar más información sobre el uso de directivas de preprocesador y símbolos de compilación condicional en la documentación de Microsoft [#if directiva de preprocesador](/dotnet/csharp/language-reference/preprocessor-directives#conditional-compilation).
 
-Los proyectos que tienen como destino versiones anteriores Visual Studio necesitarán un símbolo de compilación condicional que se pueda usar para bifurcar el código y usar las distintas API. Puede establecer el símbolo de compilación condicional en la página de propiedades del proyecto, como se muestra en la siguiente imagen:
+Los proyectos que tienen como destino versiones anteriores Visual Studio necesitarán un símbolo de compilación condicional que se pueda usar para bifurcar el código para usar las distintas API. Puede establecer el símbolo de compilación condicional en la página de propiedades del proyecto, como se muestra en la siguiente imagen:
 
 ![Establecimiento de símbolos de compilación condicional](media/update-visual-studio-extension/conditional-compilation-symbols.png)
 
-Asegúrese de establecer el símbolo de compilación para todas *las* configuraciones, ya que, de forma predeterminada, el símbolo que escriba solo se puede aplicar a una configuración.
+Asegúrese de establecer el símbolo de compilación para todas *las* configuraciones, ya que de forma predeterminada el símbolo que escriba solo se puede aplicar a una configuración.
 
 ### <a name="c-techniques"></a>Técnicas de C \#
 
@@ -255,7 +260,7 @@ En algunos casos, puede usar simplemente para evitar asignar un nombre al tipo, 
     shell.LoadUILibrary(myGuid, myFlags, out var ptrLib);
 ```
 
-Al usar la sintaxis, observe cómo puede usar la lista desplegable de contexto del servicio de lenguaje del documento que se muestra a continuación para cambiar el resaltado de sintaxis y la otra ayuda que ofrece el servicio de lenguaje para centrar la atención en una versión de Visual Studio de destino para nuestra extensión frente `#if` a otra.
+Cuando use la sintaxis, observe cómo puede usar la lista desplegable de contexto del servicio de lenguaje en el documento que se muestra a continuación para cambiar el resaltado de sintaxis y la otra ayuda que ofrece el servicio de lenguaje para centrar la atención en una versión de Visual Studio de destino para nuestra extensión frente `#if` a otra.
 
 ![Compilación condicional en un proyecto compartido](media/update-visual-studio-extension/conditional-compilation-if-region.png)
 
@@ -263,7 +268,7 @@ Al usar la sintaxis, observe cómo puede usar la lista desplegable de contexto d
 
 XAML no tiene ningún preprocesador para permitir la personalización de contenido basado en símbolos de preprocesador. Es posible que sea necesario copiar y mantener dos páginas XAML en las que su contenido debe diferir Visual Studio 2022 y versiones anteriores.
 
-Sin embargo, en algunos casos, una referencia a un tipo que existe en ensamblados distintos en Visual Studio 2022 y versiones anteriores podría seguir siendo representable en un archivo XAML quitando el espacio de nombres que hace referencia al ensamblado:
+Sin embargo, en algunos casos, una referencia a un tipo que existe en ensamblados distintos entre Visual Studio 2022 y versiones anteriores podría seguir representándose en un archivo XAML quitando el espacio de nombres que hace referencia al ensamblado:
 
 ```diff
 -xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.14.0"
@@ -273,10 +278,10 @@ Sin embargo, en algunos casos, una referencia a un tipo que existe en ensamblado
 
 ## <a name="test-your-extension"></a>Prueba de la extensión
 
-Para probar una extensión que tenga como destino Visual Studio 2022, deberá tener Visual Studio versión preliminar de 2022 instalada.
+Para probar una extensión que tenga como destino Visual Studio 2022, deberá tener Visual Studio versión preliminar de 2022.
 No podrá ejecutar extensiones de 64 bits en versiones de Visual Studio anteriores a Visual Studio versión preliminar de 2022.
 
-Puede usar Visual Studio versión preliminar de 2022 para compilar y probar las extensiones tanto si tienen como destino Visual Studio 2022 o una versión anterior. Al iniciar un proyecto VSIX desde Visual Studio 2022, se inicia una instancia experimental de Visual Studio proyecto.
+Puede usar Visual Studio versión preliminar de 2022 para compilar y probar las extensiones tanto si tienen como destino Visual Studio 2022 o una versión anterior. Al iniciar un proyecto VSIX desde Visual Studio 2022 se inicia una instancia experimental de Visual Studio proyecto.
 
 Se recomienda encarecidamente probar con cada versión de Visual Studio que se va a admitir la extensión.
 
@@ -288,15 +293,15 @@ Excelente, por lo que ha agregado un destino Visual Studio 2022 a la extensión 
 
 ### <a name="visual-studio-marketplace"></a>Visual Studio Marketplace
 
-La publicación de la extensión [en Visual Studio Marketplace](https://marketplace.visualstudio.com/) es una excelente manera de conseguir que los nuevos usuarios busquen e instalen la extensión. Tanto si la extensión tiene como destino Visual Studio 2022 exclusivamente o también tiene como destino versiones anteriores de VS, Marketplace le ofrece soporte técnico.
+Publicar la extensión en el [Visual Studio Marketplace](https://marketplace.visualstudio.com/) es una excelente manera de conseguir que los nuevos usuarios busquen e instalen la extensión. Tanto si la extensión tiene Visual Studio 2022 exclusivamente como si también tiene como destino versiones anteriores de VS, Marketplace está ahí para admitirlo.
 
-En el futuro, Marketplace le permitirá cargar varios VSIX en una sola lista de Marketplace, lo que le permitirá cargar su VSIX de destino de Visual Studio 2022 y un VSIX anterior a Visual Studio 2022. Los usuarios obtienen automáticamente el VSIX adecuado para la versión de VS que han instalado, al usar el administrador de extensiones de VS.
+En el futuro, Marketplace le permitirá cargar varios VSIX en una sola lista de Marketplace, lo que le permitirá cargar su VSIX de destino Visual Studio 2022 y un VSIX anterior a Visual Studio 2022. Los usuarios obtienen automáticamente el VSIX adecuado para la versión de VS que han instalado, al usar el administrador de extensiones de VS.
 
-Para las versiones preliminares de Visual Studio 2022, Marketplace solo admitirá un único archivo VSIX por anuncio de Marketplace. Aunque Visual Studio 2022 está en versión preliminar, le recomendamos que tenga una lista independiente Visual Studio 2022 solo de Marketplace para la extensión. De este modo, puede iterar la extensión Visual Studio 2022 según sea necesario sin afectar a los clientes en versiones anteriores de Visual Studio. También puede marcar la extensión como "versión preliminar" para establecer la expectativa de que probablemente sea menos confiable, incluso si el origen de esa falta de responsabilidad es Visual Studio 2022, que la extensión estándar.
+Para las versiones preliminares de Visual Studio 2022, Marketplace solo admitirá un único archivo VSIX por lista de Marketplace. Aunque Visual Studio 2022 está en versión preliminar, le recomendamos que tenga una lista independiente de Marketplace Visual Studio 2022 solo para la extensión. De este modo, puede iterar la extensión Visual Studio 2022 según sea necesario sin afectar a los clientes en versiones anteriores de Visual Studio. También puede marcar la extensión como "versión preliminar" para establecer la expectativa de que probablemente será menos confiable, incluso si el origen de esa falta de responsabilidad es Visual Studio 2022, que la extensión estándar.
 
 ### <a name="custom-installer"></a>Instalador personalizado
 
-Si compila una msi/EXE para instalar la extensión y generar vsixinstaller.exe para instalar (parte de) la extensión, sepa que se ha actualizado el instalador VSIX de Visual Studio 2022. Los desarrolladores tendrán que usar la versión del instalador de VSIX que se incluye con Visual Studio 2022 para instalar extensiones en Visual Studio 2022. El instalador VSIX de Visual Studio 2022 también instalará las extensiones aplicables destinadas a versiones anteriores de Visual Studio que se instalan en paralelo con Visual Studio 2022 en la misma máquina.
+Si compila un archivo MSI/EXE para instalar la extensión y genera vsixinstaller.exe para instalar (parte de) la extensión, sepa que se ha actualizado el instalador de VSIX en Visual Studio 2022. Los desarrolladores tendrán que usar la versión del instalador de VSIX que se incluye con Visual Studio 2022 para instalar extensiones en Visual Studio 2022. El instalador vsix de Visual Studio 2022 también instalará las extensiones aplicables destinadas a versiones anteriores de Visual Studio que se instalan en paralelo con Visual Studio 2022 en la misma máquina.
 
 ### <a name="network-share"></a>Recurso compartido de red
 
@@ -312,11 +317,11 @@ Si el VSIX especifica otro VSIX como dependencia a través del elemento , cada V
 
 **P:** Mi extensión no requiere ningún cambio de interoperabilidad, ya que solo proporciona datos (por ejemplo, plantillas), ¿puedo crear una sola extensión que incluya también Visual Studio 2022?
 
-**R.** : Sí.  Consulte [Extensiones sin ejecutar código para](#extensions-without-running-code) obtener más información al respecto.
+**R.** : Sí.  Consulte [Extensiones sin ejecutar código para](#extensions-without-running-code) obtener más información sobre esto.
 
 **P:** Una dependencia de NuGet aporta ensamblados de interoperabilidad antiguos y provoca clases en conflicto.
 
-**A**: agregue la siguiente línea al archivo .csproj para evitar ensamblados duplicados:
+**Un**: agregue la siguiente línea al archivo .csproj para evitar ensamblados duplicados:
 
 ```xml
     <PackageReference Include="<Name of offending assembly>" ExcludeAssets="compile" PrivateAssets="all" />
@@ -326,8 +331,8 @@ Esto impedirá que las referencias de paquete importen la versión anterior del 
 
 **P:** Mis comandos y teclas de acceso rápido no funcionan en Visual Studio después de cambiar mis archivos de origen a un proyecto compartido.
 
-**Un**: [Paso 2.4](samples.md#step-2---refactor-source-code-into-a-shared-project) del ejemplo optimizador de imágenes muestra cómo agregar archivos VSCT como elementos vinculados para que se compilen en el archivo VSCT.
+**Un**: [paso 2.4](samples.md#step-2---refactor-source-code-into-a-shared-project) del ejemplo optimizador de imágenes muestra cómo agregar archivos VSCT como elementos vinculados para que se compilen en el archivo VSCT.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Siga un ejemplo paso a paso, [ImageOptimizer,](samples.md)con vínculos al proyecto y los cambios de código para cada paso.
+Siga un ejemplo paso a paso, [ImageOptimizer,](samples.md)con vínculos al proyecto y cambios de código para cada paso.
