@@ -1,5 +1,5 @@
 ---
-title: Información general del Diseñador XAML
+title: Creación de uri con Visual Studio Diseñador XAML
 description: Obtenga información sobre la interfaz de usuario del área de trabajo y las características de Diseñador XAML en Blend para Visual Studio que proporciona una interfaz visual para ayudarle a diseñar aplicaciones basadas en XAML.
 ms.date: 03/03/2020
 ms.topic: conceptual
@@ -14,21 +14,21 @@ ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: 8f022d0f27977488fb089f2cffb40aad22365b46
-ms.sourcegitcommit: 4a91c63683ba1c1832b1ba96657862a849320d81
+ms.openlocfilehash: ef7d94acbb558ef2a8a3c557051e6dea16be916c
+ms.sourcegitcommit: 809fff25b7701882c899c639eeb6da38ad4fb88a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110565237"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "112550693"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>Crear una IU con el Diseñador XAML
 
-La Diseñador XAML en Visual Studio y Blend para Visual Studio proporciona una interfaz visual para ayudarle a diseñar aplicaciones basadas en XAML, como WPF y UWP. Puede crear interfaces de usuario para sus aplicaciones arrastrando controles desde la ventana Cuadro de herramientas (ventana Recursos en Blend para Visual Studio) y estableciendo propiedades en la ventana Propiedades. También puede modificar el XAML directamente en la vista XAML.
+El Diseñador XAML en Visual Studio y Blend para Visual Studio proporciona una interfaz visual para ayudarle a diseñar aplicaciones basadas en XAML, como WPF y UWP. Puede crear interfaces de usuario para sus aplicaciones arrastrando controles desde la ventana Cuadro de herramientas (ventana Recursos en Blend para Visual Studio) y estableciendo propiedades en la ventana Propiedades. También puede modificar el XAML directamente en la vista XAML.
 
 En el caso de los usuarios avanzados, incluso es posible [personalizar el Diseñador XAML](https://github.com/microsoft/xaml-designer-extensibility/blob/master/documents/xaml-designer-extensibility-migration.md).
 
 > [!NOTE]
-> Xamarin.Forms no admite un diseñador XAML. Para ver las uri de XAML de Xamarin.Forms y editarlas mientras se ejecuta la aplicación, use Recarga activa de XAML para Xamarin.Forms. Para obtener más información, [vea la página Recarga activa de XAML para Xamarin.Forms (versión preliminar).](/xamarin/xamarin-forms/xaml/hot-reload/)
+> Xamarin.Forms no admite un diseñador XAML. Para ver las uri de XAML de Xamarin.Forms y editarlas mientras se ejecuta la aplicación, use Recarga activa de XAML para Xamarin.Forms. Para obtener más información, vea [la página Recarga activa de XAML para Xamarin.Forms (versión preliminar).](/xamarin/xamarin-forms/xaml/hot-reload/)
 
 ## <a name="xaml-designer-workspace"></a>Área de trabajo del Diseñador XAML
 
@@ -133,11 +133,11 @@ La vista principal de la ventana Esquema del documento/Objetos y escala de tiemp
 
 **Mostrar u ocultar**
 
-Muestra u oculta los elementos de la mesa de trabajo. Cuando se muestra, aparece como el símbolo de un ojo. También puede presionar **Ctrl** H para ocultar un elemento y Mayús +   + **Ctrl** + **H** para mostrarlo.
+Muestra u oculta los elementos de la mesa de trabajo. Cuando se muestra, aparece como el símbolo de un ojo. También puede presionar **Ctrl** + **H** para ocultar un elemento y + **Mayús Ctrl** + **H** para mostrarlo.
 
 **Bloquear o desbloquear**
 
-Bloquea o desbloquea los elementos de la mesa de trabajo. Los elementos bloqueados no se pueden modificar. Cuando se bloquea un elemento, aparece un símbolo de candado. También puede presionar **Ctrl** + **L para** bloquear un elemento y Mayús  + **Ctrl** + **L** para desbloquearlo.
+Bloquea o desbloquea los elementos de la mesa de trabajo. Los elementos bloqueados no se pueden modificar. Cuando se bloquea un elemento, aparece un símbolo de candado. También puede presionar **Ctrl** + **L** para bloquear un elemento y + **Mayús Ctrl** + **L** para desbloquearlo.
 
 **Devolver ámbito a pageRoot**
 
