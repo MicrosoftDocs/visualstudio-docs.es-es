@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 57cb56d0d9a93d0f11e4047f6e25b64841c47e93
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6a4aa7623f69f9b02f9649a1a66ade010a823669
+ms.sourcegitcommit: 98d187abd9352d2255348b84d99d015e65caa0ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841684"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "112574118"
 ---
 # <a name="use-bind-mounts"></a>Uso de montajes de enlace
 
@@ -49,14 +49,15 @@ Para ejecutar el contenedor a fin de admitir un flujo de trabajo de desarrollo, 
 
     ```bash
     docker run -dp 3000:3000 \
-        -w /app -v ${PWD}:/app \
+        -w /app \
+        -v "%cd%:/app" \
         node:12-alpine \
         sh -c "yarn install && yarn run dev"
     ```
 
     - `-dp 3000:3000`: igual que antes. Se ejecuta en modo desasociado (en segundo plano) y se crea una asignación de puerto
     - `-w /app`: establece el "directorio de trabajo" o el directorio actual desde el que se ejecutará el comando.
-    - `-v ${PWD}:/app`: montaje de enlace del directorio actual desde el host del contenedor en el directorio `/app`
+    - `-v "%cd%:/app"`: montaje de enlace del directorio actual desde el host del contenedor en el directorio `/app`
     - `node:12-alpine`: la imagen que se va a usar. Se trata de la imagen base para la aplicación del Dockerfile
     - `sh -c "yarn install && yarn run dev"`: el comando. Se inicia un shell mediante `sh` (alpine carece de `bash`), se ejecuta `yarn install` para instalar *todas* las dependencias y, después, se ejecuta `yarn run dev`. Si observa `package.json`, verá que el script `dev` inicia `nodemon`.
 
