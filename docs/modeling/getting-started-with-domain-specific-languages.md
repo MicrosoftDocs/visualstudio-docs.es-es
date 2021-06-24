@@ -9,12 +9,12 @@ ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b2637703e068a98e20f209d5de51a6003a4dd7f4
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 2ae488056986afbe35763be1eebb500ff0eab9a8
+ms.sourcegitcommit: 674d3fafa7c9e0cb0d1338027ef419a49c028c36
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112386740"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "112602266"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Introducción a los lenguajes específicos de dominio
 
@@ -45,8 +45,8 @@ Para definir un DSL, debe tener instalados los siguientes componentes:
 
 | Componente | Vínculo |
 |-|-|
-| Programa para la mejora | [http://go.microsoft.com/fwlink/?LinkId=185579](https://visualstudio.microsoft.com/) |
-| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](/azure/devops/integrate/index) |
+| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](https://visualstudio.microsoft.com) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [https://go.microsoft.com/fwlink/?linkid=2166172](../extensibility/visual-studio-sdk.md) |
 | SDK de modelado para Visual Studio | |
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
@@ -207,7 +207,7 @@ Cambie el nombre de las clases y relaciones de dominio existentes. Por ejemplo, 
 
 2. Cambie el nombre del elemento y las herramientas del conector.
 
-    1. Para abrir la ventana del Explorador dsl, haga clic en la pestaña Explorador de soluciones. Si no puede verlo,  en el menú Ver, seleccione **Otras ventanas** y, a continuación, haga clic en **Explorador dsl.** El Explorador de DSL solo es visible cuando el diagrama de definición de DSL es la ventana activa.
+    1. Para abrir la ventana del Explorador de DSL, haga clic en la pestaña Explorador de soluciones. Si no puede verlo,  en el menú Ver, seleccione **Otras ventanas** y, a continuación, haga clic en **Explorador dsl.** El Explorador de DSL solo es visible cuando el diagrama de definición de DSL es la ventana activa.
 
     2. Abra el ventana Propiedades y posiciones para que pueda ver el Explorador dsl y las propiedades al mismo tiempo.
 
@@ -281,81 +281,81 @@ Cambie el nombre de las clases y relaciones de dominio existentes. Por ejemplo, 
    ![Diagrama de árbol genealógico, cuadro de herramientas y explorador](../modeling/media/familyt_instance.png)
 
 ### <a name="define-new-classes"></a>Definición de clases nuevas
- Puede agregar clases de dominio y relaciones a un modelo. Por ejemplo, podría crear una nueva clase para representar a los vecinos y una nueva relación para representar que una persona residía en una ciudad.
+ Puede agregar clases de dominio y relaciones a un modelo. Por ejemplo, podría crear una nueva clase para representar las ciudades y una nueva relación para representar que una persona residía en una ciudad.
 
  Para que los distintos tipos se distinguien en un diagrama de modelos, puede asignar las clases de dominio a diferentes tipos de forma o a formas con diferentes geometrías y colores.
 
 ##### <a name="to-add-and-display-a-new-domain-class"></a>Para agregar y mostrar una nueva clase de dominio
 
-1. Agregue una clase de dominio y conséctela como un elemento secundario de la raíz del modelo.
+1. Agregue una clase de dominio y conséctela como elemento secundario de la raíz del modelo.
 
-    1. En el diagrama de definición de DSL, haga clic en la herramienta **Relación** de inserción, haga clic en la clase raíz **FamilyTreeModel** y, a continuación, haga clic en una parte vacía del diagrama.
+    1. En el diagrama definición de DSL, haga clic en la herramienta **Relación** de inserción, haga clic en la clase raíz **FamilyTreeModel** y, a continuación, haga clic en una parte vacía del diagrama.
 
          Aparece una nueva clase de dominio que está conectada a FamilyTreeModel con una relación de inserción.
 
-         Establezca su nombre, por ejemplo **Ciudad.**
+         Establezca su nombre, por **ejemplo, Ciudad**.
 
         > [!NOTE]
-        > Todas las clases de dominio excepto la raíz del modelo deben ser el destino de al menos una relación de inserción, o bien deben heredar de una clase que sea el destino de una inserción. Por este motivo, suele ser conveniente crear una clase de dominio mediante la herramienta Relación de inserción.
+        > Cada clase de dominio excepto la raíz del modelo debe ser el destino de al menos una relación de inserción, o bien debe heredar de una clase que sea el destino de una inserción. Por esta razón, con frecuencia resulta conveniente crear una clase de dominio mediante la herramienta Relación de inserción.
 
-    2. Agregue una propiedad de dominio a la nueva clase, por ejemplo **Nombre**.
+    2. Agregue una propiedad de dominio a la nueva clase, por **ejemplo, Nombre**.
 
 2. Agregue una relación de referencia entre Person y Town.
 
-    1. Haga clic en la **herramienta Relación de** referencia, haga clic en Persona y, a continuación, en Ciudad.
+    1. Haga clic en **la herramienta Relación de** referencia, haga clic en Persona y, a continuación, haga clic en Ciudad.
 
          ![Fragmento de definición DSL: raíz de árbol genealógico](../modeling/media/familyt_root.png)
 
         > [!NOTE]
         > Las relaciones de referencia representan referencias cruzadas de una parte del árbol de modelos a otra.
 
-3. Agregue una forma para representar la zona en los diagramas del modelo.
+3. Agregue una forma para representar las ciudades en los diagramas del modelo.
 
-    1. Arrastre una forma **de geometría** desde el cuadro de herramientas al diagrama y cámbiele el nombre, por **ejemplo, TownShape**.
+    1. Arrastre una **forma geometry desde** el cuadro de herramientas al diagrama y cámbiele el nombre, por **ejemplo, TownShape.**
 
     2. En la ventana Propiedades, establezca los campos Apariencia de la nueva forma, como Color de relleno y Geometría.
 
     3. Agregue un elemento Decorator para mostrar el nombre de la ciudad y cámbiele el nombre NameDecorator. Establezca su propiedad Position.
 
-4. Asigne la clase de dominio Ciudad a la forma de ciudad.
+4. Asigne la clase de dominio De ciudad a La forma de ciudad.
 
-    1. Haga clic en **la herramienta Mapa de elementos** de diagrama, haga clic en la clase de dominio Ciudad y, a continuación, en la clase de forma TownShape.
+    1. Haga clic en **la herramienta Mapa de elementos** de diagrama, haga clic en la clase de dominio Ciudad y, después, en la clase de forma TownShape.
 
-    2. En la **pestaña Decorator Maps (Mapas** de decorador) de la ventana DSL Details (Detalles de **DSL)** con el conector de mapa seleccionado, active NameDecorator y establezca Display Property (Mostrar **propiedad)** en Name (Nombre).
+    2. En la **pestaña Decorator Maps (Mapas** de decorador) de la ventana DSL Details (Detalles de **DSL)** con el conector de mapa seleccionado, active NameDecorator y establezca **Display Property (Propiedad para** mostrar) en Name (Nombre).
 
-5. Cree un conector para mostrar la relación entre Persona y Vecinos.
+5. Cree un conector para mostrar la relación entre Person y La Gente.
 
     1. Arrastre un conector desde el cuadro de herramientas al diagrama. Cámbiele el nombre y establezca sus propiedades de apariencia.
 
-    2. Use la **herramienta Mapa de elementos** de diagrama para vincular el nuevo conector a la relación entre Person y Town.
+    2. Use la **herramienta Diagrama de mapa de** elementos para vincular el nuevo conector a la relación entre Person y Town.
 
          ![Definición de árbol genealógico con asignación de forma agregada](../modeling/media/familyt_shapemap.png)
 
 6. Cree una herramienta de elemento para crear una nueva ciudad.
 
-    1. En el **Explorador de DSL,** expanda **Editor y,** a continuación, **Pestañas del cuadro de herramientas**.
+    1. En el **Explorador DSL,** expanda **Editor y,** a continuación, **pestañas cuadro de herramientas**.
 
-    2. Haga clic con el botón *\<your DSL>* derecho y, a continuación, **haga clic en Agregar nueva herramienta de elemento**.
+    2. Haga clic con el *\<your DSL>* botón derecho y, a continuación, **haga clic en Agregar nueva herramienta de elemento**.
 
     3. Establezca la **propiedad Name** de la nueva herramienta y establezca su **propiedad Class** en Ciudad.
 
     4. Establezca la propiedad **Icono del cuadro de** herramientas. Haga **clic en [...]** y, en el campo Nombre **de** archivo, seleccione un archivo de icono.
 
-7. Cree una herramienta de conector para crear un vínculo entre los vecinos y las personas.
+7. Cree una herramienta de conector para crear un vínculo entre las ciudades y las personas.
 
-    1. Haga clic con el botón *\<your DSL>* derecho y, a continuación, **haga clic en Agregar nueva herramienta de conector**.
+    1. Haga clic con el *\<your DSL>* botón derecho y, a continuación, **haga clic en Agregar nueva herramienta de conector**.
 
-    2. Establezca la propiedad Nombre de la nueva herramienta.
+    2. Establezca la propiedad Name de la nueva herramienta.
 
-    3. En la **propiedad ConnectionBuilder,** seleccione el generador que contiene el nombre del Person-Town relación.
+    3. En la **propiedad ConnectionBuilder,** seleccione el generador que contiene el nombre de Person-Town relación.
 
     4. Establezca el icono **del cuadro de herramientas**.
 
-8. Guarde la definición de DSL, haga clic **en Transformar todas las plantillas** y, a continuación, presione **F5**.
+8. Guarde la definición de DSL, haga **clic en Transformar todas las plantillas** y, a continuación, presione **F5**.
 
-9. En la instancia experimental de Visual Studio, abra un archivo de modelo de prueba. Use las nuevas herramientas para crear vecinos y vínculos entre las personas y las personas. Tenga en cuenta que solo puede crear vínculos entre los tipos correctos de elemento.
+9. En la instancia experimental de Visual Studio, abra un archivo de modelo de prueba. Use las nuevas herramientas para crear ciudades y vínculos entre vecinos y personas. Observe que solo puede crear vínculos entre los tipos correctos de elemento.
 
-10. Cree código que enumera la ciudad en la que reside cada persona. Las plantillas de texto son uno de los lugares donde se puede ejecutar este código. Por ejemplo, puede modificar el archivo de Sample.tt existente en la solución de depuración para que contenga el código siguiente:
+10. Cree código que enumera la ciudad en la que reside cada persona. Las plantillas de texto son uno de los lugares donde puede ejecutar dicho código. Por ejemplo, podría modificar el archivo de Sample.tt existente en la solución depuración para que contenga el código siguiente:
 
     ```
     <#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" debug="true" #>
@@ -383,7 +383,7 @@ Cambie el nombre de las clases y relaciones de dominio existentes. Por ejemplo, 
      Al guardar el archivo *.tt, se creará un archivo subsidiaria que contiene la lista de personas y sus residencias. Para obtener más información, vea [Generating Code from a Domain-Specific Language](../modeling/generating-code-from-a-domain-specific-language.md).
 
 ## <a name="validation-and-commands"></a>Validación y comandos
- Puede desarrollar aún más este DSL agregando restricciones de validación. Estas restricciones son métodos que se pueden definir y que se asegura de que el modelo está en un estado correcto. Por ejemplo, podría definir una restricción para asegurarse de que la fecha de nacimiento de un menor sea posterior a la de sus padres. La característica de validación muestra una advertencia si el usuario dsl intenta guardar un modelo que interrumpe cualquiera de las restricciones. Para obtener más información, [vea Validación en un Domain-Specific lenguaje .](../modeling/validation-in-a-domain-specific-language.md)
+ Puede desarrollar aún más este DSL agregando restricciones de validación. Estas restricciones son métodos que se pueden definir y que se asegura de que el modelo está en un estado correcto. Por ejemplo, podría definir una restricción para asegurarse de que la fecha de nacimiento de un hijo es posterior a la de sus padres. La característica de validación muestra una advertencia si el usuario dsl intenta guardar un modelo que interrumpe cualquiera de las restricciones. Para obtener más información, [vea Validación en un Domain-Specific lenguaje .](../modeling/validation-in-a-domain-specific-language.md)
 
  También puede definir comandos de menú que el usuario puede invocar. Los comandos pueden modificar el modelo. También pueden interactuar con otros modelos en Visual Studio y con recursos externos. Para obtener más información, [vea Cómo: Modificar un comando de menú estándar](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
@@ -405,11 +405,11 @@ Cambie el nombre de las clases y relaciones de dominio existentes. Por ejemplo, 
 
 #### <a name="to-reset-the-visual-studio-experimental-instance"></a>Para restablecer la Visual Studio experimental
 
-1. Haga clic  **en** Inicio , haga clic en Todos los programas , Microsoft Visual Studio SDK **de 2010** **,** Herramientas y, a continuación, restablezca la instancia experimental de **Microsoft Visual Studio 2010**.
+1. Haga **clic en** Inicio , en **Todos** los **programas, Microsoft Visual Studio SDK de 2010,** Herramientas **y,** a continuación, en Restablecer la instancia experimental de **Microsoft Visual Studio 2010**.
 
-2. Recompile las DSL experimentales u otras extensiones Visual Studio experimentales que todavía desee usar.
+2. Recompile las DSL experimentales u otras extensiones Visual Studio experimentales que quiera usar.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 - [Introducción a los modelos, las clases y las relaciones](../modeling/understanding-models-classes-and-relationships.md)
 - [Cómo definir lenguajes específicos de dominio](../modeling/how-to-define-a-domain-specific-language.md)
