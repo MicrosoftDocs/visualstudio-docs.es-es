@@ -1,8 +1,8 @@
 ---
-description: Contiene propiedades adicionales para un objeto System. Threading. Tasks. Task.
+description: Contiene propiedades adicionales para un objeto System.Threading.Tasks.Task.
 title: 'Clase ContingentProperties: miembros internos | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - ContingentProperties class [.NET Framework debug engines]
 - debug engines, ContingentProperties class [.NET Framework]
@@ -12,21 +12,21 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 295b8c3b33059811e665e362c9894103b47c422d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8fca0bf68de4493d0165f9e66e251945ba6168b2
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105055003"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905688"
 ---
 # <a name="contingentproperties-class---internal-members"></a>Clase ContingentProperties: miembros internos
-Contiene propiedades adicionales para un <xref:System.Threading.Tasks.Task> objeto.
+Contiene propiedades adicionales para un <xref:System.Threading.Tasks.Task> objeto .
 
  **Espacio de nombres:** <xref:System.Threading.Tasks?displayProperty=fullName>
 
  **Ensamblado:** mscorlib (en mscorlib.dll)
 
- Dado que no puede tener acceso a estos miembros internos desde el .NET Framework, se proporciona la siguiente sintaxis en el lenguaje intermedio común (CIL).
+ Dado que no se puede acceder a estos miembros internos desde .NET Framework, se proporciona la sintaxis siguiente en Common Intermediate Language (CIL).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,10 +41,10 @@ Contiene propiedades adicionales para un <xref:System.Threading.Tasks.Task> obje
 
 |Nombre|Descripción|
 |----------|-----------------|
-|[m_children](../../extensibility/debugger/m-children-field.md)|La lista de tareas secundarias que se registran con esta tarea.|
+|[m_children](../../extensibility/debugger/m-children-field.md)|Lista de tareas secundarias registradas con esta tarea.|
 
 ## <a name="remarks"></a>Observaciones
  El .NET Framework inicializa los campos de esta clase solo cuando son necesarios.
 
-## <a name="see-also"></a>Consulte también
-- [Interna de la extensión paralela para el .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+## <a name="see-also"></a>Consulta también
+- [Interno de la extensión en paralelo para el .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

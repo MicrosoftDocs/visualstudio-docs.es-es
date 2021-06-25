@@ -1,9 +1,9 @@
 ---
-title: Menus (elemento) | Microsoft Docs
-description: El elemento menus define todos los menús y las barras de herramientas que implementa un VSPackage. Este artículo contiene un ejemplo.
+title: Elemento Menus | Microsoft Docs
+description: El elemento Menus define todos los menús y barras de herramientas que implementa un VSPackage. Este artículo contiene un ejemplo.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, Menus
 - Menus element (VSCT XML schema)
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5b6010945bd176f0663c7b0d57c3991470fff07
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 59c8cb242322cbb52aa90b821e14698ace6d0534
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105064012"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905584"
 ---
-# <a name="menus-element"></a>Menus (elemento)
-Define todos los menús y las barras de herramientas que implementa un VSPackage.
+# <a name="menus-element"></a>Elemento Menus
+Define todos los menús y barras de herramientas que implementa un VSPackage.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,14 +39,14 @@ Define todos los menús y las barras de herramientas que implementa un VSPackage
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|Condición|Opcional. Vea [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condición|Opcional. Vea [Atributos condicionales.](../extensibility/vsct-xml-schema-conditional-attributes.md)|
 
 ### <a name="child-elements"></a>Elementos secundarios
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|[Menus (elemento)](../extensibility/menus-element.md)|Define todos los menús y las barras de herramientas que implementa un VSPackage.|
-|[Elemento menu](../extensibility/menu-element.md)|Representa un solo menú o barra de herramientas.|
+|[Elemento Menus](../extensibility/menus-element.md)|Define todos los menús y barras de herramientas que implementa un VSPackage.|
+|[Elemento Menu](../extensibility/menu-element.md)|Representa un único menú o barra de herramientas.|
 
 ### <a name="parent-elements"></a>Elementos primarios
 
@@ -80,5 +80,5 @@ Define todos los menús y las barras de herramientas que implementa un VSPackage
 ```
 
 ## <a name="see-also"></a>Consulte también
-- [Cómo agrega VSPackages los elementos de la interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Cómo agregan vsPackages elementos de interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md)

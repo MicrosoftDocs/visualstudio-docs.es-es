@@ -1,9 +1,9 @@
 ---
-title: Desactivar advertencias de complementos de control de código fuente
-description: Un usuario puede ver varias advertencias de compatibilidad al usar el control de código fuente en Visual Studio. Obtenga información sobre cómo deshabilitar estas advertencias.
+title: Desactivar las advertencias de los complementos de control de código fuente
+description: Un usuario puede ver varias advertencias de compatibilidad al emplear el control de código fuente en Visual Studio. Obtenga información sobre cómo deshabilitar estas advertencias.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - source control plug-ins, turning off compatibility warnings
 - compatibility warnings, turning off
@@ -13,37 +13,37 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e7bbf2f01b2fb82e3bbb640eba5c44f99f2b7a53
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ced04b09f8d4442cf0769ef503ee52772eccc0f6
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105074904"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905753"
 ---
-# <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>Desactivar advertencias de compatibilidad para complementos de control de código fuente
+# <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>Cómo: Desactivar las advertencias de compatibilidad para los complementos de control de código fuente
 
-Un usuario puede ver varias advertencias de compatibilidad al utilizar el control de código fuente en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Las advertencias presentadas dependen de las capacidades del complemento de control de código fuente y se pueden deshabilitar tal y como se detalla aquí.
+Un usuario puede ver varias advertencias de compatibilidad al emplear el control de código fuente en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Las advertencias presentadas dependen de las funciones del complemento de control de código fuente y se pueden deshabilitar como se detalla aquí.
 
-### <a name="to-disable-the-warning-to-ensure-optimal-source-control-integration-with-visual-studio"></a>Para deshabilitar la ADVERTENCIA: "para garantizar la integración óptima del control de código fuente con Visual Studio"
+### <a name="to-disable-the-warning-to-ensure-optimal-source-control-integration-with-visual-studio"></a>Para deshabilitar la advertencia: "Para garantizar una integración óptima del control de código fuente con Visual Studio"
 
-- Establezca la siguiente entrada del registro (agregando el valor si es necesario):
+- Establezca la siguiente entrada del Registro (agregando el valor si es necesario):
 
-   **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\DontDisplayCheckDotNETCompatible = DWORD: 00000001**
+   **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\DontDisplayCheckDotNETCompatible = dword:00000001**
 
-   Esta advertencia se muestra para todos los complementos que no son de [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] .
+   Esta advertencia se muestra para todos los complementos que no [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] son de .
 
-### <a name="to-disable-the-warning-the-installed-source-control-provider-does-not-support-all-the-capabilities"></a>Para deshabilitar la ADVERTENCIA: "el proveedor de control de código fuente instalado no es compatible con todas las funcionalidades"
+### <a name="to-disable-the-warning-the-installed-source-control-provider-does-not-support-all-the-capabilities"></a>Para deshabilitar la advertencia: "El proveedor de control de código fuente instalado no admite todas las funcionalidades"
 
-- Establezca los dos valores del registro siguientes (agregando los valores si es necesario):
+- Establezca los dos valores del Registro siguientes (si es necesario agregar los valores):
 
-     **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\WarnedOldMSSCCIProvider = DWORD: 00000000**
+     **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\WarnedOldMSSCCIProvider = dword:000000000**
 
-    **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\UseOldSCC = DWORD: 00000001**
+    **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\UseOldSCC = dword:00000001**
 
-     Esta advertencia se muestra si el complemento de control de código fuente no admite explícitamente la reentrada para varios proyectos (es decir, si solo puede proteger un archivo y proyecto a la vez).
+     Esta advertencia se muestra si el complemento de control de código fuente no admite explícitamente la reenlazancia para varios proyectos (es decir, si solo puede comprobar un archivo y un proyecto a la vez).
 
-     Es mejor admitir la reentrada ( `SCC_CAP_REENTRANT` capacidad); si lo hace, se quitará esta advertencia. Sin embargo, si esta compatibilidad no es posible, se pueden establecer estas entradas del registro.
+     Es mejor admitir la reenlazancia `SCC_CAP_REENTRANT` (funcionalidad); si lo hace, se quitará esta advertencia. Sin embargo, si esta compatibilidad no es posible, se pueden establecer estas entradas del Registro.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 
-- [Marcas de capacidad](../extensibility/capability-flags.md)
+- [Marcas de funcionalidad](../extensibility/capability-flags.md)

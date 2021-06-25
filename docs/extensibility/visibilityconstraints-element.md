@@ -3,7 +3,7 @@ title: Elemento VisibilityConstraints | Microsoft Docs
 description: El elemento VisibilityConstraints determina la visibilidad estática de los grupos de comandos y barras de herramientas.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - VisibilityConstraints
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d97f72e7a29f3cbb23c775df8454952f5ffac928
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 160a3950e31567aafc2d675971fd7263adb2ad5b
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105062569"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905480"
 ---
 # <a name="visibilityconstraints-element"></a>Elemento VisibilityConstraints
 El elemento VisibilityConstraints determina la visibilidad estática de los grupos de comandos y barras de herramientas. La visibilidad se controla primero mediante el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] entorno de desarrollo integrado (IDE) sin cargar el VSPackage.
@@ -41,14 +41,14 @@ El elemento VisibilityConstraints determina la visibilidad estática de los grup
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|Condición|Opcional. Vea [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condición|Opcional. Vea [Atributos condicionales.](../extensibility/vsct-xml-schema-conditional-attributes.md)|
 
 ### <a name="child-elements"></a>Elementos secundarios
 
 |Elemento|Descripción|
 |-------------|-----------------|
 |[Elemento VisibilityItem](../extensibility/visibilityitem-element.md)|Determina la visibilidad estática de los comandos y las barras de herramientas.|
-|[VisibilityConstraints](../extensibility/visibilityconstraints-element.md)|Determina la visibilidad estática de grupos de comandos y barras de herramientas.|
+|[VisibilityConstraints](../extensibility/visibilityconstraints-element.md)|Determina la visibilidad estática de los grupos de comandos y barras de herramientas.|
 
 ### <a name="parent-elements"></a>Elementos primarios
 
@@ -67,4 +67,4 @@ El elemento VisibilityConstraints determina la visibilidad estática de los grup
 
 ## <a name="see-also"></a>Consulte también
 - [Elemento VisibilityItem](../extensibility/visibilityitem-element.md)
-- [Tabla de comandos de Visual Studio (. Archivos de Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Visual Studio tabla de comandos (. Archivos vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
