@@ -3,26 +3,26 @@ title: VsIX Color Compiler | Microsoft Docs
 description: Obtenga información sobre la Visual Studio Extension Color Compiler, que es una aplicación de consola que cubre los colores de Visual Studio temas en un archivo .pkgdef.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92914703ea4b293ac054c841251b37886bbc1d5a
-ms.sourcegitcommit: 3fe04d5b931ae459a802a1b965f84186757cbc08
+ms.openlocfilehash: 2f7277299d3cedd2ea0db49a44109d8a0441ebd0
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "111588467"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901765"
 ---
 # <a name="vsix-color-compiler"></a>Compilador de colores de VSIX
-La herramienta compilador de color de extensión de Visual Studio es una aplicación de consola que toma un archivo .xml que representa los colores de los temas de Visual Studio existentes y lo encubre en un archivo .pkgdef para que esos colores se puedan usar en Visual Studio. Dado que es fácil comparar las diferencias entre los archivos .xml, esta herramienta es útil para administrar colores personalizados en el control de código fuente. También se puede enlazar a entornos de compilación para que la salida de la compilación sea un archivo .pkgdef válido.
+La herramienta compilador de colores de extensión de Visual Studio es una aplicación de consola que toma un archivo .xml que representa los colores de los temas de Visual Studio existentes y lo cubre en un archivo .pkgdef para que esos colores se puedan usar en Visual Studio. Dado que es fácil comparar las diferencias entre los archivos .xml, esta herramienta es útil para administrar colores personalizados en el control de código fuente. También se puede enlazar a entornos de compilación para que la salida de la compilación sea un archivo .pkgdef válido.
 
  **Esquema XML de tema**
 
- Un archivo de .xml completo tiene el siguiente aspecto:
+ Un archivo de .xml completo tiene este aspecto:
 
 ```xml
 <Themes>
@@ -57,7 +57,7 @@ La herramienta compilador de color de extensión de Visual Studio es una aplicac
 |Nombre|[Obligatorio] Nombre del tema|
 |GUID|[Obligatorio] GUID del tema (debe coincidir con el formato GUID)|
 
- Al crear colores personalizados para Visual Studio, esos colores deben definirse para los temas siguientes. Si no hay colores para un tema determinado, Visual Studio intenta cargar los colores que faltan desde el tema Claro.
+ Al crear colores personalizados para Visual Studio, esos colores deben definirse para los temas siguientes. Si no hay colores para un tema determinado, Visual Studio cargar los colores que faltan desde el tema Claro.
 
 |**Nombre del tema**|**GUID de tema**|
 |-|-|
@@ -108,7 +108,7 @@ La herramienta compilador de color de extensión de Visual Studio es una aplicac
 |**Atributo**|**Definición**|
 |-|-|
 |Tipo|[Obligatorio] Tipo del color. Puede tener uno de los valores siguientes:<br /><br /> *CT_INVALID:* El color no es válido o no está establecido.<br /><br /> *CT_RAW:* Valor ARGB sin formato.<br /><br /> *CT_COLORINDEX:* NO USE.<br /><br /> *CT_SYSCOLOR:* Color del sistema de Windows de SysColor.<br /><br /> *CT_VSCOLOR:* Color Visual Studio de __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC:* Color automático.<br /><br /> *CT_TRACK_FOREGROUND:* NO USE.<br /><br /> *CT_TRACK_BACKGROUND:* NO USE.|
-|Source|[Obligatorio] Valor del color representado en hexadecimal|
+|Origen|[Obligatorio] Valor del color representado en hexadecimal|
 
  Todos los valores admitidos por la enumeración __VSCOLORTYPE son compatibles con el esquema en el atributo Type. Sin embargo, se recomienda usar solo CT_RAW y CT_SYSCOLOR.
 
@@ -137,7 +137,7 @@ La herramienta compilador de color de extensión de Visual Studio es una aplicac
 
 |**Nombre del conmutador**|**Notas**|**Obligatorio u opcional**|
 |-|-|-|
-|Sin nombre (.xml archivo)|Este es el primer parámetro sin nombre y es la ruta de acceso al archivo XML que se va a convertir.|Requerido|
+|Sin nombre (.xml archivo)|Este es el primer parámetro sin nombre y es la ruta de acceso al archivo XML que se va a convertir.|Obligatorio|
 |Sin nombre (archivo .pkgdef)|Este es el segundo parámetro sin nombre y es la ruta de acceso de salida para el archivo .pkgdef generado.<br /><br /> Valor predeterminado: \<XML Filename> .pkgdef|Opcionales|
 |/noLogo|Al establecer esta marca, se impide que se imprima la información del producto y de los derechos de autor.|Opcionales|
 |/?|Imprimir información de ayuda.|Opcionales|
@@ -153,7 +153,7 @@ La herramienta compilador de color de extensión de Visual Studio es una aplicac
 
 - Esta herramienta requiere que se instale la versión más reciente del entorno de ejecución de VC++.
 
-- Solo se admiten archivos únicos. No se admite la conversión masiva a través de rutas de acceso de carpeta.
+- Solo se admiten archivos individuales. No se admite la conversión masiva a través de rutas de acceso de carpeta.
 
 - La herramienta se puede encontrar en `<VS Install Path>\VSSDK\VisualStudioIntegration\Tools\Bin\`
 

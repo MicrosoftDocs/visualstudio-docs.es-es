@@ -1,9 +1,9 @@
 ---
 title: Elemento Symbols | Microsoft Docs
-description: El elemento Symbols define los GUID e identificadores que usan otros elementos VSCT. Este artículo contiene un ejemplo.
+description: El elemento Symbols define LOS GUID y los ID que usan otros elementos VSCT. Este artículo contiene un ejemplo.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Symbols element (VSCT XML schema)
 - VSCT XML schema elements, Symbols
@@ -13,19 +13,19 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a013bbe438d1e4dd1f6b5149dcb7da78835fd09
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: b593f353714f2fbb6f5b726fa2bbc0da449043ea
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105056056"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901739"
 ---
 # <a name="symbols-element"></a>Symbols (Elemento)
-Define los GUID e identificadores que usan otros elementos VSCT. En el caso de código no administrado, esta información procede normalmente de los archivos de encabezado especificados por el [elemento extern](../extensibility/extern-element.md). El código administrado utiliza los elementos secundarios del elemento Symbols para definir esta información.
+Define los GUID y los ID que usan otros elementos VSCT. En el caso del código no administrado, esta información procede normalmente de los archivos de encabezado especificados por [el elemento Extern](../extensibility/extern-element.md). El código administrado usa los elementos secundarios del elemento Symbols para definir esta información.
 
- Si crea un archivo. Vsct a partir de un archivo. CTO existente, los símbolos se generarán como elementos secundarios del elemento Symbols. Para obtener más información, consulte [Cómo: crear un. Archivo Vsct de un existente. Archivo CTO](../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file).
+ Si crea un archivo .vsct a partir de un archivo .cto existente, los símbolos se generarán como elementos secundarios del elemento Symbols. Para obtener más información, [vea Cómo: Crear un . Archivo Vsct de un objeto existente. Archivo Cto](../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file).
 
- El elemento Symbols no se debe confundir con el [elemento define](../extensibility/define-element.md), que define los pares de nombre y valor para que los utilice el preprocesador.
+ El elemento Symbols no debe confundirse con [el elemento Define ,](../extensibility/define-element.md)que define pares nombre-valor para su uso por parte del preprocesador.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,20 +43,20 @@ Define los GUID e identificadores que usan otros elementos VSCT. En el caso de c
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|None||
+|Ninguno||
 
 ### <a name="child-elements"></a>Elementos secundarios
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|GuidSymbol|Define un símbolo GUID. GuidSymbol tiene dos atributos necesarios: nombre y valor. El nombre es el nombre del símbolo y el valor es el valor del GUID como una cadena.<br /><br /> Por ejemplo:\<GuidSymbol name="guidVsPackage1Pkg"   value="{c5f54698-101a-4846-84d3-dc748f9cd848}" />|
-|IDSymbol|Define un símbolo. IDSymbol tiene dos atributos necesarios: nombre y valor. El nombre es el nombre del símbolo y el valor es el valor del símbolo como una cadena.<br /><br /> Por ejemplo:\<IDSymbol name="MyMenuGroup" value="0x1020" />|
+|GuidSymbol|Define un símbolo GUID. GuidSymbol tiene dos atributos obligatorios: nombre y valor. El nombre es el nombre del símbolo y el valor es el valor del GUID como una cadena.<br /><br /> Por ejemplo:\<GuidSymbol name="guidVsPackage1Pkg"   value="{c5f54698-101a-4846-84d3-dc748f9cd848}" />|
+|IDSymbol|Define un símbolo. IDSymbol tiene dos atributos obligatorios: nombre y valor. El nombre es el nombre del símbolo y el valor es el valor del símbolo como una cadena.<br /><br /> Por ejemplo:\<IDSymbol name="MyMenuGroup" value="0x1020" />|
 
 ### <a name="parent-elements"></a>Elementos primarios
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|[CommandTable (Elemento)](../extensibility/commandtable-element.md)|El elemento raíz del archivo. Vsct.|
+|[CommandTable (Elemento)](../extensibility/commandtable-element.md)|Elemento raíz del archivo .vsct.|
 
 ## <a name="example"></a>Ejemplo
 

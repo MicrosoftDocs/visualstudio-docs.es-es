@@ -1,9 +1,9 @@
 ---
-title: Buttons (elemento) | Microsoft Docs
-description: El elemento botones agrupa los elementos de botón, que representan comandos individuales. Este artículo contiene un ejemplo.
+title: Elemento Buttons | Microsoft Docs
+description: El elemento Buttons agrupa elementos Button, que representan comandos individuales. Este artículo contiene un ejemplo.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Buttons element (VSCT XML schema)
 - VSCT XML schema elements, Buttons
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e2988654ebd676d49c8a5dd02652fc8a3662869
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 2952f9f6747e52604e9f24cd173ab07f8d5a4756
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105068133"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900803"
 ---
-# <a name="buttons-element"></a>Buttons, elemento
-Agrupa los elementos de [botón](../extensibility/button-element.md) , que representan comandos individuales.
+# <a name="buttons-element"></a>Elemento Buttons
+Agrupa [elementos Button,](../extensibility/button-element.md) que representan comandos individuales.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,20 +39,20 @@ Agrupa los elementos de [botón](../extensibility/button-element.md) , que repre
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|Condición|Opcional. Vea [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condición|Opcional. Vea [Atributos condicionales.](../extensibility/vsct-xml-schema-conditional-attributes.md)|
 
 ### <a name="child-elements"></a>Elementos secundarios
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|[Buttons, elemento](../extensibility/buttons-element.md)|Agrupa los elementos de botón.|
+|[Elemento Buttons](../extensibility/buttons-element.md)|Elementos De botón de grupos.|
 |[Elemento Button](../extensibility/button-element.md)|Define un comando con el que el usuario puede interactuar.|
 
 ### <a name="parent-elements"></a>Elementos primarios
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|[Elemento Commands](../extensibility/commands-element.md)|Representa la colección de comandos de la barra de herramientas de VSPackage.|
+|[Elemento Commands](../extensibility/commands-element.md)|Representa la colección de comandos en la barra de herramientas de VSPackage.|
 
 ## <a name="example"></a>Ejemplo
 
@@ -69,5 +69,5 @@ Agrupa los elementos de [botón](../extensibility/button-element.md) , que repre
 ```
 
 ## <a name="see-also"></a>Consulte también
-- [Cómo agrega VSPackages los elementos de la interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Cómo agregan vsPackages elementos de interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md)

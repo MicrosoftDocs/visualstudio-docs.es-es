@@ -1,9 +1,9 @@
 ---
 title: Objeto VSCodeWindowManager | Microsoft Docs
-description: Obtenga información sobre el objeto VSCodeWindowManager, que es responsable de administrar los elementos gráficos, por ejemplo, la barra desplegable.
+description: Obtenga información sobre el objeto VSCodeWindowManager, que es responsable de administrar los adornos, por ejemplo, la barra desplegable.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - VSCodeWindowManager
 helpviewer_keywords:
@@ -15,19 +15,19 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60093d237ed2aa7a14e5695efc66fe8edd515f4a
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 76ab3d2a72c957b20a79850dc312f5c16de98afc
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105062400"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905299"
 ---
 # <a name="vscodewindowmanager-object"></a>Objeto VSCodeWindowManager
 
-El servicio de lenguaje implementa el administrador de ventanas de código y es responsable de administrar los elementos gráficos (por ejemplo, la barra desplegable). Para obtener más información, vea [personalizar ventanas de código mediante la API heredada](/previous-versions/visualstudio/visual-studio-2015/extensibility/customizing-code-windows-by-using-the-legacy-api?preserve-view=true&view=vs-2015).
+El servicio de lenguaje implementa el administrador de ventanas de código y es responsable de administrar los adornos (por ejemplo, la barra desplegable). Para obtener más información, consulte [Personalización de ventanas de código mediante la API heredada.](/previous-versions/visualstudio/visual-studio-2015/extensibility/customizing-code-windows-by-using-the-legacy-api?preserve-view=true&view=vs-2015)
 
-En la tabla siguiente se muestran las interfaces en el `VSCodeWindowManager` objeto.
+En la tabla siguiente se muestran las interfaces del `VSCodeWindowManager` objeto .
 
 |Interfaz|Descripción|
 |---------------|-----------------|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Permite agregar o quitar elementos gráficos (como barras desplegables) en una ventana de código.|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Permite agregar o quitar adornos (por ejemplo, barras desplegables) en una ventana de código o quitarse de esta.|

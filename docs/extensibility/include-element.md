@@ -1,9 +1,9 @@
 ---
-title: Elemento include | Microsoft Docs
-description: El elemento include especifica un archivo que se puede encontrar en la ruta de inclusión proporcionada para la inserción en el archivo actual.
+title: Elemento Include | Microsoft Docs
+description: El elemento Include especifica un archivo que se puede encontrar en la ruta de acceso de inclusión proporcionada para la inserción en el archivo actual.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - Include
 helpviewer_keywords:
@@ -15,15 +15,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd64f897dc2a089a2e94f5e0c53e3ef116f7b385
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d0005626c7fbb276775661a7cfb73d17f5e20d62
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105082106"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899361"
 ---
-# <a name="include-element"></a>Elemento include
-El elemento include especifica un archivo que se puede encontrar en la ruta de inclusión proporcionada para la inserción en el archivo actual.  Todos los símbolos y tipos definidos se convertirán en parte del resultado compilado.
+# <a name="include-element"></a>Elemento Include
+El elemento Include especifica un archivo que se puede encontrar en la ruta de acceso de inclusión proporcionada para la inserción en el archivo actual.  Todos los símbolos y tipos definidos pasarán a formar parte del resultado compilado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -38,8 +38,8 @@ El elemento include especifica un archivo que se puede encontrar en la ruta de i
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|href|Necesario. La ruta de acceso al archivo de encabezado:<br /><br /> href = "stdidcmd. h"|
-|Condición|Opcional. Vea [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|href|Necesario. Ruta de acceso al archivo de encabezado:<br /><br /> href="stdidcmd.h"|
+|Condición|Opcional. Vea [Atributos condicionales.](../extensibility/vsct-xml-schema-conditional-attributes.md)|
 
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -51,7 +51,7 @@ El elemento include especifica un archivo que se puede encontrar en la ruta de i
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|[Elemento CommandTable](../extensibility/commandtable-element.md)|Define todos los elementos que representan comandos (es decir, elementos de menú, menús, barras de herramientas y cuadros combinados) que un VSPackage proporciona al IDE.|
+|[Elemento CommandTable](../extensibility/commandtable-element.md)|Define todos los elementos que representan comandos (es decir, elementos de menú, menús, barras de herramientas y cuadros combinados) que proporciona un VSPackage al IDE.|
 
 ## <a name="example"></a>Ejemplo
 
@@ -60,4 +60,4 @@ El elemento include especifica un archivo que se puede encontrar en la ruta de i
 ```
 
 ## <a name="see-also"></a>Consulte también
-- [Archivos de tabla de comandos de Visual Studio (. Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Visual Studio de tabla de comandos (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

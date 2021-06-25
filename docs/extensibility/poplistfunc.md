@@ -3,7 +3,7 @@ title: POPLISTFUNC | Microsoft Docs
 description: Obtenga información sobre la función de devolución de llamada POPLISTFUNC, que usa el complemento de control de código fuente para actualizar una lista de archivos o directorios.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - POPDIRLISTFUNC
 helpviewer_keywords:
@@ -14,20 +14,20 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: aec322d73e49d4aae91956bd8df015a01c922a10
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: b52ed40397793b44f8a9c7ed9c36aa5996ae0176
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105090244"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900387"
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
-El IDE proporciona esta devolución de llamada al [SccPopulateList](../extensibility/sccpopulatelist-function.md) y la usa el complemento de control de código fuente para actualizar una lista de archivos o directorios (también proporcionados a la `SccPopulateList` función).
+El IDE proporciona esta devolución de llamada a [SccPopulateList](../extensibility/sccpopulatelist-function.md) y la usa el complemento de control de código fuente para actualizar una lista de archivos o directorios (también proporcionados a la `SccPopulateList` función).
 
- Cuando un usuario elige el comando **Get** en el IDE, el IDE muestra un cuadro de lista de todos los archivos que el usuario puede obtener. Desafortunadamente, el IDE no conoce la lista exacta de todos los archivos que el usuario podría obtener; solo el complemento tiene esta lista. Si otros usuarios han agregado archivos al proyecto de control de código fuente, estos archivos deben aparecer en la lista, pero el IDE no los conoce. El IDE crea una lista de los archivos que considera que el usuario puede obtener. Antes de que muestre esta lista al usuario, llama a [SccPopulateList](../extensibility/sccpopulatelist-function.md) , lo que `,` le permite agregar y eliminar archivos de la lista.
+ Cuando un usuario elige el **comando Get** en el IDE, el IDE muestra un cuadro de lista de todos los archivos que el usuario puede obtener. Desafortunadamente, el IDE no conoce la lista exacta de todos los archivos que el usuario podría obtener. solo el complemento tiene esta lista. Si otros usuarios han agregado archivos al proyecto de control de código fuente, estos archivos deben aparecer en la lista, pero el IDE no los conoce. El IDE crea una lista de los archivos que cree que el usuario puede obtener. Antes de mostrar esta lista al usuario, llama a [SccPopulateList,](../extensibility/sccpopulatelist-function.md) lo que da al complemento de control de código fuente la oportunidad de agregar y eliminar archivos `,` de la lista.
 
 ## <a name="signature"></a>Firma
- El complemento de control de código fuente modifica la lista mediante una llamada a una función implementada por el IDE con el siguiente prototipo:
+ El complemento de control de código fuente modifica la lista mediante una llamada a una función implementada por ide con el siguiente prototipo:
 
 ```cpp
 typedef BOOL (*POPLISTFUNC) (
@@ -39,28 +39,28 @@ typedef BOOL (*POPLISTFUNC) (
 ```
 
 ## <a name="parameters"></a>Parámetros
- pvCallerData el `pvCallerData` parámetro pasado por el llamador (el IDE) al [SccPopulateList](../extensibility/sccpopulatelist-function.md). El complemento de control de código fuente no debe suponer nada sobre el contenido de este parámetro.
+ pvCallerData El `pvCallerData` parámetro pasado por el autor de la llamada (el IDE) a [SccPopulateList](../extensibility/sccpopulatelist-function.md). El complemento de control de código fuente no debe suponer nada sobre el contenido de este parámetro.
 
- fAddRemove si `TRUE` `lpFileName` es un archivo que se debe agregar a la lista de archivos. Si `FALSE` `lpFileName` es, es un archivo que se debe eliminar de la lista de archivos.
+ fAddRemove Si `TRUE` es , es un archivo que se debe agregar a la lista de `lpFileName` archivos. Si `FALSE` es , es un archivo que se debe eliminar de la lista de `lpFileName` archivos.
 
- Estado de nStatus de `lpFileName` (una combinación de `SCC_STATUS` bits; consulte el [código de estado de archivo](../extensibility/file-status-code-enumerator.md) para obtener más detalles).
+ nEstado de `lpFileName` estado de (una combinación de `SCC_STATUS` los bits; vea Código de estado [del archivo](../extensibility/file-status-code-enumerator.md) para obtener más información).
 
- lpFileName ruta de acceso completa del directorio del nombre de archivo que se va a agregar o eliminar de la lista.
+ lpFileName Ruta de acceso completa al directorio del nombre de archivo que se agregará o eliminará de la lista.
 
 ## <a name="return-value"></a>Valor devuelto
 
-|Value|Descripción|
+|Valor|Descripción|
 |-----------|-----------------|
 |`TRUE`|El complemento puede seguir llamando a esta función.|
-|`FALSE`|Se ha producido un problema en el lado del IDE (por ejemplo, una situación de memoria insuficiente). El complemento debe detener la operación.|
+|`FALSE`|Ha habido un problema en el lado del IDE (por ejemplo, una situación de memoria desaprobada). El complemento debe detener la operación.|
 
 ## <a name="remarks"></a>Observaciones
- Para cada archivo que el complemento de control de código fuente desea agregar o eliminar de la lista de archivos, llama a esta función, pasando el `lpFileName` . La `fAddRemove` marca indica un nuevo archivo que se va a agregar a la lista o a un archivo anterior que se va a eliminar. El `nStatus` parámetro proporciona el estado del archivo. Cuando el complemento SCC ha terminado de agregar y eliminar archivos, vuelve de la llamada a [SccPopulateList](../extensibility/sccpopulatelist-function.md) .
+ Para cada archivo que el complemento de control de código fuente quiera agregar o eliminar de la lista de archivos, llama a esta función y pasa `lpFileName` . La `fAddRemove` marca indica un nuevo archivo que se agregará a la lista o un archivo antiguo que se eliminará. El `nStatus` parámetro proporciona el estado del archivo. Cuando el complemento SCC ha terminado de agregar y eliminar archivos, devuelve desde la [llamada a SccPopulateList.](../extensibility/sccpopulatelist-function.md)
 
 > [!NOTE]
-> El `SCC_CAP_POPULATELIST` bit de capacidad es necesario para Visual Studio.
+> El `SCC_CAP_POPULATELIST` bit de funcionalidad es necesario para Visual Studio.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 - [Funciones de devolución de llamada implementadas por el IDE](../extensibility/callback-functions-implemented-by-the-ide.md)
 - [Complementos de control de código fuente](../extensibility/source-control-plug-ins.md)
 - [SccPopulateList](../extensibility/sccpopulatelist-function.md)

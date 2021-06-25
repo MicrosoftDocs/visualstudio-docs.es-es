@@ -1,8 +1,8 @@
 ---
-description: La lista de tareas secundarias que se registran con esta tarea.
+description: Lista de tareas secundarias registradas con esta tarea.
 title: m_children campo | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - m_children field, ContingentProperties class [.NET Framework debug engines]
 ms.assetid: 0a3b5653-7bc0-4a7a-8963-9020bc52b9cb
@@ -11,21 +11,21 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 90394afd982f22977d3d3ed74850032bfb5634c8
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 311ab164551e46fbe1c30b5a6045a7993a900a67
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105094697"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901375"
 ---
 # <a name="m_children-field"></a>m_children campo
-La lista de tareas secundarias que se registran con esta tarea.
+Lista de tareas secundarias registradas con esta tarea.
 
  **Espacio de nombres:** <xref:System.Threading.Tasks?displayProperty=fullName>
 
  **Ensamblado:** mscorlib (en *mscorlib.dll*)
 
- Dado que no puede tener acceso a este miembro interno desde el .NET Framework, se proporciona la siguiente sintaxis en el lenguaje intermedio común (CIL).
+ Dado que no se puede acceder a este miembro interno desde la .NET Framework, se proporciona la sintaxis siguiente en Common Intermediate Language (CIL).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -36,7 +36,7 @@ La lista de tareas secundarias que se registran con esta tarea.
 ## <a name="remarks"></a>Observaciones
  Mientras se ejecuta la tarea, solo el subproceso que ejecuta la tarea debe tener acceso a esta matriz.
 
- Si se completa la tarea, otros subprocesos pueden tener acceso a este campo siempre y cuando no agreguen nada o quiten nada de él.
+ Si la tarea se completa, otros subprocesos pueden tener acceso a este campo siempre y cuando no le agreguen nada o quiten nada de él.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 - [Clase ContingentProperties](../../extensibility/debugger/contingentproperties-class-internal-members.md)

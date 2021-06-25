@@ -3,7 +3,7 @@ title: Obtener propiedades del proyecto | Microsoft Docs
 description: Obtenga información sobre cómo mostrar las propiedades del proyecto en una ventana de herramientas. En este ejemplo se muestra el control de árbol en la ventana de herramientas.
 ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - project properties, displaying in tool window
 - tool windows, displaying project properties
@@ -13,32 +13,32 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8de3f32951cb70b8115781ce067950c7e518b102
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d3f7f6cc788e693ae143b288c589fc868c59d531
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105057668"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900673"
 ---
-# <a name="get-project-properties"></a>Obtener propiedades del proyecto
+# <a name="get-project-properties"></a>Obtener las propiedades del proyecto
 
 En este tutorial se muestra cómo mostrar las propiedades del proyecto en una ventana de herramientas.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS después. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+A partir Visual Studio 2015, no se instala el SDK Visual Studio desde el centro de descarga. Se incluye como una característica opcional en Visual Studio configuración. También puede instalar el SDK de VS después. Para más información, consulte [Instalación del SDK Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ### <a name="to-create-a-vsix-project-and-add-a-tool-window"></a>Para crear un proyecto VSIX y agregar una ventana de herramientas
 
-1. Cada extensión de Visual Studio comienza con un proyecto de implementación de VSIX, que contendrá los recursos de la extensión. Cree un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Proyecto VSIX denominado `ProjectPropertiesExtension` . Para buscar la plantilla de Proyecto VSIX en el cuadro de diálogo **nuevo proyecto** , busque "VSIX".
+1. Cada Visual Studio extensión comienza con un proyecto de implementación de VSIX, que contendrá los recursos de extensión. Cree un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proyecto VSIX denominado `ProjectPropertiesExtension` . Puede encontrar la plantilla de proyecto VSIX en el **cuadro de diálogo Nuevo** proyecto buscando "vsix".
 
-2. Agregue una ventana de herramientas agregando una plantilla de elemento de ventana de herramientas personalizada denominada `ProjectPropertiesToolWindow` . En el **Explorador de soluciones**, haga clic con el botón secundario en el nodo del proyecto y seleccione **Agregar**  >  **nuevo elemento**. En el **cuadro de diálogo Agregar nuevo elemento**, vaya a la extensibilidad de **elementos de Visual C#**  >   y seleccione **ventana de herramientas personalizada**. En el campo **nombre** de la parte inferior del cuadro de diálogo, cambie el nombre del archivo a `ProjectPropertiesToolWindow.cs` . Para obtener más información sobre cómo crear una ventana de herramientas personalizada, vea [crear una extensión con una ventana de herramientas](../extensibility/creating-an-extension-with-a-tool-window.md).
+2. Agregue una ventana de herramientas agregando una plantilla de elemento de ventana de herramientas personalizada denominada `ProjectPropertiesToolWindow` . En la **Explorador de soluciones**, haga clic con el botón derecho en el nodo del proyecto y **seleccione Agregar** nuevo  >  **elemento**. En el **cuadro de diálogo Agregar nuevo elemento**, vaya a Extensibilidad de elementos de Visual **C#**  >   y seleccione Ventana de **herramientas personalizadas**. En el **campo** Nombre de la parte inferior del cuadro de diálogo, cambie el nombre de archivo a `ProjectPropertiesToolWindow.cs` . Para obtener más información sobre cómo crear una ventana de herramientas personalizada, vea [Crear una extensión con una ventana de herramientas.](../extensibility/creating-an-extension-with-a-tool-window.md)
 
 3. Compile la solución y compruebe que se compila sin errores.
 
 ### <a name="to-display-project-properties-in-a-tool-window"></a>Para mostrar las propiedades del proyecto en una ventana de herramientas
 
-1. En el archivo ProjectPropertiesToolWindowCommand. CS, agregue las siguientes directivas using.
+1. En el archivo ProjectPropertiesToolWindowCommand.cs, agregue las siguientes directivas using.
 
     ```csharp
     using EnvDTE;
@@ -46,9 +46,9 @@ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el c
 
     ```
 
-2. En *ProjectPropertiesToolWindowControl. Xaml*, quite el botón existente y agregue una vista de árbol desde el cuadro de herramientas. También puede quitar el controlador de eventos Click del archivo *ProjectPropertiesToolWindowControl. Xaml. CS* .
+2. En *ProjectPropertiesToolWindowControl.xaml,* quite el botón existente y agregue treeView desde el cuadro de herramientas. También puede quitar el controlador de eventos click del *archivo ProjectPropertiesToolWindowControl.xaml.cs.*
 
-3. En *ProjectPropertiesToolWindowCommand. CS*, use el `ShowToolWindow()` método para abrir el proyecto y leer sus propiedades y, a continuación, agregue las propiedades a la vista de árbol. El código de ShowToolWindow debe tener un aspecto similar al siguiente:
+3. En *ProjectPropertiesToolWindowCommand.cs*, use el método para abrir el proyecto y leer sus propiedades y, a continuación, agregue las propiedades `ShowToolWindow()` a TreeView. El código de ShowToolWindow debe ser parecido al siguiente:
 
     ```csharp
     private void ShowToolWindow(object sender, EventArgs e)
@@ -95,10 +95,10 @@ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el c
     }
     ```
 
-4. Compile la solución y comience la depuración. Debería aparecer la instancia experimental.
+4. Compile la solución y comience la depuración. Debe aparecer la instancia experimental.
 
 5. En la instancia experimental, abra un proyecto.
 
-6. En la **vista**  >  **otras ventanas** , haga clic en **ProjectPropertiesToolWindow**.
+6. En Ver  >  **otras ventanas,** haga **clic en ProyectoPropiedadesHerramientaWindow**.
 
-  Debería ver el control de árbol en la ventana de herramientas junto con el nombre del primer proyecto y de todas sus propiedades del proyecto.
+  Debería ver el control de árbol en la ventana de herramientas junto con el nombre del primer proyecto y de todas sus propiedades de proyecto.

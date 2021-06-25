@@ -1,8 +1,8 @@
 ---
 description: Esta función cambia el nombre de un archivo en el sistema de control de código fuente.
-title: Función SccRename | Microsoft Docs
+title: SccRename (Función) | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccRename
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9d42e796f1ec2176e9de79ca392aab070581324
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: fb3fa392cd4ed31d907fe5913f8d7965a20df05b
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105073838"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900465"
 ---
 # <a name="sccrename-function"></a>SccRename (Función)
 Esta función cambia el nombre de un archivo en el sistema de control de código fuente.
@@ -37,36 +37,36 @@ SCCRTN SccRename(
 #### <a name="parameters"></a>Parámetros
  pvContext
 
-de Estructura de contexto del complemento de control de código fuente.
+[in] Estructura de contexto del complemento de control de código fuente.
 
  hWnd
 
-de Identificador de la ventana del IDE que el complemento de control de código fuente puede utilizar como elemento primario para los cuadros de diálogo que proporciona.
+[in] Identificador de la ventana del IDE que el complemento de control de código fuente puede usar como elemento primario para los cuadros de diálogo que proporciona.
 
  lpFileName
 
-de Nombre de archivo completo del archivo cuyo nombre se va a cambiar.
+[in] Nombre de archivo completo del archivo cuyo nombre se va a cambiar.
 
  lpNewName
 
-[in] Nuevo nombre completo. Si la ruta de acceso del directorio es diferente, el archivo se ha despasado de un subdirectorio a otro.
+[in] Nuevo nombre completo. Si la ruta de acceso del directorio es diferente, el archivo se ha movido de un subdirectorio a otro.
 
 ## <a name="return-value"></a>Valor devuelto
- Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:
+ Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los valores siguientes:
 
-|Value|Descripción|
+|Valor|Descripción|
 |-----------|-----------------|
-|SCC_OK|Operación de cambio de nombre completada correctamente.|
+|SCC_OK|La operación de cambio de nombre se completó correctamente.|
 |SCC_E_PROJNOTOPEN|El proyecto no está abierto bajo control de código fuente.|
 |SCC_E_FILENOTCONTROLLED|El archivo no está bajo control de código fuente.|
-|SCC_E_ACCESSFAILURE|Hubo un problema al obtener acceso al sistema de control de código fuente, probablemente debido a problemas de red o de contención.|
+|SCC_E_ACCESSFAILURE|Hubo un problema al acceder al sistema de control de código fuente, probablemente debido a problemas de red o contención.|
 |SCC_E_NOTAUTHORIZED|El usuario no está autorizado para completar esta operación.|
 |SCC_E_COULDNOTCREATEPROJECT|No se pudo crear el proyecto como parte del proceso de cambio de nombre.|
 |SCC_E_OPNOTPERFORMED|No se realizó la operación.|
-|SCC_E_NONSPECIFICERROR|Se produjo un error no especificado o general.|
+|SCC_E_NONSPECIFICERROR|Error general o no especificado.|
 
 ## <a name="remarks"></a>Observaciones
- Esta función se puede usar para cambiar el nombre de un archivo o moverlo de una ubicación a otra en el sistema de control de código fuente. El complemento de control de código fuente no debe intentar tener acceso al archivo en el disco. Es responsabilidad del IDE cambiar el nombre del archivo local.
+ Esta función se puede usar para cambiar el nombre de un archivo o moverlo de una ubicación a otra en el sistema de control de código fuente. El complemento de control de código fuente no debe intentar acceder al archivo en el disco. Es responsabilidad del IDE cambiar el nombre del archivo local.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 - [Funciones de API de complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)

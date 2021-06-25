@@ -1,9 +1,9 @@
 ---
-title: GUID de IDE | Microsoft Docs
+title: GUID del IDE | Microsoft Docs
 description: La clase VSConstants publica un conjunto de GUID de algunas partes del IDE. En este artículo se enumeran los GUID.
 ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - GUIDs, integrated development environment
 - IDE, GUIDs
@@ -13,28 +13,28 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6351ea576c8976bd12fe206d8c4dbbe5f34a72d8
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 884f2e7bb25eacfd3118632082d321ceb2b45da8
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105069860"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904934"
 ---
 # <a name="ide-guids"></a>GUID de IDE
 
-La <xref:Microsoft.VisualStudio.VSConstants> clase publica los GUID de algunas partes del entorno de desarrollo integrado (IDE) como se muestra en la tabla siguiente.
+La clase publica GUID de algunas partes del entorno de desarrollo <xref:Microsoft.VisualStudio.VSConstants> integrado (IDE), como se muestra en la tabla siguiente.
 
 ## <a name="core-systems"></a>Sistemas principales
 
 |Constante|GUID|
 |--------------|----------|
-|<xref:Microsoft.VisualStudio.VSConstants.CLSID.HtmDocData_guid>|62C81794-A9EC-11D0-8198-00A0C91BBEE3|
+|<xref:Microsoft.VisualStudio.VSConstants.CLSID.HtmDocData_guid>|62C81794-A9EC-11D0-8198-00A0C91 (3)|
 |<xref:Microsoft.VisualStudio.VSConstants.VsPackageGuid.HtmlEditorPackage_guid>|1B437D20-F8FE-11D2-A6AE-00104BCC7269|
 |<xref:Microsoft.VisualStudio.VSConstants.VsLanguageServiceGuid.HtmlLanguageService_guid>|58E975A0-F8FE-11D2-A6AE-00104BCC7269|
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID.MiscellaneousFilesProject_guid>|A2FE74E1-B743-11d0-AE1A-00A0C90FFFC3|
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID.SolutionItemsProject_guid>|D1DCDB85-C5E8-11d2-BFCA-00C04F990235|
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID.VsEnvironmentPackage_guid>|DA9FB551-C724-11d0-AE1F-00A0C90FFFC3|
-|<xref:Microsoft.VisualStudio.VSConstants.VsEditorFactoryGuid.HtmlEditor_guid>|C76D83F8-A489-11D0-8195-00A0C91BBEE3|
+|<xref:Microsoft.VisualStudio.VSConstants.VsEditorFactoryGuid.HtmlEditor_guid>|C76D83F8-A489-11D0-8195-00A0C91 (3)|
 |<xref:Microsoft.VisualStudio.VSConstants.VsEditorFactoryGuid.TextEditor_guid>|8B382828-6202-11d1-8870-0000F87579D2|
 
 ## <a name="broadly-visible-components"></a>Componentes ampliamente visibles
@@ -55,7 +55,7 @@ La <xref:Microsoft.VisualStudio.VSConstants> clase publica los GUID de algunas p
 |<xref:Microsoft.VisualStudio.VSConstants.ItemTypeGuid.SubProject_guid>|EA6618E8-6E24-4528-94BE-6889FE16485C|
 |<xref:Microsoft.VisualStudio.VSConstants.ItemTypeGuid.VirtualFolder_guid>|6bb5f8f0-4483-11d3-8bcf-00c04f8ec28c|
 
-## <a name="ui-contexts"></a>Contextos de la interfaz de usuario
+## <a name="ui-contexts"></a>Contextos de interfaz de usuario
 
 |Constante|GUID|
 |--------------|----------|
@@ -67,7 +67,7 @@ La <xref:Microsoft.VisualStudio.VSConstants> clase publica los GUID de algunas p
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.FullScreenMode_guid>|adfc4e62-0397-11d1-9f4e-00a0c911004f|
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.NoSolution_guid>|adfc4e64-0397-11d1-9f4e-00a0c911004f|
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid>|adfc4e60-0397-11d1-9f4e-00a0c911004f|
-|<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>|f1536ef8-92ec-443c-9ed7-fdadf150da82|
+|<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>|f1536ef8-92ec-443c-9ed7-federdf150da82|
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>|93694fa0-0397-11d1-9f4e-00a0c911004f|
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>|adfc4e66-0397-11d1-9f4e-00a0c911004f|
 
@@ -93,25 +93,25 @@ La <xref:Microsoft.VisualStudio.VSConstants> clase publica los GUID de algunas p
 
 |Constante|GUID|
 |--------------|----------|
-|<xref:Microsoft.VisualStudio.VSConstants.IID_IUnknown>|00000000-0000-0000-C000-000000000046|
+|<xref:Microsoft.VisualStudio.VSConstants.IID_IUnknown>|00000000-0000-0000-C000-00000000046|
 
-## <a name="task-list-guids"></a>GUID de la lista de tareas
+## <a name="task-list-guids"></a>GUID de lista de tareas
 
 |Constante|GUID|
 |--------------|----------|
 |<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.All>|1880202e-fc20-11d2-8bb1-00c04f8ec28c|
-|<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.CheckedTasks>|18802036-FC20-11D2-8bb1-00c04f8ec28c|
-|<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.CommentTasks>|18802034-FC20-11D2-8bb1-00c04f8ec28c|
-|<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.CompilerTasks>|18802033-FC20-11D2-8bb1-00c04f8ec28c|
-|<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.CurrentFileTasks>|18802035-FC20-11D2-8bb1-00c04f8ec28c|
+|<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.CheckedTasks>|18802036-fc20-11d2-8bb1-00c04f8ec28c|
+|<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.CommentTasks>|18802034-fc20-11d2-8bb1-00c04f8ec28c|
+|<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.CompilerTasks>|18802033-fc20-11d2-8bb1-00c04f8ec28c|
+|<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.CurrentFileTasks>|18802035-fc20-11d2-8bb1-00c04f8ec28c|
 |<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.HTMLTasks>|36ac1c0d-fe86-11d2-8bb1-00c04f8ec28c|
-|<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.ShortcutTasks>|18802030-FC20-11D2-8bb1-00c04f8ec28c|
-|<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.UncheckedTasks>|18802037-FC20-11D2-8bb1-00c04f8ec28c|
+|<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.ShortcutTasks>|18802030-fc20-11d2-8bb1-00c04f8ec28c|
+|<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.UncheckedTasks>|18802037-fc20-11d2-8bb1-00c04f8ec28c|
 |<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.UserTasks>|1880202f-fc20-11d2-8bb1-00c04f8ec28c|
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID.VsTaskList_guid>|BC5955D5-aa0d-11d0-a8c5-00a0c921a4d2|
 |<xref:Microsoft.VisualStudio.VSConstants.VsPackageGuid.VsTaskListPackage_guid>|4A9B7E50-aa16-11d0-a8c5-00a0c921a4d2|
 
-## <a name="component-selector-page-guids"></a>GUID de página de selector de componentes
+## <a name="component-selector-page-guids"></a>GUID de página del selector de componentes
 
 |Constantes|GUID|
 |---------------|----------|
@@ -119,7 +119,7 @@ La <xref:Microsoft.VisualStudio.VSConstants> clase publica los GUID de algunas p
 |Microsoft.VisualStudio.VSConstants.GUID_COMPlusPage|9A341D95-5A64-11d3-BFF9-00C04F990235|
 |Microsoft.VisualStudio.VSConstants.GUID_SolutionPage|9A341D97-5A64-11d3-BFF9-00C04F990235|
 
-## <a name="miscellaneous-shell-guids"></a>GUID de Shell varios
+## <a name="miscellaneous-shell-guids"></a>GUID de shell varios
 
 |Constantes|GUID|
 |---------------|----------|
@@ -127,8 +127,8 @@ La <xref:Microsoft.VisualStudio.VSConstants> clase publica los GUID de algunas p
 |<xref:Microsoft.VisualStudio.VSConstants.VsPackageGuid.VsDocOutlinePackage_guid>|21af45b0-ffa5-11d0-b63f-00a0c922e851|
 |Microsoft.VisualStudio.VSConstants.SID_SVsToolboxActiveXDataProvider|35222106-bb44-11d0-8c46-00c04fc2aae2|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 
 - [Constantes COM en código administrado](../extensibility/com-constants-in-managed-code.md)
-- [Constantes de IDE](../extensibility/ide-constants.md)
-- [Comandos definidos por el IDE para extender Project s ystems](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)
+- [Constantes ide](../extensibility/ide-constants.md)
+- [Comandos definidos por ide para extender los ystems del proyecto](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)

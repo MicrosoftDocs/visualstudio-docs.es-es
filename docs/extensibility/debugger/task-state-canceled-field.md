@@ -1,8 +1,8 @@
 ---
-description: La tarea se canceló antes de alcanzar el estado de ejecución, o confirmó su cancelación y se completó sin excepción.
+description: La tarea se canceló antes de alcanzar el estado en ejecución o confirmó su cancelación y se completó sin excepción.
 title: TASK_STATE_CANCELED campo | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - TASK_STATE_CANCELED field, Task class [.NET Framework debug engines]
 ms.assetid: f4f5a96a-8230-493d-9696-8d2716bda261
@@ -11,21 +11,21 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e02bd5c81fea58e49eca0909d53d2fe68269b72d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 90b3c048edb4e52a426a2fd40d8bfd31168fea7d
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105079272"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900179"
 ---
 # <a name="task_state_canceled-field"></a>TASK_STATE_CANCELED campo
-La tarea se canceló antes de alcanzar el estado de ejecución, o confirmó su cancelación y se completó sin excepción.
+La tarea se canceló antes de alcanzar el estado en ejecución o confirmó su cancelación y se completó sin excepción.
 
  **Espacio de nombres:** <xref:System.Threading.Tasks?displayProperty=fullName>
 
  **Ensamblado:** mscorlib (en mscorlib.dll)
 
- Dado que no puede tener acceso a este miembro interno desde el .NET Framework, se proporciona la siguiente sintaxis en el lenguaje intermedio común (CIL).
+ Dado que no se puede acceder a este miembro interno desde la .NET Framework, se proporciona la siguiente sintaxis en Common Intermediate Language (CIL).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -34,7 +34,7 @@ La tarea se canceló antes de alcanzar el estado de ejecución, o confirmó su c
 ```
 
 ## <a name="remarks"></a>Observaciones
- Si el campo [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) contiene este valor, la <xref:System.Threading.Tasks.Task.Status%2A> propiedad devuelve <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> .
+ Si el [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) contiene este valor, la <xref:System.Threading.Tasks.Task.Status%2A> propiedad devuelve <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> .
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 - [Clase de tarea: miembros internos](../../extensibility/debugger/task-class-internal-members.md)

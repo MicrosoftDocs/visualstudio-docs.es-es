@@ -1,8 +1,8 @@
 ---
-description: Recupera una matriz de todos los objetos System. Threading. Tasks. TaskScheduler que están activos actualmente.
+description: Recupera una matriz de todos los objetos System.Threading.Tasks.TaskScheduler que están activos actualmente.
 title: Método GetTaskSchedulersForDebugger | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - GetTaskSchedulersForDebugger method, TaskScheduler class [.NET Framework debug engines]
 ms.assetid: 58aa236a-5ab8-4695-b303-89dffdbcd946
@@ -11,12 +11,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d024e44dee8e7513d862e3d299c2ed2b9e53cd5
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 58cb913f5dbc729c297de8a34aa5dd4c3c99b48a
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105054860"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900920"
 ---
 # <a name="gettaskschedulersfordebugger-method"></a>GetTaskSchedulersForDebugger (Método)
 Recupera una matriz de todos los <xref:System.Threading.Tasks.TaskScheduler> objetos que están activos actualmente.
@@ -25,7 +25,7 @@ Recupera una matriz de todos los <xref:System.Threading.Tasks.TaskScheduler> obj
 
  **Ensamblado:** mscorlib (en *mscorlib.dll*)
 
- Dado que no puede tener acceso a este miembro interno desde el .NET Framework, se proporciona la siguiente sintaxis en el lenguaje intermedio común (CIL).
+ Dado que no se puede acceder a este miembro interno desde la .NET Framework, se proporciona la sintaxis siguiente en Common Intermediate Language (CIL).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -34,10 +34,10 @@ Recupera una matriz de todos los <xref:System.Threading.Tasks.TaskScheduler> obj
 ```
 
 ## <a name="return-value"></a>Valor devuelto
- Una matriz de todos los <xref:System.Threading.Tasks.TaskScheduler> objetos que están activos actualmente en este objeto <xref:System.AppDomain> .
+ Matriz de todos los <xref:System.Threading.Tasks.TaskScheduler> objetos que están activos actualmente en este objeto <xref:System.AppDomain> .
 
 ## <a name="remarks"></a>Observaciones
- Este método no es seguro para subprocesos y no se debe utilizar simultáneamente con otras instancias de <xref:System.Threading.Tasks.TaskScheduler> . Llame a este método desde un depurador solo cuando el depurador haya suspendido todos los demás subprocesos.
+ Este método no es seguro para subprocesos y no debe usarlo simultáneamente con otras instancias de <xref:System.Threading.Tasks.TaskScheduler> . Llame a este método desde un depurador solo cuando el depurador haya suspendido todos los demás subprocesos.
 
-## <a name="see-also"></a>Consulte también
-- [TaskScheduler (clase)](../../extensibility/debugger/taskscheduler-class-internal-members.md)
+## <a name="see-also"></a>Consulta también
+- [Clase TaskScheduler](../../extensibility/debugger/taskscheduler-class-internal-members.md)

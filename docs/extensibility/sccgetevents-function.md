@@ -1,8 +1,8 @@
 ---
 description: Esta función recupera un evento de estado en cola.
-title: Función SccGetEvents | Microsoft Docs
+title: SccGetEvents Function | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccGetEvents
 helpviewer_keywords:
@@ -13,14 +13,14 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e7611a3f71b5fa6205708aca6b957f3921a71517
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9438ac10301e2da43b26a88575e44a8ad2c0bf82
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105072993"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901063"
 ---
-# <a name="sccgetevents-function"></a>SccGetEvents función)
+# <a name="sccgetevents-function"></a>Función SccGetEvents
 Esta función recupera un evento de estado en cola.
 
 ## <a name="syntax"></a>Sintaxis
@@ -37,34 +37,34 @@ SCCRTN SccGetEvents (
 ### <a name="parameters"></a>Parámetros
  pvContext
 
-de Estructura de contexto del complemento de control de código fuente.
+[in] Estructura de contexto del complemento de control de código fuente.
 
  lpFileName
 
-[in, out] Búfer en el que el complemento de control de código fuente coloca el nombre de archivo devuelto (hasta _MAX_PATH caracteres).
+[in, out] Búfer donde el complemento de control de código fuente coloca el nombre de archivo devuelto (hasta _MAX_PATH caracteres).
 
  lpStatus
 
-[in, out] Devuelve el código de estado (vea el [código de estado de archivo](../extensibility/file-status-code-enumerator.md) para ver los posibles valores).
+[in, out] Devuelve el código de estado (consulte [Código de estado del archivo](../extensibility/file-status-code-enumerator.md) para ver los valores posibles).
 
  pnEventsRemaining
 
-[in, out] Devuelve el número de entradas que quedan en la cola después de esta llamada. Si este número es grande, el llamador puede decidir llamar a [SccQueryInfo](../extensibility/sccqueryinfo-function.md) para obtener toda la información de una vez.
+[in, out] Devuelve el número de entradas que quedan en la cola después de esta llamada. Si este número es grande, el autor de la llamada puede decidir llamar a [SccQueryInfo](../extensibility/sccqueryinfo-function.md) para obtener toda la información a la vez.
 
 ## <a name="return-value"></a>Valor devuelto
- Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:
+ Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los valores siguientes:
 
-|Value|Descripción|
+|Valor|Descripción|
 |-----------|-----------------|
-|SCC_OK|Los eventos se obtienen correctamente.|
+|SCC_OK|Obtener eventos correctamente.|
 |SCC_E_OPNOTSUPPORTED|Esta función no se admite.|
 |SCC_E_NONSPECIFICERROR|Error no específico.|
 
 ## <a name="remarks"></a>Observaciones
- Se llama a esta función durante el procesamiento inactivo para ver si ha habido actualizaciones de estado para los archivos bajo control de código fuente. El complemento de control de código fuente mantiene el estado de todos los archivos que conoce y, cada vez que el complemento indica un cambio de estado, el estado y el archivo asociado se almacenan en una cola. Cuando `SccGetEvents` se llama a, se recupera y se devuelve el elemento superior de la cola. Esta función está restringida para devolver solo información almacenada previamente en la memoria caché y debe tener un procesamiento muy rápido (es decir, no se lee el disco o se solicita el estado al sistema de control de código fuente); de lo contrario, es posible que el rendimiento del IDE empiece a degradarse.
+ Se llama a esta función durante el procesamiento inactivo para ver si ha habido actualizaciones de estado para los archivos bajo control de código fuente. El complemento de control de código fuente mantiene el estado de todos los archivos que conoce y, cada vez que el complemento anota un cambio de estado, el estado y el archivo asociado se almacenan en una cola. Cuando se llama a , se recupera y devuelve el elemento superior `SccGetEvents` de la cola. Esta función está restringida para devolver solo la información almacenada previamente en caché y debe tener un tiempo de respuesta muy rápido (es decir, sin lectura del disco o solicitando al sistema de control de código fuente el estado); de lo contrario, el rendimiento del IDE puede empezar a degradarse.
 
- Si no hay ninguna actualización de estado para el informe, el complemento de control de código fuente almacena una cadena vacía en el búfer señalado por `lpFileName` . De lo contrario, el complemento almacena el nombre completo de la ruta de acceso del archivo para el que ha cambiado la información de estado y devuelve el código de estado adecuado (uno de los valores detallados en el [código de estado de archivo](../extensibility/file-status-code-enumerator.md)).
+ Si no hay ninguna actualización de estado para notificar, el complemento de control de código fuente almacena una cadena vacía en el búfer al que apunta `lpFileName` . De lo contrario, el complemento almacena el nombre de ruta de acceso completo del archivo para el que ha cambiado la información de estado y devuelve el código de estado adecuado (uno de los valores detallados en Código de estado de [archivo](../extensibility/file-status-code-enumerator.md)).
 
-## <a name="see-also"></a>Consulte también
-- [Funciones de la API del complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>Consulta también
+- [Funciones de API del complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)
 - [Código de estado del archivo](../extensibility/file-status-code-enumerator.md)

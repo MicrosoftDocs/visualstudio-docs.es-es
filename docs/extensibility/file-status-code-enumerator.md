@@ -1,9 +1,9 @@
 ---
-title: Enumerador de código de estado de archivo | Microsoft Docs
-description: El enumerador SccStatus contiene valores constantes que especifican el estado de un archivo en el sistema de control de código fuente y se usa en SccQueryInfo y POPLISTFUNC.
+title: Enumerador de código de estado | Microsoft Docs
+description: El enumerador SccStatus contiene valores constantes que especifican el estado de un archivo en el sistema de control de código fuente y los usan SccQueryInfo y POPLISTFUNC.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - named constants, SccStatus enumerator
 - source control plug-ins, file status enumeration
@@ -15,15 +15,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: af2ff3293a55dc76925aedd7a029e1bfdd367186
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 95de8a29efcd56880cdaf452c9f21b90bba1c5c9
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105074956"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900972"
 ---
 # <a name="file-status-code-enumerator"></a>Enumerador de código de estado de archivo
-El `SccStatus` enumerador contiene valores constantes con nombre que especifican el estado de un archivo en el sistema de control de código fuente. Esta enumeración la usan [SccQueryInfo](../extensibility/sccqueryinfo-function.md) y la `POPLISTFUNC` función de devolución de llamada (vea [POPLISTFUNC](../extensibility/poplistfunc.md) para obtener más información).
+El `SccStatus` enumerador contiene valores constantes con nombre que especifican el estado de un archivo en el sistema de control de código fuente. [SccQueryInfo](../extensibility/sccqueryinfo-function.md) y la función de devolución de llamada usan esta enumeración `POPLISTFUNC` [(vea POPLISTFUNC para](../extensibility/poplistfunc.md) obtener más información).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,43 +51,43 @@ enum SccStatus {
 ```
 
 ## <a name="members"></a>Miembros
- No se pudo obtener el estado de SCC_STATUS_INVALID; no se base en él.
+ SCC_STATUS_INVALID estado no se pudo obtener; no se basan en él.
 
  SCC_STATUS_NOTCONTROLLED archivo no está bajo control de código fuente.
 
  SCC_STATUS_CONTROLLED archivo está bajo control de código fuente.
 
- SCC_STATUS_CHECKEDOUT desprotegido por el usuario actual en el disco local.
+ SCC_STATUS_CHECKEDOUT ha comprobado el usuario actual en el disco local.
 
- Otro usuario desprotegió SCC_STATUS_OUTOTHER archivo.
+ SCC_STATUS_OUTOTHER otro usuario desprotegía el archivo.
 
- SCC_STATUS_OUTEXCLUSIVE archivo está desprotegido en exclusiva.
+ SCC_STATUS_OUTEXCLUSIVE archivo está desprotegido exclusivamente.
 
- SCC_STATUS_OUTMULTIPLE archivo está desprotegido por más de un usuario.
+ SCC_STATUS_OUTMULTIPLE más de un usuario desprotegía el archivo.
 
- SCC_STATUS_OUTOFDATE el archivo no es el más reciente.
+ SCC_STATUS_OUTOFDATE El archivo no es el más reciente.
 
  SCC_STATUS_DELETED archivo se ha eliminado del proyecto.
 
  SCC_STATUS_LOCKED archivo está bloqueado; no se permiten más versiones.
 
- SCC_STATUS_MERGED archivo se ha combinado pero aún no se ha corregido o comprobado.
+ SCC_STATUS_MERGED archivo se ha combinado, pero aún no se ha corregido ni comprobado.
 
  SCC_STATUS_SHARED archivo se comparte entre proyectos.
 
- SCC_STATUS_PINNED archivo se comparte en una versión explícita.
+ SCC_STATUS_PINNED file se comparte con una versión explícita.
 
- SCC_STATUS_MODIFIED archivo se ha modificado o interrumpido.
+ SCC_STATUS_MODIFIED archivo se ha modificado, roto o infringido.
 
- SCC_STATUS_OUTBYUSER archivo está desprotegido por el usuario actual.
+ SCC_STATUS_OUTBYUSER archivo está desprotegida por el usuario actual.
 
- SCC_STATUS_NOMERGE archivo nunca se puede combinar con y no es necesario guardarlo antes de un GET.
+ SCC_STATUS_NOMERGE archivo no se puede combinar nunca con y no es necesario guardar antes de get.
 
  SCC_STATUS_RESERVED_1 reservado para uso interno.
 
  SCC_STATUS_RESERVED_2 reservado para uso interno.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 - [Complementos de control de código fuente](../extensibility/source-control-plug-ins.md)
 - [SccQueryInfo](../extensibility/sccqueryinfo-function.md)
 - [POPLISTFUNC](../extensibility/poplistfunc.md)

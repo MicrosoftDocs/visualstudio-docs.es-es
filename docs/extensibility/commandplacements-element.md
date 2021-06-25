@@ -1,9 +1,9 @@
 ---
 title: Elemento CommandPlacements | Microsoft Docs
-description: El elemento CommandPlacements agrupa los elementos CommandPlacement y otras agrupaciones CommandPlacements. El elemento CommandPlacements es opcional.
+description: El elemento CommandPlacements agrupa elementos CommandPlacement y otras agrupaciones CommandPlacements. El elemento CommandPlacements es opcional.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - CommandPlacements
 helpviewer_keywords:
@@ -15,17 +15,17 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3547d1c5b94285ce113b3a3c112568aa5a9a5f65
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 21e0feb3913b148b4320e69461bc5035655a392d
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105089607"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901895"
 ---
 # <a name="commandplacements-element"></a>Elemento CommandPlacements
-El elemento CommandPlacements agrupa los elementos CommandPlacement y otras agrupaciones CommandPlacements.
+El elemento CommandPlacements agrupa elementos CommandPlacement y otras agrupaciones CommandPlacements.
 
- El elemento CommandPlacements es opcional. Si no se debe incluir ningún comando, grupo o menú en una ubicación secundaria, no es necesario incluir esta sección en el archivo *. Vsct* .
+ El elemento CommandPlacements es opcional. Si no se deben incluir comandos, grupos o menús en una ubicación secundaria, no es necesario incluir esta sección en el *archivo .vsct.*
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,14 +43,14 @@ El elemento CommandPlacements agrupa los elementos CommandPlacement y otras agru
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|Condición|Opcional. Vea [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condición|Opcional. Vea [Atributos condicionales.](../extensibility/vsct-xml-schema-conditional-attributes.md)|
 
 ### <a name="child-elements"></a>Elementos secundarios
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|CommandPlacements|Agrupa los elementos CommandPlacement y otras agrupaciones CommandPlacements.|
-|[Elemento CommandPlacement](../extensibility/commandplacement-element.md)|Permite que los botones, grupos y menús se incluyan en más de un grupo o menú.|
+|CommandPlacements|Agrupa elementos CommandPlacement y otras agrupaciones CommandPlacements.|
+|[Elemento CommandPlacement](../extensibility/commandplacement-element.md)|Permite incluir botones, grupos y menús en más de un grupo o menú.|
 
 ### <a name="parent-elements"></a>Elementos primarios
 
@@ -71,4 +71,4 @@ El elemento CommandPlacements agrupa los elementos CommandPlacement y otras agru
 
 ## <a name="see-also"></a>Consulte también
 - [Elemento CommandPlacement](../extensibility/commandplacement-element.md)
-- [Archivos de tabla de comandos de Visual Studio (. Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Visual Studio de tabla de comandos (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

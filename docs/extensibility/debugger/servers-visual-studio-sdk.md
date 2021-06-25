@@ -1,9 +1,9 @@
 ---
-title: Servidores (SDK de Visual Studio) | Microsoft Docs
-description: En este artículo se describe la definición y el rol de un servidor en la arquitectura del depurador de Visual Studio.
+title: Servidores (Visual Studio SDK) | Microsoft Docs
+description: En este artículo se describe la definición y el rol de un servidor en la arquitectura del depurador en Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - servers, debugging
 - debugging [Debugging SDK], servers
@@ -13,23 +13,23 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7bb19262d4ce5fd1b3139f05cd9bbc57131db1c
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 99f6c634053df9191ac419c8ee450dc99cf62c7c
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105070367"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902129"
 ---
 # <a name="servers-visual-studio-sdk"></a>Servidores (Visual Studio SDK)
 En la arquitectura del depurador, un *servidor*:
 
-- Es un contenedor de puertos y proveedores de puertos y comunica puertos y proveedores de puertos con el administrador de depuración de sesión (SDM) y los motores de depuración.
+- Es un contenedor de puertos y proveedores de puertos y comunica los puertos y proveedores de puertos al administrador de depuración de sesión (SDM) y a los motores de depuración.
 
-- Puede identificarse por nombre y enumerar los puertos y los proveedores de puertos.
+- Puede identificarse por nombre y enumerar sus puertos y proveedores de puertos.
 
-- Se representa mediante una interfaz [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md) , que solo implementa Visual Studio (una instancia de un servidor para cada instancia de Visual Studio en ejecución).
+- Se representa mediante una [interfaz IDebugCoreServer2,](../../extensibility/debugger/reference/idebugcoreserver2.md) que solo se implementa mediante Visual Studio (una instancia de un servidor para cada instancia de Visual Studio en ejecución).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 - [Puertos](../../extensibility/debugger/ports.md)
 - [Proveedores de puertos](../../extensibility/debugger/port-suppliers.md)
 - [Conceptos del depurador](../../extensibility/debugger/debugger-concepts.md)

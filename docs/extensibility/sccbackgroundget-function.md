@@ -1,8 +1,8 @@
 ---
-description: Esta función recupera del control de código fuente de cada uno de los archivos especificados sin interacción del usuario.
-title: Función SccBackgroundGet | Microsoft Docs
+description: Esta función recupera del control de código fuente cada uno de los archivos especificados sin interacción del usuario.
+title: SccBackgroundGet Function | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccBackgroundGet
 helpviewer_keywords:
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d850b1f8493f3118cb4d3e49915361daa1e4837
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 316a02e84b4d51f309aecdd98d0409c85ccbdbef
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105060463"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901245"
 ---
-# <a name="sccbackgroundget-function"></a>SccBackgroundGet función)
-Esta función recupera del control de código fuente de cada uno de los archivos especificados sin interacción del usuario.
+# <a name="sccbackgroundget-function"></a>Función SccBackgroundGet
+Esta función recupera del control de código fuente cada uno de los archivos especificados sin interacción del usuario.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -38,41 +38,41 @@ SCCRTN SccBackgroundGet(
 ### <a name="parameters"></a>Parámetros
  pContext
 
-de Puntero de contexto del complemento de control de código fuente.
+[in] Puntero de contexto del complemento de control de código fuente.
 
- N archivos
+ nFiles
 
-de Número de archivos especificados en la `lpFileNames` matriz.
+[in] Número de archivos especificados en la `lpFileNames` matriz.
 
  lpFileNames
 
-[in, out] Matriz de nombres de los archivos que se van a recuperar.
+[in, out] Matriz de nombres de archivos que se recuperarán.
 
 > [!NOTE]
 > Los nombres deben ser nombres de archivo locales completos.
 
  dwFlags
 
-de Marcas de comandos ( `SCC_GET_ALL` , `SCC_GET_RECURSIVE` ).
+[in] Marcas de comandos ( `SCC_GET_ALL` , `SCC_GET_RECURSIVE` ).
 
  dwBackgroundOperationID
 
-de Un valor único asociado a esta operación.
+[in] Valor único asociado a esta operación.
 
 ## <a name="return-value"></a>Valor devuelto
- Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:
+ Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los valores siguientes:
 
-|Value|Descripción|
+|Valor|Descripción|
 |-----------|-----------------|
 |SCC_OK|Operación completada correctamente.|
-|SCC_E_BACKGROUNDGETINPROGRESS|Ya hay una recuperación en segundo plano en curso (el complemento de control de código fuente solo debe devolver este valor si no admite operaciones por lotes simultáneas).|
+|SCC_E_BACKGROUNDGETINPROGRESS|Ya hay una recuperación en segundo plano en curso (el complemento de control de código fuente solo debe devolverlo si no admite operaciones por lotes simultáneas).|
 |SCC_I_OPERATIONCANCELED|La operación se canceló antes de completarse.|
 
 ## <a name="remarks"></a>Observaciones
- Siempre se llama a esta función en un subproceso distinto del que cargó el complemento de control de código fuente. No se espera que esta función devuelva hasta que se haya hecho; sin embargo, se puede llamar varias veces con varias listas de archivos al mismo tiempo.
+ Siempre se llama a esta función en un subproceso diferente del que cargó el complemento de control de código fuente. No se espera que esta función vuelva hasta que se haya realizado; Sin embargo, se puede llamar varias veces con varias listas de archivos, todas al mismo tiempo.
 
- El uso del `dwFlags` argumento es el mismo que el de [SccGet](../extensibility/sccget-function.md).
+ El uso del `dwFlags` argumento es el mismo que el de [SccGet.](../extensibility/sccget-function.md)
 
-## <a name="see-also"></a>Consulte también
-- [Funciones de la API del complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>Consulta también
+- [Funciones de API del complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)
 - [SccGet](../extensibility/sccget-function.md)

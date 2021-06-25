@@ -1,9 +1,9 @@
 ---
-title: Administrador de depuración de procesos | Microsoft Docs
-description: Obtenga información sobre Process Debug Manager, que es un componente de Visual Studio que hace que los programas estén disponibles para el administrador de depuración de la sesión y los motores de depuración.
+title: Proceso del administrador de depuración | Microsoft Docs
+description: Obtenga información sobre el administrador de depuración de procesos, que es un componente de Visual Studio que hace que los programas estén disponibles para el administrador de depuración de sesión y los motores de depuración.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - machine debug manager
 - debugging [Debugging SDK], Machine Debug Manager
@@ -13,19 +13,19 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c332b28e48b24065b5e359332df65c61365f1763
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 04fb89f4b009640760d624f1efa197cdaa56bda7
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105067729"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900751"
 ---
-# <a name="process-debug-manager"></a>Procesar el administrador de depuración
-Process Debug Manager (PDM) es un componente de Visual Studio que administra programas y procesos, que los pone a disposición del administrador de depuración de la sesión y los motores de depuración.
+# <a name="process-debug-manager"></a>Administrador de depuración de procesos
+El administrador de depuración de procesos (TELNET) es un componente de Visual Studio que administra programas y procesos, lo que los hace disponibles para el administrador de depuración de sesión y los motores de depuración.
 
- PDM administra todos los procesos que se pueden depurar. Para que se pueda depurar, se debe registrar un programa con el PDM. Este registro se realiza en el momento en que se inicia el programa, ya sea mediante un puerto o un motor de depuración.
+ EL ADMINISTRADOR de seguridad administra todos los procesos que se pueden depurar. Para depurarlo, se debe registrar un programa con EL ACUERDO. Este registro se realiza en el momento en que se inicia el programa, ya sea mediante un puerto o un motor de depuración.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 - [Procesos](../../extensibility/debugger/processes.md)
 - [Motor de depuración](../../extensibility/debugger/debug-engine.md)
 - [Puertos](../../extensibility/debugger/ports.md)

@@ -3,7 +3,7 @@ title: POPDIRLISTFUNC | Microsoft Docs
 description: Obtenga información sobre la función de devolución de llamada POPDIRLISTFUNC, que se pasa a los directorios de actualización para averiguar cuáles están bajo control de código fuente.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - POPLISTFUNC
 helpviewer_keywords:
@@ -14,17 +14,17 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f8cde3e6835a7d3262bbb89fed13e0dbc8e540e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8c98b35d9f915e16072333c72df2e1e045850f5d
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105090257"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900400"
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
-Se trata de una función de devolución de llamada proporcionada a la función [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) para actualizar una colección de directorios y (opcionalmente) nombres de archivo para averiguar cuáles están bajo control de código fuente.
+Se trata de una función de devolución de llamada dada a la función [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) para actualizar una colección de directorios y (opcionalmente) nombres de archivo para averiguar cuáles están bajo control de código fuente.
 
- `POPDIRLISTFUNC`Solo se debe llamar a la devolución de llamada para esos directorios y nombres de archivo (en la lista proporcionada a la `SccPopulateDirList` función) que realmente están bajo control de código fuente.
+ Solo se debe llamar a la devolución de llamada para los directorios y nombres de archivo (en la lista dada a la función) que realmente están `POPDIRLISTFUNC` bajo control de código `SccPopulateDirList` fuente.
 
 ## <a name="signature"></a>Firma
 
@@ -39,29 +39,29 @@ typedef BOOL (*POPDIRLISTFUNC)(
 ## <a name="parameters"></a>Parámetros
  pvCallerData
 
-de Valor de usuario dado a [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md).
+[in] Valor de usuario dado a [SccPopulateDirList.](../extensibility/sccpopulatedirlist-function.md)
 
  bFolder
 
-[in] `TRUE` Si el nombre de `lpDirectoryOrFileName` es un directorio; de lo contrario, el nombre es un nombre de archivo.
+[in] `TRUE` si el nombre de `lpDirectoryOrFileName` es un directorio; de lo contrario, el nombre es un nombre de archivo.
 
  lpDirectoryOrFileName
 
-de Ruta de acceso local completa a un directorio o nombre de archivo que se encuentra bajo control de código fuente.
+[in] Ruta de acceso local completa a un nombre de directorio o archivo que está bajo control de código fuente.
 
 ## <a name="return-value"></a>Valor devuelto
  El IDE devuelve un código de error adecuado:
 
-|Value|Descripción|
+|Valor|Descripción|
 |-----------|-----------------|
 |SCC_OK|Continúe el procesamiento.|
 |SCC_I_OPERATIONCANCELED|Detiene el procesamiento.|
 |SCC_E_xxx|Cualquier error de control de código fuente adecuado debe detener el procesamiento.|
 
 ## <a name="remarks"></a>Observaciones
- Si el `fOptions` parámetro de la `SccPopulateDirList` función contiene la `SCC_PDL_INCLUDEFILES` marca, la lista posiblemente contendrá nombres de archivo y nombres de directorio.
+ Si el parámetro de la función contiene la marca , la lista posiblemente contendrá nombres de `fOptions` `SccPopulateDirList` `SCC_PDL_INCLUDEFILES` archivo, así como nombres de directorio.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 - [Funciones de devolución de llamada implementadas por el IDE](../extensibility/callback-functions-implemented-by-the-ide.md)
 - [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)
 - [Códigos de error](../extensibility/error-codes.md)

@@ -1,8 +1,8 @@
 ---
-description: Esta función agrega una lista de archivos del control de código fuente al proyecto actualmente abierto.
-title: Función SccAddFilesFromSCC | Microsoft Docs
+description: Esta función agrega una lista de archivos del control de código fuente al proyecto abierto actualmente.
+title: SccAddFilesFromSCC Function | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccAddFilesFromSCC
 helpviewer_keywords:
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 056e918642e75bbd74c310499544cb2500428646
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 6fa08ec93383fa661d1e2dd055b3139b2ba90f34
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105060476"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904869"
 ---
-# <a name="sccaddfilesfromscc-function"></a>SccAddFilesFromSCC función)
-Esta función agrega una lista de archivos del control de código fuente al proyecto actualmente abierto.
+# <a name="sccaddfilesfromscc-function"></a>Función SccAddFilesFromSCC
+Esta función agrega una lista de archivos del control de código fuente al proyecto abierto actualmente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,50 +42,50 @@ SCCRTN SccAddFilesFromSCC(
 ### <a name="parameters"></a>Parámetros
  pContext
 
-de Puntero de contexto del complemento de control de código fuente.
+[in] Puntero de contexto del complemento de control de código fuente.
 
  hWnd
 
-de Identificador de la ventana del IDE que el complemento de control de código fuente puede utilizar como elemento primario para los cuadros de diálogo que proporciona.
+[in] Identificador de la ventana del IDE que el complemento de control de código fuente puede usar como elemento primario para los cuadros de diálogo que proporciona.
 
  lpUser
 
-[in, out] El nombre de usuario (hasta SCC_USER_SIZE, incluido el terminador nulo).
+[in, out] Nombre de usuario (hasta SCC_USER_SIZE, incluido el terminador nulo).
 
- lpAuxProjPath
+ lpProjPath
 
-[in, out] Cadena auxiliar que identifica el proyecto (hasta el `SCC_PRJPATH_` tamaño, incluido el terminador nulo).
+[in, out] Cadena auxiliar que identifica el proyecto (hasta `SCC_PRJPATH_` SIZE, incluido el terminador nulo).
 
  cFiles
 
-de Número de archivos especificados por `lpFilePaths` .
+[in] Número de archivos especificados por `lpFilePaths` .
 
  lpFilePaths
 
-[in, out] Matriz de nombres de archivo que se va a agregar al proyecto actual.
+[in, out] Matriz de nombres de archivo que se agregarán al proyecto actual.
 
  lpDestination
 
-de Ruta de acceso de destino donde se van a escribir los archivos.
+[in] Ruta de acceso de destino donde se van a escribir los archivos.
 
  lpComment
 
-de Comentario que se va a aplicar a cada uno de los archivos que se van a agregar.
+[in] Comentario que se va a aplicar a cada uno de los archivos que se van a agregar.
 
  pbResults
 
-[in, out] Matriz de marcas que se establecen para indicar que se ha realizado correctamente (distinto de cero o TRUE) o error (cero o FALSE) para cada archivo (el tamaño de la matriz debe ser al menos `cFiles` largo).
+[in, out] Matriz de marcas que se establecen para indicar un éxito (distinto de cero o TRUE) o un error (cero o FALSE) para cada archivo (el tamaño de la matriz debe ser al menos `cFiles` largo).
 
 ## <a name="return-value"></a>Valor devuelto
- Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:
+ Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los valores siguientes:
 
-|Value|Descripción|
+|Valor|Descripción|
 |-----------|-----------------|
 |SCC_E_PROJNOTOPEN|El proyecto no está abierto.|
-|SCC_E_OPNOTPERFORMED|La conexión no está en el mismo proyecto que especifica `lpAuxProjPath.`|
+|SCC_E_OPNOTPERFORMED|La conexión no es al mismo proyecto especificado por `lpAuxProjPath.`|
 |SCC_E_NOTAUTHORIZED|El usuario no está autorizado para actualizar la base de datos.|
 |SCC_E_NONSPECIFICERROR|Error desconocido.|
 |SCC_I_RELOADFILE|Es necesario volver a cargar un archivo o proyecto.|
 
-## <a name="see-also"></a>Consulte también
-- [Funciones de la API del complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>Consulta también
+- [Funciones de API del complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)
