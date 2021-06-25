@@ -1,8 +1,8 @@
 ---
-description: Almacena información sobre el estado actual del objeto System. Threading. Tasks. Task.
+description: Almacena información sobre el estado actual del objeto System.Threading.Tasks.Task.
 title: m_stateFlags campo | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - m_stateFlags field, Task class [.NET Framework debug engines]
 ms.assetid: 82b20efc-08f2-4cd2-91f6-4e01e3da906b
@@ -11,12 +11,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5df101d0c75ad7bd2a12393c4440c7dcd5484656
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 0bf584511bc2f0ee43429abe83dea3d7a45259d9
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105059670"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898918"
 ---
 # <a name="m_stateflags-field"></a>m_stateFlags campo
 Almacena información sobre el estado actual del <xref:System.Threading.Tasks.Task> objeto.
@@ -25,7 +25,7 @@ Almacena información sobre el estado actual del <xref:System.Threading.Tasks.Ta
 
  **Ensamblado:** mscorlib (en *mscorlib.dll*)
 
- Dado que no puede tener acceso a este miembro interno desde el .NET Framework, se proporciona la siguiente sintaxis en el lenguaje intermedio común (CIL).
+ Dado que no se puede acceder a este miembro interno desde la .NET Framework, se proporciona la sintaxis siguiente en Common Intermediate Language (CIL).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -34,9 +34,9 @@ Almacena información sobre el estado actual del <xref:System.Threading.Tasks.Ta
 ```
 
 ## <a name="remarks"></a>Observaciones
- Normalmente, se utiliza la <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=fullName> propiedad para tener acceso a este valor.
+ Normalmente se usa la <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=fullName> propiedad para tener acceso a este valor.
 
- Este miembro puede ser cualquier combinación de los siguientes valores:
+ Este miembro puede ser cualquier combinación de los valores siguientes:
 
 - [TASK_STATE_EXECUTED](../../extensibility/debugger/task-state-executed-field.md)
 
@@ -48,5 +48,5 @@ Almacena información sobre el estado actual del <xref:System.Threading.Tasks.Ta
 
 - [TASK_STATE_RAN_TO_COMPLETION](../../extensibility/debugger/task-state-ran-to-completion-field.md)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 - [Clase de tarea: miembros internos](../../extensibility/debugger/task-class-internal-members.md)

@@ -1,9 +1,9 @@
 ---
-title: Orígenes de eventos (SDK de Visual Studio) | Microsoft Docs
-description: 'Obtenga información sobre los dos orígenes de eventos de depuración de Visual Studio: el motor de depuración y el administrador de depuración de sesión.'
+title: Orígenes de eventos (VISUAL STUDIO SDK) | Microsoft Docs
+description: 'Obtenga información sobre los dos orígenes de eventos en Visual Studio depuración: el motor de depuración y el Administrador de depuración de sesión.'
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], event sources
 ms.assetid: b9ba0908-ae4c-4a64-aab1-bee453dd7a22
@@ -12,18 +12,18 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec6213a1462c391d13bbdf8a20ac61e232cafb49
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8a1956cb3643b9f49fae6bb42bbb46675b7b2398
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105097011"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898570"
 ---
-# <a name="event-sources-visual-studio-sdk"></a>Orígenes de eventos (SDK de Visual Studio)
-Hay dos orígenes de eventos: el motor DE depuración (DE) y el administrador de depuración de sesión (SDM). Los eventos enviados desde un DE tienen un motor no NULL, mientras que los eventos enviados desde el SDM tienen un motor nulo.
+# <a name="event-sources-visual-studio-sdk"></a>Orígenes de eventos (Visual Studio SDK)
+Hay dos orígenes de eventos: el motor de depuración (DE) y el Administrador de depuración de sesión (SDM). Los eventos enviados desde un DE tienen un motor que no es NULL, mientras que los eventos enviados desde el SDM tienen un motor NULL.
 
 ## <a name="example"></a>Ejemplo
-En el ejemplo siguiente se muestra cómo enviar el **IDebugProgramCreateEvent2** de de al SDM.
+En el ejemplo siguiente se muestra cómo enviar **IDebugProgramCreateEvent2** desde el DE al SDM.
 
 ```csharp
 CDebugProgramCreateEvent* pProgramCreateEvent = new CDebugProgramCreateEvent();
@@ -74,5 +74,5 @@ HRESULT CEvent::SendAsynchronousEvent(IDebugEventCallback2 *pCallback, IDebugEng
 
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 - [Envío de eventos](../../extensibility/debugger/sending-events.md)

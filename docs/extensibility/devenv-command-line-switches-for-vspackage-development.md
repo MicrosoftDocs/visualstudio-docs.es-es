@@ -1,9 +1,9 @@
 ---
-title: Modificadores de Command-Line devenv para el desarrollo de VSPackage | Microsoft Docs
-description: Obtenga información sobre cómo los desarrolladores pueden automatizar las tareas desde la línea de comandos al ejecutar devenv.exe, el archivo que inicia el IDE de Visual Studio.
+title: Modificadores de Command-Line de desarrollo de VSPackage | Microsoft Docs
+description: Obtenga información sobre cómo los desarrolladores pueden automatizar las tareas desde la línea de comandos al ejecutar devenv.exe, el archivo que inicia el IDE Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - /Setup command line switch
 - /ResetSkipPkgs command line switch
@@ -20,38 +20,38 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94cca255390d9f5637f0bf4f5b24f2d0fd6b4e83
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 4ea08b4714a79e09fce5933b67997a032532481f
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105091271"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904248"
 ---
 # <a name="devenv-command-line-switches-for-vspackage-development"></a>Modificadores de línea de comandos Devenv para el desarrollo de VSPackage
 
-Visual Studio permite a los desarrolladores automatizar las tareas desde la línea de comandos al ejecutarse `devenv.exe` , el archivo que inicia el IDE de Visual Studio.
+Visual Studio permite a los desarrolladores automatizar tareas desde la línea de comandos al ejecutar , el archivo que `devenv.exe` inicia Visual Studio IDE.
 
  Las tareas incluyen:
 
 - Implementación de aplicaciones en configuraciones prediseñadas desde fuera del IDE.
 
-- Compilar proyectos automáticamente con valores de compilación predeterminados o configuraciones de depuración.
+- Compilar proyectos automáticamente mediante configuraciones de compilación preestablecidas o configuraciones de depuración.
 
 - Cargar el IDE en configuraciones específicas, todo desde fuera del IDE. También puede personalizar el IDE al iniciarse.
 
-## <a name="guidelines-for-switches"></a>Directrices para modificadores
+## <a name="guidelines-for-switches"></a>Directrices para conmutadores
 
-La documentación de Visual Studio describe los modificadores de línea de comandos de nivel de usuario `devenv` . Para obtener más información, vea [modificadores de la línea de comandos de devenv](../ide/reference/devenv-command-line-switches.md). La `devenv` herramienta también admite modificadores de línea de comandos adicionales que son útiles con el desarrollo, la implementación y la depuración de VSPackage.
+Visual Studio documentación describe los modificadores de línea de comandos `devenv` de nivel de usuario. Para obtener más información, vea [Modificadores de línea de comandos de Devenv.](../ide/reference/devenv-command-line-switches.md) La `devenv` herramienta también admite modificadores de línea de comandos adicionales que son útiles con el desarrollo, la implementación y la depuración de VSPackage.
 
-| Modificador de la línea de comandos | Descripción |
+| Modificador de línea de comandos | Descripción |
 |---------------------| - |
-| `/ResetSkipPkgs` | Borra todas las opciones de carga omitidas agregadas por los usuarios que quieren evitar cargar VSPackages problemáticos y, a continuación, inicia Visual Studio. La presencia de una etiqueta SkipLoading deshabilita la carga de un VSPackage. Al borrar la etiqueta, se vuelve a habilitar la carga del VSPackage.<br /><br /> Este modificador no toma ningún argumento. |
-| `/RootSuffix` | Inicia Visual Studio mediante una ubicación alternativa. El siguiente comando lo ejecuta el acceso directo creado por el instalador del SDK de Visual Studio:<br /><br /> `devenv /RootSuffix exp`<br /><br /> En este caso, `exp` identifica una ubicación con un sufijo determinado (por ejemplo, `10.0Exp` en lugar de `10.0` ). La instancia experimental le permite depurar un VSPackage por separado de la instancia de Visual Studio que está usando para escribir código.<br /><br /> Este modificador puede tomar cualquier cadena que identifique una ubicación que haya creado mediante VSRegEx.exe. Para obtener más información, vea [la instancia experimental](../extensibility/the-experimental-instance.md). |
-| `/SafeMode` | Inicia Visual Studio en modo seguro, cargando solo los servicios y el IDE predeterminados. El `/SafeMode` modificador impide que se carguen los VSPackages de terceros cuando se inicia Visual Studio, lo que garantiza una ejecución estable.<br /><br /> Este modificador no toma ningún argumento. |
-| `/Setup` | Fuerza a Visual Studio a combinar los metadatos de recursos que describen los menús, las barras de herramientas y los grupos de comandos de todos los VSPackages disponibles. Este comando solo se puede ejecutar como administrador. <br /><br /> Este modificador no toma ningún argumento. El comando `devenv /Setup` suele ser el último paso del proceso de instalación. El uso del `/Setup` modificador no inicia el IDE.|
-| `/Splash` | Muestra la pantalla de presentación de Visual Studio, como de costumbre, y muestra un cuadro de mensaje antes de mostrar el IDE principal. El cuadro de mensaje le permite estudiar la pantalla de presentación (por ejemplo, para comprobar si hay un icono de producto de VSPackage).<br /><br /> Este modificador no toma ningún argumento. |
+| `/ResetSkipPkgs` | Borra todas las opciones de skip loading que han agregado los usuarios que desean evitar la carga de VSPackages problemáticos y, a continuación, Visual Studio. La presencia de una etiqueta SkipLoading deshabilita la carga de un VSPackage. Al borrar la etiqueta, se vuelve a habilitar la carga del VSPackage.<br /><br /> Este modificador no toma ningún argumento. |
+| `/RootSuffix` | Inicia Visual Studio mediante una ubicación alternativa. El siguiente comando se ejecuta mediante el acceso directo creado por el instalador Visual Studio SDK:<br /><br /> `devenv /RootSuffix exp`<br /><br /> En este caso, `exp` identifica una ubicación con un sufijo determinado (por ejemplo, en lugar de `10.0Exp` `10.0` ). La instancia experimental permite depurar un VSPackage independientemente de la instancia de Visual Studio que se usa para escribir código.<br /><br /> Este modificador puede tomar cualquier cadena que identifique una ubicación que haya creado mediante VSRegEx.exe. Para obtener más información, vea [La instancia experimental](../extensibility/the-experimental-instance.md). |
+| `/SafeMode` | Inicia Visual Studio en modo seguro, cargando solo el IDE y los servicios predeterminados. El modificador impide que todos los VSPackages de terceros se carguen Visual Studio inicio, lo que `/SafeMode` garantiza una ejecución estable.<br /><br /> Este modificador no toma ningún argumento. |
+| `/Setup` | Fuerza Visual Studio a combinar metadatos de recursos que describen menús, barras de herramientas y grupos de comandos de todos los VSPackages disponibles. Solo puede ejecutar este comando como administrador. <br /><br /> Este modificador no toma ningún argumento. El comando `devenv /Setup` suele ser el último paso del proceso de instalación. El uso del `/Setup` modificador no inicia el IDE.|
+| `/Splash` | Muestra la Visual Studio de presentación, como de costumbre, y, a continuación, muestra un cuadro de mensaje antes de mostrar el IDE principal. El cuadro de mensaje le permite estudiar la pantalla de presentación (por ejemplo, para comprobar si hay un icono de producto de VSPackage).<br /><br /> Este modificador no toma ningún argumento. |
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 
-- [Agregar modificadores de la línea de comandos](../extensibility/adding-command-line-switches.md)
+- [Adición de modificadores de línea de comandos](../extensibility/adding-command-line-switches.md)
 - [Modificadores de línea de comandos para Devenv](../ide/reference/devenv-command-line-switches.md)

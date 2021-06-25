@@ -1,9 +1,9 @@
 ---
 title: GUID y constantes en el SDK de Visual Studio | Microsoft Docs
-description: La clase VSConstants proporciona acceso a una selección de constantes y GUID de entorno en el SDK de Visual Studio.
+description: La clase VSConstants proporciona acceso a una selección de GUID de entorno y constantes en el SDK Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - constants, Visual Studio SDK
 - GUIDs, Visual Studio SDK
@@ -13,22 +13,22 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a76c0328581f3060fa77cdbb2bf2b9a72913230
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f82ce9dcc035e3f62e120ed8e8c5871af414e8de
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105057564"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902779"
 ---
 # <a name="guids-and-constants-in-the-visual-studio-sdk"></a>GUID y constantes en el SDK de Visual Studio
-La <xref:Microsoft.VisualStudio.VSConstants> clase proporciona acceso a una selección de los GUID de entorno y las constantes.
+La <xref:Microsoft.VisualStudio.VSConstants> clase proporciona acceso a una selección de GUID y constantes del entorno.
 
 ## <a name="in-this-section"></a>En esta sección
-- [GUID de IDE](../extensibility/ide-guids.md) Enumera los GUID proporcionados por <xref:Microsoft.VisualStudio.VSConstants> .
+- [GUID del IDE](../extensibility/ide-guids.md) Enumera los GUID proporcionados por <xref:Microsoft.VisualStudio.VSConstants> .
 
-- [Constantes de IDE](../extensibility/ide-constants.md) Enumera las constantes de SDK proporcionadas por <xref:Microsoft.VisualStudio.VSConstants> .
+- [Constantes ide](../extensibility/ide-constants.md) Enumera las constantes del SDK proporcionadas por <xref:Microsoft.VisualStudio.VSConstants> .
 
 ## <a name="related-sections"></a>Secciones relacionadas
-- [Constantes com en código administrado](../extensibility/com-constants-in-managed-code.md) Enumera las constantes COM estándar disponibles para el código administrado desde Managed Package Framework (MPF).
+- [Constantes COM en código administrado](../extensibility/com-constants-in-managed-code.md) Enumera las constantes COM estándar disponibles para el código administrado desde Managed Package Framework (MPF).
 
-- [Comandos definidos por el IDE para la extensión de sistemas de proyecto](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md) Enumera los distintos tipos de elementos de comandos que se usan para extender los sistemas de proyecto.
+- [Comandos definidos por ide para extender sistemas de proyecto](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md) Enumera los distintos tipos de elementos de comando usados para extender los sistemas de proyecto.

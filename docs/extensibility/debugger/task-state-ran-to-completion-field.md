@@ -2,7 +2,7 @@
 description: La tarea terminó de ejecutarse correctamente.
 title: TASK_STATE_RAN_TO_COMPLETION campo | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - TASK_STATE_RAN_TO_COMPLETION field, Task class [.NET Framework debug engines]
 ms.assetid: 0f4830af-fe0c-4141-b768-817f4e426b8c
@@ -11,12 +11,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f87eca3ec0d10413593e870fc2cf8fa4dc946e3a
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 4d168fe7e878471af4f70f2e58aab9748060c99e
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105075398"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902818"
 ---
 # <a name="task_state_ran_to_completion-field"></a>TASK_STATE_RAN_TO_COMPLETION campo
 La tarea terminó de ejecutarse correctamente.
@@ -25,7 +25,7 @@ La tarea terminó de ejecutarse correctamente.
 
  **Ensamblado:** mscorlib (en *mscorlib.dll*)
 
- Dado que no puede tener acceso a este miembro interno desde el .NET Framework, se proporciona la siguiente sintaxis en el lenguaje intermedio común (CIL).
+ Dado que no se puede acceder a este miembro interno desde la .NET Framework, se proporciona la sintaxis siguiente en Common Intermediate Language (CIL).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -34,7 +34,7 @@ La tarea terminó de ejecutarse correctamente.
 ```
 
 ## <a name="remarks"></a>Observaciones
- Si el campo [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) contiene este valor, la <xref:System.Threading.Tasks.Task.Status%2A> propiedad devuelve <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> .
+ Si el [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) contiene este valor, la <xref:System.Threading.Tasks.Task.Status%2A> propiedad devuelve <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> .
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 - [Clase de tarea: miembros internos](../../extensibility/debugger/task-class-internal-members.md)

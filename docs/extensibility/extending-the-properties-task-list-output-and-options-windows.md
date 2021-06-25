@@ -1,9 +1,9 @@
 ---
-title: Propiedades de extensión, Lista de tareas, salida, opciones (ventanas)
-description: Obtenga información sobre cómo integrar la información sobre la ventana de herramientas en Visual Studio en una nueva página de opciones y un nuevo valor en la página de propiedades.
+title: Ventanas Extender propiedades, Lista de tareas, Salida, Opciones
+description: Obtenga información sobre cómo integrar información sobre la ventana de herramientas Visual Studio en una nueva página Opciones y una nueva configuración en la página Propiedades.
 ms.date: 11/04/2016
 ms.custom: SEO-VS-2020
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - properties pane
 - task list
@@ -17,41 +17,41 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 970ab167434da4ba9c28eb6bbf9a8ea5f6cc6af0
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 3334ba3694ee3c1354c152b013c38472e4b90b72
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105070146"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903286"
 ---
-# <a name="extend-the-properties-task-list-output-and-options-windows"></a>Extender las propiedades, los Lista de tareas, la salida y las ventanas de opciones
-Puede tener acceso a cualquier ventana de herramientas en Visual Studio. En este tutorial se muestra cómo integrar la información sobre la ventana de herramientas en una nueva página de **Opciones** y un nuevo valor en la página de **propiedades** , además de cómo escribir en las ventanas de **lista de tareas** y de **salida** .
+# <a name="extend-the-properties-task-list-output-and-options-windows"></a>Extender las ventanas Propiedades, Lista de tareas, Salida y Opciones
+Puede acceder a cualquier ventana de herramientas en Visual Studio. En este tutorial se muestra cómo integrar  información sobre la ventana  de herramientas en una nueva página Opciones y una nueva configuración en la página Propiedades, y también cómo escribir en las ventanas **Lista de tareas** **y** Salida.
 
 ## <a name="prerequisites"></a>Requisitos previos
- A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS después. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+ A partir Visual Studio 2015, no se instala el SDK Visual Studio desde el centro de descarga. Se incluye como una característica opcional en Visual Studio configuración. También puede instalar el SDK de VS después. Para más información, consulte [Instalación del SDK Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
-## <a name="create-an-extension-with-a-tool-window"></a>Crear una extensión con una ventana de herramientas
+## <a name="create-an-extension-with-a-tool-window"></a>Creación de una extensión con una ventana de herramientas
 
-1. Cree un proyecto denominado **ToDoList** mediante la plantilla VSIX y agregue una plantilla de elemento de ventana de herramientas personalizada denominada **TodoWindow**.
-
-    > [!NOTE]
-    > Para obtener más información sobre cómo crear una extensión con una ventana de herramientas, vea [crear una extensión con una ventana de herramientas](../extensibility/creating-an-extension-with-a-tool-window.md).
-
-## <a name="set-up-the-tool-window"></a>Configurar la ventana de herramientas
- Agregue un cuadro de texto en el que escribir un nuevo elemento ToDo, un botón para agregar el nuevo elemento a la lista y un cuadro de lista para mostrar los elementos de la lista.
-
-1. En *TodoWindow. Xaml*, elimine los controles Button, TextBox y StackPanel del control UserControl.
+1. Cree un proyecto denominado **TodoList con** la plantilla VSIX y agregue una plantilla de elemento de ventana de herramientas personalizada denominada **TodoWindow.**
 
     > [!NOTE]
-    > Esto no elimina el controlador de eventos **button1_Click** , que se reutilizará en un paso posterior.
+    > Para obtener más información sobre cómo crear una extensión con una ventana de herramientas, vea [Crear una extensión con una ventana de herramientas.](../extensibility/creating-an-extension-with-a-tool-window.md)
 
-2. En la sección **todos los controles de WPF** del cuadro de **herramientas**, arrastre un control **Canvas** hasta la cuadrícula.
+## <a name="set-up-the-tool-window"></a>Configuración de la ventana de herramientas
+ Agregue un cuadro de texto en el que escribir un nuevo elemento ToDo, un botón para agregar el nuevo elemento a la lista y un ListBox para mostrar los elementos de la lista.
 
-3. Arrastre un **cuadro de texto**, un **botón** y un **cuadro de lista** al lienzo. Organice los elementos de modo que el cuadro de texto y el botón estén en el mismo nivel, y el control ListBox rellene el resto de la ventana debajo de ellos, como se muestra en la figura siguiente.
+1. En *TodoWindow.xaml,* elimine los controles Button, TextBox y StackPanel de UserControl.
+
+    > [!NOTE]
+    > Esto no elimina el controlador **button1_Click** eventos, que reutilizará en un paso posterior.
+
+2. En la **sección Todos los controles WPF** del Cuadro **de** herramientas , arrastre un control **Canvas** a la cuadrícula.
+
+3. Arrastre un **cuadro de texto**, un **botón** y un **control ListBox** al lienzo. Organice los elementos para que TextBox y Button estén en el mismo nivel, y listBox rellene el resto de la ventana debajo de ellos, como en la imagen siguiente.
 
      ![Ventana de herramientas terminada](../extensibility/media/t5-toolwindow.png "T5-ToolWindow")
 
-4. En el panel XAML, busque el botón y establezca su propiedad de contenido en **Agregar**. Vuelva a conectar el controlador de eventos de botón al control de botón agregando un `Click="button1_Click"` atributo. El bloque Canvas debería tener este aspecto:
+4. En el panel XAML, busque el botón y establezca su propiedad Content en **Agregar.** Vuelva a conectar el controlador de eventos de botón al control Button agregando un `Click="button1_Click"` atributo . El bloque Canvas debe tener este aspecto:
 
     ```xml
     <Canvas HorizontalAlignment="Left" Width="306">
@@ -61,15 +61,15 @@ Puede tener acceso a cualquier ventana de herramientas en Visual Studio. En este
     </Canvas>
     ```
 
-### <a name="customize-the-constructor"></a>Personalizar el constructor
+### <a name="customize-the-constructor"></a>Personalización del constructor
 
-1. En el archivo *TodoWindowControl. Xaml. CS* , agregue la siguiente directiva using:
+1. En el *archivo TodoWindowControl.xaml.cs,* agregue la siguiente directiva using:
 
     ```csharp
     using System;
     ```
 
-2. Agregue una referencia pública a TodoWindow y haga que el constructor TodoWindowControl tome un parámetro TodoWindow. El código debe tener este aspecto:
+2. Agregue una referencia pública a TodoWindow y haga que el constructor TodoWindowControl tome un parámetro TodoWindow. El código debe ser similar al siguiente:
 
     ```csharp
     public TodoWindow parent;
@@ -81,7 +81,7 @@ Puede tener acceso a cualquier ventana de herramientas en Visual Studio. En este
     }
     ```
 
-3. En *TodoWindow. CS*, cambie el constructor TodoWindowControl para incluir el parámetro TodoWindow. El código debe tener este aspecto:
+3. En *TodoWindow.cs,* cambie el constructor TodoWindowControl para incluir el parámetro TodoWindow. El código debe ser similar al siguiente:
 
     ```csharp
     public TodoWindow() : base(null)
@@ -94,10 +94,10 @@ Puede tener acceso a cualquier ventana de herramientas en Visual Studio. En este
     }
     ```
 
-## <a name="create-an-options-page"></a>Crear una página de opciones
- Puede proporcionar una página en el cuadro de diálogo **Opciones** para que los usuarios puedan cambiar la configuración de la ventana de herramientas. La creación de una página de opciones requiere tanto una clase que describa las opciones como una entrada en el archivo *TodoListPackage. CS* o *TodoListPackage. VB* .
+## <a name="create-an-options-page"></a>Página Crear una opción
+ Puede proporcionar una página en el cuadro de **diálogo Opciones** para que los usuarios puedan cambiar la configuración de la ventana de herramientas. La creación de una página Opciones requiere una clase que describa las opciones y una entrada en el *archivo TodoListPackage.cs* o *TodoListPackage.vb.*
 
-1. Agregue una clase denominada `ToolsOptions.cs`. Haga que la `ToolsOptions` clase herede de <xref:Microsoft.VisualStudio.Shell.DialogPage> .
+1. Agregue una clase denominada `ToolsOptions.cs`. Haga que `ToolsOptions` la clase herede de <xref:Microsoft.VisualStudio.Shell.DialogPage> .
 
    ```csharp
    class ToolsOptions : DialogPage
@@ -111,7 +111,7 @@ Puede tener acceso a cualquier ventana de herramientas en Visual Studio. En este
    using Microsoft.VisualStudio.Shell;
    ```
 
-3. En la página Opciones de este tutorial solo se proporciona una opción denominada DaysAhead. Agregue un campo privado denominado **daysAhead** y una propiedad denominada **daysAhead** a la `ToolsOptions` clase:
+3. La página Opciones de este tutorial proporciona solo una opción denominada DaysAhead. Agregue un campo privado denominado **daysAhead** y una propiedad denominada **DaysAhead** a la `ToolsOptions` clase :
 
    ```csharp
    private double daysAhead;
@@ -123,36 +123,36 @@ Puede tener acceso a cualquier ventana de herramientas en Visual Studio. En este
    }
    ```
 
-   Ahora debe hacer que el proyecto tenga en cuenta esta página de opciones.
+   Ahora debe hacer que el proyecto tenga en cuenta esta página Opciones.
 
-### <a name="make-the-options-page-available-to-users"></a>Poner la Página opciones a disposición de los usuarios
+### <a name="make-the-options-page-available-to-users"></a>Hacer que la página Opciones esté disponible para los usuarios
 
-1. En *TodoWindowPackage. CS*, agregue un <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> a la `TodoWindowPackage` clase:
+1. En *TodoWindowPackage.cs*, agregue un a <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> la clase `TodoWindowPackage` :
 
     ```csharp
     [ProvideOptionPage(typeof(ToolsOptions), "ToDo", "General", 101, 106, true)]
     ```
 
-2. El primer parámetro del constructor ProvideOptionPage es el tipo de la clase `ToolsOptions` , que ha creado anteriormente. El segundo parámetro, "ToDo", es el nombre de la categoría en el cuadro de diálogo **Opciones** . El tercer parámetro, "general", es el nombre de la subcategoría del cuadro de diálogo **Opciones** en el que estará disponible la página Opciones. Los dos parámetros siguientes son los identificadores de recursos de las cadenas; el primero es el nombre de la categoría y el segundo es el nombre de la subcategoría. El parámetro final determina si se puede tener acceso a esta página mediante automatización.
+2. El primer parámetro del constructor ProvideOptionPage es el tipo de la clase `ToolsOptions` , que creó anteriormente. El segundo parámetro, "ToDo", es el nombre de la categoría en el **cuadro de diálogo** Opciones. El tercer parámetro, "General", es el nombre  de la subcategoría del cuadro de diálogo Opciones donde estará disponible la página Opciones. Los dos parámetros siguientes son identificadores de recursos para cadenas; el primero es el nombre de la categoría y el segundo es el nombre de la subcategoría. El parámetro final determina si se puede acceder a esta página mediante automatización.
 
-     Cuando un usuario abre la página de opciones, debe ser similar a la siguiente imagen.
+     Cuando un usuario abre la página Opciones, debe parecerse a la siguiente imagen.
 
      ![Página Opciones](../extensibility/media/t5optionspage.gif "T5OptionsPage")
 
-     Observe la categoría **todo** y la subcategoría **General**.
+     Observe la categoría **ToDo** y la subcategoría **General**.
 
 ## <a name="make-data-available-to-the-properties-window"></a>Hacer que los datos estén disponibles para el ventana Propiedades
- Para hacer que la información de la lista de tareas esté disponible, cree una clase denominada `TodoItem` que almacene información sobre los elementos individuales en la lista de tareas.
+ Puede hacer que la información de lista ToDo esté disponible mediante la creación de una clase denominada que almacena información sobre los elementos `TodoItem` individuales de la lista ToDo.
 
 1. Agregue una clase denominada `TodoItem.cs`.
 
-     Cuando la ventana de herramientas está disponible para los usuarios, los elementos del cuadro de lista se representarán mediante TodoItems. Cuando el usuario selecciona uno de estos elementos en el cuadro de lista, la ventana **propiedades** mostrará información sobre el elemento.
+     Cuando la ventana de herramientas está disponible para los usuarios, los elementos del ListBox se representarán mediante TodoItems. Cuando el usuario selecciona uno de estos elementos en el ListBox, **la** ventana Propiedades mostrará información sobre el elemento.
 
-     Para que los datos estén disponibles en la ventana **propiedades** , los datos se convierten en propiedades públicas que tienen dos atributos especiales, `Description` y `Category` . `Description` es el texto que aparece en la parte inferior de la ventana **propiedades** . `Category` determina dónde debe aparecer la propiedad cuando se muestra la ventana **propiedades** en la vista por **categorías** . En la imagen siguiente, la ventana **propiedades** está en la vista por **categorías** , se selecciona la propiedad **nombre** en la categoría campos de la lista de **tareas** y se muestra la descripción de la propiedad **nombre** en la parte inferior de la ventana.
+     Para que los datos estén disponibles en la **ventana Propiedades,** convierta los datos en propiedades públicas que tengan dos atributos especiales, `Description` y `Category` . `Description` es el texto que aparece en la parte inferior de la **ventana** Propiedades. `Category`determina dónde debe aparecer la propiedad cuando **se** muestra la ventana Propiedades en la **vista Categorizada.** En la siguiente  imagen, la  ventana Propiedades  se encuentra en la vista Categorizado, la  propiedad Nombre de la categoría **Campos toDo** está seleccionada y la descripción de la propiedad Nombre se muestra en la parte inferior de la ventana.
 
      ![Propiedades (ventana)](../extensibility/media/t5properties.png "T5Properties")
 
-2. Agregue las siguientes directivas using al archivo *TodoItem. CS* .
+2. Agregue las siguientes directivas using al *archivo TodoItem.cs.*
 
     ```csharp
     using System.ComponentModel;
@@ -168,7 +168,7 @@ Puede tener acceso a cualquier ventana de herramientas en Visual Studio. En este
     }
     ```
 
-     Agregue las dos propiedades, `Name` y `DueDate` . Haremos `UpdateList()` y `CheckForErrors()` versiones posteriores.
+     Agregue las dos propiedades y `Name` `DueDate` . Haremos y `UpdateList()` más `CheckForErrors()` adelante.
 
     ```csharp
     public class TodoItem
@@ -203,7 +203,7 @@ Puede tener acceso a cualquier ventana de herramientas en Visual Studio. En este
     }
     ```
 
-4. Agregue una referencia privada al control de usuario. Agregue un constructor que tome el control de usuario y el nombre de este elemento de la lista de tareas. Para buscar el valor de `daysAhead` , obtiene la propiedad de la página de opciones.
+4. Agregue una referencia privada al control de usuario. Agregue un constructor que tome el control de usuario y el nombre de este elemento ToDo. Para buscar el valor de `daysAhead` , obtiene la propiedad de página Opciones.
 
     ```csharp
     private TodoWindowControl parent;
@@ -232,7 +232,7 @@ Puede tener acceso a cualquier ventana de herramientas en Visual Studio. En este
     }
     ```
 
-5. Dado que las instancias de la `TodoItem` clase se almacenarán en el cuadro de lista y el control ListBox llamará a la `ToString` función, debe sobrecargar la `ToString` función. Agregue el código siguiente a *TodoItem. CS*, después del constructor y antes del final de la clase.
+5. Dado que las instancias de la clase se almacenarán en listBox y listBox llamará a la función, debe `TodoItem` `ToString` sobrecargar la `ToString` función. Agregue el código siguiente a *TodoItem.cs*, después del constructor y antes del final de la clase .
 
     ```csharp
     public override string ToString()
@@ -241,7 +241,7 @@ Puede tener acceso a cualquier ventana de herramientas en Visual Studio. En este
     }
     ```
 
-6. En *TodoWindowControl. Xaml. CS*, agregue métodos de código auxiliar a la `TodoWindowControl` clase para los `CheckForError` `UpdateList` métodos y. Colóquelos después del ProcessDialogChar y antes del final del archivo.
+6. En *TodoWindowControl.xaml.cs,* agregue métodos de código auxiliar a `TodoWindowControl` la clase para los `CheckForError` `UpdateList` métodos y . Pónlos después de ProcessDialogChar y antes del final del archivo.
 
     ```csharp
     public void CheckForErrors()
@@ -252,14 +252,14 @@ Puede tener acceso a cualquier ventana de herramientas en Visual Studio. En este
     }
     ```
 
-     El `CheckForError` método llamará a un método que tiene el mismo nombre en el objeto primario y ese método comprobará si se ha producido algún error y los controlará correctamente. El `UpdateList` método actualizará el cuadro de lista en el control primario; se llama al método `Name` cuando `DueDate` cambian las propiedades y de esta clase. Se implementarán más adelante.
+     El método llamará a un método que tiene el mismo nombre en el objeto primario y ese método comprobará si se han producido errores y los `CheckForError` controlará correctamente. El `UpdateList` método actualizará listBox en el control primario; se llama al método cuando cambian las `Name` propiedades y de esta `DueDate` clase. Se implementarán más adelante.
 
-## <a name="integrate-into-the-properties-window"></a>Integre en el ventana Propiedades
- Ahora escriba el código que administra el cuadro de lista, que se vinculará a la ventana **propiedades** .
+## <a name="integrate-into-the-properties-window"></a>Integración en el ventana Propiedades
+ Ahora escriba el código que administra listBox, que se vinculará a la **ventana** Propiedades.
 
- Debe cambiar el controlador de clic de botón para leer el cuadro de texto, crear un TodoItem y agregarlo al cuadro de lista.
+ Debe cambiar el controlador de clics de botón para leer el cuadro de texto, crear un elemento TodoItem y agregarlo al Control ListBox.
 
-1. Reemplace la `button1_Click` función existente por el código que crea un nuevo TodoItem y lo agrega al cuadro de lista. Llama a `TrackSelection()` , que se definirá más adelante.
+1. Reemplace la función `button1_Click` existente por código que crea un nuevo TodoItem y lo agrega al ListBox. Llama a `TrackSelection()` , que se definirá más adelante.
 
     ```csharp
     private void button1_Click(object sender, RoutedEventArgs e)
@@ -274,9 +274,9 @@ Puede tener acceso a cualquier ventana de herramientas en Visual Studio. En este
     }
     ```
 
-2. En el vista Diseño Seleccione el control ListBox. En la ventana **propiedades** , haga clic en el botón **controladores de eventos** y busque el evento **SelectionChanged** . Rellene el cuadro de texto con **listBox_SelectionChanged**. Esto agrega un código auxiliar para un controlador de SelectionChanged y lo asigna al evento.
+2. En la vista Diseño, seleccione el control ListBox. En la **ventana Propiedades,** haga clic **en el botón Controladores de** eventos y busque el evento **SelectionChanged.** Rellene el cuadro de texto **con listBox_SelectionChanged**. Al hacerlo, se agrega un código auxiliar para un controlador SelectionChanged y se asigna al evento .
 
-3. Implemente el método `TrackSelection()`. Como necesitará obtener los <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> servicios, necesitará que el <xref:Microsoft.VisualStudio.Shell.WindowPane.GetService%2A> TodoWindowControl sea accesible. Agregue el siguiente método a la clase `TodoWindow`:
+3. Implemente el método `TrackSelection()`. Puesto que tendrá que obtener los servicios, debe hacer que <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> todoWindowControl pueda acceder <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> <xref:Microsoft.VisualStudio.Shell.WindowPane.GetService%2A> a este. Agregue el siguiente método a la clase `TodoWindow`:
 
     ```
     internal object GetVsService(Type service)
@@ -285,7 +285,7 @@ Puede tener acceso a cualquier ventana de herramientas en Visual Studio. En este
     }
     ```
 
-4. Agregue las siguientes directivas Using a *TodoWindowControl. Xaml. CS*:
+4. Agregue las siguientes directivas using a *TodoWindowControl.xaml.cs*:
 
     ```csharp
     using System.Runtime.InteropServices;
@@ -294,7 +294,7 @@ Puede tener acceso a cualquier ventana de herramientas en Visual Studio. En este
     using Microsoft.VisualStudio.Shell;
     ```
 
-5. Rellene el controlador de SelectionChanged como se indica a continuación:
+5. Rellene el controlador SelectionChanged como se muestra a continuación:
 
     ```
     private void listBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -303,7 +303,7 @@ Puede tener acceso a cualquier ventana de herramientas en Visual Studio. En este
     }
     ```
 
-6. Ahora, rellene la función TrackSelection, que proporcionará la integración con la ventana **propiedades** . Se llama a esta función cuando el usuario agrega un elemento al cuadro de lista o hace clic en un elemento del cuadro de lista. Agrega el contenido del control ListBox a SelectionContainer y pasa el SelectionContainer al controlador de eventos de la ventana **propiedades** <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> . El servicio TrackSelection realiza un seguimiento de los objetos seleccionados en la interfaz de usuario (UI) y muestra sus propiedades.
+6. Ahora, rellene la función TrackSelection, que proporcionará integración con la **ventana** Propiedades. Se llama a esta función cuando el usuario agrega un elemento al ListBox o hace clic en un elemento del ListBox. Agrega el contenido de ListBox a SelectionContainer y pasa SelectionContainer al **controlador** de eventos de la ventana <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> Propiedades. El servicio TrackSelection realiza un seguimiento de los objetos seleccionados en la interfaz de usuario (UI) y muestra sus propiedades.
 
     ```csharp
     private SelectionContainer mySelContainer;
@@ -351,9 +351,9 @@ Puede tener acceso a cualquier ventana de herramientas en Visual Studio. En este
     }
     ```
 
-     Ahora que tiene una clase que puede usar la ventana **propiedades** , puede integrar la ventana **propiedades** con la ventana de herramientas. Cuando el usuario hace clic en un elemento del cuadro de lista de la ventana de herramientas, la ventana **propiedades** debe actualizarse en consecuencia. Del mismo modo, cuando el usuario cambia un elemento ToDo en la ventana **propiedades** , se debe actualizar el elemento asociado.
+     Ahora que tiene una clase que puede usar **la** ventana Propiedades, puede integrar la **ventana** Propiedades con la ventana de herramientas. Cuando el usuario hace clic en un elemento del Cuadro de lista de la ventana de herramientas, la **ventana** Propiedades debe actualizarse en consecuencia. De forma similar, cuando el usuario cambia un elemento ToDo en la **ventana Propiedades,** se debe actualizar el elemento asociado.
 
-7. Ahora, agregue el resto del código de la función UpdateList en *TodoWindowControl. Xaml. CS*. Debe quitar y volver a agregar el TodoItem modificado desde el cuadro de lista.
+7. Ahora, agregue el resto del código de función UpdateList *en TodoWindowControl.xaml.cs.* Debe quitar y volver a agregar el elemento TodoItem modificado desde listBox.
 
     ```csharp
     public void UpdateList(TodoItem item)
@@ -365,20 +365,20 @@ Puede tener acceso a cualquier ventana de herramientas en Visual Studio. En este
     }
     ```
 
-8. Pruebe el código. Compile la solución y comience la depuración. Debería aparecer la instancia experimental.
+8. Pruebe el código. Compile la solución y comience la depuración. Debe aparecer la instancia experimental.
 
-9. Abra la   >  página **Opciones** de herramientas. Debería ver la categoría ToDo en el panel izquierdo. Las categorías se muestran en orden alfabético, así que mire en TS.
+9. Abra la **página Opciones**  >  **de** herramientas. Debería ver la categoría ToDo en el panel izquierdo. Las categorías se enumeran en orden alfabético, así que mire debajo de las Ts.
 
-10. En la página Opciones de **tareas pendientes** , debería ver la `DaysAhead` propiedad establecida en **0**. Cámbielo a **2**.
+10. En la **página Opciones** de tareas pendientes, debería ver la propiedad establecida `DaysAhead` en **0**. Cámbiese a **2**.
 
-11. En el menú **Ver/otras ventanas** , Abra **TodoWindow**. Escriba **EndDate** en el cuadro de texto y haga clic en **Agregar**.
+11. En el **menú Ver u otras ventanas,** abra **TodoWindow**. Escriba **EndDate en** el cuadro de texto y haga clic **en Agregar.**
 
-12. En el cuadro de lista debería ver una fecha dos días posterior a hoy.
+12. En el cuadro de lista debería ver una fecha dos días más tarde que hoy.
 
-## <a name="add-text-to-the-output-window-and-items-to-the-task-list"></a>Agregue texto a la ventana de salida y elementos al Lista de tareas
- En el **lista de tareas**, cree un nuevo objeto de tipo Task y, a continuación, agregue ese objeto de tarea a la **lista de tareas** llamando a su `Add` método. Para escribir en la ventana de **salida** , llame a su `GetPane` método para obtener un objeto de panel y, a continuación, llame al `OutputString` método del objeto de panel.
+## <a name="add-text-to-the-output-window-and-items-to-the-task-list"></a>Agregue texto a la ventana Salida y elementos a la Lista de tareas
+ Para la **Lista de tareas**, se crea un nuevo objeto de tipo Task  y, a continuación, se agrega ese objeto Task al Lista de tareas llamando a su `Add` método . Para escribir en la **ventana Salida,** llame a su método para obtener un objeto de panel y, a continuación, llame al `GetPane` método del objeto de `OutputString` panel.
 
-1. En *TodoWindowControl. Xaml. CS*, en el `button1_Click` método, agregue código para obtener el panel **General** de la ventana de **salida** (que es el valor predeterminado) y escriba en él. Este es el aspecto que debe tener el método:
+1. En *TodoWindowControl.xaml.cs*, en el método , agregue código para obtener el panel General de la ventana Salida (que es el valor predeterminado) y `button1_Click` escriba en él.   Este es el aspecto que debe tener el método:
 
     ```csharp
     private void button1_Click(object sender, EventArgs e)
@@ -405,7 +405,7 @@ Puede tener acceso a cualquier ventana de herramientas en Visual Studio. En este
     }
     ```
 
-2. Para agregar elementos al Lista de tareas, necesita para agregar una clase anidada a la clase TodoWindowControl. La clase anidada debe derivar de <xref:Microsoft.VisualStudio.Shell.TaskProvider> . Agregue el código siguiente al final de la `TodoWindowControl` clase.
+2. Para agregar elementos a la Lista de tareas, necesita para agregar una clase anidada a la clase TodoWindowControl. La clase anidada debe derivarse de <xref:Microsoft.VisualStudio.Shell.TaskProvider> . Agregue el código siguiente al final de la `TodoWindowControl` clase .
 
     ```csharp
     [Guid("72de1eAD-a00c-4f57-bff7-57edb162d0be")]
@@ -418,7 +418,7 @@ Puede tener acceso a cualquier ventana de herramientas en Visual Studio. En este
     }
     ```
 
-3. A continuación, agregue una referencia privada a `TodoTaskProvider` y un `CreateProvider()` método a la `TodoWindowControl` clase. El código debe tener este aspecto:
+3. A continuación, agregue una referencia `TodoTaskProvider` privada a y un método a la clase `CreateProvider()` `TodoWindowControl` . El código debe ser similar al siguiente:
 
     ```csharp
     private TodoWindowTaskProvider taskProvider;
@@ -432,7 +432,7 @@ Puede tener acceso a cualquier ventana de herramientas en Visual Studio. En este
     }
     ```
 
-4. Agregue `ClearError()` , que borra el lista de tareas, y `ReportError()` , que agrega una entrada a la lista de tareas, a la `TodoWindowControl` clase.
+4. Agregue , que borra el Lista de tareas y , que agrega una entrada a la `ClearError()` `ReportError()` Lista de tareas, a la `TodoWindowControl` clase .
 
     ```csharp
     private void ClearError()
@@ -464,7 +464,7 @@ Puede tener acceso a cualquier ventana de herramientas en Visual Studio. En este
     }
     ```
 
-5. Ahora implemente el `CheckForErrors` método, como se indica a continuación.
+5. Ahora implemente `CheckForErrors` el método , como se muestra a continuación.
 
     ```csharp
     public void CheckForErrors()
@@ -486,24 +486,24 @@ Puede tener acceso a cualquier ventana de herramientas en Visual Studio. En este
 
 2. Abra **TodoWindow** (**Ver**  >  **otras ventanas**  >  **TodoWindow**).
 
-3. Escriba algo en el cuadro de texto y, a continuación, haga clic en **Agregar**.
+3. Escriba algo en el cuadro de texto y, a continuación, haga clic **en Agregar**.
 
-     Una fecha de vencimiento 2 días después de hoy se agrega al cuadro de lista. No se generan errores y el **lista de tareas** (**Ver**  >  **lista de tareas**) no debe tener ninguna entrada.
+     Una fecha de vencimiento 2 días después de hoy se agrega al cuadro de lista. No se generan errores y el **Lista de tareas** (**Ver**  >  **Lista de tareas**) no debe tener ninguna entrada.
 
-4. Ahora, cambie la configuración de la  >    >  Página de opciones de herramientas **todo** de **2** a **0**.
+4. Ahora cambie la configuración de la **página**  >  **Opciones de** herramientas  >  **ToDo** de **2** a **0.**
 
-5. Escriba otra cosa en el **TodoWindow** y, a continuación, haga clic en **Agregar** de nuevo. Esto desencadena un error y también una entrada en el **lista de tareas**.
+5. Escriba otra cosa en **TodoWindow y,** a continuación, haga clic **en Agregar de** nuevo. Esto desencadena un error y también una entrada en el **Lista de tareas**.
 
-     A medida que agrega elementos, la fecha inicial se establece en Now más 2 días.
+     A medida que agrega elementos, la fecha inicial se establece en ahora más 2 días.
 
-6. En el menú **Ver** , haga clic en **salida** para abrir la ventana **resultados** .
+6. En el **menú Ver,** haga clic **en Salida** para abrir la **ventana** Salida.
 
-     Tenga en cuenta que cada vez que se agrega un elemento, se muestra un mensaje en el panel **lista de tareas** .
+     Tenga en cuenta que cada vez que agrega un elemento, se muestra un mensaje en el **Lista de tareas** elemento.
 
-7. Haga clic en uno de los elementos del cuadro de lista.
+7. Haga clic en uno de los elementos del Cuadro de lista.
 
-     La ventana **propiedades** muestra las dos propiedades del elemento.
+     La **ventana** Propiedades muestra las dos propiedades del elemento.
 
-8. Cambie una de las propiedades y, a continuación, presione **entrar**.
+8. Cambie una de las propiedades y presione **Entrar.**
 
-     El elemento se actualiza en el cuadro de lista.
+     El elemento se actualiza en listBox.

@@ -1,9 +1,9 @@
 ---
 title: Elemento GuidSymbol | Microsoft Docs
-description: 'El elemento GuidSymbol contiene el GUID del par GUID: ID que representa un menú, un grupo o un comando.'
+description: El elemento GuidSymbol contiene el GUID del par GUID:ID que representa un menú, un grupo o un comando.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, GuidSymbol
 - GuidSymbol element (VSCT XML schema)
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb683c99614797fa8b05eae87c758ec33f675c99
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 7c30c7a48b03b5deed3267e106e926d3cb5114c1
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105057460"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902766"
 ---
 # <a name="guidsymbol-element"></a>Elemento GuidSymbol
-El `GuidSymbol` elemento contiene el GUID del par GUID: ID que representa un menú, un grupo o un comando. El identificador procede de un `IDSymbol` elemento del `GuidSymbol` elemento. El `GuidSymbol` elemento tiene un `name` atributo que proporciona un nombre descriptivo para el GUID, que se encuentra en el `value` atributo.
+El `GuidSymbol` elemento contiene el GUID del par GUID:ID que representa un menú, un grupo o un comando. El identificador procede de `IDSymbol` un elemento del elemento `GuidSymbol` . El `GuidSymbol` elemento tiene un atributo que proporciona un nombre descriptivo para el `name` GUID, que se encuentra en el atributo `value` .
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,22 +40,22 @@ El `GuidSymbol` elemento contiene el GUID del par GUID: ID que representa un men
 |Atributo|Descripción|
 |---------------|-----------------|
 |name|Necesario. Nombre del símbolo GUID.|
-|value|Necesario. GUID del símbolo GUID.|
+|valor|Necesario. GUID del símbolo GUID.|
 
 ### <a name="child-elements"></a>Elementos secundarios
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|[Elemento IDSymbol](../extensibility/idsymbol-element.md)|Contiene el identificador del par GUID: ID que representa un menú, grupo o comando.|
+|[Elemento IDSymbol](../extensibility/idsymbol-element.md)|Contiene el identificador del par GUID:ID que representa un menú, un grupo o un comando.|
 
 ### <a name="parent-elements"></a>Elementos primarios
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|[Elemento Symbols](../extensibility/symbols-element.md)|Agrupa `GuidSymbol` los elementos de un archivo *. Vsct* .|
+|[Elemento Symbols](../extensibility/symbols-element.md)|Agrupa `GuidSymbol` los elementos de un archivo *.vsct.*|
 
 ## <a name="remarks"></a>Observaciones
- Normalmente, un archivo *. Vsct* contiene tres `GuidSymbol` elementos en su `Symbols` sección, uno para el propio paquete, uno para el conjunto de comandos (la colección de menús, grupos y comandos que el paquete pone a disposición) y otro para los mapas de bits que proporcionan iconos para botones y otros componentes visuales. Cada `IDSymbol` elemento de un `GuidSymbol` elemento determinado debe tener un único `value` . Sin embargo, `IDSymbol` los elementos que tienen valores idénticos pueden existir en un paquete siempre que tengan distintos elementos primarios.
+ Normalmente, un archivo *.vsct* contiene tres elementos en su sección, uno para el propio paquete, otro para el conjunto de comandos (la colección de menús, grupos y comandos que el paquete pone a disposición) y otro para los mapas de bits que proporcionan iconos para botones y otros componentes `GuidSymbol` `Symbols` visuales. Cada `IDSymbol` elemento de un elemento determinado debe tener un único `GuidSymbol` `value` . Sin embargo, los elementos que tienen valores idénticos pueden `IDSymbol` existir en un paquete siempre que tengan elementos principales diferentes.
 
-## <a name="see-also"></a>Consulte también
-- [Archivos de tabla de comandos de Visual Studio (. Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Consulta también
+- [Visual Studio de tabla de comandos (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

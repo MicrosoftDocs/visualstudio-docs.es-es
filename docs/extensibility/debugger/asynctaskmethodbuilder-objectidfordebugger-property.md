@@ -1,8 +1,8 @@
 ---
-description: Obtiene un objeto que se puede usar para identificar de forma única este generador en el depurador.
-title: Propiedad AsyncTaskMethodBuilder. Objectidfordebugger (| Microsoft Docs
+description: Obtiene un objeto que se puede usar para identificar de forma única este generador para el depurador.
+title: Propiedad AsyncTaskMethodBuilder.ObjectIdForDebugger | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - ObjectForDebugger property, AsyncTaskMethodBuilder structure [.NET Framework debug engines]
 ms.assetid: 78338537-b451-4655-9f04-a21f6fe197a3
@@ -11,21 +11,21 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 672b1012512e2c430b6b854e735d9e62c3db3701
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 2873b0e1ff5d89ba7da8f346ebfa3307d14c5385
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105055549"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903858"
 ---
-# <a name="asynctaskmethodbuilderobjectidfordebugger-property"></a>Propiedad AsyncTaskMethodBuilder. Objectidfordebugger (
-Obtiene un objeto que se puede usar para identificar de forma única este generador en el depurador.
+# <a name="asynctaskmethodbuilderobjectidfordebugger-property"></a>Propiedad AsyncTaskMethodBuilder.ObjectIdForDebugger
+Obtiene un objeto que se puede usar para identificar de forma única este generador para el depurador.
 
  **Espacio de nombres:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>
 
  **Ensamblado:** mscorlib (en mscorlib.dll)
 
- Dado que no puede tener acceso a este miembro interno desde el .NET Framework, se proporciona la siguiente sintaxis en el lenguaje intermedio común (CIL).
+ Dado que no se puede acceder a este miembro interno desde la .NET Framework, se proporciona la siguiente sintaxis en Common Intermediate Language (CIL).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -35,4 +35,4 @@ private object ObjectIdForDebugger
 
 ## <a name="see-also"></a>Consulte también
 - <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601>
-- [Interna de la extensión paralela para el .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [Interno de la extensión paralela para el .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

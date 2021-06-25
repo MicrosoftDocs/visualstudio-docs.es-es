@@ -1,9 +1,9 @@
 ---
 title: Elemento UsedCommands | Microsoft Docs
-description: El elemento UsedCommands agrupa los elementos UsedCommand y otras agrupaciones UsedCommands. El elemento UsedCommands es opcional.
+description: Los elementos UsedCommands agrupan elementos UsedCommand y otras agrupaciones UsedCommands. El elemento UsedCommands es opcional.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - UsedCommands
 helpviewer_keywords:
@@ -15,17 +15,17 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b05c9571c0ca8252789f0e07ebfce66926fb19ff
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 21233527c9fcfb97fd45a8eeed60c04927df8ba1
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105060216"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903039"
 ---
 # <a name="usedcommands-element"></a>UsedCommands (Elemento)
-El elemento UsedCommands agrupa los elementos UsedCommand y otras agrupaciones UsedCommands.
+Los elementos UsedCommands agrupan elementos UsedCommand y otras agrupaciones UsedCommands.
 
- El elemento UsedCommands es opcional. Si no llama a comandos definidos fuera del paquete, no tiene que incluir esta sección en el archivo. Vsct.
+ El elemento UsedCommands es opcional. Si no llama a comandos definidos fuera del paquete, no tiene que incluir esta sección en el archivo .vsct.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,13 +42,13 @@ El elemento UsedCommands agrupa los elementos UsedCommand y otras agrupaciones U
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|Condición|Opcional. Vea [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condición|Opcional. Vea [Atributos condicionales.](../extensibility/vsct-xml-schema-conditional-attributes.md)|
 
 ### <a name="child-elements"></a>Elementos secundarios
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|[UsedCommand (Elemento)](../extensibility/usedcommand-element.md)|Comando implementado por otro código.|
+|[UsedCommand (Elemento)](../extensibility/usedcommand-element.md)|Comando que implementa otro código.|
 
 ### <a name="parent-elements"></a>Elementos primarios
 

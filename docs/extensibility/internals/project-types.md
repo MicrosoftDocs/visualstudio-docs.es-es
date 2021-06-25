@@ -1,9 +1,9 @@
 ---
 title: Tipos de proyecto | Microsoft Docs
-description: Visual Studio incluye varios tipos de proyecto para lenguajes como Visual C# y Visual Basic. Visual Studio también le permite crear sus propios tipos de proyecto.
+description: Visual Studio incluye varios tipos de proyecto para lenguajes como Visual C# y Visual Basic. Visual Studio también permite crear sus propios tipos de proyecto.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - project types, adding
 - projects [Visual Studio SDK], adding new types
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05db128709fcd0e99b3d0a3a6b26acbc372212c7
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: e7ecf54a9a5aa4b19d5ecc079e0bf5a448561f98
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105064283"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903572"
 ---
 # <a name="project-types"></a>Tipos de proyecto
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] incluye varios tipos de proyecto para lenguajes como [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] y [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] . [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] también le permite crear sus propios tipos de proyecto.
@@ -30,15 +30,15 @@ ms.locfileid: "105064283"
 
 - [Creación de tipos de proyecto](../../extensibility/internals/creating-project-types.md)
 
- Describe el diseño de los tipos de proyecto.
+ Describe el diseño de tipos de proyecto.
 
 - [Adición de un comando a la barra de herramientas del Explorador de soluciones](../../extensibility/adding-a-command-to-the-solution-explorer-toolbar.md)
 
- Detalla los pasos que debe seguir para agregar un botón a la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] barra de herramientas **Explorador de soluciones** .
+ Detalla los pasos que debe seguir para agregar un botón a la barra [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **Explorador de soluciones** herramientas.
 
 - [Adición de plantillas de proyecto y de elementos de proyecto](../../extensibility/internals/adding-project-and-project-item-templates.md)
 
- Describe cómo puede agregar plantillas a los tipos de proyecto para que los usuarios puedan crear nuevos proyectos y elementos de proyecto de acuerdo con un patrón.
+ Describe cómo puede agregar plantillas a los tipos de proyecto para que los usuarios puedan crear nuevos proyectos y elementos de proyecto según un patrón.
 
 - [Apertura y guardado de elementos de proyecto](../../extensibility/internals/opening-and-saving-project-items.md)
 
@@ -46,23 +46,23 @@ ms.locfileid: "105064283"
 
 - [Administración de opciones de configuración](../../extensibility/internals/managing-configuration-options.md)
 
- Describe el modo en que los tipos de proyecto pueden admitir opciones de configuración como la depuración y la versión que controlan cómo se compilan y depuran los proyectos.
+ Describe cómo los tipos de proyecto pueden admitir opciones de configuración como Debug y Release que controlan cómo se compilan, depuran, etc.
 
 - [Compatibilidad con control de código fuente](../../extensibility/internals/supporting-source-control.md)
 
- Proporciona información sobre cómo agregar compatibilidad para los sistemas de control de código fuente a los tipos de proyecto.
+ Proporciona información sobre cómo agregar compatibilidad con sistemas de control de código fuente a los tipos de proyecto.
 
 - [Anidamiento de proyectos](../../extensibility/internals/nesting-projects.md)
 
- Explica cómo los tipos de proyecto pueden admitir el *anidamiento*, de modo que los proyectos se pueden agrupar en **Explorador de soluciones**.
+ Explica cómo los tipos de proyecto pueden admitir *el* anidamiento para que los proyectos se puedan agrupar en **Explorador de soluciones**.
 
 - [Actualización de proyectos](../../extensibility/internals/upgrading-projects.md)
 
- Describe cómo puede participar el tipo de proyecto en el Asistente para actualización para actualizar archivos de proyecto de una versión anterior de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
+ Describe cómo el tipo de proyecto puede participar en el Asistente para actualización para actualizar archivos de proyecto desde una versión anterior de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
 - [Arquitectura](../../extensibility/internals/project-types-architecture.md)
 
- Proporciona información técnica detallada acerca de los tipos de proyecto.
+ Proporciona información técnica detallada sobre los tipos de proyecto.
 
 ## <a name="related-sections"></a>Secciones relacionadas
 - [Jerarquías y selección](../../extensibility/internals/hierarchies-and-selection.md)
@@ -75,4 +75,4 @@ ms.locfileid: "105064283"
 
 - [Proyectos](../../extensibility/internals/projects.md)
 
- Describe cómo extender el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sistema del proyecto.
+ Describe cómo extender el sistema [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] del proyecto.

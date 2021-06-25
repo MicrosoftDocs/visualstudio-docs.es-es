@@ -1,8 +1,8 @@
 ---
-description: Esta función deshace una operación de desprotección anterior, con lo que se restaura el contenido del archivo o archivos seleccionados al estado anterior a la desprotección.
-title: Función SccUncheckout | Microsoft Docs
+description: Esta función deshace una operación de desprotección anterior, con lo que se restaura el contenido del archivo o los archivos seleccionados al estado anterior a la desprotección.
+title: SccUncheckout Function | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccUncheckout
 helpviewer_keywords:
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0144755d18bbabee47f7aad25337e3c41588ebe5
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 3a382a112b5a11acc36c52735c949ebef71052ec
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105090166"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904092"
 ---
 # <a name="sccuncheckout-function"></a>SccUncheckout (Función)
-Esta función deshace una operación de desprotección anterior, con lo que se restaura el contenido del archivo o archivos seleccionados al estado anterior a la desprotección. Se pierden todos los cambios realizados en el archivo desde la desprotección.
+Esta función deshace una operación de desprotección anterior, con lo que se restaura el contenido del archivo o los archivos seleccionados al estado anterior a la desprotección. Se pierden todos los cambios realizados en el archivo desde la desprotección.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,44 +39,44 @@ SCCRTN SccUncheckout (
 #### <a name="parameters"></a>Parámetros
  pvContext
 
-de Estructura de contexto del complemento de control de código fuente.
+[in] Estructura de contexto del complemento de control de código fuente.
 
  hWnd
 
-de Identificador de la ventana del IDE que el complemento de control de código fuente puede utilizar como elemento primario para los cuadros de diálogo que proporciona.
+[in] Identificador de la ventana del IDE que el complemento de control de código fuente puede usar como elemento primario para los cuadros de diálogo que proporciona.
 
- N archivos
+ nFiles
 
-de Número de archivos especificados en la `lpFileNames` matriz.
+[in] Número de archivos especificados en la `lpFileNames` matriz.
 
  lpFileNames
 
-de Matriz de nombres de ruta de acceso local completa de los archivos para los que se va a deshacer una desprotección.
+[in] Matriz de nombres de ruta de acceso locales completos de archivos para los que se va a deshacer una desprotección.
 
- Opciones
+ fOptions
 
-de Marcas de comandos (no utilizadas).
+[in] Marcas de comandos (no usadas).
 
  pvOptions
 
-de Opciones específicas del complemento de control de código fuente.
+[in] Opciones específicas del complemento de control de código fuente.
 
 ## <a name="return-value"></a>Valor devuelto
- Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:
+ Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los valores siguientes:
 
-|Value|Descripción|
+|Valor|Descripción|
 |-----------|-----------------|
-|SCC_OK|Deshacer desprotección realizada correctamente.|
-|SCC_E_FILENOTCONTROLLED|El archivo seleccionado no está bajo el control de código fuente.|
-|SCC_E_ACCESSFAILURE|Hubo un problema al obtener acceso al sistema de control de código fuente, probablemente debido a problemas de red o de contención. Se recomienda un reintento.|
-|SCC_E_NONSPECIFICERROR|Error no específico. No se pudo deshacer la desprotección.|
-|SCC_E_NOTCHECKEDOUT|El usuario no tiene el archivo desprotegido.|
-|SCC_E_NOTAUTHORIZED|El usuario no tiene permiso para realizar esta operación.|
+|SCC_OK|La desprotección se ha realizado correctamente.|
+|SCC_E_FILENOTCONTROLLED|El archivo seleccionado no está bajo control de código fuente.|
+|SCC_E_ACCESSFAILURE|Hubo un problema al acceder al sistema de control de código fuente, probablemente debido a problemas de red o contención. Se recomienda un reintento.|
+|SCC_E_NONSPECIFICERROR|Error no específico. La desprotección de deshacer no se ha hecho correctamente.|
+|SCC_E_NOTCHECKEDOUT|El usuario no tiene el archivo desprotegiendo.|
+|SCC_E_NOTAUTHORIZED|El usuario no puede realizar esta operación.|
 |SCC_E_PROJNOTOPEN|El proyecto no se ha abierto desde el control de código fuente.|
 |SCC_I_OPERATIONCANCELED|La operación se canceló antes de completarse.|
 
 ## <a name="remarks"></a>Observaciones
- Después de esta operación, `SCC_STATUS_CHECKEDOUT` se `SCC_STATUS_MODIFIED` borrarán las marcas y para los archivos en los que se realizó la desprotección de deshacer.
+ Después de esta operación, las marcas y se borrarán para los archivos en los que se `SCC_STATUS_CHECKEDOUT` `SCC_STATUS_MODIFIED` realizó la desprotección de deshacer.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 - [Funciones de API de complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)

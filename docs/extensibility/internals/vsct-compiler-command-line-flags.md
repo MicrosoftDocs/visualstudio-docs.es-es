@@ -1,9 +1,9 @@
 ---
-title: Command-Line marcadores del compilador de VSCT | Microsoft Docs
-description: El compilador de la tabla de comandos de Visual Studio proporciona opciones de línea de comandos para garantizar la compilación correcta de los archivos. Vsct.
+title: Marcas de Command-Line del compilador vsct | Microsoft Docs
+description: El Visual Studio tabla de comandos proporciona opciones de línea de comandos para garantizar una compilación correcta de los archivos .vsct.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - VSCT files, compiling
 - command-table file compilation (VSCT files)
@@ -13,18 +13,18 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 20c078d65af6224c65c2c574471b046deaf0cc92
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ce83df56e1bcfad50fe71da31291b5c43b26c47a
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105069301"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898903"
 ---
 # <a name="vsct-compiler-command-line-flags"></a>Marcas de la línea de comandos del compilador de VSCT
-El compilador de la tabla de comandos de Visual Studio (VSCT) proporciona modificadores de línea de comandos para garantizar la correcta compilación de los archivos. VSCT.
+El Visual Studio de tabla de comandos (VSCT) proporciona modificadores de línea de comandos para garantizar una compilación correcta de los archivos .vsct.
 
 ## <a name="command-line-parameters"></a>Parámetros de la línea de comandos
- Para ver la ayuda de VSCT básica desde una ventana de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **comandos** , vaya a la carpeta *ruta de instalación de Visual Studio SDK*\VisualStudioIntegration\Tools\Bin\ y escriba:
+ Para ver la ayuda básica de VSCT desde una ventana Comandos, vaya a la carpeta [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]  \VisualStudioIntegration\Tools\Bin\ de la ruta de instalación del SDK de *Visual Studio* y escriba:
 
 ```
 vsct /?
@@ -52,31 +52,31 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 ```
 
 > [!NOTE]
-> Los caracteres (guión) y/(barra diagonal) son la notación aceptada para indicar los parámetros de la línea de comandos.
+> Los caracteres ( guion) y / (barra diagonal) se aceptan en notación para indicar parámetros de línea de comandos.
 
- Los marcadores aceptables y lo que significan son los siguientes.
+ Las marcas aceptables y lo que significan son las siguientes.
 
 |Switch|Descripción|
 |------------|-----------------|
-|-d|Especifique cualquier símbolo definido adicional.|
-|-I|Indicar las rutas de acceso de inclusión adicionales que se deben usar al resolver las referencias de archivo.|
+|-d|Especifique los símbolos definidos adicionales.|
+|-I|Indique las rutas de acceso de include adicionales que se deben usar al resolver referencias de archivo.|
 |-l|Especifique el <xref:System.Globalization.CultureInfo> nombre de la referencia cultural, por ejemplo "en-US".|
-|-E|Emitir objetos de C# en el espacio de nombres especificado para los elementos de comando, seguidos de [C&#124;H&#124;N]:*nombre de archivo* donde C = C#, H = encabezado de C++, N = espacio de nombres. El espacio de nombres es necesario para C#.|
+|-E|Emita objetos de C# en el espacio de nombres especificado para los elementos de comando, seguido de [C&#124;H&#124;N]:*nombre* de archivo donde C = C#, H = encabezado de C++, N = espacio de nombres. El espacio de nombres es necesario para C#.|
 |-v|Salida detallada.|
 
- El modificador-L indica al compilador que seleccione un grupo de cadenas para generar el archivo binario. CTO correspondiente al <xref:System.Globalization.CultureInfo> nombre de la referencia cultural especificada. El nombre de referencia cultural especificado debe coincidir con el atributo Language de uno o más [elementos Strings](../../extensibility/strings-element.md) del archivo. Vsct. Si un elemento Strings no tiene ningún atributo Language, se hereda del [elemento CommandTable](../../extensibility/commandtable-element.md)que lo contiene.
+ El modificador -L indica al compilador que seleccione un grupo de cadenas para generar el archivo .cto binario correspondiente al nombre de referencia <xref:System.Globalization.CultureInfo> cultural especificado. El nombre de referencia cultural especificado debe coincidir con el atributo Language de uno o varios [elementos Strings](../../extensibility/strings-element.md) del archivo .vsct. Si un elemento Strings no tiene ningún atributo Language, se hereda del elemento [CommandTable que lo contiene.](../../extensibility/commandtable-element.md)
 
- Un archivo. Vsct puede tener varios elementos de cadena y cada uno de ellos puede tener un atributo de idioma diferente. La globalización se consigue al ejecutar el compilador VSCT varias veces y cambiar el modificador-L para cada nombre de referencia cultural.
+ Un archivo .vsct puede tener varios elementos Strings y cada uno puede tener un atributo Language diferente. La globalización se logra ejecutando el compilador vsct varias veces y cambiando el modificador -L para cada nombre de referencia cultural.
 
- Si el nombre de la referencia cultural proporcionado por el modificador-L no coincide con el atributo Language de ningún elemento Strings, el compilador intentará coincidir con el idioma y no con la región. Por ejemplo, si no se encuentra "en-US", el compilador probará "en" en su lugar. Si no es así, probará la referencia cultural actual del sistema operativo. Si no es así, se compilará el primer elemento de cadenas que encuentre.
+ Si el nombre de referencia cultural especificado por el modificador -L no coincide con el atributo Language de ningún elemento Strings, el compilador intentará coincidir con el idioma y no con la región. Por ejemplo, si no se encuentra "en-US", el compilador probará "en" en su lugar. Si no lo hace, probará la referencia cultural actual del sistema operativo. Si no lo hace, compilará el primer elemento Strings que encuentre.
 
- El modificador-E se puede usar para emitir un archivo de encabezado de estilo C que contiene los símbolos que se usan en la tabla de comandos, o para emitir un archivo de C# que contiene objetos para los símbolos de comando.
+ El modificador -E se puede usar para emitir un archivo de encabezado de estilo C que contiene los símbolos utilizados por la tabla de comandos, o para emitir un archivo de C# que contiene objetos para los símbolos de comando.
 
- Los modificadores-D e-I tienen la sintaxis de las marcas de preprocesador de Cl.exe C que tienen el mismo nombre. Las definiciones de-D que tienen el formato X = Y se usan para la expansión de \<Defined> pruebas basadas en XML en `Condition` atributos. -I incluye las rutas de acceso que se usan para resolver \<Include> \<Extern> \<Bitmap> las referencias de archivo y. Para obtener más información, vea la [Referencia del esquema XML de VSCT](../../extensibility/vsct-xml-schema-reference.md).
+ Los modificadores -D e -I tienen la sintaxis de Cl.exe marcas de preprocesador de C que tienen el mismo nombre. Las definiciones -D que tienen el formato X=Y se usan para la expansión de pruebas basadas en XML \<Defined> en `Condition` atributos. -I include paths are used to resolve , and file references( -I include paths are used to resolve \<Include> , \<Extern> and file \<Bitmap> references. Para obtener más información, vea la Referencia [de esquema XML de VSCT](../../extensibility/vsct-xml-schema-reference.md).
 
- El compilador VSCT también puede descompilar un archivo binario compilado previamente. Para ello, proporcione un archivo binario para \<infile> .   Si el compilador VSCT generó el archivo binario, tendrá sus símbolos ya incrustados y generará una salida con los nombres simbólicos en una \<Symbols> sección de la salida. Si el binario fue generado por el compilador de CTC, el resultado contendrá los identificadores y GUID reales. Si el archivo *. ctsym generado por las versiones actuales de Ctc.exe está en la misma carpeta que el archivo de entrada binaria, los símbolos se cargarán desde ese archivo y se usarán para la salida.
+ El compilador de VSCT también puede descompilar un archivo binario creado previamente. Para ello, proporcione un archivo binario para \<infile> .   Si el compilador de VSCT ha generado el archivo binario, tendrá sus símbolos ya incrustados y producirá una salida con los nombres simbólicos en una sección \<Symbols> de la salida. Si el compilador de CTC produjo el binario, la salida contendrá los GUID e ID reales. Si el archivo *.ctsym generado por las versiones actuales de Ctc.exe se encuentra en la misma carpeta que el archivo de entrada binario, los símbolos se cargarán desde ese archivo y se usarán para la salida.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 - [Archivos de tabla de comandos de Visual Studio (.Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Referencia del esquema XML de VSCT](../../extensibility/vsct-xml-schema-reference.md)
 - [Cómo VSPackages agrega elementos de la interfaz de usuario](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

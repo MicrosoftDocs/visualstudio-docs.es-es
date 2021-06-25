@@ -2,7 +2,7 @@
 description: Dada una lista de archivos locales, esta función determina qué archivos son diferentes de las versiones correspondientes en la base de datos de control de código fuente.
 title: Función SccEnumChangedFiles | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccEnumChangedFiles
 helpviewer_keywords:
@@ -13,14 +13,14 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10f14fb915d461255eddbd4a00747dfbdf59cde4
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 2b0707c049013fd3a0272d1f024e4fdbc342bab1
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105085564"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904544"
 ---
-# <a name="sccenumchangedfiles-function"></a>SccEnumChangedFiles función)
+# <a name="sccenumchangedfiles-function"></a>Función SccEnumChangedFiles
 Dada una lista de archivos locales, esta función determina qué archivos son diferentes de las versiones correspondientes en la base de datos de control de código fuente.
 
 ## <a name="syntax"></a>Sintaxis
@@ -38,31 +38,31 @@ SCCRTN SccEnumChangedFiles(
 ### <a name="parameters"></a>Parámetros
  pContext
 
-de Puntero de contexto del complemento de control de código fuente.
+[in] Puntero de contexto del complemento de control de código fuente.
 
  hWnd
 
-de Identificador de la ventana del IDE que el complemento de control de código fuente puede utilizar como elemento primario para los cuadros de diálogo que proporciona.
+[in] Identificador de la ventana del IDE que el complemento de control de código fuente puede usar como elemento primario para los cuadros de diálogo que proporciona.
 
  cFiles
 
-de Número de nombres de archivo especificados en la `lpFileNames` matriz. También especifica el tamaño de la `plIsFileDifferent` matriz.
+[in] Número de nombres de archivo especificados en la `lpFileNames` matriz. También especifica el tamaño de la `plIsFileDifferent` matriz.
 
  lpFileNames
 
-de Matriz de nombres de archivo local que se va a comprobar.
+[in] Matriz de nombres de archivo locales que se comprobarán.
 
  plIsFileDifferent
 
-[in, out] Matriz de valores que indican el estado de la diferencia de cada archivo (la matriz debe tener al menos `cFiles` entradas). Distinto de cero significa que el archivo es diferente.
+[in, out] Matriz de valores que indica el estado de diferencia de cada archivo (la matriz debe tener `cFiles` al menos entradas). Distinto de cero significa que el archivo es diferente.
 
 ## <a name="return-value"></a>Valor devuelto
- Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:
+ Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los valores siguientes:
 
-|Value|Descripción|
+|Valor|Descripción|
 |-----------|-----------------|
 |SCC_OK|Operación completada correctamente.|
 |SCC_UNSPECIFIEDERROR|Error genérico.|
 
-## <a name="see-also"></a>Consulte también
-- [Funciones de la API del complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>Consulta también
+- [Funciones de API del complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)

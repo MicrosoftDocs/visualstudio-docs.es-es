@@ -3,7 +3,7 @@ title: IntelliSenseHostFlags | Microsoft Docs
 description: La enumeración IntelliSenseHostFlags especifica marcas de host de IntelliSense. En este artículo se describen los valores de enumeración.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IntellisenseHostFlags
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83a3911670a10710ad6ae5cd6496fb76af6c27bb
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 33345f86c69d0faeaa5863534e21eca5ecc176cc
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105079142"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902623"
 ---
 # <a name="intellisensehostflags"></a>IntelliSenseHostFlags
 Especifica marcas de host de IntelliSense.
@@ -43,13 +43,13 @@ enum IntellisenseHostFlags
 |Miembros|Descripción|
 |-------------|-----------------|
 |`IHF_READONLYCONTEXT`|El búfer de contexto es de solo lectura.|
-|`IHF_NOSEPARATESUBJECT`|Sin texto de asunto. El búfer de contexto contiene IntelliSense-destino (implica `!IHF_READONLYCONTEXT` ).|
+|`IHF_NOSEPARATESUBJECT`|Sin texto del asunto. El búfer de contexto contiene IntelliSense-target (implica `!IHF_READONLYCONTEXT` ).|
 |`IHF_SINGLELINESUBJECT`|El texto del asunto no es compatible con varias líneas.|
 |`IHF_FORCECOMMITTOCONTEXT`|Igual a `CanCommitIntoReadOnlyBuffer`.|
-|`IHF_OVERTYPE`|La edición (en asunto o contexto) debe realizarse en modo de sobretipo.|
+|`IHF_OVERTYPE`|La edición (en el asunto o el contexto) debe realizarse en modo de sobretipo.|
 
 ## <a name="requirements"></a>Requisitos
- SingleFileeditor. idl
+ SingleFileeditor.idl
 
 ## <a name="see-also"></a>Consulte también
 - <xref:Microsoft.VisualStudio.TextManager.Interop>

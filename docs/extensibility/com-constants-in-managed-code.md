@@ -3,7 +3,7 @@ title: Constantes COM en código administrado | Microsoft Docs
 description: Obtenga información sobre Managed Package Framework, que hace que algunas constantes COM estándar estén disponibles para el código administrado.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - managed VSPackages, COM constants and macros
 ms.assetid: b6663608-b049-44b0-a75b-080fdc5faafc
@@ -12,17 +12,17 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8aed8ec62278850d0b091320c12ece484778eb15
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: bb259d754befa3596e1dff1e49931c8ee81c665b
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105089737"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904326"
 ---
 # <a name="com-constants-in-managed-code"></a>Constantes COM en código administrado
-El marco de trabajo de paquetes administrados (MPF) hace que algunas constantes COM estándar estén disponibles para el código administrado. Estas constantes se enumeran a continuación para su referencia.
+Managed Package Framework (MPF) hace que algunas constantes COM estándar estén disponibles para el código administrado. Estas constantes se enumeran a continuación como referencia.
 
-## <a name="boolean-hresult-values"></a>Valores HRESULT booleanos
+## <a name="boolean-hresult-values"></a>Valores booleanos HRESULT
  <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>
 
  <xref:Microsoft.VisualStudio.VSConstants.S_OK>
@@ -52,7 +52,7 @@ El marco de trabajo de paquetes administrados (MPF) hace que algunas constantes 
 
  <xref:Microsoft.VisualStudio.VSConstants.UNDO_E_CLIENTABORT>
 
-## <a name="ole-errors"></a>Errores OLE
+## <a name="ole-errors"></a>Errores de OLE
  <xref:Microsoft.VisualStudio.VSConstants.OLE_E_ADVF>
 
  <xref:Microsoft.VisualStudio.VSConstants.OLE_E_ADVISENOTSUPPORTED>
@@ -91,7 +91,7 @@ El marco de trabajo de paquetes administrados (MPF) hace que algunas constantes 
 
  <xref:Microsoft.VisualStudio.VSConstants.OLE_E_WRONGCOMPOBJ>
 
-## <a name="ole-dispatch-errors"></a>Errores de envío OLE
+## <a name="ole-dispatch-errors"></a>Errores de envío de OLE
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_ARRAYISLOCKED>
 
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_BADCALLEE>
@@ -128,5 +128,5 @@ El marco de trabajo de paquetes administrados (MPF) hace que algunas constantes 
 
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_UNKNOWNNAME>
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 - [Control de errores y valores devueltos](../extensibility/error-handling-and-return-values.md)

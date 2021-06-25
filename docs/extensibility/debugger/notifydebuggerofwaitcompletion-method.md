@@ -1,9 +1,9 @@
 ---
 title: Método NotifyDebuggerOfWaitCompletion | Microsoft Docs
-description: Obtenga información sobre el método NotifyDebuggerOfWaitCompletion, que es un marcador de posición que el depurador usa como destino de punto de interrupción.
+description: Obtenga información sobre el método NotifyDebuggerOfWaitCompletion, que es un marcador de posición utilizado como destino de punto de interrupción por el depurador.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - NotifyDebuggerOfWaitCompletion method, Task class [.NET Framework debug engines]
 ms.assetid: 841c5908-4f3f-400b-a7b0-96a95f362817
@@ -12,15 +12,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d58bb7a5e3a3395b534e5679ec303e5d93d5dc85
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 7b9d6b5fbdcb8195709a751117056bcaa0617eff
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105054743"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904222"
 ---
 # <a name="notifydebuggerofwaitcompletion-method"></a>Método NotifyDebuggerOfWaitCompletion
-Método de marcador de posición utilizado como destino de punto de interrupción por el depurador. Este método no debe estar alineado ni optimizado.
+Método de marcador de posición utilizado como destino de punto de interrupción por el depurador. Este método no se debe incluir ni optimizar.
 
  **Espacio de nombres:** <xref:System.Threading.Tasks?displayProperty=fullName>
 

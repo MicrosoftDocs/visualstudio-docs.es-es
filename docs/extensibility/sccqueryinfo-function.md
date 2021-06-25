@@ -1,8 +1,8 @@
 ---
-description: Esta función obtiene información de estado de un conjunto de archivos seleccionados bajo control de código fuente.
+description: Esta función obtiene información de estado para un conjunto de archivos seleccionados bajo control de código fuente.
 title: Función SccQueryInfo | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccQueryInfo
 helpviewer_keywords:
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 911219605859025f1877d040b5932714b10f836a
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 369bbd8d783e5d33ea1519b7ad8a4a37476dc62b
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105073903"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904144"
 ---
 # <a name="sccqueryinfo-function"></a>SccQueryInfo (Función)
-Esta función obtiene información de estado de un conjunto de archivos seleccionados bajo control de código fuente.
+Esta función obtiene información de estado para un conjunto de archivos seleccionados bajo control de código fuente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -37,45 +37,45 @@ SCCRTN SccQueryInfo(
 #### <a name="parameters"></a>Parámetros
  pvContext
 
-de Estructura de contexto del complemento de control de código fuente.
+[in] Estructura de contexto del complemento de control de código fuente.
 
- N archivos
+ nFiles
 
-de Número de archivos especificados en la `lpFileNames` matriz y la longitud de la `lpStatus` matriz.
+[in] Número de archivos especificados en la `lpFileNames` matriz y la longitud de la `lpStatus` matriz.
 
  lpFileNames
 
-de Matriz de nombres de los archivos que se van a consultar.
+[in] Matriz de nombres de archivos que se consultarán.
 
  lpStatus
 
-[in, out] Matriz en la que el complemento de control de código fuente devuelve las marcas de estado de cada archivo. Para obtener más información, consulte el [código de estado de archivo](../extensibility/file-status-code-enumerator.md).
+[in, out] Matriz en la que el complemento de control de código fuente devuelve las marcas de estado de cada archivo. Para obtener más información, vea [Código de estado de archivo](../extensibility/file-status-code-enumerator.md).
 
 ## <a name="return-value"></a>Valor devuelto
- Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:
+ Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los valores siguientes:
 
-|Value|Descripción|
+|Valor|Descripción|
 |-----------|-----------------|
-|SCC_OK|La consulta se realizó correctamente.|
-|SCC_E_ACCESSFAILURE|Hubo un problema con el acceso al sistema de control de código fuente, probablemente debido a problemas de red o de contención. Se recomienda un reintento.|
+|SCC_OK|La consulta se ha realizado correctamente.|
+|SCC_E_ACCESSFAILURE|Hubo un problema con el acceso al sistema de control de código fuente, probablemente causado por problemas de red o contención. Se recomienda un reintento.|
 |SCC_E_PROJNOTOPEN|El proyecto no está abierto bajo control de código fuente.|
 |SCC_E_NONSPECIFICERROR|Error no específico.|
 
 ## <a name="remarks"></a>Observaciones
- Si `lpFileName` es una cadena vacía, actualmente no hay información de estado para actualizar. De lo contrario, es el nombre completo de la ruta de acceso del archivo para el que puede haber cambiado la información de estado.
+ Si `lpFileName` es una cadena vacía, actualmente no hay información de estado que actualizar. De lo contrario, es el nombre de ruta de acceso completo del archivo para el que puede haber cambiado la información de estado.
 
- La matriz devuelta puede ser una máscara de `SCC_STATUS_xxxx` bits. Para obtener más información, consulte el [código de estado de archivo](../extensibility/file-status-code-enumerator.md). Es posible que un sistema de control de código fuente no admita todos los tipos de bits. Por ejemplo, si `SCC_STATUS_OUTOFDATE` no se ofrece, el bit simplemente no se establece.
+ La matriz de devolución puede ser una máscara de `SCC_STATUS_xxxx` bits de bits. Para obtener más información, vea [Código de estado de archivo](../extensibility/file-status-code-enumerator.md). Es posible que un sistema de control de código fuente no admita todos los tipos de bits. Por ejemplo, si `SCC_STATUS_OUTOFDATE` no se ofrece, el bit no se establece.
 
- Al usar esta función para desproteger archivos, tenga en cuenta los siguientes `MSSCCI` requisitos de estado:
+ Al usar esta función para desalar archivos, tenga en cuenta los siguientes requisitos `MSSCCI` de estado:
 
-- `SCC_STATUS_OUTBYUSER` se establece cuando el usuario actual ha desprotegido el archivo.
+- `SCC_STATUS_OUTBYUSER` se establece cuando el usuario actual ha desprotegiendo el archivo.
 
-- `SCC_STATUS_CHECKEDOUT` no se puede establecer a menos que `SCC_STATUS_OUTBYUSER` se establezca.
+- `SCC_STATUS_CHECKEDOUT` no se puede establecer a menos `SCC_STATUS_OUTBYUSER` que se establezca .
 
-- `SCC_STATUS_CHECKEDOUT` solo se establece cuando el archivo se desprotege en el directorio de trabajo designado.
+- `SCC_STATUS_CHECKEDOUT` solo se establece cuando el archivo se desprotegía en el directorio de trabajo designado.
 
-- Si el archivo está desprotegido por el usuario actual en un directorio distinto del directorio de trabajo, `SCC_STATUS_OUTBYUSER` se establece pero `SCC_STATUS_CHECKEDOUT` no es.
+- Si el usuario actual desprotegía el archivo en un directorio distinto del directorio de trabajo, se `SCC_STATUS_OUTBYUSER` establece pero no lo `SCC_STATUS_CHECKEDOUT` está.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 - [Funciones de API de complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)
 - [Código de estado de archivo](../extensibility/file-status-code-enumerator.md)

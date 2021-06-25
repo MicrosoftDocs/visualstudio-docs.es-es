@@ -1,8 +1,8 @@
 ---
-description: Esta función inicializa el complemento de control de código fuente y proporciona capacidades y límites al entorno de desarrollo integrado (IDE).
-title: Función SccInitialize | Microsoft Docs
+description: Esta función inicializa el complemento de control de código fuente y proporciona funcionalidades y límites al entorno de desarrollo integrado (IDE).
+title: SccInitialize Function | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccInitialize
 helpviewer_keywords:
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f266fbe27cb509d2d6dca47a913261eea7f937c
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 633e8909febd758df455a9375f735a93e3407c77
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105063830"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902532"
 ---
 # <a name="sccinitialize-function"></a>SccInitialize (Función)
-Esta función inicializa el complemento de control de código fuente y proporciona capacidades y límites al entorno de desarrollo integrado (IDE).
+Esta función inicializa el complemento de control de código fuente y proporciona funcionalidades y límites al entorno de desarrollo integrado (IDE).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,58 +41,58 @@ SCCRTN SccInitialize (
 #### <a name="parameters"></a>Parámetros
  `ppvContext`
 
-de El complemento de control de código fuente puede colocar un puntero a su estructura de contexto aquí.
+[in] El complemento de control de código fuente puede colocar aquí un puntero a su estructura de contexto.
 
  `hWnd`
 
-de Identificador de la ventana del IDE que el complemento de control de código fuente puede utilizar como elemento primario para los cuadros de diálogo que proporciona.
+[in] Identificador de la ventana del IDE que el complemento de control de código fuente puede usar como elemento primario para los cuadros de diálogo que proporciona.
 
  `lpCallerName`
 
-de Nombre del programa que llama al complemento de control de código fuente.
+[in] Nombre del programa que llama al complemento de control de código fuente.
 
  `lpSccName`
 
-[in, out] Búfer en el que el complemento de control de código fuente coloca su propio nombre (no superar `SCC_NAME_LEN` ).
+[in, out] Búfer donde el complemento de control de código fuente coloca su propio nombre (no para superar `SCC_NAME_LEN` ).
 
  `lpSccCaps`
 
-enuncia Devuelve las marcas de capacidad del complemento de control de código fuente.
+[out] Devuelve las marcas de funcionalidad del complemento de control de código fuente.
 
  `lpAuxPathLabel`
 
-[in, out] Búfer en el que el complemento de control de código fuente coloca una cadena que describe el `lpAuxProjPath` parámetro devuelto por [SccOpenProject](../extensibility/sccopenproject-function.md) y [SccGetProjPath](../extensibility/sccgetprojpath-function.md) (no se supera `SCC_AUXLABEL_LEN` ).
+[in, out] Búfer donde el complemento de control de código fuente coloca una cadena que describe el parámetro devuelto por `lpAuxProjPath` [SccOpenProject](../extensibility/sccopenproject-function.md) y [SccGetProjPath](../extensibility/sccgetprojpath-function.md) (no para superar `SCC_AUXLABEL_LEN` ).
 
  `pnCheckoutCommentLen`
 
-enuncia Devuelve la longitud máxima permitida para un Comentario de desprotección.
+[out] Devuelve la longitud máxima permitida para un comentario de finalización de la compra.
 
  `pnCommentLen`
 
-enuncia Devuelve la longitud máxima permitida para otros comentarios.
+[out] Devuelve la longitud máxima permitida para otros comentarios.
 
 ## <a name="return-value"></a>Valor devuelto
- Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:
+ Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los valores siguientes:
 
-|Value|Descripción|
+|Valor|Descripción|
 |-----------|-----------------|
-|SCC_OK|Inicialización del control de código fuente correcta.|
+|SCC_OK|La inicialización del control de código fuente se ha realiza correctamente.|
 |SCC_E_INITIALIZEFAILED|No se pudo inicializar el sistema.|
-|SCC_E_NOTAUTHORIZED|No se permite al usuario realizar la operación especificada.|
+|SCC_E_NOTAUTHORIZED|El usuario no puede realizar la operación especificada.|
 |SCC_E_NONSPECFICERROR|Error no específico; no se inicializó el sistema de control de código fuente.|
 
 ## <a name="remarks"></a>Observaciones
- El IDE llama a esta función cuando se carga por primera vez el complemento de control de código fuente. Permite al IDE pasar determinada información, como el nombre del autor de la llamada, al complemento. El IDE también recibe cierta información como la longitud máxima permitida para los comentarios y las capacidades del complemento.
+ El IDE llama a esta función cuando carga por primera vez el complemento de control de código fuente. Permite que el IDE pase cierta información, como el nombre del autor de la llamada, al complemento. El IDE también obtiene cierta información, como la longitud máxima permitido para los comentarios y las funcionalidades del complemento.
 
- `ppvContext`Apunta a un `NULL` puntero. El complemento de control de código fuente puede asignar una estructura para su propio uso y almacenar un puntero a esa estructura en `ppvContext` . El IDE pasará este puntero a todas las demás funciones de la API de VSSCI, lo que permite que el complemento tenga información de contexto disponible sin tener que recurrir al almacenamiento global y admitir varias instancias del complemento. Esta estructura debe desasignarse cuando se llama a [SccUninitialize](../extensibility/sccuninitialize-function.md) .
+ Apunta `ppvContext` a un `NULL` puntero. El complemento de control de código fuente puede asignar una estructura para su propio uso y almacenar un puntero a esa estructura en `ppvContext` . El IDE pasará este puntero a todas las demás funciones de LA API de VSSCI, lo que permite que el complemento tenga información de contexto disponible sin tener que recurrir al almacenamiento global y admitir varias instancias del complemento. Esta estructura se debe desasignar cuando se llama a [SccUninitialize.](../extensibility/sccuninitialize-function.md)
 
- Los `lpCallerName` `lpSccName` parámetros y permiten que el IDE y el complemento de control de código fuente intercambien los nombres. Estos nombres se pueden usar simplemente para distinguir entre varias instancias o, en realidad, pueden aparecer en menús o cuadros de diálogo.
+ Los `lpCallerName` parámetros `lpSccName` y habilitan el IDE y el complemento de control de código fuente para intercambiar nombres. Estos nombres se pueden usar simplemente para distinguir entre varias instancias, o pueden aparecer realmente en menús o cuadros de diálogo.
 
- El `lpAuxPathLabel` parámetro es una cadena que se usa como comentario para identificar la ruta de acceso del proyecto auxiliar que se almacena en el archivo de solución y que se pasa al complemento de control de código fuente en una llamada a [SccOpenProject](../extensibility/sccopenproject-function.md). [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] usa la cadena "proyecto de SourceSafe:"; otros complementos de control de código fuente deben abstenerse de usar esta cadena concreta.
+ El parámetro es una cadena que se usa como comentario para identificar la ruta de acceso del proyecto auxiliar que se almacena en el archivo de solución y se pasa al complemento de control de código fuente en una llamada `lpAuxPathLabel` a [SccOpenProject](../extensibility/sccopenproject-function.md). [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] usa la cadena "SourceSafe Project:"; otros complementos de control de código fuente deben evitar el uso de esta cadena determinada.
 
- El `lpSccCaps` parámetro proporciona al complemento de control de código fuente un lugar donde almacenar marcadores que indica las capacidades del complemento. (Para obtener una lista completa de las marcadores de capacidad, consulte [marcas de capacidad](../extensibility/capability-flags.md)). Por ejemplo, si el complemento planea escribir los resultados en una función de devolución de llamada proporcionada por el llamador, el complemento establecería el bit de funcionalidad SCC_CAP_TEXTOUT. Esto indicaría al IDE que creara una ventana para los resultados del control de versiones.
+ El parámetro proporciona al complemento de control de código fuente un lugar para almacenar las marcas de `lpSccCaps` bits que indican las funcionalidades del complemento. (Para obtener una lista completa de las marcas de bits de funcionalidad, vea [Marcas de funcionalidad).](../extensibility/capability-flags.md) Por ejemplo, si el complemento planea escribir resultados en una función de devolución de llamada proporcionada por el autor de la llamada, el complemento establecería el bit de funcionalidad SCC_CAP_TEXTOUT. Esto indicaría al IDE que cree una ventana para los resultados del control de versiones.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 - [Funciones de API de complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)
 - [SccUninitialize](../extensibility/sccuninitialize-function.md)
 - [SccOpenProject](../extensibility/sccopenproject-function.md)
