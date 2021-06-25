@@ -1,9 +1,9 @@
 ---
 title: Enumerador de código de comando | Microsoft Docs
-description: El enumerador de código de comando se usa en las opciones de SccGetCommandOptions y SccPopulateListto para indicar el comando para el que se especifican las opciones.
+description: El enumerador de código Command se usa en las opciones de SccGetCommandOptions y SccPopulateListto para indicar el comando para el que se especifican las opciones.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - command code enumerator
 - source control plug-ins, command code enumeration
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2df7ca11d5e93a3ae43d2a6bd1d7ccf8dfe5aa6
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: b97d5083c4f262ae2d86aeef5ee2627fdc854bcb
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105089711"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901388"
 ---
 # <a name="command-code-enumerator"></a>Enumerador de código de comando
 Este enumerador se usa en las opciones de [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) y [SccPopulateList](../extensibility/sccpopulatelist-function.md)para indicar el comando para el que se especifican las opciones.
@@ -42,7 +42,7 @@ enum SCCCOMMAND {
 ```
 
 ## <a name="members"></a>Miembros
-SCC_COMMAND_GET corresponde a [SccGet](../extensibility/sccget-function.md).
+SCC_COMMAND_GET corresponde a [SccGet.](../extensibility/sccget-function.md)
 
 SCC_COMMAND_CHECKOUT corresponde a [SccCheckout](../extensibility/scccheckout-function.md).
 
@@ -58,13 +58,13 @@ SCC_COMMAND_DIFF corresponde a [SccDiff](../extensibility/sccdiff-function.md).
 
 SCC_COMMAND_HISTORY corresponde a [SccHistory](../extensibility/scchistory-function.md).
 
-SCC_COMMAND_RENAME corresponde a [SccRename](../extensibility/sccrename-function.md).
+SCC_COMMAND_RENAME corresponde a [SccRename.](../extensibility/sccrename-function.md)
 
 SCC_COMMAND_PROPERTIES corresponde a [SccProperties](../extensibility/sccproperties-function.md).
 
 SCC_COMMAND_OPTIONS corresponde a [SccSetOption](../extensibility/sccsetoption-function.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 - [Complementos de control de código fuente](../extensibility/source-control-plug-ins.md)
 - [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)
 - [SccPopulateList](../extensibility/sccpopulatelist-function.md)

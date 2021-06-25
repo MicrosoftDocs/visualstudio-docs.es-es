@@ -1,9 +1,9 @@
 ---
-title: Group (elemento) | Microsoft Docs
-description: El elemento Group define un grupo de comandos VSPackage. En este artículo se describen los atributos, los elementos secundarios y los elementos primarios.
+title: Elemento Group | Microsoft Docs
+description: El elemento Group define un grupo de comandos de VSPackage. En este artículo se describen los atributos, los elementos secundarios y los elementos primarios.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, Groups
 - Groups element (VSCT XML schema)
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: daf0115161963448d47cb6721c92d0f9ffe623a0
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 422ff5d3d962198953a24210eaa3ffa30c7fc8a1
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105057590"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898596"
 ---
 # <a name="group-element"></a>Group, elemento
 Define un grupo de comandos de VSPackage.
@@ -38,10 +38,10 @@ Define un grupo de comandos de VSPackage.
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|guid|Necesario. GUID del identificador del comando GUID/ID.|
-|id|Necesario. IDENTIFICADOR del identificador del comando GUID/ID.|
+|guid|Necesario. GUID del identificador de comando GUID/ID.|
+|id|Necesario. Identificador del identificador de comando GUID/ID.|
 |priority|Opcional. Valor numérico que especifica la prioridad.|
-|Condición|Opcional. Vea [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condición|Opcional. Vea [Atributos condicionales.](../extensibility/vsct-xml-schema-conditional-attributes.md)|
 
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -65,4 +65,4 @@ Define un grupo de comandos de VSPackage.
 ```
 
 ## <a name="see-also"></a>Consulte también
-- [Archivos de tabla de comandos de Visual Studio (. Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Visual Studio de tabla de comandos (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
