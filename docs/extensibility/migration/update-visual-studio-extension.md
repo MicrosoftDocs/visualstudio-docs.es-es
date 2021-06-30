@@ -9,38 +9,38 @@ manager: jmartens
 monikerRange: vs-2022
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e7c4990d513bfb276984611b2d38f3e35a825eb
-ms.sourcegitcommit: a7a4c5545a269ca74a7291966ff77afb3b57f5ce
+ms.openlocfilehash: 512e9a71cde5ca29c737c1623aa0c8f9c37dd60d
+ms.sourcegitcommit: 0499d813d5c24052c970ca15373d556a69507250
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/21/2021
-ms.locfileid: "112424658"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "113046136"
 ---
 # <a name="update-a-visual-studio-extension-for-visual-studio-2022"></a>Actualización de Visual Studio extensión para Visual Studio 2022
 
 > [!IMPORTANT]
-> Los consejos de esta guía están pensados para guiar a los desarrolladores en la migración de extensiones que requieren cambios importantes para funcionar tanto en Visual Studio 2019 como en 2022. En esos casos, se recomienda tener dos proyectos VSIX y una compilación condicional.
+> Los consejos de esta guía están diseñados para guiar a los desarrolladores en la migración de extensiones que requieren cambios importantes para funcionar tanto en Visual Studio 2019 como en 2022. En esos casos, se recomienda tener dos proyectos VSIX y compilación condicional.
 > Muchas extensiones podrán funcionar en Visual Studio 2019 y 2022 con cambios menores que no requerirán seguir los consejos sobre la modernización de la extensión en esta guía.
-> Pruebe la extensión en Visual Studio 2022 y evalúe qué opción es mejor para la extensión.
+> Pruebe la extensión en Visual Studio 2022 y evalúe qué opción es la mejor para la extensión.
 
-Puede actualizar la extensión para que funcione con Visual Studio versión preliminar de 2022 siguiendo esta guía. Visual Studio versión preliminar de 2022 es una aplicación de 64 bits y presenta algunos cambios importantes en el SDK de VS. Esta guía le guía por los pasos necesarios para que la extensión funcione con la versión preliminar actual de Visual Studio 2022, de modo que la extensión pueda estar lista para que los usuarios puedan instalarla antes de que Visual Studio 2022 llegue a la versión general.
+Puede actualizar la extensión para que funcione con Visual Studio versión preliminar de 2022 siguiendo esta guía. Visual Studio versión preliminar de 2022 es una aplicación de 64 bits y presenta algunos cambios importantes en vs SDK. Esta guía le guía por los pasos necesarios para que la extensión funcione con la versión preliminar actual de Visual Studio 2022, de modo que la extensión pueda estar lista para que los usuarios puedan instalarla antes de que Visual Studio 2022 llegue a la versión general.
 
 ## <a name="installing"></a>Instalación
 
-Instale Visual Studio versión preliminar de 2022 desde Visual Studio de descarga de la versión [preliminar de 2022.](https://visualstudio.microsoft.com/vs/preview/vs2022)
+Instale Visual Studio versión preliminar de 2022 desde Visual Studio descargas de la versión [preliminar de 2022](https://visualstudio.microsoft.com/vs/preview/vs2022).
 
 ### <a name="extensions-written-in-a-net-language"></a>Extensiones escritas en un lenguaje .NET
 
-El SDK de VS Visual Studio 2022 para extensiones administradas se ha configurado *exclusivamente* en NuGet:
+El SDK de VS que Visual Studio 2022 para extensiones administradas está configurado *exclusivamente* en NuGet:
 
-- El meta-paquete [Microsoft.VisualStudio.Sdk](https://www.nuget.org/packages/Microsoft.VisualStudio.Sdk/) (versiones 17.x) incluye la mayoría o todos los ensamblados de referencia que necesitará.
+- El [metaetiquete Microsoft.VisualStudio.Sdk](https://www.nuget.org/packages/Microsoft.VisualStudio.Sdk/) (versiones 17.x) incluye la mayoría o todos los ensamblados de referencia que necesitará.
 - Se debe hacer referencia al paquete [Microsoft.VSSDK.BuildTools](https://www.nuget.org/packages/Microsoft.VSSDK.BuildTools/) (versiones 17.x) desde el proyecto VSIX para que pueda compilar un VSIX compatible con Visual Studio 2022.
 
-Las extensiones *deben* compilarse con la plataforma "Any CPU" o "x64". La plataforma "x86" no es compatible Visual Studio proceso de 64 bits de 2022.
+Las extensiones *deben* compilarse con la plataforma "Cualquier CPU" o "x64". La plataforma "x86" no es compatible Visual Studio proceso de 64 bits de 2022.
 
 ### <a name="extensions-written-in-c"></a>Extensiones escritas en C++
 
-El SDK de VS para las extensiones compiladas con C++ está disponible con el SDK Visual Studio instalado, como de costumbre.
+El SDK de VS para extensiones compiladas con C++ está disponible con el SDK Visual Studio instalado, como de costumbre.
 
 Las extensiones *deben* compilarse específicamente en el SDK Visual Studio 2022 y para amd64.
 
@@ -52,18 +52,18 @@ Las extensiones con código *en ejecución* deben compilarse específicamente pa
 
 Obtenga información sobre cómo migrar las extensiones Visual Studio 2022 a Visual Studio 2022:
 
-1. [Modernice los proyectos.](#modernize-your-vsix-project)
+1. [Modernice los proyectos](#modernize-your-vsix-project).
 1. [Refactorice el código fuente en un proyecto](#use-shared-projects-for-multi-targeting) compartido para permitir el destino Visual Studio 2022 y versiones anteriores.
-1. [Agregue un Visual Studio VSIX de destino 2022](#add-a-visual-studio-2022-target)y la tabla de [remapping del paquete o ensamblado](migrated-assemblies.md).
+1. [Agregue un Visual Studio vsIX de destino de 2022](#add-a-visual-studio-2022-target)y la tabla de [remapping de paquetes o ensamblados](migrated-assemblies.md).
 1. [Realizar los ajustes de código necesarios.](#handle-breaking-api-changes)
 1. [Probar la extensión Visual Studio 2022](#test-your-extension).
 1. [Publicar la extensión Visual Studio 2022](#publish-your-extension).
 
 #### <a name="extensions-without-running-code"></a>Extensiones sin ejecutar código
 
-Las extensiones que no contienen ningún código en ejecución (por ejemplo, plantillas de proyecto o elemento) no son necesarias para seguir los pasos anteriores, incluida la producción de dos VSX distintos. 
+Las extensiones que no contienen ningún código en ejecución (por ejemplo, plantillas de proyecto o elemento) no son necesarias para seguir los pasos anteriores, incluida la producción de dos VSIX distintos. 
 
-En su lugar, se debe modificar el VSIX para que su `source.extension.vsixmanifest` archivo declare dos destinos de instalación, como este:
+En su lugar, se debe modificar el VSIX para que su `source.extension.vsixmanifest` archivo declare dos destinos de instalación, como el siguiente:
 
 ```xml
 <Installation>
@@ -79,7 +79,7 @@ En su lugar, se debe modificar el VSIX para que su `source.extension.vsixmanifes
 Puede omitir los pasos de este artículo sobre el uso de proyectos compartidos y varios VSX. Puede continuar con las [pruebas](#test-your-extension).
 
 > [!NOTE]
-> Si va a crear una nueva extensión *de* Visual Studio mediante la versión preliminar de Visual Studio 2022 y quiere (también) tener como destino Visual Studio 2019 o una versión anterior, consulte esta [guía](target-previous-versions.md).
+> Si va a crear una nueva extensión *de* Visual Studio mediante Visual Studio Versión preliminar de 2022 y desea (también) tener como destino Visual Studio 2019 o una versión anterior, consulte esta [guía](target-previous-versions.md).
 
 ### <a name="msbuild-tasks"></a>tareas de MSBuild
 
@@ -87,11 +87,11 @@ Si va a crear tareas de MSBuild, tenga en cuenta que en Visual Studio 2022 es mu
 
 ## <a name="modernize-your-vsix-project"></a>Modernización del proyecto VSIX
 
-Antes de agregar compatibilidad Visual Studio 2022 a la extensión, se recomienda encarecidamente aprovechar este tiempo para limpiar y modernizar el proyecto existente antes de ir más allá, lo que incluye:
+Antes de agregar Visual Studio compatibilidad con 2022 a la extensión, se recomienda encarecidamente aprovechar este tiempo para limpiar y modernizar el proyecto existente antes de continuar, lo que incluye:
 
-1. [Migre packages.config `PackageReference` a ](/nuget/consume-packages/migrate-packages-config-to-package-reference).
+1. [Migre de packages.config `PackageReference` a ](/nuget/consume-packages/migrate-packages-config-to-package-reference).
 
-1. Reemplace cualquier referencia de ensamblado directo de VS SDK por elementos PackageReference.
+1. Reemplace cualquier referencia de ensamblado directo del SDK de VS por elementos PackageReference.
 
    ```diff
    -<Reference Include="Microsoft.VisualStudio.OLE.Interop" />
@@ -99,28 +99,28 @@ Antes de agregar compatibilidad Visual Studio 2022 a la extensión, se recomiend
    ```
 
    > [!TIP]
-   > Puede reemplazar muchas *referencias* de ensamblado por un *solo* PackageReference en nuestro metapaquete:
+   > Puede reemplazar muchas *referencias de* ensamblado por un *solo* PackageReference en nuestro metapaquete:
    >
    >```diff
    >-<Reference Include="Microsoft.VisualStudio.OLE.Interop" />
    >-<Reference Include="Microsoft.VisualStudio.Interop" />
    >-<Reference Include="Microsoft.VisualStudio.Interop.8.0" />
-   >+<PackageReference Include="Microsoft.VisualStudio.Sdk" >Version="..." />
+   >+<PackageReference Include="Microsoft.VisualStudio.Sdk" Version="..." />
    >```
 
-   Asegúrese de elegir las versiones de paquete que coincidan con la versión mínima de Visual Studio de destino.
+   Asegúrese de seleccionar las versiones de paquete que coincidan con la versión mínima de Visual Studio de destino.
 
-   Es posible que algunos ensamblados que no son únicos del SDK de VS (por ejemplo, Newtonsoft.Json.dll) se hayan podido detectar mediante una referencia simple antes de Visual Studio 2022, pero en Visual Studio 2022 requiere una referencia de paquete en su lugar porque en Visual Studio 2022, quitamos algunos directorios de entorno de ejecución y SDK de Visual Studio de la ruta de búsqueda de ensamblados predeterminada de `<Reference Include="Newtonsoft.Json" />` MSBuild.
+   Es posible que algunos ensamblados que no son exclusivos del SDK de VS (por ejemplo, Newtonsoft.Json.dll) se hayan podido detectar a través de una referencia simple antes de Visual Studio 2022, pero en Visual Studio 2022 requiere una referencia de paquete porque, en Visual Studio 2022, quitamos algunos directorios de runtime y SDK de Visual Studio de la ruta de búsqueda de ensamblados predeterminada de `<Reference Include="Newtonsoft.Json" />` MSBuild.
 
-   Al cambiar de referencias de ensamblado directas a referencias de paquetes NuGet, puede elegir referencias de ensamblado adicionales y paquetes del analizador debido a que NuGet instala automáticamente el cierre transitivo de dependencias. Esto suele ser correcto, pero puede dar lugar a advertencias adicionales que se marcan durante la compilación. Solucione estas advertencias y resuelva tantas como pueda, y considere la posibilidad de suprimir esas advertencias que no puede resolver mediante `#pragma warning disable <id>` regiones en código.
+   Al cambiar de referencias de ensamblado directo a referencias de paquetes NuGet, puede seleccionar referencias de ensamblado adicionales y paquetes del analizador debido a que NuGet instala automáticamente el cierre transitivo de las dependencias. Por lo general, esto es correcto, pero puede dar lugar a advertencias adicionales que se marcan durante la compilación. Solucione estas advertencias y resuelva tantas como sea posible, y considere la posibilidad de suprimir esas advertencias que no puede resolver mediante `#pragma warning disable <id>` regiones en código.
 
 ## <a name="use-shared-projects-for-multi-targeting"></a>Uso de proyectos compartidos para la compatibilidad con múltiples destinos
 
-[Los proyectos](/xamarin/cross-platform/app-fundamentals/shared-projects?tabs=windows) compartidos son un tipo de proyecto que se introdujo en Visual Studio 2015. Los proyectos compartidos Visual Studio permitir que los archivos de código fuente se compartan entre varios proyectos y se compilen de forma diferente mediante símbolos de compilación condicional y conjuntos únicos de referencias.
+[Los proyectos](/xamarin/cross-platform/app-fundamentals/shared-projects?tabs=windows) compartidos son un tipo de proyecto que se introdujo en Visual Studio 2015. Los proyectos compartidos de Visual Studio permiten que los archivos de código fuente se compartan entre varios proyectos y se compilen de forma diferente mediante símbolos de compilación condicional y conjuntos únicos de referencias.
 
-Dado que Visual Studio 2022 requiere un conjunto distinto de ensamblados de referencia de todas las versiones anteriores de VS, nuestra guía es usar proyectos compartidos para tener una extensión adecuadamente de varios destinos a versiones anteriores a Visual Studio 2022 y Visual Studio 2022 (y versiones posteriores), lo que proporciona uso compartido de código, pero referencias distintas.
+Dado que Visual Studio 2022 requiere un conjunto distinto de ensamblados de referencia de todas las versiones anteriores de VS, nuestra guía es usar proyectos compartidos para tener como destino de forma cómoda la extensión en versiones anteriores a Visual Studio 2022 y Visual Studio 2022 (y versiones posteriores), lo que proporciona uso compartido de código, pero referencias distintas.
 
-En el contexto de Visual Studio, podría tener un proyecto VSIX para Visual Studio 2022 y versiones posteriores y un proyecto VSIX para Visual Studio 2019 y versiones anteriores. Cada uno de estos proyectos contendrá solo un y las referencias de paquete al `source.extension.vsixmanifest` SDK 16.x o al SDK 17.x. Estos proyectos VSIX también tendrían una referencia de proyecto compartido a un nuevo proyecto compartido que hospedará todo el código fuente que se puede compartir entre las dos versiones de VS.
+En el contexto de Visual Studio, podría tener un proyecto VSIX para Visual Studio 2022 y versiones posteriores y un proyecto VSIX para Visual Studio 2019 y versiones anteriores. Cada uno de estos proyectos contendrá solo un y las referencias del paquete al `source.extension.vsixmanifest` SDK 16.x o al SDK 17.x. Estos proyectos VSIX también tendrían una referencia de proyecto compartido a un nuevo proyecto compartido que hospedará todo el código fuente que se puede compartir entre las dos versiones de VS.
 
 Como punto de partida, para este documento se supone que ya tiene un proyecto VSIX que tiene como destino Visual Studio 2019 y que quiere que la extensión funcione en Visual Studio 2022.
 
@@ -129,7 +129,7 @@ Todos estos pasos se pueden completar con Visual Studio 2019.
 1. Si aún no lo ha hecho, [modernice](#modernize-your-vsix-project) los proyectos para facilitar los pasos más adelante en este proceso de actualización.
 
 1. Agregue un nuevo proyecto compartido a la solución para cada proyecto existente que haga referencia al SDK de VS.
-   ![Agregar nuevo proyecto comando Nueva ](media/update-visual-studio-extension/add-new-project.png)
+   ![Comando Agregar nuevo proyecto Nueva ](media/update-visual-studio-extension/add-new-project.png)
     ![ plantilla de proyecto](media/update-visual-studio-extension/new-shared-project-template.png)
 
 1. Agregue una referencia de cada proyecto de referencia de VS SDK a su homólogo de proyecto compartido.
@@ -141,11 +141,11 @@ Deje el `source.extension.vsixmanifest` archivo en el proyecto VSIX.
 
 1. Los archivos de metadatos (notas de la versión, licencia, iconos, entre otros) y los archivos VSCT deben moverse a un directorio compartido y agregarse como archivos vinculados al proyecto VSIX.
    ![Agregar metadatos y archivos VSCT como archivos vinculados](media/update-visual-studio-extension/add-linked-items-to-vsix.png)
-    - Para los archivos de metadatos, establezca BuildAction en `Content` y establezca Incluir en VSIX en `true` .
+    - En Archivos de metadatos, establezca BuildAction en `Content` y establezca Incluir en VSIX en `true` .
 
       ![Incluir archivos de metadatos en VSIX](./media/update-visual-studio-extension/include-metadata-files-in-vsix.png)
     - En el caso de los archivos VSCT, establezca BuildAction en `VSCTCompile` y no incluya en VSIX.
-      Visual Studio que se quejan de que esta configuración no se admite, pero puede cambiar manualmente la acción de compilación descargando el proyecto y cambiando `Content` a `VSCTCompile`
+      Visual Studio que se queje de que esta configuración no se admite, pero puede cambiar manualmente la acción de compilación descargando el proyecto y cambiando `Content` a `VSCTCompile`
 
     ```diff
     -<Content Include="..\SharedFiles\VSIXProject1Package.vsct">
@@ -165,11 +165,11 @@ El proyecto ya está listo para agregar compatibilidad Visual Studio 2022.
 
 ## <a name="add-a-visual-studio-2022-target"></a>Agregar un destino Visual Studio 2022
 
-En este documento se da por supuesto que ha completado los pasos para factorización de la [Visual Studio con proyectos compartidos.](#use-shared-projects-for-multi-targeting)
+En este documento se da por supuesto que ha completado los pasos para factorización de [la extensión Visual Studio con proyectos compartidos.](#use-shared-projects-for-multi-targeting)
 
-Continúe para agregar Visual Studio compatibilidad con 2022 a la extensión con estos pasos, que se pueden completar mediante Visual Studio 2019:
+Continúe para agregar Visual Studio 2022 a la extensión con estos pasos, que pueden completarse con Visual Studio 2019:
 
-1. Agregue un nuevo proyecto VSIX a la solución. Este será el proyecto que tiene como destino Visual Studio 2022. Quite cualquier código fuente que se produjese con la plantilla, pero *mantenga el `source.extension.vsixmanifest` archivo*.
+1. Agregue un nuevo proyecto VSIX a la solución. Este será el proyecto que tenga como destino Visual Studio 2022. Quite cualquier código fuente que se produjese con la plantilla, pero *mantenga el `source.extension.vsixmanifest` archivo*.
 
 1. En el nuevo proyecto VSIX, agregue una referencia de proyecto compartido al mismo proyecto compartido al que hace referencia Visual Studio VSIX de destino de 2019.
 
@@ -177,7 +177,7 @@ Continúe para agregar Visual Studio compatibilidad con 2022 a la extensión con
 
 1. Compruebe que el nuevo proyecto VSIX se compila correctamente. Es posible que tenga que agregar referencias para que coincidan con el proyecto VSIX original para resolver los errores del compilador.
 
-1. En el caso de las extensiones de VS administradas, actualice las referencias de paquete de la versión 16.x (o anterior) a las versiones del paquete 17.x del archivo de proyecto de destino de Visual Studio 2022 mediante el Administrador de paquetes de NuGet o editando directamente el archivo de proyecto:
+1. En el caso de las extensiones de VS administradas, actualice las referencias de paquete de la versión 16.x (o anterior) a las versiones de paquete 17.x del archivo de proyecto de destino de Visual Studio 2022 mediante el Administrador de paquetes de NuGet o editando directamente el archivo de proyecto:
 
     ```diff
     -<PackageReference Include="Microsoft.VisualStudio.SDK" Version="16.0.206" />
@@ -188,11 +188,11 @@ Continúe para agregar Visual Studio compatibilidad con 2022 a la extensión con
 
    Usará versiones que están disponibles realmente en nuget.org. Los usados anteriormente son solo con fines de demostración.
 
-   En muchos casos, los IDs de paquete han cambiado. Consulte la tabla [de asignación de paquetes](migrated-assemblies.md) o ensamblados para obtener una lista de los cambios Visual Studio 2022.
+   En muchos casos, los ID de paquete han cambiado. Consulte la tabla [de asignación de](migrated-assemblies.md) paquetes o ensamblados para obtener una lista de los cambios Visual Studio 2022.
 
    Las extensiones escritas en C++ aún no tienen un SDK disponible con el que compilar.
 
-1. Para los proyectos de C++, deben compilarse para amd64. En el caso de las extensiones administradas, considere la posibilidad de cambiar el proyecto de compilar para cualquier CPU a tener como destino , para reflejar que en Visual Studio 2022 la extensión siempre se carga en un proceso de `x64` 64 bits. `Any CPU` también está bien, pero puede generar advertencias si hace referencia a archivos binarios nativos solo x64.
+1. Para los proyectos de C++, deben compilarse para amd64. En el caso de las extensiones administradas, considere la posibilidad de cambiar el proyecto de compilar para Cualquier CPU a tener como destino , para reflejar que en Visual Studio 2022 la extensión siempre se carga en un proceso de `x64` 64 bits. `Any CPU` también está bien, pero puede generar advertencias si hace referencia a archivos binarios nativos solo x64.
 
    Cualquier dependencia que pueda tener la extensión en un módulo nativo tendrá que actualizarse de una imagen x86 a una imagen amd64.
 
@@ -204,7 +204,7 @@ Continúe para agregar Visual Studio compatibilidad con 2022 a la extensión con
    </InstallationTarget>
    ```
 
-   En Visual Studio 2019, el diseñador de este archivo no expone el nuevo elemento, por lo que este cambio tendrá que realizarse con un editor xml, al que puede acceder a través del comando Abrir con `ProductArchitecture` **en Explorador de soluciones**. 
+   En Visual Studio 2019, el diseñador de este archivo no expone el nuevo elemento, por lo que este cambio deberá realizarse con un editor xml, al que puede acceder a través del comando Abrir con `ProductArchitecture` **en Explorador de soluciones**. 
 
    Este `ProductArchitecture` elemento es crítico. Visual Studio 2022 no *instalará* la extensión sin ella.
 

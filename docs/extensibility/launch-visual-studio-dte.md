@@ -10,16 +10,16 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 253c7f106f1d139f694fea3d469385f200c84029
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: b3f5aa141d73879e61a06e7a2b19f03bd53243a7
+ms.sourcegitcommit: 0499d813d5c24052c970ca15373d556a69507250
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112903117"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "113046032"
 ---
 # <a name="launch-visual-studio-using-dte"></a>Inicio de Visual Studio con DTE
 
-A partir Visual Studio 2017, el mecanismo para iniciar Visual Studio mediante DTE es diferente al inicio de versiones anteriores de Visual Studio. Este cambio es necesario porque Visual Studio 2017 y versiones posteriores admiten instalaciones en paralelo de versiones principales (por ejemplo, puede tener una versión preliminar y una versión de lanzamiento instaladas en paralelo).
+A partir de Visual Studio 2017, el mecanismo para iniciar Visual Studio mediante DTE es diferente al inicio de versiones anteriores de Visual Studio. Este cambio es necesario porque Visual Studio 2017 y versiones posteriores admiten instalaciones en paralelo de versiones principales (por ejemplo, puede tener una versión preliminar y una versión de lanzamiento instaladas en paralelo).
 
 En el resto de este artículo se muestra el código que puede usar para iniciar Visual Studio 2019 mediante DTE.
 
@@ -29,7 +29,7 @@ Para ver el código de inicio en acción, cree un proyecto siguiendo estos pasos
 
 1. Cree un nuevo **proyecto de aplicación de** consola para el .NET Framework.
 
-2. Instale la [Microsoft.VisualStudio.Setup.Configde datos. Paquete](https://www.nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop/) NuGet de interoperabilidad y agregue una referencia al ensamblado.
+2. Instale la [Microsoft.VisualStudio.Setup.Configde instalación. Interoperabilidad](https://www.nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop/) del paquete NuGet y agregue una referencia al ensamblado.
 
 3. Agregue una referencia a EnvDTE.
 
@@ -158,10 +158,7 @@ namespace ConsoleLauncherApp
             {
                 ISetupInstance[] setupInstances = new ISetupInstance[1];
                 enumerator.Next(1, setupInstances, out count);
-                if (count == 1 &&
-                    setupInstances != null &&
-                    setupInstances.Length == 1 &&
-                    setupInstances[0] != null)
+                if (count == 1 && setupInstances[0] != null)
                 {
                     yield return setupInstances[0];
                 }
@@ -179,15 +176,12 @@ namespace ConsoleLauncherApp
         {
             [DllImport("ole32.dll")]
             public static extern int CreateBindCtx(uint reserved, out IBindCtx ppbc);
-
-            [DllImport("ole32.dll")]
-            public static extern void GetRunningObjectTable(int reserved, out IRunningObjectTable prot);
         }
     }
 }
 ```
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Consulte también
 
 - [Localización de Visual Studio](locating-visual-studio.md)
 - [Tutorial: Acceso al objeto DTE desde una extensión del editor](walkthrough-accessing-the-dte-object-from-an-editor-extension.md)
