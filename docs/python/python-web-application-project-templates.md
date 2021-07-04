@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a309ba898c22836fb5c0cebfc390b6c8d7c116c5
-ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
+ms.openlocfilehash: 6553017034dc46cfd1c035564a83dde89d77d057
+ms.sourcegitcommit: 4908561809ad397c99cf204f52d5e779512e502c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104805996"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112254854"
 ---
 # <a name="python-web-application-project-templates"></a>Plantillas de proyecto de aplicación web para Python
 
@@ -31,7 +31,17 @@ Para crear un proyecto a partir de una plantilla, seleccione **Archivo** > **Nue
 
 ![Cuadro de diálogo Nuevo proyecto para aplicaciones web](media/projects-new-project-dialog-web.png)
 
+::: moniker range="<=vs-2017"
+
 La plantilla genérica **Proyecto web**, que se ha mencionado anteriormente, solo ofrece un proyecto vacío de Visual Studio sin código ni supuestos, aparte de que se trata de un proyecto de Python. Para obtener detalles sobre la plantilla **Servicio en la nube de Azure**, vea [Azure cloud service projects for Python](python-azure-cloud-service-project-template.md) (Proyectos de servicio en la nube para Python).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+La plantilla genérica **Proyecto web**, que se ha mencionado anteriormente, solo ofrece un proyecto vacío de Visual Studio sin código ni supuestos, aparte de que se trata de un proyecto de Python.
+
+::: moniker-end
 
 Todas las demás plantillas se basan en los marcos web de Bottle, Flask o Django y se dividen en tres grupos generales, como se describe en las secciones siguientes. Las aplicaciones creadas con cualquiera de estas plantillas contienen código suficiente para ejecutar y depurar la aplicación en local. Cada una de ellas ofrece el [objeto de aplicación WSGI](https://www.python.org/dev/peps/pep-3333/) necesario (python.org) para el uso con servidores web de producción.
 
@@ -79,7 +89,11 @@ Si se usa control de código fuente, normalmente se omite la carpeta del entorno
 
 Cuando implemente Microsoft Azure App Service, seleccione una versión de Python como una [extensión del sitio](./managing-python-on-azure-app-service.md?view=vs-2019&preserve-view=true) e instale los paquetes manualmente. Además, dado que Azure App Service **no** instala automáticamente los paquetes de un archivo *requirements.txt* cuando se implementa desde Visual Studio, siga los detalles de configuración de [aka.ms/PythonOnAppService](managing-python-on-azure-app-service.md).
 
+::: moniker range="<=vs-2017"
+
 Microsoft Azure Cloud Services *admite* el archivo *requirements.txt*. Vea los [proyectos del servicio en la nube de Azure](python-azure-cloud-service-project-template.md) para obtener detalles.
+
+::: moniker-end
 
 ## <a name="debugging"></a>Depuración
 
@@ -141,11 +155,15 @@ Las aplicaciones de Pyramid actualmente se crean mejor mediante la herramienta d
 
 Si tiene una configuración para otro marco que quiere compartir, o si quiere solicitar la configuración para otro marco, abra un [problema en GitHub](https://github.com/Microsoft/PTVS/issues).
 
+::: moniker range="<=vs-2017"
+
 ## <a name="convert-a-project-to-azure-cloud-service"></a>Convertir en un proyecto de servicio en la nube de Azure
 
 El comando **Convertir en un proyecto de servicio en la nube de Microsoft Azure** (imagen siguiente) agrega un proyecto de servicio en la nube a la solución. Este proyecto incluye la configuración de implementación y la configuración para las máquinas virtuales y los servicios que se van a usar. Use el comando **Publicar** en el proyecto de nube para implementar en Cloud Services; con el comando **Publicar** del proyecto de Python se sigue implementando en sitios web. Para obtener más información, vea [Proyectos de servicio en la nube de Azure para Python](python-azure-cloud-service-project-template.md).
 
 ![Comando Convertir en un proyecto de servicio en la nube de Microsoft Azure](media/template-web-convert-menu.png)
+
+::: moniker-end
 
 ## <a name="see-also"></a>Vea también
 

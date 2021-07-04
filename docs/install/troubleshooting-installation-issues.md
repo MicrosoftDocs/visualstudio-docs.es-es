@@ -2,7 +2,7 @@
 title: Solución de problemas de instalación o actualización
 description: En ocasiones, algo no sale según lo previsto. Si se produce un error en la actualización o instalación de Visual Studio, esta página puede ayudarle.
 ms.date: 06/24/2020
-ms.custom: seodec18
+ms.custom: vs-acquisition
 ms.topic: troubleshooting
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: dc6d01d213e3966e364516c4a432dfdd978275c0
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 802e4cfb78a9302bd24bca55cda1bf9eab79f9ef
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107295980"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387832"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Solución de problemas de instalación y actualización de Visual Studio
 
@@ -41,7 +41,7 @@ Existen algunos problemas conocidos con el instalador de Visual Studio en los qu
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 Existen algunos problemas conocidos con el instalador de Visual Studio en los que está trabajando Microsoft para intentar resolverlos. Para ver si hay una solución para el problema, vea la [sección de problemas conocidos de nuestras notas de la versión](/visualstudio/releases/2019/release-notes#-known-issues).
 
@@ -71,7 +71,7 @@ El programa previo del instalador de Visual Studio es un ejecutable mínimo de p
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. Cierre el instalador de Visual Studio.
 2. Elimine el directorio del instalador de Visual Studio. Normalmente, el directorio es `C:\Program Files (x86)\Microsoft Visual Studio\Installer`.
@@ -94,7 +94,7 @@ En algunas situaciones, como las relacionadas con los archivos dañados, los pro
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. Recopile sus registros de configuración. Vea [Cómo obtener los registros de instalación de Visual Studio](#installation-logs) para más información.
 2. Abra el instalador de Visual Studio y luego haga clic en **Notificar un problema** para abrir la herramienta de comentarios de Visual Studio.

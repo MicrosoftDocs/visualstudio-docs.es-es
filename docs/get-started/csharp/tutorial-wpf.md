@@ -1,7 +1,7 @@
 ---
 title: Aplicación Hola mundo con WPF en C#
 description: Cree una aplicación sencilla de .NET de escritorio de Windows en C# con Visual Studio mediante el marco de interfaz de usuario de Windows Presentation Foundation (WPF).
-ms.custom: seodec18, get-started
+ms.custom: vs-acquisition, get-started
 ms.date: 02/10/2021
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
@@ -14,12 +14,12 @@ ms.author: jmartens
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 419fa05ae510f3dc22ce82c3805f9f54b4e53b27
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 268797369fbd878d99028303fa17ba71626a07fb
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107295577"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390273"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Tutorial: Crear una aplicación sencilla con C\#
 
@@ -72,9 +72,9 @@ Cuando cree una aplicación en Visual Studio, primero creará un proyecto y una 
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
-1. Abra Visual Studio 2019.
+1. Abra Visual Studio.
 
 1. En la ventana de inicio, elija **Crear proyecto**.
 

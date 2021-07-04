@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f34ee9e852c1210425407f80788aa1b9d5c33c1e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 21115673a41e26b2f1685442d2ed0ad93a147990
+ms.sourcegitcommit: 4908561809ad397c99cf204f52d5e779512e502c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912280"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112254893"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Uso de la ventana interactiva de Python
 
@@ -73,6 +73,8 @@ La excepción se produce cuando se necesitan líneas de código adicionales para
 
 <a name="meta-commands"></a> La ventana **interactiva** también admite varios metacomandos. Todos los metacomandos empiezan con `$`, y puede escribir `$help` para obtener una lista de los metacomandos y `$help <command>` para obtener los detalles de uso de un comando específico.
 
+:::moniker range="<=vs-2017"
+
 | Metacomando | Descripción |
 | --- | --- |
 | `$$` | Inserta un comentario, lo que resulta útil para comentar el código a lo largo de la sesión. |
@@ -83,6 +85,22 @@ La excepción se produce cuando se necesitan líneas de código adicionales para
 | `$mod` | Cambia el ámbito actual al nombre del módulo especificado. |
 | `$reset` | Restablece el entorno de ejecución al estado inicial, pero mantiene el historial. |
 | `$wait` | Espera al menos el número de milisegundos especificado. |
+
+:::moniker-end
+
+:::moniker range=">=vs-2019"
+
+| Metacomando | Descripción |
+| --- | --- |
+| `$$` | Inserta un comentario, lo que resulta útil para comentar el código a lo largo de la sesión. |
+| `$cls`, `$clear` | Borra el contenido de la ventana del editor, pero deja intactos el historial y el contexto de ejecución. |
+| `$help` | Muestra una lista de comandos o ayuda sobre un comando específico. |
+| `$load` | Carga los comandos del archivo y los ejecuta hasta que terminan. |
+| `$mod` | Cambia el ámbito actual al nombre del módulo especificado. |
+| `$reset` | Restablece el entorno de ejecución al estado inicial, pero mantiene el historial. |
+| `$wait` | Espera al menos el número de milisegundos especificado. |
+
+:::moniker-end
 
 Los comandos también se extienden mediante extensiones de Visual Studio con la implementación y exportación de `IInteractiveWindowCommand` ([ejemplo](https://github.com/Microsoft/PTVS/blob/master/Python/Product/PythonTools/PythonTools/Repl/InteractiveWindowCommands.cs#L85)).
 

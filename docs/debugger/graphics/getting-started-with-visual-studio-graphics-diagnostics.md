@@ -1,7 +1,7 @@
 ---
 title: Introducción a Diagnóstico de gráficos de Visual Studio | Microsoft Docs
 description: Prepárese para usar Diagnóstico de gráficos por primera vez y, después, capture fotogramas de una aplicación de Direct3D y examínelos en el Analizador de gráficos.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 06/08/2020
 ms.topic: how-to
 author: mikejo5000
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d1559854c1b293c33c16cfab6e638a33908c2eb8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 70512b4df3be7f11973af244c336b22c59c90f8f
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881300"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387611"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Introducción al Diagnóstico de gráficos de Visual Studio
 En esta sección se explicará cómo usar el diagnóstico de gráficos por primera vez, se capturarán fotogramas en una aplicación de Direct3D y se examinarán esos fotogramas en el Analizador de gráficos.

@@ -1,7 +1,7 @@
 ---
 title: Depuración de una infracción de acceso de C++ | Microsoft Docs
 description: Vea sugerencias para solucionar problemas de infracciones de acceso cuando hay más de un puntero como candidatos. En las versiones recientes de Visual Studio, se nombra el puntero incorrecto.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 02/05/2019
 ms.topic: how-to
 f1_keywords:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9f7e33ff34357dc0aa258f179f55d379bdf05636
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3689942c9db9fde3598590cf30100fc590c50753
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904315"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387039"
 ---
 # <a name="how-can-i-debug-a-c-access-violation"></a>Cómo depurar una infracción de acceso de C++
 

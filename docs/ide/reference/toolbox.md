@@ -6,7 +6,6 @@ ms.date: 06/01/2020
 ms.topic: reference
 f1_keywords:
 - vs.toolbox.general
-- vs.toolbox
 helpviewer_keywords:
 - Toolbox [Visual Studio]
 - custom controls [Visual Studio]
@@ -15,12 +14,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 52b7eeefd157e99fc5214f29c220d94fd6e19772
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0a4947562eb49501e60711111d8765716cbae5c6
+ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841904"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112925220"
 ---
 # <a name="toolbox"></a>Cuadro de herramientas
 
@@ -37,7 +36,7 @@ La ventana Cuadro de herramientas aparece junto con las vistas de diseñador, co
 
 La versión de .NET de destino del proyecto también afecta al conjunto de controles visible en el Cuadro de herramientas. Puede cambiar la versión del marco de destino desde las páginas de propiedades del proyecto, en caso necesario. Seleccione el modo del proyecto en el **Explorador de soluciones** y, luego, en la barra de menús, elija **Proyecto** > **Propiedades de proyecto**. En la pestaña **Aplicación**, use el menú desplegable **Plataforma de destino**.
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 ![Captura de pantalla del cuadro de diálogo Aplicación en el que se muestran las opciones de la lista desplegable Plataforma de destino.](media/vs-2019/toolbox-change-dotnet-version.png "Captura de pantalla del cuadro de diálogo donde puede cambiar la versión de .NET")
 

@@ -1,7 +1,7 @@
 ---
 title: Preparación para la depuración de aplicaciones Windows Forms | Microsoft Docs
 description: Siga los pasos de preparación para depurar aplicaciones de Windows Forms, las cuales se crean mediante la plantilla de proyecto de Windows Forms en Visual Studio.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a59e454238bf362aec20916c6d1f6ed2e4ff187f
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: c2181fe0b0189b0c0472f4d7cadd6a7c8e172a9b
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101684139"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387754"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>Preparación de la depuración: Aplicaciones de Windows Forms
 

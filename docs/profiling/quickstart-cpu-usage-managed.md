@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7fc8eeccdb020d07ff48965d9eb3d5df1dafa7da
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 056996782d2b38adb96ee53250cc3ea0c0f75596
+ms.sourcegitcommit: 01a411cd7ae3488b7b979a947bca92fd296a98e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683552"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111761165"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c-visual-basic"></a>Inicio rápido: Análisis de los datos de uso de CPU en Visual Studio (C#, Visual Basic)
 
@@ -38,7 +38,7 @@ Para ejecutar las herramientas de generación de perfiles con el depurador se re
 
    Si no ve la plantilla de proyecto **Aplicación de consola (.NET Core)** , elija en el vínculo **Abrir el instalador de Visual Studio** en el panel izquierdo del cuadro de diálogo **Nuevo proyecto**. Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo multiplataforma de .NET Core** y, después, elija **Modificar**.
    ::: moniker-end
-   ::: moniker range="vs-2019"
+   ::: moniker range=">=vs-2019"
    Si la ventana de inicio no está abierta, elija **Archivo** > **Ventana Inicio**.
 
    En la ventana de inicio, elija **Crear un proyecto nuevo**.

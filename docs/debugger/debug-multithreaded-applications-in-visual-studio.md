@@ -1,7 +1,7 @@
 ---
 title: Depuración de aplicaciones multiproceso | Microsoft Docs
 description: Depure aplicaciones multiproceso en Visual Studio. Revise las herramientas y otros artículos sobre la depuración de aplicaciones multiproceso.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/06/2018
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e7a133b4b59b11525a7f7ba776b3b4a4a1e6a31e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5551ffd39bfe3485d0b6e31def0b3cfff9c7e3b1
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873215"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389766"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Depurar aplicaciones multiproceso en Visual Studio
 Un subproceso es una secuencia de instrucciones a la que el sistema operativo concede tiempo de procesador. Cada proceso que se ejecuta en el sistema operativo contiene al menos un subproceso. Los procesos que tienen más de un subproceso se denominan multiproceso.

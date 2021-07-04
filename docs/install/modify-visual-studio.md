@@ -4,7 +4,7 @@ titleSuffix: ''
 description: Obtenga información sobre cómo modificar Visual Studio, paso a paso.
 ms.date: 10/12/2020
 ms.topic: how-to
-ms.custom: contperf-fy21q2
+ms.custom: vs-acquisition
 helpviewer_keywords:
 - modify Visual Studio
 - change visual studio
@@ -18,16 +18,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 30b28af562e5dbaa8c05624f6cc9d531cf652419
-ms.sourcegitcommit: 8d3d51042261df603487169a7a008fe8f71404ec
+ms.openlocfilehash: 435ee6ad72141453e89aadcfd4ac3310bde0d538
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "109501777"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112391080"
 ---
 # <a name="modify-visual-studio-workloads-components-and-language-packs"></a>Modificación de cargas de trabajo, componentes y paquetes de idioma de Visual Studio
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 Es fácil modificar Visual Studio para que incluya solo aquello que quiera y en el momento que quiera. Para ello, abra el Instalador de Visual Studio para agregar o quitar componentes y cargas de trabajo.
 
@@ -71,7 +71,7 @@ Para realizar modificaciones en la instalación, debe iniciar el programa de ins
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. Busque el **instalador de Visual Studio** en su equipo.
 
@@ -119,12 +119,11 @@ Para realizar modificaciones en la instalación, debe iniciar el programa de ins
 
 1. Si lo desea, elija la pestaña **Cargas de trabajo** y, a continuación, seleccione o anule la selección de las cargas de trabajo que desee.
 
-
 1. Cuando se hayan instalado las nuevas cargas de trabajo, elija **Iniciar** en el Instalador de Visual Studio para abrir Visual Studio.
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
  Las cargas de trabajo contienen las características que necesita para el lenguaje de programación o la plataforma que está usando. Use cargas de trabajo para modificar Visual Studio de manera que admita el trabajo que quiere realizar, cuando quiera.
 
@@ -147,7 +146,6 @@ Para realizar modificaciones en la instalación, debe iniciar el programa de ins
 
 ::: moniker-end
 
-
 >[!TIP]
 > Para más información sobre SQL Server Data Tools (SSDT), vea [Descarga e instalación de SQL Server Data Tools (SSDT) para Visual Studio](/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver15&preserve-view=true).
 
@@ -156,9 +154,10 @@ Para realizar modificaciones en la instalación, debe iniciar el programa de ins
 De manera predeterminada, el programa instalador hace coincidir el idioma del sistema operativo cuando se ejecuta por primera vez. Sin embargo, puede cambiar el idioma siempre que lo desee. 
 
 Para ello:
+
 1. Elija la pestaña **Paquetes de idioma** en el instalador de Visual Studio.
-2. Seleccione el idioma que prefiera.
-3. Siga las instrucciones.
+1. Seleccione el idioma que prefiera.
+1. Siga las instrucciones.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
