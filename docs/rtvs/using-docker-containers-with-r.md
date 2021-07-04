@@ -9,20 +9,20 @@ ms.reviewer: karthiknadig
 manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 01048bc9b21287eb62693096b34a1ea8305e0ee9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3aefba3880443269dbdb1c933e2c12b2f8001469
+ms.sourcegitcommit: fc05a763b59e212c86350d117a1900a1f2686ec8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851873"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "111551285"
 ---
 # <a name="use-docker-containers-with-r-tools-for-visual-studio"></a>Usar contenedores de Docker con Herramientas de R para Visual Studio
 
 Las herramientas de R para Visual Studio (RTVS) versión 1.3 y superiores, junto con una instalación de [Docker para Windows](https://www.docker.com/docker-windows), permiten trabajar con contenedores de Docker.
 
-## <a name="create-a-container"></a>Crear un contenedor
+## <a name="create-a-container"></a>Creación de un contenedor
 
-1. Haga clic en el botón **Contenedores** en la esquina derecha de la ventana **Áreas de trabajo** (**Herramientas de R** > **Ventanas** > **Áreas de trabajo**). La ventana le informa si no tiene instalado Docker para Windows y proporciona un vínculo para la descarga. La instalación de Docker puede requerir el reinicio del equipo.
+1. Haga clic en el botón **Contenedores** en la esquina derecha de la ventana **Áreas de trabajo** (**Herramientas de R** > **Ventanas** > **Áreas de trabajo**). La ventana le informa si no tiene instalado Docker para Windows y proporciona un vínculo para la descarga. La instalación de Docker puede requerir reiniciar el equipo.
 
     ![Ventana Áreas de trabajo de Herramientas de R para Visual Studio (VS2017) con el comando Contenedores](media/container-workspaces-window.png)
 
@@ -53,7 +53,7 @@ Las herramientas de R para Visual Studio (RTVS) versión 1.3 y superiores, junto
 RTVS detecta y permite administrar contenedores creados con imágenes personalizadas, como la imagen de microsoft/rtvs que se describe en el archivo de Docker siguiente. La imagen base que se usa aquí tiene preinstalado el demonio de RTVS, R 3.4.2 y paquetes de R habituales. **Nota**: Cambie el nombre de usuario y la contraseña que se muestran aquí según sea necesario.
 
 ```docker
-FROM microsoft/rtvs:1.3-ub1604-r3.4.2
+FROM mcr.microsoft.com/rtvs:1.3-ub1604-r3.4.2
 RUN useradd --create-home ruser1
 RUN echo "ruser1:foobar" | chpasswd
 

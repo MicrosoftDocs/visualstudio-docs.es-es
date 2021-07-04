@@ -3,10 +3,10 @@ title: Identificadores de cargas de trabajo y componentes de Visual Studio
 titleSuffix: ''
 description: Utilice la carga de trabajo y los identificadores de componente para instalar Visual Studio mediante la línea de comandos o especificarlo como una dependencia en un manifiesto VSIX.
 keywords: ''
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
-ms.date: 3/2/2020
+ms.date: 05/25/2021
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -17,12 +17,12 @@ ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: be97c0c56395a9fe87633ccf48f0382b15fae560
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: eeb2ee162a87b066c853d89e6920dce23a5370e0
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683682"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306597"
 ---
 # <a name="visual-studio-workload-and-component-ids"></a>Identificadores de cargas de trabajo y componentes de Visual Studio
 
@@ -49,7 +49,7 @@ Para obtener más información sobre cómo usar estos identificadores, vea [Uso 
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 **Actualizado para la [versión 16.8](/visualstudio/releases/2019/release-notes/)**
 

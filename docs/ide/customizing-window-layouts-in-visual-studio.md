@@ -25,12 +25,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bd8859b98e54aa9692beaa98dd0f2c2ca70e2796
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: be11db364d0505833e722d3db308b41a18ccbb9d
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101682580"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308134"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Personalizar los diseños de ventana de Visual Studio
 
@@ -56,7 +56,7 @@ Puede usar pestañas para organizar el diseño de varias maneras diferentes. Por
 
 En la pestaña **Vista previa**, puede ver los archivos en el editor sin abrirlos. Puede obtener una vista previa de los archivos eligiéndolos en el **Explorador de soluciones**, al depurar los archivos paso a paso por instrucciones, con **Ir a definición** y cuando se desplaza por los resultados de la búsqueda. La vista previa de los archivos aparece en una ficha en el lado derecho de la ficha de documento. El archivo se abre para su edición si lo modifica o elige la opción **Abrir**.
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 #### <a name="vertical-document-tabs"></a>Pestañas de documentos verticales
 
@@ -169,7 +169,7 @@ Primero, vamos a crear una solución de prueba que tiene dos proyectos, cada uno
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. Cree un proyecto **Aplicación WPF** de C#. Imagine que, en este proyecto, va a desarrollar una interfaz de usuario. Desea maximizar el espacio de la ventana del diseñador y quitar otras ventanas de herramientas de la vista.
 

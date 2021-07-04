@@ -5,24 +5,24 @@ ms.date: 07/17/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: ''
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 2c8510a1ba83243d2d92b538d80876a8b0f20079
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 03a192657a46c2db15cb2d1121735905f06da478
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935666"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306675"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>Actualización de Visual Studio mientras se encuentra en una base de referencia de mantenimiento
 
-A lo largo de su ciclo de vida, Visual Studio se actualiza con frecuencia. Hay dos tipos de actualizaciones: 
+A lo largo de su ciclo de vida, Visual Studio se actualiza con frecuencia. Hay dos tipos de actualizaciones:
 
 * **Actualizaciones de versión secundaria**, por ejemplo, de 16.0 a 16.1, que incluyen nuevas características y componentes.  
 * **Actualizaciones de mantenimiento**, por ejemplo, de 16.0.4 a 16.0.5, que incluyen solo correcciones para problemas críticos.
@@ -49,9 +49,9 @@ Los administradores que usen una instalación de diseño en red deben modificar 
 
 ### <a name="install-a-servicing-baseline-via-the-internet"></a>Instalación de una línea de base de mantenimiento en Internet
 
-En el caso de una instalación basada en Internet, agregue `--channelUri` con un manifiesto de canal inexistente en la línea de comandos utilizada para iniciar el programa de instalación. De este modo, Visual Studio no usa la versión más reciente disponible de una actualización. Por ejemplo:
+En el caso de una instalación basada en Internet, agregue `--channelUri` con un manifiesto de canal inexistente en la línea de comandos utilizada para iniciar el programa de instalación. De este modo, Visual Studio no usa la versión más reciente disponible de una actualización. Este es un ejemplo:
 
-```cmd
+```shell
 vs_enterprise.exe --channelUri c:\doesnotexist.chman
 ```
 
@@ -69,15 +69,27 @@ En el caso de una instalación basada en Internet, ejecute el nuevo programa pre
 
 1. Actualice el instalador de Visual Studio:
 
-    ```cmd
+    ```shell
     vs_enterprise.exe --quiet --update
     ```
 
+::: moniker range="vs-2019"
+ 
 2. Actualice la propia aplicación de Visual Studio:
-
-    ```cmd
+    ```shell
     vs_enterprise.exe update --installPath "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise" --quiet --wait --norestart --channelUri c:\doesnotexist.chman
     ```
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+2. Actualice la propia aplicación de Visual Studio:
+    ```shell
+    vs_enterprise.exe update --installPath "C:\Program Files\Microsoft Visual Studio\2022\Enterprise" --quiet --wait --norestart --channelUri c:\doesnotexist.chman
+    ```
+
+::: moniker-end
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

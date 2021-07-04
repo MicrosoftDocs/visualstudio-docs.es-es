@@ -18,12 +18,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4686a6459f62fceeebe202cf52d7c30cf99f6fc3
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: a1a3aa2ace6279211c27847b8b9cc46d71b0d9ad
+ms.sourcegitcommit: 690bfc20744e4b543ee81030a60c8fc6d0d6610f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221254"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "113038608"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Identificar y personalizar métodos abreviados de teclado en Visual Studio
 
@@ -35,7 +35,7 @@ Puede identificar los métodos abreviados de teclado de los comandos de Visual S
 
 - El contexto en el que se encuentra al elegir el método abreviado. Por ejemplo, el método abreviado **F2** invoca el comando `Edit.EditCell` si usa el **Diseñador de configuración** y el comando `File.Rename` si usa **Team Explorer**.
 
-Independientemente de la configuración, la personalización y el contexto, siempre puede buscar y cambiar un método abreviado de teclado en el cuadro de diálogo **Opciones**. También puede buscar los métodos abreviados de teclado predeterminados para varias decenas de comandos en [Métodos abreviados de teclado de uso frecuente](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md). Para obtener una lista completa de todos los métodos abreviados (según la configuración **Desarrollo general** configuración), consulte [Todos los métodos abreviados de teclado](../ide/default-keyboard-shortcuts-in-visual-studio.md).
+Independientemente de la configuración, la personalización y el contexto, siempre puede buscar y cambiar un método abreviado de teclado en el cuadro de diálogo **Opciones**. También puede buscar los métodos abreviados de teclado predeterminados para varias decenas de comandos en [Métodos abreviados de teclado de uso frecuente](../ide/default-keyboard-shortcuts-in-visual-studio.md#most-popular-keyboard-shortcuts). Para obtener una lista completa de todos los métodos abreviados (según la configuración **Desarrollo general** configuración), consulte [Todos los métodos abreviados de teclado](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
 Si un método abreviado se asigna a un comando en el contexto *Global* y no a otros contextos, el método abreviado invocará siempre ese comando. Pero se puede asignar un método abreviado a un comando en el contexto Global y otro comando distinto en un contexto específico. Si utiliza ese método abreviado en el contexto específico, el método abreviado invoca el comando del contexto concreto, no el del contexto Global.
 

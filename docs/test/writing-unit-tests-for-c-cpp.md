@@ -8,12 +8,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: d20bcdef769d8cd751230000b0e4d4319b10e46f
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: 877c9163d05f458ce45a46d6b3e6d14e354df591
+ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106217468"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "112042892"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Escribir pruebas unitarias para C/C++ en Visual Studio
 
@@ -51,7 +51,7 @@ Puede descargar las extensiones de los adaptadores Google Test y Boost.Test en V
 
 En las siguientes secciones se explican los pasos básicos que sirven para empezar a realizar pruebas unitarias de C++. La configuración básica es similar en las plataformas de Microsoft y Google Test. Boost.Test, por su parte, requiere que se cree un proyecto de prueba manualmente.
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 ### <a name="create-a-test-project-in-visual-studio-2019"></a>Creación de un proyecto de prueba en Visual Studio 2019
 

@@ -8,19 +8,19 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 9750A3F3-89C7-4A8F-BA75-B0B06BD772C2
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0d8441b0a4b8acba3f24f60d5ea8dc7030b79253
-ms.sourcegitcommit: 22789927ec8e877b7d2b67a555d6df97d84103e0
+ms.openlocfilehash: 6dc4137157e2fa5136a0b8c86c5cf72f284a9eb7
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105981295"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112307381"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Instalar los certificados necesarios para la instalación sin conexión de Visual Studio
 
@@ -42,7 +42,7 @@ Al crear un [diseño de red](../install/create-a-network-installation-of-visual-
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 Al crear un [diseño de red](../install/create-a-network-installation-of-visual-studio.md) o una [caché sin conexión local](../install/create-an-offline-installation-of-visual-studio.md), los certificados necesarios se descargan en la carpeta Certificados. Puede instalar manualmente los certificados si hace clic con el botón derecho en cada uno de los archivos de certificado, selecciona Instalar certificado y, por último, hace clic en los sucesivos pasos del asistente Administrador de certificados. Si se le solicita una contraseña, déjela en blanco.
 
@@ -60,7 +60,7 @@ Si está creando el script de la implementación de Visual Studio en un entorno 
 
 2. Cree un archivo por lotes con los siguientes comandos:
 
-   ```cmd
+   ```shell
    certmgr.exe -add [layout path]\certificates\manifestRootCertificate.cer -n "Microsoft Root Certificate Authority 2011" -s -r LocalMachine root
 
    certmgr.exe -add [layout path]\certificates\manifestCounterSignRootCertificate.cer -n "Microsoft Root Certificate Authority 2010" -s -r LocalMachine root
@@ -70,7 +70,7 @@ Si está creando el script de la implementación de Visual Studio en un entorno 
    
    Como alternativa, cree un archivo por lotes que utilice certutil.exe, distribuido con Windows, con los siguientes comandos:
    
-      ```cmd
+      ```shell
    certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestRootCertificate.cer"
 
    certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestCounterSignRootCertificate.cer"

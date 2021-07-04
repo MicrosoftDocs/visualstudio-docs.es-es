@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: a3ac2e91ed9166a2eb8bdc4a19f2143c4fc71640
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 09a33db9df8e1309792cd6a3722bb82333348d84
+ms.sourcegitcommit: 690bfc20744e4b543ee81030a60c8fc6d0d6610f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102161318"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "113038660"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Guía de productividad de Visual Studio para desarrolladores de C#
 
@@ -64,7 +64,7 @@ Estos son accesos directos populares de Visual Studio:
 > [!NOTE]
 > Algunas extensiones desenlazan los enlaces de teclado de Visual Studio predeterminados. Para usar los anteriores comandos, restaure los enlaces de teclado a los valores predeterminados de Visual Studio. Para ello, vaya a **Herramientas** > **Importar y exportar configuración** > **Restablecer todas las configuraciones** o **Herramientas** > **Opciones** > **Teclado** > **Restablecer**.
 
-Para más información sobre los comandos y métodos abreviados de teclado, consulte [Métodos abreviados de productividad](../ide/productivity-shortcuts.md) y [Métodos abreviados de teclado de uso frecuente](default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md).
+Para más información sobre los comandos y métodos abreviados de teclado, consulte [Métodos abreviados de productividad](../ide/productivity-shortcuts.md) y [Métodos abreviados de teclado de uso frecuente](default-keyboard-shortcuts-in-visual-studio.md).
 
 ## <a name="navigate-quickly-to-files-or-types"></a>Navegación rápida a archivos o tipos
 
@@ -152,7 +152,7 @@ Varios miembros de la comunidad han escrito extensiones gratuitas que agregan in
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 - [Roslynator](https://marketplace.visualstudio.com/items?itemName=josefpihrt.Roslynator2019)
 - [SonarLint para Visual Studio](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2019)

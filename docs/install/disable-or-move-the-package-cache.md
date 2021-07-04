@@ -11,19 +11,19 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 2429993A-3F0E-41C5-9562-FEA6AE994440
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: e328bf8420f9cc7cf207ede6b6447ed291b77745
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0584673880a56bbde0ef44ad14c24acca252c5a2
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949459"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112307484"
 ---
 # <a name="disable-or-move-the-package-cache"></a>Deshabilitación o traslado de la caché de paquetes
 
@@ -34,7 +34,7 @@ El instalador los descargará cuando sea necesario; así que si quiere guardar o
 
 Antes de instalar, modificar o reparar Visual Studio u otros productos con el nuevo instalador, puede iniciar el instalador pasándole el modificador `--nocache`.
 
-```cmd
+```shell
 "%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vs_installer.exe" --nocache
 ```
 
@@ -42,22 +42,22 @@ Cualquier operación que realice en cualquier producto quitará los paquetes exi
 
 Si desea volver a habilitar la caché, pase en su lugar `--cache`. Solo se almacenan en caché los paquetes necesarios, así que si tiene que restaurar todos los paquetes, debe reparar Visual Studio antes de desconectarse de la red.
 
-```cmd
+```shell
 "%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vs_installer.exe" repair --passive --norestart --cache
 ```
 
-También puede configurar la [directiva del Registro](set-defaults-for-enterprise-deployments.md) `KeepDownloadedPayloads` para deshabilitar la caché antes de instalar, modificar o reparar Visual Studio.
+También puede configurar la  [directiva del Registro](set-defaults-for-enterprise-deployments.md)`KeepDownloadedPayloads` para deshabilitar la caché antes de instalar, modificar o reparar Visual Studio.
 
 ## <a name="move-the-package-cache"></a>Traslado de la caché de paquetes
 
 Una configuración común del sistema es tener instalado Windows en una SSD con uno o varios discos duros más grandes pensando en las necesidades de desarrollo, como el código fuente, los archivos binarios del programa, etc. Si desea trabajar sin conexión, puede mover en su lugar la caché de paquetes.
 
-Actualmente, esto solo se puede hacer si se configura la [directiva del Registro](set-defaults-for-enterprise-deployments.md) `CachePath` antes de instalar, modificar o reparar Visual Studio.
+Actualmente, esto solo se puede hacer si se configura la  [directiva del Registro](set-defaults-for-enterprise-deployments.md)`CachePath` antes de instalar, modificar o reparar Visual Studio.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Vea también
 
-* [Instalar Visual Studio](install-visual-studio.md)
-* [Set defaults for enterprise deployments](set-defaults-for-enterprise-deployments.md)(Establecimiento de valores predeterminados para implementaciones de empresa)
+* [Instalación de Visual Studio](install-visual-studio.md)
+* [Establecimiento de valores predeterminados para implementaciones empresariales](set-defaults-for-enterprise-deployments.md)
 * [Usar parámetros de la línea de comandos para instalar Visual Studio](use-command-line-parameters-to-install-visual-studio.md)

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - aspnet
-ms.openlocfilehash: fa8601b6fe625c5cab2aa1f5de8a69f2d550ee2a
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: aa0c95e3a9f3598cd6399b565adb75faccac22a8
+ms.sourcegitcommit: 01a411cd7ae3488b7b979a947bca92fd296a98e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683620"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111761152"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet-core"></a>Inicio rápido: Análisis de los datos de uso de la CPU en Visual Studio (ASP.NET Core)
 
@@ -41,7 +41,7 @@ Para ejecutar las herramientas de generación de perfiles con el depurador se re
 
    En el cuadro de diálogo que aparece, seleccione **MVC** en el panel central y, después, haga clic en **Aceptar**.
    ::: moniker-end
-   ::: moniker range="vs-2019"
+   ::: moniker range=">=vs-2019"
    En Visual Studio 2019, elija **Crear un nuevo proyecto** en la ventana de inicio. Si la ventana de inicio no está abierta, elija **Archivo**  >  **Ventana de inicio** y, luego, elija **Crear un nuevo proyecto**.
 
    Escriba **Aplicación web** en el cuadro de búsqueda, elija **C#** como lenguaje y seleccione **Aplicación web ASP.NET Core (Modelo-Vista-Controlador)** . Por último, elija **Siguiente**. En la siguiente pantalla, asigne al proyecto el nombre *MyProfilingApp_MVC* y elija **Siguiente**.
@@ -169,7 +169,7 @@ Para ejecutar las herramientas de generación de perfiles con el depurador se re
     ```
 
     ::: moniker-end
-    ::: moniker range="vs-2019"
+    ::: moniker range=">=vs-2019"
 
     ```csharp
     public IActionResult Privacy()
@@ -215,7 +215,7 @@ Para ejecutar las herramientas de generación de perfiles con el depurador se re
    ::: moniker range="vs-2017"
    En Visual Studio 2017, haga clic en el vínculo **Acerca de** para ejecutar el código.
    ::: moniker-end
-   ::: moniker range="vs-2019"
+   ::: moniker range=">=vs-2019"
    En Visual Studio 2019, haga clic en el vínculo **Privacidad** para ejecutar el código.
    ::: moniker-end
 

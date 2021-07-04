@@ -1,7 +1,7 @@
 ---
 title: 'Inicio rápido: Un paseo por el IDE de Visual Studio'
 description: Conozca algunas de las ventanas, menús y otras características de la interfaz de usuario del entorno de desarrollo integrado (IDE) de Visual Studio.
-ms.custom: SEO-VS-2020
+ms.custom: vs-acquisition
 titleSuffix: ''
 ms.date: 03/02/2021
 ms.topic: quickstart
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 237b3384d6bec010a760c4bc193b9a95f33febeb
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 0e3a0c62c1ec13ba6fec464a2903512b2acf33ad
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683974"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386298"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Guía de inicio rápido: primer vistazo al IDE de Visual Studio
 

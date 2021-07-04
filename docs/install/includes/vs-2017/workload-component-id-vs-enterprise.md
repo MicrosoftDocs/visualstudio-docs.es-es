@@ -3,19 +3,19 @@ title: Identificadores de componente y carga de trabajo de Visual Studio Enterpr
 titleSuffix: ''
 description: Uso de identificadores de componente y carga de trabajo para instalar Visual Studio mediante la línea de comandos o especificarlo como una dependencia en un manifiesto VSIX
 keywords: ''
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.date: 2/12/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: d250a1b00c65c24d38a47f7a9a2791f9ef7a2e82
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 977c50d42a5c3b59a397714a656f6fd84d94de36
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881856"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "110449869"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-enterprise-2017"></a>Editor de núcleo de Visual Studio (incluido con Visual Studio Enterprise 2017)
 
@@ -272,7 +272,7 @@ Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 15.8.277
 Microsoft.VisualStudio.Component.LiveUnitTesting | Live Unit Testing | 15.0.26720.2 | Se recomienda
 Component.Dotfuscator | PreEmptive Protection - Dotfuscator | 15.0.26208.0 | Optional
 Component.Microsoft.VisualStudio.RazorExtension | Servicios de lenguaje Razor | 15.0.26720.2 | Optional
-Component.Microsoft.Web.LibraryManager | Administrador de bibliotecas | 15.8.27705.0 | Opcionales
+Component.Microsoft.Web.LibraryManager | Administrador de bibliotecas | 15.8.27705.0 | Opcional
 Component.WebSocket | WebSocket4Net | 15.0.26606.0 | Optional
 Microsoft.Net.Component.4.6.2.SDK | SDK de .NET Framework 4.6.2 | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.6.2.TargetingPack | Paquete de compatibilidad de .NET Framework 4.6.2 | 15.6.27406.0 | Optional
@@ -295,7 +295,7 @@ Microsoft.VisualStudio.Component.CodeClone | Clon de código | 15.0.26208.0 | Op
 Microsoft.VisualStudio.Component.CodeMap | Mapa de código | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.Common.Azure.Tools | Herramientas de conectividad y de publicación | 15.9.28107.0 | Optional
 Microsoft.VisualStudio.Component.DependencyValidation.Enterprise | Validación de dependencias en vivo | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.DockerTools | Herramientas de desarrollo de contenedor | 15.8.27906.1 | Opcionales
+Microsoft.VisualStudio.Component.DockerTools | Herramientas de desarrollo de contenedor | 15.8.27906.1 | Opcional
 Microsoft.VisualStudio.Component.DockerTools.BuildTools | Herramientas de desarrollo de contenedor: herramientas de compilación | 15.7.27617.1 | Optional
 Microsoft.VisualStudio.Component.FSharp | Compatibilidad con el idioma F# | 15.8.27825.0 | Optional
 Microsoft.VisualStudio.Component.FSharp.Desktop | Compatibilidad con el lenguaje de escritorio F# | 15.8.27825.0 | Optional
@@ -416,7 +416,7 @@ Microsoft.VisualStudio.Component.Windows10SDK.17134 | SDK de Windows 10 (10.0.17
 Microsoft.VisualStudio.Component.Windows81SDK | SDK de Windows 8.1 | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.WinXP | Soporte de Windows XP para C++ | 15.8.27924.0 | Optional
 Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 | SDK de Windows 8.1 y SDK de UCRT | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.ComponentGroup.NativeDesktop.WinXP | Soporte de Windows XP para C++ | 15.8.27705.0 | Opcionales
+Microsoft.VisualStudio.ComponentGroup.NativeDesktop.WinXP | Soporte de Windows XP para C++ | 15.8.27705.0 | Opcional
 Microsoft.VisualStudio.ComponentGroup.Windows10SDK.15063 | SDK de Windows 10 (10.0.15063.0) | 15.8.27825.0 | Optional
 Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | SDK de Windows 10 (10.0.16299.0) | 15.8.27825.0 | Optional
 
@@ -440,7 +440,7 @@ Microsoft.VisualStudio.Component.Graphics.Win81 | SDK de Windows 8.1 de herramie
 Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 15.8.27729.1 | Se recomienda
 Microsoft.VisualStudio.Component.VC.DiagnosticTools | Herramientas de generación de perfiles de C++ | 15.0.26823.1 | Se recomienda
 Microsoft.VisualStudio.Component.Windows10SDK.17763 | SDK de Windows 10 (10.0.17763.0) | 15.9.28307.102 | Se recomienda
-Component.Android.NDK.R12B | Android NDK (R12B) | 12.1.10 | Opcionales
+Component.Android.NDK.R12B | Android NDK (R12B) | 12.1.10 | Opcional
 Component.Android.SDK23.Private | Instalación de Android SDK (nivel de API 23) (instalación local para desarrollo móvil con JavaScript o C++) | 15.9.28016.0 | Optional
 Component.Ant | Apache Ant (1.9.3) | 1.9.3.8 | Optional
 Component.Cocos | Cocos | 15.0.26906.1 | Optional
@@ -499,11 +499,11 @@ Microsoft.VisualStudio.Component.VC.CoreIde | Características principales de Vi
 Component.Android.NDK.R15C | Android NDK (R15C) | 15.2.1 | Se recomienda
 Component.Ant | Apache Ant (1.9.3) | 1.9.3.8 | Se recomienda
 Component.MDD.Android | Herramientas de desarrollo de Android en C ++ | 15.0.26606.0 | Se recomienda
-Component.Android.NDK.R12B | Android NDK (R12B) | 12.1.10 | Opcionales
-Component.Android.NDK.R12B_3264 | Android NDK (R12B) (32 bits) | 12.1.11 | Opcionales
-Component.Android.NDK.R13B | Android NDK (R13B) | 13.1.7 | Opcionales
-Component.Android.NDK.R13B_3264 | Android NDK (R13B) (32 bits) | 13.1.8 | Opcionales
-Component.Android.NDK.R15C_3264 | Android NDK (R15C) (32bits) | 15.2.1 | Opcionales
+Component.Android.NDK.R12B | Android NDK (R12B) | 12.1.10 | Opcional
+Component.Android.NDK.R12B_3264 | Android NDK (R12B) (32 bits) | 12.1.11 | Opcional
+Component.Android.NDK.R13B | Android NDK (R13B) | 13.1.7 | Opcional
+Component.Android.NDK.R13B_3264 | Android NDK (R13B) (32 bits) | 13.1.8 | Opcional
+Component.Android.NDK.R15C_3264 | Android NDK (R15C) (32bits) | 15.2.1 | Opcional
 Component.Google.Android.Emulator.API23.Private | Google Android Emulator (nivel de API 23) (instalación local) | 15.6.27413.0 | Optional
 Component.HAXM.Private | Intel Hardware Accelerated Execution Manager (HAXM) (instalación local) | 15.9.28307.421 | Optional
 Component.Incredibuild | IncrediBuild: Aceleración de compilación | 15.7.27617.1 | Optional
@@ -851,10 +851,10 @@ Component.CPython2.x64 | Python 2 64 bits (2.7.14) | 2.7.14 | Optional
 Component.CPython2.x86 | Python 2 32 bits (2.7.14) | 2.7.14 | Optional
 Component.CPython3.x86 | Python 3 32 bits (3.6.6) | 3.6.6 | Optional
 Component.Microsoft.VisualStudio.RazorExtension | Servicios de lenguaje Razor | 15.0.26720.2 | Optional
-Component.Microsoft.Web.LibraryManager | Administrador de bibliotecas | 15.8.27705.0 | Opcionales
+Component.Microsoft.Web.LibraryManager | Administrador de bibliotecas | 15.8.27705.0 | Opcional
 Component.WebSocket | WebSocket4Net | 15.0.26606.0 | Optional
 Microsoft.Component.ClickOnce | Publicación de ClickOnce | 15.8.27825.0 | Optional
-Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | Opcionales
+Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | Opcional
 Microsoft.Component.NetFX.Native | .NET Native | 15.0.26208.0 | Optional
 Microsoft.Component.PythonTools.UWP | Compatibilidad con IoT de Python | 15.0.26606.0 | Optional
 Microsoft.Component.VC.Runtime.UCRTSDK | SDK de Windows Universal CRT | 15.6.27309.0 | Optional
@@ -876,7 +876,7 @@ Microsoft.VisualStudio.Component.ClassDesigner | Diseñador de clases | 15.0.262
 Microsoft.VisualStudio.Component.CodeClone | Clon de código | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.CodeMap | Mapa de código | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.DiagnosticTools | Herramientas para generación de perfiles de .NET | 15.8.27729.1 | Optional
-Microsoft.VisualStudio.Component.DockerTools | Herramientas de desarrollo de contenedor | 15.8.27906.1 | Opcionales
+Microsoft.VisualStudio.Component.DockerTools | Herramientas de desarrollo de contenedor | 15.8.27906.1 | Opcional
 Microsoft.VisualStudio.Component.DockerTools.BuildTools | Herramientas de desarrollo de contenedor: herramientas de compilación | 15.7.27617.1 | Optional
 Microsoft.VisualStudio.Component.GraphDocument | Editor DGML | 15.0.27005.2 | Optional
 Microsoft.VisualStudio.Component.Graphics | Editores de imágenes y modelos 3D | 15.6.27406.0 | Optional

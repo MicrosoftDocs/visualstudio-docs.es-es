@@ -3,10 +3,10 @@ title: Identificadores de componente y carga de trabajo de Visual Studio Test Co
 titleSuffix: ''
 description: Uso de identificadores de componente y carga de trabajo de Visual Studio para distribuir pruebas automatizadas en varias máquinas
 keywords: ''
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
-ms.date: 3/2/2020
+ms.date: 05/25/2021
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -16,12 +16,12 @@ ms.assetid: fbbda9c8-d2c6-474d-b52d-a95227d52fe7
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 5736ff1d800422e27e440e3f1017a2ef5ee01949
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: a1b07cd355d820253e5dd6f9fada832261037eb4
+ms.sourcegitcommit: 4a91c63683ba1c1832b1ba96657862a849320d81
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683647"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110565211"
 ---
 # <a name="visual-studio-test-controller-component-directory"></a>Directorio de componentes de Visual Studio Test Controller
 

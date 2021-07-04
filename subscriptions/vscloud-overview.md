@@ -7,12 +7,12 @@ ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
 ms.date: 02/19/2021
 ms.topic: overview
 description: Consiga Visual Studio Professional o Visual Studio Enterprise mes a mes o de forma anual sin contrato a largo plazo.
-ms.openlocfilehash: 56988001272fb11252b85cb60bdcae109edf8e29
-ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
+ms.openlocfilehash: 5e6346b640415b7888826669427512a75427f0cc
+ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104672548"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "112043112"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Adquirir suscripciones de nube de Visual Studio Professional y Visual Studio Enterprise
 Puede adquirir [suscripciones](https://visualstudio.microsoft.com/subscriptions/) de Visual Studio Professional y Visual Studio Enterprise en [Visual Studio Marketplace](https://marketplace.visualstudio.com). Estas suscripciones se denominan **"suscripciones en la nube"** .
@@ -57,11 +57,11 @@ Deberá ser colaborador o tener un rol superior en una suscripción de Azure que
 Si ha adquirido varias suscripciones, vaya al [portal de administradores de Suscripciones de Visual Studio](https://manage.visualstudio.com) para asignarlas a otros usuarios.  Es posible que tenga que [agregar las suscripciones nuevas](add-monthly-subs.md) al portal de administradores si es la primera vez que las compró.
 
 > [!div class="mx-imgBorder"]
-> ![Asignar suscripciones a otros](_img/buy-vs-subscriptions/buy-vs-sub-success-many.png "Haga clic en "Asignar a usuarios" para proporcionar suscripciones a los usuarios.")
+> ![Asignar suscripciones a otros](_img/buy-vs-subscriptions/buy-vs-sub-success-many.png "Haga clic en &quot;Asignar a usuarios&quot; para proporcionar suscripciones a los usuarios.")
 
 
 > [!div class="mx-imgBorder"]
-> ![Ver suscripciones](_img/buy-vs-subscriptions/assign-subscriptions.png "Haga clic en "Agregar" para asignar suscripciones a los usuarios.")
+> ![Ver suscripciones](_img/buy-vs-subscriptions/assign-subscriptions.png "Haga clic en &quot;Agregar&quot; para asignar suscripciones a los usuarios.")
 
 ## <a name="cancel-renewals-of-cloud-subscriptions-youve-purchased"></a><a name="manage-subscriptions"></a>Cancelar la renovación de las suscripciones de nube adquiridas
 
@@ -125,7 +125,7 @@ R:  Aunque no puedan adquirir otra suscripción de nube anual, existen otras muc
 
 ## <a name="related-resources"></a>Recursos relacionados
 - [Portal de administradores de Suscripciones de Visual Studio](https://manage.visualstudio.com/)
-- [Preguntas más frecuentes sobre facturación relativas a suscripciones de nube de Visual Studio](vscloud-billing-faq.md)
+- [Preguntas más frecuentes sobre facturación relativas a suscripciones de nube de Visual Studio](vscloud-billing-faq.yml)
 - [Adquisición de suscripciones de nube de Visual Studio para CSP](vscloud-csp.md)
 - - Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación de suscripciones de Visual Studio, consulte la página de [soporte técnico para las suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
 

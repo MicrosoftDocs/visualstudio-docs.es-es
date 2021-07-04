@@ -1,7 +1,7 @@
 ---
 title: Creación de una aplicación Node.js y React
 description: Aprenda a crear un proyecto de aplicación web de Node.js a partir de una plantilla de Visual Studio.
-ms.custom: ''
+ms.custom: vs-acquisition
 ms.date: 4/21/2020
 ms.topic: tutorial
 ms.devlang: javascript
@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 80516adffcb058d6ce28751e7a9f30002ca3a640
-ms.sourcegitcommit: a0f5e7188838c5989c9cc78d99fb29bb2813501e
+ms.openlocfilehash: 3299f38e99c6b96cacd3c3661937a29bdec3c93d
+ms.sourcegitcommit: 809fff25b7701882c899c639eeb6da38ad4fb88a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "109729304"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "112550706"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutorial: Crear una aplicación Node.js y React en Visual Studio
 
@@ -308,7 +308,7 @@ En los pasos anteriores, se agregó *webpack-config.js* al proyecto. A continuac
 
 1. En el símbolo del sistema, escriba el siguiente comando:
 
-    `node_modules\.bin\webpack app.tsx --config webpack-config.js`
+    `node_modules\.bin\webpack ./app.tsx --config webpack-config.js`
 
     La ventana del símbolo del sistema muestra el resultado.
 
@@ -336,7 +336,7 @@ A partir de Visual Studio 2019, se requiere un script de compilación. En luga
 
    ```json
    "scripts": {
-    "build": "webpack-cli app.tsx --config webpack-config.js"
+    "build": "webpack-cli ./app.tsx --config webpack-config.js"
    }
    ```
 

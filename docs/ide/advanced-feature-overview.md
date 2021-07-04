@@ -1,7 +1,7 @@
 ---
 title: Características avanzadas
 description: Aprenda sobre las características avanzadas que podrían ser más adecuadas para desarrolladores experimentados o para aquellos desarrolladores que ya están familiarizados con Visual Studio.
-ms.custom: SEO-VS-2020
+ms.custom: vs-acquisition
 ms.date: 06/01/2018
 ms.topic: conceptual
 author: TerryGLee
@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 04b048250b2529e21dd30738821b273c268e3498
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6cc6604816921b054b0c909177c8e641493920a8
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862088"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386201"
 ---
 # <a name="features-of-visual-studio"></a>Características de Visual Studio
 
@@ -82,13 +82,9 @@ Puede usar Visual Studio para crear aplicaciones y juegos para MacOS, Linux y Wi
 
 - Cree aplicaciones móviles para iOS, Android y Windows en C# y F# mediante el uso de [Xamarin](https://developer.xamarin.com/guides/cross-platform/windows/visual-studio/).
 
-- Utilice tecnologías web estándar &mdash;HTML, CSS y JavaScript&mdash; para crear aplicaciones móviles para iOS, Android y Windows mediante [Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/).
-
 - Cree juegos 2D y 3D en C# mediante [Visual Studio Tools para Unity](/gamedev/unity/get-started/visual-studio-tools-for-unity.md).
 
 - Cree aplicaciones C++ nativas para dispositivos iOS, Android y Windows. Comparta código común en bibliotecas compiladas para iOS, Android y Windows mediante [C++ para desarrollo multiplataforma](/cpp/cross-platform/visual-cpp-for-cross-platform-mobile-development).
-
-- Implemente, pruebe y depure aplicaciones Android con el [emulador de Android](../cross-platform/visual-studio-emulator-for-android.md).
 
 ## <a name="connect-to-databases"></a>Conectarse a bases de datos
 

@@ -10,12 +10,12 @@ author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: f15af6958c7f5855b5005fc0a6aa4c821346ccb5
-ms.sourcegitcommit: e262f4c2a147c3fa2d27de666aae3a0497317867
+ms.openlocfilehash: 72a976ccd487abdfa2c6501c0dcafee07dc5f4ae
+ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "100006396"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "112042865"
 ---
 # <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>Uso de correcciones de compatibilidad (shim) para aislar la aplicación para pruebas unitarias
 
@@ -429,7 +429,7 @@ public class ShimMyClass : ShimBase<MyClass> {
 
 Cada tipo de corrección de compatibilidad generado contiene una instancia de la interfaz `IShimBehavior` mediante la propiedad `ShimBase<T>.InstanceBehavior`. El comportamiento se usa siempre que un cliente llama a un miembro de instancia que no se ha corregido para compatibilidad explícitamente.
 
-Si el comportamiento no se ha establecido, se utiliza la instancia devuelta por la propiedad estática `ShimsBehaviors.Current`. De forma predeterminada, esta propiedad devuelve un comportamiento que genera una excepción `NotImplementedException`.
+Si el comportamiento no se ha establecido, se utiliza la instancia devuelta por la propiedad estática `ShimBehaviors.Current`. De forma predeterminada, esta propiedad devuelve un comportamiento que genera una excepción `NotImplementedException`.
 
 Se puede cambiar en cualquier momento este comportamiento estableciendo la propiedad `InstanceBehavior` en cualquier instancia de corrección de compatibilidad. Por ejemplo, el siguiente fragmento cambia la corrección de compatibilidad (shim) a un comportamiento que no hace nada o devuelve el valor predeterminado del tipo de valor devuelto, es decir, `default(T)`:
 
@@ -437,26 +437,26 @@ Se puede cambiar en cualquier momento este comportamiento estableciendo la propi
 // unit test code
 var shim = new ShimMyClass();
 //return default(T) or do nothing
-shim.InstanceBehavior = ShimsBehaviors.DefaultValue;
+shim.InstanceBehavior = ShimBehaviors.DefaultValue;
 ```
 
-El comportamiento también se puede cambiar globalmente para todas las instancias corregidas para compatibilidad en las que la propiedad `InstanceBehavior` no se ha establecido explícitamente mediante la propiedad estática `ShimsBehaviors.Current`:
+El comportamiento también se puede cambiar globalmente para todas las instancias corregidas para compatibilidad en las que la propiedad `InstanceBehavior` no se ha establecido explícitamente mediante la propiedad estática `ShimBehaviors.Current`:
 
 ```csharp
 // unit test code
 // change default shim for all shim instances
 // where the behavior has not been set
-ShimsBehaviors.Current = ShimsBehaviors.DefaultValue;
+ShimBehaviors.Current = ShimBehaviors.DefaultValue;
 ```
 
 ## <a name="detect-environment-accesses"></a>Detectar accesos al entorno
 
-Es posible adjuntar a todos los miembros, incluidos los métodos estáticos, un comportamiento de un tipo determinado mediante la asignación del comportamiento `ShimsBehaviors.NotImplemented` a la propiedad estática `Behavior` del tipo de corrección de compatibilidad correspondiente:
+Es posible adjuntar a todos los miembros, incluidos los métodos estáticos, un comportamiento de un tipo determinado mediante la asignación del comportamiento `ShimBehaviors.NotImplemented` a la propiedad estática `Behavior` del tipo de corrección de compatibilidad correspondiente:
 
 ```csharp
 // unit test code
 // assigning the not implemented behavior
-ShimMyClass.Behavior = ShimsBehaviors.NotImplemented;
+ShimMyClass.Behavior = ShimBehaviors.NotImplemented;
 // shorthand
 ShimMyClass.BehaveAsNotImplemented();
 ```

@@ -10,19 +10,19 @@ helpviewer_keywords:
 - administrator guide, Visual Studio
 - installing Visual Studio, administrator guide
 ms.assetid: 4af353f5-6cfd-4ebe-bcfb-f42306e451a0
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0b86d8bc6d3533d2ed50eb4e87330a81f1028f13
-ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
+ms.openlocfilehash: ba41c545c2af2e0490ef0410fde7849706123940
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "106547419"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306714"
 ---
 # <a name="visual-studio-administrator-guide"></a>Guía del administrador de Visual Studio
 
@@ -34,7 +34,7 @@ Esta guía de administrador proporciona instrucciones basadas en escenarios para
 
 Antes de implementar Visual Studio en la organización, hay algunas decisiones que tomar y varias tareas que realizar:
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 * Asegúrese de que cada equipo de destino cumpla los [requisitos mínimos de instalación](/visualstudio/releases/2019/system-requirements/).
 
@@ -60,7 +60,7 @@ Antes de implementar Visual Studio en la organización, hay algunas decisiones q
 
   En el caso de los equipos que no están conectados a Internet, la creación de un diseño mínimo es la manera más fácil y rápida de actualizar las instancias de Visual Studio sin conexión. Para obtener más información, consulte [Actualización de Visual Studio con un diseño sin conexión mínimo](update-minimal-layout.md).
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 * Decida qué [cargas de trabajo y componentes](workload-and-component-ids.md?view=vs-2019&preserve-view=true) necesita la empresa.
 
@@ -78,7 +78,7 @@ Antes de implementar Visual Studio en la organización, hay algunas decisiones q
 
 * Decida si quiere habilitar la directiva de grupo y si quiere configurar Visual Studio para deshabilitar los comentarios de los clientes en equipos individuales.
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 ## <a name="step-1---download-visual-studio-product-files"></a>Paso 1: Descargar archivos de producto de Visual Studio
 

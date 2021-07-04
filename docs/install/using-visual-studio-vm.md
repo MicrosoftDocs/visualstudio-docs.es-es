@@ -17,16 +17,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 339b3661760ee539bb4135c59863e7e9fdae5afc
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 41247c13e8b35fd6e6cd26ac0ad0ea82f742fbb0
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107295824"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306701"
 ---
-# <a name="visual-studio-images-on-azure"></a><a id="top"> </a> Imágenes de Visual Studio en Azure
+# <a name="visual-studio-images-on-azure"></a>Imágenes de Visual Studio en Azure
 
-El uso de Visual Studio en una máquina virtual de Azure preconfigurada es una forma fácil y rápida de llegar a un entorno de desarrollo en funcionamiento partiendo de cero. En [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/category/compute?filters=virtual-machine-images%3Bmicrosoft%3Bwindows&page=1&subcategories=application-infrastructure) encontrará varias imágenes del sistema con distintas configuraciones de Visual Studio.
+El uso de Visual Studio en una máquina virtual (VM) de Azure preconfigurada es la manera más fácil y rápida de tener un entorno de desarrollo que funcione correctamente desde el principio. En [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/category/compute?filters=virtual-machine-images%3Bmicrosoft%3Bwindows&page=1&subcategories=application-infrastructure) encontrará varias imágenes del sistema con distintas configuraciones de Visual Studio.
 
 ¿Acaba de llegar a Azure? [Cree una cuenta gratuita de Azure](https://azure.microsoft.com/free).
 
@@ -34,12 +34,12 @@ El uso de Visual Studio en una máquina virtual de Azure preconfigurada es una f
 
 En Azure Marketplace se pueden encontrar imágenes de las versiones principales más recientes: Visual Studio 2019, Visual Studio 2017 y Visual Studio 2015.  Igualmente, para cada versión principal publicada podrá ver la "versión de lanzamiento original en la Web" (RTW) y las últimas versiones actualizadas.  Cada una de estas versiones ofrece las ediciones Visual Studio Enterprise y Visual Studio Community.  Estas imágenes se actualizan al menos cada mes para incluir las actualizaciones más recientes de Visual Studio y Windows.  Aunque los nombres de las imágenes siguen siendo los mismos, la descripción de cada imagen incluye la versión del producto instalada y la fecha inicial de la imagen.
 
-| Versión de lanzamiento                                                                                                                                          | Ediciones              |    Versión del producto    |
-|:--------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------:|:-----------------------:|
-| [Visual Studio 2019: Más reciente (versión 16.8)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019latest?tab=Overview) | Enterprise, Community | Versión 16.8.0    |
-| [Visual Studio 2019: RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019?tab=Overview)                         | Empresa            | Versión 16.0.20    |
-| [Visual Studio 2017: Versión más reciente (15.9)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)           | Enterprise, Community | Versión 15.9.29   |
-| [Visual Studio 2017: RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)                             | Enterprise, Community | Versión 15.0.28   |
+| Versión de lanzamiento                                                                                                                                                | Ediciones              | Versión del producto       |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------|-----------------------|
+| [Visual Studio 2019: Más reciente (versión 16.8)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019latest?tab=Overview) | Enterprise, Community | Versión 16.8.0        |
+| [Visual Studio 2019: RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019?tab=Overview)                         | Empresa            | Versión 16.0.20       |
+| [Visual Studio 2017: Versión más reciente (15.9)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)           | Enterprise, Community | Versión 15.9.29       |
+| [Visual Studio 2017: RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)                             | Enterprise, Community | Versión 15.0.28       |
 | [Visual Studio 2015: Versión más reciente (Update 3)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)               | Enterprise, Community | Versión 14.0.25431.01 |
 
 > [!NOTE]
@@ -92,8 +92,9 @@ Con Azure, puede volver a equilibrar su elección inicial mediante la modificaci
 ## <a name="after-the-vm-is-running-whats-next"></a>Una vez que la máquina virtual ya está en ejecución, ¿qué es lo siguiente?
 
 Visual Studio sigue el modelo "traiga su propia licencia" en Azure. Igual que sucede con la instalación en hardware propietario, uno de los primeros pasos es obtener una licencia para la instalación de Visual Studio. Para desbloquear Visual Studio, tiene dos opciones:
-- Iniciar sesión con una cuenta de Microsoft que esté asociada con una suscripción de Visual Studio
-- Desbloquear Visual Studio con la clave de producto suministrada con la compra inicial
+
+* Iniciar sesión con una cuenta de Microsoft que esté asociada con una suscripción de Visual Studio
+* Desbloquear Visual Studio con la clave de producto suministrada con la compra inicial
 
 Para más información, consulte [Iniciar sesión en Visual Studio](../ide/signing-in-to-visual-studio.md) y [Cómo desbloquear Visual Studio](../ide/how-to-unlock-visual-studio.md).
 

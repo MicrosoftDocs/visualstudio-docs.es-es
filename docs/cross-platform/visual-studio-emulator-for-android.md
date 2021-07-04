@@ -13,12 +13,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 274eda05a8af5c9be4fbbf67e3e78f254d1a7902
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 005743ad730184edb8a709b4c15867f857290f9b
+ms.sourcegitcommit: 63cb90e8cea112aa2ce8741101b309dbc709e393
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99867521"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "110687631"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Emulador de Visual Studio para Android
 
@@ -29,6 +29,6 @@ El Emulador de Visual Studio para Android es una aplicación de escritorio que 
 > - El Emulador de Visual Studio para Android no se admite a partir de Visual Studio 2015.
 > - Las imágenes del emulador de versiones posteriores a Android 6.0 no están disponibles para el Emulador de Visual Studio para Android.
 > - Google Android Emulator ahora es compatible con [Hyper-V](/xamarin/android/get-started/installation/android-emulator/hardware-acceleration#accelerating-with-hyper-v).
-> - Tanto C++ para el desarrollo de dispositivos móviles como Visual Studio Tools para Apache Cordova son compatibles con el emulador de Android de Google. Para más información, consulte [Run your Apache Cordova app on Android](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#google-android-emulator) (Ejecución de la aplicación Apache Cordova en Android). (Tal y como se explica en este artículo, ya no es necesario que deshabilite Hyper-V).
+> - Tanto C++ para el desarrollo de dispositivos móviles como Visual Studio Tools para Apache Cordova son compatibles con el emulador de Android de Google. Para más información, consulte [Run your Apache Cordova app on Android](/previous-versions/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#google-android-emulator) (Ejecución de la aplicación Apache Cordova en Android). (Tal y como se explica en este artículo, ya no es necesario que deshabilite Hyper-V).
 >
 > Para obtener más información sobre cómo configurar y usar el emulador de Android de Google, vea el artículo [Configuración de Android Emulator](/xamarin/android/get-started/installation/android-emulator/).

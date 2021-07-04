@@ -13,18 +13,18 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a27f5ae8320e942d5167fcc8260179f8cec96e37
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0af2717efec7cab8594f193c06e8813bd556b01f
+ms.sourcegitcommit: c3713f284c4fe10b10996d5eb67077ddd8641424
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850287"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112375791"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>Cómo: Agregar diagramas de clases a proyectos
 
 Para diseñar, editar y refactorizar clases y otros tipos, agregue un diagrama de clases al proyecto de C#, Visual Basic o C++. Para visualizar distintas partes del código de un proyecto, agregue varios diagramas de clases al proyecto.
 
-No se pueden crear diagramas de clases de proyectos que compartan código en varias aplicaciones. Para crear diagramas de clases UML, vea [Cómo: Crear proyectos y diagramas de modelado UML](../../modeling/what-s-new-for-design-in-visual-studio.md).
+No se pueden crear diagramas de clases de proyectos que compartan código en varias aplicaciones. Para crear diagramas de clases UML, vea [Cómo: Crear proyectos y diagramas de modelado UML](https://devblogs.microsoft.com/devops/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/).
 
 ## <a name="install-the-class-designer-component"></a>Instalar el componente del Diseñador de clases
 

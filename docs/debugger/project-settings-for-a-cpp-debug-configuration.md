@@ -1,7 +1,7 @@
 ---
 title: Configuración del proyecto para una configuración de depuración de C++
 description: Configure la depuración de C y C++ en Páginas de propiedades. En este artículo se describe la configuración y se indica su categoría.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/26/2018
 ms.topic: reference
 f1_keywords:
@@ -113,12 +113,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 168dac192972c2ee670d733a07503ffe2776910e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 34dd9b82a642c9e9ec32dde383a8c2e02ac57aa2
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99842726"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385193"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>Configuración del proyecto para una configuración de depuración de C++
 Es posible cambiar la configuración del proyecto para la configuración de depuración de C o C++ en el cuadro de diálogo **Páginas de propiedades**, como se describe en [ Establecer configuraciones Debug y Release](../debugger/how-to-set-debug-and-release-configurations.md). En las siguientes tablas se muestra dónde encontrar los valores relacionados con el depurador en el cuadro de diálogo **Páginas de propiedades**.

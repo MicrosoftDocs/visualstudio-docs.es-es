@@ -1,7 +1,7 @@
 ---
 title: Navegación por el código con el depurador | Microsoft Docs
 description: Obtenga información sobre cómo usar el depurador de Visual Studio para solucionar problemas de código. Entre los temas, se incluye información sobre cómo activar el modo de interrupción, recorrer el código y realizar la ejecución hasta un destino.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/12/2018
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e6ad377ddb457018099256cd64b6b8382c69df81
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b9c0424b07ba7a24f109e967d464856781e5dbb2
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942079"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385245"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Navegación por el código con el depurador de Visual Studio
 

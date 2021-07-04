@@ -19,16 +19,19 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 236efe20ee652e2690cedf36843d539bf8a9cc46
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 85921343ac52c066735d607ce32635e953cf2e6a
+ms.sourcegitcommit: 4908561809ad397c99cf204f52d5e779512e502c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850300"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112254780"
 ---
 # <a name="design-and-view-classes-and-types-with-class-designer"></a>Diseñar y ver clases y tipos con el Diseñador de clases
 
 Diseñe, visualice y refactorice clases y otros tipos del código con el **Diseñador de clases** de Visual Studio. Use diagramas de clases para crear y editar clases del proyecto de C#, Visual Basic o C++. También puede usar diagramas de clases para comprender mejor la estructura del proyecto o reorganizar el código.
+
+>[!NOTE]
+>El Diseñador de clases aún no está disponible en proyectos de .NET Core.
 
 ## <a name="what-you-can-do-with-class-diagrams"></a>Qué puede hacer con los diagramas de clases
 

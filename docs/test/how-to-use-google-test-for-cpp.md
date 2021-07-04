@@ -8,20 +8,20 @@ manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 6cf29d16432b677c6e83ba4cbaedb39f0a8d1ed2
-ms.sourcegitcommit: 55bc9df751a21656de8cc5b6dbd8a2a1915ec690
+ms.openlocfilehash: a338b6f62aee6ec342ef6a16abec71cb6a833bc0
+ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99572998"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "112042969"
 ---
 # <a name="how-to-use-google-test-for-c-in-visual-studio"></a>Cómo usar Google Test para C++ en Visual Studio
 
-En Visual Studio 2017 y versiones posteriores, Google Test se integra en el IDE de Visual Studio como un componente predeterminado de la carga de trabajo **Desarrollo para el escritorio con C++** . Para comprobar que está instalado en su equipo, abra al Instalador de Visual Studio y busque Google Test en la lista de componentes de carga de trabajo:
+En Visual Studio 2017 y versiones posteriores, Google Test se integra en el IDE de Visual Studio como un componente predeterminado de la carga de trabajo **Desarrollo para el escritorio con C++**. Para comprobar que está instalado en su equipo, abra al Instalador de Visual Studio y busque Google Test en la lista de componentes de carga de trabajo:
 
 ![Instalar Google Test](media/cpp-google-component.png)
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 ## <a name="add-a-google-test-project-in-visual-studio-2019"></a>Agregación de un proyecto de Google Test en Visual Studio 2019
 
@@ -38,7 +38,7 @@ En Visual Studio 2017 y versiones posteriores, Google Test se integra en el IDE 
 ## <a name="add-a-google-test-project-in-visual-studio-2017"></a>Agregación de un proyecto de Google Test en Visual Studio 2017
 
 1. En el **Explorador de soluciones**, haga clic con el botón derecho en el nodo de la solución y elija **Agregar** > **Nuevo proyecto**.
-2. En el panel izquierdo, elija **Visual C++** > **Prueba** y, luego, seleccione **Proyecto de Google Test** en el panel central.
+2. En el panel izquierdo, elija **Visual C++** > **Prueba** y luego seleccione **Proyecto de Google Test** en el panel central.
 3. Asigne un nombre al proyecto de Google Test y haga clic en **Aceptar**.
 
 ![Nuevo proyecto de Google Test](media/cpp-gtest-new-project.png)
@@ -67,6 +67,6 @@ En el archivo *.cpp* de prueba, agregue las directivas `#include` que sean neces
 
 Ya está listo para escribir y ejecutar pruebas de Google Test. Vea [Google Test Primer](https://github.com/google/googletest/blob/master/docs/primer.md) para obtener más información sobre las macros de prueba. Vea [Ejecutar pruebas unitarias con el Explorador de pruebas](run-unit-tests-with-test-explorer.md) para más información sobre cómo detectar, ejecutar y agrupar las pruebas usando el **Explorador de pruebas**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Escritura de pruebas unitarias para C/C++](writing-unit-tests-for-c-cpp.md)

@@ -9,12 +9,12 @@ manager: jmartens
 ms.workload:
 - uwp
 author: corob-msft
-ms.openlocfilehash: 5117ffb8731ef06f054b0ecbfc651aef2563078e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f1981b3876d2e42e992ef261738da2443edfc114
+ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962631"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "112042917"
 ---
 # <a name="how-to-test-a-c-dll"></a>Prueba de un archivo DLL de C++
 
@@ -26,7 +26,7 @@ En este tema también se crea una solución única de Visual Studio y proyectos 
 
 ## <a name="create-the-solution-and-the-unit-test-project"></a><a name="Create_the_solution_and_the_unit_test_project"></a> Crear la solución y el proyecto de prueba unitaria
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 Empiece por crear un proyecto de prueba. En el menú **Archivo**, elija **Nuevo** > **Proyecto**. En el cuadro de diálogo **Crear un proyecto nuevo** escriba "prueba" en el cuadro de búsqueda y después establezca el valor de **Lenguaje** en C++. Después elija **Unit Test Library (Universal Windows)** (Biblioteca de pruebas unitarias [Windows Universal]) en la lista de plantillas de proyecto.
 
@@ -81,7 +81,7 @@ Empiece por crear un proyecto de prueba. En el menú **Archivo**, elija **Nuevo*
 
 ## <a name="add-the-dll-project-to-the-solution"></a><a name="Add_the_DLL_project_to_the_solution"></a> Agregar el proyecto DLL a la solución
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 En el **Explorador de soluciones**, elija el nombre de la solución. En el menú contextual, elija **Agregar** y después **Nuevo proyecto**. En el cuadro de diálogo **Agregar un proyecto nuevo** establezca el valor de **Lenguaje** en C++ y escriba "DLL" en el cuadro de búsqueda. En la lista de resultados, elija **Aplicación de pruebas unitarias (Universal Windows - C++/CX)** .
 

@@ -1,7 +1,7 @@
 ---
 title: Examen del código del sistema después de una excepción | Microsoft Docs
 description: Obtenga información sobre cómo examinar el código en una llamada del sistema para determinar la causa de la excepción. El procedimiento se aplica incluso si no se han cargado los símbolos para el código del sistema.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f906fd39ed9b0b0af5a9ade344ab05a33e469a9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f05ae1486089eaa63ef47a9953578db2a0b6662a
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877686"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112384660"
 ---
 # <a name="how-to-examine-system-code-after-an-exception"></a>Procedimiento Examinar el código del sistema después de una excepción
 Cuando se produce una excepción, es posible que tenga que examinar el código de una llamada al sistema para determinar su causa. El procedimiento siguiente explica cómo hacerlo si no se tienen símbolos cargados para el código del sistema o si Sólo mi código está habilitado.

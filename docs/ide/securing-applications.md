@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c3d5fe8755450fd5068688064bf36b08c741c862
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f3dcd034a76fbc371c95a2bbf386687830e3b63d
+ms.sourcegitcommit: 63cb90e8cea112aa2ce8741101b309dbc709e393
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878648"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "110687657"
 ---
 # <a name="secure-applications"></a>Aplicaciones seguras
 
@@ -45,6 +45,6 @@ La seguridad también es una consideración importante en el proceso de compilac
 - [Seguridad en .NET](/dotnet/standard/security/index)
 - [Seguridad de Azure](/azure/security/)
 - [Guía de seguridad de Windows 10 Mobile](/windows/security/threat-protection/windows-10-mobile-security-guide)
-- [Características de seguridad de la plataforma Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/security/best-practices?view=toolsforcordova-2017&preserve-view=true)
+- [Características de seguridad de la plataforma Apache Cordova](/previous-versions/visualstudio/cross-platform/tools-for-cordova/security/best-practices?view=toolsforcordova-2017&preserve-view=true)
 - [Seguridad de ASP.NET Core](/aspnet/core/security/?view=aspnetcore-2.1&preserve-view=true)
 - [Seguridad en Windows Forms](/dotnet/framework/winforms/windows-forms-security)

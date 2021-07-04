@@ -12,12 +12,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: b50edfe91a9b497760c44d3fd548eb6d2a15a049
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 2f3c611ae157be4f2ea89254856bdd3b6fba448d
+ms.sourcegitcommit: 63cb90e8cea112aa2ce8741101b309dbc709e393
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399382"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "110687686"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Desarrollo móvil multiplataforma en Visual Studio
 
@@ -110,7 +110,7 @@ Con Visual Studio Tools para Xamarin, puede tener como destino Android, iOS y Wi
 |**Más información**|
 |--------------------|
 |[Instalar Visual Studio](https://visualstudio.microsoft.com/vs/community/) (VisualStudio.com)|
-|[Introducción a Herramientas para Apache Cordova de Visual Studio](/visualstudio/cross-platform/tools-for-cordova/)|
+|[Introducción a Herramientas para Apache Cordova de Visual Studio](/previous-versions/visualstudio/cross-platform/tools-for-cordova/)|
 |[Obtener información acerca del emulador de Visual Studio para Android](https://visualstudio.microsoft.com/vs/msft-android-emulator/) (VisualStudio.com)|
 
 ::: moniker-end
@@ -152,7 +152,7 @@ Con Visual Studio Tools para Xamarin, puede tener como destino Android, iOS y Wi
 
 ## <a name="build-a-cross-platform-game-for-android-ios-and-windows-by-using-visual-studio-tools-for-unity"></a>Compilar un juego multiplataforma para Android, iOS y Windows con Visual Studio Tools para Unity
 
- Visual Studio Tools para Unity es una extensión gratuita para Visual Studio que integra las eficaces herramientas de edición de código, productividad y depuración de Visual Studio con *Unity* , el popular motor y entorno de desarrollo multiplataforma de juegos y gráficos para aplicaciones inmersivas destinadas a Windows, iOS, Android y otras plataformas, incluida la Web.
+ Visual Studio Tools para Unity es una extensión gratuita para Visual Studio que integra las eficaces herramientas de edición de código, productividad y depuración de Visual Studio con *Unity*, el popular motor y entorno de desarrollo multiplataforma de juegos y gráficos para aplicaciones inmersivas destinadas a Windows, iOS, Android y otras plataformas, incluida la Web.
 
  ![Entorno de desarrollo de VSTU](../cross-platform/media/vstu_overview.png "Información general de Visual Studio Tools para Unity")
 

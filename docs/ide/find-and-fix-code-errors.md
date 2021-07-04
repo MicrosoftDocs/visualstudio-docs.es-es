@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d6da05729be409b142f6c9cec2c543fb2b9171ee
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5af76de5dbcc7a70722acf0ee01cfed93dbad761
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869432"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308264"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Hacer que el código funcione en Visual Studio
 
@@ -52,7 +52,7 @@ Haga clic en la línea del error en la ventana **Lista de errores** para ir a la
 
 Presione **CTRL**+**G** para ir directamente al número de línea donde se ha producido el error.
 
-El error se identifica con un "subrayado ondulado" rojo. Mantenga el mouse sobre él para obtener más información. Al corregirlo desaparecerá, aunque pueda insertar un nuevo error con la corrección. (Esto se denomina "regresión").
+El error se identifica con un "subrayado ondulado&quot; rojo. Mantenga el mouse sobre él para obtener más información. Al corregirlo desaparecerá, aunque pueda insertar un nuevo error con la corrección. (Esto se denomina &quot;regresión").
 
 ![Error de Visual Studio al mantener el ratón](../ide/media/vs_ide_gs_debug_error_hover1.png)
 
@@ -100,7 +100,7 @@ Las acciones rápidas pueden usarse siempre que los analizadores de código dete
 
 Con experiencia, puede usar rápidamente las teclas de dirección y **CTRL**+ **.** para comprobar si hay posibilidades fáciles de refactorización y limpiar el código.
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 ## <a name="run-code-cleanup"></a>Ejecución de la limpieza de código
 

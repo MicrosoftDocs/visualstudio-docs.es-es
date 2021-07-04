@@ -2,19 +2,19 @@
 title: Identificadores de componentes y cargas de trabajo de Visual Studio Build Tools 2017
 titleSuffix: ''
 description: Uso de identificadores de componente y carga de trabajo de Visual Studio para crear aplicaciones clásicas basadas en Windows
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.date: 2/12/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 3d38a5dac5ae23b048e9faf4142cec630b77f9be
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b3fe0d729902ea454d9f81e51e4957bf2c7d37d1
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881947"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "110449839"
 ---
 ## <a name="azure-development-build-tools"></a>Herramientas de compilación de desarrollo para Azure
 
@@ -283,7 +283,7 @@ Microsoft.VisualStudio.Component.Windows10SDK.17134 | SDK de Windows 10 (10.0.17
 Microsoft.VisualStudio.Component.Windows81SDK | SDK de Windows 8.1 | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.WinXP | Soporte de Windows XP para C++ | 15.8.27924.0 | Optional
 Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 | SDK de Windows 8.1 y SDK de UCRT | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.ComponentGroup.NativeDesktop.WinXP | Soporte de Windows XP para C++ | 15.8.27705.0 | Opcionales
+Microsoft.VisualStudio.ComponentGroup.NativeDesktop.WinXP | Soporte de Windows XP para C++ | 15.8.27705.0 | Opcional
 Microsoft.VisualStudio.ComponentGroup.Windows10SDK.15063 | SDK de Windows 10 (10.0.15063.0) | 15.8.27825.0 | Optional
 Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | SDK de Windows 10 (10.0.16299.0) | 15.8.27825.0 | Optional
 

@@ -4,6 +4,7 @@ description: Aprenda a usar Visual Studio para editar, depurar y compilar códi
 ms.date: 03/02/2021
 ms.technology: vs-ide-general
 ms.custom:
+- vs-acquisition
 - get-started
 - SEO-VS-2020
 ms.topic: conceptual
@@ -14,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 398070e0214e36f696bb69614bb6a51b3462a551
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 486201d61f6bd2d149c9aea66efee1814ce667e7
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101682982"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386636"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Le damos la bienvenida al IDE de Visual Studio | Visual Basic
 
@@ -432,7 +433,7 @@ En primer lugar, vamos a cambiar el nombre de la variable `name`:
 
    Se cambia el nombre de la variable en el proyecto, que en nuestro caso es solo en dos lugares.
 
-4. Ahora echemos un vistazo a IntelliSense. Debajo de la línea que dice `Console.WriteLine("Hello " + username + "!")`, escriba el fragmento de código siguiente:
+4. Ahora echemos un vistazo a IntelliSense. Debajo de la línea que dice `Console.WriteLine("Hello &quot; + username + &quot;!")`, escriba el fragmento de código siguiente:
 
     ```vb
    Dim now = Date.
@@ -481,13 +482,13 @@ En primer lugar, vamos a cambiar el nombre de la variable `name`:
 
 ::: moniker-end
 
-## <a name="debug-code"></a>Depurar código
+## <a name="debug-code&quot;></a>Depurar código
 
 Cuando se escribe código, debe ejecutarlo y probarlo para ver si hay errores. El sistema de depuración de Visual Studio permite examinar el código por cada instrucción e inspeccionar las variables a medida que se avanza. Puede establecer *puntos de interrupción* que detengan la ejecución del código en una línea determinada. Puede observar cómo cambia el valor de una variable a medida que el código se ejecuta, etc.
 
-Vamos a establecer un punto de interrupción para ver el valor de la variable `username` mientras el programa se encuentra "en marcha".
+Vamos a establecer un punto de interrupción para ver el valor de la variable `username` mientras el programa se encuentra &quot;en marcha&quot;.
 
-1. Busque la línea de código en la que se indica `Console.WriteLine("Hello " + username + "!")`. Para establecer un punto de interrupción en esta línea de código, es decir, para que el programa detenga la ejecución en esta línea, haga clic en el margen izquierdo del editor. También puede hacer clic en cualquier lugar de la línea de código y, después, presionar **F9**.
+1. Busque la línea de código en la que se indica `Console.WriteLine(&quot;Hello &quot; + username + &quot;!")`. Para establecer un punto de interrupción en esta línea de código, es decir, para que el programa detenga la ejecución en esta línea, haga clic en el margen izquierdo del editor. También puede hacer clic en cualquier lugar de la línea de código y, después, presionar **F9**.
 
    Aparece un círculo de color rojo en el margen izquierdo y el código se resalta en color rojo.
 

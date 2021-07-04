@@ -3,10 +3,10 @@ title: Identificadores de componente y carga de trabajo de Visual Studio Enterpr
 titleSuffix: ''
 description: Use identificadores de componente y carga de trabajo de Visual Studio Enterprise para instalar Visual Studio mediante la línea de comandos o especifique una dependencia en un manifiesto de VSIX.
 keywords: ''
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
-ms.date: 3/2/2020
+ms.date: 05/25/2021
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -16,12 +16,12 @@ ms.assetid: be73e3af-d87b-4d14-bd08-2e4bda074fb3
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: aa226ecd3f760672f531adf61467004cd5e1485d
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: ad505ef8d57d5d681fd0b5b0af0ccba72f83780f
+ms.sourcegitcommit: 4a91c63683ba1c1832b1ba96657862a849320d81
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683352"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110565250"
 ---
 # <a name="visual-studio-enterprise-component-directory"></a>Directorio de componentes de Visual Studio Enterprise
 
