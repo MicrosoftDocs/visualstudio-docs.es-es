@@ -2,21 +2,21 @@
 title: Documentación sobre el control de versiones en Visual Studio
 summary: Puede compartir el código desde Visual Studio 2019 mediante tecnologías de control de versiones como Git y GitHub.
 metadata:
-  title: Control de versiones en Visual Studio
-  description: Algunas tecnologías de control de versiones, como Git y GitHub, están disponibles directamente en Visual Studio. Puede usarlas para compartir y administrar el código sin salir del código base.
+  title: Control de versiones y control de código fuente con Git en Visual Studio
+  description: Use tecnologías de control de versiones en Visual Studio. Puede compartir, integrar y administrar las versiones de código en Git y GitHub sin salir del código base.
   ms.topic: landing-page
-  ms.date: 04/20/2021
+  ms.date: 07/02/2021
   author: TerryGLee
   ms.author: tglee
   manager: jmartens
   ms.prod: visual-studio-windows
   ms.technology: vs-ide-general
-  ms.openlocfilehash: 50226243cc698391d79a52371262ec6202b45ad9
-  ms.sourcegitcommit: a0f5e7188838c5989c9cc78d99fb29bb2813501e
+  ms.openlocfilehash: 9bdd994d5fe1d5f54251ce49047feaf75145dcda
+  ms.sourcegitcommit: 8fb1500acb7e6314fbb6b78eada78ef5d61d39bf
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 05/11/2021
-  ms.locfileid: "109729231"
+  ms.lasthandoff: 07/03/2021
+  ms.locfileid: "113280406"
 landingContent:
 - title: Información general
   linkLists:
@@ -24,6 +24,8 @@ landingContent:
     links:
     - text: Experiencia de Git en Visual Studio
       url: git-with-visual-studio.md
+    - text: Configuración y preferencias de Git
+      url: git-settings.md
   - linkListType: concept
     links:
     - text: Control del código fuente de forma sencilla con Visual Studio

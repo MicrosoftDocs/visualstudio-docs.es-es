@@ -5,16 +5,15 @@ ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
 manager: jmartens
-ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 1b92792cf9db0090c52f583754e56c306e6d7234
-ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
+ms.openlocfilehash: 9229c3717b686a3f08ef49e7912ac0515864d793
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106082583"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113222817"
 ---
 # <a name="build-and-run-the-todo-sample-app"></a>Compilación y ejecución de la aplicación de tareas pendientes de ejemplo
 
@@ -30,7 +29,9 @@ Antes de poder ejecutar la aplicación, debe disponer de su código fuente en el
 
 1. Asegúrese de que tiene instalado Docker para Windows o Docker Community Edition en el equipo local. Consulte la [documentación de instalación de Docker para Windows](https://docs.docker.com/docker-for-windows/install/). El proceso de instalación hace que el archivo ZIP que contiene el ejemplo esté disponible en la dirección localhost.
 
-1. [Descargue el archivo ZIP](https://github.com/docker/getting-started/tree/master/app). Abra el archivo ZIP y asegúrese de extraer el contenido.
+1. Descargue el código fuente de la aplicación desde el repositorio de [Docker](https://github.com/docker/getting-started). Puede descargar el archivo ZIP del repositorio. Para descargar el archivo ZIP, use el botón **Código** de color verde y elija **Descargar archivo ZIP**. Abra el archivo ZIP y seleccione Extraer todo para extraer el código fuente de la aplicación desde la carpeta *app* a una carpeta del disco duro.
+
+   ![Captura de pantalla en la que se muestra el botón Código de color verde y la opción Descargar archivo ZIP](media/download-zip.png)
 
 1. Una vez que lo haya extraído, use el editor de código que prefiera para abrir el proyecto. Si necesita un editor, puede usar [Visual Studio Code](https://code.visualstudio.com/). Debería ver `package.json` y dos subdirectorios (`src` y `spec`).
 

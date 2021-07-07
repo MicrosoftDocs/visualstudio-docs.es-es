@@ -4,6 +4,8 @@
   items:
     - name: "Experiencia de Git en Visual\_Studio"
       href: git-with-visual-studio.md
+    - name: Configuración y preferencias de Git
+      href: git-settings.md
     - name: "Control del código fuente de forma sencilla con Visual\_Studio"
       href: git-visual-studio-source-control.md
 - name: Introducción

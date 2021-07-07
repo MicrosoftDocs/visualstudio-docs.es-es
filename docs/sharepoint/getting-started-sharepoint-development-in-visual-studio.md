@@ -17,17 +17,18 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 109cf2fe5661f23ae7fb051829ec1c9e9a6d2329
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a710d71b80f8aa64efef52b891a8c8a760b92c10
+ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99876633"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112112875"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>Introducción (Desarrollo de SharePoint en Visual Studio)
-  Esta sección está dedicada a ayudarle a empezar a trabajar con [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] para desarrollar soluciones de SharePoint que aprovechan las ventajas de [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] y [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)].
 
- Para obtener información sobre SharePoint 2013 y los complementos de SharePoint, vea [SharePoint 2013](https://www.microsoft.com/microsoft-365/previous-versions/microsoft-sharepoint-2013) y [Crear complementos de SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
+  Esta sección está dedicada a ayudarle a empezar a trabajar con [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] para desarrollar soluciones de SharePoint que aprovechan las ventajas de [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] y [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)].
+
+ Para obtener información sobre los complementos de SharePoint, vea [Creación de complementos de SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
 
  SharePoint proporciona una plataforma de colaboración basada en Web. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] proporciona muchas plantillas de proyecto para crear sitios y contenido de SharePoint, que incluyen definiciones de lista, flujos de trabajo, modelos de conectividad de datos profesionales y definiciones del sitio. Además, puede crear extensiones para los proyectos y herramientas de SharePoint en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
