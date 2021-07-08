@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b214452a2eb7a85b4a9baea5e4b4e80a1a71e63
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e3a301c1bd4758ea08f49036fcf8756c8d7e7c26
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933861"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306454"
 ---
 # <a name="walkthrough-use-msbuild"></a>Tutorial: Usar MSBuild
 
@@ -38,8 +38,8 @@ Puede ejecutar MSBuild desde Visual Studio o en la **ventana de comandos**. En e
 Si tiene Visual Studio, ya tiene MSBuild instalado. Para instalar MSBuild 15 en un sistema que no tiene Visual Studio, vaya a [Descargas anteriores de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/), expanda **Visual Studio 2017** y seleccione el botón **Descargar**. Si tiene una suscripción de Visual Studio, inicie sesión y busque el vínculo para descargar la versión más reciente de **Herramientas de compilación para Visual Studio 2017**. Si no tiene una suscripción de Visual Studio, todavía puede instalar la versión más reciente de las herramientas de compilación. En esta página, use el selector de versión para ir a la versión 2019 de la página y siga las instrucciones de instalación.
 ::: moniker-end
 
-::: moniker range="vs-2019"
-Si tiene Visual Studio, ya tiene MSBuild instalado. Con Visual Studio 2019, se instala en la carpeta de instalación de Visual Studio. En el caso de una instalación predeterminada típica en Windows 10, MSBuild.exe se encuentra en la carpeta de instalación en *MSBuild\Current\Bin*.
+::: moniker range=">=vs-2019"
+Si tiene Visual Studio, ya tiene MSBuild instalado. Con Visual Studio 2019 y versiones posteriores, se instala en la carpeta de instalación de Visual Studio. En el caso de una instalación predeterminada típica en Windows 10, MSBuild.exe se encuentra en la carpeta de instalación en *MSBuild\Current\Bin*.
 
 Para instalar MSBuild en un sistema que no tiene Visual Studio, vaya a [Descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/), desplácese a **Todas las descargas** y expanda **Herramientas para Visual Studio 2019**. Instale **Herramientas de compilación para Visual Studio 2019**, que incluye MSBuild, o instale el [SDK de .NET Core](/dotnet/core/sdk#acquiring-the-net-core-sdk).
 

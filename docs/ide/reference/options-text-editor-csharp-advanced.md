@@ -2,22 +2,22 @@
 title: Opciones, editor de texto, C#, avanzado
 description: Obtenga información sobre cómo usar la página Avanzadas de la sección C# para modificar la configuración de formato del editor, la refactorización de código y los comentarios de documentación XML para C#.
 ms.custom: SEO-VS-2020
-ms.date: 11/13/2020
+ms.date: 06/01/2021
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Advanced
-author: akhera99
+author: mikadumont
 ms.author: midumont
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: aa202f5c0abc490967a40255332976cdf9dca25a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 29f6dd2b4a101132bc7bc19664c51fd5d4b8283e
+ms.sourcegitcommit: f50bbdb15c4f9fca0fa245ca765183c378960cc5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959329"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "111351998"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opciones, editor de texto, C#, avanzado
 
@@ -103,6 +103,10 @@ Use la página de opciones **Avanzado** para modificar la configuración del for
 
    ![Acción rápida para instalar el paquete NuGet en Visual Studio](media/nuget-lightbulb.png)
 
+- Agregar las directivas using que faltan al pegar
+
+    Cuando se selecciona esta opción, las directivas `using` se agregarán automáticamente al código al pegar un tipo en un archivo.
+
 ## <a name="highlighting"></a>Resaltado
 
 - Resaltar referencias al símbolo bajo el cursor
@@ -129,8 +133,16 @@ Use la página de opciones **Avanzado** para modificar la configuración del for
 
 Active estas casillas de verificación para mostrar líneas punteadas verticales las llaves ( **{}** ) en el código. De este modo, puede ver con facilidad los bloques individuales de código para las construcciones de nivel de declaración y de nivel de código.
 
-## <a name="editor-help"></a>Ayuda del editor
+## <a name="comments"></a>Comentarios
+
+- Generar comentarios de documentación XML para ///
+
+   Cuando se selecciona, inserta los elementos XML de los comentarios de documentación XML después de escribir la introducción de comentario `///`. Para más información sobre la documentación XML, vea [Comentarios de documentación XML (Guía de programación de C#)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments).
+
 ::: moniker range=">=vs-2019"
+
+## <a name="inline-hints"></a>Sugerencias insertadas
+
 - Sugerencias de nombre de parámetro insertado 
     
     Al seleccionarlo, se insertan sugerencias de nombre de parámetro para literales, literales convertidos e instancias de objeto antes de cada argumento en las llamadas de función.  
@@ -142,10 +154,14 @@ Active estas casillas de verificación para mostrar líneas punteadas verticales
     Cuando se seleccionan, se insertan sugerencias de tipos para variables con tipos inferidos y tipos de parámetro lambda.  
     
     ![Sugerencias de tipos alineados para CSharp](media/inline-type-hints-csharp.png)
-::: moniker-end
-- Generar comentarios de documentación XML para ///
 
-   Cuando se selecciona, inserta los elementos XML de los comentarios de documentación XML después de escribir la introducción de comentario `///`. Para más información sobre la documentación XML, vea [Comentarios de documentación XML (Guía de programación de C#)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments).
+## <a name="inheritance-margin"></a>Margen de herencia 
+
+- Al seleccionarlo, se agregan iconos a los márgenes que representan las implementaciones e invalidaciones del código. Al hacer clic en el icono del margen de herencia se mostrarán las opciones de herencia que puede seleccionar para navegar a ellas.
+
+    ![Margen de herencia](media/inheritance-margin.png)
+
+::: moniker-end
 
 ## <a name="see-also"></a>Vea también
 

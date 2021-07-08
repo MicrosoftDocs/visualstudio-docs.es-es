@@ -1,17 +1,17 @@
 ---
-ms.date: 03/02/2021
+ms.date: 07/01/2021
 ms.technology: vs-ide-general
 ms.custom: vs-get-started
 ms.author: tglee
 author: TerryGLee
 manager: jmartens
 ms.topic: include
-ms.openlocfilehash: 4e36fe11b5eb604a9b109432047da9a3c26df414
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 007327dc525f515523f98323bc95e133209e1531
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101751065"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113279977"
 ---
 El *entorno de desarrollo integrado* de Visual Studio es un panel de inicio creativo que se puede usar para editar, depurar y compilar código y, después, publicar una aplicación. Un entorno de desarrollo integrado (IDE) es un programa con numerosas características que se pueden usar para muchos aspectos del desarrollo de software. Más allá del editor estándar y el depurador que proporcionan la mayoría de IDE, Visual Studio incluye compiladores, herramientas de finalización de código, diseñadores gráficos y muchas más características para facilitar el proceso de desarrollo de software.
 
@@ -21,15 +21,15 @@ El *entorno de desarrollo integrado* de Visual Studio es un panel de inicio crea
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
-[![IDE de Visual Studio 2019](../media/vs-2019/ide-overview.png)](../media/vs-2019/ide-overview.png#lightbox)
+:::image type="content" source="../media/vs-2019/ide-overview.png" alt-text="Captura de pantalla del IDE de Visual Studio, en la que se destaca dónde se encuentran las características y funcionalidades clave." lightbox="../media/vs-2019/ide-overview.png":::
 
 ::: moniker-end
 
 En esta imagen se muestra Visual Studio con un proyecto abierto y varias ventanas de herramientas clave que probablemente usará:
 
-- El [Explorador de soluciones](../../ide/solutions-and-projects-in-visual-studio.md) (parte superior derecha) permite ver, navegar y administrar los archivos de código. El **Explorador de soluciones** puede ayudar a organizar el código al agrupar los archivos en [soluciones y proyectos](../tutorial-projects-solutions.md).
+- El [Explorador de soluciones](../../ide/use-solution-explorer.md) (parte superior derecha) permite ver, navegar y administrar los archivos de código. El **Explorador de soluciones** puede ayudar a organizar el código al agrupar los archivos en [soluciones y proyectos](../../ide/solutions-and-projects-in-visual-studio.md).
 
 - La [ventana del editor](../../ide/writing-code-in-the-code-and-text-editor.md) (centro), donde es probable que pase la mayor parte del tiempo, muestra el contenido del archivo. Es donde puede editar código o diseñar una interfaz de usuario, como una ventana con botones y cuadros de texto.
 
@@ -39,7 +39,7 @@ En esta imagen se muestra Visual Studio con un proyecto abierto y varias ventana
 
 ::: moniker-end
 
-- [Team Explorer](/azure/devops/user-guide/work-team-explorer) (parte inferior derecha) permite realizar el seguimiento de los elementos de trabajo y compartir código con otros usuarios mediante tecnologías de control de versiones como [Git](https://git-scm.com/) y [Control de versiones de Team Foundation (TFVC)](/azure/devops/repos/tfvc/overview).
+- [Cambios de Git](/visualstudio/version-control/) (parte inferior derecha) permite realizar el seguimiento de los elementos de trabajo y compartir código con otros usuarios mediante tecnologías de control de versiones como [Git](https://git-scm.com/) y [GitHub](https://docs.github.com/github).
 
 ## <a name="editions"></a>Ediciones
 
@@ -51,7 +51,7 @@ Existen tres ediciones de Visual Studio: Community, Professional y Enterprise. 
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 Visual Studio está disponible para Windows y Mac. [Visual Studio para Mac](/visualstudio/mac/) tiene muchas de las mismas características que Visual Studio 2019 y está optimizado para el desarrollo de aplicaciones móviles y multiplataforma. Este artículo se centra en la versión de Windows de Visual Studio 2019.
 
@@ -384,13 +384,13 @@ En primer lugar, vamos a cambiar el nombre de la variable `name`:
 
 ::: moniker-end
 
-## <a name="debug-code"></a>Depurar código
+## <a name="debug-code&quot;></a>Depurar código
 
 Cuando se escribe código, debe ejecutarlo y probarlo para ver si hay errores. El sistema de depuración de Visual Studio permite examinar el código por cada instrucción e inspeccionar las variables a medida que se avanza. Puede establecer *puntos de interrupción* que detengan la ejecución del código en una línea determinada. Puede observar cómo cambia el valor de una variable a medida que el código se ejecuta, etc.
 
-Vamos a establecer un punto de interrupción para ver el valor de la variable `username` mientras el programa se encuentra "en marcha".
+Vamos a establecer un punto de interrupción para ver el valor de la variable `username` mientras el programa se encuentra &quot;en marcha&quot;.
 
-1. Busque la línea de código en la que se indica `Console.WriteLine($"\nHello {username}!");`. Para establecer un punto de interrupción en esta línea de código, es decir, para que el programa detenga la ejecución en esta línea, haga clic en el margen izquierdo del editor. También puede hacer clic en cualquier lugar de la línea de código y, después, presionar **F9**.
+1. Busque la línea de código en la que se indica `Console.WriteLine($&quot;\nHello {username}!");`. Para establecer un punto de interrupción en esta línea de código, es decir, para que el programa detenga la ejecución en esta línea, haga clic en el margen izquierdo del editor. También puede hacer clic en cualquier lugar de la línea de código y, después, presionar **F9**.
 
    Aparece un círculo de color rojo en el margen izquierdo y el código se resalta en color rojo.
 

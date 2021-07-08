@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/15/2019
 ms.technology: vs-azure
 ms.topic: reference
-ms.openlocfilehash: 24a36bdbe0d3c6ac57b7595883301841ffa138e1
-ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
+ms.openlocfilehash: e50935145913bcd1f3c4457f4704376a0ac0f6ef
+ms.sourcegitcommit: 162be102d2c22a1c4ad2c447685abd28e0e85d15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97846706"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "109973244"
 ---
 # <a name="container-tools-launch-settings"></a>Configuración de inicio de las herramientas de contenedor
 
@@ -89,4 +89,5 @@ Configure el proyecto estableciendo las [propiedades de compilación las herrami
 
 ## <a name="see-also"></a>Vea también
 
-[Propiedades de compilación de Docker Compose ](docker-compose-properties.md)
+- [Propiedades de compilación de Docker Compose ](docker-compose-properties.md)
+- [Administración de perfiles de inicio para Docker Compose](launch-profiles.md)

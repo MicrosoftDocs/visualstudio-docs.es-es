@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2a3fa99594f42e7e9c3739a8a8d57abf226bc04c
-ms.sourcegitcommit: 66951f064d601b1d7a2253cb9b250380807e12db
+ms.openlocfilehash: 868c02091814fe49ea0224190c7d205e8b67c42b
+ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103483198"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "112042982"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Especificadores de formato para C++ en el depurador de Visual Studio
 
@@ -104,6 +104,7 @@ En las siguientes tablas se describen los especificadores de formato que se pued
 |nr|Suprimir el elemento "Vista sin formato"|
 |nvo|Mostrar el elemento "Vista sin formato" solo para valores numéricos|
 |!|Sin formato, omite cualquier personalización de vistas de tipos de datos|\<customized representation>|4|
+|handle|Muestra información sobre el manipulador win32.|0x000000000000009c| Muestra información útil sobre el manipulador, como el identificador de subproceso, etc. |
 
 ::: moniker-end
 

@@ -2,17 +2,18 @@
 title: Conexión a proyectos en Team Explorer
 description: Aprenda a usar Team Explorer en Visual Studio para trabajar con los miembros del equipo en el desarrollo y la administración de proyectos.
 ms.custom: SEO-VS-2020
-ms.date: 03/31/2021
+ms.date: 06/11/2021
 ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
-ms.openlocfilehash: 78a71911bb4334e04a085d91ff51238d34981beb
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+monikerRange: <=vs-2019
+ms.openlocfilehash: b45399f7a4115ce5946a67caca22ca92148e7434
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106216610"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308251"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>Conexión a proyectos en Team Explorer
 
@@ -27,7 +28,7 @@ Use la ventana de la herramienta **Team Explorer** para coordinar los esfuerzos 
 Team Explorer conecta Visual Studio con repositorios de control de versiones de Team Foundation (TFVC) y con proyectos hospedados en [Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops-services) o en una instancia local de [Azure DevOps Server](/azure/devops/user-guide/about-azure-devops-services-tfs?view=azure-devops&preserve-view=true) (conocido anteriormente como TFS). Puede administrar código fuente, elementos de trabajo y compilaciones.
 
 > [!IMPORTANT]
-> Con la versión reciente de Visual Studio 2019, [**16.8**](/visualstudio/releases/2019/release-notes/), la nueva experiencia de control de versiones de Git ahora está activada de forma predeterminada. Si quiere más información sobre la comparación con Team Explorer, consulte la página [**Comparación en paralelo de Git y Team Explorer**](git-team-explorer-feature-comparison.md).
+> Con la publicación de Visual Studio 2019, [**versión 16.8**](/visualstudio/releases/2019/release-notes-history), la nueva experiencia de control de versiones de Git está activada de forma predeterminada. Si quiere más información sobre la comparación con Team Explorer, consulte la página [**Comparación en paralelo de Git y Team Explorer**](../version-control/git-team-explorer-feature-comparison.md).
 >
 > Sin embargo, si prefiere seguir usando Team Explorer, vaya a **Herramientas** > **Opciones** > **Entorno** > **Características en versión preliminar** y, luego, active o desactive la casilla **New Git user experience** (Nueva experiencia de usuario de Git).
 

@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a66268d5d6bd200eb3ef0e2c8bcf53471e3a735f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 13080f69de9a8bfc6b1da35a7126f1f0c89a64c7
+ms.sourcegitcommit: 4908561809ad397c99cf204f52d5e779512e502c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839168"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112254867"
 ---
 # <a name="step-4-run-code-in-the-debugger"></a>Paso 4: Ejecución de código en el depurador
 
@@ -50,6 +50,8 @@ Además de administrar proyectos, ofrecer una experiencia de edición enriquecid
     > Para cerrar la ventana de salida automáticamente cuando se complete el programa, seleccione el comando de menú **Herramientas** > **Opciones**, expanda el nodo **Python**, seleccione **Depuración** y, después, desactive la opción **Esperar la entrada cuando el proceso se cierre normalmente**:
     >
     > ![Opción de depuración de Python para cerrar la ventana de salida cuando el programa se cierre normalmente](media/vs-getting-started-python-22-debugging5.png)
+    >
+    > Para obtener información adicional sobre la depuración, incluidas tareas como establecer argumentos de script e intérprete, vea [Depuración del código de Python](debugging-python-in-visual-studio.md).
 
 1. Establezca un punto de interrupción en la instrucción `for` haciendo clic una vez en el margen gris junto a esa línea o colocando el operador exponencial en dicha línea y usando el comando **Depurar** > **Alternar puntos de interrupción** (**F9**). Aparecerá un punto rojo en el margen gris para indicar el punto de interrupción (como indica la flecha a continuación):
 

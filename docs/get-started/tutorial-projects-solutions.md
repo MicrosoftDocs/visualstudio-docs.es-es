@@ -4,6 +4,7 @@ description: Conozca la diferencia entre proyectos y soluciones y cómo usarlos 
 ms.date: 11/17/2020
 ms.technology: vs-ide-general
 ms.custom:
+- vs-acquisition
 - get-started
 - SEO-VS-2020
 ms.topic: tutorial
@@ -14,12 +15,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fe3eaf3c5efcc8341613e9f223d22410111a548f
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 1d06b53afc811517ac86be9bdc3e86cf7593bbaf
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101682591"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390039"
 ---
 # <a name="introduction-to-projects-and-solutions"></a>Introducción a proyectos y soluciones
 
@@ -34,6 +35,12 @@ Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Vi
 ::: moniker range="vs-2019"
 
 Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads) para instalarlo de forma gratuita.
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+Si todavía no ha instalado Visual Studio 2022 Preview, vaya a la página [Descargas de Visual Studio 2022 Preview](https://visualstudio.microsoft.com/vs/preview/vs2022) para instalarlo de forma gratuita.
 
 ::: moniker-end
 
@@ -222,7 +229,7 @@ Usaremos el nuevo proyecto de prueba unitaria para probar nuestro método en el 
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. Seleccione el nodo **Dependencias** en el proyecto **QuickTest** y, en el menú contextual que aparece al hacer clic con el botón derecho, seleccione **Agregar referencia de proyecto…**
 
@@ -292,7 +299,7 @@ Si quiere comprobar que la prueba unitaria funciona, seleccione **Probar** > **e
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 Si quiere comprobar que la prueba unitaria funciona, seleccione **Probar** > **Ejecutar todas las pruebas** desde la barra de menús. Se abre una ventana denominada **Explorador de pruebas**, donde debería ver que la prueba **TestGetCurrentDate** se supera.
 

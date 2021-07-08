@@ -11,12 +11,12 @@ ms.custom: seodec18, SEO-VS-2020
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9c8da2566be9b389b3ae36f2e6aa46686011ac0e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 196b15dff25681a23c05118a02f19109e09e3959
+ms.sourcegitcommit: 5fe2462ffc33c7ece9cf3a179fb598354c916e1f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942599"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "110320477"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Paso 2: Creación de una aplicación de Django con vistas y plantillas de página
 
@@ -48,6 +48,7 @@ Con cualquiera de estos métodos, cree una aplicación con el nombre "HelloDjang
 
 ![Archivos de la aplicación de Django en el Explorador de soluciones](media/django/step02-django-app-in-solution-explorer.png)
 
+::: moniker range="vs-2017"
 | Elemento | Descripción |
 | --- | --- |
 | **\_\_init\_\_.py** | El archivo que identifica la aplicación como un paquete. |
@@ -58,6 +59,20 @@ Con cualquiera de estos métodos, cree una aplicación con el nombre "HelloDjang
 | **models.py** | Los modelos son objetos de datos, identificados por funciones, a través de los cuales las vistas interactúan con la base de datos subyacente de la aplicación (vea el paso 6). Django proporciona el nivel de conexión de base de datos para que las aplicaciones no tengan que preocuparse por estos detalles. El archivo *models.py* es una ubicación predeterminada para crear los modelos, e inicialmente contiene solo la instrucción, `from django.db import models`. |
 | **tests.py** | Un archivo de Python que contiene la estructura básica de las pruebas unitarias. |
 | **views.py** | Las vistas son lo que se suele considerar páginas web, que toman una solicitud HTTP y devuelven una respuesta HTTP. Las vistas suelen representarse como código HTML que los exploradores web saben cómo mostrar, pero una vista no tiene necesariamente que ser visible (por ejemplo, un formulario intermedio). Una vista se define mediante una función de Python cuya responsabilidad es representar el código HTML que se enviará al explorador. El archivo *views.py* es una ubicación predeterminada para crear vistas, e inicialmente contiene solo la instrucción, `from django.shortcuts import render`. |
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+| Elemento | Descripción |
+| --- | --- |
+| **\_\_init\_\_.py** | El archivo que identifica la aplicación como un paquete. |
+| **migrations** | Una carpeta en la que Django almacena los scripts que actualizan la base de datos para adaptarlos a los cambios de los modelos. Las herramientas de migración de Django aplican entonces los cambios necesarios a cualquier versión anterior de la base de datos para que coincida con los modelos actuales. Con las migraciones, mantiene el foco en los modelos y permite que Django controle el esquema de base de datos subyacente. Las migraciones se describen en la [documentación de Django](https://docs.djangoproject.com/en/3.2/topics/migrations/); por ahora, la carpeta contiene simplemente un archivo *\_\_init\_\_.py* (que indica que la carpeta define su propio paquete de Python). |
+| **templates** | Carpeta para las plantillas de página de Django que contienen un único archivo *index.html* dentro de una carpeta que coincide con el nombre de la aplicación. (En Visual Studio 2017 15.7 y versiones anteriores, el archivo se encuentra directamente en *Plantillas* y en los pasos del 2 al 4 se insta al usuario a crear la subcarpeta). Las plantillas son bloques de HTML en las que las vistas pueden agregar información para representar una página de forma dinámica. Las "variables" de la plantilla de la página, como `{{ content }}` en *index.html*, son marcadores de posición para valores dinámicos, como se explica más adelante en este artículo (paso 2). Las aplicaciones de Django normalmente crean un espacio de nombres colocándolas en una subcarpeta que coincida con el nombre de la aplicación. |
+| **admin.py** | El archivo de Python en el que amplía la interfaz administrativa de la aplicación, que se usa para inicializar y editar datos en una base de datos. Inicialmente, este archivo contiene solo la instrucción, `from django.contrib import admin`. De forma predeterminada, Django incluye una interfaz de administración estándar a través de entradas en el archivo *settings.py* del proyecto de Django, que puede activar quitando las marcas de comentario de las entradas existentes en *urls.py*. |
+| **apps.py** | Un archivo de Python que define una clase de configuración para la aplicación (vea a continuación, después de esta tabla). |
+| **models.py** | Los modelos son objetos de datos, identificados por funciones, mediante los cuales las vistas interactúan con la base de datos subyacente de la aplicación. Django proporciona el nivel de conexión de base de datos para que las aplicaciones no tengan que preocuparse por estos detalles. El archivo *models.py* es una ubicación predeterminada para crear los modelos, e inicialmente contiene solo la instrucción, `from django.db import models`. |
+| **tests.py** | Un archivo de Python que contiene la estructura básica de las pruebas unitarias. |
+| **views.py** | Las vistas son lo que se suele considerar páginas web, que toman una solicitud HTTP y devuelven una respuesta HTTP. Las vistas suelen representarse como código HTML que los exploradores web saben cómo mostrar, pero una vista no tiene necesariamente que ser visible (por ejemplo, un formulario intermedio). Una vista se define mediante una función de Python cuya responsabilidad es representar el código HTML que se enviará al explorador. El archivo *views.py* es una ubicación predeterminada para crear vistas, e inicialmente contiene solo la instrucción, `from django.shortcuts import render`. |
+::: moniker-end
 
 El contenido de *apps.py* aparece del modo siguiente cuando se usa el nombre "HelloDjangoApp":
 

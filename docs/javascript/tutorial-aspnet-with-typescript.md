@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ce27b8fdd73c1fcc001861a9b1fb7c2e9e4f4058
-ms.sourcegitcommit: 00e16b9afe6b22ba0591e4d0d92690544e6d4357
+ms.openlocfilehash: 0728011c05d47996a313c11a18f31a196ec08e10
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "105616992"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306504"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>Tutorial: Crear una aplicación ASP.NET Core con TypeScript en Visual Studio
 
@@ -28,9 +28,15 @@ Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Vi
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads) para instalarlo de forma gratuita.
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+Si todavía no ha instalado Visual Studio 2022 Preview, vaya a la página [Descargas de Visual Studio 2022 Preview](https://visualstudio.microsoft.com/vs/preview/vs2022) para instalarlo de forma gratuita.
 
 ::: moniker-end
 
@@ -220,7 +226,7 @@ En este tutorial, empezará con un proyecto simple que contiene el código de un
 1. Siga las instrucciones de la [administración de paquetes de npm](../javascript/npm-package-management.md#aspnet-core-projects) para agregar un archivo `package.json` al proyecto. Esto agrega compatibilidad con npm al proyecto.
 
    >[!NOTE]
-   > En el caso de los proyectos de ASP.NET Core, también se puede usar el [Administrador de bibliotecas](https://docs.microsoft.com/aspnet/core/client-side/libman/?view=aspnetcore-3.1&preserve-view=true) o yarn, en lugar de npm, para instalar los archivos JavaScript y CSS del lado cliente.
+   > En el caso de los proyectos de ASP.NET Core, también se puede usar el [Administrador de bibliotecas](/aspnet/core/client-side/libman/) o yarn, en lugar de npm, para instalar los archivos JavaScript y CSS del lado cliente.
 
 1. En este ejemplo, agregue un archivo de definición de TypeScript para jQuery al proyecto. Incluya lo siguiente en el archivo *package.json*.
 

@@ -9,12 +9,12 @@ monikerRange: '>=vs-2019'
 manager: jmartens
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: 1709785c63bd4fbcd702fbcacfe59dddcb71d1b3
-ms.sourcegitcommit: 0135fc6ffa38995cc9e6ab05fa265758890d2e15
+ms.openlocfilehash: 838589e0dd81232de25b88989d621a07fb22f972
+ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "107526156"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "112043060"
 ---
 # <a name="how-bridge-to-kubernetes-works"></a>Funcionamiento del Puente a Kubernetes
 
@@ -52,6 +52,9 @@ Además, Puente a Kubernetes proporciona una manera de replicar variables de ent
 
 > [!NOTE]
 > Durante toda la conexión al clúster (más unos 15 minutos adicionales), Puente a Kubernetes ejecuta un proceso llamado *EndpointManager* con permisos de administrador en el equipo local.
+
+> [!NOTE]
+> Puede realizar la depuración en paralelo, con varios servicios, pero tendrá que iniciar tantas instancias de Visual Studio como servicios quiera depurar. Asegúrese de que los servicios escuchan en distintos puertos localmente y, después, configúrelos y depúrelos por separado. En este escenario no se admite el aislamiento.
 
 ## <a name="additional-configuration-with-kuberneteslocalprocessconfigyaml"></a>Configuración adicional con KubernetesLocalProcessConfig.yaml
 

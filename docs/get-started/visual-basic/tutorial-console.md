@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Introducción a Visual Basic'
 description: Aprenda a crear aplicaciones de consola de Visual Basic en Visual Studio mediante un procedimiento paso a paso.
-ms.custom: seodec18, get-started
+ms.custom: vs-acquisition,  get-started
 ms.date: 02/10/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 075c84433e5784106bbe1f9c6ac6f58d9613bfdb
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 8d34fef6251da95b6c3ac99430b87d853d4b5ba7
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107295499"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390716"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Tutorial: Introducción a Visual Basic en Visual Studio
 
@@ -34,6 +34,12 @@ Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Vi
 ::: moniker range="vs-2019"
 
 Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads) para instalarlo de forma gratuita.
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+Si todavía no ha instalado Visual Studio 2022 Preview, vaya a la página [Descargas de Visual Studio 2022 Preview](https://visualstudio.microsoft.com/vs/preview/vs2022) para instalarlo de forma gratuita.
 
 ::: moniker-end
 
@@ -73,12 +79,12 @@ Si no ve la plantilla de proyecto **Aplicación de consola (.NET Core)** , puede
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 > [!NOTE]
 > Algunas de las capturas de pantalla de este tutorial usan el tema oscuro. Si no está usando el tema oscuro pero le gustaría hacerlo, vea la página [Guía de inicio rápido: personalizar el IDE y el editor de Visual Studio](../../ide/quickstart-personalize-the-ide.md) para obtener información sobre cómo hacerlo.
 
-1. Abra Visual Studio 2019.
+1. Abra Visual Studio.
 
 1. En la ventana de inicio, elija **Crear un proyecto nuevo**.
 
@@ -146,7 +152,7 @@ Vamos a crear una aplicación que le solicita el nombre y, después, lo muestra 
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. En el proyecto *WhatIsYourName*, escriba el código de Visual Basic siguiente inmediatamente después del corchete de apertura que sigue a la línea `Sub Main(args As String())` y antes de la línea `End Sub`:
 
@@ -208,7 +214,7 @@ Vamos a crear una aplicación que le solicita el nombre y, después, lo muestra 
 
 ::: moniker-end 
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. En la ventana de inicio, elija **Crear un proyecto nuevo**. 
 

@@ -1,8 +1,8 @@
 ---
-title: Uso de Visual Studio para crear la primera aplicación de consola de C#
+title: 'Tutorial: Creación de una aplicación de consola de C# con Visual Studio'
 titleSuffix: ''
 description: Obtenga información sobre cómo crear una aplicación de consola Hola mundo sencilla en Visual Studio con C#, paso a paso.
-ms.custom: seodec18
+ms.custom: vs-acquisition
 ms.date: 03/23/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
@@ -15,12 +15,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f51e3e6617578236d31090b23e8cb7c661d6043
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: bf7a52b6dbf36c25590292c3272f1e63d07156b9
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107296799"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387624"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>Inicio rápido: Uso de Visual Studio para crear la primera aplicación de consola de C#
 
@@ -35,6 +35,12 @@ Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Vi
 ::: moniker range="vs-2019"
 
 Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads) para instalarlo de forma gratuita.
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+Si todavía no ha instalado Visual Studio 2022 Preview, vaya a la página [Descargas de Visual Studio 2022 Preview](https://visualstudio.microsoft.com/vs/preview/vs2022) para instalarlo de forma gratuita.
 
 ::: moniker-end
 
@@ -62,9 +68,9 @@ En primer lugar, se creará un proyecto de aplicación C#. En el tipo de proyect
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
-1. Abra Visual Studio 2019.
+1. Abra Visual Studio.
 
 1. En la ventana de inicio, elija **Crear un proyecto nuevo**.
 
@@ -103,7 +109,7 @@ Tras seleccionar la plantilla de proyecto de C# y asignar un nombre al proyecto,
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 Visual Studio incluye código predeterminado de "Hola mundo" en el proyecto.
 

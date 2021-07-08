@@ -1,7 +1,7 @@
 ---
-description: Importa, exporta o restablece la configuración de Visual Studio.
+description: Importa, exporta o restablece la configuración de Visual Studio. Extensión de archivo vssettings
 title: comando para importar y exportar configuraciones
-ms.date: 11/21/2018
+ms.date: 05/28/2021
 ms.topic: reference
 f1_keywords:
 - Tools.ImportandExportSettings
@@ -14,16 +14,18 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f2ea4811af2c44277b9a6dc285972c5267b28d7
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: dba50cf598c3c74f6c9407fbef5d55f938941a11
+ms.sourcegitcommit: 63cb90e8cea112aa2ce8741101b309dbc709e393
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102223683"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "110687643"
 ---
-# <a name="import-and-export-settings-command"></a>comando para importar y exportar configuraciones
+# <a name="import-and-export-settings-command-vssettings-file"></a>Comando Importar y exportar configuraciones (archivo .vssettings)
 
-Importa, exporta o restablece la configuración de Visual Studio.
+Importa, exporta o restablece el archivo de configuración de Visual Studio, `.vssettings`.
+
+El esquema del archivo está abierto. Normalmente, el esquema sigue una estructura XML donde cada categoría es una etiqueta que, a su vez, puede contener etiquetas de subcategoría. Estas etiquetas de subcategoría pueden contener etiquetas de valor de propiedad. Aunque en la mayoría de los paquetes se usa la estructura común, cualquier paquete de Visual Studio puede aportar código XML arbitrario al archivo con el esquema que elija.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +47,7 @@ Opcional. Importa la configuración al archivo especificado.
 
 Opcional. Restablece la configuración actual.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Al ejecutar este comando sin modificadores se abre el Asistente **Importar y exportar configuraciones**. Para obtener más información, vea [Sincronizar la configuración](../synchronized-settings-in-visual-studio.md) y [Configuración del entorno](../environment-settings.md).
 
@@ -56,6 +58,8 @@ El comando siguiente exporta la configuración actual al archivo `MyFile.vssetti
 ```cmd
 Tools.ImportandExportSettings /export:"c:\Files\MyFile.vssettings"
 ```
+
+
 
 ## <a name="see-also"></a>Consulte también
 

@@ -1,8 +1,9 @@
 ---
-title: 'Inicio rápido: Usar Visual Studio para crear su primer servicio web de ASP.NET Core en F#'
+title: 'Inicio rápido: Crear un servicio web de ASP.NET Core en F#'
 description: Aprenda a crear paso a paso un servicio web de ASP.NET Core en Visual Studio con F#.
 ms.date: 08/24/2018
 ms.topic: quickstart
+ms.custom: vs-acquisition
 author: cartermp
 ms.author: phcart
 manager: andrehal
@@ -11,14 +12,14 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 990106f7f3ca97ae38a20170ca6ed2e1d699d4e4
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 298b55120a5e4d0efea1ec5eeeacc2dfa3da274f
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "70180314"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386441"
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Inicio rápido: Usar Visual Studio para crear el primer servicio web de ASP.NET Core en F\#
+# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Inicio rápido: Uso de Visual Studio para crear el primer servicio web de ASP.NET Core en F\#
 
 En esta introducción a F# en Visual Studio de unos 5 a 10 minutos, creará una aplicación web de ASP.NET Core en F#.
 
@@ -31,6 +32,12 @@ Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Vi
 ::: moniker range="vs-2019"
 
 Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads) para instalarlo de forma gratuita.
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+Si todavía no ha instalado Visual Studio 2022 Preview, vaya a la página [Descargas de Visual Studio 2022 Preview](https://visualstudio.microsoft.com/vs/preview/vs2022) para instalarlo de forma gratuita.
 
 ::: moniker-end
 
@@ -50,7 +57,7 @@ Primero creará un proyecto de API web de ASP.NET Core. En el tipo de proyecto s
 
      ![Carga de trabajo ASP.NET en el instalador de Visual Studio](../ide/media/quickstart-aspnet-workload.png)
 
-4.En el cuadro de diálogo **Nueva aplicación web ASP.NET Core**, seleccione **ASP.NET Core 2.1** en el menú desplegable situado en la parte superior. Si en la lista no aparece **ASP.NET Core 2.1**, debe instalarlo siguiendo el vínculo **Descargar** que aparece en una barra amarilla en la parte superior del cuadro de diálogo. Elija **Aceptar**.
+4.En el cuadro de diálogo **Nueva aplicación web ASP.NET Core**, seleccione **ASP.NET Core 2.1** en el menú desplegable situado en la parte superior. (Si no ve **ASP.NET Core 2.1** en la lista, para instalarlo siga el vínculo **Descargar** que debe aparecer en una barra amarilla en la parte superior del cuadro de diálogo). Elija **Aceptar**.
 
 ::: moniker-end
 
@@ -60,7 +67,7 @@ Primero creará un proyecto de API web de ASP.NET Core. En el tipo de proyecto s
 
 2. En la ventana de inicio, elija **Crear un proyecto nuevo**.
 
-3. En la página **Crear un proyecto nuevo**, escriba **f# web** en el cuadro de búsqueda y elija la plantilla de proyecto **Aplicación web de ASP.NET Core**. Seleccione **Siguiente**.
+3. En la página **Crear un proyecto nuevo**, escriba **f# web** en el cuadro de búsqueda y elija la plantilla de proyecto **Aplicación web de ASP.NET Core**. Elija **Siguiente**.
 
 4. En la página **Configure su nuevo proyecto**, escriba un nombre y elija **Crear**.
 
@@ -89,7 +96,7 @@ El resultado debería tener un aspecto similar a este en el editor:
 
 ![Miembro Get modificado](../ide/media/hello-world-fs-get-member.png)
 
-## <a name="run-the-application"></a>Ejecutar la aplicación
+## <a name="run-the-application"></a>Ejecución de la aplicación
 
 1. Presione **Ctrl**+**F5** para ejecutar la aplicación y abrirla en un explorador web.
 

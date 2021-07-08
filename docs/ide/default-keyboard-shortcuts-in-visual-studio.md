@@ -2,7 +2,7 @@
 title: Métodos abreviados de teclado predeterminados
 description: Conozca los métodos abreviados de teclado predeterminados de Visual Studio que le permiten acceder a diversos comandos y ventanas.
 ms.custom: SEO-VS-2020
-ms.date: 03/10/2021
+ms.date: 06/21/2021
 ms.topic: reference
 helpviewer_keywords:
 - shortcut keys [Visual Studio], keyboard binding schemes
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 73bb5e48c37cb24d434e57356a90f2bc3907a696
-ms.sourcegitcommit: 6f18481e4f84d86a837ec5d0e8f12fff1a1a8b65
+ms.openlocfilehash: 182102d4de3a2acbec8be82f69650c708817e54c
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "102782829"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113222973"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Métodos abreviados de teclado predeterminados de Visual Studio
 
@@ -28,11 +28,175 @@ Puede acceder a una serie de [comandos](reference/visual-studio-commands.md) y v
 
 Para obtener una lista de los accesos directos de teclado comunes y otra información de productividad, consulte:
 
-- [Accesos directos de teclado para comandos de uso frecuente](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
 - [Sugerencias y trucos de Visual Studio](../ide/productivity-shortcuts.md)
 - [Sugerencias de productividad](../ide/productivity-features.md).
 
 Para obtener más información sobre la accesibilidad en Visual Studio, consulte [Sugerencias y trucos de accesibilidad](../ide/reference/accessibility-tips-and-tricks.md) y [Cómo: Usar el teclado exclusivamente](../ide/reference/how-to-use-the-keyboard-exclusively.md).
+
+<!---## Printable shortcut cheatsheet
+
+Download and print our Visual Studio shortcut cheatsheet.
+
+[ ![Visual Studio Cheatsheet.](media/default-keyboard-shortcuts-in-visual-studio/visual-studio-shortcut-cheatsheet.png)](media/default-keyboard-shortcuts-in-visual-studio/visual-studio-shortcut-cheatsheet-extended.png#lightbox)
+-->
+## <a name="most-popular-keyboard-shortcuts"></a>Métodos abreviados de teclado más populares
+
+Todos los métodos abreviados de teclado de esta sección se aplican de forma global a menos que se especifique lo contrario. El contexto *Global* significa que el método abreviado puede aplicarse en cualquier ventana de herramientas de Visual Studio.
+
+> [!NOTE]
+> Puede [buscar el método abreviado](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) de un comando abriendo el cuadro de diálogo **Opciones**, expandiendo el nodo **Entorno** y eligiendo **Teclado**.
+
+
+#### <a name="build-popular-shortcuts"></a>Compilación: métodos abreviados de teclado populares
+
+|Comandos|Métodos abreviados de teclado |
+|--------------| - |
+|Build.BuildSolution|**Ctrl+Mayús+B** |
+|Build.Cancel|**Ctrl+Inter** |
+|Build.Compile|**Ctrl+F7** |
+|Build.RunCodeAnalysisonSolution|**Alt+F11**|
+
+#### <a name="debug-popular-shortcuts"></a>Depuración: métodos abreviados de teclado populares
+
+|Comandos|Métodos abreviados de teclado [contextos especiales]|
+|--------------| - |
+|Debug.BreakatFunction|**Ctrl+B**|
+|Debug.BreakAll|**Ctrl+Alt+Inter**|
+|Debug.DeleteAllBreakpoints|**Ctrl+Mayús+F9**|
+|Debug.Exceptions|**Ctrl+Alt+E**|
+|Debug.QuickWatch|**Ctrl+Alt+Q**<br /><br />o bien **Mayús+F9**|
+|Debug.Restart|**Ctrl+Mayús+F5**|
+|Debug.RunToCursor|**Ctrl+F10**|
+|Debug.SetNextStatement|**Ctrl+Mayús+F10**|
+|Debug.Start|**F5**|
+|Debug.StartWithoutDebugging|**Ctrl+F5**|
+|Debug.StepInto|**F11**|
+|Debug.StepOut|**Mayús+F11**|
+|Debug.StepOver|**F10**|
+|Debug.StopDebugging|**Mayús+F5**|
+|Debug.ToggleBreakpoint|**F9**|
+
+#### <a name="edit-popular-shortcuts"></a>Edición: métodos abreviados de teclado populares
+
+|Comandos|Métodos abreviados de teclado [contextos especiales]|
+|--------------| - |
+|Edit.BreakLine|**Entrar** [Editor de texto, Diseñador de informes, Diseñador de Windows Forms]<br /><br />o **Mayús+Entrar** [Editor de texto]|
+|Edit.CollapseToDefinitions|**Ctrl+M**, **Ctrl+O** [Editor de texto]|
+|Edit.CommentSelection|**Ctrl+K**, **Ctrl+C** [Editor de texto]|
+|Edit.CompleteWord|**Alt+Flecha derecha** [Editor de texto, Diseñador de flujo de trabajo]<br /><br />o **Ctrl+Barra espaciadora** [Editor de texto, Diseñador de flujo de trabajo]<br /><br />o **Ctrl+K**, **W** [Diseñador de flujo de trabajo]<br /><br />o **Ctrl+K, Ctrl+W** [Diseñador de flujo de trabajo]|
+|Edit.Copy|**Ctrl+C**<br /><br />o bien **Ctrl+Insert**|
+|Edit.Cut|**Ctrl+X**<br /><br />o bien **Mayús+Supr**|
+|Edit.Delete|**Eliminar** [Team Explorer]<br /><br />o **Mayús+Supr** [Diagrama de secuencia, Diagrama de actividades de UML, Diagramas de capas]<br /><br />o **Ctrl+Supr** [Diagrama de clases]|
+|Edit.Find|**Ctrl+F**|
+|Edit.FindAllReferences|**Mayús+F12**|
+|Edit.FindinFiles|**Ctrl+Mayús+F**|
+|Edit.FindNext|**F3**|
+|Edit.FindNextSelected|**Ctrl+F3**|
+|Edit.FormatDocument|**Ctrl+K, Ctrl+D** [Editor de texto]|
+|Edit.FormatSelection|**Ctrl+K, Ctrl+F** [Editor de texto]|
+|Edit.GoTo|**Ctrl+G**|
+|Edit.GoToDeclaration|**Ctrl+F12**|
+|Edit.GoToDefinition|**F12**|
+|Edit.GoToFindCombo|**Ctrl+D**|
+|Edit.GoToNextLocation|**F8**|
+|Edit.InsertSnippet|**Ctrl+K**, **Ctrl+X**|
+|Edit.InsertTab|**Tabulación** [Diseñador de informes, Diseñador de Windows Forms, Editor de texto]|
+|Edit.LineCut|**Ctrl+L** [Editor de texto]|
+|Edit.LineDownExtendColumn|**Mayús+Alt+Flecha abajo** [Editor de texto]|
+|Edit.LineOpenAbove|**Ctrl+Entrar** [Editor de texto]|
+|Edit.ListMembers|**Ctrl+J** [Editor de texto, Diseñador de flujo de trabajo]<br /><br />o **Ctrl+K, Ctrl+L** [Diseñador de flujo de trabajo]<br /><br />o **Ctrl+K, L** [Diseñador de flujo de trabajo]|
+|Edit.NavigateTo|**Ctrl+,**|
+|Edit.OpenFile|**Ctrl+Mayús+G**|
+|Edit.OvertypeMode|**Insert** [Editor de texto]|
+|Edit.ParameterInfo|**Ctrl+Mayús+Barra espaciadora** [Editor de texto, Diseñador de flujo de trabajo]<br /><br />o **Ctrl+K, Ctrl+P** [Diseñador de flujo de trabajo]<br /><br />o **Ctrl+K, P** [Diseñador de flujo de trabajo]|
+|Edit.Paste|**Ctrl+V**<br /><br />o bien **Mayús+Insertar**|
+|Edit.PeekDefinition|**Alt+F12** [Editor de texto]|
+|Edit.Redo|**Ctrl+Y**<br /><br />o bien **Mayús+Alt+Retroceso**<br /><br />o bien **Ctrl+Mayús+Z**|
+|Edit.Replace|**Ctrl+H**|
+|Edit.SelectAll|**Ctrl+A**|
+|Edit.SelectCurrentWord|**Ctrl+W** [Editor de texto]|
+|Edit.SelectionCancel|**Esc** [Editor de texto, Diseñador de informes, Diseñador de configuración, Diseñador de Windows Forms, Editor de recursos administrados]|
+|Edit.SurroundWith|**Ctrl+K, Ctrl+S**|
+|Edit.TabLeft|**Mayús+Tab** [Editor de texto, Diseñador de informes, Editor de formularios Windows Forms]|
+|Edit.ToggleAllOutlining|**Ctrl+M, Ctrl+L** [Editor de texto]|
+|Edit.ToggleBookmark|**Ctrl+K, Ctrl+K** [Editor de texto]|
+|Edit.ToggleCompletionMode|**Ctrl+Alt+Barra espaciadora** [Editor de texto]|
+|Edit.ToggleOutliningExpansion|**Ctrl+M, Ctrl+M** [Editor de texto]|
+|Edit.UncommentSelection|**Ctrl+K, Ctrl+U** [Editor de texto]|
+|Edit.Undo|**Ctrl+Z**<br /><br />o bien **Alt+Retroceso**|
+|Edit.WordDeleteToEnd|**Ctrl+Supr** [Editor de texto]|
+|Edit.WordDeleteToStart|**Ctrl+Retroceso** [Editor de texto]|
+
+#### <a name="file-popular-shortcuts"></a>Archivo: métodos abreviados de teclado populares
+
+|Comandos|Métodos abreviados de teclado [contextos especiales]|
+|--------------| - |
+|File.Exit|**Alt+F4**|
+|File.NewFile|**Ctrl+N**|
+|File.NewProject|**Ctrl+Mayús+N**|
+|File.NewWebSite|**Mayús+Alt+N**|
+|File.OpenFile|**Ctrl+O**|
+|File.OpenProject|**Ctrl+Mayús+O**|
+|File.OpenWebSite|**Mayús+Alt+O**|
+|File.Rename|**F2** [Team Explorer]|
+|File.SaveAll|**Ctrl+Mayús+S**|
+|File.SaveSelectedItems|**Ctrl+S**|
+|File.ViewinBrowser|**Ctrl+Mayús+W**|
+
+#### <a name="project-popular-shortcuts"></a>Proyecto: métodos abreviados de teclado populares
+
+|Comandos|Métodos abreviados de teclado [contextos especiales]|
+|--------------| - |
+|Project.AddExistingItem|**Mayús+Alt+A**|
+|Project.AddNewItem|**Ctrl+Mayús+A**|
+
+#### <a name="refactor-popular-shortcuts"></a>Refactorizar: métodos abreviados de teclado populares
+
+|Comando|Método abreviado de teclado [contextos especiales]|
+|-------------| - |
+|Refactor.ExtractMethod|**Ctrl+R, Ctrl+M**|
+
+#### <a name="tools-popular-shortcuts"></a>Herramientas: métodos abreviados de teclado populares
+
+|Comando|Método abreviado de teclado [contextos especiales]|
+|-------------| - |
+|Tools.AttachtoProcess|**Ctrl+Alt+P**|
+
+#### <a name="view-popular-shortcuts"></a>Ver: métodos abreviados de teclado populares
+
+|Comandos|Métodos abreviados de teclado [contextos especiales]|
+|--------------| - |
+|View.ClassView|**Ctrl+Mayús+C**|
+|View.EditLabel|**F2**|
+|View.ErrorList|**Ctrl+\\, Ctrl+E**<br /><br />o bien **Ctrl+\\, E**|
+|View.NavigateBackward|**Ctrl+-**|
+|View.NavigateForward|**Ctrl+Mayús+-**|
+|View.ObjectBrowser|**Ctrl+Alt+J**|
+|View.Output|**Ctrl+Alt+O**|
+|View.PropertiesWindow|**F4**|
+|View.Refresh|**F5** [Team Explorer]|
+|View.ServerExplorer|**Ctrl+Alt+S**|
+|View.ShowSmartTag|**Ctrl+.**<br /><br />o bien **Mayús+Alt+F10** [Vista de diseño del editor de HTML]|
+|View.SolutionExplorer|**Ctrl+Alt+L**|
+|View.TfsTeamExplorer|**Ctrl+\\, Ctrl+M**|
+|View.Toolbox|**Ctrl+Alt+X**|
+|View.ViewCode|**Entrar** [Diagrama de clases]<br /><br />o **F7** [Diseñador de configuración]|
+|View.ViewDesigner|**Mayús+F7** [Vista de código fuente del editor de HTML]|
+
+#### <a name="window-popular-shortcuts"></a>Ventana: métodos abreviados de teclado populares
+
+|Comandos|Métodos abreviados de teclado [contextos especiales]|
+|--------------| - |
+|Window.ActivateDocumentWindow|**Esc**|
+|Window.CloseDocumentWindow|**Ctrl+F4**|
+|Window.NextDocumentWindow|**Ctrl+F6**|
+|Window.NextDocumentWindowNav|**Ctrl+Tab**|
+|Window.NextSplitPane|**F6**|
+
+
+## <a name="global-shortcuts"></a>Accesos directos globales
+
+Estos métodos abreviados de teclado son *globales*, lo que significa que se pueden usar cuando tenga el foco cualquier ventana de Visual Studio.
 
 - [Analizar](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)
 - [Editar](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)
@@ -59,10 +223,6 @@ Para obtener más información sobre la accesibilidad en Visual Studio, consulte
 - [Menús contextuales de Team Foundation](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)
 - [Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)
 - [Concentrador de diagnósticos](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)
-
-## <a name="global-shortcuts"></a>Accesos directos globales
-
-Estos métodos abreviados de teclado son *globales*, lo que significa que se pueden usar cuando tenga el foco cualquier ventana de Visual Studio.
 
 ### <a name="analyze"></a><a name="bkmk_analyze"></a> Analizar
 
@@ -98,6 +258,7 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
 |Debug.ApplyCodeChanges|**Alt+F10**|
+|Debug.AttachtoProcess |**Ctrl+Alt+P**|
 |Debug.Autos|**Ctrl+Alt+V, A**|
 |Debug.BreakAll|**Ctrl+Alt+Inter**|
 |Debug.Breakpoints|**Ctrl+Alt+B**|
@@ -133,6 +294,7 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |Debug.ParallelWatch4|**Ctrl+Mayús+D, 4**|
 |Debug.Processes|**Ctrl+Alt+Z**|
 |Debug.QuickWatch|**Mayús + F9** o **Ctrl + Al t+ Q**|
+|Debug.ReattachtoProcess|**Mayús+Alt+P**|
 |Debug.RefreshWindowsapp|**Ctrl+Mayús+R**|
 |Debug.Registers|**Ctrl+Alt+G**|
 |Debug.Restart|**Ctrl+Mayús+F5**|
@@ -464,7 +626,12 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |WindowsAzure.RetryMobileServiceScriptOperation|**Ctrl+Núm \*, Ctrl+R**|
 |WindowsAzure.ShowMobileServiceScriptErrorDetails|**Ctrl+Núm \*, Ctrl+D**|
 
-## <a name="adonet-entity-data-model-designer"></a>ADO.NET Entity Data Model Designer
+## <a name="context-specific-shortcuts"></a>Métodos abreviados de teclado específicos del contexto
+
+
+### <a name="adonet-entity-data-model-designer"></a>ADO.NET Entity Data Model Designer
+
+Los métodos abreviados de teclado específicos de este contexto son los siguientes:
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
@@ -479,7 +646,10 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |View.EntityDataModelBrowser|**Ctrl+1**|
 |View.EntityDataModelMappingDetails|**Ctrl+2**|
 
-## <a name="class-diagram"></a>Diagrama de clases
+### <a name="class-diagram"></a>Diagrama de clases
+
+Los métodos abreviados de teclado específicos de este contexto son los siguientes:
+
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
@@ -491,7 +661,10 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |Edit.RemovefromDiagram|**Eliminar**|
 |View.ViewCode|**Entrar**|
 
-## <a name="coded-ui-test-editor"></a>Editor de pruebas de IU codificadas
+### <a name="coded-ui-test-editor"></a>Editor de pruebas de IU codificadas
+
+Los métodos abreviados de teclado específicos de este contexto son los siguientes:
+
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
@@ -502,14 +675,20 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |OtherContextMenus.UITestEditorContextMenu.Movecode|**Ctrl+Alt+C**|
 |OtherContextMenus.UITestEditorContextMenu.Splitintoanewmethod|**Ctrl+Mayús+T**|
 
-## <a name="dataset-editor"></a>Editor de DataSet
+### <a name="dataset-editor"></a>Editor de DataSet
+
+Los métodos abreviados de teclado específicos de este contexto son los siguientes:
+
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
 |OtherContextMenus.ColumnContext.InsertColumn|**Insertar**|
 |OtherContextMenus.DbTableContext.Add.Column|**Ctrl+L**|
 
-## <a name="difference-viewer"></a>Visor de diferencias
+### <a name="difference-viewer"></a>Visor de diferencias
+
+Los métodos abreviados de teclado específicos de este contexto son los siguientes:
+
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
@@ -525,7 +704,10 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |EditorContextMenus.CodeWindow.AddComment|**Ctrl+Mayús+K**|
 |EditorContextMenus.CodeWindow.EditLocalFile|**Ctrl+Mayús+P**|
 
-## <a name="dom-explorer"></a>Explorador de DOM
+### <a name="dom-explorer"></a>Explorador de DOM
+
+Los métodos abreviados de teclado específicos de este contexto son los siguientes:
+
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
@@ -533,13 +715,19 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |DOMExplorer.SelectElement|**Ctrl+B**|
 |DOMExplorer.ShowLayout|**Ctrl+Mayús+I**|
 
-## <a name="f-interactive"></a>F# Interactive
+### <a name="f-interactive"></a>F# Interactive
+
+Los métodos abreviados de teclado específicos de este contexto son los siguientes:
+
 
 |Comando|Método abreviado de teclado|
 |-------------| - |
 |OtherContextMenus.FSIConsoleContext.CancelInteractiveEvaluation|**Ctrl+Inter**|
 
-## <a name="graph-document-editor"></a>Editor de documentos de gráfico
+### <a name="graph-document-editor"></a>Editor de documentos de gráfico
+
+Los métodos abreviados de teclado específicos de este contexto son los siguientes:
+
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
@@ -551,7 +739,10 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |ArchitectureContextMenus.DirectedGraphContextMenu.Remove|**Eliminar**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Rename|**F2**|
 
-## <a name="graphics-diagnostics"></a>Diagnóstico de gráficos
+### <a name="graphics-diagnostics"></a>Diagnóstico de gráficos
+
+Los métodos abreviados de teclado específicos de este contexto son los siguientes:
+
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
@@ -565,13 +756,19 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |Graphics.ZoomIn|**Mayús+Alt+=**|
 |Graphics.ZoomOut|**Mayús+Alt+-**|
 
-## <a name="html-editor"></a>Editor de HTML
+### <a name="html-editor"></a>Editor de HTML
+
+Los métodos abreviados de teclado específicos de este contexto son los siguientes:
+
 
 |Comando|Método abreviado de teclado|
 |-------------| - |
 |OtherContextMenus.HTMLContext.GoToController|**Ctrl+M, Ctrl+G**|
 
-## <a name="html-editor-design-view"></a>Vista de diseño del editor de HTML
+### <a name="html-editor-design-view"></a>Vista de diseño del editor de HTML
+
+Los métodos abreviados de teclado específicos de este contexto son los siguientes:
+
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
@@ -594,7 +791,10 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |View.ViewMarkup|**Mayús+F7**|
 |Window.PreviousTab|**Ctrl+RePág**|
 
-## <a name="html-editor-source-view"></a>Vista de código fuente del editor de HTML
+### <a name="html-editor-source-view"></a>Vista de código fuente del editor de HTML
+
+Los métodos abreviados de teclado específicos de este contexto son los siguientes:
+
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
@@ -604,13 +804,19 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |View.ViewDesigner|**Mayús+F7**|
 |Window.PreviousTab|**Ctrl+RePág**|
 
-## <a name="layer-diagram"></a>Diagrama de capas
+### <a name="layer-diagram"></a>Diagrama de capas
+
+Los métodos abreviados de teclado específicos de este contexto son los siguientes:
+
 
 |Comando|Método abreviado de teclado|
 |-------------| - |
 |Edit.Delete|**Mayús+Supr**|
 
-## <a name="managed-resources-editor"></a>Editor de recursos administrados
+### <a name="managed-resources-editor"></a>Editor de recursos administrados
+
+Los métodos abreviados de teclado específicos de este contexto son los siguientes:
+
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
@@ -625,7 +831,10 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |Resources.Other|**Ctrl+6**|
 |Resources.Strings|**Ctrl+1**|
 
-## <a name="merge-editor-window"></a>Combinar ventana del editor
+### <a name="merge-editor-window"></a>Combinar ventana del editor
+
+Los métodos abreviados de teclado específicos de este contexto son los siguientes:
+
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
@@ -633,7 +842,10 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonResultWindow|**Alt+2**|
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonRightWindow|**Alt+3**|
 
-## <a name="microsoft-sql-server-data-tools-schema-compare"></a>Herramientas de datos de Microsoft SQL Server, Comparación de esquemas
+### <a name="microsoft-sql-server-data-tools-schema-compare"></a>Herramientas de datos de Microsoft SQL Server, Comparación de esquemas
+
+Los métodos abreviados de teclado específicos de este contexto son los siguientes:
+
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
@@ -644,7 +856,10 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |SQL.SSDTSchemaCompareStop|**Alt+Inter**|
 |SQL.SSDTSchemaCompareWriteUpdates|**Mayús+Alt+U**|
 
-## <a name="microsoft-sql-server-data-tools-table-designer"></a>Herramientas de datos de Microsoft SQL Server, Diseñador de tablas
+### <a name="microsoft-sql-server-data-tools-table-designer"></a>Herramientas de datos de Microsoft SQL Server, Diseñador de tablas
+
+Los métodos abreviados de teclado específicos de este contexto son los siguientes:
+
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
@@ -655,7 +870,10 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |SQL.Rename|**F2**<br /><br /> o<br /><br /> **Ctrl+R, R**<br /><br /> o<br /><br /> **Ctrl+R, Ctrl+R**|
 |ViewFileInScriptPanel|**Mayús+Alt+AvPág**|
 
-## <a name="microsoft-sql-server-data-tools-t-sql-editor"></a>Herramientas de datos de Microsoft SQL Server, Editor de T-SQL
+### <a name="microsoft-sql-server-data-tools-t-sql-editor"></a>Herramientas de datos de Microsoft SQL Server, Editor de T-SQL
+
+Los métodos abreviados de teclado específicos de este contexto son los siguientes:
+
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
@@ -676,7 +894,10 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |TSqlEditorCloneQuery|**Ctrl+Alt+N**|
 |TSqlEditorDatabaseCombo|**Mayús+Alt+AvPág**|
 
-## <a name="microsoft-sql-server-data-tools-t-sql-pdw-editor"></a>Herramientas de datos de Microsoft SQL Server, Editor PDW de T-SQL
+### <a name="microsoft-sql-server-data-tools-t-sql-pdw-editor"></a>Herramientas de datos de Microsoft SQL Server, Editor PDW de T-SQL
+
+Los métodos abreviados de teclado específicos de este contexto son los siguientes:
+
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
@@ -691,13 +912,19 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |TSqlEditorCloneQuery|**Ctrl+Alt+N**|
 |TSqlEditorDatabaseCombo|**Mayús+Alt+AvPág**|
 
-## <a name="page-inspector"></a>Inspector de página
+### <a name="page-inspector"></a>Inspector de página
+
+Los métodos abreviados de teclado específicos de este contexto son los siguientes:
+
 
 |Comando|Método abreviado de teclado|
 |-------------| - |
 |PageInspector.Minimize|**F12**|
 
-## <a name="query-designer"></a>Diseñador de consultas
+### <a name="query-designer"></a>Diseñador de consultas
+
+Los métodos abreviados de teclado específicos de este contexto son los siguientes:
+
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
@@ -710,7 +937,10 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |QueryDesigner.Results|**Ctrl+4**|
 |QueryDesigner.SQL|**Ctrl+3**|
 
-## <a name="query-results"></a>Resultados de la consulta
+### <a name="query-results"></a>Resultados de la consulta
+
+Los métodos abreviados de teclado específicos de este contexto son los siguientes:
+
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
@@ -718,7 +948,10 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |SQL.QueryResultsRefresh|**Mayús+Alt+R**|
 |SQL.QueryResultsStop|**Alt+Inter**|
 
-## <a name="report-designer"></a>Diseñador de informes
+### <a name="report-designer"></a>Diseñador de informes
+
+Los métodos abreviados de teclado específicos de este contexto son los siguientes:
+
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
@@ -744,14 +977,20 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |Edit.TabLeft|**Mayús+Tab**|
 |View.ReportData|**Ctrl+Alt+D**|
 
-## <a name="sequence-diagram"></a>Diagrama de secuencia
+### <a name="sequence-diagram"></a>Diagrama de secuencia
+
+Los métodos abreviados de teclado específicos de este contexto son los siguientes:
+
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
 |ArchitectureDesigner.Sequence.NavigateToCode|**F12**|
 |Edit.Delete|**Mayús+Supr**|
 
-## <a name="settings-designer"></a>Diseñador de configuración
+### <a name="settings-designer"></a>Diseñador de configuración
+
+Los métodos abreviados de teclado específicos de este contexto son los siguientes:
+
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
@@ -760,13 +999,19 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |Edit.SelectionCancel|**Esc**|
 |View.ViewCode|**F7**|
 
-## <a name="solution-explorer"></a>Explorador de soluciones
+### <a name="solution-explorer"></a>Explorador de soluciones
+
+Los métodos abreviados de teclado específicos de este contexto son los siguientes:
+
 
 |Comando|Método abreviado de teclado|
 |-------------| - |
 |ClassViewContextMenus.ClassViewProject.View.ViewinPageInspector|**Ctrl+K, Ctrl+G**|
 
-## <a name="team-explorer"></a>Team Explorer
+### <a name="team-explorer"></a>Team Explorer
+
+Los métodos abreviados de teclado específicos de este contexto son los siguientes:
+
 
 |Comando|Método abreviado de teclado|
 |-------------| - |
@@ -791,13 +1036,19 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |TeamFoundationContextMenus.MyWorkPageInProgress.TfsContextMyWorkPageNewLinkedWI|**Mayús+Alt+L**|
 |View.Refresh|**F5**|
 
-## <a name="test-explorer"></a>Explorador de pruebas
+### <a name="test-explorer"></a>Explorador de pruebas
+
+Los métodos abreviados de teclado específicos de este contexto son los siguientes:
+
 
 |Comando|Método abreviado de teclado|
 |-------------| - |
 |TestExplorer.OpenTest|**F12**|
 
-## <a name="text-editor"></a>Editor de texto
+### <a name="text-editor"></a>Editor de texto
+
+Los métodos abreviados de teclado específicos de este contexto son los siguientes:
+
 
 | Comandos | Métodos abreviados de teclado |
 | - | - |
@@ -916,38 +1167,56 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 | TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion | **Alt+AvPág** |
 | TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion | **Alt+RePág** |
 
-## <a name="uml-activity-diagram"></a>Diagrama de actividades UML
+### <a name="uml-activity-diagram"></a>Diagrama de actividades UML
+
+Los métodos abreviados de teclado específicos de este contexto son los siguientes:
+
 
 |Comando|Método abreviado de teclado|
 |-------------| - |
 |Edit.Delete|**Mayús+Supr**|
 
-## <a name="uml-class-diagram"></a>Diagrama de clases de UML
+### <a name="uml-class-diagram"></a>Diagrama de clases de UML
+
+Los métodos abreviados de teclado específicos de este contexto son los siguientes:
+
 
 |Comando|Método abreviado de teclado|
 |-------------| - |
 |Edit.DeleteFromModel|**Mayús+Supr**|
 
-## <a name="uml-component-diagram"></a>Diagrama de componentes UML
+### <a name="uml-component-diagram"></a>Diagrama de componentes UML
+
+Los métodos abreviados de teclado específicos de este contexto son los siguientes:
+
 
 |Comando|Método abreviado de teclado|
 |-------------| - |
 |Edit.DeleteFromModel|**Mayús+Supr**|
 
-## <a name="uml-use-case-diagram"></a>Diagrama de casos de uso UML
+### <a name="uml-use-case-diagram"></a>Diagrama de casos de uso UML
+
+Los métodos abreviados de teclado específicos de este contexto son los siguientes:
+
 
 |Comando|Método abreviado de teclado|
 |-------------| - |
 |Edit.DeleteFromModel|**Mayús+Supr**|
 
-## <a name="vc-accelerator-editor"></a>Editor de aceleradores VC
+### <a name="vc-accelerator-editor"></a>Editor de aceleradores VC
+
+Los métodos abreviados de teclado específicos de este contexto son los siguientes:
+
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
 |Edit.NewAccelerator|**Insertar**|
 |Edit.NextKeyTyped|**Ctrl+W**|
 
-## <a name="vc-dialog-editor"></a>Editor de cuadros de diálogo VC
+### <a name="vc-dialog-editor"></a>Editor de cuadros de diálogo VC
+
+Los métodos abreviados de teclado específicos de este contexto son los siguientes:
+
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
@@ -981,7 +1250,10 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |Format.TestDialog|**Ctrl+T**|
 |Format.ToggleGuides|**Ctrl+G**|
 
-## <a name="vc-image-editor"></a>Editor de imágenes VC
+### <a name="vc-image-editor"></a>Editor de imágenes VC
+
+Los métodos abreviados de teclado específicos de este contexto son los siguientes:
+
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
@@ -1023,13 +1295,19 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |Image.ZoomIn|**Ctrl+Mayús+,**<br /><br /> o<br /><br /> **Ctrl+Flecha arriba**|
 |Image.ZoomOut|**Ctrl+Mayús+,**<br /><br /> o<br /><br /> **Ctrl+Flecha abajo**|
 
-## <a name="vc-string-editor"></a>Editor de cadenas VC
+### <a name="vc-string-editor"></a>Editor de cadenas VC
+
+Los métodos abreviados de teclado específicos de este contexto son los siguientes:
+
 
 |Comando|Método abreviado de teclado|
 |-------------| - |
 |Edit.NewString|**Insertar**|
 
-## <a name="view-designer"></a>Diseñador de vistas
+### <a name="view-designer"></a>Diseñador de vistas
+
+Los métodos abreviados de teclado específicos de este contexto son los siguientes:
+
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
@@ -1042,13 +1320,19 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |QueryDesigner.Results|**Ctrl+4**|
 |QueryDesigner.SQL|**Ctrl+3**|
 
-## <a name="visual-studio"></a>Programa para la mejora
+### <a name="visual-studio"></a>Programa para la mejora
+
+Los métodos abreviados de teclado específicos de este contexto son los siguientes:
+
 
 |Comando|Método abreviado de teclado|
 |-------------| - |
 |OtherContextMenus.ORDesignerContext.HideMethodsPane|**Ctrl+1**|
 
-## <a name="windows-forms-designer"></a>Diseñador de Windows Forms
+### <a name="windows-forms-designer"></a>Diseñador de Windows Forms
+
+Los métodos abreviados de teclado específicos de este contexto son los siguientes:
+
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
@@ -1077,7 +1361,10 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |Edit.SizeControlUp|**Ctrl+Mayús+Flecha arriba**|
 |Edit.TabLeft|**Mayús+Tab**|
 
-## <a name="work-item-editor"></a>Editor de elementos de trabajo
+### <a name="work-item-editor"></a>Editor de elementos de trabajo
+
+Los métodos abreviados de teclado específicos de este contexto son los siguientes:
+
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
@@ -1085,7 +1372,10 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |Edit.RefreshWorkItem|**F5**|
 |Team.NewLinkedWorkItem|**Mayús+Alt+L**|
 
-## <a name="work-item-query-view"></a>Vista de consulta de elementos de trabajo
+### <a name="work-item-query-view"></a>Vista de consulta de elementos de trabajo
+
+Los métodos abreviados de teclado específicos de este contexto son los siguientes:
+
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
@@ -1096,7 +1386,10 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |Team.Refresh|**F5**|
 |Window.Toggle|**Mayús+Alt+V**|
 
-## <a name="work-item-results-view"></a>Vista de resultados de elementos de trabajo
+### <a name="work-item-results-view"></a>Vista de resultados de elementos de trabajo
+
+Los métodos abreviados de teclado específicos de este contexto son los siguientes:
+
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
@@ -1109,7 +1402,10 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |Team.Refresh|**F5**|
 |Window.Toggle|**Mayús+Alt+V**|
 
-## <a name="workflow-designer"></a>Diseñador de flujo de trabajo
+### <a name="workflow-designer"></a>Diseñador de flujo de trabajo
+
+Los métodos abreviados de teclado específicos de este contexto son los siguientes:
+
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
@@ -1137,7 +1433,10 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |WorkflowDesigner.ZoomIn|**Ctrl+Núm +**|
 |WorkflowDesigner.ZoomOut|**Ctrl+Núm -**|
 
-## <a name="xaml-ui-designer"></a>Diseñador XAML
+### <a name="xaml-ui-designer"></a>Diseñador XAML
+
+Los métodos abreviados de teclado específicos de este contexto son los siguientes:
+
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
@@ -1159,14 +1458,20 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |View.EdgeRightMoveRight|**Ctrl+Mayús+Alt+.**|
 |View.ShowPropertyMarkerMenu|**Ctrl+Barra espaciadora**|
 
-## <a name="xml-text-editor"></a>Editor de XML (texto)
+### <a name="xml-text-editor"></a>Editor de XML (texto)
+
+Los métodos abreviados de teclado específicos de este contexto son los siguientes:
+
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
 |XML.StartXSLTDebugging|**Alt+F5**|
 |XML.StartXSLTWithoutDebugging|**Ctrl+Alt+F5**|
 
-## <a name="xml-schema-designer"></a>Diseñador de esquemas XML
+### <a name="xml-schema-designer"></a>Diseñador de esquemas XML
+
+Los métodos abreviados de teclado específicos de este contexto son los siguientes:
+
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |

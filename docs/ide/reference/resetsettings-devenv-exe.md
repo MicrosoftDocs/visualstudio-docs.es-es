@@ -15,16 +15,16 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c7a5b8bacaa7d78be0c7b88bba8e20b416a3c076
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e523738ff23b40c80b5df21d90b582d94c59087f
+ms.sourcegitcommit: a8031c1387d2090129ed33e063744f9f31653dcd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958003"
+ms.lasthandoff: 06/01/2021
+ms.locfileid: "110724543"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings (devenv.exe)
 
-Restaura la configuración predeterminada de Visual Studio e inicia automáticamente el IDE de Visual Studio. Este modificador restablece de forma opcional la configuración a un archivo de configuración especificado.
+Restaura la configuración predeterminada de Visual Studio e inicia automáticamente el IDE de Visual Studio. Este modificador restablece de forma opcional la configuración a un archivo de configuración especificado (`*.vssettings`).
 
 La configuración predeterminada se determina mediante el perfil que se ha seleccionado después de iniciar Visual Studio por primera vez.
 
@@ -41,7 +41,7 @@ devenv /ResetSettings [SettingsFile|DefaultCollectionSpecifier]
 
 - *SettingsFile*
 
-  Opcional. Ruta de acceso completa y nombre del archivo de configuración que se aplicarán en Visual Studio.
+  Opcional. Ruta de acceso completa y nombre del archivo `.vssettings` que se aplicará en Visual Studio.
 
 - *DefaultCollectionSpecifier*
 
@@ -59,7 +59,8 @@ devenv /ResetSettings [SettingsFile|DefaultCollectionSpecifier]
 
 ## <a name="remarks"></a>Comentarios
 
-Si no se especifica ningún elemento *SettingsFile*, el IDE se abre con la configuración existente.
+Si no se especifica ningún elemento *SettingsFile*, el IDE se abre con la configuración existente. 
+
 
 ## <a name="example"></a>Ejemplo
 
@@ -67,10 +68,14 @@ En el primer ejemplo se aplica la configuración almacenada en el archivo `MySet
 
 En el segundo, se restaura el perfil predeterminado de Visual C#.
 
-```shell
-devenv /resetsettings "%USERPROFILE%\MySettings.vssettings"
+El tercer ejemplo también cerrará Visual Studio después de aplicar la configuración. Puede anexar `/Command "File.Exit"`.
 
-devenv /resetsettings CSharp
+```shell
+devenv /ResetSettings "%USERPROFILE%\MySettings.vssettings"
+
+devenv /ResetSettings CSharp
+
+devenv /NoSplash /ResetSettings General /Command Exit 
 ```
 
 ## <a name="see-also"></a>Consulte también

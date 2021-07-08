@@ -7,12 +7,12 @@ ms.author: ghogen
 ms.date: 04/06/2021
 ms.technology: vs-azure
 ms.topic: reference
-ms.openlocfilehash: ed4b2a0dc1dc7a0520bf8e83ab1968a3815196e0
-ms.sourcegitcommit: e12d6cdaeb37564f05361965db2ec8ad0d4f21ad
+ms.openlocfilehash: b3744640aada798179c86cc60d2c8ce7b02ccfaa
+ms.sourcegitcommit: 162be102d2c22a1c4ad2c447685abd28e0e85d15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "108025870"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "109973484"
 ---
 # <a name="docker-compose-build-properties"></a>Propiedades de compilación de Docker Compose
 
@@ -155,5 +155,7 @@ Para obtener información sobre las propiedades de MSBuild en general, vea [Prop
 [Propiedades de compilación de las herramientas de contenedor](container-msbuild-properties.md)
 
 [Configuración de inicio de las herramientas de contenedor](container-launch-settings.md)
+
+[Administración de perfiles de inicio para Docker Compose en Visual Studio](launch-profiles.md)
 
 [Propiedades reservadas y conocidas de MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)

@@ -7,12 +7,12 @@ ms.author: ghogen
 ms.date: 03/15/2021
 ms.technology: vs-azure
 ms.topic: tutorial
-ms.openlocfilehash: 412156894658cdb2160574e77ea052e4b194d386
-ms.sourcegitcommit: c875360278312457f4d2212f0811466b4def108d
+ms.openlocfilehash: 78af96eaa8f340129b2b445dd92419f84cf91ab1
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107315984"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112307822"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>Tutorial: Creación de una aplicación de varios contenedores con Docker Compose
 
@@ -21,15 +21,25 @@ En este tutorial se aprende a administrar más de un contenedor y a comunicarse 
 ## <a name="prerequisites"></a>Requisitos previos
 
 ::: moniker range="vs-2017"
+
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) con las cargas de trabajo **Desarrollo web**, **Azure Tools** o **Desarrollo multiplataforma de .NET Core** instaladas
 ::: moniker-end
 
-::: moniker range=">= vs-2019"
+::: moniker range="vs-2019"
+
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) con las cargas de trabajo **Desarrollo web**, **Azure Tools** o **Desarrollo multiplataforma de .NET Core** instaladas
 * [Herramientas de desarrollo de .NET Core 2.2](https://dotnet.microsoft.com/download/dotnet-core/2.2) para el desarrollo con .NET Core 2.2
 * [Herramientas de desarrollo de .NET Core 3](https://dotnet.microsoft.com/download/dotnet-core/3.1) para el desarrollo con .NET Core 3.1
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+* [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
+* [Visual Studio 2022 Preview](https://visualstudio.microsoft.com/vs/preview/vs2022) con las cargas de trabajo **Desarrollo web**, **Azure Tools** o **Desarrollo multiplataforma de .NET Core** instaladas
+* [Herramientas de desarrollo de .NET Core 3](https://dotnet.microsoft.com/download/dotnet-core/3.1) para el desarrollo con .NET Core 3.1
+* [Herramientas de desarrollo de .NET 5](https://dotnet.microsoft.com/download/dotnet-core/5.0) para el desarrollo con .NET 5.
 ::: moniker-end
 
 ## <a name="create-a-web-application-project"></a>Creación de un proyecto de aplicación web
@@ -44,7 +54,7 @@ No seleccione **Habilitar compatibilidad con Docker**. Esta se agrega más adela
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 ![Creación de un proyecto de Aplicación web de ASP.NET Core](./media/tutorial-multicontainer/vs-2019/create-web-project1.png)
 
@@ -61,7 +71,7 @@ Agregue un proyecto a la misma solución y asígnele el nombre *MyWebAPI*. Selec
 ::: moniker range="vs-2017"
    ![Captura de pantalla de la creación del proyecto de API web](./media/tutorial-multicontainer/docker-tutorial-mywebapi.png)
 ::: moniker-end
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
    ![Captura de pantalla de la creación del proyecto de API web](./media/tutorial-multicontainer/vs-2019/create-webapi-project.png)
 ::: moniker-end
 
@@ -192,6 +202,8 @@ Agregue un proyecto a la misma solución y asígnele el nombre *MyWebAPI*. Selec
 ## <a name="next-steps"></a>Pasos siguientes
 
 Vea las opciones para implementar [contenedores en Azure](/azure/containers).
+
+Para obtener un mayor control sobre qué servicios se inician durante una sesión de depuración, aprenda a usar perfiles de inicio de Docker Compose a fin de configurar qué servicios se ejecutan durante la depuración. Vea [Administración de perfiles de inicio para Docker Compose](launch-profiles.md)
 
 ## <a name="see-also"></a>Consulte también
   

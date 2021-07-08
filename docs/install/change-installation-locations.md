@@ -2,30 +2,30 @@
 title: Seleccionar ubicaciones de instalación
 description: Obtenga información sobre cómo reducir la huella de instalación de Visual Studio en la unidad del sistema al cambiar la ubicación de la caché de descarga, los componentes compartidos, los SDK y las herramientas a otras unidades. Por ejemplo, mover algunos archivos de la unidad C a la unidad D.
 ms.date: 03/30/2019
-ms.custom: seodec18
+ms.custom: vs-acquisition
 ms.topic: how-to
 helpviewer_keywords:
 - change installation locations for Visual Studio
 - select an installation location for Visual Studio files
 - move installation files to different drives
 - use the D drive
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4db3a31c8baa578a17d14b3a740ff40a444ba208
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5ad065a780a16420727d90605d95038cc5f4080a
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868639"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387572"
 ---
 # <a name="select-the-installation-locations-in-visual-studio"></a>Selección de las ubicaciones de instalación en Visual Studio
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 Puede reducir la huella de instalación de Visual Studio en la unidad del sistema si cambia la ubicación de algunos de sus archivos. En concreto, puede usar otra ubicación para la caché de descarga, los componentes compartidos, los SDK y los archivos de herramientas.
 
@@ -33,14 +33,14 @@ Puede reducir la huella de instalación de Visual Studio en la unidad del sistem
 
 ::: moniker range="vs-2017"
 
-**Novedades de la versión 15.7**: Puede reducir la huella de instalación de Visual Studio en la unidad del sistema si cambia la ubicación de algunos de sus archivos. En concreto, puede usar otra ubicación para la caché de descarga, los componentes compartidos, los SDK y los archivos de herramientas.
+**Novedad de la versión 15.7**: puede reducir la huella de instalación de Visual Studio en la unidad del sistema si cambia la ubicación de algunos de sus archivos. En concreto, puede usar otra ubicación para la caché de descarga, los componentes compartidos, los SDK y los archivos de herramientas.
 
 ::: moniker-end
 
    > [!NOTE]
    > Hay algunas herramientas y SDK que tienen diferentes reglas sobre dónde se pueden instalar. Estas herramientas y SDK se instalan en la unidad del sistema aunque elija otra ubicación.
 
-¿Listo para comenzar? Esta es la manera de hacerlo.
+¿Ya está listo para comenzar? A continuación se muestra cómo hacerlo.
 
 ::: moniker range="vs-2017"
 
@@ -76,7 +76,7 @@ Puede reducir la huella de instalación de Visual Studio en la unidad del sistem
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. Cuando instale Visual Studio, elija la pestaña **Ubicaciones de instalación**.
 

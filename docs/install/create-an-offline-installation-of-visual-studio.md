@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c37ccb9c6dce1f6b20b8ade317e8135462c65011
-ms.sourcegitcommit: 367a2d9df789aa617abaa09b0cd0a18db7357d0c
+ms.openlocfilehash: b10fc1adbb0b4a6e053549749ea90acf3919d0c6
+ms.sourcegitcommit: 674d3fafa7c9e0cb0d1338027ef419a49c028c36
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107800868"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "112602194"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Crear una instalación sin conexión de Visual Studio
 
@@ -31,9 +31,9 @@ Hemos diseñado Visual Studio 2017 para que funcione bien en una variedad de con
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
-Hemos diseñado Visual Studio 2019 para que funcione bien en una variedad de configuraciones de red y de equipos. Aunque se recomienda que pruebe el [instalador web de Visual Studio](https://visualstudio.microsoft.com/downloads), que es un archivo pequeño y le permite estar actualizado con todas las correcciones y características más recientes, somos conscientes de que es posible que no pueda hacerlo.
+Visual Studio 2019 y versiones posteriores se ha diseñado para que funcione bien en una variedad de configuraciones de red y de equipos. Aunque se recomienda que pruebe el [instalador web de Visual Studio](https://visualstudio.microsoft.com/downloads), que es un archivo pequeño y le permite estar actualizado con todas las correcciones y características más recientes, somos conscientes de que es posible que no pueda hacerlo.
 
 ::: moniker-end
 
@@ -52,7 +52,7 @@ Por ejemplo, puede que disponga de una conexión a Internet no confiable o de po
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 después de descargar el instalador web, seleccione la nueva opción **"Download all, then install"** (Descargar todo y volver a instalar) en el instalador de Visual Studio. Después, continúe con la instalación.
 
@@ -72,7 +72,7 @@ Después de descargar un pequeño programa previo, use la línea de comandos par
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 Después de descargar un pequeño programa previo, use la línea de comandos para crear una caché local. Después, use la memoria caché local para instalar Visual Studio.
 
@@ -84,40 +84,60 @@ Deberá disponer de conexión a Internet para poder realizar este paso.
 
 ::: moniker range="vs-2017"
 
-Para obtener la versión más reciente del programa previo para la versión 15.9 de Visual Studio 2017, vaya a la página [Versiones anteriores de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) y descargue uno de los siguientes archivos: 
+Para obtener la versión más reciente del programa previo para la versión 15.9 de Visual Studio 2017, vaya a la página [Versiones anteriores de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) y descargue uno de los siguientes archivos:
 
-| Edición | Filename |
-|-------------|-----------------------|
-|Visual Studio Professional 2017 versión 15.9 | vs_professional.exe |
-|Visual Studio Enterprise 2017 versión 15.9 | vs_enterprise.exe |
-|Visual Studio Build Tools 2017 versión 15.9  | vs_buildtools.exe |
+| Edición                                      | Filename            |
+|----------------------------------------------|---------------------|
+| Visual Studio Professional 2017 versión 15.9 | vs_professional.exe |
+| Visual Studio Enterprise 2017 versión 15.9   | vs_enterprise.exe   |
+| Visual Studio Build Tools 2017 versión 15.9  | vs_buildtools.exe   |
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Para empezar, desde la [página de descargas de Visual Studio](https://visualstudio.microsoft.com/downloads) o la página de [versiones de Visual Studio 2019](https://docs.microsoft.com/visualstudio/releases/2019/history#installing-an-earlier-release), descargue el programa previo de Visual Studio 2019 correspondiente a la versión y la edición elegidas de Visual Studio. El archivo de instalación o programa previo corresponderá o será parecido a uno de los siguientes:
+Para empezar, desde la [página de descargas de Visual Studio](https://visualstudio.microsoft.com/downloads) o la página de [versiones de Visual Studio 2019](/visualstudio/releases/2019/history#installing-an-earlier-release), descargue el programa previo de Visual Studio 2019 correspondiente a la versión y la edición elegidas de Visual Studio. El archivo de instalación o programa previo corresponderá o será parecido a uno de los siguientes:
 
-| Edición                    | Archivo                                                                    |
-|----------------------------|-------------------------------------------------------------------------|
+| Edición                         | Archivo                                                                                                                                                                                                                               |
+|---------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Visual Studio 2019 Community    | [vs_community.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)       |
 | Visual Studio 2019 Professional | [vs_professional.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019) |
 | Visual Studio 2019 Enterprise   | [vs_enterprise.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)     |
-| Visual Studio 2019 Build Tools   | [vs_buildtools.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)     |
+| Visual Studio 2019 Build Tools  | [vs_buildtools.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)     |
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+>[!TIP]
+> Todavía no hay versiones publicadas de Visual Studio 2022 disponibles; los programas previos siguientes son para la versión preliminar de Visual Studio 2022.
+>Para empezar, descargue el programa previo de Visual Studio 2022 de la [página de descargas de Visual Studio](https://aka.ms/vs2022preview).
+
+| Edición                         | Descargar                                                            |
+|---------------------------------|---------------------------------------------------------------------|
+| Visual Studio 2022 Professional | [vs_professional.exe](https://aka.ms/vs/17/pre/vs_professional.exe) |
+| Visual Studio 2022 Enterprise   | [vs_enterprise.exe](https://aka.ms/vs/17/pre/vs_enterprise.exe)     |
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
 >[!TIP]
->Si previamente descargó un archivo de programa previo y quiere comprobar su versión, aquí se muestra cómo hacerlo. En Windows, abra el Explorador de archivos, haga clic con el botón derecho en el archivo de programa previo, elija **Propiedades**, seleccione la pestaña **Detalles** y, luego, fíjese en el número de **versión del producto**. Para hacer coincidir ese número con una versión de Visual Studio, consulte la página [Números de compilación y fechas de lanzamiento de Visual Studio](visual-studio-build-numbers-and-release-dates.md).
+>Si previamente descargó un archivo de programa previo y quiere comprobar su versión, aquí se muestra cómo hacerlo. En Windows, abra el Explorador de archivos, haga clic con el botón derecho en el archivo de programa previo, elija **Propiedades**, seleccione la pestaña **Detalles** y, luego, fíjese en el número de **versión del producto**. Para hacer coincidir ese número con una versión de Visual Studio, consulte la página [Números de compilación y fechas de lanzamiento de Visual Studio](/visual-studio-build-numbers-and-release-dates.md).
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
 >[!TIP]
->Si previamente descargó un archivo de programa previo y desea comprobar su versión, aquí se muestra cómo hacerlo. En Windows, abra el Explorador de archivos, haga clic con el botón derecho en el archivo de programa previo, elija **Propiedades**, seleccione la pestaña **Detalles** y, luego, fíjese en el número de **versión del producto**. Para hacer coincidir ese número con una versión de Visual Studio, consulte la página [Versiones de Visual Studio 2019](https://docs.microsoft.com/visualstudio/releases/2019/history).
+>Si previamente descargó un archivo de programa previo y desea comprobar su versión, aquí se muestra cómo hacerlo. En Windows, abra el Explorador de archivos, haga clic con el botón derecho en el archivo de programa previo, elija **Propiedades**, seleccione la pestaña **Detalles** y, luego, fíjese en el número de **versión del producto**. Para hacer coincidir ese número con una versión de Visual Studio, consulte la página [Versiones de Visual Studio 2019](/visualstudio/releases/2019/history).
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+>[!TIP]
+>Si previamente descargó un archivo de programa previo y desea comprobar su versión, aquí se muestra cómo hacerlo. En Windows, abra el Explorador de archivos, haga clic con el botón derecho en el archivo de programa previo, elija **Propiedades**, seleccione la pestaña **Detalles** y, luego, fíjese en el número de **versión del producto**. Para hacer coincidir ese número con una versión de Visual Studio, consulte la página [Versiones de Visual Studio 2022](/visualstudio/releases/2022/history).
 
 ::: moniker-end
 
@@ -132,25 +152,25 @@ Abra un símbolo del sistema y use los parámetros del programa previo tal y com
 
 - Para el desarrollo web y de escritorio .NET, ejecute:
 
-   ```cmd
+   ```shell
     vs_enterprise.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional --lang en-US
     ```
 
 - Para el desarrollo de escritorio .NET y Office, ejecute:
 
-   ```cmd
+   ```shell
     vs_enterprise.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.Office --includeOptional --lang en-US
     ```
 
 - Para el desarrollo de escritorio C++, ejecute:
 
-   ```cmd
+   ```shell
     vs_enterprise.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.NativeDesktop --includeRecommended --lang en-US
     ```
 
 - Para crear un diseño local completo (solo en inglés) con todas las características (lo que llevará mucho tiempo, ya que tenemos un _montón_ de características), ejecute:
 
-   ```cmd
+   ```shell
     vs_enterprise.exe --layout c:\vslayout --lang en-US
     ```
 
@@ -161,10 +181,10 @@ Abra un símbolo del sistema y use los parámetros del programa previo tal y com
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
    > [!NOTE]
-   > Un diseño completo de Visual Studio requiere como mínimo 35 GB de espacio en disco. Para más información, consulte [Requisitos del sistema](/visualstudio/releases/2019/system-requirements/).
+   > Un diseño completo de Visual Studio necesita como mínimo 41 GB de espacio en disco. Para más información, consulte [Requisitos del sistema](/visualstudio/releases/2019/system-requirements/).
 
 ::: moniker-end
 
@@ -174,13 +194,13 @@ Al instalar Visual Studio desde una caché de instalación local, el instalador
 
 Por ejemplo, si creó una caché de instalación local con el siguiente comando:
 
-```cmd
+```shell
 vs_enterprise.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional --lang en-US
 ```
 
 Después, use este comando para ejecutar la instalación:
 
-```cmd
+```shell
 c:\vslayout\vs_enterprise.exe --noweb --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional
 ```
 
@@ -190,7 +210,7 @@ c:\vslayout\vs_enterprise.exe --noweb --add Microsoft.VisualStudio.Workload.Mana
 > [!NOTE]
 > Si se produce un error de una firma que no es válida, debe [instalar certificados actualizados](install-certificates-for-visual-studio-offline.md). Abra la carpeta de certificados en la caché sin conexión. Haga doble clic en cada uno de los archivos de certificado y, después, haga clic en el Asistente de administrador de certificados. Si se le solicita una contraseña, déjela en blanco.
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 > [!TIP]
 > En el caso de las instalaciones sin conexión, si recibe un mensaje de error que indica que no se encuentra un producto que coincida con los parámetros especificados, asegúrese de que está usando el modificador `--noweb` con la versión 16.3.5 o posterior.
 
@@ -198,22 +218,22 @@ c:\vslayout\vs_enterprise.exe --noweb --add Microsoft.VisualStudio.Workload.Mana
 
 ### <a name="list-of-language-locales"></a>Lista de configuraciones regionales de idioma
 
-| **Idioma-configuración regional** | **Lenguaje** |
-| ----------------------- | --------------- |
-| cs-CZ | Checo |
-| de-DE | Alemán |
-| es-ES | Inglés |
-| es-ES | Español |
-| fr-FR | Francés |
-| it-IT | Italiano |
-| ja-JP | Japonés |
-| ko-KR | Coreano |
-| pl-PL | Polaco |
-| pt-BR | Portugués (Brasil) |
-| ru-RU | Ruso |
-| tr-TR | Turco |
-| zh-CN | Chino (simplificado) |
-| zh-TW | Chino (tradicional) |
+| **Idioma-configuración regional** | **Lenguaje**          |
+|---------------------|-----------------------|
+| cs-CZ               | Checo                 |
+| de-DE               | Alemán                |
+| es-ES               | Inglés               |
+| es-ES               | Español               |
+| fr-FR               | Francés                |
+| it-IT               | Italiano               |
+| ja-JP               | Japonés              |
+| ko-KR               | Coreano                |
+| pl-PL               | Polaco                |
+| pt-BR               | Portugués (Brasil)   |
+| ru-RU               | Ruso               |
+| tr-TR               | Turco               |
+| zh-CN               | Chino (simplificado)  |
+| zh-TW               | Chino (tradicional) |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

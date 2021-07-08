@@ -1,18 +1,15 @@
 ---
-title: Más información sobre soluciones y proyectos
+title: ¿Qué son las soluciones y los proyectos de Visual Studio?
 description: Vea cómo son los proyectos y las soluciones de Visual Studio, cómo se crean proyectos nuevos a partir de una plantilla y cómo se pueden ver y administrar los proyectos en el Explorador de soluciones.
 ms.custom: SEO-VS-2020, contperf-fy21q2
 ms.date: 12/31/2020
 ms.topic: conceptual
 f1_keywords:
-- vs.addnewitem
-- vs.addnewsolutionitem
 - vs.openproject
 - vs.addexistingitem
 - vs.addexistingsolutionitem
 - vs.environment.projects
 - vs.environment.solutions
-- VS.SolutionExplorer
 - VS.SolutionExplorer.Solutions
 helpviewer_keywords:
 - solutions [Visual Studio]
@@ -22,16 +19,16 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 473c3ca0e4a9998d6a320e384bf39b4b5e037085
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0a186c63cf695184b74780eeb6ab16b85c8aef5e
+ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878505"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924973"
 ---
-# <a name="solutions-and-projects-in-visual-studio"></a>Soluciones y proyectos en Visual Studio
+# <a name="what-are-solutions-and-projects-in-visual-studio"></a>¿Qué son las soluciones y los proyectos en Visual Studio?
 
-En esta página se explica el concepto de *proyecto* y *solución* en Visual Studio. También se trata brevemente la ventana de la herramienta Explorador de soluciones y cómo crear un proyecto.
+En este artículo, aprenderá qué es un *proyecto* y una *solución* en Visual Studio. También se trata brevemente la ventana de la herramienta Explorador de soluciones y cómo crear un proyecto.
 
 > [!NOTE]
 > Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Proyectos y soluciones en Visual Studio para Mac](/visualstudio/mac/projects-and-solutions).
@@ -92,9 +89,9 @@ La barra de herramientas de la parte superior del **Explorador de soluciones** t
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
-![Captura de pantalla del Explorador de soluciones con dos proyectos en Visual Studio 2019.](../ide/media/solution-explorer.png)
+![Captura de pantalla del Explorador de soluciones con dos proyectos en Visual Studio.](../ide/media/solution-explorer.png)
 
 La barra de herramientas situada en la parte superior del **Explorador de soluciones** tiene botones para cambiar de una vista de solución a una vista de carpeta, filtrar los cambios pendientes, mostrar todos los archivos, contraer todos los nodos, ver las páginas de [propiedades](managing-project-and-solution-properties.md), obtener una vista previa del código en el [editor de código](writing-code-in-the-code-and-text-editor.md), etc.
 

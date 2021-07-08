@@ -9,12 +9,12 @@ manager: jmartens
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: efd75e79d7c015539dfe045f7b0a3b266cfb4756
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 26bcf0fa4d56d4e8df100a0d3e65904d065d8757
+ms.sourcegitcommit: 4908561809ad397c99cf204f52d5e779512e502c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923753"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112254880"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Creación y administración de entornos de Python en Visual Studio
 
@@ -151,7 +151,7 @@ Un entorno de Conda es el creado mediante la herramienta `conda` o con la admini
 
 ::: moniker range=">=vs-2019"
 
-1. Seleccione **+ Agregar entorno** en la ventana **Entornos de Python** (o desde la barra de herramientas de Python), con lo que se abre el cuadro de diálogo **Agregar entorno**. En ese cuadro de diálogo, seleccione la pestaña **Entorno de Conda**:
+1. Seleccione **Agregar entorno...** en la ventana **Entornos de Python** (o desde la barra de herramientas de Python), con lo que se abre el cuadro de diálogo **Agregar entorno**. En ese cuadro de diálogo, seleccione la pestaña **Entorno de Conda**:
 
     ![Pestaña Entorno de Conda en el cuadro de diálogo Agregar entorno](media/environments/environments-conda-1-2019.png)
 
@@ -231,7 +231,7 @@ Use los pasos siguientes para identificar un entorno instalado en una ubicación
 
 ::: moniker range=">=vs-2019"
 
-1. Seleccione **+ Agregar entorno** en la ventana **Entornos de Python** (o desde la barra de herramientas de Python), con lo que se abre el cuadro de diálogo **Agregar entorno**. En ese cuadro de diálogo, seleccione la pestaña **Entorno existente**:
+1. Seleccione **Agregar entorno...** en la ventana **Entornos de Python** (o desde la barra de herramientas de Python), con lo que se abre el cuadro de diálogo **Agregar entorno**. En ese cuadro de diálogo, seleccione la pestaña **Entorno existente**:
 
     ![Pestaña Entorno existente en el cuadro de diálogo Agregar entorno](media/environments/environments-custom-1-2019.png)
 

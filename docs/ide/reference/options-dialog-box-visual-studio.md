@@ -17,12 +17,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 16c2c6a1d5f9f9b673e7ae12661c4681f713c2fa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 79bd2d95a12aa7c42705d106cf71b4061a020431
+ms.sourcegitcommit: 113b7df611583307d3965984233a33355d6b0318
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910811"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "112126546"
 ---
 # <a name="options-dialog-box-visual-studio"></a>Opciones (Cuadro de diálogo) (Visual Studio)
 
@@ -44,3 +44,4 @@ Al hacer clic en Aceptar en el cuadro de diálogo **Opciones** se guardan todas 
 ## <a name="see-also"></a>Consulte también
 
 - [Personalizar el editor](../how-to-change-text-case-in-the-editor.md)
+- [Configuración y preferencias de Git](../../version-control/git-settings.md)

@@ -10,12 +10,12 @@ manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 6935c2f37f75f0318ec9402c3fcd0ff763555032
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 9ac42ccff8c7bffcc22c453002aad1caf6935d28
+ms.sourcegitcommit: e4630a3bb89b4d606fe2cbd709bc773c5b538b78
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107296019"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "112975682"
 ---
 # <a name="how-to-use-visual-studio-with-accounts-that-require-multi-factor-authentication"></a>Cómo usar Visual Studio con cuentas que requieran la autenticación multifactor
 
@@ -68,11 +68,16 @@ Al hacer clic en **Vuelva a escribir las credenciales** se abrirá el explorador
 
 ## <a name="how-to-opt-out-of-using-a-specific-azure-active-directory-tenant-in-visual-studio"></a>Cómo desactivar el uso de un inquilino de Azure Active Directory concreto en Visual Studio
 
-Visual Studio 2019 versión 16.6 ofrece la flexibilidad de filtrar inquilinos específicos, lo que los oculta en Visual Studio. El filtrado elimina la necesidad de autenticarse con ese inquilino, pero también significa que no se podrá acceder a los recursos asociados. 
+Visual Studio 2019 versión 16.6 ofrece la flexibilidad de filtrar inquilinos de forma individual o global, lo que permite ocultarlos de manera eficaz en Visual Studio. El filtrado elimina la necesidad de autenticarse con ese inquilino, pero también significa que no se podrá acceder a los recursos asociados.
 
 Esta funcionalidad resulta útil cuando se tienen varios inquilinos, pero se quiere optimizar el entorno de desarrollo teniendo como destino un subconjunto específico. También puede ayudar en aquellos casos en los que no se puede validar una directiva de entidad de certificación o MFA determinada, ya que se puede filtrar el inquilino en conflicto. 
 
-### <a name="how-to-filter-out-a-tenant"></a>Cómo filtrar un inquilino
+### <a name="how-to-filter-out-all-tenants"></a>Procedimiento para filtrar todos los inquilinos
+Para filtrar globalmente todos los inquilinos, abra el cuadro de diálogo Configuración de la cuenta **(Archivo > Configuración de la cuenta...)** y desactive la casilla **Authenticate Across all Azure Active Directories** (Autenticar en todas las instancias de Azure Active Directory).
+
+Al desactivar esa opción se asegura de que solo se autenticará con el inquilino predeterminado de la cuenta. También significa que no podrá acceder a los recursos asociados a otros inquilinos en los que la cuenta podría ser un invitado.
+
+### <a name="how-to-filter-out-individual-tenants"></a>Procedimiento para filtrar inquilinos individuales
 Para filtrar inquilinos asociados a su cuenta de Visual Studio, abra el cuadro de diálogo Configuración de la cuenta **(Archivo > Configuración de la cuenta...)** y haga clic en **Aplicar filtro**. 
 </br>
 </br>

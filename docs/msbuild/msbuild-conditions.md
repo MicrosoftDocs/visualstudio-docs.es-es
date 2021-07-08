@@ -20,12 +20,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a480c539fc178e5ae672427fe32e9fd34728dc79
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d72b69b2c80c4e20b5a4dadae18764a138210295
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99919161"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113222713"
 ---
 # <a name="msbuild-conditions"></a>Condiciones de MSBuild
 
@@ -35,7 +35,7 @@ MSBuild admite un conjunto específico de condiciones que se pueden aplicar all�
 |---------------|-----------------|
 |'`stringA`' == '`stringB`'|Se evalúa como `true` si `stringA` es igual a `stringB`.<br /><br /> Por ejemplo:<br /><br /> `Condition="'$(Configuration)'=='DEBUG'"`<br /><br /> Las comillas simples no son necesarias para las cadenas alfanuméricas simples o los valores booleanos. Sin embargo, las comillas simples son necesarias para los valores vacíos. Esta comprobación no distingue mayúsculas de minúsculas.|
 |'`stringA`' != '`stringB`'|Se evalúa como `true` si `stringA` no es igual a `stringB`.<br /><br /> Por ejemplo:<br /><br /> `Condition="'$(Configuration)'!='DEBUG'"`<br /><br /> Las comillas simples no son necesarias para las cadenas alfanuméricas simples o los valores booleanos. Sin embargo, las comillas simples son necesarias para los valores vacíos. Esta comprobación no distingue mayúsculas de minúsculas.|
-|\<, >, \<=, >=|Evalúa los valores numéricos de los operandos. Devuelve `true` si la evaluación relacional es verdadera. Los operandos deben evaluarse como un número decimal o hexadecimal. Los números hexadecimales deben comenzar con "0x". **Nota:**  En XML, los caracteres `<` y `>` deben ser de escape. El símbolo `<` se representa como `&lt;`. El símbolo `>` se representa como `&gt;`.|
+|\<, >, \<=, >=|Evalúa los valores numéricos de los operandos. Devuelve `true` si la evaluación relacional es verdadera. Los operandos se deben evaluar como un número decimal o hexadecimal, o bien una versión con puntos de cuatro partes. Los números hexadecimales deben comenzar con "0x". **Nota:**  En XML, los caracteres `<` y `>` deben ser de escape. El símbolo `<` se representa como `&lt;`. El símbolo `>` se representa como `&gt;`.|
 |Existe ('`stringA`')|Se evalúa como `true` si existe un archivo o una carpeta con el nombre `stringA`.<br /><br /> Por ejemplo:<br /><br /> `Condition="!Exists('$(Folder)')"`<br /><br /> Las comillas simples no son necesarias para las cadenas alfanuméricas simples o los valores booleanos. Sin embargo, las comillas simples son necesarias para los valores vacíos.|
 |HasTrailingSlash ('`stringA`')|Se evalúa como `true` si la cadena especificada contiene al final un carácter de barra inversa (\\) o barra diagonal (/).<br /><br /> Por ejemplo:<br /><br /> `Condition="!HasTrailingSlash('$(OutputPath)')"`<br /><br /> Las comillas simples no son necesarias para las cadenas alfanuméricas simples o los valores booleanos. Sin embargo, las comillas simples son necesarias para los valores vacíos.|
 |!|Se evalúa como `true` si el operando se evalúa como `false`.|
@@ -65,6 +65,15 @@ En los archivos del proyecto MSBuild, no hay ningún tipo booleano true. Los dat
 La lógica booleana solo se evalúa en el contexto de las condiciones, por lo que los valores de propiedad como `<Prop2>'$(Prop1)' == 'true'</Prop>` se representan como una cadena (después de la expansión de variables), no se evalúan como valores booleanos.  
 
 MSBuild implementa algunas reglas de procesamiento especiales para facilitar el trabajo con propiedades de cadena que se usan como valores booleanos. Los literales booleanos se aceptan, por lo que `Condition="true"` y `Condition="false"` funcionan según lo previsto. MSBuild también incluye reglas especiales para admitir el operador booleano de negación. Por lo tanto, si `$(Prop)` es "true", `!$(Prop)` se expande a `!true` y se compara igual que `false`, como cabría esperar.
+
+## <a name="comparing-versions"></a>Comparación de versiones
+
+Los operadores relacionales `<`, `>`, `<=` y `>=` admiten versiones analizadas por <xref:System.Version?displayProperty=fullName>, por lo que puede comparar entre sí versiones que tienen cuatro partes numéricas. Por ejemplo, `'1.2.3.4' < '1.10.0.0'` es `true`.
+
+> [!CAUTION]
+> Las comparaciones de `System.Version` pueden producir resultados sorprendentes cuando una o ambas versiones no especifican las cuatro partes. Por ejemplo, la versión 1.1 es anterior a la versión 1.1.0.
+
+MSBuild proporciona [funciones de propiedad para comparar versiones](property-functions.md#msbuild-version-comparison-functions) que tienen un conjunto diferente de reglas compatibles con el control de versiones semántico (semver).
 
 ## <a name="see-also"></a>Vea también
 

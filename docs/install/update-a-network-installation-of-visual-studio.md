@@ -1,7 +1,7 @@
 ---
 title: Actualización de una instalación basada en red
 description: Más información sobre cómo actualizar una instalación de Visual Studio basada en red con el comando --layout
-ms.date: 04/16/2021
+ms.date: 05/26/2021
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0400f4be06afab2326ac738e1ac15f9d93a6ecee
-ms.sourcegitcommit: 367a2d9df789aa617abaa09b0cd0a18db7357d0c
+ms.openlocfilehash: b833551d00f4bd8fb158c848d3bf5b48173e563b
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107800778"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306662"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Actualización de una instalación basada en red de Visual Studio
 
@@ -41,36 +41,36 @@ Veamos unos cuantos ejemplos de cómo crear y actualizar un diseño:
 
 * Primero, aquí se muestra un ejemplo de cómo crear un diseño con una carga de trabajo solo para inglés:
 
-  ```cmd
+  ```shell
   vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --lang en-US
   ```
 
 * Aquí se muestra cómo actualizar el mismo diseño a una versión más reciente. No tiene que especificar ningún parámetro de línea de comandos adicional. Las opciones anteriores se han guardado y se usarán mediante cualquier comando de diseño posterior en esta carpeta de diseño.
 
-  ```cmd
+  ```shell
   vs_enterprise.exe --layout c:\VSLayout
   ```
 
 * Aquí se muestra cómo actualizar el diseño a una versión más reciente de forma desatendida. La operación de diseño ejecuta el proceso de instalación en una ventana de consola nueva. La ventana se mantiene abierta para que los usuarios puedan ver el resultado final y un resumen de los errores que pudieran haberse producido. Si va a realizar una operación de diseño en modo desatendido (por ejemplo, tiene un script que se ejecuta periódicamente para actualizar el diseño a la versión más reciente), use el parámetro `--passive` y el proceso cerrará automáticamente la ventana.
 
-  ```cmd
+  ```shell
   vs_enterprise.exe --layout c:\VSLayout --passive
   ```
 
 * Aquí se muestra cómo agregar una carga de trabajo adicional y un idioma localizado.  (Este comando agrega la carga de trabajo *Desarrollo de Azure*).  Ahora tanto el escritorio administrado como Azure se incluyen en este diseño.  Los recursos de idioma para inglés y alemán también se incluyen para estas cargas de trabajo.  Además, el diseño se actualiza a la última versión disponible.
 
-  ```cmd
+  ```shell
   vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.Azure --lang de-DE
   ```
 
     > [!IMPORTANT]
-    > Una operación de actualización no instala componentes opcionales recién agregados. Si necesita los componentes opcionales recién agregados, quite los componentes opcionales antiguos del [archivo de respuesta](automated-installation-with-response-file.md) `Layout.JSON` e incluya los componentes necesarios en la sección "agregar" de `Layout.JSON`. 
+    > Una operación de actualización no descarga ni instala componentes opcionales adicionales en el diseño o en el cliente. Si tiene que agregar o cambiar componentes opcionales, quite los componentes opcionales antiguos del [archivo de respuesta](automated-installation-with-response-file.md) `Layout.JSON` e incluya los nuevos que necesita en la sección "add" de `Layout.JSON`. Después, cuando ejecute el comando update en el diseño, descargará los componentes recién agregados en el diseño. 
     >
-    > **Solución alternativa**: Después de una actualización, ejecute una operación de modificación independiente para instalar los componentes que faltan.
+    > Para instalar estos nuevos componentes en la máquina cliente, asegúrese de realizar estos tres pasos. En primer lugar, compruebe que el diseño contiene los nuevos componentes, como se ha descrito antes. A continuación, actualice el cliente a los bits más recientes del diseño.  Por último, de nuevo en el cliente, ejecute una operación de modificación que instalará los nuevos componentes (los que se han agregado al diseño) en la máquina cliente.
 
 * Por último, aquí se muestra cómo agregar una carga de trabajo adicional y un idioma localizado sin actualizar la versión. (Este comando agrega la carga de trabajo *Desarrollo de ASP.NET y web*).  Ahora se incluyen en el diseño las cargas de trabajo de escritorio administrado, de Azure y Desarrollo de ASP.NET y web. Los recursos de idioma para inglés, francés y alemán también se incluyen para todas estas cargas de trabajo.  En cambio, el diseño no se ha actualizado a la última versión disponible cuando se ha ejecutado este comando. Sigue correspondiendo a la versión existente.
 
-  ```cmd
+  ```shell
   vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.NetWeb --lang fr-FR --keepLayoutVersion
   ```
 
@@ -98,6 +98,14 @@ En función de cómo esté configurado el entorno de red, una actualización pue
 
 ::: moniker-end
 
+::: moniker range=">=vs-2022"
+
+* Los administradores pueden actualizar las implementaciones de cliente de Visual Studio sin interacción del usuario con dos comandos independientes:
+  * En primer lugar, actualice el instalador de Visual Studio: <br>```vs_enterprise.exe --quiet --update```
+  * Luego, actualice la propia aplicación de Visual Studio: <br>```vs_enterprise.exe update --installPath "C:\Program Files\Microsoft Visual Studio\2022\Enterprise" --quiet --wait --norestart```
+
+::: moniker-end
+
 > [!NOTE]
 > Use el comando [vswhere.exe](tools-for-managing-visual-studio-instances.md) para identificar la ruta de instalación de una instancia existente de Visual Studio en una máquina cliente.
 >
@@ -108,7 +116,7 @@ En función de cómo esté configurado el entorno de red, una actualización pue
 
 Use `--verify` para realizar la comprobación en la caché sin conexión proporcionada. Comprueba si los archivos de paquetes están disponibles o no son válidos. Al finalizar la comprobación, imprime la lista de los archivos que faltan y que no son válidos.
 
-```cmd
+```shell
 vs_enterprise.exe --layout <layoutDir> --verify
 ```
 
@@ -126,7 +134,7 @@ Microsoft publica actualizaciones de Visual Studio periódicamente, por lo que e
 
 Use `--fix` para realizar la misma comprobación que `--verify` y también intente corregir los problemas identificados. El proceso `--fix` necesita una conexión a Internet, por lo que asegúrese de que su máquina esté conectada a Internet antes de invocar `--fix`.
 
-```cmd
+```shell
 vs_enterprise.exe --layout <layoutDir> --fix
 ```
 
@@ -142,17 +150,17 @@ Algunos archivos se guardan dentro de cada carpeta "GUID". Los dos archivos de m
 
 Aquí se muestran algunos ejemplos de cómo usar la opción --clean:
 
-```cmd
+```shell
 vs_enterprise.exe --layout <layoutDir> --clean <file-path-of-catalog1> <file-path-of-catalog2> …
 ```
 
-```cmd
+```shell
 vs_enterprise.exe --layout <layoutDir> --clean <file-path-of-catalog1> --clean <file-path-of-catalog2> …
 ```
 
 vs_enterprise.exe también puede invocarse dentro de &lt;layoutDir&gt;. Por ejemplo:
 
-```cmd
+```shell
 c:\VSLayout\vs_enterprise.exe --layout c:\VSLayout --clean c:\VSLayout\Archive\1cd70189-fc55-4583-8ad8-a2711e928325\Catalog.json --clean c:\VS2017Layout\Archive\d420889f-6aad-4ba4-99e4-ed7833795a10\Catalog.json
 ```
 

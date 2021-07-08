@@ -1,21 +1,20 @@
 ---
-title: 'Tutorial de Docker: Introducción a Docker'
+title: 'Tutorial: Introducción a Docker y Visual Studio Code'
 description: Tutorial de varios pasos en el que se describen los conceptos básicos sobre cómo trabajar con Docker con Visual Studio Code.
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
 manager: jmartens
-ms.technology: vs-azure
-ms.topic: conceptual
+ms.topic: tutorial
 ms.workload:
 - azure
 next_page: app.md
-ms.openlocfilehash: 554badf01122b6c41d89c00b740574d28185e35e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 75a51f478e4e58700f6025dd6a87fcc38439ed87
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837975"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113222661"
 ---
 # <a name="tutorial-get-started-with-docker"></a>Tutorial: Introducción a Docker
 

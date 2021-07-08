@@ -1,7 +1,10 @@
 ---
 title: Introducción a la edición para desarrolladores de Visual Basic
 description: En esta introducción al editor de código de Visual Studio de 10 minutos de duración se describen algunas de las formas en que Visual Studio hace que escribir y comprender el código de Visual Basic (así como desplazarse por él) sea más fácil.
-ms.custom: seodec18, get-started
+ms.custom:
+- vs-acquisition
+- seodec18
+- get-started
 ms.date: 11/20/2018
 ms.technology: vs-ide-general
 ms.topic: tutorial
@@ -12,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 227d54fbc2734290954fc1c847a34846bb6dc5cf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fe411074c95db15fde4819ffb07eca39a05e844d
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944542"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390169"
 ---
 # <a name="learn-to-use-the-code-editor-with-visual-basic"></a>Información sobre cómo usar el editor de código con Visual Basic
 
@@ -34,6 +37,13 @@ En esta introducción de 10 minutos al editor de código de Visual Studio, se 
 
 > [!TIP]
 > Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads) para instalarlo de forma gratuita.
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+> [!TIP]
+> Si todavía no ha instalado Visual Studio Preview, vaya a la página [Descargas de Visual Studio 2022 Preview](https://visualstudio.microsoft.com/vs/preview/vs2022) para instalarlo de forma gratuita.
 
 ::: moniker-end
 

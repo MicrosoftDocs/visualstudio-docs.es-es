@@ -9,12 +9,12 @@ manager: jmartens
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de86c2021a2abf3cd5346c684199e8f59e2d314e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2c12c8a0979ab081ea2f09faeeccdb5a8a9d2175
+ms.sourcegitcommit: 398b4d4e5ce0f978720f11990db05b209766aedc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839193"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "112016312"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>Instalación de la compatibilidad con ciencia de datos en Visual Studio
 
@@ -37,8 +37,8 @@ La carga de trabajo Aplicaciones de ciencia de datos y de análisis, que se sele
 R y Python son dos de los principales lenguajes de scripting que se usan para la ciencia de datos. Ambos lenguajes son fáciles de aprender y son compatibles con un ecosistema completo de paquetes. Estos paquetes se centran en una amplia gama de escenarios, como la adquisición de datos, limpieza, entrenamiento de modelos, implementación y trazado. F# también es un lenguaje de .NET eficaz y esencialmente funcional que resulta adecuado para una amplia variedad de tareas de procesamiento de datos.
 ::: moniker-end
 
-::: moniker range="vs-2019"
-Python es un lenguaje de scripting fundamental que se usa para la ciencia de datos. Python es fácil de aprender y es compatible con un ecosistema completo de paquetes. Estos paquetes se centran en una amplia gama de escenarios, como la adquisición de datos, limpieza, entrenamiento de modelos, implementación y trazado. F# también es un lenguaje de .NET eficaz y esencialmente funcional que resulta adecuado para una amplia variedad de tareas de procesamiento de datos. (Para el lenguaje R se recomienda [Azure Notebooks](https://notebooks.azure.com)).
+::: moniker range=">=vs-2019"
+Python es un lenguaje de scripting fundamental que se usa para la ciencia de datos. Python es fácil de aprender y es compatible con un ecosistema completo de paquetes. Estos paquetes se centran en una amplia gama de escenarios, como la adquisición de datos, limpieza, entrenamiento de modelos, implementación y trazado. F# también es un lenguaje de .NET eficaz y esencialmente funcional que resulta adecuado para una amplia variedad de tareas de procesamiento de datos).
 ::: moniker-end
 
 <!--Note link on the image because this one is large -->
@@ -48,7 +48,7 @@ Python es un lenguaje de scripting fundamental que se usa para la ciencia de dat
 
 De forma predeterminada, la carga de trabajo instala las opciones siguientes, que se pueden modificar en la sección de resumen de la carga de trabajo en el instalador de Visual Studio:
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 - Compatibilidad con el lenguaje de escritorio F#
 - Python:
   - Compatibilidad con el lenguaje Python
@@ -80,19 +80,19 @@ SQL Server admite el uso de Python para realizar análisis avanzados directament
 
 Ejecutar este código donde ya se encuentran los datos le ofrece una serie de ventajas:
 
-- **Eliminación del movimiento de datos**: En lugar de mover datos de la base de datos a la aplicación o el modelo, puede compilar aplicaciones en la base de datos. Esta función elimina las barreras de seguridad, cumplimiento normativo, gobernanza, integridad y una gran cantidad de problemas similares relacionados con el movimiento de grandes cantidades de datos. También puede consumir conjuntos de datos que no se puedan ajustar en la memoria de un equipo cliente.
+- **Eliminación del movimiento de los datos**: en lugar de mover datos de la base de datos a la aplicación o el modelo, puede crear aplicaciones en la base de datos. Esta función elimina las barreras de seguridad, cumplimiento normativo, gobernanza, integridad y una gran cantidad de problemas similares relacionados con el movimiento de grandes cantidades de datos. También puede consumir conjuntos de datos que no se puedan ajustar en la memoria de un equipo cliente.
 
-- **Facilidad de implementación**: Una vez que tenga listo un modelo, implementarlo en producción es tan sencillo como insertarlo en un script T-SQL. Después, cualquier aplicación cliente SQL escrita en cualquier lenguaje puede aprovechar las ventajas de los modelos y la inteligencia mediante una llamada de procedimiento almacenado. No se necesitan integraciones específicas del lenguaje.
+- **Implementación sencilla**: una vez que tenga listo un modelo, implementarlo en producción es tan sencillo como insertarlo en un script de T-SQL. Después, cualquier aplicación cliente SQL escrita en cualquier lenguaje puede aprovechar las ventajas de los modelos y la inteligencia mediante una llamada de procedimiento almacenado. No se necesitan integraciones específicas del lenguaje.
 
-- **Rendimiento y escala de nivel empresarial**: Puede usar funciones avanzadas de SQL Server como los índices de almacenamiento de tablas y columnas en memoria con las API escalables de alto rendimiento de los paquetes RevoScale. La eliminación del movimiento de datos también significa que se evitan las restricciones de memoria de cliente a medida que crecen los datos o que se quiere aumentar el rendimiento de la aplicación.
+- **Rendimiento y escala de nivel empresarial**: puede usar funciones avanzadas de SQL Server como los índices de almacenamiento de tablas y columnas en memoria con las API escalables de alto rendimiento de los paquetes de RevoScale. La eliminación del movimiento de datos también significa que se evitan las restricciones de memoria de cliente a medida que crecen los datos o que se quiere aumentar el rendimiento de la aplicación.
 
-- **Extensibilidad amplia**: Puede instalar y ejecutar cualquiera de los paquetes de código abierto más recientes en SQL Server para compilar aplicaciones completas de IA y aprendizaje en grandes cantidades de datos en SQL Server. Instalar un paquete en SQL Server es tan sencillo como instalar un paquete en el equipo local.
+- **Extensibilidad amplia**: puede instalar y ejecutar cualquiera de los paquetes de código abierto más recientes en SQL Server para compilar aplicaciones completas de IA y aprendizaje profundo en grandes cantidades de datos en SQL Server. Instalar un paquete en SQL Server es tan sencillo como instalar un paquete en el equipo local.
 
-- **Amplia disponibilidad sin costo adicional**: Las integraciones de lenguaje están disponibles en todas las ediciones de SQL Server 2017 y posterior, incluida la edición Express.
+- **Amplia disponibilidad sin costo adicional**: hay integraciones de lenguaje disponibles en todas las ediciones de SQL Server 2017 y versiones posteriores, incluida la edición Express.
 
 Para aprovechar al máximo la integración de SQL Server, use el instalador de Visual Studio para instalar la carga de trabajo **Almacenamiento y procesamiento de datos** con la opción **SQL Server Data Tools**. Esta última opción habilita SQL IntelliSense, el resaltado de sintaxis y la implementación.
 
-![Carga de trabajo de almacenamiento y procesamiento de datos](media/workload/data-storage-workload.png) &nbsp;&nbsp;&nbsp;&nbsp; ![Opciones de la carga de trabajo de almacenamiento y procesamiento de datos](media/workload/data-storage-workload-options.png)
+![Carga de trabajo de procesamiento y almacenamiento de datos](media/workload/data-storage-workload.png) &nbsp;&nbsp;&nbsp;&nbsp; ![Opciones de la carga de trabajo de almacenamiento y procesamiento de datos](media/workload/data-storage-workload-options.png)
 
 Para obtener más información:
 

@@ -5,21 +5,37 @@ description: Una lista de las versiones de lanzamiento y los números de compila
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.date: 05/11/2021
+ms.date: 06/29/2021
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: a88e114b664ebf239c375c48536753da3574da11
-ms.sourcegitcommit: 69256dc47489853dc66a037f5b0c1275977540c0
+ms.openlocfilehash: cbd86d9dfa8b1f34ab7a352936a2d8f7f2f2e33f
+ms.sourcegitcommit: 0499d813d5c24052c970ca15373d556a69507250
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109782626"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "113046110"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Números de compilación y fechas de lanzamiento de Visual Studio
+
+::: moniker range="vs-2022"
+
+## <a name="visual-studio-2022-preview"></a>Visual Studio 2022 Preview
+
+En la tabla siguiente se enumeran los números de compilación y las fechas de lanzamiento de Visual Studio 2022 Preview, hasta la fecha.
+
+| **Versión**| **Canal** | **Fecha de lanzamiento** | **Versión de compilación** |
+| ---------------------- | ----------- | ---------------- | ----------------- |
+| 17.0.0 | Versión preliminar 1.1 | 24 de junio de 2021 | 17.0.31423.177 |
+| 17.0.0 | Versión preliminar 1 | 17 de junio de 2021 | 17.0.31410.414 |
+
+> [!NOTE]
+> Para ver los datos de la versión anterior, vea [Números de compilación y fechas de lanzamiento de Visual Studio 2019](visual-studio-build-numbers-and-release-dates.md?view=vs-2019&preserve-view=true).
+
+::: moniker-end
 
 ::: moniker range="vs-2019"
 
@@ -29,6 +45,18 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de v
 
 | **Versión**| **Canal** | **Fecha de lanzamiento** | **Versión de compilación** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.10.3 | Release | 29 de junio de 2021 | 16.10.31424.327 |
+| 16.11.0 | Versión preliminar 2 | 15 de junio de 2021 | 16.11.31410.223 |
+| 16.10.2 | Release | 15 de junio de 2021 | 16.10.31410.357 |
+| 16.9.8 | Release | 15 de junio de 2021 | 16.9.31409.214 |
+| 16.10.1 | Release | 8 de junio de 2021 | 16.10.31402.337 |
+| 16.9.7 | Release | 8 de junio de 2021 | 16.9.31328.270 |
+| 16.7.16 | Release | 8 de junio de 2021 | 16.7.31327.30 |
+| 16.4.23| Release | 8 de junio de 2021 | 16.4.31327.141 |
+| 16.11.0 | Versión preliminar 1 | 25 de mayo de 2021 | 16.11.31320.298 |
+| 16.10.0 | Release | 25 de mayo de 2021 | 16.10.31321.278 |
+| 16.10.0 | Versión preliminar 4 | 18 de mayo de 2021 | 16.10.31313.381 |
+| 16.9.6 | Release | 18 de mayo de 2021 | 16.9.31313.79 |
 | 16.10.0 | Versión preliminar 3 | 11 de mayo de 2021 | 16.10.31306.274 |
 | 16.9.5 | Release | 11 de mayo de 2021 | 16.9.31229.75 |
 | 16.7.15 | Release | 11 de mayo de 2021 | 16.7.31229.181 |
@@ -216,7 +244,9 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de v
 | 16.0.0 | Versión preliminar 1 | 4 de diciembre de 2018 | 16.0.28329.73 |
 
 > [!NOTE]
-> Para obtener una lista de los números de compilación y las fechas de publicación de la versión anterior, consulte [Números de compilación y fechas de lanzamiento de Visual Studio 2017](visual-studio-build-numbers-and-release-dates.md?view=vs-2017&preserve-view=true).
+> Para ver los datos de la versión *anterior*, vea [Números de compilación y fechas de lanzamiento de Visual Studio 2017](visual-studio-build-numbers-and-release-dates.md?view=vs-2017&preserve-view=true).
+>
+>Para ver los datos de la versión *siguiente*, vea [Números de compilación y fechas de lanzamiento de Visual Studio 2022](visual-studio-build-numbers-and-release-dates.md?view=vs-2022&preserve-view=true).
 
 ::: moniker-end
 
@@ -226,190 +256,190 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de v
 
 En la tabla siguiente se enumeran los números de compilación y las fechas de lanzamiento de Visual Studio 2017, hasta la fecha.
 
-| **Versión**| **Canal** | **Fecha de lanzamiento** | **Versión de compilación** |
-| ---------------------- | ----------- | ---------------- | ----------------- |
-| 15.9.36 | Release | 11 de mayo de 2021 | 15.9.28307.1525 |
-| 15.9.35 | Release | 13 de abril de 2021 | 15.9.28307.1500 |
-| 15.9.34 | Release | 9 de marzo de 2021 | 15.9.28307.1440 |
-| 15.9.33 | Release | 10 de febrero de 2021 | 15.9.28307.1401 |
-| 15.9.32 | Release | 9 de febrero de 2021 | 15.9.28307.1382 |
-| 15.9.31 | Release | 12 de enero de 2021 | 15.9.28307.1342 |
-| 15.9.30 | Release | 8 de diciembre de 2020 | 15.9.28307.1321 |
-| 15.9.29 | Release | 10 de noviembre de 2020 | 15.9.28307.1300 |
-| 15.9.28 | Release | 13 de octubre de 2020 | 15.9.28307.1274 |
-| 15.9.27 | Release | 8 de septiembre de 2020 | 15.9.28307.1259 |
-| 15.9.26 | Release | 11 de agosto de 2020 | 15.9.28307.1234 |
-| 15.9.25 | Release | 14 de julio de 2020 | 15.9.28307.1216 |
-| 15.9.24 | Release | 9 de junio de 2020 | 15.9.28307.1177 |
-| 15.9.23 | Release | 12 de mayo de 2020 | 15.9.28307.1146 |
-| 15.9.22 | Release | 14 de abril de 2020 | 15.9.28307.1093 |
-| 15.9.21 | Release | 10 de marzo de 2020 | 15.9.28307.1064 |
-| 15.9.20 | Release | 11 de febrero de 2020 | 15.9.28307.1033 |
-| 15.9.19 | Release | 14 de enero de 2020 | 15.9.28307.1000 |
-| 15.0.28 | Release | 11 de diciembre de 2019 | 15.0.26228.102 |
-| 15.9.18 | Release | 10 de diciembre de 2019 | 15.9.28307.960 |
-| 15.9.17 | Release | 15 de octubre de 2019 | 15.9.28307.905 |
-| 15.9.16 | Release | 10 de septiembre de 2019 | 15.9.28307.858 |
-| 15.0.27 | Release | 10 de septiembre de 2019 | 15.0.26228.98 |
-| 15.9.15 | Release | 13 de agosto de 2019 | 15.9.28307.812 |
-| 15.0.26 | Release | 13 de agosto de 2019 | 15.0.26228.96 |
-| 15.9.14 | Release | 9 de julio de 2019 | 15.9.28307.770 |
-| 15.0.25 | Release | 9 de julio de 2019 | 15.0.26228.92 |
-| 15.9.13 | Release | 11 de junio de 2019 | 15.9.28307.718 |
-| 15.0.24 | Release | 11 de junio de 2019 | 15.0.26228.88 |
-| 15.9.12 | Release | 14 de mayo de 2019 | 15.9.28307.665 |
-| 15.0.23 | Release | 14 de mayo de 2019 | 15.0.26228.85 |
-| 15.9.11 | Release | 2 de abril de 2019 | 15.9.28307.586 |
-| 15.9.10 | Release | 25 de marzo de 2019 | 15.9.28307.557 |
-| 15.9.9 | Release | 12 de marzo de 2019 | 15.9.28307.518 |
-| 15.0.22 | Release | 12 de marzo de 2019 | 15.0.26228.76 |
-| 15.9.8 | Release | 5 de marzo de 2019 | 15.9.28307.481 |
-| 15.9.7 | Release | 12 de febrero de 2019 | 15.9.28307.423 |
-| 15.0.21 | Release | 12 de febrero de 2019 | 15.0.26228.73 |
-| 15.9.6 | Release | 24 de enero de 2019 | 15.9.28307.344 |
-| 15.9.5 | Release | 8 de enero de 2019 | 15.9.28307.280 |
-| 15.9.4 | Release | 11 de diciembre de 2018 | 15.9.28307.222 |
-| 15.0.20 | Release | 11 de diciembre de 2018 | 15.0.26228.64 |
-| 15.9.3 | Release | 28 de noviembre de 2018 | 15.9.28307.145 |
-| 15.9.2 | Release | 19 de noviembre de 2018 | 15.9.28307.108 |
-| 15.9.1 | Release | 15 de noviembre de 2018 | 15.9.28307.105 |
-| 15.9.0 | Release | 13 de noviembre de 2018 | 15.9.28307.53 |
-| 15.9.0 (versión preliminar 6) | Vista previa | 13 de noviembre de 2018 | 15.9.28307.53 |
-| 15.9.0 (versión preliminar 5) | Vista previa | 6 de noviembre de 2018 | 15.9.28302.56 |
-| 15.8.9 | Release | 2 de noviembre de 2018 | 15.8.28010.2050 |
-| 15.8.8 | Release | 24 de octubre de 2018 | 15.8.28010.2048 |
-| 15.9.0 (versión preliminar 4) | Vista previa | 23 de octubre de 2018 | 15.9.28219.56 |
-| 15.8.7 | Release | 10 de octubre de 2018 | 15.8.28010.2046 |
-| 15.0.19 | Release | 10 de octubre de 2018 | 15.0.26228.57 |
-| 15.9.0 (versión preliminar 3) | Vista previa | 2 de octubre de 2018 | 15.9.28128.56 |
-| 15.8.6 | Release | 2 de octubre de 2018 | 15.8.28010.2041 |
-| 15.8.5 | Release | 20 de septiembre de 2018 | 15.8.28010.2036 |
-| 15.9.0 (versión preliminar 2) | Vista previa | 11 de septiembre de 2018 | 15.9.28107.0 |
-| 15.8.4 | Release | 11 de septiembre de 2018 | 15.8.28010.2026 |
-| 15.8.3 | Release | 6 de septiembre de 2018 | 15.8.28010.2019 |
-| 15.8.2 | Release | 28 de agosto de 2018 | 15.8.28010.2016 |
-| 15.0.18 | Release | 28 de agosto de 2018 | 15.0.26228.52 |
-| 15.9.0 (versión preliminar 1) | Vista previa | 20 de agosto de 2018 | 15.9.28016.0 |
-| 15.8.1 | Release | 17 de agosto de 2018 | 15.8.28010.2003 |
-| 15.8.0 | Release | 14 de agosto de 2018 | 15.8.28010.0 |
-| 15.0.17 | Release | 14 de agosto de 2018 | 15.0.26228.49 |
-| 15.7.6 | Release | 2 de agosto de 2018 | 15.7.27703.2047 |
-| 15.0.16 | Release | 2 de agosto de 2018 | 15.0.26228.48 |
-| 15.8.0 (versión preliminar 5) | Vista previa | 26 de julio de 2018 | 15.8.27924.0 |
-| 15.8.0 (versión preliminar 4) | Vista previa | 10 de julio de 2018 | 15.8.27906.1 |
-| 15.7.5 | Release | 10 de julio de 2018 | 15.7.27703.2042 |
-| 15.0.15 | Release | 10 de julio de 2018 | 15.0.26228.43 |
-| 15.8.0 (versión preliminar 3) | Vista previa | 26 de junio de 2018 | 15.8.27825.0 |
-| 15.7.4 | Release | 18 de junio de 2018 | 15.7.27703.2035 |
-| 15.7.3 | Release | 31 de mayo de 2018 | 15.7.27703.2026 |
-| 15.0.14 | Release | 31 de mayo de 2018 | 15.0.26228.37 |
-| 15.8.0 (versión preliminar 2) | Vista previa | 31 de mayo de 2018 | 15.8.27729.1 |
-| 15.7.2 | Release | 21 de mayo de 2018 | 15.7.27703.2018 |
-| 15.8.0 (versión preliminar 1) | Vista previa | 8 de mayo de 2018 | 15.8.27705.2000 |
-| 15.7.1 | Release | 8 de mayo de 2018 | 15.7.27703.2000 |
-| 15.8.0 (versión preliminar 1) | Vista previa | 7 de mayo de 2018 | 15.8.27705.0 |
-| 15.7.0 | Release | 7 de mayo de 2018 | 15.7.27703.1 |
-| 15.7.0 (versión preliminar 6) | Vista previa | 3 de mayo de 2018 | 15.7.27701.1 |
-| 15.7.0 (versión preliminar 5) | Vista previa | 26 de abril de 2018 | 15.7.27625.0 |
-| 15.6.7 | Release | 26 de abril de 2018 | 15.6.27428.2043 |
-| 15.0.13 | Release | 26 de abril de 2018 | 15.0.26228.31 |
-| 15.7.0 (versión preliminar 4) | Vista previa | 18 de abril de 2018 | 15.7.27617.1 |
-| 15.6.6 | Release | 10 de abril de 2018 | 15.6.27428.2037 |
-| 15.0.12 | Release | 10 de abril de 2018 | 15.0.26228.30 |
-| 15.7.0 (versión preliminar 3) | Vista previa | 9 de abril de 2018 | 15.7.27604.0 |
-| 15.6.5 | Release | 4 de abril de 2018 | 15.6.27428.2027 |
-| 15.6.4 | Release | 22 de marzo de 2018 | 15.6.27428.2015 |
-| 15.7.0 (versión preliminar 2) | Vista previa | 21 de marzo de 2018 | 15.7.27520.0 |
-| 15.6.3 | Release | 19 de marzo de 2018 | 15.6.27428.2011 |
-| 15.7.0 (versión preliminar 1) | Vista previa | 13 de marzo de 2018 | 15.7.27512.0 |
-| 15.6.2 | Release | 13 de marzo de 2018 | 15.6.27428.2005 |
-| 15.0.11 | Release | 13 de marzo de 2018 | 15.0.26228.29 |
-| 15.6.1 | Release | 8 de marzo de 2018 | 15.6.27428.2002 |
-| 15.6.1 (versión preliminar 1) | Vista previa | 8 de marzo de 2018 | 15.6.27428.2002 |
-| 15.6.0 | Release | 5 de marzo de 2018 | 15.6.27428.1 |
-| 15.6.0 (versión preliminar 7) | Vista previa | 2 de marzo de 2018 | 15.6.27428.1 |
-| 15.6.0 (versión preliminar 6) | Vista previa | 23 de febrero de 2018 | 15.6.27421.1 |
-| 15.0.10 | Release | 21 de febrero de 2018 | 15.0.26228.28 |
-| 15.5.7 | Release | 20 de febrero de 2018 | 15.0.27130.2036 |
-| 15.6.0 (versión preliminar 5) | Vista previa | 14 de febrero de 2018 | 15.6.27413.0 |
-| 15.6.0 (versión preliminar 4) | Vista previa | 7 de febrero de 2018 | 15.6.27406.0 |
-| 15.0.9 | Release | 2 de febrero de 2018 | 15.0.26228.23 |
-| 15.5.6 | Release | 29 de enero de 2018 | 15.0.27130.2027 |
-| 15.5.5 | Release | 25 de enero de 2018 | 15.0.27130.2026 |
-| 15.6.0 (versión preliminar 3) | Vista previa | 25 de enero de 2018 | 15.6.27323.2 |
-| 15.5.4 | Release | 16 de enero de 2018 | 15.0.27130.2024 |
-| 15.6.0 (versión preliminar 2) | Vista previa | 10 de enero de 2018 | 15.6.27309.0 |
-| 15.5.3 | Release |  9 de enero de 2018 | 15.0.27130.2020 |
-| 15.0.8 | Release |  9 de enero de 2018 | 15.0.26228.21 |
-| 15.5.2 | Release | 14 de diciembre de 2017 | 15.0.27130.2010 |
-| 15.6.0 (versión preliminar 1) | Vista previa | 14 de diciembre de 2017 | 15.6.27205.2004 |
-| 15.5.1 | Release | 7 de diciembre de 2017 | 15.0.27130.2003 |
-| 15.6.0 (versión preliminar 1) | Vista previa | 7 de diciembre de 2017 | 15.6.27205.0 |
-| 15.0.7 | Release | 6 de diciembre de 2017 | 15.0.26228.18 |
-| 15.5.0 | Release | 4 de diciembre de 2017 | 15.0.27130.0 |
-| 15.5.0 (versión preliminar 5) | Vista previa | 30 de noviembre de 2017 | 15.0.27128.1 |
-| 15.4.5 | Release | 27 de noviembre de 2017 | 15.0.27004.2010 |
-| 15.5.0 (versión preliminar 4) | Vista previa | 14 de noviembre de 2017 | 15.0.27110.0 |
-| 15.4.4 | Release | 14 de noviembre de 2017 | 15.0.27004.2009 |
-| 15.0.6 | Release | 14 de noviembre de 2017 | 15.0.26228.17 |
-| 15.4.3 | Release | 8 de noviembre de 2017 | 15.0.27004.2008 |
-| 15.5.0 (versión preliminar 3) | Vista previa | 6 de noviembre de 2017 | 15.0.27102.0 |
-| 15.4.2 | Release | 31 de octubre de 2017 | 15.0.27004.2006 |
-| 15.5.0 (versión preliminar 2) | Vista previa | 23 de octubre de 2017 | 15.0.27019.1 |
-| 15.4.1 | Release | 19 de octubre de 2017 | 15.0.27004.2005 |
-| 15.5 (versión preliminar 1) | Vista previa | 11 de octubre de 2017 | 15.0.27009.1 |
-| 15.4.0 | Release | 9 de octubre de 2017 | 15.0.27004.2002 |
-| 15.4 (versión preliminar 6) | Vista previa | 9 de octubre de 2017| 15.0.27004.20002 |
-| 15.4 (versión preliminar 5) | Vista previa | 6 de octubre de 2017 | 15.0.27004.2000 |
-| 15.4 (versión preliminar 4) | Vista previa | 2 de octubre de 2017 | 15.0.26929.2 |
-| 15.4 (versión preliminar 3) | Vista previa | 21 de septiembre de 2017 | 15.0.26923.00 |
-| 15.3.5 | Release | 19 de septiembre de 2017 | 15.0.26730.16 |
-| 15.0.5 | Release | 18 de septiembre de 2017 | 15.0.26228.16 |
-| 15.3.4 | Release | 12 de septiembre de 2017 | 15.0.26730.15 |
-| 15.4 (versión preliminar 2) | Vista previa | 11 de septiembre de 2017 | 15.0.26906.1 |
-| 15.3.3| Release | 29 de agosto de 2017 | 15.0.26730.12 |
-| 15.4 (versión preliminar 1) | Vista previa | 24 de agosto de 2017 | 15.0.26823.01 |
-| 15.3.2 | Release | 22 de agosto de 2017 | 15.0.26730.10 |
-| 15.3.1 | Release | 18 de agosto de 2017 | 15.0.26730.08 |
-| 15.3.1 (versión preliminar 1) | Vista previa | 18 de agosto de 2017 | 15.0.26730.08 |
-| 15.3.1  | Release | 18 de agosto de 2017 | 15.0.26730.08 |
-| 15.4 (versión preliminar 1) | Vista previa | 24 de agosto de 2017 | 15.0.26823.1 |
-| 15.3.0 | Release | 14 de agosto de 2017 | 15.0.26730.3 |
-| 15.3 (versión preliminar 7.1) | Vista previa | 11 de agosto de 2017 | 15.0.26730.3 |
-| 15.3 (versión preliminar 7) | Vista previa | 1 de agosto de 2017 | 15.0.26730.0 |
-| 15.3 (versión preliminar 6) | Vista previa | 26 de julio de 2017 | 15.0.26724.1 |
-| 15.3 (versión preliminar 5) | Vista previa | 24 de julio de 2017 | 15.0.26720.02 |
-| 15.2.6  | Release | 17 de julio de 2017 | 15.0.26430.16 |
-| 15.3 (versión preliminar 4) | Vista previa | 12 de julio de 2017 | 15.0.26711.1 |
-| 15.2.5  | Release | 6 de julio de 2017 | 15.0.26430.15 |
-| 15.3 (versión preliminar 3) | Vista previa | 26 de junio de 2017 | 15.0.26621.2 |
-| 15.2.4  | Release | 21 de junio de 2017 | 15.0.26430.14 |
-| 15.3 (versión preliminar 2.1) | Vista previa | 20 de junio de 2017 | 15.0.26608.5 |
-| 15.2.3  | Release | 9 de junio de 2017 | 15.0.26430.13 |
-| 15.3 (versión preliminar 2) | Vista previa | 8 de junio de 2017 | 15.0.26606.0 |
-| 15.2.2  | Release | 30 de mayo de 2017 | 15.0.26430.12 |
-| 15.0.4  | Release | 23 de mayo de 2017 | 15.0.26228.13 |
-| 15.2.1  | Release | 12 de mayo de 2017 | 15.0.26430.6 |
-| 15.3 (versión preliminar 1.1) | Vista previa | 11 de mayo de 2017 | 15.0.26510.0 |
-| 15.3 (versión preliminar 1) | Vista previa | 10 de mayo de 2017 | 15.0.26507.0 |
-| 15.2.0 | Release | 10 de mayo de 2017 | 15.0.26430.4 |
-| 15.2 (versión preliminar 4) | Vista previa | 3 de mayo de 2017 | 15.0.26430.1 |
-| 15.2 (versión preliminar 3) | Vista previa | 26 de abril de 2017 | 15.0.26424.2 |
-| 15.2 (versión preliminar 2) | Vista previa | 20 de abril de 2017 | 15.0.26419.1 |
-| 15.2 (versión preliminar 1) | Vista previa | 17 de abril de 2017 | 15.0.26412.1 |
-| 15.1.2  | Release | 17 de abril de 2017 | 15.0.26403.7 |
-| 15.1.1 | Release | 10 de abril de 2017 | 15.0.26403.3 |
-| 15.1.0 | Release | 5 de abril de 2017 | 15.0.26403.0 |
-| 15.0.3  | Release | 31 de marzo de 2017 | 15.0.26228.12 |
-| 15.0.2 | Release | 28 de marzo de 2017 | 15.0.26228.10 |
-| 15.1 (versión preliminar 3) | Vista previa | 27 de marzo de 2017 | 15.0.26323.1 |
-| 15.1 (versión preliminar 2) | Vista previa | 16 de marzo de 2017 | 15.0.26315.0 |
-| 15.0.1  | Release | 14 de marzo de 2017 | 15.0.26228.9 |
-| 15.1 (versión preliminar 1) | Vista previa | 7 de marzo de 2017 | 15.0.26304.0 |
-| 15.0.0 | Release | 7 de marzo de 2017 | 15.0.26228.4 |
+| **Versión**      | **Canal** | **Fecha de lanzamiento**   | **Versión de compilación** |
+|------------------|-------------|--------------------|-------------------|
+| 15.9.36          | Release     | 11 de mayo de 2021       | 15.9.28307.1525   |
+| 15.9.35          | Release     | 13 de abril de 2021     | 15.9.28307.1500   |
+| 15.9.34          | Release     | 9 de marzo de 2021      | 15.9.28307.1440   |
+| 15.9.33          | Release     | 10 de febrero de 2021  | 15.9.28307.1401   |
+| 15.9.32          | Release     | 9 de febrero de 2021   | 15.9.28307.1382   |
+| 15.9.31          | Release     | 12 de enero de 2021   | 15.9.28307.1342   |
+| 15.9.30          | Release     | 8 de diciembre de 2020   | 15.9.28307.1321   |
+| 15.9.29          | Release     | 10 de noviembre de 2020  | 15.9.28307.1300   |
+| 15.9.28          | Release     | 13 de octubre de 2020   | 15.9.28307.1274   |
+| 15.9.27          | Release     | 8 de septiembre de 2020  | 15.9.28307.1259   |
+| 15.9.26          | Release     | 11 de agosto de 2020    | 15.9.28307.1234   |
+| 15.9.25          | Release     | 14 de julio de 2020      | 15.9.28307.1216   |
+| 15.9.24          | Release     | 9 de junio de 2020       | 15.9.28307.1177   |
+| 15.9.23          | Release     | 12 de mayo de 2020       | 15.9.28307.1146   |
+| 15.9.22          | Release     | 14 de abril de 2020     | 15.9.28307.1093   |
+| 15.9.21          | Release     | 10 de marzo de 2020     | 15.9.28307.1064   |
+| 15.9.20          | Release     | 11 de febrero de 2020  | 15.9.28307.1033   |
+| 15.9.19          | Release     | 14 de enero de 2020   | 15.9.28307.1000   |
+| 15.0.28          | Release     | 11 de diciembre de 2019  | 15.0.26228.102    |
+| 15.9.18          | Release     | 10 de diciembre de 2019  | 15.9.28307.960    |
+| 15.9.17          | Release     | 15 de octubre de 2019   | 15.9.28307.905    |
+| 15.9.16          | Release     | 10 de septiembre de 2019 | 15.9.28307.858    |
+| 15.0.27          | Release     | 10 de septiembre de 2019 | 15.0.26228.98     |
+| 15.9.15          | Release     | 13 de agosto de 2019    | 15.9.28307.812    |
+| 15.0.26          | Release     | 13 de agosto de 2019    | 15.0.26228.96     |
+| 15.9.14          | Release     | 9 de julio de 2019       | 15.9.28307.770    |
+| 15.0.25          | Release     | 9 de julio de 2019       | 15.0.26228.92     |
+| 15.9.13          | Release     | 11 de junio de 2019      | 15.9.28307.718    |
+| 15.0.24          | Release     | 11 de junio de 2019      | 15.0.26228.88     |
+| 15.9.12          | Release     | 14 de mayo de 2019       | 15.9.28307.665    |
+| 15.0.23          | Release     | 14 de mayo de 2019       | 15.0.26228.85     |
+| 15.9.11          | Release     | 2 de abril de 2019      | 15.9.28307.586    |
+| 15.9.10          | Release     | 25 de marzo de 2019     | 15.9.28307.557    |
+| 15.9.9           | Release     | 12 de marzo de 2019     | 15.9.28307.518    |
+| 15.0.22          | Release     | 12 de marzo de 2019     | 15.0.26228.76     |
+| 15.9.8           | Release     | 5 de marzo de 2019      | 15.9.28307.481    |
+| 15.9.7           | Release     | 12 de febrero de 2019  | 15.9.28307.423    |
+| 15.0.21          | Release     | 12 de febrero de 2019  | 15.0.26228.73     |
+| 15.9.6           | Release     | 24 de enero de 2019   | 15.9.28307.344    |
+| 15.9.5           | Release     | 8 de enero de 2019    | 15.9.28307.280    |
+| 15.9.4           | Release     | 11 de diciembre de 2018  | 15.9.28307.222    |
+| 15.0.20          | Release     | 11 de diciembre de 2018  | 15.0.26228.64     |
+| 15.9.3           | Release     | 28 de noviembre de 2018  | 15.9.28307.145    |
+| 15.9.2           | Release     | 19 de noviembre de 2018  | 15.9.28307.108    |
+| 15.9.1           | Release     | 15 de noviembre de 2018  | 15.9.28307.105    |
+| 15.9.0           | Release     | 13 de noviembre de 2018  | 15.9.28307.53     |
+| 15.9.0 (versión preliminar 6) | Vista previa     | 13 de noviembre de 2018  | 15.9.28307.53     |
+| 15.9.0 (versión preliminar 5) | Vista previa     | 6 de noviembre de 2018   | 15.9.28302.56     |
+| 15.8.9           | Release     | 2 de noviembre de 2018   | 15.8.28010.2050   |
+| 15.8.8           | Release     | 24 de octubre de 2018   | 15.8.28010.2048   |
+| 15.9.0 (versión preliminar 4) | Vista previa     | 23 de octubre de 2018   | 15.9.28219.56     |
+| 15.8.7           | Release     | 10 de octubre de 2018   | 15.8.28010.2046   |
+| 15.0.19          | Release     | 10 de octubre de 2018   | 15.0.26228.57     |
+| 15.9.0 (versión preliminar 3) | Vista previa     | 2 de octubre de 2018    | 15.9.28128.56     |
+| 15.8.6           | Release     | 2 de octubre de 2018    | 15.8.28010.2041   |
+| 15.8.5           | Release     | 20 de septiembre de 2018 | 15.8.28010.2036   |
+| 15.9.0 (versión preliminar 2) | Vista previa     | 11 de septiembre de 2018 | 15.9.28107.0      |
+| 15.8.4           | Release     | 11 de septiembre de 2018 | 15.8.28010.2026   |
+| 15.8.3           | Release     | 6 de septiembre de 2018  | 15.8.28010.2019   |
+| 15.8.2           | Release     | 28 de agosto de 2018    | 15.8.28010.2016   |
+| 15.0.18          | Release     | 28 de agosto de 2018    | 15.0.26228.52     |
+| 15.9.0 (versión preliminar 1) | Vista previa     | 20 de agosto de 2018    | 15.9.28016.0      |
+| 15.8.1           | Release     | 17 de agosto de 2018    | 15.8.28010.2003   |
+| 15.8.0           | Release     | 14 de agosto de 2018    | 15.8.28010.0      |
+| 15.0.17          | Release     | 14 de agosto de 2018    | 15.0.26228.49     |
+| 15.7.6           | Release     | 2 de agosto de 2018     | 15.7.27703.2047   |
+| 15.0.16          | Release     | 2 de agosto de 2018     | 15.0.26228.48     |
+| 15.8.0 (versión preliminar 5) | Vista previa     | 26 de julio de 2018      | 15.8.27924.0      |
+| 15.8.0 (versión preliminar 4) | Vista previa     | 10 de julio de 2018      | 15.8.27906.1      |
+| 15.7.5           | Release     | 10 de julio de 2018      | 15.7.27703.2042   |
+| 15.0.15          | Release     | 10 de julio de 2018      | 15.0.26228.43     |
+| 15.8.0 (versión preliminar 3) | Vista previa     | 26 de junio de 2018      | 15.8.27825.0      |
+| 15.7.4           | Release     | 18 de junio de 2018      | 15.7.27703.2035   |
+| 15.7.3           | Release     | 31 de mayo de 2018       | 15.7.27703.2026   |
+| 15.0.14          | Release     | 31 de mayo de 2018       | 15.0.26228.37     |
+| 15.8.0 (versión preliminar 2) | Vista previa     | 31 de mayo de 2018       | 15.8.27729.1      |
+| 15.7.2           | Release     | 21 de mayo de 2018       | 15.7.27703.2018   |
+| 15.8.0 (versión preliminar 1) | Vista previa     | 8 de mayo de 2018        | 15.8.27705.2000   |
+| 15.7.1           | Release     | 8 de mayo de 2018        | 15.7.27703.2000   |
+| 15.8.0 (versión preliminar 1) | Vista previa     | 7 de mayo de 2018        | 15.8.27705.0      |
+| 15.7.0           | Release     | 7 de mayo de 2018        | 15.7.27703.1      |
+| 15.7.0 (versión preliminar 6) | Vista previa     | 3 de mayo de 2018        | 15.7.27701.1      |
+| 15.7.0 (versión preliminar 5) | Vista previa     | 26 de abril de 2018     | 15.7.27625.0      |
+| 15.6.7           | Release     | 26 de abril de 2018     | 15.6.27428.2043   |
+| 15.0.13          | Release     | 26 de abril de 2018     | 15.0.26228.31     |
+| 15.7.0 (versión preliminar 4) | Vista previa     | 18 de abril de 2018     | 15.7.27617.1      |
+| 15.6.6           | Release     | 10 de abril de 2018     | 15.6.27428.2037   |
+| 15.0.12          | Release     | 10 de abril de 2018     | 15.0.26228.30     |
+| 15.7.0 (versión preliminar 3) | Vista previa     | 9 de abril de 2018      | 15.7.27604.0      |
+| 15.6.5           | Release     | 4 de abril de 2018      | 15.6.27428.2027   |
+| 15.6.4           | Release     | 22 de marzo de 2018     | 15.6.27428.2015   |
+| 15.7.0 (versión preliminar 2) | Vista previa     | 21 de marzo de 2018     | 15.7.27520.0      |
+| 15.6.3           | Release     | 19 de marzo de 2018     | 15.6.27428.2011   |
+| 15.7.0 (versión preliminar 1) | Vista previa     | 13 de marzo de 2018     | 15.7.27512.0      |
+| 15.6.2           | Release     | 13 de marzo de 2018     | 15.6.27428.2005   |
+| 15.0.11          | Release     | 13 de marzo de 2018     | 15.0.26228.29     |
+| 15.6.1           | Release     | 8 de marzo de 2018      | 15.6.27428.2002   |
+| 15.6.1 (versión preliminar 1) | Vista previa     | 8 de marzo de 2018      | 15.6.27428.2002   |
+| 15.6.0           | Release     | 5 de marzo de 2018      | 15.6.27428.1      |
+| 15.6.0 (versión preliminar 7) | Vista previa     | 2 de marzo de 2018      | 15.6.27428.1      |
+| 15.6.0 (versión preliminar 6) | Vista previa     | 23 de febrero de 2018  | 15.6.27421.1      |
+| 15.0.10          | Release     | 21 de febrero de 2018  | 15.0.26228.28     |
+| 15.5.7           | Release     | 20 de febrero de 2018  | 15.0.27130.2036   |
+| 15.6.0 (versión preliminar 5) | Vista previa     | 14 de febrero de 2018  | 15.6.27413.0      |
+| 15.6.0 (versión preliminar 4) | Vista previa     | 7 de febrero de 2018   | 15.6.27406.0      |
+| 15.0.9           | Release     | 2 de febrero de 2018   | 15.0.26228.23     |
+| 15.5.6           | Release     | 29 de enero de 2018   | 15.0.27130.2027   |
+| 15.5.5           | Release     | 25 de enero de 2018   | 15.0.27130.2026   |
+| 15.6.0 (versión preliminar 3) | Vista previa     | 25 de enero de 2018   | 15.6.27323.2      |
+| 15.5.4           | Release     | 16 de enero de 2018   | 15.0.27130.2024   |
+| 15.6.0 (versión preliminar 2) | Vista previa     | 10 de enero de 2018   | 15.6.27309.0      |
+| 15.5.3           | Release     | 9 de enero de 2018    | 15.0.27130.2020   |
+| 15.0.8           | Release     | 9 de enero de 2018    | 15.0.26228.21     |
+| 15.5.2           | Release     | 14 de diciembre de 2017  | 15.0.27130.2010   |
+| 15.6.0 (versión preliminar 1) | Vista previa     | 14 de diciembre de 2017  | 15.6.27205.2004   |
+| 15.5.1           | Release     | 7 de diciembre de 2017   | 15.0.27130.2003   |
+| 15.6.0 (versión preliminar 1) | Vista previa     | 7 de diciembre de 2017   | 15.6.27205.0      |
+| 15.0.7           | Release     | 6 de diciembre de 2017   | 15.0.26228.18     |
+| 15.5.0           | Release     | 4 de diciembre de 2017   | 15.0.27130.0      |
+| 15.5.0 (versión preliminar 5) | Vista previa     | 30 de noviembre de 2017  | 15.0.27128.1      |
+| 15.4.5           | Release     | 27 de noviembre de 2017  | 15.0.27004.2010   |
+| 15.5.0 (versión preliminar 4) | Vista previa     | 14 de noviembre de 2017  | 15.0.27110.0      |
+| 15.4.4           | Release     | 14 de noviembre de 2017  | 15.0.27004.2009   |
+| 15.0.6           | Release     | 14 de noviembre de 2017  | 15.0.26228.17     |
+| 15.4.3           | Release     | 8 de noviembre de 2017   | 15.0.27004.2008   |
+| 15.5.0 (versión preliminar 3) | Vista previa     | 6 de noviembre de 2017   | 15.0.27102.0      |
+| 15.4.2           | Release     | 31 de octubre de 2017   | 15.0.27004.2006   |
+| 15.5.0 (versión preliminar 2) | Vista previa     | 23 de octubre de 2017   | 15.0.27019.1      |
+| 15.4.1           | Release     | 19 de octubre de 2017   | 15.0.27004.2005   |
+| 15.5 (versión preliminar 1)   | Vista previa     | 11 de octubre de 2017   | 15.0.27009.1      |
+| 15.4.0           | Release     | 9 de octubre de 2017    | 15.0.27004.2002   |
+| 15.4 (versión preliminar 6)   | Vista previa     | 9 de octubre de 2017    | 15.0.27004.20002  |
+| 15.4 (versión preliminar 5)   | Vista previa     | 6 de octubre de 2017    | 15.0.27004.2000   |
+| 15.4 (versión preliminar 4)   | Vista previa     | 2 de octubre de 2017    | 15.0.26929.2      |
+| 15.4 (versión preliminar 3)   | Vista previa     | 21 de septiembre de 2017 | 15.0.26923.00     |
+| 15.3.5           | Release     | 19 de septiembre de 2017 | 15.0.26730.16     |
+| 15.0.5           | Release     | 18 de septiembre de 2017 | 15.0.26228.16     |
+| 15.3.4           | Release     | 12 de septiembre de 2017 | 15.0.26730.15     |
+| 15.4 (versión preliminar 2)   | Vista previa     | 11 de septiembre de 2017 | 15.0.26906.1      |
+| 15.3.3           | Release     | 29 de agosto de 2017    | 15.0.26730.12     |
+| 15.4 (versión preliminar 1)   | Vista previa     | 24 de agosto de 2017    | 15.0.26823.01     |
+| 15.3.2           | Release     | 22 de agosto de 2017    | 15.0.26730.10     |
+| 15.3.1           | Release     | 18 de agosto de 2017    | 15.0.26730.08     |
+| 15.3.1 (versión preliminar 1) | Vista previa     | 18 de agosto de 2017    | 15.0.26730.08     |
+| 15.3.1           | Release     | 18 de agosto de 2017    | 15.0.26730.08     |
+| 15.4 (versión preliminar 1)   | Vista previa     | 24 de agosto de 2017    | 15.0.26823.1      |
+| 15.3.0           | Release     | 14 de agosto de 2017    | 15.0.26730.3      |
+| 15.3 (versión preliminar 7.1) | Vista previa     | 11 de agosto de 2017    | 15.0.26730.3      |
+| 15.3 (versión preliminar 7)   | Vista previa     | 1 de agosto de 2017     | 15.0.26730.0      |
+| 15.3 (versión preliminar 6)   | Vista previa     | 26 de julio de 2017      | 15.0.26724.1      |
+| 15.3 (versión preliminar 5)   | Vista previa     | 24 de julio de 2017      | 15.0.26720.02     |
+| 15.2.6           | Release     | 17 de julio de 2017      | 15.0.26430.16     |
+| 15.3 (versión preliminar 4)   | Vista previa     | 12 de julio de 2017      | 15.0.26711.1      |
+| 15.2.5           | Release     | 6 de julio de 2017       | 15.0.26430.15     |
+| 15.3 (versión preliminar 3)   | Vista previa     | 26 de junio de 2017      | 15.0.26621.2      |
+| 15.2.4           | Release     | 21 de junio de 2017      | 15.0.26430.14     |
+| 15.3 (versión preliminar 2.1) | Vista previa     | 20 de junio de 2017      | 15.0.26608.5      |
+| 15.2.3           | Release     | 9 de junio de 2017       | 15.0.26430.13     |
+| 15.3 (versión preliminar 2)   | Vista previa     | 8 de junio de 2017       | 15.0.26606.0      |
+| 15.2.2           | Release     | 30 de mayo de 2017       | 15.0.26430.12     |
+| 15.0.4           | Release     | 23 de mayo de 2017       | 15.0.26228.13     |
+| 15.2.1           | Release     | 12 de mayo de 2017       | 15.0.26430.6      |
+| 15.3 (versión preliminar 1.1) | Vista previa     | 11 de mayo de 2017       | 15.0.26510.0      |
+| 15.3 (versión preliminar 1)   | Vista previa     | 10 de mayo de 2017       | 15.0.26507.0      |
+| 15.2.0           | Release     | 10 de mayo de 2017       | 15.0.26430.4      |
+| 15.2 (versión preliminar 4)   | Vista previa     | 3 de mayo de 2017        | 15.0.26430.1      |
+| 15.2 (versión preliminar 3)   | Vista previa     | 26 de abril de 2017     | 15.0.26424.2      |
+| 15.2 (versión preliminar 2)   | Vista previa     | 20 de abril de 2017     | 15.0.26419.1      |
+| 15.2 (versión preliminar 1)   | Vista previa     | 17 de abril de 2017     | 15.0.26412.1      |
+| 15.1.2           | Release     | 17 de abril de 2017     | 15.0.26403.7      |
+| 15.1.1           | Release     | 10 de abril de 2017     | 15.0.26403.3      |
+| 15.1.0           | Release     | 5 de abril de 2017      | 15.0.26403.0      |
+| 15.0.3           | Release     | 31 de marzo de 2017     | 15.0.26228.12     |
+| 15.0.2           | Release     | 28 de marzo de 2017     | 15.0.26228.10     |
+| 15.1 (versión preliminar 3)   | Vista previa     | 27 de marzo de 2017     | 15.0.26323.1      |
+| 15.1 (versión preliminar 2)   | Vista previa     | 16 de marzo de 2017     | 15.0.26315.0      |
+| 15.0.1           | Release     | 14 de marzo de 2017     | 15.0.26228.9      |
+| 15.1 (versión preliminar 1)   | Vista previa     | 7 de marzo de 2017      | 15.0.26304.0      |
+| 15.0.0           | Release     | 7 de marzo de 2017      | 15.0.26228.4      |
 
 > [!NOTE]
-> Para más información sobre los números de compilación y las fechas de lanzamiento de la versión siguiente de Visual Studio, consulte la página [Números de compilación y fechas de lanzamiento de Visual Studio 2019](?preserve-view=true&view=vs-2019).
+> Para ver los datos de las versiones más recientes, vea [Números de compilación y fechas de lanzamiento de Visual Studio 2019](?preserve-view=true&view=vs-2019) o [Números de compilación y fechas de lanzamiento de Visual Studio 2022](?preserve-view=true&view=vs-2022).
 
 ::: moniker-end
 

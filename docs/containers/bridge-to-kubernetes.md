@@ -1,31 +1,40 @@
 ---
-title: Uso del Puente a Kubernetes con Visual Studio
-titleSuffix: ''
+title: 'Tutorial: Conexión de máquinas de desarrollo con Bridge to Kubernetes'
 ms.technology: vs-azure
 ms.date: 03/24/2021
-ms.topic: quickstart
-description: Más información sobre cómo usar Puente a Kubernetes con Visual Studio para conectar el equipo de desarrollo a un clúster de Kubernetes
+ms.topic: tutorial
+description: Conecte el equipo de desarrollo a un clúster de Kubernetes con Bridge to Kubernetes con Visual Studio.
 keywords: Puente a Kubernetes, Azure Dev Spaces, Dev Spaces, Docker, Kubernetes, Azure, contenedores
 monikerRange: '>=vs-2019'
 ms.author: ghogen
 author: ghogen
 manager: jmartens
-ms.openlocfilehash: fdcf31d062fe2be72709979f0892e6a7f535024a
-ms.sourcegitcommit: 2049ec99f1439ec91d002853226934b067b1ee70
+ms.openlocfilehash: b8d6c98d2e2146ad57871b74cd2d522ed2b04259
+ms.sourcegitcommit: 0499d813d5c24052c970ca15373d556a69507250
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "105635047"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "113046123"
 ---
-# <a name="use-bridge-to-kubernetes"></a>Uso de Puente a Kubernetes
+# <a name="tutorial-use-bridge-to-kubernetes-to-connect-your-clusters-and-your-development-computers"></a>Tutorial: Uso de Bridge to Kubernetes para conectar los clústeres y los equipos de desarrollo
 
-Puede usar Puente a Kubernetes para redirigir el tráfico entre el clúster de Kubernetes y el código en ejecución en el equipo de desarrollo. También se proporciona un script para implementar una aplicación de ejemplo de gran tamaño con varios microservicios en un clúster de Kubernetes.
+En este tutorial, aprenderá a usar Bridge to Kubernetes para redirigir el tráfico entre el clúster de Kubernetes y el código en ejecución en el equipo de desarrollo. 
 
-## <a name="before-you-begin"></a>Antes de empezar
+También se proporciona un script para implementar una aplicación de ejemplo de gran tamaño con varios microservicios en un clúster de Kubernetes.
 
-En esta guía se usa la [aplicación de ejemplo TODO][todo-app-github] para mostrar la conexión del equipo de desarrollo a un clúster de Kubernetes. Si ya tiene una aplicación que se ejecuta en un clúster de Kubernetes, puede seguir los pasos que se indican a continuación y usar los nombres de sus servicios.
+Obtenga más información sobre Bridge to Kubernetes con el artículo [Cómo funciona Bridge to Kubernetes](overview-bridge-to-kubernetes.md).
 
-En este ejemplo se muestra cómo se puede usar Bridge to Kubernetes para desarrollar una versión de microservicio de una aplicación TODO simple en cualquier clúster de Kubernetes. Este ejemplo, con Visual Studio, se ha adaptado del código proporcionado por [TodoMVC](http://todomvc.com). Estos pasos deben funcionar con cualquier clúster de Kubernetes.
+## <a name="prerequisites"></a>Prerrequisitos
+
+- Un clúster de Kubernetes
+- [Visual Studio 2019][visual-studio], versión 16.7 Preview 4 o posterior ejecutándose en Windows 10.
+- [Extensión Bridge to Kubernetes instalada][btk-extension]
+
+## <a name="about-the-data"></a>Acerca de los datos
+
+En este tutorial se usa Bridge to Kubernetes para desarrollar una versión de microservicio de una aplicación TODO simple en cualquier clúster de Kubernetes. Esta [aplicación de ejemplo TODO][todo-app-github], con Visual Studio, se ha adaptado del código proporcionado por [TodoMVC](http://todomvc.com). 
+
+ Estos pasos deben funcionar con cualquier clúster de Kubernetes. Por tanto, si ya tiene una aplicación que se ejecuta en un clúster de Kubernetes, puede seguir los pasos que se indican a continuación y usar los nombres de los servicios propios.
 
 El ejemplo de aplicación TODO se compone de un front-end y un back-end que proporciona almacenamiento persistente. Este ejemplo extendido agrega un componente de estadísticas y divide la aplicación en varios microservicios, en concreto:
 
@@ -37,15 +46,10 @@ El ejemplo de aplicación TODO se compone de un front-end y un back-end que prop
 
 En total, esta aplicación TODO extendida contiene seis componentes interrelacionados.
 
-### <a name="prerequisites"></a>Prerrequisitos
-
-- Un clúster de Kubernetes.
-- [Visual Studio 2019][visual-studio], versión 16.7 Preview 4 o posterior ejecutándose en Windows 10.
-- [Extensión Puente a Kubernetes instalada][btk-extension].
 
 ## <a name="check-the-cluster"></a>Comprobación del clúster
 
-Abra un símbolo del sistema y compruebe que kubectl esté instalado y en la ruta de acceso y que el clúster que quiere usar esté disponible y listo, y establezca el contexto en dicho clúster.
+Abra un símbolo del sistema y compruebe que `kubectl` esté instalado y en la ruta de acceso, que el clúster que quiere usar esté disponible y listo, y establezca el contexto en ese clúster.
 
 ```cmd
 kubectl cluster-info

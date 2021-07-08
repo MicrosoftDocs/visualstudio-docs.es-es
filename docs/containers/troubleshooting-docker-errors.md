@@ -11,12 +11,12 @@ ms.topic: troubleshooting
 ms.workload: multiple
 ms.date: 01/27/2020
 ms.author: ghogen
-ms.openlocfilehash: f16ecd899bc1dddd7383ef1a815ed6197b799a19
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5f48b5c06e91b9c05e6edc7e2a1738aeb677a7ba
+ms.sourcegitcommit: 69456d802203d21dabc3ae8662547a3241c24f47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859533"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "110235916"
 ---
 # <a name="troubleshoot-visual-studio-development-with-docker"></a>Solución de problemas de desarrollo de Visual Studio con Docker
 
@@ -29,7 +29,7 @@ El uso compartido de archivos solo necesita administrarse si usa Hyper-V con Doc
 1. Haga clic derecho en **Docker para Windows** en el área de notificación y, a continuación, seleccione **Configuración**.
 1. Seleccione **Recursos** > **Uso compartido de archivos** y comparta la carpeta a la que se necesita tener acceso. Es posible compartir toda la unidad del sistema, pero no se recomienda.
 
-    ![unidades compartidas](media/troubleshooting-docker-errors/docker-settings-image.png)
+    :::image type="content" source="media//troubleshooting-docker-errors/docker-settings-image.png" alt-text="Unidades compartidas":::
 
 > [!TIP]
 > Las versiones de Visual Studio posteriores a la versión 15.6 de Visual Studio 2017 le avisarán si las **unidades compartidas** no están configuradas.
@@ -86,7 +86,7 @@ De forma predeterminada, Docker almacena imágenes en la carpeta *%ProgramData%/
     "graph": "D:\\mypath\\images"
 ```
 
-![Captura de pantalla del uso compartido de archivos de Docker.](media/troubleshooting-docker-errors/docker-daemon-settings.png)
+:::image type="content" source="media/troubleshooting-docker-errors/docker-daemon-settings.png" alt-text="Captura de pantalla del uso compartido de archivos de Docker.":::
 
 Haga clic en **Apply & Restart** (Aplicar y reiniciar). En estos pasos se modifica el archivo de configuración que se encuentra en *%ProgramData%\docker\config\daemon.json*. Las imágenes compiladas previamente no se mueven.
 
@@ -94,7 +94,7 @@ Haga clic en **Apply & Restart** (Aplicar y reiniciar). En estos pasos se modifi
 
 Al agregar compatibilidad con Docker a un proyecto, se elige un contenedor de Linux o Windows. Si el host de servidor de Docker no está configurado para ejecutar el mismo tipo de contenedor que el destino del proyecto, es probable que vea un error parecido al siguiente:
 
-![Captura de pantalla del error de coincidencia entre el host y el proyecto de Docker.](media/troubleshooting-docker-errors/docker-host-config-change-linux-to-windows.png)
+:::image type="content" source="media/troubleshooting-docker-errors/docker-host-config-change-linux-to-windows.png" alt-text="Captura de pantalla del error de coincidencia entre el host y el proyecto de Docker.":::
 
 Para solucionar este problema:
 

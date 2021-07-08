@@ -1,13 +1,12 @@
 ---
-title: Trabajar con soluciones y proyectos
+title: Creación y uso de soluciones y proyectos de Visual Studio
 description: Conozca la diferencia entre soluciones y proyectos y cómo usarlos en Visual Studio.
 ms.custom: SEO-VS-2020, contperf-fy21q2
-ms.date: 12/23/2020
+ms.date: 06/14/2021
 ms.topic: how-to
 f1_keywords:
 - vs.openprojectfromweb
 - VS.ToolsOptionsPages.Projects.General
-- SolutionItemsProject
 helpviewer_keywords:
 - solutions [Visual Studio], creating
 - projects [Visual Studio], creating
@@ -16,14 +15,16 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f702908c60b08ac1eaae5aa1f941a2f56eaf8fd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 713d320767bd329cc53b536bdad058a5db592b3f
+ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956807"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924934"
 ---
-# <a name="work-with-solutions-and-projects"></a>Trabajar con soluciones y proyectos
+# <a name="create-work-with-and-delete-visual-studio-projects-and-solutions"></a>Creación, uso y eliminación de proyectos y soluciones de Visual Studio
+
+En este artículo, aprenderá a crear y usar proyectos de Visual Studio desde cero para almacenar los artefactos que necesita para compilar las aplicaciones.  Si no está familiarizado con los proyectos de Visual Studio, vea esta introducción de [Proyectos y soluciones](solutions-and-projects-in-visual-studio.md).  Para obtener información sobre cómo crear rápidamente un proyecto a partir de una plantilla, vea [Creación de un proyecto a partir de una plantilla](create-new-project.md).
 
 Los *proyectos* incluyen los elementos necesarios para compilar la aplicación, como archivos de código fuente, mapas de bits, iconos y referencias de componentes y servicios. Al crear un proyecto, Visual Studio crea una *solución* que lo contiene. Después, si quiere, puede agregar otros proyectos nuevos o existentes a la solución. Las soluciones también pueden contener archivos que no están conectados con ningún proyecto específico.
 

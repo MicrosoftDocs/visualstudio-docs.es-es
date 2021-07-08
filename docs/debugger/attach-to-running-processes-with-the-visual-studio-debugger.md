@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e3836403af80d06a2ecaa7f77cb7f49f0c6f0e8
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 9774878b8d8862fca0b8b35de924b7bc1ab45656
+ms.sourcegitcommit: 8fb1500acb7e6314fbb6b78eada78ef5d61d39bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112389792"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "113280520"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Asociar con procesos en ejecución con el depurador de Visual Studio
 
@@ -159,6 +159,12 @@ Para obtener instrucciones más completas sobre cómo depurar aplicaciones ASP.N
 En algunos casos, al depurar en una sesión de Escritorio remoto (Terminal Services), en la lista **Procesos disponibles** no aparecerán todos los procesos disponibles. Si se ejecuta Visual Studio como usuario que tiene una cuenta de usuario limitada, la lista **Procesos disponibles** no mostrará los procesos que se estén ejecutando en la sesión 0. La sesión 0 se usa para los servicios y otros procesos de servidor, incluido *w3wp.exe*. Para resolver el problema, ejecute [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] con una cuenta de administrador o ejecute [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] desde la consola de servidor en lugar de una sesión de Terminal Services.
 
 Si ninguna de estas dos soluciones es posible, existe una tercera opción que consiste en asociar al proceso mediante la ejecución de `vsjitdebugger.exe -p <ProcessId>` en la línea de comandos de Windows. Puede determinar el identificador de proceso mediante *tlist.exe*. Para obtener el archivo *tlist.exe*, descargue e instale las Herramientas de depuración para Windows, disponibles en  [Descargas de WDK y WinDbg](/windows-hardware/drivers/download-the-wdk).
+
+## <a name="attach-to-a-net-core-process-running-on-azure-app-service-windows"></a>Asociación a un proceso de .NET Core que se ejecuta en Azure App Service (Windows)
+
+Si va a realizar la publicación en Azure App Service (Windows), encontrará la opción **Adjuntar depurador** en el menú **...** en **Hospedaje**. Visual Studio intenta adjuntar el depurador remoto a la instancia de Azure App Service (Windows) en la que se publica el perfil.
+
+:::image type="content" source="../debugger/media/attach-debugger-publish-profile.png" alt-text="Captura de pantalla de la opción Adjuntar depurador desde la página Resumen de publicación.":::
 
 ## <a name="attach-to-a-net-core-process-running-on-linux-using-ssh"></a>Asociación a un proceso de .NET Core que se ejecuta en Linux mediante SSH
 

@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 28451b9bf317c33e1aff52a62247374ea2b6871e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1675cf43cb9632d4480265f00a377c1f5c530b51
+ms.sourcegitcommit: c5f2a142ebf9f00808314f79a4508a82e6df1198
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913884"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111395363"
 ---
 # <a name="item-metadata-in-task-batching"></a>Metadatos de elementos en el procesamiento por lotes de tareas
 
@@ -138,9 +138,9 @@ En el ejemplo siguiente, se muestra cómo dividir varias listas de elementos en 
 
 ## <a name="batch-one-item-at-a-time"></a>Procesamiento por lotes de un elemento cada vez
 
-El procesamiento por lotes también se puede realizar en metadatos de elementos conocidos que se asignan a cada elemento durante su creación. De este modo se garantiza que cada elemento de una colección disponga de metadatos que utilizar para el procesamiento por lotes. El valor de metadatos `Identity` es único para cada elemento y resulta de gran utilidad para dividir cada elemento de una lista de elementos en un lote independiente. Para obtener una lista completa de metadatos de elementos conocidos, vea [Metadatos de los elementos conocidos](../msbuild/msbuild-well-known-item-metadata.md).
+El procesamiento por lotes también se puede realizar en metadatos de elementos conocidos que se asignan a cada elemento durante su creación. De este modo se garantiza que cada elemento de una colección disponga de metadatos que utilizar para el procesamiento por lotes. El valor de metadatos `Identity` es útil para dividir cada elemento de una lista de elementos en un lote independiente. Para obtener una lista completa de metadatos de elementos conocidos, vea [Metadatos de los elementos conocidos](../msbuild/msbuild-well-known-item-metadata.md).
 
-En el ejemplo siguiente se muestra cómo procesar por lotes cada uno de los elementos de una lista, de uno en uno. Dado que el valor de metadatos `Identity` de cada elemento es único, la lista de elementos `ExampColl` se divide en seis lotes, cada uno de los cuales contiene un elemento de la lista. La presencia de `%(Identity)` en el atributo `Text` indica a MSBuild que se debe realizar un procesamiento por lotes.
+En el ejemplo siguiente se muestra cómo procesar por lotes cada uno de los elementos de una lista, de uno en uno. La lista de elementos `ExampColl` se divide en seis lotes, cada uno con un elemento de la lista de elementos. La presencia de `%(Identity)` en el atributo `Text` indica a MSBuild que se debe realizar un procesamiento por lotes.
 
 ```xml
 <Project
@@ -174,6 +174,35 @@ Identity: 'Item3' -- Items in ExampColl: Item3
 Identity: 'Item4' -- Items in ExampColl: Item4
 Identity: 'Item5' -- Items in ExampColl: Item5
 Identity: 'Item6' -- Items in ExampColl: Item6
+```
+
+Pero no se garantiza que `Identity` sea único; su valor es el valor final evaluado del atributo `Include`. Por tanto, si un atributo `Include` se usa varias veces, se procesarán por lotes de manera conjunta. Como se muestra en el ejemplo siguiente, para esta técnica es necesario que los atributos `Include` sean únicos para cada elemento del grupo. Para ilustrarlo mejor, considere el código siguiente:
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Item Include="1">
+      <M>1</M>
+    </Item>
+    <Item Include="1">
+      <M>2</M>
+    </Item>
+    <Item Include="2">
+      <M>3</M>
+    </Item>
+  </ItemGroup>
+
+  <Target Name="Batching">
+    <Warning Text="@(Item->'%(Identity): %(M)')" Condition=" '%(Identity)' != '' "/>
+  </Target>
+</Project>
+```
+
+En la salida se muestra que los dos primeros elementos están en el mismo lote, porque el atributo `Include` es el mismo para ellos:
+
+```output
+test.proj(15,5): warning : 1: 1;1: 2
+test.proj(15,5): warning : 2: 3
 ```
 
 ## <a name="filter-item-lists"></a>Filtro de elementos en listas

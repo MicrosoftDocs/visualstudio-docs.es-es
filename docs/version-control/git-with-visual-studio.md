@@ -2,19 +2,19 @@
 title: La experiencia de Git en Visual Studio 2019
 titleSuffix: ''
 description: Obtenga información sobre cómo la nueva experiencia integrada de Git en Visual Studio 2019 puede ayudarle a ser más productivo.
-ms.date: 04/01/2021
+ms.date: 06/17/2021
 ms.topic: overview
 ms.author: tglee
 author: TerryGLee
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.manager: jmartens
-ms.openlocfilehash: 7ca09edada7715b9e7be754dbec22e1654288df8
-ms.sourcegitcommit: a0f5e7188838c5989c9cc78d99fb29bb2813501e
+ms.openlocfilehash: ae5d17bfe09f2ebac5abb37c6d6ceed59c5398d3
+ms.sourcegitcommit: a9526ab1556c47570286c7a7d3314af67fd1dcf0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "109729317"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "112365461"
 ---
 # <a name="git-experience-in-visual-studio"></a>Experiencia de Git en Visual Studio
 
@@ -184,15 +184,19 @@ También puede usar los controles de alternancia para mostrar u ocultar las dife
 
 ## <a name="personalize-your-git-settings"></a>Personalización de la configuración de Git
 
-Para personalizar la configuración de Git en un nivel de repositorio, así como en un nivel global, vaya a **Git** > **Configuración** o a **Herramientas** > **Opciones** > **Control de código fuente** en la barra de menús. Después, elija las opciones que quiera.
+Para personalizar la configuración de Git en un nivel de repositorio, así como en un nivel global, vaya a **Git** > **Configuración** o a **Herramientas** > **Opciones** > **Control de código fuente** en la barra de menús. Después, elija las [opciones](git-settings.md) que quiera.
 
 :::image type="content" source="media/git-options-settings.png" alt-text="Cuadro de diálogo Opciones donde puede elegir la configuración de personalización en el IDE de Visual Studio":::
+
+::: moniker range="vs-2019"
 
 ## <a name="how-to-use-the-full-team-explorer-experience-in-visual-studio"></a>Cómo usar la experiencia de Team Explorer heredada en Visual Studio
 
 La nueva experiencia de Git es el sistema de control de versiones predeterminado en Visual Studio 2019 a partir de la [versión 16.8](/visualstudio/releases/2019/release-notes/). Sin embargo, si desea desactivarla, puede hacerlo. Vaya a **Herramientas** > **Opciones** > **Entorno** > **Características en versión preliminar** y active la casilla **New Git User Experience** (Nueva experiencia de usuario de Git), que le cambiará a la experiencia de Team Explorer para Git.
 
 :::image type="content" source="media/git-opt-new-user-experience.png" alt-text="Sección Características en versión preliminar del cuadro de diálogo Opciones de Visual Studio":::
+
+::: moniker-end
 
 ## <a name="whats-next"></a>Pasos siguientes
 

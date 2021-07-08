@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cbf2aff512b98e7a813134c3b376b6972c8cd4f9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e2edfd4b9391beed5c379817c55871759ff02eec
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99897737"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112384933"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>Propiedades reservadas y conocidas de MSBuild
 
@@ -71,7 +71,10 @@ En la tabla de esta sección se muestran las propiedades predefinidas de MSBuild
 | `MSBuildThisFileName` | Reservada | Parte de nombre de archivo de `MSBuildThisFileFullPath`, sin la extensión de nombre de archivo. | `ConsoleApp1` |
 | `MSBuildToolsPath` | Reservada | Ruta de acceso de instalación de la versión de MSBuild que se asocia al valor de `MSBuildToolsVersion`.<br /><br /> No incluya la barra diagonal inversa final de la ruta.<br /><br /> Esta propiedad no se puede invalidar. | `C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\MSBuild\Current\Bin` |
 | `MSBuildToolsVersion` | Reservada | Versión del conjunto de herramientas de MSBuild que se utilizará para compilar el proyecto.<br /><br /> Nota: Un conjunto de herramientas de MSBuild consta de tareas, destinos y herramientas que se utilizan para compilar una aplicación. Las herramientas incluyen compiladores como *csc.exe* y *vbc.exe*. Para obtener más información, vea [Conjunto de herramientas de MSBuild (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md) y [Configuraciones de conjuntos de herramientas estándar y personalizados](../msbuild/standard-and-custom-toolset-configurations.md). | `Current` |
-| `MSBuildVersion` | Reservada | La versión de MSBuild que se usa para compilar el proyecto. <br /><br/> Esta propiedad no se puede invalidar, de lo contrario, se devuelve el mensaje de error `MSB4004 - The 'MSBuildVersion' property is reserved, and can not be modified.`. | 16.7.0 |
+| `MSBuildVersion` | Reservada | La versión de MSBuild que se usa para compilar el proyecto. <br /><br/> Esta propiedad no se puede invalidar, de lo contrario, se devuelve el mensaje de error `MSB4004 - The 'MSBuildVersion' property is reserved, and can not be modified.`. | 16.11.0 |
+| `MSBuildAssemblyVersion` | Reservado | La versión de los ensamblados de MSBuild que se usan para compilar el proyecto. | 16.0 |
+| `MSBuildFileVersion` | Reservado | La versión de cuatro partes de los ensamblados de MSBuild que se usan para compilar el proyecto. | 16.11.0.30701 |
+| `MSBuildSemanticVersion` | Reservado | La versión de semver 2.0 completa de los ensamblados de MSBuild que se usan para compilar el proyecto. | 16.11.0-preview-21302-05+5e37cc992 |
 
 ## <a name="names-that-conflict-with-msbuild-elements"></a>Nombres en conflicto con elementos de MSBuild
 

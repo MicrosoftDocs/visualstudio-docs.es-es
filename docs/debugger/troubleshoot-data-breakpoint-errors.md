@@ -2,7 +2,7 @@
 title: No se puede establecer el punto de interrupción de datos | Microsoft Docs
 description: Encuentre explicaciones, soluciones y alternativas para el error "No se puede establecer el punto de interrupción de datos" que se produce al usar la opción "Interrumpir cuando cambia el valor".
 ms.custom: SEO-VS-2020
-ms.date: 12/3/2019
+ms.date: 5/19/2020
 ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.unable_to_set_data_breakpoint
@@ -17,25 +17,25 @@ ms.author: waan
 manager: caslan
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e90c3d4af8e568f1bb2e6987c66c7fbc0856c57
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 73e7e02d90e2a89c81b5e690718c95fe7efe0fb3
+ms.sourcegitcommit: 6e27b1238a8aa704b127eac34f4173e9d56690c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150462"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "110231970"
 ---
 # <a name="troubleshooting-data-breakpoint-errors"></a>Solución de errores con el punto de interrupción de datos
 Esta página lo guiará a través de la resolución de los errores comunes vistos cuando se usa "Interrumpir cuando cambia el valor".
 
 ## <a name="diagnosing-unable-to-set-data-breakpoint-errors"></a>Diagnóstico de errores del tipo "No se puede establecer el punto de interrupción de datos"
 > [!IMPORTANT]
-> Los puntos de interrupción de datos administrados se admiten en .NET Core 3.0 y versiones posteriores. Puede descargar la versión más reciente [aquí](https://dotnet.microsoft.com/download).
+> Los puntos de interrupción de datos administrados se admiten en .NET Core 3.0 y versiones posteriores, y .NET 5.0.3 y versiones posteriores. Puede descargar la versión más reciente [aquí](https://dotnet.microsoft.com/download).
 
-A continuación se muestra una lista de los errores que pueden producirse al usar puntos de interrupción de datos administrados. Contienen una explicación adicional sobre la razón por la que sucede el error y las posibles soluciones para resolverlo.
+A continuación se muestra una lista de los errores que pueden producirse al usar puntos de interrupción de datos administrados. Contienen una explicación adicional sobre la razón por la que se produce el error y las posibles soluciones para resolverlo.
 
-- *"La versión de .NET usada por el proceso de destino no admite puntos de interrupción de datos. Los puntos de interrupción de datos requieren que se ejecute .NET Core 3.0+ en x86 o x64".*
+- *"La versión de .NET que usa el proceso de destino no admite puntos de interrupción de datos. Los puntos de interrupción de datos necesitan que se ejecute .NET Core 3.x o .NET 5.0.3 y versiones posteriores en x86 o x64."*
 
-  - La compatibilidad con los puntos de interrupción de datos administrados empezó en .NET Core 3.0. Actualmente no se admiten en .NET Framework ni en versiones de .NET Core anteriores a 3.0. 
+  - La compatibilidad con los puntos de interrupción de datos administrados empezó en .NET Core 3.0. Actualmente no se admite en .NET Framework, versiones de .NET Core inferiores a la 3.0 ni versiones de .NET inferiores a la 5.0.3. 
     
   - **Solución**: La solución sería actualizar el proyecto a .NET Core 3.0.
 
@@ -69,6 +69,11 @@ A continuación se muestra una lista de los errores que pueden producirse al usa
 
   - Los puntos de interrupción de datos solo se admiten en el evaluador de expresiones de C# no heredado. 
   - **Solución**: Para deshabilitar el evaluador de expresiones de C# heredado, vaya a `Debug -> Options` y, en `Debugging -> General`, desactive `"Use the legacy C# and VB expression evaluators"`.
+
+- *"La clase **X** tiene una vista del depurador personalizada que bloquea el uso de puntos de interrupción de datos en datos específicos solo para esta."*
+  
+  - Los puntos de interrupción de datos solo se admiten en la memoria creada por el proceso de destino (la aplicación que se depura). La memoria en la que se establece el punto de interrupción de datos se ha marcado como posiblemente propiedad de un objeto creado por un [atributo DebuggerTypeProxy](using-debuggertypeproxy-attribute.md) u otro elemento que no forma parte del proceso de destino.
+  - **Solución alternativa**: expanda la "Vista sin formato" de los objetos en lugar de expandir su vista DebuggerTypeProxy y, después, establezca el punto de interrupción de datos. Esto garantizará que el punto de interrupción de datos no se encuentra en la memoria propiedad de un objeto creado por un atributo DebuggerTypeProxy.
 
 ## <a name="data-breakpoint-hardware-limitations"></a>Limitaciones de hardware de los puntos de interrupción de datos
 

@@ -2,22 +2,22 @@
 title: IntelliSense para C#
 description: Obtenga información sobre algunas características de IntelliSense que puede usar al codificar un proyecto de C#.
 ms.custom: SEO-VS-2020
-ms.date: 11/04/2016
+ms.date: 06/01/2021
 ms.topic: conceptual
 helpviewer_keywords:
 - C#, IntelliSense
 - IntelliSense [C#]
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: b7e67c3a00a427a9f3cd6167af494484a02cc3f2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3156b1236a130478d83fe82c8fa462a1144a8e6a
+ms.sourcegitcommit: f50bbdb15c4f9fca0fa245ca765183c378960cc5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862068"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "111351960"
 ---
 # <a name="c-intellisense"></a>IntelliSense para C#
 
@@ -101,6 +101,10 @@ Para iniciar la operación **Agregar using**, coloque el cursor en una referenci
 ![Imagen expandida de Agregar using, Acción rápida](../ide/media/addusing-quickaction.png)
 
 Haga clic en el icono de la bombilla de error y después elija **using System.Xml;** para agregar la directiva "using" de forma automática.
+
+### <a name="add-missing-using-directives-on-paste"></a>Agregar las directivas using que faltan al pegar
+
+IntelliSense puede agregar automáticamente al código las directivas `using` que faltan al pegar un tipo en el archivo de código. Esta característica ahorra tiempo mediante la automatización de la tarea de agregar directivas using que faltan al pegar un tipo en un archivo. Habilite esta característica en **Herramientas** > **Opciones** > **Editor de texto** > **C#** o **Básico** > **Avanzado** y seleccione **Agregar las directivas using que faltan al pegar**.
 
 ### <a name="remove-and-sort-usings"></a>Eliminar y ordenar instrucciones Using
 

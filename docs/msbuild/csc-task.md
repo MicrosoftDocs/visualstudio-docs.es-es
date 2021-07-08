@@ -20,12 +20,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a3787d5aa21e029ab4900bdd89c88f1cc60f3489
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 10a63b114379f56ca5f253f853a1ff6bdd6c60dc
+ms.sourcegitcommit: 3fe04d5b931ae459a802a1b965f84186757cbc08
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901347"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "111588480"
 ---
 # <a name="csc-task"></a>Csc (tarea)
 
@@ -50,6 +50,7 @@ En la siguiente tabla se describen los parámetros de la tarea `Csc` .
 | `Deterministic` | Parámetro `Boolean` opcional.<br/><br/> Si es `true`, hace que el compilador genere un ensamblado cuyo contenido binario es idéntico en todas las compilaciones si las entradas son idénticas.<br/><br/>Para obtener más información, vea [-deterministic (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/deterministic-compiler-option). |
 | `DisabledWarnings` | Parámetro `String` opcional.<br /><br /> Especifica la lista de advertencias que se va a desactivar. Para obtener más información, vea [-nowarn (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/nowarn-compiler-option). |
 | `DocumentationFile` | Parámetro `String` opcional.<br /><br /> Procesa los comentarios de documentación generando un archivo XML. Para obtener más información, vea [-doc (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/doc-compiler-option). |
+| `EmbedAllSources` | Parámetro `Boolean` opcional.<br /><br /> Insertar todos los archivos de origen en el archivo PDB Para obtener más información, vea [-embed (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/listed-alphabetically). |
 | `EmitDebugInformation` | Parámetro `Boolean` opcional.<br /><br /> Si `true`, la tarea genera información de depuración y la coloca en un archivo de base de datos del programa (.pdb). Si `false`, la tarea no emite ninguna información de depuración. El valor predeterminado es `false`. Para obtener más información, vea [-debug (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option). |
 | `ErrorReport` | Parámetro `String` opcional.<br /><br /> Proporciona una forma cómoda para notificar un error interno de C# a Microsoft. Este parámetro puede tener un valor de `prompt`, `send` o `none`. Si el parámetro se establece en `prompt`, recibirá un mensaje cuando se produzca un error interno del compilador. El mensaje le permite enviar un informe de errores a Microsoft por vía electrónica. Si el parámetro se establece en `send`, se envía automáticamente un informe de errores. Si el parámetro se establece en `none`, el error solo se notifica en la salida de texto del compilador. El valor predeterminado es `none`. Para obtener más información, vea [-errorreport (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/errorreport-compiler-option). |
 | `FileAlignment` | Parámetro `Int32` opcional.<br /><br /> Especifica el tamaño de las secciones del archivo de salida. Para obtener más información, vea [-filealign (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/filealign-compiler-option). |

@@ -15,16 +15,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3504e866a7f89de8fa38f92a8bfea501ddd952c9
-ms.sourcegitcommit: cc66c898ce82f9f1159bd505647f315792cac9fc
+ms.openlocfilehash: f15281db55381dadbfd3370eb10a04feeab9c3a5
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "109666801"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112307575"
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>Control de actualizaciones a implementaciones de Visual Studio basadas en red
 
-Con frecuencia, los administradores de empresas crean un diseño y lo hospedan en un recurso compartido de red para implementarlo en sus usuarios finales. En esta página se describe cómo configurar las opciones de diseño de red correctamente. 
+Con frecuencia, los administradores de empresas crean un diseño y lo hospedan en un recurso compartido de red para implementarlo en sus usuarios finales. En esta página se describe cómo configurar las opciones de diseño de red correctamente.
 
 ## <a name="controlling-where-visual-studio-looks-for-updates"></a>Control de dónde Visual Studio busca actualizaciones
 
@@ -34,17 +34,17 @@ De manera predeterminada, Visual Studio continúa buscando actualizaciones en l
 
 **Escenario 2: El cliente se instaló originalmente y solo debe recibir actualizaciones del diseño de red**
 
-Si quiere controlar dónde busca actualizaciones el cliente de Visual Studio, por ejemplo, cuando la máquina cliente no tiene acceso a Internet, y quiere asegurarse de que solo y siempre se instale desde el diseño, puede configurar la ubicación donde el instalador del cliente buscará los bits de producto actualizados. Antes de que el cliente realice la instalación inicial desde el diseño, es mejor asegurarse de que esta opción está configurada correctamente. 
+Si quiere controlar dónde busca actualizaciones el cliente de Visual Studio, por ejemplo, cuando la máquina cliente no tiene acceso a Internet, y quiere asegurarse de que solo y siempre se instale desde el diseño, puede configurar la ubicación donde el instalador del cliente buscará los bits de producto actualizados. Antes de que el cliente realice la instalación inicial desde el diseño, es mejor asegurarse de que esta opción está configurada correctamente.
 
 1. Cree un diseño sin conexión:
 
-   ```cmd
+   ```shell
    vs_enterprise.exe --layout C:\vsoffline --lang en-US
    ```
 
 2. Cópielo en el recurso compartido de archivos donde desea hospedarlo:
 
-   ```cmd
+   ```shell
    xcopy /e C:\vsoffline \\server\share\VS
    ```
 
@@ -58,7 +58,7 @@ Si quiere controlar dónde busca actualizaciones el cliente de Visual Studio, p
 
    Ahora los usuarios finales pueden ejecutar la instalación de Visual Studio desde este recurso compartido.
 
-   ```cmd
+   ```shell
    \\server\share\VS\vs_enterprise.exe
    ```
 
@@ -66,7 +66,7 @@ Cuando un administrador de empresa determina que es hora de que sus usuarios act
 
 1. Use un comando que sea similar al siguiente:
 
-   ```cmd
+   ```shell
    vs_enterprise.exe --layout \\server\share\VS --lang en-US
    ```
 
@@ -82,8 +82,7 @@ Cualquier actualización de la instalación iniciada desde el cliente instalará
 
 **Escenario 3: El cliente se instaló originalmente desde la web, pero ahora solo debería recibir actualizaciones de un diseño de red**
 
-En algunos casos, es posible que la máquina cliente ya haya instalado Visual Studio desde la web, pero ahora el administrador quiere que todas las actualizaciones futuras provengan de un diseño administrado. La única manera admitida de hacerlo es crear un diseño de red con la versión deseada del producto y, luego, ejecutar el programa previo en la máquina cliente _desde la ubicación de diseño_ (por ejemplo, `\\server\share\vs_enterprise.exe`). Lo ideal es que la instalación del cliente original haya sucedido usando el programa previo desde el diseño de red con el valor de ChannelURI configurado correctamente, pero la ejecución del programa previo actualizado desde la ubicación del diseño de red también funcionará. Cualquiera de estas acciones insertaría en la máquina cliente una conexión con esa ubicación de diseño concreta. La único que hay que tener en cuenta para que este escenario funcione correctamente es que el valor de "ChannelURI" en el archivo `response.json` del diseño sea el mismo que el que se estableció en la máquina del cliente cuando se produjo la instalación original. Lo más probable es que este valor se haya establecido originalmente en el [canal de versiones](https://aka.ms/vs/16/release/channel) de Internet. 
-
+En algunos casos, es posible que la máquina cliente ya haya instalado Visual Studio desde la web, pero ahora el administrador quiere que todas las actualizaciones futuras provengan de un diseño administrado. La única manera admitida de hacerlo es crear un diseño de red con la versión deseada del producto y, luego, ejecutar el programa previo en la máquina cliente _desde la ubicación de diseño_ (por ejemplo, `\\server\share\vs_enterprise.exe`). Lo ideal es que la instalación del cliente original haya sucedido usando el programa previo desde el diseño de red con el valor de ChannelURI configurado correctamente, pero la ejecución del programa previo actualizado desde la ubicación del diseño de red también funcionará. Cualquiera de estas acciones insertaría en la máquina cliente una conexión con esa ubicación de diseño concreta. La único que hay que tener en cuenta para que este escenario funcione correctamente es que el valor de "ChannelURI" en el archivo `response.json` del diseño sea el mismo que el que se estableció en la máquina del cliente cuando se produjo la instalación original. Lo más probable es que este valor se haya establecido originalmente en el [canal de versiones](https://aka.ms/vs/16/release/channel) de Internet.
 
 ## <a name="controlling-notifications-in-the-visual-studio-ide"></a>Control de notificaciones en el IDE de Visual Studio
 
@@ -95,7 +94,7 @@ Como se ha descrito anteriormente, Visual Studio comprueba la ubicación desde l
 
 ::: moniker-end
 
-::: moniker range="vs-2019&quot;
+::: moniker range=">=vs-2019&quot;
 
 Como se ha descrito anteriormente, Visual Studio comprueba la ubicación desde la que se ha instalado, como un recurso compartido de red o Internet, para ver si hay actualizaciones disponibles. Cuando no hay ninguna actualización disponible, Visual Studio avisa al usuario con un icono de notificación en la esquina inferior derecha de la ventana.
 
@@ -109,7 +108,7 @@ Si no quiere que a los usuarios finales se les notifiquen las actualizaciones, p
 
 Dado que Visual Studio 2017 [almacena las entradas del Registro en un registro privado](tools-for-managing-visual-studio-instances.md#editing-the-registry-for-a-visual-studio-instance), no puede modificar directamente el Registro de la manera normal. En cambio, Visual Studio incluye una utilidad `vsregedit.exe` que puede usar para cambiar la configuración de dicha aplicación. Puede desactivar las notificaciones con el siguiente comando:
 
-```cmd
+```shell
 vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override dword 0
 ```
 
@@ -119,8 +118,18 @@ vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterpris
 
 Dado que Visual Studio 2019 [almacena las entradas del Registro en un registro privado](tools-for-managing-visual-studio-instances.md#editing-the-registry-for-a-visual-studio-instance), no se puede modificar directamente el Registro de la manera habitual. En cambio, Visual Studio incluye una utilidad `vsregedit.exe` que puede usar para cambiar la configuración de dicha aplicación. Puede desactivar las notificaciones con el siguiente comando:
 
-```cmd
+```shell
 vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override dword 0
+```
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+Como Visual Studio 2022 [almacena las entradas del Registro en un registro privado](tools-for-managing-visual-studio-instances.md#editing-the-registry-for-a-visual-studio-instance), no se puede modificar directamente el Registro de la manera habitual. En cambio, Visual Studio incluye una utilidad `vsregedit.exe` que puede usar para cambiar la configuración de dicha aplicación. Puede desactivar las notificaciones con el siguiente comando:
+
+```shell
+vsregedit.exe set "C:\Program Files\Microsoft Visual Studio\2022\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override dword 0
 ```
 
 ::: moniker-end
