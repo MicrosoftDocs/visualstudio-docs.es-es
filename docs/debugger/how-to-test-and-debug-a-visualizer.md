@@ -2,7 +2,7 @@
 title: Prueba y depuración de un visualizador | Microsoft Docs
 description: Pruebe y depure un visualizador ejecutándolo desde un controlador de prueba (host de desarrollo del visualizador), o bien instalándolo en Visual Studio y llamándolo desde una ventana del depurador.
 ms.custom: SEO-VS-2020
-ms.date: 11/04/2016
+ms.date: 07/02/2021
 ms.topic: how-to
 dev_langs:
 - CSharp
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b01c97c0ee72a3d29052d98d8a37cdc746c26d27
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fa97453d08650b78a02eda873a01afe9e376caec
+ms.sourcegitcommit: 4cd3eb514e9fa48e586279e38fe7c2e111ebb304
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923281"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "113298249"
 ---
 # <a name="how-to-test-and-debug-a-visualizer"></a>Procedimiento Prueba y depuración de un visualizador
 Cuando se ha escrito un visualizador, es necesario depurarlo y comprobarlo.
@@ -32,6 +32,9 @@ Cuando se ha escrito un visualizador, es necesario depurarlo y comprobarlo.
 Una manera de comprobar un visualizador es instalarlo en Visual Studio y llamarlo desde una ventana del depurador. Vea [Cómo: Instalación de un visualizador](../debugger/how-to-install-a-visualizer.md). Si lo hace, será necesario usar una segunda instancia de Visual Studio para asociar y depurar el visualizador, que se ejecuta en la primera instancia del depurador.
 
 Una manera más fácil de depurar un visualizador es ejecutarlo desde un controlador de prueba. Las API del visualizador facilitan la creación de este tipo de controlador, denominado *host de desarrollo del visualizador*.
+
+>[!NOTE]
+> Actualmente, el controlador de prueba solo se admite al llamar al visualizador desde una aplicación de .NET Framework.
 
 ### <a name="to-create-a-visualizer-development-host"></a>Para crear un host de desarrollo del visualizador
 

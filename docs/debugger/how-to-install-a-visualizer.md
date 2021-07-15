@@ -2,7 +2,7 @@
 title: para instalar un visualizador | Microsoft Docs
 description: Obtenga información sobre cómo instalar un visualizador para que esté disponible para su uso en la depuración en Visual Studio.
 ms.custom: SEO-VS-2020
-ms.date: 06/10/2020
+ms.date: 07/02/2021
 ms.topic: how-to
 dev_langs:
 - CSharp
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2521983a797b676b9136ca14b733eb7afd054e27
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 611347acfe48e561653d644097d56d029b6a4fa6
+ms.sourcegitcommit: 4cd3eb514e9fa48e586279e38fe7c2e111ebb304
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904269"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "113298262"
 ---
 # <a name="how-to-install-a-visualizer"></a>Procedimiento Instalación de un visualizador
 Después de crear un visualizador, hay que instalarlo para que esté disponible en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Instalar un visualizador es un proceso sencillo.
@@ -37,7 +37,10 @@ Después de crear un visualizador, hay que instalarlo para que esté disponible 
 
 1. Busque el archivo DLL que contiene el visualizador que ha compilado.
 
-   Normalmente, es mejor que tanto el archivo DLL del depurador como el archivo DLL del elemento depurado especifiquen **Cualquier CPU** como plataforma de destino. El archivo DLL del depurador debe ser **Cualquier CPU** o **32 bits**. La plataforma de destino para el archivo DLL del elemento depurado debe corresponderse con el proceso del elemento depurado.
+   Normalmente, es mejor que tanto el archivo DLL del depurador como el archivo DLL del elemento depurado especifiquen **Cualquier CPU** como plataforma de destino. El archivo DLL del depurador debe ser **Cualquier CPU** o **32 bits**. La plataforma de destino para el archivo DLL depurado se debe corresponder con el proceso del elemento depurado.
+
+   >[!NOTE]
+   > El visualizador del lado del depurador se carga en el proceso de Visual Studio, por lo que debe ser un archivo DLL de .NET Framework. El lado del elemento depurado puede ser de .NET Framework o .NET Standard, en función del proceso que se depure en Visual Studio.
 
 2. Copie el archivo DLL del [lado de depurador](create-custom-visualizers-of-data.md#to-create-the-debugger-side) (y todos los archivos DLL de los que dependa) en cualquiera de las ubicaciones siguientes:
 

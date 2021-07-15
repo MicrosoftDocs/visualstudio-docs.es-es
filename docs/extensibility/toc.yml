@@ -42,7 +42,7 @@
         - name: Migrar el registro COM del depurador
           href: migrate-debugger-com-registration.md
         - name: Preguntas más frecuentes
-          href: faq-2017.md
+          href: faq-2017.yml
     - name: Migrar proyectos de extensibilidad a Visual Studio 2017
       href: how-to-migrate-extensibility-projects-to-visual-studio-2017.md
     - name: Extensiones de Roundtrip para Visual Studio
