@@ -1427,10 +1427,12 @@
 - name: Recursos
   expanded: true
   items:
-    - name: "Visual\_Studio\_2017: Novedades"
-      href: ide/whats-new-visual-studio-2017.md
+    - name: "Visual\_Studio\_2022: Novedades"
+      href: ide/whats-new-visual-studio-2022.md
     - name: "Visual\_Studio\_2019: Novedades"
       href: ide/whats-new-visual-studio-2019.md
+    - name: "Visual\_Studio\_2017: Novedades"
+      href: ide/whats-new-visual-studio-2017.md
     - name: Novedades de Docs
       href: ide/whats-new-visual-studio-docs.md
     - name: Notas de la versión
@@ -1467,7 +1469,7 @@
         - name: Notificar un problema
           href: ide/how-to-report-a-problem-with-visual-studio.md
         - name: Estados de un problema notificado y preguntas frecuentes
-          href: ide/report-a-problem.md
+          href: ide/report-a-problem.yml
         - name: Resolución rápida de problemas de rendimiento
           href: ide/how-to-increase-chances-of-performance-issue-being-fixed.md
         - name: Creación de minivolcados con devoluciones de llamada
