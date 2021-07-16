@@ -14,12 +14,12 @@ helpviewer_keywords:
 - Visual Studio terminal
 ms.assetid: 94fcf524-9045-4993-bfb2-e2d8bad44219
 no-loc: cmdlet
-ms.openlocfilehash: 858845ca5629f64e282e3864daa0201935316062
-ms.sourcegitcommit: b4cc3dee59421f7089112becf128a369acadaf61
+ms.openlocfilehash: fef783475304bb1faa1788bde591a22ed610d528
+ms.sourcegitcommit: e7629e132a4d2fad6bb5869e4d68d9dbeeae9631
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "112990524"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113649166"
 ---
 # <a name="visual-studio-developer-command-prompt-and-developer-powershell"></a>Símbolo del sistema para desarrolladores de Visual Studio y PowerShell para desarrolladores
 
@@ -28,7 +28,6 @@ Visual Studio 2019 incluye dos shells de línea de comandos para desarrollador
 - **Símbolo del sistema para desarrolladores de Visual Studio**: se trata de un símbolo del sistema estándar con ciertas variables de entorno establecidas para facilitar el uso de las herramientas de desarrollo de línea de comandos. Está disponible desde Visual Studio 2015.
 
 - **PowerShell de Visual Studio para desarrolladores**: es más eficaz que un símbolo del sistema. Por ejemplo, puede pasar la salida de un comando (denominado *cmdlet* ) a otro cmdlet. Este shell tiene las mismas variables de entorno establecidas que el Símbolo del sistema para desarrolladores. Está disponible desde Visual Studio 2019.
-
 
 :::image type="content" source="media/developer-command-prompt-for-vs/command-prompt.png" alt-text="Símbolo del sistema para desarrolladores para Visual Studio que muestra la herramienta clrver":::
 
@@ -43,8 +42,8 @@ Ambos shells tienen conjuntos de variables de entorno específicas que le permit
 |Comandos más usados|Descripción|
 |--|--|
 |[`MSBuild`](../../msbuild/msbuild-command-line-reference.md)|Creación de un proyecto o una solución|
-|[`clrver`](/dotnet/framework/tools/clrver-exe-clr-version-tool)| [Herramientas de .NET Framework](/dotnet/framework/tools/index) para CLR.|
-|[`ildasm`](/dotnet/framework/tools/ildasm-exe-il-disassembler)|Una [herramienta de .NET Framework](/dotnet/framework/tools/index) para desensamblador.|
+|[`clrver`](/dotnet/framework/tools/clrver-exe-clr-version-tool)| Una [herramienta de .NET Framework](/dotnet/framework/tools/index) para CLR|
+|[`ildasm`](/dotnet/framework/tools/ildasm-exe-il-disassembler)|Una [herramienta de .NET Framework](/dotnet/framework/tools/index) para desensamblador|
 |[`dotnet`](/dotnet/core/tools/dotnet)|Un [comando de la CLI de .NET](/dotnet/core/tools/index)|
 |[`dotnet run`](/dotnet/core/tools/dotnet-run)|Un [comando de la CLI de .NET](/dotnet/core/tools/index)|
 |[`CL`](/cpp/build/reference/compiler-command-line-syntax)|Herramienta de compilación de C/C++|
@@ -135,9 +134,7 @@ De forma predeterminada, la instancia de PowerShell para desarrolladores que se 
 
 ## <a name="see-also"></a>Consulte también
 
-- [PowerShell para desarrolladores](https://devblogs.microsoft.com/visualstudio/the-powershell-you-know-and-love-now-with-a-side-of-visual-studio/)
-- [Dé la bienvenida al nuevo terminal de Visual Studio](https://devblogs.microsoft.com/visualstudio/say-hello-to-the-new-visual-studio-terminal/)
 - [Terminal Windows](/windows/terminal/)
 - [Herramientas de .NET Framework](/dotnet/framework/tools/index)
-- [Administrar herramientas externas](../managing-external-tools.md)
 - [Uso del conjunto de herramientas de Microsoft C++ desde la línea de comandos](/cpp/build/building-on-the-command-line)
+- [Usuarios de Visual Studio Code](https://code.visualstudio.com/docs/cpp/config-msvc#:~:text=To%20open%20the%20Developer%20Command,item%20to%20open%20the%20prompt.)

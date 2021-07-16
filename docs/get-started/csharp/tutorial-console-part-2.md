@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Extensión de una aplicación de consola de C# sencilla'
+title: 'Tutorial 2: Ampliación de una aplicación de consola de C#'
 description: Aprenda a desarrollar una aplicación de consola de C# en Visual Studio mediante un procedimiento paso a paso.
 ms.custom: vs-acquisition, get-started
 ms.date: 04/15/2021
@@ -7,8 +7,8 @@ ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: CSharp
-author: ghogen
-ms.author: ghogen
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 monikerRange: '>=vs-2019'
 dev_langs:
@@ -16,20 +16,33 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: c7c38ed40143064090535735b2050dd31904d608
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: f7d1ae7d0d5f045c0772243c7fc4011a9f31088e
+ms.sourcegitcommit: e7629e132a4d2fad6bb5869e4d68d9dbeeae9631
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112390182"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113649149"
 ---
-# <a name="tutorial-extend-a-simple-c-console-app"></a>Tutorial: Extensión de una aplicación de consola de C# sencilla
+# <a name="tutorial-extend-c-console-app-and-debug-in-visual-studio-part-2-of-2"></a>Tutorial: Ampliación de la aplicación de consola de C# y depuración en Visual Studio (parte 2 de 2)
 
-En este tutorial, aprenderá a usar Visual Studio para extender la aplicación de consola que creó en la primera parte. Conocerá algunas de las características de Visual Studio que necesitará para el desarrollo diario, como administrar varios proyectos y hacer referencia a paquetes de terceros.
+En la parte 2 de esta serie de tutoriales, profundizará un poco más en las características de compilación y depuración de Visual Studio que necesitará para el desarrollo diario, como la administración de varios proyectos, la depuración y la referencia a paquetes de terceros. Ejecutará la aplicación de consola de C# que ha creado en la parte 1 de este tutorial (tutorial-console.md) y explorará algunas características del entorno de desarrollo integrado (IDE) de Visual Studio mientras lo hace. Este tutorial es la segunda parte de una serie de tutoriales de dos partes.
 
-Si acaba de completar la [primera parte](tutorial-console.md) de esta serie, ya tiene la aplicación de consola de calculadora.  Para omitir la parte 1, abra el proyecto desde un repositorio de GitHub. La aplicación de calculadora de C# está en el [repositorio vs-tutorial-samples](https://github.com/MicrosoftDocs/vs-tutorial-samples), por lo que solo tiene que seguir los pasos que se describen en [Tutorial: Abrir un proyecto desde un repositorio](../tutorial-open-project-from-repo.md) para empezar.
+En este tutorial va a:
 
-## <a name="add-a-new-project"></a>Incorporación de proyecto nuevo
+> [!div class="checklist"]
+> * Agregar otro proyecto al primero.
+> * Hacer referencia a bibliotecas y agregar paquetes.
+> * Continuar la depuración.
+> * Inspeccionar el código completo.
+
+
+## <a name="prerequisites"></a>Prerrequisitos
+
+Debe:
++ Usar la [aplicación de consola Calculator de la parte 1 de esta serie de tutoriales](tutorial-console.md). 
++ Usar la aplicación Calculator de C# del [repositorio vs-tutorial-samples](https://github.com/MicrosoftDocs/vs-tutorial-samples) que puede [abrir desde un repositorio](../tutorial-open-project-from-repo.md) para empezar.
+
+## <a name="add-another-project"></a>Adición de otro proyecto
 
 El código real está formado por numerosos proyectos que funcionan conjuntamente para dar lugar a una solución. Ahora, vamos a agregar otro proyecto a la aplicación de calculadora. Consiste en una biblioteca de clases que proporciona algunas de las funciones de la calculadora.
 
@@ -749,15 +762,12 @@ namespace CalculatorProgram
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Enhorabuena por completar este tutorial. Para más información, continúe con los tutoriales siguientes.
+Enhorabuena por completar este tutorial. Para obtener más información, continúe con el contenido siguiente:
 
-> [!div class="nextstepaction"]
-> [Continuar con más tutoriales de C#](/dotnet/csharp/tutorials/)
-
-> [!div class="nextstepaction"]
-> [Continuar con la introducción al IDE de Visual Studio](/../visual-studio-ide.md)
-
-## <a name="see-also"></a>Vea también
-
-- [IntelliSense para C#](../../ide/visual-csharp-intellisense.md)
+- [Continuar con más tutoriales de C#](/dotnet/csharp/tutorials/)
+- [Inicio rápido: Creación de una aplicación web de ASP.NET Core](../../ide/quickstart-aspnet-core.md)
 - [Información sobre cómo depurar código de C# con Visual Studio](tutorial-debugger.md)
+- Tutorial sobre cómo [crear y ejecutar pruebas unitarias](../../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
+- [Ejecución de un programa de C#](run-program.md)
+- [IntelliSense para C#](../../ide/visual-csharp-intellisense.md)
+- [Continuar con la introducción al IDE de Visual Studio](/../visual-studio-ide.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Creación de una aplicación de consola de C# sencilla'
+title: 'Tutorial: Creación de una aplicación de consola de C# sencilla '
 description: Aprenda a crear una aplicación de consola de C# en Visual Studio mediante un procedimiento paso a paso.
 ms.custom: vs-acquisition, get-started
 ms.date: 02/10/2021
@@ -15,16 +15,31 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 5f155c2477c97b6f0d18a4cfd3d54386aee68dd9
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 20732b0d7fb09de6079b0c1b7b06d2ae89802a5b
+ms.sourcegitcommit: e7629e132a4d2fad6bb5869e4d68d9dbeeae9631
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112390377"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113649179"
 ---
-# <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Tutorial: Creación de una aplicación de consola de C# sencilla en Visual Studio
+# <a name="tutorial-create-a-simple-c-console-app-in-visual-studio-part-1-of-2"></a>Tutorial: Creación de una aplicación de consola de C# sencilla en Visual Studio (parte 1 de 2)
 
-En este tutorial para C#, usará Visual Studio para crear y ejecutar una aplicación de consola y explorar algunas características del entorno de desarrollo integrado (IDE) de Visual Studio mientras lo hace.
+En este tutorial, usará Visual Studio para crear y ejecutar una aplicación de consola de C# y explorar algunas características del entorno de desarrollo integrado (IDE) de Visual Studio mientras lo hace. Este tutorial es la primera parte de una serie de tutoriales de dos partes.
+
+En este tutorial va a:
+
+> [!div class="checklist"]
+> * Crear un proyecto de Visual Studio.
+> * Crear una aplicación de consola de C#.
+> * Depure la aplicación.
+> * Cerrar la aplicación.
+> * Inspeccionar el código completo.
+
+[En la parte 2](tutorial-console-part-2.md), ampliará esta aplicación con proyectos adicionales, trucos de depuración y hará referencia a paquetes de terceros.
+
+## <a name="prerequisites"></a>Prerrequisitos
+
+Debe tener instalado Visual Studio.
 
 ::: moniker range="vs-2017"
 
@@ -486,7 +501,7 @@ Comencemos.
 
 1. Cierre Visual Studio.
 
-## <a name="code-complete"></a>Código completo
+## <a name="review-code-complete"></a>Revisión: código completado
 
 Durante este tutorial, hemos realizado muchos cambios en la aplicación de calculadora. Ahora la aplicación controla los recursos de cálculo más eficazmente y trata la mayoría de los errores de entrada de usuario.
 
@@ -627,10 +642,15 @@ Continúe con más tutoriales:
 Continúe con la segunda parte de este tutorial:
 
 > [!div class="nextstepaction"]
-> [Continuar con la parte 2](tutorial-console-part-2.md)
+> [Parte 2 del tutorial: Uso de varios proyectos y paquetes de terceros](tutorial-console-part-2.md)
 :::moniker-end
 
-## <a name="see-also"></a>Vea también
+También de interés:
 
-* [IntelliSense para C#](../../ide/visual-csharp-intellisense.md)
-* [Información sobre cómo depurar código de C# con Visual Studio](tutorial-debugger.md)
+- [Continuar con más tutoriales de C#](/dotnet/csharp/tutorials/)
+- [Inicio rápido: Creación de una aplicación web de ASP.NET Core](../../ide/quickstart-aspnet-core.md)
+- [Información sobre cómo depurar código de C# con Visual Studio](tutorial-debugger.md)
+- Tutorial sobre cómo [crear y ejecutar pruebas unitarias](../../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
+- [Ejecución de un programa de C#](run-program.md)
+- [IntelliSense para C#](../../ide/visual-csharp-intellisense.md)
+- [Continuar con la introducción al IDE de Visual Studio](/../visual-studio-ide.md)

@@ -1,6 +1,6 @@
 ---
 title: Inicio de sesión
-description: Aprenda a iniciar sesión en Visual Studio.
+description: Inicio de sesión en Visual Studio para ampliar el periodo de prueba, desbloquear Visual Studio y mucho más
 ms.custom: contperf-fy21q1
 ms.date: 09/11/2020
 ms.topic: how-to
@@ -10,16 +10,16 @@ ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1335ab3d8f679f00fb7f52420d378baa1f2bd905
-ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
+ms.openlocfilehash: 4b4c91a2ff4693b62ce8ac4d40d493995c52b81b
+ms.sourcegitcommit: 4e09130bcd55bb9cb8ad157507c23b67aa209fad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "113222999"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113549477"
 ---
-# <a name="sign-in-to-visual-studio-on-windows"></a>Inicio de sesión en Visual Studio en Windows
+# <a name="sign-in-to-visual-studio-on-windows"></a>Inicio de sesión en Visual Studio en Windows 
 
-Aunque no tiene que iniciar sesión, hacerlo ofrece muchas ventajas. Al iniciar sesión, puede personalizar, optimizar y enriquecer la experiencia de Visual Studio. 
+Aunque no tiene que iniciar sesión, hacerlo ofrece muchas ventajas. En este artículo, obtendrá información sobre cómo [iniciar sesión](#how-to-sign-in), [actualizar el perfil](#update-your-profile) y las ventajas de la experiencia de Visual Studio. 
 
 > [!NOTE]
 > Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Iniciar sesión en Visual Studio para Mac](/visualstudio/mac/signing-in).
@@ -31,8 +31,6 @@ Aunque no tiene que iniciar sesión, hacerlo ofrece muchas ventajas. Al iniciar 
 > El uso de Visual Studio 2017 a fin de acceder a los recursos configurados para el acceso condicional puede desencadenar una experiencia de autenticación degradada, que solicita la reautenticación varias veces dentro de la misma sesión de Visual Studio. 
 > 
 ::: moniker-end
-
-## <a name="benefits"></a>Ventajas
 
 Esta es una lista completa de lo que puede esperar y lo que puede hacer después de iniciar sesión:
 
